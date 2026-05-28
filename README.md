@@ -8,7 +8,7 @@ Slugfester is a static site for turning YouTube debate transcripts into compact 
 npm run dev
 ```
 
-Then open `http://localhost:4173`.
+Then open `http://localhost:4174`.
 
 ## Check syntax
 
@@ -18,10 +18,10 @@ npm run check
 
 ## Add debates
 
-Debate pages are driven by `src/data/debates.js`. Add a new object to the `debates` array with:
+Debate pages are driven by `src/data/debates.js`. Follow the full critique standard in [`docs/debate-critique-process.md`](docs/debate-critique-process.md), then add a new object to the `debates` array with:
 
 - `id`, `title`, `motion`, `youtubeUrl`, and side metadata
 - `sections`, each with aligned transcript excerpts for both sides
 - `overall`, with closing scores, strengths, and logical blunders
 
-The included debate is synthetic demonstration content so the UI has realistic material without copying a YouTube transcript. Replace it with licensed or user-provided transcript excerpts when adding real debates.
+Run `npm run check` before committing. It checks JavaScript syntax and validates the measurable debate-assessment rules, including critique length, score ranges, required quote fields, and LogFall/CogBias link domains.
