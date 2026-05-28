@@ -564,5 +564,389 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "craig-hitchens-god-existence-2009",
+    title: "William Lane Craig vs Christopher Hitchens: Does God Exist?",
+    label: "Christian theism",
+    date: "2026-05-28",
+    duration: "2 hr 27 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=0tYm41hb48o",
+    motion:
+      "Does God exist, and do cosmology, fine-tuning, morality, resurrection, suffering, and religion's record make Christian theism more plausible than atheism?",
+    summary:
+      "Craig presents a cumulative case for Christian theism; Hitchens argues the evidence is insufficient and religion adds moral and explanatory costs.",
+    sourceNote:
+      "Built from the YouTube English default subtitle track downloaded with yt-dlp and cross-checked against a Reasonable Faith transcript. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "theism is the more plausible world view",
+        context:
+          "Craig's central posture is comparative: his five arguments are offered as a cumulative case that makes Christian theism likelier than atheism."
+      },
+      con: {
+        text: "You don't need the assumption",
+        context:
+          "Hitchens's central posture is skeptical and explanatory: natural accounts can do the work without adding a divine hypothesis."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian theist",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "Atheist critic",
+        speaker: "Christopher Hitchens",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 75,
+      con: 74
+    },
+    sections: [
+      {
+        title: "Opening burden and standards",
+        timebox: "13:07-46:03",
+        score: {
+          pro: 75,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "14:25",
+              role: "Burden frame",
+              words:
+                "Craig limits the debate to God's existence, denies good arguments for atheism, and offers five positive arguments for theism.",
+              score: 75,
+              critique:
+                "Craig's opening burden frame is disciplined because he defines the topic and avoids letting the debate dissolve into every grievance about religion. The strongest feature is procedural clarity: he promises positive arguments and asks Hitchens to answer them. The weakness is the asymmetry built into the frame. Saying there are no good arguments that atheism is true can slide into requiring Hitchens to prove a universal negative, while Craig's own cumulative case still bears the positive burden of establishing God. The score is solid because the framing is relevant and strategically clean, but not higher because the burden allocation gives Craig a possible advantage before the evidence is tested.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The burden on atheism is treated more stringently than Craig's own positive burden to establish theism."
+                }
+              ]
+            },
+            con: {
+              time: "42:14",
+              role: "Evidence standard",
+              words:
+                "Hitchens says there is no plausible reason to believe such an entity, and extraordinary claims require truly extraordinary evidence.",
+              score: 76,
+              critique:
+                "Hitchens's evidence standard is fair and rhetorically strong. He identifies the scale of the claim: not merely a first cause, but a divine authority who cares about human conduct, redemption, and worship. That makes his demand for stronger evidence relevant to the motion. The weakness is that the standard can become underspecified. 'Extraordinary evidence' sounds compelling, but Hitchens does not state what threshold would count or how it should be measured across cosmology, history, and moral philosophy. The score is strong but limited because the move properly raises the evidential bar without itself answering Craig's individual premises. It is a good rule of evaluation, not yet a full rebuttal.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Cosmology and fine-tuning",
+        timebox: "15:42-1:04:16",
+        score: {
+          pro: 80,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "15:42",
+              role: "Design inference",
+              words:
+                "Craig argues the universe began from nothing, required a transcendent personal cause, and that life-permitting fine-tuning is best explained by design.",
+              score: 80,
+              critique:
+                "Craig's cosmology and fine-tuning case is his most organized positive material. He gives the audience explicit premises, distinguishes philosophical and scientific support for a beginning, and moves from fine-tuning to a design inference rather than merely asserting design. The argument is relevant and cumulative: a beginning and life-permitting constants are not the same evidence, so they can reinforce each other. The main weakness is the speed of the bridge from a cosmic cause to a personal mind, and from fine-tuning to design after excluding chance and necessity in a contested field. The score is high because the structure is clear and serious, but short of exceptional because several technical alternatives are dismissed too quickly for a live audience to assess.",
+              tags: []
+            },
+            con: {
+              time: "43:08",
+              role: "Deism challenge",
+              words:
+                "Hitchens says even a cosmic originator would not show a caring God, revelation, salvation, miracles, or concern with human conduct.",
+              score: 82,
+              critique:
+                "Hitchens's deism-to-theism challenge is one of his best targeted objections. It grants, for argument's sake, that a cosmic originator might exist, then asks why that would imply prayer, revelation, redemption, salvation, sexual rules, dietary rules, or miracles. This directly attacks the gap between generic philosophical theism and Craig's specifically Christian conclusion. The weakness is that Hitchens sometimes treats the gap as if it defeats every part of the cumulative case, when Craig's resurrection and religious-experience arguments are meant to supply specifically Christian content. Even so, the objection is highly relevant because it prevents the opening cosmology from carrying more weight than it can bear. It scores strongly for precision and burden discipline.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Evolution and retrospective fit",
+        timebox: "34:30-58:12",
+        score: {
+          pro: 70,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "55:07",
+              role: "Evolution reply",
+              words:
+                "Craig says evolution is irrelevant to Christian theism and, if wildly improbable on naturalism, could add evidence for divine superintendence.",
+              score: 70,
+              critique:
+                "Craig's evolution reply has a useful first step: he denies that Christian theism depends on young-earth creationism or a literal six-day reading of Genesis. That blocks a common but weak objection. The more vulnerable move is turning evolutionary improbability into additional evidence for God. The argument depends on highly compressed probability claims and risks making whatever biological path occurred look like confirmation after the fact. It also does not fully answer Hitchens's concern about extinction, waste, and apparently improvised biological history. The score is solid because Craig correctly separates evolution from the bare existence of God, but lower than his cosmological score because the positive design inference from evolution is under-supported in the live exchange.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "Evolution is recast as support for design after being fitted into Craig's prior theistic framework."
+                }
+              ]
+            },
+            con: {
+              time: "37:26",
+              role: "Retrospective fit",
+              words:
+                "Hitchens argues that if evolution, extinction, and randomness can all be called design after the fact, the design claim becomes unfalsifiable.",
+              score: 78,
+              critique:
+                "Hitchens's retrospective-fit objection is strong because it targets the elasticity of the design claim. If religious advocates can oppose evolution, then later call evolution part of the plan, the evidence may seem to be adjusted around a fixed conclusion. He also connects this to extinction and waste, which are uncomfortable data for a tidy design narrative. The weakness is that Hitchens sometimes moves from 'this looks wasteful' to 'therefore not designed' without giving a principled account of what a designer's efficient process should look like. Still, the objection has real force because it pressures the falsifiability and predictive content of design reasoning. It scores well as a critique of explanatory flexibility rather than as a complete biological argument.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality and obligation",
+        timebox: "25:04-1:37:56",
+        score: {
+          pro: 78,
+          con: 69
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "25:04",
+              role: "Moral foundation",
+              words:
+                "Craig argues that without God objective moral values and duties lack a transcendent foundation, though both speakers affirm moral seriousness.",
+              score: 78,
+              critique:
+                "Craig's moral foundation argument is clear and central to the motion. He does not claim atheists cannot know moral truths or behave decently; he argues that objective moral values and duties need an ontological ground beyond evolutionary preference. That distinction helps him avoid a crude caricature of unbelievers. The weakness is that the argument assumes God can provide the needed foundation without fully addressing whether divine commands make morality arbitrary or whether moral truths might be non-natural but still independent of God. Hitchens's partial concession that morality may be evolutionary helps Craig dialectically, but it does not settle the whole metaethical field. The score is strong because Craig keeps the issue focused, though not decisive.",
+              tags: []
+            },
+            con: {
+              time: "1:13:38",
+              role: "Moral challenge",
+              words:
+                "Hitchens asks for one moral action a believer can perform that an unbeliever cannot, and appeals to human solidarity.",
+              score: 69,
+              critique:
+                "Hitchens's moral challenge is memorable and fair against claims that unbelievers cannot act morally, recognize duties, or show human solidarity. It also exposes the practical fact that ordinary moral life does not obviously require theological instruction. The weakness is that this does not fully meet Craig's argument. Craig's claim is about the foundation of objective moral value, not primarily about whether atheists can perform good acts or feel compassion. Hitchens therefore spends part of his force on a nearby but different question. The score is mixed because the point is rhetorically effective and ethically humane, yet it leaves the metaethical burden only partially answered. It is good public moral argument, but incomplete rebuttal.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The challenge shifts from objective moral grounding to whether unbelievers can perform moral actions."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection and miracles",
+        timebox: "27:39-1:31:32",
+        score: {
+          pro: 72,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "27:39",
+              role: "Historical case",
+              words:
+                "Craig cites the empty tomb, appearances, and disciples' belief, saying no plausible naturalistic explanation accounts for those established facts.",
+              score: 72,
+              critique:
+                "Craig's resurrection case matters because it tries to move from generic theism to Christian theism. He gives a recognizable historical structure: empty tomb, postmortem appearances, and the disciples' sudden belief despite contrary expectations. That makes the argument relevant and not merely devotional. The weakness is that the live version leans heavily on claims about scholarly consensus and the lack of plausible naturalistic alternatives. Those claims may be defensible elsewhere, but here the audience is asked to accept a compressed historical judgment without seeing enough source criticism, competing hypotheses, or probability comparison. The score is moderate-strong because the argument has a clear evidential shape, but its strongest warrants are mostly invoked rather than demonstrated.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Scholarly consensus is invoked faster than the underlying historical evidence is displayed for assessment."
+                }
+              ]
+            },
+            con: {
+              time: "1:28:34",
+              role: "Miracle test",
+              words:
+                "Hitchens presses whether miracles, exorcisms, or opened graves would prove doctrine, since miraculous acts alone do not validate a claimant.",
+              score: 79,
+              critique:
+                "Hitchens's miracle test is a sharp cross-examination move. Rather than simply mocking miracle claims, he asks what a miracle would actually prove. If Pharaoh's magicians, rival religions, or ambiguous biblical signs can involve wonders, then a wonder is not automatically validation of a whole doctrine. This attacks the inference from extraordinary event to Christian truth. The weakness is that Hitchens presses the oddity of the material more than he develops a full alternative account of the resurrection evidence. Craig can answer that Jesus' authority is not based on miracle in isolation but on a broader pattern of claim, context, death, and resurrection. Still, Hitchens usefully separates event, interpretation, and doctrine. That earns a strong score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Religion and moral risk",
+        timebox: "1:55:12-2:13:49",
+        score: {
+          pro: 68,
+          con: 66
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "2:11:45",
+              role: "Worldview defense",
+              words:
+                "Craig says religious atrocities violate Christianity's worldview, while atheistic humanism lacks a non-speciesist basis for human dignity.",
+              score: 68,
+              critique:
+                "Craig's worldview defense makes a relevant distinction between what a tradition authorizes and what its adherents do. That distinction is fair; bad conduct by believers does not automatically falsify God or Christianity. His criticism of atheistic humanism also presses a serious question about why human beings have special worth on naturalism. The weakness is that the answer can become too insulating. If historical Christian institutions repeatedly gave theological cover to coercion, anti-Judaism, or repression, simply saying those actions violate Jesus' ethic may not explain why the tradition so often enabled them. The score is mixed because Craig has a valid category distinction, but his defense does not absorb the institutional evidence Hitchens highlights.",
+              tags: []
+            },
+            con: {
+              time: "2:12:23",
+              role: "Historical indictment",
+              words:
+                "Hitchens links religious authority to apartheid, antisemitism, clerical fascism, genital mutilation, and crimes performed in God's name.",
+              score: 66,
+              critique:
+                "Hitchens's historical indictment is powerful as moral criticism. It reminds listeners that religious authority has not merely inspired private consolation; it has also been used to sanctify coercion, exclusion, and violence. That is relevant to whether a religious worldview is morally attractive. The weakness is relevance to the exact motion. Showing that religions have caused or justified harm does not by itself show God does not exist, nor does it answer Craig's cosmological or moral-foundation premises. The argument also compresses complex historical causation into a prosecutorial list. The score is mixed because the material is ethically serious and rhetorically forceful, but it partly shifts from existence to institutional record. That shift limits its evidential value.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The historical critique partly diverts from God's existence to the social record of religion."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Suffering and final hope",
+        timebox: "2:14:08-2:21:16",
+        score: {
+          pro: 70,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "2:14:29",
+              role: "Suffering defense",
+              words:
+                "Craig distinguishes logical from probabilistic evil, appeals to possible morally sufficient reasons, salvation, and Christ's own suffering.",
+              score: 70,
+              critique:
+                "Craig's suffering defense is strongest when he separates the logical and probabilistic problems of evil. That distinction matters: showing that God and suffering are not strictly contradictory is easier than showing this world's suffering is probable under Christian theism. He also gives a specifically Christian pastoral answer by pointing to Christ's suffering. The weakness is that the probabilistic reply leans heavily on unknown morally sufficient reasons and the possibility that suffering maximizes salvation. Possibility can block a contradiction, but it does not strongly explain why this much apparently arbitrary suffering occurs. The score is solid because the logic is careful, but limited because the evidential problem is answered mainly by expanding what God might know.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Unknown divine reasons are used to reduce the force of suffering without positive evidence for them."
+                }
+              ]
+            },
+            con: {
+              time: "2:20:00",
+              role: "Suffering example",
+              words:
+                "Hitchens says if divine rescue cancels atrocities like prolonged torture, believers are free to call nearly any suffering worthwhile.",
+              score: 78,
+              critique:
+                "Hitchens's suffering example is emotionally hard, but it is also logically pointed. By invoking prolonged hidden torture and unanswered prayer, he tests whether appeals to ultimate redemption make any atrocity compatible with providence. His best move is not outrage alone; it is asking whether the theistic explanation has become too elastic to be morally informative. The weakness is that a single extreme case cannot settle the whole probabilistic argument, and Craig can still appeal to the limits of human perspective. Still, vivid cases are legitimate when the issue is whether a theory can account for apparently gratuitous suffering. The score is strong because the example clarifies the cost of the defense and forces the audience to confront its implications.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 75,
+        strengths: [
+          "Craig gave the debate a clean argumentative architecture, with explicit cosmological, fine-tuning, moral, resurrection, and experiential lines of support.",
+          "He repeatedly distinguished questions of moral knowledge, moral behavior, and moral foundation, which helped him avoid a crude attack on atheists.",
+          "His cross-examination forced Hitchens to clarify whether he was defending positive atheism, withholding belief, or rejecting the evidential case."
+        ],
+        blunders: [
+          {
+            text:
+              "The opening frame sometimes put a heavier burden on atheism than on Craig's own positive case for Christian theism.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "The resurrection argument leaned on scholarly consensus and absence of naturalistic explanation more than live historical demonstration.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              },
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 74,
+        strengths: [
+          "Hitchens's best argument was the gap from deism to Christian theism: a cosmic cause does not automatically yield revelation, prayer, salvation, or doctrine.",
+          "He effectively pressured retrospective design reasoning by asking whether evolution, extinction, and waste were being fitted to a conclusion after the fact.",
+          "His historical and suffering examples made the moral costs of religious authority vivid and difficult to dismiss."
+        ],
+        blunders: [
+          {
+            text:
+              "Several attacks on religious harm were ethically serious but did not directly answer Craig's formal arguments for God's existence.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "The moral challenge often shifted from the foundation of objective value to whether unbelievers can perform moral actions.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
