@@ -53,7 +53,7 @@ function renderLanding() {
         <div class="intro-copy">
           <p class="eyebrow">Video debate transcript scorecards</p>
           <h1>Slugfester</h1>
-          <p class="lede">Turn video debate transcripts into side-by-side argument maps: each side's words stay visible, each claim and rebuttal gets a numerical strength score, and every ◉ opens a deeper critique of the reasoning.</p>
+          <p class="lede">Debate transcripts turned into side-by-side argument maps for ease of reader assessment.  Each claim and rebuttal receives AI scores, and every ◉ opens a deeper critique of the reasoning.</p>
         </div>
         <figure class="logo-showcase">
           <img
