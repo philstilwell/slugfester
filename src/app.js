@@ -26,6 +26,7 @@ function renderShell(content) {
       <a class="brand" href="#" aria-label="Slugfester home">
         <img class="brand-logo" src="./assets/slugfester-logo.jpg" alt="" width="38" height="52">
         <span class="brand-name">Slugfester</span>
+        <img class="brand-gloves" src="./assets/debate-gloves.png" alt="" width="444" height="444">
       </a>
       <nav aria-label="Primary">
         <a href="#">Debates</a>
@@ -130,6 +131,9 @@ function renderDebate(id) {
           <p class="motion large">${escapeHtml(debate.motion)}</p>
           ${debate.sourceNote ? `<p class="source-note">${escapeHtml(debate.sourceNote)}</p>` : ""}
         </div>
+        <figure class="debate-gloves-panel" aria-hidden="true">
+          <img src="./assets/debate-gloves.png" alt="" width="444" height="444">
+        </figure>
         <aside class="scoreboard" aria-label="Debate score summary">
           <div>
             <span>Average section score</span>
@@ -138,7 +142,6 @@ function renderDebate(id) {
           ${renderMiniScore(debate.sides.pro.name, debate.score.pro, "teal")}
           ${renderMiniScore(debate.sides.con.name, debate.score.con, "coral")}
           <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noreferrer">Open YouTube source</a>
-          <img class="scoreboard-gloves" src="./assets/debate-gloves.png" alt="" width="444" height="444">
         </aside>
       </section>
 

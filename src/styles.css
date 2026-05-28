@@ -81,6 +81,15 @@ a {
   font-size: 0.98rem;
 }
 
+.brand-gloves {
+  display: block;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 7px rgba(27, 43, 41, 0.2));
+}
+
 .site-header nav a {
   padding: 8px 10px;
   color: var(--muted);
@@ -491,8 +500,8 @@ a {
 
 .debate-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 270px;
-  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) minmax(128px, 178px) 270px;
+  gap: clamp(18px, 3vw, 28px);
   align-items: end;
   padding: clamp(28px, 5vw, 58px) 0 24px;
 }
@@ -539,13 +548,18 @@ a {
   line-height: 1;
 }
 
-.scoreboard-gloves {
-  display: block;
-  width: min(100%, 178px);
-  height: auto;
+.debate-gloves-panel {
+  align-self: center;
   justify-self: center;
-  margin: 4px 0 -4px;
-  filter: drop-shadow(0 18px 24px rgba(27, 43, 41, 0.2));
+  width: min(100%, 178px);
+  margin: 0;
+}
+
+.debate-gloves-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 22px 26px rgba(27, 43, 41, 0.22));
 }
 
 .columns-head {
@@ -873,6 +887,10 @@ a {
     max-height: 480px;
   }
 
+  .debate-gloves-panel {
+    width: min(100%, 150px);
+  }
+
   .columns-head {
     top: 108px;
   }
@@ -910,6 +928,11 @@ a {
   .brand-logo {
     width: 34px;
     height: 46px;
+  }
+
+  .brand-gloves {
+    width: 24px;
+    height: 24px;
   }
 
   .brand-name {
