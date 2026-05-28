@@ -26,7 +26,6 @@ function renderShell(content) {
       <a class="brand" href="#" aria-label="Slugfester home">
         <img class="brand-logo" src="./assets/slugfester-logo.jpg" alt="" width="38" height="52">
         <span class="brand-name">Slugfester</span>
-        <img class="brand-gloves" src="./assets/debate-gloves.png" alt="" width="444" height="444">
       </a>
       <nav aria-label="Primary">
         <a href="#">Debates</a>
