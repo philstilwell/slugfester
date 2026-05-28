@@ -44,9 +44,9 @@ function renderLanding() {
     <main class="landing">
       <section class="landing-panel">
         <div class="intro-copy">
-          <p class="eyebrow">Transcript scorecards</p>
+          <p class="eyebrow">Video debate transcript scorecards</p>
           <h1>Slugfester</h1>
-          <p class="lede">Debate words in two columns, argument strength in numbers, critiques tucked behind a sharp little ◉.</p>
+          <p class="lede">Turn video debate transcripts into side-by-side argument maps: each side's words stay visible, each claim and rebuttal gets a numerical strength score, and every ◉ opens a deeper critique of the reasoning.</p>
         </div>
         <figure class="logo-showcase">
           <img
