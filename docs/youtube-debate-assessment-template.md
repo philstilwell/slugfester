@@ -23,6 +23,7 @@ Landing-page design:
 - The main landing hero image is the illustrated two-men debate crest at `assets/slugfester-logo.jpg`.
 - The small image in the top bar is the boxing-gloves image at `assets/debate-gloves.png`.
 - The LogFall and CogBias header links are grouped under the visible `External Sites` label.
+- The debate list is capped at three columns on wide screens, then steps down responsively.
 
 Design constraints:
 

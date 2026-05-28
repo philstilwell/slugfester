@@ -47,6 +47,7 @@ requireIncludes("hero gloves", styles, ".debate-gloves-panel");
 requireIncludes("external links", styles, ".external-sites");
 requireIncludes("external links", styles, ".external-sites-label");
 requireIncludes("external links", styles, ".external-sites-links");
+requireIncludes("landing debate grid", styles, "grid-template-columns: repeat(3, minmax(0, 1fr));");
 requireIncludes("landing image", styles, "width: min(100%, 420px);");
 requireIncludes("debate title", styles, "font-size: clamp(1.5rem, 3.9vw, 3.35rem);");
 requireIncludes("tag popovers", styles, ".tag-popover");
