@@ -948,5 +948,345 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "hitchens-dsouza-religion-problem-2010",
+    title: "Christopher Hitchens vs Dinesh D'Souza: Is Religion the Problem?",
+    label: "Religion and public reason",
+    date: "2026-05-28",
+    duration: "1 hr 48 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=9V85OykSDT8",
+    motion:
+      "Is religion the problem, or does the God hypothesis better explain life, morality, purpose, and human experience than secular doubt?",
+    summary:
+      "Hitchens argues religion is man-made and morally dangerous; D'Souza argues God explains facts that secular accounts leave unresolved.",
+    sourceNote:
+      "Built from the YouTube English auto-caption track downloaded with yt-dlp and checked against Notre Dame and Today's Catholic event summaries. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "religion is a problem principally because it is man-made",
+        context:
+          "Hitchens's case treats religion as a human projection that offers false certainty, moral distortion, and political danger."
+      },
+      con: {
+        text: "God is in fact the answer to the problem",
+        context:
+          "D'Souza's case treats the God hypothesis as an inference that explains life, rationality, morality, and religious experience."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Religion is the problem",
+        speaker: "Christopher Hitchens",
+        color: "teal"
+      },
+      con: {
+        name: "God explains the problem",
+        speaker: "Dinesh D'Souza",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 76,
+      con: 73
+    },
+    sections: [
+      {
+        title: "Doubt and explanation",
+        timebox: "09:44-29:45",
+        score: {
+          pro: 80,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "11:11",
+              role: "Skeptical frame",
+              words:
+                "Hitchens says the only respectable intellectual position is doubt, skepticism, reservation, and free unfettered inquiry.",
+              score: 80,
+              critique:
+                "Hitchens's skeptical frame is strong because it fits the venue and the motion. He is not merely announcing disbelief; he argues that intellectual humility requires resisting claims that revelation has already settled moral, historical, and scientific questions. The strongest part is burden discipline: certainty should not be granted before inquiry. The weakness is that the frame can overgeneralize from bad religious certainty to religion as such. Some religious arguments present themselves as fallible inferences rather than closed revelation, and Hitchens risks treating those too quickly as the same faith posture. The score is high because the move gives the debate a serious epistemic standard, but not higher because it compresses diverse religious reasoning into one target.",
+              tags: []
+            },
+            con: {
+              time: "27:28",
+              role: "Reason-only case",
+              words:
+                "D'Souza accepts the demand for skepticism and says he will argue from reason, not revelation, scripture, or authority.",
+              score: 79,
+              critique:
+                "D'Souza's reason-only case is a tactically strong opening. By promising not to appeal to scripture, revelation, or church authority, he accepts Hitchens's public standard and prevents the debate from becoming a clash between sacred texts and disbelief. His detective and dark-matter analogy also usefully frames God as an explanatory hypothesis rather than a bare assertion. The weakness is that the analogy is only partly transferable. Dark matter is embedded in a research program with quantitative predictions, while God is a broader metaphysical explanation with more elastic boundaries. The score is strong because D'Souza meets the debate on shared ground, but restrained because the analogy risks borrowing scientific credibility before its own predictive limits are shown.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Human origins of religion",
+        timebox: "13:49-39:17",
+        score: {
+          pro: 82,
+          con: 71
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "13:49",
+              role: "Man-made claim",
+              words:
+                "Hitchens argues religion is man-made, rooted in fear, projection, tribal solidarity, primitive explanation, and false certainty.",
+              score: 82,
+              critique:
+                "Hitchens's man-made claim is one of his clearest contributions because it explains both religion's appeal and its danger. He grants religion historical credit as an early attempt at cosmology, medicine, literature, solidarity, and consolation, which makes the critique more charitable than simple contempt. The weakness is evidential scope. Showing that religion has recognizable human functions does not by itself show every religious claim is false or that religion is always more harmful than helpful. Still, for the motion 'Is religion the problem?' the argument is relevant: institutions built from fear and certainty can plausibly create public harms. The score is high because the move is explanatory, historically grounded, and rhetorically disciplined.",
+              tags: []
+            },
+            con: {
+              time: "26:43",
+              role: "Utility reply",
+              words:
+                "D'Souza says even if religion developed functionally, that hardly proves it is a serious problem or a damning indictment.",
+              score: 71,
+              critique:
+                "D'Souza's utility reply makes a fair logical distinction. Even if religion began as a functional human explanation, that origin alone does not prove religion is false, harmful, or uniquely problematic; science also develops through partial explanations that improve over time. That is a useful guard against genetic dismissal. The weakness is that D'Souza understates Hitchens's point. Hitchens is not only saying religion has origins; he is saying its origins in fear, projection, tribalism, and certainty still shape present institutions and political violence. The reply therefore answers the weaker version better than the stronger one. The score is solid because the distinction is real, but lower because it does not fully engage the continuing-risk claim.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The reply shifts from ongoing religious harms to whether human origin alone proves religion false."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Science, life, and design",
+        timebox: "20:35-35:55",
+        score: {
+          pro: 76,
+          con: 75
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "20:35",
+              role: "Design challenge",
+              words:
+                "Hitchens points to cosmic expansion, extinction, failed species, and solar death as evidence against a human-centered design story.",
+              score: 76,
+              critique:
+                "Hitchens's design challenge is effective because it attacks the anthropocentric mood of religious design arguments. The scale of cosmic waste, extinction, failed lineages, and the eventual death of the sun all make a tidy human-centered plan less intuitive. The move is also relevant to the motion because it links bad explanation to religious self-importance. Its weakness is that apparent waste is not strictly incompatible with design unless one specifies what a competent designer would avoid. A theist can answer that inefficiency matters only for limited agents, or that broader purposes are hidden. The score is strong because the objection is vivid and cumulative, but not decisive because it relies partly on expectations about divine efficiency.",
+              tags: []
+            },
+            con: {
+              time: "29:58",
+              role: "Origin case",
+              words:
+                "D'Souza argues evolution presupposes the cell, fine-tuning supports design, and atheism lacks a better origin explanation.",
+              score: 75,
+              critique:
+                "D'Souza's origin case is organized and relevant. He correctly notes that biological evolution, by itself, is not a complete account of abiogenesis, and he pairs that with fine-tuning to argue that God explains what naturalism leaves unresolved. The strongest feature is comparative framing: he asks for rival explanations rather than simply asserting God. The weakness is that the argument leans heavily on gaps in current natural explanation. A difficult origin-of-life problem does not automatically raise intelligent design unless the design hypothesis gains independent detail and constraints. His cell analogies also risk oversimplifying prebiotic chemistry. The score is solid because the challenge is real, but not higher because explanatory gaps carry more weight than positive evidence.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Unresolved abiogenesis questions are treated as support for design without enough independent design evidence."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Falsifiability and deism",
+        timebox: "39:33-51:21",
+        score: {
+          pro: 84,
+          con: 67
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "40:00",
+              role: "Falsifiability test",
+              words:
+                "Hitchens asks what would disprove the religious hypothesis and calls retrospective design an infinitely elastic airbag.",
+              score: 84,
+              critique:
+                "Hitchens's falsifiability test is one of the sharpest moves in the debate. He compares religious design claims with examples where scientific theories risk failure in advance, then asks what comparable observation would count against the God hypothesis. The strongest part is the charge of retrospective elasticity: when evolution is denied, then later folded into design, the explanation looks adaptive rather than predictive. The weakness is that not every metaphysical claim is falsified in the same way as a scientific model, so the Popper test cannot settle all philosophy of religion by itself. Even so, the criticism lands strongly against D'Souza's science-like explanatory framing. The high score reflects a precise challenge to the argument's method.",
+              tags: []
+            },
+            con: {
+              time: "46:12",
+              role: "Verification reply",
+              words:
+                "D'Souza says Hebrew creation from nothing and Israel's return show religious claims can line up with later facts.",
+              score: 67,
+              critique:
+                "D'Souza's verification reply is creative, but weaker than his opening. He tries to answer unfalsifiability by citing creation from nothing and Israel's return as claims that later facts allegedly confirm. The strength is that he recognizes the methodological challenge and attempts to supply examples rather than dodge it. The weakness is that the examples are too interpretive. Big Bang cosmology is not simply the biblical doctrine of creation, and the modern state of Israel involves ordinary historical, political, and traumatic causes that cannot safely be treated as prophecy without heavy theological assumptions. The score is mixed because the reply is responsive, but its evidence is underdetermined and risks reading later events back into scripture.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "Later scientific and political events are read as confirmations of prior religious claims."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality and violence",
+        timebox: "44:34-1:23:55",
+        score: {
+          pro: 74,
+          con: 72
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:15:35",
+              role: "Historical indictment",
+              words:
+                "Hitchens answers atheist-regime comparisons by citing the Inquisition, religious war, fascist churches, and messianic totalitarianism.",
+              score: 74,
+              critique:
+                "Hitchens's historical indictment is forceful because the motion concerns religion's public danger, not just God's abstract existence. He pushes back against simple atheist-regime counting by pointing to religious institutions, scriptural legitimation, theocratic power, and messianic politics. The strongest part is his final generalization: absolutist promises of ultimate history, whether religious or secular, are dangerous. The weakness is compression. The Inquisition, Thirty Years' War, fascism, communism, and theocratic politics each require careful causal sorting, and a rapid prosecutorial list can blur differences between religion as cause, cover, identity marker, and opportunistic tool. The score is solid-strong because the rebuttal is relevant and substantial, but not higher because its historical claims need slower evidence.",
+              tags: []
+            },
+            con: {
+              time: "1:13:21",
+              role: "Atheist ledger",
+              words:
+                "D'Souza argues religious crimes are overstated and that atheist regimes killed vastly more people in recent history.",
+              score: 72,
+              critique:
+                "D'Souza's atheist-ledger argument is relevant because it challenges the causal story behind 'religion is the problem.' If nonreligious regimes also produced mass murder, then religion cannot be the only source of human brutality. He also usefully asks whether some events labeled religious were really about conquest, territory, disease, or power. The weakness is that body-count comparison can become a diversion from the live question of what religion contributes when it supplies divine warrant, sacred identity, or immunity from criticism. It also risks treating atheism, secular utopianism, and totalitarian ideology as interchangeable. The score is solid because the objection complicates Hitchens's indictment, but it does not dissolve religion's independent causal role.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The comparison to atheist regimes can divert from whether religion itself adds distinctive harms."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Purpose and closing",
+        timebox: "1:24:05-1:47:37",
+        score: {
+          pro: 80,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:40:41",
+              role: "Secular meaning",
+              words:
+                "Hitchens says refusing faith is not faith, and that solidarity, liberty, poetry, music, and Socratic inquiry give life meaning.",
+              score: 80,
+              critique:
+                "Hitchens's secular-meaning close is strong because it answers a common emotional objection rather than merely attacking religion. He distinguishes refusal of faith from a competing faith commitment, then gives concrete sources of meaning: solidarity, liberty, friendship, poetry, music, and Socratic inquiry. The blood-donation example also connects morality to mutual dependence without making atheism morally superior. The weakness is that this answer works better as lived humanism than as a metaphysical account of ultimate purpose. It shows that nonbelievers can live meaningfully, not that all religious purpose claims are false. The score is high because the close is responsive, humane, and well matched to the motion's practical stakes.",
+              tags: []
+            },
+            con: {
+              time: "1:35:02",
+              role: "Faith bridge",
+              words:
+                "D'Souza says he infers a cause, not meaning, and that faith bridges limited knowledge and necessary human action.",
+              score: 76,
+              critique:
+                "D'Souza's faith-bridge close is one of his more careful moments. He clarifies that improbability is being used as an inference to cause, not as a direct proof of meaning, and his marriage analogy nicely captures how practical action often outruns complete evidence. That helps rescue faith from caricature as irrational guessing. The weakness is that the analogy does too much. Choosing under uncertainty in ordinary life is not equivalent to affirming a supernatural creator, afterlife, and religious worldview. The argument also slides from limited knowledge to faith's legitimacy without specifying which faith commitments are warranted. The score is solid-strong because the point is philosophically real, but its reach exceeds its support.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Faith shifts between practical trust under uncertainty and religious belief in supernatural claims."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 76,
+        strengths: [
+          "Hitchens framed the debate around doubt, falsifiability, and resistance to revealed certainty, which fit both the university setting and the motion.",
+          "His strongest material was the deism-to-religion gap: even a first cause would not establish providence, doctrine, worship, or moral authority.",
+          "He gave a substantive secular account of meaning and solidarity rather than relying only on anti-religious indictment."
+        ],
+        blunders: [
+          {
+            text:
+              "His historical indictments sometimes compressed complex causation into rapid lists, making religion look more uniformly causal than the evidence shown.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "Some arguments treated religious explanation as if it were always revelation-based, even when D'Souza was explicitly offering inference-based arguments.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 73,
+        strengths: [
+          "D'Souza accepted a shared public-reason standard and avoided simply appealing to scripture or church authority.",
+          "He kept his case comparative, repeatedly asking whether secular explanations or the God hypothesis better account for life, morality, and experience.",
+          "His pushback on historical causation complicated simple claims that religion alone explains organized violence."
+        ],
+        blunders: [
+          {
+            text:
+              "The origin-of-life and fine-tuning case leaned too often on gaps in current natural explanation as evidence for design.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "The appeals to biblical creation and Israel's return read later facts back into religious texts too confidently.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
