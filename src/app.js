@@ -138,6 +138,7 @@ function renderDebate(id) {
           ${renderMiniScore(debate.sides.pro.name, debate.score.pro, "teal")}
           ${renderMiniScore(debate.sides.con.name, debate.score.con, "coral")}
           <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noreferrer">Open YouTube source</a>
+          <img class="scoreboard-gloves" src="./assets/debate-gloves.png" alt="" width="444" height="444">
         </aside>
       </section>
 
