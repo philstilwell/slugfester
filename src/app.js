@@ -84,8 +84,8 @@ function renderDebateCard(debate) {
         ${renderMiniScore(debate.sides.con.name, debate.score.con, "coral")}
       </div>
       <div class="card-actions">
-        <a class="button primary" href="#/debate/${encodeURIComponent(debate.id)}">Open scorecard</a>
-        <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noreferrer">YouTube</a>
+        <a class="button primary" href="#/debate/${encodeURIComponent(debate.id)}">Open Debate Assessment</a>
+        <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noreferrer">YouTube Source</a>
       </div>
     </article>
   `;
