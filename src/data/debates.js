@@ -1288,5 +1288,385 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "lennox-atkins-science-explain-everything-2019",
+    title: "John Lennox vs Peter Atkins: Can Science Explain Everything?",
+    label: "Science and theism",
+    date: "2026-05-28",
+    duration: "1 hr 38 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=fSYwCaFkYno",
+    motion:
+      "Can science explain everything worth explaining, or do rationality, miracles, purpose, origins, morality, and meaning require a different kind of explanation?",
+    summary:
+      "Lennox argues science has real limits and points beyond itself; Atkins argues science can answer every real evidence-based question.",
+    sourceNote:
+      "Built from the YouTube English original auto-caption track downloaded with yt-dlp and checked against Bethinking, John Lennox, and Evangelical Focus event pages. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God no more competes with science",
+        context:
+          "Lennox's core claim is that scientific explanations and agency or God explanations answer different questions rather than competing at the same level."
+      },
+      con: {
+        text: "science is the way the truth and the life",
+        context:
+          "Atkins's close makes his posture explicit: science is the only reliable route to answering the real questions about reality."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Science has limits",
+        speaker: "John Lennox",
+        color: "teal"
+      },
+      con: {
+        name: "Science explains reality",
+        speaker: "Peter Atkins",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 77,
+      con: 70
+    },
+    sections: [
+      {
+        title: "Science and question scope",
+        timebox: "06:30-18:44",
+        score: {
+          pro: 83,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "11:51",
+              role: "Scope distinction",
+              words:
+                "Lennox distinguishes broad evidence-based inquiry from natural science, then argues natural science cannot answer meaning, origin, or purpose questions.",
+              score: 83,
+              critique:
+                "Lennox's scope distinction is one of the debate's strongest framing moves. He grants Atkins's broad definition of science as evidence-based observation and comparison, then distinguishes that from the narrower claim that the natural sciences answer every important question. That prevents a false conflict between faith and evidence, and his tea-kettle analogy clearly separates mechanism from agency. The weakness is that he moves quickly from 'natural science cannot answer this kind of question' to 'religion or God may answer it,' which still requires independent warrant. The score is high because the distinction is clear, relevant, and logically useful, but not higher because the positive alternative needs more defense than the framing itself provides.",
+              tags: []
+            },
+            con: {
+              time: "06:35",
+              role: "Science maximalism",
+              words:
+                "Atkins says science can explain everything real, while purpose and afterlife questions lack evidence and can be dismissed as nonsense.",
+              score: 77,
+              critique:
+                "Atkins's science maximalism is admirably direct. He defines science as public evidence, observation, and mutually reinforcing concepts, then says real questions are those for which evidence can be brought to bear. That gives him a clean criterion and avoids pretending current science has already answered everything. The weakness is that he dismisses purpose and afterlife questions too quickly as nonsense rather than showing that they are incoherent or permanently evidence-free. A question may be difficult, philosophical, or personal without being meaningless. The score is solid because the evidential standard is serious and important, but lower than Lennox's framing because it narrows the category of real questions by assertion as much as argument.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "Unclear philosophical questions are dismissed as unreal partly because empirical questions feel cleaner."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Miracles and resurrection",
+        timebox: "19:13-26:23",
+        score: {
+          pro: 75,
+          con: 64
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "20:20",
+              role: "Miracle distinction",
+              words:
+                "Lennox says science identifies regularities but cannot forbid God from introducing a new event, such as resurrection.",
+              score: 75,
+              critique:
+                "Lennox's miracle distinction is philosophically relevant because it separates natural regularity from metaphysical closure. His arithmetic-and-theft analogy helps show that recognizing a regularity can make an exceptional intervention visible rather than impossible. That is a useful reply to the claim that science simply rules miracles out. The weakness is that possibility is doing most of the work. Showing that laws do not logically forbid divine action does not establish that a resurrection occurred, nor does it provide enough historical evidence in the moment. The score is solid because Lennox answers the in-principle objection well, but only moderately strong because the factual resurrection claim still needs more evidential support than this exchange supplies.",
+              tags: []
+            },
+            con: {
+              time: "19:13",
+              role: "Resurrection denial",
+              words:
+                "Atkins says the resurrection never happened, dead bodies decay, and religious claims have no credible evidence.",
+              score: 64,
+              critique:
+                "Atkins's resurrection denial has a fair evidential instinct: extraordinary historical claims need evidence, and dead bodies normally decay. He also rightly presses Lennox to supply more than assertion. The problem is that Atkins often treats the normal biological course as if it settles a supernatural-intervention claim in advance. If the claim under discussion is precisely that an external agent acted, ordinary decay rates are relevant background evidence but not a strict disproof. His rhetoric also jumps from incredulity to dismissal too quickly, leaving little room for historical evaluation of sources, witnesses, or alternative explanations. The score is mixed because the burden challenge is valid, but the a priori rejection weakens the reasoning.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The denial assumes natural closure while evaluating a claim about supernatural intervention."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Rationality and science",
+        timebox: "27:20-38:17",
+        score: {
+          pro: 76,
+          con: 72
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "27:20",
+              role: "Rationality argument",
+              words:
+                "Lennox argues a mindless unguided brain undermines trust in rationality, while belief in a rational creator historically motivated science.",
+              score: 76,
+              critique:
+                "Lennox's rationality argument is a serious challenge to reductive naturalism. He asks whether a brain produced by mindless processes aimed only at survival can be trusted as a truth-tracking instrument, and he links that to the historical role of theism in early modern science. The strength is that he pressures the philosophical basis of science rather than attacking scientific results. The weakness is that the argument underplays naturalistic accounts in which reliable cognition is adaptive, socially corrected, and improved by method. It also risks moving from 'theism historically encouraged science' to 'theism best explains science' too fast. The score is solid because the objection is legitimate, but not decisive.",
+              tags: []
+            },
+            con: {
+              time: "30:35",
+              role: "Naturalist reply",
+              words:
+                "Atkins says scientists are optimists: collaboration, mathematics, observation, and evolution can explain understanding without invoking God.",
+              score: 72,
+              critique:
+                "Atkins's naturalist reply is strongest when he points to scientific practice itself: collaboration, mathematization, observation, and correction have produced reliable understanding without inserting God into the equations. He also fairly notes that religious motivation for science does not prove God exists. The weakness is that he sometimes substitutes confidence in future scientific explanation for an answer to Lennox's philosophical question about why reason tracks truth at all. Saying scientists are optimists and theologians are pessimists is rhetorically lively, but it does not fully engage the self-trust problem. The score is solid because the appeal to method is relevant, yet limited because it does not completely answer the deeper epistemic challenge.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Purpose and personal evidence",
+        timebox: "38:24-47:31",
+        score: {
+          pro: 69,
+          con: 75
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "40:27",
+              role: "Christian worldview",
+              words:
+                "Lennox says Christianity's historical metanarrative, rational universe, and transformed lives provide purpose and testability.",
+              score: 69,
+              critique:
+                "Lennox's Christian-worldview move is understandable: he wants purpose to be anchored in history, creation, the image of God, and lived transformation rather than abstract wishfulness. The strongest element is that he does not present purpose as a private feeling alone; he links it to a larger worldview and to public claims about Christ. The weakness is that the testability claim becomes heavily anecdotal. Transformed lives can be powerful evidence of psychological and moral change, but they do not uniquely verify Christianity over other life-altering commitments, therapies, communities, or conversions. The score is mixed because the argument is relevant and existentially serious, but its evidential reach exceeds what the examples show.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "Personal transformation is treated as confirming evidence for the worldview that produced it."
+                }
+              ]
+            },
+            con: {
+              time: "38:49",
+              role: "Purpose denial",
+              words:
+                "Atkins says purpose questions project human aims onto the universe, where there is no evidence of ultimate purpose.",
+              score: 75,
+              critique:
+                "Atkins's purpose denial is focused and methodologically consistent. He distinguishes ordinary human purposes from cosmic purpose, then argues that extending one to the other is an unsupported projection. That is a fair challenge: the fact that people have intentions does not show the universe has one. The weakness is that he again moves quickly from 'no scientific evidence of purpose' to treating the question as inappropriate. A philosophical or historical argument for purpose would still have to be assessed on its own terms. The score is solid because Atkins makes a clean evidential demand and avoids sentimentalism, but not higher because his criterion may exclude non-scientific evidence before weighing it.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Something from nothing",
+        timebox: "48:00-58:25",
+        score: {
+          pro: 77,
+          con: 70
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "49:23",
+              role: "Nothing challenge",
+              words:
+                "Lennox asks whether 'nothing' means absence of anything, and says the universe comes from God, not physical nothing.",
+              score: 77,
+              critique:
+                "Lennox's nothing challenge is useful because it forces a definition before the argument proceeds. Popular claims that the universe comes from nothing often trade on different meanings of nothing, and Lennox correctly asks whether the term means no space-time, no matter, no energy, or absolutely no reality. His distinction between nothing physical and God as nonphysical is coherent within theism. The weakness is that this response does not by itself demonstrate God; it blocks one naturalistic formulation and states a metaphysical alternative. The score is strong because the clarification is logically necessary, but not higher because the positive creator claim still needs independent support beyond definitional pressure.",
+              tags: []
+            },
+            con: {
+              time: "54:03",
+              role: "Opposites model",
+              words:
+                "Atkins says nothing separated into opposites, with positive and negative charge or energy balancing to zero.",
+              score: 70,
+              critique:
+                "Atkins's opposites model has a real explanatory aim: he tries to simplify the origin question by asking whether the universe's apparent quantities sum to zero, so creation is not the production of a net something. That is more substantive than a slogan. The weakness is that the phrase 'nothing separated into opposites' is unstable. If nothing is absolute absence, it cannot separate, contain structure, or generate balancing quantities. If it is a physical state with latent structure, then it is not nothing in the ordinary metaphysical sense. The score is solid because Atkins offers a model and admits incompletion, but lower because the key term risks equivocation.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Nothing shifts between absolute absence and a structured zero-sum physical condition."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Falsifiability and commitment",
+        timebox: "58:25-1:06:43",
+        score: {
+          pro: 82,
+          con: 52
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:00:20",
+              role: "Reversal criteria",
+              words:
+                "Lennox says evidence against Luke, the resurrection, or God's activity in his life would make him reconsider.",
+              score: 82,
+              critique:
+                "Lennox's reversal-criteria answer is a strong dialectical moment. He names categories of evidence that would matter: authenticity of Gospel writers, a convincing non-resurrection explanation, and the cumulative interpretation of his own experiences. That gives his position at least some visible vulnerability to counterevidence, and he explicitly says he questions his own commitment. The weakness is that some criteria remain broad and personally weighted, especially experiences he attributes to God. Still, compared with an outright refusal to imagine disconfirmation, Lennox shows better burden discipline. The score is high because he responds directly to falsifiability pressure, though not exceptional because his proposed defeaters are not all operationally precise.",
+              tags: []
+            },
+            con: {
+              time: "58:55",
+              role: "No defeater",
+              words:
+                "Atkins says he cannot think of evidence that would move him to belief, even a witnessed resurrection.",
+              score: 52,
+              critique:
+                "Atkins's no-defeater answer is the weakest major moment of his performance. He is right that testimony to miracles should be treated cautiously, and Humean skepticism can be a rational guard against credulity. But saying that even witnessing a resurrection would be dismissed as hallucination makes the position look insulated against all possible evidence. That undercuts his earlier insistence that science follows public evidence where it leads. The issue is not that he refuses one dubious report; it is that he cannot specify any conceivable observation that would count. The score is low because the answer damages his methodological credibility and invites exactly the unfalsifiability criticism he would press against theism.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "Potential counterevidence is pre-classified as hallucination before being evaluated."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality and final stakes",
+        timebox: "1:12:25-1:38:25",
+        score: {
+          pro: 78,
+          con: 70
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:15:41",
+              role: "Ought distinction",
+              words:
+                "Lennox says science can describe pain, behavior, or chemistry, but cannot decide what we ought to do.",
+              score: 78,
+              critique:
+                "Lennox's ought distinction is a solid philosophical point. Science can describe fetal pain, arsenic chemistry, evolutionary behavior, and the consequences of technology, but description alone does not settle what we should do with those facts. That directly challenges the motion's strongest form. He also wisely grants shared moral common ground between believers and atheists before giving his theistic explanation. The weakness is that showing science alone does not yield ethics does not prove Judeo-Christian theism is the correct source of ethics. Secular moral philosophy remains an available alternative. The score is strong because the descriptive-normative distinction is relevant and clear, but limited because the positive grounding argument is compressed.",
+              tags: []
+            },
+            con: {
+              time: "1:12:25",
+              role: "Evolutionary morality",
+              words:
+                "Atkins says moral behavior can be illuminated through evolution, group survival, ethology, anthropology, and psychology.",
+              score: 70,
+              critique:
+                "Atkins's evolutionary morality reply is reasonable as an explanatory project. He points to evolved social behavior, group survival, anthropology, ethology, and psychology as ways to understand why humans develop moral dispositions. That is a legitimate scientific contribution and prevents morality from being treated as wholly mysterious. The weakness is that he repeatedly slides from explaining moral origins to addressing moral authority. Explaining how humans came to hold certain norms does not by itself tell us which norms are justified, whether we ought to follow them, or how to resolve hard conflicts. The score is solid because the naturalistic account has real content, but limited because it answers the descriptive half better than the normative half.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Morality shifts between describing moral origins and justifying moral obligations."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 77,
+        strengths: [
+          "Lennox's best work was distinguishing mechanism explanations from agency explanations, especially with the tea-kettle and Henry Ford analogies.",
+          "He repeatedly accepted scientific evidence while denying that natural science exhausts history, purpose, morality, or personal commitment.",
+          "His answer on falsifiability was stronger than Atkins's because he identified evidence categories that would make him reconsider."
+        ],
+        blunders: [
+          {
+            text:
+              "The appeal to transformed lives as testability for Christianity relied too heavily on personally resonant cases.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          },
+          {
+            text:
+              "The rationality argument sometimes moved too quickly from naturalism's difficulty to theism's explanatory superiority.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 70,
+        strengths: [
+          "Atkins gave a clear evidential standard: science works through public observation, shared evidence, and mutually supporting concepts.",
+          "He pressed the resurrection and purpose claims with a hard demand for credible evidence rather than treating them as automatically meaningful.",
+          "His naturalistic accounts of morality and cognition supplied real explanatory resources, even where they did not settle every philosophical issue."
+        ],
+        blunders: [
+          {
+            text:
+              "His claim that no evidence could convince him of God made his position look insulated from counterevidence.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His origin argument depended on shifting meanings of nothing when explaining how nothing becomes something.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
