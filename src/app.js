@@ -31,8 +31,13 @@ function renderShell(content) {
       </a>
       <nav aria-label="Primary">
         <a href="#">Debates</a>
-        <a href="https://logfall.com/" target="_blank" rel="noreferrer">LogFall</a>
-        <a href="https://cogbias.site/" target="_blank" rel="noreferrer">CogBias</a>
+        <span class="external-sites" aria-label="External Sites">
+          <span class="external-sites-label">External Sites</span>
+          <span class="external-sites-links">
+            <a href="https://logfall.com/" target="_blank" rel="noreferrer">LogFall</a>
+            <a href="https://cogbias.site/" target="_blank" rel="noreferrer">CogBias</a>
+          </span>
+        </span>
       </nav>
     </header>
     ${content}

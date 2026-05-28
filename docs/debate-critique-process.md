@@ -22,13 +22,14 @@ Never invent direct quotations. If transcript text is lightly cleaned for readab
 
 Every debate object should produce this order:
 
-1. Hero metadata: debate label plus `Last rendered: YYYY-MM-DD`.
-2. Smaller debate title and motion.
-3. Representative quotes from both sides.
-4. AI-generated scoring note.
-5. `◉` interaction guide.
-6. Parallel argument columns, aligned by topic and time.
-7. Overall commentary with strengths and logical blunders for each side.
+1. Sticky header with Slugfester branding, a `Debates` link, and an `External Sites` capsule for LogFall and CogBias.
+2. Hero metadata: debate label plus `Last rendered: YYYY-MM-DD`.
+3. Smaller debate title and motion.
+4. Representative quotes from both sides.
+5. AI-generated scoring note.
+6. `◉` interaction guide.
+7. Parallel argument columns, aligned by topic and time.
+8. Overall commentary with strengths and logical blunders for each side.
 
 ## Segmentation
 

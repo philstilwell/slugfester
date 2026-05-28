@@ -22,6 +22,8 @@ function requireExcludes(label, source, forbidden) {
 requireIncludes("app debate hero", app, 'class="debate-gloves-panel"');
 requireIncludes("app debate hero", app, 'src="./assets/debate-gloves.png"');
 requireIncludes("app sticky header", app, 'class="brand-logo" src="./assets/debate-gloves.png"');
+requireIncludes("app sticky header", app, 'class="external-sites"');
+requireIncludes("app sticky header", app, "External Sites");
 requireIncludes("app landing hero", app, 'class="logo-showcase"');
 requireIncludes("app landing hero", app, 'src="./assets/slugfester-logo.jpg"');
 requireIncludes("app scorecard", app, "Open YouTube source");
@@ -42,6 +44,9 @@ requireIncludes(
   "grid-template-columns: minmax(0, 1fr) minmax(128px, 178px) 270px;"
 );
 requireIncludes("hero gloves", styles, ".debate-gloves-panel");
+requireIncludes("external links", styles, ".external-sites");
+requireIncludes("external links", styles, ".external-sites-label");
+requireIncludes("external links", styles, ".external-sites-links");
 requireIncludes("landing image", styles, "width: min(100%, 420px);");
 requireIncludes("debate title", styles, "font-size: clamp(1.5rem, 3.9vw, 3.35rem);");
 requireIncludes("tag popovers", styles, ".tag-popover");
