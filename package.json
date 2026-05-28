@@ -1,0 +1,11 @@
+{
+  "name": "slugfester",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Argument strength scorecards for YouTube debate transcripts.",
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 4174 --bind 127.0.0.1",
+    "check": "node --check src/app.js && node --check src/data/debates.js"
+  }
+}
