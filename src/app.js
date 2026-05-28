@@ -140,6 +140,7 @@ function renderDebate(id) {
 
       ${renderQuoteCards(debate)}
       ${renderScoringNote(debate)}
+      ${renderInteractionGuide()}
 
       <section class="columns-head" aria-label="Debate sides">
         <div class="side-heading teal">
@@ -156,6 +157,15 @@ function renderDebate(id) {
       ${renderOverall(debate)}
     </main>
   `);
+}
+
+function renderInteractionGuide() {
+  return `
+    <section class="interaction-guide" aria-label="How to read critiques">
+      <strong>◉ Deeper critiques</strong>
+      <span>Mouse over the ◉ symbols, or focus them with the keyboard, to open a longer critique of each scored argument.</span>
+    </section>
+  `;
 }
 
 function renderScoringNote(debate) {

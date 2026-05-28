@@ -236,12 +236,35 @@ a {
   display: flex;
   gap: 14px;
   align-items: start;
-  margin: 0 0 20px;
+  margin: 0 0 12px;
   padding: 14px 16px;
   background: #fff;
   border: 1px solid var(--line);
   border-left: 5px solid var(--blue);
   border-radius: 8px;
+}
+
+.interaction-guide {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin: 0 0 20px;
+  padding: 12px 16px;
+  background: var(--ink);
+  border-radius: 8px;
+  color: #fff;
+}
+
+.interaction-guide strong {
+  min-width: max-content;
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.interaction-guide span {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .scoring-note strong,
@@ -630,20 +653,23 @@ a {
 }
 
 .critique-popover {
-  position: absolute;
-  left: 0;
-  bottom: calc(100% + 10px);
+  position: fixed;
+  left: clamp(24px, 6vw, 80px);
+  top: 86px;
   z-index: 30;
   display: grid;
   gap: 8px;
-  width: min(310px, calc(100vw - 44px));
+  width: min(520px, calc(100vw - 44px));
+  max-height: calc(100vh - 112px);
   padding: 13px;
+  overflow: auto;
   color: #fff;
   background: #13201f;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 8px;
   box-shadow: var(--shadow);
-  font-size: 0.9rem;
+  font-size: 0.92rem;
+  line-height: 1.45;
   opacity: 0;
   pointer-events: none;
   transform: translateY(4px);
@@ -790,6 +816,7 @@ a {
 
   .section-title-row,
   .section-score-pair,
+  .interaction-guide,
   .scoring-note,
   .side-score-strip,
   .card-actions {
@@ -841,9 +868,11 @@ a {
 
   .critique-popover {
     position: fixed;
+    top: auto;
     left: 10px;
     right: 10px;
     bottom: 18px;
     width: auto;
+    max-height: min(620px, calc(100vh - 96px));
   }
 }
