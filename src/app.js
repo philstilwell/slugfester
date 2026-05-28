@@ -293,14 +293,35 @@ function renderTags(tags = []) {
   }
 
   return tags
-    .map(
-      (tag) => `
-        <a class="tag ${escapeHtml(tag.type)}" href="${escapeHtml(referenceHref(tag.url))}">
-          ${escapeHtml(tag.label)}
-        </a>
-      `
-    )
+    .map(renderTag)
     .join("");
+}
+
+function renderTag(tag) {
+  const reference = referenceFromUrl(tag.url);
+  const definition = reference ? getReferenceDefinition(reference.type, reference.slug) : null;
+  const category = tag.type === "fallacy" ? "Logical fallacy" : "Cognitive bias";
+  const source = tag.type === "fallacy" ? "LogFall" : "CogBias";
+  const localHref = referenceHref(tag.url);
+  const externalHref = definition?.externalUrl || tag.url;
+
+  return `
+    <span class="tag-wrap">
+      <a class="tag ${escapeHtml(tag.type)}" href="${escapeHtml(localHref)}">
+        ${escapeHtml(tag.label)}
+      </a>
+      <span class="tag-popover" role="tooltip">
+        <strong>${escapeHtml(tag.label)}</strong>
+        <em>${category}</em>
+        ${definition ? `<span>${escapeHtml(definition.definition)}</span>` : ""}
+        <span class="tag-context">${escapeHtml(tag.context)}</span>
+        <span class="tag-popover-links">
+          <a href="${escapeHtml(localHref)}">Open local reference</a>
+          <a href="${escapeHtml(externalHref)}" target="_blank" rel="noreferrer">In-depth ${source}</a>
+        </span>
+      </span>
+    </span>
+  `;
 }
 
 function referenceHref(url) {

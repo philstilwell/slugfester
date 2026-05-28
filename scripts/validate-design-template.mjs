@@ -29,6 +29,7 @@ requireIncludes("app guide", app, "◉ Deeper critiques");
 requireIncludes("app reference route", app, "referenceRoutePattern");
 requireIncludes("app reference route", app, "Why this label appears here");
 requireIncludes("app tag links", app, "referenceHref(tag.url)");
+requireIncludes("app tag popovers", app, 'class="tag-popover"');
 
 requireExcludes("app sticky header", app, "brand-gloves");
 requireExcludes("app scorecard", app, "scoreboard-gloves");
@@ -41,6 +42,8 @@ requireIncludes(
 requireIncludes("hero gloves", styles, ".debate-gloves-panel");
 requireIncludes("landing image", styles, "width: min(100%, 420px);");
 requireIncludes("debate title", styles, "font-size: clamp(1.5rem, 3.9vw, 3.35rem);");
+requireIncludes("tag popovers", styles, ".tag-popover");
+requireIncludes("tag popovers", styles, ".tag-wrap:hover .tag-popover");
 requireIncludes("argument grid", styles, ".exchange-grid");
 requireIncludes("argument grid", styles, "align-items: start;");
 requireIncludes("argument cards", styles, "min-height: 0;");
