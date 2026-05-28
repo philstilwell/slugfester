@@ -628,12 +628,13 @@ a {
 .exchange-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
   gap: 12px 14px;
 }
 
 .argument {
   position: relative;
-  min-height: 190px;
+  min-height: 0;
   padding: 14px;
 }
 
