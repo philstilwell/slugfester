@@ -1,7 +1,9 @@
 import { debates } from "./data/debates.js";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js";
 
 const app = document.querySelector("#app");
-const routePattern = /^#\/debate\/([a-z0-9-]+)$/;
+const debateRoutePattern = /^#\/debate\/([a-z0-9-]+)$/;
+const referenceRoutePattern = /^#\/reference\/(fallacy|bias)\/([a-z0-9-]+)$/;
 
 const escapeHtml = (value = "") =>
   String(value)
@@ -293,12 +295,17 @@ function renderTags(tags = []) {
   return tags
     .map(
       (tag) => `
-        <a class="tag ${escapeHtml(tag.type)}" href="${escapeHtml(tag.url)}" target="_blank" rel="noreferrer">
+        <a class="tag ${escapeHtml(tag.type)}" href="${escapeHtml(referenceHref(tag.url))}">
           ${escapeHtml(tag.label)}
         </a>
       `
     )
     .join("");
+}
+
+function referenceHref(url) {
+  const reference = referenceFromUrl(url);
+  return reference ? `#/reference/${reference.type}/${reference.slug}` : url;
 }
 
 function renderOverall(debate) {
@@ -338,18 +345,121 @@ function renderOverallSide(side, overall, tone) {
 function renderBlunder(blunder) {
   const links = blunder.links
     .map(
-      (link) =>
-        `<a href="${escapeHtml(link.url)}" target="_blank" rel="noreferrer">${escapeHtml(link.label)}</a>`
+      (link) => {
+        const href = referenceHref(link.url);
+        const isInternal = href.startsWith("#/");
+        const target = isInternal ? "" : ' target="_blank" rel="noreferrer"';
+        return `<a href="${escapeHtml(href)}"${target}>${escapeHtml(link.label)}</a>`;
+      }
     )
     .join(" ");
 
   return `<li>${escapeHtml(blunder.text)} <span class="inline-links">${links}</span></li>`;
 }
 
+function renderReference(type, slug) {
+  const reference = getReferenceDefinition(type, slug);
+
+  if (!reference) {
+    app.innerHTML = renderShell(`
+      <main class="not-found">
+        <p class="eyebrow">No reference</p>
+        <h1>Reference not found</h1>
+        <a class="button primary" href="#">Back to debates</a>
+      </main>
+    `);
+    return;
+  }
+
+  const category = type === "fallacy" ? "Logical fallacy" : "Cognitive bias";
+  const source = type === "fallacy" ? "LogFall" : "CogBias";
+  const appearances = collectReferenceAppearances(type, slug);
+
+  app.innerHTML = renderShell(`
+    <main class="reference-page">
+      <a class="back-link" href="#">Back to debates</a>
+      <section class="reference-card ${escapeHtml(type)}">
+        <p class="eyebrow">${category}</p>
+        <h1>${escapeHtml(reference.label)}</h1>
+        <p>${escapeHtml(reference.definition)}</p>
+        <div class="reference-actions">
+          <a class="button primary" href="${escapeHtml(reference.externalUrl)}" target="_blank" rel="noreferrer">
+            Read the in-depth ${source} entry
+          </a>
+        </div>
+      </section>
+      ${
+        appearances.length
+          ? `
+            <section class="reference-contexts" aria-labelledby="reference-contexts-heading">
+              <div class="section-heading">
+                <p class="eyebrow">Debate context</p>
+                <h2 id="reference-contexts-heading">Why this label appears here</h2>
+              </div>
+              <div class="reference-context-list">
+                ${appearances.map(renderReferenceAppearance).join("")}
+              </div>
+            </section>
+          `
+          : ""
+      }
+    </main>
+  `);
+}
+
+function collectReferenceAppearances(type, slug) {
+  const appearances = [];
+
+  debates.forEach((debate) => {
+    debate.sections.forEach((section) => {
+      section.exchanges.forEach((exchange) => {
+        ["pro", "con"].forEach((sideKey) => {
+          const argument = exchange[sideKey];
+          if (!argument) return;
+
+          argument.tags.forEach((tag) => {
+            const reference = referenceFromUrl(tag.url);
+            if (reference?.type !== type || reference.slug !== slug) return;
+
+            appearances.push({
+              debate,
+              section,
+              side: debate.sides[sideKey],
+              argument,
+              tag
+            });
+          });
+        });
+      });
+    });
+  });
+
+  return appearances;
+}
+
+function renderReferenceAppearance(appearance) {
+  return `
+    <article class="reference-context-card">
+      <div class="card-topline">
+        <span>${escapeHtml(appearance.debate.label)}</span>
+        <span>${escapeHtml(appearance.argument.time)}</span>
+      </div>
+      <h3>${escapeHtml(appearance.section.title)}</h3>
+      <p class="reference-speaker">${escapeHtml(appearance.side.name)} · ${escapeHtml(appearance.side.speaker)} · ${escapeHtml(appearance.argument.role)}</p>
+      <blockquote>${escapeHtml(appearance.argument.words)}</blockquote>
+      <p>${escapeHtml(appearance.tag.context)}</p>
+    </article>
+  `;
+}
+
 function route() {
-  const match = window.location.hash.match(routePattern);
-  if (match) {
-    renderDebate(decodeURIComponent(match[1]));
+  const debateMatch = window.location.hash.match(debateRoutePattern);
+  const referenceMatch = window.location.hash.match(referenceRoutePattern);
+
+  if (debateMatch) {
+    renderDebate(decodeURIComponent(debateMatch[1]));
+  } else if (referenceMatch) {
+    renderReference(referenceMatch[1], referenceMatch[2]);
   } else {
     renderLanding();
   }

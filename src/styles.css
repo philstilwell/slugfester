@@ -217,7 +217,8 @@ a {
 .debate-card,
 .argument,
 .overall-side,
-.scoreboard {
+.scoreboard,
+.reference-card {
   background: rgba(255, 255, 255, 0.92);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -845,6 +846,85 @@ a {
 .not-found {
   min-height: calc(100vh - 64px);
   padding: 80px 0;
+}
+
+.reference-page {
+  width: min(820px, calc(100% - 32px));
+  min-height: calc(100vh - 64px);
+  margin: 0 auto;
+  padding: clamp(34px, 6vw, 76px) 0;
+}
+
+.reference-card {
+  display: grid;
+  gap: 18px;
+  padding: clamp(22px, 4vw, 34px);
+  border-top: 6px solid var(--coral);
+  box-shadow: var(--shadow);
+}
+
+.reference-card.bias {
+  border-top-color: var(--teal);
+}
+
+.reference-card h1 {
+  margin: 0;
+  font-size: clamp(2.1rem, 7vw, 4.4rem);
+  line-height: 0.95;
+}
+
+.reference-card p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 0;
+  color: #30413e;
+  font-size: clamp(1.05rem, 2vw, 1.28rem);
+}
+
+.reference-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.reference-contexts {
+  padding: 28px 0 0;
+}
+
+.reference-context-list {
+  display: grid;
+  gap: 14px;
+}
+
+.reference-context-card {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.reference-context-card h3,
+.reference-context-card p,
+.reference-context-card blockquote {
+  margin: 0;
+}
+
+.reference-speaker {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.reference-context-card blockquote {
+  padding-left: 14px;
+  color: #243633;
+  border-left: 4px solid var(--line);
+  font-size: 1rem;
+}
+
+.reference-context-card > p:last-child {
+  color: #30413e;
 }
 
 @media (max-width: 820px) {

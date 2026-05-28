@@ -67,7 +67,9 @@ export const debates = [
                 {
                   label: "Belief bias",
                   type: "bias",
-                  url: bias("belief-bias")
+                  url: bias("belief-bias"),
+                  context:
+                    "The tag marks the risk of treating mutually congenial theistic claims as stronger because the conclusion already feels plausible."
                 }
               ]
             },
@@ -95,7 +97,9 @@ export const debates = [
                 {
                   label: "Appeal to authority",
                   type: "fallacy",
-                  url: fallacy("appeal-to-authority")
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "The tag applies because scholarly agreement is invoked without enough live evidence for listeners to evaluate the historical inference."
                 }
               ]
             },
@@ -111,7 +115,9 @@ export const debates = [
                 {
                   label: "Authority bias",
                   type: "bias",
-                  url: bias("authority-bias")
+                  url: bias("authority-bias"),
+                  context:
+                    "The tag marks the quick reliance on expert disagreement and surveys without unpacking the underlying cosmological evidence."
                 }
               ]
             }
@@ -149,7 +155,9 @@ export const debates = [
                 {
                   label: "Equivocation",
                   type: "fallacy",
-                  url: fallacy("equivocation")
+                  url: fallacy("equivocation"),
+                  context:
+                    "The discussion turns on whether 'full' keeps the same meaning in ordinary finite cases and infinite hotel cases."
                 }
               ]
             }
@@ -167,7 +175,9 @@ export const debates = [
                 {
                   label: "Special pleading",
                   type: "fallacy",
-                  url: fallacy("special-pleading")
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The tag marks the worry that a conventionally selected unit is granted metaphysical force without independent justification."
                 }
               ]
             },
@@ -183,7 +193,9 @@ export const debates = [
                 {
                   label: "Ambiguity effect",
                   type: "bias",
-                  url: bias("ambiguity-effect")
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The tag applies because the objection's force depends on unresolved ambiguity about what counts as the series member."
                 }
               ]
             }
@@ -211,7 +223,9 @@ export const debates = [
                 {
                   label: "Appeal to authority",
                   type: "fallacy",
-                  url: fallacy("appeal-to-authority")
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "The tag marks reliance on book-length defenses rather than presenting the decisive reason in the live exchange."
                 }
               ]
             },
@@ -239,7 +253,9 @@ export const debates = [
                 {
                   label: "Confirmation bias",
                   type: "bias",
-                  url: bias("confirmation-bias")
+                  url: bias("confirmation-bias"),
+                  context:
+                    "The tag applies because the reply is persuasive mainly within the prior A-theory framework Craig already accepts."
                 }
               ]
             },
@@ -277,12 +293,16 @@ export const debates = [
                 {
                   label: "Red herring",
                   type: "fallacy",
-                  url: fallacy("red-herring")
+                  url: fallacy("red-herring"),
+                  context:
+                    "The tag marks the shift from animal suffering specifically to life and fine-tuning more generally."
                 },
                 {
                   label: "Base-rate neglect",
                   type: "bias",
-                  url: bias("base-rate-neglect")
+                  url: bias("base-rate-neglect"),
+                  context:
+                    "The tag applies because the reply risks overlooking the expected distribution of suffering once sentient life exists."
                 }
               ]
             },
@@ -310,7 +330,9 @@ export const debates = [
                 {
                   label: "Argument from ignorance",
                   type: "fallacy",
-                  url: fallacy("argument-from-ignorance")
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The tag marks the appeal to unknown divine reasons without positive evidence for the proposed salvation connection."
                 }
               ]
             },
@@ -326,7 +348,9 @@ export const debates = [
                 {
                   label: "Scope neglect",
                   type: "bias",
-                  url: bias("scope-neglect")
+                  url: bias("scope-neglect"),
+                  context:
+                    "The tag marks the challenge that isolated unseen predation cases may be minimized despite their cumulative scale."
                 }
               ]
             }
@@ -354,7 +378,9 @@ export const debates = [
                 {
                   label: "Special pleading",
                   type: "fallacy",
-                  url: fallacy("special-pleading")
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The tag applies because animal suffering is discounted by a distinction not yet shown to justify lower moral weight."
                 }
               ]
             },
@@ -370,7 +396,9 @@ export const debates = [
                 {
                   label: "Equivocation",
                   type: "fallacy",
-                  url: fallacy("equivocation")
+                  url: fallacy("equivocation"),
+                  context:
+                    "The tag applies because the exchange turns on whether pain and suffering are being redefined away from experience."
                 }
               ]
             }
@@ -420,7 +448,9 @@ export const debates = [
                 {
                   label: "Begging the question",
                   type: "fallacy",
-                  url: fallacy("begging-the-question")
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The tag marks the risk that prior theistic confidence dismisses the suffering evidence that was meant to test it."
                 }
               ]
             },
@@ -448,7 +478,9 @@ export const debates = [
                 {
                   label: "Subjective validation",
                   type: "bias",
-                  url: bias("subjective-validation")
+                  url: bias("subjective-validation"),
+                  context:
+                    "The tag applies because private spiritual assurance is offered as warrant in a public evidential dispute."
                 }
               ]
             },

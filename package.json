@@ -6,6 +6,6 @@
   "type": "module",
   "scripts": {
     "dev": "python3 -m http.server 4174 --bind 127.0.0.1",
-    "check": "node --check src/app.js && node --check src/data/debates.js && node scripts/validate-debates.mjs && node scripts/validate-design-template.mjs"
+    "check": "node --check src/app.js && node --check src/data/debates.js && node --check src/data/references.js && node scripts/validate-debates.mjs && node scripts/validate-design-template.mjs"
   }
 }

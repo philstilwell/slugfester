@@ -26,6 +26,9 @@ requireIncludes("app landing hero", app, 'class="logo-showcase"');
 requireIncludes("app landing hero", app, 'src="./assets/slugfester-logo.jpg"');
 requireIncludes("app scorecard", app, "Open YouTube source");
 requireIncludes("app guide", app, "◉ Deeper critiques");
+requireIncludes("app reference route", app, "referenceRoutePattern");
+requireIncludes("app reference route", app, "Why this label appears here");
+requireIncludes("app tag links", app, "referenceHref(tag.url)");
 
 requireExcludes("app sticky header", app, "brand-gloves");
 requireExcludes("app scorecard", app, "scoreboard-gloves");

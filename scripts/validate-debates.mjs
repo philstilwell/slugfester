@@ -1,4 +1,5 @@
 import { debates } from "../src/data/debates.js";
+import { getReferenceDefinition, referenceFromUrl } from "../src/data/references.js";
 
 const errors = [];
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -80,6 +81,7 @@ function validateTag(tag, path) {
   requireString(tag, "label", path);
   const type = requireString(tag, "type", path);
   const url = requireString(tag, "url", path);
+  requireString(tag, "context", path, { minWords: 8, maxWords: 35 });
 
   if (!["fallacy", "bias"].includes(type)) {
     addError([...path, "type"], "must be either fallacy or bias");
@@ -91,6 +93,13 @@ function validateTag(tag, path) {
 
   if (type === "bias" && !url.startsWith("https://cogbias.site/biases/")) {
     addError([...path, "url"], "bias tags must link to CogBias bias pages");
+  }
+
+  const reference = referenceFromUrl(url);
+  if (!reference || reference.type !== type) {
+    addError([...path, "url"], "must resolve to a matching local reference page");
+  } else if (!getReferenceDefinition(reference.type, reference.slug)) {
+    addError([...path, "url"], "must have a local reference definition");
   }
 }
 
@@ -168,6 +177,11 @@ function validateOverall(overall, path) {
       const url = requireString(link, "url", linkPath);
       if (!url.startsWith("https://logfall.com/") && !url.startsWith("https://cogbias.site/")) {
         addError([...linkPath, "url"], "must link to LogFall or CogBias");
+      }
+
+      const reference = referenceFromUrl(url);
+      if (!reference || !getReferenceDefinition(reference.type, reference.slug)) {
+        addError([...linkPath, "url"], "must have a local reference definition");
       }
     });
   });

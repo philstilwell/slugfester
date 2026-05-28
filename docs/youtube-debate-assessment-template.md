@@ -42,7 +42,7 @@ Design constraints:
 7. Write each `argument.words` as actual words or a tight transcript-grounded condensation.
 8. Score each move using the rubric in `debate-critique-process.md`.
 9. Write each critique at 105-130 words.
-10. Add fallacy or bias tags only when they explain a real weakness.
+10. Add fallacy or bias tags only when they explain a real weakness, and include a context note for each tag.
 11. Write the overall strengths and logical blunders.
 12. Run `npm run check`.
 
@@ -107,7 +107,14 @@ Use this shape when adding an object to `src/data/debates.js`.
             score: 0,
             critique:
               "About 120 words following the critique pattern: strength, weakness, and score justification.",
-            tags: []
+            tags: [
+              {
+                label: "Fallacy or bias name",
+                type: "fallacy",
+                url: fallacy("slug"),
+                context: "Explain why this label applies to this specific argument."
+              }
+            ]
           },
           con: {
             time: "00:00",
@@ -171,4 +178,5 @@ Use this shape when adding an object to `src/data/debates.js`.
 - `scoringNote` explicitly says the scores are AI-generated.
 - LogFall links are used only for fallacies.
 - CogBias links are used only for cognitive biases.
+- Fallacy and bias pills open local reference pages with basic definitions, contextual explanation, and external in-depth links.
 - `npm run check` passes before commit.
