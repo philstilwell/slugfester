@@ -30,6 +30,7 @@ requireIncludes("app reference route", app, "referenceRoutePattern");
 requireIncludes("app reference route", app, "Why this label appears here");
 requireIncludes("app tag links", app, "referenceHref(tag.url)");
 requireIncludes("app tag popovers", app, 'class="tag-popover"');
+requireIncludes("app tag popovers", app, "Click button for more info.");
 
 requireExcludes("app sticky header", app, "brand-gloves");
 requireExcludes("app scorecard", app, "scoreboard-gloves");

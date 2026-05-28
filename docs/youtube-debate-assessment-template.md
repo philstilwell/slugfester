@@ -178,6 +178,6 @@ Use this shape when adding an object to `src/data/debates.js`.
 - `scoringNote` explicitly says the scores are AI-generated.
 - LogFall links are used only for fallacies.
 - CogBias links are used only for cognitive biases.
-- Fallacy and bias pills show hover/focus popovers with basic definitions, contextual explanation, and links.
+- Fallacy and bias pills show hover/focus popovers with basic definitions, contextual explanation, and the note `Click button for more info.`
 - Fallacy and bias pills also open local reference pages with basic definitions, contextual explanation, and external in-depth links.
 - `npm run check` passes before commit.
