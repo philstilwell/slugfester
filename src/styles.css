@@ -236,7 +236,7 @@ a {
   display: flex;
   gap: 14px;
   align-items: start;
-  margin: 0 0 14px;
+  margin: 0 0 20px;
   padding: 14px 16px;
   background: #fff;
   border: 1px solid var(--line);
@@ -245,7 +245,7 @@ a {
 }
 
 .scoring-note strong,
-.quote-card span {
+.quote-side {
   color: var(--blue);
   font-size: 0.76rem;
   font-weight: 850;
@@ -257,38 +257,86 @@ a {
   color: #30413e;
 }
 
+.quote-panel {
+  margin: 0 0 18px;
+  padding: 4px 0 0;
+}
+
+.quote-panel-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 12px;
+}
+
+.quote-panel-head h2 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
 .quote-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-  margin: 0 0 14px;
+  gap: 16px;
 }
 
 .quote-card {
+  position: relative;
   display: grid;
-  gap: 12px;
-  padding: 16px;
-  background: rgba(255, 255, 255, 0.92);
+  align-content: start;
+  min-height: 240px;
+  gap: 18px;
+  padding: 24px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(244, 248, 247, 0.9));
   border: 1px solid var(--line);
-  border-left: 5px solid var(--teal);
+  border-top: 7px solid var(--teal);
   border-radius: 8px;
+  box-shadow: 0 18px 46px rgba(27, 43, 41, 0.1);
 }
 
 .quote-card.coral {
-  border-left-color: var(--coral);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(250, 231, 226, 0.62));
+  border-top-color: var(--coral);
 }
 
 .quote-card blockquote {
-  margin: 8px 0 0;
+  position: relative;
+  z-index: 1;
+  margin: 0;
   color: var(--ink);
-  font-size: clamp(1.24rem, 2vw, 1.68rem);
-  font-weight: 850;
-  line-height: 1.1;
+  font-size: 2.7rem;
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: 0;
 }
 
 .quote-card p {
+  position: relative;
+  z-index: 1;
   margin: 0;
-  color: var(--muted);
+  color: #30413e;
+  font-size: 1.02rem;
+}
+
+.quote-card::after {
+  content: "\"";
+  position: absolute;
+  right: 18px;
+  bottom: -34px;
+  color: rgba(47, 143, 133, 0.1);
+  font-family: Georgia, serif;
+  font-size: 11rem;
+  line-height: 1;
+}
+
+.quote-card.coral::after {
+  color: rgba(211, 93, 71, 0.1);
 }
 
 .side-score-strip {
@@ -732,6 +780,14 @@ a {
     top: 104px;
   }
 
+  .quote-card {
+    min-height: 210px;
+  }
+
+  .quote-card blockquote {
+    font-size: 2.15rem;
+  }
+
   .section-title-row,
   .section-score-pair,
   .scoring-note,
@@ -768,6 +824,19 @@ a {
 
   .argument {
     min-height: auto;
+  }
+
+  .quote-panel-head h2 {
+    font-size: 1.7rem;
+  }
+
+  .quote-card {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .quote-card blockquote {
+    font-size: 1.78rem;
   }
 
   .critique-popover {
