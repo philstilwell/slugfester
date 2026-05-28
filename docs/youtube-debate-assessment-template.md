@@ -180,4 +180,5 @@ Use this shape when adding an object to `src/data/debates.js`.
 - CogBias links are used only for cognitive biases.
 - Fallacy and bias pills show hover/focus popovers with basic definitions, contextual explanation, and the note `Click button for more info.`
 - Fallacy and bias pills also open local reference pages with basic definitions, contextual explanation, and external in-depth links.
+- Reference pages include `Back to debates | Back to this debate` navigation when opened from a debate page.
 - `npm run check` passes before commit.

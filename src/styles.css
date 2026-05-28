@@ -914,6 +914,23 @@ a {
   padding: clamp(34px, 6vw, 76px) 0;
 }
 
+.reference-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 18px;
+}
+
+.reference-nav .back-link {
+  margin-bottom: 0;
+}
+
+.reference-nav span {
+  color: var(--muted);
+  font-weight: 850;
+}
+
 .reference-card {
   display: grid;
   gap: 18px;

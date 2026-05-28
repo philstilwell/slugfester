@@ -3,7 +3,7 @@ import { getReferenceDefinition, referenceFromUrl } from "./data/references.js";
 
 const app = document.querySelector("#app");
 const debateRoutePattern = /^#\/debate\/([a-z0-9-]+)$/;
-const referenceRoutePattern = /^#\/reference\/(fallacy|bias)\/([a-z0-9-]+)$/;
+const referenceRoutePattern = /^#\/reference\/(fallacy|bias)\/([a-z0-9-]+)(?:\?debate=([a-z0-9-]+))?$/;
 
 const escapeHtml = (value = "") =>
   String(value)
@@ -235,8 +235,8 @@ function renderSection(section, debate) {
         ${section.exchanges
           .map(
             (exchange) => `
-              ${renderArgument(exchange.pro, "teal")}
-              ${renderArgument(exchange.con, "coral")}
+              ${renderArgument(exchange.pro, "teal", debate.id)}
+              ${renderArgument(exchange.con, "coral", debate.id)}
             `
           )
           .join("")}
@@ -254,7 +254,7 @@ function renderSectionScore(label, score) {
   `;
 }
 
-function renderArgument(argument, tone) {
+function renderArgument(argument, tone, debateId) {
   if (!argument) {
     return `<article class="argument empty" aria-hidden="true"></article>`;
   }
@@ -269,7 +269,7 @@ function renderArgument(argument, tone) {
       <p>${escapeHtml(argument.words)}</p>
       <div class="argument-footer">
         ${renderCritique(argument)}
-        ${renderTags(argument.tags)}
+        ${renderTags(argument.tags, debateId)}
       </div>
     </article>
   `;
@@ -287,21 +287,21 @@ function renderCritique(argument) {
   `;
 }
 
-function renderTags(tags = []) {
+function renderTags(tags = [], debateId = "") {
   if (!tags.length) {
     return `<span class="tag clean">No named fallacy</span>`;
   }
 
   return tags
-    .map(renderTag)
+    .map((tag) => renderTag(tag, debateId))
     .join("");
 }
 
-function renderTag(tag) {
+function renderTag(tag, debateId) {
   const reference = referenceFromUrl(tag.url);
   const definition = reference ? getReferenceDefinition(reference.type, reference.slug) : null;
   const category = tag.type === "fallacy" ? "Logical fallacy" : "Cognitive bias";
-  const localHref = referenceHref(tag.url);
+  const localHref = referenceHref(tag.url, debateId);
 
   return `
     <span class="tag-wrap">
@@ -319,9 +319,12 @@ function renderTag(tag) {
   `;
 }
 
-function referenceHref(url) {
+function referenceHref(url, debateId = "") {
   const reference = referenceFromUrl(url);
-  return reference ? `#/reference/${reference.type}/${reference.slug}` : url;
+  if (!reference) return url;
+
+  const source = debateId ? `?debate=${encodeURIComponent(debateId)}` : "";
+  return `#/reference/${reference.type}/${reference.slug}${source}`;
 }
 
 function renderOverall(debate) {
@@ -332,14 +335,14 @@ function renderOverall(debate) {
         <h2 id="overall-heading">Overall commentary</h2>
       </div>
       <div class="overall-grid">
-        ${renderOverallSide(debate.sides.pro, debate.overall.pro, "teal")}
-        ${renderOverallSide(debate.sides.con, debate.overall.con, "coral")}
+        ${renderOverallSide(debate.sides.pro, debate.overall.pro, "teal", debate.id)}
+        ${renderOverallSide(debate.sides.con, debate.overall.con, "coral", debate.id)}
       </div>
     </section>
   `;
 }
 
-function renderOverallSide(side, overall, tone) {
+function renderOverallSide(side, overall, tone, debateId) {
   return `
     <article class="overall-side ${tone}">
       <div class="overall-score">
@@ -352,17 +355,17 @@ function renderOverallSide(side, overall, tone) {
       </ul>
       <h3>Logical blunders</h3>
       <ul>
-        ${overall.blunders.map(renderBlunder).join("")}
+        ${overall.blunders.map((blunder) => renderBlunder(blunder, debateId)).join("")}
       </ul>
     </article>
   `;
 }
 
-function renderBlunder(blunder) {
+function renderBlunder(blunder, debateId) {
   const links = blunder.links
     .map(
       (link) => {
-        const href = referenceHref(link.url);
+        const href = referenceHref(link.url, debateId);
         const isInternal = href.startsWith("#/");
         const target = isInternal ? "" : ' target="_blank" rel="noreferrer"';
         return `<a href="${escapeHtml(href)}"${target}>${escapeHtml(link.label)}</a>`;
@@ -373,7 +376,7 @@ function renderBlunder(blunder) {
   return `<li>${escapeHtml(blunder.text)} <span class="inline-links">${links}</span></li>`;
 }
 
-function renderReference(type, slug) {
+function renderReference(type, slug, sourceDebateId = "") {
   const reference = getReferenceDefinition(type, slug);
 
   if (!reference) {
@@ -390,10 +393,14 @@ function renderReference(type, slug) {
   const category = type === "fallacy" ? "Logical fallacy" : "Cognitive bias";
   const source = type === "fallacy" ? "LogFall" : "CogBias";
   const appearances = collectReferenceAppearances(type, slug);
+  const sourceDebate = findSourceDebate(sourceDebateId, appearances);
 
   app.innerHTML = renderShell(`
     <main class="reference-page">
-      <a class="back-link" href="#">Back to debates</a>
+      <nav class="reference-nav" aria-label="Reference navigation">
+        <a class="back-link" href="#">Back to debates</a>
+        ${sourceDebate ? `<span aria-hidden="true">|</span><a class="back-link" href="#/debate/${escapeHtml(sourceDebate.id)}">Back to this debate</a>` : ""}
+      </nav>
       <section class="reference-card ${escapeHtml(type)}">
         <p class="eyebrow">${category}</p>
         <h1>${escapeHtml(reference.label)}</h1>
@@ -421,6 +428,14 @@ function renderReference(type, slug) {
       }
     </main>
   `);
+}
+
+function findSourceDebate(sourceDebateId, appearances) {
+  const explicitDebate = debates.find((debate) => debate.id === sourceDebateId);
+  if (explicitDebate) return explicitDebate;
+
+  const uniqueDebates = [...new Map(appearances.map((appearance) => [appearance.debate.id, appearance.debate])).values()];
+  return uniqueDebates.length === 1 ? uniqueDebates[0] : null;
 }
 
 function collectReferenceAppearances(type, slug) {
@@ -475,7 +490,7 @@ function route() {
   if (debateMatch) {
     renderDebate(decodeURIComponent(debateMatch[1]));
   } else if (referenceMatch) {
-    renderReference(referenceMatch[1], referenceMatch[2]);
+    renderReference(referenceMatch[1], referenceMatch[2], referenceMatch[3] || "");
   } else {
     renderLanding();
   }
