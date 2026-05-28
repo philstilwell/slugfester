@@ -138,6 +138,9 @@ function renderDebate(id) {
         </aside>
       </section>
 
+      ${renderScoringNote(debate)}
+      ${renderQuoteCards(debate)}
+
       <section class="columns-head" aria-label="Debate sides">
         <div class="side-heading teal">
           <span>${escapeHtml(debate.sides.pro.name)}</span>
@@ -153,6 +156,42 @@ function renderDebate(id) {
       ${renderOverall(debate)}
     </main>
   `);
+}
+
+function renderScoringNote(debate) {
+  if (!debate.scoringNote) return "";
+
+  return `
+    <section class="scoring-note" aria-label="Scoring note">
+      <strong>AI-generated scorecard</strong>
+      <span>${escapeHtml(debate.scoringNote)}</span>
+    </section>
+  `;
+}
+
+function renderQuoteCards(debate) {
+  if (!debate.quotes) return "";
+
+  return `
+    <section class="quote-grid" aria-label="Position quotes">
+      ${renderQuoteCard(debate.sides.pro, debate.quotes.pro, "teal")}
+      ${renderQuoteCard(debate.sides.con, debate.quotes.con, "coral")}
+    </section>
+  `;
+}
+
+function renderQuoteCard(side, quote, tone) {
+  if (!quote) return "";
+
+  return `
+    <article class="quote-card ${tone}">
+      <div>
+        <span>${escapeHtml(side.name)} · ${escapeHtml(side.speaker)}</span>
+        <blockquote>"${escapeHtml(quote.text)}"</blockquote>
+      </div>
+      <p>${escapeHtml(quote.context)}</p>
+    </article>
+  `;
 }
 
 function renderSection(section, debate) {

@@ -14,7 +14,21 @@ export const debates = [
     summary:
       "Craig builds a cumulative case for Christian theism; O'Connor presses the Kalam argument, time, infinity, and animal suffering.",
     sourceNote:
-      "Built from the Chrome-generated NoteGPT transcript plus YouTube chapter timing. Excerpts are condensed and lightly cleaned.",
+      "Built from the Chrome-generated NoteGPT transcript plus YouTube chapter timing. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God is the best explanation",
+        context:
+          "Craig's case is cumulative: cosmology, fine-tuning, morality, resurrection, and religious experience are presented as mutually reinforcing evidence for Christian theism."
+      },
+      con: {
+        text: "Did the universe have a beginning?",
+        context:
+          "O'Connor's core move is diagnostic: test the Kalam's premises and then ask whether animal suffering is expected under Christian theism."
+      }
+    },
     sides: {
       pro: {
         name: "Theist",

@@ -232,6 +232,65 @@ a {
   font-size: 0.94rem;
 }
 
+.scoring-note {
+  display: flex;
+  gap: 14px;
+  align-items: start;
+  margin: 0 0 14px;
+  padding: 14px 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--blue);
+  border-radius: 8px;
+}
+
+.scoring-note strong,
+.quote-card span {
+  color: var(--blue);
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.scoring-note span {
+  color: #30413e;
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0 0 14px;
+}
+
+.quote-card {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--teal);
+  border-radius: 8px;
+}
+
+.quote-card.coral {
+  border-left-color: var(--coral);
+}
+
+.quote-card blockquote {
+  margin: 8px 0 0;
+  color: var(--ink);
+  font-size: clamp(1.24rem, 2vw, 1.68rem);
+  font-weight: 850;
+  line-height: 1.1;
+}
+
+.quote-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .side-score-strip {
   align-items: stretch;
   margin-top: 4px;
@@ -660,6 +719,7 @@ a {
 
   .landing-panel,
   .debate-hero,
+  .quote-grid,
   .overall-grid {
     grid-template-columns: 1fr;
   }
@@ -674,6 +734,7 @@ a {
 
   .section-title-row,
   .section-score-pair,
+  .scoring-note,
   .side-score-strip,
   .card-actions {
     align-items: stretch;
