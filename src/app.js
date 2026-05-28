@@ -125,7 +125,7 @@ function renderDebate(id) {
       <section class="debate-hero">
         <div>
           <a class="back-link" href="#">Back to debates</a>
-          <p class="eyebrow">${escapeHtml(debate.label)} · ${escapeHtml(debate.date)}</p>
+          <p class="eyebrow">${escapeHtml(debate.label)} · Last rendered: ${escapeHtml(debate.date)}</p>
           <h1>${escapeHtml(debate.title)}</h1>
           <p class="motion large">${escapeHtml(debate.motion)}</p>
           ${debate.sourceNote ? `<p class="source-note">${escapeHtml(debate.sourceNote)}</p>` : ""}
