@@ -50,10 +50,10 @@ function renderLanding() {
         </div>
         <figure class="logo-showcase">
           <img
-            src="./assets/slugfester-logo.jpg"
-            alt="Slugfester illustrated debate crest"
-            width="603"
-            height="900"
+            src="./assets/debate-gloves.png"
+            alt="Red boxing gloves"
+            width="444"
+            height="444"
           >
         </figure>
       </section>
