@@ -6,7 +6,7 @@ This is the canonical Slugfester template for future YouTube debate assessments.
 
 The debate page should keep this order and visual hierarchy:
 
-1. Sticky site header with the main Slugfester logo and `Slugfester` wordmark only.
+1. Sticky site header with a small boxing-gloves mark and `Slugfester` wordmark.
 2. Debate hero with three columns on desktop:
    - Left: back link, `label · Last rendered: YYYY-MM-DD`, smaller title, motion, and source note.
    - Middle: `assets/debate-gloves.png` in `.debate-gloves-panel`.
@@ -18,9 +18,13 @@ The debate page should keep this order and visual hierarchy:
 7. Topic sections with paired argument/rebuttal cards.
 8. Overall commentary with each side's strengths and logical blunders.
 
+Landing-page design:
+
+- The main landing hero image is the illustrated two-men debate crest at `assets/slugfester-logo.jpg`.
+- The small image in the top bar is the boxing-gloves image at `assets/debate-gloves.png`.
+
 Design constraints:
 
-- Do not put the glove image in the sticky header.
 - Do not put the glove image below the `Open YouTube source` button.
 - Keep the debate title smaller than the landing page title.
 - Keep argument cards content-sized; do not restore a fixed card height that leaves extra whitespace below the `◉` row.
@@ -156,7 +160,9 @@ Use this shape when adding an object to `src/data/debates.js`.
 ## Final Acceptance Checklist
 
 - Page follows the locked debate-page design above.
-- The glove image appears only in the debate hero middle column.
+- The sticky header uses the small boxing-gloves image.
+- The landing hero uses the illustrated two-men debate crest.
+- On debate pages, the larger glove image appears in the debate hero middle column.
 - The representative quote cards are near the top.
 - The `◉` guide appears before the two-column debate sections.
 - Every critique is 105-130 words.

@@ -66,15 +66,12 @@ a {
 
 .brand-logo {
   display: block;
-  width: 38px;
-  height: 52px;
+  width: 40px;
+  height: 40px;
   flex: 0 0 auto;
   object-fit: contain;
   object-position: center;
-  background: #fff;
-  border: 1px solid rgba(19, 32, 31, 0.14);
-  border-radius: 6px;
-  box-shadow: 0 6px 18px rgba(27, 43, 41, 0.12);
+  filter: drop-shadow(0 7px 9px rgba(27, 43, 41, 0.2));
 }
 
 .brand-name {
@@ -141,10 +138,10 @@ a {
   display: flex;
   justify-self: end;
   justify-content: center;
-  width: min(100%, 264px);
+  width: min(100%, 464px);
   min-width: 0;
   margin: 0;
-  padding: clamp(10px, 1.6vw, 16px);
+  padding: clamp(10px, 1.6vw, 18px);
 }
 
 .logo-showcase::before,
@@ -179,11 +176,16 @@ a {
   position: relative;
   z-index: 1;
   display: block;
-  width: min(100%, 218px);
+  width: min(100%, 420px);
   height: auto;
-  max-height: min(42vh, 260px);
+  max-height: min(64vh, 560px);
   object-fit: contain;
-  filter: drop-shadow(0 20px 28px rgba(27, 43, 41, 0.22));
+  background: #fff;
+  border: 1px solid rgba(19, 32, 31, 0.16);
+  border-radius: 8px;
+  box-shadow:
+    0 20px 46px rgba(27, 43, 41, 0.2),
+    0 2px 0 rgba(255, 255, 255, 0.9) inset;
 }
 
 .debate-list {
@@ -865,12 +867,12 @@ a {
 
   .logo-showcase {
     justify-self: center;
-    width: min(100%, 236px);
+    width: min(100%, 370px);
   }
 
   .logo-showcase img {
-    width: min(100%, 198px);
-    max-height: 236px;
+    width: min(100%, 340px);
+    max-height: 480px;
   }
 
   .debate-gloves-panel {
@@ -913,7 +915,7 @@ a {
 
   .brand-logo {
     width: 34px;
-    height: 46px;
+    height: 34px;
   }
 
   .brand-name {

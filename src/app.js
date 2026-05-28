@@ -24,7 +24,7 @@ function renderShell(content) {
   return `
     <header class="site-header">
       <a class="brand" href="#" aria-label="Slugfester home">
-        <img class="brand-logo" src="./assets/slugfester-logo.jpg" alt="" width="38" height="52">
+        <img class="brand-logo" src="./assets/debate-gloves.png" alt="" width="444" height="444">
         <span class="brand-name">Slugfester</span>
       </a>
       <nav aria-label="Primary">
@@ -50,10 +50,10 @@ function renderLanding() {
         </div>
         <figure class="logo-showcase">
           <img
-            src="./assets/debate-gloves.png"
-            alt="Red boxing gloves"
-            width="444"
-            height="444"
+            src="./assets/slugfester-logo.jpg"
+            alt="Slugfester illustrated debate crest"
+            width="603"
+            height="900"
           >
         </figure>
       </section>
