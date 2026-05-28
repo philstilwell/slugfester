@@ -2429,5 +2429,329 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "wood-oconnor-jesus-claim-god-2025",
+    title: "David Wood vs Alex O'Connor: Did Jesus Claim to Be God?",
+    label: "New Testament christology",
+    date: "2026-05-28",
+    duration: "2 hr 22 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=_hrN4Mn8m1w",
+    motion:
+      "Did Jesus personally claim divine identity, or do the relevant texts better show delegated authority, divine name-bearing, and later high christology?",
+    summary:
+      "Wood argues Jesus identified with divine authority; O'Connor argues the texts more plausibly show delegated, name-bearing agency.",
+    sourceNote:
+      "Built from the YouTube English original auto-caption track downloaded with the yt-dlp Python module. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Jesus claimed to be God",
+        context:
+          "Wood argues that Jesus, his followers, and his opponents all point to Jesus identifying himself as one of the divine powers."
+      },
+      con: {
+        text: "not speaking with his own authority",
+        context:
+          "O'Connor argues that Jesus presents himself as God's agent, bearer of divine authority, and model for believers rather than Yahweh himself."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Affirmative",
+        speaker: "David Wood",
+        color: "teal"
+      },
+      con: {
+        name: "Critical reader",
+        speaker: "Alex O'Connor",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 78,
+      con: 81
+    },
+    sections: [
+      {
+        title: "Two powers and shared unity",
+        timebox: "03:45-31:00",
+        score: {
+          pro: 82,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:35",
+              role: "Two-powers frame",
+              words:
+                "Wood argues first-century Judaism already contained a two-powers problem, and Jesus placed himself inside that divine pattern.",
+              score: 82,
+              critique:
+                "Wood's opening is strong because it gives the audience a historically specific lens instead of simply listing proof texts. By connecting Genesis, Zechariah, the angel of the Lord, Psalm 110, Daniel 7, and early Christian usage, he argues that Jesus' claims would have landed inside an existing Jewish puzzle about divine agency. The best feature is cumulative fit: Jesus' words, actions, friends, and enemies are all treated as data to explain. The weakness is that the two-powers background carries a heavy historical load. Showing that later Jewish texts discuss the issue is not the same as showing that Jesus' hearers shared Wood's framework. The score is high because the pattern is coherent, but not decisive.",
+              tags: []
+            },
+            con: {
+              time: "27:00",
+              role: "Shared-oneness reply",
+              words:
+                "O'Connor says Jesus' language of being one with the Father is later extended to disciples and all believers.",
+              score: 84,
+              critique:
+                "O'Connor's John 10 and John 17 reply is one of his sharpest moves. He does not merely say John's Gospel is late or unreliable; he grants it for argument and asks what Jesus' own clarifications do. If Jesus says the Father is in him and he is in the Father, then prays that believers will be one in the same way, that complicates a simple identity reading. The move is text-internal and directly relevant. Its weakness is that shared participation need not erase unique sonship or divine status; Christian theology has long distinguished union from identity. Still, the rebuttal meaningfully lowers the force of Wood's strongest Johannine language.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Divine name and angelic agency",
+        timebox: "31:00-51:00",
+        score: {
+          pro: 73,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "45:20",
+              role: "Angel identity",
+              words:
+                "Wood answers that the angel of the Lord is not merely a representative, because Yahweh says he himself had been going with Israel.",
+              score: 73,
+              critique:
+                "Wood's angel rebuttal is useful because it targets a real pressure point in O'Connor's name-bearing model. Some Old Testament passages blur the angel of the Lord and Yahweh in ways that are difficult to reduce to ordinary representation. Wood also keeps the argument tied to the larger pattern: if divine agency already appears personalized, Jesus can be read as its fulfillment. The weakness is that he sometimes treats representative agency as either ordinary delegation or full divine identity, when ancient texts may allow more layered options. The leap from ambiguous angel language to Jesus' personal claim still needs careful steps. The score is solid because the objection lands, but the conclusion remains underdetermined.",
+              tags: []
+            },
+            con: {
+              time: "34:30",
+              role: "Name-bearing model",
+              words:
+                "O'Connor uses Psalm 82, Exodus, the Septuagint, and Jewish name-bearing traditions to explain divine language without identity.",
+              score: 80,
+              critique:
+                "O'Connor's name-bearing argument is strong because it supplies an alternative model rather than just negating Wood. Psalm 82, Exodus, Metatron, Yahoel, and the Septuagint discussion give listeners conceptual space between 'ordinary human' and 'Yahweh himself.' That space is crucial for his case. He is also careful to label some of his John 8 reading as suggestive rather than certain. The weakness is that the alternative can become too elastic: if almost every divine-sounding claim can be explained as delegated name or planned fulfillment, the model risks absorbing evidence without clear limits. The score is strong because it explains many texts, but restrained because its boundaries need sharper definition.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The alternative reading gains force from unresolved ambiguity across several texts."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Divine prerogatives",
+        timebox: "18:00-01:41:30",
+        score: {
+          pro: 81,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "18:00",
+              role: "Judgment and resurrection",
+              words:
+                "Wood argues Jesus claims Yahweh's roles: final judge, raiser of the dead, receiver of honor, and giver of life.",
+              score: 81,
+              critique:
+                "Wood's divine-prerogatives argument is strong because it focuses on functions that are not merely honorific. Judgment of the world, raising the dead, receiving the same honor as the Father, and possessing life in himself are substantial claims. He also improves the argument in dialogue by reading the surrounding John 5 context rather than isolating one phrase. The weakness is the recurring language of being given, granted, sent, and entrusted. Wood can explain that through incarnation and father-son relation, but the text still gives O'Connor a real delegation argument. The score is high because the prerogatives are weighty and cumulative, but not higher because the agency grammar remains difficult.",
+              tags: []
+            },
+            con: {
+              time: "01:02:40",
+              role: "Delegation reply",
+              words:
+                "O'Connor notes that Jesus says authority, glory, forgiveness, and judgment are given to him, and then shared with disciples.",
+              score: 77,
+              critique:
+                "O'Connor's delegation reply is relevant because it confronts Wood's strongest category directly. If Jesus receives authority from the Father and then gives judgment, forgiveness, unity, or glory to others, then possession of those roles alone may not prove identity with Yahweh. His examples from John 17, John 20, and the promise that disciples judge Israel make the point tangible. The limitation is that delegation to disciples may be analogical rather than equal. A believer participating in judgment is not obviously the same as Jesus being the eschatological judge whose voice raises the dead. The score is strong because the reply exposes a real ambiguity, but it does not fully neutralize the scale of Wood's evidence.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Worship and reverence",
+        timebox: "01:07:00-01:24:00",
+        score: {
+          pro: 70,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:12:20",
+              role: "Religious worship claim",
+              words:
+                "Wood says Jesus' followers worship and pray to him in religious contexts, so the honor is not mere respect.",
+              score: 70,
+              critique:
+                "Wood's worship argument has intuitive force because Christian devotion to Jesus is historically early and religiously charged. Prayer to Jesus, doxologies, and boat-scene worship are not the same as politely bowing to a king. The argument also fits his cumulative case: followers behaved as if Jesus belonged on the divine side of worship. The weakness appears when he distinguishes religious from nonreligious proskuneo. He asserts that context decides, but O'Connor presses how that context is identified without assuming the conclusion. Wood has a plausible answer, but it is not fully developed in the exchange. The score is solid because early devotion matters, but lower because the vocabulary issue is sharper than he allows.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The religious context is sometimes inferred from Jesus' divine status, which is under debate."
+                }
+              ]
+            },
+            con: {
+              time: "01:17:20",
+              role: "Proskuneo distinction",
+              words:
+                "O'Connor distinguishes proskuneo bowing from latreuo cultic service and asks why the latter is never offered to Jesus.",
+              score: 85,
+              critique:
+                "O'Connor's worship rebuttal is excellent because it turns a familiar apologetic point into a lexical and contextual question. By listing places where proskuneo is offered to kings, prophets, angels, servants, or human authorities, he shows that the word cannot automatically mean divine worship. His distinction between proskuneo and latreuo also gives the argument a clear test: if cultic worship is the exclusive divine category, why is it not clearly offered to Jesus in the Gospels? The weakness is that religious devotion can be expressed through patterns larger than one verb. Still, the rebuttal is precise, text-sensitive, and responsive, which makes it one of the strongest moves in the debate.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Daniel 7 and blasphemy",
+        timebox: "39:45-01:56:00",
+        score: {
+          pro: 76,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:41:50",
+              role: "Trial inference",
+              words:
+                "Wood says the high priest's blasphemy response shows Jesus' Daniel 7 claim was heard as more than ordinary messiahship.",
+              score: 76,
+              critique:
+                "Wood's trial argument is important because it asks why Jesus' opponents react so severely. A mere messianic claim was not automatically a divine claim, so the high priest's accusation and the Stephen parallel do need explanation. Wood's point that Daniel's son of man comes with the clouds, receives worship, and has everlasting dominion gives the blasphemy charge real plausibility. The weakness is that he leans heavily on reaction as interpretation. Ancient opponents can misunderstand, exaggerate, or prosecute for several kinds of perceived impiety, and O'Connor presses whether the high priest must already have read Daniel 7 as Yahweh. The score is good because the inference is serious, but the historical premise remains contested.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The absence of a better blasphemy explanation is used to strengthen the divine-identity reading."
+                }
+              ]
+            },
+            con: {
+              time: "01:47:50",
+              role: "Dating and interpretation",
+              words:
+                "O'Connor challenges whether two-powers controversy was prominent enough in Jesus' lifetime to explain the trial scene.",
+              score: 83,
+              critique:
+                "O'Connor's late cross-examination is very strong because it identifies the historical hinge in Wood's case. If the blasphemy inference depends on the high priest hearing Daniel 7 through a two-powers lens, then the dating and prominence of that lens matter. O'Connor presses Wood for first-century evidence and cites the absence of earlier polemic noted by James McGrath. He also distinguishes what Daniel 7 might mean from what the trial authorities likely expected. The weakness is that absence of evidence is not disproof, and later rabbinic polemic may preserve earlier disputes. Even so, the question lands: Wood needs more specific historical support than textual resonance alone.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Early christology and closing tests",
+        timebox: "01:56:00-02:21:00",
+        score: {
+          pro: 82,
+          con: 74
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:57:00",
+              role: "Earliest-devotion case",
+              words:
+                "Wood says Mark, Q, Paul, Philippians, and Paul's persecution show high christology within the earliest Christian material.",
+              score: 82,
+              critique:
+                "Wood's closing is strong because it resists pushing high christology into a late legendary stage. He points to Paul, Philippians, early devotion, prayer to Jesus, and synoptic material as evidence that exalted claims appear very early. That matters directly to the motion: if Jesus' first followers rapidly worshiped and prayed to him, then a mere later misunderstanding becomes harder to sustain. The weakness is that early high christology still does not automatically prove Jesus himself made every claim Wood attributes to him. Followers can interpret, intensify, and theologize. The score is high because the legendary-development escape route is weakened, but restrained because the final step from early devotion to Jesus' intention needs argument.",
+              tags: []
+            },
+            con: {
+              time: "02:00:50",
+              role: "Clarification demand",
+              words:
+                "O'Connor closes by returning to John 17, delegated glory, delegated judgment, and the disputed dating of two powers.",
+              score: 74,
+              critique:
+                "O'Connor's close is disciplined because he returns to the unresolved core: Jesus describes his relation to the Father in language extended to believers, receives glory and authority, and passes some prerogatives on. He also keeps pressing the dating question instead of getting lost in every proof text. That makes the conclusion coherent. The weakness is that he occasionally overstates how easily delegation explains the whole pattern. The Q&A on Hebrews and Philippians shows that some early texts are difficult for a low or merely delegated christology, and O'Connor often concedes high christology outside Jesus' own words. The score is solid because the objections remain live, but his positive model is incomplete.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 78,
+        strengths: [
+          "Wood built a genuinely cumulative case from Old Testament divine-agency texts, Jesus' sayings, divine prerogatives, early worship, hostile reactions, and early Christian material.",
+          "He was strongest when showing that judgment, resurrection, prayer, worship, and Daniel 7 cannot be reduced to ordinary respect or messiahship without explanatory cost.",
+          "His use of early Paul and Philippians made the late-legend option much harder to treat as an easy escape."
+        ],
+        blunders: [
+          {
+            text:
+              "The case sometimes treated later or contested two-powers evidence as if it straightforwardly established the high priest's first-century interpretive frame.",
+            links: [
+              {
+                label: "Authority bias",
+                url: bias("authority-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "The worship argument occasionally inferred divine worship from the very divine status that the worship evidence was meant to prove.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 81,
+        strengths: [
+          "O'Connor gave a serious alternative model of divine name-bearing, delegated authority, shared unity, and agency without reducing Jesus to an ordinary figure.",
+          "His strongest arguments used Jesus' own Johannine clarifications, worship vocabulary, and Daniel 7 dating questions rather than merely rejecting the sources.",
+          "He repeatedly distinguished what a text can mean theologically from what it proves about Jesus' own claims."
+        ],
+        blunders: [
+          {
+            text:
+              "The name-bearing model sometimes became broad enough to absorb many divine-sounding texts without clear falsification conditions.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His appeal to scholars such as Dunn and McGrath occasionally carried more weight than the live argument could independently support.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
