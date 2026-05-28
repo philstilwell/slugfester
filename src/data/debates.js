@@ -1668,5 +1668,394 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "dillahunty-ten-bruggencate-reasonable-god-2014",
+    title:
+      "Matt Dillahunty vs Sye Ten Bruggencate: Is It Reasonable to Believe God Exists?",
+    label: "Presuppositional apologetics",
+    date: "2026-05-28",
+    duration: "1 hr 55 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=OL8LREmbDi0",
+    motion:
+      "Is belief in God reasonable, and can truth, logic, knowledge, induction, and evidence be accounted for without Christian revelation?",
+    summary:
+      "Ten Bruggencate argues God grounds truth; Dillahunty argues reasonable belief requires public evidence without absolute certainty.",
+    sourceNote:
+      "Built from the YouTube English original auto-caption track downloaded with yt-dlp. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "truth is whatever God says",
+        context:
+          "Ten Bruggencate's central claim is that truth, logic, knowledge, and induction only become intelligible if Christian revelation is presupposed."
+      },
+      con: {
+        text: "we need a valid and sound argument",
+        context:
+          "Dillahunty frames reasonable belief as requiring justified premises, valid inference, and evidence rather than an asserted divine foundation."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Presuppositional theist",
+        speaker: "Sye Ten Bruggencate",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical atheist",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 50,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Opening burden and truth",
+        timebox: "01:41-20:30",
+        score: {
+          pro: 52,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:57",
+              role: "Presupposed conclusion",
+              words:
+                "Ten Bruggencate says belief in God is reasonable because it is true that God exists, and denial reduces worldviews to absurdity.",
+              score: 52,
+              critique:
+                "The opening has a crisp thesis and keeps the motion visible: if God is true, then belief in God is reasonable. Ten Bruggencate also tries to shift the debate from isolated evidence to the conditions that make truth and reasoning possible. That is a legitimate philosophical target. The weakness is decisive, though: the key premise is simply that God exists. Saying that denial leads to absurdity does not yet show that Christian theism supplies the missing foundation, nor that rival accounts fail. The score stays near the middle because the structure is easy to follow, but the argument asks the audience to grant what the debate is meant to test.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The central premise that God exists carries the conclusion that belief in God is reasonable."
+                }
+              ]
+            },
+            con: {
+              time: "11:22",
+              role: "Reasonable belief",
+              words:
+                "Dillahunty defines reasonable belief as having good justification, then asks for a valid and sound argument supported by evidence.",
+              score: 82,
+              critique:
+                "Dillahunty's opening is strong because it directly clarifies the debate's evaluative standard. He distinguishes belief from certainty, asks for good justification, and says a reasonable conclusion needs a valid and sound argument. That puts the burden on the claimant without pretending that skepticism must solve every problem in epistemology first. The strongest move is warning that a pivot from reasonable belief to absolute knowledge would miss the motion. The limitation is that the opening depends on the audience accepting a broadly evidentialist standard; it does not yet prove that every rival standard fails. Still, the frame is relevant, modest, and testable, which makes it substantially stronger than the affirmative's asserted premise.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Solipsism and certainty",
+        timebox: "06:17-35:52",
+        score: {
+          pro: 50,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "21:00",
+              role: "Brain-in-vat challenge",
+              words:
+                "Ten Bruggencate repeatedly says Dillahunty cannot know he is not a brain in a vat unless he starts with God.",
+              score: 50,
+              critique:
+                "The solipsism challenge has some bite because any worldview owes an account of why perception and reasoning deserve trust. Pressing that issue can expose hidden assumptions. Ten Bruggencate's version, however, overreaches by treating lack of absolute certainty as if it defeats reasonable belief. The debate is about whether belief in God is reasonable, not whether humans can reach God's-eye certainty about every skeptical scenario. The brain-in-vat line also functions more as pressure than as demonstration; it never explains why Christian revelation escapes the same human reception problem. The score is limited because the challenge is philosophically relevant, but it diverts from the agreed standard and relies on a stronger burden than the motion requires.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The argument shifts from reasonable belief in God to absolute certainty against skeptical scenarios."
+                }
+              ]
+            },
+            con: {
+              time: "26:00",
+              role: "Maximal certainty",
+              words:
+                "Dillahunty concedes hard solipsism has no final disproof, but says practical reasoning needs reliability, not absolute certainty.",
+              score: 83,
+              critique:
+                "This is one of Dillahunty's better answers because he refuses an impossible standard without hiding the problem. He grants that hard solipsism has no final knockdown solution, then explains that humans still reason from experience, coherence, prediction, and practical reliability. That answer is less glamorous than a total refutation, but it is epistemically disciplined. It also keeps the debate on reasonable belief rather than infallible knowledge. The weakness is rhetorical: conceding 'I don't know' under Ten Bruggencate's definition can sound like defeat unless listeners track the definition change. Substantively, though, the answer is strong because it distinguishes humility about ultimate certainty from inability to justify ordinary beliefs.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Logic and worldview",
+        timebox: "22:00-35:52",
+        score: {
+          pro: 55,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "22:00",
+              role: "Logic needs God",
+              words:
+                "Ten Bruggencate argues that chemical brain states cannot ground truth, and that logic only makes sense in a Christian worldview.",
+              score: 55,
+              critique:
+                "This argument is more relevant than the brain-in-vat repetition because it targets whether impersonal processes can justify norm-governed reasoning. Ten Bruggencate is right that a complete naturalistic account should explain why thoughts can be about truth rather than merely be events in a brain. But the presentation mostly asserts that Christianity solves the problem. Calling naturalistic thought 'brain barf' does not establish that divine thought grounds logical laws, and it does not compare Christianity with other possible realist accounts of logic. The score is mixed because the topic is important and the challenge is intelligible, but the explanation of the proposed solution remains thin and heavily rhetorical.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "Christian revelation is treated as the required ground for logic before the requirement is demonstrated."
+                }
+              ]
+            },
+            con: {
+              time: "28:00",
+              role: "Occam challenge",
+              words:
+                "Dillahunty says adding God to logical absolutes violates parsimony unless Ten Bruggencate proves no simpler account can work.",
+              score: 85,
+              critique:
+                "Dillahunty's rebuttal is especially effective because it does not need to solve every philosophy of logic question in the room. He argues that if both sides must use logical absolutes, adding a divine mind is an extra commitment that needs independent support. That is a clean parsimony objection. He also presses the missing comparative step: Ten Bruggencate must show that no non-Christian account can ground logic, not merely that Christian theism can label logic as God's thought. The weakness is that the reply leaves some positive metaphysical work for later. Even so, it exposes the affirmative's unexplained bridge from logical norms to a specific deity.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Reason, senses, and induction",
+        timebox: "37:38-01:08:30",
+        score: {
+          pro: 58,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "39:20",
+              role: "Circular reliability charge",
+              words:
+                "Ten Bruggencate presses Dillahunty for how he knows senses, reason, word meanings, and induction remain reliable without circularity.",
+              score: 58,
+              critique:
+                "This cross-examination creates real pressure. Asking whether reason can validate reason, whether induction can prove induction, and whether shared meanings persist over time targets foundational assumptions in ordinary inquiry. Ten Bruggencate is strongest when he asks concise questions and lets the difficulty appear. The problem is that he treats any practical or fallibilist answer as failure while exempting his own revelation claim from comparable scrutiny. He also moves from 'your account is not absolute' to 'therefore my account is necessary' without defending that leap. The score is above his opening because the questions reveal genuine epistemic puzzles, but it remains limited by important asymmetrical standards.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Fallible human reasoning is attacked while revelation is shielded from the same access problem."
+                }
+              ]
+            },
+            con: {
+              time: "40:00",
+              role: "Pragmatic foundation",
+              words:
+                "Dillahunty answers that using reason is a practical necessity, and that reliability is supported by repeated successful experience.",
+              score: 80,
+              critique:
+                "Dillahunty gives a credible fallibilist answer: reason and perception are not proved from nowhere, but they are unavoidable tools whose reliability is supported by coherence, prediction, and repeated success. That does not satisfy a demand for absolute proof, yet it fits the debate's standard of reasonableness. His induction answer is also careful: past reliability does not guarantee the future, but it provides the best available basis for expectation. The main weakness is that the response can look circular because it uses cognition to assess cognition. Dillahunty acknowledges this practical constraint rather than pretending to step outside all thought. That honesty, plus the predictive success criterion, earns a strong score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Revelation and universal knowledge",
+        timebox: "47:00-56:30",
+        score: {
+          pro: 45,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "47:58",
+              role: "Revealed certainty",
+              words:
+                "Ten Bruggencate says God can reveal certainty because he is God, and that everyone already knows God but suppresses it.",
+              score: 45,
+              critique:
+                "The revelation answer gives Ten Bruggencate a clear internal story: an all-knowing God can disclose truth, and unbelief is suppression rather than innocent absence. Within his theology, that is coherent. As public debate argument, it performs poorly. 'Because he is God' does not explain how a human mind can distinguish divine revelation from error, interpretation, culture, or rival revelation claims. The claim that babies and remote communities already know God is also asserted against ordinary developmental and anthropological evidence. The score is low because the move protects the worldview from falsification while offering little shared method for adjudication. It may comfort insiders, but it does not justify belief to outsiders.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Revelation is granted certainty while ordinary human routes to belief face stricter standards."
+                }
+              ]
+            },
+            con: {
+              time: "48:26",
+              role: "Access problem",
+              words:
+                "Dillahunty asks how infants, isolated peoples, disagreeing Christians, and fallible interpreters could all receive reliable revelation.",
+              score: 84,
+              critique:
+                "Dillahunty's questioning is strong because it turns the abstract revelation claim into testable access problems. If everyone already knows God, what about infants, people without theistic concepts, Christians who disagree while claiming certainty, and scriptures copied by fallible humans? These questions do not disprove God by themselves, but they expose the missing mechanism between divine truth and human confidence. The best part is the special-pleading challenge: Ten Bruggencate wants skepticism toward all autonomous reasoning but certainty for his scripture. The weakness is that some examples, such as infant cognition, are briefly sketched rather than fully evidenced. Still, the line of questioning sharply reveals the affirmative's unsupported exception.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Evidence and supernatural causation",
+        timebox: "17:29-01:00:50",
+        score: {
+          pro: 52,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "47:00",
+              role: "Ultimate evidentialist",
+              words:
+                "Ten Bruggencate says all evidence points to God, but refuses to place God on trial before autonomous human judgment.",
+              score: 52,
+              critique:
+                "The 'all evidence points to God' line could have become an evidential case if Ten Bruggencate had shown how particular observations discriminate between theism and alternatives. Instead, he rejects the idea that humans may judge God and insists God is the judge. That preserves theological authority but weakens public argument. A debate about reasonableness needs criteria listeners can apply, not merely a warning that independent evaluation is rebellious. The score is modest because the position has internal consistency inside presuppositional apologetics, yet it undercuts its own persuasive force. If all evidence points to God, the argument should be able to show at least some specific evidential pointing.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "God's authority is invoked to resist ordinary evidential assessment rather than to present evidence."
+                }
+              ]
+            },
+            con: {
+              time: "17:29",
+              role: "Methodological naturalism",
+              words:
+                "Dillahunty says no reliable mechanism has been demonstrated for identifying supernatural causes behind observed natural effects.",
+              score: 82,
+              critique:
+                "Dillahunty's evidence standard is strong because it asks for a method, not merely a conclusion. He does not say supernatural causation is impossible; he says no reliable mechanism has been shown for detecting it, connecting it to natural effects, and distinguishing it from natural or psychological alternatives. That is a fair burden in a debate over reasonable belief. He also offers a concrete kind of evidence, such as consistent falsifiable prayer outcomes, that could raise confidence. The weakness is that a brief 'not demonstrated' argument can sound merely negative if not paired with a full theory of explanation. Even so, the standard is public, repeatable, and directly relevant.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Audience tests and defeaters",
+        timebox: "01:15:00-01:54:20",
+        score: {
+          pro: 42,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:29:00",
+              role: "No possible defeater",
+              words:
+                "Ten Bruggencate says no experience could change his position because God is the necessary foundation for all proof.",
+              score: 42,
+              critique:
+                "The audience questions reveal the cost of Ten Bruggencate's method. He answers Bible objections, Quran comparisons, and defeater questions by returning to scripture and the necessity of God. That gives his worldview stability, but it also makes the position look insulated from correction. Saying no experience could change his mind may be consistent with treating God as the precondition of proof, yet it is a poor answer to whether the belief is reasonable in public terms. A claim that cannot specify any possible defeater is hard to distinguish from commitment protected by definition. The score is low because the performance emphasizes certainty while weakening accountability.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "Contrary evidence is preclassified as unable to overturn the presupposed conclusion."
+                }
+              ]
+            },
+            con: {
+              time: "01:31:00",
+              role: "Fallibilist method",
+              words:
+                "Dillahunty defends philosophy, fallacy analysis, falsification, and proportioning confidence to the evidence while remaining open to revision.",
+              score: 78,
+              critique:
+                "Dillahunty's audience answers are strongest when he connects skepticism to method rather than personality. He explains that philosophy helps identify fallacies and that science gains power from falsification and public correction. His appeal to proportioning belief to evidence gives listeners a workable norm for revising confidence. The weakness is that some answers lean on general methodological virtues instead of engaging the deepest metaphysical challenge that Ten Bruggencate keeps raising. He also sometimes lets technical vocabulary carry more weight than it can for a live audience. Still, the performance is open to correction, comparatively clear, and better suited to public assessment than an unfalsifiable presupposition overall.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 50,
+        strengths: [
+          "Ten Bruggencate kept one coherent target in view: whether truth, logic, induction, and knowledge require a foundation beyond autonomous human reasoning.",
+          "His cross-examination exposed real problems for any account that tries to justify reason, senses, and induction without circularity.",
+          "He made the presuppositional contrast easy to understand by repeatedly tying epistemology to revelation."
+        ],
+        blunders: [
+          {
+            text:
+              "The case repeatedly assumed God's existence and then used that assumption to explain why belief in God is reasonable.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "The argument often shifted from the motion's reasonable-belief standard to a demand for absolute certainty.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Dillahunty kept the motion centered on reasonable belief, good justification, valid inference, and public evidence.",
+          "He handled hard solipsism with a fallibilist answer that acknowledged limits without surrendering ordinary rational practice.",
+          "His questions about revelation, rival certainty claims, and fallible interpretation exposed major access problems in the affirmative case."
+        ],
+        blunders: [
+          {
+            text:
+              "His supernatural-causation critique sometimes risked sounding like absence of current demonstration was enough by itself.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His technical distinctions among knowledge, belief, certainty, and foundherentism occasionally made a simpler burden-of-proof case harder to hear.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
