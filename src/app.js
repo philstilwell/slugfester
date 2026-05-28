@@ -125,6 +125,7 @@ function renderDebate(id) {
           <p class="eyebrow">${escapeHtml(debate.label)} · ${escapeHtml(debate.date)}</p>
           <h1>${escapeHtml(debate.title)}</h1>
           <p class="motion large">${escapeHtml(debate.motion)}</p>
+          ${debate.sourceNote ? `<p class="source-note">${escapeHtml(debate.sourceNote)}</p>` : ""}
         </div>
         <aside class="scoreboard" aria-label="Debate score summary">
           <div>

@@ -3,175 +3,173 @@ const bias = (slug) => `https://cogbias.site/biases/${slug}/`;
 
 export const debates = [
   {
-    id: "civic-energy-transition-demo",
-    title: "Civic Energy Transition",
-    label: "Demo transcript",
-    date: "2026-05-28",
-    duration: "42 min",
-    youtubeUrl: "https://www.youtube.com/results?search_query=urban+energy+transition+debate",
-    motion: "Should cities require all-electric systems in new public buildings by 2030?",
+    id: "craig-oconnor-god-debate-2026",
+    title: "Alex O'Connor vs William Lane Craig: Does God Exist?",
+    label: "Christian theism",
+    date: "2026-05-21",
+    duration: "1 hr 49 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=TAW6-_L4z9M",
+    motion:
+      "Does God exist, and do cosmology, fine-tuning, morality, resurrection, and suffering support or undermine Christian theism?",
     summary:
-      "A compact demonstration debate showing how transcript excerpts, critiques, scores, and reference links fit together.",
+      "Craig builds a cumulative case for Christian theism; O'Connor presses the Kalam argument, time, infinity, and animal suffering.",
+    sourceNote:
+      "Built from the Chrome-generated NoteGPT transcript plus YouTube chapter timing. Excerpts are condensed and lightly cleaned.",
     sides: {
       pro: {
-        name: "Affirmative",
-        speaker: "Rina Vale",
+        name: "Theist",
+        speaker: "William Lane Craig",
         color: "teal"
       },
       con: {
-        name: "Negative",
-        speaker: "Marcus Hale",
+        name: "Agnostic atheist",
+        speaker: "Alex O'Connor",
         color: "coral"
       }
     },
     score: {
-      pro: 76,
-      con: 68
+      pro: 71,
+      con: 80
     },
     sections: [
       {
-        title: "Opening claims",
-        timebox: "00:00-09:40",
+        title: "Opening case and first response",
+        timebox: "02:08-15:23",
         score: {
-          pro: 78,
-          con: 65
+          pro: 76,
+          con: 80
         },
         exchanges: [
           {
             pro: {
-              time: "01:12",
-              role: "Claim",
+              time: "05:50",
+              role: "Cumulative case",
               words:
-                "New public buildings last for decades. If we keep installing gas systems now, we lock residents into avoidable maintenance, indoor air risks, and future retrofit costs.",
+                "Craig stacks cosmology, fine-tuning, objective morality, modal possibility, resurrection evidence, and personal experience into one cumulative theistic case.",
+              score: 78,
+              critique:
+                "The cumulative structure is strong because no single premise carries all the weight. The risk is compression: several large arguments are asserted faster than they can be tested.",
+              tags: [
+                {
+                  label: "Belief bias",
+                  type: "bias",
+                  url: bias("belief-bias")
+                }
+              ]
+            },
+            con: {
+              time: "11:31",
+              role: "Burden test",
+              words:
+                "O'Connor asks whether the universe began, how we would know, and why a beginning would require the kind of cause Craig wants.",
               score: 82,
               critique:
-                "Strong time-horizon framing: the argument ties today's construction choices to future cost exposure. It would be stronger with a concrete retrofit-cost range.",
-              tags: [
-                {
-                  label: "Status quo bias",
-                  type: "bias",
-                  url: bias("status-quo-bias")
-                }
-              ]
-            },
-            con: {
-              time: "02:04",
-              role: "Rebuttal",
-              words:
-                "That assumes the electric grid will be clean and resilient by then. A mandate before the grid is ready could simply move emissions and outages somewhere else.",
-              score: 74,
-              critique:
-                "Good conditional rebuttal because it attacks an assumption rather than the conclusion alone. It needs local grid projections to show the risk is probable, not just possible.",
-              tags: [
-                {
-                  label: "Planning fallacy",
-                  type: "bias",
-                  url: bias("planning-fallacy")
-                }
-              ]
+                "Very strong framing. He targets the load-bearing premises instead of merely denying the conclusion, which keeps the exchange analytical rather than tribal.",
+              tags: []
             }
           },
           {
             pro: {
-              time: "04:18",
-              role: "Evidence",
+              time: "07:50",
+              role: "Historical claim",
               words:
-                "The city already buys renewable power for municipal accounts, so the building standard would align capital projects with an energy contract we have already adopted.",
+                "Craig appeals to the empty tomb, appearances, and disciples' sincere belief as evidence for the resurrection hypothesis.",
+              score: 70,
+              critique:
+                "Relevant to Christian theism, but too compressed here. The historical criteria and rival explanations are invoked more than demonstrated in this segment.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority")
+                }
+              ]
+            },
+            con: {
+              time: "12:31",
+              role: "Scientific challenge",
+              words:
+                "O'Connor distinguishes the Big Bang as a hot dense state from proof of an absolute first moment.",
+              score: 78,
+              critique:
+                "Good precision. The point usefully separates cosmological evidence from philosophical extrapolation, though the survey appeal would need fuller sourcing.",
+              tags: [
+                {
+                  label: "Authority bias",
+                  type: "bias",
+                  url: bias("authority-bias")
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Infinity and the Kalam",
+        timebox: "15:23-31:20",
+        score: {
+          pro: 80,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "25:44",
+              role: "Clarification",
+              words:
+                "Craig separates two Kalam supports: actual infinities cannot exist concretely, and an infinite series cannot be formed by successive addition.",
+              score: 84,
+              critique:
+                "This is one of Craig's strongest moves. He repairs the map of the debate and shows that O'Connor had folded two distinct arguments together.",
+              tags: []
+            },
+            con: {
+              time: "16:00",
+              role: "Conceptual rebuttal",
+              words:
+                "O'Connor argues that Hilbert's Hotel is unintuitive, not contradictory, because 'full' can mean every room is occupied.",
               score: 77,
               critique:
-                "Relevant local evidence. The argument gains force because it connects the mandate to an existing policy commitment instead of treating the city as a blank slate.",
-              tags: []
-            },
-            con: {
-              time: "05:31",
-              role: "Challenge",
-              words:
-                "A contract on paper is not the same as physical reliability. If winter demand spikes, residents will not care that the accounting looks green.",
-              score: 67,
-              critique:
-                "The distinction between accounting and reliability is fair. The jab about what residents will care about adds heat but not much proof.",
+                "A useful semantic challenge. It weakens the intuitive shock of the hotel example, but does less against Craig's independent successive-addition argument.",
               tags: [
                 {
-                  label: "Appeal to emotion",
+                  label: "Equivocation",
                   type: "fallacy",
-                  url: fallacy("appeal-to-emotion")
-                }
-              ]
-            }
-          }
-        ]
-      },
-      {
-        title: "Cost and feasibility",
-        timebox: "09:40-23:15",
-        score: {
-          pro: 73,
-          con: 71
-        },
-        exchanges: [
-          {
-            pro: {
-              time: "10:22",
-              role: "Claim",
-              words:
-                "The construction premium is shrinking each year. The city should set a clear 2030 target now, then use competitive bids to keep the transition disciplined.",
-              score: 75,
-              critique:
-                "Moderately strong: it combines direction with procurement discipline. The phrase 'shrinking each year' needs trend data to avoid sounding like a hopeful generalization.",
-              tags: [
-                {
-                  label: "Optimism bias",
-                  type: "bias",
-                  url: bias("optimism-bias")
-                }
-              ]
-            },
-            con: {
-              time: "11:47",
-              role: "Rebuttal",
-              words:
-                "Every major city project goes over budget. Adding an electric mandate guarantees another expensive symbolic gesture.",
-              score: 54,
-              critique:
-                "This overgeneralizes from project overruns to a guaranteed failure. It also labels the policy symbolic before assessing its operational effects.",
-              tags: [
-                {
-                  label: "Hasty generalization",
-                  type: "fallacy",
-                  url: fallacy("hasty-generalization")
-                },
-                {
-                  label: "Availability heuristic",
-                  type: "bias",
-                  url: bias("availability-heuristic")
+                  url: fallacy("equivocation")
                 }
               ]
             }
           },
           {
             pro: {
-              time: "14:03",
-              role: "Counter",
+              time: "28:44",
+              role: "Standard event",
               words:
-                "The budget problem is real, but it argues for staged standards and published cost benchmarks, not for building new facilities around fuel systems we plan to retire.",
-              score: 83,
+                "Craig defines events as changes and says a standard interval, chosen conventionally, can still count elapsed past events.",
+              score: 76,
               critique:
-                "Excellent rebuttal structure: it concedes the live concern, narrows the implication, and offers a governance mechanism instead of dismissing the objection.",
-              tags: []
-            },
-            con: {
-              time: "16:11",
-              role: "Evidence",
-              words:
-                "Hospitals and shelters need backup heat. Until batteries and heat pumps are proven in emergencies here, the mandate creates a public-safety gamble.",
-              score: 79,
-              critique:
-                "Strongest negative argument so far. It names high-stakes edge cases and asks for local proof under stress conditions.",
+                "The answer is technically disciplined, but it leans on a conventional unit to support a metaphysical conclusion about reality.",
               tags: [
                 {
-                  label: "Base-rate neglect",
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading")
+                }
+              ]
+            },
+            con: {
+              time: "20:00",
+              role: "Unit challenge",
+              words:
+                "O'Connor asks what the infinite series is a series of: events, moments, seconds, hours, or something else.",
+              score: 81,
+              critique:
+                "Strong diagnostic question. It forces the abstract Kalam language to specify the real-world items allegedly being traversed.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
                   type: "bias",
-                  url: bias("base-rate-neglect")
+                  url: bias("ambiguity-effect")
                 }
               ]
             }
@@ -179,32 +177,88 @@ export const debates = [
         ]
       },
       {
-        title: "Equity and implementation",
-        timebox: "23:15-36:50",
+        title: "Time, relativity, and actualized past",
+        timebox: "38:04-46:40",
         score: {
-          pro: 79,
-          con: 67
+          pro: 74,
+          con: 82
         },
         exchanges: [
           {
             pro: {
-              time: "24:02",
-              role: "Claim",
+              time: "40:19",
+              role: "Framework defense",
               words:
-                "Low-income neighborhoods usually get the oldest, least efficient public buildings. A new standard should start with libraries, clinics, and schools in those areas.",
-              score: 81,
+                "Craig explains the A-theory/B-theory divide and says later work defends the tensed view needed by his preferred Kalam route.",
+              score: 75,
               critique:
-                "Persuasive equity linkage. It turns a citywide technical standard into a prioritization rule, which makes the policy easier to evaluate.",
-              tags: []
+                "Helpful conceptual scaffolding. The limitation is that it gestures toward book-length defenses rather than winning the point in the live exchange.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority")
+                }
+              ]
             },
             con: {
-              time: "25:36",
-              role: "Rebuttal",
+              time: "38:49",
+              role: "Relativity challenge",
               words:
-                "If the city cared about those neighborhoods, it would fix crime and housing first instead of chasing fashionable climate targets.",
-              score: 46,
+                "O'Connor argues that an objective hour is not metaphysically simple because clocks run differently under relativity.",
+              score: 83,
               critique:
-                "This changes the subject from building standards to other civic problems. Those problems may matter, but they do not answer whether the proposal improves public buildings.",
+                "Clear and concrete. The satellite-clock example gives the audience a physical handle on what could otherwise sound like verbal fog.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "46:19",
+              role: "Concrete-series reply",
+              words:
+                "Craig distinguishes God's conceptual knowledge of future events from a concrete temporal series that is always finite and increasing.",
+              score: 73,
+              critique:
+                "Coherent within Craig's own time theory, but less compelling to anyone who rejects the underlying A-theory commitments.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias")
+                }
+              ]
+            },
+            con: {
+              time: "44:49",
+              role: "Symmetry objection",
+              words:
+                "O'Connor asks why a non-existing past is actual while a known future is not, especially if God knows all future events.",
+              score: 80,
+              critique:
+                "A sharp internal pressure point. It uses Craig's own divine-foreknowledge commitments to test his past/future asymmetry.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Animal suffering and theodicy",
+        timebox: "1:01:22-1:18:20",
+        score: {
+          pro: 62,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:04:22",
+              role: "Probability reply",
+              words:
+                "Craig says animal suffering is ultimately more probable on theism because life itself is more probable under fine-tuning plus God.",
+              score: 58,
+              critique:
+                "This sidesteps the local datum. Fine-tuning may be relevant globally, but it does not directly explain why suffering is built into biological history.",
               tags: [
                 {
                   label: "Red herring",
@@ -212,38 +266,186 @@ export const debates = [
                   url: fallacy("red-herring")
                 },
                 {
-                  label: "False dilemma",
+                  label: "Base-rate neglect",
+                  type: "bias",
+                  url: bias("base-rate-neglect")
+                }
+              ]
+            },
+            con: {
+              time: "1:02:52",
+              role: "Central challenge",
+              words:
+                "O'Connor argues that free will, soul-making, and higher-order-good theodicies do not readily apply to non-human animals.",
+              score: 88,
+              critique:
+                "The strongest anti-theistic argument of the debate. It narrows the problem of evil to cases where common theodicies have little traction.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "1:08:52",
+              role: "Salvation theodicy",
+              words:
+                "Craig suggests a world with natural and moral evil may optimize the number of people who freely embrace salvation.",
+              score: 64,
+              critique:
+                "This is logically possible, but very speculative. It asks listeners to accept a large unseen causal story without much independent evidence.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
                   type: "fallacy",
-                  url: fallacy("false-dilemma")
+                  url: fallacy("argument-from-ignorance")
+                }
+              ]
+            },
+            con: {
+              time: "1:10:17",
+              role: "Pressure example",
+              words:
+                "O'Connor presses whether an unseen instance of predation is really necessary for human salvation.",
+              score: 86,
+              critique:
+                "The example is vivid without being merely emotional. It forces the abstract theodicy to face a concrete hidden suffering case.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect")
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Animal consciousness and moral relevance",
+        timebox: "1:19:10-1:33:40",
+        score: {
+          pro: 57,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:20:20",
+              role: "Pain distinction",
+              words:
+                "Craig says animals may have pain awareness without the second-order self-awareness that makes human suffering qualitatively distinct.",
+              score: 56,
+              critique:
+                "The distinction is philosophically possible, but the live defense sounded under-evidenced and morally unstable under O'Connor's follow-up.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading")
+                }
+              ]
+            },
+            con: {
+              time: "1:21:20",
+              role: "Conceptual objection",
+              words:
+                "O'Connor argues that suffering without awareness of suffering is close to self-contradictory: pain is an experienced phenomenon.",
+              score: 88,
+              critique:
+                "Very strong. The challenge converts a technical distinction into a plain question about what pain could even mean without awareness.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation")
                 }
               ]
             }
           },
           {
             pro: {
-              time: "29:44",
-              role: "Rebuttal",
+              time: "1:26:20",
+              role: "Degree reply",
               words:
-                "The city can address safety, housing, and public infrastructure at the same time. The question tonight is whether new public buildings should be built to the standard we already know they will need.",
+                "Craig shifts to degrees of self-consciousness, from primitive mirror-test cases to full first-person agency.",
+              score: 59,
+              critique:
+                "More nuanced than the first claim, but it still does not show that morally relevant pain requires full first-person agency.",
+              tags: []
+            },
+            con: {
+              time: "1:28:05",
+              role: "Empirical pushback",
+              words:
+                "O'Connor argues that sensory dependence gives some reason to think animals may feel pain more intensely, not less.",
               score: 84,
               critique:
-                "Clean reset. It identifies the false either-or structure and returns the exchange to the motion without dodging the other concerns.",
+                "A strong reversal. It does need more direct scientific citation, but it prevents the debate from treating animal pain as automatically lighter.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Final framing",
+        timebox: "1:37:14-1:45:20",
+        score: {
+          pro: 65,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:38:14",
+              role: "Modus ponens",
+              words:
+                "Craig says if there are good grounds for God, then gratuitous suffering does not exist, even if we do not know why.",
+              score: 66,
+              critique:
+                "Valid as a conditional strategy, but it risks making the suffering evidence unfalsifiable once prior theistic confidence is high enough.",
               tags: [
                 {
-                  label: "False dilemma",
+                  label: "Begging the question",
                   type: "fallacy",
-                  url: fallacy("false-dilemma")
+                  url: fallacy("begging-the-question")
                 }
               ]
             },
             con: {
-              time: "31:28",
-              role: "Counter",
+              time: "1:39:29",
+              role: "Agnostic close",
               words:
-                "A narrow mandate can still crowd out attention and staff time. The proposal needs a cap, a waiver process, and public reporting before it deserves a yes.",
-              score: 78,
+                "O'Connor says there are good reasons to believe in God and good reasons to doubt those reasons.",
+              score: 81,
               critique:
-                "Solid practical counterproposal. It improves the negative side by moving from rejection to conditions under which the policy could be responsibly tested.",
+                "Intellectually modest and rhetorically effective. It also accurately narrows his win condition: showing the Kalam unsound, not disproving every God.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "1:44:14",
+              role: "Interior witness",
+              words:
+                "Craig says ordinary believers can know God through the witness of the Holy Spirit apart from arguments and evidence.",
+              score: 63,
+              critique:
+                "Pastorally coherent, but it weakens the public argument standard. Private warrant cannot easily settle a public dispute between incompatible experiences.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation")
+                }
+              ]
+            },
+            con: {
+              time: "1:45:14",
+              role: "Arbitrariness point",
+              words:
+                "O'Connor clarifies that the issue is not just suffering, but its apparent arbitrariness across birth, species, and circumstance.",
+              score: 83,
+              critique:
+                "A clean final refinement. It makes the problem probabilistic and distributional, not merely emotional.",
               tags: []
             }
           }
@@ -252,68 +454,64 @@ export const debates = [
     ],
     overall: {
       pro: {
-        score: 78,
+        score: 71,
         strengths: [
-          "Built a consistent case around asset life cycles, avoided future retrofit costs, and policy alignment.",
-          "Handled the strongest cost objection by conceding budget risk and proposing benchmarks.",
-          "Used equity as a prioritization mechanism rather than as a slogan."
+          "Craig's best moments came when he distinguished the two philosophical supports for the Kalam and clarified A-theory versus B-theory stakes.",
+          "The cumulative-case strategy was resilient: cosmology, fine-tuning, morality, resurrection, and religious experience each supplied partial support.",
+          "He repeatedly framed the debate probabilistically, which made his case harder to dismiss with one isolated objection."
         ],
         blunders: [
           {
             text:
-              "Several claims relied on future cost and grid assumptions without numerical ranges.",
-            links: [
-              {
-                label: "Planning fallacy",
-                url: bias("planning-fallacy")
-              }
-            ]
-          },
-          {
-            text:
-              "The opening would benefit from clearer base rates for retrofit costs and emergency performance.",
-            links: [
-              {
-                label: "Base-rate neglect",
-                url: bias("base-rate-neglect")
-              }
-            ]
-          }
-        ]
-      },
-      con: {
-        score: 68,
-        strengths: [
-          "Pressed the affirmative on reliability, emergency performance, and budget controls.",
-          "Gained ground when it offered waiver and reporting conditions instead of blanket opposition.",
-          "Correctly separated renewable accounting from physical grid resilience."
-        ],
-        blunders: [
-          {
-            text:
-              "The broad claim that every city project overruns budget treated memorable failures as decisive evidence.",
-            links: [
-              {
-                label: "Hasty generalization",
-                url: fallacy("hasty-generalization")
-              },
-              {
-                label: "Availability heuristic",
-                url: bias("availability-heuristic")
-              }
-            ]
-          },
-          {
-            text:
-              "The equity exchange drifted into crime and housing, which distracted from the building-standard motion.",
+              "The animal-suffering reply often moved from the local problem to fine-tuning or unknown divine reasons, leaving the specific suffering datum underexplained.",
             links: [
               {
                 label: "Red herring",
                 url: fallacy("red-herring")
               },
               {
-                label: "False dilemma",
-                url: fallacy("false-dilemma")
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "The claim that animal pain lacks the same self-aware suffering looked under-supported and invited a damaging conceptual challenge.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 80,
+        strengths: [
+          "O'Connor consistently attacked load-bearing premises instead of merely denying Craig's conclusion.",
+          "His strongest material was the animal-suffering challenge, especially the point that standard human-focused theodicies do not transfer neatly to non-human animals.",
+          "He ended with a modest agnostic posture, which matched the evidence he had actually argued for."
+        ],
+        blunders: [
+          {
+            text:
+              "Several scientific and survey-based claims were used quickly, and the page would benefit from direct citations before treating them as settled.",
+            links: [
+              {
+                label: "Authority bias",
+                url: bias("authority-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "Some Kalam objections pressured Craig's preferred framing without fully answering the separate successive-addition argument.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
               }
             ]
           }
