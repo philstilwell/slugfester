@@ -18,10 +18,10 @@ npm run check
 
 ## Add debates
 
-Debate pages are driven by `src/data/debates.js`. Follow the full critique standard in [`docs/debate-critique-process.md`](docs/debate-critique-process.md), then add a new object to the `debates` array with:
+Debate pages are driven by `src/data/debates.js`. Follow the full critique standard in [`docs/debate-critique-process.md`](docs/debate-critique-process.md) and the locked YouTube assessment template in [`docs/youtube-debate-assessment-template.md`](docs/youtube-debate-assessment-template.md), then add a new object to the `debates` array with:
 
 - `id`, `title`, `motion`, `youtubeUrl`, and side metadata
 - `sections`, each with aligned transcript excerpts for both sides
 - `overall`, with closing scores, strengths, and logical blunders
 
-Run `npm run check` before committing. It checks JavaScript syntax and validates the measurable debate-assessment rules, including critique length, score ranges, required quote fields, and LogFall/CogBias link domains.
+Run `npm run check` before committing. It checks JavaScript syntax, validates the measurable debate-assessment rules, and verifies the locked debate-page design, including critique length, score ranges, required quote fields, LogFall/CogBias link domains, title sizing, glove placement, and argument-card spacing.

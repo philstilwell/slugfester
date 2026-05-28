@@ -2,6 +2,8 @@
 
 Use this process for every debate assessment so each page feels like the same product: quote-forward, compact, logically serious, and explicit about the limits of AI scoring.
 
+For the locked page design and fill-in data skeleton, use [`youtube-debate-assessment-template.md`](youtube-debate-assessment-template.md). That template is canonical for future YouTube debate assessments.
+
 ## Goal
 
 Create a condensed debate scorecard, not a full transcript replacement. Each page should help a reader see what each side actually said, how strong the argument or rebuttal was, and where fallacies, bias, weak evidence, or burden-shifting affected the score.
@@ -115,4 +117,5 @@ Before committing a new debate:
 - Fallacy/bias tags are warranted and linked to the correct site.
 - The scoring note makes clear that scores are AI-generated.
 - `sourceNote` identifies how the transcript was obtained or cleaned.
+- The page follows the locked design in `youtube-debate-assessment-template.md`.
 - `npm run check` passes.
