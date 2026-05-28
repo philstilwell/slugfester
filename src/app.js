@@ -23,9 +23,9 @@ const average = (values) =>
 function renderShell(content) {
   return `
     <header class="site-header">
-      <a class="brand" href="#">
-        <span class="brand-mark">◉</span>
-        <span>Slugfester</span>
+      <a class="brand" href="#" aria-label="Slugfester home">
+        <img class="brand-logo" src="./assets/slugfester-logo.jpg" alt="" width="38" height="52">
+        <span class="brand-name">Slugfester</span>
       </a>
       <nav aria-label="Primary">
         <a href="#">Debates</a>
@@ -48,9 +48,14 @@ function renderLanding() {
           <h1>Slugfester</h1>
           <p class="lede">Debate words in two columns, argument strength in numbers, critiques tucked behind a sharp little ◉.</p>
         </div>
-        <div class="signal-wrap" aria-hidden="true">
-          <canvas id="signalCanvas" width="760" height="420"></canvas>
-        </div>
+        <figure class="logo-showcase">
+          <img
+            src="./assets/slugfester-logo.jpg"
+            alt="Slugfester illustrated debate crest"
+            width="603"
+            height="900"
+          >
+        </figure>
       </section>
 
       <section class="debate-list" aria-labelledby="debates-heading">
@@ -62,8 +67,6 @@ function renderLanding() {
       </section>
     </main>
   `);
-
-  drawSignalCanvas();
 }
 
 function renderDebateCard(debate) {
@@ -338,71 +341,6 @@ function renderBlunder(blunder) {
     .join(" ");
 
   return `<li>${escapeHtml(blunder.text)} <span class="inline-links">${links}</span></li>`;
-}
-
-function drawSignalCanvas() {
-  const canvas = document.querySelector("#signalCanvas");
-  if (!canvas) return;
-
-  const ctx = canvas.getContext("2d");
-  const width = canvas.width;
-  const height = canvas.height;
-  const nodes = [
-    [78, 86, 22, "#2f8f85"],
-    [216, 152, 13, "#d0a31f"],
-    [354, 84, 17, "#d35d47"],
-    [506, 176, 21, "#2f8f85"],
-    [650, 112, 15, "#d0a31f"],
-    [130, 302, 17, "#d35d47"],
-    [306, 270, 23, "#2f8f85"],
-    [482, 322, 14, "#d0a31f"],
-    [642, 282, 24, "#d35d47"]
-  ];
-
-  ctx.clearRect(0, 0, width, height);
-  const gradient = ctx.createLinearGradient(0, 0, width, height);
-  gradient.addColorStop(0, "#f8fbfb");
-  gradient.addColorStop(0.52, "#edf5f3");
-  gradient.addColorStop(1, "#f9f1ef");
-  ctx.fillStyle = gradient;
-  ctx.fillRect(0, 0, width, height);
-
-  ctx.lineWidth = 2;
-  for (let i = 0; i < nodes.length - 1; i += 1) {
-    const [x1, y1] = nodes[i];
-    const [x2, y2] = nodes[i + 1];
-    ctx.strokeStyle = i % 2 === 0 ? "rgba(47, 143, 133, .34)" : "rgba(211, 93, 71, .34)";
-    ctx.beginPath();
-    ctx.moveTo(x1, y1);
-    ctx.bezierCurveTo((x1 + x2) / 2, y1 - 76, (x1 + x2) / 2, y2 + 76, x2, y2);
-    ctx.stroke();
-  }
-
-  nodes.forEach(([x, y, radius, color], index) => {
-    ctx.fillStyle = "rgba(255, 255, 255, .82)";
-    ctx.beginPath();
-    ctx.arc(x, y, radius + 11, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.strokeStyle = color;
-    ctx.lineWidth = 3;
-    ctx.stroke();
-    ctx.fillStyle = color;
-    ctx.beginPath();
-    ctx.arc(x, y, radius, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.fillStyle = "#13201f";
-    ctx.font = "700 14px ui-sans-serif, system-ui, sans-serif";
-    ctx.textAlign = "center";
-    ctx.textBaseline = "middle";
-    ctx.fillText(String(index + 1), x, y);
-  });
-
-  ctx.fillStyle = "rgba(19, 32, 31, .82)";
-  ctx.font = "800 42px ui-sans-serif, system-ui, sans-serif";
-  ctx.textAlign = "left";
-  ctx.fillText("76", 52, 378);
-  ctx.font = "700 13px ui-sans-serif, system-ui, sans-serif";
-  ctx.fillText("argument strength", 122, 374);
 }
 
 function route() {
