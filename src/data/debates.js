@@ -2057,5 +2057,377 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "dsouza-dillahunty-god-woman-2023",
+    title: "Dinesh D'Souza vs Matt Dillahunty: Does God Exist? What Is a Woman?",
+    label: "Theism and public reason",
+    date: "2026-05-28",
+    duration: "1 hr 59 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=mEM1AhlH9eI",
+    motion:
+      "Should beliefs about God, gender, politics, and social welfare be guided by faith-informed inference, empirical evidence, or secular-humanist consequences?",
+    summary:
+      "D'Souza defends theistic and conservative inferences; Dillahunty answers with burden-of-proof skepticism, science, and secular human welfare.",
+    sourceNote:
+      "Built from the YouTube English original auto-caption track downloaded with the yt-dlp Python module. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "the answer matters",
+        context:
+          "D'Souza argues that ultimate questions about God, death, morality, and purpose remain relevant even when empirical certainty is unavailable."
+      },
+      con: {
+        text: "the burden of proof is on the claim",
+        context:
+          "Dillahunty's central method is to accept claims only when warrant, evidence, and inferential discipline meet the burden being asserted."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theistic conservative",
+        speaker: "Dinesh D'Souza",
+        color: "teal"
+      },
+      con: {
+        name: "Secular humanist",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 65,
+      con: 76
+    },
+    sections: [
+      {
+        title: "Religion and public reason",
+        timebox: "04:00-10:40",
+        score: {
+          pro: 68,
+          con: 74
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "05:20",
+              role: "Concrete challenge",
+              words:
+                "D'Souza asks for a concrete example of religious belief directly overriding judicial, constitutional, moral, or philosophical reasoning in public life.",
+              score: 68,
+              critique:
+                "D'Souza's opening counter is useful because it asks for a concrete case rather than letting 'religion in politics' remain a vague accusation. He also fairly notes that every voter and judge brings a worldview, so religious citizens cannot be uniquely excluded from public reasoning. The weakness is that he narrows Dillahunty's complaint too much. The problem is not only whether a justice consults a divine oracle; it is whether sectarian premises receive public legal force without shared evidence. Moving to Hitchens on abortion and to climate voters broadens the comparison, but also distracts from religious authority. The score is solid because the challenge clarifies terms, but limited because it answers a softened version.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "Abortion anecdotes and climate voters divert attention from sectarian public warrant."
+                }
+              ]
+            },
+            con: {
+              time: "08:12",
+              role: "Shared-warrant test",
+              words:
+                "Dillahunty objects when divine authority is used as public warrant without demonstrating either the divine source or its intended command.",
+              score: 74,
+              critique:
+                "Dillahunty's answer is relevant and disciplined. He does not claim religious people lack sincere reasons, nor that believers must leave convictions outside civic life. His point is narrower: if a policy is justified by appeal to divine will, then the divine source and interpretation need public warrant. That gives the conversation a fair constitutional and epistemic target. The weakness is that he initially describes religious political influence broadly, which gives D'Souza room to demand a named judge or a more concrete mechanism. Still, once clarified, the standard is strong: public policy should be defended in terms citizens can inspect. The score reflects a sound principle with some early imprecision.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Unknowns, faith, and burden",
+        timebox: "11:20-32:15",
+        score: {
+          pro: 64,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "11:21",
+              role: "Ultimate questions",
+              words:
+                "D'Souza says humans lack answers about origins, purpose, and death, so belief may be rational where evidence is unavailable.",
+              score: 64,
+              critique:
+                "D'Souza identifies a real human pressure point: origin, purpose, and death are significant questions, and the answers would affect how people live. He is also right that practical life often proceeds without certainty. The weakness is the slide from existential importance to permission for belief. The fact that a question matters does not make an unevidenced answer more likely, and ordinary planning under uncertainty is not equivalent to accepting a supernatural claim. His marriage, stars, and dogs analogies show that humans use inference beyond direct observation, but those examples still rest on background evidence. The score is mixed because the challenge is humane and relevant, yet its analogies overextend the warrant.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Faith shifts between ordinary probabilistic planning and supernatural acceptance."
+                }
+              ]
+            },
+            con: {
+              time: "15:30",
+              role: "Burden distinction",
+              words:
+                "Dillahunty says not believing a supernatural claim is different from believing it false, because the claimant carries the burden.",
+              score: 84,
+              critique:
+                "Dillahunty's reply is one of the clearest parts of the debate. He separates disbelief from denial, using the courtroom analogy to show why being unconvinced is not the same as asserting the opposite. That distinction directly blocks D'Souza's attempt to make skepticism and faith equally unsupported. He also keeps confidence proportional to evidence, which lets him plan for the future without pretending to know it with certainty. The weakness is rhetorical rather than logical: the repeated definitions can sound pedantic in a free-form conversation. Substantively, though, the answer is strong because it preserves burden of proof, avoids overclaiming, and explains why evidence can justify probabilities without licensing every desired conclusion.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Science, climate, and expertise",
+        timebox: "32:39-47:50",
+        score: {
+          pro: 54,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "32:39",
+              role: "Climate skepticism",
+              words:
+                "D'Souza accepts greenhouse science but questions human causation and policy by citing polar bears, coastal property, and funding incentives.",
+              score: 54,
+              critique:
+                "D'Souza makes one fair distinction: accepting a greenhouse effect does not automatically settle every question about causation, risk, policy, or cost. That is a useful separation between science and public response. His support, however, is weak. Celebrity hypocrisy, coastal real-estate behavior, polar-bear anecdotes, and research funding incentives do not directly test climate models or attribution evidence. The claim that scientists are chasing a predetermined conclusion also needs more than suspicion, especially when contrary research could itself be valuable and well-funded. The score is low-mixed because he correctly asks for policy scrutiny, but the evidence he offers mostly attacks surrounding behavior rather than the physical claims at issue.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "Celebrity hypocrisy and market behavior distract from physical climate evidence."
+                }
+              ]
+            },
+            con: {
+              time: "38:00",
+              role: "Data over motives",
+              words:
+                "Dillahunty says hypocrisy and markets do not settle climate data; flawed science is corrected by more and better science.",
+              score: 78,
+              critique:
+                "Dillahunty's strongest move is separating motive criticism from evidential assessment. Whether Bloomberg, Obama, Al Gore, or coastal buyers are hypocritical does not decide what measurements and models show. He also states an important epistemic point: scientific errors are usually corrected by better science, not by political intuition or market signaling. That is a relevant answer to D'Souza's funding and hypocrisy lines. The weakness is that Dillahunty repeatedly says he is not a climate scientist and does not provide the underlying data either, so the response leans on method more than substance. The score is strong but not overwhelming because the epistemic distinction is right, while the evidential detail remains thin.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality, purpose, and philosophy",
+        timebox: "47:50-58:30",
+        score: {
+          pro: 72,
+          con: 73
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "48:00",
+              role: "Beyond science",
+              words:
+                "D'Souza argues science cannot answer every human question, and morality and purpose require broader philosophical explanation.",
+              score: 72,
+              critique:
+                "This is one of D'Souza's stronger sections because it corrects a possible overreading of scientific method. Questions about meaning, moral responsibility, self-consciousness, and the limits of perception are not answered merely by collecting physical measurements. His Kant and Smith references help locate the issue in serious philosophical territory rather than culture-war shorthand. The weakness is that the move from moral experience to externally given purpose remains underargued. Showing that humans seek purpose, or that moral agency matters, does not establish that purpose is imposed by God or that a secular account cannot explain moral practices. The score is solid because the topic is real and well framed, but the conclusion outruns the support.",
+              tags: []
+            },
+            con: {
+              time: "54:50",
+              role: "Made meaning",
+              words:
+                "Dillahunty accepts the need to understand ourselves, but says personal meaning is made rather than discovered as imposed purpose.",
+              score: 73,
+              critique:
+                "Dillahunty gives a coherent secular answer: he can agree that people pursue purpose while denying that purpose must exist outside persons waiting to be discovered. That distinction prevents the desire for meaning from becoming evidence that a cosmic purpose exists. It also fits his broader burden-of-proof approach: wanting an externally imposed answer does not demonstrate one. The limitation is that 'my life is mine' functions more as an existential stance than a developed account of objective value, moral normativity, or why some purposes are better than others. The score is solid because he blocks the inference from quest to answer, but not higher because the positive humanist account remains compressed.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Sex, gender, and policy",
+        timebox: "58:40-01:16:00",
+        score: {
+          pro: 60,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "58:40",
+              role: "Biology challenge",
+              words:
+                "D'Souza compares gender identity to identifying as a toad, then invokes biology, sports divisions, and women's bathrooms.",
+              score: 60,
+              critique:
+                "D'Souza is strongest when he asks whether legal and social categories can ignore biological sex in every setting. Sports divisions, privacy norms, and civil-rights categories raise practical questions that cannot be resolved by slogans alone. The weakness is the route he takes. The toad analogy caricatures gender identity by comparing it to species identity, and the discussion shifts quickly among self-description, chromosomes, sports fairness, bathrooms, and danger to women. Those are related but not identical claims, and each needs its own evidence. The score is mixed because the policy questions are legitimate, but the analogical framing and category shifting weaken the argument's overall practical precision.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Sex, gender identity, sports, and bathrooms shift as if interchangeable."
+                }
+              ]
+            },
+            con: {
+              time: "01:01:00",
+              role: "Identity and harm",
+              words:
+                "Dillahunty separates chromosomes, gender identity, and gender expression, then asks what evidence shows danger or harm.",
+              score: 77,
+              critique:
+                "Dillahunty's answer is strongest in its distinctions. He separates chromosomal sex from gender identity and gender expression, then asks what policy-relevant evidence shows harm from bathroom access or benefit from exclusion. That keeps the debate from resting on discomfort alone. His focus on depression, suicide, violence, and support also brings human consequences into a discussion that could otherwise stay abstract. The weakness is that he compresses several empirical questions together. Evidence about transition support, bathroom safety, sports fairness, and legal categorization does not all have the same shape. The score is strong because his framework is more humane and evidence-sensitive, but limited because some applications need slower sorting.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Conscience and public institutions",
+        timebox: "01:16:00-01:21:30",
+        score: {
+          pro: 70,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:16:55",
+              role: "Religious conscience",
+              words:
+                "D'Souza defends religious hospitals and officials retaining conscience, while agreeing government should not favor one religion.",
+              score: 70,
+              critique:
+                "D'Souza's position is more balanced here than in some earlier sections. He accepts that government should not favor one religion and that public officials do not have to abandon private convictions. He also raises a real pluralism question: private institutions often operate from missions, and conscience protections can prevent the state from flattening civil society. The weakness is that he underplays dependence on public funding, geographic monopoly, emergency access, and patients who do not share the institution's theology. A hospital serving a whole community is not just a private club. The score is solid because the public-private distinction matters, but restrained because the access problem is not fully answered.",
+              tags: []
+            },
+            con: {
+              time: "01:18:20",
+              role: "Access and funding",
+              words:
+                "Dillahunty says public servants may hold religion, but funded hospitals serving communities should provide medically sound care.",
+              score: 76,
+              critique:
+                "Dillahunty's reply draws a useful line: believers can serve in public life, but institutions taking public money and serving general communities should not deny medical services solely on doctrine. That framing avoids crude anti-religious exclusion and focuses on patient access. His pharmacist and hospital examples also show why conscience claims become harder when people lack realistic alternatives. The weakness is that his conclusion can sound too absolute, as if every mission-driven institution must provide every contested service once public interest is involved. More attention to emergency duties, referral obligations, funding conditions, and local availability would sharpen the standard. The score is strong because access is central, but the policy details are underdeveloped.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Predictions, markets, and health care",
+        timebox: "01:22:00-01:59:30",
+        score: {
+          pro: 65,
+          con: 72
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:27:10",
+              role: "Forecast analogies",
+              words:
+                "D'Souza analogizes afterlife belief to alien life and political forecasts, then defends markets, entrepreneurs, and catastrophic health coverage.",
+              score: 65,
+              critique:
+                "D'Souza's late section has real argumentative energy. He tests Dillahunty's burden standard with secular forecasts, explains markets as information mechanisms, and gives a concrete health-care theory about third-party payment, price opacity, and catastrophic coverage. Those moves are clearer than bare appeals to tradition. The weakness is that the analogies blur important differences. Alien life and elections are probabilistic claims with public background data, while life after death is admitted to lack empirical evidence. Market prices also reveal willingness and expectation, not necessarily human welfare or justice. The health-care account is plausible but under-evidenced. The score is moderate because the mechanisms are intelligible, but the comparisons do too much.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Belief shifts between probabilistic forecasts and unevidenced afterlife acceptance."
+                }
+              ]
+            },
+            con: {
+              time: "01:30:00",
+              role: "Human-welfare test",
+              words:
+                "Dillahunty distinguishes likely-from-true belief, prioritizes human welfare over market gains, and challenges the health-care grocery analogy.",
+              score: 72,
+              critique:
+                "Dillahunty's best move is to keep probabilities and beliefs distinct. Saying data make alien life or an election outcome likely is not the same as asserting a fact without evidence. He also rightly challenges market success as a substitute for human welfare, emphasizing wages, health, community, and access to care. His response to the grocery analogy is apt: people do not consume surgery or root canals like extra milk. The weakness is that his policy answer remains broad. He admits he is not an economist and mostly offers moral orientation rather than a worked health-care model. The score is solid because the rebuttals land, but the constructive program is thin.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 65,
+        strengths: [
+          "D'Souza kept the conversation concrete by testing principles through abortion, climate, gender, hospitals, markets, and health care.",
+          "He made a fair distinction between empirical science, policy choice, philosophy, and existential questions that science alone cannot settle.",
+          "His strongest moments came when he pressed hidden assumptions about purpose, category-making, and incentives."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly treated limited empirical access as if it made supernatural belief no less warranted than ordinary probabilistic judgment.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His climate and gender arguments often shifted from the direct issue to hypocrisy, discomfort, or adjacent policy categories.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 76,
+        strengths: [
+          "Dillahunty consistently protected the distinction between not believing a claim and believing the opposite claim.",
+          "He separated data from motives, scientific claims from policy choices, and public warrants from private religious conviction.",
+          "His strongest applied arguments asked who is harmed, what evidence shows risk, and whether alternatives are realistically available."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes leaned on expert method and consensus without supplying enough specific evidence for listeners to independently weigh the claim.",
+            links: [
+              {
+                label: "Authority bias",
+                url: bias("authority-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His gender-policy answers compressed medical support, bathroom access, sports fairness, and legal categorization into one harm-reduction frame.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
