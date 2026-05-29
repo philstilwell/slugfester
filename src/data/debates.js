@@ -3473,5 +3473,352 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "craig-harris-moral-foundations-2011",
+    title: "William Lane Craig vs Sam Harris: The God Debate II",
+    label: "Moral foundations",
+    date: "2011-04-12",
+    duration: "2 hr 07 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=yqaHXKLRKzg",
+    motion:
+      "Are the foundations of moral values and duties natural or supernatural?",
+    summary:
+      "Craig argues God grounds objective morality; Harris argues conscious well-being supplies a natural moral landscape.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the University of Notre Dame upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text:
+          "If God exists, then we have a sound foundation for objective moral values and duties",
+        context:
+          "Craig's case is explicitly conditional: God supplies the ontology of value and the authoritative source of duties."
+      },
+      con: {
+        text: "The worst possible misery for everyone is bad",
+        context:
+          "Harris uses this bedrock intuition to argue that facts about conscious experience can anchor objective moral judgments."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Supernatural foundation",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "Natural foundation",
+        speaker: "Sam Harris",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 75,
+      con: 80
+    },
+    sections: [
+      {
+        title: "Moral ontology and duties",
+        timebox: "08:45-46:10",
+        score: {
+          pro: 79,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "09:20",
+              role: "Theistic grounding",
+              words:
+                "Craig says God grounds objective moral values in his character and moral duties in commands reflecting that nature.",
+              score: 79,
+              critique:
+                "Craig's opening is disciplined: he announces two conditional claims and separates values from duties. The strongest feature is clarity. God's character grounds value, while divine commands ground obligation, so the view has an answer to both ontology and normativity. The weakness is that the conditional frame carries a large conceptual load. Saying God is loving and holy may explain morality if that God exists, but it does not by itself show why God's nature is the correct stopping point rather than another unexplained brute fact. The appeal to commands also needs more detail about authority and interpretation. The score is solid because the structure is strong, but limited because the foundation is asserted more than tested.",
+              tags: []
+            },
+            con: {
+              time: "28:55",
+              role: "Well-being frame",
+              words:
+                "Harris says right and wrong relate to human well-being and that religion is unnecessary for universal morality.",
+              score: 76,
+              critique:
+                "Harris's opening move is rhetorically vivid and morally intuitive. By starting with burkas, child mutilation, and ordinary judgments about suffering, he makes relativism look evasive and gives listeners a concrete reason to connect morality with conscious welfare. The weakness is that this mostly establishes moral confidence, not yet moral ontology. Craig's question is why well-being has objective authority, and Harris initially answers by making the alternative seem absurd rather than by proving the bridge from facts about experience to duties. Still, the argument is relevant and powerful because it supplies the secular side's basic criterion. The score is strong because the examples clarify the stakes, while leaving the deeper grounding challenge alive.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Naturalism and species",
+        timebox: "15:00-39:10",
+        score: {
+          pro: 74,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "15:20",
+              role: "Evolution challenge",
+              words:
+                "Craig argues naturalism leaves morality as evolved herd behavior without anything objectively binding or true.",
+              score: 74,
+              critique:
+                "Craig's evolutionary challenge targets a real pressure point. If moral feelings are products of selection and social conditioning, then their survival value does not automatically make them true, binding, or authoritative. That is a serious objection to a simplistic naturalism. The weakness is the leap from 'evolution explains the origin of moral psychology' to 'therefore atheism lacks any possible moral foundation.' Naturalists can appeal to reasons, suffering, reciprocity, agency, or realist accounts that are not exhausted by herd behavior. Craig also leans on vivid animal comparisons that risk making the opponent's view sound cruder than it is. The score is solid because the burden is real, but not higher because the exclusion of alternatives is underargued.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Craig treats the absence of Harris's successful grounding as evidence that no naturalistic grounding remains."
+                }
+              ]
+            },
+            con: {
+              time: "36:30",
+              role: "Misery test",
+              words:
+                "Harris argues value judgments require conscious experience, and the worst possible misery for everyone is plainly bad.",
+              score: 82,
+              critique:
+                "Harris's worst-possible-misery test is the cleanest secular anchor in the debate. It does not pretend to define every moral question; it asks whether any coherent moral vocabulary can deny that universal maximal suffering is bad. That gives his landscape a floor and explains why some movements are objectively worse relative to conscious experience. The weakness is that bedrock intuitions can be compelling without satisfying everyone who wants a source of obligation. Craig can still ask why avoiding misery is binding on an agent who refuses the value. Even so, Harris earns a high score because he grounds moral discussion in facts about minds without collapsing into mere preference.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Science and moral knowledge",
+        timebox: "21:45-46:10",
+        score: {
+          pro: 72,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "21:45",
+              role: "Is-ought objection",
+              words:
+                "Craig says natural science reports what is, not what ought to be, so it cannot create obligations.",
+              score: 72,
+              critique:
+                "Craig's is-ought objection is the strongest technical challenge to Harris. Science can describe pain, preference, health, and social outcomes, but description alone does not issue an imperative. By naming this gap, Craig keeps the debate from becoming a contest over who can cite worse harms. The weakness is that he sometimes treats the gap as automatically fatal for every naturalist account, while his own move from divine facts to obligations also requires a normative premise about authority. The critique therefore cuts both ways unless the authority premise is independently defended. The score is mixed-solid because the objection is central and well placed, but not a complete refutation.",
+              tags: []
+            },
+            con: {
+              time: "39:05",
+              role: "Health analogy",
+              words:
+                "Harris compares morality to health: hard to define perfectly, yet still objectively better or worse in practice.",
+              score: 85,
+              critique:
+                "Harris's health analogy is one of his best explanatory devices. Health is hard to define at the margins, yet medicine still makes objective claims about broken bones, infection, pain, nutrition, and death. Likewise, well-being can be vague without being empty. This directly answers the charge that undefined edges make morality subjective. The weakness is that health already presupposes a goal, and moral disagreement often concerns competing goals rather than just measurements. Harris therefore shows how science can inform morality once the standard is accepted, but less clearly why the standard has authority over every rival. The score is high because the analogy is clarifying and practical, with a remaining grounding gap.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Semantics and identity",
+        timebox: "46:20-1:00:20",
+        score: {
+          pro: 82,
+          con: 72
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "49:00",
+              role: "Ontology distinction",
+              words:
+                "Craig separates moral semantics from ontology and says Harris equivocates between moral good and creaturely flourishing.",
+              score: 82,
+              critique:
+                "Craig's ontology-semantics distinction is a useful correction. He does not claim that 'good' simply means 'commanded by God'; he claims God grounds the property and duties. That keeps him from the easiest divine-command caricature and makes his case more philosophically exact. His identity argument against Harris also pressures a genuine weakness: flourishing and goodness may come apart if cruel people can flourish. The weakness is that the modal argument is compressed and depends on a contestable reading of Harris's claim. A landscape could include subjective welfare and moral evaluation without strict identity. The score is high because Craig engages the central thesis directly, though not decisively.",
+              tags: []
+            },
+            con: {
+              time: "59:35",
+              role: "Welfare reply",
+              words:
+                "Harris answers that hell, salvation, and Christian accountability still smuggle in concern for conscious well-being.",
+              score: 72,
+              critique:
+                "Harris's reply shifts the lens from abstraction to moral consequences. If Christianity uses hell, salvation, and divine judgment to motivate moral life, then conscious well-being has not disappeared; it has been extended into eternity. That is a sharp way to expose hidden welfare assumptions in religious moral talk. The weakness is that it only partly answers Craig's ontology. A theist can say ultimate welfare matters because God is good, not that goodness reduces to welfare. Harris also begins turning toward Christianity's moral credibility rather than the narrower question of supernatural grounding. The score is solid because the reply lands, but it does not fully meet Craig's technical objection.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Religion and evil",
+        timebox: "1:00:20-1:18:30",
+        score: {
+          pro: 70,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:12:30",
+              role: "Conditional defense",
+              words:
+                "Craig says Harris's attacks on hell, scripture, and the unevangelized do not answer the conditional grounding claim.",
+              score: 70,
+              critique:
+                "Craig's red-herring defense is strategically effective. He reminds the room that the debate is about whether God would ground objective morality if God exists, not whether Christianity is independently true or whether every biblical passage is morally defensible. That protects his conditional argument from being swallowed by a broader anti-religious critique. The weakness is that the move can look too insulated. If the proposed ground is a personal God whose commands create duties, then questions about recognizing commands, distinguishing true from false revelation, and judging divine cruelty are not irrelevant forever. The score is solid because Craig enforces the motion, but lower because the shield also avoids pressure on application.",
+              tags: []
+            },
+            con: {
+              time: "1:00:25",
+              role: "Doctrinal attack",
+              words:
+                "Harris argues Christian doctrines of hell, salvation, and divine mystery undermine claims that theism clarifies moral accountability.",
+              score: 76,
+              critique:
+                "Harris's attack on hell and religious violence is emotionally forceful and relevant to the public meaning of supernatural morality. He shows that appealing to divine authority can lead people to rationalize suffering, exclusion, and salvation lotteries in ways that ordinary moral reason would reject. This is a serious challenge to religion as a moral guide. The weakness is that Craig's formal claim is broader than Christianity, and Harris spends much of the rebuttal attacking doctrines Craig can label outside the motion. The examples weaken confidence in religious moral systems, but they do not alone refute a generic theistic grounding thesis. The score is strong but capped by partial misalignment.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "Christian doctrine examples sometimes displace the narrower conditional claim about whether God would ground morality."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Axioms and authority",
+        timebox: "1:18:30-2:03:30",
+        score: {
+          pro: 75,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:26:20",
+              role: "Closing synthesis",
+              words:
+                "Craig says God is the greatest conceivable being, while Harris must take moral axioms by faith.",
+              score: 75,
+              critique:
+                "Craig's closing synthesis is neat and disciplined. He returns to the exact burdens he announced, argues that God as the greatest conceivable being is necessarily good, and says Harris's axioms amount to faith. The strongest part is consistency: listeners never lose track of the two contentions. The weakness is that defining God as necessarily worthy of worship risks sounding like the same semantic move Craig attributes to Harris. If 'God' excludes any being unworthy of worship by definition, the remaining question is whether such a being exists or explains duties better than axiomatic moral realism. The score is strong for organization, but limited by conceptual circularity.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "God's goodness is folded into the definition of God as worship-worthy and then used as support."
+                }
+              ]
+            },
+            con: {
+              time: "1:19:25",
+              role: "Axiomatic reply",
+              words:
+                "Harris says every science relies on axioms, and morality only needs the misery-avoidance starting point.",
+              score: 81,
+              critique:
+                "Harris's axiomatic reply is candid and philosophically useful. He admits that every inquiry begins somewhere, then argues that avoiding the worst possible misery is no more suspicious than valuing logic or evidence in science. That helps defuse Craig's demand for an impossible self-justifying foundation. The weakness is that Harris's analogy blurs two issues: epistemic norms for inquiry and moral norms for action. A person who rejects logic leaves argument, but a person who rejects others' welfare raises a practical authority problem. That leaves Craig room to press the question of obligation. The score is strong because Harris names the shared structure of inquiry, though the duty question remains partly unanswered.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "2:00:30",
+              role: "Authority answer",
+              words:
+                "Craig says duties arise from imperatives issued by a competent authority, not from God's existence alone.",
+              score: 74,
+              critique:
+                "Craig's Q&A answer is important because it clarifies that 'God exists' alone is not meant to produce duties. The missing premise is that obligations arise from imperatives issued by a competent moral authority, and God would be that authority. This makes the structure more explicit than some earlier formulations. The weakness is that competence and authority still require moral evaluation. If an authority commanded cruelty, Harris can ask whether the command would create duty or reveal a bad authority. Craig answers by appealing to God's nature, but that returns to the same disputed foundation. The score is solid because the clarification helps, not because it dissolves the Euthyphro pressure.",
+              tags: []
+            },
+            con: {
+              time: "2:01:35",
+              role: "Psychopathy reply",
+              words:
+                "Harris says moral rules differ from mere authority commands because children can distinguish permission from harm.",
+              score: 83,
+              critique:
+                "Harris's psychopathy reply is one of his sharper late moves. By noting that children distinguish classroom permission from permission to punch someone, he argues that moral wrongness is not the same as disobedience to authority. That directly pressures divine-command theory: if harm remains wrong even when an authority permits it, authority is not the ultimate source. The weakness is that the example fits human authorities more cleanly than a necessarily good divine authority, which is exactly Craig's distinction. The reply is also easy for the audience to grasp. Harris exposes the danger of command-only accounts, but does not fully defeat Craig's nature-plus-command version. The score is high because the analogy is crisp and targeted.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 75,
+        strengths: [
+          "Craig kept the debate focused on moral ontology, moral duty, and the conditional structure of his two central claims.",
+          "He identified real vulnerabilities in Harris's well-being account, especially the is-ought gap and the authority of moral obligations.",
+          "His rebuttals were organized, technically precise, and consistently tied back to the motion rather than to audience reaction."
+        ],
+        blunders: [
+          {
+            text:
+              "He treated weaknesses in Harris's model as if they ruled out naturalistic moral grounding altogether.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "He relied on God's necessary goodness as a conceptual premise while accusing Harris of semantic grounding.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 80,
+        strengths: [
+          "Harris gave the secular side a memorable anchor in the worst-possible-misery test and the moral landscape model.",
+          "He showed why divine authority can be morally dangerous when commands, scriptures, or salvation doctrines override ordinary concern for suffering.",
+          "His health analogy and Q&A reply made objective talk about subjective experience more plausible and accessible."
+        ],
+        blunders: [
+          {
+            text:
+              "He often attacked Christian hell, scripture, and religious cruelty instead of Craig's narrower conditional grounding thesis.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "He treated the misery-avoidance axiom as bedrock while leaving moral obligation partly assumed.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
