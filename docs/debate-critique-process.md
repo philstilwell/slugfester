@@ -12,7 +12,7 @@ Create a condensed debate scorecard, not a full transcript replacement. Each pag
 
 - YouTube URL and debate title.
 - Transcript source, noted in `sourceNote`.
-- Last rendered date in `YYYY-MM-DD` format.
+- Last rendered date in `YYYY-MM-DD` format: the last date this project ran the critique and scores, not the YouTube upload date.
 - Two-digit zero-padded debate number, speaker names, unique debate label, side labels, duration, motion, and a one-sentence summary.
 - Short representative quotes for both sides.
 
@@ -35,7 +35,7 @@ Every debate object should produce this order:
 
 - Use 4-7 topical sections for a long-form debate.
 - Each section should cover one clear argumentative movement.
-- Use the YouTube/transcript time range in `timebox`.
+- Use the YouTube/transcript time range in `timebox`; keep upload timing separate from the `date` field.
 - Each exchange should align the two sides on the same issue whenever possible.
 - Prefer 1-3 exchanges per section rather than exhaustive coverage.
 

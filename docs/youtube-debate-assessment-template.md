@@ -176,6 +176,7 @@ Use this shape when adding an object to `src/data/debates.js`.
 
 - Page follows the locked debate-page design above.
 - Debate numbers are two-digit, zero-padded, sequential, and displayed consistently site-wide.
+- `date` is the Slugfester last-rendered scoring date, not the YouTube upload date.
 - The sticky header uses the small boxing-gloves image.
 - The top reference links are grouped as an `External Sites` cluster.
 - The top reference links explain LogFall and CogBias with hover/focus popovers.

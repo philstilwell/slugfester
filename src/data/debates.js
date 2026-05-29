@@ -7,7 +7,7 @@ export const debates = [
     number: "01",
     title: "Alex O'Connor vs William Lane Craig: Does God Exist?",
     label: "Christian theism and suffering",
-    date: "2026-05-21",
+    date: "2026-05-28",
     duration: "1 hr 49 min",
     youtubeUrl: "https://www.youtube.com/watch?v=TAW6-_L4z9M",
     motion:
@@ -3488,7 +3488,7 @@ export const debates = [
     number: "10",
     title: "William Lane Craig vs Sam Harris: The God Debate II",
     label: "Moral foundations",
-    date: "2011-04-12",
+    date: "2026-05-28",
     duration: "2 hr 07 min",
     youtubeUrl: "https://www.youtube.com/watch?v=yqaHXKLRKzg",
     motion:
@@ -3836,7 +3836,7 @@ export const debates = [
     number: "11",
     title: "Dinesh D'Souza vs Bart Ehrman: God, Suffering, and Evil",
     label: "Problem of evil",
-    date: "2025-12-19",
+    date: "2026-05-28",
     duration: "1 hr 35 min",
     youtubeUrl: "https://www.youtube.com/watch?v=XtWjEjdYvLA",
     motion:
@@ -4234,7 +4234,7 @@ export const debates = [
     number: "12",
     title: "Joel Settecase vs Tom Jump: Is There Evidence for God?",
     label: "Evidence and presuppositions",
-    date: "2025-08-06",
+    date: "2026-05-28",
     duration: "1 hr 05 min",
     youtubeUrl: "https://www.youtube.com/watch?v=XLcRd3RjdjA",
     motion:
@@ -4577,7 +4577,7 @@ export const debates = [
     number: "13",
     title: "Cliffe Knechtle vs Alex O'Connor: Christianity, Scripture, and Morality",
     label: "Christian ethics",
-    date: "2025-08-08",
+    date: "2026-05-28",
     duration: "51 min",
     youtubeUrl: "https://www.youtube.com/watch?v=EN5Jqu2-2P8",
     motion:
@@ -4942,7 +4942,7 @@ export const debates = [
     number: "14",
     title: "Michael Jones vs Richard Carrier: Does God Exist?",
     label: "God and naturalism",
-    date: "2025-11-26",
+    date: "2026-05-28",
     duration: "1 hr 55 min",
     youtubeUrl: "https://www.youtube.com/watch?v=Ht_SVm0GWBs",
     motion:
@@ -5251,7 +5251,7 @@ export const debates = [
     number: "15",
     title: "Christopher Hitchens vs John Lennox: Is God Great?",
     label: "God and anti-theism",
-    date: "2017-06-20",
+    date: "2026-05-28",
     duration: "1 hr 53 min",
     youtubeUrl: "https://www.youtube.com/watch?v=5OXPlUCGScY",
     motion:
@@ -5576,7 +5576,7 @@ export const debates = [
     number: "16",
     title: "Ayaan Hirsi Ali vs Richard Dawkins: The God Debate",
     label: "Faith and civilization",
-    date: "2024-06-03",
+    date: "2026-05-28",
     duration: "1 hr 07 min",
     youtubeUrl: "https://www.youtube.com/watch?v=DBsHdHMvucs",
     motion:
@@ -5909,7 +5909,7 @@ export const debates = [
     number: "17",
     title: "Francis Collins vs Alex O'Connor: Does God Exist?",
     label: "Science and faith",
-    date: "2024-12-12",
+    date: "2026-05-28",
     duration: "1 hr 47 min",
     youtubeUrl: "https://www.youtube.com/watch?v=fXBGvNc2mvU",
     motion:
