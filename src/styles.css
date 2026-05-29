@@ -1136,8 +1136,26 @@ a {
   font-size: 1rem;
 }
 
-.reference-context-card > p:last-child {
+.reference-context-card > p:not(.reference-speaker):not(.reference-debate-return) {
   color: #30413e;
+}
+
+.reference-debate-link,
+.reference-debate-return a {
+  color: var(--blue);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.reference-debate-link:hover,
+.reference-debate-return a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.reference-debate-return {
+  font-size: 0.88rem;
 }
 
 @media (max-width: 980px) {

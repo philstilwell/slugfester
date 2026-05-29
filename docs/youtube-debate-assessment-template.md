@@ -26,6 +26,7 @@ Landing-page design:
 - The LogFall and CogBias header links show short explanatory popovers on hover and keyboard focus.
 - The landing intro includes a divider line followed by a ` | `-delineated list of unique current debate topics.
 - The debate list is capped at three columns on wide screens, then steps down responsively.
+- Debate `label` values must be unique so landing cards, topic lists, and reference occurrence cards are unambiguous.
 
 Design constraints:
 
@@ -188,4 +189,5 @@ Use this shape when adding an object to `src/data/debates.js`.
 - Fallacy and bias pills show hover/focus popovers with basic definitions, contextual explanation, and the note `Click button for more info.`
 - Fallacy and bias pills also open local reference pages with basic definitions, contextual explanation, and external in-depth links.
 - Reference pages include `Back to debates | Back to this debate` navigation when opened from a debate page.
+- Reference occurrence cards link back to the debate scorecard where the fallacy or bias appeared.
 - `npm run check` passes before commit.

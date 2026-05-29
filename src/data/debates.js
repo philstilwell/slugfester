@@ -5,7 +5,7 @@ export const debates = [
   {
     id: "craig-oconnor-god-debate-2026",
     title: "Alex O'Connor vs William Lane Craig: Does God Exist?",
-    label: "Christian theism",
+    label: "Christian theism and suffering",
     date: "2026-05-21",
     duration: "1 hr 49 min",
     youtubeUrl: "https://www.youtube.com/watch?v=TAW6-_L4z9M",
@@ -568,7 +568,7 @@ export const debates = [
   {
     id: "craig-hitchens-god-existence-2009",
     title: "William Lane Craig vs Christopher Hitchens: Does God Exist?",
-    label: "Christian theism",
+    label: "Christian theism and atheism",
     date: "2026-05-28",
     duration: "2 hr 27 min",
     youtubeUrl: "https://www.youtube.com/watch?v=0tYm41hb48o",
@@ -1292,7 +1292,7 @@ export const debates = [
   {
     id: "lennox-atkins-science-explain-everything-2019",
     title: "John Lennox vs Peter Atkins: Can Science Explain Everything?",
-    label: "Science and theism",
+    label: "Science and explanation",
     date: "2026-05-28",
     duration: "1 hr 38 min",
     youtubeUrl: "https://www.youtube.com/watch?v=fSYwCaFkYno",
@@ -1673,7 +1673,7 @@ export const debates = [
     id: "dillahunty-ten-bruggencate-reasonable-god-2014",
     title:
       "Matt Dillahunty vs Sye Ten Bruggencate: Is It Reasonable to Believe God Exists?",
-    label: "Presuppositional apologetics",
+    label: "Logic and presuppositions",
     date: "2026-05-28",
     duration: "1 hr 55 min",
     youtubeUrl: "https://www.youtube.com/watch?v=OL8LREmbDi0",
@@ -2757,7 +2757,7 @@ export const debates = [
   {
     id: "wood-shermer-god-exist-2022",
     title: "David Wood vs Michael Shermer: Does God Exist?",
-    label: "Science and theism",
+    label: "Science, morality, and God",
     date: "2026-05-28",
     duration: "2 hr 17 min",
     youtubeUrl: "https://www.youtube.com/watch?v=xKd2Ht5Bs-k",
@@ -4221,7 +4221,7 @@ export const debates = [
   {
     id: "settecase-jump-evidence-for-god-2025",
     title: "Joel Settecase vs Tom Jump: Is There Evidence for God?",
-    label: "Presuppositional apologetics",
+    label: "Evidence and presuppositions",
     date: "2025-08-06",
     duration: "1 hr 05 min",
     youtubeUrl: "https://www.youtube.com/watch?v=XLcRd3RjdjA",

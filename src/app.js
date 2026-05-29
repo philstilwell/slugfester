@@ -491,16 +491,21 @@ function collectReferenceAppearances(type, slug) {
 }
 
 function renderReferenceAppearance(appearance) {
+  const debateHref = `#/debate/${encodeURIComponent(appearance.debate.id)}`;
+
   return `
     <article class="reference-context-card">
       <div class="card-topline">
-        <span>${escapeHtml(appearance.debate.label)}</span>
+        <a class="reference-debate-link" href="${escapeHtml(debateHref)}">${escapeHtml(appearance.debate.label)}</a>
         <span>${escapeHtml(appearance.argument.time)}</span>
       </div>
       <h3>${escapeHtml(appearance.section.title)}</h3>
       <p class="reference-speaker">${escapeHtml(appearance.side.name)} · ${escapeHtml(appearance.side.speaker)} · ${escapeHtml(appearance.argument.role)}</p>
       <blockquote>${escapeHtml(appearance.argument.words)}</blockquote>
       <p>${escapeHtml(appearance.tag.context)}</p>
+      <p class="reference-debate-return">
+        <a href="${escapeHtml(debateHref)}">Open debate scorecard: ${escapeHtml(appearance.debate.title)}</a>
+      </p>
     </article>
   `;
 }

@@ -258,13 +258,22 @@ if (!Array.isArray(debates) || debates.length === 0) {
   addError(["debates"], "must export a non-empty array");
 } else {
   const ids = new Set();
+  const labels = new Set();
   debates.forEach(validateDebate);
   debates.forEach((debate, index) => {
-    if (!debate?.id) return;
-    if (ids.has(debate.id)) {
-      addError(["debates", String(index), "id"], "must be unique");
+    if (debate?.id) {
+      if (ids.has(debate.id)) {
+        addError(["debates", String(index), "id"], "must be unique");
+      }
+      ids.add(debate.id);
     }
-    ids.add(debate.id);
+
+    if (debate?.label) {
+      if (labels.has(debate.label)) {
+        addError(["debates", String(index), "label"], "must be unique");
+      }
+      labels.add(debate.label);
+    }
   });
 }
 

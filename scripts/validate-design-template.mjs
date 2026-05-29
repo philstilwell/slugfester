@@ -36,6 +36,8 @@ requireIncludes("app guide", app, "◉ Deeper critiques");
 requireIncludes("app reference route", app, "referenceRoutePattern");
 requireIncludes("app reference route", app, "Why this label appears here");
 requireIncludes("app reference route", app, "Back to this debate");
+requireIncludes("app reference route", app, "reference-debate-link");
+requireIncludes("app reference route", app, "Open debate scorecard");
 requireIncludes("app tag links", app, "referenceHref(tag.url, debateId)");
 requireIncludes("app tag popovers", app, 'class="tag-popover"');
 requireIncludes("app tag popovers", app, "Click button for more info.");
@@ -62,6 +64,8 @@ requireIncludes("debate title", styles, "font-size: clamp(1.5rem, 3.9vw, 3.35rem
 requireIncludes("tag popovers", styles, ".tag-popover");
 requireIncludes("tag popovers", styles, ".tag-wrap:hover .tag-popover");
 requireIncludes("reference nav", styles, ".reference-nav");
+requireIncludes("reference links", styles, ".reference-debate-link");
+requireIncludes("reference links", styles, ".reference-debate-return");
 requireIncludes("argument grid", styles, ".exchange-grid");
 requireIncludes("argument grid", styles, "align-items: start;");
 requireIncludes("argument cards", styles, "min-height: 0;");

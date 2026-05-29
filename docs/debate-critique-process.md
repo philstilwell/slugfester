@@ -13,7 +13,7 @@ Create a condensed debate scorecard, not a full transcript replacement. Each pag
 - YouTube URL and debate title.
 - Transcript source, noted in `sourceNote`.
 - Last rendered date in `YYYY-MM-DD` format.
-- Speaker names, side labels, duration, motion, and a one-sentence summary.
+- Speaker names, unique debate label, side labels, duration, motion, and a one-sentence summary.
 - Short representative quotes for both sides.
 
 Never invent direct quotations. If transcript text is lightly cleaned for readability, say so in `sourceNote`.
@@ -122,4 +122,5 @@ Before committing a new debate:
 - The scoring note makes clear that scores are AI-generated.
 - `sourceNote` identifies how the transcript was obtained or cleaned.
 - The page follows the locked design in `youtube-debate-assessment-template.md`.
+- The debate label is distinct from every other listed debate.
 - `npm run check` passes.
