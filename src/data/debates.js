@@ -4923,5 +4923,313 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "jones-carrier-god-existence-2025",
+    title: "Michael Jones vs Richard Carrier: Does God Exist?",
+    label: "God and naturalism",
+    date: "2025-11-26",
+    duration: "1 hr 55 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=Ht_SVm0GWBs",
+    motion:
+      "Does the evidence from consciousness, emergence, morality, and cosmology make theism more plausible than naturalism?",
+    summary:
+      "Jones argues theism explains mind, emergence, and morality; Carrier argues naturalism better fits precedent, simplicity, and evidence.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the InspiringPhilosophy upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "A fundamental mind exists",
+        context:
+          "Jones's case treats mind as the simplest unifying ground for consciousness, emergence, morality, and the universe."
+      },
+      con: {
+        text: "mindless natural causes explain everything",
+        context:
+          "Carrier defines his naturalism as a rival explanatory program that predicts physical causes, evolved minds, and human moral development."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theistic idealism",
+        speaker: "Michael Jones",
+        color: "teal"
+      },
+      con: {
+        name: "Secular naturalism",
+        speaker: "Richard Carrier",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 74,
+      con: 80
+    },
+    sections: [
+      {
+        title: "Idealism and mind",
+        timebox: "04:00-28:00",
+        score: {
+          pro: 77,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:15",
+              role: "Introspective case",
+              words:
+                "Jones argues the mind exists, cannot reduce to matter, and supports idealism rather than material substance.",
+              score: 77,
+              critique:
+                "Jones's introspective case is ambitious and relevant. He starts from undeniable conscious experience, presses the hard problem, invokes qualia, and argues that if physical objects reduce to experienced properties, idealism has the cleaner ontology. That gives his theism a philosophical base rather than just an evidential add-on. The weakness is that the reduction claims move quickly. Bundle theory, qualia, and the rejection of substance dualism do not by themselves establish that all is mind, much less a necessary divine mind. Carrier can concede hard problems while favoring physicalist models. The score is strong because Jones gives a real argument, but not higher because several controversial steps are compressed.",
+              tags: []
+            },
+            con: {
+              time: "22:00",
+              role: "Physicalist reply",
+              words:
+                "Carrier says qualia can reduce to computational brain processes and that most philosophers favor mind-brain physicalism.",
+              score: 81,
+              critique:
+                "Carrier's physicalist reply is strong because it puts the missing evidence back on the table. He points to philosophers and cognitive scientists who argue that qualia arise from computational modeling, then stresses evolutionary and neuroanatomical data: minds appear slowly, depend on complex brains, and vary with brain systems. That directly attacks the inference from hard problem to idealism. The weakness is that citing a possible physicalist program is not the same as solving subjective experience. Carrier sometimes sounds more confident than the current explanatory gap warrants. Even so, he scores highly because he answers with mechanisms and comparative evidence rather than dismissing consciousness as unreal.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Emergent universe",
+        timebox: "07:30-38:00",
+        score: {
+          pro: 73,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "07:40",
+              role: "Quantum emergence",
+              words:
+                "Jones says particles reduce to fields, information, and quantum processes that fit better with mind-first idealism.",
+              score: 73,
+              critique:
+                "Jones's emergence argument has an intriguing shape. He uses quantum field theory, information language, quantum cognition, and cosmic-structure analogies to suggest that physical reality is not fundamental stuff but mind-like information. That gives theism explanatory breadth and makes idealism feel contemporary rather than antique. The weakness is that several correlations are asked to do metaphysical work. Mathematical formalisms, information descriptions, and quantum cognition models do not automatically imply a mind behind the universe. Carrier can say physics often uses abstract descriptions of physical behavior. The score is solid because Jones marshals real literature, but capped because the move from formal structure to divine mind remains underdefended.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Information and mind-like structure slide between mathematical description, cognition model, and metaphysical mind."
+                }
+              ]
+            },
+            con: {
+              time: "29:10",
+              role: "Physics reply",
+              words:
+                "Carrier says mathematical formalisms describe physical behavior, and possible physical theories can explain quantum fields.",
+              score: 80,
+              critique:
+                "Carrier's physics reply is effective because it resists treating mystery as evidence for idealism. Mathematical formalisms describe physical behavior; they do not show that no physical thing is being described. He also offers superstring or spacetime-ripple models as possible reductions, not as proven truth, to show that naturalistic explanations remain live. The weakness is that possible models are not confirmed models, and string-style speculation can sound like trading one metaphysical promissory note for another. Still, the reply is strong because it blocks the inference that current interpretive uncertainty favors theism. Carrier keeps the burden on Jones to show idealism is not merely compatible but superior.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral realism",
+        timebox: "14:10-56:00",
+        score: {
+          pro: 76,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "14:15",
+              role: "Personal prescription",
+              words:
+                "Jones argues objective moral duties are personal prescriptions and therefore point to a necessary personal source.",
+              score: 76,
+              critique:
+                "Jones's moral argument is clear and familiar in a useful way. If moral duties are objective prescriptions rather than natural descriptions, then they seem to fit a personal source better than impersonal nature. His use of the open-question and is-ought problems gives the case real philosophical pressure. The weakness is that prescription language may import personhood into the premise. A moral realist can deny that objective reasons require a commander while still rejecting reduction to mere happiness or preference. Jones also moves from personal source to God quickly. The score is strong because the argument targets a real challenge for naturalism, but not decisive because alternatives remain available.",
+              tags: []
+            },
+            con: {
+              time: "36:45",
+              role: "Natural moral facts",
+              words:
+                "Carrier says oughts can be grounded empirically when tied to goals that supersede other imperatives.",
+              score: 78,
+              critique:
+                "Carrier's moral reply is more substantive than a simple denial. He argues that oughts can be derived from facts once goals are specified, then treats moral oughts as imperatives that supersede other imperatives because they support cooperation, self-reflection, and social flourishing. That gives naturalism an action-guiding account. The weakness is that the transition from hypothetical imperatives to genuinely moral authority remains contested. Jones can still ask why those final goals are binding rather than merely instrumentally useful. The score is strong because Carrier gives a workable naturalist framework and invokes historical moral improvement, but it leaves the deepest normativity question only partially answered in this debate.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Parsimony and precedent",
+        timebox: "18:15-1:04:45",
+        score: {
+          pro: 75,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "18:20",
+              role: "Unified explanation",
+              words:
+                "Jones says one fundamental mind explains universe, consciousness, moral realism, and other data more parsimoniously.",
+              score: 75,
+              critique:
+                "Jones's best strategic point is explanatory scope. Instead of giving disconnected arguments, he says theism accounts for several data sets with one posit: a fundamental mind. That is a legitimate abductive move, especially against a naturalism that uses different explanations for cosmology, consciousness, and morality. The weakness is that a single posit is not automatically simpler if the posit is information-rich, unlimited, and personal. Calling God a simple ontology does not settle whether perfect knowledge, power, value, and agency are less complex than natural alternatives. The score is strong because Jones frames the comparison well, but capped because simplicity is more asserted than demonstrated overall.",
+              tags: []
+            },
+            con: {
+              time: "20:15",
+              role: "Epistemic virtues",
+              words:
+                "Carrier compares explanations by precedent, simplicity, and how expected the evidence is under each theory.",
+              score: 84,
+              critique:
+                "Carrier's epistemic framework is one of the debate's cleanest contributions. By naming precedent, simplicity, and expected evidence, he gives the audience criteria for comparing theism and naturalism rather than trading intuitions. His precedent argument also has force: historically, unexplained phenomena have often gained natural explanations. The weakness is that precedent is not a proof and can become overconfident if applied to questions unlike past scientific puzzles. God might not be analogous to a failed weather or disease explanation. Still, Carrier uses the framework responsibly by saying precedent is one virtue among several. The score is high because it disciplines the debate's burden of proof well.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Nothing and bubble",
+        timebox: "56:00-1:18:00",
+        score: {
+          pro: 81,
+          con: 74
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "56:05",
+              role: "Nothing challenge",
+              words:
+                "Jones argues Carrier's nothing state is really a thing with causal powers, properties, and arbitrary limits.",
+              score: 81,
+              critique:
+                "Jones's cross-examination of the bubble model is his strongest live exchange. He forces Carrier to clarify whether the starting point is nothing, a field state, a geometric point, a bubble, or a thing with properties. Once Carrier grants existence plus a property that random possibilities can happen, Jones fairly asks why this is not already a substantive metaphysical posit requiring explanation. The weakness is that Jones sometimes caricatures randomness as wanting or acting like a mind. A non-conscious random generator need not have intentions. Still, the score is high because he exposes semantic instability and makes the alleged simplicity look less free than advertised in practice.",
+              tags: []
+            },
+            con: {
+              time: "1:00:35",
+              role: "Random multiverse",
+              words:
+                "Carrier says a no-law starting point randomly yields a vast godless multiverse more simply than God.",
+              score: 74,
+              critique:
+                "Carrier's bubble model is imaginative and directly serves his simplicity argument. He tries to avoid a complex divine mind by positing a minimal starting point: existence plus no governing laws, from which random outcomes and a multiverse follow. The strength is that he gives a rival cosmological story rather than merely saying 'not God.' The weakness is that the model is hard to keep stable in debate. Calling it nothing, then a field state, then a bubble with properties invites Jones's charge that it is not nothing at all. The score is solid because it is a real alternative, but lower because its explanatory clarity suffers under questioning.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Consciousness crossfire",
+        timebox: "1:18:00-1:32:00",
+        score: {
+          pro: 78,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:20:35",
+              role: "Correlation objection",
+              words:
+                "Jones says brain correlations, lesions, and stimulation do not show how computation produces subjective experience.",
+              score: 78,
+              critique:
+                "Jones's consciousness crossfire lands because he presses the hard problem rather than letting correlation stand as explanation. Lesions, stimulation, and neural maps show dependence, but he asks how computation becomes felt experience. The Chinese-room style point also challenges whether symbol-processing alone gives understanding. The weakness is that he may demand a level of reductive explanation that many successful sciences do not initially possess. Carrier's convergent evidence is not trivial just because it is correlational. The score is strong because Jones highlights a genuine explanatory gap, but not higher because idealism must still explain why mental life maps so precisely to brain damage and development over time.",
+              tags: []
+            },
+            con: {
+              time: "1:18:30",
+              role: "Modeling account",
+              words:
+                "Carrier says consciousness is the brain's virtual model, supported by evolution, lesions, stimulation, and comparative evidence.",
+              score: 80,
+              critique:
+                "Carrier's modeling account gives naturalism its most concrete mechanism. He describes animals as building virtual models of their environment, integrating perception, desire, and action, then argues that removing or stimulating brain systems changes qualia in predictable ways. Comparative evolution and dream behavior add convergent support. The weakness is that saying consciousness is modeling can sound like a label until the subjective feel is explained. Jones can still ask why modeling is accompanied by first-person experience rather than only information processing. The score is high because Carrier supplies multiple lines of evidence and a coherent research program, though the hard problem is not fully dissolved here.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 74,
+        strengths: [
+          "Jones built a cumulative theistic idealist case rather than relying on one isolated argument.",
+          "He pressed Carrier hardest on the instability of the nothing/bubble model and on the hard problem of consciousness.",
+          "His moral argument clearly identified the personal-prescriptive character of duties as a challenge for naturalism."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes treated mathematical, informational, quantum, and mental language as if they all supported the same metaphysical conclusion.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "He framed non-theistic alternatives as ad hoc while exempting God's own unlimited attributes from similar explanatory pressure.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 80,
+        strengths: [
+          "Carrier supplied clear comparison criteria: precedent, simplicity, and expectedness of evidence.",
+          "He repeatedly put omitted naturalistic evidence back into view, especially brain evolution, neural dependence, and moral history.",
+          "His strongest rebuttals distinguished possible natural explanations from the claim that current uncertainty favors theism."
+        ],
+        blunders: [
+          {
+            text:
+              "His no-law bubble shifted between nothing and a thing with properties, making the simplicity advantage less clear.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "He sometimes treated physicalist research programs as if they already resolved subjective experience.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
