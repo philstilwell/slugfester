@@ -6228,5 +6228,339 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "williams-goff-oldfield-oconnor-between-god-atheism-2024",
+    number: "18",
+    title:
+      "Rowan Williams, Philip Goff, Elizabeth Oldfield, and Alex O'Connor: Between God and Atheism",
+    label: "Between God and atheism",
+    date: "2026-05-28",
+    duration: "1 hr 24 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=9WnOYHi5k4g",
+    motion:
+      "Do fine-tuning, suffering, religious experience, practice, and purpose make Christianity or a God-ish hypothesis more plausible than atheist skepticism?",
+    summary:
+      "Williams, Goff, and Oldfield defend traditional, revised, and experiential Christianity; O'Connor presses fine-tuning limits, suffering, Gnosticism, and purpose.",
+    sourceNote:
+      "Built from YouTube's auto-generated English captions and YouTube chapter timing. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God wants to love us",
+        context:
+          "Oldfield's phrase captures the constructive side's emphasis on God as relational love, not merely an explanatory hypothesis."
+      },
+      con: {
+        text: "we also come to expect it",
+        context:
+          "O'Connor uses suffering and natural selection to argue that naturalism predicts features traditional Christianity struggles to absorb."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian and God-ish",
+        speaker: "Rowan Williams, Philip Goff, and Elizabeth Oldfield",
+        color: "teal"
+      },
+      con: {
+        name: "Atheist and skeptical",
+        speaker: "Alex O'Connor, with Jack Symes moderating",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 80,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Purpose and first principles",
+        timebox: "02:38-18:04",
+        score: {
+          pro: 79,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "02:52",
+              role: "Relational origin",
+              words:
+                "Williams says the world exists because God desires another, while Goff proposes a limited God who explains fine-tuning and suffering.",
+              score: 79,
+              critique:
+                "The constructive opening is strong because it refuses a single brittle apologetic. Williams gives a classical Christian frame in which love is more basic than a cosmic object, while Goff immediately admits that traditional omnipotence struggles with suffering and offers a limited-power alternative. That combination makes the side intellectually flexible and emotionally serious. The weakness is that the flexibility also blurs the target: traditional Christianity, heretical Christianity, and generic God-ish explanation are not the same thesis. A listener may wonder which claim must be defended. The score is solidly positive because the opening maps the live options honestly, but it loses force from internal pluralism.",
+              tags: []
+            },
+            con: {
+              time: "09:09",
+              role: "Prediction test",
+              words:
+                "O'Connor says he would like to believe, but suffering and natural selection are better expected on naturalism.",
+              score: 84,
+              critique:
+                "O'Connor's first move is effective because it sets a clear comparative test: ask what each worldview would lead us to expect, then compare that with the world we find. He grants that fine-tuning is difficult and avoids treating atheism as complete explanation. His strongest point is that natural selection, predation, and animal pain are not awkward surprises on naturalism in the way they are for benevolent omnipotence. The weakness is his future-looking hunch that fine-tuning may be solved while suffering will not; that is suggestive, not evidence. Still, the argument earns a high score because it frames the debate around predictive fit rather than mere incredulity.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The hunch that future physics may solve fine-tuning partly leans on an explanation not yet supplied."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Fine tuning and limits",
+        timebox: "18:13-26:40",
+        score: {
+          pro: 82,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "20:03",
+              role: "Goldilocks evidence",
+              words:
+                "Goff uses dark energy and Bayesian evidence to argue that life-permitting physics points toward purposive direction.",
+              score: 82,
+              critique:
+                "Goff's fine-tuning case is one of the panel's clearest arguments. He gives a concrete dark-energy example, explains why small changes would prevent structure, and connects the point to ordinary Bayesian reasoning rather than vague wonder. He also handles the problem of evil by revising divine power instead of pretending suffering is minor. The main weakness is that limited divine power is doing enormous work: the constraints are said to be simple, but their source and modal status remain underdeveloped. The score is high because Goff makes fine-tuning evidentially serious, but not higher because the limited-designer hypothesis inherits questions about why those limits obtain at all.",
+              tags: []
+            },
+            con: {
+              time: "23:14",
+              role: "Constraint challenge",
+              words:
+                "O'Connor asks where God's limiting meta-variables come from before there are forces, constants, or a created universe.",
+              score: 83,
+              critique:
+                "O'Connor's constraint challenge is sharp because it does not simply shrug at fine-tuning. He asks what it means for God to be confined by a structure of possible constants before the relevant physical universe exists. That pressure exposes a hidden metaphysical bill in Goff's proposal: if God's powers are limited, the limits need some intelligible status. O'Connor also concedes that fine-tuning counts for something, which makes the objection more credible. The weakness is that he leans on intuitive strangeness without proving that pre-physical modal constraints are incoherent. The score is high because the question directly targets the new hypothesis's load-bearing premise rather than its rhetoric.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Suffering and divine love",
+        timebox: "26:40-40:39",
+        score: {
+          pro: 76,
+          con: 89
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "27:18",
+              role: "Witness response",
+              words:
+                "Williams and Oldfield resist neat theodicy, treating suffering as unfinished business answered by witness, solidarity, and the cross.",
+              score: 76,
+              critique:
+                "The theistic response to suffering is morally careful. Williams refuses an explanation that would make anyone relax about pain, and Oldfield rejects glib soul-making or free-will theodicies when they become morally poisonous. Their appeal to Christ on the cross gives Christianity a distinctive answer: God does not explain suffering from a distance but stands with the suffering. The weakness is that solidarity is not explanation. It may make faith existentially possible, but it does not show why a loving creator permits animal agony, disease, or apparently wasted pain. The score is positive for honesty and pastoral depth, but limited because the evidential challenge remains largely intact.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Divine love is partly insulated from ordinary moral evaluation by shifting from explanation to solidarity."
+                }
+              ]
+            },
+            con: {
+              time: "34:10",
+              role: "Animal agony",
+              words:
+                "O'Connor says a world filled with animal suffering does not look authored by love, even if mystery remains.",
+              score: 89,
+              critique:
+                "O'Connor's suffering argument is the strongest skeptical moment. He uses the author-and-book analogy to make the moral inference vivid: if the story is saturated with animal terror, starvation, disease, and human cruelty, love is not the obvious authorial signature. The appeal to a lone injured deer is not cheap rhetoric; it isolates suffering that free will and human soul-making do not easily explain. The weakness is that the inference still depends on what we would expect perfect love to create, and theists can challenge that expectation. Even so, the score is very high because the argument is concrete, relevant, and difficult to absorb into traditional omnipotence.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Reason and experience",
+        timebox: "40:39-51:18",
+        score: {
+          pro: 84,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "40:39",
+              role: "Embodied knowing",
+              words:
+                "Oldfield says philosophy and science may draw, while Jesus, testimony, practice, poetry, and experience tip the existential balance.",
+              score: 84,
+              critique:
+                "Oldfield's epistemic expansion is persuasive because it names a real limitation in purely abstract religious argument. People do not actually reason from nowhere; testimony, practice, community, imagination, and moral formation shape what they can see. Her case also avoids anti-intellectualism by calling honest questions holy and treating philosophical barriers as worth engaging. The weakness is that lived fruit and existential livability can slide from reasons to believe into reasons to want belief to be true. Her own conversion experience carries weight for her, but not automatically for outsiders. The score is high because she broadens the evidential frame intelligently while leaving public warrant underdetermined here.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "Personal encounter and livability are treated as important warrants because they feel spiritually decisive from inside."
+                }
+              ]
+            },
+            con: {
+              time: "43:52",
+              role: "Rational filter",
+              words:
+                "The skeptical challenge asks how experience avoids licensing any belief system unless it remains tied to argument.",
+              score: 78,
+              critique:
+                "The rational-filter challenge is important because it protects the debate from becoming a testimony contest. If religious experience, community, and practice are admitted as serious forms of knowing, then some standard must distinguish Christianity from every other transformative tradition or ideology. That is a fair burden, and it keeps public debate accountable. The weakness is that the challenge can overcorrect by making analytic argument the gatekeeper for every other mode of knowing, which is exactly the reduction Oldfield is contesting. The score is strong because the question is necessary, but not higher because it risks treating existential and relational evidence as second-class before assessing it.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Gnostic alternatives",
+        timebox: "51:18-60:16",
+        score: {
+          pro: 77,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "56:46",
+              role: "Doctrinal evolution",
+              words:
+                "Goff argues Christianity can reinterpret itself through modern science and morality while retaining a real incarnation claim.",
+              score: 77,
+              critique:
+                "Goff's doctrinal-evolution argument is constructive and unusually frank. He does not merely borrow Christian aesthetics; he says the incarnation matters and that Jesus uniquely joins God and the universe. He also makes a reasonable historical point that traditions have reinterpreted themselves in light of new intellectual conditions. The weakness is boundary discipline. If Nicene Christianity is revised whenever omnipotence, suffering, or modern values press too hard, the proposal needs a clearer rule for legitimate development rather than selective adjustment. The score is positive because Goff avoids shallow cultural Christianity, but capped because the argument risks making doctrine fit the desired metaphysical middle ground too neatly.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Doctrine is selectively loosened where traditional claims conflict with preferred scientific or moral constraints."
+                }
+              ]
+            },
+            con: {
+              time: "51:18",
+              role: "Gnostic comparison",
+              words:
+                "O'Connor says Gnostic Christianity may fit fine-tuning and suffering better than traditional loving omnipotence.",
+              score: 80,
+              critique:
+                "O'Connor's Gnostic comparison is useful because it tests whether Christian premises really favor orthodox conclusions. If fine-tuning suggests purpose but suffering suggests hostile or incompetent authorship, then a divided or demiurgic account may seem to explain the mixed data better than classical theism. That is a clever internal pressure point, especially in a panel already exploring nonstandard God concepts. The weakness is that O'Connor mostly uses Gnosticism diagnostically, not as a defended worldview. Williams is right that pushing evil into a deputy raises further questions about the source of malice or incompetence. The score is strong because the comparison exposes explanatory strain, but it remains exploratory.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Practice and purpose",
+        timebox: "60:16-1:24:37",
+        score: {
+          pro: 82,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:02:48",
+              role: "Practice reform",
+              words:
+                "Williams and Oldfield argue Christianity needs contemplative practice, relational attention, and present communion more than mere cultural adjustment.",
+              score: 82,
+              critique:
+                "The practice-and-purpose answer is one of the constructive side's best closing moves. Williams argues that reform should not mean cultural market-chasing, but renewed practice: silence, attention, worship, and learning how to be before God. Oldfield then clarifies that Christian purpose is not mainly an afterlife gamble but present relationship: being loved and loving in return. This directly answers the charge that religion functions only as deferred reward. The weakness is that the answer is most compelling to those who already find Christian practice spiritually live. It does less to establish truth for outsiders. The score is high because it gives a coherent account of religious life, not just belief.",
+              tags: []
+            },
+            con: {
+              time: "1:20:43",
+              role: "Purpose analysis",
+              words:
+                "O'Connor says purpose means a task to fulfill, and religion supplies that structure whether or not it is true.",
+              score: 78,
+              critique:
+                "O'Connor's purpose analysis is thoughtful because it avoids the easy claim that atheists cannot have meaning. By using Pascal's gambler, he identifies purpose with striving toward an uncertain task, which explains why religion can be psychologically powerful without being true. He also presses whether a relationship that simply ends at death leaves nihilism untouched. The weakness is that Oldfield fairly calls the model too transactional: many believers experience God as present communion, not merely a wager for future payoff. O'Connor's account describes one function of religion well, but not all religious purpose. The score is strong because the analysis is clear, yet incomplete for believers.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 80,
+        strengths: [
+          "The constructive side handled suffering with unusual moral seriousness instead of offering glib theodicy.",
+          "Goff made fine-tuning and limited divine power into a clear, testable alternative to both atheism and classical theism.",
+          "Williams and Oldfield gave a rich account of practice, attention, love, and relationship as part of religious knowing."
+        ],
+        blunders: [
+          {
+            text:
+              "The side often moved from explanatory pressure into mystery, witness, or practice before fully answering the evidential problem of suffering.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "Oldfield's experiential case sometimes treated felt livability and personal encounter as stronger public evidence than the exchange could justify.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "O'Connor framed the debate around comparative prediction, asking what each worldview should lead us to expect.",
+          "His animal-suffering argument exposed the central weakness in traditional omnipotent benevolence.",
+          "The skeptical side pressed for a rational filter on experience without dismissing religious practice as stupid or insincere."
+        ],
+        blunders: [
+          {
+            text:
+              "The fine-tuning reply partly leaned on possible future explanation or multiverse resources without developing a positive account.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "The Gnostic comparison sometimes shifted attention to a provocative alternative without showing that alternative is independently coherent.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
