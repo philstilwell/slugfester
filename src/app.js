@@ -34,8 +34,20 @@ function renderShell(content) {
         <span class="external-sites" aria-label="External Sites">
           <span class="external-sites-label">External Sites</span>
           <span class="external-sites-links">
-            <a href="https://logfall.com/" target="_blank" rel="noreferrer">LogFall</a>
-            <a href="https://cogbias.site/" target="_blank" rel="noreferrer">CogBias</a>
+            <span class="external-site-item">
+              <a href="https://logfall.com/" target="_blank" rel="noreferrer" aria-describedby="logfall-menu-popover">LogFall</a>
+              <span class="external-site-popover" id="logfall-menu-popover" role="tooltip">
+                <strong>LogFall</strong>
+                Logical fallacy reference used for Slugfester's fallacy labels and source links.
+              </span>
+            </span>
+            <span class="external-site-item">
+              <a href="https://cogbias.site/" target="_blank" rel="noreferrer" aria-describedby="cogbias-menu-popover">CogBias</a>
+              <span class="external-site-popover" id="cogbias-menu-popover" role="tooltip">
+                <strong>CogBias</strong>
+                Cognitive bias reference used for Slugfester's bias labels and source links.
+              </span>
+            </span>
           </span>
         </span>
       </nav>
