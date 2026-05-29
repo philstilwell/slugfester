@@ -3820,5 +3820,402 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "dsouza-ehrman-god-suffering-evil-2025",
+    title: "Dinesh D'Souza vs Bart Ehrman: God, Suffering, and Evil",
+    label: "Problem of evil",
+    date: "2025-12-19",
+    duration: "1 hr 35 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=XtWjEjdYvLA",
+    motion:
+      "Can belief in a loving, powerful God survive the scale of suffering and evil in the world?",
+    summary:
+      "Ehrman argues suffering undermines biblical theism; D'Souza argues God may have morally sufficient reasons for permitting it.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the Socrates in the City upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text:
+          "Does God have any good reason for allowing the evil and suffering?",
+        context:
+          "D'Souza frames the whole theodicy around whether the skeptic can rule out a morally sufficient divine reason."
+      },
+      con: {
+        text: "If God intervenes why doesn't he intervene?",
+        context:
+          "Ehrman keeps returning to the biblical claim that God acts in history and the observable absence of comparable rescue."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theistic answer",
+        speaker: "Dinesh D'Souza",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical challenge",
+        speaker: "Bart Ehrman",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 71,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Problem framed",
+        timebox: "06:55-30:00",
+        score: {
+          pro: 78,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "25:55",
+              role: "Hidden premise",
+              words:
+                "D'Souza says the contradiction appears only if God lacks any moral justification for permitting suffering.",
+              score: 78,
+              critique:
+                "D'Souza's hidden-premise move is the cleanest philosophical defense in his opening. He rightly notes that 'God is loving,' 'God is powerful,' and 'suffering exists' are not formally inconsistent unless one adds that God has no morally sufficient reason to permit suffering. That blocks an easy logical problem of evil and shifts the burden toward probability and evidence. The weakness is that the move is modest: it shows possible compatibility, not plausibility. Once the debate concerns starvation, genocide, and unanswered prayer, the theist must say more than 'a reason could exist.' The score is strong because the distinction matters, but it cannot carry the experiential and evidential problem alone.",
+              tags: []
+            },
+            con: {
+              time: "08:45",
+              role: "Core contradiction",
+              words:
+                "Ehrman asks how God can be all loving, all powerful, and yet allow pervasive suffering.",
+              score: 84,
+              critique:
+                "Ehrman's framing is effective because it states the problem in a form ordinary believers recognize. He does not start with technical metaphysics; he begins with the tension among divine love, divine power, and visible misery. His best move is to connect the abstract triad to the Bible's own portrait of an intervening God. The weakness is that the opening formulation can sound like a deductive contradiction when the stronger case is evidential: the scale and distribution of suffering make theism less credible. D'Souza can answer the deductive version with possible reasons. Still, the score is high because Ehrman makes the central pressure clear and emotionally disciplined.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Biblical answers and Job",
+        timebox: "12:00-34:00",
+        score: {
+          pro: 72,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "30:30",
+              role: "Job perspective",
+              words:
+                "D'Souza says Job gives readers a double perspective and warns against judging from local human knowledge.",
+              score: 72,
+              critique:
+                "D'Souza's Job reading has a real strength: it distinguishes Job's limited vantage from the reader's wider knowledge, then uses that gap to caution against overconfident judgments about divine design. That is a fair way to extract epistemic humility from the story. The weakness is that Job's narrative reason, a test involving Satan and God, is morally disturbing rather than comforting. It may explain why Job suffers within the story, but it does not make the suffering look loving. The move also risks turning ignorance into insulation for any outcome. The score is solid because humility is relevant, but limited because the specific biblical example does not solve the moral pressure.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Job's narrative status is used to authorize humility without resolving whether the reason is morally acceptable."
+                }
+              ]
+            },
+            con: {
+              time: "12:20",
+              role: "Biblical diagnosis",
+              words:
+                "Ehrman surveys punishment, demonic evil, Job, and Ecclesiastes, then says the biblical answers fail.",
+              score: 83,
+              critique:
+                "Ehrman's biblical survey is strong because he speaks from the tradition rather than from outside caricature. The prophets, apocalyptic writers, Job, and Ecclesiastes do not give one neat answer; they offer punishment, cosmic conflict, unexplained testing, divine silence, and practical endurance. That directly challenges any claim that the Bible has a simple theodicy. The weakness is that a plurality of biblical responses does not prove all of them false, and D'Souza can argue that scripture is not a philosophy manual. Still, Ehrman scores highly because he shows that the problem is internal to biblical faith and not just a modern secular complaint. That makes the objection harder to dismiss.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral evil and intervention",
+        timebox: "29:20-47:00",
+        score: {
+          pro: 76,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "32:55",
+              role: "Free-will defense",
+              words:
+                "D'Souza says Hitler and the Nazis caused the Holocaust through free will, not God.",
+              score: 76,
+              critique:
+                "D'Souza's free-will defense answers one part of the problem well. Moral evil is not like an earthquake; it involves agents who choose, plan, and carry out harms. Preserving meaningful agency gives God a plausible reason not to prevent every wicked act by constant override. The weakness is that the Holocaust example itself exposes the scale problem. A loving omnipotent God need not abolish all freedom to frustrate one plot, limit one weapon, or save some victims. The argument also leaves natural suffering untouched. The score is solid because free will is relevant to moral evil, but not higher because nonintervention during extreme evil remains underexplained.",
+              tags: []
+            },
+            con: {
+              time: "44:20",
+              role: "Biblical intervention",
+              words:
+                "Ehrman replies that the Christian God intervenes in the Bible, so present nonintervention needs explanation.",
+              score: 85,
+              critique:
+                "Ehrman's intervention challenge is one of the debate's strongest objections. He grants that God did not personally perform the Holocaust, then asks why the biblical God who heals, rescues, and suspends nature does not act comparably now. That avoids a crude blame claim and targets a specific Christian premise: God is not merely creator, but compassionate actor. The weakness is that D'Souza can distinguish sign-miracles from general suffering relief, and some theists deny that biblical miracle stories set normal expectations. Even so, the score is high because Ehrman pressures the exact version of theism being defended rather than an abstract deism. The reply lands because it uses shared premises.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Natural suffering",
+        timebox: "34:00-50:00",
+        score: {
+          pro: 73,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "34:45",
+              role: "Plate tectonics",
+              words:
+                "D'Souza argues earthquakes arise from plate tectonics, which are essential for land, biodiversity, and life.",
+              score: 73,
+              critique:
+                "D'Souza's tectonics argument is more substantive than a generic appeal to mystery. He tries to connect a source of suffering to life-supporting planetary structure, so earthquakes are not arbitrary divine cruelty but a cost of a habitable world. That is a serious evidential move. The weakness is that the inference outruns the science. Showing that plate tectonics support life does not show that every lethal earthquake, every building collapse, or every distribution of victims is necessary. It also assumes God must use this particular law-governed route to create humans. The score is solid because the argument adds content, but capped because necessity is overstated. The victims' locations still need explanation.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "A general life-supporting role is treated as covering the full scale and distribution of earthquake suffering."
+                }
+              ]
+            },
+            con: {
+              time: "45:25",
+              role: "Too-small-God reply",
+              words:
+                "Ehrman says D'Souza's God seems unable to create life without tectonic plates and disasters.",
+              score: 82,
+              critique:
+                "Ehrman's response directly exposes the theological cost of the tectonics defense. If God is creator of the natural order, then saying life requires tectonic plates may describe our world, but it does not explain why omnipotence could not create another life-friendly order. His phrase that D'Souza's God is too small captures the point without much ornament. The weakness is that he sometimes slides from 'God could do otherwise' to assuming an alternative is coherent without specifying constraints. D'Souza can ask for the details of that alternative. The score is high because Ehrman identifies the central modal gap: actual-world science is not yet theodicy. The challenge remains well aimed.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Laws and miracles",
+        timebox: "50:00-1:04:00",
+        score: {
+          pro: 74,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "51:25",
+              role: "Miracles and laws",
+              words:
+                "D'Souza says biblical miracles have spiritual reasons and lawlike regularity lets free creatures act and learn.",
+              score: 74,
+              critique:
+                "D'Souza's lawlike-regularity argument is one of his better practical defenses. Free creatures need predictable consequences; if bullets, weather, and bodies behaved randomly, agency and learning would collapse. He also narrows biblical miracles by saying they usually serve spiritual revelation rather than routine medical relief. The weakness is that this explanation can become ad hoc. The Bible still depicts compassionate healings, and selective intervention does not obviously destroy regularity. Occasional prevention of extreme suffering would not make the world unintelligible. The score is solid because the value of stable laws is real, but limited because the answer does not explain why divine help is so rare and uneven.",
+              tags: []
+            },
+            con: {
+              time: "56:25",
+              role: "Omnipotence pressure",
+              words:
+                "Ehrman presses whether God created the regularities, is limited by them, or could have chosen others.",
+              score: 80,
+              critique:
+                "Ehrman's cross-examination is effective because it forces D'Souza to specify God's relation to natural law. If laws are divine choices rather than independent constraints, then appealing to those laws cannot by itself excuse the suffering they generate. If God is self-limited, the moral question becomes why this self-limitation is worth the cost. The weakness is that Ehrman does not fully distinguish logical impossibility, identity conditions, and merely imaginable alternatives, which lets D'Souza use the Coca-Cola and cathedral analogies. Still, the questioning is strong because it keeps the theodicy from hiding inside scientific description. The score is high for targeted pressure and burden control. That keeps the modal issue visible.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Compassion and culture",
+        timebox: "1:05:00-1:16:40",
+        score: {
+          pro: 62,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:13:35",
+              role: "Cultural inheritance",
+              words:
+                "D'Souza argues universal revulsion against suffering in the West is historically rooted in Christianity.",
+              score: 62,
+              critique:
+                "D'Souza's cultural argument has a defensible core: Christianity has powerfully shaped Western institutions of charity, relief, and universal moral language. He is right that traditions can expand the circle of concern beyond kin and tribe. The weakness is the breadth of the comparative claim. Saying China, India, and other cultures would treat foreign famine as if it did not occur is sweeping and under-evidenced. It also risks confusing historical influence with present justification: non-Christians can inherit, revise, or independently defend compassion. The score is mixed because the historical point is worth discussing, but the argument overgeneralizes cultures and leans too hard on Christian ownership of moral concern.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "Large civilizations are generalized from a broad claim about who responds to distant suffering."
+                }
+              ]
+            },
+            con: {
+              time: "1:10:10",
+              role: "Humanist compassion",
+              words:
+                "Ehrman says suffering matters because humans relate to humans, and non-Christians also fight suffering.",
+              score: 84,
+              critique:
+                "Ehrman's answer is strong because it rejects a false ownership claim without denying Christian compassion. He says suffering bothers him because humanity includes sympathy, and he points to non-Christian and secular efforts such as Doctors Without Borders. That directly answers the suggestion that caring about suffering requires a Christian presupposition. The weakness is that he could say more about the genealogy of moral concern and why some cultures extend compassion more institutionally than others. D'Souza's historical question is not entirely empty. Still, the score is high because Ehrman separates moral motivation from theological belief and refuses the premise that atheism cannot care. That distinction is central here.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Fall and close",
+        timebox: "1:16:40-1:35:25",
+        score: {
+          pro: 68,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:20:35",
+              role: "Fall explanation",
+              words:
+                "D'Souza says the Fall means humans chose a lawful world where freedom has real consequences.",
+              score: 68,
+              critique:
+                "D'Souza's appeal to the Fall gives his theology a narrative structure: humans reject God's way, enter a world of freedom and consequences, and must freely return. That connects suffering, freedom, and redemption more coherently than the tectonics argument alone. The weakness is that he sidesteps the historicity of the Fall while still using it to explain actual suffering. If Eden is symbolic, it is unclear how a symbolic choice grounds earthquakes, disease, and inherited conditions. If historical, it raises major scientific and moral problems. The score is mixed because the story has internal Christian resonance, but it does too much explanatory work without enough clarification.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The Fall is treated as explanatory while its historicity is bracketed when pressure rises."
+                }
+              ]
+            },
+            con: {
+              time: "1:18:05",
+              role: "Hermeneutic challenge",
+              words:
+                "Ehrman asks why Pharaoh's hardening is metaphorical while virgin birth and resurrection remain literal.",
+              score: 82,
+              critique:
+                "Ehrman's hermeneutic challenge is precise and damaging. Once D'Souza reads Pharaoh's hardened heart nonliterally to preserve free will, Ehrman asks where the rule stops. Why treat that historical narrative flexibly but insist on literal resurrection or virgin birth? This is relevant because theodicy often depends on selective readings of scripture. The weakness is that Christian interpretation can include genre, canonical context, and theological criteria; not every nonliteral reading is arbitrary. But D'Souza gives only a brief Christological answer, which does not fully solve the consistency problem. The score is high because Ehrman exposes a real pressure point in biblical argumentation. The inconsistency matters for this debate.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "1:31:55",
+              role: "Christian practice",
+              words:
+                "D'Souza closes that believers imitate Christ in suffering and extend compassion beyond natural human limits.",
+              score: 74,
+              critique:
+                "D'Souza's closing is strongest when it shifts from explaining suffering to responding to it. Mother Teresa, imitation of Christ, and costly compassion show that Christian belief can motivate real care for sufferers. That matters because the debate is not only theoretical. The weakness is that therapeutic or motivational value does not establish truth. A belief can console, mobilize, and dignify without explaining why God permits horrendous suffering. The Nietzschean warning about Christian residue also remains suggestive rather than demonstrated. The score is solid because D'Souza ends with the best lived case for faith, but it does not answer Ehrman's central evidential challenge. That leaves the truth question open.",
+              tags: []
+            },
+            con: {
+              time: "1:27:10",
+              role: "Reasonable faith",
+              words:
+                "Ehrman closes that people should look clearly at suffering and not accept simple inherited answers.",
+              score: 82,
+              critique:
+                "Ehrman's closing is measured and persuasive. He does not try to convert everyone to agnosticism; he asks believers to look clearly at starvation, war, oppression, disasters, and unanswered prayer before accepting simple answers. That modesty helps his credibility. His central point remains consistent: the Bible depicts a God who intervenes compassionately, but the world does not show that pattern at scale. The weakness is that the closing offers response more than metaphysical explanation, and D'Souza can say agnosticism also leaves sufferers without ultimate meaning. Still, the score is high because Ehrman preserves moral urgency while maintaining the evidential force of the problem. That is the debate's core burden.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 71,
+        strengths: [
+          "D'Souza offered a clear possible-reasons defense and separated moral evil from natural suffering before giving specific theistic explanations.",
+          "His strongest material connected stable natural law, free agency, and Christian practices of compassion into a coherent worldview.",
+          "He used scientific language about plate tectonics and fine-tuning to make natural suffering less arbitrary than a pure mystery defense."
+        ],
+        blunders: [
+          {
+            text:
+              "He treated actual features of this world as if they established that God needed those features to create humans.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His sweeping claims about China, India, and distant suffering generalized far beyond the evidence presented.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "He used the Fall as explanatory theology while bracketing its historical and scientific commitments.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Ehrman kept the debate anchored in the biblical claim that God intervenes and the empirical reality that suffering often goes unanswered.",
+          "He combined personal intellectual history, biblical scholarship, and concrete global suffering without reducing the issue to anger at God.",
+          "His cross-examination repeatedly forced D'Souza to clarify whether natural laws constrain God, express God's choice, or merely describe this world."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes treated imaginable alternative worlds as available without specifying how their constraints would preserve the same goods.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His rejection of fine-tuning sometimes blurred scientific disagreement about purpose with disagreement about life-permitting conditions.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
