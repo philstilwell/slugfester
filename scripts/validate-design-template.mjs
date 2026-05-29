@@ -29,6 +29,8 @@ requireIncludes("app sticky header", app, 'aria-describedby="logfall-menu-popove
 requireIncludes("app sticky header", app, 'aria-describedby="cogbias-menu-popover"');
 requireIncludes("app landing hero", app, 'class="logo-showcase"');
 requireIncludes("app landing hero", app, 'src="./assets/slugfester-logo.jpg"');
+requireIncludes("app landing topics", app, 'class="topic-divider"');
+requireIncludes("app landing topics", app, 'class="topic-list"');
 requireIncludes("app scorecard", app, "Open YouTube source");
 requireIncludes("app guide", app, "◉ Deeper critiques");
 requireIncludes("app reference route", app, "referenceRoutePattern");
@@ -52,6 +54,8 @@ requireIncludes("external links", styles, ".external-sites-label");
 requireIncludes("external links", styles, ".external-sites-links");
 requireIncludes("external links", styles, ".external-site-popover");
 requireIncludes("external links", styles, ".external-site-item:focus-within .external-site-popover");
+requireIncludes("landing topics", styles, ".topic-divider");
+requireIncludes("landing topics", styles, ".topic-list");
 requireIncludes("landing debate grid", styles, "grid-template-columns: repeat(3, minmax(0, 1fr));");
 requireIncludes("landing image", styles, "width: min(100%, 420px);");
 requireIncludes("debate title", styles, "font-size: clamp(1.5rem, 3.9vw, 3.35rem);");

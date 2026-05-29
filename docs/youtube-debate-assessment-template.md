@@ -24,6 +24,7 @@ Landing-page design:
 - The small image in the top bar is the boxing-gloves image at `assets/debate-gloves.png`.
 - The LogFall and CogBias header links are grouped under the visible `External Sites` label.
 - The LogFall and CogBias header links show short explanatory popovers on hover and keyboard focus.
+- The landing intro includes a divider line followed by a ` | `-delineated list of unique current debate topics.
 - The debate list is capped at three columns on wide screens, then steps down responsively.
 
 Design constraints:
@@ -173,6 +174,7 @@ Use this shape when adding an object to `src/data/debates.js`.
 - The sticky header uses the small boxing-gloves image.
 - The top reference links are grouped as an `External Sites` cluster.
 - The top reference links explain LogFall and CogBias with hover/focus popovers.
+- The landing intro shows the current debate topics below a divider line.
 - The landing hero uses the illustrated two-men debate crest.
 - On debate pages, the larger glove image appears in the debate hero middle column.
 - The representative quote cards are near the top.

@@ -239,6 +239,27 @@ a {
   font-size: clamp(1.05rem, 2vw, 1.42rem);
 }
 
+.topic-divider {
+  width: min(100%, 580px);
+  height: 1px;
+  margin: 24px 0 12px;
+  background: linear-gradient(90deg, rgba(47, 143, 133, 0.42), rgba(47, 143, 133, 0));
+}
+
+.topic-list {
+  max-width: 620px;
+  margin: 0;
+  color: #4b5d59;
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.7;
+}
+
+.topic-list span {
+  color: rgba(47, 143, 133, 0.85);
+  padding: 0 6px;
+}
+
 .eyebrow {
   margin: 0 0 10px;
   color: var(--blue);

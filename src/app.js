@@ -58,6 +58,9 @@ function renderShell(content) {
 
 function renderLanding() {
   const debateCards = debates.map(renderDebateCard).join("");
+  const topicList = [...new Set(debates.map((debate) => debate.label))]
+    .map(escapeHtml)
+    .join('<span aria-hidden="true"> | </span>');
 
   app.innerHTML = renderShell(`
     <main class="landing">
@@ -66,6 +69,8 @@ function renderLanding() {
           <p class="eyebrow">Video debate transcript scorecards</p>
           <h1>Slugfester</h1>
           <p class="lede">Debate transcripts turned into side-by-side argument maps for ease of reader assessment.  Each claim and rebuttal receives AI scores, and every ◉ opens a deeper critique of the reasoning.</p>
+          <div class="topic-divider" aria-hidden="true"></div>
+          <p class="topic-list" aria-label="Topics mentioned in currently listed debates">${topicList}</p>
         </div>
         <figure class="logo-showcase">
           <img
