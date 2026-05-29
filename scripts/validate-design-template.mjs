@@ -20,15 +20,15 @@ function requireExcludes(label, source, forbidden) {
 }
 
 requireIncludes("app debate hero", app, 'class="debate-gloves-panel"');
-requireIncludes("app debate hero", app, 'src="./assets/debate-gloves.png"');
-requireIncludes("app sticky header", app, 'class="brand-logo" src="./assets/debate-gloves.png"');
+requireIncludes("app debate hero", app, 'src="/assets/debate-gloves.png"');
+requireIncludes("app sticky header", app, 'class="brand-logo" src="/assets/debate-gloves.png"');
 requireIncludes("app sticky header", app, 'class="external-sites"');
 requireIncludes("app sticky header", app, "External Sites");
 requireIncludes("app sticky header", app, 'class="external-site-popover"');
 requireIncludes("app sticky header", app, 'aria-describedby="logfall-menu-popover"');
 requireIncludes("app sticky header", app, 'aria-describedby="cogbias-menu-popover"');
 requireIncludes("app landing hero", app, 'class="logo-showcase"');
-requireIncludes("app landing hero", app, 'src="./assets/slugfester-logo.jpg"');
+requireIncludes("app landing hero", app, 'src="/assets/slugfester-logo.jpg"');
 requireIncludes("app landing topics", app, 'class="topic-divider"');
 requireIncludes("app landing topics", app, 'class="topic-list"');
 requireIncludes("app debate numbering", app, "debate.number");
@@ -36,7 +36,7 @@ requireIncludes("app debate numbering", app, "debateNumberLabel");
 requireIncludes("app debate numbering", app, 'class="debate-number"');
 requireIncludes("app scorecard", app, "Open YouTube source");
 requireIncludes("app guide", app, "◉ Deeper critiques");
-requireIncludes("app reference route", app, "referenceRoutePattern");
+requireIncludes("app reference route", app, "referencePathRoutePattern");
 requireIncludes("app reference route", app, "Why this label appears here");
 requireIncludes("app reference route", app, "Back to this debate");
 requireIncludes("app reference route", app, "reference-debate-link");

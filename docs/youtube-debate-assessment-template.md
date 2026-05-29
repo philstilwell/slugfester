@@ -29,6 +29,7 @@ Landing-page design:
 - Debate `label` values must be unique so landing cards, topic lists, and reference occurrence cards are unambiguous.
 - Debate `number` values must be unique, sequential in debate-list order, and two-digit zero-padded, starting with `01`.
 - Debate numbers should appear anywhere the site identifies a debate for tracking: landing cards, debate hero metadata, topic lists, and reference occurrence cards.
+- Internal debate and reference links use clean path URLs, while old hash routes remain as backwards-compatible fallbacks.
 
 Design constraints:
 
@@ -51,7 +52,8 @@ Design constraints:
 9. Write each critique at 105-130 words.
 10. Add fallacy or bias tags only when they explain a real weakness, and include a context note for each tag.
 11. Write the overall strengths and logical blunders.
-12. Run `npm run check`.
+12. Run `npm run seo`.
+13. Run `npm run check`.
 
 ## Debate Data Skeleton
 
@@ -195,4 +197,5 @@ Use this shape when adding an object to `src/data/debates.js`.
 - Fallacy and bias pills also open local reference pages with basic definitions, contextual explanation, and external in-depth links.
 - Reference pages include `Back to debates | Back to this debate` navigation when opened from a debate page.
 - Reference occurrence cards link back to the debate scorecard where the fallacy or bias appeared.
+- Static SEO pages, `sitemap.xml`, `robots.txt`, and `404.html` are regenerated with `npm run seo`.
 - `npm run check` passes before commit.

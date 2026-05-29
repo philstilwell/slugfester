@@ -1,9 +1,21 @@
 import { debates } from "./data/debates.js";
 import { getReferenceDefinition, referenceFromUrl } from "./data/references.js";
+import {
+  absoluteUrl,
+  debateNumberLabel,
+  debatePath,
+  debateSeo,
+  landingSeo,
+  notFoundSeo,
+  referencePath,
+  referenceSeo
+} from "./seo.js";
 
 const app = document.querySelector("#app");
-const debateRoutePattern = /^#\/debate\/([a-z0-9-]+)$/;
-const referenceRoutePattern = /^#\/reference\/(fallacy|bias)\/([a-z0-9-]+)(?:\?debate=([a-z0-9-]+))?$/;
+const debateHashRoutePattern = /^#\/debate\/([a-z0-9-]+)$/;
+const referenceHashRoutePattern = /^#\/reference\/(fallacy|bias)\/([a-z0-9-]+)(?:\?debate=([a-z0-9-]+))?$/;
+const debatePathRoutePattern = /^\/debate\/([a-z0-9-]+)\/?$/;
+const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?$/;
 
 const escapeHtml = (value = "") =>
   String(value)
@@ -22,7 +34,69 @@ const scoreTone = (score) => {
 const average = (values) =>
   Math.round(values.reduce((total, value) => total + value, 0) / values.length);
 
-const debateNumberLabel = (debate) => `Debate ${debate.number}`;
+function setMeta(selector, attributes) {
+  let element = document.head.querySelector(selector);
+  if (!element) {
+    element = document.createElement("meta");
+    document.head.append(element);
+  }
+
+  Object.entries(attributes).forEach(([key, value]) => {
+    element.setAttribute(key, value);
+  });
+}
+
+function setCanonical(href) {
+  let element = document.head.querySelector('link[rel="canonical"]');
+  if (!element) {
+    element = document.createElement("link");
+    element.setAttribute("rel", "canonical");
+    document.head.append(element);
+  }
+
+  element.setAttribute("href", href);
+}
+
+function setStructuredData(jsonLd) {
+  const id = "seo-structured-data";
+  let element = document.getElementById(id);
+
+  if (!jsonLd) {
+    element?.remove();
+    return;
+  }
+
+  if (!element) {
+    element = document.createElement("script");
+    element.id = id;
+    element.type = "application/ld+json";
+    document.head.append(element);
+  }
+
+  element.textContent = JSON.stringify(jsonLd);
+}
+
+function setSeo(seo) {
+  const canonicalUrl = absoluteUrl(seo.canonicalPath || "/");
+  const imageUrl = absoluteUrl(seo.imagePath || "/assets/slugfester-logo.jpg");
+  const robots = seo.robots || "index,follow,max-image-preview:large";
+
+  document.title = seo.title;
+  setCanonical(canonicalUrl);
+  setMeta('meta[name="description"]', { name: "description", content: seo.description });
+  setMeta('meta[name="robots"]', { name: "robots", content: robots });
+  setMeta('meta[property="og:site_name"]', { property: "og:site_name", content: "Slugfester" });
+  setMeta('meta[property="og:title"]', { property: "og:title", content: seo.title });
+  setMeta('meta[property="og:description"]', { property: "og:description", content: seo.description });
+  setMeta('meta[property="og:type"]', { property: "og:type", content: seo.type || "website" });
+  setMeta('meta[property="og:url"]', { property: "og:url", content: canonicalUrl });
+  setMeta('meta[property="og:image"]', { property: "og:image", content: imageUrl });
+  setMeta('meta[name="twitter:card"]', { name: "twitter:card", content: "summary_large_image" });
+  setMeta('meta[name="twitter:title"]', { name: "twitter:title", content: seo.title });
+  setMeta('meta[name="twitter:description"]', { name: "twitter:description", content: seo.description });
+  setMeta('meta[name="twitter:image"]', { name: "twitter:image", content: imageUrl });
+  setStructuredData(seo.jsonLd);
+}
 
 function renderDebateNumber(debate) {
   return `
@@ -35,12 +109,12 @@ function renderDebateNumber(debate) {
 function renderShell(content) {
   return `
     <header class="site-header">
-      <a class="brand" href="#" aria-label="Slugfester home">
-        <img class="brand-logo" src="./assets/debate-gloves.png" alt="" width="444" height="444">
+      <a class="brand" href="/" aria-label="Slugfester home">
+        <img class="brand-logo" src="/assets/debate-gloves.png" alt="" width="444" height="444">
         <span class="brand-name">Slugfester</span>
       </a>
       <nav aria-label="Primary">
-        <a href="#">Debates</a>
+        <a href="/">Debates</a>
         <span class="external-sites" aria-label="External Sites">
           <span class="external-sites-label">External Sites</span>
           <span class="external-sites-links">
@@ -67,6 +141,8 @@ function renderShell(content) {
 }
 
 function renderLanding() {
+  setSeo(landingSeo(debates));
+
   const debateCards = debates.map(renderDebateCard).join("");
   const topicList = debates
     .map((debate) => `${escapeHtml(debate.number)} ${escapeHtml(debate.label)}`)
@@ -84,7 +160,7 @@ function renderLanding() {
         </div>
         <figure class="logo-showcase">
           <img
-            src="./assets/slugfester-logo.jpg"
+            src="/assets/slugfester-logo.jpg"
             alt="Slugfester illustrated debate crest"
             width="603"
             height="900"
@@ -118,7 +194,7 @@ function renderDebateCard(debate) {
         ${renderMiniScore(debate.sides.con.name, debate.score.con, "coral")}
       </div>
       <div class="card-actions">
-        <a class="button primary" href="#/debate/${encodeURIComponent(debate.id)}">Open Debate Assessment</a>
+        <a class="button primary" href="${escapeHtml(debatePath(debate))}">Open Debate Assessment</a>
         <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noreferrer">YouTube Source</a>
       </div>
     </article>
@@ -139,15 +215,18 @@ function renderDebate(id) {
   const debate = debates.find((item) => item.id === id);
 
   if (!debate) {
+    setSeo(notFoundSeo());
     app.innerHTML = renderShell(`
       <main class="not-found">
         <p class="eyebrow">No scorecard</p>
         <h1>Debate not found</h1>
-        <a class="button primary" href="#">Back to debates</a>
+        <a class="button primary" href="/">Back to debates</a>
       </main>
     `);
     return;
   }
+
+  setSeo(debateSeo(debate));
 
   const sectionScores = debate.sections.flatMap((section) => [
     section.score.pro,
@@ -158,14 +237,14 @@ function renderDebate(id) {
     <main class="debate-page">
       <section class="debate-hero">
         <div>
-          <a class="back-link" href="#">Back to debates</a>
+          <a class="back-link" href="/">Back to debates</a>
           <p class="eyebrow">${escapeHtml(debateNumberLabel(debate))} · ${escapeHtml(debate.label)} · Last rendered: ${escapeHtml(debate.date)}</p>
           <h1>${escapeHtml(debate.title)}</h1>
           <p class="motion large">${escapeHtml(debate.motion)}</p>
           ${debate.sourceNote ? `<p class="source-note">${escapeHtml(debate.sourceNote)}</p>` : ""}
         </div>
         <figure class="debate-gloves-panel" aria-hidden="true">
-          <img src="./assets/debate-gloves.png" alt="" width="444" height="444">
+          <img src="/assets/debate-gloves.png" alt="" width="444" height="444">
         </figure>
         <aside class="scoreboard" aria-label="Debate score summary">
           <div>
@@ -355,8 +434,7 @@ function referenceHref(url, debateId = "") {
   const reference = referenceFromUrl(url);
   if (!reference) return url;
 
-  const source = debateId ? `?debate=${encodeURIComponent(debateId)}` : "";
-  return `#/reference/${reference.type}/${reference.slug}${source}`;
+  return referencePath(reference.type, reference.slug, debateId);
 }
 
 function renderOverall(debate) {
@@ -412,15 +490,18 @@ function renderReference(type, slug, sourceDebateId = "") {
   const reference = getReferenceDefinition(type, slug);
 
   if (!reference) {
+    setSeo(notFoundSeo());
     app.innerHTML = renderShell(`
       <main class="not-found">
         <p class="eyebrow">No reference</p>
         <h1>Reference not found</h1>
-        <a class="button primary" href="#">Back to debates</a>
+        <a class="button primary" href="/">Back to debates</a>
       </main>
     `);
     return;
   }
+
+  setSeo(referenceSeo(type, slug, reference));
 
   const category = type === "fallacy" ? "Logical fallacy" : "Cognitive bias";
   const source = type === "fallacy" ? "LogFall" : "CogBias";
@@ -430,8 +511,8 @@ function renderReference(type, slug, sourceDebateId = "") {
   app.innerHTML = renderShell(`
     <main class="reference-page">
       <nav class="reference-nav" aria-label="Reference navigation">
-        <a class="back-link" href="#">Back to debates</a>
-        ${sourceDebate ? `<span aria-hidden="true">|</span><a class="back-link" href="#/debate/${escapeHtml(sourceDebate.id)}">Back to this debate</a>` : ""}
+        <a class="back-link" href="/">Back to debates</a>
+        ${sourceDebate ? `<span aria-hidden="true">|</span><a class="back-link" href="${escapeHtml(debatePath(sourceDebate))}">Back to this debate</a>` : ""}
       </nav>
       <section class="reference-card ${escapeHtml(type)}">
         <p class="eyebrow">${category}</p>
@@ -501,7 +582,7 @@ function collectReferenceAppearances(type, slug) {
 }
 
 function renderReferenceAppearance(appearance) {
-  const debateHref = `#/debate/${encodeURIComponent(appearance.debate.id)}`;
+  const debateHref = debatePath(appearance.debate);
 
   return `
     <article class="reference-context-card">
@@ -521,17 +602,65 @@ function renderReferenceAppearance(appearance) {
 }
 
 function route() {
-  const debateMatch = window.location.hash.match(debateRoutePattern);
-  const referenceMatch = window.location.hash.match(referenceRoutePattern);
+  const hash = window.location.hash;
+  const debateMatch =
+    hash.match(debateHashRoutePattern) || window.location.pathname.match(debatePathRoutePattern);
+  const referenceMatch =
+    hash.match(referenceHashRoutePattern) ||
+    window.location.pathname.match(referencePathRoutePattern);
 
   if (debateMatch) {
     renderDebate(decodeURIComponent(debateMatch[1]));
   } else if (referenceMatch) {
-    renderReference(referenceMatch[1], referenceMatch[2], referenceMatch[3] || "");
+    const sourceDebateId =
+      referenceMatch[3] || new URLSearchParams(window.location.search).get("debate") || "";
+    renderReference(referenceMatch[1], referenceMatch[2], sourceDebateId);
+  } else if (window.location.pathname !== "/") {
+    setSeo(notFoundSeo());
+    app.innerHTML = renderShell(`
+      <main class="not-found">
+        <p class="eyebrow">No page</p>
+        <h1>Page not found</h1>
+        <a class="button primary" href="/">Back to debates</a>
+      </main>
+    `);
   } else {
     renderLanding();
   }
 }
 
+function shouldHandleInternally(link) {
+  if (link.target || link.hasAttribute("download")) return false;
+
+  const url = new URL(link.href, window.location.href);
+  if (url.origin !== window.location.origin) return false;
+  if (url.hash && !url.pathname.match(debatePathRoutePattern) && !url.pathname.match(referencePathRoutePattern)) {
+    return false;
+  }
+
+  return (
+    url.pathname === "/" ||
+    debatePathRoutePattern.test(url.pathname) ||
+    referencePathRoutePattern.test(url.pathname)
+  );
+}
+
+document.addEventListener("click", (event) => {
+  const link = event.target.closest("a");
+  if (!link || !shouldHandleInternally(link)) return;
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+  event.preventDefault();
+
+  const url = new URL(link.href, window.location.href);
+  const next = `${url.pathname}${url.search}${url.hash}`;
+  if (next !== `${window.location.pathname}${window.location.search}${window.location.hash}`) {
+    window.history.pushState({}, "", next);
+  }
+  route();
+  window.scrollTo(0, 0);
+});
+
 window.addEventListener("hashchange", route);
+window.addEventListener("popstate", route);
 route();

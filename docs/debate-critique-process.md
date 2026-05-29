@@ -124,4 +124,5 @@ Before committing a new debate:
 - The page follows the locked design in `youtube-debate-assessment-template.md`.
 - The debate number is two-digit, zero-padded, unique, and sequential in debate-list order.
 - The debate label is distinct from every other listed debate.
+- `npm run seo` has regenerated clean URL pages, sitemap, robots, and fallback HTML.
 - `npm run check` passes.

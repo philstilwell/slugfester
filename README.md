@@ -16,6 +16,14 @@ Then open `http://localhost:4174`.
 npm run check
 ```
 
+## Regenerate SEO pages
+
+```bash
+npm run seo
+```
+
+This writes the static `index.html` files for clean debate and reference URLs, plus `sitemap.xml`, `robots.txt`, and `404.html`. Run it after adding, removing, renumbering, or renaming debates.
+
 ## Add debates
 
 Debate pages are driven by `src/data/debates.js`. Follow the full critique standard in [`docs/debate-critique-process.md`](docs/debate-critique-process.md) and the locked YouTube assessment template in [`docs/youtube-debate-assessment-template.md`](docs/youtube-debate-assessment-template.md), then add a new object to the `debates` array with:
@@ -24,4 +32,4 @@ Debate pages are driven by `src/data/debates.js`. Follow the full critique stand
 - `sections`, each with aligned transcript excerpts for both sides
 - `overall`, with closing scores, strengths, and logical blunders
 
-Run `npm run check` before committing. It checks JavaScript syntax, validates the measurable debate-assessment rules, and verifies the locked debate-page design, including critique length, score ranges, required quote fields, local reference definitions, LogFall/CogBias link domains, title sizing, glove placement, and argument-card spacing.
+Run `npm run seo` and then `npm run check` before committing. The checks cover JavaScript syntax, generated SEO page freshness, measurable debate-assessment rules, and the locked debate-page design, including critique length, score ranges, required quote fields, local reference definitions, LogFall/CogBias link domains, title sizing, glove placement, and argument-card spacing.
