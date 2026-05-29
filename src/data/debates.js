@@ -5555,5 +5555,337 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "hirsi-ali-dawkins-god-debate-2024",
+    title: "Ayaan Hirsi Ali vs Richard Dawkins: The God Debate",
+    label: "Faith and civilization",
+    date: "2024-06-03",
+    duration: "1 hr 07 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=DBsHdHMvucs",
+    motion:
+      "Can Hirsi Ali's Christian turn be justified by personal experience, truth, and civilizational need, or should Dawkins's atheist truth test reject it?",
+    summary:
+      "Hirsi Ali defends Christianity as personally transformative and civilizationally necessary; Dawkins grants cultural value but insists Christianity's truth claims remain false.",
+    sourceNote:
+      "Built from YouTube's manual English subtitle track for the UnHerd upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "I choose to believe in God",
+        context:
+          "Hirsi Ali repeatedly frames Christian belief as a chosen response to crisis, meaning, moral inheritance, and civilizational defense."
+      },
+      con: {
+        text: "it doesn't make it true",
+        context:
+          "Dawkins's central response is that comfort, usefulness, and cultural preference do not establish Christianity's supernatural claims."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian renewal",
+        speaker: "Ayaan Hirsi Ali",
+        color: "teal"
+      },
+      con: {
+        name: "Atheist truth test",
+        speaker: "Richard Dawkins",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 75,
+      con: 83
+    },
+    sections: [
+      {
+        title: "Conversion and doctrine",
+        timebox: "03:20-12:55",
+        score: {
+          pro: 73,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "03:40",
+              role: "Conversion account",
+              words:
+                "Hirsi Ali says spiritual bankruptcy, desperate prayer, and connection to something higher turned her life around.",
+              score: 73,
+              critique:
+                "Hirsi Ali's conversion account is moving and relevant because it explains why the question is not abstract for her. She gives concrete circumstances: depression, failed treatments, a therapist's diagnosis of spiritual bankruptcy, prayer, and renewed zest for life. That makes the personal claim intelligible rather than performative. The weakness is that therapeutic transformation does not itself establish Christian metaphysics. A powerful experience can justify taking faith seriously, but it does not distinguish Christianity from other practices that also relieve despair. The score is solid because the testimony is sincere, specific, and important to her case, but capped because subjective force is doing more evidential work than public argument.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "Personal healing is treated as meaningful evidence, though its force depends heavily on private experience."
+                }
+              ]
+            },
+            con: {
+              time: "06:55",
+              role: "Doctrine test",
+              words:
+                "Dawkins says calling oneself Christian requires taking seriously Jesus as God's son, virgin birth, and resurrection.",
+              score: 80,
+              critique:
+                "Dawkins's doctrine test is strong because it prevents Christianity from being reduced to mood, therapy, or civilizational branding. He asks whether Hirsi Ali believes claims that ordinary Christianity has historically treated as central: Jesus as Son of God, the resurrection, and the virgin birth. That is a fair burden, especially after a public conversion. The weakness is that he frames church teaching as obvious nonsense before fully exploring how she understands belief, symbol, choice, and trust. Still, the score is high because he correctly insists that a religion is not only a cultural posture. If Christianity makes truth claims, those claims deserve direct evaluation in public.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Sin and redemption",
+        timebox: "12:55-18:30",
+        score: {
+          pro: 76,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "13:45",
+              role: "Love framework",
+              words:
+                "Hirsi Ali says Christianity is obsessed with love, redemption, renewal, and rebirth rather than naked fear.",
+              score: 76,
+              critique:
+                "Hirsi Ali's love framework is persuasive as a lived contrast with the Islam she describes leaving. She does not defend every doctrine technically; she says the Christian story of death, resurrection, redemption, and rebirth maps onto human suffering and moral repair. That gives the faith existential depth and explains why she now hears Christian language differently. The weakness is that it answers Dawkins's moral objection by shifting to symbolic and pastoral value. The crucifixion may function as a redemptive story for believers while still raising questions about inherited guilt and vicarious punishment. The score is strong because she identifies Christianity's humane appeal, but not decisive because doctrine remains underexamined.",
+              tags: []
+            },
+            con: {
+              time: "13:00",
+              role: "Redemption objection",
+              words:
+                "Dawkins says original sin, inherited guilt, virgin birth logic, and crucifixion for sin are theological nonsense.",
+              score: 82,
+              critique:
+                "Dawkins's redemption objection is forceful because it targets the moral architecture of Christianity, not only its miracles. He argues that inherited sin, purity through nonsexual conception, and punishment of Jesus for human guilt are not merely unbelievable but morally unattractive. That directly tests Hirsi Ali's claim that Christianity is a superior moral resource. The weakness is that his compressed presentation gives little room to more sophisticated atonement theories or non-Augustinian accounts of sin. He attacks a vivid version, but not every version. Even so, the score is high because the objection is central, concrete, and hard to answer with appeals to comfort or civilization alone.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Truth and utility",
+        timebox: "21:50-34:40",
+        score: {
+          pro: 70,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "26:05",
+              role: "Meaning defense",
+              words:
+                "Hirsi Ali says faith supplies meaning, purpose, consciousness, and human connection where atheism offers no prescription.",
+              score: 70,
+              critique:
+                "Hirsi Ali's meaning defense identifies a genuine limitation of atheism as a social posture. Atheism by itself only denies a claim; it does not automatically provide rituals, community, consolation, or a complete way of life. She is right that many human needs are not answered by a bare statement about evidence. The weakness is that she repeatedly moves from usefulness to credibility, and sometimes from mystery to permission for belief. Saying consciousness is unresolved or that faith helps suffering does not make resurrection, providence, or a personal God likely. The score is moderate because she diagnoses a real practical gap, but the epistemic bridge remains fragile.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Unresolved questions about consciousness and origins are used to keep Christian belief epistemically open."
+                }
+              ]
+            },
+            con: {
+              time: "31:20",
+              role: "Truth distinction",
+              words:
+                "Dawkins says comfort, meaning, and political usefulness do not make Christianity's claims about the universe true.",
+              score: 88,
+              critique:
+                "Dawkins's truth distinction is the debate's cleanest argumentative move. He grants that faith may console, motivate, organize, or inspire, but insists that those benefits do not establish the existence claims Christianity makes about God, miracles, souls, and the universe. That separation is logically disciplined and directly responsive to Hirsi Ali's utility case. The weakness is that he underplays the social question she keeps raising: if true beliefs fail to sustain institutions, what replaces the lost framework? But that is a practical gap, not a rebuttal to his epistemic point. The score is very high because he keeps truth, comfort, and cultural usefulness from being blurred.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Cultural inheritance",
+        timebox: "35:00-45:20",
+        score: {
+          pro: 78,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "39:45",
+              role: "Vacuum warning",
+              words:
+                "Hirsi Ali says Christian civilization left a moral vacuum now filled by wokeism, Islamism, and anti-Western politics.",
+              score: 78,
+              critique:
+                "Hirsi Ali's vacuum warning is one of her strongest public arguments. She connects declining Christian confidence with young people searching for moral frameworks and being attracted by movements she sees as anti-Western, Islamist, or nihilistic. The strength is institutional realism: secular reason does not automatically build communities, rituals, moral formation, or courage. The weakness is breadth. Campus protest, Islamism, wokeism, and civilizational amnesia are large phenomena with multiple causes; Christianity's decline cannot simply explain all of them. The score is strong because the argument asks a serious replacement question, but not higher because the diagnosis sometimes outruns the evidence supplied in the exchange itself here.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "Large cultural changes are compressed into one moral-vacuum explanation without proportional causal sorting."
+                }
+              ]
+            },
+            con: {
+              time: "35:25",
+              role: "Cultural concession",
+              words:
+                "Dawkins says he is culturally Christian and would choose Team Christianity over Islam if religion is unavoidable.",
+              score: 77,
+              critique:
+                "Dawkins's cultural concession is candid and clarifying. He acknowledges that he prefers Christian cultural inheritance to Islam in many political contexts, and that he has long been culturally Christian. That prevents his atheism from sounding blind to historical or aesthetic goods. The weakness is that the concession creates tension with his earlier demolition strategy: if Christian forms matter socially, then dismantling belief without replacement may have costs. Dawkins answers that he was never trying to build a new church, only to defend truth, which is coherent but incomplete. The score is solid because he distinguishes preference from belief, but weaker on institutional consequences and strategy.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Christianity and Islam",
+        timebox: "45:20-54:50",
+        score: {
+          pro: 79,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "48:45",
+              role: "Religion distinction",
+              words:
+                "Hirsi Ali says Christianity and Islam are not the same, especially in scripture, Jesus, Muhammad, and moral fruits.",
+              score: 79,
+              critique:
+                "Hirsi Ali's religion distinction is important because it corrects an overbroad new-atheist habit she now regrets. She argues that Christianity and Islam differ in texts, founders, moral development, and present social effects, so treating all faiths as equally dangerous is false. Her biographical experience gives this claim practical weight. The weakness is that difference does not by itself prove Christian truth or harmlessness. Christianity's own scriptural and institutional history still needs evaluation, and Dawkins can point to doctrines she has not answered. The score is strong because the correction is relevant and evidence-sensitive, but not higher because the argument supports comparative judgment more than supernatural belief.",
+              tags: []
+            },
+            con: {
+              time: "47:00",
+              role: "Secular filter",
+              words:
+                "Dawkins says Christianity and Islam share authoritarian elements, and secular moral philosophy selects the good parts.",
+              score: 84,
+              critique:
+                "Dawkins's secular-filter argument is strong because it explains how modern people actually handle scripture. He says we keep the humane parts of Christianity, reject the immoral parts, and use secular moral philosophy to decide which is which. That neatly challenges the idea that Christianity itself supplies the moral standard. He also notes that Christianity became tolerable partly because many Christians stopped taking harsher doctrines literally. The weakness is that he initially overstates similarity among Abrahamic religions, which Hirsi Ali rightly contests by pointing to different founders and texts. Still, the score is high because his core point about moral selection is philosophically sharp and relevant.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Christianity shifts between scriptures, institutions, modern believers, and cultural inheritance in the comparison."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Islamism and response",
+        timebox: "55:00-1:07:19",
+        score: {
+          pro: 74,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "59:40",
+              role: "Countermessage plea",
+              words:
+                "Hirsi Ali says radical Islamism exploits Western freedoms and needs a confident Christian countermessage.",
+              score: 74,
+              critique:
+                "Hirsi Ali's countermessage plea is urgent and morally serious. She distinguishes ordinary Muslims from Islamists, condemns apostasy threats and totalitarian Sharia politics, and asks why Western institutions seem unable to defend their own freedoms. That is a concrete challenge to complacent secularism. The weakness is that the answer is asserted more than demonstrated: a Christian revival might resist Islamism, but it might also polarize politics or alienate non-Christian allies. Her clash language risks turning a reform and security problem into a civilization-wide binary. The score is solid because she identifies real dangers, but limited because the proposed remedy needs more institutional detail and evidence overall.",
+              tags: []
+            },
+            con: {
+              time: "1:06:45",
+              role: "Vaccine analogy",
+              words:
+                "Dawkins asks whether to fight a vicious mind virus with mild religious vaccination or with enlightened rationality.",
+              score: 80,
+              critique:
+                "Dawkins's vaccine analogy is a crisp closing summary. He agrees that radical Islam is dangerous, but frames Christianity as a milder version of the same virus rather than the cure. That lets him preserve both points: Islamism is worse, and supernatural religion remains false. The strength is conceptual clarity. The weakness is that the analogy may flatten important differences between religions, institutions, and degrees of literalism. It also leaves Hirsi Ali's practical question underanswered: who organizes moral formation if rational humanism remains mostly individual and intellectual? The score is high because the closing line captures his position neatly, but not higher because it is more diagnostic than constructive.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 75,
+        strengths: [
+          "Hirsi Ali gave a concrete account of why faith became existentially live rather than merely politically convenient.",
+          "She pressed Dawkins on the institutional and generational vacuum left when Christianity is mocked but not replaced.",
+          "Her distinction between Christianity and Islam corrected the debate's broadest anti-religion generalizations."
+        ],
+        blunders: [
+          {
+            text:
+              "She sometimes treated personal healing and civilizational usefulness as if they strongly supported Christian truth claims.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          },
+          {
+            text:
+              "Her account of campus radicalism compressed many causes into a single Christian moral-vacuum diagnosis.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 83,
+        strengths: [
+          "Dawkins kept truth claims, psychological comfort, and political usefulness analytically separate throughout the exchange.",
+          "He conceded Christianity's cultural advantages over Islam without letting preference become belief.",
+          "His secular-filter argument exposed how modern moral judgment often selects from religious traditions rather than simply receiving them."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes answered institutional-vacuum worries by restating truth criteria rather than addressing social replacement.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His Abrahamic comparison blurred differences among scriptures, founders, institutions, and modern belief practices.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
