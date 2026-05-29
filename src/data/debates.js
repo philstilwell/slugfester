@@ -5887,5 +5887,329 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "collins-oconnor-god-existence-2024",
+    title: "Francis Collins vs Alex O'Connor: Does God Exist?",
+    label: "Science and faith",
+    date: "2024-12-12",
+    duration: "1 hr 47 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=fXBGvNc2mvU",
+    motion:
+      "Do fine-tuning, morality, resurrection, revelation, and beauty make Christian theism more plausible than O'Connor's skeptical agnosticism?",
+    summary:
+      "Collins presents a cumulative Christian case from science, morality, Jesus, and experience; O'Connor accepts mystery but challenges the evidential and moral bridge to Christianity.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the Mighty Pursuit upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "I trust you God",
+        context:
+          "Collins frames belief as a rationally supported leap from science, moral law, beauty, and Jesus into Christian trust."
+      },
+      con: {
+        text: "I have no idea",
+        context:
+          "O'Connor's posture is not simple dismissal; he treats God as possible but Christianity as insufficiently evidenced."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian theism",
+        speaker: "Francis Collins",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical agnosticism",
+        speaker: "Alex O'Connor",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 75,
+      con: 83
+    },
+    sections: [
+      {
+        title: "Evidence and posture",
+        timebox: "04:19-22:15",
+        score: {
+          pro: 77,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "12:45",
+              role: "Cumulative evidence",
+              words:
+                "Collins says proof is unavailable, but origin, fine-tuning, moral law, beauty, and Jesus provide evidence for belief.",
+              score: 77,
+              critique:
+                "Collins's cumulative-evidence opening is measured and useful. He explicitly distinguishes proof from evidence, avoiding the claim that science has delivered mathematical certainty for God. His list of considerations, including cosmic origin, fine-tuning, moral law, beauty, and Jesus, gives theism several routes rather than one brittle inference. The weakness is that the opening functions more as a map than an argument. Each item is contentious, and the transition from deism-style evidence to specifically Christian trust is only sketched. The score is strong because Collins frames faith as rationally assessable, but not higher because the live case depends on later sections carrying a lot of argumentative weight.",
+              tags: []
+            },
+            con: {
+              time: "05:25",
+              role: "Agnostic frame",
+              words:
+                "O'Connor says he cannot deny God, but traditional creator claims and Christianity remain deeply suspicious to him.",
+              score: 81,
+              critique:
+                "O'Connor's agnostic frame is strong because it is careful without being evasive. He distinguishes not knowing whether God exists from judging particular religious traditions, and he admits that mystery remains while still placing his bet against a traditional creator. That gives him burden-of-proof discipline and avoids the overconfident new-atheist posture he criticizes. The weakness is that his standard for what would count as evidence can seem elusive because God is described as hard to define. A defender may ask whether the target is being made too vague to test. Still, the score is high because he separates metaphysical humility from accepting Christianity's historical and moral claims.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Fine tuning",
+        timebox: "22:15-42:23",
+        score: {
+          pro: 80,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "23:20",
+              role: "Constants case",
+              words:
+                "Collins says gravity, nuclear forces, and other constants are precisely set for anything interesting to exist.",
+              score: 80,
+              critique:
+                "Collins's fine-tuning case is one of his best evidential moves. He explains constants in accessible terms, uses gravity as a concrete example, and notes that the issue is not merely Earth-like life but the possibility of complexity and thought at all. He also fairly names the multiverse as the main rival. The weakness is that he sometimes treats the multiverse as requiring equal or greater faith without fully comparing the physical motivations for it. He also relies on the intuitive force of precision before establishing the relevant probability distribution. The score is high because the argument is serious and well communicated, but it remains abductive rather than conclusive.",
+              tags: []
+            },
+            con: {
+              time: "30:05",
+              role: "Meta-constraint test",
+              words:
+                "O'Connor asks why God must use knife-edge constants, and whether those constraints limit divine creativity.",
+              score: 82,
+              critique:
+                "O'Connor's meta-constraint test is sharp because it does not merely reply 'multiverse.' He asks why an omnipotent creator would face such narrow life-permitting ranges at all. If God can create any orderly world, why must complexity depend on the precise constants we observe? That shifts attention from ordinary fine-tuning to the deeper structure that makes tuning necessary. The weakness is that the challenge may overstate what the theist needs: God could choose orderly laws and stable mathematics without being externally constrained. Still, the score is high because the objection tests fine-tuning from inside theism's own claims about divine freedom and creative power itself here too.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Animal suffering",
+        timebox: "42:23-59:29",
+        score: {
+          pro: 68,
+          con: 89
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "47:10",
+              role: "Order defense",
+              words:
+                "Collins says evolution's pain fits a lawful universe where God values order and does not constantly intervene.",
+              score: 68,
+              critique:
+                "Collins's order defense is the most coherent theistic reply available in the exchange. He concedes the problem is hard, resists minimizing all animal experience, and explains evolution as an elegant lawful process rather than a sequence of divine patches. That gives his answer intellectual honesty. The weakness is that order alone does not explain why this much predation, disease, terror, and waste are needed. Saying the plan was baked in from the Big Bang may preserve divine sovereignty, but it also makes the suffering part of the original design. The score is mixed because the defense is plausible within Collins's worldview, but it absorbs less evidential pressure than O'Connor applies.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The divine plan is protected from normal moral evaluation by appealing to lawful order and unknown purposes."
+                }
+              ]
+            },
+            con: {
+              time: "43:10",
+              role: "Animal suffering",
+              words:
+                "O'Connor argues evolution's predation, extinction, and animal pain are expected on atheism but strange on theism.",
+              score: 89,
+              critique:
+                "O'Connor's animal-suffering argument is the debate's strongest skeptical move. He grants fine-tuning some force, then asks what each worldview predicts once the universe exists. On naturalism, predation, extinction, disease, and confused animal agony are expected byproducts of blind selection; on Christian theism, they look morally and teleologically strange. The argument is especially strong because common free-will and soul-making defenses do not map well onto nonhuman suffering. The weakness is that it still leans on intuitions about what a loving creator would not permit, and those intuitions are not proof. Even so, the score is very high because the comparison is focused, cumulative, and difficult to deflect.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection history",
+        timebox: "59:29-1:23:35",
+        score: {
+          pro: 74,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:00:20",
+              role: "Resurrection case",
+              words:
+                "Collins says Jesus's death, empty tomb, witnesses, martyrdom, and N. T. Wright make resurrection most likely.",
+              score: 74,
+              critique:
+                "Collins's resurrection case matters because it tries to move from generic theism to Christianity. He cites Jesus's historical existence, crucifixion, empty tomb, postmortem appearances, witness testimony, and N. T. Wright's detailed work as forming a serious cumulative case. He also ties the cross to God's participation in suffering, which answers the prior section emotionally and theologically. The weakness is that several controversial historical claims are bundled quickly, and martyrdom language can overstate what we know about each disciple's death. The appeal to Wright is relevant but not a substitute for live argument. The score is positive because the case is coherent, but limited by compression and reliance on authority.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "N. T. Wright's scholarship is invoked as a major warrant without unpacking enough of the underlying evidence."
+                }
+              ]
+            },
+            con: {
+              time: "1:05:00",
+              role: "Source criticism",
+              words:
+                "O'Connor says the gospels mix biography, legend, theology, later endings, and uneven source corroboration.",
+              score: 85,
+              critique:
+                "O'Connor's source criticism is strong because it gives listeners a method, not just suspicion. He distinguishes Mark, Matthew, Luke, John, possible Q material, unique traditions, multiple attestation, genre, theology, and later textual issues. That lets him say why crucifixion is well supported while doubting stronger resurrection details. He also treats Paul's experience as important but not equivalent to handling a physically resurrected Jesus. The weakness is that the method can become fragmented: enough uncertainty about pieces may be allowed to overshadow the broader historical puzzle of early Christian belief. Still, the score is high because O'Connor answers Collins with concrete historical criteria rather than reflexive anti-miracle dismissal.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Revelation and experience",
+        timebox: "1:23:35-1:33:22",
+        score: {
+          pro: 78,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:26:05",
+              role: "Private revelation",
+              words:
+                "Collins describes a prayerful warning not to waste time, later intensified by a prostate cancer diagnosis.",
+              score: 78,
+              critique:
+                "Collins's private-revelation account is handled with admirable restraint. He does not present it as public proof, but as an experience that changed his priorities toward relationships, relieving suffering, and reconciliation. The content is morally serious, and its later connection to cancer gives the episode existential force without turning it into a cheap miracle claim. The weakness is epistemic: a personally surprising thought can feel external while still arising from ordinary cognition, anxiety, or subconscious integration. The score is strong because Collins uses the experience appropriately as personal warrant, but not higher because it cannot carry much public evidential weight for someone outside the experience itself.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "A private inward message is treated as spiritually meaningful because it felt personally distinctive and timely."
+                }
+              ]
+            },
+            con: {
+              time: "1:30:00",
+              role: "Private warrant",
+              words:
+                "O'Connor says revelation could rationally convince the recipient, but it cannot function as public debate evidence.",
+              score: 82,
+              critique:
+                "O'Connor's private-warrant reply is unusually charitable and therefore effective. He says personal revelation may be one of the most legitimate routes to belief for the person who receives it, while also explaining why it cannot convince outsiders in a public debate. That distinction honors Collins's experience without surrendering evidential standards. The weakness is that O'Connor leaves open exactly what sort of experience would count as revelation rather than a striking thought, so his threshold remains somewhat undefined. Still, the score is high because he handles testimony with fairness and keeps the epistemic boundary clear: private warrant is not automatically shared warrant in argument here too.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Beauty and stakes",
+        timebox: "1:33:22-1:47:06",
+        score: {
+          pro: 79,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:33:35",
+              role: "Numinous beauty",
+              words:
+                "Collins says music, longing, awe, and beauty feel like experiential candidates for God's outreach.",
+              score: 79,
+              critique:
+                "Collins's beauty argument works best as cumulative experiential evidence rather than a stand-alone proof. Beethoven, longing, awe, and the sense of being addressed by beauty are not trivial data; they explain why belief can feel like response rather than invention. He also avoids claiming neuroscience will find nothing, which keeps the argument from being crudely anti-scientific. The weakness is that the inference from aesthetic depth to God's outreach remains loose. Human brains may generate longing without the object longed for existing, and beauty varies across contexts. The score is strong because the point fits Collins's cumulative case, but it remains suggestive rather than demonstrative overall.",
+              tags: []
+            },
+            con: {
+              time: "1:35:30",
+              role: "Mystery restraint",
+              words:
+                "O'Connor says music and beauty are profound mysteries, but mystery should not become confident proof of God.",
+              score: 83,
+              critique:
+                "O'Connor's mystery restraint is strong because it neither sneers at beauty nor converts it into theology too quickly. He acknowledges the aching, almost negative longing that music and art can create, and he understands why someone might see it as pointing beyond the world. Then he holds the line: mystery is not the same as proof, and confidence on these questions deserves suspicion. The weakness is that he offers only a sketch of possible naturalistic reduction, not a developed explanation of aesthetic experience. Still, the score is high because he models the debate's best skeptical posture: preserve wonder, resist overclaiming, and keep inquiry open together.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 75,
+        strengths: [
+          "Collins presented faith as a cumulative rational trust rather than as anti-scientific certainty.",
+          "His fine-tuning explanation was accessible and serious, with enough detail to make the mystery concrete.",
+          "He treated revelation, beauty, and Jesus as personally compelling while usually admitting they fall short of proof."
+        ],
+        blunders: [
+          {
+            text:
+              "His animal-suffering defense leaned on lawful order while leaving the amount and design-level role of suffering underexplained.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His resurrection case leaned heavily on compressed scholarship and N. T. Wright rather than live historical demonstration.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 83,
+        strengths: [
+          "O'Connor was careful to distinguish agnosticism about God from stronger doubts about Christian truth claims.",
+          "His animal-suffering comparison gave the skeptical side its clearest explanatory advantage.",
+          "His resurrection reply used concrete source-critical criteria rather than merely rejecting miracles on tone."
+        ],
+        blunders: [
+          {
+            text:
+              "His fine-tuning response sometimes relied on future or unknown scientific explanation without giving a positive rival account.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His skepticism about Christian sources occasionally let prior suspicion carry more weight than the full historical puzzle.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
