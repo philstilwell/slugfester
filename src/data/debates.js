@@ -4217,5 +4217,347 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "settecase-jump-evidence-for-god-2025",
+    title: "Joel Settecase vs Tom Jump: Is There Evidence for God?",
+    label: "Presuppositional apologetics",
+    date: "2025-08-06",
+    duration: "1 hr 05 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=XLcRd3RjdjA",
+    motion:
+      "Does evidence for God exist, or are logic, mathematics, and intelligibility better explained without Christian theism?",
+    summary:
+      "Settecase argues intelligibility presupposes Christian theism; Jump argues experience, logic, and mathematics require no God.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for The Think Institute upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Evidence presupposes God",
+        context:
+          "Settecase's central presuppositional claim is that the standards used to evaluate evidence already depend on Christian theism."
+      },
+      con: {
+        text: "I can't believe I exist and be wrong",
+        context:
+          "Jump repeatedly uses the cogito-style starting point to argue that some knowledge does not need theistic presupposition."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian theism",
+        speaker: "Joel Settecase",
+        color: "teal"
+      },
+      con: {
+        name: "Atheist naturalism",
+        speaker: "Tom Jump",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 68,
+      con: 78
+    },
+    sections: [
+      {
+        title: "Opening foundations",
+        timebox: "01:35-06:10",
+        score: {
+          pro: 72,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "02:35",
+              role: "Christian basis",
+              words:
+                "Settecase says Christian theism is true because scripture teaches it and because intelligibility requires it.",
+              score: 72,
+              critique:
+                "Settecase's opening is clear about the kind of case he wants to run. He is not mainly offering a fine-tuning or historical argument; he is arguing that Christian theism supplies the preconditions for logic, morality, meaning, and evidence itself. That gives the debate a defined presuppositional frame. The weakness is that he begins with scripture and personal transformation before showing why those sources should govern a shared evidential exchange. Saying the Bible teaches Christian theism is internally meaningful, but it does not yet answer an atheist asking for evidence. The score is solid because the thesis is coherent and direct, but limited because the initial warrant is mostly asserted.",
+              tags: []
+            },
+            con: {
+              time: "03:35",
+              role: "Naturalist setup",
+              words:
+                "Jump says his worldview starts with experience and that logic and math do not need God to remain true.",
+              score: 76,
+              critique:
+                "Jump gives a concise naturalist starting point. He says he begins with experience, not a theological premise, and argues that identity, arithmetic, and formal languages would still work whether or not God exists. This directly targets the presuppositional claim rather than ignoring it. The weakness is that he moves quickly from 'I experience' to broader claims about logic and math without first explaining the bridge in detail. That gives Settecase room to ask how subjective starting points become universal norms. The score is strong because Jump identifies the key dispute early, but not higher because the foundational explanation still needs development. The opening is promising, not complete.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Mathematics as language",
+        timebox: "04:10-12:40",
+        score: {
+          pro: 61,
+          con: 75
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "05:25",
+              role: "Inventor challenge",
+              words:
+                "Settecase asks who invented math and when, pressing Jump's claim that mathematics is a human language.",
+              score: 61,
+              critique:
+                "Settecase's questions expose a possible ambiguity in Jump's claim that math is invented. If mathematical notation is human-made but mathematical relations are discovered, then calling math a language can obscure the distinction. That is a useful pressure point. The weakness is that asking for the first inventor or exact date of invention does not substantially challenge the language claim. We can know humans developed cars, paintings, or grammar without naming the first maker. The exchange also bogs down before the stronger metaphysical issue is reached. The score is mixed because the ambiguity matters, but the chosen challenge is too procedural and easy to sidestep. It costs momentum early.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The inventor-date question distracts from whether mathematical language accurately describes necessary relations."
+                }
+              ]
+            },
+            con: {
+              time: "07:55",
+              role: "Language defense",
+              words:
+                "Jump says math is a formal language humans made to describe reality, whether external or imagined.",
+              score: 75,
+              critique:
+                "Jump's distinction between a descriptive language and the reality described is helpful. He can say mathematical symbols and conventions are human artifacts while the relations they describe hold independently of particular minds. That gives him a plausible answer to the claim that math requires a divine mind. The weakness is his repeated appeal to what every philosopher or mathematician supposedly says. Even if experts generally distinguish notation from reality, the debate requires the argument, not just social proof. He also sometimes compresses notation, propositions, and relations into the word 'math.' The score is strong because the core distinction works, but marked down for overconfident authority talk.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Jump invokes expert consensus instead of fully arguing the invented-language claim in the moment."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Cogito and scope",
+        timebox: "12:40-30:30",
+        score: {
+          pro: 73,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "14:20",
+              role: "Scope challenge",
+              words:
+                "Settecase asks what lets Jump move from his own self-certainty to all reality and possible worlds.",
+              score: 73,
+              critique:
+                "Settecase's strongest early pressure is the scope question. Jump's certainty that he exists while thinking is hard to deny, but Settecase asks how that first-person certainty authorizes claims about all reality, future time, and possible worlds. That is a legitimate epistemic challenge, especially once Jump says logic and mathematics necessarily obtain everywhere. The weakness is that Settecase sometimes describes Jump as moving only from private mental contents, while Jump's point is a modal one about contradiction. That risks missing the best version of the reply. The score is solid because the scope objection is central, but limited by partial misframing. The question deserved a cleaner formulation.",
+              tags: []
+            },
+            con: {
+              time: "15:20",
+              role: "Cogito proof",
+              words:
+                "Jump says he cannot think he exists and be wrong, then builds logic from that certainty.",
+              score: 78,
+              critique:
+                "Jump's cogito-style move is the most stable part of his case. If he is thinking, then he exists at least as a thinker; that does not appear to require scripture, God, or any external-world assumption. This gives him a real counterexample to the claim that all knowledge begins with Christian presupposition. The weakness is his claim that logic, math, and future necessity are straightforwardly built from that starting point. The cogito secures self-existence more cleanly than it secures a full account of modality or normativity. The score is strong because it punctures overbroad presuppositionalism, but not decisive because the expansion remains underargued. More bridge premises are needed.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Presuppositions disputed",
+        timebox: "30:30-39:20",
+        score: {
+          pro: 70,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "32:00",
+              role: "Hidden commitments",
+              words:
+                "Settecase says Jump presupposes stable language, identity, correspondence between minds, and real reality.",
+              score: 70,
+              critique:
+                "Settecase rightly notices that conversation relies on stable meanings, shared rational norms, and some correspondence between speakers. Those background commitments are real, and they are fair targets in a debate about intelligibility. The weakness is that he treats any dependence as a presupposition in the strong apologetic sense. Jump can grant practical assumptions for communication while denying that they ground his whole epistemology. Settecase also needs to show that Christian theism uniquely accounts for these commitments, not merely that the commitments are present. The score is solid because the diagnostic point is useful, but it does not by itself establish the Christian conclusion. The uniqueness claim remains thin.",
+              tags: []
+            },
+            con: {
+              time: "34:00",
+              role: "Definition reply",
+              words:
+                "Jump says presuppositions are starting assumptions, while logic and language are derived from experience.",
+              score: 77,
+              critique:
+                "Jump's reply is clarifying. He distinguishes temporary conversational assumptions, such as speaking English, from the foundations of his knowledge. He also points out that if a truth is necessary, it is odd to call belief in it an arbitrary presupposition. That helps him resist Settecase's attempt to label almost every rational move as smuggled theism. The weakness is that calling logic 'derived from experience' still needs an account of why experience yields necessary rather than merely habitual truths. Settecase's pressure therefore remains partly alive. The score is strong because Jump improves the terminology and blocks a common presuppositional overreach. It is a useful overall corrective.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Necessary truths and God",
+        timebox: "39:20-54:40",
+        score: {
+          pro: 64,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "39:30",
+              role: "No-God denial",
+              words:
+                "Settecase says there is no possible world without God because logic and math reveal God's mind.",
+              score: 64,
+              critique:
+                "Settecase's move is bold and recognizably Van Tilian: if logic and mathematics are necessary, immaterial, universal, and knowable, then they fit a necessarily real divine mind. This gives his worldview a direct account of why necessary truths are personal and intelligible. The weakness is that he largely defines no-God worlds out of possibility rather than demonstrating the contradiction. Saying 'look closer, God is there' does not persuade someone who sees necessary relations as impersonal or descriptive. The move also risks equating necessary propositions with a mind too quickly. The score is mixed because the worldview is internally coherent, but dialectically question-begging. It convinces insiders more than opponents.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "No-God possible worlds are rejected by building God's necessary presence into the premise."
+                }
+              ]
+            },
+            con: {
+              time: "42:30",
+              role: "Tree analogy",
+              words:
+                "Jump compares logic and math to words like tree: descriptions can apply where the language is absent.",
+              score: 82,
+              critique:
+                "Jump's tree analogy is the best reply of the debate. We can use English to describe a tree on another planet without thinking English exists on that planet. Likewise, he argues, logic and math are descriptive languages in our minds that track relations; the relations do not require the language itself to exist in every possible world. This targets Settecase's inference from necessary truth to divine mind. The weakness is that necessary logical relations are unlike contingent trees, and Jump sometimes blurs language, proposition, and fact. Even so, the analogy gives a concrete alternative account. The score is high because it directly answers the transcendental claim.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Materialism and evidence",
+        timebox: "54:40-1:02:05",
+        score: {
+          pro: 69,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "57:10",
+              role: "Materialist burden",
+              words:
+                "Settecase asks what matter is and says evidence is meaningful only if intelligibility is already grounded.",
+              score: 69,
+              critique:
+                "Settecase's late materialism challenge is relevant. If Jump says everything is matter and energy but cannot define them beyond epistemic interaction, Settecase can ask whether that ontology really grounds necessary propositions, rational norms, and evidence. The strongest point is that a worldview must account for the tools it uses, not merely use them. The weakness is that Settecase turns quickly to 'evidence presupposes God,' which reasserts the conclusion rather than demonstrating it. He also does not explain why Christian theism avoids parallel grounding questions about God's nature. The score is mixed-solid because the burden is fair, but the answer remains mostly declarative. The closing claim needs argument.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Grounding demands are pressed against matter while God's own grounding role is exempted."
+                }
+              ]
+            },
+            con: {
+              time: "56:05",
+              role: "Simplicity reply",
+              words:
+                "Jump says whatever lets God be self-grounding can apply directly to reality, making God unnecessary.",
+              score: 76,
+              critique:
+                "Jump's parsimony reply is a solid closing counter. If Settecase says God does not need a further ground, Jump asks why the same stopping point cannot be placed at reality, matter, or necessary relations themselves. That challenges the explanatory advantage of adding a divine mind. The weakness is that Jump's own materialism is thinly specified; saying matter is 'stuff' leaves Settecase room to press whether impersonal stuff can ground normativity or necessity. Still, the rebuttal is relevant because it attacks the extra step from intelligibility to Christianity. The score is strong because it identifies the regress symmetry, but not higher because the positive ontology remains sparse.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 68,
+        strengths: [
+          "Settecase kept the debate focused on the transcendental question: what must be true for logic, math, language, and evidence to work.",
+          "He repeatedly pressed Jump on the move from first-person certainty to universal, necessary, and future-tense claims.",
+          "His strongest moments exposed ambiguities between mathematical notation, propositions, relations, and the reality those terms describe."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes rejected no-God possible worlds by assuming God's necessary presence rather than independently showing contradiction.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His inventor-date challenge to mathematics diverted attention from the stronger language-versus-relation issue.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "He demanded grounding for material reality while treating God's grounding role as self-exempting.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 78,
+        strengths: [
+          "Jump gave a clear counterexample to sweeping presuppositional claims by grounding self-existence in immediate thought.",
+          "His language-description distinction for math and logic directly answered the inference from necessary truths to a divine mind.",
+          "He repeatedly separated practical conversational assumptions from foundational epistemic presuppositions."
+        ],
+        blunders: [
+          {
+            text:
+              "He leaned too often on claims about what all philosophers or mathematicians supposedly accept.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          },
+          {
+            text:
+              "He treated the cogito as if it straightforwardly supplied logic, mathematics, and modal necessity without enough bridge work.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
