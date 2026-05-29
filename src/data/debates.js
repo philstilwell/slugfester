@@ -2753,5 +2753,353 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "wood-shermer-god-exist-2022",
+    title: "David Wood vs Michael Shermer: Does God Exist?",
+    label: "Science and theism",
+    date: "2026-05-28",
+    duration: "2 hr 17 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=xKd2Ht5Bs-k",
+    motion:
+      "Does science, morality, evil, and explanatory method support theism more strongly than skeptical naturalism?",
+    summary:
+      "Wood argues science and morality depend on theism; Shermer argues burden, evil, and natural explanation undercut God belief.",
+    sourceNote:
+      "Built from the YouTube English original auto-caption track downloaded with the yt-dlp Python module. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "on to God",
+        context:
+          "Wood frames the scientific revolution as flowing from Christian assumptions about intelligibility, human rational capacity, and the goodness of knowledge."
+      },
+      con: {
+        text: "the burden of proof is on David",
+        context:
+          "Shermer treats God as the claim needing evidence, and skepticism as withholding belief rather than proving a rival deity-free theory."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theist",
+        speaker: "David Wood",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptic",
+        speaker: "Michael Shermer",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 65,
+      con: 75
+    },
+    sections: [
+      {
+        title: "Science's theistic roots",
+        timebox: "00:00-24:30",
+        score: {
+          pro: 66,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "02:00",
+              role: "Scientific hypothesis",
+              words:
+                "Wood says science depends on intelligibility, human capability, and desirability, all historically grounded in Christian theism.",
+              score: 66,
+              critique:
+                "Wood's opening is ambitious and memorable. He rightly identifies that science assumes an intelligible world, reliable investigators, and the value of inquiry, and he offers a historically concrete reason early modern Christians expected those things. The quotations from Copernicus, Kepler, Boyle, Newton, and others make the case vivid. The weakness is inferential. Showing that Christian beliefs motivated many early scientists does not show that science's success confirms theism as a hypothesis, much less that every scientific test disconfirms atheism. The argument slides from historical origin to epistemic dependence. The score is mixed-positive because the historical observation is real, but the conclusion is much stronger than the warrant.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Scientific hypothesis shifts from science's working assumptions to the truth of Christian theism."
+                }
+              ]
+            },
+            con: {
+              time: "23:40",
+              role: "Irrelevance reply",
+              words:
+                "Shermer says the founders' Christianity is historically interesting but irrelevant to whether scientific claims are true.",
+              score: 78,
+              critique:
+                "Shermer's response is strong because it separates motivation from validation. A scientist's religion may explain why he investigated nature, but the resulting physics, astronomy, or biology stands by public evidence that can be tested by Christians, atheists, Buddhists, or anyone else. His comparison to art, music, dog ownership, and political identity is rhetorically loose, but the underlying point is sound: origin stories do not settle truth conditions. The weakness is that he underplays Wood's subtler claim that some worldview assumptions may help make science culturally durable. Even so, Shermer successfully blocks the leap from Christian motivation to scientific confirmation of Christianity, so the score is solidly strong.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Atheism and burden",
+        timebox: "20:00-45:00",
+        score: {
+          pro: 60,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "41:35",
+              role: "Positive-atheism charge",
+              words:
+                "Wood argues atheism is not mere lack; it commits the skeptic to explaining reality from somewhere other than God.",
+              score: 60,
+              critique:
+                "Wood's burden reply has a fair concern underneath it. If a skeptic offers a complete naturalistic picture, then that picture also needs explanatory resources, and it is legitimate to ask where reason, morality, order, and existence fit. The problem is that he moves too quickly from lack of belief to a full rival worldview. Shermer explicitly distinguishes weak atheism, strong atheism, agnosticism, and skepticism. Treating all of that as naturalism lets Wood demand more than the immediate position has asserted. The vegetarian and podium analogies are lively, but they do not quite match a person withholding belief in a claimed deity. The score is moderate because the challenge matters, but the target shifts.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Atheism shifts between nonbelief, strong naturalism, and a complete explanatory worldview."
+                }
+              ]
+            },
+            con: {
+              time: "22:00",
+              role: "Burden discipline",
+              words:
+                "Shermer defines his position as skepticism, says many gods are rejected, and places the proof burden on the theist.",
+              score: 80,
+              critique:
+                "Shermer's burden move is clear and useful. He distinguishes not believing God from proving no God exists, then uses the many-gods point to challenge special confidence in Yahweh rather than generic divinity. That keeps the debate from requiring him to defend a full metaphysical system before Wood has supported the claim on offer. The strongest part is probability discipline: belief should scale with evidence, and the claimant carries the burden. The weakness is that the many-gods line can be glib when Wood is arguing broad theism rather than a detailed Christian doctrine at that stage. Still, the burden clarification is logically important and gives Shermer a strong opening footing.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Design, gaps, and regress",
+        timebox: "26:00-01:00:00",
+        score: {
+          pro: 62,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "45:35",
+              role: "Not gaps",
+              words:
+                "Wood says he is not arguing from gaps but from the knowledge science has produced and the order science continually confirms.",
+              score: 62,
+              critique:
+                "Wood's reply improves on standard design apologetics by rejecting a simple 'we do not know, therefore God' move. He appeals to known order, mathematical structure, and the Christian expectation that nature is readable, which is more sophisticated than plugging God into isolated mysteries. He also rightly notes that Christian thinkers themselves criticized God-of-the-gaps reasoning. The weakness is that his case still treats scientific success as if it points specifically toward theism rather than toward the reliability of scientific method. Mathematical regularity needs an explanation, but Wood does not show that Christian theism is the best or only explanation. The score is mixed because the correction is valuable, but the positive inference remains thin.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Order unexplained by naturalism is used to raise theism without enough comparative support."
+                }
+              ]
+            },
+            con: {
+              time: "26:40",
+              role: "Gap history",
+              words:
+                "Shermer says natural explanations have repeatedly replaced divine explanations, and asks who designed the designer.",
+              score: 77,
+              critique:
+                "Shermer's gap-history argument is strong against many design claims. The Newton solar-system example, Darwinian complexity, and Sagan's dragon all press the same methodological point: unknown mechanisms should not automatically become supernatural evidence. He also raises a fair regress challenge when design is inferred from complexity. The weakness is that Shermer sometimes turns past success into a promissory claim that future gaps will also close. That may be a reasonable research posture, but it is not itself a refutation. He also treats several distinct theistic arguments as if they share the same gap structure. The score is strong because the caution is warranted, but not decisive against every form of theism.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Past naturalistic success is used to imply future naturalistic closure."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Evil and divine accountability",
+        timebox: "30:00-54:00",
+        score: {
+          pro: 56,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "51:45",
+              role: "Moral-law pivot",
+              words:
+                "Wood says the problem of evil presupposes an objective moral law that atheism cannot ground or apply to God.",
+              score: 56,
+              critique:
+                "Wood's response raises a legitimate metaethical question: if evil is real and God is judged by it, what grounds the standard being invoked? That is a serious challenge to purely subjective or merely evolutionary morality. But as a rebuttal to Shermer's concrete suffering examples, it is incomplete. Even if moral realism ultimately needs a theistic ground, that does not explain why an all-good, all-powerful God permits preventable child deaths, disease, and apparently arbitrary suffering. The move also risks changing the topic from the compatibility of God and evil to the ontology of moral judgment. The score is weak-mixed because the metaethical point matters, but it leaves the evidential problem largely unanswered.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The answer shifts from divine permission of suffering to atheistic moral ontology."
+                }
+              ]
+            },
+            con: {
+              time: "30:00",
+              role: "Preventable suffering",
+              words:
+                "Shermer argues an all-good, all-powerful God is hard to square with preventable deaths, disease, and apparently irrefutable theodicy.",
+              score: 83,
+              critique:
+                "Shermer's problem-of-evil case is emotionally forceful and logically relevant. By focusing on preventable child deaths rather than only human violence, he avoids easy free-will replies and presses divine nonintervention where the suffering appears gratuitous. His 'irrefutable God' point is also strong: if good outcomes credit God and bad outcomes are mystery, the explanation loses testability. The weakness is that he broadens quickly into Christian salvation, prison conversions, and atonement, which can distract from the broader motion of whether God exists. Some claims are more anti-Christian than anti-theistic. Even so, the central argument lands hard because it challenges the coherence and explanatory discipline of theism directly.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Miracle evidence and method",
+        timebox: "01:00:00-01:28:30",
+        score: {
+          pro: 70,
+          con: 72
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:10:50",
+              role: "Undetectable-by-method charge",
+              words:
+                "Wood argues Shermer's extraterrestrial alternative makes any possible divine evidence dismissible, so the method cannot find God.",
+              score: 70,
+              critique:
+                "Wood's methodological objection is one of his better rebuttals. If every spectacular sign can be reclassified as advanced aliens, hallucination, or unknown technology, then the skeptic's evidential standard may become impossible to satisfy in principle. That is a fair challenge to Shermer's 'what would count?' posture. The weakness is that Wood does not give a rival method with clear safeguards against false positives. He mainly shows that Shermer's detection standard may be too restrictive, not that theism has met a better one. The score is solid because it exposes a real asymmetry in skeptical criteria, but limited because it does not supply a disciplined positive test for divine agency.",
+              tags: []
+            },
+            con: {
+              time: "01:03:50",
+              role: "Empirical demand",
+              words:
+                "Shermer says if God reaches into nature, the intervention should produce measurable differences from technology, illusion, or chance.",
+              score: 72,
+              critique:
+                "Shermer's miracle method is sensible at the level of public evidence. If a supernatural agent changes cancers, grows limbs, moves particles, or writes in the sky, then investigators should ask how that differs from natural remission, technology, illusion, or unknown mechanisms. His amputee example usefully demands evidence that would not plausibly happen anyway. The weakness is that his extraterrestrial-technology alternative can become too strong. If any extraordinary sign could always be attributed to advanced beings or trickery, the method may block the very conclusion it asks the evidence to establish. The score is solid because skepticism needs controls, but lower because the standard risks becoming unfalsifiable in the opposite direction.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality and closing claims",
+        timebox: "01:29:00-02:15:00",
+        score: {
+          pro: 72,
+          con: 73
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:33:00",
+              role: "Objective grounding",
+              words:
+                "Wood argues atheistic morality reduces to wiring or culture, while humans made in God's image have objective status.",
+              score: 72,
+              critique:
+                "Wood presses the strongest philosophical issue in the late debate. Evolutionary impulses and cultural norms can explain why people hold moral feelings, but explanation is not the same as justification. His sociopath example makes the point vivid: if moral feeling is absent or culture teaches cruelty, what makes the act wrong anyway? The image-of-God answer gives his view a clear ontological anchor. The weakness is that he does not fully explain why being created by God grounds specific moral duties, or how disputed divine commands are adjudicated. The score is solid because he exposes a real gap in Shermer's account, but the theistic grounding claim still needs development.",
+              tags: []
+            },
+            con: {
+              time: "01:38:20",
+              role: "Human flourishing",
+              words:
+                "Shermer grounds morality in sentient suffering, social cooperation, autonomy, moral progress, and reasoning about human flourishing.",
+              score: 73,
+              critique:
+                "Shermer's moral close is humane and practically persuasive. Love, promise-keeping, reciprocal harm avoidance, social trust, sentient suffering, abolition, torture, interracial marriage, and gay rights all illustrate how moral reasoning can improve human life without waiting for revelation. That gives him real explanatory and motivational resources. The weakness is ontological. Showing that people dislike suffering, cooperate better under rules, and expand moral concern does not by itself show that those norms are objectively binding. His answer often moves from what promotes flourishing to what everyone ought to do. The score is solid because the practical ethic is rich, but not higher because Wood's grounding challenge remains only partly answered.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Morality shifts between observed flourishing and objective obligation."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 65,
+        strengths: [
+          "Wood offered a distinctive argument that connected science's intelligibility, human rationality, and the value of knowledge to Christian theistic assumptions.",
+          "He repeatedly pressed Shermer on whether skeptical methods and secular morality can actually ground the confidence they claim.",
+          "His strongest moments came in the methodology and moral-grounding exchanges, where he exposed pressure points in Shermer's framework."
+        ],
+        blunders: [
+          {
+            text:
+              "The science argument repeatedly slid from Christian historical motivation to scientific confirmation of theism.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "The reply to evil pivoted to atheistic moral ontology before answering the concrete suffering challenge.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 75,
+        strengths: [
+          "Shermer kept the burden of proof visible and distinguished nonbelief from proving a full rival metaphysical system.",
+          "His problem-of-evil argument and irrefutable-God critique directly challenged the coherence and testability of theistic explanation.",
+          "He gave clear naturalistic alternatives for scientific progress, evolved cognition, and moral development without pretending every gap is already closed."
+        ],
+        blunders: [
+          {
+            text:
+              "His claim that future science will keep filling gaps sometimes outran the evidence currently available.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His weak-atheism framing became less stable when he also made broad naturalistic claims about science, morality, and religion.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
