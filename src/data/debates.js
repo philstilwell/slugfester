@@ -6562,5 +6562,258 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "harris-oconnor-objective-morality-2024",
+    number: "19",
+    title: "Sam Harris vs Alex O'Connor: Objective Morality and Emotivism",
+    label: "Moral landscape and emotivism",
+    date: "2026-05-29",
+    duration: "14 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=_pprQXq1eCA",
+    motion:
+      "Can objective morality be grounded in facts about conscious well-being, or does ethical language reduce to emotive expression plus instrumental science?",
+    summary:
+      "Harris grounds moral truth in navigable conscious well-being; O'Connor argues this still yields subjective preference plus objective instrumental facts, not moral oughts.",
+    sourceNote:
+      "Built from YouTube's auto-generated English captions for the Alex O'Connor clip. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "right and wrong answers",
+        context:
+          "Harris's phrase captures his claim that movement through possible conscious experiences can be objectively better or worse."
+      },
+      con: {
+        text: "boo murder you know",
+        context:
+          "O'Connor uses the emotivist slogan to separate moral expression from truth-apt factual description."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Moral landscape",
+        speaker: "Sam Harris",
+        color: "teal"
+      },
+      con: {
+        name: "Emotivist skepticism",
+        speaker: "Alex O'Connor",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 82,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Emotivism and truth value",
+        timebox: "00:00-01:44",
+        score: {
+          pro: 78,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "00:50",
+              role: "Objective affect",
+              words:
+                "Harris says dislike, suffering, and preference can still be objective facts about conscious subjects.",
+              score: 78,
+              critique:
+                "Harris's opening reply is fair because he does not treat emotivism as mere nonsense. He tries to translate O'Connor's booing framework into facts about minds: a person can objectively dislike murder, suffer from pain, or prefer one state over another. That gives him a bridge from expression to describable consciousness. The weakness is that O'Connor has already distinguished reporting a feeling from expressing it, and Harris's first move does not yet answer that semantic point. Objective facts about aversion may exist while moral utterances still lack truth value. The score is solid because Harris identifies the factual substrate, but lower because the normativity gap is still open.",
+              tags: []
+            },
+            con: {
+              time: "00:30",
+              role: "Emotivist distinction",
+              words:
+                "O'Connor says 'murder is wrong' expresses disapproval or command rather than stating a truth-apt proposition.",
+              score: 83,
+              critique:
+                "O'Connor's emotivist distinction is crisp and dialectically useful. He blocks a common misunderstanding by saying moral language is not a factual report such as 'I dislike murder,' but an expression of disapproval or command. That matters because Harris cannot refute the view merely by showing that feelings have objective causes or correlates. The weakness is that O'Connor states the linguistic theory more than he defends it. Listeners are not given much reason to accept emotivism over realism, expressivism with quasi-realist resources, or constructivism. The score is high because the distinction cleanly identifies the issue, but not higher because the metaethical case remains mostly assumed here.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Possible experience landscape",
+        timebox: "01:44-04:38",
+        score: {
+          pro: 84,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "02:50",
+              role: "Navigation argument",
+              words:
+                "Harris argues there are unknown peaks and valleys of experience, with factual routes toward or away from them.",
+              score: 84,
+              critique:
+                "Harris's landscape argument is strong because it gives objective morality a concrete domain: possible conscious experiences and the facts that move creatures among them. He notes that people may not know what they are missing, that experiences can be radically better or worse, and that science can inform the navigation problem from genetics through social systems. This avoids spooky moral properties and makes ethics continuous with inquiry. The weakness is that the argument may establish objective prudential or welfare facts before establishing moral obligation. Knowing how to reach a peak does not automatically show that one ought to pursue it. The score is high because the framework is powerful, but incomplete.",
+              tags: []
+            },
+            con: {
+              time: "04:38",
+              role: "Instrumental science",
+              words:
+                "O'Connor grants the science, but says it only helps him reach peaks he already subjectively prefers.",
+              score: 83,
+              critique:
+                "O'Connor's instrumental-science reply lands because it concedes the strongest factual material while denying Harris the normative conclusion. He grants that sciences of mind, society, and behavior may tell us how to get what we want. His point is that this still begins with subjective preference: if he wants a peak, science helps him reach it, but no moral truth has entered the picture. The weakness is that preference may be too thin a description of conscious welfare. Some experiences might be better for a person even before that person currently wants them. Still, the score is high because O'Connor cleanly separates objective means from objective ends.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Changing preferences",
+        timebox: "04:38-08:20",
+        score: {
+          pro: 80,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "05:08",
+              role: "Preference revision",
+              words:
+                "Harris says our preferences were not chosen, and completed mind science might show better ways to retune them.",
+              score: 80,
+              critique:
+                "Harris's preference-revision move improves the case by undermining simple deference to present desire. If we did not choose our genes, parents, culture, or emotional tuning, then our current preferences may be parochial and correctable. A science of mind could reveal lives we would recognize as better if we were less closed off. That is a serious challenge to flat subjectivism. The weakness is again the word 'better.' Harris can show that altered preferences unlock richer experience, but he still needs an account of why one should adopt the retuning rather than simply prefer one's current evaluative machinery. The score is strong because the move widens the comparison class.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The move sometimes assumes that preference retuning toward richer experience is already better in the needed moral sense."
+                }
+              ]
+            },
+            con: {
+              time: "05:27",
+              role: "Second-order preference",
+              words:
+                "O'Connor says he might take a music-loving pill because he prefers the new preference, not because morality appears.",
+              score: 86,
+              critique:
+                "O'Connor's music-pill example is the exchange's sharpest explanatory test. He accepts Harris's idea that preferences can be changed, then explains that a person might prefer to have a new preference without invoking moral prescription. That absorbs the thought experiment into a hierarchy of desires: first-order pleasures and second-order preferences about which pleasures to have. The point is precise because it does not deny that new joys are possible. It denies that their possibility creates an ought. The weakness is that second-order preference may not exhaust rational evaluation of a life, especially where ignorance or deformation is severe. Even so, the score is high because the reply directly targets Harris's attempted bridge.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Well-being and obligation",
+        timebox: "08:20-12:19",
+        score: {
+          pro: 85,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:03",
+              role: "Well-being standard",
+              words:
+                "Harris says fuller description gives ethics everything we want: right and wrong answers about maximizing well-being.",
+              score: 85,
+              critique:
+                "Harris's closing synthesis is compelling as a practical moral epistemology. Once two people exist, they face a navigation problem: collaboration opens possibilities, violence closes them, and conscious lives can move toward misery or flourishing. His rock-smashing example makes the moral landscape intuitive without needing theological grounding. He also defines the standard candidly: better means away from the worst possible misery and toward well-being. The weakness is that defining better this way may look stipulative to the anti-realist. It tells us what morality will mean inside Harris's framework, not why every rational agent must accept that framework. The score is high because it supplies a usable standard with real explanatory force.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The standard risks assuming that movement toward well-being is morally authoritative rather than only descriptively attractive."
+                }
+              ]
+            },
+            con: {
+              time: "09:00",
+              role: "Missing ought",
+              words:
+                "O'Connor says his complete desert-island story has preferences, cooperation, and science, but still no moral truth.",
+              score: 82,
+              critique:
+                "O'Connor's missing-ought challenge remains potent because it asks Harris to identify exactly where moral truth enters the story. His desert-island narrative includes preferences, observation, cooperation, preference-changing technology, and increasing pleasure, yet he says the same facts can be described without moral prescriptions. That is the right pressure point for a metaethical debate. The weakness is that the story may underdescribe interpersonal reality. Once another person appears, conflict, vulnerability, trust, and coordination create pressures that feel more than private preference management. Harris can plausibly call those right-and-wrong-answer problems. The score is strong because O'Connor keeps the conceptual demand clear, but slightly lower because the social case adds force.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 82,
+        strengths: [
+          "Harris made objective morality concrete by tying it to possible conscious experiences and factual routes through them.",
+          "His navigation framing gave science a real role without claiming that moral facts float free of minds.",
+          "The well-being standard supplied a practical way to compare cooperation, violence, flourishing, and misery."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes moved from objective facts about well-being to moral authority without fully deriving the ought.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His replies occasionally treated O'Connor's semantic point as if it were only a dispute about objective feeling states.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "O'Connor clearly distinguished expressing a moral attitude from reporting a psychological fact.",
+          "He repeatedly conceded the objective science while denying that objective means create objective moral ends.",
+          "The music-pill and desert-island examples gave Harris's view direct tests rather than vague skepticism."
+        ],
+        blunders: [
+          {
+            text:
+              "He largely assumed emotivism after explaining it, rather than defending why moral language should be read that way.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His subjective-value framing may underweight cases where ignorance or damaged preference blocks access to better conscious life.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
