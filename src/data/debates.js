@@ -5231,5 +5231,329 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "hitchens-lennox-is-god-great-2017",
+    title: "Christopher Hitchens vs John Lennox: Is God Great?",
+    label: "God and anti-theism",
+    date: "2017-06-20",
+    duration: "1 hr 53 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=5OXPlUCGScY",
+    motion:
+      "Is God great, and does Christian theism better explain science, morality, dignity, and hope than Hitchens's anti-theistic critique?",
+    summary:
+      "Lennox argues God grounds science, morality, dignity, and Christian hope; Hitchens argues theism is unsupported, authoritarian, and morally compromised by suffering and religious history.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the Larry Alex Taunton upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God is Not only great",
+        context:
+          "Lennox's closing claim is that Christ reveals God's greatness through creation, judgment, grace, and sacrificial love."
+      },
+      con: {
+        text: "the heavens are empty",
+        context:
+          "Hitchens frames the mature secular task as living without supernatural rescue, divine command, or answered prayer."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian theism",
+        speaker: "John Lennox",
+        color: "teal"
+      },
+      con: {
+        name: "Anti-theism",
+        speaker: "Christopher Hitchens",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 74,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Science and agency",
+        timebox: "15:40-31:45",
+        score: {
+          pro: 78,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "27:20",
+              role: "Agency analogy",
+              words:
+                "Lennox says science explains mechanisms, while God explains why the universe exists, as Henry Ford explains the car.",
+              score: 78,
+              critique:
+                "Lennox's agency analogy is a clear and memorable reply to crude science-versus-God framing. By distinguishing mechanism from agency, he rightly notes that explaining how a system works does not automatically explain why it exists. The Ford example helps listeners see the category distinction. The weakness is that an analogy can only show compatibility, not probability. A car has independent evidence of a designer; the universe does not obviously transfer that background information. Lennox also moves from intelligibility to a personal creator faster than the argument warrants. The score is strong because the objection is relevant and disciplined, but limited because the positive inference remains under-argued.",
+              tags: []
+            },
+            con: {
+              time: "15:45",
+              role: "Deism challenge",
+              words:
+                "Hitchens grants a possible creator for argument but says Lennox still must show revelation, divine will, and a personal God.",
+              score: 82,
+              critique:
+                "Hitchens's deism challenge is one of the debate's best burden-setting moves. He grants, for argument's sake, that a first cause might be an elegant explanation, then insists that this leaves the Christian theist with nearly all the hard work still ahead. That cleanly separates generic cosmic design from claims about revelation, morals, sexuality, worship, and divine command. The weakness is that Hitchens sometimes treats the transition as almost impossible rather than merely unsupported in the exchange. A theist can offer historical and experiential evidence. Still, the move scores highly because it prevents a smuggled conclusion: even a creator would not yet be Lennox's God in debate.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Cosmic scale",
+        timebox: "21:30-55:25",
+        score: {
+          pro: 68,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "54:40",
+              role: "Temporary cosmos",
+              words:
+                "Lennox says a finite universe is no objection because scripture expects this cosmos to end and be renewed.",
+              score: 68,
+              critique:
+                "Lennox's temporary-cosmos reply is coherent inside Christian theology. If the present universe is a stage toward new creation, cosmic decay is not automatically a defeater for God's greatness. That answer also keeps him from pretending that science predicts eternal stability. The weakness is that it functions more as an internal doctrinal accommodation than as public evidence. Hitchens's challenge concerns why a loving designer would use extinction, disease, vast waste, and late redemption in the first place. Saying the system is temporary does not explain that route. The score is mixed because Lennox has a consistent theological answer, but it does not carry much independent argumentative force.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Cosmic decay is excused by later theological renewal without explaining why this destructive route was chosen."
+                }
+              ]
+            },
+            con: {
+              time: "21:40",
+              role: "Cosmic waste",
+              words:
+                "Hitchens says extinction, suffering, and 98,000 years before redemption make design look callous and incompetent.",
+              score: 86,
+              critique:
+                "Hitchens's cosmic-waste argument is powerful because it contests not merely God's existence but divine greatness. He asks whether mass extinction, long human misery, disease, tribal violence, and a very late redemptive offer fit a benevolent designer. The argument is vivid, relevant, and hard to shrug off because it presses scale and timing rather than isolated tragedy. Its weakness is that it leans heavily on moral intuition about what a good creator would do, without engaging all possible theodicies. Lennox can appeal to eschatology, freedom, or unknown goods. Even so, the score is high because the objection directly targets the debate's central adjective: great, with force.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality and rationality",
+        timebox: "31:30-1:03:45",
+        score: {
+          pro: 75,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "31:35",
+              role: "Moral foundation",
+              words:
+                "Lennox argues atheism cannot ground rational trust, human value, or moral judgments against tyranny.",
+              score: 75,
+              critique:
+                "Lennox's moral-foundation argument identifies a real philosophical pressure point. If reason, moral obligation, and human dignity are only byproducts of unguided survival mechanisms, then their authority needs explanation. He also fairly notes that calling God tyrannical already appeals to a moral standard. The weakness is that he often treats naturalistic accounts as if they must reduce morality to randomness or genetic determinism. Secular moral realism, contractualism, and evolutionary accounts of prosocial agency deserve more engagement than they receive here. The score is solid because Lennox asks a central metaethical question, but not higher because the contrast is sharpened by underdescribing live non-theistic options onstage overall.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "Atheist regimes and genetic determinism can distract from whether secular moral realism itself is coherent."
+                }
+              ]
+            },
+            con: {
+              time: "50:40",
+              role: "Moral challenge",
+              words:
+                "Hitchens asks for a moral action believers can perform that atheists cannot, and for religiously caused evils.",
+              score: 84,
+              critique:
+                "Hitchens's two-question challenge is effective because it converts moral debate into a discriminating test. If believers cannot name a moral action unavailable to atheists, then religion has not shown unique moral power; if religious belief can motivate distinctive harms, the moral ledger becomes troubling. The strength is its clarity and portability. The weakness is that the first question tests moral capability, not ultimate grounding. A theist can say atheists perform good actions because all humans share a God-given moral nature. Still, Hitchens scores highly because the challenge exposes a gap between claiming religion grounds morality and showing that it improves moral reasoning or behavior in practice.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Divine government",
+        timebox: "47:10-1:01:25",
+        score: {
+          pro: 74,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "58:15",
+              role: "Loving watch",
+              words:
+                "Lennox says Hitchens caricatures God as Big Brother; divine watching is relational care, not coercive surveillance.",
+              score: 74,
+              critique:
+                "Lennox's reply is humane and rhetorically useful. He distinguishes protective attention from oppressive surveillance and grounds divine oversight in a relationship of love rather than coercion. That directly answers Hitchens's darkest framing and reminds the audience that Christian believers often experience God's knowledge as comfort. The weakness is that the analogy to marriage, police, or friendly watching does not fully answer the asymmetry of omniscient judgment, eternal consequences, and created dependence. Hitchens's worry is about unavoidable authority, not simply being observed by someone benevolent. The score is solid because Lennox corrects a caricature, but moderate because the coercion question remains only partly answered here overall.",
+              tags: []
+            },
+            con: {
+              time: "47:20",
+              role: "Celestial dictator",
+              words:
+                "Hitchens says an all-knowing eternal father would mean round-the-clock surveillance and thought-crime judgment.",
+              score: 83,
+              critique:
+                "Hitchens's celestial-dictator argument is forceful because it asks what theism would mean if true, not only whether it is evidenced. He highlights permanent surveillance, thought crime, inherited defect, and postmortem judgment as threats to moral freedom. That directly contests the claim that God is great. The weakness is that he loads the case with the most authoritarian interpretation of divine knowledge and gives little room to covenant, consent, grace, or love as theists understand them. Still, the score is high because the argument exposes a serious tension between worshipful submission and autonomy. It makes Lennox defend the goodness, not merely the existence, of God himself.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Jesus and miracles",
+        timebox: "56:35-1:21:35",
+        score: {
+          pro: 77,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "56:40",
+              role: "Revelation test",
+              words:
+                "Lennox says Christianity stands or falls on evidence that Jesus claimed deity and rose from the dead.",
+              score: 77,
+              critique:
+                "Lennox's revelation test is fairer than a pure appeal to mystery. He says Christianity should stand or fall on whether God has revealed himself in Christ, and he directs the discussion toward evidence for Jesus's deity and resurrection. That gives his case a falsifiable historical center rather than vague theistic feeling. The weakness is that the debate format leaves those evidential claims thinly developed. Assertions about prophecy, deity claims, and resurrection need source criticism, alternative explanations, and probability comparison. Hitchens is able to attack them as textual and miracle claims without much detailed defense onstage. The score is positive because Lennox states the right test, but lower because he does not fully run it.",
+              tags: []
+            },
+            con: {
+              time: "1:10:45",
+              role: "Textual skepticism",
+              words:
+                "Hitchens says prophecy fulfillment looks reverse-engineered and miracle claims are less plausible than ordinary explanations.",
+              score: 81,
+              critique:
+                "Hitchens's textual skepticism is strong because it presses concrete points: gospel writers know the prophecies they report as fulfilled, Jewish authorities did not accept Jesus as Messiah, and ordinary explanations can be more probable than miracle claims. His Humean instinct usefully asks whether a supernatural suspension is really the best explanation. The weakness is that he sometimes moves from skepticism to contempt too quickly, calling the tradition superstition before demonstrating that all central claims fail. Lennox can rightly object that caricature is not refutation. Even so, the score is high because Hitchens challenges the specific bridge from generic theism to Christianity, where Lennox most needs evidence.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Dignity and history",
+        timebox: "1:21:30-1:52:00",
+        score: {
+          pro: 72,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:23:50",
+              role: "Image of God",
+              words:
+                "Lennox says human dignity is rationally secured by being made in God's image, not by animal continuity.",
+              score: 72,
+              critique:
+                "Lennox's image-of-God argument gives dignity an elegant theological anchor. It explains why humans should be treated as infinitely valuable even when biology emphasizes continuity with other animals, and it answers Peter Singer-style reduction with a clear counter-premise. The weakness is that the argument largely asserts the anchor rather than demonstrating it. Hitchens can agree that humans have bonds, empathy, and social obligations while rejecting the premise that dignity requires divine image-bearing. Lennox also risks implying that evolutionary kinship devalues humanity when many secular accounts treat it as morally expanding concern. The score is decent because the view is coherent, but limited because its key premise is not independently established.",
+              tags: []
+            },
+            con: {
+              time: "1:45:05",
+              role: "Historical counter",
+              words:
+                "Hitchens says vicarious redemption remains unanswered and Christian history cannot claim credit for ending slavery.",
+              score: 80,
+              critique:
+                "Hitchens's closing counter is effective because it revisits two unresolved burdens: whether vicarious redemption is morally admirable, and whether Christian history supports Lennox's moral-credit claim. His slavery argument is especially relevant: if Christians defended slavery for centuries, later Christian abolitionism cannot by itself prove Christianity's moral superiority. The weakness is that Hitchens's sweeping treatment of fascism, Orthodoxy, and Catholic right-wing politics compresses complex history into a prosecutorial narrative. That risks over-attribution and leaves reforming religious movements underweighted. Still, the score is strong because he keeps the focus on historical evidence and moral responsibility rather than allowing inspirational examples to settle the issue untested in closing.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "The historical survey emphasizes religion's incriminating cases while giving less weight to mixed motives and reform movements."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 74,
+        strengths: [
+          "Lennox clearly separated scientific mechanism from philosophical agency and kept theism from being reduced to a gap-filler.",
+          "He framed Christianity around public claims about Christ, morality, and human dignity rather than only private consolation.",
+          "His tone remained composed while answering Hitchens's most acidic formulations of divine rule and religious harm."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes treated scientific trust, moral realism, and religious faith as if they were the same kind of commitment.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His appeals to atheist regimes and Singer-style extremity occasionally sidestepped stronger secular moral alternatives.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Hitchens repeatedly separated generic deism from the much heavier claim that Christianity has reliable revelation.",
+          "He pressed the scale of suffering, extinction, delayed redemption, and divine surveillance against the claim that God is great.",
+          "His moral-action challenge gave the audience a clean test of whether religion adds distinctive moral capacity."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes argued from religion's worst political and historical expressions as though they settled the truth of theism.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His confidence that supernatural explanations add nothing sometimes outran the narrower evidential claim he had established.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
