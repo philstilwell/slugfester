@@ -3101,5 +3101,377 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "peterson-dillahunty-god-debate-2023",
+    title: "Jordan Peterson vs Matt Dillahunty: The Greatest God Debate In History",
+    label: "God and religious meaning",
+    date: "2026-05-28",
+    duration: "1 hr 39 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=9nQUg4QeI_Y",
+    motion:
+      "Does God-language name a real supernatural being, or does it function mainly as a religious, moral, and psychological substrate for meaning?",
+    summary:
+      "Peterson defends religious meaning as culture's deep substrate; Dillahunty asks for evidence that any actual God exists.",
+    sourceNote:
+      "Built from the YouTube English original auto-caption track downloaded with the yt-dlp Python module. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "the domain of religious phenomenology",
+        context:
+          "Peterson treats religion as the symbolic, biological, and narrative structure beneath Western moral life and meaningful action."
+      },
+      con: {
+        text: "whether or not there is a god",
+        context:
+          "Dillahunty keeps returning to the narrower evidential question of whether any God claim maps to reality."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Religious pragmatist",
+        speaker: "Jordan Peterson",
+        color: "teal"
+      },
+      con: {
+        name: "Secular skeptic",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 68,
+      con: 80
+    },
+    sections: [
+      {
+        title: "Meaning versus existence",
+        timebox: "00:00-09:30",
+        score: {
+          pro: 67,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "00:40",
+              role: "Religious substrate",
+              words:
+                "Peterson says Western culture is nested in a metaphorical substrate that belongs to religious phenomenology, biology, literature, and cognition.",
+              score: 67,
+              critique:
+                "Peterson's opening is intellectually rich and gives the conversation a wider frame than a simple proof-text debate. He rightly notes that religious stories, rituals, and metaphors can shape culture, morality, and experience in deep ways that crude debunking misses. That is a serious contribution. The weakness is relevance to the narrower motion. Showing that religious phenomenology is culturally and psychologically powerful does not show that God exists, nor that belief in God is epistemically warranted. Peterson often moves from function to reality without marking the bridge. The score is mixed-positive because the frame is valuable, but it answers a different question than the one Dillahunty asks.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "God shifts between supernatural being, metaphorical substrate, and highest value."
+                }
+              ]
+            },
+            con: {
+              time: "02:30",
+              role: "Existence test",
+              words:
+                "Dillahunty grants that religion may be valuable, but asks whether there is sufficient reason to believe a God actually exists.",
+              score: 84,
+              critique:
+                "Dillahunty's first move is strong because it cleanly separates usefulness from truth. He does not deny that poetry, allegory, ritual, or religious identity can motivate and educate people. Instead, he asks whether those benefits establish that a God exists or that believers have good warrant for that claim. That distinction prevents the discussion from becoming a referendum on whether religion has ever helped anyone. The weakness is that he initially understates how much Peterson wants to challenge the usefulness-truth divide itself. Still, the burden discipline is excellent. The score is high because the move keeps the core claim visible and blocks a large amount of evidential drift.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Mystical experience",
+        timebox: "09:30-20:30",
+        score: {
+          pro: 73,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "09:45",
+              role: "Psilocybin evidence",
+              words:
+                "Peterson points to replicated mystical experiences under psilocybin and their effects on smoking cessation, death anxiety, and openness.",
+              score: 73,
+              critique:
+                "Peterson's psilocybin argument is one of his more concrete contributions. Instead of speaking only in abstractions, he cites repeatable effects: people report mystical experiences under controlled conditions, and those experiences can correlate with smoking cessation, reduced death anxiety, and personality change. That matters because it shows religious-like experience is not merely decorative language. The weakness is that therapeutic or psychological impact does not establish supernatural reference. A drug-induced experience can be profound, measurable, and life-changing while still being generated by brain states. Peterson sometimes lets the word 'mystical' do too much evidential work. The score is solid because the phenomena are real, but limited because they do not confirm God.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "Powerful reported experience is treated as suggestive of more than its subjective impact."
+                }
+              ]
+            },
+            con: {
+              time: "10:35",
+              role: "Subjective-state reply",
+              words:
+                "Dillahunty says people can describe experiences as mystical without demonstrating a supernatural realm or actor behind them.",
+              score: 81,
+              critique:
+                "Dillahunty's answer is careful and fair. He accepts the reports, the intensity, and even the transformative power of religious or drug-induced experiences, but refuses to infer a supernatural cause without a mechanism or independent check. His own account of feeling the Holy Spirit and later comparing that to music, sex, and drugs gives the point credibility: interpretation can follow cultural framing. The weakness is that he has less to say about why certain experiences recur across cultures with such force. Still, his epistemic distinction is strong. The score is high because he preserves the data while blocking the overreach from experience to external supernatural reality.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Origins of religious attribution",
+        timebox: "18:45-31:30",
+        score: {
+          pro: 71,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "18:50",
+              role: "Agency question",
+              words:
+                "Peterson asks why humans so persistently attribute transcendent experiences to supernatural agents rather than treating them as bare psychology.",
+              score: 71,
+              critique:
+                "Peterson's question is useful because it presses beyond a simple 'people have experiences' account. If religious attribution appears widely across cultures, rituals, altered states, death practices, and mythic systems, then explaining why humans personify transcendence is a real problem. He also fairly separates this biological account from Freud's or Marx's reductionist theories. The weakness is that a persistent tendency does not validate the content of the tendency. Humans may over-detect agency because false positives can be safer than false negatives. Peterson gestures toward depth, but not toward a way to distinguish accurate supernatural perception from evolved pattern-making. The score is solid because the question is important, but it does not establish the answer.",
+              tags: []
+            },
+            con: {
+              time: "21:15",
+              role: "Pattern explanation",
+              words:
+                "Dillahunty explains supernatural attribution through cultural templates, hyperactive agency detection, death, and discomfort with not knowing.",
+              score: 78,
+              critique:
+                "Dillahunty offers a plausible naturalistic explanation. Alien-abduction imagery, ghost interpretations, faces in noise, fear of hidden agents, and the contrast between living and dead bodies all help explain why people reach for agency and soul language. His strongest move is methodological humility: consciousness remains mysterious, but mystery is not permission to posit a soul or supernatural source. The weakness is that the account is somewhat piecemeal. It explains several mechanisms that could produce religious attribution, but it does not fully account for the integrative cultural power Peterson emphasizes. The score is strong because the mechanisms are relevant and restrained, but not decisive because the explanation remains partial.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality and well-being",
+        timebox: "31:30-59:30",
+        score: {
+          pro: 77,
+          con: 74
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "41:40",
+              role: "Metaphysical challenge",
+              words:
+                "Peterson challenges well-being as a moral foundation and says rule-based morality misses the deeper metaphorical substrate.",
+              score: 77,
+              critique:
+                "Peterson is strongest here because he forces Dillahunty to define terms that often pass too quickly in secular moral arguments. What is well-being, why prefer life over death generally, and why think a list of rules can generate moral competence? His expert-system and AlphaZero discussion is not a perfect fit, but it does challenge the idea that morality can be reduced to explicit propositions. The weakness is that Peterson sometimes interrupts before the secular account is fully stated, and his own alternative remains more evocative than operational. The score is strong because the pressure is real, but not higher because he does not supply a clearer practical foundation.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "Unclear definitions of well-being are used to weaken the secular account."
+                }
+              ]
+            },
+            con: {
+              time: "44:35",
+              role: "Secular revision",
+              words:
+                "Dillahunty says life, health, happiness, and well-being can be provisional foundations, revised as evidence improves.",
+              score: 74,
+              critique:
+                "Dillahunty's moral answer is constructive and modest. He does not claim to possess final moral rules; he proposes revisable foundations such as life generally being preferable to death, health to sickness, and happiness to misery. His chess analogy usefully shows how arbitrary starting rules can still allow objective comparisons relative to a goal. The strength is openness to revision, which distinguishes his model from fixed revelation. The weakness is the familiar grounding problem: why should anyone accept those starting goals, and how are conflicts between goods resolved? He admits the foundations can be chosen and revised, which helps honesty but weakens objectivity. The score is solid, but Peterson's pressure remains.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Religion as archive and language",
+        timebox: "01:00:00-01:24:00",
+        score: {
+          pro: 82,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:08:30",
+              role: "Meta-giant claim",
+              words:
+                "Peterson says humans ride on the shoulders of giants, and the meta-giant is God, embodied in figures like Christ.",
+              score: 82,
+              critique:
+                "Peterson's answer about religion as archive is rhetorically and philosophically strong. He presents God-language not as a disposable superstition, but as a compressed inheritance of models, stories, embodied practices, and ideals that carry more than explicit rules can. His account of Christ as a meta-giant and religious language as a way to communicate suffering, courage, chaos, order, and meaning gives the pro side its clearest positive case. The weakness is that this again shifts from God as real agent to God as symbolic culmination. That may be profound, but it does not answer the traditional existence claim. The score is high because the value argument is rich, but bounded by equivocation.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "God functions as archive, ideal, Christ-symbol, and possible deity without stable separation."
+                }
+              ]
+            },
+            con: {
+              time: "01:04:25",
+              role: "Truth survives",
+              words:
+                "Dillahunty says true, good, and useful lessons can survive without belief in God or religious authority.",
+              score: 76,
+              critique:
+                "Dillahunty's reply is practical and clarifying. He accepts that religious traditions preserve good and useful material, but argues that truth does not depend on the survival of a God claim. Parents, communities, and secular institutions can still teach morality, and people continually build their own moral understanding from inherited examples. His best challenge is to the condescension implied by 'I do not need religion, but others do.' The weakness is that he may understate how fragile cultural inheritance can be when its narrative containers collapse. He also treats extractable truth as easier to separate from symbolic practice than Peterson thinks. The score is strong because the reply is sane, but it does not fully answer the archive concern.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "What counts as atheism",
+        timebox: "01:24:00-01:33:00",
+        score: {
+          pro: 54,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:24:35",
+              role: "Raskolnikov test",
+              words:
+                "Peterson says a genuine atheist would be like Raskolnikov, rationalizing murder once the metaphysical barrier is removed.",
+              score: 54,
+              critique:
+                "Peterson's Dostoevsky reference is culturally serious and illustrates a real danger: rationality detached from moral depth can justify terrible acts. Crime and Punishment is a powerful exploration of guilt, conscience, and transgression. But as an argument about atheists, the move is weak. It defines genuine atheism by a literary murderer rather than by whether someone believes in God. That makes ordinary moral atheists disappear by definition. It also risks treating Peterson's preferred psychology as a gatekeeping device for the opponent's identity. The score is low-mixed because the literary insight is worth hearing, but the inference about actual atheists is overbroad, selective, sweeping, and unfair overall.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "A literary case of murder displaces the definition of atheism as nonbelief."
+                }
+              ]
+            },
+            con: {
+              time: "01:28:30",
+              role: "Identity correction",
+              words:
+                "Dillahunty answers that atheism is nonbelief in God, not murder, nihilism, or lack of awe and meaning.",
+              score: 85,
+              critique:
+                "Dillahunty's response is forceful and well targeted. He points out that apologists often deny atheist identity by saying the atheist is too moral, too meaningful, or too dependent on inherited values to be real. His correction is simple: atheism is not being convinced there is a God; morality, awe, meaning, and cultural admiration are separate questions. He also rightly criticizes the social harm of portraying atheists as morally suspect. The weakness is that he does not fully engage Peterson's deeper claim about implicit worship of highest values. Still, the definitional rebuttal is decisive against the Raskolnikov framing. The score is high because it directly fixes a serious mischaracterization.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Evolutionary morality and close",
+        timebox: "01:33:00-01:39:40",
+        score: {
+          pro: 65,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:34:40",
+              role: "Built-in religious instinct",
+              words:
+                "Peterson says morality and religious instinct may be so deeply built into humans that we cannot easily get outside them.",
+              score: 65,
+              critique:
+                "Peterson's closing concession is useful because it brings the discussion nearer to a testable psychological claim. He acknowledges that religious instinct might be materially built into human beings, even if people experience it as mystical or divine. That is more careful than simply saying every moral impulse proves God. The weakness is that the position becomes difficult to distinguish from a secular evolutionary account with religious vocabulary layered over it. If the instinct can be materially generated and still not establish a deity, then the existence question remains unanswered. The score is moderate because the idea is subtle and plausible, but it retreats from the stronger theistic implication.",
+              tags: []
+            },
+            con: {
+              time: "01:36:25",
+              role: "Evolution and empathy",
+              words:
+                "Dillahunty says morality can arise from empathy, desire for a good life, and evolved social behavior without validating visions.",
+              score: 78,
+              critique:
+                "Dillahunty's closing is concise and effective. He agrees that morality has evolved social roots, points to fairness in other primates, and identifies empathy plus the desire for a good life as the practical basis of moral concern. His 'super strawberry' LSD story is humorous, but also makes a real epistemic point: vivid experience does not automatically map to external reality. The weakness is that empathy and social evolution still explain moral psychology more clearly than objective normativity. Peterson's deeper symbolic question therefore remains partly alive. Even so, Dillahunty ends with a clear distinction between experience, usefulness, and truth, which is the debate's central skeptical thread.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 68,
+        strengths: [
+          "Peterson gave the richest account of why religious language, ritual, archetype, and narrative remain psychologically and culturally powerful.",
+          "He pressed Dillahunty hardest on the foundations of secular morality, especially the definitions of well-being, value, and moral rules.",
+          "His strongest moments reframed religion as embodied inheritance rather than a crude pseudo-scientific hypothesis."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly shifted between God as supernatural reality, highest value, cultural archive, and metaphorical substrate.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His Raskolnikov framing treated real atheism as if it implied murderous moral collapse.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 80,
+        strengths: [
+          "Dillahunty consistently separated usefulness, subjective intensity, cultural inheritance, and therapeutic benefit from evidence that God exists.",
+          "He gave a clear account of why supernatural explanations require mechanisms or independent checks before they become justified beliefs.",
+          "His rebuttal to the Raskolnikov/true-atheist frame was direct, humane, and logically clarifying."
+        ],
+        blunders: [
+          {
+            text:
+              "His secular morality account remained vulnerable on why well-being should be accepted as the foundational goal.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "He sometimes treated extractable moral truths as easier to preserve outside religious narratives than Peterson's archive argument allowed.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
