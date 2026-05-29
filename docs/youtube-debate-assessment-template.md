@@ -8,7 +8,7 @@ The debate page should keep this order and visual hierarchy:
 
 1. Sticky site header with a small boxing-gloves mark, `Slugfester` wordmark, `Debates` link, and an `External Sites` capsule grouping the LogFall and CogBias links.
 2. Debate hero with three columns on desktop:
-   - Left: back link, `label · Last rendered: YYYY-MM-DD`, smaller title, motion, and source note.
+   - Left: back link, `Debate NN · label · Last rendered: YYYY-MM-DD`, smaller title, motion, and source note.
    - Middle: `assets/debate-gloves.png` in `.debate-gloves-panel`.
    - Right: score summary card with average section score, side scores, and `Open YouTube source`.
 3. Representative quote panel, with one quote-forward card per side.
@@ -27,6 +27,8 @@ Landing-page design:
 - The landing intro includes a divider line followed by a ` | `-delineated list of unique current debate topics.
 - The debate list is capped at three columns on wide screens, then steps down responsively.
 - Debate `label` values must be unique so landing cards, topic lists, and reference occurrence cards are unambiguous.
+- Debate `number` values must be unique, sequential in debate-list order, and two-digit zero-padded, starting with `01`.
+- Debate numbers should appear anywhere the site identifies a debate for tracking: landing cards, debate hero metadata, topic lists, and reference occurrence cards.
 
 Design constraints:
 
@@ -58,6 +60,7 @@ Use this shape when adding an object to `src/data/debates.js`.
 ```js
 {
   id: "speaker-a-speaker-b-topic-year",
+  number: "01",
   title: "Speaker A vs Speaker B: Debate Title",
   label: "Topic label",
   date: "YYYY-MM-DD",
@@ -172,6 +175,7 @@ Use this shape when adding an object to `src/data/debates.js`.
 ## Final Acceptance Checklist
 
 - Page follows the locked debate-page design above.
+- Debate numbers are two-digit, zero-padded, sequential, and displayed consistently site-wide.
 - The sticky header uses the small boxing-gloves image.
 - The top reference links are grouped as an `External Sites` cluster.
 - The top reference links explain LogFall and CogBias with hover/focus popovers.

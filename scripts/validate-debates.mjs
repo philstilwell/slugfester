@@ -3,6 +3,7 @@ import { getReferenceDefinition, referenceFromUrl } from "../src/data/references
 
 const errors = [];
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const debateNumberPattern = /^\d{2}$/;
 const datePattern = /^\d{4}-\d{2}-\d{2}$/;
 const youtubePattern = /^https:\/\/(www\.)?youtube\.com\/watch\?v=[A-Za-z0-9_-]+/;
 
@@ -198,6 +199,10 @@ function validateDebate(debate, index) {
     pattern: slugPattern,
     patternMessage: "must be a lowercase URL slug"
   });
+  requireString(debate, "number", path, {
+    pattern: debateNumberPattern,
+    patternMessage: "must be a two-digit zero-padded debate number"
+  });
   requireString(debate, "title", path, { minWords: 3 });
   requireString(debate, "label", path);
   requireString(debate, "date", path, {
@@ -258,6 +263,7 @@ if (!Array.isArray(debates) || debates.length === 0) {
   addError(["debates"], "must export a non-empty array");
 } else {
   const ids = new Set();
+  const numbers = new Set();
   const labels = new Set();
   debates.forEach(validateDebate);
   debates.forEach((debate, index) => {
@@ -266,6 +272,20 @@ if (!Array.isArray(debates) || debates.length === 0) {
         addError(["debates", String(index), "id"], "must be unique");
       }
       ids.add(debate.id);
+    }
+
+    if (debate?.number) {
+      const expectedNumber = String(index + 1).padStart(2, "0");
+      if (numbers.has(debate.number)) {
+        addError(["debates", String(index), "number"], "must be unique");
+      }
+      if (debate.number !== expectedNumber) {
+        addError(
+          ["debates", String(index), "number"],
+          `must be sequential in debate order; expected ${expectedNumber}`
+        );
+      }
+      numbers.add(debate.number);
     }
 
     if (debate?.label) {

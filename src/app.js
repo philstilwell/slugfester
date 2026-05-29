@@ -22,6 +22,16 @@ const scoreTone = (score) => {
 const average = (values) =>
   Math.round(values.reduce((total, value) => total + value, 0) / values.length);
 
+const debateNumberLabel = (debate) => `Debate ${debate.number}`;
+
+function renderDebateNumber(debate) {
+  return `
+    <span class="debate-number" aria-label="${escapeHtml(debateNumberLabel(debate))}">
+      ${escapeHtml(debate.number)}
+    </span>
+  `;
+}
+
 function renderShell(content) {
   return `
     <header class="site-header">
@@ -58,8 +68,8 @@ function renderShell(content) {
 
 function renderLanding() {
   const debateCards = debates.map(renderDebateCard).join("");
-  const topicList = [...new Set(debates.map((debate) => debate.label))]
-    .map(escapeHtml)
+  const topicList = debates
+    .map((debate) => `${escapeHtml(debate.number)} ${escapeHtml(debate.label)}`)
     .join('<span aria-hidden="true"> | </span>');
 
   app.innerHTML = renderShell(`
@@ -97,7 +107,7 @@ function renderDebateCard(debate) {
   return `
     <article class="debate-card">
       <div class="card-topline">
-        <span>${escapeHtml(debate.label)}</span>
+        <span class="card-label">${renderDebateNumber(debate)}<span>${escapeHtml(debate.label)}</span></span>
         <span>${escapeHtml(debate.duration)}</span>
       </div>
       <h3>${escapeHtml(debate.title)}</h3>
@@ -149,7 +159,7 @@ function renderDebate(id) {
       <section class="debate-hero">
         <div>
           <a class="back-link" href="#">Back to debates</a>
-          <p class="eyebrow">${escapeHtml(debate.label)} · Last rendered: ${escapeHtml(debate.date)}</p>
+          <p class="eyebrow">${escapeHtml(debateNumberLabel(debate))} · ${escapeHtml(debate.label)} · Last rendered: ${escapeHtml(debate.date)}</p>
           <h1>${escapeHtml(debate.title)}</h1>
           <p class="motion large">${escapeHtml(debate.motion)}</p>
           ${debate.sourceNote ? `<p class="source-note">${escapeHtml(debate.sourceNote)}</p>` : ""}
@@ -496,7 +506,7 @@ function renderReferenceAppearance(appearance) {
   return `
     <article class="reference-context-card">
       <div class="card-topline">
-        <a class="reference-debate-link" href="${escapeHtml(debateHref)}">${escapeHtml(appearance.debate.label)}</a>
+        <a class="reference-debate-link" href="${escapeHtml(debateHref)}">${escapeHtml(debateNumberLabel(appearance.debate))} · ${escapeHtml(appearance.debate.label)}</a>
         <span>${escapeHtml(appearance.argument.time)}</span>
       </div>
       <h3>${escapeHtml(appearance.section.title)}</h3>
@@ -504,7 +514,7 @@ function renderReferenceAppearance(appearance) {
       <blockquote>${escapeHtml(appearance.argument.words)}</blockquote>
       <p>${escapeHtml(appearance.tag.context)}</p>
       <p class="reference-debate-return">
-        <a href="${escapeHtml(debateHref)}">Open debate scorecard: ${escapeHtml(appearance.debate.title)}</a>
+        <a href="${escapeHtml(debateHref)}">Open debate scorecard: ${escapeHtml(debateNumberLabel(appearance.debate))} · ${escapeHtml(appearance.debate.title)}</a>
       </p>
     </article>
   `;

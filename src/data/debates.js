@@ -4,6 +4,7 @@ const bias = (slug) => `https://cogbias.site/biases/${slug}/`;
 export const debates = [
   {
     id: "craig-oconnor-god-debate-2026",
+    number: "01",
     title: "Alex O'Connor vs William Lane Craig: Does God Exist?",
     label: "Christian theism and suffering",
     date: "2026-05-21",
@@ -567,6 +568,7 @@ export const debates = [
   },
   {
     id: "craig-hitchens-god-existence-2009",
+    number: "02",
     title: "William Lane Craig vs Christopher Hitchens: Does God Exist?",
     label: "Christian theism and atheism",
     date: "2026-05-28",
@@ -951,6 +953,7 @@ export const debates = [
   },
   {
     id: "hitchens-dsouza-religion-problem-2010",
+    number: "03",
     title: "Christopher Hitchens vs Dinesh D'Souza: Is Religion the Problem?",
     label: "Religion and public reason",
     date: "2026-05-28",
@@ -1291,6 +1294,7 @@ export const debates = [
   },
   {
     id: "lennox-atkins-science-explain-everything-2019",
+    number: "04",
     title: "John Lennox vs Peter Atkins: Can Science Explain Everything?",
     label: "Science and explanation",
     date: "2026-05-28",
@@ -1671,6 +1675,7 @@ export const debates = [
   },
   {
     id: "dillahunty-ten-bruggencate-reasonable-god-2014",
+    number: "05",
     title:
       "Matt Dillahunty vs Sye Ten Bruggencate: Is It Reasonable to Believe God Exists?",
     label: "Logic and presuppositions",
@@ -2060,6 +2065,7 @@ export const debates = [
   },
   {
     id: "dsouza-dillahunty-god-woman-2023",
+    number: "06",
     title: "Dinesh D'Souza vs Matt Dillahunty: Does God Exist? What Is a Woman?",
     label: "Theism and public reason",
     date: "2026-05-28",
@@ -2432,6 +2438,7 @@ export const debates = [
   },
   {
     id: "wood-oconnor-jesus-claim-god-2025",
+    number: "07",
     title: "David Wood vs Alex O'Connor: Did Jesus Claim to Be God?",
     label: "New Testament christology",
     date: "2026-05-28",
@@ -2756,6 +2763,7 @@ export const debates = [
   },
   {
     id: "wood-shermer-god-exist-2022",
+    number: "08",
     title: "David Wood vs Michael Shermer: Does God Exist?",
     label: "Science, morality, and God",
     date: "2026-05-28",
@@ -3104,6 +3112,7 @@ export const debates = [
   },
   {
     id: "peterson-dillahunty-god-debate-2023",
+    number: "09",
     title: "Jordan Peterson vs Matt Dillahunty: The Greatest God Debate In History",
     label: "God and religious meaning",
     date: "2026-05-28",
@@ -3476,6 +3485,7 @@ export const debates = [
   },
   {
     id: "craig-harris-moral-foundations-2011",
+    number: "10",
     title: "William Lane Craig vs Sam Harris: The God Debate II",
     label: "Moral foundations",
     date: "2011-04-12",
@@ -3823,6 +3833,7 @@ export const debates = [
   },
   {
     id: "dsouza-ehrman-god-suffering-evil-2025",
+    number: "11",
     title: "Dinesh D'Souza vs Bart Ehrman: God, Suffering, and Evil",
     label: "Problem of evil",
     date: "2025-12-19",
@@ -4220,6 +4231,7 @@ export const debates = [
   },
   {
     id: "settecase-jump-evidence-for-god-2025",
+    number: "12",
     title: "Joel Settecase vs Tom Jump: Is There Evidence for God?",
     label: "Evidence and presuppositions",
     date: "2025-08-06",
@@ -4562,6 +4574,7 @@ export const debates = [
   },
   {
     id: "knechtle-oconnor-christian-morality-2025",
+    number: "13",
     title: "Cliffe Knechtle vs Alex O'Connor: Christianity, Scripture, and Morality",
     label: "Christian ethics",
     date: "2025-08-08",
@@ -4926,6 +4939,7 @@ export const debates = [
   },
   {
     id: "jones-carrier-god-existence-2025",
+    number: "14",
     title: "Michael Jones vs Richard Carrier: Does God Exist?",
     label: "God and naturalism",
     date: "2025-11-26",
@@ -5234,6 +5248,7 @@ export const debates = [
   },
   {
     id: "hitchens-lennox-is-god-great-2017",
+    number: "15",
     title: "Christopher Hitchens vs John Lennox: Is God Great?",
     label: "God and anti-theism",
     date: "2017-06-20",
@@ -5558,6 +5573,7 @@ export const debates = [
   },
   {
     id: "hirsi-ali-dawkins-god-debate-2024",
+    number: "16",
     title: "Ayaan Hirsi Ali vs Richard Dawkins: The God Debate",
     label: "Faith and civilization",
     date: "2024-06-03",
@@ -5890,6 +5906,7 @@ export const debates = [
   },
   {
     id: "collins-oconnor-god-existence-2024",
+    number: "17",
     title: "Francis Collins vs Alex O'Connor: Does God Exist?",
     label: "Science and faith",
     date: "2024-12-12",

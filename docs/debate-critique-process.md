@@ -13,7 +13,7 @@ Create a condensed debate scorecard, not a full transcript replacement. Each pag
 - YouTube URL and debate title.
 - Transcript source, noted in `sourceNote`.
 - Last rendered date in `YYYY-MM-DD` format.
-- Speaker names, unique debate label, side labels, duration, motion, and a one-sentence summary.
+- Two-digit zero-padded debate number, speaker names, unique debate label, side labels, duration, motion, and a one-sentence summary.
 - Short representative quotes for both sides.
 
 Never invent direct quotations. If transcript text is lightly cleaned for readability, say so in `sourceNote`.
@@ -23,7 +23,7 @@ Never invent direct quotations. If transcript text is lightly cleaned for readab
 Every debate object should produce this order:
 
 1. Sticky header with Slugfester branding, a `Debates` link, and an `External Sites` capsule for LogFall and CogBias.
-2. Hero metadata: debate label plus `Last rendered: YYYY-MM-DD`.
+2. Hero metadata: `Debate NN` plus debate label plus `Last rendered: YYYY-MM-DD`.
 3. Smaller debate title and motion.
 4. Representative quotes from both sides.
 5. AI-generated scoring note.
@@ -122,5 +122,6 @@ Before committing a new debate:
 - The scoring note makes clear that scores are AI-generated.
 - `sourceNote` identifies how the transcript was obtained or cleaned.
 - The page follows the locked design in `youtube-debate-assessment-template.md`.
+- The debate number is two-digit, zero-padded, unique, and sequential in debate-list order.
 - The debate label is distinct from every other listed debate.
 - `npm run check` passes.
