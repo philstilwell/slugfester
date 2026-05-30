@@ -8227,5 +8227,1341 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "hitchens-olasky-religion-grace-2007",
+    number: "24",
+    title: "Christopher Hitchens vs Marvin Olasky: Religion, Grace, and Secular Morality",
+    label: "Religion, grace, and secular morality",
+    date: "2026-05-30",
+    duration: "1 hr 37 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=lcHMSNiI97w",
+    motion:
+      "Does religion poison everything, or does Christianity provide grace, charity, moral transformation, and historical credibility that defeat that charge?",
+    summary:
+      "Hitchens argues religion is man-made authority and moral poison; Olasky answers that Christianity produces grace, charity, reform, and personal transformation.",
+    sourceNote:
+      "Built from YouTube's auto-generated English captions for the atheist.archive upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "religion poisons everything",
+        context:
+          "Hitchens's phrase frames the debate as a broad indictment of religious authority, doctrine, and moral permission."
+      },
+      con: {
+        text: "Christianity was actually the antidote",
+        context:
+          "Olasky uses his own conversion and Christian service examples to argue that faith heals rather than poisons."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Anti-theist critique",
+        speaker: "Christopher Hitchens",
+        color: "teal"
+      },
+      con: {
+        name: "Christian grace",
+        speaker: "Marvin Olasky",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 84,
+      con: 79
+    },
+    sections: [
+      {
+        title: "Metaphysics and authority",
+        timebox: "02:31-22:10",
+        score: {
+          pro: 85,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "03:00",
+              role: "Authority critique",
+              words:
+                "Hitchens says religious claims arise from fearful infancy and let speakers claim God's mind, rules, and temporal power.",
+              score: 85,
+              critique:
+                "Hitchens's opening is strong because it separates two burdens: proving a creator and proving that priests, imams, rabbis, or churches know that creator's wishes. The second burden is where he gains most ground. Dietary rules, sexual rules, censorship, divine right, theocracy, and postmortem punishment all become mechanisms of present authority. His North Korea analogy gives the anti-theist objection emotional clarity: endless praise and surveillance would be tyranny, not consolation. The weakness is that he moves quickly from abusive authority to the falsity of religious metaphysics. A believer can reject theocracy while keeping theism. The score is high because the authority critique is direct and powerful, though not a complete disproof.",
+              tags: []
+            },
+            con: {
+              time: "18:05",
+              role: "Overstatement check",
+              words:
+                "Olasky says Hitchens has a weak case because religion poisons everything is far broader than religious evil proves.",
+              score: 77,
+              critique:
+                "Olasky's first reply is strategically sound: he attacks the word 'everything.' If religion produces any genuine courage, mercy, art, reform, or charity, then the literal universal claim fails. He also notes that biblical figures such as Abraham, Moses, David, and Job argue with God rather than behave as simple slaves. That helps complicate Hitchens's totalitarian frame. The weakness is that Olasky sometimes treats Hitchens's slogan as a statistical claim needing a percentage breakdown, when Hitchens often means that religion corrupts the things it touches by adding divine warrant. The reply scores solidly because it exposes rhetorical overreach, but it does not yet answer the deeper authority complaint.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Charity and evidence",
+        timebox: "24:45-42:00",
+        score: {
+          pro: 83,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "37:55",
+              role: "Utility rebuttal",
+              words:
+                "Hitchens says philanthropy is not poison, but charitable work does not prove religious truth or moral authority.",
+              score: 83,
+              critique:
+                "Hitchens's utility rebuttal is logically important. He grants that charity and philanthropy are not poison, then asks whether they prove the religion that motivates them. His Uganda example makes the point vivid: one Christian group rehabilitates children while another faith-based army brutalizes them. If social service validates religion, then Hamas, Hezbollah, and many rival faiths can claim similar credit. Hitchens also notes that secular human-rights workers can do the same work without conversion incentives or heavenly rewards. The weakness is that he risks discounting the motivational reality of faith too quickly. Even if charity does not prove doctrine, it can still rebut a crude poison-everything claim. The score is strong because the truth-utility distinction holds.",
+              tags: []
+            },
+            con: {
+              time: "24:45",
+              role: "Charity evidence",
+              words:
+                "Olasky cites adoptions, AIDS orphanages, after-school work, ex-addicts, and youth programs motivated by Christian belief.",
+              score: 85,
+              critique:
+                "Olasky's charity evidence is his strongest section because it directly counters the most sweeping version of Hitchens's claim. The Mount Zion adoptions, Children of Zion home, Anacostia after-school work, Victory Outreach, and youth homes are concrete, localizable examples of sacrificial service. He does not merely say religion comforts people; he shows people spending time, money, and risk on vulnerable children and addicts because of Christian belief. The weakness is that these examples establish beneficial motivation more than doctrinal truth. Good fruits can coexist with false theology or harmful institutions. Still, the score is high because Olasky successfully makes 'religion poisons everything' look too blunt to fit the social record.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The good works rebut total poison, but do not by themselves establish Christian truth."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Scripture and violence",
+        timebox: "49:15-1:06:55",
+        score: {
+          pro: 88,
+          con: 72
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:02:20",
+              role: "Textual indictment",
+              words:
+                "Hitchens attacks the firstborn of Egypt, Amalekites, genital cutting, and religious contempt for women as divine-permission harms.",
+              score: 88,
+              critique:
+                "Hitchens's scriptural indictment is forceful because it moves from institutional misconduct to revered texts and doctrines. The firstborn of Egypt, Amalekite destruction, genital cutting, and religious contempt for women all test whether divine warrant can make decent people accept cruelty. He also states the mechanism cleanly: good people can do wicked things when they believe God commands them. That is directly relevant to the motion and to Olasky's appeal to biblical grace. The weakness is that Hitchens compresses many traditions and readings, leaving little room for nonliteral, reforming, or internally critical theology. Even so, the score is high because the examples expose a serious moral burden for biblical authority.",
+              tags: []
+            },
+            con: {
+              time: "52:20",
+              role: "Context defense",
+              words:
+                "Olasky says the Bible is a redemption story, and Amalekite warfare belongs in a larger cosmic-war context.",
+              score: 72,
+              critique:
+                "Olasky's context defense has one fair element: proof-texting violent passages without the larger biblical narrative can distort how believers understand scripture. He explains Christianity as creation, fall, rescue, love, and redemption rather than a mere rulebook, which is relevant to Hitchens's portrayal. The weakness is acute when he calls the Amalekites the Al-Qaeda of the time and analogizes divine slaughter to World War II bombing. That may supply a wartime frame, but it does not answer why an all-good deity would command collective destruction, nor how listeners could verify the context rather than simply trust it. The score is lower because the defense asks for special credibility at the hardest point.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The defense grants biblical violence special credibility without a clear independent standard for the exception."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Design and miracles",
+        timebox: "55:05-1:02:10",
+        score: {
+          pro: 82,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "57:55",
+              role: "Evolution answer",
+              words:
+                "Hitchens says extinction and evolutionary contingency show a pitiless process with no sign it intended humans.",
+              score: 82,
+              critique:
+                "Hitchens's evolution answer is a useful counterweight to miracle and design appeals. The scale of extinction, the contingency of evolutionary branching, and the indifference of the stars make the universe hard to read as a human-centered plan. His Gould reference also highlights that evolution is not a ladder aimed at us but a branching process that could have gone otherwise. The weakness is that contingency and waste undermine simple design stories more than they logically rule out every theistic account. A believer may say divine purposes use long, strange processes. The score is strong because Hitchens directly answers the anthropocentric inference, but not decisive against all possible design theology.",
+              tags: []
+            },
+            con: {
+              time: "55:05",
+              role: "Origin odds",
+              words:
+                "Olasky cites origin-of-life improbability and says resurrection is not so weird if God created the universe.",
+              score: 76,
+              critique:
+                "Olasky's origin-odds move has some intuitive power: if life itself is deeply improbable under unguided assumptions, then dismissing miracles as impossible may be too quick. He also correctly notes that a creator God would change the prior probability of resurrection. The weakness is that origin-of-life improbability does not establish the Christian God, and citing huge odds can mislead when the relevant probability model is contested. Moving from protein sequences to virgin birth and resurrection also shifts domains without enough historical evidence. The argument is relevant as a possibility opener, but it leans on uncertainty rather than positive demonstration. The score is fair but limited by the gap from mystery to miracle.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Origin-of-life uncertainty is used too quickly as support for Christian miracle claims."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Grace and regimes",
+        timebox: "1:07:30-1:15:45",
+        score: {
+          pro: 78,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:05:30",
+              role: "Virtue purity",
+              words:
+                "Hitchens says returning lost money or doing good should stand on human integrity, not religious duty or reward.",
+              score: 78,
+              critique:
+                "Hitchens's virtue-purity point is morally serious. His cab-driver example asks why a decent act needs religious credit at all: if you find someone's money, you return it because that is the right thing to do. Adding duty to God, heavenly reward, or proof of Islam may pollute the simple integrity of the act. This pushes against Olasky's tendency to count charitable fruits for Christianity. The weakness is that motivations can be mixed without ruining an action. Religious gratitude, duty, and love may deepen rather than contaminate service for many believers. The score is solid because Hitchens protects moral autonomy, but not higher because he underestimates sincere religious motivation.",
+              tags: []
+            },
+            con: {
+              time: "1:11:40",
+              role: "Grace answer",
+              words:
+                "Olasky answers with Soviet and Chinese atheism, Christian grace, Newton, Wilberforce, and his own transformed marriage.",
+              score: 82,
+              critique:
+                "Olasky's grace answer is rhetorically effective because it broadens the comparison. If Hitchens counts religion's atrocities, Olasky says secular regimes and atheist schools in the Soviet Union and China must also enter the ledger. He then pivots to Christianity's distinctive claim: grace liberates people from bargaining religion and can produce repentance, abolitionism, perseverance, and personal reform. John Newton, Wilberforce, and his marriage testimony give the abstract defense human texture. The weakness is that 'atheism in power' blurs atheism, dictatorship, ideology, nationalism, and state terror. The personal testimony also cannot carry the whole public claim. The score is strong because grace directly counters poison, but the comparison overreaches.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument shifts from atheism as unbelief to totalizing secular dictatorships as if they were identical."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality and pluralism",
+        timebox: "1:20:50-1:36:30",
+        score: {
+          pro: 86,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:23:00",
+              role: "Occam reply",
+              words:
+                "Hitchens says religious diversity, tsunamis, plague, and polio are simpler under naturalism than divine explanation.",
+              score: 86,
+              critique:
+                "Hitchens's Q&A answer is one of his cleanest epistemic moves. Religious diversity is unsurprising if humans make gods, but puzzling if one God plainly made and instructed humans. Likewise, tsunamis, plague, and disease do not require moralized explanations once geology and germ theory are available. His polio example then makes the cost concrete: faith-based suspicion can undo secular medical progress. The weakness is that natural explanation of disasters and disease does not address every argument for God or every nonliteral theology. But the score is high because Hitchens applies Occam's razor to specific explanatory failures and shows how bad explanations can produce measurable public harm.",
+              tags: []
+            },
+            con: {
+              time: "1:28:45",
+              role: "Common grace",
+              words:
+                "Olasky says common grace and inherited Christian moral capital explain secular morality and complicate anti-religious history.",
+              score: 79,
+              critique:
+                "Olasky's common-grace reply is thoughtful because it avoids saying nonbelievers cannot be moral. He points to theological resources for explaining shared conscience and to cultural inheritance: societies may live off moral capital developed by earlier religious teaching. He also corrects Hitchens's simplified inoculation history with Cotton Mather, which is a useful reminder that religion's relation to science is mixed. The weakness is that common grace can become an explanatory net cast over whatever secular morality already does. If unbelievers act well, the theory can credit God or Christianity without independently proving the connection. The score is solid because the reply is nuanced, but it risks assuming the Christian framework it needs to defend.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "Common grace explains secular morality by assuming the Christian framework whose authority is disputed."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 84,
+        strengths: [
+          "Hitchens sharply distinguished a possible designer from the religious claim to know divine rules and permissions.",
+          "His strongest passages showed how divine warrant can intensify violence, sexual control, and moral complacency.",
+          "He repeatedly separated charitable usefulness from the truth or authority of religious doctrine."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes treated religious harm and priestly power as if they directly settled the metaphysical truth question.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His broad indictment compressed diverse religions and reforming traditions into a mostly hostile pattern.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 79,
+        strengths: [
+          "Olasky found the debate's best pressure point by challenging the word 'everything' in Hitchens's slogan.",
+          "His concrete charity examples and grace narrative made Christianity's constructive social effects hard to dismiss.",
+          "He offered a warmer, more self-critical Christianity than the authoritarian target Hitchens preferred."
+        ],
+        blunders: [
+          {
+            text:
+              "He often moved from Christian good works to Christian truth or moral authority without enough bridging argument.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His defense of biblical violence relied on special context and divine credibility at the very point under challenge.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: "hitchens-ramadan-islam-peace-2010",
+    number: "25",
+    title: "Christopher Hitchens vs Tariq Ramadan: Is Islam a Religion of Peace?",
+    label: "Islam as peace or power",
+    date: "2026-05-30",
+    duration: "1 hr 31 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=mMraxhd9Z9Q",
+    motion:
+      "Is Islam a religion of peace, or do its claims, institutions, and enforcement patterns make that description untenable?",
+    summary:
+      "Hitchens argues Islam's total claims and coercive defenses make peace impossible; Ramadan argues the question essentializes a diverse tradition whose resources can move people toward peace.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the 92nd Street Y upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "no such thing as a religion of Peace",
+        context:
+          "Hitchens uses the phrase to reject the motion before narrowing his critique to Islam's current claims and pressures."
+      },
+      con: {
+        text: "Islam is a religion for human beings",
+        context:
+          "Ramadan uses the line to argue that Islam addresses violent and peaceful human realities rather than existing as a simple slogan."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Islam-not-peace critique",
+        speaker: "Christopher Hitchens",
+        color: "teal"
+      },
+      con: {
+        name: "Reformist Islam",
+        speaker: "Tariq Ramadan",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 85,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Framing the motion",
+        timebox: "05:21-23:10",
+        score: {
+          pro: 84,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "07:51",
+              role: "Peace denial",
+              words:
+                "Hitchens says there is no religion of peace by definition, then compares Christendom's collapse with the caliphate's continuing appeal.",
+              score: 84,
+              critique:
+                "Hitchens's framing is forceful because it refuses to let Islam be treated as uniquely peaceful when religious empires have often fused salvation, identity, and war. The Christendom comparison usefully keeps the case from sounding like only an anti-Muslim indictment: he says Christianity also discredited itself as a civilizational peace project. He then pivots to the caliphate as the currently live version of religious empire. The weakness is that 'no religion of peace by definition' is stronger than his evidence requires. Religions can contain war stories, imperial politics, and peaceful disciplines at once. The score is high because he sets a hard burden for the motion, but the universal claim overreaches.",
+              tags: []
+            },
+            con: {
+              time: "19:15",
+              role: "Question reframing",
+              words:
+                "Ramadan says the question is not accurate, because religions deal with human beings who carry both violence and peace.",
+              score: 82,
+              critique:
+                "Ramadan's reframing is philosophically useful because it challenges a binary slogan before arguing facts. Instead of saying Islam is simply peaceful, he says religions address violent human beings and must be judged by how they educate, restrain, and redirect violence. That gives him a more nuanced burden and avoids defending every Muslim act as representative. The weakness is that reframing can feel evasive when the public question concerns real institutions, clerics, laws, and threats made in Islam's name. Listeners still need an answer about whether Islam's authoritative resources tend toward peace or coercion. The score is strong because the reframing is fair, but not decisive because it delays the hardest institutional question.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Text and interpretation",
+        timebox: "11:25-29:45",
+        score: {
+          pro: 86,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "11:25",
+              role: "Total-claim argument",
+              words:
+                "Hitchens says Islam claims final revelation, a perfect prophet, and a flawless book, making dissent liable to heresy and coercion.",
+              score: 86,
+              critique:
+                "Hitchens's total-claim argument is one of his clearest burdens. If a religion claims final revelation, a perfect prophet, a flawless book, and rules over sex, banking, diet, politics, and the afterlife, then disagreement can become rebellion against God rather than ordinary debate. That helps explain why blasphemy, apostasy, and schism become politically dangerous. The weakness is his wordplay from 'total' to 'totalitarian,' which compresses comprehensiveness and political tyranny too quickly. A comprehensive moral vision can be pluralist in practice if its institutions accept limits. Still, the score is high because Hitchens identifies a real pressure point in absolutist authority and connects it to coercive outcomes.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument shifts from total religious scope to totalitarian politics faster than the inference warrants."
+                }
+              ]
+            },
+            con: {
+              time: "21:37",
+              role: "Reader-centered reply",
+              words:
+                "Ramadan answers that the problem is not the book but the reader, because texts are mediated through interpretation.",
+              score: 85,
+              critique:
+                "Ramadan's reader-centered reply is strong because it introduces hermeneutics where Hitchens often treats text and outcome as nearly automatic. The line that the problem is not the book but the reader gives him space to distinguish scripture, jurisprudence, history, media visibility, and current political use. It also lets him acknowledge bad readings without surrendering the tradition as such. The weakness is that the reply can become too elastic: if violent readings are always reader failures, then the text's own role in enabling those readings becomes difficult to assess. The score is high because interpretation is indispensable, but capped because Ramadan needs clearer criteria for better and worse readings.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Jihad and history",
+        timebox: "24:05-32:55",
+        score: {
+          pro: 82,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "09:05",
+              role: "Violent-pattern case",
+              words:
+                "Hitchens links caliphate movements, attacks, schism, apostasy, sexual repression, and apocalypse teaching to Islam's violent potential.",
+              score: 82,
+              critique:
+                "Hitchens's violent-pattern case is relevant because it combines ideology, institutions, and repeated flashpoints rather than relying on one atrocity. The caliphate nostalgia, attacks from Madrid to India, sectarian civil war, apostasy danger, and gender control all speak to the motion's practical stakes. He is also careful at the start to place Islam within a broader critique of religion. The weakness is that pattern arguments need careful base rates and counterexamples. Hitchens lists coercive forms more than he compares them with peaceful Muslim practice, reformist jurisprudence, or ordinary religious life. The score is strong because the examples are materially relevant, but limited because the selection remains weighted toward the harshest evidence.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "The evidence selection centers coercive Islamist examples while giving little weight to peaceful Muslim practice."
+                }
+              ]
+            },
+            con: {
+              time: "24:05",
+              role: "Jihad redefinition",
+              words:
+                "Ramadan defines jihad as resisting the bad to promote the good, beginning with inner education and mutual knowledge.",
+              score: 84,
+              critique:
+                "Ramadan's jihad redefinition is constructive because he offers a positive account instead of merely denying terrorism. By defining jihad as resisting the bad to promote the good, beginning with one's own inner tensions, he supplies a religious grammar for self-discipline, mutual knowledge, and peaceful coexistence. His appeal to diversity among tribes and nations also answers Hitchens's claim that final revelation must erase others. The weakness is that the pacifying interpretation still competes with militant interpretations that have texts, scholars, and movements behind them. Ramadan acknowledges this, but his account needs more institutional traction. The score is strong because it is textually and ethically relevant, though not enough to settle the public-authority problem.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Blasphemy pressure",
+        timebox: "34:10-50:05",
+        score: {
+          pro: 88,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "36:10",
+              role: "Intimidation evidence",
+              words:
+                "Hitchens says cartoons, Quran-burning threats, and public fear show preemptive cowering backed by force.",
+              score: 88,
+              critique:
+                "Hitchens's intimidation evidence is powerful because it moves the debate from doctrine to visible constraints on speech. The Danish cartoons, Yale University Press, Quran-burning panic, and threats against writers make his point concrete: societies begin censoring themselves before violence even occurs. This directly supports his claim that a religion can compromise peace by making criticism dangerous. The weakness is that he sometimes implies a single Islamic will behind reactions that Ramadan plausibly separates into states, clerics, mobs, and media incentives. Still, the examples are serious and central to the motion. The score is high because Hitchens shows how fear, not only formal law, can make religious power coercive.",
+              tags: []
+            },
+            con: {
+              time: "47:35",
+              role: "Instrumentalization reply",
+              words:
+                "Ramadan says he urged Danish Muslims not to react, and that states and politicians instrumentalized outrage for their own purposes.",
+              score: 80,
+              critique:
+                "Ramadan's instrumentalization reply gives needed causal complexity. He says he told Danish Muslims to take critical distance, and he identifies regimes that used popular anger against the West while preventing protest against themselves. That helps explain why blasphemy crises can grow through authoritarian politics rather than pure theology. The weakness is that political use does not erase religious content. The threats, offense claims, and censorship demands still invoked Islam, sacred text, and honor, so Hitchens's concern about religious intimidation remains live. The score is strong enough because Ramadan adds an important missing cause, but lower because the explanation can divert from the religious warrant used by the actors.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "Political instrumentalization matters, but it can distract from the religious justification used for intimidation."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Authority and condemnation",
+        timebox: "40:30-64:15",
+        score: {
+          pro: 87,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "40:35",
+              role: "Authority challenge",
+              words:
+                "Hitchens asks where the authoritative Sunni fatwa against Samarra, Hamas, or anti-Jewish conspiracy material was.",
+              score: 87,
+              critique:
+                "Hitchens's authority challenge is sharply aimed at Ramadan's diversity defense. If Islam has many voices, Hitchens asks why clear condemnations of sectarian mosque bombings, Hamas suicide attacks, and anti-Jewish conspiracy material do not carry enough force to change behavior or define the mainstream. The question is not merely whether some Muslims condemn violence, but whether religious authority can discipline violent claimants. The weakness is that Hitchens demands visible authority while elsewhere criticizing the idea that religion could have legitimate moral authority at all. That tension makes the standard slightly unstable. The score remains high because the challenge exposes a real gap between private condemnation and public institutional control.",
+              tags: []
+            },
+            con: {
+              time: "56:15",
+              role: "Crisis admission",
+              words:
+                "Ramadan says Islam has a crisis of authority, but many councils and scholars condemn violence and promote democratization.",
+              score: 79,
+              critique:
+                "Ramadan's crisis admission is honest and helps his credibility. He does not pretend that Islam has a clean, centralized mechanism for ruling out dangerous fatwas. He says the tradition has diversity, councils, mainstream commitments to democratization, and scholars who reject attacks on civilians. That directly answers the charge that no Muslim voices exist. The weakness is that his answer partly confirms Hitchens's worry: if authority is fragmented and media-rich radicals can compete with reformers, then peaceful interpretations may be morally better without being socially stronger. The score is solid because Ramadan acknowledges the problem and supplies counterevidence, but lower because condemnation without enforcement leaves the hard practical issue unresolved.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Secular law and citizenship",
+        timebox: "68:20-90:40",
+        score: {
+          pro: 85,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "69:10",
+              role: "Secular guarantee",
+              words:
+                "Hitchens says a secular state and godless Constitution are the only guarantee of religious freedom, speech, and minority rights.",
+              score: 85,
+              critique:
+                "Hitchens's secular-guarantee argument is strong because it turns his critique into a political principle. A state that keeps religion out of government can protect Muslims, Christians, Jews, atheists, heretics, and critics precisely because no sacred authority controls law. His later answers on Kosovo, Bosnia, Turkey, Cyprus, Kurds, and Armenia also show that he is thinking institutionally, not only theologically. The weakness is that 'only guarantee' is too absolute. Secular states can still be nationalistic, authoritarian, or discriminatory, and religious citizens can contribute to liberal norms. The score is high because the constitutional point directly answers pluralism, but restrained because secular design is a necessary safeguard rather than a magic one.",
+              tags: []
+            },
+            con: {
+              time: "81:15",
+              role: "Citizenship answer",
+              words:
+                "Ramadan says Muslim citizens can obey the law, speak the language, show loyalty, and understand sharia as justice.",
+              score: 84,
+              critique:
+                "Ramadan's citizenship answer is one of his most reassuring practical passages. He says Western Muslims should abide by the law, speak the language, be loyal to their countries, and seek mutual respect and equal rights. His account of sharia as a way toward faithfulness, justice, and constitutional equality directly counters fears of a parallel legal takeover. The weakness is that 'sharia' shifts from a historically developed legal tradition with penalties to a broad aspiration toward justice. That may be his sincere reformist reading, but it does not dissolve why many listeners associate the term with hard legal claims. The score is strong because he gives a civic answer, though terminology remains contested.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Sharia shifts from concrete legal tradition to broad justice language, softening the disputed hard cases."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 85,
+        strengths: [
+          "Hitchens avoided a merely anti-Muslim case by comparing Islam with religious empire and coercion more generally.",
+          "His strongest evidence concerned public intimidation, blasphemy pressure, fatwa authority, and the cost to free inquiry.",
+          "He offered a clear constructive principle: secular constitutional limits protect religious diversity better than religious authority does."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes slid from comprehensive religious claims to totalitarian political conclusions faster than the evidence allowed.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His evidence selection centered Islam's most coercive public forms while giving less attention to ordinary peaceful practice.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Ramadan correctly resisted the motion's binary wording and emphasized interpretation, diversity, and historical context.",
+          "He acknowledged the crisis of Islamic authority instead of pretending that violent claimants are imaginary.",
+          "His citizenship and sharia-as-justice answers gave a concrete reformist account of Muslim life inside secular democracies."
+        ],
+        blunders: [
+          {
+            text:
+              "His appeal to many interpretations sometimes made it unclear what evidence would count against Islam rather than against a bad reading.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His political-instrumentalization reply sometimes diverted from the religious warrants invoked by the intimidators themselves.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His use of sharia shifted between legal tradition and broad moral aspiration when the hard cases became most visible.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: "turek-hitchens-reality-theism-atheism-2011",
+    number: "26",
+    title: "Frank Turek vs Christopher Hitchens: What Best Explains Reality?",
+    label: "Reality, theism, and atheism",
+    date: "2026-05-30",
+    duration: "2 hr 6 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=uDCDTaKfzXU",
+    motion:
+      "What best explains reality: theism, with a personal creator and revelation, or atheism, with no supernatural dimension?",
+    summary:
+      "Turek argues that cosmology, fine-tuning, DNA, morality, logic, and Jesus point to theism; Hitchens argues that natural explanation, religious diversity, and moral independence undercut the leap to Christianity.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the Cross Examined upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "spaceless, timeless, immaterial, powerful, moral, personal, intelligent creator",
+        context:
+          "Turek's opening phrase summarizes the cumulative target of his COSMOS case for theism."
+      },
+      con: {
+        text: "it works without that assumption",
+        context:
+          "Hitchens uses the line to deny that God adds explanatory value to physics, morality, or ordinary human life."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theism explains reality",
+        speaker: "Frank Turek",
+        color: "teal"
+      },
+      con: {
+        name: "Atheism explains reality",
+        speaker: "Christopher Hitchens",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 80,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Cosmos and first cause",
+        timebox: "03:19-49:00",
+        score: {
+          pro: 84,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "03:19",
+              role: "First-cause case",
+              words:
+                "Turek says the universe had a beginning, so all space, matter, and time require a cause beyond nature.",
+              score: 84,
+              critique:
+                "Turek's first-cause case is clear and relevant to the motion. He gives the audience a memorable structure, cites expansion, thermodynamics, radiation afterglow, galaxy seeds, and relativity, then asks whether nothing or someone better explains something. The strongest move is insisting that if nature itself began, ordinary natural causes cannot simply be assumed before nature exists. The weakness is that the leap from cosmic beginning to personal, moral creator still needs several contested steps. A first cause, if granted, is not yet Christianity, revelation, or resurrection. The score is strong because the burden is real and focused, but not higher because the conclusion outruns the cosmological evidence presented.",
+              tags: []
+            },
+            con: {
+              time: "27:35",
+              role: "Deism gap",
+              words:
+                "Hitchens says physics may leave a prime mover open, but it cannot get to prayers, commandments, virgin birth, or resurrection.",
+              score: 86,
+              critique:
+                "Hitchens's deism-gap reply is one of the debate's strongest clarifying moves. He concedes that human beings cannot know there was no prime mover, which keeps the rebuttal modest, then sharply separates that possibility from a personal God who supervises sex, food, prayer, punishment, and revelation. That directly targets Turek's cumulative strategy: even a cosmic cause does not identify Jesus or the Bible. The weakness is that Hitchens sometimes treats the additional steps as impossible rather than merely unshown in this exchange. Still, the score is high because he enforces burden discipline and prevents cosmology from doing work that only historical or theological evidence could do.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Order and design",
+        timebox: "10:48-44:05",
+        score: {
+          pro: 82,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:48",
+              role: "Fine-tuning appeal",
+              words:
+                "Turek argues that life-permitting constants, gravity, and cosmic order point to design rather than unguided accident.",
+              score: 82,
+              critique:
+                "Turek's fine-tuning appeal is rhetorically effective because it makes abstract constants feel vivid. The gravity tape-measure and aircraft-carrier analogies help listeners grasp how narrow life-permitting ranges are claimed to be, and he correctly notes that Darwinian evolution cannot explain why a life-permitting universe exists before life begins. The weakness is that the argument leans heavily on selected authorities and analogies without comparing rival explanations such as selection effects, multiverse proposals, or deeper physical necessity. Fine-tuning raises a genuine explanatory question, but theism is asserted as the best answer faster than it is defended. The score is strong because the problem is real, but the inference remains compressed.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Physicist quotations carry more argumentative weight than the live defense of why theism beats rival explanations."
+                }
+              ]
+            },
+            con: {
+              time: "38:50",
+              role: "Waste objection",
+              words:
+                "Hitchens answers design with cosmic decay, dead planets, extinction, disease, and a designer responsible for the observed waste.",
+              score: 86,
+              critique:
+                "Hitchens's waste objection is powerful because it accepts Turek's design frame for the sake of argument and asks what kind of designer the observed world implies. Dead planets, cosmic heat death, Andromeda's collision course, disease, and mass extinction all pressure a simple benevolent-design inference. His point is not merely emotional; it is comparative explanation. A universe full of waste and contingency is less expected on a neat providential design story than on impersonal processes. The weakness is that theists can answer with unknown purposes, fall, soul-making, or eschatology, though those replies add their own burdens. The score is high because Hitchens turns design evidence against the intended conclusion.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "DNA and complexity",
+        timebox: "14:24-58:20",
+        score: {
+          pro: 78,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "14:24",
+              role: "Information argument",
+              words:
+                "Turek says specified complexity and DNA information are messages, and messages only come from minds.",
+              score: 78,
+              critique:
+                "Turek's DNA argument has an intuitive hook: human beings regularly infer minds from meaningful arrangements, and DNA does encode biological information in an ordered sequence. That makes the argument easy to follow and relevant to whether intelligence best explains life. The weak point is the slide from human language and beach writing to biochemical information. DNA is informational in a technical sense, but that does not automatically make it a message with a sender in the same way English words are. Origin-of-life difficulty also does not by itself identify a designer. The score is solid because the challenge to unguided origin is serious, but lower because the central analogy carries too much weight.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Information shifts from intentional human messages to biochemical sequence information as if the same inference applies."
+                }
+              ]
+            },
+            con: {
+              time: "55:40",
+              role: "Blind-watchmaker reply",
+              words:
+                "Hitchens says Paley-style design mistakes organisms for artifacts, while evolution explains complexity through long, wasteful selection.",
+              score: 82,
+              critique:
+                "Hitchens's blind-watchmaker reply is relevant because it targets the mechanism behind the analogy. Organisms are not watches or beach graffiti; they reproduce, vary, inherit traits, and undergo selection across immense time with extinction and failed adaptations everywhere. That directly weakens the inference from apparent design to a designer. He also links the point to the long delay before alleged revelation, making the natural history morally awkward for Christianity. The weakness is that he moves quickly from evolutionary complexity to origin-of-life confidence, where the evidence is less settled than ordinary biological evolution. The score is strong because he rebuts the artifact analogy, but not decisive against every design argument.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality and human solidarity",
+        timebox: "18:26-91:50",
+        score: {
+          pro: 82,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "18:26",
+              role: "Moral-law argument",
+              words:
+                "Turek says atheists can know right and wrong, but cannot justify objective moral values from molecules in motion.",
+              score: 82,
+              critique:
+                "Turek's moral-law argument is careful in one important respect: he does not claim atheists are immoral or ignorant of right and wrong. Instead, he asks what grounds objective moral obligations if materialism is true. That makes the objection stronger and more charitable than a behavior-based attack. The weakness is that the key premise remains underdefended: objective moral truths may require grounding, but it does not follow automatically that the ground must be a personal God. Platonist, contractualist, naturalist, and constructivist accounts need comparison rather than dismissal as molecules. The score is strong because Turek presses a real metaethical burden, but capped because he assumes too much about the only possible answer.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The argument treats divine grounding as required before sufficiently ruling out rival accounts of objective morality."
+                }
+              ]
+            },
+            con: {
+              time: "62:25",
+              role: "Moral reciprocity",
+              words:
+                "Hitchens says humans know duties through solidarity, and no moral action is available to believers alone.",
+              score: 87,
+              critique:
+                "Hitchens's moral reciprocity reply is strong because it separates moral capacity from religious belief. The challenge to name one moral action a believer can perform that a nonbeliever cannot is simple, memorable, and hard to answer. His evolutionary-social account also explains why murder, theft, and perjury would be ruinous for primates living together. The strongest counterpunch is that believing God commands an action can license cruelty rather than restrain it. The weakness is that this answers moral knowledge and behavior more than ultimate moral ontology. Turek is asking not only how people cooperate, but what makes obligation objectively binding. The score is high because Hitchens wins much of the practical moral dispute.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Miracles and revelation",
+        timebox: "23:15-87:00",
+        score: {
+          pro: 78,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "44:30",
+              role: "Miracle defense",
+              words:
+                "Turek says Hume's miracle test fails because singular historical events can be known through forensic evidence.",
+              score: 78,
+              critique:
+                "Turek's miracle defense correctly notes that not all knowledge comes from repeatable laboratory science. Historical and forensic reasoning often assess singular events, so rarity alone cannot make an event unbelievable. That is a fair reply to crude versions of Hume. The weakness is that miracles are not merely rare events; they are alleged suspensions or overrides of ordinary causal expectation. Comparing resurrection to one's birth or to the Big Bang blurs the difference between unusual natural events and supernatural intervention. Turek also gestures to New Testament reliability more than he demonstrates it in this exchange. The score is solid because he blocks one simplistic objection, but lower because the positive miracle evidence remains thin.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The rebuttal treats rare natural events and supernatural miracle claims as if they carried the same evidential burden."
+                }
+              ]
+            },
+            con: {
+              time: "31:52",
+              role: "Humean test",
+              words:
+                "Hitchens says miracle reports are more likely misperception, rumor, or religious manufacture than suspended natural law.",
+              score: 88,
+              critique:
+                "Hitchens's miracle test is one of his sharpest evidential arguments. He frames Hume's point plainly: when alleged natural-law suspensions are reported through witnesses, traditions, or institutions, misperception, rumor, and embellishment are usually more probable than the miracle. His Mother Teresa example then shows a live case where ordinary medical explanation was converted into saint-making propaganda. That makes the abstract test concrete and relevant to how religions manufacture authority. The weakness is that a general skepticism of miracle reports can become too sweeping if an individual case has unusually strong evidence. Still, Turek has not supplied that level of evidence here. The score is high because Hitchens identifies the correct evidential standard.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Burden and worldview",
+        timebox: "67:05-125:35",
+        score: {
+          pro: 80,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "120:05",
+              role: "Cumulative close",
+              words:
+                "Turek says Hitchens gives no atheistic explanation for universe, fine-tuning, life, morality, logic, math, or freedom.",
+              score: 80,
+              critique:
+                "Turek's cumulative close is strategically coherent. He returns to the motion and argues that Hitchens has criticized religion more than he has explained the existence of the universe, fine-tuning, life, morality, logic, mathematics, science, or freedom. That is a legitimate burden reminder in a debate framed as comparative explanation. His sacrifice example also gives Christianity a positive moral image instead of only an abstract proof. The weakness is that several items in the list are asserted as theistic victories without enough separate defense, and the closing sometimes psychologizes Hitchens as refusing evidence from the heart. The score is solid because the burden challenge matters, but not higher because the cumulative case is uneven.",
+              tags: []
+            },
+            con: {
+              time: "112:35",
+              role: "Anti-theist synthesis",
+              words:
+                "Hitchens says no one answered why unbelief makes him less ethical, and religious authority often produces coercion and violence.",
+              score: 84,
+              critique:
+                "Hitchens's closing synthesis is effective because it returns to the debate's human stakes. He asks why lack of belief should make him less ethical, then lists Belfast, Beirut, Bosnia, confessional power, thought crime, and celestial dictatorship as reasons supernatural authority explains many social harms poorly. The strongest move is tying morality, politics, and freedom together: if God is imagined as an unchallengeable ruler, moral responsibility can be displaced upward. The weakness is that this does not directly solve Turek's explanatory questions about cosmology, logic, or objective morality. It is more anti-theist than strictly atheist. The score is strong because it answers the moral and political core, but not every metaphysical burden.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 80,
+        strengths: [
+          "Turek gave the audience a structured cumulative case rather than relying on one isolated proof.",
+          "He framed morality carefully by saying atheists can know right and wrong while challenging their grounding of obligation.",
+          "He repeatedly kept the comparative-explanation burden in view: universe, fine-tuning, life, morality, logic, mathematics, and resurrection."
+        ],
+        blunders: [
+          {
+            text:
+              "He often treated unsolved or difficult natural questions as if they automatically favored theism.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His DNA argument slid from intentional human messages to biochemical information without enough warrant.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His moral argument assumed divine grounding before adequately comparing rival accounts of objective obligation.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Hitchens sharply distinguished a possible first cause from the much larger Christian claims about revelation, prayer, sin, and resurrection.",
+          "His waste, extinction, disease, and delayed-revelation arguments made simple benevolent design harder to maintain.",
+          "His moral-action challenge powerfully separated ethical capacity from religious belief."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes used religious harms and institutional abuses as if they answered cosmological arguments directly.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His critique of religion often emphasized the worst public forms while giving less attention to more modest theistic positions.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: "oconnor-turek-evil-moral-argument-2017",
+    number: "27",
+    title: "Alex O'Connor vs Frank Turek: The Moral Argument Debate",
+    label: "Evil and moral objectivity",
+    date: "2026-05-30",
+    duration: "58 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=b5a3MxIqZOs",
+    motion:
+      "Does evil and objective morality point to God, or can agnostic atheism explain moral experience without accepting a divine moral ground?",
+    summary:
+      "Turek argues evil, goodness, logic, and reason require God; O'Connor argues atheism carries no single worldview burden and moral experience can be subjective yet intelligible.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the Alex O'Connor upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "if evil exists God exists",
+        context:
+          "Turek's compressed thesis is that evil requires good, and good requires God as its ontological ground."
+      },
+      con: {
+        text: "morality to me is entirely subjective",
+        context:
+          "O'Connor states the central concession behind his reply: moral experience can be explained without objective moral facts."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Moral argument",
+        speaker: "Frank Turek",
+        color: "teal"
+      },
+      con: {
+        name: "Subjective morality",
+        speaker: "Alex O'Connor",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 81,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Evil and burden",
+        timebox: "07:03-18:45",
+        score: {
+          pro: 79,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "07:12",
+              role: "Evil-to-God claim",
+              words:
+                "Turek says evil exists only as a privation of good, and good is God's nature, so evil points to God.",
+              score: 79,
+              critique:
+                "Turek's opening move has a neat reversal: instead of letting evil count against God, he argues that calling anything evil already presupposes a real good. The privation analogy, rust in a car, makes the dependence claim easy to grasp. The weakness is that the key step is defined more than argued. Saying goodness is God's nature cannot itself establish that objective goodness requires God; that is the very point in dispute. The move also shifts quickly from moral language to divine ontology. The score is solid because the argument identifies a real metaethical pressure point, but lower because its central bridge risks being assumed rather than demonstrated.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "Goodness is identified with God's nature before the argument has established that divine grounding is required."
+                }
+              ]
+            },
+            con: {
+              time: "10:05",
+              role: "Atheism distinction",
+              words:
+                "O'Connor says atheism is not a worldview but nonbelief; positive naturalist claims carry burdens case by case.",
+              score: 83,
+              critique:
+                "O'Connor's burden distinction is useful because it prevents the debate from treating every atheist as committed to one full metaphysical package. His separation of agnosticism as a knowledge claim from atheism as a belief claim is clean, and he fairly grants that a person who positively claims there is no God, or who invokes evolution or materialism, then assumes burdens of proof for those claims. The weakness is that this can become too defensive. In a debate about what explains morality, O'Connor still needs some account of moral experience, not merely a refusal to accept theism. The score is strong because the distinction improves the frame, but it does not answer the moral argument yet.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Objective morality",
+        timebox: "19:20-28:20",
+        score: {
+          pro: 84,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "24:30",
+              role: "Objective wrongs",
+              words:
+                "Turek asks whether priest abuse is really wrong or merely personal opinion if objective morality is denied.",
+              score: 84,
+              critique:
+                "Turek's objective-wrongs pressure is rhetorically and philosophically strong. By using child abuse rather than a marginal case, he makes the cost of subjectivism emotionally and morally visible. He is not merely asking whether people dislike cruelty, but whether they can call it wrong in a way that outruns preference, tribe, or social fashion. That is a serious challenge for any subjectivist account. The weakness is that hard cases can generate moral confidence without settling the ontology underneath that confidence. A subjectivist may accept the grim implication rather than infer God. The score is high because Turek forces the live cost of O'Connor's view into the open.",
+              tags: []
+            },
+            con: {
+              time: "19:20",
+              role: "Grounding limit",
+              words:
+                "O'Connor says even if objective morality existed, the moral argument would not by itself identify the Christian God.",
+              score: 86,
+              critique:
+                "O'Connor's grounding-limit reply is careful and fair. He does not pretend that objective morality would be irrelevant to theism; he grants that proving it would be a compelling challenge to naturalism. But he also points out that the moral argument, even if sound, gets only to some moral ground, not automatically to the Christian God, biblical revelation, or Turek's wider apologetic system. That distinction keeps the conclusion proportionate to the premise. The weakness is that O'Connor's concession leaves him needing to explain why objective morality should be denied or reinterpreted. The score is high because he gives ground where appropriate while blocking an overextended conclusion.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Objectivity and subjectivity",
+        timebox: "25:00-35:40",
+        score: {
+          pro: 82,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "25:55",
+              role: "Moral-law effect",
+              words:
+                "Turek says the moral law presses on us as an effect, and objective wrongness needs a cause beyond human opinion.",
+              score: 82,
+              critique:
+                "Turek's moral-law effect argument has real intuitive force. People experience certain wrongs not simply as disliked, but as accusations against reality: this should not be done. Reasoning from that experience to a cause is a legitimate explanatory strategy, especially if moral obligation is taken as objective. The weakness is that the argument depends on interpreting the phenomenology correctly. A powerful feeling of obligation may be produced by conscience, culture, empathy, or evolution without being a window into a mind-independent moral realm. Turek also keeps returning to God before excluding other moral realist accounts. The score is strong because the experience needs explanation, but not decisive because multiple explanations remain live.",
+              tags: []
+            },
+            con: {
+              time: "25:20",
+              role: "Objectivity definition",
+              words:
+                "O'Connor defines objective as true without human consciousness and says murder could not be wrong if no humans existed.",
+              score: 84,
+              critique:
+                "O'Connor's objectivity definition is disciplined because it forces the debate to clarify what kind of truth is being claimed. His example about the earth orbiting the sun contrasts physical fact with moral judgment and makes the subjectivist position intelligible rather than evasive. He also sees a circular danger: invoking God to secure objective morality, then using objective morality to prove God, can loop if the steps are not independently defended. The weakness is that his no-humans example may trade on the absence of moral patients rather than the absence of moral truth. Still, the score is strong because he makes the conceptual dispute explicit and exposes a real circularity risk.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Human flourishing",
+        timebox: "36:20-45:10",
+        score: {
+          pro: 82,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "40:20",
+              role: "Standard challenge",
+              words:
+                "Turek says calling societies better or worse implies an objective best or standard beyond preferences.",
+              score: 82,
+              critique:
+                "Turek's standard challenge usefully presses the language of better and worse. If O'Connor appeals to human flourishing, Turek asks what makes flourishing the correct aim rather than merely a shared preference. That exposes a familiar gap in secular moral reasoning: agreement about goals is not the same as objective authority for those goals. The weakness is that comparative judgments do not always require an absolute maximum. O'Connor's Aquinas reply is apt: one can judge one condition better than another relative to a purpose without positing perfect goodness. The score is strong because Turek finds a genuine grounding question, but lower because his inference to an objective best is too quick.",
+              tags: []
+            },
+            con: {
+              time: "39:20",
+              role: "Shared-ground reply",
+              words:
+                "O'Connor says debate can proceed from shared aims like human flourishing and then test which worldview serves them.",
+              score: 85,
+              critique:
+                "O'Connor's shared-ground reply is practical and dialectically effective. He does not need to convince every possible racist or egoist from nowhere; he can first identify a shared aim, such as reducing suffering or improving human life, then argue about means. That explains how moral debate often works without invoking objective moral facts. His neutral-baseline analogy also helps separate good and evil from Turek's claim that one must depend on the other. The weakness is that this is more a method for conversation than a final ontology of obligation. A person who rejects the shared aim remains hard to answer. The score is high because O'Connor gives a usable account of moral reasoning under subjectivism.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Evolution and ambiguity",
+        timebox: "45:10-53:30",
+        score: {
+          pro: 81,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "49:45",
+              role: "Disagreement reply",
+              words:
+                "Turek says moral disagreement no more disproves moral objectivity than scientific disagreement disproves the objective world.",
+              score: 81,
+              critique:
+                "Turek's disagreement reply is a good corrective. Many arguments for subjectivism lean too heavily on moral disagreement, and he is right that people can dispute facts while still aiming at an objective reality. His distinction between epistemology and ontology is exactly the right tool: uncertainty about what is right does not show there is no right answer. The weakness is that O'Connor is not relying only on disagreement; he argues that the pattern of disputed cases tracks harm, personhood, and evolutionary interests. Turek also moves from some moral clarity to strong claims about abortion too quickly. The score is solid because the epistemology-ontology distinction lands, but it does not defeat the evolutionary account.",
+              tags: []
+            },
+            con: {
+              time: "48:10",
+              role: "Evolutionary account",
+              words:
+                "O'Connor says moral ambiguities around abortion, sexuality, and animals track harm, personhood, and evolved concern for life.",
+              score: 83,
+              critique:
+                "O'Connor's evolutionary account is persuasive as an explanation of why moral experience has the shape it has. The cases he chooses, abortion, sexuality, and animals, plausibly turn on harm, personhood, reproduction, and social life, which are exactly the kinds of pressures evolutionary and cultural accounts would predict. He is also careful to say evolution explains why we experience moral claims, not why they are objectively true. The weakness is that this modesty is also a limitation. Explaining the origin of moral feelings does not settle whether any moral claims are true or binding. The score is strong because the account fits the data under discussion, but it remains explanatory rather than normative.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Reason and circularity",
+        timebox: "29:50-57:20",
+        score: {
+          pro: 78,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "29:55",
+              role: "Logic grounding",
+              words:
+                "Turek argues that objective laws of logic, mathematics, and reliable reason fit better if grounded in a rational mind.",
+              score: 78,
+              critique:
+                "Turek's logic-grounding argument raises a legitimate metaphysical question: if reason and mathematics are not material objects, how should a naturalist explain their objectivity and reliability? That broadens the debate beyond morality and connects to his larger claim that atheists borrow from a theistic worldview. The weakness is that the move is underdeveloped here. Mathematics can be treated as language, structure, abstraction, or relation without being reduced to molecules, and Turek does not fully engage those options. His later claim that random evolution cannot ground trust in reason also risks a false binary between randomness and divine design. The score is solid because the question matters, but the argument is too compressed.",
+              tags: []
+            },
+            con: {
+              time: "54:25",
+              role: "Circularity challenge",
+              words:
+                "O'Connor says Turek uses God-given reason to prove God, mirroring the circularity he alleges against evolution.",
+              score: 85,
+              critique:
+                "O'Connor's circularity challenge is one of his best late moves. Turek says evolved reason cannot validate evolution without circularity; O'Connor answers that using God-given reason to reason back to God appears structurally similar. That exposes a parity problem: both sides must use reason before they can explain reason. O'Connor also catches the shift between assuming reason and then asking what grounds it, which keeps the argument from being smuggled in as a proof. The weakness is that a transcendental argument can admit some circularity while still asking which worldview makes reason more intelligible. The score is high because O'Connor identifies the live symmetry, but not decisive because grounding questions remain.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 81,
+        strengths: [
+          "Turek kept the debate focused on ontology rather than merely whether atheists behave morally.",
+          "His best moves distinguished moral disagreement from moral subjectivity and pressed the cost of treating grave wrongs as preference.",
+          "He connected morality, logic, mathematics, and reason into a broader explanatory challenge for naturalism."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes defined goodness as God's nature before independently establishing that God is required for objective goodness.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His reason argument risked forcing a choice between random unreliability and divine design without considering richer naturalistic accounts.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "O'Connor gave careful burden-of-proof distinctions instead of defending every atheist or naturalist claim at once.",
+          "He conceded the force of objective morality if proven, which made his objections to the argument's scope more credible.",
+          "His subjectivist account explained moral practice through human flourishing, shared aims, harm, and evolutionary psychology without pretending to prove objective facts."
+        ],
+        blunders: [
+          {
+            text:
+              "His subjectivism left him with limited resources against someone who rejects shared human-flourishing assumptions.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His no-humans objectivity test sometimes blurred the absence of moral agents with the nonexistence of moral truth.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
