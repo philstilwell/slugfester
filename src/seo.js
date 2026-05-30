@@ -1,9 +1,19 @@
 export const SITE_URL = "https://slugfester.com";
 export const SITE_NAME = "Slugfester";
-export const DEFAULT_TITLE = "Slugfester";
+export const SITE_LOCALE = "en_US";
+export const SITE_LANGUAGE = "en";
+export const SITE_THEME_COLOR = "#13201f";
+export const DEFAULT_TITLE = "Slugfester | YouTube Debate Argument Scorecards";
 export const DEFAULT_DESCRIPTION =
-  "Slugfester turns YouTube debate transcripts into side-by-side argument scorecards with AI-generated reasoning scores, critique popovers, and contextual fallacy and bias references.";
-export const DEFAULT_IMAGE = "/assets/slugfester-logo.jpg";
+  "Explore YouTube debate transcripts as side-by-side argument scorecards with AI-assisted reasoning scores, critique popovers, and contextual fallacy and bias references.";
+export const DEFAULT_IMAGE = "/assets/social-card.png";
+export const DEFAULT_IMAGE_ALT =
+  "Slugfester debate scorecards with boxing gloves and argument analysis.";
+export const DEFAULT_IMAGE_WIDTH = 1200;
+export const DEFAULT_IMAGE_HEIGHT = 630;
+
+const ORGANIZATION_ID = `${SITE_URL}/#organization`;
+const WEBSITE_ID = `${SITE_URL}/#website`;
 
 export function absoluteUrl(path = "/") {
   return new URL(path, SITE_URL).href;
@@ -40,28 +50,79 @@ export function pageTitle(title = "") {
   return title ? `${title} | ${SITE_NAME}` : DEFAULT_TITLE;
 }
 
+export function imageObject(
+  path = DEFAULT_IMAGE,
+  alt = DEFAULT_IMAGE_ALT,
+  width = DEFAULT_IMAGE_WIDTH,
+  height = DEFAULT_IMAGE_HEIGHT
+) {
+  return {
+    "@type": "ImageObject",
+    url: absoluteUrl(path),
+    width,
+    height,
+    caption: alt
+  };
+}
+
+export function organizationJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": ORGANIZATION_ID,
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: imageObject("/assets/debate-gloves.png", "Slugfester boxing gloves logo", 444, 444)
+  };
+}
+
+export function breadcrumbJsonLd(items) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: absoluteUrl(item.path)
+    }))
+  };
+}
+
 export function landingSeo(debates = []) {
-  const topics = debates.map((debate) => `${debate.number} ${debate.label}`).join(" | ");
+  const topics = debates.map((debate) => debate.label);
 
   return {
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
     canonicalPath: "/",
     imagePath: DEFAULT_IMAGE,
+    imageAlt: DEFAULT_IMAGE_ALT,
     type: "website",
     jsonLd: [
+      organizationJsonLd(),
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
+        "@id": WEBSITE_ID,
         name: SITE_NAME,
+        alternateName: "Slugfester debate scorecards",
         url: SITE_URL,
         description: DEFAULT_DESCRIPTION,
-        about: topics
+        inLanguage: SITE_LANGUAGE,
+        publisher: {
+          "@id": ORGANIZATION_ID
+        },
+        about: topics.map((topic) => ({
+          "@type": "Thing",
+          name: topic
+        }))
       },
       {
         "@context": "https://schema.org",
         "@type": "ItemList",
         name: "Slugfester debate scorecards",
+        description: "Clean URLs for Slugfester's debate transcript scorecards.",
         itemListElement: debates.map((debate, index) => ({
           "@type": "ListItem",
           position: index + 1,
@@ -82,49 +143,99 @@ export function debateSeo(debate) {
     ),
     canonicalPath: debatePath(debate),
     imagePath: DEFAULT_IMAGE,
+    imageAlt: `${debateNumberLabel(debate)} scorecard: ${debate.title}`,
     type: "article",
-    jsonLd: {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      headline: `${debateNumberLabel(debate)}: ${debate.title}`,
-      description: compactText(debate.summary, 220),
-      dateModified: debate.date,
-      url: absoluteUrl(debatePath(debate)),
-      image: absoluteUrl(DEFAULT_IMAGE),
-      isPartOf: {
-        "@type": "WebSite",
-        name: SITE_NAME,
-        url: SITE_URL
+    jsonLd: [
+      organizationJsonLd(),
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: `${debateNumberLabel(debate)}: ${debate.title}`,
+        name: `${debateNumberLabel(debate)}: ${debate.title}`,
+        description: compactText(debate.summary, 220),
+        dateModified: debate.date,
+        mainEntityOfPage: absoluteUrl(debatePath(debate)),
+        url: absoluteUrl(debatePath(debate)),
+        image: imageObject(),
+        thumbnailUrl: absoluteUrl(DEFAULT_IMAGE),
+        inLanguage: SITE_LANGUAGE,
+        articleSection: "Debate scorecards",
+        isAccessibleForFree: true,
+        author: {
+          "@id": ORGANIZATION_ID
+        },
+        publisher: {
+          "@id": ORGANIZATION_ID
+        },
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": WEBSITE_ID,
+          name: SITE_NAME,
+          url: SITE_URL
+        },
+        about: [
+          debate.label,
+          debate.motion,
+          debate.sides.pro.speaker,
+          debate.sides.con.speaker
+        ].map((name) => ({
+          "@type": "Thing",
+          name
+        })),
+        keywords: [
+          debate.label,
+          debate.sides.pro.speaker,
+          debate.sides.con.speaker,
+          debate.sides.pro.name,
+          debate.sides.con.name,
+          "debate scorecard",
+          "argument analysis"
+        ],
+        citation: debate.youtubeUrl
       },
-      about: [
-        debate.label,
-        debate.motion,
-        debate.sides.pro.speaker,
-        debate.sides.con.speaker
-      ],
-      citation: debate.youtubeUrl
-    }
+      breadcrumbJsonLd([
+        { name: SITE_NAME, path: "/" },
+        { name: `${debateNumberLabel(debate)}: ${debate.title}`, path: debatePath(debate) }
+      ])
+    ]
   };
 }
 
 export function referenceSeo(type, slug, reference) {
   const category = type === "fallacy" ? "Logical fallacy" : "Cognitive bias";
+  const sourceName = type === "fallacy" ? "LogFall" : "CogBias";
+  const sourceSetUrl =
+    type === "fallacy" ? "https://logfall.com/fallacies/" : "https://cogbias.site/biases/";
 
   return {
     title: pageTitle(`${reference.label} ${category.toLowerCase()}`),
     description: compactText(`${reference.label}: ${reference.definition}`, 170),
     canonicalPath: referencePath(type, slug),
     imagePath: DEFAULT_IMAGE,
+    imageAlt: `${reference.label} ${category.toLowerCase()} reference on Slugfester.`,
     type: "article",
-    jsonLd: {
-      "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      name: reference.label,
-      description: reference.definition,
-      url: absoluteUrl(referencePath(type, slug)),
-      inDefinedTermSet: reference.externalUrl,
-      additionalType: category
-    }
+    jsonLd: [
+      organizationJsonLd(),
+      {
+        "@context": "https://schema.org",
+        "@type": "DefinedTerm",
+        name: reference.label,
+        description: reference.definition,
+        url: absoluteUrl(referencePath(type, slug)),
+        mainEntityOfPage: absoluteUrl(referencePath(type, slug)),
+        inDefinedTermSet: {
+          "@type": "DefinedTermSet",
+          name: sourceName,
+          url: sourceSetUrl
+        },
+        sameAs: reference.externalUrl,
+        additionalType: category
+      },
+      breadcrumbJsonLd([
+        { name: SITE_NAME, path: "/" },
+        { name: reference.label, path: referencePath(type, slug) }
+      ])
+    ]
   };
 }
 
@@ -134,6 +245,7 @@ export function notFoundSeo() {
     description: "This Slugfester page could not be found.",
     canonicalPath: "/",
     imagePath: DEFAULT_IMAGE,
+    imageAlt: DEFAULT_IMAGE_ALT,
     type: "website",
     robots: "noindex,follow",
     jsonLd: null

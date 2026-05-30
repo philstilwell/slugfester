@@ -5,7 +5,12 @@ import { debates } from "../src/data/debates.js";
 import { referenceDefinitions } from "../src/data/references.js";
 import {
   DEFAULT_DESCRIPTION,
+  DEFAULT_IMAGE_ALT,
+  DEFAULT_IMAGE_HEIGHT,
+  DEFAULT_IMAGE_WIDTH,
   DEFAULT_TITLE,
+  SITE_LOCALE,
+  SITE_THEME_COLOR,
   SITE_NAME,
   absoluteUrl,
   debatePath,
@@ -32,9 +37,17 @@ function jsonScript(value) {
   return JSON.stringify(value).replaceAll("<", "\\u003c");
 }
 
+function sentence(value = "") {
+  const text = String(value).trim();
+  return /[.!?]$/.test(text) ? text : `${text}.`;
+}
+
 function renderHtml(seo, noscriptText) {
   const canonicalUrl = absoluteUrl(seo.canonicalPath || "/");
   const imageUrl = absoluteUrl(seo.imagePath || "/assets/slugfester-logo.jpg");
+  const imageAlt = seo.imageAlt || DEFAULT_IMAGE_ALT;
+  const imageWidth = seo.imageWidth || DEFAULT_IMAGE_WIDTH;
+  const imageHeight = seo.imageHeight || DEFAULT_IMAGE_HEIGHT;
   const robots = seo.robots || "index,follow,max-image-preview:large";
   const structuredData = jsonScript(seo.jsonLd);
 
@@ -45,19 +58,35 @@ function renderHtml(seo, noscriptText) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="${escapeHtml(seo.description || DEFAULT_DESCRIPTION)}">
     <meta name="robots" content="${escapeHtml(robots)}">
+    <meta name="author" content="${escapeHtml(SITE_NAME)}">
+    <meta name="application-name" content="${escapeHtml(SITE_NAME)}">
+    <meta name="apple-mobile-web-app-title" content="${escapeHtml(SITE_NAME)}">
+    <meta name="theme-color" content="${escapeHtml(SITE_THEME_COLOR)}">
+    <meta name="msapplication-TileColor" content="${escapeHtml(SITE_THEME_COLOR)}">
+    <meta name="msapplication-TileImage" content="/assets/icon-512.png">
     <title>${escapeHtml(seo.title || DEFAULT_TITLE)}</title>
     <link rel="canonical" href="${escapeHtml(canonicalUrl)}">
     <meta property="og:site_name" content="${escapeHtml(SITE_NAME)}">
+    <meta property="og:locale" content="${escapeHtml(SITE_LOCALE)}">
     <meta property="og:title" content="${escapeHtml(seo.title || DEFAULT_TITLE)}">
     <meta property="og:description" content="${escapeHtml(seo.description || DEFAULT_DESCRIPTION)}">
     <meta property="og:type" content="${escapeHtml(seo.type || "website")}">
     <meta property="og:url" content="${escapeHtml(canonicalUrl)}">
     <meta property="og:image" content="${escapeHtml(imageUrl)}">
+    <meta property="og:image:secure_url" content="${escapeHtml(imageUrl)}">
+    <meta property="og:image:width" content="${escapeHtml(imageWidth)}">
+    <meta property="og:image:height" content="${escapeHtml(imageHeight)}">
+    <meta property="og:image:alt" content="${escapeHtml(imageAlt)}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${escapeHtml(seo.title || DEFAULT_TITLE)}">
     <meta name="twitter:description" content="${escapeHtml(seo.description || DEFAULT_DESCRIPTION)}">
     <meta name="twitter:image" content="${escapeHtml(imageUrl)}">
+    <meta name="twitter:image:alt" content="${escapeHtml(imageAlt)}">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="/assets/favicon.png" type="image/png" sizes="128x128">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="mask-icon" href="/assets/favicon.svg" color="#d35d47">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="/src/styles.css">
     ${structuredData ? `<script type="application/ld+json" id="seo-structured-data">${structuredData}</script>` : ""}
   </head>
@@ -97,6 +126,55 @@ ${urls
 `;
 }
 
+function manifestJson() {
+  return `${JSON.stringify(
+    {
+      name: SITE_NAME,
+      short_name: SITE_NAME,
+      description: DEFAULT_DESCRIPTION,
+      start_url: "/",
+      scope: "/",
+      display: "standalone",
+      background_color: "#f4f8f7",
+      theme_color: SITE_THEME_COLOR,
+      icons: [
+        {
+          src: "/assets/favicon.png",
+          sizes: "128x128",
+          type: "image/png"
+        },
+        {
+          src: "/assets/apple-touch-icon.png",
+          sizes: "180x180",
+          type: "image/png"
+        },
+        {
+          src: "/assets/icon-192.png",
+          sizes: "192x192",
+          type: "image/png",
+          purpose: "any"
+        },
+        {
+          src: "/assets/icon-512.png",
+          sizes: "512x512",
+          type: "image/png",
+          purpose: "any"
+        }
+      ],
+      screenshots: [
+        {
+          src: "/assets/social-card.png",
+          sizes: "1200x630",
+          type: "image/png",
+          form_factor: "wide"
+        }
+      ]
+    },
+    null,
+    2
+  )}\n`;
+}
+
 const pageOutputs = new Map();
 const sitemapUrls = [];
 const latest = latestDate();
@@ -118,7 +196,7 @@ debates.forEach((debate) => {
   addPage(
     debatePath(debate),
     debateSeo(debate),
-    `${debate.title}. Slugfester provides a side-by-side argument scorecard for this debate.`,
+    `${sentence(debate.title)} Slugfester provides a side-by-side argument scorecard for this debate.`,
     debate.date
   );
 });
@@ -146,6 +224,7 @@ Sitemap: ${absoluteUrl("/sitemap.xml")}
 `
 );
 pageOutputs.set(join(root, "sitemap.xml"), sitemapXml(sitemapUrls));
+pageOutputs.set(join(root, "site.webmanifest"), manifestJson());
 
 async function ensureMatches(file, expected) {
   let actual = "";

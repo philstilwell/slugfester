@@ -1,6 +1,12 @@
 import { debates } from "./data/debates.js";
 import { getReferenceDefinition, referenceFromUrl } from "./data/references.js";
 import {
+  DEFAULT_IMAGE_ALT,
+  DEFAULT_IMAGE_HEIGHT,
+  DEFAULT_IMAGE_WIDTH,
+  SITE_LOCALE,
+  SITE_NAME,
+  SITE_THEME_COLOR,
   absoluteUrl,
   debateNumberLabel,
   debatePath,
@@ -81,22 +87,47 @@ function setStructuredData(jsonLd) {
 function setSeo(seo) {
   const canonicalUrl = absoluteUrl(seo.canonicalPath || "/");
   const imageUrl = absoluteUrl(seo.imagePath || "/assets/slugfester-logo.jpg");
+  const imageAlt = seo.imageAlt || DEFAULT_IMAGE_ALT;
+  const imageWidth = seo.imageWidth || DEFAULT_IMAGE_WIDTH;
+  const imageHeight = seo.imageHeight || DEFAULT_IMAGE_HEIGHT;
   const robots = seo.robots || "index,follow,max-image-preview:large";
 
   document.title = seo.title;
   setCanonical(canonicalUrl);
   setMeta('meta[name="description"]', { name: "description", content: seo.description });
   setMeta('meta[name="robots"]', { name: "robots", content: robots });
-  setMeta('meta[property="og:site_name"]', { property: "og:site_name", content: "Slugfester" });
+  setMeta('meta[name="author"]', { name: "author", content: SITE_NAME });
+  setMeta('meta[name="application-name"]', { name: "application-name", content: SITE_NAME });
+  setMeta('meta[name="apple-mobile-web-app-title"]', {
+    name: "apple-mobile-web-app-title",
+    content: SITE_NAME
+  });
+  setMeta('meta[name="theme-color"]', { name: "theme-color", content: SITE_THEME_COLOR });
+  setMeta('meta[property="og:site_name"]', { property: "og:site_name", content: SITE_NAME });
+  setMeta('meta[property="og:locale"]', { property: "og:locale", content: SITE_LOCALE });
   setMeta('meta[property="og:title"]', { property: "og:title", content: seo.title });
   setMeta('meta[property="og:description"]', { property: "og:description", content: seo.description });
   setMeta('meta[property="og:type"]', { property: "og:type", content: seo.type || "website" });
   setMeta('meta[property="og:url"]', { property: "og:url", content: canonicalUrl });
   setMeta('meta[property="og:image"]', { property: "og:image", content: imageUrl });
+  setMeta('meta[property="og:image:secure_url"]', {
+    property: "og:image:secure_url",
+    content: imageUrl
+  });
+  setMeta('meta[property="og:image:width"]', {
+    property: "og:image:width",
+    content: imageWidth
+  });
+  setMeta('meta[property="og:image:height"]', {
+    property: "og:image:height",
+    content: imageHeight
+  });
+  setMeta('meta[property="og:image:alt"]', { property: "og:image:alt", content: imageAlt });
   setMeta('meta[name="twitter:card"]', { name: "twitter:card", content: "summary_large_image" });
   setMeta('meta[name="twitter:title"]', { name: "twitter:title", content: seo.title });
   setMeta('meta[name="twitter:description"]', { name: "twitter:description", content: seo.description });
   setMeta('meta[name="twitter:image"]', { name: "twitter:image", content: imageUrl });
+  setMeta('meta[name="twitter:image:alt"]', { name: "twitter:image:alt", content: imageAlt });
   setStructuredData(seo.jsonLd);
 }
 
