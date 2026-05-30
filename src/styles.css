@@ -442,6 +442,7 @@ a {
 
 .scoring-note {
   display: flex;
+  flex-wrap: wrap;
   gap: 14px;
   align-items: start;
   margin: 0 0 12px;
@@ -486,6 +487,13 @@ a {
 
 .scoring-note span {
   color: #30413e;
+}
+
+.assessment-model {
+  flex-basis: 100%;
+  color: var(--muted) !important;
+  font-size: 0.82rem;
+  font-weight: 800;
 }
 
 .quote-panel {

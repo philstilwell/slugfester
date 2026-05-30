@@ -120,6 +120,7 @@ Before committing a new debate:
 - Each section compares like with like.
 - Fallacy/bias tags are warranted and linked to the correct site.
 - The scoring note makes clear that scores are AI-generated.
+- The scoring-note band identifies `GPT 5.5 Extra High` as the assessment model.
 - `sourceNote` identifies how the transcript was obtained or cleaned.
 - The page follows the locked design in `youtube-debate-assessment-template.md`.
 - The debate number is two-digit, zero-padded, unique, and sequential in debate-list order.

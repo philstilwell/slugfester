@@ -34,6 +34,8 @@ const scoreTone = (score) => {
 const average = (values) =>
   Math.round(values.reduce((total, value) => total + value, 0) / values.length);
 
+const assessmentModel = "GPT 5.5 Extra High";
+
 function setMeta(selector, attributes) {
   let element = document.head.querySelector(selector);
   if (!element) {
@@ -294,6 +296,7 @@ function renderScoringNote(debate) {
     <section class="scoring-note" aria-label="Scoring note">
       <strong>AI-generated scorecard</strong>
       <span>${escapeHtml(debate.scoringNote)}</span>
+      <span class="assessment-model">Assessments made by ${escapeHtml(assessmentModel)}.</span>
     </section>
   `;
 }

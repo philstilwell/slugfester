@@ -191,6 +191,7 @@ Use this shape when adding an object to `src/data/debates.js`.
 - Every score is justified by the critique text.
 - `sourceNote` and `scoringNote` are present.
 - `scoringNote` explicitly says the scores are AI-generated.
+- The scoring-note band states that assessments were made by `GPT 5.5 Extra High`.
 - LogFall links are used only for fallacies.
 - CogBias links are used only for cognitive biases.
 - Fallacy and bias pills show hover/focus popovers with basic definitions, contextual explanation, and the note `Click button for more info.`

@@ -6815,5 +6815,719 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "hitchens-hitchens-iraq-god-2008",
+    number: "20",
+    title: "Christopher Hitchens vs Peter Hitchens: Iraq, God, and Moral Authority",
+    label: "Iraq, God, and moral authority",
+    date: "2026-05-30",
+    duration: "2 hr 02 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=ngjQs_QjSwc",
+    motion:
+      "Was the invasion of Iraq defensible, and does religion supply or corrupt moral authority?",
+    summary:
+      "Christopher defends Iraq intervention and attacks religion as totalitarian; Peter condemns the war and argues belief anchors moral order against secular collapse.",
+    sourceNote:
+      "Built from YouTube's auto-generated English captions for the Hauenstein Center upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "a celestial North Korea",
+        context:
+          "Christopher uses this phrase to frame theism as total surveillance and moral submission rather than liberation."
+      },
+      con: {
+        text: "this was an idealist war",
+        context:
+          "Peter's phrase captures his charge that the Iraq invasion dressed wishful thinking and self-righteousness as moral seriousness."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Intervention and anti-theism",
+        speaker: "Christopher Hitchens",
+        color: "teal"
+      },
+      con: {
+        name: "Restraint and theism",
+        speaker: "Peter Hitchens",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 84,
+      con: 79
+    },
+    sections: [
+      {
+        title: "War and moral seriousness",
+        timebox: "03:49-21:39",
+        score: {
+          pro: 83,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "14:00",
+              role: "Regime case",
+              words:
+                "Christopher says Saddam's genocide, wars, weapons record, and terror made a post-Saddam Iraq a serious strategic and moral objective.",
+              score: 83,
+              critique:
+                "Christopher's opening Iraq case is strong because it refuses to treat Saddam Hussein as merely another unpleasant ruler. He lists genocide, aggression, weapons concealment, terror links, and the political imprisonment of Iraqis as reasons the old sovereignty claim had already been damaged. That gives the intervention a moral and security rationale beyond simple American preference. The weakness is that the argument moves quickly from the regime's brutality to the prudence of invasion and occupation. A case for removal still needs a disciplined account of costs, authority, aftermath, and comparative alternatives. The score is high because the harms are relevant and concrete, but not higher because feasibility and proportionality remain underargued.",
+              tags: []
+            },
+            con: {
+              time: "05:21",
+              role: "War caution",
+              words:
+                "Peter calls the Iraq invasion unserious, self-righteous, and mistaken, warning that idealism is a dangerous substitute for statesmanship.",
+              score: 84,
+              critique:
+                "Peter's opening is persuasive because he makes war itself the object of moral scrutiny. Instead of denying Saddam's cruelty, he asks whether idealism, ignorance, and self-righteousness are adequate grounds for launching a conflict. That is a serious burden check, especially when he distinguishes calling the war wrong from calling it a mistake with predictable consequences. The weakness is that the argument initially leans more on cautionary judgment than on a detailed alternative for Iraqis living under Saddam or for regional security after repeated violations. Even so, the score is strong because Peter correctly identifies that good intentions do not settle necessity, competence, or proportionality in war.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Costs and sovereignty",
+        timebox: "21:41-31:19",
+        score: {
+          pro: 82,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "25:35",
+              role: "Sovereignty test",
+              words:
+                "Christopher argues Saddam lost sovereignty through genocide, nonproliferation violations, terrorist harboring, and aggression against neighboring states.",
+              score: 82,
+              critique:
+                "Christopher's sovereignty test is one of his better Iraq moves because it tries to state criteria rather than merely praise intervention. Genocide, weapons defiance, terrorist hospitality, and cross-border aggression are all relevant reasons a regime may lose normal diplomatic protection. He also connects Iraq to Libya and proliferation networks, which gives the policy a wider strategic frame. The weakness is selectivity. The criteria are plausible, but he does not explain how they would be applied consistently across other abusive or dangerous states, nor why invasion was the necessary remedy rather than containment, inspection, indictment, or regional pressure. The score is strong because the framework is serious, but it remains vulnerable to special-case reasoning.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The criteria are plausible, but the argument does not fully show why Iraq gets this remedy while similar cases do not."
+                }
+              ]
+            },
+            con: {
+              time: "21:41",
+              role: "Cost audit",
+              words:
+                "Peter answers with occupation costs: deaths, torture, Iranian influence, lost moral authority, and a region that does not thank its occupiers.",
+              score: 86,
+              critique:
+                "Peter's cost audit lands because it directly tests the promised benefits against the visible consequences. He names financial cost, civilian deaths, torture, Iranian influence, damaged moral authority, and the predictable resentment of an occupied population. This is not a side issue; proportionality and aftermath are central to whether a war was justified. His argument is strongest where it asks whether the intervention solved the problem it claimed to solve or multiplied it. The weakness is that a consequence audit can understate the harms of nonintervention, including Kurdish vulnerability, Saddam's future behavior, and regional intimidation. Still, Peter carries this section because he makes the war's real-world burden impossible to treat as incidental.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "God and authority",
+        timebox: "31:21-52:18",
+        score: {
+          pro: 85,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "32:38",
+              role: "Theist gap",
+              words:
+                "Christopher says even a prime mover leaves all the work ahead before reaching a personal, supervising, morally commanding God.",
+              score: 85,
+              critique:
+                "Christopher's anti-theist opening is effective because it separates a minimal deistic cause from the full religious package. Even if a prime mover were granted, he says, the advocate still must reach revelation, command, surveillance, worship, and moral authority. That is a useful burden-of-proof distinction. His totalitarian image also dramatizes why omniscient supervision can look morally repellent rather than consoling. The weakness is that the North Korea analogy risks compressing many forms of theism into one political model of domination. Some believers understand God less as dictator than as ground, judge, or source of being. The score stays high because the burden challenge is sharp, while the analogy costs some precision.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The totalitarian analogy risks shifting between divine authority and political tyranny as though they function identically."
+                }
+              ]
+            },
+            con: {
+              time: "46:00",
+              role: "Moral north",
+              words:
+                "Peter argues belief supplies a true north for authority, while luxury atheism borrows moral capital from a culture it weakens.",
+              score: 78,
+              critique:
+                "Peter's moral-north argument is coherent and emotionally intelligible. He says a universe with order, origin, and eternal law gives human beings a standard beyond appetite, fashion, or state power. That is a real challenge to thin versions of secular preference theory, and his concern about cultural inheritance is worth hearing. The weakness is evidential. He moves from social disorder and English moral decline to the claim that atheism cannot sustain obligation, but the causal path is mostly asserted. He also treats borrowed moral capital as if it defeats secular moral reasoning rather than inviting a historical explanation of moral learning. The score is solid, but lower because the central sociological claim is under-supported.",
+              tags: [
+                {
+                  label: "Base-rate neglect",
+                  type: "bias",
+                  url: bias("base-rate-neglect"),
+                  context:
+                    "The moral-decline inference leans on selected social examples without comparing wider religious and secular societies."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Sacrifice and moral harm",
+        timebox: "52:43-1:09:14",
+        score: {
+          pro: 87,
+          con: 75
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "52:43",
+              role: "Submission challenge",
+              words:
+                "Christopher attacks Abraham, circumcision, vicarious redemption, and God-on-my-side morality as evidence that religious obedience can license evil.",
+              score: 87,
+              critique:
+                "Christopher's submission challenge is forceful because it identifies concrete moral costs inside revered doctrines, not just abuses by bad institutions. Abraham's willingness, genital cutting, vicarious redemption, and divine permission all test whether obedience can override ordinary moral judgment. He also frames two clean challenges: name a moral act only a believer can do, and name an evil act believers may rationalize by divine command. Those questions put pressure on religion's claim to be the guardian of morality. The weakness is that he sometimes treats the harshest interpretations as the only religious readings available. Still, the score is high because the challenge is direct, relevant, and hard to answer without revising the authority claim.",
+              tags: []
+            },
+            con: {
+              time: "58:19",
+              role: "Sacrifice reply",
+              words:
+                "Peter replies that Abraham's knife was not used and that Christianity redirects sacrifice toward hope rather than cruelty.",
+              score: 75,
+              critique:
+                "Peter's reply has a real interpretive point: the Abraham story does end with the child spared, and Christianity can be read as a movement away from literal human sacrifice toward mercy, repentance, and hope. That prevents Christopher from treating every believer as endorsing cruelty. The weakness is that the answer does not fully meet the obedience problem. If the moral test is willingness to kill when commanded, then the unused knife is only partial relief. Peter also relies on a charitable theological reading without showing why it should govern over harsher historical uses of the same texts. The score is decent because it complicates the charge, but weaker because it avoids the deepest moral premise.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The defense privileges a charitable reading of sacrifice without fully answering the obedience test Christopher raises."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Secular morality and truth",
+        timebox: "1:10:20-1:29:39",
+        score: {
+          pro: 82,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:10:20",
+              role: "Human solidarity",
+              words:
+                "Christopher grounds decency in human solidarity, enlightened self-interest, and the Good Samaritan rather than priestly threats or rewards.",
+              score: 82,
+              critique:
+                "Christopher's secular-morality answer is strong where it shows that ordinary moral recognition does not require theological enforcement. Human solidarity, mutual vulnerability, and the Good Samaritan example give him a route to decency that predates and exceeds priestly authority. He also rightly notes that fear of punishment is a poor substitute for moral understanding. The weakness is that he gives a plausible source of moral motivation more than a full account of moral objectivity. Solidarity can explain why people care, but Peter is pressing whether there is an authority beyond preference, tribe, or sentiment. The score is strong because it answers the practical challenge, but not decisive on metaethical foundations.",
+              tags: []
+            },
+            con: {
+              time: "1:15:05",
+              role: "Borrowed morality",
+              words:
+                "Peter says atheists know some things are wrong only because they inherit religious morality and forget its source.",
+              score: 78,
+              critique:
+                "Peter's borrowed-morality argument is relevant because moral traditions do have histories, and secular cultures often inherit concepts shaped by religion. He is right to ask whether moral confidence can survive after its supporting metaphysics is removed. That is a serious genealogical pressure point. The weakness is that genealogy is not authority. A principle can arise in a religious culture and still be justified later by reasons about harm, reciprocity, dignity, or social cooperation. Peter risks assuming the very conclusion at stake: that because religion helped transmit morality, religion is necessary for morality's truth or force. The score is solid because the inheritance question matters, but it is not enough by itself.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The move assumes religious origins are needed for moral authority instead of independently proving that dependence."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Science and secular regimes",
+        timebox: "1:30:00-1:59:16",
+        score: {
+          pro: 84,
+          con: 73
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:34:27",
+              role: "Science boundary",
+              words:
+                "Christopher says evolution is verified by converging evidence, while intelligent design belongs in religion class unless churches teach Darwin too.",
+              score: 84,
+              critique:
+                "Christopher's science-boundary argument is strong because it distinguishes disputes inside evolutionary biology from a license to import design doctrine into science class. He points to converging evidence from fossils and molecular biology, then argues that unresolved mechanisms do not create equal footing for alchemy, astrology, or intelligent design. That is a solid demarcation move, especially against claims that skepticism alone earns curricular parity. The weakness is that his courtroom tone can underplay legitimate scientific debates about mechanisms by making the opposition sound uniformly anti-science. Still, the score is high because he answers the specific inference from uncertainty to design and keeps the institutional question clear.",
+              tags: []
+            },
+            con: {
+              time: "1:30:00",
+              role: "Atheist regimes",
+              words:
+                "Peter defends intelligent-design discussion and later cites revolutionary France and the Soviet Union as murderous atheist regimes.",
+              score: 73,
+              critique:
+                "Peter raises two concerns that deserve some attention: scientific establishments can become socially intolerant, and anti-religious regimes have committed real persecution. Those points prevent a simple story in which only religion becomes coercive. The weakness is that his intelligent-design case rests mainly on doubt and perceived Darwinist hostility, not positive evidence for design. His Soviet and French examples also need more careful separation between atheism, revolutionary ideology, party dictatorship, war, and state terror. Without that separation, atheism risks becoming a label for everything anti-clerical regimes did. The score is passable because the historical warning is relevant, but lower because the causal and evidential claims are too compressed.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The intelligent-design sympathy relies on gaps, doubt, and institutional hostility more than positive design evidence."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 84,
+        strengths: [
+          "Christopher gave the Iraq defense explicit moral and strategic criteria instead of relying only on regime-change sentiment.",
+          "His anti-theist case repeatedly pressed burden of proof: deism is not theism, and divine command is not automatically moral authority.",
+          "The morality challenges were concrete, especially the questions about believer-only moral acts and God-authorized wrongdoing."
+        ],
+        blunders: [
+          {
+            text:
+              "His Iraq case underweighted occupation costs and exceptionalism in applying sovereignty criteria.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His anti-theism sometimes slid from divine authority to modern totalitarian politics as though the categories were identical.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 79,
+        strengths: [
+          "Peter made war prudence, aftermath, and moral authority central rather than treating good intentions as sufficient.",
+          "He supplied the debate's strongest Iraq rebuttal by forcing Christopher to answer concrete costs and regional consequences.",
+          "His theistic argument put pressure on whether secular morality can preserve obligation after rejecting transcendent authority."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly inferred secular moral collapse from chosen British decline and disorder examples.",
+            links: [
+              {
+                label: "Base-rate neglect",
+                url: bias("base-rate-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His intelligent-design sympathy relied more on gaps and perceived Darwinist intolerance than positive design evidence.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: "hitchens-wolpe-great-god-debate-2010",
+    number: "21",
+    title: "Christopher Hitchens vs Rabbi David Wolpe: The Great God Debate",
+    label: "God, meaning, and faith",
+    date: "2026-05-30",
+    duration: "1 hr 32 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=2kZRAOXEFPI",
+    motion:
+      "Does religious faith reveal God, moral meaning, and human freedom, or does it replace reason with projection, authority, and harmful consolation?",
+    summary:
+      "Hitchens treats God as human projection and religious authority as dangerous; Wolpe defends God as the source of meaning, freedom, goodness, and moral order.",
+    sourceNote:
+      "Built from YouTube's auto-generated English captions for the GBH Forum Network upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "a Celestial dictatorship",
+        context:
+          "Hitchens's phrase captures his central objection that religious belief turns human freedom into obedience to imagined authority."
+      },
+      con: {
+        text: "God is the source of everything that exists",
+        context:
+          "Wolpe's definition anchors his case that God grounds existence, relationship, meaning, freedom, and moral obligation."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Atheist critique",
+        speaker: "Christopher Hitchens",
+        color: "teal"
+      },
+      con: {
+        name: "Jewish theism",
+        speaker: "Rabbi David Wolpe",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 84,
+      con: 81
+    },
+    sections: [
+      {
+        title: "God definition and origin",
+        timebox: "01:02-09:10",
+        score: {
+          pro: 84,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "03:20",
+              role: "Psychological origin",
+              words:
+                "Hitchens says the concept of God is man-made and fear-made, a wish for protection, moral outsourcing, and celestial rule.",
+              score: 84,
+              critique:
+                "Hitchens's origin argument is powerful as an explanation of religious appeal. He identifies dependency, fear, parental longing, moral outsourcing, and the desire for authority as recognizable human pressures that can generate gods. That makes belief look psychologically intelligible rather than self-evidently revealed. The weakness is that a plausible origin story does not by itself disprove the belief. Wolpe rightly warns that explaining why people might want God can become a substitute for showing that God is false. Hitchens partly avoids that problem by moving later to evidential and moral objections, but this opening still leans on debunking psychology. The score is high because the explanation is incisive, yet not decisive.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "Explaining why people may want God can distract from whether the God claim is true."
+                }
+              ]
+            },
+            con: {
+              time: "01:23",
+              role: "Apophatic definition",
+              words:
+                "Wolpe defines God with humility as the source of existence, relationship, and a life aligned with godly purpose.",
+              score: 79,
+              critique:
+                "Wolpe's definition is careful and restrained. By beginning with human limitation, he avoids pretending that God can be captured like an ordinary object, and his description connects God to existence, relationship, and purpose rather than to a crude sky-being. That makes the theistic position more philosophically durable than the caricature Hitchens wants to attack. The weakness is that the definition gains safety by losing testable content. If God is beyond ordinary definition, the listener still needs reasons to think this source is personal, relational, morally authoritative, and real rather than a reverent name for mystery. The score is solid because the framing is thoughtful, but it bears a heavy evidential burden.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Mystery and materialism",
+        timebox: "09:16-18:55",
+        score: {
+          pro: 83,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "12:55",
+              role: "Material rebuttal",
+              words:
+                "Hitchens answers mystery with quantum explanation, stardust, extinction, humanoid prehistory, and a universe that works without God.",
+              score: 83,
+              critique:
+                "Hitchens's material rebuttal is strong because he makes naturalism feel explanatory rather than merely subtractive. The star-making and extinction material gives him a universe that is vast, tragic, beautiful, and intelligible without divine supervision. He also pressures religion's historical scale: if humans and other hominins existed long before revelation stories, the late arrival of sacred history looks parochial. The weakness is that natural explanation does not automatically exclude all forms of theism. Wolpe can say mechanisms describe how God creates rather than whether God exists. Still, Hitchens scores well because he rebuts the claim that materialism is spiritually thin and keeps asking what extra explanatory work God performs.",
+              tags: []
+            },
+            con: {
+              time: "10:15",
+              role: "Mystery argument",
+              words:
+                "Wolpe says consciousness, love, meaning, and why anything exists point beyond mere material stuff toward God.",
+              score: 78,
+              critique:
+                "Wolpe's mystery argument speaks to real pressure points for reductionist materialism. Consciousness, love, meaning, and the existence of the universe are not trivial puzzles, and he uses them to make religious belief emotionally and philosophically intelligible. His best move is to say God is not a laboratory object, so the question may require a wider rational vocabulary. The weakness is that mystery alone does not identify God as the explanation. Unresolved consciousness or existential wonder could support humility, further inquiry, non-reductive naturalism, or several rival metaphysics. The score is solid because the questions are serious, but lower because the inference from mystery to theism is underdeveloped.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The argument treats unresolved consciousness and existence as positive support for God too quickly."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Free will and science",
+        timebox: "18:55-29:50",
+        score: {
+          pro: 81,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "22:04",
+              role: "Natural freedom",
+              words:
+                "Hitchens says randomness, evolution, immutable law, and inquiry explain more than saying the boss grants free will.",
+              score: 81,
+              critique:
+                "Hitchens handles the free-will exchange well when he refuses the forced choice between God and crude determinism. He points to evolutionary contingency, mutation, natural law, and scientific humility to show that material processes are not simply a rigid script. He also makes the freedom objection vivid: if freedom is merely granted by an all-supervising authority, the concept starts to look politically and morally compromised. The weakness is that he does not provide a full positive theory of agency. Randomness and contingency are not the same as responsible choice, and his quip that we have no choice but to have free will does not solve the problem. The score is strong but limited.",
+              tags: []
+            },
+            con: {
+              time: "20:01",
+              role: "Free-will gap",
+              words:
+                "Wolpe argues that DNA, environment, and randomness cannot produce directed choice without something immaterial given by God.",
+              score: 80,
+              critique:
+                "Wolpe's free-will challenge is one of his sharper philosophical moves. He separates randomness from agency and asks how a purely biological being can make a directed choice rather than merely enact DNA, environment, or accident. That question exposes a real difficulty for simplified naturalism. The weakness is that the God answer arrives faster than the argument permits. Showing that agency is hard to explain materially does not show that God explains it, nor how divine creation avoids its own agency questions. Wolpe also leans on reported scientific determinism without developing the philosophical alternatives. The score is strong because the challenge is relevant, but it remains a gap argument.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Difficulty explaining agency materially is treated as support for God before the positive mechanism is shown."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Goodness and consolation",
+        timebox: "30:00-50:05",
+        score: {
+          pro: 82,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "33:22",
+              role: "Consolation critique",
+              words:
+                "Hitchens accepts private solace, but attacks proselytizing charity, false hope, and lying to the vulnerable as religious harms.",
+              score: 82,
+              critique:
+                "Hitchens's consolation critique is strongest when he distinguishes private comfort from public claims. If someone finds Mormonism, Catholicism, or any other faith personally sustaining, he says that is tolerable until it seeks tax privilege, school authority, or missionary leverage over the helpless. His Haiti examples and later deathbed objections press the ethics of mixing aid with conversion or unverifiable promises. The weakness is that his harshness can flatten sincere pastoral care into deception, even when Wolpe describes comfort as community, meaning, and prayer rather than salesmanship. The score is strong because Hitchens identifies real abuses and keeps truth separate from utility, but his framing leaves less room for non-coercive consolation.",
+              tags: []
+            },
+            con: {
+              time: "30:16",
+              role: "Goodness evidence",
+              words:
+                "Wolpe says Judaism's first obligation is goodness, faith deepens life, and religious people often give, vote, volunteer, and help.",
+              score: 85,
+              critique:
+                "Wolpe's goodness argument is one of his best contributions because it refuses to let the debate become only metaphysics. He points to religious communities that give money, volunteer, vote, aid strangers, sit with mourners, and help people find meaning under suffering. That is relevant to Hitchens's claim that faith is useless or poisonous. Wolpe is also careful to say belief is not automatically better than unbelief; goodness is the primary demand. The weakness is that social utility does not establish divine truth, and survey claims need careful controls. Still, the score is high because Wolpe successfully broadens the record from religious harms to lived moral practice.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Violence and religion",
+        timebox: "50:10-60:35",
+        score: {
+          pro: 86,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "55:00",
+              role: "Force multiplier",
+              words:
+                "Hitchens says tribal violence exists anyway, but divine mandate intensifies it in Canaan, Rwanda, Israel-Palestine, and Northern Ireland.",
+              score: 86,
+              critique:
+                "Hitchens's force-multiplier argument is among the debate's clearest. He concedes violence has primate, tribal, ethnic, and material roots, then argues that divine mandate makes ordinary disputes harder to compromise. That concession makes the claim more credible: religion is not the only cause, but it can sanctify territorial and identity conflicts. His examples from Canaan, Rwanda, Israel-Palestine, Northern Ireland, Nazism, and slavery give the point historical texture. The weakness is that several examples are compressed and contested, especially where religion, nationalism, colonialism, and state ideology overlap. The score is high because the mechanism is plausible and responsive, but not higher because the historical sorting remains selective.",
+              tags: []
+            },
+            con: {
+              time: "51:05",
+              role: "Human-nature defense",
+              words:
+                "Wolpe says most wars are about land, power, resources, and human crookedness, while religion tries to straighten people.",
+              score: 82,
+              critique:
+                "Wolpe's violence reply is fairer than a simple denial. He argues that most conflicts are driven by land, power, resources, and human nature, not theology alone, and he points to nonreligious twentieth-century horrors as a control case. He also gives religion a reforming role: an attempt to discipline crooked human beings that often fails because human beings are difficult. The weakness is that counting wars as religious or nonreligious can hide how sacred authority intensifies mixed conflicts. Hitchens's best point is not that religion invents violence from nothing, but that it can bless violence with ultimate certainty. Wolpe scores well for causal complexity, but less well on the intensifier problem.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Community and utility",
+        timebox: "1:00:35-1:11:20",
+        score: {
+          pro: 83,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:03:10",
+              role: "Utility challenge",
+              words:
+                "Hitchens says charity does not validate religious claims, and secular aid can serve without conversion or superstition.",
+              score: 83,
+              critique:
+                "Hitchens's utility challenge is logically sharp. When religious charity is offered as evidence for faith, he asks what that has to do with God's existence or the truth of revelation. That distinction matters: a false belief can motivate real generosity, and a true claim does not become true because its community is useful. His polio example also shows that religious authority can obstruct public health as well as mobilize aid. The weakness is that he sometimes sounds as if utility is always evasive, even though he himself argues religion has harmful practical effects. If harms count against religion socially, benefits deserve some social weight too. The score is high because the truth-utility distinction is necessary.",
+              tags: []
+            },
+            con: {
+              time: "1:01:43",
+              role: "Community defense",
+              words:
+                "Wolpe argues religious labels sustain charities, intergenerational community, common purpose, and organized help in an atomized society.",
+              score: 81,
+              critique:
+                "Wolpe's community defense is practical and humane. He argues that religious labels are not empty tribal badges; they organize charities, schools, rituals, intergenerational belonging, and shared service in societies where other civic structures are weaker. That answers the question of whether abandoning religious identity would accidentally dissolve goods people depend on. The weakness is that it proves institutional value more than doctrinal truth. Hitchens can accept that churches are useful while still denying that God exists or that religious authority deserves privilege. Wolpe also treats the loss of religious organization as if replacements are scarce, which may understate secular civic alternatives. The score is solid because the social function is real, but limited.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality and final truth",
+        timebox: "1:11:20-1:31:30",
+        score: {
+          pro: 82,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:11:27",
+              role: "Authority warning",
+              words:
+                "Hitchens says moral absolutes still require judgment, and secular law often civilizes religious institutions and claims.",
+              score: 82,
+              critique:
+                "Hitchens's authority warning is persuasive because he resists the fantasy that moral absolutes remove moral judgment. The Golden Rule has cross-cultural force, but he notes it still needs interpretation in cases such as punishment, violence, and conflicting duties. His later examples of abuse cover-up and secular law disciplining religious institutions show why external accountability matters. The weakness is that he does not give a full grounding for universal morality beyond shared human reasoning, literature, philosophy, and solidarity. Wolpe can still ask why those sources are binding when costly. The score is strong because Hitchens punctures authoritarian shortcuts, but slightly limited because the positive moral foundation remains sketched rather than fully built.",
+              tags: []
+            },
+            con: {
+              time: "1:24:03",
+              role: "Moral fabric",
+              words:
+                "Wolpe says goodness is woven into the universe, so secret wrongdoing remains wrong beyond human convenience or power.",
+              score: 83,
+              critique:
+                "Wolpe's final moral-fabric argument captures the strongest theistic intuition in the debate. If goodness is woven into reality, then morality is not merely preference, power, fashion, or public reputation. That gives him a clear answer to why secret wrongdoing remains wrong and why moral obligation can claim us even when no one is watching. The weakness is that the premise is asserted more than demonstrated. Hitchens can agree that secret cruelty is wrong while denying that the fact requires a supernatural source. Wolpe also risks moving from our need for stable morality to the truth of the metaphysical structure that would secure it. The score is strong because the challenge is central, but not decisive.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The argument assumes that moral authority requires a God-grounded fabric instead of independently proving that dependence."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 84,
+        strengths: [
+          "Hitchens repeatedly separated truth claims from psychological comfort, charity, community, and social usefulness.",
+          "His best arguments pressed burden of proof: deism is not religion, mystery is not evidence, and moral authority is not automatic.",
+          "The violence discussion was unusually strong because he conceded human tribalism before explaining religion as an intensifier."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes treated psychological origins of belief as though they substantially answered the truth question.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His examples of religious harm were vivid but sometimes compressed diverse traditions, ideologies, and conflicts into one hostile pattern.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 81,
+        strengths: [
+          "Wolpe gave theistic belief a humane and intellectually modest form rather than defending crude literalism.",
+          "He made the strongest case for religion's social goods through charity, community, mourning practices, and moral formation.",
+          "His free-will and moral-objectivity challenges identified real pressure points for simplified materialism."
+        ],
+        blunders: [
+          {
+            text:
+              "He often moved from mystery, consciousness, or free-will difficulty to God before supplying positive evidence for that bridge.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His charity and community evidence sometimes supported religion's usefulness more clearly than its truth.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
