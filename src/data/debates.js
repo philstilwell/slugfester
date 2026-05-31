@@ -13712,5 +13712,338 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "enoch-bush-objective-moral-truths-2026",
+    number: "40",
+    title: "David Enoch vs Lance Bush: Are There Objective Moral Truths?",
+    label: "Moral realism and anti-realism",
+    date: "2026-05-31",
+    duration: "1 hr 30 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=UWZuHxO4WcA",
+    motion:
+      "Are there objective moral truths, and does moral realism or global normative anti-realism better explain ordinary moral judgment, deliberation, language, and disagreement?",
+    summary:
+      "Enoch defends robust normative realism as the best way to save moral phenomena; Bush argues that anti-realist quietism and empirical psychology dissolve the need for realist facts.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the Miles K. Donahue upload, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "The starting point are the phenomena.",
+        context:
+          "Enoch's realism begins with ordinary normative commitments, especially claims that some wrongs remain wrong regardless of what people think."
+      },
+      con: {
+        text: "I am a global normative anti-realist",
+        context:
+          "Bush frames the disagreement broadly: not just moral anti-realism, but skepticism toward stance-independent normative facts as such."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Moral realist",
+        speaker: "David Enoch",
+        color: "teal"
+      },
+      con: {
+        name: "Normative anti-realist",
+        speaker: "Lance Bush",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 81,
+      con: 83
+    },
+    sections: [
+      {
+        title: "Opening frameworks",
+        timebox: "00:38-25:41",
+        score: {
+          pro: 84,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "00:38",
+              role: "Phenomena-first realism",
+              words:
+                "Enoch says realism starts from phenomena: wrongness, reasons, deliberation, and the thought that some wrongs remain wrong even if everyone thinks otherwise.",
+              score: 84,
+              critique:
+                "Enoch's opening is strong because it avoids presenting realism as a free-floating metaphysical thesis. He starts with deliberation, reasons, ordinary wrongness claims, and the intuition that some actions would remain wrong even under contrary social belief. He also concedes the costs: abstract, causally inert truths raise epistemic and semantic questions that realism must answer. That makes the case more candid than a simple appeal to moral outrage. The weakness is that the phenomena are already described in realist-friendly terms. Treating it is wrong as something to be saved may build in what anti-realism denies. The score is high because the structure is philosophically clear, but not decisive.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The opening risks treating realist-looking moral facts as data before showing that anti-realists should accept that framing."
+                }
+              ]
+            },
+            con: {
+              time: "13:21",
+              role: "Empirical anti-realist frame",
+              words:
+                "Bush says he is a global normative anti-realist and that moral practice, discourse, and deliberation can be studied without positing realist or anti-realist folk commitments.",
+              score: 82,
+              critique:
+                "Bush's opening is strong because it widens the disagreement to normative realism generally and refuses to let moral examples settle the whole metaethical issue. His emphasis on discourse, behavior, deliberation, and empirical measures gives the anti-realist side a concrete research program rather than mere denial. He is also fair in saying ordinary people may not be realists or anti-realists at all. The weakness is that this frame can make the target almost entirely psychological: it explains moral talk and practice while leaving Enoch's question about whether the moral content itself is true less directly answered. The score is strong because it challenges a common realist default, but it risks changing the explanandum.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Default status and question-begging",
+        timebox: "26:00-35:50",
+        score: {
+          pro: 82,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "26:00",
+              role: "Truth-first reply",
+              words:
+                "Enoch says he does not care what most people think; the point to explain is that humiliating people because of race is wrong, not merely that people believe it.",
+              score: 82,
+              critique:
+                "Enoch's reply is forceful because it identifies the central mismatch. Bush treats folk psychology as the main data; Enoch insists the realist's data include the normative truth itself, such as that racial humiliation is wrong. If anti-realism begins by allowing only psychological explananda, it may indeed beg the question against realism. Enoch also clarifies that empirical popularity is not his argument for default status. The weakness is the blunt dismissal of empirical psychology. If moral intuitions are the route by which philosophers identify candidate phenomena, then empirical work about those intuitions can matter indirectly. The score is strong because Enoch exposes the framing dispute, but his reply overcorrects against evidence about moral cognition.",
+              tags: []
+            },
+            con: {
+              time: "31:55",
+              role: "Symmetry challenge",
+              words:
+                "Bush says question-begging cuts both ways: he does not share the realist intuition, so Enoch must explain why his starting points are privileged.",
+              score: 84,
+              critique:
+                "Bush's symmetry challenge is one of his best moves. He does not merely reject Enoch's intuition; he asks why Enoch's starting point should have dialectical privilege over his own. That directly pressures the realist appeal to what seems obvious. Bush is also right that if both sides begin from contested starting points, calling only one side question-begging is unstable. The weakness is that symmetry is not automatically parity. Some starting points may be more resilient, more integrated with other commitments, or harder to give up even if neither side can prove them from neutral ground. The score is high because Bush puts the burden where it belongs, but the parity claim needs more support.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Starting points and skepticism",
+        timebox: "35:52-50:06",
+        score: {
+          pro: 78,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "37:11",
+              role: "Radical skepticism analogy",
+              words:
+                "Enoch argues that not every starting point needs an argument, and that Bush's parity demand risks collapsing into radical skepticism about any plausible premise.",
+              score: 78,
+              critique:
+                "Enoch's skepticism analogy has real force. Philosophical inquiry cannot require every starting point to be justified by a further argument, because inquiry must begin somewhere. His point that unargued does not mean equal is important, and it protects common-sense premises from being neutralized by mere disagreement. The weakness is that the radical-skeptic comparison became too quick and too heated. Bush is not denying all justification; he is contesting a specific realist starting point and asking for criteria of privilege. Moving from that challenge to radical skepticism risks shifting the focus away from metaethics. The score remains solid because the methodological point matters, but the application outruns the demonstrated entailment.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The radical-skeptic analogy can divert from the narrower question of whether realist moral premises deserve default status."
+                }
+              ]
+            },
+            con: {
+              time: "43:18",
+              role: "Normative entanglement",
+              words:
+                "Bush says realists conflate normative and metaethical judgments: when he says torture is wrong, he means he opposes it, not that an objective property exists.",
+              score: 85,
+              critique:
+                "Bush's normative-entanglement account is precise and useful. He explains why anti-realists can sincerely say torture is wrong without conceding objective wrongness: the statement expresses opposition, condemnation, and practical stance. His counterfactual analysis also helps show how wrong even if everyone thought otherwise can become ambiguous depending on whether the actual speaker's standards are included. That directly weakens a common realist conversational trap. The weakness is that personal opposition may not capture the public, critical, and disagreement-sensitive features of moral language that Enoch wants saved. Still, the score is high because Bush gives an actual anti-realist interpretation rather than merely saying he lacks the realist intuition.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Folk psychology and ordinary language",
+        timebox: "54:35-01:06:27",
+        score: {
+          pro: 80,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "57:48",
+              role: "Philosophy-over-surveys response",
+              words:
+                "Enoch grants that people may conflate normative and metaethical questions, but says serious philosophy needs better arguments than asking people and counting answers.",
+              score: 80,
+              critique:
+                "Enoch's response is partly right: survey results about confused lay answers cannot by themselves decide whether realism is true. His insistence that debunking explanations, not raw counts, are what matter is an important concession. He also presses Bush on language, saying that wrong does not linguistically behave like I oppose it. The weakness is that the reply sometimes sounds dismissive rather than diagnostic. If philosophers rely on intuitions and ordinary language, then empirical work about how those judgments are produced is not automatically peripheral. The score is solid because Enoch protects first-order philosophy from crude polling, but it loses force when it treats empirical psychology as mostly a nuisance.",
+              tags: []
+            },
+            con: {
+              time: "54:35",
+              role: "Reputational-cost explanation",
+              words:
+                "Bush says realist-seeming answers can arise because people conflate metaethical denial with moral indifference, especially when reputational costs are salient.",
+              score: 83,
+              critique:
+                "Bush's reputational-cost argument is a strong explanatory proposal. His yes/yes, yes/no, no/yes, no/no framework shows why simple questions about objective wrongness can misclassify anti-realists as morally suspect. That gives empirical psychology a clear role: it can explain why people answer as realists when they are actually protecting a normative stance. The weakness is that the causal story is still programmatic. It may explain some survey responses and conversational pressures, but it does not yet show that philosophers' realist judgments are produced by the same error. The score is strong because the mechanism is plausible and relevant, but not higher because the debunking step needs more evidence.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Numbers and causal debunking",
+        timebox: "01:06:46-01:10:40",
+        score: {
+          pro: 84,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:07:27",
+              role: "Comparison-class objection",
+              words:
+                "Enoch says being rare among people with no view is irrelevant, just as specialists in quantum theory are rare; causal debunking matters, not population counts.",
+              score: 84,
+              critique:
+                "Enoch's comparison-class objection is sharp. If most people have no formed view on quantum interpretations, that does not count against a specialist interpretation; likewise, most people's lack of metaethical theory does not count against realism. This exposes a problem in using population rarity as an initial strike against non-naturalist realism. Enoch also grants the important point that causal debunking would matter if Bush could identify a real error-producing mechanism. The weakness is that the analogy is imperfect because physics has predictive models and disciplinary checks that metaethics lacks. Still, the score is high because Enoch separates irrelevant head-counting from genuinely relevant causal explanation in this exchange.",
+              tags: []
+            },
+            con: {
+              time: "01:08:19",
+              role: "Shared-cause heuristic",
+              words:
+                "Bush clarifies that raw numbers are only a heuristic: the real issue is whether a small trained group shares a cause that produces realist error.",
+              score: 81,
+              critique:
+                "Bush improves his argument by clarifying that numbers are not dispositive. The point is causal: if a small, similarly trained group develops a strange view because of shared methods, assumptions, and incentives, that can be evidence of a common error source. The drug-hallucination analogy makes the structure intelligible and moves the argument away from simple majority rule. The weakness is that the actual causal diagnosis remains mostly asserted. Shared training can also be a route to expertise, not bias, and Enoch's quantum comparison shows why the relevant comparison class matters. The score is solid-strong because Bush refines the argument, but the heuristic remains somewhat under-supported.",
+              tags: [
+                {
+                  label: "Base-rate neglect",
+                  type: "bias",
+                  url: bias("base-rate-neglect"),
+                  context:
+                    "The minority heuristic risks using broad population prevalence while underweighting the smaller class of people with developed metaethical views."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Costs, quietism, and meaning",
+        timebox: "01:10:42-01:28:36",
+        score: {
+          pro: 82,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:15:37",
+              role: "Question-preservation reply",
+              words:
+                "Enoch says denying the metaethical question because it is hard is not progress, and admits realism faces serious epistemic, metasemantic, and supervenience costs.",
+              score: 82,
+              critique:
+                "Enoch closes well by taking anti-realist objections more seriously than the earlier rhetoric suggested. He concedes that epistemic access, metasemantics, and supervenience impose real costs, even if he thinks realism can pay them. His challenge to quietism is also apt: when a question seems meaningful, denying that it is a good question requires argument, not just dissatisfaction with analytic methods. The weakness is that his answer to Bush's meaning-as-use account is tentative; he admits philosophy of language is not his expertise and mostly registers suspicion. The score is strong because he preserves the substantive debate while acknowledging costs, but it lacks a fully developed closing rebuttal.",
+              tags: []
+            },
+            con: {
+              time: "01:11:33",
+              role: "Anti-realist quietism",
+              words:
+                "Bush says conventional anti-realist arguments are weak, but his pragmatist quietism dissolves the realism question by returning to metaphilosophy, methods, and use.",
+              score: 80,
+              critique:
+                "Bush's quietist closing is intellectually honest. He concedes that many standard anti-realist arguments, including evolutionary debunking and peer disagreement, are not very strong, then locates his disagreement deeper in metaphilosophy and pragmatic method. His final account of wrong as his own opposition clarifies what he personally means and avoids pretending to speak for all ordinary language. The weakness is that quietism can look like retreat. If the debate question is whether objective moral truths exist, dissolving the framework may leave the central issue under-answered for listeners who find the question meaningful. The score is solid because Bush clarifies his view, but lower because the dissolution strategy carries a significant burden.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The account shifts between what Bush personally means by moral claims and what moral sentences mean or do in public discourse."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 81,
+        strengths: [
+          "Enoch kept the realist case focused on normative phenomena rather than popularity, outrage, or a simplistic survey of folk opinion.",
+          "He repeatedly framed the debate as comparative plausibility rather than a knockout proof, and he openly acknowledged costs for realism.",
+          "His strongest pressure point was that anti-realism may beg the question if it permits only psychological facts as the relevant data."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes treated realist-looking normative claims as the starting data without fully explaining why Bush should accept them as facts rather than attitudes or practices.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "The radical-skepticism accusation and dismissive remarks about empirical psychology occasionally shifted attention away from Bush's narrower methodological challenge.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 83,
+        strengths: [
+          "Bush clearly distinguished normative commitment from metaethical realism, which let him oppose cruelty without conceding objective moral properties.",
+          "He gave concrete empirical and psychological mechanisms for why realist-seeming answers can arise from question wording, reputation management, and normative entanglement.",
+          "He was candid about the weakness of several standard anti-realist arguments and situated his own view in a broader pragmatist and quietist method."
+        ],
+        blunders: [
+          {
+            text:
+              "He often recast the realist's normative data as psychology to be explained, which risks assuming in advance that there are no stance-independent normative facts.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His minority-and-shared-training heuristic suggested an error story for realist philosophers before supplying enough evidence that the shared cause is distorting rather than expertise-building.",
+            links: [
+              {
+                label: "Base-rate neglect",
+                url: bias("base-rate-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
