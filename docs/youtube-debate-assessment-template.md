@@ -27,6 +27,7 @@ Landing-page design:
 - The header includes a `Search` link to `/search/`.
 - The landing intro includes a divider line followed by a ` | `-delineated list of unique current debate topics.
 - The debate list is capped at three columns on wide screens, then steps down responsively.
+- Landing-page debate card titles link directly to the debate assessment.
 - Debate `label` values must be unique so landing cards, topic lists, and reference occurrence cards are unambiguous.
 - Debate `number` values must be unique, sequential in debate-list order, and two-digit zero-padded, starting with `01`.
 - Debate numbers should appear anywhere the site identifies a debate for tracking: landing cards, debate hero metadata, topic lists, and reference occurrence cards.

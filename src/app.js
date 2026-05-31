@@ -225,7 +225,7 @@ function renderDebateCard(debate) {
         <span class="card-label">${renderDebateNumber(debate)}<span>${escapeHtml(debate.label)}</span></span>
         <span>${escapeHtml(debate.duration)}</span>
       </div>
-      <h3>${escapeHtml(debate.title)}</h3>
+      <h3><a class="debate-title-link" href="${escapeHtml(debatePath(debate))}">${escapeHtml(debate.title)}</a></h3>
       <p class="motion">${escapeHtml(debate.motion)}</p>
       <p>${escapeHtml(debate.summary)}</p>
       <div class="side-score-strip" aria-label="Overall scores">
