@@ -208,10 +208,10 @@ export function debateSeo(debate) {
 export function searchSeo(debates = []) {
   return {
     title: pageTitle("Search debate scorecards"),
-    description: `Filter ${debates.length} Slugfester debate scorecards by interlocutor, topic, and text.`,
+    description: `Filter ${debates.length} Slugfester debate scorecards by interlocutor and text.`,
     canonicalPath: searchPath(),
     imagePath: DEFAULT_IMAGE,
-    imageAlt: "Slugfester debate search with interlocutors and topics.",
+    imageAlt: "Slugfester debate search with interlocutors.",
     type: "website",
     jsonLd: [
       organizationJsonLd(),
@@ -219,7 +219,7 @@ export function searchSeo(debates = []) {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         name: "Search Slugfester debate scorecards",
-        description: `Filter ${debates.length} Slugfester debate scorecards by interlocutor, topic, and text.`,
+        description: `Filter ${debates.length} Slugfester debate scorecards by interlocutor and text.`,
         url: absoluteUrl(searchPath()),
         isPartOf: {
           "@id": WEBSITE_ID

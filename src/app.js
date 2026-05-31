@@ -267,7 +267,6 @@ function uniqueInterlocutorsForDebate(debate) {
 
 function searchFacets() {
   const people = new Map();
-  const topics = new Map();
 
   debates.forEach((debate) => {
     uniqueInterlocutorsForDebate(debate).forEach((avatar) => {
@@ -275,15 +274,10 @@ function searchFacets() {
       current.count += 1;
       people.set(avatar.name, current);
     });
-
-    const topic = topics.get(debate.label) || { label: debate.label, count: 0 };
-    topic.count += 1;
-    topics.set(debate.label, topic);
   });
 
   return {
-    people: [...people.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name)),
-    topics: [...topics.values()]
+    people: [...people.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name))
   };
 }
 
@@ -291,8 +285,7 @@ function searchState() {
   const params = new URLSearchParams(window.location.search);
   return {
     query: params.get("q") || "",
-    people: params.getAll("person"),
-    topics: params.getAll("topic")
+    people: params.getAll("person")
   };
 }
 
@@ -301,7 +294,6 @@ function searchUrl(state) {
 
   if (state.query.trim()) params.set("q", state.query.trim());
   state.people.forEach((person) => params.append("person", person));
-  state.topics.forEach((topic) => params.append("topic", topic));
 
   const query = params.toString();
   return `${searchPath()}${query ? `?${query}` : ""}`;
@@ -325,11 +317,10 @@ function debateSearchText(debate) {
 function debateMatchesSearch(debate, state) {
   const people = uniqueInterlocutorsForDebate(debate).map((avatar) => avatar.name);
   const selectedPeopleMatch = state.people.every((person) => people.includes(person));
-  const selectedTopicsMatch = !state.topics.length || state.topics.includes(debate.label);
   const query = normalizeSearchValue(state.query);
   const queryMatch = !query || normalizeSearchValue(debateSearchText(debate)).includes(query);
 
-  return selectedPeopleMatch && selectedTopicsMatch && queryMatch;
+  return selectedPeopleMatch && queryMatch;
 }
 
 function toggleValue(values, value) {
@@ -352,7 +343,7 @@ function renderSearch() {
   const state = searchState();
   const facets = searchFacets();
   const matches = debates.filter((debate) => debateMatchesSearch(debate, state));
-  const hasFilters = Boolean(state.query.trim() || state.people.length || state.topics.length);
+  const hasFilters = Boolean(state.query.trim() || state.people.length);
 
   app.innerHTML = renderShell(`
     <main class="search-page">
@@ -368,7 +359,7 @@ function renderSearch() {
         <form class="search-form" role="search">
           <label for="search-query">Text</label>
           <div class="search-input-row">
-            <input id="search-query" name="q" type="search" value="${escapeHtml(state.query)}" placeholder="speaker, topic, claim, title">
+            <input id="search-query" name="q" type="search" value="${escapeHtml(state.query)}" placeholder="speaker, claim, title">
             <button class="button primary" type="submit">Apply</button>
             ${hasFilters ? `<button class="button secondary" type="button" data-clear-search>Clear</button>` : ""}
           </div>
@@ -383,16 +374,6 @@ function renderSearch() {
             ${facets.people.map((person) => renderPersonFilter(person, state.people.includes(person.name))).join("")}
           </div>
         </div>
-
-        <div class="filter-section">
-          <div class="filter-heading">
-            <h2>Topics</h2>
-            <span>${state.topics.length || "Any"}</span>
-          </div>
-          <div class="topic-filter-list">
-            ${facets.topics.map((topic) => renderTopicFilter(topic, state.topics.includes(topic.label))).join("")}
-          </div>
-        </div>
       </section>
 
       <section class="search-results" aria-labelledby="search-results-heading">
@@ -403,7 +384,7 @@ function renderSearch() {
         ${
           matches.length
             ? `<div class="search-result-list">${matches.map(renderSearchResult).join("")}</div>`
-            : `<div class="empty-results"><strong>No debates matched.</strong><span>Try fewer people, another topic, or a broader text search.</span></div>`
+            : `<div class="empty-results"><strong>No debates matched.</strong><span>Try fewer people or a broader text search.</span></div>`
         }
       </section>
     </main>
@@ -418,15 +399,6 @@ function renderPersonFilter(person, selected) {
       <img src="${escapeHtml(person.src)}" alt="${escapeHtml(person.name)}" width="512" height="512" loading="lazy" decoding="async">
       <span>${escapeHtml(person.name)}</span>
       <strong>${person.count}</strong>
-    </button>
-  `;
-}
-
-function renderTopicFilter(topic, selected) {
-  return `
-    <button class="topic-filter ${selected ? "active" : ""}" type="button" data-filter-type="topic" data-filter-value="${escapeHtml(topic.label)}" aria-pressed="${selected}">
-      <span>${escapeHtml(topic.label)}</span>
-      <strong>${topic.count}</strong>
     </button>
   `;
 }
@@ -482,7 +454,7 @@ function bindSearchControls(state) {
   });
 
   page.querySelector("[data-clear-search]")?.addEventListener("click", () => {
-    navigateSearch({ query: "", people: [], topics: [] });
+    navigateSearch({ query: "", people: [] });
   });
 
   page.querySelectorAll("[data-filter-type]").forEach((button) => {
@@ -493,8 +465,6 @@ function bindSearchControls(state) {
 
       if (type === "person") {
         navigateSearch({ ...state, query, people: toggleValue(state.people, value) });
-      } else if (type === "topic") {
-        navigateSearch({ ...state, query, topics: toggleValue(state.topics, value) });
       }
     });
   });

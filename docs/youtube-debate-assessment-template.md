@@ -31,7 +31,7 @@ Landing-page design:
 - Debate `number` values must be unique, sequential in debate-list order, and two-digit zero-padded, starting with `01`.
 - Debate numbers should appear anywhere the site identifies a debate for tracking: landing cards, debate hero metadata, topic lists, and reference occurrence cards.
 - Internal debate and reference links use clean path URLs, while old hash routes remain as backwards-compatible fallbacks.
-- `/search/` lets users filter debates by text, interlocutor portraits, and topic chips.
+- `/search/` lets users filter debates by text and interlocutor portraits.
 
 Design constraints:
 

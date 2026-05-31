@@ -197,7 +197,7 @@ addPage(
 addPage(
   searchPath(),
   searchSeo(debates),
-  "Search Slugfester debate scorecards by interlocutor, topic, and text."
+  "Search Slugfester debate scorecards by interlocutor and text."
 );
 
 debates.forEach((debate) => {
