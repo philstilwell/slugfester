@@ -14362,5 +14362,322 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "schmid-tomaszewski-divine-simplicity-2020",
+    number: "42",
+    title: "Joe Schmid vs Chris Tomaszewski: Is Divine Simplicity True?",
+    label: "Divine simplicity and classical theism",
+    date: "2026-05-31",
+    duration: "1 hr 55 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=rX6di0Au5Kg",
+    motion:
+      "Is divine simplicity, understood as God's absence of real intrinsic parts or composition, coherent with classical theism, Trinitarian doctrine, divine freedom, and omniscient knowledge of contingent reality?",
+    summary:
+      "In a collegial discussion, Tomaszewski defends Thomistic simplicity through analogy, aseity, and extrinsic predication, while Schmid tests it with Trinitarian, alone-world, and changing-knowledge objections.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the Capturing Christianity livestream, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short. This was a structured discussion more than a formal debate.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God's knowledge is the cause of things",
+        context:
+          "Tomaszewski's defense repeatedly turns on classical direction-of-fit: creatures conform to divine intellect rather than God learning from creatures."
+      },
+      con: {
+        text: "there's some kind of contingent reality within God",
+        context:
+          "Schmid's strongest objections try to show that divine freedom, contingency, and knowledge create intrinsic distinctions simplicity cannot absorb."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Classical theist",
+        speaker: "Chris Tomaszewski",
+        color: "teal"
+      },
+      con: {
+        name: "Agnostic critic",
+        speaker: "Joe Schmid",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 82,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Definitions and analogy",
+        timebox: "04:40-21:04",
+        score: {
+          pro: 84,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "12:00",
+              role: "Analogy defense",
+              words:
+                "Tomaszewski says simplicity and analogy go hand in hand: in God there is one reality like creaturely knowledge, power, and love without being several properties.",
+              score: 84,
+              critique:
+                "Tomaszewski's analogy defense is strong because it answers the most immediate incoherence worry before the harder objections arrive. He does not say creaturely knowledge and creaturely power become the same property in God; he says divine reality is analogically like each while remaining one. That makes the doctrine less vulnerable to a simple property-identity caricature. The weakness is that analogy can also reduce argumentative grip. If every difficult predicate is translated into something-like-our-term, the audience needs a clearer rule for when analogy preserves content and when it protects mystery. The high score reflects conceptual discipline and charitable clarification, while withholding more because the analogy theory itself is mostly asserted rather than defended.",
+              tags: []
+            },
+            con: {
+              time: "05:10",
+              role: "Composition map",
+              words:
+                "Schmid maps simplicity as denial of supposite/essence, subject/accident, essence/existence, agent/action, act/potency, and form/matter composition.",
+              score: 83,
+              critique:
+                "Schmid's initial map is unusually useful for a skeptical critic because it states the classical doctrine in its own categories before attacking it. Listing supposite and essence, subject and accidents, essence and existence, agent and action, act and potency, and form and matter helps prevent the exchange from becoming a vague dispute over whether God has parts. The move also shows why different objections may target different kinds of composition. Its limitation is that the map is mostly exposition, not yet a case against divine simplicity. Still, exposition has argumentative value here: once the doctrine is articulated precisely, later objections can aim at real commitments rather than popular simplifications. That earns a strong score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Aseity and dependence",
+        timebox: "21:39-30:09",
+        score: {
+          pro: 82,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "21:45",
+              role: "Aseity motivation",
+              words:
+                "Tomaszewski argues that simplicity secures God's complete and radical independence, because a God composed of real parts would depend on their unity.",
+              score: 82,
+              critique:
+                "Tomaszewski's aseity argument gives divine simplicity a genuine motivation rather than presenting it as technical baggage. If God is supposed to be metaphysically ultimate, then a God whose being depends on prior parts or on their unifying relation seems less ultimate. His move is especially good when he shifts from mere counterfactual dependence to the unity of parts grounding the whole; that is the stronger worry. The weakness is that the unity principle is doing a great deal of work. Non-classical theists can ask why God could not ground his own differentiated life or why dependence on nothing outside God is insufficient. The score is strong because the motivation is relevant, but not decisive because the dependency standard remains contested.",
+              tags: []
+            },
+            con: {
+              time: "23:47",
+              role: "Dependence replies",
+              words:
+                "Schmid answers that non-classical theists can distinguish counterfactual from metaphysical dependence, let God ground parts, or define aseity as dependence on nothing outside God.",
+              score: 80,
+              critique:
+                "Schmid's reply is good because it gives the non-classical theist several principled escape routes instead of merely rejecting simplicity by intuition. The counterfactual versus metaphysical dependence distinction is especially important: essential parts do not automatically explain or ground the thing they belong to. Priority monism and a weaker outside-God account of aseity also show that the classical standard is not the only available one. The limitation is that the alternatives arrive as a menu more than as a defended model. Some may be individually costly, especially if they must also handle Trinity, divine action, and knowledge. The score is solid-strong because the objection widens the dialectic, but it does not yet show which rival account wins.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Trinity and relations",
+        timebox: "33:55-45:17",
+        score: {
+          pro: 80,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "35:29",
+              role: "Latin Trinity reply",
+              words:
+                "Tomaszewski rejects social Trinitarian models but says on a Latin model each person is identical to the divine nature and distinguished by relations of opposition.",
+              score: 80,
+              critique:
+                "Tomaszewski's Trinitarian reply is clear about the cost of his position: social Trinitarianism is incompatible with divine simplicity, so a Latin model is required. That candor helps. He then explains how persons can be identical to the divine nature while distinct from one another by relations of opposition. The weakness is that the crucial metaphysics of relation remains compressed. Saying the Son is his begottenness and that directedness is not an additional positive ontological item may be coherent inside scholastic relation theory, but it sounds like the exact distinction the objection asked him to justify. The score is strong enough for doctrinal precision, but limited because the decisive machinery is mostly gestured at.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The relational distinction is granted protective force, but the live argument gives limited independent reason for the exception."
+                }
+              ]
+            },
+            con: {
+              time: "34:00",
+              role: "Trinitarian tetrad",
+              words:
+                "Schmid presents an inconsistent tetrad: Trinitarian processions seem intrinsic to God yet distinct from God, while simplicity forbids intrinsic positive items distinct from God.",
+              score: 84,
+              critique:
+                "Schmid's Trinitarian tetrad is one of the cleaner critical moves because it puts pressure on a precise compatibility claim. If processions, paternity, filiation, or spiration are real and intrinsic to God yet not identical to God as such, then simplicity appears to face a composition problem. The argument is also fair because it lets the classical theist reject a premise, rather than pretending contradiction has already been shown. Its weakness is that it depends on treating relations or processions as positive ontological items in the relevant sense, which Tomaszewski directly denies. The score is high because the tetrad organizes the dispute well, but not higher because the key premise is exactly where scholastic relation theory pushes back.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Alone world knowledge",
+        timebox: "45:41-01:08:23",
+        score: {
+          pro: 83,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "59:23",
+              role: "Extrinsic reply",
+              words:
+                "Tomaszewski rejects the alone-world premise by arguing that being alone is extrinsic and that knowledge depends partly on truth, which is also extrinsic.",
+              score: 83,
+              critique:
+                "Tomaszewski's extrinsic-property reply is a serious answer, not a dodge. The loneliness or aloneness example challenges the inference from no other concrete thing exists to every true predication must be intrinsic. His further point that knowledge entails truth, and truth can depend on how reality is, also gives him a general account of why knowledge predications may vary without intrinsic change in God. The weakness is that Schmid's argument is not about every property; it targets contingent divine knowledge as a positive reality. If the intrinsic component of knowing is more than bare intellect, the reply may not remove the pressure. The score is high because it attacks the central premise, but the positive account remains delicate.",
+              tags: []
+            },
+            con: {
+              time: "51:24",
+              role: "Alone-world argument",
+              words:
+                "Schmid argues that if God exists alone, any positive reality there must be intrinsic to God; contingent divine knowledge would therefore be a contingent intrinsic item.",
+              score: 86,
+              critique:
+                "Schmid's alone-world argument is the debate's strongest pressure test. It uses commitments many classical theists accept: God is free to create, can exist without creatures, knows contingent truths, and cannot have contingent intrinsic accidents. The argument is powerful because it traps the extrinsic-knowledge strategy in the very world where there appears to be nothing extrinsic. Schmid also clarifies the argument after the host notes its difficulty, which improves accessibility. The main weakness is that the move depends on treating contingent knowledge as a positive item intrinsic to God rather than as a predication partly grounded by truth conditions. The score is high because the structure is tight, but the contested metaphysical classification keeps it from being decisive.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The objection partly assumes that contingent divine knowledge is a positive intrinsic item, which is the disputed point."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Timeless changing knowledge",
+        timebox: "01:09:15-01:28:31",
+        score: {
+          pro: 82,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:17:01",
+              role: "Equivocation reply",
+              words:
+                "Tomaszewski says the changing-knowledge argument equivocates: knowledge as a real intrinsic item in God is fixed, while knowledge predications vary with creatures.",
+              score: 82,
+              critique:
+                "Tomaszewski's equivocation reply is philosophically disciplined. He distinguishes knowledge as a real ontologically positive feature in God from knowledge as a predicable involving creatures and truth. The weight analogy helps: a sentence can appear to describe one subject while covertly depending on a relation to something else. This directly answers Schmid's claim that changing truths require changing divine knowledge. The weakness is that the solution can feel too thin. If knowing that dinosaurs exist and knowing that dinosaurs are extinct differ only extrinsically, listeners may wonder whether the account preserves ordinary knowledge content. The score is strong because the distinction is relevant and targeted, but capped because the preserved content remains underexplained.",
+              tags: []
+            },
+            con: {
+              time: "01:09:15",
+              role: "Timelessness challenge",
+              words:
+                "Schmid argues that no potential in God forbids acquiring or losing knowledge, while real temporal dynamism appears to make omniscient knowledge dynamic.",
+              score: 85,
+              critique:
+                "Schmid's changing-knowledge argument is strong because it connects divine simplicity to immutability, timelessness, and omniscience rather than treating them as separate doctrines. His long literature survey is not merely name-dropping; it shows that many classical sources really do deny that God acquires or loses knowledge. He then presses the intuitive problem: if reality changes and knowledge entails truth, omniscient knowledge seems to track those changes. The weakness is that the survey can outpace analysis. Establishing what the tradition says does not settle whether its predicable/property distinction can answer the worry. The score is high because the objection is central and well-sourced, but not decisive because it still needs to defeat the extrinsic-predication model.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Q&A and closing",
+        timebox: "01:29:12-01:50:44",
+        score: {
+          pro: 81,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:30:28",
+              role: "Grace answer",
+              words:
+                "Tomaszewski says God can exist alone because creation adds nothing to God's goodness; creatures exist gratuitously, for their sake and ultimately God's glory.",
+              score: 81,
+              critique:
+                "Tomaszewski's Q&A answer usefully connects the modal claim that God could exist alone with Christian doctrines of perfection, creation, and grace. If God is already maximal goodness, creation need not improve God or reality; it can be a gratuitous gift to creatures. That explains why the alone-world possibility is not theologically embarrassing for him. The weakness is that the answer works mainly inside a Christian metaphysical frame. It explains why the doctrine matters, but it does not independently show that the frame is coherent under the earlier knowledge and relation objections. The score is strong for integration and pastoral-theological relevance, while limited because it functions more as a consequence of the system than a new defense.",
+              tags: []
+            },
+            con: {
+              time: "01:29:21",
+              role: "Possible reasons",
+              words:
+                "Schmid says a classical theist could appeal to unknown divine reasons, undiluted perfection, or divine self-sufficiency to explain possible aloneness.",
+              score: 78,
+              critique:
+                "Schmid's answer to why God would ever be alone is fair because he treats the question as internal to classical theism rather than as an easy gotcha. He offers several possible routes: unknown divine reasons, a world of undiluted perfection, and divine self-sufficiency. That helps show why his alone-world argument is not that God probably would be alone, but that the possibility follows from classical freedom. The weakness is that the skeptical-theist route is modest. Saying God might have unknown reasons protects possibility, but it does little to illuminate the doctrine or answer concerns about divine motivation. The score is solid because the clarification serves the main argument, but it is not a major independent advance.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 82,
+        strengths: [
+          "Tomaszewski gave a patient, technically informed defense of divine simplicity, especially through analogy, aseity, direction-of-fit, and extrinsic predication.",
+          "He repeatedly identified the exact premise he rejected, which kept the discussion from drifting into vague mystery or blanket appeal to tradition.",
+          "His best moments connected metaphysical machinery to wider Christian doctrine without pretending every model of Trinity or knowledge is compatible with simplicity."
+        ],
+        blunders: [
+          {
+            text:
+              "His defense sometimes assigned enormous explanatory work to analogy, relational identity, or extrinsic predication before giving enough independent reason to trust those distinctions.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "Some replies depended on scholastic terms that were coherent inside the system but did not always translate into publicly inspectable arguments for outsiders.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Schmid framed the target charitably and precisely, giving classical theism's own distinctions before applying pressure.",
+          "His strongest objections, especially the Trinitarian tetrad and alone-world knowledge argument, isolated premises that defenders had to answer directly.",
+          "He kept the discussion educational rather than tribal, which made technical objections easier to evaluate on their merits."
+        ],
+        blunders: [
+          {
+            text:
+              "His arguments sometimes treated knowledge, predication, and positive reality as metaphysically thick before the defender's predicable/property distinction had been settled.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "The long appeal to named sources helped establish traditional commitments, but occasionally substituted cataloging authorities for deeper analysis of the reply.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
