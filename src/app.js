@@ -323,6 +323,12 @@ function debateMatchesSearch(debate, state) {
   return selectedPeopleMatch && queryMatch;
 }
 
+function searchMatchesLabel(state) {
+  const query = state.query.trim();
+  const terms = [...(query ? [`"${query}"`] : []), ...state.people];
+  return terms.length ? terms.join(" | ") : "all debates";
+}
+
 function toggleValue(values, value) {
   return values.includes(value)
     ? values.filter((item) => item !== value)
@@ -378,7 +384,7 @@ function renderSearch() {
 
       <section class="search-results" aria-labelledby="search-results-heading">
         <div class="section-heading">
-          <p class="eyebrow">Matches</p>
+          <p class="eyebrow search-match-label">Matches: ${escapeHtml(searchMatchesLabel(state))}</p>
           <h2 id="search-results-heading">Debates</h2>
         </div>
         ${

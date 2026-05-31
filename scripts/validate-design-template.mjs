@@ -35,6 +35,8 @@ requireIncludes("app landing topics", app, 'class="topic-list"');
 requireIncludes("app search route", app, "renderSearch");
 requireIncludes("app search route", app, "searchPathRoutePattern");
 requireIncludes("app search route", app, "searchSeo");
+requireIncludes("app search route", app, "searchMatchesLabel");
+requireIncludes("app search route", app, "Matches:");
 requireIncludes("app search filters", app, 'class="person-filter');
 requireExcludes("app search filters", app, 'class="topic-filter');
 requireExcludes("app search filters", app, "renderTopicFilter");
@@ -71,6 +73,7 @@ requireIncludes("external links", styles, ".external-site-item:focus-within .ext
 requireIncludes("landing topics", styles, ".topic-divider");
 requireIncludes("landing topics", styles, ".topic-list");
 requireIncludes("search page", styles, ".search-page");
+requireIncludes("search page", styles, ".search-match-label");
 requireIncludes("search page", styles, ".person-filter");
 requireExcludes("search page", styles, ".topic-filter");
 requireIncludes("search page", styles, ".search-result");
