@@ -20,6 +20,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background:
     linear-gradient(180deg, rgba(244, 248, 247, 0.92), rgba(255, 255, 255, 0.96)),
     radial-gradient(circle at top left, rgba(47, 143, 133, 0.12), transparent 42%),
@@ -553,6 +554,7 @@ a {
   font-weight: 900;
   line-height: 0.98;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .quote-card p {
@@ -663,10 +665,18 @@ a {
   padding: clamp(28px, 5vw, 58px) 0 24px;
 }
 
+.debate-hero > *,
+.quote-card,
+.scoring-note,
+.interaction-guide {
+  min-width: 0;
+}
+
 .debate-hero h1 {
   max-width: 840px;
   font-size: clamp(1.5rem, 3.9vw, 3.35rem);
   line-height: 1;
+  overflow-wrap: anywhere;
 }
 
 .back-link {
@@ -732,8 +742,11 @@ a {
 }
 
 .side-heading {
-  display: flex;
-  justify-content: space-between;
+  --avatar-size: clamp(42px, 4.2vw, 54px);
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  align-items: center;
+  min-width: 0;
   gap: 10px;
   padding: 12px 14px;
   border: 1px solid var(--line);
@@ -741,11 +754,50 @@ a {
   background: #fff;
 }
 
-.side-heading span {
+.side-name {
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 850;
   text-transform: uppercase;
+}
+
+.side-speaker-lockup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 0;
+  gap: 10px;
+}
+
+.side-speaker-lockup strong {
+  min-width: 0;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.speaker-avatar-stack {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  padding-left: 4px;
+  isolation: isolate;
+}
+
+.speaker-avatar {
+  display: block;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  object-fit: cover;
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow:
+    0 7px 16px rgba(27, 43, 41, 0.14),
+    0 0 0 1px rgba(19, 32, 31, 0.16);
+}
+
+.speaker-avatar + .speaker-avatar {
+  margin-left: calc(var(--avatar-size) * -0.14);
 }
 
 .side-heading.teal {
@@ -1236,6 +1288,20 @@ a {
     top: 108px;
   }
 
+  .side-heading {
+    grid-template-columns: 1fr;
+    --avatar-size: 48px;
+  }
+
+  .side-speaker-lockup {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .side-speaker-lockup strong {
+    text-align: left;
+  }
+
   .quote-card {
     min-height: 210px;
   }
@@ -1302,6 +1368,10 @@ a {
 
   .columns-head {
     position: static;
+  }
+
+  .side-heading {
+    --avatar-size: 44px;
   }
 
   .argument {

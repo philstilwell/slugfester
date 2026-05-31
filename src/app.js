@@ -1,4 +1,5 @@
 import { debates } from "./data/debates.js";
+import { avatarsForSpeakerText } from "./data/interlocutors.js";
 import { getReferenceDefinition, referenceFromUrl } from "./data/references.js";
 import {
   DEFAULT_IMAGE_ALT,
@@ -295,20 +296,51 @@ function renderDebate(id) {
       ${renderInteractionGuide()}
 
       <section class="columns-head" aria-label="Debate sides">
-        <div class="side-heading teal">
-          <span>${escapeHtml(debate.sides.pro.name)}</span>
-          <strong>${escapeHtml(debate.sides.pro.speaker)}</strong>
-        </div>
-        <div class="side-heading coral">
-          <span>${escapeHtml(debate.sides.con.name)}</span>
-          <strong>${escapeHtml(debate.sides.con.speaker)}</strong>
-        </div>
+        ${renderSideHeading(debate.sides.pro, "teal")}
+        ${renderSideHeading(debate.sides.con, "coral")}
       </section>
 
       ${debate.sections.map((section) => renderSection(section, debate)).join("")}
       ${renderOverall(debate)}
     </main>
   `);
+}
+
+function renderSideHeading(side, tone) {
+  return `
+    <div class="side-heading ${tone}">
+      <span class="side-name">${escapeHtml(side.name)}</span>
+      <div class="side-speaker-lockup">
+        ${renderSpeakerAvatars(side.speaker)}
+        <strong>${escapeHtml(side.speaker)}</strong>
+      </div>
+    </div>
+  `;
+}
+
+function renderSpeakerAvatars(speakerText) {
+  const avatars = avatarsForSpeakerText(speakerText);
+  if (!avatars.length) return "";
+
+  return `
+    <span class="speaker-avatar-stack" aria-hidden="true">
+      ${avatars
+        .map(
+          (avatar) => `
+            <img
+              class="speaker-avatar"
+              src="${escapeHtml(avatar.src)}"
+              alt=""
+              width="512"
+              height="512"
+              loading="lazy"
+              decoding="async"
+            >
+          `
+        )
+        .join("")}
+    </span>
+  `;
 }
 
 function renderInteractionGuide() {

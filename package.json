@@ -7,6 +7,6 @@
   "scripts": {
     "dev": "python3 -m http.server 4174 --bind 127.0.0.1",
     "seo": "node scripts/generate-seo-pages.mjs",
-    "check": "node --check src/app.js && node --check src/seo.js && node --check src/data/debates.js && node --check src/data/references.js && node --check scripts/generate-seo-pages.mjs && node scripts/validate-debates.mjs && node scripts/validate-design-template.mjs && node scripts/generate-seo-pages.mjs --check"
+    "check": "node --check src/app.js && node --check src/seo.js && node --check src/data/debates.js && node --check src/data/interlocutors.js && node --check src/data/references.js && node --check scripts/generate-seo-pages.mjs && node scripts/validate-debates.mjs && node scripts/validate-design-template.mjs && node scripts/generate-seo-pages.mjs --check"
   }
 }
