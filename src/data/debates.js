@@ -12628,5 +12628,407 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "ehrman-bass-resurrection-history-2023",
+    number: "37",
+    title: "Bart Ehrman vs Justin Bass: Did Jesus of Nazareth Rise From the Dead?",
+    label: "Resurrection and historical method",
+    date: "2026-05-31",
+    duration: "1 hr 17 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=LVUQAVQS1-U",
+    motion:
+      "Did Jesus of Nazareth historically rise from the dead, and do the early resurrection appearances, the unexpected messianic claim, Christianity's spread, and later visions make that explanation plausible?",
+    summary:
+      "Bass builds a cumulative resurrection case from bedrock facts and Christian expansion; Ehrman tests each step against source criticism, comparative miracle claims, and historical probability.",
+    sourceNote:
+      "Built from YouTube auto-generated English captions downloaded with yt-dlp. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "follow the evidence where it leads",
+        context:
+          "Bass frames the resurrection as the best cumulative explanation of accepted facts, claimed appearances, Christian growth, and continuing visions of Jesus."
+      },
+      con: {
+        text: "treat every religion equally",
+        context:
+          "Ehrman's central challenge is methodological: Christian miracle claims must face the same evidential standards used on Mormon, Marian, Jewish, and pagan parallels."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Resurrection defender",
+        speaker: "Justin Bass",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical historian",
+        speaker: "Bart Ehrman",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 74,
+      con: 86
+    },
+    sections: [
+      {
+        title: "Bedrock facts and sources",
+        timebox: "03:38-12:48",
+        score: {
+          pro: 78,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "03:38",
+              role: "Cumulative setup",
+              words:
+                "Bass says scholars disagree on many things but agree on bedrock points: Jesus died, resurrection was claimed, appearances were reported, and Christianity triumphed.",
+              score: 78,
+              critique:
+                "Bass's opening is useful because it starts from common ground rather than from maximal doctrine. Death by crucifixion, early resurrection proclamation, claimed appearances, and the rise of Christianity are all relevant facts that any explanation must address. He also narrows attention to Paul and 1 Corinthians 15, which is a stronger source base than late harmonized Gospel storytelling alone. The weakness is that agreement on a list of facts does not determine the explanation of those facts. Calling the items bedrock can make the inference feel more settled than it is, especially when the fourth fact, Christianity's triumph, is much less direct evidence for what happened to Jesus' body. The score is solid because the frame is cumulative, but not decisive.",
+              tags: []
+            },
+            con: {
+              time: "11:07",
+              role: "Source criticism",
+              words:
+                "Ehrman grants that Paul certainly claimed an appearance and that Peter, James, and Mary probably did, but asks what sources actually say and how reliable they are.",
+              score: 86,
+              critique:
+                "Ehrman's first response is strong because he grants the important historical minimum instead of denying everything. Paul certainly claims an appearance, and Ehrman allows that Peter, James, and Mary probably had experiences they interpreted as seeing Jesus. That concession keeps the skeptical side from becoming evasive. His key move is source criticism: Peter, James, Mary, and the five hundred do not leave firsthand descriptions, so the historian must distinguish reported experience from resurrection as explanation. The weakness is that stopping at source caution does not yet explain why these experiences produced the specific resurrection proclamation. Still, the score is high because Ehrman clarifies the evidential object: claims of appearances are not the same thing as a demonstrated bodily event.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Parallels and unexpectedness",
+        timebox: "12:48-28:18",
+        score: {
+          pro: 76,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "12:48",
+              role: "Uniqueness defense",
+              words:
+                "Bass distinguishes Christianity from Islam, Mormonism, and Marian apparitions by stressing multiple witnesses and the unexpected claim of a crucified, risen Messiah.",
+              score: 76,
+              critique:
+                "Bass's uniqueness argument has a real point. A crucified Messiah raised in the middle of history was not an obvious Jewish expectation, so the earliest Christian interpretation needs explanation. He also tries to avoid generic miracle testimony by comparing the number and kind of witnesses across traditions. The weakness is that his distinctions become selective under pressure. Mormon golden plates, Marian apparitions, and other religious reports are not refuted merely by noting differences in expectation or theology; a historian still needs a common rule for weighing testimony. Bass sometimes treats Christian unexpectedness as if it automatically upgrades Christian testimony beyond parallels. The score is respectable because unexpectedness matters, but limited because the comparative standard remains unstable.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The argument risks giving Christian appearances a privileged evidential status while discounting parallel miracle reports by criteria that shift case by case."
+                }
+              ]
+            },
+            con: {
+              time: "20:14",
+              role: "Equal treatment test",
+              words:
+                "Ehrman says by Bass's criteria modern Marian appearances have better evidence, and an apocalyptic Jew could interpret a bereavement experience as resurrection.",
+              score: 85,
+              critique:
+                "Ehrman's parallel-case reply is one of the debate's central moves. He is not arguing that Mary appeared, Moroni appeared, or Romulus rose; he is asking whether Bass's method would force unwelcome conclusions in comparable cases. That is an excellent test of special pleading. His explanation of apocalyptic Jewish embodiment also answers Bass's unexpectedness point: if followers thought they saw Jesus alive, their worldview could naturally translate that into bodily resurrection rather than disembodied survival. The weakness is that the psychological alternative is broad and somewhat underdescribed for the specific individuals. It lowers resurrection probability but does not reconstruct the events in detail. The score is high because it directly attacks the inference standard, not just the conclusion.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Paul and miracle probability",
+        timebox: "30:53-39:06",
+        score: {
+          pro: 79,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "34:19",
+              role: "Enemy conversion",
+              words:
+                "Bass presses Paul's case: a persecutor who thought Jesus was cursed came to believe he saw the risen Lord.",
+              score: 79,
+              critique:
+                "Bass's Paul argument is stronger than several later lines because Paul is an early, firsthand witness to his own conversion experience. A hostile or at least opposed figure changing sides is evidentially relevant, and Bass is right to press why Paul would interpret the event so dramatically. The argument also avoids depending only on later Gospel scenes. The weakness is that the crucial details remain missing. Paul says he saw Jesus and that God revealed his Son, but he does not provide the sensory, temporal, or public features needed to distinguish a bodily encounter from a vision, revelation, or psychologically mediated experience. The score is solid because Paul matters, but Bass asks one experience to carry more explanatory weight than the record allows.",
+              tags: []
+            },
+            con: {
+              time: "36:12",
+              role: "Probability standard",
+              words:
+                "Ehrman says historians need extraordinary evidence before judging a one-time violation of physical regularity more probable than misperception, vision, or dream.",
+              score: 84,
+              critique:
+                "Ehrman's probability argument is powerful as a historical standard. He is not merely saying miracles are impossible; he is saying historians work by comparative probability, and a bodily resurrection is extraordinarily rare compared with visions, dreams, mistaken perceptions, and religious interpretations. That is a disciplined burden-of-proof point, especially when the key evidence is a small set of ancient appearance claims. The weakness is that his appeal to physical law can sound close to ruling out miracle evidence before the comparison begins. If God exists and acts, the relevant prior changes. Still, within public historical method, the score is high because Ehrman explains why consistency with resurrection is not enough. Many hypotheses can fit sparse data.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Comparative miracle claims",
+        timebox: "39:07-43:50",
+        score: {
+          pro: 70,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "39:36",
+              role: "Unparalleled Jesus",
+              words:
+                "Bass cites Pinchas Lapide, E. P. Sanders, Paul, and Jesus' unmatched influence to argue that Jesus is not comparable to other miracle figures.",
+              score: 70,
+              critique:
+                "Bass's comparative reply has some legitimate material. Paul is not merely another friendly insider witness, and the fact that some nonstandard or non-Christian scholars found the resurrection evidence significant is worth noting. Jesus also plainly has an extraordinary historical role. The weakness is that these points do not answer Ehrman's methodological challenge. Naming sympathetic scholars and stressing Jesus' uniqueness can become a way of exempting the favored case from equal tests. If Hasidic, Mormon, Marian, or pagan testimony is rejected despite sincere witnesses and conversions, Bass needs a principled rule that admits Paul while excluding those rivals. The score is mixed because the response supplies color and confidence, but it does not stabilize the comparison.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "The reply leans on named scholars and Jesus' status without showing enough of the underlying historical inference for the audience to evaluate it."
+                }
+              ]
+            },
+            con: {
+              time: "39:07",
+              role: "Symmetry challenge",
+              words:
+                "Ehrman compares Jesus claims with Baal Shem Tov, Moroni, and other religious miracle reports, asking why some eyewitnesses count and others do not.",
+              score: 87,
+              critique:
+                "Ehrman's symmetry challenge is excellent debate work because it turns Bass's own evidential language back onto him. If eyewitness testimony, conversion, communal confidence, and religious impact can support one miracle tradition, why not another? Ehrman does not need the rival miracles to be true; he needs them to expose inconsistent standards. The Hasidic and Mormon examples are especially useful because they involve communities that preserve testimony and interpret it religiously. The weakness is that not every parallel is equal in antiquity, source profile, or theological content, so the comparison cannot do all the work by itself. The score is high because Ehrman forces Bass to state a public rule of evidence rather than rely on Christian salience.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Christianity's rise and reach",
+        timebox: "44:00-59:16",
+        score: {
+          pro: 64,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "45:02",
+              role: "Anomaly argument",
+              words:
+                "Bass argues that one person out of billions is worshiped as Lord and God, and that this extraordinary anomaly supports another anomaly, resurrection.",
+              score: 64,
+              critique:
+                "Bass's influence argument has rhetorical force because Jesus' global impact is genuinely remarkable. A crucified provincial teacher becoming the center of a world religion is historically important and deserves explanation. But the inference to resurrection is weak. The fact that billions worship Jesus shows the success of a belief, not the truth of the miracle that belief concerns. Bass's one-out-of-107-billion framing also risks making rarity itself evidential, when rare cultural outcomes can arise through ordinary social, political, missionary, and institutional mechanisms. The argument drifts from what happened to Jesus' body to what later communities believed about him. The score is low-mixed because the fact is real, but the warrant to resurrection is badly underdeveloped.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The argument shifts from the historical question of Jesus' body to the later scale and influence of Christian belief."
+                },
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The huge number of Christians is treated as if scale itself proportionally increases the truth of the resurrection claim."
+                }
+              ]
+            },
+            con: {
+              time: "47:07",
+              role: "Growth versus truth",
+              words:
+                "Ehrman says mass conviction shows people were convinced, not that God intervened, and compares Christian growth rates with Mormon growth.",
+              score: 88,
+              critique:
+                "Ehrman's rebuttal is very strong because it isolates the category mistake. The growth of Christianity can show that people became convinced, organized, evangelized, and transmitted a story; it does not by itself show that the story's miracle claim is true. The Mormon growth-rate comparison is apt because it prevents Bass from treating expansion as uniquely truth-tracking. Ehrman also keeps the central question visible: what happened to Jesus' body? The weakness is that he may understate how unusual Christian origins remain as a historical puzzle, even if the puzzle is not evidence of resurrection. The score is high because the response cleanly separates sociological success from historical verification and blocks a major overreach.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "51:30",
+              role: "Fulfilled mission",
+              words:
+                "Bass says Jesus wanted the gospel to reach all nations, and its global spread looks like the risen Lord directing his church.",
+              score: 66,
+              critique:
+                "Bass's fulfilled-mission argument improves slightly on raw popularity because it connects Christian expansion to a specific reported aim: the gospel going to all nations. If Jesus really predicted and directed that mission, later global reach could look like confirmation. The problem is that nearly every step is contested. Ehrman disputes that Jesus said the relevant lines, the textual tradition may reflect communities already committed to mission, and partial global spread does not establish divine causation. The argument also slides between historical claim and theological interpretation: the same facts can be explained by human missionary zeal, empire, translation, institutions, and demographic momentum. The score remains mixed because it is imaginative but not a disciplined historical proof.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The argument tends to assume the risen Jesus is directing the church while offering that direction as evidence for the risen Jesus."
+                }
+              ]
+            },
+            con: {
+              time: "53:20",
+              role: "History-theology boundary",
+              words:
+                "Ehrman asks whether this would be publishable as historical evidence for what happened to Jesus' body, calling it theological rather than historical.",
+              score: 88,
+              critique:
+                "Ehrman's response is strong because it asks the right disciplinary question. A Christian may reasonably see providence in the church's expansion, but that is not the same as historical evidence about whether a corpse was raised. His publishable-in-a-historical-journal test is pointed: it demands that Bass identify the kind of argument being made. Ehrman also exposes a problem in the fulfillment claim by asking why, if worldwide conversion is part of the proof, so many people have not heard or accepted the gospel. The weakness is that history and theology can interact in worldview-level reasoning, so the boundary is not always as tidy as he implies. Still, the score is high because he prevents a theological reading from masquerading as source-based history.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Visions and closing standards",
+        timebox: "01:00:20-01:16:01",
+        score: {
+          pro: 72,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:00:20",
+              role: "Continuing visions",
+              words:
+                "Bass says Muslims, Hindus, Buddhists, Jews, and others have dreams or visions of Jesus and convert, forming another line of evidence.",
+              score: 72,
+              critique:
+                "Bass's visions argument is relevant to his cumulative case because it tries to show continuity between early appearances and later experiences of Jesus. Reports of Muslims or others dreaming of a luminous Jesus and converting may be pastorally significant, and the cross-cultural claim is worth investigating. The weakness is evidential control. Dreams and visions are common, religiously shaped, often reported through interested networks, and difficult to verify independently. Bass also moves quickly from people sincerely experiencing something to Jesus actually appearing and then to resurrection as the best explanation. That is several inferences too many for the data he presents. The score is lower-solid because the phenomenon may matter sociologically, but as historical evidence for resurrection it remains weak.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "The argument treats personally meaningful visionary experiences as externally confirming evidence for the resurrection."
+                }
+              ]
+            },
+            con: {
+              time: "01:03:23",
+              role: "Dream comparison",
+              words:
+                "Ehrman says people dream of many figures, cites ancient healing cults, and denies that dreams show the object of the dream is real.",
+              score: 84,
+              critique:
+                "Ehrman's dream rebuttal is effective because it keeps experience and external reality distinct. People can have vivid, life-changing dreams without the dream object being physically present or historically vindicated. His appeal to ancient healing cults broadens the comparison beyond modern Christian testimony and shows that religious dream reports are not unique to Jesus. The weakness is that he initially says he has little to say and could engage the modern data more directly, especially if Bass is claiming cross-religious asymmetry rather than generic religious dreaming. Still, the score is strong because Ehrman identifies the missing warrant. A dream report may explain conversion, but it does not establish resurrection unless independently tied to the risen person's reality.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "01:14:04",
+              role: "Cumulative close",
+              words:
+                "Bass closes that appearances and what transpired over two thousand years suggest that Jesus rose from the dead.",
+              score: 74,
+              critique:
+                "Bass's closing fairly summarizes his strategy: do not isolate one datum, but let appearances, unexpected proclamation, Christianity's survival, global influence, and modern visions accumulate. That cumulative shape is the best version of his case because the resurrection claim is asked to explain a cluster, not a single report. The weakness is that several pieces in the cluster are weakly connected to the bodily resurrection. Expansion, influence, fulfilled mission, and dreams mostly explain belief in Jesus, not the event behind the belief. When weaker arguments are stacked, they do not automatically become strong; they can also compound category mistakes. The score is solid but modest because Bass has real evidence for early belief, less for resurrection itself.",
+              tags: []
+            },
+            con: {
+              time: "01:14:56",
+              role: "Historical method close",
+              words:
+                "Ehrman distinguishes what happened in the past from what historians can establish, saying theology and history are different realms of discourse.",
+              score: 90,
+              critique:
+                "Ehrman's closing is the strongest methodological statement of the debate. He distinguishes history as everything that happened from history as what historians can establish by critical evaluation of sources and probability. That allows him to avoid claiming that resurrection is metaphysically impossible while insisting that theological arguments cannot be relabeled as historical evidence. The point also explains why he keeps returning to source criticism, comparative miracle claims, and probabilities rather than simply saying Christianity is false. The weakness is that the boundary may frustrate listeners who think worldview evidence should be cumulative across disciplines. Even so, the score is excellent because he defines the question cleanly and shows why several Bass arguments fail as history.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 74,
+        strengths: [
+          "Bass grounded the case in early material, especially Paul and 1 Corinthians 15, rather than relying only on late harmonized Gospel narratives.",
+          "His emphasis on the unexpected claim of a crucified and risen Messiah raised a real explanatory problem for any purely natural account.",
+          "He made the debate cumulative, connecting appearances, Christian origins, global expansion, and modern visionary reports into one broad apologetic case."
+        ],
+        blunders: [
+          {
+            text:
+              "He often discounted parallel miracle claims with shifting criteria while granting Christian reports a more favorable evidential posture.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "The argument from Christianity's global influence repeatedly drifted away from the historical question of what happened to Jesus' body.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "Modern dreams and visions were treated as confirming evidence without enough independent controls against religiously shaped interpretation.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 86,
+        strengths: [
+          "Ehrman granted early appearance experiences where warranted, which made his skepticism look source-critical rather than reflexively dismissive.",
+          "He repeatedly applied comparative tests to Mormon, Marian, Hasidic, pagan, and bereavement-vision parallels, forcing a consistent evidential standard.",
+          "His distinction between theological interpretation and historical establishment directly addressed the debate's central methodological issue."
+        ],
+        blunders: [
+          {
+            text:
+              "His physical-law probability framing sometimes sounded so strong that it risked making miracle claims methodologically unwinnable before specific evidence is weighed.",
+            links: [
+              {
+                label: "Base-rate neglect",
+                url: bias("base-rate-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "He offered plausible categories for Peter's and Paul's experiences but did not develop a detailed positive reconstruction of the earliest resurrection belief.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
