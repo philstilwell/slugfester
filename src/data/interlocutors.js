@@ -117,6 +117,16 @@ export const interlocutorAvatars = [
     aliases: ["Derek Lambert"]
   },
   {
+    name: "David Enoch",
+    src: `${avatarBasePath}/david-enoch.webp`,
+    aliases: ["David Enoch"]
+  },
+  {
+    name: "Lance Bush",
+    src: `${avatarBasePath}/lance-bush.webp`,
+    aliases: ["Lance Bush"]
+  },
+  {
     name: "Michael Jones",
     src: `${avatarBasePath}/michael-jones.webp`,
     aliases: ["Michael Jones"]
