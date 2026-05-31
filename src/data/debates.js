@@ -13030,5 +13030,354 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "mcdowell-ehrman-moral-objectivity-2026",
+    number: "38",
+    title: "Sean McDowell vs Bart Ehrman: The Moral Argument, Guilt, and the Teachings of Jesus",
+    label: "Moral objectivity and Christian ethics",
+    date: "2026-05-31",
+    duration: "1 hr 04 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=Cz57BuQOCmQ",
+    motion:
+      "Do Jesus' teachings and the West's moral transformation point to objective moral truths grounded beyond human preference, or can morality be explained as historically shaped human inclination without divine grounding?",
+    summary:
+      "McDowell presses Ehrman on moral realism, progress, guilt, and the authority of moral duties; Ehrman defends Jesus' historical influence while grounding morality in human nature, culture, and evolved social life.",
+    sourceNote:
+      "Built from YouTube auto-generated English captions downloaded with yt-dlp. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "what best explains this deep belief",
+        context:
+          "McDowell repeatedly asks whether deep moral beliefs, duties, guilt, and moral progress are better explained by objective moral reality than by evolved inclination alone."
+      },
+      con: {
+        text: "It's what it means to be a human being",
+        context:
+          "Ehrman's central reply is that moral commitments can be genuinely human and action-guiding without being grounded in accessible objective moral facts."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Moral realist",
+        speaker: "Sean McDowell",
+        color: "teal"
+      },
+      con: {
+        name: "Secular historian",
+        speaker: "Bart Ehrman",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 83,
+      con: 78
+    },
+    sections: [
+      {
+        title: "Jesus and moral transformation",
+        timebox: "01:07-10:02",
+        score: {
+          pro: 81,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "07:46",
+              role: "Objectivity probe",
+              words:
+                "McDowell asks whether the shift from dominance to service is an objectively good transformation or merely a horizontal cultural change.",
+              score: 81,
+              critique:
+                "McDowell's opening probe is well chosen because it accepts Ehrman's historical thesis and asks what kind of moral judgment the thesis permits. If Jesus helped inspire hospitals, orphanages, poor houses, and service over domination, then calling that a moral transformation seems to invite more than sociological description. The strongest part is the pressure on the word good: is this better, or merely different? The weakness is that McDowell moves quickly from historical admiration to metaethical grounding, which Ehrman's book may not be trying to supply. The score is strong because the question reveals a real ambiguity in praise language, but it is not decisive until McDowell shows why moral approval requires objective realism.",
+              tags: []
+            },
+            con: {
+              time: "01:27",
+              role: "Historical thesis",
+              words:
+                "Ehrman says Jesus taught helping strangers in need, and that Christian dominance embedded this impulse in the Western moral conscience.",
+              score: 84,
+              critique:
+                "Ehrman's historical thesis is strong because it is specific and source-sensitive. He does not claim that Christians always obeyed Jesus or that Jesus invented every moral impulse; he argues that Jesus universalized care beyond kin, nation, religion, gender, and status, and that Christian cultural dominance embedded that ideal in Western conscience. That is a plausible historical claim and fits the book's stated purpose. The weakness emerges when he calls hospitals and disaster relief good while immediately reducing that goodness to personal opinion. That leaves the normative force of moral transformation less clear than the historical mechanism. The score is high for the historical explanation, but moderated because the metaethical footing begins uncertain.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Objective truth and access",
+        timebox: "10:04-19:28",
+        score: {
+          pro: 86,
+          con: 72
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:04",
+              role: "Moral realism definition",
+              words:
+                "McDowell defines moral realism as some things being right or wrong regardless of beliefs, preferences, or attitudes.",
+              score: 86,
+              critique:
+                "McDowell's definition move is one of his clearest contributions. By distinguishing moral realism from mere public facts, he prevents objectivity from being reduced to the existence of hospitals or to the fact that people hold opinions. His analogy with history is also useful: our knowing is subjective in the sense that knowers are subjects, but that does not mean the thing known is only subjective. This directly targets Ehrman's access argument. The weakness is that McDowell's intuitive examples still need a bridge from moral realism to God; establishing one objective moral fact is not yet the whole moral argument. The score is high because he clarifies categories and catches an important epistemology-versus-ontology confusion.",
+              tags: []
+            },
+            con: {
+              time: "12:55",
+              role: "Access objection",
+              words:
+                "Ehrman says he has no access to universal objectivity and that any moral recognition would still come through human brains.",
+              score: 72,
+              critique:
+                "Ehrman's access objection has a fair skeptical point: even if objective moral facts exist, humans encounter them through fallible perception, culture, argument, and emotion. That should make moral certainty more modest. But the argument is weaker when it slides from we access morality through human brains to we have no access to objective moral truth. McDowell rightly notes that all historical and scientific knowing is mediated by subjects too. Mediation alone does not erase objectivity. Ehrman also shifts between epistemic humility and metaethical denial without clearly defending the stronger conclusion. The score is mixed because the caution is legitimate, but the inference from subjective access to non-objective morality is underargued.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The reply shifts between subjective as personally accessed and subjective as not objectively true."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral progress and ancient practices",
+        timebox: "19:28-36:54",
+        score: {
+          pro: 84,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "19:28",
+              role: "One-truth standard",
+              words:
+                "McDowell argues that if even one act, like torturing a child for entertainment, is really wrong, objective moral truth exists.",
+              score: 84,
+              critique:
+                "McDowell's one-truth standard is logically efficient. He does not need a complete moral encyclopedia to make realism plausible; one clear case of wrongness would be enough to defeat thoroughgoing subjectivism. His appeal to child torture, anti-Semitic violence, and moral progress is rhetorically intense but relevant because Ehrman himself uses condemnation and progress language. The weakness is that intuition does a lot of work. Agreement that an act is abhorrent does not by itself settle whether that judgment tracks an objective fact, an evolved disposition, or a culturally stabilized norm. Still, the score is strong because McDowell narrows the burden well and exposes the cost of refusing to call even extreme wrongs objectively wrong.",
+              tags: []
+            },
+            con: {
+              time: "20:44",
+              role: "Cultural variation reply",
+              words:
+                "Ehrman points to child sacrifice and changing views about helping outsiders to argue that moral values are historically transformed rather than universally accessible.",
+              score: 82,
+              critique:
+                "Ehrman's cultural-variation reply is important because it keeps the discussion historically honest. If many humans practiced child sacrifice or ignored distant strangers, then claims about obvious universal access to objective morality need qualification. His point about Jesus transforming the Western conscience also creates a challenge for McDowell: if the moral code was always clearly available, why did this particular obligation become prominent so late? The weakness is that disagreement or delayed recognition does not show that no objective moral truth exists. Humans have also been wrong about scientific and historical matters for long periods. The score is strong because variation pressures easy realism, but not higher because it addresses access and formation more than truth.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "32:37",
+              role: "Expansion distinction",
+              words:
+                "McDowell says Jesus expanded the moral conscience rather than creating morality from nothing; common principles existed before practices changed.",
+              score: 83,
+              critique:
+                "McDowell's expansion distinction repairs a potential overstatement. He does not need to say humans lacked every moral principle before Jesus; he can say Jesus extended existing principles toward outsiders, the poor, and the disenfranchised. That fits Ehrman's historical thesis while preserving a realist reading of moral progress. The distinction between principle and practice also helps: cultures may share broad duties while applying them badly or narrowly. The weakness is that near-universal principles remain somewhat vague, and the move from commonality to divine grounding is still not completed. The score is strong because it answers Ehrman's delayed-access objection without denying historical development, but it remains an explanatory sketch rather than a full argument.",
+              tags: []
+            },
+            con: {
+              time: "35:07",
+              role: "Shared sense alternative",
+              words:
+                "Ehrman agrees there are shared moral patterns across cultures, but says Lewis-style theistic explanations are not required.",
+              score: 83,
+              critique:
+                "Ehrman's concession and alternative are well balanced. He grants that cultures show broad similarities, such as parental care and limits on murder, while stressing that practices differ sharply and that other explanations can account for the shared sense. That is stronger than simply denying moral commonality. He also correctly notes that his book's thesis about Jesus' influence does not depend on proving atheism or disproving God. The weakness is that the alternative explanation is named more than developed in this exchange. Saying there are other ways to explain Lewis's data does not yet show that those ways explain moral obligation as well as moral feeling. The score is strong because he avoids a false dichotomy, but not decisive.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Evolution and moral explanation",
+        timebox: "37:24-45:04",
+        score: {
+          pro: 82,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "37:24",
+              role: "Best explanation frame",
+              words:
+                "McDowell says the key question is what best explains common moral beliefs, and if evolution suffices, the moral argument loses force.",
+              score: 82,
+              critique:
+                "McDowell's best-explanation framing is fair and intellectually useful. He explicitly says an evolutionary account would not disprove God; it would only weaken this particular argument for God. That keeps the discussion from becoming all-or-nothing apologetics. He also identifies the real explanatory target: not merely that people have moral feelings, but that they experience rights, duties, and obligations as authoritative. The weakness is that he sometimes compresses the distinction between explaining moral belief and grounding moral truth. Evolution can explain why we believe something without showing whether the belief is true or false. The score is strong because the frame is charitable and clarifying, but the argument still needs a tighter bridge from moral phenomenology to theism.",
+              tags: []
+            },
+            con: {
+              time: "39:24",
+              role: "Altruism genealogy",
+              words:
+                "Ehrman says altruism appears in many species, but Jesus universalized help beyond kin and social group to any stranger in need.",
+              score: 86,
+              critique:
+                "Ehrman's altruism genealogy is one of his strongest turns. He gives a naturalistic basis for in-group care, links it to survival and social cooperation, and then distinguishes Jesus' specific innovation: applying care to outsiders in need. That structure preserves both evolution and historical novelty. It also avoids the crude claim that Christianity added nothing morally. The weakness is that genealogy is not grounding. Showing how moral concern arose and widened does not fully answer McDowell's question about whether one ought to follow it when it conflicts with self-interest or tribal pressure. The score is high because Ehrman gives a coherent historical-natural explanation, but the account remains more descriptive than normatively complete.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Relativism and deep commitment",
+        timebox: "45:18-52:45",
+        score: {
+          pro: 84,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "45:18",
+              role: "Authority challenge",
+              words:
+                "McDowell asks why feelings produced by time, matter, and chance should have authority rather than merely describe what humans happen to prefer.",
+              score: 84,
+              critique:
+                "McDowell's authority challenge lands because it targets the gap between origin and normativity. Ehrman can explain why humans feel moral concern, but McDowell asks why those feelings should be treated as binding, especially when other feelings point toward selfishness, dominance, racism, or violence. His use of Ehrman's own language about deep commitment is effective and not unfair: it asks whether commitment is enough to generate obligation. The weakness is that time, matter, and chance can sound like a loaded summary of naturalism, and naturalists may offer accounts of reasons, flourishing, contracts, or harm without invoking God. The score is strong because the objection exposes the normative shortfall in mere inclination, but it does not exhaust secular ethics.",
+              tags: []
+            },
+            con: {
+              time: "49:46",
+              role: "Inclination defense",
+              words:
+                "Ehrman compares moral inclinations to other deeply human preferences and says they can guide life without objective values in the sky.",
+              score: 77,
+              critique:
+                "Ehrman's inclination defense is clearest when he rejects the word merely. A moral impulse can be deeply human, stable, and life-shaping even if it is not a Platonic object. That is a useful correction to the idea that subjectively rooted commitments are automatically trivial. The weakness is the analogy to liking a drink. Taste preference explains preference, but it does not explain why racism, genocide, or harming the poor deserve condemnation rather than simple dislike. Ehrman later says human sacrifice repulses him, but repulsion alone seems thinner than the moral language his book uses. The score is mixed-strong because the defense preserves motivation, but it still underexplains authority and criticism.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The drink analogy risks shifting from preference as taste to preference as moral condemnation."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Guilt and final grounding",
+        timebox: "53:33-01:03:39",
+        score: {
+          pro: 85,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "53:33",
+              role: "Conflicting instincts",
+              words:
+                "McDowell says humans have instincts to help and hurt, so moral condemnation needs a standard beyond whichever instinct happens to dominate.",
+              score: 85,
+              critique:
+                "McDowell's conflicting-instincts argument is strong because it sharpens the Lewisian point without merely quoting Lewis. If humans have impulses both to help and to harm, then appealing to instinct does not tell us which impulse ought to rule. This directly challenges Ehrman's effort to ground moral life in evolved inclinations. McDowell also connects the issue to Ehrman's own condemnations of racism, genocide, sexism, and weaponized religion, asking whether those judgments are more than disliked preferences. The weakness is that secular moral theories can rank instincts by harm, flourishing, reciprocity, or social coherence, so a non-theistic standard is possible in principle. The score is high because the challenge is precise, but not final.",
+              tags: []
+            },
+            con: {
+              time: "55:19",
+              role: "Human nature reply",
+              words:
+                "Ehrman says moral impulse is not just feeling but part of human nature, and guilt evolved because communities survive better when harm is checked.",
+              score: 80,
+              critique:
+                "Ehrman's final reply is better than the drink analogy because it ties moral life to human nature, social survival, and guilt as a check on harm. That gives a plausible naturalistic story for why people feel accountable and why communities punish destructive behavior. He also rightly notes that belief in objective morality has not produced moral consensus or prevented social disaster. The weakness is that survival value is not the same as moral truth. Traits can help groups persist without being intrinsically right, and guilt can misfire under bad norms. The score is solid because the evolutionary account explains moral psychology, but lower than McDowell's because it still struggles to justify moral authority.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 83,
+        strengths: [
+          "McDowell repeatedly clarified the difference between subjective access to moral knowledge and the objective status of moral truth.",
+          "He used Ehrman's own language of progress, superiority, obligation, guilt, and condemnation to test whether subjectivism can support the book's moral judgments.",
+          "His strongest pressure point was the authority question: why should evolved inclinations bind us when competing inclinations pull the other way?"
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes moved too quickly from moral realism to theism, leaving secular realist alternatives insufficiently addressed.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "The extreme child-torture example was effective but risked letting a vivid consensus case stand in for a broader theory of moral knowledge.",
+            links: [
+              {
+                label: "Belief bias",
+                url: bias("belief-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 78,
+        strengths: [
+          "Ehrman gave a strong historical account of Jesus universalizing care for strangers and embedding that ethic in Western moral conscience.",
+          "He used cultural variation and delayed moral development to challenge simplistic claims that objective moral truth is obvious to everyone.",
+          "His evolutionary and social account explained why humans can feel guilt, obligation, and deep moral concern without appealing to divine command."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly blurred subjective access with subjective truth, which weakened his objection to McDowell's history and science analogies.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "The drink-preference analogy made moral condemnation look too close to taste, undercutting the force of his own judgments about racism, genocide, and injustice.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His evolutionary account explained why guilt and altruism might arise, but sometimes treated that genealogy as if it settled the question of moral authority.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
