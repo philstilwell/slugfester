@@ -13379,5 +13379,338 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "lambert-jones-christian-faith-skepticism-2021",
+    number: "39",
+    title: "Derek Lambert vs Michael Jones: Atheist and Christian Discussion",
+    label: "Christian faith and skeptical inquiry",
+    date: "2026-05-31",
+    duration: "2 hr 11 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=SEZu7Ej2SzU",
+    motion:
+      "Can Christian belief be rationally sustained amid skeptical challenges about faith, hell, resurrection evidence, biblical reliability, religious experience, the Exodus, and parallels with other ancient traditions?",
+    summary:
+      "Jones defends a cumulative, flexible Christian account; Lambert presses skeptical challenges from deconversion, hiddenness, testimony, textual complexity, archaeology, and comparative religion.",
+    sourceNote:
+      "Built from YouTube auto-generated English captions downloaded with yt-dlp. This source is a cordial long-form discussion rather than a formal debate; Slugfester assesses it with the same side-by-side debate framework for reader convenience. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "there's evidence for all types of worldviews",
+        context:
+          "Jones argues that Christian belief should be evaluated as a cumulative worldview case rather than dismissed as evidence-free."
+      },
+      con: {
+        text: "looking at this ancient text isn't enough evidence",
+        context:
+          "Lambert's recurring challenge is whether ancient testimony, religious experience, and inherited texts can carry the weight Christian belief places on them."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Believer",
+        speaker: "Michael Jones",
+        color: "teal"
+      },
+      con: {
+        name: "Non-believer",
+        speaker: "Derek Lambert",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 80,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Hell, hiddenness, and deconversion",
+        timebox: "08:02-18:02",
+        score: {
+          pro: 82,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "08:02",
+              role: "Formation reply",
+              words:
+                "Jones says hell is a freely chosen identity apart from God, hopes universalism is true, and answers that heaven or hell begins in present character formation.",
+              score: 82,
+              critique:
+                "Jones's response is charitable and conceptually richer than a threat model of hell. He refuses to psychoanalyze Lambert, treats postmortem destiny as complex, and reframes salvation as present character formation rather than a timed exam. That helps answer the why believe now question by making belief about orientation, not mere ticketing. The weakness is that the account depends on contested theological assumptions about identity, desire, and what counts as being with God. It also risks making hiddenness harder: if God wants present formation, why leave the sincere seeker needing such indirect signals? The score is strong because Jones reduces a caricature and gives a coherent model, but the evidential problem remains.",
+              tags: []
+            },
+            con: {
+              time: "09:47",
+              role: "Hiddenness challenge",
+              words:
+                "Lambert says a Doubting Thomas scenario could matter, but he would still check hallucination, mental reliability, and his own history before trusting it.",
+              score: 80,
+              critique:
+                "Lambert's move is strong because he states a falsifiable-sounding threshold: a Doubting Thomas encounter could shift him, but he would still check hallucination, addiction history, and mental reliability. That is epistemically cautious rather than performatively closed. His deconversion testimony also pressures a purely punitive account of unbelief, since he describes leaving religion as increased freedom and wholeness. The weakness is that a requested private appearance does not settle what public evidence should count for everyone, and it can make the standard of persuasion too individualized to adjudicate. Still, the score is high because Lambert keeps hiddenness concrete while avoiding the claim that no possible experience could matter.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Faith and evidence",
+        timebox: "21:56-29:39",
+        score: {
+          pro: 83,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "23:24",
+              role: "Trust distinction",
+              words:
+                "Jones denies that biblical faith means belief without evidence, citing Thomas's witnesses and Abraham's prior promise as reasons for trust.",
+              score: 83,
+              critique:
+                "Jones's faith argument is one of his cleaner distinctions. He answers the charge that biblical faith means belief against evidence by pointing to Thomas's surrounding evidence and Abraham's prior promise in Hebrews. The bank analogy also clarifies that trust can be rational while falling short of certainty. The fair weakness is that his examples work mostly inside a narrative world whose reliability is precisely under dispute. If the text is late, layered, or theological, then the internal account of what Abraham knew cannot by itself establish that faith is externally warranted. The score is strong because Jones separates faith from blindness, but it is limited by dependence on contested scripture.",
+              tags: []
+            },
+            con: {
+              time: "25:07",
+              role: "Historical confidence test",
+              words:
+                "Lambert replies that Hebrews is a later believing text reading antiquity, so its account of Abraham's evidence should lower confidence rather than settle the issue.",
+              score: 81,
+              critique:
+                "Lambert's objection usefully shifts the issue from dictionary meaning to historical confidence. He grants that apologists can define faith as trust, then asks whether Hebrews is itself a later interpretive text reading older stories through a believing lens. That is a relevant burden test, especially when Abraham's evidence comes from special revelation inside the story. The weakness is that Lambert sometimes slides from the source is contested to faith is contrary to evidence too quickly. A text can be disputed yet still depict a concept of trust that is not irrational. The score is strong because he pressures the external warrant, but the semantic claim is broader than the examples prove.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Early Christianity and resurrection",
+        timebox: "40:01-54:31",
+        score: {
+          pro: 80,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "45:39",
+              role: "Cumulative case",
+              words:
+                "Jones says he starts with theism, New Testament reliability, burial, empty tomb, appearances, Jerusalem proclamation, and alternative hypotheses.",
+              score: 80,
+              critique:
+                "Jones's cumulative resurrection case is disciplined in its sequencing. He does not rest everything on Paul's experience or a single minimal-facts slogan; he says theism, New Testament reliability, burial, empty tomb, appearances, Jerusalem proclamation, and alternative hypotheses all need weighing. That is a better method than treating one datum as a knockout. He is also right that declaring miracles least probable by definition can smuggle in naturalism. The weakness is that the live exchange mostly names the staircase rather than climbing it. Each step is controversial, and the conclusion only inherits strength if those steps are defended. The score is solid-strong because the structure is sensible, but underdeveloped in this discussion.",
+              tags: []
+            },
+            con: {
+              time: "43:21",
+              role: "Testimony burden",
+              words:
+                "Lambert says ancient text is not enough evidence that God is trustworthy or that Jesus rose, then asks what testimony would be sufficient.",
+              score: 84,
+              critique:
+                "Lambert's resurrection challenge lands because it asks what testimony can reasonably bear. He does not deny that Jesus existed or that early followers may have had experiences; he asks why ancient texts, empty-tomb claims, and martyrdom traditions should justify believing that a dead person physically rose. His reference to legendary martyrdom development also targets a real evidential inflation problem. The weakness is that the objection can lean heavily on the prior improbability of resurrection without fully addressing Jones's claim that background theism changes the probability calculus. The score is high because Lambert identifies the hinge of the case, but it remains a challenge to sufficiency rather than a completed alternative explanation.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Text, inerrancy, and spiritual gifts",
+        timebox: "67:59-79:41",
+        score: {
+          pro: 81,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "70:46",
+              role: "Flexible reliability",
+              words:
+                "Jones rejects easy inerrancy language, says God can use imperfect people, and treats oral cultures as preserving important message rather than perfect wording.",
+              score: 81,
+              critique:
+                "Jones's textual approach is usefully non-fundamentalist. By rejecting easy inerrancy language, distinguishing late Masoretic copying practices from earlier oral cultures, and saying God can work through imperfect people, he avoids defending brittle perfectionism. On spiritual gifts, he also narrows tongues to intelligible language and expresses skepticism toward public self-glorifying miracle claims. Those concessions make his position more resilient than a maximalist apologetic. The weakness is that the flexibility can become hard to falsify: errors, variants, and manufactured experiences are absorbed into a broader divine-use-of-human-process story. The score is solid because Jones handles complexity honestly, but it drops where the standard for disconfirmation becomes unclear overall.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The tag marks the risk of relaxing reliability standards for scripture while retaining the theological payoff."
+                }
+              ]
+            },
+            con: {
+              time: "75:08",
+              role: "Experience defeater",
+              words:
+                "Lambert describes tongues as group-primed, emotionally rewarding, and later reinterpreted, making him cautious about spiritual-gift claims.",
+              score: 83,
+              critique:
+                "Lambert's appeal to textual variants and his own tongues experience is persuasive because it joins external scholarship with lived phenomenology. He asks how reliable scripture remains when textual histories are messy, then describes how group priming, emotional reward, and later rationalization made tongues feel real without being reliable evidence. That is a fair caution against overvaluing religious experience. The weakness is a scope problem. Showing that one Pentecostal practice was socially produced does not show that every report of spiritual gifts, divine encounter, or scriptural insight has the same cause. The score is high because Lambert supplies concrete defeaters, but not decisive because he still needs criteria for separating false experiences from possible genuine ones.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The tag marks the risk of letting a vivid personal case carry more general force than it can support."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Exodus and biblical history",
+        timebox: "81:21-90:37",
+        score: {
+          pro: 78,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "81:21",
+              role: "Mere Exodus",
+              words:
+                "Jones argues for a modest Exodus memory that can correlate with Semitic groups leaving Egypt, while reading ancient numbers through cultural convention.",
+              score: 78,
+              critique:
+                "Jones's mere Exodus move is a smart narrowing strategy. Instead of asking archaeology to prove plagues or a parted sea, he argues for a more modest migration memory that could correlate with Semitic groups leaving Egypt and settling in Canaan. He also explains ancient numbers through cultural convention rather than modern literalism, which is a plausible hermeneutical caution. The weakness is that the move changes the target: the biblical story's theological force depends on more than a minimalist population movement. Treating Exodus as primary textual evidence while downshifting its spectacular claims risks special pleading. The score is mixed-strong because the narrowing protects plausibility, but at a cost to the original claim.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The tag applies because the supernatural narrative is reduced when challenged while still lending credibility to the broader claim."
+                }
+              ]
+            },
+            con: {
+              time: "84:00",
+              role: "Archaeology and clarity challenge",
+              words:
+                "Lambert presses Jericho, the huge population numbers, and the difficulty of a divine text that requires near-scholarly reconstruction to understand.",
+              score: 82,
+              critique:
+                "Lambert's Exodus challenge is effective because it presses both archaeology and revelation. He cites the mismatch around conquest expectations, the huge population numbers, and the burden placed on readers who must become near-scholars to understand what God supposedly revealed. That is a strong accessibility objection: if divine communication is for ordinary people, why is the evidential trail so complex and expert-dependent? The weakness is that some of the critique relies on broad consensus gestures rather than a detailed comparison of the competing Exodus models. Jones's minimalist version also reduces the force of objections aimed at literal conquest readings. The score is strong because Lambert keeps the public-evidence burden visible, but not conclusive.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Mythicism, parallels, and messy sources",
+        timebox: "90:39-02:06:54",
+        score: {
+          pro: 82,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "91:22",
+              role: "Parallel caution",
+              words:
+                "Jones distinguishes Jesus' existence from mythicist claims, warns against cherry-picked pagan parallels, and says literary borrowing need not erase historical events.",
+              score: 82,
+              critique:
+                "Jones's mythicism and source-criticism replies are careful when he resists parallel hunting. He distinguishes Jesus' existence from maximal Christian claims, warns that cherry-picked similarities can manufacture dependence, and says ancient authors may draw literary parallels without inventing the underlying event. On documentary questions, he concedes multiple authors and human culture while retaining theological providence. The weakness is that so what can understate how literary shaping affects historical confidence, especially when miracle claims are already evidentially expensive. His God-through-messy-process account is coherent, but it can look like a theological overlay on data that also fits a fully human account. The score is strong because he avoids fundamentalism, but not decisive.",
+              tags: []
+            },
+            con: {
+              time: "93:30",
+              role: "Comparative pressure",
+              words:
+                "Lambert rejects crude parallels but asks whether other miracle figures, literary mimesis, documentary sources, and rival testimonies should lower confidence.",
+              score: 80,
+              critique:
+                "Lambert's final cluster is valuable because it tests Christianity against nearby comparative cases: mythicism, dying-and-rising motifs, miracle reports, Homeric or Dionysian parallels, documentary sources, and other testimonial religions. He is careful enough to reject crude Zeitgeist-style parallels and repeatedly says he does not want to straw man Jones. The weakness is that the breadth creates a shotgun effect. Each comparison requires independent work on dating, direction of influence, genre, and evidential standards. Without that, parallels can become suspicion multipliers rather than arguments. The score is solid-strong because Lambert raises real comparative burdens, but lower than its breadth might suggest because many points remain prompts for future debate.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "The tag marks the risk of accumulating parallels as suspicion before establishing dependence or shared evidential standards."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 80,
+        strengths: [
+          "Jones consistently translated brittle fundamentalist claims into more flexible cumulative arguments rather than defending every literalist expectation.",
+          "He conceded uncertainty on hell, textual complexity, martyrdom legends, spiritual-gift excesses, and documentary-source questions, which made his apologetic posture unusually measured.",
+          "His best moments distinguished evidence from proof and asked whether miracles should be ruled out by prior naturalistic assumptions."
+        ],
+        blunders: [
+          {
+            text:
+              "His flexibility sometimes downshifted difficult texts into ancient convention or human process while preserving the same theological payoff.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "Several hard questions were redirected to videos, books, or future conversations, which sometimes moved attention away from the specific live burden.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Lambert was unusually charitable, repeatedly clarifying that he wanted viewers to understand both worldviews rather than watch a hostile exchange.",
+          "He pressed the public-evidence burden across resurrection testimony, textual variants, archaeology, religious experience, and comparative miracle claims.",
+          "His personal account of tongues and deconversion gave the psychological critique of religious experience concrete detail without reducing the whole discussion to autobiography."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes spread the challenge across many adjacent problems, letting the quantity of unanswered questions substitute for a focused refutation.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His use of parallels and psychologically primed experiences sometimes treated resemblance or plausible mechanism as stronger defeaters than the live evidence established.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
