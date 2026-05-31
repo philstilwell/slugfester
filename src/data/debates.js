@@ -14045,5 +14045,322 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "huemer-bush-objective-moral-facts-2024",
+    number: "41",
+    title: "Michael Huemer vs Lance Bush: Do Objective Moral Facts Exist?",
+    label: "Objective moral facts and intuitionism",
+    date: "2026-05-31",
+    duration: "2 hr 09 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=Cc16nceSWiU",
+    motion:
+      "Do objective moral facts exist, and can ethical intuitionism establish moral realism against anti-realist quietism, folk metaethical indeterminacy, and language-use objections?",
+    summary:
+      "Huemer defends objective moral facts from common moral judgments, Frege-Geach style semantics, and phenomenal conservatism; Bush argues that realist conclusions rest on contested intuitions, semantic assumptions, and normative entanglement.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the Curiosity upload, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "I think there are objective moral facts",
+        context:
+          "Huemer's case argues that ordinary moral judgments are true, propositional, and not dependent on observers' attitudes."
+      },
+      con: {
+        text: "I call myself an anti-realist quietist",
+        context:
+          "Bush rejects the standard anti-realist boxes and treats moral meaning, folk commitments, and intuitions as context-sensitive empirical matters."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Moral realist",
+        speaker: "Michael Huemer",
+        color: "teal"
+      },
+      con: {
+        name: "Moral anti-realist",
+        speaker: "Lance Bush",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 79,
+      con: 83
+    },
+    sections: [
+      {
+        title: "Opening case and alternative frame",
+        timebox: "04:01-34:22",
+        score: {
+          pro: 81,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:01",
+              role: "Eliminative moral realism",
+              words:
+                "Huemer defines objective moral facts as attitude-independent, then rejects error theory, subjectivism, and non-cognitivism using baby-torture cases and embedding tests.",
+              score: 81,
+              critique:
+                "Huemer's opening is admirably clear. He defines objectivity as independence from observers' attitudes, then walks through three anti-realist options: all moral claims false, truth dependent on attitudes, or moral claims neither true nor false. The baby-torture example gives the audience a vivid datum, and the Frege-Geach style embedding point is a serious problem for crude emotivism. The weakness is that the argument depends heavily on treating the obviousness of first-order moral judgments as pressure toward stance-independent truth. Bush's later response is precisely that the normative reaction and the metaethical analysis can come apart. The score is strong because Huemer presents a tight map, but the map omits Bush's quietist route.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The argument risks moving from an obvious normative judgment to realist truth before establishing that anti-realists must share that analysis."
+                }
+              ]
+            },
+            con: {
+              time: "15:38",
+              role: "Indeterminacy reply",
+              words:
+                "Bush denies that anti-realism is radically skeptical, cites folk metaethical indeterminacy, and says ordinary moral discourse need not encode realism or anti-realism.",
+              score: 84,
+              critique:
+                "Bush's opening is strong because it does not merely deny Huemer's conclusion; it challenges the frame that makes realism seem like common sense. Folk metaethical indeterminacy is a relevant counterweight: ordinary speakers may condemn torture without any determinate stance on realism, subjectivism, or non-cognitivism. His survey-method discussion also explains why apparent folk realism can be an artifact of question wording. The quietist move is important because it targets Huemer's process of elimination rather than defending one of the three standard boxes. The weakness is that the alternative remains abstract and metaphilosophical, so listeners may wonder what replaces truth-directed moral inquiry. The score is high because Bush attacks the right premise.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Common sense and normative entanglement",
+        timebox: "34:36-46:59",
+        score: {
+          pro: 79,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "34:36",
+              role: "Common-sense clarification",
+              words:
+                "Huemer says he is not claiming that moral realism itself is immediately intuitive, but that people can reason from obvious moral judgments to realism.",
+              score: 79,
+              critique:
+                "Huemer's clarification improves the opening. He is not claiming that ordinary people directly intuit the technical thesis moral realism is true; he claims they intuit claims like do not torture babies, embedded moral conditionals, and attitude-independence cases, then can reason toward realism. That makes his common-sense appeal more defensible. He also usefully distinguishes error theory from a mere denial of stance-independent facts: error theorists say ordinary moral statements are false. The weakness is that the reasoning path still depends on whether the moral statements are already being read in realist terms. If Bush can explain the same speech and condemnation without that reading, the inference loses force. The score is solid-strong, but not commanding.",
+              tags: []
+            },
+            con: {
+              time: "41:30",
+              role: "Entanglement diagnosis",
+              words:
+                "Bush says baby-torture denials bundle a normative question with a metaethical question, making anti-realists look morally indifferent when they need not be.",
+              score: 86,
+              critique:
+                "Bush's normative-entanglement diagnosis is the debate's sharpest rebuttal. He shows that answering no to objectively wrong can mean several things: endorsing torture, denying stance-independent facts, or both. Once the anti-realist explicitly opposes torture while denying realist properties, the apparent horror of the answer is partly defused. That directly targets Huemer's strongest rhetorical case. Bush also handles subjectivism similarly: if an appraiser relativist says the torturer approves, that can be trivially true without licensing the action. The weakness is that defusing pragmatic horror does not yet explain the full assertoric, public, and disagreement-sensitive role of moral claims. The score is high because Bush separates the questions Huemer's example tends to merge.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Intuitions, surveys, and expertise",
+        timebox: "46:59-56:01",
+        score: {
+          pro: 77,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "46:59",
+              role: "Intuition-count response",
+              words:
+                "Huemer says clashes of intuition may remain, but more people seem to have realist intuitions; naturalists also belong on the realist side.",
+              score: 77,
+              critique:
+                "Huemer is candid that a deep clash of intuitions may leave little further to say. His point that naturalist moral realists still count as realists is fair, and it prevents Bush from narrowing the comparison class too conveniently. He also distinguishes his disagreement with naturalists from a clash of basic moral intuition. The weakness is that the head-counting move is underdeveloped. Bush has actually studied folk responses, while Huemer mostly relies on broad impressions and the PhilPapers-style split among philosophers. That risks leaning on disciplinary familiarity as if it were independent evidence. The score is still solid because Huemer keeps the taxonomy straight, but his empirical posture is comparatively thin.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "The reference to philosopher majorities carries limited force unless the expertise and comparison class are defended."
+                }
+              ]
+            },
+            con: {
+              time: "47:41",
+              role: "Folk-data challenge",
+              words:
+                "Bush says his dissertation work found no clear folk realism, philosophers split across naturalism, non-naturalism, and anti-realism, and students are easily cued.",
+              score: 82,
+              critique:
+                "Bush's response is evidentially stronger than a bare appeal to disagreement. He gives concrete reasons to resist the default-status claim: folk studies often reveal misunderstanding, better measures can elicit anti-realist responses, philosophers divide across different realist and anti-realist packages, and students may mirror instructors' cues. That makes the common-sense premise look much less secure. The weakness is that Bush sometimes treats measurement difficulty as if it itself favored anti-realism or quietism. It may only show that folk metaethics is messy, not that Huemer's first-order premises are weak. The score is strong because Bush supplies relevant empirical caution, but it stops short of a direct refutation of ethical intuitionism.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Meaning, pragmatics, and analytic method",
+        timebox: "56:01-01:13:43",
+        score: {
+          pro: 82,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "58:43",
+              role: "Neutralized-pragmatics test",
+              words:
+                "Huemer tests Bush's view by removing pragmatic implications: even if one hates torture, saying it is not wrong still seems implausible to him.",
+              score: 82,
+              critique:
+                "Huemer's neutralized-pragmatics test is a good pressure move. If the anti-realist says torture is not wrong but immediately cancels indifference by saying do not torture and I hate it, Huemer asks whether the remaining claim still sounds implausible. That targets Bush's thesis that pragmatic implications do most of the work. His later pain-is-bad and Gettier examples broaden the point: philosophy often uses intuitive judgments before complete analyses are available. The weakness is that this again bottoms out in Huemer's own seeming, and Bush explicitly denies sharing it. The score is strong because Huemer identifies a residual intuition, but not higher because the public warrant remains contested.",
+              tags: []
+            },
+            con: {
+              time: "01:02:24",
+              role: "Methodological rejection",
+              words:
+                "Bush says truth, badness, and knowledge questions require analysis of use and context; he rejects much of the analytic method behind Gettier-style intuition tests.",
+              score: 81,
+              critique:
+                "Bush's methodological reply is coherent and bold. He says he cannot assess undifferentiated truth, badness, or knowledge without knowing the relevant use, analysis, and context. That explains why he resists Huemer's Gettier analogy rather than merely lacking a particular intuition. His meaning-as-use picture also fits his broader empirical and pragmatist commitments. The weakness is that rejecting large parts of analytic method raises the burden on Bush. If all such cases are context-dependent and empirically unsettled, he needs an account of how philosophical criticism can proceed without dissolving too many questions at once. The score is strong because the response is principled, but it risks over-dissolution.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Culture, concepts, and thin normativity",
+        timebox: "01:13:45-01:25:54",
+        score: {
+          pro: 83,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:18:13",
+              role: "Conceptual concession",
+              words:
+                "Huemer grants that other languages and ancient Greek concepts may differ, but says thin notions like better, worse, and reasons remain available.",
+              score: 83,
+              critique:
+                "Huemer handles the cross-cultural point well. Instead of denying that moral vocabulary may be parochial, he concedes that other languages, ancient Greek virtue terms, and religious uses of immorality may carve the normative field differently. That protects him from a brittle English-centric realism. His fallback to thin notions like better, worse, reasons, and outcomes is plausible: even if thick moral categories vary, some evaluative comparisons may remain. The weakness is that this move quietly shifts from moral realism to a broader normative realism, and the bridge from thin evaluative language to objective facts still needs argument. The score is strong because Huemer adapts without collapsing, but the concession narrows the original claim.",
+              tags: []
+            },
+            con: {
+              time: "01:17:06",
+              role: "Empirical-language caution",
+              words:
+                "Bush argues that languages, knowledge terms, and moral vocabularies may vary deeply, so intuitions and moral concepts should be studied empirically and case by case.",
+              score: 84,
+              critique:
+                "Bush's cross-cultural caution is persuasive because it makes his empirical stance concrete. He points to evidential marking, language-specific knowledge terms, possible absence of morality cognates, and the danger of overprivileging English-speaking analytic philosophy. He also avoids overclaiming: the Mongolian example is offered as a paper worth examining, not as a knockout. That restraint strengthens the point. The weakness is that conceptual variation does not automatically defeat objective normative truth; mathematics, perception, and science also travel through varied languages. Bush acknowledges some of this by remaining a global normative anti-realist rather than resting only on morality words. The score is high because his caution is relevant and proportionate.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Authority, consequences, and closing burdens",
+        timebox: "01:27:25-02:05:02",
+        score: {
+          pro: 80,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:28:35",
+              role: "Authority and intuition defense",
+              words:
+                "Huemer distinguishes pain aversion from moral intuition, says objective reasons are harder to escape, and closes by grounding rational belief in appearances.",
+              score: 80,
+              critique:
+                "Huemer's Q&A and closing add needed epistemology. He distinguishes self-interested pain aversion from moral judgment by using promises one dislikes keeping, and he explains intuitions as initial intellectual appearances that underwrite rational belief generally. That gives his ethical intuitionism a broader epistemic base. He also has a plausible point that objective reasons can feel harder to evade than preferences. The weakness is that the practical-authority answer remains suggestive. Saying objectivity is harder to escape explains why realism motivates some people, but not why the objective facts exist. His closing also asserts that anti-realist arguments are terrible without showing enough of the promised rebuttals. The score is strong but compressed.",
+              tags: []
+            },
+            con: {
+              time: "01:30:29",
+              role: "Motivation and quietist close",
+              words:
+                "Bush says subjectivity is not quantitatively lesser, moral realism may also have bad psychological effects, and the real dispute lies in metaphilosophy.",
+              score: 82,
+              critique:
+                "Bush's closing is consistent with his whole debate strategy. He denies that subjectivity is lesser in any simple quantitative sense, says motivation depends on actual goals and psychology, and notes that realism could also produce dogmatism or just-following-orders rationalization. That balances Huemer's worry about anti-realist consequences. His final claim that the real battle is metaphilosophical ties together language, intuitions, and empirical psychology. The weakness is that quietism still leaves many listeners wanting a clearer replacement for ordinary truth-directed moral disagreement. If realism is a symptom of bad method, Bush needs to publish and defend that method directly. The score is strong because the reply is integrated, but it remains programmatic.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 79,
+        strengths: [
+          "Huemer gave a clean, accessible version of ethical intuitionism and explained why crude error theory, subjectivism, and non-cognitivism each face pressure.",
+          "His strongest technical point was the embedding problem for non-cognitivism and the broader claim that moral sentences behave propositionally in ordinary reasoning.",
+          "He was willing to concede conceptual variation and shift carefully toward thinner normative notions rather than defending every traditional moral category."
+        ],
+        blunders: [
+          {
+            text:
+              "He often treated first-order moral obviousness as if it created a default path to stance-independent moral facts, which is exactly the bridge Bush contested.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His remarks about philosophers, skepticism, and majorities sometimes leaned on disciplinary confidence more than live argument for the disputed intuitions.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 83,
+        strengths: [
+          "Bush repeatedly separated normative condemnation from metaethical realism, preventing Huemer's strongest examples from doing more work than they could support.",
+          "He supplied a detailed alternative frame: folk metaethical indeterminacy, semantic pluralism, pragmatics, and anti-realist quietism.",
+          "He used empirical humility well, often identifying where current survey, language, and intuition data are suggestive without pretending they settle the debate."
+        ],
+        blunders: [
+          {
+            text:
+              "His quietism sometimes recast the existence question as a question about language, psychology, or method, which risks assuming the realist ontology away.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His meaning-as-use approach moved between personal use, ordinary discourse, and philosophical semantics in ways that occasionally blurred the target.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
