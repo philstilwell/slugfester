@@ -15,13 +15,17 @@ import {
   landingSeo,
   notFoundSeo,
   referencePath,
-  referenceSeo
+  referenceSeo,
+  searchPath,
+  searchSeo
 } from "./seo.js";
 
 const app = document.querySelector("#app");
 const debateHashRoutePattern = /^#\/debate\/([a-z0-9-]+)$/;
+const searchHashRoutePattern = /^#\/search$/;
 const referenceHashRoutePattern = /^#\/reference\/(fallacy|bias)\/([a-z0-9-]+)(?:\?debate=([a-z0-9-]+))?$/;
 const debatePathRoutePattern = /^\/debate\/([a-z0-9-]+)\/?$/;
+const searchPathRoutePattern = /^\/search\/?$/;
 const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?$/;
 
 const escapeHtml = (value = "") =>
@@ -149,6 +153,7 @@ function renderShell(content) {
       </a>
       <nav aria-label="Primary">
         <a href="/">Debates</a>
+        <a href="${searchPath()}">Search</a>
         <span class="external-sites" aria-label="External Sites">
           <span class="external-sites-label">External Sites</span>
           <span class="external-sites-links">
@@ -243,6 +248,256 @@ function renderMiniScore(label, score, color) {
       <i style="--score-width:${score}%"></i>
     </div>
   `;
+}
+
+function normalizeSearchValue(value = "") {
+  return String(value)
+    .replaceAll("’", "'")
+    .toLowerCase()
+    .trim();
+}
+
+function uniqueInterlocutorsForDebate(debate) {
+  const avatars = [
+    ...avatarsForSpeakerText(debate.sides.pro.speaker),
+    ...avatarsForSpeakerText(debate.sides.con.speaker)
+  ];
+  return [...new Map(avatars.map((avatar) => [avatar.name, avatar])).values()];
+}
+
+function searchFacets() {
+  const people = new Map();
+  const topics = new Map();
+
+  debates.forEach((debate) => {
+    uniqueInterlocutorsForDebate(debate).forEach((avatar) => {
+      const current = people.get(avatar.name) || { ...avatar, count: 0 };
+      current.count += 1;
+      people.set(avatar.name, current);
+    });
+
+    const topic = topics.get(debate.label) || { label: debate.label, count: 0 };
+    topic.count += 1;
+    topics.set(debate.label, topic);
+  });
+
+  return {
+    people: [...people.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name)),
+    topics: [...topics.values()]
+  };
+}
+
+function searchState() {
+  const params = new URLSearchParams(window.location.search);
+  return {
+    query: params.get("q") || "",
+    people: params.getAll("person"),
+    topics: params.getAll("topic")
+  };
+}
+
+function searchUrl(state) {
+  const params = new URLSearchParams();
+
+  if (state.query.trim()) params.set("q", state.query.trim());
+  state.people.forEach((person) => params.append("person", person));
+  state.topics.forEach((topic) => params.append("topic", topic));
+
+  const query = params.toString();
+  return `${searchPath()}${query ? `?${query}` : ""}`;
+}
+
+function debateSearchText(debate) {
+  return [
+    debate.number,
+    debate.title,
+    debate.label,
+    debate.motion,
+    debate.summary,
+    debate.sides.pro.name,
+    debate.sides.pro.speaker,
+    debate.sides.con.name,
+    debate.sides.con.speaker,
+    ...debate.sections.map((section) => section.title)
+  ].join(" ");
+}
+
+function debateMatchesSearch(debate, state) {
+  const people = uniqueInterlocutorsForDebate(debate).map((avatar) => avatar.name);
+  const selectedPeopleMatch = state.people.every((person) => people.includes(person));
+  const selectedTopicsMatch = !state.topics.length || state.topics.includes(debate.label);
+  const query = normalizeSearchValue(state.query);
+  const queryMatch = !query || normalizeSearchValue(debateSearchText(debate)).includes(query);
+
+  return selectedPeopleMatch && selectedTopicsMatch && queryMatch;
+}
+
+function toggleValue(values, value) {
+  return values.includes(value)
+    ? values.filter((item) => item !== value)
+    : [...values, value];
+}
+
+function navigateSearch(state) {
+  const next = searchUrl(state);
+  if (next !== `${window.location.pathname}${window.location.search}`) {
+    window.history.pushState({}, "", next);
+  }
+  route();
+}
+
+function renderSearch() {
+  setSeo(searchSeo(debates));
+
+  const state = searchState();
+  const facets = searchFacets();
+  const matches = debates.filter((debate) => debateMatchesSearch(debate, state));
+  const hasFilters = Boolean(state.query.trim() || state.people.length || state.topics.length);
+
+  app.innerHTML = renderShell(`
+    <main class="search-page">
+      <section class="search-hero">
+        <div>
+          <p class="eyebrow">Search scorecards</p>
+          <h1>Find debates</h1>
+        </div>
+        <p class="search-count">${matches.length} of ${debates.length} debates</p>
+      </section>
+
+      <section class="search-tool" aria-label="Search filters">
+        <form class="search-form" role="search">
+          <label for="search-query">Text</label>
+          <div class="search-input-row">
+            <input id="search-query" name="q" type="search" value="${escapeHtml(state.query)}" placeholder="speaker, topic, claim, title">
+            <button class="button primary" type="submit">Apply</button>
+            ${hasFilters ? `<button class="button secondary" type="button" data-clear-search>Clear</button>` : ""}
+          </div>
+        </form>
+
+        <div class="filter-section">
+          <div class="filter-heading">
+            <h2>Interlocutors</h2>
+            <span>${state.people.length || "Any"}</span>
+          </div>
+          <div class="interlocutor-filter-list">
+            ${facets.people.map((person) => renderPersonFilter(person, state.people.includes(person.name))).join("")}
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <div class="filter-heading">
+            <h2>Topics</h2>
+            <span>${state.topics.length || "Any"}</span>
+          </div>
+          <div class="topic-filter-list">
+            ${facets.topics.map((topic) => renderTopicFilter(topic, state.topics.includes(topic.label))).join("")}
+          </div>
+        </div>
+      </section>
+
+      <section class="search-results" aria-labelledby="search-results-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Matches</p>
+          <h2 id="search-results-heading">Debates</h2>
+        </div>
+        ${
+          matches.length
+            ? `<div class="search-result-list">${matches.map(renderSearchResult).join("")}</div>`
+            : `<div class="empty-results"><strong>No debates matched.</strong><span>Try fewer people, another topic, or a broader text search.</span></div>`
+        }
+      </section>
+    </main>
+  `);
+
+  bindSearchControls(state);
+}
+
+function renderPersonFilter(person, selected) {
+  return `
+    <button class="person-filter ${selected ? "active" : ""}" type="button" data-filter-type="person" data-filter-value="${escapeHtml(person.name)}" aria-pressed="${selected}">
+      <img src="${escapeHtml(person.src)}" alt="${escapeHtml(person.name)}" width="512" height="512" loading="lazy" decoding="async">
+      <span>${escapeHtml(person.name)}</span>
+      <strong>${person.count}</strong>
+    </button>
+  `;
+}
+
+function renderTopicFilter(topic, selected) {
+  return `
+    <button class="topic-filter ${selected ? "active" : ""}" type="button" data-filter-type="topic" data-filter-value="${escapeHtml(topic.label)}" aria-pressed="${selected}">
+      <span>${escapeHtml(topic.label)}</span>
+      <strong>${topic.count}</strong>
+    </button>
+  `;
+}
+
+function renderSearchResult(debate) {
+  const people = uniqueInterlocutorsForDebate(debate);
+
+  return `
+    <article class="search-result">
+      <div class="card-topline">
+        <span class="card-label">${renderDebateNumber(debate)}<span>${escapeHtml(debate.label)}</span></span>
+        <span>${escapeHtml(debate.duration)}</span>
+      </div>
+      <div class="search-result-main">
+        <div>
+          <h3>${escapeHtml(debate.title)}</h3>
+          <p class="motion">${escapeHtml(debate.motion)}</p>
+          <p>${escapeHtml(debate.summary)}</p>
+        </div>
+        <div class="result-people" aria-label="Interlocutors">
+          ${people.map(renderResultPerson).join("")}
+        </div>
+      </div>
+      <div class="side-score-strip" aria-label="Overall scores">
+        ${renderMiniScore(debate.sides.pro.name, debate.score.pro, "teal")}
+        ${renderMiniScore(debate.sides.con.name, debate.score.con, "coral")}
+      </div>
+      <div class="card-actions">
+        <a class="button primary" href="${escapeHtml(debatePath(debate))}">Open Debate Assessment</a>
+        <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noreferrer">YouTube Source</a>
+      </div>
+    </article>
+  `;
+}
+
+function renderResultPerson(person) {
+  return `
+    <span class="result-person">
+      <img src="${escapeHtml(person.src)}" alt="" width="512" height="512" loading="lazy" decoding="async">
+      <span>${escapeHtml(person.name)}</span>
+    </span>
+  `;
+}
+
+function bindSearchControls(state) {
+  const page = app.querySelector(".search-page");
+  if (!page) return;
+
+  page.querySelector(".search-form")?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const query = page.querySelector("#search-query")?.value || "";
+    navigateSearch({ ...state, query });
+  });
+
+  page.querySelector("[data-clear-search]")?.addEventListener("click", () => {
+    navigateSearch({ query: "", people: [], topics: [] });
+  });
+
+  page.querySelectorAll("[data-filter-type]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const type = button.dataset.filterType;
+      const value = button.dataset.filterValue;
+      const query = page.querySelector("#search-query")?.value || state.query;
+
+      if (type === "person") {
+        navigateSearch({ ...state, query, people: toggleValue(state.people, value) });
+      } else if (type === "topic") {
+        navigateSearch({ ...state, query, topics: toggleValue(state.topics, value) });
+      }
+    });
+  });
 }
 
 function renderDebate(id) {
@@ -671,12 +926,16 @@ function route() {
   const hash = window.location.hash;
   const debateMatch =
     hash.match(debateHashRoutePattern) || window.location.pathname.match(debatePathRoutePattern);
+  const searchMatch =
+    hash.match(searchHashRoutePattern) || window.location.pathname.match(searchPathRoutePattern);
   const referenceMatch =
     hash.match(referenceHashRoutePattern) ||
     window.location.pathname.match(referencePathRoutePattern);
 
   if (debateMatch) {
     renderDebate(decodeURIComponent(debateMatch[1]));
+  } else if (searchMatch) {
+    renderSearch();
   } else if (referenceMatch) {
     const sourceDebateId =
       referenceMatch[3] || new URLSearchParams(window.location.search).get("debate") || "";
@@ -700,13 +959,19 @@ function shouldHandleInternally(link) {
 
   const url = new URL(link.href, window.location.href);
   if (url.origin !== window.location.origin) return false;
-  if (url.hash && !url.pathname.match(debatePathRoutePattern) && !url.pathname.match(referencePathRoutePattern)) {
+  if (
+    url.hash &&
+    !url.pathname.match(debatePathRoutePattern) &&
+    !url.pathname.match(searchPathRoutePattern) &&
+    !url.pathname.match(referencePathRoutePattern)
+  ) {
     return false;
   }
 
   return (
     url.pathname === "/" ||
     debatePathRoutePattern.test(url.pathname) ||
+    searchPathRoutePattern.test(url.pathname) ||
     referencePathRoutePattern.test(url.pathname)
   );
 }

@@ -18,7 +18,9 @@ import {
   landingSeo,
   notFoundSeo,
   referencePath,
-  referenceSeo
+  referenceSeo,
+  searchPath,
+  searchSeo
 } from "../src/seo.js";
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
@@ -190,6 +192,12 @@ addPage(
   "/",
   landingSeo(debates),
   "Slugfester lists YouTube debate transcript scorecards with argument scores, critique popovers, and fallacy or bias references."
+);
+
+addPage(
+  searchPath(),
+  searchSeo(debates),
+  "Search Slugfester debate scorecards by interlocutor, topic, and text."
 );
 
 debates.forEach((debate) => {

@@ -24,6 +24,10 @@ export function debatePath(debateOrId) {
   return `/debate/${encodeURIComponent(id)}/`;
 }
 
+export function searchPath() {
+  return "/search/";
+}
+
 export function referencePath(type, slug, debateId = "") {
   const source = debateId ? `?debate=${encodeURIComponent(debateId)}` : "";
   return `/reference/${encodeURIComponent(type)}/${encodeURIComponent(slug)}/${source}`;
@@ -196,6 +200,45 @@ export function debateSeo(debate) {
       breadcrumbJsonLd([
         { name: SITE_NAME, path: "/" },
         { name: `${debateNumberLabel(debate)}: ${debate.title}`, path: debatePath(debate) }
+      ])
+    ]
+  };
+}
+
+export function searchSeo(debates = []) {
+  return {
+    title: pageTitle("Search debate scorecards"),
+    description: `Filter ${debates.length} Slugfester debate scorecards by interlocutor, topic, and text.`,
+    canonicalPath: searchPath(),
+    imagePath: DEFAULT_IMAGE,
+    imageAlt: "Slugfester debate search with interlocutors and topics.",
+    type: "website",
+    jsonLd: [
+      organizationJsonLd(),
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: "Search Slugfester debate scorecards",
+        description: `Filter ${debates.length} Slugfester debate scorecards by interlocutor, topic, and text.`,
+        url: absoluteUrl(searchPath()),
+        isPartOf: {
+          "@id": WEBSITE_ID
+        },
+        mainEntity: {
+          "@type": "ItemList",
+          name: "Debate scorecards",
+          numberOfItems: debates.length,
+          itemListElement: debates.map((debate, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            url: absoluteUrl(debatePath(debate)),
+            name: `${debateNumberLabel(debate)}: ${debate.title}`
+          }))
+        }
+      },
+      breadcrumbJsonLd([
+        { name: SITE_NAME, path: "/" },
+        { name: "Search", path: searchPath() }
       ])
     ]
   };

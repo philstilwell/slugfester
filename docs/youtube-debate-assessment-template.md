@@ -24,12 +24,14 @@ Landing-page design:
 - The small image in the top bar is the boxing-gloves image at `assets/debate-gloves.png`.
 - The LogFall and CogBias header links are grouped under the visible `External Sites` label.
 - The LogFall and CogBias header links show short explanatory popovers on hover and keyboard focus.
+- The header includes a `Search` link to `/search/`.
 - The landing intro includes a divider line followed by a ` | `-delineated list of unique current debate topics.
 - The debate list is capped at three columns on wide screens, then steps down responsively.
 - Debate `label` values must be unique so landing cards, topic lists, and reference occurrence cards are unambiguous.
 - Debate `number` values must be unique, sequential in debate-list order, and two-digit zero-padded, starting with `01`.
 - Debate numbers should appear anywhere the site identifies a debate for tracking: landing cards, debate hero metadata, topic lists, and reference occurrence cards.
 - Internal debate and reference links use clean path URLs, while old hash routes remain as backwards-compatible fallbacks.
+- `/search/` lets users filter debates by text, interlocutor portraits, and topic chips.
 
 Design constraints:
 
