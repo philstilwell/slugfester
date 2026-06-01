@@ -182,6 +182,11 @@ export const interlocutorAvatars = [
     aliases: ["Trent Horn", "Trent C. Horn", "Trent C Horn"]
   },
   {
+    name: "Stephen Law",
+    src: `${avatarBasePath}/stephen-law.webp`,
+    aliases: ["Stephen Law", "Stephen R. Law", "Stephen R Law"]
+  },
+  {
     name: "Richard Carrier",
     src: `${avatarBasePath}/richard-carrier.webp`,
     aliases: ["Richard Carrier"]
