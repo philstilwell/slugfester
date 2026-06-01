@@ -35,6 +35,7 @@ Landing-page design:
 - Internal debate and reference links use clean path URLs, while old hash routes remain as backwards-compatible fallbacks.
 - `/search/` lets users filter debates by text and interlocutor portraits.
 - The search results eyebrow reads `Matches: ...` and names the active text query and selected interlocutors, falling back to `Matches: all debates`.
+- Search-result debate titles link directly to their debate assessments.
 
 Design constraints:
 

@@ -84,6 +84,7 @@ requireIncludes("search page", styles, ".search-match-label");
 requireIncludes("search page", styles, ".person-filter");
 requireExcludes("search page", styles, ".topic-filter");
 requireIncludes("search page", styles, ".search-result");
+requireIncludes("search result links", app, 'class="debate-title-link search-result-title-link"');
 requireIncludes("assessment page", styles, ".assessment-page");
 requireIncludes("assessment page", styles, ".assessment-hero");
 requireIncludes("assessment page", styles, ".assessment-stamp");
