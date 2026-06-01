@@ -18695,5 +18695,382 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "jones-law-christianity-humanism-future-2025",
+    number: "54",
+    title: "Michael Jones vs Stephen Law: Christianity vs Humanism",
+    label: "Christianity, humanism, and social future",
+    date: "2026-06-01",
+    duration: "1 hr 34 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=_UOwOCGIPzQ",
+    motion:
+      "Does Christianity or humanism offer a brighter future for humanity, especially for moral formation, social health, human rights, truth, and pluralistic freedom?",
+    summary:
+      "Jones argues Christian belief and institutions best sustain human rights, meaning, charity, fertility, and Western social goods; Law argues humanism can preserve morality and pluralism without building society on disputed Christian claims.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the Premier Unbelievable? upload, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Christian societies need Christian worldview to thrive.",
+        context:
+          "Jones's line captures his main argument that Western moral goods are not self-sustaining if detached from Christian foundations."
+      },
+      con: {
+        text: "You don't need a Christian underpinning in order to have a decent moral society.",
+        context:
+          "Law's line captures his central skeptical reply that morality, civic health, and pluralism can be defended without Christian belief."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christianity offers the brighter future",
+        speaker: "Michael Jones",
+        color: "teal"
+      },
+      con: {
+        name: "Humanism offers the brighter future",
+        speaker: "Stephen Law",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 78,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Opening definitions",
+        timebox: "01:24-16:09",
+        score: {
+          pro: 82,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:31",
+              role: "Christian society frame",
+              words:
+                "Jones defines Christianity around Jesus, then argues Christian societies produced separation of church and state, human rights, science, abolition, and Western moral culture.",
+              score: 82,
+              critique:
+                "Jones's opening is strong because he avoids a caricature of Christianity as simple theocracy. He defines the faith doctrinally, then narrows the social question to Christian cultures with institutional separation between spiritual and civil power. The historical appeal to human rights, abolition, science, and the slow saturation of culture gives his side a concrete inheritance thesis rather than a mere slogan. The weakness is that the causal chain is asserted faster than it is demonstrated. Naming Holland, Grant, Simpson, and Moyn gestures toward scholarship, but the audience still needs comparison with rival causes, internal Christian opposition, and non-Christian contributions. The score is high because the frame is coherent and relevant, but it remains more thesis than proof.",
+              tags: []
+            },
+            con: {
+              time: "01:24",
+              role: "Humanist definition",
+              words:
+                "Law defines humanism as atheistic or agnostic, this-worldly, reason-friendly, morally serious, personally responsible, and politically secular.",
+              score: 84,
+              critique:
+                "Law's opening definition is careful and useful. He distinguishes organizational humanism from every possible use of the term, then lists commitments that directly matter for the motion: science and reason, meaningful finite lives, moral responsibility, political secularism, and equal civic footing. This gives humanism a positive program rather than only anti-Christian critique. He also notes overlap with religious citizens, which keeps the opening from sounding sectarian. The weakness is that he initially admits he has not prepared a full brighter-future case, so the definition does more groundwork than advocacy. The score is high because the conceptual clarity is excellent, but the forward-looking social argument is still only sketched at this stage.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Truth and usefulness",
+        timebox: "16:09-26:40",
+        score: {
+          pro: 79,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "22:42",
+              role: "Moral capital warning",
+              words:
+                "Jones says if secularists will not become Christian, they should at least see how Christianity sustains charity, fertility, rights, and Western freedom.",
+              score: 79,
+              critique:
+                "Jones's usefulness case is relevant to the motion and more empirical than many cultural-Christian arguments. He gives concrete mechanisms: missionaries promoting education and democracy, church attendance correlating with volunteering and giving, and religious fertility sustaining cultures across generations. Those are genuine social-science questions, not merely nostalgia. The weakness is that several claims need heavier causal sorting. Fertility, immigration, Islam, charity, poverty, education, and institutional trust are entangled variables, and the argument can sound alarmist when it moves quickly from secularization to Sharia or civilizational decline. The score is solid because the concerns are real and motion-focused, but the inference from correlations to a brighter Christian future is not yet tight.",
+              tags: [
+                {
+                  label: "Base-rate neglect",
+                  type: "bias",
+                  url: bias("base-rate-neglect"),
+                  context:
+                    "Fertility and charity rates are emphasized before fully weighing background variables such as wealth, education, poverty, and migration."
+                }
+              ]
+            },
+            con: {
+              time: "17:39",
+              role: "Truth-use split",
+              words:
+                "Law separates whether Christianity is true from whether it is useful, then warns that cultural-Christian fear arguments can become moral panic.",
+              score: 83,
+              critique:
+                "Law's truth-use distinction is one of his best framing moves. A belief can be socially useful and still false; a society should be cautious about making disputed metaphysics its foundation merely because it may have benefits. He also grants that Christianity has done real good, especially around slavery, while noting that Christian language was the dominant moral vocabulary, so winners on both sides could later be counted as Christian. The weakness is that 'moral panic' risks psychologizing some of Jones's argument before all the evidence is assessed. Still, the distinction forces the debate to ask both questions separately. The score is high because it blocks a slide from helpful inheritance to warranted belief.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Data and moral foundations",
+        timebox: "26:40-40:41",
+        score: {
+          pro: 80,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "33:06",
+              role: "Institutional Christianity",
+              words:
+                "Jones says organized believers score lower on authoritarianism and polarization, while Christianity gives rights sacred status and motivates ordinary people to moral action.",
+              score: 80,
+              critique:
+                "Jones's institutional turn improves his earlier case by distinguishing organized believers from cultural or untethered religion. That matters because many bad political uses of Christianity may come from people detached from church practice rather than from thick Christian discipleship. His argument that sacred rights limit state power is also relevant to a future-oriented debate about freedom. The weakness is that the evidence arrives as a rapid chain of cited studies and authors without enough explanation of methods, effect sizes, or counterexamples. The move from 'organized believers correlate with lower authoritarianism' to 'Christianity gives the brighter future' also requires comparing other high-trust institutions. The score is strong because the mechanism is plausible, but the data need slower handling.",
+              tags: []
+            },
+            con: {
+              time: "29:42",
+              role: "Secular moral grounding",
+              words:
+                "Law says morality should be justified in religiously neutral ways because fewer citizens are Christian and many moral traditions predate or bypass Christianity.",
+              score: 84,
+              critique:
+                "Law's secular-grounding reply is strong because it answers the future question in pluralistic terms. If Christianity is no longer shared by much of society, insisting that morality belongs to Christianity can make non-Christians feel detached from the moral order. Law instead points to Greek, Confucian, and other non-Christian traditions as evidence that moral reasoning is not uniquely Christian. His appeal to healthier less-religious democracies also puts counterpressure on the decline narrative. The weakness is that he is cautious to the point of thinness about which neutral moral theory should carry the load. He identifies available resources more than he defends one. The score is high because the pluralist concern directly challenges Jones's sustainability claim.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Truth of Christianity",
+        timebox: "40:58-57:50",
+        score: {
+          pro: 75,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "52:11",
+              role: "Christian truth reply",
+              words:
+                "Jones replies that evil, hell, free will, Gospel reliability, complex doctrines, and Christian meaning all have developed defenses.",
+              score: 75,
+              critique:
+                "Jones's reply shows breadth and confidence. He names specific responses to evil and hell, pushes back on the Libet experiments, cites Gospel name-distribution research, and argues that complex doctrines helped Christian philosophy and science develop. The Gospel-name point is especially relevant because it offers a public historical datum rather than only usefulness. The weakness is that too much is outsourced to his channel or to compressed references. Law raised many direct truth objections, and Jones often answers by pointing to where a longer answer exists. The claim that confusing doctrines fostered science also does not show those doctrines are true. The score is solid because some rebuttals are substantive, but the exchange is too compressed for a decisive Christian-truth defense.",
+              tags: []
+            },
+            con: {
+              time: "41:20",
+              role: "Cumulative truth critique",
+              words:
+                "Law argues Christianity requires God, heaven, hell, atonement, resurrection evidence, and an immaterial soul, each of which faces serious problems.",
+              score: 86,
+              critique:
+                "Law's cumulative truth critique is forceful because it explains why the usefulness question cannot float free from truth. He stacks necessary commitments: a coherent God concept, a solution to animal suffering, plausible heaven and hell, morally intelligible atonement, reliable resurrection evidence, and a defensible soul or mind-body account. Each target is relevant to Christianity as Jones defines it. The weakness is that the critique becomes a rapid inventory, so several deep topics receive only the first objection rather than full engagement with the best Christian reply. Even so, the cumulative structure is powerful: Christianity must clear many hurdles before it can be a truthful social foundation. The score is high because it sharply identifies the cumulative burden.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Fine-tuning and suffering",
+        timebox: "01:03:46-01:11:35",
+        score: {
+          pro: 78,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:06:40",
+              role: "Virtue and triumph",
+              words:
+                "Jones says the problem of suffering is the strongest atheist argument, but Christianity expects suffering to be defeated through virtue and triumph.",
+              score: 78,
+              critique:
+                "Jones's suffering answer is pastorally and philosophically coherent within Christianity. He concedes the objection's force, rejects a simple happiness-maximizing standard, and offers a virtue-ethics frame in which courage, compassion, perseverance, and ultimate triumph can require a world containing suffering. The Lord of the Rings contrast makes the point memorable: people value stories with danger overcome, not only painless ease. The weakness is scale. The analogy handles some chosen or narratively redeemed suffering better than apparently pointless animal pain, extreme trauma, or suffering that destroys rather than forms virtue. The score is solid because the framework answers part of the objection, but it does not yet justify the magnitude Law emphasizes.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The virtue-and-story analogy does not fully scale to the vast quantity and intensity of suffering being challenged."
+                }
+              ]
+            },
+            con: {
+              time: "01:03:46",
+              role: "Fine-tuning concession",
+              words:
+                "Law says fine-tuning is the most intriguing theistic argument, but at most suggests intelligence, not a benevolent Christian God.",
+              score: 82,
+              critique:
+                "Law's fine-tuning concession is intellectually fair. He identifies the argument he finds most interesting, explains why fine-tuned constants invite design hypotheses, and then limits the conclusion: intelligence behind the universe would not by itself establish a personal, omnipotent, benevolent, Christian God. That restraint improves his credibility because he does not dismiss every theistic argument equally. The weakness is that he quickly leans again on suffering to block benevolence, so the reply partly depends on the same evil argument already in play. He also lists alternatives such as aliens or a matrix without comparing their probabilities. The score is high because the scope limitation is precise, though the alternative space remains underdeveloped.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Rights and pluralism",
+        timebox: "01:11:35-01:29:46",
+        score: {
+          pro: 76,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:12:17",
+              role: "Equality in Christian tradition",
+              words:
+                "Jones says Galatians, the image of God, Junia, and mutual submission helped Christians advance women's rights and defend equal human worth.",
+              score: 76,
+              critique:
+                "Jones gives a thoughtful internal Christian answer on women and rights. He does not deny difficult texts; he argues that mutual submission, the image of God, Galatians, Junia, and disputed translations create resources for equality that historically mattered. He also acknowledges Christian mistreatment of women and other groups, which keeps the defense from becoming triumphalist. The weakness is that the answer alternates between textual interpretation and historical contribution without fully explaining how to decide when restrictive passages are culturally bound and egalitarian passages are normative. On LGBT rights, his cake and pastor examples show tolerance, but the scope of exemptions remains unclear. The score is solid because the resources are real, but the adjudication problem remains.",
+              tags: []
+            },
+            con: {
+              time: "01:24:32",
+              role: "Equal-rights challenge",
+              words:
+                "Law says humanism guards equal-rights legislation by denying religion special exemption or extra weight over nonreligious conscience.",
+              score: 85,
+              critique:
+                "Law's equal-rights challenge is strong because it turns pluralism into a practical legal question. He does not deny conscience exemptions categorically; he denies that religion should receive special legal weight merely because it is religious. The bakery, abortion, pastor, and Dutch Reformed interracial-marriage examples test whether Jones's view can distinguish conscience, discrimination, and religious privilege without special pleading. His line that religion is not special 'fairy dust' is rhetorically sharp but also analytically useful. The weakness is that some institutional religious roles, such as clergy performing rites, may need more careful treatment than ordinary public commerce. The score is high because Law identifies the future-facing rights risk with precision.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Future and science",
+        timebox: "01:16:10-01:33:17",
+        score: {
+          pro: 79,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:18:08",
+              role: "Fertility and science warning",
+              words:
+                "Jones says secular cultures cannot simply move on from Christianity because fertility, volunteering, depression, authoritarianism, and science all depend on deeper religious roots.",
+              score: 79,
+              critique:
+                "Jones's final future argument is ambitious and mostly relevant. He connects fertility decline, volunteering, mental health, authoritarianism, technological risk, and the history of science into one sustainability case. His closing comparison with Islam also gives a concrete thesis: Christian separation of institutions and the doctrine of human fallenness helped science grow beyond immediate religious utility. The weakness is that the argument sprawls. Fertility decline, AI companions, environmental stewardship, Islamic science, and Christian epistemic humility are large debates, and the causal claims are too compressed to bear the full weight placed on them. The score is solid because the future-oriented mechanisms matter, but the pileup risks overclaiming.",
+              tags: []
+            },
+            con: {
+              time: "01:17:13",
+              role: "Fumes-in-the-tank rebuttal",
+              words:
+                "Law says the claim that secular societies run on leftover Christian capital lacks evidence when healthier democracies are often less religious.",
+              score: 82,
+              critique:
+                "Law's fumes-in-the-tank rebuttal is effective because it targets an unfalsifiable rescue move. If secular societies look healthy now, the Christian-capital thesis can always say they are living on borrowed reserves that will fail later. Law rightly asks what evidence would distinguish that prediction from an ad hoc explanation of inconvenient data. His citation of healthier less-religious democracies keeps the debate empirical. The weakness is that present social health does not by itself settle long-term fertility, institutional trust, or civilizational continuity, and Jones has some data-driven worries that deserve tracking over time. The score is high because Law exposes a weak evidential move, but the long-run future question remains open.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The borrowed-Christian-capital thesis can be asserted despite current counterexamples unless specific predictive evidence is supplied."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 78,
+        strengths: [
+          "Jones gave a clear, positive account of Christian social goods: rights, abolition, science, charity, fertility, community, and meaning.",
+          "He repeatedly distinguished churchgoing Christianity from vague cultural religion and authoritarian political Christianity, which sharpened his sociological case.",
+          "He acknowledged overlap with humanists and defended pluralistic rights rather than arguing for a coercive Christian state."
+        ],
+        blunders: [
+          {
+            text:
+              "He often moved from correlations or historical associations to claims that Christianity is the necessary social foundation without enough causal comparison.",
+            links: [
+              {
+                label: "Base-rate neglect",
+                url: bias("base-rate-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His appeal to fertility, Islam, AI companions, and civilizational collapse sometimes turned a useful caution into an under-supported chain of fears.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "On religious exemptions, he did not clearly explain why some conscience refusals are acceptable while analogous racial refusals are not.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Law clearly separated Christianity's truth from its usefulness, preventing cultural benefits from automatically becoming warrant for belief.",
+          "He gave humanism a positive civic program built around reason, moral responsibility, political secularism, and equal legal treatment.",
+          "He consistently pressed for causal evidence, not only historical credit, when Christianity was said to uniquely sustain social health."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes described the Christian decline argument as moral panic before fully engaging Jones's cited data on fertility, charity, and institutional religion.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His truth critique bundled many deep objections together, which left several Christian responses underexamined.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His healthier-secular-democracy argument risked treating current correlation as sufficient against long-term sustainability worries.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
