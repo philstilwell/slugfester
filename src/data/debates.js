@@ -14996,5 +14996,698 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "oconnor-biddle-free-will-2025",
+    number: "44",
+    title: "Alex O'Connor vs Craig Biddle: Free Will - Do You Have It?",
+    label: "Free will and agent causation",
+    date: "2026-06-01",
+    duration: "1 hr 39 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=G17N2CgrXXU",
+    motion:
+      "Do human beings have free will, either as ultimate control over action or as a volitional capacity to focus and use reason?",
+    summary:
+      "Biddle defends free will as the choice to focus and use reason; O'Connor argues that choices are governed by causes, desires, or randomness outside ultimate control.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the Craig Biddle upload, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "the choice is caused, but it's caused by you",
+        context:
+          "Biddle's central defense is that free will is not choosing every thought or desire, but activating reason and focusing awareness."
+      },
+      con: {
+        text: "you're not in control of your desires",
+        context:
+          "O'Connor's skeptical case asks what governs the desires, thoughts, and attention-states that precede conscious action."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Free-will defender",
+        speaker: "Craig Biddle",
+        color: "teal"
+      },
+      con: {
+        name: "Free-will skeptic",
+        speaker: "Alex O'Connor",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 79,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Opening dilemma and focus",
+        timebox: "00:30-16:14",
+        score: {
+          pro: 81,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:20",
+              role: "Focus account",
+              words:
+                "Biddle says free will is the capacity to activate one's rational faculty, focus awareness, and choose method rather than every mental content.",
+              score: 81,
+              critique:
+                "Biddle's definition is one of the better free-will defenses because it narrows the claim before defending it. He is not saying we choose every mental item, appetite, or background fact; he identifies freedom with the capacity to focus, activate reason, and govern method. That protects him from several easy counterexamples. The weakness is that the definition needs more than introspective confidence: Alex's question is whether the focusing act itself has causes outside the agent's ultimate control. Biddle gives a clear target and avoids cartoon libertarianism, so the score is strong. It is not higher because the key explanatory bridge from 'I can focus' to 'I am the unnecessitated source' remains underargued.",
+              tags: []
+            },
+            con: {
+              time: "00:30",
+              role: "Control dilemma",
+              words:
+                "O'Connor argues that mental events are either determined or undetermined; if determined, their source lies upstream, and if undetermined, they are random.",
+              score: 84,
+              critique:
+                "O'Connor's opening dilemma is sharp because it does not depend on a simple deterministic picture. He grants that some events might be undetermined, then argues that randomness would not improve control. That lets him press both horns: if a choice is caused, trace the cause; if uncaused, it is not authored. The weakness is that the dilemma can sound like it has already excluded Biddle's intended third option, agent causation, before examining it. Still, as an opening challenge, it sets a demanding burden for libertarian freedom and keeps the issue focused on control rather than mere phenomenology. The high score reflects its clarity, economy, and resilience across different theories of mind.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Introspection and method",
+        timebox: "16:16-35:43",
+        score: {
+          pro: 78,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "29:00",
+              role: "Method distinction",
+              words:
+                "Biddle replies that free will is not choosing which city or memory appears, but choosing whether to use reason or default to drift.",
+              score: 78,
+              critique:
+                "Biddle's method distinction is helpful because it answers the Sam Harris style example without denying the example. He concedes that cities, memories, and urges surface without permission, then says freedom concerns what the conscious mind does with that material. That is an important conceptual move and it tracks ordinary cases where attention changes deliberation. The weakness is that the distinction risks relocating the mystery rather than solving it. If unchosen content appears and an unchosen attention-state evaluates it, Alex can still ask what makes the method-choice happen. The score is solid because Biddle identifies a real category error in crude anti-free-will rhetoric, but the causal status of method remains exposed.",
+              tags: []
+            },
+            con: {
+              time: "16:16",
+              role: "Illusion challenge",
+              words:
+                "O'Connor says introspection can be misleading, as with a felt centrifugal force, so the experience of choosing cannot settle the metaphysics.",
+              score: 84,
+              critique:
+                "O'Connor's illusion reply is effective because it respects experience while denying that experience automatically settles metaphysics. The centrifugal-force analogy shows how a vivid felt reality can later receive a different explanation, and the city example makes the point intimate: thoughts arrive before we approve them. The weakness is that the analogy does not by itself show that the feeling of focusing is illusory; it only shows that it could be. Biddle can reply that attention is more directly available than a mistaken physics inference. Even so, Alex uses the examples to shift the burden correctly. The score is high because he does not dismiss introspection; he asks whether it survives philosophical pressure.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Desire and reason",
+        timebox: "20:39-43:42",
+        score: {
+          pro: 82,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "30:14",
+              role: "Desire reframing",
+              words:
+                "Biddle says focusing on a broader context can change which desire is strongest, as when values outweigh a short-term impulse.",
+              score: 82,
+              critique:
+                "Biddle's desire reply has real practical insight. People often change what they want by widening context, thinking about long-term values, or resisting a narrow immediate impulse. His rave-versus-business-plan example shows why 'I acted on my strongest desire' can be less fatalistic than it sounds: rational focus can help determine which desire becomes strongest. The weakness is that this may describe self-regulation without establishing ultimate authorship of the regulating act. Alex can still ask why this broader-context thought occurred, why it mattered, and why the person focused then. The score is strong because Biddle captures a familiar phenomenon of agency, but limited because the phenomenon is compatible with causal shaping.",
+              tags: []
+            },
+            con: {
+              time: "22:21",
+              role: "Desire objection",
+              words:
+                "O'Connor says conscious action is governed by desire, but we cannot simply choose which desires will move us most strongly.",
+              score: 83,
+              critique:
+                "O'Connor's desire argument is powerful because it connects abstract free-will talk to actual choice mechanics. If conscious action requires wanting something, and if wants are not themselves chosen at will, then the agent seems moved by a motivational structure received rather than authored. His gym example is especially useful because people cannot simply choose to desire exercise more strongly. The weakness is that desire-language can flatten differences among appetite, conviction, values, higher-order endorsement, and attention. Biddle's reply exploits exactly that compression. The score is high because Alex identifies a deep dependency in action explanation, but not decisive because the account needs finer distinctions among types of motivation.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The desire argument can blur appetite, conviction, value endorsement, and attention into one control-defeating category."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Agent causation",
+        timebox: "35:43-58:02",
+        score: {
+          pro: 77,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "35:46",
+              role: "Entity causation",
+              words:
+                "Biddle rejects event-only causation, arguing that actions are actions of entities and that a rational faculty can act by choosing.",
+              score: 77,
+              critique:
+                "Biddle's agent-causation move is philosophically serious because it challenges event-only assumptions rather than merely repeating folk freedom. By saying actions are actions of entities, he tries to place causation at the level of a conscious organism exercising a rational faculty. That gives him a route between mechanistic determinism and randomness. The weakness is that the account remains thin where Alex needs precision. Saying the choice is caused by the agent can restate the disputed power unless Biddle explains what makes the agent's causing different from either prior-event causation or arbitrary origination. The score is respectable because the alternative is relevant, but capped because its explanatory content is still underdeveloped.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The answer risks assuming the very agent-level causal power that the skeptical challenge asks Biddle to explain."
+                }
+              ]
+            },
+            con: {
+              time: "43:42",
+              role: "Causal regress",
+              words:
+                "O'Connor asks what causes the agent to act; if nothing causes it, the act looks random, and if something causes it, control moves upstream.",
+              score: 85,
+              critique:
+                "O'Connor's causal-regress pressure is the strongest skeptical engine in the debate. He does not merely ask whether choices have causes; he asks what sort of answer could preserve responsibility. If the glass-lifting decision is caused by brain states, desires, or prior considerations, control appears upstream. If nothing causes it, the result looks random. The weakness is that this framing can make agent causation pay rent in the skeptic's preferred currency: prior determining events. Biddle is explicitly denying that only event-causation counts. Still, Alex's question exposes the defender's unfinished account. The score is high because any libertarian view must answer this challenge with more than a label.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Could have done otherwise",
+        timebox: "58:03-01:09:41",
+        score: {
+          pro: 79,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:01:15",
+              role: "Content-method reply",
+              words:
+                "Biddle answers the identical-worlds shoe case by saying free will is not alternate content, but the choice to focus on the full context.",
+              score: 79,
+              critique:
+                "Biddle's consciousness answer supplies a broader metaphysical package. He denies materialism, treats consciousness as an irreducible existent, and argues that evasion, regret, and deliberate focus are directly observable operations of mind. This helps explain why he will not let Alex reduce the debate to physical event chains. The weakness is that the package adds commitments without independently securing them inside the debate. Consciousness being real and nonidentical to matter does not yet show that a focusing choice is unnecessitated. The appeal to evasion is suggestive, but it risks treating moral-psychological description as metaphysical proof. The score is moderate-strong because Biddle deepens the worldview, but the extra metaphysics also increases the burden.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "The argument gives heavy evidential weight to directly noticing evasion, focus, and regret from the inside."
+                }
+              ]
+            },
+            con: {
+              time: "59:56",
+              role: "Identical worlds",
+              words:
+                "O'Connor defines free will as the ability to have acted differently, then asks what differs between identical worlds with different shoe choices.",
+              score: 86,
+              critique:
+                "O'Connor's identical-worlds challenge is clean because it forces the defender to specify what could differ when all prior facts are fixed. Brown shoes versus black shoes is intentionally mundane, which prevents the answer from hiding in moral drama. If Biddle says everything is identical except the choice, Alex can ask what accounts for that difference. The weakness is that the case presumes the relevant sameness includes whatever Biddle means by agent-level activity, so it may not be neutral between theories. Still, it is an excellent test of alternative possibilities and the 'could have done otherwise' claim. The score is very high because it makes the disagreement concrete and hard to evade.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Q&A stress tests",
+        timebox: "01:16:28-01:38:35",
+        score: {
+          pro: 76,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:18:03",
+              role: "Brain and limits",
+              words:
+                "Biddle concedes that brain damage, coercion, and context can limit action, while preserving a narrow choice to activate awareness.",
+              score: 76,
+              critique:
+                "Biddle handles the Q&A with useful clarifications. On brain damage and social pressure, he concedes that context, hardware, fear, and coercion can limit what a person can do, while maintaining that the narrow choice to activate awareness remains central. That concession prevents the free-will account from sounding magically unconstrained. The weakness is that his brain-dependence answer leans on analogy and future knowledge rather than resolving how a nonphysical volitional power is altered by physical damage. His claim that free will is stronger than proof also invites worry. The score is fair because he is careful about limits, but not high because the hardest dependence problem remains open.",
+              tags: []
+            },
+            con: {
+              time: "01:17:12",
+              role: "Dependence objection",
+              words:
+                "O'Connor argues that if focus is immaterially controlled, physical brain interference should not be able to make focusing easier or harder.",
+              score: 83,
+              critique:
+                "O'Connor's late answers are valuable because he avoids depending on neuroscience alone. He says Libet-style experiments are not the core case; the philosophical incoherence of ultimate alternative possibilities is. That keeps the argument from becoming hostage to one experimental literature. He also turns the brain-damage question back on Biddle: if focus is immaterially controlled, why can physical interference alter it? The weakness is that he sometimes lets 'governed by desires' absorb almost every conscious-action case, including coercion, pressure, and higher-order reflection, which may underdescribe agency. The score is strong because his burden discipline stays intact, though the positive psychology of action remains relatively spare here.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The reply can stretch desire-governance across coercion, social pressure, higher-order reflection, and ordinary wanting."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 79,
+        strengths: [
+          "Biddle gave a clear positive account of free will as focused rational method rather than control over every thought, urge, or circumstance.",
+          "His distinction between mental content and cognitive method protected the free-will case from several common counterexamples.",
+          "He integrated free will with a broader Objectivist account of consciousness, values, evasion, and moral responsibility."
+        ],
+        blunders: [
+          {
+            text:
+              "His agent-causation answer sometimes restated the disputed power: the choice is caused by the agent because agents are the kind of entities that choose.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "He placed heavy weight on introspective self-evidence before fully explaining why the experience of focusing could not itself be causally produced.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "O'Connor kept the debate centered on ultimate control, not merely on whether humans experience deliberation or use choice-language.",
+          "His determined-or-random challenge remained effective across determinism, indeterminism, emergent mind theories, and Biddle's agent-causation proposal.",
+          "He repeatedly translated abstract claims into concrete tests, especially desires, city-thoughts, brain interference, and identical-world shoe choices."
+        ],
+        blunders: [
+          {
+            text:
+              "His dilemma sometimes treated agent causation as either hidden event causation or randomness before fully engaging Biddle's entity-causation alternative.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His desire-governance framing occasionally blurred appetites, convictions, values, higher-order desires, and focused attention into one category.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: "singer-frazier-swinburne-oconnor-morality-2025",
+    number: "45",
+    title: "Peter Singer, Jessica Frazier, Richard Swinburne, and Alex O'Connor: The Mystery of Morality",
+    label: "Moral reality and ethical feeling",
+    date: "2026-06-01",
+    duration: "1 hr 41 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=rI1OevN2FDI",
+    motion:
+      "Are moral truths real features of reason, consciousness, religion, or emergent human life, or are moral claims best understood as expressions of feeling?",
+    summary:
+      "Singer, Frazier, and Swinburne offer divergent realist accounts of morality; O'Connor defends ethical emotivism and treats moral language as expressive rather than truth-apt.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the Alex O'Connor upload, downloaded with the yt-dlp Python module. This is a panel-style discussion; speaker roles are inferred from the hosted sequence and chapter titles. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "ethics and goodness as real",
+        context:
+          "Frazier's phrase captures the panel's shared resistance to reducing morality to mere taste, even though Singer, Frazier, and Swinburne ground reality differently."
+      },
+      con: {
+        text: "I am an ethical emotivist",
+        context:
+          "O'Connor's central metaethical claim is that moral utterances express a distinctive kind of feeling rather than state true or false propositions."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Moral-realist accounts",
+        speaker: "Peter Singer, Jessica Frazier, Richard Swinburne",
+        color: "teal"
+      },
+      con: {
+        name: "Emotivist critique",
+        speaker: "Alex O'Connor",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 82,
+      con: 80
+    },
+    sections: [
+      {
+        title: "Opening moral ground",
+        timebox: "04:12-21:47",
+        score: {
+          pro: 82,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:12",
+              role: "Plural realism",
+              words:
+                "Singer grounds morality in reason and equal interests; Frazier treats goodness as emergent and real; Swinburne adds duties, promises, and God.",
+              score: 82,
+              critique:
+                "The plural-realist opening is strong because it gives morality several serious routes into objectivity. Singer starts with reason and equal consideration of interests, Frazier describes goodness as an emergent ethical realm generated by conscious beings, and Swinburne broadens obligation beyond welfare to promises, parents, state, and God. The breadth makes the realist side hard to dismiss as one doctrine. The weakness is that these accounts are not obviously compatible. Equal-interest utilitarianism, emergent contextual ethics, and divine obligation answer different grounding questions. The score is high because each route is substantive, but not higher because the panel's realism begins as a family resemblance rather than a single integrated argument.",
+              tags: []
+            },
+            con: {
+              time: "16:41",
+              role: "Emotivist opening",
+              words:
+                "O'Connor says moral claims differ from descriptive facts because statements like 'murder is wrong' express emotion rather than report a proposition.",
+              score: 81,
+              critique:
+                "O'Connor's emotivist opening is crisp and useful. He distinguishes descriptive propositions, such as someone kicking a homeless person, from moral utterances that express a distinctive attitude toward the act. He also avoids the simple subjectivist mistake: 'murder is wrong' is not merely a report that he dislikes murder. That gives the position real semantic bite. The weakness is that he mostly explains emotivism rather than proving that moral language must be read this way. Realists can grant that moral speech is emotionally charged while denying that it lacks truth value. The score is strong because the distinction clarifies the whole debate, but it remains a defended framework more than a demonstrated conclusion.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral facts and disagreement",
+        timebox: "21:47-35:48",
+        score: {
+          pro: 83,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "22:32",
+              role: "Reason plus emotion",
+              words:
+                "Frazier says moral judgment involves feeling, circumstance, motivation, and reason together; Swinburne says seeming moral truths should be believed absent defeaters.",
+              score: 83,
+              critique:
+                "The realist response is strong because it does not deny emotion. Frazier argues that moral judgment arises from the whole situation: feeling, circumstance, motive, reason, and relational context. Swinburne then adds an epistemic principle: if something morally seems true, it is rational to accept it unless counterevidence appears. That combination answers a crude emotivism by showing why feeling may be part of moral knowledge rather than a rival to it. The weakness is that Swinburne's seeming-based realism needs safeguards, since history is full of confident moral seemings that later look cruel or parochial. The score is high because the reply is layered, but the defeater test needs sharper discipline.",
+              tags: []
+            },
+            con: {
+              time: "19:33",
+              role: "Fact/value split",
+              words:
+                "O'Connor argues that much alleged moral disagreement is really factual disagreement, with descriptive beliefs informing emotional ethical responses.",
+              score: 79,
+              critique:
+                "O'Connor's fact/value split is a helpful diagnostic tool. He notes that disputes over immigration, gun policy, or social harm often turn on empirical claims, not bare moral disagreement. That explains why people can appear to reason morally while actually changing factual beliefs that then trigger different ethical reactions. The weakness is that this may undercount genuinely normative disagreement after the facts are fixed. Singer's abortion example and many rights disputes remain live even among people who know the same empirical background. The score is solid because the point removes noise from many debates, but lower than the realist reply because it does not yet explain why the residual normative disagreement is only expressive.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Intuition and evolution",
+        timebox: "28:11-42:33",
+        score: {
+          pro: 85,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "28:11",
+              role: "Anti-intuition realism",
+              words:
+                "Singer says evolved intuitions can mislead, so ethics should criticize parochial reactions about distance, race, sexuality, and animals.",
+              score: 85,
+              critique:
+                "Singer's anti-intuition realism is one of the panel's strongest moves. He accepts that intuitions evolved in small face-to-face communities, then argues that this origin makes them suspect when applied to global poverty, race, sexuality, and nonhuman animals. That lets him be a realist without treating inherited feelings as final evidence. His Bentham example also shows moral progress working against dominant emotions, not merely expressing them. The weakness is that Singer still needs a positive account of why reason selects equal consideration rather than another revisionary principle. But the objection to intuition worship is precise and historically grounded. The score is high because it pressures both Swinburne's seeming principle and O'Connor's emotion-centered explanation.",
+              tags: []
+            },
+            con: {
+              time: "37:21",
+              role: "Emotion evidence",
+              words:
+                "O'Connor uses trolley-case reactions, MRI evidence, and aesthetics to argue that moral judgment often behaves like feeling rather than perception of fact.",
+              score: 82,
+              critique:
+                "O'Connor's emotion evidence is persuasive as moral psychology. The trolley contrast, especially the difference between pulling a switch and pushing a person, shows how emotional salience can shift judgment even when the arithmetic looks similar. The analogy with aesthetics also helps explain why some disputes feel urgent while others feel trivial without requiring objective properties. The weakness is that psychological explanation does not settle semantics or ontology. A realist can say emotions distort or reveal moral facts, just as perception can distort or reveal physical facts. The score is strong because the examples fit emotivism well, but not higher because fit with human psychology is not yet proof that moral claims lack truth value.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Homosexuality and scripture",
+        timebox: "41:58-56:27",
+        score: {
+          pro: 58,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "42:34",
+              role: "Social-harm claim",
+              words:
+                "Swinburne argues that encouraging homosexuality may denigrate marriage, weaken stable families, and conflict with church teaching about God's commands.",
+              score: 58,
+              critique:
+                "Swinburne's social-harm argument is the weakest realist application in the discussion. Its strongest feature is that he does not frame the issue as mere disgust; he says his view would change if the relevant social facts were different. That makes the claim at least partly testable. The weakness is that he gives little evidence for the alleged harm, leans on church teaching, and moves quickly from procreative family ideals to discouraging same-sex relationships. Singer, Frazier, and Alex all expose the empirical and historical pressure. The score is low because the argument rests on speculative social consequences and authority claims while facing clear counterexamples from adoption, stable same-sex couples, and slavery-related scripture.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Church teaching and claims about God's command carry weight in the argument before the relevant social or interpretive evidence is established."
+                },
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The claimed societal damage is treated as a live moral reason despite limited supporting evidence in the exchange."
+                }
+              ]
+            },
+            con: {
+              time: "44:21",
+              role: "Evidence and slavery reply",
+              words:
+                "Singer asks for firmer evidence of harm, Frazier cites culturally stable same-sex acceptance, and O'Connor compares church teaching on homosexuality with slavery.",
+              score: 86,
+              critique:
+                "The combined reply is forceful because it attacks Swinburne's claim on evidence, comparison, and scriptural consistency. Singer asks why private consensual conduct should be restricted without firm proof of social damage. Frazier adds cross-cultural counterpressure by describing societies where same-sex relationships were not treated as socially corrosive. O'Connor then presses the internal religious problem: scripture and church history have also accommodated slavery, so appeal to traditional teaching cannot be a simple moral trump. The weakness is that the slavery comparison opens a large hermeneutic debate that the format cannot finish. Still, the response is highly effective because it demands evidence where Swinburne offered speculation and authority. The score is very strong.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Animal ethics and sentience",
+        timebox: "56:33-01:08:21",
+        score: {
+          pro: 87,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "57:34",
+              role: "Sentience standard",
+              words:
+                "Frazier and Singer argue that animals matter because suffering and conscious experience call for consideration, not because of species membership.",
+              score: 87,
+              critique:
+                "The sentience standard is the cleanest shared moral insight of the panel. Frazier's South Asian framing and Singer's equal-consideration argument converge on a simple point: if a being can suffer or flourish, that experience counts morally regardless of species. Frazier's discussion of ahimsa and world-maintaining responsibility adds context without collapsing into crude calculation, while Singer strips away reincarnation as unnecessary to compassion. The weakness is that hard cases remain: predation, survival, conflicting duties, and degrees of cognitive agency require more than the basic sentience criterion. Even so, the score is very high because the argument directly addresses who counts morally and avoids both anthropocentrism and sentimental selectivity.",
+              tags: []
+            },
+            con: {
+              time: "01:05:16",
+              role: "Inconsistency challenge",
+              words:
+                "O'Connor argues that materialists and atheists cannot value humans coherently without extending concern to other animals, especially given inconsistent cat and piglet reactions.",
+              score: 85,
+              critique:
+                "O'Connor's animal-ethics argument is vivid and practically damaging. The Curt Zouma cat case and piglet-thumping comparison expose a real inconsistency in popular moral emotion: many people condemn cruelty to companion animals while tolerating worse treatment of farmed animals. This fits his emotivist psychology while also supporting Singer's anti-speciesism. The weakness is that the claim about any materialist or atheist needing to include animals is broad. A nonreligious view might value rational agency, reciprocity, or personhood in ways that still assign different moral weights. The score is high because the hypocrisy example lands powerfully, but it is not decisive as a universal argument from materialism to animal equality.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Utilitarianism and higher goods",
+        timebox: "01:08:21-01:17:09",
+        score: {
+          pro: 80,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:08:21",
+              role: "Higher-goods critique",
+              words:
+                "Swinburne and Frazier argue that honesty, character, nobility, beauty, kindness, and meaningful suffering are not reducible to pleasure and pain.",
+              score: 80,
+              critique:
+                "The higher-goods critique is fair and important. Swinburne presses that honesty, character, freedom, courage, and moral formation can matter even when they are not pleasure-maximizing. Frazier strengthens the point by describing noble, beautiful, and kind goods that feel richer than a biological pleasure-pain scale. That is a real challenge to crude utilitarianism. The weakness is that Singer and Alex are not defending the crudest hedonism. Singer can treat valuable conscious states broadly, and Alex can say emotivism expresses approval of nobility as well as pleasure. The score is strong because the objection identifies a live reductionism worry, but not higher because the target partly shifts under the reply.",
+              tags: []
+            },
+            con: {
+              time: "01:13:24",
+              role: "Broadened value reply",
+              words:
+                "O'Connor says emotivism is not hedonism, and many higher goods may still harmonize with experiences wanted when experienced.",
+              score: 82,
+              critique:
+                "O'Connor's broadened value reply is nimble. He correctly separates emotivism from utilitarian hedonism: an emotivist can say 'yay nobility' as well as 'yay pleasure.' He also gives Singer a defense by expanding pleasure into any experience wanted when experienced, which makes room for dignity, sacrifice, beauty, and love. The weakness is that broadening pleasure this far risks making the category too elastic. If every endorsed higher good becomes a wanted experience, critics may suspect that the view preserves utilitarian language by redescribing whatever value appears. The score is strong because the reply blocks an easy caricature, but the expanded definition needs more precision to avoid swallowing its rivals.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Q&A and foundations",
+        timebox: "01:18:12-01:40:47",
+        score: {
+          pro: 83,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:18:29",
+              role: "Objective reasons",
+              words:
+                "Singer cites Parfit's future-Tuesday case to argue that we can have objective reasons even against present desires.",
+              score: 83,
+              critique:
+                "Singer's Parfit answer is a strong late-stage realist clarification. The future-Tuesday case makes Humean desire-dependence look irrational: if a person ignores Tuesday agony only because it is future-Tuesday agony, something has gone wrong in reasoning even if his current desires are internally consistent. That supports the idea that reasons can criticize desires rather than merely serve them. The weakness is that the example establishes objective prudential irrationality more clearly than full moral realism about others. Singer still needs the step from reasons concerning one's own future suffering to impartial reasons concerning everyone. The score is high because the case directly answers why he left anti-realism, but the moral extension remains a bridge.",
+              tags: []
+            },
+            con: {
+              time: "01:36:48",
+              role: "Global emotivism",
+              words:
+                "O'Connor says Blackburn-style expressivism may pull even factual and logical assertion down into emotional assent or discontent.",
+              score: 78,
+              critique:
+                "O'Connor's global-emotivist answer is imaginative and philosophically ambitious. By extending Blackburn's expressivist treatment of embedded moral language to conditionals, perception, and even logical axioms, he tries to dissolve the sharp line between factual assertion and moral expression. That could make emotivism less isolated. The weakness is that the move threatens the very distinction his earlier case relied on between factual disagreements and moral disagreements. If ordinary truth claims also bottom out in emotional assent, the account risks becoming so broad that it loses explanatory contrast. The score is solid because the idea is serious and self-aware, but lower because it introduces a large new burden at the end.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The answer shifts from ethical feeling to a much broader sense in which all assertion may bottom out in affective assent."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 82,
+        strengths: [
+          "Singer gave the clearest secular realist pressure by combining equal consideration, anti-intuition critique, animal ethics, and Parfit-style objective reasons.",
+          "Frazier added a rich emergent and cross-cultural account of moral reality that resisted both divine-command simplicity and crude reduction to pleasure.",
+          "The realist side repeatedly showed that emotion can be part of moral cognition without exhausting moral truth."
+        ],
+        blunders: [
+          {
+            text:
+              "The realist side was internally unstable: Singer's impartial utilitarian realism, Frazier's emergent contextual realism, and Swinburne's theistic duty account did not form one grounding theory.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "Swinburne's same-sex-relationship argument relied on church authority and speculative social harm without enough evidence for the burden it carried.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              },
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 80,
+        strengths: [
+          "O'Connor explained ethical emotivism with unusual clarity, especially the distinction between expressing disapproval and reporting a psychological fact.",
+          "He consistently separated descriptive disagreement from moral disagreement, which sharpened several exchanges about policy, sexuality, scripture, and animal welfare.",
+          "His examples from trolley cases, aesthetics, disgust, and animal inconsistency made the emotional texture of moral life vivid."
+        ],
+        blunders: [
+          {
+            text:
+              "He often moved from showing that moral judgments involve emotion to treating that as evidence that moral claims lack truth value.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His late global emotivism blurred the earlier distinction between factual claims and moral claims, making the theory more expansive but less discriminating.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
