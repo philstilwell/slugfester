@@ -7,6 +7,7 @@ import {
   DEFAULT_DESCRIPTION,
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
+  DEFAULT_IMAGE_TYPE,
   DEFAULT_IMAGE_WIDTH,
   DEFAULT_TITLE,
   SITE_LOCALE,
@@ -54,8 +55,20 @@ function renderHtml(seo, noscriptText) {
   const imageAlt = seo.imageAlt || DEFAULT_IMAGE_ALT;
   const imageWidth = seo.imageWidth || DEFAULT_IMAGE_WIDTH;
   const imageHeight = seo.imageHeight || DEFAULT_IMAGE_HEIGHT;
+  const imageType = seo.imageType || DEFAULT_IMAGE_TYPE;
   const robots = seo.robots || "index,follow,max-image-preview:large";
   const structuredData = jsonScript(seo.jsonLd);
+  const articleMeta = [
+    seo.articleSection
+      ? `<meta property="article:section" content="${escapeHtml(seo.articleSection)}">`
+      : "",
+    seo.modifiedTime
+      ? `<meta property="article:modified_time" content="${escapeHtml(seo.modifiedTime)}">`
+      : ""
+  ]
+    .filter(Boolean)
+    .join("\n    ");
+  const articleMetaBlock = articleMeta ? `${articleMeta}\n    ` : "";
 
   return `<!doctype html>
 <html lang="en">
@@ -80,10 +93,11 @@ function renderHtml(seo, noscriptText) {
     <meta property="og:url" content="${escapeHtml(canonicalUrl)}">
     <meta property="og:image" content="${escapeHtml(imageUrl)}">
     <meta property="og:image:secure_url" content="${escapeHtml(imageUrl)}">
+    <meta property="og:image:type" content="${escapeHtml(imageType)}">
     <meta property="og:image:width" content="${escapeHtml(imageWidth)}">
     <meta property="og:image:height" content="${escapeHtml(imageHeight)}">
     <meta property="og:image:alt" content="${escapeHtml(imageAlt)}">
-    <meta name="twitter:card" content="summary_large_image">
+    ${articleMetaBlock}<meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${escapeHtml(seo.title || DEFAULT_TITLE)}">
     <meta name="twitter:description" content="${escapeHtml(seo.description || DEFAULT_DESCRIPTION)}">
     <meta name="twitter:image" content="${escapeHtml(imageUrl)}">
@@ -93,6 +107,7 @@ function renderHtml(seo, noscriptText) {
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <link rel="mask-icon" href="/assets/favicon.svg" color="#d35d47">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
     <link rel="stylesheet" href="/src/styles.css">
     ${structuredData ? `<script type="application/ld+json" id="seo-structured-data">${structuredData}</script>` : ""}
   </head>

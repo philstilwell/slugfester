@@ -11,6 +11,7 @@ export const DEFAULT_IMAGE_ALT =
   "Slugfester debate scorecards with boxing gloves and argument analysis.";
 export const DEFAULT_IMAGE_WIDTH = 1200;
 export const DEFAULT_IMAGE_HEIGHT = 630;
+export const DEFAULT_IMAGE_TYPE = "image/png";
 
 const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
@@ -84,6 +85,39 @@ export function organizationJsonLd() {
   };
 }
 
+export function websiteJsonLd(topics = []) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": WEBSITE_ID,
+    name: SITE_NAME,
+    alternateName: "Slugfester debate scorecards",
+    url: SITE_URL,
+    description: DEFAULT_DESCRIPTION,
+    inLanguage: SITE_LANGUAGE,
+    publisher: {
+      "@id": ORGANIZATION_ID
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${absoluteUrl(searchPath())}?q={search_term_string}`
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+  if (topics.length) {
+    jsonLd.about = topics.map((topic) => ({
+      "@type": "Thing",
+      name: topic
+    }));
+  }
+
+  return jsonLd;
+}
+
 export function breadcrumbJsonLd(items) {
   return {
     "@context": "https://schema.org",
@@ -109,23 +143,7 @@ export function landingSeo(debates = []) {
     type: "website",
     jsonLd: [
       organizationJsonLd(),
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": WEBSITE_ID,
-        name: SITE_NAME,
-        alternateName: "Slugfester debate scorecards",
-        url: SITE_URL,
-        description: DEFAULT_DESCRIPTION,
-        inLanguage: SITE_LANGUAGE,
-        publisher: {
-          "@id": ORGANIZATION_ID
-        },
-        about: topics.map((topic) => ({
-          "@type": "Thing",
-          name: topic
-        }))
-      },
+      websiteJsonLd(topics),
       {
         "@context": "https://schema.org",
         "@type": "ItemList",
@@ -153,8 +171,11 @@ export function debateSeo(debate) {
     imagePath: DEFAULT_IMAGE,
     imageAlt: `${debateNumberLabel(debate)} scorecard: ${debate.title}`,
     type: "article",
+    articleSection: "Debate scorecards",
+    modifiedTime: debate.date,
     jsonLd: [
       organizationJsonLd(),
+      websiteJsonLd(),
       {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -219,6 +240,7 @@ export function searchSeo(debates = []) {
     type: "website",
     jsonLd: [
       organizationJsonLd(),
+      websiteJsonLd(),
       {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
@@ -259,8 +281,10 @@ export function assessmentSeo() {
     imagePath: DEFAULT_IMAGE,
     imageAlt: "Slugfester assessment process for debate argument scorecards.",
     type: "article",
+    articleSection: "Methodology",
     jsonLd: [
       organizationJsonLd(),
+      websiteJsonLd(),
       {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -318,8 +342,10 @@ export function referenceSeo(type, slug, reference) {
     imagePath: DEFAULT_IMAGE,
     imageAlt: `${reference.label} ${category.toLowerCase()} reference on Slugfester.`,
     type: "article",
+    articleSection: category,
     jsonLd: [
       organizationJsonLd(),
+      websiteJsonLd(),
       {
         "@context": "https://schema.org",
         "@type": "DefinedTerm",

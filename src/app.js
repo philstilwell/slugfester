@@ -4,6 +4,7 @@ import { getReferenceDefinition, referenceFromUrl } from "./data/references.js";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
+  DEFAULT_IMAGE_TYPE,
   DEFAULT_IMAGE_WIDTH,
   SITE_LOCALE,
   SITE_NAME,
@@ -74,6 +75,10 @@ function setCanonical(href) {
   element.setAttribute("href", href);
 }
 
+function removeHeadElement(selector) {
+  document.head.querySelector(selector)?.remove();
+}
+
 function setStructuredData(jsonLd) {
   const id = "seo-structured-data";
   let element = document.getElementById(id);
@@ -99,6 +104,7 @@ function setSeo(seo) {
   const imageAlt = seo.imageAlt || DEFAULT_IMAGE_ALT;
   const imageWidth = seo.imageWidth || DEFAULT_IMAGE_WIDTH;
   const imageHeight = seo.imageHeight || DEFAULT_IMAGE_HEIGHT;
+  const imageType = seo.imageType || DEFAULT_IMAGE_TYPE;
   const robots = seo.robots || "index,follow,max-image-preview:large";
 
   document.title = seo.title;
@@ -123,6 +129,7 @@ function setSeo(seo) {
     property: "og:image:secure_url",
     content: imageUrl
   });
+  setMeta('meta[property="og:image:type"]', { property: "og:image:type", content: imageType });
   setMeta('meta[property="og:image:width"]', {
     property: "og:image:width",
     content: imageWidth
@@ -132,6 +139,22 @@ function setSeo(seo) {
     content: imageHeight
   });
   setMeta('meta[property="og:image:alt"]', { property: "og:image:alt", content: imageAlt });
+  if (seo.articleSection) {
+    setMeta('meta[property="article:section"]', {
+      property: "article:section",
+      content: seo.articleSection
+    });
+  } else {
+    removeHeadElement('meta[property="article:section"]');
+  }
+  if (seo.modifiedTime) {
+    setMeta('meta[property="article:modified_time"]', {
+      property: "article:modified_time",
+      content: seo.modifiedTime
+    });
+  } else {
+    removeHeadElement('meta[property="article:modified_time"]');
+  }
   setMeta('meta[name="twitter:card"]', { name: "twitter:card", content: "summary_large_image" });
   setMeta('meta[name="twitter:title"]', { name: "twitter:title", content: seo.title });
   setMeta('meta[name="twitter:description"]', { name: "twitter:description", content: seo.description });
