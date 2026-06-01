@@ -17941,5 +17941,374 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "horn-dillahunty-resurrection-reasonable-2021",
+    number: "52",
+    title: "Trent Horn vs Matt Dillahunty: Is Belief in the Resurrection Reasonable?",
+    label: "Resurrection reasonability and testimony",
+    date: "2026-06-01",
+    duration: "2 hr 11 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=7V6UNSvHVDM",
+    motion:
+      "Is it reasonable to believe Jesus of Nazareth rose from the dead, given historical testimony, expected evidence, background knowledge, and standards for unusual claims?",
+    summary:
+      "Horn argues the resurrection passes a reasonability test for unusual history; Dillahunty argues testimony alone cannot justify a supernatural miracle claim.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the Matt Fradd upload, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Being reasonable is not the same as being convincing.",
+        context:
+          "Horn's representative line captures his central move: defend resurrection belief as rationally permissible even if it does not convince every listener."
+      },
+      con: {
+        text: "We have no way currently to investigate or confirm the supernatural at all.",
+        context:
+          "Dillahunty's representative line captures his demand for a public method before accepting a miracle claim as reasonable."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Resurrection belief is reasonable",
+        speaker: "Trent Horn",
+        color: "teal"
+      },
+      con: {
+        name: "Resurrection belief is unreasonable",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 80,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Reasonable belief threshold",
+        timebox: "01:28-31:28",
+        score: {
+          pro: 84,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:28",
+              role: "Three-test frame",
+              words:
+                "Horn says being reasonable is not the same as being convincing, then tests unusual claims by facts, expected evidence, and rival explanations.",
+              score: 84,
+              critique:
+                "Horn's opening frame is strong because it defines the motion before defending the event. The distinction between 'reasonable' and 'convincing' prevents the debate from collapsing into one listener's psychological threshold, and the three tests give the resurrection claim a comparable structure: contradiction with facts, absence of expected evidence, and rival ordinary explanations. That is a fair way to avoid both credulity and automatic dismissal. The weakness is that Horn also shifts some burden onto Dillahunty even though Horn affirms a positive historical miracle claim. A reasonability test still needs enough source-level support to carry that affirmative load. The score is high because the frame is clear and relevant, but it cannot by itself establish the resurrection evidence.",
+              tags: []
+            },
+            con: {
+              time: "16:18",
+              role: "Evidential burden",
+              words:
+                "Dillahunty says he need not show the resurrection false; he is unconvinced it is reasonable on testimony without physical evidence.",
+              score: 83,
+              critique:
+                "Dillahunty's opening burden move is disciplined. He distinguishes saying 'this did not happen' from saying 'I am not convinced that it is reasonable to believe it happened,' which keeps the negative side from inheriting an impossible proof of nonresurrection. His appeal to proportioning belief to evidence also directly addresses the motion. The weakness is that the framing can become too internal: if reasonability tracks only what would convince him, Horn can accuse him of making his own threshold the standard. Dillahunty later tries to anchor that threshold in public evidence, but the opening could have stated that more explicitly. The score is strong because the burden distinction lands, though its public criteria need sharpening.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Testimony and expected evidence",
+        timebox: "04:13-31:28",
+        score: {
+          pro: 82,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "08:44",
+              role: "Expected-evidence case",
+              words:
+                "Horn argues Jesus' reported appearances to Peter, the Twelve, James, Paul, and others explain early preaching, churches, writings, and hostile references.",
+              score: 82,
+              critique:
+                "Horn's evidential case is at its best when he asks what we would expect if the resurrection appearances occurred. Early proclamation, communities forming around the claim, Pauline contact with earlier disciples, and skeptical converts such as Paul and James are all relevant data points. That gives the argument more texture than a bare appeal to the Gospels. The weakness is that the expected-evidence test can be satisfied by evidence for sincere resurrection belief rather than by evidence that the resurrection actually occurred. Horn needs stronger discrimination among legend, visionary experience, social contagion, and bodily event than the short opening allows. The score is strong because the evidence is relevant, but it still underdetermines the central miracle.",
+              tags: []
+            },
+            con: {
+              time: "18:49",
+              role: "Hearsay challenge",
+              words:
+                "Dillahunty says the resurrection has no body, tomb, blood, DNA, or witnesses to question; only stories and testimonials from unknown sources.",
+              score: 85,
+              critique:
+                "Dillahunty's hearsay challenge strikes the core evidential problem. For an event he regards as the most important miracle claim in Christianity, he asks why the available support is late, mediated, untestable, and unavailable for cross-examination. His distinction between mundane historical claims and a resurrection with sweeping theological implications is also fair; the evidential bar should rise with the claim's prior improbability and consequences. The weakness is that the courtroom language can overstate what ancient history normally provides, and demanding modern physical traces risks making most ancient extraordinary claims impossible by definition. Still, the objection is central and well aimed. The score is high because it identifies the main warrant gap without needing to prove the event false.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Cross-exam standards",
+        timebox: "35:16-50:16",
+        score: {
+          pro: 77,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "35:16",
+              role: "Historical standard pressure",
+              words:
+                "Horn presses whether crucifixion under Pilate and resurrection claims outside the Bible can be reasonable without modern physical evidence.",
+              score: 77,
+              critique:
+                "Horn's cross-examination usefully tests whether Dillahunty's standard would erase too much ordinary history. Asking about geocentrism, crucifixion under Pilate, Keener's resurrection reports, and what sufficient evidence would look like forces the skeptic to say whether his rule is general or miracle-specific. The best moment is exposing the odd result that even Jesus' crucifixion may become unreasonable under Dillahunty's formulation. The weakness is that Horn sometimes relies on expert consensus or large catalogs of claims before showing why those sources survive the very reliability test at issue. He also presses for a standard without always supplying his own source filter. The score is solid because the pressure reveals real costs, but the positive case remains incomplete.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Historian consensus and large catalogs of resurrection reports are used as pressure before their reliability is fully established."
+                }
+              ]
+            },
+            con: {
+              time: "43:47",
+              role: "Testimony cutoff",
+              words:
+                "Dillahunty asks whether Horn would accept an extraordinary miracle based only on testimonial accounts and says that is how people get conned.",
+              score: 86,
+              critique:
+                "Dillahunty's cross-examination is sharp because it isolates the live disagreement: can testimony alone make a resurrection reasonable? By forcing a yes-or-no answer, he prevents the discussion from hiding behind generic respect for history. His fraud and con examples are relevant because human testimony is often sincere, socially reinforced, and still wrong. The weakness is that 'testimony alone' can flatten important differences among independent attestation, hostile witnesses, early creed traditions, and later rumor. A careful historical method grades testimony rather than simply excluding it. Even so, Dillahunty's point is powerful against a miracle inference that lacks physical controls. The score is high because he identifies the precise evidential vulnerability and makes Horn own it.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Background knowledge",
+        timebox: "50:26-01:10:44",
+        score: {
+          pro: 78,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "50:26",
+              role: "Miracle and uniformity",
+              words:
+                "Horn says uniform natural order is what makes a miracle recognizable, and enough testimony can revise expectations like a black swan.",
+              score: 78,
+              critique:
+                "Horn's reply to natural uniformity is philosophically relevant. A miracle claim does not deny that dead people normally stay dead; that background is what would make the event a sign if it occurred. The black-swan analogy also usefully reminds listeners that repeated experience can be overturned by credible counterevidence. The weakness is that the analogy is only partial. Black swans remain ordinary biological objects once observed, while resurrection involves both an event and a proposed divine cause. Horn therefore needs more than a general openness to exceptions; he needs a reliable bridge from testimony to bodily event and from bodily event to God. The score is solid because the objection to crude uniformity works, but the analogy does not carry the full miracle burden.",
+              tags: []
+            },
+            con: {
+              time: "53:16",
+              role: "Background-knowledge test",
+              words:
+                "Dillahunty says testimony about puppies works because puppies, pets, and ownership already fit common background knowledge.",
+              score: 86,
+              critique:
+                "Dillahunty's puppy example is simple but effective. It explains why testimony is not evaluated in a vacuum: ordinary claims inherit support from background knowledge, while resurrection claims conflict with very stable experience of death. That helps justify different evidential bars without saying testimony never matters. His alien and demon examples add the same point: sincere reports may establish experience or belief, not the interpretation placed on it. The weakness is that the framework can drift from high prior improbability to near-impossibility if no amount of ancient testimonial convergence can move the needle. Dillahunty needs a clearer account of how much evidence could overcome the prior. The score is high because the epistemic principle is central and lucid.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "History and expert consensus",
+        timebox: "01:00:44-01:18:23",
+        score: {
+          pro: 80,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:05:36",
+              role: "Historical method challenge",
+              words:
+                "Horn compares Masada, Josephus, Pilate, and medical or historical consensus to argue that testimony can warrant ancient claims.",
+              score: 80,
+              critique:
+                "Horn's history challenge is one of his better rebuttals because it asks whether skepticism about resurrection testimony is being applied with a principled distinction or a blanket distrust of ancient sources. The Masada, Pilate, and crucifixion examples show that historians often reason from interested, incomplete, and mediated testimony without requiring modern laboratory evidence. His vaccine-consensus analogy also presses whether expert agreement can be evidence outside one's own specialty. The weakness is that ordinary historical claims and miracle claims do not carry the same background probability, so the comparison cannot simply transfer. Horn needs to explain how much extra testimonial strength offsets that difference. The score is strong because he exposes over-skepticism, but the analogy has limits.",
+              tags: []
+            },
+            con: {
+              time: "01:10:44",
+              role: "Science and source caution",
+              words:
+                "Dillahunty says consensus is not truth, history is not science, and biblical sources come from proponents with something to sell.",
+              score: 79,
+              critique:
+                "Dillahunty's source caution is legitimate. Consensus is evidence, not truth itself, and a text produced inside a religious movement deserves questions about authorship, agenda, dependence, and corroboration. His insistence that science is the most reliable public method also explains why he resists importing miracle claims into factual belief. The weakness is that he draws the science-history contrast too sharply. Geology, forensics, archaeology, and ancient history all infer past events from traces, sources, and explanatory fit, even when repeatable experiments are unavailable. Treating history as almost second-class inquiry makes his crucifixion skepticism look overbroad. The score is still solid because source criticism matters, but the methodological boundary is too rigid.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The reply underweights historical methods that infer past events from traces and sources rather than laboratory repeatability."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Falsification and artifacts",
+        timebox: "01:18:45-01:56:24",
+        score: {
+          pro: 81,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:19:40",
+              role: "Falsification answer",
+              words:
+                "Horn says verified bones alone would not settle the case, but apostolic recantation evidence would severely reduce his confidence.",
+              score: 81,
+              critique:
+                "Horn's falsification answer is better than a closed apologetic posture. He does not say the resurrection is immune to counterevidence; he says an ossuary would need careful identification, while strong evidence that the apostles recanted or fabricated the claim would seriously damage his confidence. That gives the belief at least some historical vulnerability. His Shroud comments are also appropriately cautious, showing he can reject a religious artifact when the evidence is weak. The weakness is that the standard for decisive disconfirmation remains demanding, and some listeners will wonder whether any surviving ancient evidence could satisfy it. The score is strong because Horn gives a concrete defeater and avoids artifact credulity, but his threshold is still high.",
+              tags: []
+            },
+            con: {
+              time: "01:28:04",
+              role: "Alternative explanations",
+              words:
+                "Dillahunty says martyrdom shows conviction, not truth; Shroud skepticism and modern resurrection claims show why testimony needs investigation.",
+              score: 82,
+              critique:
+                "Dillahunty's Q&A answers are strong because he repeatedly separates psychological sincerity from event truth. People can die for beliefs they sincerely hold, misinterpret experiences, or pass on stories without deliberate fraud. That directly weakens a common leap from apostolic suffering to resurrection. His treatment of the Shroud is also methodologically healthy: he points to skeptical investigation rather than treating a revered object as self-authenticating. The weakness is that his modern-counterexample strategy sometimes treats every miracle report as mainly evidence of human fallibility before comparing the particular historical details. That risks prejudging the category. The score is strong because the sincerity-truth distinction is crucial, though the alternative explanations remain more general than case-specific.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Closing burden",
+        timebox: "01:57:31-02:07:40",
+        score: {
+          pro: 79,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:58:43",
+              role: "Tools for knowing",
+              words:
+                "Horn closes that testimony, history, science, philosophy, and his three-prong test are different tools for judging a unique claim.",
+              score: 79,
+              critique:
+                "Horn's closing usefully returns to epistemic pluralism. Science is excellent for regular mechanisms, but history, testimony, philosophy, and abductive comparison also help people judge past events. That is an important corrective to treating laboratory repeatability as the only route to knowledge. He also fairly challenges Dillahunty's lack of a specified sufficient-evidence standard. The weakness is that the metal-detector analogy can make 'different tools' sound easier than it is; a tool must still be reliable for the kind of claim being tested. Horn has argued that historical testimony is relevant, but not fully shown that it is strong enough for resurrection. The score is solid because the framework is sensible, but the central reliability question remains.",
+              tags: []
+            },
+            con: {
+              time: "02:03:38",
+              role: "Scientific reliability close",
+              words:
+                "Dillahunty closes that he rejects extraordinary historical claims that fly in the face of reality and lack physical evidence.",
+              score: 84,
+              critique:
+                "Dillahunty's closing is clear and forceful. He restates that he is not discarding all history, only extraordinary claims that conflict with established reality while offering weaker evidence than modern investigation could provide. His emphasis on science as the most consistently reliable method for correcting error gives his skepticism a public standard rather than mere dislike of religion. The weakness is that 'science' cannot be the whole answer to every ancient event, and saying no supernatural claim has corrected science risks begging some of the very dispute about what would count as a demonstrated supernatural claim. Still, the final burden placement is effective. The score is high because the closing directly addresses reasonability and the comparative weakness of the evidence.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 80,
+        strengths: [
+          "Horn clearly separated reasonable belief from personal conviction and used that distinction to keep the motion from becoming purely psychological.",
+          "He built a structured historical case around expected evidence, early proclamation, hostile converts, and comparisons with ordinary ancient history.",
+          "He exposed real pressure points in Dillahunty's standard, especially its tendency to make even crucifixion and other ancient claims look epistemically fragile."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes treated expert consensus and catalogued resurrection reports as stronger than their source-level analysis had established.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          },
+          {
+            text:
+              "His testimony standard risks accepting resurrection evidence with fewer controls than he would likely require for rival miracle traditions.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "The pure-act argument for God was compressed and only loosely connected to the particular resurrection claim under debate.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Dillahunty kept the burden distinction clear: being unconvinced that a miracle is reasonable is not the same as proving the miracle false.",
+          "He explained why testimony inherits support from background knowledge for ordinary claims but needs much more help for resurrection claims.",
+          "He repeatedly separated sincere belief, religious experience, martyrdom, and artifact tradition from verification that an event actually happened."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes made ancient history look unreasonable whenever modern physical evidence is unavailable, especially in his remarks about crucifixion.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His appeal to God knowing what would convince him can slide from public evidential criteria into a private threshold no historical argument could satisfy.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "He sometimes treated supernatural explanation as methodologically excluded before giving a clear account of what successful detection would look like.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
