@@ -15895,7 +15895,7 @@ export const debates = [
                 "Shapiro says religious communities provide shared orientation, friendship, marriage, family, and support structures that secular society has not replaced.",
               score: 85,
               critique:
-                "Shapiro's institutional-replacement argument is his strongest sociological contribution. He does not merely say religion makes people nicer; he names concrete social functions: shared orientation, friendship networks, marriage norms, family formation, charity, and everyday support. The claim that secular societies have not fully replaced these institutions is plausible and directly relevant to declining cohesion, atomization, and despair. The weakness is that correlation and causation remain partly unresolved, and different religions or secular civic orders perform these functions differently. Still, this is the part of Shapiro's case least dependent on metaphysical proof. The score is high because it identifies a real practical deficit that secular critics must address rather than wave away.",
+                "Shapiro's institutional-replacement argument is his strongest sociological contribution. He does not merely say religion makes people nicer; he names concrete social functions: shared orientation, friendship networks, marriage norms, family formation, charity, and everyday support during ordinary crises and routines. The claim that secular societies have not fully replaced these institutions is plausible and directly relevant to declining cohesion, atomization, and despair. The weakness is that correlation and causation remain partly unresolved, and different religions or secular civic orders perform these functions differently. Still, this is the part of Shapiro's case least dependent on metaphysical proof. The score is high because it identifies a real practical deficit that secular critics must address rather than wave away.",
               tags: []
             },
             con: {
@@ -16451,6 +16451,359 @@ export const debates = [
               {
                 label: "Red herring",
                 url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: "scrivener-folley-hiddenness-evil-moral-narrative-2025",
+    number: "48",
+    title: "Glen Scrivener vs Joe Folley: Morality, Evil, Consciousness, and Christian Narrative",
+    label: "Hiddenness, evil, and moral narrative",
+    date: "2026-06-01",
+    duration: "1 hr 21 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=6BzHMdTeQww",
+    motion:
+      "Does Christian theism better account for hiddenness, evil, consciousness, morality, and moral progress than agnostic or naturalistic alternatives?",
+    summary:
+      "Scrivener grounds moral seriousness and progress in the crucified Christ; Folley grants theism's attractions while pressing hiddenness, evil, and criteria for development.",
+    sourceNote:
+      "Built from YouTube auto-generated captions downloaded with yt-dlp. This was a friendly discussion rather than a formal timed debate; analytical summaries are condensed and lightly cleaned, and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "call it evil with a capital E",
+        context:
+          "Scrivener's central posture is that Christianity gives people warrant to name suffering as genuinely wrong rather than merely unfortunate."
+      },
+      con: {
+        text: "theism is one way to get there",
+        context:
+          "Folley repeatedly concedes that theism has resources, while denying that those resources are the only route to morality or meaning."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian theism",
+        speaker: "Glen Scrivener",
+        color: "teal"
+      },
+      con: {
+        name: "Agnostic philosophy",
+        speaker: "Joe Folley",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 78,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Hiddenness and relationship",
+        timebox: "01:41-11:22",
+        score: {
+          pro: 73,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "06:12",
+              role: "Biblical lament",
+              words:
+                "Scrivener says he does not want to solve hiddenness away; Scripture lets people shake their fist and feel the absence of God.",
+              score: 73,
+              critique:
+                "Scrivener's move is pastorally serious and rhetorically honest. Rather than offering a tidy defeater, he acknowledges that hiddenness hurts and that biblical lament gives people permission to ask where God is. That is a strength because it refuses cheap theodicy and keeps the emotional data in view. The weakness is argumentative: validating the ache of hiddenness is not yet an answer to Schellenberg's claim that a loving God would make relationship available to non-resistant seekers. The move grounds the problem inside Christianity, but it does not explain why the distribution of belief looks as it does. The score is mixed-solid because the response is humane and relevant, yet underdeveloped as a rebuttal.",
+              tags: []
+            },
+            con: {
+              time: "01:54",
+              role: "Hiddenness case",
+              words:
+                "Folley frames Schellenberg: a loving God who wants relationship should make divine existence knowable, especially to non-resistant nonbelievers.",
+              score: 84,
+              critique:
+                "Folley's hiddenness presentation is clear, charitable, and logically focused. He starts from assumptions Christians normally accept: God is loving, relationship is valuable, and relationships usually require knowing that the other person exists. He then narrows the burden to non-resistant nonbelief and strengthens it with geographical distribution, including the intuition that Swedes are not naturally less open to God than others. That makes the objection more than a complaint about personal disappointment. The limitation is that the case assumes the relevant relationship must involve fairly explicit awareness, while later possibilities such as implicit participation in goodness are not yet considered. The score is high because the burden is crisp and directly addressed to Christian theism.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Divine encounter and resistance",
+        timebox: "11:22-28:11",
+        score: {
+          pro: 76,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "11:22",
+              role: "Experience reframing",
+              words:
+                "Scrivener replies that consciousness, reason, emotion, and being itself may already be divine experience, with Christ as the personal incarnation.",
+              score: 76,
+              critique:
+                "Scrivener's reframing has philosophical reach. By asking whether consciousness, reason, emotion, and existence are already encounters with God, he challenges a narrow view of divine disclosure and connects the discussion to classical Christian claims about God as the ground of being. His Shakespeare-Hamlet analogy also makes incarnation do real work: the author can be everywhere in the story and personally present within it. The weakness is a risk of equivocation. The problem began with relational knowledge of a personal God, while the reply partly shifts toward pervasive dependence on being or goodness. That may show contact with the divine, but not the kind of personal availability hiddenness challenges. The score is solid but limited.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The answer can shift between personal relationship with God and broad participation in being, goodness, or consciousness."
+                }
+              ]
+            },
+            con: {
+              time: "11:59",
+              role: "Personal-God objection",
+              words:
+                "Folley says that move risks making God trivial: the radical claim of theism is not nonphysical reality but a personal divine agent.",
+              score: 82,
+              critique:
+                "Folley's reply is strong because it identifies the exact pressure point in Scrivener's broad-disclosure move. He is not hostile to nonphysical realities in principle; he says the radical and difficult part of theism is personal agency, not mere nonmateriality. That distinction prevents the conversation from drifting into an easier claim than Christianity actually makes. He also handles resistance explanations carefully, noting that sin may have epistemic effects while warning that unbelief-as-sin can become circular and geographically implausible. The remaining gap is that he does not fully engage Scrivener's incarnational refinement, where God is both pervasive and personally disclosed in Christ. The score is high because the objection keeps terms stable.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Evil, Job, and the cross",
+        timebox: "28:15-40:37",
+        score: {
+          pro: 79,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "32:11",
+              role: "Cruciform trust",
+              words:
+                "Scrivener reads Job and the cross as God joining forsakenness; Jesus bears the cost of creation and can be trusted with evil.",
+              score: 79,
+              critique:
+                "Scrivener gives the strongest distinctly Christian version of a non-solution. Job blocks glib cost-benefit explanations, and the cross lets him say God does not observe suffering from a distance but enters Godforsakenness. That gives his answer moral seriousness and avoids blaming victims. The argument also wisely stops short of claiming to solve evil. Its weakness is that trust in Jesus carries much of the burden. A listener who is not already persuaded that the crucified Christ reveals God may hear a moving internal theology rather than a public rebuttal. The score is strong because the answer fits Christian resources well, but it remains conditional on accepting that narrative as revelatory.",
+              tags: []
+            },
+            con: {
+              time: "28:36",
+              role: "Horrendous evil pressure",
+              words:
+                "Folley stresses concrete horrors, then says Job or skeptical theism may be the strongest answer but can feel conditional and unfalsifiable.",
+              score: 81,
+              critique:
+                "Folley's treatment of evil is unusually fair. He insists that examples like a child dying of malaria should not be flattened into abstract units, yet he also admits that Job and skeptical theism may be the best available theistic response. His strongest criticism is the undercutting problem: if God's reasons are too unfathomable, theists may also lose confidence in arguments from divine goodness, fine-tuning, or expected divine aims. That is a precise pressure point. The weakness is that his own concession to inscrutability slightly softens the evidential force of evil, since he grants that finite agents might fail to see the whole plan. The score is high because the objection is careful and self-aware.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral grounding and motivation",
+        timebox: "40:37-55:52",
+        score: {
+          pro: 80,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "49:36",
+              role: "Capital-E evil",
+              words:
+                "Scrivener argues naturalism struggles to call evil wrong with a capital W, since Dawkins's indifferent universe lacks a straight standard.",
+              score: 80,
+              critique:
+                "Scrivener's moral-realist challenge is rhetorically effective and tied to the earlier suffering discussion. If the universe is ultimately pitiless indifference, it does seem harder to explain why horror is not merely disliked but wrong. The Lewis straight-line analogy gives the intuition a memorable form, and the argument connects Christian conversion to the ability to condemn evil seriously. The weakness is that it risks moving too quickly from naturalism to moral nihilism. Folley explicitly notes non-theistic moral realism, Korsgaard-style agency arguments, and emotive motivation as live options. Scrivener can say those options are weaker, but he needs to show it rather than imply the naturalist must shrug. The score is strong but not decisive.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The argument can assume that naturalism lacks objective wrongness instead of first defeating non-theistic realist accounts."
+                }
+              ]
+            },
+            con: {
+              time: "51:31",
+              role: "Motivation bridge",
+              words:
+                "Folley replies that moral systems all face a motivation bridge, and non-theistic realism or emotivist machinery can help explain action.",
+              score: 82,
+              critique:
+                "Folley's motivation-bridge analysis is one of the discussion's best philosophical moves. He separates knowing that something is good from being moved to do it, then argues that every moral system, including theistic moral realism, must explain the jump from description to obligation and action. His use of emotivism is nuanced: he does not simply embrace anti-realism, but notes that emotions help explain why moral judgments motivate. He also concedes that theism may combine realism and motivation more easily than some rivals. The weakness is that the positive non-theistic route remains sketched rather than defended in detail. The score is high because he improves the terms of debate and avoids a false binary.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Human rights and sacred narrative",
+        timebox: "55:52-01:05:54",
+        score: {
+          pro: 78,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:01:06",
+              role: "Christian inheritance",
+              words:
+                "Scrivener says human rights language is a secularized Christian discourse, layering imago Dei style worth onto a materialist frame.",
+              score: 78,
+              critique:
+                "Scrivener's inheritance argument has real cultural force. Human rights language often does sound like a secularized version of older claims about the image of God, sacred worth, and membership in one moral family. He also identifies a genuine modern tension: scientific description gives power, but may struggle to restore thick meaning after bracketing teleology and value. The weakness is evidential and comparative. Showing that Western rights language has Christian genealogy does not show that materialists cannot stably affirm rights, nor that every successful moral expansion requires specifically Christian belief. The argument also risks treating Christian influence as the default explanation for whatever moral language remains attractive. The score is solid because genealogy matters, but genealogy is not monopoly.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "The argument can privilege Christian genealogy for attractive rights language while underweighting secular and plural sources."
+                }
+              ]
+            },
+            con: {
+              time: "59:10",
+              role: "Narrative concession",
+              words:
+                "Folley says people value humans almost inevitably, and shared narratives or sacred language can motivate values without settling metaphysical truth.",
+              score: 83,
+              critique:
+                "Folley's narrative concession is intellectually generous and strategically useful. He does not deny that religion motivates morality; indeed, he says religious narratives may be more causally powerful than dry propositions about moral truths. That concession makes his disagreement sharper: motivation and genealogy do not settle metaphysical truth or exclusivity. He also notes that humans seem nearly unable to avoid valuing, which weakens any simple claim that secular people are left with no moral materials. The weakness is that this response can understate Scrivener's scope question: which narratives successfully widen the circle of compassion across generations and institutions? The score is high because Folley grants the data while resisting an overdrawn conclusion.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Dominion and moral development",
+        timebox: "01:05:54-01:20:48",
+        score: {
+          pro: 80,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:12:35",
+              role: "Scriptural criterion",
+              words:
+                "Scrivener says Scripture and the crucified Jesus judge Christian history; moral progress flowers when it returns to that center.",
+              score: 80,
+              critique:
+                "Scrivener's criterion is more concrete than a vague appeal to Christian civilization. He accepts that not every Western development is automatically Christian and says scripture, especially the crucified Jesus forgiving enemies, judges Christendom's twists and turns. That gives him a real internal standard for condemning slavery, coercion, and future misuse of Christianity. The strength is that he names a center rather than simply drawing the target around successful moral change. The weakness is procedural: scripture still needs interpretation, and rival Christians have historically claimed the same sources for opposing conclusions. 'If it looks like the cross' is powerful, but not always operationally clear. The score is strong because the criterion is meaningful, but not fully adjudicative.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The cross-centered criterion is morally vivid but leaves uncertain procedures for hard interpretive disputes."
+                }
+              ]
+            },
+            con: {
+              time: "01:07:45",
+              role: "Flowering-or-corruption test",
+              words:
+                "Folley presses the Dominion thesis for criteria: how do we distinguish a flowering of Christianity from a corruption or retrospective fit?",
+              score: 85,
+              critique:
+                "Folley's Dominion critique is the strongest closing pressure. He does not deny Christianity's historical importance or the moral power of its narratives. Instead, he asks for criteria laid down in advance: how can one tell whether abolition, universalism, human rights, persecution, or coercive conversion is a flowering of Christian doctrine or a corruption? That question targets a common apologetic weakness, where Christianity gets credit for later moral successes while failures are treated as betrayals. He also connects the issue to moral realism: if truth is eternal, development needs both progress and brakes. The weakness is that he asks for a standard more than he supplies one. Still, the score is very high because the burden is exactly placed.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 78,
+        strengths: [
+          "Scrivener treated hiddenness and evil with seriousness, refusing quick theodicy and keeping lament, Job, and the cross central.",
+          "He gave a coherent Christian account of moral seriousness, personal divine agency, sacred narrative, and the image of God as resources for human worth.",
+          "He acknowledged that Christian history contains corruptions and tried to state a Christ-centered criterion for judging moral development."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes shifted from personal divine relationship to broad experience of being, consciousness, or goodness without proving that this answers hiddenness.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His naturalism critique occasionally assumed that secular moral realism cannot underwrite real wrongness before fully engaging Folley's alternatives.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His cross-centered test for moral progress was morally vivid but still left hard interpretive disputes under-specified.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Folley stated the hiddenness problem, the personal-God issue, and the Dominion criteria challenge with unusual charity and precision.",
+          "He repeatedly granted theistic strengths where they were real, especially on narrative motivation, moral realism, and the personal grounding of obligation.",
+          "He pressed exact burden-of-proof questions: explicit relationship, inscrutable divine reasons, moral motivation, and criteria for distinguishing development from corruption."
+        ],
+        blunders: [
+          {
+            text:
+              "His concessions to Job and skeptical theism softened the evidential force of evil more than a stricter anti-theistic argument would allow.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His positive non-theistic moral realism remained schematic, so the alternatives to Christian moral narrative were named more than fully defended.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His claim that much moral disagreement is descriptive risked undercounting deeper disputes over value, personhood, authority, and sacred status.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
               }
             ]
           }
