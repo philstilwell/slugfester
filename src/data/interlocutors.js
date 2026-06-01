@@ -222,6 +222,11 @@ export const interlocutorAvatars = [
     aliases: ["Phil Halper", "Skydivephil"]
   },
   {
+    name: "Stephen Meyer",
+    src: `${avatarBasePath}/stephen-meyer.webp`,
+    aliases: ["Stephen Meyer", "Stephen C. Meyer", "Steve Meyer"]
+  },
+  {
     name: "Ian Hutchinson",
     src: `${avatarBasePath}/ian-hutchinson.webp`,
     aliases: ["Ian Hutchinson"]
