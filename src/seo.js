@@ -28,6 +28,10 @@ export function searchPath() {
   return "/search/";
 }
 
+export function assessmentPath() {
+  return "/assessment/";
+}
+
 export function referencePath(type, slug, debateId = "") {
   const source = debateId ? `?debate=${encodeURIComponent(debateId)}` : "";
   return `/reference/${encodeURIComponent(type)}/${encodeURIComponent(slug)}/${source}`;
@@ -239,6 +243,63 @@ export function searchSeo(debates = []) {
       breadcrumbJsonLd([
         { name: SITE_NAME, path: "/" },
         { name: "Search", path: searchPath() }
+      ])
+    ]
+  };
+}
+
+export function assessmentSeo() {
+  const description =
+    "A detailed explanation of how Slugfester turns debate transcripts into quote-forward AI scorecards, critique popovers, fallacy notes, and overall assessments.";
+
+  return {
+    title: pageTitle("The Codex Assessment Process"),
+    description,
+    canonicalPath: assessmentPath(),
+    imagePath: DEFAULT_IMAGE,
+    imageAlt: "Slugfester assessment process for debate argument scorecards.",
+    type: "article",
+    jsonLd: [
+      organizationJsonLd(),
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: "The Codex Assessment Process",
+        name: "The Codex Assessment Process",
+        description,
+        mainEntityOfPage: absoluteUrl(assessmentPath()),
+        url: absoluteUrl(assessmentPath()),
+        image: imageObject(),
+        thumbnailUrl: absoluteUrl(DEFAULT_IMAGE),
+        inLanguage: SITE_LANGUAGE,
+        articleSection: "Methodology",
+        isAccessibleForFree: true,
+        author: {
+          "@id": ORGANIZATION_ID
+        },
+        publisher: {
+          "@id": ORGANIZATION_ID
+        },
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": WEBSITE_ID,
+          name: SITE_NAME,
+          url: SITE_URL
+        },
+        about: [
+          "argument analysis",
+          "debate transcript assessment",
+          "logical coherence",
+          "fallacy detection",
+          "cognitive bias"
+        ].map((name) => ({
+          "@type": "Thing",
+          name
+        }))
+      },
+      breadcrumbJsonLd([
+        { name: SITE_NAME, path: "/" },
+        { name: "Assessment", path: assessmentPath() }
       ])
     ]
   };

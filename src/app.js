@@ -9,6 +9,8 @@ import {
   SITE_NAME,
   SITE_THEME_COLOR,
   absoluteUrl,
+  assessmentPath,
+  assessmentSeo,
   debateNumberLabel,
   debatePath,
   debateSeo,
@@ -23,9 +25,11 @@ import {
 const app = document.querySelector("#app");
 const debateHashRoutePattern = /^#\/debate\/([a-z0-9-]+)$/;
 const searchHashRoutePattern = /^#\/search$/;
+const assessmentHashRoutePattern = /^#\/assessment$/;
 const referenceHashRoutePattern = /^#\/reference\/(fallacy|bias)\/([a-z0-9-]+)(?:\?debate=([a-z0-9-]+))?$/;
 const debatePathRoutePattern = /^\/debate\/([a-z0-9-]+)\/?$/;
 const searchPathRoutePattern = /^\/search\/?$/;
+const assessmentPathRoutePattern = /^\/assessment\/?$/;
 const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?$/;
 
 const escapeHtml = (value = "") =>
@@ -154,6 +158,7 @@ function renderShell(content) {
       <nav aria-label="Primary">
         <a href="/">Debates</a>
         <a href="${searchPath()}">Search</a>
+        <a href="${assessmentPath()}">Assessment</a>
         <span class="external-sites" aria-label="External Sites">
           <span class="external-sites-label">External Sites</span>
           <span class="external-sites-links">
@@ -446,6 +451,143 @@ function renderResultPerson(person) {
       <img src="${escapeHtml(person.src)}" alt="" width="512" height="512" loading="lazy" decoding="async">
       <span>${escapeHtml(person.name)}</span>
     </span>
+  `;
+}
+
+function renderAssessment() {
+  setSeo(assessmentSeo());
+
+  app.innerHTML = renderShell(`
+    <main class="assessment-page">
+      <section class="assessment-hero">
+        <div>
+          <p class="eyebrow">Assessment</p>
+          <h1>The Codex Assessment Process</h1>
+          <p class="assessment-lede">Slugfester turns debate transcripts into quote-forward scorecards by separating what each side actually said from how well each claim was supported, answered, and kept logically disciplined.</p>
+        </div>
+        <aside class="assessment-stamp" aria-label="Assessment model">
+          <span>AI assessment model</span>
+          <strong>${escapeHtml(assessmentModel)}</strong>
+          <p>Scores are estimates, not verdicts. They summarize argument quality under conventional standards of coherence, evidence, burden of proof, and fallacy avoidance.</p>
+        </aside>
+      </section>
+
+      <section class="assessment-principles" aria-labelledby="assessment-principles-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Core test</p>
+          <h2 id="assessment-principles-heading">What gets rewarded</h2>
+        </div>
+        <div class="principle-grid">
+          ${renderAssessmentPrinciple("Coherence", "The claim has stable terms, a visible inference, and no hidden contradiction between its premises and conclusion.")}
+          ${renderAssessmentPrinciple("Evidence", "The speaker gives reasons a listener can inspect: data, textual support, historical context, definitions, or a clear explanatory model.")}
+          ${renderAssessmentPrinciple("Rebuttal quality", "The response engages the strongest live objection rather than changing the subject, repeating the thesis, or attacking a weaker paraphrase.")}
+          ${renderAssessmentPrinciple("Burden discipline", "The side making the stronger claim carries the matching burden and does not require the opponent to disprove an unsupported possibility.")}
+        </div>
+      </section>
+
+      <section class="assessment-flow" aria-labelledby="assessment-flow-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Workflow</p>
+          <h2 id="assessment-flow-heading">From transcript to scorecard</h2>
+        </div>
+        <ol class="process-steps">
+          <li><span>01</span><strong>Capture and clean the transcript.</strong><p>The source transcript is preserved as the grounding material. Filler can be trimmed, but direct quotations are not invented.</p></li>
+          <li><span>02</span><strong>Identify the live question.</strong><p>The motion or central dispute is made explicit, because a clever point can still score poorly if it does not answer the debate question.</p></li>
+          <li><span>03</span><strong>Extract representative quotes.</strong><p>Each side gets short quotes that encapsulate its position. These quotes anchor the reader before the scoring begins.</p></li>
+          <li><span>04</span><strong>Segment by argumentative movement.</strong><p>The debate is divided into topical sections, then opposing moves are aligned by issue rather than by every interruption.</p></li>
+          <li><span>05</span><strong>Score claims and rebuttals.</strong><p>Each argument receives a numerical score based on logic, relevance, evidential support, responsiveness, and fallacy pressure.</p></li>
+          <li><span>06</span><strong>Write critique popovers.</strong><p>Every ◉ opens a focused critique explaining what worked, what failed, and why the score follows from that balance.</p></li>
+        </ol>
+      </section>
+
+      <section class="assessment-rubric" aria-labelledby="assessment-rubric-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Rubric</p>
+          <h2 id="assessment-rubric-heading">How the numbers read</h2>
+        </div>
+        <div class="score-band-list">
+          ${renderScoreBand("90-100", "Exceptional", "Clear, relevant, well-supported, and resilient under the obvious rebuttals.", 96)}
+          ${renderScoreBand("80-89", "Strong", "Persuasive overall, with limited gaps or uncertainties that do not threaten the main inference.", 86)}
+          ${renderScoreBand("70-79", "Solid", "Coherent and relevant, but compressed, under-sourced, or only partly developed.", 76)}
+          ${renderScoreBand("60-69", "Mixed", "Understandable, but dependent on weak warrants, speculative links, or incomplete replies.", 66)}
+          ${renderScoreBand("50-59", "Weak", "Noticeable misframing, missing evidence, or poor engagement with the actual objection.", 56)}
+          ${renderScoreBand("<50", "Defective", "Fallacious, irrelevant, self-undermining, or unsupported at the point that matters.", 42)}
+        </div>
+      </section>
+
+      <section class="assessment-examples" aria-labelledby="assessment-examples-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Examples</p>
+          <h2 id="assessment-examples-heading">What changes a score</h2>
+        </div>
+        <div class="example-grid">
+          ${renderAssessmentExample(
+            "A cumulative case",
+            "Example move: a speaker links cosmology, fine-tuning, moral realism, and resurrection into one case.",
+            "This can score well when each strand is stated modestly and the conclusion is framed as cumulative probability. It drops when the speaker treats several individually controversial premises as if their mere accumulation removes the need to defend them."
+          )}
+          ${renderAssessmentExample(
+            "A sharper rebuttal",
+            "Example move: an opponent says the causal premise is being projected beyond observed physical contexts.",
+            "That is stronger than saying, 'That is just faith,' because it names the disputed warrant. The score rises when the rebuttal explains why the premise fails and how that affects the conclusion."
+          )}
+          ${renderAssessmentExample(
+            "A fallacy label",
+            "Example move: a conclusion is smuggled into a premise, then presented as independently established.",
+            "This may receive a begging-the-question tag only if the circularity is doing real argumentative work. Slugfester avoids using fallacy names as decorative insults."
+          )}
+          ${renderAssessmentExample(
+            "A bias label",
+            "Example move: a speaker highlights only examples that favor a prior worldview while ignoring nearby counterexamples.",
+            "This may receive a confirmation-bias note when the pattern affects the evaluation of evidence, not merely because the speaker has a point of view."
+          )}
+        </div>
+      </section>
+
+      <section class="assessment-detail" aria-labelledby="assessment-detail-heading">
+        <div>
+          <p class="eyebrow">Limits</p>
+          <h2 id="assessment-detail-heading">What the score is not</h2>
+        </div>
+        <div class="assessment-detail-copy">
+          <p>A Slugfester score is not a measure of truth, moral worth, charisma, audience reaction, or whether the assessor personally agrees with a conclusion. It is a compact judgment about the argument as performed in the transcript.</p>
+          <p>That means a side can defend a true claim poorly, or make a false claim with unusual logical discipline. The score follows the reasoning on the page: definitions, warrants, evidence, rebuttal, and the absence or presence of fallacies and cognitive-bias-shaped overreach.</p>
+          <p>Named fallacies and biases link through local Slugfester reference pages first. Those pages define the concept, explain why it appears in that debate context, and then point to the deeper external LogFall or CogBias entry.</p>
+        </div>
+      </section>
+    </main>
+  `);
+}
+
+function renderAssessmentPrinciple(title, text) {
+  return `
+    <article class="principle-card">
+      <h3>${escapeHtml(title)}</h3>
+      <p>${escapeHtml(text)}</p>
+    </article>
+  `;
+}
+
+function renderScoreBand(range, label, text, width) {
+  return `
+    <article class="score-band" style="--band-width:${width}%">
+      <div>
+        <strong>${escapeHtml(range)}</strong>
+        <span>${escapeHtml(label)}</span>
+      </div>
+      <p>${escapeHtml(text)}</p>
+      <i aria-hidden="true"></i>
+    </article>
+  `;
+}
+
+function renderAssessmentExample(title, move, assessment) {
+  return `
+    <article class="assessment-example">
+      <h3>${escapeHtml(title)}</h3>
+      <p class="example-move">${escapeHtml(move)}</p>
+      <p>${escapeHtml(assessment)}</p>
+    </article>
   `;
 }
 
@@ -904,6 +1046,9 @@ function route() {
     hash.match(debateHashRoutePattern) || window.location.pathname.match(debatePathRoutePattern);
   const searchMatch =
     hash.match(searchHashRoutePattern) || window.location.pathname.match(searchPathRoutePattern);
+  const assessmentMatch =
+    hash.match(assessmentHashRoutePattern) ||
+    window.location.pathname.match(assessmentPathRoutePattern);
   const referenceMatch =
     hash.match(referenceHashRoutePattern) ||
     window.location.pathname.match(referencePathRoutePattern);
@@ -912,6 +1057,8 @@ function route() {
     renderDebate(decodeURIComponent(debateMatch[1]));
   } else if (searchMatch) {
     renderSearch();
+  } else if (assessmentMatch) {
+    renderAssessment();
   } else if (referenceMatch) {
     const sourceDebateId =
       referenceMatch[3] || new URLSearchParams(window.location.search).get("debate") || "";
@@ -939,6 +1086,7 @@ function shouldHandleInternally(link) {
     url.hash &&
     !url.pathname.match(debatePathRoutePattern) &&
     !url.pathname.match(searchPathRoutePattern) &&
+    !url.pathname.match(assessmentPathRoutePattern) &&
     !url.pathname.match(referencePathRoutePattern)
   ) {
     return false;
@@ -948,6 +1096,7 @@ function shouldHandleInternally(link) {
     url.pathname === "/" ||
     debatePathRoutePattern.test(url.pathname) ||
     searchPathRoutePattern.test(url.pathname) ||
+    assessmentPathRoutePattern.test(url.pathname) ||
     referencePathRoutePattern.test(url.pathname)
   );
 }

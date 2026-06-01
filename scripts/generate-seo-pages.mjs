@@ -13,6 +13,8 @@ import {
   SITE_THEME_COLOR,
   SITE_NAME,
   absoluteUrl,
+  assessmentPath,
+  assessmentSeo,
   debatePath,
   debateSeo,
   landingSeo,
@@ -203,6 +205,12 @@ addPage(
   "Search Slugfester debate scorecards by interlocutor and text."
 );
 
+addPage(
+  assessmentPath(),
+  assessmentSeo(),
+  "The Codex Assessment Process explains how Slugfester creates quote-forward AI debate scorecards."
+);
+
 debates.forEach((debate) => {
   addPage(
     debatePath(debate),
@@ -253,6 +261,7 @@ async function ensureMatches(file, expected) {
 if (!checkOnly) {
   await rm(join(root, "debate"), { recursive: true, force: true });
   await rm(join(root, "reference"), { recursive: true, force: true });
+  await rm(join(root, "assessment"), { recursive: true, force: true });
 }
 
 for (const [file, content] of pageOutputs) {

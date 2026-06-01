@@ -25,6 +25,7 @@ Landing-page design:
 - The LogFall and CogBias header links are grouped under the visible `External Sites` label.
 - The LogFall and CogBias header links show short explanatory popovers on hover and keyboard focus.
 - The header includes a `Search` link to `/search/`.
+- The header includes an `Assessment` link to `/assessment/`, whose page title is `The Codex Assessment Process`.
 - The landing intro includes a divider line followed by a ` | `-delineated list of unique current debate topics.
 - The debate list is capped at three columns on wide screens, then steps down responsively.
 - Landing-page debate card titles link directly to the debate assessment.

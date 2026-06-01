@@ -172,6 +172,16 @@ export const interlocutorAvatars = [
     aliases: ["Glen Scrivener", "Glen Shrivener"]
   },
   {
+    name: "Jay Dyer",
+    src: `${avatarBasePath}/jay-dyer.webp`,
+    aliases: ["Jay Dyer", "JaysAnalysis", "Jay's Analysis"]
+  },
+  {
+    name: "Trent Horn",
+    src: `${avatarBasePath}/trent-horn.webp`,
+    aliases: ["Trent Horn", "Trent C. Horn", "Trent C Horn"]
+  },
+  {
     name: "Richard Carrier",
     src: `${avatarBasePath}/richard-carrier.webp`,
     aliases: ["Richard Carrier"]
