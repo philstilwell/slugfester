@@ -463,7 +463,7 @@ function renderAssessment() {
         <div>
           <p class="eyebrow">Assessment</p>
           <h1>The Codex Assessment Process</h1>
-          <p class="assessment-lede">Slugfester turns debate transcripts into quote-forward scorecards by separating what each side actually said from how well each claim was supported, answered, and kept logically disciplined.</p>
+          <p class="assessment-lede">Slugfester turns debate transcripts into scorecards by separating what each side actually said from how well each claim was supported, answered, and kept logically disciplined.</p>
         </div>
         <aside class="assessment-stamp" aria-label="Assessment model">
           <span>AI assessment model</span>
