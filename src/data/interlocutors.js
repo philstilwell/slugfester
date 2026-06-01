@@ -167,6 +167,16 @@ export const interlocutorAvatars = [
     aliases: ["Peter Hitchens"]
   },
   {
+    name: "Peter Singer",
+    src: `${avatarBasePath}/peter-singer.webp`,
+    aliases: ["Peter Singer", "Peter A. Singer", "Peter A Singer"]
+  },
+  {
+    name: "Jessica Frazier",
+    src: `${avatarBasePath}/jessica-frazier.webp`,
+    aliases: ["Jessica Frazier"]
+  },
+  {
     name: "Rabbi David Wolpe",
     src: `${avatarBasePath}/rabbi-david-wolpe.webp`,
     aliases: ["Rabbi David Wolpe", "David Wolpe"]

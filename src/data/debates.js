@@ -15689,5 +15689,380 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "shapiro-oconnor-atheist-delusion-society-2023",
+    number: "46",
+    title: "Ben Shapiro vs Alex O'Connor: The Atheist Delusion, Free Will, and Society",
+    label: "Atheism, free will, and social order",
+    date: "2026-06-01",
+    duration: "1 hr 20 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=yspPYcJHI3k",
+    motion:
+      "Does atheism depend on borrowed religious or extra-natural assumptions about free will, morality, reason, and social order, or can secular life face the truth without religious scaffolding?",
+    summary:
+      "Shapiro argues that society needs religiously grounded assumptions about free will, morality, and institutions; O'Connor denies free will, doubts religious moral authority, and presses the cost of useful falsehoods.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the Premier Unbelievable? upload, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "it cannot exist in a materialist Universe",
+        context:
+          "Shapiro's free-will claim is conditional: if free will is real, it cannot be grounded in a purely materialist worldview."
+      },
+      con: {
+        text: "Free Will cannot exist",
+        context:
+          "O'Connor's reply accepts the hard consequence: he denies free will rather than using it as evidence for God or the extra-natural."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Religious social order",
+        speaker: "Ben Shapiro",
+        color: "teal"
+      },
+      con: {
+        name: "Secular skeptical critique",
+        speaker: "Alex O'Connor",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 79,
+      con: 83
+    },
+    sections: [
+      {
+        title: "Atheist delusion",
+        timebox: "04:22-10:11",
+        score: {
+          pro: 78,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:22",
+              role: "Borrowed concepts",
+              words:
+                "Shapiro says atheists rely on free will, right and wrong, reason, and truth, even though those concepts come from outside materialist atheism.",
+              score: 78,
+              critique:
+                "Shapiro's opening is effective because it frames atheism not as mere nonbelief but as a worldview that still uses thick concepts: free will, moral truth, reason, purpose, and truth itself. That gives the discussion a real philosophical target rather than a shallow culture-war contrast. The weakness is that the argument moves quickly from 'these concepts are difficult for materialism' to 'they come from a world external to atheism.' Non-theistic moral realism, compatibilism, pragmatism, and emergent accounts are not yet addressed. The score is solid because the challenge is serious and clearly stated, but not higher because several live secular accounts are treated as if they are unavailable from the start.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The opening can assume that reason, truth, morality, and free will are unavailable to atheism before testing rival secular accounts."
+                }
+              ]
+            },
+            con: {
+              time: "08:38",
+              role: "Free-will denial",
+              words:
+                "O'Connor says no God entails no free will only because free will does not exist, and God would not solve the control problem anyway.",
+              score: 82,
+              critique:
+                "O'Connor's first reply is strong because it refuses the bait of defending every ordinary concept atheists use. Instead, he accepts Shapiro's free-will pressure and says the conclusion should be no free will, not God. That immediately tests whether Shapiro's argument is conditional or apologetic. He also makes the important point that adding a soul or deity does not automatically explain control. The weakness is that the reply is mostly negative at this stage. It blocks a theistic inference but does not yet explain how secular discourse should preserve responsibility, persuasion, and moral practice. The score is high because it identifies the live burden cleanly, but not decisive because the social question remains open.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Free will and utility",
+        timebox: "10:15-25:56",
+        score: {
+          pro: 80,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:15",
+              role: "Functional freedom",
+              words:
+                "Shapiro argues that belief in free will helps people live purposefully, change behavior, and sustain a society of responsible agents.",
+              score: 80,
+              critique:
+                "Shapiro's functional-free-will argument is one of his better moves. He shifts from metaphysical proof to social consequences: people who believe their choices matter may pursue discipline, family duties, charity, and reform more readily than people taught that decisions are empty outputs. That is relevant to the debate's social-order theme. The weakness is that utility does not establish truth, and Shapiro partly concedes this by saying the view may work for Alex but not for most people. That makes the argument sound Straussian: society may need a belief whether or not it is true. The score is strong because the practical concern is real, but limited by the truth-utility gap.",
+              tags: []
+            },
+            con: {
+              time: "14:30",
+              role: "Determined-or-random dilemma",
+              words:
+                "O'Connor argues that any mental activity is either determined or undetermined; if determined, control moves upstream, and if undetermined, it is random.",
+              score: 86,
+              critique:
+                "O'Connor's determined-or-random dilemma is the sharpest philosophical argument in the early debate. It is careful to avoid smuggling in materialism: he applies the question to brain, mind, or soul alike. If an action is determined by something outside ultimate control, responsibility seems to move upstream; if it is undetermined, it looks random. He also neatly turns Shapiro's utility point back on itself: if civilization needs free will and free will is false, then the useful delusion belongs to the religious side. The weakness is that the dilemma underplays compatibilist responsibility and ordinary agency language. Still, as a critique of libertarian free will, it is very strong and directly responsive.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral absolutes",
+        timebox: "27:21-35:18",
+        score: {
+          pro: 82,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "30:40",
+              role: "Anti-self-interest anchor",
+              words:
+                "Shapiro says religion removes morality from personal self-interest by placing universal absolutes above tribe, appetite, and convenience.",
+              score: 82,
+              critique:
+                "Shapiro's moral-absolutes case is persuasive at the sociological level. He takes Alex's religious-killer example and asks a prior question: why is the killer there at all? Human beings also kill from revenge, resources, kin loyalty, and appetite, so a moral authority above self-interest can restrain rather than inflame. The move is strong because it does not require proving Judaism true; it asks what kinds of institutions successfully universalize obligation. The weakness is that Shapiro sometimes treats religious universalism as more stable than history warrants, and secular law can also create third-party restraint. The score is strong because he answers the social utility point well, but not decisive because moral authority can misfire.",
+              tags: []
+            },
+            con: {
+              time: "27:47",
+              role: "Dangerous certainty",
+              words:
+                "O'Connor says false religious morality combines human arbitrariness with the certainty and unanswerability of the creator of the universe.",
+              score: 80,
+              critique:
+                "O'Connor's dangerous-certainty argument is important because it targets the cost of grounding morality in alleged divine command. If the command is false but believed absolute, ordinary tools of correction can fail: law, social reproach, and appeal to shared human interests may be dismissed as merely human. That is a real danger, especially where religious violence or coercion is live. The weakness is that the argument selects the worst failure mode of religion while giving less attention to cases where divine accountability restrains self-interest or tribal revenge. Shapiro's reply presses that asymmetry. The score is strong because the warning is clear and relevant, but not higher because the comparative risk calculus is incomplete.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Christian inheritance",
+        timebox: "35:42-50:38",
+        score: {
+          pro: 79,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "39:16",
+              role: "Reasoned tradition",
+              words:
+                "Shapiro says abolitionists, scientists, and reformers often worked from within religious traditions that expected reason to interpret inherited texts.",
+              score: 79,
+              critique:
+                "Shapiro's reasoned-tradition reply is historically relevant. He is right that abolitionists, Newton, and other scientific or moral reformers often understood themselves as religious, and that Judaism and Christianity contain long interpretive traditions rather than only raw literalism. This blocks the simplistic claim that progress happened entirely outside religion. The weakness is that the argument can become overly protective: if reformers count as religious fruits while oppressive authorities are dismissed as bad interpretations, religion receives credit with limited debit. Alex's Galileo and slavery examples put pressure on exactly that accounting. The score is solid because Shapiro corrects an over-simple secular story, but lower because his tradition can absorb too many outcomes.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "The reply risks emphasizing religious reformers while discounting religious authorities who resisted the same reforms."
+                }
+              ]
+            },
+            con: {
+              time: "36:49",
+              role: "Progress resistance",
+              words:
+                "O'Connor argues that Christianity now claims women's equality, abolition, science, and rights after many advances emerged against religious resistance.",
+              score: 84,
+              critique:
+                "O'Connor's progress-resistance critique is forceful because it challenges triumphalist inheritance narratives. He lists cases where religious authorities or texts were used against women, homosexuality, heliocentrism, evolution, and slavery, then asks why later gains should be credited straightforwardly to the same tradition. The argument is strongest when he names Galileo and scriptural slavery rather than making a vague anti-religion complaint. The weakness is that he sometimes compresses diverse religious actors into one tradition, while many reformers were sincerely religious and argued from inside their faith. Still, the challenge lands because it asks for consistent accounting of both inspiration and obstruction. The score is high because it directly pressures Shapiro's historical utility claim.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Social cohesion",
+        timebox: "52:52-59:45",
+        score: {
+          pro: 85,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "53:00",
+              role: "Institutional replacement",
+              words:
+                "Shapiro says religious communities provide shared orientation, friendship, marriage, family, and support structures that secular society has not replaced.",
+              score: 85,
+              critique:
+                "Shapiro's institutional-replacement argument is his strongest sociological contribution. He does not merely say religion makes people nicer; he names concrete social functions: shared orientation, friendship networks, marriage norms, family formation, charity, and everyday support. The claim that secular societies have not fully replaced these institutions is plausible and directly relevant to declining cohesion, atomization, and despair. The weakness is that correlation and causation remain partly unresolved, and different religions or secular civic orders perform these functions differently. Still, this is the part of Shapiro's case least dependent on metaphysical proof. The score is high because it identifies a real practical deficit that secular critics must address rather than wave away.",
+              tags: []
+            },
+            con: {
+              time: "55:38",
+              role: "Specificity demand",
+              words:
+                "O'Connor asks whether Shapiro prefers atheism or Islam in social hypotheticals, pressing him to specify which religion and which practices matter.",
+              score: 78,
+              critique:
+                "O'Connor's specificity demand is useful because 'religion' is too broad to carry the debate unaided. His Islam-versus-atheism hypothetical forces Shapiro to admit that not all theistic belief is socially preferable and that memories, traditions, and practices matter as much as bare God-belief. That weakens any simple religion-good, atheism-bad contrast. The weakness is that the button hypothetical becomes procedural and less substantive than the surrounding argument. Shapiro reasonably asks for details about which Islam, which atheism, and which social memory. The score is solid because Alex exposes ambiguity in the pro case, but it does less work than his direct historical and scriptural challenges overall here.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The exchange shows that broad labels like religion, Islam, atheism, and secularism hide crucial differences in practice."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Scripture and slavery",
+        timebox: "59:46-01:12:20",
+        score: {
+          pro: 67,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:01:36",
+              role: "Gradualist interpretation",
+              words:
+                "Shapiro says biblical laws addressed a time-bound slaveholding world, often liberalizing existing practices and wooing people away from worse evils.",
+              score: 67,
+              critique:
+                "Shapiro's gradualist interpretation is the most charitable version of his slavery defense. He does not say slavery is good; he says biblical law speaks to a brutal ancient context and may restrict, humanize, or redirect existing practices rather than instantly abolish them. Comparing biblical law with surrounding codes is a legitimate historical method. The weakness is severe: the argument asks listeners to accept that God permits and regulates an admitted immorality while still providing absolute moral grounding. It also becomes difficult to tell which commandments reveal timeless morality and which are time-bound accommodations. The score is mixed because the contextual point matters, but the theological cost is large and Alex presses it well.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The defense exempts troubling biblical permissions from the moral absoluteness claimed for the tradition by calling them time-bound accommodations."
+                }
+              ]
+            },
+            con: {
+              time: "01:03:42",
+              role: "Moral permission challenge",
+              words:
+                "O'Connor asks why God condemns other practices directly yet permits slaveholding details, war-captive women, and family-separating slave laws.",
+              score: 88,
+              critique:
+                "O'Connor's slavery challenge is the debate's strongest skeptical section. He grants the gradualist premise for the sake of argument, then asks why even modest improvements were not commanded: for example, letting a slave leave with the wife and children acquired during servitude. That makes the objection concrete rather than rhetorical. He also identifies the deeper tension: Shapiro wants religious morality to be transcendent and untouchable, but then defends biblical permissions by reference to what an ancient culture could handle. The weakness is that full Jewish legal interpretation cannot be exhausted in the exchange. Even so, the score is very high because Alex forces a direct conflict between moral absolutism and scriptural accommodation.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Future society and children",
+        timebox: "01:12:50-01:17:47",
+        score: {
+          pro: 82,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:15:34",
+              role: "Teach uncertainty",
+              words:
+                "Shapiro says doubting parents can honestly present religious and atheist arguments, while urging people to reengage institutions that reinforce good habits.",
+              score: 82,
+              critique:
+                "Shapiro's closing is practical and comparatively humane. Instead of saying atheists should lie to children, he recommends teaching uncertainty, presenting both religious and atheist arguments, and allowing children to choose. He then returns to institutions: church, family, work, discipline, and community reinforcement make good habits livable. That answers Alex's useful-falsehood challenge better than a blunt appeal to social utility would. The weakness is that the institutional prescription still depends on whether people can inhabit religious communities without belief, and it underdescribes secular civic substitutes. The score is strong because Shapiro avoids dishonesty and gives concrete practices, but limited because the argument still leans on a contested religious capstone.",
+              tags: []
+            },
+            con: {
+              time: "01:13:22",
+              role: "Useful-falsehood problem",
+              words:
+                "O'Connor asks what an atheist should do if religion is useful but false: lie to children, pretend belief, or build virtues without God?",
+              score: 76,
+              critique:
+                "O'Connor's useful-falsehood problem is philosophically important. If someone believes religion is false but socially useful, the practical question becomes urgent: should he teach children what he thinks is untrue, merely act religious, or try to preserve family and discipline without God? That exposes a tension in utility-based apologetics and neatly charges deontologists with drifting into utilitarianism. The weakness is that Alex's positive alternative remains thin. Saying to encourage family, children, and sobriety without God does not yet show how secular institutions can generate comparable commitment, identity, and intergenerational support. The score is solid because he asks the right honesty question, but lower because he leaves the replacement problem underdeveloped.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 79,
+        strengths: [
+          "Shapiro's best work was sociological: he identified the concrete institutional goods religion has historically supplied, including family formation, shared norms, charity, and social support.",
+          "He made the atheist-delusion argument conditional enough to avoid overclaiming proof of God, while still pressing secular accounts of free will, morality, reason, and truth.",
+          "He repeatedly distinguished bare God-belief from lived religious practice, which helped him avoid defending every religion or every scriptural reading equally."
+        ],
+        blunders: [
+          {
+            text:
+              "His argument sometimes assumed that because secular accounts struggle with free will, morality, or truth, those concepts must come from outside atheism.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His appeal to religious mystery functioned as a self-admitted escape hatch while he demanded more mechanistic explanations from atheism.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His slavery defense relied on time-bound accommodation in a debate where his broader case depended on religion supplying transcendent moral absolutes.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 83,
+        strengths: [
+          "O'Connor's free-will dilemma was precise, metaphysically neutral, and directly responsive to Shapiro's claim that God or the extra-natural is needed.",
+          "His strongest historical and scriptural challenges avoided vague anti-religion rhetoric by focusing on Galileo, slavery, war-captive women, and specific biblical slave-law details.",
+          "He exposed the truth-versus-utility problem clearly: if religion is socially useful but false, honest nonbelievers cannot simply decide to believe or teach it as true."
+        ],
+        blunders: [
+          {
+            text:
+              "His historical critique sometimes treated religious obstruction as representative while giving less weight to reformers who consciously worked from within religious traditions.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His secular replacement proposal remained underdeveloped after he conceded that religion may provide real family, discipline, and social-support functions.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
