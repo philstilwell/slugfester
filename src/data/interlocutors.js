@@ -147,6 +147,11 @@ export const interlocutorAvatars = [
     aliases: ["Christopher Tomaszewski", "Chris Tomaszewski"]
   },
   {
+    name: "Stephen Meyer",
+    src: `${avatarBasePath}/stephen-meyer.webp`,
+    aliases: ["Stephen Meyer", "Stephen C. Meyer", "Stephen C Meyer", "Steve Meyer"]
+  },
+  {
     name: "Richard Carrier",
     src: `${avatarBasePath}/richard-carrier.webp`,
     aliases: ["Richard Carrier"]
@@ -220,11 +225,6 @@ export const interlocutorAvatars = [
     name: "Phil Halper",
     src: `${avatarBasePath}/phil-halper.webp`,
     aliases: ["Phil Halper", "Skydivephil"]
-  },
-  {
-    name: "Stephen Meyer",
-    src: `${avatarBasePath}/stephen-meyer.webp`,
-    aliases: ["Stephen Meyer", "Stephen C. Meyer", "Steve Meyer"]
   },
   {
     name: "Ian Hutchinson",
