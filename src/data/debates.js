@@ -16810,5 +16810,374 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "dyer-dillahunty-transcendental-theism-2019",
+    number: "49",
+    title: "Jay Dyer vs Matt Dillahunty: Transcendental Argument for Theism",
+    label: "Transcendental theism and logic",
+    date: "2026-06-01",
+    duration: "2 hr 46 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=AajJBhdRpDA",
+    motion:
+      "Does the transcendental argument show that Orthodox Christian theism is needed to ground logic, truth, induction, ethics, and knowledge?",
+    summary:
+      "Dyer argues that transcendental categories cohere only within Orthodox theism; Dillahunty accepts fallible use of logic while denying that a divine foundation has been shown necessary.",
+    sourceNote:
+      "Built from YouTube auto-generated captions downloaded with yt-dlp. Analytical summaries are condensed and lightly cleaned, especially where captions garbled names or technical terms; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God is the ultimate presupposition",
+        context:
+          "Dyer's case is that logic, truth, induction, meaning, and ethics need the Orthodox Christian God as their coherent final ground."
+      },
+      con: {
+        text: "I am not yet convinced",
+        context:
+          "Dillahunty repeatedly distinguishes using logic fallibly from claiming either that logic has no foundation or that God is not that foundation."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Orthodox theism",
+        speaker: "Jay Dyer",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical atheism",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 73,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Opening transcendental case",
+        timebox: "10:11-30:20",
+        score: {
+          pro: 74,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:11",
+              role: "TAG opening",
+              words:
+                "Dyer argues worldviews combine metaphysics, ethics, and epistemology, and that logic, induction, numbers, meaning, and truth make sense in Orthodox Christian theism.",
+              score: 74,
+              critique:
+                "Dyer's opening has a real philosophical target: scientific and everyday reasoning do rely on logic, induction, identity, meaning, and value judgments that are not themselves simple sense data. That is a fair challenge to naive empiricism, and he states why Orthodox theism would place these realities in a divine mind. The weakness is that the move from 'these are presupposed' to 'therefore Orthodox Christianity explains them' is mostly asserted. Rival accounts are grouped as materialism, pragmatism, or chaos without patient comparison. The argument also leans on a large bundle of categories, so any one gap can be blurred by the pile. The score is solid because the problem is important, but the bridge is underbuilt.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The opening often treats Orthodox theism as the needed ground before showing that rival accounts cannot ground the categories."
+                }
+              ]
+            },
+            con: {
+              time: "20:10",
+              role: "Foundation challenge",
+              words:
+                "Dillahunty says an admitted lack of ultimate explanation is not intellectual bankruptcy, and that God may be only a satisfying label for a desired foundation.",
+              score: 82,
+              critique:
+                "Dillahunty's first response is strong because it separates explanation from satisfaction. He grants that a worldview containing a God who guarantees logic can feel coherent, but asks whether that God has been demonstrated rather than merely defined as the guarantor. His point that 'I do not know the foundation' is not the same as arbitrariness keeps the debate from turning fallibilism into defeat. He also uses parsimony well: if both sides already use logic, adding a divine mind requires independent warrant. The weakness is that he leaves a positive ontology of abstracta mostly untouched. Still, his burden-of-proof discipline lands, and he clearly identifies the missing step in Dyer's opening.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Coherence and circularity",
+        timebox: "30:20-50:37",
+        score: {
+          pro: 76,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "30:25",
+              role: "Coherentist syllogism",
+              words:
+                "Dyer says transcendental categories become coherent in the Orthodox Christian worldview, where God personally strings the pearls together.",
+              score: 76,
+              critique:
+                "Dyer improves his case by making the argument more explicit. He clarifies that he is using coherentism, not classical foundationalism, and that God is the personal unity tying logic, ethics, meaning, selfhood, and reality together. That answer is stronger than a bare 'God did it' because it explains why the personal character of God matters to the whole worldview. The weakness is that coherence is not the same as truth. A system can internally connect its pieces while still failing to show that the connecting entity exists. Dyer also admits God is the ultimate presupposition, which makes the comparative standard delicate. The score is solid because the model is articulated, but not decisive.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "God receives the role of ultimate circular authority while rival presuppositions are criticized for circularity or lack of external grounding."
+                }
+              ]
+            },
+            con: {
+              time: "40:45",
+              role: "Maximal certainty reply",
+              words:
+                "Dillahunty says both sides can share reality and logic, use maximal certainty, and then debate whether any further foundation has warrant.",
+              score: 83,
+              critique:
+                "Dillahunty's maximal-certainty reply is one of his better early clarifications. He distinguishes absolute proof from the strongest confidence available inside human reasoning, then argues that shared use of logic and reality is enough to debate whether a further foundation exists. That neatly blocks the claim that lacking an ultimate account means he has no grounds for discussion. His science comments also correctly frame inquiry as tentative and revisable, not a claim to infallibility. The weakness is that 'it works' does not fully answer Dyer's meta-level question about what logic is or why it is reliable. The score is high because the reply defuses an impossible certainty standard while admitting the remaining philosophical gap.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Arbitrariness and necessity",
+        timebox: "50:42-01:07:17",
+        score: {
+          pro: 71,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "50:42",
+              role: "Arbitrariness charge",
+              words:
+                "Dyer says Dillahunty's pragmatic appeal to logic remains arbitrary, while TAG shows that denying transcendental categories collapses into solipsism or relativism.",
+              score: 71,
+              critique:
+                "Dyer's arbitrariness charge has an understandable concern behind it: if someone uses logic, truth, and induction, it is fair to ask whether that use can be justified at a meta level. His insistence that some categories are unavoidable keeps pressure on shallow empiricism. The weakness is that he repeatedly treats Dillahunty's 'I am not aware of a foundation' as if it were 'there is no foundation' or 'logic is arbitrary.' That misplaces the burden. Dyer also moves from problems in rival systems to the truth of his own system without eliminating other accounts of abstract necessity. The score is lower because the pressure is relevant, but the objection too often hits a stronger claim than Dillahunty made.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The reply attacks denial of logic or arbitrary logic, while Dillahunty is mainly denying that a divine foundation has been demonstrated."
+                }
+              ]
+            },
+            con: {
+              time: "01:00:01",
+              role: "Necessity rebuttal",
+              words:
+                "Dillahunty says Dyer must show that logic needs an explanation, that non-theistic options fail, and that God can guarantee logic to flawed minds.",
+              score: 86,
+              critique:
+                "Dillahunty's necessity rebuttal is very strong because it identifies the missing logical workload. A reductio does not succeed merely by finding a present dead end in one non-theistic account; Dyer must show that an explanation is necessary, that all live alternatives fail, and that the proposed God actually supplies epistemic warrant. The question whether God can alter logic, and if not whether God is subject to it, is a direct dilemma for divine-grounding claims. His flawed-mind objection also matters: even a perfect foundation would not automatically give fallible humans certainty. The weakness is that he still gives little constructive metaphysics. Even so, the burden analysis is precise and earns a high score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Crossfire on skepticism",
+        timebox: "01:07:58-01:32:50",
+        score: {
+          pro: 69,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:08:03",
+              role: "Skepticism critique",
+              words:
+                "Dyer argues Dillahunty's skepticism should consistently lead to total skepticism, while Dyer's worldview explains providence, induction, and regularity.",
+              score: 69,
+              critique:
+                "Dyer's crossfire pressure has one fair element: modern skeptics should be willing to answer why induction, truth, and logic deserve confidence. He is also right that the history of skepticism includes serious worries about causality, the past, and the external world. The problem is execution. He keeps insisting that Dillahunty's view should collapse into total skepticism even after Dillahunty distinguishes doubt, usable confidence, and denial. That makes the exchange repetitive and increasingly less responsive. The appeal to providence explains regularity only inside Dyer's worldview; it does not independently demonstrate that the worldview is true. The score is mixed because the question is legitimate, but the live answer is not handled charitably enough.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The failure of empiricism to give an ultimate justification is treated as a direct route to theism before alternatives are exhausted."
+                }
+              ]
+            },
+            con: {
+              time: "01:14:32",
+              role: "Burden distinction",
+              words:
+                "Dillahunty distinguishes 'not convinced it needs a foundation' from 'convinced it has no foundation,' using the guilty-not-guilty analogy.",
+              score: 87,
+              critique:
+                "Dillahunty's burden distinction is the clearest exchange in the debate. The difference between 'not convinced guilty' and 'convinced innocent' maps cleanly onto his position about God and about foundations for logic. He is not claiming logical absolutes lack a foundation; he is saying Dyer has not shown that they need one or that God is it. That distinction blocks several attempted reversals of the burden of proof. He also concedes that anyone asserting logic needs no foundation would acquire a burden, which shows discipline rather than evasiveness. The weakness is tonal: frustration sometimes crowds out patience. But analytically, this is a high-scoring rebuttal because it repeatedly corrects the central misframing.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Ontology and meta-logic",
+        timebox: "01:33:11-02:05:04",
+        score: {
+          pro: 75,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:35:46",
+              role: "Induction-to-TAG answer",
+              words:
+                "Dyer says science uses induction that empiricism cannot logically justify, so the transcendental argument is the next logical step.",
+              score: 75,
+              critique:
+                "Dyer's induction-to-TAG answer is sharper than some earlier formulations. He correctly notes that science relies on induction and that Humean worries about induction cannot be waved away by saying science works. He also keeps the debate at the intended meta level rather than treating logic as an ordinary empirical object. The weakness is the phrase 'therefore the transcendental argument is the next logical step.' Even if empiricism lacks a noncircular justification for induction, that does not by itself establish Orthodox theism as the best or only ground. More comparative work is needed against platonism, modal realism, naturalist necessity, and other non-theistic accounts. The score is solid because the challenge is real, but the conclusion outruns the premise.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "A real problem for empiricist induction is used to bypass the separate need to establish the specific theistic foundation."
+                }
+              ]
+            },
+            con: {
+              time: "01:36:38",
+              role: "Worldview revision answer",
+              words:
+                "Dillahunty says if someone demonstrated logic needs a foundation and that God is it, his worldview would change rather than collapse.",
+              score: 81,
+              critique:
+                "Dillahunty's worldview-revision answer is effective because it refuses the all-or-nothing framing. If someone showed that logic needs a foundation, that would not destroy skepticism; it would add a new warranted belief. If someone further showed that the foundation is the Orthodox Christian God, Dillahunty says he would stop being an atheist. That is a clean statement of openness to evidence. He also usefully treats knowledge as confidence rather than infallibility. The weakness is that his answer to ontological status remains thin: saying logic still seems true without minds does not explain what kind of thing logical necessity is. The score is high because he stays epistemically flexible, but not higher because the metaphysical positive case is sparse.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Presuppositions and closing",
+        timebox: "02:10:51-02:45:41",
+        score: {
+          pro: 78,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "02:17:14",
+              role: "Meta-level defense",
+              words:
+                "Dyer says both sides use transcendental categories, God answers their meta-level status, and logic reflects the divine mind and energies.",
+              score: 78,
+              critique:
+                "Dyer's closing meta-level defense is more controlled than the middle crossfire. He clarifies that he is not saying God can arbitrarily change logic; logic and truth reflect divine mind and, in his Orthodox framing, divine energies rather than the essence. That helps answer the familiar dilemma that God either obeys or invents logic. He also reasonably says different kinds of claims require different kinds of proof. The weakness is that his use of 'presupposition' remains unstable: if God and logic are both presupposed and also justified by transcendental argument, the terminology becomes hard to track. The score is strong enough because he answers some objections, but the explanation remains internally demanding.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The word presupposition shifts between an unavoidable starting point, a justified conclusion, and a worldview commitment."
+                }
+              ]
+            },
+            con: {
+              time: "02:14:19",
+              role: "Evidence standard",
+              words:
+                "Dillahunty says each claim has its own evidential bar, beliefs are involuntary responses to evidence, and debate should clarify disagreement.",
+              score: 82,
+              critique:
+                "Dillahunty's late evidence-standard answer gives the audience a usable method. Different claims have different evidential bars, and confidence should rise with the quality and quantity of evidence. His puppy, luxury car, and unicorn examples are simple but effective. He also closes well by saying debates are valuable when they clarify disagreement and invite correction, not when someone merely wins. The weakness is that this general evidentialism does not fully engage Dyer's deepest meta-logical claim that all evidential bars already presuppose logic, meaning, and value. Still, Dillahunty does not need a complete philosophy of logic to challenge Dyer's specific proof. The score is strong because the method is public, modest, and revisable.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 73,
+        strengths: [
+          "Dyer kept the debate focused on serious meta-level questions about logic, induction, truth, selfhood, meaning, and the coherence of whole worldviews.",
+          "He presented a more philosophically ambitious version of TAG than a bare slogan, tying it to Orthodox theology, coherentism, divine mind, and providence.",
+          "His later answers clarified that he does not treat logic as arbitrary divine command, but as a reflection of God's rational life."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly treated Dillahunty's lack of a demonstrated foundation as if it were an assertion that logic is foundationless or arbitrary.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "He moved too quickly from unsolved problems in empiricism or skepticism to Orthodox Christian theism as the necessary answer.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "He allowed God to function as an ultimate circular authority while criticizing rival circularity more harshly.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Dillahunty consistently protected burden-of-proof distinctions between disbelief, denial, pragmatic reliance, and claims about ultimate foundations.",
+          "He identified the core missing steps in TAG: the need for an explanation, the failure of all non-theistic options, and the success of God as a guarantor.",
+          "He modeled fallibilist skepticism by admitting unresolved meta-level questions without turning that admission into a positive anti-theistic claim."
+        ],
+        blunders: [
+          {
+            text:
+              "His positive account of the ontology of logic and abstract necessity remained thin, leaving much of Dyer's meta-level appetite unanswered.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His references to comfort and psychological satisfaction risked distracting from the truth question, even when he later clarified the point.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His frustration sometimes made accurate distinctions sound combative, which gave Dyer room to portray skepticism as evasive rather than disciplined.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
