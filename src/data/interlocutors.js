@@ -177,6 +177,11 @@ export const interlocutorAvatars = [
     aliases: ["Jessica Frazier"]
   },
   {
+    name: "Richard Swinburne",
+    src: `${avatarBasePath}/richard-swinburne.webp`,
+    aliases: ["Richard Swinburne", "Richard G. Swinburne", "Richard G Swinburne"]
+  },
+  {
     name: "Rabbi David Wolpe",
     src: `${avatarBasePath}/rabbi-david-wolpe.webp`,
     aliases: ["Rabbi David Wolpe", "David Wolpe"]

@@ -16064,5 +16064,398 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "jones-krauss-christianity-secular-ethics-2025",
+    number: "47",
+    title: "Michael Jones vs Lawrence Krauss: Christianity or Secular Ethics - What's Best for Society?",
+    label: "Christian social goods and secular inquiry",
+    date: "2026-06-01",
+    duration: "2 hr 23 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=yef-BFukQWg",
+    motion:
+      "Which is better for society: Christianity, understood as a Christian-value society with a largely Christian population, or secular ethics?",
+    summary:
+      "Jones argues data and history show Christianity produces stronger charity, social health, fertility, rights, and science; Krauss argues secular Enlightenment, science, fallibilism, and liberal ethics best explain modern progress.",
+    sourceNote:
+      "Built from YouTube's en-orig automatic caption transcript for the Modern-Day Debate upload, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Christianity creates more optimal societies",
+        context:
+          "Jones frames the debate as comparative sociology: Christianity need not be the only workable society, but he says it produces better outcomes."
+      },
+      con: {
+        text: "science is the ultimate secular activity",
+        context:
+          "Krauss treats secular inquiry, not revelation, as the method that corrects error and improves society."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian society",
+        speaker: "Michael Jones",
+        color: "teal"
+      },
+      con: {
+        name: "Secular ethics",
+        speaker: "Lawrence Krauss",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 81,
+      con: 76
+    },
+    sections: [
+      {
+        title: "Opening social case",
+        timebox: "05:11-35:00",
+        score: {
+          pro: 84,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "05:11",
+              role: "Sociology opening",
+              words:
+                "Jones argues Christianity generates more durable social goods through missionary education, charity, mental health, lower suicide, anti-authoritarian church practice, and fertility.",
+              score: 84,
+              critique:
+                "Jones's sociology opening is the debate's most motion-focused argument. He defines the comparison, denies that secular societies instantly collapse, and then gives several measurable domains: missionary education, hospitals, charity, volunteering, mental health, suicide, authoritarianism, and birth rates. That is much better than simply asserting that Christianity feels morally higher. The weakness is that many cited effects involve religiosity, church attendance, or Protestant missions rather than Christianity as a complete social order, and selection effects are only lightly addressed. Still, he gives a real empirical case and invites direct rebuttal. The score is high because the argument is relevant, data-forward, and cumulative, though it needs more causal caution.",
+              tags: []
+            },
+            con: {
+              time: "19:33",
+              role: "Enlightenment opening",
+              words:
+                "Krauss says secular Enlightenment, science, fallibilism, equality, animal concern, and open inquiry made the modern world better than Christian rule.",
+              score: 76,
+              critique:
+                "Krauss's opening has moral and historical force. He gives a recognizable secular ideal: open inquiry, fallibilism, science, sympathy, equality, and the willingness to change beliefs when evidence demands it. His contrast between modern liberal life and pre-Enlightenment Christian dominance is vivid and relevant. The weakness is that he spends much of the opening attacking original sin, hell, Christian sexuality, and religious comfort rather than answering Jones's specific comparative sociology. Those objections may show Christianity has costs, but they do not by themselves show secular ethics produces better social outcomes. The score is solid because the secular framework is clear, but lower because the opening under-engages the central empirical case.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "Several criticisms of doctrine and comfort move away from the direct comparative claim about measurable social outcomes."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Missionaries and modern rights",
+        timebox: "35:05-48:00",
+        score: {
+          pro: 81,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "35:05",
+              role: "Christian roots reply",
+              words:
+                "Jones cites historians and sociologists to argue human rights, universities, abolition, missionary literacy, and science developed from Christian institutions and ideas.",
+              score: 81,
+              critique:
+                "Jones's Christian-roots reply is historically better than a simple 'the West was Christian' slogan. He cites Woodberry, Holland, Moyn, Tierney, Grant, Efron, Hannam, and others to argue that missions, canon law, universities, natural rights, abolition, and science drew from Christian institutions and assumptions. That gives his case texture and partially answers Krauss's Enlightenment story. The weakness is that origin and present superiority are not identical. A tradition can help generate institutions that later function under different principles, and Christianity's role was not uniformly liberating. The score is strong because Jones brings relevant scholarship and pushes back on historical simplification, but limited because he sometimes treats Christian ancestry as Christian ownership.",
+              tags: []
+            },
+            con: {
+              time: "43:09",
+              role: "Grown-out-of reply",
+              words:
+                "Krauss concedes the Enlightenment grew from a Christian world, but says modern freedom emerged by growing beyond Christian dominance into secular inquiry.",
+              score: 79,
+              critique:
+                "Krauss's grown-out-of reply is a fair historical distinction. He concedes the obvious point that Western science and liberalism arose inside a Christian world, then argues that maturity means surpassing inherited structures: universities secularized, science advanced, democracy grew, and modern debate became possible. That prevents Jones from turning every Christian-era achievement into a simple point for Christianity. The weakness is that Krauss sometimes slides from 'Christianity was the background' to 'secularism did the real work' without proving which causal factors were decisive. He also gives less direct engagement with the specific historians Jones names. The score is solid-strong because the conceptual distinction is important, but it remains more narrative than demonstrated.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Fertility and replacement",
+        timebox: "15:50-55:56",
+        score: {
+          pro: 79,
+          con: 70
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "15:50",
+              role: "Demographic sustainability",
+              words:
+                "Jones argues secular cultures fall below replacement fertility, depend on immigration, and risk being replaced by less liberal religious cultures.",
+              score: 79,
+              critique:
+                "Jones's fertility argument is relevant because a society that cannot reproduce its people or transmit its values faces a real continuity problem. He is careful enough to say that extremely high birth rates are not automatically good; the issue is sustainable replacement. His use of Kaufmann and cross-national fertility data gives the claim substance. The weakness is that fertility decline is multi-causal: wealth, education, urbanization, housing, gender norms, child-care costs, and policy all matter. The later move from low secular fertility to Islam or authoritarian replacement also compresses several contingencies. The score is solid because the demographic challenge is genuine, but not higher because the causal story is too narrow.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The argument can make fertility do too much explanatory work while undercounting economic, policy, and gender-structure causes."
+                }
+              ]
+            },
+            con: {
+              time: "53:06",
+              role: "Population rebuttal",
+              words:
+                "Krauss replies that world population has doubled in his lifetime and that China has produced a massive population without Christian belief.",
+              score: 70,
+              critique:
+                "Krauss's population rebuttal has an obvious intuitive point: humanity as a whole is not failing to reproduce, and China shows that Christianity is not necessary to produce a large population. He also notes that high population alone is not a moral ideal. The weakness is that this does not directly answer Jones's narrower claim about secularized, affluent societies falling below replacement and needing cultural transmission across generations. Global population growth and China's past fertility do not settle whether secular liberal cultures sustain themselves without immigration or policy correction. The score is mixed because Krauss exposes an over-simple pro-life-of-culture metric, but his answer partly misses the target.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "Global population growth and China do not directly answer the narrower claim about secular affluent societies below replacement."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Science and secular method",
+        timebox: "01:00:13-01:08:33",
+        score: {
+          pro: 77,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:01:36",
+              role: "Christian science roots",
+              words:
+                "Jones argues Christian beliefs in rational creation, fallible humans, two books of God, and church-state distinction helped generate modern science.",
+              score: 77,
+              critique:
+                "Jones's science-roots argument has real historical content. Christian assumptions about rational creation, human fallibility, the book of nature, universities, and institutional distinction plausibly helped shape the environment in which modern science arose. He is also right that science did not emerge from nowhere. The weakness is that he sometimes protects the thesis by calling Greek empirical achievements 'protoscience' while treating later Christian-era developments as decisive science. That risks defining the category around the desired conclusion. Krauss's point that scientists act methodologically secular in the laboratory remains strong. The score is solid because Christianity's role is relevant, but lower because origin stories do not show that Christianity is now better for inquiry.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Greek empirical achievements are discounted as protoscience while Christian-era contributions receive stronger causal credit."
+                }
+              ]
+            },
+            con: {
+              time: "01:00:13",
+              role: "Methodological secularism",
+              words:
+                "Krauss says science is secular because it seeks physical causes, ignores divine adjustment, and forces beliefs to match evidence.",
+              score: 83,
+              critique:
+                "Krauss's methodological-secularism argument is one of his strongest moves. He separates personal religious belief from the practice of science: in the laboratory, divine intervention is not used to explain results, settle disagreements, or adjust predictions. Science works by questioning, testing, and forcing beliefs to conform to evidence. That directly supports his claim that secular inquiry is socially valuable. The weakness is that methodological secularism does not imply a fully secular society is better in every social domain. Jones can grant that science works this way while arguing that Christian communities support other goods. The score is high because Krauss cleanly explains the method, but its scope is narrower than the whole motion.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Witch trials and violence",
+        timebox: "53:06-01:17:40",
+        score: {
+          pro: 75,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "56:28",
+              role: "Variable-control objection",
+              words:
+                "Jones argues witch-burning, torture, and bad Christian conduct require variable analysis rather than assigning every Christian-era harm to Christianity.",
+              score: 75,
+              critique:
+                "Jones's variable-control objection is methodologically fair. He is right that one cannot simply point to Christians doing bad things and conclude Christianity caused them; poverty, politics, law, rationalism, state power, and local conflict can all matter. His citations about earlier Christian skepticism toward witchcraft complicate Krauss's clean narrative. The weakness is that Jones sometimes applies this caution asymmetrically. Christian harms become multi-variable and indirect, while Christian goods are more readily credited to Christianity. That creates a scoreboard problem across the debate in practice. The score is solid because the causal warning is legitimate, but not higher because his own positive attributions need the same restraint.",
+              tags: []
+            },
+            con: {
+              time: "57:01",
+              role: "Actions-speak reply",
+              words:
+                "Krauss says the Inquisition, witch burning, Salem, and punishments for unbelief or homosexuality show what Christian societies actually did.",
+              score: 77,
+              critique:
+                "Krauss's actions-speak reply has force because the debate is about social outcomes, not only ideal doctrine. The Inquisition, Salem, witch trials, and punishments for unbelief or homosexuality are relevant evidence about how religious authority can operate in practice. His comparison with today's freer world makes the point vivid. The weakness is that he often treats these examples as representative without enough causal sorting, precisely the standard he asks for elsewhere. Christian societies also contained internal critics and reformers. The score is solid because the harms are real and relevant, but not higher because the argument depends on broad historical contrast more than careful variable analysis.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "The reply emphasizes Christian harms as representative while giving less weight to internal Christian reform and counter-traditions."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral motivation",
+        timebox: "01:09:46-01:13:58",
+        score: {
+          pro: 81,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:12:52",
+              role: "Data over armchair",
+              words:
+                "Jones says the issue is not whether individuals can be good without God, but whether multivariable sociology shows Christian practice produces better outcomes.",
+              score: 81,
+              critique:
+                "Jones's data-over-armchair reply is useful because it keeps the debate from collapsing into anecdotes about nice atheists or bad Christians. He repeatedly says the question is comparative output: charity, depression, suicide, pro-sociality, authoritarianism, and fertility. That is the right level for the motion. The weakness is that his confidence outruns what the transcript establishes. The audience hears many study titles and selected findings, but not enough detail about controls, effect sizes, causality, or whether 'Christianity' is doing the work rather than community, income, family structure, or attendance. The score is strong because he asks the right empirical question, but not decisive because the evidential summary remains selective.",
+              tags: []
+            },
+            con: {
+              time: "01:09:46",
+              role: "Social compact",
+              words:
+                "Krauss says people usually would not murder if they stopped believing in God because empathy, rational cooperation, and social compact explain morality.",
+              score: 80,
+              critique:
+                "Krauss's social-compact answer is philosophically solid. Asking believers whether they would murder without God usefully distinguishes moral motivation from theological explanation. His account of empathy, sympathy, mutual constraint, and shared rational interest explains why people can behave ethically without supernatural fear. The weakness is that this answers individual moral motivation more than Jones's comparative claim about institutions. A person may not murder without God, yet church communities might still generate more volunteering or social support. Krauss also does not show why secular institutions reliably scale the compact across generations. The score is strong because it defeats a crude 'atheists cannot be moral' claim, but that was not Jones's most careful argument.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Closing frameworks",
+        timebox: "01:17:54-01:25:40",
+        score: {
+          pro: 82,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:17:54",
+              role: "Foundation closing",
+              words:
+                "Jones closes that secular humanism is a cut flower from Christianity: attractive for a time, but unable to sustain values, births, or progress.",
+              score: 82,
+              critique:
+                "Jones's closing is rhetorically sharp and tied to his earlier case. The cut-flower image captures his thesis that secular humanism borrows Christian values while losing the foundation that sustains them. He also returns to concrete claims about charity, fertility, abolition, rights, and science, which keeps the closing connected to the motion. The weakness is that the metaphor can become a conclusion substitute. It assumes secular values must wither rather than proving that all plausible secular institutions fail, and it repeats the stronger Christian-credit claims without fully absorbing Krauss's objections about obstruction and growth beyond Christianity. The score is strong because the synthesis is coherent, but not conclusive.",
+              tags: []
+            },
+            con: {
+              time: "01:22:26",
+              role: "Truth-and-evidence closing",
+              words:
+                "Krauss closes that secularism means looking at actions, following evidence, questioning authority, and forcing beliefs to fit reality.",
+              score: 82,
+              critique:
+                "Krauss's closing is his clearest positive statement. He does not end by saying Christians should disappear; he says people should pursue truth, wonder, evidence, and the real world as it is. That is rhetorically generous and philosophically attractive. The distinction between forcing beliefs to match evidence and forcing reality to match beliefs is especially strong. The weakness is that it still answers the epistemic side of the debate more than the full social-output side. Jones's data-heavy claims about charity, fertility, and institutions remain only partly answered. The score is strong because Krauss articulates a powerful secular ethic of inquiry, but the closing does not fully close the sociological deficit.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 81,
+        strengths: [
+          "Jones stayed unusually close to the stated motion by framing the debate around comparative social outcomes rather than merely arguing that Christianity is true.",
+          "His opening gave the audience concrete domains to track: charity, volunteering, mental health, suicide, authoritarianism, immigration pressure, fertility, education, hospitals, rights, and science.",
+          "He repeatedly pushed for multivariable sociology instead of simple historical name-checking, which was a fair demand in a debate about social effects."
+        ],
+        blunders: [
+          {
+            text:
+              "He often moved from churchgoing or religiosity correlations to Christianity as a total social system without fully handling selection effects or rival explanations.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "He credited Christianity readily for abolition, science, rights, and charity while treating many Christian-era harms as too variable-confounded to count against it.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His fertility and replacement argument undercounted nonreligious drivers of birth decline and made demographic sustainability carry too much moral weight.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 76,
+        strengths: [
+          "Krauss gave a clear secular ideal: open inquiry, fallibilism, science, sympathy, equality, and the willingness to revise cherished beliefs.",
+          "His strongest moments distinguished personal religious belief from the secular method of science and emphasized that real-world actions matter more than labels.",
+          "He rightly challenged triumphalist Christian history by naming religious harms, coercive doctrines, and cases where modern liberal values emerged by resisting authority."
+        ],
+        blunders: [
+          {
+            text:
+              "He often answered Jones's sociology-heavy case with broad Enlightenment narrative instead of directly contesting the cited studies, controls, or causal interpretation.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His historical critique selected Christian harms as representative while describing Christian contributions as merely background material to grow beyond.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His global-population and China replies sidestepped the narrower claim about secular affluent societies falling below replacement fertility.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
