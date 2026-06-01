@@ -157,6 +157,11 @@ export const interlocutorAvatars = [
     aliases: ["Ben Shapiro", "Benjamin Shapiro", "Benjamin A. Shapiro", "Benjamin A Shapiro"]
   },
   {
+    name: "Lawrence Krauss",
+    src: `${avatarBasePath}/lawrence-krauss.webp`,
+    aliases: ["Lawrence Krauss", "Lawrence M. Krauss", "Lawrence M Krauss"]
+  },
+  {
     name: "Richard Carrier",
     src: `${avatarBasePath}/richard-carrier.webp`,
     aliases: ["Richard Carrier"]

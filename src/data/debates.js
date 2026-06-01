@@ -17179,5 +17179,406 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "knechtle-dillahunty-christianity-true-2023",
+    number: "50",
+    title: "Cliffe Knechtle vs Matt Dillahunty: Is Christianity True?",
+    label: "Christianity, resurrection, and evidence",
+    date: "2026-06-01",
+    duration: "2 hr 37 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=aAg3H1LU1Yw",
+    motion:
+      "Is Christianity true, and do the Gospels, resurrection claims, moral meaning, and human value give sufficient warrant for Christian faith?",
+    summary:
+      "Knechtle argues Jesus best explains human value, morality, meaning, and resurrection evidence; Dillahunty challenges the method for verifying supernatural and specifically Christian claims.",
+    sourceNote:
+      "Built from YouTube auto-generated captions downloaded with yt-dlp. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Evidence is facts that point to a conclusion.",
+        context:
+          "Knechtle's line captures his recurring claim that Christianity can be assessed through cumulative historical, moral, relational, and resurrection evidence."
+      },
+      con: {
+        text: "What we need is a way to demonstrate the truth.",
+        context:
+          "Dillahunty's fragment captures his central demand: a public method that distinguishes true Christian claims from rival religions and unsupported testimony."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christianity is true",
+        speaker: "Cliffe Knechtle",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical atheism",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 68,
+      con: 85
+    },
+    sections: [
+      {
+        title: "Opening standards and meaning",
+        timebox: "00:06-17:25",
+        score: {
+          pro: 75,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "00:06",
+              role: "Worldview case",
+              words:
+                "Knechtle says Christianity accounts for human value, good and evil, meaning, and life after death because people are made in God's image and Jesus rose.",
+              score: 75,
+              critique:
+                "Knechtle's opening is coherent as a worldview invitation. He connects Christianity to human dignity, moral realism, meaning, and hope, then names the resurrection as the historically testable hinge. That gives the audience a clear map instead of isolated proof texts. The weakness is that several large claims arrive as explanation by fit: Christianity can describe value and evil, therefore it is likely true. That leaves alternative secular or non-Christian accounts underexamined and moves quickly from existential resonance to factual warrant. The opening earns a solid score because it identifies relevant stakes and a possible falsifier, but it needs more argument showing why these realities require Christian theism rather than merely fitting it.",
+              tags: []
+            },
+            con: {
+              time: "07:20",
+              role: "Method demand",
+              words:
+                "Dillahunty asks what Christianity means, why the Bible would verify itself, and what method would distinguish Christianity from Islam, Scientology, or other claimed revelations.",
+              score: 84,
+              critique:
+                "Dillahunty's opening is strong because it shifts the debate from competing intuitions to method. He asks what would make Christianity true, whether the central claims are sufficiently defined, and whether the same evidential standard would accidentally validate rival religions. That is the right diagnostic move for a broad motion. He also correctly centers the resurrection because Christianity's truth is not just moral usefulness or personal meaning. The limitation is that he sketches his own positive account of meaning and value only lightly, leaving Knechtle room to portray skepticism as thinner than it is. Still, the score is high because the opening sets public criteria and warns against self-authenticating scripture before the debate can become testimonial.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Historical evidence categories",
+        timebox: "18:04-27:32",
+        score: {
+          pro: 67,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "18:04",
+              role: "Category move",
+              words:
+                "Knechtle argues resurrection evidence is historical rather than scientific, comparing it to knowing George Washington existed or knowing whether someone loves you.",
+              score: 67,
+              critique:
+                "Knechtle's category move has a fair purpose: not every true claim is established by lab repeatability, and historical reasoning often relies on documents, testimony, and cumulative probability. That protects the resurrection question from a crude scientism. The weakness is that the comparison set is unstable. A dead body returning to life is a public physical event, not merely a relation like love or an ordinary historical person like Washington. Moving between historical, relational, and scientific evidence makes the resurrection seem easier to establish than it is. The score is mixed because the anti-scientism point is legitimate, but the analogy blurs the very evidential burden that makes the resurrection claim central.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The evidential category shifts among historical testimony, relational trust, and physical miracle claims, softening the resurrection's specific burden."
+                }
+              ]
+            },
+            con: {
+              time: "20:25",
+              role: "Miracle standard",
+              words:
+                "Dillahunty says he accepts ordinary historical claims differently from supernatural miracle claims and needs a demonstrable method for confirming the resurrection.",
+              score: 87,
+              critique:
+                "Dillahunty's rebuttal is strong because it refuses to let 'historical' do all the work. He grants that historians can establish ordinary claims with limited evidence, then asks why that same level of support should cover a miraculous event with enormous theological consequences. The distinction between Jesus existing and Jesus rising is clean and directly relevant. He also avoids the overclaim that the supernatural is impossible; his point is that no reliable confirming method has been shown. The weakness is that he gives only a sketch of how historians should grade miracle reports across time. Even so, the burden discipline is excellent, so the high score is deserved.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Witnesses and authorship",
+        timebox: "27:51-38:44",
+        score: {
+          pro: 66,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "28:02",
+              role: "Witness appeal",
+              words:
+                "Knechtle cites Joseph's tomb, women witnesses, the five hundred in First Corinthians, early church fathers, Matthew as eyewitness, and changed lives.",
+              score: 66,
+              critique:
+                "Knechtle brings the standard resurrection case into view, and several pieces are relevant if independently supported: burial, reported appearances, hostile conversion, and early proclamation. His appeal to women as first witnesses also gestures toward an embarrassment criterion. The main weakness is that he repeatedly treats later attribution and biblical report as if they supply the missing eyewitness access. The five hundred are asserted through Paul, not interviewed; Matthew's authorship is defended by church tradition, not by a self-identifying text. That does not make the case worthless, but it lowers the confidence available in a live debate about truth. The score is mixed because the data points are relevant, while the evidential chain is thinner than presented.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Church fathers and traditional attributions are asked to settle authorship and witness access without showing direct independent evidence."
+                }
+              ]
+            },
+            con: {
+              time: "30:07",
+              role: "Access challenge",
+              words:
+                "Dillahunty asks where the five hundred witnesses' stories are, notes Matthew is anonymous, and separates reports of belief from proof of resurrection.",
+              score: 84,
+              critique:
+                "Dillahunty's response is effective because it targets the evidential chain rather than simply mocking ancient testimony. Asking where the five hundred witnesses' own accounts are exposes the gap between a claim that witnesses existed and access to what they saw. His point about Matthew's anonymity is also relevant: an inferred author is not the same thing as a self-claimed eyewitness. He is fair enough to allow that church fathers may show early belief, but presses that belief is not identical to event verification. The weakness is tone; the exchange becomes combative enough to distract from the argument. The score remains high because the distinction between attestation and truth is central.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Manuscripts and method",
+        timebox: "38:44-55:39",
+        score: {
+          pro: 69,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "45:41",
+              role: "Reliability tests",
+              words:
+                "Knechtle offers four tests for Gospel reliability: literary style, manuscript evidence, archaeology, and internal harmony, then says they show historical trustworthiness.",
+              score: 69,
+              critique:
+                "Knechtle's four tests are useful as a first-pass screen for textual seriousness. Literary genre, manuscript transmission, archaeological fit, and internal coherence all matter when deciding whether a source deserves attention. He also appropriately says manuscript evidence alone does not prove truth. The problem is that the tests establish a narrower conclusion than the debate needs. A text can have many copies, real place names, and a generally historical style while still being wrong about its most dramatic claims. Internal harmony is also contested in the very resurrection narratives at issue. The score is moderate because the tests support source reliability in a limited sense, but they do not bridge to Christianity's truth without further argument.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Criteria that would not prove rival or fictional claims are treated as unusually powerful when applied to the Gospels."
+                }
+              ]
+            },
+            con: {
+              time: "47:34",
+              role: "Method rebuttal",
+              words:
+                "Dillahunty replies that copies, real places, and lack of contradiction can fit Harry Potter or Spider-Man without making the central story true.",
+              score: 88,
+              critique:
+                "Dillahunty's rebuttal is one of the clearest methodological wins in the debate. His analogies are not meant to equate the Gospels with comic books; they isolate the inference. Copy accuracy, real locations, and narrative consistency can show that a text was transmitted or situated in a recognizable world, but they do not establish that miracles occurred. That directly answers the four-test method and keeps the motion in view. The weakness is that the analogies can sound dismissive to listeners who hear them as genre comparisons rather than logic comparisons. Still, the argument earns a very high score because it cleanly separates source features from the truth of the disputed supernatural conclusion.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Genesis interpretation",
+        timebox: "55:39-01:02:03",
+        score: {
+          pro: 62,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "55:39",
+              role: "Genre defense",
+              words:
+                "Knechtle says Genesis contains no science to contradict, uses literary parallelism, and should not be rejected because of a wrong interpretation.",
+              score: 62,
+              critique:
+                "Knechtle is right that ancient theological literature should not be flattened into a modern lab manual. His appeal to genre, audience, and Hebrew parallelism is a legitimate caution against simplistic science-versus-Bible readings. The weakness is that Dillahunty asks a narrower question about order, not process or duration, and Knechtle repeatedly answers a different question. Saying Genesis is not scientific does not by itself explain whether its ordered creation sequence is accurate, symbolic, indifferent, or misleading. The result is a defensive interpretive escape hatch rather than a clear hermeneutic. The score is lower because the genre point has merit, but the live objection about textual claims and reality remains mostly unanswered.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The reply moves from order to process, duration, genre, and Moses' audience without answering whether the sequence is accurate."
+                }
+              ]
+            },
+            con: {
+              time: "56:42",
+              role: "Order challenge",
+              words:
+                "Dillahunty asks whether Genesis' order of events matches reality and argues that calling order 'process' avoids the textual question.",
+              score: 83,
+              critique:
+                "Dillahunty's question is sharp because it narrows the interpretive dispute to one factual issue: if Genesis lists an order, is that order true? That prevents the conversation from dissolving into broad claims about poetry or ancient audience. He is also right that order and mechanism are not identical, so answering about process does not settle the question. The weakness is that he sometimes overstates by suggesting his reading is simply 'what it actually says,' when ancient genre and theological arrangement can legitimately affect how order functions. The score is high because he exposes an evasive answer and keeps the burden localized, but not higher because interpretive complexity deserves more room.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Skepticism and method",
+        timebox: "01:16:51-01:37:29",
+        score: {
+          pro: 67,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:16:51",
+              role: "Anti-cynicism reply",
+              words:
+                "Knechtle says cynics only tear down, while skeptics study the evidence, read the Gospels, evaluate Jesus' reliability, and pray openly.",
+              score: 67,
+              critique:
+                "Knechtle's call for skepticism rather than cynicism has a fair pastoral concern. A critic can sometimes dismantle without offering a constructive account, and readers should examine the source documents rather than rely on slogans. His invitation to read the Gospels seriously is therefore relevant. The weakness is that he frames Dillahunty's burden-of-proof objections as hollow cynicism even when they identify specific inferential gaps. Adding prayer also changes the method: private openness to the Holy Spirit may be meaningful within faith, but it is not a public test that can distinguish Christianity from other religions making similar appeals. The score is mixed because the anti-cynicism warning is useful, while the actual methodological answer stays underspecified.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "Dillahunty's specific methodological objections are recast as cynicism, shifting attention from the evidence standard under dispute."
+                }
+              ]
+            },
+            con: {
+              time: "01:17:00",
+              role: "Burden distinction",
+              words:
+                "Dillahunty distinguishes skepticism from denial, says exposing a bad method does not require a better supernatural method, and separates reliability from truth.",
+              score: 86,
+              critique:
+                "Dillahunty's reply is logically disciplined. He distinguishes not having a method to prove the supernatural from accepting a flawed method that purports to do so. That matters because a critic can defeat an argument without supplying a full alternative theory of miracles. His later clarification that reliability of textual transmission is separate from truth of the content also directly answers a viewer objection. The weakness is that his 'no such thing as too skeptical' line is too quick; excessive doubt can become practically self-defeating if standards are impossible to meet. Still, the score is high because his burden distinction prevents an illegitimate reversal and keeps the evaluation tied to the motion.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral texts and divine silence",
+        timebox: "01:38:50-01:57:45",
+        score: {
+          pro: 66,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:39:28",
+              role: "Fall framework",
+              words:
+                "Knechtle says Genesis grounds male-female equality, later evils reflect the fall and hard hearts, and Exodus 21:16 condemns kidnapping.",
+              score: 66,
+              critique:
+                "Knechtle's moral answer has a coherent theological framework: creation establishes equal value, human rebellion corrupts social practice, and God can permit fallen arrangements without endorsing them as ideal. That distinction matters when evaluating descriptive biblical narratives. The weakness is that the specific textual challenge concerns regulation and permission, not merely whether slavery or sexism was God's best. Citing Exodus 21:16 against kidnapping does not answer the surrounding laws that regulate slavery, and Matthew 19 on divorce does not directly resolve slave law. His free-will answer to evil is familiar but leaves unanswered why an omnipotent God intervenes in resurrection yet not preventable suffering. The score is mixed because the framework is intelligible, but several direct objections remain.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "Divorce and kidnapping texts are used to answer questions about slavery regulation and unequal biblical status."
+                }
+              ]
+            },
+            con: {
+              time: "01:41:24",
+              role: "Textual rebuttal",
+              words:
+                "Dillahunty says biblical women and men are not treated equally, Exodus regulates slavery rather than bans it, and God should provide better evidence.",
+              score: 86,
+              critique:
+                "Dillahunty's moral rebuttal is strong because it presses the text at the point where broad theological ideals meet legal detail. He distinguishes condemning kidnapping from prohibiting slavery and notes that a chapter can both punish man-stealing and still regulate ownership, release, and beating. That is a direct answer to the cited passage. His comments on women also force Knechtle to address unequal legal and social treatment rather than only image-of-God language. The weakness is that Dillahunty's delivery becomes caustic, and his secular grounding for dignity remains comparatively brief. But the substantive challenge lands: if Christianity is true, the moral record and divine silence need more than ideal-versus-fallen distinction. The score is high because the textual response is precise.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 68,
+        strengths: [
+          "Knechtle gave the audience a clear Christian worldview frame, connecting human value, morality, meaning, hope, and resurrection into one cumulative case.",
+          "He repeatedly resisted crude scientism by reminding listeners that historical, relational, moral, and empirical questions are not evaluated in identical ways.",
+          "He treated the resurrection as the central falsifiable hinge of Christianity rather than hiding the debate inside generic theism."
+        ],
+        blunders: [
+          {
+            text:
+              "He often treated textual reliability, archaeology, and manuscript agreement as if they carried much more weight toward miracle truth than they can bear.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "He leaned heavily on church fathers and traditional authorship claims when the live issue was direct eyewitness access and self-identification.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          },
+          {
+            text:
+              "He repeatedly recast methodological objections as cynicism, dishonesty, or bad interpretation instead of answering the narrow burden being raised.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 85,
+        strengths: [
+          "Dillahunty kept the burden of proof centered on a public method for distinguishing Christianity from rival religions and unsupported testimony.",
+          "He cleanly separated ordinary historical claims, textual transmission, source reliability, and the much stronger claim that a resurrection occurred.",
+          "His Genesis, authorship, and slavery responses pressed specific textual questions rather than staying at the level of broad anti-religious rhetoric."
+        ],
+        blunders: [
+          {
+            text:
+              "His combative tone and profanity sometimes shifted attention from strong distinctions to the interpersonal heat of the exchange.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His positive secular account of meaning, value, and morality remained brief compared with his destructive critique of Christian claims.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His claim that one cannot be too skeptical was overstated, since skepticism can become unreasonable if evidential standards are unreachable.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
