@@ -19770,5 +19770,358 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "scrivener-dillahunty-atheism-morality-2020",
+    number: "57",
+    title: "Glen Scrivener vs Matt Dillahunty: Can Atheism Deliver a Better World?",
+    label: "Atheism and Christian moral inheritance",
+    date: "2026-06-03",
+    duration: "1 hr 30 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=B3-sjyDYO2I",
+    motion:
+      "Can atheism or secular humanism provide a better moral foundation for society than Christianity?",
+    summary:
+      "Scrivener argues that Christian revelation uniquely grounds universal human dignity and the protection of the weak; Dillahunty argues that secular humanism can keep useful moral insights without religious truth claims.",
+    sourceNote:
+      "Built from YouTube en-orig automatic captions for the Premier Unbelievable? upload, downloaded with python3 -m yt_dlp on 2026-06-03. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "The fittest... sacrificed for the survival of the weakest.",
+        context:
+          "Scrivener treats the cross as the distinctive Christian inversion that grounds dignity for the weak, marginalized, and excluded."
+      },
+      con: {
+        text: "I have yet to find... an objection to secular morality that religion solves.",
+        context:
+          "Dillahunty's central reply is that invoking God does not answer the foundation, evidence, or agreement problems raised against secular morality."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian moral foundation",
+        speaker: "Glen Scrivener",
+        color: "teal"
+      },
+      con: {
+        name: "Secular humanism",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 76,
+      con: 81
+    },
+    sections: [
+      {
+        title: "Atheism as movement",
+        timebox: "09:06-20:30",
+        score: {
+          pro: 75,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "17:10",
+              role: "Religious-spirit diagnosis",
+              words:
+                "Scrivener says secular movements can form orthodoxies, exclusions, and moral puritanism because humans gather around highest values like religious communities do.",
+              score: 75,
+              critique:
+                "Scrivener's religious-spirit diagnosis is useful because it avoids the shallow claim that atheists have no values. He sees that secular moral communities also create sacred boundaries, insiders, outsiders, and anathemas. The appeal to Jonathan Haidt's bind-and-blind framework gives the point psychological plausibility, and it helps explain why post-religious politics can still become intensely moralistic. The weakness is that the argument can blur atheism, secular progressivism, cancel culture, and human social psychology into one loose critique. If the problem is general human tribalism, it is not a special defect in atheism. The score is solid because the insight is relevant, but the target is diffuse here.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument moves between atheism, secular politics, and human tribal behavior as if they were the same explanatory target."
+                }
+              ]
+            },
+            con: {
+              time: "14:54",
+              role: "Atheism narrowed",
+              words:
+                "Dillahunty says atheism only means not being convinced there is a God; broader moral and political commitments belong to secular humanism or specific organizations.",
+              score: 82,
+              critique:
+                "Dillahunty's narrowing move is strong because it prevents the debate from loading atheism with every view held by some atheists. He distinguishes the bare philosophical position from activist movements, secular humanist values, and the policies of particular organizations. That makes his answer to the headline question precise: atheism alone cannot deliver a better world, but secular humanism might. The weakness is that the public debate is not only about dictionary atheism; many atheist movements do package moral and political commitments together. Still, this clarification improves the conversation. The score is high because it removes a category mistake while leaving room to evaluate secular humanism on its own terms.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Religion's public benefits",
+        timebox: "23:02-31:38",
+        score: {
+          pro: 77,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "23:02",
+              role: "Intrinsic-religiosity evidence",
+              words:
+                "Scrivener argues that intrinsic religiosity correlates with health, happiness, charity, resilience, family stability, and public benefit that governments should notice.",
+              score: 77,
+              critique:
+                "Scrivener's public-benefit argument is relevant and concrete. Instead of claiming religion is socially useful in vague terms, he names measurable domains: longevity, happiness, depression resistance, divorce, suicide, charity, volunteering, and blood donation. His intrinsic-versus-extrinsic distinction also matters, because committed religious identity may function differently from mere attendance or social convenience. The weakness is evidential compression. He refers to thousands of studies and broad percentages without giving enough controls, effect sizes, or cross-national comparisons inside the discussion. Correlation, selection effects, and self-reporting also remain live concerns. The score is solid because the empirical line matters, but the debate format leaves much of the burden offstage today.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Large bodies of studies are invoked as decisive without enough in-debate detail about methods, controls, or comparative strength."
+                }
+              ]
+            },
+            con: {
+              time: "26:37",
+              role: "Methodology and truth reply",
+              words:
+                "Dillahunty grants religion can help, but questions self-reporting, causation, community effects, and whether any benefit requires the religion to be true.",
+              score: 80,
+              critique:
+                "Dillahunty's reply is well aimed because he does not deny that religious people can benefit from religious practice. He separates usefulness from truth and asks whether the same benefits might come from community, meditation, compelling but false belief, or secular support structures. His self-reporting objection is also fair, especially where religious cultures may reward presenting oneself as flourishing. The weakness is that he gestures toward methodological problems more than demonstrating that Scrivener's cited literature fails. He is right to ask for causal mechanisms, but the exchange does not supply a rival empirical review. The score is strong because it blocks the slide from benefit to truth while conceding the real data question.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Truth, utility, and deconversion",
+        timebox: "31:38-38:12",
+        score: {
+          pro: 80,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "34:07",
+              role: "Truth-before-workability claim",
+              words:
+                "Scrivener says Christianity must be true, not merely useful, and that its practical workability is best explained by its truth.",
+              score: 80,
+              critique:
+                "Scrivener's truth-before-workability claim is one of his better moves. He explicitly refuses the view that Christianity should be kept merely because it makes people happy, and his appeal to Paul's 'to be pitied' posture makes the truth stakes clear. That protects him from a crude therapeutic defense of religion. The inference that Christianity works because it is true is more contestable. Many false or partly false frameworks can structure hope, discipline, identity, and community. Scrivener calls this an inference to the best explanation, but the live alternatives need more careful comparison. The score is strong because he frames utility properly under truth, but the explanatory leap remains under-argued.",
+              tags: []
+            },
+            con: {
+              time: "31:53",
+              role: "False-promise objection",
+              words:
+                "Dillahunty says deconversion can hurt, but the deeper problem is the original false promise, not the later discovery that the promise was false.",
+              score: 82,
+              critique:
+                "Dillahunty's false-promise objection is strong because it treats psychological harm seriously without making truth hostage to comfort. His inheritance analogy is apt: if someone built life around a promised fortune that never existed, the pain of discovery does not make the discovery the original wrong. He also acknowledges that some people leaving religion face nihilism, family loss, or community collapse, which keeps the reply humane. The weakness is that practical responsibility still matters; public critics can owe people better exits, communities, and pastoral caution even if the belief is false. The score is high because the point cleanly separates truth-seeking from harm avoidance while admitting deconversion costs.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Christianity and humanism",
+        timebox: "38:12-48:40",
+        score: {
+          pro: 78,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "39:30",
+              role: "Moral-inheritance thesis",
+              words:
+                "Scrivener argues that secular humanism is Christianity with God swapped out, because universal dignity and concern for enemies come from the Christian story.",
+              score: 78,
+              critique:
+                "Scrivener's moral-inheritance thesis has historical bite. He identifies a genuinely distinctive Christian emphasis: the strong sacrificing for the weak, the outsider drawn in, and enemies included within moral concern. That is a serious challenge to any secular humanism that treats its values as culturally obvious. The weakness is that he overstates uniqueness. Judaism, Stoicism, other religious traditions, moral reform movements, and ordinary human empathy all complicate the claim that modern universalism is simply Christianity with God removed. He also needs to distinguish historical influence from present justification. The score is strong because the genealogy matters, but it cannot by itself settle whether secular humanism now stands.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The genealogy gives Christianity special explanatory priority without enough allowance for mixed sources and later independent warrants."
+                }
+              ]
+            },
+            con: {
+              time: "42:15",
+              role: "Best-ideas reply",
+              words:
+                "Dillahunty says secular humanism can take good ideas wherever they appear, reject slavery, genocide, and misogyny, and avoid religious baggage.",
+              score: 83,
+              critique:
+                "Dillahunty's best-ideas reply is effective because it separates origin from warrant. Even if some modern moral insights became popular through Christianity, secular humanists can ask which ideas actually promote human well-being and discard the rest. His Bible example is pointed: reversing the text's permission of slavery would improve it for anyone using it as an instruction book. The weakness is that selecting the 'good parts' still requires a standard, and Dillahunty's well-being standard remains initially asserted rather than fully grounded. The score is high because the reply blocks historical ownership claims, but not higher because the positive secular criterion still needs defense against hard cases.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Foundations and human dignity",
+        timebox: "48:40-01:07:23",
+        score: {
+          pro: 79,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:01:05",
+              role: "Dignity foundation",
+              words:
+                "Scrivener says humanism needs a basis for why every human, including the weak and disabled, deserves provision and protection.",
+              score: 79,
+              critique:
+                "Scrivener's dignity-foundation argument is the debate's central pressure on secular humanism. He asks not merely whether Matt values humans, but why the circle should include all humans regardless of ability, productivity, strength, or social contribution. The Down syndrome example gives this urgency rather than leaving it abstract. The weakness is that Scrivener sometimes treats Christian grounding as available once secular grounding looks thin. But asserting imago Dei or incarnation does not automatically persuade those outside the story, nor does it remove interpretive disputes among Christians. The score is strong because he presses the right moral vulnerability, but the offered foundation still requires its own defense.",
+              tags: []
+            },
+            con: {
+              time: "01:03:21",
+              role: "Same-problem rebuttal",
+              words:
+                "Dillahunty says religious foundations face the same problem: unless people accept God as moral authority, invoking God does not make the system work.",
+              score: 81,
+              critique:
+                "Dillahunty's same-problem rebuttal is a disciplined burden check. He argues that the usual objection to secular morality, 'why should anyone accept that foundation?', also applies to religious morality unless God is demonstrated and accepted as authority. That prevents Scrivener from treating God-language as a solved foundation rather than another contested premise. His point that shared human concern can at least start practical reasoning is also useful. The weakness is that he shifts between epistemic access, public agreement, and ontological grounding. Scrivener can answer that moral truths need not be recognized to be true. The score is high because Dillahunty exposes a real dialectical parity problem, though not a full metaphysical answer.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Hard cases and moral force",
+        timebox: "01:07:23-01:29:02",
+        score: {
+          pro: 76,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:19:43",
+              role: "Hitler and weak-protection test",
+              words:
+                "Scrivener asks whether well-being can condemn Nazis or disability elimination when the powerful claim society is better without the weak.",
+              score: 76,
+              critique:
+                "Scrivener's hard-case test is emotionally and philosophically serious. By invoking Nazis, disability elimination, and the nonproductive person, he asks whether secular well-being can protect those whom the strong find costly. That is exactly where a moral foundation must be stress-tested. The weakness is that the exchange sometimes compresses too much into extreme cases. Well-being theorists can include rights, fear, social trust, long-term corruption, empathy, and the costs of brutalization; Scrivener sometimes treats the secular answer as if it must be narrow productivity arithmetic. The score is solid because the challenge matters, but the framing risks making the secular view easier to defeat than it is.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The hard cases sometimes redirect attention toward a narrowed productivity version of well-being rather than Dillahunty's broader view."
+                }
+              ]
+            },
+            con: {
+              time: "01:20:00",
+              role: "Shared-foundation procedure",
+              words:
+                "Dillahunty says moral disagreement should seek shared foundations, evidence, and conflicts with agreed goals; if persuasion fails, force may be necessary.",
+              score: 79,
+              critique:
+                "Dillahunty's shared-foundation procedure is practical and appropriately modest. He does not claim secular humanism magically dissolves conflict; he proposes finding agreed premises, testing actions against them, and using evidence about broader effects. That is a real method for pluralistic moral dispute, and his willingness to say force may be necessary avoids naive proceduralism. The weakness is that when someone rejects human value entirely, the method has little to say beyond persuasion, shared interests, or eventual coercion. Scrivener's question is precisely whether that is enough moral force. The score is solid-strong because Dillahunty gives a workable civic procedure, but it remains thinner than a full account of objective obligation.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 76,
+        strengths: [
+          "Scrivener pressed the hardest issue for secular humanism: why the weak, disabled, nonproductive, and excluded should remain inside the protected moral circle.",
+          "He distinguished religious usefulness from religious truth and refused to defend Christianity merely as a social placebo.",
+          "His account of the cross as the strong sacrificed for the weak gave the Christian side a clear moral center."
+        ],
+        blunders: [
+          {
+            text:
+              "He often moved from Christianity's historical influence on Western moral language to the stronger claim that secular humanism cannot justify those values now.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His appeals to broad religion-benefit research were too compressed to settle causation, selection effects, or comparison with future secular communities.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          },
+          {
+            text:
+              "His hard-case objections sometimes treated well-being humanism as narrower and more productivity-driven than Dillahunty actually claimed.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 81,
+        strengths: [
+          "Dillahunty consistently separated atheism from secular humanism, usefulness from truth, and historical influence from present warrant.",
+          "He fairly conceded that religion can provide community, calm, and psychological benefit while denying that those benefits require religious truth.",
+          "He repeatedly exposed the parity problem: appealing to God does not automatically solve grounding, evidence, or public-agreement problems."
+        ],
+        blunders: [
+          {
+            text:
+              "His well-being foundation was often treated as a practical starting point without enough argument for why it should bind the dissenter.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "He sometimes treated religious moral claims as if their weakest scriptural or sacrificial formulations captured the strongest Christian account.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His civic procedure for hard cases was plausible but thin when facing actors who openly reject universal human value.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
