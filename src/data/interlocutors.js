@@ -142,6 +142,11 @@ export const interlocutorAvatars = [
     aliases: ["Matt Lutz", "Matthew Lutz"]
   },
   {
+    name: "Matt Slick",
+    src: `${avatarBasePath}/matt-slick.webp`,
+    aliases: ["Matt Slick", "Matthew Slick"]
+  },
+  {
     name: "Joseph Schmid",
     src: `${avatarBasePath}/joseph-schmid.webp`,
     aliases: ["Joseph Schmid", "Joseph C. Schmid", "Joe Schmid"]
