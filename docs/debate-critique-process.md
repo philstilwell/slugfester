@@ -35,8 +35,9 @@ Every debate object should produce this order:
 
 - Use 4-7 topical sections for a long-form debate.
 - Each section should cover one clear argumentative movement.
-- Use the YouTube/transcript time range in `timebox`; keep upload timing separate from the `date` field.
+- Use the YouTube/transcript time range in `timebox`; keep upload timing separate from the `date` field. The displayed range links to the YouTube source at the range's start time. The renderer accepts `MM:SS`, long-minute `MMM:SS`, and `H:MM:SS` formats.
 - Each exchange should align the two sides on the same issue whenever possible.
+- Use YouTube/transcript timestamps in `argument.time`; displayed argument timestamps link to the YouTube source at that exact moment. Keep the visible timestamp faithful to the source transcript.
 - Prefer 1-3 exchanges per section rather than exhaustive coverage.
 
 ## Quote Standard

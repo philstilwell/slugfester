@@ -902,6 +902,18 @@ a {
   text-transform: uppercase;
 }
 
+.timestamp-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.timestamp-link:hover,
+.timestamp-link:focus-visible {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .card-label {
   display: inline-flex;
   align-items: center;

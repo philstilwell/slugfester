@@ -49,6 +49,31 @@ const anchorSlug = (value = "") =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 
+function timestampToSeconds(value = "") {
+  const normalized = String(value).trim();
+  if (!/^\d+:\d{2}(?::\d{2})?$/.test(normalized)) return null;
+
+  const parts = normalized.split(":").map(Number);
+  return parts.reduce((total, part) => total * 60 + part, 0);
+}
+
+function timestampStart(value = "") {
+  return String(value).split(/[–—-]/)[0]?.trim() || "";
+}
+
+function timestampedYouTubeUrl(youtubeUrl, timestamp) {
+  const seconds = timestampToSeconds(timestampStart(timestamp));
+  if (seconds === null) return youtubeUrl;
+
+  try {
+    const url = new URL(youtubeUrl);
+    url.searchParams.set("t", `${seconds}s`);
+    return url.href;
+  } catch {
+    return youtubeUrl;
+  }
+}
+
 const scoreTone = (score) => {
   if (score >= 80) return "strong";
   if (score >= 65) return "mixed";
@@ -804,7 +829,7 @@ function renderSection(section, debate) {
     <section class="debate-section">
       <div class="section-title-row">
         <div>
-          <p class="eyebrow">${escapeHtml(section.timebox)}</p>
+          <p class="eyebrow">${renderTimestampLink(section.timebox, debate.youtubeUrl, `Open YouTube source at ${section.timebox}`)}</p>
           <h2>${escapeHtml(section.title)}</h2>
         </div>
         <div class="section-score-pair">
@@ -843,7 +868,7 @@ function renderArgument(argument, tone, debate, section, sideKey) {
   return `
     <article class="argument ${tone}">
       <div class="argument-meta">
-        <span>${escapeHtml(argument.time)}</span>
+        <span>${renderTimestampLink(argument.time, debate.youtubeUrl, `Open YouTube source at ${argument.time}`)}</span>
         <span>${escapeHtml(argument.role)}</span>
         <strong class="${scoreTone(argument.score)}">${argument.score}</strong>
       </div>
@@ -853,6 +878,16 @@ function renderArgument(argument, tone, debate, section, sideKey) {
         ${renderTags(argument.tags, debate, section, sideKey, argument)}
       </div>
     </article>
+  `;
+}
+
+function renderTimestampLink(label, youtubeUrl, ariaLabel) {
+  const href = timestampedYouTubeUrl(youtubeUrl, label);
+
+  return `
+    <a class="timestamp-link" href="${escapeHtml(href)}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(ariaLabel)}">
+      ${escapeHtml(label)}
+    </a>
   `;
 }
 
@@ -1079,7 +1114,7 @@ function renderReferenceAppearance(appearance) {
     <article class="reference-context-card" id="${escapeHtml(occurrenceId)}">
       <div class="card-topline">
         <a class="reference-debate-link" href="${escapeHtml(debateHref)}">${escapeHtml(debateNumberLabel(appearance.debate))} · ${escapeHtml(appearance.debate.label)}</a>
-        <span>${escapeHtml(appearance.argument.time)}</span>
+        <span>${renderTimestampLink(appearance.argument.time, appearance.debate.youtubeUrl, `Open YouTube source at ${appearance.argument.time}`)}</span>
       </div>
       <h3>${escapeHtml(appearance.section.title)}</h3>
       <p class="reference-speaker">${escapeHtml(appearance.side.name)} · ${escapeHtml(appearance.side.speaker)} · ${escapeHtml(appearance.argument.role)}</p>
