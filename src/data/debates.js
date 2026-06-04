@@ -20123,5 +20123,381 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "dillahunty-slick-secular-humanism-christianity-2016",
+    number: "58",
+    title: "Matt Dillahunty vs Matt Slick: Is Secular Humanism Superior to Christianity?",
+    label: "Secular humanism and presuppositional critique",
+    date: "2026-06-03",
+    duration: "2 hr 43 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=EKlycI9ZKsY",
+    motion:
+      "Is secular humanism superior to Christianity at achieving human flourishing, rational decision-making, moral reasoning, and conflict resolution?",
+    summary:
+      "Dillahunty argues that secular humanism is more revisable, evidence-facing, and focused on this-world human flourishing; Slick argues that it self-refutes because it cannot ground logic, science, or morality without Christianity.",
+    sourceNote:
+      "Built from an audio transcription because no YouTube captions were available: the upload was downloaded with python3 -m yt_dlp, converted and split into 20-minute MP3 chunks with local ffmpeg, then transcribed with OpenAI gpt-4o-mini-transcribe on 2026-06-03. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Let's strive to find better ways to do better.",
+        context:
+          "Dillahunty's central posture is that secular humanism improves human life by using evidence, reason, and revision rather than fixed supernatural authority."
+      },
+      con: {
+        text: "If it refutes itself, it cannot be superior.",
+        context:
+          "Slick's central posture is that secular humanism fails before the practical comparison begins because it cannot justify the logic, science, or ethics it uses."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Secular humanism",
+        speaker: "Matt Dillahunty",
+        color: "teal"
+      },
+      con: {
+        name: "Christian foundations",
+        speaker: "Matt Slick",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 82,
+      con: 68
+    },
+    sections: [
+      {
+        title: "Goals and definitions",
+        timebox: "08:55-46:05",
+        score: {
+          pro: 84,
+          con: 72
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:20",
+              role: "Human-flourishing frame",
+              words:
+                "Dillahunty defines secular humanism as finding better ways to do better through evidence, reason, and human flourishing rather than dogma or supernatural foundations.",
+              score: 84,
+              critique:
+                "Dillahunty's goal-setting move is strong because it defines the debate around a shared practical target rather than treating secular humanism as mere unbelief. He names methods, values, and revision, then ties them to concrete human flourishing. That makes the affirmative case relevant to the moderator's definition of superiority as better achieving a preferred goal. The weakness is that the goal itself is introduced as a starting point more than defended as binding on someone who rejects human welfare. Dillahunty can plausibly say that such a person has left the debate, but that is a procedural answer, not a grounding answer. The score is high because the frame fits the motion, while leaving the deepest normative foundation open.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "Human flourishing is used as the measuring standard before its authority over dissenters is independently defended."
+                }
+              ]
+            },
+            con: {
+              time: "40:40",
+              role: "Common-standard challenge",
+              words:
+                "Slick says superiority requires a non-arbitrary standard common to both worldviews, and a self-refuting secular humanism cannot be superior.",
+              score: 72,
+              critique:
+                "Slick's common-standard challenge is fair and potentially important. If the debate asks which worldview is superior, the judge needs some standard that both sides can understand, and Slick is right that arbitrary preference would make the verdict thin. His opening also gives Christianity a clear defensive aim: show that secular humanism lacks preconditions for rational evaluation. The problem is target drift. Dillahunty defined secular humanism around public evidence, reason, and human welfare, while Slick often treated it as philosophical naturalism, atheism, and physicalism all at once. That equivocation lets Slick attack a stronger metaphysical package than the one actually defended. The score is solid but limited because the standard question matters, yet the target is unstable.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The critique slides among secular humanism, atheism, philosophical naturalism, and physicalism as if they were the same claim."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Methods and evidence",
+        timebox: "16:10-52:40",
+        score: {
+          pro: 86,
+          con: 70
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "18:30",
+              role: "Public-method argument",
+              words:
+                "Dillahunty contrasts secular methods with prayer, arguing that medicine, measurement, calculation, and revision teach reliable processes rather than merely lucky answers.",
+              score: 86,
+              critique:
+                "Dillahunty's method argument is one of his strongest opening moves. By comparing prayer, medicine, calculation, measurement, and scientific revision, he shows what a public method looks like: results can be checked, errors corrected, and improvements taught to others. That is directly relevant to whether secular humanism is more adept at achieving human flourishing. The argument also avoids claiming absolute certainty; it relies on comparative reliability. The weakness is that some examples, especially intercessory-prayer studies and social progress claims, are asserted quickly rather than sourced in detail. A Christian could also accept science while rejecting secular humanism. The score is high because the method/result distinction is clear and topical, though the evidential base is compressed.",
+              tags: []
+            },
+            con: {
+              time: "47:15",
+              role: "Science-presupposition reply",
+              words:
+                "Slick says science depends on logic and the uniformity of nature, which secular humanism cannot justify, while Christianity expects an orderly universe from God.",
+              score: 70,
+              critique:
+                "Slick's science-foundation reply raises a real philosophical question: science presupposes logic, induction, and regularity before any experiment can validate them. That point is worth discussing because secular humanism often leans heavily on science and public reason. The weakness is that Slick moves from 'science has presuppositions' to 'Christianity uniquely justifies them' without enough connective argument. Saying God made a consistent universe may fit Christian theology, but it does not demonstrate that Christianity is the only or best account of scientific practice, nor that secular humanists cannot use science responsibly. The score is mixed-solid because the challenge identifies a genuine foundation issue, but the proposed solution is mostly asserted.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Christianity is treated as solving scientific presuppositions without giving the same public-account burden placed on secular humanism."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral reasoning and consequences",
+        timebox: "27:50-57:30",
+        score: {
+          pro: 80,
+          con: 74
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "30:35",
+              role: "Civic moral procedure",
+              words:
+                "Dillahunty appeals to autonomy, fairness, equality, tolerance, cooperation, situational ethics, and a veil of ignorance to reduce bias in moral reasoning.",
+              score: 80,
+              critique:
+                "Dillahunty's moral-method argument is persuasive as a civic procedure. Autonomy, fairness, equality, tolerance, cooperation, and the veil of ignorance give listeners a usable way to reduce special pleading and negotiate moral conflicts. His bread-stealing example also clarifies why situational ethics is not the same as whim: context can change the moral assessment because human consequences change. The weakness is that the argument works best among people who already care about minimizing harm and promoting mutual flourishing. It gives a practical method for shared values more than an ultimate account of why those values obligate everyone. The score is strong because the procedure is relevant and humane, but not decisive against the grounding challenge.",
+              tags: []
+            },
+            con: {
+              time: "53:50",
+              role: "Consequentialism stress test",
+              words:
+                "Slick argues that harm-reduction ethics become arbitrary and uses a hidden assault case to ask whether consequences alone can explain wrongdoing.",
+              score: 74,
+              critique:
+                "Slick's hidden-assault challenge is a serious pressure test for narrow consequentialism. If a moral theory only counts noticed harm, consent and dignity can disappear, so the example usefully asks whether secular humanism has deeper resources than immediate detectable consequences. The weakness is that it attacks a thinner position than Dillahunty's. A human-flourishing account can include consent, agency, future risk, social trust, character corruption, and the victim's rights even when a victim never learns what happened. Slick's example is therefore relevant, but it does not show that all consequence-sensitive ethics collapse into permission. The score is solid because the reductio is vivid, yet it depends on a narrowed version of the opposing standard.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The objection narrows harm to immediately observed effects while bracketing consent, social trust, agency, and broader human-flourishing costs."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Bible, slavery, and interpretation",
+        timebox: "01:08:40-01:34:15",
+        score: {
+          pro: 83,
+          con: 66
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:14:10",
+              role: "Scriptural morality challenge",
+              words:
+                "Dillahunty presses Slick on biblical slavery, saying the text permits owning people as property and asking where Christianity clearly condemns it.",
+              score: 83,
+              critique:
+                "Dillahunty's Bible-and-slavery pressure is concrete and damaging. He does not merely say Christianity has bad followers; he points to biblical texts that permit owning people, permanent servitude for foreigners, and regulated beating. That forces Slick to explain why a supposedly superior moral system did not clearly condemn a profound human wrong. The 'big book of multiple choice' line also captures the interpretive problem: rival Christians can select different texts to justify incompatible moral outcomes. The weakness is that a full Christian moral case can appeal to development, canon, context, and abolitionist history, not only isolated proof-texts. The score is high because the objection is textually anchored and directly tied to human flourishing.",
+              tags: []
+            },
+            con: {
+              time: "01:18:35",
+              role: "Covenant-and-Philemon reply",
+              words:
+                "Slick says Christianity condemns slavery through covenant change, New Testament principles, and Philemon, even if the exact modern wording is absent.",
+              score: 66,
+              critique:
+                "Slick's slavery reply has one fair element: Christian interpretation is not exhausted by quoting an Old Testament civil regulation, and many Christians have read the New Testament as undermining slaveholding. His appeal to covenant change and Philemon gestures toward that larger theological argument. The weakness is that the reply repeatedly sounds like special protection for the tradition. Saying the text does not use modern wording, or that abusive Christians are not representing Christianity, does not answer why the Bible permits ownership language in the first place. The argument also shifts from textual permission to ideal Christian application without clearly bridging them. The score is mixed because there is a real hermeneutic issue, but the direct moral burden remains.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The tradition receives interpretive escape routes that are not paired with a clear explanation of the permissive slavery texts themselves."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Logic, brains, and presuppositions",
+        timebox: "01:35:40-02:19:35",
+        score: {
+          pro: 86,
+          con: 62
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:47:20",
+              role: "Presupposition parity reply",
+              words:
+                "Dillahunty says he presupposes logic, but Slick merely presupposes God one step further and has not demonstrated that God accounts for logic.",
+              score: 86,
+              critique:
+                "Dillahunty's presupposition reply is the debate's cleanest rebuttal. He candidly grants that logic is a starting presupposition, then asks why adding God one step beyond it solves anything rather than merely relocating the assertion. That burden check is effective because both debaters already use logic, share ordinary reality, and rely on independent confirmation. Dillahunty also correctly distinguishes lacking an ultimate account from being self-refuting. The weakness is that his answer remains modest: it does not produce a full secular foundation for logic, and listeners wanting metaphysical closure may find the stop-point unsatisfying. The score is very high because he neutralizes Slick's claimed defeater without pretending to solve every epistemic problem.",
+              tags: []
+            },
+            con: {
+              time: "01:55:10",
+              role: "Chemical-reaction defeater",
+              words:
+                "Slick argues that if thoughts are just chemical reactions, secular humanists cannot know whether their reasoning tracks truth, so their worldview self-refutes.",
+              score: 62,
+              critique:
+                "Slick's chemical-reactions argument is memorable and structured, but it overreaches. The strongest part is that he presses a real puzzle about how physical processes yield norm-governed reasoning, not just behavior. That is a legitimate philosophy-of-mind problem. The weakness is the leap from present explanatory difficulty to secular humanism refuting itself. A brain being physical does not imply its outputs cannot track truth, any more than a physical calculator cannot compute because it is circuitry. Slick also repeatedly treats 'I do not see how this works' as a defeat of the worldview while exempting his own God-account from comparable public demonstration. The score is low-mixed because the question is important, but the inference is too fast.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The inability to explain reasoning from chemistry is treated as evidence that secular reasoning cannot be trusted."
+                },
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The Christian God-account is spared the same public-demonstration burden used to reject the secular account."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Q&A, harms, and closing focus",
+        timebox: "02:00:00-02:43:26",
+        score: {
+          pro: 83,
+          con: 71
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "02:34:20",
+              role: "Methods-and-results closing",
+              words:
+                "Dillahunty says the debate should be decided by methods and results for human flourishing, not by an unproved afterlife or an infinite regress about foundations.",
+              score: 83,
+              critique:
+                "Dillahunty's late answers and closing keep the affirmative case disciplined. He treats afterlife promises as unverified and therefore irrelevant to judging this life, admits hard solipsism instead of overselling certainty, and insists that independent confirmation is how humans check delusion. His answer to useful falsehoods is also principled: truth should not be discarded because a lie gets a short-term benefit. The weakness is that several late points, especially Christian harms and secular progress, are too broad for the evidence presented in the room. The score is high because his closing returns to methods, results, and human flourishing, which were the motion's live criteria, while accepting real epistemic limits.",
+              tags: []
+            },
+            con: {
+              time: "02:40:25",
+              role: "Christian-foundation closing",
+              words:
+                "Slick says Christianity supplies God as the precondition for intelligibility, ethics, and science, while secular humanism remains self-refuting.",
+              score: 71,
+              critique:
+                "Slick's late material is strongest when he appeals to sacrificial love and condemns Christians who mistreat unbelieving family members. Those moments give the Christian side moral content rather than only a transcendental objection, and his willingness to work against family rejection is admirable. The weakness is that his closing mostly repeats self-refutation language instead of supplying the missing method-and-results comparison. The claim that secular humanism harms people by leaving them under divine punishment also depends entirely on accepting his theology, so it cannot function as shared debate evidence. The score is moderate because Slick articulates Christian moral ideals, but he never fully reconnects them to the stated superiority test.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 82,
+        strengths: [
+          "Dillahunty kept returning to the motion's practical test: which system better promotes human flourishing through methods, results, revision, and conflict resolution.",
+          "He conceded epistemic limits on logic and hard solipsism without letting those limits become a self-refutation of ordinary reasoning.",
+          "His slavery, afterlife, and prayer examples gave the secular-humanist case concrete pressure points rather than only abstract preference language."
+        ],
+        blunders: [
+          {
+            text:
+              "His well-being standard was often presented as the shared starting point rather than fully defended as binding on someone who rejects human flourishing.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His broad claims about Christian decline and social improvement were too compressed to separate causation, correlation, and selective examples.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His Bible critique was textually strong but sometimes compressed Christianity's wider interpretive resources into the weakest proof-texting form.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 68,
+        strengths: [
+          "Slick pressed the hardest philosophical pressure point for secular humanism: whether logic, science, and moral evaluation can be justified within a non-theistic worldview.",
+          "He gave the Christian side a structured three-part case around rationality, science, and ethics rather than relying only on biblical assertion.",
+          "In Q&A, he clearly condemned Christian mistreatment of unbelievers and gave the tradition some positive moral content through sacrificial love."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly treated secular humanism, atheism, philosophical naturalism, and reductive physicalism as interchangeable targets.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His claim that chemistry cannot yield trustworthy inference moved from an unresolved explanation problem to worldview self-refutation too quickly.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His God-account for logic, science, and ethics was asserted as uniquely successful without meeting the same demonstration burden he demanded of secular humanism.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
