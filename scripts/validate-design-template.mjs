@@ -58,7 +58,8 @@ requireIncludes("app reference route", app, "Why this label appears here");
 requireIncludes("app reference route", app, "Back to this debate");
 requireIncludes("app reference route", app, "reference-debate-link");
 requireIncludes("app reference route", app, "Open debate scorecard");
-requireIncludes("app tag links", app, "referenceHref(tag.url, debateId)");
+requireIncludes("app tag links", app, "referenceOccurrenceId");
+requireIncludes("app tag links", app, "referenceHref(tag.url, debate.id, occurrenceId)");
 requireIncludes("app tag popovers", app, 'class="tag-popover"');
 requireIncludes("app tag popovers", app, "Click button for more info.");
 
@@ -102,6 +103,7 @@ requireIncludes("tag popovers", styles, ".tag-wrap:hover .tag-popover");
 requireIncludes("reference nav", styles, ".reference-nav");
 requireIncludes("reference links", styles, ".reference-debate-link");
 requireIncludes("reference links", styles, ".reference-debate-return");
+requireIncludes("reference anchors", styles, "scroll-margin-top: 92px;");
 requireIncludes("argument grid", styles, ".exchange-grid");
 requireIncludes("argument grid", styles, "align-items: start;");
 requireIncludes("argument cards", styles, "min-height: 0;");

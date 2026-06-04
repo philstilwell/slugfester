@@ -19441,5 +19441,334 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "huemer-lutz-morality-real-2026",
+    number: "56",
+    title: "Mike Huemer vs Matt Lutz: Is Morality Real?",
+    label: "Moral realism and error theory",
+    date: "2026-06-03",
+    duration: "1 hr 42 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=-w2auo-Y5Wg",
+    motion:
+      "Are there objective moral facts, and can moral knowledge be justified by appearances rather than only by best-explanation evidence?",
+    summary:
+      "Huemer defends objective moral facts through phenomenal conservatism, ordinary moral judgments, and rationalist a priori knowledge; Lutz argues for moral error theory, Humean reasons, and explanationist epistemology.",
+    sourceNote:
+      "Built from YouTube en-orig automatic captions for the Miles K. Donahue upload, downloaded with python3 -m yt_dlp on 2026-06-03. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Appearances provide justification in the absence of defeaters.",
+        context:
+          "Huemer's realist case rests on phenomenal conservatism: if moral propositions seem true and no defeater succeeds, they can be rationally believed."
+      },
+      con: {
+        text: "There are no objective values.",
+        context:
+          "Lutz states the error-theory thesis directly, then argues that categorical moral reasons and moral evidence are both missing."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Moral realism",
+        speaker: "Michael Huemer",
+        color: "teal"
+      },
+      con: {
+        name: "Moral error theory",
+        speaker: "Matt Lutz",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 84,
+      con: 79
+    },
+    sections: [
+      {
+        title: "Openings and burdens",
+        timebox: "00:43-24:19",
+        score: {
+          pro: 84,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "11:53",
+              role: "Phenomenal-conservatism case",
+              words:
+                "Huemer defines objectivity as attitude-independence, rejects subjectivism, non-cognitivism, and error theory, and says moral appearances justify belief absent defeaters.",
+              score: 84,
+              critique:
+                "Huemer's opening is strong because it connects metaethics to a general epistemic principle instead of treating moral realism as a bare preference. He defines subjectivity and objectivity, separates the three anti-realist options, and uses familiar examples such as suffering and torture to argue that error theory has a high initial cost. His claim that appearances justify belief absent defeaters also gives moral intuitions the same broad status as other seemings. The weakness is that the argument begins from judgments many anti-realists will reinterpret rather than reject. The score is high because Huemer gives a clear burden-shifting framework, but it depends on whether appearances survive Lutz's explanatory challenge.",
+              tags: []
+            },
+            con: {
+              time: "00:58",
+              role: "Error-theory opening",
+              words:
+                "Lutz says there are no objective moral facts, no objective values, and no moral evidence because moral claims do not explain our experiences.",
+              score: 80,
+              critique:
+                "Lutz's opening is admirably explicit. He distinguishes moral error theory from moral skepticism, explains categorical normativity as desire-independent reason-giving force, and states why he finds that kind of normativity mysterious. His explanationist epistemology also supplies a unified reason for rejecting moral knowledge: moral truths do not help explain our moral experiences. The weakness is that the argument risks over-tightening evidence to explanatory usefulness. Many domains, especially logic, mathematics, and perhaps basic perceptual trust, may not fit that model cleanly. The score is strong because Lutz defines his view with discipline, but lower than Huemer's opening because his epistemic restriction carries a large burden throughout the debate.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The best-explanation model is extended across evidence generally before enough attention is paid to domains that may not work that way."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Humean reasons and self-conception",
+        timebox: "25:08-52:48",
+        score: {
+          pro: 83,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "36:40",
+              role: "Rational-authority challenge",
+              words:
+                "Huemer argues that partying, marshmallows, second-order desires, and alien desires show that rational reasons cannot be reduced to desire strength or self-conception.",
+              score: 83,
+              critique:
+                "Huemer's rational-authority challenge is effective because it does not merely repeat that moral facts seem obvious. He pressures Lutz's internal account with cases where desire strength, future desire, second-order desire, and self-conception pull apart. The marshmallow and Odysseus examples make the problem intuitive: rational criticism seems to ask what is better or worthier, not merely what belongs to one's deliberative identity. The weakness is that Huemer sometimes moves quickly from that pressure to objective value, while an anti-realist may still develop a more refined internalist account. The score is high because he exposes a real gap in Lutz's replacement for categorical reasons in ordinary deliberation.",
+              tags: []
+            },
+            con: {
+              time: "32:27",
+              role: "Centrality reply",
+              words:
+                "Lutz rejects proportionalism and says stronger reasons track desires central to the agent's self-conception, not passing whims or momentary motivational force.",
+              score: 76,
+              critique:
+                "Lutz's centrality reply is a serious improvement over crude desire-strength Humeanism. By rejecting proportionalism, he avoids saying that a passing overpowering urge automatically creates the strongest reason. Odysseus and the sirens help him explain why some desires are alien to the agent's deliberative perspective even when motivationally intense. The weakness is that centrality itself becomes normatively loaded. If all normativity must come from desires, why should centrality to self-conception have authority unless that authority is already being smuggled in? Lutz candidly admits the account is vague, which is philosophically honest but costly. The score is solid because the move is promising, yet underdeveloped at the key point.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "Centrality is used as a normative standard before the desire-based account has explained why central desires should have special authority."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Would error theory change life?",
+        timebox: "54:36-01:14:02",
+        score: {
+          pro: 82,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "56:03",
+              role: "Practical-consequence objection",
+              words:
+                "Huemer says losing belief in moral facts would make him more selfish and would change emotions, charity, loyalty, indignation, and impartial action.",
+              score: 82,
+              critique:
+                "Huemer's practical-consequence objection is persuasive because it moves beyond abstract semantics. He explains how moral beliefs shape charity, loyalty, indignation, and impartial concern, especially when the emotionally appealing action differs from the action judged best. The effective-altruism and shrimp-welfare examples are useful because they show deliberation overriding immediate sympathy. The weakness is that this is partly autobiographical and psychological. Lutz can reply that Huemer's cold passions, commitments, or values would continue to do much of the motivational work even without realist interpretation. The score is high because Huemer identifies real motivational integration between belief and emotion, but the argument does not by itself prove moral facts exist.",
+              tags: []
+            },
+            con: {
+              time: "58:36",
+              role: "Projective-illusion reply",
+              words:
+                "Lutz says moral belief is a projective overlay on values: remove objective outrage and most people would still act from outrage, concern, and cold passions.",
+              score: 80,
+              critique:
+                "Lutz's projective-illusion reply is plausible and psychologically informed. He explains moral belief as a projection of values onto the world, then argues that removing the projection need not remove the underlying outrage, concern, or long-standing commitments. His appeal to hot and cold passions helps explain why apparently intellectual charitable choices can still be desire-driven. The weakness is that the model can become hard to falsify. When deliberate numerical tradeoffs are redescribed as cold passion, it is difficult to say what would count as evidence that judgment rather than desire is doing the work. The score is strong because the reply is coherent, but Huemer's effective-altruism cases keep pressure on it.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "The desire-based explanation can absorb contrary-looking cases by reclassifying deliberative judgments as hidden or cold passions."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Explanationism versus intuitionism",
+        timebox: "01:14:30-01:28:51",
+        score: {
+          pro: 86,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:19:14",
+              role: "Foundational-seeming argument",
+              words:
+                "Huemer argues that experiences have contents, and that causal and explanatory beliefs themselves must begin from accepting things as they seem.",
+              score: 86,
+              critique:
+                "Huemer's foundational-seeming argument is one of the debate's strongest moves. He asks how explanationism gets started: to judge that a coffee-cup hypothesis best explains an experience, one already needs concepts, causal beliefs, and trust in how things appear. That pushes the discussion from moral intuition to epistemology generally, where Lutz's restriction on evidence looks less comfortable. Huemer's account of experiential content is also plain enough to be grasped without technical machinery. The weakness is that he does not fully answer predictive-processing alternatives; he mostly insists that experience now has representational content. The score is very high because he identifies a potential dependence of explanationism on the very seemings it discounts.",
+              tags: []
+            },
+            con: {
+              time: "01:14:53",
+              role: "Explanationist challenge",
+              words:
+                "Lutz says experiences justify beliefs through causal-explanatory background, not because experiences contain propositions that are directly self-justifying.",
+              score: 78,
+              critique:
+                "Lutz's explanationist challenge is coherent and consistent with his opening. He presses a real obscurity in talk of propositional contents of experience: we may have colors, shapes, confidence, and causal dispositions without directly encountering propositions. His coffee-cup story and later predictive-processing analogy give a naturalistic way to understand cognition as model-building rather than foundational acceptance. The weakness is that this account may presuppose the reliability, concept-formation, and inferential norms it is supposed to explain. Predictive processing can describe how systems update, but it does not automatically supply epistemic justification. The score is solid because Lutz offers a genuine alternative, but Huemer exposes unresolved foundations in it.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The opacity of propositional experience is treated as pressure against it before an alternative account of justification is fully supplied."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "A priori knowledge and morality",
+        timebox: "01:29:04-01:41:55",
+        score: {
+          pro: 87,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:37:47",
+              role: "Rationalist closing",
+              words:
+                "Huemer says a priori knowledge concerns the natures of things, not word conventions, and that understanding suffering can reveal that it is bad.",
+              score: 87,
+              critique:
+                "Huemer's rationalist closing is strong because it finds the deepest pressure point in Lutz's empiricism. Logical, mathematical, color-incompatibility, causation, and moral examples all ask whether some knowledge comes from understanding the objects or properties themselves rather than from explanation of observations. His point that analyticity can collapse into necessity if broadened too far is especially good: if everything necessary becomes analytic, the empiricist victory may be verbal. The weakness is that moving from red-blue incompatibility to suffering-is-bad still needs defense, since moral badness may be more contested than phenomenal incompatibility. The score is very high because the closing unifies epistemology and moral realism without pretending every step is settled.",
+              tags: []
+            },
+            con: {
+              time: "01:30:04",
+              role: "Analytic-conceptual reply",
+              words:
+                "Lutz says mathematical and logical seemings reveal how our concepts relate, so a priori evidence can remain broadly empiricist and analytic.",
+              score: 79,
+              critique:
+                "Lutz's analytic-conceptual reply is a clever way to protect explanationism from mathematical examples. He does not deny that two plus two seems true; he says the seeming is evidence about our conceptual structure and correct concept application. That allows him to acknowledge a priori confidence while keeping it within an empiricist frame. The weakness is that the account becomes promissory when examples resist simple Fregean analyticity. On red and blue, he says a broader account must be available, but he has not yet specified it. That makes the reply less secure than Huemer's challenge. The score is solid because Lutz has a strategy, but it remains unfinished where the debate most needs detail.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "A broader analyticity is invoked to rescue empiricism from hard cases before its independent criteria are made clear."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 84,
+        strengths: [
+          "Huemer connected moral realism to a general epistemology of appearances rather than relying only on moral common sense.",
+          "He pressed Lutz's Humean account with well-chosen cases where desire strength, future desire, self-conception, and rational judgment diverge.",
+          "His closing tied moral knowledge to a broader rationalist case about logic, mathematics, color incompatibility, and a priori understanding."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes treated first-order moral obviousness as if it transferred cleanly to stance-independent moral facts.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          },
+          {
+            text:
+              "His practical-consequence argument risked moving from error theory would change my motivation to error theory is false.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "He did not fully engage Lutz's naturalistic predictive-processing model before returning to representational experience.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 79,
+        strengths: [
+          "Lutz clearly distinguished moral error theory from moral skepticism and gave each thesis a separate metaphysical or epistemological rationale.",
+          "He improved the Humean view by rejecting crude desire-strength proportionalism and exploring self-conception, alienation, and cold passions.",
+          "He kept the debate integrated, connecting moral anti-realism to empiricism, explanationism, and a naturalistic picture of cognition."
+        ],
+        blunders: [
+          {
+            text:
+              "His self-conception standard appeared to carry normative authority that the desire-based theory had not yet earned.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His explanationist restriction on evidence was stretched across morality, perception, mathematics, and logic without equally complete treatment of each domain.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His broad analyticity move protected empiricism from hard a priori cases before giving clear independent boundaries for analytic truth.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];

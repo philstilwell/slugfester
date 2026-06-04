@@ -41,6 +41,14 @@ const escapeHtml = (value = "") =>
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
 
+const anchorSlug = (value = "") =>
+  String(value)
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
 const scoreTone = (score) => {
   if (score >= 80) return "strong";
   if (score >= 65) return "mixed";
@@ -808,8 +816,8 @@ function renderSection(section, debate) {
         ${section.exchanges
           .map(
             (exchange) => `
-              ${renderArgument(exchange.pro, "teal", debate.id)}
-              ${renderArgument(exchange.con, "coral", debate.id)}
+              ${renderArgument(exchange.pro, "teal", debate, section, "pro")}
+              ${renderArgument(exchange.con, "coral", debate, section, "con")}
             `
           )
           .join("")}
@@ -827,7 +835,7 @@ function renderSectionScore(label, score) {
   `;
 }
 
-function renderArgument(argument, tone, debateId) {
+function renderArgument(argument, tone, debate, section, sideKey) {
   if (!argument) {
     return `<article class="argument empty" aria-hidden="true"></article>`;
   }
@@ -842,7 +850,7 @@ function renderArgument(argument, tone, debateId) {
       <p>${escapeHtml(argument.words)}</p>
       <div class="argument-footer">
         ${renderCritique(argument)}
-        ${renderTags(argument.tags, debateId)}
+        ${renderTags(argument.tags, debate, section, sideKey, argument)}
       </div>
     </article>
   `;
@@ -860,21 +868,22 @@ function renderCritique(argument) {
   `;
 }
 
-function renderTags(tags = [], debateId = "") {
+function renderTags(tags = [], debate, section, sideKey, argument) {
   if (!tags.length) {
     return `<span class="tag clean">No named fallacy</span>`;
   }
 
   return tags
-    .map((tag) => renderTag(tag, debateId))
+    .map((tag) => renderTag(tag, debate, section, sideKey, argument))
     .join("");
 }
 
-function renderTag(tag, debateId) {
+function renderTag(tag, debate, section, sideKey, argument) {
   const reference = referenceFromUrl(tag.url);
   const definition = reference ? getReferenceDefinition(reference.type, reference.slug) : null;
   const category = tag.type === "fallacy" ? "Logical fallacy" : "Cognitive bias";
-  const localHref = referenceHref(tag.url, debateId);
+  const occurrenceId = referenceOccurrenceId({ debate, section, sideKey, argument, tag });
+  const localHref = referenceHref(tag.url, debate.id, occurrenceId);
 
   return `
     <span class="tag-wrap">
@@ -892,11 +901,29 @@ function renderTag(tag, debateId) {
   `;
 }
 
-function referenceHref(url, debateId = "") {
+function referenceHref(url, debateId = "", occurrenceId = "") {
   const reference = referenceFromUrl(url);
   if (!reference) return url;
 
-  return referencePath(reference.type, reference.slug, debateId);
+  const hash = occurrenceId ? `#${encodeURIComponent(occurrenceId)}` : "";
+  return `${referencePath(reference.type, reference.slug, debateId)}${hash}`;
+}
+
+function referenceOccurrenceId({ debate, section, sideKey, argument, tag }) {
+  const reference = referenceFromUrl(tag.url);
+  const side = debate.sides[sideKey];
+  const parts = [
+    "occurrence",
+    reference?.type || tag.type,
+    reference?.slug || tag.label,
+    debate.id,
+    side?.speaker || sideKey,
+    section.title,
+    argument.time,
+    argument.role
+  ];
+
+  return parts.map(anchorSlug).filter(Boolean).join("-");
 }
 
 function renderOverall(debate) {
@@ -1030,6 +1057,7 @@ function collectReferenceAppearances(type, slug) {
             appearances.push({
               debate,
               section,
+              sideKey,
               side: debate.sides[sideKey],
               argument,
               tag
@@ -1045,9 +1073,10 @@ function collectReferenceAppearances(type, slug) {
 
 function renderReferenceAppearance(appearance) {
   const debateHref = debatePath(appearance.debate);
+  const occurrenceId = referenceOccurrenceId(appearance);
 
   return `
-    <article class="reference-context-card">
+    <article class="reference-context-card" id="${escapeHtml(occurrenceId)}">
       <div class="card-topline">
         <a class="reference-debate-link" href="${escapeHtml(debateHref)}">${escapeHtml(debateNumberLabel(appearance.debate))} · ${escapeHtml(appearance.debate.label)}</a>
         <span>${escapeHtml(appearance.argument.time)}</span>
@@ -1061,6 +1090,29 @@ function renderReferenceAppearance(appearance) {
       </p>
     </article>
   `;
+}
+
+function scrollToHashTarget(hash = window.location.hash) {
+  if (!hash || hash.startsWith("#/")) return false;
+
+  let id = hash.slice(1);
+  try {
+    id = decodeURIComponent(id);
+  } catch {
+    return false;
+  }
+
+  const target = document.getElementById(id);
+  if (!target) return false;
+
+  target.scrollIntoView({ block: "start" });
+  return true;
+}
+
+function scrollToHashTargetAfterRender() {
+  window.requestAnimationFrame(() => {
+    scrollToHashTarget();
+  });
 }
 
 function route() {
@@ -1098,6 +1150,8 @@ function route() {
   } else {
     renderLanding();
   }
+
+  scrollToHashTargetAfterRender();
 }
 
 function shouldHandleInternally(link) {

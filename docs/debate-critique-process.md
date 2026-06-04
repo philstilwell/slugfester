@@ -97,6 +97,7 @@ Use LogFall for logical fallacies and CogBias for cognitive biases:
 - Each tag needs a short context note explaining why that label applies to the specific argument or rebuttal.
 - Pills should show a hover/focus popover with the basic definition, contextual explanation, and the note `Click button for more info.`
 - Pills should also open a local Slugfester reference page first; that page gives the basic definition, debate context, and the in-depth LogFall or CogBias link.
+- Debate-page pills should include a `#` occurrence anchor that jumps to the exact debate/interlocutor context card on the local reference page.
 - Prefer no tag over a forced tag.
 
 ## Overall Commentary
