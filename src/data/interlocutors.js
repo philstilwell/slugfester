@@ -287,6 +287,16 @@ export const interlocutorAvatars = [
     aliases: ["Stuart Knechtle", "Cliffe and Stuart Knechtle"]
   },
   {
+    name: "Michel-Yves Bolloré",
+    src: `${avatarBasePath}/michel-yves-bollore.webp`,
+    aliases: [
+      "Michel-Yves Bolloré",
+      "Michel-Yves Bollore",
+      "Michel Yves Bolloré",
+      "Michel Yves Bollore"
+    ]
+  },
+  {
     name: "Phil Halper",
     src: `${avatarBasePath}/phil-halper.webp`,
     aliases: ["Phil Halper", "Skydivephil"]

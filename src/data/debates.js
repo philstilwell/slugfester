@@ -20922,5 +20922,366 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "horn-oconnor-jesus-resurrection-2026",
+    number: "60",
+    title: "Trent Horn vs Alex O'Connor: Did Jesus Rise From the Dead?",
+    label: "Resurrection witnesses and rival miracles",
+    date: "2026-06-04",
+    duration: "1 hr 29 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=Bu-7IHp3oGQ",
+    motion:
+      "Did Jesus physically rise from the dead, and do early Christian testimony, rival miracle claims, martyrdom, and the empty tomb make that conclusion historically reasonable?",
+    summary:
+      "Horn says resurrection best explains early testimony, the empty tomb, group appearances, and later miracles; O'Connor says the evidence is ambiguous and paralleled by other religious claims.",
+    sourceNote:
+      "Built from YouTube en-orig automatic captions for the Alex O'Connor upload, downloaded with python3 -m yt_dlp on 2026-06-04. Auto-caption spacing and names are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Jesus rising from the dead really does do a good job of explaining a lot of the data.",
+        context:
+          "Horn's central posture is abductive: resurrection is presented as the simplest explanation of sincere testimony, appearances, the empty tomb, and Christian miracle continuity."
+      },
+      con: {
+        text: "It also fits with what would happen if it were not true.",
+        context:
+          "O'Connor's central posture is comparative: the data may fit resurrection, but it also fits visions, theological development, and ordinary historical uncertainty."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Resurrection case",
+        speaker: "Trent Horn",
+        color: "teal"
+      },
+      con: {
+        name: "Historical skepticism",
+        speaker: "Alex O'Connor",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 79,
+      con: 83
+    },
+    sections: [
+      {
+        title: "Rival miracles and standards",
+        timebox: "00:57-25:50",
+        score: {
+          pro: 78,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:28",
+              role: "Catholic miracle continuity",
+              words:
+                "Horn says Marian apparitions, Fatima, Zeitoun, and other miracles can support Christianity rather than threaten the resurrection case.",
+              score: 78,
+              critique:
+                "Horn's miracle-continuity move is stronger than the standard dismissal of rival supernatural claims. As a Catholic continuationist, he does not need to deny every later apparition or group vision, and that protects him from a crude double standard. He also fairly distinguishes bad evidence, natural explanations, and possible supernatural events rather than accepting everything. The weakness appears when non-Christian miracles are routed through natural error or demonic influence while Christian-linked miracles receive warmer evidential treatment. That may be coherent inside Catholic theology, but it is harder to defend as a shared historical standard. The score is solid-strong because Horn anticipates the parity problem, though his filter still looks tradition-favoring.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Christian miracle claims are granted theological fit while some rival claims are explained away through demonic or natural categories."
+                }
+              ]
+            },
+            con: {
+              time: "08:14",
+              role: "Mormon parallel challenge",
+              words:
+                "O'Connor compares resurrection testimony with Mormon witnesses, golden plates, persecution, excommunication, and Brigham Young transfiguration reports.",
+              score: 84,
+              critique:
+                "O'Connor's Mormon comparison is a sharp evidential-standard test. He does not argue that Mormonism is true; he asks why structurally similar testimony, group experience, persecution, late reporting, and ongoing witness commitment do not move Christians in the same way resurrection testimony does. The Brigham Young transfiguration example is especially useful because it mirrors appeals to many still-living witnesses. The weakness is that analogy can overflatten important differences: Christian resurrection claims are embedded in a different Jewish eschatological context and connected to an earlier crucifixion narrative. Still, the comparison is highly relevant because it forces Horn to state a consistent rule for miracle testimony. The score is high because the burden challenge lands.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Paul and physical resurrection",
+        timebox: "25:50-37:58",
+        score: {
+          pro: 81,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "15:29",
+              role: "Bodily-resurrection reading",
+              words:
+                "Horn argues Paul was a Pharisee committed to bodily resurrection, uses soma for a real body, and treats disembodied existence as undesirable.",
+              score: 81,
+              critique:
+                "Horn's Pauline argument is well informed and directly relevant. By situating Paul as a Pharisee and noting his concern in 1 Corinthians 15 with bodily resurrection, Horn gives the pro side a historically plausible reading that resurrection meant more than survival in heaven. His point that 'spiritual' can describe orientation rather than substance also blocks an easy spiritual-body reduction. The weakness is that the move depends on harmonizing Paul's visionary experience with later gospel physicality. Paul remains the only firsthand resurrection-appearance witness in the exchange, and his Damascus experience is not a shared meal with a touched body. The score is strong because Horn explains Paul carefully, but the evidential bridge remains contested.",
+              tags: []
+            },
+            con: {
+              time: "29:47",
+              role: "Visionary-ambiguity reply",
+              words:
+                "O'Connor says Paul never met the bodily risen Jesus, Mark lacks narrated appearances, and later accounts grow more physical and theological.",
+              score: 82,
+              critique:
+                "O'Connor's visionary-ambiguity reply is strong because it focuses on source type rather than vague skepticism. He separates Paul, who reports a revelatory encounter, from later gospel narratives that supply fish-eating, wounds, and touch. Mark's shorter ending and the increasing physical detail across later texts create a real historical question about development. The weakness is that development does not automatically imply invention; oral traditions can preserve physical claims before they are narrated in detail. O'Connor also leans on uncertainty about resurrection-body metaphysics, which can become too slippery if not paired with a positive alternative. The score is high because he exposes an evidential gap between visionary testimony and bodily resurrection.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Transfiguration and gospel development",
+        timebox: "30:13-45:04",
+        score: {
+          pro: 79,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "37:58",
+              role: "Sober-account defense",
+              words:
+                "Horn says the transfiguration was physical, Moses may have been bodily assumed, and canonical accounts are sober compared with apocryphal mythmaking.",
+              score: 79,
+              critique:
+                "Horn's sober-account defense has real comparative value. He rightly notes that canonical resurrection narratives are not as extravagant as later apocryphal material, and the contrast with the Gospel of Peter helps listeners see what overt legendary inflation can look like. His willingness to discuss Moses, Elijah, and assumption traditions also fits his Catholic framework. The weakness is that sobriety is not the same as historicity. Canonical texts can contain apologetic and theological shaping even if they are more restrained than later literature. Horn's Moses assumption move also depends on extra traditions that are not independently established in the exchange. The score is solid-strong because the comparison matters, but it does not settle development.",
+              tags: []
+            },
+            con: {
+              time: "34:15",
+              role: "Visionary-pattern argument",
+              words:
+                "O'Connor links transfiguration, sleep-state details, Moses and Elijah, mountain appearances, doubt, and unexplained wounds to a visionary pattern.",
+              score: 84,
+              critique:
+                "O'Connor's visionary-pattern argument is one of his more creative sections. He does not simply say the resurrection stories are legendary; he connects narrative details across the transfiguration, mountain appearances, Moses and Elijah, sleep-state language, lingering doubt, and selective wounds. That creates a cumulative case that at least some resurrection material may be theological vision rather than straightforward public encounter. The weakness is that several links are suggestive rather than demonstrated. A mountain setting, doubt, or retained wounds can have other narrative and theological explanations without reducing the event to vision. The score is high because the pattern is relevant and disciplined, though it remains an interpretive hypothesis rather than a decisive reconstruction.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Persecution and sincerity",
+        timebox: "45:04-56:20",
+        score: {
+          pro: 82,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "45:04",
+              role: "Sincere-witness argument",
+              words:
+                "Horn says martyrdom is not proof, but persecution, Paul, Peter, James, Acts, Tacitus, and early tradition support sincere testimony.",
+              score: 82,
+              critique:
+                "Horn's sincerity argument is notably careful. He explicitly rejects the weak slogan that people never die for falsehoods and narrows the point to whether early witnesses would endure danger for what they knew to be fabricated. That is the right version of the argument. His appeal to Paul, Peter, James, Acts, Tacitus, and early tradition gives the claim breadth without resting everything on one martyrdom legend. The weakness is that sincerity still underdetermines what was seen, and some martyrdom details remain late, indirect, or disputed. Horn gets good credit for refining the argument, but not full credit because sincerity plus persecution does not by itself identify a bodily resurrection.",
+              tags: []
+            },
+            con: {
+              time: "47:18",
+              role: "Witness-specific caution",
+              words:
+                "O'Connor says persecution evidence must track particular witnesses, what they personally saw, and whether they died for the resurrection claim itself.",
+              score: 82,
+              critique:
+                "O'Connor's witness-specific caution is excellent burden discipline. He accepts that sincerity and persecution can matter, but asks exactly whose testimony is being evaluated, what that person personally saw, and whether the suffering was tied to the bodily resurrection rather than general Christian identity. His treatment of Clement, apocryphal Peter traditions, Stephen's vision, and Paul's experience keeps categories from blurring. The weakness is that historical reconstruction rarely gets the clean firsthand chain he wants, especially for ancient events; demanding that level too rigidly may discount normal ancient historiography. The score is strong because his distinctions prevent overclaiming, while leaving some room for cumulative historical inference from less direct sources.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Women and the empty tomb",
+        timebox: "56:20-1:04:11",
+        score: {
+          pro: 80,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "55:55",
+              role: "Embarrassing-witness defense",
+              words:
+                "Horn argues the first witnesses being women, plus Joseph of Arimathea and an apologetic stolen-body debate, supports historical memory.",
+              score: 80,
+              critique:
+                "Horn's women-witness argument is a familiar but still relevant historical consideration. If a community were inventing maximally persuasive testimony in a patriarchal setting, choosing women as first discoverers is not the obvious move. He strengthens the point by pairing it with Joseph of Arimathea, ordinary burial plausibility, and the early stolen-body polemic, all of which suggest a concrete location and missing body. The weakness is that the argument can overstate embarrassment. Women are narratively plausible mourners and tomb visitors, and later narratives have male verification quickly enter the story. The score is strong because the datum still has evidential weight, but not decisive because literary and social explanations remain available.",
+              tags: []
+            },
+            con: {
+              time: "56:48",
+              role: "Narrative-plausibility reply",
+              words:
+                "O'Connor says women knew the tomb, performed mourning roles, fetched male verification, and first assumed the body had been taken.",
+              score: 79,
+              critique:
+                "O'Connor's reply is effective because it explains why women at the tomb might be narratively expected rather than embarrassing. The male disciples flee; the women remain near the crucifixion and burial; mourners and anointers would naturally return. He also notes that in some accounts male disciples quickly verify the scene, and Mary's first inference in John is body removal, not resurrection. That keeps the argument from being a one-step proof. The weakness is that showing the detail is narratively plausible does not erase its historical force. A real event can also be narratively fitting. The score is solid-strong because O'Connor weakens overconfident apologetic use without eliminating the datum.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Alternative explanations",
+        timebox: "1:04:11-1:22:38",
+        score: {
+          pro: 81,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:17:04",
+              role: "Conjunction-cost objection",
+              words:
+                "Horn says no-resurrection is only an umbrella; skeptics must conjoin body movement, visions, and other hypotheses, lowering probability.",
+              score: 81,
+              critique:
+                "Horn's conjunction-cost objection is a strong abductive move. He correctly notes that 'no resurrection' is not a single explanation; skeptics must specify alternatives and then compare how well those alternatives explain death, proclamation, appearances, tomb traditions, and early growth. His point about conjoined hypotheses lowering probability is methodologically important, and he gives concrete counters to grave robbery by noting valuables, linen, necromancy practices, and known burial precedent. The weakness is that resurrection also carries a large prior cost as a miracle claim, so simplicity cannot be judged only by counting sub-hypotheses. The score is strong because Horn forces specificity, but the prior-probability question remains live.",
+              tags: []
+            },
+            con: {
+              time: "1:12:33",
+              role: "Emergency-burial alternative",
+              words:
+                "O'Connor says an emergency nearby tomb, later body relocation, grave robbery, or ordinary uncertainty are more plausible than resurrection.",
+              score: 84,
+              critique:
+                "O'Connor's empty-tomb alternative is careful because he does not claim certainty. He grants layers of uncertainty, then argues that if there was an empty tomb, body relocation or theft remains more ordinary than resurrection. His use of John's nearby-tomb wording, Sabbath timing, Mary's body-removal inference, grave-robbery warnings, and burial-party possibilities gives the skeptical side a concrete scenario rather than vague doubt. The weakness is that the scenario is still speculative and has to be coordinated with appearances and later proclamation. It explains the tomb better than the whole case. The score is high because it supplies a plausible ordinary pathway, but it cannot carry the full skeptical explanation alone.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Final standards",
+        timebox: "1:22:38-1:29:06",
+        score: {
+          pro: 80,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:25:39",
+              role: "Unique proclamation close",
+              words:
+                "Horn says the strongest evidence is the unique bodily-resurrection proclamation by followers and a persecutor, plus group and later miracle evidence.",
+              score: 80,
+              critique:
+                "Horn's closing rightly identifies the case's strongest feature: not a single isolated proof, but the unusual emergence of a bodily resurrection proclamation among followers and a former persecutor. That point has historical bite because simple survival-in-heaven language would have been easier and less surprising. He also broadens the evidence to later miracle claims and asks whether strict naturalism is more probable than at least one supernatural event. The weakness is that the appeal becomes very wide. Later Fatima or Zeitoun reports may weaken naturalism, but they do not directly establish Jesus' physical resurrection unless the theological connection is defended. The score is strong because the closing is focused, but the wider miracle net remains disputed.",
+              tags: []
+            },
+            con: {
+              time: "1:24:41",
+              role: "Evidential-threshold close",
+              words:
+                "O'Connor says firsthand bodily testimony tied to persecution for that specific claim would be strong, but the available evidence is secondhand or visionary.",
+              score: 83,
+              critique:
+                "O'Connor's evidential-threshold close is constructive and fair. Rather than saying nothing could count, he names what would raise his confidence: firsthand testimony to the bodily risen Jesus, stronger corroboration of the 500, and evidence that specific witnesses suffered for that specific resurrection claim. He also concedes that true visions are possible, which prevents the critique from becoming crude anti-supernaturalism. The weakness is that his threshold may be higher than what ancient history usually supplies, and he does not fully quantify how much cumulative indirect evidence should move credence. The score is high because he states a clear standard and explains why the current evidence does not meet it.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 79,
+        strengths: [
+          "Horn gave a nuanced Catholic version of the resurrection case that did not simply dismiss every later or non-Protestant miracle claim.",
+          "He repeatedly refined weak apologetic slogans into better arguments, especially on martyrdom, sincerity, and cumulative explanation.",
+          "His best points focused on explanatory convergence: death, early proclamation, appearances, the tomb tradition, Paul, and later Christian miracle claims."
+        ],
+        blunders: [
+          {
+            text:
+              "His treatment of rival miracles sometimes gave Christian-linked events a more generous explanatory lane than Mormon or other non-Christian claims.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His women-at-the-tomb and martyrdom points occasionally did more work than the specific ancient evidence could securely bear.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "The later miracle appeal widened the debate from Jesus' resurrection to supernaturalism generally, which risked reducing focus at the end.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 83,
+        strengths: [
+          "O'Connor consistently tested the resurrection case against parallel religious testimony, especially Mormon witness claims and transfiguration reports.",
+          "He separated sincerity, persecution, visionary experience, bodily appearance, and martyrdom instead of letting them merge into one evidential bundle.",
+          "His empty-tomb alternative was appropriately cautious: he offered plausible ordinary paths without pretending to know exactly what happened."
+        ],
+        blunders: [
+          {
+            text:
+              "The Mormon comparison sometimes risked flattening Jewish resurrection context, early Christian proclamation, and later Latter-day Saint testimony into the same evidential shape.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His visionary-pattern reading of gospel development was suggestive but sometimes leaned on interpretive possibility more than independent confirmation.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His evidential threshold for ancient testimony may be higher than what ancient history can normally provide, even for non-miraculous claims.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
