@@ -177,11 +177,6 @@ export const interlocutorAvatars = [
     aliases: ["Joe Folley", "Joseph Folley"]
   },
   {
-    name: "Jonathan Pageau",
-    src: `${avatarBasePath}/jonathan-pageau.webp`,
-    aliases: ["Jonathan Pageau"]
-  },
-  {
     name: "Glen Scrivener",
     src: `${avatarBasePath}/glen-scrivener.webp`,
     aliases: ["Glen Scrivener", "Glen Shrivener"]
@@ -327,7 +322,7 @@ function normalize(value = "") {
 export function avatarsForSpeakerText(speakerText = "") {
   const text = normalize(speakerText);
 
-  return interlocutorAvatars
+  const matches = interlocutorAvatars
     .map((avatar, order) => {
       const positions = avatar.aliases
         .map((alias) => text.indexOf(normalize(alias)))
@@ -340,6 +335,14 @@ export function avatarsForSpeakerText(speakerText = "") {
       };
     })
     .filter((avatar) => avatar.position >= 0)
-    .sort((a, b) => a.position - b.position || a.order - b.order)
-    .map(({ order, position, aliases, ...avatar }) => avatar);
+    .sort((a, b) => a.position - b.position || a.order - b.order);
+
+  return [
+    ...new Map(
+      matches.map(({ order, position, aliases, ...avatar }) => [
+        avatar.name,
+        avatar
+      ])
+    ).values()
+  ];
 }
