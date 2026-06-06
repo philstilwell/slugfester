@@ -21283,5 +21283,375 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "scrivener-oconnor-morality-bible-slavery-2026",
+    number: "61",
+    title:
+      "Glen Scrivener vs Alex O'Connor: Morality, Freedom, Slavery, and the Bible",
+    label: "Biblical slavery and moral inheritance",
+    date: "2026-06-06",
+    duration: "2 hr 31 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=-ZnVNM8lkGw",
+    motion:
+      "Did Christian faith give the modern West its beliefs in kindness, equality, freedom, consent, and abolition, or are those values better explained by mixed traditions, social struggle, and secular moral development?",
+    summary:
+      "Scrivener argues modern moral instincts are unthinkable without Christian formation; O'Connor argues the inheritance is mixed, biblically troubling, and not uniquely Christian.",
+    sourceNote:
+      "Built from YouTube en-orig automatic captions for the Justin Brierley | Think Faith discussion-format upload, downloaded with python3 -m yt_dlp on 2026-06-06. Auto-caption spacing and names are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Unthinkable without Christianity.",
+        context:
+          "Scrivener's central posture is genealogical: modern Western values are not identical to church teaching, but were formed by Christian stories, practices, and institutions."
+      },
+      con: {
+        text: "The Bible gives me pause.",
+        context:
+          "O'Connor's central posture is diagnostic: if Christianity is credited for modern values, biblical violence, slavery, women, and consent must also be examined."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian moral genealogy",
+        speaker: "Glen Scrivener",
+        color: "teal"
+      },
+      con: {
+        name: "Secular moral critique",
+        speaker: "Alex O'Connor",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 79,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Thesis and first definitions",
+        timebox: "05:09-18:32",
+        score: {
+          pro: 81,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "06:51",
+              role: "Ripple-effects thesis",
+              words:
+                "Scrivener distinguishes his view from Tom Holland's blossoming thesis: modern values are not simply Christianity, but are ripple effects that became unthinkable without it.",
+              score: 81,
+              critique:
+                "Scrivener's ripple-effects framing is a strong opening because it makes the claim historical rather than merely devotional. He narrows Holland's blossoming language to 'unthinkable without' Christianity, which lets him own discontinuity while still arguing that the cross and church formed Western moral instincts. The best part is that he anticipates Alex's Bible-based critique instead of pretending scripture contains modern liberal language in plain form. The weakness is that 'unthinkable without' remains elastic: it can mean direct source, enabling condition, or later institutional carrier. Those are different claims with different burdens. The score is strong because the frame is careful and historically plausible, but capped because its causal standard is underdefined.",
+              tags: []
+            },
+            con: {
+              time: "11:05",
+              role: "Bible-and-parallels challenge",
+              words:
+                "O'Connor says the Bible gives him pause, and independent traditions of compassion, weak-protection, and anti-domination raise problems for Christian uniqueness.",
+              score: 83,
+              critique:
+                "O'Connor's opening challenge is strong because it attacks the thesis at two pressure points. First, if the Bible or Christian tradition is credited for modern morality, the morally troubling parts of that same inheritance cannot be bracketed. Second, if compassion and care for the weak appear in Buddhist, Confucian, Greco-Roman, or other sources, uniqueness needs careful qualification. His strongest move is separating Western historical influence from universal moral origin. The weakness is that independent moral parallels do not by themselves explain which tradition institutionalized those values in the West. They weaken exclusivity more than causal influence. The score is high because he disciplines the claim early, while leaving Scrivener room to argue historical transmission.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Compassion and the cross",
+        timebox: "27:36-44:39",
+        score: {
+          pro: 82,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "28:44",
+              role: "Compassion-revolution argument",
+              words:
+                "Scrivener says the crucified God reverses dominance, inspires charity, hospitals, orphan care, and abolition of practices like exposure and gladiatorial brutality.",
+              score: 82,
+              critique:
+                "Scrivener's compassion-revolution argument is one of his clearest positive cases. By centering the cross as the highest figure descending to the lowest place, he gives a concrete story for why Christian compassion was not only sentiment but practice. The examples of infant exposure, hospitals, charity, and care for the discarded give the genealogy institutional weight. The weakness is that he sometimes frames pre-Christian nature and Rome as if survival, dominance, and cruelty exhausted the available moral resources. O'Connor can fairly point to other traditions and reforms that complicate the contrast. The score is strong because the historical examples matter, but not higher because the before-and-after frame can become too stark.",
+              tags: []
+            },
+            con: {
+              time: "33:07",
+              role: "Old-Testament continuity problem",
+              words:
+                "O'Connor grants Christian anti-exposure evidence, then presses Judaism, Joshua, Exodus, Abraham and Isaac, and sacrifice as morally troubling continuity problems.",
+              score: 81,
+              critique:
+                "O'Connor's continuity problem is effective because it refuses a simple Jesus-versus-Rome contrast. If Christianity enters a brutal Roman world, it also inherits Israelite conquest, sacrifice language, and Old Testament commands that modern readers find difficult. That makes the moral source claim less tidy. His Abraham-and-Isaac and Exodus examples show how biblical material can be read very differently from a modern liberal angle. The weakness is that some examples function more as illustrative stress tests than settled interpretations. Scrivener can answer by appealing to narrative, fulfillment, and non-literal canonical reading. The score is strong because the challenge is relevant and concrete, but limited because the biblical-hermeneutic dispute remains partly unresolved.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Equality, rights, and women",
+        timebox: "50:33-1:18:49",
+        score: {
+          pro: 78,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "52:03",
+              role: "Image-of-God rights genealogy",
+              words:
+                "Scrivener links equality, rights, Locke, Genesis, the Declaration, Acts, Phoebe, Junia, and suffrage to a Christianized intellectual genealogy.",
+              score: 78,
+              critique:
+                "Scrivener's rights genealogy has real substance. The move from Genesis, image of God, medieval obligation-language, Locke, and later rights talk gives listeners a plausible chain rather than a slogan. He also improves the gender discussion by pointing to Priscilla, Phoebe, Junia, and women prophesying instead of relying only on abstract equality. The weakness is that the examples do not fully bridge to modern gender equality or democratic rights. O'Connor's references to Jefferson's slaves, Paine, Magna Carta, women protesting, and technological change expose how much of the history involved conflict, material conditions, and non-Christian or anti-clerical actors. The score is solid-strong because the genealogy is real, but its explanatory reach is overextended.",
+              tags: []
+            },
+            con: {
+              time: "58:31",
+              role: "Material-struggle reply",
+              words:
+                "O'Connor says modern equality arose through conflict, women's self-assertion, technology, and rights claims, not simply by Christians discovering biblical feminism.",
+              score: 84,
+              critique:
+                "O'Connor's material-struggle reply is strong because it asks how rights actually changed hands. He points to Jefferson's slaveholding, Paine's anti-Christian posture, Magna Carta's coercive politics, suffrage agitation, and technology's role in changing women's material conditions. That prevents the pro side from turning every later achievement into an automatic Christian blossoming. His best question is why, if Christianity straightforwardly contained modern gender equality, it took so long and so much pressure to surface. The weakness is that social struggle and Christian motivation are not mutually exclusive; many reformers could be both materially aggrieved and religiously inspired. The score is high because he makes the historical mechanism more complex and harder to idealize.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Institutionalization and falsifiability",
+        timebox: "1:18:49-1:41:26",
+        score: {
+          pro: 79,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:20:26",
+              role: "Christian institutionalization defense",
+              words:
+                "Scrivener says Christianity embedded compassion through churches, sacraments, bodies, hospitals, strangers, prisoners, the poor, and a deeply Christianized Western history.",
+              score: 79,
+              critique:
+                "Scrivener's institutionalization defense is important because it shifts from isolated values to social embodiment. He can grant that compassion or medical care appears elsewhere while still arguing that Christianity scaled those intuitions through churches, hospitals, charity, and practices that treated the weak as sites of encounter with Christ. That is a more defensible claim than saying no one noticed compassion before Jesus. The weakness is that he sometimes preserves the thesis by moving between value-origin, Western-carrier, and Christianized-language claims. When abortion, euthanasia, feminism, or rights are called unchristian yet still explained through Christian-ish vocabulary, the boundary of the thesis becomes blurry. The score is solid-strong because the institutional point lands, but the criteria need sharper edges.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The Christian-influence category can expand to explain both approved values and some rejected Western practices through Christianized language."
+                }
+              ]
+            },
+            con: {
+              time: "1:23:58",
+              role: "Shrinking-thesis objection",
+              words:
+                "O'Connor argues that if the claim shrinks from compassion itself to Christian hospitals, it becomes milder than the sweeping moral-inheritance thesis.",
+              score: 84,
+              critique:
+                "O'Connor's shrinking-thesis objection is one of the debate's cleanest methodological moves. He notices that Scrivener can defend Christian hospitals, charities, and abolitionist campaigns more easily than he can defend Christianity as the unique source of compassion, equality, or weak-protection. That distinction matters because a historically important institutional carrier is not the same as originator or necessary condition. His falsifiability pressure also usefully asks what would count against the thesis if almost any Western value can be traced back to some biblical or church motif. The weakness is that historical explanation is not laboratory science; counterfactual tests are inevitably loose. The score is high because he exposes elasticity without denying Christianity's real institutional contribution.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Emotivism and moral grounding",
+        timebox: "1:41:55-1:47:45",
+        score: {
+          pro: 82,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:42:27",
+              role: "Grounding-pressure argument",
+              words:
+                "Scrivener presses whether secular compassion, equality, progress, and freedom need a deeper moral grounding than inherited emotional expression can supply.",
+              score: 82,
+              critique:
+                "Scrivener's grounding pressure is strong because it identifies a different layer of the disagreement. Even if O'Connor can complicate the history, he still has to say what moral judgments amount to when he condemns slavery, patriarchy, or cruelty. Scrivener's best point is that the speakers share moral intuitions despite different metaethical theories, which supports his wider claim that inherited culture may be doing more work than explicit philosophy. The weakness is that this does not directly rescue the historical thesis. Showing that emotivism feels thin or culturally conditioned does not prove Christianity generated the relevant values. The score is strong because the question is fair and revealing, but it is partly adjacent to the motion.",
+              tags: []
+            },
+            con: {
+              time: "1:43:32",
+              role: "Emotivist modesty",
+              words:
+                "O'Connor says moral claims express emotion, objective morality does not exist, and his task is an internal critique rather than a rival grounding story.",
+              score: 80,
+              critique:
+                "O'Connor's emotivist modesty is intellectually honest. He does not pretend that emotivism comforts people, supplies objective moral furniture, or gives a heroic abolition speech on demand. He also correctly separates two questions: whether Western values are true and whether Christianity historically caused them. That helps him avoid accepting a burden he did not come to bear. The weakness is that the position leaves his rhetoric against slavery and biblical injustice dependent on shared sentiment rather than truth-apt judgment. Scrivener can reasonably ask whether those sentiments themselves are products of the Christianized culture under examination. The score is strong because the clarification is disciplined, but lower than his historical rebuttals because it is more defensive than explanatory.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Biblical slavery and abolition",
+        timebox: "1:47:45-2:18:18",
+        score: {
+          pro: 76,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:53:23",
+              role: "Abolitionist-Bible defense",
+              words:
+                "Scrivener says the image of God, Exodus, the black church, Christ as liberator, Gregory of Nyssa, and Christian practice made abolition thinkable and repeatable.",
+              score: 76,
+              critique:
+                "Scrivener's abolitionist-Bible defense has genuine historical force. He is right that abolitionists, the black church, Quakers, evangelicals, and figures such as Gregory of Nyssa used biblical and Christian resources against slavery. His claim that Christianity helped make abolition thinkable is much stronger than a claim that every Christian read the Bible well. The weakness is that the defense struggles against the permissive texts O'Connor cites. Grand narrative, Jubilee, and Christ-as-liberator readings explain why many Christians became abolitionists, but they do not erase Leviticus, Exodus, household codes, or Christian anti-abolitionism. The score remains solid because the abolitionist tradition is real, but it falls because the scriptural permission problem is central.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The abolitionist strand receives more weight than the biblical and Christian materials that supported slaveholding."
+                }
+              ]
+            },
+            con: {
+              time: "1:58:16",
+              role: "Permission-text challenge",
+              words:
+                "O'Connor argues Exodus is Israel-specific, Leviticus permits foreign slaves as inheritable property, and Paul gives household regulation rather than abolitionism.",
+              score: 87,
+              critique:
+                "O'Connor's permission-text challenge is the debate's strongest skeptical section. He distinguishes Hebrew bondservants from foreign slaves, notes that Leviticus permits buying and inheriting slaves from surrounding nations, and argues that Exodus liberation is Israel-specific rather than universal abolition. He also handles the man-stealing reply well by separating unauthorized kidnapping from biblically permitted taking. The New Testament point is equally sharp: advice to masters and slaves is not the same as abolitionism. The weakness is that he may understate how religious narratives can generate meanings beyond the immediate legal code, especially in oppressed communities. Still, the score is very high because he answers the central genealogy claim with precise textual counterevidence.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Consent and thesis precision",
+        timebox: "2:18:18-2:30:29",
+        score: {
+          pro: 76,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "2:20:03",
+              role: "Mutual-consent reading",
+              words:
+                "Scrivener says 1 Corinthians 7 gives husbands and wives reciprocal claims, applies mutual consent to sex and prayer, and shaped Christian sexual revolution.",
+              score: 76,
+              critique:
+                "Scrivener's mutual-consent reading has a real exegetical and historical point. In a Greco-Roman setting, reciprocal bodily authority between spouses is striking, and he plausibly links Christian marriage teaching to later ideas of personhood, equality, and family structure. He is also right that a hostile reading should not turn pastoral counsel into a rigid legal algorithm too quickly. The weakness is that O'Connor's textual worry is serious: Paul's immediate wording concerns mutual agreement to abstain, not an explicit modern rule that either spouse may refuse sex for any reason. Scrivener's answer relies on broader trajectory more than the cited verse. The score is solid because reciprocity matters, but the modern-consent conclusion is undersecured.",
+              tags: []
+            },
+            con: {
+              time: "2:20:33",
+              role: "Consent-overreach objection",
+              words:
+                "O'Connor says Paul's consent language is consent to abstain, not consent to sex, so modern consent required factors beyond Christianity.",
+              score: 85,
+              critique:
+                "O'Connor's consent-overreach objection is sharp because it grants the best part of Scrivener's case before narrowing the point. He accepts that reciprocal authority in 1 Corinthians 7 was radical for its time, then asks whether the next verse actually establishes modern sexual consent. His reading that the passage concerns consent to abstain, not consent to have sex, creates a serious problem for using it as a direct genealogy of modern consent. The weakness is that he may press the wording more legally than the pastoral genre warrants, and later Christian interpretation could develop the reciprocal premise in healthier directions. The score is high because he isolates a genuine overreach while preserving the partial Christian contribution.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 79,
+        strengths: [
+          "Scrivener offered a nuanced version of the Christian moral-inheritance thesis that distinguished influence, fulfillment, institutionalization, and post-Christian drift.",
+          "His best evidence came from institutional history: hospitals, charity, orphan care, abolitionist Christianity, church practices, and the scaling of compassion into social life.",
+          "He repeatedly answered difficult biblical texts through narrative, Christological fulfillment, and Christian practice rather than pretending the texts were easy."
+        ],
+        blunders: [
+          {
+            text:
+              "The Christian-influence category sometimes expanded enough to explain approved Western values, rejected Western practices, and even critiques of Christianity.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His slavery answer gave more weight to abolitionist Christianity than to the biblical permission texts and Christian anti-abolitionist usage O'Connor raised.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "The consent argument moved from a striking reciprocal premise to modern sexual consent faster than the cited Pauline wording could clearly justify.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "O'Connor consistently separated historical influence, value origin, institutional carrier, moral truth, and biblical interpretation instead of letting them collapse together.",
+          "His strongest work was textual: Leviticus, Exodus, Pauline household codes, 1 Corinthians 7, and women-in-church passages were tied directly to the thesis under review.",
+          "He granted partial Christian contributions where warranted, especially hospitals, abolitionist motivation, and reciprocal marital language, which made his criticisms more credible."
+        ],
+        blunders: [
+          {
+            text:
+              "His independent-parallels argument sometimes showed that values existed elsewhere without fully explaining why Western institutions developed as they did.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His material-condition alternatives for feminism, rights, and abolition were plausible but often gestured to possible causes more than demonstrated comparative causation.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "The falsifiability pressure was useful, but it occasionally treated historical genealogy as though it should behave like a controlled scientific hypothesis.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
