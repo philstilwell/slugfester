@@ -21653,5 +21653,343 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "pageau-folley-logos-meaning-resurrection-2026",
+    number: "62",
+    title:
+      "Jonathan Pageau vs Joe Folley: Genesis, Jesus, Science, and Faith",
+    label: "Patterns, Logos, and secular meaning",
+    date: "2026-06-06",
+    duration: "1 hr 58 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=fJ05WWnyj2g",
+    motion:
+      "Do patterns, symbolism, Genesis, resurrection, worship, and social meaning point toward God as Logos, or can they be explained by human cognition, pragmatic abstraction, and bottom-up social life?",
+    summary:
+      "Pageau argues patterns, Genesis, resurrection, and worship disclose Logos; Folley grants their pragmatic and literary value while keeping ontology bottom-up and evidence-sensitive.",
+    sourceNote:
+      "Built from YouTube en-orig automatic captions for the Justin Brierley | Think Faith discussion-format upload, downloaded with python3 -m yt_dlp on 2026-06-06. Auto-caption spacing, speaker names, and technical terms are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "The world reveals itself in patterns.",
+        context:
+          "Pageau's central posture is symbolic and ontological: recurring patterns, meaning, worship, and resurrection point upward toward Logos rather than remaining merely human projections."
+      },
+      con: {
+        text: "I've not yet been convinced of the ontological reality of God.",
+        context:
+          "Folley's central posture is receptive but cautious: he accepts patterns, scripture, and religious practices as valuable while resisting the move to transcendent divine reality."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Symbolic theism",
+        speaker: "Jonathan Pageau",
+        color: "teal"
+      },
+      con: {
+        name: "Atheist pragmatism",
+        speaker: "Joe Folley",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 82,
+      con: 83
+    },
+    sections: [
+      {
+        title: "Patterns and ontological levels",
+        timebox: "03:00-34:28",
+        score: {
+          pro: 83,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "03:00",
+              role: "Pattern-hierarchy argument",
+              words:
+                "Pageau says multiplicity and unity meet in patterns, art fits parts toward purpose, and the hierarchy of meaning points toward God as Logos.",
+              score: 83,
+              critique:
+                "Pageau's pattern-hierarchy argument is strong because it begins with experience rather than a detached proof. We do encounter chairs, cities, rituals, art, and persons as organized wholes, and his language of unity, multiplicity, and purpose captures something ordinary reductionist descriptions often flatten. The city, marriage, contract, and wetness examples make the point accessible. The weakness is that the argument can slide from the reality of structured wholes to the much larger claim that those structures terminate in a willful Logos. That requires more than noticing hierarchy. The score is high because the phenomenology is rich and relevant, but limited because the theological step remains underargued.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Pattern, unity, purpose, and God risk shifting between experiential structure and theological explanation."
+                }
+              ]
+            },
+            con: {
+              time: "10:57",
+              role: "Transcendence caution",
+              words:
+                "Folley accepts formal structure, inherited values, and useful abstraction, but says will, personality, and transcendent unity are not implied by his existing commitments.",
+              score: 82,
+              critique:
+                "Folley's transcendence caution is strong because it grants almost everything Pageau needs at the lower levels: formal structure, abstraction, inherited values, and non-arbitrary patterns. That makes his disagreement precise. He is not denying meaning or beauty; he is resisting the extra claim that structure is willful, personal, or grounded in a transcendent unity. His analogy to mathematical abstraction helps show how one can respect hierarchy without deifying it. The weakness is that the reply can sound more like restraint than explanation. He says patterns are useful and mind-involved, but does not yet fully explain why some shared structures bind communities and persons so powerfully. The score is strong because the distinction is disciplined.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Genesis, analogy, and science",
+        timebox: "34:54-55:01",
+        score: {
+          pro: 82,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "36:19",
+              role: "Meaning-laden Genesis reading",
+              words:
+                "Pageau says Genesis describes reality through meaningful categories, naming, judgment, goodness, the fall, and the gap between what is and what should be.",
+              score: 82,
+              critique:
+                "Pageau's Genesis reading is persuasive as a symbolic interpretation. He explains why tame animals, wild animals, and creeping things are meaning-laden categories rather than modern biology, and he connects naming, judgment, goodness, dissatisfaction, and fallenness to lived human experience. That gives Genesis philosophical force without forcing it into laboratory prose. The strength is that he avoids a crude science-versus-Bible frame and shows why origin stories need purpose, not only mechanism. The weakness is that he also says Genesis describes something that happened, but the criteria for that historical claim stay vague. The score is strong because the analogical reading is fruitful, but it leaves the history-metaphysics boundary blurry.",
+              tags: []
+            },
+            con: {
+              time: "41:10",
+              role: "Allegory-versus-phenomena reply",
+              words:
+                "Folley grants allegorical lessons in Genesis, Ecclesiastes, and Job, then says historical or phenomenal claims such as resurrection and postmortem experience need another standard.",
+              score: 84,
+              critique:
+                "Folley's allegory-versus-phenomena reply is one of his best early moves. He gives Pageau's side real credit: Ecclesiastes, Job, Genesis, fiction, and religious texts can convey insight that changes how people live. He then separates that from claims that describe phenomena, such as a resurrected body, postmortem experience, or specific historical events. That distinction prevents symbolic richness from quietly doing evidential work for literal claims. The weakness is that the line between analogical truth and historical truth may not be as clean as he wants, especially if religious narratives intentionally combine event and meaning. The score is high because he keeps the epistemic standards visible without dismissing scripture's existential power.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection and historical weight",
+        timebox: "55:01-1:12:26",
+        score: {
+          pro: 79,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "55:01",
+              role: "Resurrection-as-pattern argument",
+              words:
+                "Pageau says everything turns on Christ and resurrection, but the resurrection makes sense from the real permanence of intelligent patterns, not from camera-style proof.",
+              score: 79,
+              critique:
+                "Pageau's resurrection-as-pattern argument is imaginative and internally coherent. Instead of reducing resurrection to a crude reanimation mechanism, he connects it to the persistence of identity, the city of London, bodily change over time, spiritual bodies, and a world in which intelligent patterns are not exhausted by matter. That fits his larger Logos ontology. The weakness is that it answers a different question from Folley's evidential one. Showing that permanence of pattern is conceivable does not show that Jesus historically rose, nor that a personal afterlife follows. Pageau openly says historical apologetics is not his lane, which makes the central Christian claim under-supported in this exchange. The score is solid-strong but restrained.",
+              tags: []
+            },
+            con: {
+              time: "1:06:42",
+              role: "Phenomenal-evidence threshold",
+              words:
+                "Folley says witnessed resurrection, ascension, and continued experience after death would substantially raise his confidence in God and Christian claims.",
+              score: 84,
+              critique:
+                "Folley's phenomenal-evidence threshold is strong because he names what would move him. He does not say no evidence could matter. If he directly encountered resurrection, ascension, or postmortem experience, he says his confidence would shift and Christian claims would gain support. That keeps his skepticism evidential rather than merely temperamental. He also recognizes that resurrection testimony is anomalous even if ordinary alternatives remain possible. The weakness is that he frames the issue mostly through direct or near-direct observation, which ancient religious claims rarely provide. Indirect cumulative evidence may deserve some weight even without a Panasonic-camera standard. The score is high because his standard is clear, but not decisive because it may be historically demanding.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Perceiver and world",
+        timebox: "1:13:29-1:25:56",
+        score: {
+          pro: 82,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:20:11",
+              role: "Mind-priority argument",
+              words:
+                "Pageau asks why Folley posits a mind-independent noumenal world if all access to reality is already mediated through mind, naming, and meaning.",
+              score: 82,
+              critique:
+                "Pageau's mind-priority argument is philosophically serious. He notices that if every world-description comes through perception, categories, naming, and meaning, then a completely mind-independent 'out there' may be a more speculative abstraction than secular common sense admits. The move also lets him connect incarnation to the meeting of intelligence and phenomena. The strength is that he presses a real Kantian-style problem rather than appealing only to religious authority. The weakness is that the argument from mediated access to mind's ontological priority is not automatic. One can accept that all experience is structured by minds without concluding that reality is ultimately mental or Logos-grounded. The score is strong because the question bites, but the conclusion needs more steps.",
+              tags: []
+            },
+            con: {
+              time: "1:17:24",
+              role: "Perceiver-dependence reply",
+              words:
+                "Folley says abstraction is unavoidable, not arbitrary, but he locates meaning and structure in the perceiver rather than in a transcendent source.",
+              score: 83,
+              critique:
+                "Folley's perceiver-dependence reply is careful and fair. He concedes that abstraction is unavoidable, like needing a lit torch to see, and he rejects the caricature that mind-dependence means free invention. Color, language, chairs, and animal perception show that categories can be constrained without being metaphysically ultimate. That gives the atheist side a plausible middle path between naive realism and arbitrary projection. The weakness is that he mostly locates the issue in human cognition and does not fully answer why some patterns appear transpersonal, durable, and normatively organizing across persons and generations. The score is high because he gives a coherent bottom-up account, but Pageau's social-ontological pressure remains alive.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Minds, gods, and universals",
+        timebox: "1:25:56-1:38:17",
+        score: {
+          pro: 81,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:25:56",
+              role: "Little-g gods argument",
+              words:
+                "Pageau says cities, war, economics, love, and other shared patterns act like minds or little-g gods that move people toward purposes.",
+              score: 81,
+              critique:
+                "Pageau's little-g gods argument is vivid and clarifies his social ontology. War, cities, nations, and economic systems really do organize people, constrain options, generate rituals, and persist beyond any individual's psychology. Calling them minds or little gods captures their agency-like grip better than a flat list of private beliefs. The weakness is that the terminology can outpace the argument. A durable social pattern that motivates action may be more than an idea, but it does not obviously possess mind, will, or personality except by metaphor. Folley can accept memes, institutions, and social pressure without accepting gods. The score is strong because the examples illuminate social power, but the ontology remains contestable.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Mind, will, social pattern, and little-g god can alternate between metaphorical and ontological senses."
+                }
+              ]
+            },
+            con: {
+              time: "1:28:26",
+              role: "Secular-social explanation",
+              words:
+                "Folley says ideas, desires, memes, shared incentives, and social pressure can explain war and collective action without positing real gods.",
+              score: 82,
+              critique:
+                "Folley's secular-social explanation is strong because it answers Pageau in Pageau's chosen examples. War can be described through ideas, desires, institutions, legal coercion, social shame, and shared memes that motivate behavior across a group. That is not a denial that collective patterns are powerful; it is a rival account of their power. His Plato-versus-Aristotle and universals questions also clarify whether Pageau means forms, purposes, or instantiated social realities. The weakness is that the explanation can sound like relabeling rather than full reduction. Saying 'memes and pressure' still leaves the binding force and normativity of collective purposes partly unexplained. The score is strong because it blocks the quick move to gods, while leaving some depth unresolved.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Worship and shared purpose",
+        timebox: "1:38:17-1:52:13",
+        score: {
+          pro: 84,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:38:17",
+              role: "Worship-as-formation argument",
+              words:
+                "Pageau says worship orients a community toward what it celebrates, and secular fragmentation shows the cost of losing a shared center.",
+              score: 84,
+              critique:
+                "Pageau's worship-as-formation argument is his most practical section. He connects ontology to behavior: what a community ritually celebrates shapes what it becomes. The contrast between venerating war and venerating self-giving love is clear, and the medieval-village image of a church physically and ritually centering birth, death, marriage, and common life makes the thesis concrete. The weakness is that social cohesion is not automatically truth. A false or oppressive center can also bind people, and Pageau's critique of secular fragmentation needs more comparative evidence across religious and nonreligious societies. The score is high because the formative power of worship is well argued, but it does not by itself establish Christian theism.",
+              tags: []
+            },
+            con: {
+              time: "1:43:35",
+              role: "Harmony-not-proof reply",
+              words:
+                "Folley grants shared values organize communities, but says even if Christianity maximized harmony, that would be defeasible evidence rather than proof of God.",
+              score: 82,
+              critique:
+                "Folley's harmony-not-proof reply is strong because it grants the social point without surrendering the metaphysical one. He accepts that coherent shared values help families, towns, podcasts, and communities act together, and he does not defend total fragmentation as good. His best move is to say that even if Christianity were empirically the most harmony-producing system, that would be defeasible evidence for God, not proof, because social usefulness can have natural explanations and rival systems may work similarly. The weakness is that he offers no robust alternative center for secular life beyond local agreements and everyday norms. The score is strong because the epistemic distinction is right, but his constructive answer is thin.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 82,
+        strengths: [
+          "Pageau gave the strongest version of symbolic theism by connecting patterns, meaning, Genesis, resurrection, social minds, and worship into one coherent ontology.",
+          "His examples were concrete enough to keep an abstract discussion intelligible: cities, contracts, marriage, wetness, war, churches, bells, and village architecture.",
+          "He repeatedly pressed Folley at the right depth, asking not only whether patterns are useful but what kind of reality they have."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes moved from the reality of patterns to mind, will, Logos, or God without separating metaphorical, phenomenological, and theological senses.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His critique of reductionist or bottom-up explanation sometimes treated an explanatory gap as positive support for the Christian symbolic ontology.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His social-cohesion examples highlighted Christianity's binding power while giving less attention to harmful or coercive forms of religious unity.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 83,
+        strengths: [
+          "Folley was unusually charitable, granting scripture's existential value, the usefulness of patterns, the force of worship, and the possibility that resurrection evidence would matter.",
+          "He kept the debate's central distinction stable: pragmatic, literary, and social usefulness do not automatically establish transcendent ontology.",
+          "His strongest responses located abstraction in constrained perception rather than arbitrary projection, giving atheism a serious account of meaning without crude reduction."
+        ],
+        blunders: [
+          {
+            text:
+              "His bottom-up explanations sometimes sketched possible cognitive or social mechanisms without fully explaining why shared patterns become normatively binding.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His distinction between analogical truth and phenomenal claims was useful but left some ambiguity about narratives that present event and meaning together.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His secular social alternative relied on local agreements and practical norms more than a developed account of shared purpose at civilizational scale.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
