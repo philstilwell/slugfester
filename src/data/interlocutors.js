@@ -177,6 +177,11 @@ export const interlocutorAvatars = [
     aliases: ["Joe Folley", "Joseph Folley"]
   },
   {
+    name: "Jonathan Pageau",
+    src: `${avatarBasePath}/jonathan-pageau.webp`,
+    aliases: ["Jonathan Pageau"]
+  },
+  {
     name: "Glen Scrivener",
     src: `${avatarBasePath}/glen-scrivener.webp`,
     aliases: ["Glen Scrivener", "Glen Shrivener"]
@@ -295,11 +300,6 @@ export const interlocutorAvatars = [
       "Michel Yves Bolloré",
       "Michel Yves Bollore"
     ]
-  },
-  {
-    name: "Jonathan Pageau",
-    src: `${avatarBasePath}/jonathan-pageau.webp`,
-    aliases: ["Jonathan Pageau", "Pageau"]
   },
   {
     name: "Phil Halper",

@@ -748,7 +748,11 @@ function renderSideHeading(side, tone) {
 }
 
 function renderSpeakerAvatars(speakerText) {
-  const avatars = avatarsForSpeakerText(speakerText);
+  const avatars = [
+    ...new Map(
+      avatarsForSpeakerText(speakerText).map((avatar) => [avatar.src, avatar])
+    ).values()
+  ];
   if (!avatars.length) return "";
 
   return `
