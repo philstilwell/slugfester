@@ -58,7 +58,7 @@ export const interlocutorAvatars = [
   },
   {
     name: "Michael Shermer",
-    src: `${avatarBasePath}/michael-shermer.webp`,
+    src: `${avatarBasePath}/michael-shermer-v2.webp`,
     aliases: ["Michael Shermer"]
   },
   {
@@ -170,6 +170,16 @@ export const interlocutorAvatars = [
     name: "Ben Shapiro",
     src: `${avatarBasePath}/ben-shapiro.webp`,
     aliases: ["Ben Shapiro", "Benjamin Shapiro", "Benjamin A. Shapiro", "Benjamin A Shapiro"]
+  },
+  {
+    name: "Ben Watkins",
+    src: `${avatarBasePath}/ben-watkins.webp`,
+    aliases: ["Ben Watkins", "Benjamin Watkins"]
+  },
+  {
+    name: "Gregory Pine",
+    src: `${avatarBasePath}/gregory-pine.webp`,
+    aliases: ["Gregory Pine", "Fr. Gregory Pine", "Fr Gregory Pine", "Father Gregory Pine"]
   },
   {
     name: "Lawrence Krauss",
