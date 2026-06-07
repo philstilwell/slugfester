@@ -21991,5 +21991,366 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "butt-shermer-god-bible-2023",
+    number: "63",
+    title: "Kyle Butt vs Michael Shermer: Does the God of the Bible Exist?",
+    label: "Biblical theism and skeptical evidence",
+    date: "2026-06-07",
+    duration: "2 hr 11 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=Z1TgI3cfeM8",
+    motion:
+      "Does the God of the Bible exist, and do causation, design, morality, Jesus, religious diversity, suffering, and evidential standards support or undermine that claim?",
+    summary:
+      "Butt presents causation, design, morality, and Jesus as cumulative proof of biblical theism; Shermer argues the evidence is insufficient and better handled through skeptical naturalism.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions downloaded with yt-dlp on 2026-06-07. Auto-caption spacing, speaker names, and technical terms are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Every material effect has a cause",
+        context:
+          "Butt's opening case begins with causation and then builds a cumulative proof from design, objective morals, and the life, death, and resurrection of Jesus."
+      },
+      con: {
+        text: "The lack of sufficient evidence",
+        context:
+          "Shermer's core reply is not that God is logically impossible, but that extraordinary biblical claims have not met a proportionate evidential threshold."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Biblical theism",
+        speaker: "Kyle Butt",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical naturalism",
+        speaker: "Michael Shermer",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 73,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Truth, certainty, and evidence",
+        timebox: "04:32-1:05:54",
+        score: {
+          pro: 76,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "06:13",
+              role: "Truth-seeking frame",
+              words:
+                "Butt says the debate is not about winning but about truth, and argues science should follow evidence beyond five-sense material limits.",
+              score: 76,
+              critique:
+                "Butt's truth-seeking frame is rhetorically strong and sets a serious tone. He rightly resists a narrow scientism that would define God out of discussion before argument begins, and he grounds the debate in evidence, reason, and public claims rather than private feeling. The weakness is that he quickly treats the availability of truth as permission for certainty about his four theistic conclusions. Shermer's probabilistic challenge is not the self-refuting claim that no truth exists; it is the humbler point that finite knowers should proportion confidence to evidence. Butt scores well for refusing lazy materialism, but the score stays limited because he blurs truth's existence with his access to it.",
+              tags: []
+            },
+            con: {
+              time: "28:12",
+              role: "Proportional-evidence standard",
+              words:
+                "Shermer says confidence should scale with evidence, and extraordinary claims need stronger support than ordinary travel or biographical claims.",
+              score: 83,
+              critique:
+                "Shermer's proportional-evidence standard is one of the debate's cleanest moves. By distinguishing ordinary claims from alien-abduction-style claims, he gives the audience an intuitive epistemic rule: do not assign equal confidence to claims with radically different prior probabilities and support. He also avoids hard atheistic certainty, saying he could be wrong and that belief should remain revisable. The weakness is that the Bayesian frame can sound more precise than it is when no actual likelihoods are calculated, and his early humor briefly distracts from the analytic point. Still, the standard is relevant, fair, and repeatedly useful against resurrection, miracles, and special revelation. That warrants a strong score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Cause and supernatural inference",
+        timebox: "09:03-1:10:55",
+        score: {
+          pro: 76,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "09:09",
+              role: "Causal-origin argument",
+              words:
+                "Butt argues every material effect has a cause, the universe is material, and its cause must therefore be supernatural rather than material.",
+              score: 76,
+              critique:
+                "Butt's causal-origin argument has real force because it asks why there is a universe at all and refuses to let scientific explanation stop at the first physical boundary. He also phrases the premise carefully as material effects having causes, which avoids the simplest 'who caused God' parody. The weakness is the jump from a nonmaterial cause to the God of the Bible. Even if the universe has a transcendent cause, intelligence, moral perfection, biblical revelation, and Jesus do not follow from causation alone. He also leans on scientific quotations in ways that can suggest more consensus than exists. The score is solid because the question is legitimate, but the conclusion outruns the premise.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The causal rule is restricted to material effects, then used to protect the preferred supernatural cause from parallel causal scrutiny."
+                }
+              ]
+            },
+            con: {
+              time: "43:00",
+              role: "Regress and humility reply",
+              words:
+                "Shermer replies that first-cause reasoning reaches an epistemic wall, and the scientific answer before the Big Bang is simply that nobody knows.",
+              score: 82,
+              critique:
+                "Shermer's regress reply is strong because it identifies the exact point where a cosmological argument often changes gears. If the explanatory chain ends with God, the skeptic is entitled to ask why that terminus is licensed while other unknowns are not. His 'nobody knows' answer is not a full cosmology, but it is epistemically disciplined when the alternative is filling the boundary with a richly specified deity. The weakness is that he sometimes treats uncertainty as though it favors naturalism by default, when agnosticism about the origin could leave several metaphysical options open. The score is high because his burden-of-proof pressure lands, but it is not decisive as a positive explanation.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Design, fine-tuning, and biology",
+        timebox: "12:04-2:02:24",
+        score: {
+          pro: 72,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "12:10",
+              role: "Complex-design argument",
+              words:
+                "Butt says fine-tuning, the human brain, and complex functional information demand an intelligent designer just as artifacts do.",
+              score: 72,
+              critique:
+                "Butt's design argument is accessible and gives listeners concrete hooks: cosmic constants, the human brain, supercomputers, and specified information. It is reasonable to ask why the world appears mathematically hospitable and biologically organized. The weakness is that analogy does too much work. Human artifacts are known products of designers inside the world; biological and cosmological structures require separate arguments about natural selection, physics, multiverse hypotheses, and probability distributions. Quoting scientists who describe apparent design does not settle whether design is literal. The argument is coherent enough to score above average, but it under-engages rival mechanisms and treats present explanatory difficulty as positive evidence for intelligence.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Explanatory gaps around fine-tuning and biological complexity are treated as positive evidence for design before alternatives are fully assessed."
+                }
+              ]
+            },
+            con: {
+              time: "1:56:12",
+              role: "Natural-design rebuttal",
+              words:
+                "Shermer says life is adapted to the world, not the world to us, and natural selection explains functional design from the bottom up.",
+              score: 84,
+              critique:
+                "Shermer's natural-design rebuttal is strong because it answers both the watch analogy and the biological examples. He notes that known artifacts have observable makers, while the alleged cosmic designer is not independently inspectable. He also distinguishes engineered design from functional biological design produced by natural selection, where wings, eyes, and organs are serviceable, varied, and historically cobbled rather than perfect. His point about fine-tuning also properly cautions that unknown physics should not be turned into a finished theological explanation. The weakness is that he gives only a compressed answer to cosmological fine-tuning, where natural selection does not apply. The score is high because his biology reply is direct and evidentially disciplined.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Objective morality and grounding",
+        timebox: "19:14-1:24:46",
+        score: {
+          pro: 74,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "21:02",
+              role: "Moral-grounding argument",
+              words:
+                "Butt argues objective moral values cannot exist if the material world is all there is, so moral reality points to a personal moral God.",
+              score: 74,
+              critique:
+                "Butt's moral argument has a serious target: a purely indifferent universe seems poorly suited to objective obligation, guilt, dignity, or final justice. He also avoids the cheap claim that atheists cannot behave morally, focusing instead on grounding. The weakness is that he mostly quotes atheists who deny objective morality and then treats their conclusion as the honest implication of unbelief. Shermer's own moral realism, whether successful or not, directly challenges that move. Butt also needs to explain why God's nature grounds morality without collapsing into command theory or assuming the very God at issue. The score is respectable because the grounding question is real, but his treatment of secular alternatives is too quick.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "God's nature is invoked as the needed moral ground before the debate has established that such a God exists."
+                }
+              ]
+            },
+            con: {
+              time: "1:01:04",
+              role: "Flourishing-based realism",
+              words:
+                "Shermer says rape, murder, and mutilation are objectively wrong because they violate bodily autonomy, increase suffering, and block flourishing.",
+              score: 83,
+              critique:
+                "Shermer's flourishing-based realism is one of his better constructive answers. He does not merely deny theistic morality; he offers criteria grounded in sentient well-being, suffering, autonomy, cooperation, and social primate evolution. This lets him explain why some moral judgments can be objective without appealing to revelation, and it gives him a principled way to criticize harmful religious commands. The weakness is the familiar is-ought pressure: moving from evolved social needs and suffering facts to binding objective obligation requires more philosophical work than a debate answer can supply. He also concedes that many atheists reject objective moral values. The score is high because he supplies a rival account, but it is not airtight.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Jesus, resurrection, and rival religions",
+        timebox: "23:00-1:39:34",
+        score: {
+          pro: 69,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "23:00",
+              role: "Jesus-resurrection case",
+              words:
+                "Butt appeals to Jesus' moral character, death, martyr witnesses, and resurrection as the historical center of biblical theism.",
+              score: 69,
+              critique:
+                "Butt is right that biblical theism cannot stay generic; the proposition concerns the God represented in Jesus. His move to public history is therefore relevant, and he identifies important questions about Jesus' character, crucifixion, disciples, and resurrection testimony. The weakness is severe compression. Moral admiration for Jesus, the fact of crucifixion, and follower sincerity do not by themselves establish resurrection, divinity, or atonement. When Shermer presses Jewish, Muslim, Hindu, and other religious disagreement, Butt answers partly by saying proper evidence-testing will favor Christianity, but he does not actually perform that comparative test in detail. The score is mixed-solid because the topic is central, but the evidence is asserted faster than defended.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Christian resurrection testimony receives more favorable treatment than rival miracle claims without a fully articulated neutral standard."
+                }
+              ]
+            },
+            con: {
+              time: "57:14",
+              role: "Comparative-religion challenge",
+              words:
+                "Shermer argues that Jews, Muslims, and other serious believers know the Christian arguments yet remain unconvinced, so the evidence is not consensus-grade.",
+              score: 85,
+              critique:
+                "Shermer's comparative-religion challenge is powerful because it tests Christianity against nearby informed disagreement rather than against caricatured unbelief. His Jewish example is especially relevant: many scholars accept Jesus' existence and crucifixion while rejecting messiahship, resurrection, and atonement. That undercuts the idea that the evidence transparently compels the Christian conclusion. His broader religious-diversity point also explains why confidence often tracks culture, upbringing, and tradition. The weakness is that disagreement does not by itself refute a claim; experts disagree in many domains, and minority views can be true. Still, as a rebuttal to claimed proof and public obviousness, it is highly effective. The score is strong because it directly attacks evidential sufficiency.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Evil and supernatural explanation",
+        timebox: "1:29:00-1:58:52",
+        score: {
+          pro: 64,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:29:20",
+              role: "Cross-and-afterlife theodicy",
+              words:
+                "Butt says suffering is answered in Christ: God allowed his son to suffer, and what comes after suffering can make it right.",
+              score: 64,
+              critique:
+                "Butt's theodicy is pastorally recognizable and emotionally sincere. He avoids pretending that a two-minute answer can solve evil, and he connects Christian hope to the cross, trust, obedience, and final restoration. That is a real internal answer for believers. The weakness is that it barely meets Shermer's actual challenge about apparently pointless natural suffering, especially childhood disease, paralysis, and divine nonintervention. Saying that God can make everything right later does not explain why an omnipotent, loving being uses such means or why miracles appear selective. The move also shifts from public proof to trust in Christian revelation. The score is modest because the answer may comfort insiders but does not carry the debate burden.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The reply moves from why preventable suffering occurs to the cross and afterlife, leaving the natural-evil objection underanswered."
+                }
+              ]
+            },
+            con: {
+              time: "1:30:23",
+              role: "Natural-evil objection",
+              words:
+                "Shermer presses childhood leukemia, paralysis, and failed healing as evidence against an omnipotent, omniscient, and omnibenevolent God.",
+              score: 86,
+              critique:
+                "Shermer's natural-evil objection is the debate's strongest skeptical pressure. He deliberately brackets human free will and focuses on cancer, paralysis, and suffering that a loving omnipotent God could apparently prevent without violating anyone's agency. He also ties the point to miracle claims: if believers credit God when cancer remits, they need an account of nonintervention in equally desperate cases. That is directly relevant to the God of the Bible as defined in the debate. The weakness is that he gives little time to sophisticated theodicies, soul-making, afterlife compensation, or skeptical theism. Even so, as a live rebuttal to claimed proof of a loving biblical God, it is pointed, humane, and difficult to evade.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 73,
+        strengths: [
+          "Butt gave a clear cumulative case with memorable pillars: causation, design, objective morality, and Jesus.",
+          "He kept the proposition specifically biblical rather than drifting into generic deism, and he repeatedly tied metaphysics to Christ.",
+          "He was strongest when distinguishing moral behavior from moral grounding and when pushing Shermer to state what would count as sufficient evidence."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly moved from unresolved natural explanation to supernatural design or biblical theism without supplying enough independent positive support.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "He treated Christian resurrection and revelation claims more favorably than rival religious miracle claims without a fully neutral evidential standard.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His frequent quotations from scientists, atheists, and biblical texts sometimes carried more argumentative weight than the underlying evidence.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Shermer consistently distinguished logical possibility from sufficient public evidence, which kept the burden of proof visible.",
+          "His comparative-religion challenge and problem-of-evil examples directly targeted the biblical specificity of Butt's case.",
+          "He offered constructive alternatives on morality, design, science, and human meaning rather than only denying theism."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes slid from 'not sufficiently evidenced' to placing biblical claims in a mythic-truth category, which can avoid adjudicating specific historical claims.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His methodological naturalism was sometimes presented as simply what inquiry does, leaving Butt's charge of naturalistic precommitment only partly answered.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His opening cultural jokes and side examples briefly diverted from the proposition before the evidential argument sharpened.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
