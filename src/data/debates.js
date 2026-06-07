@@ -22352,5 +22352,362 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "pine-watkins-god-existence-2020",
+    number: "64",
+    title: "Gregory Pine vs Ben Watkins: Does God Exist?",
+    label: "Thomistic theism and analytic atheism",
+    date: "2026-06-07",
+    duration: "2 hr 12 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=0QMwHUijmqo",
+    motion:
+      "Does God exist, and do Thomistic arguments from being, act and potency, divine simplicity, revelation, evil, freedom, and changing knowledge support or undermine classical theism?",
+    summary:
+      "Pine defends Thomistic classical theism as the necessary ground of being, intelligibility, and revelation; Watkins argues that evolutionary evil, divine freedom, changing knowledge, and hiddenness favor philosophical atheism.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions downloaded with yt-dlp on 2026-06-07. Auto-caption spacing, speaker names, and technical terms are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "This we call God",
+        context:
+          "Pine presents Aquinas's ways as modest metaphysical reasoning toward the necessary ground of being, then fills out the divine attributes through the wider Thomistic system."
+      },
+      con: {
+        text: "philosophical atheism is closer to the truth",
+        context:
+          "Watkins frames his case as contemporary analytic atheism: define classical theism carefully, then press evil, freedom, and changing knowledge against it."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Thomistic theism",
+        speaker: "Gregory Pine",
+        color: "teal"
+      },
+      con: {
+        name: "Analytic atheism",
+        speaker: "Ben Watkins",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 75,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Access, reason, and hiddenness",
+        timebox: "04:28-42:25",
+        score: {
+          pro: 74,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "05:12",
+              role: "Access-and-revelation frame",
+              words:
+                "Pine says not everyone has equal access to God; reason can know God, but revelation generously helps embodied, culturally situated, sinful people reach what is difficult.",
+              score: 74,
+              critique:
+                "Pine's access frame is humane because it refuses to treat unbelief as simply stupid or wicked. He acknowledges temperament, education, history, embodiment, and culture as real constraints, then explains why revelation would supplement reason if God is generous. The weakness is that the argument partially insulates the theistic conclusion before the proof begins. If lack of conviction is explained by damaged access, modern culture, or sin, the audience needs a careful way to distinguish reasonable nonbelief from distorted nonbelief. That matters because hiddenness is one of Watkins's central pressures. The score is solid because Pine anticipates the objection, but not higher because the explanation risks becoming too protective of the favored conclusion.",
+              tags: [
+                {
+                  label: "Belief bias",
+                  type: "bias",
+                  url: bias("belief-bias"),
+                  context:
+                    "The framing can make the preferred theistic conclusion feel safer by treating resistance as partly explained by defective access."
+                }
+              ]
+            },
+            con: {
+              time: "42:00",
+              role: "Hiddenness challenge",
+              words:
+                "Watkins says perfect love would leave every finite person able to enter relationship with God, and belief that the other exists is a necessary condition of that relationship.",
+              score: 83,
+              critique:
+                "Watkins's hiddenness challenge is strong because it converts Pine's access concession into a clear relational test. If God wants loving relationship and belief is a necessary condition for that relationship, then sincere nonbelief is not a side issue; it is evidence the expected relationship structure is missing. The argument is also fair because Watkins does not say every person must receive overwhelming spectacle, only that finite persons should be positioned to respond. The weakness is that he moves quickly from perfect love to a specific disclosure policy, while Pine can argue that human formation, drama, patience, and freedom complicate timing. The score is high because the objection is relevant, simple, and hard to dismiss.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Five ways and sustaining causality",
+        timebox: "12:00-1:30:34",
+        score: {
+          pro: 78,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "15:00",
+              role: "Act-potency dependence case",
+              words:
+                "Pine argues that motion, causality, and contingency reveal dependent realities that cannot pull themselves up by their own metaphysical bootstraps, so they require a sufficient explanatory ground.",
+              score: 78,
+              critique:
+                "Pine's dependence argument is one of his clearer positive moves. He avoids a crude first-event argument and stresses a vertical account of why contingent, changing things exist and remain intelligible here and now. The act-potency language gives the argument a coherent Thomistic home, and his 'this we call God' modesty avoids claiming that the first three ways immediately produce every Christian doctrine. The weakness is that the reasoning remains compressed and tradition-heavy. Listeners still need the argument from dependent being to one unique, purely actual, worship-worthy, perfectly good source, not merely an explanatory terminus. The score is strong because the frame is serious and non-caricatured, but not decisive because several bridges are only gestured toward.",
+              tags: []
+            },
+            con: {
+              time: "43:35",
+              role: "Causal-regress rebuttal",
+              words:
+                "Watkins replies that per se causal chains may not share one first cause, that pure actuality is a further gap, and that existential inertia may remove the need for continual sustaining causality.",
+              score: 80,
+              critique:
+                "Watkins's rebuttal is valuable because it attacks the actual metaphysical machinery rather than pretending Aquinas is making a simple temporal-beginning argument. The quantifier-shift worry, gap from unmoved mover to pure actuality, and existential-inertia alternative all identify places where the Thomistic case needs more than confident vocabulary. His admission that the material is jargon-heavy also helps the audience understand that the objection is technical, not merely dismissive. The weakness is that the alternatives are sketched rather than defended. A gunky regress and existential inertia are possibilities, but the debate format does not show they are metaphysically cheaper or more coherent than sustaining causality. The score is high because the rebuttal finds real pressure points.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Evolutionary evil and moral standards",
+        timebox: "23:20-1:45:40",
+        score: {
+          pro: 66,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "49:35",
+              role: "Transcendence-and-creation reply",
+              words:
+                "Pine says evil must be considered with God's transcendence in view: God is not one cause among others, creates potentiality itself, and manifests glory through the whole created order.",
+              score: 66,
+              critique:
+                "Pine's reply is philosophically important because classical theism really does treat God differently from an ordinary moral agent inside the world. His distinction between making and creating, and between particular causes and the universal cause of being, blocks a crude picture of God as merely another technician choosing inefficient tools. The weakness is that this does not yet answer Watkins's evidential challenge. Hundreds of millions of years of animal languishing still look badly fitted to perfect goodness unless the appeal to glory, order, or transcendence explains why those goods require that distribution of pain. The score is mixed because Pine clarifies the model, but the clarification often functions as a shield rather than a satisfying theodicy.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The appeal to divine transcendence risks exempting God from moral evaluation before explaining why the exemption is justified."
+                }
+              ]
+            },
+            con: {
+              time: "24:10",
+              role: "Evolutionary-evil argument",
+              words:
+                "Watkins argues that evolutionary history contains widespread languishing, extinction, predation, disease, and biologically gratuitous pain, which are expected on atheism but surprising on classical theism.",
+              score: 88,
+              critique:
+                "Watkins's evolutionary-evil argument is the debate's strongest atheist case. By focusing on non-human animal suffering, extinction, predation, and pain that appears disconnected from survival or moral development, he avoids the easier free-will reply and makes the issue probabilistic: this world looks more expected under indifferent nature than under providential perfect goodness. He also states the comparative structure clearly, drawing on Bayesian reasoning without drowning the audience in formalism. The weakness is that 'gratuitous' remains partly epistemic; the fact that no justifying purpose is apparent is evidence, but not a demonstration. Still, the score is very high because the argument is central, comparative, and repeatedly survives Pine's broader metaphysical reframing.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The inference from no apparent justifying purpose to actual gratuity needs a defended bridge, though Watkins gives more than mere incredulity."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Freedom, pure act, and contingency",
+        timebox: "28:00-1:42:40",
+        score: {
+          pro: 77,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "39:05",
+              role: "Freedom-as-interior-source reply",
+              words:
+                "Pine says freedom is not primarily the mere availability of options; God can will from an interior principle, cause free agents freely, and choose this world without needing potentiality.",
+              score: 77,
+              critique:
+                "Pine's freedom reply is a serious Thomistic counter, not a dodge. He identifies the modal-collapse pressure and challenges Watkins's assumption that perfect freedom requires open alternatives in the creaturely sense. His angel example and later account of God causing free things freely show how the tradition separates free action from coercion or external compulsion. The weakness is that the reply depends heavily on redefining freedom around interior sourcehood, which may not preserve the traditional claim that God could have refrained from creating. If no unrealized potentiality exists in God, Watkins can still ask what grounds genuine contingency. The score is strong because Pine names the issue accurately, but the modal tension remains live.",
+              tags: []
+            },
+            con: {
+              time: "28:20",
+              role: "Freedom contradiction",
+              words:
+                "Watkins argues that traditional theism says God is perfectly free and could have refrained from creating, but pure actuality lacks the potentiality required to do otherwise.",
+              score: 82,
+              critique:
+                "Watkins's freedom argument is sharp because it targets an internal conjunction: traditional theism wants divine freedom, while classical theism says God is pure act without unrealized potentiality. Framed that way, the objection is not a generic atheist complaint but a pressure on Thomism's own commitments. It also matters because creation's contingency is central to worship; God is not supposed to be forced into making this world. The weakness is that Watkins treats 'could have done otherwise' as if it must map onto creaturely alternative possibilities, while classical theists have technical accounts of necessity, willing, and extrinsic effects. The score is high because the contradiction is clearly posed, though not conclusively established.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Changing knowledge and timelessness",
+        timebox: "29:12-1:27:50",
+        score: {
+          pro: 80,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "34:30",
+              role: "Causal-knowledge reply",
+              words:
+                "Pine says God's knowledge is not receptive like ours; God knows by causing, holds creation in an eternal now, and accounts for change without changing.",
+              score: 80,
+              critique:
+                "Pine's causal-knowledge reply is probably his strongest technical rebuttal. He does not merely deny that God changes; he explains why, in classical theism, creaturely truths depend on God's creative knowledge rather than God's mind receiving updates from the world. The Boethian eternal-now framing also directly addresses the time-slice pressure by relocating created succession within divine eternity. The weakness is that the answer is costly: it requires accepting a dense metaphysics of timelessness, divine ideas, and causal knowledge, and Watkins can still ask how tensed truths are known without relational change. The score is high because Pine provides a real model, but not higher because the model's explanatory price is substantial.",
+              tags: []
+            },
+            con: {
+              time: "29:28",
+              role: "Changing-knowledge argument",
+              words:
+                "Watkins argues that if truths about humans change through time, then an omniscient God must acquire or lose knowledge, contradicting immutability and pure actuality.",
+              score: 83,
+              critique:
+                "Watkins's changing-knowledge argument is disciplined and easy to track. He starts with ordinary temporal becoming, connects knowledge to truth, and then asks how an immutable, purely actual God can know truths that seem to become true or false. That sequence makes the problem accessible without losing philosophical force. His later clarification that the argument need not require presentism improves the case because it anticipates a standard escape route. The weakness is that the argument may still assume a creaturely model of knowing in which true propositions stand over against God as updates to be received. Classical theists deny that setup. The score is high because the challenge is precise, though Pine supplies a nontrivial answer.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Pluralism and final standards",
+        timebox: "1:52:00-2:07:36",
+        score: {
+          pro: 77,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:53:22",
+              role: "Pluralism-and-revelation close",
+              words:
+                "Pine says religious pluralism is atheism's toughest argument, but real translation across traditions is possible, and God reveals himself dramatically through human nature, story, signs, and Christ.",
+              score: 77,
+              critique:
+                "Pine's close is generous and rhetorically effective. By naming pluralism as the strongest atheist argument, he models intellectual charity and avoids pretending that religious diversity is trivial. His answer also fits his whole position: humans are embodied narrative creatures, so God reveals through history, law, prophets, sacramental signs, and Christ rather than through a coercive cosmic announcement. The weakness is that the reply explains why revelation might be dramatic, but less clearly why a perfectly loving God would permit sincere, durable, tradition-shaped disagreement about the most important relationship. Becoming a 'native speaker' of another tradition is admirable, yet many do so and remain unconvinced. The score is solid-strong because the close is coherent, not decisive.",
+              tags: []
+            },
+            con: {
+              time: "2:04:25",
+              role: "Three-argument closing",
+              words:
+                "Watkins closes by reviewing evolutionary evil, freedom, and changing knowledge as tools for thinking about God, while conceding that reasonable philosophical disagreement will remain.",
+              score: 84,
+              critique:
+                "Watkins's closing is unusually well calibrated. He restates the three central arguments without adding new material, keeps the target fixed on classical theism, and explicitly concedes that committed Thomists may not be convinced. That humility improves the argument because it presents the case as cumulative pressure rather than a cheap knockout. His earlier concession that moral-agent fine-tuning is the best theistic argument also shows he can recognize evidence on the other side. The weakness is that the conclusion sometimes widens from 'Tomism faces serious problems' to 'philosophical atheism is closer to the truth,' while several objections are narrower than theism as such. The score is high because the synthesis is disciplined and fair.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "Arguments aimed at classical Thomism can be overread as settling the wider existence-of-God question."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 75,
+        strengths: [
+          "Pine gave a recognizably Thomistic account of God as the sustaining ground of being rather than a finite cause inside the world.",
+          "He answered the freedom and knowledge objections with real distinctions from the tradition instead of merely appealing to mystery.",
+          "He was charitable toward atheistic pressure points, especially hiddenness, animal suffering, and religious pluralism."
+        ],
+        blunders: [
+          {
+            text:
+              "His appeals to divine transcendence and analogical goodness sometimes shielded God from ordinary moral evaluation before explaining why the exemption is warranted.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His access-to-God framing risked treating nonbelief as partly explained by defect, sin, or cultural deformation without an equally explicit account of reasonable nonbelief.",
+            links: [
+              {
+                label: "Belief bias",
+                url: bias("belief-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "The five ways were presented as gestures toward God, but the bridge from explanatory ground to worship-worthy, perfectly good personal reality remained underdeveloped.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Watkins defined classical theism carefully and attacked the actual Thomistic commitments rather than a crude sky-being caricature.",
+          "His evolutionary-evil case was comparative, evidential, and resistant to standard free-will replies because it centered non-human animal suffering.",
+          "He kept a notably fair tone, conceding moral-agent fine-tuning as the best theistic argument and presenting disagreement as philosophically reasonable."
+        ],
+        blunders: [
+          {
+            text:
+              "His strongest objections targeted classical Thomism, but the closing sometimes let that narrower result carry more weight against theism in general.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "The move from apparently gratuitous suffering to actually gratuitous suffering leaned on moral seemings that need more defense against skeptical-theist replies.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              },
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          },
+          {
+            text:
+              "The freedom and changing-knowledge arguments sometimes treated creaturely alternatives and creaturely knowledge as the default meanings classical theism must accept.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
