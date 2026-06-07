@@ -12,6 +12,7 @@ export const DEFAULT_IMAGE_ALT =
 export const DEFAULT_IMAGE_WIDTH = 1200;
 export const DEFAULT_IMAGE_HEIGHT = 630;
 export const DEFAULT_IMAGE_TYPE = "image/png";
+export const DEFAULT_ROBOTS = "index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1";
 
 const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
@@ -97,14 +98,6 @@ export function websiteJsonLd(topics = []) {
     inLanguage: SITE_LANGUAGE,
     publisher: {
       "@id": ORGANIZATION_ID
-    },
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${absoluteUrl(searchPath())}?q={search_term_string}`
-      },
-      "query-input": "required name=search_term_string"
     }
   };
 
@@ -172,6 +165,7 @@ export function debateSeo(debate) {
     imageAlt: `${debateNumberLabel(debate)} scorecard: ${debate.title}`,
     type: "article",
     articleSection: "Debate scorecards",
+    publishedTime: debate.date,
     modifiedTime: debate.date,
     jsonLd: [
       organizationJsonLd(),
@@ -182,6 +176,7 @@ export function debateSeo(debate) {
         headline: `${debateNumberLabel(debate)}: ${debate.title}`,
         name: `${debateNumberLabel(debate)}: ${debate.title}`,
         description: compactText(debate.summary, 220),
+        datePublished: debate.date,
         dateModified: debate.date,
         mainEntityOfPage: absoluteUrl(debatePath(debate)),
         url: absoluteUrl(debatePath(debate)),

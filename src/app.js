@@ -6,6 +6,7 @@ import {
   DEFAULT_IMAGE_HEIGHT,
   DEFAULT_IMAGE_TYPE,
   DEFAULT_IMAGE_WIDTH,
+  DEFAULT_ROBOTS,
   SITE_LOCALE,
   SITE_NAME,
   SITE_THEME_COLOR,
@@ -138,7 +139,7 @@ function setSeo(seo) {
   const imageWidth = seo.imageWidth || DEFAULT_IMAGE_WIDTH;
   const imageHeight = seo.imageHeight || DEFAULT_IMAGE_HEIGHT;
   const imageType = seo.imageType || DEFAULT_IMAGE_TYPE;
-  const robots = seo.robots || "index,follow,max-image-preview:large";
+  const robots = seo.robots || DEFAULT_ROBOTS;
 
   document.title = seo.title;
   setCanonical(canonicalUrl);
@@ -179,6 +180,14 @@ function setSeo(seo) {
     });
   } else {
     removeHeadElement('meta[property="article:section"]');
+  }
+  if (seo.publishedTime) {
+    setMeta('meta[property="article:published_time"]', {
+      property: "article:published_time",
+      content: seo.publishedTime
+    });
+  } else {
+    removeHeadElement('meta[property="article:published_time"]');
   }
   if (seo.modifiedTime) {
     setMeta('meta[property="article:modified_time"]', {

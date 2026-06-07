@@ -9,6 +9,7 @@ import {
   DEFAULT_IMAGE_HEIGHT,
   DEFAULT_IMAGE_TYPE,
   DEFAULT_IMAGE_WIDTH,
+  DEFAULT_ROBOTS,
   DEFAULT_TITLE,
   SITE_LOCALE,
   SITE_THEME_COLOR,
@@ -56,11 +57,14 @@ function renderHtml(seo, noscriptText) {
   const imageWidth = seo.imageWidth || DEFAULT_IMAGE_WIDTH;
   const imageHeight = seo.imageHeight || DEFAULT_IMAGE_HEIGHT;
   const imageType = seo.imageType || DEFAULT_IMAGE_TYPE;
-  const robots = seo.robots || "index,follow,max-image-preview:large";
+  const robots = seo.robots || DEFAULT_ROBOTS;
   const structuredData = jsonScript(seo.jsonLd);
   const articleMeta = [
     seo.articleSection
       ? `<meta property="article:section" content="${escapeHtml(seo.articleSection)}">`
+      : "",
+    seo.publishedTime
+      ? `<meta property="article:published_time" content="${escapeHtml(seo.publishedTime)}">`
       : "",
     seo.modifiedTime
       ? `<meta property="article:modified_time" content="${escapeHtml(seo.modifiedTime)}">`
