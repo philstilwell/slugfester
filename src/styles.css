@@ -380,7 +380,7 @@ a {
 }
 
 .search-form label,
-.filter-heading h2 {
+.filter-heading-copy strong {
   margin: 0;
   color: var(--muted);
   font-size: 0.76rem;
@@ -418,12 +418,68 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  list-style: none;
 }
 
-.filter-heading span {
+.filter-accordion {
+  padding: 10px 12px;
+  background: rgba(247, 250, 249, 0.86);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.filter-accordion .filter-heading {
+  cursor: pointer;
+}
+
+.filter-heading::-webkit-details-marker {
+  display: none;
+}
+
+.filter-heading::before {
+  content: "+";
+  display: inline-grid;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  color: #fff;
+  background: var(--ink);
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.filter-accordion[open] .filter-heading::before {
+  content: "-";
+}
+
+.filter-heading-copy {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.filter-heading-copy small {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.filter-count {
+  flex: 0 0 auto;
+  padding: 5px 9px;
   color: var(--blue);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 900;
+}
+
+.filter-accordion[open] .interlocutor-filter-list {
+  margin-top: 10px;
 }
 
 .interlocutor-filter-list {

@@ -441,15 +441,18 @@ function renderSearch() {
           </div>
         </form>
 
-        <div class="filter-section">
-          <div class="filter-heading">
-            <h2>Interlocutors</h2>
-            <span>${state.people.length || "Any"}</span>
-          </div>
+        <details class="filter-section filter-accordion" ${state.people.length ? "open" : ""}>
+          <summary class="filter-heading">
+            <span class="filter-heading-copy">
+              <strong>Interlocutor filters</strong>
+              <small>Open to choose the debate participants shown below.</small>
+            </span>
+            <span class="filter-count">${state.people.length ? `${state.people.length} selected` : "Any"}</span>
+          </summary>
           <div class="interlocutor-filter-list">
             ${facets.people.map((person) => renderPersonFilter(person, state.people.includes(person.name))).join("")}
           </div>
-        </div>
+        </details>
       </section>
 
       <section class="search-results" aria-labelledby="search-results-heading">
