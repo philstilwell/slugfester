@@ -222,6 +222,11 @@ export const interlocutorAvatars = [
     aliases: ["Alex Malpass", "Alexander Malpass"]
   },
   {
+    name: "Miles Donahue",
+    src: `${avatarBasePath}/miles-donahue.webp`,
+    aliases: ["Miles K. Donahue", "Miles K Donahue", "Miles Donahue"]
+  },
+  {
     name: "Richard Carrier",
     src: `${avatarBasePath}/richard-carrier.webp`,
     aliases: ["Richard Carrier"]
