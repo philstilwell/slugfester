@@ -445,7 +445,7 @@ function renderSearch() {
           <summary class="filter-heading">
             <span class="filter-heading-copy">
               <strong>Interlocutor filters</strong>
-              <small>Open to choose the debate participants shown below.</small>
+              <small>Open this section to include one or more debate participants in the search.</small>
             </span>
             <span class="filter-count">${state.people.length ? `${state.people.length} selected` : "Any"}</span>
           </summary>
