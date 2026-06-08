@@ -23054,5 +23054,398 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "donahue-fodor-case-against-christianity-2025",
+    number: "66",
+    title: "Miles K. Donahue vs James Fodor: The Case Against Christianity",
+    label: "Christianity, evidence, and disagreement",
+    date: "2026-06-07",
+    duration: "1 hr 59 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=jOYiPLT41wM",
+    motion:
+      "Do philosophical arguments, biblical beauty, religious experience, and resurrection evidence make Christianity credible, or do evil, disagreement, expert dissent, and Christian moral failure make it unlikely?",
+    summary:
+      "Donahue tests whether Christian belief can remain rational under skeptical pressure; Fodor argues that the case for Christianity is too assumption-heavy and the case against it is cumulatively stronger.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions downloaded with yt-dlp on 2026-06-07. Auto-caption spacing, speaker names, philosophical terms, and theological references are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God has been a reality in my life",
+        context:
+          "Donahue's Christian posture is reflective rather than triumphalist: he keeps theistic arguments in play while grounding much of his confidence in religious experience."
+      },
+      con: {
+        text: "the correct response ... is usually to withhold judgment",
+        context:
+          "Fodor's skeptical posture is methodological: he argues that theistic and Christian arguments require too many contested assumptions for high confidence."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Reflective Christianity",
+        speaker: "Miles K. Donahue",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical atheism",
+        speaker: "James Fodor",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 82,
+      con: 86
+    },
+    sections: [
+      {
+        title: "Theistic arguments and divine psychology",
+        timebox: "04:34-30:40",
+        score: {
+          pro: 82,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:00",
+              role: "Moral-value bridge",
+              words:
+                "Donahue argues that if the hypothesis is an all-powerful, all-knowing, perfectly good God, claims about divine psychology can be grounded in moral value.",
+              score: 82,
+              critique:
+                "Donahue's moral-value bridge is a strong way to keep fine-tuning and other theistic arguments from collapsing into complete divine-psychology skepticism. He does not simply assert that God would create; he identifies moral value as the reason a perfectly good God might actualize life-supporting states of affairs. That gives the argument a principled route from divine goodness to expected creation. The weakness is that the bridge inherits heavy assumptions about moral comparability, God's creative options, and whether finite goods add anything to a world already containing God. Fodor quickly exposes those pressure points. The score is strong because Donahue gives the best available repair, but not higher because the repair remains highly theory-laden.",
+              tags: []
+            },
+            con: {
+              time: "12:00",
+              role: "Creative-options objection",
+              words:
+                "Fodor says it is not clear that the universe God would create should look like ours, since non-physical or alternative forms of life may swamp our kind of world.",
+              score: 86,
+              critique:
+                "Fodor's creative-options objection is one of the sharpest moves in the discussion. He accepts the moral-value strategy for the sake of argument, then asks whether it predicts this universe rather than countless other possible goods, including disembodied or otherwise non-physical life. That directly attacks the likelihood claim behind fine-tuning without needing to deny the scientific data. The weakness is that the objection is openly underdeveloped; Fodor admits the space of non-physical life needs more rigorous work. Still, the argumentative instinct is excellent because it shifts the debate from whether life is valuable to whether this life-supporting physical cosmos is expected on theism. The high score reflects a strong objection with unfinished formalization.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Biblical beauty and religious texts",
+        timebox: "30:40-35:20",
+        score: {
+          pro: 83,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "33:00",
+              role: "Parity concession",
+              words:
+                "Donahue says similar claims are made for the Book of Mormon and the Quran, so it is hard to give the Bible a rationally privileged literary status.",
+              score: 83,
+              critique:
+                "Donahue's parity concession is unusually good Christian-side reasoning because it refuses an easy apologetic shortcut. By comparing biblical-beauty appeals with Mormon and Islamic claims, he recognizes that literary or devotional impact is not enough unless there is a non-question-begging way to rank inspired texts. That makes the exchange more honest and protects the Christian case from relying on private aesthetic preference. The limitation is that the move is mostly defensive: it clears away a weak argument rather than supplying a positive Christian replacement. It also risks leaving the Bible's historical and theological claims under-discussed in this section. The score is strong because the concession is epistemically disciplined, even if it gives little affirmative support.",
+              tags: []
+            },
+            con: {
+              time: "31:00",
+              role: "Baseline challenge",
+              words:
+                "Fodor asks what baseline would show what humans can write without divine inspiration, and how a religious text could be shown to exceed that baseline.",
+              score: 84,
+              critique:
+                "Fodor's baseline challenge is clean and decisive against the literary-beauty argument. He asks for criteria, comparison cases, and a way to prevent every impressive text from being redescribed as possible divine inspiration. That exposes the central evidential problem: without a baseline for merely human literary achievement, beauty cannot do much confirmatory work. The weakness is that the objection is aimed at a relatively soft argument that Donahue himself does not defend. It therefore wins the local exchange more than the broader case against Christianity. The score is high because the reasoning is precise and portable across Bible, Quran, and Book of Mormon claims, but it is not a central victory over Christianity's strongest evidence.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Experience and proper basicality",
+        timebox: "35:20-44:57",
+        score: {
+          pro: 79,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "38:36",
+              role: "Proper-basicality defense",
+              words:
+                "Donahue says belief in God may be properly basic, similar to belief in the external world, because God has been a reality in his life.",
+              score: 79,
+              critique:
+                "Donahue's proper-basicality defense is fair because it names the real source of much religious confidence rather than pretending philosophical arguments do all the work. He also frames the point modestly: religious experience may justify belief for the experiencer in something like the way ordinary perception justifies belief in the external world. The weakness is public transferability. Once the conversation includes rival religious experiences, reflection, and serious disagreement, private seeming alone cannot easily decide which experience is veridical. Donahue acknowledges that frustration, but the argument still asks outsiders to accept a stopping point they do not share. The score is solid because the view is philosophically respectable, but limited in a public debate.",
+              tags: [
+                {
+                  label: "Belief bias",
+                  type: "bias",
+                  url: bias("belief-bias"),
+                  context:
+                    "Private religious experience can make the believed conclusion feel more secure than the publicly shared evidence supports."
+                }
+              ]
+            },
+            con: {
+              time: "37:00",
+              role: "Self-authentication objection",
+              words:
+                "Fodor says Craig's self-authenticating Holy Spirit appeal feels like an assertion that there is a difference without saying how outsiders could distinguish it.",
+              score: 85,
+              critique:
+                "Fodor's self-authentication objection is strong because it targets the epistemic asymmetry rather than mocking the experience. If Christian experience is said to be uniquely self-authenticating, the debate still needs an account of how that differs from sincere Mormon, Muslim, or other religious experiences. Fodor's point that the answer helps only those who already have the right experience is especially relevant to a public case for Christianity. The weakness is that he brackets deeper epistemology; some foundationalist views might allow first-person warrant without an outsider test. Still, in this format, his objection lands well because the Christian claim was being used to explain why one should be Christian, not merely why one Christian feels warranted.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection and naturalized psychology",
+        timebox: "44:57-59:38",
+        score: {
+          pro: 81,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "50:45",
+              role: "Craig-style pressure test",
+              words:
+                "Donahue presses Fodor on burial, reburial, exhumation, hallucinations, and whether first-century Jews would have formed resurrection belief from visionary experiences.",
+              score: 81,
+              critique:
+                "Donahue's resurrection questioning is strong because it tests Fodor's model at the right points: burial, body relocation, why authorities did not end the movement, and whether Jewish expectations made bodily resurrection psychologically available. That keeps the exchange tied to the minimal-facts apologetic tradition rather than letting a naturalistic acronym substitute for explanation. The weakness is that Donahue mostly channels William Lane Craig's familiar objections instead of developing his own positive historical case or deciding which counter-pressure is most damaging. Fodor is able to answer each point by appealing to uncertainty and social psychology. The score is strong because the questions are relevant and disciplined, but not higher because they do not decisively destabilize the rival model.",
+              tags: []
+            },
+            con: {
+              time: "45:24",
+              role: "RHBS alternative",
+              words:
+                "Fodor offers reburial, hallucinations, biases, and socialization as a naturalized model explaining sincere early Christian belief without a literal resurrection.",
+              score: 86,
+              critique:
+                "Fodor's RHBS model is persuasive as an inference-to-best-explanation alternative because it names mechanisms rather than merely saying 'maybe something else happened.' Reburial addresses the empty tomb; bereavement experiences and collective religious interpretation address appearances; memory reshaping and socialization address the growth of conviction. He is careful not to overclaim precise Gospel details and admits the historical uncertainty. The weakness is that several parts remain speculative: who moved the body, how experiences became bodily-resurrection claims, and how strongly modern psychology maps onto first-century disciples. Even so, the model earns a high score because it directly competes with the minimal-facts case while keeping its evidential claims appropriately modest.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Some parts of the model rely on plausible but unverified historical possibilities filling gaps in the resurrection record."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Evil and skeptical theism",
+        timebox: "59:38-1:15:15",
+        score: {
+          pro: 82,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:04:00",
+              role: "Symmetry objection",
+              words:
+                "Donahue argues that if Fodor's divine-psychology skepticism blocks fine-tuning, it may also block the problem of evil, since both reason about what God would do.",
+              score: 82,
+              critique:
+                "Donahue's symmetry objection is excellent cross-examination. If Fodor says we cannot infer what God would create because divine psychology is opaque, then Fodor must explain why we can infer that God would not create a world with this much suffering. That catches a possible inconsistency between the anti-fine-tuning argument and the problem of evil. The weakness is that Donahue later agrees many skeptical-theist moves are unattractive, and Fodor offers a plausible distinction between predicting what God would create and ruling out worlds God has strong reason to avoid. The score is high because the objection forces theoretical discipline, but not higher because it does not remove the ordinary moral pressure generated by severe suffering.",
+              tags: []
+            },
+            con: {
+              time: "1:00:00",
+              role: "Ordinary-morality challenge",
+              words:
+                "Fodor says if ordinary judgments that children's bone cancer is bad cannot be trusted, then similar skepticism threatens many positive theistic arguments too.",
+              score: 88,
+              critique:
+                "Fodor's ordinary-morality challenge is the strongest argument of the debate. He links the problem of evil to skeptical theism and fine-tuning, arguing that theists cannot confidently reason from moral goods to God's creative aims while suddenly becoming deeply skeptical about obvious evils. The bone-cancer and Holocaust examples make the cost of radical inscrutability vivid without relying on emotionalism alone. The weakness is that the argument still depends on moral seemings about what a perfect creator could avoid, and Molinist or consequential-complexity replies remain live. But Fodor handles the burden well: the more inscrutable God's reasons become, the less positive apologetic reasoning survives. The score is very high because the objection is coherent, central, and responsive.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Revelation and religious disagreement",
+        timebox: "1:15:15-1:29:00",
+        score: {
+          pro: 78,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:18:43",
+              role: "Inscrutability reply",
+              words:
+                "Donahue says religious confusion may have inscrutable likelihood on Christianity if history, creaturely freedom, and counterfactuals are complex enough.",
+              score: 78,
+              critique:
+                "Donahue's inscrutability reply is the best available move once religious disagreement is treated as evidence against revelation. By invoking historical complexity and creaturely freedom, he explains why a Christian might resist simple predictions about what divine communication should look like. He also fairly admits that outweighing the evidence would require a broader cumulative case. The weakness is that the reply is almost entirely defensive: it says we may not know what Christianity predicts, while Fodor has a clear naturalistic explanation for geographic and denominational contingency. That asymmetry matters. The score is solid because Donahue identifies a real epistemic limitation, but the move risks becoming a shield for any disappointing evidential pattern.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The reply leans on unknown divine or historical reasons to neutralize evidence that otherwise looks unfavorable."
+                }
+              ]
+            },
+            con: {
+              time: "1:15:15",
+              role: "Revealed-religion critique",
+              words:
+                "Fodor argues that Christianity predicts divine revelation, but actual religious belief is historically spotty, geographically contingent, and internally divided.",
+              score: 87,
+              critique:
+                "Fodor's revealed-religion critique is strong because it moves from a specific Christian claim to observable religious history. If God wants humans to know and practice particular truths, spotty access, geography-shaped belief, denominational division, and contested canons are surprising. Naturalism predicts those patterns more readily through culture, power, transmission, and human disagreement. The weakness is that the force varies by theology: some Christians deny that God aims at equally clear access for everyone, and others can appeal to hidden providential reasons. But those replies exact a cost. The score is high because Fodor identifies a clear likelihood contrast and keeps the objection aimed at revelation, not generic theism alone.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Expert dissent and moral fruits",
+        timebox: "1:29:00-1:58:34",
+        score: {
+          pro: 82,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:31:00",
+              role: "Expertise challenge",
+              words:
+                "Donahue says philosopher surveys are less probative because most philosophers outside philosophy of religion lack deep acquaintance with contemporary theistic arguments.",
+              score: 82,
+              critique:
+                "Donahue's expertise challenge is strong because it complicates a crude appeal to philosopher headcounts. Philosophy is broad, and a philosopher of law, mathematics, or mind may not know the current fine-tuning, resurrection, or divine-psychology literature well enough to function as a decisive authority on Christianity. Donahue also avoids the reverse mistake, conceding that philosophy-of-religion specialization is affected by self-selection. The weakness is that he may underweight adjacent expertise in metaphysics, epistemology, and philosophy of mind, where many views bear directly on theism. Fodor presses that point effectively. The score is strong because Donahue identifies a real sampling problem, but not higher because his corrective also narrows the expert pool contestably.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The challenge risks treating philosophy of religion as the main expert domain while undercounting adjacent fields relevant to theism."
+                }
+              ]
+            },
+            con: {
+              time: "1:29:00",
+              role: "Peer-disagreement update",
+              words:
+                "Fodor says his 10% theism estimate mainly reflects conciliating toward other philosophers and recognizing widespread disagreement among apparent epistemic peers.",
+              score: 84,
+              critique:
+                "Fodor's peer-disagreement argument is careful and unusually transparent. He distinguishes his personal near-zero estimate from an all-things-considered credence that conciliates toward expert disagreement, and he treats 10% as an order-of-magnitude estimate rather than a precise calculation. That moderation makes the argument more credible than a simple appeal to atheist-majority surveys. The weakness is that the weight assigned to different experts remains unsettled, especially given self-selection in philosophy of religion and limited survey coverage beyond the Anglosphere. The argument also shifts from first-order evidence to social epistemology, which cannot by itself settle Christianity. The score is strong because Fodor earns some confidence reduction, but not decisive because the calibration is rough.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "The argument uses expert-disagreement data as evidence, so its force depends on whether the cited expert pool is genuinely authoritative."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 82,
+        strengths: [
+          "Donahue was unusually fair to the skeptical case, conceding weak biblical-beauty arguments, the seriousness of skeptical theism worries, and the force of Christian moral-fruits concerns.",
+          "He pressed the strongest symmetry questions, especially whether divine-psychology skepticism undercuts both fine-tuning and the problem of evil.",
+          "He repeatedly clarified burden-of-proof issues instead of treating Christianity as established by any one argument."
+        ],
+        blunders: [
+          {
+            text:
+              "Several replies leaned on inscrutable divine or historical reasons, which can neutralize negative evidence only by also weakening positive apologetic predictions.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His appeal to personal experience and proper basicality explained his own confidence better than it supplied shareable evidence for Christianity.",
+            links: [
+              {
+                label: "Belief bias",
+                url: bias("belief-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His critique of philosopher surveys sometimes privileged philosophy of religion while undercounting adjacent fields that bear directly on theism.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 86,
+        strengths: [
+          "Fodor consistently identified where Christian arguments require contested assumptions about causation, divine psychology, religious experience, and historical reconstruction.",
+          "His problem-of-evil and religious-disagreement arguments created clear likelihood contrasts between Christianity and naturalistic explanations.",
+          "He was candid about uncertainty, calling the RHBS model inferential and the 10% theism figure an order-of-magnitude estimate rather than a precise proof."
+        ],
+        blunders: [
+          {
+            text:
+              "His divine-psychology skepticism needed careful limits, since too strong a version would also weaken his own problem-of-evil argument.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "The resurrection alternative was plausible but still relied on unverifiable historical possibilities about reburial and early collective interpretation.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "The expert-disagreement argument depended on a rough judgment about which philosophers, scientists, and subfields count as relevant authorities.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
