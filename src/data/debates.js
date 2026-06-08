@@ -22709,5 +22709,350 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "donahue-malpass-fine-tuning-god-2026",
+    number: "65",
+    title: "Miles K. Donahue vs Alex Malpass: Does Fine-Tuning Point to God?",
+    label: "Fine-tuning priors and naturalism",
+    date: "2026-06-07",
+    duration: "1 hr 21 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=2UtMbB_gazg",
+    motion:
+      "Does cosmic fine-tuning provide strong evidence for God, or can naturalistic alternatives, hypothesis-space ambiguity, and doubts about divine psychology undercut that inference?",
+    summary:
+      "Donahue argues that fine-tuning is far more likely on theism than single-universe naturalism; Malpass argues that naturalistic disjunctions, alien and simulation analogies, priors, and religious ambiguity prevent that inference from carrying enough weight.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions downloaded with yt-dlp on 2026-06-07. Auto-caption spacing, speaker names, Bayesian terminology, and philosophical names are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "fine-tuning is strong evidence for theism",
+        context:
+          "Donahue's central claim is comparative: life-permitting constants are much likelier if a perfectly good creator wants moral agents than if single-universe naturalism is true."
+      },
+      con: {
+        text: "good evidence for intentionality",
+        context:
+          "Malpass grants that striking evidence can support design-like intentionality while denying that it automatically identifies benevolent theism over naturalistic or quasi-naturalistic rivals."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Fine-tuning theism",
+        speaker: "Miles K. Donahue",
+        color: "teal"
+      },
+      con: {
+        name: "Naturalistic skepticism",
+        speaker: "Alex Malpass",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 80,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Fine-tuning as Bayesian evidence",
+        timebox: "00:36-07:00",
+        score: {
+          pro: 82,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "00:48",
+              role: "Bayesian fine-tuning case",
+              words:
+                "Donahue says fine-tuning is an established scientific fact, then argues that life-permitting constants are far more likely on theism than on single-universe naturalism.",
+              score: 82,
+              critique:
+                "Donahue's opening is strong because it gives the argument a clear probabilistic structure. He separates the data from the explanatory comparison, defines the relevant naturalism as single-universe naturalism, and explains likelihood with accessible analogies such as tea in a cabin and rocks spelling SOS. That helps the audience see why fine-tuning, if real and rare, could raise the probability of design. The weakness is that several large issues are bracketed: the status of fine-tuning as a property of physics, the choice of probability distribution over constants, and the exclusion of multiverse-style naturalism. The score is high because the case is lucid and relevant, though its force depends on assumptions set aside at the start.",
+              tags: []
+            },
+            con: {
+              time: "07:18",
+              role: "Methodological opening",
+              words:
+                "Malpass says he is building intuitions rather than claiming all the answers, and he will test whether evidence reaches benevolent theism rather than mere intentionality.",
+              score: 77,
+              critique:
+                "Malpass's opening is careful and intellectually honest. He explicitly says he is thinking the issue through, which makes his later analogies feel exploratory rather than evasive. His key distinction, evidence for intentionality versus evidence for benevolent theism, is exactly where the fine-tuning argument needs pressure: even if nature looks arranged, the arranger's identity and motives remain further questions. The weakness is that this opening does not yet answer Donahue's concrete likelihood comparison. It sets up an intuition pump and a strategy, not a full alternative model of the constants. The score is solid because it frames the right diagnostic issue, but lower than Donahue's opening because it is more preparatory than argumentative.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Intentionality and stalking horses",
+        timebox: "08:00-21:40",
+        score: {
+          pro: 80,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "19:32",
+              role: "Proves-too-much rebuttal",
+              words:
+                "Donahue argues that if the stalking-horse reply works against fine-tuning, it works against every possible empirical case for God, making theism empirically unreachable.",
+              score: 80,
+              critique:
+                "Donahue's proves-too-much rebuttal is one of his best strategic moves. Instead of chasing every proposed naturalistic alternative, he asks whether the skeptical method would block any empirical evidence for God, no matter how striking. That reframes the discussion from one fine-tuning case to a broader rule about confirmation. It also forces Malpass to say how much religious ambiguity he is willing to accept. The weakness is that the move can overstate the dialectical cost. A critic might reject some theistic inferences from ambiguous evidence without saying no possible observation could ever favor theism. The score is high because the objection exposes a real burden, but it still needs a sharper line between caution and global skepticism.",
+              tags: []
+            },
+            con: {
+              time: "11:32",
+              role: "Intentionality-benevolence distinction",
+              words:
+                "Malpass says a strange signal can be strong evidence for intentionality while still leaving the sender's goodness, target, and motives unclear.",
+              score: 85,
+              critique:
+                "Malpass's intentionality-benevolence distinction is powerful because it accepts the strongest part of design reasoning without granting the full theistic conclusion. The pulsar and alien-signal examples show that apparent order may first support intelligence or agency, while benevolence, worship-worthiness, and divine identity require additional evidence. His escalating cases, from prime-number signals to 'we come in peace,' make the inferential gap intuitive. The weakness is that the analogy is only partial: fine-tuning concerns the existence of life-permitting structure, not a communication event, and theism may claim a broader fit with moral agency. Even so, the score is high because the distinction directly targets the move from designed-looking data to perfect-being theism.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Hypothesis space and burden",
+        timebox: "22:00-30:50",
+        score: {
+          pro: 79,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "23:08",
+              role: "Naturalism-as-hypothesis defense",
+              words:
+                "Donahue says naturalism can be a well-formed hypothesis if captured as the natural world being all there is, even though it admits many specifications.",
+              score: 79,
+              critique:
+                "Donahue's hypothesis-space defense is useful because it prevents the debate from dissolving into labels. He concedes that naturalism and theism both admit many specifications, but argues that sufficiently general claims can still be compared: the natural world is all there is, or a perfectly good creator exists. That keeps Bayesian comparison possible and prevents Malpass from winning by semantic diffusion alone. The weakness is that Donahue's naturalism remains narrower than many live alternatives, especially once multiverse, simulation, abstract objects, and single-universe restrictions are debated. The score is solid-strong because he preserves the argumentative framework, but the framework still carries contested boundary choices that matter to the final probability.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The comparison narrows naturalism to a particular target, so success against that target can look broader than it is."
+                }
+              ]
+            },
+            con: {
+              time: "24:20",
+              role: "Ambition-of-claim challenge",
+              words:
+                "Malpass says it is trivial that some theism beats some naturalism; the serious claim is that a specific theism beats every naturalistic specification or their disjunction.",
+              score: 84,
+              critique:
+                "Malpass's burden challenge is excellent because it clarifies what would make the fine-tuning argument nontrivial. If one compares a friendly version of theism to a weak version of naturalism, the result proves little. Malpass presses for a stronger claim: a well-specified theism must outperform the whole relevant naturalistic field, or at least the best naturalistic competitors. That is exactly the burden Donahue later tries to meet with priors. The weakness is that 'every naturalistic specification' can become too expansive, especially if it includes unconstrained science-fiction possibilities with tiny independent support. The score is high because the challenge disciplines the comparison, but not maximal because it risks making the evidential target slippery.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection, aliens, and possible evidence",
+        timebox: "31:10-45:50",
+        score: {
+          pro: 81,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "31:15",
+              role: "Resurrection evidence analogy",
+              words:
+                "Donahue says witnessing Jesus' resurrection, appearances, and ascension would at least raise the probability of theism over naturalism, so the stalking-horse reply cannot block all evidence.",
+              score: 81,
+              critique:
+                "Donahue's resurrection analogy improves on the sky-writing example because it embeds evidence in a human, historical, and religious context rather than an obviously bizarre spectacle. If one personally observed Jesus crucified, resurrected, interacting with disciples, and ascending, it would be strange to say that theism receives no confirmation at all. That makes the anti-evidence implication of the stalking-horse objection look costly. The weakness is that the analogy imports specifically Christian background assumptions into a debate about fine-tuning. The historical and theological fit is precisely what Malpass challenges with alien or simulation reinterpretations. The score is high because the analogy pressures global skepticism, but its transfer back to cosmic constants remains imperfect.",
+              tags: []
+            },
+            con: {
+              time: "36:05",
+              role: "Alien reinterpretation reply",
+              words:
+                "Malpass replies that general theism no more directly predicts a resurrection than advanced aliens do, and calling the event religiously infused risks assuming what is at issue.",
+              score: 85,
+              critique:
+                "Malpass's alien reinterpretation is strong because it does not deny that the imagined event is extraordinary. He asks why the extraordinary should be read as benevolent theism rather than powerful, opaque agency, especially when advanced aliens, simulations, or future humans could mimic religious framing. His complaint about 'religiously infused' context is also fair: if the context is already read through Christian assumptions, the inference can become circular. The weakness is that appeals to unknown advanced capacities can become too cheap; almost any observation can be redescribed as alien manipulation if enough mystery is allowed. Still, the score is high because Malpass exposes the gap between astonishing agency and the specific God hypothesis.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The appeal to unknown alien or future-human capacities can preserve a live alternative by leaning on what we cannot rule out."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Priors and augmented naturalism",
+        timebox: "46:03-56:50",
+        score: {
+          pro: 84,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "46:10",
+              role: "Prior-probability asymmetry",
+              words:
+                "Donahue argues that augmented naturalism is an extremely specific low-prior hypothesis, while perfect-being theism has simpler unlimited attributes and a larger share of the design space.",
+              score: 84,
+              critique:
+                "Donahue's prior-probability argument is the most technical and substantive defense of his opening. He does not merely say that augmented naturalism predicts fine-tuning; he argues that it pays for that prediction with an extremely low prior, since any constants could be favored by a tailored natural disposition. By contrast, he claims perfect-being theism is not an arbitrary finite specification because unlimited knowledge, power, and goodness have a kind of simplicity. The weakness is that the simplicity claim remains controversial, and he later concedes naturalism has some general parsimony advantage. The score is strong because the argument directly meets Malpass's stalking horse, though the crucial prior comparison is not demonstrated numerically.",
+              tags: []
+            },
+            con: {
+              time: "52:42",
+              role: "Design-space boundary objection",
+              words:
+                "Malpass says simulations, advanced agents, and other sci-fi-style naturalisms may belong on the naturalist side, so Donahue's probability space may be divided incorrectly.",
+              score: 82,
+              critique:
+                "Malpass's design-space objection is important because the whole Bayesian result depends on how the alternatives are partitioned. If simulation hypotheses, advanced natural designers, and other science-fiction-like options count as naturalistic rather than supernatural design, then naturalism has more explanatory resources than Donahue's tidy comparison suggests. Malpass also forces Donahue to clarify whether 'design' means any designer or specifically supernatural design. The weakness is that broadening the naturalist side with many imaginative alternatives does not automatically raise its total probability enough; the individual disjuncts may be minuscule. The score is high because the objection catches a real ambiguity in the model, but Donahue has a plausible reply that priors still matter.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Ambiguity, parsimony, and closing limits",
+        timebox: "57:11-1:20:55",
+        score: {
+          pro: 81,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:08:00",
+              role: "Coherence-over-modesty close",
+              words:
+                "Donahue says theism has coherence even if it is immodest, while augmented naturalism lacks both modesty and coherence, so fine-tuning still favors theism.",
+              score: 81,
+              critique:
+                "Donahue's final probabilistic repair is agile. When Malpass presses Paul Draper-style worries that unlimited perfect-being theism may be swamped by the disjunction of limited-deity options, Donahue retreats to a more modest but still relevant claim: coherence contributes to intrinsic probability, and augmented naturalism has neither coherence nor modesty. His closing electron-generalization example usefully connects this to ordinary scientific preference for uniform laws. The weakness is that the argument becomes increasingly theoretical and underquantified. Donahue concedes uncertainty about how coherence, modesty, and ontological simplicity should be weighted, yet his final confidence still depends on that balance. The score is strong because he adapts well, but the crucial measure problem remains.",
+              tags: []
+            },
+            con: {
+              time: "1:13:12",
+              role: "Religious-ambiguity close",
+              words:
+                "Malpass says a posterior arguments may leave naturalism and theism in an ambiguous gray area because the theoretical virtues are hard to weigh, and fine-tuning may reflect theory limits.",
+              score: 86,
+              critique:
+                "Malpass's ambiguity close is strong because it fits the actual state of the debate. He does not claim a decisive naturalistic victory; he argues that once priors, hypothesis partitions, ontological parsimony, theory-laden fine-tuning, and divine psychology all enter, confidence should drop. His closing point about fine-tuning possibly reflecting flaws in our theories rather than brute properties of the universe is also a useful deflationary reminder. The weakness is that ambiguity can become a comfortable stopping point rather than an argued probability judgment, and Malpass gives less detail on which naturalistic alternative is best. The score is high because he earns much of the caution he recommends, though he leaves the positive naturalist case incomplete.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The appeal to unsettled theoretical virtues can make withholding judgment attractive even where one side may still have a probabilistic edge."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 80,
+        strengths: [
+          "Donahue presented the fine-tuning argument in a clear Bayesian structure and kept returning to likelihoods, priors, and hypothesis comparison.",
+          "He recognized that tailored naturalistic hypotheses can predict the data, then argued that they pay for that fit with low prior probability.",
+          "He adjusted under pressure, conceding naturalism's parsimony advantage and narrowing the claim to a comparison with specific forms of naturalism."
+        ],
+        blunders: [
+          {
+            text:
+              "He narrowed naturalism to single-universe naturalism early, which made the fine-tuning comparison cleaner but less representative of the strongest naturalistic field.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His appeal to fine-tuning as an established fact and to uniform probability over constants carried more weight than the debate itself defended.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His claim that a perfectly good God would be expected to create moral agents relied on contested divine-psychology assumptions.",
+            links: [
+              {
+                label: "Belief bias",
+                url: bias("belief-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Malpass clearly separated evidence for intentional arrangement from evidence for benevolent perfect-being theism.",
+          "He pressed the correct Bayesian burden: compare a specified theism not merely with weak naturalism, but with the strongest relevant naturalistic specifications or disjunctions.",
+          "He maintained epistemic humility while identifying real unresolved issues about priors, simulation hypotheses, theory-laden fine-tuning, and divine psychology."
+        ],
+        blunders: [
+          {
+            text:
+              "His alien, time-travel, and simulation alternatives sometimes relied on unknown future capacities rather than independently supported mechanisms.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His religious-ambiguity posture risked treating unresolved theoretical weights as a reason to stop before making any comparative probability judgment.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "By expanding naturalism into a large disjunction of possible scenarios, he sometimes made the skeptical target hard to discipline or falsify.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
