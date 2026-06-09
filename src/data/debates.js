@@ -24199,5 +24199,358 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "winger-dillahunty-resurrection-unreasonable-2019",
+    number: "69",
+    title: "Mike Winger vs Matt Dillahunty: Is Belief in the Resurrection Unreasonable?",
+    label: "Resurrection burden and history",
+    date: "2026-06-08",
+    duration: "1 hr 58 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=Z2FGgkubhZM",
+    motion:
+      "Is belief in Jesus' resurrection reasonable given the historical claims, testimonial sources, rival explanations, and evidential burden for supernatural causation?",
+    summary:
+      "Winger builds a cumulative historical case from non-miraculous facts and explanatory scope; Dillahunty argues that the evidence remains testimonial and insufficient for a supernatural resurrection.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-08, plus YouTube chapter timing. Auto-caption spacing, speaker turns, names, biblical references, and repeated caption fragments are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "The more data you get, the more it looks like Jesus rose from the dead.",
+        context:
+          "Winger's case is cumulative: many ordinary historical claims are pooled, then resurrection is presented as the best explanation."
+      },
+      con: {
+        text: "I will believe anything for which there is sufficient evidence.",
+        context:
+          "Dillahunty frames the dispute as evidential sufficiency, not as a dogmatic refusal to accept any possible miracle claim."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Resurrection defense",
+        speaker: "Mike Winger",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical burden test",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 75,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Historical-facts frame",
+        timebox: "05:00-29:30",
+        score: {
+          pro: 77,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "05:45",
+              role: "Two-part case",
+              words:
+                "Winger says the case has two parts: establish likely first-century facts, then ask which explanation best accounts for them.",
+              score: 77,
+              critique:
+                "Winger's two-part case is a disciplined opening because it separates ordinary historical premises from the miraculous conclusion. That helps avoid simply assuming the resurrection at the outset. He also states the burden modestly at first: these are claims he thinks very likely happened, not miracles smuggled into the premise list. The weakness is that the transition from agreed or majority historical facts to resurrection does enormous work. Several facts, such as death by crucifixion, despair, proclamation, and sincerity, are relevant but compatible with many non-resurrection scenarios. The score is solid because the abductive structure is clear and fair, but limited because the bridge to a supernatural event remains underdefended.",
+              tags: []
+            },
+            con: {
+              time: "26:55",
+              role: "Claim-evidence distinction",
+              words:
+                "Dillahunty replies that many items Winger calls evidence are claims about a resurrection, not independent evidence that resurrection occurred.",
+              score: 84,
+              critique:
+                "Dillahunty's claim-evidence distinction is strong because it targets the heart of resurrection apologetics: testimony that people reported experiences is not automatically evidence that the reported event occurred as interpreted. He makes the standard vivid with his mother's demon claim and later with ordinary testimonial analogies. The strongest part is that he does not say all testimony is worthless; he says sufficiency depends on the claim. The weakness is that he sometimes states the distinction too sharply, as if reported testimony cannot count as evidence at all rather than weaker evidence. Still, the move substantially clarifies the burden. The score is high because it directly answers Winger's evidential framing.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Empty tomb and corroboration",
+        timebox: "08:15-58:00",
+        score: {
+          pro: 76,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "08:30",
+              role: "Empty-tomb support",
+              words:
+                "Winger argues that the empty tomb is supported by multiple attestation, enemy polemic, women witnesses, Joseph of Arimathea, and burial archaeology.",
+              score: 76,
+              critique:
+                "Winger's empty-tomb support is one of his best developed historical sections. He gives several independent-looking considerations rather than relying on one proof text: multiple attestation, women as first witnesses, Joseph of Arimathea, and fit with known burial practices. He also candidly notes that burial and empty tomb are less strongly supported than some other facts. The weakness is that several supports are weaker than they sound. Matthew reporting enemy polemic is not the same as a surviving enemy source, and archaeology confirming plausible tomb types confirms setting more than event. The score is solid because the case is cumulative and relevant, but not higher because corroboration often stops at background plausibility.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Scholarship percentages and named authorities sometimes carry weight beyond the specific evidence presented for the tomb."
+                }
+              ]
+            },
+            con: {
+              time: "52:40",
+              role: "Consistency-not-confirmation reply",
+              words:
+                "Dillahunty says tomb archaeology shows the story uses plausible local details, but that does not show Joseph buried Jesus or that the tomb was empty.",
+              score: 85,
+              critique:
+                "Dillahunty's consistency-not-confirmation reply is highly relevant. He grants that a story can contain accurate background details while denying that those details confirm the central disputed event. His Spider-Man/New York and million-dollar analogies make the point accessible: setting accuracy can raise confidence that an author knows the world of the story, but it does not automatically validate the plot. The limitation is that he risks underweighting cumulative historical texture; enough precise, difficult, and independent local fit can matter. Even so, against Winger's claim that archaeology verifies the empty-tomb story, the distinction lands well. The score is high because it narrows exactly what the corroboration really proves.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Appearances, sincerity, and Paul",
+        timebox: "11:45-1:12:30",
+        score: {
+          pro: 74,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "12:00",
+              role: "Appearance-and-sincerity case",
+              words:
+                "Winger says disciples, James, and Paul had experiences they took as appearances of the risen Jesus, and their persecution shows sincerity.",
+              score: 74,
+              critique:
+                "Winger's appearance-and-sincerity case is relevant because it focuses on what most scholars are more willing to grant: early believers sincerely thought they had resurrection experiences. This blocks a crude conspiracy theory and explains why the movement survived discouragement. His use of Paul and James also adds named individuals rather than leaving the case at anonymous crowds. The weakness is that sincerity establishes belief more readily than truth. People can be transformed by mistaken interpretations, visionary experiences, social contagion, or later reports they accept. The 500 and James claims are also mediated through Paul rather than direct interrogable witnesses. The score is respectable because the data matter, but limited because sincerity does not settle resurrection.",
+              tags: []
+            },
+            con: {
+              time: "1:10:50",
+              role: "Mediated-testimony pressure",
+              words:
+                "Dillahunty says Paul reports appearances to the twelve, the 500, and James, but those people do not independently tell us what happened.",
+              score: 83,
+              critique:
+                "Dillahunty's mediated-testimony pressure is strong because it focuses the evidential chain. A report that Paul says Jesus appeared to others is not the same as cross-examined testimony from those others, and the difference matters when the claim is extraordinary. He also separates what Paul or James believed from what is reasonable for a modern listener to believe. The weakness is that ancient history often works through mediated sources; demanding direct interrogable witnesses can become too stringent if applied without gradation. Still, Dillahunty is not dismissing all ancient testimony. He is asking whether this chain can bear resurrection-level weight. The score is high because the objection is burden-sensitive and central.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Alternative explanations",
+        timebox: "20:20-51:00",
+        score: {
+          pro: 73,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "20:20",
+              role: "Rival-theory elimination",
+              words:
+                "Winger argues that conspiracy, hallucination, legend, swoon theory, and confused combinations fail to explain the full historical footprint.",
+              score: 73,
+              critique:
+                "Winger's rival-theory elimination has a real abductive strength. He understands that a resurrection argument must do more than list facts; it must compare explanatory scope, sincerity, group appearances, Jerusalem proclamation, James, Paul, and movement growth. That is the right method for a historical inference. The weakness is that eliminating a few named alternatives does not establish that the remaining explanation is probable, especially when the remaining explanation is a supernatural bodily resurrection. Some alternatives may combine social belief, visionary interpretation, textual development, and unknown factors without being a tidy named theory. The score is mixed-solid because Winger presses real explanatory questions, but sometimes treats untidy skepticism as if it were no explanation at all.",
+              tags: []
+            },
+            con: {
+              time: "48:20",
+              role: "Doyle's-fallacy warning",
+              words:
+                "Dillahunty says ruling out listed alternatives does not prove resurrection unless all relevant possibilities have really been eliminated.",
+              score: 86,
+              critique:
+                "Dillahunty's Doyle's-fallacy warning is one of his clearest logical moves. He argues that even if conspiracy, hallucination, and legend are weak in simple forms, resurrection does not become established unless the actual range of alternatives has been exhausted and the resurrection candidate is independently viable. The football-prediction analogy shows how incomplete information can make a pattern look stronger than it is. The weakness is that the warning can become a permanent skeptical shield if no positive alternative is ever sketched. Winger is right that explanations should eventually face the details. Still, Dillahunty's point is decisive against inference by elimination alone. The score is high because it identifies a real abductive overreach.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The objection challenges the move from not knowing a better ordinary explanation to accepting resurrection as the explanation."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Scripture reliability and source handling",
+        timebox: "58:00-1:20:30",
+        score: {
+          pro: 72,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "58:40",
+              role: "Focused-case boundary",
+              words:
+                "Winger says his case does not depend on proving every Gospel detail, and that difficult passages like Matthew's raised saints do not affect the core facts.",
+              score: 72,
+              critique:
+                "Winger's focused-case boundary is a reasonable apologetic strategy. If the argument rests on a limited set of widely discussed historical claims, then every textual difficulty in the Gospels need not defeat the case. This helps prevent the debate from sprawling into every alleged contradiction or theological oddity. The weakness is that the boundary can look selective. The same documents supply many of the core facts, so questions about source reliability, redaction, later additions, and narrative agendas cannot be entirely bracketed. Winger needs a principled account of which details are historically weight-bearing and why. The score is moderate-solid because the scope control is legitimate, but it risks insulating favored data from the broader source problem.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The move can appear to protect selected Gospel claims while treating nearby problematic claims as outside the case."
+                }
+              ]
+            },
+            con: {
+              time: "1:00:40",
+              role: "Reliability spillover objection",
+              words:
+                "Dillahunty argues that unusual nearby claims, Mark's ending, and anonymous Gospel transmission affect how much confidence the resurrection material deserves.",
+              score: 82,
+              critique:
+                "Dillahunty's reliability spillover objection is fair because source credibility is not atomized. If the same textual ecosystem contains disputed endings, anonymous authorship, extraordinary narrative details, and later theological shaping, those facts affect confidence in the resurrection reports. His Mark 16 point is especially concrete because it concerns resurrection proclamation directly. The weakness is that spillover can be overused: a source can contain errors, additions, or oddities while still preserving some historical information. Dillahunty sometimes moves from reliability concerns to broad distrust faster than a historian would. Even so, the objection properly prevents Winger from treating selected Gospel claims as freestanding historical data. The score is strong because it targets evidential transmission.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Extraordinary evidence and closure",
+        timebox: "1:20:30-1:57:30",
+        score: {
+          pro: 76,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:26:00",
+              role: "Extraordinary-evidence critique",
+              words:
+                "Winger argues that requiring extraordinary evidence can become circular, since any extraordinary evidence may itself be rejected as needing more evidence.",
+              score: 76,
+              critique:
+                "Winger's extraordinary-evidence critique is his best epistemological pushback. He recognizes a real danger: if a skeptic treats every impressive datum as another extraordinary claim needing further support, the standard can become an infinite regress that no historical claim could satisfy. His lottery-ticket exchange forces clarification of what 'extraordinary evidence' means. The weakness is that he sometimes frames Dillahunty's position as if evidence does not matter, despite Dillahunty repeatedly saying sufficiency is the issue. A proportional evidence standard need not be circular; it can simply require quantity and quality appropriate to the claim. The score is solid because Winger exposes an ambiguity in the slogan, but not higher because the charitable version survives.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The dispute turns partly on ambiguity in what counts as extraordinary evidence rather than on evidence alone."
+                }
+              ]
+            },
+            con: {
+              time: "1:24:30",
+              role: "Proportional-evidence reply",
+              words:
+                "Dillahunty says extraordinary claims need evidence whose quality and quantity rise to the claim, and testimonial reports from antiquity do not meet that level.",
+              score: 85,
+              critique:
+                "Dillahunty's proportional-evidence reply is strong because he cashes out the slogan rather than merely repeating it. The lottery example clarifies that ordinary testimony may be enough for mundane claims, while a winning-ticket claim needs confirmation from the lottery system. Applied to resurrection, his point is that ancient reports, no contemporary physical evidence, and no demonstrated supernatural mechanism do not rise to the level of the claim. The weakness is that he does not offer a fully specified threshold for historical miracle claims, so Winger can still accuse the standard of being hard to satisfy. Still, the reply is coherent and burden-sensitive. The score is high because it preserves skepticism without claiming miracles are impossible.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 75,
+        strengths: [
+          "Winger gave a structured cumulative case rather than a single proof text, separating non-miraculous historical premises from the resurrection explanation.",
+          "He anticipated major rival theories and tried to compare explanatory scope, sincerity, early proclamation, Paul, James, and the empty tomb.",
+          "His best epistemological pressure was asking whether skeptical standards for miracle claims become so demanding that evidence can never enter the conversation."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes treated background plausibility, scholar agreement, and reported enemy polemic as stronger confirmation than they actually provide.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          },
+          {
+            text:
+              "He often portrayed Dillahunty's sufficiency standard as if it meant evidence does not matter, which weakened the charitable force of his rebuttal.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His focused historical case sometimes insulated selected Gospel claims from broader questions about source reliability and textual development.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Dillahunty consistently distinguished reports, claims, evidence, and sufficient evidence, which kept the burden of proof visible throughout the debate.",
+          "He pressed the gap between historical facts such as sincerity or proclamation and the stronger conclusion that a supernatural resurrection occurred.",
+          "His replies on consistency versus confirmation, mediated testimony, and inference by elimination directly targeted the structure of Winger's case."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes stated the claim-evidence distinction so sharply that testimonial evidence sounded like no evidence rather than weak or insufficient evidence.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His refusal to offer much positive first-century reconstruction let Winger plausibly complain that skepticism was not engaging the historical details enough.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "Some rhetoric about blood magic and related doctrines risked distracting from the narrower historical question of whether belief in the resurrection is reasonable.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
