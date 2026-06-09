@@ -23850,86 +23850,53 @@ export const debates = [
     }
   },
   {
-    id: "jones-fodor-digital-physics-god-appendix-2021",
+    id: "jones-dillahunty-quantum-idealism-demonstrability-2026",
     number: "68",
-    title:
-      "Michael Jones vs James Fodor: The Digital Physics Argument for God (Appendix)",
-    label: "Digital physics appendix",
+    title: "Michael Jones vs Matt Dillahunty: Quantum Idealism and Demonstrability",
+    label: "Quantum idealism and demonstrability",
     date: "2026-06-08",
-    duration: "1 hr 59 min",
-    youtubeUrl: "https://www.youtube.com/watch?v=p5_9c_BNvn0",
+    duration: "22 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=6CLpuRu7R9o",
     motion:
-      "In the post-debate discussion, do the after-chat reflections strengthen the digital-physics case for theistic idealism, or do they expose unresolved problems in its physics, theology, and explanatory method?",
+      "Does quantum mechanics and idealism provide good reason to treat consciousness or a divine mind as fundamental, or does the claim fail public demonstrability and physical-interaction tests?",
     summary:
-      "This appendix follows the Jones-Fodor digital-physics debate: the Jones position is reconstructed as the target under review, while Fodor and guests probe its evidential support, theological fit, and standards of explanation.",
+      "Jones argues that mental information and observer-dependent quantum collapse make idealism the best explanation; Dillahunty presses for detectable manifestations and mind-independent physical interactions.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-08. This is an appendix after-chat to Debate 67, not a fresh live debate with Michael Jones present; pro-side entries reconstruct the Jones/Inspiring Philosophy position as quoted or summarized in the discussion. Auto-caption spacing, speaker names, physics terms, and theological references are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-08. The upload is a commentary-wrapped excerpt from a Jones-Dillahunty debate; argument cards focus on the debate exchange itself, while brief host narration is used only to orient the excerpt. Auto-caption spacing, speaker turns, physics terms, and repeated caption fragments are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
       pro: {
-        text: "consistent with observations",
+        text: "Why not invoke just mental phenomena, mental information?",
         context:
-          "Fodor describes Jones's reply about holographic cosmology this way: the evidence was treated as compatible with the view rather than as a decisive prediction."
+          "Jones's central move is to treat physical reality as informational or phenomenal rather than as mind-independent material substance."
       },
       con: {
-        text: "any finding in empirical science would be consistent with theistic idealism",
+        text: "Detectable, identifiable, discoverable",
         context:
-          "Fodor's appendix worry is that the digital-physics case may absorb too many possible observations to function as real confirmation."
+          "Dillahunty's standard is that even non-material explanations need public manifestations if they interact with the shared world."
       }
     },
     sides: {
       pro: {
-        name: "Digital-physics defense",
+        name: "Theistic idealism",
         speaker: "Michael Jones",
         color: "teal"
       },
       con: {
-        name: "After-chat critique",
-        speaker: "James Fodor",
+        name: "Demonstrability critique",
+        speaker: "Matt Dillahunty",
         color: "coral"
       }
     },
     score: {
-      pro: 73,
-      con: 85
+      pro: 69,
+      con: 87
     },
     sections: [
       {
-        title: "Appendix framing and evidence",
-        timebox: "00:00-03:30",
-        score: {
-          pro: 73,
-          con: 85
-        },
-        exchanges: [
-          {
-            pro: {
-              time: "01:00",
-              role: "Compatibility standard",
-              words:
-                "The reconstructed Jones position treats holographic cosmology and related papers as at least consistent with the digital-physics argument for theistic idealism.",
-              score: 73,
-              critique:
-                "The compatibility standard has some defensive value. If critics claim that emergent or holographic physics is impossible, showing compatibility with observations answers that narrower charge. It also keeps Jones's argument from depending on one paper as a knockdown proof. The weakness is that compatibility is a low evidential bar. Many rival metaphysical views can also accommodate the same frontier-physics results, so the data do not yet discriminate in favor of theistic idealism. In an appendix assessing what survived the debate, this matters: the defended claim appears weaker than the video rhetoric Fodor reports. The score is decent because the position avoids overclaiming locally, but capped because mere consistency is not confirmation.",
-              tags: []
-            },
-            con: {
-              time: "01:00",
-              role: "Support-versus-consistency critique",
-              words:
-                "Fodor says being consistent with observations is very different from those observations supporting the theory, especially when many findings fit theistic idealism.",
-              score: 85,
-              critique:
-                "Fodor's support-versus-consistency critique is sharp because it names the evidential distinction the appendix is built around. A theory can survive an observation without being supported by it, and that difference is crucial when the theory is metaphysically flexible. Fodor also ties this to the original debate's drift: the empirical papers looked stronger in presentation than in cross-examination. The weakness is that this is mostly a methodological objection; it does not prove the papers have no cumulative weight. Jones could still argue that multiple compatibilities form a pattern. Even so, the score is high because Fodor identifies a real downgrade from 'evidence for' to 'not ruled out by.'",
-              tags: []
-            }
-          }
-        ]
-      },
-      {
-        title: "Brute contingencies and explanation",
-        timebox: "07:00-10:00",
+        title: "Demonstrability and inference",
+        timebox: "01:30-04:55",
         score: {
           pro: 72,
           con: 86
@@ -23937,215 +23904,223 @@ export const debates = [
         exchanges: [
           {
             pro: {
-              time: "08:00",
-              role: "Necessary-foundation reply",
+              time: "03:40",
+              role: "Evolution-style inference",
               words:
-                "The Jones view is reconstructed as saying God provides the necessary foundation, while divine thoughts or choices are contingent rather than brute.",
+                "Jones compares his idealist case to evolution: gather data such as quantum cognition, top-down causation, and unreduced consciousness, then infer the best explanation.",
               score: 72,
               critique:
-                "The necessary-foundation reply addresses a real problem: if naturalism leaves basic laws or substrates unexplained, theism can try to reduce bruteness by grounding reality in a necessary mind. That is a serious explanatory ambition and keeps the debate at the level of worldview comparison. The weakness is that the reply still needs to explain why this mental content, these laws, and these stable regularities obtain rather than others. Calling them contingent does not automatically make them explained. The appendix makes that gap more visible because the discussion keeps returning to what a good explanation must rule out. The score is moderate-solid because the foundation move is relevant, but underdeveloped at the level of particulars.",
+                "Jones's evolution-style inference is a fair attempt to avoid demanding direct observation of every historical or metaphysical claim. He is right that science often works abductively, using present evidence to infer unobserved processes. That helps prevent Dillahunty's standard from becoming a crude demand for instant laboratory reproduction. The weakness is that the comparison moves too quickly. Evolutionary inference rests on independently testable fossils, genetics, dating methods, and predictive consilience, while Jones's cited correlations do not yet show that minds exist without brains or that quantum structure is mental. The score is solid but limited because the form of reasoning is legitimate, but the evidential base is much thinner than the analogy suggests.",
               tags: []
             },
             con: {
-              time: "08:00",
-              role: "Everything-becomes-brute objection",
+              time: "01:50",
+              role: "Public manifestation standard",
               words:
-                "Fodor says that if everything outside God's nature is freely willed by God, then almost everything in the world becomes a brute contingency.",
+                "Dillahunty says a claim that interacts with the world should have manifestations that are detectable, identifiable, discoverable, and sometimes repeatable.",
               score: 86,
               critique:
-                "Fodor's everything-becomes-brute objection is strong because it presses the difference between explaining the foundation and explaining the world. If God could will any logically possible content, then the existence of this exact mental simulation, with these laws and events, needs further explanation. The objection also clarifies that Fodor is not simply rejecting all brute contingencies; he is asking which worldview minimizes them. The weakness is that it depends on a contested view of divine freedom and explanation. A theist could argue that God's reasons are structured even if not transparent. Still, the appendix exchange makes Fodor's challenge clearer than the original debate did. The score is high because it targets explanatory compression directly.",
+                "Dillahunty's public-manifestation standard is strong because it keeps the discussion from floating above shared evidence. He explicitly allows that an explanation need not be materialistic, but insists that if a supernatural or mental cause interacts with our world, there should be some detectable effect by which people can confirm it. That is a disciplined burden-of-proof move, not a simple dismissal of the nonphysical. The limitation is that metaphysical explanations may not always be testable in the same way as ordinary causal claims, so the standard needs care when applied to ultimate ontology. Still, in this exchange Jones is offering empirical-sounding support from quantum mechanics and cognition, so Dillahunty's demand for public anchors is highly relevant.",
               tags: []
             }
           }
         ]
       },
       {
-        title: "Sin, essence, and theology",
-        timebox: "10:00-16:30",
+        title: "Evidence and physical anchors",
+        timebox: "04:00-07:20",
         score: {
           pro: 70,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:00",
+              role: "Mind-first data stack",
+              words:
+                "Jones cites quantum cognition, mental correlations, top-down causation, unreduced consciousness, and Humean bundle theory as data favoring a mind-first explanation.",
+              score: 70,
+              critique:
+                "The mind-first data stack gives Jones more substance than a vague appeal to quantum mystery. He identifies several live issues: consciousness is not fully reduced, mental framing can affect behavior, and some philosophical accounts analyze objects through experienced properties. Those are real pressure points for simple materialism. The weakness is that the stack blends very different claims into one cumulative impression. Lack of a completed reduction of consciousness is not positive evidence for idealism, quantum cognition may be a modeling tool, and bundle theory does not by itself make reality mental. The score is moderate because the topics are relevant, but the inference depends heavily on gaps and analogies rather than direct support.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The claim that consciousness has not yet been reduced to matter is treated as support for a mind-first ontology."
+                }
+              ]
+            },
+            con: {
+              time: "04:30",
+              role: "Demonstrable-components reply",
+              words:
+                "Dillahunty replies that evolutionary inferences are built from sturdy demonstrable pieces: dating methods, fossils, overlapping tests, and statistical handling of anomalies.",
+              score: 87,
+              critique:
+                "Dillahunty's demonstrable-components reply is one of the clip's clearest methodological distinctions. He grants that science is inferential, but points out that good inferences are assembled from testable parts that overlap and constrain one another. Radiometric dating, fossils, genetics, and statistical treatment of anomalies do not make evolution certain by time travel; they make it strongly supported by independent anchors. The limitation is that he does not yet compare each of Jones's sources in detail, so the reply is more a standard than a full refutation. Even so, it lands because Jones invoked evolution as the analogy. The score is high because Dillahunty explains what makes an inference responsible rather than merely possible.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Wetness and interaction",
+        timebox: "07:20-11:20",
+        score: {
+          pro: 68,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "08:00",
+              role: "Wetness-as-experience claim",
+              words:
+                "Jones says wetness is a mental property experienced in interaction with water, and asks why we need material substance beyond such properties.",
+              score: 68,
+              critique:
+                "Jones's wetness argument has a useful phenomenological point: our access to the world is mediated through experience, and many ordinary property terms include how things appear or feel to us. That gives idealism an intuitive foothold. The weakness is that the move trades on two meanings of wetness. Wetness can name a sensation, but it also names physical behavior involving molecular interaction, adhesion, surface tension, and reduced friction. Showing that our concept includes experience does not show that the underlying interaction is mental. The score is mixed because Jones identifies a genuine epistemic issue about access to properties, but his conclusion outruns the distinction between experienced qualities and external causal structures.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument shifts between wetness as a felt sensation and wetness as a physical interaction among substances."
+                }
+              ]
+            },
+            con: {
+              time: "09:55",
+              role: "Physical-interaction reply",
+              words:
+                "Dillahunty says friction, nuclear forces, molecular behavior, and water cutting through metal do not require a mental experience to occur.",
+              score: 88,
+              critique:
+                "Dillahunty's physical-interaction reply is highly effective because it turns an abstract ontology dispute into concrete causal cases. Friction, molecular behavior, nuclear forces, and water cutting through metal are not merely private sensations; they are public interactions with measurable consequences. That makes Jones's experience-first framing look incomplete. The reply is also charitable enough to allow that our descriptions involve experience while denying that the events depend on experience. The limitation is that an idealist can still redescribe all public regularities as stable informational patterns in mind, so the reply does not by itself disprove idealism. But it sharply raises the cost of the view. The high score reflects its clarity, relevance, and direct responsiveness.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Information and parsimony",
+        timebox: "10:40-14:30",
+        score: {
+          pro: 71,
           con: 84
         },
         exchanges: [
           {
             pro: {
-              time: "10:00",
-              role: "Essence-energy escape",
+              time: "10:55",
+              role: "Information reduction",
               words:
-                "The defended route is that sin may be in God's mind or energies without being part of God's essence, preserving a creator-creature distinction.",
-              score: 70,
+                "Jones defines information under idealism as discernible phenomenal states and argues that physics, mathematics, sensations, and mental phenomena are all informational.",
+              score: 71,
               critique:
-                "The essence-energy escape is not frivolous; it points to an actual theological vocabulary that can distinguish God's transcendent essence from creaturely reality dependent on God. That gives the Jones position a possible route around the claim that sin inside God's mental reality makes God sinful. The weakness is that, in this appendix, the distinction is doing emergency work without much explanation. If all reality is in God's mind, listeners still need to know how sinful contents are not divine contents in the relevant sense. The reply may be available in Eastern Christian metaphysics, but it was not unpacked enough to carry the burden here. The score is fair but limited.",
+                "Jones's information reduction is one of his more careful moves because he pauses to define what he means by information under different metaphysical views. That prevents a completely loose use of the word and connects his idealism to Shannon-style communication vocabulary. The strength is parsimony: if all descriptions are informational, perhaps a mind-first ontology can avoid positing hidden material substance. The weakness is that definitional flexibility does not establish ontology. Information can refer to material arrangements under materialism, mathematical states in models, or phenomenal distinctions under idealism; choosing the idealist sense cannot prove the idealist picture. The score is modestly positive because Jones clarifies terms, but capped because the central bridge remains semantic.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument risks moving from information as description or arrangement to information as phenomenal mentality."
+                }
+              ]
+            },
+            con: {
+              time: "14:00",
+              role: "Mind-removal test",
+              words:
+                "Dillahunty asks whether friction and chemical interaction would still occur if every thinking mind were removed from the universe.",
+              score: 84,
+              critique:
+                "Dillahunty's mind-removal test is a good pressure question because it forces Jones's ontology to cash out in a concrete counterfactual. If friction and chemical interactions continue without minds, then mind-independent physical relations seem hard to avoid. If they do not, then the view inherits severe explanatory costs about cosmic history, evolution, and ordinary causation. The question is also well timed: it follows Jones's information talk and asks what would actually be different. The weakness is that the scenario may be metaphysically strange, because Jones can posit a divine mind or impersonal informational structure rather than human observers. Still, the test exposes a real ambiguity in the view. The score is strong because it makes the hidden commitment visible.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Collapse and evolution",
+        timebox: "14:00-17:55",
+        score: {
+          pro: 67,
+          con: 89
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "14:20",
+              role: "Unobserved-information reply",
+              words:
+                "Jones says unobserved history can exist as information, like a video-game past, with conscious observation collapsing it into physical appearance.",
+              score: 67,
+              critique:
+                "Jones's unobserved-information reply tries to preserve evolution without ordinary mind-independent physical history. The video-game analogy is helpful insofar as it separates stored structure from what is rendered to an observer, and it shows how unobserved states might still be rule-governed. The weakness is severe: video games run on an underlying physical system, and their unrendered rooms can still be maintained by code, memory, and processors. That analogy therefore seems to smuggle in exactly the stable substrate Jones is trying to replace. It also leaves biological evolution awkwardly split between informational development and physical emergence. The score is low-moderate because the reply is intelligible, but it creates more explanatory pressure than it removes.",
               tags: [
                 {
                   label: "Special pleading",
                   type: "fallacy",
                   url: fallacy("special-pleading"),
                   context:
-                    "The distinction may be legitimate, but in this exchange it functions as a quick exception to a pressure generated by the idealist model."
+                    "The analogy uses simulation structure while exempting the idealist model from needing a comparably specified substrate."
                 }
               ]
             },
             con: {
-              time: "10:00",
-              role: "Sin-in-God pressure",
+              time: "15:00",
+              role: "Evolution-collapse challenge",
               words:
-                "Fodor and PineCreek press whether, if everything is in God's mind, sin and suffering are also in God's mind in a theologically damaging way.",
-              score: 84,
+                "Dillahunty says that if reality is information contingent on mind, then chemicals and evolution cannot precede minds unless a God mind is added.",
+              score: 89,
               critique:
-                "The sin-in-God pressure is effective because it tests the metaphysics against Christian doctrine rather than only against physics. If the world is a divine mental simulation, the status of evil, suffering, and creaturely sin becomes more than a side issue. The objection also exposes why many Christians may not want to buy the digital-physics argument at its theological price. The weakness is that the critics are not specialists in Eastern Orthodox essence-energy theology, and they admit that a fuller answer may exist. But their burden is reasonable: an argument for God that creates doctrinal tensions must explain those tensions. The score is high because the concern is relevant, concrete, and not merely rhetorical.",
+                "Dillahunty's evolution-collapse challenge is the strongest exchange in the clip. It identifies a possible circularity: conscious organisms are supposed to arise through chemistry and evolution, but if physical chemistry requires conscious observation to become real, then minds appear to be needed before the processes that produce minds. Jones can try to solve this with a divine observer or deterministic wave function, but then the added mind becomes a major theoretical posit rather than a small interpretive tweak. The objection is not merely rhetorical; it targets the temporal and causal structure of the view. The score is very high because it presses the central cost of observer-dependent physical emergence in an accessible way.",
               tags: []
             }
           }
         ]
       },
       {
-        title: "Structural realism and substrate",
-        timebox: "15:00-20:30",
+        title: "No minds and falsifiability",
+        timebox: "17:00-18:45",
         score: {
-          pro: 74,
-          con: 86
+          pro: 70,
+          con: 90
         },
         exchanges: [
           {
             pro: {
-              time: "15:00",
-              role: "Structure-over-substance appeal",
+              time: "18:20",
+              role: "Hidden-variables falsifier",
               words:
-                "The Jones position is summarized as using structural realism: physics describes relations or structures, not a material substance beneath them.",
-              score: 74,
+                "Jones says hidden variables would falsify or weaken his view, then cites Kochen-Specker, non-contextuality, and Zeilinger on measurement choices.",
+              score: 70,
               critique:
-                "The structure-over-substance appeal is one of the more philosophically serious parts of the digital-physics case. It engages real debates in philosophy of science and avoids a naive picture of particles as tiny classical objects. If physics gives us relational structure, idealism can ask whether mind-dependent structure is enough. The weakness is that the appeal can slide from 'science underdetermines substance' to 'there is no physical substrate.' Fodor and the guests repeatedly press the standard worry that relations need relata and that scientific realism usually describes something, not just free-floating equations. The score is solid because the move opens a real metaphysical question, but lower because it does not settle it.",
-              tags: []
-            },
-            con: {
-              time: "18:00",
-              role: "Model-use correction",
-              words:
-                "A guest argues that theoretical physics should be judged by the models scientists actually use, and holography is not yet a definitive working cosmology.",
-              score: 86,
-              critique:
-                "The model-use correction is strong because it adds a science-communication discipline to Fodor's philosophical critique. Instead of counting provocative language from famous physicists, it asks what models are actually established, predictive, and used in cosmology. That is a fair guardrail against overpopularizing frontier physics. The weakness is that it may understate the philosophical relevance of speculative but serious research programs; not-yet-standard ideas can still matter. Still, as a reply to the claim that holography and emergent spacetime already support idealism, it lands well. The score is high because it redirects the evidential question from celebrity quotations to working theory status. That distinction is exactly what the appendix needed.",
+                "Jones's hidden-variables falsifier is valuable because it gives the view at least one visible scientific risk condition. If a simple hidden-variable account restored observer-independent determinate properties, that would undercut part of his quantum motivation. He also connects the point to actual quantum foundations rather than pure theology. The weakness is that the proposed falsifier is narrow relative to the larger idealist claim. Even without hidden variables, it does not follow that consciousness collapses reality, much less that a divine mind is fundamental. The Zeilinger quotation about measurement choices is suggestive, but it cannot carry the metaphysical conclusion by itself. The score is moderate because Jones offers a test, but the bridge from test to theism remains weak.",
               tags: [
                 {
                   label: "Appeal to authority",
                   type: "fallacy",
                   url: fallacy("appeal-to-authority"),
                   context:
-                    "The correction challenges the use of prominent names as evidential shortcuts for a broader metaphysical conclusion."
-                }
-              ]
-            }
-          }
-        ]
-      },
-      {
-        title: "Discussion focus and dialectic",
-        timebox: "20:30-34:30",
-        score: {
-          pro: 71,
-          con: 82
-        },
-        exchanges: [
-          {
-            pro: {
-              time: "27:00",
-              role: "Broader-theory comparison",
-              words:
-                "The Jones-side strategy is described as shifting from individual papers to a wider probability and parsimony comparison between idealism and materialism.",
-              score: 71,
-              critique:
-                "The broader-theory comparison is legitimate in principle. Digital physics is not a lab result by itself; it is a metaphysical interpretation of physics, so overall parsimony and worldview fit matter. Jones can reasonably ask whether materialism carries its own costs about consciousness, normativity, and ontology. The weakness is dialectical focus. If the debate is about the digital-physics argument, continually moving to all of naturalism's burdens risks obscuring whether the cited physics actually favors theism. The appendix participants rightly notice that the original exchange often became naturalism versus idealism rather than a test of digital physics. The score is mixed because the comparison matters, but it diluted the stated argument.",
-              tags: [
-                {
-                  label: "Scope neglect",
-                  type: "bias",
-                  url: bias("scope-neglect"),
-                  context:
-                    "The strategy broadens the comparison enough that the specific digital-physics evidence can lose evidential focus."
+                    "A famous physicist's suggestive wording is used to support a broader metaphysical claim that still needs argument."
                 }
               ]
             },
             con: {
-              time: "31:00",
-              role: "Communication-value concession",
+              time: "18:00",
+              role: "Unfalsifiability and parsimony objection",
               words:
-                "Fodor and Nathan note that even if the debate did not resolve the papers, it showed each side's real disagreements and kept the exchange civil.",
-              score: 82,
+                "Dillahunty clarifies that Jones's view implies everything would stop without thinking minds, then calls the claim unfalsifiable and contrary to Occam's razor.",
+              score: 90,
               critique:
-                "The communication-value concession is fair and useful. Fodor and Nathan recognize that a debate can advance understanding even when it does not settle the central inference, especially if it reveals where the two sides locate the disagreement: explanation, parsimony, physical ontology, and theology. That prevents the appendix from becoming only a victory lap. The weakness is that civility and dialogue value do not substitute for evidential resolution. The after-chat still leaves several empirical claims underexamined. The score is strong because the concession models intellectual charity and accurately describes what the discussion achieved, but not higher because the original digital-physics case remains substantively unsettled. That humility matters.",
-              tags: []
-            }
-          }
-        ]
-      },
-      {
-        title: "Idealism, laws, and miracles",
-        timebox: "43:00-56:30",
-        score: {
-          pro: 72,
-          con: 87
-        },
-        exchanges: [
-          {
-            pro: {
-              time: "55:00",
-              role: "Divine-regularity reply",
-              words:
-                "The reconstructed reply is that laws can be stable patterns in God's mind, with miracles understood through deeper regularities rather than crude law-breaking.",
-              score: 72,
-              critique:
-                "The divine-regularity reply has some promise because it avoids a childish picture of God randomly breaking his own physics. If miracles operate through deeper regularities or divine intentions, then idealism need not deny that the world is orderly. It also helps Jones resist the charge that his view entails chaos. The weakness is that the deeper regularities are not specified. If physical laws are just divine mental patterns, the view still needs to explain why they remain stable, why miracles occur when they do, and how observers could know which level of law is operative. The score is moderate because the reply is possible, but the appendix exposes how much structure remains unaccounted for.",
-              tags: []
-            },
-            con: {
-              time: "53:00",
-              role: "Uniformity-of-nature pressure",
-              words:
-                "The critics argue that if God can instantiate or alter physical law, the theist owes an account of why nature is uniform and when exceptions occur.",
-              score: 87,
-              critique:
-                "The uniformity-of-nature pressure is highly relevant to digital physics because the argument depends on scientific regularities while positing a mind that could make them otherwise. Fodor and the guests press the right question: why these laws, why this stability, and why these exceptions rather than others? The objection does not deny that a theist can have a doctrine of providence or miracles, but it insists that such doctrines add structure to the theory. The weakness is that naturalism also has primitive regularities at some level, so the contrast is not absolute. Still, the score is high because the objection shows why theistic idealism may need more postulates than it first appears.",
-              tags: []
-            }
-          }
-        ]
-      },
-      {
-        title: "Quantum cognition and falsifiability",
-        timebox: "1:37:00-1:44:30",
-        score: {
-          pro: 70,
-          con: 88
-        },
-        exchanges: [
-          {
-            pro: {
-              time: "1:40:00",
-              role: "Weak-falsification posture",
-              words:
-                "The Jones position is reconstructed as saying theistic idealism may not be strongly falsifiable, but contrary evidence could make it a degenerating research program.",
-              score: 70,
-              critique:
-                "The weak-falsification posture is more sophisticated than pretending a metaphysical worldview can be refuted by one experiment. It borrows a Lakatos-style idea: enough anomalies, ad hoc repairs, or failed expectations could make a program degenerate. That is a reasonable way to discuss large worldviews. The weakness is that Fodor doubts the view has even weak empirical risk. If any physics can be redescribed as content in God's mind, then it is unclear what would count as a real anomaly. Saying the program could degenerate requires specifying what observations it genuinely expects or excludes. The score is fair because the posture is methodologically aware, but weak without clearer risk conditions.",
-              tags: [
-                {
-                  label: "Ambiguity effect",
-                  type: "bias",
-                  url: bias("ambiguity-effect"),
-                  context:
-                    "The weak-falsification framing can blur what would actually count as evidence against the view."
-                }
-              ]
-            },
-            con: {
-              time: "1:41:00",
-              role: "Quantum-cognition deflation",
-              words:
-                "Fodor says quantum cognition may only need interference-style mathematics, not literal quantum dynamics or a metaphysical bridge from mind to quantum reality.",
-              score: 88,
-              critique:
-                "Fodor's quantum-cognition deflation is very strong because it supplies a concrete technical alternative to the metaphysical reading. He explains that quantum-style cognitive models may capture contextuality or interference effects without requiring nonlocality, literal quantum dynamics in cognition, or a cosmic mind. That directly undercuts one of the more attention-grabbing supports for the digital-physics argument. The weakness is that this after-chat summary depends on a paper discussed near the end rather than a full live exchange with Jones, so the pro side does not get a fresh reply. Still, the inferential point is excellent: using a mathematical formalism does not license the whole ontology of the source theory. The score is high.",
+                "Dillahunty's final objection is forceful because it gets Jones to affirm the consequence in plain language: remove all thinking minds, and physical reality would not continue in the ordinary way. That makes the metaphysical cost vivid for the audience. Calling the view unfalsifiable and unparsimonious is not just ridicule; it follows from a model that seems able to preserve unobserved reality as information while denying ordinary physical existence. The limitation is that Occam's razor alone cannot decide ontology, and Jones immediately offers a possible falsifier through hidden variables. Still, Dillahunty has exposed the burden Jones must meet. The score is exceptional because the question crystallizes the debate's stakes and leaves the pro side with the heavier explanatory load.",
               tags: []
             }
           }
@@ -24154,16 +24129,16 @@ export const debates = [
     ],
     overall: {
       pro: {
-        score: 73,
+        score: 69,
         strengths: [
-          "The reconstructed Jones position remains ambitious and interdisciplinary, connecting idealism, structural realism, holography, quantum cognition, and explanation theory.",
-          "Its best defensive move is methodological humility: several claims are framed as compatibility, cumulative fit, or weak falsifiability rather than simple proof.",
-          "The appendix shows that the position has theological resources, such as essence-energy language, even if those resources need fuller development."
+          "Jones framed his case abductively rather than as a simple quantum proof, which made room for evidence, inference, and worldview comparison.",
+          "He tried to define key terms such as information and to connect idealism to actual debates in quantum foundations rather than relying only on religious assertion.",
+          "He did not dodge the hardest counterfactual; he openly accepted that the absence of thinking minds would change whether physical reality continues in the ordinary sense."
         ],
         blunders: [
           {
             text:
-              "The position often treated compatibility with frontier physics as if it were support for theistic idealism.",
+              "He repeatedly moved from unresolved or model-dependent science to a mind-first ontology without defending the bridge tightly enough.",
             links: [
               {
                 label: "Equivocation",
@@ -24173,47 +24148,7 @@ export const debates = [
           },
           {
             text:
-              "Its theological repairs, especially around sin in God's mind, arrived too quickly to remove the apparent tension.",
-            links: [
-              {
-                label: "Special pleading",
-                url: fallacy("special-pleading")
-              }
-            ]
-          },
-          {
-            text:
-              "The move from digital physics to broad naturalism-versus-idealism comparison diluted the specific evidential burden.",
-            links: [
-              {
-                label: "Scope neglect",
-                url: bias("scope-neglect")
-              }
-            ]
-          }
-        ]
-      },
-      con: {
-        score: 85,
-        strengths: [
-          "Fodor and the guests sharpened the key distinction between evidence that supports a view and evidence merely compatible with it.",
-          "The appendix clarified the central explanatory challenge: a theory must narrow expected outcomes rather than accommodate everything after the fact.",
-          "The discussion raised substantive theological and scientific-pressure tests without reducing the original exchange to personal hostility."
-        ],
-        blunders: [
-          {
-            text:
-              "Several criticisms were made without Jones present, so the appendix sometimes assessed quick reconstructions rather than fresh replies.",
-            links: [
-              {
-                label: "Scope neglect",
-                url: bias("scope-neglect")
-              }
-            ]
-          },
-          {
-            text:
-              "The theological objections sometimes leaned on admitted unfamiliarity with the fuller Eastern Christian essence-energy tradition.",
+              "His argument leaned on the lack of a completed material reduction of consciousness as though that gap were positive evidence for idealism.",
             links: [
               {
                 label: "Argument from ignorance",
@@ -24223,11 +24158,41 @@ export const debates = [
           },
           {
             text:
-              "The science-focused criticisms occasionally treated unsettled frontier physics as a reason to withhold almost all metaphysical weight.",
+              "The video-game analogy borrowed the explanatory benefits of a substrate while giving too little account of the idealist substrate replacement.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 87,
+        strengths: [
+          "Dillahunty kept the burden anchored to public manifestation, independent confirmation, and the difference between possible explanation and demonstrated support.",
+          "He translated abstract idealism into concrete tests involving wetness, friction, nuclear forces, chemistry, and evolution.",
+          "His final questioning exposed the high explanatory cost of saying ordinary physical reality depends on thinking minds."
+        ],
+        blunders: [
+          {
+            text:
+              "His empiricist standard sometimes risked treating metaphysical claims as weak merely because their test conditions are less familiar than ordinary physical hypotheses.",
             links: [
               {
                 label: "Ambiguity effect",
                 url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "The short excerpt left little time to examine Jones's cited quantum-foundation material in detail, so some rebuttals worked at the level of burden rather than source analysis.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
               }
             ]
           }
