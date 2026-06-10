@@ -24552,5 +24552,350 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "malpass-anderson-logic-god-2021",
+    number: "70",
+    title: "Alex Malpass vs James Anderson: Does Logic Prove God?",
+    label: "Logic and divine conceptualism",
+    date: "2026-06-09",
+    duration: "1 hr 28 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=4qpwVLLebng",
+    motion:
+      "Does the existence of necessary truths or laws of logic support a necessarily existing divine mind, or can propositions be explained without God?",
+    summary:
+      "Anderson defends necessary truths as divine thoughts; Malpass grants realism about propositions but challenges the modal, intentional, and self-content steps.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-09, plus YouTube chapter timing. Auto-caption spacing, speaker turns, names, logic terms, and repeated caption fragments are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "propositions are best understood as thoughts",
+        context:
+          "Anderson's case turns on treating necessary propositions as intrinsically intentional mental contents grounded in a necessarily existing divine mind."
+      },
+      con: {
+        text: "metaphysical possibility seems to me it's a bit of a mess",
+        context:
+          "Malpass grants necessary truths but presses whether conceivability, intentionality, and divine self-content can bear Anderson's conclusion."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Divine conceptualism",
+        speaker: "James Anderson",
+        color: "teal"
+      },
+      con: {
+        name: "Platonist critique",
+        speaker: "Alex Malpass",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 84,
+      con: 88
+    },
+    sections: [
+      {
+        title: "Argument from necessary truths",
+        timebox: "00:00-03:48",
+        score: {
+          pro: 83,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "02:10",
+              role: "Necessary-mind argument",
+              words:
+                "Anderson accepts the compressed summary: necessary truths are thoughts, necessarily existing thoughts need a necessarily existing mind, and logic points to that mind.",
+              score: 83,
+              critique:
+                "Anderson's necessary-mind argument is clear and productively ambitious. It gives the discussion a definite inferential chain rather than a vague appeal to the mystery of logic: necessary truths exist, they are thought-like, and necessarily existing thoughts require a necessary thinker. Its strength is that it aims to explain both necessity and intentional content, not merely name them. The weakness is that the opening summary compresses the most contested premise into a slogan. A listener can accept necessary truths while denying that truth-bearers must be mental acts or contents. The score is strong because the structure is relevant and philosophically serious, but capped because the key bridge from proposition to thought still needs defense.",
+              tags: []
+            },
+            con: {
+              time: "03:30",
+              role: "Scope clarification",
+              words:
+                "Malpass says the real issue is not whether necessary truths exist, but whether Anderson's defense of their necessity and mental status succeeds.",
+              score: 84,
+              critique:
+                "Malpass's scope clarification is a strong way to begin because it avoids a cheap denial of logic or necessity. By granting much of the realist terrain, he focuses pressure on the two live transitions: how we know the relevant truths are necessary, and why their content must be mental rather than abstract. That charitable framing makes the critique harder to dismiss. The limitation is that this opening is mostly diagnostic; it does not yet offer a developed rival account of propositions or show where Anderson's account fails. Still, it properly locates the burden of proof. The score is high because narrowing the dispute this early makes the rest of the discussion more disciplined.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Necessity and conceivability",
+        timebox: "03:48-22:45",
+        score: {
+          pro: 86,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:20",
+              role: "Thin necessity starting point",
+              words:
+                "Anderson says the argument needs only some truths that could not have been false, not a full theory of conceivability or modality.",
+              score: 86,
+              critique:
+                "Anderson's thin necessity starting point is dialectically smart. He refuses to let the whole argument depend on conceivability as a criterion, then asks only for common ground that some truths could not have been otherwise. That move protects the argument from Malpass's worries about non-Euclidean geometry, paraconsistent logic, and shifting conceptual schemes. The weakness is that examples such as simple arithmetic or logical disjunction still inherit disputes about what kind of necessity is being invoked and what truth-bearers are. Thinness buys resilience, but it also leaves the explanatory target underdescribed. The score is high because Anderson trims an avoidable vulnerability, while not yet proving that necessary truths require a divine mind.",
+              tags: []
+            },
+            con: {
+              time: "04:40",
+              role: "Conceivability skepticism",
+              words:
+                "Malpass doubts that inconceivability or modal intuition reliably tracks metaphysical necessity, especially after geometry and non-classical logic changed what seemed obvious.",
+              score: 87,
+              critique:
+                "Malpass's conceivability skepticism is strong because it attacks a possible route to necessity without rejecting necessity itself. His examples from geometry and non-classical logic show that what once seemed unimaginable can become intelligible inside a better theory. That is a fair warning against overconfident modal intuition. The weakness is that the objection can become too sweeping if it suggests ordinary modal judgments have little weight at all; philosophy often begins with defeasible intuitions and then refines them. Anderson only needs modest common ground, not a complete conceivability test. The score remains high because Malpass identifies a real epistemic risk while leaving room for necessary truths to survive the critique.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The uncertainty around metaphysical, logical, and epistemic necessity makes the modal evidence harder to evaluate."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Intentionality of propositions",
+        timebox: "22:45-35:00",
+        score: {
+          pro: 85,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "28:00",
+              role: "Intentionality-to-thought inference",
+              words:
+                "Anderson argues that propositions have aboutness and aspectual shape, and thoughts are the familiar things with those intentional features.",
+              score: 85,
+              critique:
+                "Anderson's intentionality-to-thought inference is one of the most substantive parts of his case. He does not merely say propositions are abstract; he points to their aboutness and aspectual shape, then notes that these are features we already recognize in thoughts. That gives the divine-conceptualist view explanatory traction against a bare Platonism of inert abstract objects. The weakness is that the inference risks moving from a familiar paradigm to an exclusive category. The fact that thoughts are intentional does not by itself show that all intentional items are thoughts. Malpass's challenge is therefore well aimed. The score is strong because Anderson names a real datum for any theory of propositions, but not decisive because the generalization remains contested.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The argument can seem to assume that intentionality must be mental, which is exactly what Malpass disputes."
+                }
+              ]
+            },
+            con: {
+              time: "24:30",
+              role: "Brentano-thesis denial",
+              words:
+                "Malpass accepts that mental states are intentional, but denies the controversial reverse claim that everything intentional must therefore be mental.",
+              score: 86,
+              critique:
+                "Malpass's Brentano-thesis denial is clean and important. By distinguishing 'all mental states are intentional' from 'all intentional things are mental,' he isolates the exact illicit strengthening that would help Anderson. This is not a merely verbal objection; propositions, maps, sentences, and mathematical contents can all be discussed as about something, so the relation between aboutness and mentality needs argument. The limitation is that Malpass still owes an account of how non-mental propositions possess intrinsic rather than merely derivative intentionality. Otherwise Platonism may inherit the same mystery in abstract form. The score is high because the distinction sharply checks Anderson's inference, with a small deduction for leaving the positive alternative underdeveloped.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Platonism and shareability",
+        timebox: "33:00-43:05",
+        score: {
+          pro: 84,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "38:45",
+              role: "Divine-thought advantage",
+              words:
+                "Anderson says divine conceptualism explains objectivity, necessary existence, intrinsic intentionality, and causal relevance better than causally inert Platonism.",
+              score: 84,
+              critique:
+                "Anderson's divine-thought advantage is a plausible theory-comparison move. He concedes that parsimony is not the only issue and argues that divine conceptualism handles more jobs at once: objective necessity, intentionality, and a connection between abstract content and a causally active mind. That is more persuasive than simply mocking abstract objects as strange. The weakness is that the causal-relevance advantage is sketched rather than demonstrated. If divine thoughts are necessary contents in God's mind, it remains unclear exactly how their causal role differs from God using abstract truths or how that role explains our grasp of them. The score is strong because the criteria are well chosen, but limited by the unfinished mechanism.",
+              tags: []
+            },
+            con: {
+              time: "34:30",
+              role: "Shareable-thought challenge",
+              words:
+                "Malpass says Frege's communication argument suggests shared contents beyond private human thoughts, and divine conceptualism still needs two kinds of thoughts.",
+              score: 88,
+              critique:
+                "Malpass's shareable-thought challenge is very effective because it uses Anderson's own contrast against him. If ordinary human thoughts are private mental events but propositions must be shareable contents, then calling propositions divine thoughts does not simply reduce the ontology to one familiar kind. It creates a special class of divine, shareable, necessary thoughts that differ sharply from ours. That weakens the advertised parsimony and pushes Anderson to explain why these items count as thoughts rather than Platonist contents with a theological label. The weakness is that parsimony alone may not decide the theory; explanatory power can justify special categories. Still, the objection is precise and central, so the score is high.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Self-reflexive thought dilemma",
+        timebox: "43:05-1:00:00",
+        score: {
+          pro: 83,
+          con: 90
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "50:45",
+              role: "Divine-content reply",
+              words:
+                "Anderson replies that human thoughts need distinct propositional content, but divine thoughts do not have content; they are the content for human thoughts.",
+              score: 83,
+              critique:
+                "Anderson's divine-content reply is intellectually nimble. He accepts the force of Malpass's Fregean pressure on human thoughts, then denies that the same structure must apply to God's thoughts. If divine thoughts are the contents by which human thoughts get their propositional objects, the regress is blocked at a necessary cognitive act rather than repeated upward forever. The weakness is that this reply makes divine thoughts less like the thoughts used to motivate the argument. Earlier, propositions were thought-like because they had aboutness and aspectual content; now divine thoughts are not thoughts with content but content itself. The score is strong for directly addressing the dilemma, but held down by the risk of equivocation.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The role of 'thought' shifts between ordinary content-bearing thought and divine content itself."
+                }
+              ]
+            },
+            con: {
+              time: "43:40",
+              role: "Regress objection",
+              words:
+                "Malpass argues that if a divine thought has itself as its content, the inner thought still needs content, causing regress or empty self-reference.",
+              score: 90,
+              critique:
+                "Malpass's regress objection is the sharpest challenge of the discussion. It takes the divine-conceptualist slogan seriously and asks what exactly a divine thought is about. If a thought normally has content distinct from the act of thinking, then a proposition identical to a divine thought appears to need further content. If the answer is that the thought is about itself, the explanation risks either an infinite hierarchy or a mysteriously contentless self-reference. The strength is that the objection targets the internal mechanics of the theory, not a peripheral theological premise. The limitation is that Anderson can reject the human-thought model for divine cognition. Even so, the objection forces the deepest clarification and earns an exceptional score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Q&A and comparison",
+        timebox: "1:00:00-1:28:07",
+        score: {
+          pro: 85,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:00:30",
+              role: "Best-explanation comparison",
+              words:
+                "Anderson says theories should be compared by what propositions must do, and divine conceptualism satisfies both objectivity and intentionality pressures.",
+              score: 85,
+              critique:
+                "Anderson's best-explanation comparison is a strong closing strategy because it moves the debate away from one-off puzzles toward overall theoretical fit. He asks what propositions need to provide: objective truth, necessary existence, aboutness, shareability, and some relation to cognition. Divine conceptualism can then be presented as a synthesis of Platonist objectivity and conceptualist mentality. The weakness is that synthesis can be too easy if the difficult parts are assigned to divine cognition without independent explanation. The view still needs a clear account of why divine thoughts are not just abstract propositions relocated into God's mind. The score is high because the comparative frame is apt, but not higher because the central ontology remains strained.",
+              tags: []
+            },
+            con: {
+              time: "1:06:20",
+              role: "Shared-cost deflation",
+              words:
+                "Malpass says Russell-style and set-theoretic worries may afflict realist proposition theories generally, so they do not favor Platonism over divine conceptualism.",
+              score: 87,
+              critique:
+                "Malpass's shared-cost deflation is admirable because it resists scoring cheap points. When a questioner raises Russell-style or set-theoretic worries, Malpass acknowledges that these may trouble many realist accounts of propositions, not only divine conceptualism. That concession increases his credibility and keeps the comparison fair: an objection counts against Anderson only if it differentially burdens Anderson's theory. The weakness is that this moderation also narrows Malpass's arsenal; if Platonism shares many costs, his positive case depends more heavily on the self-content and intentionality objections. Still, the move shows excellent burden discipline under pressure. The score is high because Malpass distinguishes decisive objections from common theoretical housekeeping.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 84,
+        strengths: [
+          "Anderson separated the argument from any one law of logic and required only modest common ground that some necessary truths exist.",
+          "He made intentionality, aspectual shape, and theory comparison explicit, which gave divine conceptualism a real explanatory target.",
+          "He treated Malpass's self-content dilemma seriously and offered a direct reply rather than dismissing it as anti-theistic skepticism."
+        ],
+        blunders: [
+          {
+            text:
+              "His move from the intentionality of propositions to their mental status sometimes assumed the very mental-intentionality thesis Malpass denied.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "Divine thoughts became unlike ordinary thoughts at the crucial point, creating pressure on whether the same term was doing stable work.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "The modal starting point stayed deliberately thin, which protected the argument but also left key necessity categories under-specified.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 88,
+        strengths: [
+          "Malpass granted necessary truths and proposition realism, so his objections targeted Anderson's inferential bridges rather than an easy anti-realist caricature.",
+          "His self-content dilemma exposed the hardest internal question for divine conceptualism: how a divine thought can be both thought and propositional content.",
+          "He fairly conceded when set-theoretic or realist costs were shared by rival theories, which improved the balance of his critique."
+        ],
+        blunders: [
+          {
+            text:
+              "His broad skepticism about conceivability sometimes made modal knowledge look murkier than the discussion needed, given the shared acceptance of necessary truths.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His Platonist alternative left intrinsic intentionality and causal relevance less developed than his critique of Anderson's view.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "He sometimes described his own dilemma cautiously enough that its rhetorical force depended on the audience already sharing the Fregean setup.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
