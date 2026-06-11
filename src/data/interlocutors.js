@@ -257,6 +257,21 @@ export const interlocutorAvatars = [
     aliases: ["Peter Hitchens"]
   },
   {
+    name: "Harold Kushner",
+    src: `${avatarBasePath}/harold-kushner.webp`,
+    aliases: [
+      "Harold Kushner",
+      "Harold S. Kushner",
+      "Harold S Kushner",
+      "Rabbi Harold Kushner"
+    ]
+  },
+  {
+    name: "Peter Gomes",
+    src: `${avatarBasePath}/peter-gomes.webp`,
+    aliases: ["Peter Gomes", "Peter J. Gomes", "Peter J Gomes", "Rev. Peter Gomes"]
+  },
+  {
     name: "Peter Singer",
     src: `${avatarBasePath}/peter-singer.webp`,
     aliases: ["Peter Singer", "Peter A. Singer", "Peter A Singer"]
