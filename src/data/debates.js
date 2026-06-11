@@ -25596,5 +25596,358 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "hawkins-folley-free-will-compatibilism-2026",
+    number: "73",
+    title: "Nathan Hawkins vs Joe Folley: Do We Really Have Free Will?",
+    label: "Libertarian freedom and compatibilism",
+    date: "2026-06-11",
+    duration: "1 hr 24 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=I5uYVxLdaO0",
+    motion:
+      "Does human freedom require libertarian alternative possibilities and sourcehood, or can compatibilist notions of will, responsibility, and practical agency survive determinism?",
+    summary:
+      "Hawkins defends libertarian free will through deliberative experience, neuroscience, and live options; Folley argues that compatibilist agency preserves the important distinctions around choice and responsibility.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-11, plus YouTube chapter timing. Auto-caption spacing, speaker turns, names, philosophical terms, and repeated caption fragments are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "we are steering the ship",
+        context:
+          "Hawkins uses the image to capture his claim that indeterminacy plus executive control can still be genuinely agential."
+      },
+      con: {
+        text: "what relevant notions of freedom and will survive",
+        context:
+          "Folley treats compatibilism as a reconstruction project: identify which practical ideas of choice, responsibility, and agency remain useful."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Libertarian freedom",
+        speaker: "Nathan Hawkins",
+        color: "teal"
+      },
+      con: {
+        name: "Compatibilist agency",
+        speaker: "Joe Folley",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 84,
+      con: 87
+    },
+    sections: [
+      {
+        title: "Defining the camps",
+        timebox: "01:35-08:13",
+        score: {
+          pro: 84,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "05:05",
+              role: "Phenomenal libertarianism",
+              words:
+                "Hawkins says libertarian free will best captures deliberative experience: we consider genuine options, select among them, and act as agents.",
+              score: 84,
+              critique:
+                "Hawkins's opening libertarian case is clear and accessible. He does not begin with theology or a mysterious soul; he begins with deliberative experience, where options appear live, reasons are weighed, and the person seems to choose. That gives the audience a real datum to explain rather than an abstract label. He also distinguishes causal from non-causal determinism, which prevents a crude all-determinism-is-puppetry framing. The weakness is that experience is not yet metaphysics. Feeling like several options are open may be compatible with a compatibilist account of deliberation under a fixed history. The score is high because the starting point is intuitive and well framed, but not decisive because the appearance-to-reality bridge remains disputed.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "The appeal to felt deliberation risks treating first-person experience as stronger metaphysical evidence than it can supply alone."
+                }
+              ]
+            },
+            con: {
+              time: "01:41",
+              role: "Position map",
+              words:
+                "Folley distinguishes libertarian alternative possibilities and sourcehood from hard incompatibilism, then says compatibilism asks which freedom and willing notions survive.",
+              score: 86,
+              critique:
+                "Folley's map of the debate is one of the strongest openings because it lowers the temperature and clarifies terms. He separates alternative possibilities, sourcehood, hard incompatibilism, causal determinism, non-causal determinism, and compatibilism without pretending that any camp is simple. His key move is also fair: compatibilism should not be sold as rescuing the exact libertarian picture, but as asking which important notions of freedom and willing survive or are orthogonal to determinism. The weakness is that this can sound like a strategic retreat from the ordinary phrase 'free will.' If the concept is reconstructed too much, some listeners will think the topic has changed. Still, the conceptual hygiene is excellent and earns a high score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Neuroscience and Libet",
+        timebox: "08:13-24:57",
+        score: {
+          pro: 87,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "11:32",
+              role: "Science caution",
+              words:
+                "Hawkins argues that Harris-style introspection and Libet-style readiness potentials do not show that neuroscience has disproved free will.",
+              score: 87,
+              critique:
+                "Hawkins's neuroscience caution is strong because it answers the popular anti-free-will argument at the point where many listeners think the case is settled. He distinguishes introspective claims about thoughts merely popping up from deliberative trains of thought, then gives a concrete reading of readiness-potential studies: sequence is not causation, and later experiments can separate readiness potential, conscious decision, and motor action. Invoking Peter Tse is not just name-dropping because Hawkins explains the experimental logic. The weakness is dependence on one contested neuroscientific counter-literature, compressed for a general audience. A defender of Libet-style arguments could demand more detail. Still, the rebuttal is relevant, evidentially specific, and appropriately modest, so the score is high.",
+              tags: []
+            },
+            con: {
+              time: "14:19",
+              role: "Physicalist caution",
+              words:
+                "Folley says neuroscience is young, Libet claims are methodologically contested, and physicalists should not separate the person from the brain too quickly.",
+              score: 84,
+              critique:
+                "Folley's response is useful because it refuses both scientistic overconfidence and anti-scientific dismissal. He notes that neuroscience is young, that fMRI and related tools are indirect measures, and that the Libet experiments have methodological disputes. That restraint fits the evidence better than a quick 'brain scans refute agency' slogan. His best point is philosophical: if one takes physicalism seriously, saying 'the brain decided before the person did' may smuggle in a dualistic split between person and brain. The weakness is that he mostly brackets the positive neuroscience, so his position functions as methodological caution rather than a direct account of decision-making. The score is strong because the caution is disciplined and directly relevant.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Determined or random",
+        timebox: "24:57-34:47",
+        score: {
+          pro: 86,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "25:16",
+              role: "Variation within constraints",
+              words:
+                "Hawkins says not-determined does not mean random; agency can involve probability distributions, constraints, evaluation, and top-down selection.",
+              score: 86,
+              critique:
+                "Hawkins's answer to the determined-or-random dilemma is one of his best moves. He correctly rejects the claim that 'not determined' logically means random; the relevant contrast is determined versus not determined, while randomness is an additional interpretation. His notion of variation within constraints gives libertarian freedom a more plausible shape than omnipotent self-creation. By tying imagination, emotional evaluation, executive control, and neural indeterminacy into an iterative selection model, he gives the audience a mechanism-like picture. The weakness is that the model still needs to show why weighted variation plus selection amounts to responsibility rather than sophisticated stochastic processing. The score is high because the false dichotomy is exposed, though the positive account remains contestable.",
+              tags: []
+            },
+            con: {
+              time: "31:11",
+              role: "Stochasticity challenge",
+              words:
+                "Folley says an incompatibilist can accept weighted probability distributions yet still ask whether weighted stochasticity makes anyone meaningfully freer.",
+              score: 84,
+              critique:
+                "Folley's stochasticity challenge is fair and charitable. He grants that the debate is not exhausted by a crude determined-or-random binary, then asks the next question: if the agent's options are weighted by prior criteria, genetics, upbringing, and probability distributions, why does that make the choice free in the libertarian sense? The loaded die and politician examples make the worry concrete without caricaturing Hawkins. The weakness is that Folley presents the objection partly on behalf of incompatibilists rather than as his own final view, so it is less developed than it could be. He also admits he is not wholly convinced by it. The score is strong because the objection isolates the remaining sourcehood burden.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Self and constraint",
+        timebox: "34:47-47:35",
+        score: {
+          pro: 83,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "34:47",
+              role: "Self-as-source reply",
+              words:
+                "Hawkins asks what the self is: if it is the brain or executive function, then it is involved in setting the relevant criteria.",
+              score: 83,
+              critique:
+                "Hawkins's self-as-source reply is strong against a certain popular objection. If critics demand that 'you' be the source, while also identifying you with your brain or executive function, then Hawkins can plausibly say the criterial settings of that system are the person's involvement. This blocks a lazy contrast between 'the brain did it' and 'the person did it.' The weakness is that the move can trade on an ambiguity in 'self.' A proximal executive system may be the self for prediction and agency talk, but libertarian sourcehood may require more than being the local system that implements evaluation. The score is high because the reply exposes a confused objection, but capped because identity of self and control remains underdefined.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The term self can shift between the local executive system and the stronger libertarian source of responsibility."
+                }
+              ]
+            },
+            con: {
+              time: "40:34",
+              role: "Inherited-criteria pressure",
+              words:
+                "Folley presses that criteria are heavily shaped by genetics, upbringing, and environment, so libertarian sourcehood may become more modest than advertised.",
+              score: 86,
+              critique:
+                "Folley's inherited-criteria pressure is precise and important. He does not deny that people deliberate; he asks how much responsibility attaches when the criteria used in deliberation are themselves heavily shaped by genetics, upbringing, social environment, and prior luck. This is especially effective because Hawkins's model relies on criterial constraints doing much of the agential work. Folley also avoids overclaiming: he says the objection may not destroy responsibility, but it limits what follows from libertarian language. The weakness is that he sometimes speaks for the hard incompatibilist rather than giving his own full standard for responsibility. Still, the pressure lands because it tests whether sourcehood is substantial or merely local control under inherited conditions.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Responsibility and live options",
+        timebox: "47:35-1:11:21",
+        score: {
+          pro: 84,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "56:00",
+              role: "Live-option responsibility",
+              words:
+                "Hawkins says responsibility is degree-theoretic: where no live alternative exists, blame weakens, but people help shape themselves over time.",
+              score: 84,
+              critique:
+                "Hawkins's live-option account is morally sensitive. He concedes that biology, upbringing, and social constraint can remove some options, so responsibility comes in degrees rather than as an all-or-nothing metaphysical stamp. The racist-Steve and Jojo discussion benefits from this humility: if a person genuinely could not even entertain an alternative, blame should weaken. He then strengthens the libertarian side by shifting from isolated choices to self-formation through many small decisions. The weakness is operational clarity. 'Live option' does a lot of work, but Hawkins gives no reliable test for when an option was genuinely live rather than merely conceivable from outside. The score is strong because the account is humane and plausible, but limited by that measurement problem.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The appeal to live options is attractive partly because the threshold for a live option remains unclear."
+                }
+              ]
+            },
+            con: {
+              time: "52:08",
+              role: "Compatibilist reconstruction",
+              words:
+                "Folley says even Determinist Town can distinguish chosen from unchosen conduct by modeling character, brain tumors, coercion, and reactive attitudes.",
+              score: 88,
+              critique:
+                "Folley's compatibilist reconstruction is the best sustained case in the discussion. Determinist Town, the brain tumor contrast, coercion cases, Frankfurt-style endorsement, Wolf-style responsiveness, and Strawsonian reactive attitudes all show why practical responsibility need not wait for libertarian metaphysics. His method is also transparent: ask what freedom and responsibility ascriptions do, then systematize them carefully. This does not prove determinism, but it shows that many moral distinctions survive without ultimate sourcehood. The weakness is that the account risks becoming plural and pragmatic enough to lose a single truth-condition for free will. Still, Folley makes a rich positive case rather than merely criticizing libertarianism, and that earns the highest local score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Pragmatism and first-person agency",
+        timebox: "1:11:21-1:24:14",
+        score: {
+          pro: 84,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:11:30",
+              role: "Pragmatist conversion attempt",
+              words:
+                "Hawkins argues that if deliberative agency is pragmatically ineliminable, Folley's own view should admit could-have-done-otherwise freedom.",
+              score: 84,
+              critique:
+                "Hawkins's late conversion attempt is clever because it uses Folley's pragmatist and first-person commitments rather than imposing an external theology. If deliberation, inquiry, causal reasoning, and moral response all require agents to treat themselves as possible sources of alternative action, then a pragmatist may have trouble dismissing that stance as mere illusion. Hawkins also extends the point to other persons, arguing that reactive attitudes already treat them as agents. The weakness is that pragmatic indispensability does not automatically equal metaphysical truth. A stance can be unavoidable, useful, and action-guiding without proving libertarian alternatives in the strong sense. The score is high because the challenge is live and personalized, but the truth move is too quick.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument can slide from pragmatically indispensable agency language to metaphysically robust alternative possibilities."
+                }
+              ]
+            },
+            con: {
+              time: "1:14:37",
+              role: "First-person concession",
+              words:
+                "Folley concedes a serious first-person tension: he may be unable to think of himself, while deliberating, except as able to do otherwise.",
+              score: 87,
+              critique:
+                "Folley's first-person concession is intellectually honest and philosophically valuable. Rather than pretending compatibilism has no pressure point, he admits that deliberation from the inside may be ineliminably experienced as agency with open alternatives, at least for oneself. He then situates the difficulty within a broader subject-object problem: humans are both inquirers and objects of inquiry, so studying ourselves can recast the very standpoint from which inquiry begins. That is a deeper answer than a quick slogan. The weakness is that it leaves the final position somewhat unresolved. Folley can still use proximal sourcehood and compatibilist responsibility for others, but the self-case remains open. The score is high because the concession improves credibility while preserving a defensible compatibilist core.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 84,
+        strengths: [
+          "Hawkins gave libertarian free will a contemporary form, combining deliberative phenomenology, probabilistic constraints, executive control, and neuroscience rather than relying on a simple soul picture.",
+          "His responses to Harris, Libet, and the determined-or-random dilemma were specific enough to show that popular anti-free-will arguments are not settled science or simple logic.",
+          "He treated responsibility with nuance, allowing degrees of blame and constraint while still defending self-formation through live alternatives over time."
+        ],
+        blunders: [
+          {
+            text:
+              "He leaned heavily on first-person deliberative experience, which is important evidence but not by itself a proof of libertarian metaphysics.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          },
+          {
+            text:
+              "His notion of live options remained underdefined even though it carried much of the burden for moral responsibility.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His pragmatist argument moved too quickly from indispensable agency language to strong alternative-possibility claims.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 87,
+        strengths: [
+          "Folley offered unusually clear conceptual mapping, distinguishing libertarian sourcehood, alternative possibilities, hard incompatibilism, causal determinism, non-causal determinism, and several kinds of compatibilism.",
+          "His strongest material reconstructed responsibility through practical agency, prediction, character, coercion, brain-tumor cases, endorsement, responsiveness, and reactive attitudes.",
+          "He improved the discussion by conceding real pressure points, especially the first-person deliberative standpoint, rather than pretending compatibilism had solved every issue."
+        ],
+        blunders: [
+          {
+            text:
+              "His compatibilist reconstruction sometimes became broad enough that listeners could wonder whether free will had been replaced by several neighboring concepts.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His positive ontology of non-causal determinism and first-person deliberation remained somewhat open-ended by the end of the discussion.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "Some objections were presented on behalf of hard incompatibilists, which occasionally softened his own compatibilist target.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
