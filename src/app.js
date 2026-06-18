@@ -140,6 +140,8 @@ function setSeo(seo) {
   const imageHeight = seo.imageHeight || DEFAULT_IMAGE_HEIGHT;
   const imageType = seo.imageType || DEFAULT_IMAGE_TYPE;
   const robots = seo.robots || DEFAULT_ROBOTS;
+  const isArticle = seo.type === "article";
+  const updatedTime = seo.updatedTime || seo.modifiedTime || seo.lastmod;
 
   document.title = seo.title;
   setCanonical(canonicalUrl);
@@ -158,6 +160,14 @@ function setSeo(seo) {
   setMeta('meta[property="og:description"]', { property: "og:description", content: seo.description });
   setMeta('meta[property="og:type"]', { property: "og:type", content: seo.type || "website" });
   setMeta('meta[property="og:url"]', { property: "og:url", content: canonicalUrl });
+  if (updatedTime) {
+    setMeta('meta[property="og:updated_time"]', {
+      property: "og:updated_time",
+      content: updatedTime
+    });
+  } else {
+    removeHeadElement('meta[property="og:updated_time"]');
+  }
   setMeta('meta[property="og:image"]', { property: "og:image", content: imageUrl });
   setMeta('meta[property="og:image:secure_url"]', {
     property: "og:image:secure_url",
@@ -173,7 +183,7 @@ function setSeo(seo) {
     content: imageHeight
   });
   setMeta('meta[property="og:image:alt"]', { property: "og:image:alt", content: imageAlt });
-  if (seo.articleSection) {
+  if (isArticle && seo.articleSection) {
     setMeta('meta[property="article:section"]', {
       property: "article:section",
       content: seo.articleSection
@@ -181,7 +191,7 @@ function setSeo(seo) {
   } else {
     removeHeadElement('meta[property="article:section"]');
   }
-  if (seo.publishedTime) {
+  if (isArticle && seo.publishedTime) {
     setMeta('meta[property="article:published_time"]', {
       property: "article:published_time",
       content: seo.publishedTime
@@ -189,7 +199,7 @@ function setSeo(seo) {
   } else {
     removeHeadElement('meta[property="article:published_time"]');
   }
-  if (seo.modifiedTime) {
+  if (isArticle && seo.modifiedTime) {
     setMeta('meta[property="article:modified_time"]', {
       property: "article:modified_time",
       content: seo.modifiedTime

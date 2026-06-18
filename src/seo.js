@@ -3,6 +3,7 @@ export const SITE_NAME = "Slugfester";
 export const SITE_LOCALE = "en_US";
 export const SITE_LANGUAGE = "en";
 export const SITE_THEME_COLOR = "#13201f";
+export const SITE_UPDATED_DATE = "2026-06-18";
 export const DEFAULT_TITLE = "Slugfester | YouTube Debate Argument Scorecards";
 export const DEFAULT_DESCRIPTION =
   "Explore YouTube debate transcripts as side-by-side argument scorecards with AI-assisted reasoning scores, critique popovers, and contextual fallacy and bias references.";
@@ -16,6 +17,20 @@ export const DEFAULT_ROBOTS = "index,follow,max-snippet:-1,max-image-preview:lar
 
 const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
+
+function latestIsoDate(...dates) {
+  const values = dates.filter(Boolean);
+  return values.length ? values.sort().at(-1) : SITE_UPDATED_DATE;
+}
+
+function organizationIdentityJsonLd() {
+  return {
+    "@type": "Organization",
+    "@id": ORGANIZATION_ID,
+    name: SITE_NAME,
+    url: SITE_URL
+  };
+}
 
 export function absoluteUrl(path = "/") {
   return new URL(path, SITE_URL).href;
@@ -78,10 +93,7 @@ export function imageObject(
 export function organizationJsonLd() {
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": ORGANIZATION_ID,
-    name: SITE_NAME,
-    url: SITE_URL,
+    ...organizationIdentityJsonLd(),
     logo: imageObject("/assets/debate-gloves.png", "Slugfester boxing gloves logo", 444, 444)
   };
 }
@@ -96,9 +108,7 @@ export function websiteJsonLd(topics = []) {
     url: SITE_URL,
     description: DEFAULT_DESCRIPTION,
     inLanguage: SITE_LANGUAGE,
-    publisher: {
-      "@id": ORGANIZATION_ID
-    }
+    publisher: organizationIdentityJsonLd()
   };
 
   if (topics.length) {
@@ -131,6 +141,7 @@ export function landingSeo(debates = []) {
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
     canonicalPath: "/",
+    lastmod: SITE_UPDATED_DATE,
     imagePath: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     type: "website",
@@ -154,6 +165,8 @@ export function landingSeo(debates = []) {
 }
 
 export function debateSeo(debate) {
+  const modifiedDate = latestIsoDate(debate.date, SITE_UPDATED_DATE);
+
   return {
     title: pageTitle(`${debateNumberLabel(debate)}: ${debate.title}`),
     description: compactText(
@@ -165,8 +178,9 @@ export function debateSeo(debate) {
     imageAlt: `${debateNumberLabel(debate)} scorecard: ${debate.title}`,
     type: "article",
     articleSection: "Debate scorecards",
+    lastmod: modifiedDate,
     publishedTime: debate.date,
-    modifiedTime: debate.date,
+    modifiedTime: modifiedDate,
     jsonLd: [
       organizationJsonLd(),
       websiteJsonLd(),
@@ -177,7 +191,7 @@ export function debateSeo(debate) {
         name: `${debateNumberLabel(debate)}: ${debate.title}`,
         description: compactText(debate.summary, 220),
         datePublished: debate.date,
-        dateModified: debate.date,
+        dateModified: modifiedDate,
         mainEntityOfPage: absoluteUrl(debatePath(debate)),
         url: absoluteUrl(debatePath(debate)),
         image: imageObject(),
@@ -185,12 +199,8 @@ export function debateSeo(debate) {
         inLanguage: SITE_LANGUAGE,
         articleSection: "Debate scorecards",
         isAccessibleForFree: true,
-        author: {
-          "@id": ORGANIZATION_ID
-        },
-        publisher: {
-          "@id": ORGANIZATION_ID
-        },
+        author: organizationIdentityJsonLd(),
+        publisher: organizationIdentityJsonLd(),
         isPartOf: {
           "@type": "WebSite",
           "@id": WEBSITE_ID,
@@ -230,6 +240,7 @@ export function searchSeo(debates = []) {
     title: pageTitle("Search debate scorecards"),
     description: `Filter ${debates.length} Slugfester debate scorecards by interlocutor and text.`,
     canonicalPath: searchPath(),
+    lastmod: SITE_UPDATED_DATE,
     imagePath: DEFAULT_IMAGE,
     imageAlt: "Slugfester debate search with interlocutors.",
     type: "website",
@@ -273,10 +284,12 @@ export function assessmentSeo() {
     title: pageTitle("The Codex Assessment Process"),
     description,
     canonicalPath: assessmentPath(),
+    lastmod: SITE_UPDATED_DATE,
     imagePath: DEFAULT_IMAGE,
     imageAlt: "Slugfester assessment process for debate argument scorecards.",
     type: "article",
     articleSection: "Methodology",
+    modifiedTime: SITE_UPDATED_DATE,
     jsonLd: [
       organizationJsonLd(),
       websiteJsonLd(),
@@ -286,6 +299,7 @@ export function assessmentSeo() {
         headline: "The Codex Assessment Process",
         name: "The Codex Assessment Process",
         description,
+        dateModified: SITE_UPDATED_DATE,
         mainEntityOfPage: absoluteUrl(assessmentPath()),
         url: absoluteUrl(assessmentPath()),
         image: imageObject(),
@@ -293,12 +307,8 @@ export function assessmentSeo() {
         inLanguage: SITE_LANGUAGE,
         articleSection: "Methodology",
         isAccessibleForFree: true,
-        author: {
-          "@id": ORGANIZATION_ID
-        },
-        publisher: {
-          "@id": ORGANIZATION_ID
-        },
+        author: organizationIdentityJsonLd(),
+        publisher: organizationIdentityJsonLd(),
         isPartOf: {
           "@type": "WebSite",
           "@id": WEBSITE_ID,
@@ -334,10 +344,12 @@ export function referenceSeo(type, slug, reference) {
     title: pageTitle(`${reference.label} ${category.toLowerCase()}`),
     description: compactText(`${reference.label}: ${reference.definition}`, 170),
     canonicalPath: referencePath(type, slug),
+    lastmod: SITE_UPDATED_DATE,
     imagePath: DEFAULT_IMAGE,
     imageAlt: `${reference.label} ${category.toLowerCase()} reference on Slugfester.`,
     type: "article",
     articleSection: category,
+    modifiedTime: SITE_UPDATED_DATE,
     jsonLd: [
       organizationJsonLd(),
       websiteJsonLd(),

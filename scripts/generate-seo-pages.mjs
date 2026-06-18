@@ -58,21 +58,25 @@ function renderHtml(seo, noscriptText) {
   const imageHeight = seo.imageHeight || DEFAULT_IMAGE_HEIGHT;
   const imageType = seo.imageType || DEFAULT_IMAGE_TYPE;
   const robots = seo.robots || DEFAULT_ROBOTS;
+  const updatedTime = seo.updatedTime || seo.modifiedTime || seo.lastmod;
   const structuredData = jsonScript(seo.jsonLd);
   const articleMeta = [
-    seo.articleSection
+    seo.type === "article" && seo.articleSection
       ? `<meta property="article:section" content="${escapeHtml(seo.articleSection)}">`
       : "",
-    seo.publishedTime
+    seo.type === "article" && seo.publishedTime
       ? `<meta property="article:published_time" content="${escapeHtml(seo.publishedTime)}">`
       : "",
-    seo.modifiedTime
+    seo.type === "article" && seo.modifiedTime
       ? `<meta property="article:modified_time" content="${escapeHtml(seo.modifiedTime)}">`
       : ""
   ]
     .filter(Boolean)
     .join("\n    ");
   const articleMetaBlock = articleMeta ? `${articleMeta}\n    ` : "";
+  const updatedMeta = updatedTime
+    ? `<meta property="og:updated_time" content="${escapeHtml(updatedTime)}">\n    `
+    : "";
 
   return `<!doctype html>
 <html lang="en">
@@ -95,7 +99,7 @@ function renderHtml(seo, noscriptText) {
     <meta property="og:description" content="${escapeHtml(seo.description || DEFAULT_DESCRIPTION)}">
     <meta property="og:type" content="${escapeHtml(seo.type || "website")}">
     <meta property="og:url" content="${escapeHtml(canonicalUrl)}">
-    <meta property="og:image" content="${escapeHtml(imageUrl)}">
+    ${updatedMeta}<meta property="og:image" content="${escapeHtml(imageUrl)}">
     <meta property="og:image:secure_url" content="${escapeHtml(imageUrl)}">
     <meta property="og:image:type" content="${escapeHtml(imageType)}">
     <meta property="og:image:width" content="${escapeHtml(imageWidth)}">
@@ -205,7 +209,8 @@ const pageOutputs = new Map();
 const sitemapUrls = [];
 const latest = latestDate();
 
-function addPage(pathname, seo, noscriptText, lastmod = latest) {
+function addPage(pathname, seo, noscriptText, fallbackLastmod = latest) {
+  const lastmod = seo.lastmod || seo.modifiedTime || fallbackLastmod;
   pageOutputs.set(outputPathForRoute(pathname), renderHtml(seo, noscriptText));
   if (seo.robots !== "noindex,follow") {
     sitemapUrls.push({ loc: absoluteUrl(pathname), lastmod });
@@ -234,8 +239,7 @@ debates.forEach((debate) => {
   addPage(
     debatePath(debate),
     debateSeo(debate),
-    `${sentence(debate.title)} Slugfester provides a side-by-side argument scorecard for this debate.`,
-    debate.date
+    `${sentence(debate.title)} Slugfester provides a side-by-side argument scorecard for this debate.`
   );
 });
 

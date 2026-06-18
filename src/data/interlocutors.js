@@ -212,6 +212,11 @@ export const interlocutorAvatars = [
     aliases: ["Scott Clifton"]
   },
   {
+    name: "Ed Feser",
+    src: `${avatarBasePath}/ed-feser.webp`,
+    aliases: ["Ed Feser", "Edward Feser", "Edward C. Feser", "Edward C Feser"]
+  },
+  {
     name: "Graham Oppy",
     src: `${avatarBasePath}/graham-oppy.webp`,
     aliases: ["Graham Oppy", "Graham Robert Oppy"]
