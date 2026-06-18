@@ -25949,5 +25949,398 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "rasmussen-malpass-suffering-causal-finitism-2021",
+    number: "74",
+    title: "Josh Rasmussen vs Alex Malpass: Suffering, Theism, and Causal Finitism",
+    label: "Suffering, theism, and causal finitude",
+    date: "2026-06-18",
+    duration: "1 hr 59 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=MfCQBynjgnw",
+    motion:
+      "Do Grim Reaper-style paradoxes support causal finitism, and does the existence and distribution of suffering favor theism or the hypothesis of indifference?",
+    summary:
+      "Rasmussen defends modal-independence intuitions and theistic resources for hidden goods; Malpass argues that unsatisfiable-pair diagnosis and ordinary moral knowledge undercut those moves.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-18, plus YouTube chapter timing. Auto-caption spacing, speaker turns, names, philosophical terms, and repeated caption fragments are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "follow the light where it leads",
+        context:
+          "Rasmussen presents the discussion as a joint search for clarity, then uses that method to defend modal intuitions and theistic resources for hidden goods."
+      },
+      con: {
+        text: "there are just cases where I do take myself to have moral knowledge",
+        context:
+          "Malpass presses that some cases of horrific suffering are not mere blanks in our knowledge; they look morally decisive even after skeptical theism is considered."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theistic modal defense",
+        speaker: "Josh Rasmussen",
+        color: "teal"
+      },
+      con: {
+        name: "Analytic evidential critique",
+        speaker: "Alex Malpass",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 83,
+      con: 87
+    },
+    sections: [
+      {
+        title: "Grim Reaper setup",
+        timebox: "01:35-15:00",
+        score: {
+          pro: 83,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:43",
+              role: "Causal-finitism case",
+              words:
+                "Rasmussen says an infinite causal past would allow a no-first-killer Grim Reaper arrangement, but that arrangement is impossible.",
+              score: 83,
+              critique:
+                "Rasmussen gives the finite-past case its most intuitive form. The alarm-clock story makes the paradox vivid: every candidate killer should find Fred already dead, yet Fred cannot be dead unless some reaper killed him. That gives causal finitism a clean abductive hook, especially because the setup appears to use only local causal powers plus an infinite ordering. The weakness is that the argument moves quickly from 'an infinite past would permit this arrangement' to 'therefore the infinite past is suspect.' That bridge depends on a substantive modal principle about combining infinitely many independently plausible conditions. The score is strong because the puzzle is real and well explained, but capped because the modal bridge is doing much of the work.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The intuition that local clock settings can be freely combined may not scale cleanly to an infinite arrangement."
+                }
+              ]
+            },
+            con: {
+              time: "11:26",
+              role: "Unsatisfiable-pair diagnosis",
+              words:
+                "Malpass abstracts the paradox as a beginningless sequence plus a self-blocking condition, then says their joint satisfaction is impossible.",
+              score: 87,
+              critique:
+                "Malpass's abstraction is excellent because it separates the ingredients that generate contradiction. Instead of treating the beginningless sequence itself as the culprit, he identifies a pair of conditions: there is no first item, and each item occurs only if no earlier item occurred. Once stated that way, the paradox looks like an impossible joint specification rather than an argument against all infinite pasts. The response is also dialectically efficient: it accepts the force of the puzzle while refusing Rasmussen's preferred diagnosis. The limitation is that the diagnosis can feel too formal if listeners want to know what would happen in a concrete attempted world. Still, it gives a more parsimonious explanation of the contradiction.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Ontology and diagnosis",
+        timebox: "15:00-25:00",
+        score: {
+          pro: 82,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "23:13",
+              role: "Time-travel parity",
+              words:
+                "Rasmussen compares the inference to time travel: if a theory enables parent-killing paradoxes, that theory itself becomes doubtful.",
+              score: 82,
+              critique:
+                "Rasmussen's time-travel comparison is a useful pressure test. If a metaphysical hypothesis seems to allow a contradiction by ordinary recombination of events, philosophers often treat the hypothesis as suspect rather than merely banning the final contradictory package. That makes the Grim Reaper inference feel less ad hoc: causal infinitism, like unrestricted time travel, may be too permissive. The weakness is that the analogy inherits the dispute instead of resolving it. Many time-travel theorists already block the contradictory combination by consistency constraints without rejecting all time travel. So the comparison sharpens the dialectic, but it does not show why causal finitism is the best diagnosis rather than one live diagnosis among several.",
+              tags: []
+            },
+            con: {
+              time: "16:22",
+              role: "Lighter explanation",
+              words:
+                "Malpass says causal finitism and unsatisfiable-pair diagnosis both block the paradox, but his diagnosis has fewer ontological commitments.",
+              score: 88,
+              critique:
+                "Malpass's lighter-explanation reply is one of the strongest moments in the first half. He grants that causal finitism blocks the paradox, but points out that ordinary logical inconsistency also blocks it without adding a large thesis about space, time, causation, or the structure of the past. The Seven Bridges analogy helps: no mysterious force prevents the route; the route is just mathematically impossible. This gives the audience a clear parsimony standard. The minor weakness is that parsimony alone is not decisive if Rasmussen can independently motivate the modal independence principle. But on the material in the exchange, Malpass gives the cleaner explanatory package and earns the higher score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Recombination and independence",
+        timebox: "25:00-49:17",
+        score: {
+          pro: 85,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "42:45",
+              role: "Modal-independence refinement",
+              words:
+                "Rasmussen refines the issue as neighboring worlds where randomized clock settings vary independently, not simple Lewisian recombination.",
+              score: 85,
+              critique:
+                "Rasmussen improves his case by distinguishing his intuition from crude Lewisian recombination. Rather than piecing together infinitely many isolated possible worlds, he asks us to consider one possible world with the relevant randomized clocks, then nearby worlds where the settings differ independently. That is a better target because it explains why the paradoxical distribution feels available from within the original setup. He also deserves credit for treating Malpass's paper as progress and openly revising the principle under discussion. The remaining problem is epistemic: once the variation is infinite, 'nearby' and 'independent' need careful constraints. The score is high because the refinement makes the argument more sophisticated, but it still rests on a fragile modal intuition.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "The refined modal principle gains much of its force from how available the infinite variation seems to the reasoner."
+                }
+              ]
+            },
+            con: {
+              time: "36:16",
+              role: "Infinite-recombination caution",
+              words:
+                "Malpass says recombining infinitely many clock settings is a principle on steroids, so modal humility should restrain the intuition.",
+              score: 86,
+              critique:
+                "Malpass's caution is well calibrated. He does not dismiss recombination entirely; he challenges the move from ordinary modal variation to an infinite array of jointly specified events. Calling it a principle on steroids captures the worry without overcomplicating it. He also offers a stable alternative: individually possible ingredients can be jointly incompossible, and classical logic may be the thing teaching us where intuition fails. The limitation is that this can sound like a stop sign rather than a full account of which infinite combinations are legitimate. Still, as a rebuttal to Rasmussen's burden of proof, it is strong. It asks for a principled warrant before letting an infinite modal intuition overturn causal infinitism.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Suffering as evidence",
+        timebox: "49:40-1:08:19",
+        score: {
+          pro: 82,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "59:20",
+              role: "Flashlight principle",
+              words:
+                "Rasmussen says theism may entail unknown good reasons for suffering, while indifference needs added resources for conscious sufferers.",
+              score: 82,
+              critique:
+                "Rasmussen's flashlight principle is a respectable Bayesian move. If a theory entails further consequences, learning those consequences need not reduce its prior; theism may include resources for goods, purposes, and unknown reasons in a way that indifference does not. He also rightly notes that indifference by itself does not obviously predict conscious beings capable of suffering, so background assumptions matter. The weakness is that the move can underplay the evidential direction of the concrete data. Once the datum is severe, apparently pointless suffering, saying theism entails some unknown story risks insulating the hypothesis rather than explaining the cases. The score remains solid because Rasmussen identifies a real background-knowledge problem, but the answer needs sharper constraints.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Unknown divine reasons can protect theism unless there are independent limits on when hidden reasons may be invoked."
+                }
+              ]
+            },
+            con: {
+              time: "49:40",
+              role: "Evidential symmetry",
+              words:
+                "Malpass frames suffering as reverse fine-tuning: unnecessary suffering is less surprising on perfect-being theism than on indifference.",
+              score: 88,
+              critique:
+                "Malpass's suffering argument is clear, modest, and well framed. By comparing it to fine-tuning, he shows that the same probabilistic style theists often use can be turned in the other direction: some facts are less expected on all-good, all-knowing, all-powerful theism than on indifference. He does not claim the argument settles worldview choice; he claims it supplies evidence that may be outweighed elsewhere. That modesty improves the reasoning. The strongest feature is the focus on unnecessary suffering rather than evil in general. The weakness is that the category of 'unnecessary' is exactly where skeptical theists will push back. Even so, the probabilistic contrast is disciplined and persuasive.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Hidden reasons",
+        timebox: "1:08:19-1:17:32",
+        score: {
+          pro: 80,
+          con: 89
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:10:30",
+              role: "Blank-spaces analogy",
+              words:
+                "Rasmussen compares unknown divine reasons to blank spaces on a marriage certificate: expected gaps, not necessarily disconfirmation.",
+              score: 80,
+              critique:
+                "Rasmussen's blank-spaces analogy is useful because it challenges a too-simple expectation of transparency. If theism includes a creator whose reasons exceed ours, then some unexplained details may be unsurprising rather than disconfirming. This is a fair reminder that not every unanswered question counts equally against a theory. But the analogy is too gentle for the relevant cases. Horrific suffering is not like ordinary formatting whitespace on a document; it is closer to missing names, false entries, or a certificate that fails at its central purpose. Rasmussen's move therefore lowers the heat of the evidence, but does not fully answer why the particular gaps we observe should be expected under perfect goodness.",
+              tags: []
+            },
+            con: {
+              time: "1:15:17",
+              role: "Common-sense moral pressure",
+              words:
+                "Malpass says the analogy is closer to missing names; in obvious moral cases we know enough to condemn torture.",
+              score: 89,
+              critique:
+                "Malpass's reply lands because it restores the moral scale of the issue. He does not demand omniscience, nor does he say that any unexplained evil defeats theism. Instead, he argues that some cases are sufficiently clear for ordinary moral knowledge: torturing a child to death remains wrong even if someone proposes distant compensating goods. That is a powerful constraint on skeptical theism, because it prevents hidden-reason appeals from dissolving the moral judgments that theism itself often depends on. The weakness is that moral intuitions still require defense when projected onto divine permission. But Malpass gives the better local argument because he distinguishes reasonable epistemic humility from paralyzing skepticism.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Contract and arena",
+        timebox: "1:17:32-1:33:10",
+        score: {
+          pro: 77,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:17:32",
+              role: "Arena-and-contract possibility",
+              words:
+                "Rasmussen distinguishes agent wrongdoing from God's permission, then sketches risk, growth, soul-contract, and afterlife possibilities.",
+              score: 77,
+              critique:
+                "Rasmussen's arena-and-contract possibility is emotionally serious and offered with appropriate tentativeness. He distinguishes the wrongness of a participant's act from the creator's permission of a risky arena, then gestures toward growth, love, adventure, soul continuity, and possible pre-life consent. That helps show why theodicy need not be a single mechanical calculation. Still, this is the most speculative part of his case. Near-death experiences, soul contracts, and hidden pre-life purposes are not intrinsic to bare theism and are not supported within the exchange. They can make almost any distribution of suffering compatible with God. The score is lower because the move is imaginative and pastorally humane, but evidentially undercontrolled.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The proposal benefits from unspecified soul-contract and afterlife details that are difficult to test or compare."
+                }
+              ]
+            },
+            con: {
+              time: "1:21:53",
+              role: "Speculation boundary",
+              words:
+                "Malpass says contract theodicy might explain chosen risk, but it struggles with children, starvation, and short horrific lives.",
+              score: 87,
+              critique:
+                "Malpass's speculation-boundary reply is exactly the pressure the discussion needs. He grants that consent could matter in some cases, then asks whether the hypothesis plausibly covers children, starvation, severe disability, and lives with little apparent opportunity for growth or payoff. That keeps the argument from floating into unconstrained possibility space. He also makes a methodological point: an open mind is not an infinitely open mind, and philosophical explanation must sit between proof and wild speculation. The limitation is that he does not give a complete probability model for where that boundary lies. But as a rebuttal to the soul-contract move, he identifies the right cases and the right standard of restraint.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Background and balance",
+        timebox: "1:33:10-1:59:22",
+        score: {
+          pro: 84,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:50:18",
+              role: "Background-knowledge defense",
+              words:
+                "Rasmussen says suffering may be more probable on a theism that predicts conscious adventure, growth, risk, and world-making goods.",
+              score: 84,
+              critique:
+                "Rasmussen's closing balance is his strongest suffering response because it becomes more conditional and careful. He says the result depends on what is held fixed: bare indifference may not predict the resources for complex conscious sufferers, while some forms of theism may predict an adventuresome world containing growth, relationship, risk, and delegated responsibility. He also concedes that specific suffering can count against theism in a fuller evidential balance. That is a mature closing posture. The weakness is that the richer theism doing the explanatory work is more loaded than the bare perfect-being hypothesis Malpass targeted. The score is high because the probabilistic framing is serious, but it still shifts the comparison class.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The response can shift from Malpass's bare perfect-being theism to a richer adventure-and-growth theism."
+                }
+              ]
+            },
+            con: {
+              time: "1:51:56",
+              role: "Wider-context reply",
+              words:
+                "Malpass says apparently theism-friendly data can reverse when details are considered, and his argument is only a modest opening.",
+              score: 87,
+              critique:
+                "Malpass closes with the right level of ambition. He accepts that consciousness or cosmic resources may initially look better on theism, then notes that closer detail can reverse the impression: minds appear precariously tied to vulnerable brain matter, injury, development, and decay. That mirrors his treatment of suffering and shows methodological consistency. He also frames his problem-of-evil case as a conversation opener against bare perfect-being theism, not a worldview knockout. The weakness is that a modest opening can leave listeners wanting a more complete cumulative comparison. Still, the restraint helps rather than hurts. It keeps the evidential claim precise, makes room for other arguments, and avoids the overreach that often weakens problem-of-evil debates.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 83,
+        strengths: [
+          "Rasmussen gave the Grim Reaper argument a vivid causal-finitist motivation, then refined the key modal principle instead of merely repeating the first formulation.",
+          "He treated background knowledge with real Bayesian seriousness, asking what each worldview predicts before deciding whether suffering is surprising.",
+          "He conceded that some suffering can count against theism and consistently framed the conversation as cooperative inquiry rather than a simple win-loss exchange."
+        ],
+        blunders: [
+          {
+            text:
+              "His Grim Reaper argument still depends on an infinite modal-independence intuition whose reliability was not independently established.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His hidden-reasons response risked protecting theism with unknown goods unless paired with clearer constraints on when such reasons may be invoked.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His contract, afterlife, and adventure-world suggestions were humane but speculative relative to Malpass's bare-theism target.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 87,
+        strengths: [
+          "Malpass's unsatisfiable-pair diagnosis gave a parsimonious alternative to causal finitism while preserving the full force of the Grim Reaper contradiction.",
+          "His evidential problem of suffering was careful and modest: suffering is evidence for indifference over bare perfect-being theism, not an automatic refutation of every richer worldview.",
+          "He repeatedly enforced methodological discipline, especially around moral knowledge, hidden reasons, and the boundary between open-minded possibility and unconstrained speculation."
+        ],
+        blunders: [
+          {
+            text:
+              "His appeal to common-sense moral knowledge is powerful, but it still needs a bridge from human permission cases to divine permission cases.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          },
+          {
+            text:
+              "His bare-theism target can understate how actual theists often combine perfect-being theology with afterlife, soul-making, incarnation, and providence claims.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His formal diagnosis of the Grim Reaper cases leaves some listeners wanting a fuller account of which infinite modal combinations are legitimate.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
