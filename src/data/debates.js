@@ -27080,5 +27080,334 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "feser-oppy-arguments-for-god-2020",
+    number: "77",
+    title: "Ed Feser vs Graham Oppy: Are There Any Good Arguments for God?",
+    label: "Argument standards and Aristotelian proof",
+    date: "2026-06-18",
+    duration: "2 hr 01 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=m-80lQOlNOs",
+    motion:
+      "Are there good arguments for God, and does Feser's Aristotelian proof survive Oppy's theory-comparison and persistence objections?",
+    summary:
+      "Feser defends formal theistic proofs as summaries of deeper metaphysical reasoning; Oppy argues that theory comparison, not standalone arguments, carries the real epistemic burden.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-18. The upload has no topical chapter map, so section ranges are inferred from transcript flow; auto-caption spacing, speaker turns, names, and philosophical terms are lightly normalized, while analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "purely actual actualizer",
+        context:
+          "Feser's concrete theistic case turns on the Aristotelian claim that actualized potentials require an ultimately non-potential source."
+      },
+      con: {
+        text: "beliefs and theories are almost entirely prior to arguments",
+        context:
+          "Oppy's central method claim is that arguments mainly reveal commitments inside broader theories, rather than forcing theory change by themselves."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Aristotelian theist",
+        speaker: "Ed Feser",
+        color: "teal"
+      },
+      con: {
+        name: "Theory-comparison skeptic",
+        speaker: "Graham Oppy",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 84,
+      con: 86
+    },
+    sections: [
+      {
+        title: "What Arguments Do",
+        timebox: "00:50-15:00",
+        score: {
+          pro: 83,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "05:05",
+              role: "Basic-belief caution",
+              words:
+                "Feser compares Oppy's opening to Plantinga-style basic beliefs, then asks whether arguments play less of a role only in disagreement.",
+              score: 83,
+              critique:
+                "Feser's basic-belief caution is a good opening clarification. By comparing Oppy's view with Plantinga and then narrowing the issue to disagreement, he prevents the discussion from becoming a caricature in which Oppy denies rationality or treats rhetoric as everything. Feser also usefully asks whether the claim applies only to debate or to knowledge more broadly. The weakness is that this is mostly diagnostic rather than a positive standard for good theistic arguments. It sets boundaries, but it does not yet show why his own proofs should count as good against a resistant interlocutor. The score is strong because the clarification improves the conversation, but limited because it is preparatory.",
+              tags: []
+            },
+            con: {
+              time: "01:35",
+              role: "Theory-priority thesis",
+              words:
+                "Oppy says beliefs and theories are almost entirely prior to arguments, so arguments mostly reveal unnoticed consequences of commitments.",
+              score: 86,
+              critique:
+                "Oppy's theory-priority thesis is clear and unusually useful. He defines arguments narrowly as sets of sentences with premises and conclusion, then argues that in deep disagreement they mainly reveal unnoticed commitments, especially contradictions or consequences an interlocutor had not seen. This explains why familiar theistic and atheistic proofs often fail to move sophisticated opponents: one premise is already rejected inside the opponent's broader theory. The strength is that he gives a model of philosophical disagreement rather than merely dismissing theistic arguments. The weakness is that the definition of argument is very technical and may leave out broader explanatory cases. Still, the thesis frames the rest of the debate with real precision.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Theory Comparison",
+        timebox: "25:00-40:00",
+        score: {
+          pro: 84,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "31:15",
+              role: "Argument-relations reply",
+              words:
+                "Feser says arguments can show options and relations between propositions even if they do not force one specific revision.",
+              score: 84,
+              critique:
+                "Feser's argument-relations reply is well aimed. He grants that arguments often do not force a single response, but points out that showing an interlocutor their options is still progress. If an argument reveals that one must accept a conclusion, reject a premise, or challenge an inference, then it has done philosophical work. His Mackie discussion is helpful because it shows how a deductive argument may trouble some theists even if sophisticated theists reject key premises. The weakness is that this answer partly concedes Oppy's main point: arguments do their work only against a background of already held commitments. The score is high because Feser preserves real argumentative value without pretending arguments are magic.",
+              tags: []
+            },
+            con: {
+              time: "33:10",
+              role: "Global-theory standard",
+              words:
+                "Oppy says the better view is the more virtuous theory, balancing minimized commitments with explanatory breadth and depth.",
+              score: 87,
+              critique:
+                "Oppy's global-theory standard is the strongest part of his first half. He does not merely say that arguments fail; he proposes a replacement task: articulate the relevant commitments, check consistency, then compare theories by virtues such as simplicity, minimized commitments, and explanatory breadth and depth. This explains why an argument with one rejected premise is dialectically dead for the opponent, while still allowing productive exchange about the disputed claim. The weakness is that the standard can become very demanding and somewhat elastic; nearly any argument can be redirected into a vast total-theory comparison. Even so, Oppy gives a disciplined account of what deep philosophical disagreement should actually compare.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Proofs as Summaries",
+        timebox: "50:00-1:10:00",
+        score: {
+          pro: 86,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "58:35",
+              role: "Formal-proof defense",
+              words:
+                "Feser says the 50-step proof in Five Proofs is a summary of long discursive metaphysical work, not a freestanding conversation stopper.",
+              score: 86,
+              critique:
+                "Feser's formal-proof defense is strong because it accurately describes how serious metaphysical proofs normally function. The step-by-step Aristotelian proof in Five Proofs is not meant to be thrown on the table as a self-contained conversion device; it summarizes a longer discussion of change, hierarchical causal series, actuality, potentiality, and divine attributes. That answers Oppy's worry that bare premise-conclusion lists do little against sophisticated opponents. The weakness is that Feser still wants the formal proof to have significant value, and its value remains conditional on the prior metaphysical exposition. The score is high because the clarification is fair and important, but it shows that the real contest lies in the background theory.",
+              tags: []
+            },
+            con: {
+              time: "1:03:20",
+              role: "Best-opponent standard",
+              words:
+                "Oppy says the relevant test is the best theist against the best naturalist; formal arguments matter little when premises are rejected.",
+              score: 84,
+              critique:
+                "Oppy's best-opponent standard is a fair restraint on easy apologetic victory. Against the best naturalist, a proof whose premises are rejected cannot simply be declared good because it is valid for those who already accept the background metaphysics. The exchange should focus on the disputed claims and total theory virtues. The weakness is that Oppy risks undervaluing the organizing function of formal summaries. A proof can help locate exactly where theories diverge even if it does not settle the divergence. His narrow technical definition of argument may exclude ordinary philosophical uses of reasons, cases, and explanatory patterns. The score is strong, but lower than Feser's local answer because the standard becomes somewhat austere.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The critique can trade on a narrow technical sense of argument while ordinary philosophical argument includes broader reason-giving."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Real Debate",
+        timebox: "1:15:00-1:24:30",
+        score: {
+          pro: 87,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:15:35",
+              role: "Rationality clarification",
+              words:
+                "Feser says calling the real debate intra-theistic was not meant to imply atheists are irrational or unworthy of engagement.",
+              score: 87,
+              critique:
+                "Feser's rationality clarification is one of his best dialectical moves. He separates two claims that Oppy had run together: a view can be deeply wrong, even wrong at a fundamental metaphysical level, without its defenders being irrational or unworthy of serious engagement. The Leibniz example is apt because it illustrates a system that many reject while still respecting its brilliance and internal structure. This lets Feser defend strong confidence in theism without implying that atheists are outside philosophical conversation. The weakness is that the original phrase 'real debate' was naturally provocative, so the clarification was needed. The score is high because Feser removes an avoidable overreading and improves the tone.",
+              tags: []
+            },
+            con: {
+              time: "1:20:20",
+              role: "Credence response",
+              words:
+                "Oppy accepts that he read Feser strongly, then says rival systems may assign near-zero credence to each other's key claims.",
+              score: 84,
+              critique:
+                "Oppy's credence response is fair and conciliatory. He acknowledges that he gave Feser's remark a stronger reading, then reframes the disagreement in terms of systems that assign very different credences to central claims. This fits his broader theory-comparison approach: each side may find parts of the other system extremely implausible while still recognizing coherence and intellectual seriousness. The strength is that Oppy avoids turning the exchange into a grievance about tone. The weakness is that the credence framing can make disagreement sound symmetrical without showing which side's credences are better calibrated. The score is strong because he repairs the interpretive issue, but the move is more methodological than probative.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Potential and Actuality",
+        timebox: "1:24:30-1:40:00",
+        score: {
+          pro: 84,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:25:20",
+              role: "Actualizer principle",
+              words:
+                "Feser says whatever goes from potential to actual requires something already actual to actualize it, even if the changer is internal.",
+              score: 84,
+              critique:
+                "Feser's actualizer principle gives the debate its concrete metaphysical center. He carefully avoids the vague claim that every change needs an external changer, instead saying that any potential actualized must be actualized by something already actual. This allows self-change while analyzing it as one actual part actualizing another potential part. That precision matters, because Oppy's objection partly targets a looser causal principle. The weakness is that the principle remains deeply theory-laden. Listeners who do not already accept the Aristotelian analysis of change may see the technical vocabulary as doing too much work. The score is high because the clarification is exact, but it still needs a defense against Oppy's persistence model.",
+              tags: []
+            },
+            con: {
+              time: "1:29:20",
+              role: "Persistence objection",
+              words:
+                "Oppy says a red chair's potential to be red at the next moment can be realized without an actualizer if nothing intervenes.",
+              score: 86,
+              critique:
+                "Oppy's persistence objection is the most intuitive challenge to the Aristotelian proof. If a red chair remains red from one moment to the next, it seems natural to say no new actualizer is needed; it simply persists unless something changes it. Applied to the universe, this suggests that transitions of the whole state may not require an external actualizer. The strength is that Oppy gives a rival metaphysical picture, not just a denial. The weakness is that the example may work better for temporal continuation than for the simultaneous hierarchical dependence Feser emphasizes. Still, it puts real pressure on whether persistence should be analyzed as actualized potential or as default continuation.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Bottom Level",
+        timebox: "1:40:00-2:00:00",
+        score: {
+          pro: 86,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:45:45",
+              role: "Constitution reply",
+              words:
+                "Feser says the chair's redness still depends on simultaneous microstructure, and any ultimate bottom must lack parts and potentiality.",
+              score: 86,
+              critique:
+                "Feser's constitution reply is strong because it shifts from temporal inertia to simultaneous dependence. The chair is red at the later moment partly because its surface microstructure is then arranged a certain way; that macro property depends on a lower-level actual condition, not merely on the absence of interference. He then argues that any genuine bottom level must lack composition, unrealized potentiality, and further explanation, which moves the proof toward pure actuality. The weakness is that the final step from such a bottom to something divine is still compressed and depends on Thomistic categories. The score is high because Feser identifies the right distinction, but the divine conclusion needs more unpacking.",
+              tags: []
+            },
+            con: {
+              time: "1:52:05",
+              role: "Physical-bottom alternative",
+              words:
+                "Oppy says constitution may bottom out in simples or quantum-field stuff, and he does not see why that must be divine.",
+              score: 84,
+              critique:
+                "Oppy's physical-bottom alternative is a good final resistance point. If macro-level properties are constituted by lower-level structures, then the naturalist can ask whether the chain bottoms out in physical simples, fields, or some fundamental stuff rather than pure actuality. This targets Feser's move from explanatory regress to theism. The strength is that Oppy keeps the alternative live without pretending current physics already supplies the exact bottom level. The weakness is that the alternative is mostly promissory. If the alleged bottom still has variable features, potentialities, or composition, Feser's question returns. The score is strong because the challenge is relevant, but limited because it does not yet supply a fully articulated metaphysics.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 84,
+        strengths: [
+          "Feser clarified that formal theistic proofs are summaries of deeper metaphysical reasoning, not isolated premise lists meant to compel every reader instantly.",
+          "He gave a careful formulation of the Aristotelian actualizer principle that avoids the crude claim that every change needs an external changer.",
+          "His simultaneous-dependence reply to the red-chair example directly addressed the strongest concrete objection Oppy raised."
+        ],
+        blunders: [
+          {
+            text:
+              "The move from an ultimate bottom level without parts or potentiality to something divine remained compressed and heavily dependent on Thomistic background theory.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His original framing of the real debate as intra-theistic was easy to overread as excluding atheism from serious philosophical dispute.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His critique of persistence leaned on a specialized analysis of change that many non-Aristotelians will reject rather than share as neutral ground.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 86,
+        strengths: [
+          "Oppy gave a serious account of argument evaluation, emphasizing total theory comparison, consistency, explanatory scope, and minimized commitments over isolated proof trading.",
+          "He pressed Feser's Aristotelian proof at a live premise: whether every realized potential requires an actualizer, especially in cases of persistence.",
+          "He stayed charitable and precise, acknowledging agreement where it existed and correcting his own stronger reading of Feser's 'real debate' remark."
+        ],
+        blunders: [
+          {
+            text:
+              "His technical definition of argument sometimes excluded broader explanatory and abductive reasoning that ordinary philosophical argument clearly includes.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His persistence principle risked assuming that continued states need no actualizer rather than independently explaining why Aristotelian dependence is false.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His physical-bottom alternative remained underdeveloped, relying on possible simples or fields without showing they escape potentiality or composition concerns.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
