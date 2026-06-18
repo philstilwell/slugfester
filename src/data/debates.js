@@ -27409,5 +27409,326 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "albrecht-oppy-resurrection-ancient-christianity-2023",
+    number: "78",
+    title: "William Albrecht vs Graham Oppy: Resurrection and Ancient Christianity",
+    label: "Resurrection and ancient Christianity",
+    date: "2026-06-18",
+    duration: "1 hr 03 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=YzvidaGO3m4",
+    motion:
+      "Do Paul's letters, Gospel transmission, hostile witnesses, and early church structures make the bodily resurrection and Catholic continuity historically credible?",
+    summary:
+      "Albrecht argues that Paul, early sources, and institutional continuity support bodily resurrection and Catholic orthodoxy; Oppy presses gaps in transmission, diversity, and source survival.",
+    sourceNote:
+      "Built from YouTube English automatic captions downloaded with python3 -m yt_dlp on 2026-06-18. The upload is a hosted discussion rather than a formal debate; auto-caption spacing, speaker turns, names, and theological terms are lightly normalized, while analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "bodily resurrection of Christ",
+        context:
+          "Albrecht's central historical claim is that Paul and the earliest Christian materials already point to a tangible risen Christ, not merely visionary experience."
+      },
+      con: {
+        text: "we don't know who Luke's sources were",
+        context:
+          "Oppy's central caution is that ancient source gaps, later transmission, and selection effects limit how confidently modern readers can reconstruct the events."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Catholic resurrection case",
+        speaker: "William Albrecht",
+        color: "teal"
+      },
+      con: {
+        name: "Historical skepticism",
+        speaker: "Graham Oppy",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 78,
+      con: 81
+    },
+    sections: [
+      {
+        title: "Paul and Bodily Resurrection",
+        timebox: "04:00-16:30",
+        score: {
+          pro: 80,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:45",
+              role: "Pauline-text argument",
+              words:
+                "Albrecht argues that Paul's early letters, especially 1 Corinthians 15, indicate a tangible bodily resurrection and appearances like those to the other disciples.",
+              score: 80,
+              critique:
+                "Albrecht's opening move is strong because it begins with the earliest Christian materials rather than leaning first on later Gospel harmonization. His appeal to 1 Corinthians 15, bodily language, and Paul's comparison between his own appearance and the others gives the resurrection case a real textual base. The weakness is that the inference from Paul's wording to a fully bodily meeting remains contested, and Albrecht sometimes treats his Greek reading as if it should settle what he concedes is a divided scholarly issue. The score is strong because the argument is relevant, early, and text-focused, but capped because the key bridge from resurrection vocabulary to physical encounter needs more neutral support.",
+              tags: []
+            },
+            con: {
+              time: "05:20",
+              role: "Vision alternative",
+              words:
+                "Oppy says Paul may have had something more like a vision than a bodily meeting, and early expert disagreement makes the text diagnostically uncertain.",
+              score: 82,
+              critique:
+                "Oppy's vision alternative is disciplined because he does not accuse Paul of lying or deny that Paul had some kind of episode. He narrows the dispute to what the episode can show: a visionary experience, even one sincerely interpreted through Christian categories, is weak evidence for a bodily event years earlier. His admission that he does not read Greek is also epistemically honest, and he uses expert disagreement to justify caution rather than certainty. The weakness is that the alternative remains underexplained; stress, dreamlike states, or visions are possibilities, not a developed account of Paul's repeated appearance language. The score is high because the rebuttal blocks overclaiming without pretending to solve the psychology.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Sources and Transmission",
+        timebox: "16:30-23:30",
+        score: {
+          pro: 75,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "17:40",
+              role: "Manuscript confidence",
+              words:
+                "Albrecht grants Josephus interpolation concerns but says New Testament manuscripts do not show comparable text-breaking changes against the resurrection case.",
+              score: 75,
+              critique:
+                "Albrecht's manuscript reply is fair in one respect: he does not deny interpolation as a category, and he tries to distinguish Josephus from the New Testament textual tradition. That keeps the argument from becoming a naive claim that ancient Christian texts are immune to transmission problems. The weakness is that the reply shifts quickly from the absence of obvious text-breaking changes to confidence in the historical content. Textual stability and event reliability are related but not identical; a faithfully transmitted tradition can still preserve contested memories, theological interpretation, or source selection. The score is solid because the distinction matters, but lower because the argument does not fully answer Oppy's source-chain question.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The reply risks sliding between textual preservation and historical reliability, which are connected but distinct standards."
+                }
+              ]
+            },
+            con: {
+              time: "19:30",
+              role: "Transmission-gap caution",
+              words:
+                "Oppy presses the gap between alleged eyewitnesses and written Gospels, asking what sources Luke had, how they were selected, and how politics shaped inclusion.",
+              score: 83,
+              critique:
+                "Oppy's transmission-gap caution is one of the debate's cleanest historical moves. Instead of merely saying the Gospels are late, he asks what sources Luke had, what was in those sources, and how a historian's own aims might affect selection. That is exactly the right set of questions for ancient historiography. The comparison with Hadith is imperfect and Albrecht rightly resists treating the cases as equivalent, but Oppy's broader point survives: chains of transmission need scrutiny before they can carry a strong resurrection inference. The score is high because the objection targets the evidential route, not the conclusion by fiat, while leaving room for Albrecht to defend particular sources.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Orthodoxy Before Nicaea",
+        timebox: "23:30-39:30",
+        score: {
+          pro: 79,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "24:25",
+              role: "Hostile-witness case",
+              words:
+                "Albrecht argues that pagan and Jewish opponents identify Christians by markers matching Scripture: a killed Christ, worship, and beliefs unlike later Gnostic alternatives.",
+              score: 79,
+              critique:
+                "Albrecht's hostile-witness argument is useful because unfriendly sources can sometimes confirm public identity markers without sharing the community's theological agenda. If outsiders describe Christians as worshiping a crucified figure and those descriptions line up with scriptural and patristic patterns, that gives the continuity case something beyond internal assertion. The weakness is that hostile notices usually establish broad public perception, not the full content of orthodoxy. A reference to worship, crucifixion, or Christ-devotion does not by itself settle which later doctrinal package was already present, dominant, or directly traceable to Jesus. The score is strong because the evidence is relevant, but capped because the inference from markers to Catholic continuity remains too wide.",
+              tags: []
+            },
+            con: {
+              time: "30:45",
+              role: "Winner-history concern",
+              words:
+                "Oppy says it is implausibly neat that diversity appears after councils but not before, and preserved sources may reflect later selection by winners.",
+              score: 82,
+              critique:
+                "Oppy's winner-history concern is forceful because it identifies a real asymmetry in the record. If post-conciliar Christianity shows recurring diversity, suppression, and heresy disputes, it would be surprising if pre-conciliar communities were doctrinally tidy until councils suddenly created controversy. His selection-effect point also matters: survival of hostile or useful notices may tell us as much about later preservation as about the full ancient landscape. The weakness is that he presents the concern as a plausible hypothesis rather than a demonstrated counter-history. Albrecht can ask for actual rival evidence, not only expectations about lost sources. The score is high because the caution is methodologically serious, but not decisive because it remains partly evidentially thin.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The worry can lean on possible lost evidence of rival groups when the surviving record has not yet supplied it."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Hierarchy and Continuity",
+        timebox: "39:30-45:00",
+        score: {
+          pro: 78,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "40:00",
+              role: "Institutional-continuity claim",
+              words:
+                "Albrecht points to bishops, priests, deacons, and a messy but continuing hierarchy as evidence of the Catholic Church before Nicaea.",
+              score: 78,
+              critique:
+                "Albrecht's institutional-continuity claim is one of his better Catholic-specific moves because it does not rely only on isolated doctrines. By pointing to bishops, priests, deacons, disputes over authority, and a continuing visible structure, he offers a historical pattern that could plausibly connect early Christian communities with later Catholic self-understanding. The weakness is the word 'Catholic' doing too much work. A developing hierarchy can show institutional continuity without showing that Jesus founded the later Roman Catholic structure in the stronger apologetic sense. The argument also needs more concrete primary examples than the compressed exchange supplies. The score is solid because the route is relevant, but not higher because continuity and identity are not equivalent.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument risks treating institutional continuity and full later Catholic identity as the same kind of claim."
+                }
+              ]
+            },
+            con: {
+              time: "41:35",
+              role: "Early-diversity reminder",
+              words:
+                "Oppy says early Christians were still a Jewish sect from the Roman standpoint, and Syriac or Eastern church cases complicate a simple Roman continuity story.",
+              score: 77,
+              critique:
+                "Oppy's early-diversity reminder is helpful because it resists reading the later map of Christianity straight back into the first century. Calling early Christians a Jewish sect from the Roman standpoint and raising Syriac or Eastern church differences both complicate a clean Roman-continuity narrative. The strength is comparative: it asks whether Albrecht's evidence uniquely identifies Catholicism or only a broader apostolic Christianity. The weakness is that Oppy repeatedly admits he does not know enough about the relevant history, and his Syriac example becomes a prompt rather than a developed objection. The score is solid because the caution is directionally right, but limited because the countercase is sketched rather than argued.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Schism and Religious Families",
+        timebox: "45:00-58:30",
+        score: {
+          pro: 76,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "45:25",
+              role: "Reformation-as-new-religion",
+              words:
+                "Albrecht argues the Reformation became more than a schism because Protestant systems shed doctrines while apostolic churches retained deeper continuity.",
+              score: 76,
+              critique:
+                "Albrecht's Reformation argument is clear and internally consistent from a Catholic standpoint. He distinguishes reform movements that sought moral or clerical repair from Protestant systems that rejected doctrines such as purgatory, Marian commitments, and sacramental continuity. That helps explain why he treats Catholic, Eastern Orthodox, and Syriac traditions as nearer relatives than evangelical Protestantism. The weakness is that 'different religion' is a heavy classification claim, not just a judgment about doctrinal distance. Shared scripture, creeds, Christology, and historical inheritance remain substantial, and Albrecht's standard for individuation is not made explicit. The score is solid because the doctrinal contrast is real, but lower because the taxonomy needs a clearer rule.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The classification gains force from an undefined threshold for when doctrinal divergence becomes a different religion."
+                }
+              ]
+            },
+            con: {
+              time: "54:40",
+              role: "Family-resemblance taxonomy",
+              words:
+                "Oppy says individuating religions is tricky: Christianity can include Protestant branches, while Abrahamic and Eastern groupings show broader family resemblances.",
+              score: 80,
+              critique:
+                "Oppy's taxonomy reply is modest but clarifying. He does not deny that Catholicism and Protestantism differ deeply; he asks what makes differences large enough to count as separate religions rather than branches within Christianity. The family-resemblance examples are useful: Christianity, Judaism, Islam, Hinduism, Buddhism, and Sikh traditions can be grouped at different levels depending on the explanatory purpose. That exposes the need for a classification rule before Albrecht's 'different religion' claim can do argumentative work. The weakness is that Oppy stays abstract and does not engage Catholic sacramental or authority claims in much depth. The score is strong because it improves conceptual clarity, but not decisive because taxonomy alone cannot settle ecclesiology.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 78,
+        strengths: [
+          "Albrecht kept the resurrection discussion anchored in early materials, especially Paul, rather than relying only on later theological synthesis.",
+          "He made the Catholic continuity case concrete by appealing to hostile witnesses, patristic identity markers, hierarchy, and apostolic-church comparisons.",
+          "He repeatedly acknowledged contested scholarship and invited historical pushback, which kept the discussion charitable despite strong confessional commitments."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes moved from early Christian identity markers to later Catholic continuity without sufficiently distinguishing broad continuity from full institutional identity.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His reading of Paul and Luke often treated Catholic-compatible interpretations as more secure than the disputed source chains and scholarly disagreement allowed.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "Calling Protestantism a different religion carried more classificatory weight than his brief doctrinal comparisons could support.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 81,
+        strengths: [
+          "Oppy separated sincerity, visionary experience, textual transmission, and event reliability, keeping several often-blended evidential questions distinct.",
+          "He pressed the right historical-method questions about source chains, selection effects, council-era winners, and the survival of ancient testimony.",
+          "He was unusually candid about limits in Greek and early-church detail, which made his skepticism cautious rather than performatively certain."
+        ],
+        blunders: [
+          {
+            text:
+              "His alternative to bodily resurrection remained mostly a possibility space of visions, stress, and interpretation rather than a developed rival explanation.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "The selection-effect objection sometimes leaned on possible lost rival evidence without supplying much direct evidence for the missing pre-Nicene alternatives.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His later taxonomy of religious families clarified categories but did not directly answer Catholic authority and sacramental-continuity claims.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
