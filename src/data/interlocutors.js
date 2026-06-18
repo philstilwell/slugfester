@@ -197,6 +197,16 @@ export const interlocutorAvatars = [
     aliases: ["Nathan Hawkins"]
   },
   {
+    name: "Josh Rasmussen",
+    src: `${avatarBasePath}/josh-rasmussen.webp`,
+    aliases: [
+      "Josh Rasmussen",
+      "Joshua Rasmussen",
+      "Joshua L. Rasmussen",
+      "Joshua L Rasmussen"
+    ]
+  },
+  {
     name: "Joe Folley",
     src: `${avatarBasePath}/joe-folley.webp`,
     aliases: ["Joe Folley", "Joseph Folley"]

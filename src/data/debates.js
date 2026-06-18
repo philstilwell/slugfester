@@ -26342,5 +26342,358 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "rasmussen-clifton-contingency-argument-2019",
+    number: "75",
+    title: "Josh Rasmussen vs Scott Clifton: Is the Contingency Argument Persuasive?",
+    label: "Contingency and necessary foundation",
+    date: "2026-06-18",
+    duration: "1 hr 24 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=WgiWkE1lhII",
+    motion:
+      "Is the argument from contingency persuasive in moving from contingent reality to a necessary or automatically actual foundation?",
+    summary:
+      "Rasmussen presents contingency reasoning as a careful route to a robust foundation; Clifton grants much of the setup while resisting the leap to necessary concrete being.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-18, plus YouTube chapter timing. The video is a hosted discussion rather than a formal debate; auto-caption spacing, speaker turns, names, and philosophical terms are lightly normalized, while analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "best explanation of contingent things",
+        context:
+          "Rasmussen frames the argument as an inference from dependent, not-automatically-actual reality to a foundational explanatory source."
+      },
+      con: {
+        text: "why does God have to exist",
+        context:
+          "Clifton's central resistance is not to explanation in general, but to the move from explanatory foundation to necessary concrete being."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Necessary-foundation theist",
+        speaker: "Josh Rasmussen",
+        color: "teal"
+      },
+      con: {
+        name: "Brute-foundation skeptic",
+        speaker: "Scott Clifton",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 84,
+      con: 86
+    },
+    sections: [
+      {
+        title: "Argument and target",
+        timebox: "07:00-15:00",
+        score: {
+          pro: 84,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "07:10",
+              role: "Contingency opening",
+              words:
+                "Rasmussen presents the argument as an inference to the best explanation of contingent things, ending in an automatically actual foundation.",
+              score: 84,
+              critique:
+                "Rasmussen's opening is disciplined because he does not immediately jump to a named deity. He treats the contingency argument as a tool for investigating reality's explanatory structure: contingent things are not automatically actual, circular explanations fail, and a foundational source would provide the ultimate explanation. That makes the first stage less brittle than a slogan like 'everything has a cause.' The weakness is that the key norm, that the best explanation of all contingent things is better than no explanation, is asserted more than defended at this point. The score is strong because the argument is clear and carefully delimited, but not higher because the explanatory principle still carries the central burden.",
+              tags: []
+            },
+            con: {
+              time: "12:00",
+              role: "Necessary-being target",
+              words:
+                "Clifton asks what a necessary being is, how necessity differs from being uncaused, and why God would exist in all possible worlds.",
+              score: 84,
+              critique:
+                "Clifton's first move is exactly the right diagnostic question. Rather than rejecting the whole argument, he grants that ordinary things and collections invite explanation, then asks where the move to necessary being occurs. His distinction between being uncaused, existing at every temporal point, and existing in all possible worlds prevents the discussion from trading on a vague term. The limitation is that he frames much of the resistance as his own difficulty with the concept rather than as a fully developed counterargument. Still, the question sets the agenda for the whole exchange. It earns a strong score because it locates the live inferential step instead of contesting peripheral details.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Grades of necessity",
+        timebox: "15:00-24:00",
+        score: {
+          pro: 85,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "17:50",
+              role: "Necessity dial",
+              words:
+                "Rasmussen treats necessity as a dial, distinguishing certainty, epistemic possibility, factual necessity, and stronger modal necessity.",
+              score: 85,
+              critique:
+                "Rasmussen's necessity dial is a helpful repair to a notoriously slippery term. By distinguishing certainty, epistemic possibility, factual necessity, and stronger modal necessity, he avoids forcing Clifton to accept the strongest possible claim at the start. He also concedes that God's existence need not be epistemically certain to everyone, which lowers the temperature and clarifies the target. The strongest feature is methodological: he searches for overlap before defending a final conclusion. The weakness is that a dial can also postpone the hard question of where the argument actually lands. The score is high because the distinctions are clarifying, but not decisive until the relevant setting of the dial is justified.",
+              tags: []
+            },
+            con: {
+              time: "15:15",
+              role: "Brute-God alternative",
+              words:
+                "Clifton says that if he were a theist, he would treat God as brute or factually necessary, not necessary in every possible world.",
+              score: 86,
+              critique:
+                "Clifton's brute-God alternative is strong because it shows that the objection is partly internal to theism. He is not saying Christianity cannot have an ultimate God; he is asking why that God must have the stronger modal profile Rasmussen wants. The Swinburne-style option, God exists without coming to be or ceasing to be but not in every possible world, lets Clifton grant a great deal while still resisting necessity. The weakness is that his repeated appeal to what he can conceive risks giving conceivability too much modal authority. Even so, the move is sharp because it separates ultimacy from necessity and makes Rasmussen earn the stronger conclusion.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "Clifton's conceivability judgment is relevant, but it can overrate what seems coherent from his own modal perspective."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Explanatory demand",
+        timebox: "24:00-36:30",
+        score: {
+          pro: 84,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "24:20",
+              role: "Humble inference",
+              words:
+                "Rasmussen says ordinary and scientific reasoning prefer available explanations to no explanation, so contingent reality should be tested the same way.",
+              score: 84,
+              critique:
+                "Rasmussen's explanatory-demand argument is strong because it links metaphysics to ordinary and scientific reasoning. Genetic similarity, dents, cups, and contingent universes are not identical cases, but they share a pattern: when something could have failed to be actual, the mind reasonably asks why it is actual. Rasmussen also adds appropriate humility, saying conceivability is not the same as probability and that ultimate reality should be approached with curiosity. The weakness is transfer risk. The explanatory norms that work within the universe may not scale cleanly to the totality of contingent reality. The score is strong because the analogy is relevant, but capped because the totality case still needs defense.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The move from familiar explanatory cases to all contingent reality may underweight the change in explanatory scale."
+                }
+              ]
+            },
+            con: {
+              time: "27:30",
+              role: "Necessary-explanation challenge",
+              words:
+                "Clifton asks how necessary existence explains anything: if God explains the world, what explains God's existence?",
+              score: 86,
+              critique:
+                "Clifton's necessary-explanation challenge presses the most important explanatory gap. He accepts the hunger for explanation, then asks why saying 'necessary' is not just a terminus marker rather than an explanation. The dent and shopping-cart analogy gives the worry a concrete shape: an explanation should illuminate why the explanandum obtains, not merely restate that it could not be otherwise. This is a strong burden-shifting move because it asks Rasmussen to explain why necessary existence is explanatorily superior to brute existence. The weakness is that Clifton may be demanding the wrong kind of explanation at the ultimate level. Still, the objection is precise and central, so it earns the higher local score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Bruteness and contingency",
+        timebox: "36:30-45:00",
+        score: {
+          pro: 83,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "37:00",
+              role: "Qualified ultimate",
+              words:
+                "Rasmussen says everyone accepts some ultimate bruteness, so the question is what kind of reality is most qualified to be ultimate.",
+              score: 83,
+              critique:
+                "Rasmussen's qualified-ultimate move is useful because it prevents an easy atheist escape into total explanation. If the totality of reality cannot have an outside explanation, then everyone must tolerate some stopping point. That shifts the debate from 'brute or not brute' to which kind of stopping point is least costly. His claim that brute contingency is worse than brute necessity has real intuitive force, especially if contingent things are precisely what call for explanation. The weakness is that 'contingent' is doing several jobs: dependent, able not to exist, and not necessary in all possible worlds. Without sharper control of those meanings, the comparison risks favoring necessity by definition.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The contrast between brute contingency and brute necessity depends on keeping dependence and modal non-necessity distinct."
+                }
+              ]
+            },
+            con: {
+              time: "43:00",
+              role: "Contingency ambiguity",
+              words:
+                "Clifton worries that contingent can mean dependence, or merely failure to exist in every possible world, and those are different claims.",
+              score: 87,
+              critique:
+                "Clifton's ambiguity objection is one of his strongest technical points. He does not deny that dependent things need explanation; he denies that failing to exist in every possible world automatically means dependence. That lets him imagine God as independent yet not necessary in the strongest modal sense. The distinction matters because Rasmussen's argument needs a bridge from explanatory dependence to modal necessity, and Clifton shows those concepts can come apart. The limitation is that Clifton has not yet supplied a positive account of what makes possible worlds genuine possibilities rather than merely conceivable descriptions. Still, the objection lands because it forces the pro side to specify the modal target more carefully.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Logic and propositions",
+        timebox: "45:00-1:00:30",
+        score: {
+          pro: 85,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "45:30",
+              role: "Logical landscape",
+              words:
+                "Rasmussen argues that true logical thoughts correspond to a logical reality independent of minds, and that necessity may belong to the foundation.",
+              score: 85,
+              critique:
+                "Rasmussen's logical-landscape argument is imaginative and philosophically serious. By moving from true logical thoughts to what they correspond to, he gives abstract necessity a role in the foundation rather than treating logic as a human convention. The law of identity and propositions about nonexistent unicorns are good examples because they seem true without depending on material objects or individual minds. This helps Rasmussen answer Clifton's worry that no necessity is intelligible. The weakness is the bridge from abstract necessity to a concrete foundation with causal powers. Showing that propositions or logical rules are necessary does not by itself show that a necessary mind exists. The score is high because the move advances the discussion, but the bridge remains incomplete.",
+              tags: []
+            },
+            con: {
+              time: "48:30",
+              role: "Language-and-concrete gap",
+              words:
+                "Clifton says logic may regulate statements rather than bind reality, and abstract necessities differ from a concrete necessary God.",
+              score: 86,
+              critique:
+                "Clifton's language-and-concrete gap reply is effective because it separates two issues Rasmussen tends to bring together. First, logic may be a discipline governing statements and inference rather than an ontological furniture item. Second, even if propositions exist necessarily, abstract necessity does not automatically transfer to a concrete being with causal powers. Clifton's later concession that Malpass nearly moved him on necessary propositions makes the reply stronger, not weaker, because he accepts the abstract point while preserving the central objection. The weakness is that his statement-centered view of logic is underdeveloped and may struggle to explain mind-independent truth. Still, the distinction between abstract and concrete necessity is a major unresolved burden.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Supreme foundation",
+        timebox: "1:00:30-1:24:06",
+        score: {
+          pro: 84,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:01:45",
+              role: "Supreme-foundation prediction",
+              words:
+                "Rasmussen says a supreme foundation would predict perfect reasoning principles, and hidden contradictions may require inferential discovery.",
+              score: 84,
+              critique:
+                "Rasmussen's supreme-foundation move is the closest he gets to stage two. If the foundation has a supreme nature, then perfect reasoning, knowledge, and logical structure are not arbitrary additions; they are predicted by the hypothesis. His 'nothing exists' argument also usefully shows how contradictions can be hidden until teased out by inference, so merely imagining a Godless world is not decisive. The strength is that he offers a path from foundation to mind-like structure. The weakness is that 'supreme nature' arrives as a large hypothesis whose independent support is only sketched. The score is strong because it is a plausible research program, but it does not yet close Clifton's concrete-God gap.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The supreme-foundation hypothesis benefits from flexible content that is not fully specified in the exchange."
+                }
+              ]
+            },
+            con: {
+              time: "1:13:00",
+              role: "Universe-parity reply",
+              words:
+                "Clifton says that if God may be a brute foundation, he does not see why a universe-like foundation cannot fill the same role.",
+              score: 86,
+              critique:
+                "Clifton's universe-parity reply gives his skepticism a clear final shape. He can grant a foundation, grant factual necessity, and even grant nonmaterial concrete entities, while still asking why the foundation must be necessary in Rasmussen's stronger sense or personal in a God-like sense. That is a disciplined concession strategy: he narrows the dispute instead of denying everything. The weakness is that the alternative remains mostly promissory. Saying a universe-like foundation could be brute does not explain why it is as qualified as Rasmussen's conceptual or mind-like foundation. Still, Clifton has successfully kept the central burden on the pro side: necessity and personhood need additional argument.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 84,
+        strengths: [
+          "Rasmussen presented the contingency argument as a staged investigation rather than a forced leap to God, which made the first-stage foundation case easier to evaluate.",
+          "His distinctions among kinds of necessity, dependence, explanation, and conceivability kept the discussion precise and charitable.",
+          "His logical-landscape and proposition arguments offered a serious route from abstract necessity toward a more robust foundation."
+        ],
+        blunders: [
+          {
+            text:
+              "The argument sometimes moved between dependence, contingency, and possible-world necessity without fully securing the bridges among those notions.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "The move from necessary abstract truths to a concrete supreme mind needed more support than the discussion had time to provide.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His appeal to explanatory hunger can overextend ordinary and scientific explanation norms to reality as a whole.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 86,
+        strengths: [
+          "Clifton asked unusually productive questions, repeatedly granting what he could while isolating the precise move from explanatory foundation to necessary concrete being.",
+          "His distinctions between factual necessity, uncaused existence, possible-world necessity, dependence, and brute fact forced the pro case to become sharper.",
+          "He accepted progress on abstract necessity while keeping pressure on the still-unfinished bridge to a personal or God-like foundation."
+        ],
+        blunders: [
+          {
+            text:
+              "His central resistance sometimes relied on what he could conceive or fail to conceive, which is useful evidence but not a modal verdict.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          },
+          {
+            text:
+              "His brute universe or brute foundation alternative was less developed than his critique of Rasmussen's necessary foundation.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His statement-focused account of logic was suggestive, but it did not fully explain mind-independent logical truth.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
