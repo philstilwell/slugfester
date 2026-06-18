@@ -27730,5 +27730,350 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "swinburne-oppy-theism-probability-2022",
+    number: "79",
+    title: "Richard Swinburne vs Graham Oppy: Is Theism Probable?",
+    label: "Probability of theism",
+    date: "2026-06-18",
+    duration: "1 hr 32 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=hKw3d3qOYSo",
+    motion:
+      "Is theism more probable than naturalism when judged by simplicity, explanatory scope, fine-tuning, consciousness, and modality?",
+    summary:
+      "Swinburne argues that a simple omnipotent God best explains the universe, laws, life, and consciousness; Oppy argues that naturalistic theory comparison can be simpler and no less explanatory.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-18, plus YouTube chapter timing. Auto-caption spacing, speaker turns, names, and philosophical terms are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "the best and most probably true explanation",
+        context:
+          "Swinburne frames theism as an explanatory hypothesis over the largest features of reality, judged by simplicity and expectedness."
+      },
+      con: {
+        text: "the naturalistic view is more virtuous",
+        context:
+          "Oppy's central reply is comparative: a fully articulated naturalism may explain the same data with fewer or better commitments."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Probabilistic theism",
+        speaker: "Richard Swinburne",
+        color: "teal"
+      },
+      con: {
+        name: "Comparative naturalism",
+        speaker: "Graham Oppy",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 82,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Cumulative Explanation",
+        timebox: "04:19-21:32",
+        score: {
+          pro: 84,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:19",
+              role: "Opening cumulative case",
+              words:
+                "Swinburne says God best explains a large law-governed universe, human bodies, consciousness, moral choice, and the simplicity of one omnipotent source.",
+              score: 84,
+              critique:
+                "Swinburne's opening case is strong because it states an explicit explanatory standard before applying it. He names the data, gives criteria of likelihood and simplicity, and then argues that one omnipotent personal source explains a large ordered universe, embodied agents, consciousness, and moral freedom. The forensic analogy makes the Bayesian structure accessible without pretending to assign exact numbers. The weakness is that the case quickly compresses several controversial steps: that human moral freedom is the target datum, that God is simple in the relevant theory-choice sense, and that a good God would probably create beings like us. The score is high because the architecture is clear, but capped because several large priors are asserted rather than defended.",
+              tags: []
+            },
+            con: {
+              time: "16:36",
+              role: "Ambition challenge",
+              words:
+                "Oppy asks whether the argument makes theism merely rationally permissible or rationally obligatory, then invokes Mackie's opposite assessment of similar data.",
+              score: 83,
+              critique:
+                "Oppy's ambition challenge is sharp because it asks exactly what the argument is supposed to achieve. If Swinburne claims only that theism is rationally permissible, the conclusion is modest. If he claims rational obligation for everyone, Mackie's contrary assessment of similar evidence becomes a serious datum about philosophical disagreement. This does not refute Swinburne's argument, but it forces him to distinguish objective evidential standards from reasonable disagreement among competent thinkers. The weakness is that Oppy initially frames the issue partly through Mackie's authority rather than through a fully worked rival calculation. Still, the move is dialectically strong because it presses burden, audience, and rational disagreement before the fine details begin.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Fine-Tuning and Judgment",
+        timebox: "21:32-33:40",
+        score: {
+          pro: 81,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "25:50",
+              role: "Simple-formulation defense",
+              words:
+                "Swinburne says fine-tuning should use the simplest formulation of the law, because simplicity is evidence of the right physical description.",
+              score: 81,
+              critique:
+                "Swinburne's response to the fine-tuning measure problem is technically relevant. He recognizes that changing parameterization can make a life-permitting range look larger or smaller, then appeals to the simplest successful formulation of the law as the privileged measure. That is a serious attempt to avoid arbitrary probability spaces and connects fine-tuning to ordinary scientific theory choice. The weakness is that the move depends heavily on simplicity doing two jobs at once: selecting the physical description and then supporting the prior probability calculation. If the dispute is partly about how simplicity should be weighed, the reply can feel circular. The score is solidly strong because the answer is real, but not decisive.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The simplicity standard helps choose the probability measure while simplicity itself is one of the disputed explanatory virtues."
+                }
+              ]
+            },
+            con: {
+              time: "29:35",
+              role: "Fallibility pressure",
+              words:
+                "Oppy says the Mackie case shows that competent philosophers may weigh the same evidence differently without being globally irrational.",
+              score: 84,
+              critique:
+                "Oppy's fallibility pressure improves the debate by separating disagreement from irrationality. He gets Swinburne to acknowledge that both sides can make mistakes, that philosophical judgment involves disputed weighting, and that cosmology itself has seen rational disagreement under shared evidence. This matters because probabilistic theistic arguments often sound more compulsory than their contested premises justify. The weakness is that reasonable disagreement is not a substitute for adjudication. At some point Oppy must still show why Mackie's or his own weighting is better, not merely possible. The score is high because the move disciplines Swinburne's ambition and blocks overclaiming, but it remains methodological rather than a direct counter-probability.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Bayesian Rival Theories",
+        timebox: "33:40-45:58",
+        score: {
+          pro: 82,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "34:45",
+              role: "Rival-hypothesis reply",
+              words:
+                "Swinburne says his method already compares rivals: polytheism, weak gods, and ultimate laws are less simple than one omnipotent personal source.",
+              score: 82,
+              critique:
+                "Swinburne's rival-hypothesis reply is important because it answers Oppy's request for odds-style comparison rather than isolated confirmation. He explicitly contrasts theism with polytheism, weaker gods, and naturalism, then argues that ultimate laws or boundary conditions do not explain why matter behaves uniformly or leads to embodied agents. The strength is that he does not merely ask whether God predicts the data; he tries to show that competitors predict it worse or at greater complexity. The weakness is that his critique of laws as noncausal may not touch powers-based naturalism, where dispositions rather than abstract laws do the explanatory work. The score is strong because the comparative structure is present, but the target naturalism is partly underdescribed.",
+              tags: []
+            },
+            con: {
+              time: "39:35",
+              role: "Toy naturalist model",
+              words:
+                "Oppy sketches a simple initial state with mass, temperature, and an evolving power that produces particles without adding God to the ontology.",
+              score: 86,
+              critique:
+                "Oppy's toy naturalist model is one of the debate's strongest moves. By positing a simple initial state with a simple power to evolve, he gives Swinburne an actual comparator rather than a vague 'nature did it' slogan. The model directly targets Swinburne's claim that naturalism must explain innumerable particles with identical powers: if particles arise from one specified initial disposition, their common properties are not mysterious in the same way. Oppy also marks the model as a toy, which keeps the claim appropriately modest. The weakness is exactly that modesty: current cosmology may force a more complex story. Still, the move shifts the debate from assertion to genuine theory comparison.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Modality and Human Significance",
+        timebox: "45:58-55:15",
+        score: {
+          pro: 80,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "49:05",
+              role: "Goodness explanation",
+              words:
+                "Swinburne says God has reason to create morally free beings because they realize a kind of good that God himself cannot exercise.",
+              score: 80,
+              critique:
+                "Swinburne's goodness explanation gives the theistic hypothesis more content than bare design. His claim is not just that God could create embodied agents, but that morally free beings realize a valuable good: choosing between good and evil in a way God, as perfectly good, does not. This helps explain why a creator might aim at agents rather than merely stars or simple organisms. The weakness is anthropocentric pressure. Oppy's beetle-and-star objection exposes how quickly the data set is narrowed to what humans value about themselves. The score remains strong because Swinburne offers a real theistic reason, but it is capped because the human-centered selection of target phenomena remains contestable.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "The argument risks treating human moral agency as explanatorily central partly because it is the good most salient to us."
+                }
+              ]
+            },
+            con: {
+              time: "45:45",
+              role: "Modal necessity account",
+              words:
+                "Oppy says the actual world's initial state and laws may be necessary on the best account of modality, so their being this way is explained.",
+              score: 85,
+              critique:
+                "Oppy's modal necessity account is a powerful answer to the charge that naturalism leaves laws and initial conditions unexplained. He proposes that possible worlds should not multiply beyond what is needed to characterize actuality, so all worlds share the actual initial history and diverge only through chance. If that account is right, the initial state and laws are not brute coincidences but metaphysically necessary. The strength is that it gives naturalism a principled stopping point rather than a shrug. The weakness is that the modal theory is doing enormous work and is only sketched. Many listeners will hear 'it had to be' as stipulation unless the independent case for Oppy's modality is supplied.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Consciousness and Identity",
+        timebox: "55:15-1:05:57",
+        score: {
+          pro: 78,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "56:35",
+              role: "Anti-identity argument",
+              words:
+                "Swinburne says mental life cannot be identical with physical matter because first-person access differs categorically from public physical properties.",
+              score: 78,
+              critique:
+                "Swinburne's anti-identity argument identifies a serious datum for philosophy of mind: first-person access to thoughts, feelings, intentions, and desires differs from third-person measurement of brains. That difference is relevant to whether consciousness fits comfortably inside a physicalist theory, and it supports his claim that consciousness may strengthen theism. The weakness is that he moves too quickly from epistemic asymmetry to ontological difference. Identity theorists can say that only the person in a physical state can know what that state is like from the inside, without adding a nonphysical substance. The score is solid because the challenge is real, but lower because the inference from privacy to dualism is underargued.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument can blur a difference in how a state is known with a difference in what kind of state it is."
+                }
+              ]
+            },
+            con: {
+              time: "55:35",
+              role: "Identity-theory defense",
+              words:
+                "Oppy says mind-brain identity is simple and that first-person limits follow from occupying different physical states, not from dualism.",
+              score: 84,
+              critique:
+                "Oppy's identity-theory defense is strong because it directly answers the form of Swinburne's objection. He grants that no one else can occupy my visual field or know my experiences in the same first-person way, but argues that this is exactly what a physical-state identity view predicts: different bodies and brains cannot be in the same token state. He also usefully resists fanciful brain-bisection and conjoined-twin examples when they outrun the evidence. The limitation is that Oppy does not solve the hard problem of consciousness; he mainly blocks Swinburne's privacy inference. Still, the local rebuttal is strong because it shows why epistemic privacy does not automatically defeat physicalism.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Priors and Simplicity",
+        timebox: "1:05:57-1:31:45",
+        score: {
+          pro: 83,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:11:40",
+              role: "Objective-prior defense",
+              words:
+                "Swinburne says scientific priors are objective enough for comparison: fewer entities, fewer properties, and simpler mathematical relations raise prior probability.",
+              score: 83,
+              critique:
+                "Swinburne's objective-prior defense is one of his more precise methodological answers. He admits that exact priors are unavailable, then argues that comparative priors can still be objective enough because science routinely favors fewer entities, fewer kinds, fewer properties, and simpler mathematical relations. This is a plausible way to make Bayesian theism less numerically theatrical and more like theory choice. The weakness is that the application to God remains disputed: one omnipotent person may be syntactically simple, yet extremely rich in powers, knowledge, and intentions. The score is high because the method is coherent, but not higher because the simplicity metric still favors his preferred description of the hypothesis.",
+              tags: []
+            },
+            con: {
+              time: "1:27:35",
+              role: "Ontological-simplicity objection",
+              words:
+                "Oppy presses that naturalism seems simpler because it accepts the natural world without adding God unless God supplies unmatched explanatory benefit.",
+              score: 82,
+              critique:
+                "Oppy's final simplicity objection is concise and well aimed. If both theories include a natural world of some sort, and theism adds God with distinctive powers and intentions, the burden is on Swinburne to show that the added entity buys enough explanation to reduce total complexity. That is the right pressure point, and it connects back to the whole discussion. The weakness is that Oppy does not add much new argument at the end; Swinburne's reply that science often adds unobservable entities for explanatory unification is also fair. The score is strong because the objection keeps the comparative burden visible, but it does not close the case by itself.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 82,
+        strengths: [
+          "Swinburne gave a clear cumulative argument with explicit criteria of expectedness, contrastive probability, and simplicity.",
+          "He repeatedly connected theism to live explanatory targets: simple laws, fine-tuning, embodied agents, consciousness, moral freedom, and objective priors.",
+          "He answered many objections directly rather than retreating to mystery, especially on rival hypotheses, priors, and why morally free beings would matter."
+        ],
+        blunders: [
+          {
+            text:
+              "His simplicity standard often favored the theistic description only after loading enormous powers, knowledge, and goodness into one supposedly simple entity.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His human-centered explanation sometimes treated moral agents as the obvious target datum while underplaying stars, animals, failed worlds, and alternative goods.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          },
+          {
+            text:
+              "His anti-physicalist consciousness argument moved too quickly from first-person privacy to the falsity of mind-brain identity.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Oppy kept the debate comparative, repeatedly asking whether a developed naturalism explains the same data with fewer or better commitments.",
+          "His toy initial-state model and modal necessity account gave naturalism positive structure rather than leaving it as mere denial.",
+          "He pressed the most vulnerable interfaces in Swinburne's case: rational obligation, parameter choice, human-centered data selection, and consciousness."
+        ],
+        blunders: [
+          {
+            text:
+              "The toy naturalist model was useful but explicitly speculative, so it could not yet carry the full explanatory weight he wanted it to carry.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His modal necessity account risked sounding like an explanatory stop sign unless the independent case for that account of possibility is supplied.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His physicalist reply blocked Swinburne's privacy inference but did not fully address why consciousness should be expected from matter at all.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
