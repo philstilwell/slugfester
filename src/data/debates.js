@@ -28075,5 +28075,342 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "rasmussen-schmid-argument-from-limits-2023",
+    number: "80",
+    title: "Josh Rasmussen vs Joe Schmid: The Argument from Limits",
+    label: "Argument from limits",
+    date: "2026-06-18",
+    duration: "1 hr 58 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=Lt1wN10yOY4",
+    motion:
+      "Does the argument from arbitrary limits successfully move from a fundamental reality or necessary foundation toward God-like perfection?",
+    summary:
+      "Rasmussen treats arbitrary limits in fundamental reality as theoretical costs pointing toward a perfect or quasi-perfect foundation; Schmid argues that the move remains dependent on wider theory comparison and contested bridge premises.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-18. The upload is a philosophical dialogue rather than a formal debate; it has no topical chapter map, so section ranges are inferred from transcript flow. Auto-caption spacing, speaker turns, names, and philosophical terms are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "reduces arbitrariness as far",
+        context:
+          "Rasmussen frames the argument as a philosophical tool for testing whether a proposed foundation contains unexplained limits."
+      },
+      con: {
+        text: "doesn't get us to theism",
+        context:
+          "Schmid's recurring point is that the limits argument needs further premises and broader theory comparison before it can establish a theistic conclusion."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Limits argument",
+        speaker: "Josh Rasmussen",
+        color: "teal"
+      },
+      con: {
+        name: "Agnostic theory comparison",
+        speaker: "Joe Schmid",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 84,
+      con: 88
+    },
+    sections: [
+      {
+        title: "Tool and Target",
+        timebox: "00:00-18:00",
+        score: {
+          pro: 84,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:00",
+              role: "Strategic framing",
+              words:
+                "Rasmussen presents the argument as a tool for probing fundamental reality, using a toy object's color, shape, and sides to illustrate limits that call for explanation.",
+              score: 84,
+              critique:
+                "Rasmussen's opening is strong because it avoids pretending that a stage-two theistic argument begins from nowhere. By treating the limits argument as a tool for testing hypotheses about fundamental reality, he lowers the rhetorical temperature and gives the audience a concrete diagnostic: arbitrary color, shape, size, or power seems to call for explanation. The prop example makes an abstract metaphysical norm visible. The weakness is that the analogy works best for ordinary objects inside experience, where we already expect deeper causes. Moving that expectation to ultimate reality still needs defense. The score is high because the frame is clear and modest, but capped because the central explanatory norm is only introduced.",
+              tags: []
+            },
+            con: {
+              time: "15:00",
+              role: "Definition discipline",
+              words:
+                "Schmid asks whether arbitrariness means unexplained, inexplicable, genuinely otherwise, seemingly otherwise, or conceivably otherwise before the argument proceeds.",
+              score: 86,
+              critique:
+                "Schmid's clarification move is excellent philosophy in miniature. Before attacking the conclusion, he asks which modal and explanatory concepts are actually in play: unexplained, inexplicable, genuinely otherwise, seemingly otherwise, or merely conceivable otherwise. That matters because each version supports a different argument and faces different objections. The strength is burden control. A vague appeal to arbitrariness can feel compelling while sliding between several meanings; Schmid prevents that slide early. The limitation is that this is diagnostic rather than a positive rival account of fundamental reality. Still, as an opening rebuttal it earns a strong score because it improves the precision of every later exchange and makes the scoring target more stable.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Limits and Theory Comparison",
+        timebox: "18:00-35:00",
+        score: {
+          pro: 83,
+          con: 89
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "19:00",
+              role: "Classical outline",
+              words:
+                "Rasmussen outlines a staged argument: assume a fundamental reality, hold that limits are explained, add some greatness, and infer that its greatness is not arbitrarily limited.",
+              score: 83,
+              critique:
+                "Rasmussen's formal outline is valuable because it exposes the moving parts instead of hiding them inside a dramatic conclusion. The premises separate the stage-one foundation, the principle that limits are explained, the claim that the foundation has some greatness, and the step from unlimited greatness to perfection. That structure makes the argument easier to test and keeps several later objections local. The weakness is also visible: the principle that limits are explained is doing enormous work, and non-theistic theories that accept fundamental limits will reject it at the point where the dispute matters most. The score is strong for transparency and dialectical usefulness, but lower than decisive because the crucial norm remains contested.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The limits principle can assume the disputed explanatory norm when used against theories whose basic commitments include fundamental limits."
+                }
+              ]
+            },
+            con: {
+              time: "26:00",
+              role: "Oppy-style reservation",
+              words:
+                "Schmid argues that if a non-theistic theory includes fundamental limits, the premise that all limits are explained falls out false and the dispute moves to overall theory comparison.",
+              score: 89,
+              critique:
+                "Schmid's Oppy-style reservation is one of the dialogue's strongest moves. He does not simply deny the limits principle; he explains why an argument whose premise is false by the lights of a rival theory will not by itself settle the rivalry. That shifts the question to comparative virtues: simplicity, explanatory power, independent motivation, and total theoretical cost. The move is especially strong because Schmid grants that fundamental limits might still count against a view, so he is not evading the pressure. The weakness is that theory comparison can become broad enough to postpone adjudication indefinitely. Even so, the local rebuttal is excellent because it blocks the argument from being oversold as a stand-alone proof.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Defaults and Parity",
+        timebox: "35:00-52:00",
+        score: {
+          pro: 86,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "36:00",
+              role: "Defeasible-cost reply",
+              words:
+                "Rasmussen accepts that independent motivation may offset a fundamental limit, while maintaining that color, shape, and degree differences still impose a serious theoretical cost.",
+              score: 86,
+              critique:
+                "Rasmussen's defeasible-cost reply is unusually fair. He accepts that a theory might contain fundamental limits yet win overall if other virtues supply enough independent motivation. That concession prevents the argument from becoming a blunt refusal to consider rival worldviews. He then preserves the point of the limits argument by treating unexplained parameters as a cost that a better theory should reduce if possible. The strength is calibration: the argument becomes a serious pressure test rather than a compulsory conversion device. The limitation is that the degree of cost remains intuitive. Colors and shapes feel arbitrary, but power, value, or metaphysical necessity are harder cases. The score is high because the concession makes the argument more credible.",
+              tags: []
+            },
+            con: {
+              time: "45:00",
+              role: "Parity challenge",
+              words:
+                "Schmid warns that similarly motivated causal or explanatory principles might create anti-theistic pressure, such as material-cause principles against creation ex nihilo.",
+              score: 87,
+              critique:
+                "Schmid's parity challenge is strong because it tests whether Rasmussen's explanatory norm is being applied symmetrically. If induction, intuition, and irrelevant-difference reasoning support limits needing explanation, similar reasoning might support rival principles that sit badly with traditional theism, such as material causality. That forces a symmetry breaker instead of allowing the theist to use only favorable explanatory principles. The weakness is that the example is programmatic. Schmid sketches the structure and leaves the detailed comparison of principles open, so the challenge undercuts confidence more than it supplies a completed anti-theistic argument. Still, the score is high because the objection identifies a genuine methodological hazard and keeps theory choice from being one-sided.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Greatness Bridge",
+        timebox: "52:00-1:15:00",
+        score: {
+          pro: 82,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "55:00",
+              role: "Value bridge",
+              words:
+                "Rasmussen says the foundation may have greatness through mind, through arguments for consciousness, morality, and reason, or through the power to produce value.",
+              score: 82,
+              critique:
+                "Rasmussen's value bridge is philosophically serious because he notices a real gap: an unlimited degree matters only if the foundation has some greatness to begin with. He tries to fill the gap by appealing to independent arguments for mind and to the thought that the power to produce value may itself be valuable. That broadens the argument beyond a bare syllogism. The weakness is that the bridge imports several contested projects at once: fine-tuning, consciousness, morality, mathematics, and a value-from-value principle. If those are needed, the limits argument is no longer carrying the load alone. The score is solid-strong because the answer is substantive, but capped because the added premises remain heavily disputed.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The value principle risks treating greatness as requiring a like-valued ground without yet showing why other emergent qualities need no similar rule."
+                }
+              ]
+            },
+            con: {
+              time: "53:00",
+              role: "Axiological gap",
+              words:
+                "Schmid argues that a foundational wave function, particle, singularity, or neutral basis need not obviously possess greatness unless mindedness or value is independently established.",
+              score: 88,
+              critique:
+                "Schmid's axiological gap objection lands because it targets the precise bridge from foundation to God-like perfection. A mindless foundation might be necessary, fundamental, or productive without being great in the relevant evaluative sense. By pressing this, Schmid prevents the argument from moving from no arbitrary limits to maximal greatness before the presence of greatness has been earned. His warning against triumphalist use is also dialectically healthy: the argument needs appended support, not just confident presentation. The weakness is that Schmid's neutral-foundation examples remain intuitive possibilities rather than a defended metaphysics of value. Still, the local point is very strong because it identifies a premise Rasmussen himself agrees needs independent filling.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Perfection and Trinity Pressure",
+        timebox: "1:20:00-1:39:00",
+        score: {
+          pro: 84,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:23:00",
+              role: "Structural refinement",
+              words:
+                "Rasmussen distinguishes a dialectical Trinity objection from a structural one, then proposes that grounding arbitrary properties may pass arbitrariness down to the ground.",
+              score: 84,
+              critique:
+                "Rasmussen's Trinity discussion improves the argument by facing a serious internal pressure rather than brushing it aside. The dialectical version asks whether Christians who accept a triune God can consistently dislike arbitrary limits; the structural version asks whether deeper explanations of divine limits let non-theists explain their limits too. Rasmussen's arbitrariness-inheritance principle is an interesting refinement because it tries to explain why merely grounding a specific limit may not remove its arbitrariness. The weakness is that the principle is new and delicate. It depends on controversial grounding assumptions and may pressure some theological models Rasmussen wants to leave open. The score is strong because the repair is creative, but not settled.",
+              tags: []
+            },
+            con: {
+              time: "1:20:00",
+              role: "Limit-with-explanation challenge",
+              words:
+                "Schmid argues that N's greatness could be non-maximal yet non-arbitrary if the limit is explained by necessity, essence, or a deeper metaphysical feature.",
+              score: 86,
+              critique:
+                "Schmid's limit-with-explanation challenge is well aimed because it separates being limited from being arbitrarily limited. If a non-maximal degree of greatness follows from what the foundation is, from metaphysical necessity, or from some deeper feature, the move from not-arbitrary to perfect is no longer automatic. That directly targets a late inferential step rather than replaying earlier disputes. The strength is conceptual economy: one does not have to deny every explanatory norm to resist the perfection conclusion. The limitation is that the suggested explanations are mostly placeholders. A possible essentialist explanation must still be made independently plausible. The score is high because the objection identifies a live gap, though it needs a developed model.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Model Costs and Close",
+        timebox: "1:39:00-1:56:00",
+        score: {
+          pro: 85,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:48:00",
+              role: "Triad conclusion",
+              words:
+                "Rasmussen closes with a triad of power, positivity, and persistence, suggesting a perfect or quasi-perfect foundation when arbitrary limits are removed as far as possible.",
+              score: 85,
+              critique:
+                "Rasmussen's closing triad gives the dialogue a constructive endpoint. Power, positivity, and persistence are intelligible dimensions on which arbitrary restriction would be surprising, and the softer quasi-perfect conclusion fits his repeated insistence that the argument is a tool rather than a coercive proof. That modesty is a virtue: it lets the argument guide investigation even where perfection in the strongest sense remains contested. The weakness is that the triad is programmatic. Each dimension contains unresolved debates about modality, value, time, and divine attributes, so the conclusion still depends on future clarification. The score is high because the synthesis is coherent and appropriately restrained, but it remains a research program.",
+              tags: []
+            },
+            con: {
+              time: "1:44:00",
+              role: "Model-cost warning",
+              words:
+                "Schmid warns that natural-theological arguments affect one's model of God, especially if grounding layers inside God threaten traditional divine simplicity.",
+              score: 87,
+              critique:
+                "Schmid's model-cost warning is a fitting final pressure point. He reminds the audience that successful natural theology is not separable from the model of God it yields. If answering the Trinity or limit objection requires deeper and shallower layers in God, classical divine simplicity may face costs that some theists cannot accept. This is not a cheap external objection; it asks believers to keep their arguments, doctrines, and explanatory standards in reflective equilibrium. The weakness is that it is conditional. Rasmussen need not be committed to the strict simplicity model, and alternative models may absorb the cost. Still, the score is high because Schmid identifies a downstream consequence many apologetic presentations ignore.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 84,
+        strengths: [
+          "Rasmussen framed the argument as a careful investigative tool, which made its modest and ambitious versions easier to distinguish.",
+          "He repeatedly conceded live objections, especially on theory comparison, bridge premises, Trinity pressure, and the limits of argument as a universal compulsion.",
+          "His refinements around value, arbitrariness inheritance, and the power-positivity-persistence triad showed real philosophical development during the dialogue."
+        ],
+        blunders: [
+          {
+            text:
+              "The principle that limits require explanation still risked assuming the very explanatory norm that rival theories with fundamental limits will reject.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "The greatness bridge leaned on a contested value-from-value principle without fully distinguishing value from other qualities that can emerge from unlike grounds.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "The responses to Trinity and perfection pressures remained exploratory, leaving major model-of-God costs unresolved for classical theists.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 88,
+        strengths: [
+          "Schmid kept the discussion precise by separating unexplained, inexplicable, conceivably otherwise, non-maximal, and non-arbitrary senses of limit.",
+          "He consistently moved the dispute into theory comparison, preventing any premise from being treated as dialectically neutral when rival views reject it.",
+          "His objections targeted the exact bridge points: greatness, value, perfection, parity principles, Trinity costs, and divine-simplicity consequences."
+        ],
+        blunders: [
+          {
+            text:
+              "His agnostic posture often mapped possible escape routes more fully than it developed a positive rival account of fundamental limits.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "Several counterexamples, such as neutral foundations, tropes, and emergent value analogies, showed conceivability more clearly than comparative probability.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "The repeated emphasis on defending listeners from overconfident apologetic use sometimes risked shifting attention from the argument's truth to its social handling.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
