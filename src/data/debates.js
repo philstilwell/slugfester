@@ -28749,5 +28749,334 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "bush-mcallister-moral-anti-realism-realism-2025",
+    number: "82",
+    title: "Lance Bush vs Derek McAllister: Moral Anti-Realism vs Realism",
+    label: "Metaethical anti-realism and realism",
+    date: "2026-06-21",
+    duration: "1 hr 27 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=ya02MOhQMV8",
+    motion:
+      "Does moral realism have a common-sense, historical, or semantic advantage over moral anti-realism?",
+    summary:
+      "Bush argues that realist-friendly claims about folk morality, common sense, and relativism often outrun the evidence; McAllister presses whether realism still has pre-philosophical, historical, and practical support.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-21. The upload is a cordial discussion rather than a formal debate; it has no topical chapter map, so section ranges are inferred from transcript flow. Auto-caption spacing, speaker turns, names, and philosophical terms are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "moral claims are not by definition subjective",
+        context:
+          "Bush rejects simplistic anti-realist slogans while arguing that realist semantic and common-sense assumptions need empirical and conceptual scrutiny."
+      },
+      con: {
+        text: "pre-philosophical common sense",
+        context:
+          "McAllister's central pressure is whether realism can appeal to reflective common sense, historical convergence, and ordinary moral experience."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Moral anti-realism",
+        speaker: "Lance Bush",
+        color: "teal"
+      },
+      con: {
+        name: "Moral realism",
+        speaker: "Derek McAllister",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 87,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Method and Semantics",
+        timebox: "00:00-14:00",
+        score: {
+          pro: 88,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "02:00",
+              role: "Semantic-method distinction",
+              words:
+                "Bush separates the empirical question of what ordinary speakers mean by moral claims from the metaphysical question of whether stance-independent moral facts exist.",
+              score: 88,
+              critique:
+                "Bush's opening distinction is excellent because it prevents two debates from being collapsed. He grants that surveying ordinary speakers would not decide whether objective moral facts exist, then explains why empirical work may still matter for claims about ordinary moral language, folk metaethics, and the alleged common-sense default. That is a careful division of labor between psychology, semantics, and metaphysics. The move also avoids a naive experimental-philosophy posture in which majority opinion settles truth. The weakness is that the distinction leaves his positive anti-realist metaphysics mostly offstage at first. Still, the score is high because he clarifies what his evidence can and cannot show before using it.",
+              tags: []
+            },
+            con: {
+              time: "05:00",
+              role: "Method tension",
+              words:
+                "McAllister asks whether Bush's empirical turn is unstable if ordinary people lack the categories needed to answer metaethical questions competently.",
+              score: 82,
+              critique:
+                "McAllister's method tension is a fair opening challenge. If Bush argues that non-philosophers often do not understand metaethical categories, then relying on their survey responses can look self-undermining. The strongest part of the question is that it presses the exact boundary between empirical psychology and philosophical interpretation. He also frames it charitably, as a request to iron out a tension rather than a gotcha. The weakness is that Bush's project is not to ask people to settle realism, but to evaluate claims philosophers make about what ordinary moral discourse means. Once that distinction is explicit, the objection loses some bite. The score is solid because the concern is relevant but answerable.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Common Sense and Burden",
+        timebox: "14:00-29:00",
+        score: {
+          pro: 86,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "15:00",
+              role: "Considered-judgment reply",
+              words:
+                "Bush says realists need not defend raw surface intuitions, but reflective judgments still face ambiguity, pragmatic effects, and competence problems.",
+              score: 86,
+              critique:
+                "Bush's considered-judgment reply is strong because it avoids a straw man. He does not say realists merely count unreflective street answers; he acknowledges the stronger claim that philosophers want competent, reflective, bias-filtered judgments. He then explains why that still leaves hard problems: pragmatic meanings, technical contexts, and the difficulty of separating semantic content from conversational implication. The baby-torture example makes the difference between technical anti-realist speech and ordinary moral alarm vivid without overclaiming. The weakness is that he remains skeptical of both folk and philosopher judgments, which can make his own semantic standard look elusive. Even so, the critique effectively weakens realism's default-burden rhetoric overall.",
+              tags: []
+            },
+            con: {
+              time: "14:00",
+              role: "Pre-philosophical appeal",
+              words:
+                "McAllister suggests that realists may appeal not to untutored street answers, but to a pre-philosophical common sense retained by reflective philosophers.",
+              score: 83,
+              critique:
+                "McAllister's pre-philosophical appeal improves the realist argument by moving away from crude polling. He asks whether philosophers can remember or reconstruct a prior common-sense seeming that moral claims present themselves as objective before technical theory enters. That is a better burden-shifting move than simply saying most people are realists. The weakness is epistemic access. Once someone has studied philosophy, memory of pre-philosophical commitments is vulnerable to reconstruction, confabulation, and present-theory projection. McAllister recognizes some of this, which makes the point more modest. The score is solid because the appeal identifies a possible datum, but it needs a more reliable method for retrieving it fairly clearly.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "The appeal can reconstruct a prior common-sense seeming in a way that favors the realist view now being defended."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Access to Folk Views",
+        timebox: "24:00-34:00",
+        score: {
+          pro: 87,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "24:00",
+              role: "Survey-access caution",
+              words:
+                "Bush argues that people may lack pre-theoretical metaethical views, and that memory, open questions, and forced-choice surveys all distort access.",
+              score: 87,
+              critique:
+                "Bush's survey-access caution is one of the discussion's best methodological passages. He distinguishes reliable memory in ordinary contexts from the much harder task of reconstructing past abstract commitments. He then names concrete survey problems: open answers may be hard to interpret, forced-choice questions impose categories, and dichotomies exclude hybrid or external views. This is not armchair skepticism; it explains why folk-metaethical evidence is unusually fragile. The weakness is that too much caution can make every empirical route look blocked, including routes Bush himself might want to use. Still, the score is high because the point is precise, balanced, and directly relevant to whether realism owns common sense.",
+              tags: []
+            },
+            con: {
+              time: "28:00",
+              role: "Behavioral-proxy suggestion",
+              words:
+                "McAllister asks whether child development, memory traces, or behavior might provide a middle path for detecting pre-philosophical moral commitments.",
+              score: 80,
+              critique:
+                "McAllister's behavioral-proxy suggestion is constructive. Rather than resting everything on explicit survey answers, he considers whether development, memory traces, or behavior might reveal commitments people cannot articulate. That is a sensible way to look for evidence when direct self-report is suspect. The weakness is that the proposal remains only a methodological possibility. It does not yet identify which behaviors would discriminate realism from anti-realism, relativism from objectivism, or normative confidence from metaphysical belief. Bush's pizza-preference example shows that behavior can reveal attitudes, but translating that into metaethical ontology is much harder. The score is solid because the suggestion is live, but it remains empirically under-specified.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Historical Convergence",
+        timebox: "34:00-55:00",
+        score: {
+          pro: 88,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "37:00",
+              role: "Anachronism warning",
+              words:
+                "Bush warns that modern metaethical categories may not map cleanly onto ancient traditions, translations, elite records, or ordinary historical speakers.",
+              score: 88,
+              critique:
+                "Bush's anachronism warning is very strong because it targets the hidden premises in historical-convergence arguments. He does not deny that older philosophers had views relevant to realism; he cautions that modern categories such as naturalist realism, non-naturalism, relativism, and metaethics itself are recent ways of carving the terrain. He also adds translation problems, elite-source bias, lost ordinary voices, and cross-cultural language differences. Those are exactly the evidential vulnerabilities a Lewis-style convergence argument must face. The weakness is that skepticism about historical classification can become hard to satisfy in either direction. Still, the score is high because Bush names concrete historical and linguistic obstacles rather than merely dismissing tradition.",
+              tags: []
+            },
+            con: {
+              time: "34:00",
+              role: "Lewis-style convergence",
+              words:
+                "McAllister invokes C. S. Lewis's claim that major religious and philosophical traditions disagreed normatively while sharing value objectivism.",
+              score: 84,
+              critique:
+                "McAllister's Lewis-style convergence argument is the realist side's strongest broad evidential move. If many independent traditions disagree about concrete duties while still treating value claims as answerable to reality, that would be more interesting than a modern poll. He also properly distinguishes normative disagreement from metaethical agreement, which is the right structure for the argument. The weakness is evidential burden. The discussion does not supply enough textual detail, translation controls, or independent-tradition analysis to establish that the convergence is genuinely metaethical rather than theological, legal, practical, or rhetorical. The score is strong because the argument is potentially important, but it remains a research agenda more than a demonstrated result.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Expert Consensus and Relativism",
+        timebox: "55:00-1:07:00",
+        score: {
+          pro: 89,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "55:00",
+              role: "Consensus caution",
+              words:
+                "Bush grants that philosopher consensus is some evidence, then warns against putting too much stock in current survey majorities or expert misunderstandings.",
+              score: 89,
+              critique:
+                "Bush's consensus caution is well calibrated. He does not commit the lazy move of saying expert opinion counts for nothing; he says it is some evidence, then asks how much. The comparison with philosopher atheism usefully prevents selective appeals to survey majorities. More importantly, he shifts the question from what experts answer to why they answer it and whether they understand rival positions. His examples of professional philosophers attacking only crude relativism are especially damaging because they show how consensus can coexist with poor target selection. The weakness is that the critique depends partly on his contested diagnosis of the field. Still, the score is very high because the burden discipline is excellent.",
+              tags: []
+            },
+            con: {
+              time: "59:00",
+              role: "Relativism-distinction challenge",
+              words:
+                "McAllister questions whether agent and appraiser relativism really differ ontologically, suggesting the distinction may only switch evaluative perspective.",
+              score: 80,
+              critique:
+                "McAllister's challenge to the agent-appraiser distinction is understandable and useful for readers who share his confusion. He presses whether the difference is genuinely metaethical or only a shift in whose perspective is being described, and he candidly acknowledges that he is still learning the landscape. That honesty gives Bush a chance to clarify an often-misused distinction. The weakness is that McAllister does not yet have the distinction fully in view. Treating it as merely epistemic misses Bush's claim that agent relativism carries external normative implications while appraiser relativism does not. The score is solid because the question is pedagogically valuable, but the objection is less strong than the clarification it prompts.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Agent and Appraiser Views",
+        timebox: "1:00:00-1:26:00",
+        score: {
+          pro: 88,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:01:00",
+              role: "Relativism taxonomy",
+              words:
+                "Bush explains that agent relativism can impose others' standards as binding, while appraiser relativism reduces moral claims to appraiser-centered descriptive claims.",
+              score: 88,
+              critique:
+                "Bush's relativism taxonomy is the clearest substantive payoff of the exchange. He shows why agent relativism can look oddly realist-like: another culture's standards may become binding on you. Appraiser relativism, by contrast, explains moral claims from the appraiser's evaluative standpoint and does not require deference to human sacrifice, wallet theft, or another culture's standards. That distinction directly answers common realist caricatures that relativists must approve whatever anyone else approves. The weakness is that appraiser relativism can begin to sound semantically thin, as Bush himself notes about analytic metaethics. Still, the score is high because the taxonomy is precise, practically relevant, and responsive to McAllister's concern.",
+              tags: []
+            },
+            con: {
+              time: "1:17:00",
+              role: "Perspective-collapse objection",
+              words:
+                "McAllister argues that agent relativists still filter other cultures through their own understanding, so appraiser and agent views may collapse from another angle.",
+              score: 81,
+              critique:
+                "McAllister's perspective-collapse objection is a reasonable second attempt. Even an agent relativist must interpret another culture through their own cognitive access, so there is an appraiser-like element in any application of the view. That raises a legitimate epistemic issue about how anyone knows which standards bind or describe whom. The weakness is that Bush can absorb this as an access problem shared by all views, including realism. It does not erase the semantic and normative difference between agent and appraiser relativism. The score is solid because the objection identifies a real interpretive layer, but it does not show the views collapse in the way McAllister needs.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 87,
+        strengths: [
+          "Bush kept the semantic, psychological, metaphysical, and normative questions distinct, which made his anti-realist critique unusually clean.",
+          "He repeatedly granted the strongest realist-friendly version before criticizing it, especially on considered judgments, historical convergence, and expert consensus.",
+          "His agent/appraiser relativism taxonomy directly answered a common caricature of relativism and showed why many realist objections target the wrong view."
+        ],
+        blunders: [
+          {
+            text:
+              "His skepticism about surveys, memory, historical interpretation, and expert classification sometimes made his own positive route to semantic evidence look underdeveloped.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His critique of analytic metaethics sometimes threatened to make several contested positions look like merely verbal artifacts before fully replacing the framework.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His use of professional misunderstandings as evidence against realist confidence needed more systematic sampling of the literature than the conversation supplied.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "McAllister asked the right realist-friendly questions about common sense, pre-philosophical seeming, historical convergence, and practical concern.",
+          "He remained intellectually modest, repeatedly flagging where he lacked specialist command and letting Bush clarify instead of forcing a caricature.",
+          "His C. S. Lewis convergence line and his concerns about appraiser relativism identified the most promising places for future realist pressure."
+        ],
+        blunders: [
+          {
+            text:
+              "His appeals to common sense and remembered pre-philosophical intuition risked reconstructing realism from within a position already sympathetic to realism.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "The historical-convergence argument was suggestive but under-evidenced without textual controls, translation analysis, or clearer metaethical classification criteria.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          },
+          {
+            text:
+              "His agent/appraiser relativism critique initially blurred semantic, epistemic, and normative differences that Bush was trying to keep separate.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
