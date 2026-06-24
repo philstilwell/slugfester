@@ -30491,5 +30491,336 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "christopoulos-dillahunty-resurrection-historical-event-2024",
+    number: "87",
+    title:
+      "Than Christopoulos vs Matt Dillahunty: Is the Resurrection a Historical Event?",
+    label: "Resurrection probability and source reliability",
+    date: "2026-06-24",
+    duration: "2 hr 34 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=OSQWIWY9gYg",
+    motion:
+      "Does the historical evidence make Jesus' resurrection more probable than competing hypotheses?",
+    summary:
+      "Christopoulos argues Bayesian comparison and New Testament testimony favor resurrection; Dillahunty argues the sources, priors, and missing independent controls leave the claim unproved.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Inspiring Philosophy Academy upload, downloaded with python3 -m yt_dlp during the 2026-06-24 assessment run. The captions used rolling fragments, so only the new tail of each caption window was reconstructed before analysis. Auto-caption spellings are lightly normalized, including Than Christopoulos where captions rendered variants such as Stan, fan, or thanan; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text:
+          "the resurrection happened is higher than the probability of its competing theories",
+        context:
+          "Christopoulos frames the affirmative as a Bayesian comparison between resurrection and rival explanations."
+      },
+      con: {
+        text: "my position is that it's probably not",
+        context:
+          "Dillahunty's core stance is skeptical but not impossibilist: the historical evidence has not made resurrection probable."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Resurrection historicity",
+        speaker: "Than Christopoulos",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical naturalism",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 78,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Priors and Evidence",
+        timebox: "5:17-35:00",
+        score: {
+          pro: 81,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "5:17",
+              role: "Bayesian frame",
+              words:
+                "Christopoulos says the resurrection is more probable than competing theories when priors, evidence, and likelihood ratios are assessed together.",
+              score: 81,
+              critique:
+                "Christopoulos's frame is one of the stronger apologetic openings because it gives the debate a public comparison rule: ask what is expected on resurrection and on rival hypotheses. The cabin analogy makes likelihood ratios accessible, and he usefully concedes that low priors can in principle be overcome by evidence. The weakness is that the case quickly loads contested background assumptions into the prior, especially God, incarnation, and miracle-sign purposes. Those assumptions may be defensible, but they are not neutral starting points. The score is high because the framework is disciplined and responsive to probability concerns, but it is capped because the priors are not as shared as the presentation suggests.",
+              tags: []
+            },
+            con: {
+              time: "31:42",
+              role: "Evidential burden",
+              words:
+                "Dillahunty says resurrection is probably not historical because extraordinary claims need stronger sources than late, interested miracle reports.",
+              score: 83,
+              critique:
+                "Dillahunty's opening burden move is strong because he explains why testimony for a miracle is not assessed like testimony for a boat, a birthday, or a volcanic eruption. He keeps skepticism distinct from cynicism, which matters in a church setting where the atheist could easily be caricatured as closed. His source-tier ladder is a clear way to ask what kind of historical access we actually have. The limitation is that several analogies remain broad, and he does not yet engage Christopoulos's specific reliability claims in detail. The score is strong because the method is public and relevant, but not decisive because the opening mostly prepares the standard rather than applying it exhaustively.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Source Reliability",
+        timebox: "14:52-1:05:35",
+        score: {
+          pro: 78,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "14:52",
+              role: "Source case",
+              words:
+                "Christopoulos says New Testament reliability gives access to what the alleged eyewitnesses originally said, supported by authorship, Acts details, and names.",
+              score: 78,
+              critique:
+                "Christopoulos's source case is relevant because resurrection arguments cannot float free of the documents that carry them. He gives more than a slogan: traditional authorship, Luke-Acts 'we' passages, Acts confirmations, and Palestinian naming patterns all aim to show proximity to events. That is a serious historical strategy. The weakness is overextension. Even if those indicators raise confidence that some Gospel and Acts material preserves early memories, they do not establish that the resurrection narratives report eyewitness perception without theological development. The appeal to large confirmation counts and named scholars can also outpace the live evidence. The score is solid because the case gives specific handles, but lower because source reliability is treated as a bridge wider than it is.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Named scholars and large confirmation counts do more live work than the audience can independently evaluate."
+                }
+              ]
+            },
+            con: {
+              time: "39:40",
+              role: "Source-tier critique",
+              words:
+                "Dillahunty says the Bible is curated propaganda with outlandish miracle stories, late sources, copying, and no contemporary resurrection confirmation.",
+              score: 84,
+              critique:
+                "Dillahunty's source-tier critique goes directly at the live hinge: a resurrection case needs more than internally cherished documents. By listing biblical miracle stories, copying questions, Easter discrepancies, and the lack of contemporary external confirmation, he asks whether the source package has enough reliability for the strongest claim it contains. That is fair pressure, and his 'desert sand' metaphor captures the fragility of stories, memories, copies, and translations. The weakness is that some examples from distant biblical books can distract from the narrower question of the resurrection traditions themselves. The score is high because he identifies the evidential chain, but not higher because the broad source attack sometimes outruns the more precise historical issue.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "Some broad biblical oddities bear on overall source trust but can divert from the narrower resurrection traditions."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Empty Tomb and Appearances",
+        timebox: "22:11-52:30",
+        score: {
+          pro: 80,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "22:11",
+              role: "Appearance case",
+              words:
+                "Christopoulos argues crucifixion, burial, the empty tomb, women witnesses, polymodal appearances, Paul, and costly proclamation fit resurrection better than lies or hallucination.",
+              score: 80,
+              critique:
+                "Christopoulos's appearance case has real cumulative force. Crucifixion, burial, empty tomb claims, women as first witnesses, named appearances, Paul's conversion, and costly proclamation are all relevant data points if the sources are granted enough reliability. He is especially right that deliberate fraud and simple hallucination theories have burdens of their own. The weakness is that the argument repeatedly converts narrative reports into near-direct access to at least 21 witnesses, physical interaction, and martyr-cost without enough independent control. The body-not-produced point also leans on what opponents should have done. The score is strong because the evidence is organized and explanatory, but limited because the crucial data remain largely mediated through the texts being defended.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The body-not-produced claim treats an absent expected counteraction as positive evidence without enough independent controls."
+                }
+              ]
+            },
+            con: {
+              time: "51:45",
+              role: "Empty-tomb challenge",
+              words:
+                "Dillahunty says an empty tomb is only a claimed hole in the ground unless the tomb, burial, and absence are independently confirmed.",
+              score: 86,
+              critique:
+                "Dillahunty's empty-tomb challenge is one of his clearest applications of proportional evidence. He does not need to explain a missing body until the tomb, burial, and absence are established independently enough to require explanation. That blocks a common apologetic move where an unverified absence becomes almost physical evidence for resurrection. His point about Thomas also targets an epistemic norm in the story: praise for belief without seeing is not a strong public standard. The weakness is that he sometimes talks as if mediated ancient evidence can barely move the needle, which may be too strict for ordinary historical reasoning. The score is high because the rebuttal protects the burden of proof at the decisive inference.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Method and Hiddenness",
+        timebox: "1:00:12-1:47:29",
+        score: {
+          pro: 75,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:00:12",
+              role: "Epistemic distance",
+              words:
+                "Christopoulos says God may keep resurrection evidence in an epistemic middle ground: enough to warrant belief without forcing it.",
+              score: 75,
+              critique:
+                "Christopoulos's epistemic-distance reply is a thoughtful attempt to answer a natural complaint: if resurrection is so important, why is the evidence debatable? The strongest part is that he connects the answer to value-laden goods such as inquiry, conversation, and non-coerced belief, rather than pretending hiddenness is no problem. The weakness is that this explanation is highly flexible. Almost any degree of evidential ambiguity can be described as a divinely chosen middle ground unless independent reasons constrain the claim. It also shifts discussion from resurrection history toward the psychology of divine disclosure. The score is mixed-solid because the reply is possible and humane, but it under-explains why this exact evidential level should be expected.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The reply can make ambiguity favorable for God without an independent constraint on expected hiddenness."
+                }
+              ]
+            },
+            con: {
+              time: "1:08:52",
+              role: "Data-stasis objection",
+              words:
+                "Dillahunty says Bayesian updating stalls when no new independent data can test a unique ancient event beyond the Gospel reports.",
+              score: 85,
+              critique:
+                "Dillahunty's no-new-data objection is strong because it challenges the engine of Christopoulos's Bayesian method. If all relevant reports come through a closed ancient textual set, then updating may only rearrange inherited claims rather than add independent evidence. His distinction between 'if resurrection occurred, reports are expected' and 'given reports, resurrection is probable' is especially important. It prevents a likelihood-ratio argument from quietly reversing the conditional. The weakness is that ancient history often must work with fixed bodies of evidence; no new data cannot by itself make all historical conclusions unavailable. The score is high because he identifies the conditional-probability hazard, but not perfect because his standard for sufficient ancient updating remains under-specified.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Modern Miracles and Closure",
+        timebox: "1:49:23-2:31:00",
+        score: {
+          pro: 74,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:49:23",
+              role: "Miracle updating",
+              words:
+                "Christopoulos says modern healings with Christian context could update resurrection probabilities if Jesus is alive and active today.",
+              score: 74,
+              critique:
+                "Christopoulos's modern-miracle move is creative because it tries to solve the data-stasis problem by adding present-day Christian healing reports. If a well-documented healing occurred in a specifically Christological context, it could rationally affect someone's background view of Christian miracle claims. The weakness is that the connection to Jesus' resurrection remains indirect. A healing report, even a striking one, would still need separate verification, exclusion of medical error, and an argument tying it to the same agent and event under debate. Otherwise it risks importing desired religious context into the probability update. The score is mixed because the strategy is relevant in principle, but too much rides on a case not established during the debate.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "Christian framing around a healing can encourage interpreting an anomaly as Jesus-related before alternatives are excluded."
+                }
+              ]
+            },
+            con: {
+              time: "1:55:29",
+              role: "Skeptical close",
+              words:
+                "Dillahunty closes that consistent standards, doubt, and willingness to say 'I don't know' protect inquiry from dogma.",
+              score: 83,
+              critique:
+                "Dillahunty's closing succeeds because it states a positive epistemic ethic rather than mere refusal. Consistent standards, comfort with 'I don't know,' and openness to revision are the right virtues for evaluating extraordinary historical claims. His answer that God would know what could change his mind also brings hiddenness back without pretending to know every possible defeater. The weakness is that the closing can make suspension of judgment do more work than a debate resolution allows; 'probably not' requires more than 'not yet demonstrated.' He also leaves Christopoulos's specific Bayesian framework partly unresolved. The score is strong because the standard is clear and modest, but slightly limited because it remains more defensive than explanatory.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 78,
+        strengths: [
+          "Christopoulos gave a coherent Bayesian and likelihood-ratio structure rather than relying on bare assertion or devotional appeal.",
+          "He gathered the main resurrection data into one explanatory case: New Testament reliability, empty tomb, appearances, Paul, and costly proclamation.",
+          "He handled the exchange with unusual charity and admitted several limits in Q&A, including that proof is not certainty and that without the New Testament his evidence would be much weaker."
+        ],
+        blunders: [
+          {
+            text:
+              "He treated indicators of New Testament reliability as if they delivered stronger direct access to eyewitness miracle perception than they actually establish.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          },
+          {
+            text:
+              "His framing sometimes made the skeptic responsible for defeating priors, documents, and alternatives before the resurrection case had independently carried its own burden.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His appeal to modern Christian miracle context risked letting religious framing do more probability work than independently verified causal evidence.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Dillahunty kept the evidential burden tied to the specific resurrection claim rather than generic respect for testimony or history.",
+          "His empty-tomb, source-tier, and conditional-probability objections directly targeted the strongest structure of Christopoulos's case.",
+          "He avoided the easy but weaker claim that miracles are impossible, instead defending skepticism as openness to revision when adequate evidence appears."
+        ],
+        blunders: [
+          {
+            text:
+              "His broad list of biblical oddities sometimes pulled attention away from the narrower historical question of the resurrection traditions.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "He did not fully specify what amount or kind of ancient testimony could overcome a low prior for a unique miracle claim.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His insistence on event independence may underweight how cumulative background evidence can sometimes update a broader worldview model.",
+            links: [
+              {
+                label: "Base-rate neglect",
+                url: bias("base-rate-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
