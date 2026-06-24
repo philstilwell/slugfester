@@ -187,6 +187,11 @@ export const interlocutorAvatars = [
     aliases: ["Denis Lamoureux", "Denis O. Lamoureux", "Denis O Lamoureux"]
   },
   {
+    name: "Keith Fox",
+    src: `${avatarBasePath}/keith-fox.webp`,
+    aliases: ["Keith Fox"]
+  },
+  {
     name: "Ben Shapiro",
     src: `${avatarBasePath}/ben-shapiro.webp`,
     aliases: ["Ben Shapiro", "Benjamin Shapiro", "Benjamin A. Shapiro", "Benjamin A Shapiro"]
