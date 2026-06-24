@@ -30130,5 +30130,366 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "egnor-dillahunty-god-existence-2021",
+    number: "86",
+    title: "Michael Egnor vs Matt Dillahunty: Does God Exist?",
+    label: "Thomism, hiddenness, and morality",
+    date: "2026-06-24",
+    duration: "2 hr 22 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=yahf0t5mK5g",
+    motion:
+      "Does God exist, and do Thomistic proofs, moral law, and natural theology meet the burden of proof against skeptical atheism?",
+    summary:
+      "Egnor defends God through Thomistic, moral, and scientific inferences; Dillahunty argues the case is undefined, unfalsifiable, under-evidenced, and weakened by hiddenness.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Theology Unleashed upload, downloaded with python3 -m yt_dlp during the 2026-06-24 assessment run. The captions used rolling fragments, so only the new tail of each caption window was reconstructed before analysis. Auto-caption spellings are lightly normalized, including Michael Egnor where captions rendered variants such as 'ignore' or 'egner'; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "ten reasons that are very solid",
+        context:
+          "Egnor frames his affirmative as a cumulative natural-theology case built from classical proofs and moral law."
+      },
+      con: {
+        text: "the burden of proof is on those who say there is a yes",
+        context:
+          "Dillahunty's central posture is that the affirmative must define God and meet the evidential burden."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Thomistic theism",
+        speaker: "Michael Egnor",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical atheism",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 73,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Opening Burdens",
+        timebox: "7:00-35:00",
+        score: {
+          pro: 75,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "8:00",
+              role: "Ten proofs",
+              words:
+                "Egnor says natural theology offers ten irrefutable proofs, including Aquinas's ways, essence and existence, universals, reason, and moral law.",
+              score: 75,
+              critique:
+                "Egnor's opening has real breadth and gives the affirmative a recognizable classical-theist map. He distinguishes natural from revealed theology and names several families of argument, so the audience can see that his case is not merely personal testimony. The weakness is severe compression. Ten proofs plus six challenge questions in one opening makes almost every step underdeveloped: premises, contested terms, and bridges to a personal God are asserted rather than defended. Calling the arguments 'irrefutable' also raises the burden beyond what he demonstrates live. The score is positive because the case has structure and historical pedigree, but capped because the presentation functions more like an index than an argument.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "The opening leans on classical names and argumentative pedigree before supplying enough live support for each proof."
+                }
+              ]
+            },
+            con: {
+              time: "20:35",
+              role: "Burden standard",
+              words:
+                "Dillahunty says the claimant carries the burden, God has not been defined, and unfalsifiable propositions cannot be responsibly affirmed.",
+              score: 86,
+              critique:
+                "Dillahunty's burden-standard opening is the cleanest early move. He separates disbelief from a duty to disprove every possible God, asks for a definition before ontology can be assessed, and explains why unfalsifiable claims are hard to responsibly affirm. His scientific fallibilism is also well placed: models can be tentative without collapsing into anything-goes skepticism. The weakness is that saying 'no God' in the leprechaun register risks sounding more dismissive than the later, more careful evidential position. He also does not yet engage the best Thomistic form of Egnor's case. The score is high because the methodological standard is clear, relevant, and directly responsive to the motion.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Hiddenness and Definition",
+        timebox: "24:00-36:00",
+        score: {
+          pro: 71,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "36:25",
+              role: "Shared burden",
+              words:
+                "Egnor says atheists also carry a burden because nature is full of evidence for a mind behind it.",
+              score: 71,
+              critique:
+                "Egnor's shared-burden reply is fair in one respect: a debate can ask both sides to defend their explanatory posture, and naturalism should not be immune from scrutiny. He is also right that apparent order, causality, and moral experience are data any worldview must interpret. The weakness is that this does not remove the affirmative burden in a 'Does God exist?' debate. Saying nature is full of evidence for mind is a conclusion that needs unpacking, and pressing Dillahunty on whether he can recite Aquinas risks shifting from the truth of the argument to the opponent's memory. The score is moderate because the burden challenge has some legitimacy, but it is poorly targeted.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "Questioning Dillahunty's recall of Aquinas diverts from whether Egnor has established the premises in the debate."
+                }
+              ]
+            },
+            con: {
+              time: "24:25",
+              role: "Divine hiddenness",
+              words:
+                "Dillahunty says a God who wants him convinced and can convince him has not done so, making hiddenness a live defeater.",
+              score: 88,
+              critique:
+                "Dillahunty's hiddenness argument is one of the strongest moves of the debate. It fits the likely Catholic target well enough to matter: if God is personal, knowledgeable, powerful, and willing that people know him, then persistent nonbelief by sincere seekers needs explanation. Dillahunty also avoids overclaiming; he says this targets popular and Abrahamic God concepts rather than every possible deity. The weakness is that the argument is compressed and does not fully address skeptical-theist replies, soul-making defenses, or claims that God has reasons for partial disclosure. Still, Egnor mostly attacks Dillahunty's competence instead of answering the hiddenness structure. The score is high because the objection is relevant, clear, and under-rebutted.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Aquinas and Causation",
+        timebox: "44:00-54:00",
+        score: {
+          pro: 78,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "44:25",
+              role: "First way",
+              words:
+                "Egnor argues change requires potency becoming actuality, and an instrumental causal series cannot regress without a purely actual source.",
+              score: 78,
+              critique:
+                "Egnor's explanation of the First Way is better than his opening list. He slows down enough to explain potency, actuality, instrumental series, and why Thomists deny an infinite regress in that kind of dependence relation. That gives the affirmative an actual argument to inspect. The weakness is that he slides quickly from 'pure actuality' to what all call God, while Dillahunty reasonably asks what shows this source is personal, timelessly causal, or the God of the debate. Egnor also treats disagreement as ignorance too often, which obscures the contested metaphysics. The score is solid because the argument is substantive, but it does not close the identification gap.",
+              tags: []
+            },
+            con: {
+              time: "48:05",
+              role: "Identification gap",
+              words:
+                "Dillahunty says even if a first cause were needed, that does not show a thinking, timeless, personal God exists.",
+              score: 82,
+              critique:
+                "Dillahunty's identification-gap reply is strong. He does not need to solve every regress puzzle to ask why a first explanatory source should be identified with a thinking agent, moral governor, or Catholic God. His point that causation and existence are usually temporally loaded also exposes a real burden for timeless-cause language, even if Thomists have technical answers. The weakness is that he sometimes treats classical metaphysical categories as if they must use Humean or scientific categories, so part of the Thomistic argument may pass by him. The score is strong because he identifies the key missing bridge, but not higher because his rebuttal would need more Thomistic precision to be decisive.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Science and Supernature",
+        timebox: "54:00-1:13:00",
+        score: {
+          pro: 68,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "55:00",
+              role: "Singularity analogy",
+              words:
+                "Egnor says singularities, black holes, and mathematical structures show science routinely appeals to extranatural or supernatural realities.",
+              score: 68,
+              critique:
+                "Egnor's singularity analogy tries to challenge a narrow picture of science, and there is a useful insight nearby: science uses mathematics, idealization, limits, and theoretical entities that are not ordinary sense objects. The problem is the inference from abstract or undefined in equations to supernatural. A singularity in general relativity is a boundary or breakdown in a model, not a demonstrated personal cause beyond nature. Likewise, mathematics being abstract does not make it causally divine. This equivocation lets him claim scientific permission for God without showing comparable testability or explanatory constraints. The score is mixed because the anti-reductionist instinct is interesting, but the analogy overreaches badly.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument shifts between abstract, undefined, extranatural, supernatural, and divine as if they were equivalent."
+                }
+              ]
+            },
+            con: {
+              time: "1:02:35",
+              role: "Methodological naturalism",
+              words:
+                "Dillahunty says science uses methodological naturalism and would need detectable, demonstrable supernatural effects before adding them.",
+              score: 85,
+              critique:
+                "Dillahunty's science reply is disciplined. He distinguishes methodological naturalism from philosophical materialism, which lets him say science need not deny the supernatural in advance; it simply needs detectable, demonstrable effects before treating a proposed cause as part of inquiry. His distinction between abstract models and supernatural agents directly answers the singularity move. The weakness is that his cosmology knowledge is limited, and he admits he is not a cosmologist, so some details about singularities remain underdeveloped. But his central standard does not depend on being a physics expert. The score is high because he preserves scientific humility while blocking a quick move from mathematical abstraction to God.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral Law",
+        timebox: "1:14:00-1:37:00",
+        score: {
+          pro: 72,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:16:05",
+              role: "Objective morality",
+              words:
+                "Egnor argues that if some acts are objectively wrong, moral law must exist beyond human opinion in God's mind.",
+              score: 72,
+              critique:
+                "Egnor's moral argument has intuitive force because most listeners do treat cruelty, murder, and abuse as more than preference. His insistence that moral ontology differs from moral epistemology is also a legitimate distinction. The weakness is that he repeatedly turns the argument into a loaded yes-or-no demand about horrific examples, then treats hesitation over terminology as a concession. That pressures emotion more than it proves theism. He also assumes that if morality is objective, God is 'the only other opinion on tap,' leaving secular moral realism and non-theistic accounts largely unexamined. The score is moderate because the moral datum is serious, but the argument overstates the available options.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The live argument treats God as the only admissible nonhuman moral source without ruling out other moral-realist accounts."
+                }
+              ]
+            },
+            con: {
+              time: "1:17:20",
+              role: "Well-being standard",
+              words:
+                "Dillahunty grounds morality in well-being, saying objective assessments can be made once the goal is agreed, as in health or chess.",
+              score: 83,
+              critique:
+                "Dillahunty's well-being reply is better than it initially sounds under pressure. He distinguishes ontologically free-floating moral laws from objective assessments relative to a shared standard, using health and chess analogies to show how rules can support non-subjective judgments without being cosmic objects. He also directly asks how Egnor can demonstrate that God wrote morality on anyone's heart. The weakness is that the answer is rhetorically vulnerable: saying morality depends on an agreed foundation can sound like concession to subjectivity, especially with extreme examples. He also does not fully ground why well-being should be the standard. The score is strong because he exposes the demonstration problem, but the positive account remains incomplete.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Atheism and Closing",
+        timebox: "1:32:00-2:20:00",
+        score: {
+          pro: 66,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:32:25",
+              role: "Atheist worldview claim",
+              words:
+                "Egnor says Dillahunty is not really living as an atheist, because fairness, purpose, and morality imply theism.",
+              score: 66,
+              critique:
+                "Egnor's atheist-worldview claim is his weakest repeated move. He is right that worldview commitments often travel together, and he can fairly ask whether humanism has enough resources for accountability, purpose, and moral normativity. But saying Dillahunty is not really an atheist because he expects fairness misdefines atheism and turns a conceptual disagreement into a charge of inconsistency. It also ignores Dillahunty's explicit convention-based account of debate fairness. The closing escalation to 'gibberish' and 'crazy' further weakens the argument by substituting contempt for demonstration. The score is low because the move may energize supporters, but it misframes the opposing position and damages argumentative charity in public.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Egnor denies Dillahunty's self-described atheism by imposing extra worldview requirements beyond disbelief in God."
+                }
+              ]
+            },
+            con: {
+              time: "2:16:30",
+              role: "Closing indictment",
+              words:
+                "Dillahunty says personal attacks, rapid old arguments, no God definition, and no hiddenness rebuttal fail to demonstrate God.",
+              score: 86,
+              critique:
+                "Dillahunty's closing is forceful because it returns to the motion: demonstrating God exists. He lists the debate's live failures in burden terms: no stable God definition, no public evidence, rapid argument listing, moral assertions, appeals to popularity, and no real answer to hiddenness. That summary accurately captures much of the exchange. The weakness is tone. Some of the closing becomes prosecutorial and dismissive, and he underplays the fact that Egnor did eventually explain at least one Thomistic argument in more detail. Still, the closing is more relevant to the motion than Egnor's broad anti-atheist denunciation. The score is high because it isolates the actual evidential deficits.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 73,
+        strengths: [
+          "Egnor presented a broad cumulative natural-theology map rather than relying on a single isolated argument.",
+          "His best moments came when he slowed down on potency, actuality, instrumental causation, and the ontology-versus-epistemology distinction in morality.",
+          "He consistently pressed real pressure points for naturalism: why anything exists, whether moral law is objective, and how abstract universals should be understood."
+        ],
+        blunders: [
+          {
+            text:
+              "He overloaded the opening with too many proofs and questions, leaving most premises asserted rather than defended in the live debate.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          },
+          {
+            text:
+              "His singularity argument equivocated between abstract mathematics, model breakdowns, extranatural causes, supernatural causes, and God.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His repeated claims that Dillahunty did not understand, was not really an atheist, or was speaking gibberish weakened rather than supported the affirmative case.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Dillahunty kept the motion tied to definition, public evidence, falsifiability, and the affirmative burden of proof.",
+          "His divine-hiddenness argument remained the debate's most under-answered direct objection to a personal God who wants to be known.",
+          "He drew useful distinctions between atheism, skepticism, humanism, objective assessment, absolute morality, and convention-based standards."
+        ],
+        blunders: [
+          {
+            text:
+              "His responses to Thomistic causation sometimes treated classical metaphysical categories as if they had to fit ordinary temporal-causal language.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His well-being account exposed Egnor's demonstration problem, but it did not fully justify why well-being is the standard rather than merely a shared preference.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His closing sometimes let frustration sharpen into dismissive rhetoric, making the strongest burden points sound more combative than necessary.",
+            links: [
+              {
+                label: "Belief bias",
+                url: bias("belief-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
