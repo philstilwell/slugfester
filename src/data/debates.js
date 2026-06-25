@@ -31820,5 +31820,338 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "cutter-oppy-mind-brain-harmony-god-2025",
+    number: "91",
+    title: "Brian Cutter vs Graham Oppy: Does Mind-Brain Harmony Point to God?",
+    label: "Psychophysical harmony and theism",
+    date: "2026-06-25",
+    duration: "1 hr 51 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=dmTLjiGWgpE",
+    motion:
+      "Does psychophysical harmony, the apparent fit between conscious states and physical or functional states, provide evidence for God over naturalism?",
+    summary:
+      "Cutter argues psychophysical harmony favors theism; Oppy replies that identity theory and probability worries blunt the argument.",
+    sourceNote:
+      "Built from YouTube English automatic captions for the Miles K. Donahue upload, downloaded with python3 -m yt_dlp during the 2026-06-25 assessment run. The captions used rolling fragments, so only the new tail of each caption window was reconstructed before analysis. Auto-caption spellings are lightly normalized, including Brian Cutter and Graham Oppy; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "The data of psychophysical harmony are evidence for theism.",
+        context:
+          "Cutter's representative claim is that consciousness, value, pain, agency, and meaning line up with physical life in ways more expected if reality is value-selecting."
+      },
+      con: {
+        text: "The argument just has no impact whatsoever on the position that I favor.",
+        context:
+          "Oppy's representative reply is that naturalism plus identity theory treats pain and neural events as one event, not as a puzzling correlation."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Harmony theism",
+        speaker: "Brian Cutter",
+        color: "teal"
+      },
+      con: {
+        name: "Identity naturalism",
+        speaker: "Graham Oppy",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 82,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Opening Harmony Case",
+        timebox: "00:34-18:10",
+        score: {
+          pro: 82,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:27",
+              role: "Harmony argument",
+              words:
+                "Cutter says psychophysical harmony is much more surprising on naturalism than on theism because consciousness, value, pain, rational agency, and meaning fit the physical world.",
+              score: 82,
+              critique:
+                "Cutter's opening is strong because it gives the audience a clear target: not consciousness alone, but the fortunate alignment of conscious goods with physical and functional roles. The pain-pleasure inversion examples make the argument intuitive, and the fine-tuning analogy helps explain why improbability plus specialness can support design-style reasoning. The weakness is that the opening leans heavily on property dualism and on an intuitive measure across possible psychophysical laws. Without a more disciplined account of that space, the claim that harmony is very unlikely on naturalism remains partly impressionistic. The score is high because the case is coherent and relevant, but its central likelihood premise is still under-argued.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The likelihood comparison depends on an unclear measure over possible psychophysical laws."
+                }
+              ]
+            },
+            con: {
+              time: "18:48",
+              role: "Identity reply",
+              words:
+                "Oppy says pain experiences just are neural events, so there is one event causing and rationalizing aversive behavior rather than two correlated items.",
+              score: 86,
+              critique:
+                "Oppy's opening reply is sharp because it attacks the argument at the exact place where the puzzle is generated. If pain events are neural events, then asking why pain is correlated with the neural causes of avoidance may be like asking why Venus is correlated with Hesperus. That directly challenges Cutter's framing rather than merely denying the conclusion. Oppy also names the neglected naturalist option: identity theory, including uncertainty about token and type identities. The limitation is that he largely asserts this framework and does not yet answer the epistemic-gap version Cutter later develops. Still, the reply scores very well because it forces the debate onto the deepest premise.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Identity And Conceivability",
+        timebox: "28:00-51:45",
+        score: {
+          pro: 81,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "29:00",
+              role: "Type-B repair",
+              words:
+                "Cutter concedes the argument is smoother for property dualists but says type-B materialism still leaves epistemic possibilities where psychophysical correlations could have been disharmonious.",
+              score: 81,
+              critique:
+                "Cutter's repair move is philosophically careful. He concedes that identity theories make the argument trickier, then distinguishes explanation from probability: identities may not need explanation, but an epistemic gap can still affect what a rational agent should expect before learning the correlations. That avoids the crude mistake of asking why pain is identical to a neural state. The weakness is that the reply inherits a controversial Chalmers-style taxonomy and then pressures Oppy to locate himself inside it. If Oppy's identity theory rejects the taxonomy or treats the relevant pain-role connection as a priori, the repair does not fully land. The score is strong because Cutter narrows the issue without pretending the objection vanished.",
+              tags: []
+            },
+            con: {
+              time: "37:07",
+              role: "A priori pressure",
+              words:
+                "Oppy says it may be a priori that pain, unlike pleasure, causes and rationalizes aversive behavior, which would narrow the alleged space of possibilities.",
+              score: 78,
+              critique:
+                "Oppy's a priori pressure is useful because it challenges the looseness of the conceivability space. If the concept of pain already includes a role in aversion and rationalization, then pleasure-pain inversion scenarios may not be neutral alternatives at all. That would seriously weaken Cutter's probability setup. The weakness is that Oppy remains uncertain about the exact account of epistemic possibility, zombies, and the Chalmers type-A/type-B distinction. He gestures toward a position more than he completes one. This matters because Cutter can treat the uncertainty as room for the epistemic-gap argument to survive. The score is solid, but lower than the opening identity reply because the positive modal theory remains under-specified.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The reply relies on an unsettled account of epistemic possibility and conceivability."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Probability Framework",
+        timebox: "51:45-1:13:08",
+        score: {
+          pro: 83,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "55:02",
+              role: "Likelihood defense",
+              words:
+                "Cutter says arguments from evil, fine-tuning, message-like leaves, and inscriptions in atoms show that rough likelihood comparisons can be justified without precise numbers.",
+              score: 83,
+              critique:
+                "Cutter's probability defense is one of his best general moves. He does not claim to possess exact priors; he argues that some comparisons are rationally clear even when numbers are unavailable. The leaves spelling a message and the hypothetical inscription in atoms nicely illustrate why design-style evidence can be comparative rather than numerically precise. The weakness is that the examples may be easier cases than psychophysical harmony. Message-like inscriptions have an independently familiar intentional pattern, while the harmony case depends on disputed concepts of pain, value, function, and modal space. The score is strong because the defense rebuts a demand for false precision, but it does not fully answer the measure problem.",
+              tags: []
+            },
+            con: {
+              time: "52:13",
+              role: "Measure objection",
+              words:
+                "Oppy asks what probability distribution remains when all evidence is stripped away, especially across an infinite range where a flat distribution cannot work.",
+              score: 87,
+              critique:
+                "Oppy's measure objection is powerful because it targets the mathematical heart of the inference. If Cutter says harmony is unlikely on naturalism, the audience needs some principled way to compare possible mappings, not merely a felt contrast between harmonious and bizarre examples. Oppy also avoids an overstatement: he allows probability where there is chance, betting structure, or constrained ignorance, but doubts that this case has a non-arbitrary measure. That distinction keeps the critique from becoming anti-probability bluster. The limitation is that he may demand more formalism than ordinary abductive reasoning requires. Still, the score is very high because this objection pressures the central evidential ratio.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Pain Causation",
+        timebox: "1:13:09-1:28:03",
+        score: {
+          pro: 84,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:14:12",
+              role: "Conceivability rebuttal",
+              words:
+                "Cutter separates obviousness from a priori necessity, then uses epiphenomenalism, Cartesian scenarios, dreams, and recombination to argue pain without bodily avoidance is coherent.",
+              score: 84,
+              critique:
+                "Cutter's conceivability rebuttal is effective because it presses the difference between what is obvious in our world and what is ruled out by conceptual reflection. The dream and Cartesian cases make it plausible that experience and bodily behavior can come apart, at least epistemically. His recombination move also shows why allowing even outlier cases may threaten Oppy's generic necessity claim. The weakness is that some examples work by moving to strange skeptical or dream contexts where ordinary pain concepts may behave differently. That can make the modal evidence feel indirect. The score is high because Cutter makes Oppy's a priori claim bear a real burden and exposes its fragility.",
+              tags: []
+            },
+            con: {
+              time: "1:17:48",
+              role: "Generic claim",
+              words:
+                "Oppy says acquiring the concept of pain may require experiencing its aversive role, and that the relevant necessary truth is generic rather than exceptionless.",
+              score: 80,
+              critique:
+                "Oppy's generic reply has a good core. Concepts are not acquired in a vacuum, and it is plausible that grasping pain involves knowing its aversive significance from experience. Framing the claim as generic also sensibly avoids being refuted by every anesthesia, dream, paralysis, or outlier case. The weakness is that the generic form becomes slippery under pressure. If exceptions are allowed, Cutter can ask why worlds filled with exception-like cases are not coherently imaginable. Oppy does not fully explain what blocks that recombination. The score remains solid because the concept-acquisition point is serious, but the generic necessity claim looks like it needs more machinery than the discussion supplied.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The generic formulation protects the claim from counterexamples without fully stating the limiting rule."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Signs And Disharmony",
+        timebox: "1:28:07-1:48:18",
+        score: {
+          pro: 80,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:30:22",
+              role: "Design analogies",
+              words:
+                "Cutter says an encoded message in a natural constant would be evidence for contingency plus God, and imperfect harmony can still be striking like a flawed poem.",
+              score: 80,
+              critique:
+                "Cutter's sign analogies help clarify the intended inference. If a natural constant or the initial state of the universe encoded a theistic message, many listeners would treat that as evidence for both contingency and design, even before assigning exact probabilities. His flawed-poem analogy also answers the disharmony objection: imperfection does not erase evidence of pattern. The weakness is that the analogies risk importing the very feature at issue, namely a clear independent mark of intentional communication. Psychophysical harmony is more abstract and contested than an inscription. The reply also may underweight how widespread disharmony would reduce the evidential force. The score is good because the analogies illuminate, but they do not settle.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The flawed-poem analogy can underweight how extensive disharmony would affect the total evidence."
+                }
+              ]
+            },
+            con: {
+              time: "1:32:45",
+              role: "Evidence caution",
+              words:
+                "Oppy warns that encodings need constraints, asks what actual evidence we have, and presses whether the world could show more harmony than it does.",
+              score: 82,
+              critique:
+                "Oppy's caution is well placed. Numerological or encoding examples become cheap unless the translation scheme is constrained in advance, and his question about actual evidence pulls the debate back from spectacular hypotheticals to the psychophysical facts we really have. He also raises the right global worry: if there is substantial irrationality, pain, error, and maladaptive mental life, then the total evidence may not be as harmony-heavy as Cutter suggests. The limitation is that Oppy does not develop the disharmony objection into a systematic alternative assignment or explain how much disharmony would defeat the argument. The score is strong because he keeps the evidence disciplined, but the critique remains exploratory.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Closing Burdens",
+        timebox: "1:48:33-1:50:54",
+        score: {
+          pro: 85,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:48:43",
+              role: "Qualified close",
+              words:
+                "Cutter closes that the argument is smoothest if consciousness is irreducible, while reductive views make the case trickier and increase reasonable uncertainty.",
+              score: 85,
+              critique:
+                "Cutter's closing earns credit for intellectual honesty. He does not pretend the exchange left the original presentation untouched; he openly concedes that reductive materialist views make the argument less straightforward and that the remaining moves depend on epistemic gaps and modal distinctions. That candor improves the credibility of the case and correctly locates where future work must occur. The weakness is that this concession also narrows the argument's audience. If the best version mainly moves those already sympathetic to irreducible consciousness, then its force against broad naturalism is limited. The score is high because the close is disciplined and fair, but the argument exits more conditional than triumphant.",
+              tags: []
+            },
+            con: {
+              time: "1:50:05",
+              role: "Shared caution",
+              words:
+                "Oppy adds that some theists are reductive materialists too, so worries about the argument are not simply naturalist resistance to theism.",
+              score: 79,
+              critique:
+                "Oppy's closing addition is modest but useful. By noting that some theists are reductive materialists, he separates resistance to the psychophysical harmony argument from resistance to theism itself. That matters because it blocks a simplistic reading in which only naturalists would deny the argument's starting point. The comment also reinforces his earlier claim that the real dispute is mind-body theory, not merely religious allegiance. The weakness is that he gives almost no final synthesis of his own strongest objections: identity theory, generic pain roles, and probability-measure worries remain scattered rather than summed into a closing case. The score is still solid because the point is relevant, but it is less developed than Cutter's close.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 82,
+        strengths: [
+          "Cutter framed psychophysical harmony as a comparative evidential argument rather than a simple gap argument from consciousness.",
+          "He used vivid modal examples, pain-pleasure inversion, and design-style analogies to make an abstract philosophy-of-mind issue accessible.",
+          "He conceded the argument's dependence on irreducible consciousness or an epistemic gap, which made his closing more credible."
+        ],
+        blunders: [
+          {
+            text:
+              "His central likelihood claim leaned on an under-specified measure over possible psychophysical mappings, leaving the naturalism-versus-theism comparison partly intuitive.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His replies to psychophysical disharmony risked treating local harmony as decisive without fully weighing error, irrationality, pain, and maladaptive mental life.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Oppy identified identity theory as the deepest naturalist response and kept the debate focused on whether there is really a correlation to explain.",
+          "His measure objection exposed the hardest problem for Cutter's Bayesian framing: how to justify likelihoods across possible psychophysical mappings.",
+          "He allowed that extraordinary hypothetical evidence could matter, which made his skepticism look methodological rather than closed."
+        ],
+        blunders: [
+          {
+            text:
+              "His positive account of epistemic possibility and generic necessity remained under-defined, letting Cutter keep pressure on conceivability and recombination.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His identity-theory defense sometimes treated the contested mind-brain framework as sufficient without fully answering the epistemic-gap version of Cutter's argument.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
