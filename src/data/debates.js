@@ -31144,5 +31144,327 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "bignon-oppy-religious-experience-god-2022",
+    number: "89",
+    title:
+      "Guillaume Bignon vs Graham Oppy: Religious Experience and the Case for God",
+    label: "Religious experience and rationality",
+    date: "2026-06-24",
+    duration: "1 hr 18 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=4KCJXMeM9WQ",
+    motion:
+      "Can Bignon's conversion story, religious experience, and supporting arguments rationally support Christian belief, or do rival experiences and naturalist explanations undercut their evidential force?",
+    summary:
+      "Bignon argues his conversion and apologetic reasons make Christianity rational and personally evidential; Oppy grants rational permissibility while challenging the public evidential weight of such experiences.",
+    sourceNote:
+      "Built from YouTube English automatic captions for the Premier Unbelievable? upload, downloaded with python3 -m yt_dlp during the 2026-06-24 assessment run. The captions used rolling fragments, so only the new tail of each caption window was reconstructed before analysis. This was a structured Big Conversation discussion rather than a formal timed debate. Auto-caption spellings are lightly normalized, including Guillaume Bignon where captions rendered variants such as Gion Binyon and Graham Oppy where captions rendered variants such as Gramopi; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "some elements in my story speak of providential design",
+        context:
+          "Bignon's central claim is that the pattern of conversion events is better expected on Christianity than on atheism."
+      },
+      con: {
+        text: "there are plenty of stories that go both ways",
+        context:
+          "Oppy's core caution is that conversion testimony must be weighed against deconversion, rival religious, and naturalist explanations."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Religious-experience case",
+        speaker: "Guillaume Bignon",
+        color: "teal"
+      },
+      con: {
+        name: "Naturalist caution",
+        speaker: "Graham Oppy",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 75,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Conversion Story Evidence",
+        timebox: "19:00-26:00",
+        score: {
+          pro: 76,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "22:00",
+              role: "Providential story",
+              words:
+                "Bignon says his hitchhiking, injury, church experience, and visa timing are best interpreted as God providentially bringing him to Christianity.",
+              score: 76,
+              critique:
+                "Bignon's conversion-story argument is careful enough to avoid pretending that autobiography is a knockdown proof. He explicitly says his story has 'a little bit more weight' than mere mind-changing, because the coincidences fit his existential situation and point toward Christian commitment. That modest framing is a strength, and the events are relevant to religious-experience epistemology. The weakness is that personal salience and sequence do much of the evidential work. Without independent probabilities, the move from surprising timing to providential agency remains underdetermined. The score is solid because the testimony can rationally matter to Bignon, but lower than decisive because it remains weak as public evidence.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "The argument relies heavily on the personal fit of coincidences as confirmation of providential meaning."
+                }
+              ]
+            },
+            con: {
+              time: "19:00",
+              role: "Counterconversion symmetry",
+              words:
+                "Oppy replies that conversion and deconversion stories go both ways, and coincidences are expected among billions of people and familiar cultural scripts.",
+              score: 84,
+              critique:
+                "Oppy's response is strong because it shifts the question from sincerity to discriminating evidence. He grants that Bignon's story may be meaningful and life-improving, but asks what happens when similar narrative arcs support incompatible conclusions or run in reverse. The appeal to large populations and familiar conversion scripts gives a plausible naturalist explanation for striking coincidences without accusing the witness of dishonesty. The limitation is that aggregate symmetry can flatten the details of a particular case too quickly. Some sequences may still deserve individual analysis. The score is high because Oppy identifies the right evidential problem while preserving charity toward the testimony. That balance matters here.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Rational Permission",
+        timebox: "26:00-31:00",
+        score: {
+          pro: 78,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "26:00",
+              role: "Rational permissibility",
+              words:
+                "Bignon asks whether arguments and religious experience can make Christian belief rationally permissible, even if they do not force atheism to be irrational.",
+              score: 78,
+              critique:
+                "Bignon's rational-permissibility move is one of his strongest strategic choices. Instead of overclaiming that his testimony defeats atheism, he asks whether arguments and experience can jointly make Christian belief intellectually responsible. That target fits the discussion and avoids a false binary between proof and irrationality. It also lets him incorporate Oppy's published view fairly rather than caricaturing the skeptic. The weakness is that rational permissibility is a modest destination: it protects Bignon from the charge of irrationality but does not yet show that Christianity is probably true. The score is strong because the claim is precise, charitable, and defensible, though less ambitious than the video's larger 'case for God' framing.",
+              tags: []
+            },
+            con: {
+              time: "27:00",
+              role: "Noncompelling arguments",
+              words:
+                "Oppy says the best arguments on both sides are not compelling, but either intellectual arguments or experience can rationally ground Christian belief.",
+              score: 86,
+              critique:
+                "Oppy's concession is philosophically disciplined. He distinguishes rational permissibility from argumentative compulsion, allowing that Christians can be justified by intellectual considerations or by religious experience while still denying that the arguments force convergence. This helps the discussion because it removes the lazy 'religion is irrational' objection and focuses on evidential strength. His explanation from disagreement among serious philosophers is not proof by popularity; it is a reasonable sign that the available arguments leave room for rational divergence. The weakness is that widespread expert disagreement can sometimes reflect background commitments rather than equal evidential balance. The score is high because the distinction clarifies the whole exchange.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Providence And Plausibility",
+        timebox: "36:30-53:30",
+        score: {
+          pro: 74,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "49:00",
+              role: "Providence lens",
+              words:
+                "Bignon says extraordinary experiences can let believers interpret ordinary events as providence, as scientists interpret ordinary tables after quark evidence.",
+              score: 74,
+              critique:
+                "Bignon's providence-lens argument gives a coherent account of why his interpretation is not just an isolated coincidence hunt. If a person has independent reason to think God acted extraordinarily, then ordinary events may be read within that larger framework, just as background theory changes how scientists describe everyday objects. The analogy is creative and gives the religious believer an intelligible epistemic posture. Its weakness is that the scientific comparison smuggles in a much stronger public-checking structure than religious providence normally has. Quark theory earns reinterpretation through repeatable, shared measurement; providence readings are more elastic. The score is solid because the model is coherent but overanalogized.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The analogy treats theory-laden scientific interpretation and personal providence interpretation as more similar than the warrant allows."
+                }
+              ]
+            },
+            con: {
+              time: "52:00",
+              role: "Atheist providence",
+              words:
+                "Oppy points to his own coincidence-rich path into atheist philosophy and asks whether Bignon would also call that divine providence.",
+              score: 85,
+              critique:
+                "Oppy's counterexample is elegant because it uses Bignon's interpretive method against itself. If coincidences along Bignon's path are read as providential support for Christianity, then the coincidence-laden path that made Oppy an atheist philosopher also needs interpretation. Bignon can appeal to mystery or a larger providential plan, but that flexibility reduces the method's discriminating force. Oppy's move therefore pressures the criterion, not the sincerity of the believer. The limitation is that theistic providence can coherently include permitted opposition, so the point does not refute providence outright. The score is high because it exposes how easily a providence lens can absorb conflicting outcomes. That pressure is real.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Religious Diversity",
+        timebox: "54:30-1:07:00",
+        score: {
+          pro: 72,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "57:00",
+              role: "Diversity reply",
+              words:
+                "Bignon says non-Christian religious experiences may still undermine naturalism, while unreliable or bizarre practices can be rejected case by case.",
+              score: 72,
+              critique:
+                "Bignon's reply to religious diversity has a real advantage: he does not need every religious experience to be explicitly Christian for it to count against strict naturalism. That broadens the evidential target and lets him acknowledge mistaken interpretations without dismissing all non-Christian experience. He also rightly says charges of special pleading require comparing reasons, not merely noticing that he accepts some cases and rejects others. The weakness is that the criteria remain thin. Without a clearer method for separating genuine, misinterpreted, false, and rival experiences, the Christian cases look protected by theological preference. The score is moderate because the reply is possible, but not yet disciplined enough.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The answer permits broad non-Christian evidence while retaining special room for Christian conclusions without a clear filter."
+                }
+              ]
+            },
+            con: {
+              time: "55:00",
+              role: "Diversity challenge",
+              words:
+                "Oppy argues the vast diversity of religious experiences and divination practices makes Christian exceptions look like special pleading.",
+              score: 88,
+              critique:
+                "Oppy's diversity challenge is the strongest skeptical argument in the discussion. He is not saying that conflicting testimony automatically proves naturalism; he is saying it weakens testimonial evidence when experiences are highly specific, culturally patterned, and interpreted in incompatible ways. The example of earlier Australian traditions is effective because it asks why the experienced content tracks local religious frameworks rather than converging on Christian claims. That directly challenges Bignon's use of testimony as evidence for God or Christianity. The limitation is that a theist can still propose general revelation, misinterpretation, or partial awareness. Even so, the score is very high because the objection targets evidential discrimination precisely.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Historical Comparison",
+        timebox: "1:07:00-1:16:30",
+        score: {
+          pro: 71,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:09:00",
+              role: "Christianity comparison",
+              words:
+                "Bignon says Christian evidence is stronger than Islam's because the New Testament has reliable geography, names, sources, and resurrection context.",
+              score: 71,
+              critique:
+                "Bignon's move to historical comparison is sensible because rival religious experiences often need adjudication beyond experience itself. Appealing to source quality, geography, names, and resurrection arguments gives him a way to connect personal testimony to public historical reasoning. That is better than simply saying his experience wins because it is Christian. The weakness is that the exchange becomes compressed and second-hand. Bignon leans on popular apologetic confidence and named scholars without establishing the comparative method in the conversation, and his contrast with Islam becomes broader than the evidence he actually presents. The score is moderate because the move is relevant, but its support is too summary.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "The historical comparison relies heavily on named apologetic expertise without presenting enough of the underlying comparative argument."
+                }
+              ]
+            },
+            con: {
+              time: "1:07:00",
+              role: "Historical caution",
+              words:
+                "Oppy says comparing Christianity and Islam is hard, and the weight of Christian documentation partly reflects later Christian dominance.",
+              score: 84,
+              critique:
+                "Oppy's historical caution is strong because it resists easy scoreboard comparisons between religions. He notes that assessing Islamic and Christian sources requires expertise, language, dating, and attention to what exactly is being authenticated. His point about Christian manuscript abundance partly reflecting later Christian preservation and dominance usefully distinguishes document survival from event truth. That undercuts a simplistic 'more documents therefore better miracle case' inference. The limitation is that he does not provide a full counter-assessment of the resurrection or Islamic origins, so the reply is mostly cautionary rather than constructive. The score is high because the caution is methodologically important and directly answers the overcompressed comparison.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 75,
+        strengths: [
+          "Bignon consistently framed his conversion story as personally and rationally weighty without pretending it should force every listener to convert.",
+          "He integrated religious experience with intellectual arguments, historical claims, and a modest rational-permissibility thesis instead of relying on experience alone.",
+          "His discussion of providence, plausibility structures, and rival religious experiences showed real philosophical self-awareness about where the argument is vulnerable."
+        ],
+        blunders: [
+          {
+            text:
+              "He let personally meaningful coincidences do more public evidential work than their independently assessed probabilities could support.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          },
+          {
+            text:
+              "His response to religious diversity allowed Christian experiences to retain special evidential status without offering a sufficiently clear cross-tradition filter.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His late historical comparison leaned on apologetic authorities and source-count confidence more than on a developed comparative argument.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Oppy separated rational permissibility from evidential compulsion, which let him grant justified Christian belief while still challenging the case for public persuasion.",
+          "His counterconversion, providence-symmetry, and religious-diversity arguments directly targeted the evidential bridge from experience to Christianity.",
+          "He handled the exchange charitably, avoiding dismissive rhetoric about religious believers and keeping the focus on discriminating evidence."
+        ],
+        blunders: [
+          {
+            text:
+              "His appeal to conversion and deconversion stories going both ways sometimes risked flattening the specific details of Bignon's case into broad population-level symmetry.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "He did not clearly specify what kind of religious experience, cumulative sequence, or historical support would significantly move his probability judgments.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His shift from Bignon's specific gospel-reliability claim to manuscript survival and Christian dominance risked diverting from whether those New Testament details are reliable.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
