@@ -222,6 +222,11 @@ export const interlocutorAvatars = [
     aliases: ["Brian Cutter"]
   },
   {
+    name: "Braxton Hunter",
+    src: `${avatarBasePath}/braxton-hunter.webp`,
+    aliases: ["Braxton Hunter", "Braxton D. Hunter", "Braxton D Hunter"]
+  },
+  {
     name: "Ben Shapiro",
     src: `${avatarBasePath}/ben-shapiro.webp`,
     aliases: ["Ben Shapiro", "Benjamin Shapiro", "Benjamin A. Shapiro", "Benjamin A Shapiro"]
