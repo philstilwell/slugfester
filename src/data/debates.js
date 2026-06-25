@@ -32153,5 +32153,348 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "craig-malpass-universe-begin-exist-2020",
+    number: "92",
+    title: "William Lane Craig vs Alex Malpass: Did the Universe Begin to Exist?",
+    label: "Kalam beginning and temporal infinity",
+    date: "2026-06-25",
+    duration: "2 hr 5 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=uWo9qU2dhpQ",
+    motion:
+      "Do actual-infinity and successive-addition arguments give adequate philosophical support for the Kalam claim that the universe began to exist?",
+    summary:
+      "Craig defends the Kalam's second premise through actual-infinity and successive-addition arguments; Malpass presses future-symmetry, tense, and quantifier objections.",
+    sourceNote:
+      "Built from YouTube English automatic captions for the Capturing Christianity upload, downloaded with python3 -m yt_dlp during the 2026-06-25 assessment run. The JSON3 caption segments were grouped into readable timestamped lines before analysis. This was a structured livestream discussion with audience Q&A rather than a formal timed debate. Auto-caption spellings are lightly normalized, including Alex Malpass and William Lane Craig; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "An actually infinite number of things cannot exist.",
+        context:
+          "Craig's representative claim is that actual infinities may be conceptually handled in mathematics but cannot be instantiated in concrete temporal reality."
+      },
+      con: {
+        text: "Strangeness is not a reliable guide for impossibility.",
+        context:
+          "Malpass's representative reply is that Hilbert-style weirdness undercuts ordinary expectations without by itself proving metaphysical impossibility."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Kalam beginning case",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "Infinity critique",
+        speaker: "Alex Malpass",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 81,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Actual Infinite",
+        timebox: "03:44-24:59",
+        score: {
+          pro: 80,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "06:48",
+              role: "Actual-infinite case",
+              words:
+                "Craig argues that an actually infinite number of things cannot exist, and that a beginningless temporal series would instantiate such an infinite.",
+              score: 80,
+              critique:
+                "Craig's opening is clear and historically grounded. He distinguishes potential from actual infinity, gives the audience Hilbert's hotel, and states the syllogism in a way that lets listeners see exactly where the dispute lies. The strongest feature is pedagogical: a technical metaphysical claim becomes vivid. The weakness is that the decisive step still moves from counterintuitive consequences to metaphysical impossibility. Craig admits the examples are not logical contradictions, so the standard for impossibility needs further defense. The score is strong because the argument is relevant, lucid, and connected to Kalam's second premise, but capped because the absurdity-to-impossibility bridge remains intuitive rather than demonstrated. That is the live hinge.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The argument leaves the threshold between absurdity and metaphysical impossibility under-defined."
+                }
+              ]
+            },
+            con: {
+              time: "16:16",
+              role: "Absurdity challenge",
+              words:
+                "Malpass grants the weirdness of Hilbert-style cases but says absurdity is not the same as impossibility unless a contradiction is shown.",
+              score: 84,
+              critique:
+                "Malpass's first reply is disciplined because he does not deny the strangeness of actual-infinite examples. Instead, he asks what follows from that strangeness. The distinction between weird, absurd-seeming, and impossible is exactly the pressure point in Craig's first argument. His Aristotle discussion also usefully shows that the terminology has multiple historical uses, so the debate cannot rest on a slogan about potential infinity. The weakness is that the quantum-mechanics analogy is only a loose caution; empirical weirdness and metaphysical infinity are different cases. Still, the reply scores high because it targets the live inference and forces Craig to supply a stronger modal criterion. That demand is fair.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Future Symmetry",
+        timebox: "27:20-51:27",
+        score: {
+          pro: 79,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "33:36",
+              role: "Tensed asymmetry",
+              words:
+                "Craig says the future objection is either ad hominem or question-begging, and that tensed time makes future events unreal while past events have been instantiated.",
+              score: 79,
+              critique:
+                "Craig's response has a coherent structure. He distinguishes a direct refutation from an internal pressure on people who also accept an endless future, then gives his preferred symmetry breaker: on a tensed theory, future events do not yet exist, while past events have been instantiated. That is a real answer, not a dodge. The weakness is that it depends on a controversial theory of time and on whether 'have been instantiated' does the work Craig needs. In the live exchange, the A-theory defense is asserted more than argued. The score is solid because the position is intelligible, but not higher because the symmetry breaker remains contested.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The future/past asymmetry protects the Kalam argument through a disputed extra thesis about tense."
+                }
+              ]
+            },
+            con: {
+              time: "28:49",
+              role: "Symmetry challenge",
+              words:
+                "Malpass argues that if endless future angel-praises are possible, Craig's actual-infinite objection seems to mirror forward unless a real symmetry breaker is supplied.",
+              score: 86,
+              critique:
+                "Malpass's symmetry objection is one of the discussion's strongest moments. It does not merely say Craig is wrong about actual infinities; it asks whether Craig can consistently allow an endless future while rejecting a beginningless past. The angel-praise example is simple, relevant, and dialectically powerful because it uses commitments many theists already accept or at least regard as possible. Malpass also makes clear that the objection concerns possible endless futures, not only actual immortality or angels. The weakness is that it functions mainly as an internal consistency challenge rather than a direct proof of a beginningless past. Even so, the score is high because it identifies a serious burden.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Successive Addition",
+        timebox: "52:03-1:03:13",
+        score: {
+          pro: 83,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "52:18",
+              role: "Successive-addition case",
+              words:
+                "Craig argues that set theory gives infinite collections all at once, but the past would have to be formed by adding one event after another.",
+              score: 83,
+              critique:
+                "Craig's second argument is stronger than the first because it connects infinity directly to temporal formation. The contrast between set-theoretic definition and successive addition is relevant: mathematics can specify an infinite set without explaining how a real series is completed one member at a time. The Jupiter-Saturn and Grim Reaper examples then sharpen the intuition that beginningless temporal accumulation is not ordinary Cantorian bookkeeping. The weakness is that the argument still depends on treating the past as a completed collection in the relevant sense, which Malpass contests through tense and cardinality distinctions. The score is strong because the argument has a clearer temporal mechanism, but it is not decisive.",
+              tags: []
+            },
+            con: {
+              time: "57:15",
+              role: "Infinity grammar",
+              words:
+                "Malpass says infinite cases change the grammar of fewer-than and equinumerosity, and the real issue is transition from finite to infinite states.",
+              score: 82,
+              critique:
+                "Malpass's reply is technically useful because it separates several issues that can blur together. Infinite cardinality makes ordinary fewer-than talk unstable, so one should not assume that finite arithmetic expectations transfer without revision. He also locates the real pressure point: whether a process can transition from finite to infinite, not merely whether two infinite collections behave oddly. That helps explain why he is more interested in counting and temporal structure than in the sheer weirdness of Jupiter and Saturn. The weakness is that this approach can sound deflationary to non-specialists; changing the grammar does not by itself show concrete temporal infinity is possible. The score is strong because the clarification is central.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Every And All",
+        timebox: "1:03:13-1:16:00",
+        score: {
+          pro: 87,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:03:13",
+              role: "Quantifier-shift charge",
+              words:
+                "Craig says Malpass shifts from Cameron will count every finite number to Cameron will count all the numbers, an invalid modal or quantifier move.",
+              score: 87,
+              critique:
+                "Craig's every/all objection is the cleanest technical rebuttal in the exchange. It gives a precise diagnosis rather than another intuition pump: from 'for any number, he will count it' one cannot simply infer 'he will count all numbers as a completed total.' The mother example, fallacy-of-composition framing, and Tristram Shandy analogy make the formal point accessible. This also directly answers Malpass's counting-up scenario. The weakness is that Craig sometimes states the fallacy without giving a fully formal countermodel for Malpass's preferred future-tense version. Even so, the score is very high because the response finds a specific logical vulnerability in the critique. It moves the debate forward.",
+              tags: []
+            },
+            con: {
+              time: "1:09:12",
+              role: "Tense analysis",
+              words:
+                "Malpass replies that counting each future number seems more like a loaf case than a mother case, and accuses Craig of sliding into future-perfect language.",
+              score: 78,
+              critique:
+                "Malpass's tense analysis is creative and relevant. By distinguishing simple future from future perfect, he tries to show that Craig is answering a different claim: not whether Cameron will count each number, but whether there will be a later completed standpoint from which all have been counted. That is a serious challenge to the quantifier-shift accusation. The weakness is that the reply remains hard to pin down. Craig explicitly denies relying on future-perfect language, and Malpass does not give the formal model needed to show that his inference is truth-preserving in this case. The score is solid because the objection may matter, but it remains underdeveloped live.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The reply risks sliding between distributive 'each number' and collective 'all numbers' readings."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Countdown And PSR",
+        timebox: "1:16:42-1:28:31",
+        score: {
+          pro: 81,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:19:43",
+              role: "Countdown puzzle",
+              words:
+                "Craig says a beginningless countdown should already have finished at every earlier point, and a modest PSR demands why it finishes today.",
+              score: 81,
+              critique:
+                "Craig's countdown argument is important because it moves beyond Hilbert-style strangeness into explanatory pressure. If someone finishes counting down from all negative numbers today, then at every earlier point he already had infinitely much time behind him. Craig's question, why today rather than yesterday, is not trivial. Adding a modest principle of sufficient reason gives the puzzle more bite than mere incredulity. The weakness is that he does not state the modest PSR in full during the exchange and refers listeners to his reply to Oppy. That leaves Malpass room to distinguish necessary from sufficient conditions. The score is strong, but the live defense is incomplete.",
+              tags: [
+                {
+                  label: "Authority bias",
+                  type: "bias",
+                  url: bias("authority-bias"),
+                  context:
+                    "The live answer leans on a published reply rather than fully stating the needed PSR."
+                }
+              ]
+            },
+            con: {
+              time: "1:22:28",
+              role: "Partial explanation",
+              words:
+                "Malpass answers that infinite prior counting is necessary, not sufficient, for finishing now, and that partial explanations can displace the mystery.",
+              score: 84,
+              critique:
+                "Malpass gives a strong reply by separating necessary and sufficient conditions. If finishing now entails infinitely much prior counting, it does not follow that infinitely much prior counting entails finishing now. That directly addresses Craig's 'should have finished yesterday' move. His partial-explanation discussion is also useful: explaining why the counter reaches zero now by citing the previous ten counts may shift the remaining mystery without eliminating every background question. The weakness is that this answer depends on a permissive view of partial explanation and may not satisfy even a modest PSR. Still, the score is high because Malpass identifies a real logical gap and supplies a plausible explanatory alternative.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Q and A Close",
+        timebox: "1:29:59-2:04:16",
+        score: {
+          pro: 82,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "2:00:21",
+              role: "Closing synthesis",
+              words:
+                "Craig closes that the Kalam is powerfully supported by philosophical arguments, astrophysical confirmations, and a personal timeless creator conclusion.",
+              score: 82,
+              critique:
+                "Craig's closing is rhetorically efficient. He reconnects the narrow discussion to the larger Kalam: causal premise, philosophical defenses of a beginning, cosmological evidence, and the move to a spaceless, timeless, immaterial, powerful personal creator. That helps listeners remember why the technical infinity debate matters. The weakness is that the closing outruns what was actually defended in the session. The conversation focused on the second premise's philosophical arguments, while the astrophysical evidence and personal-cause inference were mostly asserted rather than debated. The score is strong because the synthesis is clear and relevant, but capped because it stacks additional claims after a very unresolved technical exchange. That restraint matters here.",
+              tags: []
+            },
+            con: {
+              time: "1:46:17",
+              role: "Skeptical close",
+              words:
+                "Malpass says his objections disarm arguments for a beginning rather than prove a beginningless universe, and he admits the Grim Reaper remains difficult.",
+              score: 83,
+              critique:
+                "Malpass's closing posture is intellectually modest and therefore persuasive. He does not claim to have shown that the universe is beginningless; he claims to have undercut specific arguments for a beginning. That is the right burden for a critic of Kalam's second premise. He also candidly says the Grim Reaper argument remains hard to put to bed, which makes his skepticism look more careful than reflexive. The weakness is that the modest posture can leave the positive metaphysical picture thin. If Craig's arguments are weakened, what temporal model should replace them? The score is strong because the burden management is excellent, though the alternative remains underbuilt.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 81,
+        strengths: [
+          "Craig gave unusually clear formulations of the actual-infinite and successive-addition arguments for Kalam's second premise.",
+          "His every/all quantifier-shift objection was a precise logical rebuttal rather than a mere appeal to intuition.",
+          "He tied the technical discussion back to the broader Kalam structure without losing the central focus on whether the universe began."
+        ],
+        blunders: [
+          {
+            text:
+              "His first infinity argument relied on a partly ambiguous move from counterintuitive consequences to metaphysical impossibility.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His past-future asymmetry depended on a controversial tensed theory of time that was asserted more than defended in the live exchange.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His PSR and A-theory defenses sometimes leaned on published work rather than giving the decisive warrant in the room.",
+            links: [
+              {
+                label: "Authority bias",
+                url: bias("authority-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Malpass kept separating strangeness, contradiction, and impossibility, which directly targeted the modal burden of Craig's examples.",
+          "His future-symmetry challenge forced Craig to explain why endless future events do not create the same actual-infinity problem.",
+          "He repeatedly clarified his burden: he was undercutting arguments for a beginning, not arguing that the past is beginningless."
+        ],
+        blunders: [
+          {
+            text:
+              "His counting objections sometimes blurred distributive and collective readings of what it means to count every number versus all numbers.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His tense-analysis reply remained formally under-specified, leaving listeners without a clear model that defeats Craig's quantifier-shift diagnosis.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
