@@ -32496,5 +32496,364 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "hunter-dillahunty-christian-god-exist-2019",
+    number: "93",
+    title: "Braxton Hunter vs Matt Dillahunty: Does the Christian God Exist?",
+    label: "Christian God evidential standards",
+    date: "2026-06-25",
+    duration: "2 hr 11 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=Y9Uktg9nLx8",
+    motion:
+      "Does the Christian God exist, and do libertarian freedom, the Kalam argument, resurrection evidence, hiddenness, and inconsistent revelation make Christian theism more reasonable than skepticism?",
+    summary:
+      "Hunter builds a cumulative case for Christian theism from freedom, cosmology, and resurrection; Dillahunty challenges the inferential method, evidential threshold, and divine-hiddenness implications.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Trinity Radio upload, downloaded with python3 -m yt_dlp during the 2026-06-25 assessment run. The JSON3 caption segments were grouped into readable timestamped lines before analysis. Auto-caption spellings are lightly normalized, including Braxton Hunter and Matt Dillahunty; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God is the best explanation for the beginning of the universe.",
+        context:
+          "Hunter's case is cumulative: libertarian rationality, a cosmic beginning, and Jesus' resurrection are presented as mutually reinforcing evidence for Christian theism."
+      },
+      con: {
+        text: "I am not convinced that there is a God.",
+        context:
+          "Dillahunty frames his side as burden-of-proof skepticism rather than a claim that every possible God has been disproved."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian cumulative case",
+        speaker: "Braxton Hunter",
+        color: "teal"
+      },
+      con: {
+        name: "Evidential skepticism",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 76,
+      con: 83
+    },
+    sections: [
+      {
+        title: "Freedom And Rationality",
+        timebox: "08:30-13:46",
+        score: {
+          pro: 72,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "12:35",
+              role: "Free-will case",
+              words:
+                "Hunter argues that if determinism is true, beliefs could not have been otherwise, so rational affirmation requires libertarian freedom and points toward God.",
+              score: 72,
+              critique:
+                "Hunter's free-will argument gives the debate an ambitious philosophical opening. Its strength is that it targets a real pressure point for naturalism: if all beliefs are causally fixed, what makes reasoning normatively responsive rather than merely produced? He also connects the point to the possibility of rational persuasion, which is relevant in a debate setting. The weakness is that he treats libertarian freedom as the main escape from determinism without adequately considering compatibilist accounts of reasons-responsive cognition. The argument risks assuming that rationality requires the very freedom it is meant to establish. The score is solid because the challenge matters, but limited because the dilemma is under-argued.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The argument partly assumes that rational affirmation requires libertarian freedom, which is the contested premise."
+                }
+              ]
+            },
+            con: {
+              time: "1:16:06",
+              role: "Compatibilist reply",
+              words:
+                "Dillahunty denies that libertarian freedom has been shown and says decision-making can still update from reasons without proving one could have done otherwise.",
+              score: 80,
+              critique:
+                "Dillahunty's reply is strong because it separates the experience of choosing from proof that one could have chosen otherwise in an identical prior state. That directly targets Hunter's key premise. His calculator and decision-system examples are not complete theories of rationality, but they usefully show that rule-governed processes can track inputs and produce better or worse outputs without libertarian freedom. The weakness is that the answer remains mostly defensive. Dillahunty does not fully develop a positive compatibilist account of normativity, responsibility, or why deterministic cognition should be trusted as truth-directed. Still, he successfully prevents Hunter's dilemma from carrying the whole opening case, which earns a strong score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Kalam And Cause",
+        timebox: "13:46-17:22",
+        score: {
+          pro: 76,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "13:46",
+              role: "Kalam extension",
+              words:
+                "Hunter argues that the universe needs a cause beyond time, space, and matter, and that a bodiless mind best explains creation from nothing.",
+              score: 76,
+              critique:
+                "Hunter presents the Kalam in a clear, audience-accessible form. The strongest part is the disciplined sequence: whatever begins to exist needs a cause, the universe began to exist, and the cause cannot be another ordinary natural event if nature itself is at issue. That makes the argument relevant to the motion and avoids treating God as a casual afterthought. The weakness is the familiar identification gap. Moving from a cause of the universe to a spaceless, timeless, immaterial, powerful mind requires additional premises that are only sketched in the speech. The score is respectable because the argument is coherent, but capped because the personal-cause conclusion outruns the defended syllogism.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The move from no natural cause inside nature to a personal mind relies partly on what has not otherwise been explained."
+                }
+              ]
+            },
+            con: {
+              time: "58:42",
+              role: "Identification gap",
+              words:
+                "Dillahunty replies that the Kalam does not conclude God, and that spaceless, timeless, personal-cause claims are extra assertions after the syllogism.",
+              score: 86,
+              critique:
+                "Dillahunty's Kalam reply is one of his cleanest rebuttals. He does not need to prove that the universe is uncaused or past eternal; he only needs to show that Hunter's conclusion is stronger than the premises warrant. Pointing out that God is not in the syllogism and that agent-causation claims arrive afterward exposes a real argumentative gap. He also keeps alternative humility on the table by allowing unknown physics or unknown metaphysics rather than filling the gap with a preferred answer. The weakness is that this can sound purely negative if listeners want a competing origin model. Even so, the burden discipline is excellent and directly relevant.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection Evidence",
+        timebox: "17:22-25:04",
+        score: {
+          pro: 78,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "17:22",
+              role: "Resurrection case",
+              words:
+                "Hunter says God's existence and Jesus' self-understanding recalibrate plausibility, then uses bedrock facts, appearances, and martyrdom to argue God raised Jesus.",
+              score: 78,
+              critique:
+                "Hunter's resurrection case is organized and stronger than a bare appeal to scripture. He states a conditional bridge, argues that prior theism would raise miracle plausibility, and then lists historical anchors such as crucifixion, reported appearances, and early conviction. The NASA analogy helps explain why background knowledge can change what counts as plausible. The weakness is that the case compresses several contested moves: minimal facts, sincerity, group experience, and divine action are not the same kind of evidence. The scholar list helps establish some historical common ground, but it cannot by itself carry the supernatural conclusion. The score is solid because the structure is serious, not decisive.",
+              tags: [
+                {
+                  label: "Authority bias",
+                  type: "bias",
+                  url: bias("authority-bias"),
+                  context:
+                    "The scholar list supports limited historical points but can sound like broader authority for the resurrection conclusion."
+                }
+              ]
+            },
+            con: {
+              time: "1:03:04",
+              role: "Historical caution",
+              words:
+                "Dillahunty says plausibility can update with new data, but single ancient miracle claims lack the repeatable checks needed to identify resurrection as the best explanation.",
+              score: 84,
+              critique:
+                "Dillahunty's resurrection reply is effective because it accepts a reasonable principle while denying Hunter's application. He agrees that new information can change plausibility, which avoids a crude anti-miracle dogmatism. He then asks whether ancient testimony, reported appearances, and sincerity can identify a supernatural resurrection rather than grief, legend, error, interpretation, or some other unknown. That is the right epistemic pressure. The weakness is that he does not offer a worked alternative explanation during the main exchange, and he later explicitly says he is not presenting one tonight. That leaves Hunter's inference-to-best-explanation frame partly uncontested. The score remains high because undercutting sufficiency is enough for Dillahunty's burden.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Hiddenness And Revelation",
+        timebox: "35:25-46:19",
+        score: {
+          pro: 72,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "53:17",
+              role: "Hiddenness reply",
+              words:
+                "Hunter says God is not all that hidden because philosophy, history, science, and experience provide evidence, while God seeks trusting relationship rather than mere belief.",
+              score: 72,
+              critique:
+                "Hunter's hiddenness reply has a humane theological point: if God wants relationship rather than forced compliance, evidence may not function like a laboratory demonstration. He also rightly notes that the debate should not reduce God to one isolated proof when the cumulative case includes philosophy, history, and experience. The weakness is that this does not fully answer Dillahunty's challenge about sincere nonresistant nonbelief and inconsistent revelation. Clearer evidence need not eliminate trust, worship, or moral freedom; it could simply make the target less ambiguous. Invoking Dillahunty's hypothetical refusal to worship also shifts from evidence to attitude. The score is moderate because the reply is coherent but incomplete.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The answer treats divine ambiguity as relationship-preserving without showing why clearer evidence would block genuine trust."
+                }
+              ]
+            },
+            con: {
+              time: "35:25",
+              role: "Hiddenness challenge",
+              words:
+                "Dillahunty argues that a God who wants clarity, reason, and relationship should produce less silence and less inconsistent revelation.",
+              score: 88,
+              critique:
+                "Dillahunty's hiddenness argument is the strongest skeptical line of the debate. It fits the specific Christian-God motion because the God under discussion is not merely a deistic first cause but a personal being who allegedly cares about belief, reason, worship, and relationship. The inconsistent-revelation point adds concrete evidence: believers themselves often identify errors in rival revelations, denominations, and interpretations. Dillahunty's move does not disprove every possible God, but it creates a strong expectation mismatch for a communicative, loving God. The weakness is that he could distinguish more carefully between evidence sufficient for belief and evidence sufficient for willing worship. Still, the argument is targeted, public, and hard to wave away.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Evidence Standards",
+        timebox: "47:11-1:11:30",
+        score: {
+          pro: 74,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "48:37",
+              role: "Threshold challenge",
+              words:
+                "Hunter argues Dillahunty's skepticism is unrealistic if moon-writing or a sea parted in Jesus' name still would not count as sufficient evidence.",
+              score: 74,
+              critique:
+                "Hunter's threshold challenge is rhetorically useful because it presses whether skepticism has become unfalsifiable in practice. If even dramatic public signs would not raise confidence, listeners are entitled to ask what kind of evidence would matter. That question matters in a debate about God because evidence standards can be set so high that no historical or philosophical case can enter. The weakness is that Hunter sometimes makes Dillahunty's personal threshold the issue instead of defending the evidence actually offered. A skeptic can doubt one hypothetical miracle report without being closed to every possible demonstration. The score is solid because the challenge exposes a real ambiguity, but it risks distraction.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The exchange shifts from whether Hunter's evidence establishes Christian theism to whether Dillahunty's hypothetical threshold sounds too strict."
+                }
+              ]
+            },
+            con: {
+              time: "1:09:21",
+              role: "Demonstration standard",
+              words:
+                "Dillahunty says evidential standards differ by claim, and if God exists, God knows what would convince him without violating freedom.",
+              score: 82,
+              critique:
+                "Dillahunty's answer is epistemically careful. He distinguishes ordinary claims, like a dog in a room, from extraordinary God claims that would transform metaphysics, morality, and history. That proportionality principle is reasonable and directly answers Hunter's charge that skepticism demands Cartesian certainty. His point that an omniscient God would know what evidence would convince him also turns the hiddenness problem back onto theism. The weakness is that the standard remains partly opaque: saying a Jesus appearance would begin an investigation but not settle it may leave listeners unsure where rational confidence would ever cross the line. The score is strong because the principle is sound, but not maximally specified.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The evidential threshold is reasonable in principle but remains under-specified in borderline miracle cases."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Method And Falsifiability",
+        timebox: "1:12:08-2:06:00",
+        score: {
+          pro: 80,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:27:46",
+              role: "Method pluralism",
+              words:
+                "Hunter says science is like a metal detector: useful for some targets, while God questions require philosophy and history as different tools.",
+              score: 80,
+              critique:
+                "Hunter's method answer is one of his better cross-examination moments. The metal-detector analogy is simple but apt: a method can be powerful within a domain without being the only rational tool for every question. That lets him defend philosophy and history against a narrow scientism charge, and it fits his cumulative case. He also gives a real falsifiability answer later, naming contradiction in the God concept or strong early evidence that disciples knowingly fabricated the resurrection. The weakness is that method pluralism does not show that his particular philosophical and historical inferences succeed. It only keeps them admissible. The score is strong because the methodological correction is fair.",
+              tags: []
+            },
+            con: {
+              time: "1:29:56",
+              role: "Method demand",
+              words:
+                "Dillahunty asks what reliable methodology actually leads to God, and says even a universe cause would not identify an agent.",
+              score: 85,
+              critique:
+                "Dillahunty's method demand remains powerful because it asks for reliability, not for science to answer every question. He grants that different domains use different tools, but presses for a way to distinguish a genuine supernatural cause from assertion, interpretation, or a satisfying label. That is especially relevant when Hunter moves from cause to agent and from ancient conviction to resurrection. Dillahunty's ruler analogy in the Q and A also captures why unreliable methods lower confidence even when a claim is not disproved. The weakness is that his method talk can become broadly skeptical without ranking the separate evidences in Hunter's cumulative case. Even so, the challenge is clear and central.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 76,
+        strengths: [
+          "Hunter presented a clear cumulative structure rather than relying on one isolated proof for Christian theism.",
+          "He distinguished generic theistic arguments from the specifically Christian claim by using the resurrection as the identifying step.",
+          "His cross-examination was civil and probing, especially on evidential thresholds, method pluralism, and falsifiability."
+        ],
+        blunders: [
+          {
+            text:
+              "His free-will argument treated libertarian freedom as required for rationality without adequately answering compatibilist accounts.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His Kalam argument moved from a cause of the universe to a personal mind faster than the stated premises warranted.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His hiddenness reply leaned on divine relationship and Dillahunty's attitude without fully answering sincere nonresistant nonbelief.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 83,
+        strengths: [
+          "Dillahunty kept the burden on the specific Christian God rather than letting generic theism settle the motion.",
+          "His hiddenness and inconsistent-revelation arguments directly targeted the expectations created by a personal, communicative deity.",
+          "He repeatedly separated not being convinced from claiming disproof, which kept his skeptical position modest and defensible."
+        ],
+        blunders: [
+          {
+            text:
+              "His evidential threshold sometimes remained under-specified, making it unclear when even dramatic public signs would justify belief.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His resurrection reply undercut sufficiency well, but did not separately weigh each strand of Hunter's cumulative historical case.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
