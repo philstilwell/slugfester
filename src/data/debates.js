@@ -31466,5 +31466,359 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "akin-ehrman-gospels-historically-reliable-2022",
+    number: "90",
+    title:
+      "Jimmy Akin vs Bart Ehrman: Are the Gospels Historically Reliable?",
+    label: "Gospel reliability and contradictions",
+    date: "2026-06-25",
+    duration: "2 hr 13 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=Zn7lmu0pek0",
+    motion:
+      "Are the canonical Gospels historically reliable despite alleged contradictions in the birth narratives, resurrection accounts, and Jesus' self-presentation?",
+    summary:
+      "Akin defends Gospel reliability by separating gist from inerrancy; Ehrman argues that central narrative conflicts make the Gospels documents of faith rather than dependable historical accounts.",
+    sourceNote:
+      "Built from YouTube English automatic captions for the Jimmy Akin upload, downloaded with python3 -m yt_dlp during the 2026-06-25 assessment run. The captions used rolling fragments, so only the new tail of each caption window was reconstructed before analysis. Auto-caption spellings are lightly normalized, including Jimmy Akin where captions rendered variants such as Jimmy Aiken and Bart Ehrman where captions rendered variants such as Dr. Urban or Dr. Durham; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "reliability is not the same thing as inerrancy",
+        context:
+          "Akin's central defense is that historical reliability should be judged by verified gist and major claims, not by a zero-error standard."
+      },
+      con: {
+        text: "documents of faith, not as historically accurate accounts",
+        context:
+          "Ehrman's closing captures his view that the Gospels preach theological messages and should not be forced into modern historical precision."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Gospel reliability",
+        speaker: "Jimmy Akin",
+        color: "teal"
+      },
+      con: {
+        name: "Historical unreliability",
+        speaker: "Bart Ehrman",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 80,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Reliability Standard",
+        timebox: "3:00-33:00",
+        score: {
+          pro: 82,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "26:00",
+              role: "Burden frame",
+              words:
+                "Akin argues reliability is a spectrum, not inerrancy, and Ehrman bears the burden of showing the Gospels are historically unreliable.",
+              score: 82,
+              critique:
+                "Akin's opening standard is effective because it prevents the debate from collapsing into a brittle zero-error test. Reliability and inerrancy are different ideas, and historians often treat sources as useful despite mistakes. His burden-of-proof move also fits the formal resolution, which asks Ehrman to defend unreliability. The weakness is that Akin's spectrum needs a clearer threshold. Saying a source is reliable if many major, intermediate, and lesser claims are verified is plausible, but it can become elastic if central disputed claims are reclassified as lesser whenever they create trouble. The score is strong because the framing is necessary, but not decisive without a sharper weighting rule.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The reliability threshold remains somewhat vague, making it easier to preserve confidence despite unresolved errors."
+                }
+              ]
+            },
+            con: {
+              time: "4:00",
+              role: "Historical question",
+              words:
+                "Ehrman says the historical question is whether the Gospels describe what actually happened, then targets birth, resurrection, and Jesus' self-claims.",
+              score: 85,
+              critique:
+                "Ehrman's opening is strong because he defines the question in ordinary historical terms: if a Gospel says Jesus said or did something, did that happen? He also avoids total skepticism by granting a reliable broad outline of Jesus as a Jewish preacher crucified under Pilate. That concession improves his credibility and keeps the argument focused on important conflicts rather than trivia. The birth, resurrection, and self-presentation categories are relevant and central. The weakness is that 'historically reliable' can mean more than transcript-level precision, and Ehrman sometimes sounds as if serious conflict in selected areas settles the whole source. The score is high because he targets the right evidential burden.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Birth Narratives",
+        timebox: "6:00-1:16:00",
+        score: {
+          pro: 67,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:06:00",
+              role: "Bethlehem harmonization",
+              words:
+                "Akin proposes Joseph had connections or property in both Bethlehem and Nazareth, and that apparently divergent genealogical lines can converge.",
+              score: 67,
+              critique:
+                "Akin's birth-narrative defense has the virtue of trying to read Matthew and Luke together rather than simply ignoring the conflict. Multiple ancestral lines can converge, and ancient genealogies do not always function like modern civil records. Those are fair cautions. The problem is that the specific two-residence solution arrives without independent support and absorbs the contradiction by adding social facts not stated in either account. Ehrman's economic pushback makes that rescue look especially strained for a lower-class artisan family. The genealogy answer also faces the text's father-to-son wording. The score is mixed because harmonization is possible in abstract, but this version feels under-evidenced and ad hoc.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The two-residence and converging-line solutions add unverified assumptions to protect the favored harmonization."
+                }
+              ]
+            },
+            con: {
+              time: "12:00",
+              role: "Birth conflict",
+              words:
+                "Ehrman says Matthew places the family in Bethlehem and Egypt, while Luke has them from Nazareth because of a census.",
+              score: 88,
+              critique:
+                "Ehrman's birth-narrative case is one of the debate's clearest examples. He does not merely list different details like shepherds and visitors; he isolates a chronological and geographical tension. In Matthew, the family appears rooted in Bethlehem, flees to Egypt, then relocates to Nazareth. In Luke, they travel from Nazareth to Bethlehem for a census and return after the required temple observances. The argument is concrete, checkable, and reinforced in cross-examination when Akin's two-home answer appears speculative. The weakness is that Ehrman occasionally moves from difficulty to impossibility faster than every harmonizer would allow. Still, the score is very high because the challenge is specific and central.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection Accounts",
+        timebox: "15:00-1:17:00",
+        score: {
+          pro: 73,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "55:00",
+              role: "Shared resurrection",
+              words:
+                "Akin says all four Gospels agree Jesus rose, so disputes over Galilee, Jerusalem, and timing are lesser matters.",
+              score: 73,
+              critique:
+                "Akin's shared-resurrection point has real force. If all four Gospels affirm the central resurrection claim, then disagreement over appearances, locations, or narrative sequence does not automatically erase the shared core. His broader method also fits many historical comparisons: sources can disagree while still preserving an event. The weakness is the word 'lesser.' For this debate, where and how the disciples learn of and encounter the risen Jesus is not a decorative detail; it bears on the reliability of the resurrection tradition itself. Calling the conflicts secondary can look like narrowing the major claim until it is hard to test. The score is solid but limited by underweighting the disputed evidence.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The reply shrinks a central resurrection reliability question into a smaller category of peripheral details."
+                }
+              ]
+            },
+            con: {
+              time: "16:00",
+              role: "Appearance conflict",
+              words:
+                "Ehrman says Mark, Matthew, and Luke differ on whether the women tell anyone and where the disciples encounter Jesus.",
+              score: 87,
+              critique:
+                "Ehrman's resurrection challenge is strong because it focuses on the narrative mechanics by which the resurrection is known. Mark's women flee in silence, Matthew sends the disciples to Galilee, and Luke keeps the appearances and instructions centered in Jerusalem. These are not merely different camera angles if they create incompatible sequences. In cross-examination, Ehrman presses Luke's same-day chronology and Acts's forty-day Jerusalem setting, which makes the problem sharper. The weakness is that resurrection traditions can include multiple appearances across locations, and Ehrman must show the texts exclude that flexibility rather than simply omit pieces. The score is high because he identifies a genuine historical-reliability pressure point.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Accepted Core Claims",
+        timebox: "33:00-48:00",
+        score: {
+          pro: 84,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "33:00",
+              role: "Verified core",
+              words:
+                "Akin lists major, intermediate, and lesser claims about Jesus that Ehrman accepts, then argues this is enough for historical reliability.",
+              score: 84,
+              critique:
+                "Akin's catalogue of accepted claims is his best positive evidence. By using Ehrman's own concessions about Jesus' existence, Jewish context, teaching, disciples, crucifixion, Pilate, John the Baptist, Galilee, Jerusalem, and several sayings, he shows that the Gospels preserve a substantial historical core. That is a legitimate answer to blanket unreliability. It also reminds the audience that historical criticism is not the same as total dismissal. The weakness is that numerical breadth does not settle weighted importance. A source can be right about many background items while wrong or theological in the debated claims. The score is high because Akin successfully rebuts crude skepticism, though not Ehrman's strongest version.",
+              tags: []
+            },
+            con: {
+              time: "44:00",
+              role: "Central-errors reply",
+              words:
+                "Ehrman grants the accepted basics but argues a source can get broad facts right while failing on central disputed details.",
+              score: 83,
+              critique:
+                "Ehrman's rebuttal to the concession catalogue is well aimed. He accepts Akin's list rather than fighting it, then argues that reliability is not just a count of correct broad facts. His city analogy makes the point: one can know general truths about a place while still giving badly wrong information on important particulars. Applied to the Gospels, the birth, resurrection, and self-presentation conflicts are not minor if they are precisely what the debate asks listeners to trust. The weakness is that the analogy risks making reliability too all-or-nothing if many ordinary historical sources survive comparable mixed performance. The score is strong because Ehrman answers the weighting problem directly.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Ancient Composition",
+        timebox: "56:00-1:38:00",
+        score: {
+          pro: 82,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "57:00",
+              role: "Gist practices",
+              words:
+                "Akin says ancient writers used selection, paraphrase, sequencing, and gist, so differences need not be historical errors.",
+              score: 82,
+              critique:
+                "Akin's appeal to ancient writing practices is important and mostly fair. Selection, paraphrase, topical arrangement, and approximate gist are normal in ancient literature and modern communication alike. This blocks an overly wooden standard that demands verbatim transcripts or rigid chronology. His cross-examination also gets useful concessions from Ehrman that selection and paraphrase are not automatically contradictions. The weakness is that genre flexibility cannot rescue every discrepancy. The harder question is when a Gospel is merely selecting or paraphrasing and when it is narrating events differently because its theological message has reshaped the tradition. The score is strong because the tool is valid, but it needs case-by-case discipline.",
+              tags: []
+            },
+            con: {
+              time: "1:25:00",
+              role: "Genre caution",
+              words:
+                "Ehrman replies that ancient biographies often created speeches, changed material for message, and cannot be treated like modern transcripts.",
+              score: 85,
+              critique:
+                "Ehrman's genre caution is a strong counterweight to Akin's gist defense. He agrees that ancient authors select, paraphrase, and arrange, but insists that those very practices can reduce modern historical recoverability. His examples about long speeches and later Gospel composition directly challenge claims that extended discourses preserve Jesus' words with high confidence. The point is especially effective because it accepts the genre premise while drawing a different historical conclusion. The weakness is that Ehrman can overgeneralize from ancient biography's looseness to this text's looseness; each passage still needs evidence. The score is high because he prevents 'ancient practice' from becoming a blanket excuse for discrepancies.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Closing Burdens",
+        timebox: "1:52:00-2:13:24",
+        score: {
+          pro: 82,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "2:09:00",
+              role: "Burden close",
+              words:
+                "Akin closes that Ehrman has not shown enough errors to counterbalance verified claims, so the Gospels remain historically reliable.",
+              score: 82,
+              critique:
+                "Akin's closing lands because it returns to the formal burden. The resolution says the Gospels are unreliable, and Akin argues Ehrman has not supplied enough errors to counterbalance the major and intermediate claims he himself grants. That is a clean debate strategy, and the reliability-versus-inerrancy distinction remains important to the final judgment. The weakness is that 'enough errors' is still underspecified. If the contested cases involve infancy, resurrection appearances, and Jesus' identity, then the weighting may matter more than the count. Akin also leans on outside resources rather than fully resolving the hardest examples in the room. The score is strong but not victorious. That matters.",
+              tags: []
+            },
+            con: {
+              time: "2:05:00",
+              role: "Faith documents",
+              words:
+                "Ehrman closes that the Gospels are documents of faith, changed for message and audience, not modern historical transcripts.",
+              score: 84,
+              critique:
+                "Ehrman's closing is persuasive when it says the Gospels should be read as faith documents with distinct theological messages rather than flattened into one modern-style report. That coheres with his Mark-Luke passion comparison and his insistence on reading each author separately. It also gives believers a way to value the texts without pretending every narrative tension disappears. The weakness is that the closing broadens into how Christian tradition should change across eras, which drifts beyond whether the canonical Gospels are historically reliable. He also risks making historical and theological value too separate. The score is high because the main distinction is clear, but the final application wanders.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The closing's late move into changing Christian tradition distracts from the narrower historical-reliability resolution."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 80,
+        strengths: [
+          "Akin framed reliability as a spectrum distinct from inerrancy, which avoided an unrealistically brittle standard for ancient sources.",
+          "He used Ehrman's own concessions to show that the Gospels preserve a substantial historical core about Jesus' life, context, teaching, and death.",
+          "His discussion of selection, paraphrase, sequencing, and gist correctly forced the debate to account for ancient compositional practices."
+        ],
+        blunders: [
+          {
+            text:
+              "His Bethlehem and genealogy harmonizations introduced unsupported assumptions that looked designed to preserve consistency rather than drawn from the texts.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "He often treated resurrection-location and sequence conflicts as lesser matters even though they bear directly on the reliability of the central resurrection tradition.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His reliability threshold remained flexible enough that it was unclear how many or what kind of errors would actually defeat reliability.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Ehrman defined the historical question clearly and conceded the broad Jesus tradition where he thought the evidence warranted it.",
+          "His birth, resurrection, and Mark-Luke passion examples were concrete, text-specific, and hard to dismiss as merely different emphases.",
+          "He repeatedly distinguished religious or theological value from what historians can establish about what happened."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes moved from selected central conflicts to broad unreliability without giving a fully explicit threshold for source-wide failure.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His ancient-biography caution could underweight how many ancient sources remain historically usable despite speeches, arrangement, and theological framing.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His closing drift into broader claims about changing Christian tradition distracted from the narrower question of Gospel historical reliability.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
