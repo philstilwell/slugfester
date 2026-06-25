@@ -212,6 +212,11 @@ export const interlocutorAvatars = [
     aliases: ["Guillaume Bignon"]
   },
   {
+    name: "Jimmy Akin",
+    src: `${avatarBasePath}/jimmy-akin.webp`,
+    aliases: ["Jimmy Akin", "Jimmy Aiken", "James Akin"]
+  },
+  {
     name: "Ben Shapiro",
     src: `${avatarBasePath}/ben-shapiro.webp`,
     aliases: ["Ben Shapiro", "Benjamin Shapiro", "Benjamin A. Shapiro", "Benjamin A Shapiro"]
