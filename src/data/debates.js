@@ -32855,5 +32855,340 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "swinburne-huemer-theism-coherent-2026",
+    number: "94",
+    title: "Richard Swinburne vs Michael Huemer: Is Theism Coherent?",
+    label: "Theism coherence and divine infinity",
+    date: "2026-06-30",
+    duration: "55 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=1IkAU6zAYLU",
+    motion:
+      "Is theism coherent, especially if God is described as omnipotent, omniscient, perfectly good, and infinite in power or knowledge?",
+    summary:
+      "Swinburne defends a coherent Christian-theist model by revising divine attributes around maximal possible power and limited future knowledge; Huemer argues perfect-being theism requires impossible infinite magnitudes.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the NT Podcast upload, downloaded with python3 -m yt_dlp during the 2026-06-30 assessment run. The video description says the remainder of the debate continues on Patreon, so this assessment covers the public 55-minute YouTube segment only. Auto-caption spellings are lightly normalized, including Richard Swinburne, Michael Huemer, omniscience, and NT Podcast; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "It's a mistake to start from a definition of God.",
+        context:
+          "Swinburne shifts the debate from a maximal definition to the kind of first cause made probable by broad features of the world."
+      },
+      con: {
+        text: "There could not be an infinite god.",
+        context:
+          "Huemer's central challenge is that perfect-being theism appears to require infinite power, knowledge, or intelligence, which he treats as impossible intensive magnitudes."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Coherent theism",
+        speaker: "Richard Swinburne",
+        color: "teal"
+      },
+      con: {
+        name: "Incoherence critique",
+        speaker: "Michael Huemer",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 74,
+      con: 85
+    },
+    sections: [
+      {
+        title: "Target Conception",
+        timebox: "0:58-15:06",
+        score: {
+          pro: 80,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "13:19",
+              role: "Definition refusal",
+              words:
+                "Swinburne says no major pre-18th-century theologian or creed made God an infinite being, so Huemer's target may not be the Christian view.",
+              score: 80,
+              critique:
+                "Swinburne's opening response is strategically important. Instead of accepting a maximal perfect-being definition, he asks whether that definition is actually required by Christian theism. The move is fair because a coherence critique must hit the view being defended, not a stronger verbal package. His further shift toward explanatory first cause also gives theism a more argument-driven starting point. The weakness is that the tradition claim is doing a lot of work quickly. Many theologians may not use the word infinite in creeds while still affirming attributes that behave without finite limits. The score is strong because the target clarification matters, but it does not yet dissolve Huemer's underlying attribute problem.",
+              tags: [
+                {
+                  label: "Authority bias",
+                  type: "bias",
+                  url: bias("authority-bias"),
+                  context:
+                    "The appeal to creeds and eminent theologians helps identify tradition, but does not by itself settle the conceptual issue."
+                }
+              ]
+            },
+            con: {
+              time: "1:50",
+              role: "Target narrowing",
+              words:
+                "Huemer says he is not denying intelligent design or imperfect supernatural beings, but questioning the maximal perfect, infinite God of western theology.",
+              score: 86,
+              critique:
+                "Huemer's target-setting is excellent debate hygiene. He explicitly excludes weaker claims, such as intelligent design or imperfect supernatural agents, and focuses on the maximal God of perfect-being theism. That prevents the discussion from drifting into whether some supernatural designer might exist. He also introduces traditional objections only to set them aside, which keeps attention on his distinctive infinity argument. The weakness is that his summary of western theology may still be broader than Swinburne's preferred Christian model. If the defender can coherently reject necessity or literal infinity, Huemer must show those revisions are too costly. The score is high because the burden and target are unusually clear.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Impossible Infinite Attributes",
+        timebox: "6:00-23:08",
+        score: {
+          pro: 74,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "15:03",
+              role: "First-cause route",
+              words:
+                "Swinburne argues that the better starting point is the most probable first cause of a lawful, intelligible universe with conscious human beings.",
+              score: 74,
+              critique:
+                "Swinburne's first-cause route is relevant because it explains why he resists Huemer's definition-first method. If theism is an explanatory hypothesis, then divine attributes may be inferred and refined by explanatory work rather than stipulated at maximal intensity. That is a coherent methodological alternative. The weakness is that he cannot give the actual probability argument in the allotted time, so the move mostly relocates the burden. The coherence question remains: if the best first cause must be omnipotent or omniscient, those attributes still need conceptual analysis. The score is solid because the route is legitimate, but limited because it functions more as a promissory framework than a direct rebuttal.",
+              tags: []
+            },
+            con: {
+              time: "9:16",
+              role: "Intensive-infinity case",
+              words:
+                "Huemer argues that infinite power is like infinite force, velocity, or distance: an impossible non-extensive magnitude rather than a coherent maximum.",
+              score: 88,
+              critique:
+                "Huemer's core argument is sharp and philosophically substantive. He distinguishes possible infinities, such as infinite sets or extensive magnitudes, from impossible non-extensive magnitudes, such as infinite velocity, force, or perhaps power. That gives the objection more structure than a generic discomfort with infinity. Thompson's lamp and the irresistible-force case then illustrate why some infinite magnitudes generate no coherent final state or application condition. The weakness is that the analogy from force or velocity to divine power is not automatic. Power may be modal capacity over kinds of acts rather than a measurable physical magnitude. Still, the argument sets a serious burden and explains exactly why infinite divine attributes look suspect.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Omnipotence And Goodness",
+        timebox: "15:59-26:52",
+        score: {
+          pro: 73,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "15:59",
+              role: "Maximal-power account",
+              words:
+                "Swinburne defines omnipotence as power over everything or the greatest possible power, excluding logically impossible pseudo-actions.",
+              score: 73,
+              critique:
+                "Swinburne gives a recognizable classical move: omnipotence does not include doing what is logically impossible, because contradictions do not describe genuine actions. That handles stone-style paradoxes and lets him connect power with knowledge of possible actions. His further claim that perfect goodness follows because an omnipotent being lacks conflicting desires is also an interesting internal reconstruction. The weakness is that defining power as the greatest possible amount does not answer Huemer's claim that no such greatest amount exists unless an impossible infinity exists. The goodness inference is also compressed and contestable. The score is moderate-solid because the distinctions are relevant, but they leave the central quantity challenge alive.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The answer risks sliding between omnipotence as capacity for all possible acts and power as a greatest measurable amount."
+                }
+              ]
+            },
+            con: {
+              time: "23:38",
+              role: "No maximum reply",
+              words:
+                "Huemer replies that if God is all-powerful, there must be a greatest possible power, but unbounded quantities have no greatest finite value.",
+              score: 85,
+              critique:
+                "Huemer's no-maximum reply lands well against Swinburne's formulation. If power is a magnitude, saying God has the greatest possible amount naturally invites the question whether that amount is finite or infinite. Huemer's velocity comparison clarifies the problem: a series can increase without containing a highest member. His added knowledge and intelligence examples broaden the challenge beyond one attribute. The weakness is that the reply depends on treating divine power as a quantity in the same family as speed, strength, or information processing. Swinburne can resist that metric. Even so, once Swinburne uses greatest-amount language, Huemer's pressure is directly on point and earns a strong score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Omniscience And Freedom",
+        timebox: "19:19-33:18",
+        score: {
+          pro: 78,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "19:19",
+              role: "Limited omniscience",
+              words:
+                "Swinburne says literal knowledge of every future truth conflicts with divine freedom, so God knows the past and logical truths but not future free choices.",
+              score: 78,
+              critique:
+                "Swinburne's omniscience revision is candid and comparatively clear. He does not pretend that exhaustive foreknowledge and libertarian freedom fit together easily; instead, he narrows divine knowledge to the past, logical truths, possible actions, and what can be known without fixing future free acts. That is a serious coherence-saving move, and his appeal to biblical divine regret shows that the view has at least some Christian-textual foothold. The weakness is cost. Many listeners will hear this as revising omniscience rather than defending it, and the tradition appeal is selective against the majority classical view. The score is solid because the model is coherent, but it concedes substantial ground.",
+              tags: []
+            },
+            con: {
+              time: "30:57",
+              role: "Residual-infinity reply",
+              words:
+                "Huemer grants that future free choices might be indeterminate, but says knowing all determinate facts, mathematics, and physical states still yields infinite knowledge.",
+              score: 83,
+              critique:
+                "Huemer's residual-infinity reply is a strong adaptation. He does not need God to know future free choices if the remaining determinate facts already require infinite information: mathematical truths, past facts, and perhaps the precise current physical state. This prevents Swinburne's open-future move from escaping the infinity problem entirely. Huemer also distinguishes what might persuade Christians from what should persuade an outside critic, which is dialectically fair. The weakness is that infinite knowledge may be a countable or set-theoretic infinity rather than the impossible intensive magnitude Huemer began with. Knowing infinitely many truths is not obviously like having infinite velocity. The score is strong because the reply keeps pressure on the revised model.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Quantifying Divine Power",
+        timebox: "33:16-39:20",
+        score: {
+          pro: 68,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "33:16",
+              role: "Ordinary-language resistance",
+              words:
+                "Swinburne says dividing acts into infinitely many mathematical parts is artificial; ordinary claims about what God can do should be read naturally.",
+              score: 68,
+              critique:
+                "Swinburne's ordinary-language resistance has a fair caution inside it. Philosophical theology should not automatically import every mathematical construction into ordinary claims about agency, power, and action. His worry about artificial division matters when an argument depends on redescribing one act as infinitely many subacts. The weakness is that Huemer immediately clarifies that his lifting example is not about dividing one action, but about having no upper limit on weight. Swinburne's reply therefore answers a nearby but weaker version of the challenge. Saying infinity is a mathematical invention also undercuts too much, since the debate is already about modal and quantitative coherence. The score is lower because the rebuttal misses the refined point.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The reply focuses on artificial division of an act, while Huemer's clarified point is about no upper limit on a power magnitude."
+                }
+              ]
+            },
+            con: {
+              time: "35:30",
+              role: "Any-weight example",
+              words:
+                "Huemer clarifies that a being able to lift any weight, with no upper limit, seems to need infinite strength, not merely many sub-actions.",
+              score: 87,
+              critique:
+                "Huemer's any-weight example is one of the debate's clearest moments. It removes Swinburne's first misunderstanding by saying the issue is not how many parts an action has, but whether a capacity with no upper bound is a finite or infinite magnitude. The progression from lifting 50 pounds, 100 pounds, 200 pounds, and then any weight makes the intuition accessible without technical machinery. The weakness is that the example may still anthropomorphize divine agency by modeling it on muscular force. A theist might treat God's power as direct actualization rather than strength. Even with that caveat, Huemer identifies the exact unboundedness problem Swinburne had not answered.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Embodiment And Lamp Paradox",
+        timebox: "39:17-54:32",
+        score: {
+          pro: 72,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "39:44",
+              role: "Logical-possibility defense",
+              words:
+                "Swinburne says God cannot walk or marry because God is necessarily bodiless, while the incarnation uses the traditional two-natures distinction.",
+              score: 72,
+              critique:
+                "Swinburne's embodiment answer is the stronger part of his late exchange. The logical-impossibility strategy works better here because having a body would constrain a necessarily bodiless divine nature, while the incarnation can be treated through the traditional two-natures account. That is a recognizable and internally coherent Christian reply. His later timelessness comments are also honest: a timeless God might avoid some foreknowledge problems, but he says he cannot make much sense of that model. The weakness appears in the Thompson's lamp exchange, where he admits he needs to think and then leans on periods of time without clearly answering the no-final-switching problem. The score is mixed-positive.",
+              tags: []
+            },
+            con: {
+              time: "45:24",
+              role: "Thompson-lamp pressure",
+              words:
+                "Huemer presses why God could not realize Thompson's lamp, since after infinitely many switchings there is no final switching but there are later observations.",
+              score: 84,
+              critique:
+                "Huemer's late pressure is effective because it returns the abstract infinity issue to a concrete paradox. If omnipotence lets God perform every switching in the Thompson-lamp sequence, then after the hour a later observer should find the lamp either on or off, yet the sequence supplies no final switch to determine the state. Huemer also blocks Swinburne's instantaneous-event reply by saying each switching can take a nonzero interval and the observation occurs after the sequence. The weakness is that the paradox itself is controversial; rejecting the scenario may be more plausible than using it to revise theism. Still, Huemer exposes how unresolved Swinburne's infinity response remains.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 74,
+        strengths: [
+          "Swinburne refused to defend an unnecessarily maximal definition and instead pushed for an explanatory first-cause model of theism.",
+          "He handled the foreknowledge problem candidly by limiting future knowledge rather than pretending exhaustive omniscience and libertarian freedom are obviously compatible.",
+          "His two-natures response to the incarnation/bodylessness challenge was clear and recognizably rooted in classical Christian doctrine."
+        ],
+        blunders: [
+          {
+            text:
+              "His appeal to creeds and pre-18th-century theologians helped locate tradition but did not settle whether traditional attributes imply unbounded power or knowledge.",
+            links: [
+              {
+                label: "Authority bias",
+                url: bias("authority-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His omnipotence defense shifted between power as all logically possible acts and power as a greatest possible magnitude.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His reply to the any-weight and Thompson-lamp challenges often answered nearby timing or division issues rather than the no-upper-bound problem itself.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 85,
+        strengths: [
+          "Huemer sharply narrowed the target to perfect-being theism and avoided claiming that every designer or imperfect supernatural being is impossible.",
+          "His distinction between possible extensive infinities and impossible intensive magnitudes gave the critique a clear metaphysical structure.",
+          "He adapted well under response, shifting from future foreknowledge to determinate facts and from divided actions to unbounded capacities."
+        ],
+        blunders: [
+          {
+            text:
+              "His argument sometimes treated divine power, information, and intelligence as if they must share one measurable scale with force, velocity, strength, or IQ.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His critique gave less attention to Swinburne's explanatory first-cause route, where attributes might be inferred and limited rather than defined maximally at the start.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
