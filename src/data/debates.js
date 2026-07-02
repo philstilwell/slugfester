@@ -33190,5 +33190,357 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "craig-frazier-goff-folley-god-reality-2026",
+    number: "95",
+    title:
+      "William Lane Craig, Jessica Frazier, Philip Goff, and Joe Folley: Did God Create Reality?",
+    label: "God reality and objective meaning",
+    date: "2026-07-02",
+    duration: "1 hr 45 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=ZVMMO_kgtDQ",
+    motion:
+      "Did God create physical reality, and does classical theism best explain the universe, objective meaning, mystical experience, consciousness, and moral obligation?",
+    summary:
+      "Craig defends classical Christian theism as the best explanation of reality and objective meaning; Frazier, Goff, and Folley press Hindu, mystical, and agnostic alternatives that complicate God, value, experience, and morality.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Premier Unbelievable? upload, downloaded with python3 -m yt_dlp during the 2026-07-02 assessment run. The JSON3 caption segments were grouped into readable timestamped lines before analysis. This was a live four-person panel hosted by Jack Symes rather than a strict two-person timed debate. Auto-caption spellings are lightly normalized, including William Lane Craig, Jessica Frazier, Philip Goff, Joe Folley, Aquinas, DMT, and Unbelievable; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God is the best explanation.",
+        context:
+          "Craig repeatedly frames classical theism as a cumulative explanation of existence, beginning, mathematics, fine-tuning, morality, and purpose."
+      },
+      con: {
+        text: "God or matter. Those words might be misleading.",
+        context:
+          "Frazier's phrase captures the alternative side's resistance to forcing reality into a simple Western binary between personal God and meaningless matter."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Classical theism",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "Pluralist alternatives",
+        speaker: "Jessica Frazier, Philip Goff, and Joe Folley",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 80,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Origin And Meaning",
+        timebox: "1:56-10:04",
+        score: {
+          pro: 78,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "2:05",
+              role: "Theistic frame",
+              words:
+                "Craig says if physical reality is all there is, the universe ends in darkness and human lives lack objective significance; God gives eternal purpose.",
+              score: 78,
+              critique:
+                "Craig's opening is disciplined and recognizably cumulative. He clarifies that the live question is better framed as physical reality rather than reality including God, then links cosmology, destiny, and meaning before listing six familiar arguments for theism. That gives the panel a clear classical-theist anchor. The weakness is that the meaning claim moves too quickly from eventual cosmic extinction to present objective insignificance. Folley later shows that meaning may include duration, fulfillment, goals, sacrifice, and psychological orientation, not one monolithic cosmic property. Craig's argument is rhetorically strong and relevant, but the heat-death framing compresses too many value questions into one conclusion in the live discussion.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The move from eventual cosmic extinction to all finite human choices lacking objective significance underweights nearer scales of value."
+                }
+              ]
+            },
+            con: {
+              time: "6:14",
+              role: "Meaning pluralism",
+              words:
+                "Folley argues that meaning is polysemous: God may add duration, while freedom, fulfillment, effort, pain, and psychology shape meaning differently.",
+              score: 84,
+              critique:
+                "Folley's first answer is strong because it refuses a false simplicity without denying theism's possible advantages. He grants that an afterlife could add more meaningful goods by extending life, but separates that from whether every kind of meaning needs God. His examples of fulfillment, aims, willingness to suffer, and subjective-yet-not-voluntary beauty give the discussion needed texture. The weakness is that the taxonomy remains exploratory. He maps senses of meaning more than he supplies a full account of why some lives are better or more significant than others. Still, the move directly answers Craig's objective-meaning claim and makes the debate more precise as a live reply.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "God Matter Binary",
+        timebox: "10:02-20:25",
+        score: {
+          pro: 79,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "4:04",
+              role: "Cumulative case",
+              words:
+                "Craig lists contingency, cosmic beginning, mathematics, fine-tuning, objective morality, and modal reasoning as a cumulative case that physical reality came from God.",
+              score: 79,
+              critique:
+                "Craig's cumulative list is useful because it reminds listeners that his case is not supposed to rest on one datum. Existence, beginning, mathematical order, fine-tuning, moral value, and modal possibility all aim at the same explanatory target. That breadth gives classical theism dialectical resilience: if one argument weakens, the whole case need not collapse. The weakness is that the list is mostly promissory in this panel. Craig cites arguments he has defended elsewhere rather than developing them under live challenge, so Frazier and Goff can shift the frame without facing the detailed premises. The score is solid-strong because the architecture is clear, but the live support is thin.",
+              tags: []
+            },
+            con: {
+              time: "10:33",
+              role: "Pluralist metaphysics",
+              words:
+                "Frazier says the God-versus-meaningless-matter binary is too narrow, and points to unity, powers, order, emergence, consciousness, beauty, and value.",
+              score: 83,
+              critique:
+                "Frazier's opening is a strong broadening move. She does not merely deny Craig's God; she asks whether the inherited Western binary of personal creator versus meaningless matter has misdescribed the space of options. Her appeal to unity, causal connection, powers, order, emergence, consciousness, imagination, beauty, and kindness gives the panel a richer metaphysical vocabulary. The weakness is that the picture is evocative rather than tightly inferential. Saying reality is unified, ordered, and creatively generative does not yet tell us whether that ground is personal, impersonal, divine, necessary, or morally authoritative. The score is strong because it disrupts a cramped frame, but not higher because the alternative remains under-specified.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The alternative gains appeal by resisting familiar labels, but its positive metaphysical commitments remain partly ambiguous."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Mystical Experience",
+        timebox: "15:02-44:59",
+        score: {
+          pro: 84,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "24:36",
+              role: "Objectivity control",
+              words:
+                "Craig says mystical experience without objective controls loses grip on truth; Christian rebirth is controlled by historical reasons for Jesus' resurrection.",
+              score: 84,
+              critique:
+                "Craig's critique of Goff's DMT experience is one of his strongest moments. He does not dismiss religious experience wholesale; he compares it with Christian conversion and asks what controls keep an experience connected to truth rather than self-deception. That is a fair epistemic demand, especially because Goff's reported content is hard to state publicly. Craig's appeal to resurrection evidence supplies at least a proposed external anchor. The weakness is that he may set a higher public-control standard for Goff's experience than for the inner witness of the Holy Spirit, which Goff immediately notices. Even so, the demand for cognitive content and external checks is strong.",
+              tags: []
+            },
+            con: {
+              time: "35:39",
+              role: "Experience defense",
+              words:
+                "Goff argues all knowledge starts by trusting compelling experience, and his DMT experience seemed more evident than ordinary consciousness.",
+              score: 79,
+              critique:
+                "Goff's defense has real philosophical force because it connects mystical experience to a general epistemic problem. If ordinary perception, memory, and even basic reasoning can be doubted, then one cannot reject unusual experience merely because it is mediated by consciousness. His claim that 5-MeO-DMT reports are strikingly uniform also gestures toward intersubjective support. The weakness is that felt compellingness is not enough to identify external reality, especially when the experience was drug-induced, difficult to express, and partly interpreted through Goff's prior metaphysics. Folley presses this well by asking what inference connects experience to a specific conception of God. The score is solid but cautious in public.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "The argument leans heavily on the experience's felt evidential force for Goff himself."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Creation And Ground",
+        timebox: "45:04-57:53",
+        score: {
+          pro: 82,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "46:52",
+              role: "Creator distinction",
+              words:
+                "Craig distinguishes creator and creation: God exists necessarily and immaterially, while the material universe exists contingently and begins with time.",
+              score: 82,
+              critique:
+                "Craig's creator-creation distinction is clear and dialectically useful. By distinguishing necessary divine existence from contingent material existence, he avoids treating creation as God reshaping preexisting stuff or merely emanating into the world. His exchange with Frazier also shows a welcome willingness to locate limited agreement: both can speak of dependence and sustenance, even while disagreeing about ex nihilo and ontological distinction. The weakness is that Craig leans on a classical metaphysical package that was asserted more than argued in the live exchange. Still, compared with Goff's overlap model, Craig's terms are cleaner, less self-obscuring, and easier to test for contradiction during this compressed live exchange.",
+              tags: []
+            },
+            con: {
+              time: "50:49",
+              role: "Overlap model",
+              words:
+                "Goff proposes an overlap view: part of God is wholly other, part of the universe is separate, and pure consciousness is where they meet.",
+              score: 77,
+              critique:
+                "Goff's overlap model is imaginative and tries to mediate between pantheism and classical separation. It also fits his experience-driven claim that something uncreated and timeless lies at the core of ordinary persons. That gives his view more structure than bare mystical testimony. The weakness is that the model becomes hard to keep coherent. Craig's Venn-diagram objection is apt: if one circle is timeless, necessary, and immaterial, and the other is temporal, contingent, and material, the overlap needs more than metaphor. Goff responds by denying that the universe is essentially contingent, but this feels like a major revision introduced to save the diagram. The score is fair but limited.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The overlap model shifts the meaning of universe from ordinary contingent physical reality to a deeper necessary core."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral Authority",
+        timebox: "1:00:02-1:14:39",
+        score: {
+          pro: 85,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:06:26",
+              role: "Divine command",
+              words:
+                "Craig says moral values are rooted in God's nature, while duties arise from divine commands issued by a qualified authority.",
+              score: 85,
+              critique:
+                "Craig's moral-authority argument is strong because it separates two questions often blurred together: objective values and binding duties. Joe concedes that mere Platonic objectivity can feel toothless, and Craig uses that opening well. Divine commands from a perfectly good authority explain not only that something is good, but why one ought to do it even against self-interest. The weakness is the familiar Euthyphro-style pressure: if God's authority matters mainly because God commands and enforces, the view risks sounding like prudential submission rather than moral insight. Still, Craig's distinction between values and duties is precise, responsive, and one of the most coherent classical-theist moves in the panel.",
+              tags: []
+            },
+            con: {
+              time: "1:12:57",
+              role: "Cosmic authority worry",
+              words:
+                "Frazier warns that if God can command morality by authority, human intermediaries may seize that authority and turn power into goodness.",
+              score: 82,
+              critique:
+                "The alternative side gives Craig serious pressure here. Folley first argues that theism's advantage may be enforcement rather than objectivity: God's stance aligns prudence with morality. Frazier then sharpens the worry by asking whether deference to divine authority becomes a cosmic gangster model, especially once human interpreters claim to speak for God. That is a practical and philosophical challenge, not mere rhetoric. The weakness is that the objection can understate Craig's answer that divine commands reflect God's essentially good nature, not arbitrary force. It also shifts from God's authority to abuse by intermediaries. The score is strong because the objection exposes a real danger in authority-based ethics.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The abuse-by-intermediaries worry is serious, but it partly shifts from whether divine command grounds duty to whether humans misuse claims about God."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Q And A Pressure",
+        timebox: "1:15:51-1:40:26",
+        score: {
+          pro: 81,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:25:03",
+              role: "Infinite-past answer",
+              words:
+                "Craig says metaphysical intuitions can reveal impossibility, temporal becoming is evident, and cosmology plus thermodynamics support a beginning.",
+              score: 81,
+              critique:
+                "Craig's infinite-past answer is compact and relevant. He rejects the idea that Hilbert-style puzzles only show unintuitiveness by defending metaphysical intuitions as a legitimate source of modal knowledge. He then adds two further supports: the reality of temporal becoming and scientific evidence from expansion and thermodynamics. The strength is cumulative layering rather than one proof pretending to do everything. The weakness is that each layer is contested: metaphysical intuition varies, tensed time is disputed, and cosmological evidence requires careful qualifications. Because this was Q and A, the compression is understandable. The score is strong because Craig gives a structured answer, but not decisive for this format.",
+              tags: []
+            },
+            con: {
+              time: "1:15:57",
+              role: "Human-value reply",
+              words:
+                "Folley and Frazier argue that stance-independent meaning is hard to make sense of, while humans can access higher values beyond arbitrary taste.",
+              score: 83,
+              critique:
+                "Folley and Frazier end with a useful corrective to both nihilism and crude objectivism. Folley questions whether meaning from nowhere is even intelligible, noting that theistic meaning still depends on God's stance. Frazier adds that humans are not trapped in random preference: we routinely override appetites for higher values, as in teaching, care, and shared structures of thought. Together they give a richer middle position than simple subjectivism. The weakness is that this still does not fully ground why higher values are authoritative rather than deeply resonant. The answer is philosophically humane and avoids despair, but it remains less determinate than Craig's theistic framework in the panel.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 80,
+        strengths: [
+          "Craig gave the panel a clear classical-theist target: God as the best explanation of existence, beginning, order, morality, and objective purpose.",
+          "His best replies separated values from duties, private experience from public controls, and creator from creation.",
+          "He handled audience questions crisply, especially on metaphysical intuition, temporal becoming, and the cumulative case for a cosmic beginning."
+        ],
+        blunders: [
+          {
+            text:
+              "His opening moved too quickly from eventual cosmic extinction to the claim that finite lives lack objective significance without God.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His critique of mystical experience risked a double standard unless the inner witness of the Holy Spirit receives similar public-control scrutiny.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Frazier, Goff, and Folley widened the option space beyond a simple personal-God versus meaningless-matter binary.",
+          "Folley repeatedly made the discussion more precise by distinguishing objective meaning, subjective meaning, stance dependence, prudence, and moral authority.",
+          "Frazier and Goff gave nonclassical theistic or spiritual alternatives enough texture to keep Craig's Christian framing from monopolizing the conversation."
+        ],
+        blunders: [
+          {
+            text:
+              "The alternative side often stayed suggestive rather than decisive, especially when replacing Craig's God with unity, emergence, energies, or pure consciousness.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "Goff's mystical-experience argument leaned heavily on how compelling the experience felt to him, even when the public inference remained unclear.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          },
+          {
+            text:
+              "The critique of divine authority sometimes shifted from whether God's commands could ground duty to whether humans misuse claims to speak for God.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
