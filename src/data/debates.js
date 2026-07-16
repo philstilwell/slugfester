@@ -34336,5 +34336,449 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "craig-grayling-evil-god-reasonable-2011",
+    number: "98",
+    title:
+      "William Lane Craig vs A. C. Grayling: Is Belief in God Reasonable in Light of Evil?",
+    label: "Evil and divine reasonableness",
+    date: "2026-07-16",
+    duration: "1 hr 48 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=Vs7ArUMuQyg",
+    motion:
+      "Is belief in God reasonable in light of tsunamis, childhood cancer, moral evil, and the apparent harshness of the natural world?",
+    summary:
+      "Craig argues that evil does not defeat theism; Grayling argues that observed suffering makes an interested, loving, powerful deity unreasonable to believe in.",
+    sourceNote:
+      "Built from the YouTube English-original automatic captions for the drcraigvideos upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-16 assessment run. The upload description's old Reasonable Faith transcript link returned a 404 during this run, so caption segments were grouped into timestamped transcript lines before analysis. Auto-caption spellings are lightly normalized, including William Lane Craig, A. C. Grayling, Alvin Plantinga, William Alston, J. L. Mackie, Michael Ruse, middle knowledge, and Oxford Union; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God and Evil are consistent",
+        context:
+          "Craig's core defense is modal and probabilistic: evil does not logically contradict God, and finite observers may be unable to judge God's reasons."
+      },
+      con: {
+        text: "the answer has to be not",
+        context:
+          "Grayling's central conclusion is that tsunamis, childhood cancer, and ordinary moral expectations make belief in such a deity unreasonable."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theistic reasonableness",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "Secular objection",
+        speaker: "A. C. Grayling",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 80,
+      con: 77
+    },
+    sections: [
+      {
+        title: "Opening Burden",
+        timebox: "4:05-35:32",
+        score: {
+          pro: 82,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "4:35",
+              role: "Problem distinction",
+              words:
+                "Craig distinguishes the logical and probabilistic problems of evil, saying the atheist must show that God and evil are genuinely incompatible.",
+              score: 84,
+              critique:
+                "Craig's opening is strong because he immediately separates emotional force from logical structure. By distinguishing the logical problem from the probabilistic problem, he prevents the debate from treating horror itself as a formal contradiction. The hidden-premise analysis is relevant: the atheist must add assumptions about what omnipotence can do and what benevolence must prefer. The weakness is that this first move wins a narrower point than the motion asks. Showing no contradiction does not yet show belief is reasonable after tsunamis and cancer. Still, as a burden-setting opening it is clear, disciplined, and philosophically important. The score is high because it frames the debate with real precision.",
+              tags: []
+            },
+            con: {
+              time: "21:01",
+              role: "World-as-evidence",
+              words:
+                "Grayling says tsunamis, children, and non-Christian victims make an interested supernatural agent look malevolent, impotent, or only quasi-potent.",
+              score: 79,
+              critique:
+                "Grayling's opening is powerful because it restores the concrete datum that modal analysis can domesticate: hundreds of thousands dead, many outside Christianity, including children and the elderly. He also wisely starts with conditional language, asking what we could infer if such an intelligent, interested supernatural agent existed. The father analogy gives ordinary moral pressure to the point. The weakness is that his malevolent-or-quasi-potent framing partly slides past Craig's narrower logical challenge. If morally sufficient reasons are even possible, the strict incompatibility claim is not yet established. The argument is strong as a reasonableness challenge, less strong as a logical disproof. The score reflects that split.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The objection sometimes shifts between classical omnipotence and a broader expectation that God should be able to actualize any desirable world."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Feasible Worlds",
+        timebox: "35:57-51:57",
+        score: {
+          pro: 83,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "35:57",
+              role: "Possible versus feasible",
+              words:
+                "Craig says omnipotence means doing what is logically possible, but some logically possible worlds may not be feasible for God to actualize with free creatures.",
+              score: 84,
+              critique:
+                "Craig's feasible-world reply is one of his cleanest technical moves. He does not merely say God has limits; he defines omnipotence in the classical way, as power over what is logically possible, then argues that free creatures cannot be made to freely choose. That gives Plantinga's defense real bite and answers Grayling's charge that Craig is simply weakening omnipotence. The weakness is that feasibility remains highly abstract for natural evil. It is easier to see why coerced free choices are impossible than why tsunamis, cancers, and tectonic horror are required in a feasible world. The score is high because the modal point is strong, though not fully satisfying.",
+              tags: []
+            },
+            con: {
+              time: "48:33",
+              role: "Moving goalposts charge",
+              words:
+                "Grayling says the divine goalposts keep moving: ordinary believers hear fatherly care, while theologians retreat to subtle feasibility and mystery.",
+              score: 76,
+              critique:
+                "Grayling's rebuttal is rhetorically sharp and philosophically fair in part. He spots a real pastoral-apologetic tension: the comforting image of a loving father is not the same as the refined claim that God may have inscrutable reasons in inaccessible feasible-world space. That matters because the debate concerns reasonableness for ordinary belief, not only technical modal consistency. The weakness is that the moving-goalposts charge can understate legitimate conceptual clarification. A theory may use analogies for devotion and more careful definitions for metaphysics without being evasive. Grayling's challenge lands best against presentation and practical coherence, less decisively against the formal defense itself. The score is solid because it exposes a live tension.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The rebuttal exploits the gap between familiar devotional language and abstract theological definitions, where ambiguity carries argumentative weight."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Hidden Reasons",
+        timebox: "42:25-59:00",
+        score: {
+          pro: 78,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "42:25",
+              role: "Cognitive limits",
+              words:
+                "Craig appeals to limits on our data, foresight, value judgments, and grasp of complexity to resist claims that God lacks sufficient reasons.",
+              score: 78,
+              critique:
+                "Craig's skeptical-theist argument is coherent and important. He gives several reasons why finite observers may be bad judges of providential consequences: limited data, unknown future effects, complexity, values we may not know, and the scale of history. His utilitarian and chaos examples help listeners feel the epistemic point. The weakness is that undercutting confidence cuts both ways. If we are so poorly placed to judge God's reasons for evil, we may also be poorly placed to infer that God's purposes are good, loving, or kingdom-building. The argument protects theism from one kind of probability judgment, but risks insulating it from moral evidence. The score is solid-strong, not decisive.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The defense can sound as if our inability to rule out hidden reasons significantly supports the claim that such reasons exist."
+                }
+              ]
+            },
+            con: {
+              time: "52:01",
+              role: "Mystery pressure",
+              words:
+                "Grayling says appeals to finite ignorance and morally sufficient reasons leave believers trusting that drowning or cancer is good in some unknown way.",
+              score: 80,
+              critique:
+                "Grayling's mystery objection is effective because it turns skeptical theism back into a test of reasonableness. He does not need to disprove every possible hidden reason; he asks whether it is rational to trust that horrors serve a good when the content of that good is withheld. His ice-cream versus ankle-kick example is homely but useful: ordinary moral judgment works without paralysis by butterfly effect. The weakness is that Grayling sometimes treats epistemic humility as if it were automatically evasion. Some complex systems really do defeat near-term moral forecasting. Still, he presses the correct cost: the more theism retreats behind mystery, the less evidentially transparent its goodness becomes. The score is strong.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Burden And Freedom",
+        timebox: "1:00:03-1:14:14",
+        score: {
+          pro: 80,
+          con: 75
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:00:03",
+              role: "Proof discipline",
+              words:
+                "Craig says anyone claiming logical inconsistency bears the burden to justify it, while the theist may show possible compatibility with a proposition like C.",
+              score: 81,
+              critique:
+                "Craig handles the burden-of-proof question with welcome discipline. He distinguishes asserting compatibility from merely denying that incompatibility has been proved, and he explains why a hidden contradiction requires hidden premises that are necessarily true. That is a fair demand in a formal logical dispute. The weakness is that the public motion is broader than strict inconsistency, and Craig sometimes makes Grayling look as though he must defend the strongest logical version even when Grayling is pressing reasonableness and probability. That framing helps Craig win the technical point, but it can narrow the live challenge too aggressively. The score is strong because the logical bookkeeping is clear.",
+              tags: []
+            },
+            con: {
+              time: "1:01:50",
+              role: "Reasonableness reframing",
+              words:
+                "Grayling replies that the issue is not proving a contradiction but whether the concept of a caring deity applies rationally to this world.",
+              score: 76,
+              critique:
+                "Grayling's reframing is valuable because it recalls the wording of the event: whether belief is reasonable, not whether a theist has uttered a formal contradiction. That shift places the focus on total evidence, concept clarity, and the fit between divine care and suffering. The weakness is that his answer does not fully meet Craig's point when Grayling himself uses incompatibility-flavored language about omnipotence and benevolence. If he wants the debate to be probabilistic, he needs to stop lending the logical version rhetorical help. The move is good strategic repair, but it arrives after some earlier ambiguity. The score is solid because it keeps the real motion in view.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "1:13:15",
+              role: "Determinism objection",
+              words:
+                "Craig argues that determinism cannot be rationally affirmed, since belief in determinism would itself be determined rather than rationally reached.",
+              score: 78,
+              critique:
+                "Craig's determinism objection is relevant because free will carries much of his defense. The argument has intuitive force: if all beliefs are merely determined events, rational responsibility for believing seems threatened. It also exposes a possible instability in Grayling's account, where morality requires free-will language but physics may describe the same events deterministically. The weakness is that determined causes and rational causes are not obviously mutually exclusive. A belief can be causally produced through perception, inference, and evidence-responsive cognition without becoming irrational like a toothache. Craig states a sharp challenge but does not defend the incompatibilist assumption. The score is good because it pressures Grayling, but not conclusive.",
+              tags: []
+            },
+            con: {
+              time: "1:09:14",
+              role: "Two vocabularies",
+              words:
+                "Grayling says moral language and physical causation may be co-referential but have different purposes, like describing a game by physics or by rules.",
+              score: 74,
+              critique:
+                "Grayling's two-vocabulary answer is imaginative and avoids a crude denial of moral life. By comparing physical description with game description, he shows how different explanatory levels can be legitimate without reducing one vocabulary to the other. That helps him preserve praise, blame, and agency within a naturalistic picture. The weakness is that the analogy remains underdeveloped under Craig's pressure. If moral freedom is only a vocabulary we must use, the audience still wants to know whether agents could really do otherwise in the sense Craig's free-will defense requires. Grayling explains linguistic practice better than metaphysical freedom. The score is moderate-solid because the answer is plausible but not sufficiently precise.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral Objectivity",
+        timebox: "1:14:44-1:26:35",
+        score: {
+          pro: 77,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:14:44",
+              role: "Evil proves God",
+              words:
+                "Craig says evil actually supports God, because objective moral values would not exist without God, yet some things really are evil.",
+              score: 77,
+              critique:
+                "Craig's moral pivot is formally clear and familiar: if evil is objective, then objective moral values exist; if those require God, evil becomes evidence for God rather than against God. It is relevant because many problem-of-evil arguments rely on robust moral judgment. The weakness is that the move shifts from explaining suffering to grounding moral ontology, so it can feel like a detour from the tsunami question. The crucial premise that objective morality requires God is asserted more than defended in this exchange, with sociobiology doing much of the negative work. The score is solid because the argument has structure, but lower because it needs independent support.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The moral-ontology pivot is relevant but can divert attention from whether a good God would permit the specific evils under discussion."
+                }
+              ]
+            },
+            con: {
+              time: "1:16:55",
+              role: "Human needs basis",
+              words:
+                "Grayling says objective facts about human needs, suffering, security, relationships, and interests can ground moral obligations without invoking God.",
+              score: 80,
+              critique:
+                "Grayling's response is strong because it offers a positive secular basis rather than merely rejecting Craig's premise. Human beings have objective needs, vulnerabilities, capacities for pain and pleasure, and social interests; those facts can make demands on others. His example of helping rather than kicking a person in pain captures moral salience without theology. The weakness is that Craig's alien or evolutionary counterfactual still presses the objectivity claim: why should these species-relative facts bind all rational agents rather than describe our evolved concerns? Grayling's account grounds humane practice well, but it needs more metaethical machinery to answer relativism fully. The score is strong because it is direct and constructive.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The answer is strongest for human contexts but says less about whether the moral facts bind beyond human needs and interests."
+                }
+              ]
+            }
+          },
+          {
+            pro: {
+              time: "1:19:57",
+              role: "Speciesism challenge",
+              words:
+                "Craig says a purely evolutionary morality leaves humans with species preferences, not objective standards for condemning aliens or ancient societies.",
+              score: 78,
+              critique:
+                "Craig's speciesism challenge is a useful stress test. If morality is built only from human evolutionary history, then a differently evolved intelligence could reject our values as parochial. That pushes Grayling to explain why human needs generate obligations with objective authority rather than merely local sympathy. The weakness is that Craig risks overstating the collapse. Naturalist moral realists can argue from sentience, interests, reasons, or flourishing without treating human genes as the final norm. The rape-on-Andromeda example is provocative, but it works only if Grayling's view is simple sociobiology. The score is solid-strong because the objection finds a real pressure point but does not exhaust secular metaethics.",
+              tags: []
+            },
+            con: {
+              time: "1:21:17",
+              role: "Moral progress reply",
+              words:
+                "Grayling answers that theological moral views have also changed on rape, sexuality, and punishment, so moral understanding matures historically.",
+              score: 78,
+              critique:
+                "Grayling's moral-progress reply is effective because it prevents Craig from presenting theology as a fixed, uncontaminated moral anchor. Historical religious communities have revised views about rape, sexuality, punishment, slavery, and human equality, so appeal to God does not automatically deliver stable moral knowledge. That supports Grayling's claim that human moral understanding can mature through reflection on needs and harms. The weakness is that showing theological change does not by itself ground objective progress. Craig can still ask what standard makes one development better rather than merely later. The rebuttal damages any easy contrast between divine objectivity and secular flux, but it needs a fuller account of normativity. The score is strong but limited.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Providence And Closure",
+        timebox: "1:27:39-1:46:19",
+        score: {
+          pro: 79,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:29:41",
+              role: "Middle-knowledge providence",
+              words:
+                "Craig says tsunamis and wars fit God's master plan to bring the maximum number of people freely into relationship with himself.",
+              score: 78,
+              critique:
+                "Craig's providence answer connects earlier abstraction to a specific Christian aim: God permits disasters within a vast network of contingencies to bring people freely into relationship with himself. Middle knowledge gives the model conceptual resources, since God knows how free creatures would act in possible circumstances. The strength is coherence inside Craig's system. The weakness is evidential opacity. Saying the tsunami fits a master plan gives no visible reason why this amount and distribution of suffering was needed, especially for non-Christian victims and children. It also depends on controversial Molinist machinery introduced only briefly. The score is solid because the theory is internally organized, but morally under-evidenced.",
+              tags: []
+            },
+            con: {
+              time: "1:27:39",
+              role: "Natural explanation",
+              words:
+                "Grayling says the tsunami happened because of tectonic movement and is morally indifferent in itself, though tragic in its consequences.",
+              score: 78,
+              critique:
+                "Grayling's natural explanation is clean and disciplined. He distinguishes physical causation from moral meaning: tectonic movement explains why the tsunami occurred, while its consequences are tragic for sentient beings. That removes the need to hunt for hidden divine messages and fits the observable world without theological strain. The weakness is that natural explanation does not by itself defeat every theistic explanation; Craig can agree on tectonics while adding providential permission. Grayling's point is strongest as an economy argument, not as a strict disproof. The score is strong because it resists moralizing disaster and keeps evidential footing clear, though it does not answer all metaphysical possibilities.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "1:35:00",
+              role: "Cross and consolation",
+              words:
+                "Craig closes that Christ shares human suffering, redeems evil, and gives sufferers hope beyond gratuitous and unredeemed pain.",
+              score: 79,
+              critique:
+                "Craig's closing is emotionally and theologically powerful. By moving from abstract theodicy to Christ's suffering and the story of Mabel, he addresses the lived dimension he earlier separated from the intellectual problem. That is fair: for many believers the problem of evil is existential, not only modal. The weakness is that consolation is not explanation. A story of sustaining faith shows Christianity can help some people endure suffering, but it does not show the suffering was justifiably permitted. The move also risks subjective validation if emotional power is treated as evidential force. The score is strong pastorally and moderate philosophically, so it lands in the high seventies.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "The Mabel story is moving, but its felt spiritual power does not by itself establish the truth of the theodicy."
+                }
+              ]
+            },
+            con: {
+              time: "1:41:21",
+              role: "Faith and evidence",
+              words:
+                "Grayling says faith commitments can be sustaining, but believers claim to know God's love while pleading ignorance about suffering.",
+              score: 79,
+              critique:
+                "Grayling's final reply is well aimed. He grants that faith can sustain people psychologically, then asks whether that sustaining power makes the belief rational. His strongest point is the asymmetry: believers confidently claim God is loving, Christ suffered, and divine purposes are good, yet invoke cognitive finitude when asked why suffering is permitted. That catches a possible selective confidence in the theistic posture. The weakness is that Grayling closes with broad claims about faith as nonrational or irrational, which can overgeneralize from the problem of evil to all religious belief. Still, the final answer directly addresses reasonableness and evidence. The score is strong because it identifies the debate's unresolved tension.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "The critique highlights selective confidence: affirming favorable divine claims while treating unfavorable evidence as mysterious."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 80,
+        strengths: [
+          "Craig was strongest on formal burden discipline, especially the distinction between logical incompatibility and probabilistic or existential force.",
+          "His possible-versus-feasible-world framework gave a clear technical answer to the charge that omnipotence should actualize any desirable world.",
+          "He connected the intellectual defense to a full Christian narrative of providence, afterlife, moral objectivity, and the cross rather than leaving it as bare abstraction."
+        ],
+        blunders: [
+          {
+            text:
+              "The hidden-reasons defense protected theism by limiting human moral judgment, but that same limitation threatens confident claims about God's goodness and purposes.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "The moral-argument pivot sometimes moved away from whether a good God would permit the listed evils and toward whether atheists can ground moral facts.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "The final Mabel story showed faith's power to console, but it risked treating spiritual resonance as evidence for the theodicy itself.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 77,
+        strengths: [
+          "Grayling kept returning the discussion to concrete evils: tsunamis, childhood cancer, grief, pain, non-Christian victims, and ordinary expectations of care.",
+          "His critique of theological mystery exposed the cost of saying we know God's love while not knowing why horrors are permitted.",
+          "He offered constructive secular alternatives on moral concern, grounding obligation in objective human needs, interests, vulnerability, and shared social life."
+        ],
+        blunders: [
+          {
+            text:
+              "Grayling sometimes blurred a formal logical disproof with a broader reasonableness challenge, allowing Craig to win technical ground on burden of proof.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His ordinary father analogy was morally vivid but did not fully account for the creator-creature distinction Craig used to reject the comparison.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "The human-needs account grounded practical morality well but did not completely answer Craig's challenge about objective authority beyond human species-relative facts.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
