@@ -35149,5 +35149,390 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "jones-dillahunty-emergent-mind-god-2020",
+    number: "100",
+    title: "Michael Jones vs Matt Dillahunty: Reason to Believe in God?",
+    label: "Emergent mind and evidential burden",
+    date: "2026-07-16",
+    duration: "2 hr 11 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=yGxSf4zJAso",
+    motion:
+      "Do digital physics, cosmic consciousness, and introspective idealism provide good reasons to believe in a necessary immaterial mind, or do those arguments fail demonstrability, probability, and burden-of-proof standards?",
+    summary:
+      "Jones argues that mind-like information and consciousness best explain reality; Dillahunty argues that the case labels mysteries, narrows possibilities, and fails to reach probable God.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Modern-Day Debate upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-16 assessment run, plus YouTube chapter timing. Caption segments were grouped into timestamped transcript lines before analysis. Auto-caption spellings are lightly normalized, including Michael Jones, Matt Dillahunty, Modern-Day Debate, Sean Carroll, Eugene Wigner, John von Neumann, Henry Stapp, Fred Kuttner, Anton Zeilinger, Kochen-Specker, Leggett, Lakatos, Feyerabend, Daniel Dennett, David Hume, and Stephen Jay Gould; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "a necessary and immaterial mind that created the universe",
+        context:
+          "Jones defines his target as basic theism, then argues that emergent spacetime and consciousness point toward that mind."
+      },
+      con: {
+        text: "why then call it God",
+        context:
+          "Dillahunty's central challenge is that labeling an unknown explanation God adds baggage without enough demonstrable content."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theistic idealism",
+        speaker: "Michael Jones",
+        color: "teal"
+      },
+      con: {
+        name: "Evidential skepticism",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 74,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Opening Burdens",
+        timebox: "04:20-34:05",
+        score: {
+          pro: 76,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:47",
+              role: "Three-part case",
+              words:
+                "Jones defines God as a necessary immaterial mind and argues from emergent spacetime, cosmic consciousness, and introspective idealism.",
+              score: 76,
+              critique:
+                "Jones's opening is stronger than a generic appeal to mystery because it names three connected routes: digital physics, consciousness-collapse interpretations, and the irreducibility of first-person mind. He also narrows the target to basic theism or deism, which prevents overclaiming Christianity. The weakness is that the case moves quickly from technical and philosophical data to a necessary immaterial mind. Quantum information, hard-problem pressure, and phenomenological access are all relevant, but each bridge needs more support than the opening can provide. The score is solid because the structure is clear and evidence-forward, but capped because many warrants remain compressed or analogical. That makes the result positive but not decisive.",
+              tags: [
+                {
+                  label: "Authority bias",
+                  type: "bias",
+                  url: bias("authority-bias"),
+                  context:
+                    "Lists of physicists and papers can make the metaphysical bridge seem stronger than the explained warrant."
+                }
+              ]
+            },
+            con: {
+              time: "17:58",
+              role: "Good-reasons standard",
+              words:
+                "Dillahunty says a currently best-sounding explanation is not enough unless it is probable, investigable, and uniquely supports the claim.",
+              score: 83,
+              critique:
+                "Dillahunty's opening is strong because it defines the debate's standard before answering particular claims. He distinguishes reasons that feel good, reasons that once seemed good, and reasons that should compel confidence after bias controls and investigation. The psychic-reader and hanging-rope examples show why apparent fit is not enough. He also rightly asks whether an explanation discriminates God from rival possibilities rather than merely outperforming no explanation. The weakness is that his standard can sound higher than ordinary abductive reasoning if 'probable' is treated as requiring more precision than metaphysics normally allows. Still, the methodological challenge is central and well aimed, so the score is high.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Mystery And Explanation",
+        timebox: "34:12-54:13",
+        score: {
+          pro: 75,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "34:37",
+              role: "Drought analogy",
+              words:
+                "Jones says explanations need not themselves be fully explained, just as drought can explain a poor crop even if the drought's cause is unknown.",
+              score: 75,
+              critique:
+                "Jones's drought analogy answers a real objection. Explanations can deepen inquiry while still explaining something; the Big Bang, quantum mechanics, and evolution all introduced new questions while illuminating old ones. That prevents Dillahunty's 'bigger mystery' concern from becoming a blanket ban on metaphysical hypotheses. The weakness is that drought and headaches are known phenomena with independently identifiable features, while the proposed divine or immaterial mind is exactly what remains to be established. Jones can show that mystery alone is not disqualifying, but not that this mystery has enough content to explain consciousness or spacetime. The score is solid because the analogy blocks an overbroad dismissal, though it does not establish God.",
+              tags: []
+            },
+            con: {
+              time: "44:42",
+              role: "Known-label reply",
+              words:
+                "Dillahunty replies that drought and headaches are observable labels, while God has not been demonstrated as a real explanatory item.",
+              score: 84,
+              critique:
+                "Dillahunty's reply is the sharper half of this exchange. He accepts that explanations can contain unanswered questions, but distinguishes known explanatory labels from proposed labels that have not been independently established. A drought explains crop failure because droughts are observable conditions with causal profiles; a headache explains absence because headaches are familiar experiences. By contrast, 'God' or 'immaterial mind' is still part of what Jones must demonstrate. The limitation is that Dillahunty risks making every ultimate explanation wait for independent demonstration before it can be considered explanatorily. Even so, the reply cleanly identifies the missing step. The high score reflects its precision and direct engagement with Jones's analogy.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Consciousness Evidence",
+        timebox: "39:26-55:52",
+        score: {
+          pro: 74,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "39:26",
+              role: "Brain pressure",
+              words:
+                "Jones cites hydrocephalus cases, plant behavior, psychedelics, top-down causation, and dissociative identity evidence against simple brain-production models.",
+              score: 74,
+              critique:
+                "Jones's consciousness evidence is useful because it gives the mind argument empirical pressure points rather than leaving it as pure introspection. Cases involving impaired brains, psychedelic reports, neural changes after mental training, and dissociative identity disorder can challenge simplistic slogans that the brain straightforwardly produces consciousness. The weakness is that the examples are heterogeneous and do not all support the same conclusion. Correlation anomalies, plasticity, sentience definitions, and clinical edge cases may complicate materialism without showing that consciousness is fundamental or that a cosmic mind exists. The score is solid because Jones identifies live questions in neuroscience and philosophy of mind, but lower because the inference from anomalies to theism remains loose.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Unresolved or anomalous brain-mind cases are treated as support for a mind-first ontology."
+                }
+              ]
+            },
+            con: {
+              time: "44:18",
+              role: "Category caution",
+              words:
+                "Dillahunty says these studies are interesting, but consciousness, sentience, self-reflection, and labels must be separated before they support theism.",
+              score: 81,
+              critique:
+                "Dillahunty's category caution is strong because Jones's evidence depends heavily on what counts as consciousness. A plant responding chemically, a patient with unusual brain structure, and a reflective human mind are not obviously the same explanandum. By separating consciousness, sentience, self-awareness, and labeling practices, Dillahunty keeps the argument from gaining force through elastic terms. The weakness is that he does not analyze the studies in detail and largely answers by methodological caution rather than counter-evidence. That is understandable in a live debate, but it leaves some of Jones's empirical pressure standing. The score is high because the definitional distinction is necessary, though not a full neuroscientific rebuttal.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The caution targets shifts among consciousness, sentience, responsiveness, and self-reflective mind."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Demonstrability And Idealism",
+        timebox: "54:37-1:07:23",
+        score: {
+          pro: 73,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "56:41",
+              role: "Evolution-style inference",
+              words:
+                "Jones compares his case to evolution: no time machine is needed if many lines of evidence support the best explanation.",
+              score: 73,
+              critique:
+                "Jones's evolution comparison is fair in one important respect: many rational conclusions are inferential, historical, and indirect. Nobody needs direct observation of every evolutionary transition to accept evolution, so Dillahunty should not demand crude repeatability for every metaphysical or historical claim. The weakness is that evolution's indirect evidence is built from independently testable anchors, overlapping dating methods, genetics, fossils, and successful predictions. Jones's idealist case has suggestive correlations and analogies, but it lacks the same cross-checking discipline. The score is moderately strong because the inferential form is legitimate, but limited because the support structure is much weaker than the evolutionary analogy implies. That mismatch keeps it below the skeptical reply.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The analogy uses a valid inferential form while blurring the different evidential controls in evolution and idealism."
+                }
+              ]
+            },
+            con: {
+              time: "55:02",
+              role: "Public manifestation",
+              words:
+                "Dillahunty says claims interacting with our shared world need detectable, identifiable, discoverable manifestations, even if the explanation is nonmaterial.",
+              score: 86,
+              critique:
+                "Dillahunty's demonstrability standard is one of his strongest contributions. He does not simply assume materialism; he says that if a nonmaterial cause affects a shared world, there should be public manifestations by which people can identify and test the claim. That is especially apt because Jones appeals to empirical-sounding evidence from physics and neuroscience. The limitation is that ultimate metaphysical explanations may not be demonstrable in the same way as ordinary causal claims, so the standard needs calibration rather than mechanical application. Even so, it gives the audience a clear test for whether Jones's case has moved beyond suggestive analogy. The score is high because the burden is fair and concrete.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Information And Collapse",
+        timebox: "59:05-1:19:59",
+        score: {
+          pro: 74,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "59:05",
+              role: "Mind-first information",
+              words:
+                "Jones says wetness, physics, mathematics, sensations, and mental phenomena can all be described as information within an idealist account.",
+              score: 74,
+              critique:
+                "Jones's information move is one of the more coherent expressions of his idealism. He defines information differently under materialism and idealism, then argues that our access to objects is through discernible phenomenal states. That gives parsimony to a mind-first account: perhaps matter is not an extra substance behind experience, but an informational pattern within experience. The weakness is that definitional flexibility can hide the central inference. Information as physical arrangement, mathematical description, or phenomenal distinction does not mean the same thing in each context. Showing that all descriptions are informational does not show that information is mental or divine. The score is solid because the move is philosophically serious, but the bridge remains semantic.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument risks sliding among information as physical arrangement, description, and phenomenal mentality."
+                }
+              ]
+            },
+            con: {
+              time: "1:06:59",
+              role: "Mind-removal test",
+              words:
+                "Dillahunty asks whether all physical interactions would stop if thinking minds disappeared, then challenges the answer as unfalsifiable and unparsimonious.",
+              score: 86,
+              critique:
+                "Dillahunty's mind-removal test crystallizes the cost of Jones's view. If removing thinking minds stops ordinary physical reality, then chemistry, friction, and evolution depend on observers in a way most listeners will find deeply counterintuitive. If Jones preserves unobserved reality as deterministic information, Dillahunty can ask whether this is just a hidden substrate under another name. The weakness is that Jones does offer a narrow falsifier through hidden variables and quantum foundations, so the charge of unfalsifiability is not total. Still, the objection exposes the explanatory burden that idealism inherits. The score is high because it makes an abstract metaphysical claim concrete and costly. It also connects the issue directly to evolution.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The idealist model keeps unobserved informational structure while denying ordinary mind-independent physical structure."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "God Label And Scope",
+        timebox: "1:10:33-1:41:30",
+        score: {
+          pro: 75,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:10:33",
+              role: "Research-program claim",
+              words:
+                "Jones says materialism is becoming a degenerating research program, while his mind hypothesis better follows the current evidence.",
+              score: 75,
+              critique:
+                "Jones's research-program framing is a useful way to avoid pretending that one experiment settles metaphysics. If materialist accounts of consciousness and quantum foundations keep adding patches while idealism unifies the data, then inference to a mind-first view could be rational. He also clarifies that he rejects a simple natural-supernatural distinction and is arguing about ontology, not magic. The weakness is that he overstates how much the live evidence establishes. A degenerating materialist program is not automatically replaced by theism, and future unknown physical accounts cannot be dismissed merely because they are future unknowns. The score is solid because the philosophy-of-science frame is relevant, but the burden shift remains visible.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "The framing emphasizes materialism's anomalies while treating idealism's unresolved costs more charitably."
+                }
+              ]
+            },
+            con: {
+              time: "1:22:20",
+              role: "Label and burden",
+              words:
+                "Dillahunty says calling the unknown explanation God smuggles in baggage, narrows the search, and shifts the burden before probability is shown.",
+              score: 86,
+              critique:
+                "Dillahunty's label-and-burden objection is the debate's decisive skeptical theme. He grants that consciousness and the universe may need explanations, but asks why the proposed explanatory placeholder should be called God before its mind, agency, necessity, and probability are established. His closing distinction between 'best current answer' and 'probably true answer' is especially useful: even the best candidate can remain too weak to believe. The limitation is that he sometimes treats theological vocabulary as so loaded that modest philosophical theism can barely use it. But the main challenge lands. The score is high because it exposes both semantic baggage and a possible burden shift in Jones's method.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The God label carries multiple meanings, making a minimal philosophical conclusion feel more religiously loaded."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 74,
+        strengths: [
+          "Jones presented a genuine cumulative case with clear premises, not just a vague appeal to mystery or a generic first-cause slogan.",
+          "He used philosophy of science to frame the debate as inference to the best current explanation rather than impossible certainty.",
+          "He was unusually explicit about his modest target: basic theism as a necessary immaterial mind, not full Christian doctrine."
+        ],
+        blunders: [
+          {
+            text:
+              "Several arguments moved from unresolved consciousness or quantum questions to mind-first theism without defending the bridge tightly enough.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "The word information shifted among mathematical description, physical arrangement, and phenomenal mentality, doing more work than the definition could bear.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "The God label stayed flexible enough that proving a mind-like ground risked being treated as proving God without the usual divine properties.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Dillahunty kept the debate focused on whether the arguments make God probable, not merely whether they sound better than no explanation.",
+          "He separated known explanatory labels from unknown labels, which directly answered Jones's drought, headache, and mystery analogies.",
+          "His questions about demonstrability, mind-removal, and semantic baggage made the costs of idealism and minimal theism concrete."
+        ],
+        blunders: [
+          {
+            text:
+              "His demonstrability standard sometimes risked discounting metaphysical inference because it lacks the test profile of ordinary physical causes.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "He did not deeply engage the technical quantum and neuroscience citations, leaving some rebuttal at the level of method rather than source analysis.",
+            links: [
+              {
+                label: "Base-rate neglect",
+                url: bias("base-rate-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "The baggage critique occasionally treated common religious meanings of God as a reason to resist Jones's more limited philosophical definition.",
+            links: [
+              {
+                label: "Belief bias",
+                url: bias("belief-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];

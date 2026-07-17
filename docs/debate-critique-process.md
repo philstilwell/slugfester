@@ -13,7 +13,7 @@ Create a condensed debate scorecard, not a full transcript replacement. Each pag
 - YouTube URL and debate title.
 - Transcript source, noted in `sourceNote`.
 - Last rendered date in `YYYY-MM-DD` format: the last date this project ran the critique and scores, not the YouTube upload date.
-- Two-digit zero-padded debate number, speaker names, unique debate label, side labels, duration, motion, and a one-sentence summary.
+- At least two-digit zero-padded debate number, speaker names, unique debate label, side labels, duration, motion, and a one-sentence summary.
 - Short representative quotes for both sides.
 
 Never invent direct quotations. If transcript text is lightly cleaned for readability, say so in `sourceNote`.
@@ -125,7 +125,7 @@ Before committing a new debate:
 - The scoring-note band identifies `GPT 5.5 Extra High` as the assessment model.
 - `sourceNote` identifies how the transcript was obtained or cleaned.
 - The page follows the locked design in `youtube-debate-assessment-template.md`.
-- The debate number is two-digit, zero-padded, unique, and sequential in debate-list order.
+- The debate number is at least two digits, zero-padded below 100, unique, and sequential in debate-list order.
 - The debate label is distinct from every other listed debate.
 - `npm run seo` has regenerated clean URL pages, sitemap, robots, and fallback HTML.
 - `npm run check` passes.

@@ -3,7 +3,7 @@ import { getReferenceDefinition, referenceFromUrl } from "../src/data/references
 
 const errors = [];
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
-const debateNumberPattern = /^\d{2}$/;
+const debateNumberPattern = /^\d{2,}$/;
 const datePattern = /^\d{4}-\d{2}-\d{2}$/;
 const youtubePattern = /^https:\/\/(www\.)?youtube\.com\/watch\?v=[A-Za-z0-9_-]+/;
 
@@ -201,7 +201,7 @@ function validateDebate(debate, index) {
   });
   requireString(debate, "number", path, {
     pattern: debateNumberPattern,
-    patternMessage: "must be a two-digit zero-padded debate number"
+    patternMessage: "must be at least two digits and zero-padded below 100"
   });
   requireString(debate, "title", path, { minWords: 3 });
   requireString(debate, "label", path);

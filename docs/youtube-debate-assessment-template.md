@@ -30,7 +30,7 @@ Landing-page design:
 - The debate list is capped at three columns on wide screens, then steps down responsively.
 - Landing-page debate card titles link directly to the debate assessment.
 - Debate `label` values must be unique so landing cards, topic lists, and reference occurrence cards are unambiguous.
-- Debate `number` values must be unique, sequential in debate-list order, and two-digit zero-padded, starting with `01`.
+- Debate `number` values must be unique, sequential in debate-list order, and at least two digits, zero-padded below 100, starting with `01`.
 - Debate numbers should appear anywhere the site identifies a debate for tracking: landing cards, debate hero metadata, topic lists, and reference occurrence cards.
 - Internal debate and reference links use clean path URLs, while old hash routes remain as backwards-compatible fallbacks.
 - Fallacy and bias links inside debate argument sections must include a `#` occurrence anchor so readers land on the exact debate/interlocutor context card on the reference page.
@@ -186,7 +186,7 @@ Use this shape when adding an object to `src/data/debates.js`.
 ## Final Acceptance Checklist
 
 - Page follows the locked debate-page design above.
-- Debate numbers are two-digit, zero-padded, sequential, and displayed consistently site-wide.
+- Debate numbers are at least two digits, zero-padded below 100, sequential, and displayed consistently site-wide.
 - `date` is the Slugfester last-rendered scoring date, not the YouTube upload date.
 - The sticky header uses the small boxing-gloves image.
 - The top reference links are grouped as an `External Sites` cluster.
