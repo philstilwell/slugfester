@@ -34780,5 +34780,374 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "jones-jump-digital-physics-god-2019",
+    number: "99",
+    title: "Michael Jones vs Tom Jump: Does God Exist?",
+    label: "Digital physics and naturalistic pantheism",
+    date: "2026-07-16",
+    duration: "1 hr 59 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=UWCvKiWjV0g",
+    motion:
+      "Does God exist, and do emergent spacetime, quantum consciousness, idealism, and the limits of metaphysical knowledge make theism more reasonable than naturalistic alternatives?",
+    summary:
+      "Jones argues that emergent spacetime and consciousness point to a governing mind; Jump argues that the same data underdetermine theism and fit naturalistic pantheism.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Modern-Day Debate upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-16 assessment run, plus YouTube chapter timing. Caption segments were grouped into timestamped transcript lines before analysis. Auto-caption spellings are lightly normalized, including Michael Jones, Tom Jump, Modern-Day Debate, Shannon Q, Nima Arkani-Hamed, Eugene Wigner, John von Neumann, Henry Stapp, Fred Kuttner, Imre Lakatos, Paul Feyerabend, Plantinga, and Phineas Gage; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "the universe is just emerged from a mind",
+        context:
+          "Jones's central claim is that quantum information, emergent spacetime, and irreducible consciousness are best explained by a deeper mind."
+      },
+      con: {
+        text: "anything science can't answer theology can't answer either",
+        context:
+          "Jump's central epistemic claim is that theistic explanations do not get special access to metaphysical stopping points."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theistic idealism",
+        speaker: "Michael Jones",
+        color: "teal"
+      },
+      con: {
+        name: "Naturalistic pantheism",
+        speaker: "Tom Jump",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 75,
+      con: 78
+    },
+    sections: [
+      {
+        title: "Opening Case",
+        timebox: "12:32-32:09",
+        score: {
+          pro: 76,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "12:32",
+              role: "Mind-like emergence",
+              words:
+                "Jones argues that emergent spacetime, quantum information, consciousness-collapse interpretations, and introspection point toward a larger mind behind contingent minds.",
+              score: 76,
+              critique:
+                "Jones's opening is ambitious and unusually specific. He does not merely assert that science leaves room for God; he tries to build a cumulative case from emergent spacetime, the holographic principle, quantum information, consciousness interpretations, and the irreducibility of first-person mind. That gives the theistic side concrete material to test. The weakness is that the inferences are underdeveloped. Similarity between information processing and cognition does not yet establish that the universe emerges from a mind, and the named authorities arrive faster than the warrants connecting them. The score is positive because the case is structured and relevant, but limited because the science-to-theism bridge remains speculative.",
+              tags: [
+                {
+                  label: "Authority bias",
+                  type: "bias",
+                  url: bias("authority-bias"),
+                  context:
+                    "Rapid lists of physicists and papers can make the mind inference feel stronger than the explained argument warrants."
+                }
+              ]
+            },
+            con: {
+              time: "22:51",
+              role: "Underdetermination test",
+              words:
+                "Jump argues that if the same evidence fits God, pantheism, or unknown physics equally well, then it is not evidence for God.",
+              score: 80,
+              critique:
+                "Jump's opening gives the audience a useful criterion: evidence for a hypothesis should discriminate it from serious alternatives. The rabbit-in-the-box analogy is simple, memorable, and directly applicable to theistic arguments that can also fit pantheism, naturalistic pantheism, or undiscovered physics. He also distinguishes rejecting theism from proving a full rival worldview. The weakness is that the alternative he invokes is deliberately thin. Naturalistic pantheism can look like a placeholder that inherits whatever explanatory power theism claims while dropping mind. His broad skepticism about metaphysical stopping points also risks making too many arguments impossible. Still, the opening is strategically strong because it targets indication, not mere possibility.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Consensus And Evidence",
+        timebox: "33:06-40:00",
+        score: {
+          pro: 77,
+          con: 73
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "33:06",
+              role: "Evidence over consensus",
+              words:
+                "Jones says a scientific consensus can be wrong, so Jump needs to address the evidence and arguments rather than count expert noses.",
+              score: 77,
+              critique:
+                "Jones is right to resist treating consensus as a debate-ending authority. Consensus can summarize expert judgment, but it does not replace the underlying reasons, especially in a debate about interpretations of quantum mechanics, philosophy of science, and metaphysical explanation. His reminders about historical reversals make the methodological point vivid. The weakness is that this response can slide too quickly from 'consensus is fallible' to 'consensus carries little evidential weight.' In technical physics, expert agreement is still a serious prior, and Jones needs more than dissenting citations to overcome it. The score is strong because he catches an argumentative shortcut, but not higher because he underplays why consensus matters.",
+              tags: []
+            },
+            con: {
+              time: "34:12",
+              role: "Expert consensus",
+              words:
+                "Jump replies that physicists mostly reject consciousness-collapse views, that Wigner abandoned his version, and that Jones is relying on minority sources.",
+              score: 73,
+              critique:
+                "Jump's appeal to the physics community is relevant because Jones is leaning on specialized technical claims. If the relevant experts overwhelmingly reject consciousness-collapse readings or treat emergent spacetime as natural, that should lower confidence in Jones's interpretation. The problem is that Jump uses consensus more as a stop sign than as an argument. He often names the consensus without unpacking the decisive reasons, which leaves Jones able to call it ad populum and demand evidence. The point would be stronger if Jump identified where the cited papers fail or why decoherence, field theory, or other models remove the mind inference. The score is moderate because the prior is legitimate but underargued.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Consensus is relevant here, but Jump sometimes treats expert rejection as a substitute for presenting the reasons."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Metaphysical Stops",
+        timebox: "40:00-1:00:00",
+        score: {
+          pro: 76,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "40:48",
+              role: "Self-reference objection",
+              words:
+                "Jones argues that Jump's claim about the impossibility of metaphysical knowledge is itself a sweeping epistemic or metaphysical claim.",
+              score: 76,
+              critique:
+                "Jones finds a real pressure point. If Jump says no form of human knowledge can justify metaphysical absolutes, Jones can reasonably ask how that sweeping limit is itself known. The objection keeps the debate from becoming an asymmetrical demand where the theist must justify every ultimate claim while the skeptic's epistemology floats free. The weakness is that Jones sometimes treats Jump's fallibilist caution as if it were a full metaphysical thesis about reality itself. Jump is mostly making a claim about human justification, not necessarily about what could be known by every possible knower. The score is solid because the self-reference challenge matters, though it needs careful framing.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The dispute shifts between metaphysical claims about reality and epistemic claims about human justification."
+                }
+              ]
+            },
+            con: {
+              time: "42:37",
+              role: "Human-knowledge limit",
+              words:
+                "Jump says known methods of human knowledge do not establish absolute metaphysical properties, so theistic stopping points have no special support.",
+              score: 76,
+              critique:
+                "Jump's limit claim is a disciplined challenge to inflated certainty. He is not merely saying God is unproven; he is asking what kind of method could justify claims about necessary mind, ultimate properties, or final explanatory stops. That is a fair burden for theistic metaphysics, especially when divine simplicity or necessity can be introduced ad hoc. The weakness is that he often moves from 'not absolutely justified' to language like 'zero indication.' That overstates the conclusion, because abductive arguments can have some evidential weight even if they do not deliver certainty. The score is balanced: the epistemic demand is important, but the rhetoric sometimes outruns the modest version.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Lack of absolute metaphysical proof does not automatically mean the evidence has no indicating force."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Naturalism And Method",
+        timebox: "1:01:08-1:18:58",
+        score: {
+          pro: 78,
+          con: 75
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:01:42",
+              role: "Naturalism assumption",
+              words:
+                "Jones says Jump assumes naturalism, so any new evidence will be absorbed as natural before it can support mind or God.",
+              score: 78,
+              critique:
+                "Jones's blue-marble style objection is one of his better moments. If every discovered explanation is classified as natural by method, then the skeptic can treat future evidence the same way and never allow it to count for mind, theism, or anything outside the preferred frame. That exposes a possible circularity in using past natural explanations to rule the metaphysical contest. The weakness is that Jones still has to show that his evidence genuinely favors mind rather than an unknown physical model. Naming naturalism's methodological limits does not by itself validate the idealist alternative. The score is strong because it challenges the rules of admissible evidence without overclaiming full victory.",
+              tags: []
+            },
+            con: {
+              time: "1:16:27",
+              role: "Inductive naturalism",
+              words:
+                "Jump argues that discovered explanations keep turning out natural, so unexplained consciousness is more likely another physical discovery than a new ontology.",
+              score: 75,
+              critique:
+                "Jump's induction has real force. The history of inquiry has repeatedly replaced mystery with tractable natural mechanisms, so caution about inserting a cosmic mind is sensible. His point also answers the introspective argument: brain-mind correlations and future physics may explain consciousness without positing a new substance. The limitation is that the induction can become too blunt. Science's method is designed to find natural regularities, so the fact that scientific successes are natural does not alone settle the deeper metaphysical question. Jones is also discussing interpretations and ontology, not only laboratory mechanisms. The score is above average because the pattern is important, but it risks treating methodological success as metaphysical closure.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "The argument can privilege natural explanations partly because the chosen method is already tuned to find them."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Labels And God",
+        timebox: "1:21:49-1:39:55",
+        score: {
+          pro: 76,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:24:49",
+              role: "God as inferred mind",
+              words:
+                "Jones says if the evidence leads to a fundamental mind, that mind is what he means by God, not a conclusion smuggled in earlier.",
+              score: 76,
+              critique:
+                "Jones usefully narrows the target. He is not trying to prove every Christian doctrine from quantum physics; he is defending a basic theistic or deistic conclusion that reality is grounded in mind. That makes his case more modest and harder to dismiss as overreach. The weakness is that the label 'God' becomes very flexible. A fundamental mind, cosmic consciousness, simulator, or idealist ground might not have the moral, personal, providential, or worship-worthy properties many listeners associate with God. Jump can therefore grant much of the vocabulary while still denying the theistic payoff. The score is solid because the clarification helps, but it leaves substantial identity work unfinished.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "A flexible God label can make the conclusion seem established before the relevant divine properties are specified."
+                }
+              ]
+            },
+            con: {
+              time: "1:35:26",
+              role: "Pantheism as defeater",
+              words:
+                "Jump says pantheism is not his belief; it is a rival model showing that Jones's evidence does not uniquely indicate God.",
+              score: 79,
+              critique:
+                "Jump's clarification is important. He is not trying to sell naturalistic pantheism as his settled worldview; he is using it as an underdetermination defeater. If a necessary, eternal, nonmental nature can absorb the same explanatory roles Jones assigns to God, then Jones has not shown that the data indicate a conscious being. That is a strong negative strategy, and it keeps the debate focused on discrimination between hypotheses. The weakness is that pantheism remains mostly schematic. It can look like a deliberately empty rival that borrows explanatory power from theism while refusing to describe its own mechanisms. The score is high because the defeater is sharp, though incomplete.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Mind And Interface",
+        timebox: "1:40:05-1:56:44",
+        score: {
+          pro: 77,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:46:42",
+              role: "Best-explanation metaphysics",
+              words:
+                "Jones says metaphysical claims are assessed by inference to the best explanation, much like theoretical physics and rival theories of consciousness.",
+              score: 77,
+              critique:
+                "Jones gives a reasonable account of how metaphysical claims can be assessed without impossible certainty. Theoretical physics, philosophy of mind, and ontology often proceed by explanatory virtues rather than direct observation, so demanding deductive proof of God would be unfair. His brain-as-interface model also explains why neural correlations need not show that matter produces consciousness. The weakness is that the analogy to physics is imperfect. Successful physical theories tend to generate mathematical constraints, predictions, and empirical tests, while Jones's idealist inference is harder to discipline. The interface model can accommodate almost any brain evidence. The score is strong because the method is legitimate, but its controls need sharpening.",
+              tags: []
+            },
+            con: {
+              time: "1:56:04",
+              role: "Other-minds modesty",
+              words:
+                "Jump says he starts from the cogito, then uses testable scientific predictions to justify belief in other minds without claiming absolute certainty.",
+              score: 78,
+              critique:
+                "Jump's answer about other minds is one of his cleaner epistemic moments. He starts from first-person awareness, then uses behavioral and scientific prediction to justify belief in other minds without pretending to possess absolute certainty. That fits his broader fallibilism and avoids the charge that he demands impossible proof only from theists. The weakness is that the answer may concede more than he wants. If inference to best explanation works for other minds under uncertainty, Jones can ask why it cannot also operate in metaphysics, provided the evidence is strong enough. Jump needs a sharper line between ordinary predictive inference and ultimate ontology. The score is strong but not decisive.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 75,
+        strengths: [
+          "Jones gave a positive cumulative case rather than generic theism, linking emergent spacetime, quantum information, idealism, and introspection.",
+          "He caught weaknesses in consensus-as-decision and repeatedly asked Jump to address evidence rather than expert headcounts alone.",
+          "He clarified that his target was basic theism or a governing mind, not the full package of Christian doctrine."
+        ],
+        blunders: [
+          {
+            text:
+              "The scientific citations were compressed quickly, moving from quantum information and consciousness parallels to a cosmic mind without enough connective warrant.",
+            links: [
+              {
+                label: "Authority bias",
+                url: bias("authority-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "The move from 'fundamental mind' to 'God' risked winning by a flexible label before specifying the relevant divine properties.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "Dismissing consensus as mere ad populum sometimes underweighted expert priors in the technical physics at issue.",
+            links: [
+              {
+                label: "Base-rate neglect",
+                url: bias("base-rate-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 78,
+        strengths: [
+          "Jump's rabbit-box and pantheism test gave a clear underdetermination criterion for whether evidence actually indicates God.",
+          "He consistently pressed the problem of metaphysical stopping points and ad hoc divine properties rather than treating theism as a default explanation.",
+          "He forced Jones to clarify God, naturalism, supernatural language, methodology, and the relation between consciousness and the brain."
+        ],
+        blunders: [
+          {
+            text:
+              "Repeated appeals to scientific consensus often substituted authority for argument in the live exchange.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          },
+          {
+            text:
+              "The claim that metaphysical absolutes have no human justification sometimes became 'zero indication,' which overstates what follows from uncertainty.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "The naturalistic default risked circularity because the scientific method is already oriented toward natural mechanisms.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
