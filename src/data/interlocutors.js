@@ -474,7 +474,7 @@ export const interlocutorAvatars = [
   {
     name: "Justin Brierley",
     src: `${avatarBasePath}/justin-brierley.webp`,
-    aliases: ["Justin Brierley", "Justin Brieley", "Premier Unbelievable", "Unbelievable"]
+    aliases: ["Justin Brierley", "Justin Brierly", "Justin Brieley"]
   }
 ];
 
