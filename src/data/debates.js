@@ -36352,5 +36352,374 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "woodford-edwards-rational-belief-god-2023",
+    number: "103",
+    title: "Stephen Woodford vs Simon Edwards: Is It Rational to Believe in God?",
+    label: "Rational theism and gratuitous evil",
+    date: "2026-07-17",
+    duration: "51 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=g1TlLCSn_5o",
+    motion:
+      "Is belief in an all-powerful, all-loving God rational given alleged gratuitous evil, salvation confusion, rationality, design, and morality?",
+    summary:
+      "Woodford argues classical theism is irrational because gratuitous evil and salvation confusion overwhelm the evidence; Edwards argues God best explains rationality, design, and objective morality.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Rationality Rules upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-17 assessment run. Caption segments were grouped into timestamped transcript lines before analysis. Auto-caption spellings are lightly normalized, including Stephen Woodford, Simon Edwards, Justin Brierley, Oxford Centre for Christian Apologetics, Rationality Rules, The Sanity of Belief, J. B. S. Haldane, Alvin Plantinga, Fred Hoyle, Immanuel Kant, J. L. Mackie, Euthyphro, Moses, Numbers 31, Midianites, Charles Darwin, and evolution by natural selection; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "this must be for the best somehow",
+        context:
+          "Woodford says theists must treat every apparent gratuitous evil as serving some hidden greater good."
+      },
+      con: {
+        text: "belief in the existence of God is more rational",
+        context:
+          "Edwards presents rationality, design, and morality as cumulative evidence that God is more probable than non-God."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theism irrational",
+        speaker: "Stephen Woodford",
+        color: "teal"
+      },
+      con: {
+        name: "Rational theism",
+        speaker: "Simon Edwards",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 82,
+      con: 77
+    },
+    sections: [
+      {
+        title: "Opening Cases",
+        timebox: "02:27-18:34",
+        score: {
+          pro: 84,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "02:27",
+              role: "Gratuitous evil",
+              words:
+                "Woodford defines theism as an all-powerful, all-loving God and says mass extinctions, disease, predation, and salvation confusion make belief irrational.",
+              score: 84,
+              critique:
+                "Woodford's opening is strong because it defines the God under dispute and then attacks the precise combination of omnipotence, perfect goodness, evil, and salvation stakes. The evil-God parody is useful: merely possible explanations for apparently gratuitous evil do not automatically make theism rational, just as possible explanations for apparently gratuitous good would not rescue an evil deity. The weakness is that the opening treats classical theists as committed to explaining every instance in a detailed way, when many theodicies argue at the level of epistemic limits rather than itemized purposes. Still, the examples of predation, disease, mass suffering, and salvation confusion press the motion directly. The score is high because the burden is clear and relevant.",
+              tags: []
+            },
+            con: {
+              time: "10:35",
+              role: "Three signs",
+              words:
+                "Edwards says rationality, fine-tuning, and objective morality are striking features that make God more probable than non-God.",
+              score: 78,
+              critique:
+                "Edwards's opening is tidy and accessible. The leaves spelling a message gives the audience a simple way to understand abductive reasoning, and the three-part case from rationality, fine-tuning, and morality gives the affirmative more than one route to rational belief. The strongest feature is cumulative structure: no single argument has to carry the whole case. The weakness is familiar apologetic compression. Each argument depends on contested premises, especially whether naturalism self-defeats, whether fine-tuning probabilities are well framed, and whether moral realism needs a personal source. The argument also mostly supports generic theism rather than the all-loving God Woodford targets. The score is solid because it is coherent, but not yet resilient.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The cumulative case gestures at several huge disputes without enough depth on any one premise."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Rationality And Naturalism",
+        timebox: "18:34-25:48",
+        score: {
+          pro: 81,
+          con: 75
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "19:05",
+              role: "No default win",
+              words:
+                "Woodford says refuting atheistic naturalism would not establish theism, and evolution tends toward broadly true beliefs because costly false beliefs are selected against.",
+              score: 81,
+              critique:
+                "Woodford's reply is effective because it blocks a common shortcut. Even if atheistic naturalism had internal trouble, theism would not win by default; Simon still needs positive warrant for his own view. Woodford also distinguishes atheism from naturalism and argues that evolution can favor broadly accurate beliefs because costly false maps of the world tend to be punished. The weakness is that his response remains too fast on the reliability problem. Broad truth-tracking for survival does not obviously underwrite abstract reasoning about metaphysics, mathematics, or morality, which is where Edwards wants the pressure to land. The score is strong because Woodford identifies the false contrast, but he leaves some epistemology underdeveloped.",
+              tags: []
+            },
+            con: {
+              time: "12:20",
+              role: "Mind trust",
+              words:
+                "Edwards argues atheistic naturalism is self-defeating: if minds arise from unguided processes, they serve survival rather than truth.",
+              score: 75,
+              critique:
+                "Edwards's argument from reason is one of his better positive moves because it asks why reason should be trusted if minds are products of mindless, unguided selection. The Haldane and Plantinga framing gives the point a recognizable philosophical pedigree, and it directly targets Woodford's Rationality Rules posture. The weakness is that Edwards moves too quickly from unguided origins to unreliable cognition. Evolution need not select only for truth, but stable action in a dangerous world often requires enough accurate representation. The claim that theism gives a rational basis for trust also needs explanation beyond saying God designed minds for truth. The score is decent because the challenge is legitimate, but the inference overreaches.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The move from unexplained naturalistic trust to theism needs positive support, not just pressure on naturalism."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Evil And Theodicy",
+        timebox: "26:17-33:13",
+        score: {
+          pro: 82,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "30:39",
+              role: "Classical target",
+              words:
+                "Woodford says social evolution explains moral indignation, and the problem of evil can defeat the classical God even if generic creator arguments worked.",
+              score: 82,
+              critique:
+                "Woodford's evil rebuttal is strong because it keeps the classical-God target in view. He grants that generic design or cosmological arguments might point somewhere, then argues that massive suffering still rules out an all-powerful, all-loving God. That is a disciplined burden move: the debate is not merely whether some creator exists. His evolutionary account of moral indignation also gives a natural explanation for why suffering feels wrong to social animals. The weakness is that citing atheist philosophers and rising irreligion does not by itself answer a theodicy; it functions more as sociology than argument. Still, the central distinction between a creator and the Christian God is sharp. The score is high because it targets the live thesis.",
+              tags: []
+            },
+            con: {
+              time: "26:17",
+              role: "Not a defeater",
+              words:
+                "Edwards grants evil is the strongest counterevidence, then appeals to biblical lament, afterlife, theodicies, and God entering suffering in Christ.",
+              score: 77,
+              critique:
+                "Edwards's response to evil is pastorally serious and intellectually fair. He openly calls suffering the strongest counterevidence, uses his grandmother's death to show the question is not abstract, and notes that biblical lament itself asks why God allows suffering. His appeals to afterlife, free will, soul-making, best-possible-world arguments, and Christ entering suffering show that the tradition has resources. The weakness is that the answer mostly names resources rather than defending one in detail against Woodford's gratuitous-evil examples. The afterlife move can also risk making present suffering too easy to absorb into unknown future compensation. The score is solid because Edwards avoids denial, but the rebuttal remains schematic.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "Several possible theodicies are invoked without clarifying which one actually explains the cited suffering."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality And Euthyphro",
+        timebox: "33:13-43:40",
+        score: {
+          pro: 80,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "37:22",
+              role: "Divine command test",
+              words:
+                "Woodford uses Numbers 31 and the Euthyphro dilemma: either goodness is independent of God or morality is just divine command.",
+              score: 80,
+              critique:
+                "Woodford's Euthyphro exchange is among his clearest philosophical moments. By asking whether God commands the good because it is good or whether goodness is whatever God commands, he forces the moral argument to explain its grounding rather than merely invoke intuition. Numbers 31 adds pressure by testing divine-command language against a morally repellent text. The weakness is that the biblical example is compressed and may distract from the abstract dilemma, since Edwards can dispute interpretation, context, or genre. Still, Woodford correctly presses that 'God is good' must mean more than God follows himself. The score is strong because the dilemma directly challenges the claimed moral foundation.",
+              tags: []
+            },
+            con: {
+              time: "39:47",
+              role: "God is the good",
+              words:
+                "Edwards says Western moral standards are historically biblical and that good is neither above God nor arbitrary because God is the good.",
+              score: 78,
+              critique:
+                "Edwards's moral reply has two strengths. First, he situates modern moral expectations in the historical influence of biblical ideas like the image of God, which complicates Woodford's use of contemporary moral standards against scripture. Second, he gives the standard theistic answer that God is not beneath goodness or above arbitrary command, but is the good. The weakness is that this answer risks sounding like a label rather than an explanation. Woodford can simply ask whether God's nature is good by a standard or defines goodness by fiat. Edwards also leans on moral intuition, which is powerful rhetorically but does not settle ontology. The score is solid because the reply is mainstream, but incomplete.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "Saying God is the good can assume the very goodness standard the argument needs to explain."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Bible And History",
+        timebox: "44:32-46:50",
+        score: {
+          pro: 78,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "45:36",
+              role: "Historical separation",
+              words:
+                "Woodford says some biblical stories may be historical, but Jesus existing or Muhammad conquering Arabia does not establish miracles or revelation.",
+              score: 78,
+              critique:
+                "Woodford's Bible answer is careful in an important respect: he separates ordinary historical claims from miracle or revelation claims. Granting that Jesus likely existed, or that Muhammad conquered Arabia, does not establish resurrection, angelic speech, or divine authorship. That distinction is exactly what rational assessment requires when evidence supports a minimal historical core but not the maximal theological interpretation. The weakness is that Woodford still speaks broadly about what an all-loving God would not require, without developing the epistemic standard enough in this short answer. He also uses Islam mainly as an analogy rather than assessing Christian evidence directly. The score is solid because the historical separation is clear, but the treatment is brief.",
+              tags: []
+            },
+            con: {
+              time: "45:04",
+              role: "Genres and parables",
+              words:
+                "Edwards says the Bible contains different genres: some historical records, some poetry, and parables that communicate truths without being literal events.",
+              score: 76,
+              critique:
+                "Edwards's Bible answer is modest and sensible. He resists a flat literalism by saying the Bible is a collection of genres: historical record, poetry, and parable. The Good Samaritan example neatly shows how a story can communicate truth without being a literal event, which helps avoid brittle all-or-nothing readings. The weakness is that the question asked whether biblical stories are real, and the answer remains very general. It does not tell the audience which disputed stories matter for theism, which miracle claims are historically grounded, or how genre judgments are constrained rather than adjusted after difficulty appears. The score is fair because the hermeneutical point is valid, but thin.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "Genre diversity is true but leaves uncertain which contested claims should be read literally."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Evolution And Purpose",
+        timebox: "46:50-51:23",
+        score: {
+          pro: 82,
+          con: 74
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "48:15",
+              role: "Not accident",
+              words:
+                "Woodford says evolution is not random accident; natural selection explains complexity, and before Darwin, created-by-something was more understandable.",
+              score: 82,
+              critique:
+                "Woodford's evolution answer is useful because it corrects a common apologetic caricature. Evolution is not sheer accident in the sense of random assembly; natural selection is a nonrandom filtering process, and explaining that distinction matters when the theistic side equates unguided development with purposeless chaos. He also makes a generous historical concession: before Darwinian evidence, design intuitions were understandable. The weakness is that he sometimes treats acceptance of evolution as doing more work than it can. Evolution explains biological complexity, but it does not by itself answer why there is a law-governed universe capable of life. The score is strong because he catches the misdescription, while leaving larger metaphysical questions open.",
+              tags: []
+            },
+            con: {
+              time: "46:50",
+              role: "Purpose and guidance",
+              words:
+                "Edwards says humans are not accidents because God intended them, while remaining open to guided evolution and questioning macroevolution's explanatory scope.",
+              score: 74,
+              critique:
+                "Edwards's evolution answer is strongest where he separates purpose from mechanism. He can allow that God used natural selection and still claim humans are intended rather than accidental in the sense of purposeless. That avoids a crude conflict between theism and biology. The weakness is that he then questions macroevolution's explanatory reach in a vague way, citing trends and statistics without enough detail for assessment. The language of accident also risks equivocation: evolution may be unguided in scientific explanation without being chaotic or random in every respect. The score is mixed-solid because his purpose/mechanism distinction is helpful, but the scientific challenge is underdeveloped for this debate.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Accident shifts between lack of divine intention and random biological assembly."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 82,
+        strengths: [
+          "Woodford kept the debate fixed on the classical all-powerful, all-loving God rather than letting generic design arguments settle the motion.",
+          "His evil-God parody and gratuitous-evil examples clarified why mere possible theodicies do not automatically make theism rational.",
+          "He repeatedly separated minimal historical or biological claims from stronger theological conclusions, especially on scripture and evolution."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes used sociological facts about philosophers, scientists, or secularization as if they directly defeated the theistic arguments.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          },
+          {
+            text:
+              "His problem-of-evil framing implied theists must explain every apparent gratuitous evil in detail, which overstates many skeptical-theist positions.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His evolutionary account of morality explained why humans feel moral concern, but did less to explain whether those concerns are normatively true.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 77,
+        strengths: [
+          "Edwards offered a clear cumulative case from rationality, design, and morality rather than relying on a single proof.",
+          "He treated suffering as the strongest counterevidence instead of dismissing it, and he connected intellectual theodicy to lived grief.",
+          "He distinguished purpose from mechanism on evolution, allowing theism to coexist with natural selection in principle."
+        ],
+        blunders: [
+          {
+            text:
+              "Several arguments supported generic theism more than the all-loving classical God challenged by the problem of gratuitous evil.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "The argument from reason pressed naturalism hard but moved too quickly from unguided cognition to unreliable cognition.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His 'God is the good' answer risked restating the moral grounding claim rather than explaining why God's nature is non-arbitrarily good.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
