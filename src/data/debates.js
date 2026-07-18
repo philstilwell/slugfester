@@ -35919,5 +35919,438 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "woodford-brierley-christianity-rational-2019",
+    number: "102",
+    title: "Stephen Woodford vs Justin Brierley: Is Christianity Rational?",
+    label: "Christian rationality and evidence",
+    date: "2026-07-17",
+    duration: "1 hr 27 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=EfAWALcKf2w",
+    motion:
+      "Is Christianity rational, and do its claims about God, morality, reason, and resurrection meet proportionate evidential standards?",
+    summary:
+      "Woodford argues Christianity lowers evidential standards and leaves hiddenness and moral tensions unresolved; Brierley argues Christianity is rational as a cumulative worldview explanation.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Rationality Rules upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-17 assessment run. Caption segments were grouped into timestamped transcript lines before analysis. Auto-caption spellings are lightly normalized, including Stephen Woodford, Justin Brierley, Oxford Inter-Collegiate Christian Union, Rationality Rules, Unbelievable?, Christopher Hitchens, Bertrand Russell, C. S. Lewis, Eugene Wigner, Jesus, 1 Corinthians 15, Tom Holland, Alvin Plantinga, and Genghis Khan; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "one epistemology for Christianity and one epistemology for everything else",
+        context:
+          "Woodford's central charge is that Christianity appears rational only when held to a softer standard than ordinary extraordinary claims."
+      },
+      con: {
+        text: "Christianity is an intellectually compelling account of reality",
+        context:
+          "Brierley presents Christianity as a cumulative worldview that explains existence, value, reason, and Jesus' resurrection."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christianity irrational",
+        speaker: "Stephen Woodford",
+        color: "teal"
+      },
+      con: {
+        name: "Christian rationality",
+        speaker: "Justin Brierley",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 82,
+      con: 77
+    },
+    sections: [
+      {
+        title: "Opening Burdens",
+        timebox: "05:30-26:08",
+        score: {
+          pro: 84,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "17:35",
+              role: "Clearer revelation",
+              words:
+                "Woodford says Christianity is not rational because Christians lower evidential standards and an all-loving, all-powerful God would communicate more clearly.",
+              score: 84,
+              critique:
+                "Woodford's opening is rhetorically sharp and mostly well targeted. He refuses a vague religion-is-dumb posture and instead presses two epistemic tests: do Christians use the same standard they use elsewhere, and would an omnipotent loving God rely on ambiguous ancient testimony for the most important message? The audience-hand questions about abortion, gay marriage, and evolution turn disagreement into evidence for unclear revelation. The weakness is that his tone and copies-of-copies cascade risk oversimplifying textual transmission and making Christian diversity do more work than it can bear. Still, the central hiddenness and special-pleading pressure is direct. The score is high because it squarely addresses rational justification.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "Doctrinal diversity counts against clarity, but it cannot by itself show Christianity is irrational as a whole."
+                }
+              ]
+            },
+            con: {
+              time: "05:58",
+              role: "Cumulative case",
+              words:
+                "Brierley defines rational belief as supported by good evidence and says Christianity explains existence, value, reason, and Jesus' resurrection.",
+              score: 77,
+              critique:
+                "Brierley's opening is disciplined in burden-setting: he defines rational belief as supported by good evidence, accepts that atheists can be rational, and offers a cumulative rather than single-proof case. Fine-tuning, mathematical intelligibility, human value, reason, and resurrection history give the audience a clear map of why Christianity might be intellectually respectable. The weakness is breadth. Each premise needs careful defense, yet the opening treats several live controversies as quick pointers in one larger inference. It also frames Stephen against atheist materialism before confirming that this is the exact claim Stephen wants to defend. The score is solid because the case is relevant and cumulative, but limited by compression and target selection.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The opening covers many large disputes too quickly for each to receive proportional evidential support."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Materialism And Reason",
+        timebox: "26:58-34:48",
+        score: {
+          pro: 79,
+          con: 75
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "30:33",
+              role: "Reasons without choice",
+              words:
+                "Woodford separates truth from rationality and says rationality is having beliefs and actions correspond with one's reasons.",
+              score: 79,
+              critique:
+                "Woodford's reply helps by separating rationality from ultimate certainty and from libertarian choice. His definition, beliefs and actions corresponding to reasons, lets him explain how a determined agent can still evaluate evidence, revise beliefs, and track truth fallibly. The earthquake analogy makes the point memorable: causal determination does not make the event unreal. The weakness is that he does not fully answer Brierley's deeper normativity worry about why evolved cognitive mechanisms should be trusted rather than merely endured. He gestures toward experience and scientific verification, but the positive account remains thin. The score is solid because he blocks the simple free-will objection, while leaving some epistemic grounding pressure unresolved.",
+              tags: []
+            },
+            con: {
+              time: "30:09",
+              role: "Argument from reason",
+              words:
+                "Brierley argues that if beliefs are predetermined brain events, Stephen has not rationally chosen atheism or followed evidence.",
+              score: 75,
+              critique:
+                "Brierley's argument from reason is one of his central moves: if beliefs are only determined brain events, he argues, Stephen cannot say he rationally chose atheism or followed evidence. It is fair to ask how naturalism grounds normativity, truth-tracking, and confidence in cognition. The weakness is that Brierley conflates choosing a belief with being responsive to reasons. A belief can be causally produced and still be produced by evidence-sensitive mechanisms, much as a calculator gives determined but valid outputs. He also shifts from not freely chosen to not rationally justified too quickly. The score is decent because the question is real, but the inference needs more philosophical care.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument slides between freely choosing a belief and being rationally responsive to evidence."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality And Human Value",
+        timebox: "35:03-39:04",
+        score: {
+          pro: 76,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "36:01",
+              role: "Shared aversions",
+              words:
+                "Woodford grounds morality in suffering, shared preferences, cooperation, and objective ways to pursue agreed human aims.",
+              score: 76,
+              critique:
+                "Woodford's moral response is refreshingly explicit. He does not pretend to possess an ultimate command etched into reality; he grounds moral practice in suffering, shared aversions, cooperation, and the objective means to agreed human ends. That honesty avoids an easy charge of smuggled theism. The weakness is that the answer sounds thinner when faced with predatory outliers. Saying Genghis Khan violates nearly everyone else's preferences explains social resistance, but it does not fully capture the audience's sense that cruelty is wrong even when the powerful enjoy it. Woodford can live with that cost, but the debate asks rationality, not only consistency. The score is solid because the framework is coherent, though morally austere.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "Shared aversion to suffering feels morally weighty, but that feeling alone does not ground objective wrongness."
+                }
+              ]
+            },
+            con: {
+              time: "35:03",
+              role: "Genghis Khan test",
+              words:
+                "Brierley asks whether deterministic atheism can really say cruelty is wrong rather than merely contrary to human preferences.",
+              score: 78,
+              critique:
+                "Brierley's morality challenge is effective because it makes the abstract worldview debate practical. If Stephen denies ultimate moral facts and ultimate moral responsibility, Brierley asks whether he can still condemn cruelty rather than merely dislike it. The Genghis Khan example forces Woodford to distinguish social preference from objective wrongness, and that distinction matters for a debate about rational Christianity. The weakness is that Brierley leans heavily on livability and moral discomfort. Showing that a view is emotionally hard to inhabit does not by itself show it false or irrational; it may only show that humans dislike its implications. The score is strong enough because the challenge bites, but it edges toward wishful grounding.",
+              tags: [
+                {
+                  label: "Belief bias",
+                  type: "bias",
+                  url: bias("belief-bias"),
+                  context:
+                    "The argument risks treating an emotionally unacceptable implication as evidence that the worldview is false."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Faith And Hiddenness",
+        timebox: "39:17-45:58",
+        score: {
+          pro: 82,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "39:17",
+              role: "Two epistemologies",
+              words:
+                "Woodford asks whether Brierley knows God like he knows Australia and presses the charge of different standards for Christian truth claims.",
+              score: 82,
+              critique:
+                "Woodford's cross-examination is strong because it turns rationality into a standards question. Asking whether Brierley knows God like he knows Australia exposes the gap between ordinary empirical belief and religious trust without denying that people can have meaningful faith. His follow-up on one epistemology for all knowledge claims also connects tightly to his opening charge of special pleading. The weakness is that he sometimes narrows rationality toward scientific or evidential comparison, even after agreeing that science is not suited to every question. Some beliefs may be rationally held by a broader web of experience, testimony, and inference. Still, the pressure is well aimed. The score is high because he forces Brierley to clarify standards.",
+              tags: []
+            },
+            con: {
+              time: "42:51",
+              role: "Free will defense",
+              words:
+                "Brierley says God need not make everyone believe because free will enables love and humans cannot know God's optimal purposes.",
+              score: 76,
+              critique:
+                "Brierley's free-will reply gives the hiddenness problem a recognizably Christian answer. If God wants freely given love, then coercive, inescapable disclosure may not serve God's purposes. He also rightly warns that Stephen cannot easily know the optimal world a God should create. The weakness is that the answer is too quick for the scale of Stephen's challenge. Clearer evidence need not erase freedom, as ordinary interpersonal knowledge rarely prevents voluntary love. Brierley also treats doctrinal disagreement as expected freedom while still saying Christianity is rationally clear enough to choose. That balance is possible, but underargued here. The score is respectable because the reply is relevant, but it does not dissolve the evidential worry.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The reply leaves unclear how much divine clarity would actually threaten free love."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Justice Mercy Scripture",
+        timebox: "46:02-51:46",
+        score: {
+          pro: 85,
+          con: 70
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "46:02",
+              role: "Hard passage",
+              words:
+                "Woodford asks how God can be both just and merciful, then cites David's child suffering for David's sin.",
+              score: 85,
+              critique:
+                "Woodford's justice-and-mercy sequence is one of his best exchanges because it joins conceptual clarity to textual pressure. He asks how mercy can be compatible with fulfilled justice, then moves to the David story where an innocent child suffers for the father's sin. That keeps the discussion on Christianity's internal claims, not generic religion. The weakness is that the argument would be stronger with cleaner citation and less rhetorical flourish; a complex Old Testament narrative needs careful handling if it is to bear the weight of a contradiction in divine character. Even so, Brierley's answer visibly retreats into mystery and moral-grounding detours. The score is high because the objection is focused and difficult.",
+              tags: []
+            },
+            con: {
+              time: "47:55",
+              role: "Jesus as lens",
+              words:
+                "Brierley says Woodford's moral tools are Christian-inherited and that difficult Old Testament texts must be read through Jesus.",
+              score: 70,
+              critique:
+                "Brierley's answer has a fair theological instinct: Christians do not normally read every Old Testament episode as a direct rulebook, and Jesus can function as the interpretive lens for difficult texts. Admitting that the passage is hard also shows some intellectual humility. The problem is responsiveness. Woodford asked whether a specific portrayal of God contradicts omnibenevolence; Brierley first moves to Woodford's moral grounding and then says mystery, cultural distance, and Christ-centered reading may soften the passage. Those points may be true in a larger hermeneutic, but they do not directly answer why the child suffers. The score is lower because the reply is plausible theology, but weak live rebuttal.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The move to Woodford's moral grounding delays the direct question about the passage's portrayal of God."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection And Closing",
+        timebox: "52:25-1:07:56",
+        score: {
+          pro: 82,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "56:58",
+              role: "Proportionate evidence",
+              words:
+                "Woodford says extraordinary claims require proportionate evidence and that resurrection or virgin birth would not entail Jesus' divinity.",
+              score: 82,
+              critique:
+                "Woodford's closing is forceful because it returns the burden to proportionate evidence. His magician thought experiment makes the evidential gap intuitive: testimony, copying, and later interpretation would not normally justify belief that a human is God incarnate. He also correctly separates atheism from materialism and presses the alleged non sequitur from virgin birth or resurrection to divine sonship. The weakness is overstatement. Calling Christianity completely irrational ignores Brierley's narrower claim that some Christians can rationally trust a cumulative case, and the magician analogy may flatten differences between stage illusion and historically embedded religious testimony. The score is high because the burden challenge is central, but not overwhelming.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The closing sometimes stretches under-evidenced Christianity into Christianity being completely irrational."
+                }
+              ]
+            },
+            con: {
+              time: "52:25",
+              role: "Love and hope",
+              words:
+                "Brierley closes that Christianity explains existence, value, reason, resurrection, love, hope, and the West's human-rights inheritance.",
+              score: 78,
+              critique:
+                "Brierley's closing is strongest when it re-centers the debate on cumulative fit rather than one isolated proof. Love, hope, human rights, resurrection, and textual history together form a recognizable Christian worldview case, and in Q&A he gives a better defense of New Testament transmission than Stephen's opening allowed. The weakness is that emotional fit and cultural influence do not by themselves establish truth, and his challenge to extraordinary claims require extraordinary evidence with a lottery analogy misfires because lottery wins do not violate background regularities in the same way resurrection claims do. The score is solid because he recovers some evidential ground, but the closing mixes apologetic force with soft existential appeal.",
+              tags: [
+                {
+                  label: "Base-rate neglect",
+                  type: "bias",
+                  url: bias("base-rate-neglect"),
+                  context:
+                    "The lottery analogy underweights the different prior probability profile of ordinary rare events and miracles."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Fine Tuning And Evolved Reason",
+        timebox: "1:08:10-1:27:07",
+        score: {
+          pro: 80,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:15:31",
+              role: "Inference checks",
+              words:
+                "Woodford challenges fine-tuning probabilities, asks about alternative life possibilities, and concedes evolution did not make us purely rational.",
+              score: 80,
+              critique:
+                "Woodford's Q&A contributions help because they show the skeptic's burden is not merely to jeer at faith but to test specific inferences. He challenges whether fine-tuning statistics answer the right conditional question, notes that a rare dice outcome is not special unless independently specified, and concedes that evolution did not design us for pure rationality. That concession is honest and fits a fallibilist view of inquiry. The weakness is that his alternatives are sometimes sketchy. Mentioning silicon life or evolution does not by itself answer cosmic fine-tuning, and admitting evolved irrationality gives Brierley a route back into Plantinga-style distrust. The score is strong because Woodford tracks inference errors, but the positive naturalistic account remains incomplete.",
+              tags: []
+            },
+            con: {
+              time: "1:09:00",
+              role: "Clarifying pressure",
+              words:
+                "Brierley admits limits on animal texts, treats fine-tuning as a tolerance rather than a direct probability, and returns to evolved cognition.",
+              score: 77,
+              critique:
+                "Brierley's Q&A answers are mixed but useful. On animal suffering he wisely admits unfamiliarity rather than bluffing, and on fine-tuning he clarifies that the one-in-10-to-the-60 figure is a tolerance level rather than a direct probability. His final Plantinga-style turn also keeps pressure on whether evolved cognition is aimed at truth. The weakness is uneven precision. The animal answer falls back to broad stewardship, the fine-tuning defense still presents design as the live alternative without adequately modeling priors or multiverse-style options, and the reason argument repeats earlier concerns rather than advancing them. The score is solid because he corrects some overstatements, but the technical issues remain underdeveloped.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Design is treated as the live alternative before rival naturalistic explanations receive enough modeling."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 82,
+        strengths: [
+          "Woodford kept the motion focused on rational justification, not whether Christians are personally intelligent or sincere.",
+          "He repeatedly pressed consistency of epistemic standards, especially on divine revelation, miracle testimony, and Christian disagreement.",
+          "He separated atheism from materialism and rationality from libertarian free choice, which blocked several overextended rebuttals."
+        ],
+        blunders: [
+          {
+            text:
+              "The copies-of-copies rhetoric and the claim that Christianity is completely irrational overstated what the evidence comparison established.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His hiddenness case sometimes bundled divine communication, hell, Bible transmission, doctrinal diversity, and moral evil into one broad pressure point.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His naturalistic morality leaned on shared aversions and social preferences without fully explaining why those preferences carry normative authority.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 77,
+        strengths: [
+          "Brierley defined rationality charitably, accepted that atheists can be rational, and took the affirmative burden seriously.",
+          "His cumulative case connected fine-tuning, moral value, reason, resurrection, love, hope, and human-rights history into a coherent Christian apologetic.",
+          "He improved his case during Q&A by clarifying textual criticism, admitting unfamiliarity on animal passages, and qualifying fine-tuning probabilities."
+        ],
+        blunders: [
+          {
+            text:
+              "He framed atheism as materialism and determinism, then used that target to carry more of the debate than the motion required.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His argument from reason slid from beliefs not being freely chosen to beliefs not being rationally justified.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His replies to Old Testament moral pressure often shifted to Woodford's moral grounding or Jesus as a lens before answering the passage directly.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
