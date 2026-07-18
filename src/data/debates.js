@@ -35534,5 +35534,390 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "woodford-scrivener-religion-poisons-everything-2026",
+    number: "101",
+    title: "Stephen Woodford vs Glen Scrivener: Does Religion Poison Everything?",
+    label: "Religion poison and Christian humanism",
+    date: "2026-07-17",
+    duration: "1 hr 24 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=8J-WOwrq6bE",
+    motion:
+      "Does religion poison everything by adding doctrine, dogma, revelation, and moral harm to human decency, or does Christianity supply the sacred ideals and institutions that made modern compassion possible?",
+    summary:
+      "Woodford argues religion corrupts human goods with dogma; Scrivener argues Christianity critiques religion and gave the West its compassion, equality, and sacred ideals.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Pangburn upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-17 assessment run. Caption segments were grouped into timestamped transcript lines before analysis. Auto-caption spellings are lightly normalized, including Stephen Woodford, Rationality Rules, Glen Scrivener, Christopher Hitchens, Jesus, Leviticus, Ephesians, Augustine, Aquinas, Hammurabi, Gregory of Nyssa, Harari, T. S. Eliot, Nietzsche, Galileo, Giordano Bruno, and Pangburn; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "uniquely good without introducing something bad",
+        context:
+          "Woodford frames the Hitchens claim as a test: religion must show clean, uniquely religious goods without doctrinal poison."
+      },
+      con: {
+        text: "religion does not poison everything",
+        context:
+          "Scrivener's central reply is that Christianity both condemns corrupt religion and provides the ideals by which religion is judged."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Religion poisons",
+        speaker: "Stephen Woodford",
+        color: "teal"
+      },
+      con: {
+        name: "Christian humanism",
+        speaker: "Glen Scrivener",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 81,
+      con: 78
+    },
+    sections: [
+      {
+        title: "Opening Stakes",
+        timebox: "02:08-19:13",
+        score: {
+          pro: 82,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "02:28",
+              role: "Poisoned well",
+              words:
+                "Woodford says human decency, love, compassion, and hope are already in the well, while religion adds doctrine, dogma, and revelation.",
+              score: 82,
+              critique:
+                "Woodford's opening is effective because it defines a vivid test rather than merely repeating Hitchens's slogan. The well metaphor lets him grant that religious people do good while arguing that the specifically religious addition brings threats, conformity, exclusion, and inherited guilt. His three hurdles, good, required by religion, and clean, give the audience a usable scorecard for the rest of the debate. The weakness is that the metaphor front-loads the conclusion that decency is human before religion rather than partly shaped by religious history. That assumption becomes vulnerable once Scrivener asks what counts as human and humane. The score is strong because the burden is clear, but not decisive.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The well metaphor assumes the contested point that compassion is already human before religion adds doctrine."
+                }
+              ]
+            },
+            con: {
+              time: "09:06",
+              role: "Compassion revolution",
+              words:
+                "Scrivener says Christianity distrusts corrupt religion, centers on a victim of religious violence, and birthed a compassion revolution.",
+              score: 80,
+              critique:
+                "Scrivener's opening is strong because he refuses a simple pro-religion posture. By contrasting Babel-style self-exaltation with Abrahamic blessing and by presenting Jesus as a victim of religious violence, he answers the charge from inside Christianity rather than denying religious corruption. His examples of orphan care, anti-infanticide, opposition to gladiatorial games, and concern for outsiders provide positive historical material. The weakness is that he moves quickly from Christianity's ideals to Christianity's historical effect, and some claims about uniqueness and scale need more evidence than an opening can supply. Still, he squarely contests 'poisons everything' by showing a Christian moral self-critique. The score is strong but cautious.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Clean Good Test",
+        timebox: "20:02-25:00",
+        score: {
+          pro: 80,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "20:02",
+              role: "Ramadan test",
+              words:
+                "Woodford grants Ramadan's community and charity, then says religious goods do not come clean when tied to dogma about women and gay people.",
+              score: 80,
+              critique:
+                "Woodford's Ramadan example is strategically good because it demonstrates that his view is not crude anti-religious denial. He can acknowledge real community and charity while arguing that the religious package adds doctrinal harms. That makes his test harder to caricature: the issue is not whether religious communities ever do good, but whether uniquely religious goods arrive without exclusion, threats, or conformity costs. The weakness is that the example depends on selecting harsh applications of Islam and treating them as sufficiently representative of religious doctrine. Scrivener can answer that bad religious interpretations do not establish the universal thesis. The score is high because the example clarifies the test, though it still needs breadth.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "A vivid harmful application risks standing in for a wider and more internally diverse religious tradition."
+                }
+              ]
+            },
+            con: {
+              time: "20:36",
+              role: "Judging standard",
+              words:
+                "Scrivener agrees that some religious practice is poison, but asks what moral ideal lets Woodford judge good and bad.",
+              score: 79,
+              critique:
+                "Scrivener's judging-standard reply is relevant because Woodford's case depends on shared moral evaluations. If slavery, misogyny, homophobia, and exclusion are poison, Scrivener can ask where those judgments come from and whether they are themselves religiously inherited. This pushes against the imagined pre-religious well and prevents the debate from treating modern liberal intuitions as self-evident. The weakness is that Scrivener sometimes makes moral grounding a precondition for assessing historical harm. Woodford only needs enough shared moral agreement to test whether religious doctrines worsen goods both speakers already condemn. The score is strong because the question exposes an assumption, but slightly limited because it can become a detour from the motion.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The grounding question matters, but it can divert from whether specific doctrines add moral harm."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Slavery And Scripture",
+        timebox: "25:18-35:23",
+        score: {
+          pro: 86,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "27:08",
+              role: "Scripture receipts",
+              words:
+                "Woodford cites Leviticus, Ephesians, Augustine, Aquinas, and Hammurabi to argue biblical doctrine preserved and sometimes worsened slavery.",
+              score: 86,
+              critique:
+                "Woodford's slavery line is the strongest affirmative material because it supplies the receipts he promised. He cites Leviticus on foreign slaves as inheritable property, New Testament household codes, Augustine, Aquinas, and Hammurabi's three-year cap to challenge the claim that biblical religion reliably improved slavery. The exchange also gives him a clear dialectical win when Scrivener concedes Hammurabi is better than Leviticus on one term. The weakness is that Woodford sometimes treats the worse examples as settling the whole tradition, even though he also concedes mixed effects. But as a test case for doctrinal poison, the argument is direct, documented, and highly relevant. The score is high.",
+              tags: []
+            },
+            con: {
+              time: "29:19",
+              role: "Historical counterframe",
+              words:
+                "Scrivener says Israel did not invent slavery, Old Testament laws improved some practices, and Christians eventually ended the slave trade.",
+              score: 77,
+              critique:
+                "Scrivener's counterframe has real force where it widens the historical field. Slavery was not a biblical invention, some legal provisions may have mitigated ancient practices, and Christian abolitionism is an important historical fact. This prevents Woodford from treating every biblical accommodation as pure origin of the evil. The weakness is that the reply struggles with timing and text. If Christians gained imperial power and still left slavery intact for centuries while citing scripture, the yeast-through-dough explanation can feel post hoc. The concession on Hammurabi also weakens the claim of consistent improvement. The score is solid because the history is more complex than Woodford suggests, but the doctrinal challenge remains serious.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Christian delay on abolition is excused by gradualism while other Christian reforms are credited as decisive achievements."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Women And Goodness",
+        timebox: "35:39-49:42",
+        score: {
+          pro: 82,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "38:02",
+              role: "Bible receipts",
+              words:
+                "Woodford says Genesis, Timothy, and church practice held women down, while Scrivener appeals to a palatable Jesus motif.",
+              score: 82,
+              critique:
+                "Woodford's women-and-scripture argument is effective because it parallels the slavery case. Rather than attacking vague religion, he points to passages and historical practice that restricted women's teaching, authority, property, and divorce. His claim that modern Christian decency often retreats from doctrine into a softer Jesus motif fits the debate's central poison thesis: the humane element survives by loosening the dogmatic element. The weakness is that he can overstate the contrast between scripture and narrative interpretation. Christianity has always read texts within broader canonical and communal frames, so not every appeal to Jesus is evasive. Still, the argument lands because he names concrete doctrines and historical costs. The score is strong.",
+              tags: []
+            },
+            con: {
+              time: "42:27",
+              role: "Trinitarian ground",
+              words:
+                "Scrivener answers Euthyphro by saying God is love, with goodness grounded in the eternal community of Father, Son, and Spirit.",
+              score: 76,
+              critique:
+                "Scrivener's Trinitarian answer is philosophically richer than a simple divine-command reply. By grounding goodness in God's eternal life of love rather than arbitrary commands, he avoids the easiest version of the Euthyphro objection and explains why love precedes law. That matters because his whole case depends on Christian sacred ideals generating humane judgments. The weakness is that the answer is underconnected to the disputed texts. If God is love, Woodford can still ask why allegedly divine commands, church practice, or Pauline instructions produced subordination and violence. The metaphysics also becomes opaque to a live audience. The score is solid because the answer is serious, but it does not defuse the historical critique.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The abstract claim that God is love can obscure how love judges concrete biblical commands and church practices."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Abolition And Compassion",
+        timebox: "50:13-1:08:27",
+        score: {
+          pro: 81,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "50:13",
+              role: "Delayed abolition",
+              words:
+                "Woodford asks why Christian power banned infanticide and gladiatorial games quickly but left slavery intact for centuries.",
+              score: 81,
+              critique:
+                "Woodford's delayed-abolition question is a strong historical pressure test. If Christianity could reshape Roman practice on crucifixion, infanticide, and gladiatorial games, then the claim that slavery required a slow yeast-like transformation needs explanation. The argument is especially effective because Scrivener himself wants to credit Christianity with major institutional change. The weakness is that social change is not uniform: an economy-embedded practice like slavery may be harder to end than a spectacle or a discrete legal practice, and Christian abolitionism later matters. But Woodford is right that long delay weakens triumphalist narratives. The score is strong because the question exposes selectivity in crediting Christianity for progress while softening its failures.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "Christian successes are foregrounded while the long endurance of Christian-supported slavery is treated more leniently."
+                }
+              ]
+            },
+            con: {
+              time: "56:19",
+              role: "Enemy-love scale",
+              words:
+                "Scrivener says kin selection explains local care, but Christianity scaled compassion to enemies, the weak, and universal equality.",
+              score: 82,
+              critique:
+                "Scrivener's enemy-love argument is probably his strongest positive case. He does not merely say Christians sometimes helped people; he argues that Christianity scaled moral concern beyond kin and tribe by making every person an image of God and by valorizing care for the weak. That directly answers Woodford's claim that the well was already full of decency, love, compassion, and hope. The use of Nietzsche is apt because Nietzsche really did see Christian pity as a distinctive inversion of natural strength. The weakness is that Scrivener risks turning influence into necessity and underplaying non-Christian moral traditions. The score is strong because the argument is relevant and substantive.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The argument can underweight non-Christian sources of compassion while emphasizing Christianity's scaling role."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Science Violence Closing",
+        timebox: "1:10:20-1:23:37",
+        score: {
+          pro: 82,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:10:57",
+              role: "Galileo and violence",
+              words:
+                "Woodford challenges Scrivener's Christian-science claim with anti-evolution activism, Galileo, biblical conquest, slavery, and women's rights.",
+              score: 82,
+              critique:
+                "Woodford's final push is strong because it tests Scrivener's broad civilizational claims against contrary cases. Galileo and anti-evolution activism complicate the story that Christianity simply nourished science, while the conquest texts, slavery laws, and women's restrictions return the debate to doctrine rather than vague legacy. His closing line that humane Christians often move away from literal doctrine neatly summarizes the affirmative thesis. The weakness is that several examples are compressed and sometimes rhetorically loaded, especially the conquest material, where textual genre and ancient-war conventions need careful handling. Still, the closing keeps the burden on concrete religion rather than cultural nostalgia. The score is high because it is focused and cumulative.",
+              tags: []
+            },
+            con: {
+              time: "1:20:43",
+              role: "Pervades everything",
+              words:
+                "Scrivener closes that religion cannot be unbaked from humanity and that Christianity grounds why slavery and inequality now look poisonous.",
+              score: 79,
+              critique:
+                "Scrivener's closing captures the best negative response to the motion. Religion is not a foreign chemical poured into a neutral human well; it is entangled with how societies came to imagine persons, sacred ideals, equality, and conscience. That makes the phrase 'religion poisons everything' too blunt. His appeal to image of God and incarnation gives a positive Christian account of why slavery and inequality appear wrong. The weakness is that the closing still does not fully answer Woodford's doctrine-level evidence. Saying Christianity ultimately supplies the standards can seem to immunize Christianity from criticism when Christian texts or institutions violate those standards. The score is good because it reframes the motion, but incomplete.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Christianity is credited for later moral standards even when earlier Christian sources helped sustain the criticized practices."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 81,
+        strengths: [
+          "Woodford clarified the Hitchens slogan into a testable standard: the good must be genuinely good, uniquely religious, and clean of doctrinal poison.",
+          "He repeatedly returned to concrete textual and historical evidence, especially Leviticus, Ephesians, Augustine, Aquinas, Hammurabi, women, and slavery.",
+          "He granted religious goods such as Ramadan, charity, and anti-infanticide reforms, which made his critique less vulnerable to simple caricature."
+        ],
+        blunders: [
+          {
+            text:
+              "The well metaphor assumed that decency, love, compassion, and hope are pre-religious human goods rather than partly shaped by religious history.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "Some concrete harms from Islam or Christianity were used to carry a very broad thesis about religion as such.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His refusal to discuss moral grounding protected the debate focus, but also left his own criteria for poison underexplained.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 78,
+        strengths: [
+          "Scrivener strongly challenged the literal overreach of 'poisons everything' by distinguishing corrupt religion from Christianity's internal critique of religion.",
+          "His best positive case connected imago Dei, incarnation, enemy-love, abolition, anti-infanticide, and sacred ideals into a coherent Christian-humanist story.",
+          "He exposed the hidden moral anthropology in Woodford's well metaphor and forced the audience to ask where modern humane intuitions came from."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly shifted from doctrine-level evidence about slavery and women to moral grounding, which sometimes dodged the live historical objection.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "Christianity received credit for later moral standards while earlier Christian texts and institutions were treated as contextual or gradualist complications.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "Claims that Christianity made modern compassion or science unthinkable without it sometimes moved beyond demonstrated influence into civilizational necessity.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
