@@ -36721,5 +36721,342 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "oconnor-baker-hytch-argument-from-reason-2020",
+    number: "104",
+    title: "Alex O'Connor vs Max Baker-Hytch: The Argument for God From Reason",
+    label: "Reason, intentionality, and naturalism",
+    date: "2026-07-18",
+    duration: "1 hr 17 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=kI5j2b7ZtXw",
+    motion:
+      "Does rationality undermine naturalism and make a theistic or otherwise non-naturalist account of mind more probable?",
+    summary:
+      "Baker-Hytch argues that reason, intentionality, mental causation, and consciousness fit better if mentality is fundamental; O'Connor argues naturalism remains plausible through evolution, emergence, and burden discipline.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Alex O'Connor upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-18 assessment run. Caption segments were grouped into timestamped transcript lines before analysis. Auto-caption spellings are lightly normalized, including Alex O'Connor, Cosmic Skeptic, Max Baker-Hytch, Justin Brierley, Wycliffe Hall, Oxford, C. S. Lewis, Miracles, Elizabeth Anscombe, J. B. S. Haldane, Alvin Plantinga, John Searle, the Chinese room, David Chalmers, Tim Crane, Thomas Nagel, Philip Pullman, and Daniel Dennett; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "atoms swerving in the void cannot be about anything",
+        context:
+          "Baker-Hytch uses intentionality, the aboutness of thought, as a central pressure point against physicalist naturalism."
+      },
+      con: {
+        text: "there is selective advantage to truth",
+        context:
+          "O'Connor argues that evolved cognition can still track reality because survival often depends on getting the world broadly right."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Reason beyond naturalism",
+        speaker: "Max Baker-Hytch",
+        color: "teal"
+      },
+      con: {
+        name: "Naturalistic reason",
+        speaker: "Alex O'Connor",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 81,
+      con: 80
+    },
+    sections: [
+      {
+        title: "Lewis And Determinism",
+        timebox: "00:01-13:14",
+        score: {
+          pro: 78,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "03:13",
+              role: "Haldane problem",
+              words:
+                "Baker-Hytch quotes Haldane: if mental processes are wholly atomic motions, they may be chemically sound without being logically sound.",
+              score: 78,
+              critique:
+                "Baker-Hytch's opening earns a solid score because it states the argument from reason in its sharpest inherited form rather than as a vague appeal to mystery. The Haldane quotation neatly separates physical causation from logical warrant, and his later concession that determinism itself is not the target prevents an easy compatibilist dismissal. The weakness is that the opening leans heavily on an intuition that chemical description and rational description compete, when a naturalist can say they are different levels of explanation for the same event. He identifies a real puzzle about warrant, but has not yet shown that naturalistic causation cannot realize it. The score is good because the target is clear, though still promissory.",
+              tags: []
+            },
+            con: {
+              time: "07:44",
+              role: "Deterministic conviction",
+              words:
+                "O'Connor says believers also cannot choose what convinces them; being 'washed over' by an argument is still a causal process.",
+              score: 80,
+              critique:
+                "O'Connor's first move is fair and efficient. He notices that if involuntary causation disqualifies rational belief, then religious conviction appears vulnerable too: Baker-Hytch did not choose to be impressed by Lewis any more than a naturalist chooses what evidence convinces them. That blocks a crude version of the argument from reason. The weakness is that Max quickly grants doxastic involuntarism and says the issue is not freedom from causation but whether the ontology supplies intentionality and mental causation. Once that distinction is made, Alex's deterministic symmetry does less work. The score is strong because the objection forces precision, but it does not defeat the refined thesis.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Naturalism And Probability",
+        timebox: "13:11-27:20",
+        score: {
+          pro: 83,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "13:41",
+              role: "Three-part target",
+              words:
+                "Baker-Hytch defines naturalism as physical causal closure, physicalism, and base-level entities lacking consciousness, purpose, and value.",
+              score: 83,
+              critique:
+                "Baker-Hytch's definition is one of the debate's best constructive moves. By naming causal closure, physicalism, and the absence of consciousness or purpose at the base layer, he gives Alex a stable target and keeps the argument from collapsing into a loose science-versus-God contrast. His probabilistic framing is also mature: he says mental phenomena would be more expected if mentality or purpose is fundamental, not that a syllogism proves Christianity. The weakness is that the definition risks bundling several controversial theses under naturalism, so defeating one version may not defeat every naturalist option. The score is high because the burden is disciplined, but the scope of the target needs care.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "Several versions of naturalism are treated as one target, which can overstate the reach of a successful critique."
+                }
+              ]
+            },
+            con: {
+              time: "16:08",
+              role: "Plausibility burden",
+              words:
+                "O'Connor says he withholds assent to supernatural claims rather than dogmatically asserting nothing more exists; he needs only defend naturalism's plausibility.",
+              score: 76,
+              critique:
+                "O'Connor's clarification helps the negative side because it reduces his burden. He does not need to prove strict materialism beyond all doubt; he needs to show that a naturalistic account of reason remains possible or plausible enough that Max's argument does not force non-naturalism. That agnostic posture is philosophically modest and keeps the debate from becoming an all-purpose defense of atheism. The weakness is that a mere refusal to assert supernaturalism can under-answer a probabilistic challenge. If Max's claim is that mental phenomena are substantially more expected on non-naturalism, Alex needs comparative explanatory detail, not just suspension of belief. The score is solid because the burden move is useful, but incomplete.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Intentionality And Evolution",
+        timebox: "22:43-35:19",
+        score: {
+          pro: 81,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "22:43",
+              role: "Aboutness challenge",
+              words:
+                "Baker-Hytch says thoughts can be about London or Socrates, but atoms swerving in the void cannot be about anything.",
+              score: 81,
+              critique:
+                "The intentionality argument is strong because it connects the debate's abstract title to a concrete feature of thought: thoughts are about London, Socrates, modus ponens, or fictional objects. Baker-Hytch also improves on simpler reliability arguments by adding mental causation: reasoning requires thoughts to affect one another because of their content, not merely because particles move. The weakness is that the claim still depends on a disputed modal leap from base particles lack aboutness to no arrangement of them can produce aboutness. That is exactly the emergence point Alex presses. The score is high because Max identifies a deep explanatory demand, but not decisive because emergence remains under-argued.",
+              tags: []
+            },
+            con: {
+              time: "28:47",
+              role: "Selected abstraction",
+              words:
+                "O'Connor says aboutness grows from experience, memory, and abstract thought; truth-tracking has survival value, even if quantum physics stretches evolved intuitions.",
+              score: 78,
+              critique:
+                "O'Connor's reply is appealing because it supplies a natural history rather than pretending the mind is simple. Experience, memory, abstraction, and correction of intuition do look continuous with evolved cognition, and his quantum-physics point is honest: we often use reason to overcome the very intuitions evolution gave us. The weakness is that this account explains why certain cognitive capacities would be useful once representation exists; it does less to explain what makes neural states represent anything in the first place. Max's bricks-before-building distinction lands here. The score is good because Alex gives a plausible developmental sketch, but it does not fully meet the metaphysical question.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Deduction And Derived Meaning",
+        timebox: "35:17-42:13",
+        score: {
+          pro: 82,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "37:03",
+              role: "Modus ponens",
+              words:
+                "Baker-Hytch says deduction requires grasping modus ponens, and books or computers only have derived intentionality from minds.",
+              score: 82,
+              critique:
+                "Baker-Hytch's reply is careful because it refuses to let deduction become a mere linguistic reshuffle. Even if modus ponens is necessarily valid, a thinker still has to grasp the rule and move from premises to conclusion in virtue of content. His response to books and computers is also relevant: written marks and code appear meaningful because users or designers confer meaning, so they cannot explain original intentionality. The weakness is that derived intentionality may not cover all computational or biological accounts of representation; naturalists can argue that use, function, and causal history ground content without a conscious designer. The score is strong because Max closes a tempting analogy, but still owes a positive account.",
+              tags: []
+            },
+            con: {
+              time: "35:17",
+              role: "Emergent content",
+              words:
+                "O'Connor says deductive conclusions reframe premises, and a book can be about London even though its atoms are not about London.",
+              score: 79,
+              critique:
+                "O'Connor's emergence analogy is one of his better challenges. The book and self-replicating cell examples show why it can be misleading to demand that every property of a whole appear in its smallest parts. Atoms are not about London, but a book composed of atoms can be about London; atoms do not reproduce, but cells do. That pressures Max's inference from base-level physical description to impossibility. The weakness is that books gain meaning through minds, so the analogy may borrow the very intentionality under debate. The cell analogy helps more, but biological function is not obviously semantic content. The score is strong because the objection is clear, though not complete.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The examples slide between derived public meaning and original mental aboutness."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Circularity And Survival",
+        timebox: "42:10-54:49",
+        score: {
+          pro: 80,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "44:31",
+              role: "Shared data",
+              words:
+                "Baker-Hytch says he is not telling naturalists to stop reasoning; he treats reason as shared data and asks which worldview predicts it best.",
+              score: 80,
+              critique:
+                "Baker-Hytch handles the circularity worry well. Instead of saying the naturalist must distrust reason and then using reason to prove that conclusion, he reframes reason as common data: both sides accept intentionality, inference, and rational evaluation, then ask which metaphysical hypothesis better explains them. That is a legitimate abductive strategy and avoids the most self-undermining version of Plantinga-style arguments. The weakness is that best predicts remains asserted more than measured. Theism, panpsychism, neutral monism, and other non-naturalist options are left under-specified, so the comparative probabilities are still impressionistic. The score is strong because the circularity charge is answered, but the probabilistic machinery remains quite qualitative.",
+              tags: []
+            },
+            con: {
+              time: "46:19",
+              role: "Truth useful",
+              words:
+                "O'Connor says organisms that accurately investigate the world survive better; natural selection favors minds that act in accordance with truth.",
+              score: 81,
+              critique:
+                "O'Connor's evolutionary reply is strong where it resists the slogan that evolution selects survival instead of truth. Survival often requires dependable contact with reality: poison, predators, tools, shelter, and social risks punish wildly false beliefs. His bush-noise example also separates reflexive overreaction from considered investigation, showing how evolved systems can include both quick heuristics and slower correction. The weakness is that this mainly supports everyday and empirical truth-tracking. It does not automatically show why abstract logic, metaphysics, or normativity should be reliable, and it still presupposes representational content. The score is high because it gives naturalism real resources, but it does not dissolve the deepest intentionality challenge posed by Max.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Consciousness And Theism",
+        timebox: "56:05-1:16:23",
+        score: {
+          pro: 81,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "59:03",
+              role: "First-person perspective",
+              words:
+                "Baker-Hytch says the problem is not a missing mechanism but that nonconscious physical ingredients cannot produce first-person awareness.",
+              score: 81,
+              critique:
+                "Baker-Hytch's final push is forceful because it brings intentionality down to the more basic problem of conscious experience. By citing Chalmers, Crane, and Nagel, he shows this is not merely a theistic complaint, and causal closure sharpens the puzzle: if physical processes are sufficient for behavior, why would first-person awareness exist rather than be epiphenomenal? His caution that the argument supports a family of mental-fundamental views, not direct Christian theism, is intellectually honest. The weakness is that the no-matter-how-complex premise is still doing enormous work and is not independently established in the discussion. The score is strong because the challenge is deep, but not conclusive.",
+              tags: []
+            },
+            con: {
+              time: "58:00",
+              role: "Gradual awareness",
+              words:
+                "O'Connor worries that moving from unexplained consciousness to supernatural agency is hasty, and argues awareness can develop gradually from reactive systems, pleasure, pain, and desire.",
+              score: 80,
+              critique:
+                "O'Connor finishes well by pressing two different objections. First, he warns that unexplained psychology does not automatically license supernatural agency, which is a useful guard against God-of-the-gaps reasoning. Second, he offers a gradualist story in which responsiveness, pain, pleasure, desire, and richer awareness develop by degrees rather than appearing as an on-off switch. The weakness is that this story describes an evolutionary pathway for increasingly complex behavior and experience more than it explains why subjective experience exists at all under causal closure. His final probability point about gradual evolution fitting naturalism is important, but underdeveloped. The score is strong because he keeps naturalism plausible without pretending the hard problem is solved.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 81,
+        strengths: [
+          "Baker-Hytch defines naturalism clearly and frames the argument probabilistically rather than as a brittle deductive proof.",
+          "He distinguishes determinism from physical causation, which prevents the debate from getting stuck on free will.",
+          "He presses intentionality, mental causation, and consciousness as serious explanatory challenges while conceding the argument does not directly prove Christian theism."
+        ],
+        blunders: [
+          {
+            text:
+              "His claim that nonconscious physical ingredients cannot produce aboutness sometimes treats the contested anti-emergence premise as already established.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "The argument supports mental-fundamental options more directly than God, so the title's theistic step remains under-argued.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His reply to books and computers may dismiss functional-naturalist accounts of representation before they are fully tested.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 80,
+        strengths: [
+          "O'Connor reduces his burden to the plausibility of naturalistic reason rather than overclaiming that materialism is proven.",
+          "He spots circularity and double-standard risks in arguments that use reason to undermine naturalistic reason.",
+          "He offers evolutionary and emergence-based replies involving memory, abstraction, truth-tracking, and gradual awareness."
+        ],
+        blunders: [
+          {
+            text:
+              "He often explains why cognition would be useful once representation exists, but less often explains original intentionality itself.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His appeal to naturalistic possibility sometimes under-answers Baker-Hytch's comparative probability challenge.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "The book and computer analogies risk shifting from original mental aboutness to derived public meaning.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
