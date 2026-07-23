@@ -37058,5 +37058,359 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "craig-williams-hossenfelder-zizek-god-reality-2026",
+    number: "105",
+    title:
+      "William Lane Craig and Rowan Williams vs Sabine Hossenfelder and Slavoj Žižek: Does God Exist?",
+    label: "God, reality, and Christian atheism",
+    date: "2026-07-23",
+    duration: "1 hr 33 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=spiiYYgi9Wg",
+    motion:
+      "Does God belong in our best account of reality, given cosmology, explanation, resurrection claims, suffering, religious practice, and the limits of science?",
+    summary:
+      "Craig and Williams defend Christian theism through arguments, experience, practice, and human meaning; Hossenfelder and Žižek press scientific restraint, religious plurality, and a Christian-atheist reading of God as a communal or symbolic force.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Premier Unbelievable? upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-23 assessment run. Caption segments were grouped into timestamped transcript lines before analysis. This was a live four-person panel at London's Royal Institution hosted by Jack Symes rather than a strict two-person timed debate, so speaker sides are grouped by broad theistic and skeptical or Christian-atheist posture. Auto-caption spellings are lightly normalized, including William Lane Craig, Rowan Williams, Sabine Hossenfelder, Slavoj Žižek, Jack Symes, Royal Institution, Hegel, Holy Spirit, Alvin Plantinga, Aquinas, Stephen Hawking, James Hartle, Roger Penrose, Alexander Vilenkin, Marilyn McCord Adams, Dostoevsky, Vladimir Lossky, T. S. Eliot, G. K. Chesterton, and Premier Unbelievable?; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God truly does make sense of the world",
+        context:
+          "Craig states the central explanatory-theist posture after listing cosmology, mathematics, fine-tuning, morality, and modal arguments."
+      },
+      con: {
+        text: "God is for me... the 12th camel",
+        context:
+          "Žižek treats God as a powerful communal and symbolic device rather than an ordinary external reality."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian theism",
+        speaker: "William Lane Craig and Rowan Williams",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical and Christian-atheist critique",
+        speaker: "Sabine Hossenfelder and Slavoj Žižek",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 82,
+      con: 81
+    },
+    sections: [
+      {
+        title: "Opening Accounts",
+        timebox: "00:50-13:06",
+        score: {
+          pro: 83,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "07:33",
+              role: "Practice and arguments",
+              words:
+                "Williams says belief in God deepens his sense of humanity; Craig adds interior experience and six exterior arguments for God.",
+              score: 83,
+              critique:
+                "The theistic opening is strong because Williams and Craig divide the labor rather than duplicating each other. Williams presents faith as the lived grammar that enlarges human dignity, tragedy, and practice, while Craig supplies a familiar public case from contingency, cosmic beginning, mathematics, fine-tuning, morality, and modal necessity. That pairing gives the audience both existential and argumentative routes into the motion. The weakness is that Craig lists more arguments than can be responsibly defended in the opening, and Williams's practice language can sound more like meaningful inhabitation than truth-tracking evidence. Still, together they make the theistic side broad, articulate, and relevant. The score is high because the case is cumulative and clear.",
+              tags: []
+            },
+            con: {
+              time: "01:07",
+              role: "Death of God and disbelief",
+              words:
+                "Žižek calls himself a Christian atheist centered on the death of God; Hossenfelder says science has limits but existing religions are impossible to believe.",
+              score: 80,
+              critique:
+                "The skeptical opening is intellectually lively and usefully non-reductive. Žižek avoids simple New Atheist dismissal by treating Christianity's death-of-God motif as uniquely materialist and socially potent, while Hossenfelder grants that science cannot answer every why and that many scientists still sense there is more than experiment. That makes their side harder to caricature. The weakness is diffusion. Žižek's Christian atheism challenges orthodox theism indirectly, and Hossenfelder's appeal to scientists drifting from faith gives sociology more weight than argument. Her core point, that particular religious narratives are impossible for her to believe, needs more evidential explanation. The score is strong because the opposition is serious, but less unified than the theistic case.",
+              tags: [
+                {
+                  label: "Authority bias",
+                  type: "bias",
+                  url: bias("authority-bias"),
+                  context:
+                    "References to most scientists being atheists risk giving disciplinary culture more evidential weight than the arguments themselves warrant."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Science And Explanation",
+        timebox: "13:04-28:04",
+        score: {
+          pro: 81,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "13:21",
+              role: "Metaphysical use of science",
+              words:
+                "Craig says science does not prove God, but can support premises in philosophical arguments with theological significance.",
+              score: 81,
+              critique:
+                "Craig's clarification is valuable because it blocks the crude God-of-the-gaps charge. He is not saying physics directly detects God; he is saying cosmology and fine-tuning can support premises in broader metaphysical arguments. The distinction between scientific evidence and philosophical conclusion is legitimate, and his causal principle gives the Kalam route a clear inferential bridge. The weakness is that the bridge is precisely where the hardest work sits. Moving from a beginning or boundary condition to a personal, timeless, spaceless creator depends on metaphysical premises Sabine does not grant. Craig also says no good past-eternal models exist, a contested specialist claim difficult to settle on stage. The score is strong, but not decisive.",
+              tags: []
+            },
+            con: {
+              time: "14:43",
+              role: "Prediction standard",
+              words:
+                "Hossenfelder asks what 'best explanation' means if it cannot calculate predictions for observables, and says God is an unnecessary addition.",
+              score: 82,
+              critique:
+                "Hossenfelder's challenge is one of the debate's sharpest moves because it asks Craig to clarify what explanatory success amounts to. In scientific practice, explanations earn their keep through models, observables, and prediction, so adding 'God made it' to equations that already work can look idle. She also notes that theoretical physics contains models with no ordinary time, no ordinary causality, and possible past-eternal structures, which complicates quick Kalam rhetoric. The weakness is that her standard may be too narrow for metaphysics, history, or ordinary explanation, where prediction is not the only virtue. The score is high because she directly targets the key term, but her own explanatory criterion needs defense.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Explanation shifts between scientific prediction and broader metaphysical explanation without fully arguing that only the former counts."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Reality Of God",
+        timebox: "16:03-38:33",
+        score: {
+          pro: 80,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "20:25",
+              role: "Not merely imagined",
+              words:
+                "Williams says if believers know they are constructing God as an imaginary convenience, then the notion no longer works as reality.",
+              score: 80,
+              critique:
+                "Williams's response to the twelfth-camel analogy is crisp. He sees that a useful fiction can organize practice, but he insists that the debate is about reality: if worshippers know God is only a shared construction, the grammar of faith breaks down. His point does not pretend to prove God; it shows why Žižek's functional account cannot simply replace theistic belief while preserving its internal force. The weakness is that this is partly a conceptual claim about how the word God functions. It may not trouble someone who openly wants a transformed, non-realist Christianity. The score is strong because Williams names the difference between heuristic utility and ontological commitment.",
+              tags: []
+            },
+            con: {
+              time: "18:17",
+              role: "Twelfth camel",
+              words:
+                "Žižek says God works like the added 12th camel: it resolves the social whole and is a material force without existing as ordinary external reality.",
+              score: 81,
+              critique:
+                "Žižek's twelfth-camel analogy is memorable and philosophically useful. It captures how religious language can structure a community, resolve tensions, and possess real social causality without being an object inside ordinary empirical reality. That is a genuine challenge to any debate that treats God only as a hypothesis added to physics. The weakness is that the analogy risks equivocating between God as socially effective fiction and God as the living reality Christians claim to trust. If the motion is God's existence, saying the fiction works may change the subject rather than answer it. The score is high because the move reframes the debate, but not higher because it blurs ontological commitments.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "God shifts between ontological reality, social force, and symbolic fiction, making the answer to existence ambiguous."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection Evidence",
+        timebox: "38:31-53:32",
+        score: {
+          pro: 82,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "39:23",
+              role: "Historical facts",
+              words:
+                "Craig lists crucifixion, burial, empty tomb, appearances, and transformed disciples as mainstream facts best explained by resurrection.",
+              score: 82,
+              critique:
+                "Craig's resurrection case is effective because it moves from bare assertion to a structured historical inference. The five-fact summary gives the audience definite evidential targets, and his appeal to explanatory scope, power, plausibility, and ad hocness shows how rival hypotheses should be compared. His rebuttal to the apparent-death theory is especially strong, since a half-dead Jesus is a poor explanation for resurrection proclamation. The weakness is that the majority-scholar framing can compress disputes over the empty tomb, appearances, and what counts as a fact. The resurrection hypothesis also presupposes broader theistic plausibility. The score is strong because the case is disciplined, but not fully self-contained.",
+              tags: []
+            },
+            con: {
+              time: "41:53",
+              role: "Insufficient leap",
+              words:
+                "Hossenfelder grants a historical Jesus could have died or survived, but says this does not establish that he was God's son.",
+              score: 77,
+              critique:
+                "Hossenfelder's reply is fair at the broad level: ordinary historical claims about a Galilean named Jesus do not automatically establish divinity, resurrection, or incarnation. She keeps the epistemic gap visible between sparse ancient data and a supernatural conclusion. The weakness is that her specific counterexample, that Jesus may not actually have died, is weak once Craig presents the standard objections to apparent-death theories. Her follow-up that people get convinced about weird things is psychologically possible but underdeveloped as a historical alternative to the listed facts. The score is solid because she presses the leap from history to theology, but lower because she does not supply a competing explanation with comparable scope.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The response leans on unresolved historical uncertainty without offering a developed rival explanation for the cited resurrection data."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Atheism And Cosmology",
+        timebox: "53:40-1:01:32",
+        score: {
+          pro: 80,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "56:31",
+              role: "Truth over stigma",
+              words:
+                "Craig says scientists should not let academic stigma determine their views and argues contemporary models still favor a cosmic beginning.",
+              score: 80,
+              critique:
+                "Craig is right to separate truth from peer pressure. If scientists avoid religious claims because they fear professional stigma, that is sociologically interesting but not an argument against God. His return to Hawking, Hartle, Penrose, Vilenkin, and past-eternal cosmology also keeps the discussion on the cosmological premise rather than personalities. The weakness is that his confidence about the state of cosmological models is hard for a general audience to assess and is directly challenged by a physicist citing live alternatives. The move from a probabilistic beginning to theism still needs the causal and personal-explanation steps. The score is strong because Craig restores burden discipline, but the specialist dispute remains open.",
+              tags: []
+            },
+            con: {
+              time: "59:29",
+              role: "Live alternatives",
+              words:
+                "Hossenfelder explains no-boundary cosmology, past-eternal proposals, string gas cosmology, and Penrose's cyclic model as alternatives to Craig's premise.",
+              score: 83,
+              critique:
+                "Hossenfelder's cosmology reply is strong because it supplies concrete alternatives rather than merely saying science might one day know better. By naming the no-boundary proposal, inflationary singularity issues, string gas cosmology, and Penrose's cyclic model, she shows that the beginning premise is not a simple settled datum. She is also candid that many mathematical models are close to religion if they lack empirical bite, which avoids special pleading for speculative physics. The weakness is that possible or mathematically expressible alternatives are not automatically physically adequate, and Craig's challenge is precisely about consistency and empirical fit. The score is high because she complicates the premise responsibly, while admitting uncertainty.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Evil Practice And Revelation",
+        timebox: "1:01:31-1:32:17",
+        score: {
+          pro: 84,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:05:11",
+              role: "No theoretical answer",
+              words:
+                "Williams rejects the picture that horrors are stains in a larger harmony and says there is no good theoretical answer to evil.",
+              score: 84,
+              critique:
+                "Williams's problem-of-evil response is unusually strong because he refuses an easy theodicy. He agrees with Žižek that treating Holocaust, Gulag, or a suffering child as perspective-dependent stains inside a larger harmony is morally repugnant. Instead, he says Christian belief binds the sacred to the vulnerable and gives practice, prayer, mercy, and critical memory the task of living with an unanswered wound. The weakness is that admitting there is no good theoretical answer leaves a major evidential objection unresolved for anyone seeking propositional justification. But as a reply within Christian practice, it is honest and powerful. The score is high because he sacrifices apologetic neatness for moral seriousness.",
+              tags: []
+            },
+            con: {
+              time: "1:02:51",
+              role: "Anti-harmony protest",
+              words:
+                "Žižek says Christianity should reject any God who explains horror as a necessary part of global harmony; real revelation passes through pain.",
+              score: 82,
+              critique:
+                "Žižek's closing pressure is compelling because it attacks the most morally dangerous form of theodicy: the view that atrocity becomes acceptable from the correct divine distance. His Christian-atheist reading of the cross as God's own separation from God keeps suffering concrete rather than folded into a serene metaphysical plan. The weakness is that this is more a theological protest than an argument against God's existence. It undermines one picture of providence, but could coexist with Williams's wounded, non-triumphal theism. His rejection of well-being evidence for religion is also too sweeping if the question includes practical rationality. The score is strong because the ethical critique lands, but the ontology remains ambiguous.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 82,
+        strengths: [
+          "Craig and Williams gave complementary forms of theism: public metaphysical argument, personal experience, religious practice, and human dignity.",
+          "Craig repeatedly clarified that science supports premises inside philosophical arguments, which avoids a crude God-of-the-gaps formulation.",
+          "Williams's refusal to resolve evil as a perspective problem gave the theistic side moral credibility and depth."
+        ],
+        blunders: [
+          {
+            text:
+              "Craig's rapid list of six arguments invited breadth without enough defense of each contested premise.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "The appeal to inner witness risks counting Christian experience as knowledge while leaving rival religious experiences under-addressed.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "Some cosmology claims were stated with more confidence than the live specialist disagreement could establish for the audience.",
+            links: [
+              {
+                label: "Authority bias",
+                url: bias("authority-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 81,
+        strengths: [
+          "Hossenfelder directly challenged the meaning of explanation and offered concrete cosmological alternatives rather than generic skepticism.",
+          "Žižek exposed how religious language can function materially and communally even when orthodox metaphysical claims are denied.",
+          "Both skeptical voices kept the gap visible between broad mystery, particular religious narratives, and supernatural conclusions."
+        ],
+        blunders: [
+          {
+            text:
+              "Hossenfelder's scientific prediction standard sometimes narrowed explanation too much for metaphysics, history, and lived religious practice.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "Žižek's Christian atheism often shifted between denying God, preserving Christianity, and redefining God as communal force.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "The resurrection rebuttal pressed uncertainty but did not develop a rival historical explanation with equal explanatory scope.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
