@@ -485,6 +485,11 @@ export const interlocutorAvatars = [
     name: "Max Baker-Hytch",
     src: `${avatarBasePath}/max-baker-hytch.webp`,
     aliases: ["Max Baker-Hytch", "Max Baker Hytch"]
+  },
+  {
+    name: "Slavoj Žižek",
+    src: `${avatarBasePath}/slavoj-zizek.webp`,
+    aliases: ["Slavoj Žižek", "Slavoj Zizek", "Žižek", "Zizek"]
   }
 ];
 
