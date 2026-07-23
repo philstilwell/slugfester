@@ -490,6 +490,11 @@ export const interlocutorAvatars = [
     name: "Slavoj Žižek",
     src: `${avatarBasePath}/slavoj-zizek.webp`,
     aliases: ["Slavoj Žižek", "Slavoj Zizek", "Žižek", "Zizek"]
+  },
+  {
+    name: "Sabine Hossenfelder",
+    src: `${avatarBasePath}/sabine-hossenfelder.webp`,
+    aliases: ["Sabine Hossenfelder", "Hossenfelder", "Dr. Sabine Hossenfelder", "Dr Sabine Hossenfelder"]
   }
 ];
 
