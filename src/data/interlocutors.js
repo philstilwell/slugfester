@@ -500,6 +500,11 @@ export const interlocutorAvatars = [
     name: "Susan Blackmore",
     src: `${avatarBasePath}/susan-blackmore.webp`,
     aliases: ["Susan Blackmore", "Blackmore", "Dr. Susan Blackmore", "Dr Susan Blackmore"]
+  },
+  {
+    name: "Michael Ruse",
+    src: `${avatarBasePath}/michael-ruse.webp`,
+    aliases: ["Michael Ruse", "Ruse", "Dr. Michael Ruse", "Dr Michael Ruse"]
   }
 ];
 
