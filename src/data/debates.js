@@ -38180,5 +38180,350 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "ward-ruse-mind-consciousness-god-2013",
+    number: "108",
+    title: "Keith Ward vs Michael Ruse: Mind, Consciousness, and God",
+    label: "Mind, consciousness, and God",
+    date: "2026-07-25",
+    duration: "1 hr 20 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=nOy29aP7wDc",
+    motion:
+      "Does human consciousness, religious and moral experience, and free agency make best sense within a God-centered mind-first reality, or can agnostic naturalism absorb those mysteries without theism?",
+    summary:
+      "Ward treats mind, religious experience, morality, and freedom as openings toward a divine mind; Ruse grants deep mystery while resisting the slide from mystery to God.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the ObjectiveBob upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-25 assessment run. Caption segments were grouped into timestamped transcript lines before analysis. This Unbelievable discussion was hosted by Justin Brierley and tied to The God Question DVD rather than structured as a formal timed debate, so section ranges follow the conversational topic flow. Auto-caption spellings are lightly normalized, including Keith Ward, Michael Ruse, Justin Brierley, Premier Christian Radio, The God Question, David Hume, Thomas Reid, Daniel Dennett, Paul and Patricia Churchland, Descartes, Bishop Berkeley, Thomas Nagel, Colin McGinn, St. Paul, Quakers, Ely Cathedral, Sam Harris, and Calvinists; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "experience is known more immediately",
+        context:
+          "Ward's central move is to start from consciousness as the datum we know most directly, then argue toward idealism and God."
+      },
+      con: {
+        text: "invoking God helps us at all",
+        context:
+          "Ruse repeatedly concedes that consciousness is deeply mysterious while denying that God improves the explanation."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Mind-first theism",
+        speaker: "Keith Ward",
+        color: "teal"
+      },
+      con: {
+        name: "Agnostic naturalism",
+        speaker: "Michael Ruse",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 78,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Consciousness Mystery",
+        timebox: "10:28-17:27",
+        score: {
+          pro: 80,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "12:14",
+              role: "Experience first",
+              words:
+                "Ward says all knowledge begins with experience, consciousness cannot be eliminated, and matter is a later hypothesis.",
+              score: 80,
+              critique:
+                "Ward's opening move is philosophically serious because it starts with the datum no theory can honestly discard: conscious experience. By noting that brains are known through experience while experience is immediate, he blocks crude eliminativism and gives idealism an intelligible foothold. That is relevant to the God question because a world in which mind is basic is friendlier to theism than a world of inert matter alone. The weakness is that priority in knowledge does not automatically imply priority in ontology. We may know experience first while still discovering that it depends on physical systems. The score is strong because he exposes a real problem for reductionism, but the move toward God remains only preparatory.",
+              tags: []
+            },
+            con: {
+              time: "10:28",
+              role: "Mystery admitted",
+              words:
+                "Ruse says consciousness is a major challenge and maybe insoluble, but that ignorance does not make naturalism wrong or God helpful.",
+              score: 84,
+              critique:
+                "Ruse's reply is strong because it concedes the hard problem instead of pretending neuroscience has already dissolved it. That concession gives his skepticism credibility: he is not defending a glib materialism, but a cautious naturalism that admits mystery. His best point is burden discipline. A gap between brain activity and first-person experience does not by itself show that God explains the gap, especially if no mechanism is supplied for how divine mind produces finite minds. The weakness is that merely saying God does not help can sound stipulative unless he compares theistic idealism with his own mysterian naturalism in more detail. The score is high because the anti-gap warning is clean and fair.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Idealism And Common Sense",
+        timebox: "20:52-25:24",
+        score: {
+          pro: 76,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "20:52",
+              role: "Cause distinction",
+              words:
+                "Ward says brain states may cause red-apple experiences, but Hume lets us separate cause and effect, so thoughts without brains are thinkable.",
+              score: 76,
+              critique:
+                "Ward's Humean distinction is useful because it prevents a causal correlation from being mistaken for a conceptual identity. If neural activity regularly accompanies a red-apple experience, that still leaves the philosophical question of why this physical process has any subjective character. His point also keeps open the logical possibility of mind without our kind of brain. The weakness is that logical separability is a thin result. Many things are thinkable in abstraction without becoming plausible explanations of the actual world, and the live question concerns evidence, not bare conceivability. The score is solid because the move defeats an overconfident identity claim, but it does not carry much evidential weight for God by itself.",
+              tags: []
+            },
+            con: {
+              time: "21:41",
+              role: "Reality test",
+              words:
+                "Ruse says idealism still has to distinguish real people from imagined ones, so common sense may be less dispensable than Ward suggests.",
+              score: 82,
+              critique:
+                "Ruse's common-sense reply lands because it asks what idealism adds to ordinary discriminations we already make between fantasy and reality. If Ward's son at lunch and an imagined daughter must still be treated differently, then idealism needs an account of public stability, error, and shared objects that does more than rename them as mental. Ruse also resists the slide from idealism to God by asking why a divine perceiver is needed to preserve ordinary existence. The weakness is that common sense is not a theory, and Ward is right that common sense has often misled us. Still, the score is high because Ruse presses the explanatory cost of Ward's metaphysical upgrade.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Near Death And Soul",
+        timebox: "28:08-37:28",
+        score: {
+          pro: 75,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "31:55",
+              role: "Possibility opened",
+              words:
+                "Ward says near-death research at least makes mental activity without brain activity thinkable, which matters if God is bodiless mind.",
+              score: 75,
+              critique:
+                "Ward handles near-death experiences more carefully than a sensational apologist would. He does not make them the center of faith or claim they prove Christianity. Instead, he uses them as a possibility probe: if investigators even ask whether mentality can occur without normal brain function, then mind without our present body is not incoherent. That modesty helps. The problem is that the evidential gain remains small. Experiments being thinkable, or reports being interesting, does not establish that brains were inactive in the relevant sense or that the experiences occurred during that interval. The score is solid because Ward avoids overclaiming, but it is capped because possibility is doing more work than evidence.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The move risks treating the absence of a settled physical account as positive support for disembodied mentality."
+                }
+              ]
+            },
+            con: {
+              time: "30:23",
+              role: "Evidence demand",
+              words:
+                "Ruse doubts the science, asks whether the brain is really nonfunctioning, and says near-death experiences do not advance the God question.",
+              score: 83,
+              critique:
+                "Ruse's reply is strong because it separates three questions that the DVD clip tends to merge: whether the reports are medically sound, whether they show mind without brain, and whether that would support Christianity. His demand for evidence about genuinely nonfunctioning brains is exactly the right pressure point. He also notes a theological wrinkle: traditional Christianity emphasizes resurrection of the body, not a free-floating soul. The weakness is that his dismissal is brisk. He gives a plausible skeptical checklist, but not a detailed engagement with the strongest near-death cases or research protocols. The score is high because the burden challenge is decisive locally, even if the empirical discussion remains abbreviated.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Religious Experience",
+        timebox: "43:32-49:25",
+        score: {
+          pro: 78,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "43:32",
+              role: "Revelatory basis",
+              words:
+                "Ward says religious belief begins in experience of revelation, and diverse traditions may share a common inner light under different interpretations.",
+              score: 78,
+              critique:
+                "Ward's religious-experience case is at its best when it refuses to treat experience as automatically reducible to sensory input. If all knowledge begins with experience, then reports of divine presence, inner light, grace, or love deserve initial consideration rather than instant debunking. His Quaker-friendly appeal to a common core across traditions also answers Ruse's pluralism objection more charitably than a narrow exclusivist reply would. The weakness is that shared experiential structure does not settle whether the object is real, nor which interpretation is true. Ward's own Christian reading still depends on revelation claims the outsider may not share. The score is solid-strong because the epistemic opening is fair, but the validation test stays incomplete.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "The argument gives weight to experiences partly because they feel revelatory to those who undergo and interpret them."
+                }
+              ]
+            },
+            con: {
+              time: "46:05",
+              role: "Evolutionary filter",
+              words:
+                "Ruse explains religious experience through evolved pattern-detection, vivid imagination, cultural diversity, and the mismatch between religion and science.",
+              score: 80,
+              critique:
+                "Ruse's explanation is strong because it offers a natural mechanism rather than merely saying religious experience is false. Pattern-detection, agency inference, imagination, and social inheritance plausibly explain why humans so readily see presence and purpose in the world. His pluralism point also matters: if Muslims, Protestants, Catholics, and Mormons report different objects or doctrines, experience alone cannot be a clean public test. The weakness is that explaining why people have experiences does not prove every experience is nonveridical. Science also uses evolved minds, social training, and interpretation while still tracking reality in some domains. The score is high because the debunking pressure is relevant, but it does not fully close Ward's epistemic opening.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality And Evolution",
+        timebox: "49:22-54:15",
+        score: {
+          pro: 76,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "49:22",
+              role: "Moral realism",
+              words:
+                "Ward says evolved beliefs that survive may track truth, and moral experience tells us we ought to act even against desire.",
+              score: 76,
+              critique:
+                "Ward's moral move has an important insight: evolutionary origin does not automatically defeat truth. Our perceptual and inferential capacities also have natural histories, yet we normally treat them as truth-tracking unless given a specific defeater. He then connects moral experience to a familiar datum, the felt authority of what one ought to do even when one would rather not. The weakness is that the move from moral realism to God is mostly implied rather than argued. Ruse can grant that morality functions seriously inside human life while denying ultimate foundation. Ward needs a comparative account of why theism explains obligation better than secular realism, constructivism, or pragmatism. The score is solid but underdeveloped.",
+              tags: []
+            },
+            con: {
+              time: "50:20",
+              role: "Gene illusion",
+              words:
+                "Ruse says morality has no ultimate justification, calling it an illusion of the genes that helps social beings get along.",
+              score: 79,
+              critique:
+                "Ruse's moral anti-realism is powerful because it does not dodge the evolutionary challenge. He gives a clear alternative: moral feelings may be adaptive social equipment rather than perceptions of objective duties. That explains why he can live morally in practice while denying an ultimate metaphysical foundation. The weakness is that calling morality an illusion is a large thesis stated faster than it is defended. If the same evolved mind can track science, social facts, and cause-effect regularities well enough for practical life, Ruse needs a sharper reason why moral experience uniquely loses truth value. The score is strong because the explanation is coherent, but not higher because the debunking standard remains uneven.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "Calling morality an illusion can assume the anti-realist conclusion before showing why moral experience is nonveridical."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Freedom And Laws",
+        timebox: "58:21-65:19",
+        score: {
+          pro: 78,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:01:15",
+              role: "Created freedom",
+              words:
+                "Ward asks whether the universe arose by necessity or by thought and intention, then doubts that deterministic laws can be philosophically justified.",
+              score: 78,
+              critique:
+                "Ward's free-will turn broadens the discussion in a useful way. Rather than only asking whether human choices are compatible with physics, he asks whether the universe itself is better understood as brute necessity or as intentionally created. That connects freedom to the larger God question without relying on a simplistic soul-versus-chemistry contrast. His skepticism about deterministic laws also usefully exposes that laws of nature are philosophically puzzling, not visible rulers forcing particles from outside. The weakness is that amazement at regularity is not yet evidence for divine intention. A naturalist can admit that laws are mysterious without treating God as the next explanatory step. The score is solid-strong because the reframing is fruitful but incomplete.",
+              tags: []
+            },
+            con: {
+              time: "59:38",
+              role: "Compatibilist frame",
+              words:
+                "Ruse says he is a compatibilist, accepts causal determination, believes in meaningful freedom, and sees the same experiences through another paradigm.",
+              score: 82,
+              critique:
+                "Ruse's free-will answer is strong because it avoids the false choice between supernatural libertarian freedom and meaningless automation. By distinguishing libertarianism from compatibilism, he shows that a naturalist can affirm responsibility and practical agency while accepting causal explanation. His closing reflection about shared experiences and different paradigms is also intellectually honest: he and Ward agree on many mysteries, but interpret their significance differently. The weakness is that compatibilism is sketched rather than defended. Saying this is all the freedom worth having does not answer every worry about rational deliberation, moral desert, or ultimate responsibility under determinism. The score is high because the framework is relevant and modest, but the defense remains compressed.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 78,
+        strengths: [
+          "Ward kept consciousness itself at the center, resisting quick reductions from first-person experience to brain description.",
+          "He connected mind, religious experience, morality, and freedom into one coherent idealist-theistic posture rather than offering isolated slogans.",
+          "His best moves were modest: he often argued for possibility, intelligibility, and explanatory openness before invoking Christian claims."
+        ],
+        blunders: [
+          {
+            text:
+              "His path from irreducible consciousness or puzzling natural laws to God often lacked a detailed comparative bridge.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His near-death discussion treated thinkability and research interest as more evidentially significant than the live data established.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His appeal to revelation and religious experience gave insider interpretation more weight than a public evidential test could yet support.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Ruse conceded the hard problem of consciousness and the seriousness of religion, which made his skepticism disciplined rather than dismissive.",
+          "He repeatedly separated possibility from probability and asked whether God actually explains more than naturalistic mystery.",
+          "His pluralism, near-death, morality, and compatibilism replies kept the evidential burden on the stronger metaphysical claim."
+        ],
+        blunders: [
+          {
+            text:
+              "His claim that God does not help sometimes functioned as a conclusion more than as a detailed comparison with Ward's view.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His evolutionary explanation of religious experience risked explaining origins while underarguing why all such experience is false.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His morality-as-illusion claim was sharp but asserted the anti-realist conclusion faster than the exchange could justify.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
