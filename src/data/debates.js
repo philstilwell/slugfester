@@ -15,7 +15,7 @@ export const debates = [
     summary:
       "Craig builds a cumulative case for Christian theism; O'Connor presses the Kalam argument, time, infinity, and animal suffering.",
     sourceNote:
-      "Built from the Chrome-generated NoteGPT transcript plus YouTube chapter timing. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on a public transcript and YouTube chapter timing. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -579,7 +579,7 @@ export const debates = [
     summary:
       "Craig presents a cumulative case for Christian theism; Hitchens argues the evidence is insufficient and religion adds moral and explanatory costs.",
     sourceNote:
-      "Built from the YouTube English default subtitle track downloaded with yt-dlp and cross-checked against a Reasonable Faith transcript. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions and cross-checked against a Reasonable Faith transcript. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -964,7 +964,7 @@ export const debates = [
     summary:
       "Hitchens argues religion is man-made and morally dangerous; D'Souza argues God explains facts that secular accounts leave unresolved.",
     sourceNote:
-      "Built from the YouTube English auto-caption track downloaded with yt-dlp and checked against Notre Dame and Today's Catholic event summaries. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions and checked against Notre Dame and Today's Catholic event summaries. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -1305,7 +1305,7 @@ export const debates = [
     summary:
       "Lennox argues science has real limits and points beyond itself; Atkins argues science can answer every real evidence-based question.",
     sourceNote:
-      "Built from the YouTube English original auto-caption track downloaded with yt-dlp and checked against Bethinking, John Lennox, and Evangelical Focus event pages. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions and checked against Bethinking, John Lennox, and Evangelical Focus event pages. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -1687,7 +1687,7 @@ export const debates = [
     summary:
       "Ten Bruggencate argues God grounds truth; Dillahunty argues reasonable belief requires public evidence without absolute certainty.",
     sourceNote:
-      "Built from the YouTube English original auto-caption track downloaded with yt-dlp. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -2076,7 +2076,7 @@ export const debates = [
     summary:
       "D'Souza defends theistic and conservative inferences; Dillahunty answers with burden-of-proof skepticism, science, and secular human welfare.",
     sourceNote:
-      "Built from the YouTube English original auto-caption track downloaded with the yt-dlp Python module. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -2449,7 +2449,7 @@ export const debates = [
     summary:
       "Wood argues Jesus identified with divine authority; O'Connor argues the texts more plausibly show delegated, name-bearing agency.",
     sourceNote:
-      "Built from the YouTube English original auto-caption track downloaded with the yt-dlp Python module. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -2774,7 +2774,7 @@ export const debates = [
     summary:
       "Wood argues science and morality depend on theism; Shermer argues burden, evil, and natural explanation undercut God belief.",
     sourceNote:
-      "Built from the YouTube English original auto-caption track downloaded with the yt-dlp Python module. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -3123,7 +3123,7 @@ export const debates = [
     summary:
       "Peterson defends religious meaning as culture's deep substrate; Dillahunty asks for evidence that any actual God exists.",
     sourceNote:
-      "Built from the YouTube English original auto-caption track downloaded with the yt-dlp Python module. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -3496,7 +3496,7 @@ export const debates = [
     summary:
       "Craig argues God grounds objective morality; Harris argues conscious well-being supplies a natural moral landscape.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the University of Notre Dame upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the University of Notre Dame upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -3844,7 +3844,7 @@ export const debates = [
     summary:
       "Ehrman argues suffering undermines biblical theism; D'Souza argues God may have morally sufficient reasons for permitting it.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Socrates in the City upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Socrates in the City upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -4242,7 +4242,7 @@ export const debates = [
     summary:
       "Settecase argues intelligibility presupposes Christian theism; Jump argues experience, logic, and mathematics require no God.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for The Think Institute upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for The Think Institute upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -4585,7 +4585,7 @@ export const debates = [
     summary:
       "Knechtle defends Christianity through grace and divine authority; O'Connor presses hard cases in scripture and ethics.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Bible Faith upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Bible Faith upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -4950,7 +4950,7 @@ export const debates = [
     summary:
       "Jones argues theism explains mind, emergence, and morality; Carrier argues naturalism better fits precedent, simplicity, and evidence.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the InspiringPhilosophy upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the InspiringPhilosophy upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -5259,7 +5259,7 @@ export const debates = [
     summary:
       "Lennox argues God grounds science, morality, dignity, and Christian hope; Hitchens argues theism is unsupported, authoritarian, and morally compromised by suffering and religious history.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Larry Alex Taunton upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Larry Alex Taunton upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -5584,7 +5584,7 @@ export const debates = [
     summary:
       "Hirsi Ali defends Christianity as personally transformative and civilizationally necessary; Dawkins grants cultural value but insists Christianity's truth claims remain false.",
     sourceNote:
-      "Built from YouTube's manual English subtitle track for the UnHerd upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on the manual YouTube subtitle track for the UnHerd upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -5917,7 +5917,7 @@ export const debates = [
     summary:
       "Collins presents a cumulative Christian case from science, morality, Jesus, and experience; O'Connor accepts mystery but challenges the evidential and moral bridge to Christianity.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Mighty Pursuit upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Mighty Pursuit upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -6243,7 +6243,7 @@ export const debates = [
     summary:
       "Williams, Goff, and Oldfield defend traditional, revised, and experiential Christianity; O'Connor presses fine-tuning limits, suffering, Gnosticism, and purpose.",
     sourceNote:
-      "Built from YouTube's auto-generated English captions and YouTube chapter timing. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions and YouTube chapter timing. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -6576,7 +6576,7 @@ export const debates = [
     summary:
       "Harris grounds moral truth in navigable conscious well-being; O'Connor argues this still yields subjective preference plus objective instrumental facts, not moral oughts.",
     sourceNote:
-      "Built from YouTube's auto-generated English captions for the Alex O'Connor clip. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Alex O'Connor clip. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -6829,7 +6829,7 @@ export const debates = [
     summary:
       "Christopher defends Iraq intervention and attacks religion as totalitarian; Peter condemns the war and argues belief anchors moral order against secular collapse.",
     sourceNote:
-      "Built from YouTube's auto-generated English captions for the Hauenstein Center upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Hauenstein Center upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -7178,7 +7178,7 @@ export const debates = [
     summary:
       "Hitchens treats God as human projection and religious authority as dangerous; Wolpe defends God as the source of meaning, freedom, goodness, and moral order.",
     sourceNote:
-      "Built from YouTube's auto-generated English captions for the GBH Forum Network upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the GBH Forum Network upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -7543,7 +7543,7 @@ export const debates = [
     summary:
       "Turek builds a cumulative case from cosmology, design, morality, and reason; Hitchens attacks religion as projection, moral tyranny, and unsupported theism.",
     sourceNote:
-      "Built from YouTube's auto-generated English captions for the Cross Examined upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Cross Examined upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -7916,7 +7916,7 @@ export const debates = [
     summary:
       "Biddle grounds objective morality in life-serving values and rational egoism; O'Connor argues moral language expresses emotion rather than objective truth.",
     sourceNote:
-      "Built from YouTube's auto-generated English captions for the Craig Biddle upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Craig Biddle upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -8241,7 +8241,7 @@ export const debates = [
     summary:
       "Hitchens argues religion is man-made authority and moral poison; Olasky answers that Christianity produces grace, charity, reform, and personal transformation.",
     sourceNote:
-      "Built from YouTube's auto-generated English captions for the atheist.archive upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the atheist.archive upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -8582,7 +8582,7 @@ export const debates = [
     summary:
       "Hitchens argues Islam's total claims and coercive defenses make peace impossible; Ramadan argues the question essentializes a diverse tradition whose resources can move people toward peace.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the 92nd Street Y upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the 92nd Street Y upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -8925,7 +8925,7 @@ export const debates = [
     summary:
       "Turek argues that cosmology, fine-tuning, DNA, morality, logic, and Jesus point to theism; Hitchens argues that natural explanation, religious diversity, and moral independence undercut the leap to Christianity.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Cross Examined upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Cross Examined upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -9268,7 +9268,7 @@ export const debates = [
     summary:
       "Turek argues evil, goodness, logic, and reason require God; O'Connor argues atheism carries no single worldview burden and moral experience can be subjective yet intelligible.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Alex O'Connor upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Alex O'Connor upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -9577,7 +9577,7 @@ export const debates = [
     summary:
       "Turek builds a cumulative CRIMES case for theism; Shermer argues that science, reciprocal morality, and falsifiability explain reality better than a gap-filling God hypothesis.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Cross Examined upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Cross Examined upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -9904,7 +9904,7 @@ export const debates = [
     summary:
       "Turek argues that immaterial features of reality require theism; Silverman argues that atheism is the honest stance because science learns while religion fills gaps and revises after the fact.",
     sourceNote:
-      "Built from YouTube's en automatic caption transcript for the Cross Examined upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Cross Examined upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -10241,7 +10241,7 @@ export const debates = [
     summary:
       "Lowder argues that naturalism has better prior simplicity and evidential accuracy; Turek argues that naturalism borrows the immaterial realities needed for reason, morality, information, and science.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Cross Examined upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Cross Examined upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -10560,7 +10560,7 @@ export const debates = [
     summary:
       "Craig argues that the resurrection best explains the empty tomb, appearances, and disciples' transformation; O'Connor presses the evidential threshold, testimony, alternative hypotheses, and gospel development.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Alex O'Connor upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Alex O'Connor upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -10884,7 +10884,7 @@ export const debates = [
     summary:
       "The Knechtles argue that morality, creation, Jesus, resurrection, and lived experience point to the biblical God; O'Connor and Halper argue that animal suffering, biblical errors, divine violence, and hiddenness count strongly against that God.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Alex O'Connor upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Alex O'Connor upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -11236,7 +11236,7 @@ export const debates = [
     summary:
       "Craig argues that cosmology supports the Kalam and fine-tuning arguments for a creator and designer; Carroll argues that naturalism supplies better model-based explanations and that theism lacks predictive discipline.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the ReasonableFaithOrg upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the ReasonableFaithOrg upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -11572,7 +11572,7 @@ export const debates = [
     summary:
       "Goff argues that private conscious data, the hard problem, and Russellian panpsychism make consciousness fundamental; Carroll argues that weak emergence, the core theory, and explanatory discipline favor physicalism.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Mind Chat upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Mind Chat upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -11900,7 +11900,7 @@ export const debates = [
     summary:
       "Carroll and Shermer argue that naturalism and scientific explanations have displaced religious claims; Hutchinson and D'Souza argue that science has not refuted religion because it cannot settle every religious, historical, moral, or existential claim.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Skeptic upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Skeptic upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -12235,7 +12235,7 @@ export const debates = [
     summary:
       "Carroll defends naturalism as a self-contained empirical worldview; Halvorson defends theism while sharply separating scientific facts from metaphysical overreach.",
     sourceNote:
-      "Built from YouTube auto-generated English captions downloaded with yt-dlp. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -12642,7 +12642,7 @@ export const debates = [
     summary:
       "Bass builds a cumulative resurrection case from bedrock facts and Christian expansion; Ehrman tests each step against source criticism, comparative miracle claims, and historical probability.",
     sourceNote:
-      "Built from YouTube auto-generated English captions downloaded with yt-dlp. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -13044,7 +13044,7 @@ export const debates = [
     summary:
       "McDowell presses Ehrman on moral realism, progress, guilt, and the authority of moral duties; Ehrman defends Jesus' historical influence while grounding morality in human nature, culture, and evolved social life.",
     sourceNote:
-      "Built from YouTube auto-generated English captions downloaded with yt-dlp. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -13393,7 +13393,7 @@ export const debates = [
     summary:
       "Jones defends a cumulative, flexible Christian account; Lambert presses skeptical challenges from deconversion, hiddenness, testimony, textual complexity, archaeology, and comparative religion.",
     sourceNote:
-      "Built from YouTube auto-generated English captions downloaded with yt-dlp. This source is a cordial long-form discussion rather than a formal debate; Slugfester assesses it with the same side-by-side debate framework for reader convenience. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions. This source is a cordial long-form discussion rather than a formal debate; Slugfester assesses it with the same side-by-side debate framework for reader convenience. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -13726,7 +13726,7 @@ export const debates = [
     summary:
       "Enoch defends robust normative realism as the best way to save moral phenomena; Bush argues that anti-realist quietism and empirical psychology dissolve the need for realist facts.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Miles K. Donahue upload, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Miles K. Donahue upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -14059,7 +14059,7 @@ export const debates = [
     summary:
       "Huemer defends objective moral facts from common moral judgments, Frege-Geach style semantics, and phenomenal conservatism; Bush argues that realist conclusions rest on contested intuitions, semantic assumptions, and normative entanglement.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Curiosity upload, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Curiosity upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -14376,7 +14376,7 @@ export const debates = [
     summary:
       "In a collegial discussion, Tomaszewski defends Thomistic simplicity through analogy, aseity, and extrinsic predication, while Schmid tests it with Trinitarian, alone-world, and changing-knowledge objections.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Capturing Christianity livestream, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short. This was a structured discussion more than a formal debate.",
+      "Based on YouTube captions for the Capturing Christianity livestream. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short. This was a structured discussion more than a formal debate.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -14693,7 +14693,7 @@ export const debates = [
     summary:
       "Meyer argues that a beginning, fine-tuning, and information inputs point to a transcendent mind; Halper argues that early-universe physics remains underdetermined and God lacks testable content.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Justin Brierley | Think Faith upload, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short. This was a long-form moderated discussion with debate segments.",
+      "Based on YouTube captions for the Justin Brierley | Think Faith upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short. This was a long-form moderated discussion with debate segments.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -15010,7 +15010,7 @@ export const debates = [
     summary:
       "Biddle defends free will as the choice to focus and use reason; O'Connor argues that choices are governed by causes, desires, or randomness outside ultimate control.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Craig Biddle upload, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Craig Biddle upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -15343,7 +15343,7 @@ export const debates = [
     summary:
       "Singer, Frazier, and Swinburne offer divergent realist accounts of morality; O'Connor defends ethical emotivism and treats moral language as expressive rather than truth-apt.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Alex O'Connor upload, downloaded with the yt-dlp Python module. This is a panel-style discussion; speaker roles are inferred from the hosted sequence and chapter titles. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Alex O'Connor upload. This is a panel-style discussion; speaker roles are inferred from the hosted sequence and chapter titles. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -15703,7 +15703,7 @@ export const debates = [
     summary:
       "Shapiro argues that society needs religiously grounded assumptions about free will, morality, and institutions; O'Connor denies free will, doubts religious moral authority, and presses the cost of useful falsehoods.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Premier Unbelievable? upload, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Premier Unbelievable? upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -16078,7 +16078,7 @@ export const debates = [
     summary:
       "Jones argues data and history show Christianity produces stronger charity, social health, fertility, rights, and science; Krauss argues secular Enlightenment, science, fallibilism, and liberal ethics best explain modern progress.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Modern-Day Debate upload, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Modern-Day Debate upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -16471,7 +16471,7 @@ export const debates = [
     summary:
       "Scrivener grounds moral seriousness and progress in the crucified Christ; Folley grants theism's attractions while pressing hiddenness, evil, and criteria for development.",
     sourceNote:
-      "Built from YouTube auto-generated captions downloaded with yt-dlp. This was a friendly discussion rather than a formal timed debate; analytical summaries are condensed and lightly cleaned, and direct quotes are kept short.",
+      "Based on YouTube captions. This was a friendly discussion rather than a formal timed debate; analytical summaries are condensed and lightly cleaned, and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -16824,7 +16824,7 @@ export const debates = [
     summary:
       "Dyer argues that transcendental categories cohere only within Orthodox theism; Dillahunty accepts fallible use of logic while denying that a divine foundation has been shown necessary.",
     sourceNote:
-      "Built from YouTube auto-generated captions downloaded with yt-dlp. Analytical summaries are condensed and lightly cleaned, especially where captions garbled names or technical terms; direct quotes are kept short.",
+      "Based on YouTube captions. Analytical summaries are condensed and lightly cleaned, especially where captions garbled names or technical terms; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -17193,7 +17193,7 @@ export const debates = [
     summary:
       "Knechtle argues Jesus best explains human value, morality, meaning, and resurrection evidence; Dillahunty challenges the method for verifying supernatural and specifically Christian claims.",
     sourceNote:
-      "Built from YouTube auto-generated captions downloaded with yt-dlp. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -17594,7 +17594,7 @@ export const debates = [
     summary:
       "Lennox argues science points beyond mechanisms to mind and Christian hope; Atkins argues science progressively removes the need for God.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Apologia Acts 17:17 upload, downloaded with the yt-dlp Python module. The upload includes a moderated dialogue plus separate follow-up answer segments; analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Apologia Acts 17:17 upload. The upload includes a moderated dialogue plus separate follow-up answer segments; analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -17955,7 +17955,7 @@ export const debates = [
     summary:
       "Horn argues the resurrection passes a reasonability test for unusual history; Dillahunty argues testimony alone cannot justify a supernatural miracle claim.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Matt Fradd upload, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Matt Fradd upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -18324,7 +18324,7 @@ export const debates = [
     summary:
       "D'Souza defends the Bible as revelation interpreted through Christian tradition; O'Connor argues that internal tensions, historical shaping, conquest, and slavery undercut its truth claims.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Pangburn upload, downloaded with the yt-dlp Python module. The upload begins with pre-show remarks; analytical summaries focus on the formal debate and are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Pangburn upload. The upload begins with pre-show remarks; analytical summaries focus on the formal debate and are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -18709,7 +18709,7 @@ export const debates = [
     summary:
       "Jones argues Christian belief and institutions best sustain human rights, meaning, charity, fertility, and Western social goods; Law argues humanism can preserve morality and pluralism without building society on disputed Christian claims.",
     sourceNote:
-      "Built from YouTube's en-orig automatic caption transcript for the Premier Unbelievable? upload, downloaded with the yt-dlp Python module. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Premier Unbelievable? upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -19086,7 +19086,7 @@ export const debates = [
     summary:
       "Craig defends the Kalam through metaphysical causation, actual-infinity paradoxes, and a personal first cause; Malpass presses grammar, domain shift, set theory, and undercutting alternatives.",
     sourceNote:
-      "Built from YouTube en-orig automatic captions for the Premier Unbelievable? upload, downloaded with yt-dlp on 2026-06-02. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Premier Unbelievable? upload, on 2026-06-02. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -19455,7 +19455,7 @@ export const debates = [
     summary:
       "Huemer defends objective moral facts through phenomenal conservatism, ordinary moral judgments, and rationalist a priori knowledge; Lutz argues for moral error theory, Humean reasons, and explanationist epistemology.",
     sourceNote:
-      "Built from YouTube en-orig automatic captions for the Miles K. Donahue upload, downloaded with python3 -m yt_dlp on 2026-06-03. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Miles K. Donahue upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -19784,7 +19784,7 @@ export const debates = [
     summary:
       "Scrivener argues that Christian revelation uniquely grounds universal human dignity and the protection of the weak; Dillahunty argues that secular humanism can keep useful moral insights without religious truth claims.",
     sourceNote:
-      "Built from YouTube en-orig automatic captions for the Premier Unbelievable? upload, downloaded with python3 -m yt_dlp on 2026-06-03. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on YouTube captions for the Premier Unbelievable? upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -20137,7 +20137,7 @@ export const debates = [
     summary:
       "Dillahunty argues that secular humanism is more revisable, evidence-facing, and focused on this-world human flourishing; Slick argues that it self-refutes because it cannot ground logic, science, or morality without Christianity.",
     sourceNote:
-      "Built from an audio transcription because no YouTube captions were available: the upload was downloaded with python3 -m yt_dlp, converted and split into 20-minute MP3 chunks with local ffmpeg, then transcribed with OpenAI gpt-4o-mini-transcribe on 2026-06-03. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on an audio transcription because no YouTube captions were available. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -20513,7 +20513,7 @@ export const debates = [
     summary:
       "Bollore argues that modern science and biblical coherence make a creator God the best explanation; Halper argues that the scientific case is overclaimed and that biblical errors and animal suffering fit atheism better.",
     sourceNote:
-      "Built from YouTube en-orig automatic captions for the Phil Halper upload, downloaded with python3 -m yt_dlp on 2026-06-04. Auto captions repeatedly rendered Michel-Yves Bollore as Michelle; speaker names and technical terms are lightly normalized. Analytical summaries are condensed; direct quotes are kept short.",
+      "Based on YouTube captions for the Phil Halper upload. Captions are lightly cleaned; analytical summaries are condensed; direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -20936,7 +20936,7 @@ export const debates = [
     summary:
       "Horn says resurrection best explains early testimony, the empty tomb, group appearances, and later miracles; O'Connor says the evidence is ambiguous and paralleled by other religious claims.",
     sourceNote:
-      "Built from YouTube en-orig automatic captions for the Alex O'Connor upload, downloaded with python3 -m yt_dlp on 2026-06-04. Auto-caption spacing and names are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Alex O'Connor upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -21298,7 +21298,7 @@ export const debates = [
     summary:
       "Scrivener argues modern moral instincts are unthinkable without Christian formation; O'Connor argues the inheritance is mixed, biblically troubling, and not uniquely Christian.",
     sourceNote:
-      "Built from YouTube en-orig automatic captions for the Justin Brierley | Think Faith discussion-format upload, downloaded with python3 -m yt_dlp on 2026-06-06. Auto-caption spacing and names are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Justin Brierley | Think Faith discussion-format upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -21668,7 +21668,7 @@ export const debates = [
     summary:
       "Pageau argues patterns, Genesis, resurrection, and worship disclose Logos; Folley grants their pragmatic and literary value while keeping ontology bottom-up and evidence-sensitive.",
     sourceNote:
-      "Built from YouTube en-orig automatic captions for the Justin Brierley | Think Faith discussion-format upload, downloaded with python3 -m yt_dlp on 2026-06-06. Auto-caption spacing, speaker names, and technical terms are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Justin Brierley | Think Faith discussion-format upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -22005,7 +22005,7 @@ export const debates = [
     summary:
       "Butt presents causation, design, morality, and Jesus as cumulative proof of biblical theism; Shermer argues the evidence is insufficient and better handled through skeptical naturalism.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with yt-dlp on 2026-06-07. Auto-caption spacing, speaker names, and technical terms are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions on 2026-06-07. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -22366,7 +22366,7 @@ export const debates = [
     summary:
       "Pine defends Thomistic classical theism as the necessary ground of being, intelligibility, and revelation; Watkins argues that evolutionary evil, divine freedom, changing knowledge, and hiddenness favor philosophical atheism.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with yt-dlp on 2026-06-07. Auto-caption spacing, speaker names, and technical terms are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions on 2026-06-07. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -22723,7 +22723,7 @@ export const debates = [
     summary:
       "Donahue argues that fine-tuning is far more likely on theism than single-universe naturalism; Malpass argues that naturalistic disjunctions, alien and simulation analogies, priors, and religious ambiguity prevent that inference from carrying enough weight.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with yt-dlp on 2026-06-07. Auto-caption spacing, speaker names, Bayesian terminology, and philosophical names are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions on 2026-06-07. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -23068,7 +23068,7 @@ export const debates = [
     summary:
       "Donahue tests whether Christian belief can remain rational under skeptical pressure; Fodor argues that the case for Christianity is too assumption-heavy and the case against it is cumulatively stronger.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with yt-dlp on 2026-06-07. Auto-caption spacing, speaker names, philosophical terms, and theological references are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions on 2026-06-07. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -23461,7 +23461,7 @@ export const debates = [
     summary:
       "Jones argues that emergent physical reality and information-theoretic physics point to a necessary mind; Fodor argues that the physics is unsettled, the move to mind is underwarranted, and theistic idealism explains too little.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-08. Auto-caption spacing, speaker names, physics terms, and theological references are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -23862,7 +23862,7 @@ export const debates = [
     summary:
       "Jones argues that mental information and observer-dependent quantum collapse make idealism the best explanation; Dillahunty presses for detectable manifestations and mind-independent physical interactions.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-08. The upload is a commentary-wrapped excerpt from a Jones-Dillahunty debate; argument cards focus on the debate exchange itself, while brief host narration is used only to orient the excerpt. Auto-caption spacing, speaker turns, physics terms, and repeated caption fragments are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions. The upload is a commentary-wrapped excerpt from a Jones-Dillahunty debate; argument cards focus on the debate exchange itself, while brief host narration is used only to orient the excerpt. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -24213,7 +24213,7 @@ export const debates = [
     summary:
       "Winger builds a cumulative historical case from non-miraculous facts and explanatory scope; Dillahunty argues that the evidence remains testimonial and insufficient for a supernatural resurrection.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-08, plus YouTube chapter timing. Auto-caption spacing, speaker turns, names, biblical references, and repeated caption fragments are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions and YouTube chapter timing. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -24566,7 +24566,7 @@ export const debates = [
     summary:
       "Anderson defends necessary truths as divine thoughts; Malpass grants realism about propositions but challenges the modal, intentional, and self-content steps.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-09, plus YouTube chapter timing. Auto-caption spacing, speaker turns, names, logic terms, and repeated caption fragments are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions and YouTube chapter timing. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -24912,7 +24912,7 @@ export const debates = [
     summary:
       "Kushner and Gomes defend religion as moral aspiration, resilience, and community; Hitchens argues that secular ethics survives while religion adds dangerous authority claims.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-11. The upload runs 3:04:03 and appears to repeat a large partial segment after the first complete Connecticut Forum sequence; this assessment scores the first complete 0:00-1:37:51 forum sequence. Auto-caption spacing, speaker turns, names, and repeated caption fragments are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions. The upload runs 3:04:03 and appears to repeat a large partial segment after the first complete Connecticut Forum sequence; this assessment scores the first complete 0:00-1:37:51 forum sequence. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -25265,7 +25265,7 @@ export const debates = [
     summary:
       "Dyer defends Orthodox Christianity as the coherent ground of transcendental preconditions; Malpass presses the argument's form, induction, non-classical logic, and divine conceptualism.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-11, plus YouTube chapter timing. Auto-caption spacing, speaker turns, names, philosophical terms, and repeated caption fragments are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions and YouTube chapter timing. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -25610,7 +25610,7 @@ export const debates = [
     summary:
       "Hawkins defends libertarian free will through deliberative experience, neuroscience, and live options; Folley argues that compatibilist agency preserves the important distinctions around choice and responsibility.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-11, plus YouTube chapter timing. Auto-caption spacing, speaker turns, names, philosophical terms, and repeated caption fragments are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions and YouTube chapter timing. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -25963,7 +25963,7 @@ export const debates = [
     summary:
       "Rasmussen defends modal-independence intuitions and theistic resources for hidden goods; Malpass argues that unsatisfiable-pair diagnosis and ordinary moral knowledge undercut those moves.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-18, plus YouTube chapter timing. Auto-caption spacing, speaker turns, names, philosophical terms, and repeated caption fragments are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions and YouTube chapter timing. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -26356,7 +26356,7 @@ export const debates = [
     summary:
       "Rasmussen presents contingency reasoning as a careful route to a robust foundation; Clifton grants much of the setup while resisting the leap to necessary concrete being.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-18, plus YouTube chapter timing. The video is a hosted discussion rather than a formal debate; auto-caption spacing, speaker turns, names, and philosophical terms are lightly normalized, while analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions and YouTube chapter timing. The video is a hosted discussion rather than a formal debate; captions are lightly cleaned, and analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -26709,7 +26709,7 @@ export const debates = [
     summary:
       "Craig argues mathematical applicability cries out for a theistic explanation; Oppy challenges the surprise premise and offers a naturalistic necessity account.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-18, plus YouTube chapter timing. Auto-caption spacing, speaker turns, names, and philosophical terms are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions and YouTube chapter timing. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -27094,7 +27094,7 @@ export const debates = [
     summary:
       "Feser defends formal theistic proofs as summaries of deeper metaphysical reasoning; Oppy argues that theory comparison, not standalone arguments, carries the real epistemic burden.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-18. The upload has no topical chapter map, so section ranges are inferred from transcript flow; auto-caption spacing, speaker turns, names, and philosophical terms are lightly normalized, while analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions. The upload has no topical chapter map, so section ranges are inferred from transcript flow; captions are lightly cleaned, and analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -27423,7 +27423,7 @@ export const debates = [
     summary:
       "Albrecht argues that Paul, early sources, and institutional continuity support bodily resurrection and Catholic orthodoxy; Oppy presses gaps in transmission, diversity, and source survival.",
     sourceNote:
-      "Built from YouTube English automatic captions downloaded with python3 -m yt_dlp on 2026-06-18. The upload is a hosted discussion rather than a formal debate; auto-caption spacing, speaker turns, names, and theological terms are lightly normalized, while analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions. The upload is a hosted discussion rather than a formal debate; captions are lightly cleaned, and analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -27744,7 +27744,7 @@ export const debates = [
     summary:
       "Swinburne argues that a simple omnipotent God best explains the universe, laws, life, and consciousness; Oppy argues that naturalistic theory comparison can be simpler and no less explanatory.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-18, plus YouTube chapter timing. Auto-caption spacing, speaker turns, names, and philosophical terms are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions and YouTube chapter timing. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -28089,7 +28089,7 @@ export const debates = [
     summary:
       "Rasmussen treats arbitrary limits in fundamental reality as theoretical costs pointing toward a perfect or quasi-perfect foundation; Schmid argues that the move remains dependent on wider theory comparison and contested bridge premises.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-18. The upload is a philosophical dialogue rather than a formal debate; it has no topical chapter map, so section ranges are inferred from transcript flow. Auto-caption spacing, speaker turns, names, and philosophical terms are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions. The upload is a philosophical dialogue rather than a formal debate; it has no topical chapter map, so section ranges are inferred from transcript flow. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -28426,7 +28426,7 @@ export const debates = [
     summary:
       "Rasmussen argues that removing arbitrary limits from the foundation points toward supreme value, mind, and explanatory unity; Oppy argues that naturalistic theory comparison should remain cautious, science-facing, and evaluated by total worldview costs.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-19, plus YouTube chapter timing. The upload is a moderated philosophical discussion rather than a formal debate. Auto-caption spacing, speaker turns, names, and philosophical terms are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions and YouTube chapter timing. The upload is a moderated philosophical discussion rather than a formal debate. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -28763,7 +28763,7 @@ export const debates = [
     summary:
       "Bush argues that realist-friendly claims about folk morality, common sense, and relativism often outrun the evidence; McAllister presses whether realism still has pre-philosophical, historical, and practical support.",
     sourceNote:
-      "Built from YouTube English-original automatic captions downloaded with python3 -m yt_dlp on 2026-06-21. The upload is a cordial discussion rather than a formal debate; it has no topical chapter map, so section ranges are inferred from transcript flow. Auto-caption spacing, speaker turns, names, and philosophical terms are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions. The upload is a cordial discussion rather than a formal debate; it has no topical chapter map, so section ranges are inferred from transcript flow. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -29092,7 +29092,7 @@ export const debates = [
     summary:
       "Loke defends a deductive causal-principle route to a personal first cause; Oppy argues that naturalistic theory comparison and necessary initial reality remain stronger.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Capturing Christianity upload, downloaded with python3 -m yt_dlp on 2026-06-22, plus YouTube chapter timing. Auto-caption spacing, speaker names, philosophical terms, and repeated caption fragments are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Capturing Christianity upload and YouTube chapter timing. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -29430,7 +29430,7 @@ export const debates = [
     summary:
       "Krauss argues science needs no God; Meyer argues information and fine-tuning point to design; Lamoureux defends evolutionary creation while rejecting ID interventionism.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Wycliffe College at the University of Toronto upload, downloaded with python3 -m yt_dlp on 2026-06-23. The upload is a three-perspective panel rather than a two-person debate; Slugfester compresses it into two columns, with cards naming whether Meyer or Lamoureux is carrying the theistic-side point. The video has no topical chapter map, so section ranges are inferred from transcript flow. Auto-caption spacing, speaker names, scientific terms, and repeated caption fragments are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Wycliffe College at the University of Toronto upload. The upload is a three-perspective panel rather than a two-person debate; Slugfester compresses it into two columns, with cards naming whether Meyer or Lamoureux is carrying the theistic-side point. The video has no topical chapter map, so section ranges are inferred from transcript flow. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -29783,7 +29783,7 @@ export const debates = [
     summary:
       "Atkins argues science and evolution make God unnecessary; Fox argues science explains mechanisms while Christianity addresses meaning, dignity, duty, and hope.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Premier Unbelievable? upload, downloaded with python3 -m yt_dlp on 2026-06-23. The captions used rolling fragments, so only the new tail of each caption window was reconstructed before analysis. Auto-caption spellings, speaker names, repeated fragments, and obvious transcription noise are lightly normalized; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Premier Unbelievable? upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -30144,7 +30144,7 @@ export const debates = [
     summary:
       "Egnor defends God through Thomistic, moral, and scientific inferences; Dillahunty argues the case is undefined, unfalsifiable, under-evidenced, and weakened by hiddenness.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Theology Unleashed upload, downloaded with python3 -m yt_dlp during the 2026-06-24 assessment run. The captions used rolling fragments, so only the new tail of each caption window was reconstructed before analysis. Auto-caption spellings are lightly normalized, including Michael Egnor where captions rendered variants such as 'ignore' or 'egner'; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Theology Unleashed upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -30506,7 +30506,7 @@ export const debates = [
     summary:
       "Christopoulos argues Bayesian comparison and New Testament testimony favor resurrection; Dillahunty argues the sources, priors, and missing independent controls leave the claim unproved.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Inspiring Philosophy Academy upload, downloaded with python3 -m yt_dlp during the 2026-06-24 assessment run. The captions used rolling fragments, so only the new tail of each caption window was reconstructed before analysis. Auto-caption spellings are lightly normalized, including Than Christopoulos where captions rendered variants such as Stan, fan, or thanan; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Inspiring Philosophy Academy upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -30837,7 +30837,7 @@ export const debates = [
     summary:
       "Sechler argues perfect-mind theism is simpler and explains key features of experience; Dillahunty argues the terms, detection method, and explanatory bridge are missing.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Theology Unleashed upload, downloaded with python3 -m yt_dlp during the 2026-06-24 assessment run. The captions used rolling fragments, so only the new tail of each caption window was reconstructed before analysis. Auto-caption spellings are lightly normalized, including Matt Dillahunty where captions rendered variants such as Dahanti and Zac Sechler where captions rendered variants such as Zack Sichler; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Theology Unleashed upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -31159,7 +31159,7 @@ export const debates = [
     summary:
       "Bignon argues his conversion and apologetic reasons make Christianity rational and personally evidential; Oppy grants rational permissibility while challenging the public evidential weight of such experiences.",
     sourceNote:
-      "Built from YouTube English automatic captions for the Premier Unbelievable? upload, downloaded with python3 -m yt_dlp during the 2026-06-24 assessment run. The captions used rolling fragments, so only the new tail of each caption window was reconstructed before analysis. This was a structured Big Conversation discussion rather than a formal timed debate. Auto-caption spellings are lightly normalized, including Guillaume Bignon where captions rendered variants such as Gion Binyon and Graham Oppy where captions rendered variants such as Gramopi; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Premier Unbelievable? upload. This was a structured Big Conversation discussion rather than a formal timed debate. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -31481,7 +31481,7 @@ export const debates = [
     summary:
       "Akin defends Gospel reliability by separating gist from inerrancy; Ehrman argues that central narrative conflicts make the Gospels documents of faith rather than dependable historical accounts.",
     sourceNote:
-      "Built from YouTube English automatic captions for the Jimmy Akin upload, downloaded with python3 -m yt_dlp during the 2026-06-25 assessment run. The captions used rolling fragments, so only the new tail of each caption window was reconstructed before analysis. Auto-caption spellings are lightly normalized, including Jimmy Akin where captions rendered variants such as Jimmy Aiken and Bart Ehrman where captions rendered variants such as Dr. Urban or Dr. Durham; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Jimmy Akin upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -31834,7 +31834,7 @@ export const debates = [
     summary:
       "Cutter argues psychophysical harmony favors theism; Oppy replies that identity theory and probability worries blunt the argument.",
     sourceNote:
-      "Built from YouTube English automatic captions for the Miles K. Donahue upload, downloaded with python3 -m yt_dlp during the 2026-06-25 assessment run. The captions used rolling fragments, so only the new tail of each caption window was reconstructed before analysis. Auto-caption spellings are lightly normalized, including Brian Cutter and Graham Oppy; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Miles K. Donahue upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -32167,7 +32167,7 @@ export const debates = [
     summary:
       "Craig defends the Kalam's second premise through actual-infinity and successive-addition arguments; Malpass presses future-symmetry, tense, and quantifier objections.",
     sourceNote:
-      "Built from YouTube English automatic captions for the Capturing Christianity upload, downloaded with python3 -m yt_dlp during the 2026-06-25 assessment run. The JSON3 caption segments were grouped into readable timestamped lines before analysis. This was a structured livestream discussion with audience Q&A rather than a formal timed debate. Auto-caption spellings are lightly normalized, including Alex Malpass and William Lane Craig; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Capturing Christianity upload. This was a structured livestream discussion with audience Q&A rather than a formal timed debate. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -32510,7 +32510,7 @@ export const debates = [
     summary:
       "Hunter builds a cumulative case for Christian theism from freedom, cosmology, and resurrection; Dillahunty challenges the inferential method, evidential threshold, and divine-hiddenness implications.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Trinity Radio upload, downloaded with python3 -m yt_dlp during the 2026-06-25 assessment run. The JSON3 caption segments were grouped into readable timestamped lines before analysis. Auto-caption spellings are lightly normalized, including Braxton Hunter and Matt Dillahunty; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Trinity Radio upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -32869,7 +32869,7 @@ export const debates = [
     summary:
       "Swinburne defends a coherent Christian-theist model by revising divine attributes around maximal possible power and limited future knowledge; Huemer argues perfect-being theism requires impossible infinite magnitudes.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the NT Podcast upload, downloaded with python3 -m yt_dlp during the 2026-06-30 assessment run. The video description says the remainder of the debate continues on Patreon, so this assessment covers the public 55-minute YouTube segment only. Auto-caption spellings are lightly normalized, including Richard Swinburne, Michael Huemer, omniscience, and NT Podcast; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the NT Podcast upload. The video description says the remainder of the debate continues on Patreon, so this assessment covers the public 55-minute YouTube segment only. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -33205,7 +33205,7 @@ export const debates = [
     summary:
       "Craig defends classical Christian theism as the best explanation of reality and objective meaning; Frazier, Goff, and Folley press Hindu, mystical, and agnostic alternatives that complicate God, value, experience, and morality.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Premier Unbelievable? upload, downloaded with python3 -m yt_dlp during the 2026-07-02 assessment run. The JSON3 caption segments were grouped into readable timestamped lines before analysis. This was a live four-person panel hosted by Jack Symes rather than a strict two-person timed debate. Auto-caption spellings are lightly normalized, including William Lane Craig, Jessica Frazier, Philip Goff, Joe Folley, Aquinas, DMT, and Unbelievable; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Premier Unbelievable? upload. This was a live four-person panel hosted by Jack Symes rather than a strict two-person timed debate. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -33557,7 +33557,7 @@ export const debates = [
     summary:
       "The Knechtles defend Jesus through Gospel reliability, resurrection, grace, love, and worldview fit; Aron Ra and TJump challenge miracle testimony, biblical contradictions, religious borrowing, and evidential standards.",
     sourceNote:
-      "Built from the YouTube English-original automatic captions for the TJump/Modern Day Debate upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-13 assessment run. Caption segments were grouped into timestamped transcript lines before analysis. The upload includes a long post-debate channel hangout; this assessment focuses on the formal openings, moderated dialogue, and audience Q&A. Auto-caption spellings are lightly normalized, including Aron Ra, TJump, Cliffe Knechtle, Stuart Knechtle, Licona, Josephus, Tacitus, Suetonius, and Apollonius of Tyana; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the TJump/Modern Day Debate upload. The upload includes a long post-debate channel hangout; this assessment focuses on the formal openings, moderated dialogue, and audience Q&A. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -33965,7 +33965,7 @@ export const debates = [
     summary:
       "Holland argues that modern human dignity, equality, rights, secularism, and humanism are deeply Christian inheritances; Grayling argues that Christianity borrowed from older traditions and often delayed or obstructed those values.",
     sourceNote:
-      "Built from the YouTube English-original automatic captions for the Premier Unbelievable? upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-16 assessment run. Caption segments were grouped into timestamped transcript lines before analysis. Auto-caption spellings are lightly normalized, including A. C. Grayling, Tom Holland, Theodosius, Origen, Quakers, evangelicals, Petrarch, Pico della Mirandola, Mozi, Stoics, and Premier Unbelievable?; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Premier Unbelievable? upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -34351,7 +34351,7 @@ export const debates = [
     summary:
       "Craig argues that evil does not defeat theism; Grayling argues that observed suffering makes an interested, loving, powerful deity unreasonable to believe in.",
     sourceNote:
-      "Built from the YouTube English-original automatic captions for the drcraigvideos upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-16 assessment run. The upload description's old Reasonable Faith transcript link returned a 404 during this run, so caption segments were grouped into timestamped transcript lines before analysis. Auto-caption spellings are lightly normalized, including William Lane Craig, A. C. Grayling, Alvin Plantinga, William Alston, J. L. Mackie, Michael Ruse, middle knowledge, and Oxford Union; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the drcraigvideos upload. The upload description's old Reasonable Faith transcript link was unavailable. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -34794,7 +34794,7 @@ export const debates = [
     summary:
       "Jones argues that emergent spacetime and consciousness point to a governing mind; Jump argues that the same data underdetermine theism and fit naturalistic pantheism.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Modern-Day Debate upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-16 assessment run, plus YouTube chapter timing. Caption segments were grouped into timestamped transcript lines before analysis. Auto-caption spellings are lightly normalized, including Michael Jones, Tom Jump, Modern-Day Debate, Shannon Q, Nima Arkani-Hamed, Eugene Wigner, John von Neumann, Henry Stapp, Fred Kuttner, Imre Lakatos, Paul Feyerabend, Plantinga, and Phineas Gage; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Modern-Day Debate upload and YouTube chapter timing. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -35163,7 +35163,7 @@ export const debates = [
     summary:
       "Jones argues that mind-like information and consciousness best explain reality; Dillahunty argues that the case labels mysteries, narrows possibilities, and fails to reach probable God.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Modern-Day Debate upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-16 assessment run, plus YouTube chapter timing. Caption segments were grouped into timestamped transcript lines before analysis. Auto-caption spellings are lightly normalized, including Michael Jones, Matt Dillahunty, Modern-Day Debate, Sean Carroll, Eugene Wigner, John von Neumann, Henry Stapp, Fred Kuttner, Anton Zeilinger, Kochen-Specker, Leggett, Lakatos, Feyerabend, Daniel Dennett, David Hume, and Stephen Jay Gould; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Modern-Day Debate upload and YouTube chapter timing. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -35548,7 +35548,7 @@ export const debates = [
     summary:
       "Woodford argues religion corrupts human goods with dogma; Scrivener argues Christianity critiques religion and gave the West its compassion, equality, and sacred ideals.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Pangburn upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-17 assessment run. Caption segments were grouped into timestamped transcript lines before analysis. Auto-caption spellings are lightly normalized, including Stephen Woodford, Rationality Rules, Glen Scrivener, Christopher Hitchens, Jesus, Leviticus, Ephesians, Augustine, Aquinas, Hammurabi, Gregory of Nyssa, Harari, T. S. Eliot, Nietzsche, Galileo, Giordano Bruno, and Pangburn; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Pangburn upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -35933,7 +35933,7 @@ export const debates = [
     summary:
       "Woodford argues Christianity lowers evidential standards and leaves hiddenness and moral tensions unresolved; Brierley argues Christianity is rational as a cumulative worldview explanation.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Rationality Rules upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-17 assessment run. Caption segments were grouped into timestamped transcript lines before analysis. Auto-caption spellings are lightly normalized, including Stephen Woodford, Justin Brierley, Oxford Inter-Collegiate Christian Union, Rationality Rules, Unbelievable?, Christopher Hitchens, Bertrand Russell, C. S. Lewis, Eugene Wigner, Jesus, 1 Corinthians 15, Tom Holland, Alvin Plantinga, and Genghis Khan; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Rationality Rules upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -36366,7 +36366,7 @@ export const debates = [
     summary:
       "Woodford argues classical theism is irrational because gratuitous evil and salvation confusion overwhelm the evidence; Edwards argues God best explains rationality, design, and objective morality.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Rationality Rules upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-17 assessment run. Caption segments were grouped into timestamped transcript lines before analysis. Auto-caption spellings are lightly normalized, including Stephen Woodford, Simon Edwards, Justin Brierley, Oxford Centre for Christian Apologetics, Rationality Rules, The Sanity of Belief, J. B. S. Haldane, Alvin Plantinga, Fred Hoyle, Immanuel Kant, J. L. Mackie, Euthyphro, Moses, Numbers 31, Midianites, Charles Darwin, and evolution by natural selection; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Rationality Rules upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -36735,7 +36735,7 @@ export const debates = [
     summary:
       "Baker-Hytch argues that reason, intentionality, mental causation, and consciousness fit better if mentality is fundamental; O'Connor argues naturalism remains plausible through evolution, emergence, and burden discipline.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Alex O'Connor upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-18 assessment run. Caption segments were grouped into timestamped transcript lines before analysis. Auto-caption spellings are lightly normalized, including Alex O'Connor, Cosmic Skeptic, Max Baker-Hytch, Justin Brierley, Wycliffe Hall, Oxford, C. S. Lewis, Miracles, Elizabeth Anscombe, J. B. S. Haldane, Alvin Plantinga, John Searle, the Chinese room, David Chalmers, Tim Crane, Thomas Nagel, Philip Pullman, and Daniel Dennett; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Alex O'Connor upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -37073,7 +37073,7 @@ export const debates = [
     summary:
       "Craig and Williams defend Christian theism through arguments, experience, practice, and human meaning; Hossenfelder and Žižek press scientific restraint, religious plurality, and a Christian-atheist reading of God as a communal or symbolic force.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Premier Unbelievable? upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-23 assessment run. Caption segments were grouped into timestamped transcript lines before analysis. This was a live four-person panel at London's Royal Institution hosted by Jack Symes rather than a strict two-person timed debate, so speaker sides are grouped by broad theistic and skeptical or Christian-atheist posture. Auto-caption spellings are lightly normalized, including William Lane Craig, Rowan Williams, Sabine Hossenfelder, Slavoj Žižek, Jack Symes, Royal Institution, Hegel, Holy Spirit, Alvin Plantinga, Aquinas, Stephen Hawking, James Hartle, Roger Penrose, Alexander Vilenkin, Marilyn McCord Adams, Dostoevsky, Vladimir Lossky, T. S. Eliot, G. K. Chesterton, and Premier Unbelievable?; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Premier Unbelievable? upload. This was a live four-person panel at London's Royal Institution hosted by Jack Symes rather than a strict two-person timed debate, so speaker sides are grouped by broad theistic and skeptical or Christian-atheist posture. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -37427,7 +37427,7 @@ export const debates = [
     summary:
       "Peterson defends God-language, biblical stories, archetypes, and the Logos as deep structures of meaning; Blackmore argues that atheists can explain religion memetically and live meaningfully through naturalism, Buddhism, gratitude, and constructed purposes.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Premier Unbelievable? upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-24 assessment run. Caption segments were grouped into timestamped transcript lines before analysis. This Big Conversation episode with Justin Brierley is a hosted discussion rather than a formal timed debate, so section ranges follow the conversational topic flow. Auto-caption spellings are lightly normalized, including Jordan Peterson, Susan Blackmore, Justin Brierley, Premier Unbelievable?, The Big Conversation, Templeton Religion Trust, Richard Dawkins, Daniel Dennett, Sam Harris, Friedrich Nietzsche, Dostoevsky, Carl Panzram, Raskolnikov, Judeo-Christian, memes, archetypes, Buddhism, Genesis, Adam and Eve, Cain and Abel, Logos, and Jesus; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Premier Unbelievable? upload. This Big Conversation episode with Justin Brierley is a hosted discussion rather than a formal timed debate, so section ranges follow the conversational topic flow. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -37781,7 +37781,7 @@ export const debates = [
     summary:
       "Lennox defends Christian faith as evidence-based commitment grounded in rational order, resurrection, miracles, and hope; Ruse grants science's Christian history and metaphysical seriousness while resisting natural theology and literal miracle evidence.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Premier Unbelievable? upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-25 assessment run. Caption segments were grouped into timestamped transcript lines before analysis. This Big Conversation episode was filmed before a live audience at the Institution of Mechanical Engineers and hosted by Justin Brierley rather than structured as a formal timed debate, so section ranges follow the conversational topic flow. Auto-caption spellings are lightly normalized, including John Lennox, Michael Ruse, Justin Brierley, Premier Unbelievable?, The Big Conversation, Templeton Religion Trust, Institution of Mechanical Engineers, Alfred North Whitehead, C. S. Lewis, Melvin Calvin, John Hedley Brooke, Mary Hesse, Robert Boyle, Isaac Newton, Rene Descartes, Richard Dawkins, Stephen Hawking, Eugene Wigner, Cardinal Newman, Sophie Scholl, Heinrich Himmler, Paul, the resurrection, Cana, Dunkirk, David Hume, Auschwitz, Anne Frank, and Bergen-Belsen; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the Premier Unbelievable? upload. This Big Conversation episode was filmed before a live audience at the Institution of Mechanical Engineers and hosted by Justin Brierley rather than structured as a formal timed debate, so section ranges follow the conversational topic flow. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -38194,7 +38194,7 @@ export const debates = [
     summary:
       "Ward treats mind, religious experience, morality, and freedom as openings toward a divine mind; Ruse grants deep mystery while resisting the slide from mystery to God.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the ObjectiveBob upload, downloaded as JSON3 with python3 -m yt_dlp during the 2026-07-25 assessment run. Caption segments were grouped into timestamped transcript lines before analysis. This Unbelievable discussion was hosted by Justin Brierley and tied to The God Question DVD rather than structured as a formal timed debate, so section ranges follow the conversational topic flow. Auto-caption spellings are lightly normalized, including Keith Ward, Michael Ruse, Justin Brierley, Premier Christian Radio, The God Question, David Hume, Thomas Reid, Daniel Dennett, Paul and Patricia Churchland, Descartes, Bishop Berkeley, Thomas Nagel, Colin McGinn, St. Paul, Quakers, Ely Cathedral, Sam Harris, and Calvinists; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on YouTube captions for the ObjectiveBob upload. This Unbelievable discussion was hosted by Justin Brierley and tied to The God Question DVD rather than structured as a formal timed debate, so section ranges follow the conversational topic flow. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
