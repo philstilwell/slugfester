@@ -38204,7 +38204,7 @@ export const debates = [
           "Ward's central move is to start from consciousness as the datum we know most directly, then argue toward idealism and God."
       },
       con: {
-        text: "invoking God helps us at all",
+        text: "I just don't see that invoking God helps us at all",
         context:
           "Ruse repeatedly concedes that consciousness is deeply mysterious while denying that God improves the explanation."
       }
