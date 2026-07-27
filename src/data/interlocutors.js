@@ -510,6 +510,11 @@ export const interlocutorAvatars = [
     name: "Keith Ward",
     src: `${avatarBasePath}/keith-ward.webp`,
     aliases: ["Keith Ward", "Dr. Keith Ward", "Dr Keith Ward", "Prof. Keith Ward", "Professor Keith Ward"]
+  },
+  {
+    name: "Jonathan McLatchie",
+    src: `${avatarBasePath}/jonathan-mclatchie.webp`,
+    aliases: ["Jonathan McLatchie", "McLatchie", "Dr. Jonathan McLatchie", "Dr Jonathan McLatchie", "Jonathan Mclatchie"]
   }
 ];
 
