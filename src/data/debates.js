@@ -40115,5 +40115,390 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "dirckx-woodford-god-suffering-2024",
+    number: "113",
+    title: "Sharon Dirckx vs Stephen Woodford: Why Doesn't God Stop Suffering?",
+    label: "God and suffering",
+    date: "2026-07-28",
+    duration: "1 hr 07 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=PQetkofYXvI",
+    motion:
+      "Does the reality of suffering make belief in an all-powerful, all-loving God unreasonable, or does the Christian framework of a broken world, divine presence, justice, and future healing make better sense of it?",
+    summary:
+      "Dirckx argues Christianity gives suffering moral, emotional, and hopeful meaning; Woodford argues suffering fits naturalism and strains theism.",
+    sourceNote:
+      "Based on YouTube captions for the Premier Unbelievable? upload. The upload has no topical chapter map, so section ranges follow the conversational flow. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God who comes alongside",
+        context:
+          "Dirckx's core answer is pastoral and theological: suffering is real evil in a broken world, but God enters it through Christ and promises final healing."
+      },
+      con: {
+        text: "there is no problem to solve",
+        context:
+          "Woodford argues that suffering creates no contradiction for atheism, while Christianity must explain why a loving omnipotent God permits it."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian suffering framework",
+        speaker: "Sharon Dirckx",
+        color: "teal"
+      },
+      con: {
+        name: "Atheist problem of evil",
+        speaker: "Stephen Woodford",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 76,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Problem Framed",
+        timebox: "02:22-08:00",
+        score: {
+          pro: 78,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "02:22",
+              role: "Initial framing",
+              words:
+                "Dirckx says suffering is a real-life dilemma because an all-powerful, all-good God seems able and willing to stop it.",
+              score: 78,
+              critique:
+                "Dirckx begins well by stating the problem in its strongest recognizable form. She does not minimize disease, cancer, mental health, disasters, or human cruelty, and she admits that belief in an all-powerful, all-good God intensifies the puzzle. That honesty gives her later answer credibility. The weakness is that the opening mainly promises a framework rather than supplying one. Saying Christianity can hold divine goodness and suffering together does not yet explain how, and the audience still needs to hear why the framework is more than consolation. The score is solid-strong because the setup is fair, emotionally serious, and charitable, but it remains introductory rather than argumentative.",
+              tags: []
+            },
+            con: {
+              time: "06:32",
+              role: "Contradiction claim",
+              words:
+                "Woodford says evil is easy for atheism to understand, but contradicts a God who is both all-powerful and all-loving.",
+              score: 84,
+              critique:
+                "Woodford's opening reply is strong because it isolates the asymmetry. Atheism does not need the world to be morally curated by a perfect agent; Christianity does, if God is omnipotent and perfectly loving. His contrast with Hinduism and other non-omni conceptions also usefully narrows the objection to the specific Christian-style God under discussion. The weakness is that saying atheism has no contradiction does not yet give a full moral or existential account of suffering. It explains why suffering occurs, but not why it is objectively wrong or how hope is grounded. Still, the logical pressure on theism is direct and relevant. The score is high because the burden is cleanly placed.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Natural Mechanisms",
+        timebox: "08:21-17:30",
+        score: {
+          pro: 77,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "08:21",
+              role: "Wrongness argument",
+              words:
+                "Dirckx says viruses and cell division have life-giving roles, but our anger at disease suggests the world is genuinely wrong, not merely natural.",
+              score: 77,
+              critique:
+                "Dirckx's move is interesting because she accepts much of the scientific story before asking whether it is existentially adequate. Viruses, cell division, and biological mechanisms can explain how disease happens, but she argues that our outrage at cancer suggests we perceive a world that is broken, not merely inconvenient. That connects intellectual and emotional responses well. The weakness is that the inference from emotional protest to objective cosmic brokenness needs more defense. Evolutionary and social explanations can account for why creatures resist pain, grief, and premature death without invoking God. The score is solid because the argument targets an important gap in reduction, but it leans on moral intuition.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "The argument gives strong evidential weight to our felt sense that suffering is cosmically wrong."
+                }
+              ]
+            },
+            con: {
+              time: "15:11",
+              role: "Evolutionary account",
+              words:
+                "Woodford says natural selection wired social creatures to avoid suffering and improve conditions because survival depends on it.",
+              score: 80,
+              critique:
+                "Woodford's evolutionary account is a good direct answer to Dirckx's challenge. He explains why creatures like us would resist suffering, protect one another, and try to make the world better: these instincts help survival, reproduction, and social cohesion. That shows naturalism is not emotionally inert. The weakness is that this is mostly a genealogical account of moral psychology. Explaining why we feel suffering is bad does not fully establish whether suffering is objectively bad, nor whether our moral outrage is true rather than useful. Woodford's reply answers the motivational question better than the grounding question. The score is strong because it meets the immediate challenge, but it leaves metaethics open.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral History",
+        timebox: "17:45-25:31",
+        score: {
+          pro: 76,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "21:16",
+              role: "Jesus standard",
+              words:
+                "Dirckx says Genesis gives women equal image-bearing dignity and Jesus overturned cultural norms by honoring and entrusting women.",
+              score: 76,
+              critique:
+                "Dirckx gives a substantive Christian response to Woodford's moral-history criticism. By distinguishing Jesus and Genesis from later church failures, she avoids defending everything Christians have done, and she fairly concedes that church fathers sometimes got women wrong. Her appeal to Jesus's treatment of women has genuine evidential value inside Christian ethics. The weakness is that it does not fully answer why a supposedly clear revelation generated so much durable inequality among its own interpreters. If the standard was always present, the history of misreading remains a serious problem for claims of divine moral guidance. The score is solid because the reply has textual and theological resources, but the historical burden remains heavy.",
+              tags: []
+            },
+            con: {
+              time: "18:37",
+              role: "Progress critique",
+              words:
+                "Woodford says Christian history treated women as second-class citizens until egalitarian moral progress forced reinterpretation.",
+              score: 83,
+              critique:
+                "Woodford's moral-history critique is strong because it makes the problem concrete. Rather than only asking why cancer exists, he asks why a faith claiming divine moral insight so often endorsed or tolerated women's subordination. His comparison with naturalism is also relevant: moral expansion can be described as learning from experience and widening empathy, without needing fixed revelation. The weakness is that he risks over-crediting atheistic egalitarianism and under-crediting Christian reformers, biblical countercurrents, and broader social causes. Religion's history is mixed, not uniformly regressive. Still, as a challenge to the clarity and reliability of Christian moral claims, the argument lands. The score is high because the evidence is specific and burdensome.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Greater Goods",
+        timebox: "25:42-32:57",
+        score: {
+          pro: 70,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "26:21",
+              role: "Broken world",
+              words:
+                "Dirckx denies that horrendous evils are secretly good; they are wrong because good and evil are both at work in a broken world.",
+              score: 70,
+              critique:
+                "Dirckx's pastoral instinct is humane: she refuses to tell sufferers that cancer, genocide, or trauma are secretly good for them. That matters because many greater-good theodicies become cruel when spoken to people in pain. Her broken-world language gives Christians permission to name evil as evil. The weakness is logical pressure. If God is all-powerful and all-loving, Woodford's question remains: why permit horrors unless there is some morally sufficient reason? Dirckx appeals to mystery and a fallen world, but does not explain how this avoids either gratuitous evil or divine nonintervention. The score is mixed-solid because the response is compassionate, but it does not meet the sharpest contradiction claim.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The appeal to mystery protects theism from the evidential demand without clear independent criteria."
+                }
+              ]
+            },
+            con: {
+              time: "28:15",
+              role: "Greater-good pressure",
+              words:
+                "Woodford argues that if God permits Holocausts, extinctions, and cancers, Christianity must say those evils serve a greater good.",
+              score: 86,
+              critique:
+                "Woodford's greater-good pressure is the sharpest logical move of the debate. He argues that an omnipotent, omnibenevolent God could prevent any horrendous evil, so if such evil occurs, the theist owes a morally sufficient reason. This prevents the reply from resting on vague brokenness while also preserving divine control. The weakness is that he frames Christian options somewhat rigidly: not every theodicy says each local horror is itself good or directly chosen, and some appeal to creaturely freedom, stable laws, or cosmic fall without calling the evil good. Even so, the burden he identifies is real. The score is very high because the objection forces the key unresolved issue.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Hope And Presence",
+        timebox: "33:09-40:57",
+        score: {
+          pro: 82,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "34:57",
+              role: "Incarnational hope",
+              words:
+                "Dirckx says Christianity offers a God who climbs into the pit, suffers in Christ, and promises resurrection hope beyond present pain.",
+              score: 82,
+              critique:
+                "Dirckx's hope argument is her strongest positive contribution. She shifts from abstract explanation to the lived question of what helps sufferers now. The image of God climbing into the pit through Christ, looking hurting people in the eye, suffering on the cross, and promising resurrection is coherent with Christian doctrine and emotionally powerful. It does not answer every why question, but it addresses abandonment, meaning, and future restoration. The weakness is that consolation is not evidence unless the resurrection and Christian story are independently credible. Woodford rightly asks whether heaven is too good to be true. The score is strong because the argument is pastorally apt and theologically central, though evidentially incomplete.",
+              tags: []
+            },
+            con: {
+              time: "33:09",
+              role: "Human responsibility",
+              words:
+                "Woodford says atheistic hope starts by accepting reality: this is our only opportunity, so humans must fix suffering themselves.",
+              score: 79,
+              critique:
+                "Woodford's account of hope is morally serious. He rejects despair by saying that if no rescuer is coming, human beings have more reason, not less, to reduce poverty, violence, and suffering now. That is an effective answer to the caricature that atheism cannot motivate compassion. The weakness is that the hope is deliberately finite. It gives urgency and responsibility, but it offers no final justice for victims who never receive repair and no ultimate defeat of death. That may be honest, but it is thinner than Dirckx's promised restoration if her worldview is true. The score is solid-strong because the response is courageous and practical, though metaphysically limited.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Prayer And Healing",
+        timebox: "44:15-52:52",
+        score: {
+          pro: 68,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "44:30",
+              role: "Healing mystery",
+              words:
+                "Dirckx says Jesus healed everyone, some healings still occur, but unanswered prayer reflects a world not yet fully restored.",
+              score: 68,
+              critique:
+                "Dirckx's healing answer is pastorally careful in several ways. She refuses to blame the sick for insufficient faith, prayer, or hidden punishment, and she frames healing as a signpost of the kingdom rather than a controllable machine. That avoids some harmful responses to suffering. The weakness is that it does not explain the pattern. If God can heal, and if Jesus healed without exclusion, why are present healings selective, ambiguous, and often indistinguishable from recovery or remission? The limb-growth anecdote also introduces an extraordinary claim without public evidence in the exchange. The score is mixed because the pastoral safeguards are good, but the explanatory burden is mostly deferred.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "A healing with no known medical explanation is treated as best explained by divine intervention."
+                }
+              ]
+            },
+            con: {
+              time: "47:26",
+              role: "Pattern challenge",
+              words:
+                "Woodford says if God heals miraculously, we should see obvious interventions like regrown limbs, not only cases that can recover naturally.",
+              score: 84,
+              critique:
+                "Woodford's prayer-and-healing critique is strong because it asks what evidence would look like if divine healing were real. Recoveries from illness can occur through remission, unknown mechanisms, statistical outliers, or medical uncertainty; regrown limbs would be harder to explain away. That contrast pressures the selectivity and ambiguity of miracle claims. The weakness is that Dirckx does offer at least an anecdotal limb-growth claim, and Woodford cannot adjudicate it without investigation. He also assumes God would prefer unmistakable signs, which a theist might contest. Still, the evidential pattern objection is clear and forceful. The score is high because it directly tests the explanatory value of prayer.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Hell And Justice",
+        timebox: "40:12-1:05:21",
+        score: {
+          pro: 72,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "41:12",
+              role: "Final justice",
+              words:
+                "Dirckx says the afterlife includes justice, God knows every heart perfectly, and the invitation to know him is radically inclusive.",
+              score: 72,
+              critique:
+                "Dirckx's justice answer has an important strength: she refuses to speak as if she can decide individual destinies, and she emphasizes that God knows motives, histories, victims, and perpetrators perfectly. That is more cautious than crude insider-outsider salvation claims. She also connects judgment to love, not arbitrary cruelty. The weakness is that the answer remains evasive on Woodford's central worry. If disbelief can lead to exclusion from God, and if sincere nonbelievers find the resurrection or other miracle claims unconvincing, then the fairness problem remains. Appeals to perfect divine knowledge soften the issue but do not solve it. The score is mixed-solid because the answer is careful, but not transparent.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The appeal to perfect divine judgment protects the doctrine without clearly answering the fairness objection."
+                }
+              ]
+            },
+            con: {
+              time: "57:32",
+              role: "Hell objection",
+              words:
+                "Woodford argues a loving God would not punish sincere atheists eternally for failing to believe unlikely miracle claims.",
+              score: 85,
+              critique:
+                "Woodford's hell objection is very strong because it connects suffering, divine love, and epistemic fairness. If people are sincerely trying to know what is true, then eternal punishment or exclusion for failing to believe low-probability miracle claims looks morally disproportionate. His contrast between the moral atheist and forgiven violent offender in Q&A sharpens the concern about justice. The weakness is that he assumes a fairly specific punitive model of hell and salvation; some Christian traditions offer inclusivist, restorative, or annihilationist accounts. Dirckx herself resists making a black-and-white judgment. Even so, the objection effectively exposes ambiguity and moral tension in the Christian hope framework. The score is high.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 76,
+        strengths: [
+          "Dirckx treated suffering with pastoral seriousness and refused to trivialize cancer, genocide, trauma, or unanswered prayer.",
+          "Her strongest positive case was that Christianity names evil as wrong while offering divine presence through Christ and future restoration.",
+          "She avoided blaming sufferers for weak faith and emphasized justice, divine knowledge, and the dignity of victims."
+        ],
+        blunders: [
+          {
+            text:
+              "Her broken-world and mystery replies often left Woodford's greater-good challenge underanswered.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "Her appeal to unexplained healing moved too quickly from medical surprise to divine intervention.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "Her moral intuition argument sometimes treated our felt wrongness about suffering as evidence for a cosmic framework.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Woodford kept the logical burden clear: an omnipotent, loving God requires explanation for apparently gratuitous suffering.",
+          "He connected suffering to wider tensions about heaven, hell, unanswered prayer, divine hiddenness, and religious moral history.",
+          "His naturalistic account of hope emphasized human responsibility rather than nihilistic resignation."
+        ],
+        blunders: [
+          {
+            text:
+              "His greater-good critique sometimes framed Christian options too narrowly, as if every theodicy calls each local horror good.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His moral-history critique risked treating Christian misuse or misreading as sufficient to discredit the whole theological framework.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His naturalistic account explained why we resist suffering better than why suffering is objectively wrong.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
