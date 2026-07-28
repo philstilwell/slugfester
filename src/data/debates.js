@@ -38918,5 +38918,398 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "tour-garte-evolution-agency-christian-faith-2025",
+    number: "110",
+    title: "James Tour vs Sy Garte: Evolution, Agency, and Christian Faith",
+    label: "Evolution, agency, and Christian faith",
+    date: "2026-07-27",
+    duration: "1 hr 13 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=cqfPJQg8m5U",
+    motion:
+      "Can Christian faith be reconciled with evolutionary theory by emphasizing agency, cognition, and natural genetic engineering, or do unresolved mechanisms in origins, body plans, fossils, and human uniqueness make evolutionary confidence overreach?",
+    summary:
+      "Tour presses mechanism-level doubts about evolutionary claims; Garte defends a theistic evolutionary synthesis that welcomes agency, new biology, and Christian humility.",
+    sourceNote:
+      "Based on YouTube captions for the Dr. James Tour upload and YouTube chapter timing. This is a searching discussion rather than a formal timed debate, so section ranges follow the conversational topic flow. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "I want to see the mechanism",
+        context:
+          "Tour's recurring challenge is that broad evolutionary narratives need chemistry-level causal detail before they can bear the confidence often placed on them."
+      },
+      con: {
+        text: "biology is different",
+        context:
+          "Garte argues that life follows chemistry without being exhausted by chemists' familiar explanatory style, especially once agency and cognition enter biology."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Mechanism-first skepticism",
+        speaker: "James Tour",
+        color: "teal"
+      },
+      con: {
+        name: "Theistic evolutionary synthesis",
+        speaker: "Sy Garte",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 78,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Church Unity",
+        timebox: "03:00-10:00",
+        score: {
+          pro: 80,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "03:47",
+              role: "Unity frame",
+              words:
+                "Tour says Christians fight over subtle creation-and-evolution differences, even though outsiders wonder why they cannot get along better.",
+              score: 80,
+              critique:
+                "Tour's opening frame is strong because it lowers the temperature before any technical dispute begins. By comparing evolution quarrels to older intra-church fights over communion and biblical interpretation, he reminds the audience that sincere Christians can overstate secondary disagreements. That is directly relevant to this discussion, because both speakers are Christians assessing how much evolutionary theory should carry. The weakness is that the frame risks making doctrinal and evidential disagreements sound merely sociological, as if peace were enough to settle truth. Tour does not do that later, but the opening could blur the difference between charity and agreement. The score is high because the framing is fair, practical, and disarming.",
+              tags: []
+            },
+            con: {
+              time: "07:00",
+              role: "Friendship model",
+              words:
+                "Garte says evolution should not tear Christians apart; friends can argue, debate, check evidence, and later admit when the other side was right.",
+              score: 84,
+              critique:
+                "Garte's unity argument is especially good because it does not ask anyone to suspend disagreement. He explicitly allows argument, debate, correction, and changed minds, which makes the appeal to Christian fellowship intellectually responsible rather than sentimental. His Acts 15 analogy also gives the church-unity theme a scriptural precedent without pretending that all controversies are identical. The weakness is that the analogy is more pastoral than evidential. It cannot decide whether evolutionary creationism, progressive creationism, or young-earth creationism is true. Still, it sets the right epistemic posture for the rest of the exchange: argue hard, remain corrigible, and refuse factional identity tests. That combination earns a strong score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Agency And Purpose",
+        timebox: "10:00-25:55",
+        score: {
+          pro: 76,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "13:27",
+              role: "Clarifying demand",
+              words:
+                "Tour asks Garte to unpack single-cell agency because he had not heard that a cell could have some sort of self-directed purpose.",
+              score: 76,
+              critique:
+                "Tour's question is useful because it forces the new-biology vocabulary out of abstraction. Terms like agency, cognition, and purpose can sound philosophical or theological unless the speaker identifies observable behavior. Asking what the organism actually does protects the discussion from slogan-level novelty. The weakness is that the move is mostly interrogative, not yet a counterargument. Tour has not shown that bacterial anticipation, sensing, or environmental response must reduce to standard mechanisms, nor that Garte is using purpose too strongly. As a scorecard move, it earns credit for burden discipline and conceptual hygiene, but not for defeating the agency thesis. The score is solid because the demand sharpens the issue.",
+              tags: []
+            },
+            con: {
+              time: "17:05",
+              role: "Bacterial cognition",
+              words:
+                "Garte says bacteria exposed to linked temperature and oxygen changes begin switching metabolism before the oxygen drop, though nobody yet knows how.",
+              score: 85,
+              critique:
+                "Garte's bacterial example is strong because it gives agency talk empirical footing. The claim is not merely that life feels purposeful, but that bacteria can sense environmental patterns, anticipate a change, and alter metabolism before the stressor arrives. He also marks uncertainty about mechanism, which preserves scientific modesty. The weakness is that the term agency can stretch. A critic may say the behavior is sophisticated biochemical regulation rather than purpose in any robust sense. Garte needs a sharper definition distinguishing cognition from complex response. Even so, the example directly supports his thesis that biological systems exhibit capacities not captured by the old random-mutation shorthand. The score is high because evidence and caution work together.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "19:13",
+              role: "Mechanistic probe",
+              words:
+                "Tour proposes horizontal gene transfer as a possible explanation for bacterial adaptation, connecting Garte's example to known DNA exchange.",
+              score: 82,
+              critique:
+                "Tour's gene-transfer probe is one of his better technical moves. Instead of dismissing the bacterial example, he tries to connect it to a known mechanism from his own laboratory experience with bacterial resistance. That keeps the challenge scientific: if a familiar DNA-sharing process explains community adaptation, then agency language may be less explanatory than it sounds. The weakness is that he offers a candidate mechanism without showing that it fits the specific experimental timing or memory-like pattern Garte describes. Garte also grants it as one hypothesis, so the exchange becomes integrative rather than adversarial. The score is strong because Tour grounds skepticism in a real mechanism while leaving room for further evidence.",
+              tags: []
+            },
+            con: {
+              time: "24:12",
+              role: "Two-way evolution",
+              words:
+                "Garte says evolution is not simply blind and random; organisms change environments, construct niches, and sometimes engineer their own genomes.",
+              score: 84,
+              critique:
+                "Garte's two-way evolution claim is persuasive because it widens the explanatory menu without abandoning biology. Niche construction, beaver dams, and James Shapiro's natural genetic engineering give concrete ways organisms can shape selective conditions and genomic outcomes. That answers a caricature of evolution as only passive organisms being filtered by external forces. The weakness is that this still needs careful separation from stronger claims about purpose pointing to God. Showing that organisms participate in their own evolution does not by itself establish divine guidance or solve every macroevolutionary transition. The score is high because Garte corrects an oversimplified Darwinian picture while mostly staying within evidentially recognizable biology.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Human Uniqueness",
+        timebox: "29:12-36:00",
+        score: {
+          pro: 78,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "31:17",
+              role: "Selection story",
+              words:
+                "Tour restates the evolutionary answer that supportive groups survive better, so the DNA behind cooperative behavior propagates.",
+              score: 78,
+              critique:
+                "Tour's restatement is useful because it presents the mainstream evolutionary story in its most intuitive form before Garte attacks it. Cooperation, protection, group living, and reproductive survival are plausible pressures, so the question becomes whether they adequately explain morality rather than whether evolutionists have no story at all. The weakness is that Tour is mainly playing interlocutor here; he does not develop the group-selection or kin-selection literature, distinguish moral behavior from moral knowledge, or supply the relevant genetic evidence himself. That limits the move's independent force. The score is solid because the objection is relevant and charitable, but it is more a prompt than a defended position.",
+              tags: []
+            },
+            con: {
+              time: "32:00",
+              role: "Gene challenge",
+              words:
+                "Garte replies, 'Show me the DNA,' arguing that evolutionary stories about kindness and morality lack identified genes under selection.",
+              score: 80,
+              critique:
+                "Garte's gene challenge is sharp because it applies Tour's own mechanism-first standard to evolutionary accounts of morality. If someone says kindness spread because helpful DNA propagated, it is fair to ask which genetic variants, what selection pressures, and what population evidence support the claim. That exposes the risk of just-so storytelling in evolutionary psychology. The weakness is that complex behavioral traits rarely map to one gene, and Garte acknowledges polygenic behavior before still pressing the point. Absence of a simple gene is not absence of heritable influences or evolutionary explanation. The score is strong because the demand for evidence is legitimate, but the framing can over-tighten what biology must provide.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The critique risks moving from no identified simple gene to no adequate evolutionary account."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Fossils And Timelines",
+        timebox: "36:08-44:00",
+        score: {
+          pro: 77,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "38:27",
+              role: "Soft-tissue puzzle",
+              words:
+                "Tour asks whether dinosaur proteins and soft-tissue structures should at least reopen the possibility that dinosaurs lived more recently.",
+              score: 77,
+              critique:
+                "Tour's dinosaur-soft-tissue question is fair insofar as anomalous preservation findings should be open to scrutiny. He explicitly frames the issue as a worldview caution: scientists can place a stake in the ground so firmly that surprising data are forced into existing timelines. That is a legitimate warning against dogmatism. The weakness is that the inference toward younger dinosaurs is a large leap from a rare preservation puzzle. Geological distribution, radiometric frameworks, paleontology, and independent dating evidence carry heavy explanatory weight that a protein-preservation anomaly does not automatically overturn. The score is solid because the question is worth asking, but its revisionary suggestion needs much more comparative evidence.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The younger-dinosaur possibility gains force mainly from an unresolved preservation surprise."
+                }
+              ]
+            },
+            con: {
+              time: "39:26",
+              role: "Evidence hierarchy",
+              words:
+                "Garte agrees dogma can rule things out, but says dinosaur antiquity rests on geology and paleontology, not one soft-tissue question.",
+              score: 83,
+              critique:
+                "Garte's answer is strong because it grants the methodological point before resisting the oversized conclusion. He agrees that science should not rule out agency, purpose, or awkward data by dogma, then distinguishes that general caution from the specific dinosaur-age claim. By pointing to geology, paleontology, stratigraphic placement, and the rarity of soft-tissue findings, he keeps the evidential hierarchy visible. The weakness is that he speaks as a non-specialist and relies on broad disciplinary confidence rather than detailed preservation chemistry or dating arguments. Still, the reply is well calibrated: surprising data can invite research without instantly overturning convergent evidence. The score is high because the concession-and-boundary move is disciplined.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Body Plans",
+        timebox: "44:08-1:00:12",
+        score: {
+          pro: 85,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "45:27",
+              role: "Mechanism challenge",
+              words:
+                "Tour says appeals to unknown laws of biology substitute for a causal account when eyes, wings, and social behavior arise repeatedly.",
+              score: 83,
+              critique:
+                "Tour's critique of unknown biological laws is strong because it catches a real explanatory danger. Convergence can be evidence of constraints, structural tendencies, or deeper principles, but saying unknown laws exist can function as a placeholder unless those laws generate testable expectations. Tour's chemist instinct, asking for mechanisms rather than labels, keeps the discussion honest. The weakness is that unknown does not mean empty. Garte cites Conway Morris, Denton, and convergence precisely because repeated forms may be data pointing toward undiscovered structure. Tour needs to show the placeholder is worse than current alternatives, not merely incomplete. The score is strong because the burden challenge lands while leaving room for inquiry.",
+              tags: []
+            },
+            con: {
+              time: "46:43",
+              role: "Convergence case",
+              words:
+                "Garte says octopus and human eyes, wings, and many repeated structures suggest evolution is not completely random or blind.",
+              score: 84,
+              critique:
+                "Garte's convergence argument is one of his best evidential moves. Independent emergence of similar eyes, wings, and structures does challenge the simplest picture of unconstrained randomness. By appealing to Simon Conway Morris and structuralist laws, he gives a research program rather than a bare God-of-the-gaps slogan. The weakness is that convergence under constraints can still be naturalistic; similar physical problems may produce similar biological solutions without implying purpose in a theological sense. Garte's argument works better against crude randomness than against sophisticated evolutionary theory. The score is high because it is relevant, evidence-facing, and modest about unknowns, but it does not complete the bridge to Christian theism.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "53:00",
+              role: "Scale objection",
+              words:
+                "Tour says microevolution is observable, but an invertebrate-to-vertebrate body-plan change requires chemical steps he cannot see.",
+              score: 87,
+              critique:
+                "Tour's scale objection is the most forceful challenge of the conversation. He grants microevolution from his own bacterial work, so the argument is not a blanket denial of change. The live issue is whether mechanisms that explain small adaptive shifts can simply be scaled up to major body-plan transitions. Asking for stepwise chemical and developmental details is exactly the right burden if the disputed claim is macroevolutionary confidence. The weakness is that not understanding a transition is not evidence that no natural history exists, and developmental biology may supply partial accounts unavailable in this conversation. Still, the objection is precise, charitable, and central to the motion. The score is very high.",
+              tags: []
+            },
+            con: {
+              time: "55:40",
+              role: "Qualified acceptance",
+              words:
+                "Garte says nobody understands biology like Tour understands organic chemistry, yet the general idea of evolution still makes sense in most cases.",
+              score: 82,
+              critique:
+                "Garte's response is admirably candid. He concedes that nobody understands body-plan evolution with the mechanistic clarity Tour has in organic chemistry, and that many biological details remain unresolved. That concession increases credibility because he does not hide behind textbook confidence. His defense is that incomplete mechanism does not make the broader evolutionary pattern irrational, since common descent and evolutionary change can be supported even while details remain open. The weakness is that this answer partly depends on background evidence not developed in the exchange. For a listener focused on chemical mechanism, 'the general idea makes sense' may feel under-argued. The score is strong because Garte balances humility and synthesis, but Tour's demand remains partly unanswered.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Genome Duplication",
+        timebox: "57:10-1:02:13",
+        score: {
+          pro: 88,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "57:10",
+              role: "Evidence demand",
+              words:
+                "Tour asks for molecular evidence that whole-genome duplication produced the mutations needed for vertebrate-scale innovations.",
+              score: 88,
+              critique:
+                "Tour's evidence demand is excellent because it identifies a specific mechanistic claim rather than objecting to evolution in general. Whole-genome duplication is often invoked to make new developmental possibilities intuitive, but Tour asks for molecular evidence that the proposed duplication actually led to the large-scale innovations being claimed. That is a falsifiable, literature-facing challenge. It also connects directly to his broader concern that biology can turn an explanatory gap into a narrative too quickly. The weakness is that the exchange does not evaluate the full specialist literature, so the audience cannot know whether the missing evidence is absent, contested, or merely hard to summarize. The score is very high because the burden is precise.",
+              tags: []
+            },
+            con: {
+              time: "58:32",
+              role: "Concession",
+              words:
+                "Garte says he looked for evidence after Douglas Axe challenged him and was shocked that he could not find it.",
+              score: 87,
+              critique:
+                "Garte's concession is intellectually impressive and arguably the discussion's healthiest moment. He recounts being challenged by Douglas Axe, checking the literature, and finding that papers did not show what he had assumed about whole-genome duplication producing large-scale mutation events. That willingness to revise a claim models the scientific humility he recommends for the church. The weakness is that the concession leaves his own earlier book claim weakened and does not yet supply a replacement account for vertebrate origins. It also relies on his informal survey rather than a systematic review. The score is very high because the admission is relevant, costly, and responsive, even though it narrows his argumentative position.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Science And Faith",
+        timebox: "1:02:13-1:12:29",
+        score: {
+          pro: 82,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:02:13",
+              role: "Humility close",
+              words:
+                "Tour says science changes, Christians should avoid staking salvation on contested origins positions, and serious believers can disagree.",
+              score: 82,
+              critique:
+                "Tour's closing is strong because it separates confidence in core Christian claims from factional certainty about origins. His fixed-earth analogy shows how biblical interpretation can change when evidence accumulates, and his refusal to make Genesis debates a salvation test is pastorally and logically disciplined. He also acknowledges that science evolves as more data arrive, which fits his mechanism-first skepticism without becoming anti-science. The weakness is that he does not clearly state his own positive origins account, so his final posture remains more diagnostic than constructive. Still, the close serves the conversation's purpose well: it keeps the burden on evidence while refusing unnecessary division. The score is strong.",
+              tags: []
+            },
+            con: {
+              time: "1:10:41",
+              role: "Harmony thesis",
+              words:
+                "Garte says his purpose is to bury the myth that science and Christian faith are at odds and that a person cannot have both.",
+              score: 84,
+              critique:
+                "Garte's final thesis is clear, relevant, and well suited to the discussion's audience. He states the book's purpose plainly: resisting both atheist academic claims that science defeats faith and church claims that science must be rejected. The argument gains force from his biography, scientific career, and willingness to accept criticism on specific evolutionary mechanisms. The weakness is that harmony is a broad compatibility thesis, not a detailed resolution of every origins dispute raised earlier. One can accept science-and-faith compatibility while still doubting macroevolutionary explanations, young-earth claims, or particular interpretations of Genesis. The score is high because the conclusion is modest and pastorally important, but not technically exhaustive.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 78,
+        strengths: [
+          "Tour repeatedly pressed for mechanism-level explanations rather than allowing broad evolutionary language to substitute for causal detail.",
+          "He asked fair, technically grounded questions about bacterial adaptation, soft-tissue preservation, body-plan transitions, and whole-genome duplication.",
+          "He kept the discussion charitable, separating origins disagreements from Christian fellowship and salvation boundaries."
+        ],
+        blunders: [
+          {
+            text:
+              "His dinosaur-soft-tissue question leaned toward a major timeline revision without proportionate engagement with convergent geological evidence.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His mechanism-first standard sometimes treated biological incompleteness as more damaging than it is unless a positive rival model is also compared.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Garte presented agency, cognition, niche construction, and natural genetic engineering as concrete ways contemporary biology complicates older evolutionary shorthand.",
+          "He was unusually candid about unresolved mechanisms and openly conceded when a whole-genome-duplication claim lacked the evidence he expected.",
+          "He consistently framed origins disagreements inside Christian humility and science-faith compatibility rather than factional identity."
+        ],
+        blunders: [
+          {
+            text:
+              "His agency language sometimes slid between empirical organism behavior and thicker purpose claims without fully defining the bridge.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His theistic-evolutionary synthesis relied on broad biological patterns where Tour's strongest objections demanded detailed causal mechanisms.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
