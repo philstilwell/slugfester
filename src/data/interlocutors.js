@@ -515,6 +515,11 @@ export const interlocutorAvatars = [
     name: "Jonathan McLatchie",
     src: `${avatarBasePath}/jonathan-mclatchie.webp`,
     aliases: ["Jonathan McLatchie", "McLatchie", "Dr. Jonathan McLatchie", "Dr Jonathan McLatchie", "Jonathan Mclatchie"]
+  },
+  {
+    name: "James Tour",
+    src: `${avatarBasePath}/james-tour.webp`,
+    aliases: ["James Tour", "Tour", "Dr. James Tour", "Dr James Tour", "Prof. James Tour", "Professor James Tour"]
   }
 ];
 
