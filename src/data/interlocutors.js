@@ -520,6 +520,11 @@ export const interlocutorAvatars = [
     name: "James Tour",
     src: `${avatarBasePath}/james-tour.webp`,
     aliases: ["James Tour", "Tour", "Dr. James Tour", "Dr James Tour", "Prof. James Tour", "Professor James Tour"]
+  },
+  {
+    name: "Sy Garte",
+    src: `${avatarBasePath}/sy-garte.webp`,
+    aliases: ["Sy Garte", "Garte", "Dr. Sy Garte", "Dr Sy Garte", "Seymour Garte"]
   }
 ];
 
