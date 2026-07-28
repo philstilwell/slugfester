@@ -39712,5 +39712,408 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "copan-woodford-belief-god-reasonable-2024",
+    number: "112",
+    title: "Paul Copan vs Stephen Woodford: Is Belief in God Reasonable?",
+    label: "Reasonable belief in God",
+    date: "2026-07-28",
+    duration: "1 hr 22 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=qQda8Cywqvo",
+    motion:
+      "Is belief in God reasonable, given cosmology, fine-tuning, consciousness, rationality, morality, evil, religious history, and the record of scientific explanation?",
+    summary:
+      "Copan argues theism better explains human and cosmic phenomena; Woodford argues naturalism fits science, suffering, and moral progress better.",
+    sourceNote:
+      "Based on YouTube captions for the Paul Copan upload and the uploader's chapter timing. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "theism is more likely true than naturalism",
+        context:
+          "Copan frames the debate as an inference to the best explanation across cosmology, consciousness, rationality, morality, and the problem of evil."
+      },
+      con: {
+        text: "theistic explanations being replaced by naturalistic explanations",
+        context:
+          "Woodford's central case is historical and evidential: as science and moral reflection advance, religious explanations lose explanatory territory."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Reasonable theism",
+        speaker: "Paul Copan",
+        color: "teal"
+      },
+      con: {
+        name: "Naturalistic skepticism",
+        speaker: "Stephen Woodford",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 78,
+      con: 80
+    },
+    sections: [
+      {
+        title: "Worldview Framing",
+        timebox: "03:37-28:42",
+        score: {
+          pro: 80,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "03:37",
+              role: "Best explanation",
+              words:
+                "Copan says theism is more likely true than naturalism because it better fits the universe's beginning, fine-tuning, consciousness, rationality, dignity, morality, and evil.",
+              score: 80,
+              critique:
+                "Copan's opening is strong because it gives a broad abductive structure rather than resting everything on one proof. The claim is not merely that theism can explain isolated facts, but that a personal source of mind, value, rationality, and agency provides a more unified context for several puzzling phenomena. That is relevant to the motion and gives Woodford clear targets. The weakness is that breadth creates compression. Each cited item, from fine-tuning to resurrection evidence, is controversial enough to need more defense than an opening permits. The score is high because the framework is coherent and ambitious, but it remains more programmatic than fully demonstrated.",
+              tags: []
+            },
+            con: {
+              time: "28:13",
+              role: "Track record",
+              words:
+                "Woodford argues that religious explanations have repeatedly been replaced by naturalistic explanations as science uncovers more about the universe.",
+              score: 79,
+              critique:
+                "Woodford's track-record argument is clear and rhetorically potent. Geocentrism, special creation, biblical chronology, flood geology, and disease explanations give him a recognizable pattern: where religious stories once seemed explanatory, naturalistic accounts later performed better. That directly pressures the reasonableness of betting on theism for unresolved cases. The weakness is that the pattern does not automatically transfer to metaphysical questions like why there is a universe, why consciousness exists, or whether objective morality is grounded. Some religious explanations failed, but not every theistic claim is a failed proto-scientific hypothesis. The score is solid-strong because the historical warning matters, though it cannot by itself settle the larger worldview comparison.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Cosmos And Design",
+        timebox: "10:44-42:50",
+        score: {
+          pro: 79,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:44",
+              role: "Cosmic beginning",
+              words:
+                "Copan argues that the universe's beginning and fine-tuning point beyond self-sufficient nature toward a transcendent intelligent cause.",
+              score: 79,
+              critique:
+                "Copan's cosmic case has real force because it selects two data points that are genuinely difficult for simple naturalistic pictures: a finite universe and finely balanced conditions for life. He strengthens the point by asking for a comparative explanation rather than demanding mathematical certainty. The weakness is that the argument moves quickly from cosmic dependence to a personal, good, worship-worthy God. Even if the universe has a transcendent cause, the bridge to theism rather than deism, unknown metaphysics, or deeper natural structure needs more work. The score is solid-strong because the evidence is relevant and cumulative, but the conclusion remains more specific than the premises alone deliver.",
+              tags: []
+            },
+            con: {
+              time: "40:43",
+              role: "Scale objection",
+              words:
+                "Woodford says billions of galaxies and stars mean improbable events will occur somewhere, weakening the inference from life to design.",
+              score: 83,
+              critique:
+                "Woodford's scale reply is one of his best moves because it answers fine-tuning and apparent human centrality with the actual size of the search space. If there are enormous numbers of stars and planets, some low-probability outcomes become less surprising, and the universe no longer looks obviously arranged around us. He also rightly notes that theists sometimes count both a small human-centered cosmos and a vast indifferent cosmos as compatible with God. The weakness is that scale alone does not answer all fine-tuning arguments, which concern life-permitting laws and constants before planets appear. The score is high because the reply exposes a real evidential overreach while leaving deeper fine-tuning unsettled.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "1:05:18",
+              role: "Theism not Christianity",
+              words:
+                "Copan says the universe's beginning supports general theism first; further evidence would be needed to move from there to Christianity.",
+              score: 81,
+              critique:
+                "Copan handles the deism-or-Christianity question well. He does not pretend that the Big Bang alone proves the full Christian doctrine of God; instead, he says the cosmic beginning supports a more general theistic conclusion, with further arguments needed later. That protects the argument from a common category mistake and shows better burden discipline than a one-step leap to Christianity. The weakness is that some of his opening language did gesture toward Christian faith, resurrection, and biblical fit, so the debate's audience could reasonably ask how much is being smuggled in. The score is strong because this clarification is careful, even if the broader cumulative case still needs integration.",
+              tags: []
+            },
+            con: {
+              time: "1:06:51",
+              role: "Big Bang caution",
+              words:
+                "Woodford says astronomers often describe the Big Bang as a dense early state, not necessarily the beginning of everything.",
+              score: 84,
+              critique:
+                "Woodford's Big Bang caution is strong because it narrows the evidential claim to what cosmology actually establishes. If many astronomers stop at a hot dense state rather than claiming absolute beginning from nothing, then Copan's argument should not overstate scientific consensus. Woodford also gives a clever fine-tuning reply: an omnipotent God need not be constrained by the constants that permit carbon-based life, so fine-tuning may say more about our kind of life than God's limits. The weakness is that the caution does not remove all cosmological contingency or fine-tuning puzzles. The score is high because it improves the evidential standard while not pretending the naturalistic story is complete.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Mind And Reason",
+        timebox: "14:01-50:35",
+        score: {
+          pro: 76,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "14:01",
+              role: "Consciousness gap",
+              words:
+                "Copan says consciousness and rationality are hard for naturalism but expected if persons are made by a rational, self-aware God.",
+              score: 76,
+              critique:
+                "Copan's consciousness-and-reason argument targets a genuine explanatory pressure. First-person awareness, truth-directed rationality, and reliable cognition are not easy to derive from matter described in nonmental terms, and theism has a ready personal source for them. His use of naturalist admissions gives the challenge additional weight. The weakness is that he tends to identify naturalism with strict materialism and then treat broader naturalists as borrowing from theism. That frames the opposition too narrowly. Naturalists can reject reductionist materialism or defend emergent views without thereby conceding God. The score is respectable because the challenge is serious, but the version of naturalism under attack is not the only live option.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument sometimes slides between atheism, naturalism, and strict materialism as if they were identical commitments."
+                }
+              ]
+            },
+            con: {
+              time: "43:19",
+              role: "Agnostic naturalism",
+              words:
+                "Woodford says naturalists are not unified on materialism, determinism, or consciousness; on many issues they remain agnostic.",
+              score: 82,
+              critique:
+                "Woodford's reply is strong because it distinguishes atheism, naturalism, materialism, and determinism. Copan's argument gains force if naturalism entails reductive materialism, but Woodford notes that many philosophers reject that package or remain agnostic about consciousness. That matters because the motion asks whether belief in God is reasonable, not whether one narrow version of naturalism is complete. His appeal to philosopher surveys is useful as a corrective to caricature. The weakness is that agnosticism is not yet an explanation. Saying naturalists disagree does not show that naturalism can ground consciousness or reason better than theism. The score is high because the rebuttal accurately widens the option space, but it stays mostly defensive.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality Grounded",
+        timebox: "17:39-58:59",
+        score: {
+          pro: 82,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "17:39",
+              role: "Moral realism",
+              words:
+                "Copan argues naturalism yields evolved moral feelings, while theism grounds objective duties, dignity, goodness, and the reality of evil.",
+              score: 82,
+              critique:
+                "Copan's moral argument is one of his strongest sections. He clearly separates moral feelings from objective duties and asks why human dignity, obligation, and evil should be more than adaptive sentiments if naturalism is true. That makes the problem of evil double-edged: it works against theism only if evil is real, not merely disliked. His later Euthyphro reply also usefully distinguishes goodness from commanded duties and roots morality in God's character. The weakness is that he underdevelops secular moral realism and sometimes treats evolutionary origin stories as debunking rather than merely explaining moral psychology. The score is high because the metaethical challenge is central and well connected to the motion.",
+              tags: []
+            },
+            con: {
+              time: "52:55",
+              role: "Euthyphro challenge",
+              words:
+                "Woodford says if God commands goodness because it is right, goodness exists outside God and is open to atheists too.",
+              score: 78,
+              critique:
+                "Woodford's Euthyphro challenge is relevant and familiar for good reason. It presses whether theism truly grounds morality or merely relocates the question to God's will or nature. He also fairly says atheists need not be reductive materialists; objective morality could be cashed out through non-theistic realism or other accounts. The weakness is that the version he presents is compressed and partly anticipates a simple divine-command view that Copan explicitly rejects. Copan's answer about God's character as a standard is not refuted by merely restating the two horns. The score is solid-strong because the objection is serious, but it needed sharper engagement with contemporary theistic moral realism.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "57:08",
+              role: "Third option",
+              words:
+                "Copan says Euthyphro is not a dilemma because goodness is rooted in God's character, while commands specify duties.",
+              score: 84,
+              critique:
+                "Copan's Euthyphro reply is philosophically competent. By distinguishing goodness, value, beauty, rationality, supererogation, and duty, he prevents morality from being reduced to arbitrary commands. The claim that God's good character is the stopping point also answers why the theist does not need a standard external to God in the same way a meter bar once set the standard for a meter. The weakness is that the analogy may not satisfy critics who ask whether God's nature is good in an informative rather than stipulative sense. Still, Copan directly answers the objection on its strongest terrain. The score is high because the distinction between value and obligation does real work.",
+              tags: []
+            },
+            con: {
+              time: "53:54",
+              role: "Moral motivation",
+              words:
+                "Woodford says he avoids meat and treats people well because sentient suffering bothers him and he feels moral disruption.",
+              score: 76,
+              critique:
+                "Woodford's moral-motivation answer is honest and humanly intelligible. He does not need God to explain why he cares about sentient beings, loses sleep over harm, and wants to treat others well. That undercuts any simplistic claim that atheists cannot be moral or motivated. The weakness is that the answer mainly addresses moral psychology, not moral ontology. Feeling bad explains why Woodford acts, but it does not show why the action is objectively required or why someone with different feelings is mistaken. Copan's question is about grounding, so motivation alone leaves the deepest challenge open. The score is solid because it rebuts a popular caricature, but it does not settle metaethics.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Evil And Suffering",
+        timebox: "20:11-25:38",
+        score: {
+          pro: 75,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "20:11",
+              role: "Perspectival evil",
+              words:
+                "Copan says evil leads some people away from God and others toward God, so every worldview must account for evil.",
+              score: 75,
+              critique:
+                "Copan's perspectival point is fair as far as it goes. Evil is not psychologically uniform: some sufferers lose faith, while others find God indispensable for meaning, hope, or moral protest. That blocks the easy claim that suffering automatically defeats theism. He also rightly says naturalism must account for why evil is real rather than merely unpleasant. The weakness is that psychological variety does not answer the evidential weight of suffering itself. The fact that some people turn toward God in suffering may show pastoral resilience, but it does not explain why an all-good, all-powerful God permits massive apparently pointless pain. The score is solid because the point is relevant, but it is not a full theodicy.",
+              tags: []
+            },
+            con: {
+              time: "23:48",
+              role: "Scale of suffering",
+              words:
+                "Woodford emphasizes extinction, predation, disease, and vast cosmic indifference, asking whether this is really the best God could do.",
+              score: 85,
+              critique:
+                "Woodford's suffering argument is powerful because it moves beyond isolated human tragedies to the whole evolutionary and cosmic frame. Mass extinction, animal pain, waste, scale, and human late arrival make the world look much less like a handcrafted moral theater and much more like an indifferent natural process. The phrase 'best that God could do' directly pressures omnipotence and omnibenevolence. The weakness is that he does not deeply engage skeptical-theist, soul-making, or afterlife replies in the opening. Still, the evidential data are broad and central to the motion. The score is high because this is Woodford's strongest comparative evidence for naturalism over theism in debate context.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "History And Ethics",
+        timebox: "29:27-1:20:11",
+        score: {
+          pro: 76,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "37:36",
+              role: "Christian inheritance",
+              words:
+                "Copan appeals to Tom Holland, Derrida, Ferry, and Habermas to argue Christianity reshaped human rights, democracy, and dignity.",
+              score: 76,
+              critique:
+                "Copan's Christian-inheritance argument is historically relevant. It is true that Christian ideas, institutions, and reformers played major roles in Western moral development, and his appeal to non-Christian historians and philosophers prevents the point from sounding merely tribal. That matters because Woodford portrays theism as morally regressive. The weakness is that influence is not vindication. Christianity can help generate human-rights language while still carrying scriptural, institutional, and interpretive failures. Copan's reliance on named authorities also risks becoming a parade of quotations rather than a detailed historical argument. The score is solid because the correction matters, but it does not by itself prove belief in God reasonable.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "The historical point leans heavily on prominent interpreters rather than developing the causal case in detail."
+                }
+              ]
+            },
+            con: {
+              time: "29:27",
+              role: "Moral revision",
+              words:
+                "Woodford says Christianity claimed divine backing for women's subordination, slavery, and anti-gay teaching before adapting under modern pressure.",
+              score: 84,
+              critique:
+                "Woodford's moral-history critique is strong because it targets the public record of religious interpretation, not merely abstract theism. If saints, theologians, churches, and scriptures were long used to justify sexism, slavery, and anti-gay policy, then claims of clear divine moral guidance are weakened. His point about modern reinterpretation pressures the alleged objectivity of the moral source. The weakness is that he sometimes slides from failures of Christianity to falsity of God, and Copan can answer that misuse or misreading does not refute the founder or the metaphysical ground. Still, as an argument against the reasonableness of inherited religious certainty, it lands hard. The score is high because the evidence is concrete.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "1:09:48",
+              role: "Textual reply",
+              words:
+                "Copan says disputed texts about women are often mistranslated or context-specific, and Jesus modeled concern for marginalized people.",
+              score: 77,
+              critique:
+                "Copan's textual reply is useful because it does not simply deny that difficult passages exist. By mentioning manuscript issues, translation disputes, women leaders such as Phoebe and Junia, and Jesus's attention to marginalized people, he gives a route for reading Christianity less regressively than Woodford suggests. The weakness is that this reply is too compressed to bear the historical burden. A long record of harmful readings cannot be answered by quick references to better scholarship unless the interpretive criteria are made clear. His comments on same-sex relationships also preserve a moral line many listeners will regard as part of the problem. The score is solid because the reply has resources, but it remains underdeveloped.",
+              tags: []
+            },
+            con: {
+              time: "1:03:27",
+              role: "Stagnation charge",
+              words:
+                "Woodford says religions may improve societies at first, then become dogmatic and stagnant until forced to adapt by later moral progress.",
+              score: 83,
+              critique:
+                "Woodford's stagnation charge is nuanced enough to be stronger than a blanket anti-religion claim. He grants that Christianity and Islam improved some moral conditions when they arose, then argues that sacred authority later freezes those gains until external moral pressure forces reinterpretation. That model explains both religion's reforming power and its recurrent resistance to later progress. The weakness is that the story risks becoming too monocausal: Enlightenment reforms also drew from Christian concepts, and religious movements sometimes drove abolition, education, and rights campaigns. The score is high because Woodford's model fits many examples, but it needs more balanced causal accounting across historical cases more broadly.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 78,
+        strengths: [
+          "Copan offered a coherent cumulative case rather than relying on one isolated argument for God.",
+          "His best sections connected theism to consciousness, rationality, moral realism, dignity, and the reality of evil.",
+          "He answered the Euthyphro objection with a real value-duty distinction and avoided claiming cosmology alone proves Christianity."
+        ],
+        blunders: [
+          {
+            text:
+              "His treatment of naturalism sometimes collapsed atheism, strict materialism, and naturalism into one target.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His Christian-history defense leaned on respected authorities more than on a detailed causal account of moral progress.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          },
+          {
+            text:
+              "His evil response showed that suffering does not psychologically defeat faith, but did not fully answer the evidential scale of suffering.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 80,
+        strengths: [
+          "Woodford gave a vivid comparative case from cosmic scale, evolutionary suffering, extinction, and religious explanatory retreat.",
+          "He effectively challenged Copan's narrow framing of naturalism and insisted that atheism does not entail strict materialism.",
+          "His moral-history critique made the problem concrete by focusing on women, slavery, same-sex relationships, and religious adaptation."
+        ],
+        blunders: [
+          {
+            text:
+              "His track-record argument risked treating failed religious science as though it settled wider metaphysical claims.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His criticism of Christian moral failures sometimes slid from institutional history to the falsity or irrationality of all theism.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His moral-motivation answer did not fully answer Copan's deeper grounding challenge about objective obligation.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
