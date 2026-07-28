@@ -42251,5 +42251,476 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "hernandez-schieber-god-existence-2023",
+    number: "118",
+    title: "Eric Hernandez vs Justin Schieber: Does God Exist?",
+    label: "Evil, mind, and hiddenness",
+    date: "2026-07-28",
+    duration: "2 hr 18 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=sy1lUHGIQCQ",
+    motion:
+      "Does theism or atheistic naturalism better explain evil, objective morality, knowledge, rationality, consciousness, free will, animal suffering, cosmic hostility, and non-resistant nonbelief?",
+    summary:
+      "Hernandez argues evil, rationality, and the soul presuppose God; Schieber argues naturalism better explains animal suffering, cosmic hostility, hiddenness, and theory simplicity.",
+    sourceNote:
+      "Based on YouTube English-original captions for the Eric Hernandez upload and its chapter markers. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "evil becomes an argument not against God but against atheism",
+        context:
+          "Hernandez's central strategy is to turn common atheist evidence, especially evil and rational assessment, into alleged preconditions for theism."
+      },
+      con: {
+        text: "there was always a vegetarian option",
+        context:
+          "Schieber's vivid animal-suffering claim is that omnipotent theism had morally better creative alternatives that naturalism did not require."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian theism",
+        speaker: "Eric Hernandez",
+        color: "teal"
+      },
+      con: {
+        name: "Atheistic naturalism",
+        speaker: "Justin Schieber",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 76,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Opening Burdens",
+        timebox: "04:42-21:13",
+        score: {
+          pro: 76,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:42",
+              role: "Exclusion frame",
+              words:
+                "Hernandez says atheism and theism are the only live options, then argues evil, knowledge, rationality, and the soul make atheism false.",
+              score: 76,
+              critique:
+                "Hernandez's opening is organized and strategically bold. He tells the audience exactly how he plans to win: show that atheism cannot account for evil, rationality, and the soul, then infer theism as the remaining option. That gives the debate a clear burden structure and avoids wandering through every argument for God. The weakness is that the setup is brittle. Treating atheism and theism as the only live options, then using broad metaphysical claims to eliminate atheism, risks overlooking non-theistic realism, panpsychism, idealism, deism, or other intermediate positions. The score is solid because the plan is coherent, but it depends heavily on exclusions not yet earned.",
+              tags: []
+            },
+            con: {
+              time: "20:37",
+              role: "Theory comparison",
+              words:
+                "Schieber says naturalism has qualitative simplicity because theism adds basic agents, novel causation, and basic powers beyond the physical world.",
+              score: 82,
+              critique:
+                "Schieber's theory-comparison opening is strong because it gives the audience a clean standard before presenting evidence. Naturalism's qualitative simplicity is not offered as a final proof; it is a prior consideration that matters if the competing explanations are otherwise close. He then links that framework to specific evidence rather than resting on a slogan. The weakness is that simplicity depends on how naturalism is filled out. Once Schieber accepts irreducible consciousness, moral realism, and perhaps proto-phenomenal properties, the simplicity advantage becomes less obvious than his first definition suggests. The score is high because the method is sound and explicit, but the ontology will need later defense.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Evil And Animals",
+        timebox: "05:34-41:31",
+        score: {
+          pro: 75,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "05:34",
+              role: "Evil reversal",
+              words:
+                "Hernandez argues that if evil exists, objective morality and teleology exist, and these require God rather than atheism.",
+              score: 75,
+              critique:
+                "Hernandez's evil reversal is rhetorically effective because it attacks a familiar atheist argument at its presuppositional base. If evil is a real deviation from how things ought to be, then some account of objective value and proper function is needed. His disease and bad-phone examples make the point accessible. The weakness is that he moves too quickly from objective normativity and teleology to God. Non-theistic moral realism, Aristotelian natural teleology, or irreducible normative facts are not refuted merely by saying teleology implies design. The score is solid because the challenge is relevant, but lower because the God-only grounding premise carries nearly all the argumentative weight.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The argument assumes objective morality and teleology require God before defeating non-theistic realist alternatives."
+                }
+              ]
+            },
+            con: {
+              time: "21:17",
+              role: "Evolutionary evil",
+              words:
+                "Schieber argues predation, parasitism, starvation, and animal suffering among non-moral agents are more expected on naturalism than on theism.",
+              score: 88,
+              critique:
+                "Schieber's evolutionary-evil argument is the strongest evidential case in the debate. He targets suffering among sentient beings who are not moral agents, so standard free-will replies lose much of their reach. His contrast is explicitly probabilistic: naturalism expects fragile, resource-dependent organisms shaped by morally blind evolutionary strategies, while omnipotent theism had many possible ways to create minded life. The weakness is that the argument depends on expectations about perfect divine goodness, and sophisticated theists can contest those expectations with theodicy or skeptical theism. Still, predation, parasitism, and privation are central rather than incidental to biological history. The score is very high because the comparison is clear, cumulative, and hard to domesticate.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "40:20",
+              role: "Theodicy menu",
+              words:
+                "Hernandez says theism predicts suffering through free will, soul-building, the fall affecting creation, resurrection, and animal restoration.",
+              score: 74,
+              critique:
+                "Hernandez's theodicy menu shows breadth and familiarity with the literature. Free will, soul-building, fall theology, resurrection, and Trent Dougherty's animal-restoration proposal are all relevant Christian resources, and he is right that theism need not answer suffering with only one device. The weakness is that listing possible theodicies does not show they predict the data better than naturalism. Animal predation, parasitism, and privation require a specific fit, not merely the general expectation that a fallen world contains bad things. Some elements, especially animal deification and retroactive embrace of suffering, are highly speculative in the exchange. The score is mixed-solid because the replies are real, but their evidential support is thin.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Possible afterlife and fall explanations are used before their probability or fit with animal suffering is established."
+                }
+              ]
+            },
+            con: {
+              time: "24:13",
+              role: "Creative alternative",
+              words:
+                "Schieber says God was not limited to mortal metabolisms that struggle for flesh, since there was always a vegetarian option.",
+              score: 89,
+              critique:
+                "Schieber's vegetarian-option line is vivid because it compresses the divine-design problem into one clear contrast. Naturalism has no moral chooser behind biological systems; theism posits an omnipotent, compassionate chooser who could create conscious life without making some creatures survive by tearing others apart. That directly targets Eric's claim that theism predicts the relevant data at least as well. The weakness is that the phrase can sound glib unless anchored in the broader argument, since ecosystems and creaturely goods are complex. But Schieber supplies that anchor through resource dependence, biological embodiment, and non-moral-agent suffering. The score is very high because the objection stays comparative and identifies a concrete alternative theism must explain away.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Knowledge And Rationality",
+        timebox: "10:31-58:25",
+        score: {
+          pro: 76,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:31",
+              role: "Reliability defeater",
+              words:
+                "Hernandez says unguided selection aims at survival rather than truth, so atheism undercuts trust in rational belief formation.",
+              score: 76,
+              critique:
+                "Hernandez's rationality argument is one of his more philosophically serious moves. The microwave-defeater analogy and Superman example make Plantinga-style worries accessible: if our faculties were selected only for survival, why assume they reliably track truth, especially in abstract metaphysics? That is a legitimate challenge for naturalists who treat cognition as purely adaptive machinery. The weakness is that the argument overstates the gap between survival and truth. Creatures navigating varied environments often benefit from accurate beliefs, and false adaptive stories may fail once they spill into broader behavior. The move also risks self-defeat if theistic belief-forming faculties show similar disagreement. The score is solid because the challenge matters, but it is not a knockout.",
+              tags: []
+            },
+            con: {
+              time: "55:07",
+              role: "Adaptive reply",
+              words:
+                "Schieber says globally false belief-forming faculties would lose out because belief content, desires, and behavior must fit varied environments.",
+              score: 84,
+              critique:
+                "Schieber's reply is strong because it grants the local point while resisting the global defeater. A single false belief can be adaptive in a contrived case, but a faculty that regularly produces false beliefs must guide agents through many environments, social situations, food searches, and dangers. His alien-food example makes belief content relevant to behavior rather than causally idle. The weakness is that metaphysical and moral beliefs may not be under the same direct survival pressure as ordinary perceptual beliefs, and Schieber later concedes that metaphysical disagreement is widespread. Still, the reply blocks Eric's quick move from possible adaptive falsehoods to general unreliability. The score is high because it answers the mechanism of the defeater.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "1:41:58",
+              role: "Non-rational cause",
+              words:
+                "Hernandez says determined thoughts from non-rational physical causes give reason to doubt rationality, unlike a computer with a rational programmer.",
+              score: 73,
+              critique:
+                "Hernandez's Q&A refinement improves the argument by focusing on non-rational causes rather than mere determinism. If thought is entirely produced by blind processes, he asks, why expect rational insight instead of only causal output? The programmer contrast also explains why a deterministic computer might not threaten rationality in the same way. The weakness is that the objection may confuse a cause's being non-conscious with its products being non-rational. Mathematical calculators, neural networks, and evolved perceptual systems can instantiate rule-governed reliability without each lower-level cause being rational. The score is mixed-solid because the worry is intelligible, but it needs more than a contrast between rational and non-rational sources.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument can shift between non-rational causes and irrational or unreliable cognitive outputs."
+                }
+              ]
+            },
+            con: {
+              time: "1:44:26",
+              role: "Metaphysics limit",
+              words:
+                "Schieber says human metaphysical belief-forming mechanisms are empirically unreliable, which is a problem for theism as well as naturalism.",
+              score: 81,
+              critique:
+                "Schieber's metaphysics-limit reply is subtle and useful. He admits that abstract metaphysical belief is a harder case for naturalistic reliability than ordinary perception, but then points to a wider datum: humans plainly disagree massively about metaphysics. That fact pressures every worldview that expects reliable access to ultimate reality, not only naturalism. The weakness is that this answer can undercut too much. If metaphysical cognition is broadly unreliable, Schieber's own naturalism, moral realism, and hiddenness judgments may also be weakened. The score is strong because it prevents Eric from isolating the problem on atheism alone, but not higher because it leaves a shared epistemic problem rather than solving the reliability issue.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Soul And Consciousness",
+        timebox: "15:01-1:13:04",
+        score: {
+          pro: 79,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "15:01",
+              role: "Soul inference",
+              words:
+                "Hernandez argues consciousness and libertarian free will require immaterial souls, because thoughts are not identical to brain regions.",
+              score: 78,
+              critique:
+                "Hernandez's soul argument has real intuitive pull. Leibniz's-law contrasts between brain weight, spatial extension, truth value, smell, and taste help show why conscious experience is difficult to reduce to ordinary physical description. He also links libertarian agency to moral responsibility and intellectual integrity, which gives the argument existential bite. The weakness is that the conclusion moves from irreducibility to soul substance too quickly. Property dualism, panpsychism, Russellian monism, neutral monism, and emergentist views are live alternatives, and libertarian free will is asserted rather than defended against compatibilism. The score is solid because consciousness is a serious problem for crude physicalism, but the soul-and-God inference is under-argued.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The move from hard-to-reduce consciousness to immaterial souls bypasses several non-theistic alternatives."
+                }
+              ]
+            },
+            con: {
+              time: "51:51",
+              role: "Russellian monism",
+              words:
+                "Schieber says consciousness may be fundamental or proto-phenomenal within the intrinsic nature of physical reality, with no souls required.",
+              score: 82,
+              critique:
+                "Schieber's Russellian-monist response is strong because it does not pretend consciousness is easy. He grants irreducibility, distinguishes physics' relational description from intrinsic nature, and offers a naturalistic family of views where consciousness or proto-consciousness is basic without adding soul substances. That directly blocks Eric's forced choice between reductive physicalism and theism. The weakness is that the view is admitted to be weird and only lightly developed. Fundamental proto-phenomenal properties may preserve naturalism, but they make the simplicity advantage more complicated and need a story about combination into unified experience. The score is high because the reply identifies a serious alternative, but capped because it remains a sketch.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "1:07:55",
+              role: "Common-ground pressure",
+              words:
+                "Hernandez says if consciousness is fundamental, Christianity already has that in God's mind and explains finite consciousness better.",
+              score: 82,
+              critique:
+                "Hernandez's cross-exam pressure is one of his best live moments. Once Schieber grants irreducible consciousness and some fundamental mental aspect of reality, Eric can fairly ask why this does not lean toward a theistic mind rather than an austere naturalism. That directly attacks Schieber's simplicity advantage and exposes how non-reductive naturalism can look theism-adjacent. The weakness is that resemblance is not identity. Proto-phenomenal properties in fundamental entities are not obviously a personal, omniscient, morally perfect God, and Eric does not bridge that gap in detail. The score is high because he finds a genuine tension in Justin's ontology, but the Christian conclusion still needs more work.",
+              tags: []
+            },
+            con: {
+              time: "1:10:15",
+              role: "Inference restraint",
+              words:
+                "Schieber says irreducible consciousness and physics' limits motivate a strange monist view, but not the full theology Hernandez adds.",
+              score: 80,
+              critique:
+                "Schieber's restraint is valuable because he resists treating every non-physical-sounding posit as a runway to Christian theism. His view is motivated by two limited commitments: consciousness seems undeniable and physics may describe structure rather than intrinsic nature. From there, he says, a weird naturalistic monism may follow, but not divine personality, providence, salvation history, or Christian doctrine. The weakness is that his ontology still incurs theoretical cost, and he does not fully explain why fundamental mind-like reality should count as naturalism rather than a renamed metaphysical ultimate. The score is strong because the burden-control is fair, but Eric still succeeds in narrowing the simplicity gap.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Cosmos And Hiddenness",
+        timebox: "25:42-47:06",
+        score: {
+          pro: 72,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "41:50",
+              role: "Fine-tuning reply",
+              words:
+                "Hernandez says cosmic hostility is his weakest argument because life itself needs fine-tuning, vast vacuum, and divine artistry.",
+              score: 74,
+              critique:
+                "Hernandez's cosmic-hostility reply is more effective than a simple 'God can do anything' answer. He points out that life-permitting conditions may require a vast, mostly empty universe, and that a creator might value beauty, discoverability, or artistic scale rather than maximizing habitable volume. That partially answers Schieber's assumption that a loving God would make most physical space hospitable. The weakness is that the reply leans on alternate values without showing they outweigh the mismatch Schieber identifies. Artistic blue in a painting is not obviously parallel to billions of lethal galaxies relative to embodied moral agents. The score is mixed-solid because the response adds context, but it does not neutralize the evidential contrast.",
+              tags: []
+            },
+            con: {
+              time: "25:42",
+              role: "Cosmic hostility",
+              words:
+                "Schieber argues the universe is nearly everywhere hostile to fragile moral agents, exactly as naturalism predicts and surprisingly unlike value-oriented theism.",
+              score: 82,
+              critique:
+                "Schieber's cosmic-hostility argument is interesting because it shifts from biological history to spatial scale. If moral agents are the highest physical value we know, a value-oriented creator might be expected to make the physical order substantially compatible with their flourishing. Instead, almost every random location is lethal. That fits naturalism's indifference neatly. The weakness is that the inference depends on assuming God would optimize the universe for embodied moral life in the way we expect. Theists can appeal to fine-tuning, discoverability, aesthetic vastness, or other goods. The score is strong because the argument is clear and cumulative, but less powerful than the animal-suffering case overall.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "44:01",
+              role: "Hiddenness defense",
+              words:
+                "Hernandez says Scripture presents God hiding himself, and hiddenness may be loving because rejected revelation increases punishment.",
+              score: 69,
+              critique:
+                "Hernandez's hiddenness defense is imaginative and theologically textured. He gives scriptural examples of divine hiding and distinguishes belief from saving relationship, which answers a simplistic version of the hiddenness argument. The strongest part is that more revelation can bring more responsibility, so hiddenness might be merciful in some resistant cases. The weakness is that the reply becomes too elastic. If hiddenness toward seekers, future converts, possible apostates, and even rejecters all count as loving, then almost any evidential pattern is made compatible with theism. It also risks portraying clearer divine availability as dangerous rather than loving. The score is below solid because the defense is possible, but it weakens predictive content.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Hiddenness is treated as loving across many contrary cases without clear independent constraints."
+                }
+              ]
+            },
+            con: {
+              time: "29:32",
+              role: "Non-resistant unbelief",
+              words:
+                "Schieber argues perfectly loving God would provide sufficient reasons to non-resistant seekers, yet many such people lack belief.",
+              score: 87,
+              critique:
+                "Schieber's hiddenness argument is strong because it connects perfect love to relational availability rather than to mere benevolence. If God wants meaningful relationship with loved persons, then non-resistant seekers should not be unable to believe despite open eyes. His distribution point also broadens the argument from private psychology to public geography and history: monotheism spreads like other cultural ideas. The weakness is that identifying nonresistance is difficult, and theists can argue that relationship readiness involves more than conscious desire for evidence. Even so, the argument poses a clear evidential expectation for perfect-being theism. The score is very high because it combines conceptual clarity with observable distribution patterns.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral Ground And Closing",
+        timebox: "47:59-2:16:38",
+        score: {
+          pro: 75,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:22:54",
+              role: "Personal grounding",
+              words:
+                "Hernandez says necessary, eternal, personal moral properties fit best in God, while brute non-theistic moral facts lose explanatory points.",
+              score: 76,
+              critique:
+                "Hernandez's moral-grounding point has an intuitive advantage. Moral obligations feel addressed to persons and concerned with sentient beings, so a personal ultimate standard can seem more fitting than abstract brute facts. His appeal to God's necessary and unchanging nature also avoids the crudest divine-command voluntarism where goodness depends on arbitrary will. The weakness is that 'personal' does not by itself solve the grounding problem. Schieber's Mackie-style question remains: why is one obligated to obey God's nature or commands unless some normative reason is already in place? The score is solid because Eric improves on simple command theory, but the obligation bridge still needs independent support.",
+              tags: []
+            },
+            con: {
+              time: "47:59",
+              role: "Mackie challenge",
+              words:
+                "Schieber says divine commands obligate only if there is already a general obligation to obey God, risking circularity.",
+              score: 85,
+              critique:
+                "Schieber's moral rebuttal is one of his strongest philosophical counters. The Mackie-style challenge asks exactly the right question: if God commands X, why does that make X obligatory unless there is already a reason or obligation to obey God? That exposes a possible circularity in grounding moral obligation directly in divine command or nature. Schieber also notes that non-theistic moral realism can take universality and objectivity seriously without theistic intermediaries. The weakness is that his claim that God-based morality is subjectivist may trade on the word 'subject' too quickly. A necessary divine nature is not identical to a human preference. Still, the score is high because the core circularity challenge lands.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "2:10:12",
+              role: "Final theistic fit",
+              words:
+                "Hernandez closes that theism has better predictability, explanation, and theodicy for consciousness, moral value, and suffering than naturalism.",
+              score: 75,
+              critique:
+                "Hernandez's closing accurately restates his cumulative strategy. He keeps the question on explanatory fit: consciousness, moral values, rationality, and suffering allegedly sit more naturally within theism than within Justin's non-reductive naturalism. That is the right comparative frame. The weakness is that the closing overstates what the exchange established. Justin supplied live non-theistic alternatives for morality, consciousness, and rationality, and Eric's theodicies for animal suffering remained more possible than probable. Saying naturalism has no superiority does not answer the specific evidence from predation, cosmic hostility, and hiddenness. The score is solid because the thesis is coherent, but the final summary does not repair the central evidential losses.",
+              tags: []
+            },
+            con: {
+              time: "2:13:05",
+              role: "Final burden test",
+              words:
+                "Schieber closes that the fall does not predict predation, parasitism, and privation, and soul-building rests on contestable value judgments.",
+              score: 87,
+              critique:
+                "Schieber's closing is strong because it tests Eric's theodicies by predictive fit rather than by mere possibility. If animal suffering predates humans or is built into body plans, then a generic fall story needs mechanisms and probabilities, not just the claim that bad things follow disobedience. His critique of soul-building is also precise: earned virtues may be valuable, but the core value judgment is not demonstrable and may imply odd things about God's ready-made goodness. The weakness is that the closing focuses mostly on the evil side of Eric's case, leaving consciousness and moral realism less fully revisited. Even so, the final burden test is excellent and directly addresses the debate's strongest evidence.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 76,
+        strengths: [
+          "Hernandez gave a clear three-part case and repeatedly kept the debate on comparative explanatory fit.",
+          "His strongest live pressure came from Schieber's acceptance of irreducible consciousness and moral realism, which narrowed naturalism's claimed simplicity advantage.",
+          "He engaged real theodicy literature rather than relying only on a vague free-will defense."
+        ],
+        blunders: [
+          {
+            text:
+              "His evil argument assumed that objective morality and teleology require God without defeating non-theistic realist or natural-teleology options.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His hiddenness defense made too many contrary evidential patterns compatible with divine love and mercy.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His soul and consciousness argument moved from irreducibility to immaterial souls while bypassing live non-theistic options.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Schieber's animal-suffering case was clear, comparative, and hard for generic fall or free-will replies to cover.",
+          "He answered the rationality and soul arguments with specific alternatives rather than merely denying the problems.",
+          "His hiddenness argument combined perfect-love reasoning with public distribution evidence from religious geography and history."
+        ],
+        blunders: [
+          {
+            text:
+              "His naturalism became less simple once it admitted irreducible consciousness, moral realism, and fundamental proto-phenomenal properties.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His description of God-grounded morality as subjectivist risked sliding from 'grounded in a subject' to ordinary subjective preference.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His admission that metaphysical belief formation is empirically unreliable can weaken his own metaphysical confidence as well.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
