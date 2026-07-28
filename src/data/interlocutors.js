@@ -540,6 +540,11 @@ export const interlocutorAvatars = [
     name: "Sharon Dirckx",
     src: `${avatarBasePath}/sharon-dirckx.webp`,
     aliases: ["Sharon Dirckx", "Dirckx"]
+  },
+  {
+    name: "Cameron Bertuzzi",
+    src: `${avatarBasePath}/cameron-bertuzzi.webp`,
+    aliases: ["Cameron Bertuzzi", "Bertuzzi"]
   }
 ];
 

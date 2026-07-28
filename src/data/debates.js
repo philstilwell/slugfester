@@ -41421,5 +41421,434 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "bertuzzi-schieber-evil-evidence-2019",
+    number: "116",
+    title: "Cameron Bertuzzi vs Justin Schieber: The Problem of Evil",
+    label: "Evil as evidence",
+    date: "2026-07-28",
+    duration: "1 hr 05 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=huOwbSrl-xw",
+    motion:
+      "Do facts about pain, pleasure, languishing, and horrendous evil count as evidence for naturalism over theism, or can soul-building and skeptical theism neutralize that evidential force?",
+    summary:
+      "Schieber argues suffering favors naturalism over theism; Bertuzzi argues naturalism does not predict the data and that soul-building or skeptical theism blocks the inference.",
+    sourceNote:
+      "Based on YouTube English-original captions for the Capturing Christianity upload and its chapter markers. The debate was a formal written exchange later orated for audio/video; captions are lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "evil does not constitute evidence",
+        context:
+          "Bertuzzi's thesis is that Schieber has not shown suffering confirms naturalism over theism once soul-building and skeptical-theist options are considered."
+      },
+      con: {
+        text: "there is no single evidential argument from evil",
+        context:
+          "Schieber presents a cumulative family of evil arguments from biological pain, sentient languishing, and horrendous evils."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theistic no-evidence defense",
+        speaker: "Cameron Bertuzzi",
+        color: "teal"
+      },
+      con: {
+        name: "Draperian evil evidence",
+        speaker: "Justin Schieber",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 77,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Burden Framed",
+        timebox: "00:07-15:37",
+        score: {
+          pro: 79,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "13:43",
+              role: "Reply map",
+              words:
+                "Bertuzzi says Schieber's argument is probabilistic and that theists can appeal to total evidence, theodicy, and skeptical theism.",
+              score: 79,
+              critique:
+                "Bertuzzi's opening map is useful because it refuses to treat evil as the only evidence in the worldview comparison. He correctly notes that even if evil lowers the probability of theism in isolation, other arguments might still make belief rational overall. He also previews three relevant replies: challenge naturalism's prediction of the data, raise the probability of suffering on theism through soul-building, and use skeptical theism if theodicy fails. The weakness is that his stated thesis is stronger than that modest cumulative point. He must show evil has no evidential force at all, not merely that it can be outweighed. The score is solid because the taxonomy is clear, but the burden remains steep.",
+              tags: []
+            },
+            con: {
+              time: "00:28",
+              role: "Evidential burden",
+              words:
+                "Schieber says Bertuzzi denies that facts about suffering have any evidential force against traditional theism.",
+              score: 84,
+              critique:
+                "Schieber's framing is strong because it fixes the exact burden. The debate is not whether the problem of evil single-handedly disproves God, but whether suffering counts as any evidence at all against traditional theism. That matters because Bertuzzi's denial is much harder to defend than the weaker claim that evil is outweighed by other theistic evidence. Schieber also defines theism and naturalism clearly enough for comparative probability. The weakness is that his broad naturalism is still sparse; physical priority does not by itself specify all relevant expectations. Even so, the opening sets a precise target and prevents burden-sliding. The score is high because the debate question is cleanly framed.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Pain And Pleasure",
+        timebox: "02:04-18:21",
+        score: {
+          pro: 76,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "16:23",
+              role: "Compressor analogy",
+              words:
+                "Bertuzzi says inferring pain and pleasure serve biological goals is like assuming a car compressor serves propulsion.",
+              score: 76,
+              critique:
+                "Bertuzzi's compressor analogy is a legitimate check on overconfident induction. Not every part of a system must serve the same goal as the other parts, and pain and pleasure have moral significance that ordinary biological organs do not. That weakens any claim that naturalism simply entails their biological orientation. The weakness is that Schieber only needs comparative expectation, not entailment. In organisms shaped by survival and reproduction, it is hardly arbitrary to expect motivational states to track survival-relevant stimuli. The analogy also chooses a known counterexample from an engineered system, which may be less parallel to evolved organisms. The score is solid because it identifies a possible inferential gap, but it does not defeat the comparative case.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The reply can shift from probabilistic biological expectation to a stronger entailment standard."
+                }
+              ]
+            },
+            con: {
+              time: "02:04",
+              role: "Biological utility",
+              words:
+                "Schieber argues pain and pleasure function as internal signposts for survival and reproduction, just as naturalism predicts.",
+              score: 85,
+              critique:
+                "Schieber's pain-and-pleasure argument is one of his best opening moves. Pain and pleasure are morally weighty experiences, yet they are distributed in ways that closely track biological usefulness: injury hurts, food and sex often please, and pain-insensitivity disorders reduce survival. That fit is expected if sentient systems arise through indifferent biological processes. Theism, by contrast, seems to give more reason to expect morally calibrated sensations. The weakness is that Schieber's naturalism needs enough background evolutionary information to generate the prediction, and Bertuzzi presses that background issue repeatedly. Still, the evidential contrast is intuitive and focused. The score is high because the argument connects a concrete datum to a clear comparative expectation.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Languishing And Horror",
+        timebox: "05:25-18:18",
+        score: {
+          pro: 74,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "17:03",
+              role: "Background challenge",
+              words:
+                "Bertuzzi says if evolutionary competition is background knowledge, every hypothesis predicts the data; if not, naturalism alone does not.",
+              score: 74,
+              critique:
+                "Bertuzzi's background-knowledge challenge is technically relevant. Bayesian arguments are sensitive to what gets placed in the background, and he is right that adding enough detailed evolutionary facts can make many hypotheses predict the same observations. That is a real methodological caution. The weakness is that his attack can make naturalism look artificially empty. Schieber is not appealing to bare non-theism alone; he is comparing theism with a naturalistic picture in which physical and biological processes have priority. Once evolution and finite resources are admitted, languishing and horrendous misfortune seem less surprising on naturalism than on a loving omnipotent creator. The score is mixed-solid because the methodological issue matters, but the rebuttal overstates its neutralizing force.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Naturalism is pressed as bare and explanatorily empty while theism is allowed richer auxiliary structure later."
+                }
+              ]
+            },
+            con: {
+              time: "05:25",
+              role: "Languishing argument",
+              words:
+                "Schieber says finite resources, competition, predation, disease, and horrendous evils are expected under indifferent natural processes.",
+              score: 86,
+              critique:
+                "Schieber's flourishing-and-horror case is strong because it does not rest on one shocking anecdote. He connects biological scarcity, competition, predation, disease, and human cruelty to a broader claim about what indifferent natural processes would predict. His appeal to horrendous evils adds a distinct layer: some suffering appears to threaten whether a person's life can be a great good to them overall. The weakness is that the argument depends on expectations about what God would permit, and theists can challenge those expectations through soul-building, afterlife, or skeptical theism. Still, the data are central and morally serious. The score is high because Schieber makes the comparative burden concrete and cumulative.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Soul Building",
+        timebox: "18:22-46:16",
+        score: {
+          pro: 79,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "18:22",
+              role: "Virtue theodicy",
+              words:
+                "Bertuzzi says suffering enables love-manifesting virtues such as self-sacrifice, courage, compassion, empathy, forgiveness, and mercy.",
+              score: 80,
+              critique:
+                "Bertuzzi's soul-building case is the debate's strongest positive theodicy. He gives concrete saints and martyrs rather than abstract slogans, and he clarifies that sophisticated soul-building is not mere compensation but integration into a morally valuable whole. That makes the reply more serious than a simple goods-outweigh-bads calculation. The weakness is scope. His examples are human, voluntary, and often religiously interpreted, while Schieber's data include biological pain, vast animal languishing, and horrendous soul-crushing events. Extending the theory to all these cases requires much more than inspirational examples. The score is strong because the theodicy has recognizable depth, but it does not cover the full evidential range.",
+              tags: []
+            },
+            con: {
+              time: "31:30",
+              role: "Fit objection",
+              words:
+                "Schieber says soul-building is silent on biological pain, late human emergence, animal suffering, and soul-destroying horrendous evils.",
+              score: 85,
+              critique:
+                "Schieber's fit objection is very effective because he tests soul-building against each of his three data sets instead of dismissing it globally. Biological pain appears morally random rather than virtue-tuned; human soul-building covers only a sliver of sentient history; dreams, visions, or religious experiences might transform character without real horror; and horrendous evils can destroy rather than build souls. The weakness is that some claims, especially about dreams or unavoidable alternatives, are underdeveloped and invite Bertuzzi's pushback. Still, the objection exposes the theodicy's coverage problem. The score is high because Schieber keeps the analysis aligned with his original evidence rather than letting narrative examples carry the whole debate.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "43:06",
+              role: "Animal extension",
+              words:
+                "Bertuzzi extends soul-building to animals by suggesting sentient non-human creatures could receive rational faculties at the eschaton.",
+              score: 76,
+              critique:
+                "Bertuzzi's animal extension is creative and it directly addresses a gap Schieber pressed. If sentient animals are morally significant, then a theist can try to defeat their suffering through eschatological transformation or fulfillment. That is at least responsive. The weakness is that the proposal is highly speculative. Giving animals rational faculties at the eschaton is not shown to be probable on theism, much less enough to make evolutionary animal suffering no evidence against theism. It also risks feeling invented to save the argument after the data arrive. The score is solid because it identifies a possible route, but the evidential weight is thin without independent support.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "A possible animal eschaton is used to blunt suffering evidence without independent support in the exchange."
+                }
+              ]
+            },
+            con: {
+              time: "51:51",
+              role: "Compensation objection",
+              words:
+                "Schieber says later heaven or a grand story may compensate victims, but does not justify permitting the harm first.",
+              score: 86,
+              critique:
+                "Schieber's compensation objection is sharp and morally clarifying. He distinguishes making something up to a victim from having a justification for allowing the harm in the first place. His parent-neglect analogy makes the problem concrete: later growth or narrative meaning does not automatically make prior preventable harm loving or responsible. This directly pressures Bertuzzi's integration and afterlife strategy. The weakness is that the analogy assumes God relates to creatures enough like a negligent parent for the moral transfer to hold, which theists may contest by appealing to ultimate sovereignty or eschatological transformation. Even so, the distinction between compensation and justification is crucial. The score is high because it targets the theodicy's central moral bridge.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Skeptical Theism",
+        timebox: "23:34-56:33",
+        score: {
+          pro: 80,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "23:34",
+              role: "Agnosticism shield",
+              words:
+                "Bertuzzi says the epistemic chasm between humans and God means we should be agnostic about whether theism predicts suffering.",
+              score: 80,
+              critique:
+                "Bertuzzi's skeptical-theist argument is disciplined in one important respect: he frames it as agnosticism, not as a direct appeal to hidden goods. If human beings lack access to the full space of possible goods, evils, and connections among them, then confident claims about what God would permit become fragile. His extraterrestrial and demographic analogies help explain why a limited sample may not justify strong probability judgments. The weakness is that the strategy also weakens positive theistic prediction. If we cannot judge how God would handle evil, it is harder to claim theism has no evidential problem rather than merely an unknown probability. The score is strong because the epistemic caution is real, but it comes with costs.",
+              tags: []
+            },
+            con: {
+              time: "36:49",
+              role: "Unknowns symmetry",
+              words:
+                "Schieber says unknown justifying goods may be matched by unknown reasons against permitting the same evils, so known reasons break the tie.",
+              score: 82,
+              critique:
+                "Schieber's unknowns-symmetry reply is a good initial answer to skeptical theism. If there may be unseen goods favoring God's permission of evil, there may also be unseen goods or reasons favoring prevention. Unless the theist has an independent reason to privilege favorable unknowns, the unknown pool should not automatically rescue theism. That returns attention to known data: suffering is bad, and an unsurpassably empathic God would seem opposed to it. The weakness is that Bertuzzi later presses whether this misunderstands skeptical-theist agnosticism. A lack of representative data may block both favorable and unfavorable estimates, not simply cancel them. The score is strong because it identifies a symmetry concern, but it does not fully defeat agnosticism.",
+              tags: []
+            }
+          },
+          {
+            pro: {
+              time: "46:28",
+              role: "Sample analogy",
+              words:
+                "Bertuzzi says Schieber's reply is like using one town's demographics after admitting the sample may be unrepresentative.",
+              score: 81,
+              critique:
+                "Bertuzzi's demographic analogy improves the skeptical-theist defense. If the very reason for agnosticism is that one's sample may be unrepresentative, then simply saying unknowns cancel and known data decide can be too quick. The analogy correctly highlights the difference between weak evidence and no reliable estimate. The weakness is that God's moral character is not a random world-population statistic. Theism itself makes substantive claims about unsurpassable goodness, empathy, power, and purpose, so Schieber can argue that the hypothesis supplies expectations even when our creaturely sample is limited. The score is strong because the analogy exposes a real probability issue, but it does not erase the moral content of theism.",
+              tags: []
+            },
+            con: {
+              time: "53:40",
+              role: "Relative likelihood",
+              words:
+                "Schieber says even limited data can favor the hypothesis that predicts it over one that remains agnostic.",
+              score: 85,
+              critique:
+                "Schieber's closing response to skeptical theism is strong because it returns to relative likelihood. Even if a small sample does not justify high confidence, it can still favor a hypothesis that makes the sample more expected over a hypothesis that is agnostic about it. His revised demographic analogy explains how limited evidence can have some evidential force without being decisive. The weakness is that he still needs to show naturalism positively predicts the exact evil data better than theism, and Bertuzzi denies that earlier. But if Schieber's three data arguments stand, skeptical theism cannot simply make the evidence disappear. The score is high because it preserves probabilistic evidence from an all-or-nothing agnosticism.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Fine-Tuning Evil",
+        timebox: "22:47-1:02:52",
+        score: {
+          pro: 73,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "22:47",
+              role: "Badness ensemble",
+              words:
+                "Bertuzzi says evil may be fine-tuned within the narrow range needed for the highest virtues, confirming theism over naturalism.",
+              score: 73,
+              critique:
+                "Bertuzzi's fine-tuning-from-evil move is bold and interesting. Instead of only defending against evil evidence, he argues that the range of badness compatible with saint-making virtues may itself be narrow and therefore expected on theism. That gives the pro side an offensive argument. The weakness is that the claim is almost entirely programmatic in this debate. We are not shown how to identify the saint-fostering range, why this world's distribution lies inside it, or why naturalism would be unlikely to land there. Without those details, the argument risks converting any amount of evil into confirming evidence. The score is mixed-solid because the idea is imaginative, but underdeveloped.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The range of evil compatible with saint-making is invoked without clear independent criteria for what would fall outside it."
+                }
+              ]
+            },
+            con: {
+              time: "53:07",
+              role: "Compatibility reply",
+              words:
+                "Schieber says the fine-tuning-from-evil proposal is compatible with his arguments and so does not meet Bertuzzi's burden.",
+              score: 82,
+              critique:
+                "Schieber's reply to fine-tuning evil is restrained but effective. He notes that even if Bertuzzi's proposal has some force, it would at most add a competing theistic consideration; it would not show that Schieber's evil data have no evidential force. That is important because the debate burden is unusually strong: Bertuzzi must deny evidence against theism, not merely introduce evidence for theism. The weakness is that Schieber does not deeply analyze the fine-tuning proposal, perhaps because it is too sketchy in the exchange. If developed, it might affect total evidence more than he grants. The score is strong because he keeps the burden fixed, but the reply is more procedural than substantive.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Closing Burdens",
+        timebox: "48:04-1:04:35",
+        score: {
+          pro: 76,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:01:28",
+              role: "Straw-man charge",
+              words:
+                "Bertuzzi says Schieber attacked mere compensation, while his soul-building view integrates evil into a morally valuable whole.",
+              score: 76,
+              critique:
+                "Bertuzzi's closing burden response has a fair point. His soul-building account is not merely that victims receive enough later happiness to outweigh pain; it claims suffering can be defeated by being integrated into a redeemed whole that sufferers can embrace. If Schieber treats the view as simple compensation, he misses the stronger version. The weakness is that integration still needs justification. Calling a whole morally valuable does not show why a loving God may permit preventable horrors, nor why victims should have to embrace them. The afterlife claim also becomes heavy: Bertuzzi says it is a logical concomitant of theism with suffering, but that needs argument. The score is solid because he corrects a simplification, but the deeper moral bridge remains contested.",
+              tags: []
+            },
+            con: {
+              time: "48:04",
+              role: "Final synthesis",
+              words:
+                "Schieber says Bertuzzi has not shown naturalism fails to predict the data or that soul-building and skeptical theism neutralize it.",
+              score: 84,
+              critique:
+                "Schieber's closing synthesis is strong because it re-centers the debate on Bertuzzi's actual burden. The question is not whether every skeptical reply has been destroyed, but whether any facts about suffering count as evidence against theism. Schieber argues that biological pain, languishing, and horrendous evils remain at least less surprising on naturalism than on traditional theism. He also presses two important distinctions: biological versus moral orientation, and compensation versus justification. The weakness is that he sometimes treats his background assumptions as natural enough that Bertuzzi's Bayesian worry receives less sympathy than it deserves. Still, his final summary preserves the central comparative case. The score is high because it is focused, cumulative, and burden-aware.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 77,
+        strengths: [
+          "Bertuzzi gave a clear taxonomy of theistic options and did not rely on a single easy answer to evil.",
+          "His skeptical-theist material raised a serious probability question about limited human samples and divine reasons.",
+          "His soul-building account was more sophisticated than mere compensation, emphasizing integration, virtue, and eschatological defeat."
+        ],
+        blunders: [
+          {
+            text:
+              "His critique of naturalism sometimes shifted from comparative expectation to a stronger demand that naturalism alone entail the data.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His animal eschaton and badness-ensemble arguments were too speculative for the evidential work they needed to do.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His skeptical-theist strategy protected theism from negative prediction while preserving richer theistic auxiliaries elsewhere.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Schieber clearly framed the burden as any evidential force from suffering, not a total disproof of God.",
+          "His three-tier Draperian case gave independent pressure from biological utility, sentient languishing, and horrendous evils.",
+          "His rebuttals kept testing whether Bertuzzi's replies actually applied to each data set rather than to evil in the abstract."
+        ],
+        blunders: [
+          {
+            text:
+              "His biological-utility argument depended on background evolutionary expectations that needed more explicit defense against Bertuzzi's parsing objection.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His dreams-and-visions alternative to real suffering was suggestive but not developed enough to show equivalent soul-building power.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His parent-neglect analogy may understate how much theism's creator-creature and eschatological claims change the moral comparison.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
