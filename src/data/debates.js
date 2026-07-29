@@ -43100,5 +43100,383 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "mclatchie-oconnor-christianity-true-2019",
+    number: "120",
+    title: "Jonathan McLatchie vs Alex O'Connor: Is Christianity True?",
+    label: "Resurrection and biblical morality",
+    date: "2026-07-29",
+    duration: "1 hr 19 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=woqy13ZkeqM",
+    motion:
+      "Is Christianity true, especially in light of resurrection evidence, Gospel reliability, and the moral authority of biblical teaching?",
+    summary:
+      "McLatchie argues that public evidence for the resurrection and Scripture supports Christian faith; O'Connor argues that the sources are too uncertain and biblical morality undermines Christian authority.",
+    sourceNote:
+      "Based on YouTube English-original captions for the Alex O'Connor upload and its chapter markers. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text:
+          "I am a Christian because I am persuaded by the public evidence",
+        context:
+          "McLatchie frames his Christianity as evidential rather than fideistic, with the resurrection as the central public test case."
+      },
+      con: {
+        text: "the resurrection does not automatically prove divinity",
+        context:
+          "O'Connor separates historical resurrection claims from the further claims that Jesus is divine and that biblical morality should be followed."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian evidentialism",
+        speaker: "Jonathan McLatchie",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical critique",
+        speaker: "Alex O'Connor",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 76,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Opening Burdens",
+        timebox: "04:03-16:01",
+        score: {
+          pro: 80,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "05:11",
+              role: "Public evidence frame",
+              words:
+                "McLatchie says Christianity should be assessed through public evidence, and that even a low-prior miracle claim can be confirmed with enough evidence.",
+              score: 80,
+              critique:
+                "McLatchie's opening burden is clear and philosophically disciplined. He does not ask the audience to accept Christianity by private experience or institutional authority; he proposes a public-evidence test and explicitly frames miracle reasoning in probabilistic terms. That is a strong start because it identifies what kind of support the resurrection argument must supply. The weakness is that Bayes' theorem does little work until the priors and likelihoods are responsibly estimated, and McLatchie has only minutes to justify those inputs. Saying a low-prior explanation can in principle be confirmed is true, but it does not show that this case reaches that threshold. The score is strong because the method is serious, but the live argument is still promissory.",
+              tags: []
+            },
+            con: {
+              time: "14:34",
+              role: "Evidential threshold",
+              words:
+                "O'Connor says the resurrection case rests on biblical texts written later, so the extraordinary claim needs stronger support than ordinary history.",
+              score: 83,
+              critique:
+                "O'Connor's opening reply is strong because it demands claim-proportional evidence. He distinguishes ordinary historical claims, such as Jesus existing, from the much stronger claim that a dead man rose bodily and thereby grounds Christianity. That keeps the debate from sliding into a vague 'ancient sources exist' standard. He also identifies the narrow evidential base: Gospels and epistles, with disputed external support. The weakness is that he initially compresses a large scholarly landscape into the phrase 'biblical evidence,' which can make all internal testimony sound equally late or unreliable. Still, the burden challenge is central and fair. The score is high because it asks the right question: what would actually be enough?",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection Testimony",
+        timebox: "08:08-23:09",
+        score: {
+          pro: 80,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "08:08",
+              role: "Sincerity and appearances",
+              words:
+                "McLatchie appeals to non-Christian scholars, 1 Corinthians 15, group appearances, physical contact, and martyrdom to argue sincere eyewitness belief.",
+              score: 80,
+              critique:
+                "McLatchie's resurrection case has real cumulative shape. He combines scholarly concessions that disciples experienced something, the early creedal material in 1 Corinthians 15, the Gospel pattern of multisensory appearances, and the costly sincerity of Peter and James. That is stronger than merely saying 'the Bible says so,' because he tries to explain why the resurrection belief arose and persisted. The weakness is that several links remain disputed: whether the detailed Gospel appearances reliably reach eyewitnesses, how strong the martyrdom evidence is, and whether sincerity establishes the content of the experience. Alternative explanations are narrowed but not exhausted. The score is strong because the case is organized and relevant, but not decisive.",
+              tags: []
+            },
+            con: {
+              time: "16:01",
+              role: "Source reliability challenge",
+              words:
+                "O'Connor argues that Gospel contradictions, mythic shaping, and weak martyrdom evidence make resurrection testimony too unstable for the claim.",
+              score: 84,
+              critique:
+                "O'Connor's source challenge is powerful because he attacks the reliability of the specific evidential bridge McLatchie needs. If the resurrection case depends on later texts preserving detailed appearances, then contradictions, literary shaping, and unclear martyrdom evidence directly matter. His Alfred Hitchcock analogy usefully tests whether the audience would accept similar testimony for a non-Christian resurrection claim. The weakness is that several examples are uneven. The women-at-the-tomb and Lazarus points require more precision than he initially gives, and mythic parallel claims need careful sourcing. But the larger argument does not depend on each example succeeding. The score is high because he keeps the evidential standard proportionate to the extraordinary claim.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Gospel Reliability",
+        timebox: "25:48-35:44",
+        score: {
+          pro: 82,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "25:48",
+              role: "Contradiction rebuttal",
+              words:
+                "McLatchie says John's plural 'we' fits multiple women, single-source earthquake reports are not contradictions, and undesigned coincidences support historicity.",
+              score: 82,
+              critique:
+                "McLatchie's live rebuttal is one of his best moments. He handles the women-at-the-tomb objection by pointing to Mary's plural 'we' in John, which directly weakens the claim that John excludes other women. He also correctly notes that silence in other sources is not automatically contradiction, and the Philip-Bethsaida undesigned coincidence gives a concrete example of interlocking detail. The weakness is that these wins mostly defend general Gospel credibility, not the resurrection itself. A source can contain historical texture and still embellish a miracle. Even so, McLatchie improves his position by engaging specific objections instead of merely appealing to tradition. The score is high because several local rebuttals land.",
+              tags: []
+            },
+            con: {
+              time: "28:11",
+              role: "Reasonableness standard",
+              words:
+                "O'Connor concedes some points may not strictly contradict, but says sparse or selective reporting remains weak evidence for a resurrection.",
+              score: 78,
+              critique:
+                "O'Connor's reply is fair where he shifts from strict contradiction to reasonableness. He does not need every example to prove falsehood; he needs to show that the source base is not strong enough for a resurrection inference. That is a more defensible standard, and he openly allows that one women-count point may be less decisive. The weakness is that he sometimes retreats after overstating the initial objection. If a point is introduced as a contradiction and then becomes merely a detail one might expect elsewhere, McLatchie can claim a local victory. The score is solid because O'Connor's broad threshold argument survives, but the specific cross-exam examples lose some force.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Prophecy And Priors",
+        timebox: "35:02-38:51",
+        score: {
+          pro: 77,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "35:02",
+              role: "Theological backdrop",
+              words:
+                "McLatchie says Jesus is not like Alfred Hitchcock because Hebrew Scripture and messianic expectation raise the prior probability of resurrection.",
+              score: 77,
+              critique:
+                "McLatchie's theological-backdrop move is relevant and partly successful. A resurrection claim attached to Jesus is not evidentially identical to a random celebrity rising, because it comes within a Jewish messianic, prophetic, and theological narrative. That can reasonably affect prior expectations if those background claims are independently supported. The weakness is that independence is exactly the contested point. If New Testament authors shaped stories to match Scripture, or if Christian readings of Hebrew texts are disputed, then the backdrop may be evidence partly manufactured by the tradition under examination. The move risks leaning on the conclusion it is meant to establish. The score is solid-strong because context matters, but the circularity concern is real.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The resurrection prior is raised by a Christian reading of Scripture before that reading is independently secured."
+                }
+              ]
+            },
+            con: {
+              time: "35:52",
+              role: "Circularity warning",
+              words:
+                "O'Connor replies that Bible-confirming-Bible is not enough, and prophecy stories may have been shaped by translation or expectation.",
+              score: 82,
+              critique:
+                "O'Connor's circularity warning is strong because it targets a common apologetic shortcut. If the New Testament both reports the events and interprets them as fulfilling earlier Scripture, then fulfillment cannot simply be treated as independent corroboration. His virgin-birth example, based on disputed translation and possible narrative shaping, gives the concern a concrete mechanism. The weakness is that he sketches the example quickly and does not prove that the resurrection traditions were similarly invented to fit prophecy. Some fulfillment arguments may have more historical independence than others. Still, the methodological warning is important. The score is high because it blocks an easy inflation of prior probability without dismissing all contextual evidence.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral Authority",
+        timebox: "39:01-47:58",
+        score: {
+          pro: 70,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "39:47",
+              role: "Divine character defense",
+              words:
+                "McLatchie declines the school-shooting hypothetical, says God would not command it, and grounds morality in God's character, conscience, and Scripture.",
+              score: 70,
+              critique:
+                "McLatchie's moral-authority answer preserves orthodox theism: God is just, God is good, and divine commands must be consistent with divine character. That avoids a crude voluntarism where any command becomes good merely because it is commanded. His appeal to conscience and Scripture also explains why he does not treat moral knowledge as only arbitrary decree. The weakness is that refusing the hypothetical leaves O'Connor's dilemma underanswered. If Scripture contains commands or permissions that appear immoral, the audience needs a principled way to tell whether conscience corrects interpretation or must submit to authority. McLatchie says the bar for recognizing a divine command would be high, but that does not solve the textual cases. The score is mixed-solid.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The impossible-command hypothetical is ruled out while troubling biblical commands still receive protected authority."
+                }
+              ]
+            },
+            con: {
+              time: "39:47",
+              role: "Moral dilemma",
+              words:
+                "O'Connor argues that refusing the hypothetical exposes a dilemma: obey divine commands that appear immoral or appeal to a standard beyond command.",
+              score: 87,
+              critique:
+                "O'Connor's moral dilemma is a sharp pivot from historicity to authority. He does not merely ask whether God exists; he asks why one should trust a religious moral code when it appears to license what conscience condemns. The school-shooting hypothetical is intentionally extreme, but it cleanly separates command from moral recognition: if believers would refuse such a command, then they are using some evaluative standard beyond bare command. The weakness is that the hypothetical can be too alien to McLatchie's view, since classical theism denies that God could command evil. The stronger version comes through later textual examples. Still, the score is very high because the dilemma exposes the pressure point.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Slavery And Violence",
+        timebox: "48:07-54:22",
+        score: {
+          pro: 64,
+          con: 90
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "47:07",
+              role: "Ancient-context reply",
+              words:
+                "McLatchie says Hebrew slavery must be read as ancient debt servitude with protections, but admits Numbers 31 is a difficult text.",
+              score: 64,
+              critique:
+                "McLatchie's slavery reply has the right first instinct: context matters, and ancient Hebrew servitude is not identical to modern racialized chattel slavery. He also cites protections for bodily injury and eventually admits that Numbers 31 is genuinely difficult. That honesty prevents the answer from becoming glib. The weakness is severe, though. Contextualizing servitude does not morally justify beating a slave with a rod, treating a person as property, or preserving virgin captives after slaughter. When pressed for moral judgment, McLatchie repeatedly explains the system rather than clearly condemning the relevant permission. The score is low-mixed because the contextual distinctions are real, but they do not carry the moral burden.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Biblical slavery is insulated by contextual distinctions that do not answer the specific permission to beat or possess people."
+                }
+              ]
+            },
+            con: {
+              time: "48:07",
+              role: "Textual moral indictment",
+              words:
+                "O'Connor quotes Exodus 21 on slave beating and Numbers 31 on virgin captives to argue biblical morality is morally disqualifying.",
+              score: 90,
+              critique:
+                "O'Connor's textual moral indictment is the strongest section of the debate. He moves from abstract hypotheticals to concrete passages and asks for a moral judgment, not merely a description of ancient context. Exodus 21 lets him press whether non-lethal beating should ever be permitted; Numbers 31 lets him press whether divine moral authority can survive commands involving slaughter and captive virgin girls. The strength is that McLatchie ultimately concedes the latter text is difficult and has no satisfying live answer. The weakness is that O'Connor's inference from moral difficulty to Christianity's falsity still needs a full account of revelation, accommodation, and textual corruption. But locally, the exchange is decisive. The score is exceptional.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Closing And Faith",
+        timebox: "54:45-1:17:52",
+        score: {
+          pro: 76,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "54:45",
+              role: "Cumulative closing",
+              words:
+                "McLatchie closes that resurrection evidence can outweigh hard objections, and later says biblical faith is a response to evidence already received.",
+              score: 76,
+              critique:
+                "McLatchie's closing is coherent with his opening. He returns to the resurrection as the central vindication of Jesus and argues that once the gospel is well supported, unresolved difficulties need not defeat it. His Q&A clarification that biblical faith is not belief without evidence, but trust based on evidence already received, is also a helpful correction of a common caricature. The weakness is that the closing largely asks the resurrection case to bear the moral objections rather than answering them. Saying evidence is overwhelming can justify patience with some puzzles, but it cannot make every moral problem secondary. The score is solid because the cumulative strategy is intelligible, but the hardest objections remain under-answered.",
+              tags: []
+            },
+            con: {
+              time: "59:55",
+              role: "Authority rejection",
+              words:
+                "O'Connor closes that even granted resurrection claims would not make him Christian, because biblical authority still looks morally ugly and evidentially unstable.",
+              score: 85,
+              critique:
+                "O'Connor's closing is forceful because it distinguishes evidence for an event from allegiance to a moral authority. Even if one granted an empty tomb or postmortem appearances, he says, that would not automatically make the biblical God worthy of worship or the Bible morally trustworthy. This is responsive to the debate's full title, not merely to resurrection apologetics. The weakness is that the rhetoric becomes prosecutorial, especially in the 'ugly Creator' language, and that can obscure the philosophical question of whether moral outrage itself needs grounding. Still, the closing captures why the moral section changed the debate. The score is very high because it lands on the live unresolved burden.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 76,
+        strengths: [
+          "McLatchie gave a clear public-evidence framework and built a cumulative resurrection case rather than asking for blind faith.",
+          "He handled several Gospel-detail objections well, especially the plural 'we' in John and the broader point about undesigned coincidences.",
+          "He was candid that Numbers 31 is a difficult text rather than pretending every biblical moral problem has an easy answer."
+        ],
+        blunders: [
+          {
+            text:
+              "His theological backdrop sometimes raised the resurrection prior by leaning on the Christian interpretation that the resurrection was supposed to establish.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His slavery and war replies used contextual distinctions that did not directly justify the permissions O'Connor quoted.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His appeal to sincerity and martyrdom sometimes slid from witnesses being sincere to the resurrection content being true.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "O'Connor kept the evidential threshold proportional to the extraordinary resurrection and divinity claims.",
+          "His moral cross-examination forced the debate from abstract command theory into concrete passages about slavery and wartime captives.",
+          "He separated resurrection, divinity, and moral authority, preventing one partially successful argument from carrying the whole Christian worldview."
+        ],
+        blunders: [
+          {
+            text:
+              "Some alleged Gospel contradictions, especially around Lazarus and the women at the tomb, were stated more strongly than the evidence warranted.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "The Alfred Hitchcock analogy risked treating Jesus as a generic resurrection claimant while underweighting the role of theological context.",
+            links: [
+              {
+                label: "Base-rate neglect",
+                url: bias("base-rate-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His moral critique was stronger as a defeater for biblical authority than as a complete positive metaethical account.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
