@@ -44633,5 +44633,374 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "harris-peterson-god-atheism-bible-2018",
+    number: "124",
+    title: "Sam Harris vs Jordan Peterson: God, Atheism, The Bible, Jesus",
+    label: "Religion, myth, and moral truth",
+    date: "2026-07-29",
+    duration: "2 hr 06 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=jey_CzIOfYE",
+    motion:
+      "Can religious stories, God-language, and biblical tradition ground moral truth and meaning, or should moral realism, well-being, and open inquiry replace dogmatic religious frameworks?",
+    summary:
+      "Peterson argues that religious stories and God-language encode evolved moral heuristics and truth-seeking structures; Harris argues that dogma, revelation claims, and elastic God-language obstruct clearer secular moral realism.",
+    sourceNote:
+      "Based on YouTube English-original automatic captions for the Pangburn upload and its chapter markers. This is a moderated live discussion rather than a strict formal debate; captions are lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "I act as if he exists",
+        context:
+          "Peterson frames God less as a simple supernatural proposition than as the enacted highest value, truthful speech, conscience, and the long-run structure of moral selection."
+      },
+      con: {
+        text: "the worst possible misery for everyone is bad",
+        context:
+          "Harris grounds secular moral realism in conscious well-being, the avoidance of maximal suffering, and open correction of dogmatic errors."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Religious pragmatism",
+        speaker: "Jordan Peterson",
+        color: "teal"
+      },
+      con: {
+        name: "Secular moral realism",
+        speaker: "Sam Harris",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 80,
+      con: 87
+    },
+    sections: [
+      {
+        title: "Moral Common Ground",
+        timebox: "06:14-12:06",
+        score: {
+          pro: 87,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "06:27",
+              role: "Steelman opening",
+              words:
+                "Peterson starts by restating Harris's project: ground ethics solidly, avoid religious fundamentalism and moral relativism, and reduce needless suffering.",
+              score: 87,
+              critique:
+                "Peterson's opening is unusually strong because he begins by steelmanning Harris rather than attacking a caricature. He identifies the two catastrophes Harris wants to avoid, religiously inflected dogmatism and moral relativism, then maps them onto his own order-chaos vocabulary. That creates genuine common ground and prevents the conversation from collapsing into tribal theater. The weakness is that Peterson's translation already starts bending the topic toward his preferred symbolic framework. 'Pathology of order' and 'pathology of chaos' may illuminate, but they also move away from Harris's narrower evidential concerns. The score is high because the charitable setup is excellent, with only a mild concern about agenda framing.",
+              tags: []
+            },
+            con: {
+              time: "08:51",
+              role: "Well-being realism",
+              words:
+                "Harris says well-being names the positive side of conscious life, and moral realism means there are right and wrong answers about human value.",
+              score: 86,
+              critique:
+                "Harris's first substantive move is clean and constructive. He accepts Peterson's summary, then clarifies that well-being is meant as an elastic term for whatever conscious life can become at its best, not a shallow pleasure metric. He also states his moral realism plainly: some answers about value are better or worse, and people can be wrong about what improves life. That is directly responsive to relativism. The weakness is that 'well-being' remains broad enough to invite Peterson's later challenge about interpretive structures and stories. The score is high because Harris defines the secular project well, though the grounding question is only partly answered at this stage.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Dogma And Totalitarianism",
+        timebox: "12:18-31:51",
+        score: {
+          pro: 82,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "13:11",
+              role: "Common dogmatism",
+              words:
+                "Peterson argues that secular and religious totalitarianisms share dogmatic closure, so belief in God is not the distinctive source of atrocity.",
+              score: 82,
+              critique:
+                "Peterson's dogmatism point is strong because it blocks a lazy religion-causes-violence inference. Stalinism, Nazism, nationalism, racism, and tribal aggression can all become closed systems that punish dissent, so the relevant danger cannot be belief in God alone. His later chimpanzee example also usefully pushes violence deeper than ideology into primate coalition psychology. The weakness is that he sometimes uses the broader category to soften religion's distinctive risks before Harris has finished specifying them. If afterlife rewards, divine authorization, and immutable scripture change the motivational structure, 'dogmatism generally' may be too blunt. The score is strong because the category correction matters, but it does not neutralize the religious subset.",
+              tags: []
+            },
+            con: {
+              time: "24:10",
+              role: "Religious amplifier",
+              words:
+                "Harris grants tribal violence is not unique to religion, but says supernatural rewards, divine commands, and uneditable doctrines amplify ordinary dogmatism.",
+              score: 88,
+              critique:
+                "Harris's reply is powerful because it concedes the obvious breadth of dogmatism without losing the specific worry about religion. He does not claim that all violence is religious, or that atheism explains Stalinism. Instead, he argues that religious doctrines can add special accelerants: salvation after death, divine command, blasphemy, apostasy, and texts treated as final. The Isis examples are meant to show sincerely believed ideas doing moral damage, not merely providing cover for preexisting brutality. The weakness is that the strongest examples come from extreme forms, especially Islamism, so extrapolation to religion as such needs care. Still, the response is clear, relevant, and well disciplined.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Scripture And Slavery",
+        timebox: "26:40-45:42",
+        score: {
+          pro: 74,
+          con: 90
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "37:50",
+              role: "Narrative context",
+              words:
+                "Peterson says complex religious texts must be read as developmental narratives, where sentences, laws, and episodes are conditioned by the whole canon.",
+              score: 74,
+              critique:
+                "Peterson's narrative-context answer has a legitimate hermeneutic point. Complex texts are not lists of isolated propositions, and later material can reframe earlier material. That matters especially for traditions that read the Christian Bible canonically, with New Testament themes reshaping older law and prophecy. The weakness is that Harris chooses cases where context has to work very hard: slavery, sexual violence, stoning, and laws of war. Saying the beginning must be read in light of the end does not show that the end clearly condemns every earlier moral horror. The score is solid but lower because Peterson's interpretive sophistication risks looking like rescue work after the text has become morally embarrassing.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Canon-wide context is invoked to soften plain harmful passages without a clear rule for when context may override them."
+                }
+              ]
+            },
+            con: {
+              time: "27:47",
+              role: "Plain-text burden",
+              words:
+                "Harris says some scriptural commands are not hard to parse: slavery, stoning, and violent punishments remain morally unacceptable on an honest reading.",
+              score: 90,
+              critique:
+                "Harris's scriptural critique is the strongest section of the night. He keeps asking whether some passages are plainly morally unacceptable by modern standards, and his examples are concrete: cutting off thieves' hands, stoning non-virgins, slavery, sex slavery, and laws of war. The force comes from refusing to let interpretive sophistication erase the first-order moral data. He also explains why fundamentalists have an advantage: literal readings sometimes really are the most straightforward readings. The weakness is that he can understate the possibility of intra-traditional moral development, especially abolitionist Christianity. But the central burden lands hard. The score is exceptional because Peterson never fully answers the plain-text problem.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Prophecy And Psychology",
+        timebox: "43:15-53:57",
+        score: {
+          pro: 82,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "46:51",
+              role: "Psychological revelation",
+              words:
+                "Peterson reads Revelation psychologically: apocalypse names recurring collapse, and the hero appears through truthful speech under chaotic conditions.",
+              score: 82,
+              critique:
+                "Peterson's psychological reading of Revelation is one of his more persuasive positive moves. He does not defend every apocalyptic claim literally; he extracts a pattern about collapse, the birth of the hero, and truthful speech as a redemptive response to chaos. That connects his religious vocabulary to moral courage and open discourse, which Harris already values. The weakness is the familiar one: a psychologically fruitful reading does not vindicate revelation as revelation. It may show that a text is deep, reusable, or symbolically powerful without showing that its divine claims are true or safe. The score is strong because the interpretation is insightful, but bounded by its evidential ambition.",
+              tags: []
+            },
+            con: {
+              time: "48:40",
+              role: "Interpretive freedom",
+              words:
+                "Harris says one can draw psychological meaning from almost any story, but the farther one moves from the literal text, the less constrained the interpretation becomes.",
+              score: 84,
+              critique:
+                "Harris's interpretive objection is well placed. He grants that stories can communicate useful ideas, but warns that the more one abandons literal meaning, the easier it becomes to project whatever psychological insight one already favors. His tennis-without-a-net phrase captures the problem: if Revelation can become truthful speech, and violent law can become developmental context, the text may no longer discipline the interpreter. The weakness is that Harris sometimes treats interpretive plurality as almost fatal, when ordinary legal, literary, and moral reasoning also handle ambiguity without collapsing. The score is high because he identifies a real constraint problem, but not decisive because interpretation is not automatically arbitrary.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Facts Values Stories",
+        timebox: "54:12-1:14:17",
+        score: {
+          pro: 84,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "58:26",
+              role: "Story substrate",
+              words:
+                "Peterson argues that Harris's Moral Landscape uses a heaven-and-hell story, so facts require prior interpretive structures rather than yielding values directly.",
+              score: 84,
+              critique:
+                "Peterson's challenge to the Moral Landscape is substantive. He argues that Harris does not simply read values from facts; he begins with a structured contrast between horrible and good modes of life, which functions like a story or moral intuition. That pressure matters because Harris wants moral realism without revelation, but still needs a non-arbitrary bridge from conscious facts to values. Peterson's best point is that humans perceive facts through inherited interpretive structures, many of which are narrative or embodied. The weakness is that showing Harris uses moral intuitions does not show those intuitions are best understood as religious stories. The score is high because the grounding challenge is real and focused.",
+              tags: []
+            },
+            con: {
+              time: "1:04:21",
+              role: "Worst misery anchor",
+              words:
+                "Harris says if any value judgment is intelligible, the worst possible misery for every conscious mind is bad, and moral inquiry can proceed from that anchor.",
+              score: 88,
+              critique:
+                "Harris's worst-possible-misery anchor is philosophically efficient. It does not pretend to derive morality from nowhere; it identifies the point at which denying badness makes all further value language unintelligible. He also clarifies that his moral landscape includes intentions, relationships, compassion, and mental states, not just crude body counts. That answers Peterson's worry that secular consequentialism ignores malevolence. The weakness is that Harris still resists calling this a story, intuition, or a priori structure in the way Peterson wants, even though he admits foundational intuitions are doing work. The score is very high because the anchor is clear and resilient, but the metaethical labeling dispute remains unresolved.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Heuristics And Updating",
+        timebox: "1:14:17-1:23:12",
+        score: {
+          pro: 84,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:20:48",
+              role: "Adaptive stories",
+              words:
+                "Peterson says religious texts may carry practical value as evolved heuristics, but the updating process must outrank any fixed dogma.",
+              score: 84,
+              critique:
+                "Peterson's heuristic answer is strong because it becomes more testable than his looser symbolic claims. If religious stories help people navigate complexity, reduce suffering, and encode past adaptive lessons, then they may deserve respect even when not literally true. He also makes an important concession: inherited stories respond to past environments and must be subject to a higher updating process. That brings him closer to Harris's open inquiry ideal. The weakness is that the account can become unstable. If updating outranks dogma, then religious authority looks secondary; if dogma outranks updating, the earlier dangers return. The score is high because Peterson finds common ground, but his hierarchy remains fragile.",
+              tags: []
+            },
+            con: {
+              time: "1:16:07",
+              role: "Past utility limit",
+              words:
+                "Harris says useful religious heuristics would worry him less, but past functionality does not make a doctrine timeless or safe under new facts.",
+              score: 86,
+              critique:
+                "Harris's heuristic reply is strong because it grants the best version of Bret Weinstein's prompt and Peterson's adaptation story. If some religious practices actually improved well-being, he would worry less about them. But he then makes the key distinction: past usefulness is not timeless truth, and a heuristic that once helped can misfire under changed conditions. His examples about taboos, medicine, and social policy show why humans need reasons that track real variables, not merely inherited commands. The weakness is that he may underestimate how hard rational education alone is for behavior change, which Peterson presses with sexuality and pornography. The score is high because Harris keeps usefulness subordinate to truth-tracking.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "God And Atheism",
+        timebox: "1:23:29-2:06:00",
+        score: {
+          pro: 76,
+          con: 89
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:26:09",
+              role: "God as highest value",
+              words:
+                "Peterson defines God through truthful speech, conscience, the highest value, sacrifice, judgment, mercy, and selection across long timeframes.",
+              score: 76,
+              critique:
+                "Peterson's God definition is intellectually rich and connects many strands of his project: conscience, truthful speech, sacrifice, hierarchy, long-run selection, and the highest value that organizes action. It explains why he says he acts as if God exists rather than offering a simple creed. The weakness is that this richness creates a severe equivocation risk. Harris asks whether this is what religious believers usually mean by God, a prayer-hearing agent, or the resurrected Christ, and Peterson's answer remains elusive. A symbolic-functional God may be profound, but it does not answer the ordinary theism question. The score is mixed-positive because the synthesis is deep, yet dialectically evasive.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "God shifts between highest value, evolved moral selector, truthful speech, conscience, and traditional religious reference without stable criteria."
+                }
+              ]
+            },
+            con: {
+              time: "1:29:58",
+              role: "Meaning discipline",
+              words:
+                "Harris presses whether Peterson's God can hear prayer, care about doctrine, or match what believers mean, comparing the move to redefining ghosts.",
+              score: 89,
+              critique:
+                "Harris's final pressure is excellent because it targets language discipline. If God means highest value, long-run selection, or truthful speech, then the claim may be compatible with atheism, but it no longer means what most theists mean. His ghost analogy is apt: redefining ghosts as relation to the unseen can make everyone a ghost believer only by changing the word. Harris also keeps returning to practical stakes: resurrection, prayer, sexual guilt, and biblical authority are not settled by symbolic profundity. The weakness is that the Deepak Chopra comparison adds heat and risks personalizing the issue. The score is very high because Harris exposes the central ambiguity of Peterson's position.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 80,
+        strengths: [
+          "Peterson opened charitably, identified genuine overlap on moral realism, free speech, and avoiding both relativism and authoritarian dogma.",
+          "He gave a serious account of stories, religious language, and evolved interpretive structures as more than disposable superstition.",
+          "He conceded enough about updating and adaptation to make his religious-pragmatist position more flexible than simple fundamentalism."
+        ],
+        blunders: [
+          {
+            text:
+              "His God-language repeatedly shifted between symbolic function, highest value, conscience, truthful speech, and traditional religious reference.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His canon-and-context reply to slavery, stoning, and war laws did not supply a clear rule for overriding plainly harmful passages.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His suggestion that real atheism makes Raskolnikov-style temptation more available risked judging atheists through a preferred literary-theological frame.",
+            links: [
+              {
+                label: "Belief bias",
+                url: bias("belief-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 87,
+        strengths: [
+          "Harris stated a clear secular moral realist position centered on conscious well-being, moral error, and the badness of maximal suffering.",
+          "He sharply distinguished psychological usefulness from truth, especially when discussing scripture, revelation, prophecy, and God-language.",
+          "He exposed the practical stakes of dogma by returning to slavery, punishment, sexuality, prayer, resurrection, and religious authority."
+        ],
+        blunders: [
+          {
+            text:
+              "His strongest anti-dogma examples leaned heavily on extreme fundamentalist or Islamist cases, which can overstate their representativeness across all religion.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His plain-text critique sometimes underweighted the fact that all serious traditions use interpretive communities, not only literalist readings.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His moral-landscape foundation relies on a basic evaluative intuition while resisting Peterson's claim that such intuitions are mediated by inherited stories.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
