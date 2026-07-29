@@ -44256,5 +44256,382 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "oconnor-pine-divine-hiddenness-2024",
+    number: "123",
+    title: "Gregory Pine vs Alex O'Connor: The Divine Hiddenness Problem",
+    label: "Divine hiddenness and seeking",
+    date: "2026-07-29",
+    duration: "1 hr 41 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=8k9A7d2Wnjk",
+    motion:
+      "Does divine hiddenness, uneven religious geography, sincere nonbelief, hell, and original sin count against Catholic theism, or can grace, providence, and creaturely agency explain them?",
+    summary:
+      "Pine argues that God's self-disclosure is mediated through grace, history, creation, and patient formation; O'Connor argues that sincere seeking, religious geography, hell, and inherited fallenness make theism look arbitrary and unfair.",
+    sourceNote:
+      "Based on YouTube English-original automatic captions for the Mass of the Ages upload and its chapter markers. This is a dialogue-style discussion rather than a formal debate; side labels track the Catholic and skeptical positions. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God desires that all be saved",
+        context:
+          "Pine begins from a Catholic commitment that salvation and relationship with Christ must be available, then explains that availability through grace, history, mediation, and patient formation."
+      },
+      con: {
+        text: "somebody who sincerely seeks but doesn't find",
+        context:
+          "O'Connor centers the hiddenness problem on nonresistant seekers, uneven religious distribution, and the apparent unfairness of eternal consequences under unequal access."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Catholic theism",
+        speaker: "Gregory Pine",
+        color: "teal"
+      },
+      con: {
+        name: "Hiddenness skepticism",
+        speaker: "Alex O'Connor",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 78,
+      con: 86
+    },
+    sections: [
+      {
+        title: "Hiddenness Framed",
+        timebox: "05:10-10:46",
+        score: {
+          pro: 79,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "06:29",
+              role: "Universal offer",
+              words:
+                "Pine says Scripture commits Christians to God wanting all to be saved, so the Gospel and relationship with Christ must be available to everyone.",
+              score: 79,
+              critique:
+                "Pine's opening response is strong because he grants the Christian burden rather than minimizing it. If God desires all to be saved, then divine hiddenness cannot be waved away as an elite intellectual puzzle. Pine also broadens evidence beyond syllogisms, saying God's availability should be mediated personally, socially, politically, and through the whole human experience. That is a fairer Catholic answer than treating unbelief as mere obstinacy. The weakness is that this mostly states what Christianity must be able to explain, not yet how it explains the concrete distribution of belief. The score is solid-strong because the framework is charitable and relevant, but its explanatory content is still preparatory.",
+              tags: []
+            },
+            con: {
+              time: "08:28",
+              role: "Distribution challenge",
+              words:
+                "O'Connor says a loving God who wants relationship should not leave belief so dependent on geography, culture, and unequal exposure to Christianity.",
+              score: 86,
+              critique:
+                "O'Connor's opening challenge is very strong because it connects hiddenness to observable religious geography. Thailand and Rwanda are not random anecdotes; they illustrate the broader fact that religious identity tracks birthplace, institutions, family, and culture. That matters if Christianity says God proactively wants relationship with everyone. O'Connor also offers a clean rival explanation: if religion is a human social phenomenon, uneven distribution is exactly what one would expect. The weakness is that the inference is probabilistic and needs care, since a theist can appeal to nonexplicit grace, partial knowledge, or different providential histories. Still, the objection is directly relevant, evidentially disciplined, and central to the motion.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Fairness And Glory",
+        timebox: "11:01-20:22",
+        score: {
+          pro: 78,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "11:30",
+              role: "Against optimization",
+              words:
+                "Pine resists casting God as an optimizing machine, arguing that creation expresses divine goodness through hierarchy, differentiation, gratuity, and glory rather than bland equality.",
+              score: 78,
+              critique:
+                "Pine's fairness reply is philosophically textured. He rightly warns that some objections smuggle in an optimizing or maximizing model of God that classical Christianity need not accept. His appeal to gratuity, hierarchy, and divine glory helps explain why Christianity may not expect equal goods distributed in flat human terms. The weakness is that moving from fairness to glory can sound like changing the standard just when the complaint is moral inequality in salvific access. If hiddenness affects eternal destiny, the listener needs more than the claim that God is not motivated by bland equality. The score is strong because the model is coherent, but it risks protecting theism by redefining the contested value.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Divine glory is used to exempt God from ordinary fairness concerns without yet giving a clear alternative standard for unequal salvific access."
+                }
+              ]
+            },
+            con: {
+              time: "15:11",
+              role: "Unfair access",
+              words:
+                "O'Connor grants worries about a best possible world, but says a personal God seeking relationship makes unequal revelatory access look like favoritism.",
+              score: 84,
+              critique:
+                "O'Connor's fairness response is strong because he does not depend on a naive best-possible-world objection. He concedes that there may be no intrinsic maximum of created goods, then shifts to the more specific Christian claim: a personal God wants humans in relationship with him. If some receive visions, prophecy, or easier cultural access while others remain unconvinced through no apparent fault of their own, the asymmetry looks morally relevant. The weakness is that 'fairness' itself needs philosophical grounding across the creator-creature relation, especially if all finite goods are gifts. The score is high because he identifies the right pressure point, though the fairness standard needs further defense.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Sincere Seekers",
+        timebox: "20:37-31:49",
+        score: {
+          pro: 76,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "23:34",
+              role: "Temporal formation",
+              words:
+                "Pine says human volition is thinner than heroic choice, and that people come to truth through many movements, patient endurance, and lifelong interpretation.",
+              score: 76,
+              critique:
+                "Pine's temporal-formation answer has real pastoral strength. He recognizes that people do not simply choose beliefs by fiat and that human agency is often fragile, historically conditioned, and interpreted over time. The appeal to patience and perseverance also fits a Catholic picture in which grace works through a whole life rather than one decisive argument. The weakness is fit. O'Connor is pressing the case of someone sincerely seeking yet dying unconvinced or having the process cut short by contingency. A long-arc account of formation helps some cases but does not clearly cover the person who never finds. The score is solid because Pine humanizes agency, but the central hiddenness case remains exposed.",
+              tags: []
+            },
+            con: {
+              time: "22:14",
+              role: "Nonresistant seeker",
+              words:
+                "O'Connor says even one sincere seeker who does not find God demands explanation, especially when eternal communion depends on conviction one cannot force.",
+              score: 88,
+              critique:
+                "O'Connor's nonresistant-seeker argument is one of the discussion's strongest moments. He frames belief as something one cannot simply choose, then asks what a sincere but unconvinced person is doing wrong. The moon-landing analogy is useful because it separates exposure to arguments from actually finding them persuasive. He also presses the existential stakes: if eternal communion depends on conviction, cognitive limits and accidental death make the setup feel morally precarious. The weakness is that proving the existence of a truly nonresistant nonbeliever is difficult, and self-report cannot settle every case. The score is very high because the argument squarely targets hiddenness without overstating certainty or pretending motives are transparent.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Predilection And Hell",
+        timebox: "32:02-43:49",
+        score: {
+          pro: 74,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "32:28",
+              role: "Differentiated grace",
+              words:
+                "Pine says God loves all, yet gives different goods for an organic end; heaven comes by grace, while hell follows free rejection of offered grace.",
+              score: 74,
+              critique:
+                "Pine's predilection-and-hell answer is internally Catholic and unusually candid. He does not pretend that everyone receives the same goods, and he clearly distinguishes God's saving grace from free rejection. That helps explain why unequal gifts need not automatically mean arbitrary damnation. The weakness is that the answer asks the skeptic to accept several heavy theological premises at once: predilection, daisy-chained graces, thicker culpability, and hell as freely chosen absence. O'Connor's concrete worry about people who seem unable to find God is not resolved by saying grace was somehow offered and rejected. The score is mixed-solid because the doctrine is coherent inside the system, but externally under-supported.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The appeal to unseen graces risks answering visible nonbelief by assuming hidden offers and hidden rejections that the argument has not shown."
+                }
+              ]
+            },
+            con: {
+              time: "37:44",
+              role: "Irrational rejection",
+              words:
+                "O'Connor argues that knowingly choosing hell would be irrational, so hell seems to punish ignorance, confusion, or failed conviction rather than free clarity.",
+              score: 86,
+              critique:
+                "O'Connor's hell objection is powerful because it turns free rejection into a psychological and rationality problem. If hell is conscious eternal suffering or permanent privation of God, and if Christ is the escape, then fully informed rejection seems almost unintelligible. That forces Pine to explain how culpability survives ignorance, weakness, distraction, and mistaken cost-benefit judgment. O'Connor's offer-versus-threat discussion also sharpens the moral concern without depending on cartoon flames. The weakness is that he may underestimate traditions in which the will can cling to lesser goods despite adequate knowledge. The score is high because the objection makes the hiddenness problem morally sharper and harder to spiritualize away.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Geography And Providence",
+        timebox: "44:26-57:18",
+        score: {
+          pro: 77,
+          con: 89
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "44:39",
+              role: "Sufficient graces",
+              words:
+                "Pine says God gives sufficient graces through natural law, testimony, providence, and the developing kingdom, even where explicit Christianity is thinner.",
+              score: 77,
+              critique:
+                "Pine's providence answer is broader than a simple missionary-count reply. He distinguishes explicit Christian presence from natural law, testimony, social influence, and the kingdom's historical development. That gives Catholic theology room to say that God is active even where institutional Christianity is thin. He also refuses a deterministic picture in which God simply overrides human volition. The weakness is empirical and criterial: Pine admits the question partly belongs to sociology of religion, but he does not provide evidence that the hidden channels are sufficient to offset stark religious geography. The score is solid because the categories are relevant, but lower because the explanatory burden remains largely deferred.",
+              tags: []
+            },
+            con: {
+              time: "47:06",
+              role: "Social contingency",
+              words:
+                "O'Connor says conversion often depends on parents, universities, friendships, and small choices, which makes eternal outcomes look precariously arbitrary.",
+              score: 89,
+              critique:
+                "O'Connor's social-contingency argument is excellent because it adds mechanism to the geography objection. Religious belief does not merely vary by region; it often changes through friendships, family, university, local church access, and apparently trivial decisions. The library-ceiling example is deliberately comic, but it makes a serious point about how tiny contingencies can redirect religious identity. If God ensures some meetings but not others, providence needs a principled account; if he does not, salvation appears hazardously social. The weakness is that social contingency alone does not disprove grace working through ordinary causes. The score is very high because the objection is concrete, cumulative, and hard to answer without handwaving.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Fall And Inheritance",
+        timebox: "58:53-1:26:51",
+        score: {
+          pro: 76,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:01:20",
+              role: "Original sin account",
+              words:
+                "Pine describes original sin as rejecting the gift nature of grace, leaving human nature to itself within a mythopoeic Genesis and a Christ-centered arc.",
+              score: 76,
+              critique:
+                "Pine's original-sin account is careful and learned. He avoids crude literalism, admits the evolutionary difficulty of a first pair, treats Genesis as mythopoeic, and defines original sin as privation rather than a biological stain. That makes the doctrine less cartoonish than O'Connor's target might otherwise be. He also connects fallenness to Christ and eschatological restoration instead of leaving suffering as the last word. The weakness is that the inherited-responsibility problem remains stubborn. Saying we were present in Adam's nature, loins, or representative choice does not by itself show why descendants bear the consequences of a primordial failure. The score is solid because the account is sophisticated, but its hardest moral premise remains under-argued.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Aquinas, Augustine, Romans, and later tradition carry major weight where the moral logic of inherited fallenness still needs direct defense."
+                }
+              ]
+            },
+            con: {
+              time: "1:05:16",
+              role: "Inherited blame challenge",
+              words:
+                "O'Connor argues that Adam and Eve appear deceived, not culpable enough to justify suffering inherited by descendants who never made their choice.",
+              score: 87,
+              critique:
+                "O'Connor's inherited-blame challenge is forceful because it separates two issues that are often merged: whether fallenness is doctrinally coherent and whether it is morally fair. His landlord analogy and Spanish-blasphemy analogy are vivid ways of asking why descendants should suffer from a deception-laden ancestral act. He also presses the internal puzzle that evil appears in Eden before the fall, so 'fallen world' cannot be the whole explanation. The weakness is that some details lean on a literalistic reading after Pine has already moved toward mythopoeic genre and theological interpretation. Even so, the moral pressure survives. The score is very high because the fairness objection remains clear and persistent.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Seeking And Job",
+        timebox: "1:27:28-1:40:56",
+        score: {
+          pro: 82,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:36:18",
+              role: "Questions deepen",
+              words:
+                "Pine says questioning can enlarge the person for revelation, like Job being drawn into deeper questions rather than receiving a neat abstract solution.",
+              score: 82,
+              critique:
+                "Pine's final response is his most existentially persuasive move. Instead of giving a thin answer to Alex's biography, he treats seeking, questioning, suffering, and partial disclosure as formative. The Job analogy helps because it frames divine response as transformation of the questioner, not just information transfer. Pine is also careful not to cheapen Alex's experience or speak as if bruised fingers from knocking are trivial. The weakness is that formative mystery can become hard to distinguish from no answer, especially for someone asking why a loving God remains silent. The score is strong because it is pastorally serious and thematically coherent, but it remains more invitation than argument.",
+              tags: []
+            },
+            con: {
+              time: "1:28:25",
+              role: "Bruised-knuckles seeking",
+              words:
+                "O'Connor describes theology study, church attendance, prayer attempts, and respectful participation, yet says he still hears no answer from God.",
+              score: 85,
+              critique:
+                "O'Connor's final seeking account is compelling because it gives the hiddenness argument a lived test case. He names mixed motives honestly, but still lists serious practices: a theology degree, church attendance, Latin Mass, biblical scholarship, prayer attempts, and willingness to let Christian friends pray for him. That makes the nonresistant-seeker premise harder to dismiss as laziness. His Job objection also captures the emotional worry that God answers suffering with rebuke rather than compassion. The weakness is that autobiographical sincerity cannot establish the universal premise by itself, and inner motive remains difficult to audit. The score is high because the testimony is relevant and responsibly qualified.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 78,
+        strengths: [
+          "Pine conceded the Christian burden that God's salvific relationship must be available to all rather than dismissing hiddenness as unserious.",
+          "He gave a richly Catholic framework involving grace, mediation, providence, temporal formation, original sin, and eschatological restoration.",
+          "His closing treated O'Connor's seeking with pastoral care and avoided the lazy claim that nonbelief is simply stubbornness."
+        ],
+        blunders: [
+          {
+            text:
+              "His appeal to glory, predilection, and divine differentiation sometimes replaced the fairness question with a theological standard the skeptic had not been given reason to accept.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His claim that sufficient graces are present in every life remained too hidden to answer the visible pattern of sincere nonbelief and religious geography.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His original-sin defense leaned heavily on Thomistic and Augustinian framing while leaving the moral logic of inherited consequences unresolved.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 86,
+        strengths: [
+          "O'Connor connected hiddenness to concrete evidence: religious geography, social contingency, sincere seeking, and unequal access.",
+          "He kept the problem personal without making it merely emotional, repeatedly tying lived nonbelief to eternal consequences and culpability.",
+          "His questions about hell and original sin exposed how hiddenness interacts with wider Catholic doctrines, not just abstract belief in God."
+        ],
+        blunders: [
+          {
+            text:
+              "His fairness critique sometimes treated human equality norms as directly transferable to creator-creature relations without fully defending that transfer.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "Some Eden analogies pressed literalistic story details after Pine had explicitly shifted toward a mythopoeic and tradition-guided reading.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His autobiographical seeking carries real force, but it cannot by itself establish the wider statistical claim that sincere seekers generally receive no answer.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
