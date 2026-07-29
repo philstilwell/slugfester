@@ -37,7 +37,7 @@ Landing-page design:
 - Section ranges and argument timestamps link to the YouTube source with a `t=...s` timestamp query generated from the visible time; `MM:SS`, long-minute `MMM:SS`, and `H:MM:SS` formats are supported.
 - `/search/` lets users filter debates by text and interlocutor portraits.
 - Search-page interlocutor portraits live inside a default-closed accordion clearly labeled `Interlocutor filters`.
-- Landing topic snippets, landing debate cards, and search results paginate in batches of 100 debates.
+- Landing topic snippets and landing debate cards share one paired 100-debate pagination state; search results paginate separately in batches of 100 debates.
 - Search-page interlocutor portraits render in a scrollable panel inside the accordion.
 - The search results eyebrow reads `Matches: ...` and names the active text query and selected interlocutors, falling back to `Matches: all debates`.
 - Search-result debate titles link directly to their debate assessments.

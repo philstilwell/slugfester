@@ -314,19 +314,17 @@ function renderPagination({ label, pager, itemLabel, hrefForPage }) {
 
 function landingPaginationState() {
   const params = new URLSearchParams(window.location.search);
+
   return {
-    debatePage: positivePage(params.get("debatePage")),
-    topicPage: positivePage(params.get("topicPage"))
+    page: positivePage(params.get("page") || params.get("debatePage") || params.get("topicPage"))
   };
 }
 
 function landingUrl(state = {}) {
   const params = new URLSearchParams();
-  const topicPage = positivePage(state.topicPage);
-  const debatePage = positivePage(state.debatePage);
+  const page = positivePage(state.page);
 
-  if (topicPage > 1) params.set("topicPage", topicPage);
-  if (debatePage > 1) params.set("debatePage", debatePage);
+  if (page > 1) params.set("page", page);
 
   const query = params.toString();
   return `/${query ? `?${query}` : ""}`;
@@ -336,10 +334,9 @@ function renderLanding() {
   setSeo(landingSeo(debates));
 
   const landingState = landingPaginationState();
-  const topicPager = paginatedItems(debates, DEBATE_PAGE_SIZE, landingState.topicPage);
-  const debatePager = paginatedItems(debates, DEBATE_PAGE_SIZE, landingState.debatePage);
-  const debateCards = debatePager.items.map(renderDebateCard).join("");
-  const topicList = topicPager.items
+  const landingPager = paginatedItems(debates, DEBATE_PAGE_SIZE, landingState.page);
+  const debateCards = landingPager.items.map(renderDebateCard).join("");
+  const topicList = landingPager.items
     .map((debate) => `${escapeHtml(debate.number)} ${escapeHtml(debate.label)}`)
     .join('<span aria-hidden="true"> | </span>');
 
@@ -354,10 +351,10 @@ function renderLanding() {
           <div class="topic-list-wrap">
             <p class="topic-list" aria-label="Topics mentioned in currently listed debates">${topicList}</p>
             ${renderPagination({
-              hrefForPage: (page) => landingUrl({ ...landingState, topicPage: page }),
+              hrefForPage: (page) => landingUrl({ page }),
               itemLabel: "debates",
               label: "Landing topic list",
-              pager: topicPager
+              pager: landingPager
             })}
           </div>
         </div>
@@ -377,17 +374,17 @@ function renderLanding() {
           <h2 id="debates-heading">Debates</h2>
         </div>
         ${renderPagination({
-          hrefForPage: (page) => landingUrl({ ...landingState, debatePage: page }),
+          hrefForPage: (page) => landingUrl({ page }),
           itemLabel: "debates",
           label: "Landing debate cards",
-          pager: debatePager
+          pager: landingPager
         })}
         <div class="debate-grid">${debateCards}</div>
         ${renderPagination({
-          hrefForPage: (page) => landingUrl({ ...landingState, debatePage: page }),
+          hrefForPage: (page) => landingUrl({ page }),
           itemLabel: "debates",
           label: "Landing debate cards",
-          pager: debatePager
+          pager: landingPager
         })}
       </section>
     </main>

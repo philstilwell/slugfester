@@ -36,6 +36,8 @@ requireIncludes("app landing topics", app, 'class="topic-list"');
 requireIncludes("app pagination", app, "const DEBATE_PAGE_SIZE = 100");
 requireIncludes("app pagination", app, "renderPagination");
 requireIncludes("app pagination", app, 'class="pagination"');
+requireIncludes("app pagination", app, "const landingPager = paginatedItems");
+requireIncludes("app pagination", app, "pager: landingPager");
 requireIncludes("app landing cards", app, 'class="debate-title-link"');
 requireIncludes("app search route", app, "renderSearch");
 requireIncludes("app search route", app, "searchPathRoutePattern");
