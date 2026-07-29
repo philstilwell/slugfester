@@ -260,9 +260,76 @@ a {
   text-align: justify;
 }
 
+.topic-list-wrap {
+  display: grid;
+  gap: 8px;
+  max-width: 620px;
+}
+
 .topic-list span {
   color: rgba(47, 143, 133, 0.85);
   padding: 0 4px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 14px 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.topic-list-wrap .pagination {
+  margin: 0;
+  font-size: 0.68rem;
+}
+
+.pagination-controls,
+.pagination-pages {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pagination-control,
+.pagination-page {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  padding: 5px 9px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.pagination-page {
+  min-width: 28px;
+}
+
+.pagination-control:hover,
+.pagination-control:focus-visible,
+.pagination-page:hover,
+.pagination-page:focus-visible {
+  color: var(--blue);
+  border-color: rgba(47, 143, 133, 0.46);
+}
+
+.pagination-control.disabled,
+.pagination-page.active {
+  color: #fff;
+  background: var(--ink);
+  border-color: rgba(19, 32, 31, 0.2);
+}
+
+.pagination-control.disabled {
+  opacity: 0.42;
 }
 
 .eyebrow {
@@ -487,7 +554,13 @@ a {
 .interlocutor-filter-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  align-content: start;
   gap: 8px;
+  max-height: min(420px, 48vh);
+  overflow-y: auto;
+  padding-right: 4px;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
 }
 
 .person-filter {

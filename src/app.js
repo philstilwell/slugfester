@@ -25,6 +25,7 @@ import {
 } from "./seo.js";
 
 const app = document.querySelector("#app");
+const DEBATE_PAGE_SIZE = 100;
 const debateHashRoutePattern = /^#\/debate\/([a-z0-9-]+)$/;
 const searchHashRoutePattern = /^#\/search$/;
 const assessmentHashRoutePattern = /^#\/assessment$/;
@@ -259,11 +260,86 @@ function renderShell(content) {
   `;
 }
 
+function positivePage(value) {
+  const page = Number.parseInt(value, 10);
+  return Number.isInteger(page) && page > 0 ? page : 1;
+}
+
+function paginatedItems(items, pageSize, requestedPage) {
+  const total = items.length;
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
+  const page = Math.min(positivePage(requestedPage), totalPages);
+  const start = (page - 1) * pageSize;
+  const end = Math.min(start + pageSize, total);
+
+  return {
+    end,
+    items: items.slice(start, end),
+    page,
+    start,
+    total,
+    totalPages
+  };
+}
+
+function renderPagination({ label, pager, itemLabel, hrefForPage }) {
+  if (pager.totalPages <= 1) return "";
+
+  const pageLinks = Array.from({ length: pager.totalPages }, (_, index) => {
+    const page = index + 1;
+
+    return page === pager.page
+      ? `<span class="pagination-page active" aria-current="page">${page}</span>`
+      : `<a class="pagination-page" href="${escapeHtml(hrefForPage(page))}">${page}</a>`;
+  }).join("");
+
+  const previous = pager.page > 1
+    ? `<a class="pagination-control" href="${escapeHtml(hrefForPage(pager.page - 1))}">Previous</a>`
+    : `<span class="pagination-control disabled" aria-disabled="true">Previous</span>`;
+  const next = pager.page < pager.totalPages
+    ? `<a class="pagination-control" href="${escapeHtml(hrefForPage(pager.page + 1))}">Next</a>`
+    : `<span class="pagination-control disabled" aria-disabled="true">Next</span>`;
+
+  return `
+    <nav class="pagination" aria-label="${escapeHtml(label)} pagination">
+      <span class="pagination-summary">Showing ${pager.start + 1}-${pager.end} of ${pager.total} ${escapeHtml(itemLabel)}</span>
+      <span class="pagination-controls">
+        ${previous}
+        <span class="pagination-pages">${pageLinks}</span>
+        ${next}
+      </span>
+    </nav>
+  `;
+}
+
+function landingPaginationState() {
+  const params = new URLSearchParams(window.location.search);
+  return {
+    debatePage: positivePage(params.get("debatePage")),
+    topicPage: positivePage(params.get("topicPage"))
+  };
+}
+
+function landingUrl(state = {}) {
+  const params = new URLSearchParams();
+  const topicPage = positivePage(state.topicPage);
+  const debatePage = positivePage(state.debatePage);
+
+  if (topicPage > 1) params.set("topicPage", topicPage);
+  if (debatePage > 1) params.set("debatePage", debatePage);
+
+  const query = params.toString();
+  return `/${query ? `?${query}` : ""}`;
+}
+
 function renderLanding() {
   setSeo(landingSeo(debates));
 
-  const debateCards = debates.map(renderDebateCard).join("");
-  const topicList = debates
+  const landingState = landingPaginationState();
+  const topicPager = paginatedItems(debates, DEBATE_PAGE_SIZE, landingState.topicPage);
+  const debatePager = paginatedItems(debates, DEBATE_PAGE_SIZE, landingState.debatePage);
+  const debateCards = debatePager.items.map(renderDebateCard).join("");
+  const topicList = topicPager.items
     .map((debate) => `${escapeHtml(debate.number)} ${escapeHtml(debate.label)}`)
     .join('<span aria-hidden="true"> | </span>');
 
@@ -275,7 +351,15 @@ function renderLanding() {
           <h1>Slugfester</h1>
           <p class="lede">Debate transcripts turned into side-by-side argument maps for ease of reader assessment.  Each claim and rebuttal receives AI scores, and every ◉ opens a deeper critique of the reasoning.</p>
           <div class="topic-divider" aria-hidden="true"></div>
-          <p class="topic-list" aria-label="Topics mentioned in currently listed debates">${topicList}</p>
+          <div class="topic-list-wrap">
+            <p class="topic-list" aria-label="Topics mentioned in currently listed debates">${topicList}</p>
+            ${renderPagination({
+              hrefForPage: (page) => landingUrl({ ...landingState, topicPage: page }),
+              itemLabel: "debates",
+              label: "Landing topic list",
+              pager: topicPager
+            })}
+          </div>
         </div>
         <figure class="logo-showcase">
           <img
@@ -292,7 +376,19 @@ function renderLanding() {
           <p class="eyebrow">Scorecards</p>
           <h2 id="debates-heading">Debates</h2>
         </div>
+        ${renderPagination({
+          hrefForPage: (page) => landingUrl({ ...landingState, debatePage: page }),
+          itemLabel: "debates",
+          label: "Landing debate cards",
+          pager: debatePager
+        })}
         <div class="debate-grid">${debateCards}</div>
+        ${renderPagination({
+          hrefForPage: (page) => landingUrl({ ...landingState, debatePage: page }),
+          itemLabel: "debates",
+          label: "Landing debate cards",
+          pager: debatePager
+        })}
       </section>
     </main>
   `);
@@ -364,6 +460,7 @@ function searchFacets() {
 function searchState() {
   const params = new URLSearchParams(window.location.search);
   return {
+    page: positivePage(params.get("page")),
     query: params.get("q") || "",
     people: params.getAll("person")
   };
@@ -374,6 +471,7 @@ function searchUrl(state) {
 
   if (state.query.trim()) params.set("q", state.query.trim());
   state.people.forEach((person) => params.append("person", person));
+  if (positivePage(state.page) > 1) params.set("page", positivePage(state.page));
 
   const query = params.toString();
   return `${searchPath()}${query ? `?${query}` : ""}`;
@@ -429,6 +527,7 @@ function renderSearch() {
   const state = searchState();
   const facets = searchFacets();
   const matches = debates.filter((debate) => debateMatchesSearch(debate, state));
+  const resultPager = paginatedItems(matches, DEBATE_PAGE_SIZE, state.page);
   const hasFilters = Boolean(state.query.trim() || state.people.length);
 
   app.innerHTML = renderShell(`
@@ -472,7 +571,21 @@ function renderSearch() {
         </div>
         ${
           matches.length
-            ? `<div class="search-result-list">${matches.map(renderSearchResult).join("")}</div>`
+            ? `
+              ${renderPagination({
+                hrefForPage: (page) => searchUrl({ ...state, page }),
+                itemLabel: "debates",
+                label: "Search results",
+                pager: resultPager
+              })}
+              <div class="search-result-list">${resultPager.items.map(renderSearchResult).join("")}</div>
+              ${renderPagination({
+                hrefForPage: (page) => searchUrl({ ...state, page }),
+                itemLabel: "debates",
+                label: "Search results",
+                pager: resultPager
+              })}
+            `
             : `<div class="empty-results"><strong>No debates matched.</strong><span>Try fewer people or a broader text search.</span></div>`
         }
       </section>
@@ -676,11 +789,11 @@ function bindSearchControls(state) {
   page.querySelector(".search-form")?.addEventListener("submit", (event) => {
     event.preventDefault();
     const query = page.querySelector("#search-query")?.value || "";
-    navigateSearch({ ...state, query });
+    navigateSearch({ ...state, page: 1, query });
   });
 
   page.querySelector("[data-clear-search]")?.addEventListener("click", () => {
-    navigateSearch({ query: "", people: [] });
+    navigateSearch({ page: 1, query: "", people: [] });
   });
 
   page.querySelectorAll("[data-filter-type]").forEach((button) => {
@@ -690,7 +803,7 @@ function bindSearchControls(state) {
       const query = page.querySelector("#search-query")?.value || state.query;
 
       if (type === "person") {
-        navigateSearch({ ...state, query, people: toggleValue(state.people, value) });
+        navigateSearch({ ...state, page: 1, query, people: toggleValue(state.people, value) });
       }
     });
   });
