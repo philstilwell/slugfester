@@ -43879,5 +43879,382 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "horn-oconnor-god-existence-2020",
+    number: "122",
+    title: "Trent Horn vs Alex O'Connor: Does God Exist?",
+    label: "God, contingency, and evil",
+    date: "2026-07-29",
+    duration: "2 hr 06 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=5PF1JgXOKDQ",
+    motion:
+      "Does God exist, and do contingency, sufficient reason, moral realism, evil, animal suffering, and quantum randomness support or undermine theism?",
+    summary:
+      "Horn argues that sufficient reason, contingency, act-potency, moral realism, and free will point to a necessary divine cause; O'Connor argues that animal suffering, quantum indeterminacy, and moral anti-realism undercut the case.",
+    sourceNote:
+      "Based on YouTube English-original automatic captions for the Matt Fradd upload and its chapter markers. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "things have a reason for why they exist",
+        context:
+          "Horn anchors his case in a limited principle of sufficient reason, contingency, act-potency, and a cumulative move from necessary cause to divine attributes."
+      },
+      con: {
+        text: "the problem of animal suffering",
+        context:
+          "O'Connor identifies animal suffering as the central barrier to Christian theism and ties it to sufficient reason, free will, and moral explanation."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Classical theism",
+        speaker: "Trent Horn",
+        color: "teal"
+      },
+      con: {
+        name: "Agnostic skepticism",
+        speaker: "Alex O'Connor",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 80,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Contingency Case",
+        timebox: "04:51-21:24",
+        score: {
+          pro: 82,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:51",
+              role: "Nine-question case",
+              words:
+                "Horn asks a chain of yes-or-no questions: the universe needs an explanation outside itself, and that explanation must be necessary, uncaused, immaterial, powerful, personal, and good.",
+              score: 82,
+              critique:
+                "Horn's opening case is strong because it gives listeners a clear route from contingency to a necessary explanatory source. The nine-question format keeps the burden visible: if the universe is contingent, and if contingent things need explanations outside themselves, then a noncontingent cause is at least a serious candidate. He also tries to connect that cause with familiar divine attributes rather than leaving it as an abstract stopper. The weakness is that several bridges are asserted faster than defended: PSR, causal finitism, act and potency, personality, and omniscience are each contestable. The score is strong because the argument is coherent and cumulative, but it compresses too many disputed metaphysical steps to be decisive.",
+              tags: []
+            },
+            con: {
+              time: "20:33",
+              role: "Negative burden",
+              words:
+                "O'Connor says he is not arguing that no God exists; he is testing Horn's assertion that God exists and whether the offered arguments carry that burden.",
+              score: 80,
+              critique:
+                "O'Connor's opening posture is disciplined. He refuses to claim that no God exists and instead targets Horn's burden to show that God does exist. That keeps the negative case appropriately modest and lets him focus on undermining the premises and explanatory transitions Horn needs. It is also strategically wise that he announces the animal-suffering problem as his central pressure point rather than scattering objections across every divine attribute. The weakness is that this opening mostly frames resistance; it does not yet answer the contingency argument on its own terms. The score is strong because burden discipline matters in a theism debate, but it remains a setup rather than a complete rebuttal.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Animal Suffering",
+        timebox: "21:24-42:19",
+        score: {
+          pro: 73,
+          con: 90
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "39:23",
+              role: "Permitted privations",
+              words:
+                "Horn says suffering is a privation God can permit for greater goods, and that animal existence with vulnerability may still be better than no animal world at all.",
+              score: 73,
+              critique:
+                "Horn's animal-suffering reply is fair in one important respect: he refuses the simplistic claim that every instance of pain must be intrinsically good. By treating suffering as a privation that may be permitted for goods within a lawlike world, he gives theism a recognizable explanatory structure. His question about whether humans should eliminate animal life also usefully tests whether existence with vulnerability can still be valuable. The weakness is that the response leans heavily on possible goods and feasibility limits that are not made concrete. Without criteria for when animal suffering becomes gratuitous, the view can absorb almost any data. The lower score reflects a coherent but under-specified defense.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Unknown greater goods are invoked to defend apparently gratuitous animal suffering without enough positive criteria."
+                }
+              ]
+            },
+            con: {
+              time: "21:24",
+              role: "Evidential pressure",
+              words:
+                "O'Connor calls animal suffering the central problem for Christian theism, asking why a loving God would need this scale of hidden nonhuman pain.",
+              score: 90,
+              critique:
+                "O'Connor's animal-suffering case is the debate's clearest evidential pressure. He does not merely say suffering is emotionally disturbing; he asks why a loving, powerful God would permit this scale and distribution of nonhuman pain, especially cases disconnected from human choice or moral growth. The trapped-deer example works because it isolates suffering that seems hard to connect to free will or soul-making. His exact-amount challenge also forces Horn to say whether less suffering was genuinely available. The weakness is that O'Connor sometimes slides from 'less suffering appears possible' to 'a perfect being must minimize every token of suffering,' which needs more defense. Still, the argument is highly relevant and well targeted.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "PSR And Quantum",
+        timebox: "29:58-58:35",
+        score: {
+          pro: 78,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "50:30",
+              role: "Limited PSR",
+              words:
+                "Horn narrows the principle: not every event needs a deterministic explanation, but things that exist still have reasons for their existence.",
+              score: 78,
+              critique:
+                "Horn's quantum reply is useful because he clarifies that his PSR is not the maximal claim that every event has a deterministic explanation. By limiting the principle to why existing things exist, he avoids an easy collision with standard indeterministic interpretations of quantum mechanics. His probabilistic-cause answer also keeps chance inside a structured physical order, rather than treating it as metaphysical nothingness. The weakness is that this limitation arrives after broader appeals to scientific intelligibility and causal reasoning, so the boundary between 'thing' and 'event' needs more work. O'Connor presses exactly there with the Big Bang and particular outcomes. The score is strong but restrained because the repair is plausible, not fully settled.",
+              tags: []
+            },
+            con: {
+              time: "42:50",
+              role: "Quantum exception",
+              words:
+                "O'Connor argues that probabilistic quantum explanations still do not explain why this particular outcome occurs, and that nonlocal repairs carry scientific costs.",
+              score: 86,
+              critique:
+                "O'Connor's PSR and quantum challenge is one of his most ambitious moves. He sees that Horn's case depends not just on a slogan about explanation, but on how explanation behaves at the foundations of physics and agency. Pressing why a particular quantum outcome occurs, and whether nonlocal interpretations carry costs, makes the metaphysical premise feel less obvious. The weakness is compression. The physics is doing heavy work, but the audience receives quick references to local realism, Bell-style experiments, and relativity rather than a patient argument from those results to the denial of Horn's limited PSR. The score is high because the objection is live, but not conclusive.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Compressed references to technical physics results carry more argumentative weight than the debate format lets listeners inspect."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Free Will And Heaven",
+        timebox: "28:49-45:29",
+        score: {
+          pro: 78,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "36:49",
+              role: "Freely perfected world",
+              words:
+                "Horn answers 'why not heaven now?' by saying a created history of free movement from imperfection to perfection can include goods an instantly perfect world lacks.",
+              score: 78,
+              critique:
+                "Horn's free-will reply has a coherent theodicy shape: a world in which creatures freely move from imperfection toward perfected communion may contain goods not present in an instantly perfected creation. That answers the simple form of 'why not heaven now?' by appealing to history, choice, and formation. He also wisely notes that the theist need not make libertarian free will carry the whole case. The weakness is that saying humans 'cause themselves' to choose risks sounding like a label for the mystery rather than an explanation of control. O'Connor's PSR pressure remains: why this choice rather than another? The score is solid-strong because Horn offers a possible model, but its mechanics remain obscure.",
+              tags: []
+            },
+            con: {
+              time: "29:01",
+              role: "Heaven test",
+              words:
+                "O'Connor asks whether free will exists in heaven; if it does, freedom alone cannot explain why earthly suffering is necessary.",
+              score: 84,
+              critique:
+                "O'Connor's heaven objection is sharp because it tests whether free will really explains evil. If heaven contains freedom without rebellion, then the mere value of freedom cannot explain why vast earthly suffering is necessary. His follow-up about God being good by nature adds a clever internal pressure: if unfallen goodness by nature is inferior to freely choosing good, divine maximal goodness needs clarification. The weakness is that the objection works best against a simplified free-will defense, while Horn also appeals to goods of temporal development, moral formation, and creaturely history. O'Connor therefore damages one route more than the whole theodicy. The score is high because the challenge exposes a real tension even if it does not close every escape.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral Realism",
+        timebox: "16:48-1:13:20",
+        score: {
+          pro: 84,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "16:57",
+              role: "Moral grounding",
+              words:
+                "Horn argues that if moral realism is true, God exists, and that moral responsibility, dignity, and duties fit better with theism than with reductive naturalism.",
+              score: 84,
+              critique:
+                "Horn's moral argument is strong dialectically because it makes the existential cost of Alex's metaethics explicit. Rather than merely asserting that atheists behave badly, he presses whether objective duties, responsibility, human dignity, and moral outrage fit better in a theistic framework. The slave-fetus and factory-farming examples force the audience to ask whether welfare calculations alone capture moral wrongness. The weakness is that exposing the cost of O'Connor's anti-realism is not the same as showing that theism uniquely grounds moral facts. Horn needs more argument against non-theistic moral realism and more precision about how divine goodness avoids arbitrariness. The score is high because the pressure is relevant and rhetorically effective, but not complete.",
+              tags: []
+            },
+            con: {
+              time: "1:11:55",
+              role: "Anti-realist answer",
+              words:
+                "O'Connor says he is not a moral realist: objective 'ought' claims lack truth value, though we can still express attitudes and practical preferences.",
+              score: 78,
+              critique:
+                "O'Connor's moral anti-realism is honest and internally clarifying. By saying that objective 'ought' claims do not have truth value, he avoids borrowing moral realism while rejecting Horn's grounding argument. That consistency matters, and it prevents the common move of appealing to objective evil against God while denying objective moral facts when challenged. The weakness is dialectical cost. In a public debate, denying that 'you ought not murder' is objectively true gives Horn an intuitive advantage and leaves O'Connor with a thinner basis for moral condemnation. The score is solid because the position is coherent, but lower because it sacrifices too much explanatory and persuasive ground.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Cross-Exam Pressure",
+        timebox: "1:01:11-1:20:20",
+        score: {
+          pro: 80,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:09:57",
+              role: "Criteria demand",
+              words:
+                "Horn asks what objective criteria identify unjustified suffering, then argues that theism can frame duties toward humans and animals without collapsing their worth.",
+              score: 80,
+              critique:
+                "Horn's cross-examination is effective when he asks for criteria. If O'Connor says some suffering is unjustified, Horn is entitled to ask what standard distinguishes justified from gratuitous suffering. That question exposes a vulnerability in probabilistic evil arguments: strong emotional examples need a bridge to an objective judgment about what God could or should permit. Horn also connects this to worldview-level duties rather than treating the animal issue in isolation. The weakness is that his own answer risks becoming unfalsifiable: if every evil can be tucked under unknown greater goods or prevented worse evils, the claim loses discriminating power. The score is strong because the burden question lands, but the theistic reply also needs criteria.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The reply risks insulating theism from contrary evidence by allowing any suffering to be covered by inaccessible divine reasons."
+                }
+              ]
+            },
+            con: {
+              time: "1:17:05",
+              role: "Three-button test",
+              words:
+                "O'Connor offers a choice among destroying life, keeping the world unchanged, or reducing suffering with no bad side effects, and presses Horn to choose.",
+              score: 86,
+              critique:
+                "O'Connor's three-button question is an excellent cross-exam device. It turns abstract theodicy into a concrete test: destroy life, leave the world as it is, or reduce suffering with no bad side effects. That structure makes it difficult for Horn to rely only on vague possibilities, because the hypothetical stipulates away the usual tradeoffs. It also clarifies O'Connor's central claim that less suffering seems available. The weakness is that the button scenario smuggles in disputed modal information: whether there really are no bad side effects is exactly what the theist denies knowing. The score is very strong because it pressures the intuition cleanly, though it does not settle feasibility.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Final Burdens",
+        timebox: "1:27:38-2:02:35",
+        score: {
+          pro: 81,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:56:37",
+              role: "Cumulative closing",
+              words:
+                "Horn closes that rejecting God requires paying a high price on causality, sufficient reason, morality, free will, and the intelligibility of the world.",
+              score: 81,
+              critique:
+                "Horn's closing is disciplined in one respect: he keeps reminding listeners that a probabilistic evil argument must overcome his positive metaphysical case, not merely create emotional unease. He also makes the debate cumulative by returning to contingency, act and potency, moral realism, and the cost of rejecting each. That is good closing strategy. The weakness is that he sometimes treats the positive arguments as already demonstrative, even though several premises were precisely what O'Connor challenged. Repeating that no fatal objection was lodged can understate unresolved pressure on PSR, free will, and animal suffering. The score is strong because Horn organized the burden well, but he overclaims the security of his foundations.",
+              tags: []
+            },
+            con: {
+              time: "2:00:41",
+              role: "Consistency before truth",
+              words:
+                "O'Connor says consistency is only the first step toward truth and that PSR, quantum mechanics, and causation need more careful treatment.",
+              score: 84,
+              critique:
+                "O'Connor's closing succeeds because it models philosophical restraint. He says consistency is only the first step toward truth, admits that evidential evil would lose force against a sound deductive theistic argument, and asks for more careful treatment of PSR and quantum mechanics. That makes him look less like a debater hunting points and more like someone testing a system. The weakness is that his positive alternative remains deliberately sparse. Naturalism is gestured toward as plausible on suffering and consciousness, but not developed into a comparably complete worldview. The score is high because he pressed the central weak points clearly while acknowledging what would change his mind, though he left some constructive burden untouched.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 80,
+        strengths: [
+          "Horn gave a clear cumulative case that connected contingency, sufficient reason, act-potency, moral realism, and divine attributes.",
+          "He repeatedly distinguished demonstrative metaphysical arguments from probabilistic evidential objections, which kept burdens visible.",
+          "His cross-examination pressed O'Connor to supply criteria for unjustified suffering and objective moral duties."
+        ],
+        blunders: [
+          {
+            text:
+              "He treated several disputed metaphysical premises as already secure, especially when calling his arguments demonstrative after PSR and act-potency were challenged.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His animal-suffering defense leaned on unknown greater goods without giving enough criteria for when suffering would count against theism.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His moral argument sometimes moved from the cost of O'Connor's anti-realism to theism before showing that theism uniquely grounds moral facts.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "O'Connor kept his burden modest, targeting whether Horn had established God rather than claiming to disprove all theism.",
+          "His animal-suffering argument was concrete, tightly connected to Christian theism, and resilient against simple free-will replies.",
+          "He exposed live pressure points in Horn's PSR by connecting explanation to quantum outcomes, agency, and foundational brute facts."
+        ],
+        blunders: [
+          {
+            text:
+              "His quantum objection was technically ambitious but too compressed, leaving important physics-to-metaphysics links resting on authority signals.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          },
+          {
+            text:
+              "His denial that objective ought-claims have truth value risked substituting metaethical grammar for a full answer to moral realism's intuitive pull.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His animal-suffering case sometimes assumed that perfect goodness must minimize suffering token by token, which was one contested premise.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
