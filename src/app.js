@@ -25,7 +25,7 @@ import {
 } from "./seo.js";
 
 const app = document.querySelector("#app");
-const DEBATE_PAGE_SIZE = 100;
+const DEBATE_PAGE_SIZE = 88;
 const debateHashRoutePattern = /^#\/debate\/([a-z0-9-]+)$/;
 const searchHashRoutePattern = /^#\/search$/;
 const assessmentHashRoutePattern = /^#\/assessment$/;

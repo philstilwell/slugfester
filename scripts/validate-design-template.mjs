@@ -33,7 +33,7 @@ requireIncludes("app landing hero", app, 'class="logo-showcase"');
 requireIncludes("app landing hero", app, 'src="/assets/slugfester-logo.jpg"');
 requireIncludes("app landing topics", app, 'class="topic-divider"');
 requireIncludes("app landing topics", app, 'class="topic-list"');
-requireIncludes("app pagination", app, "const DEBATE_PAGE_SIZE = 100");
+requireIncludes("app pagination", app, "const DEBATE_PAGE_SIZE = 88");
 requireIncludes("app pagination", app, "renderPagination");
 requireIncludes("app pagination", app, 'class="pagination"');
 requireIncludes("app pagination", app, "const landingPager = paginatedItems");
