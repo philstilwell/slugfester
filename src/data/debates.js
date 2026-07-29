@@ -42722,5 +42722,383 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "jones-oconnor-hell-2023",
+    number: "119",
+    title: "Michael Jones vs Alex O'Connor: Does God Send People to Hell?",
+    label: "Hell, self-exile, and grace",
+    date: "2026-07-29",
+    duration: "1 hr 11 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=kOzmwGmiDHQ",
+    motion:
+      "Can the Christian doctrine of hell be morally justified as self-chosen exile, sanctifying grace, and possible annihilation rather than external torture?",
+    summary:
+      "Jones defends a C.S. Lewis-style view of hell as self-exile and resisted grace; O'Connor argues that belief formation, misinformation, and divine love make continued hell morally unstable.",
+    sourceNote:
+      "Based on YouTube English-original captions for the Alex O'Connor upload and its chapter markers. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text:
+          "hell is a freely chosen identity built on something else besides God going on forever",
+        context:
+          "Jones's defense depends on reframing hell as the inner consequence of resisted grace rather than a torture chamber God imposes from outside."
+      },
+      con: {
+        text: "it seems a little arbitrary. It seems a little unfair",
+        context:
+          "O'Connor's central objection is that postmortem destiny appears to depend on persuasion, information, and psychology that agents do not fully control."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian hell defense",
+        speaker: "Michael Jones",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical moral critique",
+        speaker: "Alex O'Connor",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 79,
+      con: 85
+    },
+    sections: [
+      {
+        title: "Doctrine And Stakes",
+        timebox: "01:35-08:17",
+        score: {
+          pro: 82,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "03:22",
+              role: "Self-exile model",
+              words:
+                "Jones says hell is a freely chosen identity built on something besides God, not a pit where God externally torments people.",
+              score: 82,
+              critique:
+                "Jones's opening definition is a strong reframing move. He does not defend the crude picture of God throwing souls into a pit; he defines hell as self-chosen identity, internal consequence, and separation from God. That immediately narrows the target and makes the doctrine look less sadistic. He also connects heaven and judgment to painful sanctification, which answers the deathbed-conversion worry better than a simple reward/punishment model. The weakness is that the definition imports a lot of contested theology before defending it. If hell is self-chosen identity, the key question becomes whether confused or damaged agents can be fairly described as choosing it. The score is high because the model is coherent, but its moral burden remains.",
+              tags: []
+            },
+            con: {
+              time: "04:26",
+              role: "Doctrinal frame",
+              words:
+                "O'Connor identifies inescapability, real occupancy, reality, and desert as the classical pressure points, with desert the most controversial.",
+              score: 80,
+              critique:
+                "O'Connor's setup is fair and efficient. Instead of attacking the most lurid hell imagery only, he names recognizable doctrinal commitments: inescapability, occupancy, reality, and desert. That gives Jones a clear target and lets the discussion focus on moral justification rather than caricature. The strongest part is isolating desert as the controversial hinge, because even metaphorical or internal hell still has to explain why anyone should suffer it. The limitation is that the opening initially treats several historical versions together, while Jones quickly shifts to a softer annihilationist and postmortem-grace model. The score is strong because the framework is useful, but it needs later pressure on Jones's actual view.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Desert And Information",
+        timebox: "08:23-17:26",
+        score: {
+          pro: 80,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:53",
+              role: "Annihilationist reply",
+              words:
+                "Jones answers that hell need not be eternal, that souls continue rejecting God, and that honest rejection from bad information will be healed.",
+              score: 80,
+              critique:
+                "Jones's answer to infinite punishment is careful and more defensible than standard eternal-conscious-torment rhetoric. By identifying as an eventual annihilationist and citing the wages of sin as death, he avoids the blunt mismatch between finite wrongdoing and endless torment. His appeal to honest rejection being forgiven also takes epistemic luck seriously. The weakness is that he repeatedly relies on God's perfect justice to fill in the hardest details: who had enough information, what postmortem repair looks like, and why some souls still remain. That is a possible Christian answer, but it becomes difficult to evaluate. The score is strong, though capped because the rescue clauses do much of the work.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "God's perfect justice is used to preserve the hell doctrine while leaving the disputed postmortem mechanism under-described."
+                }
+              ]
+            },
+            con: {
+              time: "09:04",
+              role: "Epistemic fairness",
+              words:
+                "O'Connor argues that finite wrongdoing cannot merit infinite punishment, and that rational rejection of God implies missing or misleading information.",
+              score: 87,
+              critique:
+                "O'Connor's desert objection is the sharpest early pressure. He links two issues that often get separated: proportional punishment and epistemic responsibility. If God is love, truth, and the ground of being, then final rejection appears to require confusion, missing evidence, or a mistaken picture of heaven. That makes condemnation look less like deserved punishment and more like penalty for being persuaded by the wrong inputs. The argument is especially strong because it addresses Jones's self-choice model rather than only the fire-pit caricature. The weakness is that O'Connor can sound as if all false religious belief is wholly passive, which Jones later challenges through motivated reasoning. Still, the score is high because the moral burden is clear and central.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Motivated Belief",
+        timebox: "17:35-30:02",
+        score: {
+          pro: 79,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "18:24",
+              role: "Bias and identity",
+              words:
+                "Jones argues that people often choose arguments and identities they prefer, citing motivated evaluation and flat-earth psychology.",
+              score: 79,
+              critique:
+                "Jones's motivated-belief reply is relevant because it refuses a cartoon of human reason. The daycare-study example and flat-earth discussion support a real point: people often process evidence through desired identity, social belonging, and emotional reward. That matters if hell is tied to prideful self-enclosure rather than mere intellectual error. The weakness is that the evidence shows bias, not necessarily culpable control sufficient for postmortem suffering. Subconscious selection may explain why people resist truth, but it does not by itself prove that every resistant unbeliever could have done otherwise in a morally assessable way. The score is solid because the psychology is pertinent, but it does not close the fairness gap.",
+              tags: []
+            },
+            con: {
+              time: "20:36",
+              role: "Agency challenge",
+              words:
+                "O'Connor replies that subconscious bias still does not give a person morally relevant control over what arguments compel them.",
+              score: 84,
+              critique:
+                "O'Connor's reply keeps the responsibility issue precise. He grants that bias and emotion can shape belief, then asks whether subconscious influence restores morally relevant agency. That is the right distinction: explaining why someone believes through pride, church trauma, or community does not automatically show they deserve punishment for the resulting proposition. His flat-earth analogy usefully separates epistemic irrationality from moral blame. The weakness is that he presses passivity very hard, risking an underdeveloped account of self-scrutiny, intellectual virtue, and deliberate exposure to contrary evidence. Jones is right that people can sometimes notice and resist their biases. The score remains high because O'Connor identifies the missing bridge between biased belief formation and just condemnation.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Self-Exile And Deadline",
+        timebox: "30:02-38:50",
+        score: {
+          pro: 76,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "30:02",
+              role: "Respect for refusal",
+              words:
+                "Jones says hell is exile: if people want to be left alone, God grants that, while perfect justice supplies what honest seekers need.",
+              score: 76,
+              critique:
+                "Jones's C.S. Lewis answer has real pastoral and philosophical appeal. Asking what God should do if someone refuses forgiveness reframes hell as respect for agency rather than sadistic punishment. His later willingness to allow postmortem clarification also makes the model more humane than a strict deathbed cutoff. The weakness is that the view becomes hard to falsify: if someone accepts God, grace wins; if someone rejects God, the rejection is treated as willful pride; if misinformation is involved, perfect justice repairs it somehow. That elasticity protects the doctrine, but it also weakens predictive content. The score is mixed-solid because the model is coherent and compassionate, but the hard cases are largely deferred.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The doctrine is protected by flexible exceptions for honest rejection and divine repair without clearly specifying when continued hell remains justified."
+                }
+              ]
+            },
+            con: {
+              time: "30:37",
+              role: "Inheritance analogy",
+              words:
+                "O'Connor's father-and-inheritance analogy argues that a loving parent should correct the child's distorted picture before leaving them outside.",
+              score: 88,
+              critique:
+                "O'Connor's father-and-inheritance analogy is excellent because it translates divine hiddenness and hell into an ordinary moral relationship. If a father can easily correct a child's distorted picture of him, letting the child sleep outside in the rain looks irresponsible, even if the child verbally refuses the house. The analogy also exposes the puzzle of death as a deadline: why would character formation and better information stop mattering exactly then? Its weakness is that every analogy to God compresses differences about freedom, sanctification, and divine knowledge. Jones can say God does provide the needed postmortem encounter. Even so, the score is very high because the analogy focuses the fairness objection with unusual clarity.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Torment And Vengeance",
+        timebox: "39:00-48:30",
+        score: {
+          pro: 82,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "39:20",
+              role: "Gehenna and justice",
+              words:
+                "Jones reads Gehenna as self-corruption and invokes Miroslav Volf to argue that divine vengeance can restrain human retaliation.",
+              score: 82,
+              critique:
+                "Jones's Gehenna and Volf material gives the defense more moral seriousness. He does not merely say victims should forgive; he argues that belief in divine judgment can help stop retaliatory violence because justice is entrusted to God. That is a substantive answer to the charge that hell is only cruelty or revenge. His reading of Gehenna as self-corruption also fits his wider internal-consequence model. The weakness is that the move from a psychologically useful belief in divine vengeance to the truth or justice of hell is limited. A doctrine may restrain violence and still be morally or metaphysically false. The score is strong because this is a humane social rationale, but not decisive.",
+              tags: []
+            },
+            con: {
+              time: "41:32",
+              role: "Historical suspicion",
+              words:
+                "O'Connor asks whether evolving images of fiery torment came from wounded communities projecting a wish to see oppressors suffer.",
+              score: 78,
+              critique:
+                "O'Connor's historical pressure is helpful because it asks where vivid torment imagery comes from and whether it reflects moral insight or wounded imagination. His suggestion that some depictions look like wishful suffering is plausible when Jones himself traces them to persecuted communities longing for justice. The challenge prevents the conversation from treating every inherited image as equally authoritative. The weakness is that O'Connor mostly uses this as a diagnostic question rather than a full argument against Jones's view. Jones can concede that some hell imagery is revenge-laden while still preserving a chastened doctrine of divine judgment. The score is solid because the suspicion is relevant, but it does not by itself defeat self-exile or annihilationism.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Addiction And Universalism",
+        timebox: "48:37-57:22",
+        score: {
+          pro: 81,
+          con: 89
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "48:37",
+              role: "Grace and recovery",
+              words:
+                "Jones likens sin to addiction, says Christ is a rope thrown down into hell, and concedes hopeful universalism if every soul asks.",
+              score: 81,
+              critique:
+                "Jones's addiction-and-grace answer is one of his stronger concessions. By saying the soul that wants out can reach for Christ's rope, he avoids portraying hell as a locked prison for the repentant. His hopeful universalism is morally attractive and consistent with his claim that grace is not works-based. The weakness is that this answer gives up much of the earlier 'they choose hell' rhetoric. If those who cannot quit need help, Christ supplies it; if those who do not want help are misinformed, justice supplies correction; if all cry out, universalism follows. The score is high because the theology becomes more humane, but it leaves few clear cases of deserved continued hell.",
+              tags: []
+            },
+            con: {
+              time: "49:23",
+              role: "Internal dilemma",
+              words:
+                "O'Connor argues addicts either cannot quit or are mistaken about the alternative, so neither case supports saying they simply choose hell.",
+              score: 89,
+              critique:
+                "O'Connor's dilemma from addiction is the strongest exchange in the discussion. He accepts Jones's own analogy and shows that it yields two cases: the addict wants recovery but lacks power, or the addict rejects recovery because of a mistaken belief about the alternative. Applied to hell, neither case supports the slogan that people simply want to be there. The move is especially effective because it forces Jones to concede hopeful universalism if all damned souls seek grace. The weakness is that it assumes postmortem psychology will be transparent in ways Jones denies; pride might remain self-protective even under suffering. Still, the score is very high because the internal critique lands.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Atonement Price",
+        timebox: "57:25-1:05:42",
+        score: {
+          pro: 79,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "59:35",
+              role: "Death and exile",
+              words:
+                "Jones says the wages of sin are death and exile, and the Son experiences separation from the Father on the cross.",
+              score: 79,
+              critique:
+                "Jones's atonement response is doctrinally informed and fairly nimble. He distinguishes death and exile from literal residence in hell, then argues that the cross involves real separation within the triune life of God. That gives him a way to say Jesus bears sin's consequence without being trapped in the postmortem place of hell. The weakness is that the decisive burden moves into a mystery claim: an infinite being's anguish is beyond our comprehension, so the apparent mismatch between crucifixion and the world's sin is not measurable. That may be orthodox, but it is less publicly assessable than the earlier moral reasoning. The score is solid because the reply is coherent internally, but philosophically guarded.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "A special divine scale of suffering is introduced to answer proportionality, but its measuring standard remains inaccessible."
+                }
+              ]
+            },
+            con: {
+              time: "58:09",
+              role: "Substitution challenge",
+              words:
+                "O'Connor asks whether Jesus really pays sin's consequence if sinners deserve hell but Jesus does not suffer hell as their substitute.",
+              score: 82,
+              critique:
+                "O'Connor's atonement challenge is fair because it follows the internal logic of penalty substitution. If sinners deserve death, exile, or separation from God, then asking whether Jesus actually undergoes the relevant consequence is not a cheap slogan. His stronger version avoids simply mocking a three-day resurrection and presses proportionality: what price is paid for the sins of the world? The weakness is that O'Connor risks assuming one model of atonement and one account of hell's penalty, while Jones is explicitly working with death, exile, resurrection, and Trinitarian theology. The score is strong because the question exposes an explanatory burden, but it does not refute Jones's more complex framework.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 79,
+        strengths: [
+          "Jones offered a morally serious alternative to crude eternal-torture pictures by emphasizing self-exile, sanctification, grace, and possible annihilation.",
+          "He took epistemic unfairness seriously by allowing honest rejection, postmortem clarification, and hopeful universalism rather than defending a rigid deathbed cutoff.",
+          "His use of Gehenna, C.S. Lewis, Tim Keller, and Miroslav Volf gave the doctrine a wider theological and ethical context."
+        ],
+        blunders: [
+          {
+            text:
+              "His appeal to God's perfect justice often functioned as a flexible escape hatch when the mechanics of postmortem information, culpability, and continued hell needed direct explanation.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His account shifted between choosing hell, being addicted to sin, being misinformed, and needing grace, leaving the key term 'choice' unstable.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His psychology of hell relied on speculative claims about pride hardening over long postmortem periods.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 85,
+        strengths: [
+          "O'Connor consistently pressed Jones's actual self-exile model rather than merely attacking cartoon fire-and-brimstone imagery.",
+          "His strongest moves translated hell into ordinary moral analogies about parents, misinformation, addiction, and responsibility.",
+          "He forced important concessions about annihilationism, postmortem grace, and hopeful universalism."
+        ],
+        blunders: [
+          {
+            text:
+              "His control-over-belief argument sometimes flattened the difference between wholly passive persuasion and the cultivated habits by which people expose themselves to correction.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His historical suspicion about revenge imagery did not by itself refute Jones's more chastened self-exile and annihilationist account.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His atonement objection risked treating one penal-substitution frame as the whole Christian account under discussion.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
