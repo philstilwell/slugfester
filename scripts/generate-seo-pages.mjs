@@ -24,7 +24,9 @@ import {
   referencePath,
   referenceSeo,
   searchPath,
-  searchSeo
+  searchSeo,
+  topicsPath,
+  topicsSeo
 } from "../src/seo.js";
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
@@ -230,6 +232,12 @@ addPage(
 );
 
 addPage(
+  topicsPath(),
+  topicsSeo(debates),
+  "Browse Slugfester debate scorecards by recurring topic clusters."
+);
+
+addPage(
   assessmentPath(),
   assessmentSeo(),
   "The Codex Assessment Process explains how Slugfester creates quote-forward AI debate scorecards."
@@ -284,6 +292,7 @@ async function ensureMatches(file, expected) {
 if (!checkOnly) {
   await rm(join(root, "debate"), { recursive: true, force: true });
   await rm(join(root, "reference"), { recursive: true, force: true });
+  await rm(join(root, "topics"), { recursive: true, force: true });
   await rm(join(root, "assessment"), { recursive: true, force: true });
 }
 

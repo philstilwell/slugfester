@@ -25,6 +25,7 @@ Landing-page design:
 - The LogFall and CogBias header links are grouped under the visible `External Sites` label.
 - The LogFall and CogBias header links show short explanatory popovers on hover and keyboard focus.
 - The header includes a `Search` link to `/search/`.
+- The header includes a `Topics` link to `/topics/`, which groups debates by recurring topic.
 - The header includes an `Assessment` link to `/assessment/`, whose page title is `The Codex Assessment Process`.
 - The landing intro includes a divider line followed by a ` | `-delineated list of unique current debate topics.
 - The debate list is capped at three columns on wide screens, then steps down responsively.
@@ -37,6 +38,7 @@ Landing-page design:
 - Section ranges and argument timestamps link to the YouTube source with a `t=...s` timestamp query generated from the visible time; `MM:SS`, long-minute `MMM:SS`, and `H:MM:SS` formats are supported.
 - `/search/` lets users filter debates by text and interlocutor portraits.
 - Search-page interlocutor portraits live inside a default-closed accordion clearly labeled `Interlocutor filters`.
+- `/topics/` categorizes debates by recurring topic clusters and uses compact linked cards with general topic titles, topic chips, and interlocutor photos without visible interlocutor names.
 - Landing topic snippets and landing debate cards share one paired 84-debate pagination state; search results paginate separately in batches of 84 debates.
 - Search-page interlocutor portraits render in a scrollable panel inside the accordion.
 - The search results eyebrow reads `Matches: ...` and names the active text query and selected interlocutors, falling back to `Matches: all debates`.

@@ -21,17 +21,21 @@ import {
   referencePath,
   referenceSeo,
   searchPath,
-  searchSeo
+  searchSeo,
+  topicsPath,
+  topicsSeo
 } from "./seo.js";
 
 const app = document.querySelector("#app");
 const DEBATE_PAGE_SIZE = 84;
 const debateHashRoutePattern = /^#\/debate\/([a-z0-9-]+)$/;
 const searchHashRoutePattern = /^#\/search$/;
+const topicsHashRoutePattern = /^#\/topics$/;
 const assessmentHashRoutePattern = /^#\/assessment$/;
 const referenceHashRoutePattern = /^#\/reference\/(fallacy|bias)\/([a-z0-9-]+)(?:\?debate=([a-z0-9-]+))?$/;
 const debatePathRoutePattern = /^\/debate\/([a-z0-9-]+)\/?$/;
 const searchPathRoutePattern = /^\/search\/?$/;
+const topicsPathRoutePattern = /^\/topics\/?$/;
 const assessmentPathRoutePattern = /^\/assessment\/?$/;
 const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?$/;
 
@@ -234,6 +238,7 @@ function renderShell(content) {
       <nav aria-label="Primary">
         <a href="/">Debates</a>
         <a href="${searchPath()}">Search</a>
+        <a href="${topicsPath()}">Topics</a>
         <a href="${assessmentPath()}">Assessment</a>
         <span class="external-sites" aria-label="External Sites">
           <span class="external-sites-label">External Sites</span>
@@ -430,6 +435,228 @@ function normalizeSearchValue(value = "") {
     .trim();
 }
 
+const topicCategoryDefinitions = [
+  {
+    id: "science-cosmology-design",
+    title: "Science, cosmology, and design",
+    shortLabel: "Science & cosmology",
+    description:
+      "Scientific explanation, cosmic origins, fine-tuning, design, naturalism, and the evidential reach of physics or biology.",
+    keywords: [
+      "science",
+      "scientific",
+      "scientism",
+      "cosmology",
+      "cosmological",
+      "big bang",
+      "fine-tuning",
+      "design",
+      "dna",
+      "origin of life",
+      "evolution",
+      "kalam",
+      "nothing",
+      "nothingness",
+      "infinity",
+      "temporal infinity",
+      "beginning",
+      "contingency",
+      "necessary foundation",
+      "argument from limits",
+      "causal principle",
+      "digital physics",
+      "quantum",
+      "universe",
+      "physicalism",
+      "naturalism"
+    ]
+  },
+  {
+    id: "scripture-jesus-resurrection",
+    title: "Scripture, Jesus, and resurrection",
+    shortLabel: "Scripture & resurrection",
+    description:
+      "Biblical reliability, Jesus traditions, resurrection arguments, miracles, Christianity's central historical claims, and scriptural morality.",
+    keywords: [
+      "jesus",
+      "resurrection",
+      "bible",
+      "biblical",
+      "scripture",
+      "christology",
+      "new testament",
+      "gospel",
+      "gospels",
+      "contradictions",
+      "ancient christianity",
+      "christianity true",
+      "miracles",
+      "slavery"
+    ]
+  },
+  {
+    id: "morality-ethics-meaning",
+    title: "Morality, ethics, and meaning",
+    shortLabel: "Morality & meaning",
+    description:
+      "Objective morality, moral realism, ethical feeling, value, meaning, moral responsibility, and social or secular moral frameworks.",
+    keywords: [
+      "morality",
+      "moral",
+      "ethics",
+      "ethical",
+      "objective",
+      "objectivist",
+      "meaning",
+      "value",
+      "grace",
+      "emotivism",
+      "realism",
+      "anti-realism",
+      "responsibility",
+      "authority"
+    ]
+  },
+  {
+    id: "evil-suffering-hiddenness",
+    title: "Evil, suffering, and hiddenness",
+    shortLabel: "Evil & suffering",
+    description:
+      "The problem of evil, animal suffering, divine hiddenness, moral narrative, and whether suffering undermines theistic claims.",
+    keywords: ["evil", "suffering", "hiddenness", "animal suffering", "problem of evil"]
+  },
+  {
+    id: "mind-consciousness-free-will",
+    title: "Mind, consciousness, and free will",
+    shortLabel: "Mind & freedom",
+    description:
+      "Consciousness, mind-brain relation, agent causation, free will, idealism, and whether mental reality points beyond materialism.",
+    keywords: [
+      "consciousness",
+      "mind",
+      "brain",
+      "mind-brain",
+      "free will",
+      "freedom",
+      "compatibilism",
+      "libertarian",
+      "agent causation",
+      "agent",
+      "idealism",
+      "emergent mind",
+      "physicalism"
+    ]
+  },
+  {
+    id: "logic-reason-presuppositions",
+    title: "Logic, reason, and presuppositions",
+    shortLabel: "Logic & reason",
+    description:
+      "Logic, rationality, evidence, skepticism, presuppositional arguments, burden of proof, and the conditions for intelligible inquiry.",
+    keywords: [
+      "logic",
+      "presupposition",
+      "presuppositions",
+      "reason",
+      "rational",
+      "rationality",
+      "transcendental",
+      "evidence",
+      "skepticism",
+      "inquiry",
+      "disagreement",
+      "burden",
+      "proof"
+    ]
+  },
+  {
+    id: "religion-society-public-reason",
+    title: "Religion, society, and public reason",
+    shortLabel: "Religion & society",
+    description:
+      "Religion in public life, secular humanism, civilization, social order, Islam, political authority, and the future of human communities.",
+    keywords: [
+      "religion",
+      "public reason",
+      "civilization",
+      "faith",
+      "secular",
+      "humanism",
+      "social",
+      "society",
+      "islam",
+      "peace",
+      "power",
+      "iraq",
+      "anti-theism",
+      "human future"
+    ]
+  },
+  {
+    id: "god-theism-atheism",
+    title: "God, theism, and atheism",
+    shortLabel: "God & theism",
+    description:
+      "Direct cases for and against God, theism, atheism, divine reality, classical theism, and broad explanatory comparisons.",
+    keywords: [
+      "god",
+      "theism",
+      "atheism",
+      "atheist",
+      "christian theism",
+      "classical theism",
+      "divine",
+      "ultimate reality",
+      "belief in god",
+      "does god exist"
+    ]
+  }
+];
+
+const fallbackTopicCategory = {
+  id: "broader-debate-questions",
+  title: "Broader debate questions",
+  shortLabel: "General philosophy",
+  description:
+    "Debates whose strongest recurring theme does not cleanly fit the primary Slugfester topic clusters."
+};
+
+function topicMatchText(debate) {
+  return normalizeSearchValue(debate.label);
+}
+
+function topicCategoriesForDebate(debate) {
+  const source = topicMatchText(debate);
+  return topicCategoryDefinitions.filter((category) =>
+    category.keywords.some((keyword) => source.includes(keyword))
+  );
+}
+
+function topicTagsForDebate(debate) {
+  const matches = topicCategoriesForDebate(debate);
+  const tags = matches.length
+    ? matches.map((category) => category.shortLabel)
+    : [fallbackTopicCategory.shortLabel];
+
+  return [...new Set(tags)].slice(0, 4);
+}
+
+function topicGroupsForDebates() {
+  const groups = new Map(
+    [...topicCategoryDefinitions, fallbackTopicCategory].map((category) => [
+      category.id,
+      { ...category, debates: [] }
+    ])
+  );
+
+  debates.forEach((debate) => {
+    const primaryCategory = topicCategoriesForDebate(debate)[0] || fallbackTopicCategory;
+    groups.get(primaryCategory.id).debates.push(debate);
+  });
+
+  return [...groups.values()].filter((group) => group.debates.length > 0);
+}
+
 function uniqueInterlocutorsForDebate(debate) {
   const avatars = [
     ...avatarsForSpeakerText(debate.sides.pro.speaker),
@@ -516,6 +743,101 @@ function navigateSearch(state) {
     window.history.pushState({}, "", next);
   }
   route();
+}
+
+function renderTopics() {
+  setSeo(topicsSeo(debates));
+
+  const groups = topicGroupsForDebates();
+  const topicCards = groups
+    .map(
+      (group) => `
+        <a class="topic-jump" href="#topic-${escapeHtml(group.id)}">
+          <span>${escapeHtml(group.title)}</span>
+          <strong>${group.debates.length}</strong>
+        </a>
+      `
+    )
+    .join("");
+
+  app.innerHTML = renderShell(`
+    <main class="topics-page">
+      <section class="topics-hero">
+        <div>
+          <p class="eyebrow">Topic index</p>
+          <h1>Debates by topic</h1>
+          <p class="topics-lede">Recurring Slugfester themes gathered into compact clusters, with abbreviated debate cards for fast browsing.</p>
+        </div>
+        <aside class="topics-summary" aria-label="Topic catalog summary">
+          <span>Topic clusters</span>
+          <strong>${groups.length}</strong>
+          <span>Debate scorecards</span>
+          <strong>${debates.length}</strong>
+        </aside>
+      </section>
+
+      <nav class="topic-jump-list" aria-label="Topic categories">
+        ${topicCards}
+      </nav>
+
+      <section class="topic-category-list" aria-label="Debates grouped by topic">
+        ${groups.map(renderTopicGroup).join("")}
+      </section>
+    </main>
+  `);
+}
+
+function renderTopicGroup(group) {
+  return `
+    <section class="topic-category" id="topic-${escapeHtml(group.id)}">
+      <div class="topic-category-heading">
+        <div>
+          <p class="eyebrow">${group.debates.length} debates</p>
+          <h2>${escapeHtml(group.title)}</h2>
+        </div>
+        <p>${escapeHtml(group.description)}</p>
+      </div>
+      <div class="topic-card-grid">
+        ${group.debates.map(renderTopicDebateCard).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function renderTopicDebateCard(debate) {
+  const people = uniqueInterlocutorsForDebate(debate);
+  const tags = topicTagsForDebate(debate);
+
+  return `
+    <article class="topic-debate-card">
+      <a class="topic-card-title" href="${escapeHtml(debatePath(debate))}" aria-label="Open ${escapeHtml(debateNumberLabel(debate))}: ${escapeHtml(debate.label)}">
+        ${renderDebateNumber(debate)}
+        <span>${escapeHtml(debate.label)}</span>
+      </a>
+      <div class="topic-chip-row" aria-label="Topics">
+        ${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}
+      </div>
+      <div class="topic-card-bottom">
+        <span class="topic-card-people" aria-label="Interlocutor photos">
+          ${people
+            .map(
+              (person) => `
+                <img
+                  src="${escapeHtml(person.src)}"
+                  alt=""
+                  width="512"
+                  height="512"
+                  loading="lazy"
+                  decoding="async"
+                >
+              `
+            )
+            .join("")}
+        </span>
+        <span class="topic-card-duration">${escapeHtml(debate.duration)}</span>
+      </div>
+    </article>
+  `;
 }
 
 function renderSearch() {
@@ -1292,6 +1614,8 @@ function route() {
     hash.match(debateHashRoutePattern) || window.location.pathname.match(debatePathRoutePattern);
   const searchMatch =
     hash.match(searchHashRoutePattern) || window.location.pathname.match(searchPathRoutePattern);
+  const topicsMatch =
+    hash.match(topicsHashRoutePattern) || window.location.pathname.match(topicsPathRoutePattern);
   const assessmentMatch =
     hash.match(assessmentHashRoutePattern) ||
     window.location.pathname.match(assessmentPathRoutePattern);
@@ -1303,6 +1627,8 @@ function route() {
     renderDebate(decodeURIComponent(debateMatch[1]));
   } else if (searchMatch) {
     renderSearch();
+  } else if (topicsMatch) {
+    renderTopics();
   } else if (assessmentMatch) {
     renderAssessment();
   } else if (referenceMatch) {
@@ -1334,6 +1660,7 @@ function shouldHandleInternally(link) {
     url.hash &&
     !url.pathname.match(debatePathRoutePattern) &&
     !url.pathname.match(searchPathRoutePattern) &&
+    !url.pathname.match(topicsPathRoutePattern) &&
     !url.pathname.match(assessmentPathRoutePattern) &&
     !url.pathname.match(referencePathRoutePattern)
   ) {
@@ -1344,6 +1671,7 @@ function shouldHandleInternally(link) {
     url.pathname === "/" ||
     debatePathRoutePattern.test(url.pathname) ||
     searchPathRoutePattern.test(url.pathname) ||
+    topicsPathRoutePattern.test(url.pathname) ||
     assessmentPathRoutePattern.test(url.pathname) ||
     referencePathRoutePattern.test(url.pathname)
   );

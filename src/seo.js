@@ -45,6 +45,10 @@ export function searchPath() {
   return "/search/";
 }
 
+export function topicsPath() {
+  return "/topics/";
+}
+
 export function assessmentPath() {
   return "/assessment/";
 }
@@ -271,6 +275,54 @@ export function searchSeo(debates = []) {
       breadcrumbJsonLd([
         { name: SITE_NAME, path: "/" },
         { name: "Search", path: searchPath() }
+      ])
+    ]
+  };
+}
+
+export function topicsSeo(debates = []) {
+  const topics = debates.map((debate) => debate.label);
+  const description = `Browse ${debates.length} Slugfester debate scorecards grouped by recurring topics, with compact debate links and participant portraits.`;
+
+  return {
+    title: pageTitle("Debates by topic"),
+    description,
+    canonicalPath: topicsPath(),
+    lastmod: SITE_UPDATED_DATE,
+    imagePath: DEFAULT_IMAGE,
+    imageAlt: "Slugfester topic index with compact debate cards.",
+    type: "website",
+    jsonLd: [
+      organizationJsonLd(),
+      websiteJsonLd(topics),
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: "Slugfester debates by topic",
+        description,
+        url: absoluteUrl(topicsPath()),
+        isPartOf: {
+          "@id": WEBSITE_ID
+        },
+        about: topics.map((topic) => ({
+          "@type": "Thing",
+          name: topic
+        })),
+        mainEntity: {
+          "@type": "ItemList",
+          name: "Debate topics",
+          numberOfItems: debates.length,
+          itemListElement: debates.map((debate, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            url: absoluteUrl(debatePath(debate)),
+            name: `${debateNumberLabel(debate)}: ${debate.label}`
+          }))
+        }
+      },
+      breadcrumbJsonLd([
+        { name: SITE_NAME, path: "/" },
+        { name: "Topics", path: topicsPath() }
       ])
     ]
   };
