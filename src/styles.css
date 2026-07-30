@@ -896,10 +896,16 @@ a {
 .topic-chip-row {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 5px;
 }
 
 .topic-chip-row span {
+  display: inline-flex;
+  flex: 0 0 auto;
+  width: fit-content;
+  max-width: 100%;
   padding: 4px 7px;
   color: #30413e;
   background: var(--surface-2);
