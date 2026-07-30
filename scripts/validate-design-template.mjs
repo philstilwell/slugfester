@@ -125,7 +125,7 @@ requireIncludes("topics page", styles, ".topic-card-people");
 requireIncludes("topics page", styles, ".topic-card-reveal");
 requireIncludes("topics page", styles, "min-height: 210px;");
 requireIncludes("topics page", styles, "inset: 0;");
-requireIncludes("topics page", styles, "font-size: 0.56rem;");
+requireIncludes("topics page", styles, "font-size: 0.62rem;");
 requireIncludes("topics page", styles, ".topic-debate-card:hover .topic-card-reveal");
 requireIncludes("topics page", styles, ".topic-debate-card:focus-within .topic-card-reveal");
 requireIncludes("assessment page", styles, ".assessment-page");
