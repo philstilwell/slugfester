@@ -31,6 +31,7 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
+const assetVersion = "20260730-topic-card-reveal";
 const cloudflareWebAnalytics =
   "<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{\"token\": \"05c16e0e536340d0a1e0fdcaa6451389\"}'></script><!-- End Cloudflare Web Analytics -->";
 
@@ -118,13 +119,13 @@ function renderHtml(seo, noscriptText) {
     <link rel="mask-icon" href="/assets/favicon.svg" color="#d35d47">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="stylesheet" href="/src/styles.css?v=${assetVersion}">
     ${structuredData ? `<script type="application/ld+json" id="seo-structured-data">${structuredData}</script>` : ""}
   </head>
   <body>
     <div id="app"></div>
     <noscript>${escapeHtml(noscriptText)}</noscript>
-    <script type="module" src="/src/app.js"></script>
+    <script type="module" src="/src/app.js?v=${assetVersion}"></script>
     ${cloudflareWebAnalytics}
   </body>
 </html>
