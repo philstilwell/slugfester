@@ -832,9 +832,7 @@ function renderTopicGroup(group) {
 function renderTopicDebateCard(debate) {
   const people = uniqueInterlocutorsForDebate(debate);
   const tags = topicTagsForDebate(debate);
-  const speakers = [debate.sides.pro, debate.sides.con]
-    .map((side) => `${side.name}: ${side.speaker}`)
-    .join(" | ");
+  const speakers = [debate.sides.pro.speaker, debate.sides.con.speaker].join(" | ");
 
   return `
     <article class="topic-debate-card">

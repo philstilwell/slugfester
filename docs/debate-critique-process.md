@@ -129,6 +129,6 @@ Before committing a new debate:
 - The debate number is at least two digits, zero-padded below 100, unique, and sequential in debate-list order.
 - The debate label is distinct from every other listed debate.
 - The debate label places the compact `/topics/` card in the intended category; update `topicCategoryDefinitions` if the debate belongs to a real recurring theme not yet represented.
-- The `/topics/` compact card uses a general topic title and does not visibly print interlocutor names until hover or keyboard focus reveals the summary and speaker names.
+- The `/topics/` compact card uses a general topic title and does not visibly print interlocutor names until hover or keyboard focus reveals the summary and compact speaker names inside the standard-height card.
 - `npm run seo` has regenerated clean URL pages, sitemap, robots, and fallback HTML.
 - `npm run check` passes.
