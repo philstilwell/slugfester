@@ -45438,5 +45438,323 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "craig-clifton-kalam-cosmological-argument-2021",
+    number: "126",
+    title:
+      "William Lane Craig vs Scott Clifton: The Kalam Cosmological Argument",
+    label: "Kalam cosmological argument",
+    date: "2026-07-30",
+    duration: "1 hr 00 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=TmYCwjU_5Wc",
+    motion:
+      "Does the Kalam causal premise justify a transcendent cause of the universe, or is ordinary causation too bound to space, time, and material conditions to support that inference?",
+    summary:
+      "Craig defends the causal premise as a metaphysical principle that leads to a transcendent creator; Clifton grants a cosmic beginning for argument's sake while challenging the premise's scope and causal imagery.",
+    sourceNote:
+      "Based on YouTube English-original automatic captions for the Capturing Christianity upload. This is an informal livestream discussion rather than a strict formal debate; captions are lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "whatever begins to exist has a cause",
+        context:
+          "Craig's central posture is that the Kalam rests on a deep metaphysical principle, not merely a physical regularity inside the universe."
+      },
+      con: {
+        text: "the scope of the causal principle is physical",
+        context:
+          "Clifton's main challenge is that ordinary causal judgments may not extend to the totality of space-time itself."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Kalam defense",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "Causal-scope critique",
+        speaker: "Scott Clifton",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 84,
+      con: 81
+    },
+    sections: [
+      {
+        title: "Kalam Ground Rules",
+        timebox: "1:10-8:16",
+        score: {
+          pro: 86,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:10",
+              role: "Argument map",
+              words:
+                "Craig states the Kalam from Al-Ghazali: whatever begins to exist has a cause; the universe began to exist; therefore the universe has a cause.",
+              score: 86,
+              critique:
+                "Craig's opening is strong because it gives the audience a clean map before technical objections begin. He distinguishes the causal premise from the beginning premise, notes philosophical and scientific supports for the latter, and explains why conceptual analysis of a universe-cause yields theologically significant attributes. The weakness is compression. The summary moves from four supports for cosmic beginning to a personal creator quickly, while the discussion will mostly test whether the causal premise even reaches that far. Still, as an opening framework, it is clear, historically situated, and relevant. The score is high because Craig states the argument in its strongest standard form and identifies where later analysis must occur.",
+              tags: []
+            },
+            con: {
+              time: "6:38",
+              role: "Premise focus",
+              words:
+                "Clifton grants for argument that the universe began to exist and asks to scrutinize the first premise instead.",
+              score: 84,
+              critique:
+                "Clifton's setup is dialectically smart. By granting the second premise for the sake of argument, he prevents the exchange from becoming another dispute about Big Bang cosmology, actual infinities, or scientific authority. That lets him focus on the causal premise and whether its empirical support has the right scope. He also frames the conversation charitably, saying the goal is to map assumptions and intuitions rather than win a debate. The limitation is that this concession narrows the skeptical lane: if the causal premise survives, Craig gets a large part of what he wants. The score is high because Clifton improves the discussion's precision while accepting a real argumentative risk.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Material Cause Parity",
+        timebox: "8:47-18:36",
+        score: {
+          pro: 82,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "15:42",
+              role: "Agent counterexample",
+              words:
+                "Craig grants strong induction for material causes, but says intellectual agents can produce thoughts without material causes.",
+              score: 82,
+              critique:
+                "Craig's response is useful because he does not deny Clifton's inductive observation. He accepts that efficient and material causes normally appear together, then asks whether that pairing is essential to causality as such. The thought-example gives him an apparent case of efficient causation without a material cause and fits his later appeal to a personal creator. The weakness is that mental events are not obviously comparable to the beginning of concrete physical reality. Clifton immediately distinguishes concrete objects from thoughts, so the analogy needs further support. The score is strong because Craig finds a relevant pressure point in the parity argument, but limited because the counterexample may be too unlike the universe.",
+              tags: []
+            },
+            con: {
+              time: "8:47",
+              role: "Double causal principle",
+              words:
+                "Clifton proposes a parity premise: whatever has an efficient cause has a material cause, while the universe has no material cause.",
+              score: 84,
+              critique:
+                "Clifton's double-causal principle is a sharp parody because it mirrors Craig's inductive support. If all observed beginnings have causes, they also appear to involve material conditions, so the skeptic asks why one feature may be universalized and the other discarded. That directly targets the Kalam's move from ordinary causation to cosmic causation. The weakness is terminological. Clifton broadens material cause beyond physical stuff, while Craig uses a more classical physical sense; if the term shifts, the symmetry becomes less clean. Even with that risk, the move is strong because it forces Craig to explain why efficient causation is essential while material causation is merely common.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The strength of the parity argument depends on how broadly 'material cause' is being used."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Concrete Objects",
+        timebox: "18:52-30:24",
+        score: {
+          pro: 84,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "20:13",
+              role: "Double absurdity",
+              words:
+                "Craig argues Clifton's view makes the universe begin with neither an efficient cause nor a material cause, which is less plausible than Craig's view.",
+              score: 84,
+              critique:
+                "Craig's double-absurdity reply has force because it compares costs rather than pretending his view is cost-free. He grants that creatio ex nihilo lacks a material cause, but argues Clifton pays a steeper price by losing both material and efficient causation. That is a fair dialectical move once both sides grant a beginning. The weakness is that it assumes the beginning is the kind of fact that needs causal explanation, which is exactly what Clifton is challenging. Craig answers that by appealing to being-from-nonbeing, but the immediate comparison can feel question-loading. The score is high because the cost comparison is clear and relevant, though not decisive against a scope objection.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The double-absurdity framing presumes the cosmic beginning belongs in the class of things needing causal explanation."
+                }
+              ]
+            },
+            con: {
+              time: "21:32",
+              role: "Category-error reply",
+              words:
+                "Clifton says Craig views an acausal beginning through causal categories, like calling a no-ball situation a defective home run.",
+              score: 83,
+              critique:
+                "Clifton's category-error reply is nimble. The home-run analogy makes his point memorable: if he is not positing a caused event, then asking which causal components are missing may misdescribe the position. He also keeps the focus on whether the universe's beginning is already assumed to require a cause. The weakness is that the analogy can underplay the datum Craig emphasizes. Both parties are treating the universe as beginning to exist for argument's sake, and Craig can reasonably ask whether that beginning has an explanation. Clifton's reply clarifies the disagreement more than it resolves it. The score is strong because it exposes possible question-loading, but Craig's explanatory demand remains live.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Metaphysical Scope",
+        timebox: "31:02-38:09",
+        score: {
+          pro: 86,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "32:30",
+              role: "Tensed-time principle",
+              words:
+                "Craig says on a tensed theory the universe truly comes into being, so denying a cause violates being-from-being metaphysics.",
+              score: 86,
+              critique:
+                "Craig's metaphysical-scope answer is one of his better moves. He makes clear that the causal premise is not Boyle's law or a local physical regularity; it is the older metaphysical principle that being does not arise from nonbeing. That helps explain why he refuses to restrict it to space-time. He also ties the wording of 'came into being' to a defended tensed theory of time. The weakness is that much of the persuasive force depends on accepting A-theory or at least treating temporal becoming as primitive. For a listener with B-theory sympathies, the argument can feel like a loaded description. The score is high because Craig clarifies the premise's intended level.",
+              tags: []
+            },
+            con: {
+              time: "37:47",
+              role: "Scope challenge",
+              words:
+                "Clifton says responding that the principle is metaphysical reasserts precisely what the within-universe objection questions.",
+              score: 84,
+              critique:
+                "Clifton's scope challenge is exactly where the debate belongs. He concedes ordinary causation and asks why its reach should be metaphysical rather than physical. That prevents Craig from winning by merely restating the premise in grander terms. The strongest part is the burden question: if the universe is the totality of space-time, why assume principles observed inside it apply to it as a whole? The weakness is that Clifton must offer more than caution. If he restricts the causal premise, he needs a principled stopping point rather than a protective exception for the universe. The score is high because the challenge is focused, but Craig fairly demands a justification for the restriction.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Nothing Language",
+        timebox: "38:58-47:54",
+        score: {
+          pro: 85,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "40:03",
+              role: "Absurdity appeal",
+              words:
+                "Craig says restricted causal principles do not justify denying the broader claim that something cannot come from nothing.",
+              score: 85,
+              critique:
+                "Craig's nothingness argument is rhetorically and philosophically strong. He presses Clifton to notice that weaker principles, such as all non-initial beginnings have causes, do not defeat the broader metaphysical principle. The appeal to Hume is carefully framed: not as proof from authority, but as evidence that even a great skeptic treated uncaused arising as absurd. The weakness is that the phrase 'comes from nothing' may import tensed imagery Clifton rejects. If there is no prior state and no nothingness as a condition, the wording can mislead. The score is high because Craig keeps the explanatory burden visible, but the argument still depends on contested temporal grammar.",
+              tags: []
+            },
+            con: {
+              time: "42:18",
+              role: "No-coming reply",
+              words:
+                "Clifton says the universe did not come from nothing; rather, if there was no prior time, it did not do any coming.",
+              score: 82,
+              critique:
+                "Clifton's language critique is important because metaphysical pictures often sneak in through verbs. If nothingness is not a state and there is no before-the-universe, then saying the universe 'came from nothing' can suggest a stage-set that the skeptic denies. His distinction between 'not from anything' and 'from not-anything' is subtle but useful. The weakness is that Craig can answer that 'came into being' names a tensed fact, not a spatial journey from a prior location. Clifton also admits B-theory feels intuitive to him, which makes the objection partly dependent on unresolved time metaphysics. The score is strong because he exposes misleading imagery, but less forceful against Craig's stated A-theory.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Prior's Challenge",
+        timebox: "48:02-58:21",
+        score: {
+          pro: 88,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "48:27",
+              role: "Why only universes",
+              words:
+                "Craig invokes Arthur Prior: if things can begin uncaused, why do only universes, not bicycles or root beer, begin that way?",
+              score: 88,
+              critique:
+                "Craig's Arthur Prior argument is the strongest closing move because it makes the denied principle pay explanatory rent. If uncaused beginning is possible, the skeptic owes an account of why that possibility is limited to the universe rather than ordinary objects. Craig also tightens the point after Clifton's event analogy: libertarian free choices still involve agents, while an uncaused universe on atheism lacks anything prior to constrain what appears. The weakness is that it assumes possible uncaused beginnings form a class that needs internal restrictions; Clifton denies the imagery behind that class. Even so, the challenge is clear and hard to deflect. The score is very high because it exposes a lingering explanatory asymmetry.",
+              tags: []
+            },
+            con: {
+              time: "55:07",
+              role: "Explanation burden",
+              words:
+                "Clifton says claiming such an explanation is impossible is ambitious, and offers alternative causal principles or elevator-style internal explanations.",
+              score: 80,
+              critique:
+                "Clifton's final reply rightly targets burden. Craig is not merely asking for an explanation; he says an explanation is impossible if the universe is uncaused. Clifton's elevator analogy tries to show that restrictions can depend on facts within a system rather than on external nothingness, and he points again to alternate principles such as Graham Oppy's non-initial causation rule. The weakness is that Craig's reply lands: the packed elevator already exists and therefore cannot be explanatorily prior to its own beginning. Likewise, internal facts may explain ordinary non-appearances only after a universe exists. The score is solid because Clifton identifies an overstatement risk, but his positive explanation remains incomplete.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 84,
+        strengths: [
+          "Craig kept the Kalam's first premise sharply distinguished from the beginning premise and repeatedly clarified which claim was under attack.",
+          "His best answers framed causation as a metaphysical principle rather than a merely physical law inside space-time.",
+          "The Arthur Prior challenge gave the defense a strong explanatory-pressure finish: if uncaused beginnings are allowed, why are they so selective?"
+        ],
+        blunders: [
+          {
+            text:
+              "Craig sometimes answered the scope objection by restating that the causal principle is metaphysical, when the live question was why that scope should be accepted.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His wording sometimes moved between a tensed metaphysical fact and pop-into-being imagery, risking equivocation over 'coming from nothing'.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 81,
+        strengths: [
+          "Clifton made the exchange unusually productive by granting the universe's beginning for argument and concentrating on premise one.",
+          "He pressed a precise parity problem: ordinary observed causation includes material conditions as well as efficient causes.",
+          "He repeatedly distinguished ordinary objects within time from the totality of space-time, which kept Craig from relying on simple pop-into-being imagery."
+        ],
+        blunders: [
+          {
+            text:
+              "His material-cause parody depended on a broad stipulated use of material cause that was not obviously the Aristotelian or Craigian sense.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "He leaned on B-theory-friendly intuitions about the universe existing at all temporal points while trying not to make the objection hinge on B-theory.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
