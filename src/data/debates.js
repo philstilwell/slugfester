@@ -3239,7 +3239,7 @@ export const debates = [
         title: "Origins of religious attribution",
         timebox: "18:45-31:30",
         score: {
-          pro: 71,
+          pro: 74,
           con: 78
         },
         exchanges: [
@@ -46141,6 +46141,373 @@ export const debates = [
               {
                 label: "Belief bias",
                 url: bias("belief-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: "craig-law-evil-god-challenge-2011",
+    number: "128",
+    title: "William Lane Craig vs Stephen Law: Does God Exist?",
+    label: "Evil God challenge and theism",
+    date: "2026-07-30",
+    duration: "1 hr 58 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=APfd7B3CEhI",
+    motion:
+      "Does God exist, and do Craig's cumulative arguments overcome Law's evidential problem of evil and evil-God symmetry challenge?",
+    summary:
+      "Craig builds a cumulative case from cosmic origin, moral objectivity, and Jesus' resurrection; Law argues that overwhelming suffering makes a good God no more defensible than an evil God once mirrored defenses are allowed.",
+    sourceNote:
+      "Built from YouTube English automatic captions for the ReasonableFaithOrg upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God makes sense of a wide range of the data",
+        context:
+          "Craig's central posture is cumulative: cosmic origin, moral objectivity, and resurrection evidence are presented as converging reasons for Christian theism."
+      },
+      con: {
+        text: "why not the good God hypothesis",
+        context:
+          "Law's central posture is that the problem of evil undermines a good God in the same way the problem of good undermines an evil God."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian theism",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "Evil-God challenge",
+        speaker: "Stephen Law",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 78,
+      con: 81
+    },
+    sections: [
+      {
+        title: "Cumulative Case and Evil",
+        timebox: "03:32-37:44",
+        score: {
+          pro: 82,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:13",
+              role: "Three-part theistic case",
+              words:
+                "Craig says he will defend good reasons for God from the universe's origin, objective moral values and duties, and Jesus' resurrection.",
+              score: 82,
+              critique:
+                "Craig's opening is disciplined cumulative-case work. He tells the audience exactly which contentions he will defend, then moves from cosmological beginning to a personal cause, from objective moral duties to a good ground, and from resurrection evidence to Christian specificity. The strength is architecture: each argument supplies a different attribute rather than pretending one proof does everything. The weakness is compression and confidence. Infinite-past puzzles, BGV cosmology, moral ontology, and resurrection historiography are each contested enough to need more defense than an opening can provide. The score is high because the case is orderly and relevant, but not exceptional because several bridges are asserted quickly.",
+              tags: []
+            },
+            con: {
+              time: "22:38",
+              role: "Evidential suffering case",
+              words:
+                "Law says hundreds of millions of years of animal and human suffering make a perfectly good, powerful God highly implausible.",
+              score: 86,
+              critique:
+                "Law's opening is powerful because it gives the negative side one vivid, sustained evidential burden. He does not merely gesture at evil; he describes predation, prehistoric child mortality, and the scale of undeserved suffering, then asks whether every last ounce can plausibly be justified by a good and powerful God. The move is strongest because it targets Craig's specific good God rather than every possible creator. The weakness is strategic narrowness. Law postpones Craig's positive arguments, giving Craig room to say the affirmative case stands untouched. Even so, the challenge is central, emotionally concrete, and logically structured, so the high score follows under this motion.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Evil-God Symmetry",
+        timebox: "26:20-57:45",
+        score: {
+          pro: 74,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "38:49",
+              role: "Skeptical-theism reply",
+              words:
+                "Craig says Law must show God probably lacks morally sufficient reasons, and that good or evil cannot settle God's character inductively.",
+              score: 74,
+              critique:
+                "Craig's skeptical-theism reply identifies a real burden problem for evidential evil arguments. A finite observer cannot simply inspect every consequence of suffering and know that no morally sufficient reason exists, especially within a worldview that includes eternal life and providence. That is a serious caution against overconfident probability claims. The weakness is that it bites more broadly than Craig wants. If our inability to judge hidden purposes also protects the evil-creator hypothesis from the problem of good, then the reply weakens the very asymmetry Law is challenging. The score is solid because Craig exposes epistemic limits, but lower because the answer risks leveling the field between good God and evil creator.",
+              tags: []
+            },
+            con: {
+              time: "26:20",
+              role: "Mirror hypothesis",
+              words:
+                "Law argues that standard theodicies can be flipped to defend an evil creator, so they do not privilege a good God.",
+              score: 85,
+              critique:
+                "Law's mirror hypothesis is the debate's signature move. By reversing free will, law-governed nature, soul-making, mystery, afterlife compensation, and contrast goods, he shows that many familiar theodicies have a formal symmetry problem. The strength is not that evil God is plausible; it is that the same style of defense can make an absurd hypothesis look insulated. That presses Craig to explain why his skeptical resources do not overprotect bad theories. The weakness is that some theistic resources, such as moral perfection, worship-worthiness, or privation accounts, may resist simple reversal. Still, the challenge is sharp, memorable, and directly responsive to the problem-of-evil debate throughout the exchange.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral Evil and Animal Pain",
+        timebox: "42:44-1:05:57",
+        score: {
+          pro: 71,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "42:44",
+              role: "Evil proves God",
+              words:
+                "Craig argues that if evil exists, objective moral values exist, and if objective values need God, evil actually supports theism.",
+              score: 74,
+              critique:
+                "Craig's moral pivot is formally neat: if Law calls suffering evil in an objective sense, then Law seems to rely on objective moral value, which Craig says requires God. That prevents the negative side from casually borrowing moral realism while denying its foundation. The weakness is that Law can reformulate the evidential argument around suffering, pain, and expected observation without using the word evil as a moral property. More importantly, the premise that objective moral value requires God is still disputed, so the argument cannot be used as a quick escape from suffering unless that premise is independently defended. The score is solid, but the move depends on a contested bridge.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The reply treats objective moral value as requiring God before that disputed grounding premise has been established."
+                }
+              ]
+            },
+            con: {
+              time: "49:40",
+              role: "Suffering without moral realism",
+              words:
+                "Law replies that the evidential problem can be run from suffering alone, without assuming objective moral evil.",
+              score: 83,
+              critique:
+                "Law's suffering-only reformulation is an important repair. He sees that Craig wants to convert moral evil into evidence for God, so he restates the challenge in terms of observed pain and suffering rather than objective wickedness. That makes the argument accessible even to a moral anti-realist: a perfectly good, powerful, knowledgeable God still seems unlikely given vast suffering, regardless of whether evil is a mind-independent property. The weakness is that goodness remains in the hypothesis being tested, so some normative concept remains nearby. Law can avoid asserting moral realism, but he still needs the audience to understand benevolence and gratuitous suffering. The score is high because the repair blocks Craig's immediate reversal.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral Objectivity",
+        timebox: "58:14-1:10:40",
+        score: {
+          pro: 78,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "58:14",
+              role: "Unanswered-arguments pressure",
+              words:
+                "Craig says Law has not answered cosmology, morality, or resurrection, and that moral objectivity is more obvious than skeptical arguments against it.",
+              score: 78,
+              critique:
+                "Craig's second rebuttal is strategically effective. He reminds the audience that the debate question is broad, so Law cannot win merely by pressing one objection if the cumulative case remains standing. He also uses moral appearances well: some judgments, such as torturing children for fun, appear more secure than many skeptical arguments against morality. The weakness is that the appeal to moral obviousness does not by itself ground moral ontology in God. It supports realism against skepticism more directly than theism against non-theistic realism. The score is strong because Craig manages debate burdens well, but capped because the theistic grounding step still needs more than moral intuition.",
+              tags: []
+            },
+            con: {
+              time: "1:06:54",
+              role: "First-premise burden",
+              words:
+                "Law says Craig must show no atheist-friendly account can ground objective moral claims, not merely reject an evolutionary account.",
+              score: 82,
+              critique:
+                "Law's first-premise objection is one of his best philosophical replies. He grants that evolutionary genealogy does not make morality objective, but points out that this only defeats one crude naturalistic story. Craig's premise requires much more: that no atheist-friendly account, including non-natural moral realism or other non-theistic options, can ground objective moral value. That is a fair burden check and it keeps Craig from winning by comparing theism with the weakest secular alternative. The weakness is that Law gives possibilities rather than defending one positive account in detail. The score is high because he locates the missing exclusion argument, though his own alternative remains promissory.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection Reports",
+        timebox: "1:10:42-1:19:48",
+        score: {
+          pro: 79,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:17:56",
+              role: "Contextual miracle defense",
+              words:
+                "Craig says resurrection claims should be tested by explanatory criteria and are plausible within Jesus' unique religious-historical context.",
+              score: 79,
+              critique:
+                "Craig's resurrection defense is stronger in closing than in the opening because he addresses Law's miracle-report skepticism directly. He names ordinary explanatory criteria, such as scope, power, plausibility, and ad hocness, and argues that the resurrection is not a contextless anomaly but the climax of Jesus' public claims and ministry. That helps distinguish it from generic paranormal reports. The weakness is that he still does not walk through the criteria in detail for the specific facts during this compressed exchange. The audience hears why the case could be different, but not enough about why the natural alternatives fail. The score is strong because the reply is relevant, but not fully developed.",
+              tags: []
+            },
+            con: {
+              time: "1:10:42",
+              role: "UFO-report analogy",
+              words:
+                "Law argues that some extraordinary reports remain hard to explain anyway, so baffling testimony is weak evidence for miracles.",
+              score: 78,
+              critique:
+                "Law's UFO-report analogy usefully challenges inference to the best explanation in miracle contexts. The Venus case shows that sincere witnesses, multiple reports, embarrassment, and even a coincident radar blip can look impressive while still having a mundane explanation. That gives listeners a probabilistic warning: hard-to-explain reports are expected to occur occasionally even if no miracles happen. The weakness is that the analogy can flatten relevant differences. Craig's resurrection case depends on ancient Jewish expectations, empty-tomb claims, postmortem appearances, and movement origins, not just isolated sighting reports. The score is solid-strong because the caution is fair, but it needs closer comparison with the actual resurrection evidence.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Creator and Moral Character",
+        timebox: "1:25:38-1:32:56",
+        score: {
+          pro: 81,
+          con: 68
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:29:47",
+              role: "Cumulative modesty",
+              words:
+                "Craig says the cosmological argument modestly establishes a personal creator, while moral and resurrection arguments add richer theological content.",
+              score: 81,
+              critique:
+                "Craig's cumulative-modesty answer is a clean explanation of natural theology. He concedes that the cosmological argument does not establish divine goodness, then treats that as a feature rather than a flaw: one argument supplies creator-properties, while later arguments address moral character and Christian specificity. That helps answer Law's attempt to make neutrality look like failure. The weakness is that the cumulative case is only as strong as its weaker links. If the moral and resurrection arguments do not survive Law's pressure, the cosmological argument alone leaves a very thin conclusion. Still, Craig handles the architecture of his case well, so this exchange earns a strong score.",
+              tags: []
+            },
+            con: {
+              time: "1:27:10",
+              role: "Bracketing cosmology",
+              words:
+                "Law says he is confident the cosmological argument has significant problems, but brackets it as neutral on moral character.",
+              score: 68,
+              critique:
+                "Law's bracketing strategy is understandable but costly. He is right that an origin argument, even if sound, does not by itself establish a good God rather than a morally different creator. That keeps the debate focused on the moral-character issue he came to press. The weakness is that the stated motion is not only 'is God good?' but 'does God exist?' In Q&A he admits he is unsure where the cosmological argument fails and changes his mind about the exact problem. Appealing to the broad confidence of philosophers without giving the premise-level objection leaves Craig's argument dialectically standing. The score is mixed because the narrowing is relevant, but under-defended.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Law invokes broad philosophical rejection of the cosmological argument while declining to identify the argument's live premise-level failure."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Q&A Grounding and Ignorance",
+        timebox: "1:33:19-1:57:03",
+        score: {
+          pro: 75,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:40:32",
+              role: "Personal-lawgiver grounding",
+              words:
+                "Craig says objective duties and prohibitions are mysterious without a personal moral lawgiver to issue obligations.",
+              score: 75,
+              critique:
+                "Craig's personal-lawgiver argument clarifies what he thinks atheism lacks: not moral behavior, but an issuer of duties and prohibitions with authority over persons. That is a more precise grounding claim than merely saying evolution cannot explain morality. He also reasonably asks why human primates, rather than mosquitoes or guinea pigs, would carry intrinsic moral value on a purely natural picture. The weakness is that the reply still leans on 'I don't see' instead of ruling out non-theistic accounts grounded in rational agency, personhood, reasons, or non-natural moral facts. The score is solid because Craig sharpens the burden, but the exclusion argument remains incomplete for listeners.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The absence of an immediately visible atheist grounding is treated as evidence that no atheist-friendly grounding can succeed."
+                }
+              ]
+            },
+            con: {
+              time: "1:49:30",
+              role: "Unknown answers, ruled-out answers",
+              words:
+                "Law says not knowing why the universe exists does not prevent us from ruling out some answers, including good-God and evil-God hypotheses.",
+              score: 80,
+              critique:
+                "Law's final ignorance distinction is philosophically important. He grants that he does not know why the universe exists, but insists that ignorance of the right answer does not prevent us from ruling out some wrong ones. That helps answer Craig's charge that skepticism about cosmology is inconsistent with confidence about evil: unknown origins and observed suffering are different evidential settings. The weakness is that he still needs a principled threshold for when observation rules out a hidden-purpose deity, especially after Craig stresses ripple effects through history. The score is strong because the distinction is real and keeps the evil-God challenge alive, but it needs a tighter probability argument.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 78,
+        strengths: [
+          "Craig gave the affirmative side a clear cumulative structure: origin, morality, and resurrection each contributed a different part of the theistic case.",
+          "He repeatedly enforced the broad motion, pressing Law for leaving cosmology and resurrection mostly unaddressed until late.",
+          "His skeptical-theism reply identified a genuine burden problem for claims that God probably lacks sufficient reasons for suffering."
+        ],
+        blunders: [
+          {
+            text:
+              "His moral argument relied on the premise that objective moral values require God without fully excluding non-theistic realist alternatives.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His animal-suffering reply narrowed suffering around higher-order self-awareness while leaving the moral weight of sentient pain underexplored.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His skeptical appeal to hidden providential reasons also made it harder to explain why an evil creator should be dismissed by ordinary observation.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 81,
+        strengths: [
+          "Law's evil-God challenge was focused, memorable, and directly targeted the asymmetry between a good God and an evil creator.",
+          "He repeatedly showed that free will, natural-law, afterlife, and mystery defenses can be mirrored unless the theist supplies an independent asymmetry.",
+          "His critique of the moral argument correctly pressed Craig to rule out more than one weak evolutionary account of morality."
+        ],
+        blunders: [
+          {
+            text:
+              "He bracketed Craig's cosmological argument for too long, then admitted uncertainty about its exact flaw despite the debate's broad God-existence motion.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          },
+          {
+            text:
+              "His resurrection rebuttal used a helpful extraordinary-report warning but did not closely engage Craig's specific historical criteria and Jewish-context claims.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
               }
             ]
           }
