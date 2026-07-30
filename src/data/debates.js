@@ -46857,5 +46857,362 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "licona-carrier-resurrection-history-2010",
+    number: "130",
+    title: "Mike Licona vs Richard Carrier: Did Jesus Rise From the Dead?",
+    label: "Resurrection evidence and natural explanations",
+    date: "2026-07-30",
+    duration: "2 hr 29 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=0IpKHdVLZb4",
+    motion:
+      "Did Jesus rise from the dead, and does the resurrection hypothesis better explain early Christian testimony than naturalistic alternatives?",
+    summary:
+      "Licona argues that Paul's early testimony and appearance traditions make bodily resurrection the best historical explanation; Carrier argues that visions, legendary development, and prior probability make natural explanations stronger.",
+    sourceNote:
+      "Built from YouTube English subtitles for the Mike Licona upload of the Washburn University debate. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "the resurrection hypothesis meets these four criteria",
+        context:
+          "Licona's central posture is that early appearance testimony, assessed by standard historical criteria, makes resurrection the best explanation."
+      },
+      con: {
+        text: "most missing bodies throughout history are not the result of resurrections",
+        context:
+          "Carrier's central posture is that ordinary base rates, visionary experience, and legendary development make natural explanations more probable."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Resurrection hypothesis",
+        speaker: "Mike Licona",
+        color: "teal"
+      },
+      con: {
+        name: "Natural explanation",
+        speaker: "Richard Carrier",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 79,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Historical Method and Priors",
+        timebox: "09:20-28:25",
+        score: {
+          pro: 80,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "09:20",
+              role: "Best-explanation criteria",
+              words:
+                "Licona proposes explanatory scope, explanatory power, limited ad hoc assumptions, and plausibility as the historical tests for resurrection.",
+              score: 80,
+              critique:
+                "Licona's methodological opening is orderly and useful. By naming explanatory scope, explanatory power, ad hocness, and plausibility, he gives the audience public criteria instead of asking them to accept a miracle report by enthusiasm alone. The strength is debate discipline: later disputes can be tested against the same grid. The weakness is that plausibility is doing heavy work while Licona wants to bracket worldview priors. If resurrection is a divine act, then views about God cannot be fully quarantined from the historical comparison. The score is strong because the framework is clear and relevant, but capped because the most contested criterion is introduced with more confidence than defense.",
+              tags: []
+            },
+            con: {
+              time: "25:49",
+              role: "Extraordinary-evidence challenge",
+              words:
+                "Carrier compares resurrection to a starship-level surprise and says missing bodies and appearances of the dead usually have ordinary explanations.",
+              score: 84,
+              critique:
+                "Carrier's opening counter is strong probabilistic framing. He does not simply reject miracles; he asks what normally happens when bodies go missing or people report appearances of the dead, then argues that resurrection needs evidence exceptional enough to overcome those base rates. The starship analogy is vivid without becoming irrelevant because it illustrates the gap between possibility and reasonable belief. The weakness is that analogies can overflatten. A first-century Jewish resurrection claim tied to named leaders, persecution, and movement origins may not be interchangeable with every bizarre modern report. Still, the move sharply identifies the burden Licona must carry, so the high score follows here.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Paul and Early Tradition",
+        timebox: "12:46-35:50",
+        score: {
+          pro: 83,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "12:46",
+              role: "Pauline evidence",
+              words:
+                "Licona brackets the Gospels, then argues from Paul's hostile conversion, Jerusalem contacts, and the early 1 Corinthians 15 appearance tradition.",
+              score: 83,
+              critique:
+                "Licona's strongest evidential move is restraint. By bracketing the Gospels for the sake of consensus and leaning on Paul's letters, he avoids depending on every contested resurrection narrative. Paul matters because he is early, named, formerly hostile, connected to Peter and James, and explicit that resurrection was bodily rather than merely inspirational survival. The weakness is that the move also narrows the available detail. Paul's letters give conviction and tradition, but not rich descriptions of what was seen, how group appearances occurred, or how the burial evidence was checked. The score is high because Licona uses his best common-ground evidence, though the evidence remains thinner than his conclusion.",
+              tags: []
+            },
+            con: {
+              time: "33:14",
+              role: "Vision-and-silence reply",
+              words:
+                "Carrier replies that Paul cites Scripture and revelation, gives no appearance details, and may mean visions like his own experience.",
+              score: 82,
+              critique:
+                "Carrier's reply is effective because it challenges exactly what Paul's evidence can bear. If Paul gives a list of appearances without phenomenological detail, empty-tomb narration, or independent cross-checking, then the same text may support visionary experience rather than a publicly inspectable resurrection event. Carrier is also right to press the ambiguity of 'received' and Paul's own revelatory language. The weakness is that silence is not absence. Paul can omit narrative details because he is writing occasional letters to communities that already know the proclamation. Carrier's reading is plausible, but not forced by the text. The score is strong because he exposes evidential underdetermination without pretending it settles the whole question.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Miracle Parallels and Culture",
+        timebox: "22:55-45:15",
+        score: {
+          pro: 74,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "22:55",
+              role: "Naturalism burden",
+              words:
+                "Licona says the resurrection hypothesis is not ad hoc and asks Carrier to provide an equally plausible naturalistic explanation.",
+              score: 74,
+              critique:
+                "Licona's burden challenge is fair as far as it goes. A critic who rejects resurrection should not merely gesture at mystery if a specific historical hypothesis explains the central facts better. Asking for a comparably plausible natural account keeps the exchange from collapsing into automatic anti-miracle skepticism. The weakness is that Licona makes the resurrection look less assumptive by refusing to specify who raised Jesus or how, while still relying on a supernatural event to do explanatory work. That can make the hypothesis seem cleaner than it is. The score is solid because the burden demand matters, but lower because the explanatory cost is understated.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The resurrection hypothesis is treated as nearly assumption-free while its divine-causation cost is kept just outside the stated hypothesis."
+                }
+              ]
+            },
+            con: {
+              time: "28:29",
+              role: "Comparative miracle record",
+              words:
+                "Carrier cites miracle stories, dying-and-rising gods, hallucinations, and missing bodies to argue that Jesus' case is not exceptional enough.",
+              score: 86,
+              critique:
+                "Carrier's comparative record is one of his best contributions. He reminds the audience that ancient and modern religious worlds generate miracle testimony quickly, often from sincere believers, and that historians normally explain those cases without accepting the miracle. That makes Licona's case answerable to broader reference classes rather than isolated Christian categories. The weakness is that Carrier sometimes moves quickly across very different kinds of reports: legends, cultic myths, missing bodies, visions, and Pauline testimony do not all carry the same source quality. Even so, the argument is highly relevant because resurrection must beat ordinary explanations, not merely be possible. That caveat keeps it below exceptional.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The sweep of parallels risks compressing different evidential settings into one broad class of miracle-like claims."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Psychology and Group Experience",
+        timebox: "46:10-56:11",
+        score: {
+          pro: 82,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "46:38",
+              role: "Psychohistory objection",
+              words:
+                "Licona challenges Carrier's schizotypal and hallucination account, saying the apostles' public leadership and marriages do not fit the profile.",
+              score: 82,
+              critique:
+                "Licona's psychological rebuttal lands because it targets the weakest live part of Carrier's explanation. Diagnosing ancient figures or communities from sparse texts is difficult, and Licona is right that modern clinical categories should not be casually projected onto Paul, Peter, or the earliest churches. His appeal to group appearances also presses a real explanatory demand. The weakness is that Licona overleans on modern profiles in the opposite direction: ancient ecstatic religious communities may not resemble isolated contemporary patients either. The score is high because he exposes speculative psychohistory and forces Carrier to make the natural mechanism more concrete, but it is not decisive against all visionary-culture explanations.",
+              tags: []
+            },
+            con: {
+              time: "48:23",
+              role: "Ancient-cult reply",
+              words:
+                "Carrier says ancient religious cultures could welcome visionary temperaments, and that charismatic groups can anchor shared ambiguous experiences.",
+              score: 78,
+              critique:
+                "Carrier's reply usefully contextualizes psychology. He notes that a visionary temperament treated as pathological in modern secular settings could be treated as inspiration within ancient sectarian religion, so modern social outcomes cannot be mapped too simply onto the first century. His later account of charismatic anchoring gives group experience a possible mechanism. The weakness is probability. Carrier sketches a sequence from Peter to the Twelve to larger groups, but the evidence for that sequence is reconstructed rather than reported, and his textual basis remains thin. The score is solid because the model is coherent and responsive, but lower because it fills major gaps with plausible social theory.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Worldview and Hiddenness",
+        timebox: "1:00:56-1:18:06",
+        score: {
+          pro: 75,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:00:56",
+              role: "Limited-appearance defense",
+              words:
+                "Licona says God often favors the weak and lowly, and later says worldview should be bracketed while the evidence is weighed.",
+              score: 75,
+              critique:
+                "Licona's worldview comments are refreshingly candid. He admits that everyone has lenses and describes his own attempt to bracket them during doctoral work, which makes his appeal to historical evidence more intellectually serious than a simple faith assertion. The limited-appearance reply also fits a biblical theme of God working through lowly witnesses. The weakness is predictive softness. 'God favors the weak' can explain why appearances were private, but it can also be adjusted after the fact to cover almost any distribution of evidence. Carrier's direct hiddenness challenge therefore remains only partly answered. The score is solid because the posture is honest, but the explanatory control is limited.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "God's preference for lowly witnesses is used to explain limited appearances without clear conditions for when broader revelation should be expected."
+                }
+              ]
+            },
+            con: {
+              time: "1:03:12",
+              role: "Divine-hiddenness pressure",
+              words:
+                "Carrier asks why a saving, compassionate God would not appear to everyone, or at least to sincere outsiders who request evidence.",
+              score: 85,
+              critique:
+                "Carrier's hiddenness pressure is philosophically strong because it tests not bare resurrection but a purposive Christian explanation of resurrection. If God raised Jesus to save the world, selective appearances to insiders and one persecutor look less expected than public, repeatable, compassion-driven disclosure. Carrier also frames his own nonbelief as responsive to evidence rather than as unwillingness, which makes the challenge harder to dismiss. The weakness is that it assumes a fairly transparent model of what divine compassion would do, and the debate's motion was narrower than full Christian soteriology. Still, once Licona invokes God-level explanation, expected divine communication becomes central, so the high score is warranted.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Reference Class and Closing",
+        timebox: "1:23:30-1:58:44",
+        score: {
+          pro: 79,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:45:46",
+              role: "Closing criteria review",
+              words:
+                "Licona argues that appearances to individuals, groups, friends, and a foe make hallucination, schizotypy, and psychohistory fail the criteria.",
+              score: 79,
+              critique:
+                "Licona's closing is well structured and rhetorically efficient. He revisits each criterion, applies it to Carrier's hypothesis, and emphasizes the facts he thinks remain undisputed: sincere experiences, group settings, Paul as foe, and early bodily resurrection belief. That is exactly how a best-explanation case should close. The weakness is that the closing sometimes treats Carrier's unresolved ambiguities as defeats rather than underdetermination. Saying resurrection has no non-evidenced assumptions is especially strained when plausibility depends on a supernatural exception. The score is strong because Licona summarizes the affirmative case clearly, but not higher because the prior-probability and hiddenness objections still press hard in the final comparison.",
+              tags: []
+            },
+            con: {
+              time: "1:52:48",
+              role: "Natural hypothesis closing",
+              words:
+                "Carrier says Paul's vague epistles, visionary culture, rare outsider conversion, and ordinary explanations make hallucination more probable than resurrection.",
+              score: 83,
+              critique:
+                "Carrier's closing gives his side a coherent positive shape. He does not say 'nothing happened'; he compares a hallucination-and-cult-development hypothesis with a divine-resurrection hypothesis and argues that his account uses better-established ingredients. That corrects Licona's attempt to frame naturalism as mere denial. The strongest line is that Paul as a rare outsider is not fatal if the hypothesis predicts outsider conversions to be rare. The weakness is that Carrier's account remains composite: cognitive dissonance, visionary culture, textual silence, religious parallels, and group anchoring all have to line up. The score is high because the comparative burden is clear, but not overwhelming because the reconstruction is still speculative.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Gospels and Audience Testing",
+        timebox: "2:04:57-2:27:47",
+        score: {
+          pro: 78,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "2:15:46",
+              role: "Mark and core tradition",
+              words:
+                "Licona says Mark repeatedly predicts resurrection, abrupt ending or not, and that Gospel differences need not discredit the core account.",
+              score: 78,
+              critique:
+                "Licona handles the late Gospel questions with useful nuance. He grants that Mark 16:9-20 is not original, notes that Mark still repeatedly anticipates resurrection, and argues that peripheral differences need not erase a core event any more than Titanic witness disagreement erases the sinking. That is a reasonable historian's caution against all-or-nothing skepticism. The weakness is that the analogy works best for independent witnesses to an agreed public disaster, not necessarily for literary theological narratives that may be dependent and redacted. The score is strong because Licona avoids fundamentalist overreach, but limited because it does not fully answer Carrier's literary-development concerns under direct audience pressure.",
+              tags: []
+            },
+            con: {
+              time: "2:06:37",
+              role: "Literary-development reply",
+              words:
+                "Carrier says the women-at-the-tomb motif and later Gospel embellishments can be explained by Markan irony and mythic redaction.",
+              score: 81,
+              critique:
+                "Carrier's Q&A answers are strongest when he gives specific literary mechanisms. On the women at the tomb, he argues that Mark's reversal motif can explain why lower-status witnesses appear first; on Matthew, he points to apparent embellishment over Mark as a reason historians distrust later details. These are relevant counters to apologetic embarrassment and harmonization arguments. The weakness is that several claims are book-length positions compressed into quick recommendations, so listeners are asked to accept a lot of literary-critical background without seeing it demonstrated. The score is strong because the mechanisms are concrete and germane, but capped because the support is more gestured at than shown.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 79,
+        strengths: [
+          "Licona used a clear best-explanation framework and repeatedly returned the debate to scope, power, ad hocness, and plausibility.",
+          "He made the strongest concise case from common-ground Pauline material rather than leaning on every contested Gospel scene.",
+          "His cross-examination exposed the speculative parts of Carrier's psychohistory and group-hallucination reconstruction."
+        ],
+        blunders: [
+          {
+            text:
+              "He treated resurrection as having few or no non-evidenced assumptions while keeping divine causation and God's purposes partly outside the stated hypothesis.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "He criticized Bayesian priors partly by noting that historians usually avoid them, which weakens but does not by itself answer Carrier's probability argument.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Carrier kept the burden of proof centered on exceptional evidence rather than on whether resurrection is merely possible.",
+          "He made Paul's evidential limits, visionary culture, miracle parallels, and divine hiddenness mutually reinforcing rather than isolated objections.",
+          "He corrected the framing that naturalism must identify one certain alternative, arguing instead for comparative probability among historically ordinary mechanisms."
+        ],
+        blunders: [
+          {
+            text:
+              "His naturalistic reconstruction sometimes treated gaps in Paul's narrative as room for a detailed cult-hallucination sequence rather than as evidence for that sequence.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His broad comparison class of miracle stories and dying-rising figures sometimes compressed important differences among sources, settings, and evidential claims.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
