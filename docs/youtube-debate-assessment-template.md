@@ -57,16 +57,24 @@ Design constraints:
 1. Capture the transcript from YouTube or a transcript tool and note the source in `sourceNote`.
 2. Identify the motion or central question.
 3. Identify the two sides and speaker names.
-4. Extract short representative quotes for each side.
-5. Segment the debate into 4-7 topical sections.
-6. For each section, align 1-3 exchanges by topic rather than by every interruption.
-7. Write each `argument.words` as actual words or a tight transcript-grounded condensation.
-8. Score each move using the rubric in `debate-critique-process.md`.
-9. Write each critique at 105-130 words.
-10. Add fallacy or bias tags only when they explain a real weakness, and include a context note for each tag.
-11. Write the overall strengths and logical blunders.
-12. Run `npm run seo`.
-13. Run `npm run check`.
+4. Choose the debate's concise `label` as both a human-readable general title and the basis for `/topics/` categorization.
+5. Assign the debate to the best recurring topic cluster by making sure the label maps cleanly to one of the topic category keyword sets in `topicCategoryDefinitions` in `src/app.js`; if the debate exposes a genuine new recurring theme, update that taxonomy rather than letting the debate fall into the fallback category.
+6. Extract short representative quotes for each side.
+7. Segment the debate into 4-7 topical sections.
+8. For each section, align 1-3 exchanges by topic rather than by every interruption.
+9. Write each `argument.words` as actual words or a tight transcript-grounded condensation.
+10. Score each move using the rubric in `debate-critique-process.md`.
+11. Write each critique at 105-130 words.
+12. Add fallacy or bias tags only when they explain a real weakness, and include a context note for each tag.
+13. Write the overall strengths and logical blunders.
+14. Run `npm run seo`.
+15. Run `npm run check`.
+
+Topic categorization:
+
+- The current topic clusters are `Science, cosmology, and design`, `Scripture, Jesus, and resurrection`, `Morality, ethics, and meaning`, `Evil, suffering, and hiddenness`, `Mind, consciousness, and free will`, `Logic, reason, and presuppositions`, `Religion, society, and public reason`, and `God, theism, and atheism`.
+- `/topics/` uses the debate `label` to determine the primary group and topic chips, so the label should contain the clearest recurring subject terms without adding interlocutor names.
+- After adding a debate, check that the new compact card appears under the intended `/topics/` category and that its card title remains a general topic title, not a speaker-vs-speaker title.
 
 ## Debate Data Skeleton
 
@@ -77,7 +85,7 @@ Use this shape when adding an object to `src/data/debates.js`.
   id: "speaker-a-speaker-b-topic-year",
   number: "01",
   title: "Speaker A vs Speaker B: Debate Title",
-  label: "Topic label",
+  label: "Concise topic label that maps to the intended /topics/ category",
   date: "YYYY-MM-DD",
   duration: "0 hr 00 min",
   youtubeUrl: "https://www.youtube.com/watch?v=VIDEO_ID",
@@ -191,6 +199,8 @@ Use this shape when adding an object to `src/data/debates.js`.
 
 - Page follows the locked debate-page design above.
 - Debate numbers are at least two digits, zero-padded below 100, sequential, and displayed consistently site-wide.
+- The debate `label` has been checked against the `/topics/` taxonomy and places the compact card under the intended topic cluster.
+- The `/topics/` card title stays topic-forward and does not include visible interlocutor names.
 - `date` is the Slugfester last-rendered scoring date, not the YouTube upload date.
 - The sticky header uses the small boxing-gloves image.
 - The top reference links are grouped as an `External Sites` cluster.

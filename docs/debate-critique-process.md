@@ -14,6 +14,7 @@ Create a condensed debate scorecard, not a full transcript replacement. Each pag
 - Transcript source, noted in `sourceNote`.
 - Last rendered date in `YYYY-MM-DD` format: the last date this project ran the critique and scores, not the YouTube upload date.
 - At least two-digit zero-padded debate number, speaker names, unique debate label, side labels, duration, motion, and a one-sentence summary.
+- Topic categorization for `/topics/`: choose a concise, speaker-free debate label that maps to the intended recurring topic cluster in `topicCategoryDefinitions` in `src/app.js`.
 - Short representative quotes for both sides.
 
 Never invent direct quotations. If transcript text is lightly cleaned for readability, say so in `sourceNote`.
@@ -127,5 +128,7 @@ Before committing a new debate:
 - The page follows the locked design in `youtube-debate-assessment-template.md`.
 - The debate number is at least two digits, zero-padded below 100, unique, and sequential in debate-list order.
 - The debate label is distinct from every other listed debate.
+- The debate label places the compact `/topics/` card in the intended category; update `topicCategoryDefinitions` if the debate belongs to a real recurring theme not yet represented.
+- The `/topics/` compact card uses a general topic title and does not visibly print interlocutor names.
 - `npm run seo` has regenerated clean URL pages, sitemap, robots, and fallback HTML.
 - `npm run check` passes.
