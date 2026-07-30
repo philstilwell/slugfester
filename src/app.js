@@ -437,36 +437,46 @@ function normalizeSearchValue(value = "") {
 
 const topicCategoryDefinitions = [
   {
-    id: "science-cosmology-design",
-    title: "Science, cosmology, and design",
-    shortLabel: "Science & cosmology",
+    id: "cosmological-arguments",
+    title: "Cosmological arguments and contingency",
+    shortLabel: "Cosmological arguments",
     description:
-      "Scientific explanation, cosmic origins, fine-tuning, design, naturalism, and the evidential reach of physics or biology.",
+      "Kalam, contingency, beginnings, finitude, fine-tuning, cosmic evidence, and arguments from the universe to God or necessary reality.",
     keywords: [
-      "science",
-      "scientific",
-      "scientism",
       "cosmology",
       "cosmological",
+      "cosmic",
       "big bang",
       "fine-tuning",
-      "design",
-      "dna",
-      "origin of life",
-      "evolution",
       "kalam",
       "nothing",
       "nothingness",
-      "infinity",
       "temporal infinity",
       "beginning",
       "contingency",
       "necessary foundation",
       "argument from limits",
       "causal principle",
+      "universe",
+      "universe origins"
+    ]
+  },
+  {
+    id: "science-design",
+    title: "Science and design",
+    shortLabel: "Science & design",
+    description:
+      "Scientific explanation, biological design, origins of life, naturalism, physics-informed evidence, and the evidential reach of empirical methods.",
+    keywords: [
+      "science",
+      "scientific",
+      "scientism",
+      "design",
+      "dna",
+      "origin of life",
+      "evolution",
       "digital physics",
       "quantum",
-      "universe",
       "physicalism",
       "naturalism"
     ]
@@ -495,11 +505,29 @@ const topicCategoryDefinitions = [
     ]
   },
   {
-    id: "morality-ethics-meaning",
-    title: "Morality, ethics, and meaning",
-    shortLabel: "Morality & meaning",
+    id: "meaning-purpose",
+    title: "Meaning and purpose",
+    shortLabel: "Meaning & purpose",
     description:
-      "Objective morality, moral realism, ethical feeling, value, meaning, moral responsibility, and social or secular moral frameworks.",
+      "Religious meaning, purpose, human value, existential orientation, mythic frameworks, and whether secular or theistic views better ground significance.",
+    keywords: [
+      "meaning",
+      "purpose",
+      "value",
+      "values",
+      "logos",
+      "archetypes",
+      "memes",
+      "hell",
+      "self-exile"
+    ]
+  },
+  {
+    id: "morality-ethics",
+    title: "Morality and ethics",
+    shortLabel: "Morality & ethics",
+    description:
+      "Objective morality, moral realism, ethical feeling, moral responsibility, metaethics, and social or secular moral frameworks.",
     keywords: [
       "morality",
       "moral",
@@ -507,9 +535,6 @@ const topicCategoryDefinitions = [
       "ethical",
       "objective",
       "objectivist",
-      "meaning",
-      "value",
-      "grace",
       "emotivism",
       "realism",
       "anti-realism",
