@@ -45756,5 +45756,396 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "slick-clifton-objective-morality-god-2014",
+    number: "127",
+    title: "Matt Slick vs Scott Clifton: Does Objective Morality Require God?",
+    label: "Objective morality and theistic foundations",
+    date: "2026-07-30",
+    duration: "1 hr 48 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=uJeKS705aXs",
+    motion:
+      "Does objective morality require God as its necessary foundation, or can secular moral reasoning explain the relevant moral truths and obligations?",
+    summary:
+      "Slick argues that moral absolutes need God's revealed character as their objective standard; Clifton argues that this either becomes circular or fails to outperform secular moral inquiry.",
+    sourceNote:
+      "Built from YouTube English automatic captions for the BTWN News upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "It's wrong if it disagrees with the revealed will of God.",
+        context:
+          "Slick's central posture is that moral truth is objective only when grounded in God's revealed and immutable character."
+      },
+      con: {
+        text: "What I'm interested in is maximizing happiness and flourishing.",
+        context:
+          "Clifton's central posture is that moral inquiry can begin with human welfare, definitions, intentions, consequences, and rational agreement rather than divine revelation."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian moral foundation",
+        speaker: "Matt Slick",
+        color: "teal"
+      },
+      con: {
+        name: "Secular moral inquiry",
+        speaker: "Scott Clifton",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 72,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Starting Points",
+        timebox: "05:00-14:34",
+        score: {
+          pro: 74,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "06:20",
+              role: "Moral-truth setup",
+              words:
+                "Slick says truth requires a mind, moral statements need truth value, and atheism cannot justify universal moral truth.",
+              score: 74,
+              critique:
+                "Slick's opening move gives the debate a real philosophical target: moral claims seem to be more than noises of preference, so their truth conditions need explanation. He helpfully distinguishes actions from color words and asks how a moral statement acquires value. The weakness is that the argument moves too quickly from truth requiring minds to moral truth requiring God's mind. It does not yet rule out non-theistic realism, constructivism, or welfare-based truth claims. It also treats 'atheistic worldview' as a single system before Clifton has stated one. The score is solid because the grounding question is relevant, but limited because the exclusions are mostly asserted.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The need for a divine mind is built into the explanation before rival accounts of moral truth are tested."
+                }
+              ]
+            },
+            con: {
+              time: "10:12",
+              role: "Top-down/bottom-up distinction",
+              words:
+                "Clifton distinguishes analyzing the inherited word morality from building a moral system around happiness, flourishing, and reduced suffering.",
+              score: 83,
+              critique:
+                "Clifton's opening distinction is analytically strong. By separating the top-down question, what ordinary moral language already means, from the bottom-up question, what human beings are trying to promote, he prevents Slick from treating every secular answer as a failed version of theism. He also correctly notes that definitions are arbitrary in one sense while applications under a definition can be objectively true or false. The weakness is that this only starts the positive case. A chosen welfare standard may still need authority, motivation, and conflict-resolution principles. The score is high because Clifton clarifies the map before defending the route, but not higher because the route remains partly sketched.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "God's Nature",
+        timebox: "15:49-30:40",
+        score: {
+          pro: 69,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "15:49",
+              role: "Nature, not command",
+              words:
+                "Slick rejects arbitrary divine command theory and says moral goodness is revealed out of God's character and nature.",
+              score: 69,
+              critique:
+                "Slick's correction matters because it avoids the crudest divine-command horn. He is not saying God flips a moral coin; he says commands disclose a stable character, which is a more sophisticated theistic moral account. The weakness is that the appeal remains insulated from the central challenge. If goodness is whatever reflects God's nature, the phrase 'God is good' risks becoming 'God is God' unless some further account explains why that nature is worthy of moral allegiance. Slick repeatedly answers by pointing back to God's nature or revelation, which clarifies his doctrine but does not independently justify the standard. The score is mixed because the move is coherent but circular under pressure.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "God's goodness is defended by appeal to the same divine nature whose moral authority is being questioned."
+                }
+              ]
+            },
+            con: {
+              time: "16:22",
+              role: "Euthyphro-style pressure",
+              words:
+                "Clifton asks whether God's nature is good because it is good, or good things are good because they reflect God's nature.",
+              score: 86,
+              critique:
+                "Clifton's Euthyphro-style pressure is the strongest early move in the debate. He does not caricature Slick as a simple divine-command theorist; he explicitly shifts the dilemma to divine nature and asks what makes that nature good rather than merely identical with itself. The possible-world and dishonest-God thought experiments are useful diagnostic tools because they test whether the standard can be evaluated from outside itself. The weakness is that Clifton sometimes frames the problem as if any circularity is automatically fatal, while foundational theories often accept some primitive stopping point. Still, the objection is central and well aimed, so the high score follows in this exchange.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Omniscience and Consequences",
+        timebox: "33:29-42:12",
+        score: {
+          pro: 72,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "34:54",
+              role: "Omniscient assessor",
+              words:
+                "Slick says God's omniscience lets him know all consequences and reveal perfect judgments about what people should do.",
+              score: 72,
+              critique:
+                "Slick's omniscience reply adds an important missing element: finite agents do not know all downstream effects, so an all-knowing God could guide them better than ordinary consequential reasoning. That gives the theistic side practical explanatory value rather than only authority language. The weakness is that it partly changes the account. If consequences help explain why God's commands are right, then consequences appear to be doing moral work after all; if they do not, omniscience only tells us God knows a standard whose authority remains unexplained. Slick tries to keep God as the standard while using consequence-knowledge as support, but the two roles are not cleanly integrated. The score is solid but unsettled.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "God shifts between being the moral standard itself and being an infallible knower of consequence-based judgments."
+                }
+              ]
+            },
+            con: {
+              time: "35:21",
+              role: "Middleman objection",
+              words:
+                "Clifton says if God's knowledge of consequences makes commands reliable, consequences seem to be the real moral standard.",
+              score: 82,
+              critique:
+                "Clifton's middleman objection is a clean diagnostic response. He grants, for argument, that an omniscient being could know moral consequences better than humans, then asks whether that makes God the ground of morality or merely the perfect transmitter of facts grounded elsewhere. That is strong because it turns Slick's improvement into a dilemma: either divine knowledge matters because consequences matter, or consequences are irrelevant and omniscience does not solve the standard problem. The limitation is that a richer theistic account could integrate divine nature, purposes, and consequences without reducing morality to outcomes alone. The score is high because Clifton exposes a real tension, though he does not fully defeat every possible synthesis.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral Absolutes",
+        timebox: "47:09-58:48",
+        score: {
+          pro: 75,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "47:44",
+              role: "Moral-absolute challenge",
+              words:
+                "Slick argues that if objective moral absolutes exist and atheism cannot justify them, Christianity is validated by impossibility to the contrary.",
+              score: 75,
+              critique:
+                "Slick's moral-absolute challenge has a recognizable argument structure. He identifies a candidate datum, such as the wrongness of torturing babies for pleasure, and asks which worldview can make that wrongness objective rather than preferential. That presses a real cost on views that reduce morality to taste or social agreement. The weakness is the forced two-option frame. Even if one secular proposal fails, that does not automatically validate Christianity; moral realism, Kantian accounts, contractualism, constructivism, and other theisms remain possible competitors. Slick also needs to show that his own foundation does not collapse into circularity. The score is solid because the burden is real, but capped by the undeveloped elimination step.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Christian grounding is treated as successful without meeting the same explanatory scrutiny applied to secular alternatives."
+                }
+              ]
+            },
+            con: {
+              time: "49:15",
+              role: "Phenomenon dispute",
+              words:
+                "Clifton says he does not need to account for moral absolutes if the thing Slick calls moral absolutes has not been shown to exist.",
+              score: 80,
+              critique:
+                "Clifton's phenomenon dispute is fair and strategically useful. If Slick's argument is an inference to the best explanation, then both sides must first agree on the phenomenon needing explanation. Clifton's tooth-fairy analogy is deliberately blunt, but it makes the point that nonbelief in a proposed object removes the obligation to explain that object. He also distinguishes moral truth from moral absolutes as ontological entities. The weakness is that the analogy risks underselling the datum. Many listeners do experience some moral judgments as more than fictional objects, so Clifton still needs a positive account of that experience. The score is strong because he blocks a premature burden shift, but not decisive.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Hard Cases",
+        timebox: "58:57-1:08:11",
+        score: {
+          pro: 76,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "59:56",
+              role: "Hidden-assault test",
+              words:
+                "Slick asks whether assaulting an unconscious woman would be wrong if she never knew, no one found out, and no obvious harm followed.",
+              score: 76,
+              critique:
+                "Slick's hard-case test is emotionally severe but philosophically relevant. It targets a thin harm theory by asking whether wrongdoing disappears when immediate awareness, pregnancy, disease, and discovery are removed. That forces Clifton to say whether consent, rights, dignity, intentions, and social trust are part of the account or merely after-the-fact repairs. The weakness is that the example narrows harm too aggressively. Violation of consent, risk, agency, institutional trust, and the offender's character are not imaginary consequences simply because the victim lacks current awareness. The case usefully exposes the need for a richer secular ethics, but it does not show that only divine command can supply one. The score is solid.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The objection focuses on immediate conscious harm while bracketing consent, agency, risk, trust, and broader social damage."
+                }
+              ]
+            },
+            con: {
+              time: "1:04:22",
+              role: "Contractarian repair",
+              words:
+                "Clifton appeals to Rawls-style contract reasoning behind a veil of ignorance to explain why consent-violating rules would be rejected.",
+              score: 77,
+              critique:
+                "Clifton's contractarian repair is a plausible and humane answer to the hidden-assault case. By invoking rational rule-setting behind a veil of ignorance, he explains why people would reject permissions that make vulnerable bodies available to predators, even if a single victim never learns what happened. This broadens moral assessment beyond immediate sensations and gives consent a structural role. The weakness is that he introduces the framework late and somewhat hurriedly, so Slick can complain that the original definition has been modified under pressure. Clifton also has not fully shown why the contract binds the determined outsider. The score is solid because the repair works, but it needed tighter initial formulation.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Arbitrariness and Oughts",
+        timebox: "1:10:39-1:36:41",
+        score: {
+          pro: 68,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:19:34",
+              role: "Arbitrariness charge",
+              words:
+                "Slick says Clifton's denial of God cannot provide the preconditions for objective morality, logic, information, or standards beyond preference.",
+              score: 68,
+              critique:
+                "Slick's broader arbitrariness charge is partly fair: a secular account must explain why its selected standard is not merely one person's preference dressed up as reason. He also keeps pressing the difference between acting morally and justifying morality, which is an important distinction. The weakness is overextension. The argument expands from moral grounding to logic, information, atheism, Adam and Eve, hell, and subjective preference, often without enough connective tissue. Clifton's view is repeatedly reduced to 'whatever I want,' even after he distinguishes preferences from overriding moral reasons. The score is mixed because Slick names a real burden, but his formulation outruns the argument actually established.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The critique slides among arbitrary definitions, personal whims, secular ethics, atheism, and reductive subjectivism."
+                }
+              ]
+            },
+            con: {
+              time: "1:34:24",
+              role: "Why obey God",
+              words:
+                "Clifton asks why he ought to do what reflects God's nature, saying ownership, power, creation, and punishment are descriptions, not prescriptions.",
+              score: 84,
+              critique:
+                "Clifton's is-ought pressure is one of the best late rebuttals. He accepts the theistic vocabulary long enough to ask why God's nature, ownership, power, or punishment creates an obligation rather than merely describing who God is and what God can do. That meets Slick's grounding claim at its strongest point: not whether God can command, but why command and authority generate moral oughtness. The weakness is that Clifton's own account faces a parallel authority problem, and he does not fully solve it in the same exchange. Still, the rebuttal is sharper than a generic objection to religion because it asks for the missing bridge in Slick's own terms.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Closing Claims",
+        timebox: "1:37:55-1:46:35",
+        score: {
+          pro: 72,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:43:06",
+              role: "Presuppositional close",
+              words:
+                "Slick grants circularity in both worldviews but says Christianity can still offer an objective standard, real consequences, and biblical revelation.",
+              score: 72,
+              critique:
+                "Slick's closing is candid in a useful way. By admitting circularity on both sides, he avoids pretending that foundational arguments begin from nowhere, and he rightly says the debate then turns on which circle is justified. He also summarizes his main advantages clearly: objective standard, revelation, and consequences. The weakness is that the closing largely restates the disputed claims rather than answering Clifton's evaluability and is-ought objections. Saying the Bible gives the standard helps only after the authority of that standard is established for the interlocutor. The score is solid because the position is coherent and explicit, but lower because the crucial bridge remains asserted more than argued.",
+              tags: []
+            },
+            con: {
+              time: "1:38:30",
+              role: "Parity summary",
+              words:
+                "Clifton says Slick has not shown that moral absolutes exist, that God is evaluable as good, or that theism does anything secular ethics cannot.",
+              score: 83,
+              critique:
+                "Clifton's closing ties the debate together well. He returns to the argument type, inference to the best explanation, and denies that Slick has established the thing needing explanation in the first place. He also summarizes the parity challenge: if secular morality is accused of arbitrary definitions, theistic morality must explain why defining good by God's nature is not likewise arbitrary or circular. The limitation is that his own constructive account remains more plural than finished; he gestures to welfare, contract, intentions, and consequences rather than presenting one codified theory. Even so, the closing is focused and responsive. The score is high because it directly answers the performed argument.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 72,
+        strengths: [
+          "Slick kept the discussion centered on moral grounding rather than merely asking whether atheists can behave decently.",
+          "He repeatedly forced Clifton to clarify the difference between definitions, truth claims, consequences, intentions, and objective standards.",
+          "His hard-case examples exposed genuine pressure on overly simple harm-reduction accounts."
+        ],
+        blunders: [
+          {
+            text:
+              "His defense of God's moral authority often appealed back to God's own nature or revelation, leaving the evaluability problem unresolved.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "He repeatedly blurred secular moral inquiry, atheism, arbitrary preference, and reductive subjectivism into one target.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His hidden-assault case treated the absence of immediate awareness as if it nearly exhausted the relevant harm landscape.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Clifton carefully separated moral language, moral ontology, motivations, definitions, and practical moral reasoning.",
+          "He pressed the strongest internal objection to the theistic account: if God is the standard, the goodness of that standard becomes hard to evaluate without circularity.",
+          "He answered the hard cases by widening the moral field to consent, rational contract, intentions, and broader consequences."
+        ],
+        blunders: [
+          {
+            text:
+              "His positive secular account remained undercodified, shifting among well-being, Rawlsian contract, intentions, and consequences under pressure.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His tooth-fairy analogy risked dismissing moral absolutes too quickly for listeners who experience some moral judgments as deeply realist.",
+            links: [
+              {
+                label: "Belief bias",
+                url: bias("belief-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
