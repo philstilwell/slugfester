@@ -38,7 +38,7 @@ Landing-page design:
 - Section ranges and argument timestamps link to the YouTube source with a `t=...s` timestamp query generated from the visible time; `MM:SS`, long-minute `MMM:SS`, and `H:MM:SS` formats are supported.
 - `/search/` lets users filter debates by text and interlocutor portraits.
 - Search-page interlocutor portraits live inside a default-closed accordion clearly labeled `Interlocutor filters`.
-- `/topics/` categorizes debates by recurring topic clusters and uses compact linked cards with general topic titles, topic chips, and interlocutor photos without visible interlocutor names.
+- `/topics/` categorizes debates by recurring topic clusters and uses compact linked cards with general topic titles, topic chips, and interlocutor photos without visible interlocutor names by default; hovering or focusing a card reveals the debate summary and speaker names.
 - Landing topic snippets and landing debate cards share one paired 84-debate pagination state; search results paginate separately in batches of 84 debates.
 - Search-page interlocutor portraits render in a scrollable panel inside the accordion.
 - The search results eyebrow reads `Matches: ...` and names the active text query and selected interlocutors, falling back to `Matches: all debates`.
@@ -74,7 +74,7 @@ Topic categorization:
 
 - The current topic clusters are `Cosmological arguments and contingency`, `Science and design`, `Scripture, Jesus, and resurrection`, `Meaning and purpose`, `Morality and ethics`, `Evil, suffering, and hiddenness`, `Mind, consciousness, and free will`, `Logic, reason, and presuppositions`, `Religion, society, and public reason`, and `God, theism, and atheism`.
 - `/topics/` uses the debate `label` to determine the primary group and topic chips, so the label should contain the clearest recurring subject terms without adding interlocutor names.
-- After adding a debate, check that the new compact card appears under the intended `/topics/` category and that its card title remains a general topic title, not a speaker-vs-speaker title.
+- After adding a debate, check that the new compact card appears under the intended `/topics/` category, that its card title remains a general topic title rather than a speaker-vs-speaker title, and that hover/focus reveals the summary and speaker names.
 
 ## Debate Data Skeleton
 
@@ -201,6 +201,7 @@ Use this shape when adding an object to `src/data/debates.js`.
 - Debate numbers are at least two digits, zero-padded below 100, sequential, and displayed consistently site-wide.
 - The debate `label` has been checked against the `/topics/` taxonomy and places the compact card under the intended topic cluster.
 - The `/topics/` card title stays topic-forward and does not include visible interlocutor names.
+- The `/topics/` compact card reveals the debate summary and speaker names on hover or keyboard focus.
 - `date` is the Slugfester last-rendered scoring date, not the YouTube upload date.
 - The sticky header uses the small boxing-gloves image.
 - The top reference links are grouped as an `External Sites` cluster.

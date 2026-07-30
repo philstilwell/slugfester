@@ -832,6 +832,9 @@ function renderTopicGroup(group) {
 function renderTopicDebateCard(debate) {
   const people = uniqueInterlocutorsForDebate(debate);
   const tags = topicTagsForDebate(debate);
+  const speakers = [debate.sides.pro, debate.sides.con]
+    .map((side) => `${side.name}: ${side.speaker}`)
+    .join(" | ");
 
   return `
     <article class="topic-debate-card">
@@ -860,6 +863,16 @@ function renderTopicDebateCard(debate) {
             .join("")}
         </span>
         <span class="topic-card-duration">${escapeHtml(debate.duration)}</span>
+      </div>
+      <div class="topic-card-reveal" aria-label="Debate summary and speakers">
+        <div>
+          <span>Summary</span>
+          <p>${escapeHtml(debate.summary)}</p>
+        </div>
+        <div>
+          <span>Speakers</span>
+          <p>${escapeHtml(speakers)}</p>
+        </div>
       </div>
     </article>
   `;

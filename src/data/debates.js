@@ -46514,5 +46514,348 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "plantinga-law-eaan-rational-belief-2010",
+    number: "129",
+    title: "Alvin Plantinga vs Stephen Law: Is the EAAN Successful?",
+    label: "Evolutionary argument and rational belief",
+    date: "2026-07-30",
+    duration: "1 hr 09 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=vAJHkRkWCm0",
+    motion:
+      "Is the evolutionary argument against naturalism successful at showing that naturalism plus evolution gives its believers a defeater for trusting their cognitive faculties?",
+    summary:
+      "Plantinga argues that unguided evolution under naturalism undercuts trust in cognition; Law argues that adaptive behavior and belief content are not so easily severed, and that theistic accounts face parity worries.",
+    sourceNote:
+      "Built from YouTube English automatic captions for The Falling Messiah upload of the Unbelievable discussion. This is a radio discussion rather than a formal stage debate; captions are lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "that combination of naturalism and evolution is incoherent",
+        context:
+          "Plantinga's central posture is that naturalism plus evolution becomes self-defeating once it is seen to undermine confidence in reliable cognitive faculties."
+      },
+      con: {
+        text: "natural selection will favor true beliefs",
+        context:
+          "Law's central posture is that beliefs are conceptually and behaviorally constrained enough for evolution to support reliable cognition rather than defeat it."
+      }
+    },
+    sides: {
+      pro: {
+        name: "EAAN defense",
+        speaker: "Alvin Plantinga",
+        color: "teal"
+      },
+      con: {
+        name: "Reliability challenge",
+        speaker: "Stephen Law",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 77,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Self-Defeat Setup",
+        timebox: "15:15-30:00",
+        score: {
+          pro: 82,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "15:15",
+              role: "Defeater thesis",
+              words:
+                "Plantinga says naturalism, stronger than atheism, combines with evolution to create a defeater for trusting the very faculties that produce belief in naturalism and evolution.",
+              score: 82,
+              critique:
+                "Plantinga's setup is clear and philosophically disciplined. He does not claim that evolution disproves naturalism; he argues that accepting both naturalism and evolution generates a defeater for trusting the cognitive faculties by which the belief is held. That distinction matters because it makes the argument epistemic rather than a crude proof of God. The strength is the layered structure: reliability, defeat, and self-reference are each identified. The weakness is that the crucial probability premise is announced before being earned. Unless listeners accept that naturalistic evolution makes reliability low, the self-defeat machinery has no engine. The score is strong because the target is precise, but the decisive support still lies ahead.",
+              tags: []
+            },
+            con: {
+              time: "28:41",
+              role: "Conclusion clarification",
+              words:
+                "Law clarifies that the argument is not meant to show naturalism false, but that naturalism plus evolution cannot be rationally accepted.",
+              score: 86,
+              critique:
+                "Law's first move is excellent debate hygiene. Before criticizing, he asks whether Plantinga's conclusion is that naturalism is false or instead that naturalism plus evolution is not rationally acceptable. That prevents a straw-man exchange and gives Plantinga the stronger, more technical version of his own thesis. It also helps the audience see that the live dispute is about defeat, not direct metaphysical disproof. The limitation is that clarification is preparatory rather than a substantive answer. It does not yet show that Plantinga's first premise fails. Still, the score is high because Law improves the terms of engagement and removes a common overstatement from the discussion.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Truth And Selection",
+        timebox: "20:36-35:01",
+        score: {
+          pro: 78,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "20:36",
+              role: "Adaptive-neurology argument",
+              words:
+                "Plantinga argues that evolution selects adaptive neurology and behavior, while the truth or falsity of associated belief content may not matter to survival.",
+              score: 78,
+              critique:
+                "Plantinga's adaptive-neurology argument gives the first premise real shape. If selection directly rewards survival-conducive behavior rather than semantic truth, then reliability cannot simply be read off evolutionary success. The frog and alien-creature examples help separate causal output from propositional content, which is the argument's most interesting pressure point. The weakness is the leap from selection not caring about truth as such to truth being roughly equiprobable with falsity. Adaptive systems in varied environments may need enough accurate representation to act flexibly, plan, learn, and correct error. The score is strong because Plantinga identifies a serious gap in naive evolutionary optimism, but lower because the probability estimate remains under-argued.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The move risks treating the absence of a visible selection-for-truth mechanism as positive reason to assign truth roughly coin-flip probability."
+                }
+              ]
+            },
+            con: {
+              time: "30:51",
+              role: "Adaptive tracking reply",
+              words:
+                "Law says organisms needing water, food, and mates would be selected for cognitive mechanisms that tend to produce true location beliefs.",
+              score: 84,
+              critique:
+                "Law's adaptive tracking reply is intuitive and directly responsive. The water example shows why true beliefs often matter: if thirst plus a true belief about water's location leads to survival, while a false location belief leads to failure, selection seems likely to favor truth-conducive mechanisms at least locally. That is a good answer to the idea that survival behavior floats free from cognition. The weakness is that local environmental beliefs are easier than abstract metaphysics, mathematics, or global naturalism. Law's example supports enough truth-tracking for ordinary navigation, but Plantinga needs reliability over a broad range of beliefs. The score is high because the reply hits the first premise, but not decisive.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Belief Content Constraints",
+        timebox: "35:23-44:46",
+        score: {
+          pro: 73,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "39:02",
+              role: "Semantic independence reply",
+              words:
+                "Plantinga grants that not any belief fits any neural structure, but says he sees no reason the selected content must match the adaptive behavior.",
+              score: 73,
+              critique:
+                "Plantinga's reply is fair in one respect: he grants supervenience-style constraints instead of pretending that any content can be arbitrarily attached to any neural state. That makes the disagreement narrower and more technical. But his answer then leans heavily on not seeing why the selected content must be behaviorally appropriate. That is weaker than showing that the connection is improbable. The frog-prince example is memorable, but it risks sounding like a possibility argument rather than a probability argument. Since the EAAN needs low reliability, bare modal openness is not enough. The score is mixed-solid because Plantinga preserves his thesis but does not yet justify the numerical pessimism it requires.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Not seeing why belief content must track behavior is treated as evidence that truth-tracking is unlikely rather than merely unsettled."
+                }
+              ]
+            },
+            con: {
+              time: "35:23",
+              role: "Conceptual-constraint argument",
+              words:
+                "Law argues that a state producing southward water-seeking behavior is a much stronger candidate for the belief that water is south than north.",
+              score: 85,
+              critique:
+                "Law's conceptual-constraint argument is the strongest technical objection in the discussion. He does not merely say evolution likes truth; he says belief attribution itself is constrained by the role a state plays with desires and behavior. If thirst plus a state reliably sends an organism south toward water, calling that state the belief that water lies north becomes conceptually strained. This directly challenges Plantinga's content-behavior separation. The weakness is that Law sketches a plausible semantics rather than fully defending one, and it remains unclear how far the point extends beyond practical beliefs. Still, it attacks the low-probability premise where it is most vulnerable, so the high score follows.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Atheism And Naturalism",
+        timebox: "45:35-50:10",
+        score: {
+          pro: 80,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "47:38",
+              role: "Scope concession",
+              words:
+                "Plantinga agrees that naturalism is stronger than atheism and says non-theistic teleology or platonism may escape his argument.",
+              score: 80,
+              critique:
+                "Plantinga's scope concession is strategically honest. By distinguishing atheism from naturalism, and by allowing that non-theistic platonism or built-in teleology might avoid the argument, he avoids overselling the EAAN as a refutation of every nonbeliever. That improves the argument's precision and makes clear that Dawkins-style materialist naturalism is the main target. The weakness is that the concession narrows the payoff. If many atheists can reject the relevant naturalism or adopt non-naturalist resources, then the argument is less a general defeater for atheism than a challenge to one metaphysical package. The score is strong because the clarification is careful, though it reduces rhetorical reach in practice.",
+              tags: []
+            },
+            con: {
+              time: "45:35",
+              role: "Atheist/non-naturalist distinction",
+              words:
+                "Law says atheism and naturalism should not be run together, since a person can reject God while accepting platonism or non-natural properties.",
+              score: 84,
+              critique:
+                "Law's distinction is important and well placed. He shows that rejecting gods does not automatically entail reductive materialism: mathematical platonism, non-natural properties, or other metaphysical views could be atheist without being naturalist in Plantinga's target sense. That blocks a common apologetic shortcut in which 'atheist' and 'naturalist' are treated as interchangeable. The strength is burden control: Plantinga must say who the argument actually addresses. The weakness is that Law's own position remains somewhat evasive. If he is only testing naturalism from outside, he owes less, but the audience may still want to know which positive epistemology he accepts. The score is high because the distinction materially clarifies the debate.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Reason And Parity",
+        timebox: "50:28-1:00:55",
+        score: {
+          pro: 76,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "58:31",
+              role: "Theistic-warrant reply",
+              words:
+                "Plantinga says evil is one strand of evidence within a larger picture and that believers may have warrant independent of arguments.",
+              score: 76,
+              critique:
+                "Plantinga's reply to Law's parity challenge has real epistemic subtlety. He does not deny that suffering is evidence theists must take seriously; he says it is one consideration within a broader field that includes other arguments and possible non-argumentative warrant. That prevents Law from turning one evidential pressure into a total cognitive defeat too quickly. The weakness is that the appeal to independent warrant is asserted more than explained in this exchange. If naturalists are not allowed to trust their ordinary faculties without defeating defeaters, theists need a principled account of why their warrant remains undefeated by evil, disagreement, and cognitive limitations. The score is solid but not fully satisfying.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Theistic warrant is treated as insulated from skeptical pressure without an equally explicit defeat analysis for the objections Law raises."
+                }
+              ]
+            },
+            con: {
+              time: "52:21",
+              role: "Theism-parity challenge",
+              words:
+                "Law says theism plus evolution may face the same skeptical mire if reliable faculties reveal strong evidence against Plantinga's God.",
+              score: 82,
+              critique:
+                "Law's parity challenge is clever because it turns Plantinga's structure back on theism. If the theist says reliable faculties are expected because God designed them, but those faculties then seem to reveal strong evidence against such a God through appalling suffering, the theist may face a similar defeater loop. The move is dialectically useful because it asks whether Plantinga has found a unique problem for naturalism or a general problem about defeaters. The weakness is compression. Evidence from suffering may lower the probability of a good God without showing that theistic cognitive warrant collapses. The score is high because the symmetry pressure is relevant, but it needs a fuller probability argument.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Final Reliability Impasse",
+        timebox: "1:01:31-1:08:18",
+        score: {
+          pro: 75,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:04:36",
+              role: "Closing probability defense",
+              words:
+                "Plantinga says Law's claim that adaptive neurology probably produces true belief content lacks grounds, and that evil does not reveal God's nonexistence.",
+              score: 75,
+              critique:
+                "Plantinga's closing is admirably modest about philosophical argument: he says the EAAN is powerful, not a knockdown proof. He also pinpoints the unresolved dispute, namely Law's probability judgment that adaptive neurology producing belief content will probably produce true content. That is a fair summary of the impasse. The weakness is that Plantinga still has not supplied a positive model for low probability beyond skepticism about Law's model. His appeal to Job and the cross may comfort Christian listeners, but it does not independently answer why evil fails as a defeater while naturalistic evolution succeeds as one. The score is respectable because he ends clearly, but the central burden remains partly unmet.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The closing demands a strict defeater analysis for naturalism while treating Christian resources as sufficient against evil without parallel detail."
+                }
+              ]
+            },
+            con: {
+              time: "1:01:31",
+              role: "Naturalist repair summary",
+              words:
+                "Law says the argument deserves close attention but is not insurmountable, since naturalists can explain why evolution favors true beliefs.",
+              score: 80,
+              critique:
+                "Law's final summary is balanced and philosophically credible. He concedes that the EAAN is interesting, has evolved through versions, and deserves serious attention, while maintaining that a naturalist can give reasons why unguided evolution tends to favor true beliefs. That combination of respect and resistance is persuasive. The weakness is that his positive repair remains mostly sketched. He has given the water example and conceptual-constraint line, but not a developed theory of content, reliability across abstract domains, or base rates for evolved cognition. The score is strong because his objections identify the live gap in Plantinga's argument, but limited because his alternative is promising rather than complete.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 77,
+        strengths: [
+          "Plantinga stated the EAAN as an epistemic self-defeat argument rather than overclaiming that evolution disproves naturalism.",
+          "He kept the discussion focused on the low-probability premise, belief content, and cognitive reliability instead of drifting into generic anti-atheist rhetoric.",
+          "His concessions about atheism, platonism, teleology, and philosophical non-knockdown arguments made the case narrower but more careful."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly moved from not seeing a semantic-selection link to treating reliable belief as roughly improbable under naturalism.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "He required detailed defeater discipline from naturalism while giving theistic warrant a looser escape route through independent warrant, Job, and the cross.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "He underweighted the scale of adaptive tasks in which flexible action, learning, and error correction plausibly require substantial truth-tracking.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Law clarified the argument's actual conclusion before objecting, which kept the exchange charitable and technically accurate.",
+          "His water-location and conceptual-constraint replies targeted the EAAN's crucial low-probability premise rather than merely asserting confidence in science.",
+          "His parity challenge usefully asked whether defeater logic threatens theism once reliable faculties appear to disclose evidence from suffering."
+        ],
+        blunders: [
+          {
+            text:
+              "His naturalist repair remained partly promissory because he did not fully defend a theory of belief content or reliability across abstract philosophical domains.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His parity challenge emphasized suffering as a defeater for theism while giving less attention to Plantinga's broader claims about non-argumentative warrant.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
