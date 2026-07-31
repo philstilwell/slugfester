@@ -47910,5 +47910,383 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "hawkins-folley-free-will-idealism-2026",
+    number: "133",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Nathan Hawkins vs Joe Folley: Free Will, Compatibilism, and Idealism",
+    label: "Free will, agency, and idealism",
+    date: "2026-07-31",
+    duration: "1 hr 59 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=OSXawgwSZQs",
+    motion:
+      "Can libertarian free will and Bradleyan idealism answer determinist and naturalist pressure better than compatibilist pragmatism?",
+    summary:
+      "Hawkins defends libertarian agency and non-reductive idealism; Folley presses compatibilist, naturalist, and pragmatist questions about what freedom, truth, and inquiry actually do.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Unsolicited Advice upload. The exchange is a friendly philosophical discussion rather than a formal timed debate; captions are lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "free will to be a datum",
+        context:
+          "Hawkins treats agency as a basic feature of experience that any adequate metaphysics must explain rather than explain away."
+      },
+      con: {
+        text: "what truth does",
+        context:
+          "Folley's pragmatist posture asks which concepts of freedom, truth, and responsibility earn their keep in lived inquiry and practice."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Libertarian idealism",
+        speaker: "Nathan Hawkins",
+        color: "teal"
+      },
+      con: {
+        name: "Compatibilist pragmatism",
+        speaker: "Joe Folley",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 84,
+      con: 85
+    },
+    sections: [
+      {
+        title: "Mapping Freedom",
+        timebox: "00:00-09:04",
+        score: {
+          pro: 82,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:47",
+              role: "Libertarian starting point",
+              words:
+                "Hawkins says libertarian freedom involves sourcehood and genuine alternatives, and that free will is a datum needing explanation.",
+              score: 82,
+              critique:
+                "Hawkins's opening is effective because it makes libertarian freedom more than a slogan. He distinguishes sourcehood from alternative possibilities, admits that philosophers do not simply reason themselves into views from nowhere, and treats free will as a datum embedded in deliberation, morality, and lived significance. That gives him a broad explanatory target. The weakness is that beginning from a datum can make the argument conservative: it protects ordinary experience before showing why compatibilist reconstruction cannot preserve enough of it. Hawkins also gestures toward physicalism and metaphysics before the case is developed. The score is high because the framing is clear and honest, but not higher because the datum still needs interpretation.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "The appeal to free will as lived datum risks treating first-person salience as more metaphysically decisive than it is by itself."
+                }
+              ]
+            },
+            con: {
+              time: "00:28",
+              role: "Conceptual map",
+              words:
+                "Folley asks Hawkins to separate free-will camps so the discussion does not collapse libertarianism, determinism, and compatibilism.",
+              score: 86,
+              critique:
+                "Folley's opening contribution is unusually valuable for a host-interlocutor role. He identifies the main danger in popular free-will debates, namely that people use the same words while arguing over different concepts. By asking Hawkins to distinguish libertarianism, hard incompatibilism, determinism, and compatibilism, he sets a fair and disciplined agenda. He also notes that compatibilists can accept determinism while disputing what free will requires. The weakness is that this is mostly framing rather than an argument for his own view. It clarifies the terrain, but does not yet establish compatibilism. The score is high because conceptual hygiene is central to this topic and Folley supplies it early.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Determinism and Normativity",
+        timebox: "09:04-18:45",
+        score: {
+          pro: 83,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:30",
+              role: "Normativity objection",
+              words:
+                "Hawkins argues that causal determinism threatens moral and rational normativity by erasing the gap between what happens and what ought to happen.",
+              score: 83,
+              critique:
+                "Hawkins's normativity objection is serious because it pushes determinism beyond the familiar blame question. If reasoning is merely a caused sequence, he asks, how can there be a normative difference between valid and invalid inference, or between what one thinks and what one ought to think? His use of Frege-style anti-psychologism gives the point philosophical pedigree. The weakness is that the step from causal explanation to normative collapse is not fully secured. A compatibilist or naturalist can distinguish causal histories from evaluative standards without treating standards as uncaused. Hawkins acknowledges he is sketching rather than completing the argument. The score is strong because the pressure is real, but limited because the bridge needs more defense.",
+              tags: []
+            },
+            con: {
+              time: "12:14",
+              role: "Clarification pressure",
+              words:
+                "Folley asks Hawkins to walk through why determined reasoning would leave us without reason to believe determinism.",
+              score: 84,
+              critique:
+                "Folley's pressure is productive because he does not dismiss the normativity worry as unintelligible. He says many listeners will understand the link from determinism to moral responsibility, but the alleged link from determined reasoning to having no reason to believe determinism is harder to grasp. That request forces Hawkins to supply steps rather than rely on a familiar anti-naturalist intuition. Folley also brings in language-model comparisons, which makes the issue concrete without equating humans with machines. The weakness is that his own positive answer is still delayed; he tests the argument more than he resolves it. The score is strong because the question improves the debate's rigor and burden discipline.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Causation and Laws",
+        timebox: "18:45-30:22",
+        score: {
+          pro: 86,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "18:45",
+              role: "Causal-assumption critique",
+              words:
+                "Hawkins says Laplacean determinism imports controversial assumptions about time, causation, constraint, prediction, and physical law.",
+              score: 86,
+              critique:
+                "Hawkins's critique of causal determinism is one of his best technical stretches. He does not merely say determinism feels threatening; he asks what picture of time, prediction, laws, and causation is being smuggled into the threat. The Sabine Hossenfelder example, reversible equations, Russell on causation, and Collingwood's manipulation account all show that 'everything is caused' is not a neutral scientific sentence. The weakness is that exposing contested assumptions does not by itself establish libertarian freedom. It may also support non-causal determinism, structural explanation, or a thinner compatibilism. Still, Hawkins successfully blocks cheap Laplacean rhetoric, especially when determinism is presented as obvious physics, so the score is high.",
+              tags: []
+            },
+            con: {
+              time: "24:00",
+              role: "Naturalist translation",
+              words:
+                "Folley keeps asking whether a non-causal, equation-like determinism would still undermine the ordinary image of branching futures.",
+              score: 82,
+              critique:
+                "Folley's naturalist pressure is fair because it grants much of Hawkins's critique while preserving the core worry. Even if physics is better understood through time-symmetric equations than billiard-ball pushes, many people fear that a complete description still leaves no real openness. Folley repeatedly translates the issue back into what a naturalist audience will find unsettling: a stretched-out model with all outcomes already defined. The weakness is that this pressure can preserve an intuition without establishing an argument. If causation and control are separate concepts, the mere absence of branching tracks may not defeat agency. The score is strong because Folley keeps the opponent from winning too much from anti-causal nuance.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Could Have Done Otherwise",
+        timebox: "30:22-52:45",
+        score: {
+          pro: 85,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "41:35",
+              role: "Alternative-possibility account",
+              words:
+                "Hawkins says could-have-done-otherwise claims need not require branching futures if modal and causal reasoning are kept distinct.",
+              score: 85,
+              critique:
+                "Hawkins's modal distinction is sophisticated and helpful. He separates the sourcehood condition from the could-have-done-otherwise condition, then argues that alternatives can be understood across possible histories without requiring a metaphysically open future in the garden-of-forking-paths sense. His point that scientists routinely discuss different laws or initial conditions is a useful challenge to overly rigid talk about necessity. The weakness is that this may redefine the phrase away from what many incompatibilists mean. If the relevant question is whether this agent, with this past and these laws, could do otherwise, widening the modal frame may look like changing scope. The score is high because the distinction is real, but still contested.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The phrase could have done otherwise shifts between same-history alternatives and broader possible-history alternatives."
+                }
+              ]
+            },
+            con: {
+              time: "52:45",
+              role: "Scope objection",
+              words:
+                "Folley replies that Hawkins and van Inwagen may be using could-have-done-otherwise with different scopes and different fixed conditions.",
+              score: 84,
+              critique:
+                "Folley's scope objection is precise. He does not caricature Hawkins as confused; he says Hawkins may be quantifying over possible worlds where past, present, and future can vary, while the incompatibilist argument restricts the scope to the same past and laws. That identifies the live disagreement more cleanly than a generic appeal to determinism. The strength is charitable diagnosis: if the disagreement is about which conditions remain fixed, the debate can move forward. The weakness is that Folley is partly interpreting van Inwagen rather than defending a complete view himself, so Hawkins can answer that the narrower scope just restates causal determinism. The score is strong because the objection clarifies the dispute.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Compatibilist Responsibility",
+        timebox: "1:02:51-1:11:44",
+        score: {
+          pro: 83,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:09:00",
+              role: "Agency indispensability",
+              words:
+                "Hawkins says we cannot live without responsibility distinctions, causal reasoning, time, blame, and taking ourselves as agents.",
+              score: 83,
+              critique:
+                "Hawkins's response to compatibilist reconstruction is strongest where he emphasizes indispensability. Even a determinist society must distinguish reflex, coercion, brain tumor, manipulation, and premeditated action, and Hawkins plausibly argues that these distinctions depend on taking agents seriously. His Augustine comparison also shows that foreknowledge or a fixed future need not automatically erase responsibility. The weakness is that indispensability may favor compatibilism as much as libertarianism. If practical responsibility distinctions survive because they organize prediction, treatment, and moral repair, Folley can say his project has succeeded. Hawkins needs a stronger reason why these practices require libertarian sourcehood. The score is solid-strong because the point matters, but it does not clearly defeat Folley's reconstruction.",
+              tags: []
+            },
+            con: {
+              time: "1:04:30",
+              role: "Compatibilist reconstruction",
+              words:
+                "Folley says freedom contains many sub-meanings, including practical distinctions among reflexes, brain tumors, coercion, character, and punishment.",
+              score: 88,
+              critique:
+                "Folley's compatibilist reconstruction is the strongest argumentative sequence in the free-will portion. He asks what would remain even in Determinist Town and shows that many responsibility distinctions still do work: reflexes differ from premeditated murder, brain tumors differ from stable character, coercion differs from willing endorsement, and punishment can shape future conduct. His Hugh Price-inspired question about what concepts do gives the account a coherent pragmatist method. The weakness is that a functional reconstruction can look like replacing free will with useful neighboring notions. Still, Folley gives a rich positive account rather than merely attacking libertarianism, and he does so with concrete cases. The score is very high.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Bradleyan Idealism",
+        timebox: "1:11:44-1:44:02",
+        score: {
+          pro: 86,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:14:10",
+              role: "Non-reductive idealism",
+              words:
+                "Hawkins says Bradley accepts scientific truths while rejecting the extra 'that's all folks' claim added by reductionist materialism.",
+              score: 86,
+              critique:
+                "Hawkins's presentation of Bradleyan idealism is careful and unusually charitable to science. He does not deny scientific explanation; he rejects the added metaphysical claim that scientific description exhausts reality. The strongest part is the tripartite account of experience: feeling, thought, and volition are not reducible to one another, and thought arrives late to systematize a richer felt encounter with the world. That gives idealism an explanatory motive connected to value, beauty, morality, and agency. The weakness is that the account is expansive and difficult to test. Saying every mode of experience must find a place can become a very forgiving metaphysical demand. The score is high because the view is substantive and non-caricatured.",
+              tags: []
+            },
+            con: {
+              time: "1:25:25",
+              role: "Naturalistic redescribing",
+              words:
+                "Folley asks whether Bradley can be redescribed naturalistically as starting from experience, models, and mind-framed engagement rather than mysterious mind-control.",
+              score: 84,
+              critique:
+                "Folley's response to idealism is strong because it resists both dismissal and surrender. He tries to redescribe parts of Bradley in naturalistic or pragmatist terms: experience is the starting point, models are tools built from experience, and mind-framed does not mean mind-controlled. That makes idealism less alien while testing whether Hawkins has shown more than a sophisticated phenomenology. His worry about the given is also relevant: if we never experience raw uninterpreted reality, the appeal to unstructured feeling needs careful handling. The weakness is that Folley sometimes translates the view so sympathetically that his disagreement becomes harder to locate. The score is high because his questions discipline the metaphysics without flattening it.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "The Absolute and Standards",
+        timebox: "1:44:02-1:59:35",
+        score: {
+          pro: 83,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:45:00",
+              role: "Absolute as completion",
+              words:
+                "Hawkins says Bradley is not agnostic about the Absolute because truth, beauty, and goodness draw inquiry toward real completion.",
+              score: 83,
+              critique:
+                "Hawkins's account of the Absolute is philosophically rich. He distinguishes Bradley from a merely Peircean regulative ideal by arguing that inquiry, moral striving, and aesthetic longing already treat completion as more real than our partial states. The anti-reductionist moral is attractive: theories answer questions, and a theory that says 'this is all there is' often smuggles in a faith-like boundary. The weakness is that the Absolute becomes difficult to assess publicly. Moving from normative pull to real metaphysical completion risks overstating what our practices commit us to. The score is strong because Hawkins explains why the concept matters, but limited because its ontological status remains obscure.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "The move treats the Absolute as more than a regulative ideal because inquiry aims at it, while rival aims may not receive the same ontological upgrade."
+                }
+              ]
+            },
+            con: {
+              time: "1:57:00",
+              role: "Standards challenge",
+              words:
+                "Folley grants the anti-reductionist warning but says inquiry still needs gatekeeping standards so it does not become a free-for-all.",
+              score: 85,
+              critique:
+                "Folley's final pressure is exactly the right counterweight to Hawkins's anti-reductionism. He grants that scientism can be too narrow, but insists that inquiry still needs standards: one cannot let every metaphysical, aesthetic, or religious claim through the gate simply because reductionism is inadequate. That is a strong pragmatist challenge because it asks for criteria rather than vibes. The weakness is that Folley does not fully specify those standards beyond leaning toward the pragmatic maxim, so Hawkins can agree in principle while keeping his broader metaphysics. Even so, the objection protects the discussion from sliding from anti-reductionism into permissiveness. The score is high because it identifies the unresolved methodological burden.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 84,
+        strengths: [
+          "Hawkins gave libertarian agency a broad metaphysical setting, connecting free will, normativity, causation, time, experience, feeling, thought, and value.",
+          "His strongest moves exposed hidden assumptions in cheap causal-determinist arguments rather than merely asserting that freedom feels real.",
+          "His Bradleyan idealism avoided anti-science caricature by accepting scientific truths while denying that scientific method exhausts human experience."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes treated the practical and experiential indispensability of agency as stronger evidence for libertarian metaphysics than Folley's compatibilist reconstruction allowed.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          },
+          {
+            text:
+              "His could-have-done-otherwise account shifted scope between same-history alternatives and broader modal alternatives, leaving the incompatibilist target partly unsettled.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His appeal to the Absolute moved from inquiry's normative pull to metaphysical reality faster than the live exchange fully justified.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 85,
+        strengths: [
+          "Folley clarified terms at each stage, repeatedly separating determinism, causal determinism, compatibilism, sourcehood, alternative possibilities, pragmatism, and idealism.",
+          "His compatibilist material was concrete and constructive, using reflexes, coercion, brain tumors, character, punishment, and conceptual function rather than mere denial.",
+          "His idealism questions were fair and philosophically literate, translating Hawkins's view into naturalist and pragmatist terms while preserving pressure on standards."
+        ],
+        blunders: [
+          {
+            text:
+              "His compatibilist reconstruction sometimes risked changing the topic from free will itself to several practical concepts near free will.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His naturalistic redescriptions of idealism were illuminating, but occasionally so charitable that they blurred where the disagreement with Hawkins finally lies.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          },
+          {
+            text:
+              "His final standards challenge rightly resisted permissiveness, but left the positive pragmatist gatekeeping criterion only sketched.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
