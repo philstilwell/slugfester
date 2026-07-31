@@ -63,12 +63,13 @@ Design constraints:
 7. Segment the debate into 4-7 topical sections.
 8. For each section, align 1-3 exchanges by topic rather than by every interruption.
 9. Write each `argument.words` as actual words or a tight transcript-grounded condensation.
-10. Score each move using the rubric in `debate-critique-process.md`.
-11. Write each critique at 105-130 words.
-12. Add fallacy or bias tags only when they explain a real weakness, and include a context note for each tag.
-13. Write the overall strengths and logical blunders.
-14. Run `npm run seo`.
-15. Run `npm run check`.
+10. Set `assessmentModel` to `5.6 Terra Extra High` for Debate `131` and every later debate. Debates `01` through `130` retain their original `GPT 5.5 Extra High` attribution.
+11. Score each move using the rubric in `debate-critique-process.md`.
+12. Write each critique at 105-130 words.
+13. Add fallacy or bias tags only when they explain a real weakness, and include a context note for each tag.
+14. Write the overall strengths and logical blunders.
+15. Run `npm run seo`.
+16. Run `npm run check`.
 
 Topic categorization:
 
@@ -83,7 +84,8 @@ Use this shape when adding an object to `src/data/debates.js`.
 ```js
 {
   id: "speaker-a-speaker-b-topic-year",
-  number: "01",
+  number: "131",
+  assessmentModel: "5.6 Terra Extra High",
   title: "Speaker A vs Speaker B: Debate Title",
   label: "Concise topic label that maps to the intended /topics/ category",
   date: "YYYY-MM-DD",
@@ -215,7 +217,8 @@ Use this shape when adding an object to `src/data/debates.js`.
 - Every score is justified by the critique text.
 - `sourceNote` and `scoringNote` are present.
 - `scoringNote` explicitly says the scores are AI-generated.
-- The scoring-note band states that assessments were made by `GPT 5.5 Extra High`.
+- The scoring-note band states the model actually used: `GPT 5.5 Extra High` through Debate `130`, or `5.6 Terra Extra High` from Debate `131` onward.
+- New debate objects from `131` onward explicitly include `assessmentModel: "5.6 Terra Extra High"`.
 - LogFall links are used only for fallacies.
 - CogBias links are used only for cognitive biases.
 - Fallacy and bias pills show hover/focus popovers with basic definitions, contextual explanation, and the note `Click button for more info.`

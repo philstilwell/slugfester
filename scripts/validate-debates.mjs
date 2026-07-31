@@ -6,6 +6,9 @@ const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const debateNumberPattern = /^\d{2,}$/;
 const datePattern = /^\d{4}-\d{2}-\d{2}$/;
 const youtubePattern = /^https:\/\/(www\.)?youtube\.com\/watch\?v=[A-Za-z0-9_-]+/;
+const legacyAssessmentModel = "GPT 5.5 Extra High";
+const currentAssessmentModel = "5.6 Terra Extra High";
+const terraAssessmentFirstDebate = 131;
 
 function pathLabel(parts) {
   return parts.join(".");
@@ -203,6 +206,24 @@ function validateDebate(debate, index) {
     pattern: debateNumberPattern,
     patternMessage: "must be at least two digits and zero-padded below 100"
   });
+  const debateNumber = Number.parseInt(debate.number, 10);
+  if (debateNumber >= terraAssessmentFirstDebate) {
+    const assessmentModel = requireString(debate, "assessmentModel", path);
+    if (assessmentModel !== currentAssessmentModel) {
+      addError(
+        [...path, "assessmentModel"],
+        `must be ${currentAssessmentModel} for Debate ${terraAssessmentFirstDebate} and later`
+      );
+    }
+  } else if (
+    debate.assessmentModel !== undefined &&
+    debate.assessmentModel !== legacyAssessmentModel
+  ) {
+    addError(
+      [...path, "assessmentModel"],
+      `must be ${legacyAssessmentModel} when provided for debates before ${terraAssessmentFirstDebate}`
+    );
+  }
   requireString(debate, "title", path, { minWords: 3 });
   requireString(debate, "label", path);
   requireString(debate, "date", path, {

@@ -70,6 +70,14 @@ Score bands:
 - `50-59`: weak; important gaps, misframing, or poor engagement with the live objection.
 - `<50`: seriously defective; fallacious, irrelevant, self-undermining, or unsupported.
 
+## Assessment Model Versioning
+
+- Debates `01` through `130` were assessed with `GPT 5.5 Extra High`.
+- After Debate `130`, Slugfester began using `5.6 Terra Extra High`.
+- Every new debate from `131` onward must include `assessmentModel: "5.6 Terra Extra High"` in `src/data/debates.js`.
+- Do not retroactively relabel existing debates. The displayed model should describe the model used for that assessment.
+- The renderer selects the appropriate model by debate number as a fallback, and `npm run check` rejects any new debate that omits or changes the required `5.6 Terra Extra High` model label.
+
 ## Critique Popovers
 
 Each `◉` critique should target about 120 words. The validator allows 105-130 words.
@@ -123,7 +131,8 @@ Before committing a new debate:
 - Each section compares like with like.
 - Fallacy/bias tags are warranted and linked to the correct site.
 - The scoring note makes clear that scores are AI-generated.
-- The scoring-note band identifies `GPT 5.5 Extra High` as the assessment model.
+- The scoring-note band identifies the correct assessment model: `GPT 5.5 Extra High` through Debate `130`, then `5.6 Terra Extra High` beginning with Debate `131`.
+- Every new debate from `131` onward explicitly sets `assessmentModel` to `5.6 Terra Extra High`.
 - `sourceNote` identifies how the transcript was obtained or cleaned.
 - The page follows the locked design in `youtube-debate-assessment-template.md`.
 - The debate number is at least two digits, zero-padded below 100, unique, and sequential in debate-list order.

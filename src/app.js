@@ -91,7 +91,17 @@ const scoreTone = (score) => {
 const average = (values) =>
   Math.round(values.reduce((total, value) => total + value, 0) / values.length);
 
-const assessmentModel = "GPT 5.5 Extra High";
+const legacyAssessmentModel = "GPT 5.5 Extra High";
+const currentAssessmentModel = "5.6 Terra Extra High";
+const terraAssessmentFirstDebate = 131;
+
+function assessmentModelFor(debate) {
+  if (debate?.assessmentModel) return debate.assessmentModel;
+
+  return Number.parseInt(debate?.number, 10) >= terraAssessmentFirstDebate
+    ? currentAssessmentModel
+    : legacyAssessmentModel;
+}
 
 function setMeta(selector, attributes) {
   let element = document.head.querySelector(selector);
@@ -1039,9 +1049,9 @@ function renderBackend() {
           <p class="assessment-lede">This is the machinery behind Slugfester: transcripts are cleaned, quotes are anchored, arguments are paired by issue, and each move is scored against ordinary standards of logical coherence, evidential support, responsiveness, and fallacy avoidance.</p>
         </div>
         <aside class="assessment-stamp" aria-label="Backend model">
-          <span>Backend model</span>
-          <strong>${escapeHtml(assessmentModel)}</strong>
-          <p>The backend produces analytic estimates, not verdicts. A score describes how the reasoning performs in the transcript, not whether a worldview is finally true.</p>
+          <span>Current default model</span>
+          <strong>${escapeHtml(currentAssessmentModel)}</strong>
+          <p>Debates 01-130 were assessed with ${escapeHtml(legacyAssessmentModel)}. Beginning with Debate 131, new assessments use ${escapeHtml(currentAssessmentModel)}. A score describes the reasoning in the transcript, not whether a worldview is finally true.</p>
         </aside>
       </section>
 
@@ -1305,11 +1315,13 @@ function renderInteractionGuide() {
 function renderScoringNote(debate) {
   if (!debate.scoringNote) return "";
 
+  const model = assessmentModelFor(debate);
+
   return `
     <section class="scoring-note" aria-label="Scoring note">
       <strong>AI-generated scorecard</strong>
       <span>${escapeHtml(debate.scoringNote)}</span>
-      <span class="assessment-model">Assessments made by ${escapeHtml(assessmentModel)}.</span>
+      <span class="assessment-model">Assessments made by ${escapeHtml(model)}.</span>
     </section>
   `;
 }
