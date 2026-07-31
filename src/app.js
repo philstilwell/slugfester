@@ -34,7 +34,7 @@ const MIN_RANKED_DEBATE_APPEARANCES = 3;
 const rankingMinimumOptions = [3, 5, 10];
 const rankingSortOptions = [
   { value: "average", label: "Highest average" },
-  { value: "opponents", label: "Highest Opponent's Avg." },
+  { value: "opponents", label: "Highest Opponents' Avg." },
   { value: "appearances", label: "Most appearances" },
   { value: "name", label: "Name" }
 ];
@@ -1099,7 +1099,7 @@ function renderRankingOptions(options, selectedValue) {
 function rankingHeading(sort) {
   const headings = {
     average: "Ranked by average score",
-    opponents: "Ranked by Opponent's Avg.",
+    opponents: "Ranked by Opponents' Avg.",
     appearances: "Ranked by appearances",
     name: "Ranked alphabetically"
   };
@@ -1130,7 +1130,7 @@ function renderRankingCard(person) {
               <strong>${escapeHtml(formatAverageScore(person.averageScore))}</strong>
             </span>
             <span class="ranking-score ${scoreTone(Math.round(person.averageOpponentScore))}">
-              <small>Opponent's Avg.</small>
+              <small>Opponents' Avg.</small>
               <strong>${escapeHtml(formatAverageScore(person.averageOpponentScore))}</strong>
             </span>
           </span>
@@ -1146,7 +1146,7 @@ function renderRankingMethod() {
       <summary>Ranking method</summary>
       <div>
         <p>Each average uses the published overall score for that speaker's side of every matching debate. A panel's shared side score is assigned to each named participant on that side.</p>
-        <p>Topic filters include any debate assigned to the selected category. The Opponent's Avg. sort uses the published overall scores of the opponents each person faced.</p>
+        <p>Topic filters include any debate assigned to the selected category. The Opponents' Avg. sort uses the published overall scores of the opponents each person faced.</p>
         <p>These figures assess the reasoning performance recorded in Slugfester scorecards. They do not establish the truth of a speaker's conclusions, expertise, or personal worth.</p>
       </div>
     </details>
