@@ -51222,5 +51222,311 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "plantinga-dennett-evolution-naturalism-2018",
+    number: "144",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Alvin Plantinga vs Daniel Dennett: Science, Religion, and Evolution",
+    label: "Evolution, naturalism, and divine design",
+    date: "2026-07-31",
+    duration: "1 hr 47 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=f06J2R4MwGA",
+    motion:
+      "Are evolutionary science and theistic religion compatible, and does naturalism plus evolution undercut trust in human cognition?",
+    summary:
+      "Plantinga defends the compatibility of evolution and theism while challenging naturalist cognition; Dennett defends natural selection as a sufficient design explanation and a source of corrigible truth-tracking.",
+    sourceNote:
+      "Based on the YouTube transcript for the Capturing Christianity upload. This invited academic exchange is not a formally timed debate; the transcript is lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Darwinism is entirely compatible with God's guiding the whole process.",
+        context:
+          "Plantinga's central distinction is between evolutionary mechanisms and the additional metaphysical claim that no divine agent intended their outcomes."
+      },
+      con: {
+        text: "There isn't much of a market for low-reliability cognitive devices.",
+        context:
+          "Dennett's central response is that evolution and later scientific correction can produce systems that reliably track the world without divine design."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theistic compatibility",
+        speaker: "Alvin Plantinga",
+        color: "teal"
+      },
+      con: {
+        name: "Naturalist explanation",
+        speaker: "Daniel Dennett",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 68,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Guided Evolution and Compatibility",
+        timebox: "04:30-1:00:40",
+        score: {
+          pro: 79,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "11:05",
+              role: "Guidance compatibility argument",
+              words:
+                "Plantinga says mutations can be random with respect to an organism's needs yet still be intended by God, so Darwinism does not itself entail unguided evolution.",
+              score: 79,
+              critique:
+                "Plantinga makes an important conceptual distinction. In evolutionary biology, random mutation normally means no mechanism correlates mutations with an organism's adaptive needs; it does not mean events are uncaused in every possible sense. That distinction successfully blocks the quick claim that Darwinism formally contradicts a God who works through mutations. He also correctly separates the scientific theory from a naturalistic interpretation added to it. The limitation is that compatibility establishes possibility, not positive support for guidance. Plantinga's argument therefore defeats a contradiction charge while leaving Dennett's evidential question untouched: what observation favors divine orchestration over an unguided account? The score is strong because the definitional clarification is precise and central, though its conclusion is narrower than the broader theistic project.",
+              tags: []
+            },
+            con: {
+              time: "45:05",
+              role: "Compatibility versus evidence reply",
+              words:
+                "Dennett grants that evolutionary theory is compatible with theistic belief and that it does not define randomness as metaphysical blindness, but says those concessions do not support divine guidance.",
+              score: 86,
+              critique:
+                "Dennett begins well by granting Plantinga's strongest limited claims instead of pretending evolutionary theory logically rules out God. He then identifies the remaining burden: a hypothesis can be compatible with the data without receiving any evidential boost from them. His comparison between natural and artificial selection helps make the evidential problem concrete, since apparent design is not reliably identifiable merely by visual complexity. The weakness is rhetorical excess when he later groups theistic guidance with far less serious examples; that comparison can distract from the more disciplined compatibility-versus-evidence point. Still, the response is strong because it accepts the valid semantic correction while showing why it does not establish the intended conclusion. The high score reflects both charity and a clear restoration of the empirical burden.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Design and Biological Complexity",
+        timebox: "15:35-1:13:50",
+        score: {
+          pro: 62,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "16:05",
+              role: "Cell-complexity design case",
+              words:
+                "Plantinga cites Michael Behe's argument that unguided selection is probably incapable of producing some protein machines, making cellular complexity more likely on theism than naturalism.",
+              score: 62,
+              critique:
+                "Plantinga usefully separates ordinary descent with modification from the more specific question of whether selection can build particular molecular systems. That is a legitimate way to prevent evolution from being treated as a complete answer to every biological-origin question. He also labels Behe's proposal empirical and nonconclusive, a welcome restraint. The key weakness is that the comparative probability claim rests almost entirely on Behe's contested assessment without presenting the relevant calculations, alternative pathways, or expert response. Difficulty explaining a structure through one currently favored mechanism does not by itself make a guiding mind probable. The score is mixed because the argument identifies a real explanatory target, but the inference from unresolved mechanism to theism is substantially under-supported in the live exchange.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "A disputed limitation in present evolutionary explanation is treated as support for divine guidance."
+                }
+              ]
+            },
+            con: {
+              time: "51:15",
+              role: "Failure-of-imagination rebuttal",
+              words:
+                "Dennett uses earlier geneticists' inability to imagine DNA to warn that present difficulty imagining evolutionary pathways is not evidence that those pathways cannot exist.",
+              score: 85,
+              critique:
+                "Dennett's historical example is well chosen. A leading geneticist once found the material basis of heredity nearly inconceivable, yet later molecular biology supplied a mechanism more elaborate than he imagined. That cautions against converting a failure of imagination into a claim of biological impossibility. Dennett also correctly notes that a positive design inference needs more than the observation that an explanation has not yet been supplied. The limitation is that this lesson does not independently demonstrate how every complex molecular system evolved, and his later dismissal of Behe relies partly on scientific consensus rather than showing the technical rebuttal. Even so, it directly addresses the inference Plantinga relies on. The score is high because it restores a necessary evidential standard without pretending current science has solved every detail.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Suffering, Simplicity, and Warrant",
+        timebox: "18:45-1:00:35",
+        score: {
+          pro: 55,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "20:10",
+              role: "Felix culpa response",
+              words:
+                "Plantinga concedes that evolutionary suffering is a perplexity, but says incarnation, atonement, sin, and possible nonhuman agency can make extensive suffering compatible with the best worlds.",
+              score: 55,
+              critique:
+                "Plantinga deserves credit for conceding that predation, pain, and deep evolutionary time create a genuine theistic perplexity. He does not simply deny the data, and he explains why he thinks a traditional Christian theodicy can absorb them. The problem is that the proposed explanation is largely asserted. The claim that all best worlds require atonement, and that nonhuman suffering may stem from sin or Satan, introduces substantial theological premises without showing why they make the observed scale and distribution of suffering expected. Compatibility again does less than comparative evidence. His point that longer duration does not automatically refute every theodicy is fair, but it does not neutralize the probabilistic pressure. The score is weak because the response is candid yet offers little independent warrant for its explanatory bridge.",
+              tags: []
+            },
+            con: {
+              time: "59:10",
+              role: "Discriminating-evidence challenge",
+              words:
+                "Dennett says guided evolution remains logically possible, but asks what evidence distinguishes it from his Superman scenario and offers a buried instructional record as the kind of evidence that would matter.",
+              score: 84,
+              critique:
+                "Dennett turns an abstract disagreement into a useful test. By describing a hypothetical record embedded in ancient rock, he shows that he is not demanding logical impossibility or refusing in principle to count evidence for intervention. He asks instead for data that would make guidance more expected than an ordinary evolutionary history. That is exactly the missing step after Plantinga's compatibility argument. The Superman framing is needlessly comic and can make divine theism look interchangeable with a fictional agent before the comparison has been argued. Yet its core function is legitimate: it isolates the need for independently discriminating evidence rather than merely a compatible story. The score is high because the test is concrete, relevant, and responsive, even though its presentation occasionally outruns its philosophical precision.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Naturalism and Scientific Method",
+        timebox: "1:04:20-1:27:15",
+        score: {
+          pro: 78,
+          con: 63
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "86:05",
+              role: "Method-versus-metaphysics distinction",
+              words:
+                "Plantinga says theistic scientists need not assume that God does not exist when doing physics; they can investigate the workings of a world they believe God created.",
+              score: 78,
+              critique:
+                "Plantinga makes a valuable distinction between using natural causes in a local scientific explanation and affirming the metaphysical thesis that no God exists. The presence of theistic scientists illustrates that scientific practice does not require a personal commitment to atheism. This directly identifies an ambiguity in Dennett's claim that naturalism is assumed throughout reputable inquiry. The limitation is that Plantinga moves quickly from this personal compatibility to the thought that methodological restrictions have no special evidential force. Scientists can remain theists while still requiring testable natural mechanisms in their professional explanations. His response also does not show that a divine-guidance claim meets those methodological standards. The score is solid because the definitional correction is important, but it leaves the practical role of methodological naturalism underdeveloped.",
+              tags: []
+            },
+            con: {
+              time: "65:00",
+              role: "Scientific-practice defense",
+              words:
+                "Dennett says naturalism is passively assumed in reputable courts and scientific investigation, arguing that without it claims such as Behe's become theological speculation rather than scientific explanation.",
+              score: 63,
+              critique:
+                "Dennett rightly emphasizes that courts and sciences require publicly assessable causal explanations rather than unrestricted appeals to hidden agents. That methodological norm protects inquiry from explanations that can accommodate any outcome, and it explains why an intelligent-design proposal must offer testable predictions. The problem is his use of naturalism. In this context, the practice is better described as methodological naturalism, whereas Plantinga defines naturalism as the metaphysical denial of God. Treating the former as if it establishes or requires the latter shifts the issue without argument. Dennett also dismisses Behe in categorical language before presenting enough evidence for listeners to evaluate the scientific dispute. The score is mixed because the methodological point matters, but the conceptual slide weakens its application to Plantinga's philosophical claim.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The reply shifts between a research method and a metaphysical denial of divine reality."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "The Evolutionary Argument Against Naturalism",
+        timebox: "33:30-1:18:45",
+        score: {
+          pro: 74,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "35:10",
+              role: "Reliability-defeater argument",
+              words:
+                "Plantinga argues that selection rewards adaptive neurophysiology and behavior, not true belief content, so naturalism plus evolution gives a defeater for trusting the faculties that support both beliefs.",
+              score: 74,
+              critique:
+                "Plantinga formulates a serious epistemic challenge rather than a simplistic claim that evolution disproves atheism. His distinction between adaptive behavior and the truth of accompanying mental content targets a genuine question about why a survival-shaped system should be reliable across abstract inquiry. The self-defeat structure is also clear: if the conjunction gives a reason to distrust cognition, it may undercut belief in the conjunction itself. The weakness is the low-probability premise. Showing that selection directly favors behavior does not show that reliable representation is unlikely, especially in varied environments where learning and flexible action depend on accurate information. Plantinga supplies imaginative alternatives but not a probability model. The score is solid because the argument identifies a real philosophical burden, but its decisive empirical-semantic premise remains unearned.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The absence of an immediately visible selection rule for true beliefs is treated as low reliability evidence."
+                }
+              ]
+            },
+            con: {
+              time: "74:15",
+              role: "Cognitive-correction reply",
+              words:
+                "Dennett says evolved cognitive systems have measurable accuracy and correctable flaws, while science systematically identifies bias, error, and distortion to improve their reliability.",
+              score: 84,
+              critique:
+                "Dennett gives naturalism concrete resources rather than merely denying Plantinga's premise. Sensory acuity can be tested, prosthetic tools can repair known limits, and scientific methods expose experimenter bias and faulty intuition. Those practices make widespread error correction intelligible only if cognition retains contact with the world. His account also usefully treats reliability as graduated and corrigible rather than infallible. The weakness is that identifying and correcting error partly relies on the faculties whose reliability is at issue, and everyday perceptual success does not automatically validate metaphysics, mathematics, or every philosophical inference. Dennett's calculator analogy illustrates functional reliability but does not fully explain intentional content. The score is high because the reply gives a plausible evolutionary and social pathway to substantial truth-tracking, even though it leaves the broadest epistemic scope open.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Truth Tracking and Mental Content",
+        timebox: "1:28:40-1:47:05",
+        score: {
+          pro: 73,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "104:10",
+              role: "Content-behavior separation",
+              words:
+                "Plantinga grants that accurate indicators and adaptive behavior are required, but argues that the beliefs caused alongside that neurophysiology need not have true content.",
+              score: 73,
+              critique:
+                "Plantinga presses the technically strongest part of his position here. He grants that a frog needs accurate indicators for successful feeding, then asks why this fact entails that any belief attributed to the frog has the truth-compatible content a naturalist wants. That blocks a naive shortcut from successful behavior to universal cognitive reliability. The weakness is that he continues to rely on logical possibility. A causal and functional theory of content may constrain what a state counts as believing precisely because of its role in perception, desire, and behavior. Plantinga does not show that radically false content is comparably likely under those constraints. The score is solid because he isolates the semantic issue sharply, but his modal counterexamples still do not establish the probability required for the defeater.",
+              tags: []
+            },
+            con: {
+              time: "99:05",
+              role: "Causal truth-tracking account",
+              words:
+                "Dennett says cognitive science and evolutionary biology support systems causally designed to track truth, comparing cognition to wings whose survival value depends on working well at flight.",
+              score: 85,
+              critique:
+                "Dennett gives the most direct reply to Plantinga's content gap. If a system's continued success depends on detecting food, predators, tools, and social conditions accurately enough to guide flexible action, a causal connection between world and representation is not mysterious surplus. The wing analogy captures the basic functional point: an adaptation's contribution to survival is often inseparable from doing the relevant task well. He also explains why a system that ceased tracking truth would be vulnerable to replacement or correction. The remaining limitation is scope. The argument works best for ordinary empirical representation and does not by itself vindicate reliability in metaphysics, morality, or highly abstract reasoning. Still, it directly challenges the proposed coin-flip probability. The score is high for providing a mechanism rather than merely an assertion of optimism.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 68,
+        strengths: [
+          "Plantinga cleanly separates evolutionary mechanisms from the extra metaphysical claim that the process was unintended, defusing a simplistic science-versus-theism conflict.",
+          "He frames the evolutionary argument against naturalism as an epistemic defeater argument and keeps attention on the difficult relation between adaptive behavior and true content.",
+          "He acknowledges evolutionary suffering as a real perplexity rather than pretending natural history contains no pressure for theism."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly turns the possibility of guided evolution, and gaps in a current explanatory story, into pressure for divine guidance without independently showing that guidance is probable.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Dennett grants the logical compatibility of evolution and theism while firmly distinguishing that concession from positive evidence for divine intervention.",
+          "His historical and methodological responses explain why incomplete evolutionary detail does not automatically count as evidence for intelligent design.",
+          "He gives the naturalist side a positive account of graduated, corrigible truth-tracking through evolved capacities and scientific error correction."
+        ],
+        blunders: [
+          {
+            text:
+              "He treats the methodological preference for natural, testable explanations as though it were equivalent to the metaphysical conclusion that no divine agent exists.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
