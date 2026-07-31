@@ -446,11 +446,13 @@ a {
 }
 
 .search-page,
-.topics-page {
+.topics-page,
+.rankings-page {
   padding: clamp(28px, 5vw, 58px) 0 76px;
 }
 
-.topics-page * {
+.topics-page *,
+.rankings-page * {
   min-width: 0;
 }
 
@@ -737,6 +739,171 @@ a {
   color: #30413e;
   font-size: 0.78rem;
   font-weight: 850;
+}
+
+.rankings-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(236px, 300px);
+  align-items: end;
+  gap: clamp(22px, 4vw, 54px);
+  margin-bottom: 30px;
+}
+
+.rankings-hero h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 5.6vw, 4.8rem);
+  line-height: 0.92;
+}
+
+.rankings-lede {
+  max-width: 720px;
+  margin: 16px 0 0;
+  color: #40524f;
+  font-size: clamp(1rem, 1.6vw, 1.23rem);
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.rankings-summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  gap: 9px 18px;
+  align-items: center;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--gold);
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(27, 43, 41, 0.08);
+}
+
+.rankings-summary span {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.rankings-summary strong {
+  color: var(--ink);
+  font-size: 1.36rem;
+  line-height: 1;
+}
+
+.rankings-list-section {
+  display: grid;
+  gap: 16px;
+}
+
+.rankings-list-section .section-heading {
+  align-items: end;
+}
+
+.rankings-note {
+  max-width: 430px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 650;
+  line-height: 1.38;
+}
+
+.ranking-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ranking-card {
+  display: grid;
+  grid-template-columns: 46px 52px minmax(0, 1fr) max-content;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px 11px 11px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 9px 24px rgba(27, 43, 41, 0.06);
+  text-decoration: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.ranking-card:hover,
+.ranking-card:focus-visible {
+  border-color: rgba(47, 143, 133, 0.62);
+  box-shadow: 0 13px 28px rgba(27, 43, 41, 0.11);
+  transform: translateY(-1px);
+}
+
+.ranking-place {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  color: #ffffff;
+  background: var(--ink);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.ranking-card > img {
+  display: block;
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(19, 32, 31, 0.18);
+}
+
+.ranking-person,
+.ranking-score {
+  display: grid;
+  gap: 3px;
+}
+
+.ranking-person strong {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.ranking-person small,
+.ranking-score small {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ranking-score {
+  min-width: 94px;
+  padding-left: 16px;
+  border-left: 1px solid var(--line);
+  text-align: right;
+}
+
+.ranking-score strong {
+  font-size: 1.32rem;
+  line-height: 1;
+}
+
+.ranking-score.strong strong {
+  color: var(--teal);
+}
+
+.ranking-score.mixed strong {
+  color: #a4760c;
+}
+
+.ranking-score.weak strong {
+  color: var(--coral);
 }
 
 .empty-results {
@@ -2351,6 +2518,7 @@ a {
   .debate-page,
   .search-page,
   .topics-page,
+  .rankings-page,
   .assessment-page,
   .not-found {
     width: min(100vw - 20px, 1180px);
@@ -2371,6 +2539,42 @@ a {
 
   .topics-summary {
     grid-template-columns: minmax(0, 1fr) max-content;
+  }
+
+  .rankings-hero {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .rankings-list-section .section-heading {
+    align-items: start;
+  }
+
+  .ranking-card {
+    grid-template-columns: 42px 48px minmax(0, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .ranking-place {
+    width: 42px;
+    height: 42px;
+  }
+
+  .ranking-card > img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .ranking-score {
+    grid-column: 2 / -1;
+    grid-template-columns: minmax(0, 1fr) max-content;
+    align-items: baseline;
+    min-width: 0;
+    padding: 8px 0 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+    text-align: left;
   }
 
   .assessment-hero,

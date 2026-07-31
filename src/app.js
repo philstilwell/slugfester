@@ -20,6 +20,8 @@ import {
   notFoundSeo,
   referencePath,
   referenceSeo,
+  rankingsPath,
+  rankingsSeo,
   searchPath,
   searchSeo,
   topicsPath,
@@ -28,15 +30,18 @@ import {
 
 const app = document.querySelector("#app");
 const DEBATE_PAGE_SIZE = 84;
+const MIN_RANKED_DEBATE_APPEARANCES = 3;
 const debateHashRoutePattern = /^#\/debate\/([a-z0-9-]+)$/;
 const searchHashRoutePattern = /^#\/search$/;
 const topicsHashRoutePattern = /^#\/topics$/;
+const rankingsHashRoutePattern = /^#\/rankings$/;
 const backendHashRoutePattern = /^#\/backend$/;
 const assessmentHashRoutePattern = /^#\/assessment$/;
 const referenceHashRoutePattern = /^#\/reference\/(fallacy|bias)\/([a-z0-9-]+)(?:\?debate=([a-z0-9-]+))?$/;
 const debatePathRoutePattern = /^\/debate\/([a-z0-9-]+)\/?$/;
 const searchPathRoutePattern = /^\/search\/?$/;
 const topicsPathRoutePattern = /^\/topics\/?$/;
+const rankingsPathRoutePattern = /^\/rankings\/?$/;
 const backendPathRoutePattern = /^\/backend\/?$/;
 const assessmentPathRoutePattern = /^\/assessment\/?$/;
 const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?$/;
@@ -244,6 +249,7 @@ function currentPrimaryNavKey() {
   const { hash, pathname } = window.location;
   if (hash.match(searchHashRoutePattern) || pathname.match(searchPathRoutePattern)) return "search";
   if (hash.match(topicsHashRoutePattern) || pathname.match(topicsPathRoutePattern)) return "topics";
+  if (hash.match(rankingsHashRoutePattern) || pathname.match(rankingsPathRoutePattern)) return "rankings";
   if (
     hash.match(backendHashRoutePattern) ||
     hash.match(assessmentHashRoutePattern) ||
@@ -276,6 +282,7 @@ function renderShell(content) {
         ${renderPrimaryNavLink("debates", "/", "Debates", activeNavKey)}
         ${renderPrimaryNavLink("search", searchPath(), "Search", activeNavKey)}
         ${renderPrimaryNavLink("topics", topicsPath(), "Topics", activeNavKey)}
+        ${renderPrimaryNavLink("rankings", rankingsPath(), "Rankings", activeNavKey)}
         ${renderPrimaryNavLink("backend", backendPath(), "Backend", activeNavKey)}
         <span class="external-sites" aria-label="External Sites">
           <span class="external-sites-label">External Sites</span>
@@ -746,6 +753,47 @@ function searchFacets() {
   };
 }
 
+function rankedInterlocutors() {
+  const people = new Map();
+
+  debates.forEach((debate) => {
+    ["pro", "con"].forEach((sideKey) => {
+      const side = debate.sides[sideKey];
+      const score = debate.score[sideKey];
+
+      avatarsForSpeakerText(side.speaker).forEach((avatar) => {
+        const person = people.get(avatar.name) || {
+          ...avatar,
+          appearances: 0,
+          totalScore: 0
+        };
+
+        person.appearances += 1;
+        person.totalScore += score;
+        people.set(avatar.name, person);
+      });
+    });
+  });
+
+  return [...people.values()]
+    .filter((person) => person.appearances >= MIN_RANKED_DEBATE_APPEARANCES)
+    .map((person) => ({
+      ...person,
+      averageScore: person.totalScore / person.appearances
+    }))
+    .sort(
+      (a, b) =>
+        b.averageScore - a.averageScore ||
+        b.appearances - a.appearances ||
+        a.name.localeCompare(b.name)
+    )
+    .map((person, index) => ({ ...person, rank: index + 1 }));
+}
+
+function formatAverageScore(score) {
+  return Number(score).toFixed(1);
+}
+
 function searchState() {
   const params = new URLSearchParams(window.location.search);
   return {
@@ -850,6 +898,64 @@ function renderTopics() {
       </section>
     </main>
   `);
+}
+
+function renderRankings() {
+  const rankings = rankedInterlocutors();
+  setSeo(rankingsSeo(debates, rankings.length));
+
+  app.innerHTML = renderShell(`
+    <main class="rankings-page">
+      <section class="rankings-hero">
+        <div>
+          <p class="eyebrow">Published score averages</p>
+          <h1>Interlocutor rankings</h1>
+          <p class="rankings-lede">A ranking of speakers who appear in at least ${MIN_RANKED_DEBATE_APPEARANCES} Slugfester debates, ordered by their average overall score across those appearances.</p>
+        </div>
+        <aside class="rankings-summary" aria-label="Rankings summary">
+          <span>Qualified interlocutors</span>
+          <strong>${rankings.length}</strong>
+          <span>Minimum appearances</span>
+          <strong>${MIN_RANKED_DEBATE_APPEARANCES}</strong>
+        </aside>
+      </section>
+
+      <section class="rankings-list-section" aria-labelledby="rankings-list-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Overall score leaderboard</p>
+            <h2 id="rankings-list-heading">Ranked by average score</h2>
+          </div>
+          <p class="rankings-note">These are AI-generated assessments of debate performance, not verdicts on a speaker's views or the truth of a position.</p>
+        </div>
+        <ol class="ranking-list">
+          ${rankings.map(renderRankingCard).join("")}
+        </ol>
+      </section>
+    </main>
+  `);
+}
+
+function renderRankingCard(person) {
+  const searchHref = searchUrl({ page: 1, query: "", people: [person.name] });
+  const debateLabel = `${person.appearances} ${person.appearances === 1 ? "debate" : "debates"}`;
+
+  return `
+    <li>
+      <a class="ranking-card" href="${escapeHtml(searchHref)}" aria-label="View ${escapeHtml(debateLabel)} featuring ${escapeHtml(person.name)}">
+        <span class="ranking-place" aria-label="Rank ${person.rank}">${person.rank}</span>
+        <img src="${escapeHtml(person.src)}" alt="${escapeHtml(person.name)}" width="512" height="512" loading="lazy" decoding="async">
+        <span class="ranking-person">
+          <strong>${escapeHtml(person.name)}</strong>
+          <small>${escapeHtml(debateLabel)}</small>
+        </span>
+        <span class="ranking-score ${scoreTone(Math.round(person.averageScore))}">
+          <small>Average score</small>
+          <strong>${escapeHtml(formatAverageScore(person.averageScore))}</strong>
+        </span>
+      </a>
+    </li>
+  `;
 }
 
 function renderTopicGroup(group) {
@@ -1694,6 +1800,8 @@ function route() {
     hash.match(searchHashRoutePattern) || window.location.pathname.match(searchPathRoutePattern);
   const topicsMatch =
     hash.match(topicsHashRoutePattern) || window.location.pathname.match(topicsPathRoutePattern);
+  const rankingsMatch =
+    hash.match(rankingsHashRoutePattern) || window.location.pathname.match(rankingsPathRoutePattern);
   const backendMatch =
     hash.match(backendHashRoutePattern) ||
     window.location.pathname.match(backendPathRoutePattern) ||
@@ -1709,6 +1817,8 @@ function route() {
     renderSearch();
   } else if (topicsMatch) {
     renderTopics();
+  } else if (rankingsMatch) {
+    renderRankings();
   } else if (backendMatch) {
     renderBackend();
   } else if (referenceMatch) {
@@ -1741,6 +1851,7 @@ function shouldHandleInternally(link) {
     !url.pathname.match(debatePathRoutePattern) &&
     !url.pathname.match(searchPathRoutePattern) &&
     !url.pathname.match(topicsPathRoutePattern) &&
+    !url.pathname.match(rankingsPathRoutePattern) &&
     !url.pathname.match(backendPathRoutePattern) &&
     !url.pathname.match(assessmentPathRoutePattern) &&
     !url.pathname.match(referencePathRoutePattern)
@@ -1753,6 +1864,7 @@ function shouldHandleInternally(link) {
     debatePathRoutePattern.test(url.pathname) ||
     searchPathRoutePattern.test(url.pathname) ||
     topicsPathRoutePattern.test(url.pathname) ||
+    rankingsPathRoutePattern.test(url.pathname) ||
     backendPathRoutePattern.test(url.pathname) ||
     assessmentPathRoutePattern.test(url.pathname) ||
     referencePathRoutePattern.test(url.pathname)

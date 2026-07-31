@@ -49,6 +49,10 @@ export function topicsPath() {
   return "/topics/";
 }
 
+export function rankingsPath() {
+  return "/rankings/";
+}
+
 export function backendPath() {
   return "/backend/";
 }
@@ -327,6 +331,42 @@ export function topicsSeo(debates = []) {
       breadcrumbJsonLd([
         { name: SITE_NAME, path: "/" },
         { name: "Topics", path: topicsPath() }
+      ])
+    ]
+  };
+}
+
+export function rankingsSeo(debates = [], rankedInterlocutorCount = 0) {
+  const description = `Compare average overall debate scores for ${rankedInterlocutorCount || "qualifying"} Slugfester interlocutors with at least three appearances across ${debates.length} scorecards.`;
+
+  return {
+    title: pageTitle("Interlocutor rankings"),
+    description,
+    canonicalPath: rankingsPath(),
+    lastmod: SITE_UPDATED_DATE,
+    imagePath: DEFAULT_IMAGE,
+    imageAlt: "Slugfester interlocutor rankings by average debate score.",
+    type: "website",
+    jsonLd: [
+      organizationJsonLd(),
+      websiteJsonLd(),
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: "Slugfester interlocutor rankings",
+        description,
+        url: absoluteUrl(rankingsPath()),
+        isPartOf: {
+          "@id": WEBSITE_ID
+        },
+        about: ["debate performance", "average argument scores", "interlocutors"].map((name) => ({
+          "@type": "Thing",
+          name
+        }))
+      },
+      breadcrumbJsonLd([
+        { name: SITE_NAME, path: "/" },
+        { name: "Rankings", path: rankingsPath() }
       ])
     ]
   };
