@@ -30,7 +30,7 @@ Every debate object should produce this order:
 5. AI-generated scoring note.
 6. `◉` interaction guide.
 7. Parallel argument columns, aligned by topic and time.
-8. Overall commentary with `Scoring Slugs` and `Logged Whiffs` for each side.
+8. Overall commentary with `Landed` and `Whiffed` for each side.
 
 ## Segmentation
 
@@ -115,9 +115,9 @@ Use LogFall for logical fallacies and CogBias for cognitive biases:
 Each side needs:
 
 - One overall score.
-- At least two `Scoring Slugs` (the strongest parts of that side's case).
-- At least one `Logged Whiff` (a material logical weakness or overreach).
-- Links for named fallacies or biases in the `Logged Whiffs` list.
+- At least two `Landed` points (the strongest parts of that side's case).
+- At least one `Whiffed` point (a material logical weakness or overreach).
+- Links for named fallacies or biases in the `Whiffed` list.
 
 The overall score should reflect the whole performance, not the average of every local score. Weight central issues, successful rebuttals, and burden-of-proof posture more heavily than minor side exchanges.
 

@@ -16,7 +16,7 @@ The debate page should keep this order and visual hierarchy:
 5. `◉ Deeper critiques` interaction guide.
 6. Sticky side headings for the two debate columns.
 7. Topic sections with paired argument/rebuttal cards.
-8. Overall commentary with each side's `Scoring Slugs` and `Logged Whiffs`.
+8. Overall commentary with each side's `Landed` and `Whiffed` points.
 
 Landing-page design:
 
@@ -67,7 +67,7 @@ Design constraints:
 11. Score each move using the rubric in `debate-critique-process.md`.
 12. Write each critique at 105-130 words.
 13. Add fallacy or bias tags only when they explain a real weakness, and include a context note for each tag.
-14. Write the overall `Scoring Slugs` and `Logged Whiffs`.
+14. Write the overall `Landed` and `Whiffed` points.
 15. Run `npm run seo`.
 16. Run `npm run check`.
 

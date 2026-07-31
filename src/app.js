@@ -1516,11 +1516,11 @@ function renderOverallSide(side, overall, tone, debateId) {
         <span>${escapeHtml(side.name)} · ${escapeHtml(side.speaker)}</span>
         <strong>${overall.score}</strong>
       </div>
-      <h3>Scoring Slugs</h3>
+      <h3>Landed</h3>
       <ul>
         ${overall.strengths.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
       </ul>
-      <h3>Logged Whiffs</h3>
+      <h3>Whiffed</h3>
       <ul>
         ${overall.blunders.map((blunder) => renderBlunder(blunder, debateId)).join("")}
       </ul>
