@@ -1125,7 +1125,7 @@ function renderRankingCard(person) {
           </span>
           <span class="ranking-score-pair">
             <span class="ranking-score ${scoreTone(Math.round(person.averageScore))}">
-              <small>${escapeHtml(firstName)} avg.</small>
+              <small>${escapeHtml(firstName)}'s avg.</small>
               <strong>${escapeHtml(formatAverageScore(person.averageScore))}</strong>
             </span>
             <span class="ranking-score ${scoreTone(Math.round(person.averageOpponentScore))}">
