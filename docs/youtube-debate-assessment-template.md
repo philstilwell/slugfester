@@ -16,7 +16,7 @@ The debate page should keep this order and visual hierarchy:
 5. `◉ Deeper critiques` interaction guide.
 6. Sticky side headings for the two debate columns.
 7. Topic sections with paired argument/rebuttal cards.
-8. Overall commentary with each side's `Landed` and `Whiffed` points.
+8. Overall commentary with each side's `Landed` and `Whiffed` points. An approved analytics panel may follow those two summaries without changing the core scorecard order; it must clearly identify that it counts named assessment tags rather than independently verifying every fallacy or bias in the corpus.
 
 Landing-page design:
 

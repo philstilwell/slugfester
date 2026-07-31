@@ -31,6 +31,33 @@ import {
 const app = document.querySelector("#app");
 const DEBATE_PAGE_SIZE = 84;
 const MIN_RANKED_DEBATE_APPEARANCES = 3;
+const topicPatternExplorerDebateId = "knechtle-aron-ra-god-existence-2023";
+const topicPatternColors = [
+  "#2f8f85",
+  "#d35d47",
+  "#c69425",
+  "#476fa1",
+  "#6d8b4f",
+  "#b45d7e",
+  "#4f91a8",
+  "#8b6cbd",
+  "#bf7042",
+  "#6a716c",
+  "#638b78"
+];
+const topicPatternCodes = {
+  "cosmological-arguments": "COS",
+  "science-design": "SCI",
+  "scripture-jesus-resurrection": "SCR",
+  "meaning-purpose": "MNP",
+  "morality-ethics": "ETH",
+  "evil-suffering-hiddenness": "EVL",
+  "mind-consciousness-free-will": "MND",
+  "logic-reason-presuppositions": "LOG",
+  "religion-society-public-reason": "SOC",
+  "god-theism-atheism": "GOD",
+  "broader-debate-questions": "GEN"
+};
 const rankingMinimumOptions = [3, 5, 10];
 const rankingSortOptions = [
   { value: "average", label: "Highest average" },
@@ -734,6 +761,239 @@ function topicGroupsForDebates() {
   });
 
   return [...groups.values()].filter((group) => group.debates.length > 0);
+}
+
+function primaryTopicCategoryForDebate(debate) {
+  return topicCategoriesForDebate(debate)[0] || fallbackTopicCategory;
+}
+
+function topicPatternDistribution() {
+  const categories = [...topicCategoryDefinitions, fallbackTopicCategory];
+  const groups = new Map(
+    categories.map((category, index) => [
+      category.id,
+      {
+        ...category,
+        code: topicPatternCodes[category.id] || "TOP",
+        color: topicPatternColors[index % topicPatternColors.length],
+        debates: 0,
+        arguments: 0,
+        fallacies: 0,
+        biases: 0
+      }
+    ])
+  );
+
+  debates.forEach((debate) => {
+    const category = primaryTopicCategoryForDebate(debate);
+    const group = groups.get(category.id);
+    group.debates += 1;
+
+    debate.sections.forEach((section) => {
+      section.exchanges.forEach((exchange) => {
+        [exchange.pro, exchange.con].forEach((argument) => {
+          if (!argument) return;
+          group.arguments += 1;
+          argument.tags.forEach((tag) => {
+            if (tag.type === "fallacy") group.fallacies += 1;
+            if (tag.type === "bias") group.biases += 1;
+          });
+        });
+      });
+    });
+  });
+
+  return [...groups.values()]
+    .filter((group) => group.debates > 0)
+    .map((group) => ({
+      ...group,
+      fallacyRate: (group.fallacies / group.arguments) * 100,
+      biasRate: (group.biases / group.arguments) * 100
+    }));
+}
+
+function topicPatternAxisMaximum(value) {
+  const step = value > 20 ? 10 : 5;
+  return Math.max(step * 2, Math.ceil(value / step) * step);
+}
+
+function topicPatternTicks(maximum) {
+  const step = maximum > 20 ? 10 : 5;
+  return Array.from({ length: Math.floor(maximum / step) + 1 }, (_, index) => index * step);
+}
+
+function topicPatternRate(value) {
+  return `${value.toFixed(1)} per 100`;
+}
+
+function topicPatternDetail(topic, topics) {
+  const allTopics = !topic;
+  const totals = allTopics
+    ? topics.reduce(
+        (total, item) => ({
+          debates: total.debates + item.debates,
+          arguments: total.arguments + item.arguments,
+          fallacies: total.fallacies + item.fallacies,
+          biases: total.biases + item.biases
+        }),
+        { debates: 0, arguments: 0, fallacies: 0, biases: 0 }
+      )
+    : topic;
+  const fallacyRate = (totals.fallacies / totals.arguments) * 100;
+  const biasRate = (totals.biases / totals.arguments) * 100;
+
+  return `
+    <div class="topic-pattern-detail-heading">
+      <span class="topic-pattern-color" style="--topic-color: ${escapeHtml(topic?.color || "#13201f")}"></span>
+      <div>
+        <span>Current view</span>
+        <strong>${escapeHtml(topic?.title || "All topic clusters")}</strong>
+      </div>
+    </div>
+    <dl class="topic-pattern-stat-list">
+      <div><dt>Debates</dt><dd>${totals.debates}</dd></div>
+      <div><dt>Scored arguments</dt><dd>${totals.arguments}</dd></div>
+      <div><dt>Fallacy tags</dt><dd>${totals.fallacies} <small>${topicPatternRate(fallacyRate)}</small></dd></div>
+      <div><dt>Bias tags</dt><dd>${totals.biases} <small>${topicPatternRate(biasRate)}</small></dd></div>
+    </dl>
+  `;
+}
+
+function renderTopicPatternExplorer() {
+  const topics = topicPatternDistribution();
+  const chart = {
+    width: 720,
+    height: 350,
+    left: 62,
+    top: 24,
+    plotWidth: 626,
+    plotHeight: 256
+  };
+  const xMaximum = topicPatternAxisMaximum(
+    Math.max(...topics.map((topic) => topic.fallacyRate))
+  );
+  const yMaximum = topicPatternAxisMaximum(Math.max(...topics.map((topic) => topic.biasRate)));
+  const bottom = chart.top + chart.plotHeight;
+  const right = chart.left + chart.plotWidth;
+  const xTicks = topicPatternTicks(xMaximum);
+  const yTicks = topicPatternTicks(yMaximum);
+  const xPosition = (value) => chart.left + (value / xMaximum) * chart.plotWidth;
+  const yPosition = (value) => bottom - (value / yMaximum) * chart.plotHeight;
+  const explorerData = escapeHtml(JSON.stringify(topics));
+
+  return `
+    <section class="topic-pattern-explorer" data-topic-pattern-explorer data-topic-patterns="${explorerData}" aria-labelledby="topic-pattern-heading">
+      <div class="topic-pattern-heading">
+        <div>
+          <p class="eyebrow">Dataset view</p>
+          <h2 id="topic-pattern-heading">Named fallacy and bias distribution</h2>
+          <p>Each point is a primary topic cluster. Rates normalize named tags by scored arguments.</p>
+        </div>
+        <label class="topic-pattern-control" for="topic-pattern-select">
+          <span>Focus topic</span>
+          <select id="topic-pattern-select" data-topic-pattern-select>
+            <option value="all">All topic clusters</option>
+            ${topics
+              .map(
+                (topic) =>
+                  `<option value="${escapeHtml(topic.id)}">${escapeHtml(topic.title)}</option>`
+              )
+              .join("")}
+          </select>
+        </label>
+      </div>
+      <div class="topic-pattern-layout">
+        <div class="topic-pattern-chart-panel">
+          <svg class="topic-pattern-chart" viewBox="0 0 ${chart.width} ${chart.height}" role="group" aria-labelledby="topic-pattern-heading topic-pattern-description">
+            <desc id="topic-pattern-description">The horizontal axis shows logical-fallacy tags per 100 scored arguments. The vertical axis shows cognitive-bias tags per 100 scored arguments.</desc>
+            <g class="topic-pattern-grid" aria-hidden="true">
+              ${xTicks
+                .map(
+                  (tick) => `
+                    <line x1="${xPosition(tick)}" x2="${xPosition(tick)}" y1="${chart.top}" y2="${bottom}"></line>
+                    <text x="${xPosition(tick)}" y="${bottom + 24}">${tick}</text>
+                  `
+                )
+                .join("")}
+              ${yTicks
+                .map(
+                  (tick) => `
+                    <line x1="${chart.left}" x2="${right}" y1="${yPosition(tick)}" y2="${yPosition(tick)}"></line>
+                    <text x="${chart.left - 14}" y="${yPosition(tick) + 4}">${tick}</text>
+                  `
+                )
+                .join("")}
+            </g>
+            <line class="topic-pattern-axis" x1="${chart.left}" x2="${right}" y1="${bottom}" y2="${bottom}"></line>
+            <line class="topic-pattern-axis" x1="${chart.left}" x2="${chart.left}" y1="${chart.top}" y2="${bottom}"></line>
+            <text class="topic-pattern-axis-label" x="${chart.left + chart.plotWidth / 2}" y="${chart.height - 12}">Logical-fallacy tags per 100 scored arguments</text>
+            <text class="topic-pattern-axis-label" x="18" y="${chart.top + chart.plotHeight / 2}" transform="rotate(-90 18 ${chart.top + chart.plotHeight / 2})">Cognitive-bias tags per 100 scored arguments</text>
+            ${topics
+              .map(
+                (topic) => `
+                  <g class="topic-pattern-point" data-topic-pattern-point="${escapeHtml(topic.id)}" role="button" tabindex="0" aria-pressed="false" aria-label="${escapeHtml(topic.title)}: ${topicPatternRate(topic.fallacyRate)} logical-fallacy tags and ${topicPatternRate(topic.biasRate)} cognitive-bias tags">
+                    <title>${escapeHtml(topic.title)}: ${topicPatternRate(topic.fallacyRate)} fallacy tags; ${topicPatternRate(topic.biasRate)} bias tags</title>
+                    <circle class="topic-pattern-dot" cx="${xPosition(topic.fallacyRate)}" cy="${yPosition(topic.biasRate)}" r="17" style="--topic-color: ${escapeHtml(topic.color)}"></circle>
+                    <text x="${xPosition(topic.fallacyRate)}" y="${yPosition(topic.biasRate) + 4}">${escapeHtml(topic.code)}</text>
+                  </g>
+                `
+              )
+              .join("")}
+          </svg>
+        </div>
+        <aside class="topic-pattern-readout" data-topic-pattern-detail aria-live="polite">
+          ${topicPatternDetail(null, topics)}
+        </aside>
+      </div>
+      <div class="topic-pattern-legend" aria-label="Topic abbreviation legend">
+        ${topics
+          .map(
+            (topic) => `
+              <span>
+                <i style="--topic-color: ${escapeHtml(topic.color)}"></i>
+                <b>${escapeHtml(topic.code)}</b>
+                ${escapeHtml(topic.shortLabel)}
+              </span>
+            `
+          )
+          .join("")}
+      </div>
+    </section>
+  `;
+}
+
+function bindTopicPatternExplorer() {
+  const explorer = app.querySelector("[data-topic-pattern-explorer]");
+  if (!explorer) return;
+
+  const selector = explorer.querySelector("[data-topic-pattern-select]");
+  const detail = explorer.querySelector("[data-topic-pattern-detail]");
+  const topics = JSON.parse(explorer.dataset.topicPatterns || "[]");
+  const update = (topicId) => {
+    const topic = topics.find((item) => item.id === topicId) || null;
+    explorer.dataset.selectedTopic = topic?.id || "all";
+    detail.innerHTML = topicPatternDetail(topic, topics);
+    explorer.querySelectorAll("[data-topic-pattern-point]").forEach((point) => {
+      const selected = point.dataset.topicPatternPoint === topic?.id;
+      point.classList.toggle("is-selected", selected);
+      point.classList.toggle("is-muted", Boolean(topic) && !selected);
+      point.setAttribute("aria-pressed", String(selected));
+    });
+  };
+
+  selector.addEventListener("change", () => update(selector.value));
+  explorer.querySelectorAll("[data-topic-pattern-point]").forEach((point) => {
+    const selectPoint = () => {
+      selector.value = point.dataset.topicPatternPoint;
+      update(selector.value);
+    };
+    point.addEventListener("click", selectPoint);
+    point.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      selectPoint();
+    });
+  });
 }
 
 function uniqueInterlocutorsForDebate(debate) {
@@ -1587,6 +1847,8 @@ function renderDebate(id) {
       ${renderOverall(debate)}
     </main>
   `);
+
+  if (debate.id === topicPatternExplorerDebateId) bindTopicPatternExplorer();
 }
 
 function renderSideHeading(side, tone) {
@@ -1832,6 +2094,7 @@ function renderOverall(debate) {
         ${renderOverallSide(debate.sides.pro, debate.overall.pro, "teal", debate.id)}
         ${renderOverallSide(debate.sides.con, debate.overall.con, "coral", debate.id)}
       </div>
+      ${debate.id === topicPatternExplorerDebateId ? renderTopicPatternExplorer() : ""}
     </section>
   `;
 }
