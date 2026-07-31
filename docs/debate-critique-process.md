@@ -30,7 +30,7 @@ Every debate object should produce this order:
 5. AI-generated scoring note.
 6. `◉` interaction guide.
 7. Parallel argument columns, aligned by topic and time.
-8. Overall commentary with `Landed` and `Whiffed` for each side. An approved analytics panel may follow the two side summaries, provided it labels its figures as named assessment tags rather than an independent count of every possible fallacy or bias.
+8. Overall commentary with `Landed` and `Whiffed` for each side.
 
 ## Segmentation
 
