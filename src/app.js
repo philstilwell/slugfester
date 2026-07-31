@@ -32,11 +32,6 @@ const app = document.querySelector("#app");
 const DEBATE_PAGE_SIZE = 84;
 const MIN_RANKED_DEBATE_APPEARANCES = 3;
 const rankingMinimumOptions = [3, 5, 10];
-const rankingModelOptions = [
-  { value: "all", label: "All models" },
-  { value: "legacy", label: "GPT 5.5 Extra High" },
-  { value: "terra", label: "5.6 Terra Extra High" }
-];
 const rankingSortOptions = [
   { value: "average", label: "Highest average" },
   { value: "opponents", label: "Highest opponent average" },
@@ -767,13 +762,11 @@ function searchFacets() {
 
 function rankingState() {
   const params = new URLSearchParams(window.location.search);
-  const model = params.get("model") || "all";
   const topic = params.get("topic") || "all";
   const minimum = Number.parseInt(params.get("minimum"), 10);
   const sort = params.get("sort") || "average";
 
   return {
-    model: rankingModelOptions.some((option) => option.value === model) ? model : "all",
     topic:
       topic === "all" || topicCategoryDefinitions.some((category) => category.id === topic)
         ? topic
@@ -788,7 +781,6 @@ function rankingState() {
 function rankingUrl(state) {
   const params = new URLSearchParams();
 
-  if (state.model !== "all") params.set("model", state.model);
   if (state.topic !== "all") params.set("topic", state.topic);
   if (state.minimum !== MIN_RANKED_DEBATE_APPEARANCES) {
     params.set("minimum", String(state.minimum));
@@ -801,15 +793,11 @@ function rankingUrl(state) {
 
 function rankingDebates(state) {
   return debates.filter((debate) => {
-    const matchesModel =
-      state.model === "all" ||
-      (state.model === "legacy" && assessmentModelFor(debate) === legacyAssessmentModel) ||
-      (state.model === "terra" && assessmentModelFor(debate) === currentAssessmentModel);
     const matchesTopic =
       state.topic === "all" ||
       topicCategoriesForDebate(debate).some((category) => category.id === state.topic);
 
-    return matchesModel && matchesTopic;
+    return matchesTopic;
   });
 }
 
@@ -874,19 +862,12 @@ function rankedInterlocutors(state) {
 
   return [...people.values()]
     .filter((person) => person.appearances >= state.minimum)
-    .map((person) => {
-      const recentRecords = [...person.records]
-        .sort((a, b) => Number(b.debate.number) - Number(a.debate.number))
-        .slice(0, 3);
-
-      return {
-        ...person,
-        averageOpponentScore: person.totalOpponentScore / person.appearances,
-        averageScore: person.totalScore / person.appearances,
-        recentRecords,
-        strongestTopic: rankingTopicSummary(person.records)
-      };
-    })
+    .map((person) => ({
+      ...person,
+      averageOpponentScore: person.totalOpponentScore / person.appearances,
+      averageScore: person.totalScore / person.appearances,
+      strongestTopic: rankingTopicSummary(person.records)
+    }))
     .sort((a, b) => {
       if (state.sort === "appearances") {
         return b.appearances - a.appearances || b.averageScore - a.averageScore || a.name.localeCompare(b.name);
@@ -1032,7 +1013,6 @@ function renderRankings() {
     ...topicGroupsForDebates().map((group) => ({ value: group.id, label: group.title }))
   ];
   const hasFilters =
-    state.model !== "all" ||
     state.topic !== "all" ||
     state.minimum !== MIN_RANKED_DEBATE_APPEARANCES ||
     state.sort !== "average";
@@ -1044,7 +1024,7 @@ function renderRankings() {
         <div>
           <p class="eyebrow">Published score averages</p>
           <h1>Interlocutor rankings</h1>
-          <p class="rankings-lede">Rank speakers by their published overall scores, with the context to compare models, topics, sample size, and recent performance.</p>
+          <p class="rankings-lede">Rank speakers by their published overall scores, with the context to compare topics, sample size, and opponents faced.</p>
         </div>
         <aside class="rankings-summary" aria-label="Rankings summary">
           <span>Qualified interlocutors</span>
@@ -1056,12 +1036,6 @@ function renderRankings() {
 
       <section class="ranking-tool" aria-label="Ranking controls">
         <form class="ranking-form">
-          <span class="ranking-control">
-            <label for="ranking-model">Assessment model</label>
-            <select id="ranking-model" name="model">
-              ${renderRankingOptions(rankingModelOptions, state.model)}
-            </select>
-          </span>
           <span class="ranking-control">
             <label for="ranking-topic">Topic focus</label>
             <select id="ranking-topic" name="topic">
@@ -1136,12 +1110,6 @@ function rankingHeading(sort) {
 function renderRankingCard(person) {
   const searchHref = searchUrl({ page: 1, query: "", people: [person.name] });
   const debateLabel = `${person.appearances} ${person.appearances === 1 ? "debate" : "debates"}`;
-  const recentAppearances = person.recentRecords
-    .map(
-      (record) =>
-        `<a href="${escapeHtml(debatePath(record.debate))}">${escapeHtml(debateNumberLabel(record.debate))} <strong>${record.score}</strong></a>`
-    )
-    .join("");
   const topic = person.strongestTopic;
 
   return `
@@ -1166,10 +1134,6 @@ function renderRankingCard(person) {
               <div><dt>Opponent average</dt><dd>${escapeHtml(formatAverageScore(person.averageOpponentScore))}</dd></div>
               <div><dt>Most common topic</dt><dd>${escapeHtml(topic?.title || "Uncategorized")}</dd></div>
             </dl>
-            <div class="ranking-recent-appearances">
-              <span>Recent appearances</span>
-              <div>${recentAppearances}</div>
-            </div>
           </div>
         </details>
       </article>
@@ -1183,7 +1147,7 @@ function renderRankingMethod() {
       <summary>Ranking method</summary>
       <div>
         <p>Each average uses the published overall score for that speaker's side of every matching debate. A panel's shared side score is assigned to each named participant on that side.</p>
-        <p>Model filters separate the original GPT 5.5 Extra High assessments from 5.6 Terra Extra High assessments, which began after Debate 130. Topic filters include any debate assigned to the selected category.</p>
+        <p>Topic filters include any debate assigned to the selected category. The opponent-average sort uses the published overall scores of the opponents each person faced.</p>
         <p>These figures assess the reasoning performance recorded in Slugfester scorecards. They do not establish the truth of a speaker's conclusions, expertise, or personal worth.</p>
       </div>
     </details>
@@ -1550,7 +1514,6 @@ function bindRankingControls(state) {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
     navigateRankings({
-      model: form.get("model") || "all",
       topic: form.get("topic") || "all",
       minimum: Number.parseInt(form.get("minimum"), 10),
       sort: form.get("sort") || "average"
@@ -1559,7 +1522,6 @@ function bindRankingControls(state) {
 
   page.querySelector("[data-clear-rankings]")?.addEventListener("click", () => {
     navigateRankings({
-      model: "all",
       topic: "all",
       minimum: MIN_RANKED_DEBATE_APPEARANCES,
       sort: "average"
