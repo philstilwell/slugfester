@@ -52965,5 +52965,295 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "licona-dillahunty-resurrection-evidence-2017",
+    number: "150",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Mike Licona vs Matt Dillahunty: Was Jesus Raised from the Dead?",
+    label: "Miracles, resurrection, and historical evidence",
+    date: "2026-07-31",
+    duration: "2 hr 30 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=IW9w6c2RWmA",
+    motion:
+      "Did Jesus rise from the dead, and can historical evidence plus allegedly supernatural phenomena justify that conclusion?",
+    summary:
+      "Licona argues that corroborated anomalous experiences and Pauline testimony make resurrection the best historical explanation; Dillahunty argues that unexplained reports and ancient sources cannot establish supernatural causation.",
+    sourceNote:
+      "Based on a full transcription of the YouTube debate. The transcript is lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "You look at the data, you let the data speak for themselves apart from presuppositions.",
+        context:
+          "Licona presents resurrection as a conclusion reached by comparing explanations against shared historical data rather than by assuming Christianity at the outset."
+      },
+      con: {
+        text: "I want to believe as many true things and as few false things as possible.",
+        context:
+          "Dillahunty frames his skeptical posture as a demand to proportion belief to publicly assessable evidence, not as a claim to have disproved resurrection."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Resurrection hypothesis",
+        speaker: "Mike Licona",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical evidentialism",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 61,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Experiential Claims and Empirical Confirmation",
+        timebox: "03:12-56:13",
+        score: {
+          pro: 49,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:40",
+              role: "Cumulative anomalous-experience case",
+              words:
+                "Licona cites paranormal stories, apparently corroborated near-death experiences, apparitions, and striking answered prayers as convergent empirical evidence that reality includes a supernatural dimension.",
+              score: 49,
+              critique:
+                "Licona does more than simply assume a resurrection-capable world. He separates several sorts of alleged anomaly, concedes that most near-death reports cannot be confirmed, and correctly notes that cumulative evidence can matter if its components are independently strong. The difficulty is that the presentation supplies chiefly vivid secondhand stories, numerical assertions about a book of cases, and names of sympathetic researchers rather than case records, controls, or contrary data. An externally corroborated detail can improve a report without establishing out-of-body perception, an apparition, divine action, or a supernatural realm. The prayer example has no comparison class for coincidences and misses. The score is low because the conclusion is sweeping while the live evidence remains testimonial and under-specified.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "The asserted strength of hundreds of cases rests mainly on named scholars and a book rather than evidence listeners can assess within the debate."
+                }
+              ]
+            },
+            con: {
+              time: "34:20",
+              role: "Interpretation-versus-experience distinction",
+              words:
+                "Dillahunty grants that people can sincerely have unusual experiences but argues that a report of an experience does not itself validate its supernatural explanation, especially when no test can discriminate it from error or fraud.",
+              score: 86,
+              critique:
+                "Dillahunty's opening standard is disciplined and directly relevant. He separates accepting a person's sincere report from accepting the person's causal interpretation, then explains why the distinction matters for ghosts, near-death experiences, prayer, and resurrection alike. His null-hypothesis framing also makes clear that withholding belief is not the same as claiming the contrary has been proved. The weakness is that he sometimes treats repeatable laboratory testing as the decisive route to justification even for singular historical events and private experiences. That is too narrow as a general epistemology: some claims can gain support through converging traces, testimony, and prediction. Still, Licona's examples are not supplied with such discipline, so the response successfully exposes the inferential gap and earns a high score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Paul, Historical Bedrock, and Explanatory Scope",
+        timebox: "19:20-1:19:44",
+        score: {
+          pro: 71,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "20:00",
+              role: "Pauline historical framework",
+              words:
+                "Licona treats Paul and the tradition in 1 Corinthians 15 as early historical bedrock: disciples, Paul, and groups believed Jesus appeared after death, and resurrection best explains their combined experiences.",
+              score: 71,
+              critique:
+                "Licona gives a recognizably historical argument rather than treating the Gospels as self-authenticating. He identifies Paul as early and personally connected to key Christians, distinguishes the claimed experiences from the later conclusion, and states comparative criteria such as scope, power, ad hocness, and background plausibility. Those are real virtues. The main weakness is that the argument upgrades what Paul reports into detailed facts about group perception. The unnamed five hundred, the twelve, and the apostles are not independently examined in the room, and a report that people believed appearances occurred does not establish that whole groups shared one perceptual event. The appeal to near-unanimous scholarship also compresses disputes about sources and formulation. The score is solid, but the evidential steps require more support than the presentation gives.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Scholarly consensus is invoked as a major warrant without disentangling limited agreement about early belief from the stronger resurrection inference."
+                }
+              ]
+            },
+            con: {
+              time: "50:10",
+              role: "Source and plausibility challenge",
+              words:
+                "Dillahunty says Paul is a valuable but limited late source who was not present for Jesus' ministry, burial, or empty tomb, and argues that historical reports cannot establish a supernatural cause before its possibility is independently supported.",
+              score: 84,
+              critique:
+                "Dillahunty forcefully corrects a common slide from an ancient proclamation to a documented event. His questions about who the five hundred were, what is independently known of their experiences, and how a later reader can investigate them are exactly the questions a resurrection case must answer. He also fairly states his position as unconvinced rather than asserting that he can prove Jesus did not rise. The limitation is that he sometimes demands independent proof that a candidate cause is possible before allowing historical evidence to raise its probability. Ordinary abductive inquiry can introduce and then test a novel hypothesis without prior demonstration. Even so, this debate does not supply enough evidence to bridge the gap he identifies, so the score remains high for source-sensitive burden discipline.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Methodological Naturalism and Anomalies",
+        timebox: "56:13-1:20:00",
+        score: {
+          pro: 62,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "56:30",
+              role: "Historical-method rebuttal",
+              words:
+                "Licona argues that sciences use varied methods, so investigators may affirm an event that appears to exceed current natural laws without first owning a supernatural detector or identifying whether God, an angel, or another cause produced it.",
+              score: 62,
+              critique:
+                "Licona makes a valuable distinction between establishing that an event occurred and establishing its ultimate cause. Geology, archaeology, and history do not all run laboratory replications, and methodological naturalism should not erase an observed anomaly from the record. His hypothetical message on the moon illustrates that investigators could acknowledge a startling phenomenon while debating its explanation. But the argument does not show that the reports at issue are comparable to a publicly observed lunar message. Calling methodological naturalism a skeptical safe space shifts from methodology to motive and leaves his own evidential threshold vague. Current science failing to explain a report does not yet support a supernatural cause. The score is moderate because the methodological correction is fair, but the application is stronger in fiction than in the evidence presented.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The argument risks treating a failure to find a natural explanation for a reported anomaly as positive support for a supernatural cause."
+                }
+              ]
+            },
+            con: {
+              time: "1:09:10",
+              role: "Testability reply",
+              words:
+                "Dillahunty says methodological naturalism does not forbid recording anomalies; it forbids declaring an unexplained event supernatural before a defined causal model or a discriminating test rules out ordinary error, deception, and unknown mechanisms.",
+              score: 88,
+              critique:
+                "Dillahunty answers the strongest version of Licona's objection rather than claiming that scientists would refuse to look through a telescope. He grants that an anomalous event could be real, then asks what procedure identifies its cause as supernatural rather than simply unknown. His references to concealed targets in near-death studies and agreed tests for paranormal claims make the demand operational. The weakness is that his use of failed prize challenges and prayer studies is asserted quickly, without discussing their designs or whether their null results generalize to every alleged anomaly. He also risks sounding as though a cause must be fully modeled before it can receive any probabilistic support. Nevertheless, the core distinction between documenting a report and licensing its preferred explanation is clear, responsive, and central to the motion.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Cross-Examination: Naming the Supernatural",
+        timebox: "1:21:00-1:36:00",
+        score: {
+          pro: 59,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:24:50",
+              role: "Extreme-anomaly hypothetical",
+              words:
+                "Licona asks whether a publicly witnessed beheading followed by his restored appearance and knowledge of a private fact would justify calling the event supernatural, given current physical understanding.",
+              score: 59,
+              critique:
+                "The hypothetical usefully tests whether Dillahunty's skepticism is genuinely revisable. A public, tightly witnessed bodily restoration plus a specific private fact would warrant an urgent revision of prevailing beliefs, so Licona is right to resist the idea that ignorance should become a permanent refuge. The weakness is that the example is far stronger than the ancient evidence under debate. It assumes direct observation, identity verification, physical continuity, and independently checkable information, then treats willingness to call that imagined event supernatural as support for resurrection. Even in the hypothetical, the event's occurrence would not identify a cause or validate Christian theology. The score is mixed because it clarifies an epistemic disagreement, but it cannot supply the missing historical data by analogy.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "An unexplained extraordinary event is treated as grounds for a supernatural explanation before a mechanism or cause is positively identified."
+                }
+              ]
+            },
+            con: {
+              time: "1:27:20",
+              role: "Unknown-cause reply",
+              words:
+                "Dillahunty says he would accept the extraordinary event as real and investigate it, but would not infer a supernatural cause merely because present science lacks an account of how it happened.",
+              score: 86,
+              critique:
+                "Dillahunty's answer is intellectually disciplined. He does not use the unknown as an escape hatch from evidence; he says a witnessed restoration would overturn the relevant null hypothesis and trigger serious investigation. His refusal to let the label supernatural function as an explanation keeps causal questions distinct from surprise. The weakness is that he leaves natural overly elastic. If natural means whatever any future investigation may uncover, the view can absorb every anomaly without specifying what would count against it. That makes his position safer than he acknowledges. Still, he clearly permits radical revision of the observed facts while declining an unsupported causal leap. In this exchange, that is the more proportionate response because Licona's hypothetical lacks a bridge from anomaly to divine agency.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The reply can shift between natural as what present science explains and natural as whatever a future explanation might reveal."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Audience Questions: Testimony, Faith, and Inquiry",
+        timebox: "1:51:00-2:29:00",
+        score: {
+          pro: 66,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:52:20",
+              role: "Eyewitness and worldview defense",
+              words:
+                "Licona says eyewitness testimony is often reliable when assessed in context, distinguishes ordinary evidence from extraordinary claims, and argues that disagreement in science or religion does not show there is no truth about resurrection.",
+              score: 66,
+              critique:
+                "Licona correctly resists two overstatements. Eyewitness testimony is not worthless merely because it can fail, and disagreement among investigators does not entail that every disputed proposition lacks a true answer. His public-beheading contrast also clarifies that ordinary kinds of evidence can be extraordinary in quantity and quality when many direct observers are available. The weakness is the transfer to this case. The resurrection evidence is not a room of direct, named witnesses watching a head reattach; it is a set of ancient texts and traditions with uneven access to original observers. Calling eyewitness evidence generally reliable does not answer the source, memory, transmission, and identification concerns Dillahunty raises. The score is moderate because the general principles are sound but their application remains under-defended.",
+              tags: []
+            },
+            con: {
+              time: "2:21:20",
+              role: "Evidence and faith distinction",
+              words:
+                "Dillahunty distinguishes fallible confidence proportioned to evidence from faith used in the absence of sufficient confirming evidence, and says continued public criticism of religious claims matters because beliefs shape shared life.",
+              score: 81,
+              critique:
+                "Dillahunty's closing is clear about both epistemology and motive. He does not demand absolute certainty before acting; he distinguishes revisable confidence in evidence from using faith to bridge a shortfall in justification. His personal account of losing belief also models disagreement without treating believers as enemies or fools. The limitation is that he treats faith largely in its weakest sense, leaving little room for traditions that mean trust grounded in testimony, experience, and a broader worldview rather than belief without evidence. His concern about social consequences is relevant but can also move attention from the resurrection's truth to its effects. The score is strong because the evidential distinction is lucid, with a deduction for narrowing the richer religious usage he is criticizing.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 61,
+        strengths: [
+          "He offers a comparative historical framework with clear criteria of scope, explanatory power, ad hocness, and background plausibility rather than simply reciting a creed.",
+          "He makes an important methodological distinction between observing an unusual event and determining its precise ultimate cause.",
+          "He presses Dillahunty to state what evidence would count as a genuine anomaly, which exposes a real risk of overly rigid skepticism."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly treats an unexplained report, or the failure of a preferred natural explanation, as positive support for a supernatural cause before the report's accuracy, timing, and causal alternatives have been independently established.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "He consistently separates an unusual reported experience from the much stronger claim that its preferred supernatural interpretation is true.",
+          "He focuses on source quality, independent corroboration, and discriminating tests, especially where Licona relies on the five hundred and anomalous-experience anecdotes.",
+          "He keeps his conclusion proportional, saying he is unconvinced rather than asserting that he can prove Jesus did not rise."
+        ],
+        blunders: [
+          {
+            text:
+              "He alternates between natural as what present science can explain and natural as whatever future inquiry might explain, which can make naturalism too flexible to expose itself to evidential risk.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
