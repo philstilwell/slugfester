@@ -50342,5 +50342,271 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "fischer-dillahunty-axiomatic-evidence-god-2020",
+    number: "141",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Ben Fischer vs Matt Dillahunty: Is There Good Evidence for God?",
+    label: "Axiomatic first cause and evidence",
+    date: "2026-07-31",
+    duration: "2 hr 41 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=KByryLId3dQ",
+    motion:
+      "Is there good evidence for God, rather than merely an asserted epistemic starting point?",
+    summary:
+      "Fischer argues that religious skepticism fails and that a first cause is axiomatic; Dillahunty argues that neither move supplies a structured, discriminating case for God.",
+    sourceNote:
+      "Based on the YouTube transcript for the Modern-Day Debate upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "We are stuck with God's existence as a matter of a sheer axiom.",
+        context:
+          "Fischer's case treats a necessary divine first cause as self-evident rather than as a conclusion from further evidence."
+      },
+      con: {
+        text: "If there is evidence for it, you don't take it as an axiom.",
+        context:
+          "Dillahunty presses the central distinction between assuming a starting point and presenting evidence for the disputed claim."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Axiomatic theism",
+        speaker: "Ben Fischer",
+        color: "teal"
+      },
+      con: {
+        name: "Evidential skepticism",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 42,
+      con: 89
+    },
+    sections: [
+      {
+        title: "Religious Skepticism and the Motion",
+        timebox: "09:32-39:00",
+        score: {
+          pro: 43,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "09:32",
+              role: "Closure-principle defense",
+              words:
+                "Fischer argues that religious skeptics wrongly require sensory access to every rival religion or natural alternative, a requirement he says would undermine the closure principle and ordinary inferential knowledge.",
+              score: 43,
+              critique:
+                "Fischer raises a real epistemic point: lack of direct sensory access to every alternative does not automatically make an inference irrational. His discussion of closure usefully separates uncertainty from the claim that no conclusion can ever follow from evidence. Yet this is principally defensive. Even if his account of religious skepticism were right, it would only block one possible objection to Christianity; it would not give positive support for God. He also assigns his opponent a Nozick-style sensitivity requirement before showing that Dillahunty accepts it. The argument therefore spends its opening on a generic skeptic rather than the stated motion. The score is low because the material is philosophically organized and relevant to epistemology, but not evidence for the existence claim under assessment.",
+              tags: []
+            },
+            con: {
+              time: "24:44",
+              role: "Motion-and-warrant reset",
+              words:
+                "Dillahunty says Fischer's opening concerns justified true belief and a version of religious skepticism, while the actual question is whether there is a justified, evidence-based belief that God exists.",
+              score: 86,
+              critique:
+                "Dillahunty correctly redirects the exchange from whether skepticism can secure certainty to whether the affirmative offers warranted belief. That distinction is decisive for this motion: refuting a skeptical objection does not itself demonstrate God. He explains his own aim in comparatively modest terms, seeking beliefs that fit the available facts and do not leave equally supported incompatible explanations. This makes his standard inspectable rather than merely dismissive. The limitation is that his opening sometimes presents testability, replication, and falsifiability as a broad ideal without distinguishing experimental, historical, and metaphysical kinds of inference. Those distinctions could matter later. The score is high because he identifies the live burden precisely and gives Fischer a clear invitation to meet it.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "First Cause and Temporal Regress",
+        timebox: "40:00-49:20",
+        score: {
+          pro: 48,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "41:08",
+              role: "Domino first-cause argument",
+              words:
+                "Fischer's endless-domino illustration says a beginningless sequence could never reach a marked present event, so every conceivable world needs an initial cause whose self-originating action implies conscious will.",
+              score: 48,
+              critique:
+                "Fischer gives the debate its clearest positive picture here. The domino illustration makes his concern about a beginningless temporal sequence easy to grasp, and he tries to connect a first cause to an explanation rather than merely announce one. He also concedes that a temporal sequence in God would create a comparable problem, then invokes divine timelessness to avoid it. The weakness is that several decisive transitions remain asserted: that an infinite past is impossible, that a first cause must cause itself, and that self-explanation implies consciousness. The analogy does not establish those rules, nor does it distinguish a divine agent from an impersonal boundary condition. The score is mixed because the argument is intelligible and motion-relevant, but its conclusion outruns its defended premises.",
+              tags: []
+            },
+            con: {
+              time: "44:06",
+              role: "Scope-and-structure challenge",
+              words:
+                "Dillahunty says time and causality appear to belong to the universe, questions the imagined infinite timeline, and asks Fischer to state premises and a conclusion before calling the result an argument for God.",
+              score: 82,
+              critique:
+                "Dillahunty's response does two useful jobs. First, it questions whether causal and temporal intuitions drawn from within the universe can be projected straightforwardly beyond it. Second, he repeatedly requests a formal structure, which would expose exactly where the domino analogy is doing logical work. His contrast with Zeno also shows that an infinite divisibility of an interval is not automatically the same issue as a completed infinite past. The weakness is that he leans on current cosmology somewhat quickly; a universe with an early hot state does not by itself settle every philosophical question about temporal beginnings. Still, Fischer's case needs a principle connecting first causation to agency, and Dillahunty pinpoints its absence. The score is strong for targeted clarification and burden discipline.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Axiom, Proof, and Formal Structure",
+        timebox: "48:30-57:45",
+        score: {
+          pro: 35,
+          con: 90
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "48:31",
+              role: "Axiomatic-status claim",
+              words:
+                "Fischer says the proof of his claim is that it is axiomatic: every possible world has a first cause, just as logical or mathematical axioms are self-evident foundations rather than conclusions needing proof.",
+              score: 35,
+              critique:
+                "Fischer is right that some formal systems begin from assumptions or primitive rules, and he tries to explain why an argument ultimately cannot demand an endless chain of prior proofs. That is a legitimate issue in epistemology. But the move does not establish that God's existence is one of those starting points. Calling a proposition axiomatic is not a substitute for showing that competent reasoners must accept it, especially when the interlocutor plainly does not. His comparison to arithmetic also blurs the difference between chosen formal axioms and an ontological claim about reality. Most importantly, the alleged axiom includes a divine causal beginning rather than merely a logical rule. The score is low because the central conclusion is placed among the premises rather than independently supported.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "Fischer treats the disputed claim that reality requires a divine first cause as axiomatic instead of establishing the principle from which it would follow."
+                }
+              ]
+            },
+            con: {
+              time: "49:03",
+              role: "Assumption-versus-evidence objection",
+              words:
+                "Dillahunty replies that axioms are assumed starting points, not proof, and that mathematical conclusions can be demonstrated from their axioms without making God's existence a comparable self-evident premise.",
+              score: 90,
+              critique:
+                "Dillahunty sharply distinguishes an axiom's role inside a formal system from evidence for a substantive claim about the world. His point that mathematical results may be derived from axioms does not make every proposition one chooses to assume equally warranted. He also preserves an important conversational test: if God were genuinely self-evident in the relevant sense, Fischer should be able to state the rule and show why denial is incoherent. The response is especially effective because it answers Fischer's own comparison rather than changing the subject. A small limitation is that Dillahunty sometimes speaks as though axioms are adopted only where evidence is unavailable; logical starting points are not simply empirical gaps. The score is very high because that nuance does not rescue Fischer's unargued ontological axiom.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Epistemic Trilemma and Positive Evidence",
+        timebox: "54:20-76:45",
+        score: {
+          pro: 33,
+          con: 91
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "54:22",
+              role: "Infinitism-coherentism-foundationalism trilemma",
+              words:
+                "Fischer says the options for settling any proposition are infinitism, coherentism, or foundationalism; rejecting the first two makes axiomatic foundationalism the strongest kind of evidence for God.",
+              score: 33,
+              critique:
+                "Fischer identifies a classic regress problem and gives a recognizable sketch of infinitism, coherentism, and foundationalism. This is a real background question for any account of justification, and he is entitled to argue that some beliefs must play a foundational role. The decisive weakness is the missing bridge. Even if the three-way classification were exhaustive and even if foundationalism won, it would not follow that a particular first-cause thesis is foundational, much less that it identifies God. He also treats coherentism as if it were evidence rather than a theory of justification, which confuses the framework with the supporting material. The score is very low because the trilemma may motivate epistemic inquiry but does not provide the positive evidence demanded by the motion.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The conclusion that God is a justified foundation is assumed once Fischer selects axiomatic foundationalism without an argument that God belongs among its foundations."
+                }
+              ]
+            },
+            con: {
+              time: "63:18",
+              role: "Evidence-before-framework rebuttal",
+              words:
+                "Dillahunty says no epistemology removes the need to present evidence for God, notes hybrid accounts such as foundherentism, and returns to the agreed burden of proof on the affirmative.",
+              score: 91,
+              critique:
+                "Dillahunty keeps the central asymmetry visible: an account of how beliefs might be justified does not make an unpresented God claim justified. Mentioning foundherentism is useful because it shows Fischer's trilemma is not obviously an exhaustive menu, but the stronger point is independent of that historical detail. He asks the simple question the discussion has postponed: what observable, historical, or explanatory evidence favors God over alternatives? His repeated return to the agreed affirmative burden is firm without requiring him to disprove God. The limitation is stylistic and methodological. His frustration interrupts some opportunities to distinguish competing evidence standards in more detail. The score is nonetheless very high because he exposes the precise category error that prevents Fischer's epistemology from becoming evidence.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Miracles, Alternatives, and Testimony",
+        timebox: "59:20-94:40",
+        score: {
+          pro: 49,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "60:15",
+              role: "Resurrection-and-testimony proposal",
+              words:
+                "Fischer proposes the historically substantiated resurrection and reasonably sound miracle testimony as evidence, while saying that a conscious first cause best avoids an infinite regress of causes.",
+              score: 49,
+              critique:
+                "Fischer names evidence categories beyond the axiom: the resurrection, miracle reports, and testimony. That is an improvement because claims can be weighed for sources, independence, alternative explanations, and explanatory scope. He also allows that evidence need not be a direct sensory encounter, a reasonable correction to an overly narrow empiricism. The weakness is that he supplies none of the promised historical particulars. Saying the resurrection is historically substantiated or that testimony seems sound does not tell listeners which sources, facts, controls, or comparative likelihoods justify the conclusion. His later appeal to a conscious cause still assumes that consciousness is the best available terminus without defending the comparison. The score is mixed-low: the evidential categories are relevant, but the argument remains an invitation to a case rather than the case itself.",
+              tags: []
+            },
+            con: {
+              time: "77:15",
+              role: "Alternative-explanation and verification standard",
+              words:
+                "Dillahunty says ruling out abiogenesis would not by itself identify God, and treats near-death reports as sincere experiences whose supernatural interpretations are not independently verified.",
+              score: 83,
+              critique:
+                "Dillahunty applies a valuable abductive discipline in the audience questions. Showing that one proposed natural mechanism fails would not, by itself, establish a specific supernatural creator; the evidential work lies in comparing live explanations. His discussion of near-death accounts also charitably separates the sincerity of an experience from the truth of its preferred interpretation, and notes their cultural variability. That is more careful than simply calling witnesses dishonest. The weakness is that he sometimes frames the standard in terms of independently verified public evidence without explaining how singular historical events should be evaluated when replication is impossible. This leaves his broader epistemology less complete than his local critique. The score is strong because he blocks a false leap from unexplained to divine while remaining open to positive evidence.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 42,
+        strengths: [
+          "Fischer correctly sees that lack of exhaustive sensory access to every alternative does not automatically defeat ordinary inference.",
+          "His domino illustration makes the intended concern about temporal regress and ultimate explanation easy for a reader to identify.",
+          "He eventually names historical testimony and miracle claims as evidence categories, rather than relying solely on a first-cause assertion."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly treats a divine first cause as axiomatic, placing the central conclusion among the assumptions instead of supplying the premises that would establish it.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 89,
+        strengths: [
+          "Dillahunty consistently distinguishes a response to skepticism from positive evidence for the existence of God.",
+          "His requests for a premise-conclusion structure expose the unsupported transitions from temporal regress to first cause and from first cause to conscious agent.",
+          "He fairly separates sincere testimony from independently confirmed explanation, while explaining why eliminating one natural option does not prove God."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes treats testability and replication as if they were the uniform standard for all evidence, risking a slide from experimental-science norms to the assessment of historical or metaphysical arguments.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
