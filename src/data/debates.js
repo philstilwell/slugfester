@@ -48968,5 +48968,315 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "douthat-ehrman-resurrection-gospel-history-2026",
+    number: "136",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Ross Douthat vs Bart Ehrman: Did Jesus Rise From the Dead?",
+    label: "Resurrection, Gospel testimony, and belief",
+    date: "2026-07-30",
+    duration: "1 hr 24 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=V7EwdZ0Z_gc",
+    motion:
+      "How much historical confidence should readers place in the Gospels and resurrection accounts: reliable witness traces or later traditions shaped by memory, theology, and debate?",
+    summary:
+      "Douthat presses whether Gospel coherence, local knowledge, and resurrection strangeness favor a stronger historical reading; Ehrman argues that early belief and some historical core do not establish reliable Gospel narration or a physical resurrection.",
+    sourceNote:
+      "Built from YouTube English subtitles for the Interesting Times with Ross Douthat upload. This is a hosted discussion rather than a formal timed debate; captions are lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "it seems like it's all a weird mixture from the start",
+        context:
+          "Douthat treats the doubt, physicality, and unsettled texture of the resurrection traditions as evidence that they preserve more than a simple later apologetic construction."
+      },
+      con: {
+        text: "some of them thought they saw him alive afterwards",
+        context:
+          "Ehrman accepts early resurrection belief and visionary experience while rejecting a historian's ability to establish a supernatural resurrection."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Historical-resurrection challenge",
+        speaker: "Ross Douthat",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical historian",
+        speaker: "Bart Ehrman",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 80,
+      con: 84
+    },
+    sections: [
+      {
+        title: "Historical Existence and Sources",
+        timebox: "21:30-31:35",
+        score: {
+          pro: 78,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "28:17",
+              role: "Attestation framing",
+              words:
+                "Douthat says Jesus is unusually well-attested even by secular historical standards, despite the scarcity of records for most people in the Roman world.",
+              score: 78,
+              critique:
+                "Douthat's framing usefully restores the base rate for ancient history. The absence of a first-century Greek or Roman biography is less damaging when records for provincial non-elites are generally sparse, and he rightly asks listeners to compare Jesus with the surviving evidence for other people. That is a fair antidote to internet-era expectations of documentation. The weakness is that this observation is mostly contextual rather than discriminating. Sparse records explain why silence is unsurprising, but they do not determine which Gospel claims are historical or establish the resurrection. Douthat also relies on Ehrman's own concession rather than developing the source comparisons himself. The score is solid because the framing improves historical calibration but does not yet bear much argumentative weight.",
+              tags: []
+            },
+            con: {
+              time: "27:26",
+              role: "Minimal historicity case",
+              words:
+                "Ehrman says the evidence for Jesus' existence is overwhelming, emphasizing Paul's early contact with James, whom Paul calls Jesus' brother.",
+              score: 86,
+              critique:
+                "Ehrman's minimal-historicity case is strong because it deliberately separates existence from every maximal Christian claim. He starts with a relatively early author, Paul, and a personal contact claim involving James, then argues that a real brother is the ordinary reading in context. That is more relevant than later miracle narratives or broad claims of cultural influence. The weakness is rhetorical compression: calling the evidence overwhelming leaves little room for the interpretive disputes over brother language, chronology, and Paul's sparse biography. Those objections are not equally persuasive, but they are part of the historical task. The score is high because Ehrman gives a concrete, early, and directly relevant datum, while the certainty language slightly exceeds what historical inference normally warrants.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Miracles and Historical Method",
+        timebox: "35:00-42:32",
+        score: {
+          pro: 82,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "35:38",
+              role: "Attestation threshold challenge",
+              words:
+                "Douthat asks whether any scale of historical attestation could make a miracle possibly credible, rather than simply losing to the fact that miracles are unusual.",
+              score: 82,
+              critique:
+                "Douthat puts the methodological issue cleanly. If historians reject miracle claims before examining their source quality, then the conclusion can look built into the method rather than earned from the particular evidence. His question does not assert that Jesus walked on water; it asks what evidential threshold, if any, could count against a strong prior. That is a fair burden question and exposes the difference between historical practice and metaphysical naturalism. The weakness is that it stops at the level of challenge. He does not propose a workable threshold, explain how testimony should overcome an extraordinary prior, or show that the Gospel accounts meet it. The score is strong because the question is precise and relevant, but it needs a positive epistemic account to move beyond pressure.",
+              tags: []
+            },
+            con: {
+              time: "36:06",
+              role: "Comparative-probability method",
+              words:
+                "Ehrman says historians assess whether a miracle probably happened, and that ordinary explanations remain more likely than an event never otherwise established in history.",
+              score: 84,
+              critique:
+                "Ehrman offers a recognizable historical method rather than merely declaring miracles impossible. He asks whether accounts are independent, whether comparable events occur, and whether invention or error is more probable than a person walking on water. His comparison to later miracle testimony usefully shows that sincerity and even eyewitness claims do not settle extraordinary events. The weakness is that his formulation can blur two claims: historians may lack a method for proving a miracle, yet that does not by itself establish the event did not occur. Douthat is right to ask whether enough convergence could ever shift the judgment. The score is high because Ehrman supplies comparative reasons and avoids claiming logical impossibility, but the fixed limits of the method remain contested.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Luke-Acts and Dating",
+        timebox: "42:32-52:54",
+        score: {
+          pro: 80,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "44:52",
+              role: "Narrative-ending inference",
+              words:
+                "Douthat argues that Acts ending with Paul imprisoned, while omitting later martyrdom, Nero's persecution, and the Temple's destruction, naturally suggests an early-60s composition.",
+              score: 80,
+              critique:
+                "Douthat's Acts argument is a serious cumulative observation. A narrative that follows Paul closely but stops before his likely death and several momentous events invites the possibility that the author was writing before those events, especially if a later date increases the distance from eyewitness memory. He also presses the rhetorical puzzle: martyrdom could affirm an unstoppable Christian movement rather than weaken it. The weakness is that narrative endings do not mechanically date books. An author may end at a thematic destination, lack reliable details, or assume an audience already knows the rest. Douthat's explanation is plausible, but it treats an omission as stronger positive evidence than the omission alone can bear. The score is strong because he develops the inference carefully rather than treating it as decisive.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Acts' silence about later events is used as positive evidence that the author did not know them, although omission has competing explanations."
+                }
+              ]
+            },
+            con: {
+              time: "46:01",
+              role: "Thematic-ending rebuttal",
+              words:
+                "Ehrman accepts that Jesus could have predicted Jerusalem's fall, but says Luke-Acts can end before Paul's death because its theme is an unstoppable movement.",
+              score: 82,
+              critique:
+                "Ehrman's reply does two useful things. First, he refuses the easy claim that dating must be driven by denying prophecy; he says a Jewish prophet could foresee Jerusalem's destruction from the political conditions. Second, he offers a real literary explanation for Acts ending with Paul still active: the book repeatedly presents persecution as unable to stop the mission. That directly engages Douthat's narrative point. The weakness is that thematic plausibility is not a full dating argument either. A later author could still narrate martyrdom as victory, and Ehrman does not fully explain why the ending is more natural than Douthat's alternative. The score is strong because he identifies a credible counter-mechanism, but the chronology remains underdetermined.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Contradictions and Eyewitness Memory",
+        timebox: "52:58-64:55",
+        score: {
+          pro: 83,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "56:31",
+              role: "Memoir-analogy defense",
+              words:
+                "Douthat argues that disagreement, compression, and differing interpretation can be expected when several people report remembered events rather than evidence of wholesale unreliability.",
+              score: 83,
+              critique:
+                "Douthat's memoir analogy makes a fair corrective to an overly simple contradiction test. Real people who share a household or a major experience can differ in details, sequence, emphasis, and interpretation while still offering broadly truthful testimony. He is also right that perfect agreement among independent documents might look suspiciously coordinated. The weakness is that the analogy assumes the contested premise: that the Gospels are close to eyewitness memoirs or mediated testimony. Ehrman repeatedly disputes that authorship, language, distance, and genre description. Differences support authenticity only after the source relationship has been established; they cannot establish it on their own. The score is high because the distinction between discrepancy and fabrication matters, but lower than decisive because the analogy's fit is uncertain.",
+              tags: []
+            },
+            con: {
+              time: "53:36",
+              role: "Contradiction and distance case",
+              words:
+                "Ehrman cites conflicting instructions about a staff and the differing Passover dates of Jesus' death, then notes anonymous authors writing decades later from inherited traditions.",
+              score: 85,
+              critique:
+                "Ehrman gives the historical-skepticism case concrete form rather than relying on a general claim that stories change. The staff instruction and the timing of the Passover meal are accessible examples of narratives that cannot both preserve every detail exactly, while the questions of anonymous authorship, Greek composition, and decades of transmission explain why divergence is unsurprising. He also concedes that credible historical material remains. The weakness is that the conclusion can overreach from contradictions to broad unreliability. Douthat rightly notes that human memory and testimony can retain a meaningful core despite imperfect detail, and each discrepancy needs genre-sensitive treatment. The score is high because Ehrman substantiates the caution with examples, but the inference should remain graded rather than total.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Geography, Names, and Transmission",
+        timebox: "63:50-69:40",
+        score: {
+          pro: 81,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "65:20",
+              role: "Local-knowledge inference",
+              words:
+                "Douthat says that Gospel place names and personal names often fit first-century Palestine, asking why successful transmission of local detail gives no credit to the narrated events.",
+              score: 81,
+              critique:
+                "Douthat's local-knowledge challenge is well targeted because it tests the breadth of Ehrman's oral-tradition model. If stories pass through many places and decades, accurate names and geography can be evidence that some contextual information travelled successfully rather than dissolving into free invention. He carefully avoids saying that accuracy proves every event; his narrower claim is that it should raise confidence somewhere. The weakness is the missing bridge from setting knowledge to event knowledge. A writer can preserve or research a place while constructing the action assigned to it, and Gospel geography itself contains disputes and errors. The score is strong because Douthat identifies a real evidential asymmetry, but the local details only modestly support historical narration without source-specific linkage.",
+              tags: []
+            },
+            con: {
+              time: "68:10",
+              role: "Setting-event distinction",
+              words:
+                "Ehrman replies that knowing where Jericho is does not establish what happened there, comparing it to locating the Empire State Building in a story of an alleged murder.",
+              score: 79,
+              critique:
+                "Ehrman's distinction is logically sound and needed. Accurate geography is not a truth guarantee for the action reported in that geography; a modern story can locate an invented murder at a real landmark. This blocks the invalid leap from local color to event verification. The weakness is that he presses the point toward neutrality too quickly. Douthat does not claim geographical accuracy proves a miracle or a speech; he claims it is some evidence that transmission was not uniformly corrupt. A calibrated historical judgment can give local accuracy modest weight without confusing it with direct corroboration. The score is solid because the rebuttal defeats the stronger claim, but it does not fully answer the weaker cumulative-evidence claim.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Visions, Doubt, and Resurrection",
+        timebox: "69:54-79:46",
+        score: {
+          pro: 85,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "75:20",
+              role: "Transformative-event challenge",
+              words:
+                "Douthat argues that a movement shaped by radical claims, doubt, mission, and martyrdom looks unlike ordinary bereavement visions of a recently deceased loved one.",
+              score: 85,
+              critique:
+                "Douthat's resurrection challenge is the strongest stretch of the discussion. He does not argue that grief visions are impossible; he asks whether they adequately explain the unusual combination of a crucified messiah, collective religious transformation, later physical-resurrection emphasis, and narratives saturated with hesitation. His focus on the strange texture of the accounts is more careful than simply counting witnesses. The weakness is that the transformation and the later stories are compatible with several social and psychological mechanisms, not only bodily resurrection. Mission and martyrdom show conviction more readily than they show the truth of the conviction. The score is high because Douthat asks the right explanatory question and resists an overly flat vision analogy, while still lacking a decisive inference to miracle.",
+              tags: []
+            },
+            con: {
+              time: "76:09",
+              role: "Vision-and-reinterpretation account",
+              words:
+                "Ehrman says followers who expected a conquering Messiah reinterpreted Jesus' execution after visions: if God raised him, his death must have been intended for salvation.",
+              score: 86,
+              critique:
+                "Ehrman's naturalistic account is impressively economical. It begins from a historically plausible pre-crucifixion expectation, accepts that some followers experienced or reported vivid postmortem encounters, and explains how a failed messianic hope could be reinterpreted as divine vindication and salvific death. He also explains later physical details as arguments against Christians who favored a merely spiritual resurrection. The weakness is that the account rests on several inferred psychological and theological transitions, and it does not specify why visions arose among particular people at that particular moment. Douthat is right that the doubt material leaves questions about the earliest experience. The score is high because Ehrman offers a coherent mechanism that handles more than bare dismissal, though it remains a reconstruction rather than direct proof.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 80,
+        strengths: [
+          "Douthat repeatedly narrowed large disputes into precise historical questions about source distance, memoir-like disagreement, local knowledge, and what could move an evidential prior.",
+          "His strongest material was the resurrection discussion, where he pressed the difference between ordinary bereavement visions and the strange, contested, movement-forming traditions.",
+          "He acknowledged partial points rather than treating Gospel accuracy as all-or-nothing, which kept the conversation unusually productive for a long interview."
+        ],
+        blunders: [
+          {
+            text:
+              "His early-date case for Acts asked its silence about later events to establish what the author did not know, despite plausible narrative and thematic alternatives.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His memoir and local-knowledge analogies sometimes assumed enough proximity to eyewitness testimony before the disputed source relationship had been established.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Ehrman distinguished minimal historical claims from theological ones, accepting Jesus' existence and early resurrection belief while explaining why neither establishes inerrancy or miracle.",
+          "He supplied concrete examples of Gospel divergence and a source-critical account of how anonymous, later authors could preserve and reshape traditions.",
+          "His vision-and-reinterpretation account gave the rise of resurrection belief a positive historical mechanism rather than merely calling the stories false."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes treated accurate local context as neutral too quickly, underplaying how successfully transmitted names and geography can modestly inform a cumulative reliability judgment.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His confidence that ordinary alternatives will always outrank miracles left the evidential threshold open but never fully specified, giving the method a potentially fixed conclusion.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
