@@ -31,6 +31,18 @@ import {
 const app = document.querySelector("#app");
 const DEBATE_PAGE_SIZE = 84;
 const MIN_RANKED_DEBATE_APPEARANCES = 3;
+const rankingMinimumOptions = [3, 5, 10];
+const rankingModelOptions = [
+  { value: "all", label: "All models" },
+  { value: "legacy", label: "GPT 5.5 Extra High" },
+  { value: "terra", label: "5.6 Terra Extra High" }
+];
+const rankingSortOptions = [
+  { value: "average", label: "Highest average" },
+  { value: "appearances", label: "Most appearances" },
+  { value: "recent", label: "Strongest recent average" },
+  { value: "name", label: "Name" }
+];
 const debateHashRoutePattern = /^#\/debate\/([a-z0-9-]+)$/;
 const searchHashRoutePattern = /^#\/search$/;
 const topicsHashRoutePattern = /^#\/topics$/;
@@ -753,40 +765,141 @@ function searchFacets() {
   };
 }
 
-function rankedInterlocutors() {
+function rankingState() {
+  const params = new URLSearchParams(window.location.search);
+  const model = params.get("model") || "all";
+  const topic = params.get("topic") || "all";
+  const minimum = Number.parseInt(params.get("minimum"), 10);
+  const sort = params.get("sort") || "average";
+
+  return {
+    model: rankingModelOptions.some((option) => option.value === model) ? model : "all",
+    topic:
+      topic === "all" || topicCategoryDefinitions.some((category) => category.id === topic)
+        ? topic
+        : "all",
+    minimum: rankingMinimumOptions.includes(minimum)
+      ? minimum
+      : MIN_RANKED_DEBATE_APPEARANCES,
+    sort: rankingSortOptions.some((option) => option.value === sort) ? sort : "average"
+  };
+}
+
+function rankingUrl(state) {
+  const params = new URLSearchParams();
+
+  if (state.model !== "all") params.set("model", state.model);
+  if (state.topic !== "all") params.set("topic", state.topic);
+  if (state.minimum !== MIN_RANKED_DEBATE_APPEARANCES) {
+    params.set("minimum", String(state.minimum));
+  }
+  if (state.sort !== "average") params.set("sort", state.sort);
+
+  const query = params.toString();
+  return `${rankingsPath()}${query ? `?${query}` : ""}`;
+}
+
+function rankingDebates(state) {
+  return debates.filter((debate) => {
+    const matchesModel =
+      state.model === "all" ||
+      (state.model === "legacy" && assessmentModelFor(debate) === legacyAssessmentModel) ||
+      (state.model === "terra" && assessmentModelFor(debate) === currentAssessmentModel);
+    const matchesTopic =
+      state.topic === "all" ||
+      topicCategoriesForDebate(debate).some((category) => category.id === state.topic);
+
+    return matchesModel && matchesTopic;
+  });
+}
+
+function rankingTopicSummary(appearances) {
+  const topics = new Map();
+
+  appearances.forEach((appearance) => {
+    appearance.categories.forEach((category) => {
+      const topic = topics.get(category.id) || {
+        ...category,
+        appearances: 0,
+        totalScore: 0
+      };
+      topic.appearances += 1;
+      topic.totalScore += appearance.score;
+      topics.set(category.id, topic);
+    });
+  });
+
+  return [...topics.values()]
+    .map((topic) => ({ ...topic, averageScore: topic.totalScore / topic.appearances }))
+    .sort(
+      (a, b) =>
+        b.appearances - a.appearances ||
+        b.averageScore - a.averageScore ||
+        a.title.localeCompare(b.title)
+    )[0];
+}
+
+function rankedInterlocutors(state) {
   const people = new Map();
 
-  debates.forEach((debate) => {
+  rankingDebates(state).forEach((debate) => {
     ["pro", "con"].forEach((sideKey) => {
       const side = debate.sides[sideKey];
       const score = debate.score[sideKey];
+      const opponentScore = debate.score[sideKey === "pro" ? "con" : "pro"];
+      const categories = topicCategoriesForDebate(debate);
 
       avatarsForSpeakerText(side.speaker).forEach((avatar) => {
         const person = people.get(avatar.name) || {
           ...avatar,
           appearances: 0,
-          totalScore: 0
+          totalScore: 0,
+          totalOpponentScore: 0,
+          records: []
         };
 
         person.appearances += 1;
         person.totalScore += score;
+        person.totalOpponentScore += opponentScore;
+        person.records.push({
+          categories,
+          debate,
+          opponentScore,
+          score
+        });
         people.set(avatar.name, person);
       });
     });
   });
 
   return [...people.values()]
-    .filter((person) => person.appearances >= MIN_RANKED_DEBATE_APPEARANCES)
-    .map((person) => ({
-      ...person,
-      averageScore: person.totalScore / person.appearances
-    }))
-    .sort(
-      (a, b) =>
-        b.averageScore - a.averageScore ||
-        b.appearances - a.appearances ||
-        a.name.localeCompare(b.name)
-    )
+    .filter((person) => person.appearances >= state.minimum)
+    .map((person) => {
+      const recentRecords = [...person.records]
+        .sort((a, b) => Number(b.debate.number) - Number(a.debate.number))
+        .slice(0, 3);
+
+      return {
+        ...person,
+        averageOpponentScore: person.totalOpponentScore / person.appearances,
+        averageScore: person.totalScore / person.appearances,
+        recentAverageScore:
+          recentRecords.reduce((total, record) => total + record.score, 0) / recentRecords.length,
+        recentRecords,
+        strongestTopic: rankingTopicSummary(person.records)
+      };
+    })
+    .sort((a, b) => {
+      if (state.sort === "appearances") {
+        return b.appearances - a.appearances || b.averageScore - a.averageScore || a.name.localeCompare(b.name);
+      }
+      if (state.sort === "recent") {
+        return b.recentAverageScore - a.recentAverageScore || b.averageScore - a.averageScore || a.name.localeCompare(b.name);
+      }
+      if (state.sort === "name") return a.name.localeCompare(b.name);
+
+      return b.averageScore - a.averageScore || b.appearances - a.appearances || a.name.localeCompare(b.name);
+    })
     .map((person, index) => ({ ...person, rank: index + 1 }));
 }
 
@@ -858,6 +971,14 @@ function navigateSearch(state) {
   route();
 }
 
+function navigateRankings(state) {
+  const next = rankingUrl(state);
+  if (next !== `${window.location.pathname}${window.location.search}`) {
+    window.history.pushState({}, "", next);
+  }
+  route();
+}
+
 function renderTopics() {
   setSeo(topicsSeo(debates));
 
@@ -901,7 +1022,18 @@ function renderTopics() {
 }
 
 function renderRankings() {
-  const rankings = rankedInterlocutors();
+  const state = rankingState();
+  const filteredDebates = rankingDebates(state);
+  const rankings = rankedInterlocutors(state);
+  const topicOptions = [
+    { value: "all", label: "All topics" },
+    ...topicGroupsForDebates().map((group) => ({ value: group.id, label: group.title }))
+  ];
+  const hasFilters =
+    state.model !== "all" ||
+    state.topic !== "all" ||
+    state.minimum !== MIN_RANKED_DEBATE_APPEARANCES ||
+    state.sort !== "average";
   setSeo(rankingsSeo(debates, rankings.length));
 
   app.innerHTML = renderShell(`
@@ -910,51 +1042,150 @@ function renderRankings() {
         <div>
           <p class="eyebrow">Published score averages</p>
           <h1>Interlocutor rankings</h1>
-          <p class="rankings-lede">A ranking of speakers who appear in at least ${MIN_RANKED_DEBATE_APPEARANCES} Slugfester debates, ordered by their average overall score across those appearances.</p>
+          <p class="rankings-lede">Rank speakers by their published overall scores, with the context to compare models, topics, sample size, and recent performance.</p>
         </div>
         <aside class="rankings-summary" aria-label="Rankings summary">
           <span>Qualified interlocutors</span>
           <strong>${rankings.length}</strong>
-          <span>Minimum appearances</span>
-          <strong>${MIN_RANKED_DEBATE_APPEARANCES}</strong>
+          <span>Filtered scorecards</span>
+          <strong>${filteredDebates.length}</strong>
         </aside>
+      </section>
+
+      <section class="ranking-tool" aria-label="Ranking controls">
+        <form class="ranking-form">
+          <span class="ranking-control">
+            <label for="ranking-model">Assessment model</label>
+            <select id="ranking-model" name="model">
+              ${renderRankingOptions(rankingModelOptions, state.model)}
+            </select>
+          </span>
+          <span class="ranking-control">
+            <label for="ranking-topic">Topic focus</label>
+            <select id="ranking-topic" name="topic">
+              ${renderRankingOptions(topicOptions, state.topic)}
+            </select>
+          </span>
+          <span class="ranking-control">
+            <label for="ranking-minimum">Minimum debates</label>
+            <select id="ranking-minimum" name="minimum">
+              ${rankingMinimumOptions
+                .map(
+                  (minimum) =>
+                    `<option value="${minimum}"${minimum === state.minimum ? " selected" : ""}>${minimum}+ appearances</option>`
+                )
+                .join("")}
+            </select>
+          </span>
+          <span class="ranking-control">
+            <label for="ranking-sort">Sort by</label>
+            <select id="ranking-sort" name="sort">
+              ${renderRankingOptions(rankingSortOptions, state.sort)}
+            </select>
+          </span>
+          <div class="ranking-form-actions">
+            <button class="button primary" type="submit">Apply</button>
+            ${hasFilters ? `<button class="button secondary" type="button" data-clear-rankings>Reset</button>` : ""}
+          </div>
+        </form>
       </section>
 
       <section class="rankings-list-section" aria-labelledby="rankings-list-heading">
         <div class="section-heading">
           <div>
             <p class="eyebrow">Overall score leaderboard</p>
-            <h2 id="rankings-list-heading">Ranked by average score</h2>
+            <h2 id="rankings-list-heading">${escapeHtml(rankingHeading(state.sort))}</h2>
           </div>
-          <p class="rankings-note">These are AI-generated assessments of debate performance, not verdicts on a speaker's views or the truth of a position.</p>
+          <p class="rankings-note">${rankings.length ? `Showing ${rankings.length} interlocutors from ${filteredDebates.length} matching scorecards.` : "No interlocutors meet the current minimum."}</p>
         </div>
-        <ol class="ranking-list">
-          ${rankings.map(renderRankingCard).join("")}
-        </ol>
+        ${
+          rankings.length
+            ? `<ol class="ranking-list">${rankings.map(renderRankingCard).join("")}</ol>`
+            : `<div class="empty-results"><strong>No rankings matched.</strong><span>Try a lower minimum or broaden the current model or topic focus.</span></div>`
+        }
+        ${renderRankingMethod()}
       </section>
     </main>
   `);
+
+  bindRankingControls(state);
+}
+
+function renderRankingOptions(options, selectedValue) {
+  return options
+    .map(
+      (option) =>
+        `<option value="${escapeHtml(option.value)}"${option.value === selectedValue ? " selected" : ""}>${escapeHtml(option.label)}</option>`
+    )
+    .join("");
+}
+
+function rankingHeading(sort) {
+  const headings = {
+    average: "Ranked by average score",
+    appearances: "Ranked by appearances",
+    recent: "Ranked by latest three scorecards",
+    name: "Ranked alphabetically"
+  };
+
+  return headings[sort] || headings.average;
 }
 
 function renderRankingCard(person) {
   const searchHref = searchUrl({ page: 1, query: "", people: [person.name] });
   const debateLabel = `${person.appearances} ${person.appearances === 1 ? "debate" : "debates"}`;
+  const recentAppearances = person.recentRecords
+    .map(
+      (record) =>
+        `<a href="${escapeHtml(debatePath(record.debate))}">${escapeHtml(debateNumberLabel(record.debate))} <strong>${record.score}</strong></a>`
+    )
+    .join("");
+  const topic = person.strongestTopic;
 
   return `
     <li>
-      <a class="ranking-card" href="${escapeHtml(searchHref)}" aria-label="View ${escapeHtml(debateLabel)} featuring ${escapeHtml(person.name)}">
-        <span class="ranking-place" aria-label="Rank ${person.rank}">${person.rank}</span>
-        <img src="${escapeHtml(person.src)}" alt="${escapeHtml(person.name)}" width="512" height="512" loading="lazy" decoding="async">
-        <span class="ranking-person">
-          <strong>${escapeHtml(person.name)}</strong>
-          <small>${escapeHtml(debateLabel)}</small>
-        </span>
-        <span class="ranking-score ${scoreTone(Math.round(person.averageScore))}">
-          <small>Average score</small>
-          <strong>${escapeHtml(formatAverageScore(person.averageScore))}</strong>
-        </span>
-      </a>
+      <article class="ranking-card">
+        <a class="ranking-card-main" href="${escapeHtml(searchHref)}" aria-label="View ${escapeHtml(debateLabel)} featuring ${escapeHtml(person.name)}">
+          <span class="ranking-place" aria-label="Rank ${person.rank}">${person.rank}</span>
+          <img src="${escapeHtml(person.src)}" alt="${escapeHtml(person.name)}" width="512" height="512" loading="lazy" decoding="async">
+          <span class="ranking-person">
+            <strong>${escapeHtml(person.name)}</strong>
+            <small>${escapeHtml(debateLabel)}</small>
+          </span>
+          <span class="ranking-score ${scoreTone(Math.round(person.averageScore))}">
+            <small>Average score</small>
+            <strong>${escapeHtml(formatAverageScore(person.averageScore))}</strong>
+          </span>
+        </a>
+        <details class="ranking-detail">
+          <summary>Performance details</summary>
+          <div class="ranking-detail-grid">
+            <dl>
+              <div><dt>Latest three</dt><dd>${escapeHtml(formatAverageScore(person.recentAverageScore))}</dd></div>
+              <div><dt>Opponent average</dt><dd>${escapeHtml(formatAverageScore(person.averageOpponentScore))}</dd></div>
+              <div><dt>Most common topic</dt><dd>${escapeHtml(topic?.title || "Uncategorized")}</dd></div>
+            </dl>
+            <div class="ranking-recent-appearances">
+              <span>Recent appearances</span>
+              <div>${recentAppearances}</div>
+            </div>
+          </div>
+        </details>
+      </article>
     </li>
+  `;
+}
+
+function renderRankingMethod() {
+  return `
+    <details class="ranking-method">
+      <summary>Ranking method</summary>
+      <div>
+        <p>Each average uses the published overall score for that speaker's side of every matching debate. A panel's shared side score is assigned to each named participant on that side.</p>
+        <p>Model filters separate the original GPT 5.5 Extra High assessments from 5.6 Terra Extra High assessments, which began after Debate 130. Topic filters include any debate assigned to the selected category.</p>
+        <p>These figures assess the reasoning performance recorded in Slugfester scorecards. They do not establish the truth of a speaker's conclusions, expertise, or personal worth.</p>
+      </div>
+    </details>
   `;
 }
 
@@ -1306,6 +1537,31 @@ function bindSearchControls(state) {
       if (type === "person") {
         navigateSearch({ ...state, page: 1, query, people: toggleValue(state.people, value) });
       }
+    });
+  });
+}
+
+function bindRankingControls(state) {
+  const page = app.querySelector(".rankings-page");
+  if (!page) return;
+
+  page.querySelector(".ranking-form")?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const form = new FormData(event.currentTarget);
+    navigateRankings({
+      model: form.get("model") || "all",
+      topic: form.get("topic") || "all",
+      minimum: Number.parseInt(form.get("minimum"), 10),
+      sort: form.get("sort") || "average"
+    });
+  });
+
+  page.querySelector("[data-clear-rankings]")?.addEventListener("click", () => {
+    navigateRankings({
+      model: "all",
+      topic: "all",
+      minimum: MIN_RANKED_DEBATE_APPEARANCES,
+      sort: "average"
     });
   });
 }
