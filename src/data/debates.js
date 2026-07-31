@@ -47574,5 +47574,341 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "mclatchie-carrier-paul-celestial-jesus-2018",
+    number: "132",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Jonathan McLatchie vs Richard Carrier: Did Paul Believe in a Celestial Jesus?",
+    label: "Paul and celestial Jesus mythicism",
+    date: "2026-07-30",
+    duration: "1 hr 23 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=HCcq8G-WzJM",
+    motion:
+      "Did Paul understand Jesus as an earthly historical person, or as a celestial figure whose death and resurrection occurred in a mythic heavenly realm?",
+    summary:
+      "McLatchie argues that Paul's letters, Acts, Luke, and the Gospels point to a historical Jesus; Carrier argues that the earliest Pauline evidence remains compatible with a celestial mythic Christ.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Dr. Jonathan McLatchie upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "indeed human rulers",
+        context:
+          "McLatchie's central posture is that Paul's language and wider New Testament context point back to ordinary earthly events and persons."
+      },
+      con: {
+        text: "we can't tell whether",
+        context:
+          "Carrier's central posture is that Paul's earliest letters leave Jesus' location and biography ambiguous enough for a celestial reading."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Pauline historicity",
+        speaker: "Jonathan McLatchie",
+        color: "teal"
+      },
+      con: {
+        name: "Celestial mythicism",
+        speaker: "Richard Carrier",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 79,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Celestial Savior Framework",
+        timebox: "11:46-18:42",
+        score: {
+          pro: 76,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "18:42",
+              role: "Pauline anchor list",
+              words:
+                "McLatchie answers by listing Pauline markers: Davidic seed, born of woman, teaching on divorce, betrayal, brothers, the Twelve, and crucifixion.",
+              score: 76,
+              critique:
+                "McLatchie's opening catalogue is a solid counterweight to Carrier's framework. Instead of replying only with incredulity, he names Pauline passages that appear to give Jesus ordinary historical predicates: descent, birth, betrayal, family, followers, and crucifixion. That keeps the debate tied to textual data rather than general plausibility. The weakness is that the list is too compressed. Several items depend on disputed letters, debated translations, or later New Testament connections that need argument rather than accumulation. A catalogue can look stronger than any single item it contains. The score is solid because McLatchie identifies the right evidential arena, but the opening burden is only partly discharged.",
+              tags: []
+            },
+            con: {
+              time: "11:50",
+              role: "Celestial-origin thesis",
+              words:
+                "Carrier says the defensible mythicist view has Jesus acquiring flesh and dying, but in a mythic realm rather than on earth.",
+              score: 82,
+              critique:
+                "Carrier's opening move is intellectually serious because it gives mythicism a specific Pauline test. He does not merely say Jesus was invented; he proposes a model in which a Jewish savior cult could imagine flesh, death, burial, and resurrection in a heavenly drama. His appeal to ancient savior cults, revelatory sourcing, and Paul's silence about ministry details makes the hypothesis more disciplined than a conspiracy-style denial. The weakness is that analogy and silence carry much of the weight. Osiris parallels, heavenly copies, and missing Pauline biography show possibility more readily than probability. The score is high because the thesis is coherent and source-focused, but capped because the reconstruction remains inferential.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Rulers of This Age",
+        timebox: "19:35-31:50",
+        score: {
+          pro: 84,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "23:35",
+              role: "Contextual reading",
+              words:
+                "McLatchie argues that 1 Corinthians 2 is about human wisdom, human rulers, and a temporal age rather than demonic executioners.",
+              score: 84,
+              critique:
+                "McLatchie's 1 Corinthians 2 reply is one of his strongest textual moments. He does not simply assert the traditional reading; he moves through nearby language about human wisdom, the debater of this age, rulers, natural persons, and spiritual discernment to argue that Paul's contrast is between human and divine wisdom. That directly answers Carrier's lexical ambiguity claim with context. The weakness is that Paul can combine earthly and demonic agency, and the phrase can still carry apocalyptic resonance beyond ordinary politics. McLatchie also moves quickly from contextual plausibility to near inevitability. The score is high because he supplies a clear exegetical warrant and meets the passage on its own terms.",
+              tags: []
+            },
+            con: {
+              time: "20:10",
+              role: "Archon ambiguity",
+              words:
+                "Carrier says Paul's archons could be demonic powers, and that God's hidden saving plan fits Satanic ignorance better than Roman ignorance.",
+              score: 80,
+              critique:
+                "Carrier's rulers argument has real force because it presses the strangeness of Paul's wording and theology. If the rulers would not have crucified Jesus had they known the saving result, demonic powers trying to preserve death can seem a cleaner fit than Roman or Jewish officials unknowingly fulfilling God's plan. He also usefully brings in apocalyptic background material rather than relying on English wording alone. The weakness is that the argument leans heavily on ambiguity, then asks ambiguity to support a substantial celestial-crucifixion claim. Human rulers can act within a spiritual conflict in Pauline thought. The score is strong because Carrier exposes a live interpretive option, not because he settles it.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Brother of the Lord",
+        timebox: "33:00-38:52",
+        score: {
+          pro: 81,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "36:59",
+              role: "Biological brother case",
+              words:
+                "McLatchie says Galatians, 1 Corinthians 9, Gospel family traditions, and Acts make James' brother title best read biologically.",
+              score: 81,
+              critique:
+                "McLatchie's brother-language argument succeeds at the level of ordinary reading. In most contexts, naming James as the Lord's brother naturally sounds like a family identifier, and McLatchie strengthens that intuition by connecting it to 1 Corinthians 9, Gospel brother traditions, and Acts' pairing of Jesus' mother with his brothers. The weakness is that some of those supports are later or depend on the very Lucan reliability Carrier disputes. The Pauline phrase itself has to carry most of the load. McLatchie also treats the cumulative New Testament picture as if it directly clarifies Paul's usage. The score is high because the family reading is natural, but not decisive against cultic kinship ambiguity.",
+              tags: []
+            },
+            con: {
+              time: "33:48",
+              role: "Cultic kinship reply",
+              words:
+                "Carrier replies that Paul calls baptized Christians brothers of the Lord, so James could be a non-apostolic Christian rather than a sibling.",
+              score: 83,
+              critique:
+                "Carrier's kinship rebuttal is useful because it identifies a real Pauline category rather than inventing ambiguity out of thin air. If baptized Christians were understood as brothers of the Lord, then a phrase that later readers hear biologically may have had a community-rank or cultic sense. Carrier also ties Galatians to Paul's claim that he received the gospel by revelation, so listing James helps show how few Christians he consulted. The weakness is that this can make ordinary language work unusually hard. A named individual with a brother title still more naturally invites a family reading unless context rules it out. The score is high because Carrier complicates McLatchie's strongest short proof, but he does not neutralize it.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "The rebuttal can overvalue unresolved ambiguity by treating unclear brother-language as nearly neutral between ordinary family and cultic rank."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Acts and Paul's Biography",
+        timebox: "40:00-55:05",
+        score: {
+          pro: 80,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "43:03",
+              role: "Acts corroboration case",
+              words:
+                "McLatchie argues that Acts and Paul's letters fit together in undesigned ways, especially around Timothy, Ephesus, Corinth, and travel routes.",
+              score: 80,
+              critique:
+                "McLatchie's Acts defense is strongest when it gives a concrete interlock instead of a general trust claim. The Timothy route example has genuine evidential texture: 1 Corinthians creates a timing puzzle, and Acts appears to supply a travel pattern that fits. His wider point about incidental geographic and administrative accuracy is relevant to whether Acts can preserve real history. The weakness is that local accuracy does not automatically authenticate contested theological or chronological claims. A later author using Pauline letters or other sources could still get some details right while reshaping others. The score is strong because the corroboration is not trivial, but it cannot bear the full Lucan-authorship conclusion.",
+              tags: []
+            },
+            con: {
+              time: "45:37",
+              role: "Source-chain rebuttal",
+              words:
+                "Carrier says Acts can use Pauline source material while still altering Paul's chronology, Judean reputation, Arabia, Peter, and Theudas.",
+              score: 84,
+              critique:
+                "Carrier's Acts rebuttal is sharp because it separates incidental accuracy from narrative reliability. He grants that Acts may use Pauline letters or other sources, then asks whether the book agrees with Paul where the dispute matters: Arabia, Judean recognition, Peter's role in Gentile mission, and the Theudas chronology. That is a stronger test than asking whether Acts knows some names and routes. The weakness is that each alleged contradiction has its own interpretive debate, and McLatchie is able to propose telescoping in Acts 9. Still, Carrier's method is historically disciplined: source use does not prove source fidelity. The score is high because it directly weakens McLatchie's bridge from Acts to Paul's Jesus.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Luke Companion Inference",
+        timebox: "54:33-1:04:35",
+        score: {
+          pro: 76,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "54:33",
+              role: "Companion inference",
+              words:
+                "McLatchie argues that if Luke traveled with Paul, the historical Jesus of Luke-Acts counts strongly against Carrier's Pauline mythicism.",
+              score: 76,
+              critique:
+                "McLatchie's companion inference has a clear abductive shape. If Luke-Acts really comes from a close companion of Paul, and if that companion writes a thoroughly historical Jesus narrative, then Carrier's claim about Paul's Jesus becomes much less plausible. McLatchie is right that the identity and reliability of Luke matter to this debate, not just to Gospel apologetics in general. The weakness is that the argument stacks contested steps: Pauline authorship beyond the seven letters, Luke's authorship, the we-passages, Colossians, and the degree of contact between Luke and Paul's christology. A chain can break at several places. The score is solid because the conditional is powerful, but the live case does not secure the antecedent.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "Several disputed authorship and reliability claims are treated as evidence for Paul's historical Jesus before those claims have been independently established."
+                }
+              ]
+            },
+            con: {
+              time: "1:02:16",
+              role: "Authorship challenge",
+              words:
+                "Carrier grants that Pauline authorship of Luke-Acts would be strong for historicity, but says that connection cannot be established.",
+              score: 82,
+              critique:
+                "Carrier's concession-and-denial move is rhetorically honest. He admits that if Paul or a reliable close companion produced Luke-Acts, mythicism would lose substantial probability. That concession makes the reply more credible because he is not moving the goalposts. He then presses the disputed authorship and the limits of the we-passages, including the possibility of first-person sea-voyage convention. The weakness is that the reply remains largely defeater-based. Carrier shows why McLatchie's inference is not secure, but he does not fully explain why the Christian memory behind Luke-Acts should be late enough or independent enough to leave Paul's view ambiguous. The score is high because he targets exactly the conditional premise McLatchie needs.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Gospel Coincidences",
+        timebox: "1:05:39-1:12:40",
+        score: {
+          pro: 82,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:05:39",
+              role: "Undesigned coincidence case",
+              words:
+                "McLatchie uses Philip, Andrew, Bethsaida, Bethany, Passover timing, and Mark-John interlocks to argue for historical texture.",
+              score: 82,
+              critique:
+                "McLatchie's Gospel examples are among his better positive arguments because they are concrete. Philip, Andrew, Bethsaida, Bethany, and Passover timing create testable cross-text patterns rather than generic claims that the Gospels feel historical. That helps the listener see why he thinks the traditions are anchored in remembered places and sequences. The weakness is that these examples are some distance from Paul's own belief, and even successful interlocks would not prove every theological claim or miracle report. They also depend on judging the interlocks as undesigned rather than literary harmonization. The score is high because the examples are specific and cumulative, but their relevance to Paul's celestial-Jesus question is indirect.",
+              tags: []
+            },
+            con: {
+              time: "1:08:48",
+              role: "Designed coincidence rebuttal",
+              words:
+                "Carrier replies that John may be rewriting earlier Gospels, selecting characters and details from source material rather than preserving independent memory.",
+              score: 81,
+              critique:
+                "Carrier's designed-coincidence reply is plausible because it gives a non-miraculous literary mechanism for apparent interlocks. If John used earlier Gospel traditions, he might choose names, locations, and timing details while recrafting scenes for narrative sense. That is a serious alternative to treating every fit as independent memory. The weakness is that Carrier begins with a broad appeal to Johannine scholarship before fully working through McLatchie's specific examples, so the answer can feel more like a source-dependence template than a close explanation of each interlock. Some scattered details still need case-by-case handling. The score is strong because the rebuttal supplies a viable mechanism, but not a complete defeat of the examples.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "The reply initially leans on unnamed leading Johannine scholars before showing how their source-dependence view explains each cited interlock."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 79,
+        strengths: [
+          "McLatchie kept the discussion anchored in named Pauline and New Testament texts rather than relying on bare majority consensus.",
+          "His 1 Corinthians 2 contextual reading gave a strong local answer to Carrier's demonic-rulers interpretation.",
+          "His Acts and Gospel examples supplied concrete interlocks that made historicity look like more than a default assumption."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes stacked disputed premises about Pauline authorship, Luke's companionship, Acts' reliability, and Gospel source memory as though their cumulative force made each link secure.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His undesigned-coincidence strategy risked emphasizing corroborating fits while giving less live weight to tensions Carrier cited between Paul and Acts.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Carrier consistently asked what the earliest Pauline evidence itself establishes before later Gospel biography fills in the picture.",
+          "He distinguished local accuracy from source fidelity, especially when answering the argument from Acts' incidental detail.",
+          "His concessions about Luke-Acts and historicity made his burden-of-proof posture more credible than a blanket dismissal would have been."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly treated Pauline silence and unresolved ambiguity as substantial support for mythicism, which can overstate what missing biography establishes.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His celestial-realm reading required a complex apparatus of savior-cult parallels, heavenly copies, and apocalyptic texts that sometimes looked more costly than the ordinary historical reading.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His Gospel rebuttal leaned briefly on broad Johannine scholarly agreement before fully addressing the specific undesigned-coincidence examples.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
