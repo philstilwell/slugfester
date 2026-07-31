@@ -15,6 +15,8 @@ import {
   SITE_THEME_COLOR,
   SITE_NAME,
   absoluteUrl,
+  backendPath,
+  backendSeo,
   assessmentPath,
   assessmentSeo,
   debatePath,
@@ -31,7 +33,7 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260731-page-header-size";
+const assetVersion = "20260731-backend-page";
 const cloudflareWebAnalytics =
   "<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{\"token\": \"05c16e0e536340d0a1e0fdcaa6451389\"}'></script><!-- End Cloudflare Web Analytics -->";
 
@@ -239,9 +241,15 @@ addPage(
 );
 
 addPage(
+  backendPath(),
+  backendSeo(),
+  "Backend explains how Slugfester turns YouTube debate transcripts into quote-grounded scorecards, critiques, and reference links."
+);
+
+addPage(
   assessmentPath(),
   assessmentSeo(),
-  "The Codex Assessment Process explains how Slugfester creates quote-forward AI debate scorecards."
+  "The old Assessment page name has been replaced by Backend."
 );
 
 debates.forEach((debate) => {
@@ -294,6 +302,7 @@ if (!checkOnly) {
   await rm(join(root, "debate"), { recursive: true, force: true });
   await rm(join(root, "reference"), { recursive: true, force: true });
   await rm(join(root, "topics"), { recursive: true, force: true });
+  await rm(join(root, "backend"), { recursive: true, force: true });
   await rm(join(root, "assessment"), { recursive: true, force: true });
 }
 

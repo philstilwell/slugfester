@@ -11,8 +11,8 @@ import {
   SITE_NAME,
   SITE_THEME_COLOR,
   absoluteUrl,
-  assessmentPath,
-  assessmentSeo,
+  backendPath,
+  backendSeo,
   debateNumberLabel,
   debatePath,
   debateSeo,
@@ -31,11 +31,13 @@ const DEBATE_PAGE_SIZE = 84;
 const debateHashRoutePattern = /^#\/debate\/([a-z0-9-]+)$/;
 const searchHashRoutePattern = /^#\/search$/;
 const topicsHashRoutePattern = /^#\/topics$/;
+const backendHashRoutePattern = /^#\/backend$/;
 const assessmentHashRoutePattern = /^#\/assessment$/;
 const referenceHashRoutePattern = /^#\/reference\/(fallacy|bias)\/([a-z0-9-]+)(?:\?debate=([a-z0-9-]+))?$/;
 const debatePathRoutePattern = /^\/debate\/([a-z0-9-]+)\/?$/;
 const searchPathRoutePattern = /^\/search\/?$/;
 const topicsPathRoutePattern = /^\/topics\/?$/;
+const backendPathRoutePattern = /^\/backend\/?$/;
 const assessmentPathRoutePattern = /^\/assessment\/?$/;
 const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?$/;
 
@@ -232,8 +234,13 @@ function currentPrimaryNavKey() {
   const { hash, pathname } = window.location;
   if (hash.match(searchHashRoutePattern) || pathname.match(searchPathRoutePattern)) return "search";
   if (hash.match(topicsHashRoutePattern) || pathname.match(topicsPathRoutePattern)) return "topics";
-  if (hash.match(assessmentHashRoutePattern) || pathname.match(assessmentPathRoutePattern)) {
-    return "assessment";
+  if (
+    hash.match(backendHashRoutePattern) ||
+    hash.match(assessmentHashRoutePattern) ||
+    pathname.match(backendPathRoutePattern) ||
+    pathname.match(assessmentPathRoutePattern)
+  ) {
+    return "backend";
   }
   if (hash.match(debateHashRoutePattern) || pathname === "/" || pathname.match(debatePathRoutePattern)) {
     return "debates";
@@ -259,7 +266,7 @@ function renderShell(content) {
         ${renderPrimaryNavLink("debates", "/", "Debates", activeNavKey)}
         ${renderPrimaryNavLink("search", searchPath(), "Search", activeNavKey)}
         ${renderPrimaryNavLink("topics", topicsPath(), "Topics", activeNavKey)}
-        ${renderPrimaryNavLink("assessment", assessmentPath(), "Assessment", activeNavKey)}
+        ${renderPrimaryNavLink("backend", backendPath(), "Backend", activeNavKey)}
         <span class="external-sites" aria-label="External Sites">
           <span class="external-sites-label">External Sites</span>
           <span class="external-sites-links">
@@ -1020,49 +1027,49 @@ function renderResultPerson(person) {
   `;
 }
 
-function renderAssessment() {
-  setSeo(assessmentSeo());
+function renderBackend() {
+  setSeo(backendSeo());
 
   app.innerHTML = renderShell(`
     <main class="assessment-page">
       <section class="assessment-hero">
         <div>
-          <p class="eyebrow">Assessment</p>
-          <h1>The Codex Assessment Process</h1>
-          <p class="assessment-lede">Slugfester turns debate transcripts into scorecards by separating what each side actually said from how well each claim was supported, answered, and kept logically disciplined.</p>
+          <p class="eyebrow">Backend</p>
+          <h1>Backend</h1>
+          <p class="assessment-lede">This is the machinery behind Slugfester: transcripts are cleaned, quotes are anchored, arguments are paired by issue, and each move is scored against ordinary standards of logical coherence, evidential support, responsiveness, and fallacy avoidance.</p>
         </div>
-        <aside class="assessment-stamp" aria-label="Assessment model">
-          <span>AI assessment model</span>
+        <aside class="assessment-stamp" aria-label="Backend model">
+          <span>Backend model</span>
           <strong>${escapeHtml(assessmentModel)}</strong>
-          <p>Scores are estimates, not verdicts. They summarize argument quality under conventional standards of coherence, evidence, burden of proof, and fallacy avoidance.</p>
+          <p>The backend produces analytic estimates, not verdicts. A score describes how the reasoning performs in the transcript, not whether a worldview is finally true.</p>
         </aside>
       </section>
 
       <section class="assessment-principles" aria-labelledby="assessment-principles-heading">
         <div class="section-heading">
-          <p class="eyebrow">Core test</p>
-          <h2 id="assessment-principles-heading">What gets rewarded</h2>
+          <p class="eyebrow">Inputs</p>
+          <h2 id="assessment-principles-heading">What the backend reads</h2>
         </div>
         <div class="principle-grid">
-          ${renderAssessmentPrinciple("Coherence", "The claim has stable terms, a visible inference, and no hidden contradiction between its premises and conclusion.")}
-          ${renderAssessmentPrinciple("Evidence", "The speaker gives reasons a listener can inspect: data, textual support, historical context, definitions, or a clear explanatory model.")}
-          ${renderAssessmentPrinciple("Rebuttal quality", "The response engages the strongest live objection rather than changing the subject, repeating the thesis, or attacking a weaker paraphrase.")}
-          ${renderAssessmentPrinciple("Burden discipline", "The side making the stronger claim carries the matching burden and does not require the opponent to disprove an unsupported possibility.")}
+          ${renderAssessmentPrinciple("Transcript ground", "The transcript is the evidential floor. The backend may condense wording for readability, but quoted material must remain traceable to what was actually said.")}
+          ${renderAssessmentPrinciple("Debate frame", "The motion, central question, speakers, roles, time ranges, and source notes are captured so every local score is judged against the live dispute.")}
+          ${renderAssessmentPrinciple("Argument units", "Claims and rebuttals are grouped by issue rather than by every interruption, allowing readers to compare like with like across the two columns.")}
+          ${renderAssessmentPrinciple("Reference layer", "Fallacy and bias labels are added only when they explain a specific weakness, then routed through local context pages before external references.")}
         </div>
       </section>
 
       <section class="assessment-flow" aria-labelledby="assessment-flow-heading">
         <div class="section-heading">
-          <p class="eyebrow">Workflow</p>
-          <h2 id="assessment-flow-heading">From transcript to scorecard</h2>
+          <p class="eyebrow">Pipeline</p>
+          <h2 id="assessment-flow-heading">How a debate becomes a scorecard</h2>
         </div>
         <ol class="process-steps">
-          <li><span>01</span><strong>Capture and clean the transcript.</strong><p>The source transcript is preserved as the grounding material. Filler can be trimmed, but direct quotations are not invented.</p></li>
-          <li><span>02</span><strong>Identify the live question.</strong><p>The motion or central dispute is made explicit, because a clever point can still score poorly if it does not answer the debate question.</p></li>
-          <li><span>03</span><strong>Extract representative quotes.</strong><p>Each side gets short quotes that encapsulate its position. These quotes anchor the reader before the scoring begins.</p></li>
-          <li><span>04</span><strong>Segment by argumentative movement.</strong><p>The debate is divided into topical sections, then opposing moves are aligned by issue rather than by every interruption.</p></li>
-          <li><span>05</span><strong>Score claims and rebuttals.</strong><p>Each argument receives a numerical score based on logic, relevance, evidential support, responsiveness, and fallacy pressure.</p></li>
-          <li><span>06</span><strong>Write critique popovers.</strong><p>Every ◉ opens a focused critique explaining what worked, what failed, and why the score follows from that balance.</p></li>
+          <li><span>01</span><strong>Ingest the source.</strong><p>YouTube captions or supplied transcripts are cleaned lightly, timestamped, and marked with source notes so readers know what material was assessed.</p></li>
+          <li><span>02</span><strong>Map the debate.</strong><p>The backend identifies the motion, recurring topics, speaker roles, side labels, and representative quotes that best encapsulate each position.</p></li>
+          <li><span>03</span><strong>Pair the exchanges.</strong><p>Sections are organized around argumentative movement: one side's claim, the other side's answer, and the issue that connects them.</p></li>
+          <li><span>04</span><strong>Score the reasoning.</strong><p>Each move is scored for relevance, warrant strength, evidence, internal consistency, burden discipline, and responsiveness to objections.</p></li>
+          <li><span>05</span><strong>Attach critiques.</strong><p>The ◉ popovers give the fuller diagnosis: what was strong, what was missing, and how any fallacy or bias affected the score.</p></li>
+          <li><span>06</span><strong>Publish indexes.</strong><p>The same data powers clean debate pages, timestamped YouTube links, search filters, topic cards, and fallacy or bias reference pages.</p></li>
         </ol>
       </section>
 
@@ -1072,40 +1079,40 @@ function renderAssessment() {
           <h2 id="assessment-rubric-heading">How the numbers read</h2>
         </div>
         <div class="score-band-list">
-          ${renderScoreBand("90-100", "Exceptional", "Clear, relevant, well-supported, and resilient under the obvious rebuttals.", 96)}
-          ${renderScoreBand("80-89", "Strong", "Persuasive overall, with limited gaps or uncertainties that do not threaten the main inference.", 86)}
-          ${renderScoreBand("70-79", "Solid", "Coherent and relevant, but compressed, under-sourced, or only partly developed.", 76)}
-          ${renderScoreBand("60-69", "Mixed", "Understandable, but dependent on weak warrants, speculative links, or incomplete replies.", 66)}
-          ${renderScoreBand("50-59", "Weak", "Noticeable misframing, missing evidence, or poor engagement with the actual objection.", 56)}
-          ${renderScoreBand("<50", "Defective", "Fallacious, irrelevant, self-undermining, or unsupported at the point that matters.", 42)}
+          ${renderScoreBand("90-100", "Exceptional", "A clear, relevant, well-supported move that anticipates the strongest obvious replies and survives them.", 96)}
+          ${renderScoreBand("80-89", "Strong", "A persuasive argument or rebuttal with minor gaps, compressed support, or uncertainty that does not defeat the main point.", 86)}
+          ${renderScoreBand("70-79", "Solid", "A coherent and relevant move that helps the side's case but needs more evidence, precision, or follow-through.", 76)}
+          ${renderScoreBand("60-69", "Mixed", "A partially useful move that depends on thin warrants, speculative links, or an incomplete answer to the objection.", 66)}
+          ${renderScoreBand("50-59", "Weak", "A move with serious missing evidence, misframing, evasiveness, or poor contact with the opponent's actual claim.", 56)}
+          ${renderScoreBand("<50", "Defective", "A move that is irrelevant, circular, self-undermining, or fallacious at the point where the argument needs support.", 42)}
         </div>
       </section>
 
       <section class="assessment-examples" aria-labelledby="assessment-examples-heading">
         <div class="section-heading">
           <p class="eyebrow">Examples</p>
-          <h2 id="assessment-examples-heading">What changes a score</h2>
+          <h2 id="assessment-examples-heading">What the backend notices</h2>
         </div>
         <div class="example-grid">
           ${renderAssessmentExample(
-            "A cumulative case",
-            "Example move: a speaker links cosmology, fine-tuning, moral realism, and resurrection into one case.",
-            "This can score well when each strand is stated modestly and the conclusion is framed as cumulative probability. It drops when the speaker treats several individually controversial premises as if their mere accumulation removes the need to defend them."
+            "Quote anchoring",
+            "Example move: a speaker says a premise is 'obvious' while the transcript shows no supporting argument nearby.",
+            "The score drops because assertion is not the same as warrant. The backend privileges quotes that expose the actual inferential step, so readers can see whether the speaker gave evidence or merely named a conclusion."
           )}
           ${renderAssessmentExample(
-            "A sharper rebuttal",
-            "Example move: an opponent says the causal premise is being projected beyond observed physical contexts.",
-            "That is stronger than saying, 'That is just faith,' because it names the disputed warrant. The score rises when the rebuttal explains why the premise fails and how that affects the conclusion."
+            "Rebuttal contact",
+            "Example move: an opponent answers a cosmological argument by disputing whether observed causation can be projected beyond physical contexts.",
+            "That scores better than dismissing the case as 'just faith' because it identifies the live warrant. The backend rewards replies that touch the actual hinge of the argument."
           )}
           ${renderAssessmentExample(
-            "A fallacy label",
-            "Example move: a conclusion is smuggled into a premise, then presented as independently established.",
-            "This may receive a begging-the-question tag only if the circularity is doing real argumentative work. Slugfester avoids using fallacy names as decorative insults."
+            "Fallacy pressure",
+            "Example move: a conclusion is smuggled into a premise and then presented as independently established.",
+            "A begging-the-question tag appears only when the circularity does real work. The backend does not use fallacy labels as decorative insults; the label must explain why the reasoning weakens."
           )}
           ${renderAssessmentExample(
-            "A bias label",
-            "Example move: a speaker highlights only examples that favor a prior worldview while ignoring nearby counterexamples.",
-            "This may receive a confirmation-bias note when the pattern affects the evaluation of evidence, not merely because the speaker has a point of view."
+            "Bias pressure",
+            "Example move: a speaker highlights favorable cases while ignoring nearby counterexamples that would complicate the same standard.",
+            "A confirmation-bias note appears when selective attention changes the evidence assessment. Having a worldview is not itself the problem; filtering the data through it can be."
           )}
         </div>
       </section>
@@ -1113,12 +1120,12 @@ function renderAssessment() {
       <section class="assessment-detail" aria-labelledby="assessment-detail-heading">
         <div>
           <p class="eyebrow">Limits</p>
-          <h2 id="assessment-detail-heading">What the score is not</h2>
+          <h2 id="assessment-detail-heading">What the backend does not claim</h2>
         </div>
         <div class="assessment-detail-copy">
-          <p>A Slugfester score is not a measure of truth, moral worth, charisma, audience reaction, or whether the assessor personally agrees with a conclusion. It is a compact judgment about the argument as performed in the transcript.</p>
-          <p>That means a side can defend a true claim poorly, or make a false claim with unusual logical discipline. The score follows the reasoning on the page: definitions, warrants, evidence, rebuttal, and the absence or presence of fallacies and cognitive-bias-shaped overreach.</p>
-          <p>Named fallacies and biases link through local Slugfester reference pages first. Those pages define the concept, explain why it appears in that debate context, and then point to the deeper external LogFall or CogBias entry.</p>
+          <p>The backend does not decide which religion, philosophy, or political position is true. It scores the performance of the argument in the transcript: definitions, evidence, warrants, rebuttals, and logical discipline.</p>
+          <p>A true claim can be defended badly, and a false claim can be argued with unusual care. Scores therefore track argumentative execution, not moral worth, charisma, crowd reaction, or agreement with the conclusion.</p>
+          <p>Named fallacies and biases are routed through Slugfester reference pages first. Those pages give the basic definition, explain the debate-specific occurrence, link back to the source debate, and then point to LogFall or CogBias for deeper external treatment.</p>
         </div>
       </section>
     </main>
@@ -1672,7 +1679,9 @@ function route() {
     hash.match(searchHashRoutePattern) || window.location.pathname.match(searchPathRoutePattern);
   const topicsMatch =
     hash.match(topicsHashRoutePattern) || window.location.pathname.match(topicsPathRoutePattern);
-  const assessmentMatch =
+  const backendMatch =
+    hash.match(backendHashRoutePattern) ||
+    window.location.pathname.match(backendPathRoutePattern) ||
     hash.match(assessmentHashRoutePattern) ||
     window.location.pathname.match(assessmentPathRoutePattern);
   const referenceMatch =
@@ -1685,8 +1694,8 @@ function route() {
     renderSearch();
   } else if (topicsMatch) {
     renderTopics();
-  } else if (assessmentMatch) {
-    renderAssessment();
+  } else if (backendMatch) {
+    renderBackend();
   } else if (referenceMatch) {
     const sourceDebateId =
       referenceMatch[3] || new URLSearchParams(window.location.search).get("debate") || "";
@@ -1717,6 +1726,7 @@ function shouldHandleInternally(link) {
     !url.pathname.match(debatePathRoutePattern) &&
     !url.pathname.match(searchPathRoutePattern) &&
     !url.pathname.match(topicsPathRoutePattern) &&
+    !url.pathname.match(backendPathRoutePattern) &&
     !url.pathname.match(assessmentPathRoutePattern) &&
     !url.pathname.match(referencePathRoutePattern)
   ) {
@@ -1728,6 +1738,7 @@ function shouldHandleInternally(link) {
     debatePathRoutePattern.test(url.pathname) ||
     searchPathRoutePattern.test(url.pathname) ||
     topicsPathRoutePattern.test(url.pathname) ||
+    backendPathRoutePattern.test(url.pathname) ||
     assessmentPathRoutePattern.test(url.pathname) ||
     referencePathRoutePattern.test(url.pathname)
   );

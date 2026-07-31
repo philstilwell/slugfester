@@ -26,7 +26,7 @@ Landing-page design:
 - The LogFall and CogBias header links show short explanatory popovers on hover and keyboard focus.
 - The header includes a `Search` link to `/search/`.
 - The header includes a `Topics` link to `/topics/`, which groups debates by recurring topic.
-- The header includes an `Assessment` link to `/assessment/`, whose page title is `The Codex Assessment Process`.
+- The header includes a `Backend` link to `/backend/`, whose page title is `Backend`; `/assessment/` remains a backwards-compatible legacy route.
 - The landing intro includes a divider line followed by a ` | `-delineated list of unique current debate topics.
 - The debate list is capped at three columns on wide screens, then steps down responsively.
 - Landing-page debate card titles link directly to the debate assessment.
@@ -52,7 +52,7 @@ Design constraints:
 - Keep critique access marked with `◉`.
 - Keep the top scorecard compact; it is a summary, not a second hero.
 
-## Assessment Workflow
+## Debate Assessment Workflow
 
 1. Capture the transcript from YouTube or a transcript tool and note the source in `sourceNote`.
 2. Identify the motion or central question.

@@ -49,6 +49,10 @@ export function topicsPath() {
   return "/topics/";
 }
 
+export function backendPath() {
+  return "/backend/";
+}
+
 export function assessmentPath() {
   return "/assessment/";
 }
@@ -328,17 +332,18 @@ export function topicsSeo(debates = []) {
   };
 }
 
-export function assessmentSeo() {
+export function backendSeo({ legacy = false } = {}) {
   const description =
-    "A detailed explanation of how Slugfester turns debate transcripts into quote-forward AI scorecards, critique popovers, fallacy notes, and overall assessments.";
+    "A clear explanation of the Slugfester backend: how YouTube debate transcripts become quote-grounded scorecards, critique popovers, fallacy notes, bias notes, and topic indexes.";
 
   return {
-    title: pageTitle("The Codex Assessment Process"),
+    title: pageTitle("Backend"),
     description,
-    canonicalPath: assessmentPath(),
+    canonicalPath: backendPath(),
+    robots: legacy ? "noindex,follow" : DEFAULT_ROBOTS,
     lastmod: SITE_UPDATED_DATE,
     imagePath: DEFAULT_IMAGE,
-    imageAlt: "Slugfester assessment process for debate argument scorecards.",
+    imageAlt: "Slugfester backend process for debate argument scorecards.",
     type: "article",
     articleSection: "Methodology",
     modifiedTime: SITE_UPDATED_DATE,
@@ -348,12 +353,12 @@ export function assessmentSeo() {
       {
         "@context": "https://schema.org",
         "@type": "Article",
-        headline: "The Codex Assessment Process",
-        name: "The Codex Assessment Process",
+        headline: "Backend",
+        name: "Backend",
         description,
         dateModified: SITE_UPDATED_DATE,
-        mainEntityOfPage: absoluteUrl(assessmentPath()),
-        url: absoluteUrl(assessmentPath()),
+        mainEntityOfPage: absoluteUrl(backendPath()),
+        url: absoluteUrl(backendPath()),
         image: imageObject(),
         thumbnailUrl: absoluteUrl(DEFAULT_IMAGE),
         inLanguage: SITE_LANGUAGE,
@@ -368,8 +373,9 @@ export function assessmentSeo() {
           url: SITE_URL
         },
         about: [
+          "AI debate scorecards",
           "argument analysis",
-          "debate transcript assessment",
+          "debate transcript backend",
           "logical coherence",
           "fallacy detection",
           "cognitive bias"
@@ -380,10 +386,14 @@ export function assessmentSeo() {
       },
       breadcrumbJsonLd([
         { name: SITE_NAME, path: "/" },
-        { name: "Assessment", path: assessmentPath() }
+        { name: "Backend", path: backendPath() }
       ])
     ]
   };
+}
+
+export function assessmentSeo() {
+  return backendSeo({ legacy: true });
 }
 
 export function referenceSeo(type, slug, reference) {
