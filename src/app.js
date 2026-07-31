@@ -228,7 +228,27 @@ function renderDebateNumber(debate) {
   `;
 }
 
+function currentPrimaryNavKey() {
+  const { hash, pathname } = window.location;
+  if (hash.match(searchHashRoutePattern) || pathname.match(searchPathRoutePattern)) return "search";
+  if (hash.match(topicsHashRoutePattern) || pathname.match(topicsPathRoutePattern)) return "topics";
+  if (hash.match(assessmentHashRoutePattern) || pathname.match(assessmentPathRoutePattern)) {
+    return "assessment";
+  }
+  if (hash.match(debateHashRoutePattern) || pathname === "/" || pathname.match(debatePathRoutePattern)) {
+    return "debates";
+  }
+  return "";
+}
+
+function renderPrimaryNavLink(key, href, label, activeKey) {
+  const active = key === activeKey;
+  return `<a class="primary-nav-link${active ? " active" : ""}" href="${escapeHtml(href)}"${active ? ' aria-current="page"' : ""}>${escapeHtml(label)}</a>`;
+}
+
 function renderShell(content) {
+  const activeNavKey = currentPrimaryNavKey();
+
   return `
     <header class="site-header">
       <a class="brand" href="/" aria-label="Slugfester home">
@@ -236,10 +256,10 @@ function renderShell(content) {
         <span class="brand-name">Slugfester</span>
       </a>
       <nav aria-label="Primary">
-        <a href="/">Debates</a>
-        <a href="${searchPath()}">Search</a>
-        <a href="${topicsPath()}">Topics</a>
-        <a href="${assessmentPath()}">Assessment</a>
+        ${renderPrimaryNavLink("debates", "/", "Debates", activeNavKey)}
+        ${renderPrimaryNavLink("search", searchPath(), "Search", activeNavKey)}
+        ${renderPrimaryNavLink("topics", topicsPath(), "Topics", activeNavKey)}
+        ${renderPrimaryNavLink("assessment", assessmentPath(), "Assessment", activeNavKey)}
         <span class="external-sites" aria-label="External Sites">
           <span class="external-sites-label">External Sites</span>
           <span class="external-sites-links">
