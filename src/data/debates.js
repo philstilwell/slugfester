@@ -40514,7 +40514,7 @@ export const debates = [
     summary:
       "Dirckx argues consciousness fits best in a God-centered account of persons; Goff argues panpsychism answers materialism without pointing to God.",
     sourceNote:
-      "Based on YouTube English-original captions for the Premier Unbelievable? upload, with the upload's chapter markers used as a rough guide. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the YouTube transcript for the Premier Unbelievable? upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -40926,7 +40926,7 @@ export const debates = [
     summary:
       "Horn and Bertuzzi defend theodicy and Christian hope; O'Connor and Schmid press evidential evil, animal suffering, and the cost of skeptical replies.",
     sourceNote:
-      "Based on YouTube English-original captions for the Alex O'Connor upload and its chapter markers. This is a panel-style discussion rather than a formal two-person debate; the side labels group the Catholic/Protestant and atheist/agnostic positions. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the YouTube transcript for the Alex O'Connor upload. This is a panel-style discussion rather than a formal two-person debate; the side labels group the Catholic/Protestant and atheist/agnostic positions. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -41435,7 +41435,7 @@ export const debates = [
     summary:
       "Schieber argues suffering favors naturalism over theism; Bertuzzi argues naturalism does not predict the data and that soul-building or skeptical theism blocks the inference.",
     sourceNote:
-      "Based on YouTube English-original captions for the Capturing Christianity upload and its chapter markers. The debate was a formal written exchange later orated for audio/video; captions are lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+      "Based on the YouTube transcript for the Capturing Christianity upload. The debate was a formal written exchange later orated for audio/video; the transcript is lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -42265,7 +42265,7 @@ export const debates = [
     summary:
       "Hernandez argues evil, rationality, and the soul presuppose God; Schieber argues naturalism better explains animal suffering, cosmic hostility, hiddenness, and theory simplicity.",
     sourceNote:
-      "Based on YouTube English-original captions for the Eric Hernandez upload and its chapter markers. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the YouTube transcript for the Eric Hernandez upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -42736,7 +42736,7 @@ export const debates = [
     summary:
       "Jones defends a C.S. Lewis-style view of hell as self-exile and resisted grace; O'Connor argues that belief formation, misinformation, and divine love make continued hell morally unstable.",
     sourceNote:
-      "Based on YouTube English-original captions for the Alex O'Connor upload and its chapter markers. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the YouTube transcript for the Alex O'Connor upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -43114,7 +43114,7 @@ export const debates = [
     summary:
       "McLatchie argues that public evidence for the resurrection and Scripture supports Christian faith; O'Connor argues that the sources are too uncertain and biblical morality undermines Christian authority.",
     sourceNote:
-      "Based on YouTube English-original captions for the Alex O'Connor upload and its chapter markers. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the YouTube transcript for the Alex O'Connor upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -43492,7 +43492,7 @@ export const debates = [
     summary:
       "Lennox argues that science points beyond reductionist naturalism to a personal Logos and historical resurrection; Dawkins argues that God is an unnecessary, unexplained, and anti-scientific addition to hard scientific questions.",
     sourceNote:
-      "Based on YouTube English-original automatic captions for the Larry Alex Taunton upload and its chapter markers. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the YouTube transcript for the Larry Alex Taunton upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -43893,7 +43893,7 @@ export const debates = [
     summary:
       "Horn argues that sufficient reason, contingency, act-potency, moral realism, and free will point to a necessary divine cause; O'Connor argues that animal suffering, quantum indeterminacy, and moral anti-realism undercut the case.",
     sourceNote:
-      "Based on YouTube English-original automatic captions for the Matt Fradd upload and its chapter markers. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the YouTube transcript for the Matt Fradd upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -44270,7 +44270,7 @@ export const debates = [
     summary:
       "Pine argues that God's self-disclosure is mediated through grace, history, creation, and patient formation; O'Connor argues that sincere seeking, religious geography, hell, and inherited fallenness make theism look arbitrary and unfair.",
     sourceNote:
-      "Based on YouTube English-original automatic captions for the Mass of the Ages upload and its chapter markers. This is a dialogue-style discussion rather than a formal debate; side labels track the Catholic and skeptical positions. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the YouTube transcript for the Mass of the Ages upload. This is a dialogue-style discussion rather than a formal debate; side labels track the Catholic and skeptical positions. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -44647,7 +44647,7 @@ export const debates = [
     summary:
       "Peterson argues that religious stories and God-language encode evolved moral heuristics and truth-seeking structures; Harris argues that dogma, revelation claims, and elastic God-language obstruct clearer secular moral realism.",
     sourceNote:
-      "Based on YouTube English-original automatic captions for the Pangburn upload and its chapter markers. This is a moderated live discussion rather than a strict formal debate; captions are lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+      "Based on the YouTube transcript for the Pangburn upload. This is a moderated live discussion rather than a strict formal debate; the transcript is lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -45017,7 +45017,7 @@ export const debates = [
     summary:
       "The Knechtles defend Christianity as a coherent gospel of grace, meaning, value, and divine justice; O'Connor presses the hardest biblical and doctrinal cases against that moral portrait.",
     sourceNote:
-      "Based on YouTube English-original automatic captions for the Alex O'Connor upload and the video's chapter markers. This is a long-form discussion rather than a strict formal debate; captions are lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+      "Based on the YouTube transcript for the Alex O'Connor upload. This is a long-form discussion rather than a strict formal debate; the transcript is lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -45453,7 +45453,7 @@ export const debates = [
     summary:
       "Craig defends the causal premise as a metaphysical principle that leads to a transcendent creator; Clifton grants a cosmic beginning for argument's sake while challenging the premise's scope and causal imagery.",
     sourceNote:
-      "Based on YouTube English-original automatic captions for the Capturing Christianity upload. This is an informal livestream discussion rather than a strict formal debate; captions are lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+      "Based on the YouTube transcript for the Capturing Christianity upload. This is an informal livestream discussion rather than a strict formal debate; the transcript is lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -45770,7 +45770,7 @@ export const debates = [
     summary:
       "Slick argues that moral absolutes need God's revealed character as their objective standard; Clifton argues that this either becomes circular or fails to outperform secular moral inquiry.",
     sourceNote:
-      "Built from YouTube English automatic captions for the BTWN News upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on the YouTube transcript for the BTWN News upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -46161,7 +46161,7 @@ export const debates = [
     summary:
       "Craig builds a cumulative case from cosmic origin, moral objectivity, and Jesus' resurrection; Law argues that overwhelming suffering makes a good God no more defensible than an evil God once mirrored defenses are allowed.",
     sourceNote:
-      "Built from YouTube English automatic captions for the ReasonableFaithOrg upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on the YouTube transcript for the ReasonableFaithOrg upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -46528,7 +46528,7 @@ export const debates = [
     summary:
       "Plantinga argues that unguided evolution under naturalism undercuts trust in cognition; Law argues that adaptive behavior and belief content are not so easily severed, and that theistic accounts face parity worries.",
     sourceNote:
-      "Built from YouTube English automatic captions for The Falling Messiah upload of the Unbelievable discussion. This is a radio discussion rather than a formal stage debate; captions are lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+      "Based on the YouTube transcript for The Falling Messiah upload of the Unbelievable discussion. This is a radio discussion rather than a formal stage debate; the transcript is lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -47229,7 +47229,7 @@ export const debates = [
     summary:
       "Boyce argues that Paul, James, external references, and family traditions point to a real first-century Jesus; Carrier argues that the earliest data are ambiguous, revelation-driven, and later mythicized.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Modern-Day Debate upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the YouTube transcript for the Modern-Day Debate upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -47589,7 +47589,7 @@ export const debates = [
     summary:
       "McLatchie argues that Paul's letters, Acts, Luke, and the Gospels point to a historical Jesus; Carrier argues that the earliest Pauline evidence remains compatible with a celestial mythic Christ.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Dr. Jonathan McLatchie upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the YouTube transcript for the Dr. Jonathan McLatchie upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -47925,7 +47925,7 @@ export const debates = [
     summary:
       "Hawkins defends libertarian agency and non-reductive idealism; Folley presses compatibilist, naturalist, and pragmatist questions about what freedom, truth, and inquiry actually do.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Unsolicited Advice upload. The exchange is a friendly philosophical discussion rather than a formal timed debate; captions are lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+      "Based on the YouTube transcript for the Unsolicited Advice upload. The exchange is a friendly philosophical discussion rather than a formal timed debate; the transcript is lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -48303,7 +48303,7 @@ export const debates = [
     summary:
       "MacDonald argues that Q, law reform, Josephus, and mimesis point to a mortal Jesus behind the myths; Carrier argues that Paul and the Gospels fit a revelatory Jesus hypothesis better.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the MythVision TV upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the YouTube transcript for the MythVision TV upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -48673,7 +48673,7 @@ export const debates = [
     summary:
       "Ehrman argues that early, multiple sources and Paul's contact with Jesus' associates make historicity overwhelmingly likely; Price argues that the sources are late, derivative, and compatible with a mythic origin.",
     sourceNote:
-      "Built from YouTube English-original automatic captions for the Bart D. Ehrman upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the YouTube transcript for the Bart D. Ehrman upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
     scoringNote:
       "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
     quotes: {
@@ -50904,6 +50904,314 @@ export const debates = [
           {
             text:
               "He sometimes speaks as though transferable public verification is the uniform standard for every rational belief, leaving the legitimate first-person evidential role of experience underexplained.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: "vela-dillahunty-transcendental-evidence-god-2020",
+    number: "143",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Tyler Vela vs Matt Dillahunty: Is There Good Evidence for God?",
+    label: "Transcendental logic and divine evidence",
+    date: "2026-07-31",
+    duration: "2 hr 17 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=kf0Us__r9SQ",
+    motion:
+      "Do laws of logic and other transcendental facts provide good evidence for a necessary personal God?",
+    summary:
+      "Vela argues that logic and objective transcendental facts require a necessary divine mind; Dillahunty argues that the grounding premise is unsupported and that personal warrant cannot replace publicly assessable evidence.",
+    sourceNote:
+      "Based on the YouTube transcript for the Modern-Day Debate upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God is the best explanation for these fundamental features of reality.",
+        context:
+          "Vela's positive case treats the laws of logic, rationality, and other transcendental facts as evidence for a necessary divine mind."
+      },
+      con: {
+        text: "What's the evidence that shows that the premise is true?",
+        context:
+          "Dillahunty accepts that logic is indispensable while disputing that it needs, or has been shown to have, a divine foundation."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Transcendental theism",
+        speaker: "Tyler Vela",
+        color: "teal"
+      },
+      con: {
+        name: "Evidential skepticism",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 62,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Logic as a Divine Ground",
+        timebox: "02:30-31:20",
+        score: {
+          pro: 68,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "02:30",
+              role: "Transcendental argument",
+              words:
+                "Vela argues that laws of logic are objective, timeless, immaterial preconditions of reasoning; naturalism and abstract objects cannot ground them, so a necessary personal mind is their best explanation.",
+              score: 68,
+              critique:
+                "Vela identifies a genuine philosophical question rather than pretending logic is an ordinary physical object. His account also has explanatory ambition: it connects logic's normativity, universality, and applicability to a rational source, and he distinguishes a deductive version from a more modest abductive one. The central weakness is the bridge from those features to a divine mind. Timelessness, objectivity, or indispensability do not by themselves establish that logical relations need causal enforcement, much less personal authorship. His dismissal of naturalist and abstract-object accounts arrives before a careful comparison of their strongest forms. The score is solid because the argument isolates an important metaphysical issue and offers a coherent theistic model, but its most consequential premise remains asserted rather than demonstrated.",
+              tags: []
+            },
+            con: {
+              time: "20:00",
+              role: "Discriminating-evidence standard",
+              words:
+                "Dillahunty says good evidence should be independently checkable and tied to a specific hypothesis; logical regularity does not by itself identify a particular God as its cause.",
+              score: 81,
+              critique:
+                "Dillahunty usefully separates a datum from the explanatory story attached to it. Everyone can employ logical principles, but the motion concerns whether that shared practice supports a particular divine cause. His demand for a hypothesis that distinguishes God from rival accounts therefore addresses the actual inference rather than denying logic's importance. He also allows that evidence comes in degrees and that testimony can count as evidence, which softens a simplistic verificationist reading. The limitation is that his ideal of repeatable, independent evidence is most natural for causal and empirical claims; broad metaphysical explanations may be compared partly by coherence, scope, and necessity. Still, Vela needs a reason that logic selects a person rather than another ontology. The score is strong for keeping that burden visible.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Necessary Truths and Abstract Objects",
+        timebox: "32:00-50:10",
+        score: {
+          pro: 59,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "36:20",
+              role: "Anti-Platonist challenge",
+              words:
+                "Vela says concepts such as non-contradiction make sense as truths in a mind, whereas an abstract law existing by itself is conceptually empty and cannot explain why reality conforms to it.",
+              score: 59,
+              critique:
+                "Vela presses a meaningful objection to a bare appeal to abstracta: merely naming a law of logic does not yet explain its modal authority or relation to concrete reasoning. His appeal to concepts in minds makes the intended theistic alternative intelligible to listeners and usefully asks what explanatory work an impersonal realm performs. Yet he moves too quickly from difficulty imagining an impersonal necessary relation to its incoherence. Mathematical and logical realists, nominalists, and structuralists offer several accounts of truth, description, and necessity that are not simply a Platonic realm acting causally on matter. A divine mind also inherits unanswered questions about why its thoughts are necessarily truth-tracking. The score is mixed because the challenge is philosophically live, but its elimination of alternatives is premature.",
+              tags: []
+            },
+            con: {
+              time: "33:00",
+              role: "Foundation-not-yet-shown objection",
+              words:
+                "Dillahunty treats logic as descriptive of how things are and says no one has shown that its necessary relations require a further foundation rather than simply being true.",
+              score: 85,
+              critique:
+                "Dillahunty makes the debate's key asymmetry explicit. He need not settle the ontology of logic before objecting that Vela has not established a demand for an ontological ground. His examples of identity, non-contradiction, and excluded middle show why logical reasoning can be used pragmatically and deductively without first locating a cause behind it. That is a sharp response to the claim that uncertainty about foundations warrants theism. The weakness is that calling logical principles descriptive leaves difficult questions about their necessity, counterfactual reach, and normativity only postponed. A committed naturalist may eventually owe more than pragmatic success. But Vela's positive case rises or falls on the extra grounding premise, so Dillahunty's restraint is dialectically appropriate. The score is very high for precise burden discipline.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Evidence, Falsifiability, and Signals",
+        timebox: "50:00-1:20:00",
+        score: {
+          pro: 58,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:06:45",
+              role: "Extreme-sign test",
+              words:
+                "Vela asks whether stars rearranging to say 'Matt, I'm Yahweh' would count as evidence, arguing that Dillahunty's demand for a further link to God risks making the standard unfalsifiable.",
+              score: 58,
+              critique:
+                "Vela's star-message hypothetical usefully stress-tests an evidential standard. A highly specified, apparently impossible signal would plainly increase the plausibility of intentional agency, so it is fair to ask what further inference would be warranted. He also rightly distinguishes a datum being evidence from a datum conclusively identifying every divine attribute. The weakness is that he presents Dillahunty's caution as if it were a refusal to count the signal as evidence, although Dillahunty expressly grants that it would count in favor of God. The remaining question is whether one extraordinary event establishes Yahweh rather than an unknown agent, deception, or a new natural phenomenon. The score is mixed because the thought experiment exposes a real calibration issue but overstates the skeptical reply.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Vela shifts between a signal counting as evidence for God and a signal being sufficient to identify the specific divine hypothesis, which Dillahunty keeps distinct."
+                }
+              ]
+            },
+            con: {
+              time: "1:00:00",
+              role: "Divine-demonstration challenge",
+              words:
+                "Dillahunty says a God could know what would convince each person and provide it; a star-message would be evidence, but its source and implications would still require assessment.",
+              score: 81,
+              critique:
+                "Dillahunty offers a more nuanced answer than a flat demand for laboratory proof. He grants that the proposed message would be evidence and then asks the proper abductive questions: what exactly does it establish, what alternatives remain, and why would a perfect communicator choose such an ambiguous route? This preserves proportional belief without requiring certainty. His hiddenness challenge also has force within Vela's theism, since an all-knowing God would know how to supply clear personal evidence. The limitation is that he sometimes treats God's capacity to persuade as though a demonstrative encounter must be morally or theologically expected. A theist can dispute that expectation. The score is strong because he accepts the datum while resisting an unjustified leap to a complete theology.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Private Warrant and Public Argument",
+        timebox: "1:20:00-1:31:30",
+        score: {
+          pro: 57,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:29:00",
+              role: "Personal-warrant reply",
+              words:
+                "Vela says an inner testimony of the Holy Spirit may give a believer sufficient warrant even when that experience cannot be demonstrated to another person, and says many people may have such warrant.",
+              score: 57,
+              critique:
+                "Vela makes a defensible distinction between first-person warrant and evidence transferable to an audience. Many ordinary experiences are known directly only by the experiencer, and it would be overreaching for Dillahunty to declare every claimed revelation irrational from outside. This is a useful correction to an overly public model of all belief. The difficulty is relevance to the stated motion. A private experience may explain why its recipient believes, but Vela offers no independent way to tell veridical revelation from misinterpretation, wishful thinking, or conflicting revelations. Aggregating billions of inaccessible experiences does not cure that problem, because their alleged contents diverge. The score is mixed: personal force is plausible, while public evidential value remains very limited.",
+              tags: []
+            },
+            con: {
+              time: "1:24:00",
+              role: "Intersubjective-limit distinction",
+              words:
+                "Dillahunty grants that direct revelation might warrant the recipient, but says someone else's revelation is hearsay to him and cannot establish God for people who did not have it.",
+              score: 85,
+              critique:
+                "Dillahunty draws the most productive distinction in this part of the debate. He does not claim to inspect Vela's mind or prove that revelation could never warrant its recipient. Instead, he says that a private encounter cannot automatically carry its warrant into a public argument. His comparison with ordinary private experience makes the point without calling believers dishonest. The limitation is that he remains agnostic about how a perfectly clear experience would be assessed even by its recipient, so his account can sound more skeptical than explanatory. Yet that incompleteness does not defeat the local objection: the audience lacks access to Vela's experience, and Vela invokes it in a debate about shared evidence. The score is very high for a charitable and directly relevant boundary.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Testing the Proposed Foundation",
+        timebox: "1:48:00-2:00:00",
+        score: {
+          pro: 61,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "2:04:15",
+              role: "Alternative-grounding condition",
+              words:
+                "Vela says a non-arbitrary natural explanation for transcendental facts, or one that undercuts his moral argument, would substantially change his view; otherwise God remains the necessary precondition for rationality.",
+              score: 61,
+              critique:
+                "Vela commendably names a route by which he would reconsider his conclusion. His willingness to connect logic and morality to a comparative explanatory challenge is more informative than simply announcing certainty. The problem is the condition's structure: a rival must first provide a satisfactory natural ground for every relevant fact before the theistic ground is treated as defeasible. That assumes the disputed premise that each fact requires the sort of grounding Vela posits and that failure to supply a rival favors God. It also classifies potential alternatives as arbitrary before examining them in detail. The score is solid-low because the answer displays some openness, but it does not provide an independent test of the divine explanation itself.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The proposed defeater assumes that transcendental facts need the kind of metaphysical ground Vela assigns to God, which is the central disputed premise."
+                }
+              ]
+            },
+            con: {
+              time: "1:52:00",
+              role: "Possibility-space objection",
+              words:
+                "Dillahunty says Vela's model makes no-God worlds impossible by definition, so it cannot compare divine and non-divine explanations until it first shows that a foundation is required.",
+              score: 82,
+              critique:
+                "Dillahunty accurately identifies how a transcendental argument can close the comparison too early. If God is stipulated as the necessary condition of logic, asking whether logic could obtain without God becomes meaningless within the model, but that does not show the stipulation true. His request to establish that a further foundation is necessary restores the actual contested premise and prevents the conclusion from being protected by definition. The limitation is that he sometimes speaks as though logical usefulness alone makes questions about modality or ontology idle. Vela is entitled to ask a meta-level question even if his answer fails. Still, Dillahunty's response is strong because it distinguishes internal coherence from evidence that outsiders should accept the system. The score is high for precision and relevance.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Revelation and Divine Hiddenness",
+        timebox: "2:08:20-2:12:05",
+        score: {
+          pro: 55,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "2:08:35",
+              role: "Cosmos-of-evidence reply",
+              words:
+                "Vela rejects the hidden-God premise, saying God is revealed through Christ, creation, moral law, and transcendental facts, though he does not claim God gives every person a saving direct revelation.",
+              score: 55,
+              critique:
+                "Vela gives a recognizably Calvinist clarification rather than merely evading the question. He distinguishes a universal obligation to know God from a promise that every person receives a Damascus-road encounter, and he gathers his proposed evidences into a cumulative account. That makes his theological position clearer. The weakness is explanatory tension: he first describes a cosmos of evidence that ought to lead any reasonable person to belief, then allows that God is not actively making himself directly known in a saving way to everyone. The account therefore needs a clearer explanation of why sincere, informed nonbelief persists and how the claimed evidence avoids ambiguity. The score is mixed because the distinction is meaningful, but it does not resolve the hiddenness challenge.",
+              tags: []
+            },
+            con: {
+              time: "2:10:30",
+              role: "Revelatory-goal challenge",
+              words:
+                "Dillahunty asks why a God who wants people to know he exists would not provide the kind of clear revelation that would achieve that aim for everyone.",
+              score: 77,
+              critique:
+                "Dillahunty turns the exchange into a straightforward expectation test. If a perfectly informed and powerful God wants universal recognition, then widespread nonbelief and the absence of unmistakable revelation are evidence requiring explanation. He also notices Vela's shift from God wanting everyone to know to everyone merely having an obligation to know. This is a fair pressure point because the distinction changes the original claim's force. The weakness is that the argument assumes universal epistemic disclosure is a divine aim and that stronger evidence would not compromise other goods or theological purposes. Vela's Calvinist account directly contests those assumptions, even if it does not make them attractive. The score is strong because the tension is real, though not a knockdown disproof of theism.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 62,
+        strengths: [
+          "Vela gives the affirmative a clear philosophical center by focusing on why logic, rationality, and moral normativity have the status they do.",
+          "He distinguishes direct, indirect, and first-person evidence, and his hypothetical signal exposes a real question about how skeptical standards should calibrate extraordinary data.",
+          "He states a substantive theistic account rather than treating a current gap in scientific explanation as sufficient by itself."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly treats the need for a metaphysical ground for logic as established, then uses the absence of an accepted rival ground to favor God, placing a disputed premise inside the test for alternatives.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "He sometimes conflates an unusual event being evidence for a generic supernatural agent with that event conclusively identifying the specific God of classical theism.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Dillahunty consistently distinguishes logic's practical and inferential role from the unshown claim that it must have a divine metaphysical ground.",
+          "He grants that a highly specific sign or direct revelation could count as evidence while carefully separating evidential support from confirmation of a detailed theology.",
+          "His distinction between personal warrant and publicly transferable evidence directly answers Vela's appeal to inner revelation without dismissing the experiencer's sincerity."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes lets the ideal of publicly repeatable, discriminating evidence sound like the uniform benchmark for rational belief, without fully developing how philosophical and first-person evidence should be assessed.",
             links: [
               {
                 label: "Equivocation",
