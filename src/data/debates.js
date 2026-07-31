@@ -51852,5 +51852,287 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "harris-dennett-free-will-2018",
+    number: "146",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Sam Harris vs Daniel Dennett: Does Free Will Exist?",
+    label: "Determinism, agency, and responsibility",
+    date: "2026-07-31",
+    duration: "1 hr 35 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=_J_9DKIAn48",
+    motion:
+      "Does determinism or indeterminism undermine free will and moral responsibility, or can reasons-responsive agency provide a compatibilist form of freedom worth preserving?",
+    summary:
+      "Harris argues that no one authors the causal conditions of thought and action; Dennett argues that self-control, responsiveness to reasons, and social accountability are the freedom that matters.",
+    sourceNote:
+      "Based on the YouTube transcript for the Scott Smith75 upload. This is a filmed philosophical conversation rather than a formally timed debate; the transcript is lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "You are not the first to know what you're about to think.",
+        context:
+          "Harris treats the unconscious arrival of thoughts and intentions as evidence that the conscious self does not originate its actions in the libertarian sense."
+      },
+      con: {
+        text: "The kind of free will worth wanting.",
+        context:
+          "Dennett defends free will as the practical capacity for self-control, deliberation, and reasons-responsive action, not metaphysical exemption from causation."
+      }
+    },
+    sides: {
+      pro: {
+        name: "No libertarian free will",
+        speaker: "Sam Harris",
+        color: "teal"
+      },
+      con: {
+        name: "Compatibilist free will",
+        speaker: "Daniel Dennett",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 78,
+      con: 84
+    },
+    sections: [
+      {
+        title: "What Free Will Is For",
+        timebox: "05:00-19:55",
+        score: {
+          pro: 78,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "19:20",
+              role: "Concept-preservation objection",
+              words:
+                "Harris says compatibilism may preserve useful capacities, but it changes the subject because people care about whether they genuinely author thoughts and actions rather than merely operate effectively.",
+              score: 78,
+              critique:
+                "Harris identifies the most important challenge to compatibilism: a reconstructed freedom can preserve deliberation, self-control, and responsibility while leaving untouched the first-person sense that one truly originates a choice. His Atlantis analogy makes that concern accessible. If the extraordinary feature people care about is absent, calling a nearby capacity free will can sound like conceptual substitution. The weakness is that popular intuitions about authorship are neither uniform nor automatically authoritative. Many people also care about avoiding coercion, considering reasons, and developing character, which Dennett's account captures directly. Harris shows why the disagreement is not merely verbal, but he does not establish that libertarian authorship is the concept philosophy must preserve. The score is strong for diagnosis, though the proposed standard remains contestable.",
+              tags: []
+            },
+            con: {
+              time: "15:25",
+              role: "Reasons-responsive agency account",
+              words:
+                "Dennett defines free will as the graduated capacity to recognize reasons, regulate conduct, learn, make commitments, and act without coercive takeover, regardless of determinism.",
+              score: 87,
+              critique:
+                "Dennett gives a rich positive account rather than merely dismissing libertarian intuitions. His control-theory framing distinguishes a responsible adult from a reflex, a coerced person, or someone whose capacities are impaired. The focus on reasons, self-control, competence, and the ability to make and honor commitments explains why freedom matters in law and ordinary life. It also avoids the unhelpful idea that random indeterminism would confer authorship. The limitation is Harris's central semantic worry: this account may vindicate agency and responsibility while not preserving the folk sense of ultimate origination. Dennett acknowledges that people may miss the magical residue, but regards it as dispensable. The score is very high because the reconstruction is clear, practical, and responsive, even though its relabeling strategy remains controversial.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Authorship and Unconscious Choice",
+        timebox: "20:00-35:20",
+        score: {
+          pro: 80,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "20:15",
+              role: "Unconscious-source argument",
+              words:
+                "Harris says thoughts, intentions, and spoken words appear from unconscious processes before conscious awareness can inspect or author them, making libertarian choice psychologically illusory.",
+              score: 80,
+              critique:
+                "Harris grounds the abstract issue in a familiar phenomenological fact: one cannot consciously select a thought before it occurs, and spontaneous speech often arrives before reflective awareness catches up. This is a strong challenge to a picture of a separate conscious self standing outside causal processes and initiating each mental event. He also correctly notes that indeterminism would add chance, not ownership. The weakness is that unconscious generation does not by itself exclude authorship by the whole person. Skills, commitments, habits, and long-term plans can shape later automatic responses without being consciously rehearsed at every millisecond. Harris therefore undermines a homuncular model of agency more decisively than every account of self-governance. The score is high because the experiential pressure is genuine, but its metaphysical reach is limited.",
+              tags: []
+            },
+            con: {
+              time: "26:10",
+              role: "Degrees-of-freedom reply",
+              words:
+                "Dennett says agents must deliberate as if options are open and can possess many controlled degrees of freedom, even if an exact replay of the universe would reproduce one result.",
+              score: 76,
+              critique:
+                "Dennett explains why decision-making need not require metaphysical escape from causation. An agent has to model alternatives, weigh reasons, and direct attention toward possible actions; that practical openness is part of what makes deliberation work. His chess-program example also shows how a deterministic system may retain sophisticated, controllable alternative capacities. The weakness is that moving from nearby counterfactual variation to an exact replay changes the issue Harris wants to press. Saying an agent would act differently after a tiny alteration does not show that the agent, with every condition held fixed, could have done otherwise. Dennett's account gives a defensible functional sense of freedom, but it does not fully answer the incompatibilist intuition. The score is solid because the distinction is useful, though partly stipulative.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Control, Luck, and Brain Tumors",
+        timebox: "39:30-52:45",
+        score: {
+          pro: 83,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "41:05",
+              role: "Universal-exculpation argument",
+              words:
+                "Harris argues that fuller neurophysiology would reveal every action as shaped by genes, environment, and prior causes, making ordinary wrongdoing a matter of luck rather than ultimate self-authorship.",
+              score: 83,
+              critique:
+                "Harris develops his strongest ethical argument by starting with a clear exculpatory case. A brain tumor can explain violent behavior without making the person a fitting target for retribution; Harris asks why a complete causal history should not extend that same insight to every person. The point exposes how much blame depends on information we lack about development, circumstance, and brain state. The weakness is the inference from causal explanation to global exculpation. A condition can explain an action while leaving intact the person's capacities to understand reasons, respond to sanctions, and regulate conduct. Harris anticipates practical accountability, but he does not show that causal embeddedness erases every meaningful responsibility distinction. The score is high because the argument presses luck and moral attitude seriously, though its generalization remains debated.",
+              tags: []
+            },
+            con: {
+              time: "48:10",
+              role: "Control-theory rebuttal",
+              words:
+                "Dennett says people cannot control genes or circumstances but can control behavior within them, like a sailor steering through wind and water, and can cultivate reliable self-control over time.",
+              score: 84,
+              critique:
+                "Dennett sharply identifies a hidden overreach in Harris's argument. Control never means causing every condition of action; it means responding effectively to conditions one did not choose. The sailor analogy makes this ordinary point vivid, and his account of moral education explains why self-control can be socially and personally developed. That gives responsibility a causal role rather than treating it as a metaphysical honorific. The limitation is that the analogy assumes the relevant controller already exists with stable aims and capacities, while Harris is asking how that controller becomes the author of those features. Dennett answers with gradual self-formation, but that process too begins from unchosen material. The score is high because the rebuttal rescues an everyday, non-absolute form of control, although ultimate authorship remains unresolved.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral Lapses and Accountability",
+        timebox: "53:00-1:09:50",
+        score: {
+          pro: 77,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "54:05",
+              role: "Competence-and-luck paradox",
+              words:
+                "Harris says a highly competent person who suddenly fails, such as Tiger Woods missing an easy putt, seems most blameworthy by expectation yet least revealing of stable authorship because luck stands out.",
+              score: 77,
+              critique:
+                "Harris offers a subtle pressure point. When a normally reliable agent has an uncharacteristic lapse, the event can look less like the expression of a settled self and more like fatigue, distraction, or unchosen neural noise. That observation usefully separates a person's general competence from the causal story of one particular failure. The weakness is that responsibility often tracks role and foreseeable standards, not only whether an act expresses average character. A surgeon, judge, or golfer may owe special care precisely because others rely on their cultivated competence, including when conditions make error more likely. Harris's example therefore shows why punishment should be proportionate and humane, but not why responsibility dissolves. The score is strong for exposing the role of luck, though it overstates the paradox.",
+              tags: []
+            },
+            con: {
+              time: "56:15",
+              role: "Role-based responsibility reply",
+              words:
+                "Dennett says agents who advertise and cultivate important competence can rightly be judged more strictly when they fail, because others reasonably rely on their self-control and preparation.",
+              score: 82,
+              critique:
+                "Dennett gives a persuasive social account of why expectations matter. A person who has developed expertise, accepted a role, and invited reliance incurs responsibilities that are not erased merely because a lapse had contributing causes. His Supreme Court justice example makes clear why a serious deviation can be more troubling, not less, when public trust is at stake. He also leaves room for inquiry into fatigue, addiction, coercion, or other mitigating factors rather than treating all failure alike. The limitation is that role-based expectation explains why society reacts to a failure, but not whether retributive blame is deserved in Harris's deeper sense. Dennett's practical framework may support correction and accountability while leaving ultimate desert ungrounded. The score is high because it directly answers the normative function of competence.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Punishment, Reform, and Social Rules",
+        timebox: "1:00:00-1:14:20",
+        score: {
+          pro: 86,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "60:10",
+              role: "Consequentialist reconstruction",
+              words:
+                "Harris says contracts, rehabilitation, deterrence, and confinement can all remain justified by their effects on human flourishing without preserving the fiction of ultimate blameworthiness.",
+              score: 86,
+              critique:
+                "Harris makes an important constructive move: rejecting ultimate self-authorship need not mean abandoning contracts, social expectations, treatment, deterrence, or protection from dangerous people. By grounding those practices in future welfare and behavioral influence, he shows that compassion and public safety can coexist with a causal view of conduct. The example of a curable violent condition makes the moral advantage vivid: information should shift us from vindictive punishment toward prevention and reform. The limitation is that a purely consequentialist approach must still specify safeguards against excessive preventive control, instrumental punishment, and biased predictions of future risk. Harris gestures at flourishing rather than supplying those constraints. The score is very high because he avoids nihilistic implications and offers a humane alternative, even though its institutional details remain incomplete.",
+              tags: []
+            },
+            con: {
+              time: "64:10",
+              role: "Pragmatic-law account",
+              words:
+                "Dennett says law draws practical, revisable lines between excuse and responsibility to preserve mutual expectations, social trust, deterrence, and fair treatment without requiring absolute responsibility.",
+              score: 82,
+              critique:
+                "Dennett agrees with much of Harris's practical reform program and usefully clarifies that responsibility need not be absolute to be real. Legal systems already recognize coercion, incapacity, and mitigation while refusing to treat every causal influence as an excuse. His account explains why stable rules and predictable consequences can enable rather than merely restrict agency. The weakness is that he sometimes treats the social usefulness of a responsibility practice as enough to call it free will, which returns to Harris's concern about conceptual substitution. Pragmatic lines can be humane and effective yet still fail to capture the deeper question of whether anyone deserves blame independent of social benefit. The score is high because the legal model is nuanced and workable, though its philosophical label remains contested.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Prediction and Could Have Done Otherwise",
+        timebox: "1:16:00-1:34:35",
+        score: {
+          pro: 79,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "76:10",
+              role: "Predictive-neuroscience challenge",
+              words:
+                "Harris says sufficiently detailed prediction of a person's thoughts and actions before conscious awareness would reveal that the subject is not the first author of what appears in experience.",
+              score: 79,
+              critique:
+                "Harris's future-neuroscience thought experiment brings his phenomenological challenge into focus. If a device could reliably reveal an intention or sentence before the subject experiences deciding it, many people would feel their ordinary sense of authorship shaken. The case is useful because it separates conscious awareness from upstream neural processing and makes the causal story vivid. The weakness is that prediction need not imply alien control or negate authorship by the organism whose brain generates the action. A weather model can predict a storm without causing it; similarly, a predictor may track a person's deliberative system rather than replace it. Harris shows why libertarian self-creation is implausible, but he does not establish that meaningful agency disappears. The score is strong for intuitive force, though its conclusion outruns the analogy.",
+              tags: []
+            },
+            con: {
+              time: "83:35",
+              role: "Macro-authorship reply",
+              words:
+                "Dennett says skilled authorship works through trained processes that need not be consciously micromanaged, comparing spontaneous music and rapid athletic responses to planned, owned action.",
+              score: 85,
+              critique:
+                "Dennett gives the strongest reply to the prediction challenge by rejecting an implausibly narrow model of authorship. A musician can decide to alter a piece without selecting each note in advance, and an athlete can execute a rehearsed response too quickly for reflective narration. Those processes remain the person's because long-term practice, plans, and attention shape the system that produces them. This makes unconscious contribution compatible with agent-level control. The limitation is that ownership at the macro level can sound like a redescription of the causal system Harris denies anyone ultimately authored. Dennett does not eliminate that regress, but he argues that no practical conception of authorship requires doing so. The score is high because the examples directly explain how nonconscious processing can still count as skilled agency.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 78,
+        strengths: [
+          "Harris clearly distinguishes determinism, indeterminism, and ultimate self-authorship, showing why randomness would not rescue libertarian freedom.",
+          "His brain-tumor, development, and predictive-neuroscience examples expose the moral importance of luck and support a more humane approach to punishment.",
+          "He supplies a constructive account of deterrence, rehabilitation, and public safety instead of treating disbelief in free will as social nihilism."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly treats the absence of absolute self-creation as though it exhausted every meaningful sense of agency, control, and responsibility.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Dennett offers a detailed, naturalistic account of reasons-responsive control that explains why coercion, impairment, deliberation, and competence matter.",
+          "His control-theory, sailing, law, and skilled-performance examples show how agency can be causal and graded without requiring metaphysical exemption from the world.",
+          "He accepts moral education, mitigation, and legal revision while defending responsibility as a socially enabling practice rather than absolute desert."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes treats a useful reconstruction of deliberation and accountability as though it fully resolves Harris's concern about the ordinary experience of ultimate authorship.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
