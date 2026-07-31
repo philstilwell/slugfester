@@ -52416,5 +52416,271 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "baggett-dillahunty-moral-argument-2018",
+    number: "148",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "David Baggett vs Matt Dillahunty: The Moral Argument for God",
+    label: "Moral authority, God, and secular ethics",
+    date: "2026-07-31",
+    duration: "2 hr 02 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=YWeOWtmCoCs",
+    motion:
+      "Do objective moral facts, moral knowledge, moral transformation, and moral rationality make theism a better explanation than secular ethical theories?",
+    summary:
+      "Baggett argues that morality's categorical authority and its fourfold character give some abductive support to classical theism; Dillahunty argues that the moral phenomena need grounding and that God is not yet a justified explanatory candidate.",
+    sourceNote:
+      "Based on the YouTube transcript for the Capturing Christianity upload. This is a live philosophical discussion rather than a formally timed debate; the transcript is lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Morality, at least thus construed, gives us some reasons to believe in God.",
+        context:
+          "Baggett presents the moral argument as one modest contribution to a cumulative theistic case, rather than a deductive proof."
+      },
+      con: {
+        text: "It can serve as an answer for anything, but it serves as an explanation for nothing.",
+        context:
+          "Dillahunty argues that an unconstrained appeal to God cannot explain moral experience until the proposed being is independently supported."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theistic moral explanation",
+        speaker: "David Baggett",
+        color: "teal"
+      },
+      con: {
+        name: "Secular moral inquiry",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 73,
+      con: 83
+    },
+    sections: [
+      {
+        title: "Four Moral Phenomena and Candidate Explanations",
+        timebox: "18:36-38:11",
+        score: {
+          pro: 75,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "20:06",
+              role: "Abductive framework",
+              words:
+                "Baggett distinguishes moral facts, moral knowledge, moral transformation, and moral rationality, then argues that the best explanation may be a modest source of support for theism rather than a proof.",
+              score: 75,
+              critique:
+                "Baggett makes a defensible methodological retreat from the familiar deductive moral argument. He identifies four distinct phenomena, admits that an inference to the best explanation is weaker than deduction, and limits his conclusion to a possible evidential contribution. That modesty is especially valuable because he notes the bad-lot problem before relying heavily on abduction. The important weakness is that his candidate-selection rule remains thin. Saying that the evidence guides the candidates does not establish why classical theism, with its own large metaphysical commitments, starts alongside secular moral realism or natural accounts. Nor does the four-part list itself show that all four phenomena are independent data rather than different descriptions of moral life. The score is solid for clarity and restraint, but the comparison class needs firmer warrant.",
+              tags: []
+            },
+            con: {
+              time: "27:42",
+              role: "Candidate-admission challenge",
+              words:
+                "Dillahunty says an explanation must have demonstrated justification before it belongs in the candidate pool; otherwise, an argument for God risks presuming the very possibility it is meant to establish.",
+              score: 85,
+              critique:
+                "Dillahunty identifies the central epistemic risk cleanly: an explanation cannot gain force merely because the conclusion one wants is allowed into the candidate set. His invisible-elephant analogy is vivid, but the underlying demand is fair: establish why a hypothesized agent is credible before using it to explain data. He also notices that Baggett's conclusion is still ambitious even if probabilistic. The limitation is that candidate status need not require prior proof; explanatory success can itself be evidence for a hypothesis, provided it is independently intelligible and constrained. Dillahunty sometimes describes that reciprocal support as circular without separating vicious circularity from ordinary abductive confirmation. The score is high because he forces a necessary evidential standard, though not high enough to settle the permissible starting pool.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral Authority, Guilt, and Well-Being",
+        timebox: "43:36-60:25",
+        score: {
+          pro: 72,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "46:10",
+              role: "Phenomenology of obligation",
+              words:
+                "Baggett says that authoritative moral obligations are not mere preferences, and that guilt can sometimes disclose an objective condition of having done wrong.",
+              score: 72,
+              critique:
+                "Baggett accurately isolates the feature his argument needs: not merely common aversion to harm, but categorical, authoritative obligations that hold whether or not a person feels them. His clarification that guilt is illustrative rather than the sole evidence improves the presentation, and the child-torture example makes the target intelligible. Yet the inference from the phenomenology of guilt to an objectively binding condition remains weak. Guilt varies across people and cultures, can be produced by social learning, and can track mistaken norms; Baggett offers no discriminating test. His appeal works better as a report of robust moral experience than as evidence that a nonnatural moral law exists. The score is respectable for defining the disagreement sharply but reduced because the evidential bridge is asserted rather than supplied.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "The argument gives considerable evidential weight to felt authority and guilt even though their causal origin remains one of the disputed questions."
+                }
+              ]
+            },
+            con: {
+              time: "49:50",
+              role: "Conditional-objectivity account",
+              words:
+                "Dillahunty grounds moral reasoning in a chosen concern for well-being, then says consequences can be assessed objectively relative to that goal without treating guilt as proof of a universal law.",
+              score: 82,
+              critique:
+                "Dillahunty gives an alternative architecture: adopt well-being as a shared starting concern, then reason objectively about consequences and institutions without pretending the initial value is mind-independent. His examples of learned guilt, relationship agreements, and slavery expose why feeling guilty cannot establish a universal obligation. He is candid that the foundational goal is not derived from physics. The weakness is that this candor leaves his account conditional on a value that a cruel or indifferent person may reject. Calling later judgments objective is accurate only relative to the goal, whereas Baggett is pressing for categorical authority. That does not refute the secular view, but it means the reply partly changes the question under discussion. The score is strong for explanatory candor and counterexamples, with a deduction for the unresolved starting point.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Empathy and First Moral Principles",
+        timebox: "60:25-82:23",
+        score: {
+          pro: 80,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "65:51",
+              role: "Justification-explanation distinction",
+              words:
+                "Baggett argues that even an axiomatic moral principle can be immediately justified while still inviting a metaphysical explanation of why it is true and authoritative.",
+              score: 80,
+              critique:
+                "Baggett's distinction between epistemic justification and metaphysical explanation is strong. A moral claim can be immediately or axiomatically known without being ontologically self-explanatory, just as a basic truth can invite inquiry into what makes it true. That prevents the debate from collapsing into the mistaken rule that every justified belief needs inferential proof. He also raises a genuine challenge for strictly instrumental ethics: some judgments seem wrong even when no broader social cost is visible. The weakness is that Baggett treats the vividness of this appearance as stronger evidence for categorical duties than for rival moral realism, sentiment, or ideal-observer accounts. He identifies an explanatory question, but does not show why only a personal God can answer it. The score is high for conceptual clarity, lower for comparative support.",
+              tags: []
+            },
+            con: {
+              time: "70:14",
+              role: "Provisional-axioms reply",
+              words:
+                "Dillahunty says that starting from life, health, and reduced suffering can yield revisable moral systems, while the facts of human life explain why similar creatures would converge on similar values.",
+              score: 76,
+              critique:
+                "Dillahunty responds with an admirably modest secular strategy. He does not claim to have solved every hard case; instead he explains how provisional axioms such as life, health, and reduced suffering can be tested against their consequences for creatures like us. His response to posthumous wishes broadens the time horizon of harm beyond immediate effects. The weakness appears when he suggests that axioms tied to human conditions make further explanation unnecessary. Practical usefulness can justify adopting a starting point without showing that no metaphysical question remains about normativity. His cat response also translates animal harm into human interests, leaving Baggett's concern about nonhuman moral standing partly unanswered. The score is solid because Dillahunty supplies a workable method and welcomes revision, but it does not fully meet the categorical-duty challenge.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral Law, Naturalism, and Divine Goodness",
+        timebox: "82:23-99:20",
+        score: {
+          pro: 71,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "86:06",
+              role: "Theistic moral-law inference",
+              words:
+                "Baggett argues that if moral obligations are real, authoritative, and categorical, an all-loving God who made moral knowers offers a better explanation of their binding force.",
+              score: 71,
+              critique:
+                "Baggett states the core theistic inference: if moral obligations are real, authoritative, and categorical, an all-loving personal source may explain why they bind us and why we can apprehend them. He acknowledges that the argument will not move someone who denies that datum, and he distinguishes methodological naturalism from dismissive unbelief. That framing focuses the discussion on rival explanations. The flaw is that the account builds much of its explanatory success into the description of God: a being defined as perfectly good and creator of moral knowers is naturally suited to explain moral authority. The missing work is independent reason to think such a being exists and comparison with impersonal moral-realist theories. The score is decent for an honest conditional argument, not stronger because the proposed explanation remains underspecified.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The explanation relies on a perfectly good personal source before independently establishing that such a source is a live explanation rather than a feature built into the conclusion."
+                }
+              ]
+            },
+            con: {
+              time: "87:42",
+              role: "Methodological-naturalism reply",
+              words:
+                "Dillahunty distinguishes methodological from philosophical naturalism and says inquiry should not appeal to supernatural explanations until they are demonstrable enough to constrain the search.",
+              score: 86,
+              critique:
+                "Dillahunty's methodological-naturalism distinction is a disciplined reply. He does not equate naturalism with the dogma that nothing supernatural exists; he asks only that a proposed explanation be demonstrable enough to constrain inquiry. That criterion explains why an unconstrained God cannot simply be added whenever an issue is unresolved, and his warning about explaining a mystery with a larger mystery identifies a danger in omnibus explanations. The limitation is that demonstrability is asserted as the admission rule rather than defended against philosophical abductive practice. In science and ordinary reasoning, some hypotheses are introduced for explanatory virtues before direct confirmation, so the criterion cannot mean prior proof in every case. The score is high because the response blocks facile God-of-the-gaps reasoning, though it does not specify a fair threshold for metaphysical hypotheses.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Ultimate Reality, Bad Lots, and Closing",
+        timebox: "99:20-1:55:37",
+        score: {
+          pro: 76,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "111:23",
+              role: "Calibrated cumulative case",
+              words:
+                "Baggett concedes that the best explanation in a limited pool need not be likely true, then limits the moral argument to a possible marginal contribution within a larger theistic case.",
+              score: 76,
+              critique:
+                "Baggett handles the bad-lot objection with restraint. He concedes that a best explanation in a limited set does not entitle anyone to infer that theism is likely true, and calls it a marginal contribution to a cumulative case. This calibration suits abduction. He also names the fork: whether moral authority reveals something about ultimate reality. The remaining weakness is that his answer makes the moral argument increasingly conditional. If the evidence, candidate pool, and background probability of theism are unsettled, then saying it may give some reason for God communicates little about actual comparative strength. His later appeal to eminent writers gestures toward a literature rather than supplying the needed comparison. The score is good for intellectual honesty, but moderate because the advertised evidential payoff remains elusive.",
+              tags: []
+            },
+            con: {
+              time: "116:19",
+              role: "Hiddenness and evidential standard",
+              words:
+                "Dillahunty says a demonstrated God would be a fair candidate, but argues that persistent sincere disagreement and seemingly sufficient natural accounts make a nonnatural moral explanation unwarranted.",
+              score: 81,
+              critique:
+                "Dillahunty closes with the candidate problem and adds a hiddenness pressure: if a morally perfect God is the explanation, persistent sincere disagreement seems somewhat unexpected. His willingness to grant that a demonstrated God would be a fair candidate keeps the point from becoming a blanket refusal. He also reminds listeners that familiar moral observations need not justify a nonnatural conclusion. The weakness is that the hiddenness expectation is stated more than defended. A theist can propose relationship, freedom, or other reasons for ambiguity; simply finding those proposals unsatisfying does not establish that divine nonintervention is improbable. His closing adds a serious cumulative consideration without resolving the earlier disagreement about evidence. The score is strong for maintaining burden discipline and avoiding overclaim, with a modest reduction for the underdeveloped prediction.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 73,
+        strengths: [
+          "He replaces a brittle deductive slogan with a carefully limited abductive case and candidly concedes the bad-lot objection.",
+          "He distinguishes immediate moral justification from the separate metaphysical question of why moral truths or obligations obtain.",
+          "He clearly identifies categorical authority, rather than mere preference or social coordination, as the moral datum his theistic explanation is intended to address."
+        ],
+        blunders: [
+          {
+            text:
+              "He gives felt moral authority substantial evidential force before establishing that it tracks an independent moral law rather than a powerful human response to harm and social life.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 83,
+        strengths: [
+          "He consistently tests whether God has earned its place in the explanatory pool and distinguishes that question from a dogmatic denial of the supernatural.",
+          "He offers a constructive, revisable account of moral reasoning from shared concern for well-being, empathy, and the observable effects of action.",
+          "He exposes the difference between a felt sense of moral authority and a justified inference to a categorical, theistic moral law."
+        ],
+        blunders: [
+          {
+            text:
+              "He alternates between objective facts independent of opinion and objective assessments relative to a chosen well-being goal, which lets his account answer a weaker question than categorical moral authority.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
