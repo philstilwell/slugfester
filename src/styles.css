@@ -941,10 +941,17 @@ a {
 }
 
 .ranking-score {
-  min-width: 94px;
+  min-width: 0;
+  text-align: right;
+}
+
+.ranking-score-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 252px;
+  gap: 16px;
   padding-left: 16px;
   border-left: 1px solid var(--line);
-  text-align: right;
 }
 
 .ranking-score strong {
@@ -2724,15 +2731,20 @@ a {
     height: 48px;
   }
 
-  .ranking-score {
+  .ranking-score-pair {
     grid-column: 2 / -1;
-    grid-template-columns: minmax(0, 1fr) max-content;
-    align-items: baseline;
-    min-width: 0;
+    width: auto;
     padding: 8px 0 0;
     border-top: 1px solid var(--line);
     border-left: 0;
+  }
+
+  .ranking-score {
     text-align: left;
+  }
+
+  .ranking-score:last-child {
+    text-align: right;
   }
 
   .ranking-detail-grid {

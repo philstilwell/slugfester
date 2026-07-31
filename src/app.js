@@ -1122,9 +1122,15 @@ function renderRankingCard(person) {
             <strong>${escapeHtml(person.name)}</strong>
             <small>${escapeHtml(debateLabel)}</small>
           </span>
-          <span class="ranking-score ${scoreTone(Math.round(person.averageScore))}">
-            <small>Average score</small>
-            <strong>${escapeHtml(formatAverageScore(person.averageScore))}</strong>
+          <span class="ranking-score-pair">
+            <span class="ranking-score ${scoreTone(Math.round(person.averageScore))}">
+              <small>Interlocutor avg.</small>
+              <strong>${escapeHtml(formatAverageScore(person.averageScore))}</strong>
+            </span>
+            <span class="ranking-score ${scoreTone(Math.round(person.averageOpponentScore))}">
+              <small>Opponent avg.</small>
+              <strong>${escapeHtml(formatAverageScore(person.averageOpponentScore))}</strong>
+            </span>
           </span>
         </a>
         <details class="ranking-detail">
