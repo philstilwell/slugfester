@@ -590,6 +590,11 @@ export const interlocutorAvatars = [
     name: "Matthew Adelstein",
     src: `${avatarBasePath}/matthew-adelstein.webp`,
     aliases: ["Matthew Adelstein", "Matthew Edelstein", "Adelstein", "Edelstein"]
+  },
+  {
+    name: "Kenny Rhodes",
+    src: `${avatarBasePath}/kenny-rhodes.webp`,
+    aliases: ["Kenny Rhodes", "Ken Rhodes", "Rhodes"]
   }
 ];
 
