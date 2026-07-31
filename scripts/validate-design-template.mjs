@@ -36,6 +36,7 @@ requireIncludes("app landing hero", app, 'class="logo-showcase"');
 requireIncludes("app landing hero", app, 'src="/assets/slugfester-logo.jpg"');
 requireIncludes("app landing topics", app, 'class="topic-divider"');
 requireIncludes("app landing topics", app, 'class="topic-list"');
+requireIncludes("app landing topics", app, 'class="topic-list-link"');
 requireIncludes("app pagination", app, "const DEBATE_PAGE_SIZE = 84");
 requireIncludes("app pagination", app, "renderPagination");
 requireIncludes("app pagination", app, 'class="pagination"');
@@ -121,6 +122,7 @@ requireIncludes("primary nav", styles, "box-shadow: 0 7px 7px rgba(185, 31, 36, 
 requireIncludes("primary nav", styles, "color: #ffffff;");
 requireIncludes("landing topics", styles, ".topic-divider");
 requireIncludes("landing topics", styles, ".topic-list");
+requireIncludes("landing topics", styles, ".topic-list-link");
 requireIncludes("pagination", styles, ".pagination");
 requireIncludes("landing card links", styles, ".debate-title-link");
 requireIncludes("search page", styles, ".search-page");

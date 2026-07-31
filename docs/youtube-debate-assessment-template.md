@@ -27,7 +27,7 @@ Landing-page design:
 - The header includes a `Search` link to `/search/`.
 - The header includes a `Topics` link to `/topics/`, which groups debates by recurring topic.
 - The header includes a `Backend` link to `/backend/`, whose page title is `Backend`; `/assessment/` remains a backwards-compatible legacy route.
-- The landing intro includes a divider line followed by a ` | `-delineated list of unique current debate topics.
+- The landing intro includes a divider line followed by a ` | `-delineated, linked list of the current page's compact debate number and title labels.
 - The debate list is capped at three columns on wide screens, then steps down responsively.
 - Landing-page debate card titles link directly to the debate assessment.
 - Debate `label` values must be unique so landing cards, topic lists, and reference occurrence cards are unambiguous.

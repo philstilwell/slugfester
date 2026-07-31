@@ -379,7 +379,10 @@ function renderLanding() {
   const landingPager = paginatedItems(debates, DEBATE_PAGE_SIZE, landingState.page);
   const debateCards = landingPager.items.map(renderDebateCard).join("");
   const topicList = landingPager.items
-    .map((debate) => `${escapeHtml(debate.number)} ${escapeHtml(debate.label)}`)
+    .map(
+      (debate) =>
+        `<a class="topic-list-link" href="${escapeHtml(debatePath(debate))}">${escapeHtml(debate.number)} ${escapeHtml(debate.label)}</a>`
+    )
     .join('<span aria-hidden="true"> | </span>');
 
   app.innerHTML = renderShell(`
@@ -391,7 +394,7 @@ function renderLanding() {
           <p class="lede">Debate transcripts turned into side-by-side argument maps for ease of reader assessment.  Each claim and rebuttal receives AI scores, and every ◉ opens a deeper critique of the reasoning.</p>
           <div class="topic-divider" aria-hidden="true"></div>
           <div class="topic-list-wrap">
-            <p class="topic-list" aria-label="Topics mentioned in currently listed debates">${topicList}</p>
+            <p class="topic-list" aria-label="Debate assessments in the currently listed page">${topicList}</p>
             ${renderPagination({
               hrefForPage: (page) => landingUrl({ page }),
               itemLabel: "debates",

@@ -302,6 +302,19 @@ a {
   padding: 0 4px;
 }
 
+.topic-list-link {
+  color: #3d5f5a;
+  text-decoration: none;
+}
+
+.topic-list-link:hover,
+.topic-list-link:focus-visible {
+  color: var(--teal);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
 .pagination {
   display: flex;
   align-items: center;
