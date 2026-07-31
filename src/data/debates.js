@@ -53255,5 +53255,263 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "wood-dillahunty-god-secular-humanism-2020",
+    number: "151",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "David Wood vs Matt Dillahunty: God or Secular Humanism?",
+    label: "Moral obligation and human flourishing",
+    date: "2026-07-31",
+    duration: "2 hr 21 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=u2SjOn8arv8",
+    motion:
+      "Which gives a better foundation for ethics: God or secular humanism?",
+    summary:
+      "Wood argues that a creator God makes moral duties objectively real; Dillahunty argues that secular humanism offers a revisable, evidence-led ethical practice without requiring categorical moral facts.",
+    sourceNote:
+      "Based on the public YouTube transcript for the Modern-Day Debate upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God is the ultimate ground of moral good and moral obligation.",
+        context:
+          "Wood's case treats theism as the explanation for why moral duties and human value correspond to reality rather than merely to individual or social preference."
+      },
+      con: {
+        text: "We are the ones that are going to have to seek justice.",
+        context:
+          "Dillahunty's humanism grounds ethical work in human agency, empathy, evidence, and continual correction rather than in an asserted external imperative."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theistic moral realism",
+        speaker: "David Wood",
+        color: "teal"
+      },
+      con: {
+        name: "Secular humanism",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 61,
+      con: 87
+    },
+    sections: [
+      {
+        title: "What Counts as a Moral Foundation",
+        timebox: "01:46-25:18",
+        score: {
+          pro: 62,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:46",
+              role: "Skeptic's-dilemma opening",
+              words:
+                "Wood argues that robust moral obligation needs a real basis beyond feeling or social conditioning; skeptics who reject theistic arguments while affirming moral facts, he says, use inconsistent standards.",
+              score: 62,
+              critique:
+                "Wood begins with a real metaethical pressure: practical condemnation can seem to invoke more than private dislike, and an account of moral knowledge should explain why its judgments deserve confidence. He also distinguishes value, obligation, responsibility, and improvement, giving the topic useful contours. But he sets the standard by assuming secular humanists seek categorical objective moral facts, then compares a caricatured atheist response of 'we just know' with the program Dillahunty actually defends. That rules out conditional, intersubjective, and naturalistic approaches before assessing them. Nor does the opening establish that a creator is good or communicates duties. The score is mixed because the question is important, while the framing narrows the motion too quickly.",
+              tags: []
+            },
+            con: {
+              time: "14:09",
+              role: "Scope and humanist framework",
+              words:
+                "Dillahunty defines secular humanism as an evidence-led effort to improve human life: values grow from human needs and interests, are tested by experience, and remain open to correction.",
+              score: 87,
+              critique:
+                "Dillahunty usefully separates atheism, which by itself is not an ethical system, from secular humanism, which has aims, methods, and published principles. He candidly grants that the universe supplies no categorical command to value well-being, then shows how shared interests, physical consequences, empathy, education, and inquiry can guide better and worse choices. That makes his answer directly responsive to a question about an ethical foundation rather than metaphysical certainty. The limitation is that he begins with human flourishing as the operative aim without fully resolving conflict among incompatible conceptions of flourishing or a dissenter who rejects it. Still, this is a strong opening because it supplies a workable decision process and exposes the need for Wood to specify a theistic system, not merely invoke God.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Conditional Obligations and the Personal Case",
+        timebox: "25:30-42:03",
+        score: {
+          pro: 55,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "29:40",
+              role: "Conditional-duty challenge",
+              words:
+                "Wood argues that if moral rules bind only people who choose human flourishing, someone who refuses that goal has no moral reason not to commit even extreme violence.",
+              score: 55,
+              critique:
+                "Wood identifies the hardest problem for a purely goal-relative ethic: an agent may refuse the shared aim, and social disapproval alone may not create a categorical duty. His personal history makes the challenge vivid and forces Dillahunty to clarify whether humanist obligations are merely voluntary. Yet the inference outruns what Dillahunty said. A conditional account can still judge actions by their foreseeable effects, organize collective restraint, and treat refusal as a threat to others; it need not declare violence morally neutral. Wood also lets a highly unusual personal case carry too much argumentative weight. The score is low-mid because the objection targets a genuine gap, but it repeatedly substitutes atheism and personal pathology for the secular-humanist account under discussion.",
+              tags: []
+            },
+            con: {
+              time: "33:54",
+              role: "Foundation and specification reply",
+              words:
+                "Dillahunty replies that Wood has not shown how a generic God yields ethical principles, while secular humanism openly states goals, methods of revision, and ways to assess consequences.",
+              score: 88,
+              critique:
+                "Dillahunty sharply returns the discussion to its announced comparison. He does not need to prove secular humanism yields an external command in order to show that it offers clearer aims and correction procedures than an undefined God concept. His point that a foundation must include usable principles, not merely a proposed being, is especially strong because Wood's opening had not identified a religion, revelation, or derivation of duties. The weakness is that describing humanism as a system does not by itself establish that its selected aim has universal authority; clarity and truth are different virtues. Even so, Wood chose the broader motion and repeatedly relies on generic theism, so the burden-of-specification response is decisive and earns a high score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Human Fallibility and Social Learning",
+        timebox: "42:45-1:07:20",
+        score: {
+          pro: 63,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "42:45",
+              role: "Obedience and atrocity challenge",
+              words:
+                "Wood cites the Milgram experiment and twentieth-century atrocities to argue that ordinary people can override concern for others, so an assumed pursuit of well-being is too fragile to ground morality.",
+              score: 63,
+              critique:
+                "Wood is right that ethical theories must reckon with conformity, self-interest, propaganda, and the ease with which people rationalize harm. The Milgram example is relevant evidence that stated concern for others can be overridden, and it presses Dillahunty to explain more than ordinary goodwill. But it is a challenge to moral implementation, not a demonstration that secular humanism lacks foundations or that theism supplies better safeguards. Wood's historical catalogue also treats complex regimes as if their atrocities straightforwardly show what people aimed at, rather than examining institutions, incentives, and ideology. The score is moderate because human fallibility is a serious problem for humanism, but the comparative conclusion requires evidence that Wood does not provide.",
+              tags: []
+            },
+            con: {
+              time: "46:00",
+              role: "Institutional humanist reply",
+              words:
+                "Dillahunty says humanism responds to conformity and cruelty through evidence, empathy, education, and institutions that reveal harmful consequences and reduce manipulation.",
+              score: 83,
+              critique:
+                "Dillahunty gives the best practical answer to Wood's behavioral challenge. Rather than claiming people are naturally benevolent, he treats conformity research as information a moral culture can use: teach people about manipulation, improve judgment, and build norms that make cooperation safer. He also distinguishes an account's core aim from flawed historical applications, which blocks the easy move from atrocities to a refutation of humanism. The limitation is that he mostly asserts that fuller information will expose destructive programs. Real conflicts over welfare, rights, risk, and distribution can persist even among sincere, informed participants. Nonetheless, the proposal identifies learning mechanisms that are visible and revisable, while Wood offers no comparably reliable theistic mechanism for preventing moral failure.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Image of God and the Cost of Vagueness",
+        timebox: "1:08:13-1:27:29",
+        score: {
+          pro: 57,
+          con: 91
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:10:00",
+              role: "Conversion-based moral realism",
+              words:
+                "Wood says conversion changed his view of people from accidental organisms to image-bearers with real rights, making moral obligation and his own moral defect intelligible.",
+              score: 57,
+              critique:
+                "Wood's account matters as testimony about moral transformation. It illustrates why a theistic picture of human dignity can be psychologically powerful and why he thinks moral claims are discovered rather than invented. He also correctly notes that a worldview may need room to call a damaged conscience defective rather than merely unusual. But one conversion cannot establish a general moral foundation, especially when the claimed change has other plausible psychological and social explanations. More importantly, the argument shifts from generic theism to distinctively Christian covenantal commands only after Dillahunty asks what follows from being created by God. The score remains modest because the experience is sincere and relevant, while the inference from transformation to objective moral truth is unsupported.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Wood moves between a generic theistic ground of morality and the distinctively Christian covenantal commands that would make the view action-guiding."
+                }
+              ]
+            },
+            con: {
+              time: "1:14:03",
+              role: "Specification challenge",
+              words:
+                "Dillahunty asks why divine creation or the image of God entails a prohibition on killing, pressing Wood's covenant answer against biblical commands to kill Midianites.",
+              score: 91,
+              critique:
+                "Dillahunty isolates the central missing warrant with unusual precision. A creator's existence, even a creator with power over creatures, does not by itself entail that human life is inviolable or explain which commands are binding. His Midianite question exposes the gap between Wood's image-of-God claim and the scriptural material Wood invokes when describing Christian duties. The challenge is not that no Christian answer exists; covenant theology and arguments about divine authority could be developed. Its weakness is rhetorical impatience, which leaves little room to examine those answers charitably. Still, Wood repeatedly declines to give a full Christian ethic while using its conclusions, so Dillahunty rightly identifies a decisive burden the affirmative has not met.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Altruism, Moral Progress, and the Closing",
+        timebox: "1:29:01-2:20:18",
+        score: {
+          pro: 65,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:31:03",
+              role: "Undetected-wrongdoing challenge",
+              words:
+                "Wood argues that a self-interested person who expects to escape detection has no reason, on Dillahunty's view, to forgo a harmful act that appears to benefit them.",
+              score: 65,
+              critique:
+                "Wood raises a classic and worthwhile pressure point: practical morality must explain why an agent should reject a harmful act when punishment, reputation, and immediate social feedback seem absent. That question exposes a limitation of reducing every ethical reason to short-term payoff. Yet he construes Dillahunty's broad, informed self-interest as a license for isolated private gains and repeatedly treats a negligible example as causally consequence-free. Humanist concerns about character, reciprocity, uncertainty, and the norms one's choices help sustain can matter even when detection is unlikely. Wood again does not show that divine belief solves the same motivational problem. The score is solid but limited because the thought experiment is relevant, while its application is overdrawn.",
+              tags: []
+            },
+            con: {
+              time: "1:43:25",
+              role: "Revisable practical foundation",
+              words:
+                "Dillahunty closes by grounding justice in human responsibility: empathy, evidence, education, and continual revision are the available means for improving shared life.",
+              score: 86,
+              critique:
+                "Dillahunty's closing gives the clearest answer to the motion. It presents secular humanism as a practical, corrigible framework: people identify shared harms and benefits, test policies against evidence, debate conflicts, and revise their norms when they learn better. He is also appropriately clear that an asserted God cannot improve that framework until its existence, character, and relevant commands are demonstrated. The limitation is philosophical rather than practical. His account makes ethical authority depend on human aims and relations, so it does not answer Wood's demand for duties that bind every possible agent regardless of concern for flourishing. But Dillahunty has never promised that kind of morality, and he shows why it is not required for ethical governance. The score is high for clarity, responsiveness, and usable guidance.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 61,
+        strengths: [
+          "He squarely raises the challenge of why moral judgment should be more than personal preference, social conditioning, or conditional coordination.",
+          "He presses a meaningful hard case for humanism: how to reason with an agent who rejects shared welfare or expects to escape ordinary accountability.",
+          "His conversion account makes clear why the image of God can function as a powerful moral motivation and diagnosis of moral failure."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly shifts from a generic God as the alleged ground of morality to Christian covenantal commands when asked how that ground yields concrete duties, without supplying the missing derivation.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 87,
+        strengths: [
+          "He distinguishes atheism from secular humanism and supplies a clear account of the latter's aims, methods, and revisability.",
+          "He repeatedly forces the comparison back to the announced motion by asking how a generic God produces identifiable moral principles or resolves disagreement.",
+          "He gives a practical account of moral improvement through empathy, evidence, education, institutions, and willingness to revise error."
+        ],
+        blunders: [
+          {
+            text:
+              "His use of obligation shifts between a practical civic expectation and a genuine moral requirement, leaving no answer for a sincere dissenter.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
