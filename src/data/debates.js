@@ -49278,5 +49278,267 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "price-craig-resurrection-historical-analogy-1999",
+    number: "137",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Robert Price vs William Lane Craig: Did Jesus Rise From the Dead?",
+    label: "Resurrection, historical analogy, and evidence",
+    date: "2026-07-31",
+    duration: "2 hr 27 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=Pba-YNVWaa0",
+    motion:
+      "Do the earliest Christian sources establish burial, an empty tomb, appearances, and resurrection belief such that God raising Jesus best explains the evidence?",
+    summary:
+      "Craig argues that four early facts make divine resurrection the best explanation, while Price challenges the sources, historical analogy, and whether a miracle explains anything.",
+    sourceNote:
+      "Based on the YouTube transcript for The Debate It upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "The New Testament documents establish four facts concerning Jesus' fate.",
+        context:
+          "Craig's case first identifies a cumulative historical claim, then argues that divine resurrection best explains it."
+      },
+      con: {
+        text: "No historical inference is possible unless the historian assumes a basic analogy.",
+        context:
+          "Price argues that miracle traditions must be assessed against ordinary historical experience and comparable narratives."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Resurrection case",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "Historical-analogy critique",
+        speaker: "Robert Price",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 79,
+      con: 74
+    },
+    sections: [
+      {
+        title: "Consensus and the Four Facts",
+        timebox: "01:27-32:37",
+        score: {
+          pro: 78,
+          con: 70
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:27",
+              role: "Cumulative historical framework",
+              words:
+                "Craig says the New Testament establishes Jesus' burial, empty tomb, postmortem appearances, and the disciples' resurrection belief, and says these claims command broad scholarly support.",
+              score: 78,
+              critique:
+                "Craig starts with a clear, testable structure: identify four historical claims, then ask for their best explanation. That is much better than assuming a miracle and reading the texts backward from it. His appeal to broad scholarly support can legitimately signal that the claims deserve attention, and he goes on to offer reasons for each. The weakness is that consensus language arrives before the detailed case and sometimes carries more rhetorical force than evidential force. Several proposed facts, especially the empty tomb, remain substantially disputed even among nonconfessional scholars. A consensus cannot settle the quality, independence, or interpretation of the sources. The score is strong because the framework is disciplined and relevant, but it needs the subsequent evidence rather than scholars' agreement to bear the argument.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "The stated scholarly majority is used to increase confidence before the underlying source arguments have been assessed in the exchange."
+                }
+              ]
+            },
+            con: {
+              time: "20:24",
+              role: "Independence-from-consensus objection",
+              words:
+                "Price says that a majority of scholars does not determine truth and urges listeners to examine the historical issues rather than defer to academic consensus.",
+              score: 70,
+              critique:
+                "Price is right that majority agreement does not turn a historical conclusion into a fact. His appeal to independent scrutiny usefully checks a debate style in which named scholars and consensus can become shortcuts for source analysis. He also identifies a fair distinction between asking what most specialists believe and asking why their evidence warrants it. The weakness is that he spends most of this opening attacking Craig's apologetic commitments and alleged motives rather than testing the burial, tomb, appearance, and belief claims one by one. That move may explain why he distrusts Craig, but it does not show that the proposed evidence fails. The score is mixed: the methodological reminder is sound, while its delivery diverts attention from the live historical burden.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The opening shifts from Craig's four historical claims to Craig's religious motivation without yet showing that any particular claim is false or unsupported."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Historical Analogy and Pagan Parallels",
+        timebox: "30:40-42:10",
+        score: {
+          pro: 79,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "39:12",
+              role: "Contextual disanalogy rebuttal",
+              words:
+                "Craig says the ancient stories Price cites are diverse and lack a causal connection to first-century Palestinian Jewish belief in Jesus' resurrection.",
+              score: 79,
+              critique:
+                "Craig makes the right initial demand of a comparative argument: similar motifs do not establish dependence, and a comparison must respect the Jewish setting of the earliest Jesus movement. His distinctions among crop-cycle myths, apotheosis stories, disappearance tales, and emperor cults prevent the word resurrection from doing all the work. He also reasonably asks what mechanism would make Galilean Jews infer a bodily resurrection from pagan stories they may not have endorsed. The weakness is that he sometimes treats absence of direct borrowing as if it answered Price's broader genre claim. Price need not prove that disciples copied Hercules to argue that vanished-body and appearance stories were recognizable literary patterns. The score is strong because Craig exposes a missing causal bridge, but it only partly addresses the comparative challenge.",
+              tags: []
+            },
+            con: {
+              time: "36:39",
+              role: "Genre-and-analogy challenge",
+              words:
+                "Price argues that ancient hero biographies include vanished bodies, postmortem appearances, and initially doubtful followers, so the Gospel resurrection stories may belong to a familiar theological genre.",
+              score: 81,
+              critique:
+                "Price raises a substantial methodological challenge by placing the Gospel narratives beside ancient stories of ascended heroes and postmortem appearances. The comparison does not merely point to a superficial word match; it asks whether an empty body site, an appearance, and initial skepticism can function as established storytelling devices. That is relevant evidence against treating the Gospel form as transparently journalistic. The weakness is calibration. Ancient comparisons differ in date, social setting, narrative purpose, and content, and Price does not show that these particular texts caused or fully explain early Christian belief. Similarity can lower an inference from genre to event without eliminating every historical core. The score is high because the genre question is well aimed, though the conclusion should remain probabilistic rather than categorical.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Paul and the Appearance Tradition",
+        timebox: "41:07-54:47",
+        score: {
+          pro: 86,
+          con: 67
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "42:10",
+              role: "Textual-authenticity defense",
+              words:
+                "Craig argues that 1 Corinthians 15:3-11 is present in every manuscript, quoted early, and structurally necessary to Paul's argument for resurrection.",
+              score: 86,
+              critique:
+                "Craig's answer to the interpolation proposal is one of his strongest moves. He gives several independent kinds of pressure: unanimous surviving manuscript evidence, early patristic use, the passage's grammatical connections to its context, and its role in Paul's argument about resurrection. That combination properly places the burden on an excision theory to supply more than discomfort with the result. Craig also distinguishes Paul's revelation language in Galatians from receiving tradition about historical claims, which is a plausible reading. The limitation is that no surviving manuscript reaches the earliest decades, so later unanimity cannot logically rule out an early alteration. Still, Price offers no concrete textual break or transmission evidence. The score is very high because Craig identifies the central evidential asymmetry clearly and directly.",
+              tags: []
+            },
+            con: {
+              time: "49:06",
+              role: "Interpolation-and-vision alternative",
+              words:
+                "Price treats 1 Corinthians 15:3-11 as a later creed and says that reports of visions, including large groups, do not establish a bodily resurrection.",
+              score: 67,
+              critique:
+                "Price makes two fair cautions. Extant copies are later than Paul, so manuscript unanimity is not absolute proof against interpolation; and an experience reported as a vision does not automatically establish a bodily return from death. His modern vision examples help separate sincerity from verification. The weakness is that his positive interpolation theory is under-argued. Calling a formula a creed does not make it late, and the absence of the five hundred in the Gospels is not good evidence that Paul could not have known the tradition. He also moves too quickly from the possibility of visionary experience to a general explanation of this particular evidence. The score is below solid because the cautions matter, but the proposed textual reconstruction lacks commensurate support.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The Gospels' omission of the five hundred is used to support the passage's lateness, although an omission does not establish that conclusion."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Burial, Belief, and Explanation",
+        timebox: "02:25-2:26:04",
+        score: {
+          pro: 80,
+          con: 75
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "02:25",
+              role: "Cumulative evidence and likelihood case",
+              words:
+                "Craig links early burial and tomb traditions, appearance testimony, and transformed belief, then says the relevant question is how likely that evidence would be if God had not raised Jesus.",
+              score: 80,
+              critique:
+                "Craig presents the best version of a cumulative case rather than relying on one Gospel detail. He identifies early Pauline tradition, recurring burial and tomb narratives, appearance testimony, and the need to explain a surprising resurrection conviction among Jews. His closing likelihood question is also useful: a good rival account should address the evidence's alleged pattern, not merely label a miracle unusual. The weakness is that several links are more contested than he lets on. Paul does not explicitly narrate Joseph's tomb or the women, source layers are reconstructed, and transformed conviction establishes sincerity more readily than truth. Natural alternatives may be imperfect without making divine agency more likely. The score is strong for organized cumulative reasoning, with a meaningful discount for disputed warrants and unquantified comparative likelihoods.",
+              tags: []
+            },
+            con: {
+              time: "2:15:42",
+              role: "Legendary-source and explanatory objection",
+              words:
+                "Price says Gospel narratives rich in marvels do not establish Joseph's burial or an empty tomb, and calls a miracle explanation an attempt to explain an unknown by a larger unknown.",
+              score: 75,
+              critique:
+                "Price gives the skeptical alternative real work. He correctly notes that a narrative's assertion of Joseph's burial or a missing body is not self-authenticating, particularly when the same sources contain theological and miraculous material. His challenge to miracle as a completed explanation also presses Craig to justify divine action rather than merely announce it. The weakness is that he often treats a legendary cast as permission to discard every specific tradition, rather than weighing source elements separately. Calling divine agency mysterious does not show it is explanatorily empty if its background premises are true. Price also supplies only broad analogies for the movement's survival, not a detailed reconstruction of the earliest evidence. The score is solid because he identifies important burdens, but his alternative remains incomplete.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 79,
+        strengths: [
+          "Craig gives the debate a disciplined evidential architecture, distinguishing the four proposed facts from the separate claim that resurrection best explains them.",
+          "His response to the interpolation of 1 Corinthians 15 is the clearest exchange, combining manuscript, contextual, and argumentative considerations.",
+          "He presses a genuine explanatory question: a rival account must address the rise and shape of early resurrection belief, not merely reject a miracle."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly leaned on scholarly consensus and named authorities in ways that risked making agreement carry more weight than the disputed source-level arguments.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          },
+          {
+            text:
+              "His conclusion that natural explanations have failed treated the absence of a decisive rival account as stronger support for divine resurrection than the contested source base justifies.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 74,
+        strengths: [
+          "Price insists that miracle reports require source criticism and historical comparison, not deference to a text's religious authority or a scholarly majority.",
+          "His genre comparison and vision examples supply real reasons to distinguish narrative form and sincere experience from verified bodily resurrection.",
+          "He raises an important explanatory-standard question by refusing to treat an appeal to miracle as self-interpreting historical evidence."
+        ],
+        blunders: [
+          {
+            text:
+              "His opening devotes extensive space to Craig's evangelical commitments, which does not directly test the four historical claims under dispute.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "His interpolation proposal relies heavily on what later sources omit and on a late-creed intuition without supplying proportionate textual evidence.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
