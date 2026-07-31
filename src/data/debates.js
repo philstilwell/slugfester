@@ -48658,5 +48658,315 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "ehrman-price-historical-jesus-mythicism-2016",
+    number: "135",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Bart Ehrman vs Robert Price: Did Jesus Exist?",
+    label: "Historical Jesus, mythicism, and textual evidence",
+    date: "2026-07-31",
+    duration: "2 hr 34 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=GzjYmpwbHEA",
+    motion:
+      "Did a first-century Jewish preacher named Jesus exist behind the Christian traditions, or did Christianity develop from mythic and scriptural materials without such a person?",
+    summary:
+      "Ehrman argues that early, multiple sources and Paul's contact with Jesus' associates make historicity overwhelmingly likely; Price argues that the sources are late, derivative, and compatible with a mythic origin.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Bart D. Ehrman upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Jesus of Nazareth is one of the best attested Palestinian Jews",
+        context:
+          "Ehrman's central case is cumulative: Paul, several Gospel traditions, and early Christian contacts make a historical Jesus the ordinary historical explanation."
+      },
+      con: {
+        text: "Q, M, and L are theoretical, purely hypothetical",
+        context:
+          "Price's central posture is that source-critical reconstructions and late narrative traditions cannot establish an earlier historical referent."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Historical Jesus",
+        speaker: "Bart Ehrman",
+        color: "teal"
+      },
+      con: {
+        name: "Jesus mythicism",
+        speaker: "Robert Price",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 86,
+      con: 73
+    },
+    sections: [
+      {
+        title: "Attestation and Independence",
+        timebox: "13:26-53:56",
+        score: {
+          pro: 87,
+          con: 74
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "13:26",
+              role: "Cumulative attestation case",
+              words:
+                "Ehrman says Jesus is among the best-attested first-century Palestinian Jews, citing several Gospel traditions, oral sources, Aramaic material, and Paul's earlier letters.",
+              score: 87,
+              critique:
+                "Ehrman's opening cumulative case uses the right historical question: not whether a source is flawless, but whether several early streams make a mundane person's existence probable. He concedes that the Gospels are problematic and then identifies relevant distinctions among Mark, Matthew, Luke, John, oral traditions, Aramaic traces, and Paul. That avoids treating any single Gospel episode as proof. The weakness is that the degree of independence and the dating of underlying traditions are argued rather than directly observed. Q, M, L, and Aramaic retroversions are methodological inferences, so the rhetoric that Jesus is exceptionally attested can outrun its secure base. The score remains high because cumulative, critically qualified attestation is substantial evidence for basic existence.",
+              tags: []
+            },
+            con: {
+              time: "53:22",
+              role: "Source-critical challenge",
+              words:
+                "Price calls Q, M, and L theoretical, purely hypothetical sources and says their independence cannot simply be assumed as a building block for historicity.",
+              score: 74,
+              critique:
+                "Price identifies a genuine pressure point in Ehrman's source map. Q, M, and L are not extant documents, and source criticism should not be converted into a stack of independent eyewitness-like testimonies. His reminder that Thomas, Peter, and other noncanonical texts may depend on the canonical Gospels is also methodologically useful. The weakness is that Price treats hypothetical reconstruction as near-disqualification. Historical models often infer lost sources from patterned agreements, and showing that another literary relationship is possible does not erase all evidential value. His analogy to a fictive paper trail assumes deliberate invention where ordinary transmission and redaction could also account for it. The score is solid because the caution is warranted, but it does not overturn Ehrman's cumulative case.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Paul, James, and Crucifixion",
+        timebox: "20:32-64:20",
+        score: {
+          pro: 89,
+          con: 73
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "22:45",
+              role: "Pauline historical anchors",
+              words:
+                "Ehrman says Paul depicts Jesus as a Jewish teacher with a mother, Davidic descent, disciples, a brother named James, and an earthly crucifixion.",
+              score: 89,
+              critique:
+                "Ehrman's Pauline argument is his most effective evidence because it does not depend on accepting later miracle narratives. He grounds it in letters generally dated before the Gospels and highlights the personal contact claim: Paul met Cephas and James the Lord's brother. The ordinary reading of brother, the references to Jewish descent and birth, and crucifixion language together give a historical-Jesus hypothesis real textual purchase. The weakness is that each phrase has been disputed, and a cumulative argument can seem stronger than any individual passage. Still, Price must supply less natural readings across several texts, not merely note that Paul omits many biographical details. The score is very high because these are early, relevant data that directly bear on the motion.",
+              tags: []
+            },
+            con: {
+              time: "55:16",
+              role: "Revelatory-Christ reading",
+              words:
+                "Price says Paul does not describe an execution by Pilate or the Sanhedrin and reads the rulers or archons as celestial powers in a mythic drama.",
+              score: 73,
+              critique:
+                "Price gives the Pauline silence argument its strongest form by focusing on what Paul does and does not say. Paul rarely narrates an earthly ministry, names Pilate, or links the crucifixion to a detailed trial; Price rightly asks why a historical biography is not rhetorically deployed more often. He also notices that archons can have cosmic uses in early Christian language. The weakness is that his celestial reading requires a background chronology that is poorly evidenced for Paul's period and must reinterpret several mundane-sounding statements at once. Occasional letters need not repeat familiar stories, but the silence remains a legitimate probabilistic consideration. The score is respectable for surfacing a real ambiguity, yet lower because the positive mythic reconstruction is under-supported.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Paul's omissions are asked to support a celestial-Jesus model, although omission alone does not establish that model."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Mythmaking and Historical Cores",
+        timebox: "11:19-72:59",
+        score: {
+          pro: 84,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "11:19",
+              role: "Legend is not nonexistence",
+              words:
+                "Ehrman argues that stories shaped by divine-savior and miracle patterns do not show that the person beneath them never existed, invoking Augustus as a comparison.",
+              score: 84,
+              critique:
+                "Ehrman makes an important logical separation between legendary embellishment and nonexistence. Augustus can be presented as divinely born, exalted, and worthy of worship without historians concluding that he was fictional; similar narrative shaping therefore cannot alone settle Jesus' status. The move is especially fair because Ehrman does not defend the miracles. The weakness is comparative calibration. Augustus has administrative, epigraphic, and literary attestation of a kind Jesus lacks, so the analogy establishes only the limited point that myth does not entail invention. It cannot carry the stronger conclusion that a historical core is likely in this particular case. The score is high because it blocks an invalid inference, though it still needs the independent source case to do the positive work.",
+              tags: []
+            },
+            con: {
+              time: "41:09",
+              role: "Core-subtraction challenge",
+              words:
+                "Price asks what survives when miracle stories are reduced to ordinary events and argues that bland reconstructed episodes give people little reason to preserve or enlarge them.",
+              score: 78,
+              critique:
+                "Price's challenge is vivid and probes a real historical-method problem. If an account's memorable content is miracle, healing, or cosmic drama, simply subtracting the supernatural does not automatically reveal a remembered event underneath. His examples force Ehrman's side to explain why a banal kernel would circulate and acquire elaborate form. The weakness is that Ehrman explicitly rejects this subtraction method. A historian can assess teachings, social setting, embarrassment, and multiple tradition without claiming that every miracle story conceals a mundane version. Price therefore scores a useful warning against rationalized Gospel retellings, but not a decisive criticism of the more selective method Ehrman says he uses. The score is solid because the methodological caution is valuable and clearly expressed.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Josephus and External Silence",
+        timebox: "45:00-71:43",
+        score: {
+          pro: 81,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "69:49",
+              role: "Silence calibration",
+              words:
+                "Ehrman notes that Greek and Roman sources also fail to mention Caiaphas and Josephus, asking why Jesus should be expected in sources that ignore first-century Palestinian Jews.",
+              score: 81,
+              critique:
+                "Ehrman's reply properly calibrates the argument from external silence. A non-elite Jewish preacher from a provincial region is not the sort of figure that Greek and Roman writers reliably record, and even Caiaphas and Josephus are absent from the comparison set he names. This makes bare nonmention weak evidence against existence. The weakness is that Price's question has a conditional form: if Gospel-scale public miracles generated a movement quickly, the absence may need explaining. Ehrman answers that with a minimal rather than Gospel-scale Jesus, but then the wider effects of the movement still require an account. The score is strong because the comparison prevents overreading silence, while leaving its evidential weight open to reasonable disagreement.",
+              tags: []
+            },
+            con: {
+              time: "46:02",
+              role: "Josephus interpolation case",
+              words:
+                "Price argues that the shortened Testimonium Flavianum is still an awkward Josephus passage and proposes that its language and context better fit later Christian interpolation.",
+              score: 79,
+              critique:
+                "Price's Josephus discussion is more substantial than a generic claim that Christian scribes altered texts. He distinguishes the overtly Christian form from a reduced version, then raises stylistic and contextual questions about Pilate, the apologetic function of the passage, and Eusebius's later use. That is the right kind of challenge for a disputed text. The weakness is that he moves from possible interpolation and awkwardness to a comprehensive interpolation conclusion without demonstrating a specific transmission event. His claim that the reduced passage makes no sense for Josephus is contestable, especially if Josephus briefly explains a group known to his readers. The score is strong for targeted textual criticism, but limited by the speculative endpoint.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Celestial Rulers and Dating",
+        timebox: "74:07-77:27",
+        score: {
+          pro: 86,
+          con: 70
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "74:26",
+              role: "Contextual lexical rebuttal",
+              words:
+                "Ehrman answers that Paul uses rulers for governing authorities in Romans 13 and says later Gnostic texts cannot establish the background of letters written in the 50s.",
+              score: 86,
+              critique:
+                "Ehrman's cross-examination is sharp because it joins a lexical point to a chronological one. Romans 13 gives an obvious mundane use of rulers in Paul, making it risky to assign a cosmic meaning automatically in the crucifixion passage. More importantly, he asks Price to justify importing later Gnostic redeemer myths as the interpretive key for first-century letters. Price can reasonably point to Jewish antecedents and scholarly disagreement about dating, but the surviving evidence does not straightforwardly supply the proposed pre-Pauline model. The weakness is that one use of archon cannot settle every use, and later texts may preserve earlier traditions. The score is high because Ehrman isolates the evidential burden instead of merely appealing to consensus.",
+              tags: []
+            },
+            con: {
+              time: "76:12",
+              role: "Pre-Christian background appeal",
+              words:
+                "Price says the myths evolved from Judaism and follows earlier scholars who treated some Gnostic patterns as pre-Christian rather than late inventions.",
+              score: 70,
+              critique:
+                "Price gives a plausible research program rather than an empty assertion: later Gnostic material may have Jewish, Iranian, or Platonic antecedents, and categories can precede their surviving texts. That caution matters when Ehrman treats the second-century evidence as a hard chronological wall. The weakness is that an antecedent in broad religious motifs does not establish the particular heavenly-crucifixion scenario Price needs for Paul. Invoking Bultmann, Reitzenstein, or older scholarship does not substitute for showing relevant first-century evidence in this exchange. Price also leaves the transition from possible background to Paul's intended meaning largely unexplained. The score is fair-to-solid because he resists a simplistic dating argument, but his positive case remains thin.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Interpolation and Historical Probability",
+        timebox: "98:16-125:29",
+        score: {
+          pro: 84,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "119:47",
+              role: "Textual-security objection",
+              words:
+                "Ehrman says no surviving New Testament manuscript omits Galatians 1:19 or 1 Corinthians 15:3-5, and that both passages fit Paul's style, theology, and views.",
+              score: 84,
+              critique:
+                "Ehrman's textual-security objection properly shifts the burden onto an interpolation proposal. The passages are widespread in the manuscript tradition and cohere with the Pauline letters as transmitted, so simply excluding them because they inconvenience mythicism would be methodologically weak. He also correctly distinguishes textual criticism from unconstrained suspicion. The weakness is that surviving manuscripts postdate the earliest textual history by a considerable margin; universal later attestation cannot logically eliminate an early interpolation. Ehrman sometimes compresses that distinction when he calls the alternative scholarship by convenience. Still, Price needs positive textual or patristic evidence for excision, not only a theory that would benefit from it. The score is high because Ehrman foregrounds a central evidential asymmetry.",
+              tags: []
+            },
+            con: {
+              time: "120:36",
+              role: "Early-attestation caution",
+              words:
+                "Price replies that some interpolation proposals are based on patristic evidence and that the absence of manuscripts from the relevant early period leaves room for agnosticism.",
+              score: 76,
+              critique:
+                "Price's reply makes a fair negative point: extant manuscripts are not the original text, and patristic quotations or reports about Marcion can matter when reconstructing an earlier state. His insistence that missing early evidence should produce caution rather than certainty is sound. The weakness is that he does not show that the cited reports actually establish omission of the specific passages, nor does he offer internal evidence that they disrupt Paul's argument. Moving from uncertainty to broad permission for interpolation risks making any inconvenient text defeasible. The score is solid because agnosticism about a transmission gap is justified, but lower because the concrete excision case is not developed enough to outweigh Ehrman's evidence.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 86,
+        strengths: [
+          "Ehrman built a cumulative historical case from early Pauline material, source diversity, and the ordinary reading of James as Jesus' brother rather than treating Gospel miracles as evidence.",
+          "He repeatedly distinguished legendary elaboration from nonexistence, allowing him to reject miracle claims without discarding historical inquiry.",
+          "His cross-examination placed clear burdens on Price's celestial-rulers and interpolation claims, especially their proposed first-century evidence."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes foregrounded the cumulative evidence while underplaying how much source independence, dating, and textual transmission remain probabilistic historical judgments.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His call for mythicists to earn academic credentials before their case could be seriously entertained risked applying an authority threshold beyond the ordinary evidential burden.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 73,
+        strengths: [
+          "Price pressed the difference between extant texts and reconstructed sources, preventing source criticism from being treated as direct archival testimony.",
+          "His Josephus analysis supplied specific arguments about interpolation, literary context, and later Christian apologetic interests.",
+          "He acknowledged that a genuine early external letter could decisively damage mythicism, which kept his conclusion explicitly defeasible."
+        ],
+        blunders: [
+          {
+            text:
+              "His case repeatedly turned gaps in Paul's narrative and in external attestation into positive support for a celestial-Jesus origin without independently establishing that origin.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "He leaned on broad, disputed reconstructions of pre-Christian Gnosticism and expanded interpolation possibilities where the direct textual support remained limited.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
