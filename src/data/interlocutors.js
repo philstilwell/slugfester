@@ -419,7 +419,7 @@ export const interlocutorAvatars = [
   {
     name: "Hans Halvorson",
     src: `${avatarBasePath}/hans-halvorson.webp`,
-    aliases: ["Hans Halvorson"]
+    aliases: ["Hans Halvorson", "Halvorson"]
   },
   {
     name: "Rowan Williams",
