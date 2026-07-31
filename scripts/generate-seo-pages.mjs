@@ -33,7 +33,7 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260731-terra-model";
+const assetVersion = "20260731-score-labels";
 const cloudflareWebAnalytics =
   "<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{\"token\": \"05c16e0e536340d0a1e0fdcaa6451389\"}'></script><!-- End Cloudflare Web Analytics -->";
 
