@@ -560,6 +560,11 @@ export const interlocutorAvatars = [
     name: "Michael Licona",
     src: `${avatarBasePath}/michael-licona.webp`,
     aliases: ["Michael Licona", "Mike Licona", "Licona"]
+  },
+  {
+    name: "Alvin Plantinga",
+    src: `${avatarBasePath}/alvin-plantinga.webp`,
+    aliases: ["Alvin Plantinga", "Plantinga"]
   }
 ];
 
