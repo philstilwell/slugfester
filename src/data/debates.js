@@ -50084,5 +50084,263 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "rhodes-dillahunty-evidence-god-2021",
+    number: "140",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Kenny Rhodes vs Matt Dillahunty: Is There Evidence for God?",
+    label: "Classical theism, essence, and evidence",
+    date: "2026-07-31",
+    duration: "3 hr 01 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=i0Q_KMN64bk",
+    motion:
+      "Is there good evidence for the existence of the God of classical theism?",
+    summary:
+      "Rhodes argues that composition, essence, and contingent existence require the necessary ground of classical theism; Dillahunty argues that those metaphysical premises are undefended and do not distinguish God from unanswered natural questions.",
+    sourceNote:
+      "Based on the YouTube transcript for the Modern-Day Debate upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "There must be one who has given an act of existence to what we see in reality.",
+        context:
+          "Rhodes's case infers a necessary existential ground from the distinction between a thing's nature and its existing."
+      },
+      con: {
+        text: "Skepticism is: I will believe those things that are warranted.",
+        context:
+          "Dillahunty asks for a method that identifies God as a supported explanation rather than a label for what remains unknown."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Classical-theist grounding",
+        speaker: "Kenny Rhodes",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical evidentialism",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 63,
+      con: 85
+    },
+    sections: [
+      {
+        title: "Existence, Metaphysics, and Evidence",
+        timebox: "09:23-40:45",
+        score: {
+          pro: 68,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "09:23",
+              role: "Existential-ground argument",
+              words:
+                "Rhodes says reality's composite beings have existence rather than being existence itself, so multiplicity requires an existential absolute that grounds all that is.",
+              score: 68,
+              critique:
+                "Rhodes presents a recognizable Thomistic strategy: distinguish what a thing is from the fact that it exists, then infer a non-derived source of existence. He appropriately argues that the target is not a laboratory object but a metaphysical explanation of the whole. That keeps the case relevant to ultimate explanation rather than treating God as a missing physical mechanism. The weakness is that its foundational premises arrive as doctrines. He says composed beings cannot account for existence and that multiplicity needs unity, but does not show why the universe cannot be brute, necessary, or explained in another non-theistic way. The conclusion also starts as an impersonal ground but soon receives divine labels. The score is solid-low because the architecture is coherent, yet the inferential bridge is largely promised.",
+              tags: []
+            },
+            con: {
+              time: "19:39",
+              role: "Warrant-before-conclusion challenge",
+              words:
+                "Dillahunty says skepticism seeks warranted beliefs and asks why a desire for an explanation of existence justifies starting with God rather than investigating whatever explanation is available.",
+              score: 83,
+              critique:
+                "Dillahunty usefully separates the understandable desire for an explanation of existence from evidence for a particular theological answer. His receipt example makes the point concrete: ordinary conclusions are supported not only by a story but by background knowledge, independent checks, and ways to investigate error. He also fairly says he would accept God if it emerged as the explanation rather than rule it out beforehand. The limitation is that he sometimes treats empirical investigation as the preferred model without fully explaining how broad metaphysical hypotheses should be compared. An ultimate explanation may be assessed by coherence, scope, and parsimony as well as direct observation. The score is strong because he correctly fixes the burden on Rhodes, though his alternative epistemology remains more cautionary than developed.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Essence, Definitions, and Reality",
+        timebox: "40:45-73:45",
+        score: {
+          pro: 58,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "52:02",
+              role: "Essence-and-existence distinction",
+              words:
+                "Rhodes says definitions track a thing's real essence or nature, and that what a thing is remains distinct from the act by which it exists.",
+              score: 58,
+              critique:
+                "Rhodes identifies a central classical-theist distinction rather than changing topics: a definition of a dodo, person, or pen is meant to concern what the thing is, while existence concerns whether such a nature is instantiated. This can be a serious metaphysical position, and he rightly notes that scientific descriptions do not settle every theory of universals. The weakness is communicative and evidential. Asked what an essence adds beyond an abstract description of stable physical features, he repeatedly answers with essence, nature, or form. That makes the premise difficult to assess and leaves the required ontological status unstated. His criticism of biological classification also arrives without support. The score is weak-to-mixed because the distinction is relevant but never clearly defended in the live exchange.",
+              tags: []
+            },
+            con: {
+              time: "53:00",
+              role: "Nominalist-description challenge",
+              words:
+                "Dillahunty argues that dictionary and scientific definitions describe shared physical features and linguistic use, not a separate immaterial essence that needs an external giver of existence.",
+              score: 86,
+              critique:
+                "Dillahunty's strongest move is methodological: he repeatedly asks what observable or explanatory work essence performs beyond a description of properties, structure, continuity, and shared language. The dodo, pen, and cell examples expose that a classification can be abstract without being a separate entity. His set-theory reply also shows how organisms can share features at different levels without a fixed Platonic form. The weakness is that his nominalism is asserted more than argued. The fact that definitions are language-dependent does not by itself settle whether there are real natural kinds, dispositions, or modal constraints independent of language. Still, Rhodes bears the immediate burden of explaining his stronger ontology, and Dillahunty makes that failure conspicuous. The score is very high for precise, sustained pressure on the disputed premise.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Composition, Causation, and Agency",
+        timebox: "75:00-85:40",
+        score: {
+          pro: 53,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "76:20",
+              role: "Composer-from-parts inference",
+              words:
+                "Rhodes argues that because a car's parts require a composer, the parts of a person and of the universe likewise require something or someone that put them together.",
+              score: 53,
+              critique:
+                "Rhodes finally states a crisp causal intuition: collections of parts do not explain their own organization, so a composite reality requires a composer. The car example makes his intended dependence relation easy to see, and he tries to broaden the conclusion from human artifacts to time, space, matter, and energy. The weakness is the very analogy carrying the inference. Cars are known products of agents because we have independent evidence of designers, factories, and construction; a universe or organism is not analogous merely because it has distinguishable parts. When challenged, Rhodes says composition is self-evident and that atheism is irrational, rather than supplying the missing rule from parts to intentional assembly. The score is low because the conclusion supplies its key premise instead of establishing it.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The argument treats composite reality as requiring a composer, the very causal rule needed to infer a divine composer from its parts."
+                }
+              ]
+            },
+            con: {
+              time: "77:40",
+              role: "Artifact-analogy rebuttal",
+              words:
+                "Dillahunty grants that cars are known artifacts but says the universe has no comparable evidence of manufacture, so composition alone cannot establish an intentional composer.",
+              score: 88,
+              critique:
+                "Dillahunty precisely locates the false step in the car comparison. A car's arrangement supports agency because independent background evidence tells us how cars are designed, built, and manufactured. Extending that conclusion to persons, cells, or the universe requires a further argument, not merely the observation that each has parts. His point that an unknown explanation is not automatically an intentional one directly addresses the motion and preserves an appropriate burden of proof. The weakness is that he can sound as though only direct observation of cosmic construction would count. A successful cosmological argument could still supply indirect evidence if its causal principles were independently defended. The score is very high because Rhodes supplies no such defense here, while Dillahunty identifies exactly why the analogy does not transfer.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Necessary Being and Classical Theism",
+        timebox: "82:20-108:30",
+        score: {
+          pro: 63,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "83:20",
+              role: "Proportionate-causality extension",
+              words:
+                "Rhodes says an effect cannot give what its cause lacks, so consciousness, order, and accidental existence point to a necessary ground that classical theism can identify with God.",
+              score: 63,
+              critique:
+                "Rhodes invokes the principle of proportionate causality to move beyond an abstract ground: a cause must contain, formally, virtually, or eminently, what it produces. This is a recognizable route for arguing that the source of conscious and ordered reality cannot be wholly featureless. He also concedes that moving from generic monotheism to Christian theology requires further work, which is a useful restraint. The weakness is that the key causal vocabulary is not explained in ordinary terms, and no argument is given for treating the ultimate cause as conscious rather than as an impersonal necessary structure. His answer that the one ground is first repeatedly assumes the very necessity at issue. The score is mixed-solid for a legitimate philosophical program, but too compressed to warrant its theological conclusion.",
+              tags: []
+            },
+            con: {
+              time: "101:30",
+              role: "Cause-without-person objection",
+              words:
+                "Dillahunty says a fire has an explanation without requiring a person, so an ultimate explanation cannot be assumed to be an agent; unanswered questions remain reasons to investigate, not evidence for God.",
+              score: 78,
+              critique:
+                "Dillahunty's fire reply neatly distinguishes causation from agency. Observing burned wood licenses an inference to heat or a causal process, but not immediately to a person; lightning, accident, and other routes remain live. That comparison transfers well to the universe because it targets the extra step Rhodes needs, not the weaker claim that reality has some explanation. He also keeps an important asymmetry visible: identifying gaps in present knowledge does not establish the divine alternative. The weakness is that he does not engage the Thomistic claim that the causal principle is not an empirical generalization about fires. If understood as a modal argument, it needs philosophical rebuttal and alternative examples. The score is strong because his rebuttal is accurate and well aimed, though not a complete theory of causation.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Revelation, Experience, and Testing",
+        timebox: "108:30-119:30",
+        score: {
+          pro: 66,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "109:00",
+              role: "Revelatory-evidence proposal",
+              words:
+                "Rhodes says he would test the historical record of biblical miracles, prophecy, explanatory scope, and his personal experience before treating Christian revelation as divine.",
+              score: 66,
+              critique:
+                "Rhodes improves the discussion by naming possible routes beyond bare metaphysics: historical documents, reported miracles, prophecy, explanatory scope, and lived religious experience. He also admits that personal presence cannot be made empirical evidence and describes suffering as a real pressure on his faith. Those concessions make the position more intellectually human and less insulated. The weakness is that the proposal remains a research agenda rather than evidence presented in this debate. No particular miracle report, prophecy, or historical method is examined, and the personal experience cannot discriminate Christianity from conflicting religious experiences without further public support. The score is solid-low because the answer identifies relevant categories, but it does not yet establish any of them as good evidence for the motion.",
+              tags: []
+            },
+            con: {
+              time: "113:00",
+              role: "Open-inquiry and resource-allocation reply",
+              words:
+                "Dillahunty says skepticism welcomes investigation but requires demonstrated efficacy before claims such as prayer or paranormal powers receive the same confidence and resources as successful methods.",
+              score: 84,
+              critique:
+                "Dillahunty gives a charitable account of skepticism as calibrated inquiry rather than a refusal to explore. His examples of proposed cancer treatments, paranormal tests, and prayer research explain why finite time and money should track prior success while remaining open to a new demonstration. This directly counters the claim that demanding evidence makes skeptics dogmatic. The weakness is that research prioritization is not identical to truth conditions. A rare historical event or a metaphysical claim might matter even when it cannot compete with medical studies on replication, so the analogy should not become an exclusion rule. The score is strong because it explains practical evidential discipline clearly, but not higher because it does not fully classify the kinds of evidence Rhodes invokes.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 63,
+        strengths: [
+          "Rhodes offers a consistent classical-theist framework rather than merely appealing to unexplained science or private conviction.",
+          "He appropriately distinguishes an argument for a generic necessary ground from the further work of identifying a particular revealed tradition.",
+          "His willingness to acknowledge the personal force of suffering and the limits of private experience prevents a wholly dismissive presentation."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly treated the existence of parts, forms, or contingent beings as already establishing a composer, without independently defending that causal rule for nature as a whole.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 85,
+        strengths: [
+          "Dillahunty consistently asks what would distinguish God from an undefined alternative explanation instead of treating uncertainty as a refutation.",
+          "His artifact analogy and definitional questioning expose the unsupported transitions from composition to agency and from essence to reality.",
+          "He explains skepticism as open, proportionate inquiry and fairly states that evidence for God would change his belief."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes shifts from a sensible demand for warrant to a preference for empirical replication, leaving it unclear how non-empirical metaphysical arguments could ever be positively evaluated.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
