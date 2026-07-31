@@ -1110,6 +1110,7 @@ function rankingHeading(sort) {
 function renderRankingCard(person) {
   const searchHref = searchUrl({ page: 1, query: "", people: [person.name] });
   const debateLabel = `${person.appearances} ${person.appearances === 1 ? "debate" : "debates"}`;
+  const firstName = person.name.trim().split(/\s+/)[0];
   const topic = person.strongestTopic;
 
   return `
@@ -1124,7 +1125,7 @@ function renderRankingCard(person) {
           </span>
           <span class="ranking-score-pair">
             <span class="ranking-score ${scoreTone(Math.round(person.averageScore))}">
-              <small>Interlocutor avg.</small>
+              <small>${escapeHtml(firstName)} avg.</small>
               <strong>${escapeHtml(formatAverageScore(person.averageScore))}</strong>
             </span>
             <span class="ranking-score ${scoreTone(Math.round(person.averageOpponentScore))}">
