@@ -53513,5 +53513,335 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "knechtle-aron-ra-god-existence-2023",
+    number: "152",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Stuart Knechtle vs Aron Ra: Does God Exist?",
+    label: "Design, logic, and God",
+    date: "2026-07-31",
+    duration: "3 hr 01 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=9r_XAIksLdI",
+    motion:
+      "Does God exist, and do design, morality, logic, and experience support that conclusion?",
+    summary:
+      "Knechtle presents a cumulative Christian-theistic case from design, morality, and reason; Ra defends atheistic naturalism by challenging its evidential and explanatory steps.",
+    sourceNote:
+      "Based on the public YouTube transcript for the Modern-Day Debate upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Science points actually to a type of evidence for God.",
+        context:
+          "Knechtle treats the intelligibility, order, and complexity of nature as converging evidence for a creative mind."
+      },
+      con: {
+        text: "Faith is deceptive in all religions.",
+        context:
+          "Ra's skeptical posture demands publicly testable evidence and treats religious certainty as an unreliable route to truth."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian theism",
+        speaker: "Stuart Knechtle",
+        color: "teal"
+      },
+      con: {
+        name: "Atheistic naturalism",
+        speaker: "Aron Ra",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 52,
+      con: 65
+    },
+    sections: [
+      {
+        title: "Evidence, Science, and Design",
+        timebox: "01:16-21:22",
+        score: {
+          pro: 55,
+          con: 66
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:16",
+              role: "Cumulative design case",
+              words:
+                "Knechtle presents physics, biological information, mathematics, logic, and morality as converging signs that a creative mind better explains reality than naturalism.",
+              score: 55,
+              critique:
+                "Knechtle builds a recognizable cumulative case: physics, biological information, mathematics, logic, and morality are offered as converging features that make a designer plausible. He also fairly notes that philosophical premises enter any account of origins. The main problem is that each move relies on an unargued bridge from order or intelligibility to a personal, immaterial creator. Citing Newton, Einstein, Nobel laureates, or an alleged Dawkins concession does not supply that bridge, and the historical claims are not sourced. His Rosetta Stone analogy works where independent marks of human agency exist; it cannot simply be projected onto the universe. The score is mixed-low: the opening identifies substantive questions but mostly lists intuitions and authorities rather than developing a discriminating inference.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The leap treats unexplained intelligibility and complexity as positive evidence for a designer."
+                }
+              ]
+            },
+            con: {
+              time: "12:42",
+              role: "Evidential standard reply",
+              words:
+                "Ra argues that unexplained phenomena are not evidence for God, and that a designer must add explanatory content rather than merely rename a gap.",
+              score: 66,
+              critique:
+                "Ra correctly disputes that methodological naturalism prevents historical inference to intelligent agents and insists that a gap in explanation is not automatically evidence for God. He also identifies the decisive issue: an alleged designer must do explanatory work beyond naming a cause. These are relevant replies to the opening's central move. However, the response repeatedly labels God magic, treats religion as anti-science, and invokes a highly generalized story about clergy rather than separating Knechtle's specific claims from young-earth creationism or institutional abuse. Those flourishes weaken both charity and precision. The score is solid but not high: it supplies the right evidential standard and presses a real gap, while allowing derision and unsupported generalizations to displace analysis.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "Calling every religious explanation anti-science assumes the conclusion under dispute instead of arguing it."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality, Altruism, and Humanism",
+        timebox: "26:10-34:20",
+        score: {
+          pro: 56,
+          con: 68
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "26:10",
+              role: "Altruism challenge",
+              words:
+                "Knechtle asks why an atheist should sacrifice for strangers, arguing that a divine moral source better explains genuine obligation and human rights.",
+              score: 56,
+              critique:
+                "Knechtle asks a serious metaethical question: why should an individual sacrifice time, resources, or self-interest for strangers if no God exists? This invites a needed distinction among biological explanation, social incentives, motivation, and moral justification. He also exposes a genuine tension for accounts that rely only on immediate reward. Yet he treats humanism as if it must be either personal pleasure or a divine command, ignoring reasons based on empathy, reciprocity, long-term interests, agency, and shared vulnerability. His hypothetical also does not show that theism makes moral obligations true rather than merely commanded. The score is moderate because the challenge helps clarify a disputed foundation, but it frames the alternatives too narrowly and never establishes the proposed theistic alternative.",
+              tags: []
+            },
+            con: {
+              time: "32:20",
+              role: "Humanist motive reply",
+              words:
+                "Ra grounds help for others in empathy, cooperative social life, and the satisfaction of materially improving another person's condition rather than only offering prayer.",
+              score: 68,
+              critique:
+                "Ra gives a recognizable humanist answer: social creatures benefit from cooperation, empathy, and helping behavior, and personal fulfillment can accompany voluntary aid. He distinguishes actual assistance from merely professed concern and later says that avoiding unnecessary suffering is a broadly shared norm. This directly addresses the request for a secular motive. The limitation is that an evolutionary or psychological explanation of why people often help does not by itself establish why they ought to help when costly or unnoticed. History will judge similarly adds rhetorical aspiration rather than a moral warrant. His comments about Christians' motives and religious offenders are also sweeping and unsupported. The score is above Knechtle's because it offers an operative framework, but it leaves the central question of normativity incomplete.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Biological Complexity and Evolution",
+        timebox: "34:23-39:15",
+        score: {
+          pro: 48,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "36:26",
+              role: "Cell-design argument",
+              words:
+                "Knechtle argues that the cell's information-processing machinery and apparent irreducible complexity point more naturally to intelligence than undirected evolution.",
+              score: 48,
+              critique:
+                "Knechtle argues that the cell's information-processing machinery is better explained by design than by undirected processes, and he sensibly asks whether apparent complexity should ever count as evidence. He also makes clear that he accepts some evolutionary change rather than simply denying all biology. The argument nevertheless never identifies a biochemical structure whose history cannot be explained by evolutionary mechanisms, nor does it supply evidence for a designer's independent signature. His distinction between microevolution and irreducible complexity remains unstable: he accepts adaptation while invoking a concept historically used to deny the sufficiency of cumulative selection. Complexity alone is compatible with several causes. The score is low because an important empirical question is raised, but the inference from complexity to the Christian God is asserted rather than argued.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The move shifts between accepting evolution and intelligent-design conclusions without a stable boundary."
+                }
+              ]
+            },
+            con: {
+              time: "37:11",
+              role: "Evolutionary counterprediction",
+              words:
+                "Ra replies that haphazard, constrained, and inefficient biological systems better fit cumulative evolution than an engineer's efficient, preplanned design.",
+              score: 76,
+              critique:
+                "Ra makes the strongest scientific reply of the exchange: an efficient, preplanned design is not what one should expect from cumulative evolution, whereas haphazard and historically constrained systems are. That point gives an alternative prediction instead of merely denying design, and it makes biological inefficiency relevant to the motion. He also flags the history of irreducible-complexity claims being challenged by evolutionary explanations. Still, he gives no concrete example or source during the exchange, and calling complex systems stupid is rhetoric rather than an argument. The account also shows only why a particular engineering analogy is weak; it does not rule out every form of theistic evolution or every designer hypothesis. The score is strong because it directly rebuts Knechtle's central analogy, though compressed evidence keeps it below exceptional.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Christianity, Scripture, and Divine Character",
+        timebox: "39:15-49:42",
+        score: {
+          pro: 58,
+          con: 48
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "42:20",
+              role: "Historical Christian reply",
+              words:
+                "Knechtle says the relevant questions are Jesus' historical claims and Gospel reliability, presenting the cross as divine self-sacrifice rather than arbitrary power.",
+              score: 58,
+              critique:
+                "Knechtle correctly notices that Ra's broad attack on biblical stories, heaven, hell, and clergy is not yet an argument against every possible God. He narrows attention to historically assessable Christian claims: whether Jesus existed, what he claimed, and whether the Gospels are reliable. His account of the crucifixion also explains why he thinks Christianity need not depict God as a merely arbitrary ruler. But these moves are promissory. He supplies no historical evidence for resurrection or Gospel reliability, and calling heaven language metaphorical simply protects a theological reading without showing why it is best. The cross-based moral portrait also does not answer Ra's objections to divine judgment. The score is moderate: Knechtle improves the scope and points to relevant evidence, but leaves the most contested premises unargued.",
+              tags: []
+            },
+            con: {
+              time: "39:15",
+              role: "Biblical reliability attack",
+              words:
+                "Ra treats biblical narratives, an afterlife, and divine punishment as unsupported, arguing that Christian claims need evidential defense rather than inherited certainty.",
+              score: 48,
+              critique:
+                "Ra is right that scriptural claims, divine punishment, and afterlife promises matter when the offered God is specifically Christian, and he repeatedly asks whether those claims are coherent and evidentially supported. He also forces Knechtle to clarify whether the biblical language he invokes is literal or metaphorical. Yet the exchange becomes a rapid catalogue of conclusions: Genesis, Exodus, Moses, souls, afterlife, and the Bible are each declared false with little argument. Treating all believers as power-seeking or self-deceived also replaces criticism of doctrines with hostile generalization. The score is low because the line of inquiry is relevant, but its breadth, unsupported certainty, and contempt prevent the claims from carrying much independent argumentative weight.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The reply declares scriptural claims false while those disputed claims are doing the argumentative work."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Logic, Mathematics, and Divine Mind",
+        timebox: "49:50-57:37",
+        score: {
+          pro: 45,
+          con: 73
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "49:50",
+              role: "Transcendental argument",
+              words:
+                "Knechtle argues that objective logic and mathematics require a transcendent creative mind, since human minds neither invented nor can dispense with them.",
+              score: 45,
+              critique:
+                "Knechtle's transcendental move has a clear target: mathematics and logic appear objective and intelligible, so he asks what grounds their status if human minds did not create them. This is a legitimate metaphysical question, and Ra's bare rejection would not settle it. But Knechtle repeatedly describes the proposed mind as outside space and time, creative intelligibility, and a source that speaks things into being without explaining how such a mind exists, has content, or causes anything. The claim that logic would collapse without God is asserted, not derived. His appeal to Einstein and alleged deism misstates or overreads a historical authority. The score is low because the question is real, while the positive account remains unexplained and internally obscure.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Einstein's alleged deism is offered as support without establishing its accuracy or relevance."
+                }
+              ]
+            },
+            con: {
+              time: "51:33",
+              role: "Explanatory-demand reply",
+              words:
+                "Ra asks how an alleged disembodied mind exists and acts, arguing that mathematical properties need not depend on a personal agent.",
+              score: 73,
+              critique:
+                "Ra gives the most incisive response by asking two concrete questions: how does the alleged disembodied mind exist, and how can it act? He also notes that mathematical or logical relations can be described as properties of any possible world without first positing a personal agent. That exposes the gap between an abstract necessity and a theistic mind. His approach, however, often assumes the naturalistic alternative instead of defending an account of abstract objects, laws, or necessity. Calling the alternative magic does not answer a sophisticated theistic proposal, and his debate style makes it too easy to mistake a demand for explanation for a refutation. The score is strong because the questions force Knechtle's key premise into the open, but not exceptional because Ra supplies little positive metaphysics.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Purpose, Objectivity, and Burden",
+        timebox: "57:38-1:25:14",
+        score: {
+          pro: 51,
+          con: 62
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:00:23",
+              role: "Objective-morality return",
+              words:
+                "Knechtle argues that societies can normalize atrocities, so widespread moral intuition and the human search for purpose fit a creative mind better than consensus alone.",
+              score: 51,
+              critique:
+                "Knechtle returns to the issue of moral objectivity and presses Ra on whether social agreement can make cruelty wrong rather than merely unpopular. He is right that examples of societies endorsing honor killings or atrocities pose a challenge to simple appeals to consensus, and his distinction between explanation and justification is worth pursuing. But he moves too quickly from disagreements about morality to a creative mind as the best explanation. Appeals to human longing, purpose, or the frequency of metaphysical questions show psychological interest, not the truth of God. In challenging Ra's upbringing, he also risks explaining a view through biography rather than meeting its current arguments. The score is modest because he identifies a real problem for social morality but does not establish his solution.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The move treats the lack of a secular ground for objectivity as evidence for a creative mind."
+                }
+              ]
+            },
+            con: {
+              time: "1:01:13",
+              role: "Natural-process reply",
+              words:
+                "Ra replies that an undesigned universe need not be random, and that regular natural processes and concern for suffering can guide life without cosmic purpose.",
+              score: 62,
+              critique:
+                "Ra clarifies that a world without a divine plan need not be random: natural processes can generate regularities, and human beings can oppose suffering without cosmic purpose. He also rightly rejects the attempt to make personal disappointment with meaning a proof of theism. Later, he concedes that Knechtle has not knowingly lied, a welcome correction that distinguishes disagreement from dishonesty. Yet his own defense of morality repeatedly relies on universal agreement while acknowledging counterexamples, and his claim that all religion is lies is a self-undermining overgeneralization. He also does not show why the shared aversion to suffering yields binding norms. The score is moderately solid for rejecting false dichotomies, but the unsupported universal claims blunt an otherwise important response.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 52,
+        strengths: [
+          "He presents a coherent cumulative agenda, connecting design, morality, logic, and Christian historical claims rather than resting on one isolated argument.",
+          "He asks serious questions about moral obligation, altruism, and whether social agreement can adequately explain why cruelty is wrong.",
+          "He usefully narrows Ra's broad religious critique toward historically assessable Christian claims and the character of the cross."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly treats explanatory gaps about order, morality, or origins as support for a creative mind without supplying positive evidence that the proposed mind is the best explanation.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 65,
+        strengths: [
+          "He repeatedly requires the theistic proposal to add explanatory content rather than merely attach God to an unanswered question.",
+          "He gives an effective evolutionary counterprediction to the claim that biological complexity is evidence of intentional engineering.",
+          "He asks clear questions about how a disembodied mind could exist and act, exposing an unaddressed premise in the transcendental argument."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly labels Christianity, religion, and theism false or dishonest as premises, substituting dismissal and overgeneralization for arguments against Knechtle's specific case.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
