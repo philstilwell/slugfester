@@ -39,8 +39,8 @@ const rankingModelOptions = [
 ];
 const rankingSortOptions = [
   { value: "average", label: "Highest average" },
+  { value: "opponents", label: "Highest opponent average" },
   { value: "appearances", label: "Most appearances" },
-  { value: "recent", label: "Strongest recent average" },
   { value: "name", label: "Name" }
 ];
 const debateHashRoutePattern = /^#\/debate\/([a-z0-9-]+)$/;
@@ -883,8 +883,6 @@ function rankedInterlocutors(state) {
         ...person,
         averageOpponentScore: person.totalOpponentScore / person.appearances,
         averageScore: person.totalScore / person.appearances,
-        recentAverageScore:
-          recentRecords.reduce((total, record) => total + record.score, 0) / recentRecords.length,
         recentRecords,
         strongestTopic: rankingTopicSummary(person.records)
       };
@@ -893,8 +891,12 @@ function rankedInterlocutors(state) {
       if (state.sort === "appearances") {
         return b.appearances - a.appearances || b.averageScore - a.averageScore || a.name.localeCompare(b.name);
       }
-      if (state.sort === "recent") {
-        return b.recentAverageScore - a.recentAverageScore || b.averageScore - a.averageScore || a.name.localeCompare(b.name);
+      if (state.sort === "opponents") {
+        return (
+          b.averageOpponentScore - a.averageOpponentScore ||
+          b.averageScore - a.averageScore ||
+          a.name.localeCompare(b.name)
+        );
       }
       if (state.sort === "name") return a.name.localeCompare(b.name);
 
@@ -1123,8 +1125,8 @@ function renderRankingOptions(options, selectedValue) {
 function rankingHeading(sort) {
   const headings = {
     average: "Ranked by average score",
+    opponents: "Ranked by opponent average",
     appearances: "Ranked by appearances",
-    recent: "Ranked by latest three scorecards",
     name: "Ranked alphabetically"
   };
 
@@ -1161,7 +1163,6 @@ function renderRankingCard(person) {
           <summary>Performance details</summary>
           <div class="ranking-detail-grid">
             <dl>
-              <div><dt>Latest three</dt><dd>${escapeHtml(formatAverageScore(person.recentAverageScore))}</dd></div>
               <div><dt>Opponent average</dt><dd>${escapeHtml(formatAverageScore(person.averageOpponentScore))}</dd></div>
               <div><dt>Most common topic</dt><dd>${escapeHtml(topic?.title || "Uncategorized")}</dd></div>
             </dl>
