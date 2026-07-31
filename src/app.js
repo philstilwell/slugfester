@@ -34,7 +34,7 @@ const MIN_RANKED_DEBATE_APPEARANCES = 3;
 const rankingMinimumOptions = [3, 5, 10];
 const rankingSortOptions = [
   { value: "average", label: "Highest average" },
-  { value: "opponents", label: "Highest opponent average" },
+  { value: "opponents", label: "Highest Opponent's Avg." },
   { value: "appearances", label: "Most appearances" },
   { value: "name", label: "Name" }
 ];
@@ -1099,7 +1099,7 @@ function renderRankingOptions(options, selectedValue) {
 function rankingHeading(sort) {
   const headings = {
     average: "Ranked by average score",
-    opponents: "Ranked by opponent average",
+    opponents: "Ranked by Opponent's Avg.",
     appearances: "Ranked by appearances",
     name: "Ranked alphabetically"
   };
@@ -1122,6 +1122,7 @@ function renderRankingCard(person) {
           <span class="ranking-person">
             <strong>${escapeHtml(person.name)}</strong>
             <small>${escapeHtml(debateLabel)}</small>
+            <small class="ranking-topic">Most common topic: ${escapeHtml(topic?.title || "Uncategorized")}</small>
           </span>
           <span class="ranking-score-pair">
             <span class="ranking-score ${scoreTone(Math.round(person.averageScore))}">
@@ -1129,20 +1130,11 @@ function renderRankingCard(person) {
               <strong>${escapeHtml(formatAverageScore(person.averageScore))}</strong>
             </span>
             <span class="ranking-score ${scoreTone(Math.round(person.averageOpponentScore))}">
-              <small>Opponent avg.</small>
+              <small>Opponent's Avg.</small>
               <strong>${escapeHtml(formatAverageScore(person.averageOpponentScore))}</strong>
             </span>
           </span>
         </a>
-        <details class="ranking-detail">
-          <summary>Performance details</summary>
-          <div class="ranking-detail-grid">
-            <dl>
-              <div><dt>Opponent average</dt><dd>${escapeHtml(formatAverageScore(person.averageOpponentScore))}</dd></div>
-              <div><dt>Most common topic</dt><dd>${escapeHtml(topic?.title || "Uncategorized")}</dd></div>
-            </dl>
-          </div>
-        </details>
       </article>
     </li>
   `;
@@ -1154,7 +1146,7 @@ function renderRankingMethod() {
       <summary>Ranking method</summary>
       <div>
         <p>Each average uses the published overall score for that speaker's side of every matching debate. A panel's shared side score is assigned to each named participant on that side.</p>
-        <p>Topic filters include any debate assigned to the selected category. The opponent-average sort uses the published overall scores of the opponents each person faced.</p>
+        <p>Topic filters include any debate assigned to the selected category. The Opponent's Avg. sort uses the published overall scores of the opponents each person faced.</p>
         <p>These figures assess the reasoning performance recorded in Slugfester scorecards. They do not establish the truth of a speaker's conclusions, expertise, or personal worth.</p>
       </div>
     </details>
