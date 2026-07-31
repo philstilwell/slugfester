@@ -112,6 +112,7 @@ requireIncludes("primary nav", styles, ".primary-nav-link.active");
 requireIncludes("primary nav", styles, "padding: 5px 10px;");
 requireIncludes("primary nav", styles, "--glove-red: #b91f24;");
 requireIncludes("primary nav", styles, "background: var(--glove-red);");
+requireIncludes("primary nav", styles, "box-shadow: 0 7px 14px rgba(185, 31, 36, 0.24);");
 requireIncludes("primary nav", styles, "color: #ffffff;");
 requireIncludes("landing topics", styles, ".topic-divider");
 requireIncludes("landing topics", styles, ".topic-list");
