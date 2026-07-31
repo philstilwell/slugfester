@@ -50608,5 +50608,311 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "comfort-dillahunty-gospel-atonement-2020",
+    number: "142",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Ray Comfort vs Matt Dillahunty: Does the Gospel Make Sense?",
+    label: "Gospel atonement and moral responsibility",
+    date: "2026-07-31",
+    duration: "1 hr 59 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=cRCbvfyiu0s",
+    motion:
+      "Does the Christian gospel's account of sin, atonement, and salvation make moral and explanatory sense?",
+    summary:
+      "Comfort defends the gospel as just payment for real moral guilt and personal revelation; Dillahunty argues that inherited sin, divine foreknowledge, substitution, and faith without evidence make the system incoherent.",
+    sourceNote:
+      "Based on the YouTube transcript for the Modern-Day Debate upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Jesus paid the fine in full on that cross.",
+        context:
+          "Comfort presents substitutionary atonement as a just payment that releases guilty people from the penalty of sin."
+      },
+      con: {
+        text: "Why can't God just forgive people?",
+        context:
+          "Dillahunty asks why an omnipotent lawgiver would need sacrifice to waive a debt created by that lawgiver."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Evangelical atonement",
+        speaker: "Ray Comfort",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical moral critique",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 40,
+      con: 88
+    },
+    sections: [
+      {
+        title: "Law, Sin, and Atonement",
+        timebox: "04:30-20:55",
+        score: {
+          pro: 57,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:45",
+              role: "Penal-substitution presentation",
+              words:
+                "Comfort says the commandments reveal each person's guilt, so Christ's death works like someone paying a criminal fine and allows God justly to offer eternal life to repentant believers.",
+              score: 57,
+              critique:
+                "Comfort gives a clear and familiar account of penal substitution. The fine-paying analogy makes his intended point intuitive: forgiveness can be more intelligible when a real cost is acknowledged rather than ignored. He also makes the gospel's pastoral promise explicit, connecting moral failure, repentance, and hope. The weakness is that the legal analogy quietly assumes the crucial premises: that God has imposed these laws, that private thoughts incur infinite guilt, and that punishing or sacrificing another person can satisfy justice for the offender. A human judge who writes the law, pays a penalty to himself, and then punishes nonacceptance would need further explanation. The score is mixed because the narrative is coherent within Christian assumptions, but those assumptions do most of the argumentative work.",
+              tags: []
+            },
+            con: {
+              time: "13:05",
+              role: "Inherited-guilt and divine-plan objection",
+              words:
+                "Dillahunty argues that God knowingly creates a world with original and inherited sin, then requires Jesus to die to solve a problem created by God's own rules and foreknowledge.",
+              score: 87,
+              critique:
+                "Dillahunty targets the gospel's moral architecture rather than merely rejecting its vocabulary. He asks why an all-knowing creator would knowingly establish a history of sin, inherited liability, sacrifice, and damnation instead of creating the saved directly or forgiving without a blood payment. This is directly responsive to Comfort's court analogy because it changes the comparison from an independent judge to the author of the entire legal system. The limitation is that he treats divine freedom and salvation as though the only plausible good would be maximal efficiency. A defender might argue that freely formed character or a redemptive history has value. Still, Comfort does not develop that reply here. The score is high because the objection exposes central unexplained moral premises.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Conscience and Moral Culpability",
+        timebox: "21:20-28:25",
+        score: {
+          pro: 40,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "21:30",
+              role: "Conscience-as-divine-law claim",
+              words:
+                "Comfort says God wrote moral law on Dillahunty's heart, so his conscience already knows theft, lying, blasphemy, lust, and sexual conduct are wrong even when he denies it.",
+              score: 40,
+              critique:
+                "Comfort correctly notices that people often share strong moral reactions and that conscience can be psychologically powerful. He also concedes that moral judgment can be socially shaped, which is a potentially useful opening for a more nuanced moral argument. The decisive weakness is his treatment of disagreement as confirmation of the conclusion. When Dillahunty identifies cases where lying seems justified and denies that divine names carry the proposed obligation, Comfort answers that scripture tells him Dillahunty secretly knows otherwise. That makes the claim insulated from the very counterexample under discussion. It also does not establish why conscience's source is God rather than culture, empathy, reflection, or evolution. The score is low because the argument asserts universal moral knowledge without an independent route to verify it.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "Comfort cites scripture as proof that Dillahunty knows God exists and moral law is divine, although the authority of that scripture is part of the dispute."
+                }
+              ]
+            },
+            con: {
+              time: "22:20",
+              role: "Moral-disagreement challenge",
+              words:
+                "Dillahunty grants that stealing is generally wrong but gives a case where lying protects Anne Frank, then asks how Comfort can show that conscience and disputed rules are given by God.",
+              score: 85,
+              critique:
+                "Dillahunty supplies a compact counterexample to an absolute rule and, more importantly, demands a warrant for Comfort's causal claim about conscience. The Anne Frank case shows that moral evaluation commonly weighs harms, duties, and context rather than classifying every lie as equivalent wrongdoing. His distinction between what he believes and what Comfort says he secretly knows also keeps the conversation from collapsing into mind-reading. The weakness is that counterexamples to simple prohibitions do not by themselves settle whether there are any objective moral norms or a divine source of conscience. A richer moral theory would need to explain why protective deception is right. The score is strong because the immediate burden lies on Comfort's stronger claim, which remains unverified.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Foreknowledge, Choice, and Atheism",
+        timebox: "28:30-38:30",
+        score: {
+          pro: 29,
+          con: 90
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "29:00",
+              role: "Individual-responsibility reply",
+              words:
+                "Comfort says a guilty defendant cannot evade responsibility by blaming God or original sin, then defines atheism as believing that nothing created everything and says Dillahunty is choosing unbelief.",
+              score: 29,
+              critique:
+                "Comfort tries to preserve ordinary accountability by comparing disbelief and wrongdoing with a defendant who cannot blame a creator for a crime. That instinct identifies a serious tension any theistic model must address: moral responsibility should not vanish merely because God knows the future. But the comparison does not answer Dillahunty's counterfactual question about why an omniscient creator chose this particular world. Comfort also changes the subject from Dillahunty's stated lack of belief to a broader cosmological thesis, despite being corrected that atheism alone entails no view about cosmic origins. Calling disbelief a choice likewise conflicts with the distinction between choosing to investigate and choosing what one finds convincing. The score is very low because the rebuttal substitutes labels and analogies for engagement with the foreknowledge argument.",
+              tags: []
+            },
+            con: {
+              time: "29:32",
+              role: "Counterfactual-responsibility argument",
+              words:
+                "Dillahunty argues that, if God knew and could have created a world in which he became a believer but chose this world instead, God bears responsibility for the resulting unbelief under Comfort's model.",
+              score: 90,
+              critique:
+                "Dillahunty cleanly formulates the internal challenge: grant divine omniscience, divine creative choice, and a possible world in which he believes, and then explain why selecting this world leaves only him responsible. He carefully says he is not denying everyday responsibility for his actions; he is testing the consistency of Comfort's theological account. That distinction prevents the criminal-court analogy from doing the work Comfort assigns it. The weakness is that the argument assumes God could actualize any particular free choice without changing its freedom, an assumption rejected by some theological accounts of counterfactual freedom. Yet Comfort neither states nor defends such an account. The score is very high because Dillahunty exposes the tension with precision and receives no premise-level reply.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Creation, Design, and Evolution",
+        timebox: "39:20-48:45",
+        score: {
+          pro: 36,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "42:30",
+              role: "Artifact-to-universe inference",
+              words:
+                "Comfort says creation proves a creator as buildings prove builders and paintings prove painters, adds that nature cannot create itself, and treats evolution as the foundation of Dillahunty's unbelief.",
+              score: 36,
+              critique:
+                "Comfort presents an accessible design intuition. Human artifacts are ordinarily evidence of intentional makers, and asking why there is a universe rather than nothing is a legitimate philosophical question. The problem is that the examples gain their force from independent knowledge of builders, painters, materials, and manufacturing, while the universe is the very case whose maker is disputed. The claim that nature cannot create itself also does not establish that a personal creator caused it, and the second-law remark is offered without the needed physical argument. Finally, attributing Dillahunty's atheism to evolution ignores his explicit correction. The score is low because the analogy raises a real explanatory question but provides neither a discriminating test nor a route from cosmic existence to the Christian God.",
+              tags: []
+            },
+            con: {
+              time: "44:00",
+              role: "Design-discrimination standard",
+              words:
+                "Dillahunty says an apparent structure must be investigated against known natural alternatives, using a beaver dam and a natural clog as examples of how design inferences require comparative evidence rather than common sense alone.",
+              score: 88,
+              critique:
+                "Dillahunty identifies the key inferential requirement behind any design claim: we distinguish intentional artifacts from natural patterns by comparing evidential traces, background knowledge, and available causal mechanisms. The beaver example grants that agency can be inferred without seeing an agent, but only when the relevant signatures and alternatives are investigated. This directly blocks Comfort's move from resemblance to conclusion. The weakness is that Dillahunty leaves little room for a philosophical argument from contingency or order that is not a forensic artifact inference. Those arguments would need separate treatment, not dismissal by the beaver example alone. The score is high because Comfort's actual argument is an artifact analogy, and Dillahunty explains exactly why its evidence cannot simply be transferred to the universe.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Relationship, Scripture, and Revelation",
+        timebox: "50:15-1:00:45",
+        score: {
+          pro: 45,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "52:30",
+              role: "Personal-relationship testimony",
+              words:
+                "Comfort says he has known God for forty-eight years as he knows his wife, hears God through scripture, and says a seeker should repent, trust Christ, and read the Bible with faith.",
+              score: 45,
+              critique:
+                "Comfort's testimony is plainly sincere and he articulates a lived devotional practice rather than pretending Christian belief is merely a detached theory. The appeal to scripture, repentance, and transformed character can explain why the gospel feels personally compelling to a believer. The weakness is epistemic: the proposed method begins by accepting the scripture and the God it is supposed to establish. When Dillahunty reports that he previously repented and believed, Comfort can reclassify that experience as false conversion. That makes failure to obtain revelation count against the seeker while success confirms the method. The marriage comparison also fails to supply comparable public traces of reciprocal interaction. The score is mixed-low because private testimony can matter personally, but it does not answer the shared question of whether the gospel is true.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "Comfort treats scripture and a conversion produced by trusting it as the basis for establishing the scripture's divine source."
+                }
+              ]
+            },
+            con: {
+              time: "53:45",
+              role: "Intersubjective-evidence comparison",
+              words:
+                "Dillahunty distinguishes a marriage, which can be documented and corroborated by its participants and community, from Comfort's asserted relationship with God, for which scripture alone cannot certify reciprocal interaction.",
+              score: 86,
+              critique:
+                "Dillahunty makes a strong intersubjective comparison. A marriage can normally be supported by records, mutual testimony, shared residence, and third-party observation; these do not prove every private feeling, but they give outsiders reason to accept that a relationship exists. By contrast, a prior scripture cannot itself document Comfort's personal relationship with its alleged author. This directly tests the analogy Comfort offered rather than demanding a sensational miracle. The limitation is that public evidence is not the only kind of rational evidence, and personal religious experience may have first-person force even when it cannot be transferred intact. Still, Comfort invokes the relationship as a reason others should accept the gospel, so transferable support is central. The score is high for identifying that distinction clearly and charitably.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Faith, Axioms, and Evidential Trust",
+        timebox: "1:45:15-1:53:45",
+        score: {
+          pro: 31,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:45:45",
+              role: "Experiential-certainty and trust analogy",
+              words:
+                "Comfort says he cannot unknow God because knowledge of God is experiential, calls God's existence axiomatic, and compares faith in God with ordinary trust in pilots, doctors, brakes, and traffic lights.",
+              score: 31,
+              critique:
+                "Comfort makes two understandable points: people often act amid uncertainty, and a sustained religious experience can feel more secure than a bare abstract belief. Those observations explain the psychology of committed faith. They do not, however, establish God's existence for an outsider. Calling the proposition axiomatic simply names the certainty Comfort attributes to it, while the pilot and doctor comparisons rely on observable training, records, regulation, repeated performance, and error correction. His assurance that any failed attempt to call on God reflects inadequate trust creates a no-lose explanation in which both success and failure preserve the original claim. The score is very low because the argument converts personal conviction into public warrant without supplying a shared evidential bridge.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "Comfort assumes God's existence and reliability as axiomatic while using that assumed reliability to validate faith in God."
+                }
+              ]
+            },
+            con: {
+              time: "1:51:05",
+              role: "Proportional-trust rebuttal",
+              words:
+                "Dillahunty says trust in pilots and doctors rests on demonstrated competence, regulation, and corrigible evidence, unlike a God claim that stays insulated when a sincere prayer or conversion attempt appears to fail.",
+              score: 88,
+              critique:
+                "Dillahunty answers the ordinary-trust analogy with the relevant contrast: confidence in pilots, medicine, and transport systems is calibrated through public training, oversight, track records, and mechanisms for detecting error. His point is not that such systems are infallible, but that their reliability is assessable and revisable. He then connects this standard to the conversion claim: if every apparent counterexample can be reclassified as bad faith or false conversion, the promise ceases to risk disconfirmation. The limitation is that he sometimes makes public verification sound like the only route to justified belief; intimate experiences can rationally affect the experiencer. But Comfort offers his experience as a general reason for others, not merely a private commitment. The score is high because the rebuttal exposes the analogy's missing evidential parity.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 40,
+        strengths: [
+          "Comfort states the traditional penal-substitution model clearly and connects it to repentance, forgiveness, and the seriousness of moral failure.",
+          "His design and conscience appeals identify genuine questions about moral experience and ultimate explanation, even though they do not establish his conclusions.",
+          "He presents his religious experience as a lived commitment rather than disguising it as a technical proof."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly uses scripture and the claimed certainty it produces to establish the divine law, divine revelation, and relationship with God that the discussion asks him to support.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 88,
+        strengths: [
+          "Dillahunty directly tests the moral coherence of inherited sin, divine foreknowledge, substitutionary atonement, and the claimed plan of salvation.",
+          "His design and marriage analogies make the need for comparative, intersubjectively assessable evidence unusually clear.",
+          "He distinguishes a lack of belief from a theory of cosmic origins and repeatedly asks Comfort to address the position actually stated."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes speaks as though transferable public verification is the uniform standard for every rational belief, leaving the legitimate first-person evidential role of experience underexplained.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
