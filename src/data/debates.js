@@ -49540,5 +49540,299 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "albrecht-price-bodily-resurrection-2022",
+    number: "138",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "William Albrecht vs Robert Price: Did Jesus Bodily Rise from the Dead?",
+    label: "Bodily resurrection, ancient parallels, and testimony",
+    date: "2026-07-31",
+    duration: "1 hr 53 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=CqpFmw4pwrY",
+    motion:
+      "Did Jesus Christ bodily rise from the dead, as early Christian sources claim?",
+    summary:
+      "Albrecht argues that Paul, Gospel appearances, and early Christian testimony establish a bodily resurrection; Price invokes historical analogy, textual tension, and natural explanations for Christian belief and growth.",
+    sourceNote:
+      "Based on the YouTube transcript for the Patristic Pillars upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Indeed Christ is risen bodily, risen.",
+        context:
+          "Albrecht's conclusion is that the earliest Christian texts and the following tradition consistently affirm a tangible risen Jesus."
+      },
+      con: {
+        text: "Belief in the resurrection of an ancient person is always inevitably going to be rendered improbable.",
+        context:
+          "Price's case applies historical analogy: in the absence of comparable, well-supported events, ancient resurrection stories should remain unlikely."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Bodily resurrection case",
+        speaker: "William Albrecht",
+        color: "teal"
+      },
+      con: {
+        name: "Historical-analogy skepticism",
+        speaker: "Robert Price",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 74,
+      con: 79
+    },
+    sections: [
+      {
+        title: "Historical Method and Early Testimony",
+        timebox: "05:00-35:36",
+        score: {
+          pro: 78,
+          con: 74
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "07:47",
+              role: "Early-testimony case",
+              words:
+                "Albrecht cites 1 Corinthians 15, Acts, Gospel appearances, and early church writers as mutually reinforcing testimony that Jesus was raised bodily rather than merely seen in visions.",
+              score: 78,
+              critique:
+                "Albrecht makes a proper cumulative move by beginning with Paul and then placing Acts, the Gospels, and early church writers alongside one another. He identifies the exact historical question at stake: whether the earliest witnesses understood resurrection as bodily, not only whether later Christians repeated the word. The appeal to multiple appearance traditions and to the contrast between David's tomb and Jesus' body gives the case real textual content. The weakness is that he treats coherence among Christian sources as more independent confirmation than the source relationships establish. He also repeatedly invokes later fathers to settle contested readings of earlier texts. The score is strong because he marshals relevant evidence in a focused way, but the chain needs more critical separation between tradition, interpretation, and event.",
+              tags: []
+            },
+            con: {
+              time: "28:26",
+              role: "Historical-analogy standard",
+              words:
+                "Price says historians must compare fragmentary ancient reports with present experience and modern analogues, so a resurrection claim stays improbable without a comparable, well-supported event.",
+              score: 74,
+              critique:
+                "Price articulates a recognizably historical standard rather than simply declaring miracles impossible. His examples of reports that should be treated cautiously, alongside contemporary exorcism and healing claims that merit investigation, show that he sees analogy as a graded filter rather than blanket naturalism. That is a useful reminder that source assertions alone do not establish extraordinary events. The weakness is that the standard remains too coarse when applied to a singular past claim. Lack of a modern analogue can lower a prior probability, but it does not assess the dating, independence, or explanatory force of the particular Christian evidence. Price also does not specify what level of ancient testimony could ever shift his verdict. The score is solid for methodological clarity, but limited by that underdeveloped threshold.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Ancient Parallels and Pagan Context",
+        timebox: "37:46-50:32",
+        score: {
+          pro: 75,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "37:46",
+              role: "Specific-parallel challenge",
+              words:
+                "Albrecht asks Price to identify pre-Christian textual evidence for Attis, Osiris, Baal, or other pagan figures being bodily raised in a way genuinely parallel to Jesus.",
+              score: 75,
+              critique:
+                "Albrecht rightly refuses to let a broad label such as dying-and-rising god substitute for source-specific comparison. His questions about dating, actual death, and later readings test the details that determine a useful parallel. He also presses Price to distinguish a body restored, a descent to the underworld, apotheosis, and the Christian claim of resurrection. The weakness is that Albrecht sometimes makes the comparison carry an all-or-nothing burden. Parallels can illuminate literary expectations without being identical to Jesus or directly borrowed from a pagan cult. His Justin Martyr reading leaves the dates and texts insufficiently shown. The score is solid because the demand for precision matters, but it does not dissolve the genre question.",
+              tags: []
+            },
+            con: {
+              time: "38:09",
+              role: "Comparative-myth response",
+              words:
+                "Price points to Attis, Osiris, Baal, and other ancient narratives of death, restoration, or ascent, arguing that these traditions make a miraculous Gospel story less historically unique.",
+              score: 82,
+              critique:
+                "Price's comparative response is strongest when he declines to rely on one perfect analogue. The existence of several ancient stories featuring death, restoration, divine ascent, or a transformed figure can make readers cautious about inferring a literal event from a religious narrative. He also correctly notes that historical comparison need not prove direct borrowing to matter; familiar narrative possibilities can affect how a report is read. The weakness is that he often responds to requests for dates and textual detail with assertion rather than close evidence. Attis, Osiris, and Baal have different sources, religious functions, and historical settings, so a cumulative resemblance does not settle the Gospel accounts' origin. The score is high because the comparison opens a relevant explanatory alternative, but it remains under-documented in this exchange.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Paul's Received Tradition",
+        timebox: "50:46-56:42",
+        score: {
+          pro: 74,
+          con: 74
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "51:57",
+              role: "Revelation-and-tradition harmonization",
+              words:
+                "Albrecht says Paul can receive the Gospel by revelation while also receiving resurrection tradition from the risen Christ, so 1 Corinthians 15 need not contradict Galatians.",
+              score: 74,
+              critique:
+                "Albrecht offers a possible reconciliation rather than denying the textual pressure Price identifies. Paul can use revelation language broadly, and the fact that a message is received need not logically require a merely human intermediary. His reminder that 1 Corinthians 11 also speaks of receiving material from the Lord makes the proposal more than an ad hoc escape. The weakness is evidential: the passages do not plainly describe a private, extended instruction by the risen Jesus, and early patristic interpretation cannot by itself establish what Paul meant. Albrecht moves from possible harmonization to confidence too quickly, especially when he treats later church testimony as proof of authorship and transmission. The score is solid because the reading is viable, but it lacks direct textual confirmation.",
+              tags: []
+            },
+            con: {
+              time: "50:56",
+              role: "Pauline-tension objection",
+              words:
+                "Price argues that Galatians presents Paul's Gospel as directly revealed, whereas 1 Corinthians 15 presents a received tradition, making the texts difficult to attribute to one coherent authorial account.",
+              score: 74,
+              critique:
+                "Price identifies a real interpretive tension. Galatians emphasizes independence from human authorities, while 1 Corinthians 15 uses the language of receiving and delivering tradition; asking how those claims fit is a fair source-critical question. He also resists allowing inherited church interpretation to settle the issue before the Pauline texts themselves are read. The weakness is his inflated conclusion that the letters cannot share an author unless the author has a divided personality. Gospel can name a comprehensive message in one context and a particular tradition in another, while revelation and tradition need not be mutually exclusive. The objection therefore establishes ambiguity, not incompatibility. The score is solid because the challenge targets a central text, but not higher because its framing treats a difficult reconciliation as impossible.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The objection treats Paul's use of 'gospel' and 'received' language as necessarily having one identical scope across distinct argumentative contexts."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Spiritual Body and Apostolic Tradition",
+        timebox: "58:08-77:39",
+        score: {
+          pro: 71,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "64:12",
+              role: "Glorified-body reading",
+              words:
+                "Albrecht argues that Paul's spiritual body is an incorruptible, glorified body rather than an immaterial ghost, and says Ignatius and other early writers preserve that bodily reading.",
+              score: 71,
+              critique:
+                "Albrecht makes an important semantic distinction: spiritual need not mean immaterial, and Paul's contrast can be read as one between mortal and glorified embodiment. His appeal to resurrection language about bodies and to early writers who call Christ both fleshly and spiritual gives that reading historical footing. The weakness is that he treats later orthodox continuity as evidence that the original meaning was settled, while Price is challenging precisely that line of transmission. The word spiritual still needs closer contextual analysis in 1 Corinthians 15, including why Paul contrasts flesh and blood with the kingdom. Albrecht also dismisses rival early Christians as outside the relevant church before establishing that boundary. The score is mixed-to-solid because the reading is plausible, but the transmission claim assumes part of what it must prove.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "Later orthodox witnesses are treated as secure proof of apostolic meaning while their privileged apostolic continuity is itself disputed in the exchange."
+                }
+              ]
+            },
+            con: {
+              time: "60:54",
+              role: "Spiritual-resurrection alternative",
+              words:
+                "Price reads 1 Corinthians 15 as teaching a spiritual rather than fleshly resurrection and says Luke's tangible Jesus directly conflicts with that Pauline formulation.",
+              score: 81,
+              critique:
+                "Price presses a meaningful internal-textual problem. First Corinthians says flesh and blood cannot inherit the kingdom and contrasts a natural body with a spiritual one, while Luke emphasizes a risen Jesus with flesh and bones. That contrast challenges any effortless harmonization and makes bodily-resurrection claims dependent on careful definitions. The weakness is that Price tends to map spiritual onto immaterial too quickly. Paul can contrast mortality, corruption, and natural life with a transformed bodily mode without endorsing a vaporous resurrection, and Luke's wording need not settle every Pauline category. The alleged contradiction is therefore a live interpretive dispute, not an immediate disproof of bodily resurrection. The score is high because Price targets the central semantic issue precisely, but capped because he treats one contested sense as settled.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Martyrdom, Growth, and Sincerity",
+        timebox: "91:08-100:32",
+        score: {
+          pro: 67,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "96:41",
+              role: "Transformation-and-witness appeal",
+              words:
+                "Albrecht says Paul, Ignatius, and other Christians accepted persecution because they knew Jesus had risen bodily, and that early eyewitness testimony best explains the faith's attraction.",
+              score: 67,
+              critique:
+                "Albrecht is right to distinguish a movement's willingness to suffer from mere opportunism. If early Christians were sincere, their commitment is evidence that resurrection belief mattered deeply and that a historical account should explain its force. His appeal to Paul and Ignatius also directs attention to people close to the earliest tradition. The weakness is the step from sincere commitment to knowing a bodily event occurred. People may die for propositions they received from trusted authorities, and the evidence for the fates and firsthand status of particular apostles is uneven. Albrecht further dismisses Mormon and Muslim comparisons with unsupported charges of fraud rather than explaining the relevant evidential difference. The score is below solid because sincerity is important background evidence, but it does not establish the event or eyewitness access.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Comparable examples of committed religious founders are set aside through unsupported assertions of fraud instead of a shared evidential standard."
+                }
+              ]
+            },
+            con: {
+              time: "91:08",
+              role: "Sincerity-without-verification account",
+              words:
+                "Price says martyrdom can show sincere belief rather than truth, and explains Christian growth through mutual care, ethics, family formation, and accessible monotheism.",
+              score: 83,
+              critique:
+                "Price gives the strongest naturalistic explanation in the debate by separating sincerity from verification and then naming mechanisms of growth. His account of care during crises, opposition to infant exposure, family networks, and a gentile-friendly form of monotheism offers more than a generic claim that religions spread for social reasons. It directly answers why courage and rapid expansion do not require a proven resurrection. The weakness is that these mechanisms are broad and partly drawn from later Christian history, so they do not by themselves reconstruct the first experiences of Peter, James, or Paul. A movement can be socially attractive and still begin with an unusual event. The score is high because Price supplies a positive, multi-factor account, while leaving the earliest trigger partly open.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 74,
+        strengths: [
+          "Albrecht grounds his case in named texts, especially 1 Corinthians 15, rather than treating later doctrine as a substitute for evidence.",
+          "His most productive pressure on Price asks for dated, source-specific ancient parallels rather than accepting a generic dying-and-rising-god category.",
+          "He consistently distinguishes a glorified body from a merely immaterial apparition, keeping the central disagreement visible."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly treated the agreement of later orthodox writers as secure proof that they possessed an unbroken, privileged apostolic interpretation.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "He set aside other examples of fervent religious commitment by calling their founders frauds without applying a comparably developed standard of evidence.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 79,
+        strengths: [
+          "Price supplies a clear historical-analogy standard and applies it without insisting that miracle claims are logically impossible.",
+          "His strongest textual work exposes the unresolved relationship between Paul's spiritual-body language and later tangible-resurrection narratives.",
+          "He gives a concrete social account of Christian growth that explains conviction and appeal without treating either as verification."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes treated different uses of gospel, revelation, and received tradition in Paul as mutually exclusive rather than testing whether their scopes differ by context.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His preferred immaterial reading of spiritual body was asserted more confidently than the disputed Greek usage and wider Pauline context warrant.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
