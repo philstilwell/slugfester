@@ -57,7 +57,7 @@ requireIncludes("app topics page", app, 'class="topic-card-reveal"');
 requireIncludes("app topics page", app, "Debate summary and speakers");
 requireIncludes("app topics page", app, "Speakers");
 requireIncludes("app topics page", app, "topicCategoriesForDebate");
-requireIncludes("app topics categories", app, "Cosmological arguments and contingency");
+requireIncludes("app topics categories", app, "Cosmological & Contingency Arguments");
 requireIncludes("app topics categories", app, "Science and design");
 requireIncludes("app topics categories", app, "Meaning and purpose");
 requireIncludes("app topics categories", app, "Morality and ethics");

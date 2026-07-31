@@ -478,7 +478,7 @@ function normalizeSearchValue(value = "") {
 const topicCategoryDefinitions = [
   {
     id: "cosmological-arguments",
-    title: "Cosmological arguments and contingency",
+    title: "Cosmological & Contingency Arguments",
     shortLabel: "Cosmological arguments",
     description:
       "Kalam, contingency, beginnings, finitude, fine-tuning, cosmic evidence, and arguments from the universe to God or necessary reality.",

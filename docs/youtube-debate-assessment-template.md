@@ -73,7 +73,7 @@ Design constraints:
 
 Topic categorization:
 
-- The current topic clusters are `Cosmological arguments and contingency`, `Science and design`, `Scripture, Jesus, and resurrection`, `Meaning and purpose`, `Morality and ethics`, `Evil, suffering, and hiddenness`, `Mind, consciousness, and free will`, `Logic, reason, and presuppositions`, `Religion, society, and public reason`, and `God, theism, and atheism`.
+- The current topic clusters are `Cosmological & Contingency Arguments`, `Science and design`, `Scripture, Jesus, and resurrection`, `Meaning and purpose`, `Morality and ethics`, `Evil, suffering, and hiddenness`, `Mind, consciousness, and free will`, `Logic, reason, and presuppositions`, `Religion, society, and public reason`, and `God, theism, and atheism`.
 - `/topics/` uses the debate `label` to determine the primary group and topic chips, so the label should contain the clearest recurring subject terms without adding interlocutor names.
 - After adding a debate, check that the new compact card appears under the intended `/topics/` category, that its card title remains a general topic title rather than a speaker-vs-speaker title, and that hover/focus reveals the full summary and compact speaker names within the card.
 
