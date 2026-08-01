@@ -60155,6 +60155,285 @@ export const debates = [
       }
     }
   },
+  {
+    id: "ehrman-peter-williams-gospels-historically-reliable-2018",
+    number: "176",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Bart Ehrman vs Peter J. Williams: Are the Gospels Historically Reliable?",
+    label: "Historical reliability of the Gospels",
+    date: "2026-08-01",
+    duration: "1 hr 29 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=foLI3KGbMnk",
+    motion:
+      "Are the canonical Gospels historically reliable accounts of Jesus' life, teaching, death, and resurrection?",
+    summary:
+      "Williams argues that authorship traditions, local knowledge, names, and converging narrative detail warrant trust; Ehrman argues that anonymous transmission, contradictions, theological development, and oral change prevent blanket reliability.",
+    sourceNote:
+      "Built from the English-original YouTube caption track for the 2018 Big Conversation moderated by Justin Brierley. Captions were checked against the recorded exchange; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "there aren't early manuscripts without those names on",
+        context:
+          "Williams argues that the unanimous manuscript titles and the relative obscurity of Mark and Luke favor authentic attribution over later invention."
+      },
+      con: {
+        text: "in many cases no, you cannot trust that",
+        context:
+          "Ehrman carefully limits his conclusion: the Gospels contain history, but agreement on some details does not warrant trusting every narrated event."
+      }
+    },
+    sides: {
+      pro: {
+        name: "The Gospels are historically reliable",
+        speaker: "Peter J. Williams",
+        color: "teal"
+      },
+      con: {
+        name: "The Gospels are not reliable throughout",
+        speaker: "Bart Ehrman",
+        color: "coral"
+      }
+    },
+    score: { pro: 86, con: 92 },
+    sections: [
+      {
+        title: "Authorship, dating, and eyewitness proximity",
+        timebox: "07:42-23:56",
+        score: { pro: 90, con: 91 },
+        exchanges: [
+          {
+            pro: {
+              time: "11:10",
+              role: "Uniform-attribution case",
+              words:
+                "Williams notes that extant Gospel manuscripts carry the same author names and asks why later Christians would invent the relatively obscure Mark and Luke as prestigious attributions.",
+              score: 90,
+              critique:
+                "Williams presents a serious cumulative case rather than treating the titles as self-authenticating. Uniform attribution across geographically dispersed copies is evidence against multiple late guesses, and Mark or Luke offer less obvious prestige than Peter or Paul. His appeal to the authors' Palestinian and Mediterranean competence also makes early access plausible. Yet the surviving titled manuscripts postdate initial composition, allowing a single attribution to spread before extant copies diverged. An anonymous work can acquire one stable title, and Luke's prologue distinguishes the author from eyewitnesses. The obscurity argument raises the probability of authenticity without establishing it. Williams earns a high score because he identifies positive evidence too often omitted, but he moves too readily from stable tradition and competence to named authorship and early dating.",
+              tags: []
+            },
+            con: {
+              time: "21:01",
+              role: "Internal-anonymity reply",
+              words:
+                "Ehrman argues that Luke never names himself, is not an eyewitness, and explicitly depends on earlier written and oral sources whose chains cannot now be reconstructed.",
+              score: 91,
+              critique:
+                "Ehrman keeps several questions properly separate: who wrote a text, when it was written, whether its author witnessed events, and whether particular reports are accurate. Luke's unnamed narrator expressly relies on predecessors, so calling him Paul's companion would not make him an eyewitness to Jesus. Ehrman also correctly notes that traditional authorship does not settle historicity; known ancient authors can report errors. The weakness is that anonymity alone supplies limited negative evidence, and he sometimes leans on mainstream dating without fully unpacking why each date follows. Williams's uniform titles and Acts' travel knowledge deserve a more direct alternative history of attribution. Still, Ehrman's distinctions prevent personal names from carrying evidential weight they cannot bear and leave source proximity as an open historical question.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Names, geography, and local knowledge",
+        timebox: "12:34-40:53",
+        score: { pro: 94, con: 88 },
+        exchanges: [
+          {
+            pro: {
+              time: "35:46",
+              role: "Onomastic convergence",
+              words:
+                "Williams combines accurate place knowledge with Palestinian name frequencies and the selective use of disambiguators such as origins or relatives for common names.",
+              score: 94,
+              critique:
+                "Williams offers the affirmative's strongest public evidence. The distribution of personal names, appropriate disambiguation of common names, knowledge of routes, crops, measures, titles, and local institutions forms a multi-feature pattern difficult to reproduce through unconstrained invention far away. These are independent checks against archaeology and other ancient evidence, not merely internal consistency. They support early, well-informed source material even if the final authors were not eyewitnesses. The inference must remain calibrated: accurate setting and nomenclature do not verify every speech, miracle, chronology, or private scene, and knowledgeable historical novelists can embed fiction in real contexts. Still, the clustering of subtle, nonobvious details materially raises the credibility of the tradition's informational pipeline. Ehrman's generic analogy to accurate modern fiction does not fully explain that cumulative specificity.",
+              tags: []
+            },
+            con: {
+              time: "38:25",
+              role: "Setting-versus-event distinction",
+              words:
+                "Ehrman grants accurate names and setting but argues that knowing a region does not show that disputed sayings or events occurred, just as informed fiction can use real details.",
+              score: 88,
+              critique:
+                "Ehrman's distinction is logically indispensable. Reliability is granular: a writer can know names, climate, roads, and offices while misreporting what a central figure said or did. Local accuracy therefore cannot validate miraculous claims or reconcile conflicting narratives by osmosis. His analogy to historically situated fiction illustrates the gap clearly. Yet he understates the evidential effect of Williams's pattern. The question is not whether setting entails truth but whether numerous correctly distributed details are more expected from sources close to events than from long, corrupting transmission. Even fiction requires access to accurate information, which matters to the proposed oral-distance model. Ehrman successfully blocks a sweeping conclusion, but “has no bearing” is too strong; contextual competence raises prior credibility while leaving each major claim separately assessable.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "The reply can underweight the cumulative significance of many independent, culturally specific details even though none proves the whole story alone."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Contradictions and the death of Judas",
+        timebox: "40:53-52:02",
+        score: { pro: 78, con: 95 },
+        exchanges: [
+          {
+            pro: {
+              time: "45:27",
+              role: "Underdetermined-harmonization defense",
+              words:
+                "Williams argues that Matthew and Acts share a field, Judas's death, and incomplete causal descriptions, leaving room for hanging followed by a fall and indirect purchase.",
+              score: 78,
+              critique:
+                "Williams is right that difference is not contradiction and that compressed ancient accounts can omit intermediate causes. A hanged body could later fall, and one person's money can fund a purchase attributed to that person indirectly. He also flags that Acts' wording is itself abrupt, so asking whether context is missing is legitimate. The problem is methodological. The proposed sequence is not stated by either account and is introduced precisely to preserve both; similar additions could reconcile almost any finite pair of stories. Matthew has priests buy the field after Judas returns the money, while Acts depicts Judas acquiring it and dying there, making agency and sequence natural points of tension. Williams establishes logical possibility, not historical probability, and his prior commitment to no mistakes makes the harmonization evidentially suspect.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "Unstated intermediate events are supplied in the direction required to preserve an antecedent belief that neither account can err."
+                }
+              ]
+            },
+            con: {
+              time: "43:43",
+              role: "Direct narrative conflict",
+              words:
+                "Ehrman contrasts Matthew's returned money, priestly purchase, and hanging with Acts' purchase by Judas and fatal fall, arguing that the natural readings conflict.",
+              score: 95,
+              critique:
+                "Ehrman selects a concrete test instead of gesturing at hundreds of discrepancies. He lays out agents, sequence, purchase, and manner of death, then asks what each source would communicate to an ordinary reader without imported repairs. This is the correct way to distinguish complementary detail from incompatible narrative. He also carefully avoids concluding that everything is false; the example defeats errorlessness and blanket trust, not the existence of Judas or every shared event. One can imagine a composite scenario, so strict logical contradiction may be overstated depending on how indirect agency is used. But historical assessment ranks natural readings rather than merely possible reconciliations. Because Williams's bridge depends on details neither author supplies, Ehrman wins the exchange decisively and appropriately narrows the conclusion to reliability in disputed cases.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Inerrancy and historical method",
+        timebox: "49:28-57:36",
+        score: { pro: 72, con: 94 },
+        exchanges: [
+          {
+            pro: {
+              time: "52:02",
+              role: "Rational-trust framework",
+              words:
+                "Williams distinguishes historical proof from rational personal trust, comparing Gospel confidence with the different evidential standards used in scholarship, friendship, and testimony.",
+              score: 72,
+              critique:
+                "Williams makes a valid point: rational trust can exceed what a history department can demonstrate, and people use different standards in friendship, courts, and scholarship. Historical evidence may support a source without proving every detail. That distinction could defend Christian commitment from the demand for deductive certainty. In this debate, however, it evades the advertised historical question. Williams affirms beforehand that all Scripture is true and contains no mistakes, then treats difficult cases under that constraint. Personal or theological warrant does not show that a neutral historical method should rank harmonization above error. His analogy to trusting a victim is morally charged and structurally dissimilar to comparing ancient narratives. The score falls because he blurs a defensible faith stance with the stronger claim that the texts are historically reliable throughout.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "“Trust” shifts from historically warranted confidence in reports to relational or faith-based commitment governed by different standards."
+                }
+              ]
+            },
+            con: {
+              time: "51:56",
+              role: "Falsifiability challenge",
+              words:
+                "Ehrman asks how someone committed in advance to there being no biblical mistakes could ever become open to recognizing one in a disputed passage.",
+              score: 94,
+              critique:
+                "Ehrman's question identifies the central methodological asymmetry. If no apparent conflict may count as error, every outcome triggers further harmonization and the claim ceases to risk falsification. Historical inquiry normally allows sources to be partly right and partly wrong; it does not begin with an exception for a sacred corpus. Ehrman also distinguishes believing God makes no mistakes from assuming human authors and transmitters made none, preventing a theological premise from silently settling textual history. His own naturalistic expectations could likewise bias miracle assessment, though he explicitly says miracles are not his reason for finding the Gospels unreliable. The challenge does not disprove inerrancy, but it shows why inerrancy cannot serve as the historical evidence for itself. Williams never provides a clear observation that would change his textual conclusion.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Christology and oral transmission",
+        timebox: "58:15-1:23:16",
+        score: { pro: 87, con: 93 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:04:58",
+              role: "Early-divinity continuity",
+              words:
+                "Williams reads Mark's scriptural opening, walking-on-water scene, and “I am” language as already portraying Jesus divinely, challenging a simple late escalation into John's Christology.",
+              score: 87,
+              critique:
+                "Williams effectively corrects an oversimplified developmental story. Mark can identify Jesus with divine-scriptural roles and present actions bearing theological significance, so high Christology is not absent merely because John's extended discourses are absent. This shows continuity across distinct literary presentations and warns against equating explicit first-person sayings with an author's entire view of Jesus. But Ehrman's claim concerns what the historical Jesus publicly said about himself, not whether Mark's narrator portrays him as divine. Williams repeatedly answers the latter and therefore only partly meets the argument. Allusions can establish the evangelist's theology without authenticating John's long self-referential speeches. The score remains strong because he complicates chronological inference, yet the distinction between narrative Christology and reported self-proclamation leaves Ehrman's core evidential contrast intact.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "Evidence that Mark's narrator portrays Jesus divinely does not directly answer whether Jesus historically delivered John's distinctive self-identifying discourses."
+                }
+              ]
+            },
+            con: {
+              time: "1:09:18",
+              role: "Missing-earlier-sayings argument",
+              words:
+                "Ehrman contrasts John's repeated divine self-identifications with their absence from Mark, Matthew, Luke, and reconstructed earlier sources, arguing that later Christians shaped the speeches.",
+              score: 93,
+              critique:
+                "Ehrman states the evidential contrast precisely. If Jesus repeatedly made the striking claims that dominate John, their absence from multiple earlier streams—despite those sources' intense interest in identity—is surprising. He also grants that Mark portrays Jesus as divine, preventing Williams from dissolving the argument by proving a point already conceded. The inference to later representation is probabilistic, not certain: selective genre, audience, source access, and limited narrative space can produce omission, while reconstructed Q, M, and L are hypothetical. Treating six inferred sources as fully independent can overstate the base. Nevertheless, John's distinctive vocabulary and subject matter require explanation, and Williams offers continuity in theological implication rather than evidence that the historical Jesus uttered the Johannine discourses. Ehrman therefore carries this comparison convincingly.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 86,
+        strengths: [
+          "Williams supplied unusually concrete external checks from names, disambiguators, geography, measures, routes, and local institutions.",
+          "His uniform-attribution and obscure-name arguments made traditional authorship a live historical hypothesis rather than a bare ecclesial assertion.",
+          "He showed that divine portrayals occur in Mark and complicated any simplistic claim that high Christology appears only in John."
+        ],
+        blunders: [
+          {
+            text:
+              "His antecedent commitment to no scriptural mistakes made added harmonizing details difficult to distinguish from evidence-led historical inference.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "He shifted from historically demonstrable reliability to personal and relational senses of trust when contradictions became difficult.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 92,
+        strengths: [
+          "Ehrman consistently separated authorship, eyewitness status, contextual competence, and event-level accuracy instead of treating them as one question.",
+          "His Judas comparison tested reliability with a specific narrative conflict and drew a calibrated conclusion rather than declaring the Gospels worthless.",
+          "He distinguished Mark's divine portrayal from Jesus' reported self-claims, preserving the force of the Johannine development argument."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes described accurate names and geography as having no bearing when their cumulative pattern does increase the probability of informed source access.",
+            links: [{ label: "Scope neglect", url: bias("scope-neglect") }]
+          },
+          {
+            text:
+              "His count of multiple pre-Johannine sources risked treating hypothetical and literarily dependent streams as more independent than they are.",
+            links: [
+              {
+                label: "Base-rate neglect",
+                url: bias("base-rate-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
