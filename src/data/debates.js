@@ -55963,6 +55963,363 @@ export const debates = [
       }
     }
   },
+  {
+    id: "craig-millican-does-god-exist-2011",
+    number: "161",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "William Lane Craig vs Peter Millican: Does God Exist?",
+    label: "God and skeptical empiricism",
+    date: "2026-08-01",
+    duration: "2 hr 19 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=9JVRy7bR7zI",
+    motion:
+      "Does the evidence from cosmology, fine-tuning, morality, Jesus' resurrection, and religious experience make Christian theism more reasonable than skeptical atheism?",
+    summary:
+      "Craig presents a five-part cumulative case for Christian theism; Millican challenges its priors, causal assumptions, probability claims, moral ontology, and historical evidence.",
+    sourceNote:
+      "Built from the English-original YouTube caption track. Captions were checked against the recorded exchange; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God makes sense of a wide range of the data",
+        context:
+          "Craig presents cosmology, fine-tuning, moral experience, resurrection claims, and personal experience as mutually reinforcing evidence for Christian theism."
+      },
+      con: {
+        text: "The only thing we can go on is scientific investigation",
+        context:
+          "Millican urges empirical caution where cosmology, mind, miracle claims, and causal intuitions outrun repeatable observation or settled physical theory."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian theist",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical atheist",
+        speaker: "Peter Millican",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 75,
+      con: 82
+    },
+    sections: [
+      {
+        title: "Burden, priors, and religious diversity",
+        timebox: "04:30-37:20",
+        score: {
+          pro: 76,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:48",
+              role: "Cumulative case",
+              words:
+                "Craig says theism explains philosophical, scientific, moral, historical, and existential data, and challenges Millican to defeat those arguments and supply a positive case for atheism.",
+              score: 76,
+              critique:
+                "Craig gives the audience a clear decision structure: several independent considerations are offered for theism, and atheism should be evaluated as more than the mere absence of assent. This makes the debate cumulative rather than dependent on one fragile proof. The weakness is his demand that Millican both dismantle all five arguments and prove atheism before theism loses rational priority. A cumulative case can fail because its components remain under-supported; its critic need not establish the contrary worldview deductively. Craig later softens the point by distinguishing atheism from agnosticism, but the opening still loads the burden asymmetrically. The score is solid because the framework is organized and relevant, though its proposed victory condition favors his side without sufficient justification.",
+              tags: []
+            },
+            con: {
+              time: "26:18",
+              role: "Prior-probability challenge",
+              words:
+                "Millican defines the Christian God hypothesis specifically and argues that religious diversity, culturally inherited belief, and absent evidence for disembodied intelligence impose a substantial prior burden.",
+              score: 80,
+              critique:
+                "Millican improves the debate by specifying the target as an omnipotent, omniscient, morally perfect creator acting through Jesus, rather than an unspecified supernatural cause. His appeal to religious diversity is relevant to prior confidence: similar social mechanisms generate many incompatible revelations, so inherited conviction alone is unreliable. He also explicitly denies inferring falsity merely from a belief's origin, avoiding the crude genetic fallacy Craig anticipates. Some historical rhetoric is too sweeping, particularly the picture of Christian centuries as almost uniformly suppressing learning, and his rough division of prior probability among thousands of religions is not a worked Bayesian calculation. Still, the central epistemic challenge survives those flourishes. The score is strong because he supplies a principled burden rather than merely announcing disbelief.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Causation and the beginning of the universe",
+        timebox: "05:25-01:00:23",
+        score: {
+          pro: 77,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:48",
+              role: "Kalam inference",
+              words:
+                "Craig argues that the universe began, that nothing has no powers or potentialities, and that its transcendent cause must be an unembodied mind rather than a causally inert abstract object.",
+              score: 77,
+              critique:
+                "Craig states the Kalam inference cleanly and makes an intuitively powerful point: literal nonbeing contains no properties from which a universe could emerge. His distinction between an efficient cause and a material cause also answers the claim that ordinary examples involve rearranging prior matter. The problem comes in identifying the cause. Moving from nonphysical causation to only two candidates—an abstract object or an unembodied mind—does not establish that the alternatives are exhaustive. His supporting appeal to substance dualism remains contested and is not demonstrated by noting that mental and physical properties differ. The score remains solid because the causal question is genuine and his replies expose an equivocation about quantum vacua, but the final personal-cause inference claims more than the preceding premises secure.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The personal-cause conclusion partly rests on no third nonphysical causal category being presently available, rather than on excluding every alternative."
+                }
+              ]
+            },
+            con: {
+              time: "37:34",
+              role: "Causal-scope rebuttal",
+              words:
+                "Millican distinguishes changes within existing matter from creation ex nihilo, separates the local from the global universe, and questions whether temporal causal concepts apply at time's boundary.",
+              score: 81,
+              critique:
+                "Millican attacks the vulnerable transfer in the Kalam: every observed causal episode occurs within an existing physical order, whereas the conclusion concerns that order as a whole. His local-versus-global universe distinction is especially useful because a beginning of our expanding region need not be the beginning of every physical reality. He also correctly notes that causation becomes conceptually difficult if time itself is part of what begins. His weaker move is saying quantum particles apparently arise from nothing; a quantum vacuum is a structured physical state, as he later concedes, so it cannot straightforwardly model creation from nonbeing. That mistake does not erase the broader scope objection. The score is strong because he identifies where empirical induction ends, though his most concrete counterexample changes the meaning of “nothing.”",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The rebuttal initially treats a quantum vacuum as the nearest evidential case of creation from nothing despite its physical structure."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Actual infinity and subtraction",
+        timebox: "06:00-01:19:27",
+        score: {
+          pro: 67,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "06:02",
+              role: "Infinity objection",
+              words:
+                "Craig subtracts different infinite subsets from an infinite collection of coins and argues that the resulting nonidentical remainders show actual infinities cannot exist concretely.",
+              score: 67,
+              critique:
+                "Craig's coin illustration makes the unfamiliar behavior of infinite sets vivid and gives listeners a concrete reason to question a beginningless past. The difficulty is that different subcollections are removed under different mappings, so the apparently contradictory remainders do not arise from one well-defined subtraction operation. Cardinal arithmetic does not define general subtraction precisely because several cardinals can satisfy the reverse addition equation; that nonuniqueness is not a contradiction. Craig later insists that physical removal cannot be prohibited by mathematical convention, but this repeats the intuition rather than answering Millican's explanation of why the operations differ. The score is mixed because the example legitimately highlights how actual infinities depart from finite expectations, yet it treats that departure as incoherence without deriving an inconsistency in the supposed world.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument moves between ordinary finite subtraction and non-unique cardinal set removal as though they were the same operation."
+                }
+              ]
+            },
+            con: {
+              time: "01:10:01",
+              role: "Cardinal-arithmetic reply",
+              words:
+                "Millican explains that infinity-plus-what-equals-infinity has multiple solutions, so subtraction lacks a unique value; this is no contradiction, just as zero divided by zero is undefined.",
+              score: 88,
+              critique:
+                "Millican gives the debate's clearest technical rebuttal. He does not merely say that infinite sets are strange; he explains why subtraction is unavailable when the inverse equation has multiple solutions. The comparison with division by zero separates an undefined operation from an inconsistent object, directly targeting the inference Craig needs. He also grants that infinite arithmetic is counterintuitive, which keeps the response from pretending mathematical possibility automatically settles concrete metaphysics. Its remaining limitation is that a coherent cardinal model does not by itself prove a physically instantiated infinite past is possible; further metaphysical and temporal arguments could still be offered. The score is very strong because Millican defeats the alleged contradiction while keeping that narrower conclusion distinct from a complete cosmology.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Fine-tuning and cosmic design",
+        timebox: "12:54-01:24:22",
+        score: {
+          pro: 81,
+          con: 83
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "13:04",
+              role: "Design inference",
+              words:
+                "Craig argues that life-permitting constants and initial conditions occupy an extraordinarily narrow range, leaving design as the best explanation after necessity and chance are rejected.",
+              score: 81,
+              critique:
+                "Craig presents fine-tuning as an abductive argument rather than a deductive proof, and the combination of a narrow life-permitting range with an independently recognizable outcome gives the inference genuine force. His signal-versus-noise analogy usefully explains why improbability alone is not the whole case. Yet the three-option menu—necessity, chance, or design—compresses unresolved possibilities, and probability over alternative constants is difficult to define without a justified measure. The later answer that God may create like an artist addresses inefficiency but not whether this universe is more expected under perfect theism than under rival designer hypotheses. The score is strong because fine-tuning is a real explanatory datum and Craig states it well, but his confidence outruns the available prior and likelihood assignments.",
+              tags: [
+                {
+                  label: "Base-rate neglect",
+                  type: "bias",
+                  url: bias("base-rate-neglect"),
+                  context:
+                    "The design inference stresses the observed fit without establishing comparative prior probabilities for designers, multiverses, or deeper physical constraints."
+                }
+              ]
+            },
+            con: {
+              time: "01:02:28",
+              role: "Underdetermination reply",
+              words:
+                "Millican concedes that fine-tuning naturally invites design, then stresses a sample of one, incomplete physics, multiverse selection, and the gap between a designer and the Christian God.",
+              score: 83,
+              critique:
+                "Millican's concession is an argumentative virtue: he acknowledges that stable, unexplained fine-tuning would be evidence for cosmic intelligence, then asks what the current evidence can actually bear. The sample-of-one problem, unsettled probability measure, observational selection, and incompleteness of fundamental physics are all relevant brakes on Craig's confidence. His anti-God and cosmic-inefficiency examples also show that design would not by itself identify moral perfection or Christianity. Some objections are weaker than others: an omnipotent creator need not optimize for spatial efficiency, and possible extraterrestrial life creates a theological question rather than a logical contradiction. The score is strong because the cumulative underdetermination remains substantial, while his explicit conditional openness avoids dismissing the datum merely because its conclusion is theistic.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Objective morality and divine grounding",
+        timebox: "16:13-01:38:00",
+        score: {
+          pro: 70,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "16:18",
+              role: "Moral argument",
+              words:
+                "Craig argues that objective values and duties exist, that naturalism supplies neither intrinsic human worth nor binding prescriptions, and that prescriptions require a personal moral prescriber.",
+              score: 70,
+              critique:
+                "Craig distinguishes moral knowledge from moral ontology, correctly allowing that atheists can recognize duties while asking what makes those duties objectively binding. That is a serious metaethical question, and his appeal to widespread moral experience supports realism more directly than crude sociological consensus would. The weak link is the claim that prescriptions require a prescriber. Moral reasons may be grounded in rational relations, welfare, contractual justification, or irreducible normative facts without functioning like commands from a person. Craig also assumes that evolutionary origin would debunk value while exempting theistic moral cognition from parallel reliability questions. The score is solid but limited because the argument identifies an explanatory demand yet treats divine command as necessary before competing realist accounts have been excluded.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The inference assumes that genuine moral obligation must have the command-like structure that would require a personal lawgiver."
+                }
+              ]
+            },
+            con: {
+              time: "01:26:01",
+              role: "Secular-realist challenge",
+              words:
+                "Millican notes that many nontheists are moral realists and asks how God's existence changes the moral properties atheists can apprehend without believing in him.",
+              score: 84,
+              critique:
+                "Millican focuses precisely on Craig's missing necessity claim. Citing nontheistic moral realists does not prove their theories true, but it demonstrates that realism and theism are conceptually separable and puts the burden back on Craig to explain why every secular ground fails. His chair analogy is useful: one can know that something is present without knowing its ultimate constitution, so disagreement over ontology does not erase moral knowledge. Millican also gives positive candidates—rationality, knowledge, sentience, and species relationship—rather than reducing morality to majority preference. He does not develop one complete secular ontology, leaving Craig free to ask where normativity ultimately stops. The score is strong because a critic need not solve all metaethics to show that Craig's personal-prescriber premise remains unsupported.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection, experience, and hiddenness",
+        timebox: "20:18-01:46:36",
+        score: {
+          pro: 73,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "20:38",
+              role: "Historical-experiential case",
+              words:
+                "Craig cites the empty tomb, appearances, and transformed disciples as facts best explained by resurrection, then says sincere seekers can also know God through immediate personal experience.",
+              score: 73,
+              critique:
+                "Craig rightly separates the resurrection case into claims that can be examined historically rather than asking the audience to accept a bare miracle report. The appearances and emergence of resurrection belief are genuine data, and a theist may reasonably assign miracles a higher prior than a naturalist does. However, Craig leans heavily on claims of scholarly agreement without fully comparing psychological, legendary, or burial alternatives. The personal-experience argument then shifts from public inference to private warrant and risks insulating the conclusion when sincere seekers report conflicting revelations or none at all. The score is solid because the case has identifiable evidence and explanatory structure, but it does not establish that resurrection outperforms every combined natural account or that felt immediacy reliably identifies Christianity.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Claims about majority historical agreement are asked to carry substantial weight without the disputed source and inference questions being shown in detail."
+                },
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "Immediate religious experience is treated as self-authenticating despite comparable experiences supporting incompatible traditions and conclusions."
+                }
+              ]
+            },
+            con: {
+              time: "01:30:42",
+              role: "Source-and-psychology reply",
+              words:
+                "Millican stresses Gospel dependence, discrepancies, absent external corroboration, and the need to compare miracle claims with natural psychological processes inside committed religious communities.",
+              score: 79,
+              critique:
+                "Millican appropriately widens historical assessment beyond asking whether selected Gospel claims can be defended one by one. Literary dependence reduces independence, discrepant passion narratives complicate harmonization, and the psychology of expectation and group reinforcement belongs in any comparison of explanations. His later appeal to failed-prophecy research is especially relevant to the claim that costly commitment guarantees evidential adequacy. Still, he compresses the dating and transmission questions and does not fully engage early resurrection traditions, the range of reported appearances, or Craig's distinction between admitting facts and excluding miracles philosophically. Some examples, such as Matthew's resurrected saints, challenge Gospel reliability more directly than the narrower core facts. The score is strong because he supplies plausible alternative mechanisms, though not a complete historical reconstruction.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 75,
+        strengths: [
+          "Craig presented a disciplined cumulative case and repeatedly returned the discussion to explicit premises, explanatory alternatives, and the distinction between atheism and agnosticism.",
+          "His fine-tuning presentation and his separation of moral knowledge from moral ontology forced Millican to address substantive explanatory questions rather than rely on disbelief alone.",
+          "He answered many direct objections under time pressure, especially concerning quantum vacua, the scope of the Borde-Guth-Vilenkin theorem, and the public facts used in the resurrection case."
+        ],
+        blunders: [
+          {
+            text:
+              "He treated non-unique cardinal subtraction as a contradiction in actual infinity even after Millican explained why the inverse operation is simply undefined.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "He assumed that objective prescriptions must be personal commands, leaving secular realist accounts excluded by definition rather than by argument.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 82,
+        strengths: [
+          "Millican defined the Christian hypothesis precisely and supplied a coherent evidential posture grounded in religious diversity, empirical fallibility, and comparative explanation.",
+          "His cardinal-arithmetic rebuttal directly answered Craig's claimed contradiction and was the clearest technically decisive exchange of the debate.",
+          "He granted the genuine evidential interest of fine-tuning while carefully separating a possible designer inference from omnipotence, moral perfection, and specifically Christian theism."
+        ],
+        blunders: [
+          {
+            text:
+              "He initially described quantum-vacuum events as particles arising from nothing, although the vacuum is a physically structured state and not nonbeing.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His broad story of Christian centuries producing almost no intellectual progress exceeded the historical support supplied in the debate.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
