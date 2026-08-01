@@ -53,6 +53,20 @@ export function rankingsPath() {
   return "/rankings/";
 }
 
+export function interlocutorSlug(value = "") {
+  return String(value)
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+export function interlocutorPath(personOrName) {
+  const name = typeof personOrName === "string" ? personOrName : personOrName.name;
+  return `/interlocutor/${encodeURIComponent(interlocutorSlug(name))}/`;
+}
+
 export function backendPath() {
   return "/backend/";
 }
@@ -367,6 +381,46 @@ export function rankingsSeo(debates = [], rankedInterlocutorCount = 0) {
       breadcrumbJsonLd([
         { name: SITE_NAME, path: "/" },
         { name: "Rankings", path: rankingsPath() }
+      ])
+    ]
+  };
+}
+
+export function interlocutorSeo(person, appearances = 0) {
+  const profilePath = interlocutorPath(person);
+  const appearanceLabel = `${appearances} ${appearances === 1 ? "debate scorecard" : "debate scorecards"}`;
+  const description = `${person.name}'s Slugfester debate profile, including published score averages, opponents faced, topic performance, and ${appearanceLabel}.`;
+
+  return {
+    title: pageTitle(`${person.name} debate profile`),
+    description,
+    canonicalPath: profilePath,
+    lastmod: SITE_UPDATED_DATE,
+    imagePath: DEFAULT_IMAGE,
+    imageAlt: `${person.name}'s Slugfester debate profile.`,
+    type: "website",
+    jsonLd: [
+      organizationJsonLd(),
+      websiteJsonLd(),
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        name: `${person.name} debate profile`,
+        description,
+        url: absoluteUrl(profilePath),
+        isPartOf: {
+          "@id": WEBSITE_ID
+        },
+        mainEntity: {
+          "@type": "Person",
+          name: person.name,
+          image: absoluteUrl(person.src)
+        }
+      },
+      breadcrumbJsonLd([
+        { name: SITE_NAME, path: "/" },
+        { name: "Rankings", path: rankingsPath() },
+        { name: person.name, path: profilePath }
       ])
     ]
   };

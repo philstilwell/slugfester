@@ -16,6 +16,9 @@ import {
   debateNumberLabel,
   debatePath,
   debateSeo,
+  interlocutorPath,
+  interlocutorSeo,
+  interlocutorSlug,
   landingSeo,
   notFoundSeo,
   referencePath,
@@ -42,6 +45,7 @@ const debateHashRoutePattern = /^#\/debate\/([a-z0-9-]+)$/;
 const searchHashRoutePattern = /^#\/search$/;
 const topicsHashRoutePattern = /^#\/topics$/;
 const rankingsHashRoutePattern = /^#\/rankings$/;
+const interlocutorHashRoutePattern = /^#\/interlocutor\/([a-z0-9-]+)$/;
 const backendHashRoutePattern = /^#\/backend$/;
 const assessmentHashRoutePattern = /^#\/assessment$/;
 const referenceHashRoutePattern = /^#\/reference\/(fallacy|bias)\/([a-z0-9-]+)(?:\?debate=([a-z0-9-]+))?$/;
@@ -49,6 +53,7 @@ const debatePathRoutePattern = /^\/debate\/([a-z0-9-]+)\/?$/;
 const searchPathRoutePattern = /^\/search\/?$/;
 const topicsPathRoutePattern = /^\/topics\/?$/;
 const rankingsPathRoutePattern = /^\/rankings\/?$/;
+const interlocutorPathRoutePattern = /^\/interlocutor\/([a-z0-9-]+)\/?$/;
 const backendPathRoutePattern = /^\/backend\/?$/;
 const assessmentPathRoutePattern = /^\/assessment\/?$/;
 const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?$/;
@@ -256,7 +261,14 @@ function currentPrimaryNavKey() {
   const { hash, pathname } = window.location;
   if (hash.match(searchHashRoutePattern) || pathname.match(searchPathRoutePattern)) return "search";
   if (hash.match(topicsHashRoutePattern) || pathname.match(topicsPathRoutePattern)) return "topics";
-  if (hash.match(rankingsHashRoutePattern) || pathname.match(rankingsPathRoutePattern)) return "rankings";
+  if (
+    hash.match(rankingsHashRoutePattern) ||
+    hash.match(interlocutorHashRoutePattern) ||
+    pathname.match(rankingsPathRoutePattern) ||
+    pathname.match(interlocutorPathRoutePattern)
+  ) {
+    return "rankings";
+  }
   if (
     hash.match(backendHashRoutePattern) ||
     hash.match(assessmentHashRoutePattern) ||
@@ -901,6 +913,9 @@ function rankingState() {
   const topic = params.get("topic") || "all";
   const minimum = Number.parseInt(params.get("minimum"), 10);
   const sort = params.get("sort") || "average";
+  const knownPeople = new Set(searchFacets().people.map((person) => person.name));
+  const comparisonA = params.get("compare-a") || "";
+  const comparisonB = params.get("compare-b") || "";
 
   return {
     topic:
@@ -910,7 +925,9 @@ function rankingState() {
     minimum: rankingMinimumOptions.includes(minimum)
       ? minimum
       : MIN_RANKED_DEBATE_APPEARANCES,
-    sort: rankingSortOptions.some((option) => option.value === sort) ? sort : "average"
+    sort: rankingSortOptions.some((option) => option.value === sort) ? sort : "average",
+    comparisonA: knownPeople.has(comparisonA) ? comparisonA : "",
+    comparisonB: knownPeople.has(comparisonB) && comparisonB !== comparisonA ? comparisonB : ""
   };
 }
 
@@ -922,6 +939,8 @@ function rankingUrl(state) {
     params.set("minimum", String(state.minimum));
   }
   if (state.sort !== "average") params.set("sort", state.sort);
+  if (state.comparisonA) params.set("compare-a", state.comparisonA);
+  if (state.comparisonB) params.set("compare-b", state.comparisonB);
 
   const query = params.toString();
   return `${rankingsPath()}${query ? `?${query}` : ""}`;
@@ -963,6 +982,102 @@ function rankingTopicSummary(appearances) {
     )[0];
 }
 
+function sampleConfidence(appearances) {
+  if (appearances <= 3) {
+    return {
+      tone: "limited",
+      label: "Limited sample",
+      description: "Three scorecards establish an early signal, not a settled ranking."
+    };
+  }
+
+  if (appearances <= 6) {
+    return {
+      tone: "developing",
+      label: "Developing sample",
+      description: "Several scorecards provide useful context, though more appearances can still move the average."
+    };
+  }
+
+  return {
+    tone: "established",
+    label: "Established sample",
+    description: "A broader scorecard sample makes the average more stable."
+  };
+}
+
+function scoreMedian(scores) {
+  const ordered = [...scores].sort((a, b) => a - b);
+  const middle = Math.floor(ordered.length / 2);
+  return ordered.length % 2 ? ordered[middle] : (ordered[middle - 1] + ordered[middle]) / 2;
+}
+
+function profileScoreDistribution(records) {
+  const scores = records.map((record) => record.score);
+  const lowest = Math.min(...scores);
+  const highest = Math.max(...scores);
+  const spread = highest - lowest;
+  const consistency =
+    spread <= 7
+      ? "Tight score spread"
+      : spread <= 15
+        ? "Moderate score spread"
+        : "Wide score spread";
+
+  return {
+    median: scoreMedian(scores),
+    lowest,
+    highest,
+    consistency,
+    bands: [
+      { label: "80-100", tone: "strong", count: scores.filter((score) => score >= 80).length },
+      { label: "65-79", tone: "mixed", count: scores.filter((score) => score >= 65 && score < 80).length },
+      { label: "Below 65", tone: "weak", count: scores.filter((score) => score < 65).length }
+    ]
+  };
+}
+
+function profileTopicBreakdown(records) {
+  const topics = new Map();
+
+  records.forEach((record) => {
+    record.categories.forEach((category) => {
+      const topic = topics.get(category.id) || { ...category, appearances: 0, totalScore: 0 };
+      topic.appearances += 1;
+      topic.totalScore += record.score;
+      topics.set(category.id, topic);
+    });
+  });
+
+  return [...topics.values()]
+    .map((topic) => ({ ...topic, averageScore: topic.totalScore / topic.appearances }))
+    .sort((a, b) => b.appearances - a.appearances || b.averageScore - a.averageScore || a.title.localeCompare(b.title));
+}
+
+function profileOpponentBreakdown(records) {
+  const opponents = new Map();
+
+  records.forEach((record) => {
+    record.opponents.forEach((opponent) => {
+      const current = opponents.get(opponent.name) || {
+        ...opponent,
+        appearances: 0,
+        totalOpponentScore: 0
+      };
+      current.appearances += 1;
+      current.totalOpponentScore += record.opponentScore;
+      opponents.set(opponent.name, current);
+    });
+  });
+
+  return [...opponents.values()]
+    .map((opponent) => ({
+      ...opponent,
+      averageOpponentScore: opponent.totalOpponentScore / opponent.appearances
+    }))
+    .sort((a, b) => b.appearances - a.appearances || b.averageOpponentScore - a.averageOpponentScore || a.name.localeCompare(b.name));
+}
+
 function rankingTagSummary(records) {
   const totals = {
     scoredMoves: 0,
@@ -998,9 +1113,11 @@ function rankedInterlocutors(state) {
   rankingDebates(state).forEach((debate) => {
     ["pro", "con"].forEach((sideKey) => {
       const side = debate.sides[sideKey];
+      const opponentSideKey = sideKey === "pro" ? "con" : "pro";
       const score = debate.score[sideKey];
-      const opponentScore = debate.score[sideKey === "pro" ? "con" : "pro"];
+      const opponentScore = debate.score[opponentSideKey];
       const categories = topicCategoriesForDebate(debate);
+      const opponents = avatarsForSpeakerText(debate.sides[opponentSideKey].speaker);
 
       avatarsForSpeakerText(side.speaker).forEach((avatar) => {
         const person = people.get(avatar.name) || {
@@ -1019,7 +1136,8 @@ function rankedInterlocutors(state) {
           debate,
           opponentScore,
           score,
-          sideKey
+          sideKey,
+          opponents
         });
         people.set(avatar.name, person);
       });
@@ -1206,6 +1324,8 @@ function renderRankings() {
         </aside>
       </section>
 
+      ${renderRankingComparison(state)}
+
       <section class="ranking-tool" aria-label="Ranking controls">
         <form class="ranking-form">
           <span class="ranking-control">
@@ -1282,8 +1402,87 @@ function rankingHeading(sort) {
   return headings[sort] || headings.average;
 }
 
+function renderSampleConfidence(appearances) {
+  const confidence = sampleConfidence(appearances);
+
+  return `<span class="sample-confidence ${confidence.tone}" title="${escapeHtml(confidence.description)}"><i aria-hidden="true"></i>${escapeHtml(confidence.label)}</span>`;
+}
+
+function renderComparisonOptions(people, selectedName, placeholder) {
+  return [
+    `<option value="">${escapeHtml(placeholder)}</option>`,
+    ...people.map(
+      (person) =>
+        `<option value="${escapeHtml(person.name)}"${person.name === selectedName ? " selected" : ""}>${escapeHtml(person.name)}</option>`
+    )
+  ].join("");
+}
+
+function renderComparisonPerson(person) {
+  return `
+    <article class="comparison-person">
+      <a class="comparison-person-identity" href="${escapeHtml(interlocutorPath(person))}">
+        <img src="${escapeHtml(person.src)}" alt="${escapeHtml(person.name)}" width="512" height="512" loading="lazy" decoding="async">
+        <span>
+          <strong>${escapeHtml(person.name)}</strong>
+          <small>${person.appearances} ${person.appearances === 1 ? "scorecard" : "scorecards"}</small>
+        </span>
+      </a>
+      <dl class="comparison-person-stats">
+        <div><dt>Avg.</dt><dd class="${scoreTone(Math.round(person.averageScore))}">${formatAverageScore(person.averageScore)}</dd></div>
+        <div><dt>Opponents' Avg.</dt><dd class="${scoreTone(Math.round(person.averageOpponentScore))}">${formatAverageScore(person.averageOpponentScore)}</dd></div>
+        <div><dt>Fallacies</dt><dd class="fallacy">${formatTagRate(person.tagSummary.fallacyRate)}</dd></div>
+        <div><dt>Biases</dt><dd class="bias">${formatTagRate(person.tagSummary.biasRate)}</dd></div>
+      </dl>
+    </article>
+  `;
+}
+
+function renderRankingComparison(state) {
+  const allPeople = searchFacets().people;
+  const comparisonRankings = rankedInterlocutors({ ...state, minimum: 1, sort: "name" });
+  const first = comparisonRankings.find((person) => person.name === state.comparisonA);
+  const second = comparisonRankings.find((person) => person.name === state.comparisonB);
+  const selectedBoth = state.comparisonA && state.comparisonB;
+  const comparisonContent =
+    first && second
+      ? `<div class="comparison-results">${renderComparisonPerson(first)}${renderComparisonPerson(second)}</div>`
+      : `<p class="comparison-empty">${selectedBoth ? "One selected interlocutor has no qualifying scorecards in the current topic focus." : "Choose two interlocutors to compare their score averages, opponents faced, and named reasoning-tag rates."}</p>`;
+
+  return `
+    <section class="ranking-comparison" aria-labelledby="ranking-comparison-heading">
+      <div class="ranking-comparison-heading">
+        <div>
+          <p class="eyebrow">Head-to-head</p>
+          <h2 id="ranking-comparison-heading">Compare interlocutors</h2>
+          <p>Comparison follows the current topic focus and uses all available appearances within it.</p>
+        </div>
+      </div>
+      <form class="ranking-comparison-form">
+        <label class="ranking-control" for="ranking-comparison-a">
+          <span>First interlocutor</span>
+          <select id="ranking-comparison-a" name="comparison-a">
+            ${renderComparisonOptions(allPeople, state.comparisonA, "Choose an interlocutor")}
+          </select>
+        </label>
+        <label class="ranking-control" for="ranking-comparison-b">
+          <span>Second interlocutor</span>
+          <select id="ranking-comparison-b" name="comparison-b">
+            ${renderComparisonOptions(allPeople, state.comparisonB, "Choose an interlocutor")}
+          </select>
+        </label>
+        <div class="ranking-comparison-actions">
+          <button class="button primary" type="submit">Compare</button>
+          ${selectedBoth ? `<button class="button secondary" type="button" data-clear-comparison>Clear</button>` : ""}
+        </div>
+      </form>
+      ${comparisonContent}
+    </section>
+  `;
+}
+
 function renderRankingCard(person, maximumTagRate) {
-  const searchHref = searchUrl({ page: 1, query: "", people: [person.name] });
+  const profileHref = interlocutorPath(person);
   const debateLabel = `${person.appearances} ${person.appearances === 1 ? "debate" : "debates"}`;
   const firstName = person.name.trim().split(/\s+/)[0];
   const topic = person.strongestTopic;
@@ -1294,12 +1493,12 @@ function renderRankingCard(person, maximumTagRate) {
   return `
     <li>
       <article class="ranking-card">
-        <a class="ranking-card-main" href="${escapeHtml(searchHref)}" aria-label="View ${escapeHtml(debateLabel)} featuring ${escapeHtml(person.name)}">
+        <a class="ranking-card-main" href="${escapeHtml(profileHref)}" aria-label="Open ${escapeHtml(person.name)}'s debate profile">
           <span class="ranking-place" aria-label="Rank ${person.rank}">${person.rank}</span>
           <img src="${escapeHtml(person.src)}" alt="${escapeHtml(person.name)}" width="512" height="512" loading="lazy" decoding="async">
           <span class="ranking-person">
             <strong>${escapeHtml(person.name)}</strong>
-            <small>${escapeHtml(debateLabel)}</small>
+            <span class="ranking-appearance-line"><small>${escapeHtml(debateLabel)}</small>${renderSampleConfidence(person.appearances)}</span>
             <small class="ranking-topic">Most common topic: ${escapeHtml(topic?.title || "Uncategorized")}</small>
             <span class="ranking-tag-bars" aria-label="${escapeHtml(person.name)}'s reasoning-tag rates">
               <span class="ranking-tag-rate fallacy">
@@ -1341,6 +1540,182 @@ function renderRankingMethod() {
       </div>
     </details>
   `;
+}
+
+function profileForSlug(slug) {
+  return rankedInterlocutors({ topic: "all", minimum: 1, sort: "name" }).find(
+    (person) => interlocutorSlug(person.name) === slug
+  );
+}
+
+function renderProfileMetric(label, value, tone = "") {
+  return `<div class="profile-metric${tone ? ` ${tone}` : ""}"><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`;
+}
+
+function renderProfileDistribution(distribution, appearances) {
+  return `
+    <section class="profile-distribution" aria-labelledby="profile-distribution-heading">
+      <div class="profile-section-heading">
+        <div>
+          <p class="eyebrow">Score profile</p>
+          <h2 id="profile-distribution-heading">Distribution, not a sequence</h2>
+        </div>
+        <p>Scorecards are grouped by published score bands rather than presented as a chronological trend.</p>
+      </div>
+      <div class="profile-distribution-overview">
+        <strong>${escapeHtml(distribution.consistency)}</strong>
+        <span>Median ${formatAverageScore(distribution.median)} · Range ${distribution.lowest}-${distribution.highest}</span>
+      </div>
+      <ol class="profile-score-bands">
+        ${distribution.bands
+          .map((band) => {
+            const width = appearances ? (band.count / appearances) * 100 : 0;
+            return `<li class="${band.tone}"><span>${band.label}</span><i aria-hidden="true"><b style="--bar-width: ${width.toFixed(2)}%"></b></i><strong>${band.count}</strong></li>`;
+          })
+          .join("")}
+      </ol>
+    </section>
+  `;
+}
+
+function renderProfileTopics(topics) {
+  return `
+    <section class="profile-breakdown" aria-labelledby="profile-topics-heading">
+      <div class="profile-section-heading">
+        <div>
+          <p class="eyebrow">Topic record</p>
+          <h2 id="profile-topics-heading">Performance by topic</h2>
+        </div>
+      </div>
+      <ol class="profile-breakdown-list">
+        ${topics
+          .map(
+            (topic) => `
+              <li>
+                <span><strong>${escapeHtml(topic.title)}</strong><small>${topic.appearances} ${topic.appearances === 1 ? "scorecard" : "scorecards"}</small></span>
+                <b class="${scoreTone(Math.round(topic.averageScore))}">${formatAverageScore(topic.averageScore)}</b>
+              </li>
+            `
+          )
+          .join("")}
+      </ol>
+    </section>
+  `;
+}
+
+function renderProfileOpponents(opponents) {
+  return `
+    <section class="profile-breakdown" aria-labelledby="profile-opponents-heading">
+      <div class="profile-section-heading">
+        <div>
+          <p class="eyebrow">Opponents faced</p>
+          <h2 id="profile-opponents-heading">Published opposition</h2>
+        </div>
+      </div>
+      <ol class="profile-opponent-list">
+        ${opponents
+          .map(
+            (opponent) => `
+              <li>
+                <a href="${escapeHtml(interlocutorPath(opponent))}">
+                  <img src="${escapeHtml(opponent.src)}" alt="${escapeHtml(opponent.name)}" width="512" height="512" loading="lazy" decoding="async">
+                  <span><strong>${escapeHtml(opponent.name)}</strong><small>${opponent.appearances} ${opponent.appearances === 1 ? "meeting" : "meetings"}</small></span>
+                </a>
+                <b class="${scoreTone(Math.round(opponent.averageOpponentScore))}">${formatAverageScore(opponent.averageOpponentScore)}</b>
+              </li>
+            `
+          )
+          .join("")}
+      </ol>
+    </section>
+  `;
+}
+
+function renderProfileDebateCard(record, person) {
+  const debate = record.debate;
+  const opponentNames = record.opponents.map((opponent) => opponent.name).join(", ");
+
+  return `
+    <article class="profile-debate-card">
+      <p class="eyebrow">${escapeHtml(debateNumberLabel(debate))}</p>
+      <h3><a href="${escapeHtml(debatePath(debate))}">${escapeHtml(debate.title)}</a></h3>
+      <p>${escapeHtml(debate.label)}</p>
+      <span class="profile-debate-opponent">Against ${escapeHtml(opponentNames || "the opposing side")}</span>
+      <dl>
+        <div><dt>${escapeHtml(person.name.split(/\s+/)[0])}'s score</dt><dd class="${scoreTone(record.score)}">${record.score}</dd></div>
+        <div><dt>Opponents' score</dt><dd class="${scoreTone(record.opponentScore)}">${record.opponentScore}</dd></div>
+      </dl>
+    </article>
+  `;
+}
+
+function renderInterlocutorProfile(slug) {
+  const person = profileForSlug(slug);
+
+  if (!person) {
+    setSeo(notFoundSeo());
+    app.innerHTML = renderShell(`
+      <main class="not-found">
+        <p class="eyebrow">No profile</p>
+        <h1>Interlocutor not found</h1>
+        <a class="button primary" href="${rankingsPath()}">Back to Rankings</a>
+      </main>
+    `);
+    return;
+  }
+
+  const distribution = profileScoreDistribution(person.records);
+  const topics = profileTopicBreakdown(person.records);
+  const opponents = profileOpponentBreakdown(person.records);
+  const confidence = sampleConfidence(person.appearances);
+  const scorecards = [...person.records].sort(
+    (a, b) => Number.parseInt(a.debate.number, 10) - Number.parseInt(b.debate.number, 10)
+  );
+
+  setSeo(interlocutorSeo(person, person.appearances));
+  app.innerHTML = renderShell(`
+    <main class="interlocutor-profile-page">
+      <a class="back-link profile-back-link" href="${rankingsPath()}">Back to Rankings & Flags</a>
+
+      <section class="profile-hero">
+        <div class="profile-identity">
+          <img src="${escapeHtml(person.src)}" alt="${escapeHtml(person.name)}" width="512" height="512" decoding="async">
+          <div>
+            <p class="eyebrow">Interlocutor profile</p>
+            <h1>${escapeHtml(person.name)}</h1>
+            <p>${person.appearances} published ${person.appearances === 1 ? "scorecard" : "scorecards"} across ${topics.length} ${topics.length === 1 ? "topic" : "topics"}.</p>
+            <span class="sample-confidence ${confidence.tone}" title="${escapeHtml(confidence.description)}"><i aria-hidden="true"></i>${escapeHtml(confidence.label)}</span>
+          </div>
+        </div>
+        <dl class="profile-hero-scores">
+          ${renderProfileMetric("Average score", formatAverageScore(person.averageScore), scoreTone(Math.round(person.averageScore)))}
+          ${renderProfileMetric("Opponents' Avg.", formatAverageScore(person.averageOpponentScore), scoreTone(Math.round(person.averageOpponentScore)))}
+          ${renderProfileMetric("Fallacies", formatTagRate(person.tagSummary.fallacyRate), "fallacy")}
+          ${renderProfileMetric("Biases", formatTagRate(person.tagSummary.biasRate), "bias")}
+        </dl>
+      </section>
+
+      ${renderProfileDistribution(distribution, person.appearances)}
+
+      <section class="profile-detail-grid">
+        ${renderProfileTopics(topics)}
+        ${renderProfileOpponents(opponents)}
+      </section>
+
+      <section class="profile-scorecards" aria-labelledby="profile-scorecards-heading">
+        <div class="profile-section-heading">
+          <div>
+            <p class="eyebrow">Linked record</p>
+            <h2 id="profile-scorecards-heading">Debate scorecards</h2>
+          </div>
+          <p>Open a scorecard to read the transcript-grounded assessment behind its published score.</p>
+        </div>
+        <div class="profile-debate-grid">
+          ${scorecards.map((record) => renderProfileDebateCard(record, person)).join("")}
+        </div>
+      </section>
+    </main>
+  `);
 }
 
 function renderTopicGroup(group) {
@@ -1703,6 +2078,7 @@ function bindRankingControls(state) {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
     navigateRankings({
+      ...state,
       topic: form.get("topic") || "all",
       minimum: Number.parseInt(form.get("minimum"), 10),
       sort: form.get("sort") || "average"
@@ -1711,10 +2087,25 @@ function bindRankingControls(state) {
 
   page.querySelector("[data-clear-rankings]")?.addEventListener("click", () => {
     navigateRankings({
+      ...state,
       topic: "all",
       minimum: MIN_RANKED_DEBATE_APPEARANCES,
       sort: "average"
     });
+  });
+
+  page.querySelector(".ranking-comparison-form")?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const form = new FormData(event.currentTarget);
+    navigateRankings({
+      ...state,
+      comparisonA: form.get("comparison-a") || "",
+      comparisonB: form.get("comparison-b") || ""
+    });
+  });
+
+  page.querySelector("[data-clear-comparison]")?.addEventListener("click", () => {
+    navigateRankings({ ...state, comparisonA: "", comparisonB: "" });
   });
 }
 
@@ -2231,6 +2622,8 @@ function route() {
     hash.match(topicsHashRoutePattern) || window.location.pathname.match(topicsPathRoutePattern);
   const rankingsMatch =
     hash.match(rankingsHashRoutePattern) || window.location.pathname.match(rankingsPathRoutePattern);
+  const interlocutorMatch =
+    hash.match(interlocutorHashRoutePattern) || window.location.pathname.match(interlocutorPathRoutePattern);
   const backendMatch =
     hash.match(backendHashRoutePattern) ||
     window.location.pathname.match(backendPathRoutePattern) ||
@@ -2248,6 +2641,8 @@ function route() {
     renderTopics();
   } else if (rankingsMatch) {
     renderRankings();
+  } else if (interlocutorMatch) {
+    renderInterlocutorProfile(decodeURIComponent(interlocutorMatch[1]));
   } else if (backendMatch) {
     renderBackend();
   } else if (referenceMatch) {
@@ -2281,6 +2676,7 @@ function shouldHandleInternally(link) {
     !url.pathname.match(searchPathRoutePattern) &&
     !url.pathname.match(topicsPathRoutePattern) &&
     !url.pathname.match(rankingsPathRoutePattern) &&
+    !url.pathname.match(interlocutorPathRoutePattern) &&
     !url.pathname.match(backendPathRoutePattern) &&
     !url.pathname.match(assessmentPathRoutePattern) &&
     !url.pathname.match(referencePathRoutePattern)
@@ -2294,6 +2690,7 @@ function shouldHandleInternally(link) {
     searchPathRoutePattern.test(url.pathname) ||
     topicsPathRoutePattern.test(url.pathname) ||
     rankingsPathRoutePattern.test(url.pathname) ||
+    interlocutorPathRoutePattern.test(url.pathname) ||
     backendPathRoutePattern.test(url.pathname) ||
     assessmentPathRoutePattern.test(url.pathname) ||
     referencePathRoutePattern.test(url.pathname)

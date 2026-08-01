@@ -2,6 +2,7 @@ import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { debates } from "../src/data/debates.js";
+import { avatarsForSpeakerText } from "../src/data/interlocutors.js";
 import { referenceDefinitions } from "../src/data/references.js";
 import {
   DEFAULT_DESCRIPTION,
@@ -21,6 +22,8 @@ import {
   assessmentSeo,
   debatePath,
   debateSeo,
+  interlocutorPath,
+  interlocutorSeo,
   landingSeo,
   notFoundSeo,
   referencePath,
@@ -35,7 +38,7 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260731-rankings-flags-order";
+const assetVersion = "20260731-interlocutor-profiles";
 const cloudflareWebAnalytics =
   "<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{\"token\": \"05c16e0e536340d0a1e0fdcaa6451389\"}'></script><!-- End Cloudflare Web Analytics -->";
 
@@ -216,6 +219,18 @@ const pageOutputs = new Map();
 const sitemapUrls = [];
 const latest = latestDate();
 
+const interlocutorProfiles = new Map();
+
+debates.forEach((debate) => {
+  ["pro", "con"].forEach((sideKey) => {
+    avatarsForSpeakerText(debate.sides[sideKey].speaker).forEach((person) => {
+      const profile = interlocutorProfiles.get(person.name) || { person, appearances: 0 };
+      profile.appearances += 1;
+      interlocutorProfiles.set(person.name, profile);
+    });
+  });
+});
+
 function addPage(pathname, seo, noscriptText, fallbackLastmod = latest) {
   const lastmod = seo.lastmod || seo.modifiedTime || fallbackLastmod;
   pageOutputs.set(outputPathForRoute(pathname), renderHtml(seo, noscriptText));
@@ -247,6 +262,16 @@ addPage(
   rankingsSeo(debates),
   "Compare Slugfester interlocutor scores and topic-level reasoning flags across published debate assessments."
 );
+
+[...interlocutorProfiles.values()]
+  .sort((a, b) => a.person.name.localeCompare(b.person.name))
+  .forEach(({ person, appearances }) => {
+    addPage(
+      interlocutorPath(person),
+      interlocutorSeo(person, appearances),
+      `${person.name}'s Slugfester profile includes score averages, opponents faced, topic performance, and linked debate scorecards.`
+    );
+  });
 
 addPage(
   backendPath(),
@@ -311,6 +336,7 @@ if (!checkOnly) {
   await rm(join(root, "reference"), { recursive: true, force: true });
   await rm(join(root, "topics"), { recursive: true, force: true });
   await rm(join(root, "rankings"), { recursive: true, force: true });
+  await rm(join(root, "interlocutor"), { recursive: true, force: true });
   await rm(join(root, "backend"), { recursive: true, force: true });
   await rm(join(root, "assessment"), { recursive: true, force: true });
 }
