@@ -58090,6 +58090,260 @@ export const debates = [
       }
     }
   },
+  {
+    id: "craig-krauss-evidence-god-2012",
+    number: "168",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "William Lane Craig vs Lawrence Krauss: Is There Evidence for God?",
+    label: "Evidence, cosmology, and divine explanation",
+    date: "2026-08-01",
+    duration: "2 hr 14 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=TqANWuXQ3Z0",
+    motion:
+      "Does the greater weight of philosophical, scientific, moral, and historical evidence support God's existence?",
+    summary:
+      "Craig argues that five observations raise the probability of theism; Krauss restricts evidence toward falsifiable empirical tests and offers natural cosmological alternatives.",
+    sourceNote:
+      "Built from the English-original YouTube caption track. Captions were checked against the recorded exchange; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Evidence is anything that makes a belief more probable than it would have been without it",
+        context:
+          "Craig uses a likelihood conception broad enough to include philosophical, scientific, moral, and historical observations."
+      },
+      con: {
+        text: "We have to force our beliefs to conform to the evidence of reality",
+        context:
+          "Krauss urges empirical discipline when intuition conflicts with the observed strangeness of modern physics."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Evidence for theism",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "Empirical naturalism",
+        speaker: "Lawrence Krauss",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 85,
+      con: 73
+    },
+    sections: [
+      {
+        title: "What counts as evidence?",
+        timebox: "00:55-01:17:32",
+        score: {
+          pro: 88,
+          con: 62
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "00:55",
+              role: "Likelihood account of evidence",
+              words:
+                "Craig defines evidence as an observation more probable if a hypothesis is true than otherwise, so indirect scientific, historical, and philosophical facts can all bear on God.",
+              score: 88,
+              critique:
+                "Craig adopts a standard probabilistic conception: evidence need not be a repeatable laboratory event if it changes the relative likelihood of competing hypotheses. This sensibly includes traces of the past, singular cosmological conditions, and explanatory facts. He also keeps the motion modest, claiming evidence rather than deductive certainty. The difficulty is implementation. Craig rarely supplies defensible numerical likelihoods or priors, and assertions that contingency or resurrection is “more probable” on theism can conceal disputed background assumptions. Evidence for a broad supernatural cause is not automatically evidence for the Christian God. Nevertheless, Krauss's demand for direct falsifiability excludes ordinary historical and abductive reasoning too aggressively. Craig wins this methodological exchange by giving a coherent criterion and repeatedly applying it to identifiable observations.",
+              tags: []
+            },
+            con: {
+              time: "01:13:57",
+              role: "Falsifiability-and-consensus standard",
+              words:
+                "Krauss says evidence must be empirically recordable and falsifiable, then cites the overwhelming nonbelief of National Academy scientists as a probability against Craig's case.",
+              score: 62,
+              critique:
+                "Krauss is right to demand contact with observation and to ask what would count against a hypothesis. His question about disconfirmation usefully tests whether Craig's theism is insulated. But falsifiability is not the definition of all evidence; it is one proposed demarcation for scientific theories, and historical evidence can support claims without controlled repetition. The survey of elite scientists reports belief, not the likelihood of Craig's premises, and expertise in physics does not automatically confer expertise in moral ontology or ancient history. Krauss even shifts from individual dissent to the claim that “90%” is a measurable probability of no evidence. The score is low because empirical accountability is valuable, but consensus is substituted for direct analysis and the evidential category is artificially narrowed.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "The religious views of National Academy members are treated as a measured probability that Craig's diverse arguments lack evidence."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Contingency, cosmic origins, and nothing",
+        timebox: "02:25-01:25:03",
+        score: {
+          pro: 89,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "02:25",
+              role: "Two cosmological inferences",
+              words:
+                "Craig separately argues that contingent beings need a necessary explanation and that a universe beginning with spacetime requires an uncaused, nonphysical personal cause.",
+              score: 89,
+              critique:
+                "Craig improves clarity by separating contingency from temporal beginning. His ball analogy motivates explanation without assuming every entity is caused, while the beginning argument asks what could cause spacetime rather than which earlier physical state preceded it. He correctly observes that Hartle-Hawking geometry, a quantum vacuum, laws, or a tunneling amplitude are not literal nonbeing. Krauss's models may remove a classical first instant without addressing why that structure obtains. Craig still overstates the Borde-Guth-Vilenkin theorem as an absolute beginning and asserts that personal agency exhausts nonphysical causal options. A brute or necessary universe remains logically available even if explanatorily costly. The score is very high because Krauss's technical examples qualify cosmology but do not answer the metaphysical distinctions Craig actually draws.",
+              tags: []
+            },
+            con: {
+              time: "01:15:43",
+              role: "Quantum-cosmology alternative",
+              words:
+                "Krauss invokes tunneling geometries, emergent spacetime, quantum fluctuations, and multiverse models to show that beginnings need not resemble objects appearing within preexisting classical space.",
+              score: 76,
+              critique:
+                "Krauss provides genuinely relevant expertise: quantum cosmology can lack an earlier classical time, and everyday causal intuitions should not dictate high-energy physics. His explanation that the observable universe's beginning is a scientific question usefully limits Craig's confidence. Yet he repeatedly calls model structures “nothing” even while describing quantum laws, amplitudes, or geometries, then claims something can come from nothing. That verbal move does not answer ontological absence. Some cited models are possible mathematical proposals rather than confirmed origins, and a future-eternal universe can still have a finite past. The score is above average because Krauss broadens the physical possibilities and challenges naive temporal causation, but he never supplies a literal-nothing model or an explanation of the framework itself.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Quantum states or boundaryless geometries with mathematical structure are described as nothing when answering Craig's claim about nonbeing."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Fine-tuning, multiverses, and atypical observers",
+        timebox: "09:55-01:31:31",
+        score: {
+          pro: 86,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "11:01",
+              role: "Design likelihood argument",
+              words:
+                "Craig compares necessity, chance, and design, arguing that multiverse selection predicts simpler Boltzmann observers and merely relocates fine-tuning to the universe-generating mechanism.",
+              score: 86,
+              critique:
+                "Craig correctly focuses on the underlying constants and initial conditions rather than whether Earth is hospitable. He also presents two serious multiverse questions: whether the generator has the required laws and whether typical observers under the measure resemble us rather than minimal fluctuations. Those objections keep “many worlds” from functioning as a cost-free answer. However, his trilemma is schematic; physical explanations can combine selection, constraints, and unknown dynamics, while “design” lacks a probability distribution over divine choices. Some quoted fine-tuning magnitudes depend on parameterization and contested measures. Craig's claim that design is obviously more probable therefore exceeds the analysis. The score is strong because he directly engages chance-based alternatives and Krauss concedes genuine puzzles, though neither side can calculate the decisive comparison.",
+              tags: []
+            },
+            con: {
+              time: "01:19:47",
+              role: "Dynamical-and-selection reply",
+              words:
+                "Krauss says low entropy may be dynamically generated, the cosmological constant remains unexplained rather than designed, and unknown life forms or multiverse selection weaken fine-tuning claims.",
+              score: 84,
+              critique:
+                "Krauss gives the debate's most substantive scientific rebuttal. He distinguishes unexplained parameter values from evidence of adjustment, identifies proposed dynamics for low entropy, and notes that natural selection effects can make observers unsurprised to occupy habitable domains. His admission that vacuum energy remains a major mystery is intellectually responsible. Still, saying unknown forms of life may exist does not answer the narrow ranges needed for stable matter, chemistry, or complex structure. A multiverse requires a measure and generator, and Krauss does not answer Craig's atypical-observer objection. His claim that the universe is not fine-tuned slides between being hostile to life overall and possessing life-permitting fundamentals. The score is high because he targets specific examples and mechanisms, but the broader likelihood question remains open.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality and resurrection evidence",
+        timebox: "12:57-01:33:10",
+        score: {
+          pro: 77,
+          con: 68
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:26:43",
+              role: "Ontology-and-history defense",
+              words:
+                "Craig distinguishes defining moral language from grounding objective duties and argues that the empty tomb, appearances, and disciples' belief require a comparative historical explanation.",
+              score: 77,
+              critique:
+                "Craig correctly identifies two category errors. Defining kindness does not explain why it is objectively obligatory, and noting that naturalistic processes occur does not answer a historical inference to the best explanation. His divine-nature reply also blocks Krauss's suggestion that God arbitrarily resets moral content. Still, Craig assumes that naturalism excludes every form of objective moral realism and links determinism too quickly to the absence of duties. His resurrection case overstates consensus on the empty tomb and treats disciples' willingness to suffer as stronger evidence than sincerity alone permits. Theism from earlier arguments can raise a miracle's prior, but that cumulative dependence needs explicit handling. The score is good because Krauss scarcely engages the actual ontology or sources, not because Craig's exclusive explanations are established.",
+              tags: []
+            },
+            con: {
+              time: "01:31:34",
+              role: "Independent-morality and testimony reply",
+              words:
+                "Krauss says objective morality, if real, need not depend on God, while resurrection rests on anecdotal reports whose believers' willingness to die demonstrates conviction rather than truth.",
+              score: 68,
+              critique:
+                "Krauss makes two valid limiting points. Objective truth would constrain God rather than become true through arbitrary choice, and martyrdom shows commitment, not accuracy; people die for incompatible falsehoods. He also appropriately resists turning unresolved moral origins into a divine conclusion. But he provides no account of what grounds objective normativity, so possibility functions as a reply to Craig's exclusivity claim rather than a competing explanation. On resurrection he labels the evidence anecdotal without distinguishing early creedal material, group appearance claims, or the empty-tomb arguments. Testimony is still evidence, albeit defeasible, and ancient history rarely offers instrument recordings. The score is moderate because Krauss punctures two overstatements but applies a scientific evidential standard too crudely to moral philosophy and historical reconstruction.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 85,
+        strengths: [
+          "Craig gave a coherent likelihood account of evidence and organized five observations into explicit comparative arguments.",
+          "He distinguished literal nonbeing from quantum or geometrical structures and contingency from a temporal-beginning argument.",
+          "His fine-tuning responses directly addressed multiverse generation and typical-observer problems rather than ignoring scientific alternatives."
+        ],
+        blunders: [
+          {
+            text:
+              "He overstated conditional cosmological theorems and disputed fine-tuning measures as if their theological interpretation were scientifically settled.",
+            links: [
+              {
+                label: "Authority bias",
+                url: bias("authority-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "He treated naturalism as excluding objective morality and responsibility without addressing secular realist or compatibilist accounts.",
+            links: [
+              {
+                label: "Belief bias",
+                url: bias("belief-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 73,
+        strengths: [
+          "Krauss supplied relevant quantum-cosmological models and warned against imposing everyday intuition on empirically strange physics.",
+          "His fine-tuning rebuttal discussed concrete dynamics, selection effects, and the unresolved cosmological constant rather than offering only rhetoric.",
+          "He correctly separated martyr sincerity from historical truth and asked what observations could disconfirm Craig's worldview."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly called structured quantum states or geometries nothing, obscuring rather than answering Craig's claim about ontological nonbeing.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "He used elite scientists' nonbelief as a probability measure against arguments extending beyond their disciplinary expertise.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
