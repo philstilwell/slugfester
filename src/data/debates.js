@@ -56320,6 +56320,356 @@ export const debates = [
       }
     }
   },
+  {
+    id: "craig-kagan-god-morality-2009",
+    number: "162",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "William Lane Craig vs Shelly Kagan: Is God Necessary for Morality?",
+    label: "Moral grounding and cosmic accountability",
+    date: "2026-08-01",
+    duration: "1 hr 30 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=Rm2wShHJ2iA",
+    motion:
+      "Is God necessary for objective moral values, duties, human significance, and accountability, or can a secular moral realism provide an adequate foundation?",
+    summary:
+      "Craig argues that morality requires God's nature, commands, and final judgment; Kagan offers secular accounts based on harm, categorical reasons, rational agreement, and present human significance.",
+    sourceNote:
+      "Built from the English-original YouTube caption track. Captions were checked against the recorded exchange; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Without God objective moral values, moral duties, and moral accountability would not exist",
+        context:
+          "Craig organizes his case around three claims: God's nature grounds value, divine commands ground obligation, and judgment makes moral choices ultimately consequential."
+      },
+      con: {
+        text: "The fact it doesn't have cosmic significance doesn't seem to me to undermine its significance",
+        context:
+          "Kagan denies that a person's suffering, love, or rescue becomes objectively unimportant merely because its effects are neither eternal nor universe-wide."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theistic moral grounding",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "Secular moral realism",
+        speaker: "Shelly Kagan",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 67,
+      con: 87
+    },
+    sections: [
+      {
+        title: "Objective morality and the harm standard",
+        timebox: "03:22-25:58",
+        score: {
+          pro: 74,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "23:18",
+              role: "Three-part theistic case",
+              words:
+                "Craig argues that objective value, binding duty, and ultimate accountability require God; otherwise evolved human preferences describe behavior but cannot establish how anyone ought to behave.",
+              score: 74,
+              critique:
+                "Craig usefully separates moral behavior and knowledge from moral ontology, so the existence of decent atheists does not answer his grounding question. Organizing the case around values, duties, and accountability also gives the debate a clear structure. Yet the opening moves too quickly from naturalism's need for an account to the claim that only God can supply one. Evolutionary influence on moral judgment may create epistemic pressure without showing that every secular moral fact is illusory, just as causal explanations of perception do not by themselves eliminate external objects. Craig's quotations from naturalists show that some thinkers accept anti-realism, not that naturalism entails it. The score is respectable because he identifies a genuine explanatory task, but his necessity claim still needs argument.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Quotations from selected naturalists illustrate one conclusion within naturalism but do not establish that every naturalistic moral realism fails."
+                }
+              ]
+            },
+            con: {
+              time: "03:24",
+              role: "Moral-content proposal",
+              words:
+                "Kagan begins with an ordinary realist standard: acts are wrong when they unjustifiably harm people and right when they help, independently of whether a society approves.",
+              score: 84,
+              critique:
+                "Kagan immediately gives secular realism substantive content instead of resting on disbelief: torture harms its victim, assistance benefits its recipient, and social approval cannot reverse those facts. This anchors objectivity in features that moral deliberation already tracks and blocks the caricature that atheism must reduce morality to taste. He is also careful to distinguish what makes an act wrong from how humans came to recognize it. The account remains schematic, however. Harm can conflict with autonomy, distributive fairness, desert, or aggregate welfare, and saying that harm is objectively reason-giving does not yet explain the metaphysical status of that reason. Kagan later offers nonfoundational and contractual options, but the opening does not choose between them. The score is strong for positive relevance while stopping short of a full theory.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Categorical reasons and rational agreement",
+        timebox: "08:42-49:58",
+        score: {
+          pro: 70,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "49:14",
+              role: "Grounding objection",
+              words:
+                "Craig argues that Kagan's contract merely redescribes agreement among imagined rational agents and stops the explanation before showing why their choices create intrinsic value or obligation.",
+              score: 70,
+              critique:
+                "Craig correctly presses the point at which contractarian procedure is supposed to become categorical normativity. Agreement can identify mutually acceptable rules, but actual agreements sometimes authorize injustice, while hypothetical agreement needs an independent account of which agents, information, and motivations count as rational. His question therefore exposes unfinished work in Kagan's sketch. Craig overstates the result when he treats that incompleteness as positive evidence for divine command. The same further-question strategy can be directed at why God's nature is good or why a command generates a reason for someone not already committed to obedience. Kagan's stopping point may be contestable without being less legitimate than Craig's. The score is moderate: the objection is incisive against the presented contract theory, but it does not establish the uniquely theistic conclusion Craig wants.",
+              tags: []
+            },
+            con: {
+              time: "10:02",
+              role: "Secular-foundation alternatives",
+              words:
+                "Kagan says categorical moral reasons may be basic normative facts or principles that fully informed, impartial rational agents would accept under fair conditions.",
+              score: 84,
+              critique:
+                "Kagan offers two forms of secular realism rather than pretending that one argument settles metaethics. Irreducible normative truths would be no stranger as explanatory termini than logical truths, while contractualism connects duties to reasons no person could reasonably reject. The veil-like conditions also explain why a dictator's refusal does not determine the outcome: the standard is ideal justification, not a public-opinion poll. Still, presenting alternatives avoids rather than resolves their internal disputes. If categorical reasons are assumed at the start, the contract may organize them without grounding them; if ideal agreement grounds them, Kagan must explain why that counterfactual agreement binds actual agents. He gestures at rational acceptability but never derives determinate rules. The score is strong because the possibilities defeat Craig's easy exclusivity claim, though neither receives a defense.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The contractual sketch partly presupposes the impartial reasons and fair conditions whose categorical authority it is meant to explain."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Do moral requirements require a lawgiver?",
+        timebox: "14:08-35:34",
+        score: {
+          pro: 61,
+          con: 89
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "32:56",
+              role: "Divine-command inference",
+              words:
+                "Craig says values become duties only when issued as commands by a competent authority, so without a divine lawgiver prohibitions remain social conventions comparable to etiquette.",
+              score: 61,
+              critique:
+                "Craig rightly distinguishes evaluative claims from obligations: calling generosity good is not identical to saying someone must act generously. His civil-law analogy makes the authority question intuitive. But the inference builds a command model into the concept under dispute. Reasons arising from another person's suffering, a promise, fairness, or rational consistency may obligate without being anyone's imperative. Law further illustrates institutional enforcement, not the origin of every normative reason. Even on divine command theory, authority requires an explanation: raw power cannot turn cruelty good, while perfect goodness appears to supply a standard beyond command. Craig grounds value in God's nature, but he does not show why that nature produces commands that are categorically binding. The score is limited because the pivotal necessity premise is asserted through analogy rather than demonstrated.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The argument defines genuine obligation as an authoritative command and then infers that obligations need a commander."
+                }
+              ]
+            },
+            con: {
+              time: "14:24",
+              role: "Requirement-without-requirer reply",
+              words:
+                "Kagan argues that requirements need not be speech acts: logic constrains belief without a logical commander, and moral reasons can constrain action in an analogous impersonal way.",
+              score: 89,
+              critique:
+                "Kagan targets the form of Craig's argument. The law of noncontradiction is not issued by a person, yet rational thinkers are not free to make contradictions true by declining consent. That example demonstrates that some genuine normative constraints can be impersonal, so the slogan that every requirement requires a requirer is not analytically true. Moral requirements could still differ from logical ones, and Craig later notes that logic governs belief rather than prescribing behavior. But that distinction restores the burden Craig tried to bypass: he must explain why practical reasons, uniquely, can only arise as commands. Kagan also proposes communal imposition as a secondary model, though that sits uneasily with objectivity across unjust communities. The score is very strong because the logical counterexample decisively blocks Craig's unargued generalization.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Human worth, rationality, and animals",
+        timebox: "26:18-01:21:22",
+        score: {
+          pro: 67,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "26:22",
+              role: "Species-value challenge",
+              words:
+                "Craig argues that naturalism makes humans accidental animals with no intrinsic superiority to other species, whereas creation in God's image explains equal and exceptional human worth.",
+              score: 67,
+              critique:
+                "Craig raises a serious challenge for views that assign equal inviolable worth to every human while grounding status solely in variable capacities such as intelligence or self-awareness. His stewardship language also rejects abusing animals at will. Yet the argument alternates between asking why humans have value at all and why they have more value than animals. A secular view can ground interests in sentience and agency while denying that species membership licenses unlimited hierarchy; indeed, that makes animal suffering morally important rather than diminishing humanity. Saying humans bear God's image labels the differentiating property without independently explaining why it confers worth. Craig's admission that animals lack rights and may be eaten further exposes costs. The score is mixed because he identifies an equality problem but offers an underdeveloped solution.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The absence of an accepted naturalistic account of equal human worth is treated as establishing the divine-image explanation."
+                }
+              ]
+            },
+            con: {
+              time: "43:34",
+              role: "Reflective-capacity account",
+              words:
+                "Kagan locates distinctive human moral agency in capacities for rational reflection while treating sentient animal suffering as independently significant rather than morally negligible.",
+              score: 87,
+              critique:
+                "Kagan gives a naturalistic answer: mature humans can recognize reasons, revise impulses, and participate in reciprocal justification. This explains a distinctive form of agency without claiming that evolutionary origin makes the capacity unreal. He also avoids making human importance depend on animal worthlessness; his harm-based framework supports serious concern for animal treatment and gives his later vegetarian challenge practical bite. The hard cases remain infants and people with profound cognitive disabilities. Kagan appeals to the characteristic capacities of human beings, but that move risks importing species membership after criticizing it as morally arbitrary. Nor does reflective agency alone settle equal worth among persons with unequal capacities. The score is strong because his account explains more of the moral landscape than Craig's binary, while leaving the basis of universal equality incomplete.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Determinism and moral agency",
+        timebox: "29:58-53:22",
+        score: {
+          pro: 66,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "30:04",
+              role: "Freedom objection",
+              words:
+                "Craig contends that naturalism entails materialism and determinism, reducing deliberation to physical causation and leaving people unable to choose or bear genuine moral responsibility.",
+              score: 66,
+              critique:
+                "Craig correctly recognizes that responsibility depends on an adequate account of agency, not merely on attaching moral labels after behavior occurs. If every act were an externally compelled reflex, praise and blame would need revision. His argument, however, concatenates controversial premises: naturalism need not imply reductive physicalism, physicalism need not imply determinism, and determinism need not eliminate the reasons-responsive control defended by compatibilists. Craig sometimes speaks as if causal determination means a person is pushed like a passive puppet, overlooking that beliefs, values, reflection, and character can be parts of the causal process that constitutes the person's action. He does not engage Kagan's compatibilism beyond repeating incompatibilist intuitions. The score is limited because an important problem is identified, but the claimed entailment is much faster than the debate supports.",
+              tags: [
+                {
+                  label: "Belief bias",
+                  type: "bias",
+                  url: bias("belief-bias"),
+                  context:
+                    "An intuitive picture of determined agents as puppets substitutes for assessing compatibilist accounts of reasons-responsive control."
+                }
+              ]
+            },
+            con: {
+              time: "50:34",
+              role: "Compatibilist reply",
+              words:
+                "Kagan denies the chain from naturalism to no responsibility, identifies himself as a compatibilist, and notes that Craig needs several disputed premises before the conclusion follows.",
+              score: 79,
+              critique:
+                "Kagan diagnoses the argument's structure. Craig needs naturalism to entail physicalism, physicalism to entail determinism, and determinism to rule out every morally sufficient form of freedom; none is secured by stating the sequence. This prevents a literature from being collapsed into the metaphor of particles pushing particles. Kagan also keeps the burden limited: a secular morality need not solve consciousness and free will during one exchange to show that Craig's claimed deduction fails. The response is nevertheless promissory. Naming compatibilism does not explain how responsiveness to reasons, identification with motives, or alternative capacities ground desert under determination. Craig therefore retains a legitimate challenge even though he has not won it. The score is good for logical diagnosis, but lower than Kagan's stronger rebuttals because the positive agency theory remains unstated.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Accountability and cosmic significance",
+        timebox: "35:34-01:29:08",
+        score: {
+          pro: 55,
+          con: 93
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "35:38",
+              role: "Ultimate-consequence argument",
+              words:
+                "Craig says death and eventual cosmic extinction erase ultimate consequences, allowing prudence to conflict with morality, whereas divine judgment harmonizes happiness, justice, and the significance of moral choice.",
+              score: 55,
+              critique:
+                "Craig is right that enforcement is incomplete: perpetrators sometimes prosper, victims receive no restitution, and a just afterlife would answer a longing. He also distinguishes this accountability argument from the prior claims about objective value and duty. But he moves from no eternal consequence to no real consequence. Pain matters to the person experiencing it, betrayal changes lives, and rescue preserves a future even if none lasts forever. Finitude limits duration; it does not logically eliminate value. The appeal to motivation also conflates moral reasons with prudential incentives: adding reward and punishment may encourage compliance without grounding why an act is right. His later account of repentance and substituted punishment complicates, rather than guarantees, proportional accountability. The score is low because the debate's central inference remains unsupported after sustained cross-examination.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument shifts between 'ultimate' meaning eternally enduring and 'significant' meaning genuinely important to affected persons."
+                }
+              ]
+            },
+            con: {
+              time: "55:52",
+              role: "Finite-significance rebuttal",
+              words:
+                "Kagan argues that torture, love, and saving a life matter objectively to actual people now; their importance does not depend on eternal memory, cosmic scale, or postmortem punishment.",
+              score: 93,
+              critique:
+                "Kagan exposes the debate's clearest non sequitur. From the premise that an event has no everlasting or universe-wide effect, it does not follow that the event has no objective importance during the lives it shapes. His examples are well chosen because a torture victim's reasons against suffering are not weakened by heat death, while saving someone preserves years of projects, relationships, and experience. He further separates moral justification from motivation: the possibility that selfishness sometimes pays does not make selfishness right, and celestial incentives could themselves produce mercenary motives. Craig concedes objective values and duties for this third branch, making Kagan's challenge especially decisive. Kagan does not solve the problem of unrectified injustice, but he need not do so to defeat the claimed implication. This earns the debate's highest score.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 67,
+        strengths: [
+          "Craig separated moral knowledge from moral ontology and organized his case clearly around objective value, duty, agency, and accountability.",
+          "He pressed genuine unfinished questions for Kagan's contractarian sketch, especially why hypothetical rational agreement should categorically bind actual agents.",
+          "His concern about equal human worth and the incomplete earthly alignment of justice with happiness identified real pressures any moral worldview must address."
+        ],
+        blunders: [
+          {
+            text:
+              "He assumed that behavioral obligations must be commands and therefore require a personal commander, without excluding impersonal practical reasons.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "He repeatedly treated the absence of eternal cosmic consequences as though it erased the present objective significance of harm, love, and rescue.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 87,
+        strengths: [
+          "Kagan supplied positive secular options based on harm, categorical reasons, rational reflection, and fair agreement rather than merely rejecting theism.",
+          "His logical-requirement analogy directly refuted the claim that the very concept of a requirement analytically entails a personal requirer.",
+          "He decisively separated finite duration from objective significance and showed why moral reasons need not reduce to rewards, punishment, or personal advantage."
+        ],
+        blunders: [
+          {
+            text:
+              "His contractarian alternative relied on ideal rational agents and fair conditions without fully grounding the normative standards built into that idealization.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His capacity-based account of distinctive human agency did not fully explain equal worth for infants or people with profound cognitive disabilities.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
