@@ -55238,5 +55238,241 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "dillahunty-mclatchie-resurrection-evidence-2020",
+    number: "158",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Matt Dillahunty vs Jonathan McLatchie: Is There Strong Evidence for the Resurrection?",
+    label: "Resurrection, testimony, and history",
+    date: "2026-08-01",
+    duration: "2 hr 35 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=a-wIaCRIdOA",
+    motion:
+      "Is there strong historical evidence that Jesus rose from the dead, or are the surviving Christian reports too indirect and insufficiently testable to establish a resurrection?",
+    summary:
+      "McLatchie argues that early testimony, Gospel reliability, and alternatives support resurrection; Dillahunty says anonymous, untestable reports cannot constitute strong evidence for a miracle.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Modern-Day Debate upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "I am a very staunch evidentialist.",
+        context:
+          "McLatchie says he accepts Christianity because he finds the public historical evidence sufficient, not because he treats faith as independent of evidence."
+      },
+      con: {
+        text: "The claim is not the evidence.",
+        context:
+          "Dillahunty distinguishes a report's content from the independently assessed facts about its source, reliability, and fit with the wider world."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Historical resurrection case",
+        speaker: "Dr Jonathan McLatchie",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical historical standard",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 65,
+      con: 80
+    },
+    sections: [
+      {
+        title: "Apostolic proclamation and eyewitness access",
+        timebox: "09:00-23:55",
+        score: {
+          pro: 67,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:05",
+              role: "Early-proclamation case",
+              words:
+                "McLatchie argues that 1 Corinthians 15, Luke-Acts, and John place resurrection belief with the earliest apostles, and that Luke's access to Paul and Jerusalem supports the reported appearances.",
+              score: 67,
+              critique:
+                "McLatchie begins with a sensible historical strategy: distinguish a late invented story from an early proclamation, then ask what sources connect that proclamation to named participants. His use of 1 Corinthians 15, Acts, and the Gospel traditions gives the audience a clear evidential chain rather than merely quoting a resurrection conclusion. The weak link is that every step needs more defense than the opening can provide. The dating and function of the creed, Luke's authorship and access, and the Fourth Gospel's eyewitness status are contested questions, not neutral starting points. Even early belief would show what some Christians proclaimed more directly than it would show what occurred. The score is solid because the line of inquiry is relevant, but its key source-critical warrants remain compressed.",
+              tags: []
+            },
+            con: {
+              time: "51:05",
+              role: "Witness-distance objection",
+              words:
+                "Dillahunty says Paul did not witness Jesus's ministry, death, or resurrection, and that a traveling companion's report about other alleged witnesses cannot replace identifiable, examinable testimony.",
+              score: 80,
+              critique:
+                "Dillahunty correctly separates evidence that people repeated a resurrection proclamation from evidence that the events in that proclamation happened. His questions about whether Paul was present, whether Luke's sources can be identified, and whether claimed witnesses can be evaluated target the reliability bridge in McLatchie's argument. This is especially relevant for a miracle claim, where source quality matters greatly. The limitation is that he can sound as though the lack of courtroom-style access blocks all historical inference. Ancient history routinely works with indirect and imperfect sources, and the issue is comparative weight rather than automatic exclusion. Still, the score is high because he forces the affirmative case to specify how a chain of reports becomes evidence of an extraordinary event rather than evidence of belief alone.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Alternatives, strong evidence, and priors",
+        timebox: "24:20-50:35",
+        score: {
+          pro: 67,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "43:00",
+              role: "Cumulative explanatory case",
+              words:
+                "McLatchie says public, multi-sensory appearance reports and apostles' willingness to suffer weigh against myth, mistake, and deception; documentary evidence can in principle overcome a low prior probability.",
+              score: 67,
+              critique:
+                "McLatchie is right that an unusual event is not insulated from evidence merely because it is unusual. His distinction between a brief private experience and the multi-person encounters described in the narratives would matter if those descriptions are independently secure, and his lottery example shows that low priors can be overcome. The problem is that his alternatives are too coarse. Traditions can develop through sincere memory, theological interpretation, story transmission, and disputed source attributions without requiring a wholly late myth or a conspiracy. Martyrdom bears on conviction more readily than on what was witnessed. The confirming facts come from sources whose independence and accuracy are contested. The score is solid because the probabilistic framework is legitimate, but it does not establish the likelihoods needed for a resurrection conclusion.",
+              tags: []
+            },
+            con: {
+              time: "24:30",
+              role: "Strong-evidence standard",
+              words:
+                "Dillahunty argues that strong evidence should include identifiable witnesses, preserved provenance, opportunities for examination, and corroborating traces rather than anonymous reports whose chain of custody cannot be checked.",
+              score: 82,
+              critique:
+                "Dillahunty gives a concrete account of why he considers the available case too weak. His courtroom examples make source provenance, cross-examination, preservation, and corroboration intelligible to a general audience, and they show why extraordinary conclusions require more than untested narratives. He also properly challenges the move of treating every narrated appearance and empty-tomb detail as fixed data before their sources are validated. The weakness is that legal admissibility and physical evidence are not the sole standards for historical reasoning, especially for ancient events where direct materials seldom survive. A historical conclusion can be rational without meeting a modern criminal-trial threshold. The score is high because his standards expose the affirmative case's vulnerabilities, though the analogy sometimes makes the alternative appear stricter and more uniform than responsible historiography requires.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Undesigned coincidences and Gospel reliability",
+        timebox: "63:00-79:45",
+        score: {
+          pro: 62,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "63:20",
+              role: "Interlocking-narrative argument",
+              words:
+                "McLatchie presents Gospel timing and place-name interlocks as undesigned coincidences, arguing that subtle agreements, occasional variations, and external corroboration cumulatively support reliable access to information.",
+              score: 62,
+              critique:
+                "McLatchie's undesigned-coincidence approach has a real evidential intuition behind it. Casual details that fit across accounts can be more informative than overt harmonization, and he properly treats reliability as a cumulative question rather than a verdict from one verse. The difficulty is that the argument needs defended assumptions about literary dependence, dating, oral traditions, and what counts as an unlikely interlock. A reconstruction that assumes John and Mark independently preserve compatible chronology cannot itself establish that independence. Even success on mundane geography or festival timing would raise confidence in limited reporting more readily than in a miracle claim. The score is modest because the method may contribute some historical support, but the presentation does not show that its premises or its reach justify the large resurrection conclusion.",
+              tags: []
+            },
+            con: {
+              time: "68:05",
+              role: "Reliability-scope objection",
+              words:
+                "Dillahunty argues that agreement on ordinary details or access to shared stories does not establish independence, absence of bias, or accuracy about a resurrection, especially when the writers cannot be directly investigated.",
+              score: 79,
+              critique:
+                "Dillahunty presses the scope problem effectively. Even if Gospel authors accurately preserve some mundane details, that does not automatically validate every theological or miraculous claim in the same narratives. His examples make the distinction between sincerity, ordinary accuracy, and extraordinary accuracy easy to follow, while his questions about shared sources directly challenge the inference from interlock to independence. The limitation is that he sometimes describes the sources as though their anonymity or distance makes them evidentially empty. That overstates the conclusion: historians can still compare provenance, genre, corroboration, and internal features without interviewing authors. The score is strong because his rebuttal blocks a rapid escalation from local coherence to resurrection, but it would be better if it distinguished weak evidence from no evidence more consistently.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Claims, competing religions, and falsifiability",
+        timebox: "90:00-146:20",
+        score: {
+          pro: 64,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "100:25",
+              role: "Testimony-as-evidence reply",
+              words:
+                "McLatchie says a claim can be evidence when made by a credible witness in a well-supported context, and he says he would reduce confidence in Christianity if the same standards compelled acceptance of rival religious claims.",
+              score: 64,
+              critique:
+                "McLatchie makes two fair concessions. Testimony is not automatically worthless, and an evidentialist should be willing to revise when competing claims meet the same standard. His appeal to context, source reliability, error, deception, and alternative explanations gives a more nuanced account than blind acceptance of any sacred text. The central problem is a shift between a proposition's content and the evidence about the person, setting, and provenance behind that proposition. His own examples rely on the latter, but he often calls the claim itself the evidence. That ambiguity prevents a clean comparison with anonymous or indirect religious reports. The score is solid-low because his comparative method is reasonable in principle, yet he never applies stable, publicly assessable criteria that clearly distinguish Christian testimony from the rivals Dillahunty raises.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The reply alternates between a bare claim and source-context evidence about a claimant, treating both as the same evidential object when the distinction is central to the dispute."
+                }
+              ]
+            },
+            con: {
+              time: "118:15",
+              role: "Claim-versus-context distinction",
+              words:
+                "Dillahunty clarifies that a report may prompt investigation, but confidence depends on independently assessed source character, corroborating facts, and consistency with background knowledge; an empty tomb remains a report until demonstrated.",
+              score: 80,
+              critique:
+                "Dillahunty offers his clearest formulation here. He no longer says that a person's utterance is irrelevant; instead, he explains that the evidential work comes from attributable source conditions, corroboration, and fit with well-established background facts. That is a useful distinction for any historical claim, and it directly answers why ordinary reports and resurrection reports demand different amounts of support. The weakness is tonal and methodological. He sometimes returns to the categorical slogan that claims are not evidence, even though he has just described how testimony in context can alter rational confidence. His insistence that an empty tomb must be physically produced also risks excluding indirect historical evidence too quickly. The score is high because the clarification substantially improves his case despite those overstatements.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 65,
+        strengths: [
+          "McLatchie presented a coherent cumulative case linking early proclamation, source reliability, appearance traditions, and alternative explanations.",
+          "He rightly emphasized that low prior probability does not make an event immune to evidence and that testimony should be assessed rather than rejected by category.",
+          "He expressed a genuine willingness to revise if the historical case weakened or if the same standards supported competing religious claims."
+        ],
+        blunders: [
+          {
+            text:
+              "He treated reported appearances, source access, and martyrdom as strong eliminators of alternatives before sufficiently establishing the reliability of those specific reports.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "He moved between a bare claim and the independent evidence that could make testimony reliable, obscuring the debate's central evidential distinction.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 80,
+        strengths: [
+          "Dillahunty consistently distinguished evidence that people believed and repeated a resurrection story from evidence that a resurrection occurred.",
+          "His challenges about provenance, source evaluation, literary dependence, and alternative religious testimony targeted the case's most vulnerable historical points.",
+          "He explained why source context and corroboration matter more for extraordinary events than for ordinary reports."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes shifted from the fair demand for stronger evidence to treating courtroom-grade physical proof or direct divine intervention as the only meaningful historical support.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
