@@ -53844,4 +53844,271 @@ export const debates = [
       }
     }
   }
+,
+  {
+    id: "oconnor-carter-free-will-determinism-2024",
+    number: "153",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Alex O'Connor vs Dr Alex Carter: Free Will and Determinism",
+    label: "Free will and compatibilism",
+    date: "2026-07-31",
+    duration: "1 hr 09 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=CRpsJgYVl-8",
+    motion:
+      "Do determinism and unchosen desires eliminate free will, or can determined agents be free when acting voluntarily and without coercion?",
+    summary:
+      "O'Connor argues that no one ultimately authors their wants and therefore lacks free will; Carter contends that voluntary, self-expressive action remains meaningfully free within a determined world.",
+    sourceNote:
+      "Based on public YouTube English-original automatic captions for the Premier Unbelievable? upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "You can do whatever you will, but you can't will what you will.",
+        context:
+          "O'Connor uses this formulation to distinguish acting on a desire from being the ultimate author of the desire itself."
+      },
+      con: {
+        text: "There is a semantic difference between being compelled to act and being freely acting.",
+        context:
+          "Carter's compatibilism treats voluntary action and externally compelled action as ethically meaningful different kinds of agency."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Determinist critique",
+        speaker: "Alex O'Connor",
+        color: "teal"
+      },
+      con: {
+        name: "Compatibilist freedom",
+        speaker: "Alex Carter",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 78,
+      con: 76
+    },
+    sections: [
+      {
+        title: "Determinism and the Meaning of Freedom",
+        timebox: "03:30-17:45",
+        score: {
+          pro: 79,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "03:30",
+              role: "Ultimate-authorship challenge",
+              words:
+                "O'Connor argues that every mental event is either random or determined; neither route gives a person ultimate control over what they do.",
+              score: 79,
+              critique:
+                "O'Connor offers the debate's cleanest formal pressure point. If an action is genuinely random, it is not authored; if it follows from prior causes, its causal history extends beyond the agent's chosen starting point. He also makes the abstraction intelligible with ordinary decisions, desires, and a coin-flip analogy. The central limitation is that the argument establishes the absence of ultimate self-creation more readily than the absence of every relevant kind of control. A compatibilist can grant the causal story while locating freedom in deliberation, reasons-responsiveness, and noncoercion. O'Connor anticipates that reply but largely labels it a verbal rescue. The score is high because the dilemma is clear and serious, though it does not itself settle which conception of freedom the motion should use.",
+              tags: []
+            },
+            con: {
+              time: "07:42",
+              role: "Compatibilist distinction",
+              words:
+                "Carter accepts determined causes but argues that acting from one's own volition differs in meaning and ethical importance from acting under compulsion.",
+              score: 80,
+              critique:
+                "Carter makes a strong compatibilist opening by refusing the false choice between scientific explanation and ordinary agency. His contrast between a person acting voluntarily and a person under threat, illness, or compulsion captures distinctions that law and moral practice undeniably use. The tree example also rightly shows that one event can support more than one kind of explanation. However, the semantic defense does not yet answer O'Connor's deeper concern about authorship: saying that an action came from the person must explain how the relevant person-level control survives a fully determined causal history. Carter gestures toward different explanatory vocabularies rather than supplying criteria for that control. The score is strong because the distinction is practically indispensable, but the metaphysical warrant remains underdeveloped.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Desire, Reasons, and Voluntary Action",
+        timebox: "18:55-30:45",
+        score: {
+          pro: 77,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "18:55",
+              role: "Desire-based agency",
+              words:
+                "O'Connor says every action is done either under force or because some desire wins, while people cannot choose the desires that govern them.",
+              score: 77,
+              critique:
+                "O'Connor usefully tests the intuition that an unwelcome action, such as an early dog walk or going to the gym, is not wanted. By identifying a stronger, longer-term desire behind it, he explains why conflict among motives need not create ultimate freedom. The argument also makes his thesis concrete rather than merely neuroscientific. Its weakness is that it treats the compatibilist's account of reasons, endorsement, and self-governance as if it were only a relabeling of desire. A person may identify with a reason after reflection without having selected the background disposition that made reflection possible; whether that is enough for freedom is precisely contested. The score is solid because the regress is powerful, but its conclusion depends on setting ultimate authorship as the sole relevant standard.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument slides from lack of ultimate self-creation to denial of the voluntary, reasons-responsive control at issue in compatibilism."
+                }
+              ]
+            },
+            con: {
+              time: "27:05",
+              role: "Ordinary-agency reply",
+              words:
+                "Carter argues that philosophy overabstracts free will: people can act, restrain impulses, and lose freedom in many concrete ways besides determinism.",
+              score: 76,
+              critique:
+                "Carter's reply is strongest when it points to the varied practices through which people distinguish agency from its absence. Kleptomania, intoxication, childhood, threats, and cultivated habits show why responsibility cannot be reduced to one simple causal test. His Wittgenstein-inspired warning against detaching concepts from life is a useful corrective to overly tidy thought experiments. Yet the response risks taking the diversity of ordinary judgments as evidence that the judgments are correct. The examples show that people differentiate degrees of control; they do not establish that a determined agent could have done otherwise in the sense O'Connor denies. Carter also leaves unclear how his account distinguishes an unreflective impulse from a self-governing act. The score is good for practical sensitivity but limited by missing positive criteria.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Responsibility, Punishment, and Persons",
+        timebox: "31:45-41:10",
+        score: {
+          pro: 85,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "31:45",
+              role: "Consequentialist justice case",
+              words:
+                "O'Connor argues that even without free will, society can restrain offenders for deterrence, protection, and rehabilitation rather than retributive desert.",
+              score: 85,
+              critique:
+                "O'Connor gives his most constructive and empirically minded contribution here. He separates causal responsibility for an act from moral desert, then explains why incapacitation, deterrence, and rehabilitation can survive that separation. The comparison between retributive and rehabilitative prisons is relevant because it connects an abstract thesis to an institutional choice rather than merely declaring offenders blameless. His hunger-and-parole example further illustrates why awareness of causal influences can improve legal safeguards. The limitation is that he compresses difficult questions about proportionality, public condemnation, victims, and the quality of evidence for prison outcomes. Nor does he show that compatibilist responsibility must be retributive. Still, the proposal directly answers the practical anxiety raised by determinism and earns a high score for clarity and humane relevance.",
+              tags: []
+            },
+            con: {
+              time: "38:25",
+              role: "Person-centered responsibility",
+              words:
+                "Carter says ethical life requires treating another person as a person, and that freedom lives in the tension between causes and lived responsibility.",
+              score: 77,
+              critique:
+                "Carter identifies an important cost of treating agency exclusively as a causal mechanism. His patient-autonomy example shows why medical, legal, and interpersonal decisions require attention to a person's understanding, deliberation, and stake in a choice. He does not insist on an immaterial soul, which keeps the point accessible to a determinist. Still, describing responsible treatment as unavoidable does not establish the compatibilist conclusion. A determinist can agree that respect, dialogue, and consent are indispensable social practices while denying that they reveal desert or ultimate authorship. Carter also uses person and soul metaphorically without saying which observable capacities make someone free enough for blame. The score is strong because it protects an ethical insight that O'Connor must accommodate, but it remains more a moral posture than a theory of responsibility.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Consciousness, Explanation, and God",
+        timebox: "41:15-47:30",
+        score: {
+          pro: 70,
+          con: 74
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "41:15",
+              role: "Modal determinist claim",
+              words:
+                "O'Connor says God or an immaterial soul does not create room for free will, because any event is still either determined or random.",
+              score: 70,
+              critique:
+                "O'Connor properly resists the easy move from physical determinism to an immaterial escape hatch. His dilemma is deliberately general: replacing neurons with a soul does not automatically explain how an undetermined choice becomes owned rather than arbitrary. That is a valuable constraint on religious and dualist versions of libertarian freedom. The weakness is his comparison with consciousness. He admits that consciousness may exist despite resisting simple reductive explanation, then invokes that possibility only as a brief caution rather than exploring whether agency might require different conceptual resources as well. The move therefore establishes a challenge to proposed mechanisms, not an impossibility proof. It scores above average for preserving the argument's scope across metaphysical views, but it stops short of showing that every nonrandom account of agency fails.",
+              tags: []
+            },
+            con: {
+              time: "43:55",
+              role: "Explanatory-limits reply",
+              words:
+                "Carter argues that consciousness and understanding are dynamic phenomena that a static scientific description cannot fully capture, so science has limits as an explanatory tool.",
+              score: 74,
+              critique:
+                "Carter's reply fairly distinguishes a brain scan from the lived, temporally extended experience of grasping a sentence or making a choice. That distinction usefully warns against treating a successful physical description as the only meaningful description of a person. He also avoids claiming that the limits of one method prove a supernatural explanation. The main problem is that he moves too quickly from a present difficulty in representing dynamic consciousness to the assertion that science cannot explain it. A static image is not the only scientific model; temporal data, functional analysis, and explanatory levels can address change without reducing it to a freeze-frame. The score is moderate-high because the phenomenological caution is legitimate, while the asserted methodological boundary remains unsupported.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Carter treats a current explanatory gap about dynamic consciousness as evidence that scientific explanation cannot reach it."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral Motivation and Human Formation",
+        timebox: "49:05-65:20",
+        score: {
+          pro: 74,
+          con: 74
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "49:05",
+              role: "Evolutionary moral account",
+              words:
+                "O'Connor describes moral intuitions as evolved desires that help social groups remain stable, so ethical restraint competes with other motivations rather than standing outside causation.",
+              score: 74,
+              critique:
+                "O'Connor gives a coherent naturalistic account of why people might feel aversion to murder and support law even without ultimate freedom. By connecting prosocial intuitions, survival, and institutional deterrence, he explains how ethical motivation can be causally real without being a self-created faculty. The answer is also candid that a lawless setting would expose competing desires rather than a magically independent will. But the explanatory story is sketched more confidently than argued. Evolutionary stability can illuminate how an intuition arose without determining its present normative authority or resolving conflicts among moral intuitions. Carter rightly presses that distinction, although he does not develop a rival account. The score is solid because it answers the student's practical question, but it does not fully bridge explanation, justification, and obligation.",
+              tags: []
+            },
+            con: {
+              time: "52:20",
+              role: "Explanation-versus-elimination reply",
+              words:
+                "Carter replies that explaining a moral intuition psychologically or biologically does not make the intuition disappear or reduce its richer normative content.",
+              score: 74,
+              critique:
+                "Carter correctly identifies a non sequitur that often haunts genealogical explanations: showing how a belief or intuition developed does not by itself show that its content is false, empty, or dispensable. His comparison with psychological explanations of religious belief makes the symmetry clear. This is a useful check on O'Connor's tendency to describe moral judgment as one desire among others. However, Carter mainly blocks an overreach rather than supplying a positive account of why moral intuitions are justified, binding, or distinct from other powerful dispositions. His historical remarks about law and stability are also too compressed to bear much weight. The score is moderate-high because the rebuttal preserves an essential distinction, while leaving the normative question largely where it began.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 78,
+        strengths: [
+          "He frames the ultimate-authorship problem in a simple random-or-determined dilemma and applies it consistently to desires, coercion, and immaterial proposals.",
+          "He gives a concrete non-retributive account of justice that preserves deterrence, protection, rehabilitation, and greater compassion toward causal influences.",
+          "He distinguishes explaining a behavior from excusing harmful consequences, making his determinism relevant to institutions rather than merely speculative."
+        ],
+        blunders: [
+          {
+            text:
+              "He often treats the lack of ultimate self-creation as if it settled whether voluntary, reasons-responsive action counts as meaningful freedom, collapsing two disputed senses of control.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 76,
+        strengths: [
+          "He explains why coercion, compulsion, development, and deliberation remain ethically important distinctions even if causal explanations are complete.",
+          "He brings the issue down to patient autonomy, criminal responsibility, and interpersonal respect rather than treating it as a word game alone.",
+          "He correctly separates a causal or psychological explanation of moral intuition from a refutation of that intuition's normative content."
+        ],
+        blunders: [
+          {
+            text:
+              "He infers too readily from the difficulty of modeling dynamic consciousness in a scientific snapshot that science cannot explain consciousness or agency in principle.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
 ];
