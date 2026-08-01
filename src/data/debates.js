@@ -60434,6 +60434,270 @@ export const debates = [
       }
     }
   },
+  {
+    id: "ehrman-wallace-trust-text-new-testament-2011",
+    number: "177",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Bart Ehrman vs Daniel B. Wallace: Can We Trust the Text of the New Testament?",
+    label: "New Testament textual reconstruction",
+    date: "2026-08-01",
+    duration: "2 hr 11 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=WRHjZCKRIu4",
+    motion:
+      "Can textual criticism recover the wording of the original New Testament with enough confidence for the text to be trusted?",
+    summary:
+      "Wallace argues that abundant, diverse witnesses preserve the autographic wording in nearly all places; Ehrman argues that the poorly attested earliest transmission prevents confidence that the reconstructed initial text is original.",
+    sourceNote:
+      "Built from the English-original YouTube caption track for the 2011 Southern Methodist University debate moderated by Mark Chancey. Captions were checked against the recording; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "the wording of the originals is not lost",
+        context:
+          "Wallace argues that manuscript diversity and converging lines of transmission preserve original readings among the surviving witnesses, even when certainty varies."
+      },
+      con: {
+        text: "we can only reconstruct the earliest form of the text",
+        context:
+          "Ehrman distinguishes the recoverable common ancestor of surviving witnesses from the author's autograph, which may precede it through unattested copying stages."
+      }
+    },
+    sides: {
+      pro: {
+        name: "The text is substantially recoverable",
+        speaker: "Daniel B. Wallace",
+        color: "teal"
+      },
+      con: {
+        name: "Autographic certainty is unavailable",
+        speaker: "Bart Ehrman",
+        color: "coral"
+      }
+    },
+    score: { pro: 93, con: 91 },
+    sections: [
+      {
+        title: "The early copying gap",
+        timebox: "10:58-31:26",
+        score: { pro: 89, con: 94 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:09:54",
+              role: "Multiple-lineage reply",
+              words:
+                "Wallace rejects a telephone-game model because textual critics compare many branches, early quotations, and translations rather than relying on the final copy in one linear chain.",
+              score: 89,
+              critique:
+                "Wallace correctly identifies why manuscript transmission differs from a whispered sentence. Surviving witnesses form branching lineages; readings can be checked across geography, languages, and patristic quotations, allowing later errors in one branch to be exposed by others. Early wide circulation also makes a single coordinated replacement difficult. This materially improves reconstruction once independent branches are attested. Ehrman's challenge, however, targets the interval before those branches become visible. If an alteration entered their common ancestor, later abundance would reproduce rather than reveal it. Patristic citations and versions narrow that interval but do not eliminate it for every book. Wallace weakens an exaggerated linear model, yet his evidence cannot directly inspect all first-century copying. His response supports substantial stability more strongly than exact autographic identity.",
+              tags: []
+            },
+            con: {
+              time: "14:33",
+              role: "Missing-first-witnesses case",
+              words:
+                "Ehrman emphasizes that no autographs or first copies survive and that Mark's first substantial witness appears roughly 150 years after composition, following unknown copying stages.",
+              score: 94,
+              critique:
+                "Ehrman isolates the central epistemic gap with admirable clarity. Later manuscripts reveal differences among themselves, but they cannot display a reading removed before their common ancestry unless another early branch preserves it. Mark's fragmentary evidence and the long delay before a complete copy make exact confidence especially difficult. He also explains why early, less professional scribes could propagate both mistakes and deliberate corrections. The argument establishes possibility and underdetermination, not actual massive corruption. Ehrman's city-to-city scenario is illustrative rather than documented, and lost early witnesses may have been more numerous and controlled than the surviving sample suggests. Still, because Wallace claims recoverability, absence of direct first-stage evidence places a real burden on him. Ehrman wins this section by distinguishing probable broad continuity from demonstrable autograph-level wording.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Variant counts and manuscript abundance",
+        timebox: "43:04-59:00",
+        score: { pro: 96, con: 88 },
+        exchanges: [
+          {
+            pro: {
+              time: "49:46",
+              role: "Abundance-is-information argument",
+              words:
+                "Wallace explains that hundreds of thousands of variants arise largely because thousands of manuscripts expose differences; a lone late copy would show zero variants but offer less security.",
+              score: 96,
+              critique:
+                "Wallace offers a decisive clarification. Raw variant counts are not a corruption rate: every spelling difference in every witness contributes data, and more witnesses reveal more variation. One manuscript would conceal every divergence rather than preserve the text better. He supplements Greek copies with early translations and patristic citations, creating multiple constraints on possible readings, and compares the New Testament favorably with classical transmission without claiming that quantity proves every word. The comparison cannot recover a change shared by all surviving branches, and many manuscripts are late or dependent. But those caveats do not rescue the inference that more variants mean less recoverability. Wallace turns an alarming statistic into evidence-bearing redundancy and explains why textual critics prefer many disagreeing witnesses to one apparently uniform copy. This is exceptionally effective reasoning.",
+              tags: []
+            },
+            con: {
+              time: "1:18:17",
+              role: "Early-evidence refocus",
+              words:
+                "Ehrman accepts that abundance explains the variant count but argues that later witnesses do not answer how many important changes arose before the earliest surviving copies.",
+              score: 88,
+              critique:
+                "Ehrman wisely concedes Wallace's statistical point and redirects attention to the missing interval. Twenty thousand witnesses can map later branching beautifully while sharing an earlier alteration, so manuscript quantity and temporal proximity are distinct evidential dimensions. His question—what precedes P45 for Mark?—keeps the debate on the strongest skeptical ground. Yet he sometimes treats the lack of surviving copies as though no indirect evidence reaches behind them. Early translations, quotations, geographical agreement, and independent textual families can constrain their ancestors, while the remarkable agreement of later branches requires some explanation. His counterpoint limits Wallace's conclusion from certainty to confidence but does not neutralize the cumulative witnesses. The score is good because the temporal distinction matters, though Wallace's abundance argument remains a substantial positive case.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Meaningful variants and historical significance",
+        timebox: "32:12-1:21:23",
+        score: { pro: 91, con: 94 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:08:46",
+              role: "Doctrinal-resilience argument",
+              words:
+                "Wallace argues that only a small fraction of variants are both meaningful and viable and that no essential Christian belief depends solely on a disputed reading.",
+              score: 91,
+              critique:
+                "Wallace properly separates meaningful variation from spelling, word order, nonsense errors, and readings confined to one weak witness. That taxonomy is essential to prevent raw numbers from misleading non-specialists. The doctrinal-resilience point also has genuine relevance to readers asking whether scribal change created Christianity's central beliefs; parallel passages and multiple textual bases make that unlikely. But it is not the motion's only meaning of trust. Whether Jesus became angry, whether an adulterous-woman story belongs in John, or which form of Acts is earlier matters historically even if no creed collapses. Theology can remain redundant while authorial wording is uncertain. Wallace sometimes uses doctrinal safety as a proxy for textual significance, understating the very variants his reconstruction project exists to study. Strong analysis, but a partially misplaced measure of consequence.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "Doctrinal redundancy does not settle whether disputed readings are historically or authorially significant."
+                }
+              ]
+            },
+            con: {
+              time: "1:20:45",
+              role: "Loss-without-doctrinal-change analogy",
+              words:
+                "Ehrman notes that entire New Testament books could disappear without eliminating a unique doctrine, showing that theological redundancy is a poor measure of textual importance.",
+              score: 94,
+              critique:
+                "Ehrman's analogy is devastatingly apt. Losing Galatians, Philippians, or First Peter might erase no doctrine supported nowhere else, yet it would be an enormous historical and literary loss. Therefore “no essential belief is affected” cannot make a variant insignificant. His examples—the Johannine Comma, Luke's atonement wording, Jesus' anger, the adulteress, and Mark's ending—show that scholars can agree on many major readings while still caring intensely about them. He could better distinguish uncertainty from successful detection: knowing that the adulteress passage is secondary is evidence that the method works, not merely evidence of corruption. Some examples also concern sizable additions already flagged in modern translations. Nevertheless, Ehrman decisively expands significance beyond apologetic doctrinal survival and keeps the motion focused on what authors wrote.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Initial text versus authorial autograph",
+        timebox: "1:14:00-1:49:28",
+        score: { pro: 94, con: 93 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:14:00",
+              role: "Practical-reconstruction consistency",
+              words:
+                "Wallace observes that Ehrman's scholarly arguments identify earlier and altered readings, presupposing that autographic wording is available among the variants in nearly every case he analyzes.",
+              score: 94,
+              critique:
+                "Wallace presses a powerful internal-consistency argument. To describe an orthodox corruption, Ehrman must distinguish the prior reading from the theological alteration; his books routinely make exactly those judgments. New Testament scholarship on authorship, redaction, and sources likewise presupposes a text stable enough for fine-grained comparison. This does not prove every recovered reading autographic, but it shows that radical global skepticism is incompatible with ordinary successful practice. Wallace is also careful to claim relative confidence, all essentials, and most particulars rather than perfect certainty. The limitation is that local reconstruction of the earliest recoverable ancestor does not logically establish that this ancestor equals the autograph. Ehrman can coherently be confident in many readings while uncertain about unknown pre-branch changes. Still, Wallace exposes how much common textual ground the skeptical rhetoric understates.",
+              tags: []
+            },
+            con: {
+              time: "1:46:40",
+              role: "Recoverable-ancestor distinction",
+              words:
+                "Ehrman argues that textual criticism reconstructs the earliest text from which surviving witnesses descend, not necessarily the author's first written form, and explains the field's shift toward “initial text.”",
+              score: 93,
+              critique:
+                "Ehrman's distinction is conceptually exact and answers Wallace's consistency charge. One can identify that reading B precedes corruption C within the surviving genealogy while remaining agnostic about whether an unattested A preceded B. The modern term “initial text” usefully marks this scope and avoids promising an autograph the evidence cannot always reach. His appeal to terminology risks becoming an authority contest, and specialists use “initial” in differing project-specific ways; a changed label does not prove a large empirical gap. Wallace also shows that many scholars pragmatically treat the two as equivalent in most passages. Nonetheless, the logic remains sound: success at relative ordering does not guarantee access to the first authorial state. Ehrman preserves measured local confidence without granting Wallace's universal identification.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Early scribes, control, and the burden of trust",
+        timebox: "1:23:23-2:04:18",
+        score: { pro: 95, con: 89 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:27:09",
+              role: "Evidence of conscientious copying",
+              words:
+                "Wallace cites P66, P75, Vaticanus, documentary hands, early quotations, and cross-branch agreement to show that unpolished scripts did not imply careless transmission.",
+              score: 95,
+              critique:
+                "Wallace answers the generalized “wild scribes” picture with manuscript-level evidence. A documentary rather than literary hand may belong to a trained bureaucratic copyist, and P75's close agreement with the much later Vaticanus points to an early, stable ancestor despite their nonlineal relation. Patristic citations and versions further intersect the Greek tradition. His nonsense-reading example also shows that many errors are conspicuous and readily corrected, not invisible transformations. These cases do not prove uniform quality across all early Christian centers, and Alexandria may have exercised more control than other regions. Surviving high-quality manuscripts may also be unrepresentative. Even so, Wallace provides actual counterexamples to Ehrman's sociological inference from appearance and literacy. He establishes that early careful copying existed and that substantial textual stability has a concrete genealogy.",
+              tags: []
+            },
+            con: {
+              time: "1:57:50",
+              role: "Bridge-and-burden analogy",
+              words:
+                "Ehrman compares textual trust to crossing a bridge: the party recommending reliance bears the burden of showing that unknown early copyists and exemplars were dependable.",
+              score: 89,
+              critique:
+                "Ehrman correctly assigns a burden to the affirmative claim and lists precise missing warrants: the competence of first copyists, the quality of their exemplars, and the relation between earliest survivors and authorial wording. His hypothetical discovery of nearly identical week-old copies also states what would change his confidence, answering charges of unfalsifiability. The bridge analogy, however, imports catastrophic practical risk into a historical probability question. Textual trust is normally graded passage by passage, not a binary decision to cross or refuse, and all ancient history proceeds under incomplete transmission. Wallace's converging evidence can justify confidence without eliminating every hypothetical shared corruption. Ehrman's standard sometimes approaches proof of provenance that few ancient texts could meet. He preserves legitimate caution, but the analogy overstates what responsible historical trust requires.",
+              tags: [
+                {
+                  label: "Ambiguity effect",
+                  type: "bias",
+                  url: bias("ambiguity-effect"),
+                  context:
+                    "Uncertainty about the earliest copying stage is treated as grounds to withhold trust even where multiple later constraints support graded confidence."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 93,
+        strengths: [
+          "Wallace showed why large variant counts chiefly reflect information-rich manuscript abundance rather than a direct measure of corruption.",
+          "He combined Greek witnesses, early versions, patristic citations, and independent lineages into a concrete cumulative reconstruction case.",
+          "His use of Ehrman's own textual scholarship exposed the extensive stable wording presupposed by source, redaction, and corruption arguments.",
+          "He answered general claims about careless early copying with specific high-quality papyri and demonstrable early textual ancestry."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes measured significance by whether an essential doctrine uniquely depends on a variant rather than by historical and authorial importance.",
+            links: [{ label: "Red herring", url: fallacy("red-herring") }]
+          },
+          {
+            text:
+              "Evidence for early stability in strong Alexandrian witnesses was occasionally generalized more broadly than the surviving sample alone warrants.",
+            links: [
+              {
+                label: "Base-rate neglect",
+                url: bias("base-rate-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 91,
+        strengths: [
+          "Ehrman kept the unattested first transmission stage visible when later manuscript abundance threatened to obscure it.",
+          "He precisely separated the earliest recoverable common ancestor from the author's autograph and maintained local confidence without universal certainty.",
+          "His lost-books analogy decisively showed why doctrinal redundancy is not an adequate measure of a textual variant's significance."
+        ],
+        blunders: [
+          {
+            text:
+              "His hypothetical early copying scenarios sometimes carried more skeptical weight than the actual converging versions, quotations, and textual lineages.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "The bridge analogy encouraged binary trust under catastrophic stakes instead of the graded, passage-specific confidence normal in ancient history.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
