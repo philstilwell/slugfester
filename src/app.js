@@ -1171,6 +1171,8 @@ function renderRankings() {
         </aside>
       </section>
 
+      ${renderReasoningDistribution(reasoningTopics)}
+
       <section class="ranking-tool" aria-label="Ranking controls">
         <form class="ranking-form">
           <span class="ranking-control">
@@ -1202,8 +1204,6 @@ function renderRankings() {
           </div>
         </form>
       </section>
-
-      ${renderReasoningDistribution(reasoningTopics)}
 
       <section class="rankings-list-section" aria-labelledby="rankings-list-heading">
         <div class="section-heading">

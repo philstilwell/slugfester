@@ -28,6 +28,7 @@ Landing-page design:
 - The header includes a `Topics` link to `/topics/`, which groups debates by recurring topic.
 - The header includes a `Rankings` link to `/rankings/`, whose page title is `Flags & Rankings`. It ranks interlocutors with at least three debate appearances by their average overall score; a multi-person side assigns its published side score to each listed participant. Each ranking row labels the speaker's average as `First name's avg.` and separately labels `Opponents' Avg.`; the speaker's most common topic appears beneath their debate count. Readers can filter by topic, set a higher appearance threshold, re-rank by `Opponents' Avg.`, and change sorting.
 - The Rankings page also includes a color-coded topic distribution of named logical-fallacy and cognitive-bias tags, normalized per 100 scored moves. Its chart-level topic selector highlights the selected topic and updates the aggregate readout without changing the leaderboard.
+- On the Rankings page, place the Flags distribution before the leaderboard controls and the interlocutor rankings.
 - The header includes a `Backend` link to `/backend/`, whose page title is `Backend`; `/assessment/` remains a backwards-compatible legacy route.
 - The landing intro includes a divider line followed by a ` | `-delineated, linked list of the current page's compact debate number and title labels.
 - The debate list is capped at three columns on wide screens, then steps down responsively.
