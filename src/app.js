@@ -1622,7 +1622,7 @@ function renderProfileOpponents(opponents) {
       <div class="profile-section-heading">
         <div>
           <p class="eyebrow">Opponents faced</p>
-          <h2 id="profile-opponents-heading">Published opposition</h2>
+          <h2 id="profile-opponents-heading">Debate opponents</h2>
         </div>
       </div>
       <ol class="profile-opponent-list">
