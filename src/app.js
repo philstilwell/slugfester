@@ -809,16 +809,15 @@ function formatTagRate(rate) {
   return `${Number(rate).toFixed(1)} per 100`;
 }
 
-function renderReasoningTagReadout(selectedTopic, topics) {
-  const totals = selectedTopic || reasoningTagTotals(topics);
-  const title = selectedTopic ? selectedTopic.title : "All topic clusters";
+function renderReasoningTagReadout(topics) {
+  const totals = reasoningTagTotals(topics);
   const fallacyRate = totals.scoredMoves ? (totals.fallacies / totals.scoredMoves) * 100 : 0;
   const biasRate = totals.scoredMoves ? (totals.biases / totals.scoredMoves) * 100 : 0;
 
   return `
     <div class="reasoning-readout-focus">
-      <span>Current focus</span>
-      <strong>${escapeHtml(title)}</strong>
+      <span>Corpus overview</span>
+      <strong>All topic clusters</strong>
     </div>
     <dl class="reasoning-readout-stats">
       <div><dt>Scorecards</dt><dd>${totals.debates}</dd></div>
@@ -834,7 +833,7 @@ function renderReasoningTopicRow(topic, maximumRate) {
   const biasWidth = maximumRate ? (topic.biasRate / maximumRate) * 100 : 0;
 
   return `
-    <li class="reasoning-topic-row" data-reasoning-topic-row="${escapeHtml(topic.id)}">
+    <li class="reasoning-topic-row">
       <div class="reasoning-topic-name">
         <strong>${escapeHtml(topic.title)}</strong>
         <span>${topic.debates} ${topic.debates === 1 ? "scorecard" : "scorecards"} · ${topic.scoredMoves} scored moves</span>
@@ -862,27 +861,16 @@ function renderReasoningDistribution(topics) {
   );
 
   return `
-    <section class="reasoning-distribution" data-reasoning-distribution aria-labelledby="reasoning-distribution-heading">
+    <section class="reasoning-distribution" aria-labelledby="reasoning-distribution-heading">
       <div class="reasoning-distribution-heading">
         <div>
           <p class="eyebrow">Named assessment tags</p>
           <h2 id="reasoning-distribution-heading">Reasoning flags by topic</h2>
           <p>Rates show cited fallacy and bias tags per 100 scored argument and rebuttal moves.</p>
         </div>
-        <label class="reasoning-topic-control" for="reasoning-topic-select">
-          <span>Chart topic</span>
-          <select id="reasoning-topic-select" data-reasoning-topic-select>
-            <option value="all">All topic clusters</option>
-            ${topics
-              .map(
-                (topic) => `<option value="${escapeHtml(topic.id)}">${escapeHtml(topic.title)}</option>`
-              )
-              .join("")}
-          </select>
-        </label>
       </div>
-      <div class="reasoning-distribution-readout" data-reasoning-tag-readout aria-live="polite">
-        ${renderReasoningTagReadout(null, topics)}
+      <div class="reasoning-distribution-readout">
+        ${renderReasoningTagReadout(topics)}
       </div>
       <div class="reasoning-distribution-legend" aria-label="Reasoning tag legend">
         <span><i class="fallacy"></i> Logical fallacy tags</span>
@@ -1392,7 +1380,6 @@ function renderRankings() {
   `);
 
   bindRankingControls(state);
-  bindReasoningDistribution(reasoningTopics);
 }
 
 function renderRankingOptions(options, selectedValue) {
@@ -2121,27 +2108,6 @@ function bindRankingControls(state) {
   page.querySelector("[data-clear-comparison]")?.addEventListener("click", () => {
     navigateRankings({ ...state, comparisonA: "", comparisonB: "" });
   });
-}
-
-function bindReasoningDistribution(topics) {
-  const section = app.querySelector("[data-reasoning-distribution]");
-  if (!section) return;
-
-  const selector = section.querySelector("[data-reasoning-topic-select]");
-  const readout = section.querySelector("[data-reasoning-tag-readout]");
-  const update = (topicId) => {
-    const selectedTopic = topics.find((topic) => topic.id === topicId) || null;
-    section.dataset.focusedTopic = selectedTopic?.id || "all";
-    readout.innerHTML = renderReasoningTagReadout(selectedTopic, topics);
-
-    section.querySelectorAll("[data-reasoning-topic-row]").forEach((row) => {
-      const isFocused = row.dataset.reasoningTopicRow === selectedTopic?.id;
-      row.classList.toggle("is-focused", isFocused);
-      row.classList.toggle("is-muted", Boolean(selectedTopic) && !isFocused);
-    });
-  };
-
-  selector?.addEventListener("change", () => update(selector.value));
 }
 
 function renderDebate(id) {
