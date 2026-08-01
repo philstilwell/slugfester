@@ -60967,6 +60967,275 @@ export const debates = [
       }
     }
   },
+  {
+    id: "craig-ehrman-historical-evidence-resurrection-2006",
+    number: "179",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "William Lane Craig vs Bart Ehrman: Is There Historical Evidence for the Resurrection?",
+    label: "Historical evidence for Jesus' resurrection",
+    date: "2026-08-01",
+    duration: "1 hr 55 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=MW5_nJYSKyk",
+    motion:
+      "Does the historical evidence make Jesus' bodily resurrection the best explanation of what followed his crucifixion?",
+    summary:
+      "Craig argues that burial, empty tomb, appearances, and transformed belief are best explained by resurrection; Ehrman disputes key facts and argues that historians cannot rank a miracle above natural alternatives.",
+    sourceNote:
+      "Built from the English-original YouTube caption track for the March 28, 2006 College of the Holy Cross debate. Captions were checked against the recording; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "distinguish between the evidence and the best explanation",
+        context:
+          "Craig separates ordinary historical facts—burial, an empty tomb, reported appearances, and belief—from the contested supernatural hypothesis proposed to explain them."
+      },
+      con: {
+        text: "we can only establish what probably happened",
+        context:
+          "Ehrman argues that historical method compares recurrent human events and therefore cannot affirm a miracle defined as the least probable kind of event."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Historical evidence supports resurrection",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "History cannot establish resurrection",
+        speaker: "Bart Ehrman",
+        color: "coral"
+      }
+    },
+    score: { pro: 92, con: 88 },
+    sections: [
+      {
+        title: "Burial and the empty tomb",
+        timebox: "04:18-55:45",
+        score: { pro: 93, con: 88 },
+        exchanges: [
+          {
+            pro: {
+              time: "04:21",
+              role: "Early-multiple-attestation case",
+              words:
+                "Craig argues that Joseph's burial and the women's empty-tomb discovery appear in early, partly independent streams, with embarrassing witnesses and a named Sanhedrin member disfavoring invention.",
+              score: 93,
+              critique:
+                "Craig gives a disciplined historical case rather than inferring resurrection directly from the Gospels. A named burial agent, early Pauline tradition, Markan material, and later streams make burial in a known tomb plausible. Women as first discoverers also fit an event remembered despite reduced public status better than an apologetic fabrication aimed at maximum credibility. The argument's force depends on source independence more than Craig acknowledges: Matthew and Luke use Mark, Acts is by Luke's author, and Paul's creed affirms burial without naming Joseph or explicitly stating an empty tomb. “Embarrassment” can also serve literary reversal. Even after discounting inflated source counts, the burial is strong and the empty tomb moderately well supported. Craig appropriately identifies evidence requiring explanation, though consensus citations sometimes substitute for showing disputed dependencies.",
+              tags: []
+            },
+            con: {
+              time: "25:54",
+              role: "Roman-disposal and source challenge",
+              words:
+                "Ehrman notes that crucified victims were often denied honorable burial, questions independent attestation, and argues that later empty-tomb narratives may develop from proclamation rather than recollection.",
+              score: 88,
+              critique:
+                "Ehrman supplies a relevant prior: Roman crucifixion displayed bodies as punishment, so a respectful individual tomb cannot be assumed. He also correctly discounts literary dependence and notes that Paul's formula does not identify Joseph or narrate discovery by women. These points lower Craig's confidence. Yet Roman practice varied with local politics and Jewish burial sensitivities, and a named council member creates a checkable claim less easily dismissed as anonymous legend. Ehrman offers no specific evidence that Jesus remained exposed or entered a common grave. His development model is possible but not independently traced through surviving stages. The critique successfully weakens “four or five independent sources,” but it does not outweigh the early burial tradition and narrative convergence enough to make a known tomb improbable.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Postmortem appearances and transformed belief",
+        timebox: "08:45-1:04:20",
+        score: { pro: 95, con: 91 },
+        exchanges: [
+          {
+            pro: {
+              time: "09:07",
+              role: "Appearance-tradition argument",
+              words:
+                "Craig uses Paul's early list, personal acquaintance with Peter and James, multiple individual and group reports, and the disciples' unexpected resurrection belief as a tightly dated evidential core.",
+              score: 95,
+              critique:
+                "Craig's strongest evidence is First Corinthians 15. The formula predates Paul's letter, names people Paul knew, and records experiences attributed to individuals, groups, a former skeptic, and a persecutor. This makes late legendary invention inadequate as a total explanation and establishes at least sincere appearance experiences very early. Craig also notes that a singularly raised Messiah before the general resurrection was not the obvious Jewish expectation after crucifixion. The evidential wording still matters: Paul reports appearances, not independently documented physical encounters, and the five hundred are not individually accessible witnesses. Sincerity does not establish veridical perception, while grief, religious experience, and social reinforcement can transform belief. Nevertheless, Craig securely establishes an unusually early, diverse appearance tradition and a movement requiring more than gradual anonymous legend.",
+              tags: []
+            },
+            con: {
+              time: "1:31:03",
+              role: "Vision-and-story development account",
+              words:
+                "Ehrman proposes that followers reinterpreted Jesus as vindicated, some experienced visions like Paul's, and stories of appearances expanded as resurrection belief circulated.",
+              score: 91,
+              critique:
+                "Ehrman offers a natural mechanism with known analogues: bereaved people report sensed presences, religious visions can reverse opponents, and retelling can convert experiences into concrete narratives. Paul's own visionary encounter makes a nonordinary perceptual category relevant, while later Gospel stories show elaboration. This explains sincerity without fraud. The account becomes speculative when it assigns actual visions to some claims and story growth to others, especially the five hundred, without evidence identifying which is which. It also does not fully explain why multiple leaders converged on bodily resurrection rather than exaltation or ongoing spiritual presence. Jewish interpretive resources make vindication possible, but not inevitable. Ehrman's model is plausible and less ontologically costly; Craig is right that it functions as a composite family of hypotheses rather than one independently evidenced explanation.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Gospel discrepancies and evidential core",
+        timebox: "14:09-1:42:45",
+        score: { pro: 91, con: 93 },
+        exchanges: [
+          {
+            pro: {
+              time: "14:54",
+              role: "Core-versus-detail defense",
+              words:
+                "Craig argues that differences over visitors, angels, locations, and sequences occur in later narratives and do not overturn earlier evidence for burial, emptiness, experiences, or belief.",
+              score: 91,
+              critique:
+                "Craig correctly distinguishes contradiction in peripheral narration from the falsity of every shared claim. Ancient sources often disagree while preserving a recoverable core, and Paul's early formula does not depend on harmonizing every Gospel scene. He also notes that different numbers of women or angels can be complementary rather than strictly inconsistent. This prevents Ehrman's discrepancy list from functioning as an all-or-nothing defeater. However, some differences concern substance—where appearances occurred, what the disciples were instructed to do, and whether they recognized Jesus—not merely omitted names. Calling them later can protect the early core only by reducing how much the physical narrative contributes. Craig wins the logical point that discrepancy does not erase all evidence, but he understates how contradictions lower independence, precision, and confidence in the empty-tomb and bodily-appearance details.",
+              tags: []
+            },
+            con: {
+              time: "40:36",
+              role: "Narrative-comparison challenge",
+              words:
+                "Ehrman invites readers to list each resurrection account's actors, events, and movements, arguing that attempts to combine them require additions and produce incompatible sequences.",
+              score: 93,
+              critique:
+                "Ehrman's side-by-side method is excellent source criticism. Reading vertically tends to blend familiar stories, while horizontal comparison reveals distinct narrative designs and genuine tensions. Differences in who reaches the tomb, what they see, what message they receive, and whether appearances center on Galilee or Jerusalem show that the later accounts are not four camera angles. This materially weakens arguments that count each Gospel as straightforward independent confirmation of one detailed sequence. Ehrman sometimes overstates contradiction where one author merely omits an actor, and narrative shaping can coexist with a historical core. The method also says little directly against Paul's early appearance formula. Still, he successfully demonstrates that Craig's “facts” must be stated at a higher level of abstraction than the apologetic narratives, reducing their specificity as evidence for bodily resurrection.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Natural alternatives and explanatory comparison",
+        timebox: "58:20-1:34:25",
+        score: { pro: 93, con: 86 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:15:52",
+              role: "Unified-explanation case",
+              words:
+                "Craig argues that hallucination, theft, wrong-tomb, and legend theories each explain only selected facts and require combination, while resurrection explains the full evidential set at once.",
+              score: 93,
+              critique:
+                "Craig applies legitimate explanatory virtues: scope, power, plausibility, ad hocness, and fit with accepted beliefs. A single resurrection hypothesis does unify burial, emptiness, experiences, and belief more elegantly than stacking grief visions, body disposal, memory growth, and theological reinterpretation. He also rightly refuses to label any imaginable natural story superior merely because it is natural. The apparent unity has a cost concealed in the background hypothesis: it requires a God who exists, intends to vindicate Jesus, acts miraculously, and would use precisely this event. Without independent support, “God raised Jesus” compresses several assumptions into one sentence. Natural explanations can also differ by evidence because the four facts need not share one cause. Craig wins against Ehrman's least developed alternatives, but parsimony cannot be measured by hypothesis count alone.",
+              tags: []
+            },
+            con: {
+              time: "1:29:40",
+              role: "Vindication-and-vision alternative",
+              words:
+                "Ehrman suggests that scriptural reinterpretation generated vindication belief, visions reinforced it, and later stories supplied a tomb and increasingly physical appearances.",
+              score: 86,
+              critique:
+                "Ehrman's scenario uses familiar processes and therefore has a favorable prior: defeated movements reinterpret prophecy, charismatic experiences occur, memories evolve, and communities elaborate founding stories. It can explain why sincere belief does not entail a miracle. But much of the sequence is reverse-engineered from the desired natural conclusion. He supplies no evidence for the timing of the alleged tomb invention, cannot identify the first visionary, and assigns unsupported status to the five-hundred report. His suggestion that no one could check a decomposed body also sits uneasily with the claim that a specific empty tomb story arose. The model shows that resurrection is not logically forced, which is important, but it does not emerge as a well-evidenced single alternative. Craig reasonably criticizes its piecemeal and conjectural character.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "Different unsupported natural mechanisms are assigned to each datum in the direction required to exclude resurrection."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Miracle probability and the limits of history",
+        timebox: "20:35-1:54:38",
+        score: { pro: 96, con: 82 },
+        exchanges: [
+          {
+            pro: {
+              time: "52:18",
+              role: "Bayesian-denominator rebuttal",
+              words:
+                "Craig argues that a low prior probability cannot by itself settle the posterior probability; one must also compare how expected the evidence is under resurrection and its negation.",
+              score: 96,
+              critique:
+                "Craig exposes the debate's clearest formal error. Even an antecedently rare hypothesis can become probable if the observed evidence is far more likely on it than on alternatives. Ehrman's calculation focuses on resurrection's prior rarity while omitting likelihood terms and the probability of the evidence under no resurrection. Craig is also right that if historians cannot assess God's existence or action at all, they cannot derive the numerical improbability Ehrman repeatedly asserts. He sensibly declines to assign a spurious percentage and instead uses comparative explanation. The unresolved issue is where background theism enters: a resurrection prior may remain very low without independent evidence for a willing God. But Craig need only defeat Ehrman's claim of methodological impossibility, and he does. His Bayesian correction is precise, relevant, and largely unanswered.",
+              tags: []
+            },
+            con: {
+              time: "20:35",
+              role: "Least-probable-event restriction",
+              words:
+                "Ehrman argues that historians establish the most probable account while a miracle is by definition extraordinarily improbable, so historical method cannot affirm resurrection even if faith can.",
+              score: 82,
+              critique:
+                "Ehrman raises a public-method concern: historians need shared criteria that do not require allegiance to one theology, and miracle claims across religions deserve equal scrutiny. His examples of Apollonius, Muhammad, and alternative gods expose the danger of accepting familiar supernatural explanations while dismissing foreign ones. Yet defining a miracle as the least probable event and then concluding it cannot be most probable is circular. Rarity is not posterior probability after evidence, and repeated improbable poker hands do not illustrate a designed resurrection hypothesis. His insistence that theology lies outside history also conflicts with assigning natural alternatives a comparative advantage because God is improbable. The argument supports institutional caution and agnosticism, not the universal claim that no evidence could ever make a miracle the best explanation. Craig decisively identifies this overreach.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "Miracles are defined as maximally improbable and then excluded from being the most probable explanation on that basis."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 92,
+        strengths: [
+          "Craig separated ordinary historical evidence from the supernatural hypothesis proposed to explain it.",
+          "His use of Paul's early appearance tradition and acquaintance with named witnesses established a strong, tightly dated evidential core.",
+          "He compared explanations by scope and power rather than claiming that sincere disciples alone prove resurrection.",
+          "His Bayesian rebuttal decisively showed that a low prior cannot determine posterior probability without likelihoods and background evidence."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes counted literarily dependent Gospel materials as more independent sources than the evidence warrants.",
+            links: [
+              {
+                label: "Base-rate neglect",
+                url: bias("base-rate-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "The apparent simplicity of “God raised Jesus” concealed substantial background commitments about God's existence, intentions, and intervention.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 88,
+        strengths: [
+          "Ehrman used horizontal Gospel comparison to expose real narrative tensions and reduce overconfident source multiplication.",
+          "He supplied familiar psychological and social mechanisms explaining sincere resurrection belief without fraud.",
+          "His cross-religious miracle comparisons challenged any evidential standard tailored only to familiar Christian claims."
+        ],
+        blunders: [
+          {
+            text:
+              "He defined miracles through extreme improbability and then used that definition to exclude resurrection from probable historical explanation.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His naturalistic reconstruction combined unattested visions, body disposal, story growth, and reinterpretation without independently dating those stages.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
