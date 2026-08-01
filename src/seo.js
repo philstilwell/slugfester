@@ -3,10 +3,12 @@ export const SITE_NAME = "Slugfester";
 export const SITE_LOCALE = "en_US";
 export const SITE_LANGUAGE = "en";
 export const SITE_THEME_COLOR = "#13201f";
-export const SITE_UPDATED_DATE = "2026-06-18";
+export const SITE_UPDATED_DATE = "2026-08-01";
+export const SITE_TIME_ZONE_OFFSET = "-04:00";
+export const SITE_UPDATED_DATETIME = `${SITE_UPDATED_DATE}T12:00:00${SITE_TIME_ZONE_OFFSET}`;
 export const DEFAULT_TITLE = "Slugfester | YouTube Debate Argument Scorecards";
 export const DEFAULT_DESCRIPTION =
-  "Explore YouTube debate transcripts as side-by-side argument scorecards with AI-assisted reasoning scores, critique popovers, and contextual fallacy and bias references.";
+  "Explore YouTube debate transcripts as side-by-side argument scorecards with AI reasoning scores, critique popovers, and fallacy or bias references.";
 export const DEFAULT_IMAGE = "/assets/social-card.png";
 export const DEFAULT_IMAGE_ALT =
   "Slugfester debate scorecards with boxing gloves and argument analysis.";
@@ -21,6 +23,47 @@ const WEBSITE_ID = `${SITE_URL}/#website`;
 function latestIsoDate(...dates) {
   const values = dates.filter(Boolean);
   return values.length ? values.sort().at(-1) : SITE_UPDATED_DATE;
+}
+
+function seoDateTime(date = SITE_UPDATED_DATE) {
+  const value = String(date || SITE_UPDATED_DATE);
+  return value.includes("T") ? value : `${value}T12:00:00${SITE_TIME_ZONE_OFFSET}`;
+}
+
+function uniqueNames(values = [], limit = 48) {
+  const seen = new Set();
+  const names = [];
+
+  values.forEach((value) => {
+    const name = String(value || "").trim();
+    const key = name.toLowerCase();
+    if (!name || seen.has(key) || names.length >= limit) return;
+    seen.add(key);
+    names.push(name);
+  });
+
+  return names;
+}
+
+function speakerLabel(value = "") {
+  const names = String(value)
+    .split(/\s*(?:,| and | & )\s*/i)
+    .map((name) => name.trim())
+    .filter(Boolean);
+  const labels = names.map((name) => {
+    const cleaned = name.replace(/^\(([^)]+)\)$/, "$1").replace(/\s+\([^)]*\)/g, "").trim();
+    const parts = cleaned.split(/\s+/).filter(Boolean);
+    return parts.at(-1) || cleaned || name;
+  });
+
+  if (labels.length > 1) return `${labels[0]} +${labels.length - 1}`;
+  return labels.join(" & ");
+}
+
+function debateSearchTitle(debate) {
+  return `${debateNumberLabel(debate)}: ${speakerLabel(debate.sides.pro.speaker)} vs ${speakerLabel(
+    debate.sides.con.speaker
+  )}`;
 }
 
 function organizationIdentityJsonLd() {
@@ -88,7 +131,7 @@ export function compactText(value = "", maxLength = 158) {
   const text = String(value).replace(/\s+/g, " ").trim();
   if (text.length <= maxLength) return text;
 
-  const truncated = text.slice(0, maxLength - 1);
+  const truncated = text.slice(0, Math.max(0, maxLength - 3));
   const lastSpace = truncated.lastIndexOf(" ");
   const cleanCut = truncated
     .slice(0, lastSpace > 80 ? lastSpace : truncated.length)
@@ -125,6 +168,7 @@ export function organizationJsonLd() {
 }
 
 export function websiteJsonLd(topics = []) {
+  const topicNames = uniqueNames(topics);
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -137,8 +181,8 @@ export function websiteJsonLd(topics = []) {
     publisher: organizationIdentityJsonLd()
   };
 
-  if (topics.length) {
-    jsonLd.about = topics.map((topic) => ({
+  if (topicNames.length) {
+    jsonLd.about = topicNames.map((topic) => ({
       "@type": "Thing",
       name: topic
     }));
@@ -161,7 +205,7 @@ export function breadcrumbJsonLd(items) {
 }
 
 export function landingSeo(debates = []) {
-  const topics = debates.map((debate) => debate.label);
+  const topics = uniqueNames(debates.map((debate) => debate.label));
 
   return {
     title: DEFAULT_TITLE,
@@ -192,12 +236,14 @@ export function landingSeo(debates = []) {
 
 export function debateSeo(debate) {
   const modifiedDate = latestIsoDate(debate.date, SITE_UPDATED_DATE);
+  const publishedTime = seoDateTime(debate.date);
+  const modifiedTime = seoDateTime(modifiedDate);
 
   return {
-    title: pageTitle(`${debateNumberLabel(debate)}: ${debate.title}`),
+    title: pageTitle(debateSearchTitle(debate)),
     description: compactText(
-      `${debateNumberLabel(debate)} (${debate.label}): ${debate.summary} Scores: ${debate.sides.pro.name} ${debate.score.pro}, ${debate.sides.con.name} ${debate.score.con}.`,
-      180
+      `${debateNumberLabel(debate)} scorecard: ${debate.summary} Scores: ${debate.sides.pro.name} ${debate.score.pro}; ${debate.sides.con.name} ${debate.score.con}.`,
+      158
     ),
     canonicalPath: debatePath(debate),
     imagePath: DEFAULT_IMAGE,
@@ -205,8 +251,8 @@ export function debateSeo(debate) {
     type: "article",
     articleSection: "Debate scorecards",
     lastmod: modifiedDate,
-    publishedTime: debate.date,
-    modifiedTime: modifiedDate,
+    publishedTime,
+    modifiedTime,
     jsonLd: [
       organizationJsonLd(),
       websiteJsonLd(),
@@ -216,8 +262,8 @@ export function debateSeo(debate) {
         headline: `${debateNumberLabel(debate)}: ${debate.title}`,
         name: `${debateNumberLabel(debate)}: ${debate.title}`,
         description: compactText(debate.summary, 220),
-        datePublished: debate.date,
-        dateModified: modifiedDate,
+        datePublished: publishedTime,
+        dateModified: modifiedTime,
         mainEntityOfPage: absoluteUrl(debatePath(debate)),
         url: absoluteUrl(debatePath(debate)),
         image: imageObject(),
@@ -303,7 +349,7 @@ export function searchSeo(debates = []) {
 }
 
 export function topicsSeo(debates = []) {
-  const topics = debates.map((debate) => debate.label);
+  const topics = uniqueNames(debates.map((debate) => debate.label));
   const description = `Browse ${debates.length} Slugfester debate scorecards grouped by recurring topics, with compact debate links and participant portraits.`;
 
   return {
@@ -428,7 +474,7 @@ export function interlocutorSeo(person, appearances = 0) {
 
 export function backendSeo({ legacy = false } = {}) {
   const description =
-    "A clear explanation of the Slugfester backend: how YouTube debate transcripts become quote-grounded scorecards, critique popovers, fallacy notes, bias notes, and topic indexes.";
+    "How Slugfester turns YouTube debate transcripts into quote-grounded scorecards, critique popovers, fallacy notes, bias notes, and topic indexes.";
 
   return {
     title: pageTitle("Backend"),
@@ -440,7 +486,7 @@ export function backendSeo({ legacy = false } = {}) {
     imageAlt: "Slugfester backend process for debate argument scorecards.",
     type: "article",
     articleSection: "Methodology",
-    modifiedTime: SITE_UPDATED_DATE,
+    modifiedTime: SITE_UPDATED_DATETIME,
     jsonLd: [
       organizationJsonLd(),
       websiteJsonLd(),
@@ -450,7 +496,7 @@ export function backendSeo({ legacy = false } = {}) {
         headline: "Backend",
         name: "Backend",
         description,
-        dateModified: SITE_UPDATED_DATE,
+        dateModified: SITE_UPDATED_DATETIME,
         mainEntityOfPage: absoluteUrl(backendPath()),
         url: absoluteUrl(backendPath()),
         image: imageObject(),
@@ -498,14 +544,14 @@ export function referenceSeo(type, slug, reference) {
 
   return {
     title: pageTitle(`${reference.label} ${category.toLowerCase()}`),
-    description: compactText(`${reference.label}: ${reference.definition}`, 170),
+    description: compactText(`${reference.label}: ${reference.definition}`, 158),
     canonicalPath: referencePath(type, slug),
     lastmod: SITE_UPDATED_DATE,
     imagePath: DEFAULT_IMAGE,
     imageAlt: `${reference.label} ${category.toLowerCase()} reference on Slugfester.`,
     type: "article",
     articleSection: category,
-    modifiedTime: SITE_UPDATED_DATE,
+    modifiedTime: SITE_UPDATED_DATETIME,
     jsonLd: [
       organizationJsonLd(),
       websiteJsonLd(),

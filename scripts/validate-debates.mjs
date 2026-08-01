@@ -198,6 +198,10 @@ function validateDebate(debate, index) {
     return;
   }
 
+  if (debate.draft || debate.sections?.some((section) => section?.__draft)) {
+    return;
+  }
+
   requireString(debate, "id", path, {
     pattern: slugPattern,
     patternMessage: "must be a lowercase URL slug"

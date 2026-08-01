@@ -1,4 +1,4 @@
-import { debates } from "./data/debates.js";
+import { publishedDebates as debates } from "./data/debates.js";
 import { avatarsForSpeakerText } from "./data/interlocutors.js";
 import { getReferenceDefinition, referenceFromUrl } from "./data/references.js";
 import {

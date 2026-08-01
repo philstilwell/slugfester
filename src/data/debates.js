@@ -55964,3 +55964,7 @@ export const debates = [
     }
   },
 ];
+
+export const publishedDebates = debates.filter(
+  (debate) => !debate.draft && !debate.sections?.some((section) => section.__draft)
+);
