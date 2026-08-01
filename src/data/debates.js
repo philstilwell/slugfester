@@ -59384,6 +59384,267 @@ export const debates = [
       }
     }
   },
+  {
+    id: "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+    number: "173",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "John Onaiyekan & Ann Widdecombe vs Stephen Fry & Christopher Hitchens: The Catholic Church Is a Force for Good in the World",
+    label: "The Catholic Church's social record",
+    date: "2026-08-01",
+    duration: "1 hr 59 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=JZRcYaAYWg4",
+    motion:
+      "Is the Catholic Church, considered as an institution and global social force, a force for good in the world?",
+    summary:
+      "Onaiyekan and Widdecombe emphasize global welfare, spiritual hope, and reform within a fallible institution; Fry and Hitchens argue that those benefits do not outweigh institutional abuse, sexual control, public-health obstruction, and unaccountable authority.",
+    sourceNote:
+      "Built from the English-original YouTube caption track supplied with the Intelligence Squared recording. Captions were checked against the recorded exchange; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "the Catholic Church is doing far more than its numbers and its population would probably suggest",
+        context:
+          "Onaiyekan grounds the affirmative case in the scale of Catholic hospitals, schools, clinics, refugee work, and HIV care."
+      },
+      con: {
+        text: "You do not need this imperial panoply of marble and gold",
+        context:
+          "Fry distinguishes spiritual searching and individual charity from the authority, wealth, and doctrines of the Catholic institution."
+      }
+    },
+    sides: {
+      pro: {
+        name: "The Church is a force for good",
+        speaker: "John Onaiyekan and Ann Widdecombe",
+        color: "teal"
+      },
+      con: {
+        name: "The Church is not a force for good",
+        speaker: "Stephen Fry and Christopher Hitchens",
+        color: "coral"
+      }
+    },
+    score: { pro: 78, con: 92 },
+    sections: [
+      {
+        title: "Humanitarian scale and institutional credit",
+        timebox: "08:20-1:06:03",
+        score: { pro: 88, con: 86 },
+        exchanges: [
+          {
+            pro: {
+              time: "08:42",
+              role: "Global-service ledger",
+              words:
+                "Onaiyekan cites independent statistics, Catholic schools, hospitals, refugee camps, and UNAIDS care, adding that assistance is given without discrimination of belief or creed.",
+              score: 88,
+              critique:
+                "Onaiyekan supplies the affirmative's strongest evidence: identifiable institutions providing medicine, education, relief, and refugee support where public capacity is often thin. His UNAIDS figure gives the claim more substance than a generic appeal to charity, and the nondiscrimination policy directly supports social benefit. The inference nevertheless needs a denominator and counterfactual. Large provision can reflect the Church's size, resources, historical position, or state subsidy; it does not yet establish what would vanish rather than be replaced without ecclesial administration. He also attributes lay Catholics' work to the Church's guiding spirit without separating personal motivation from institutional causation. The score is high because the services are relevant and concrete, but the motion requires a net institutional balance that this gross-benefit ledger cannot settle alone.",
+              tags: []
+            },
+            con: {
+              time: "1:04:44",
+              role: "Institution-versus-good-people reply",
+              words:
+                "Fry accepts spiritual searching and humane religious people but argues that neither charity nor meaning requires the Church's wealth, hierarchy, or claims to exclusive authority.",
+              score: 86,
+              critique:
+                "Fry correctly separates three propositions often run together: Catholics can do good, faith can motivate them, and the Catholic hierarchy is therefore good on balance. His comparison with less authoritarian religious communities shows that spiritual meaning and organized service do not logically require Rome's concentrated wealth or doctrinal power. This is an important counterfactual response to Onaiyekan. Yet Fry offers little empirical evidence that Catholic services would be replaced at equal scale, and the visual contrast between a Galilean carpenter and Vatican splendor is more moral rhetoric than causal analysis. An institution may be wealthy, hierarchical, and still produce net benefit. The score is strong because he exposes the attribution gap, but he does not quantify the opportunity cost or replacement mechanism needed to defeat the affirmative's concrete service evidence.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Abuse, concealment, and institutional responsibility",
+        timebox: "21:45-1:01:14",
+        score: { pro: 65, con: 95 },
+        exchanges: [
+          {
+            pro: {
+              time: "42:07",
+              role: "Contemporary-ignorance defense",
+              words:
+                "Widdecombe compares Catholic failures with secular organizations that mishandled abuse, arguing that many actors were responding in the ignorance of their time rather than endorsing abuse.",
+              score: 65,
+              critique:
+                "Widdecombe fairly notes that institutional ignorance about grooming, recidivism, and victim testimony was not uniquely Catholic. Her secular comparison blocks the crude inference that every mishandled case arose from doctrine or that association equals endorsement. However, it does not answer the institutional charge actually made. Hitchens and Fry identify transfers, secrecy requirements, clerical control, and protection of influential offenders—mechanisms more specific than society's general lack of knowledge. Pointing to a civil-liberties group's separate failure lowers no Catholic responsibility and risks a whataboutist diversion. Widdecombe also moves too quickly from imperfect knowledge to excusable conduct without distinguishing early uncertainty from later concealment after credible reports. The score is mixed because the comparative context matters, but it leaves the strongest evidence of coordinated self-protection almost untouched.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "A secular organization's mishandling of abuse does not answer evidence that Catholic governance created its own concealment mechanisms."
+                }
+              ]
+            },
+            con: {
+              time: "58:19",
+              role: "Governance-mechanism indictment",
+              words:
+                "Fry points to centralized secrecy orders and protection of Marcial Maciel, while Hitchens argues that repeated transfers and insulation from secular courts make the abuse institutional.",
+              score: 95,
+              critique:
+                "The opposition's argument is exceptionally strong because it identifies mechanisms, not merely wicked members. Confidential handling, threatened ecclesial penalties, offender transfers, deference to clerical status, and protection of a well-connected founder make institutional causation testable. These practices plausibly increased repeat abuse and obstructed ordinary justice. Fry also directly answers the ignorance defense by distinguishing incomplete public understanding from leaders suppressing allegations they already possessed. Some historical assertions would benefit from documents and careful jurisdictional qualification inside the debate itself, and neither speaker estimates abuse prevalence relative to other institutions. Those limitations do not dissolve the core inference: an organization claiming moral authority adopted governance practices that predictably protected itself over children. The evidence is highly relevant to the motion and survives the affirmative response, warranting an exceptional score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "HIV care, condoms, and public-health tradeoffs",
+        timebox: "09:26-1:43:52",
+        score: { pro: 79, con: 94 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:42:20",
+              role: "Risk-compensation and abstinence case",
+              words:
+                "Widdecombe cites population researchers questioning whether more condoms reduce African HIV rates and argues that abstinence and fidelity address behavior rather than only single acts.",
+              score: 79,
+              critique:
+                "Widdecombe improves the affirmative case by offering external research rather than resting on doctrine. Risk compensation, inconsistent use, partner concurrency, and program design are legitimate population-level questions; condoms are not a complete AIDS strategy. She also correctly retains abstinence and fidelity as effective options. But the cited claim that aggregate condom availability had not produced an expected decline cannot establish that condoms are ineffective when used correctly, nor does it justify papal claims that they worsen transmission. Ecological comparisons are confounded by epidemic stage, access, adherence, and targeting. Her conclusion slides from 'not sufficient at population level' toward 'not the answer,' leaving Fry's narrower prevention claim intact. The score is solid because she introduces real complexity, but the inference outruns the evidence and underweights a proven protective tool.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument shifts between condoms not being a sufficient population policy and condoms not being an effective protective measure."
+                }
+              ]
+            },
+            con: {
+              time: "1:02:52",
+              role: "Integrated-prevention rebuttal",
+              words:
+                "Fry endorses Uganda's abstinence, fidelity, and correct-condom-use strategy, then argues that denying condoms' protection and claiming they increase AIDS causes avoidable suffering.",
+              score: 94,
+              critique:
+                "Fry's reply is disciplined and well targeted. He does not caricature the Church as opposing effective measures; he explicitly accepts abstinence and fidelity while insisting that correct condom use also reduces transmission. That removes the false choice on which much of the affirmative rhetoric depends. His documentary experience and Ugandan example give the argument practical grounding, and his criticism focuses on the additional harm created by authoritative misinformation. He occasionally personalizes responsibility in the Pope more sharply than the causal evidence presented can quantify, and a full assessment would distinguish individual efficacy from distribution programs and behavioral adaptation. Still, Widdecombe's population-level citations do not rebut the protective effect or justify false claims about condoms increasing infection. Fry therefore establishes a serious institutional public-health cost while conceding the affirmative's strongest points.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Sexual ethics, dignity, and coercive authority",
+        timebox: "59:19-1:49:03",
+        score: { pro: 72, con: 91 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:44:10",
+              role: "Doctrine-and-conduct distinction",
+              words:
+                "Widdecombe rejects treating celibacy as sexual dysfunction and argues that critics should state Catholic teaching accurately rather than infer its falsity from clerics' chosen way of life.",
+              score: 72,
+              critique:
+                "Widdecombe is right that celibacy alone does not show dysfunction and that a person's sexual history does not determine whether an ethical proposition is true. Her objection catches an ad hominem tendency in Fry's most theatrical phrasing. Voluntary celibates can reason about marriage and family just as unmarried physicians can study reproductive health. Yet this response addresses the insult more than the policy objection. The opposition challenges an exclusively male, celibate hierarchy claiming coercive authority over contraception, same-sex relationships, and family law despite limited lived accountability to those governed. Widdecombe offers no independent argument for the substantive prohibitions and understates the difference between proposing ethics and using institutional power to impose them. The score is respectable for correcting overreach, but weak on the central burden of justifying doctrine and authority.",
+              tags: []
+            },
+            con: {
+              time: "1:48:57",
+              role: "Love and equal-respect challenge",
+              words:
+                "Fry argues that homosexuality is not merely a sexual act but a form of love deserving respect, and that the Church's prohibitions materially constrain lives rather than merely advise believers.",
+              score: 91,
+              critique:
+                "Fry reframes the issue from rule violation to human goods: affection, loyalty, family, and equal civic standing. That exposes what an act-centered description omits and makes the social cost of Catholic teaching visible. Hitchens further notes that where it has power the Church seeks legal restrictions, so 'advice' is an inadequate description of its historical and political role. The argument would be stronger with an explicit principle connecting consensual love to moral permissibility; love alone cannot validate every relationship, and Fry sometimes substitutes indignation for criteria. His sweeping psychological account of celibate leaders is also unnecessary and weakens the case. Even so, the affirmative never supplies a public reason for unequal treatment or explains why disputed revelation should govern non-Catholics. The opposition therefore carries the burden convincingly.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral change, context, and claimed authority",
+        timebox: "1:25:24-1:50:05",
+        score: { pro: 74, con: 93 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:26:24",
+              role: "Doctrinal-nuance defense",
+              words:
+                "Widdecombe disputes Fry's account of limbo and urges historical context for past teachings, presenting development and correction as compatible with a continuing Catholic moral tradition.",
+              score: 74,
+              critique:
+                "Widdecombe properly demands accuracy before moral judgment. Popular teaching, theological speculation, and binding doctrine are not identical, and historical claims about limbo or slavery need careful dating and institutional attribution. Traditions can also learn without every development proving fraud. Her correction of Fry's specific limbo description therefore has value. The larger defense, however, threatens the Church's asserted advantage. If plainly harmful positions are excused by their era, while later correction is credited to timeless moral authority, the standard becomes asymmetric. Widdecombe does not explain how believers could identify error before institutional revision or why dissenters using external moral reasoning were wrong at the time. The score is solid for nuance but limited because 'context' explains change without vindicating a reliable teaching office, which is central to the motion's institutional focus.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Past errors receive historical exemption while later reforms are still credited to the institution's enduring moral authority."
+                }
+              ]
+            },
+            con: {
+              time: "1:49:31",
+              role: "External-correction argument",
+              words:
+                "Hitchens notes that secular contemporaries condemned slavery before the Church corrected itself, arguing that later reform shows moral pressure acting on authority rather than authority guiding reform.",
+              score: 93,
+              critique:
+                "Hitchens identifies the crucial comparative evidence. Historical context cannot excuse an allegedly privileged moral authority when contemporaries such as abolitionists already articulated the better judgment. If institutional teaching changes after sustained external criticism, the pattern is more expected under ordinary human revision than dependable divine guidance. The same logic applies to religious liberty, antisemitism, and contested sexual ethics. His rhetoric compresses a complicated record: Catholic actors also opposed slavery, teachings varied, and secular societies were deeply implicated. Naming a few secular dissenters does not assign all reform to secularism. Nevertheless, the argument targets the affirmative's claimed source of moral authority rather than denying every Catholic contribution. Because Widdecombe never supplies a reliable rule distinguishing authentic development from correction of error, Hitchens's explanatory inference remains substantially unanswered.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 78,
+        strengths: [
+          "Onaiyekan grounded the affirmative case in substantial, identifiable medical, educational, refugee, and welfare provision.",
+          "Widdecombe correctly challenged overbroad inferences from celibacy and demanded greater precision about doctrine and historical context.",
+          "The team showed that Catholic service is often delivered across creedal boundaries and that public-health policy is more complex than a single intervention."
+        ],
+        blunders: [
+          {
+            text:
+              "Widdecombe diverted the institutional-abuse charge toward unrelated secular failures without answering Catholic secrecy and offender-protection mechanisms.",
+            links: [{ label: "Red herring", url: fallacy("red-herring") }]
+          },
+          {
+            text:
+              "The team alternated between historical context for past errors and institutional credit for later correction without a stable standard of moral authority.",
+            links: [
+              { label: "Special pleading", url: fallacy("special-pleading") }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 92,
+        strengths: [
+          "Fry and Hitchens separated admirable Catholics and charitable outputs from the stronger claim that hierarchy and doctrine are good on balance.",
+          "They identified concrete institutional mechanisms connecting secrecy, clerical deference, and offender protection to repeated abuse.",
+          "Fry's integrated HIV-prevention argument conceded abstinence and fidelity while decisively defending correct condom use against misinformation.",
+          "Hitchens used contemporaneous dissent to show that later institutional reform can be better explained by external moral correction than privileged authority."
+        ],
+        blunders: [
+          {
+            text:
+              "Fry's psychological generalizations about celibate clergy were unnecessary and weaker than his public-reason and equal-respect arguments.",
+            links: [
+              { label: "Confirmation bias", url: bias("confirmation-bias") }
+            ]
+          },
+          {
+            text:
+              "The opposition did not quantify how much Catholic welfare provision would be replaced under its preferred institutional alternatives.",
+            links: [{ label: "Scope neglect", url: bias("scope-neglect") }]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
