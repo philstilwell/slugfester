@@ -58876,6 +58876,260 @@ export const debates = [
       }
     }
   },
+  {
+    id: "hitchens-blair-religion-force-good-2010",
+    number: "171",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Christopher Hitchens vs Tony Blair: Is Religion a Force for Good in the World?",
+    label: "Religion's social benefits and harms",
+    date: "2026-08-01",
+    duration: "1 hr 45 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=nbEyhU-L3iE",
+    motion:
+      "On balance, is religion a force for good in the world?",
+    summary:
+      "Blair argues that faith inspires extraordinary service, reconciliation, and moral obligation despite abuse; Hitchens argues that those goods are available without religion while supernatural authority adds distinctive harms.",
+    sourceNote:
+      "Built from the English-original YouTube caption track. Captions were checked against the recorded exchange; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "people can be inspired by their faith to do good",
+        context:
+          "Blair argues that religious motivation is causally real even though believers possess no monopoly on compassion or service."
+      },
+      con: {
+        text: "Human decency is not derived from religion. It precedes it.",
+        context:
+          "Hitchens argues that faith may label ordinary human solidarity but is unnecessary to explain or sustain it."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Religion is a force for good",
+        speaker: "Tony Blair",
+        color: "teal"
+      },
+      con: {
+        name: "Religion is not a force for good",
+        speaker: "Christopher Hitchens",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 82,
+      con: 92
+    },
+    sections: [
+      {
+        title: "How to judge religion's net effect",
+        timebox: "04:42-29:41",
+        score: {
+          pro: 84,
+          con: 94
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "12:54",
+              role: "Reformist balance sheet",
+              words:
+                "Blair concedes grave abuses but argues that every tradition contains a common call beyond selfishness, inspiring believers to serve strangers and resist fanaticism from within.",
+              score: 84,
+              critique:
+                "Blair chooses the strongest defensible version of the motion. He does not deny inquisitions, sectarianism, or abuse; he asks whether the same traditions also motivate costly service and provide internal resources for reform. His admission that nonbelievers can be equally good prevents a monopoly claim, while his firsthand examples give the causal thesis concrete support. The weakness is the proposed common core. Religions make incompatible doctrinal and moral claims, and selecting compassion as their essence can immunize the positive cases as authentic while labeling harms perversions. Blair also never defines the counterfactual needed for “on balance”: whether the good works would disappear, diminish, or simply reorganize without faith. The score is strong because his case is candid and relevant, but its aggregation rule stays loose.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "Compassionate expressions are treated as religion's authentic core while destructive expressions are more readily classified as distortions."
+                }
+              ]
+            },
+            con: {
+              time: "04:37",
+              role: "Asymmetric causal test",
+              words:
+                "Hitchens catalogs doctrines and institutions that authorize cruelty, then argues that good deeds need no supernatural premise whereas some evils require religious commands or promises.",
+              score: 94,
+              critique:
+                "Hitchens supplies a powerful causal test rather than merely compiling atrocities. Feeding the hungry, protecting children, and showing solidarity are intelligible through ordinary human concern; suicide martyrdom, eternal punishment, sacred land entitlement, and divinely mandated subordination receive distinctive authorization from supernatural belief. That asymmetry directly burdens the motion. His examples range across Catholicism, Islam, Judaism, and Eastern traditions, reducing the chance that one denomination bears all the weight. The limitation is overbreadth: secular ideologies also sacralize leaders and abstractions, and many religious believers reinterpret troubling texts through humane moral judgment. A doctrine's presence does not quantify its total social effect. Still, Hitchens states a clear comparative mechanism and supports it with numerous relevant cases, earning an exceptional opening score.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Charity, poverty, and public health",
+        timebox: "11:55-36:07",
+        score: {
+          pro: 89,
+          con: 91
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "13:02",
+              role: "Faith-motivated service",
+              words:
+                "Blair cites Catholic HIV care, malaria programs, and Christian work with homeless youth as large, difficult services undertaken because believers understand faith as obligation to others.",
+              score: 89,
+              critique:
+                "Blair's best evidence is practical and measurable. Faith-based organizations really do supply substantial medical care, education, shelter, and relief, often in places where states and markets fail. His claim is appropriately modest: believers do not monopolize virtue, but religious conviction can motivate persistence, organization, donations, and trust. Hitchens cannot answer that causal fact merely by saying secular people could perform the same work. Blair also distinguishes the church's harmful AIDS teaching from caregivers saving people with HIV, refusing a simplistic institutional verdict. What remains missing is a denominator and counterfactual. The scale of care must be compared with resources, opportunity costs, proselytizing conditions, and health harms. Nonetheless, this is strong direct support for religion functioning as a force for good in identifiable settings.",
+              tags: []
+            },
+            con: {
+              time: "21:09",
+              role: "Structural and counterfactual reply",
+              words:
+                "Hitchens says charity treats symptoms while women's autonomy, education, contraception, and secular public health attack poverty's causes; religious authorities often obstruct those remedies.",
+              score: 91,
+              critique:
+                "Hitchens answers Blair at the correct policy level. Counting beds or meals is incomplete if the same institution opposes condoms, reproductive autonomy, or women's education that reduce disease and poverty upstream. His claim that empowering women lowers family size and improves health provides a plausible structural mechanism, and the AIDS example makes institutional tradeoffs unavoidable. He also distinguishes praising caregivers from crediting supernatural doctrine. The rhetoric sometimes overstates: charity and structural reform are complements, religious organizations are not uniform, and his assertion that religion “creates” poverty is much broader than the evidence offered. He supplies no comparative totals either. Even so, his counterfactual analysis is sharper than a simple good-works ledger and directly exposes why gross religious provision cannot establish a net benefit.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Conflict, identity, and peacemaking",
+        timebox: "40:33-1:18:03",
+        score: {
+          pro: 86,
+          con: 93
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "43:34",
+              role: "Religion within peace processes",
+              words:
+                "Blair draws on Northern Ireland and Middle East negotiations to argue that religious leaders can transform commitments, legitimize compromise, and reconcile communities when engaged rather than excluded.",
+              score: 86,
+              critique:
+                "Blair contributes unusual firsthand evidence. In conflicts where religious identity is socially embedded, clergy and believing communities can authorize compromise, restrain followers, and provide a language of forgiveness. His Northern Ireland example plausibly shows that peacemaking sometimes succeeds by working through identities rather than pretending they do not exist. He also acknowledges that religion may intensify the same conflict, which makes his account more credible. The weakness is attribution. Northern Ireland's settlement also depended on constitutional bargaining, security changes, exhaustion, outside mediation, and secular actors; religious participation does not establish religion as the net cause. In the Middle East, Blair's hope that faith leaders can help is more programmatic than evidential. The score is high because his experience rebuts Hitchens's claim of causal irrelevance, though not the overall balance.",
+              tags: []
+            },
+            con: {
+              time: "45:58",
+              role: "Sectarian identity as conflict multiplier",
+              words:
+                "Hitchens argues that sacred territory, inherited confessional labels, and divine warrant make political compromise harder, while secular citizens urged peace before clerical reconciliation.",
+              score: 93,
+              critique:
+                "Hitchens makes the stronger causal analysis. Territorial disputes become less negotiable when land is promised by God, opponents become heretics, and children inherit mutually exclusive communal identities. His Northern Ireland reply correctly notes that religious leaders helping end a conflict do not erase the institutions and labels that helped reproduce it; secular dissenters had opposed sectarian violence throughout. In the Israeli-Palestinian discussion he identifies a concrete mechanism by which revelation makes ordinary bargaining existential. He occasionally flattens nationalism, colonial history, security fears, and material interests into religion, and his hypothetical peaceful secular alternative is not directly observable. Those qualifications matter, but Blair repeatedly concedes the danger and offers management rather than evidence that faith improves the net balance. Hitchens therefore wins the section decisively.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Pluralism, education, and moral motivation",
+        timebox: "56:17-1:40:59",
+        score: {
+          pro: 75,
+          con: 90
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:00:51",
+              role: "Faith educated toward coexistence",
+              words:
+                "Blair argues that religion will persist, so societies should educate believers about other traditions and mobilize humane faith against fundamentalist political projects.",
+              score: 75,
+              critique:
+                "Blair's proposal is pragmatic: billions of people will not abandon faith, and literate engagement across traditions may reduce fear and extremism more effectively than contempt. He rightly insists that religious communities contain internal arguments, so reformers need not surrender their language to fanatics. That is a useful strategy for coexistence. But the motion asks whether religion is a force for good, not whether its harms can be moderated. Blair repeatedly shifts to the claim that constructive religion is preferable to destructive religion, a much easier proposition. His appeal to an underlying common good also minimizes irreconcilable truth claims and institutional incentives. The score is moderate because the program is humane and feasible, yet it indirectly concedes Hitchens's central point that faith requires external critical discipline to become safer.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The practical need to reform persistent religion partly displaces the motion's comparative question about religion's net causal effect."
+                }
+              ]
+            },
+            con: {
+              time: "58:33",
+              role: "Free inquiry over inherited certainty",
+              words:
+                "Hitchens opposes assigning children religious identities and argues that claims should face open criticism without divine authority, coercion, or promised reward and punishment.",
+              score: 90,
+              critique:
+                "Hitchens offers a coherent alternative social principle: teach comparative ideas and allow criticism, but do not present children as property of a faith or shield revelation from ordinary evidence. This directly addresses how sectarian identities reproduce and why moral action performed under eternal threat or reward has compromised autonomy. His closing defense of doubt is also well matched to pluralism because it leaves room for revision and peaceful disagreement. The weakness is that secular education can transmit dogma too, while religious formation can include inquiry, community, and moral imagination rather than coercion. Calling all inherited faith indoctrination ignores this variation. Still, Hitchens explains why public reason supplies a fairer rule among incompatible traditions, while Blair's common-faith solution presumes agreement that the debate repeatedly disproves.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 82,
+        strengths: [
+          "Blair candidly acknowledged religion's abuses and avoided claiming that believers possess a monopoly on moral conduct.",
+          "He offered concrete evidence of large-scale faith-motivated medical, charitable, and reconciliation work.",
+          "His firsthand peace-process examples showed that religious actors can sometimes convert embedded identity into a resource for compromise."
+        ],
+        blunders: [
+          {
+            text:
+              "He treated compassionate religion as the authentic core while classifying destructive manifestations more readily as perversions.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "He shifted from whether religion is net good to how an enduring religion might be reformed and managed constructively.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 92,
+        strengths: [
+          "Hitchens framed an asymmetric causal test: ordinary compassion needs no revelation, while several distinctive harms invoke divine warrant.",
+          "He answered the charity ledger with structural public-health and women's-autonomy mechanisms rather than denying believers' service.",
+          "His analysis of sacred territory and inherited sectarian identity explained why religion can make political compromise harder."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes attributed poverty and conflict too broadly to religion while underweighting political, economic, and nationalist causes.",
+            links: [
+              {
+                label: "Base-rate neglect",
+                url: bias("base-rate-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His rhetoric occasionally treated varied religious formation as uniformly coercive indoctrination.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
