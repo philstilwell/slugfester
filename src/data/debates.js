@@ -57297,6 +57297,268 @@ export const debates = [
       }
     }
   },
+  {
+    id: "craig-rosenberg-faith-god-reasonable-2013",
+    number: "165",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "William Lane Craig vs Alex Rosenberg: Is Faith in God Reasonable?",
+    label: "Theism, naturalism, and reasonable belief",
+    date: "2026-08-01",
+    duration: "2 hr 47 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=bhfkhq-CM84",
+    motion:
+      "Is belief in the personal God of classical theism intellectually reasonable?",
+    summary:
+      "Craig offers a cumulative explanatory case for theism; Rosenberg challenges its scientific and moral premises while defending a stringent naturalism.",
+    sourceNote:
+      "Built from the English-original YouTube caption track. Captions were checked against the recorded exchange; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God's existence best explains a wide range of the data of human experience",
+        context:
+          "Craig introduces eight independent explanatory considerations intended to make theism cumulatively reasonable."
+      },
+      con: {
+        text: "We're engaged in a cooperative search for the truth",
+        context:
+          "Rosenberg objects to treating a philosophical inquiry as a courtroom contest in which every argument must be defeated."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theistic explanation",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "Scientific naturalism",
+        speaker: "Alex Rosenberg",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 82,
+      con: 68
+    },
+    sections: [
+      {
+        title: "Eight explanations and the burden of reply",
+        timebox: "17:18-40:24",
+        score: {
+          pro: 84,
+          con: 55
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "17:54",
+              role: "Cumulative explanatory case",
+              words:
+                "Craig argues that theism best explains contingency, a cosmic beginning, mathematics, fine-tuning, intentionality, morality, Jesus's resurrection, and immediate religious experience.",
+              score: 84,
+              critique:
+                "Craig gives the affirmative a disciplined structure and makes clear that reasonableness can be cumulative rather than deductive. The range matters: even a modest likelihood shift from several independent observations could support theism without any single proof being conclusive. Yet eight arguments in twenty minutes force compressed premises, particularly when Craig moves from a necessary explanation to a personal creator or from disputed historical facts to resurrection. His final demand that Rosenberg must “tear down all eight” also misstates the burden. A cumulative case can be outweighed by contrary evidence, and dependent arguments cannot simply be counted. The score remains high because Craig supplies a positive, relevant framework with explicit inferences, but breadth sometimes substitutes for adequate defense of the crucial probability comparisons.",
+              tags: []
+            },
+            con: {
+              time: "38:28",
+              role: "Debate-method objection",
+              words:
+                "Rosenberg says Craig repeats familiar arguments, treats inquiry like adversarial litigation, and wrongly assumes that leaving any one argument unanswered amounts to victory.",
+              score: 55,
+              critique:
+                "Rosenberg correctly rejects argument-counting and observes that philosophical inquiry is not settled by an opponent's inability to answer every point on a timer. That is a useful correction to Craig's closing burden claim. But he spends several opening minutes alleging that Craig “doesn't listen” and is interested in scoring points rather than truth. Those claims concern motive, not validity, and consume scarce time without addressing the eight arguments. Repetition also does not make an argument false; Craig was entitled to present his established case to a new audience. Rosenberg eventually turns to substance, but the opening posture weakens both relevance and charity. The low score reflects a strategically costly personal attack wrapped around one sound point about cumulative evidential burdens.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "Speculation about Craig's motives and reuse of arguments diverts attention from whether the arguments are sound."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Contingency, causation, and quantum events",
+        timebox: "18:05-01:27:54",
+        score: {
+          pro: 87,
+          con: 57
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "19:47",
+              role: "Contingent-universe argument",
+              words:
+                "Craig says every contingent thing has an explanation, the universe is contingent, and any explanation of all spacetime must be a transcendent, necessary personal cause.",
+              score: 87,
+              critique:
+                "Craig states the contingency argument syllogistically, which exposes exactly where disagreement belongs. He never claims that everything has a cause; his premise concerns contingent things and asks for an explanation, a distinction Rosenberg repeatedly overlooks. Craig also correctly notes later that an indeterministic event can occur under probabilistic laws and physical conditions without becoming an example of something arising from absolute nonbeing. The less defended step is personhood. Saying free agency is the only way a necessary cause can produce a contingent effect is plausible within Craig's model but not demonstrated against impersonal necessary conditions with variable outcomes. His confidence that the universe is contingent likewise needs modal support. Still, he decisively answers the quantum-decay objection actually offered, earning one of his strongest section scores.",
+              tags: []
+            },
+            con: {
+              time: "43:27",
+              role: "Quantum-indeterminacy objection",
+              words:
+                "Rosenberg says spontaneous uranium decay and symmetry breaking refute the principle that everything has a cause, leaving naturalistic cosmologies open without a divine first cause.",
+              score: 57,
+              critique:
+                "Rosenberg usefully reminds the audience that classical deterministic causation cannot simply be projected into quantum physics, and alternative cosmologies weaken triumphalist appeals to scientific consensus. His objection nevertheless targets a premise Craig did not state. An unexplained difference in decay time does not show that the uranium atom, quantum field, governing probability, or event exists without any explanation; still less does it describe something emerging from literal nothing. Rosenberg also shifts between “cause” and “sufficient reason” although these are not equivalent. Citing speculative inflationary and string landscapes establishes possibility, not that such a model is actual or past-eternal. The score is below average because relevant physics is deployed against a simplified argument, leaving Craig's explicit contingent-explanation premise largely intact.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The response treats Craig's premise about explanations for contingent things as the universal causal claim that every event has a deterministic cause."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Scientism, intentionality, and rational inference",
+        timebox: "59:49-01:19:15",
+        score: {
+          pro: 86,
+          con: 74
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:00:49",
+              role: "Two naturalisms distinction",
+              words:
+                "Craig distinguishes science-only epistemology from physicalist metaphysics, calls the former self-defeating, and argues that Rosenberg's denial of genuine aboutness undermines his own reasoning.",
+              score: 86,
+              critique:
+                "Craig makes a consequential distinction between methodological or epistemological naturalism and the metaphysical claim that only physical reality exists. The success of science alone does not entail either its exclusive authority or physicalism, and “science is the only source of knowledge” is not itself an experimental result. Craig then turns Rosenberg's eliminativism inward: if no thought is genuinely about anything, the assertion of naturalism cannot be about naturalism. This is a direct internal critique rather than an appeal to unexplained mystery. Its limitation is that a sophisticated naturalist can weaken scientism, distinguish semantic description levels, or provide a functional account of representation rather than accept Craig's theistic alternative. Refuting Rosenberg's formulation would not by itself establish God. The score is high because the objections are precise and remain insufficiently answered.",
+              tags: []
+            },
+            con: {
+              time: "01:16:15",
+              role: "Neural representation reply",
+              words:
+                "Rosenberg calls intentionality a hard problem but suggests neuroscience can explain how neural states represent worldly conditions without introducing a nonphysical mind.",
+              score: 74,
+              critique:
+                "Rosenberg is right that difficulty explaining intentionality does not license inserting God, and he sensibly treats neural representation as a research problem rather than proof of impossibility. He also challenges Craig's jump from a naturalistic explanatory gap to a supernatural mind. However, this position sits uneasily beside Rosenberg's stronger published claim, quoted by Craig, that there are no intentional states at all. Saying neuroscience will explain apparent aboutness does not answer the performative objection unless the relevant representation is genuine enough for his own assertions to have content and warrant. His humorous description of neurons as unable literally to point at Paris illustrates the problem but supplies no model. The score is respectable for resisting an argument from ignorance, yet incomplete against Craig's internal consistency challenge.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Evil, divine reasons, and moral force",
+        timebox: "53:34-01:26:22",
+        score: {
+          pro: 72,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "59:52",
+              role: "Possible-reasons defense",
+              words:
+                "Craig argues that Rosenberg has not shown it impossible for God to possess morally sufficient reasons for suffering, so the claimed logical contradiction has not been established.",
+              score: 72,
+              critique:
+                "Craig correctly identifies the burden of a logical problem of evil: Rosenberg must defend premises saying omnipotence can actualize any desired world and perfect goodness would permit no suffering. Merely calling the reasoning deductive does not establish those controversial bridge claims. Craig is also right that possible morally sufficient reasons defeat a strict incompatibility argument. But this response secures logical compatibility, not positive reasonableness. The scale and distribution of apparently gratuitous suffering can remain substantial evidence against perfect providence even when contradiction fails. Craig's suggestion that an optimal number may freely find salvation in a suffering world is possible but empirically ungrounded, and invoking unknown plans risks insulation from evidence. The score credits the decisive modal rebuttal while marking the evidential question as largely unanswered.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Possible unknown divine reasons preserve compatibility without showing that observed suffering is expected under perfect theism."
+                }
+              ]
+            },
+            con: {
+              time: "57:25",
+              role: "Holocaust-and-suffering challenge",
+              words:
+                "Rosenberg grounds his logical challenge in his murdered half brothers and rejects heavenly compensation or an unknowable plan as a morally adequate answer to innocent suffering.",
+              score: 84,
+              critique:
+                "Rosenberg's family history gives appropriate moral gravity to what abstract theodicies can sanitize. He sharply distinguishes compensation after death from justification for permitting murder, and he is right that “mystery” cannot count as an affirmative explanation. Those points support an evidential challenge: such suffering appears less expected under unlimited power and goodness. Yet Rosenberg insists on a logical deduction without establishing that no morally sufficient reason is even possible. His indignation at a particular response cannot supply that missing modal premise, and he sometimes attributes to Craig the crude claim that murdered children were simply luckier than surviving perpetrators. The score is strong because he exposes the moral and explanatory cost of Craig's defense, but it stops short of the contradiction Rosenberg repeatedly announces.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 82,
+        strengths: [
+          "Craig presented a clear cumulative case covering metaphysical, scientific, moral, historical, and experiential evidence.",
+          "He accurately distinguished explanations of contingent reality from deterministic event causes and answered Rosenberg's uranium-decay objection directly.",
+          "His separation of epistemological and metaphysical naturalism produced a strong internal critique of Rosenberg's scientism and eliminativism."
+        ],
+        blunders: [
+          {
+            text:
+              "He implied that Rosenberg needed to defeat all eight arguments rather than compare their dependence, strength, and cumulative weight against contrary evidence.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His answer to suffering established possible compatibility more clearly than it established that the observed world is probable under perfect theism.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 68,
+        strengths: [
+          "Rosenberg correctly challenged simplistic argument-counting and emphasized that philosophical inquiry should compare explanations rather than award points for unanswered claims.",
+          "He pressed the evidential and moral seriousness of innocent suffering and rejected compensation as equivalent to justification.",
+          "He resisted treating current naturalistic gaps about intentionality or cosmology as automatic evidence for a supernatural cause."
+        ],
+        blunders: [
+          {
+            text:
+              "He opened with extended speculation about Craig's motives and recycled material instead of answering the positive case.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          },
+          {
+            text:
+              "He repeatedly recast the contingency premise as the claim that every event has a cause, then offered quantum indeterminacy against that different proposition.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
