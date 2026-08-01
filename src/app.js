@@ -1195,7 +1195,7 @@ function renderRankings() {
       <section class="rankings-hero">
         <div>
           <p class="eyebrow">Published score averages</p>
-          <h1>Flags & Rankings</h1>
+          <h1>Rankings & Flags</h1>
           <p class="rankings-lede">Rank speakers by their published overall scores, with the context to compare topics, sample size, and opponents faced.</p>
         </div>
         <aside class="rankings-summary" aria-label="Rankings summary">
@@ -1205,8 +1205,6 @@ function renderRankings() {
           <strong>${filteredDebates.length}</strong>
         </aside>
       </section>
-
-      ${renderReasoningDistribution(reasoningTopics)}
 
       <section class="ranking-tool" aria-label="Ranking controls">
         <form class="ranking-form">
@@ -1255,6 +1253,8 @@ function renderRankings() {
         }
         ${renderRankingMethod()}
       </section>
+
+      ${renderReasoningDistribution(reasoningTopics)}
     </main>
   `);
 

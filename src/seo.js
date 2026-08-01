@@ -340,7 +340,7 @@ export function rankingsSeo(debates = [], rankedInterlocutorCount = 0) {
   const description = `Compare average overall debate scores for ${rankedInterlocutorCount || "qualifying"} Slugfester interlocutors and topic-level reasoning flags across ${debates.length} scorecards.`;
 
   return {
-    title: pageTitle("Flags & Rankings"),
+    title: pageTitle("Rankings & Flags"),
     description,
     canonicalPath: rankingsPath(),
     lastmod: SITE_UPDATED_DATE,
@@ -353,7 +353,7 @@ export function rankingsSeo(debates = [], rankedInterlocutorCount = 0) {
       {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        name: "Slugfester Flags & Rankings",
+        name: "Slugfester Rankings & Flags",
         description,
         url: absoluteUrl(rankingsPath()),
         isPartOf: {
