@@ -56670,6 +56670,371 @@ export const debates = [
       }
     }
   },
+  {
+    id: "craig-draper-existence-of-god-1997",
+    number: "163",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "William Lane Craig vs Paul Draper: The Existence of God",
+    label: "God and comparative evidence",
+    date: "2026-08-01",
+    duration: "1 hr 29 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=lK3jVNbG2-s",
+    motion:
+      "Does the total evidence concerning the universe, life, morality, Jesus, religious experience, suffering, and hiddenness favor theism over naturalism?",
+    summary:
+      "Craig presents five arguments for Christian theism; Draper compares how probable seven features of the world are under theism and naturalism while defending agnosticism.",
+    sourceNote:
+      "Built from the English-original YouTube caption track. Captions were checked against the recorded exchange; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Together these reasons constitute, I believe, a powerful cumulative case for theism",
+        context:
+          "Craig combines arguments from cosmic origin, fine-tuning, morality, Jesus' resurrection, and immediate religious experience rather than resting his conclusion on one proof."
+      },
+      con: {
+        text: "My argument is always essentially comparative",
+        context:
+          "Draper emphasizes that evidence can favor naturalism whenever it is more expected there, even if the same fact remains logically compatible with theism."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian theism",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "Agnostic naturalism",
+        speaker: "Paul Draper",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 68,
+      con: 88
+    },
+    sections: [
+      {
+        title: "Cumulative cases and comparative likelihood",
+        timebox: "03:39-56:04",
+        score: {
+          pro: 72,
+          con: 92
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "03:39",
+              role: "Five-argument framework",
+              words:
+                "Craig offers five positive reasons for theism and says Draper must tear them down and erect a positive case before atheism becomes the more reasonable worldview.",
+              score: 72,
+              critique:
+                "Craig gives the audience a disciplined roadmap and correctly treats worldview assessment as cumulative rather than demanding certainty from any single argument. The five topics are relevant and broad enough to test theism across scientific, moral, historical, and experiential evidence. His proposed victory condition is less defensible. Draper identifies as agnostic, not atheist, and need not prove naturalism before showing that Craig's confidence is unwarranted. Nor must every theistic consideration be wholly demolished; total evidence can favor one hypothesis even when several observations mildly support another. Craig's later replies repeatedly ask whether Draper's facts are compatible with Christianity, which misses their comparative force. The score is solid for structure, but reduced because the burden and evidential standard favor his case before the likelihoods are actually compared.",
+              tags: []
+            },
+            con: {
+              time: "25:48",
+              role: "Red-bean likelihood model",
+              words:
+                "Draper compares naturalism and theism like jars with different color ratios: an observed fact favors whichever worldview makes that fact more likely, without conclusively proving either.",
+              score: 92,
+              critique:
+                "Draper's jelly-bean model is the debate's methodological center. It explains likelihood evidence in accessible terms, distinguishes evidential support from deductive proof, and makes cumulative assessment symmetrical. Importantly, his rebuttal at 55:51 catches Craig answering the wrong question: showing that suffering or brain dependence is not impossible on theism does not show it is equally expected on theism and naturalism. Draper also models epistemic restraint by identifying as a practicing agnostic and counting cosmic beginning and fine-tuning as blue beans for theism. The framework does not supply priors, guarantee independence among seven observations, or quantify their likelihood ratios, so “very strong” remains an impressionistic conclusion. Even so, it clarifies what each side must establish and prevents mere compatibility stories from neutralizing adverse evidence. The score is exceptional for relevance and rigor.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Cosmic beginning and fine-tuning",
+        timebox: "05:00-01:05:31",
+        score: {
+          pro: 78,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "05:00",
+              role: "Cosmological-design case",
+              words:
+                "Craig argues that a finite past and the Big Bang require a timeless personal cause, while extraordinarily narrow life-permitting constants are better explained by intelligent design than chance.",
+              score: 78,
+              critique:
+                "Craig combines explanatory pressures: why a universe exists at all and why its initial conditions permit complex life. His personal-cause argument attempts to explain how a timeless sufficient condition could have a temporal effect, and the fine-tuning examples give the design inference empirical content. However, the presentation treats Big Bang cosmology as creation from literal nothing, although a past boundary in a model does not by itself describe a metaphysical beginning. His actual-infinity illustration again mistakes non-unique infinite subtraction for contradiction. On fine-tuning, small numbers do not settle probabilities without a justified distribution over possible constants or a likelihood for what a perfect designer would choose. The score is strong because the data warrant explanation, but the cause and designer conclusions are stated more confidently than the supplied comparisons allow.",
+              tags: [
+                {
+                  label: "Base-rate neglect",
+                  type: "bias",
+                  url: bias("base-rate-neglect"),
+                  context:
+                    "The design inference emphasizes tiny life-permitting ranges without establishing priors or comparable likelihoods for designers, physical constraints, and multiple universes."
+                }
+              ]
+            },
+            con: {
+              time: "01:02:13",
+              role: "Qualified blue-bean concession",
+              words:
+                "Draper grants that a cosmic beginning and conscious life's fine-tuning favor theism, then reduces their weight because temporal-boundary causation is unclear and multiple universes remain possible.",
+              score: 85,
+              critique:
+                "Draper's concessions substantially strengthen his credibility. He explicitly treats both a beginning and fine-tuning as evidence for theism, then asks how large those blue beans should be. His temporal-boundary objection is precise: ordinary causal induction covers things beginning after an earlier time, not a universe beginning with time itself. This does not prove that timeless causation is incoherent, but it blocks Craig's claim that familiar experience straightforwardly entails it. Likewise, a multiverse is presented as a live possibility rather than an established escape, preserving some design evidence. The limitations are that possible unknown larger systems and universes receive no independent support here, and observational selection alone does not generate them. The score is strong because Draper calibrates rather than dismisses Craig's evidence and keeps possibility, probability, and proof carefully separated.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Brains, evolution, and intelligent design",
+        timebox: "32:28-58:55",
+        score: {
+          pro: 57,
+          con: 87
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "48:20",
+              role: "Evolution reversal",
+              words:
+                "Craig says evolutionary mechanisms work too slowly and cannot build irreducibly complex systems, so sentient life is less likely on naturalism and instead supports intelligent design.",
+              score: 57,
+              critique:
+                "Craig's earlier musician-and-piano analogy is a fair reminder that brain dependence does not logically prove mind-brain identity; an interactionist expects an impaired instrument to impair expression. His evolutionary reversal is much weaker. The enormous probability assigned to assembling the exact human genome treats evolution like an unguided draw toward a predetermined modern target, rather than a branching process shaped by cumulative selection. Claiming that biochemical systems cannot evolve piecemeal because their forms require all present parts also ignores precursor functions, co-option, and alternative pathways without excluding them. Craig then moves from a declared absence of explanation to intelligent design as the one familiar answer. The score is low because one useful modal objection to Draper is followed by unsupported scientific necessity claims that carry a major share of the rebuttal.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "A claimed lack of an evolutionary account for selected biochemical systems is treated as positive evidence that intelligence produced them."
+                }
+              ]
+            },
+            con: {
+              time: "32:28",
+              role: "Naturalistic-expectation case",
+              words:
+                "Draper argues that pervasive brain dependence and descent from simple life are expected on naturalism, whereas theism begins with a disembodied mind and permits many creation routes.",
+              score: 87,
+              critique:
+                "Draper says neuroscience has not proved identity, then points to dependence extending into memory, personality, and character. That pattern is more specific than the claim that embodied minds interact with brains and is plausibly more expected if mental life is produced by nervous systems. His evolution argument is similarly comparative: naturalism strongly predicts some unguided developmental history, while generic theism permits independent creation, limited evolution, or common descent. Craig is right that theism can accommodate both observations, but accommodation is not equal predictive fit. Draper overstates the soul inference because an embodied-soul theory can predict close dependence, and generic naturalism does not guarantee that complex sentience will evolve on one planet. The score remains very strong because the likelihood direction is well defended and his later vestigial-structure examples supply evidence.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral realism and moral fruits",
+        timebox: "13:41-01:24:14",
+        score: {
+          pro: 69,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "13:41",
+              role: "Moral argument",
+              words:
+                "Craig says evolved moral feelings cannot become objectively binding on naturalism, while evident truths about cruelty, betrayal, love, and sacrifice support God as the source of value.",
+              score: 69,
+              critique:
+                "Craig properly distinguishes believing in God from recognizing moral truths and avoids claiming that atheists cannot live morally. He also defends realism against cultural disagreement: mistaken judgment no more makes value subjective than perceptual error makes color unreal. The unresolved premise is that objective value cannot exist without God. Quoting Mackie and Ruse shows that prominent naturalists have denied realism, not that every secular realist account fails. Evolutionary origins may explain why beliefs arise while leaving open whether suffering, agency, or rational consistency supply genuine reasons. Draper later asks why locating goodness in God's nature explains normativity rather than relocating the mystery; Craig never answers that challenge. The score is moderate because moral experience supports realism, but the argument from realism to a divine bearer remains asserted more than established.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Selected anti-realist naturalists are cited as support for an entailment that competing secular moral realists explicitly deny."
+                }
+              ]
+            },
+            con: {
+              time: "01:22:31",
+              role: "Sentient-value account",
+              words:
+                "Draper grounds value in conscious beings whose preferences can be satisfied or frustrated and argues that putting goodness inside God's nature merely posits another unexplained instance of goodness.",
+              score: 82,
+              critique:
+                "Draper supplies a secular account: once sentient creatures can be benefited or harmed from their points of view, there are facts for moral reasoning to track. This explains why value emerges with consciousness without making chemical composition normatively decisive. His question about divine nature is effective; calling God “the good” does not automatically explain why goodness exists or why it binds agents. Earlier, Draper says some moral truths are necessary or true by definition, using child torture as his example. Conceptual certainty may demonstrate his commitment but cannot by itself show that the concept corresponds to an objective property. Preference satisfaction also needs constraints for malicious, adaptive, or conflicting preferences. The score is strong for a positive naturalistic direction and a direct parity objection, though the foundation remains a sketch.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "Calling core moral propositions true by definition assumes their objective authority instead of explaining why the relevant concepts bind conduct."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection, revelation, and experience",
+        timebox: "18:03-01:18:55",
+        score: {
+          pro: 70,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "18:03",
+              role: "Historical-experiential case",
+              words:
+                "Craig presents the empty tomb, appearances, and transformed disciples as facts best explained by resurrection, then treats immediate experience of God as rational absent defeating evidence.",
+              score: 70,
+              critique:
+                "Craig turns the resurrection claim into a historical argument with data rather than appealing only to scripture's authority. Distinguishing public evidence from personal experience also lets the two claims play different epistemic roles. Yet his repeated scholarly-consensus citations substitute for detailed source analysis, and saying discarded alternatives are universally rejected does not compare hallucination, legend, burial uncertainty, or combinations of natural processes. His experiential principle is plausible in perception but harder to apply when sincere people report incompatible religions or no divine presence. Craig answers the possibility of self-induction by describing the experience's vividness and life effects, neither of which reliably identifies its external cause. The score is moderate because the argument has a clear structure and genuine data, but its historical confidence and private confirmation exceed what is demonstrated.",
+              tags: [
+                {
+                  label: "Appeal to authority",
+                  type: "fallacy",
+                  url: fallacy("appeal-to-authority"),
+                  context:
+                    "Claims of scholarly consensus carry the resurrection case without showing the disputed independence, transmission, and explanatory comparisons in detail."
+                },
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "The felt immediacy and transformative power of Craig's experience are treated as confirming its specifically Christian interpretation."
+                }
+              ]
+            },
+            con: {
+              time: "01:05:45",
+              role: "Yellow-bean rebuttal",
+              words:
+                "Draper regards miracle reports as evidentially neutral because the empty-tomb testimony comes from a competing religious movement and appearances can follow an unexplained missing body.",
+              score: 80,
+              critique:
+                "Draper asks whether the sources are independent and reliable enough to make resurrection more expected than ordinary historical alternatives. He also connects disputed revelation to hiddenness: reasonable theists reach incompatible conclusions about Jesus, which is less surprising if no God is revealing a preferred path. These points answer Craig's move from a generic creator to Christianity. The treatment is too compressed, however. Comparing appearances to Elvis sightings is memorable but does not analyze the timing, diversity, conviction, or social context of the reported experiences. Suggesting careless handling of a criminal's body is possible without being developed into a documented explanation. The score is good because Draper identifies evidential gaps and religious underdetermination, but his “yellow bean” verdict receives less comparative support than his arguments from suffering and brain dependence.",
+              tags: [
+                {
+                  label: "Red herring",
+                  type: "fallacy",
+                  url: fallacy("red-herring"),
+                  context:
+                    "The Elvis-sighting analogy supplies ridicule and a loose psychological parallel without assessing the particular early-Christian reports at issue."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Pain, tragedy, and divine hiddenness",
+        timebox: "36:50-01:01:53",
+        score: {
+          pro: 57,
+          con: 95
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "51:49",
+              role: "Unknown-goods defense",
+              words:
+                "Craig says complex causal consequences may hide God's reasons for suffering, while salvation, human rebellion, character formation, eternal compensation, and available comfort raise suffering's probability on Christianity.",
+              score: 57,
+              critique:
+                "Craig usefully identifies background doctrines that a likelihood comparison should include; Christian theism does not predict a world designed solely for immediate comfort. Free agency, moral development, estrangement, and an afterlife can change expectations about some suffering. His butterfly-effect example nevertheless establishes only that goods are possible, not that permitting a child's leukemia is more likely under perfect power and goodness. Draper also notes that omnipotence weakens the causal constraint: God could secure later goods without the destructive route unless some necessity is shown. Eternal compensation can repair a victim's condition but does not itself supply the moral reason for allowing harm. Finally, saying comfort is available to seekers risks explaining contrary experience by the sufferer's response. The score is low because compatibility replaces the comparative justification Draper's argument demands.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Unspecified hidden goods protect theism from observed suffering without comparable weight being given to possible unknown reasons against permitting it."
+                }
+              ]
+            },
+            con: {
+              time: "38:38",
+              role: "Tragedy-and-absence case",
+              words:
+                "Draper argues that abundant apparently uncompensated tragedy, pain's biological distribution, absent divine comfort, and confused revelation are jointly much more expected on naturalism than perfect theism.",
+              score: 95,
+              critique:
+                "Draper presents the debate's strongest case. He does not claim a logical contradiction; he compares the observed distribution of pain and pleasure, pointless tragedy, absent comfort, and religious confusion under two hypotheses. The analogy of a parent staying with a child when treatment cannot be explained gives hiddenness force even if some suffering serves unknown goods. His replies are exact: unknown goods must be balanced against unknown reasons not to permit suffering; omnipotence expands alternative means; and later compensation does not justify the initial harm, as the smashed-car example shows. He also rejects the false choice between this quantity of suffering and none. The argument cannot quantify the likelihoods and assumes enough knowledge of what perfect goodness predicts, but its multiple supporting observations make the comparative conclusion exceptionally well defended.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 68,
+        strengths: [
+          "Craig presented a broad, clearly numbered cumulative case and distinguished moral ontology, historical inference, and personal experience rather than conflating them.",
+          "His cosmological and fine-tuning arguments identified genuine explanatory questions, and even Draper conceded that both supplied evidence favoring theism.",
+          "His brain-as-instrument response correctly showed that dependence of mental function on neural integrity does not deductively disprove every dualist theory."
+        ],
+        blunders: [
+          {
+            text:
+              "He converted unresolved questions about evolutionary pathways and biochemical systems into positive evidence for intelligent design.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His replies to suffering repeatedly established compatibility with Christianity while leaving Draper's comparative-likelihood argument unanswered.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 88,
+        strengths: [
+          "Draper supplied a clear comparative-likelihood method and consistently distinguished evidence, compatibility, probability, and deductive proof.",
+          "He strengthened his agnostic conclusion by conceding genuine evidence for theism from a cosmic beginning and fine-tuning instead of minimizing adverse data.",
+          "His cumulative case from suffering and hiddenness anticipated Craig's unknown-goods, omnipotence, compensation, character-building, and seeker-comfort replies in detail."
+        ],
+        blunders: [
+          {
+            text:
+              "His claim that central moral truths are true by definition did not independently explain their objective authority or practical normativity.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His moral-fruits comparison relied heavily on personal experience and broad historical impressions without defining or measuring the relevant populations and outcomes.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
