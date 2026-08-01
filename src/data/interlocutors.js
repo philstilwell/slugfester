@@ -645,6 +645,11 @@ export const interlocutorAvatars = [
     name: "Alok Kanojia",
     src: `${avatarBasePath}/alok-kanojia.webp`,
     aliases: ["Alok Kanojia"]
+  },
+  {
+    name: "Greg Koukl",
+    src: `${avatarBasePath}/greg-koukl.webp`,
+    aliases: ["Greg Koukl"]
   }
 ];
 
