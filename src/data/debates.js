@@ -55474,5 +55474,239 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "wood-aron-ra-naturalism-2023",
+    number: "159",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "David Wood vs Aron Ra: Is Naturalism True?",
+    label: "Naturalism, evolution, and rationality",
+    date: "2026-08-01",
+    duration: "1 hr 52 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=dto5DQ7GBEQ",
+    motion:
+      "Is naturalism true, or does an evolutionary naturalist account of human cognition undermine the rational confidence required to affirm naturalism?",
+    summary:
+      "Wood argues that evolved naturalistic cognition cannot justify confidence in naturalism; Aron Ra says repeatable public evidence supports the natural world while supernatural claims remain unverified.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Modern-Day Debate upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "If you take naturalism seriously, you can't take it seriously.",
+        context:
+          "Wood's central case is that a purely natural evolutionary origin for cognition gives no adequate reason to trust beliefs about ultimate reality."
+      },
+      con: {
+        text: "I wanted objective verification because I want to know the truth.",
+        context:
+          "Aron Ra grounds his naturalism in publicly testable evidence and in his rejection of experiences he says failed independent confirmation."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Cognitive-reliability critique",
+        speaker: "David Wood",
+        color: "teal"
+      },
+      con: {
+        name: "Evidence-centered naturalism",
+        speaker: "Aron Ra",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 61,
+      con: 74
+    },
+    sections: [
+      {
+        title: "Defining naturalism and assigning the burden",
+        timebox: "02:20-21:50",
+        score: {
+          pro: 64,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "17:20",
+              role: "Worldview-burden challenge",
+              words:
+                "Wood defines metaphysical naturalism as the claim that the natural world is all that exists and argues that someone affirming that comprehensive claim must defend it rather than only demand evidence for supernaturalism.",
+              score: 64,
+              critique:
+                "Wood identifies a legitimate distinction that the opening initially blurs. A methodological rule of following testable evidence is different from the metaphysical thesis that nature exhausts reality, and a person who affirms the latter does incur some explanatory burden. His solipsism comparison also makes the general point that a worldview can be assessed for internal coherence, not only refuted by a rival. The weakness is that he spends too much time treating Aron Ra's reluctance to shoulder a global burden as a concession rather than first establishing which version of naturalism Aron actually endorses. A naturalist can reasonably suspend judgment about untestable possibilities without claiming exhaustive certainty. The score is mixed because the distinction is useful, but the debate's definitions remain unstable.",
+              tags: []
+            },
+            con: {
+              time: "03:00",
+              role: "Evidential naturalism",
+              words:
+                "Aron Ra distinguishes accepting the natural world from asserting an unexamined supernatural realm, saying claims about additional realities require public evidence rather than a demand that he prove a negative.",
+              score: 76,
+              critique:
+                "Aron Ra properly emphasizes that a proposed supernatural entity or mechanism needs positive support before others are asked to include it in their ontology. His distinction between methodological naturalism and unsupported metaphysical additions is useful, and his insistence on testability gives the audience a clear evidential norm. The limitation is that he repeatedly slides from withholding belief in unverified supernatural claims to treating naturalism as established or saying that souls and religious stories are known false. The former stance may be justified by absent evidence; the latter requires its own argument. The score is strong because he manages ordinary burden-of-proof concerns well, but it is capped because his rhetoric sometimes makes non-demonstration do more than it can establish.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The opening treats the failure to publicly verify supernatural claims as enough to establish that no supernatural reality exists, rather than as a reason to withhold belief."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Evolution, survival, and cognitive reliability",
+        timebox: "24:00-47:45",
+        score: {
+          pro: 62,
+          con: 72
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "25:00",
+              role: "Evolutionary reliability challenge",
+              words:
+                "Wood argues that if beliefs are products of mindless physical processes selected for survival and reproduction, false beliefs can be adaptive and cognition has no demonstrated aim at truth about metaphysics or naturalism itself.",
+              score: 62,
+              critique:
+                "Wood presents a recognizable epistemic challenge rather than merely calling evolution false. The examples of avoiding berries for false reasons and gaining confidence from astrology illustrate that adaptive behavior need not map perfectly onto true belief. That creates a genuine question about how far evolutionary success alone licenses confidence in abstract metaphysical reasoning. The argument overreaches when it treats natural selection as indifferent to truth in every relevant respect. Organisms that reliably represent causal regularities can predict, coordinate, and survive better, while language, testing, and criticism add further error correction. Wood also does not show why a theistic origin automatically supplies more reliable cognition. The score is solid-low because the challenge is philosophically serious, but its conclusion outruns the evolutionary premise established in the exchange.",
+              tags: []
+            },
+            con: {
+              time: "32:20",
+              role: "Social-cognition reply",
+              words:
+                "Aron Ra says humans evolved as cooperative social animals whose empathy, communication, and expanding perspective improved group survival, allowing shared observation and correction rather than merely private belief formation.",
+              score: 72,
+              critique:
+                "Aron Ra usefully rejects the crude picture of humans as isolated survival machines. Cooperation, communication, and the ability to coordinate with others plainly matter for a social species, and these capacities make collective error correction more plausible than Wood's berry-finding caricature suggests. His personal account of revising spiritual beliefs also illustrates a willingness to test experience against other people. The weakness is that social cohesion and empathy do not themselves show that our most abstract beliefs are truth-tracking. Groups can cooperate around false cosmologies, and he does not explain which mechanisms connect evolutionary success to reliable metaphysics. The score is solid because he identifies resources Wood overlooks, but it remains incomplete as an epistemology of reason rather than a story about human social development.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Experience, evidence, and supernatural alternatives",
+        timebox: "48:00-64:20",
+        score: {
+          pro: 60,
+          con: 75
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "48:05",
+              role: "Underdetermination challenge",
+              words:
+                "Wood argues that even dramatic experiences could be reinterpreted as hallucination, aliens, or a simulation, so a blanket refusal to accept any possible confirming evidence makes skepticism about God methodologically unfalsifiable.",
+              score: 60,
+              critique:
+                "Wood fairly notices that skepticism can become empty if every conceivable observation is dismissed in advance. His examples of a voice, a message, or a shared event press the listener to state what patterns would count against a naturalist worldview. This is a worthwhile challenge to indiscriminate appeals to possible deception. The weakness is that he treats caution about a single extraordinary experience as equivalent to rejecting all possible cumulative evidence. Aron Ra repeatedly says he would consider independently verified, repeatable phenomena, and Wood does not engage those stated conditions. He also offers no positive test that separates a supernatural cause from an unexplained natural one. The score is limited because the problem of underdetermination is real, but the portrayal of the opposing standard is too broad.",
+              tags: []
+            },
+            con: {
+              time: "51:10",
+              role: "Public-verification standard",
+              words:
+                "Aron Ra says personal spiritual experiences can be self-deceptive, but a real supernatural effect should produce repeatable, independent, and objective confirmation rather than reports tailored to prior religious expectations.",
+              score: 75,
+              critique:
+                "Aron Ra gives the debate's clearest operational standard. His contrast between private experiences that confirm different prior beliefs and phenomena that can be independently checked captures why anecdote alone has limited force. He also avoids claiming that a single strange event could never matter, saying that documentation and repeatable confirmation would oblige him to consider it. The limitation is that he assumes a genuine supernatural reality should be repeatable in the same way as laboratory effects. A personal agent, if one existed, might not behave like a controllable mechanism, and historical events can be assessed without recurrence. The score is strong because his standard sharply reduces self-deception and fraud, though it may set a narrower evidential gate than every supernatural claim warrants.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Determinism, emergence, and rational limits",
+        timebox: "65:00-110:30",
+        score: {
+          pro: 58,
+          con: 76
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "69:00",
+              role: "Self-undermining conclusion",
+              words:
+                "Wood says naturalism is catastrophically self-undermining because causally determined particles, and possibly epiphenomenal mental states, cannot supply rational warrant for beliefs about the whole universe.",
+              score: 58,
+              critique:
+                "Wood returns to the debate's most substantive philosophical point: a worldview should not deprive its adherents of a reason to trust the faculties used to adopt it. That is a fair coherence test, and his distinction between a physical process and a truth-directed reason deserves an answer. But he repeatedly bundles naturalism, causal determinism, epiphenomenalism, and a purpose limited to survival into one package. None of those controversial additions follows simply from naturalism, and deterministic systems can still be designed or selected to track features of reality. He also assumes that only a divinely intended faculty could be rationally trustworthy. The score is low because the challenge is worth raising, but the claimed contradiction depends on premises he asserts rather than defends.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument shifts from naturalism to determinism and epiphenomenalism as though they were interchangeable, even though each is a further disputed philosophical commitment."
+                }
+              ]
+            },
+            con: {
+              time: "101:30",
+              role: "Collaborative-correction reply",
+              words:
+                "Aron Ra says cognitive limits are measurable and handled through collaboration, repeated observation, and correction, while emergent processes can yield apparent design without a top-down supernatural programmer.",
+              score: 76,
+              critique:
+                "Aron Ra makes the best practical reply to Wood's reliability challenge. Individual cognition is fallible, but public replication, instruments, criticism, and collaboration can identify and correct many errors; that is a real naturalistic route to increasingly reliable belief. His appeal to emergence also correctly notes that complex ordered patterns need not imply a top-down designer. The weakness is that he largely answers with scientific practice rather than directly explaining how physical processes instantiate valid inference or why collective convergence reaches metaphysical truth. He sometimes substitutes slogans about magic and religion for that deeper account. The score is strong because the reply supplies the naturalist's most important resource, namely error-correcting inquiry, while leaving the philosophy-of-mind question only partly addressed.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 61,
+        strengths: [
+          "Wood distinguished metaphysical naturalism from a mere method of investigating the natural world and properly asked whether the broader thesis needs a defense.",
+          "His evolutionary argument raised a serious question about the relationship between adaptive fitness, truth-tracking, and confidence in abstract reasoning.",
+          "He challenged the audience to identify what evidence would genuinely count against their preferred worldview rather than treating skepticism as automatic victory."
+        ],
+        blunders: [
+          {
+            text:
+              "He treated naturalism, determinism, epiphenomenalism, and cognition aimed only at survival as a single package, although each needs separate argument and is not entailed by naturalism alone.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 74,
+        strengths: [
+          "Aron Ra made public verification, repeatability, and intersubjective correction the center of his case rather than relying on private anti-religious intuition.",
+          "He showed why personal religious experiences can conflict across traditions and why an objective test would be more probative than anecdote.",
+          "His best replies stressed emergence and collaborative inquiry as naturalistic resources that Wood's individual-survival framing overlooks."
+        ],
+        blunders: [
+          {
+            text:
+              "He often treated the lack of a verified supernatural demonstration as proof that no supernatural reality exists, rather than the more limited conclusion that belief should be withheld.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
