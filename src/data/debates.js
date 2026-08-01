@@ -59130,6 +59130,260 @@ export const debates = [
       }
     }
   },
+  {
+    id: "hitchens-mcgrath-religious-belief-2007",
+    number: "172",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Christopher Hitchens vs Alister McGrath: Poison or Cure? Religious Belief in the Modern World",
+    label: "Religious truth, morality, violence, and meaning",
+    date: "2026-08-01",
+    duration: "1 hr 40 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=Xc0kbM4tBYE",
+    motion:
+      "Is religious belief in the modern world intellectually credible and morally constructive, or is it an evidentially unsupported source of coercion and harm?",
+    summary:
+      "McGrath argues that Christianity is compatible with science, supports human value, and contains resources for moral correction and hope; Hitchens argues that revelation fails evidentially and turns ordinary human failings into divinely authorized coercion.",
+    sourceNote:
+      "Built from the English-original YouTube caption track. Captions were checked against the recorded exchange; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "religion or anti-religion... points to the darker side of human nature",
+        context:
+          "McGrath argues that ideological violence is a general human pathology and must be assessed within particular traditions rather than assigned to religion alone."
+      },
+      con: {
+        text: "Religion now has to own up to being man-made",
+        context:
+          "Hitchens argues that mutually contradictory revelations and their adaptation to human needs are better explained by human authorship than divine disclosure."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian belief as credible and constructive",
+        speaker: "Alister McGrath",
+        color: "teal"
+      },
+      con: {
+        name: "Religion as unsupported and coercive",
+        speaker: "Christopher Hitchens",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 83,
+      con: 90
+    },
+    sections: [
+      {
+        title: "Science, explanation, and evidential standards",
+        timebox: "06:37-25:48",
+        score: {
+          pro: 84,
+          con: 91
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "24:00",
+              role: "Science-compatible conversion",
+              words:
+                "McGrath recounts moving from atheism to Christianity after studying science's history and limits, arguing that science does not disprove God and can coexist with theological meaning.",
+              score: 84,
+              critique:
+                "McGrath usefully distinguishes scientific explanation from a total metaphysics. His own scientific training undercuts the easy sociological claim that informed scientists cannot rationally believe, and his appeal to the history and philosophy of science correctly limits what empirical methods alone can adjudicate. He does not oppose evolution or insert God into a technical gap. The weakness is that compatibility is much easier to establish than positive warrant. An account can avoid contradiction with science while remaining unsupported, and an autobiographical conversion does not supply the missing inference. Calling atheism a faith also obscures the difference between withholding belief and asserting a complete naturalistic worldview. The score is strong because he blocks scientistic exclusion, but Hitchens places the more demanding evidential question squarely on revelation.",
+              tags: []
+            },
+            con: {
+              time: "07:02",
+              role: "Competing-revelations challenge",
+              words:
+                "Hitchens says incompatible religions cannot all be true, while scientific explanations have displaced revelation on origins without needing supernatural assumptions.",
+              score: 91,
+              critique:
+                "Hitchens begins with a powerful undercutting argument: mutually exclusive claims about incarnation, prophecy, resurrection, and divine law cannot all be accurate, so religious confidence demands discriminating evidence. He also rightly observes that natural explanations have repeatedly replaced sacred cosmologies, weakening revelation's record as a guide to external facts. His demand is not that science prove atheism but that theology show explanatory gain. The overreach is moving from successful natural explanations to religion's universal obsolescence. Science does not by itself settle moral ontology, purpose, or every historical claim, and false religions would not entail that all are false. Still, Hitchens exposes the selection problem that McGrath never fully solves and keeps the burden on specific Christian evidence rather than generic compatibility.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Morality and human flourishing",
+        timebox: "09:26-1:22:42",
+        score: {
+          pro: 82,
+          con: 92
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "27:47",
+              role: "Tradition-specific moral fruits",
+              words:
+                "McGrath rejects judging all faith by pathological examples, cites research associating religion with health, and grounds equal human worth in creation and the image of God.",
+              score: 82,
+              critique:
+                "McGrath correctly resists treating “religion” as one causal substance. Traditions differ, communities can improve health and resilience, and a fair analysis must compare ordinary and reformist practice with pathological forms. The image-of-God doctrine also supplies Christianity with a historically influential language of equal worth. Yet correlations between attendance, health, and wellbeing are vulnerable to selection, social-support, and measurement effects; they do not establish divine truth or net benefit. More importantly, McGrath's method risks insulating the tradition: positive fruits express true Christianity, while violence becomes human distortion. Hitchens's biblical counterexamples show that adjudicating authenticity already uses moral criteria not uniquely derived from scripture. The score is good because McGrath brings nuance and evidence, but his causal and theological inferences remain undercontrolled.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "Constructive expressions are more readily attributed to Christianity itself, while destructive expressions are assigned to human distortion."
+                }
+              ]
+            },
+            con: {
+              time: "09:26",
+              role: "Prior-human morality",
+              words:
+                "Hitchens argues that solidarity and ethical judgment predate monotheism, while scriptural commands on sacrifice, thought crime, sexuality, and inherited guilt often violate independent moral insight.",
+              score: 92,
+              critique:
+                "Hitchens does more than claim atheists can behave well. He argues that humans needed cooperation before scripture and that believers themselves revise cruel texts using conscience, evidence, and social learning. His examples of vicarious punishment, commanded sacrifice, eternal surveillance, and sexual control challenge the claim that revelation is the source of moral progress. The question “what ethical act can only a believer perform?” sharply separates human goodness from theological ownership. His presentation can flatten sophisticated doctrines into their most punitive formulations, and moral development before religion does not by itself explain objective normativity. Nonetheless, McGrath never identifies a uniquely Christian moral result unavailable to nonbelievers, while Hitchens identifies several doctrinal mechanisms that can make ordinary cruelty sacred. He therefore wins this section by a wide margin.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Violence, totalitarianism, and self-correction",
+        timebox: "12:19-1:32:26",
+        score: {
+          pro: 87,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "30:55",
+              role: "Human-pathology and Christocentric reply",
+              words:
+                "McGrath notes atheist revolutionary violence, refuses to indict atheism wholesale, and argues by parity that Christian violence should be judged against Jesus' nonviolent, self-correcting norm.",
+              score: 87,
+              critique:
+                "McGrath makes the debate's best parity argument. Atrocities committed by self-declared atheist regimes do not prove every atheist violent, just as crusades do not settle every form of Christianity. Locating the general capacity for ideological violence in human nature is more plausible than giving religion sole ownership. He then supplies a tradition-specific test: Jesus' refusal of retaliatory violence can criticize Christian institutions from within. The difficulty is canon selection. Biblical traditions also contain divine warfare, judgment, and exclusion, so choosing the nonviolent strand requires an interpretive rule whose authority is disputed. Hitchens can also grant generic human aggression while maintaining that divine certainty intensifies it. The score is very high because McGrath directly answers the generalization and offers a real correction mechanism, though not an unambiguous one.",
+              tags: []
+            },
+            con: {
+              time: "50:35",
+              role: "Sacralized totalitarianism",
+              words:
+                "Hitchens compares Stalinism and North Korea to religious structures, arguing that infallible authority, thought crime, worship, and promised salvation preserve rather than escape faith's totalitarian pattern.",
+              score: 88,
+              critique:
+                "Hitchens gives a more sophisticated response than denying atheist atrocities. Stalinist and North Korean systems borrowed ritual, heresy, omniscient leadership, confession, and redemptive history, so their formal atheism did not make them liberal rationalist projects. This identifies a real family resemblance between sacralized politics and authoritarian religion. Yet resemblance is not causation. Marxist-Leninist doctrine explicitly rejected God, and labeling every totalizing ideology religious can protect atheism by definition from adverse cases. His claim that faith uniquely produces otherwise impossible evil also overlooks nationalism and racial pseudoscience. The score is strong because Hitchens explains how discarded gods can be replaced by human idols, but McGrath's parity point prevents this taxonomy from assigning the entire human capacity for totalitarian violence to religion.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Explicitly atheist totalitarian systems are redescribed as religious when they display functional similarities, insulating atheism from counterexamples."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection, salvation, and freedom",
+        timebox: "55:45-1:38:51",
+        score: {
+          pro: 80,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "55:45",
+              role: "Liberation through resurrection",
+              words:
+                "McGrath presents resurrection as a historical and interpretive claim that validates Jesus, discloses a liberating God, and promises transformation rather than celestial dictatorship.",
+              score: 80,
+              critique:
+                "McGrath wisely makes the Christian claim specific. Resurrection is not merely a symbol; it is presented as an event whose meaning validates Jesus and reframes divine authority as self-giving liberation. His contrast between coercion and an offered relationship directly answers Hitchens's dictatorship image, and he acknowledges that faith is not mathematical proof. The evidential case, however, remains mostly announced. He refers to historical work without laying out sources, alternative explanations, or why a miracle best explains them. Calling God a liberator also depends on accepting the very revelation under dispute, while threats of judgment and the necessity of salvation complicate the claim that the offer is uncoerced. The score is good because McGrath identifies the decisive hinge, but he does not substantiate it enough in the exchange.",
+              tags: []
+            },
+            con: {
+              time: "1:14:05",
+              role: "Coercion and vicarious redemption critique",
+              words:
+                "Hitchens argues that humans are declared fallen without consent, salvation requires accepting a blood sacrifice, and eternal consequences make the supposedly free offer coercive.",
+              score: 88,
+              critique:
+                "Hitchens targets the internal moral structure of salvation rather than merely mocking miracles. Inherited disorder, vicarious punishment, mandatory gratitude, and infinite stakes create serious tension with calling the relationship freely offered. His analogy to an imposed cure is effective: manufacturing or defining the sickness changes how benevolent the remedy appears. He also insists that resurrection needs evidence proportionate to its improbability, which McGrath does not provide in detail. The weakness is theological compression. Christian accounts of atonement, original sin, freedom, and judgment vary, and Hitchens treats the harshest penal model as exhaustive. He also moves from moral distaste to falsity unless the critique is framed as evidence against a good God. Even with those limits, his burden and coercion arguments land more forcefully than McGrath's assurances.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 83,
+        strengths: [
+          "McGrath distinguished science's empirical competence from the broader metaphysical claim that science disproves God.",
+          "His parity argument located ideological violence in general human pathology without denying religion's documented harms.",
+          "He supplied a Christ-centered internal standard by which Christians can criticize their own institutions and violent interpretations."
+        ],
+        blunders: [
+          {
+            text:
+              "He established compatibility between Christianity and science more clearly than he established positive evidence for Christianity.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "He tended to count humane Christian fruits as authentic while assigning violent or coercive expressions to misinterpretation.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 90,
+        strengths: [
+          "Hitchens kept incompatible revelations under a shared evidential burden rather than allowing generic spirituality to substitute for specific truth claims.",
+          "He separated ordinary human moral capacities from theological ownership and identified distinctive harms created by divine authorization.",
+          "His salvation critique exposed tensions among inherited guilt, vicarious redemption, infinite consequences, and a genuinely free offer."
+        ],
+        blunders: [
+          {
+            text:
+              "He redescribed explicitly atheist totalitarian systems as religious whenever they resembled worship, weakening the counterexample by stipulation.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "He often treated punitive versions of original sin, atonement, and judgment as exhaustive of Christian theology.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
