@@ -54962,5 +54962,281 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "dillahunty-howitt-christianity-true-2023",
+    number: "157",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Matt Dillahunty vs Lewis Howitt: Is Christianity True?",
+    label: "Logic, reason, and divine grounding",
+    date: "2026-08-01",
+    duration: "1 hr 58 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=13PnL6QyMEw",
+    motion:
+      "Is Christianity true, and do the grounding of logic, a necessary cause, divine hiddenness, and the relation of reason to revelation support or undermine it?",
+    summary:
+      "Howitt argues that reason requires a necessary divine logos; Dillahunty says the inference to Christianity is unshown and its God remains evidentially hidden.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Modern-Day Debate upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God is a logos.",
+        context:
+          "Howitt's central claim is that the logical structure of reality requires a necessary, self-knowing ground that Christian theology describes through the Trinity."
+      },
+      con: {
+        text: "There are a lot of steps between whether or not it's a mind and it's the Holy Trinity.",
+        context:
+          "Dillahunty argues that a proposed foundation for logic, even if granted, does not establish a personal, Catholic, or Trinitarian God."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian logos",
+        speaker: "Lewis Howitt (PerspectivePhilosophy)",
+        color: "teal"
+      },
+      con: {
+        name: "Skeptical empiricism",
+        speaker: "Matt Dillahunty",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 65,
+      con: 81
+    },
+    sections: [
+      {
+        title: "Truth, public evidence, and divine hiddenness",
+        timebox: "11:00-24:45",
+        score: {
+          pro: 68,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "22:40",
+              role: "Grounding of reason",
+              words:
+                "Howitt says rational inference is not a bare convention: logic objectively structures reality, and its necessity points beyond contingent things to a necessary ground or logos.",
+              score: 68,
+              critique:
+                "Howitt raises a genuine philosophical issue rather than merely asserting that God explains everything. Logical principles do seem different from ordinary contingent objects, and asking why reasoning is possible is a legitimate metaphysical question. He also distinguishes an objective order from a private mental habit, which makes the challenge sharper than simple conventionalism. The weakness is that he moves from the indispensability of logic to a necessary cause without establishing that abstract norms need causes or that an infinite explanatory structure is impossible. Calling the ground logos also adds theological resonance before its personal features are shown. The score is solid because the question about rational necessity is serious, but the argument supplies only a preliminary bridge to theism.",
+              tags: []
+            },
+            con: {
+              time: "13:40",
+              role: "Truth and hiddenness",
+              words:
+                "Dillahunty defines truth as correspondence with reality, then argues that a God who wants belief could provide clearer public correction than the conflicting Christian claims people actually receive.",
+              score: 80,
+              critique:
+                "Dillahunty gives a clear, audience-accessible standard for truth and then connects it to a concrete problem for Christianity. His hidden-child comparison asks why a loving, communicative God would leave sincere people amid persistent doctrinal disagreement without a reliable public way to distinguish revelation from error. That is relevant to the motion and does not require him to solve every metaphysical question about logic first. The limitation is that he treats testability and direct correction as more central to warranted belief than every theist will allow. A philosophical or historical claim need not behave like a laboratory measurement to have evidence. Still, the point lands because Howitt does not yet explain why the alleged logos would remain so evidentially elusive.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "From logical structure to the Trinity",
+        timebox: "25:00-41:05",
+        score: {
+          pro: 64,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "27:10",
+              role: "Hegelian trinitarian inference",
+              words:
+                "Howitt argues that universality, particularity, and individuality are inseparable moments of reality, and that their concrete unity is the logos Christians call the Trinity.",
+              score: 64,
+              critique:
+                "Howitt presents a distinctive positive case rather than relying on scripture alone. The triad gives his account an internal structure, and he tries to show why a first principle must be self-related rather than a featureless abstract object. That makes the claim more ambitious and more informative than a generic first-cause argument. But the key identification remains asserted: three logical categories do not by themselves establish three personal, eternally related subjects, much less the doctrinal content of Catholic Christianity. The word logos also shifts from an intelligible pattern to a divine mind while doing much of the inferential work. The score is mixed because the metaphysical framework is coherent enough to investigate, yet the specifically Trinitarian conclusion is underderived.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The argument moves from logos as the intelligible structure of reality to logos as a personal Trinitarian God without supplying a separate warrant for that change."
+                }
+              ]
+            },
+            con: {
+              time: "40:10",
+              role: "Specificity challenge",
+              words:
+                "Dillahunty grants for argument's sake that there might be a noncontingent foundation, but asks how that could establish a mind, the Catholic God, or the Holy Trinity.",
+              score: 82,
+              critique:
+                "Dillahunty identifies the central inferential gap with welcome precision. By conditionally granting a noncontingent foundation, he avoids a distraction over whether every regress fails and asks what further premises make that foundation conscious, personal, and Trinitarian. This is strong burden discipline: the remarkable specificity of the conclusion needs evidence proportionate to its specificity. He also offers logic and mathematics as rival candidates for a foundational role, showing that the options are not exhausted by a divine mind. The limitation is that his alternatives are mentioned more than developed, so they do not yet explain normativity or actuality better than Howitt's model. The score is high because the rebuttal directly targets the largest unsupported transition in the affirmative case.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Natural reason, history, and doctrine",
+        timebox: "41:10-49:55",
+        score: {
+          pro: 58,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "43:20",
+              role: "Natural-theology reply",
+              words:
+                "Howitt says an intelligent species without the Bible could reason toward the Trinity, while historical claims require archaeology and some biblical narratives may be understood allegorically.",
+              score: 58,
+              critique:
+                "Howitt usefully separates claims available through reason from claims that depend on historical testimony. That distinction is often blurred in popular apologetics, and his willingness to treat some narratives allegorically makes his position more flexible than crude literalism. The cost is that the debate's Christian specificity becomes difficult to locate. If natural reason can reach the Trinity while incarnation, scripture, and creedal history may be recast or sidelined, the proposed conclusion begins to look like a general idealist theology rather than the Christianity named in the motion. He also does not show why independent reason would select this Trinity over competing religious metaphysics. The score is low because the reply protects a philosophical core, but it retreats from much of the historical content listeners would expect Christianity to involve.",
+              tags: []
+            },
+            con: {
+              time: "41:40",
+              role: "Alien thought experiment",
+              words:
+                "Dillahunty asks whether unlettered aliens could discover the distinctively Catholic claims, including the Trinity and incarnation, rather than only a broad philosophical God.",
+              score: 81,
+              critique:
+                "Dillahunty's alien thought experiment is an effective way to test the claimed reach of natural theology. It isolates the question from inherited churches, texts, and social identities: would reason alone yield the details needed to call the result Christianity rather than bare theism? That pressure exposes why an abstract logos argument needs a bridge to revelation and doctrine. The limitation is that a religion can include historical truths that no unaided thinker could discover, so failure to infer every doctrine would not by itself refute its truth. Dillahunty occasionally pushes the example toward rhetorical oddity, which risks obscuring that narrower point. The score remains high because Howitt's answer concedes much of the distinction without explaining how the philosophical result identifies a particular Christian tradition.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Perfection, doubt, and timelessness",
+        timebox: "50:00-71:20",
+        score: {
+          pro: 61,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "55:10",
+              role: "Non-temporal doubt",
+              words:
+                "Howitt says Christ's doubt is not an imperfection but a non-temporal logical moment: a self-knowing perfect mind includes the capacity to raise and overcome doubt within its own unity.",
+              score: 61,
+              critique:
+                "Howitt tries to engage the objection rather than simply denying the Gospel language about abandonment or doubt. His appeal to a logical relation rather than a human, clock-like sequence is a recognizable move in idealist and classical-theist metaphysics, and it could matter if a coherent account of atemporal self-knowledge were supplied. The difficulty is that doubt normally involves uncertainty, inquiry, or a transition between epistemic states. Reclassifying it as a logical possibility risks changing the subject unless he explains why that still counts as the doubt he invokes in the incarnation story. He also does not clearly distinguish the human consciousness of Jesus from divine omniscience. The score is limited because the reconciliation is suggestive but remains largely stipulative.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The reply treats doubt first as a meaningful episode in Christ's story and then as an atemporal logical possibility, leaving unclear whether the same claim is being defended."
+                }
+              ]
+            },
+            con: {
+              time: "54:35",
+              role: "Perfect-mind objection",
+              words:
+                "Dillahunty argues that a perfect mind cannot need to learn, test, or overcome uncertainty about its own perfection; a moment of genuine doubt would contradict the proposed perfection.",
+              score: 84,
+              critique:
+                "Dillahunty turns a diffuse theological dispute into a simple conditional: if a mind is perfect and knows all truths, it cannot first lack and then acquire knowledge of its own status. This directly tests Howitt's proposed reconciliation and repeatedly asks for a yes-or-no account of what the supposed doubt amounts to. The objection is especially strong because Howitt had presented falsifiability and self-relation as necessary for knowledge. Its limitation is that it assumes a classical model of perfection and treats temporal epistemic categories as decisive against an explicitly non-temporal metaphysics. A defender may reject that framework, but then owes a more explicit alternative. The score is very high because Dillahunty exposes a live tension and keeps the burden on the proposed model.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Dialectic, contingency, and the closing burden",
+        timebox: "83:00-115:40",
+        score: {
+          pro: 66,
+          con: 82
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "92:10",
+              role: "Metaphysical synthesis",
+              words:
+                "Howitt says God's omniscience, omnipresence, and self-actualization are contained in a necessary universal that includes contingent truths without depending on them, and concludes that reality is reducible to mind.",
+              score: 66,
+              critique:
+                "Howitt gives the most integrated version of his worldview here. He tries to answer worries about contingency, time, and divine attributes through one account of a universal containing particular truths, rather than patching together isolated miracles or proof texts. His acknowledgement that some terminology can misleadingly imply temporality is also intellectually fair. Yet the synthesis remains highly compressed. Terms such as contained, absolute truth, and self-actualization carry the argument, while the decisive claims are deferred to Hegel or Aquinas instead of derived in the exchange. Saying that reality is reducible to mind announces a substantial idealist premise rather than establishing it. The score is solid-low because the position has conceptual unity, but its central premises receive insufficient defense for the stated Christian conclusion.",
+              tags: []
+            },
+            con: {
+              time: "102:00",
+              role: "Logical-constraint reply",
+              words:
+                "Dillahunty says identity, non-contradiction, and excluded middle are content-agnostic logical constraints, so invoking Hegelian unity of opposites does not show that God can be both in and outside time or that Christianity is true.",
+              score: 82,
+              critique:
+                "Dillahunty's response is technically focused and useful. He distinguishes the formal laws of logic from claims about location, motion, or theological attributes, preventing a dialectical vocabulary from being treated as an automatic exception to non-contradiction. His final position is also properly modest: Christianity may be unfalsifiable in a strict sense, but it has not been demonstrated true, and its hiddenness plus rival religions count against it. The limitation is that he dismisses Hegel's account somewhat quickly and does not fully engage the difference between formal contradiction and dialectical change that Howitt intends. That leaves some specialist dispute unresolved. Still, the score is high because the rebuttal protects basic inferential standards and accurately returns to the motion's evidential burden.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 65,
+        strengths: [
+          "Howitt offered a distinctive positive metaphysical case centered on rational necessity, objective logic, and a self-knowing logos rather than relying only on biblical authority.",
+          "He repeatedly distinguished natural-theological claims from historical claims and tried to address the challenge of divine perfection instead of leaving the issue untouched.",
+          "His idealist framework gave his replies on time, contingency, and divine attributes a common conceptual structure."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly moved from logical structure to a personal, Trinitarian God while changing the work done by the word logos from an intelligible order to a divine mind.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His treatment of doubt as an atemporal logical moment did not clearly preserve the ordinary epistemic meaning of doubt or reconcile it with perfect omniscience.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 81,
+        strengths: [
+          "Dillahunty consistently separated a possible necessary foundation from the much stronger conclusion that it is a personal, Catholic, Trinitarian God.",
+          "His objections about divine hiddenness and the epistemic status of a perfect mind created clear, repeated burdens that Howitt did not fully meet.",
+          "He kept returning to public evidence, stable definitions, and the difference between a suggestive metaphysical picture and a demonstrated religious conclusion."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes slid from saying Christian claims lack sufficient evidence to treating laboratory-style falsifiability and public testability as the standard for every metaphysical or historical claim.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
