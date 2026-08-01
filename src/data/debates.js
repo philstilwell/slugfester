@@ -57828,6 +57828,268 @@ export const debates = [
       }
     }
   },
+  {
+    id: "craig-shook-existence-god-2008",
+    number: "167",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "William Lane Craig vs John Shook: The Existence of God",
+    label: "Naturalism, supernaturalism, and explanatory bridges",
+    date: "2026-08-01",
+    duration: "2 hr 17 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=L3FOgiASYY0",
+    motion:
+      "Does the available philosophical, scientific, moral, historical, and experiential evidence support God's existence?",
+    summary:
+      "Craig offers five cumulative arguments for supernaturalism; Shook treats naturalism as the rational default when proposed bridges beyond nature fail.",
+    sourceNote:
+      "Built from the English-original caption tracks on the Center for Inquiry's matching two-part upload. Captions were checked against the combined recording; summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "I've given five positive arguments for supernaturalism",
+        context:
+          "Craig insists that his case does not rest on naturalism's inability to disprove a supernatural realm."
+      },
+      con: {
+        text: "When we don't even have the beginnings of adequate justification, we don't believe that it exists",
+        context:
+          "Shook argues that withholding supernatural belief is the proper default when every proposed evidential bridge fails."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theistic supernaturalism",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "Philosophical naturalism",
+        speaker: "John Shook",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 84,
+      con: 75
+    },
+    sections: [
+      {
+        title: "Naturalism, default positions, and proof burdens",
+        timebox: "03:07-01:18:45",
+        score: {
+          pro: 86,
+          con: 81
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "03:52",
+              role: "Two-worldview challenge",
+              words:
+                "Craig asks both whether naturalism has positive support and whether five proposed bridges to supernatural reality survive, arguing that failed theism alone would yield agnosticism.",
+              score: 86,
+              critique:
+                "Craig properly distinguishes rejecting his arguments from establishing the stronger ontology that physical reality is all that exists. If naturalism is defined that way, lack of sufficient supernatural evidence does not deductively prove it; agnosticism remains possible. He also avoids resting his case on mere possibility by presenting five affirmative arguments. His burden framing is nevertheless too rigid. A worldview can gain comparative support from explanatory economy and the repeated failure of rival predictions without a separate deductive proof, and Shook's practical atheism need not entail certainty that nothing transcendent exists. Craig sometimes toggles between naturalism's strong metaphysical definition and ordinary nonbelief. The score is high because the distinction exposes a real overreach, but it does not by itself make supernaturalism probable.",
+              tags: []
+            },
+            con: {
+              time: "29:53",
+              role: "Failed-bridge default",
+              words:
+                "Shook argues that theologians bear the burden for additional supernatural entities and that failed bridges, adaptive hypotheses, and evidence-proof gods rationally leave belief withheld.",
+              score: 81,
+              critique:
+                "Shook offers a sophisticated default rule: everyone accepts some natural world, while supernaturalism adds a further domain and therefore owes discriminating evidence. His warnings about hypotheses redesigned around every result and deities insulated from disconfirmation are methodologically sound. He also clarifies that atheism can mean withholding belief rather than proving universal nonexistence. The tension is that he simultaneously defines naturalism as “the only reality” being physical, a positive metaphysical claim not entailed by failed theistic arguments. Comparing God with a flying spaghetti monster ignores differences in proposed evidence and explanatory scope. Shook therefore defends practical nonbelief better than strong naturalism. The score is strong because he articulates an evidential burden rather than merely asserting science, though Craig identifies the definitional slide.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Shook moves between naturalism as withholding supernatural belief and naturalism as the positive claim that physical reality is all that exists."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Cosmic beginnings and fine-tuning",
+        timebox: "04:41-01:34:19",
+        score: {
+          pro: 88,
+          con: 73
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "04:41",
+              role: "Cosmology-and-design case",
+              words:
+                "Craig argues that a finite past requires a transcendent personal cause and that life-permitting constants are better explained by design than necessity or undirected chance.",
+              score: 88,
+              critique:
+                "Craig gives clear premises for two distinct arguments and anticipates rather than ignores multiverse replies. The cosmological case connects a beginning of spacetime to a nonspatiotemporal cause; the fine-tuning case compares necessity, chance, and design. In rebuttal he correctly notes that discovering more habitable locations does not change the life-permitting range of fundamental constants. Still, the scientific claims are stronger than the cited results warrant: past incompleteness is not automatically an absolute beginning, and probability over possible constants or universe-generating mechanisms is poorly specified. Design also needs a prior and does not follow simply because two broad alternatives are challenged. The score is high because Shook leaves several precise premises unanswered, but Craig's explanatory menu and probability judgments remain contestable.",
+              tags: []
+            },
+            con: {
+              time: "01:00:16",
+              role: "Expanding-natural-explanation reply",
+              words:
+                "Shook appeals to developing cosmologies, lawlike nature, and the prospect of more life-supporting worlds, contending that apparent fine-tuning may shrink as science advances.",
+              score: 73,
+              critique:
+                "Shook usefully resists freezing a provisional cosmological picture into metaphysical proof. Scientific models can change what counts as brute, necessary, or selected, and a larger ensemble can alter chance assessments. He also challenges the assumption that causal explanation must terminate in a person rather than in lawful nature. But much of the reply is promissory. Other habitable planets do not answer fine-tuning of the underlying constants, and possible future cosmology does not presently establish necessity or a suitable multiverse distribution. Treating nature itself as law risks naming the regularity rather than explaining why it has life-permitting structure. The score is above average for identifying live research alternatives, yet Craig is right that Shook does not supply the probability comparison needed to defeat design in this debate.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The expected progress of future cosmology is given evidential weight against design before a specific explanatory model is supplied."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Objective morality and human agreement",
+        timebox: "14:30-01:44:16",
+        score: {
+          pro: 85,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "51:23",
+              role: "Moral-foundation distinction",
+              words:
+                "Craig distinguishes knowing moral truths from grounding them, arguing that evolved preferences and social agreement cannot make cruelty objectively wrong or moral progress genuinely better.",
+              score: 85,
+              critique:
+                "Craig repeatedly preserves the crucial ontology-epistemology distinction. Religious disagreement does not show there is no truth any more than scientific disagreement does, and his view explicitly allows nonbelievers to know moral facts. He also presses Shook's consensus account with psychopaths, Nazi society, and moral progress: agreement explains stability but not correctness independent of every group's approval. The weakness lies in the leap from inadequacy of relativism to God. Secular realism, constructivism, and reasons grounded in welfare are not exhausted by evolutionary preference, while defining God as the greatest conceivable being embeds rather than independently explains goodness. Craig's divine-nature answer improves on arbitrary commands but still needs a bridge from character to obligation. The score is strong because he defeats Shook's offered account more clearly than he proves exclusivity.",
+              tags: []
+            },
+            con: {
+              time: "40:53",
+              role: "Intersubjective-objectivity case",
+              words:
+                "Shook treats moral truths as conclusions people can rationally converge on, comparing democratic law's objectivity to shared standards that remain revisable without a divine sovereign.",
+              score: 78,
+              critique:
+                "Shook's democratic analogy explains how norms can be public, reason-responsive, and corrigible without revelation. His historical examples also show that invoking an objective divine source has not delivered unambiguous moral knowledge. This is an effective epistemic challenge and a useful account of practical objectivity. It does not fully answer Craig's ontological question. Laws become valid through institutions, whereas Shook also wants some moral judgments to criticize whole societies and their institutions. If “objective” means only widespread rational agreement, a sufficiently stable brutal consensus becomes correct by definition, and moral reform cannot be judged progress until later approval arrives. His Euthyphro challenge pressures divine command theory, but Craig's nature-based third option receives little analysis. The score is good for constructive humanism, though the standard remains partly conventional.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection and religious experience",
+        timebox: "16:50-01:59:15",
+        score: {
+          pro: 78,
+          con: 70
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "17:38",
+              role: "Historical-and-experiential case",
+              words:
+                "Craig argues that the empty tomb, appearance experiences, and transformed disciples favor resurrection, while widespread immediate experience should count unless defeated.",
+              score: 78,
+              critique:
+                "Craig appropriately separates historical data from the resurrection hypothesis and cites critical scholars for appearance experiences rather than appealing only to confessional authority. He also rightly asks why religious experience should be excluded from the total evidence merely because naturalism cannot accommodate it. Yet his case compresses disputed questions. The empty tomb enjoys less consensus than he suggests, willingness to die demonstrates sincerity rather than truth, and no numerical comparison is given between resurrection and psychological or legendary alternatives. Immediate experiences across incompatible traditions cannot all verify their specific theology; they require discrimination before becoming evidence for Craig's God. The score is solid because Shook mostly challenges source reliability and diversity without closely explaining the three facts, but Craig overstates both consensus and explanatory uniqueness.",
+              tags: [
+                {
+                  label: "Authority bias",
+                  type: "bias",
+                  url: bias("authority-bias"),
+                  context:
+                    "Statements about historian agreement carry more weight than the debate's abbreviated presentation of the underlying source evidence."
+                }
+              ]
+            },
+            con: {
+              time: "42:27",
+              role: "Diversity-and-reliability objection",
+              words:
+                "Shook notes that Christians experience Jesus while Hindus experience Krishna, and argues that conflicting revelations, hallucination, group psychology, and partisan sources undercut specific supernatural conclusions.",
+              score: 70,
+              critique:
+                "Shook raises the right discrimination problem. A generic appeal to experience cannot establish mutually inconsistent beings and messages, so testimony needs independent reliability checks. His catalogue of hallucination, crowd dynamics, and selective attention supplies natural mechanisms worth comparing, and his request for contemporary non-Christian sources challenges easy historical confidence. However, possibility is not explanation. He does not show that hallucination or legend jointly accounts for the empty tomb, varied appearance claims, and early belief better than Craig's hypothesis, nor does diversity entail that every experience is veridically worthless. His source skepticism sometimes slides from theological interest to unreliability without examining individual traditions. The score is moderate: Shook supplies important defeaters to certainty, but he does not match Craig's historical case with a comparably integrated alternative.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 84,
+        strengths: [
+          "Craig offered five explicit, cumulative arguments and kept separate the questions of naturalism's support and supernaturalism's support.",
+          "He exposed Shook's movement between practical nonbelief and the stronger metaphysical claim that only physical reality exists.",
+          "His distinction between moral knowledge and moral grounding directly answered Shook's appeals to disagreement and democratic deliberation."
+        ],
+        blunders: [
+          {
+            text:
+              "He presented conditional cosmological results and contested historical agreement with more certainty than the underlying evidence allowed.",
+            links: [
+              {
+                label: "Authority bias",
+                url: bias("authority-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "He treated naturalism's failure to ground morality as favoring God without fully considering secular realist alternatives.",
+            links: [
+              {
+                label: "Belief bias",
+                url: bias("belief-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 75,
+        strengths: [
+          "Shook articulated a principled evidential default and explained why adaptable, unfalsifiable supernatural hypotheses carry a burden.",
+          "He developed a constructive account of public moral reasoning and used religious diversity to challenge undifferentiated appeals to experience.",
+          "He conceded logical supernatural possibility while distinguishing it from justified belief, keeping his atheism fallibilist."
+        ],
+        blunders: [
+          {
+            text:
+              "He shifted between atheism as withholding belief and naturalism as the positive claim that nothing exists beyond physical reality.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His replies to fine-tuning and resurrection relied on possible future explanations and disconnected alternatives more than developed comparative accounts.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
