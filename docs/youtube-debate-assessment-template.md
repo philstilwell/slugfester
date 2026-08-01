@@ -32,6 +32,7 @@ Landing-page design:
 - The Rankings page includes a two-person head-to-head selector. Its score, opponents' average, fallacy-rate, and bias-rate comparisons follow the active topic filter and use all available appearances within that topic.
 - Each ranking row opens a static `/interlocutor/<speaker>/` profile page. Profiles show sample confidence, averages, score-band distribution rather than an implied chronology, topic performance, opponents faced, and linked source scorecards.
 - The header includes a `Backend` link to `/backend/`, whose page title is `Backend`; `/assessment/` remains a backwards-compatible legacy route.
+- The Backend page's Limits section states that assessments use the transcript and Slugfester's published rubric; account personalization and private conversation history are not inputs to the site's assessment data, and AI-assisted results remain open to reader scrutiny and revision.
 - The landing intro includes a divider line followed by a ` | `-delineated, linked list of the current page's compact debate number and title labels.
 - Landing Debate cards and Search result cards show linked interlocutor portraits; each portrait opens that speaker's `/interlocutor/<speaker>/` profile. The speaker portraits in detailed debate headers use the same profile links.
 - The debate list is capped at three columns on wide screens, then steps down responsively.

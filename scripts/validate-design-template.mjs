@@ -94,6 +94,7 @@ requireIncludes("app backend route", app, "backendPathRoutePattern");
 requireIncludes("app backend route", app, "assessmentPathRoutePattern");
 requireIncludes("app backend route", app, "backendSeo");
 requireIncludes("app backend page", app, "<h1>Backend</h1>");
+requireIncludes("app backend page", app, "Account personalization and private conversation history are not inputs");
 requireIncludes("app search filters", app, 'class="person-filter');
 requireIncludes("app search filters", app, 'class="filter-section filter-accordion"');
 requireIncludes("app search filters", app, "Interlocutor filters");

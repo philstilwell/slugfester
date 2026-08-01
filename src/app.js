@@ -2017,6 +2017,7 @@ function renderBackend() {
         <div class="assessment-detail-copy">
           <p>The backend does not decide which religion, philosophy, or political position is true. It scores the performance of the argument in the transcript: definitions, evidence, warrants, rebuttals, and logical discipline.</p>
           <p>A true claim can be defended badly, and a false claim can be argued with unusual care. Scores therefore track argumentative execution, not moral worth, charisma, crowd reaction, or agreement with the conclusion.</p>
+          <p>Assessments are grounded in the debate transcript and Slugfester's published rubric. Account personalization and private conversation history are not inputs to the site's assessment data. Like any AI-assisted evaluation, the results remain open to revision and reader scrutiny.</p>
           <p>Named fallacies and biases are routed through Slugfester reference pages first. Those pages give the basic definition, explain the debate-specific occurrence, link back to the source debate, and then point to LogFall or CogBias for deeper external treatment.</p>
         </div>
       </section>
