@@ -1210,6 +1210,58 @@ a {
   text-transform: none;
 }
 
+.ranking-tag-bars {
+  display: grid;
+  width: min(100%, 420px);
+  gap: 4px;
+  margin-top: 3px;
+}
+
+.ranking-tag-rate {
+  display: grid;
+  grid-template-columns: 54px minmax(72px, 1fr) 76px;
+  align-items: center;
+  gap: 7px;
+}
+
+.ranking-tag-rate > span:first-child {
+  color: var(--muted);
+  font-size: 0.6rem;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ranking-tag-track {
+  display: block;
+  height: 6px;
+  overflow: hidden;
+  background: #e7edeb;
+  border-radius: 999px;
+}
+
+.ranking-tag-track i {
+  display: block;
+  width: var(--bar-width);
+  height: 100%;
+  border-radius: inherit;
+}
+
+.ranking-tag-rate.fallacy .ranking-tag-track i {
+  background: var(--coral);
+}
+
+.ranking-tag-rate.bias .ranking-tag-track i {
+  background: var(--teal);
+}
+
+.ranking-tag-rate strong {
+  color: #40524f;
+  font-size: 0.65rem;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
 .ranking-score {
   min-width: 0;
   text-align: right;
@@ -2988,6 +3040,10 @@ a {
     padding: 8px 0 0;
     border-top: 1px solid var(--line);
     border-left: 0;
+  }
+
+  .ranking-tag-bars {
+    width: 100%;
   }
 
   .ranking-score {

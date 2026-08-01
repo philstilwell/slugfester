@@ -963,6 +963,35 @@ function rankingTopicSummary(appearances) {
     )[0];
 }
 
+function rankingTagSummary(records) {
+  const totals = {
+    scoredMoves: 0,
+    fallacies: 0,
+    biases: 0
+  };
+
+  records.forEach(({ debate, sideKey }) => {
+    debate.sections.forEach((section) => {
+      section.exchanges.forEach((exchange) => {
+        const move = exchange[sideKey];
+        if (!move) return;
+
+        totals.scoredMoves += 1;
+        (move.tags || []).forEach((tag) => {
+          if (tag.type === "fallacy") totals.fallacies += 1;
+          if (tag.type === "bias") totals.biases += 1;
+        });
+      });
+    });
+  });
+
+  return {
+    ...totals,
+    fallacyRate: totals.scoredMoves ? (totals.fallacies / totals.scoredMoves) * 100 : 0,
+    biasRate: totals.scoredMoves ? (totals.biases / totals.scoredMoves) * 100 : 0
+  };
+}
+
 function rankedInterlocutors(state) {
   const people = new Map();
 
@@ -989,7 +1018,8 @@ function rankedInterlocutors(state) {
           categories,
           debate,
           opponentScore,
-          score
+          score,
+          sideKey
         });
         people.set(avatar.name, person);
       });
@@ -1002,7 +1032,8 @@ function rankedInterlocutors(state) {
       ...person,
       averageOpponentScore: person.totalOpponentScore / person.appearances,
       averageScore: person.totalScore / person.appearances,
-      strongestTopic: rankingTopicSummary(person.records)
+      strongestTopic: rankingTopicSummary(person.records),
+      tagSummary: rankingTagSummary(person.records)
     }))
     .sort((a, b) => {
       if (state.sort === "appearances") {
@@ -1145,6 +1176,10 @@ function renderRankings() {
   const filteredDebates = rankingDebates(state);
   const rankings = rankedInterlocutors(state);
   const reasoningTopics = reasoningTagDistribution();
+  const rankingTagMaximum = Math.max(
+    1,
+    ...rankings.flatMap((person) => [person.tagSummary.fallacyRate, person.tagSummary.biasRate])
+  );
   const topicOptions = [
     { value: "all", label: "All topics" },
     ...topicGroupsForDebates().map((group) => ({ value: group.id, label: group.title }))
@@ -1215,7 +1250,7 @@ function renderRankings() {
         </div>
         ${
           rankings.length
-            ? `<ol class="ranking-list">${rankings.map(renderRankingCard).join("")}</ol>`
+            ? `<ol class="ranking-list">${rankings.map((person) => renderRankingCard(person, rankingTagMaximum)).join("")}</ol>`
             : `<div class="empty-results"><strong>No rankings matched.</strong><span>Try a lower minimum or broaden the current model or topic focus.</span></div>`
         }
         ${renderRankingMethod()}
@@ -1247,11 +1282,14 @@ function rankingHeading(sort) {
   return headings[sort] || headings.average;
 }
 
-function renderRankingCard(person) {
+function renderRankingCard(person, maximumTagRate) {
   const searchHref = searchUrl({ page: 1, query: "", people: [person.name] });
   const debateLabel = `${person.appearances} ${person.appearances === 1 ? "debate" : "debates"}`;
   const firstName = person.name.trim().split(/\s+/)[0];
   const topic = person.strongestTopic;
+  const { fallacyRate, biasRate } = person.tagSummary;
+  const fallacyWidth = maximumTagRate ? (fallacyRate / maximumTagRate) * 100 : 0;
+  const biasWidth = maximumTagRate ? (biasRate / maximumTagRate) * 100 : 0;
 
   return `
     <li>
@@ -1263,6 +1301,18 @@ function renderRankingCard(person) {
             <strong>${escapeHtml(person.name)}</strong>
             <small>${escapeHtml(debateLabel)}</small>
             <small class="ranking-topic">Most common topic: ${escapeHtml(topic?.title || "Uncategorized")}</small>
+            <span class="ranking-tag-bars" aria-label="${escapeHtml(person.name)}'s reasoning-tag rates">
+              <span class="ranking-tag-rate fallacy">
+                <span>Fallacies</span>
+                <span class="ranking-tag-track" aria-hidden="true"><i style="--bar-width: ${fallacyWidth.toFixed(2)}%"></i></span>
+                <strong>${formatTagRate(fallacyRate)}</strong>
+              </span>
+              <span class="ranking-tag-rate bias">
+                <span>Biases</span>
+                <span class="ranking-tag-track" aria-hidden="true"><i style="--bar-width: ${biasWidth.toFixed(2)}%"></i></span>
+                <strong>${formatTagRate(biasRate)}</strong>
+              </span>
+            </span>
           </span>
           <span class="ranking-score-pair">
             <span class="ranking-score ${scoreTone(Math.round(person.averageScore))}">
