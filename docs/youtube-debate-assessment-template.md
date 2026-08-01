@@ -33,6 +33,7 @@ Landing-page design:
 - Each ranking row opens a static `/interlocutor/<speaker>/` profile page. Profiles show sample confidence, averages, score-band distribution rather than an implied chronology, topic performance, opponents faced, and linked source scorecards.
 - The header includes a `Backend` link to `/backend/`, whose page title is `Backend`; `/assessment/` remains a backwards-compatible legacy route.
 - The landing intro includes a divider line followed by a ` | `-delineated, linked list of the current page's compact debate number and title labels.
+- Landing Debate cards and Search result cards show linked interlocutor portraits; each portrait opens that speaker's `/interlocutor/<speaker>/` profile. The speaker portraits in detailed debate headers use the same profile links.
 - The debate list is capped at three columns on wide screens, then steps down responsively.
 - Landing-page debate card titles link directly to the debate assessment.
 - Debate `label` values must be unique so landing cards, topic lists, and reference occurrence cards are unambiguous.

@@ -463,6 +463,8 @@ function renderLanding() {
 }
 
 function renderDebateCard(debate) {
+  const people = uniqueInterlocutorsForDebate(debate);
+
   return `
     <article class="debate-card">
       <div class="card-topline">
@@ -472,6 +474,9 @@ function renderDebateCard(debate) {
       <h3><a class="debate-title-link" href="${escapeHtml(debatePath(debate))}">${escapeHtml(debate.title)}</a></h3>
       <p class="motion">${escapeHtml(debate.motion)}</p>
       <p>${escapeHtml(debate.summary)}</p>
+      <div class="card-interlocutors" aria-label="Interlocutor profiles">
+        ${people.map(renderCardInterlocutor).join("")}
+      </div>
       <div class="side-score-strip" aria-label="Overall scores">
         ${renderMiniScore(debate.sides.pro.name, debate.score.pro, "teal")}
         ${renderMiniScore(debate.sides.con.name, debate.score.con, "coral")}
@@ -481,6 +486,14 @@ function renderDebateCard(debate) {
         <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noreferrer">YouTube Source</a>
       </div>
     </article>
+  `;
+}
+
+function renderCardInterlocutor(person) {
+  return `
+    <a class="card-interlocutor" href="${escapeHtml(interlocutorPath(person))}" aria-label="Open ${escapeHtml(person.name)}'s interlocutor profile" title="${escapeHtml(person.name)}">
+      <img src="${escapeHtml(person.src)}" alt="" width="512" height="512" loading="lazy" decoding="async">
+    </a>
   `;
 }
 
@@ -1899,10 +1912,10 @@ function renderSearchResult(debate) {
 
 function renderResultPerson(person) {
   return `
-    <span class="result-person">
+    <a class="result-person" href="${escapeHtml(interlocutorPath(person))}" aria-label="Open ${escapeHtml(person.name)}'s interlocutor profile">
       <img src="${escapeHtml(person.src)}" alt="" width="512" height="512" loading="lazy" decoding="async">
       <span>${escapeHtml(person.name)}</span>
-    </span>
+    </a>
   `;
 }
 
@@ -2212,19 +2225,21 @@ function renderSpeakerAvatars(speakerText) {
   if (!avatars.length) return "";
 
   return `
-    <span class="speaker-avatar-stack" aria-hidden="true">
+    <span class="speaker-avatar-stack" aria-label="Interlocutor profiles">
       ${avatars
         .map(
           (avatar) => `
-            <img
-              class="speaker-avatar"
-              src="${escapeHtml(avatar.src)}"
-              alt=""
-              width="512"
-              height="512"
-              loading="lazy"
-              decoding="async"
-            >
+            <a class="speaker-avatar-link" href="${escapeHtml(interlocutorPath(avatar))}" aria-label="Open ${escapeHtml(avatar.name)}'s interlocutor profile" title="${escapeHtml(avatar.name)}">
+              <img
+                class="speaker-avatar"
+                src="${escapeHtml(avatar.src)}"
+                alt=""
+                width="512"
+                height="512"
+                loading="lazy"
+                decoding="async"
+              >
+            </a>
           `
         )
         .join("")}
