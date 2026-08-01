@@ -61236,6 +61236,275 @@ export const debates = [
       }
     }
   },
+  {
+    id: "ally-licona-did-jesus-rise-dead-2004",
+    number: "180",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Shabir Ally vs Michael Licona: Did Jesus Rise from the Dead?",
+    label: "The bodily resurrection of Jesus",
+    date: "2026-08-01",
+    duration: "2 hr 36 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=eoiScvG3Emo",
+    motion:
+      "Does the historical evidence establish that Jesus physically rose from the dead?",
+    summary:
+      "Licona argues that Jesus' death, empty tomb, and appearances are best explained by bodily resurrection; Ally questions the death and physicality claims, proposing Gospel development and possible divine rescue.",
+    sourceNote:
+      "Built from the English-original YouTube caption track for the 2004 Regent University debate. Captions were checked against the recording; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "what is the most plausible explanation for the data",
+        context:
+          "Licona rejects certainty as the standard and asks which hypothesis best explains the death, empty tomb, and reported appearances together."
+      },
+      con: {
+        text: "does not necessitate his bodily Resurrection",
+        context:
+          "Ally argues that early belief in Jesus being alive with God need not entail that his corpse left its tomb or appeared physically."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Jesus bodily rose from the dead",
+        speaker: "Michael Licona",
+        color: "teal"
+      },
+      con: {
+        name: "Bodily resurrection is not established",
+        speaker: "Shabir Ally",
+        color: "coral"
+      }
+    },
+    score: { pro: 92, con: 84 },
+    sections: [
+      {
+        title: "Historical core and explanatory burden",
+        timebox: "08:01-44:30",
+        score: { pro: 93, con: 85 },
+        exchanges: [
+          {
+            pro: {
+              time: "09:05",
+              role: "Three-fact explanatory case",
+              words:
+                "Licona presents death by crucifixion, an empty tomb, and sincere appearances to friends and former foes as widely accepted facts jointly explained by resurrection.",
+              score: 93,
+              critique:
+                "Licona clearly separates evidence from explanation and gives each proposed fact a recognizable historical basis. Crucifixion is multiply attested; the empty-tomb case uses Jerusalem proclamation, hostile response, and bodily resurrection concepts; appearances rest chiefly on Paul, early tradition, and transformed witnesses. He also explicitly says martyrdom shows sincerity rather than truth, avoiding a common apologetic overclaim. The presentation nevertheless inflates consensus into evidential weight: a percentage of scholars cannot replace source analysis, and the hostile theft story may be Matthew's apologetic construction rather than independent admission. The empty tomb is less secure than death and early experience claims. Even so, he builds a cumulative case with clear burdens and a conclusion proportionate to comparative explanation rather than deductive proof.",
+              tags: []
+            },
+            con: {
+              time: "36:07",
+              role: "Death-and-appearance challenge",
+              words:
+                "Ally argues that the sources do not firmly establish either Jesus' death on the cross or a physical postmortem appearance once later narrative development is removed.",
+              score: 85,
+              critique:
+                "Ally appropriately divides the issue into whether Jesus was actually dead and whether later observers encountered him bodily. He also acknowledges his Muslim prior openly, an unusually useful act of epistemic disclosure. His warning that reading all four Gospels together can create a harmonized composite is methodologically sound. Yet he spends much of his opening on Islamic atonement and Quranic interpretation rather than directly answering Licona's early evidence. More importantly, uncertainty about the precise physiological cause of death does not neutralize convergent ancient testimony and what is known of Roman execution. He shifts from showing that bodily resurrection is underdetermined to treating survival as seriously live without positive case-specific evidence. That asymmetry weakens an otherwise relevant source-critical challenge.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Early creeds and a physical body",
+        timebox: "45:11-55:18",
+        score: { pro: 95, con: 89 },
+        exchanges: [
+          {
+            pro: {
+              time: "48:09",
+              role: "Pre-Gospel bodily-resurrection case",
+              words:
+                "Licona argues that First Corinthians 15, early formulas, Paul's bodily language, and his contact with Peter and James place resurrection belief before the Gospels.",
+              score: 95,
+              critique:
+                "Licona successfully redirects the exchange from later narrative details to evidence predating the Gospels. First Corinthians 15 gives a received formula naming burial, raising, and appearances, while Galatians places Paul in contact with Peter and James. His citations to Romans and Paul's repeated dead-and-raised language make a merely generic belief that Jesus was alive in heaven an incomplete reading. The inference that Paul received this exact creed from Peter is plausible but not stated, and Acts cannot independently confirm Paul's meaning without questions about authorship and speech composition. Colossians' authorship is also disputed. Those caveats do little to erase the central point: resurrection proclamation was early, embodied in Jewish conceptual context, and associated with named people whom Paul knew. Ally never supplies an earlier contrary stratum.",
+              tags: []
+            },
+            con: {
+              time: "49:36",
+              role: "Vision-category objection",
+              words:
+                "Ally notes that Paul includes his own luminous experience in the appearance list and argues that the others may likewise have received nonphysical visions.",
+              score: 89,
+              critique:
+                "Ally identifies a genuine ambiguity in the earliest evidence. Paul uses the same appearance verb across the list and his own experience, while Acts narrates a heavenly light rather than an ordinary encounter. This cautions against reading every named appearance through Luke's fish-eating Jesus or John's wounds. He also correctly distinguishes Paul's later teachings about general bodily resurrection from a direct description of each Easter experience. Yet possibility is doing too much work: Paul joining the list does not show that all experiences shared his phenomenology, especially because his was explicitly post-ascension. Jewish resurrection language still concerns the transformation of the dead person, not mere survival in heaven. Ally lowers confidence in detailed physical scenes but does not adequately dislodge early bodily-resurrection belief.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Crucifixion, death, and survival",
+        timebox: "1:05:01-1:33:21",
+        score: { pro: 95, con: 75 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:07:25",
+              role: "Convergent-death rebuttal",
+              words:
+                "Licona appeals to unanimous historical judgment, Roman crucifixion practice, medical assessment, and Raymond Brown against Ally's inference from an uncertain mechanism to possible survival.",
+              score: 95,
+              critique:
+                "Licona exposes the survival case's central weakness: not knowing the precise physiological mechanism is different from lacking evidence that an execution succeeded. Multiple sources report death, Roman crucifixion was designed to kill, and the alleged later encounters themselves do not supply evidence of medical survival. His use of Ally's favored Raymond Brown is particularly effective because Brown rejects survival while acknowledging uncertainty about mechanism. Licona also presses for an actual Roman counterexample when Ally cites a general dictionary claim about binding. He sometimes leans too heavily on unanimity and treats Gospel testimony as more independent than it is. The nails dispute is ultimately secondary; even tying would not make short-duration survival probable. On the main inference, Licona has the much stronger evidential and probabilistic position.",
+              tags: []
+            },
+            con: {
+              time: "1:05:05",
+              role: "Premature-removal hypothesis",
+              words:
+                "Ally points to Jesus' few hours on the cross, Pilate's surprise, possible binding, and the late spear detail as grounds for doubting that Jesus died.",
+              score: 75,
+              critique:
+                "Ally assembles several considerations that make survival logically possible: duration varied, Mark depicts Pilate as surprised, the spear appears only in John, and ancient death diagnosis was imperfect. He is right that Mel Gibson's violence is not historical evidence. The argument nonetheless mistakes gaps in detail for positive support. Pilate's inquiry ends with a centurion's confirmation, and Ally selectively trusts Pilate's sympathy while treating lethal details as apologetic development. Whether ropes sometimes replaced nails does not show what happened to Jesus or materially establish survival after scourging and crucifixion. His late Talmudic burial anecdote is chronologically remote, while the proposed sympathetic rescue lacks attestation. Requiring a named fatal wound sets an artificially clinical standard for an ancient execution report.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Uncertainty about the exact injury or execution detail is repeatedly treated as affirmative reason to suspect survival."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Gospel development and physical appearances",
+        timebox: "41:20-1:54:01",
+        score: { pro: 89, con: 92 },
+        exchanges: [
+          {
+            pro: {
+              time: "45:37",
+              role: "Early-core insulation",
+              words:
+                "Licona grants Gospel errors for argument's sake and maintains that later embellishment would not overturn the earlier creed, bodily concept, or appearance testimony.",
+              score: 89,
+              critique:
+                "Licona makes an important distinction: later embellishment does not entail that earlier tradition was fabricated from the same cloth. His willingness to bracket Gospel reliability keeps the debate focused on Paul's evidence and prevents discrepancies from becoming dispositive. He also notes that Mark's promise of a Galilean appearance suggests awareness even though its original ending does not narrate one. Yet this strategy limits his own physical evidence. If the Gospel scenes are bracketed, the case establishes early resurrection belief and claimed appearances more securely than an empty tomb or tactile encounters. Repeating that he is on another hill becomes evasive when Ally's target is precisely whether the later accounts supply the physical content read back into the creed. The early core survives, but with less specificity than Licona claims.",
+              tags: []
+            },
+            con: {
+              time: "1:40:29",
+              role: "Narrative-development comparison",
+              words:
+                "Ally compares Mark's unnarrated promise with Matthew, Luke, and John's increasingly concrete scenes, including Thomas, arguing that physical proof accumulates over time.",
+              score: 92,
+              critique:
+                "Ally's strongest method is horizontal comparison. Mark's abrupt ending, Luke's compressed Jerusalem sequence, John's absent Thomas, and increasingly tactile demonstrations plausibly reflect distinct theological and apologetic aims. He rightly resists harmonizing every later detail into one seamless witness account and shows that the earliest text does not narrate a meeting with the risen Jesus. His claim of a simple linear evolution is too neat: Matthew includes Galilean doubt, Luke's physicality need not be chronologically later than every tradition he uses, and omission does not establish Mark's ignorance. He also infers authorial motives—such as John answering substitution claims—without direct evidence. Still, the comparison substantially weakens using the four Gospels as independent, equally early proof of detailed bodily encounters.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Religious priors and the best explanation",
+        timebox: "1:34:28-2:35:18",
+        score: { pro: 93, con: 80 },
+        exchanges: [
+          {
+            pro: {
+              time: "2:22:10",
+              role: "Comparative closing case",
+              words:
+                "Licona argues that resurrection explains all three facts, whereas Ally's rescue theory lacks evidence, strains selected texts, and is driven by a much later Quranic commitment.",
+              score: 93,
+              critique:
+                "Licona closes with explicit explanatory comparison rather than mere restatement. Resurrection has scope across death, emptiness, appearances, and transformed belief, whereas Ally alternates among survival, spiritual vision, recreation, and miraculous removal. He fairly notes that these possibilities are not one evidenced rescue model and that the Quran is centuries removed from eyewitness access. His claim that resurrection is the only plausible explanation is stronger than the argument establishes; natural explanations may divide the data without thereby being illegitimate, and resurrection depends on background beliefs about God's existence and intentions. His devotional ending also adds no historical support. Nonetheless, given the alternatives actually defended in this debate, Licona shows better fit, coherence, and evidential discipline. Ally's concessions leave his own conclusion unstable.",
+              tags: []
+            },
+            con: {
+              time: "1:36:03",
+              role: "Framework-relative alternatives",
+              words:
+                "Ally says Quranic faith permits miraculous rescue, while a bracketing of the Quran could yield death plus visions; neither framework compels bodily resurrection.",
+              score: 80,
+              critique:
+                "Ally commendably states which conclusions follow from which starting assumptions. He recognizes that Quranic rescue is a faith claim, not a demonstrable historical fact, and offers vision plus later development when reasoning within ordinary historiography. This exposes that Licona's resurrection inference also requires background theism. But Ally applies sharply unequal standards. He demands firm historical proof for bodily resurrection while allowing an unattested rescue because Muslims “do not need to prove it,” and he moves between survival, death in the tomb, heavenly raising, recreated embodiment, and grief vision as objections require. These models conflict rather than converge. His closing claim that crucifixion by itself marks Jesus as a blasphemer also imports Pauline theology selectively. The result establishes underdetermination more than any coherent rival account.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "Ally exempts Quranic rescue from the evidential burden he imposes on the competing Christian miracle claim."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 92,
+        strengths: [
+          "Licona distinguished historical data from the hypothesis proposed to explain it and consistently argued cumulatively.",
+          "His early-creed case established resurrection proclamation and named appearance claims well before the Gospel narratives.",
+          "He decisively separated uncertainty about the physiological mechanism of death from evidence that Roman execution succeeded.",
+          "His closing compared scope, coherence, and evidential fit across the alternatives actually offered."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes substituted scholarly consensus and source counts for detailed defense of independence and transmission.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          },
+          {
+            text:
+              "He called resurrection the only plausible explanation when defeating Ally's rescue theory did not exhaust the natural alternatives.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Ally openly identified his religious prior and distinguished faith commitments from historical demonstrations.",
+          "His horizontal Gospel comparisons exposed development and reduced confidence in harmonized physical-appearance narratives.",
+          "His treatment of Paul's visionary appearance identified real ambiguity in reading every early appearance as tactile."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly inferred a serious survival possibility from missing clinical detail despite convergent evidence that the execution succeeded.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "He exempted Quranic rescue from proof while demanding substantially stronger evidence for a competing Christian miracle.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
