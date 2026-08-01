@@ -58614,6 +58614,268 @@ export const debates = [
       }
     }
   },
+  {
+    id: "singer-lennox-is-there-god-2011",
+    number: "170",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Peter Singer vs John Lennox: Is There a God?",
+    label: "Reason, morality, suffering, and resurrection",
+    date: "2026-08-01",
+    duration: "1 hr 46 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=HoTILnpd3q8",
+    motion:
+      "Given science, human rationality, morality, suffering, and the historical claims about Jesus, is belief in the biblical God rational?",
+    summary:
+      "Lennox argues that rationality, objective morality, cosmic order, and Jesus' resurrection cohere under Christian theism; Singer argues that evolution, secular ethics, evidential restraint, and undeserved suffering make that God improbable.",
+    sourceNote:
+      "Built from the English-original YouTube caption track. Captions were checked against the recorded exchange; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "the crunch issue is if he rose from the dead",
+        context:
+          "Lennox makes Christianity answerable to a historical claim, saying resurrection would falsify atheism while its failure would falsify Christianity."
+      },
+      con: {
+        text: "the existence of undeserved suffering does count against the existence of God",
+        context:
+          "Singer argues that natural disasters and animal suffering are more expected without an omnipotent, benevolent creator."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Christian theism",
+        speaker: "John Lennox",
+        color: "teal"
+      },
+      con: {
+        name: "Secular naturalism",
+        speaker: "Peter Singer",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 77,
+      con: 87
+    },
+    sections: [
+      {
+        title: "Reason, science, and design",
+        timebox: "05:35-43:23",
+        score: {
+          pro: 78,
+          con: 88
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "09:13",
+              role: "Rationality from Logos",
+              words:
+                "Lennox argues that science presupposes reliable reason and mathematical intelligibility, while unguided evolution selects survival rather than truth; Logos better explains both mind and order.",
+              score: 78,
+              critique:
+                "Lennox raises a legitimate epistemological question: an account of cognition should explain why evolved minds can track truth well enough to conduct science. He also connects mathematical intelligibility to a unified worldview instead of treating it as a bare curiosity. Yet he repeatedly describes natural processes as irrational, confusing a process without intentions with a process incapable of producing reasoning agents. Selection for successful action can strongly correlate with accurate representation, and Singer's genetic and fossil evidence establishes common descent without claiming evolution answers every metaphysical question. Lennox quotes several atheists expressing worries but does not derive a contradiction in naturalism. The score is solid because the reliability challenge is real, though his self-defeat conclusion outruns the premises he actually defends.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Nonrational natural processes are described as irrational, sliding from absence of reasoning to opposition to reason."
+                }
+              ]
+            },
+            con: {
+              time: "27:32",
+              role: "Evolutionary and evidential account",
+              words:
+                "Singer appeals to common descent, natural selection, fossils, and genetics to explain adapted complexity without design, then demands rational evidence rather than faith.",
+              score: 88,
+              critique:
+                "Singer gives a clear, evidence-led account of why biological adaptation no longer supplies the classical design inference. Fossils, shared genes, differential survival, and reproduction form a convergent explanation rather than a promissory appeal. He also applies Clifford's shipowner story effectively: confidence without adequate investigation can be culpable when beliefs guide consequential action. His weakness is defining faith as belief lacking rational argument after Lennox explicitly defines his faith as evidence-based trust. That framing attacks an important kind of religious belief, but it does not by itself describe Lennox's position. Singer also moves from evolution's biological success toward dismissing broader cosmic design too quickly. The score is very high because his positive evidential case is the section's most developed argument.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Undeserved suffering",
+        timebox: "36:35-1:27:39",
+        score: {
+          pro: 68,
+          con: 94
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:15:38",
+              role: "Freedom, formation, and final justice",
+              words:
+                "Lennox distinguishes moral from natural evil, says a lawlike world enables meaningful agency, and argues that suffering can form character while resurrection promises ultimate justice.",
+              score: 68,
+              critique:
+                "Lennox appropriately concedes that suffering is a genuine problem rather than offering a glib solution. Free will has relevance to cruelty, and a stable natural order is plausibly necessary for responsible action. His personal examples also show how suffering can sometimes produce courage and compassion. But Singer repeatedly targets cases these considerations do not explain: infants crushed by earthquakes, nonhuman animals suffering for evolutionary ages, and harms that destroy rather than form character. An afterlife could compensate victims, yet compensation does not explain why an omnipotent creator selected these means when less brutal alternatives appear available. Lennox's reply offers several possible goods without showing that they require the actual scale and distribution of suffering. This is his weakest section because the central likelihood challenge remains substantially unanswered.",
+              tags: [
+                {
+                  label: "Scope neglect",
+                  type: "bias",
+                  url: bias("scope-neglect"),
+                  context:
+                    "Examples of suffering that builds character underweight the immense quantity of apparently destructive human and animal suffering Singer emphasizes."
+                }
+              ]
+            },
+            con: {
+              time: "36:40",
+              role: "Likelihood argument from suffering",
+              words:
+                "Singer distinguishes human wrongdoing from earthquakes and animal pain, arguing that massive undeserved suffering is improbable under an all-powerful, all-good God.",
+              score: 94,
+              critique:
+                "Singer presents the debate's strongest argument because he frames evil comparatively rather than claiming a formal contradiction. Natural disasters and prehuman animal suffering evade a simple free-will defense, and his question is exactly evidential: which worldview makes such apparently gratuitous harm less surprising? He anticipates soul-making by distinguishing hardships that develop character from suffering that kills, incapacitates, or predates human moral growth. He also answers heavenly compensation: receiving later benefits does not show the earlier agony was necessary. Singer could acknowledge more explicitly that unknown divine reasons are logically possible and that a law-governed world entails some risk. Those qualifications affect certainty, not the directional evidence. The score is exceptional because his examples, burden placement, and repeated replies remain tightly connected to the motion.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Objective morality and freedom",
+        timebox: "14:03-1:40:03",
+        score: {
+          pro: 75,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "51:34",
+              role: "Moral foundation challenge",
+              words:
+                "Lennox grants that atheists act morally but argues that impersonal matter cannot ground objective value, freedom, justice, or the universal dignity Singer's ethics presupposes.",
+              score: 75,
+              critique:
+                "Lennox correctly separates moral behavior from moral ontology and does not commit the crude error that atheists cannot be good. He presses Singer to explain why suffering is objectively bad and why equal concern is more than a chosen convention. That is a serious challenge to any secular ethic. However, Lennox repeatedly treats atheism as entailing reductive materialism, determinism, and moral nihilism, overlooking non-theistic moral realism and compatibilism. Quoting Dawkins's statement that nature has no justice describes evolutionary processes, not the conclusion that human reasons cannot support norms. A divine nature also needs an account of why its properties are good without circularity. The score is good because he exposes an underdeveloped foundation, but his claimed monopoly on objectivity is not established.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The conclusion that objective goodness requires God is repeatedly used as the premise that secular moral reasons cannot be objective."
+                }
+              ]
+            },
+            con: {
+              time: "57:17",
+              role: "Reasons against suffering",
+              words:
+                "Singer argues that reason can recognize interests impartially: causing severe suffering for trivial benefit is wrong regardless of whether a deity commands that judgment.",
+              score: 86,
+              critique:
+                "Singer gives secular morality genuine argumentative content rather than appealing only to instinct. Sentient beings have interests, suffering is a reason for action, and impartial reflection challenges privileging one's own comparable interests. His example of inflicting major harm for minor gain shows how ethical judgment can be publicly reasoned without divine commands. He also names atheist philosophers developing objective moral theories, appropriately defeating Lennox's suggestion that atheism automatically yields convention. The limitation is that Singer mostly explains how to reason from concern for welfare once its normative importance is granted; he does not fully ground why every rational agent must accept that starting point. His utilitarian framework also faces aggregation and rights objections not explored here. Still, he supplies a coherent alternative, so Lennox cannot win by default.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection and historical evidence",
+        timebox: "44:24-1:10:04",
+        score: {
+          pro: 83,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "1:03:08",
+              role: "Historical miracle inference",
+              words:
+                "Lennox says natural regularities make miracles recognizable, then appeals to the empty tomb, appearances, transformed disciples, and the rise of Christianity as resurrection evidence.",
+              score: 83,
+              critique:
+                "Lennox makes two important moves. A miracle claim need not deny regular laws; its exceptional character presupposes them. He then accepts a historical burden and offers a cumulative case rather than treating scripture as self-authenticating: reported burial and empty tomb, postmortem appearances, changed witnesses, and Christianity's origin. That is more responsive than merely saying God can raise the dead. The weaknesses are source compression and prior probability. Several facts are contested or multiply attested through dependent Christian traditions, and willingness to suffer establishes sincerity more readily than accuracy. Lennox also says alternative explanations leave a resurrection-shaped hole without comparing them rigorously. The score is strong because he presents relevant evidence and a falsifiable hinge, but the live case does not establish that miracle as the best explanation.",
+              tags: []
+            },
+            con: {
+              time: "1:01:44",
+              role: "Prior probability and alternatives",
+              words:
+                "Singer says resurrection conflicts with exceptionally well-supported regularities and that ordinary errors, legends, visions, or missing-body scenarios carry much higher prior probabilities.",
+              score: 80,
+              critique:
+                "Singer correctly insists that extraordinary claims must be compared with the frequency of testimony error, legendary development, grief experiences, and missing bodies. His point is Bayesian in substance: even evidence that would be striking under ordinary conditions may not overcome an extremely low prior for resurrection. He also notes that Christianity's spread cannot uniquely verify its miracle because influential movements grow around incompatible claims. Yet he sometimes treats physical regularity as if it rendered intervention impossible, when Lennox's hypothesis explicitly posits an agent outside the closed natural model. Listing possible alternatives without testing their fit to the particular sources is also incomplete. The score is strong because Singer places the evidential bar correctly, but Lennox engages the historical particulars more directly in this exchange.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 77,
+        strengths: [
+          "Lennox treated rationality and moral ontology as substantive explanatory questions rather than assuming science dissolves them.",
+          "He clearly separated atheists' moral conduct from the question of what grounds objective moral obligations.",
+          "His resurrection case accepted a historical burden and identified multiple relevant claims instead of appealing to faith alone."
+        ],
+        blunders: [
+          {
+            text:
+              "He slid from natural processes being nonrational to naturalism being unable to produce reliable rational agents.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His freedom and soul-making replies did not match the scale or distribution of natural and prehuman animal suffering.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 87,
+        strengths: [
+          "Singer grounded his biological argument in convergent fossil, genetic, and selection evidence rather than rhetoric about scientific consensus.",
+          "His probabilistic argument from natural and animal suffering directly tested which worldview better predicts the observed world.",
+          "He supplied a reason-based secular ethical alternative and distinguished weak testimony from the very low prior probability of resurrection."
+        ],
+        blunders: [
+          {
+            text:
+              "He defined faith as unsupported belief even after Lennox explicitly presented faith as evidence-based trust.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His welfare-based ethics did not fully explain why impartial concern has categorical authority over every rational agent.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
