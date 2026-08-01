@@ -105,6 +105,7 @@ Use LogFall for logical fallacies and CogBias for cognitive biases:
 - Bias links must use `https://cogbias.site/biases/...`.
 - A tag should explain a real weakness, not merely decorate a low score.
 - Each tag needs a short context note explaining why that label applies to the specific argument or rebuttal.
+- The Rankings page aggregates named fallacy and bias tags by each scorecard's primary topic. No extra analytics fields are required, but accurately typed `fallacy` and `bias` tags are necessary for the distribution to remain useful.
 - Pills should show a hover/focus popover with the basic definition, contextual explanation, and the note `Click button for more info.`
 - Pills should also open a local Slugfester reference page first; that page gives the basic definition, debate context, and the in-depth LogFall or CogBias link.
 - Debate-page pills should include a `#` occurrence anchor that jumps to the exact debate/interlocutor context card on the local reference page.

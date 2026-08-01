@@ -736,6 +736,142 @@ function topicGroupsForDebates() {
   return [...groups.values()].filter((group) => group.debates.length > 0);
 }
 
+function reasoningTagDistribution() {
+  return topicGroupsForDebates().map((group) => {
+    const totals = {
+      debates: group.debates.length,
+      scoredMoves: 0,
+      fallacies: 0,
+      biases: 0
+    };
+
+    group.debates.forEach((debate) => {
+      debate.sections.forEach((section) => {
+        section.exchanges.forEach((exchange) => {
+          [exchange.pro, exchange.con].filter(Boolean).forEach((move) => {
+            totals.scoredMoves += 1;
+            (move.tags || []).forEach((tag) => {
+              if (tag.type === "fallacy") totals.fallacies += 1;
+              if (tag.type === "bias") totals.biases += 1;
+            });
+          });
+        });
+      });
+    });
+
+    return {
+      ...group,
+      ...totals,
+      fallacyRate: totals.scoredMoves ? (totals.fallacies / totals.scoredMoves) * 100 : 0,
+      biasRate: totals.scoredMoves ? (totals.biases / totals.scoredMoves) * 100 : 0
+    };
+  });
+}
+
+function reasoningTagTotals(topics) {
+  return topics.reduce(
+    (total, topic) => ({
+      debates: total.debates + topic.debates,
+      scoredMoves: total.scoredMoves + topic.scoredMoves,
+      fallacies: total.fallacies + topic.fallacies,
+      biases: total.biases + topic.biases
+    }),
+    { debates: 0, scoredMoves: 0, fallacies: 0, biases: 0 }
+  );
+}
+
+function formatTagRate(rate) {
+  return `${Number(rate).toFixed(1)} per 100`;
+}
+
+function renderReasoningTagReadout(selectedTopic, topics) {
+  const totals = selectedTopic || reasoningTagTotals(topics);
+  const title = selectedTopic ? selectedTopic.title : "All topic clusters";
+  const fallacyRate = totals.scoredMoves ? (totals.fallacies / totals.scoredMoves) * 100 : 0;
+  const biasRate = totals.scoredMoves ? (totals.biases / totals.scoredMoves) * 100 : 0;
+
+  return `
+    <div class="reasoning-readout-focus">
+      <span>Current focus</span>
+      <strong>${escapeHtml(title)}</strong>
+    </div>
+    <dl class="reasoning-readout-stats">
+      <div><dt>Scorecards</dt><dd>${totals.debates}</dd></div>
+      <div><dt>Scored moves</dt><dd>${totals.scoredMoves}</dd></div>
+      <div class="fallacy"><dt>Fallacy tags</dt><dd>${totals.fallacies} <small>${formatTagRate(fallacyRate)}</small></dd></div>
+      <div class="bias"><dt>Bias tags</dt><dd>${totals.biases} <small>${formatTagRate(biasRate)}</small></dd></div>
+    </dl>
+  `;
+}
+
+function renderReasoningTopicRow(topic, maximumRate) {
+  const fallacyWidth = maximumRate ? (topic.fallacyRate / maximumRate) * 100 : 0;
+  const biasWidth = maximumRate ? (topic.biasRate / maximumRate) * 100 : 0;
+
+  return `
+    <li class="reasoning-topic-row" data-reasoning-topic-row="${escapeHtml(topic.id)}">
+      <div class="reasoning-topic-name">
+        <strong>${escapeHtml(topic.title)}</strong>
+        <span>${topic.debates} ${topic.debates === 1 ? "scorecard" : "scorecards"} · ${topic.scoredMoves} scored moves</span>
+      </div>
+      <div class="reasoning-rate-bars">
+        <div class="reasoning-rate-bar">
+          <span>Fallacies</span>
+          <span class="reasoning-bar-track" aria-hidden="true"><i class="fallacy" style="--bar-width: ${fallacyWidth.toFixed(2)}%"></i></span>
+          <strong>${formatTagRate(topic.fallacyRate)}</strong>
+        </div>
+        <div class="reasoning-rate-bar">
+          <span>Biases</span>
+          <span class="reasoning-bar-track" aria-hidden="true"><i class="bias" style="--bar-width: ${biasWidth.toFixed(2)}%"></i></span>
+          <strong>${formatTagRate(topic.biasRate)}</strong>
+        </div>
+      </div>
+    </li>
+  `;
+}
+
+function renderReasoningDistribution(topics) {
+  const maximumRate = Math.max(
+    1,
+    ...topics.flatMap((topic) => [topic.fallacyRate, topic.biasRate])
+  );
+
+  return `
+    <section class="reasoning-distribution" data-reasoning-distribution aria-labelledby="reasoning-distribution-heading">
+      <div class="reasoning-distribution-heading">
+        <div>
+          <p class="eyebrow">Named assessment tags</p>
+          <h2 id="reasoning-distribution-heading">Reasoning flags by topic</h2>
+          <p>Rates show cited fallacy and bias tags per 100 scored argument and rebuttal moves.</p>
+        </div>
+        <label class="reasoning-topic-control" for="reasoning-topic-select">
+          <span>Chart topic</span>
+          <select id="reasoning-topic-select" data-reasoning-topic-select>
+            <option value="all">All topic clusters</option>
+            ${topics
+              .map(
+                (topic) => `<option value="${escapeHtml(topic.id)}">${escapeHtml(topic.title)}</option>`
+              )
+              .join("")}
+          </select>
+        </label>
+      </div>
+      <div class="reasoning-distribution-readout" data-reasoning-tag-readout aria-live="polite">
+        ${renderReasoningTagReadout(null, topics)}
+      </div>
+      <div class="reasoning-distribution-legend" aria-label="Reasoning tag legend">
+        <span><i class="fallacy"></i> Logical fallacy tags</span>
+        <span><i class="bias"></i> Cognitive bias tags</span>
+        <small>Topic groups use each scorecard's primary Slugfester category.</small>
+      </div>
+      <ol class="reasoning-topic-chart">
+        ${topics.map((topic) => renderReasoningTopicRow(topic, maximumRate)).join("")}
+      </ol>
+      <p class="reasoning-distribution-note">These are counts of named assessment tags, not independent findings that every cited fallacy or bias is established across the corpus.</p>
+    </section>
+  `;
+}
+
 function uniqueInterlocutorsForDebate(debate) {
   const avatars = [
     ...avatarsForSpeakerText(debate.sides.pro.speaker),
@@ -1008,6 +1144,7 @@ function renderRankings() {
   const state = rankingState();
   const filteredDebates = rankingDebates(state);
   const rankings = rankedInterlocutors(state);
+  const reasoningTopics = reasoningTagDistribution();
   const topicOptions = [
     { value: "all", label: "All topics" },
     ...topicGroupsForDebates().map((group) => ({ value: group.id, label: group.title }))
@@ -1066,6 +1203,8 @@ function renderRankings() {
         </form>
       </section>
 
+      ${renderReasoningDistribution(reasoningTopics)}
+
       <section class="rankings-list-section" aria-labelledby="rankings-list-heading">
         <div class="section-heading">
           <div>
@@ -1085,6 +1224,7 @@ function renderRankings() {
   `);
 
   bindRankingControls(state);
+  bindReasoningDistribution(reasoningTopics);
 }
 
 function renderRankingOptions(options, selectedValue) {
@@ -1526,6 +1666,27 @@ function bindRankingControls(state) {
       sort: "average"
     });
   });
+}
+
+function bindReasoningDistribution(topics) {
+  const section = app.querySelector("[data-reasoning-distribution]");
+  if (!section) return;
+
+  const selector = section.querySelector("[data-reasoning-topic-select]");
+  const readout = section.querySelector("[data-reasoning-tag-readout]");
+  const update = (topicId) => {
+    const selectedTopic = topics.find((topic) => topic.id === topicId) || null;
+    section.dataset.focusedTopic = selectedTopic?.id || "all";
+    readout.innerHTML = renderReasoningTagReadout(selectedTopic, topics);
+
+    section.querySelectorAll("[data-reasoning-topic-row]").forEach((row) => {
+      const isFocused = row.dataset.reasoningTopicRow === selectedTopic?.id;
+      row.classList.toggle("is-focused", isFocused);
+      row.classList.toggle("is-muted", Boolean(selectedTopic) && !isFocused);
+    });
+  };
+
+  selector?.addEventListener("change", () => update(selector.value));
 }
 
 function renderDebate(id) {
