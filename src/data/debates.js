@@ -54736,5 +54736,231 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    id: "harris-prager-religion-morality-public-reason-2014",
+    number: "156",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Sam Harris vs Dennis Prager: Religion, Morality, and Public Reason",
+    label: "Religion, moral reasoning, and social order",
+    date: "2026-08-01",
+    duration: "50 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=elMi_IzlD40",
+    motion:
+      "Does religious belief better ground moral knowledge and identify social evil, or can secular ethical realism guide moral progress without sacred texts?",
+    summary:
+      "Prager defends God as the source of a moral code and argues that secular culture misses major evils; Harris argues that unsupported sacred-text claims divide people and that ethics can be grounded in conscious flourishing.",
+    sourceNote:
+      "Built from YouTube English-original automatic captions for the Hetian Lasater upload. The source repeats discussion material beginning around 32:30, so the assessment maps the unique exchange once. This is a radio discussion rather than a formal timed debate. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "I believe in the divinity of the code.",
+        context:
+          "Prager's case is that human beings need a moral standard grounded beyond changing social preference and supplied by God."
+      },
+      con: {
+        text: "There are right and wrong answers to ethical questions.",
+        context:
+          "Harris calls himself an ethical realist while locating moral inquiry in the happiness and suffering of conscious beings rather than revelation."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Divine moral authority",
+        speaker: "Dennis Prager",
+        color: "teal"
+      },
+      con: {
+        name: "Secular ethical realism",
+        speaker: "Sam Harris",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 69,
+      con: 78
+    },
+    sections: [
+      {
+        title: "Religion, Islam, and moral diagnosis",
+        timebox: "01:35-09:35",
+        score: {
+          pro: 69,
+          con: 78
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "03:20",
+              role: "Historical diagnosis",
+              words:
+                "Prager argues that religious Americans recognized the evils of communism and Islamic totalitarianism more clearly than secular liberal culture, so secular ideas have failed a practical moral test.",
+              score: 69,
+              critique:
+                "Prager identifies a serious political question: moral theories should not be judged only by abstract consistency but also by whether they help people identify cruelty, totalitarianism, and threats to human freedom. He also makes a useful distinction between recognizing a threat and agreeing with every religious explanation of it. The weakness is evidential and comparative. The conversation supplies no historical measure of which religious or secular groups diagnosed communism or Islamism best, and it treats highly varied institutions as two unified camps. Even if a religious constituency did better on particular cases, that would not establish that its theology is true or that secular ethical reasoning is incapable of reaching the same judgment. The score is mixed because the practical challenge matters, but the supporting generalization is much too broad.",
+              tags: []
+            },
+            con: {
+              time: "04:05",
+              role: "Belief-content reply",
+              words:
+                "Harris agrees that jihadist commitments can be dangerous when people believe martyrdom and paradise are literal, but says every belief should answer to facts rather than to the authority of a sacred book.",
+              score: 78,
+              critique:
+                "Harris gives a strong clarification of his target. He does not deny that Islamist beliefs can motivate violence; instead, he says that their danger follows from taking metaphysical claims literally and that all such claims should be tested against reality. That directly addresses Prager's concern about moral blindness while preserving a shared concern about jihadist violence. The limitation is that Harris moves quickly from the danger of some religious beliefs to the broader claim that revealed-text belief as such is divisive and unsupportable. He does not distinguish sufficiently between interpretations, doctrines, or the many ways believers relate faith to evidence. The score is high because his account links belief content to action clearly, but it is not decisive against religion in general.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Sacred text and moral evaluation",
+        timebox: "10:00-17:40",
+        score: {
+          pro: 71,
+          con: 79
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "10:20",
+              role: "Revelation defense",
+              words:
+                "Prager says creation points to a Creator and scripture is too profound to be merely human; he argues that disputed biblical laws require historical and scholarly interpretation, not isolated reading.",
+              score: 71,
+              critique:
+                "Prager offers a recognizable cumulative defense rather than merely saying that the Bible is true because it says so. His insistence on historical context is fair: laws about retaliation, servitude, warfare, and Sabbath practice should not be evaluated as though every passage were a standalone modern policy. He also identifies a real interpretive burden for critics who quote a text without its genre or setting. The weakness is that profound content and contextual explanation do not establish supernatural authorship. On the most contested examples, he gives confident reconstructions but little textual evidence, and the divine source is still the conclusion in question. The score is solid because interpretive context matters, but lower because the argument does not independently authenticate revelation.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The defense treats scripture as a divinely supplied moral code while the divine authorship and authority of that code are the disputed premises."
+                }
+              ]
+            },
+            con: {
+              time: "11:35",
+              role: "Authority challenge",
+              words:
+                "Harris says the claim that a book was informed by the Creator needs evidence, and he contrasts biblical moral commands with a secular conversation about cooperation, suffering, and how people can live together.",
+              score: 79,
+              critique:
+                "Harris presses the central epistemic issue well. If moral authority depends on a book's divine source, then competing religions can make parallel claims and the source itself needs independent support. His comparison with the Quran makes that parity problem concrete, and his appeal to cooperation and human consequences offers an alternative way to deliberate. The weakness is that he sometimes relies on sweeping descriptions of biblical violence rather than carefully examining the specific texts and interpretive claims Prager raises. That can make a strong challenge sound like a catalogue of objections. The score is high because Harris targets the authority premise and supplies a public alternative, though the textual case would be stronger with more precision and less compression.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Sentience, animals, and moral status",
+        timebox: "18:00-29:10",
+        score: {
+          pro: 74,
+          con: 80
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "18:15",
+              role: "Human special-status case",
+              words:
+                "Prager says human life is sacred because people are made in God's image, then challenges secular ethics to explain why a stranger should be saved before a beloved dog or why human embryos deserve special regard.",
+              score: 74,
+              critique:
+                "Prager usefully tests whether moral seriousness requires recognizing differences in status, vulnerability, and obligation rather than simply maximizing any felt preference. His examples force Harris to say why a human stranger, a dog, a fetus, and a suffering adult should be treated differently. That is a relevant pressure on an ethics of sentience. The weakness is that Prager treats the alleged failure of some students or animal-rights advocates as a verdict on secular ethics itself. A surprising survey answer is not a refutation of a philosophical framework, and divine image language names a ground without resolving its boundaries or public justification. The score is solid because the cases expose real tensions, but the empirical and philosophical inference is too quick.",
+              tags: []
+            },
+            con: {
+              time: "18:40",
+              role: "Flourishing framework",
+              words:
+                "Harris grounds moral concern in the degrees of happiness and suffering possible for conscious creatures, distinguishing a chicken, a dog, an embryo, and a viable fetus by their capacities and wider human consequences.",
+              score: 80,
+              critique:
+                "Harris gives the discussion's most developed positive ethical framework. By asking what a creature can experience, he explains why equal consideration does not mean treating every organism identically, and he brings consequences for families and society into difficult cases. This is more than a bare appeal to personal taste because it identifies shared facts about pain, autonomy, and flourishing. The limitation is that the framework still needs a fuller account of why its facts generate binding duties, especially when interests conflict or when a person rejects the priority of conscious well-being. His handling of abortion also relies on contested judgments about developmental capacity. The score is high because the principles are clear and practically discriminating, while their deepest normative authority remains underdefended.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral progress, meaning, and spiritual experience",
+        timebox: "25:20-32:30",
+        score: {
+          pro: 64,
+          con: 77
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "25:25",
+              role: "Consequences warning",
+              words:
+                "Prager argues that a godless moral system produces moral chaos and has historically failed to identify evil, contrasting secular culture with a stable divine code and warning of gulags and Auschwitz.",
+              score: 64,
+              critique:
+                "Prager is right that moral systems have consequences and that believers and nonbelievers alike should reckon honestly with political atrocities. His demand that ethical views work in public life is a proper part of evaluating them. But the inference is too sweeping. Gulags and Auschwitz arose from specific totalitarian ideologies, institutions, and histories; calling them the result of dropping God does not establish the causal link, especially when religious societies have also enabled grave harms. The argument also leaves Harris's actual ethical realism largely unexamined, substituting a broad warning about secular culture for a comparison of principles. The score is limited because the concern about social order is real, but the historical claim is overgeneralized and does not carry the stated conclusion.",
+              tags: []
+            },
+            con: {
+              time: "30:10",
+              role: "Immanent meaning reply",
+              words:
+                "Harris rejects the idea that atheism makes a person meaningless, saying love and self-transcending spiritual experience can be rationally explored without turning them into claims about the universe's metaphysical structure.",
+              score: 77,
+              critique:
+                "Harris answers a common existential challenge without pretending that science makes life emotionally flat. His distinction between having a powerful experience and inferring a cosmic doctrine from it is careful, and his examples of love, attention, and diminished ego offer a genuine account of why secular life can feel meaningful. The weakness is that he changes the subject somewhat from Prager's question about ultimate purpose to the availability of fulfilling experiences. Meaningful states of consciousness do not by themselves answer whether there is an objective purpose, and Harris does not explain why his preferred vocabulary should settle that issue. The score is strong because he rebuts the charge of inevitable nihilism, but lower because the metaphysical question remains open.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 69,
+        strengths: [
+          "Prager kept pressing the difference between merely having moral feelings and having a ground for binding moral obligations.",
+          "His examples involving animals, embryos, and personal loyalty forced Harris to apply secular principles to difficult cases rather than leaving them abstract.",
+          "He fairly insisted that political and historical consequences matter when assessing a moral worldview."
+        ],
+        blunders: [
+          {
+            text:
+              "He often treated God's moral authority and scripture's divine source as established while relying on those very claims to explain why the moral code binds.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 78,
+        strengths: [
+          "Harris offered a positive secular ethic based on conscious well-being, suffering, cooperation, autonomy, and the different capacities of living beings.",
+          "He repeatedly separated a moving religious or spiritual experience from evidence that a particular sacred text was dictated by the Creator.",
+          "His best answers focused on public reasons and the need to test competing moral and metaphysical claims rather than simply dismissing religious concern."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes calls his flourishing account ethical realism without fully explaining how facts about well-being become objective obligations for someone who rejects that priority.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 ];
