@@ -57035,6 +57035,268 @@ export const debates = [
       }
     }
   },
+  {
+    id: "craig-wielenberg-god-morality-2018",
+    number: "164",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "William Lane Craig vs Erik Wielenberg: God and Morality",
+    label: "Moral realism and divine authority",
+    date: "2026-08-01",
+    duration: "2 hr 21 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=xHhmuqBW6Dw",
+    motion:
+      "What is the best account of objective moral values and duties: the nature and commands of God or godless normative realism?",
+    summary:
+      "Craig defends God as the concrete paradigm of value and ultimate commander; Wielenberg argues that moral features and reasons are fundamental elements of reality requiring no divine foundation.",
+    sourceNote:
+      "Built from the English-original YouTube caption track. Captions were checked against the recorded exchange; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "God's own holy and loving character supplies the absolute standard against which all things are measured",
+        context:
+          "Craig grounds moral value in God's essential nature and treats divine commands, constrained by that nature, as constituting human duties."
+      },
+      con: {
+        text: "We just pick different moral axioms as far as I can tell",
+        context:
+          "Wielenberg argues that every realist theory reaches unexplained normative starting points, so the issue is which proposed axioms best fit moral experience."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theistic moral grounding",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "Godless normative realism",
+        speaker: "Erik Wielenberg",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 71,
+      con: 87
+    },
+    sections: [
+      {
+        title: "God's nature or fundamental moral facts",
+        timebox: "11:44-37:49",
+        score: {
+          pro: 74,
+          con: 86
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "11:44",
+              role: "Divine-paradigm account",
+              words:
+                "Craig identifies God's necessarily loving and holy nature as the concrete paradigm of goodness, making objective value independent of human opinion without positing freestanding moral standards.",
+              score: 74,
+              critique:
+                "Craig offers a unified account: value is grounded in God's essential character, while duties arise from commands necessarily consistent with that character. This avoids a crude arbitrary-command theory and gives the standard a personal bearer capable of acting and relating to moral agents. The difficulty is explanatory. Defining God as the greatest conceivable being may entail goodness within Craig's concept, but it does not establish that such a being exists or explain why the relevant traits are good. Calling God the paradigm can relocate rather than illuminate normativity, especially when “worthy of worship” already contains a normative judgment. Craig is entitled to compare conditional theories without proving God here, yet his claimed advantage depends on the divine hypothesis being credible. The score is solid for coherence but not decisive grounding.",
+              tags: []
+            },
+            con: {
+              time: "35:32",
+              role: "Child-in-flames realism",
+              words:
+                "Wielenberg says the child's agony is bad in itself and that suffering, easy rescue, and available means generate an obligation, just as Craig treats God as good in himself.",
+              score: 86,
+              critique:
+                "Wielenberg starts from a case where both sides share judgments, then asks what theoretical addition best explains them. Treating agony as intrinsically bad and easily preventable suffering as reason-giving fits the apparent content of moral experience more directly than requiring an additional command. His parity point is powerful: Craig also stops with unexplained necessities, including why perfect power enhances greatness and why divine commands provide reasons. Therefore, brute normative structure is not uniquely embarrassing to secular realism. The limitation is that intuitive fit does not demonstrate an ontology of irreducible moral properties, and Wielenberg admits that his axioms merely seem plausible. His causal language about natural features generating moral properties also needs clarification. The score is strong because he neutralizes Craig's exclusivity claim while candidly exposing his own stopping point.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Platonism, supervenience, and explanatory parity",
+        timebox: "14:45-01:08:29",
+        score: {
+          pro: 78,
+          con: 85
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "14:45",
+              role: "Metaphysical-cost objection",
+              words:
+                "Craig portrays Wielenberg's view as an extravagant realm of causally inert abstract objects whose mysterious supervenience on physical situations lacks either agency or a mechanism recognized by physics.",
+              score: 78,
+              critique:
+                "Craig presses a legitimate metaphysical burden. If abstract moral properties are causally isolated, describing physical features as causing their instantiation needs more than an analogy with divine conservation. His questions about why a base situation has one necessary moral property rather than another expose a gap between asserting supervenience and explaining it. He also correctly notes that comparing overall plausibility does not erase an unresolved problem merely because a rival has one. The presentation overreaches by treating unfamiliarity as a presumption that nominalism wins and by counting abstract entities as automatically more extravagant than an omniscient, necessary personal creator. Calling the proposal “voodoo metaphysics” adds rhetoric without argument. The score is good because the objection targets Wielenberg's own causal formulation, though Craig never supplies a neutral measure of theoretical cost.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The absence of a familiar mechanism connecting nonmoral and moral properties is treated as establishing the superior plausibility of Craig's metaphysics."
+                }
+              ]
+            },
+            con: {
+              time: "38:21",
+              role: "Matched-obscurity reply",
+              words:
+                "Wielenberg argues that Craig likewise posits unexplained necessary and causal relations between God, souls, bodies, greatness, commands, and reasons, so obscurity alone supplies no comparative advantage.",
+              score: 85,
+              critique:
+                "Wielenberg keeps the motion comparative. Craig cannot defeat a rival merely by locating explanatory ultimates if divine causation, mind-body interaction, great-making properties, and command-generated reasons also terminate without mechanisms. The appeal to Peter van Inwagen is effective because Craig had invoked the same philosopher's authority against Platonism while overlooking his rejection of substance dualism. Wielenberg further distinguishes causal closure from epiphenomenalism: closure permits mental causation if mental states are constituted by physical states, so Craig's conclusion needs an additional disputed premise. Still, parity is not complete. A theory may reasonably treat personal agency as better understood than property supervenience, and showing both views have brute relations does not show equal number, fit, or cost. The score is strong because the response removes Craig's easy advantage while leaving comparative metaphysics open.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Commands, wrongness, and moral awareness",
+        timebox: "45:38-02:09:32",
+        score: {
+          pro: 67,
+          con: 92
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "52:56",
+              role: "Ultimate-command hierarchy",
+              words:
+                "Craig says general divine commands stand atop a hierarchy of derivative reasons, while an intuitive moral law communicates their content and authority even to people who do not recognize God.",
+              score: 67,
+              critique:
+                "Craig improves on the caricature that God must issue a bespoke command in every emergency. General imperatives can generate derivative duties through promises, harms, roles, and circumstances, much as constitutional rules structure lower-level law. His distinction between evil as contrary to God's nature and wrongness as forbidden clarifies his theory. However, saying moral intuition transmits both a hidden command and its authority is asserted rather than explained. Wielenberg's child-in-flames case still asks why the suffering and easy rescue are insufficient by themselves. Craig's answer that commands enable punishment or reveal a need for salvation appears downstream of wrongness and risks circularity: punishment seems deserved because the act is already evil. The score is mixed because the hierarchy is coherent, but the claimed unique source and communication mechanism remain weakly supported.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The need for a command is defended partly through deserved punishment, although the desert judgment already treats the uncommanded act as morally blameworthy."
+                }
+              ]
+            },
+            con: {
+              time: "45:38",
+              role: "Independent-reasons challenge",
+              words:
+                "Wielenberg argues that agony, effortless rescue, promises, and other features can generate duties; command authority also requires awareness, creating problems for nonbelievers and psychopaths.",
+              score: 92,
+              critique:
+                "Wielenberg attacks divine command theory at its counterintuitive point. If preventing immense suffering at negligible cost is not sufficient for obligation until God commands it, the theory discounts the features moral deliberation appears to track. His analogy with promise-only morality shows why selecting one genuine source as the exclusive ultimate source needs argument. The awareness challenge forces Craig to explain how unknown commands bind, and psychopaths pressure the claim that everyone grasps moral authority. Wielenberg overstates the result as a contradiction: Craig can deny that recognition is necessary for obligation, distinguish incapacity from nonbelief, or accept reduced culpability without eliminating objective duties. His foreknowledge argument assumes command-by-command divine policy rather than stable law. Even with those qualifications, this is the debate's strongest challenge because Craig never establishes command necessity.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Freedom, supererogation, and moral knowledge",
+        timebox: "25:42-01:28:17",
+        score: {
+          pro: 66,
+          con: 84
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "28:14",
+              role: "Agency-and-reliability critique",
+              words:
+                "Craig argues that physical causal closure eliminates libertarian agency and that unguided evolution selects adaptive behavior rather than truth, undermining both ordinary and moral knowledge on naturalism.",
+              score: 66,
+              critique:
+                "Craig identifies two tasks for Wielenberg: explaining responsible agency within physical causal closure and explaining why evolved moral cognition reliably tracks irreducible truths. His supererogation example also reveals pressure on defining obligation as whatever decisive moral reasons support. But the rebuttal repeatedly assumes contested conclusions. Causal closure does not entail that mental states are causally idle if they are realized physically, and property differences do not by themselves refute every identity or realization theory. Likewise, selection for adaptive behavior can favor accurate representation because false beliefs often impair effective navigation; Craig supplies no likelihood comparison showing reliability improbable. His argument also threatens theistic evolutionary faculties unless divine supervision is established. The score is moderate because the challenges deserve answers, but Craig treats incompatibilism, dualism, and Plantinga's first premise as settled.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The evolutionary defeater depends on the disputed premise that adaptive selection is unlikely to produce generally truth-conducive cognition."
+                }
+              ]
+            },
+            con: {
+              time: "01:26:53",
+              role: "Physicalist and empirical reply",
+              words:
+                "Wielenberg says mental states may be physically realized, supererogation can involve exclusionary permissions, and observed cognitive performance outweighs armchair claims that evolution probably produces unreliable believers.",
+              score: 84,
+              critique:
+                "Wielenberg identifies missing premises in Craig's agency argument and refuses to let “physical” mean causally irrelevant by definition. His lighter analogy captures an epistemic point: demonstrated reliability across perception, prediction, and intervention is evidence that cannot be dismissed by a speculative evolutionary story. Exclusionary permissions offer a plausible way for personal projects to make the best act optional rather than obligatory. These replies remain incomplete. Calling mental states physical does not solve consciousness or libertarian freedom, and the empirical reliability invoked is assessed using the faculties under challenge, though that circularity affects foundational epistemology. The proposed permission may also seem added to save supererogation and requires its own weighting rule. The score is strong because Wielenberg exposes Craig's overclaims while providing research programs rather than solutions.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 71,
+        strengths: [
+          "Craig presented a unified distinction between values grounded in God's nature and duties constituted by general commands consistent with that nature.",
+          "He raised substantive questions about Wielenberg's causal account of moral supervenience, theoretical cost, supererogation, agency, and evolutionary moral knowledge.",
+          "His hierarchy of general commands and derivative reasons answered the simplistic picture of a separate divine instruction being required in every moral situation."
+        ],
+        blunders: [
+          {
+            text:
+              "He treated divine commands as the uniquely sufficient source of obligation without showing why suffering, promises, and easily preventable harm cannot themselves generate reasons.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His arguments from physical causal closure and unguided evolution assumed controversial premises about realization, freedom, and cognitive reliability as though they were settled.",
+            links: [
+              {
+                label: "Belief bias",
+                url: bias("belief-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 87,
+        strengths: [
+          "Wielenberg consistently compared the two theories and showed that unexplained normative necessities and obscure relations occur within Craig's account as well as secular realism.",
+          "His child-in-flames example made the practical cost of command exclusivity vivid and kept the debate anchored to shared moral judgments.",
+          "He directly answered Craig's major objections concerning supervenience, physical causation, supererogation, evolutionary reliability, nonbelievers, and psychopaths."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes treated matched explanatory gaps as if they established equal theoretical cost rather than merely preventing an automatic victory for Craig.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His claim that psychopathy creates a contradiction in divine command theory depended on a contestable requirement that obligation itself requires grasping the command's authority.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
