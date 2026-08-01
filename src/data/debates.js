@@ -57559,6 +57559,275 @@ export const debates = [
       }
     }
   },
+  {
+    id: "craig-atkins-does-god-exist-2011",
+    number: "166",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "William Lane Craig vs Peter Atkins: Does God Exist?",
+    label: "Theistic arguments and scientific naturalism",
+    date: "2026-08-01",
+    duration: "1 hr 53 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=Ssq-S5M8wsY",
+    motion: "Does God exist as the transcendent personal cause and moral foundation of reality?",
+    summary:
+      "Craig defends cosmological, moral, and resurrection arguments; Atkins contends that scientific explanation can in principle make the God hypothesis unnecessary.",
+    sourceNote:
+      "Built from the English-original YouTube caption track. Captions were checked against the recorded exchange; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "Out of nothing, nothing comes",
+        context:
+          "Craig argues that a universe with a finite past cannot originate from literal nonbeing without a transcendent cause."
+      },
+      con: {
+        text: "There is nothing in the universe that cannot be explained without invoking that complex hypothesis",
+        context:
+          "Atkins bases his atheism on confidence that scientific explanation can eventually cover every phenomenon without God."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Classical theism",
+        speaker: "William Lane Craig",
+        color: "teal"
+      },
+      con: {
+        name: "Scientific naturalism",
+        speaker: "Peter Atkins",
+        color: "coral"
+      }
+    },
+    score: {
+      pro: 88,
+      con: 61
+    },
+    sections: [
+      {
+        title: "A beginning, nothing, and a transcendent cause",
+        timebox: "04:52-15:42",
+        score: {
+          pro: 91,
+          con: 66
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "13:57",
+              role: "Kalam cosmological case",
+              words:
+                "Craig combines philosophical objections to an actual infinite past with the Borde-Guth-Vilenkin theorem, then infers an uncaused, timeless, immaterial, personal cause.",
+              score: 91,
+              critique:
+                "Craig supplies an explicit valid syllogism and supports its first premise with both philosophical and scientific considerations. His crucial distinction between a quantum vacuum and literal nothing blocks much popular equivocation, and Atkins ultimately concedes that science lacks an account of absolute origination. Craig also explains why a cause of spacetime would not itself be spatial or temporal. The case is not conclusive: the Borde-Guth-Vilenkin result establishes past incompleteness for universes meeting its expansion condition, not by itself creation from nothing, and disputes about actual infinities remain. The final choice between abstract object and unembodied mind is too narrow unless all impersonal causal candidates are excluded. Even so, Craig presents and defends the debate's most developed argument, while Atkins never engages several premises directly.",
+              tags: []
+            },
+            con: {
+              time: "31:29",
+              role: "Scientific-caution response",
+              words:
+                "Atkins says science does not yet know how a universe could arise without intervention, distinguishes daughter universes from absolute beginnings, and urges withholding metaphysical conclusions.",
+              score: 66,
+              critique:
+                "Atkins earns credit for stating “we simply don't know” and for separating a transition within an existing physical reality from an absolute beginning. That caution appropriately resists turning an incomplete cosmological model into theological certainty. He nevertheless grants the central difficulty and offers no account of how literal nonbeing could possess laws, energy, or a transition mechanism. His later claim that positive and negative energy cancel so “nothing exists” confuses a zero net quantity with the absence of entities; a balanced ledger still contains both entries. Possible future physics does not rebut Craig's metaphysical premise, and dismissing philosophy while making claims about nothingness is self-undermining. The score is middling because epistemic restraint is sound, but Atkins's positive alternative remains verbal rather than explanatory.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Atkins shifts between zero net energy and the ontological absence of all things when he describes the universe as an interesting form of nothing."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Promised explanations and theoretical simplicity",
+        timebox: "25:13-01:22:51",
+        score: {
+          pro: 86,
+          con: 58
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "44:23",
+              role: "Explanation-gap rebuttal",
+              words:
+                "Craig argues that confidence in eventual scientific explanation is not evidence and that physical mechanism answers how events unfold without answering why any physical reality exists.",
+              score: 86,
+              critique:
+                "Craig correctly distinguishes successful intracosmic explanations from an explanation of why the physical domain exists at all. A record of scientific progress supports further research, but it does not entail that every metaphysical question has a physical answer. His repeated demand that Atkins address the actual cosmological, moral, and historical arguments exposes the weakness of replacing rebuttal with promissory naturalism. Craig also notes that simplicity cannot be measured merely by calling God complex; classical theism treats God as metaphysically simple, though that doctrine itself needs defense. He occasionally overstates contemporary cosmology and treats the absence of a naturalistic explanation as increasing theism without fully comparing rival priors. Still, his methodological criticism is focused: a forecast of future explanation is not present evidence against the offered inference.",
+              tags: []
+            },
+            con: {
+              time: "28:29",
+              role: "Science-in-prospect thesis",
+              words:
+                "Atkins argues that God is a functionally unbounded and therefore complex hypothesis, whereas science has explained much and can prospectively explain everything without supernatural agency.",
+              score: 58,
+              critique:
+                "Atkins identifies a legitimate theoretical virtue: an explanation that posits an unlimited mind may carry substantial commitments, and “God did it” does not replace a mechanism for ordinary scientific inquiry. His case, however, depends on the universal claim that every feature has or will have a simpler natural explanation. Past success within nature provides no direct base rate for explaining nature's existence, objective normativity, or a singular historical miracle. Calling theology “lazy,” “childish,” and medieval attacks practitioners rather than measuring hypotheses. Worse, Atkins treats an unspecified future discovery as though it were evidence already in hand. The score is low because a reasonable research program is inflated into a conclusion that screens off contrary evidence by definition.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "The prospect that science may eventually explain a phenomenon is used as present support that no divine explanation is needed."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral behavior or objective moral truth",
+        timebox: "15:47-01:14:14",
+        score: {
+          pro: 90,
+          con: 57
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "01:11:58",
+              role: "Ontology-behavior distinction",
+              words:
+                "Craig says atheists can live morally; his claim is instead that evolutionary and social origins do not provide a transcendent foundation for objective, mind-independent duties.",
+              score: 90,
+              critique:
+                "Craig cleanly separates moral epistemology and behavior from moral ontology. Atkins's personal decency is fully compatible with Craig's premise that objective duties require a foundation beyond human attitudes. By quoting Atkins's evolutionary account, Craig shows that describing how cooperative dispositions arose does not establish that their content is objectively binding; an adaptive belief can still be false. His appeal to obvious moral experience supports realism, though the further inference to God needs more work because secular moral realism remains a live alternative. Craig also assumes rather than demonstrates that only a personal divine nature can ground value and obligation. Nevertheless, within this exchange he identifies Atkins's category mistake immediately and restates both premises, while Atkins never develops an independent account of objective normativity.",
+              tags: []
+            },
+            con: {
+              time: "01:03:30",
+              role: "Evolutionary morality account",
+              words:
+                "Atkins calls it disgusting to say a person cannot be moral without God and traces moral conduct to survival, empathy, foresight, anthropology, psychology, and social stability.",
+              score: 57,
+              critique:
+                "Atkins gives a plausible sketch of how moral capacities and cooperative norms could develop through biological and cultural evolution. That is relevant to why humans make moral judgments and undermines claims that belief is required for decent conduct. But Craig never made that claim. He explicitly argued about the existence of mind-independent values, not whether atheists can recognize or follow them. Atkins therefore answers an easier, emotionally charged proposition and leaves the grounding premise untouched. His appeal to consequences may support prudential or contractual norms, yet it does not explain why an individual ought to sacrifice when exploitation better serves survival. The score is low because the descriptive genealogy has value, but it is repeatedly substituted for the normative question actually posed.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "The response shifts from whether objective morality exists without God to whether an atheist can behave morally."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Resurrection evidence and miracle probability",
+        timebox: "20:09-01:16:41",
+        score: {
+          pro: 85,
+          con: 63
+        },
+        exchanges: [
+          {
+            pro: {
+              time: "21:22",
+              role: "Minimal-facts inference",
+              words:
+                "Craig cites the empty tomb, postmortem appearance experiences, and the disciples' sudden resurrection belief, then argues that resurrection best explains their conjunction.",
+              score: 85,
+              critique:
+                "Craig presents identifiable historical claims rather than treating resurrection as bare faith. He cites hostile as well as sympathetic scholars, distinguishes facts from their proposed explanation, and later frames miracle probability using both prior background and the likelihood of the evidence. That directly answers a simplistic appeal to extraordinary improbability. The weaknesses are significant: scholarly agreement is not uniform, the empty tomb is less secure than appearance experiences, and Craig moves too quickly from rivals being individually weak to resurrection being best. A full Bayesian comparison needs priors and dependence among sources, while theism established by earlier arguments cannot simply be assumed. The score remains strong because Atkins offers no detailed source analysis and Craig at least supplies a structured abductive case responsive to the motion.",
+              tags: []
+            },
+            con: {
+              time: "39:24",
+              role: "Extraordinary-evidence objection",
+              words:
+                "Atkins calls resurrection a fabrication, labels the Gospels late propaganda, and lists coma, cover-up, and mistaken-tomb possibilities as more cogent than divine intervention.",
+              score: 63,
+              critique:
+                "Atkins correctly insists that a low-prior event requires unusually discriminating evidence, and he notes that sincere testimony alone cannot establish a suspension of natural law. Alternative hypotheses must indeed be compared before accepting resurrection. Yet he merely lists coma, conspiracy, and wrong-tomb stories without testing them against the death, appearance, and belief data Craig specifies. Calling the Gospels wholly unreliable propaganda is asserted wholesale, and the early Pauline material is ignored. His statement that no miracle has ever occurred also assumes the conclusion while evaluating the principal alleged case. The score is below average because the evidential standard is sound, but Atkins substitutes confident dismissal and possible stories for a comparative historical explanation.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The resurrection is rejected partly through the blanket premise that no miracle has ever occurred, although this event is the disputed candidate."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 88,
+        strengths: [
+          "Craig offered three explicit arguments and repeatedly returned the discussion to their premises rather than relying on general religious affirmation.",
+          "He distinguished literal nothing from a quantum or zero-net-energy physical state and moral ontology from atheist moral behavior.",
+          "His resurrection case identified concrete historical data and answered the extraordinary-evidence objection with a comparative probability framework."
+        ],
+        blunders: [
+          {
+            text:
+              "He treated the Borde-Guth-Vilenkin result too readily as confirmation of an absolute beginning rather than conditional past incompleteness.",
+            links: [
+              {
+                label: "Authority bias",
+                url: bias("authority-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His path from a transcendent cause to an unembodied personal mind excluded impersonal alternatives faster than the premises warranted.",
+            links: [
+              {
+                label: "Belief bias",
+                url: bias("belief-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 61,
+        strengths: [
+          "Atkins candidly acknowledged that he could not disprove God and that science lacks a current account of absolute cosmic origination.",
+          "He emphasized theoretical simplicity, methodological caution, and the need to compare natural alternatives before accepting miracles.",
+          "His evolutionary account plausibly addressed the development of moral psychology and cooperative behavior."
+        ],
+        blunders: [
+          {
+            text:
+              "He treated confidence in future scientific explanations as current evidence that every theistic inference is unnecessary.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "He repeatedly answered the claim that atheists cannot behave morally even after Craig clarified that his argument concerned objective moral grounding.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
