@@ -1160,7 +1160,7 @@ function renderRankings() {
       <section class="rankings-hero">
         <div>
           <p class="eyebrow">Published score averages</p>
-          <h1>Interlocutor rankings</h1>
+          <h1>Flags & Rankings</h1>
           <p class="rankings-lede">Rank speakers by their published overall scores, with the context to compare topics, sample size, and opponents faced.</p>
         </div>
         <aside class="rankings-summary" aria-label="Rankings summary">

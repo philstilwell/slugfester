@@ -337,15 +337,15 @@ export function topicsSeo(debates = []) {
 }
 
 export function rankingsSeo(debates = [], rankedInterlocutorCount = 0) {
-  const description = `Compare average overall debate scores for ${rankedInterlocutorCount || "qualifying"} Slugfester interlocutors with at least three appearances across ${debates.length} scorecards.`;
+  const description = `Compare average overall debate scores for ${rankedInterlocutorCount || "qualifying"} Slugfester interlocutors and topic-level reasoning flags across ${debates.length} scorecards.`;
 
   return {
-    title: pageTitle("Interlocutor rankings"),
+    title: pageTitle("Flags & Rankings"),
     description,
     canonicalPath: rankingsPath(),
     lastmod: SITE_UPDATED_DATE,
     imagePath: DEFAULT_IMAGE,
-    imageAlt: "Slugfester interlocutor rankings by average debate score.",
+    imageAlt: "Slugfester flags and rankings for debate scorecards.",
     type: "website",
     jsonLd: [
       organizationJsonLd(),
@@ -353,7 +353,7 @@ export function rankingsSeo(debates = [], rankedInterlocutorCount = 0) {
       {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        name: "Slugfester interlocutor rankings",
+        name: "Slugfester Flags & Rankings",
         description,
         url: absoluteUrl(rankingsPath()),
         isPartOf: {

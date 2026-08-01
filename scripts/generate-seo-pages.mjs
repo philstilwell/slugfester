@@ -35,7 +35,7 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260731-rankings-reasoning-flags";
+const assetVersion = "20260731-flags-rankings-title";
 const cloudflareWebAnalytics =
   "<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{\"token\": \"05c16e0e536340d0a1e0fdcaa6451389\"}'></script><!-- End Cloudflare Web Analytics -->";
 
@@ -245,7 +245,7 @@ addPage(
 addPage(
   rankingsPath(),
   rankingsSeo(debates),
-  "Compare Slugfester interlocutors by their average overall score across at least three debate appearances."
+  "Compare Slugfester interlocutor scores and topic-level reasoning flags across published debate assessments."
 );
 
 addPage(
