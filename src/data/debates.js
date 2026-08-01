@@ -59924,6 +59924,237 @@ export const debates = [
       }
     }
   },
+  {
+    id: "oppy-pearce-is-there-a-god-2022",
+    number: "175",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Graham Oppy vs Kenny Pearce: Is There a God?",
+    label: "Theism and naturalistic explanation",
+    date: "2026-08-01",
+    duration: "1 hr 21 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=SyhMlwsQuqc",
+    motion:
+      "Does theism offer a better overall explanation of reality than naturalism?",
+    summary:
+      "Pearce argues that God's free grounding explains contingent causal history and religious experience; Oppy contends that naturalism matches the explanatory work more simply and that experience is too interpretation-dependent to decide the comparison.",
+    sourceNote:
+      "Built from the English-original YouTube caption track supplied with Dustin Crummett's recorded discussion of Oppy and Pearce's debate book. Analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "we need a non-causal explanation of history",
+        context:
+          "Pearce argues that the total causal sequence cannot be explained by another member of that sequence and instead requires a noncausal, nonnecessitating ground."
+      },
+      con: {
+        text: "adding in God would lead to an improvement",
+        context:
+          "Oppy frames the test comparatively: naturalism loses only if some datum is explained better after God is added to the worldview."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Theism",
+        speaker: "Kenny Pearce",
+        color: "teal"
+      },
+      con: {
+        name: "Naturalism",
+        speaker: "Graham Oppy",
+        color: "coral"
+      }
+    },
+    score: { pro: 88, con: 91 },
+    sections: [
+      {
+        title: "Comparing whole worldviews",
+        timebox: "02:40-11:25",
+        score: { pro: 87, con: 93 },
+        exchanges: [
+          {
+            pro: {
+              time: "08:04",
+              role: "Power-and-simplicity framework",
+              words:
+                "Pearce summarizes the comparison through explanatory power and simplicity, granting that a naturalism matching every datum more simply would dominate theism.",
+              score: 87,
+              critique:
+                "Pearce establishes a fair shared standard rather than protecting theism with a special evidential rule. Explanatory coverage and theoretical simplicity are recognizable virtues, and his willingness to concede naturalism's victory if it genuinely matches the data keeps the inquiry comparative. He also notes that reasonable judgments may differ, which fits the underdetermination of large metaphysical theories. The framework remains underspecified, however. Simplicity can mean fewer entities, fewer fundamental kinds, shorter laws, or greater unification; theism may score differently on each. Nor is there an agreed inventory of data or a weighting rule when elegance conflicts with fit. The score is strong because Pearce makes the dialectic explicit, but later disagreements partly inherit ambiguities that this opening framework leaves unresolved.",
+              tags: []
+            },
+            con: {
+              time: "03:37",
+              role: "Naturalistic parity strategy",
+              words:
+                "Oppy presents a near-naturalistic worldview intended to show that every proposed datum can be accommodated without God, leaving naturalism with the simpler total theory.",
+              score: 93,
+              critique:
+                "Oppy's strategy is methodologically powerful. Instead of trading isolated proofs, he specifies a worldview and asks where adding God improves its explanation. He also allows alternative naturalistic choices about beginnings or infinite regress, refusing to make atheism depend on speculative cosmology. This correctly shifts the burden from mere compatibility to comparative gain. The risk is excessive flexibility: if naturalism may select whichever fundamental structure best meets each challenge, it can become a family of options rather than one theory paying a fixed cost. Oppy also announces that his view handles mind and value without developing those accounts here, so some claimed parity rests on material outside the recording. Even so, the comparative discipline is excellent and prevents a local mystery from automatically becoming evidence for theism.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Contingent history and divine grounding",
+        timebox: "11:25-30:30",
+        score: { pro: 93, con: 90 },
+        exchanges: [
+          {
+            pro: {
+              time: "15:03",
+              role: "Total-history argument",
+              words:
+                "Pearce defines History as every causal transaction, argues that no member can explain the whole without circularity, and proposes God's free choice as a noncausal, nonnecessitating ground.",
+              score: 93,
+              critique:
+                "Pearce's refinement is the dialogue's strongest constructive argument. Moving from “why are there contingent things?” to the complete causal history blocks the easy reply that an initial physical state causes everything later, because that initial state and its effects are already inside the totality. If History could have differed, a necessitating explanation is also insufficient. A free divine grounding relation is then a genuine candidate with the requested logical shape. The remaining gap is the principle that History must have an explanation at all; familiar events having causes does not straightforwardly license explanation of the maximal totality. Grounding by a choice also needs clarification if choices ordinarily belong to causal histories. Still, Pearce identifies a precise explanatory mismatch rather than merely naming God at an unknown boundary.",
+              tags: []
+            },
+            con: {
+              time: "22:45",
+              role: "Naturalistic-duplicate reply",
+              words:
+                "Oppy argues that a fundamental natural reality can occupy the same explanatory stopping point and asks why divine necessity is less brute than natural necessity.",
+              score: 90,
+              critique:
+                "Oppy's symmetry test is important: both views eventually posit fundamental reality, so merely calling one terminus necessary or explanatory does not yet make it superior. He presses Pearce to explain God's necessity rather than grant it while refusing comparable status to a physical base. This blocks a facile cosmological argument. Yet the reply does not fully duplicate Pearce's target. A necessarily existing initial state may explain later events while still necessitating one History, whereas Pearce seeks a free ground explaining why this contingent totality obtains. Oppy can reject the demand for that kind of explanation, but then the dispute concerns explanatory principles rather than equal mechanisms. His critique successfully exposes a potential double standard, though Pearce retains a distinctive candidate if noncausal, nonnecessitating explanation is legitimate and required.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Necessary reality, essence, and Spinozism",
+        timebox: "29:28-47:11",
+        score: { pro: 88, con: 92 },
+        exchanges: [
+          {
+            pro: {
+              time: "46:13",
+              role: "Essential-necessity proposals",
+              words:
+                "Pearce cites perfect-being, unlimited-being, pure-act, and pure-being accounts as candidate essences that may explain why God necessarily exists rather than leaving necessity brute.",
+              score: 88,
+              critique:
+                "Pearce correctly recognizes that labeling God necessary cannot be the end of the argument. Offering competing accounts of divine essence—perfection, limitlessness, pure act, or pure being—at least indicates how the necessity claim might receive a metaphysical explanation. He also avoids pretending that an ontological definition alone proves existence. The weakness is that listing candidates is not yet showing that any is coherent, uniquely instantiated, or entails necessary existence without definition-loading. A concept can include existence while failing to be possibly exemplified, and the classical attributes may generate tensions among simplicity, freedom, knowledge, and personality. Pearce presents a research program capable of answering Oppy's challenge, not its completed answer. That is philosophically serious, but it leaves the comparative advantage conditional on substantial further argument.",
+              tags: []
+            },
+            con: {
+              time: "43:22",
+              role: "Collapse and classification challenge",
+              words:
+                "Oppy argues that broadly classical theism risks collapsing into Spinozism and asks whether an impersonal necessary ground is importantly distinct from a version of naturalism.",
+              score: 92,
+              critique:
+                "Oppy exposes a real pressure within Pearce's solution. The more divine nature necessitates its existence, simplicity, and rational action, the harder it becomes to preserve libertarian creation of one contingent History rather than another. If the resulting ultimate is impersonal God-or-Nature, the disagreement with naturalism may become classificatory rather than explanatory. This is a sharp test of whether the proposed ground can be both necessary and freely differentiating. Oppy does not prove collapse, and Spinoza's mentality or normativity might still distinguish his view from physical naturalism. Nor does ambiguity at a border erase every substantive contrast. Nevertheless, Pearce's survey of possible divine essences never supplies a worked model avoiding the tension. Oppy's objection therefore weakens the claimed unique fit between classical theism and nonnecessitating explanation.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Religious experience, disagreement, and hiddenness",
+        timebox: "47:11-1:20:13",
+        score: { pro: 85, con: 91 },
+        exchanges: [
+          {
+            pro: {
+              time: "53:36",
+              role: "Broad experiential evidence",
+              words:
+                "Pearce treats religious experience broadly, distinguishes mundane from extraordinary cases, and argues that practice-conditioned experience need not be epistemically defective merely because it is cultivated.",
+              score: 85,
+              critique:
+                "Pearce usefully rejects two crude filters. Evidence need not be spectacular, and cultivated observation is not automatically unreliable—scientists also train, prepare apparatus, and learn interpretive practices. His inclusion of unsought experiences that redirect figures such as Paul or Muhammad prevents the account from reducing everything to expectation. He also advises limited rather than absolute privilege for one's own tradition. The evidential problem remains severe: defining ordinary worship, communal belonging, or interpreted feeling as experience of God enlarges the dataset partly by relabeling ambiguous states. Rival traditions generate incompatible interpretations, and no independent calibration comparable to successful sensory science is established. Pearce offers a sophisticated permissive epistemology, but it better explains why belief may be personally rational than why theism is objectively the superior worldview.",
+              tags: [
+                {
+                  label: "Subjective validation",
+                  type: "bias",
+                  url: bias("subjective-validation"),
+                  context:
+                    "Ambiguous feelings and communal practices risk being counted as divine contact because they are already interpreted within a theistic framework."
+                }
+              ]
+            },
+            con: {
+              time: "58:01",
+              role: "Absence-and-reliability challenge",
+              words:
+                "Oppy balances reported presence with experiences of divine absence, emphasizing disagreement, culturally variable interpretation, and the lack of an independent reliability story.",
+              score: 91,
+              critique:
+                "Oppy's best move is evidential symmetry. If felt presence supports God, profound experiences of absence—especially amid extreme suffering—cannot simply be excluded from the ledger. He then asks which worldview more simply explains when human faculties generate these states and why their interpretations track inherited traditions. That comparative framing is stronger than assuming every experience false in advance. His own autobiographical nonreligious reactions carry little weight by themselves, and absence of experience is not always experience of absence. A perfectly loving God could also pursue goods other than uniform doctrinal assent, as Pearce notes. Even with those qualifications, the diversity and malleability of reports reduce their force as public evidence. Oppy successfully distinguishes understandable first-person trust from a dataset that discriminates reliably between theism and naturalism.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 88,
+        strengths: [
+          "Pearce sharpened contingency into a question about the complete causal History and specified the unusual form its explanation would require.",
+          "He treated divine grounding and necessary essence as substantive metaphysical proposals rather than a bare appeal to mystery.",
+          "His religious-experience case acknowledged cultivation, varying evidential weight, and peer disagreement instead of relying on spectacular testimony alone."
+        ],
+        blunders: [
+          {
+            text:
+              "The claim that every contingent totality requires explanation was more assumed than defended, even though Oppy's naturalism can reject it.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "Broadening religious experience to mundane interpreted states increased the data partly through the categories already supplied by theism.",
+            links: [
+              {
+                label: "Subjective validation",
+                url: bias("subjective-validation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 91,
+        strengths: [
+          "Oppy consistently required theism to improve on a naturalistic worldview rather than merely remain compatible with the evidence.",
+          "His symmetry tests exposed brute necessity and explanatory stopping points on both sides of the comparison.",
+          "He integrated experiences of absence, religious diversity, and interpretation-dependence into a stronger public-evidence challenge."
+        ],
+        blunders: [
+          {
+            text:
+              "His flexible family of naturalistic starting points sometimes avoided paying the theoretical costs of one fully specified worldview.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "He did not completely duplicate Pearce's proposed noncausal, nonnecessitating explanation of the total causal History.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
