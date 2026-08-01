@@ -60698,6 +60698,275 @@ export const debates = [
       }
     }
   },
+  {
+    id: "ehrman-licona-who-wrote-gospels-2025",
+    number: "178",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Bart Ehrman vs Michael Licona: Who Wrote the Gospels?",
+    label: "Authorship of the canonical Gospels",
+    date: "2026-08-01",
+    duration: "2 hr 20 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=xTCPigOQabY",
+    motion:
+      "Were the canonical Gospels written by, or under the authority of, Matthew, Mark, Luke, and John?",
+    summary:
+      "Licona combines early church testimony with internal fit for traditional authorship; Ehrman argues that anonymous Greek works received names later and that the proposed apostolic authors lacked the required education.",
+    sourceNote:
+      "Built from the English caption track for the November 20, 2025 Sound Faith debate in Boston. The improved-audio upload includes formal openings, rebuttals, cross-examination, closings, and audience questions.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "the unanimous testimony of the early Christians",
+        context:
+          "Licona argues that geographically dispersed second-century writers converge on the same four attributions without preserving rival author names."
+      },
+      con: {
+        text: "They were circulated anonymously",
+        context:
+          "Ehrman stresses that the narratives do not identify their authors and that explicit, verifiable fourfold attribution appears only around the 180s."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Traditional authorship",
+        speaker: "Michael Licona",
+        color: "teal"
+      },
+      con: {
+        name: "Anonymous later authorship",
+        speaker: "Bart Ehrman",
+        color: "coral"
+      }
+    },
+    score: { pro: 89, con: 92 },
+    sections: [
+      {
+        title: "Papias, Justin, and Irenaeus",
+        timebox: "08:57-30:59",
+        score: { pro: 93, con: 94 },
+        exchanges: [
+          {
+            pro: {
+              time: "09:30",
+              role: "Early-testimony chain",
+              words:
+                "Licona traces Papias's report about Mark and Peter, Justin's apostolic memoirs, and Irenaeus through Polycarp to argue that attribution rests on living memory rather than late guesswork.",
+              score: 93,
+              critique:
+                "Licona assembles the strongest version of the external case. Papias claims access to companions of disciples and specifically links Mark with Peter; Justin knows material distinctive to the canonical Gospels; Irenaeus names all four and reports hearing Polycarp recall John. This is not evidence appearing from nowhere in 185. The absence of rival names adds weight, especially for the less prestigious Mark and Luke. However, each link needs identification: Papias does not quote his Mark, describes a Semitic Matthew unlike the extant Greek narrative, and Justin never names Matthew, Mark, Luke, or John. Irenaeus may transmit an earlier memory, but the chain cannot be independently checked. Licona presents genuine cumulative testimony, though he sometimes counts allusions and later agreement as more independent than the record establishes.",
+              tags: []
+            },
+            con: {
+              time: "27:46",
+              role: "Identification-gap rebuttal",
+              words:
+                "Ehrman argues that Papias's Matthew does not match the extant Greek Gospel, Papias never quotes his Mark, and Justin cites unnamed memoirs before explicit fourfold attribution appears around 185.",
+              score: 94,
+              critique:
+                "Ehrman targets the weakest inferential link rather than denying that early testimony exists. A sayings collection in Hebrew or Aramaic is not naturally the Greek narrative that copies Mark, and without a quotation Papias's Mark cannot be securely identified. Justin's failure to use the familiar four names despite frequent Gospel citation is evidence that those labels were not yet standard in his circle. Dating the first verifiable attribution to Irenaeus is therefore defensible. Ehrman occasionally speaks of a full century of anonymous circulation as though absence from surviving mentions proves absence everywhere; titles or local traditions could have existed unrecorded. Later writers may also preserve independent earlier information despite chronological proximity. Still, his source-by-source discrimination is sharper than treating all six witnesses as direct attestations to the same four books.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Anonymous texts, titles, and rival names",
+        timebox: "25:34-47:56",
+        score: { pro: 91, con: 90 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:34:21",
+              role: "Unanimity-without-rivals argument",
+              words:
+                "Licona asks why six sources from different regions converge on four supposedly wrong names while no manuscript or ancient author preserves a competing attribution.",
+              score: 91,
+              critique:
+                "Licona identifies an important likelihood ratio. If four anonymous works circulated widely for decades, independent local guesses might produce prestigious apostles, multiple names, or explicit disputes. Stable attribution to two apostles and two relatively minor associates is more expected if the names preserve real memory. The argument also gains from every surviving titled manuscript agreeing. But geographic spread after a common naming event does not create independent evidence; once influential Roman or Asian networks standardized a canon, downstream unanimity is predictable even if the labels began as educated guesses. Anonymous ancient works can acquire conventional authorship. The absence of rivals remains significant, but the sparse record makes expected dissent difficult to quantify. Licona establishes that traditional names are not arbitrary, though not that convergence must trace to the authors themselves.",
+              tags: []
+            },
+            con: {
+              time: "31:50",
+              role: "Post-standardization explanation",
+              words:
+                "Ehrman notes that surviving manuscript titles postdate known fourfold attribution and argues that agreement after an influential naming convention does not independently verify the names.",
+              score: 90,
+              critique:
+                "Ehrman correctly distinguishes manuscript evidence from author signatures. The extant titles appear after the period when Irenaeus and others already use the four names, so their unanimity can reflect standardization rather than four independent memories. “According to Matthew” is also a third-person attribution, not internal self-identification. His proposed Roman convergence around the 180s is plausible because Irenaeus was educated there and the Muratorian list likely arose there. Yet it remains a reconstruction with no surviving decree, editorial event, or source confessing invention. It also does not explain why Mark and Luke were chosen or why no prior rival surfaced. Ehrman neutralizes the strongest reading of manuscript unanimity but offers less positive evidence for the specific naming mechanism than Licona offers for inherited tradition.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Education, Greek composition, and secretaries",
+        timebox: "31:10-1:00:36",
+        score: { pro: 84, con: 96 },
+        exchanges: [
+          {
+            pro: {
+              time: "57:33",
+              role: "Amanuensis and later-learning reply",
+              words:
+                "Licona concedes that Matthew and John may not have composed polished Greek unaided but proposes later education, translators, secretaries, or supervised teams as ordinary ancient solutions.",
+              score: 84,
+              critique:
+                "Licona properly separates authorship authority from personally holding the pen. Paul used secretaries, ancient elites dictated works, and an eyewitness could supervise a literate collaborator. Decades between Jesus' ministry and composition also create some opportunity for language learning. These possibilities prevent Ehrman's literacy statistics from deductively excluding traditional involvement. The difficulty is evidential specificity. Paul names or displays his amanuensis relationship, whereas the Gospels do not identify a dictating apostle or collaborative team. Advanced Greek narrative and scriptural composition require much more than conversational bilingualism, and adult rhetorical training for Galilean laborers is not documented. Licona multiplies auxiliary routes differently for each Gospel, especially Matthew and John, after granting Ehrman's social profile. His reply preserves possibility but does not make traditional composition the most probable model.",
+              tags: [
+                {
+                  label: "Argument from ignorance",
+                  type: "fallacy",
+                  url: fallacy("argument-from-ignorance"),
+                  context:
+                    "Possible undocumented secretaries or later education are asked to offset strong evidence about the authors' likely training."
+                }
+              ]
+            },
+            con: {
+              time: "35:38",
+              role: "Ancient-education base-rate case",
+              words:
+                "Ehrman argues from research on ancient schooling that polished Greek narrative composition required years of elite education unavailable to Aramaic-speaking rural disciples, with Acts calling Peter and John unlettered.",
+              score: 96,
+              critique:
+                "Ehrman supplies the debate's strongest base-rate argument. He distinguishes recognizing letters, copying, conversational Greek, and composing an extended literary narrative—skills too often collapsed under “bilingual.” He then connects educational stages, wealth, urban access, and Palestinian literacy studies to the specific social location of Jesus' disciples. Acts 4:13 provides an early Christian description of Peter and John as unlettered, reinforcing the external sociology. Exceptions are possible, and Matthew's tax work might imply more numeracy or language exposure than day labor. A secretary could translate testimony without the disciple composing Greek. Yet that concession changes the traditional claim into source or supervisory involvement and requires evidence. Ehrman makes anonymous educated Greek authors much more probable than direct apostolic composition, particularly for Matthew and John.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Internal fingerprints in Mark, Luke, John, and Matthew",
+        timebox: "16:13-1:32:59",
+        score: { pro: 88, con: 92 },
+        exchanges: [
+          {
+            pro: {
+              time: "16:13",
+              role: "Four-Gospel internal fit",
+              words:
+                "Licona cites Peter's prominence and Aramaic sayings in Mark, the “we” passages in Acts, beloved-disciple testimony in John, and tax vocabulary in Matthew as convergent fingerprints.",
+              score: 88,
+              critique:
+                "Licona's internal case is cumulative and often suggestive. Peter's remarkable narrative prominence fits Petrine reminiscence; the Acts travel sections fit a companion source; John's precision and beloved-disciple claim indicate eyewitness material; and Matthew's Jewish texture fits an insider. These details make the traditional attributions intelligible rather than random. Several links, however, are weak identifiers. A protagonist's prominence does not identify the narrator's source, Aramaic phrases can be inherited traditions, and any educated Jewish author can discuss taxes or coins. Most seriously, John 21 says “we know that his testimony is true,” naturally distinguishing a validating authorial group from the beloved disciple. Licona's evidence supports access to early or eyewitness-informed material more securely than it identifies the final writers. Matthew's alleged oversight of a Greek team is especially speculative.",
+              tags: []
+            },
+            con: {
+              time: "1:30:54",
+              role: "Source-versus-author distinction",
+              words:
+                "Ehrman argues that Peter's centrality does not make Peter Mark's source and that John's validating “we” differentiates the Gospel's authorial voice from the beloved disciple whose testimony it endorses.",
+              score: 92,
+              critique:
+                "Ehrman repeatedly enforces the crucial distinction between a work containing eyewitness tradition and being written by that eyewitness or named associate. Biographers center subjects and principal characters without receiving their dictation. John 21's shift from “this disciple” and “his testimony” to “we know” is strong grammatical evidence for an authorial group validating another person's witness. Ehrman can overread that verse: communal attestation might appear in a work substantially authored by the disciple and later endorsed or edited. Likewise, Peter's Markan prominence is not irrelevant; it modestly favors a Petrine source when paired with Papias. But Licona's individual fingerprints rarely discriminate among direct authorship, supervised composition, source use, and later informed narration. Ehrman's alternative categories therefore explain the same internal features with fewer identity-specific assumptions.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Synoptic dependence and Matthew's authorship",
+        timebox: "21:18-2:19:36",
+        score: { pro: 79, con: 94 },
+        exchanges: [
+          {
+            pro: {
+              time: "2:11:53",
+              role: "Matthew-supervision reconstruction",
+              words:
+                "Licona proposes that Matthew first composed Semitic material, later supervised a Greek Gospel using Mark as a guide, lightly edited it, and added his own traditions.",
+              score: 79,
+              critique:
+                "Licona deserves credit for confronting rather than denying the linguistic and Synoptic evidence. His model can reconcile Papias's Semitic Matthew with the extant Greek work's verbatim dependence on Mark, and ancient collaborative authorship makes supervision conceptually possible. It also explains why a firsthand participant might reuse an already organized Greek narrative. But the reconstruction accumulates unseen entities: a lost Semitic work, later Matthew-led team, secretarial Greek competence, and selective dependence, none explicitly attested. The surviving Gospel refers to Matthew in the third person and even follows Mark's version of his call, which is surprising if Matthew controlled the final form. This is possible history assembled to save multiple data points, not the simplest inference from them. The score falls because each repair reduces the attribution's predictive force.",
+              tags: [
+                {
+                  label: "Special pleading",
+                  type: "fallacy",
+                  url: fallacy("special-pleading"),
+                  context:
+                    "A series of unattested auxiliary stages is introduced specifically to preserve Matthew's involvement despite contrary linguistic and literary evidence."
+                }
+              ]
+            },
+            con: {
+              time: "28:56",
+              role: "Wrong-Matthew and copied-call argument",
+              words:
+                "Ehrman argues that Papias's sayings in Hebrew are not the extant Greek narrative and that its author copies Mark's third-person account of Matthew rather than writing as the called disciple.",
+              score: 94,
+              critique:
+                "Ehrman brings several pressures to bear. The extant Matthew is a Greek narrative, not a translation or sayings collection; it copies large portions of Greek Mark verbatim; and its self-referential opportunity remains third person, following another author's account. These features are more expected if an anonymous Greek Christian used Mark than if the tax collector narrated his own call. Ehrman also clarifies his potentially confusing convention: scholars call the unknown author “Matthew” without identifying him with the disciple. Licona can preserve apostolic supervision, but that claim becomes difficult to falsify once direct composition, language, and genre are surrendered. Ehrman's assertion that Matthew could not write Greek depends on social probabilities, not biographical certainty, yet the literary dependence makes the cumulative case unusually strong. He wins the most contested Gospel decisively.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 89,
+        strengths: [
+          "Licona built a cumulative external case from Papias, Justin, Irenaeus, Polycarp, the Muratorian list, and the absence of competing names.",
+          "He showed that the traditional attributions make several internal patterns intelligible and that eyewitness-source material remains historically plausible.",
+          "He treated ancient secretaries and collaborative authorship as legitimate possibilities rather than assuming the named figure personally penned every Greek sentence."
+        ],
+        blunders: [
+          {
+            text:
+              "His Matthew model accumulated a lost Semitic source, later supervision, a Greek team, and Markan dependence without direct attestation.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "He often treated details consistent with a named source as though they identified that source over several equally compatible alternatives.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 92,
+        strengths: [
+          "Ehrman distinguished unnamed early citations from explicit, verifiable attributions and identified the evidential gap between them.",
+          "His ancient-education evidence made direct Greek composition by the Galilean disciples substantially less probable.",
+          "He consistently separated eyewitness source access from final authorship and applied that distinction to Mark, John, Luke-Acts, and Matthew.",
+          "The Greek Matthew's dependence on Mark and third-person call narrative gave him a particularly strong text-specific case."
+        ],
+        blunders: [
+          {
+            text:
+              "He sometimes described a century of anonymous circulation more confidently than silence in the surviving evidence can establish.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "His Roman standardization hypothesis explained later unanimity plausibly but remained an unattested reconstruction of the naming event.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
