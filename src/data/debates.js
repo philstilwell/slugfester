@@ -62103,6 +62103,260 @@ export const debates = [
       }
     }
   },
+  {
+    id: "enoch-clarke-doane-moral-realism-objectivity-2026",
+    number: "183",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "David Enoch vs Justin Clarke-Doane: Moral Realism and Objectivity",
+    label: "Moral realism and normative objectivity",
+    date: "2026-08-01",
+    duration: "1 hr 10 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=2WrywAaDvvw",
+    motion:
+      "Can stance-independent moral facts genuinely vindicate normative objectivity by settling what agents should do?",
+    summary:
+      "Enoch defends robust moral facts as the default explanation of objective practice; Clarke-Doane argues that even privileged facts leave an intelligible question about which normative standard to follow.",
+    sourceNote:
+      "Built from the English-original YouTube caption track. Captions were checked against the recording and lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "realism becomes the default position",
+        context:
+          "Enoch argues that once ordinary moral objectivity is granted, robust realism needs rejection rather than an independent reconstruction."
+      },
+      con: {
+        text: "that's not what we want",
+        context:
+          "Clarke-Doane grants that realism may be easy to obtain while denying that it delivers the action-guiding objectivity at issue."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Robust moral realism vindicates objectivity",
+        speaker: "David Enoch",
+        color: "teal"
+      },
+      con: {
+        name: "Realism does not uniquely settle action",
+        speaker: "Justin Clarke-Doane",
+        color: "coral"
+      }
+    },
+    score: { pro: 89, con: 93 },
+    sections: [
+      {
+        title: "Common-sense objectivity and the realist default",
+        timebox: "1:19-9:10",
+        score: { pro: 92, con: 94 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:32",
+              role: "Default-realist argument",
+              words:
+                "Enoch says ordinary claims such as the wrongness of humiliation purport to be true independently of convention, desire, or social practice, making realism the view to beat.",
+              score: 92,
+              critique:
+                "Enoch begins from an accurately described feature of moral discourse: speakers ordinarily distinguish being wrong from being disapproved and treat some judgments as true despite contrary conventions. He carefully says this is not yet his full non-natural realism, then assigns anti-realists the burden of preserving or explaining away that objectivity. The move has conservative force but is not neutral. Surface grammar and phenomenology can establish what practice purports to do without establishing what exists, just as other domains can contain systematic projection. Calling realism the default therefore depends on a methodological presumption in favor of appearances. Enoch supplements it with deliberative indispensability, but the analogy to electrons requires more defense because normative posits guide rather than causally explain. Strong framing, not a completed ontology.",
+              tags: []
+            },
+            con: {
+              time: "5:18",
+              role: "Realism-objectivity distinction",
+              words:
+                "Clarke-Doane grants mind-independent and even metaphysically privileged moral properties while arguing that those facts may still fail to determine which standard an agent should follow.",
+              score: 94,
+              critique:
+                "Clarke-Doane sharply separates two questions often bundled together: whether moral properties are mind-independent and whether knowing them uniquely settles deliberation. His moral-twin construction allows each community to track a real, privileged property while preserving the intelligible question of which property's recommendations to follow. This directly targets action guidance without needing global error theory, and his willingness to grant realism prevents an easy semantic rebuttal. The argument relies on the intelligibility of rival semantic values and a further standpoint from which agents compare them; a realist may deny that the rival is genuinely normative rather than merely similar. Yet labeling one package privileged simply restates that denial unless it explains why allegiance follows. Clarke-Doane establishes the burden with unusual precision and avoids overclaiming anti-realism.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Rival normative packages and the revenge regress",
+        timebox: "9:30-29:52",
+        score: { pro: 86, con: 96 },
+        exchanges: [
+          {
+            pro: {
+              time: "21:37",
+              role: "Pseudo-problem response",
+              words:
+                "Enoch says genuine normative privilege includes the answer about allegiance; asking why privilege rather than privilege-star merely repeats the original pseudo-problem at another level.",
+              score: 86,
+              critique:
+                "Enoch correctly sees that the challenge generalizes beyond ethics to reasons, rationality, and induction. He also notes that a theory need not possess rhetoric capable of rescuing every sufficiently radical skeptic. His direct answer, however, remains largely promissory: the regress is called a recurrence of a pseudo-problem without identifying the false presupposition that makes it pseudo. The fact that a challenge is global can lower its power to choose among local theories, but scope does not make it unreal; global skepticism may expose a genuine limit. Enoch candidly admits that no metaphysical progress has been made and offers the pseudo-problem framing as a heuristic. That intellectual honesty helps, yet Clarke-Doane's central question—how privilege supplies allegiance rather than another candidate fact—survives substantially intact.",
+              tags: []
+            },
+            con: {
+              time: "14:47",
+              role: "Iterated-allegiance challenge",
+              words:
+                "Clarke-Doane divides privilege into normative and nonnormative readings: the latter cannot guide, while the former generates another question about which privileged normativity deserves allegiance.",
+              score: 96,
+              critique:
+                "This dilemma is the debate's strongest move. If metaphysical privilege is descriptive, an additional bridge to action is required; if it already says which standard ought to govern, a rival ought-star relation can be formulated and the original deliberative distance returns. Clarke-Doane thus blocks a verbal solution that simply writes action guidance into 'privileged.' He also grounds the possibility through moral-twin semantics rather than treating every imaginable predicate as equally serious. The argument does not prove that no primitive stopping point is possible—foundational theories routinely terminate explanation—and infinite iteration may show that the request for further vindication is malformed. But Enoch needs to explain why this stopping point is epistemically better than stipulation. Clarke-Doane earns the high score by isolating that unmet burden without claiming a deductive refutation of realism.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Can noncognitivism do better?",
+        timebox: "29:55-44:30",
+        score: { pro: 92, con: 91 },
+        exchanges: [
+          {
+            pro: {
+              time: "37:06",
+              role: "Comparative-cost objection",
+              words:
+                "Enoch argues that noncognitivism may avoid rival truth-apt packages only by adding semantic machinery to recover ordinary objectivity, disagreement, and moral truth talk.",
+              score: 92,
+              critique:
+                "Enoch appropriately turns the discussion comparative. A challenge that burdens every remotely plausible metanormative view does not uniquely favor Clarke-Doane's alternative, and expressivist or quasi-realist theories incur well-known costs in explaining truth, inference, disagreement, and apparently descriptive moral language. He does not pretend those costs automatically defeat noncognitivism; he asks that they enter the same holistic ledger as his own theory's awkward cases. This directly corrects any impression that solving one action-guidance puzzle settles metaethics. The limitation is specificity. Enoch gestures toward a 'can of worms' without presenting a particular embedding or disagreement problem against Clarke-Doane's deflationary version. Consequently, the rebuttal establishes a burden and a fair comparison rule more than an outcome. It is methodologically strong but incomplete against the actual alternative proposed.",
+              tags: []
+            },
+            con: {
+              time: "30:20",
+              role: "Noncognitivist escape",
+              words:
+                "Clarke-Doane suggests that identifying an ought-judgment with a decision or imperative avoids plural rival facts because action itself forces a single choice.",
+              score: 91,
+              critique:
+                "Clarke-Doane offers a real alternative rather than resting on difficulty for realism. If the relevant normative attitude is deciding or endorsing rather than representing another fact, there is no separate truth-like object whose authority must be compared with an ought-star rival; incompatible actions cannot both be performed in the same circumstance. This explains why the regress may stop at practical commitment. He openly concedes that the proposal becomes more complicated under scrutiny and that traditional noncognitivist semantics is contorted, later preferring general deflationism plus an account of expressed attitude. Those qualifications are epistemically responsible but leave the view schematic. Decisions can themselves be evaluated as mistaken or poorly reasoned, and collapsing ought into commitment risks losing the critical objectivity that motivated the debate. Promising architecture, not yet a full account.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Deliberative phenomenology and reflective revision",
+        timebox: "38:53-54:40",
+        score: { pro: 90, con: 95 },
+        exchanges: [
+          {
+            pro: {
+              time: "40:20",
+              role: "Settled-deliberation phenomenology",
+              words:
+                "Enoch asks whether a person who concludes that they ought to act experiences any deliberative question remaining, distinguishing weakness of will from unfinished deliberation.",
+              score: 90,
+              critique:
+                "Enoch's first-person test captures something important: ordinarily, concluding all-things-considered that one ought to act ends practical deliberation even when weakness later prevents performance. This supports the tight action-guiding role realists attribute to moral judgment and avoids confusing intentional wrongdoing with continued uncertainty. He responsibly allows phenomenological variation and concedes that unusual philosophical reflection might expose hidden structure. Still, ordinary unreflective closure cannot establish rational sufficiency. A person may feel settled because only one standard is salient; learning about a rival logic, norm, or moral framework can rationally reopen the question. The phenomenology is therefore compatible with causal confidence rather than uniquely vindicated authority. Enoch provides evidence about normal practice and conceptual role, but Clarke-Doane correctly resists turning that evidence into a guarantee against reflective revision.",
+              tags: []
+            },
+            con: {
+              time: "44:42",
+              role: "Quantum-logic counterexample",
+              words:
+                "Clarke-Doane compares moral reflection to learning a rival quantum logic: an inference once made automatically can become a live choice after an alternative rule is understood.",
+              score: 95,
+              critique:
+                "The quantum-logic case directly answers Enoch's appeal to ordinary experience. People infer by familiar rules without meta-level deliberation, yet exposure to a serious rival logic can make whether to draw a formerly automatic inference intelligible. The rarity and artificiality of that reflective situation do not make it unreal; foundational problems are invisible in routine practice. Clarke-Doane also distinguishes causal settlement from normative settlement: knowing a rule will psychologically produce an inference does not show that it uniquely warrants it. The analogy depends on controversial philosophy of logic, and moral action may have a tighter conceptual connection to ought-judgments than inference has to a named formal system. Even so, it establishes the modest conclusion needed: felt closure under one conceptual scheme cannot by itself eliminate deliberative distance once alternatives become salient.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Anomalies, contradictions, and theoretical cost",
+        timebox: "55:31-1:08:55",
+        score: { pro: 91, con: 93 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:01:43",
+              role: "Holistic-cost comparison",
+              words:
+                "Enoch distinguishes a contradiction from an explanatory anomaly and argues that an awkward solution to an arcane edge case costs less than distorting a central feature of moral practice.",
+              score: 91,
+              critique:
+                "Enoch supplies the balanced methodology his earlier pseudo-problem response lacked. Philosophical theories are assessed holistically; an inelegant explanation of a rare reflective case can be outweighed by a simple account of central moral truth and deliberation, whereas noncognitivism may reverse those costs. He also correctly notes that Clarke-Doane has presented an explanatory challenge, not derived a contradiction. Centrality and frequency are relevant theoretical virtues. Yet arcane cases can expose structural defects rather than peripheral noise, as Russell's paradox did, so ordinary success cannot determine the discount in advance. Enoch's weighting remains intuitive and no concrete solution to the allegiance regress is offered for evaluation. The response makes continued realism reasonable despite the anomaly, but it does not show that the anomaly is cheap rather than foundational.",
+              tags: []
+            },
+            con: {
+              time: "57:17",
+              role: "Foundational-anomaly analogy",
+              words:
+                "Clarke-Doane compares the allegiance problem to Russell's paradox and scientific anomalies, arguing that rare foundational cases can force revision despite routine practical success.",
+              score: 93,
+              critique:
+                "Clarke-Doane effectively challenges any simple inference from artificiality to insignificance. Russell's paradox concerned objects ordinary mathematicians never use, yet it revealed a defect in unrestricted comprehension; similarly, a reflective allegiance case could expose the architecture beneath everyday moral judgment. His discussion of paraconsistent logic further shows that even contradictions enter a comparative theoretical ledger rather than carrying a context-free price. This supports methodological openness, not the conclusion that his moral puzzle is equally severe. The analogy risks inflating an unresolved explanatory request into a demonstrated inconsistency: he has not shown that realism entails contradiction, empirical failure, or practical collapse. Enoch rightly presses that difference. Still, Clarke-Doane wins the narrower point that rarity and normal functioning cannot by themselves classify a foundational counterexample as dispensable.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 89,
+        strengths: [
+          "Enoch accurately characterized the objective aspirations of ordinary moral discourse without pretending that grammar alone proves non-naturalism.",
+          "He broadened the allegiance challenge to normativity generally and correctly demanded a holistic comparison with noncognitivist costs.",
+          "His distinction between weakness of will and unfinished deliberation clarified the action-guiding role moral judgment normally plays.",
+          "He ultimately framed Clarke-Doane's case as an explanatory anomaly rather than misdescribing it as a formal contradiction."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly called the iterated-allegiance challenge a pseudo-problem without identifying the false assumption that would dissolve it.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His appeal to ordinary deliberative phenomenology risked treating the felt absence of a rival standard as evidence that no reflective rival could be rationally live.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 93,
+        strengths: [
+          "Clarke-Doane cleanly separated mind-independent moral reality from the stronger claim that moral knowledge uniquely settles action.",
+          "His descriptive-versus-normative privilege dilemma exposed why merely labeling one package authoritative does not answer the allegiance question.",
+          "The quantum-logic example showed how reflective alternatives can reopen a question that ordinary phenomenology treats as settled.",
+          "He offered a noncognitivist route while candidly acknowledging that its semantics and full development remain difficult."
+        ],
+        blunders: [
+          {
+            text:
+              "His foundational-paradox comparisons sometimes gave an explanatory puzzle the rhetorical weight of a contradiction without establishing comparable severity.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "The proposed deflationary noncognitivism remained schematic and did not yet recover the critical objectivity needed to call some commitments mistaken.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
