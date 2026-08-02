@@ -3,7 +3,7 @@ export const SITE_NAME = "Slugfester";
 export const SITE_LOCALE = "en_US";
 export const SITE_LANGUAGE = "en";
 export const SITE_THEME_COLOR = "#13201f";
-export const SITE_UPDATED_DATE = "2026-08-01";
+export const SITE_UPDATED_DATE = "2026-08-02";
 export const SITE_TIME_ZONE_OFFSET = "-04:00";
 export const SITE_UPDATED_DATETIME = `${SITE_UPDATED_DATE}T12:00:00${SITE_TIME_ZONE_OFFSET}`;
 export const DEFAULT_TITLE = "Slugfester | YouTube Debate Argument Scorecards";
@@ -178,7 +178,15 @@ export function websiteJsonLd(topics = []) {
     url: SITE_URL,
     description: DEFAULT_DESCRIPTION,
     inLanguage: SITE_LANGUAGE,
-    publisher: organizationIdentityJsonLd()
+    publisher: organizationIdentityJsonLd(),
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: absoluteUrl(`${searchPath()}?q={search_term_string}`)
+      },
+      "query-input": "required name=search_term_string"
+    }
   };
 
   if (topicNames.length) {
@@ -582,7 +590,7 @@ export function notFoundSeo() {
   return {
     title: pageTitle("Page not found"),
     description: "This Slugfester page could not be found.",
-    canonicalPath: "/",
+    canonicalPath: null,
     imagePath: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     type: "website",

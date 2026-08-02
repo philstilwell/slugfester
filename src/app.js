@@ -1,4 +1,4 @@
-import { publishedDebates as debates } from "./data/debates.js";
+import { debateSummaries } from "./data/debate-summaries.js";
 import { avatarsForSpeakerText } from "./data/interlocutors.js";
 import { getReferenceDefinition, referenceFromUrl } from "./data/references.js";
 import {
@@ -32,7 +32,12 @@ import {
 } from "./seo.js";
 
 const app = document.querySelector("#app");
-const DEBATE_PAGE_SIZE = 84;
+let debates = debateSummaries;
+let detailedDebatesPromise;
+let routeSequence = 0;
+const LANDING_PAGE_SIZE = 18;
+const SEARCH_PAGE_SIZE = 24;
+const REFERENCE_CONTEXT_PAGE_SIZE = 16;
 const MIN_RANKED_DEBATE_APPEARANCES = 3;
 const rankingMinimumOptions = [3, 5, 10];
 const rankingSortOptions = [
@@ -57,6 +62,22 @@ const interlocutorPathRoutePattern = /^\/interlocutor\/([a-z0-9-]+)\/?$/;
 const backendPathRoutePattern = /^\/backend\/?$/;
 const assessmentPathRoutePattern = /^\/assessment\/?$/;
 const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?$/;
+
+async function loadDetailedDebates() {
+  if (!detailedDebatesPromise) {
+    detailedDebatesPromise = import("./data/debates.js")
+      .then(({ publishedDebates }) => {
+        debates = publishedDebates;
+        return publishedDebates;
+      })
+      .catch((error) => {
+        detailedDebatesPromise = undefined;
+        throw error;
+      });
+  }
+
+  return detailedDebatesPromise;
+}
 
 const escapeHtml = (value = "") =>
   String(value)
@@ -167,7 +188,7 @@ function setStructuredData(jsonLd) {
 }
 
 function setSeo(seo) {
-  const canonicalUrl = absoluteUrl(seo.canonicalPath || "/");
+  const canonicalUrl = seo.canonicalPath === null ? "" : absoluteUrl(seo.canonicalPath || "/");
   const imageUrl = absoluteUrl(seo.imagePath || "/assets/slugfester-logo.jpg");
   const imageAlt = seo.imageAlt || DEFAULT_IMAGE_ALT;
   const imageWidth = seo.imageWidth || DEFAULT_IMAGE_WIDTH;
@@ -178,7 +199,11 @@ function setSeo(seo) {
   const updatedTime = seo.updatedTime || seo.modifiedTime || seo.lastmod;
 
   document.title = seo.title;
-  setCanonical(canonicalUrl);
+  if (canonicalUrl) {
+    setCanonical(canonicalUrl);
+  } else {
+    removeHeadElement('link[rel="canonical"]');
+  }
   setMeta('meta[name="description"]', { name: "description", content: seo.description });
   setMeta('meta[name="robots"]', { name: "robots", content: robots });
   setMeta('meta[name="author"]', { name: "author", content: SITE_NAME });
@@ -193,7 +218,11 @@ function setSeo(seo) {
   setMeta('meta[property="og:title"]', { property: "og:title", content: seo.title });
   setMeta('meta[property="og:description"]', { property: "og:description", content: seo.description });
   setMeta('meta[property="og:type"]', { property: "og:type", content: seo.type || "website" });
-  setMeta('meta[property="og:url"]', { property: "og:url", content: canonicalUrl });
+  if (canonicalUrl) {
+    setMeta('meta[property="og:url"]', { property: "og:url", content: canonicalUrl });
+  } else {
+    removeHeadElement('meta[property="og:url"]');
+  }
   if (updatedTime) {
     setMeta('meta[property="og:updated_time"]', {
       property: "og:updated_time",
@@ -277,7 +306,13 @@ function currentPrimaryNavKey() {
   ) {
     return "backend";
   }
-  if (hash.match(debateHashRoutePattern) || pathname === "/" || pathname.match(debatePathRoutePattern)) {
+  if (
+    hash.match(debateHashRoutePattern) ||
+    hash.match(referenceHashRoutePattern) ||
+    pathname === "/" ||
+    pathname.match(debatePathRoutePattern) ||
+    pathname.match(referencePathRoutePattern)
+  ) {
     return "debates";
   }
   return "";
@@ -290,8 +325,13 @@ function renderPrimaryNavLink(key, href, label, activeKey) {
 
 function renderShell(content) {
   const activeNavKey = currentPrimaryNavKey();
+  const mainContent = content.replace(
+    "<main",
+    '<main id="main-content" tabindex="-1"'
+  );
 
   return `
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <a class="brand" href="/" aria-label="Slugfester home">
         <img class="brand-logo" src="/assets/debate-gloves.png" alt="" width="444" height="444">
@@ -307,14 +347,14 @@ function renderShell(content) {
           <span class="external-sites-label">External Sites</span>
           <span class="external-sites-links">
             <span class="external-site-item">
-              <a href="https://logfall.com/" target="_blank" rel="noreferrer" aria-describedby="logfall-menu-popover">LogFall</a>
+              <a href="https://logfall.com/" target="_blank" rel="noopener noreferrer" aria-describedby="logfall-menu-popover">LogFall</a>
               <span class="external-site-popover" id="logfall-menu-popover" role="tooltip">
                 <strong>LogFall</strong>
                 Logical fallacy reference used for Slugfester's fallacy labels and source links.
               </span>
             </span>
             <span class="external-site-item">
-              <a href="https://cogbias.site/" target="_blank" rel="noreferrer" aria-describedby="cogbias-menu-popover">CogBias</a>
+              <a href="https://cogbias.site/" target="_blank" rel="noopener noreferrer" aria-describedby="cogbias-menu-popover">CogBias</a>
               <span class="external-site-popover" id="cogbias-menu-popover" role="tooltip">
                 <strong>CogBias</strong>
                 Cognitive bias reference used for Slugfester's bias labels and source links.
@@ -324,7 +364,21 @@ function renderShell(content) {
         </span>
       </nav>
     </header>
-    ${content}
+    ${mainContent}
+    <footer class="site-footer">
+      <div>
+        <a class="footer-brand" href="/">Slugfester</a>
+        <p>Transcript-grounded argument scorecards. Scores evaluate the reasoning presented, not a person's worth or a worldview's final truth.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="${searchPath()}">Search</a>
+        <a href="${topicsPath()}">Topics</a>
+        <a href="${rankingsPath()}">Rankings</a>
+        <a href="${backendPath()}">Method</a>
+        <a href="https://logfall.com/" target="_blank" rel="noopener noreferrer">LogFall</a>
+        <a href="https://cogbias.site/" target="_blank" rel="noopener noreferrer">CogBias</a>
+      </nav>
+    </footer>
   `;
 }
 
@@ -353,13 +407,24 @@ function paginatedItems(items, pageSize, requestedPage) {
 function renderPagination({ label, pager, itemLabel, hrefForPage }) {
   if (pager.totalPages <= 1) return "";
 
-  const pageLinks = Array.from({ length: pager.totalPages }, (_, index) => {
-    const page = index + 1;
+  const visiblePages = pager.totalPages <= 7
+    ? Array.from({ length: pager.totalPages }, (_, index) => index + 1)
+    : [...new Set([1, pager.page - 1, pager.page, pager.page + 1, pager.totalPages])]
+        .filter((page) => page >= 1 && page <= pager.totalPages)
+        .sort((a, b) => a - b);
+  const pageLinks = visiblePages
+    .map((page, index) => {
+      const previousPage = visiblePages[index - 1];
+      const gap = previousPage && page - previousPage > 1
+        ? '<span class="pagination-ellipsis" aria-hidden="true">…</span>'
+        : "";
+      const link = page === pager.page
+        ? `<span class="pagination-page active" aria-current="page">${page}</span>`
+        : `<a class="pagination-page" href="${escapeHtml(hrefForPage(page))}" aria-label="Page ${page}">${page}</a>`;
 
-    return page === pager.page
-      ? `<span class="pagination-page active" aria-current="page">${page}</span>`
-      : `<a class="pagination-page" href="${escapeHtml(hrefForPage(page))}">${page}</a>`;
-  }).join("");
+      return `${gap}${link}`;
+    })
+    .join("");
 
   const previous = pager.page > 1
     ? `<a class="pagination-control" href="${escapeHtml(hrefForPage(pager.page - 1))}">Previous</a>`
@@ -402,14 +467,10 @@ function renderLanding() {
   setSeo(landingSeo(debates));
 
   const landingState = landingPaginationState();
-  const landingPager = paginatedItems(debates, DEBATE_PAGE_SIZE, landingState.page);
+  const landingPager = paginatedItems(debates, LANDING_PAGE_SIZE, landingState.page);
   const debateCards = landingPager.items.map(renderDebateCard).join("");
-  const topicList = landingPager.items
-    .map(
-      (debate) =>
-        `<a class="topic-list-link" href="${escapeHtml(debatePath(debate))}">${escapeHtml(debate.number)} ${escapeHtml(debate.label)}</a>`
-    )
-    .join('<span aria-hidden="true"> | </span>');
+  const interlocutorCount = searchFacets().people.length;
+  const topicCount = topicGroupsForDebates().length;
 
   app.innerHTML = renderShell(`
     <main class="landing">
@@ -417,16 +478,19 @@ function renderLanding() {
         <div class="intro-copy">
           <p class="eyebrow">Video debate transcript scorecards</p>
           <h1>Slugfester</h1>
-          <p class="lede">Debate transcripts turned into side-by-side argument maps for ease of reader assessment.  Each claim and rebuttal receives AI scores, and every ◉ opens a deeper critique of the reasoning.</p>
-          <div class="topic-divider" aria-hidden="true"></div>
-          <div class="topic-list-wrap">
-            <p class="topic-list" aria-label="Debate assessments in the currently listed page">${topicList}</p>
-            ${renderPagination({
-              hrefForPage: (page) => landingUrl({ page }),
-              itemLabel: "debates",
-              label: "Landing topic list",
-              pager: landingPager
-            })}
+          <p class="lede">Follow the reasoning, not the rhetoric. Slugfester turns debate transcripts into side-by-side maps of claims and rebuttals, with AI-generated scores, timestamped sources, and deeper critiques behind every ◉.</p>
+          <div class="landing-actions">
+            <a class="button primary" href="#debates-heading">Browse scorecards</a>
+            <a class="button secondary" href="${searchPath()}">Search the archive</a>
+          </div>
+          <dl class="landing-stats" aria-label="Slugfester archive summary">
+            <div><dt>Scorecards</dt><dd>${debates.length}</dd></div>
+            <div><dt>Interlocutors</dt><dd>${interlocutorCount}</dd></div>
+            <div><dt>Topic clusters</dt><dd>${topicCount}</dd></div>
+          </dl>
+          <div class="landing-topic-link">
+            <span>Looking for a subject?</span>
+            <a href="${topicsPath()}">Browse all debates by topic</a>
           </div>
         </div>
         <figure class="logo-showcase">
@@ -441,8 +505,11 @@ function renderLanding() {
 
       <section class="debate-list" aria-labelledby="debates-heading">
         <div class="section-heading">
-          <p class="eyebrow">Scorecards</p>
-          <h2 id="debates-heading">Debates</h2>
+          <div>
+            <p class="eyebrow">Scorecards</p>
+            <h2 id="debates-heading">Debates</h2>
+          </div>
+          <p class="section-summary">Browse all ${debates.length} transcript-grounded assessments.</p>
         </div>
         ${renderPagination({
           hrefForPage: (page) => landingUrl({ page }),
@@ -483,7 +550,7 @@ function renderDebateCard(debate) {
       </div>
       <div class="card-actions">
         <a class="button primary" href="${escapeHtml(debatePath(debate))}">Open Debate Assessment</a>
-        <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noreferrer">YouTube Source</a>
+        <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noopener noreferrer">YouTube Source</a>
       </div>
     </article>
   `;
@@ -502,7 +569,7 @@ function renderMiniScore(label, score, color) {
     <div class="mini-score ${color}">
       <span>${escapeHtml(label)}</span>
       <strong>${score}</strong>
-      <i style="--score-width:${score}%"></i>
+      <i style="--score-width:${score}%" aria-hidden="true"></i>
     </div>
   `;
 }
@@ -1790,7 +1857,7 @@ function renderSearch() {
   const state = searchState();
   const facets = searchFacets();
   const matches = debates.filter((debate) => debateMatchesSearch(debate, state));
-  const resultPager = paginatedItems(matches, DEBATE_PAGE_SIZE, state.page);
+  const resultPager = paginatedItems(matches, SEARCH_PAGE_SIZE, state.page);
   const hasFilters = Boolean(state.query.trim() || state.people.length);
 
   app.innerHTML = renderShell(`
@@ -1800,7 +1867,7 @@ function renderSearch() {
           <p class="eyebrow">Search scorecards</p>
           <h1>Find debates</h1>
         </div>
-        <p class="search-count">${matches.length} of ${debates.length} debates</p>
+        <p class="search-count" role="status" aria-live="polite">${matches.length} of ${debates.length} debates</p>
       </section>
 
       <section class="search-tool" aria-label="Search filters">
@@ -1861,7 +1928,7 @@ function renderSearch() {
 function renderPersonFilter(person, selected) {
   return `
     <button class="person-filter ${selected ? "active" : ""}" type="button" data-filter-type="person" data-filter-value="${escapeHtml(person.name)}" aria-pressed="${selected}">
-      <img src="${escapeHtml(person.src)}" alt="${escapeHtml(person.name)}" width="512" height="512" loading="lazy" decoding="async">
+      <img src="${escapeHtml(person.src)}" alt="" width="512" height="512" loading="lazy" decoding="async">
       <span>${escapeHtml(person.name)}</span>
       <strong>${person.count}</strong>
     </button>
@@ -1893,7 +1960,7 @@ function renderSearchResult(debate) {
       </div>
       <div class="card-actions">
         <a class="button primary" href="${escapeHtml(debatePath(debate))}">Open Debate Assessment</a>
-        <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noreferrer">YouTube Source</a>
+        <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noopener noreferrer">YouTube Source</a>
       </div>
     </article>
   `;
@@ -2154,7 +2221,7 @@ function renderDebate(id) {
           </div>
           ${renderMiniScore(debate.sides.pro.name, debate.score.pro, "teal")}
           ${renderMiniScore(debate.sides.con.name, debate.score.con, "coral")}
-          <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noreferrer">Open YouTube source</a>
+          <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noopener noreferrer">Open YouTube source</a>
         </aside>
       </section>
 
@@ -2320,7 +2387,7 @@ function renderArgument(argument, tone, debate, section, sideKey) {
       </div>
       <p>${escapeHtml(argument.words)}</p>
       <div class="argument-footer">
-        ${renderCritique(argument)}
+        ${renderCritique(argument, debate, section, sideKey)}
         ${renderTags(argument.tags, debate, section, sideKey, argument)}
       </div>
     </article>
@@ -2331,17 +2398,26 @@ function renderTimestampLink(label, youtubeUrl, ariaLabel) {
   const href = timestampedYouTubeUrl(youtubeUrl, label);
 
   return `
-    <a class="timestamp-link" href="${escapeHtml(href)}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(ariaLabel)}">
+    <a class="timestamp-link" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(ariaLabel)}">
       ${escapeHtml(label)}
     </a>
   `;
 }
 
-function renderCritique(argument) {
+function argumentHelpId(prefix, debate, section, sideKey, argument) {
+  return [prefix, debate.id, sideKey, section.title, argument.time, argument.role]
+    .map(anchorSlug)
+    .filter(Boolean)
+    .join("-");
+}
+
+function renderCritique(argument, debate, section, sideKey) {
+  const tooltipId = argumentHelpId("critique", debate, section, sideKey, argument);
+
   return `
     <span class="critique">
-      <button type="button" aria-label="Critique for ${escapeHtml(argument.role)}">◉</button>
-      <span class="critique-popover" role="tooltip">
+      <button type="button" aria-label="Critique for ${escapeHtml(argument.role)}" aria-describedby="${escapeHtml(tooltipId)}">◉</button>
+      <span class="critique-popover" id="${escapeHtml(tooltipId)}" role="tooltip">
         <strong>${argument.score}/100 · ${escapeHtml(argument.role)}</strong>
         <span>${escapeHtml(argument.critique)}</span>
       </span>
@@ -2365,18 +2441,19 @@ function renderTag(tag, debate, section, sideKey, argument) {
   const category = tag.type === "fallacy" ? "Logical fallacy" : "Cognitive bias";
   const occurrenceId = referenceOccurrenceId({ debate, section, sideKey, argument, tag });
   const localHref = referenceHref(tag.url, debate.id, occurrenceId);
+  const tooltipId = `tag-help-${occurrenceId}`;
 
   return `
     <span class="tag-wrap">
-      <a class="tag ${escapeHtml(tag.type)}" href="${escapeHtml(localHref)}">
+      <a class="tag ${escapeHtml(tag.type)}" href="${escapeHtml(localHref)}" aria-describedby="${escapeHtml(tooltipId)}">
         ${escapeHtml(tag.label)}
       </a>
-      <span class="tag-popover" role="tooltip">
+      <span class="tag-popover" id="${escapeHtml(tooltipId)}" role="tooltip">
         <strong>${escapeHtml(tag.label)}</strong>
         <em>${category}</em>
         ${definition ? `<span>${escapeHtml(definition.definition)}</span>` : ""}
         <span class="tag-context">${escapeHtml(tag.context)}</span>
-        <span class="tag-popover-note">Click button for more info.</span>
+        <span class="tag-popover-note">Open the reference page for more.</span>
       </span>
     </span>
   `;
@@ -2446,8 +2523,8 @@ function renderBlunder(blunder, debateId) {
     .map(
       (link) => {
         const href = referenceHref(link.url, debateId);
-        const isInternal = href.startsWith("#/");
-        const target = isInternal ? "" : ' target="_blank" rel="noreferrer"';
+        const isInternal = href.startsWith("/") || href.startsWith("#/");
+        const target = isInternal ? "" : ' target="_blank" rel="noopener noreferrer"';
         return `<a href="${escapeHtml(href)}"${target}>${escapeHtml(link.label)}</a>`;
       }
     )
@@ -2477,6 +2554,18 @@ function renderReference(type, slug, sourceDebateId = "") {
   const source = type === "fallacy" ? "LogFall" : "CogBias";
   const appearances = collectReferenceAppearances(type, slug);
   const sourceDebate = findSourceDebate(sourceDebateId, appearances);
+  const hashOccurrenceId = referenceOccurrenceFromHash();
+  const linkedAppearanceIndex = hashOccurrenceId
+    ? appearances.findIndex((appearance) => referenceOccurrenceId(appearance) === hashOccurrenceId)
+    : -1;
+  const requestedPage = linkedAppearanceIndex >= 0
+    ? Math.floor(linkedAppearanceIndex / REFERENCE_CONTEXT_PAGE_SIZE) + 1
+    : positivePage(new URLSearchParams(window.location.search).get("page"));
+  const appearancePager = paginatedItems(
+    appearances,
+    REFERENCE_CONTEXT_PAGE_SIZE,
+    requestedPage
+  );
 
   app.innerHTML = renderShell(`
     <main class="reference-page">
@@ -2489,7 +2578,7 @@ function renderReference(type, slug, sourceDebateId = "") {
         <h1>${escapeHtml(reference.label)}</h1>
         <p>${escapeHtml(reference.definition)}</p>
         <div class="reference-actions">
-          <a class="button primary" href="${escapeHtml(reference.externalUrl)}" target="_blank" rel="noreferrer">
+          <a class="button primary" href="${escapeHtml(reference.externalUrl)}" target="_blank" rel="noopener noreferrer">
             Read the in-depth ${source} entry
           </a>
         </div>
@@ -2499,18 +2588,52 @@ function renderReference(type, slug, sourceDebateId = "") {
           ? `
             <section class="reference-contexts" aria-labelledby="reference-contexts-heading">
               <div class="section-heading">
-                <p class="eyebrow">Debate context</p>
-                <h2 id="reference-contexts-heading">Why this label appears here</h2>
+                <div>
+                  <p class="eyebrow">Debate context</p>
+                  <h2 id="reference-contexts-heading">Why this label appears here</h2>
+                </div>
+                <p class="section-summary">${appearances.length} transcript-grounded occurrence${appearances.length === 1 ? "" : "s"}.</p>
               </div>
+              ${renderPagination({
+                hrefForPage: (page) => referencePageUrl(type, slug, sourceDebateId, page),
+                itemLabel: "occurrences",
+                label: `${reference.label} debate contexts`,
+                pager: appearancePager
+              })}
               <div class="reference-context-list">
-                ${appearances.map(renderReferenceAppearance).join("")}
+                ${appearancePager.items.map(renderReferenceAppearance).join("")}
               </div>
+              ${renderPagination({
+                hrefForPage: (page) => referencePageUrl(type, slug, sourceDebateId, page),
+                itemLabel: "occurrences",
+                label: `${reference.label} debate contexts`,
+                pager: appearancePager
+              })}
             </section>
           `
           : ""
       }
     </main>
   `);
+}
+
+function referenceOccurrenceFromHash() {
+  if (!window.location.hash || window.location.hash.startsWith("#/")) return "";
+
+  try {
+    return decodeURIComponent(window.location.hash.slice(1));
+  } catch {
+    return "";
+  }
+}
+
+function referencePageUrl(type, slug, sourceDebateId, page) {
+  const params = new URLSearchParams();
+  if (sourceDebateId) params.set("debate", sourceDebateId);
+  if (page > 1) params.set("page", page);
+  const query = params.toString();
+
+  return `${referencePath(type, slug)}${query ? `?${query}` : ""}`;
 }
 
 function findSourceDebate(sourceDebateId, appearances) {
@@ -2596,7 +2719,17 @@ function scrollToHashTargetAfterRender() {
   });
 }
 
-function route() {
+function renderRouteLoading() {
+  app.innerHTML = renderShell(`
+    <main class="route-loading" aria-live="polite" aria-busy="true">
+      <span class="route-loading-mark" aria-hidden="true">◉</span>
+      <p>Loading the full scorecard data…</p>
+    </main>
+  `);
+}
+
+async function route() {
+  const sequence = ++routeSequence;
   const hash = window.location.hash;
   const debateMatch =
     hash.match(debateHashRoutePattern) || window.location.pathname.match(debatePathRoutePattern);
@@ -2616,6 +2749,30 @@ function route() {
   const referenceMatch =
     hash.match(referenceHashRoutePattern) ||
     window.location.pathname.match(referencePathRoutePattern);
+  const needsDetailedData = Boolean(
+    debateMatch || rankingsMatch || interlocutorMatch || referenceMatch
+  );
+
+  if (needsDetailedData && debates === debateSummaries) {
+    renderRouteLoading();
+
+    try {
+      await loadDetailedDebates();
+    } catch {
+      if (sequence !== routeSequence) return;
+      app.innerHTML = renderShell(`
+        <main class="not-found">
+          <p class="eyebrow">Data unavailable</p>
+          <h1>The scorecards could not load.</h1>
+          <p>Please check your connection and try again.</p>
+          <a class="button primary" href="${escapeHtml(window.location.href)}">Retry</a>
+        </main>
+      `);
+      return;
+    }
+
+    if (sequence !== routeSequence) return;
+  }
 
   if (debateMatch) {
     renderDebate(decodeURIComponent(debateMatch[1]));
@@ -2647,6 +2804,18 @@ function route() {
   }
 
   scrollToHashTargetAfterRender();
+}
+
+function loadCloudflareAnalytics() {
+  if (!["slugfester.com", "www.slugfester.com"].includes(window.location.hostname)) return;
+  if (document.querySelector('script[data-slugfester-analytics="cloudflare"]')) return;
+
+  const script = document.createElement("script");
+  script.defer = true;
+  script.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  script.dataset.slugfesterAnalytics = "cloudflare";
+  script.dataset.cfBeacon = JSON.stringify({ token: "05c16e0e536340d0a1e0fdcaa6451389" });
+  document.body.append(script);
 }
 
 function shouldHandleInternally(link) {
@@ -2683,6 +2852,20 @@ function shouldHandleInternally(link) {
 
 document.addEventListener("click", (event) => {
   const link = event.target.closest("a");
+  if (link?.matches(".skip-link")) {
+    event.preventDefault();
+    const main = document.getElementById("main-content");
+    if (!main) return;
+
+    main.focus({ preventScroll: true });
+    main.scrollIntoView({ block: "start" });
+    window.history.replaceState(
+      {},
+      "",
+      `${window.location.pathname}${window.location.search}#main-content`
+    );
+    return;
+  }
   if (!link || !shouldHandleInternally(link)) return;
   if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
 
@@ -2693,10 +2876,11 @@ document.addEventListener("click", (event) => {
   if (next !== `${window.location.pathname}${window.location.search}${window.location.hash}`) {
     window.history.pushState({}, "", next);
   }
-  route();
+  void route();
   window.scrollTo(0, 0);
 });
 
 window.addEventListener("hashchange", route);
 window.addEventListener("popstate", route);
-route();
+void route();
+loadCloudflareAnalytics();
