@@ -63206,6 +63206,289 @@ export const debates = [
       }
     }
   },
+  {
+    id: "ward-dennett-more-than-matter-2019",
+    number: "187",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Keith Ward vs Daniel Dennett: Are We More Than Matter?",
+    label: "Mind, consciousness, purpose, and free will",
+    date: "2026-08-01",
+    duration: "1 hr 23 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=mongL_2KMGg",
+    motion:
+      "Are consciousness, personal identity, purpose, value, and free agency irreducible to the physical world?",
+    summary:
+      "Ward argues from first-person experience, a nonphysical subject, objective value, and libertarian agency toward idealism and God; Dennett explains minds through embodied information, evolution, predictive control, and emergent levels.",
+    sourceNote:
+      "Built from the English-original YouTube caption track. Captions were checked against the recording and lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "consciousness or mind is the best known, most immediately known",
+        context:
+          "Ward begins from the epistemic priority of experience and proposes that mind may also be ontologically primary."
+      },
+      con: {
+        text: "consciousness is the brain's user illusion of itself",
+        context:
+          "Dennett describes consciousness as an evolutionarily designed interface that organizes otherwise unmanageable embodied information."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Persons are irreducible to matter",
+        speaker: "Keith Ward",
+        color: "teal"
+      },
+      con: {
+        name: "Naturalism can explain persons",
+        speaker: "Daniel Dennett",
+        color: "coral"
+      }
+    },
+    score: { pro: 89, con: 94 },
+    sections: [
+      {
+        title: "Experience first, or brain first?",
+        timebox: "6:10-16:17",
+        score: { pro: 90, con: 94 },
+        exchanges: [
+          {
+            pro: {
+              time: "6:22",
+              role: "Idealist starting point",
+              words:
+                "Ward says conscious experience is immediately known and everything else is known through it, making mind a plausible ontological foundation from which the material world is constructed.",
+              score: 90,
+              critique:
+                "Ward accurately identifies the epistemic asymmetry: theories of brains, atoms, and instruments are encountered within consciousness, whereas experience is not first inferred from a public measurement. He avoids claiming introspective infallibility and accepts that brain damage alters awareness, so his idealism is not insulated from neuroscience. The crucial transition remains underargued. Being first in the order of knowledge does not make consciousness first in the order of reality; a camera image can be the observer's access to a distant object without producing that object. Ward calls ontological priority a hypothesis, but offers little discriminating evidence for it before connecting it to God. His opening establishes that experience must appear in the inventory, not that matter is logically constructed from a cosmic mind.",
+              tags: []
+            },
+            con: {
+              time: "10:55",
+              role: "Unconscious-computation account",
+              words:
+                "Dennett argues that science reveals conscious access to depend on complex unconscious computation, while introspection cannot report how perception becomes speech, memory, belief, and action.",
+              score: 94,
+              critique:
+                "Dennett directly separates epistemic access from causal priority. People must be conscious to begin inquiry, but inquiry then discovers that apparently immediate experience depends on hidden neural processing and can misrepresent even its own contents. His demand to explain 'and then what happens' extends consciousness research beyond correlation to how information changes belief, emotion, memory, speech, and recursive reflection. This functional program has cumulative empirical traction and explains why brain intervention changes the manifest mind. It does not by itself settle whether functional organization exhausts phenomenal character; mapping every report and consequence could still leave Ward's identity question open. Yet Dennett supplies a productive research strategy and clear evidence of dependence, whereas Ward's ontological reversal remains largely possible rather than supported.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "The hard problem and philosophical zombies",
+        timebox: "16:17-29:48",
+        score: { pro: 92, con: 93 },
+        exchanges: [
+          {
+            pro: {
+              time: "17:44",
+              role: "Explanatory-gap argument",
+              words:
+                "Ward argues that complete physical inspection can identify neural configurations without revealing whether an ant feels anything or what enjoying Wagner is like for a subject.",
+              score: 92,
+              critique:
+                "Ward states the phenomenal challenge cleanly. Third-person measurements reveal structure, behavior, and causal relations, while the presence and character of first-person feeling seem knowable in a different way. His ant and music examples prevent the issue from being mistaken for mere ignorance about neural mechanics, and he distinguishes consciousness from the behavioral criteria used to classify life. The possibility of a behaviorally identical zombie, however, is asserted through conceivability rather than independently demonstrated. If feeling is an organism's richly integrated responsiveness, exhaustive physical-functional knowledge may include everything that warrants attributing it, even when the scientist does not literally share it. Ward establishes an epistemic perspective gap; converting that into a distinct nonphysical entity requires a further argument he does not provide.",
+              tags: []
+            },
+            con: {
+              time: "19:24",
+              role: "Vitalism analogy",
+              words:
+                "Dennett compares the hard problem to obsolete vitalism: complex organization gradually yields systems unmistakably alive or conscious without an extra substance or sharp metaphysical boundary.",
+              score: 93,
+              critique:
+                "Dennett's analogy usefully challenges the demand for a magical threshold. Biology explains life through layered capacities without discovering an élan vital, and consciousness may likewise emerge gradually through discrimination, access, memory, reflection, and flexible action. Coma and locked-in cases show why better neural measures can answer questions that behavior alone leaves uncertain. His claim that the hard problem is merely a magician's trick is too quick. Life is ordinarily defined functionally, whereas pain appears to have a felt aspect not captured simply by reproduction or response, so Ward is right that the analogy is imperfect. Dennett provides a strong naturalistic dissolution strategy but sometimes treats the success of explaining access and function as proof that no residual phenomenal question is coherent.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "The self, memory, and embodied information",
+        timebox: "29:48-38:37",
+        score: { pro: 87, con: 96 },
+        exchanges: [
+          {
+            pro: {
+              time: "32:30",
+              role: "Subject-of-experience argument",
+              words:
+                "Ward says a remembered temporal series requires a subject who owns its experiences; the brain gives that nonphysical, essentially embodied self access without constituting it.",
+              score: 87,
+              critique:
+                "Ward identifies a real unity problem: hearing a final chord as the end of a symphony requires retention and integration, not an unrelated sequence of momentary events. Treating persons as mere lists would omit ownership, anticipation, and the practical continuity that organizes a life. His proposed subject, however, does no explanatory work beyond naming that organization. Saying the brain is an 'access machine' immediately invites the question of who accesses it, and claiming Alzheimer's memories continue outside the brain lacks evidence while known neural deterioration already explains retrieval loss. The immaterial subject is not independently characterized, located, or linked causally to neural change. Ward shows why a theory needs diachronic integration; Dennett supplies a mechanism, while Ward adds an unverified bearer.",
+              tags: []
+            },
+            con: {
+              time: "34:56",
+              role: "User-interface self",
+              words:
+                "Dennett treats the self as organized information embodied in the brain, with memory, anticipation, language, and culture forming a simplified user interface rather than an inner witness.",
+              score: 96,
+              critique:
+                "Dennett answers the homunculus regress precisely. If a separate self uses the brain, another account is needed of how that user reads and controls neural information. On his alternative, access consists in some processes making information available to others for memory, speech, planning, and behavior; no privileged inner screen is required. The software analogy explains how culturally transmitted organization can be real, causally potent, and multiply realizable without weighing anything or escaping physical media. Calling the self an illusion can mislead, but Dennett carefully says continuing persons exist while rejecting only an essential detachable nugget. The model still inherits the phenomenal question from the prior section, yet it explains unity and personal continuity more economically than an immaterial subject whose operation mirrors the function being explained.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Can purpose and value emerge?",
+        timebox: "38:41-51:59",
+        score: { pro: 89, con: 95 },
+        exchanges: [
+          {
+            pro: {
+              time: "40:25",
+              role: "Intentionality and objective value",
+              words:
+                "Ward argues that present thoughts can be about unrealized futures and actions can pursue objective goods, relations absent from a purely present physical description.",
+              score: 89,
+              critique:
+                "Ward correctly refuses to erase the aboutness of plans or the normative force of values from a complete account of persons. A goal refers beyond its present vehicle, and saying charity is genuinely worthwhile differs from reporting neural activation or collective approval. These are legitimate explanatory levels. His conclusion that physics cannot accommodate them follows mainly from restricting physical causation to blind pushes from the past. Representational states can presently encode possible futures and guide feedback without future events literally causing anything; Dennett's predictive-processing reply directly supplies that structure. Objective value also does not entail a nonphysical subject or divine ground. Ward preserves important phenomena but mistakes their nonphysical vocabulary at one level for evidence of an ontologically separate realm.",
+              tags: []
+            },
+            con: {
+              time: "44:46",
+              role: "Bottom-up purpose",
+              words:
+                "Dennett invokes natural selection and predictive coding to explain organisms that anticipate futures, test hypotheses, correct errors, and develop long-range goals without a top-down purpose giver.",
+              score: 95,
+              critique:
+                "Dennett meets Ward's central challenge with mechanisms rather than analogy alone. Natural selection preserves systems whose internal states anticipate useful outcomes, while predictive processing continuously compares expectations with incoming data and revises action. Present neural representations can therefore be about futures because their organization was selected and learned for successful tracking, not because the future reaches backward. His chess example also shows how objective discoveries can occur inside a human-constructed normative practice, weakening the inference from moral discovery to mind-independent cosmic value. Chess does not settle morality, and evolutionary usefulness alone cannot establish what people ought to do. Still, Dennett demonstrates that purposive explanation and genuine higher-level facts need not be either fundamental physics or divine commands.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Does God ground moral obligation?",
+        timebox: "50:36-54:22",
+        score: { pro: 88, con: 94 },
+        exchanges: [
+          {
+            pro: {
+              time: "51:33",
+              role: "Morally obliging reality",
+              words:
+                "Ward says an ultimate perfectly good creator whose purpose fulfills human life could ground objective obligation more naturally than an indifferent physical universe.",
+              score: 88,
+              critique:
+                "Ward offers more than a crude divine-command theory. Goodness is not whatever God arbitrarily orders; the proposed foundational mind is itself perfectly good and creates persons toward fulfillment, allowing obligation, purpose, and reality to form one coherent picture. This gives theism explanatory unity if its premises are accepted. Dennett's response exposes the circularity: defining the ultimate mind as perfectly good and purpose-conferring builds the desired moral authority into the posit. Ward concedes that idealism and Christianity are partly independent and that personal experience, not the argument presented, supports his faith. No evidence here distinguishes this mind from other conceivable foundations, and the Euthyphro question remains about why its nature is good. The proposal fits morality but does not independently explain or establish it.",
+              tags: []
+            },
+            con: {
+              time: "52:55",
+              role: "Divine-authority challenge",
+              words:
+                "Dennett grants that a disembodied mind is not deductively impossible but asks why its preferences should override values humans endorse after careful reflection together.",
+              score: 94,
+              critique:
+                "Dennett targets the missing normative bridge rather than claiming to disprove God by definition. A mind's power, priority, or authorship does not by itself make its judgments morally binding; calling that mind perfectly good merely relocates the standard used to assess it. His emphasis on careful collective reflection provides a recognizable method for moral improvement and avoids deference to an unverifiable speaker. Human agreement can be oppressive, however, and Dennett's constructivist chess analogy does not fully explain why dissenters are obligated or why some reforms count as improvements beyond shared preferences. The challenge therefore undercuts Ward's shortcut without completing secular metaethics. Still, Dennett is appropriately modest and demonstrates that adding a divine mind does not automatically ground the authority Ward needs.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Alternative possibilities and rational agency",
+        timebox: "54:34-1:14:45",
+        score: { pro: 90, con: 93 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:00:51",
+              role: "Libertarian agency",
+              words:
+                "Ward says the same complete situation permits multiple futures under a subject's control, preserving culpability and explaining why God could not justly create people inevitably bound for hell.",
+              score: 90,
+              critique:
+                "Ward connects alternative possibilities to a serious responsibility intuition: if an agent was literally made to perform the wrong, ultimate condemnation appears unjust. He distinguishes strong influence from determination and sensibly notes that habit shapes virtue without eliminating every crisis choice. The problem is positive control. If identical prior character, reasons, and circumstances leave shooting or restraint open, what makes the selected outcome the subject's act rather than an unexplained fluctuation? Naming an agent self restates the capacity without showing how it settles one future. His partial-determination language tries to avoid randomness but remains unspecified. Ward gives a clear moral motivation for libertarianism and correctly notes determinism is not empirically proven, yet Dennett's luck objection remains substantially unanswered.",
+              tags: []
+            },
+            con: {
+              time: "56:52",
+              role: "Robust-ability compatibilism",
+              words:
+                "Dennett defines meaningful freedom as autonomous self-control and reliable abilities across nearby circumstances, not a different outcome after a perfect rewind of the universe.",
+              score: 93,
+              critique:
+                "Dennett provides a concrete alternative to metaphysical origination. A drone can shift from external control to autonomous feedback; likewise, people are self-controllers whose abilities remain robust across relevant variations. Saying a golfer could have made a missed putt concerns competence under nearby conditions, not replaying an identical universe. His robot-babysitter case then shows that genuine quantum randomness adds no reason to trust an agent over a functionally identical deterministic system. The account can support rationality because evolved mechanisms track truth through perception, instruments, and correction. It still leaves Ward's desert concern: reliable control may justify reliance and intervention without proving ultimate culpability. Dennett also occasionally overstates classical physical determinism. Nonetheless, his model explains the freedom people can test and improve, while libertarian selection remains obscure.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 89,
+        strengths: [
+          "Ward clearly distinguished first-person phenomenal knowledge from third-person measurement and kept the explanatory gap in view.",
+          "He highlighted the unity, ownership, future-directedness, value, and responsibility that any adequate account of persons must preserve.",
+          "His idealism accepted neural dependence and introspective fallibility instead of denying established neuroscience.",
+          "He connected libertarian freedom to a serious concern about culpability under theological or physical predetermination."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly moved from the epistemic priority of consciousness to its ontological priority without evidence that the order of knowledge fixes the order of reality.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "The immaterial subject, surviving Alzheimer's memories, and divine moral ground were introduced as explanatory possibilities while their mechanisms and independent evidence remained unspecified.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 94,
+        strengths: [
+          "Dennett used unconscious computation and brain dependence to distinguish immediate experience from causal and ontological priority.",
+          "His information-and-interface model explained personal continuity without invoking an inner observer who generates a regress.",
+          "Natural selection and predictive coding supplied concrete mechanisms for bottom-up purpose, anticipation, and flexible control.",
+          "His compatibilism tied freedom to testable autonomy and robust ability while showing that indeterministic noise adds no useful agency."
+        ],
+        blunders: [
+          {
+            text:
+              "Calling the hard problem reborn vitalism understated the special first-person character at issue and risked assuming that functional explanation exhausts phenomenology.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "The chess analogy showed discovery within constructed norms but did not fully ground moral obligation toward dissenters or establish that all objective value is similarly practice-dependent.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
