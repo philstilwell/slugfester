@@ -1987,9 +1987,9 @@ function renderBackend() {
           <p class="assessment-lede">This is the machinery behind Slugfester: transcripts are cleaned, quotes are anchored, arguments are paired by issue, and each move is scored against ordinary standards of logical coherence, evidential support, responsiveness, and fallacy avoidance.</p>
         </div>
         <aside class="assessment-stamp" aria-label="Backend model">
-          <span>Current default model</span>
+          <span>Historical production default</span>
           <strong>${escapeHtml(currentAssessmentModel)}</strong>
-          <p>Debates 01-130 were assessed with ${escapeHtml(legacyAssessmentModel)}. Beginning with Debate 131, new assessments use ${escapeHtml(currentAssessmentModel)}. A score describes the reasoning in the transcript, not whether a worldview is finally true.</p>
+          <p>Debates 01-130 were originally assessed with ${escapeHtml(legacyAssessmentModel)}; Debate 131 began the ${escapeHtml(currentAssessmentModel)} series. A full v2 reassessment names the model that actually rebuilt it, so Debate 01 now identifies 5.6 Sol without relabeling untouched scorecards.</p>
         </aside>
       </section>
 
@@ -2015,7 +2015,7 @@ function renderBackend() {
           <li><span>01</span><strong>Ingest the source.</strong><p>YouTube captions or supplied transcripts are cleaned lightly, timestamped, and marked with source notes so readers know what material was assessed.</p></li>
           <li><span>02</span><strong>Map the debate.</strong><p>The backend identifies the motion, recurring topics, speaker roles, side labels, and representative quotes that best encapsulate each position.</p></li>
           <li><span>03</span><strong>Pair the exchanges.</strong><p>Sections are organized around argumentative movement: one side's claim, the other side's answer, and the issue that connects them.</p></li>
-          <li><span>04</span><strong>Score the reasoning.</strong><p>Each move is scored for relevance, warrant strength, evidence, internal consistency, burden discipline, and responsiveness to objections.</p></li>
+          <li><span>04</span><strong>Score the reasoning.</strong><p>Rubric v2 scores six weighted dimensions first, then calculates move, section, and centrality-weighted overall results from a saved ledger.</p></li>
           <li><span>05</span><strong>Attach critiques.</strong><p>The ◉ popovers give the fuller diagnosis: what was strong, what was missing, and how any fallacy or bias affected the score.</p></li>
           <li><span>06</span><strong>Publish indexes.</strong><p>The same data powers clean debate pages, timestamped YouTube links, search filters, topic cards, and fallacy or bias reference pages.</p></li>
         </ol>
@@ -2023,9 +2023,24 @@ function renderBackend() {
 
       <section class="assessment-rubric" aria-labelledby="assessment-rubric-heading">
         <div class="section-heading">
-          <p class="eyebrow">Rubric</p>
-          <h2 id="assessment-rubric-heading">How the numbers read</h2>
+          <p class="eyebrow">Rubric v2</p>
+          <h2 id="assessment-rubric-heading">How the numbers are earned</h2>
         </div>
+        <p class="assessment-rubric-intro">The v2 reassessment method scores the transcript performance before calculating totals. The same definitions and burdens apply to both sides; applause, status, and agreement with a conclusion do not count.</p>
+        <div class="principle-grid rubric-dimensions">
+          ${renderAssessmentPrinciple("25% · Logical coherence", "Do the conclusion and intermediate claims follow without contradiction, equivocation, or an invalid inference?")}
+          ${renderAssessmentPrinciple("20% · Evidence and warrant", "Are factual claims supported, and are the bridges from evidence to conclusion defended?")}
+          ${renderAssessmentPrinciple("20% · Responsiveness", "Does the move engage the strongest relevant point rather than a weaker substitute or diversion?")}
+          ${renderAssessmentPrinciple("15% · Relevance and burden", "Does the move advance the side's actual burden on the motion without shifting or inflating it?")}
+          ${renderAssessmentPrinciple("10% · Precision and clarity", "Are the terms, scope, modality, and confidence sufficiently clear and stable?")}
+          ${renderAssessmentPrinciple("10% · Calibration and charity", "Does confidence match the evidence while treating live alternatives fairly?")}
+        </div>
+        <div class="rubric-formulas" aria-label="Rubric score formulas">
+          <article><strong>Move</strong><code>.25L + .20E + .20R + .15B + .10P + .10C</code></article>
+          <article><strong>Section</strong><code>.70 move mean + .10 coverage + .10 burden progress + .10 coherence</code></article>
+          <article><strong>Overall</strong><code>.70 centrality-weighted sections + .12 case completion + .10 resilience + .08 calibration</code></article>
+        </div>
+        <h3 class="score-bands-heading">Score bands</h3>
         <div class="score-band-list">
           ${renderScoreBand("90-100", "Exceptional", "A clear, relevant, well-supported move that anticipates the strongest obvious replies and survives them.", 96)}
           ${renderScoreBand("80-89", "Strong", "A persuasive argument or rebuttal with minor gaps, compressed support, or uncertainty that does not defeat the main point.", 86)}
@@ -2297,12 +2312,16 @@ function renderScoringNote(debate) {
   if (!debate.scoringNote) return "";
 
   const model = assessmentModelFor(debate);
+  const rubric = debate.assessmentRubric
+    ? `<span class="assessment-rubric">Rubric: ${escapeHtml(debate.assessmentRubric)}.</span>`
+    : "";
 
   return `
     <section class="scoring-note" aria-label="Scoring note">
       <strong>AI-generated scorecard</strong>
       <span>${escapeHtml(debate.scoringNote)}</span>
       <span class="assessment-model">Assessments made by ${escapeHtml(model)}.</span>
+      ${rubric}
     </section>
   `;
 }
@@ -2522,6 +2541,8 @@ function renderOverallSide(side, overall, tone, debateId) {
 function renderLogicalExtension(debate) {
   if (!debate.logicalExtension) return "";
 
+  const model = assessmentModelFor(debate);
+
   return `
     <section class="logical-extension" aria-labelledby="ai-extension-heading">
       <div class="section-heading logical-extension-heading">
@@ -2541,7 +2562,7 @@ function renderLogicalExtension(debate) {
         </summary>
         <div class="ai-extension-accordion-content">
           <p class="logical-extension-intro">
-            This section is an AI-generated contribution from Slugfester—not a transcript summary, a quotation, or a claim that either speaker made these arguments in this form. The AI extends and strengthens both positions independently. “Unassailable” here means rebuilt to withstand the clearest objections in this exchange—not immune from rational dispute.
+            This section is an AI-generated contribution from ${escapeHtml(model)} for Slugfester—not a transcript summary, a quotation, or a claim that either speaker made these arguments in this form. The AI extends and strengthens both positions independently. “Unassailable” here means rebuilt to withstand the clearest objections in this exchange—not immune from rational dispute.
           </p>
           <div class="logical-extension-grid">
             ${renderLogicalExtensionSide(debate.sides.pro, debate.logicalExtension.pro, "teal")}

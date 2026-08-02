@@ -5,11 +5,11 @@ export const debateSummaries = [
     "number": "01",
     "title": "Alex O'Connor vs William Lane Craig: Does God Exist?",
     "label": "Christian theism and suffering",
-    "date": "2026-05-28",
+    "date": "2026-08-02",
     "duration": "1 hr 49 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=TAW6-_L4z9M",
     "motion": "Does God exist, and do cosmology, fine-tuning, morality, resurrection, and suffering support or undermine Christian theism?",
-    "summary": "Craig builds a cumulative case for Christian theism; O'Connor presses the Kalam argument, time, infinity, and animal suffering.",
+    "summary": "Craig defends a cumulative Christian case and the Kalam; O'Connor challenges its cosmology, temporal asymmetry, and treatment of animal suffering.",
     "sides": {
       "pro": {
         "name": "Theist",
@@ -23,27 +23,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 71,
-      "con": 80
+      "pro": 73,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Opening case and first response"
+        "title": "Cumulative case and opening burden"
       },
       {
-        "title": "Infinity and the Kalam"
+        "title": "Actual infinity and traversal"
       },
       {
-        "title": "Time, relativity, and actualized past"
+        "title": "Cosmology, entropy, and theories of time"
       },
       {
-        "title": "Animal suffering and theodicy"
+        "title": "Foreknowledge and the endless future"
       },
       {
-        "title": "Animal consciousness and moral relevance"
+        "title": "Animal suffering and comparative probability"
       },
       {
-        "title": "Final framing"
+        "title": "Animal consciousness and closing burdens"
       }
     ]
   },

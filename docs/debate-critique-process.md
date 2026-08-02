@@ -31,6 +31,7 @@ Every debate object should produce this order:
 6. `◉` interaction guide.
 7. Parallel argument columns, aligned by topic and time.
 8. Overall commentary with `Landed` and `Whiffed` for each side.
+9. A visibly AI-authored, default-collapsed `AI Extension` containing strengthened final arguments and genuinely new arguments for both sides.
 
 ## Segmentation
 
@@ -50,16 +51,33 @@ Every debate object should produce this order:
 
 ## Scoring Rubric
 
-Scores are AI-generated estimates based on conventional standards of argument quality:
+New reassessments use `Slugfester Reassessment Rubric v2` and retain a recomputable JSON ledger in `docs/assessment-ledgers/`. Scores describe the argumentative performance actually displayed in the transcript, not the truth or popularity of a worldview.
 
-- Logical coherence.
-- Relevance to the stated motion.
-- Evidential support and source quality.
-- Responsiveness to the opponent's strongest point.
-- Burden-of-proof discipline.
-- Clear definitions and stable terms.
-- Absence of logical fallacies or cognitive-bias-driven overreach.
-- Charitable treatment of the opposing position.
+Score every selected move from 0–100 on these dimensions:
+
+- Logical coherence: 25%.
+- Evidence and warrant: 20%.
+- Responsiveness to the strongest live point: 20%.
+- Relevance and burden progress: 15%.
+- Precision and clarity: 10%.
+- Calibration and charity: 10%.
+
+Calculate `move = round(.25L + .20E + .20R + .15B + .10P + .10C)`.
+
+For each side in each section, record coverage, burden progress, and within-section coherence. Calculate `section = round(.70 moveMean + .10 coverage + .10 burdenProgress + .10 coherence)`. Before viewing the results, assign the same centrality to that section for both sides: `3` for load-bearing, `2` for major, or `1` for supporting.
+
+Calculate the centrality-weighted section mean, then record case completion, rebuttal resilience, and global calibration. Calculate `overall = round(.70 weightedSectionMean + .12 caseCompletion + .10 rebuttalResilience + .08 globalCalibration)`. Do not hand-adjust a computed total; revise the documented dimension judgment if the score and evidence do not match.
+
+Controls:
+
+- Use identical definitions and burdens for both sides.
+- Score only what the transcript contains; do not silently substitute a published steelman.
+- Treat a diagnostic question as a challenge, not as a promised contrary theory.
+- Do not require a critic to prove the opposite conclusion unless the critic takes on that burden.
+- A possible reply can answer a contradiction claim without answering comparative evidence.
+- Do not deduct automatically for a fallacy or bias tag; score the underlying defect once in the dimensions it actually affects.
+- Ignore applause, wit, status, and audience response except where clarity or charitable engagement changes the argument.
+- Normalize coverage for the speaking opportunity the format supplied.
 
 Score bands:
 
@@ -75,8 +93,9 @@ Score bands:
 - Debates `01` through `130` were assessed with `GPT 5.5 Extra High`.
 - After Debate `130`, Slugfester began using `5.6 Terra Extra High`.
 - Every new debate from `131` onward must include `assessmentModel: "5.6 Terra Extra High"` in `src/data/debates.js`.
+- A full reassessment may use a later model when it replaces the scorecard prose and creates a v2 ledger. Such a debate must explicitly set both the model actually used and `assessmentRubric: "Slugfester Reassessment Rubric v2"`.
 - Do not retroactively relabel existing debates. The displayed model should describe the model used for that assessment.
-- The renderer selects the appropriate model by debate number as a fallback, and `npm run check` rejects any new debate that omits or changes the required `5.6 Terra Extra High` model label.
+- The renderer selects the historical model by debate number only as a fallback. Explicit reassessment attribution takes precedence.
 
 ## Critique Popovers
 
@@ -121,7 +140,19 @@ Each side needs:
 - At least one `Whiffed` point (a material logical weakness or overreach).
 - Links for named fallacies or biases in the `Whiffed` list.
 
-The overall score should reflect the whole performance, not the average of every local score. Weight central issues, successful rebuttals, and burden-of-proof posture more heavily than minor side exchanges.
+For a v2 reassessment, the overall score must equal the ledger formula above. The centrality-weighted sections carry 70%; case completion, rebuttal resilience, and global calibration carry the remaining 30%.
+
+## AI Extension
+
+Place `AI Extension` immediately after Overall Commentary inside a default-collapsed native `details` accordion. State the assessment model and make clear that this is AI-generated work—not transcript content, a quotation, or wording attributable to either speaker.
+
+For each side provide:
+
+- A strengthened thesis, four to six explicit premises, and a proportionate conclusion.
+- Two to four genuinely new reinforcing arguments of 45–130 words each.
+- Direct answers to the strongest objections exposed by the assessment.
+
+Interpret “unassailable” as maximally resistant to the live objections, not literally immune to rational dispute.
 
 ## Manual Checklist
 
@@ -134,6 +165,9 @@ Before committing a new debate:
 - Fallacy/bias tags are warranted and linked to the correct site.
 - The scoring note makes clear that scores are AI-generated.
 - The scoring-note band identifies the correct assessment model: `GPT 5.5 Extra High` through Debate `130`, then `5.6 Terra Extra High` beginning with Debate `131`.
+- A reassessed debate explicitly identifies its actual model and rubric and has a matching ledger in `docs/assessment-ledgers/`.
+- The ledger calculator reproduces every move, section, and overall score in the published debate object.
+- The AI Extension follows Overall Commentary, is visibly AI-generated, and works closed, open, and from the keyboard.
 - Every new debate from `131` onward explicitly sets `assessmentModel` to `5.6 Terra Extra High`.
 - `sourceNote` identifies how the transcript was obtained or cleaned.
 - The page follows the locked design in `youtube-debate-assessment-template.md`.

@@ -17,6 +17,7 @@ The debate page should keep this order and visual hierarchy:
 6. Sticky side headings for the two debate columns.
 7. Topic sections with paired argument/rebuttal cards.
 8. Overall commentary with each side's `Landed` and `Whiffed` points.
+9. A default-collapsed `AI Extension` after Overall Commentary, visibly identified as the assessment model's contribution rather than transcript content.
 
 Landing-page design:
 
@@ -70,13 +71,15 @@ Design constraints:
 7. Segment the debate into 4-7 topical sections.
 8. For each section, align 1-3 exchanges by topic rather than by every interruption.
 9. Write each `argument.words` as actual words or a tight transcript-grounded condensation.
-10. Set `assessmentModel` to `5.6 Terra Extra High` for Debate `131` and every later debate. Debates `01` through `130` retain their original `GPT 5.5 Extra High` attribution.
-11. Score each move using the rubric in `debate-critique-process.md`.
-12. Write each critique at 105-130 words.
-13. Add fallacy or bias tags only when they explain a real weakness, and include a context note for each tag.
-14. Write the overall `Landed` and `Whiffed` points.
-15. Run `npm run seo`.
-16. Run `npm run check`.
+10. Record the exact model that performed the assessment. Historical scorecards retain their original attribution; never relabel old work.
+11. For a v2 reassessment, set `assessmentRubric: "Slugfester Reassessment Rubric v2"`, create `docs/assessment-ledgers/<debate-id>.json`, and score every move's six dimensions before calculating any totals.
+12. Choose shared section centralities before calculating either side's overall score, then run the ledger calculator without manual overrides.
+13. Write each critique at 105-130 words.
+14. Add fallacy or bias tags only when they explain a real weakness, and include a context note for each tag.
+15. Write Overall Commentary from the centrality-weighted record.
+16. Add an AI Extension with a strengthened final argument and genuinely new reinforcing arguments for both sides.
+17. Run `npm run seo`.
+18. Run `npm run check`.
 
 Topic categorization:
 
@@ -93,6 +96,7 @@ Use this shape when adding an object to `src/data/debates.js`.
   id: "speaker-a-speaker-b-topic-year",
   number: "131",
   assessmentModel: "5.6 Terra Extra High",
+  assessmentRubric: "Slugfester Reassessment Rubric v2", // Required for v2 reassessments.
   title: "Speaker A vs Speaker B: Debate Title",
   label: "Concise topic label for the card title and supplementary chips",
   topicCategory: "science-design",
@@ -201,6 +205,38 @@ Use this shape when adding an object to `src/data/debates.js`.
         }
       ]
     }
+  },
+  logicalExtension: {
+    pro: {
+      finalArgument: {
+        thesis: "AI-authored steelman thesis.",
+        premises: [
+          "Four to six explicit, fully stated premises that answer the strongest live objections."
+        ],
+        conclusion: "A proportionate conclusion supported by the premises."
+      },
+      newArguments: [
+        {
+          title: "New reinforcing argument",
+          text: "A genuinely new argument in 45-130 words, not a restatement of the transcript."
+        }
+      ]
+    },
+    con: {
+      finalArgument: {
+        thesis: "AI-authored steelman thesis.",
+        premises: [
+          "Four to six explicit, fully stated premises that answer the strongest live objections."
+        ],
+        conclusion: "A proportionate conclusion supported by the premises."
+      },
+      newArguments: [
+        {
+          title: "New reinforcing argument",
+          text: "A genuinely new argument in 45-130 words, not a restatement of the transcript."
+        }
+      ]
+    }
   }
 }
 ```
@@ -227,6 +263,9 @@ Use this shape when adding an object to `src/data/debates.js`.
 - `scoringNote` explicitly says the scores are AI-generated.
 - The scoring-note band states the model actually used: `GPT 5.5 Extra High` through Debate `130`, or `5.6 Terra Extra High` from Debate `131` onward.
 - New debate objects from `131` onward explicitly include `assessmentModel: "5.6 Terra Extra High"`.
+- A v2 reassessment explicitly records its actual model, rubric version, and saved scoring ledger.
+- Every v2 published score matches the deterministic ledger formula in `debate-critique-process.md`.
+- The AI Extension is immediately after Overall Commentary, default-collapsed, keyboard-operable, and explicitly AI-authored.
 - LogFall links are used only for fallacies.
 - CogBias links are used only for cognitive biases.
 - Fallacy and bias pills show hover/focus popovers with basic definitions, contextual explanation, and the note `Click button for more info.`
