@@ -64092,6 +64092,290 @@ export const debates = [
       }
     }
   },
+  {
+    id: "huemer-oppy-souls-personal-identity-2022",
+    number: "190",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Michael Huemer vs Graham Oppy: Do Souls Exist?",
+    label: "Mind, souls, and personal identity",
+    topicCategory: "mind-consciousness-free-will",
+    date: "2026-08-01",
+    duration: "2 hr 5 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=gxSi0htNihk",
+    motion:
+      "Do conscious persons possess nonphysical mental substances that can survive bodily death?",
+    summary:
+      "Huemer argues that qualia, intentionality, agency, and identity support nonphysical souls and possible reincarnation; Oppy defends a naturalistic identity theory with irreducible properties at different physical scales.",
+    sourceNote:
+      "Built from the English auto-generated YouTube caption track. Captions were checked against the recording and lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "qualia are apparently a non-physical property",
+        context:
+          "Huemer treats phenomenal character as evidence for property dualism before adding personal-identity considerations for a mental substance."
+      },
+      con: {
+        text: "perceptual states are largely states of the brain",
+        context:
+          "Oppy identifies experience with organism-scale neural states while denying that their properties must reduce definitionally to microphysics."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Nonphysical souls exist",
+        speaker: "Michael Huemer",
+        color: "teal"
+      },
+      con: {
+        name: "Persons are natural organisms",
+        speaker: "Graham Oppy",
+        color: "coral"
+      }
+    },
+    score: { pro: 87, con: 92 },
+    sections: [
+      {
+        title: "Qualia and Mary's new knowledge",
+        timebox: "4:47-18:05",
+        score: { pro: 91, con: 94 },
+        exchanges: [
+          {
+            pro: {
+              time: "5:09",
+              role: "Phenomenal-gap argument",
+              words:
+                "Huemer argues that what an experience feels like is the phenomenon itself, unlike heat or lightning, so a complete physical description that omits that feel has not reduced consciousness.",
+              score: 91,
+              critique:
+                "Huemer isolates the distinctive target accurately. Molecular motion can explain external heat while treating felt warmth as its effect, but a theory of qualia cannot similarly discard feeling because feeling is what it set out to explain. Nagel's bat and Mary's color experience make the first-person access gap vivid, and Huemer appropriately presents the move as evidence rather than deduction. The weakness is the step from conceptual resistance to ontology. Our inability to derive phenomenal concepts from microphysical vocabulary may reflect different modes of access to one state, not two kinds of substance. Huemer also concedes that qualia and intentionality establish, at most, property dualism; the further move to a soul must come later. This is a strong explanatory challenge but incomplete support for the motion.",
+              tags: []
+            },
+            con: {
+              time: "11:10",
+              role: "Ability-and-acquaintance reply",
+              words:
+                "Oppy says Mary may know every discursive physical fact yet lack acquaintance with a physical brain state that can be known fully only by occupying or artificially inducing it.",
+              score: 94,
+              critique:
+                "Oppy's reply directly preserves both Mary's learning and mind-brain identity. Knowing all descriptions of a neural state need not confer the ability to instantiate it, just as propositional knowledge need not supply every perceptual or practical capacity. If Mary induces the relevant state, she can learn the phenomenal aspect inside the room; if she cannot, the stipulated deprivation explains why she learns upon release. Huemer fairly notes that this revises the thought experiment's claim that she knows all physical facts, but that is precisely the disputed premise rather than neutral evidence. Oppy's account would be stronger with a clearer distinction among facts, concepts, and abilities, and it does not explain why the occupied state has a feel. Still, it blocks the inference from new knowledge to nonphysical property.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Identity theory across physical scales",
+        timebox: "18:05-33:01",
+        score: { pro: 88, con: 93 },
+        exchanges: [
+          {
+            pro: {
+              time: "23:08",
+              role: "Irreducibility challenge",
+              words:
+                "Huemer observes that Oppy's autonomous higher-scale properties resemble emergence and argues that phenomenal kinds cannot simply be identified with different neural realizations by stipulation.",
+              score: 88,
+              critique:
+                "Huemer usefully presses Oppy on what substantive difference remains between scale independence, emergence, and property dualism. If psychological predicates cannot even in principle be defined through lower-scale properties and can exercise downward causation, calling every state physical may become terminological rather than explanatory. His cross-species question also challenges a simple type identity: dogs and humans could share color experience despite neural differences. Oppy answers with restricted kinds and same-scale identity, but the exact identity conditions stay loose. Huemer does not convert this pressure into evidence for a separate bearer. Multiple realization can challenge type identity while supporting functionalism or nonreductive physicalism, and accepting irreducible properties is not accepting substances. He exposes instability in Oppy's labels more effectively than he establishes a soul.",
+              tags: []
+            },
+            con: {
+              time: "18:18",
+              role: "Scale-independent naturalism",
+              words:
+                "Oppy denies that microphysics has privileged vocabulary: molecules, organisms, and minds possess real properties at their own scales, while conscious states remain identical with organism-scale brain states.",
+              score: 93,
+              critique:
+                "Oppy's layered account avoids a common reductionist caricature. Chemistry needs predicates absent from particle physics, and organism-level explanation can be autonomous without adding supernatural objects. He therefore grants that qualia are not definitionally reconstructible from quark vocabulary while maintaining that perceiving red is a neural process considered at the appropriate scale. This preserves causal relevance and explains why brain intervention changes experience. The position is less tidy than Oppy sometimes suggests. Restricted type identities require criteria for which organisms instantiate the same experiential kind, and denying both microphysical reduction and strong emergence leaves the cross-scale relation underdescribed. His resistance to the word 'emergence' is partly verbal. Nevertheless, one complex natural entity is more economical than adding a mental substance whose interaction and individuation remain unspecified.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Intentionality and the location of thought",
+        timebox: "33:01-38:40",
+        score: { pro: 89, con: 92 },
+        exchanges: [
+          {
+            pro: {
+              time: "33:33",
+              role: "Aboutness argument",
+              words:
+                "Huemer says thoughts intrinsically refer to things whereas mass, shape, and tree rings do not; treating rings as information projects a mind's derivative interpretation onto physical structure.",
+              score: 89,
+              critique:
+                "Huemer distinguishes intrinsic from derivative representation clearly. Tree rings covary with age, but it is an interpreter who uses them as evidence; a thought about Paris seems to possess aboutness in its own right. This prevents bare correlation from masquerading as a complete naturalization of content. He is also commendably calibrated, calling intentionality inconclusive evidence and acknowledging that naturalistic accounts sound more plausible here than for qualia. Yet his central warrant remains an intuition about what sounds physical. Teleosemantic and functional theories aim to explain original content through evolved use, error conditions, and organism-environment relations, and Huemer does not engage their strongest details. Even if intentionality is irreducible, that supports a distinctive property more immediately than a separable subject. The argument raises a burden without carrying his full conclusion.",
+              tags: []
+            },
+            con: {
+              time: "36:18",
+              role: "Functional-content reply",
+              words:
+                "Oppy argues that an organism's physical state can bear representational content through its functional and teleological relations, making intentionality less troublesome than phenomenal consciousness.",
+              score: 92,
+              critique:
+                "Oppy identifies the relevant research program rather than equating representation with resemblance. Beliefs and desires can be neural states whose content derives from the roles they play in perception, learning, inference, and action, shaped by environmental and evolutionary history. That framework can explain misrepresentation, which simple covariance accounts struggle to capture. He also wisely concedes that consciousness is the harder case. The response is compressed: citing many naturalistic theories does not show that any one secures intrinsic normativity rather than sophisticated derivative meaning. Huemer can still ask why functional relations amount to a state being about Paris for the subject. Oppy supplies a credible mechanism family and defeats the claim of obvious impossibility, but he does not finish the naturalization of content during this exchange.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Free will and downward causation",
+        timebox: "38:40-56:54",
+        score: { pro: 91, con: 90 },
+        exchanges: [
+          {
+            pro: {
+              time: "39:23",
+              role: "Consequence-and-reasons argument",
+              words:
+                "Huemer argues that deterministic action requires a different inaccessible past to do otherwise, while indeterministic particles still act blindly rather than because the agent recognizes reasons.",
+              score: 91,
+              critique:
+                "Huemer's grade example states the consequence intuition accessibly: if doing otherwise required a past that did not occur, the agent lacks the relevant alternative. He then improves on merely invoking quantum randomness. Random microevents do not become control, and particles do not evaluate reasons; rational agency needs person-level causation. This is a serious challenge to both deterministic and bottom-up indeterministic pictures. However, a mental substance does not automatically solve it. If the soul's selection is undetermined, Huemer still owes an account of why it is controlled rather than lucky; if determined by its reasons and character, the original alternative-possibilities demand returns. Oppy's scale account already allows reasons to be organism-level causes. Huemer motivates irreducible agency, but the added substance remains explanatorily idle.",
+              tags: []
+            },
+            con: {
+              time: "41:27",
+              role: "Local compatibilism",
+              words:
+                "Oppy combines fundamental quantum chance with robust local determination and defines freedom as action flowing from normally acquired beliefs and desires without coercive or disabling interference.",
+              score: 90,
+              critique:
+                "Oppy avoids claiming that the whole universe is deterministic and separates global physics from stable person-level counterfactuals. Across nearby worlds, normal deliberation may produce the same decision; that reliability can constitute rational control rather than its negation. His compatibilist criterion also maps onto practices of compulsion, impairment, and responsibility better than a perfect cosmic replay. The difficulty is cross-scale causation. Oppy says arm-waving explains particle motion and denies strong bottom-up determination, yet also accepts supervenience and organism-brain identity. Without a more explicit causal model, downward explanation can look like relabeling one physical process at different scales or exempting higher properties from closure when convenient. He shows that substance dualism is unnecessary for practical agency, but his metaphysics of autonomous causal powers remains insufficiently worked out here.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Infinite time and reincarnation",
+        timebox: "56:54-1:22:01",
+        score: { pro: 78, con: 95 },
+        exchanges: [
+          {
+            pro: {
+              time: "57:42",
+              role: "Existence-now argument",
+              words:
+                "Huemer says that in an infinite past a once-only life has probability zero of occurring now; because we do exist now, either the past is finite or persons live repeatedly.",
+              score: 78,
+              critique:
+                "Huemer offers an inventive evidential argument and states its dependencies openly: an infinite past, an infinite future, objective personal identity, and some recurrence mechanism. He also admits that ordinary memory supplies no support and that alleged past-life reports may be false. The probability step is deeply problematic. Infinite timelines do not automatically provide a uniform probability distribution over moments, and a probability-zero event need not be impossible or maximally disconfirmed. Indexical observation—every observer necessarily finds itself at its own present—also complicates treating 'now' as a randomly sampled external time. Qualitative duplicates do not establish numerical identity, especially when no memories or causal continuity connect them. With several speculative premises doing all the work, the conclusion outruns the evidence despite Huemer's candor.",
+              tags: []
+            },
+            con: {
+              time: "1:03:27",
+              role: "Cosmology-and-identity objection",
+              words:
+                "Oppy argues that current cosmology favors a finite past and heat-death future without recurrence, while duplicate offices and persons raise the same unresolved identity problem.",
+              score: 95,
+              critique:
+                "Oppy attacks both load-bearing premises. Standard cosmological models make a finite past and indefinitely expanding, increasingly empty future more credible than endless recurrence, while entropy and proton decay undermine the assumed restoration of people. He then observes that Huemer's probability reasoning generalizes to offices and other once-occurring objects unless a nonsemantic identity criterion distinguishes persons. Those points directly reduce the reincarnation argument's prior plausibility. Oppy appropriately presents the physics as his best-informed view rather than certainty. His alternative claim that an initial state is metaphysically necessary follows from a controversial branching-modality theory and does not itself explain why that theory is true; Huemer exposes how necessity can merely redescribe every brute fact. Even so, Oppy needs only defeat reincarnation, and on that burden he succeeds decisively.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Religious and ethical stakes",
+        timebox: "1:22:01-2:04:46",
+        score: { pro: 86, con: 91 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:37:44",
+              role: "Souls without revealed religion",
+              words:
+                "Huemer says theism would raise the probability of human souls but grounds his own view in mind and identity, accepts evolution, and denies that disembodied souls think without brains.",
+              score: 86,
+              critique:
+                "Huemer prevents the soul thesis from functioning as covert apologetics. He is agnostic, treats God as one possible soul rather than the source of his inference, accepts animal minds and evolution, and follows brain-damage evidence in denying active thought between embodiments. Those concessions make his view empirically responsive and distinguish it from a traditional immortal rational essence. They also expose its fragility. An eternal nonphysical subject that cannot remember, reason, feel, or act without a suitable brain has no independently detectable features during disembodiment. Huemer cannot specify when it attaches, what carries identity, or whether it can inhabit another species. The proposed substance appears to preserve a numerical label through causal inactivity rather than explain observable phenomena. His intellectual honesty is strong; the positive ontology remains sparse.",
+              tags: []
+            },
+            con: {
+              time: "1:47:40",
+              role: "Naturalistic stakes and restraint",
+              words:
+                "Oppy says souls would matter to religious worldviews but treats theism and physicalism as revisable comprehensive theories, resisting precise probabilities across reasonable philosophical disagreement.",
+              score: 91,
+              critique:
+                "Oppy shows useful epistemic restraint. His own branching metaphysics makes classical theism impossible, yet he refuses to convert that conditional result into certainty and acknowledges that intelligent philosophers can reasonably accept rival worldviews. He identifies Swinburne's cumulative case as the strongest developed theistic model rather than dismissing religion wholesale. On fetal consciousness, he ties any mind to relevant brain activity and cautiously locates it after early neural development, keeping the conclusion proportional to available evidence. The weakness is that his modality theory can predetermine too much: declaring the actual initial state necessary risks excluding rival laws and divine agency through framework choice rather than independent argument. His refusal to quantify worldview probabilities is defensible but leaves comparative confirmation vague. Overall, he integrates empirical constraints more successfully than Huemer's undetectable intervals.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 87,
+        strengths: [
+          "Huemer clearly isolated the first-person character of qualia and explained why ordinary reductions cannot simply discard the feel being explained.",
+          "He distinguished intrinsic intentionality from interpreted physical correlations and calibrated these considerations as evidence rather than deductions.",
+          "His free-will argument correctly showed why adding microscopic randomness does not by itself produce rational control.",
+          "He openly accepted evolution, brain dependence, animal consciousness, and the uncertainty of every proposed reincarnation mechanism."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly treated the absence of a satisfying physical reduction as positive evidence for nonphysical properties before eliminating identity, functional, and acquaintance alternatives.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          },
+          {
+            text:
+              "The reincarnation argument conflated probability zero on an unspecified infinite distribution with decisive disconfirmation and then moved from qualitative recurrence to personal identity.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 92,
+        strengths: [
+          "Oppy supplied a coherent acquaintance reply to Mary that preserved both phenomenal learning and mind-brain identity.",
+          "His scale-independent naturalism recognized irreducible organism-level explanation without multiplying substances.",
+          "He connected practical freedom to stable reasons-responsive capacities rather than inaccessible alternative cosmic histories.",
+          "His cosmological and identity objections directly undercut the premises required for Huemer's reincarnation inference."
+        ],
+        blunders: [
+          {
+            text:
+              "His appeals to autonomous higher-scale causation remained underdescribed, making the identity theory appear to receive causal flexibility not granted to rival property views.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "He derived the necessity of the universe's initial state from his preferred branching account of modality even though that account was itself the disputed framework.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
