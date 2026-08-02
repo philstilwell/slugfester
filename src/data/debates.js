@@ -62357,6 +62357,289 @@ export const debates = [
       }
     }
   },
+  {
+    id: "enoch-sampson-loeb-lutz-moral-realism-2024",
+    number: "184",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "David Enoch & Eric Sampson vs Don Loeb & Matthew Lutz: Is Moral Realism True?",
+    label: "Moral realism, knowledge, and categorical reasons",
+    date: "2026-08-01",
+    duration: "1 hr 43 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=6Uw9szL-3MA",
+    motion:
+      "Are there stance-independent moral facts that people can know and that supply genuinely categorical reasons for action?",
+    summary:
+      "Enoch and Sampson defend robust moral realism through Moorean cases and rational reflection; Loeb and Lutz argue that desire-relative reasons and a naturalistic explanation of moral experience make such facts unnecessary.",
+    sourceNote:
+      "Built from the English-original YouTube caption track. Captions were checked against the recording and lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "the moral truths are not invented; they're discovered",
+        context:
+          "Sampson argues that reflection reveals stance-independent relations rather than creating moral truth through approval or choice."
+      },
+      con: {
+        text: "there's no good reason to think that moral facts exist",
+        context:
+          "Lutz states the error theorist's burden-shifting case: moral facts should not enter the ontology without distinctive evidence."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Stance-independent moral facts exist",
+        speaker: "David Enoch & Eric Sampson",
+        color: "teal"
+      },
+      con: {
+        name: "Moral realism lacks adequate evidence",
+        speaker: "Don Loeb & Matthew Lutz",
+        color: "coral"
+      }
+    },
+    score: { pro: 92, con: 91 },
+    sections: [
+      {
+        title: "The Moorean case and the burden of proof",
+        timebox: "0:01-17:55",
+        score: { pro: 94, con: 91 },
+        exchanges: [
+          {
+            pro: {
+              time: "0:01",
+              role: "Common-sense realism",
+              words:
+                "Sampson argues that plowing into pedestrians for convenience is wrong because of the suffering and trivial benefit, not because any actual or idealized stance makes it wrong.",
+              score: 94,
+              critique:
+                "Sampson's pedestrian case is a well-designed Moorean argument because it fixes attention on a judgment whose confidence exceeds confidence in the abstract premises usually used to deny it. His Euthyphro-style question also reaches sophisticated response-dependent views: an ideal observer should approve because the act is wrong, not make it wrong by approving. Enoch improves the presentation by conceding that realism brings ontological and epistemological costs, so intuitive force is an initial datum rather than a proof. The weakness is that the conclusion is partly encoded in the description of suffering as a stance-independent reason. An anti-realist can preserve condemnation while interpreting its authority expressively or constructively. Still, the team clearly establishes why revisionary theories, not ordinary judgment, owe the opening explanation.",
+              tags: []
+            },
+            con: {
+              time: "16:25",
+              role: "Ontological burden",
+              words:
+                "Lutz argues that disbelief needs no special defeater when a proposed class of facts lacks evidence, comparing his error theory to atheism rather than to skepticism about ordinary objects.",
+              score: 91,
+              critique:
+                "Lutz correctly resists a crude burden reversal. If robust moral facts are a substantive addition to a naturalistic worldview, realists must explain what evidence favors them; the absence of a decisive debunking genealogy does not by itself vindicate their existence. His analogy to atheism makes that methodological point efficiently. Yet it also assumes the evidential dispute. Sampson treats considered normative judgment as evidence, much as philosophers treat modal or logical intuitions, while Lutz classifies only causal-explanatory relations as probative. Until that criterion is defended, saying there is 'no good reason' risks announcing the result of a contested epistemology. The opening nonetheless sets a useful comparative test: realism must show that its facts explain or rationally ground something that desire, psychology, and social learning cannot supply.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Moral explanation and Harman's challenge",
+        timebox: "17:55-40:29",
+        score: { pro: 91, con: 94 },
+        exchanges: [
+          {
+            pro: {
+              time: "31:38",
+              role: "Constitutive explanation",
+              words:
+                "Sampson says a brain-state account of seeing a cup is incomplete without the cup, and moral experience likewise ultimately traces to rational recognition of suffering's wrongness.",
+              score: 91,
+              critique:
+                "Sampson refuses to let a proximal psychological mechanism automatically exclude a distal rational explanation. Beliefs can be culturally transmitted because someone responded to reasons, just as neural activity can occur because a cup is present. He also distinguishes causal contact from constitutive intellectual awareness, which is necessary if abstract truths are knowable at all. The cup analogy, however, outruns the support offered. Cups enter a detailed causal network that independently predicts perception; the claim that an ancestor 'contacted moral reality' supplies no comparable mechanism or discriminating prediction. Enoch's broader point—that evidence need not always be an inference to the best causal explanation—is stronger than Sampson's literal analogy. The realist side preserves a possible epistemic role for reflection but does not explain why its seeming tracks truth rather than inherited sentiment.",
+              tags: []
+            },
+            con: {
+              time: "17:55",
+              role: "Explanatory exclusion",
+              words:
+                "Lutz applies Harman's cat-burning case: natural, psychological, and evolutionary facts explain the observer's reaction without any causal contribution from the act's wrongness.",
+              score: 94,
+              critique:
+                "Lutz gives the anti-realist side its clearest evidential argument. Our horror at cruelty is predictably produced by visible suffering, temperament, upbringing, and evolutionary history; adding an abstract property of wrongness appears to change no observation. This contrasts moral perception with seeing a cat, where the object participates in the causal explanation. The argument explains both why moral judgments feel immediate and why that immediacy may not certify correspondence. Its limitation is an overly narrow explanatory standard. Mathematical, logical, and modal considerations can justify belief without causing it, and reasons may explain actions by rationalizing them rather than pushing neurons. Lutz must show either that all such knowledge is analytic or that morality uniquely lacks noncausal warrant. He raises a serious deficit for realism without yet deriving error theory from it.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Categorical and instrumental reasons",
+        timebox: "26:20-45:45",
+        score: { pro: 93, con: 90 },
+        exchanges: [
+          {
+            pro: {
+              time: "36:27",
+              role: "Sadist counterexample",
+              words:
+                "Enoch argues that learning a torturer wants suffering intensifies moral criticism even though it removes the instrumental criticism that torture frustrates the agent's desires.",
+              score: 93,
+              critique:
+                "Enoch's sadist case precisely separates two dimensions that Loeb's instrumental account threatens to merge. If an agent mistakenly tortures while trying to help, correcting the factual mistake addresses instrumental irrationality; if the agent desires suffering, the moral objection remains and becomes more urgent. Our criticism therefore cannot be paraphrased simply as failure relative to the agent's ends. Enoch also notes that people can incur theoretical commitments they verbally reject, preventing autobiographical reports from settling whether Loeb relies on categorical norms. The argument establishes a conceptual role for stance-independent criticism, though not its metaphysical success. Loeb can describe condemnation as expressing the community's deepest concerns without calling the sadist irrational. Enoch shows what that translation loses—authority over the target—but still needs to prove that ordinary authority is truth-tracking rather than projected.",
+              tags: []
+            },
+            con: {
+              time: "26:20",
+              role: "Desire-relative rationality",
+              words:
+                "Loeb says an agent bound for Cleveland who boards the known wrong bus is intelligibly defective relative to a desire, while moral conduct can be explained by similarly durable cares.",
+              score: 90,
+              critique:
+                "Loeb offers a coherent positive picture rather than merely denying categorical reasons. Means-end relations explain familiar mistakes, and his own avoidance of pedestrians follows from stable concern for other people without invoking an external command. He is admirably willing to say that a fully informed sadist may be instrumentally rational while remaining someone he fiercely opposes. That candor protects the view from equivocation between imprudence and immorality. But the account becomes thin at precisely the hardest cases. Telling a torturer 'you do not care about people I care about' records opposed attitudes; it does not capture the apparent claim that the torturer has reason to stop even after all desires are disclosed. Loeb can reject that appearance, but the theoretical economy is purchased through a substantial revision of interpersonal criticism.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "A priori access to moral truth",
+        timebox: "45:54-1:09:09",
+        score: { pro: 90, con: 93 },
+        exchanges: [
+          {
+            pro: {
+              time: "57:30",
+              role: "Rational reflection model",
+              words:
+                "Sampson places moral knowledge beside logic and philosophy: people attend to cases, compare principles, and refine judgments without requiring causal contact with an abstract object.",
+              score: 90,
+              critique:
+                "Sampson correctly broadens the epistemic comparison beyond ordinary perception. Philosophers routinely test principles against cases, revise concepts, and seek reflective coherence; Gettier judgments and logical counterexamples do not depend on a causal beam from an abstract fact. This makes Lutz's demand for a physical connection look question-begging if imposed only on morality. Sampson also admits that reference and a priori knowledge remain general philosophical problems rather than pretending to solve them in one exchange. Yet his positive language of 'attending' to abstract facts largely renames the disputed capacity. Reflective equilibrium can improve internal coherence while preserving a systematically false starting point, and no reliability story distinguishes truth-sensitive intuition from culturally trained response. The parity argument blocks a quick exclusion of moral knowledge but leaves the realist's access problem substantially open.",
+              tags: []
+            },
+            con: {
+              time: "1:02:07",
+              role: "Analytic alternative",
+              words:
+                "Lutz argues that a priori knowledge concerns innate cognitive structures and relations among concepts, not mind-independent abstract entities waiting to be intellectually perceived.",
+              score: 93,
+              critique:
+                "Lutz supplies the missing alternative to causal empiricism. A Humean or Kantian can explain necessary-looking judgments through conceptual structure, so conceding logic and mathematics does not automatically license perception of external moral facts. This answers Sampson's parity move directly and locates disagreement in differing concepts or inputs rather than imperfect access to one realm. The cost is large and acknowledged late. The thesis that all a priori knowledge is analytic is controversial, and calling the thesis itself an unobvious analytic truth postpones rather than demonstrates its vindication. Mathematics, modality, and philosophical counterexamples may resist the narrow category. Lutz nevertheless identifies a coherent research program and a genuine asymmetry: conceptual competence is independently evident, whereas a faculty that detects stance-independent moral properties remains to be specified.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Permissive seemings and self-undermining skepticism",
+        timebox: "51:13-1:35:09",
+        score: { pro: 92, con: 90 },
+        exchanges: [
+          {
+            pro: {
+              time: "54:48",
+              role: "Defeasible justification",
+              words:
+                "Enoch replies that an appearance can provide initial justification without being infallible, while coherence, genealogy, and counterfactual robustness defeat ghostly or paranoid seemings.",
+              score: 92,
+              critique:
+                "Enoch gives the right structure for an intuition-based epistemology: initial credibility is defeasible, not a blank check for every seeming. A belief's fit with other judgments, sensitivity across counterfactual cases, and nonaccidental relation to its subject can distinguish ordinary moral conviction from paranoia. He also presses an important self-undermining concern. Error theorists themselves rely on inference to the best explanation, simplicity, and epistemic norms whose authority cannot be reduced to a physical measurement merely by assertion. This prevents Don's witch and ghost examples from functioning as automatic reductios. The remaining problem is calibration. Moral disagreement and evolutionary shaping may be exactly the defeaters at issue, and saving a central practice is not evidence of its truth by itself. Enoch provides a plausible framework, but not a demonstrated reliability filter.",
+              tags: []
+            },
+            con: {
+              time: "51:13",
+              role: "Epistemic promiscuity objection",
+              words:
+                "Loeb asks why moral seemings deserve ontological respect when people report equally vivid awareness of gods, ghosts, witches, and persecutory threats.",
+              score: 90,
+              critique:
+                "Loeb targets a real stopping problem. If seeming true is sufficient evidence for a special domain, the method threatens to multiply entities wherever conviction is psychologically powerful. His examples force realists to state defeaters rather than simply celebrating confidence, and his willingness to take the external world as an anti-skeptical starting point avoids total skepticism. The analogy is still too coarse. Ghost reports often conflict with background causal knowledge and vary under identifiable social pressures; many basic moral judgments survive reflection across cultures and cohere with facts about harm and agency. More importantly, realists claim rational support beyond phenomenological vividness. Loeb successfully demands a discrimination rule but sometimes speaks as if the existence of false seemings shows that no seeming can justify, which would overreach far beyond metaethics.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Disagreement and independent evidence",
+        timebox: "1:23:05-1:42:35",
+        score: { pro: 89, con: 92 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:24:20",
+              role: "Comparative plausibility",
+              words:
+                "Enoch denies that disagreement is a knockout argument and asks whether its debunking pressure outweighs the costs of denying obvious reasons and moral truths.",
+              score: 89,
+              critique:
+                "Enoch appropriately resists treating disagreement as logically inconsistent with truth. Persistent dispute occurs in science and philosophy, and realism can accommodate fallibility, bias, and uneven access. His recurring demand for a holistic comparison is methodologically sound: error theory must be judged not only by ontology but by its treatment of deliberation, condemnation, and its own epistemic norms. However, the response remains mostly defensive. Moral disagreement is unusually entangled with culture and motivation, and the realist team offers no independent calibration comparable to experiment or measurement. Repeating that torture's wrongness is more plausible than the anti-realist package may rationally describe Enoch's priorities, but it does not arbitrate between parties whose starting credences differ. The conclusion is reasonable resilience for realism, not positive evidence that disagreement tracks one objective domain.",
+              tags: []
+            },
+            con: {
+              time: "1:35:09",
+              role: "Playing-card and aura analogy",
+              words:
+                "Loeb contrasts disputes over hidden playing cards, where rank and suit can be independently checked, with reports of colored auras that offer only further contested appearances.",
+              score: 92,
+              critique:
+                "Loeb's closing analogy crystallizes the evidential challenge better than the earlier ghost list. Conflicting card reports are manageable because observers can turn the cards over; conflicting aura reports merely reproduce the faculty whose reliability is questioned. Moral argument often appears closer to the latter when every proposed test consists of another judgment from the same contested source. This does not prove that no rational, coherence-based evidence exists, and the analogy may understate shared constraints from harm, consistency, agency, and factual correction. His Holocaust answer also stretches the comparison to taste so aggressively that it obscures the durable, action-guiding structure his own condemnation exhibits. Even with those costs, Loeb identifies the debate's unresolved issue: realism still lacks an agreed independent check that converts confident reflection into publicly discriminating evidence.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 92,
+        strengths: [
+          "Sampson's Moorean case made a highly confident moral judgment compete directly with the more controversial premises of error theory.",
+          "Enoch distinguished realism from infallibility and consensus, keeping the position responsive to disagreement and evolutionary influence.",
+          "The sadist example clearly separated categorical moral criticism from failure relative to an agent's existing desires.",
+          "The team exposed how stringent skepticism about noncausal moral knowledge can threaten logic, modality, and the anti-realist's own epistemic norms."
+        ],
+        blunders: [
+          {
+            text:
+              "Sampson's cup analogy treated rational contact with moral reality as explanatorily comparable to a well-specified physical causal relation without supplying the missing reliability mechanism.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "The realist case sometimes relied on the overwhelming confidence of central moral judgments without fully separating truth-sensitive reflection from confidence produced by shared formation.",
+            links: [
+              {
+                label: "Belief bias",
+                url: bias("belief-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 91,
+        strengths: [
+          "Lutz's Harman-style challenge gave a parsimonious causal explanation of moral experience and demanded a distinctive evidential role for moral facts.",
+          "Loeb consistently separated instrumental irrationality from moral opposition rather than covertly importing categorical reasons.",
+          "The permissive-seemings objection forced the realists to articulate defeaters and a reliability criterion for reflective judgment.",
+          "The playing-card and aura analogy sharply illustrated the absence of an agreed independent test for resolving moral disagreement."
+        ],
+        blunders: [
+          {
+            text:
+              "Treating causal contribution as the decisive test of evidence risked excluding abstract and rational knowledge before the comparison with mathematics, logic, and modality had been resolved.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "Lutz's claim that all a priori knowledge is analytic carried much of the anti-realist reply while remaining a promissory and highly contested thesis.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
