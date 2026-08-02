@@ -731,9 +731,12 @@ function topicMatchText(debate) {
 
 function topicCategoriesForDebate(debate) {
   const source = topicMatchText(debate);
-  return topicCategoryDefinitions.filter((category) =>
+  const matches = topicCategoryDefinitions.filter((category) =>
     category.keywords.some((keyword) => source.includes(keyword))
   );
+  const primary = topicCategoryDefinitions.find((category) => category.id === debate.topicCategory);
+
+  return primary ? [primary, ...matches.filter((category) => category.id !== primary.id)] : matches;
 }
 
 function topicTagsForDebate(debate) {

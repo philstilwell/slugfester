@@ -64,8 +64,8 @@ Design constraints:
 1. Capture the transcript from YouTube or a transcript tool and note the source in `sourceNote`.
 2. Identify the motion or central question.
 3. Identify the two sides and speaker names.
-4. Choose the debate's concise `label` as both a human-readable general title and the basis for `/topics/` categorization.
-5. Assign the debate to the best recurring topic cluster by making sure the label maps cleanly to one of the topic category keyword sets in `topicCategoryDefinitions` in `src/app.js`; if the debate exposes a genuine new recurring theme, update that taxonomy rather than letting the debate fall into the fallback category.
+4. Choose the debate's concise, speaker-free `label` as a human-readable general title for its compact card and secondary topic chips.
+5. Set `topicCategory` to the exact primary category ID from `topicCategoryDefinitions` in `src/app.js`. Every new debate from `190` onward requires this field; if the debate exposes a genuine new recurring theme, update that taxonomy rather than letting it fall into the fallback category.
 6. Extract short representative quotes for each side.
 7. Segment the debate into 4-7 topical sections.
 8. For each section, align 1-3 exchanges by topic rather than by every interruption.
@@ -81,7 +81,7 @@ Design constraints:
 Topic categorization:
 
 - The current topic clusters are `Cosmological & Contingency Arguments`, `Science and design`, `Scripture, Jesus, and resurrection`, `Meaning and purpose`, `Morality and ethics`, `Evil, suffering, and hiddenness`, `Mind, consciousness, and free will`, `Logic, reason, and presuppositions`, `Religion, society, and public reason`, and `God, theism, and atheism`.
-- `/topics/` uses the debate `label` to determine the primary group and topic chips, so the label should contain the clearest recurring subject terms without adding interlocutor names.
+- `/topics/` uses `topicCategory` to determine the primary group. It continues to use the debate `label` to derive up to three supplementary topic chips alongside it, for four chips total, so the label should contain the clearest recurring subject terms without adding interlocutor names.
 - After adding a debate, check that the new compact card appears under the intended `/topics/` category, that its card title remains a general topic title rather than a speaker-vs-speaker title, and that hover/focus reveals the full summary and compact speaker names within the card.
 
 ## Debate Data Skeleton
@@ -94,7 +94,8 @@ Use this shape when adding an object to `src/data/debates.js`.
   number: "131",
   assessmentModel: "5.6 Terra Extra High",
   title: "Speaker A vs Speaker B: Debate Title",
-  label: "Concise topic label that maps to the intended /topics/ category",
+  label: "Concise topic label for the card title and supplementary chips",
+  topicCategory: "science-design",
   date: "YYYY-MM-DD",
   duration: "0 hr 00 min",
   youtubeUrl: "https://www.youtube.com/watch?v=VIDEO_ID",

@@ -53,6 +53,7 @@ requireIncludes("app search route", app, "Matches:");
 requireIncludes("app topics route", app, "renderTopics");
 requireIncludes("app topics route", app, "topicsPathRoutePattern");
 requireIncludes("app topics route", app, "topicsSeo");
+requireIncludes("app topics route", app, "debate.topicCategory");
 requireIncludes("app rankings route", app, "renderRankings");
 requireIncludes("app rankings route", app, "rankingsPathRoutePattern");
 requireIncludes("app rankings route", app, "rankingsSeo");

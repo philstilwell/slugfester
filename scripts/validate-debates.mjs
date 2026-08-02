@@ -9,6 +9,20 @@ const youtubePattern = /^https:\/\/(www\.)?youtube\.com\/watch\?v=[A-Za-z0-9_-]+
 const legacyAssessmentModel = "GPT 5.5 Extra High";
 const currentAssessmentModel = "5.6 Terra Extra High";
 const terraAssessmentFirstDebate = 131;
+const explicitTopicCategoryFirstDebate = 190;
+const topicCategoryIds = new Set([
+  "cosmological-arguments",
+  "science-design",
+  "scripture-jesus-resurrection",
+  "meaning-purpose",
+  "morality-ethics",
+  "evil-suffering-hiddenness",
+  "mind-consciousness-free-will",
+  "logic-reason-presuppositions",
+  "religion-society-public-reason",
+  "god-theism-atheism",
+  "broader-debate-questions"
+]);
 
 function pathLabel(parts) {
   return parts.join(".");
@@ -227,6 +241,20 @@ function validateDebate(debate, index) {
       [...path, "assessmentModel"],
       `must be ${legacyAssessmentModel} when provided for debates before ${terraAssessmentFirstDebate}`
     );
+  }
+  const topicCategory = debate.topicCategory;
+  if (topicCategory === undefined) {
+    if (debateNumber >= explicitTopicCategoryFirstDebate) {
+      addError(
+        [...path, "topicCategory"],
+        `must be set to a valid primary category for Debate ${explicitTopicCategoryFirstDebate} and later`
+      );
+    }
+  } else {
+    requireString(debate, "topicCategory", path);
+    if (!topicCategoryIds.has(topicCategory)) {
+      addError([...path, "topicCategory"], "must be a recognized Slugfester topic category ID");
+    }
   }
   requireString(debate, "title", path, { minWords: 3 });
   requireString(debate, "label", path);
