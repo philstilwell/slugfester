@@ -64886,6 +64886,261 @@ export const debates = [
       }
     }
   },
+  {
+    id: "crossan-licona-historical-jesus-2018",
+    number: "193",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "John Dominic Crossan vs Michael Licona: Who Was the Historical Jesus?",
+    label: "Gospels, miracles, identity, and resurrection",
+    topicCategory: "scripture-jesus-resurrection",
+    date: "2026-08-01",
+    duration: "2 hr 10 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=p_7bQlh8uWc",
+    motion:
+      "What can historians verify about Jesus, and do the sources support his divine identity and bodily resurrection?",
+    summary:
+      "Crossan reads Jesus through anti-imperial metaphor and communal resurrection; Licona argues that early, eyewitness-rooted sources support Jesus's divine claims, miracles, and bodily resurrection.",
+    sourceNote:
+      "Built from the available English YouTube caption track. Captions were checked against the recording and lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "metaphor creates reality",
+        context:
+          "Crossan argues that resurrection language can be historically real and behavior-shaping without describing a camera-recordable exit from a tomb."
+      },
+      con: {
+        text: "they understood the Christians to be claiming it as a literal event",
+        context:
+          "Licona uses early Christian defenses and hostile counterclaims to argue that resurrection was intended bodily, not merely symbolically."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Metaphorical resurrection",
+        speaker: "John Dominic Crossan",
+        color: "teal"
+      },
+      con: {
+        name: "Bodily resurrection",
+        speaker: "Michael Licona",
+        color: "coral"
+      }
+    },
+    score: { pro: 89, con: 92 },
+    sections: [
+      {
+        title: "Historical horizons and interpretive method",
+        timebox: "7:03-36:48",
+        score: { pro: 93, con: 91 },
+        exchanges: [
+          {
+            pro: {
+              time: "23:38",
+              role: "Fact-interpretation dialectic",
+              words:
+                "Crossan says historical fact and interpretation can be distinguished but never cleanly separated, and that faith and reason likewise form a dialectic rather than hostile alternatives.",
+              score: 93,
+              critique:
+                "Crossan articulates a sophisticated hermeneutic. Ancient sources never deliver uninterpreted facts, and calling one's own reading factual while dismissing a rival as myth conceals the historian's role. His Caesar comparison also establishes that titles such as lord, savior, and son of God carried political force before Christianity; metaphor can organize institutions and kill people, so 'metaphorical' does not mean unreal. This framework rightly pushes analysis beyond isolated sayings toward Roman imperial context and Jesus's program of peace through justice. The danger is elasticity. If metaphor both creates reality and can absorb apparently literal claims, the view needs clear textual criteria for deciding when an author describes an event and when an event-language dramatizes meaning. Crossan often supplies powerful interpretations without showing that they best explain every relevant source.",
+              tags: []
+            },
+            con: {
+              time: "8:24",
+              role: "Horizon-aware realism",
+              words:
+                "Licona argues that every historian's social, religious, and philosophical horizons influence judgment, but shared sources and authenticity criteria can still establish a limited historical Jesus.",
+              score: 91,
+              critique:
+                "Licona usefully rejects both naïve objectivity and relativism. His distinction among the real Jesus, the historically recoverable Jesus, and the Christ of faith shows why method can verify some claims while remaining silent about atonement or deity as such. Surveying early sources and applying common-sense criteria—eyewitness proximity, multiple attestation, and contextual plausibility—provides public constraints despite disagreement. He may overstate that historical consensus is impossible because horizons determine outcomes; convergence can grow as evidence and methods improve. Some traditional criteria also face dependence and selection problems, and he invokes scholarly consensus selectively while stressing its limits. Still, Licona openly identifies his framework and subjects theological claims to historical scrutiny. That makes his realism more accountable than either pretending presuppositions vanish or treating every interpretation as equally warranted.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Do the Gospels preserve eyewitness testimony?",
+        timebox: "36:48-48:48",
+        score: { pro: 91, con: 93 },
+        exchanges: [
+          {
+            pro: {
+              time: "40:07",
+              role: "Evangelists as interpreters",
+              words:
+                "Crossan argues that Matthew and Luke rewrite Mark and that divergent sayings from the cross reveal theological composition, making individual eyewitness material hard to isolate.",
+              score: 91,
+              critique:
+                "Crossan targets the right inferential gap. Even if Mark transmits Peter or John rests on a disciple, the final Gospels are authored interpretations that paraphrase, reorder, and create scenes according to distinct portraits. Parallel comparison makes that activity visible, especially where last words differ. Therefore 'contains eyewitness testimony' is too weak unless historians can identify which claims derive from witnesses and which from literary development. Crossan sometimes moves too quickly from variation to invention. Ancient biographers could paraphrase while retaining witnessed substance, and differing sayings are not automatically mutually exclusive. Luke explicitly appeals to transmitted eyewitness material, while John's witness claims demand evaluation rather than dismissal as irrelevant to evangelists. Crossan successfully defeats any simple transcript model, but he does not show that editorial freedom erases all traceable eyewitness tradition.",
+              tags: []
+            },
+            con: {
+              time: "37:10",
+              role: "Papias and disciple traditions",
+              words:
+                "Licona cites Papias's connection of Mark to Peter and scholarly views that John's Gospel derives from a disciple, while allowing that not every detail is eyewitness testimony.",
+              score: 93,
+              critique:
+                "Licona states a defensible, limited thesis. Papias supplies external testimony about Mark's Petrine source, and a significant scholarly case connects Johannine tradition to an eyewitness or close disciple. Literary dependence and compositional change do not logically eliminate source testimony; ancient historiography expected paraphrase and arrangement. His concession that individual sayings may remain unverifiable prevents an all-or-nothing argument. The weaknesses are transmission distance and source precision. Papias reports what an elder said about Mark, so the chain is not direct eyewitness testimony, and the identity and redaction history of John's source remain disputed. Licona occasionally slides from a Gospel being rooted in witness to treating its major claims as witnessed. Nevertheless, he answers the actual existential question—whether the Gospels contain such testimony—more directly than Crossan's demand that every layer be separable.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Jesus's kingdom and divine identity",
+        timebox: "48:48-1:02:16",
+        score: { pro: 92, con: 89 },
+        exchanges: [
+          {
+            pro: {
+              time: "49:27",
+              role: "Kingdom-centered reconstruction",
+              words:
+                "Crossan says Jesus proclaimed God's already-present kingdom through communal participation and likely avoided Messiah because contemporaries expected a divinely empowered military leader.",
+              score: 92,
+              critique:
+                "Crossan grounds Jesus in a plausible first-century political and Jewish matrix. The kingdom proclamation is widely attested, and contrasting peace through Roman victory with peace through distributive justice illuminates why a nonviolent activist could still threaten imperial order. His caution about reconstructing private self-consciousness is methodologically apt: texts reveal public speech and remembered action more securely than an inner mental diary. Yet Crossan's claim that Jesus would avoid messianic identity depends on a relatively uniform military definition, while Jewish expectations were diverse and titles could be reconfigured. His interpretation of divine language as God's nonviolent 'dream' incarnate explains its ethical force but can evade passages that grammatically predicate preexistence or creation of Jesus. Context strengthens Crossan's reading without uniquely determining it.",
+              tags: []
+            },
+            con: {
+              time: "53:15",
+              role: "Early high-Christology inference",
+              words:
+                "Licona appeals to Paul's creator language and Mark's divine prerogatives, arguing that monotheistic Jewish apostles most plausibly derived high claims about Jesus from Jesus himself.",
+              score: 89,
+              critique:
+                "Licona assembles a genuine cumulative case. First Corinthians 8:6 places Jesus inside a reformulated confession, early Pauline material assigns cosmic agency, and Mark narrates forgiveness, command of nature, exorcism, and resurrection motifs associated with God. Because Paul checked his gospel with Jerusalem leaders, high Christology was not obviously a late Gentile invention. The final inference is less secure: agreement on a basic gospel does not prove agreement on every ontological formulation, and early followers could interpret resurrection experiences and scripture in ways that rapidly elevated Jesus beyond his own explicit claims. Licona also cites Colossians and John without fully addressing authorship, dating, or development. His evidence establishes very early exalted belief more strongly than it establishes the precise historical proposition that Jesus claimed to be the universe's creator.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Can historians adjudicate miracle claims?",
+        timebox: "1:02:16-1:13:56",
+        score: { pro: 88, con: 92 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:04:12",
+              role: "Healing-versus-curing distinction",
+              words:
+                "Crossan accepts Jesus as a major healer but interprets healings as social reintegration and therapy, comparing Christian accounts with similar shrine testimonies and rejecting literal raisings of the dead.",
+              score: 88,
+              critique:
+                "Crossan's distinction between cure and healing is historically and pastorally illuminating. A person with impairment could be restored to community and dignity without anatomical repair, and parallel testimonies at pagan and Marian shrines warn against granting one tradition's reports automatic causal privilege. He also refuses to discard miracle stories; he asks what social realities generated and sustained them. The problem is asymmetry. Crossan says historians may adjudicate miracle claims, yet his rejection of restored sight or revived corpses often rests on prior plausibility rather than case-specific evidence. Interpreting Lazarus as parody and resurrection stories as reputation markers can explain meaning, but it does not independently show that no extraordinary event occurred. Licona rightly identifies the role of horizons here. Crossan offers a plausible natural-social reconstruction, not a decisive historical disproof.",
+              tags: []
+            },
+            con: {
+              time: "1:02:25",
+              role: "Event-cause separation",
+              words:
+                "Licona argues that historians can conclude an extraordinary event occurred while leaving its supernatural cause formally undetermined, just as science could record an otherwise inexplicable message on the moon.",
+              score: 92,
+              critique:
+                "Licona's event-cause distinction is conceptually strong. Historical method can compare testimony, background knowledge, and alternatives to ask whether a reported event occurred without possessing a separate tool that identifies God as its cause. This avoids defining miracles out of consideration before examining evidence. His moon illustration makes the point vivid but stacks the case with simultaneous observation and unambiguous instrumentation, conditions unlike ancient healing narratives. For Jesus's raisings, dependent literary sources, genre, theological interest, and lack of contemporaneous controls substantially lower confidence. Licona sometimes treats the absence of an accepted natural explanation as creating positive theistic implications, which risks compressing 'unexplained' into 'supernatural.' Still, his framework is more neutral than either automatic belief or automatic exclusion: evaluate events first, then calibrate causal conclusions to the available record.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Bodily event or resurrection metaphor?",
+        timebox: "1:13:56-1:48:56",
+        score: { pro: 88, con: 95 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:14:08",
+              role: "General-resurrection metaphor",
+              words:
+                "Crossan says Jesus truly rose metaphorically as God's vindication of nonviolent resistance and the inauguration of humanity's resurrection, not as a solitary body filmed leaving a tomb.",
+              score: 88,
+              critique:
+                "Crossan gives resurrection substantial historical and ethical content rather than reducing it to comforting fiction. He asks why Jewish followers chose resurrection rather than the available category of ascension and connects it to a general transformation of humanity. His observation that canonical texts narrate appearances and tomb discoveries but not the instant of rising is accurate. The difficulty is evidential priority. Later Eastern art depicting Christ with Adam and Eve illustrates communal meaning but cannot by itself control first-century usage. Paul's 'firstfruits' readily allows one resurrection now and others at the parousia, and transformed spiritual body is not equivalent to metaphorical survival. Crossan repeatedly shifts from what resurrection means to whether a body rose; ethical power does not settle ontology. His reading is rich, but less textually direct than Licona's.",
+              tags: []
+            },
+            con: {
+              time: "1:19:05",
+              role: "Pauline bodily-continuity case",
+              words:
+                "Licona reads First Corinthians 15 as temporal and bodily: Christ is raised first, believers later, with continuity between the buried natural body and transformed spiritual body.",
+              score: 95,
+              critique:
+                "Licona's exegesis directly addresses the disputed category. Paul's sequence—Christ the firstfruits, then those belonging to him at his coming—answers Crossan's objection that resurrection must include everyone simultaneously. Seed imagery and contrasts between corruptible and incorruptible describe transformation with continuity, not mere remembrance. Early hostile explanations about stolen or relocated bodies, whatever their historical value, also show that Christians were heard as making an event claim. Licona appropriately distinguishes metaphorical applications from the event that grounds them. He occasionally harmonizes later Gospel predictions and intermediate-state language more confidently than the texts warrant, and martyrdom proves sincerity rather than truth. Those excesses are not necessary to his core point. On intended meaning, Paul and the narrative traditions overwhelmingly favor a bodily occurrence over Crossan's exclusively metaphorical reconstruction.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 89,
+        strengths: [
+          "Crossan embedded Jesus's titles and execution in the political world of Roman imperial theology rather than reading them as timeless abstractions.",
+          "He showed how Gospel comparison reveals theological composition and why eyewitness origin cannot be assumed for each narrative detail.",
+          "His healing-versus-curing distinction offered a historically plausible account of Jesus's reputation without dismissing its communal effects.",
+          "He treated resurrection metaphor as a demanding public ethic of nonviolence rather than as an ornamental or unreal claim."
+        ],
+        blunders: [
+          {
+            text:
+              "He used the semantic power of metaphor to move from resurrection's communal meaning to denial of bodily occurrence, even though both could coexist.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His reconstruction often filtered event claims through a prior nonviolent-imperial framework, sometimes making contrary details serve the framework rather than test it.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 92,
+        strengths: [
+          "Licona distinguished the real, historical, and faith-confessed Jesus while defending public criteria for moving among them.",
+          "He made a calibrated case that eyewitness tradition can underlie edited biographies without requiring every reported detail to be witnessed.",
+          "His event-cause distinction allowed extraordinary claims to be investigated without presupposing either supernaturalism or naturalism.",
+          "His reading of Paul's firstfruits sequence and transformed body directly supported literal bodily resurrection against the metaphor-only alternative."
+        ],
+        blunders: [
+          {
+            text:
+              "He inferred Jesus's own divine self-claims from early high Christology more confidently than the gap between follower interpretation and Jesus's speech permits.",
+            links: [
+              {
+                label: "Belief bias",
+                url: bias("belief-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His appeal to modern miracle collections in closing relied on asserted corroboration without presenting enough case evidence for the audience to evaluate it.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
