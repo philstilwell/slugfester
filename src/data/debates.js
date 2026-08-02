@@ -62640,6 +62640,289 @@ export const debates = [
       }
     }
   },
+  {
+    id: "dennett-caruso-free-will-responsibility-2021",
+    number: "185",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Daniel Dennett vs Gregg Caruso: Free Will and Moral Responsibility",
+    label: "Compatibilism, desert, and punishment",
+    date: "2026-08-01",
+    duration: "2 hr 6 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=AxhA7S3q49o",
+    motion:
+      "Does the natural human capacity for reasons-responsive control justify free will, moral desert, and responsibility practices?",
+    summary:
+      "Dennett defends a socially constructed compatibilist freedom grounded in control and accountability; Caruso denies basic desert while preserving forward-looking moral dialogue, public safety, and proportionate sanctions.",
+    sourceNote:
+      "Built from the English-original YouTube caption track. Captions were checked against the recording and lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "the issue is control, not causation",
+        context:
+          "Dennett argues that deterministic causation does not erase the practical distinction between self-governed agents and agents who lack control."
+      },
+      con: {
+        text: "who we are and what we do is ultimately the result of factors beyond our control",
+        context:
+          "Caruso states the sourcehood basis of his skepticism about basic-desert responsibility under both determinism and indeterminism."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Compatibilist free will is worth wanting",
+        speaker: "Daniel Dennett",
+        color: "teal"
+      },
+      con: {
+        name: "Basic-desert free will is unjustified",
+        speaker: "Gregg Caruso",
+        color: "coral"
+      }
+    },
+    score: { pro: 90, con: 94 },
+    sections: [
+      {
+        title: "Which free will is under dispute?",
+        timebox: "5:14-22:31",
+        score: { pro: 91, con: 94 },
+        exchanges: [
+          {
+            pro: {
+              time: "11:24",
+              role: "Control-based naturalism",
+              words:
+                "Dennett rejects souls and libertarian agent causation, arguing that freedom worth wanting concerns evolved capacities for control rather than metaphysical exemption from causation.",
+              score: 91,
+              critique:
+                "Dennett clears away an important false choice. Randomness cannot create authorship, and a homuncular soul merely generates a regress, so the live issue is what kinds of control natural agents can acquire. His insistence on graded, biologically evolved capacities fits ordinary distinctions among children, competent adults, and people with serious impairments. That makes compatibilism empirically anchored and practically relevant. He is less persuasive when he dismisses libertarianism as an embarrassment without engaging its strongest sourcehood arguments; contempt is not an analysis. More importantly, defining the target as the varieties 'worth wanting' risks selecting functional benefits before answering whether those capacities support desert. The opening establishes a credible natural freedom, but Caruso is right that its relationship to the disputed responsibility practices remains a separate premise.",
+              tags: []
+            },
+            con: {
+              time: "17:54",
+              role: "Sourcehood skepticism",
+              words:
+                "Caruso defines free will as the control required for basic-desert responsibility and denies it whether the universe is deterministic or indeterministic, since neither makes agents ultimate sources.",
+              score: 94,
+              critique:
+                "Caruso defines his target with precision and avoids the common mistake that quantum chance would rescue responsibility. Determination traces action to prior conditions beyond the agent; indeterminacy adds luck rather than authorship. He also limits the denial to basic desert, expressly retaining causal attribution, character assessment, rational conversation, and forward-looking sanctions. This prevents Dennett's early warning about universal irresponsibility from landing against the stated view. The epistemic argument adds moral force: institutions intentionally imposing severe harm need adequate warrant that recipients deserve it, and longstanding expert disagreement weakens that warrant. The argument depends on a controversial conception of 'ultimate' sourcehood and can seem designed so no natural agent could qualify. Even so, Caruso clearly shows that reasons responsiveness alone does not entail the backward-looking desert he challenges.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Control, responsibility, and social competence",
+        timebox: "22:39-34:48",
+        score: { pro: 94, con: 93 },
+        exchanges: [
+          {
+            pro: {
+              time: "23:51",
+              role: "Responsibility competence",
+              words:
+                "Dennett distinguishes people capable of maintaining self-control and responding to reasons from impaired agents, treating responsibility as a socially supported competence that adults can exercise and preserve.",
+              score: 94,
+              critique:
+                "Dennett's strongest positive case begins with observable capacities rather than remote metaphysics. Some people can understand rules, anticipate consequences, revise conduct, and answer criticism; others, through age or impairment, cannot. Law and social trust reasonably track those differences, and deterministic causation does not make persuasion pointless because reasons are among the causes that change behavior. His account also explains why responsibility is gradual and why competent agents may be accountable for negligently losing control. This is a compelling account of agency and public coordination. Its limitation is inferential: the usefulness and reality of a competence do not establish that violating a rule makes suffering deserved for its own sake. Dennett often moves from 'can take responsibility' to 'deserves punishment' without isolating the bridge that Caruso contests.",
+              tags: []
+            },
+            con: {
+              time: "30:20",
+              role: "Responsibility without desert",
+              words:
+                "Caruso grants reasons responsiveness and character attribution while grounding moral conversation in reconciliation, safety, and formation rather than backward-looking blame.",
+              score: 93,
+              critique:
+                "Caruso answers the practical objection directly. Skepticism does not erase causal responsibility, assessments of ingenuity or negligence, requests for explanation, protest, restitution, or plans for change. His conversational model identifies three intelligible aims—reconciliation, future safety, and moral formation—that can justify demanding engagement without claiming anyone ultimately deserves pain. This substantial overlap exposes an ambiguity in warnings that skepticism abolishes responsibility. However, Caruso's strict separation may underdescribe ordinary moral address. A sincere apology seems to acknowledge not merely that future relations benefit but that the victim was wronged by this agent, and indignation can communicate equal standing rather than retributive appetite. He demonstrates that forward-looking practices are possible; he does not show that every defensible backward-looking element either reduces to those aims or is punitive residue.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Desert and the deterministic agents",
+        timebox: "33:01-50:42",
+        score: { pro: 90, con: 95 },
+        exchanges: [
+          {
+            pro: {
+              time: "46:57",
+              role: "Largely self-made agency",
+              words:
+                "Dennett says determined agents can still be largely self-made through years of learning, reflection, and habit, making a competent robber answerable in a way an impaired person is not.",
+              score: 90,
+              critique:
+                "Dennett correctly rejects the impossible standard of being causa sui. Mature agents participate in their own development across time, modifying habits through reflection and feedback, and that history distinguishes a competent wrongdoer from an involuntary mechanism. His account preserves the morally relevant difference between actions expressing an integrated character and actions produced by tumor, coercion, or incapacity. But calling an agent 'largely self-made' does not answer Caruso's regress: every earlier act of self-formation also expressed dispositions and circumstances the agent did not choose. Dennett can reasonably say ultimate creation is unnecessary, yet he needs a noncircular account of why the later competence grounds desert rather than only prediction and intervention. The response supports attribution and agency more strongly than purely backward-looking differential treatment.",
+              tags: []
+            },
+            con: {
+              time: "43:19",
+              role: "Maya and Marina case",
+              words:
+                "Caruso compares a determined robber with a determined donor and denies differential suffering when all character, reasons, and deliberative salience ultimately arise from factors neither controlled.",
+              score: 95,
+              critique:
+                "The paired-universe case focuses the debate on desert rather than social utility. By stipulating away deterrence, rehabilitation, and protection, Caruso asks whether different treatment remains justified merely because one determined history produces charity and another robbery. His answer follows consistently from sourcehood skepticism and reveals that Dennett's control distinction alone does not address constitutive luck. The afterlife framing is deliberately artificial, but that is useful for separating backward-looking value from practical effects. A defender of desert can insist that responsibility supervenes on the agent's actual reasons-responsive structure, not on uncaused self-creation, so identical remote dependence is irrelevant. Still, Dennett mainly repeats that competent agents are responsible instead of explaining why historical luck cannot defeat the desert generated by present competence. Caruso wins the isolated philosophical question.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Quarantine, proportionality, and public safety",
+        timebox: "36:38-55:44",
+        score: { pro: 89, con: 94 },
+        exchanges: [
+          {
+            pro: {
+              time: "41:16",
+              role: "Coercion and legitimacy objection",
+              words:
+                "Dennett argues that Caruso's quarantine model will still require coercion, escalation, and confinement, and warns that medicalized treatment can become indefinite punishment without ordinary legal accountability.",
+              score: 89,
+              critique:
+                "Dennett raises an essential institutional caution. Calling confinement 'treatment' does not make it humane, and a system whose release standard is cure or diminished risk can detain people indefinitely while avoiding the procedural clarity of punishment. His Soviet-medicalization warning points toward genuine dangers of expert discretion and paternalism. Yet he often treats the word quarantine as if Caruso denied coercion; Caruso repeatedly accepts liberty restriction while imposing necessity, public-safety, and least-restrictive-means constraints. Dennett also uses politically charged Trump examples that distract from the justificatory distinction and assumes prison supplies protections that risk-based systems cannot adopt. The objection identifies implementation burdens but does not show that desert is needed to meet them. Procedural rights, proportionality, and transparent law can constrain forward-looking confinement without retributive justification.",
+              tags: []
+            },
+            con: {
+              time: "37:02",
+              role: "Public-health model",
+              words:
+                "Caruso analogizes dangerous offenders to contagious patients: liberty may be limited through self-defense and public safety, subject to necessity and the least restrictive effective measure, without treating suffering as deserved.",
+              score: 94,
+              critique:
+                "Caruso shows that rejecting desert need not entail releasing dangerous people or abandoning restitution. The quarantine analogy isolates a familiar justification for coercion—preventing serious harm—while explaining why incapacitation should be proportionate to prospective threat and coupled with rehabilitation. His examples distinguish intentional, accidental, and habitually negligent child deaths through mens rea, character, and future risk, preserving much of the law's useful granularity. He candidly bites the bullet that a perfectly reliable reform pill could remove grounds for confinement, which makes the model testable rather than evasive. Risk prediction can be biased, inaccurate, and potentially indefinite, and the analogy risks treating offenders as hazards rather than citizens. Nonetheless, Caruso supplies explicit limiting principles and shows that those problems demand safeguards, not a return to basic desert.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Manipulation and the boundary of control",
+        timebox: "55:46-1:13:24",
+        score: { pro: 87, con: 96 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:00:46",
+              role: "External-agent distinction",
+              words:
+                "Dennett says a malfunctioning implant differs from ordinary development because its manufacturer is liable and because intentional or engineered interference has a distinctive social and political significance.",
+              score: 87,
+              critique:
+                "Dennett is right that manipulation by other agents matters independently: societies have special reason to police intentional interference, deception, and technologies that bypass a person's established control system. Manufacturer liability also explains why the implant case triggers different legal questions from normal upbringing. But transferring some liability does not by itself remove or explain Elizabeth's responsibility; multiple parties can be causally responsible. More importantly, Caruso's case stipulates that her post-implant psychology satisfies the compatibilist conditions, so appealing to the implant's maker does not identify which internal property is missing. Dennett's political distinction explains why manipulation is objectionable to observers, not why natural causal determination creates desert while functionally equivalent artificial determination defeats it. The response leaves the generalization challenge substantially unanswered.",
+              tags: []
+            },
+            con: {
+              time: "58:47",
+              role: "Malfunctioning-implant argument",
+              words:
+                "Caruso imagines an implant accidentally producing a murderous desire in an otherwise reflective, reasons-responsive agent, then asks why equivalent causal formation by ordinary history should restore basic desert.",
+              score: 96,
+              critique:
+                "Caruso's implant case is the debate's sharpest stress test. It removes an intentional manipulator while retaining the internal approval, reasons responsiveness, and action-producing psychology compatibilists commonly require. Intuition still withholds basic desert because the decisive desire arose through luck outside Elizabeth's control. If ordinary developmental causes are equally uncontrolled, Dennett needs a principled difference beyond their familiarity. Caruso also carefully distinguishes internal agent control from external control, exposing how the slogan 'control, not causation' may assume the very sufficiency at issue. The analogy is not perfect: normal learning integrates over time through reciprocal agency, whereas a sudden malfunction bypasses that history. Yet Dennett's answer does not develop that historical ownership condition. Caruso establishes a serious continuity problem for purely structural compatibilism.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Rule systems, reactive attitudes, and reform",
+        timebox: "1:13:40-2:05:40",
+        score: { pro: 92, con: 95 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:49:57",
+              role: "Rules-of-the-game account",
+              words:
+                "Dennett gives a consequentialist justification for a public rule system but says officials must then apply its penalties consistently, as referees enforce agreed rules without recalculating every case.",
+              score: 92,
+              critique:
+                "Dennett offers a sophisticated rule-consequentialist rationale for stable responsibility practices. Transparent rules let reasons-responsive citizens plan, protect equal treatment, and prevent ad hoc officials from excusing favored offenders whenever a local calculation looks attractive. The sports analogy clarifies why a penalty can be deserved within a justified institution without cosmic authorship, and his emphasis on taking responsibility captures an important form of adult respect. The analogy nevertheless compresses major differences. Citizens do not literally consent to legal systems as players enter games, criminal punishment imposes vastly higher stakes, and unjust rules do not generate desert merely through publicity. Caruso also correctly notes that consistent enforcement can receive a wholly consequentialist defense. Dennett makes everyday desert intelligible, but its independent justificatory contribution remains unclear.",
+              tags: []
+            },
+            con: {
+              time: "1:39:06",
+              role: "Reform and replacement attitudes",
+              words:
+                "Caruso argues that evolved responsibility practices can be redesigned, replacing resentment, indignation, and moral anger with protest, disappointment, sorrow, restitution, and proportionate forward-looking sanctions.",
+              score: 95,
+              critique:
+                "Caruso closes by separating the naturalness of reactive attitudes from their justification. Evolution also produced impulses people rightly regulate, so anger cannot validate retribution merely because it helps 'sell' a norm. He preserves sanctions, fair rules, self-protection, and moral formation while asking whether corrosive resentment does work that disappointment or firm protest cannot perform better. This directly answers the recurring cheating, parenting, and political examples. His proposal may be psychologically optimistic, and moral anger can communicate solidarity with victims or the seriousness of a violation rather than a wish for suffering. Still, he allows inevitable feelings while denying them automatic policy authority. The result is a targeted reform program, not emotionless social engineering, and it better matches the shared commitment to humane criminal justice.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 90,
+        strengths: [
+          "Dennett grounded freedom in observable, graded capacities for self-control, reasons responsiveness, learning, and participation in social rules.",
+          "He explained why deterministic causation does not make persuasion, deliberation, or behavioral change pointless.",
+          "His rule-consequentialist account showed how transparent and consistently enforced institutions can protect autonomy and equal treatment.",
+          "He raised legitimate concerns about indefinite confinement, expert discretion, and paternalism within a medicalized quarantine model."
+        ],
+        blunders: [
+          {
+            text:
+              "He often moved from the practical value of responsibility practices to an offender's desert without identifying the bridge from useful control to deserved suffering.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His answer to the malfunctioning-implant case relied on manufacturer liability and social interference without explaining why equivalent internal psychology changes responsibility by causal source.",
+            links: [
+              {
+                label: "Red herring",
+                url: fallacy("red-herring")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 94,
+        strengths: [
+          "Caruso precisely restricted skepticism to basic desert while retaining agency, causal attribution, moral dialogue, restitution, and protection.",
+          "The Maya-and-Marina and malfunctioning-implant cases exposed unresolved constitutive-luck problems for compatibilist desert.",
+          "His public-health model supplied explicit forward-looking grounds for coercion together with necessity and least-restriction safeguards.",
+          "He separated evolved anger from justified policy and proposed concrete replacement attitudes rather than simply abolishing accountability."
+        ],
+        blunders: [
+          {
+            text:
+              "Defining free will through ultimate sourcehood risks building an impossible standard into the target and discounting the morally relevant history of self-formation.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          },
+          {
+            text:
+              "His confidence that disappointment and sorrow can replace moral anger underestimates anger's possible communicative and solidarity functions in serious wrongdoing.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
