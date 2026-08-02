@@ -31,7 +31,7 @@ Never call same-context, same-model passes independent. Use a label such as `sam
 ## Required order of operations
 
 1. **Lock the sample or target.** Record why the debate was selected before looking at legacy score differences.
-2. **Acquire the full source.** Store timestamped transcript text locally, save retrieval metadata and SHA-256 hashes, and record caption limitations. Cross-check central wording and speaker changes against audio or a second transcript.
+2. **Acquire the full source.** Store timestamped transcript text locally before inventory or scoring, save retrieval metadata and SHA-256 hashes, and record caption limitations. Use this acquisition ladder: canonical local cache; public captions; verified publisher/participant transcript; verified public audio plus paid transcription after a cost estimate and approval. Store canonical `transcript.txt`, `events.json`, and `manifest.json` under `.assessment-cache/captions/<videoId>/`. API manifests must also record the audio-source URL, model, chunk size, and anonymous-speaker limitations. Keep raw API output and audio in ignored local storage. Split paid audio into no more than 20-minute chunks unless the model documents a lower limit, then restore absolute timestamps during normalization. Run `npm run assessment:transcripts:check`; a missing transcript or local hash mismatch blocks inventory and scoring. Cross-check central wording and speaker changes against audio or a second transcript.
 3. **Build the blind packet.** Include the motion, neutral side labels, and full transcript. Exclude all prior scores, critiques, tags, winner labels, Overall Commentary, and AI Extension material.
 4. **Define burdens.** For each side, give each constructive or critical burden a stable ID, a plain-language description, and observable success criteria. A critic is not assigned the burden of proving the contrary unless the critic actually adopts it.
 5. **Inventory arguments.** Map all load-bearing claims, replies, concessions, and unanswered objections chronologically. An argument may stand alone; never create a fake counterpart merely to make columns line up.
@@ -69,6 +69,7 @@ The displayed confidence range is an agreement range, not a statistical confiden
 A production candidate fails QA if any of the following is true:
 
 - transcript or blind-packet hashes are missing;
+- the strict corpus-transcript audit reports a missing local transcript, hash mismatch, or API fallback without source/model provenance;
 - a central direct quote has low speaker-attribution confidence and no audio check;
 - burdens, section weights, or move importance were changed after scores were visible;
 - a triggered disagreement lacks adjudication;

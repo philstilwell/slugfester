@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "2.1-complete-gate-adjudication",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.1",
+  "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+  "debateNumber": "81",
+  "model": "5.6 Sol",
+  "calibrationOnly": true,
+  "adjudicatedAt": "2026-08-02T23:08:01Z",
+  "source": {
+    "inventory": "docs/calibration/v2.1/complete-gate/inventories/rasmussen-oppy-ultimate-reality-naturalism-2020.json",
+    "passA": "docs/calibration/v2.1/complete-gate/pass-a/rasmussen-oppy-ultimate-reality-naturalism-2020.json",
+    "passB": "docs/calibration/v2.1/complete-gate/pass-b/rasmussen-oppy-ultimate-reality-naturalism-2020.json",
+    "sourceManifest": "docs/calibration/v2.1/source-manifests/rasmussen-oppy-ultimate-reality-naturalism-2020.json",
+    "transcriptSha256": "1892348c2caa65082767c0278c9cb5f75093d28ec91d159df46dc690a2e0bbc9",
+    "normalizedEventsSha256": "573271176713a5b0a83b0fd01e5435bb75789185c3808468c021ddce5c2e2df7",
+    "blindPacketSha256": "2405a7dfa81f5fe839630cd7df3265dc54a8ca3cfacb494760cdc2442ddc9896",
+    "attributionLimit": "English auto-captions were reviewed with the canonical event record. No audio or independent transcript was available; the inventory's medium-confidence handoffs remain unresolved but none is low-confidence."
+  },
+  "resolutionPolicy": {
+    "dimensionThreshold": 8,
+    "moveScoreThreshold": 4,
+    "burdenAdjustmentThreshold": 2,
+    "nonTriggeredMoves": "Round each dimension's Pass A/Pass B mean, then calculate the move score mechanically.",
+    "triggeredMoves": "Select transcript-supported final dimensions under the v2.1 band anchors; do not default to the arithmetic mean.",
+    "rounding": "JavaScript Math.round at the move, section, and overall stages."
+  },
+  "triggeredAdjudications": [
+    {
+      "moveId": "M01",
+      "side": "pro",
+      "passAScore": 81,
+      "passBScore": 88,
+      "scoreDelta": 7,
+      "maxDimensionDelta": 10,
+      "triggeredDimensions": {"evidenceWarrant": 10, "relevanceBurden": 10},
+      "finalDimensions": {"logicalCoherence": 85, "evidenceWarrant": 75, "responsiveness": 87, "relevanceBurden": 84, "precisionClarity": 83, "calibrationCharity": 90},
+      "finalScore": 84,
+      "confidence": "high",
+      "rationale": "Rasmussen names a coherent, charitable set of shared theoretical virtues and explicitly acknowledges unresolved questions about simplicity. The move remains methodological and does not yet explain tradeoffs or testing, so the evidence and burden dimensions belong below Pass B's very-strong scores but above a merely skeletal framework."
+    },
+    {
+      "moveId": "M02",
+      "side": "con",
+      "passAScore": 86,
+      "passBScore": 89,
+      "scoreDelta": 3,
+      "maxDimensionDelta": 9,
+      "triggeredDimensions": {"evidenceWarrant": 9},
+      "finalDimensions": {"logicalCoherence": 87, "evidenceWarrant": 75, "responsiveness": 90, "relevanceBurden": 88, "precisionClarity": 86, "calibrationCharity": 92},
+      "finalScore": 86,
+      "confidence": "high",
+      "rationale": "Oppy's requirement to understand rival global theories before arguing is an excellent conceptual constraint and directly develops the shared method. Pass A better calibrates evidence/warrant because this turn states the constraint rather than applying or independently demonstrating it."
+    }
+  ],
+  "finalMoveScores": {
+    "M01": 84, "M02": 86, "M03": 84, "M04": 82, "M05": 80,
+    "M06": 79, "M07": 88, "M08": 74, "M09": 89, "M10": 75,
+    "M11": 88, "M12": 85, "M13": 87, "M14": 80, "M15": 85,
+    "M16": 82, "M17": 86, "M18": 80, "M19": 86, "M20": 89,
+    "M21": 79, "M22": 73, "M23": 87, "M24": 89, "M25": 86
+  },
+  "sections": [
+    {"id": "S1", "weightPercent": 10, "pro": {"passA": 81, "passB": 88, "final": 84}, "con": {"passA": 85, "passB": 87, "final": 85}},
+    {"id": "S2", "weightPercent": 10, "pro": {"passA": 81, "passB": 84, "final": 82}, "con": {"passA": 82, "passB": 78, "final": 80}},
+    {"id": "S3", "weightPercent": 25, "pro": {"passA": 76, "passB": 76, "final": 76}, "con": {"passA": 88, "passB": 88, "final": 88}},
+    {"id": "S4", "weightPercent": 20, "pro": {"passA": 82, "passB": 82, "final": 82}, "con": {"passA": 85, "passB": 85, "final": 86}},
+    {"id": "S5", "weightPercent": 25, "pro": {"passA": 77, "passB": 79, "final": 78}, "con": {"passA": 88, "passB": 87, "final": 88}},
+    {"id": "S6", "weightPercent": 10, "pro": {"passA": 88, "passB": 89, "final": 89}, "con": {"passA": 87, "passB": 86, "final": 87}}
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "passA": 0,
+      "passB": -3,
+      "delta": 3,
+      "requiresAdjudication": true,
+      "final": 0,
+      "confidence": "high",
+      "rationale": "Pass B's cited incompletions are already represented in the selected, importance-weighted moves M08, M10, M18, and M22. A further debate-level deduction would duplicate those move-level defects, contrary to the adjustment control."
+    },
+    "con": {
+      "passA": 0,
+      "passB": -2,
+      "delta": 2,
+      "requiresAdjudication": false,
+      "final": -1,
+      "rationale": "The strict greater-than-two threshold was not triggered; the final value is the rounded pass mean."
+    }
+  },
+  "overall": {
+    "pro": {"passA": {"weightedSectionMean": 79.65, "score": 80}, "passB": {"weightedSectionMean": 81.25, "score": 78}, "weightedSectionMean": 80.4, "burdenCompletionAdjustment": 0, "score": 80, "confidenceRange": {"low": 76, "high": 82}},
+    "con": {"passA": {"weightedSectionMean": 86.4, "score": 86}, "passB": {"weightedSectionMean": 85.85, "score": 84}, "weightedSectionMean": 86.4, "burdenCompletionAdjustment": -1, "score": 85, "confidenceRange": {"low": 82, "high": 88}}
+  },
+  "agreementAudit": {
+    "moveCount": 25,
+    "triggeredMoveCount": 2,
+    "adjudicationRate": 0.08,
+    "meanAbsoluteDimensionDelta": 2.1,
+    "maxDimensionDelta": 10,
+    "meanAbsoluteMoveScoreDelta": 1.28,
+    "maxMoveScoreDelta": 7,
+    "adjustmentAdjudicationCount": 1,
+    "missingRequiredAdjudications": 0,
+    "formulaAndWeightValidation": "passed"
+  }
+}

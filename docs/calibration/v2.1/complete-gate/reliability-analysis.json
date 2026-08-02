@@ -1,0 +1,227 @@
+{
+  "schemaVersion": "2.1-complete-gate-reliability",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.1",
+  "model": "5.6 Sol",
+  "calibrationOnly": true,
+  "analyzedAt": "2026-08-02T23:08:01Z",
+  "sample": {
+    "debateCount": 3,
+    "moveCount": 79,
+    "dimensionJudgmentCount": 474,
+    "debateIds": [
+      "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "craig-frazier-goff-folley-god-reality-2026"
+    ]
+  },
+  "independence": {
+    "level": "separate-isolated-5.6-Sol-model-tasks",
+    "passAAccessedPassB": false,
+    "passBAccessedPassA": false,
+    "legacyAssessmentAccessed": false,
+    "discardedAttempt": "The first Debate #05 Pass A task inadvertently exposed legacy/pilot scores during a broad schema search, stopped before producing output, and was discarded. The recorded Debate #05 Pass A artifact came from a new isolated task restricted to an explicit file allowlist.",
+    "note": "Each retained pass records a fresh isolated task using the same locked inventory and source chain. This is model-task isolation, not independence between different model families."
+  },
+  "debates": [
+    {
+      "debateNumber": "05",
+      "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "stratum": "lopsided asymmetric burden",
+      "moveCount": 26,
+      "triggeredMoveCount": 12,
+      "moveAdjudicationRate": 0.4615,
+      "meanAbsoluteDimensionDelta": 4.083,
+      "maxDimensionDelta": 26,
+      "meanAbsoluteMoveScoreDelta": 2.615,
+      "maxMoveScoreDelta": 11,
+      "sideAgreement": {
+        "pro": {
+          "moveCount": 13,
+          "meanAbsoluteDimensionDelta": 5.103,
+          "maxDimensionDelta": 18,
+          "meanAbsoluteMoveScoreDelta": 3.385,
+          "maxMoveScoreDelta": 11,
+          "meanDeltaByDimension": {"logicalCoherence": 5.154, "evidenceWarrant": 4.231, "responsiveness": 6.538, "relevanceBurden": 5.154, "precisionClarity": 3.769, "calibrationCharity": 5.769},
+          "passAOverall": 57,
+          "passBOverall": 58,
+          "overallScoreDelta": 1,
+          "finalOverall": 57
+        },
+        "con": {
+          "moveCount": 13,
+          "meanAbsoluteDimensionDelta": 3.064,
+          "maxDimensionDelta": 26,
+          "meanAbsoluteMoveScoreDelta": 1.846,
+          "maxMoveScoreDelta": 8,
+          "meanDeltaByDimension": {"logicalCoherence": 2.231, "evidenceWarrant": 4.154, "responsiveness": 2, "relevanceBurden": 2.385, "precisionClarity": 2.692, "calibrationCharity": 4.923},
+          "passAOverall": 87,
+          "passBOverall": 86,
+          "overallScoreDelta": 1,
+          "finalOverall": 87
+        }
+      },
+      "passWinnerClassification": {"passA": "con", "passB": "con", "final": "con", "stableAcrossPasses": true},
+      "attribution": {"high": 20, "medium": 6, "low": 0, "audioChecked": 0},
+      "reviewOutcome": "Overall totals are stable, but the move-adjudication rate exceeds 0.25 and the pro-side mean dimension delta exceeds 5. The main disagreements concern how direct a non-answer remains and how much calibration/charity belongs to bounded closing moves."
+    },
+    {
+      "debateNumber": "81",
+      "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "stratum": "close analytic",
+      "moveCount": 25,
+      "triggeredMoveCount": 2,
+      "moveAdjudicationRate": 0.08,
+      "meanAbsoluteDimensionDelta": 2.1,
+      "maxDimensionDelta": 10,
+      "meanAbsoluteMoveScoreDelta": 1.28,
+      "maxMoveScoreDelta": 7,
+      "sideAgreement": {
+        "pro": {
+          "moveCount": 12,
+          "meanAbsoluteDimensionDelta": 2.472,
+          "maxDimensionDelta": 10,
+          "meanAbsoluteMoveScoreDelta": 1.667,
+          "maxMoveScoreDelta": 7,
+          "meanDeltaByDimension": {"logicalCoherence": 2.333, "evidenceWarrant": 3.5, "responsiveness": 2.833, "relevanceBurden": 1.75, "precisionClarity": 2.25, "calibrationCharity": 2.167},
+          "passAOverall": 80,
+          "passBOverall": 78,
+          "overallScoreDelta": 2,
+          "finalOverall": 80
+        },
+        "con": {
+          "moveCount": 13,
+          "meanAbsoluteDimensionDelta": 1.756,
+          "maxDimensionDelta": 9,
+          "meanAbsoluteMoveScoreDelta": 0.923,
+          "maxMoveScoreDelta": 4,
+          "meanDeltaByDimension": {"logicalCoherence": 1.538, "evidenceWarrant": 2.462, "responsiveness": 1.077, "relevanceBurden": 1.923, "precisionClarity": 2.154, "calibrationCharity": 1.385},
+          "passAOverall": 86,
+          "passBOverall": 84,
+          "overallScoreDelta": 2,
+          "finalOverall": 85
+        }
+      },
+      "passWinnerClassification": {"passA": "con", "passB": "con", "final": "con", "stableAcrossPasses": true},
+      "attribution": {"high": 19, "medium": 6, "low": 0, "audioChecked": 0},
+      "reviewOutcome": "All numerical review gates pass. The only burden-adjustment trigger exposed a useful double-counting control: the proposed pro deduction duplicated incompletions already scored in selected moves."
+    },
+    {
+      "debateNumber": "95",
+      "debateId": "craig-frazier-goff-folley-god-reality-2026",
+      "stratum": "multi-person pluralist",
+      "moveCount": 28,
+      "triggeredMoveCount": 12,
+      "moveAdjudicationRate": 0.4286,
+      "meanAbsoluteDimensionDelta": 3.833,
+      "maxDimensionDelta": 27,
+      "meanAbsoluteMoveScoreDelta": 2.536,
+      "maxMoveScoreDelta": 10,
+      "sideAgreement": {
+        "pro": {
+          "moveCount": 10,
+          "meanAbsoluteDimensionDelta": 4.8,
+          "maxDimensionDelta": 27,
+          "meanAbsoluteMoveScoreDelta": 3.7,
+          "maxMoveScoreDelta": 10,
+          "meanDeltaByDimension": {"logicalCoherence": 2.5, "evidenceWarrant": 2.6, "responsiveness": 5.9, "relevanceBurden": 8.4, "precisionClarity": 2.9, "calibrationCharity": 6.5},
+          "passAOverall": 76,
+          "passBOverall": 72,
+          "overallScoreDelta": 4,
+          "finalOverall": 74
+        },
+        "con": {
+          "moveCount": 18,
+          "meanAbsoluteDimensionDelta": 3.296,
+          "maxDimensionDelta": 27,
+          "meanAbsoluteMoveScoreDelta": 1.889,
+          "maxMoveScoreDelta": 8,
+          "meanDeltaByDimension": {"logicalCoherence": 2.333, "evidenceWarrant": 2.611, "responsiveness": 3.5, "relevanceBurden": 3.944, "precisionClarity": 4.167, "calibrationCharity": 3.222},
+          "passAOverall": 76,
+          "passBOverall": 75,
+          "overallScoreDelta": 1,
+          "finalOverall": 76
+        }
+      },
+      "passWinnerClassification": {"passA": "tie", "passB": "con", "final": "con", "stableAcrossPasses": false},
+      "attribution": {"high": 26, "medium": 2, "low": 0, "audioChecked": 0},
+      "reviewOutcome": "The move-adjudication rate exceeds 0.25, driven chiefly by responsiveness, burden relevance, and charity when a reply attacks a weaker property assignment or several con speakers advance distinct positions. The overall delta remains within threshold, but the pass-level result moves from a tie to a con lead."
+    }
+  ],
+  "aggregateAgreement": {
+    "meanAbsoluteDimensionDelta": 3.367,
+    "maxDimensionDelta": 27,
+    "meanAbsoluteMoveScoreDelta": 2.165,
+    "maxMoveScoreDelta": 11,
+    "meanAbsoluteDimensionDeltaBySide": {
+      "pro": 4.114,
+      "con": 2.773
+    },
+    "meanAbsoluteMoveScoreDeltaBySide": {
+      "pro": 2.886,
+      "con": 1.591
+    },
+    "meanDeltaByDimensionAndSide": {
+      "pro": {"logicalCoherence": 3.429, "evidenceWarrant": 3.514, "responsiveness": 5.086, "relevanceBurden": 4.914, "precisionClarity": 3, "calibrationCharity": 4.743},
+      "con": {"logicalCoherence": 2.068, "evidenceWarrant": 3.023, "responsiveness": 2.341, "relevanceBurden": 2.886, "precisionClarity": 3.136, "calibrationCharity": 3.182}
+    },
+    "triggeredMoveCount": 26,
+    "moveAdjudicationRate": 0.3291,
+    "maximumOverallScorePassDelta": 4,
+    "winnerClassificationDifferenceCount": 1,
+    "winnerClassificationDifferenceRate": 0.3333,
+    "passRankCorrelation": {"pro": 1, "con": 1, "minimum": 1},
+    "missingRequiredMoveAdjudications": 0,
+    "missingRequiredAdjustmentAdjudications": 0,
+    "calculatorArtifactMismatches": 0
+  },
+  "hardGates": {
+    "fullTranscriptAcquisition": {"minimum": 1, "observed": 1, "status": "pass", "note": "All three canonical full caption transcripts, event records, and manifests are stored locally with hashes."},
+    "centralQuoteAudioOrIndependentTranscriptVerification": {"minimum": 1, "observed": 0, "status": "fail", "note": "No inventory anchor or future representative quote has yet been checked against audio or an independent transcript."},
+    "unresolvedLowConfidenceSpeakerAttributions": {"maximum": 0, "observed": 0, "status": "pass", "note": "Fourteen moves remain medium-confidence, but none is low-confidence."},
+    "scoringPassIsolation": {"required": "separate model tasks with no score or rationale leakage", "observed": "separate isolated 5.6 Sol tasks with recorded blindness confirmations", "status": "pass"},
+    "missingRequiredAdjudications": {"maximum": 0, "observed": 0, "status": "pass"},
+    "calculatorArtifactMismatches": {"maximum": 0, "observed": 0, "status": "pass", "validationArtifact": "docs/calibration/v2.1/complete-gate/ledger-validation.json", "note": "Three uniform canonical ledgers were recomputed with the repository calculator using both --write and --check; all 79 moves and all final totals matched."},
+    "calibrationIsolation": {"required": true, "observed": true, "status": "pass"},
+    "completeArgumentInventory": {"required": true, "observed": true, "status": "pass"},
+    "completeScorecard": {"required": true, "observed": false, "status": "pending", "note": "Prose scorecards were expressly out of scope for this adjudication task."},
+    "aiExtensionNoveltyMapCompletion": {"minimum": 1, "observed": 0, "status": "pending", "note": "AI Extensions and novelty maps were expressly deferred until after score locking."}
+  },
+  "reviewGates": {
+    "meanAbsoluteDimensionDelta": {"maximum": 5, "observed": 3.367, "status": "pass", "note": "The aggregate and every debate-level mean pass; Debate #05's pro-side mean is 5.103 and merits targeted review."},
+    "moveAdjudicationRate": {"maximum": 0.25, "observed": 0.3291, "status": "exception-review-required", "note": "Debates #05 and #95 exceed the threshold; Debate #81 passes."},
+    "overallScorePassDelta": {"maximum": 5, "observedMaximum": 4, "status": "pass"},
+    "winnerFlipReview": {"threshold": 0.2, "observed": 0.3333, "status": "exception-review-required", "note": "One of three pass comparisons changes from a tie to a con lead; no pro/con reversal occurred."},
+    "rankCorrelation": {"minimum": 0.9, "observedMinimum": 1, "status": "pass"}
+  },
+  "gateDecision": {
+    "mechanics": "pass-with-reliability-exceptions",
+    "initialThreeDebateGate": "not-passed",
+    "canAuthorizeExpandedTenDebateGate": false,
+    "canAuthorizeAll195Debates": false,
+    "blockingHardGates": [
+      "centralQuoteAudioOrIndependentTranscriptVerification",
+      "completeScorecard",
+      "aiExtensionNoveltyMapCompletion"
+    ],
+    "reviewExceptions": [
+      "moveAdjudicationRate",
+      "winnerFlipReview"
+    ],
+    "reason": "The calculations, isolation, inventories, and adjudications are auditable, and overall scores are stable within four points. The preregistered gate nevertheless cannot pass before quote verification and complete composition/novelty QA, and its move-level disagreement rate exceeds the locked review threshold."
+  },
+  "workflowFindings": [
+    "The same rubric is reliable in the close analytic format but materially less reliable when rapid adversarial exchanges or multi-person aggregation make response scope and burden relevance contestable.",
+    "Overall aggregation masks local instability: 26 of 79 moves require adjudication even though all six side-level overall pass deltas are four points or less.",
+    "Responsiveness, relevanceBurden, and calibrationCharity are the principal disagreement hotspots; the workflow needs sharper examples for partial answers, weaker reconstructions, and the boundaries of a selected closing move.",
+    "The burden-completion adjustment control worked when adjudication rejected a duplicate pro deduction in Debate #81, but non-triggered averaging can still retain a small duplicate adjustment.",
+    "The three pass producers used semantically equivalent but structurally different JSON layouts, increasing normalization risk despite correct arithmetic."
+  ],
+  "recommendedRequirementsBeforeExpansion": [
+    "Adopt one validator-enforced scoring-pass JSON schema before the ten-debate gate.",
+    "Add rubric anchor examples for direct-but-nonresponsive replies, diagnostic questions, weaker reconstructions, and calibration scoring confined to the locked move span.",
+    "Require audio verification for every medium-confidence selected move and every representative quote before composition is accepted.",
+    "Make a burden adjustment ineligible when every cited incompletion already maps to one or more scored moves, unless the rationale identifies a distinct debate-wide consequence.",
+    "Complete the three prose scorecards, AI Extensions, novelty maps, and rendering checks before reconsidering the initial gate decision."
+  ]
+}

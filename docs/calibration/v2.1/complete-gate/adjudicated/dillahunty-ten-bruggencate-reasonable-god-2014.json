@@ -1,0 +1,222 @@
+{
+  "schemaVersion": "2.1-complete-gate-adjudication",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.1",
+  "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+  "debateNumber": "05",
+  "model": "5.6 Sol",
+  "calibrationOnly": true,
+  "adjudicatedAt": "2026-08-02T23:08:01Z",
+  "source": {
+    "inventory": "docs/calibration/v2.1/complete-gate/inventories/dillahunty-ten-bruggencate-reasonable-god-2014.json",
+    "passA": "docs/calibration/v2.1/complete-gate/pass-a/dillahunty-ten-bruggencate-reasonable-god-2014.json",
+    "passB": "docs/calibration/v2.1/complete-gate/pass-b/dillahunty-ten-bruggencate-reasonable-god-2014.json",
+    "sourceManifest": "docs/calibration/v2.1/source-manifests/dillahunty-ten-bruggencate-reasonable-god-2014.json",
+    "transcriptSha256": "bd430d54672142640c78efaf3630dcbbfd15e833732058f53bd5df60b3b92a17",
+    "normalizedEventsSha256": "ec182e33fd6ecc7af309efceffc13f87af1e6e8ee2be8dd0bc24394cc3a5e05a",
+    "blindPacketSha256": "c33494c92b7f586deb02f70d54dcb9780df36aa850d16f7ddc3df2322fad1392",
+    "attributionLimit": "English auto-captions were reviewed with the canonical event record. No audio or independent transcript was available; rapid handoffs remain medium-confidence where the inventory says so."
+  },
+  "resolutionPolicy": {
+    "dimensionThreshold": 8,
+    "moveScoreThreshold": 4,
+    "burdenAdjustmentThreshold": 2,
+    "nonTriggeredMoves": "Round each dimension's Pass A/Pass B mean, then calculate the move score mechanically.",
+    "triggeredMoves": "Select transcript-supported final dimensions under the v2.1 band anchors; do not default to the arithmetic mean.",
+    "rounding": "JavaScript Math.round at the move, section, and overall stages."
+  },
+  "triggeredAdjudications": [
+    {
+      "moveId": "D05-M004",
+      "side": "pro",
+      "passAScore": 44,
+      "passBScore": 49,
+      "scoreDelta": 5,
+      "maxDimensionDelta": 11,
+      "triggeredDimensions": {"responsiveness": 10, "relevanceBurden": 11},
+      "finalDimensions": {"logicalCoherence": 45, "evidenceWarrant": 18, "responsiveness": 55, "relevanceBurden": 65, "precisionClarity": 76, "calibrationCharity": 22},
+      "finalScore": 45,
+      "confidence": "high",
+      "rationale": "The turn directly explains why public evidence is refused, supporting slightly more responsiveness than Pass A allowed. It nevertheless substitutes asserted divine priority and universal God-knowledge for the requested warrant, so it remains mixed-to-weak on relevance and does not reach Pass B's burden score."
+    },
+    {
+      "moveId": "D05-M007",
+      "side": "pro",
+      "passAScore": 59,
+      "passBScore": 58,
+      "scoreDelta": 1,
+      "maxDimensionDelta": 12,
+      "triggeredDimensions": {"precisionClarity": 12},
+      "finalDimensions": {"logicalCoherence": 48, "evidenceWarrant": 47, "responsiveness": 75, "relevanceBurden": 78, "precisionClarity": 58, "calibrationCharity": 45},
+      "finalScore": 58,
+      "confidence": "medium",
+      "rationale": "The rapid compound exchange is hard to audit and contains an immediately disputed inference from non-refutation to possibility. Pass B's lower clarity score better reflects the garbled handoff while preserving the relevant challenge about sensory and rational trust."
+    },
+    {
+      "moveId": "D05-M009",
+      "side": "pro",
+      "passAScore": 56,
+      "passBScore": 53,
+      "scoreDelta": 3,
+      "maxDimensionDelta": 10,
+      "triggeredDimensions": {"evidenceWarrant": 10},
+      "finalDimensions": {"logicalCoherence": 52, "evidenceWarrant": 25, "responsiveness": 62, "relevanceBurden": 75, "precisionClarity": 76, "calibrationCharity": 42},
+      "finalScore": 53,
+      "confidence": "high",
+      "rationale": "The move raises a real normativity question but supplies no bridge from physical causation to the impossibility of truth-bearing content. Pass B's warrant score is better anchored to the rubric's effectively unsupported fact-dependent band."
+    },
+    {
+      "moveId": "D05-M012",
+      "side": "pro",
+      "passAScore": 50,
+      "passBScore": 57,
+      "scoreDelta": 7,
+      "maxDimensionDelta": 15,
+      "triggeredDimensions": {"logicalCoherence": 10, "responsiveness": 15, "calibrationCharity": 10},
+      "finalDimensions": {"logicalCoherence": 50, "evidenceWarrant": 20, "responsiveness": 58, "relevanceBurden": 82, "precisionClarity": 70, "calibrationCharity": 50},
+      "finalScore": 52,
+      "confidence": "medium",
+      "rationale": "Identifying logical absolutes with divine thought is a recoverable candidate account, but the live request was for demonstration and comparative exclusion. The final dimensions credit topic-level engagement without treating restatement of the contested revelation premise as a direct evidential answer."
+    },
+    {
+      "moveId": "D05-M014",
+      "side": "con",
+      "passAScore": 79,
+      "passBScore": 87,
+      "scoreDelta": 8,
+      "maxDimensionDelta": 15,
+      "triggeredDimensions": {"logicalCoherence": 15, "responsiveness": 9},
+      "finalDimensions": {"logicalCoherence": 82, "evidenceWarrant": 76, "responsiveness": 88, "relevanceBurden": 87, "precisionClarity": 86, "calibrationCharity": 92},
+      "finalScore": 84,
+      "confidence": "high",
+      "rationale": "The turn precisely limits induction to fallible, probabilistic expectation and directly answers the repeated certainty standard. Pass B overstates how fully the observed trend answers the deeper circularity problem, while Pass A understates the coherence of a probabilistic rather than deductive inference."
+    },
+    {
+      "moveId": "D05-M015",
+      "side": "pro",
+      "passAScore": 68,
+      "passBScore": 62,
+      "scoreDelta": 6,
+      "maxDimensionDelta": 10,
+      "triggeredDimensions": {"evidenceWarrant": 10},
+      "finalDimensions": {"logicalCoherence": 58, "evidenceWarrant": 55, "responsiveness": 65, "relevanceBurden": 76, "precisionClarity": 70, "calibrationCharity": 55},
+      "finalScore": 62,
+      "confidence": "medium",
+      "rationale": "The counterexamples show that past regularity does not entail the next instance, but the immediately preceding claim was explicitly probabilistic. Pass B better captures the weak comparison class and the move's partial targeting of a stronger claim than the opponent made."
+    },
+    {
+      "moveId": "D05-M018",
+      "side": "pro",
+      "passAScore": 38,
+      "passBScore": 49,
+      "scoreDelta": 11,
+      "maxDimensionDelta": 18,
+      "triggeredDimensions": {"logicalCoherence": 16, "responsiveness": 18, "relevanceBurden": 15, "calibrationCharity": 10},
+      "finalDimensions": {"logicalCoherence": 45, "evidenceWarrant": 18, "responsiveness": 35, "relevanceBurden": 58, "precisionClarity": 72, "calibrationCharity": 30},
+      "finalScore": 41,
+      "confidence": "high",
+      "rationale": "The presupposition-sensitive refusal is internally intelligible as a policy, but it declines the concrete reliability test and supplies no public discriminator for revelation. That is a very weak response to the live burden, closer to Pass A than Pass B."
+    },
+    {
+      "moveId": "D05-M019",
+      "side": "pro",
+      "passAScore": 70,
+      "passBScore": 69,
+      "scoreDelta": 1,
+      "maxDimensionDelta": 10,
+      "triggeredDimensions": {"evidenceWarrant": 10},
+      "finalDimensions": {"logicalCoherence": 72, "evidenceWarrant": 45, "responsiveness": 80, "relevanceBurden": 78, "precisionClarity": 76, "calibrationCharity": 64},
+      "finalScore": 69,
+      "confidence": "high",
+      "rationale": "The conditional internal critique is concrete, but its textual premises and interpretation are not established in the locked record. Pass B's lower warrant score is therefore better supported, while the move still advances the narrower Islam comparison."
+    },
+    {
+      "moveId": "D05-M020",
+      "side": "con",
+      "passAScore": 89,
+      "passBScore": 85,
+      "scoreDelta": 4,
+      "maxDimensionDelta": 12,
+      "triggeredDimensions": {"evidenceWarrant": 12},
+      "finalDimensions": {"logicalCoherence": 89, "evidenceWarrant": 80, "responsiveness": 92, "relevanceBurden": 92, "precisionClarity": 87, "calibrationCharity": 87},
+      "finalScore": 88,
+      "confidence": "high",
+      "rationale": "The deity-substitution case is a conceptual countermodel to the presented template and therefore does not require empirical documentation. It strongly demonstrates underdetermination of that form, though not the failure of every more-developed transcendental argument."
+    },
+    {
+      "moveId": "D05-M021",
+      "side": "pro",
+      "passAScore": 47,
+      "passBScore": 48,
+      "scoreDelta": 1,
+      "maxDimensionDelta": 13,
+      "triggeredDimensions": {"responsiveness": 10, "calibrationCharity": 13},
+      "finalDimensions": {"logicalCoherence": 40, "evidenceWarrant": 18, "responsiveness": 48, "relevanceBurden": 73, "precisionClarity": 78, "calibrationCharity": 50},
+      "finalScore": 47,
+      "confidence": "high",
+      "rationale": "The answer candidly grants parity but then defers the comparative work and invokes the Bible whose discriminatory status is under challenge. Its clarity and relevance survive, but it does not answer the decisive selection-rule request."
+    },
+    {
+      "moveId": "D05-M023",
+      "side": "pro",
+      "passAScore": 65,
+      "passBScore": 66,
+      "scoreDelta": 1,
+      "maxDimensionDelta": 14,
+      "triggeredDimensions": {"responsiveness": 14, "calibrationCharity": 10},
+      "finalDimensions": {"logicalCoherence": 71, "evidenceWarrant": 25, "responsiveness": 78, "relevanceBurden": 84, "precisionClarity": 88, "calibrationCharity": 65},
+      "finalScore": 66,
+      "confidence": "high",
+      "rationale": "The clarification directly corrects an inference-to-God reconstruction and precisely states the intended direction. It still leaves the Christian starting point unwarranted, so high local responsiveness does not imply completion of the public reasonableness burden."
+    },
+    {
+      "moveId": "D05-M026",
+      "side": "con",
+      "passAScore": 86,
+      "passBScore": 87,
+      "scoreDelta": 1,
+      "maxDimensionDelta": 26,
+      "triggeredDimensions": {"calibrationCharity": 26},
+      "finalDimensions": {"logicalCoherence": 87, "evidenceWarrant": 75, "responsiveness": 91, "relevanceBurden": 92, "precisionClarity": 88, "calibrationCharity": 91},
+      "finalScore": 87,
+      "confidence": "high",
+      "rationale": "The locked move begins after the closing's harsher characterizations and makes a proportionate distinction between confidence and truth before limiting the conclusion to the present absence of reasonable justification. Pass B correctly scores this selected argument rather than importing tone from an earlier, separately bounded portion of the close."
+    }
+  ],
+  "finalMoveScores": {
+    "D05-M001": 73, "D05-M002": 87, "D05-M003": 86, "D05-M004": 45,
+    "D05-M005": 50, "D05-M006": 84, "D05-M007": 58, "D05-M008": 89,
+    "D05-M009": 53, "D05-M010": 85, "D05-M011": 86, "D05-M012": 52,
+    "D05-M013": 79, "D05-M014": 84, "D05-M015": 62, "D05-M016": 88,
+    "D05-M017": 85, "D05-M018": 41, "D05-M019": 69, "D05-M020": 88,
+    "D05-M021": 47, "D05-M022": 91, "D05-M023": 66, "D05-M024": 34,
+    "D05-M025": 87, "D05-M026": 87
+  },
+  "sections": [
+    {"id": "SEC-1-REASONABLENESS", "weightPercent": 18, "pro": {"passA": 59, "passB": 61, "final": 59}, "con": {"passA": 87, "passB": 87, "final": 87}},
+    {"id": "SEC-2-ULTIMATE-REALITY", "weightPercent": 17, "pro": {"passA": 54, "passB": 55, "final": 54}, "con": {"passA": 88, "passB": 85, "final": 87}},
+    {"id": "SEC-3-LOGIC-FOUNDATION", "weightPercent": 20, "pro": {"passA": 53, "passB": 55, "final": 53}, "con": {"passA": 86, "passB": 85, "final": 86}},
+    {"id": "SEC-4-REASON-CIRCULARITY-INDUCTION", "weightPercent": 15, "pro": {"passA": 76, "passB": 72, "final": 72}, "con": {"passA": 84, "passB": 88, "final": 86}},
+    {"id": "SEC-5-REVELATION-RIVALS", "weightPercent": 18, "pro": {"passA": 49, "passB": 54, "final": 50}, "con": {"passA": 87, "passB": 85, "final": 87}},
+    {"id": "SEC-6-FALSIFIABILITY-CLOSING", "weightPercent": 12, "pro": {"passA": 52, "passB": 54, "final": 53}, "con": {"passA": 88, "passB": 87, "final": 88}}
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {"passA": 0, "passB": 0, "delta": 0, "requiresAdjudication": false, "final": 0},
+    "con": {"passA": 0, "passB": 0, "delta": 0, "requiresAdjudication": false, "final": 0}
+  },
+  "overall": {
+    "pro": {"passA": {"weightedSectionMean": 56.86, "score": 57}, "passB": {"weightedSectionMean": 58.33, "score": 58}, "weightedSectionMean": 56.56, "burdenCompletionAdjustment": 0, "score": 57, "confidenceRange": {"low": 55, "high": 60}},
+    "con": {"passA": {"weightedSectionMean": 86.64, "score": 87}, "passB": {"weightedSectionMean": 86.05, "score": 86}, "weightedSectionMean": 86.77, "burdenCompletionAdjustment": 0, "score": 87, "confidenceRange": {"low": 84, "high": 89}}
+  },
+  "agreementAudit": {
+    "moveCount": 26,
+    "triggeredMoveCount": 12,
+    "adjudicationRate": 0.4615,
+    "meanAbsoluteDimensionDelta": 4.083,
+    "maxDimensionDelta": 26,
+    "meanAbsoluteMoveScoreDelta": 2.615,
+    "maxMoveScoreDelta": 11,
+    "missingRequiredAdjudications": 0,
+    "formulaAndWeightValidation": "passed"
+  }
+}

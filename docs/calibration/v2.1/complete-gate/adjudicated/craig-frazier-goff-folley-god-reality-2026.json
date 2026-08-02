@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "2.1-complete-gate-adjudication",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.1",
+  "debateId": "craig-frazier-goff-folley-god-reality-2026",
+  "debateNumber": "95",
+  "model": "5.6 Sol",
+  "calibrationOnly": true,
+  "adjudicatedAt": "2026-08-02T23:08:01Z",
+  "source": {
+    "inventory": "docs/calibration/v2.1/complete-gate/inventories/craig-frazier-goff-folley-god-reality-2026.json",
+    "passA": "docs/calibration/v2.1/complete-gate/pass-a/craig-frazier-goff-folley-god-reality-2026.json",
+    "passB": "docs/calibration/v2.1/complete-gate/pass-b/craig-frazier-goff-folley-god-reality-2026.json",
+    "sourceManifest": "docs/calibration/v2.1/source-manifests/craig-frazier-goff-folley-god-reality-2026.json",
+    "transcriptSha256": "1358b685c8e4a587861a363af58028b37cb4531bccba2e7a86f0df26b362826a",
+    "normalizedEventsSha256": "00f71b96a5433a6e1b6da9812c3db464e4a0fcd0752aaa91fef0d9764a1631d1",
+    "blindPacketSha256": "23607c3521c15867281d67dc22eb34c4b61f5a1b51ef28122566ebb98f33f29b",
+    "attributionLimit": "English auto-captions were reviewed with the canonical event record. No audio or independent transcript was available; S5-M4 and S5-M5 retain medium-confidence speaker attribution, with no unresolved low-confidence move."
+  },
+  "resolutionPolicy": {
+    "dimensionThreshold": 8,
+    "moveScoreThreshold": 4,
+    "burdenAdjustmentThreshold": 2,
+    "nonTriggeredMoves": "Round each dimension's Pass A/Pass B mean, then calculate the move score mechanically.",
+    "triggeredMoves": "Select transcript-supported final dimensions under the v2.1 band anchors; do not default to the arithmetic mean.",
+    "rounding": "JavaScript Math.round at the move, section, and overall stages."
+  },
+  "triggeredAdjudications": [
+    {
+      "moveId": "S1-M1",
+      "side": "pro",
+      "passAScore": 71,
+      "passBScore": 69,
+      "scoreDelta": 2,
+      "maxDimensionDelta": 16,
+      "triggeredDimensions": {"relevanceBurden": 16, "calibrationCharity": 9},
+      "finalDimensions": {"logicalCoherence": 72, "evidenceWarrant": 48, "responsiveness": 78, "relevanceBurden": 80, "precisionClarity": 85, "calibrationCharity": 58},
+      "finalScore": 70,
+      "confidence": "high",
+      "rationale": "The opening is centrally relevant and provides a recoverable cumulative outline, but listing best-explanation conclusions without their bridges does not directly discharge the cosmic burden. The final relevance score therefore lies in the competent band rather than either Pass A's completion-level score or Pass B's mixed-band score."
+    },
+    {
+      "moveId": "S1-M2",
+      "side": "con",
+      "passAScore": 68,
+      "passBScore": 70,
+      "scoreDelta": 2,
+      "maxDimensionDelta": 13,
+      "triggeredDimensions": {"precisionClarity": 13},
+      "finalDimensions": {"logicalCoherence": 67, "evidenceWarrant": 58, "responsiveness": 72, "relevanceBurden": 72, "precisionClarity": 66, "calibrationCharity": 77},
+      "finalScore": 68,
+      "confidence": "high",
+      "rationale": "The relational-unity proposal is intelligible as a starting frame, but phrases such as 'unified in some sense' leave the ground, modality, and mechanism materially vague. Pass A's clarity score better matches that transcript compression."
+    },
+    {
+      "moveId": "S2-M5",
+      "side": "pro",
+      "passAScore": 81,
+      "passBScore": 71,
+      "scoreDelta": 10,
+      "maxDimensionDelta": 27,
+      "triggeredDimensions": {"responsiveness": 27, "relevanceBurden": 13, "calibrationCharity": 12},
+      "finalDimensions": {"logicalCoherence": 82, "evidenceWarrant": 62, "responsiveness": 64, "relevanceBurden": 75, "precisionClarity": 86, "calibrationCharity": 56},
+      "finalScore": 71,
+      "confidence": "high",
+      "rationale": "Craig's contradiction follows under his two exhaustive property sets, but Goff had located a necessary, timeless conscious core within the universe and immediately rejected the claim that the whole universe is essentially contingent. The objection therefore attacks a characterization the target did not accept; Pass B correctly places responsiveness in the weaker-reconstruction band."
+    },
+    {
+      "moveId": "S3-M1",
+      "side": "con",
+      "passAScore": 67,
+      "passBScore": 65,
+      "scoreDelta": 2,
+      "maxDimensionDelta": 10,
+      "triggeredDimensions": {"relevanceBurden": 10, "precisionClarity": 9},
+      "finalDimensions": {"logicalCoherence": 62, "evidenceWarrant": 55, "responsiveness": 75, "relevanceBurden": 75, "precisionClarity": 72, "calibrationCharity": 62},
+      "finalScore": 66,
+      "confidence": "high",
+      "rationale": "Neural suppression and the filter metaphor make Goff's interpretation intelligible and materially relevant, but neither discriminates disclosure from disruption. The move advances the burden without completing it, and its central metaphor remains clearer than Pass A allowed but less precise than Pass B suggested."
+    },
+    {
+      "moveId": "S3-M3",
+      "side": "con",
+      "passAScore": 71,
+      "passBScore": 72,
+      "scoreDelta": 1,
+      "maxDimensionDelta": 9,
+      "triggeredDimensions": {"precisionClarity": 9},
+      "finalDimensions": {"logicalCoherence": 64, "evidenceWarrant": 61, "responsiveness": 85, "relevanceBurden": 78, "precisionClarity": 81, "calibrationCharity": 72},
+      "finalScore": 72,
+      "confidence": "high",
+      "rationale": "The reply clearly identifies intensity and cross-subject uniformity as proposed reliability indicators. Its failure is not opacity but the weak warrant from compelling seeming to a discriminating metaphysical interpretation, so Pass B's clarity score is better placed."
+    },
+    {
+      "moveId": "S3-M6",
+      "side": "pro",
+      "passAScore": 86,
+      "passBScore": 85,
+      "scoreDelta": 1,
+      "maxDimensionDelta": 13,
+      "triggeredDimensions": {"calibrationCharity": 13},
+      "finalDimensions": {"logicalCoherence": 87, "evidenceWarrant": 77, "responsiveness": 92, "relevanceBurden": 90, "precisionClarity": 89, "calibrationCharity": 67},
+      "finalScore": 85,
+      "confidence": "high",
+      "rationale": "The underdetermination challenge directly reaches Goff's strongest evidential bridge. Calling the rival view strange and self-contradictory imports a still-disputed characterization, however, so Pass B's lower calibration score is warranted without weakening the core objection."
+    },
+    {
+      "moveId": "S4-M1",
+      "side": "pro",
+      "passAScore": 68,
+      "passBScore": 64,
+      "scoreDelta": 4,
+      "maxDimensionDelta": 11,
+      "triggeredDimensions": {"relevanceBurden": 11, "precisionClarity": 9},
+      "finalDimensions": {"logicalCoherence": 56, "evidenceWarrant": 51, "responsiveness": 82, "relevanceBurden": 82, "precisionClarity": 82, "calibrationCharity": 50},
+      "finalScore": 66,
+      "confidence": "high",
+      "rationale": "The opening clearly frames one recognizable kind of ultimate significance and is directly burden-relevant. It does not supply the bridge from eventual extinction to present objective insignificance and dismisses subject-involving meaning as pretense, so the final result remains in the mixed band."
+    },
+    {
+      "moveId": "S4-M4",
+      "side": "pro",
+      "passAScore": 72,
+      "passBScore": 72,
+      "scoreDelta": 0,
+      "maxDimensionDelta": 10,
+      "triggeredDimensions": {"relevanceBurden": 10},
+      "finalDimensions": {"logicalCoherence": 70, "evidenceWarrant": 53, "responsiveness": 81, "relevanceBurden": 82, "precisionClarity": 85, "calibrationCharity": 68},
+      "finalScore": 72,
+      "confidence": "high",
+      "rationale": "Craig precisely states the proposed objective purpose and directly clarifies his target, but he asserts rather than defends the need for a transcendent assigner and the worthiness of the assigned end. The move materially advances rather than completes the locked burden."
+    },
+    {
+      "moveId": "S5-M1",
+      "side": "con",
+      "passAScore": 75,
+      "passBScore": 73,
+      "scoreDelta": 2,
+      "maxDimensionDelta": 11,
+      "triggeredDimensions": {"relevanceBurden": 11},
+      "finalDimensions": {"logicalCoherence": 72, "evidenceWarrant": 59, "responsiveness": 81, "relevanceBurden": 80, "precisionClarity": 79, "calibrationCharity": 80},
+      "finalScore": 74,
+      "confidence": "high",
+      "rationale": "Frazier directly corrects the characterization of Hinduism and offers conscious interaction and dharmic order as a positive rival basis. The categorical-authority bridge is compressed, so the move strongly advances but does not discharge its burden."
+    },
+    {
+      "moveId": "S5-M3",
+      "side": "pro",
+      "passAScore": 84,
+      "passBScore": 79,
+      "scoreDelta": 5,
+      "maxDimensionDelta": 8,
+      "triggeredDimensions": {},
+      "finalDimensions": {"logicalCoherence": 80, "evidenceWarrant": 64, "responsiveness": 89, "relevanceBurden": 90, "precisionClarity": 89, "calibrationCharity": 80},
+      "finalScore": 81,
+      "confidence": "high",
+      "rationale": "This is the section's clearest positive model and directly distinguishes value from duty. The unresolved authority-to-obligation bridge prevents a very-strong score, while its precision and directness support a result above Pass B's lower edge."
+    },
+    {
+      "moveId": "S5-M5",
+      "side": "con",
+      "passAScore": 77,
+      "passBScore": 69,
+      "scoreDelta": 8,
+      "maxDimensionDelta": 27,
+      "triggeredDimensions": {"responsiveness": 27, "relevanceBurden": 10, "calibrationCharity": 11},
+      "finalDimensions": {"logicalCoherence": 76, "evidenceWarrant": 65, "responsiveness": 68, "relevanceBurden": 82, "precisionClarity": 83, "calibrationCharity": 58},
+      "finalScore": 72,
+      "confidence": "medium",
+      "rationale": "The warning about human appropriation of alleged commands is a consequential reply to public authority. But the move recasts Craig's explicitly good-nature-qualified account as sheer power and 'whatever he says,' leaving the strongest pro formulation only partly answered. The unresolved caption handoff also limits confidence."
+    },
+    {
+      "moveId": "S5-M6",
+      "side": "pro",
+      "passAScore": 78,
+      "passBScore": 73,
+      "scoreDelta": 5,
+      "maxDimensionDelta": 9,
+      "triggeredDimensions": {"relevanceBurden": 9},
+      "finalDimensions": {"logicalCoherence": 75, "evidenceWarrant": 56, "responsiveness": 85, "relevanceBurden": 80, "precisionClarity": 85, "calibrationCharity": 75},
+      "finalScore": 75,
+      "confidence": "high",
+      "rationale": "Craig correctly separates duty from prudence and directly answers Folley's enforcement framing. Saying theism supplies a basis does not explain non-prudential authority or exclude non-theistic duty, so the move is competent and responsive but incomplete."
+    }
+  ],
+  "finalMoveScores": {
+    "S1-M1": 70, "S1-M2": 68, "S1-M3": 78, "S1-M4": 82, "S1-M5": 76,
+    "S2-M1": 69, "S2-M2": 80, "S2-M3": 82, "S2-M4": 71, "S2-M5": 71, "S2-M6": 78,
+    "S3-M1": 66, "S3-M2": 80, "S3-M3": 72, "S3-M4": 85, "S3-M5": 81, "S3-M6": 85,
+    "S4-M1": 66, "S4-M2": 85, "S4-M3": 86, "S4-M4": 72, "S4-M5": 81,
+    "S5-M1": 74, "S5-M2": 82, "S5-M3": 81, "S5-M4": 73, "S5-M5": 72, "S5-M6": 75
+  },
+  "sections": [
+    {"id": "S1", "weightPercent": 22, "pro": {"passA": 73, "passB": 71, "final": 72}, "con": {"passA": 76, "passB": 76, "final": 76}},
+    {"id": "S2", "weightPercent": 18, "pro": {"passA": 81, "passB": 75, "final": 76}, "con": {"passA": 75, "passB": 75, "final": 75}},
+    {"id": "S3", "weightPercent": 22, "pro": {"passA": 84, "passB": 82, "final": 83}, "con": {"passA": 74, "passB": 75, "final": 75}},
+    {"id": "S4", "weightPercent": 18, "pro": {"passA": 70, "passB": 68, "final": 69}, "con": {"passA": 84, "passB": 84, "final": 84}},
+    {"id": "S5", "weightPercent": 20, "pro": {"passA": 82, "passB": 77, "final": 79}, "con": {"passA": 78, "passB": 74, "final": 75}}
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {"passA": -2, "passB": -3, "delta": 1, "requiresAdjudication": false, "final": -2, "rationale": "The strict threshold was not triggered; JavaScript rounding of the pass mean (-2.5) yields -2."},
+    "con": {"passA": -1, "passB": -2, "delta": 1, "requiresAdjudication": false, "final": -1, "rationale": "The strict threshold was not triggered; JavaScript rounding of the pass mean (-1.5) yields -1."}
+  },
+  "overall": {
+    "pro": {"passA": {"weightedSectionMean": 78.12, "score": 76}, "passB": {"weightedSectionMean": 74.8, "score": 72}, "weightedSectionMean": 76, "burdenCompletionAdjustment": -2, "score": 74, "confidenceRange": {"low": 70, "high": 78}},
+    "con": {"passA": {"weightedSectionMean": 77.22, "score": 76}, "passB": {"weightedSectionMean": 76.64, "score": 75}, "weightedSectionMean": 76.84, "burdenCompletionAdjustment": -1, "score": 76, "confidenceRange": {"low": 73, "high": 78}}
+  },
+  "agreementAudit": {
+    "moveCount": 28,
+    "triggeredMoveCount": 12,
+    "adjudicationRate": 0.4286,
+    "meanAbsoluteDimensionDelta": 3.833,
+    "maxDimensionDelta": 27,
+    "meanAbsoluteMoveScoreDelta": 2.536,
+    "maxMoveScoreDelta": 10,
+    "missingRequiredAdjudications": 0,
+    "formulaAndWeightValidation": "passed"
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "schemaVersion": "2.1-complete-gate-ledger-validation",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.1",
+  "generatedAt": "2026-08-02T23:43:30.175Z",
+  "calculator": {
+    "module": "scripts/lib/reassessment-scoring.mjs",
+    "command": "scripts/calculate-reassessment.mjs",
+    "writeExecutedForEveryLedger": true,
+    "checkExecutedForEveryLedger": true
+  },
+  "schemaUniformity": {
+    "passed": true,
+    "comparedLedgerCount": 3,
+    "signature": {
+      "topLevelKeys": [
+        "adjudicationMetadata",
+        "agreementAudit",
+        "aiExtensionReview",
+        "assessmentPasses",
+        "blindPacketSha256",
+        "burdenCompletionAdjustment",
+        "burdens",
+        "calibrationOnly",
+        "chronologicalMoveOrder",
+        "debateId",
+        "debateNumber",
+        "model",
+        "motion",
+        "moveImportanceLockedBeforeScoring",
+        "overall",
+        "passIndependence",
+        "pilotScope",
+        "rubricVersion",
+        "schemaVersion",
+        "sectionWeightsLockedBeforeScoring",
+        "sections",
+        "sideMapping",
+        "sourceChain",
+        "sourceManifest",
+        "tagReview",
+        "workflowVersion"
+      ],
+      "sourceChainKeys": [
+        "adjudication",
+        "attributionLimit",
+        "audioSpotCheckPerformed",
+        "blindPacket",
+        "inventory",
+        "normalizedEvents",
+        "passA",
+        "passB",
+        "sourceManifest",
+        "sourceType",
+        "transcript",
+        "videoId"
+      ],
+      "passMetadataKeys": [
+        "completedAt",
+        "contextIsolation",
+        "isolationDeclaration",
+        "model",
+        "sourceArtifact"
+      ],
+      "burdenKeys": [
+        "description",
+        "id",
+        "side",
+        "speaker",
+        "successCriteria"
+      ],
+      "sectionKeys": [
+        "id",
+        "sides",
+        "title",
+        "weightPercent",
+        "weightRationale"
+      ],
+      "sectionSideKeys": [
+        "moves",
+        "passAScore",
+        "passBScore",
+        "score"
+      ],
+      "moveKeys": [
+        "adjudication",
+        "audioChecked",
+        "burdenIds",
+        "dimensionDeltas",
+        "finalDimensions",
+        "finalResolution",
+        "finalScore",
+        "id",
+        "importance",
+        "maxDimensionDelta",
+        "passA",
+        "passAScore",
+        "passB",
+        "passBScore",
+        "quoteKind",
+        "requiresAdjudication",
+        "respondsToIds",
+        "scoreDelta",
+        "selectionRationale",
+        "side",
+        "sourceExcerpt",
+        "sourceExcerptSha256",
+        "sourceExcerptWordCount",
+        "sourceQuoteKind",
+        "sourceSpan",
+        "speaker",
+        "speakerAttributionConfidence",
+        "summary",
+        "timestamp"
+      ],
+      "scoringPassKeys": [
+        "assessmentConfidence",
+        "dimensions",
+        "evidence",
+        "rationale"
+      ],
+      "burdenAdjustmentKeys": [
+        "adjudication",
+        "delta",
+        "final",
+        "passA",
+        "passB",
+        "requiresAdjudication"
+      ],
+      "overallSideKeys": [
+        "burdenCompletionAdjustment",
+        "confidenceRange",
+        "passA",
+        "passB",
+        "score",
+        "weightedSectionMean"
+      ]
+    },
+    "mismatchedLedgers": []
+  },
+  "totals": {
+    "ledgerCount": 3,
+    "sectionCount": 17,
+    "moveCount": 79,
+    "triggeredMoveCount": 26,
+    "adjustmentAdjudicationCount": 1,
+    "mismatchCount": 0
+  },
+  "ledgers": [
+    {
+      "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "ledgerPath": "docs/calibration/v2.1/complete-gate/ledgers/dillahunty-ten-bruggencate-reasonable-god-2014.json",
+      "ledgerSha256": "ffc066ffe4e314838141dc717955a714758b8b2186abaccc01b12da74cd8ec84",
+      "inputHashes": {
+        "transcriptSha256": "bd430d54672142640c78efaf3630dcbbfd15e833732058f53bd5df60b3b92a17",
+        "normalizedEventsSha256": "ec182e33fd6ecc7af309efceffc13f87af1e6e8ee2be8dd0bc24394cc3a5e05a",
+        "sourceManifestSha256": "d517c0f7747fa1071998ad16c34337855641c87afc06e305aa5b30c3918f74cd",
+        "blindPacketSha256": "c33494c92b7f586deb02f70d54dcb9780df36aa850d16f7ddc3df2322fad1392",
+        "inventorySha256": "90aa5b597d7bd43f63009bc523cc96b291058f63aa1e1c495710cd9941f0b2a1",
+        "passASha256": "3668dbbcf7b5b6fc6fdcf857a46639eb40c650c9e16708f65e3b31436ce6355c",
+        "passBSha256": "40b515330e2df4a42f33405207e49fb14b35aa7d831fb30040cb4d5a70dec769",
+        "adjudicationSha256": "49feefb942cf8698c7eec43d75a352cd2b7c4ea1b39e2e36e1e2c4be27bcb9ec"
+      },
+      "sectionCount": 6,
+      "moveCount": 26,
+      "triggeredMoveCount": 12,
+      "adjustmentAdjudicationCount": 0,
+      "evidenceAndAttributionComplete": true,
+      "evidenceIssues": [],
+      "calculatorExecution": {
+        "writeCommand": "node scripts/calculate-reassessment.mjs docs/calibration/v2.1/complete-gate/ledgers/dillahunty-ten-bruggencate-reasonable-god-2014.json --write",
+        "writeExitCode": 0,
+        "checkCommand": "node scripts/calculate-reassessment.mjs docs/calibration/v2.1/complete-gate/ledgers/dillahunty-ten-bruggencate-reasonable-god-2014.json --check",
+        "checkExitCode": 0
+      },
+      "expectedOverall": {
+        "pro": 57,
+        "con": 87
+      },
+      "calculatedOverall": {
+        "pro": 57,
+        "con": 87
+      },
+      "mismatchCount": 0,
+      "mismatches": [],
+      "status": "passed"
+    },
+    {
+      "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "ledgerPath": "docs/calibration/v2.1/complete-gate/ledgers/rasmussen-oppy-ultimate-reality-naturalism-2020.json",
+      "ledgerSha256": "cf0743b6ab90f191852a2e73ae63d0fdcc70751fa7356aea6ceb341c69f666a0",
+      "inputHashes": {
+        "transcriptSha256": "1892348c2caa65082767c0278c9cb5f75093d28ec91d159df46dc690a2e0bbc9",
+        "normalizedEventsSha256": "573271176713a5b0a83b0fd01e5435bb75789185c3808468c021ddce5c2e2df7",
+        "sourceManifestSha256": "d8651faca78da9fb03d35dc5a05fc0fb1eeef5e5d158e7d550a750c0d39cb093",
+        "blindPacketSha256": "2405a7dfa81f5fe839630cd7df3265dc54a8ca3cfacb494760cdc2442ddc9896",
+        "inventorySha256": "f12ea496f7339bfe2c4e0fb93fa63e6fb69b92a29f3980767bc4a0bae1a81bb5",
+        "passASha256": "c62fc2de61e6f69f424115f4e75db46efaec780f928299b360a63141ad733a0f",
+        "passBSha256": "1f7f046a1f8a941f2689dcb6d0169a72582f70b488c0d06d7d8c55e94d1390be",
+        "adjudicationSha256": "67fe971b9d45bb298c76913d0af9ed579208771830fb414224473c02c8dfa900"
+      },
+      "sectionCount": 6,
+      "moveCount": 25,
+      "triggeredMoveCount": 2,
+      "adjustmentAdjudicationCount": 1,
+      "evidenceAndAttributionComplete": true,
+      "evidenceIssues": [],
+      "calculatorExecution": {
+        "writeCommand": "node scripts/calculate-reassessment.mjs docs/calibration/v2.1/complete-gate/ledgers/rasmussen-oppy-ultimate-reality-naturalism-2020.json --write",
+        "writeExitCode": 0,
+        "checkCommand": "node scripts/calculate-reassessment.mjs docs/calibration/v2.1/complete-gate/ledgers/rasmussen-oppy-ultimate-reality-naturalism-2020.json --check",
+        "checkExitCode": 0
+      },
+      "expectedOverall": {
+        "pro": 80,
+        "con": 85
+      },
+      "calculatedOverall": {
+        "pro": 80,
+        "con": 85
+      },
+      "mismatchCount": 0,
+      "mismatches": [],
+      "status": "passed"
+    },
+    {
+      "debateId": "craig-frazier-goff-folley-god-reality-2026",
+      "ledgerPath": "docs/calibration/v2.1/complete-gate/ledgers/craig-frazier-goff-folley-god-reality-2026.json",
+      "ledgerSha256": "5e4dd08be9b035bd79182b03082d753883afadf62eeae57d5d02c49e01296b5c",
+      "inputHashes": {
+        "transcriptSha256": "1358b685c8e4a587861a363af58028b37cb4531bccba2e7a86f0df26b362826a",
+        "normalizedEventsSha256": "00f71b96a5433a6e1b6da9812c3db464e4a0fcd0752aaa91fef0d9764a1631d1",
+        "sourceManifestSha256": "f383d8462ed08a9b6ae8da738a7241a9b6d92b81efa6df26142caa2ae94e7fab",
+        "blindPacketSha256": "23607c3521c15867281d67dc22eb34c4b61f5a1b51ef28122566ebb98f33f29b",
+        "inventorySha256": "8e23e729819be8ae17783fb8016f895c3f913c123ecc3351b94055ceb90cdd83",
+        "passASha256": "85b76537deb16318b24f37387bc7f7dee9b0d0b7ffaf21dd9368c526527d008d",
+        "passBSha256": "a5871dc1ede588866b5ef134305d7cadf9ce9c20e03a00a01e60a3eb43b7e844",
+        "adjudicationSha256": "aaf086b6ea096cdc9c1547cd1e914b1e012272750bdc3fc0e1ee9dd2d6acee28"
+      },
+      "sectionCount": 5,
+      "moveCount": 28,
+      "triggeredMoveCount": 12,
+      "adjustmentAdjudicationCount": 0,
+      "evidenceAndAttributionComplete": true,
+      "evidenceIssues": [],
+      "calculatorExecution": {
+        "writeCommand": "node scripts/calculate-reassessment.mjs docs/calibration/v2.1/complete-gate/ledgers/craig-frazier-goff-folley-god-reality-2026.json --write",
+        "writeExitCode": 0,
+        "checkCommand": "node scripts/calculate-reassessment.mjs docs/calibration/v2.1/complete-gate/ledgers/craig-frazier-goff-folley-god-reality-2026.json --check",
+        "checkExitCode": 0
+      },
+      "expectedOverall": {
+        "pro": 74,
+        "con": 76
+      },
+      "calculatedOverall": {
+        "pro": 74,
+        "con": 76
+      },
+      "mismatchCount": 0,
+      "mismatches": [],
+      "status": "passed"
+    }
+  ],
+  "overallStatus": "passed"
+}

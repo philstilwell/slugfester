@@ -1,0 +1,341 @@
+{
+  "schemaVersion": "2.1-scoring-pass",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.1",
+  "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+  "debateNumber": "05",
+  "pass": "A",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "completedAt": "2026-08-02T22:42:44Z",
+  "isolation": {
+    "method": "fresh-isolated-model-task",
+    "otherPassAvailable": false,
+    "legacyMaterialAvailable": false,
+    "statement": "This pass used only the allowlisted source transcript, caption events and manifest, locked argument inventory, preregistered gate manifest, v2.1 workflow and rubric, and the skill output contract. No legacy assessment or other scoring pass was inspected."
+  },
+  "source": {
+    "videoId": "OL8LREmbDi0",
+    "transcriptSha256": "bd430d54672142640c78efaf3630dcbbfd15e833732058f53bd5df60b3b92a17",
+    "eventsSha256": "ec182e33fd6ecc7af309efceffc13f87af1e6e8ee2be8dd0bc24394cc3a5e05a",
+    "captionManifestSha256": "e10fd606a6127193c78d4c3c566b72e1bea36ffa0583978a2d75aa33179457fe",
+    "inventorySha256": "90aa5b597d7bd43f63009bc523cc96b291058f63aa1e1c495710cd9941f0b2a1",
+    "gateManifestSha256": "a740f59ad143d9817b88b66ef3fc7ff34c64190e45f1c0094bb4704eb3a246ae",
+    "workflowSha256": "e1ecbcb9fb3565f727dc3bf6a128288f1095d067fe274c9116d603da452409a9",
+    "rubricSha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+    "limitations": "English auto-generated captions were used. Mixed-dialogue moves retain medium scoring confidence where rapid speaker handoffs or imperfect caption wording affect auditability; this pass did not perform audio verification."
+  },
+  "dimensionWeights": {
+    "logicalCoherence": 0.25,
+    "evidenceWarrant": 0.2,
+    "responsiveness": 0.2,
+    "relevanceBurden": 0.15,
+    "precisionClarity": 0.1,
+    "calibrationCharity": 0.1
+  },
+  "moveScores": [
+    {
+      "moveId": "D05-M001",
+      "side": "pro",
+      "dimensions": {"logicalCoherence": 92, "evidenceWarrant": 25, "responsiveness": 88, "relevanceBurden": 88, "precisionClarity": 87, "calibrationCharity": 52},
+      "moveScore": 73,
+      "evidence": {"timestamp": "00:02:02.960", "basis": "The syllogism is stated explicitly through 00:02:22, but the decisive premise, 'God exists,' is only announced as the coming point of dispute."},
+      "rationale": "The form is valid, clear, and central to the motion, so coherence, responsiveness, and relevance score strongly. The move itself supplies almost no warrant for premise two, however, and treats the truth of that premise more confidently than the support yet given permits.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M002",
+      "side": "con",
+      "dimensions": {"logicalCoherence": 88, "evidenceWarrant": 82, "responsiveness": 88, "relevanceBurden": 93, "precisionClarity": 86, "calibrationCharity": 88},
+      "moveScore": 87,
+      "evidence": {"timestamp": "00:11:52.920", "basis": "From 00:11:52 to 00:12:22, reasonableness is tied to good justification, validity, and evidential support for premises."},
+      "rationale": "This supplies an auditable and proportionate standard that directly tests the opening syllogism's unsupported truth premise. Its account of soundness is slightly compressed, but it advances the con burden without assigning the pro side an inappropriate burden.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M003",
+      "side": "con",
+      "dimensions": {"logicalCoherence": 86, "evidenceWarrant": 76, "responsiveness": 90, "relevanceBurden": 92, "precisionClarity": 89, "calibrationCharity": 85},
+      "moveScore": 86,
+      "evidence": {"timestamp": "00:12:55.920", "basis": "From 00:12:55 to 00:13:49, absolute certainty is distinguished from reasonable, action-guiding belief and prospective certainty demands are identified as off-motion."},
+      "rationale": "The distinction is explicit, coherent, and anticipates the debate's central equivocation between fallibility and irrationality. The broad claim that certainty is completely irrelevant is somewhat categorical, and the philosophical consensus is asserted rather than developed, but the motion-level response remains very strong.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M004",
+      "side": "pro",
+      "dimensions": {"logicalCoherence": 42, "evidenceWarrant": 20, "responsiveness": 50, "relevanceBurden": 64, "precisionClarity": 76, "calibrationCharity": 20},
+      "moveScore": 44,
+      "evidence": {"timestamp": "00:21:20.320", "basis": "From 00:21:20 to 00:21:44, the request for evidence is rejected because the listener would be made judge, followed by the assertion that everyone already knows God exists."},
+      "rationale": "The move clearly explains the pro side's refusal of the con's evidential procedure, but the court analogy does not show that public evidence is epistemically illegitimate. The universal-knowledge assertion is unsupported and markedly overconfident, leaving the motion's reasonableness burden largely undischarged.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M005",
+      "side": "pro",
+      "dimensions": {"logicalCoherence": 48, "evidenceWarrant": 20, "responsiveness": 60, "relevanceBurden": 80, "precisionClarity": 67, "calibrationCharity": 20},
+      "moveScore": 49,
+      "evidence": {"timestamp": "00:09:49.440", "basis": "From 00:09:49 to 00:10:14, ultimate truth is said to require divine revelation, while professed atheism is characterized as suppression of known truth."},
+      "rationale": "This is highly relevant because it states the intended bridge from skepticism to revelation, but it does not establish the dependence relation or a way to discriminate genuine revelation. Treating disagreement as suppressed knowledge substitutes motive attribution for warrant and weakens calibration and charity.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M006",
+      "side": "con",
+      "dimensions": {"logicalCoherence": 88, "evidenceWarrant": 70, "responsiveness": 90, "relevanceBurden": 84, "precisionClarity": 86, "calibrationCharity": 94},
+      "moveScore": 85,
+      "evidence": {"timestamp": "00:26:39.600", "basis": "From 00:26:39 to 00:27:17, hard solipsism is conceded as lacking an ultimate solution while experienced reality is retained as the unavoidable domain of inquiry."},
+      "rationale": "The response squarely concedes the skeptical limitation instead of claiming certainty, then explains why inquiry can continue. The reported philosophical consensus is unsourced and the justification is practical rather than ultimate, but that limitation matches the modest burden the con side actually adopts.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M007",
+      "side": "pro",
+      "dimensions": {"logicalCoherence": 48, "evidenceWarrant": 45, "responsiveness": 70, "relevanceBurden": 80, "precisionClarity": 70, "calibrationCharity": 45},
+      "moveScore": 59,
+      "evidence": {"timestamp": "00:38:48.160", "basis": "At 00:38:48–00:39:15, failure to prove the brain-in-a-vat scenario false is treated as showing it could obtain, before the pro side asks why senses and reason are trusted."},
+      "rationale": "The request for a basis of sensory and rational trust is direct and important. Yet the modal inference from non-refutation to possibility is explicitly challenged and not repaired, so the move partly misconstrues the concession it answers and overstates what the skeptical gap establishes.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "D05-M008",
+      "side": "con",
+      "dimensions": {"logicalCoherence": 92, "evidenceWarrant": 82, "responsiveness": 95, "relevanceBurden": 88, "precisionClarity": 90, "calibrationCharity": 90},
+      "moveScore": 90,
+      "evidence": {"timestamp": "00:53:11.119", "basis": "From 00:53:13 to 00:53:50, two diagnostic questions elicit agreement that failure to prove impossibility does not prove possibility and failure to prove falsity does not prove truth."},
+      "rationale": "The move targets the precise modal error, obtains the opponent's agreement on the governing distinctions, and applies them to the recurring brain-in-a-vat characterization. It is a highly effective diagnostic challenge and makes no unnecessary contrary metaphysical claim.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "D05-M009",
+      "side": "pro",
+      "dimensions": {"logicalCoherence": 55, "evidenceWarrant": 35, "responsiveness": 62, "relevanceBurden": 82, "precisionClarity": 68, "calibrationCharity": 38},
+      "moveScore": 56,
+      "evidence": {"timestamp": "00:22:23.240", "basis": "From 00:22:23 to 00:23:16, natural thought is analogized to undirected fizz and the biochemical origin of a thought is treated as precluding truth."},
+      "rationale": "The move addresses the core accounting burden and makes its negative case intelligible, but it does not show why a physical causal history prevents representational truth or logical competence. The beverage-fizz and 'evolved meat machine' framing is a weak reconstruction of a naturalistic account, lowering warrant and charity.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M010",
+      "side": "con",
+      "dimensions": {"logicalCoherence": 85, "evidenceWarrant": 75, "responsiveness": 91, "relevanceBurden": 90, "precisionClarity": 88, "calibrationCharity": 82},
+      "moveScore": 85,
+      "evidence": {"timestamp": "00:28:08.720", "basis": "From 00:28:08 to 00:28:55, shared logical starting points are distinguished from the added God premise and the exclusivity claim is subjected to an explicit demonstration burden."},
+      "rationale": "The response grants the common logical absolutes and isolates the two additional pro claims: that God explains them and that alternatives cannot. The parsimony premise is compressed and does not itself prove God false, but the move appropriately functions as a burden challenge rather than a contrary theory.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M011",
+      "side": "con",
+      "dimensions": {"logicalCoherence": 88, "evidenceWarrant": 74, "responsiveness": 93, "relevanceBurden": 92, "precisionClarity": 85, "calibrationCharity": 78},
+      "moveScore": 86,
+      "evidence": {"timestamp": "00:29:15.960", "basis": "From 00:29:18 to 00:30:10, the asserted divine qualities, the possibility of accounting for logic, and the claimed efficacy of the solution are separately challenged."},
+      "rationale": "This move sharply distinguishes naming an explanatory source from demonstrating a dependence mechanism and comparative success. Its analogy and assertion that the claim is vacuous are rhetorically strong and somewhat compressed, but the principal live burden is identified with high precision.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M012",
+      "side": "pro",
+      "dimensions": {"logicalCoherence": 45, "evidenceWarrant": 20, "responsiveness": 55, "relevanceBurden": 82, "precisionClarity": 68, "calibrationCharity": 45},
+      "moveScore": 50,
+      "evidence": {"timestamp": "01:11:47.480", "basis": "At 01:11:47–01:12:11, the demand to demonstrate Christian exclusivity is answered by saying logical absolutes reflect God's thinking and are known by revelation."},
+      "rationale": "The answer is directly on the relevant subject and names the proposed relation, but it restates the Christian account without demonstrating that relation or excluding alternatives. The live request was comparative and evidential, so the interruption does not repair the central warrant and responsiveness gap.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "D05-M013",
+      "side": "pro",
+      "dimensions": {"logicalCoherence": 82, "evidenceWarrant": 70, "responsiveness": 88, "relevanceBurden": 90, "precisionClarity": 82, "calibrationCharity": 67},
+      "moveScore": 81,
+      "evidence": {"timestamp": "00:39:36.720", "basis": "From 00:39:36 to 00:40:26, the pro side elicits that reason is used in assessing reason's effective track record and identifies the resulting epistemic circularity."},
+      "rationale": "This is a strong internal challenge: it identifies the unavoidable self-use in the con justification and keeps the question focused. Its weaker step is labeling that circle vicious without showing that the Christian appeal avoids comparable epistemic circularity or that practical necessity confers no warrant at all.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "D05-M014",
+      "side": "con",
+      "dimensions": {"logicalCoherence": 72, "evidenceWarrant": 74, "responsiveness": 83, "relevanceBurden": 84, "precisionClarity": 84, "calibrationCharity": 90},
+      "moveScore": 79,
+      "evidence": {"timestamp": "01:02:42.520", "basis": "From 01:02:42 to 01:03:13, induction is defended as a fallible expectation that the future will be broadly, not exactly, like the observed past."},
+      "rationale": "The modest, probabilistic claim is clear, calibrated, and directly resists the demand for certainty. Past regularity still does not non-circularly justify the uniformity assumption, so the move offers a practical inductive policy more successfully than an ultimate foundation.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M015",
+      "side": "pro",
+      "dimensions": {"logicalCoherence": 65, "evidenceWarrant": 65, "responsiveness": 70, "relevanceBurden": 82, "precisionClarity": 72, "calibrationCharity": 50},
+      "moveScore": 68,
+      "evidence": {"timestamp": "01:03:13.720", "basis": "From 01:03:13 to 01:04:08, death and red-house examples show that past observations do not deductively entail the next outcome."},
+      "rationale": "The examples usefully expose the absence of entailment and keep the induction problem concrete. They do not defeat the con side's expressly probabilistic prediction, however, and the death example neglects the relevant comparison class, so the response partly attacks a stronger certainty claim than was made.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "D05-M016",
+      "side": "con",
+      "dimensions": {"logicalCoherence": 88, "evidenceWarrant": 78, "responsiveness": 94, "relevanceBurden": 88, "precisionClarity": 91, "calibrationCharity": 88},
+      "moveScore": 88,
+      "evidence": {"timestamp": "01:04:08.039", "basis": "From 01:04:08 to 01:04:38, the red-house case is recast as a prediction from observed frequencies, explicitly distinguished from deductive or revealed certainty."},
+      "rationale": "This directly answers both counterexamples at their decisive ambiguity: prediction is not entailment. The move is precise and proportionate, though it still relies on observed success rather than supplying an ultimate non-circular vindication of induction.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M017",
+      "side": "con",
+      "dimensions": {"logicalCoherence": 87, "evidenceWarrant": 75, "responsiveness": 86, "relevanceBurden": 94, "precisionClarity": 86, "calibrationCharity": 82},
+      "moveScore": 85,
+      "evidence": {"timestamp": "00:16:17.360", "basis": "From 00:16:17 to 00:17:08, incompatible revelations and doctrinal divisions are used to demand a verifiable discriminator rather than infer any one revelation from its own assertion."},
+      "rationale": "The plurality of incompatible claims creates a clear discrimination burden and directly tests revelation's public warrant. Denominational breadth and the reported Humean point are not documented in the debate, but the logical consequence—that some incompatible conduits are wrong and need a selection method—is strong and proportionate.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M018",
+      "side": "pro",
+      "dimensions": {"logicalCoherence": 42, "evidenceWarrant": 20, "responsiveness": 30, "relevanceBurden": 55, "precisionClarity": 72, "calibrationCharity": 25},
+      "moveScore": 38,
+      "evidence": {"timestamp": "01:16:35.200", "basis": "At 01:16:38–01:17:24, a concrete proposed scriptural error is met with a refusal to put scripture's truth to an atheist's test."},
+      "rationale": "The response clearly states its presuppositional policy but does not answer the concrete challenge or provide a public reliability test. Refusing the proposed adjudication protects the premise from assessment rather than advancing the revelation or reasonableness burden, and it uncharitably recasts the question as mere hostile presupposition.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M019",
+      "side": "pro",
+      "dimensions": {"logicalCoherence": 72, "evidenceWarrant": 55, "responsiveness": 78, "relevanceBurden": 75, "precisionClarity": 80, "calibrationCharity": 60},
+      "moveScore": 70,
+      "evidence": {"timestamp": "01:19:41.560", "basis": "From 01:19:41 to 01:20:12, an internal critique alleges that the Quran affirms prior scripture and incorruptible divine words, yielding a conflict with later corruption claims."},
+      "rationale": "Conditional on its textual premises, this is a coherent and concrete attempt to distinguish Christianity from Islam. Those premises and their interpretation are not established in the record, and success against one rival would not resolve the generic parity objection, so warrant and burden completion remain limited.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M020",
+      "side": "con",
+      "dimensions": {"logicalCoherence": 90, "evidenceWarrant": 82, "responsiveness": 92, "relevanceBurden": 94, "precisionClarity": 89, "calibrationCharity": 86},
+      "moveScore": 89,
+      "evidence": {"timestamp": "01:33:24.000", "basis": "At 01:33:58–01:34:33, the same truth–revelation–deity template is applied to Thor to ask what prevents arbitrary substitution by any tradition."},
+      "rationale": "As a diagnostic challenge later adopted by the con closing, this precisely exposes the argument template's lack of discriminatory power. It does not claim Thor exists; it asks for the missing selection rule, making the move highly responsive, charitable, and consequential to the locked rival-revelation burden.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M021",
+      "side": "pro",
+      "dimensions": {"logicalCoherence": 38, "evidenceWarrant": 20, "responsiveness": 45, "relevanceBurden": 75, "precisionClarity": 78, "calibrationCharity": 58},
+      "moveScore": 47,
+      "evidence": {"timestamp": "01:34:27.360", "basis": "From 01:34:36 to 01:35:09, the defense is conceded to be available to rivals, but they are deferred to future debates and rejected because the Bible says no other gods exist."},
+      "rationale": "The answer candidly grants the structural parity and clearly states the Christian commitment. It then relies on the very revelation whose discriminatory warrant is under challenge, so it neither supplies a common test nor defeats the rival template; future willingness to debate is not a present reply.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M022",
+      "side": "con",
+      "dimensions": {"logicalCoherence": 90, "evidenceWarrant": 91, "responsiveness": 92, "relevanceBurden": 96, "precisionClarity": 91, "calibrationCharity": 88},
+      "moveScore": 91,
+      "evidence": {"timestamp": "01:29:13.920", "basis": "At 01:29:14–01:29:59, targeted questions elicit that God could not have lied and that no experience could change the pro position because doubt and reason are said to presuppose God."},
+      "rationale": "The diagnostic questions directly establish the position's stated corrigibility conditions using the pro side's own answers, without asserting a contrary worldview. This is exceptionally relevant to public assessability and revelation reliability; confidence is tempered only by the mixed-dialogue caption span and speaker handoffs.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "D05-M023",
+      "side": "pro",
+      "dimensions": {"logicalCoherence": 72, "evidenceWarrant": 25, "responsiveness": 66, "relevanceBurden": 86, "precisionClarity": 85, "calibrationCharity": 70},
+      "moveScore": 65,
+      "evidence": {"timestamp": "01:36:16.239", "basis": "From 01:36:03 to 01:36:20, the argument's direction is clarified as beginning with the Christian God to make sense of absolutes, not inferring God from absolutes."},
+      "rationale": "The clarification is precise and prevents an invalid reconstruction of the intended presuppositional argument. It does not provide the requested bridge from the Christian starting point to justified public belief or show why that starting point uniquely explains absolutes, leaving evidence and comparative responsiveness weak.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M024",
+      "side": "pro",
+      "dimensions": {"logicalCoherence": 30, "evidenceWarrant": 15, "responsiveness": 28, "relevanceBurden": 58, "precisionClarity": 70, "calibrationCharity": 10},
+      "moveScore": 33,
+      "evidence": {"timestamp": "01:50:47.560", "basis": "From 01:50:47 to 01:51:06, the final choice is framed as Jesus or absurdity, with nonacceptance attributed to love of sin and followed by a warning of hell."},
+      "rationale": "The close is intelligible and returns to the pro thesis, but the exclusive dilemma remains asserted rather than demonstrated. Motive attribution and the threat of punishment do not answer the strongest live objections concerning revelation, alternatives, and circularity, producing very weak warrant, responsiveness, and charity.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M025",
+      "side": "con",
+      "dimensions": {"logicalCoherence": 88, "evidenceWarrant": 88, "responsiveness": 94, "relevanceBurden": 96, "precisionClarity": 86, "calibrationCharity": 68},
+      "moveScore": 88,
+      "evidence": {"timestamp": "01:53:20.239", "basis": "From 01:53:20 to 01:54:02, the close identifies the unsupported exclusivity claim and burden shift, pointing to the absence of evidence that any worldview—including the pro view—solves the stated problems."},
+      "rationale": "The synthesis accurately locates the motion-level failure in missing demonstration rather than requiring the critic to prove a contrary foundation. Its categorical statements that presuppositionalists do not debate or lack any interest in demonstration overgeneralize beyond the record, lowering charity without undoing the strong substantive reply.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M026",
+      "side": "con",
+      "dimensions": {"logicalCoherence": 87, "evidenceWarrant": 80, "responsiveness": 94, "relevanceBurden": 94, "precisionClarity": 91, "calibrationCharity": 65},
+      "moveScore": 86,
+      "evidence": {"timestamp": "01:54:33.800", "basis": "From 01:54:33 to 01:55:01, possibility of error is separated from actual error and certainty is identified as confidence rather than a truth-maker before the motion-level conclusion is restated."},
+      "rationale": "The fallibilist distinction is precise, directly responsive, and properly limits the conclusion to a present absence of reasonable justification. The surrounding insults and generalized characterization of the opponent as unwilling to reason diminish charity, while the core inference remains strong and proportionate.",
+      "confidence": "high"
+    }
+  ],
+  "sectionScores": [
+    {
+      "sectionId": "SEC-1-REASONABLENESS",
+      "weight": 18,
+      "pro": {"score": 59, "moveIds": ["D05-M001", "D05-M004"], "confidence": "high"},
+      "con": {"score": 87, "moveIds": ["D05-M002", "D05-M003"], "confidence": "high"}
+    },
+    {
+      "sectionId": "SEC-2-ULTIMATE-REALITY",
+      "weight": 17,
+      "pro": {"score": 54, "moveIds": ["D05-M005", "D05-M007"], "confidence": "medium"},
+      "con": {"score": 88, "moveIds": ["D05-M006", "D05-M008"], "confidence": "medium"}
+    },
+    {
+      "sectionId": "SEC-3-LOGIC-FOUNDATION",
+      "weight": 20,
+      "pro": {"score": 53, "moveIds": ["D05-M009", "D05-M012"], "confidence": "medium"},
+      "con": {"score": 86, "moveIds": ["D05-M010", "D05-M011"], "confidence": "high"}
+    },
+    {
+      "sectionId": "SEC-4-REASON-CIRCULARITY-INDUCTION",
+      "weight": 15,
+      "pro": {"score": 76, "moveIds": ["D05-M013", "D05-M015"], "confidence": "medium"},
+      "con": {"score": 84, "moveIds": ["D05-M014", "D05-M016"], "confidence": "high"}
+    },
+    {
+      "sectionId": "SEC-5-REVELATION-RIVALS",
+      "weight": 18,
+      "pro": {"score": 49, "moveIds": ["D05-M018", "D05-M019", "D05-M021"], "confidence": "high"},
+      "con": {"score": 87, "moveIds": ["D05-M017", "D05-M020"], "confidence": "high"}
+    },
+    {
+      "sectionId": "SEC-6-FALSIFIABILITY-CLOSING",
+      "weight": 12,
+      "pro": {"score": 52, "moveIds": ["D05-M023", "D05-M024"], "confidence": "high"},
+      "con": {"score": 88, "moveIds": ["D05-M022", "D05-M025", "D05-M026"], "confidence": "medium"}
+    }
+  ],
+  "burdenCompletionAdjustments": {
+    "pro": {
+      "adjustment": 0,
+      "rationale": "No separate adjustment is applied. The lack of a public bridge from Christian revelation to its asserted explanatory exclusivity is already represented across the selected, heavily weighted moves in the logic, revelation, and closing sections; an additional penalty would duplicate those defects."
+    },
+    "con": {
+      "adjustment": 0,
+      "rationale": "No separate adjustment is applied. The con side's successful critical burden and its deliberately modest fallibilist foundation are already represented in the selected moves, while it did not adopt a burden to supply a complete naturalistic metaphysics of logic; an added reward would double count the same performance."
+    }
+  },
+  "overallScores": {
+    "pro": {
+      "weightedSectionMean": 56.86,
+      "burdenCompletionAdjustment": 0,
+      "score": 57,
+      "confidence": "medium"
+    },
+    "con": {
+      "weightedSectionMean": 86.64,
+      "burdenCompletionAdjustment": 0,
+      "score": 87,
+      "confidence": "medium"
+    }
+  },
+  "calculationNote": "Move, section, and overall values were calculated from the locked v2.1 weights for this isolated pass. They remain pass judgments pending comparison, threshold adjudication, and the repository-owned final ledger calculator.",
+  "prohibitedInputConfirmation": {
+    "confirmed": true,
+    "legacyScoresOrProseInspected": false,
+    "otherPassInspected": false,
+    "scorecardOrAiExtensionDrafted": false
+  }
+}
