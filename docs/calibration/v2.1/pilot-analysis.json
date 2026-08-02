@@ -1,0 +1,386 @@
+{
+  "schemaVersion": "2.1-pilot-analysis",
+  "analysisAsOf": "2026-08-02T22:35:00.000Z",
+  "scope": {
+    "debates": 10,
+    "sections": 10,
+    "moves": 20,
+    "characterization": "Targeted score-blind benchmark of one preselected section and one move per side per debate; not a complete-debate reassessment."
+  },
+  "sourceAudit": {
+    "captionAcquisitionSuccess": "10/10",
+    "captionType": "English auto-generated YouTube captions for every pilot debate",
+    "speakerAttribution": {
+      "high": 0,
+      "medium": 19,
+      "low": 1,
+      "audioChecked": 0
+    },
+    "centralAudioChecks": 0,
+    "finding": "Transcript acquisition was reliable, but speaker attribution was not production-ready: all moves relied on legacy locations plus auto-captions, one excerpt had low attribution confidence, and none received an audio spot-check."
+  },
+  "passAgreement": {
+    "actualIndependence": "same-model-same-context-procedural-only",
+    "meanAbsoluteDimensionDelta": 2.22,
+    "maximumDimensionDelta": 11,
+    "byDimensionMeanAbsoluteDelta": {
+      "logicalCoherence": 2,
+      "evidenceWarrant": 3.5,
+      "responsiveness": 2,
+      "relevanceBurden": 1.95,
+      "precisionClarity": 1.85,
+      "calibrationCharity": 2
+    },
+    "meanAbsoluteMoveScoreDelta": 2.25,
+    "maximumMoveScoreDelta": 4,
+    "moveAdjudications": 3,
+    "moveAdjudicationRate": 0.15,
+    "meanAgreementRangeWidth": 6.25,
+    "interpretation": "The deltas show deterministic threshold handling and procedural repeatability. They cannot establish inter-rater reliability because both passes shared one model context."
+  },
+  "legacyBenchmarkComparison": {
+    "meanChange": -4.5,
+    "meanAbsoluteChange": 4.9,
+    "minimumChange": -19,
+    "maximumChange": 2,
+    "stableWithinPairOrdering": "7/10",
+    "stableWithinPairOrderingRate": 0.7,
+    "interpretation": "The v2.1 sample averaged lower because it scored only the exact captured excerpt under tighter anchors, whereas a legacy move summary may reflect a broader passage. This is evidence of granularity sensitivity, not a valid estimate of full-debate score change or winner stability."
+  },
+  "tagReview": {
+    "candidates": 4,
+    "accepted": 2,
+    "rejected": 2,
+    "acceptanceRate": 0.5,
+    "scoringEffect": "none"
+  },
+  "aiExtensionReview": {
+    "tested": false,
+    "reason": "The pilot was a targeted scoring benchmark rather than a complete scorecard composition. The production schema and workflow require a post-assessment novelty map."
+  },
+  "decision": {
+    "mechanics": "pass",
+    "corpusWideProduction": "no-go",
+    "reasons": [
+      "The calculator, validator, disagreement thresholds, adjudication preservation, source manifests, burden links, response links, tag review, and calibration isolation all worked across ten varied debates.",
+      "The scoring passes were not genuinely independent.",
+      "The benchmark reused legacy move locations and did not test blind argument discovery or complete-debate coverage.",
+      "Speaker attribution and central quotations were not audio-verified.",
+      "Full-debate winner/ranking stability and AI Extension novelty were not tested.",
+      "Pilot acceptance thresholds were not preregistered before these scores, so the results must remain exploratory."
+    ],
+    "nextGate": "Preregister thresholds, then run three complete debates in separately isolated 5.6 Sol tasks with audio checks and full AI Extension novelty maps. If that gate passes, expand to ten complete debates before any corpus-wide rescore."
+  },
+  "debates": [
+    {
+      "debateNumber": "01",
+      "debateId": "craig-oconnor-god-debate-2026",
+      "sampleStrata": [
+        "long-form",
+        "philosophy-of-religion",
+        "critical-burden",
+        "existing-v2-baseline"
+      ],
+      "moves": {
+        "pro": {
+          "passA": 75,
+          "passB": 77,
+          "final": 76,
+          "legacyBenchmarkMove": 76,
+          "changeFromLegacyBenchmarkMove": 0,
+          "adjudicated": false
+        },
+        "con": {
+          "passA": 77,
+          "passB": 79,
+          "final": 78,
+          "legacyBenchmarkMove": 84,
+          "changeFromLegacyBenchmarkMove": -6,
+          "adjudicated": false
+        }
+      },
+      "legacyBenchmarkOrdering": "con",
+      "v21BenchmarkOrdering": "con",
+      "orderingStable": true
+    },
+    {
+      "debateNumber": "03",
+      "debateId": "hitchens-dsouza-religion-problem-2010",
+      "sampleStrata": [
+        "long-form",
+        "public-reason",
+        "rhetorical-format",
+        "close-legacy-result"
+      ],
+      "moves": {
+        "pro": {
+          "passA": 70,
+          "passB": 72,
+          "final": 71,
+          "legacyBenchmarkMove": 80,
+          "changeFromLegacyBenchmarkMove": -9,
+          "adjudicated": false
+        },
+        "con": {
+          "passA": 76,
+          "passB": 78,
+          "final": 77,
+          "legacyBenchmarkMove": 79,
+          "changeFromLegacyBenchmarkMove": -2,
+          "adjudicated": false
+        }
+      },
+      "legacyBenchmarkOrdering": "pro",
+      "v21BenchmarkOrdering": "con",
+      "orderingStable": false
+    },
+    {
+      "debateNumber": "05",
+      "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "sampleStrata": [
+        "long-form",
+        "presuppositional",
+        "asymmetric-burdens",
+        "lopsided-legacy-result"
+      ],
+      "moves": {
+        "pro": {
+          "passA": 52,
+          "passB": 56,
+          "final": 54,
+          "legacyBenchmarkMove": 52,
+          "changeFromLegacyBenchmarkMove": 2,
+          "adjudicated": false
+        },
+        "con": {
+          "passA": 79,
+          "passB": 80,
+          "final": 80,
+          "legacyBenchmarkMove": 82,
+          "changeFromLegacyBenchmarkMove": -2,
+          "adjudicated": false
+        }
+      },
+      "legacyBenchmarkOrdering": "con",
+      "v21BenchmarkOrdering": "con",
+      "orderingStable": true
+    },
+    {
+      "debateNumber": "34",
+      "debateId": "goff-carroll-consciousness-fundamental-2023",
+      "sampleStrata": [
+        "long-form",
+        "mind",
+        "technical-philosophy",
+        "close-legacy-result"
+      ],
+      "moves": {
+        "pro": {
+          "passA": 79,
+          "passB": 82,
+          "final": 80,
+          "legacyBenchmarkMove": 84,
+          "changeFromLegacyBenchmarkMove": -4,
+          "adjudicated": true
+        },
+        "con": {
+          "passA": 82,
+          "passB": 84,
+          "final": 83,
+          "legacyBenchmarkMove": 84,
+          "changeFromLegacyBenchmarkMove": -1,
+          "adjudicated": false
+        }
+      },
+      "legacyBenchmarkOrdering": "tie",
+      "v21BenchmarkOrdering": "con",
+      "orderingStable": false
+    },
+    {
+      "debateNumber": "68",
+      "debateId": "jones-dillahunty-quantum-idealism-demonstrability-2026",
+      "sampleStrata": [
+        "short-form",
+        "mind",
+        "science-adjacent",
+        "lopsided-legacy-result"
+      ],
+      "moves": {
+        "pro": {
+          "passA": 63,
+          "passB": 66,
+          "final": 64,
+          "legacyBenchmarkMove": 72,
+          "changeFromLegacyBenchmarkMove": -8,
+          "adjudicated": true
+        },
+        "con": {
+          "passA": 84,
+          "passB": 86,
+          "final": 85,
+          "legacyBenchmarkMove": 86,
+          "changeFromLegacyBenchmarkMove": -1,
+          "adjudicated": false
+        }
+      },
+      "legacyBenchmarkOrdering": "con",
+      "v21BenchmarkOrdering": "con",
+      "orderingStable": true
+    },
+    {
+      "debateNumber": "81",
+      "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "sampleStrata": [
+        "long-form",
+        "analytic-philosophy",
+        "symmetric-constructive-burdens",
+        "high-close-legacy-result"
+      ],
+      "moves": {
+        "pro": {
+          "passA": 75,
+          "passB": 77,
+          "final": 76,
+          "legacyBenchmarkMove": 86,
+          "changeFromLegacyBenchmarkMove": -10,
+          "adjudicated": false
+        },
+        "con": {
+          "passA": 83,
+          "passB": 85,
+          "final": 84,
+          "legacyBenchmarkMove": 88,
+          "changeFromLegacyBenchmarkMove": -4,
+          "adjudicated": false
+        }
+      },
+      "legacyBenchmarkOrdering": "con",
+      "v21BenchmarkOrdering": "con",
+      "orderingStable": true
+    },
+    {
+      "debateNumber": "95",
+      "debateId": "craig-frazier-goff-folley-god-reality-2026",
+      "sampleStrata": [
+        "long-form",
+        "multi-person-side",
+        "pluralist-format",
+        "close-legacy-result"
+      ],
+      "moves": {
+        "pro": {
+          "passA": 73,
+          "passB": 75,
+          "final": 74,
+          "legacyBenchmarkMove": 78,
+          "changeFromLegacyBenchmarkMove": -4,
+          "adjudicated": false
+        },
+        "con": {
+          "passA": 82,
+          "passB": 84,
+          "final": 83,
+          "legacyBenchmarkMove": 84,
+          "changeFromLegacyBenchmarkMove": -1,
+          "adjudicated": false
+        }
+      },
+      "legacyBenchmarkOrdering": "con",
+      "v21BenchmarkOrdering": "con",
+      "orderingStable": true
+    },
+    {
+      "debateNumber": "104",
+      "debateId": "oconnor-baker-hytch-argument-from-reason-2020",
+      "sampleStrata": [
+        "medium-form",
+        "logic-and-reason",
+        "single-argument-focus",
+        "near-tied-legacy-result"
+      ],
+      "moves": {
+        "pro": {
+          "passA": 72,
+          "passB": 74,
+          "final": 73,
+          "legacyBenchmarkMove": 78,
+          "changeFromLegacyBenchmarkMove": -5,
+          "adjudicated": false
+        },
+        "con": {
+          "passA": 81,
+          "passB": 83,
+          "final": 82,
+          "legacyBenchmarkMove": 80,
+          "changeFromLegacyBenchmarkMove": 2,
+          "adjudicated": false
+        }
+      },
+      "legacyBenchmarkOrdering": "con",
+      "v21BenchmarkOrdering": "con",
+      "orderingStable": true
+    },
+    {
+      "debateNumber": "156",
+      "debateId": "harris-prager-religion-morality-public-reason-2014",
+      "sampleStrata": [
+        "medium-form",
+        "morality",
+        "public-reason",
+        "moderate-legacy-gap"
+      ],
+      "moves": {
+        "pro": {
+          "passA": 65,
+          "passB": 69,
+          "final": 67,
+          "legacyBenchmarkMove": 69,
+          "changeFromLegacyBenchmarkMove": -2,
+          "adjudicated": true
+        },
+        "con": {
+          "passA": 76,
+          "passB": 78,
+          "final": 77,
+          "legacyBenchmarkMove": 78,
+          "changeFromLegacyBenchmarkMove": -1,
+          "adjudicated": false
+        }
+      },
+      "legacyBenchmarkOrdering": "con",
+      "v21BenchmarkOrdering": "con",
+      "orderingStable": true
+    },
+    {
+      "debateNumber": "189",
+      "debateId": "tour-cronin-origin-of-life-2020",
+      "sampleStrata": [
+        "medium-form",
+        "science",
+        "technical-evidence",
+        "high-near-tied-legacy-result"
+      ],
+      "moves": {
+        "pro": {
+          "passA": 74,
+          "passB": 76,
+          "final": 75,
+          "legacyBenchmarkMove": 94,
+          "changeFromLegacyBenchmarkMove": -19,
+          "adjudicated": false
+        },
+        "con": {
+          "passA": 77,
+          "passB": 79,
+          "final": 78,
+          "legacyBenchmarkMove": 93,
+          "changeFromLegacyBenchmarkMove": -15,
+          "adjudicated": false
+        }
+      },
+      "legacyBenchmarkOrdering": "pro",
+      "v21BenchmarkOrdering": "con",
+      "orderingStable": false
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "2.1-benchmark-definition",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "calibrationOnly": true,
+  "debateId": "goff-carroll-consciousness-fundamental-2023",
+  "debateNumber": "34",
+  "motionType": "comparative-explanation",
+  "motion": "Is consciousness a fundamental feature of reality, or can physicalism explain conscious experience through higher-level descriptions of the physical world?",
+  "sides": {
+    "pro": {
+      "label": "Consciousness fundamental",
+      "speaker": "Philip Goff"
+    },
+    "con": {
+      "label": "Physicalist emergence",
+      "speaker": "Sean Carroll"
+    }
+  },
+  "sourceManifest": "docs/calibration/v2.1/source-manifests/goff-carroll-consciousness-fundamental-2023.json",
+  "transcriptSha256": "bbc9a6ad1f61f7ad057aa019ebf502db05b153ce053a362b00e612591a02415d",
+  "selectionProtocol": {
+    "lockedBeforeScoring": true,
+    "rule": "Use the first paired move location in the existing scorecard as a stable benchmark; reveal no legacy score, critique, tag, section score, overall score, or commentary to either scoring pass.",
+    "limitation": "This tests score application on varied known moves, not blind argument discovery or complete-debate coverage. Existing role labels and move locations may still anchor selection."
+  },
+  "section": {
+    "id": "goff-carroll-consciousness-fundamental-2023-benchmark-section-01",
+    "title": "Data and method",
+    "weightPercent": 100,
+    "weightRationale": "The targeted pilot contains one preselected benchmark section, so it receives the entire within-pilot weight. This is not a production debate weight.",
+    "moves": {
+      "pro": {
+        "id": "goff-carroll-consciousness-fundamental-2023-pro-benchmark-01",
+        "side": "pro",
+        "timestamp": "02:50",
+        "sourceSpan": {
+          "start": "02:50",
+          "end": "03:28"
+        },
+        "roleLabel": "Private data frame",
+        "sourceExcerpt": "how do we find out about reality how do we go about having our best guess as to what reality out there is like so I think I think we should um the way to address this is to ask the question what are the data for a theory of reality what are the data that any adequate theory of reality has to be able to account for now certainly uh among these are scientific data the data of public observation and experiments no question that any adequate theory of",
+        "sourceExcerptSha256": "18acaa2232279466567f840d5b04cecf31699326e2454dcdcff69c6898915b3e",
+        "sourceExcerptWordCount": 90,
+        "quoteKind": "quote",
+        "burdenIds": [
+          "pro-primary"
+        ],
+        "respondsToIds": [],
+        "importance": 3
+      },
+      "con": {
+        "id": "goff-carroll-consciousness-fundamental-2023-con-benchmark-01",
+        "side": "con",
+        "timestamp": "25:05",
+        "sourceSpan": {
+          "start": "25:05",
+          "end": "25:42"
+        },
+        "roleLabel": "Weak emergence frame",
+        "sourceExcerpt": "another option now that works much better namely physicalism and the trick in physicalism to make sense of Consciousness is what is called weak emergence the idea is that the world appears to us in layers or levels there are multiple vocabularies multiple ways of describing the world that work equally well even though they're describing different levels of precision and coarse graining so you have the the classic example of a successful application of this comes from the 19th century and the success of thermodynamics and statistical mechanics we",
+        "sourceExcerptSha256": "471a8f68536a8299f489e97072dcc22d4ebe80168e451b86f073e4529880003a",
+        "sourceExcerptWordCount": 90,
+        "quoteKind": "quote",
+        "burdenIds": [
+          "con-primary"
+        ],
+        "respondsToIds": [],
+        "importance": 3
+      }
+    }
+  },
+  "burdens": [
+    {
+      "id": "pro-primary",
+      "side": "pro",
+      "type": "constructive-or-critical",
+      "description": "Advance the pro position on the locked motion: Is consciousness a fundamental feature of reality, or can physicalism explain conscious experience through higher-level descriptions of the physical world?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    },
+    {
+      "id": "con-primary",
+      "side": "con",
+      "type": "constructive-or-critical",
+      "description": "Advance the con position on the locked motion: Is consciousness a fundamental feature of reality, or can physicalism explain conscious experience through higher-level descriptions of the physical world?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    }
+  ]
+}

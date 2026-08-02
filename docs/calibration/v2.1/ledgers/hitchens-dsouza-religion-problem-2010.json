@@ -1,0 +1,296 @@
+{
+  "schemaVersion": "2.1",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.1",
+  "calibrationOnly": true,
+  "pilotScope": "single-section, two-move benchmark",
+  "debateId": "hitchens-dsouza-religion-problem-2010",
+  "debateNumber": "03",
+  "model": "5.6 Sol",
+  "sourceManifest": "docs/calibration/v2.1/source-manifests/hitchens-dsouza-religion-problem-2010.json",
+  "blindPacketSha256": "2eea77bb157608106a0cd7de0047e9740f7de971e44102492938c67ed2827ac5",
+  "assessmentPasses": {
+    "passA": {
+      "model": "5.6 Sol",
+      "completedAt": "2026-08-02T22:10:00.000Z",
+      "contextIsolation": "Legacy scores, critiques, tags, Overall Commentary, and AI Extension were excluded from the benchmark definition."
+    },
+    "passB": {
+      "model": "5.6 Sol",
+      "completedAt": "2026-08-02T22:35:00.000Z",
+      "contextIsolation": "Pass B used the same active model task and therefore had only procedural, not contextual, separation from Pass A."
+    }
+  },
+  "passIndependence": {
+    "level": "same-model-same-context-procedural-only",
+    "limitation": "Both passes were produced by 5.6 Sol in one active task. The benchmark inputs withheld legacy scores, critiques, tags, and commentary, but the passes were not context-independent. Agreement statistics therefore test mechanics and judgment repeatability only; they are not inter-rater reliability evidence."
+  },
+  "motionType": "comparative-worldview",
+  "motion": "Is religion the problem, or does the God hypothesis better explain life, morality, purpose, and human experience than secular doubt?",
+  "burdens": [
+    {
+      "id": "pro-primary",
+      "side": "pro",
+      "type": "constructive-or-critical",
+      "description": "Advance the pro position on the locked motion: Is religion the problem, or does the God hypothesis better explain life, morality, purpose, and human experience than secular doubt?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    },
+    {
+      "id": "con-primary",
+      "side": "con",
+      "type": "constructive-or-critical",
+      "description": "Advance the con position on the locked motion: Is religion the problem, or does the God hypothesis better explain life, morality, purpose, and human experience than secular doubt?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    }
+  ],
+  "sectionWeightsLockedBeforeScoring": true,
+  "moveImportanceLockedBeforeScoring": true,
+  "sections": [
+    {
+      "id": "hitchens-dsouza-religion-problem-2010-benchmark-section-01",
+      "title": "Doubt and explanation",
+      "weightPercent": 100,
+      "weightRationale": "The targeted pilot contains one preselected benchmark section, so it receives the entire within-pilot weight. This is not a production debate weight.",
+      "sides": {
+        "pro": {
+          "moves": [
+            {
+              "id": "hitchens-dsouza-religion-problem-2010-pro-benchmark-01",
+              "side": "pro",
+              "timestamp": "11:11",
+              "sourceSpan": {
+                "start": "11:11",
+                "end": "11:41"
+              },
+              "roleLabel": "Skeptical frame",
+              "sourceExcerpt": "find out how much more and more there is to know in these circumstances which I believe to be undeniable the only respectable intellectual position is one of Doubt skepticism reservation and free and I'd stress free and unfettered inquiry in that lies as it has always Lain our only hope so you should beware always of those who say that these questions have already been decided in particular to those who tell you that they've been decided by reservation excuse me by Revelation uh that they there are handed",
+              "sourceExcerptSha256": "0a0a00f2f5a44bb7c60a03442d312c273534149468b0fb849d45ab9ac6c7bba5",
+              "sourceExcerptWordCount": 90,
+              "quoteKind": "quote",
+              "burdenIds": [
+                "pro-primary"
+              ],
+              "respondsToIds": [],
+              "importance": 3,
+              "speakerAttributionConfidence": "medium",
+              "audioChecked": false,
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 70,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 70
+                },
+                "rationale": "The defense of open inquiry supplies a relevant skeptical standard, but calling it the only respectable position is broader than the excerpt establishes."
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 72,
+                  "relevanceBurden": 74,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 72
+                },
+                "rationale": "The methodological warning is lucid and pertinent to revelation-based certainty, while its exclusivity and evidential support remain underargued."
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 2,
+                "evidenceWarrant": 2,
+                "responsiveness": 2,
+                "relevanceBurden": 2,
+                "precisionClarity": 2,
+                "calibrationCharity": 2
+              },
+              "maxDimensionDelta": 2,
+              "passAScore": 70,
+              "passBScore": 72,
+              "scoreDelta": 2,
+              "requiresAdjudication": false,
+              "finalDimensions": {
+                "logicalCoherence": 75,
+                "evidenceWarrant": 61,
+                "responsiveness": 71,
+                "relevanceBurden": 73,
+                "precisionClarity": 79,
+                "calibrationCharity": 71
+              },
+              "finalScore": 71
+            }
+          ],
+          "passAScore": 70,
+          "passBScore": 72,
+          "score": 71
+        },
+        "con": {
+          "moves": [
+            {
+              "id": "hitchens-dsouza-religion-problem-2010-con-benchmark-01",
+              "side": "con",
+              "timestamp": "27:28",
+              "sourceSpan": {
+                "start": "27:28",
+                "end": "28:00"
+              },
+              "roleLabel": "Reason-only case",
+              "sourceExcerpt": "an explanation it's gotten better over time but what I wanted do is meet Christopher on his own ground he says we should be doubters and I'm going to be a doubter he says we should be Skeptics and I endorse that completely in this debate at no time will I make any arguments that appeal to Revelation scripture or authority uh I'll make arguments based on reason alone and I want to engage the argument on Hitchens his own ground by not by making the easy argument for the",
+              "sourceExcerptSha256": "360fc538aa7a027df5614497032faedb36165f9de30edc28cf321597d5602c1c",
+              "sourceExcerptWordCount": 90,
+              "quoteKind": "quote",
+              "burdenIds": [
+                "con-primary"
+              ],
+              "respondsToIds": [],
+              "importance": 3,
+              "speakerAttributionConfidence": "medium",
+              "audioChecked": false,
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 82,
+                  "relevanceBurden": 74,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 84
+                },
+                "rationale": "D'Souza meets the skeptical frame on its own terms and explicitly disclaims authority, but this passage promises a reason-based case rather than presenting it."
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 84,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 85
+                },
+                "rationale": "The move is unusually responsive and charitable as a methodological commitment, though its evidential score is limited because the substantive argument has not yet arrived."
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 2,
+                "evidenceWarrant": 2,
+                "responsiveness": 2,
+                "relevanceBurden": 2,
+                "precisionClarity": 1,
+                "calibrationCharity": 1
+              },
+              "maxDimensionDelta": 2,
+              "passAScore": 76,
+              "passBScore": 78,
+              "scoreDelta": 2,
+              "requiresAdjudication": false,
+              "finalDimensions": {
+                "logicalCoherence": 79,
+                "evidenceWarrant": 64,
+                "responsiveness": 83,
+                "relevanceBurden": 75,
+                "precisionClarity": 84,
+                "calibrationCharity": 85
+              },
+              "finalScore": 77
+            }
+          ],
+          "passAScore": 76,
+          "passBScore": 78,
+          "score": 77
+        }
+      }
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "passA": {
+        "value": 0,
+        "rationale": "A single sampled move cannot justify a full-debate burden-completion adjustment."
+      },
+      "passB": {
+        "value": 0,
+        "rationale": "A single sampled move cannot justify a full-debate burden-completion adjustment."
+      },
+      "delta": 0,
+      "requiresAdjudication": false,
+      "final": {
+        "value": 0,
+        "rationale": "Rounded mean of the two locked scoring passes; no adjudication threshold was triggered."
+      }
+    },
+    "con": {
+      "passA": {
+        "value": 0,
+        "rationale": "A single sampled move cannot justify a full-debate burden-completion adjustment."
+      },
+      "passB": {
+        "value": 0,
+        "rationale": "A single sampled move cannot justify a full-debate burden-completion adjustment."
+      },
+      "delta": 0,
+      "requiresAdjudication": false,
+      "final": {
+        "value": 0,
+        "rationale": "Rounded mean of the two locked scoring passes; no adjudication threshold was triggered."
+      }
+    }
+  },
+  "tagReview": {
+    "performedAfterScoring": true,
+    "candidates": [],
+    "scoringEffect": "none; accepted tags describe defects already represented in dimensions"
+  },
+  "aiExtensionReview": {
+    "performedAfterAssessment": true,
+    "status": "not-applicable-to-targeted-scoring-benchmark",
+    "noveltyMap": [],
+    "rationale": "This pilot tests rubric scoring mechanics on sampled moves, not full scorecard or AI Extension composition."
+  },
+  "overall": {
+    "pro": {
+      "passA": {
+        "weightedSectionMean": 70,
+        "burdenCompletionAdjustment": 0,
+        "score": 70
+      },
+      "passB": {
+        "weightedSectionMean": 72,
+        "burdenCompletionAdjustment": 0,
+        "score": 72
+      },
+      "weightedSectionMean": 71,
+      "burdenCompletionAdjustment": 0,
+      "score": 71,
+      "confidenceRange": {
+        "low": 68,
+        "high": 74
+      }
+    },
+    "con": {
+      "passA": {
+        "weightedSectionMean": 76,
+        "burdenCompletionAdjustment": 0,
+        "score": 76
+      },
+      "passB": {
+        "weightedSectionMean": 78,
+        "burdenCompletionAdjustment": 0,
+        "score": 78
+      },
+      "weightedSectionMean": 77,
+      "burdenCompletionAdjustment": 0,
+      "score": 77,
+      "confidenceRange": {
+        "low": 74,
+        "high": 80
+      }
+    }
+  },
+  "agreementAudit": {
+    "moveCount": 2,
+    "adjudicationCount": 0,
+    "adjustmentAdjudicationCount": 0,
+    "maxDimensionDelta": 2,
+    "maxMoveScoreDelta": 2,
+    "maxAdjustmentDelta": 0,
+    "adjudicationRate": 0
+  }
+}

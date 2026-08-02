@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "2.1-benchmark-definition",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "calibrationOnly": true,
+  "debateId": "harris-prager-religion-morality-public-reason-2014",
+  "debateNumber": "156",
+  "motionType": "comparative-ethics",
+  "motion": "Does religious belief better ground moral knowledge and identify social evil, or can secular ethical realism guide moral progress without sacred texts?",
+  "sides": {
+    "pro": {
+      "label": "Divine moral authority",
+      "speaker": "Dennis Prager"
+    },
+    "con": {
+      "label": "Secular ethical realism",
+      "speaker": "Sam Harris"
+    }
+  },
+  "sourceManifest": "docs/calibration/v2.1/source-manifests/harris-prager-religion-morality-public-reason-2014.json",
+  "transcriptSha256": "4baa3a7255c6b9ffb9a1fb0446f816bd18ab84cbd311c46580c66f225a21f2ed",
+  "selectionProtocol": {
+    "lockedBeforeScoring": true,
+    "rule": "Use the first paired move location in the existing scorecard as a stable benchmark; reveal no legacy score, critique, tag, section score, overall score, or commentary to either scoring pass.",
+    "limitation": "This tests score application on varied known moves, not blind argument discovery or complete-debate coverage. Existing role labels and move locations may still anchor selection."
+  },
+  "section": {
+    "id": "harris-prager-religion-morality-public-reason-2014-benchmark-section-01",
+    "title": "Religion, Islam, and moral diagnosis",
+    "weightPercent": 100,
+    "weightRationale": "The targeted pilot contains one preselected benchmark section, so it receives the entire within-pilot weight. This is not a production debate weight.",
+    "moves": {
+      "pro": {
+        "id": "harris-prager-religion-morality-public-reason-2014-pro-benchmark-01",
+        "side": "pro",
+        "timestamp": "03:20",
+        "sourceSpan": {
+          "start": "03:20",
+          "end": "03:49"
+        },
+        "roleLabel": "Historical diagnosis",
+        "sourceExcerpt": "totalitarians well it so why why would you why would you lump us I am one of these religious people M and and as you and I and and the reason I'm having you on again is cuz I respected your intellectual honesty last time because you acknowledge that the people that are that it is far more likely for uh an Evangelical Christian leader than an academic secular Professor to acknowledge the threat emanating from Islam you acknowledge that and so on the greatest moral problem of our day",
+        "sourceExcerptSha256": "b908eb62156df2797caa672a7070e1c4370903ae633663758e5c96898d7fbefb",
+        "sourceExcerptWordCount": 90,
+        "quoteKind": "quote",
+        "burdenIds": [
+          "pro-primary"
+        ],
+        "respondsToIds": [],
+        "importance": 3
+      },
+      "con": {
+        "id": "harris-prager-religion-morality-public-reason-2014-con-benchmark-01",
+        "side": "con",
+        "timestamp": "04:05",
+        "sourceSpan": {
+          "start": "04:05",
+          "end": "04:32"
+        },
+        "roleLabel": "Belief-content reply",
+        "sourceExcerpt": "because it's not well one I believe it's true but they're recognizing it for the wrong reasons I mean they're they're recognizing the threat posed by Muslim extremists or really Islam itself because they know what it's like to believe that a book was written by God they just happen to think a different book was written by God now that offers us absolutely that has nothing wait that has nothing to do with why Christian Christians see the threat from within Islam Christians Christians and Jews differ on the",
+        "sourceExcerptSha256": "7e36c80de9cfd12b6cf34a279188d0c0dc029088af6fdfda130d73bf0382b9c1",
+        "sourceExcerptWordCount": 90,
+        "quoteKind": "quote",
+        "burdenIds": [
+          "con-primary"
+        ],
+        "respondsToIds": [],
+        "importance": 3
+      }
+    }
+  },
+  "burdens": [
+    {
+      "id": "pro-primary",
+      "side": "pro",
+      "type": "constructive-or-critical",
+      "description": "Advance the pro position on the locked motion: Does religious belief better ground moral knowledge and identify social evil, or can secular ethical realism guide moral progress without sacred texts?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    },
+    {
+      "id": "con-primary",
+      "side": "con",
+      "type": "constructive-or-critical",
+      "description": "Advance the con position on the locked motion: Does religious belief better ground moral knowledge and identify social evil, or can secular ethical realism guide moral progress without sacred texts?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    }
+  ]
+}

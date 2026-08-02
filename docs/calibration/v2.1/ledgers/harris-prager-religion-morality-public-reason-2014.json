@@ -1,0 +1,317 @@
+{
+  "schemaVersion": "2.1",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.1",
+  "calibrationOnly": true,
+  "pilotScope": "single-section, two-move benchmark",
+  "debateId": "harris-prager-religion-morality-public-reason-2014",
+  "debateNumber": "156",
+  "model": "5.6 Sol",
+  "sourceManifest": "docs/calibration/v2.1/source-manifests/harris-prager-religion-morality-public-reason-2014.json",
+  "blindPacketSha256": "d728bc7d71b3eb965454a4336196fb902ddb09b2210c646600ebbef1a39281e5",
+  "assessmentPasses": {
+    "passA": {
+      "model": "5.6 Sol",
+      "completedAt": "2026-08-02T22:10:00.000Z",
+      "contextIsolation": "Legacy scores, critiques, tags, Overall Commentary, and AI Extension were excluded from the benchmark definition."
+    },
+    "passB": {
+      "model": "5.6 Sol",
+      "completedAt": "2026-08-02T22:35:00.000Z",
+      "contextIsolation": "Pass B used the same active model task and therefore had only procedural, not contextual, separation from Pass A."
+    }
+  },
+  "passIndependence": {
+    "level": "same-model-same-context-procedural-only",
+    "limitation": "Both passes were produced by 5.6 Sol in one active task. The benchmark inputs withheld legacy scores, critiques, tags, and commentary, but the passes were not context-independent. Agreement statistics therefore test mechanics and judgment repeatability only; they are not inter-rater reliability evidence."
+  },
+  "motionType": "comparative-ethics",
+  "motion": "Does religious belief better ground moral knowledge and identify social evil, or can secular ethical realism guide moral progress without sacred texts?",
+  "burdens": [
+    {
+      "id": "pro-primary",
+      "side": "pro",
+      "type": "constructive-or-critical",
+      "description": "Advance the pro position on the locked motion: Does religious belief better ground moral knowledge and identify social evil, or can secular ethical realism guide moral progress without sacred texts?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    },
+    {
+      "id": "con-primary",
+      "side": "con",
+      "type": "constructive-or-critical",
+      "description": "Advance the con position on the locked motion: Does religious belief better ground moral knowledge and identify social evil, or can secular ethical realism guide moral progress without sacred texts?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    }
+  ],
+  "sectionWeightsLockedBeforeScoring": true,
+  "moveImportanceLockedBeforeScoring": true,
+  "sections": [
+    {
+      "id": "harris-prager-religion-morality-public-reason-2014-benchmark-section-01",
+      "title": "Religion, Islam, and moral diagnosis",
+      "weightPercent": 100,
+      "weightRationale": "The targeted pilot contains one preselected benchmark section, so it receives the entire within-pilot weight. This is not a production debate weight.",
+      "sides": {
+        "pro": {
+          "moves": [
+            {
+              "id": "harris-prager-religion-morality-public-reason-2014-pro-benchmark-01",
+              "side": "pro",
+              "timestamp": "03:20",
+              "sourceSpan": {
+                "start": "03:20",
+                "end": "03:49"
+              },
+              "roleLabel": "Historical diagnosis",
+              "sourceExcerpt": "totalitarians well it so why why would you why would you lump us I am one of these religious people M and and as you and I and and the reason I'm having you on again is cuz I respected your intellectual honesty last time because you acknowledge that the people that are that it is far more likely for uh an Evangelical Christian leader than an academic secular Professor to acknowledge the threat emanating from Islam you acknowledge that and so on the greatest moral problem of our day",
+              "sourceExcerptSha256": "b908eb62156df2797caa672a7070e1c4370903ae633663758e5c96898d7fbefb",
+              "sourceExcerptWordCount": 90,
+              "quoteKind": "quote",
+              "burdenIds": [
+                "pro-primary"
+              ],
+              "respondsToIds": [],
+              "importance": 3,
+              "speakerAttributionConfidence": "medium",
+              "audioChecked": false,
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 50,
+                  "responsiveness": 76,
+                  "relevanceBurden": 68,
+                  "precisionClarity": 66,
+                  "calibrationCharity": 58
+                },
+                "rationale": "Prager supplies a relevant practical comparison, but the broad religious-versus-secular generalization is asserted from an unspecified pattern and overextended to moral reliability."
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 78,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 68,
+                  "calibrationCharity": 60
+                },
+                "rationale": "The conceded observation gives the challenge some evidential basis, yet its representativeness and connection to religion's general moral authority remain unclear."
+              },
+              "adjudication": {
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 77,
+                  "relevanceBurden": 69,
+                  "precisionClarity": 67,
+                  "calibrationCharity": 59
+                },
+                "rationale": "The evidence passes disagreed over how much Harris's local concession supports Prager's broader empirical contrast. The midpoint credits the concession but not the generalization."
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 2,
+                "evidenceWarrant": 10,
+                "responsiveness": 2,
+                "relevanceBurden": 2,
+                "precisionClarity": 2,
+                "calibrationCharity": 2
+              },
+              "maxDimensionDelta": 10,
+              "passAScore": 65,
+              "passBScore": 69,
+              "scoreDelta": 4,
+              "requiresAdjudication": true,
+              "finalDimensions": {
+                "logicalCoherence": 71,
+                "evidenceWarrant": 55,
+                "responsiveness": 77,
+                "relevanceBurden": 69,
+                "precisionClarity": 67,
+                "calibrationCharity": 59
+              },
+              "finalScore": 67
+            }
+          ],
+          "passAScore": 65,
+          "passBScore": 69,
+          "score": 67
+        },
+        "con": {
+          "moves": [
+            {
+              "id": "harris-prager-religion-morality-public-reason-2014-con-benchmark-01",
+              "side": "con",
+              "timestamp": "04:05",
+              "sourceSpan": {
+                "start": "04:05",
+                "end": "04:32"
+              },
+              "roleLabel": "Belief-content reply",
+              "sourceExcerpt": "because it's not well one I believe it's true but they're recognizing it for the wrong reasons I mean they're they're recognizing the threat posed by Muslim extremists or really Islam itself because they know what it's like to believe that a book was written by God they just happen to think a different book was written by God now that offers us absolutely that has nothing wait that has nothing to do with why Christian Christians see the threat from within Islam Christians Christians and Jews differ on the",
+              "sourceExcerptSha256": "7e36c80de9cfd12b6cf34a279188d0c0dc029088af6fdfda130d73bf0382b9c1",
+              "sourceExcerptWordCount": 90,
+              "quoteKind": "quote",
+              "burdenIds": [
+                "con-primary"
+              ],
+              "respondsToIds": [],
+              "importance": 3,
+              "speakerAttributionConfidence": "medium",
+              "audioChecked": false,
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 84,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 74
+                },
+                "rationale": "Harris directly answers the concession by distinguishing detection from the reasons for it, but the claim that shared scriptural psychology explains detection is under-supported."
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 86,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 76
+                },
+                "rationale": "The belief-content reply is relevant and responsive, while its psychological explanation and general lesson about sacred texts require more evidence."
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 2,
+                "evidenceWarrant": 2,
+                "responsiveness": 2,
+                "relevanceBurden": 2,
+                "precisionClarity": 2,
+                "calibrationCharity": 2
+              },
+              "maxDimensionDelta": 2,
+              "passAScore": 76,
+              "passBScore": 78,
+              "scoreDelta": 2,
+              "requiresAdjudication": false,
+              "finalDimensions": {
+                "logicalCoherence": 79,
+                "evidenceWarrant": 66,
+                "responsiveness": 85,
+                "relevanceBurden": 83,
+                "precisionClarity": 73,
+                "calibrationCharity": 75
+              },
+              "finalScore": 77
+            }
+          ],
+          "passAScore": 76,
+          "passBScore": 78,
+          "score": 77
+        }
+      }
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "passA": {
+        "value": 0,
+        "rationale": "A single sampled move cannot justify a full-debate burden-completion adjustment."
+      },
+      "passB": {
+        "value": 0,
+        "rationale": "A single sampled move cannot justify a full-debate burden-completion adjustment."
+      },
+      "delta": 0,
+      "requiresAdjudication": false,
+      "final": {
+        "value": 0,
+        "rationale": "Rounded mean of the two locked scoring passes; no adjudication threshold was triggered."
+      }
+    },
+    "con": {
+      "passA": {
+        "value": 0,
+        "rationale": "A single sampled move cannot justify a full-debate burden-completion adjustment."
+      },
+      "passB": {
+        "value": 0,
+        "rationale": "A single sampled move cannot justify a full-debate burden-completion adjustment."
+      },
+      "delta": 0,
+      "requiresAdjudication": false,
+      "final": {
+        "value": 0,
+        "rationale": "Rounded mean of the two locked scoring passes; no adjudication threshold was triggered."
+      }
+    }
+  },
+  "tagReview": {
+    "performedAfterScoring": true,
+    "candidates": [
+      {
+        "id": "tag-review-156-pro-01",
+        "moveSide": "pro",
+        "label": "Hasty generalization",
+        "type": "fallacy",
+        "decision": "accepted",
+        "rationale": "A conceded observation about one threat is generalized to the practical moral reliability of broad religious and secular populations without a representative basis.",
+        "moveId": "harris-prager-religion-morality-public-reason-2014-pro-benchmark-01"
+      }
+    ],
+    "scoringEffect": "none; accepted tags describe defects already represented in dimensions"
+  },
+  "aiExtensionReview": {
+    "performedAfterAssessment": true,
+    "status": "not-applicable-to-targeted-scoring-benchmark",
+    "noveltyMap": [],
+    "rationale": "This pilot tests rubric scoring mechanics on sampled moves, not full scorecard or AI Extension composition."
+  },
+  "overall": {
+    "pro": {
+      "passA": {
+        "weightedSectionMean": 65,
+        "burdenCompletionAdjustment": 0,
+        "score": 65
+      },
+      "passB": {
+        "weightedSectionMean": 69,
+        "burdenCompletionAdjustment": 0,
+        "score": 69
+      },
+      "weightedSectionMean": 67,
+      "burdenCompletionAdjustment": 0,
+      "score": 67,
+      "confidenceRange": {
+        "low": 63,
+        "high": 71
+      }
+    },
+    "con": {
+      "passA": {
+        "weightedSectionMean": 76,
+        "burdenCompletionAdjustment": 0,
+        "score": 76
+      },
+      "passB": {
+        "weightedSectionMean": 78,
+        "burdenCompletionAdjustment": 0,
+        "score": 78
+      },
+      "weightedSectionMean": 77,
+      "burdenCompletionAdjustment": 0,
+      "score": 77,
+      "confidenceRange": {
+        "low": 74,
+        "high": 80
+      }
+    }
+  },
+  "agreementAudit": {
+    "moveCount": 2,
+    "adjudicationCount": 1,
+    "adjustmentAdjudicationCount": 0,
+    "maxDimensionDelta": 10,
+    "maxMoveScoreDelta": 4,
+    "maxAdjustmentDelta": 0,
+    "adjudicationRate": 0.5
+  }
+}

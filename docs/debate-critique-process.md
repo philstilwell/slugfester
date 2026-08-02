@@ -51,9 +51,9 @@ Every debate object should produce this order:
 
 ## Scoring Rubric
 
-New reassessments use `Slugfester Reassessment Rubric v2` and retain a recomputable JSON ledger in `docs/assessment-ledgers/`. Scores describe the argumentative performance actually displayed in the transcript, not the truth or popularity of a worldview.
+Debate #1 currently remains a production v2 reassessment. New methodology testing uses `Slugfester Reassessment Rubric v2.1` under [`assessment-workflow-v2.1.md`](assessment-workflow-v2.1.md) and [`reassessment-rubric-v2.1.md`](reassessment-rubric-v2.1.md). Calibration ledgers stay under `docs/calibration/v2.1/` and do not affect published scores or rankings until the workflow and each full reassessment are explicitly promoted.
 
-Score every selected move from 0–100 on these dimensions:
+Both v2 and v2.1 score every selected move from 0–100 on these dimensions:
 
 - Logical coherence: 25%.
 - Evidence and warrant: 20%.
@@ -64,9 +64,9 @@ Score every selected move from 0–100 on these dimensions:
 
 Calculate `move = round(.25L + .20E + .20R + .15B + .10P + .10C)`.
 
-For each side in each section, record coverage, burden progress, and within-section coherence. Calculate `section = round(.70 moveMean + .10 coverage + .10 burdenProgress + .10 coherence)`. Before viewing the results, assign the same centrality to that section for both sides: `3` for load-bearing, `2` for major, or `1` for supporting.
+Under v2.1, lock move importance (`1`–`3`) and section percentages totaling 100 before scoring. Calculate each section as the importance-weighted mean of its moves. Calculate the overall score as the section-weighted mean plus an independently scored burden-completion adjustment from −5 to +5. This replaces v2's overlapping section and overall meta-scores. Do not hand-adjust any computed total.
 
-Calculate the centrality-weighted section mean, then record case completion, rebuttal resilience, and global calibration. Calculate `overall = round(.70 weightedSectionMean + .12 caseCompletion + .10 rebuttalResilience + .08 globalCalibration)`. Do not hand-adjust a computed total; revise the documented dimension judgment if the score and evidence do not match.
+Run two score-blind passes and preserve both. Adjudicate when any dimension differs by more than 8 points, a move total differs by more than 4, or a burden adjustment differs by more than 2. Same-model sequential passes must be labeled honestly and remain calibration-only unless explicitly accepted.
 
 Controls:
 
@@ -93,7 +93,7 @@ Score bands:
 - Debates `01` through `130` were assessed with `GPT 5.5 Extra High`.
 - After Debate `130`, Slugfester began using `5.6 Terra Extra High`.
 - Every new debate from `131` onward must include `assessmentModel: "5.6 Terra Extra High"` in `src/data/debates.js`.
-- A full reassessment may use a later model when it replaces the scorecard prose and creates a v2 ledger. Such a debate must explicitly set both the model actually used and `assessmentRubric: "Slugfester Reassessment Rubric v2"`.
+- A full reassessment may use a later model when it replaces the scorecard prose and creates a complete versioned ledger. Such a debate must explicitly set both the model actually used and the rubric actually applied.
 - Do not retroactively relabel existing debates. The displayed model should describe the model used for that assessment.
 - The renderer selects the historical model by debate number only as a fallback. Explicit reassessment attribution takes precedence.
 
@@ -140,7 +140,7 @@ Each side needs:
 - At least one `Whiffed` point (a material logical weakness or overreach).
 - Links for named fallacies or biases in the `Whiffed` list.
 
-For a v2 reassessment, the overall score must equal the ledger formula above. The centrality-weighted sections carry 70%; case completion, rebuttal resilience, and global calibration carry the remaining 30%.
+For a reassessment, the overall score must exactly equal its versioned ledger formula. A v2.1 score uses locked section percentages plus only the documented −5 to +5 burden-completion adjustment.
 
 ## AI Extension
 
@@ -167,6 +167,8 @@ Before committing a new debate:
 - The scoring-note band identifies the correct assessment model: `GPT 5.5 Extra High` through Debate `130`, then `5.6 Terra Extra High` beginning with Debate `131`.
 - A reassessed debate explicitly identifies its actual model and rubric and has a matching ledger in `docs/assessment-ledgers/`.
 - The ledger calculator reproduces every move, section, and overall score in the published debate object.
+- A v2.1 ledger records source and packet hashes, burdens, response links, both scoring passes, required adjudications, tag review, and AI Extension novelty review.
+- Calibration-only results remain outside the production debate object and rankings.
 - The AI Extension follows Overall Commentary, is visibly AI-generated, and works closed, open, and from the keyboard.
 - Every new debate from `131` onward explicitly sets `assessmentModel` to `5.6 Terra Extra High`.
 - `sourceNote` identifies how the transcript was obtained or cleaned.

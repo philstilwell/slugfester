@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "2.1-benchmark-definition",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "calibrationOnly": true,
+  "debateId": "craig-oconnor-god-debate-2026",
+  "debateNumber": "01",
+  "motionType": "comparative-worldview",
+  "motion": "Does God exist, and do cosmology, fine-tuning, morality, resurrection, and suffering support or undermine Christian theism?",
+  "sides": {
+    "pro": {
+      "label": "Theist",
+      "speaker": "William Lane Craig"
+    },
+    "con": {
+      "label": "Agnostic atheist",
+      "speaker": "Alex O'Connor"
+    }
+  },
+  "sourceManifest": "docs/calibration/v2.1/source-manifests/craig-oconnor-god-debate-2026.json",
+  "transcriptSha256": "ee8413c2fd9dcaae71cc2db0478d8c4dc5ac1a66b6896d16542815db2e0c272f",
+  "selectionProtocol": {
+    "lockedBeforeScoring": true,
+    "rule": "Use the first paired move location in the existing scorecard as a stable benchmark; reveal no legacy score, critique, tag, section score, overall score, or commentary to either scoring pass.",
+    "limitation": "This tests score application on varied known moves, not blind argument discovery or complete-debate coverage. Existing role labels and move locations may still anchor selection."
+  },
+  "section": {
+    "id": "craig-oconnor-god-debate-2026-benchmark-section-01",
+    "title": "Cumulative case and opening burden",
+    "weightPercent": 100,
+    "weightRationale": "The targeted pilot contains one preselected benchmark section, so it receives the entire within-pilot weight. This is not a production debate weight.",
+    "moves": {
+      "pro": {
+        "id": "craig-oconnor-god-debate-2026-pro-benchmark-01",
+        "side": "pro",
+        "timestamp": "05:00",
+        "sourceSpan": {
+          "start": "05:00",
+          "end": "05:52"
+        },
+        "roleLabel": "Cumulative case",
+        "sourceExcerpt": "God exists. And in my philosophical work, I've defended both what I call exterior and interior ways of answering that question. Exterior arguments and evidences concern uh philosophical uh and scientific arguments that uh lead to the existence of God. For example, I've defended six of these in my work. First, that God is the best explanation of why anything at all exists rather than nothing. Second, that God is the best explanation for the absolute beginning of the universe at a point in the finite past. Thirdly, God is",
+        "sourceExcerptSha256": "ad8274600e2b686a2f5a5d0c15a3ad6755e20618feedd97c13add1514e433a26",
+        "sourceExcerptWordCount": 90,
+        "quoteKind": "quote",
+        "burdenIds": [
+          "pro-primary"
+        ],
+        "respondsToIds": [],
+        "importance": 3
+      },
+      "con": {
+        "id": "craig-oconnor-god-debate-2026-con-benchmark-01",
+        "side": "con",
+        "timestamp": "11:00",
+        "sourceSpan": {
+          "start": "11:00",
+          "end": "11:31"
+        },
+        "roleLabel": "Burden map",
+        "sourceExcerpt": "the beginning of I think the five ways was somebody else. >> [laughter] >> Yeah, of course an atheist engaged in these discussions spends their time doing two things. Providing positive reasons not to believe in God. And And there's really only one popular version of that. But more often, for that reason, they spend their time responding to arguments that are that are put forward. So, Dr. Craig has put forward uh six of these. And the atheist's job is to see whether they think that the these arguments",
+        "sourceExcerptSha256": "a7c78cf6a77990dbce6631e0575426c4adb33c00b5599c748819a451c9564c89",
+        "sourceExcerptWordCount": 90,
+        "quoteKind": "quote",
+        "burdenIds": [
+          "con-primary"
+        ],
+        "respondsToIds": [],
+        "importance": 3
+      }
+    }
+  },
+  "burdens": [
+    {
+      "id": "pro-primary",
+      "side": "pro",
+      "type": "constructive-or-critical",
+      "description": "Advance the pro position on the locked motion: Does God exist, and do cosmology, fine-tuning, morality, resurrection, and suffering support or undermine Christian theism?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    },
+    {
+      "id": "con-primary",
+      "side": "con",
+      "type": "constructive-or-critical",
+      "description": "Advance the con position on the locked motion: Does God exist, and do cosmology, fine-tuning, morality, resurrection, and suffering support or undermine Christian theism?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "2.1-benchmark-definition",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "calibrationOnly": true,
+  "debateId": "tour-cronin-origin-of-life-2020",
+  "debateNumber": "189",
+  "motionType": "technical-state-of-evidence",
+  "motion": "Does current origin-of-life research substantially overstate how close it is to explaining the emergence of life?",
+  "sides": {
+    "pro": {
+      "label": "Claims of progress are overstated",
+      "speaker": "James Tour"
+    },
+    "con": {
+      "label": "A testable pathway is emerging",
+      "speaker": "Lee Cronin"
+    }
+  },
+  "sourceManifest": "docs/calibration/v2.1/source-manifests/tour-cronin-origin-of-life-2020.json",
+  "transcriptSha256": "57fdb4178e04382fa8699406f9da3b649540d763ee639090325f9576983a189d",
+  "selectionProtocol": {
+    "lockedBeforeScoring": true,
+    "rule": "Use the first paired move location in the existing scorecard as a stable benchmark; reveal no legacy score, critique, tag, section score, overall score, or commentary to either scoring pass.",
+    "limitation": "This tests score application on varied known moves, not blind argument discovery or complete-debate coverage. Existing role labels and move locations may still anchor selection."
+  },
+  "section": {
+    "id": "tour-cronin-origin-of-life-2020-benchmark-section-01",
+    "title": "Critique, creation, and natural explanation",
+    "weightPercent": 100,
+    "weightRationale": "The targeted pilot contains one preselected benchmark section, so it receives the entire within-pilot weight. This is not a production debate weight.",
+    "moves": {
+      "pro": {
+        "id": "tour-cronin-origin-of-life-2020-pro-benchmark-01",
+        "side": "pro",
+        "timestamp": "2:45",
+        "sourceSpan": {
+          "start": "2:45",
+          "end": "03:11"
+        },
+        "roleLabel": "Methodological boundary",
+        "sourceExcerpt": "you approach issues for instance around origin of life research well actually I don't work in their area of origin of life I just started reading about origin of life about four four years ago and and trying to understand where people were coming from I was studying evolution and and that brought me to evolute to origin of life and then as I started to look at the organic chemistry that's been done in the origin of life I came to the conclusion that were clueless that humankind is",
+        "sourceExcerptSha256": "18415492181214ae1a03eda8fde640075b7ad9f796f6130d03a4cc87e723be98",
+        "sourceExcerptWordCount": 90,
+        "quoteKind": "quote",
+        "burdenIds": [
+          "pro-primary"
+        ],
+        "respondsToIds": [],
+        "importance": 3
+      },
+      "con": {
+        "id": "tour-cronin-origin-of-life-2020-con-benchmark-01",
+        "side": "con",
+        "timestamp": "11:35",
+        "sourceSpan": {
+          "start": "11:35",
+          "end": "12:05"
+        },
+        "roleLabel": "Bottom-up research program",
+        "sourceExcerpt": "is saying about how life got going on earth so okay so I'm an inorganic chemist and I'm always been faced with the complexity of crazy kind of reactions and understanding what goes on in a in a reaction vessel in an experiment and what I was trying to convey in the last discussion is that although that's the the presence of life on Earth seems like it's a miracle of complexity what I was trying to convey is I think that we have begun to develop a pathway to",
+        "sourceExcerptSha256": "af56d268191d7754a609ad5c6a6b57b296c44b7547098cb55221d734106f5b3e",
+        "sourceExcerptWordCount": 90,
+        "quoteKind": "quote",
+        "burdenIds": [
+          "con-primary"
+        ],
+        "respondsToIds": [],
+        "importance": 3
+      }
+    }
+  },
+  "burdens": [
+    {
+      "id": "pro-primary",
+      "side": "pro",
+      "type": "constructive-or-critical",
+      "description": "Advance the pro position on the locked motion: Does current origin-of-life research substantially overstate how close it is to explaining the emergence of life?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    },
+    {
+      "id": "con-primary",
+      "side": "con",
+      "type": "constructive-or-critical",
+      "description": "Advance the con position on the locked motion: Does current origin-of-life research substantially overstate how close it is to explaining the emergence of life?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    }
+  ]
+}

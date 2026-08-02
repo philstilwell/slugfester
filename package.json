@@ -7,6 +7,9 @@
   "scripts": {
     "dev": "python3 -m http.server 4174 --bind 127.0.0.1",
     "seo": "node scripts/generate-seo-pages.mjs",
-    "check": "node --check src/app.js && node --check src/seo.js && node --check src/data/debates.js && node --check src/data/interlocutors.js && node --check src/data/references.js && node --check scripts/generate-seo-pages.mjs && node scripts/validate-debates.mjs && node scripts/validate-design-template.mjs && node scripts/generate-seo-pages.mjs --check"
+    "assessment:v2.1:build": "node scripts/build-calibration-benchmarks.mjs && node scripts/build-calibration-ledgers.mjs && node scripts/analyze-v2.1-pilot.mjs",
+    "assessment:v2.1:check": "node scripts/validate-calibration-v2.1.mjs && node scripts/analyze-v2.1-pilot.mjs --check",
+    "assessment:scoring:test": "node scripts/test-reassessment-scoring.mjs",
+    "check": "node --check src/app.js && node --check src/seo.js && node --check src/data/debates.js && node --check src/data/interlocutors.js && node --check src/data/references.js && node --check scripts/acquire-youtube-captions.mjs && node --check scripts/build-blind-packets.mjs && node --check scripts/build-calibration-benchmarks.mjs && node --check scripts/build-calibration-ledgers.mjs && node --check scripts/calculate-reassessment.mjs && node --check scripts/analyze-v2.1-pilot.mjs && node --check scripts/lib/reassessment-scoring.mjs && node --check scripts/test-reassessment-scoring.mjs && node --check scripts/validate-calibration-v2.1.mjs && node --check scripts/generate-seo-pages.mjs && node scripts/test-reassessment-scoring.mjs && node scripts/validate-debates.mjs && node scripts/validate-calibration-v2.1.mjs && node scripts/analyze-v2.1-pilot.mjs --check && node scripts/validate-design-template.mjs && node scripts/generate-seo-pages.mjs --check"
   }
 }

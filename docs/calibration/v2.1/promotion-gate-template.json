@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "2.1-promotion-gate",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "instructions": "Copy this file for the next pilot, set every TBD value, and commit it before either scoring pass begins. Do not alter thresholds after scores are visible; amend the workflow version instead.",
+  "preregistration": {
+    "lockedAt": "TBD-before-scoring",
+    "lockedBy": "TBD",
+    "pilotManifestSha256": "TBD",
+    "thresholdsLockedBeforeScoring": true
+  },
+  "sample": {
+    "initialCompleteDebates": 3,
+    "expandedCompleteDebates": 10,
+    "requiredStrata": [
+      "close analytic",
+      "lopsided or asymmetric burden",
+      "technical or multi-person",
+      "short, medium, and long formats in the expanded sample"
+    ]
+  },
+  "hardGates": {
+    "fullTranscriptAcquisitionRateMinimum": 1,
+    "centralQuoteAudioVerificationRateMinimum": 1,
+    "unresolvedLowConfidenceSpeakerAttributionsMaximum": 0,
+    "scoringPassIsolation": "separate model tasks with no score or rationale leakage",
+    "missingRequiredAdjudicationsMaximum": 0,
+    "calculatorDisplayMismatchesMaximum": 0,
+    "productionArtifactsMarkedCalibrationOnlyUntilPromotion": true,
+    "completeArgumentInventoryRequired": true,
+    "aiExtensionNoveltyMapCompletionRateMinimum": 1
+  },
+  "reviewGates": {
+    "meanAbsoluteDimensionDeltaMaximum": 5,
+    "moveAdjudicationRateMaximum": 0.25,
+    "overallScorePassDeltaMaximum": 5,
+    "winnerFlipReviewThreshold": 0.2,
+    "rankCorrelationReviewThreshold": 0.9,
+    "note": "Winner flips and rank changes are not automatic failures when transcript evidence justifies them, but rates beyond these thresholds require explicit editorial adjudication before expansion."
+  },
+  "decision": {
+    "mechanics": "TBD",
+    "initialGate": "TBD",
+    "expandedGate": "TBD",
+    "editorialPromotion": "TBD"
+  }
+}

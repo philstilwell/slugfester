@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "2.1-benchmark-definition",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "calibrationOnly": true,
+  "debateId": "oconnor-baker-hytch-argument-from-reason-2020",
+  "debateNumber": "104",
+  "motionType": "comparative-explanation",
+  "motion": "Does rationality undermine naturalism and make a theistic or otherwise non-naturalist account of mind more probable?",
+  "sides": {
+    "pro": {
+      "label": "Reason beyond naturalism",
+      "speaker": "Max Baker-Hytch"
+    },
+    "con": {
+      "label": "Naturalistic reason",
+      "speaker": "Alex O'Connor"
+    }
+  },
+  "sourceManifest": "docs/calibration/v2.1/source-manifests/oconnor-baker-hytch-argument-from-reason-2020.json",
+  "transcriptSha256": "43fc269da3831aaaabac195af1b893d095fafb11305ba0ce18f70b6fb050fe8f",
+  "selectionProtocol": {
+    "lockedBeforeScoring": true,
+    "rule": "Use the first paired move location in the existing scorecard as a stable benchmark; reveal no legacy score, critique, tag, section score, overall score, or commentary to either scoring pass.",
+    "limitation": "This tests score application on varied known moves, not blind argument discovery or complete-debate coverage. Existing role labels and move locations may still anchor selection."
+  },
+  "section": {
+    "id": "oconnor-baker-hytch-argument-from-reason-2020-benchmark-section-01",
+    "title": "Lewis And Determinism",
+    "weightPercent": 100,
+    "weightRationale": "The targeted pilot contains one preselected benchmark section, so it receives the entire within-pilot weight. This is not a production debate weight.",
+    "moves": {
+      "pro": {
+        "id": "oconnor-baker-hytch-argument-from-reason-2020-pro-benchmark-01",
+        "side": "pro",
+        "timestamp": "03:13",
+        "sourceSpan": {
+          "start": "03:13",
+          "end": "03:40"
+        },
+        "roleLabel": "Haldane problem",
+        "sourceExcerpt": "taken and developed it as well over that time yeah well I mean I think the best way to summarize the argument is actually with a quote from someone else JBS Haldane who is a philosopher who influenced Lewis but Lewis obviously thinks this is a very key passage and I I do kind of think it encapsulates the argument and it just goes like this if my mental processes are determined wholly by the motions of atoms in my brain I have no reason to suppose that my beliefs",
+        "sourceExcerptSha256": "67fcaa43d3dca2bd64d3019dc90a10980573d8921816c73bd017ca9eab06d72c",
+        "sourceExcerptWordCount": 90,
+        "quoteKind": "quote",
+        "burdenIds": [
+          "pro-primary"
+        ],
+        "respondsToIds": [],
+        "importance": 3
+      },
+      "con": {
+        "id": "oconnor-baker-hytch-argument-from-reason-2020-con-benchmark-01",
+        "side": "con",
+        "timestamp": "07:44",
+        "sourceSpan": {
+          "start": "07:44",
+          "end": "08:09"
+        },
+        "roleLabel": "Deterministic conviction",
+        "sourceExcerpt": "things that I want to sort of bring into this conversation is whether similar criticisms about the trust that we can have in reason and the legitimacy that we can afford it are also true of a religious worldview and when you spoke about reading miracles and as you say it was like the penny dropped it just kind of washed you over with this with this kind of process of thought and I remember thinking but your criticism was that if your thought processes are determined not by your",
+        "sourceExcerptSha256": "856d16eb6bf8b76552e5349fe7663c0dfb1d744aae69d03fcad4419718602e25",
+        "sourceExcerptWordCount": 90,
+        "quoteKind": "quote",
+        "burdenIds": [
+          "con-primary"
+        ],
+        "respondsToIds": [],
+        "importance": 3
+      }
+    }
+  },
+  "burdens": [
+    {
+      "id": "pro-primary",
+      "side": "pro",
+      "type": "constructive-or-critical",
+      "description": "Advance the pro position on the locked motion: Does rationality undermine naturalism and make a theistic or otherwise non-naturalist account of mind more probable?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    },
+    {
+      "id": "con-primary",
+      "side": "con",
+      "type": "constructive-or-critical",
+      "description": "Advance the con position on the locked motion: Does rationality undermine naturalism and make a theistic or otherwise non-naturalist account of mind more probable?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "2.1-benchmark-definition",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "calibrationOnly": true,
+  "debateId": "hitchens-dsouza-religion-problem-2010",
+  "debateNumber": "03",
+  "motionType": "comparative-worldview",
+  "motion": "Is religion the problem, or does the God hypothesis better explain life, morality, purpose, and human experience than secular doubt?",
+  "sides": {
+    "pro": {
+      "label": "Religion is the problem",
+      "speaker": "Christopher Hitchens"
+    },
+    "con": {
+      "label": "God explains the problem",
+      "speaker": "Dinesh D'Souza"
+    }
+  },
+  "sourceManifest": "docs/calibration/v2.1/source-manifests/hitchens-dsouza-religion-problem-2010.json",
+  "transcriptSha256": "91f3389991e4626c581bcafeb5da95f52ac5fbd2b3c646c15c7f45da6b425c79",
+  "selectionProtocol": {
+    "lockedBeforeScoring": true,
+    "rule": "Use the first paired move location in the existing scorecard as a stable benchmark; reveal no legacy score, critique, tag, section score, overall score, or commentary to either scoring pass.",
+    "limitation": "This tests score application on varied known moves, not blind argument discovery or complete-debate coverage. Existing role labels and move locations may still anchor selection."
+  },
+  "section": {
+    "id": "hitchens-dsouza-religion-problem-2010-benchmark-section-01",
+    "title": "Doubt and explanation",
+    "weightPercent": 100,
+    "weightRationale": "The targeted pilot contains one preselected benchmark section, so it receives the entire within-pilot weight. This is not a production debate weight.",
+    "moves": {
+      "pro": {
+        "id": "hitchens-dsouza-religion-problem-2010-pro-benchmark-01",
+        "side": "pro",
+        "timestamp": "11:11",
+        "sourceSpan": {
+          "start": "11:11",
+          "end": "11:41"
+        },
+        "roleLabel": "Skeptical frame",
+        "sourceExcerpt": "find out how much more and more there is to know in these circumstances which I believe to be undeniable the only respectable intellectual position is one of Doubt skepticism reservation and free and I'd stress free and unfettered inquiry in that lies as it has always Lain our only hope so you should beware always of those who say that these questions have already been decided in particular to those who tell you that they've been decided by reservation excuse me by Revelation uh that they there are handed",
+        "sourceExcerptSha256": "0a0a00f2f5a44bb7c60a03442d312c273534149468b0fb849d45ab9ac6c7bba5",
+        "sourceExcerptWordCount": 90,
+        "quoteKind": "quote",
+        "burdenIds": [
+          "pro-primary"
+        ],
+        "respondsToIds": [],
+        "importance": 3
+      },
+      "con": {
+        "id": "hitchens-dsouza-religion-problem-2010-con-benchmark-01",
+        "side": "con",
+        "timestamp": "27:28",
+        "sourceSpan": {
+          "start": "27:28",
+          "end": "28:00"
+        },
+        "roleLabel": "Reason-only case",
+        "sourceExcerpt": "an explanation it's gotten better over time but what I wanted do is meet Christopher on his own ground he says we should be doubters and I'm going to be a doubter he says we should be Skeptics and I endorse that completely in this debate at no time will I make any arguments that appeal to Revelation scripture or authority uh I'll make arguments based on reason alone and I want to engage the argument on Hitchens his own ground by not by making the easy argument for the",
+        "sourceExcerptSha256": "360fc538aa7a027df5614497032faedb36165f9de30edc28cf321597d5602c1c",
+        "sourceExcerptWordCount": 90,
+        "quoteKind": "quote",
+        "burdenIds": [
+          "con-primary"
+        ],
+        "respondsToIds": [],
+        "importance": 3
+      }
+    }
+  },
+  "burdens": [
+    {
+      "id": "pro-primary",
+      "side": "pro",
+      "type": "constructive-or-critical",
+      "description": "Advance the pro position on the locked motion: Is religion the problem, or does the God hypothesis better explain life, morality, purpose, and human experience than secular doubt?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    },
+    {
+      "id": "con-primary",
+      "side": "con",
+      "type": "constructive-or-critical",
+      "description": "Advance the con position on the locked motion: Is religion the problem, or does the God hypothesis better explain life, morality, purpose, and human experience than secular doubt?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    }
+  ]
+}

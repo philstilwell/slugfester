@@ -1,0 +1,307 @@
+{
+  "schemaVersion": "2.1",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.1",
+  "calibrationOnly": true,
+  "pilotScope": "single-section, two-move benchmark",
+  "debateId": "goff-carroll-consciousness-fundamental-2023",
+  "debateNumber": "34",
+  "model": "5.6 Sol",
+  "sourceManifest": "docs/calibration/v2.1/source-manifests/goff-carroll-consciousness-fundamental-2023.json",
+  "blindPacketSha256": "643f15f7dceb2ac486e365570fde1a56525465125cb805efe2fd1cc267ee339c",
+  "assessmentPasses": {
+    "passA": {
+      "model": "5.6 Sol",
+      "completedAt": "2026-08-02T22:10:00.000Z",
+      "contextIsolation": "Legacy scores, critiques, tags, Overall Commentary, and AI Extension were excluded from the benchmark definition."
+    },
+    "passB": {
+      "model": "5.6 Sol",
+      "completedAt": "2026-08-02T22:35:00.000Z",
+      "contextIsolation": "Pass B used the same active model task and therefore had only procedural, not contextual, separation from Pass A."
+    }
+  },
+  "passIndependence": {
+    "level": "same-model-same-context-procedural-only",
+    "limitation": "Both passes were produced by 5.6 Sol in one active task. The benchmark inputs withheld legacy scores, critiques, tags, and commentary, but the passes were not context-independent. Agreement statistics therefore test mechanics and judgment repeatability only; they are not inter-rater reliability evidence."
+  },
+  "motionType": "comparative-explanation",
+  "motion": "Is consciousness a fundamental feature of reality, or can physicalism explain conscious experience through higher-level descriptions of the physical world?",
+  "burdens": [
+    {
+      "id": "pro-primary",
+      "side": "pro",
+      "type": "constructive-or-critical",
+      "description": "Advance the pro position on the locked motion: Is consciousness a fundamental feature of reality, or can physicalism explain conscious experience through higher-level descriptions of the physical world?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    },
+    {
+      "id": "con-primary",
+      "side": "con",
+      "type": "constructive-or-critical",
+      "description": "Advance the con position on the locked motion: Is consciousness a fundamental feature of reality, or can physicalism explain conscious experience through higher-level descriptions of the physical world?",
+      "successCriteria": "State a relevant claim, supply the needed inferential bridge or critical test, and calibrate the conclusion to the evidence presented in the sampled move."
+    }
+  ],
+  "sectionWeightsLockedBeforeScoring": true,
+  "moveImportanceLockedBeforeScoring": true,
+  "sections": [
+    {
+      "id": "goff-carroll-consciousness-fundamental-2023-benchmark-section-01",
+      "title": "Data and method",
+      "weightPercent": 100,
+      "weightRationale": "The targeted pilot contains one preselected benchmark section, so it receives the entire within-pilot weight. This is not a production debate weight.",
+      "sides": {
+        "pro": {
+          "moves": [
+            {
+              "id": "goff-carroll-consciousness-fundamental-2023-pro-benchmark-01",
+              "side": "pro",
+              "timestamp": "02:50",
+              "sourceSpan": {
+                "start": "02:50",
+                "end": "03:28"
+              },
+              "roleLabel": "Private data frame",
+              "sourceExcerpt": "how do we find out about reality how do we go about having our best guess as to what reality out there is like so I think I think we should um the way to address this is to ask the question what are the data for a theory of reality what are the data that any adequate theory of reality has to be able to account for now certainly uh among these are scientific data the data of public observation and experiments no question that any adequate theory of",
+              "sourceExcerptSha256": "18acaa2232279466567f840d5b04cecf31699326e2454dcdcff69c6898915b3e",
+              "sourceExcerptWordCount": 90,
+              "quoteKind": "quote",
+              "burdenIds": [
+                "pro-primary"
+              ],
+              "respondsToIds": [],
+              "importance": 3,
+              "speakerAttributionConfidence": "medium",
+              "audioChecked": false,
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 76,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 84
+                },
+                "rationale": "Goff sets a coherent adequacy test that includes public evidence and asks whether first-person facts also constrain theory, but the excerpt has not yet defended that addition."
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 78,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 84
+                },
+                "rationale": "The distinction between public data and possible further data is methodologically careful and highly relevant, though the private-data inference remains only introduced."
+              },
+              "adjudication": {
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 77,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 84
+                },
+                "rationale": "Passes differed on whether posing the private-data question itself counts as warrant. The midpoint credits immediate experience as a plausible datum while reserving stronger support for the later argument."
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 2,
+                "evidenceWarrant": 10,
+                "responsiveness": 2,
+                "relevanceBurden": 1,
+                "precisionClarity": 1,
+                "calibrationCharity": 0
+              },
+              "maxDimensionDelta": 10,
+              "passAScore": 79,
+              "passBScore": 82,
+              "scoreDelta": 3,
+              "requiresAdjudication": true,
+              "finalDimensions": {
+                "logicalCoherence": 83,
+                "evidenceWarrant": 73,
+                "responsiveness": 77,
+                "relevanceBurden": 85,
+                "precisionClarity": 85,
+                "calibrationCharity": 84
+              },
+              "finalScore": 80
+            }
+          ],
+          "passAScore": 79,
+          "passBScore": 82,
+          "score": 80
+        },
+        "con": {
+          "moves": [
+            {
+              "id": "goff-carroll-consciousness-fundamental-2023-con-benchmark-01",
+              "side": "con",
+              "timestamp": "25:05",
+              "sourceSpan": {
+                "start": "25:05",
+                "end": "25:42"
+              },
+              "roleLabel": "Weak emergence frame",
+              "sourceExcerpt": "another option now that works much better namely physicalism and the trick in physicalism to make sense of Consciousness is what is called weak emergence the idea is that the world appears to us in layers or levels there are multiple vocabularies multiple ways of describing the world that work equally well even though they're describing different levels of precision and coarse graining so you have the the classic example of a successful application of this comes from the 19th century and the success of thermodynamics and statistical mechanics we",
+              "sourceExcerptSha256": "471a8f68536a8299f489e97072dcc22d4ebe80168e451b86f073e4529880003a",
+              "sourceExcerptWordCount": 90,
+              "quoteKind": "quote",
+              "burdenIds": [
+                "con-primary"
+              ],
+              "respondsToIds": [],
+              "importance": 3,
+              "speakerAttributionConfidence": "medium",
+              "audioChecked": false,
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 82,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 80
+                },
+                "rationale": "Carroll gives a concrete weak-emergence model and a successful thermodynamic analogy, but the excerpt has not shown that consciousness follows the analogy."
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 84,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 82
+                },
+                "rationale": "The levels-of-description framework is precise and explanatorily relevant; its key residual burden is connecting that general framework to phenomenal consciousness."
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 2,
+                "evidenceWarrant": 2,
+                "responsiveness": 2,
+                "relevanceBurden": 1,
+                "precisionClarity": 2,
+                "calibrationCharity": 2
+              },
+              "maxDimensionDelta": 2,
+              "passAScore": 82,
+              "passBScore": 84,
+              "scoreDelta": 2,
+              "requiresAdjudication": false,
+              "finalDimensions": {
+                "logicalCoherence": 85,
+                "evidenceWarrant": 79,
+                "responsiveness": 83,
+                "relevanceBurden": 85,
+                "precisionClarity": 87,
+                "calibrationCharity": 81
+              },
+              "finalScore": 83
+            }
+          ],
+          "passAScore": 82,
+          "passBScore": 84,
+          "score": 83
+        }
+      }
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "passA": {
+        "value": 0,
+        "rationale": "A single sampled move cannot justify a full-debate burden-completion adjustment."
+      },
+      "passB": {
+        "value": 0,
+        "rationale": "A single sampled move cannot justify a full-debate burden-completion adjustment."
+      },
+      "delta": 0,
+      "requiresAdjudication": false,
+      "final": {
+        "value": 0,
+        "rationale": "Rounded mean of the two locked scoring passes; no adjudication threshold was triggered."
+      }
+    },
+    "con": {
+      "passA": {
+        "value": 0,
+        "rationale": "A single sampled move cannot justify a full-debate burden-completion adjustment."
+      },
+      "passB": {
+        "value": 0,
+        "rationale": "A single sampled move cannot justify a full-debate burden-completion adjustment."
+      },
+      "delta": 0,
+      "requiresAdjudication": false,
+      "final": {
+        "value": 0,
+        "rationale": "Rounded mean of the two locked scoring passes; no adjudication threshold was triggered."
+      }
+    }
+  },
+  "tagReview": {
+    "performedAfterScoring": true,
+    "candidates": [],
+    "scoringEffect": "none; accepted tags describe defects already represented in dimensions"
+  },
+  "aiExtensionReview": {
+    "performedAfterAssessment": true,
+    "status": "not-applicable-to-targeted-scoring-benchmark",
+    "noveltyMap": [],
+    "rationale": "This pilot tests rubric scoring mechanics on sampled moves, not full scorecard or AI Extension composition."
+  },
+  "overall": {
+    "pro": {
+      "passA": {
+        "weightedSectionMean": 79,
+        "burdenCompletionAdjustment": 0,
+        "score": 79
+      },
+      "passB": {
+        "weightedSectionMean": 82,
+        "burdenCompletionAdjustment": 0,
+        "score": 82
+      },
+      "weightedSectionMean": 80,
+      "burdenCompletionAdjustment": 0,
+      "score": 80,
+      "confidenceRange": {
+        "low": 77,
+        "high": 84
+      }
+    },
+    "con": {
+      "passA": {
+        "weightedSectionMean": 82,
+        "burdenCompletionAdjustment": 0,
+        "score": 82
+      },
+      "passB": {
+        "weightedSectionMean": 84,
+        "burdenCompletionAdjustment": 0,
+        "score": 84
+      },
+      "weightedSectionMean": 83,
+      "burdenCompletionAdjustment": 0,
+      "score": 83,
+      "confidenceRange": {
+        "low": 80,
+        "high": 86
+      }
+    }
+  },
+  "agreementAudit": {
+    "moveCount": 2,
+    "adjudicationCount": 1,
+    "adjustmentAdjudicationCount": 0,
+    "maxDimensionDelta": 10,
+    "maxMoveScoreDelta": 3,
+    "maxAdjustmentDelta": 0,
+    "adjudicationRate": 0.5
+  }
+}

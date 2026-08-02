@@ -1,6 +1,12 @@
 import { debates } from "../src/data/debates.js";
 import { getReferenceDefinition, referenceFromUrl } from "../src/data/references.js";
 import { existsSync, readFileSync } from "node:fs";
+import {
+  calculateV2Ledger,
+  calculateV21Ledger,
+  V2_RUBRIC,
+  V21_RUBRIC
+} from "./lib/reassessment-scoring.mjs";
 
 const errors = [];
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -9,7 +15,7 @@ const datePattern = /^\d{4}-\d{2}-\d{2}$/;
 const youtubePattern = /^https:\/\/(www\.)?youtube\.com\/watch\?v=[A-Za-z0-9_-]+/;
 const legacyAssessmentModel = "GPT 5.5 Extra High";
 const currentAssessmentModel = "5.6 Terra Extra High";
-const reassessmentRubric = "Slugfester Reassessment Rubric v2";
+const reassessmentRubrics = new Set([V2_RUBRIC, V21_RUBRIC]);
 const terraAssessmentFirstDebate = 131;
 const explicitTopicCategoryFirstDebate = 190;
 const topicCategoryIds = new Set([
@@ -92,11 +98,8 @@ function requireArray(object, key, path, options = {}) {
   return value;
 }
 
-function roundedWeightedScore(values) {
-  return Math.round(values.reduce((total, [value, weight]) => total + value * weight, 0));
-}
-
 function validateReassessmentLedger(debate, path) {
+  const isV21 = debate.assessmentRubric === V21_RUBRIC;
   const ledgerUrl = new URL(
     `../docs/assessment-ledgers/${encodeURIComponent(debate.id)}.json`,
     import.meta.url
@@ -121,20 +124,21 @@ function validateReassessmentLedger(debate, path) {
   if (ledger.model !== debate.assessmentModel) {
     addError([...path, "assessmentModel"], "must match the saved assessment ledger model");
   }
-  if (ledger.rubric !== reassessmentRubric) {
-    addError([...path, "assessmentRubric"], `ledger rubric must be ${reassessmentRubric}`);
+  const ledgerRubric = isV21 ? ledger.rubricVersion : ledger.rubric;
+  if (ledgerRubric !== debate.assessmentRubric) {
+    addError([...path, "assessmentRubric"], `ledger rubric must be ${debate.assessmentRubric}`);
+  }
+  if (isV21 && ledger.calibrationOnly !== false) {
+    addError([...path, "assessmentRubric"], "published v2.1 ledgers must set calibrationOnly to false");
   }
 
-  const dimensions = [
-    ["logicalCoherence", 0.25],
-    ["evidenceWarrant", 0.2],
-    ["responsiveness", 0.2],
-    ["relevanceBurden", 0.15],
-    ["precisionClarity", 0.1],
-    ["calibrationCharity", 0.1]
-  ];
-  const centralityTotals = { pro: 0, con: 0 };
-  let totalCentrality = 0;
+  let calculated;
+  try {
+    calculated = isV21 ? calculateV21Ledger(ledger) : calculateV2Ledger(ledger);
+  } catch (error) {
+    addError([...path, "assessmentRubric"], `ledger calculation failed: ${error.message}`);
+    return;
+  }
 
   if (!Array.isArray(ledger.sections) || ledger.sections.length !== debate.sections?.length) {
     addError([...path, "sections"], "must have the same section count as the assessment ledger");
@@ -147,16 +151,12 @@ function validateReassessmentLedger(debate, path) {
     if (ledgerSection.title !== section?.title) {
       addError([...sectionPath, "title"], "must match the assessment ledger section title and order");
     }
-    if (![1, 2, 3].includes(ledgerSection.centrality)) {
-      addError([...sectionPath, "centrality"], "ledger centrality must be 1, 2, or 3");
-      return;
-    }
-    totalCentrality += ledgerSection.centrality;
-
     ["pro", "con"].forEach((sideKey) => {
       const ledgerSide = ledgerSection.sides?.[sideKey];
+      const calculatedSide = calculated.sections[sectionIndex].sides[sideKey];
       const sidePath = [...sectionPath, sideKey];
-      const publishedMoves = section?.exchanges?.map((exchange) => exchange?.[sideKey]) || [];
+      const publishedMoves =
+        section?.exchanges?.map((exchange) => exchange?.[sideKey]).filter(Boolean) || [];
       if (!ledgerSide || !Array.isArray(ledgerSide.moves)) {
         addError(sidePath, "must exist in the assessment ledger with a moves array");
         return;
@@ -166,40 +166,28 @@ function validateReassessmentLedger(debate, path) {
         return;
       }
 
-      const moveScores = ledgerSide.moves.map((move, moveIndex) => {
+      ledgerSide.moves.forEach((move, moveIndex) => {
         const movePath = [...sidePath, "moves", String(moveIndex)];
-        const computed = roundedWeightedScore(
-          dimensions.map(([key, weight]) => {
-            const value = move.dimensions?.[key];
-            if (!Number.isInteger(value) || value < 0 || value > 100) {
-              addError([...movePath, "dimensions", key], "must be an integer from 0 to 100");
-              return [0, weight];
-            }
-            return [value, weight];
-          })
-        );
-        if (move.score !== computed || publishedMoves[moveIndex]?.score !== computed) {
+        const computedMove = calculatedSide.moves[moveIndex];
+        const computed = isV21 ? computedMove.finalScore : computedMove.score;
+        const stored = isV21 ? move.finalScore : move.score;
+        if (stored !== computed || publishedMoves[moveIndex]?.score !== computed) {
           addError([...movePath, "score"], `computed score ${computed} must match ledger and debate`);
         }
-        return computed;
-      });
-
-      ["coverage", "burdenProgress", "coherence"].forEach((key) => {
-        if (!Number.isInteger(ledgerSide[key]) || ledgerSide[key] < 0 || ledgerSide[key] > 100) {
-          addError([...sidePath, key], "must be an integer from 0 to 100");
+        if (isV21 && publishedMoves[moveIndex]?.ledgerMoveId !== move.id) {
+          addError(
+            [...movePath, "id"],
+            "published move ledgerMoveId must match the stable v2.1 ledger move ID"
+          );
         }
       });
-      const moveMean = moveScores.reduce((total, score) => total + score, 0) / moveScores.length;
-      const computedSectionScore = roundedWeightedScore([
-        [moveMean, 0.7],
-        [ledgerSide.coverage, 0.1],
-        [ledgerSide.burdenProgress, 0.1],
-        [ledgerSide.coherence, 0.1]
-      ]);
-      if (ledgerSide.score !== computedSectionScore || section?.score?.[sideKey] !== computedSectionScore) {
-        addError([...sidePath, "score"], `computed section score ${computedSectionScore} must match ledger and debate`);
+
+      if (!isV21 && ledgerSide.moveMean !== calculatedSide.moveMean) {
+        addError([...sidePath, "moveMean"], `must equal computed move mean ${calculatedSide.moveMean}`);
       }
-      centralityTotals[sideKey] += computedSectionScore * ledgerSection.centrality;
+      if (ledgerSide.score !== calculatedSide.score || section?.score?.[sideKey] !== calculatedSide.score) {
+        addError([...sidePath, "score"], `computed section score ${calculatedSide.score} must match ledger and debate`);
+      }
     });
   });
 
@@ -210,26 +198,25 @@ function validateReassessmentLedger(debate, path) {
       addError(overallPath, "must exist in the assessment ledger");
       return;
     }
-    ["caseCompletion", "rebuttalResilience", "globalCalibration"].forEach((key) => {
-      if (!Number.isInteger(ledgerOverall[key]) || ledgerOverall[key] < 0 || ledgerOverall[key] > 100) {
-        addError([...overallPath, key], "must be an integer from 0 to 100");
-      }
-    });
-    const weightedSectionMean = centralityTotals[sideKey] / totalCentrality;
-    const computedOverall = roundedWeightedScore([
-      [weightedSectionMean, 0.7],
-      [ledgerOverall.caseCompletion, 0.12],
-      [ledgerOverall.rebuttalResilience, 0.1],
-      [ledgerOverall.globalCalibration, 0.08]
-    ]);
+    const calculatedOverall = calculated.overall[sideKey];
+    if (ledgerOverall.weightedSectionMean !== calculatedOverall.weightedSectionMean) {
+      addError(
+        [...overallPath, "weightedSectionMean"],
+        `must equal computed weighted section mean ${calculatedOverall.weightedSectionMean}`
+      );
+    }
     if (
-      ledgerOverall.score !== computedOverall ||
-      debate.overall?.[sideKey]?.score !== computedOverall ||
-      debate.score?.[sideKey] !== computedOverall
+      ledgerOverall.score !== calculatedOverall.score ||
+      debate.overall?.[sideKey]?.score !== calculatedOverall.score ||
+      debate.score?.[sideKey] !== calculatedOverall.score
     ) {
-      addError([...overallPath, "score"], `computed overall score ${computedOverall} must match ledger and debate`);
+      addError([...overallPath, "score"], `computed overall score ${calculatedOverall.score} must match ledger and debate`);
     }
   });
+
+  if (isV21 && !debate.logicalExtension) {
+    addError([...path, "logicalExtension"], "v2.1 production assessments require an AI Extension");
+  }
 }
 
 function validateTag(tag, path) {
@@ -263,7 +250,7 @@ function validateTag(tag, path) {
   }
 }
 
-function validateArgument(argument, path) {
+function validateArgument(argument, path, { requireLedgerMoveId = false } = {}) {
   if (!isPlainObject(argument)) {
     addError(path, "must be an object");
     return;
@@ -273,6 +260,7 @@ function validateArgument(argument, path) {
   requireString(argument, "role", path, { maxWords: 5 });
   requireString(argument, "words", path, { minWords: 8, maxWords: 55 });
   requireScore(argument, "score", path);
+  if (requireLedgerMoveId) requireString(argument, "ledgerMoveId", path);
 
   const critique = requireString(argument, "critique", path);
   const critiqueWords = wordCount(critique);
@@ -419,8 +407,11 @@ function validateDebate(debate, index) {
   if (hasReassessmentRubric) {
     const rubric = requireString(debate, "assessmentRubric", path);
     requireString(debate, "assessmentModel", path);
-    if (rubric !== reassessmentRubric) {
-      addError([...path, "assessmentRubric"], `must be ${reassessmentRubric}`);
+    if (!reassessmentRubrics.has(rubric)) {
+      addError(
+        [...path, "assessmentRubric"],
+        `must be ${V2_RUBRIC} or ${V21_RUBRIC}`
+      );
     }
   } else if (debateNumber >= terraAssessmentFirstDebate) {
     const assessmentModel = requireString(debate, "assessmentModel", path);
@@ -505,14 +496,30 @@ function validateDebate(debate, index) {
             return;
           }
 
-          validateArgument(exchange.pro, [...exchangePath, "pro"]);
-          validateArgument(exchange.con, [...exchangePath, "con"]);
+          if (debate.assessmentRubric === V21_RUBRIC) {
+            if (!exchange.pro && !exchange.con) {
+              addError(exchangePath, "must contain at least one v2.1 argument move");
+            }
+            if (exchange.pro) {
+              validateArgument(exchange.pro, [...exchangePath, "pro"], {
+                requireLedgerMoveId: true
+              });
+            }
+            if (exchange.con) {
+              validateArgument(exchange.con, [...exchangePath, "con"], {
+                requireLedgerMoveId: true
+              });
+            }
+          } else {
+            validateArgument(exchange.pro, [...exchangePath, "pro"]);
+            validateArgument(exchange.con, [...exchangePath, "con"]);
+          }
         }
       );
     }
   );
 
-  if (hasReassessmentRubric && debate.assessmentRubric === reassessmentRubric) {
+  if (hasReassessmentRubric && reassessmentRubrics.has(debate.assessmentRubric)) {
     validateReassessmentLedger(debate, path);
   }
 }

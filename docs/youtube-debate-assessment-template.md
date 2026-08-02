@@ -69,17 +69,17 @@ Design constraints:
 5. Set `topicCategory` to the exact primary category ID from `topicCategoryDefinitions` in `src/app.js`. Every new debate from `190` onward requires this field; if the debate exposes a genuine new recurring theme, update that taxonomy rather than letting it fall into the fallback category.
 6. Extract short representative quotes for each side.
 7. Segment the debate into 4-7 topical sections.
-8. For each section, align 1-3 exchanges by topic rather than by every interruption.
+8. For each section, align 1-3 exchange rows by topic rather than by every interruption. Under v2.1, either side may be omitted from a row when no genuine counterpart exists; the renderer leaves the opposite cell empty.
 9. Write each `argument.words` as actual words or a tight transcript-grounded condensation.
 10. Record the exact model that performed the assessment. Historical scorecards retain their original attribution; never relabel old work.
-11. For a v2 reassessment, set `assessmentRubric: "Slugfester Reassessment Rubric v2"`, create `docs/assessment-ledgers/<debate-id>.json`, and score every move's six dimensions before calculating any totals.
-12. Choose shared section centralities before calculating either side's overall score, then run the ledger calculator without manual overrides.
-13. Write each critique at 105-130 words.
-14. Add fallacy or bias tags only when they explain a real weakness, and include a context note for each tag.
-15. Write Overall Commentary from the centrality-weighted record.
-16. Add an AI Extension with a strengthened final argument and genuinely new reinforcing arguments for both sides.
-17. Run `npm run seo`.
-18. Run `npm run check`.
+11. For a new reassessment, follow [`assessment-workflow-v2.1.md`](assessment-workflow-v2.1.md): build a source manifest and blind packet, lock burdens, argument inventory, move importance, and section weights, then run two isolated scoring passes.
+12. Save calibration ledgers under `docs/calibration/v2.1/ledgers/`. Publish to `docs/assessment-ledgers/` and set `assessmentRubric: "Slugfester Reassessment Rubric v2.1"` only after a complete reassessment is explicitly promoted.
+13. Run the repository calculator without manual overrides and complete any threshold-triggered adjudications.
+14. Write each critique at 105-130 words.
+15. Review fallacy or bias tags only after scoring; add them only when they explain a material weakness already represented in the dimensions.
+16. Write Overall Commentary from the locked section-weighted record.
+17. Add the visibly AI-authored accordion and record a novelty map for its strengthened and new arguments.
+18. Run `npm run seo` and `npm run check`.
 
 Topic categorization:
 
@@ -95,8 +95,8 @@ Use this shape when adding an object to `src/data/debates.js`.
 {
   id: "speaker-a-speaker-b-topic-year",
   number: "131",
-  assessmentModel: "5.6 Terra Extra High",
-  assessmentRubric: "Slugfester Reassessment Rubric v2", // Required for v2 reassessments.
+  assessmentModel: "MODEL ACTUALLY USED",
+  assessmentRubric: "Slugfester Reassessment Rubric v2.1", // Only after a full v2.1 production promotion.
   title: "Speaker A vs Speaker B: Debate Title",
   label: "Concise topic label for the card title and supplementary chips",
   topicCategory: "science-design",
@@ -108,7 +108,7 @@ Use this shape when adding an object to `src/data/debates.js`.
   sourceNote:
     "Built from [transcript source]. Analytical summaries are condensed; direct quotes are kept short.",
   scoringNote:
-    "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    "Scores are AI-generated estimates under Slugfester Reassessment Rubric v2.1. Move, section, and overall totals are reproduced from a versioned two-pass ledger with documented adjudication.",
   quotes: {
     pro: {
       text: "Short representative quote",
@@ -146,6 +146,7 @@ Use this shape when adding an object to `src/data/debates.js`.
       exchanges: [
         {
           pro: {
+            ledgerMoveId: "stable-pro-move-id", // Required for a v2.1 reassessment.
             time: "00:00",
             role: "Argument role",
             words: "Transcript-grounded claim or rebuttal.",
@@ -162,6 +163,7 @@ Use this shape when adding an object to `src/data/debates.js`.
             ]
           },
           con: {
+            ledgerMoveId: "stable-con-move-id", // Required for a v2.1 reassessment.
             time: "00:00",
             role: "Argument role",
             words: "Transcript-grounded claim or rebuttal.",
@@ -263,8 +265,8 @@ Use this shape when adding an object to `src/data/debates.js`.
 - `scoringNote` explicitly says the scores are AI-generated.
 - The scoring-note band states the model actually used: `GPT 5.5 Extra High` through Debate `130`, or `5.6 Terra Extra High` from Debate `131` onward.
 - New debate objects from `131` onward explicitly include `assessmentModel: "5.6 Terra Extra High"`.
-- A v2 reassessment explicitly records its actual model, rubric version, and saved scoring ledger.
-- Every v2 published score matches the deterministic ledger formula in `debate-critique-process.md`.
+- A reassessment explicitly records its actual model, rubric version, and saved scoring ledger.
+- Every published reassessment score matches the deterministic formula for its ledger version.
 - The AI Extension is immediately after Overall Commentary, default-collapsed, keyboard-operable, and explicitly AI-authored.
 - LogFall links are used only for fallacies.
 - CogBias links are used only for cognitive biases.
