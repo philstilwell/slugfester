@@ -1327,38 +1327,6 @@ function renderRankings() {
 
       ${renderRankingComparison(state)}
 
-      <section class="ranking-tool" aria-label="Ranking controls">
-        <form class="ranking-form">
-          <span class="ranking-control">
-            <label for="ranking-topic">Topic focus</label>
-            <select id="ranking-topic" name="topic">
-              ${renderRankingOptions(topicOptions, state.topic)}
-            </select>
-          </span>
-          <span class="ranking-control">
-            <label for="ranking-minimum">Minimum debates</label>
-            <select id="ranking-minimum" name="minimum">
-              ${rankingMinimumOptions
-                .map(
-                  (minimum) =>
-                    `<option value="${minimum}"${minimum === state.minimum ? " selected" : ""}>${minimum}+ appearances</option>`
-                )
-                .join("")}
-            </select>
-          </span>
-          <span class="ranking-control">
-            <label for="ranking-sort">Sort by</label>
-            <select id="ranking-sort" name="sort">
-              ${renderRankingOptions(rankingSortOptions, state.sort)}
-            </select>
-          </span>
-          <div class="ranking-form-actions">
-            <button class="button primary" type="submit">Apply</button>
-            ${hasFilters ? `<button class="button secondary" type="button" data-clear-rankings>Reset</button>` : ""}
-          </div>
-        </form>
-      </section>
-
       <section class="rankings-list-section" aria-labelledby="rankings-list-heading">
         <div class="section-heading">
           <div>
@@ -1367,6 +1335,37 @@ function renderRankings() {
           </div>
           <p class="rankings-note">${rankings.length ? `Showing ${rankings.length} interlocutors from ${filteredDebates.length} matching scorecards.` : "No interlocutors meet the current minimum."}</p>
         </div>
+        <section class="ranking-tool" aria-label="Ranking controls">
+          <form class="ranking-form">
+            <span class="ranking-control">
+              <label for="ranking-topic">Topic focus</label>
+              <select id="ranking-topic" name="topic">
+                ${renderRankingOptions(topicOptions, state.topic)}
+              </select>
+            </span>
+            <span class="ranking-control">
+              <label for="ranking-minimum">Minimum debates</label>
+              <select id="ranking-minimum" name="minimum">
+                ${rankingMinimumOptions
+                  .map(
+                    (minimum) =>
+                      `<option value="${minimum}"${minimum === state.minimum ? " selected" : ""}>${minimum}+ appearances</option>`
+                  )
+                  .join("")}
+              </select>
+            </span>
+            <span class="ranking-control">
+              <label for="ranking-sort">Sort by</label>
+              <select id="ranking-sort" name="sort">
+                ${renderRankingOptions(rankingSortOptions, state.sort)}
+              </select>
+            </span>
+            <div class="ranking-form-actions">
+              <button class="button primary" type="submit">Apply</button>
+              ${hasFilters ? `<button class="button secondary" type="button" data-clear-rankings>Reset</button>` : ""}
+            </div>
+          </form>
+        </section>
         ${
           rankings.length
             ? `<ol class="ranking-list">${rankings.map((person) => renderRankingCard(person, rankingTagMaximum)).join("")}</ol>`
