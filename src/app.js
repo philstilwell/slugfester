@@ -2236,6 +2236,7 @@ function renderDebate(id) {
 
       ${debate.sections.map((section) => renderSection(section, debate)).join("")}
       ${renderOverall(debate)}
+      ${renderLogicalExtension(debate)}
     </main>
   `);
 }
@@ -2514,6 +2515,79 @@ function renderOverallSide(side, overall, tone, debateId) {
       <ul>
         ${overall.blunders.map((blunder) => renderBlunder(blunder, debateId)).join("")}
       </ul>
+    </article>
+  `;
+}
+
+function renderLogicalExtension(debate) {
+  if (!debate.logicalExtension) return "";
+
+  return `
+    <section class="logical-extension" aria-labelledby="logical-extension-heading">
+      <div class="section-heading logical-extension-heading">
+        <div>
+          <p class="eyebrow">After the final bell</p>
+          <h2 id="logical-extension-heading">Logical extension</h2>
+        </div>
+        <p class="section-summary">The strongest version of where each case could go next.</p>
+      </div>
+      <p class="logical-extension-intro">
+        These are Slugfester's steelmen, not quotations or claims that the speakers made in this exact form. “Unassailable” here means rebuilt to withstand the clearest objections in this exchange—not immune from rational dispute.
+      </p>
+      <div class="logical-extension-grid">
+        ${renderLogicalExtensionSide(debate.sides.pro, debate.logicalExtension.pro, "teal")}
+        ${renderLogicalExtensionSide(debate.sides.con, debate.logicalExtension.con, "coral")}
+      </div>
+    </section>
+  `;
+}
+
+function renderLogicalExtensionSide(side, extension, tone) {
+  const finalArgument = extension.finalArgument;
+
+  return `
+    <article class="logical-extension-side ${tone}">
+      <header class="logical-extension-side-heading">
+        <span>${escapeHtml(side.name)}</span>
+        <h3>${escapeHtml(side.speaker)}</h3>
+      </header>
+
+      <section class="extended-final-argument">
+        <p class="extension-label">Strengthened final argument</p>
+        <p class="extension-thesis">${escapeHtml(finalArgument.thesis)}</p>
+        <ol class="extension-premises">
+          ${finalArgument.premises
+            .map(
+              (premise, index) => `
+                <li>
+                  <span>Premise ${index + 1}</span>
+                  <p>${escapeHtml(premise)}</p>
+                </li>
+              `
+            )
+            .join("")}
+        </ol>
+        <div class="extension-conclusion">
+          <span>Conclusion</span>
+          <p>${escapeHtml(finalArgument.conclusion)}</p>
+        </div>
+      </section>
+
+      <section class="new-arguments">
+        <h4>New reinforcing arguments</h4>
+        <div class="new-argument-list">
+          ${extension.newArguments
+            .map(
+              (argument) => `
+                <article class="new-argument">
+                  <h5>${escapeHtml(argument.title)}</h5>
+                  <p>${escapeHtml(argument.text)}</p>
+                </article>
+              `
+            )
+            .join("")}
+        </div>
+      </section>
     </article>
   `;
 }

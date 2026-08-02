@@ -205,6 +205,54 @@ function validateOverall(overall, path) {
   });
 }
 
+function validateLogicalExtensionSide(extension, path) {
+  if (!isPlainObject(extension)) {
+    addError(path, "must be an object");
+    return;
+  }
+
+  const finalArgument = extension.finalArgument;
+  const finalArgumentPath = [...path, "finalArgument"];
+  if (!isPlainObject(finalArgument)) {
+    addError(finalArgumentPath, "must be an object");
+  } else {
+    requireString(finalArgument, "thesis", finalArgumentPath, { minWords: 12 });
+    requireArray(finalArgument, "premises", finalArgumentPath, {
+      minLength: 4,
+      maxLength: 6
+    }).forEach((premise, index) => {
+      if (typeof premise !== "string" || wordCount(premise) < 12) {
+        addError([...finalArgumentPath, "premises", String(index)], "must contain at least 12 words");
+      }
+    });
+    requireString(finalArgument, "conclusion", finalArgumentPath, { minWords: 15 });
+  }
+
+  requireArray(extension, "newArguments", path, { minLength: 2, maxLength: 4 }).forEach(
+    (argument, index) => {
+      const argumentPath = [...path, "newArguments", String(index)];
+      if (!isPlainObject(argument)) {
+        addError(argumentPath, "must be an object");
+        return;
+      }
+
+      requireString(argument, "title", argumentPath, { minWords: 2, maxWords: 8 });
+      requireString(argument, "text", argumentPath, { minWords: 45, maxWords: 130 });
+    }
+  );
+}
+
+function validateLogicalExtension(extension, path) {
+  if (!isPlainObject(extension)) {
+    addError(path, "must be an object");
+    return;
+  }
+
+  ["pro", "con"].forEach((sideKey) => {
+    validateLogicalExtensionSide(extension[sideKey], [...path, sideKey]);
+  });
+}
+
 function validateDebate(debate, index) {
   const path = ["debates", String(index)];
   if (!isPlainObject(debate)) {
@@ -281,6 +329,10 @@ function validateDebate(debate, index) {
     validateQuote(debate.quotes?.[sideKey], [...path, "quotes", sideKey]);
     validateOverall(debate.overall?.[sideKey], [...path, "overall", sideKey]);
   });
+
+  if (debate.logicalExtension !== undefined) {
+    validateLogicalExtension(debate.logicalExtension, [...path, "logicalExtension"]);
+  }
 
   requireArray(debate, "sections", path, { minLength: 4, maxLength: 7 }).forEach(
     (section, sectionIndex) => {

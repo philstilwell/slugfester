@@ -564,6 +564,72 @@ export const debates = [
           }
         ]
       }
+    },
+    logicalExtension: {
+      pro: {
+        finalArgument: {
+          thesis:
+            "Christian theism should be judged by its explanatory performance across the total evidence, with suffering counted as genuine counterevidence rather than explained away in advance.",
+          premises: [
+            "A rational worldview comparison asks which live hypothesis best anticipates the whole evidential pattern, not whether either hypothesis can be made compatible with each datum after the fact.",
+            "A necessarily existent rational source gives one unified explanation for a contingent universe, its mathematically intelligible and life-permitting order, the reliability of rational inquiry, and the apparent objectivity of moral obligation. Naturalistic accounts may explain parts of that conjunction, but they do not obviously make the conjunction less surprising without adding several independent assumptions.",
+            "The historical case for Jesus' resurrection should then be treated as discriminating evidence rather than as another generic pointer to God: the relevant question is whether the burial and postmortem-appearance traditions, the disciples' transformation, and the rise of resurrection belief are more probable given divine vindication of Jesus than given the strongest specific natural alternatives.",
+            "The scale and distribution of sentient suffering lower the probability of Christian theism. They do not reduce it to zero, however, if a stable law-governed world, significant creaturely agency, dependable embodied life, divine participation in suffering, and eventual restoration supply independently motivated reasons to expect both vulnerability and redemption.",
+            "Unknown divine reasons may block a claim of logical inconsistency, but they should not carry the public case. Theism earns its conclusion only if its positive evidence remains stronger than suffering, hiddenness, and religious diversity are as counterevidence."
+          ],
+          conclusion:
+            "If that cumulative comparison succeeds, the warranted conclusion is not that every instance of suffering has been explained. It is that Christian theism remains the best total explanation, while taking on a serious obligation to show how its account of creation and restoration makes the otherwise troubling evidence less unexpected."
+        },
+        newArguments: [
+          {
+            title: "The fit between reason and reality",
+            text:
+              "Science presupposes more than recurring physical patterns: it relies on abstract mathematics, truth-directed inference, and normative rules distinguishing good reasoning from bad. A purposive rational source predicts that minds, logical norms, and the world's deep structure will be mutually accessible. Evolution can explain why broadly reliable cognition aids survival, but survival alone does not transparently explain our access to highly abstract mathematics, modal truths, or norms that remain binding when error would be advantageous. This does not deductively prove God; it gives theism a potentially powerful likelihood advantage if the fit is established without assuming the reliability it seeks to explain."
+          },
+          {
+            title: "A morally constrained theodicy",
+            text:
+              "The strongest theistic response to suffering would stop appealing to bare mystery and state constraints any adequate divine reason must satisfy. A good God could permit only harms inseparable from valuable law-governed embodiment or consequential agency, would oppose rather than merely use suffering, would give every sentient victim compensating restoration, and would not permit gratuitous excess once those goods were secured. Christianity can connect those constraints to incarnation, resurrection, and a renewed creation. This makes the view more vulnerable to evidence, but also more explanatory: it identifies what theism should lead us to expect and prevents 'God has unknown reasons' from immunizing every possible world."
+          },
+          {
+            title: "Resurrection as a risky discriminator",
+            text:
+              "Craig's historical argument becomes substantially stronger if it names the best rival models, assigns no premise merely by scholarly headcount, and asks what each model predicts. Legend, bereavement experience, cognitive dissonance, mistaken identity, and deliberate invention should be tested against early testimony, group-appearance claims, hostile or skeptical converts, the Jewish context, and the specific proclamation of bodily resurrection. The Christian hypothesis gains force only where it predicts evidence that rivals do not, and it must absorb silence, contradiction, and source dependence as costs. Framed this way, the resurrection is neither a shortcut around history nor a free-standing miracle claim, but the most specific potential bridge from generic theism to Christianity."
+          }
+        ]
+      },
+      con: {
+        finalArgument: {
+          thesis:
+            "The debate does not require proving that no deity exists; it requires asking whether the observed world is more expected under Craig's Christian theism than under its serious alternatives.",
+          premises: [
+            "A perfectly powerful, knowledgeable, and loving creator who seeks relationship with persons gives us reason to expect a world whose worst suffering is intelligibly connected to necessary goods, whose moral opportunities do not depend on massive prehuman agony, and whose sincere seekers can reliably recognize the creator's invitation.",
+            "What we observe instead includes hundreds of millions of years of predation, disease, parasitism, starvation, and extinction before human moral agency; radically unequal suffering across species and circumstances; apparently nonresistant nonbelief; and sincere but incompatible religious experiences.",
+            "That pattern is not logically inconsistent with Christian theism, but it is less surprising given indifferent biological and historical processes. The evidential issue is comparative probability, so merely proposing a possible unknown divine reason does not neutralize the likelihood difference.",
+            "Craig's positive arguments do not clearly reverse that difference. A first temporal boundary would not by itself identify a personal, omnipotent, morally perfect, or triune cause; fine-tuning depends on unsettled probability measures and comparison classes; objective morality does not uniquely entail a divine foundation; and private spiritual witness cannot publicly distinguish Christianity from incompatible revelations.",
+            "The resurrection case must bear the final Christian-specific burden, yet it reaches us through sparse ancient sources shaped by committed communities. Unless resurrection predicts the surviving evidence substantially better than the strongest combinations of ordinary historical processes, its extraordinary conclusion remains underdetermined."
+          ],
+          conclusion:
+            "The proportionate conclusion is therefore suspension of belief in Craig's Christian theism, and perhaps a comparative preference for naturalism, until the positive arguments become more discriminating and theism explains why a loving creator's world so closely resembles one produced without providential concern."
+        },
+        newArguments: [
+          {
+            title: "Nonresistant nonbelief",
+            text:
+              "A perfectly loving God would seek reciprocal relationship with every person capable of it, and such a relationship normally requires that the person be able to believe the other exists. Yet some reflective, morally serious people appear open to relationship with God and still remain unconvinced. Freedom does not require evidential ambiguity: knowing that another person exists does not compel love or obedience. If even one genuinely nonresistant nonbeliever exists for a significant period, that fact is unexpected on perfect divine love but unsurprising on naturalism or a nonrelational deity. The argument targets not every possible god, but precisely the personal Christian God defended in the debate."
+          },
+          {
+            title: "The widening identification gap",
+            text:
+              "Each step from cosmology to Christianity introduces properties the preceding evidence does not entail. Even granting a beginning, the cause might be impersonal, finite, morally indifferent, one among several causes, or governed by unknown laws. Fine-tuning may add apparent purposiveness without establishing goodness; moral realism may add normative facts without identifying their source; and a resurrection claim may suggest intervention without validating an entire canon or doctrine. The gap is cumulative: combining arguments does not automatically combine their conclusions unless the same candidate independently predicts every datum better than rivals do. Requiring an explicit bridge at each stage prevents generic mystery from quietly acquiring the attributes of the Christian God."
+          },
+          {
+            title: "Explanatory flexibility as a liability",
+            text:
+              "A hypothesis gains evidential support by ruling out possibilities, not merely by accommodating whatever occurs. In this debate, order supports God, apparent disorder is assigned to creaturely freedom or unknown goods, divine visibility supports revelation, and divine hiddenness protects freedom or soul-making. If theism can absorb life or sterility, pleasure or agony, clarity or ambiguity with equal ease, the observed outcome carries little likelihood advantage for it. A stronger skeptical test would require the theist to state in advance which worlds Christian theism makes unlikely and why. Without such constraints, the cumulative case risks adding flexible explanations rather than independent evidence, while natural mechanisms retain more specific expectations about suffering, diversity, and belief formation."
+          }
+        ]
+      }
     }
   },
   {
