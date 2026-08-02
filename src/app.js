@@ -2523,16 +2523,16 @@ function renderLogicalExtension(debate) {
   if (!debate.logicalExtension) return "";
 
   return `
-    <section class="logical-extension" aria-labelledby="logical-extension-heading">
+    <section class="logical-extension" aria-labelledby="ai-extension-heading">
       <div class="section-heading logical-extension-heading">
         <div>
-          <p class="eyebrow">After the final bell</p>
-          <h2 id="logical-extension-heading">Logical extension</h2>
+          <p class="eyebrow">AI contribution</p>
+          <h2 id="ai-extension-heading">AI Extension</h2>
         </div>
-        <p class="section-summary">The strongest version of where each case could go next.</p>
+        <p class="section-summary">An AI-generated steelman of where each case could go next.</p>
       </div>
       <p class="logical-extension-intro">
-        These are Slugfester's steelmen, not quotations or claims that the speakers made in this exact form. “Unassailable” here means rebuilt to withstand the clearest objections in this exchange—not immune from rational dispute.
+        This section is an AI-generated contribution from Slugfester—not a transcript summary, a quotation, or a claim that either speaker made these arguments in this form. The AI extends and strengthens both positions independently. “Unassailable” here means rebuilt to withstand the clearest objections in this exchange—not immune from rational dispute.
       </p>
       <div class="logical-extension-grid">
         ${renderLogicalExtensionSide(debate.sides.pro, debate.logicalExtension.pro, "teal")}
