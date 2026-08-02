@@ -65141,6 +65141,261 @@ export const debates = [
       }
     }
   },
+  {
+    id: "swinburne-millican-does-god-exist-2022",
+    number: "194",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Richard Swinburne vs Peter Millican: Does God Exist?",
+    label: "Simplicity, cosmic order, and evil",
+    topicCategory: "god-theism-atheism",
+    date: "2026-08-01",
+    duration: "1 hr 8 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=FcNR4vJdcE4",
+    motion:
+      "Is God the simplest and most probable explanation of the universe and its general features?",
+    summary:
+      "Swinburne presents one unlimited good person as the simplest explanation of laws, life, and consciousness; Millican challenges that simplicity, its predictive precision, and its fit with suffering.",
+    sourceNote:
+      "Built from the English auto-generated YouTube caption track. Captions were checked against the recording and lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "the simplest and so most probable explanation",
+        context:
+          "Swinburne applies scientific-style explanatory criteria to a divine person who accounts for the universe's most general features."
+      },
+      con: {
+        text: "it's so general that it's hard actually to say what would count against it",
+        context:
+          "Millican argues that descriptive economy cannot confer probability when divine purposes flex to accommodate almost any world."
+      }
+    },
+    sides: {
+      pro: {
+        name: "God is the best explanation",
+        speaker: "Richard Swinburne",
+        color: "teal"
+      },
+      con: {
+        name: "The evidence does not support God",
+        speaker: "Peter Millican",
+        color: "coral"
+      }
+    },
+    score: { pro: 87, con: 94 },
+    sections: [
+      {
+        title: "Personal explanation and simplicity",
+        timebox: "2:36-14:28",
+        score: { pro: 93, con: 91 },
+        exchanges: [
+          {
+            pro: {
+              time: "3:01",
+              role: "Unified personal explanation",
+              words:
+                "Swinburne distinguishes inanimate explanations by prior states and laws from personal explanations by powers, beliefs, and purposes, then proposes one divine person as the ultimate source.",
+              score: 93,
+              critique:
+                "Swinburne builds a clear abductive framework rather than offering a deductive proof. Personal explanation is undeniably part of ordinary inquiry, and his robbery example shows why a unified agent hypothesis can beat a conjunction of disconnected contrivances. Applying shared criteria—expectation of evidence, comparative surprise, simplicity, and background fit—makes theism answerable to familiar reasoning. The leap is from embodied agents whose powers and intentions are independently evidenced to an unobserved cosmic person with unlimited causal reach. Calling that one entity does reduce entity count, but ontological complexity also concerns capacities, cognitive structure, and the mapping from purposes to outcomes. Swinburne needs more than grammatical singularity to show that divine agency is intrinsically simpler than fundamental laws or other ultimate structures. Still, the explanatory proposal is systematic and substantive.",
+              tags: []
+            },
+            con: {
+              time: "28:38",
+              role: "False explanatory dichotomy",
+              words:
+                "Millican challenges the personal-inanimate division with purposive algorithms and evolved functions, warning that apparent goal direction need not originate in a conscious agent.",
+              score: 91,
+              critique:
+                "Millican correctly shows that explanatory vocabulary operates at several levels. A chess program's move is intelligible through an algorithm and objective without attributing beliefs to the machine, while biological functions arise through selection. These examples undercut any inference from purposive description directly to a personal source. Swinburne replies that such functions ultimately reduce to causal histories and thus remain inanimate, which preserves his taxonomy if it is stipulated broadly. The exchange is therefore partly classificatory: algorithmic and evolutionary explanations may be higher-level inanimate accounts rather than a genuinely third ultimate kind. Millican's deeper point survives. Because local purpose can emerge without personal intention, the cosmos's intelligibility or life-directed laws do not automatically favor agency. Independent evidence is needed to move from teleological usefulness to a mind.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Lawlike order, evolution, and consciousness",
+        timebox: "14:28-19:30",
+        score: { pro: 90, con: 93 },
+        exchanges: [
+          {
+            pro: {
+              time: "15:33",
+              role: "Order-expectation argument",
+              words:
+                "Swinburne argues that a good God has reason to create embodied free agents in a regular world, whereas unguided particles have no reason to obey simple life-permitting laws.",
+              score: 90,
+              critique:
+                "Swinburne connects several data under one intention: agents need bodies, predictable consequences, an evolutionary route, and consciousness, so a good creator would have reason to produce lawlike conditions of this kind. This is better than asserting that order looks designed; it explains why regularity matters morally. The comparison with naturalism is underdeveloped. Saying particles would each 'go their own way' without God presupposes that laws require an external enforcer rather than being brute, necessary, dispositional, or structurally basic. The divine prediction is also broad: innumerable laws and histories could generate agents, and the argument offers no probability measure across either divine choices or natural possibilities. Consciousness creates an explanatory challenge, but claiming physics could not possibly explain it outruns what is shown. The synthesis is elegant, not decisive.",
+              tags: []
+            },
+            con: {
+              time: "32:48",
+              role: "Background-fit objection",
+              words:
+                "Millican says a disembodied will acting instantly without mechanism conflicts with all known agency, and the history of science has repeatedly replaced purposive cosmic explanations with physical ones.",
+              score: 93,
+              critique:
+                "Millican identifies a cost hidden by Swinburne's decision to omit background knowledge at the ultimate level. Every observed person acts through a body and causal processes; unlimited disembodied agency is not a modest extrapolation from that class. Scientific history makes promiscuous teleology a known cognitive hazard. Swinburne replies that theoretical physics likewise posits unfamiliar entities when they predict data, so unfamiliarity alone cannot disqualify God. That reply exposes the decisive difference: photons and quantum models earn acceptance through precise, risky predictions, whereas divine purposes are inferred after seeing the world. Millican should not imply that every retreat from local teleology proves there is no ultimate purpose. His narrower conclusion is strong: our background evidence gives no automatic prior advantage to an unmechanized cosmic mind merely because we understand intentional action.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Which kind of simplicity predicts?",
+        timebox: "30:13-53:39",
+        score: { pro: 91, con: 96 },
+        exchanges: [
+          {
+            pro: {
+              time: "44:25",
+              role: "Scientific parsimony defense",
+              words:
+                "Swinburne argues that among hypotheses fitting the observations, science must prefer the simplest curve or law or else infinitely many equally compatible extrapolations destroy prediction.",
+              score: 91,
+              critique:
+                "Swinburne is right that a simplicity constraint is indispensable to induction. Finite data permit infinitely many curves, and scientists prefer compact laws until discrepant observations force added terms. His clarification that simplicity is only one criterion answers the fact that theories sometimes grow more complex. Treating unlimited power as zero limits and one person as one entity gives his proposal a compact description. The unresolved issue is which language and simplicity measure are legitimate. 'An omnipotent person wants this world' can be stated briefly while encoding every detail in the desire, just as a short program may call an enormous lookup table. Swinburne narrows God's predicted output to general laws, life, and consciousness, but divine reasons still permit a vast range. Parsimony helps only after comparative likelihoods are disciplined.",
+              tags: []
+            },
+            con: {
+              time: "31:40",
+              role: "Syntactic-versus-ontological challenge",
+              words:
+                "Millican distinguishes concise description from ontological and computational simplicity, arguing that an unlimited mind sustaining every particle may be easy to name but immensely complex to realize.",
+              score: 96,
+              critique:
+                "Millican delivers the debate's most damaging objection. Simplicity is multidimensional: few words, few entities, few adjustable parameters, and low computational burden can diverge. A single omniscient agent may be concise while containing the dispositions to select and sustain every lawful state. More importantly, theism's predictive likelihood depends on what perfect goodness would choose, and that mapping is not specified enough to generate precise expectations. Millican's comparison with quantum theory emphasizes that empirical accuracy, not strangeness plus brevity, earns explanatory status. His computational language may not apply straightforwardly to a fundamental nonphysical being, and Swinburne can deny that God's knowledge is implemented by sequential calculation. Yet that denial does not establish simplicity. Millican shifts the burden from counting the word 'God' once to measuring the explanatory machinery the hypothesis requires.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Freedom and the purpose of natural evil",
+        timebox: "19:30-24:14",
+        score: { pro: 84, con: 94 },
+        exchanges: [
+          {
+            pro: {
+              time: "19:53",
+              role: "Soul-making theodicy",
+              words:
+                "Swinburne says significant freedom requires power to harm, while disease and accident give sufferers and others opportunities for courage, compassion, negligence, and character formation.",
+              score: 84,
+              critique:
+                "Swinburne explains why a perfectly safe world might lack morally serious agency. Predictable consequences, vulnerability, and repeated choices allow persons to affect others and form durable character; these goods plausibly justify some risk and hardship. The argument has trouble with distribution and scale. Infants who starve, people annihilated before choosing, and animals suffering without moral comprehension do not themselves receive the cited character-building opportunity. Others can exercise compassion without victims enduring extreme, prolonged, or hidden agony, so the defense needs a reason for the observed quantity and asymmetry. Calling most natural evil useful treats persons partly as instruments for someone else's virtue. Swinburne later adds afterlife compensation, but compensation is not justification and is not independently evidenced by the suffering. The account explains some adversity better than horrific evil.",
+              tags: []
+            },
+            con: {
+              time: "53:45",
+              role: "Victim-instrumentality objection",
+              words:
+                "Millican argues that starving children and Holocaust victims often lack meaningful agency while being used as opportunities for more powerful people, which is hard to call a great good for them.",
+              score: 94,
+              critique:
+                "Millican focuses the moral objection precisely where generic free-will defenses are weakest. Permission for an oppressor's significant choice does not obviously benefit the victim, and describing involuntary suffering as valuable service risks overriding the person's own ends. His symmetry argument is powerful: if enough auxiliary reasons can reconcile any evil with perfect goodness, analogous stories could reconcile observed good with a malicious creator, erasing evidential discrimination. Swinburne's parental and military analogies fail to cover nonconsensual, disproportionate suffering; parents have limited duties and soldiers can knowingly volunteer, unlike infants or exterminated civilians. Millican could acknowledge more clearly that preventing every harm may undermine stable agency. But he need not establish a painless-world optimum. He shows that Swinburne has not derived this world's extremes from goods that require them.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Afterlife compensation and predictive latitude",
+        timebox: "59:28-1:08:02",
+        score: { pro: 80, con: 96 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:02:19",
+              role: "Posthumous-compensation reply",
+              words:
+                "Swinburne says God must give an afterlife to anyone whose earthly life was not worth living, making the person's total existence good and fulfilling the creator's obligation.",
+              score: 80,
+              critique:
+                "Swinburne recognizes cases so dreadful that earthly goods may not outweigh them. Given an omnipotent good creator, compensation and further flourishing would be expected, so the afterlife claim coheres with his broader model and religious belief. But it enters precisely to protect the model from contrary data. Observable suffering is used to infer an unobserved compensating realm, which then neutralizes suffering as evidence against God. A surgeon's painful intervention differs because its necessity and benefit can be independently demonstrated; Swinburne has not shown that victims' agony is necessary for their later good. Moreover, people killed before forming character do not obviously gain the soul-making benefit that justified embodiment. The response maintains consistency but reduces evidential testability and does not make inflicted harm morally permissible by compensation alone.",
+              tags: []
+            },
+            con: {
+              time: "1:04:47",
+              role: "Bad-starter analogy",
+              words:
+                "Millican says a terrible first course gives no evidence that the next must compensate; postulating heaven because earthly life is awful reverses the original appeal from observed goodness to God.",
+              score: 96,
+              critique:
+                "Millican exposes circular pressure. Swinburne begins by claiming this universe is expected under perfect goodness, but when lives appear incompatible with that expectation, he infers an unseen sequel required to repair them. The evidence does not independently favor the sequel; its role is to preserve the hypothesis. Millican also notes an internal mismatch: if embodiment develops moral character, those who die before exercising agency cannot enter a perfected state through the mechanism Swinburne described. His restaurant analogy is sharp but imperfect, since a prior argument for a good host could change expectations about later courses. The decisive point remains comparative: a flexible theism that adds unknown divine reasons and posthumous goods can fit almost any data, weakening the claim that observed phenomena make it probable rather than possible.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 87,
+        strengths: [
+          "Swinburne presented a unified abductive case rather than treating order, life, consciousness, and morality as isolated proofs.",
+          "He correctly emphasized that simplicity is indispensable to induction and clarified that empirical fit can override an initially simpler theory.",
+          "His account connected regular natural laws to the possibility of embodied agency and morally significant consequences.",
+          "He addressed evil within the same goodness-and-freedom framework instead of ignoring the strongest contrary evidence."
+        ],
+        blunders: [
+          {
+            text:
+              "He equated one entity with a simple hypothesis while leaving the unlimited mind's capacities, purposes, and world-selection function largely unmeasured.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "He introduced afterlife compensation to absorb apparently disconfirming suffering, making the hypothesis less vulnerable to the evidence it was meant to explain.",
+            links: [
+              {
+                label: "Special pleading",
+                url: fallacy("special-pleading")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 94,
+        strengths: [
+          "Millican distinguished descriptive, ontological, and computational simplicity and showed why they need not rank God together.",
+          "He compared divine agency with embodied agents and predictive physical theories, exposing the missing bridge from familiarity to cosmic prior probability.",
+          "His victim-instrumentality objection tested the theodicy against people who receive neither freedom nor character development from their suffering.",
+          "His symmetry and afterlife arguments showed how explanatory latitude can make perfect goodness compatible with any evidence and therefore weakly predictive."
+        ],
+        blunders: [
+          {
+            text:
+              "His appeal to science's retreat from purposive explanation risked generalizing from successful local mechanisms to the absence of any ultimate purpose.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His computational-complexity objection assumed that a fundamental divine mind would implement knowledge through processes comparable to finite computation.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
