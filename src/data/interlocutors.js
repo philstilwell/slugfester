@@ -810,6 +810,11 @@ export const interlocutorAvatars = [
     name: "John Dominic Crossan",
     src: `${avatarBasePath}/john-dominic-crossan.webp`,
     aliases: ["John Dominic Crossan"]
+  },
+  {
+    name: "Bertrand Russell",
+    src: `${avatarBasePath}/bertrand-russell.webp`,
+    aliases: ["Bertrand Russell"]
   }
 ];
 
