@@ -2531,13 +2531,24 @@ function renderLogicalExtension(debate) {
         </div>
         <p class="section-summary">An AI-generated steelman of where each case could go next.</p>
       </div>
-      <p class="logical-extension-intro">
-        This section is an AI-generated contribution from Slugfester—not a transcript summary, a quotation, or a claim that either speaker made these arguments in this form. The AI extends and strengthens both positions independently. “Unassailable” here means rebuilt to withstand the clearest objections in this exchange—not immune from rational dispute.
-      </p>
-      <div class="logical-extension-grid">
-        ${renderLogicalExtensionSide(debate.sides.pro, debate.logicalExtension.pro, "teal")}
-        ${renderLogicalExtensionSide(debate.sides.con, debate.logicalExtension.con, "coral")}
-      </div>
+      <details class="ai-extension-accordion">
+        <summary>
+          <span>
+            <strong>Explore the AI-generated arguments</strong>
+            <small>Strengthened final arguments and new reinforcements for both sides</small>
+          </span>
+          <i aria-hidden="true"></i>
+        </summary>
+        <div class="ai-extension-accordion-content">
+          <p class="logical-extension-intro">
+            This section is an AI-generated contribution from Slugfester—not a transcript summary, a quotation, or a claim that either speaker made these arguments in this form. The AI extends and strengthens both positions independently. “Unassailable” here means rebuilt to withstand the clearest objections in this exchange—not immune from rational dispute.
+          </p>
+          <div class="logical-extension-grid">
+            ${renderLogicalExtensionSide(debate.sides.pro, debate.logicalExtension.pro, "teal")}
+            ${renderLogicalExtensionSide(debate.sides.con, debate.logicalExtension.con, "coral")}
+          </div>
+        </div>
+      </details>
     </section>
   `;
 }
