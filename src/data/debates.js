@@ -61796,6 +61796,313 @@ export const debates = [
       }
     }
   },
+  {
+    id: "white-ally-sin-salvation-quran-bible-2013",
+    number: "182",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "James White vs Shabir Ally: Sin and Salvation in the Qur'an and the Bible",
+    label: "Sin, forgiveness, and salvation",
+    date: "2026-08-01",
+    duration: "2 hr 31 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=ee9c45dSHiY",
+    motion:
+      "Which account of sin and salvation—the Qur'an's direct forgiveness and moral accounting or the Bible's grace through Christ's atonement—is more coherent and scripturally grounded?",
+    summary:
+      "White argues God's holiness requires justice satisfied by Christ's voluntary substitution, with works following secure salvation; Ally argues God directly forgives repentant people and that Pauline atonement departs from earlier biblical teaching.",
+    sourceNote:
+      "Built from the English-original YouTube caption track for the October 7, 2013 debate at Erasmia Hall Mosque in South Africa, published by Alpha & Omega Ministries. Captions were checked against the recording; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "the basis of my salvation is the finished work of Jesus Christ",
+        context:
+          "White distinguishes the ground of salvation from the good works he regards as its necessary result."
+      },
+      con: {
+        text: "God is ever ready to forgive us",
+        context:
+          "Ally summarizes the Qur'anic account as moral accountability joined to repentance and divine mercy."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Salvation through Christ's atonement",
+        speaker: "James White",
+        color: "teal"
+      },
+      con: {
+        name: "Direct forgiveness and accountable deeds",
+        speaker: "Shabir Ally",
+        color: "coral"
+      }
+    },
+    score: { pro: 91, con: 88 },
+    sections: [
+      {
+        title: "Direct forgiveness and moral accounting",
+        timebox: "10:37-1:02:57",
+        score: { pro: 89, con: 93 },
+        exchanges: [
+          {
+            pro: {
+              time: "49:35",
+              role: "Justice-vindication challenge",
+              words:
+                "White asks how direct forgiveness can vindicate God's law rather than make judgment an adjustable curve governed by divine discretion.",
+              score: 89,
+              critique:
+                "White identifies a real pressure point in Ally's account. If wrongdoing expresses opposition to God's holy character, describing forgiveness as a favorable balance of credits and demerits can sound administrative rather than morally reparative. His demand for a principled relation among mercy, justice, and law is therefore legitimate. But he repeatedly assumes the conclusion he needs: that justice must impose the full penalty and cannot be satisfied by repentance, restitution, rehabilitation, or sovereign pardon. Human legal systems sometimes pardon without denying the law, and the debate requires an argument for why divine forgiveness is different. Calling Ally's model arbitrary also overlooks the stated standards of intention, circumstance, repentance, and repaired harm. White raises the stronger challenge than he resolves.",
+              tags: [
+                {
+                  label: "Begging the question",
+                  type: "fallacy",
+                  url: fallacy("begging-the-question"),
+                  context:
+                    "The necessity of punishment is often treated as part of justice's definition rather than independently defended."
+                }
+              ]
+            },
+            con: {
+              time: "51:35",
+              role: "Merciful-pardon defense",
+              words:
+                "Ally argues that God may forgive sincere repentance without punishing a substitute, just as scripture commands people to forgive debts and wrongs directly.",
+              score: 93,
+              critique:
+                "Ally gives the debate's clearest intuitive case for direct forgiveness. The Lord's Prayer, interpersonal pardon, contrition, restitution, and biblical examples of righteous people show that forgiveness need not be conceptually identical to transferring punishment. His account also retains responsibility: deeds matter, harmed people should be compensated, and divine mercy responds to intention and circumstance rather than erasing morality. The professor's grading curve is a weak analogy, because moral guilt is not a scarce grade and a victim's claim may differ from a teacher's discretion. Ally also does not fully address grave harms whose victims cannot be restored. Still, he successfully shows that White cannot move from God's justice to penal substitution without additional premises, and he offers a recognizable alternative joining accountability with mercy.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "The fall, original sin, and human ability",
+        timebox: "31:16-1:41:47",
+        score: { pro: 90, con: 89 },
+        exchanges: [
+          {
+            pro: {
+              time: "34:06",
+              role: "Radical-corruption case",
+              words:
+                "White presents Adam as humanity's federal head and uses Romans, Isaiah, and John to argue that fallen people cannot meet God's perfect standard unaided.",
+              score: 90,
+              critique:
+                "White builds a coherent Reformed model: God's standard follows from perfect holiness, Adam's fall corrupts human willing, universal sin blocks self-rescue, and grace must originate with God. His quotations make clear that he means moral inability rather than merely a poor statistical record. The model explains why salvation cannot be earned and why transformation must accompany pardon. Yet the federal-head premise is asserted more than defended, and texts about widespread wickedness do not by themselves establish inherited guilt or total inability. White also moves quickly from no one being perfectly righteous to no human act having genuine moral worth, a stronger conclusion. The system is internally integrated, but Ally reasonably asks whether its distinctive anthropology is read back into earlier scripture through Paul.",
+              tags: []
+            },
+            con: {
+              time: "56:00",
+              role: "Biblical-righteousness objection",
+              words:
+                "Ally cites Abel, Zechariah, Elizabeth, Simeon, and Anna as righteous figures inconsistent with the claim that every unaided human act is morally worthless.",
+              score: 89,
+              critique:
+                "Ally's counterexamples are well chosen because they come from the Bible White treats as a unified revelation. Calling people righteous and blameless creates at least a semantic burden for total-depravity language, and the Adam story itself does not explicitly state inherited guilt or a need for a future substitute. Ally also distinguishes human imperfection from complete moral incapacity. However, the examples do not settle White's position: Reformed theology can treat relative covenant faithfulness as the product of grace while denying sinless merit. Ally sometimes frames total depravity as though it meant maximum behavioral wickedness, which is not White's claim. He effectively shows that the doctrine requires theological synthesis rather than a transparent reading of every cited narrative, but he does not refute that synthesis on its own terms.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Justice, sacrifice, and voluntary substitution",
+        timebox: "39:17-1:45:57",
+        score: { pro: 94, con: 88 },
+        exchanges: [
+          {
+            pro: {
+              time: "44:51",
+              role: "Voluntary-atonement defense",
+              words:
+                "White answers the 'cosmic child abuse' charge by identifying Jesus as the divine Son who voluntarily gives himself to redeem and purify a people.",
+              score: 94,
+              critique:
+                "White decisively answers the crudest version of the objection. A coerced third-party child and the incarnate Son's voluntary self-offering are morally different structures, and Titus supplies textual support for gift, redemption, and transformed conduct. His later use of Hebrews also explains why Roman executioners need not be Levitical priests: Christ is portrayed as both offering priest and sacrifice. These responses meet Ally's characterization rather than merely repeating doctrine. A deeper objection survives. Consent can remove coercion without showing that punishing an innocent person satisfies justice or that guilt can be transferred. White's Trinitarian identity claim also does substantial work that a Muslim does not share. Nevertheless, he gives the more textually integrated and responsive account of Christian atonement than Ally's slogan allows.",
+              tags: []
+            },
+            con: {
+              time: "24:35",
+              role: "Penal-transfer objection",
+              words:
+                "Ally argues that punishing an innocent Son for the guilty is morally perverse and unnecessary if a merciful God can forgive repentant wrongdoers directly.",
+              score: 88,
+              critique:
+                "Ally targets the moral mechanism rather than merely denying Christian texts. Ordinary justice does resist transferring a culprit's punishment to an innocent person, and direct pardon avoids the appearance that God must harm someone before becoming merciful. He also notes that biblical forgiveness can occur through contrition and nonblood offerings, weakening an absolute claim that no forgiveness is possible without blood. Yet 'cosmic child abuse' is a loaded compression that ignores both voluntariness and the Christian identification of Father and Son within one divine being. Ally alternates between criticizing a penal model and treating every Christian atonement text as necessarily penal, although ransom, reconciliation, victory, and sacrifice are distinguishable motifs. The objection exposes an unresolved justice problem but initially attacks a less careful version of White's view.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Faith, law, and good works",
+        timebox: "29:42-2:17:28",
+        score: { pro: 96, con: 84 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:01:18",
+              role: "Grounds-and-fruit distinction",
+              words:
+                "White distinguishes working out an already possessed salvation from working for it, arguing that God produces obedience within the saved person.",
+              score: 96,
+              critique:
+                "White makes the debate's strongest exegetical distinction. Philippians says to work out salvation while immediately grounding the action in God working within believers; that is compatible with active obedience without making deeds the meritorious cause of justification. He consistently applies the same distinction to Titus, Romans, and later warnings: law reveals goodness, works evidence a changed heart, and Christ's righteousness remains the basis of peace with God. This directly answers Ally's repeated claim that any required conduct contradicts salvation by grace. Questions remain about whether perseverance conditions final salvation and whether declaring apostates never truly saved makes the view resistant to counterexample. But Ally largely repeats the presence of imperatives instead of engaging the causal categories. White's account better accommodates both Pauline grace and Pauline moral demands.",
+              tags: []
+            },
+            con: {
+              time: "2:16:18",
+              role: "Pauline-law inconsistency charge",
+              words:
+                "Ally contrasts Paul's commands to keep God's law with his rejection of circumcision, concluding that Paul and Christians remain confused about whether law matters.",
+              score: 84,
+              critique:
+                "Ally rightly prevents 'faith alone' from becoming an excuse to ignore the New Testament's moral imperatives. First Corinthians 7 places keeping God's commands beside indifference to circumcision, and passages about judgment by deeds require a more nuanced account than slogans about grace. Yet his conclusion depends on treating 'law' as one indivisible category with one covenantal function. Paul can reject circumcision as a boundary marker and means of justification while preserving moral commands; whether that theology succeeds, it is not a formal contradiction. Ally similarly treats working out salvation as working to acquire it after White has explicitly distinguished the two. He identifies tensions worth explaining but too often converts them into inconsistency through equivocation rather than demonstrating that Paul's distinctions fail.",
+              tags: [
+                {
+                  label: "Equivocation",
+                  type: "fallacy",
+                  url: fallacy("equivocation"),
+                  context:
+                    "Different senses and functions of law and works are treated as though they were one unchanged claim."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Paul and Gospel development",
+        timebox: "21:46-2:28:48",
+        score: { pro: 91, con: 89 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:58:20",
+              role: "Canonical-coherence rebuttal",
+              words:
+                "White argues that Ally atomizes Paul and the Gospels, infers literary dependence without evidence, and ignores Luke's own scriptural and resurrection-centered conclusion.",
+              score: 91,
+              critique:
+                "White insists that dating after Paul and sharing a theme do not prove dependence on Paul. His appeal to Luke's ending is particularly effective: a reading of Luke's theology must account for the risen Jesus interpreting Moses and the prophets, not rest on one disputed Lord's Supper variant or one omitted Markan phrase. He also answers the claim that Paul abolished all law with passages where Paul calls it good and established. White weakens the case by dismissing critical positions as 'liberal' and asserting that authorship doubts lack solid evidence instead of examining their arguments. Canonical harmony is itself a prior, not a neutral result. Still, he shows that Ally's proposed line from Paul to Mark to later Gospels is under-evidenced and often stated more confidently than the debate supports.",
+              tags: []
+            },
+            con: {
+              time: "21:46",
+              role: "Development-and-dependence thesis",
+              words:
+                "Ally argues that Paul's earlier atonement theology influenced Mark and that later Gospels modify Mark, leaving traces of a simpler prophetic Jesus in Luke.",
+              score: 89,
+              critique:
+                "Ally offers a genuinely historical alternative to reading the canon as one simultaneous voice. Paul's letters predate the Gospels, Synoptic dependence is widely accepted, and differences among parallel sayings can reveal editorial theology. His comparison of Mark's ransom saying with Luke's omission and his attention to the Lord's Supper variant are relevant data. The problem is inferential scale. Chronology and thematic similarity do not establish that Mark borrowed atonement from Paul, nor does Luke's omission prove theological rejection; authors omit material for many reasons. Calling contrary passages authorial 'slipups' makes every datum confirm the reconstruction: agreement shows Pauline influence, disagreement shows the original Jesus breaking through. The hypothesis illuminates development but needs independent literary evidence and a less self-sealing treatment of counterexamples.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "Both agreement and disagreement among texts are interpreted as confirming the same Pauline-influence reconstruction."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        title: "Scriptural reliability and equal standards",
+        timebox: "1:46:15-2:28:48",
+        score: { pro: 92, con: 91 },
+        exchanges: [
+          {
+            pro: {
+              time: "2:19:09",
+              role: "Qur'anic-variant comparison",
+              words:
+                "White displays a corrected Qur'an manuscript and argues that textual variants do not license atomizing either scripture or adopting skeptical reconstructions without evidence.",
+              score: 92,
+              critique:
+                "White's comparison is dialectically sharp. If a visible scribal correction does not by itself destroy confidence in the Qur'an's recoverable text, copyist errors in biblical manuscripts likewise do not establish that the underlying authors contradict one another. He correctly separates textual variation from wholesale theological unreliability and asks for symmetric evidential standards. The analogy is not complete: the Bible is a multi-author collection over centuries, while the Qur'an's transmission and authorship claims differ, so internal harmony cannot be presumed identically. Showing one Qur'anic variant also does not answer Ally's specific Gospel differences. White sometimes substitutes accusations of double standards for direct adjudication. Even so, he successfully blocks Ally's movement from acknowledged copy errors to a general license for treating inconvenient biblical passages as corruption or later rewriting.",
+              tags: []
+            },
+            con: {
+              time: "2:23:51",
+              role: "Transmission-and-authorship distinction",
+              words:
+                "Ally argues that an isolated corrected Qur'an manuscript is outweighed by communal memorization and early collection, whereas anonymous biblical books require separate historical assessment.",
+              score: 91,
+              critique:
+                "Ally gives a relevant answer rather than denying the manuscript. A corrected copy need not determine a text when independent manuscript and oral transmission constrain it, and a multi-author anthology should not receive exactly the same interpretive presumption as a single discourse. His question about why anonymous Hebrews or Gospels should be trusted also identifies a real evidential step that inspiration cannot simply assume. But he overstates the contrast. Academic attribution of the Qur'an to one originating source is not equivalent to demonstrating divine authorship or perfect transmission, and communal memorization can stabilize variants as well as originals. His claim that Muslims have found no reason to disbelieve is evidentially circular. The response justifies different historical questions, not the strongly asymmetric confidence he assigns before those questions are answered.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 91,
+        strengths: [
+          "White presented an internally coherent relation among holiness, law, substitution, justification, and transformed conduct.",
+          "He decisively distinguished good works as salvation's fruit from good works as its meritorious ground.",
+          "His appeal to voluntariness and Christ's identity answered the crude 'cosmic child abuse' characterization.",
+          "He repeatedly demanded equal evidential standards for textual variants, authorship, and scriptural interpretation."
+        ],
+        blunders: [
+          {
+            text:
+              "He often assumed that justice necessarily requires exact punishment before forgiveness can occur, which is the disputed premise rather than an established conclusion.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "He sometimes dismissed critical arguments by labeling scholars liberal or unfriendly instead of addressing the particular literary evidence.",
+            links: [
+              {
+                label: "Belief bias",
+                url: bias("belief-bias")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 88,
+        strengths: [
+          "Ally showed that repentance, restitution, interpersonal pardon, and divine mercy form a coherent alternative to transferred punishment.",
+          "He pressed genuine biblical tensions concerning righteous people, bloodless forgiveness, law, and judgment by deeds.",
+          "His source-critical method usefully distinguished chronological texts and resisted treating the canon as one simultaneous speaker.",
+          "He answered White's manuscript comparison by distinguishing a variant copy from the recoverability and authorship of a work."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly treated works as evidence or consequence of salvation as though White had made them the price paid to acquire it.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          },
+          {
+            text:
+              "His Pauline-influence reconstruction counted both agreement and disagreement among the Gospels as confirmation without independent evidence of the proposed dependence.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
