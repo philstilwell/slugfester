@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "2.1-complete-gate",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.1",
+  "calibrationOnly": true,
+  "preregistration": {
+    "lockedAt": "2026-08-02T21:58:48Z",
+    "lockedBy": "5.6 Sol workflow orchestrator",
+    "selectionSourceManifest": "docs/calibration/v2.1/pilot-manifest.json",
+    "selectionSourceManifestSha256": "b56c54d65fda7d5d3b9b9605f1086c6c4c36c6fb2dc89b810e4470dc35a2eae2",
+    "thresholdsLockedBeforeInventoryAndScoring": true,
+    "legacyAssessmentEmbargo": "Legacy scores, critiques, tags, Overall Commentary, and AI Extension remain prohibited until both scoring passes and adjudications are locked."
+  },
+  "sample": {
+    "initialCompleteDebates": 3,
+    "selectionRationale": "The smallest gate that stresses a high-close symmetric comparison, a lopsided asymmetric burden, and a multi-person pluralist format before expanding to ten complete reassessments.",
+    "debates": [
+      {
+        "number": "81",
+        "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+        "stratum": "close analytic",
+        "reason": "Long-form, symmetric constructive burdens, technical analytic philosophy, and a high close legacy result."
+      },
+      {
+        "number": "05",
+        "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+        "stratum": "lopsided asymmetric burden",
+        "reason": "Long-form presuppositional debate with sharply different constructive and critical burdens and a lopsided legacy result."
+      },
+      {
+        "number": "95",
+        "debateId": "craig-frazier-goff-folley-god-reality-2026",
+        "stratum": "multi-person pluralist",
+        "reason": "Four-person format with one classical-theist advocate and three distinct alternatives on the opposing side, stressing attribution and aggregation."
+      }
+    ]
+  },
+  "executionProtocol": {
+    "model": "5.6 Sol",
+    "argumentInventory": "One isolated model task per debate constructs the complete burden map, 4–7 sections, move inventory, response links, evidence anchors, and locked weights from the blind packet.",
+    "passA": "A fresh isolated 5.6 Sol task scores the locked inventory without legacy material or Pass B.",
+    "passB": "A different fresh isolated 5.6 Sol task scores the identical locked inventory without legacy material or Pass A.",
+    "adjudication": "The orchestrator adjudicates only threshold-triggered differences after preserving both original passes.",
+    "composition": "A post-score task drafts representative quotes, critiques, Overall Commentary, AI Extension, tag review, and AI Extension novelty map from the locked result.",
+    "productionIsolation": "All artifacts remain under docs/calibration/v2.1/complete-gate and never update src/data/debates.js, production ledgers, or rankings."
+  },
+  "hardGates": {
+    "fullTranscriptAcquisitionRateMinimum": 1,
+    "centralQuoteAudioOrIndependentTranscriptVerificationRateMinimum": 1,
+    "unresolvedLowConfidenceSpeakerAttributionsMaximum": 0,
+    "scoringPassIsolation": "separate model tasks with no score or rationale leakage",
+    "missingRequiredAdjudicationsMaximum": 0,
+    "calculatorArtifactMismatchesMaximum": 0,
+    "calibrationIsolationRequired": true,
+    "completeArgumentInventoryRequired": true,
+    "completeScorecardRequired": true,
+    "aiExtensionNoveltyMapCompletionRateMinimum": 1
+  },
+  "reviewGates": {
+    "meanAbsoluteDimensionDeltaMaximum": 5,
+    "moveAdjudicationRateMaximum": 0.25,
+    "overallScorePassDeltaMaximum": 5,
+    "winnerFlipReviewThreshold": 0.2,
+    "rankCorrelationReviewThreshold": 0.9,
+    "note": "Winner flips and rank changes are not automatic failures when transcript evidence justifies them, but exceeding either threshold requires explicit editorial review before expansion."
+  },
+  "readinessRule": {
+    "initialGate": "All hard gates must pass. Review-gate exceptions require documented evidence-based adjudication.",
+    "corpusWide": "The three-debate gate can authorize only an expanded ten-complete-debate gate. Applying v2.1 to all 195 debates requires that expanded gate and explicit editorial approval."
+  },
+  "decision": {
+    "mechanics": "pending",
+    "initialGate": "pending",
+    "expandedGate": "not-run",
+    "corpusWide": "not-ready-before-gate-results"
+  }
+}
