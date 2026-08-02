@@ -61505,6 +61505,297 @@ export const debates = [
       }
     }
   },
+  {
+    id: "habermas-flew-did-jesus-rise-dead-2000",
+    number: "181",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Gary Habermas vs Antony Flew: Did Jesus Rise from the Dead?",
+    label: "Historical and philosophical evidence for resurrection",
+    date: "2026-08-01",
+    duration: "1 hr 31 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=Ksa8uGe21rw",
+    motion:
+      "Does the historical evidence make Jesus' bodily resurrection a rational conclusion?",
+    summary:
+      "Habermas argues from a minimal historical core, early Pauline testimony, an empty tomb, and failed natural alternatives; Flew accepts much of the core but invokes visions, evidential gaps, and naturalistic priors.",
+    sourceNote:
+      "Built from the English-original YouTube caption track for the 2000 John Ankerberg Show discussion moderated by John Ankerberg. The strongly Christian-hosted format was separated from the two interlocutors' arguments; captions were checked against the recording and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "the disciples had experiences that they believed were appearances",
+        context:
+          "Habermas identifies the early, sincere appearance claims as the strongest common datum from which rival explanations must proceed."
+      },
+      con: {
+        text: "there must be some mistake here",
+        context:
+          "Flew explains why a person without prior theistic commitments should initially prefer error to a unique miraculous event."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Resurrection is the best explanation",
+        speaker: "Gary Habermas",
+        color: "teal"
+      },
+      con: {
+        name: "Resurrection is not established",
+        speaker: "Antony Flew",
+        color: "coral"
+      }
+    },
+    score: { pro: 89, con: 84 },
+    sections: [
+      {
+        title: "Minimal facts and early Pauline testimony",
+        timebox: "05:09-13:16",
+        score: { pro: 94, con: 83 },
+        exchanges: [
+          {
+            pro: {
+              time: "05:12",
+              role: "Common-ground historical core",
+              words:
+                "Habermas starts from crucifixion, burial, appearance experiences, transformed disciples, and the conversions of James and Paul, then anchors the list in First Corinthians 15.",
+              score: 94,
+              critique:
+                "Habermas uses a productive strategy: begin with claims Flew and a broad scholarly range accept, then argue from that shared core rather than biblical inerrancy. First Corinthians 15 is genuinely early, explicitly received tradition, and connected through Galatians to Peter and James. This sharply limits explanations based wholly on late legend. He is strongest when he distinguishes the disciples' sincere belief from the truth of resurrection itself. Some claims outrun Paul: the letter does not independently establish every burial detail, an empty tomb, or that Paul received the exact formula during his Jerusalem visit. Repeated references to left-wing critics add rhetoric more than evidence. Still, the tightly dated network of Paul, Peter, and James gives his historical core substantial weight.",
+              tags: []
+            },
+            con: {
+              time: "06:28",
+              role: "Partisan-source and missing-context objection",
+              words:
+                "Flew accepts the basic facts but stresses that the sources are Christian, Gospel authors are not eyewitnesses, dates are uncertain, and Jerusalem's nonconverts left no testimony.",
+              score: 83,
+              critique:
+                "Flew properly notes the source problem: interested testimony must be assessed critically, and later Gospel authors do not become eyewitnesses merely by reporting eyewitness traditions. Asking why most Jerusalem residents were unconvinced also identifies missing selection evidence. However, uncertainty about the precise year of crucifixion is nearly irrelevant to whether it occurred, and silence from nonconverts is predictable given ancient survival rates. He initially says none of the authors is an eyewitness, then exempts Paul when pressed, conceding the source most central to Habermas's argument. Partisanship can motivate distortion, but it can also arise because witnesses were persuaded; it is not by itself a defeater. Flew raises caution without supplying a source-specific reason to discount Paul's received appearance list.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Grief visions and Paul's conversion",
+        timebox: "13:32-23:52",
+        score: { pro: 91, con: 84 },
+        exchanges: [
+          {
+            pro: {
+              time: "16:26",
+              role: "Psychological-fit rebuttal",
+              words:
+                "Habermas argues that grief hallucination poorly fits groups, varied settings, skeptics, and transformation, while the proposed conversion disorder does not fit Paul diagnostically.",
+              score: 91,
+              critique:
+                "Habermas rightly demands that a psychological label explain the cases rather than merely redescribe them. Bereavement experiences fit grieving followers better than Paul, a persecutor, or James, a reported skeptic. Multiple contexts and the early group claims also prevent one individual hallucination from covering all the data. His criticism of stacking conversion disorder, auditory and visual hallucinations, and a messiah complex exposes the ad hoc structure of Jack Kent's proposal. Yet Habermas presents diagnostic categories too rigidly and overstates that hallucinations require expectation, solitude, low intelligence, or little transformation. Group religious experiences can involve social reinforcement without identical private hallucinations. His critique substantially weakens Flew's undeveloped model, though it does not establish a physical external referent by elimination.",
+              tags: []
+            },
+            con: {
+              time: "13:50",
+              role: "Bereavement-and-conversion account",
+              words:
+                "Flew proposes grief-related visions for the disciples and a spectacular religious conversion for Paul, while declining confidence because the historical background is sparse.",
+              score: 84,
+              critique:
+                "Flew offers familiar human phenomena that preserve sincerity without granting resurrection. Bereaved people do experience vivid sensed presences, and dramatic conversions can reorganize identity and conviction. His caution that ancient evidence cannot support a clinical reconstruction with high confidence is well taken. But the proposal remains generic. He does not identify which disciple first had an experience, how group reports arose, why James fits bereavement, or what predisposed a hostile Paul. Saying Paul may have been upset about persecution is possible but unattested in Paul's letters. Flew eventually retreats to enormous ignorance rather than defending a model with explanatory scope. He shows that visions are conceivable, not that one evidentially grounded process accounts for the diverse early claims.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Physical versus spiritual resurrection",
+        timebox: "26:19-43:32",
+        score: { pro: 93, con: 87 },
+        exchanges: [
+          {
+            pro: {
+              time: "33:06",
+              role: "Pauline-body argument",
+              words:
+                "Habermas combines Paul's Pharisaic background, bodily terminology, Philippians' transformed body, and tactile Gospel traditions to argue against a merely immaterial appearance.",
+              score: 93,
+              critique:
+                "Habermas correctly warns against reading Paul's “spiritual body” as a contradiction in modern English. The phrase contrasts kinds of animation or governance while retaining body, and Philippians explicitly says believers' bodies will be transformed to resemble Christ's. Paul's Pharisaic context and resurrection-from-the-dead language reinforce continuity with the person who died. This makes a purely disembodied survival interpretation unlikely. His Gospel appeal is less secure: John does not say Thomas touched Jesus, First John may not share the Gospel's author, and Ignatius is later testimony rather than observation. He also slides from what Paul believed to what physically occurred. Nonetheless, he makes the stronger exegetical case that earliest Christian resurrection belief concerned transformed embodiment, not simply a spirit remaining alive.",
+              tags: []
+            },
+            con: {
+              time: "27:03",
+              role: "Tactile-evidence challenge",
+              words:
+                "Flew notes that John invites Thomas to touch but never reports the touch, and he questions whether reports of seeing establish a publicly tangible body.",
+              score: 87,
+              critique:
+                "Flew's close reading of Thomas is effective: the narrative records an invitation and confession, not the often-assumed act of placing fingers in wounds. He usefully distinguishes seeing a vision from encountering something anyone present could photograph or touch. He also spots conceptual tension in “spiritual body.” Yet he treats the Gospel material selectively, accepting ambiguity in Thomas while giving little analysis to Luke's eating scene, Matthew's grasping women, or First John's tactile language. Reports are not self-validating, but repeated insistence that they remain reports does not explain their content. His semantic objection to immaterial substance misses Paul's own usage and is partly answered by the analogy of a “spiritual book.” Flew weakens one popular detail without overturning embodied intent.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Death, burial, and the empty tomb",
+        timebox: "47:19-1:06:59",
+        score: { pro: 92, con: 85 },
+        exchanges: [
+          {
+            pro: {
+              time: "47:39",
+              role: "Convergent empty-tomb case",
+              words:
+                "Habermas combines Roman execution, Pauline burial-and-raising language, Jerusalem proclamation, hostile counterclaims, and women discoverers to defend death and an empty tomb.",
+              score: 92,
+              critique:
+                "Habermas's death case is strong: crucifixion, Pauline testimony, and non-Christian references converge, while survival fails to explain a triumphant resurrection proclamation. His empty-tomb case is cumulative rather than dependent on one proof. Early burial-and-raising language, proclamation in Jerusalem, the polemic that disciples stole the body, and women as first discoverers all raise the probability of emptiness. Several pieces are less independent than presented. Justin and Tertullian may repeat Matthew's polemic, Paul never explicitly says a known tomb was found empty, and authorities could not necessarily locate or identify a decomposed body. The women criterion can also reflect literary reversal. Even discounted, the argument leaves Flew needing an account of a fact he calls impressive, and his vision theory alone cannot provide one.",
+              tags: []
+            },
+            con: {
+              time: "57:16",
+              role: "Underdetermination response",
+              words:
+                "Flew calls the empty-tomb argument impressive but says many removals are possible and the evidence is too thin to reconstruct which occurred.",
+              score: 85,
+              critique:
+                "Flew's concession is intellectually honest and prevents him from denying a datum merely because it is inconvenient. He is also right that an empty tomb alone does not identify resurrection as its cause; theft, relocation, mistaken location, or unknown handling remain logically available. Refusing to invent a detailed story can be more responsible than false precision. The difficulty is explanatory. Once Flew accepts the tomb evidence and appearance beliefs, saying bodies can be removed supplies no positive reason that this body was. His individualized hallucinations must coincide with an unexplained disappearance, increasing rather than reducing the account's complexity. Underdetermination blocks certainty but does not make every possible cause equally probable. Habermas justifiably presses the absence of an evidenced alternative while overplaying elimination as proof.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Miracles, prior beliefs, and natural law",
+        timebox: "1:08:35-1:20:25",
+        score: { pro: 86, con: 92 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:14:54",
+              role: "Evidence-overrides-expectation analogy",
+              words:
+                "Habermas argues that enough independent recognition, interaction, physical traces, and medical certainty could rationally overturn the normal expectation that dead people remain dead.",
+              score: 86,
+              critique:
+                "Habermas makes the correct epistemic point that a lawlike expectation is defeasible: rarity cannot make contrary evidence irrelevant in principle. His Walmart analogy usefully accumulates identification markers, multiple observers, touch, scars, and prior confirmation of death until mistaken identity becomes strained. He also rejects the notion that laws of nature are prescriptive barriers no evidence could cross. The analogy quietly grants modern access far better than the historical case—medical reports, contemporaneous questioning, direct touch, and independent observers—so its persuasive threshold is not shown to have been met for Jesus. He also says evidence can override natural expectations without specifying the prior probability of divine action or comparing likelihoods. The section establishes possibility of rational miracle belief more securely than resurrection's probability.",
+              tags: []
+            },
+            con: {
+              time: "1:09:45",
+              role: "Prior-theism requirement",
+              words:
+                "Flew argues that miracle inference depends on justified prior belief in a supernatural agent with the power and intention to override ordinary physical possibilities.",
+              score: 92,
+              critique:
+                "Flew identifies the debate's deepest issue. Testimony that would establish an ordinary event may be insufficient for an event with an exceptionally low natural prior, and “miracle” needs not merely unexplained irregularity but an agent capable of purposeful intervention. He explicitly allows that spectacular evidence could persuade him, avoiding an unfalsifiable naturalism. He also distinguishes rationality relative to background beliefs: Mosaic theism can make resurrection reasonable for a believer without making it compulsory for him. The argument could be sharper about Bayesian updating—priors can themselves be altered by the evidence—and he does not quantify how spectacular the record must be. Still, he shows why defeating hallucination or theft does not automatically supply the missing theological denominator: which God acted, why, and toward what end.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Near-death experiences and worldview support",
+        timebox: "1:20:42-1:30:35",
+        score: { pro: 77, con: 80 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:21:09",
+              role: "Afterlife-analogy argument",
+              words:
+                "Habermas cites apparently veridical near-death experiences as indirect evidence that consciousness can persist without measurable heart or brain activity, softening naturalistic resistance to resurrection.",
+              score: 77,
+              critique:
+                "Habermas sensibly limits the claim: near-death reports would not prove Jesus rose but could broaden the background model. Veridical perceptions are more evidentially relevant than generic tunnels or lights, and medical documentation matters. His presentation nevertheless overstates crucial cases. A deliberately cooled surgical patient is not biologically dead in the irreversible sense, the reported perceptions need precise timing against anesthesia and standstill, and “dead for three hours” is misleading. The drowning anecdote is offered without enough identifying or methodological detail to evaluate information leakage, memory reconstruction, or documentation. Moving from puzzling conscious reports to an immaterial afterlife remains a large inference. As contextual evidence, the cases merit investigation; in this debate they function more as suggestive stories than a controlled bridge to resurrection.",
+              tags: [
+                {
+                  label: "Confirmation bias",
+                  type: "bias",
+                  url: bias("confirmation-bias"),
+                  context:
+                    "Ambiguous medical cases are described in the direction most favorable to postmortem consciousness without equal treatment of timing and leakage concerns."
+                }
+              ]
+            },
+            con: {
+              time: "1:26:22",
+              role: "Repeatability-and-definition caution",
+              words:
+                "Flew classifies the reports with out-of-body claims, asks whether the patients were truly dead, and says repeatable demonstration is needed before accepting paranormal explanation.",
+              score: 80,
+              critique:
+                "Flew correctly presses the ambiguity of “death” when patients are cooled, supported, and later resuscitated. He also resists treating a vivid anecdote as equivalent to a reproducible phenomenon. Those cautions directly expose Habermas's loose “post-death” language. But Flew is hearing the cases for the first time and gives little case-specific analysis. Requiring repeatability may be too strict for historical or rare medical events; robust prospective controls and independently timed observations could provide evidence without reproducing death. He shifts to generic ESP failures even though Habermas's challenge concerns documented perception during absent measurable activity. His response appropriately suspends judgment but does not explain the strongest reported details. Both sides leave the evidential quality largely unexamined, making this the debate's weakest exchange.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 89,
+        strengths: [
+          "Habermas built from facts Flew largely accepted instead of assuming Gospel inerrancy.",
+          "His use of early Pauline tradition and contact with Peter and James sharply constrained late-legend explanations.",
+          "He showed that Flew's grief-vision proposal lacked scope across Paul, James, groups, transformation, and the tomb.",
+          "His reading of Paul's resurrection body fit Jewish and Pauline context better than a purely immaterial interpretation."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly leaned on counts of scholars and ideologically distant authorities where direct source analysis was needed.",
+            links: [
+              {
+                label: "Appeal to authority",
+                url: fallacy("appeal-to-authority")
+              }
+            ]
+          },
+          {
+            text:
+              "He sometimes treated the failure of Flew's natural alternatives as affirmative proof of resurrection rather than comparative support.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 84,
+        strengths: [
+          "Flew accepted inconvenient facts and distinguished sincere experience from an externally present resurrected body.",
+          "He correctly emphasized interested sources, incomplete context, and the underdetermination of an empty tomb's cause.",
+          "His prior-theism argument identified the supernatural agent and intention that historical data alone do not specify.",
+          "He remained open to spectacular evidence rather than excluding miracles by definition."
+        ],
+        blunders: [
+          {
+            text:
+              "He proposed grief visions and conversion psychology without evidence fitting the distinct cases of the disciples, James, and Paul.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "He let an unspecified possible mistake carry substantial weight after conceding that he could not explain the empty tomb and appearance pattern.",
+            links: [
+              {
+                label: "Belief bias",
+                url: bias("belief-bias")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
