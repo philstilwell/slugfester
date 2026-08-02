@@ -63489,6 +63489,289 @@ export const debates = [
       }
     }
   },
+  {
+    id: "kastrup-blackmore-consciousness-idealism-2023",
+    number: "188",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Bernardo Kastrup vs Susan Blackmore: What Is Consciousness?",
+    label: "Analytic idealism, neutral monism, and the self-model",
+    date: "2026-08-01",
+    duration: "59 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=X4YVgM2HPMk",
+    motion:
+      "Is consciousness the ontological foundation of reality rather than an emergent property of matter?",
+    summary:
+      "Kastrup argues that consciousness is the sole fundamental category and that brains and bodies represent dissociated mental processes; Blackmore rejects materialist emergence but presses a neutral-monist account built from representation without a persisting self.",
+    sourceNote:
+      "Built from the English-original YouTube caption track. Captions were checked against the recording and lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "consciousness is the one pre-theoretical given of nature",
+        context:
+          "Kastrup makes immediate experience the starting category for an ultimate reduction rather than something derived from an unexperienced substrate."
+      },
+      con: {
+        text: "I'm still at heart a neutral monist",
+        context:
+          "Blackmore rejects conventional materialist emergence while withholding Kastrup's stronger claim that the underlying reality is itself mental."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Consciousness is fundamental",
+        speaker: "Bernardo Kastrup",
+        color: "teal"
+      },
+      con: {
+        name: "Neutral monism is sufficient",
+        speaker: "Susan Blackmore",
+        color: "coral"
+      }
+    },
+    score: { pro: 90, con: 92 },
+    sections: [
+      {
+        title: "What should reduction reduce to?",
+        timebox: "0:02-11:13",
+        score: { pro: 91, con: 93 },
+        exchanges: [
+          {
+            pro: {
+              time: "0:02",
+              role: "Consciousness-first reduction",
+              words:
+                "Kastrup argues that experience is the only immediately known category, while no arrangement of merely quantitative physical properties logically yields qualitative feeling, so reduction should terminate in consciousness.",
+              score: 91,
+              critique:
+                "Kastrup frames the explanatory burden effectively. If mass, charge, momentum, and spatial relations are defined without phenomenal qualities, merely rearranging those quantities does not transparently entail pain or color. His demand for one ontological category is genuinely parsimonious, and he correctly distinguishes explaining reports from deriving experience itself. Yet he moves too quickly from epistemic certainty to ontological fundamentality. That consciousness is directly known does not show that everything observed is made of it, and an explanatory gap may identify incomplete concepts rather than an impossible physical identity. His appeals to Bell experiments and reduced brain metabolism during psychedelics also outrun what those results uniquely establish. The opening makes idealism a serious option, not the experimentally selected conclusion he sometimes suggests.",
+              tags: []
+            },
+            con: {
+              time: "6:39",
+              role: "Neutral-monist challenge",
+              words:
+                "Blackmore agrees that standard emergence leaves the hard problem untouched but asks what explanatory gain comes from calling the inaccessible underlying reality mental rather than neutral.",
+              score: 93,
+              critique:
+                "Blackmore's response is well targeted because she grants the strongest part of Kastrup's case without accepting its label. She rejects the idea that locating neural correlates explains how objective activity generates subjectivity, then asks whether a universal mind predicts the world's detailed, mathematically structured behavior any better. This separates criticism of materialism from evidence for idealism and prevents a false two-option choice. Her neutral monism is deliberately modest, but that modesty has a cost: saying the substrate is neither mental nor material gives little positive account of what it is or why representations have a felt aspect. She therefore checks Kastrup's inference more successfully than she supplies a rival theory, yet her insistence on discriminating explanatory consequences is the right standard for the debate.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "A world outside individual minds",
+        timebox: "11:15-18:59",
+        score: { pro: 94, con: 92 },
+        exchanges: [
+          {
+            pro: {
+              time: "11:15",
+              role: "Dashboard representation",
+              words:
+                "Kastrup says the external world consists of mental states outside each individual, while perception is an evolved dashboard representing those states rather than displaying their intrinsic character.",
+              score: 94,
+              critique:
+                "Kastrup usefully dispels the caricature that idealism makes the world depend on a person's gaze. Another person's thoughts are mental yet external to the observer, so the category itself does not imply private creation. His dashboard analogy also integrates perceptual error and scientific modeling: colors, shapes, and particles can encode stable relations without resembling the underlying process. This gives analytic idealism a coherent route to objectivity and preserves experimental practice. The remaining weakness is underdetermination. Representational realism, structural realism, and neutral monism can all distinguish appearance from intrinsic reality without classifying the latter as experiential. Kastrup's single-category economy counts in his favor only if universal mentality is independently intelligible and productive. Here he establishes consistency and scope, but not yet a reason to prefer mental reality over a neutral base.",
+              tags: []
+            },
+            con: {
+              time: "14:49",
+              role: "Explanatory-label objection",
+              words:
+                "Blackmore accepts that perception is representational but argues that redescribing its hidden cause as universal mentation does not explain gravity, regularity, or the structure physics successfully models.",
+              score: 92,
+              critique:
+                "Blackmore keeps attention on explanation rather than verbal compatibility. A theory should do more than permit an external world; it should clarify why that world exhibits stable causal patterns and why bodily boundaries correspond to particular perspectives. Physics supplies powerful relational models even if it remains silent about intrinsic nature, whereas the word 'mental' can seem to rename the unknown. Her challenge is especially effective because Kastrup accepts all physical predictions, leaving few immediate empirical contrasts. Still, demanding that an ontology replace physics sets the bar incorrectly. A metaphysical interpretation may retain the equations while explaining what their variables represent, just as rival interpretations of quantum mechanics share predictions. Blackmore exposes limited incremental payoff, but not incoherence, and she offers no richer account of the neutral intrinsic basis she prefers.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Dissociation, life, and causal structure",
+        timebox: "19:01-23:40",
+        score: { pro: 86, con: 94 },
+        exchanges: [
+          {
+            pro: {
+              time: "19:01",
+              role: "Dissociation account",
+              words:
+                "Kastrup identifies organisms as dissociated boundaries within universal subjectivity and says dissociation arose because it was possible, with reproduction and selection stabilizing the resulting living patterns.",
+              score: 86,
+              critique:
+                "The dissociation proposal gives Kastrup a principled answer to the combination problem that burdens bottom-up panpsychism: individual minds are partitions of one field, not sums of tiny subjects. Identifying a body's surface with the public appearance of that partition also links mentality to observable biology. However, his origin answer is notably weak. From a process being possible and the universe having time to explore possibilities, it does not follow that the process occurred; possibilities need probabilities, dynamics, and boundary conditions. Referring to abiogenesis postpones rather than explains why universal subjectivity acquires metabolically bounded viewpoints. Natural selection can preserve reproducers only after such organization exists. The model remains conceptually suggestive, but the crucial bridge from one mind-at-large to many stable perspectives is asserted through analogy rather than derived.",
+              tags: []
+            },
+            con: {
+              time: "20:08",
+              role: "Structure-and-boundary challenge",
+              words:
+                "Blackmore presses Kastrup to explain why dissociation happens at biological boundaries and how archetypal mental activity yields the highly specific, predictive regularities captured by science.",
+              score: 94,
+              critique:
+                "Blackmore identifies the exact points where an ontology must become a model. Human dissociation is a psychological condition within already individuated brains; using it to explain organism-level individuation risks borrowing the phenomenon being explained. She also resists anthropomorphic talk of a universal consciousness deciding to create structure, prompting Kastrup to clarify that his archetypes are impersonal dispositions rather than plans. That clarification improves his view, but it leaves the detailed laws and the placement of boundaries unexplained. Blackmore could have sharpened the objection by distinguishing metaphorical from formally specified dissociation and proposing tests that would count against it. Even so, she exposes a modal-to-actual leap and shows that preserving physics is not the same as explaining why this physical representation, with these partitions, arises.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "The self-model and the illusion regress",
+        timebox: "23:42-31:59",
+        score: { pro: 95, con: 91 },
+        exchanges: [
+          {
+            pro: {
+              time: "27:44",
+              role: "Illusionism regress",
+              words:
+                "Kastrup argues that if a self-model is only neural activity, adding a meta-model never explains why modeling feels like anything; an experienced illusion already presupposes consciousness.",
+              score: 95,
+              critique:
+                "Kastrup's rebuttal is the debate's clearest argumentative exchange. Calling phenomenal consciousness an illusion cannot mean it is absent in the ordinary sense, because an illusion is itself an experience. If the self-model and every higher-order model are exhaustively described as nonexperiential neural events, repeating the representational relation does not cross the original explanatory gap. He also avoids defending an enduring ego: the Bernardo-person is a fluid pattern of mental states and narrative, while subjectivity need not be a little observer inside it. This directly answers a common homunculus objection. The force of the regress depends on construing physical descriptions as intrinsically nonexperiential; an identity theorist can deny that premise rather than append models. Nonetheless, against straightforward eliminativist language, Kastrup demonstrates a real category problem with unusual precision.",
+              tags: []
+            },
+            con: {
+              time: "23:42",
+              role: "Representation without a persisting self",
+              words:
+                "Blackmore says there is nothing it is like to be a bat beyond what it is like to be the bat's world- and self-representation, dissolving a separate inner witness.",
+              score: 91,
+              critique:
+                "Blackmore correctly attacks the imagined spectator behind experience. A bat's continuously updated model can organize perception and action without being inspected by a further bat-self, and meditation, memory failure, and change all undermine the idea of a fixed owner. Her formulation also converges with Kastrup's denial of a persistent personal essence, producing useful agreement rather than manufactured opposition. Yet saying experience is what representation is like risks substituting a label for an account. If representations are neutrally or physically characterized relations, why some have a subjective aspect remains the disputed question; if feeling is included in 'representation,' the definition has absorbed what it purports to explain. Blackmore offers a plausible functional dissolution of the self, but Kastrup shows that it does not automatically dissolve consciousness itself.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Distributed experience and IIT",
+        timebox: "32:04-48:04",
+        score: { pro: 91, con: 94 },
+        exchanges: [
+          {
+            pro: {
+              time: "38:57",
+              role: "IIT and ontological complexes",
+              words:
+                "Kastrup presents integrated information theory as an empirical mapping between measurable substrates and experience, then argues its causal complexes modestly lean toward things that exist for themselves.",
+              score: 91,
+              critique:
+                "Kastrup carefully separates IIT's operational use from his metaphysical interpretation. A theory that maps reports and neural organization can help assess locked-in or unresponsive patients without first settling what consciousness is, and he explicitly says its predictions can be used under materialism. That restraint is commendable. His later move from causal integration to existence 'for itself,' however, imports controversial IIT ontology and then reads idealist implications from it. Causal power does not plainly entail subjectivity, and an arXiv philosophical elaboration cannot by itself establish the identity. The green-elephant example illustrates the representation-versus-complex distinction but triggers Blackmore's apt question about which self does the causing. Kastrup supplies a sophisticated compatibility argument between IIT and idealism, not independent empirical confirmation of idealism.",
+              tags: []
+            },
+            con: {
+              time: "32:04",
+              role: "Panpsychism of representations",
+              words:
+                "Blackmore proposes that many distributed representations may each have something it is like to be them, while the narrative self is only one temporarily integrated model among others.",
+              score: 94,
+              critique:
+                "Blackmore's 'panpsychism of representations' is an unusually productive concession. It fits cases in which meditation or psychedelics weaken the autobiographical self while visual, auditory, and bodily experience continues, and it avoids making one executive model the sole locus of consciousness. Her question about degrees of consciousness in IIT is also epistemically exemplary: she openly marks uncertainty and asks what increasing integrated information actually means phenomenally. The proposal remains underspecified. It is unclear what qualifies as a representation, whether isolated subpersonal models each form subjects, or how multiple points of view relate without recreating combination and boundary problems. Kastrup's exclusion-based response supplies more formal machinery, though controversially. Blackmore broadens the evidence any theory must explain but stops short of a determinate ontology.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Consciousness beyond space and time",
+        timebox: "48:04-59:35",
+        score: { pro: 88, con: 93 },
+        exchanges: [
+          {
+            pro: {
+              time: "49:59",
+              role: "Core-subjectivity field",
+              words:
+                "Kastrup locates causality in the intrinsic archetypal dispositions of one self-exciting field of subjectivity and treats spacetime-independent natural structure as semantic or cognitive structure.",
+              score: 88,
+              critique:
+                "Kastrup provides a more complete picture than a bare universal-mind slogan. The drumhead and cellular-automaton analogies show how simple intrinsic dispositions can generate complex patterns without an external designer, and semantic relations offer at least a conceivable kind of differentiation not measured by spatial distance. He also admits he has not personally experienced spacetime dissolution and labels the closing proposal speculative. Still, the account accumulates metaphors where derivation is needed. Calling intrinsic properties archetypes, excitations, harmonics, or meanings does not specify laws that recover physical structure, and the inference that reductionism's past success must culminate in one field is unwarranted. Friendship also depends on temporally situated persons even if its abstract meaning is not a spatial object. The synthesis is elegant but evidentially thin.",
+              tags: []
+            },
+            con: {
+              time: "53:18",
+              role: "Meditative spacetime challenge",
+              words:
+                "Blackmore reports meditative states containing experience without ordinary spatial or temporal organization and asks how either brains or idealist vibrations can describe such structure without presupposing spacetime.",
+              score: 93,
+              critique:
+                "Blackmore turns first-person practice into a disciplined conceptual challenge rather than proof of a metaphysics. She is careful to describe how the state seems, acknowledges the difficulty of later memory, and asks whether spacetime is fundamental instead of inferring that meditation reveals cosmic reality. This forces both brain-based and field metaphors to confront the framework their language assumes. The evidence remains introspective and therefore cannot establish that neural processes or external reality literally lack temporal order; altered time representation is an available explanation. Her closing suggestion that the state involves letting go of cognitive structures also undercuts Kastrup's interpretation of it as nonspatial semantic structure. Blackmore's calibrated uncertainty earns credibility, though it leaves her neutral-monist alternative as a question rather than a worked account.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 90,
+        strengths: [
+          "Kastrup clearly formulated the qualitative explanatory gap and showed why merely adding representational levels does not answer it.",
+          "His analytic idealism preserved an observer-independent world, perceptual error, scientific prediction, and the absence of a persistent personal ego.",
+          "He distinguished operational IIT from its disputed ontological interpretation and repeatedly identified where his claims became philosophical.",
+          "The single-category framework offered a coherent alternative to both strong emergence and bottom-up combinations of micro-subjects."
+        ],
+        blunders: [
+          {
+            text:
+              "He treated quantum measurement results and psychedelic brain findings as more discriminating evidence for idealism than the acknowledged alternative interpretations permit.",
+            links: [
+              {
+                label: "Confirmation bias",
+                url: bias("confirmation-bias")
+              }
+            ]
+          },
+          {
+            text:
+              "His claim that dissociation occurred because it was possible moved from modal possibility and elapsed time to actuality without supplying probabilities or a generative mechanism.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 92,
+        strengths: [
+          "Blackmore separated the failure of materialist emergence from positive evidence that the underlying reality must be mental.",
+          "She pressed the central explanatory questions about biological boundaries, causal structure, and the empirical payoff of metaphysical labels.",
+          "Her representational account dissolved a persisting inner self while incorporating meditation and ego-dissolution evidence.",
+          "She consistently calibrated uncertainty, including about IIT and the interpretation of experiences apparently lacking ordinary space and time."
+        ],
+        blunders: [
+          {
+            text:
+              "Defining experience as what it is like to be a representation risked placing phenomenality inside the definition rather than explaining why representation has a subjective aspect.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "Neutral monism and a panpsychism of representations remained deliberately noncommittal about the substrate, individuation criteria, and relations among distributed experiential complexes.",
+            links: [
+              {
+                label: "Ambiguity effect",
+                url: bias("ambiguity-effect")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
