@@ -477,7 +477,7 @@ function renderLanding() {
       <section class="landing-panel">
         <div class="intro-copy">
           <p class="eyebrow">Video debate transcript scorecards</p>
-          <h1>Slugfester</h1>
+          <h1>Slugfester!</h1>
           <p class="lede">Follow the reasoning, not the rhetoric. Slugfester turns debate transcripts into side-by-side maps of claims and rebuttals, with AI-generated scores, timestamped sources, and deeper critiques behind every ◉.</p>
           <div class="landing-actions">
             <a class="button primary" href="#debates-heading">Browse scorecards</a>
