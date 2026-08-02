@@ -62923,6 +62923,289 @@ export const debates = [
       }
     }
   },
+  {
+    id: "huemer-sapolsky-free-will-determinism-2024",
+    number: "186",
+    assessmentModel: "5.6 Terra Extra High",
+    title: "Michael Huemer vs Robert Sapolsky: Does Free Will Exist—and Does It Matter?",
+    label: "Agency, biological causation, and responsibility",
+    date: "2026-08-01",
+    duration: "1 hr 26 min",
+    youtubeUrl: "https://www.youtube.com/watch?v=FjAYvhv1-Lg",
+    motion:
+      "Do people sometimes control which of multiple genuinely available actions occurs, and does that freedom justify responsibility?",
+    summary:
+      "Huemer defends alternative possibilities through deliberation, rational norms, and desert; Sapolsky presents behavior as an unbroken biological-environmental causal arc and urges radical reform of praise and blame.",
+    sourceNote:
+      "Built from the English-original YouTube caption track. Captions were checked against the recording and lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+    scoringNote:
+      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+    quotes: {
+      pro: {
+        text: "we sometimes have alternative possibilities available to us",
+        context:
+          "Huemer defines libertarian freedom as real alternatives together with control over which one becomes actual."
+      },
+      con: {
+        text: "it is a seamless arc of biological influences interacting with environmental influences",
+        context:
+          "Sapolsky summarizes his cumulative causal case against any remaining role for free will."
+      }
+    },
+    sides: {
+      pro: {
+        name: "Libertarian free will exists and matters",
+        speaker: "Michael Huemer",
+        color: "teal"
+      },
+      con: {
+        name: "Causal determination leaves no free will",
+        speaker: "Robert Sapolsky",
+        color: "coral"
+      }
+    },
+    score: { pro: 91, con: 89 },
+    sections: [
+      {
+        title: "From behavioral influence to determination",
+        timebox: "1:30-15:40",
+        score: { pro: 94, con: 88 },
+        exchanges: [
+          {
+            pro: {
+              time: "32:34",
+              role: "Influence-determination distinction",
+              words:
+                "Huemer grants that hunger, hormones, trauma, genes, and culture influence choices but denies that any list of partial influences entails that only one outcome was possible.",
+              score: 94,
+              critique:
+                "Huemer identifies the decisive gap in Sapolsky's opening. Evidence that a variable changes average behavior establishes causal influence, not complete determination of every individual choice. Many examples also concern impaired or biased judgment, so they support practical interventions—feed judges, treat trauma, correct developmental disadvantage—without showing that a well-functioning agent never responds freely to reasons. This is not an appeal to an unexplained residue; it is a demand that the universal conclusion receive evidence matching its scope. Huemer does not provide a mechanism for how indeterministic agent control works, and merely distinguishing influence from determination cannot prove freedom. Still, the burden lies with the speaker claiming a seamless causal closure, and a series of probabilistic studies does not discharge it.",
+              tags: []
+            },
+            con: {
+              time: "3:04",
+              role: "Causal-timescale synthesis",
+              words:
+                "Sapolsky traces behavior through seconds, hunger, hormones, trauma, childhood, fetal conditions, genes, culture, and evolution, treating these as interacting parts of one causal discipline.",
+              score: 88,
+              critique:
+                "Sapolsky's tour is empirically rich and effectively dismantles simplistic self-narration. Smells, meal timing, stress, developmental adversity, prenatal environment, and inherited culture can shape judgments people confidently explain as autonomous. His insistence that genes modulate environments rather than dictate outcomes avoids crude genetic determinism, and integrating timescales is more plausible than searching for one master cause. The final inference nevertheless exceeds the evidence presented. Correlations and shifts in probability do not establish that the total causal state fixes one outcome, nor that reasons and reflective agency are absent rather than realized through biology. Saying all the fields are one discipline supports causal continuity, not determinism. The opening strongly reduces confidence in unconstrained choice but does not show that no alternative possibility ever remains.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Is determinist reasoning self-defeating?",
+        timebox: "15:40-24:11",
+        score: { pro: 87, con: 92 },
+        exchanges: [
+          {
+            pro: {
+              time: "19:36",
+              role: "Deliberative self-defeat",
+              words:
+                "Huemer argues that deliberation, advice, argument, and rational norms presuppose available alternatives, so accepting determinism requires presupposing its falsity during the reasoning process.",
+              score: 87,
+              critique:
+                "Huemer rightly notes that normative discourse cannot be translated without remainder into physical description. Arguments purport to supply reasons, deliberators compare possibilities, and advice addresses what an agent can do; any determinist owes an account of those practices. His claim of self-defeat, however, assumes that reasons require categorical alternative possibilities. A deterministic system can represent counterfactual options, update when evidence arrives, and act differently if reasons or inputs differ, even though its actual history is fixed. Epistemic standards can evaluate whether belief-forming mechanisms track truth without agents choosing beliefs at will. Huemer's Q example shows that advice must concern an agent's capabilities, but determinism does not imply inability in that ordinary conditional sense. He establishes a semantic burden, not an incoherence theorem.",
+              tags: []
+            },
+            con: {
+              time: "31:33",
+              role: "Mechanistic change response",
+              words:
+                "Sapolsky says determinism permits change because arguments, experiences, and conditioning are mechanisms that alter brains; people do not choose to change independently but are changed by causes.",
+              score: 92,
+              critique:
+                "Sapolsky gives the correct response to fatalism. A determined future need not be static, and persuasion is not pointless because hearing an argument can be the cause that changes later belief or action. Learning in organisms, from sea slugs to humans, illustrates how mechanistic systems respond flexibly rather than waiting passively for fate. This directly undermines Huemer's suggestion that advice and deliberation make no sense unless the actual past permits multiple continuations. Sapolsky could have gone further by explaining truth-sensitive reasoning and counterfactual ability, especially when Huemer later challenges whether molecules can respond to epistemic properties. Saying people 'are changed' can also misleadingly erase the person, whose reasoning process is the relevant mechanism. Nonetheless, the rebuttal defeats the simple equation of determinism with hopeless immobility.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Intuition, appearance, and epistemic foundations",
+        timebox: "24:46-38:18",
+        score: { pro: 93, con: 87 },
+        exchanges: [
+          {
+            pro: {
+              time: "34:38",
+              role: "Phenomenal-conservatist reply",
+              words:
+                "Huemer distinguishes intellectual seemings from arbitrary belief and argues that observation, inference, logic, and science all ultimately depend on how evidence and principles appear to thinkers.",
+              score: 93,
+              critique:
+                "Huemer answers Sapolsky's broad attack on intuition with a needed taxonomy. A philosophical intuition is an intellectual, noninferential seeming, not every inherited superstition or post hoc consumer explanation. More fundamentally, empirical evidence also justifies through appearances, and scientific inference relies on logical and methodological premises that are not read directly from a meter. Cases of mistaken judgment therefore require defeaters and correction, not wholesale rejection of seeming-based justification. This prevents Sapolsky from using intuition to condemn intuition without acknowledgment. Huemer sometimes overstates the result: that all inquiry contains appearances does not grant equal default weight to the phenomenology of free choice once causal evidence accumulates. Still, he supplies the more coherent epistemology and exposes how several anti-retributive judgments in Sapolsky's own case are themselves intuitive moral claims.",
+              tags: []
+            },
+            con: {
+              time: "25:15",
+              role: "Historical unreliability",
+              words:
+                "Sapolsky compares confidence in free agency with past certainties about witches, possession, schizophrenogenic mothers, laziness, racial hierarchy, and a stationary Earth.",
+              score: 87,
+              critique:
+                "Sapolsky effectively reminds viewers that vivid certainty and a satisfying folk explanation can survive centuries of error. Scientific progress repeatedly replaced blame with mechanisms in epilepsy, schizophrenia, and dyslexia, so first-person confidence is not immune to revision. The criticism is especially relevant when responsibility judgments authorize punishment. But the examples conflate distinct sources of belief: theological inference, prejudice, empirical error, and intellectual intuition do not share one reliability profile. A skeptical induction from many past errors threatens Sapolsky's current science unless a specific debunking link is shown. Huemer also correctly observes that moral reform itself relied on moral appearances and reasoning. Sapolsky establishes humility and a burden for free-will phenomenology, but his indiscriminate rhetoric does not provide a criterion for retaining the intuitions his ethical conclusion needs.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Retribution and the innocent defendant",
+        timebox: "39:07-53:36",
+        score: { pro: 94, con: 91 },
+        exchanges: [
+          {
+            pro: {
+              time: "42:36",
+              role: "Framed-ex-convict case",
+              words:
+                "Huemer imagines secretly framing a high-risk ex-convict for an unsolved crime, arguing that deterrence and incapacitation favor it while justice still requires punishing the actual offender instead.",
+              score: 94,
+              critique:
+                "Huemer's case places pressure on a purely act-consequentialist punishment theory. If the frame-up is secret, deters equally, and incapacitates someone at similar risk, the immediate forward-looking benefits can be stipulated as equal; yet punishing the innocent still appears gravely unjust. The natural explanation is that culpable action constrains who may bear a sanction, giving backward-looking responsibility a role beyond aggregate benefit. Sapolsky invokes long-term trust and rule effects, which supports sophisticated consequentialism but does not answer a genuinely isolated case where discovery is excluded. The thought experiment relies on intuition and does not prove libertarian sourcehood—causal responsibility or rights could constrain punishment without ultimate free will. Even so, it decisively shows that eliminating retribution does not automatically supply a complete theory of just treatment.",
+              tags: []
+            },
+            con: {
+              time: "44:09",
+              role: "Deep-consequences response",
+              words:
+                "Sapolsky rejects framing through rule-level consequences: a society permitted to imprison innocents for utility destroys security and trust, much like harvesting an unwilling person's organs.",
+              score: 91,
+              critique:
+                "Sapolsky does not accept the false binary between retribution and crude local maximization. Rules against framing protect everyone from state fabrication, sustain confidence, and block institutional slopes toward abuse; those are powerful forward-looking reasons to punish only proven perpetrators. His historical examples also show that removing mistaken responsibility attributions has often increased humanity without social collapse. The answer preserves justice under skepticism and avoids treating one person's suffering as a disposable tool. Huemer can stipulate perfect secrecy and a one-off decision, however, making broad institutional effects unavailable inside the case. Sapolsky then needs a rule-consequentialist, rights-based, or causal-responsibility principle that explains why officials must not optimize locally. He offers a plausible social ethic but does not fully meet the thought experiment on its own terms.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Scientific burden and the shrinking space for freedom",
+        timebox: "53:50-1:06:53",
+        score: { pro: 91, con: 90 },
+        exchanges: [
+          {
+            pro: {
+              time: "58:18",
+              role: "Appearance as default",
+              words:
+                "Huemer says neither total neural prediction nor libertarian control has been scientifically demonstrated, so belief should begin with apparent freedom until sufficiently strong contrary evidence arrives.",
+              score: 91,
+              critique:
+                "Huemer sensibly resists making incomplete neuroscience carry a universal metaphysical conclusion. He states a defeasible default rather than claiming that introspection proves freedom, and he concedes that perfect behavioral prediction would strongly support determinism. This properly matches evidential confidence to present capabilities. Yet the default is not costless. Apparent authorship may be precisely the kind of post hoc construction documented by some of Sapolsky's examples, and a theory positing agent selection beyond prior causes needs a coherent positive model. Huemer also says prediction failure would support free will, although quantum randomness, measurement limits, and chaos could produce unpredictability without agency. His burden allocation is stronger than Sapolsky's extrapolation, but the affirmative case remains primarily phenomenological and conceptual rather than empirical.",
+              tags: []
+            },
+            con: {
+              time: "54:55",
+              role: "No-independent-neuron challenge",
+              words:
+                "Sapolsky asks for a neuron acting independently of genes, hormones, development, environment, and prior connections, then argues that the accelerating discovery of influences makes confident blame morally hazardous.",
+              score: 90,
+              critique:
+                "Sapolsky reframes his case as cumulative rather than deductive. No neural event is independent of biological history, and the rapid expansion of demonstrated influences makes it unreasonable to act as though unexplained variance belongs to an uncaused chooser. His more modest fallback—that people should believe in substantially less freedom and punish with greater humility—is well supported and ethically consequential. The challenge still risks defining freedom as causal independence from everything, which Huemer need not accept; an agent could exercise control through an influenced neural system. Absence of an independent neuron is therefore not proof of absence of alternative possibilities. Sapolsky earns ground on uncertainty and policy but continues to slide from universal causal dependence to deterministic sufficiency without showing that the complete causes fix the action.",
+              tags: []
+            }
+          }
+        ]
+      },
+      {
+        title: "Brute choice, compatibilism, and reasons",
+        timebox: "1:07:31-1:25:28",
+        score: { pro: 88, con: 86 },
+        exchanges: [
+          {
+            pro: {
+              time: "1:17:48",
+              role: "Consequence-style argument",
+              words:
+                "Huemer argues that if doing otherwise requires a different remote past, an agent cannot do otherwise, just as a student cannot now earn an A that required earlier grades never achieved.",
+              score: 88,
+              critique:
+                "Huemer's grade example makes the incompatibilist intuition concrete: when a necessary past condition did not occur, the present result is unavailable. If determinism makes every alternative require a different remote past or law, ordinary alternative possibility appears threatened. He also candidly says that decisive evidence for determinism would make him revisit the argument rather than deny science. The analogy assumes that laws and the past constrain action exactly as an institutional grade formula constrains a final mark, which is the disputed consequence principle rather than a neutral illustration. His positive libertarian account eventually reaches a brute selection—reasons explain options, but nothing explains why one wins. That may preserve openness, yet it offers little account of how the agent, rather than chance, settles the result.",
+              tags: []
+            },
+            con: {
+              time: "1:11:43",
+              role: "Explanation all the way down",
+              words:
+                "Sapolsky contrasts Huemer's unexplained final decision with an indefinitely extendable causal account in which each neural event arises from prior biological and environmental conditions.",
+              score: 86,
+              critique:
+                "Sapolsky exposes a genuine explanatory cost in libertarianism. Reasons may explain why options are attractive, but if nothing explains why the agent chooses one rather than another, control can look like a label attached to a brute event. His reminder that deterministic systems may be unpredictable through chaos also correctly separates causation from practical forecast. However, an indefinitely extendable causal history does not by itself show deterministic laws rather than probabilistic processes, and his assertion that quantum effects cannot scale to a molecule is offered without support in the debate. He also rejects compatibilism largely by declaring every philosophical version ruled out, without engaging reasons-responsive or hierarchical accounts. The explanatory challenge lands, but the promised scientific closure remains more asserted than demonstrated.",
+              tags: []
+            }
+          }
+        ]
+      }
+    ],
+    overall: {
+      pro: {
+        score: 91,
+        strengths: [
+          "Huemer cleanly separated evidence of behavioral influence from the universal claim that every action is completely determined.",
+          "He supplied a coherent account of intellectual seemings and showed that empirical and logical reasoning cannot dispense with appearances altogether.",
+          "The framed-ex-convict case exposed the incompleteness of simple deterrence and incapacitation as a theory of just punishment.",
+          "He treated apparent freedom as defeasible and acknowledged that sufficiently strong predictive evidence could overturn his view."
+        ],
+        blunders: [
+          {
+            text:
+              "His self-defeat argument assumed that deliberation and reasons require open actual alternatives, overlooking deterministic counterfactual reasoning and reasons-responsive updating.",
+            links: [
+              {
+                label: "Begging the question",
+                url: fallacy("begging-the-question")
+              }
+            ]
+          },
+          {
+            text:
+              "His positive account ended with a brute choice and did not explain how an unexplained selection constitutes agent control rather than luck.",
+            links: [
+              {
+                label: "Argument from ignorance",
+                url: fallacy("argument-from-ignorance")
+              }
+            ]
+          }
+        ]
+      },
+      con: {
+        score: 89,
+        strengths: [
+          "Sapolsky integrated causal influences across immediate context, physiology, development, culture, and evolution without reducing behavior to one factor.",
+          "He correctly distinguished determinism from fatalism and explained how arguments and learning can produce change as causal mechanisms.",
+          "His historical examples supported substantial humility about responsibility judgments and the harms of premature retribution.",
+          "He defended a rule-level consequentialist reason not to frame innocents and shifted the practical debate toward humane treatment."
+        ],
+        blunders: [
+          {
+            text:
+              "He repeatedly inferred complete determination from an expanding catalogue of probabilistic influences without evidence that those influences jointly fix a unique action.",
+            links: [
+              {
+                label: "Scope neglect",
+                url: bias("scope-neglect")
+              }
+            ]
+          },
+          {
+            text:
+              "His sweeping attack on intuition grouped philosophical seemings with superstition, prejudice, folk diagnosis, and post hoc consumer explanations despite their different epistemic sources.",
+            links: [
+              {
+                label: "Equivocation",
+                url: fallacy("equivocation")
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
 ];
 
 export const publishedDebates = debates.filter(
