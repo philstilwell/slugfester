@@ -168,6 +168,7 @@ requireIncludes("topics page", styles, ".topics-page");
 requireIncludes("topics page", styles, ".topics-hero");
 requireIncludes("topics page", styles, ".topics-hero h1");
 requireIncludes("topics page", styles, ".topic-jump-list");
+requireIncludes("topics page", styles, "grid-template-columns: repeat(4, minmax(0, 1fr));");
 requireIncludes("topics page", styles, ".topic-debate-card");
 requireIncludes("topics page", styles, ".topic-card-people");
 requireIncludes("topics page", styles, ".topic-card-reveal");
