@@ -800,6 +800,11 @@ export const interlocutorAvatars = [
     name: "Fuz Rana",
     src: `${avatarBasePath}/fuz-rana.webp`,
     aliases: ["Fuz Rana"]
+  },
+  {
+    name: "S. Joshua Swamidass",
+    src: `${avatarBasePath}/s-joshua-swamidass.webp`,
+    aliases: ["S. Joshua Swamidass"]
   }
 ];
 
