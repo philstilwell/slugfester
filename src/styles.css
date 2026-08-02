@@ -2841,8 +2841,7 @@ a {
   color: #30413e;
 }
 
-.assessment-model,
-.assessment-rubric {
+.assessment-model {
   flex-basis: 100%;
   color: var(--muted) !important;
   font-size: 0.82rem;
@@ -3486,8 +3485,14 @@ a {
 }
 
 .logical-extension {
-  padding: 34px 0 76px;
-  border-top: 1px solid var(--line);
+  margin-bottom: 76px;
+  padding: clamp(26px, 4vw, 42px);
+  background:
+    radial-gradient(circle at top right, rgba(47, 143, 133, 0.13), transparent 38%),
+    linear-gradient(135deg, #f2effb 0%, #edf4f8 54%, #eef8f5 100%);
+  border: 1px solid rgba(91, 76, 146, 0.22);
+  border-radius: 18px;
+  box-shadow: 0 24px 60px rgba(47, 41, 82, 0.1);
 }
 
 .logical-extension-heading > div {
@@ -3496,15 +3501,24 @@ a {
 
 .logical-extension-heading h2 {
   margin: 0;
+  color: #302a58;
   font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.logical-extension-heading .eyebrow {
+  color: #6651a1;
+}
+
+.logical-extension-heading .section-summary {
+  color: #55506e;
 }
 
 .ai-extension-accordion {
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  box-shadow: 0 12px 30px rgba(27, 43, 41, 0.06);
+  background: rgba(249, 248, 254, 0.9);
+  border: 1px solid rgba(91, 76, 146, 0.26);
+  border-radius: 12px;
+  box-shadow: 0 14px 34px rgba(47, 41, 82, 0.08);
 }
 
 .ai-extension-accordion summary {
@@ -3513,7 +3527,8 @@ a {
   justify-content: space-between;
   gap: 18px;
   padding: 18px 20px;
-  color: var(--ink);
+  color: #2d284d;
+  background: linear-gradient(90deg, rgba(229, 223, 246, 0.86), rgba(231, 244, 242, 0.76));
   cursor: pointer;
   list-style: none;
   transition: background 160ms ease;
@@ -3524,7 +3539,7 @@ a {
 }
 
 .ai-extension-accordion summary:hover {
-  background: var(--surface-2);
+  background: linear-gradient(90deg, rgba(219, 211, 242, 0.96), rgba(218, 239, 235, 0.9));
 }
 
 .ai-extension-accordion summary:focus-visible {
@@ -3542,7 +3557,7 @@ a {
 }
 
 .ai-extension-accordion summary small {
-  color: var(--muted);
+  color: #625d78;
   font-size: 0.8rem;
   font-weight: 700;
   line-height: 1.35;
@@ -3553,7 +3568,7 @@ a {
   flex: 0 0 28px;
   width: 28px;
   height: 28px;
-  background: var(--ink);
+  background: #574584;
   border-radius: 50%;
 }
 
@@ -3576,7 +3591,7 @@ a {
 }
 
 .ai-extension-accordion[open] summary {
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(91, 76, 146, 0.2);
 }
 
 .ai-extension-accordion[open] summary i::after {
@@ -3585,17 +3600,18 @@ a {
 
 .ai-extension-accordion-content {
   padding: 20px;
+  background: rgba(242, 240, 249, 0.72);
 }
 
 .logical-extension-intro {
   max-width: 900px;
   margin: 0 0 22px;
   padding: 14px 16px;
-  color: #40524f;
+  color: rgba(255, 255, 255, 0.88);
   font-size: 0.9rem;
   font-weight: 650;
   line-height: 1.5;
-  background: rgba(255, 255, 255, 0.7);
+  background: #302b55;
   border-left: 4px solid var(--gold);
 }
 
@@ -3608,10 +3624,10 @@ a {
 
 .logical-extension-side {
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  box-shadow: 0 14px 34px rgba(27, 43, 41, 0.07);
+  background: rgba(255, 254, 251, 0.96);
+  border: 1px solid rgba(91, 76, 146, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 14px 34px rgba(47, 41, 82, 0.08);
 }
 
 .logical-extension-side.teal {
@@ -3698,8 +3714,8 @@ a {
 
 .new-arguments {
   padding: 18px;
-  background: rgba(238, 242, 238, 0.58);
-  border-top: 1px solid var(--line);
+  background: rgba(237, 234, 246, 0.62);
+  border-top: 1px solid rgba(91, 76, 146, 0.18);
 }
 
 .new-arguments h4 {

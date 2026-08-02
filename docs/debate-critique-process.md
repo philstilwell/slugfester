@@ -152,7 +152,7 @@ For each side provide:
 - Two to four genuinely new reinforcing arguments of 45–130 words each.
 - Direct answers to the strongest objections exposed by the assessment.
 
-Interpret “unassailable” as maximally resistant to the live objections, not literally immune to rational dispute.
+Strengthen both positions against the clearest live objections while keeping each conclusion proportionate to its premises.
 
 ## Manual Checklist
 

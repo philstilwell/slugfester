@@ -2313,15 +2313,14 @@ function renderScoringNote(debate) {
 
   const model = assessmentModelFor(debate);
   const rubric = debate.assessmentRubric
-    ? `<span class="assessment-rubric">Rubric: ${escapeHtml(debate.assessmentRubric)}.</span>`
+    ? ` — Rubric: ${escapeHtml(debate.assessmentRubric)}.`
     : "";
 
   return `
     <section class="scoring-note" aria-label="Scoring note">
       <strong>AI-generated scorecard</strong>
       <span>${escapeHtml(debate.scoringNote)}</span>
-      <span class="assessment-model">Assessments made by ${escapeHtml(model)}.</span>
-      ${rubric}
+      <span class="assessment-model">Assessments made by ${escapeHtml(model)}.${rubric}</span>
     </section>
   `;
 }
@@ -2562,7 +2561,7 @@ function renderLogicalExtension(debate) {
         </summary>
         <div class="ai-extension-accordion-content">
           <p class="logical-extension-intro">
-            This section is an AI-generated contribution from ${escapeHtml(model)} for Slugfester—not a transcript summary, a quotation, or a claim that either speaker made these arguments in this form. The AI extends and strengthens both positions independently. “Unassailable” here means rebuilt to withstand the clearest objections in this exchange—not immune from rational dispute.
+            This section is an AI-generated contribution from ${escapeHtml(model)} for Slugfester—not a transcript summary, a quotation, or a claim that either speaker made these arguments in this form. The AI independently extends and strengthens both positions against the clearest objections raised in the exchange.
           </p>
           <div class="logical-extension-grid">
             ${renderLogicalExtensionSide(debate.sides.pro, debate.logicalExtension.pro, "teal")}
