@@ -22,6 +22,14 @@ const gate = JSON.parse(await readFile(path.join(root, "gate-manifest.json"), "u
 const coverageLabels = ["not-applicable", "full", "partial", "relevant-nonanswer", "substitution"];
 const burdenLabels = ["completes", "advances-central", "advances-sub-burden", "topical-peripheral", "unadopted-or-irrelevant"];
 const aggregate = { coverageA: [], coverageB: [], diagnosticA: [], diagnosticB: [], reframeA: [], reframeB: [], burdenA: [], burdenB: [], tupleA: [], tupleB: [], finalDiagnostic: [], finalReframe: [] };
+const diagnostics = {
+  coverageDisagreementPairs: {},
+  burdenDisagreementPairs: {},
+  diagnosticDisagreementDirections: { "false -> true": 0, "true -> false": 0 },
+  reframeDisagreementDirections: { "false -> true": 0, "true -> false": 0 },
+  finalCoverageDistribution: Object.fromEntries(coverageLabels.map((label) => [label, 0])),
+  finalBurdenDistribution: Object.fromEntries(burdenLabels.map((label) => [label, 0])),
+};
 const debates = [];
 let inventoryAtomicityViolations = 0;
 let targetPacketViolations = 0;
@@ -57,10 +65,22 @@ for (const debate of gate.sample.debates) {
     aggregate.burdenA.push(left.burdenRelation); aggregate.burdenB.push(right.burdenRelation);
     aggregate.tupleA.push(leftTuple); aggregate.tupleB.push(rightTuple);
     aggregate.finalDiagnostic.push(final.diagnostic); aggregate.finalReframe.push(final.reframe);
+    diagnostics.finalCoverageDistribution[final.targetCoverage] += 1;
+    diagnostics.finalBurdenDistribution[final.burdenRelation] += 1;
     if (left.targetCoverage === right.targetCoverage) counts.coverage += 1;
+    else {
+      const pair = [left.targetCoverage, right.targetCoverage].sort().join(" <-> ");
+      diagnostics.coverageDisagreementPairs[pair] = (diagnostics.coverageDisagreementPairs[pair] ?? 0) + 1;
+    }
     if (left.mechanismFlags.diagnostic === right.mechanismFlags.diagnostic) counts.diagnostic += 1;
+    else diagnostics.diagnosticDisagreementDirections[`${left.mechanismFlags.diagnostic} -> ${right.mechanismFlags.diagnostic}`] += 1;
     if (left.mechanismFlags.reframe === right.mechanismFlags.reframe) counts.reframe += 1;
+    else diagnostics.reframeDisagreementDirections[`${left.mechanismFlags.reframe} -> ${right.mechanismFlags.reframe}`] += 1;
     if (left.burdenRelation === right.burdenRelation) counts.burden += 1;
+    else {
+      const pair = [left.burdenRelation, right.burdenRelation].sort().join(" <-> ");
+      diagnostics.burdenDisagreementPairs[pair] = (diagnostics.burdenDisagreementPairs[pair] ?? 0) + 1;
+    }
     if (leftTuple === rightTuple) counts.tuple += 1;
   }
   moveCount += inventory.moves.length;
@@ -127,6 +147,12 @@ const report = {
   independence: { inventoryBuilders: "fresh-score-blind-per-debate", inventoryReviewers: "different-fresh-per-debate", annotationPasses: "two-different-fresh-isolated-tasks-per-debate", adjudication: "fresh-no-scores", legacyAssessmentAccessed: false },
   debates,
   agreement,
+  diagnostics: {
+    ...diagnostics,
+    finalMechanismPositiveCounts: { diagnostic: agreement.diagnosticFlag.adjudicatedPositiveCount, reframe: agreement.reframeFlag.adjudicatedPositiveCount },
+    fieldDisagreementCount: debates.reduce((sum, debate) => sum + debate.fieldDisagreementCount, 0),
+    tupleDisagreementCount: moveCount - aggregate.tupleA.filter((value, index) => value === aggregate.tupleB[index]).length,
+  },
   gates,
   hardGates,
   decision: {
