@@ -1,0 +1,1797 @@
+{
+  "schemaVersion": "2.5-development-derived-examples",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.5",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.5",
+  "model": "5.6 Sol",
+  "heldOutEligible": false,
+  "generatedAt": "2026-08-03T03:15:47.664Z",
+  "source": {
+    "path": "docs/calibration/v2.5/development/v2.4-disputed-cases.json",
+    "caseCount": 15,
+    "disputedFieldCount": 24
+  },
+  "exampleCount": 15,
+  "examples": [
+    {
+      "caseId": "V24-DISPUTE-01",
+      "debateId": "carroll-shermer-hutchinson-dsouza-science-religion-2012",
+      "debateNumber": "35",
+      "moveId": "35-M04",
+      "side": "con",
+      "speaker": "Ian Hutchinson",
+      "timestamp": "18:05",
+      "sourceSpan": {
+        "startMs": 1085000,
+        "endMs": 1106720
+      },
+      "sourceExcerpt": "Science is not all the real knowledge there is. Scientism is not a finding of science, nor does it follow from science. It's an unproven presumption. And since scientism isn't demonstrated by science, it's a self-contradictory presumption.",
+      "interactionMode": "constructive",
+      "targetPacket": null,
+      "burdenRoutes": [
+        {
+          "id": "V24-DISPUTE-01-ROUTE",
+          "side": "con",
+          "description": "Show that the inference from successful natural science to the refutation of religion illicitly excludes relevant non-scientific evidence or exceeds science's proper scope.",
+          "successCriteria": "Identify a central religious claim and a relevant historical, testimonial, philosophical, or personal evidential route that the pro case does not test, or expose a necessary anti-religious premise not established by scientific findings.",
+          "bridges": [
+            {
+              "id": "V24-DISPUTE-01-ROUTE-MOTION",
+              "tier": "motion",
+              "description": "Identify a central religious claim and a relevant historical, testimonial, philosophical, or personal evidential route that the pro case does not test, or expose a necessary anti-religious premise not established by scientific findings."
+            },
+            {
+              "id": "V24-DISPUTE-01-ROUTE-CENTRAL",
+              "tier": "central",
+              "description": "Show that the inference from successful natural science to the refutation of religion illicitly excludes relevant non-scientific evidence or exceeds science's proper scope."
+            },
+            {
+              "id": "V24-DISPUTE-01-ROUTE-SUB",
+              "tier": "subsidiary",
+              "description": "Establish or attack the necessary local premise, distinction, or evidential issue identified by this atomic move."
+            }
+          ]
+        }
+      ],
+      "burdenPacket": {
+        "primaryRouteId": "V24-DISPUTE-01-ROUTE",
+        "eligibleBridgeIds": [
+          "V24-DISPUTE-01-ROUTE-MOTION",
+          "V24-DISPUTE-01-ROUTE-CENTRAL",
+          "V24-DISPUTE-01-ROUTE-SUB"
+        ],
+        "selectionRationale": "This development fixture locks the adjudicated adopted route and exposes all three tiered bridges so the relation can be calculator-derived."
+      },
+      "disputedV24Fields": [
+        "diagnostic",
+        "burdenRelation"
+      ],
+      "annotation": {
+        "coveragePrimitives": {
+          "componentContacts": [],
+          "targetPreserved": null,
+          "relevantContraryMaterial": null,
+          "derivedTargetCoverage": "not-applicable"
+        },
+        "diagnosticPrimitives": {
+          "defectType": "none",
+          "defectEvidence": null,
+          "targetImpactExplicit": false,
+          "targetImpactEvidence": null,
+          "derivedDiagnostic": false
+        },
+        "reframePrimitives": {
+          "malformedDemandExplained": false,
+          "malformedDemandEvidence": null,
+          "replacementDemandStated": false,
+          "replacementDemandEvidence": null,
+          "derivedReframe": false
+        },
+        "burdenPrimitives": {
+          "contactedBridges": [
+            {
+              "bridgeId": "V24-DISPUTE-01-ROUTE-CENTRAL",
+              "contactMode": "supports"
+            }
+          ],
+          "derivedBurdenRelation": "advances-central"
+        }
+      },
+      "lesson": "The v2.5 primitives reproduce the adjudicated v2.4 diagnostic, burdenRelation outcome without asking one compound binary or burden-tier question."
+    },
+    {
+      "caseId": "V24-DISPUTE-02",
+      "debateId": "carroll-shermer-hutchinson-dsouza-science-religion-2012",
+      "debateNumber": "35",
+      "moveId": "35-M05",
+      "side": "pro",
+      "speaker": "Sean Carroll",
+      "timestamp": "48:34",
+      "sourceSpan": {
+        "startMs": 2914079,
+        "endMs": 2940720
+      },
+      "sourceExcerpt": "and we know there are other things we don't know. We know where the dividing line is between what we know and what we don't know because of good reasons for why there is a universe rather than not. We don't know the answer to that. Is there life after death? We know the answer to that. Why? Because we know what we're made of. We know how it acts. We know there is nothing to keep any sort of soul alive after the body dies.",
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "35-T05",
+        "targetSpeaker": "Dinesh D'Souza",
+        "sourceSpan": {
+          "startMs": 2320800,
+          "endMs": 2338240
+        },
+        "sourceExcerpt": "Why is there a universe? There's no scientific answer to that question. Why are we here? There's no answer to that question either. What's going to happen to us after we we die? Science has no clue.",
+        "sourceExcerptSha256": "7cad62c88c47c33b8ffb7eddbbac402b5f8a28c20653426ca427e1172416af14",
+        "claim": "Science has no answer to why the universe or humanity exists and no answer about life after death.",
+        "indispensableComponents": [
+          {
+            "id": "35-T05-C1",
+            "text": "Science lacks an answer to why the universe or human beings exist."
+          },
+          {
+            "id": "35-T05-C2",
+            "text": "Science lacks an answer about what happens after death."
+          }
+        ],
+        "selectionRationale": "This is the strongest live target because Carroll explicitly identifies D'Souza's list and directly separates a genuinely open origins question from the claimed answer about postmortem survival."
+      },
+      "burdenRoutes": [
+        {
+          "id": "V24-DISPUTE-02-ROUTE",
+          "side": "pro",
+          "description": "Show that science supports a unified naturalistic account and leaves no evidenced supernatural causal role needed to explain the world.",
+          "successCriteria": "Identify a central supernatural claim that would make an observable difference, then show the predicted difference is absent or that a tested natural account explains the same observations without it.",
+          "bridges": [
+            {
+              "id": "V24-DISPUTE-02-ROUTE-MOTION",
+              "tier": "motion",
+              "description": "Identify a central supernatural claim that would make an observable difference, then show the predicted difference is absent or that a tested natural account explains the same observations without it."
+            },
+            {
+              "id": "V24-DISPUTE-02-ROUTE-CENTRAL",
+              "tier": "central",
+              "description": "Show that science supports a unified naturalistic account and leaves no evidenced supernatural causal role needed to explain the world."
+            },
+            {
+              "id": "V24-DISPUTE-02-ROUTE-SUB",
+              "tier": "subsidiary",
+              "description": "Establish or attack the necessary local premise, distinction, or evidential issue identified by this atomic move."
+            }
+          ]
+        }
+      ],
+      "burdenPacket": {
+        "primaryRouteId": "V24-DISPUTE-02-ROUTE",
+        "eligibleBridgeIds": [
+          "V24-DISPUTE-02-ROUTE-MOTION",
+          "V24-DISPUTE-02-ROUTE-CENTRAL",
+          "V24-DISPUTE-02-ROUTE-SUB"
+        ],
+        "selectionRationale": "This development fixture locks the adjudicated adopted route and exposes all three tiered bridges so the relation can be calculator-derived."
+      },
+      "disputedV24Fields": [
+        "diagnostic"
+      ],
+      "annotation": {
+        "coveragePrimitives": {
+          "componentContacts": [
+            {
+              "componentId": "35-T05-C1",
+              "contact": "addressed"
+            },
+            {
+              "componentId": "35-T05-C2",
+              "contact": "addressed"
+            }
+          ],
+          "targetPreserved": true,
+          "relevantContraryMaterial": false,
+          "derivedTargetCoverage": "full"
+        },
+        "diagnosticPrimitives": {
+          "defectType": "other",
+          "defectEvidence": {
+            "text": "We know where the dividing line is between what we know and what we don't know",
+            "startChar": 50,
+            "endChar": 128
+          },
+          "targetImpactExplicit": true,
+          "targetImpactEvidence": {
+            "text": "Is there life after death? We know the answer to that.",
+            "startChar": 232,
+            "endChar": 286
+          },
+          "derivedDiagnostic": true
+        },
+        "reframePrimitives": {
+          "malformedDemandExplained": false,
+          "malformedDemandEvidence": null,
+          "replacementDemandStated": false,
+          "replacementDemandEvidence": null,
+          "derivedReframe": false
+        },
+        "burdenPrimitives": {
+          "contactedBridges": [
+            {
+              "bridgeId": "V24-DISPUTE-02-ROUTE-MOTION",
+              "contactMode": "supports"
+            }
+          ],
+          "derivedBurdenRelation": "completes"
+        }
+      },
+      "lesson": "The v2.5 primitives reproduce the adjudicated v2.4 diagnostic outcome without asking one compound binary or burden-tier question."
+    },
+    {
+      "caseId": "V24-DISPUTE-03",
+      "debateId": "carroll-shermer-hutchinson-dsouza-science-religion-2012",
+      "debateNumber": "35",
+      "moveId": "35-M07",
+      "side": "con",
+      "speaker": "Dinesh D'Souza",
+      "timestamp": "1:06:52",
+      "sourceSpan": {
+        "startMs": 4012960,
+        "endMs": 4048480
+      },
+      "sourceExcerpt": "the temperature rises, the molecules become excited, there's bubbling and so on. And he describes the laws of physics and so on. And that is one explanation and it's a very valid explanation of what's happening. But here's a second explanation. Desha is trying to make a cup of tea. Now, that is a second and a perfectly valid and in fact a needed explanation to give a full and accurate account of what's going on. To pretend that the scientific explanation is the only explanation is just plain ignorant.",
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "35-T07",
+        "targetSpeaker": "Sean Carroll",
+        "sourceSpan": {
+          "startMs": 762320,
+          "endMs": 793920
+        },
+        "sourceExcerpt": "If you go to any university physics department, listen to the talks they give or the papers they write. Go to any biology department. Go to any neuroscience department, any philosophy department. People whose professional job it is to explain the world, to come up with explanatory frameworks that match what we see. No one mentions God. There's never an appeal to a supernatural realm by people whose job it is to explain what happens in the world. Everyone knows that the naturalist explanations are the ones that work.",
+        "sourceExcerptSha256": "3f11d22d1402715463cb01da959ad8f6f4766fb6680c85fc3fb42ec7c11eaff0",
+        "claim": "The explanatory frameworks that successfully match the world are naturalistic and make no appeal to God or a supernatural realm.",
+        "indispensableComponents": [
+          {
+            "id": "35-T07-C1",
+            "text": "Professional explanatory practice across relevant disciplines omits God and supernatural appeals."
+          },
+          {
+            "id": "35-T07-C2",
+            "text": "Naturalistic explanations are the frameworks that successfully match observed phenomena."
+          }
+        ],
+        "selectionRationale": "This is the strongest live target because D'Souza's tea example attacks the implied exhaustiveness of the naturalistic explanatory success Carroll offered as a central reason for the motion."
+      },
+      "burdenRoutes": [
+        {
+          "id": "V24-DISPUTE-03-ROUTE",
+          "side": "con",
+          "description": "Show that the inference from successful natural science to the refutation of religion illicitly excludes relevant non-scientific evidence or exceeds science's proper scope.",
+          "successCriteria": "Identify a central religious claim and a relevant historical, testimonial, philosophical, or personal evidential route that the pro case does not test, or expose a necessary anti-religious premise not established by scientific findings.",
+          "bridges": [
+            {
+              "id": "V24-DISPUTE-03-ROUTE-MOTION",
+              "tier": "motion",
+              "description": "Identify a central religious claim and a relevant historical, testimonial, philosophical, or personal evidential route that the pro case does not test, or expose a necessary anti-religious premise not established by scientific findings."
+            },
+            {
+              "id": "V24-DISPUTE-03-ROUTE-CENTRAL",
+              "tier": "central",
+              "description": "Show that the inference from successful natural science to the refutation of religion illicitly excludes relevant non-scientific evidence or exceeds science's proper scope."
+            },
+            {
+              "id": "V24-DISPUTE-03-ROUTE-SUB",
+              "tier": "subsidiary",
+              "description": "Establish or attack the necessary local premise, distinction, or evidential issue identified by this atomic move."
+            }
+          ]
+        }
+      ],
+      "burdenPacket": {
+        "primaryRouteId": "V24-DISPUTE-03-ROUTE",
+        "eligibleBridgeIds": [
+          "V24-DISPUTE-03-ROUTE-MOTION",
+          "V24-DISPUTE-03-ROUTE-CENTRAL",
+          "V24-DISPUTE-03-ROUTE-SUB"
+        ],
+        "selectionRationale": "This development fixture locks the adjudicated adopted route and exposes all three tiered bridges so the relation can be calculator-derived."
+      },
+      "disputedV24Fields": [
+        "targetCoverage",
+        "diagnostic",
+        "reframe",
+        "burdenRelation"
+      ],
+      "annotation": {
+        "coveragePrimitives": {
+          "componentContacts": [
+            {
+              "componentId": "35-T07-C1",
+              "contact": "addressed"
+            },
+            {
+              "componentId": "35-T07-C2",
+              "contact": "not-addressed"
+            }
+          ],
+          "targetPreserved": true,
+          "relevantContraryMaterial": false,
+          "derivedTargetCoverage": "partial"
+        },
+        "diagnosticPrimitives": {
+          "defectType": "missing-premise",
+          "defectEvidence": {
+            "text": "To pretend that the scientific explanation is the only explanation is just plain ignorant.",
+            "startChar": 416,
+            "endChar": 506
+          },
+          "targetImpactExplicit": true,
+          "targetImpactEvidence": {
+            "text": "that is a second and a perfectly valid and in fact a needed explanation to give a full and accurate account of what's going on.",
+            "startChar": 288,
+            "endChar": 415
+          },
+          "derivedDiagnostic": true
+        },
+        "reframePrimitives": {
+          "malformedDemandExplained": true,
+          "malformedDemandEvidence": {
+            "text": "To pretend that the scientific explanation is the only explanation is just plain ignorant.",
+            "startChar": 416,
+            "endChar": 506
+          },
+          "replacementDemandStated": true,
+          "replacementDemandEvidence": {
+            "text": "that is a second and a perfectly valid and in fact a needed explanation to give a full and accurate account of what's going on.",
+            "startChar": 288,
+            "endChar": 415
+          },
+          "derivedReframe": true
+        },
+        "burdenPrimitives": {
+          "contactedBridges": [
+            {
+              "bridgeId": "V24-DISPUTE-03-ROUTE-CENTRAL",
+              "contactMode": "supports"
+            }
+          ],
+          "derivedBurdenRelation": "advances-central"
+        }
+      },
+      "lesson": "The v2.5 primitives reproduce the adjudicated v2.4 targetCoverage, diagnostic, reframe, burdenRelation outcome without asking one compound binary or burden-tier question."
+    },
+    {
+      "caseId": "V24-DISPUTE-04",
+      "debateId": "carroll-shermer-hutchinson-dsouza-science-religion-2012",
+      "debateNumber": "35",
+      "moveId": "35-M09",
+      "side": "pro",
+      "speaker": "Michael Shermer",
+      "timestamp": "1:27:02",
+      "sourceSpan": {
+        "startMs": 5222480,
+        "endMs": 5239440
+      },
+      "sourceExcerpt": "the process of creating purpose is itself a deterministic process part of the overall causal net of the universe. within that evolution has created the propensity for us to have goals to work toward those goals and that's what gives us the feeling of purpose the emotion or feeling of purpose gives us meaning",
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "35-T09",
+        "targetSpeaker": "Dinesh D'Souza",
+        "sourceSpan": {
+          "startMs": 5207440,
+          "endMs": 5222480
+        },
+        "sourceExcerpt": "All right. So now I I want to go back to a statement that your partner Sean Carroll said earlier which is he said there's no purpose in the universe but we can create purpose. How can we create purpose if we don't have free will?",
+        "sourceExcerptSha256": "45220a6f0d01dd2b703a929b2812dd274a2a4d950b9a741d00b811010000a22a",
+        "claim": "The pro side's denial of free will contradicts its claim that human beings can create purpose.",
+        "indispensableComponents": [
+          {
+            "id": "35-T09-C1",
+            "text": "The pro side denies libertarian free will."
+          },
+          {
+            "id": "35-T09-C2",
+            "text": "Creating purpose appears to require an agency unavailable under that denial."
+          }
+        ],
+        "selectionRationale": "This is the strongest live target because Shermer's answer is elicited by D'Souza's explicit internal-consistency challenge and supplies a deterministic account of the disputed purposive process."
+      },
+      "burdenRoutes": [
+        {
+          "id": "V24-DISPUTE-04-ROUTE",
+          "side": "pro",
+          "description": "Show that science supports a unified naturalistic account and leaves no evidenced supernatural causal role needed to explain the world.",
+          "successCriteria": "Identify a central supernatural claim that would make an observable difference, then show the predicted difference is absent or that a tested natural account explains the same observations without it.",
+          "bridges": [
+            {
+              "id": "V24-DISPUTE-04-ROUTE-MOTION",
+              "tier": "motion",
+              "description": "Identify a central supernatural claim that would make an observable difference, then show the predicted difference is absent or that a tested natural account explains the same observations without it."
+            },
+            {
+              "id": "V24-DISPUTE-04-ROUTE-CENTRAL",
+              "tier": "central",
+              "description": "Show that science supports a unified naturalistic account and leaves no evidenced supernatural causal role needed to explain the world."
+            },
+            {
+              "id": "V24-DISPUTE-04-ROUTE-SUB",
+              "tier": "subsidiary",
+              "description": "Establish or attack the necessary local premise, distinction, or evidential issue identified by this atomic move."
+            }
+          ]
+        }
+      ],
+      "burdenPacket": {
+        "primaryRouteId": "V24-DISPUTE-04-ROUTE",
+        "eligibleBridgeIds": [
+          "V24-DISPUTE-04-ROUTE-MOTION",
+          "V24-DISPUTE-04-ROUTE-CENTRAL",
+          "V24-DISPUTE-04-ROUTE-SUB"
+        ],
+        "selectionRationale": "This development fixture locks the adjudicated adopted route and exposes all three tiered bridges so the relation can be calculator-derived."
+      },
+      "disputedV24Fields": [
+        "burdenRelation"
+      ],
+      "annotation": {
+        "coveragePrimitives": {
+          "componentContacts": [
+            {
+              "componentId": "35-T09-C1",
+              "contact": "addressed"
+            },
+            {
+              "componentId": "35-T09-C2",
+              "contact": "addressed"
+            }
+          ],
+          "targetPreserved": true,
+          "relevantContraryMaterial": false,
+          "derivedTargetCoverage": "full"
+        },
+        "diagnosticPrimitives": {
+          "defectType": "none",
+          "defectEvidence": null,
+          "targetImpactExplicit": false,
+          "targetImpactEvidence": null,
+          "derivedDiagnostic": false
+        },
+        "reframePrimitives": {
+          "malformedDemandExplained": false,
+          "malformedDemandEvidence": null,
+          "replacementDemandStated": false,
+          "replacementDemandEvidence": null,
+          "derivedReframe": false
+        },
+        "burdenPrimitives": {
+          "contactedBridges": [
+            {
+              "bridgeId": "V24-DISPUTE-04-ROUTE-SUB",
+              "contactMode": "supports"
+            }
+          ],
+          "derivedBurdenRelation": "advances-sub-burden"
+        }
+      },
+      "lesson": "The v2.5 primitives reproduce the adjudicated v2.4 burdenRelation outcome without asking one compound binary or burden-tier question."
+    },
+    {
+      "caseId": "V24-DISPUTE-05",
+      "debateId": "carroll-shermer-hutchinson-dsouza-science-religion-2012",
+      "debateNumber": "35",
+      "moveId": "35-M11",
+      "side": "pro",
+      "speaker": "Sean Carroll",
+      "timestamp": "1:48:00",
+      "sourceSpan": {
+        "startMs": 6480480,
+        "endMs": 6493600
+      },
+      "sourceExcerpt": "And I tried to explain to him that you can't judge phenomena like this on a case-byase basis. If you want to claim something about the world, you have to fit it into a bigger picture.",
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "35-T11",
+        "targetSpeaker": "Dinesh D'Souza",
+        "sourceSpan": {
+          "startMs": 4981520,
+          "endMs": 5018480
+        },
+        "sourceExcerpt": "If you we went to a village of a hundred people and 95% of them said, \"We happen to know this guy named Bill.\" And there were five guys, of which three of them said, \"We've never heard of Bill.\" And two of them said, \"There's no Bill. There's no such person. We think the other 95 people made them up. They're hallucinating.\" Uh we'd have to ask outsiders, what's more likely, uh that the 95% of people are hallucinating or that the other five guys just don't know Bill?",
+        "sourceExcerptSha256": "18cc122062d699eca6d97b6e44a6c075e5a8afb4a2bd960c8bfffb80dbe9e753",
+        "claim": "Widespread reported acquaintance or experience is more plausibly veridical than a small skeptical minority's claim of mass hallucination.",
+        "indispensableComponents": [
+          {
+            "id": "35-T11-C1",
+            "text": "A very large majority reports the relevant acquaintance or experience."
+          },
+          {
+            "id": "35-T11-C2",
+            "text": "Mass hallucination is claimed to be less likely than the minority simply lacking the experience."
+          }
+        ],
+        "selectionRationale": "This is the strongest live target because Carroll's UFO analogy directly challenges D'Souza's inference from widespread testimony by requiring each report to fit a comparative explanatory worldview."
+      },
+      "burdenRoutes": [
+        {
+          "id": "V24-DISPUTE-05-ROUTE",
+          "side": "pro",
+          "description": "Show that science supports a unified naturalistic account and leaves no evidenced supernatural causal role needed to explain the world.",
+          "successCriteria": "Identify a central supernatural claim that would make an observable difference, then show the predicted difference is absent or that a tested natural account explains the same observations without it.",
+          "bridges": [
+            {
+              "id": "V24-DISPUTE-05-ROUTE-MOTION",
+              "tier": "motion",
+              "description": "Identify a central supernatural claim that would make an observable difference, then show the predicted difference is absent or that a tested natural account explains the same observations without it."
+            },
+            {
+              "id": "V24-DISPUTE-05-ROUTE-CENTRAL",
+              "tier": "central",
+              "description": "Show that science supports a unified naturalistic account and leaves no evidenced supernatural causal role needed to explain the world."
+            },
+            {
+              "id": "V24-DISPUTE-05-ROUTE-SUB",
+              "tier": "subsidiary",
+              "description": "Establish or attack the necessary local premise, distinction, or evidential issue identified by this atomic move."
+            }
+          ]
+        }
+      ],
+      "burdenPacket": {
+        "primaryRouteId": "V24-DISPUTE-05-ROUTE",
+        "eligibleBridgeIds": [
+          "V24-DISPUTE-05-ROUTE-MOTION",
+          "V24-DISPUTE-05-ROUTE-CENTRAL",
+          "V24-DISPUTE-05-ROUTE-SUB"
+        ],
+        "selectionRationale": "This development fixture locks the adjudicated adopted route and exposes all three tiered bridges so the relation can be calculator-derived."
+      },
+      "disputedV24Fields": [
+        "diagnostic",
+        "reframe"
+      ],
+      "annotation": {
+        "coveragePrimitives": {
+          "componentContacts": [
+            {
+              "componentId": "35-T11-C1",
+              "contact": "not-addressed"
+            },
+            {
+              "componentId": "35-T11-C2",
+              "contact": "not-addressed"
+            }
+          ],
+          "targetPreserved": true,
+          "relevantContraryMaterial": true,
+          "derivedTargetCoverage": "relevant-nonanswer"
+        },
+        "diagnosticPrimitives": {
+          "defectType": "none",
+          "defectEvidence": null,
+          "targetImpactExplicit": false,
+          "targetImpactEvidence": null,
+          "derivedDiagnostic": false
+        },
+        "reframePrimitives": {
+          "malformedDemandExplained": false,
+          "malformedDemandEvidence": null,
+          "replacementDemandStated": false,
+          "replacementDemandEvidence": null,
+          "derivedReframe": false
+        },
+        "burdenPrimitives": {
+          "contactedBridges": [
+            {
+              "bridgeId": "V24-DISPUTE-05-ROUTE-SUB",
+              "contactMode": "supports"
+            }
+          ],
+          "derivedBurdenRelation": "advances-sub-burden"
+        }
+      },
+      "lesson": "The v2.5 primitives reproduce the adjudicated v2.4 diagnostic, reframe outcome without asking one compound binary or burden-tier question."
+    },
+    {
+      "caseId": "V24-DISPUTE-06",
+      "debateId": "carroll-shermer-hutchinson-dsouza-science-religion-2012",
+      "debateNumber": "35",
+      "moveId": "35-M12",
+      "side": "pro",
+      "speaker": "Sean Carroll",
+      "timestamp": "1:48:51",
+      "sourceSpan": {
+        "startMs": 6531199,
+        "endMs": 6556400
+      },
+      "sourceExcerpt": "I don't think that there is really any difference in how that side of the room and this side of the room would argue that we should judge evidence and making choices. It's that I just don't think that that side of the room appreciates the to the extent that that this side of the room does how much the naturalistic view of the world does explain and what a great system it is for accounting for the world that we experience.",
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "35-T12",
+        "targetSpeaker": "Dinesh D'Souza",
+        "sourceSpan": {
+          "startMs": 5013560,
+          "endMs": 5024719
+        },
+        "sourceExcerpt": "these are ways not scientific ways but human ways experiential ways empirical ways in which we try to determine facts",
+        "sourceExcerptSha256": "87734d130f1b08e167c931a6a7289abc883f4cc2348ec1232678e5a4019cc2e8",
+        "claim": "Human and experiential evidential methods distinct from science can determine facts.",
+        "indispensableComponents": [
+          {
+            "id": "35-T12-C1",
+            "text": "The evidential methods invoked are human or experiential rather than scientific."
+          },
+          {
+            "id": "35-T12-C2",
+            "text": "Those methods can nevertheless determine facts."
+          }
+        ],
+        "selectionRationale": "This is the strongest live target because Carroll rejects a deep standards split and locates the disagreement instead in how much comparative explanatory credit naturalism deserves."
+      },
+      "burdenRoutes": [
+        {
+          "id": "V24-DISPUTE-06-ROUTE",
+          "side": "pro",
+          "description": "Show that science supports a unified naturalistic account and leaves no evidenced supernatural causal role needed to explain the world.",
+          "successCriteria": "Identify a central supernatural claim that would make an observable difference, then show the predicted difference is absent or that a tested natural account explains the same observations without it.",
+          "bridges": [
+            {
+              "id": "V24-DISPUTE-06-ROUTE-MOTION",
+              "tier": "motion",
+              "description": "Identify a central supernatural claim that would make an observable difference, then show the predicted difference is absent or that a tested natural account explains the same observations without it."
+            },
+            {
+              "id": "V24-DISPUTE-06-ROUTE-CENTRAL",
+              "tier": "central",
+              "description": "Show that science supports a unified naturalistic account and leaves no evidenced supernatural causal role needed to explain the world."
+            },
+            {
+              "id": "V24-DISPUTE-06-ROUTE-SUB",
+              "tier": "subsidiary",
+              "description": "Establish or attack the necessary local premise, distinction, or evidential issue identified by this atomic move."
+            }
+          ]
+        }
+      ],
+      "burdenPacket": {
+        "primaryRouteId": "V24-DISPUTE-06-ROUTE",
+        "eligibleBridgeIds": [
+          "V24-DISPUTE-06-ROUTE-MOTION",
+          "V24-DISPUTE-06-ROUTE-CENTRAL",
+          "V24-DISPUTE-06-ROUTE-SUB"
+        ],
+        "selectionRationale": "This development fixture locks the adjudicated adopted route and exposes all three tiered bridges so the relation can be calculator-derived."
+      },
+      "disputedV24Fields": [
+        "targetCoverage",
+        "diagnostic",
+        "reframe"
+      ],
+      "annotation": {
+        "coveragePrimitives": {
+          "componentContacts": [
+            {
+              "componentId": "35-T12-C1",
+              "contact": "addressed"
+            },
+            {
+              "componentId": "35-T12-C2",
+              "contact": "not-addressed"
+            }
+          ],
+          "targetPreserved": true,
+          "relevantContraryMaterial": false,
+          "derivedTargetCoverage": "partial"
+        },
+        "diagnosticPrimitives": {
+          "defectType": "other",
+          "defectEvidence": {
+            "text": "I don't think that there is really any difference in how that side of the room and this side of the room would argue that we should judge evidence",
+            "startChar": 0,
+            "endChar": 146
+          },
+          "targetImpactExplicit": true,
+          "targetImpactEvidence": {
+            "text": "how much the naturalistic view of the world does explain and what a great system it is for accounting for the world that we experience.",
+            "startChar": 290,
+            "endChar": 425
+          },
+          "derivedDiagnostic": true
+        },
+        "reframePrimitives": {
+          "malformedDemandExplained": true,
+          "malformedDemandEvidence": {
+            "text": "I don't think that there is really any difference in how that side of the room and this side of the room would argue that we should judge evidence",
+            "startChar": 0,
+            "endChar": 146
+          },
+          "replacementDemandStated": true,
+          "replacementDemandEvidence": {
+            "text": "how much the naturalistic view of the world does explain and what a great system it is for accounting for the world that we experience.",
+            "startChar": 290,
+            "endChar": 425
+          },
+          "derivedReframe": true
+        },
+        "burdenPrimitives": {
+          "contactedBridges": [
+            {
+              "bridgeId": "V24-DISPUTE-06-ROUTE-CENTRAL",
+              "contactMode": "supports"
+            }
+          ],
+          "derivedBurdenRelation": "advances-central"
+        }
+      },
+      "lesson": "The v2.5 primitives reproduce the adjudicated v2.4 targetCoverage, diagnostic, reframe outcome without asking one compound binary or burden-tier question."
+    },
+    {
+      "caseId": "V24-DISPUTE-07",
+      "debateId": "licona-dillahunty-resurrection-evidence-2017",
+      "debateNumber": "150",
+      "moveId": "D150-M05",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "timestamp": "00:58:55–00:59:29",
+      "sourceSpan": {
+        "startMs": 3535861,
+        "endMs": 3575840
+      },
+      "sourceExcerpt": "well the science disciplines have different methods there is no single scientific method um a geologist has a different kind of method than say um a chemist or an astronomer and there are certain not all science um has uh a scientific method where you can test something or you can repeat this in a lab for example geology evolutionary biology uh paleontology archaeology all of these science es you can't uh test these things you can't do controlled and repeatable experiments in these",
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "D150-T05",
+        "targetSpeaker": "Matt Dillahunty",
+        "sourceSpan": {
+          "startMs": 3053769,
+          "endMs": 3079736
+        },
+        "sourceExcerpt": "the problem here is that history cannot confirm the supernatural science can't confirm the supernatural we have no way to investigate it we are barred from investigating things that are not natural we can certainly investigate claims that are attributed to the supernatural hey I can tell you this but we can't develop a causal connection to that until we understand what the Supernatural is and not just what it isn't",
+        "sourceExcerptSha256": "c6a189d5460ab11e1cde216452518ac2e0e952a0ee552c2bec3c28bc0fbfe4b4",
+        "claim": "Neither historical nor scientific inquiry can establish a supernatural causal explanation without an intelligible account of what the supernatural is.",
+        "indispensableComponents": [
+          {
+            "id": "D150-T05-C1",
+            "text": "History and science cannot confirm the supernatural as such."
+          },
+          {
+            "id": "D150-T05-C2",
+            "text": "A causal connection cannot be established until the proposed supernatural domain is intelligibly specified."
+          }
+        ],
+        "selectionRationale": "This is the strongest live methodological objection to Licona's empirical case, because it denies both available confirmation and the causal bridge to a supernatural explanation."
+      },
+      "burdenRoutes": [
+        {
+          "id": "V24-DISPUTE-07-ROUTE",
+          "side": "pro",
+          "description": "Establish that empirical reports provide affirmative evidence for a supernatural dimension of reality.",
+          "successCriteria": "Identify observable reported events with external corroboration, explain which ordinary alternatives that corroboration excludes, and state the resulting evidential implication for a supernatural dimension.",
+          "bridges": [
+            {
+              "id": "V24-DISPUTE-07-ROUTE-MOTION",
+              "tier": "motion",
+              "description": "Identify observable reported events with external corroboration, explain which ordinary alternatives that corroboration excludes, and state the resulting evidential implication for a supernatural dimension."
+            },
+            {
+              "id": "V24-DISPUTE-07-ROUTE-CENTRAL",
+              "tier": "central",
+              "description": "Establish that empirical reports provide affirmative evidence for a supernatural dimension of reality."
+            },
+            {
+              "id": "V24-DISPUTE-07-ROUTE-SUB",
+              "tier": "subsidiary",
+              "description": "Establish or attack the necessary local premise, distinction, or evidential issue identified by this atomic move."
+            }
+          ]
+        }
+      ],
+      "burdenPacket": {
+        "primaryRouteId": "V24-DISPUTE-07-ROUTE",
+        "eligibleBridgeIds": [
+          "V24-DISPUTE-07-ROUTE-MOTION",
+          "V24-DISPUTE-07-ROUTE-CENTRAL",
+          "V24-DISPUTE-07-ROUTE-SUB"
+        ],
+        "selectionRationale": "This development fixture locks the adjudicated adopted route and exposes all three tiered bridges so the relation can be calculator-derived."
+      },
+      "disputedV24Fields": [
+        "targetCoverage",
+        "burdenRelation"
+      ],
+      "annotation": {
+        "coveragePrimitives": {
+          "componentContacts": [
+            {
+              "componentId": "D150-T05-C1",
+              "contact": "not-addressed"
+            },
+            {
+              "componentId": "D150-T05-C2",
+              "contact": "not-addressed"
+            }
+          ],
+          "targetPreserved": false,
+          "relevantContraryMaterial": false,
+          "derivedTargetCoverage": "substitution"
+        },
+        "diagnosticPrimitives": {
+          "defectType": "none",
+          "defectEvidence": null,
+          "targetImpactExplicit": false,
+          "targetImpactEvidence": null,
+          "derivedDiagnostic": false
+        },
+        "reframePrimitives": {
+          "malformedDemandExplained": false,
+          "malformedDemandEvidence": null,
+          "replacementDemandStated": false,
+          "replacementDemandEvidence": null,
+          "derivedReframe": false
+        },
+        "burdenPrimitives": {
+          "contactedBridges": [],
+          "derivedBurdenRelation": "topical-peripheral"
+        }
+      },
+      "lesson": "The v2.5 primitives reproduce the adjudicated v2.4 targetCoverage, burdenRelation outcome without asking one compound binary or burden-tier question."
+    },
+    {
+      "caseId": "V24-DISPUTE-08",
+      "debateId": "licona-dillahunty-resurrection-evidence-2017",
+      "debateNumber": "150",
+      "moveId": "D150-M07",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "timestamp": "01:10:48–01:11:09",
+      "sourceSpan": {
+        "startMs": 4248400,
+        "endMs": 4269923
+      },
+      "sourceExcerpt": "not death experiences we we also have accounts of people who' have gone on to an afterlife and come back with stories that we've later found a fraud ulent they've acknowledge that they're fraudulent so in a world where two people can both say I've had a an experience where I've died and gone to the other side and talk how do you tell which one's correct how do you tell if either of them are correct",
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "D150-T07",
+        "targetSpeaker": "Mike Licona",
+        "sourceSpan": {
+          "startMs": 3604498,
+          "endMs": 3626734
+        },
+        "sourceExcerpt": "he just said well you can't verify well some of them you can verify like I mentioned with the approximately 300 well-evidenced near-death experiences 200 alone are in that book um where in order to be included in that book by these scientists it had to have at least one external Source Who Could corroborate the occurr of the event",
+        "sourceExcerptSha256": "d02aff67002ea0a76db4c67909710e6ca29b58fb6903b172434f9aceb1b8045d",
+        "claim": "A large set of near-death reports is verified because inclusion required at least one external source corroborating the reported event.",
+        "indispensableComponents": [
+          {
+            "id": "D150-T07-C1",
+            "text": "The cited collection contains a substantial number of near-death cases."
+          },
+          {
+            "id": "D150-T07-C2",
+            "text": "External corroboration makes those cases verified evidence for the phenomenon at issue."
+          }
+        ],
+        "selectionRationale": "This is the immediate and strongest live evidential claim for the near-death cases, because Licona explicitly presents external corroboration as answering non-verifiability."
+      },
+      "burdenRoutes": [
+        {
+          "id": "V24-DISPUTE-08-ROUTE",
+          "side": "con",
+          "description": "Show that the pro case has not justified moving from unexplained reports to a supernatural cause.",
+          "successCriteria": "Identify the missing test or causal bridge, show that the cited observations do not distinguish a supernatural cause from live error, fraud, hallucination, or unknown-natural alternatives, and state why suspension remains warranted.",
+          "bridges": [
+            {
+              "id": "V24-DISPUTE-08-ROUTE-MOTION",
+              "tier": "motion",
+              "description": "Identify the missing test or causal bridge, show that the cited observations do not distinguish a supernatural cause from live error, fraud, hallucination, or unknown-natural alternatives, and state why suspension remains warranted."
+            },
+            {
+              "id": "V24-DISPUTE-08-ROUTE-CENTRAL",
+              "tier": "central",
+              "description": "Show that the pro case has not justified moving from unexplained reports to a supernatural cause."
+            },
+            {
+              "id": "V24-DISPUTE-08-ROUTE-SUB",
+              "tier": "subsidiary",
+              "description": "Establish or attack the necessary local premise, distinction, or evidential issue identified by this atomic move."
+            }
+          ]
+        }
+      ],
+      "burdenPacket": {
+        "primaryRouteId": "V24-DISPUTE-08-ROUTE",
+        "eligibleBridgeIds": [
+          "V24-DISPUTE-08-ROUTE-MOTION",
+          "V24-DISPUTE-08-ROUTE-CENTRAL",
+          "V24-DISPUTE-08-ROUTE-SUB"
+        ],
+        "selectionRationale": "This development fixture locks the adjudicated adopted route and exposes all three tiered bridges so the relation can be calculator-derived."
+      },
+      "disputedV24Fields": [
+        "targetCoverage"
+      ],
+      "annotation": {
+        "coveragePrimitives": {
+          "componentContacts": [
+            {
+              "componentId": "D150-T07-C1",
+              "contact": "not-addressed"
+            },
+            {
+              "componentId": "D150-T07-C2",
+              "contact": "not-addressed"
+            }
+          ],
+          "targetPreserved": false,
+          "relevantContraryMaterial": false,
+          "derivedTargetCoverage": "substitution"
+        },
+        "diagnosticPrimitives": {
+          "defectType": "none",
+          "defectEvidence": null,
+          "targetImpactExplicit": false,
+          "targetImpactEvidence": null,
+          "derivedDiagnostic": false
+        },
+        "reframePrimitives": {
+          "malformedDemandExplained": false,
+          "malformedDemandEvidence": null,
+          "replacementDemandStated": false,
+          "replacementDemandEvidence": null,
+          "derivedReframe": false
+        },
+        "burdenPrimitives": {
+          "contactedBridges": [
+            {
+              "bridgeId": "V24-DISPUTE-08-ROUTE-SUB",
+              "contactMode": "supports"
+            }
+          ],
+          "derivedBurdenRelation": "advances-sub-burden"
+        }
+      },
+      "lesson": "The v2.5 primitives reproduce the adjudicated v2.4 targetCoverage outcome without asking one compound binary or burden-tier question."
+    },
+    {
+      "caseId": "V24-DISPUTE-09",
+      "debateId": "licona-dillahunty-resurrection-evidence-2017",
+      "debateNumber": "150",
+      "moveId": "D150-M08",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "timestamp": "01:11:09–01:11:30",
+      "sourceSpan": {
+        "startMs": 4269923,
+        "endMs": 4290265
+      },
+      "sourceExcerpt": "methodological naturalism is the foundation of science it's not a safe space for Skeptics it is a recognition from philosophy of science that until we actually have the ability to investigate and confirm that the supernatural exists we don't get to appeal to it it doesn't bar us from testing claims that are attributed to the supernatural",
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "D150-T08",
+        "targetSpeaker": "Mike Licona",
+        "sourceSpan": {
+          "startMs": 3734271,
+          "endMs": 3755000
+        },
+        "sourceExcerpt": "methodological naturalism simply stated is a safe space for skeptical Scholars and scientists where they can hide from serious consideration from solutions that involve super Supernatural or God you know those uh trigger words for them because it makes them uncomfortable that's what methodological naturalism is and it fails",
+        "sourceExcerptSha256": "5d211b53f5face4c41acd605f1ae715201fcb361c22585bdacafbd7fedd8794c",
+        "claim": "Methodological naturalism illegitimately shelters skeptical investigators from seriously considering supernatural or divine solutions.",
+        "indispensableComponents": [
+          {
+            "id": "D150-T08-C1",
+            "text": "Methodological naturalism excludes supernatural solutions from consideration."
+          },
+          {
+            "id": "D150-T08-C2",
+            "text": "That exclusion is an intellectually protective restriction rather than a warranted investigative rule."
+          }
+        ],
+        "selectionRationale": "This is Licona's strongest direct characterization of methodological naturalism and therefore the proper object of Dillahunty's defense of that rule."
+      },
+      "burdenRoutes": [
+        {
+          "id": "V24-DISPUTE-09-ROUTE",
+          "side": "con",
+          "description": "Show that the pro case has not justified moving from unexplained reports to a supernatural cause.",
+          "successCriteria": "Identify the missing test or causal bridge, show that the cited observations do not distinguish a supernatural cause from live error, fraud, hallucination, or unknown-natural alternatives, and state why suspension remains warranted.",
+          "bridges": [
+            {
+              "id": "V24-DISPUTE-09-ROUTE-MOTION",
+              "tier": "motion",
+              "description": "Identify the missing test or causal bridge, show that the cited observations do not distinguish a supernatural cause from live error, fraud, hallucination, or unknown-natural alternatives, and state why suspension remains warranted."
+            },
+            {
+              "id": "V24-DISPUTE-09-ROUTE-CENTRAL",
+              "tier": "central",
+              "description": "Show that the pro case has not justified moving from unexplained reports to a supernatural cause."
+            },
+            {
+              "id": "V24-DISPUTE-09-ROUTE-SUB",
+              "tier": "subsidiary",
+              "description": "Establish or attack the necessary local premise, distinction, or evidential issue identified by this atomic move."
+            }
+          ]
+        }
+      ],
+      "burdenPacket": {
+        "primaryRouteId": "V24-DISPUTE-09-ROUTE",
+        "eligibleBridgeIds": [
+          "V24-DISPUTE-09-ROUTE-MOTION",
+          "V24-DISPUTE-09-ROUTE-CENTRAL",
+          "V24-DISPUTE-09-ROUTE-SUB"
+        ],
+        "selectionRationale": "This development fixture locks the adjudicated adopted route and exposes all three tiered bridges so the relation can be calculator-derived."
+      },
+      "disputedV24Fields": [
+        "reframe"
+      ],
+      "annotation": {
+        "coveragePrimitives": {
+          "componentContacts": [
+            {
+              "componentId": "D150-T08-C1",
+              "contact": "addressed"
+            },
+            {
+              "componentId": "D150-T08-C2",
+              "contact": "addressed"
+            }
+          ],
+          "targetPreserved": true,
+          "relevantContraryMaterial": false,
+          "derivedTargetCoverage": "full"
+        },
+        "diagnosticPrimitives": {
+          "defectType": "ambiguity",
+          "defectEvidence": {
+            "text": "it doesn't bar us from testing claims that are attributed to the supernatural",
+            "startChar": 262,
+            "endChar": 339
+          },
+          "targetImpactExplicit": true,
+          "targetImpactEvidence": {
+            "text": "until we actually have the ability to investigate and confirm that the supernatural exists we don't get to appeal to it",
+            "startChar": 142,
+            "endChar": 261
+          },
+          "derivedDiagnostic": true
+        },
+        "reframePrimitives": {
+          "malformedDemandExplained": true,
+          "malformedDemandEvidence": {
+            "text": "methodological naturalism is the foundation of science it's not a safe space for Skeptics",
+            "startChar": 0,
+            "endChar": 89
+          },
+          "replacementDemandStated": true,
+          "replacementDemandEvidence": {
+            "text": "until we actually have the ability to investigate and confirm that the supernatural exists we don't get to appeal to it",
+            "startChar": 142,
+            "endChar": 261
+          },
+          "derivedReframe": true
+        },
+        "burdenPrimitives": {
+          "contactedBridges": [
+            {
+              "bridgeId": "V24-DISPUTE-09-ROUTE-CENTRAL",
+              "contactMode": "supports"
+            }
+          ],
+          "derivedBurdenRelation": "advances-central"
+        }
+      },
+      "lesson": "The v2.5 primitives reproduce the adjudicated v2.4 reframe outcome without asking one compound binary or burden-tier question."
+    },
+    {
+      "caseId": "V24-DISPUTE-10",
+      "debateId": "licona-dillahunty-resurrection-evidence-2017",
+      "debateNumber": "150",
+      "moveId": "D150-M09",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "timestamp": "01:21:46–01:22:17",
+      "sourceSpan": {
+        "startMs": 4906912,
+        "endMs": 4937650
+      },
+      "sourceExcerpt": "that doesn't change the facts even if you're right barring an acceptance that it's possible to raise someone from the dead or that it's possible that there's a being who can raise someone from the dead you don't have a justification what you have is here's an empty tomb we don't have a natural explanation so we're just going to say that because we know so much the most reasonable explanation for these copies of copies of translations of facts is that Jesus rose from the dead",
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "D150-T09",
+        "targetSpeaker": "Mike Licona",
+        "sourceSpan": {
+          "startMs": 4078122,
+          "endMs": 4091448
+        },
+        "sourceExcerpt": "I would have to assume that God exists and wanted to raise Jesus no I wouldn't nowhere in my argument that I assume that God existed or wanted to raise Jesus like I said you look at the data you let the data speak for themselves apart from presuppositions",
+        "sourceExcerptSha256": "bd49454c89f036856d5b845d4abb455a290b3de192b151226c3c365ee8acc828",
+        "claim": "The resurrection inference does not assume God or divine intent; it follows by allowing the historical data to speak without presuppositions.",
+        "indispensableComponents": [
+          {
+            "id": "D150-T09-C1",
+            "text": "The argument does not assume that God exists or intended to raise Jesus."
+          },
+          {
+            "id": "D150-T09-C2",
+            "text": "The resurrection conclusion instead follows from the historical data considered without presuppositions."
+          }
+        ],
+        "selectionRationale": "This target is the clearest live denial that the resurrection inference depends on a prior possibility assumption, which is exactly the premise Dillahunty contests."
+      },
+      "burdenRoutes": [
+        {
+          "id": "V24-DISPUTE-10-ROUTE",
+          "side": "con",
+          "description": "Show that the pro case has not justified moving from unexplained reports to a supernatural cause.",
+          "successCriteria": "Identify the missing test or causal bridge, show that the cited observations do not distinguish a supernatural cause from live error, fraud, hallucination, or unknown-natural alternatives, and state why suspension remains warranted.",
+          "bridges": [
+            {
+              "id": "V24-DISPUTE-10-ROUTE-MOTION",
+              "tier": "motion",
+              "description": "Identify the missing test or causal bridge, show that the cited observations do not distinguish a supernatural cause from live error, fraud, hallucination, or unknown-natural alternatives, and state why suspension remains warranted."
+            },
+            {
+              "id": "V24-DISPUTE-10-ROUTE-CENTRAL",
+              "tier": "central",
+              "description": "Show that the pro case has not justified moving from unexplained reports to a supernatural cause."
+            },
+            {
+              "id": "V24-DISPUTE-10-ROUTE-SUB",
+              "tier": "subsidiary",
+              "description": "Establish or attack the necessary local premise, distinction, or evidential issue identified by this atomic move."
+            }
+          ]
+        }
+      ],
+      "burdenPacket": {
+        "primaryRouteId": "V24-DISPUTE-10-ROUTE",
+        "eligibleBridgeIds": [
+          "V24-DISPUTE-10-ROUTE-MOTION",
+          "V24-DISPUTE-10-ROUTE-CENTRAL",
+          "V24-DISPUTE-10-ROUTE-SUB"
+        ],
+        "selectionRationale": "This development fixture locks the adjudicated adopted route and exposes all three tiered bridges so the relation can be calculator-derived."
+      },
+      "disputedV24Fields": [
+        "reframe"
+      ],
+      "annotation": {
+        "coveragePrimitives": {
+          "componentContacts": [
+            {
+              "componentId": "D150-T09-C1",
+              "contact": "addressed"
+            },
+            {
+              "componentId": "D150-T09-C2",
+              "contact": "addressed"
+            }
+          ],
+          "targetPreserved": true,
+          "relevantContraryMaterial": false,
+          "derivedTargetCoverage": "full"
+        },
+        "diagnosticPrimitives": {
+          "defectType": "missing-premise",
+          "defectEvidence": {
+            "text": "barring an acceptance that it's possible to raise someone from the dead or that it's possible that there's a being who can raise someone from the dead",
+            "startChar": 51,
+            "endChar": 201
+          },
+          "targetImpactExplicit": true,
+          "targetImpactEvidence": {
+            "text": "you don't have a justification",
+            "startChar": 202,
+            "endChar": 232
+          },
+          "derivedDiagnostic": true
+        },
+        "reframePrimitives": {
+          "malformedDemandExplained": true,
+          "malformedDemandEvidence": {
+            "text": "that doesn't change the facts even if you're right",
+            "startChar": 0,
+            "endChar": 50
+          },
+          "replacementDemandStated": true,
+          "replacementDemandEvidence": {
+            "text": "barring an acceptance that it's possible to raise someone from the dead or that it's possible that there's a being who can raise someone from the dead you don't have a justification",
+            "startChar": 51,
+            "endChar": 232
+          },
+          "derivedReframe": true
+        },
+        "burdenPrimitives": {
+          "contactedBridges": [
+            {
+              "bridgeId": "V24-DISPUTE-10-ROUTE-MOTION",
+              "contactMode": "supports"
+            }
+          ],
+          "derivedBurdenRelation": "completes"
+        }
+      },
+      "lesson": "The v2.5 primitives reproduce the adjudicated v2.4 reframe outcome without asking one compound binary or burden-tier question."
+    },
+    {
+      "caseId": "V24-DISPUTE-11",
+      "debateId": "huemer-oppy-souls-personal-identity-2022",
+      "debateNumber": "190",
+      "moveId": "D190-M04",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "timestamp": "00:33:33",
+      "sourceSpan": {
+        "startMs": 2013279,
+        "endMs": 2042000
+      },
+      "sourceExcerpt": "the structure of the reasoning was that these things are evidence for dualism uh so like um you know intentionality and qualia um but they don't distinguish between substance and property dualism so like this is just evidence that there's a different kind of property because qualia are apparently a non-physical property and intentionality also and then how you get from dualism in general to substantialism is you have to look at the problem of personal identity yeah",
+      "interactionMode": "constructive",
+      "targetPacket": null,
+      "burdenRoutes": [
+        {
+          "id": "V24-DISPUTE-11-ROUTE",
+          "side": "pro",
+          "description": "Establish that conscious mental life includes nonphysical properties borne by a mental subject distinct from the organism or brain.",
+          "successCriteria": "A reviewer can mark success only if an identified mental feature resists a physical identity or account and the argument connects that result to a distinct subject or substance.",
+          "bridges": [
+            {
+              "id": "V24-DISPUTE-11-ROUTE-MOTION",
+              "tier": "motion",
+              "description": "A reviewer can mark success only if an identified mental feature resists a physical identity or account and the argument connects that result to a distinct subject or substance."
+            },
+            {
+              "id": "V24-DISPUTE-11-ROUTE-CENTRAL",
+              "tier": "central",
+              "description": "Establish that conscious mental life includes nonphysical properties borne by a mental subject distinct from the organism or brain."
+            },
+            {
+              "id": "V24-DISPUTE-11-ROUTE-SUB",
+              "tier": "subsidiary",
+              "description": "Establish or attack the necessary local premise, distinction, or evidential issue identified by this atomic move."
+            }
+          ]
+        }
+      ],
+      "burdenPacket": {
+        "primaryRouteId": "V24-DISPUTE-11-ROUTE",
+        "eligibleBridgeIds": [
+          "V24-DISPUTE-11-ROUTE-MOTION",
+          "V24-DISPUTE-11-ROUTE-CENTRAL",
+          "V24-DISPUTE-11-ROUTE-SUB"
+        ],
+        "selectionRationale": "This development fixture locks the adjudicated adopted route and exposes all three tiered bridges so the relation can be calculator-derived."
+      },
+      "disputedV24Fields": [
+        "burdenRelation"
+      ],
+      "annotation": {
+        "coveragePrimitives": {
+          "componentContacts": [],
+          "targetPreserved": null,
+          "relevantContraryMaterial": null,
+          "derivedTargetCoverage": "not-applicable"
+        },
+        "diagnosticPrimitives": {
+          "defectType": "none",
+          "defectEvidence": null,
+          "targetImpactExplicit": false,
+          "targetImpactEvidence": null,
+          "derivedDiagnostic": false
+        },
+        "reframePrimitives": {
+          "malformedDemandExplained": false,
+          "malformedDemandEvidence": null,
+          "replacementDemandStated": false,
+          "replacementDemandEvidence": null,
+          "derivedReframe": false
+        },
+        "burdenPrimitives": {
+          "contactedBridges": [
+            {
+              "bridgeId": "V24-DISPUTE-11-ROUTE-SUB",
+              "contactMode": "supports"
+            }
+          ],
+          "derivedBurdenRelation": "advances-sub-burden"
+        }
+      },
+      "lesson": "The v2.5 primitives reproduce the adjudicated v2.4 burdenRelation outcome without asking one compound binary or burden-tier question."
+    },
+    {
+      "caseId": "V24-DISPUTE-12",
+      "debateId": "huemer-oppy-souls-personal-identity-2022",
+      "debateNumber": "190",
+      "moveId": "D190-M05",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "timestamp": "00:36:16",
+      "sourceSpan": {
+        "startMs": 2176000,
+        "endMs": 2213280
+      },
+      "sourceExcerpt": "i think that most people think that intentionality is less of a problem for physicalists than sort of consciousness and qualia and part of the reason for that i think is that there are still lots of people who kind of side with the australians and think that you can be an identity theorist and functionalist and they think that kind of from functionalism you get a reasonable account of sort of intentional attitudes like belief and desire and so on",
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "D190-T05",
+        "targetSpeaker": "Michael Huemer",
+        "sourceSpan": {
+          "startMs": 2107680,
+          "endMs": 2128480
+        },
+        "sourceExcerpt": "the property of being about something so like when you have a thought your thought is about something and that's a weird property like yeah so it like doesn't sound like that's a physical property like physical properties sound like you know things like that mass or the shape or size or whatever and like property of referring to something doesn't sound physical",
+        "sourceExcerptSha256": "d2e80b313f95b78cbbd6dec20797387d41df998a625e5527bebfb773a1172231",
+        "claim": "Intentional aboutness differs from familiar physical properties and therefore supports a nonphysical mental property.",
+        "indispensableComponents": [
+          {
+            "id": "D190-T05-C1",
+            "text": "A thought intrinsically refers to or is about something."
+          },
+          {
+            "id": "D190-T05-C2",
+            "text": "Familiar physical properties such as mass, shape, and size do not exhibit that aboutness."
+          },
+          {
+            "id": "D190-T05-C3",
+            "text": "The disanalogy is evidence that intentionality is nonphysical."
+          }
+        ],
+        "selectionRationale": "This is the strongest live target because Oppy's response offers functionalism precisely as an account of the intentional attitudes Huemer says look unlike physical properties."
+      },
+      "burdenRoutes": [
+        {
+          "id": "V24-DISPUTE-12-ROUTE",
+          "side": "con",
+          "description": "Establish that persons and their mental states are states of natural organisms or brains without an additional mental substance.",
+          "successCriteria": "A reviewer can mark success only if a naturalistic identity or scale account covers a central mental feature and leaves no indispensable explanatory role for a separate mental substance.",
+          "bridges": [
+            {
+              "id": "V24-DISPUTE-12-ROUTE-MOTION",
+              "tier": "motion",
+              "description": "A reviewer can mark success only if a naturalistic identity or scale account covers a central mental feature and leaves no indispensable explanatory role for a separate mental substance."
+            },
+            {
+              "id": "V24-DISPUTE-12-ROUTE-CENTRAL",
+              "tier": "central",
+              "description": "Establish that persons and their mental states are states of natural organisms or brains without an additional mental substance."
+            },
+            {
+              "id": "V24-DISPUTE-12-ROUTE-SUB",
+              "tier": "subsidiary",
+              "description": "Establish or attack the necessary local premise, distinction, or evidential issue identified by this atomic move."
+            }
+          ]
+        }
+      ],
+      "burdenPacket": {
+        "primaryRouteId": "V24-DISPUTE-12-ROUTE",
+        "eligibleBridgeIds": [
+          "V24-DISPUTE-12-ROUTE-MOTION",
+          "V24-DISPUTE-12-ROUTE-CENTRAL",
+          "V24-DISPUTE-12-ROUTE-SUB"
+        ],
+        "selectionRationale": "This development fixture locks the adjudicated adopted route and exposes all three tiered bridges so the relation can be calculator-derived."
+      },
+      "disputedV24Fields": [
+        "targetCoverage"
+      ],
+      "annotation": {
+        "coveragePrimitives": {
+          "componentContacts": [
+            {
+              "componentId": "D190-T05-C1",
+              "contact": "addressed"
+            },
+            {
+              "componentId": "D190-T05-C2",
+              "contact": "addressed"
+            },
+            {
+              "componentId": "D190-T05-C3",
+              "contact": "addressed"
+            }
+          ],
+          "targetPreserved": true,
+          "relevantContraryMaterial": false,
+          "derivedTargetCoverage": "full"
+        },
+        "diagnosticPrimitives": {
+          "defectType": "none",
+          "defectEvidence": null,
+          "targetImpactExplicit": false,
+          "targetImpactEvidence": null,
+          "derivedDiagnostic": false
+        },
+        "reframePrimitives": {
+          "malformedDemandExplained": false,
+          "malformedDemandEvidence": null,
+          "replacementDemandStated": false,
+          "replacementDemandEvidence": null,
+          "derivedReframe": false
+        },
+        "burdenPrimitives": {
+          "contactedBridges": [
+            {
+              "bridgeId": "V24-DISPUTE-12-ROUTE-CENTRAL",
+              "contactMode": "supports"
+            }
+          ],
+          "derivedBurdenRelation": "advances-central"
+        }
+      },
+      "lesson": "The v2.5 primitives reproduce the adjudicated v2.4 targetCoverage outcome without asking one compound binary or burden-tier question."
+    },
+    {
+      "caseId": "V24-DISPUTE-13",
+      "debateId": "huemer-oppy-souls-personal-identity-2022",
+      "debateNumber": "190",
+      "moveId": "D190-M07",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "timestamp": "00:58:32",
+      "sourceSpan": {
+        "startMs": 3512960,
+        "endMs": 3537520
+      },
+      "sourceExcerpt": "yeah well it's like so can i ask you just a question about i mean i want to focus on the past bit but i want to ask you a question about this whatever happens now will be probability zero so isn't your argument going to entail that we i mean it's not it's not just a problem about your existence it's about anything that happens that's happening right now",
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "D190-T07",
+        "targetSpeaker": "Michael Huemer",
+        "sourceSpan": {
+          "startMs": 3470480,
+          "endMs": 3493760
+        },
+        "sourceExcerpt": "time is infinite both in the past and in the future okay so then on those assumptions what's the probability that you would be alive now specifically um it looks to me like it's zero okay so you know out of all the infinite past because you know like you should have been born at some previous time and if you can only live once and that would have prevented you from being here now",
+        "sourceExcerptSha256": "afd29b5dd5e113ccb571c45c4b40a5b51d4faba02658300a7d65be46c83bd671",
+        "claim": "Given infinite time and only one life, the probability of being alive now is zero because an earlier life would exclude the present one.",
+        "indispensableComponents": [
+          {
+            "id": "D190-T07-C1",
+            "text": "Time extends infinitely into the past and future."
+          },
+          {
+            "id": "D190-T07-C2",
+            "text": "A person can live only once on the hypothesis under test."
+          },
+          {
+            "id": "D190-T07-C3",
+            "text": "Those assumptions make the person's present existence probability zero because an earlier birth would prevent it."
+          }
+        ],
+        "selectionRationale": "This is the strongest live target because Oppy's generalization attacks the probability-zero premise that carries Huemer's inference from present existence to reincarnation."
+      },
+      "burdenRoutes": [
+        {
+          "id": "V24-DISPUTE-13-ROUTE",
+          "side": "con",
+          "description": "Defeat the probabilistic, recurrence, or identity bridge from present conscious existence to survival or re-embodiment after bodily death.",
+          "successCriteria": "A reviewer can mark success only if the act undercuts a necessary premise of the reincarnation inference, such as an infinite history, a person-specific probability result, or a nonsemantic identity link, and no independent survival route remains established.",
+          "bridges": [
+            {
+              "id": "V24-DISPUTE-13-ROUTE-MOTION",
+              "tier": "motion",
+              "description": "A reviewer can mark success only if the act undercuts a necessary premise of the reincarnation inference, such as an infinite history, a person-specific probability result, or a nonsemantic identity link, and no independent survival route remains established."
+            },
+            {
+              "id": "V24-DISPUTE-13-ROUTE-CENTRAL",
+              "tier": "central",
+              "description": "Defeat the probabilistic, recurrence, or identity bridge from present conscious existence to survival or re-embodiment after bodily death."
+            },
+            {
+              "id": "V24-DISPUTE-13-ROUTE-SUB",
+              "tier": "subsidiary",
+              "description": "Establish or attack the necessary local premise, distinction, or evidential issue identified by this atomic move."
+            }
+          ]
+        }
+      ],
+      "burdenPacket": {
+        "primaryRouteId": "V24-DISPUTE-13-ROUTE",
+        "eligibleBridgeIds": [
+          "V24-DISPUTE-13-ROUTE-MOTION",
+          "V24-DISPUTE-13-ROUTE-CENTRAL",
+          "V24-DISPUTE-13-ROUTE-SUB"
+        ],
+        "selectionRationale": "This development fixture locks the adjudicated adopted route and exposes all three tiered bridges so the relation can be calculator-derived."
+      },
+      "disputedV24Fields": [
+        "diagnostic",
+        "burdenRelation"
+      ],
+      "annotation": {
+        "coveragePrimitives": {
+          "componentContacts": [
+            {
+              "componentId": "D190-T07-C1",
+              "contact": "addressed"
+            },
+            {
+              "componentId": "D190-T07-C2",
+              "contact": "not-addressed"
+            },
+            {
+              "componentId": "D190-T07-C3",
+              "contact": "not-addressed"
+            }
+          ],
+          "targetPreserved": true,
+          "relevantContraryMaterial": false,
+          "derivedTargetCoverage": "partial"
+        },
+        "diagnosticPrimitives": {
+          "defectType": "none",
+          "defectEvidence": null,
+          "targetImpactExplicit": false,
+          "targetImpactEvidence": null,
+          "derivedDiagnostic": false
+        },
+        "reframePrimitives": {
+          "malformedDemandExplained": false,
+          "malformedDemandEvidence": null,
+          "replacementDemandStated": false,
+          "replacementDemandEvidence": null,
+          "derivedReframe": false
+        },
+        "burdenPrimitives": {
+          "contactedBridges": [
+            {
+              "bridgeId": "V24-DISPUTE-13-ROUTE-CENTRAL",
+              "contactMode": "supports"
+            }
+          ],
+          "derivedBurdenRelation": "advances-central"
+        }
+      },
+      "lesson": "The v2.5 primitives reproduce the adjudicated v2.4 diagnostic, burdenRelation outcome without asking one compound binary or burden-tier question."
+    },
+    {
+      "caseId": "V24-DISPUTE-14",
+      "debateId": "huemer-oppy-souls-personal-identity-2022",
+      "debateNumber": "190",
+      "moveId": "D190-M09",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "timestamp": "01:19:30",
+      "sourceSpan": {
+        "startMs": 4770080,
+        "endMs": 4809760
+      },
+      "sourceExcerpt": "impossible so so if you're so suppose you were doing kind of theory selection of theories of everything then you're going to be talking about theories that by your lights couldn't possibly be true um and so i don't think when you're doing that theory selection you can actually attribute probabilities to the theories i'm not a bayesian then i'll be zero at that level um i think there are limits to the ways in which you can sensibly attach probabilities to things",
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "D190-T09",
+        "targetSpeaker": "Michael Huemer",
+        "sourceSpan": {
+          "startMs": 4751040,
+          "endMs": 4767760
+        },
+        "sourceExcerpt": "yeah wait but so would you would you say that you know you apply probabilities to possibilities that aren't really possible because right because like we've got to consider you know we have to consider theories where the laws of physics are different right and like on your view those are impossible",
+        "sourceExcerptSha256": "42382f2f4ecce610e79d256e75de389b926b2f558e17654da46a3355dd3aa7b9",
+        "claim": "Rational theory comparison must consider and probabilistically assess rival laws even when Oppy's modal view declares those rivals metaphysically impossible.",
+        "indispensableComponents": [
+          {
+            "id": "D190-T09-C1",
+            "text": "Theory comparison considers candidate laws different from the actual laws."
+          },
+          {
+            "id": "D190-T09-C2",
+            "text": "Oppy's modal view treats those rival-law theories as metaphysically impossible."
+          },
+          {
+            "id": "D190-T09-C3",
+            "text": "Huemer asks whether probabilities must nevertheless apply to those candidates."
+          }
+        ],
+        "selectionRationale": "This is the strongest live target because Oppy's answer directly restricts the probability assignments Huemer says theory comparison appears to require."
+      },
+      "burdenRoutes": [
+        {
+          "id": "V24-DISPUTE-14-ROUTE",
+          "side": "con",
+          "description": "Defeat the probabilistic, recurrence, or identity bridge from present conscious existence to survival or re-embodiment after bodily death.",
+          "successCriteria": "A reviewer can mark success only if the act undercuts a necessary premise of the reincarnation inference, such as an infinite history, a person-specific probability result, or a nonsemantic identity link, and no independent survival route remains established.",
+          "bridges": [
+            {
+              "id": "V24-DISPUTE-14-ROUTE-MOTION",
+              "tier": "motion",
+              "description": "A reviewer can mark success only if the act undercuts a necessary premise of the reincarnation inference, such as an infinite history, a person-specific probability result, or a nonsemantic identity link, and no independent survival route remains established."
+            },
+            {
+              "id": "V24-DISPUTE-14-ROUTE-CENTRAL",
+              "tier": "central",
+              "description": "Defeat the probabilistic, recurrence, or identity bridge from present conscious existence to survival or re-embodiment after bodily death."
+            },
+            {
+              "id": "V24-DISPUTE-14-ROUTE-SUB",
+              "tier": "subsidiary",
+              "description": "Establish or attack the necessary local premise, distinction, or evidential issue identified by this atomic move."
+            }
+          ]
+        }
+      ],
+      "burdenPacket": {
+        "primaryRouteId": "V24-DISPUTE-14-ROUTE",
+        "eligibleBridgeIds": [
+          "V24-DISPUTE-14-ROUTE-MOTION",
+          "V24-DISPUTE-14-ROUTE-CENTRAL",
+          "V24-DISPUTE-14-ROUTE-SUB"
+        ],
+        "selectionRationale": "This development fixture locks the adjudicated adopted route and exposes all three tiered bridges so the relation can be calculator-derived."
+      },
+      "disputedV24Fields": [
+        "reframe"
+      ],
+      "annotation": {
+        "coveragePrimitives": {
+          "componentContacts": [
+            {
+              "componentId": "D190-T09-C1",
+              "contact": "addressed"
+            },
+            {
+              "componentId": "D190-T09-C2",
+              "contact": "addressed"
+            },
+            {
+              "componentId": "D190-T09-C3",
+              "contact": "addressed"
+            }
+          ],
+          "targetPreserved": true,
+          "relevantContraryMaterial": false,
+          "derivedTargetCoverage": "full"
+        },
+        "diagnosticPrimitives": {
+          "defectType": "contradiction",
+          "defectEvidence": {
+            "text": "theories that by your lights couldn't possibly be true",
+            "startChar": 142,
+            "endChar": 196
+          },
+          "targetImpactExplicit": true,
+          "targetImpactEvidence": {
+            "text": "i don't think when you're doing that theory selection you can actually attribute probabilities to the theories",
+            "startChar": 207,
+            "endChar": 317
+          },
+          "derivedDiagnostic": true
+        },
+        "reframePrimitives": {
+          "malformedDemandExplained": false,
+          "malformedDemandEvidence": null,
+          "replacementDemandStated": false,
+          "replacementDemandEvidence": null,
+          "derivedReframe": false
+        },
+        "burdenPrimitives": {
+          "contactedBridges": [
+            {
+              "bridgeId": "V24-DISPUTE-14-ROUTE-SUB",
+              "contactMode": "supports"
+            }
+          ],
+          "derivedBurdenRelation": "advances-sub-burden"
+        }
+      },
+      "lesson": "The v2.5 primitives reproduce the adjudicated v2.4 reframe outcome without asking one compound binary or burden-tier question."
+    },
+    {
+      "caseId": "V24-DISPUTE-15",
+      "debateId": "huemer-oppy-souls-personal-identity-2022",
+      "debateNumber": "190",
+      "moveId": "D190-M12",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "timestamp": "02:02:06",
+      "sourceSpan": {
+        "startMs": 7326880,
+        "endMs": 7350719
+      },
+      "sourceExcerpt": "so so i think the answer is yes but i'm not don't quote me on that right i'm not i'm not sure but i think that there there is that kind of aft on so the book that i'm quoting from is a little bit old now so it'll be useful if there's another book that some bunch of cosmologists have written about the likely future of the universe that that might answer that question",
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "D190-T12",
+        "targetSpeaker": "Michael Huemer",
+        "sourceSpan": {
+          "startMs": 7292800,
+          "endMs": 7326880
+        },
+        "sourceExcerpt": "yeah i was assuming an infinite future and i guess that you know there will be other living things going you know going on forever uh you might you might think because of the heat death of the universe that you know there will be a permanent end of life proton decay and and the endless expansion and just no more protons after that yeah maybe is there actually is there a zero probability of a proton being generated from radiation",
+        "sourceExcerptSha256": "8329c1e5cbd778eef5124f6c9624e1598d7a076cf345641126405854e8bfdd37",
+        "claim": "Future recurrence remains open only if proton generation from radiation retains a nonzero chance after heat death, proton decay, and endless expansion.",
+        "indispensableComponents": [
+          {
+            "id": "D190-T12-C1",
+            "text": "Huemer's recurrence route assumes an infinite future containing later living things."
+          },
+          {
+            "id": "D190-T12-C2",
+            "text": "Heat death, proton decay, and endless expansion threaten a permanent end of life."
+          },
+          {
+            "id": "D190-T12-C3",
+            "text": "A nonzero chance of proton generation from radiation would leave physical recurrence open."
+          }
+        ],
+        "selectionRationale": "This is the strongest live target because Oppy's answer directly denies the residual physical possibility Huemer raises to preserve future recurrence after heat death."
+      },
+      "burdenRoutes": [
+        {
+          "id": "V24-DISPUTE-15-ROUTE",
+          "side": "con",
+          "description": "Defeat the probabilistic, recurrence, or identity bridge from present conscious existence to survival or re-embodiment after bodily death.",
+          "successCriteria": "A reviewer can mark success only if the act undercuts a necessary premise of the reincarnation inference, such as an infinite history, a person-specific probability result, or a nonsemantic identity link, and no independent survival route remains established.",
+          "bridges": [
+            {
+              "id": "V24-DISPUTE-15-ROUTE-MOTION",
+              "tier": "motion",
+              "description": "A reviewer can mark success only if the act undercuts a necessary premise of the reincarnation inference, such as an infinite history, a person-specific probability result, or a nonsemantic identity link, and no independent survival route remains established."
+            },
+            {
+              "id": "V24-DISPUTE-15-ROUTE-CENTRAL",
+              "tier": "central",
+              "description": "Defeat the probabilistic, recurrence, or identity bridge from present conscious existence to survival or re-embodiment after bodily death."
+            },
+            {
+              "id": "V24-DISPUTE-15-ROUTE-SUB",
+              "tier": "subsidiary",
+              "description": "Establish or attack the necessary local premise, distinction, or evidential issue identified by this atomic move."
+            }
+          ]
+        }
+      ],
+      "burdenPacket": {
+        "primaryRouteId": "V24-DISPUTE-15-ROUTE",
+        "eligibleBridgeIds": [
+          "V24-DISPUTE-15-ROUTE-MOTION",
+          "V24-DISPUTE-15-ROUTE-CENTRAL",
+          "V24-DISPUTE-15-ROUTE-SUB"
+        ],
+        "selectionRationale": "This development fixture locks the adjudicated adopted route and exposes all three tiered bridges so the relation can be calculator-derived."
+      },
+      "disputedV24Fields": [
+        "burdenRelation"
+      ],
+      "annotation": {
+        "coveragePrimitives": {
+          "componentContacts": [
+            {
+              "componentId": "D190-T12-C1",
+              "contact": "addressed"
+            },
+            {
+              "componentId": "D190-T12-C2",
+              "contact": "not-addressed"
+            },
+            {
+              "componentId": "D190-T12-C3",
+              "contact": "not-addressed"
+            }
+          ],
+          "targetPreserved": true,
+          "relevantContraryMaterial": false,
+          "derivedTargetCoverage": "partial"
+        },
+        "diagnosticPrimitives": {
+          "defectType": "none",
+          "defectEvidence": null,
+          "targetImpactExplicit": false,
+          "targetImpactEvidence": null,
+          "derivedDiagnostic": false
+        },
+        "reframePrimitives": {
+          "malformedDemandExplained": false,
+          "malformedDemandEvidence": null,
+          "replacementDemandStated": false,
+          "replacementDemandEvidence": null,
+          "derivedReframe": false
+        },
+        "burdenPrimitives": {
+          "contactedBridges": [
+            {
+              "bridgeId": "V24-DISPUTE-15-ROUTE-SUB",
+              "contactMode": "supports"
+            }
+          ],
+          "derivedBurdenRelation": "advances-sub-burden"
+        }
+      },
+      "lesson": "The v2.5 primitives reproduce the adjudicated v2.4 burdenRelation outcome without asking one compound binary or burden-tier question."
+    }
+  ]
+}
