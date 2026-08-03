@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "2.5-inventory-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.5",
+  "gateId": "v2.5-held-out-derived-annotation-gate",
+  "debateId": "licona-carrier-resurrection-history-2010",
+  "debateNumber": "130",
+  "reviewedAt": "2026-08-03T03:38:03Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-independent-v2.5-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "statement": "Reviewed only the preregistered v2.5 workflow, schemas, gate manifest, draft inventory, local caption chain, and validators allowed for debate 130; no legacy, development, scoring, annotation-pass, or other-debate material was accessed."
+  },
+  "source": {
+    "draftInventoryPath": "docs/calibration/v2.5/held-out-gate/draft-inventories/licona-carrier-resurrection-history-2010.json",
+    "draftInventorySha256": "7883cdec57655b2be8ade7d22df1c4e1bf2c58df027d5392c98dfcafe8a928e2",
+    "reviewedInventoryPath": "docs/calibration/v2.5/held-out-gate/reviewed-inventories/licona-carrier-resurrection-history-2010.json",
+    "reviewedInventorySha256": "90297d8632abd3e0f25a7ec0cd6d1fb27b484e203ed91defc73d4384bf19672d",
+    "transcriptSha256": "4db3c90469196c75e7ad14e960367e1c8360ec1523683897ee772309919da97b",
+    "eventsSha256": "cc44372243cbd640ad13a702286c232c90667636fbb385499552822e11cfeda1",
+    "manifestSha256": "771f1afb79b7f597c7cc6deaf67274de96ec80bdfc1b065e54e22ac6fa4d8699",
+    "workflowSha256": "bd5f4c2f2b24f69611bd9e67b53cce291bf678f73bcbb8787688e49d721f998a",
+    "inventorySchemaSha256": "0c0c7e6d2e39fee1b3f81b797999889fb91bca79a675017645c0bded27ad7821",
+    "gateManifestSha256": "14f1fda2cb819a6b404b8a25d437ed280346a0e2c0db972b8d2af59e0e8ba67d"
+  },
+  "findings": [
+    {
+      "findingId": "d130-review-f001",
+      "category": "sampling",
+      "moveId": "d130-m01-pro-constructive-early-creed",
+      "description": "The 00:17:16 creed quotation was not Licona's first side-specific load-bearing constructive act; his opening had already introduced Paul's hostile posture, claimed risen-Jesus experience, and conversion at 00:13:42.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "d130-review-f002",
+      "category": "sampling",
+      "moveId": "d130-m02-pro-constructive-group-appearances",
+      "description": "The 00:17:59 group-appearance argument was not Licona's second side-specific load-bearing constructive act; the earlier chronology connected Paul's conversion with his Jerusalem contact with Peter and James at 00:14:10.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "d130-review-f003",
+      "category": "target-packet",
+      "moveId": "d130-m06-con-responsive-cultural-context",
+      "description": "The target packet bundled Licona's loner, marriage, and reality-discrimination objections even though Carrier's selected response directly answers only the loner-versus-congregation objection.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "d130-review-f004",
+      "category": "target-packet",
+      "moveId": "d130-m08-con-responsive-rare-conjunction",
+      "description": "The target claim said Licona's factual conjunction made the case different from an ordinary missing body, but the locked target excerpt ended before Licona explicitly stated that comparison.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "d130-review-f005",
+      "category": "burden-route",
+      "moveId": "d130-m08-con-responsive-rare-conjunction",
+      "description": "The eligible bridge list included con-central-evidence-threshold and con-sub-cultic-context although the selected act asserts naturalistic predictability without itself imposing an exceptional threshold or discussing vision-prone cult participants.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "d130-review-f006",
+      "category": "burden-route",
+      "moveId": "d130-m12-con-responsive-unmet-burden",
+      "description": "The eligible bridge list included pro-central-appearance-data and pro-sub-group-appearances although Carrier concedes generic appearance reports for this act and attacks only their comparative sufficiency and motion-level force.",
+      "disposition": "repaired"
+    }
+  ],
+  "repairs": [
+    {
+      "findingId": "d130-review-f001",
+      "change": "Replaced the original first pro constructive with the exact 00:13:42-00:14:10 Paul-conversion act, updated its move ID, hash, rationale, and eligible burden bridge, and revised the protocol selection statement.",
+      "triggerCategory": "sampling"
+    },
+    {
+      "findingId": "d130-review-f002",
+      "change": "Replaced the original second pro constructive with the exact 00:14:10-00:14:47 early-conversion and Jerusalem-witness-contact act, updating its move ID, hash, rationale, and burden packet.",
+      "triggerCategory": "sampling"
+    },
+    {
+      "findingId": "d130-review-f003",
+      "change": "Narrowed move 06's target span, claim, and indispensable components to the exact loner-versus-preaching-and-congregation objection that Carrier answers.",
+      "triggerCategory": "target-packet"
+    },
+    {
+      "findingId": "d130-review-f004",
+      "change": "Expanded move 08's target to an exact 87-word span that includes Licona's explicit missing-body comparison and rewrote its claim and four components to match that span.",
+      "triggerCategory": "target-packet"
+    },
+    {
+      "findingId": "d130-review-f005",
+      "change": "Removed con-central-evidence-threshold and con-sub-cultic-context from move 08's eligible bridge IDs, retaining only the natural-explanation central bridge supported by the exact act.",
+      "triggerCategory": "burden-route-or-tier"
+    },
+    {
+      "findingId": "d130-review-f006",
+      "change": "Removed pro-central-appearance-data and pro-sub-group-appearances from move 12's eligible bridge IDs, retaining the motion-preference and explanatory-comparison bridges the act can attack.",
+      "triggerCategory": "burden-route-or-tier"
+    }
+  ],
+  "thirdReviewTrigger": {
+    "required": true,
+    "categories": ["sampling", "target-packet", "burden-route-or-tier"],
+    "rationale": "A fresh third review is mandatory because repairs changed constructive sampling, two locked target packets, and two burden-bridge eligibility packets."
+  },
+  "audit": {
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "burdenRouteViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "reviewedInventoryValidatorPassed": true
+  }
+}
