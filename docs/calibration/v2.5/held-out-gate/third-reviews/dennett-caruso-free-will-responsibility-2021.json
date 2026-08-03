@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "2.5-triggered-third-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.5",
+  "gateId": "v2.5-held-out-derived-annotation-gate",
+  "debateId": "dennett-caruso-free-will-responsibility-2021",
+  "debateNumber": "185",
+  "reviewedAt": "2026-08-03T03:40:57Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-triggered-v2.5-third-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "statement": "Fresh triggered third review used only the allowed v2.5 workflow, schemas, gate manifest, first review, reviewed inventory, local caption chain, and validators; no draft inventory, legacy, development, annotation-pass, score, or other-debate material was accessed."
+  },
+  "source": {
+    "firstReviewPath": "docs/calibration/v2.5/held-out-gate/inventory-reviews/dennett-caruso-free-will-responsibility-2021.json",
+    "firstReviewSha256": "4d5b5bad8aa66f989073fd578950405f7b8862e39cbf7d78724b570b8a3a436f",
+    "reviewedInventoryPath": "docs/calibration/v2.5/held-out-gate/reviewed-inventories/dennett-caruso-free-will-responsibility-2021.json",
+    "reviewedInventorySha256": "a6a3a662e5cd857d70403d582dc532ab23252e33323a7436e32f895ac34fc578",
+    "finalInventoryPath": "docs/calibration/v2.5/held-out-gate/inventories/dennett-caruso-free-will-responsibility-2021.json",
+    "finalInventorySha256": "a6a3a662e5cd857d70403d582dc532ab23252e33323a7436e32f895ac34fc578",
+    "transcriptSha256": "bcfc11bc3e5a181d72c0cd073acba09d43e1bd6fbb6803ac31f18be2d539e98b",
+    "eventsSha256": "b144776e56915556eb6a0aa88183eae51d2bf06b4a8dd18cf3d79dad2cdf3a7e",
+    "manifestSha256": "566c51d307d76a5b220d3431c172131d43f19a3f44c4df41049b13f48a3ab80a"
+  },
+  "triggerCategories": [
+    "burden-route-or-tier",
+    "target-packet"
+  ],
+  "findings": [
+    {
+      "findingId": "tr01-m01-burden-route-recheck",
+      "category": "burden-route",
+      "moveId": "m01-pro-constructive-libertarian-incoherence",
+      "description": "Source recheck confirms that m01 rejects libertarian freedom as incoherent and scientifically unsupported without establishing reasons-responsive self-control; locking only pro-subsidiary-randomness and excluding the central-control bridge is faithful to the excerpt and tier graph.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "tr02-m10-target-packet-recheck",
+      "category": "target-packet",
+      "moveId": "m10-con-q3-responsive-punishment-without-free-will",
+      "description": "Source recheck confirms that t10's claim and components are limited to the supported adequate-barriers, humane-punishment, non-retributive, and offender-class contents; the unsupported non-draconian modifier remains absent.",
+      "disposition": "not-a-violation"
+    }
+  ],
+  "repairs": [],
+  "audit": {
+    "triggeredIssuesRechecked": true,
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "burdenRouteViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "finalInventoryValidatorPassed": true
+  }
+}
