@@ -8,4 +8,4 @@ The component-contact and operation denominator includes only components on resp
 
 No scores, scorecards, Overall Commentary, AI Extension sections, novelty maps, or ranking changes are authorized during this gate. A pass may authorize only preregistration of a complete three-debate numerical gate; it does not authorize a ten-debate gate or corpus-wide reassessment.
 
-Status: **preregistered; source validation pending**.
+Final status: **not passed**. All hard gates passed. The component-contact repair reached its `0.90` aggregate threshold, and all-move target coverage passed exact-agreement and kappa gates. Responsive target relation, responsive-only coverage, defect type, target-impact explicitness, and the derived diagnostic flag missed their aggregate thresholds; debate #173 also missed its responsive-coverage floor. Numerical scoring and every later promotion remain unauthorized. See `workflow-assessment.md` for the analysis.

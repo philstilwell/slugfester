@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "2.6-inventory-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.6",
+  "gateId": "v2.6-held-out-target-contact-gate",
+  "debateId": "tour-swamidass-origin-life-chemistry-2020",
+  "debateNumber": "192",
+  "reviewedAt": "2026-08-03T12:30:05Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-independent-v2.6-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "statement": "This review used only the preregistered v2.6 review allowlist, the complete target transcript and event chain, and the draft inventory; no annotation pass or lock was available."
+  },
+  "source": {
+    "draftInventoryPath": "docs/calibration/v2.6/held-out-gate/draft-inventories/tour-swamidass-origin-life-chemistry-2020.json",
+    "draftInventorySha256": "9c1420b31d38871485af80e003a446f10181ba4cecce3313a6cbe21598ff5607",
+    "reviewedInventoryPath": "docs/calibration/v2.6/held-out-gate/reviewed-inventories/tour-swamidass-origin-life-chemistry-2020.json",
+    "reviewedInventorySha256": "d7790a42ce0b7dc559939b0c25aa29eeb7ccd15e659c34e10242897374cf0b1f",
+    "transcriptSha256": "122f85b698196a7e20ec97623066c0592dac5388b35b8a9a211ae206640026af",
+    "eventsSha256": "2ba4a23d505273b6069dc549d44836734c99609b753267eb2c3408bf17a31f5c",
+    "manifestSha256": "a32e9a5798025a0c09fb5fb22404063ad6475b2afc625319df6a6f818faff2a3",
+    "workflowSha256": "6fd880986be5c9c91043bcf5ed0f85c45c628ae6454066c95b185e80e7a07a60",
+    "inventorySchemaSha256": "5ec4ee92b3fb54755b0dddffb81901f09b4c4e0aa69108e3d46acd29f2972363",
+    "gateManifestSha256": "5170cce90e604bb2622b3fd870e2a9fe0c9b6b315a819d98e1f8a20b585dc210"
+  },
+  "findings": [
+    {
+      "findingId": "f01",
+      "category": "sampling",
+      "moveId": "m01",
+      "description": "m01 was labeled constructive although its probability calculation explicitly answers Tour's earlier demand through elicited concessions; m07, by contrast, states a falsifier for Swamidass's own argument without operating on Tour's preceding components.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "f02",
+      "category": "target-packet",
+      "moveId": "m01",
+      "description": "Once m01 is correctly treated as responsive, it requires a locked earlier-load-bearing target packet for Tour's demand that possibility receive substantive chemical support.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "f03",
+      "category": "target-packet",
+      "moveId": "m05",
+      "description": "The draft packet focused on expert assembly failure, while Swamidass expressly qualifies Tour's argument from the immense complexity of minimal present cells to the likely simpler first cell.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "f04",
+      "category": "component-graph",
+      "moveId": "m05",
+      "description": "m05's indispensable nodes inherited the mismatched assembly packet and did not represent Tour's cited lipid-organization and protein-interaction premises or their complexity conclusion.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "f05",
+      "category": "target-recency",
+      "moveId": "m09",
+      "description": "The draft target stopped before Tour's immediate claim was completed; the omitted continuation states that a second origin would not make the first-origin problem easier.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "f06",
+      "category": "atomicity",
+      "moveId": "m09",
+      "description": "The selected source excerpt ended in an incomplete clause at the onset of crosstalk rather than at Swamidass's completed contrast that observations show the opposite of a life-teeming universe.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "f07",
+      "category": "speaker-attribution",
+      "moveId": "m10",
+      "description": "The last eight words of the draft excerpt belong to Swamidass's interruption, so the purported single-speaker Tour act mixed speaker ownership.",
+      "disposition": "repaired"
+    }
+  ],
+  "repairs": [
+    {
+      "findingId": "f01",
+      "change": "Reclassified m01 as responsive and m07 as constructive, preserving the preregistered two-constructive-per-side and eight-responsive sampling counts.",
+      "triggerCategory": "sampling"
+    },
+    {
+      "findingId": "f02",
+      "change": "Added an earlier-load-bearing Tour target packet to m01 with an explicit intervening-claim exception, exact excerpt, typed components, dependencies, and revised rationale.",
+      "triggerCategory": "target-packet"
+    },
+    {
+      "findingId": "f03",
+      "change": "Replaced m05's target excerpt and claim with Tour's modern-cell lipid and protein-interaction complexity argument that Swamidass actually qualifies.",
+      "triggerCategory": null
+    },
+    {
+      "findingId": "f04",
+      "change": "Rebuilt m05's graph as two distinct factual premises supporting a cellular-complexity conclusion, with no overlap or unstated dependency.",
+      "triggerCategory": "component-graph"
+    },
+    {
+      "findingId": "f05",
+      "change": "Moved m09's target span to Tour's completed immediate claim that an additional independent origin does not ease the first-origin explanation problem.",
+      "triggerCategory": "target-recency"
+    },
+    {
+      "findingId": "f06",
+      "change": "Trimmed m09 to Swamidass's complete single-speaker explanatory contrast before the interrupted trailing clause.",
+      "triggerCategory": "atomicity"
+    },
+    {
+      "findingId": "f07",
+      "change": "Removed Swamidass's interruption from m10 and ended the source span after Tour's complete statement that compounded improbability does not reach zero.",
+      "triggerCategory": "speaker-ownership"
+    }
+  ],
+  "thirdReviewTrigger": {
+    "required": true,
+    "categories": [
+      "sampling",
+      "target-packet",
+      "component-graph",
+      "target-recency",
+      "atomicity",
+      "speaker-ownership"
+    ],
+    "rationale": "Material repairs changed sampling roles, responsive target locks, a component graph, target recency, atomic boundaries, and speaker ownership, each of which independently triggers fresh third review."
+  },
+  "audit": {
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "burdenRouteViolations": 0,
+    "componentGraphViolations": 0,
+    "componentOverlapViolations": 0,
+    "targetRecencyViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "reviewedInventoryValidatorPassed": true
+  }
+}

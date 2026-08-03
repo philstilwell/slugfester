@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "2.6-inventory-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.6",
+  "gateId": "v2.6-held-out-target-contact-gate",
+  "debateId": "plantinga-law-eaan-rational-belief-2010",
+  "debateNumber": "129",
+  "reviewedAt": "2026-08-03T12:26:10Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-independent-v2.6-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "statement": "The draft inventory was reviewed from the allowed v2.6 contracts and the complete local transcript chain, without legacy material, development examples, annotation passes, locks, or other debates."
+  },
+  "source": {
+    "draftInventoryPath": "docs/calibration/v2.6/held-out-gate/draft-inventories/plantinga-law-eaan-rational-belief-2010.json",
+    "draftInventorySha256": "cd8be904971e6def24f76424860890e961111e3e0558b7ec5bda3f6bc7a22f9e",
+    "reviewedInventoryPath": "docs/calibration/v2.6/held-out-gate/reviewed-inventories/plantinga-law-eaan-rational-belief-2010.json",
+    "reviewedInventorySha256": "cd8be904971e6def24f76424860890e961111e3e0558b7ec5bda3f6bc7a22f9e",
+    "transcriptSha256": "7187052aba2de7eded77bcd036ba715925dc5a3b51c84a88ca352536d8b4f3a0",
+    "eventsSha256": "927ae9acabe815a9955b5f504692d9f575b9757f2901f26d1095c31a09efdc4a",
+    "manifestSha256": "c10cfbafb21cb30fcbee599902446522b1a49be66b56ea9e13c8c21f2811b32d",
+    "workflowSha256": "6fd880986be5c9c91043bcf5ed0f85c45c628ae6454066c95b185e80e7a07a60",
+    "inventorySchemaSha256": "5ec4ee92b3fb54755b0dddffb81901f09b4c4e0aa69108e3d46acd29f2972363",
+    "gateManifestSha256": "5170cce90e604bb2622b3fd870e2a9fe0c9b6b315a819d98e1f8a20b585dc210"
+  },
+  "findings": [
+    {
+      "findingId": "129-r01",
+      "category": "source-fidelity",
+      "moveId": null,
+      "description": "Every move and target excerpt is an exact normalized event-chain excerpt within its declared span, and every stored excerpt and source-chain digest matches recomputation.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "129-r02",
+      "category": "sampling",
+      "moveId": null,
+      "description": "The chronological sample contains twelve load-bearing acts, four constructive acts with two per side, eight responsive acts, seven pro acts, and five con acts, satisfying the locked sampling constraints.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "129-r03",
+      "category": "speaker-attribution",
+      "moveId": null,
+      "description": "Named introductions, uninterrupted turns, explicit handoffs, and local exchange continuity support high-confidence ownership for all selected Plantinga and Law acts; no selected act mixes speakers.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "129-r04",
+      "category": "target-recency",
+      "moveId": null,
+      "description": "All eight responsive packets target the latest substantive opponent claim to which the act replies; moderator questions, summaries, and the advertisement before move 129-m12 do not create intervening opponent claims.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "129-r05",
+      "category": "component-graph",
+      "moveId": null,
+      "description": "The responsive target packets use nonduplicative indispensable components, valid narrow component kinds, and acyclic dependencies that connect each inference or conclusion to its stated premise or modality.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "129-r06",
+      "category": "burden-route",
+      "moveId": null,
+      "description": "Each act is assigned only to its own side's route and to an eligible bridge whose motion, central, or subsidiary tier matches the act's role in the EAAN reliability dispute or parallel-skepticism comparison.",
+      "disposition": "not-a-violation"
+    }
+  ],
+  "repairs": [],
+  "thirdReviewTrigger": {
+    "required": false,
+    "categories": [],
+    "rationale": "No repair was needed, so none of the mandatory third-review trigger categories was activated."
+  },
+  "audit": {
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "burdenRouteViolations": 0,
+    "componentGraphViolations": 0,
+    "componentOverlapViolations": 0,
+    "targetRecencyViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "reviewedInventoryValidatorPassed": true
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "2.6-triggered-third-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.6",
+  "gateId": "v2.6-held-out-target-contact-gate",
+  "debateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+  "debateNumber": "173",
+  "reviewedAt": "2026-08-03T08:36:47-04:00",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-triggered-v2.6-third-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "statement": "The triggered third review freshly rechecked the reviewed inventory against only the allowed v2.6 specifications, validators, complete source chain, gate manifest, and first-review record; no prohibited material or annotation pass was accessed."
+  },
+  "source": {
+    "firstReviewPath": "docs/calibration/v2.6/held-out-gate/inventory-reviews/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+    "firstReviewSha256": "c4cda6b0c371a4df6787529308d0ba0f740e2dff57236a35eba29bd8772a373d",
+    "reviewedInventoryPath": "docs/calibration/v2.6/held-out-gate/reviewed-inventories/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+    "reviewedInventorySha256": "b1dc47ac4689cd091dac2eac600b2172f686f1d20015fe2e1e3b96995be75f51",
+    "finalInventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+    "finalInventorySha256": "b1dc47ac4689cd091dac2eac600b2172f686f1d20015fe2e1e3b96995be75f51",
+    "transcriptSha256": "45f945b11260356c72a96cb621ed3190a26cb86cdcf4ed08e6168d47a60888e3",
+    "eventsSha256": "6f7d3f3d825bcb392ba325384ca85be0af78e0c908e79748a2d671c72ef771dc",
+    "manifestSha256": "f1d5c798300f861ae29def1cb430b3eeacb293a4fb3d984c8f5386b590599220"
+  },
+  "triggerCategories": ["target-recency", "burden-route-or-tier", "target-packet", "meaning", "component-graph"],
+  "findings": [
+    {"findingId": "173-tr01", "category": "target-recency", "moveId": null, "description": "Fresh chronological review confirmed every responsive target's immediate-versus-earlier classification and each required intervening-claim exception, including the repaired returns in moves 03 and 11.", "disposition": "not-a-violation"},
+    {"findingId": "173-tr02", "category": "burden-route", "moveId": null, "description": "Fresh route and tier review confirmed that every primary route matches the move's side and every eligible bridge is genuinely contacted, including move 03's motion-level bridge.", "disposition": "not-a-violation"},
+    {"findingId": "173-tr03", "category": "target-packet", "moveId": null, "description": "Fresh review confirmed that all eight responsive packets lock the opponent claim actually answered, with exact source excerpts, sufficient rationales, and no unresolved target substitution in the inventory.", "disposition": "not-a-violation"},
+    {"findingId": "173-tr04", "category": "atomicity", "moveId": null, "description": "Fresh meaning and atomicity review confirmed that each of the twelve excerpts expresses one bounded argumentative act and that the repaired excerpts preserve the meaning described by their selection rationales.", "disposition": "not-a-violation"},
+    {"findingId": "173-tr05", "category": "component-graph", "moveId": null, "description": "Fresh graph review confirmed nonduplicative indispensable nodes, valid narrow component kinds, complete dependency references, and acyclic premise-to-inference or conclusion structure in every responsive packet.", "disposition": "not-a-violation"},
+    {"findingId": "173-tr06", "category": "source-fidelity", "moveId": null, "description": "All move and target excerpts were freshly checked against the complete transcript and normalized events; their spans, wording, excerpt hashes, and source-chain hashes remain faithful.", "disposition": "not-a-violation"},
+    {"findingId": "173-tr07", "category": "speaker-attribution", "moveId": null, "description": "John Onaiyekan owns moves 01, 11, and 12 inside chair-announced or uninterrupted turns, with no mixed-speaker text and high-confidence attribution.", "disposition": "not-a-violation"},
+    {"findingId": "173-tr08", "category": "speaker-attribution", "moveId": null, "description": "Ann Widdecombe owns moves 03, 04, and 05 inside her chair-announced continuous opening turn, with no mixed-speaker text and high-confidence attribution.", "disposition": "not-a-violation"},
+    {"findingId": "173-tr09", "category": "speaker-attribution", "moveId": null, "description": "Christopher Hitchens owns moves 02, 07, and 08 inside chair-announced or uninterrupted turns, with no mixed-speaker text and high-confidence attribution.", "disposition": "not-a-violation"},
+    {"findingId": "173-tr10", "category": "speaker-attribution", "moveId": null, "description": "Stephen Fry owns moves 06, 09, and 10 inside chair-announced or uninterrupted turns, with no mixed-speaker text and high-confidence attribution.", "disposition": "not-a-violation"},
+    {"findingId": "173-tr11", "category": "sampling", "moveId": null, "description": "The final inventory retains twelve chronological acts, six per side, four constructive and eight responsive, with one constructive and two responsive acts for each named speaker.", "disposition": "not-a-violation"},
+    {"findingId": "173-tr12", "category": "component-overlap", "moveId": null, "description": "Fresh zero-audit review found no component paraphrase duplication, missing dependency, invalid burden bridge, target-recency defect, sampling defect, source defect, or unresolved attribution.", "disposition": "not-a-violation"}
+  ],
+  "repairs": [],
+  "audit": {
+    "triggeredIssuesRechecked": true,
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "burdenRouteViolations": 0,
+    "componentGraphViolations": 0,
+    "componentOverlapViolations": 0,
+    "targetRecencyViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "finalInventoryValidatorPassed": true
+  }
+}

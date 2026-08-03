@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "2.6-derived-annotation-pass",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.6",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.6",
+  "gateId": "v2.6-held-out-target-contact-gate",
+  "debateId": "tour-swamidass-origin-life-chemistry-2020",
+  "debateNumber": "192",
+  "pass": "B",
+  "model": "5.6 Sol",
+  "calibrationOnly": true,
+  "completedAt": "2026-08-03T16:30:00Z",
+  "isolation": {
+    "method": "fresh-isolated-v2.6-derived-annotation-task",
+    "allowedInputs": [
+      "docs/assessment-workflow-v2.6.md",
+      "docs/reassessment-rubric-v2.6.md",
+      "docs/calibration/v2.6/annotation-pass-schema.json",
+      "docs/calibration/v2.6/held-out-gate/gate-manifest.json",
+      "docs/calibration/v2.6/development/annotation-manual.md",
+      "docs/calibration/v2.6/development/target-contact-examples.json",
+      "docs/calibration/v2.6/held-out-gate/inventories/tour-swamidass-origin-life-chemistry-2020.json",
+      ".assessment-cache/captions/yJgr38h_3H0/transcript.txt",
+      ".assessment-cache/captions/yJgr38h_3H0/events.json",
+      ".assessment-cache/captions/yJgr38h_3H0/manifest.json"
+    ],
+    "prohibitedInputsConfirmed": true,
+    "contaminationDetected": false,
+    "statement": "This Pass B was completed in a fresh isolated task using only the exact ten-item allowlist; validation scripts were consulted solely for validation behavior."
+  },
+  "source": {
+    "videoId": "yJgr38h_3H0",
+    "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/tour-swamidass-origin-life-chemistry-2020.json",
+    "inventorySha256": "09eb92b5273a674ba48bb76a5f96f2131af7b2b6bacb863fdf8e9d733b08ef19",
+    "transcriptSha256": "122f85b698196a7e20ec97623066c0592dac5388b35b8a9a211ae206640026af",
+    "eventsSha256": "2ba4a23d505273b6069dc549d44836734c99609b753267eb2c3408bf17a31f5c",
+    "manifestSha256": "a32e9a5798025a0c09fb5fb22404063ad6475b2afc625319df6a6f818faff2a3",
+    "gateManifestSha256": "5170cce90e604bb2622b3fd870e2a9fe0c9b6b315a819d98e1f8a20b585dc210",
+    "workflowSha256": "6fd880986be5c9c91043bcf5ed0f85c45c628ae6454066c95b185e80e7a07a60",
+    "rubricSha256": "8645795d97ef3de272f8e1f263d9ff9cad40108c6e4f2c3a0d3564de952f3eca",
+    "schemaSha256": "41395327b8226bfa1aa362bf8476a8882a1c8b718113316349442d9bb5f55523",
+    "developmentManualSha256": "61b92bb8f817e5ff740cf41420142c103e705e8df7d566fcc29abbc8533a3dad",
+    "developmentExamplesSha256": "c188661aa2edf12b50e9558386650d873807d656e31887a45db69d97350f3980",
+    "limitations": "Auto-generated English captions contain transcription errors and no speaker labels; the locked inventory uses only uninterrupted turns with contextually high-confidence attribution."
+  },
+  "annotations": [
+    {
+      "moveId": "m01", "interactionMode": "responsive", "targetPacketId": "t01", "primaryBurdenRouteId": "con-route",
+      "coveragePrimitives": {"targetRelation":"preserved","substitutionType":null,"substitutionEvidence":null,"componentOperations":[{"componentId":"t01-p1","operation":null,"evidence":null},{"componentId":"t01-c1","operation":"undermines","evidence":{"text":"That's undefined. You don't know what the probability is.","startChar":164,"endChar":221}}],"relevantContraryMaterial":false,"contraryEvidence":null,"derivedTargetCoverage":"partial"},
+      "diagnosticPrimitives": {"defectType":"missing-premise","defectEvidence":{"text":"an unimaginably large number, the size of the unobservable universe, not just the observable one, multiplied times an unimaginably tiny number","startChar":20,"endChar":162},"targetImpactExplicit":true,"targetImpactEvidence":{"text":"That's undefined. You don't know what the probability is.","startChar":164,"endChar":221},"derivedDiagnostic":true},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"con-central","contactMode":"supports"},{"bridgeId":"con-subsidiary","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "The response preserves Tour's demand but attacks only the conclusion that possibility is inadequate; it does not operate on the locked chemistry premise.",
+      "mechanismRationale": "It identifies the missing quantified inputs and explicitly says their product is undefined, thereby stating both a defect and its impact.",
+      "burdenRationale": "The unquantified event and opportunity terms support both the live natural-possibility bridge and the specific probabilistic bridge.", "confidence":"high"
+    },
+    {
+      "moveId": "m02", "interactionMode": "constructive", "targetPacketId": null, "primaryBurdenRouteId": "pro-route",
+      "coveragePrimitives": {"targetRelation":"not-applicable","substitutionType":null,"substitutionEvidence":null,"componentOperations":[],"relevantContraryMaterial":null,"contraryEvidence":null,"derivedTargetCoverage":"not-applicable"},
+      "diagnosticPrimitives": {"defectType":"none","defectEvidence":null,"targetImpactExplicit":false,"targetImpactEvidence":null,"derivedDiagnostic":false},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"pro-central","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "This is a locked constructive act, so target relation and component-contact operations are mechanically not applicable.",
+      "mechanismRationale": "The move states a positive chemical prerequisite and present inability claim rather than diagnosing or reframing an opponent's defect.",
+      "burdenRationale": "The claimed inability to form four required molecular classes directly supports the route's central unresolved-synthesis bridge.", "confidence":"high"
+    },
+    {
+      "moveId": "m03", "interactionMode": "constructive", "targetPacketId": null, "primaryBurdenRouteId": "pro-route",
+      "coveragePrimitives": {"targetRelation":"not-applicable","substitutionType":null,"substitutionEvidence":null,"componentOperations":[],"relevantContraryMaterial":null,"contraryEvidence":null,"derivedTargetCoverage":"not-applicable"},
+      "diagnosticPrimitives": {"defectType":"none","defectEvidence":null,"targetImpactExplicit":false,"targetImpactEvidence":null,"derivedDiagnostic":false},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"pro-central","contactMode":"supports"},{"bridgeId":"pro-subsidiary","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "This is a locked constructive act, so target relation and component-contact operations are mechanically not applicable.",
+      "mechanismRationale": "The act offers an independent decomposition mechanism and does not diagnose a specified opposing inference or reformulate a demand.",
+      "burdenRationale": "Molecular decomposition supports the unresolved synthesis bridge and the subsidiary environmental and time-constraint bridge.", "confidence":"high"
+    },
+    {
+      "moveId": "m04", "interactionMode": "constructive", "targetPacketId": null, "primaryBurdenRouteId": "con-route",
+      "coveragePrimitives": {"targetRelation":"not-applicable","substitutionType":null,"substitutionEvidence":null,"componentOperations":[],"relevantContraryMaterial":null,"contraryEvidence":null,"derivedTargetCoverage":"not-applicable"},
+      "diagnosticPrimitives": {"defectType":"none","defectEvidence":null,"targetImpactExplicit":false,"targetImpactEvidence":null,"derivedDiagnostic":false},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"con-motion","contactMode":"supports"},{"bridgeId":"con-central","contactMode":"supports"}],"derivedBurdenRelation":"completes"},
+      "coverageRationale": "This is a locked constructive act, so target relation and component-contact operations are mechanically not applicable.",
+      "mechanismRationale": "The speaker defines a cautious evidential position without alleging a discrete defect or explaining and replacing a malformed demand.",
+      "burdenRationale": "Scientific humility directly supports the motion-level agnosticism position and the central claim that limited clues fall short of a full account.", "confidence":"high"
+    },
+    {
+      "moveId": "m05", "interactionMode": "responsive", "targetPacketId": "t05", "primaryBurdenRouteId": "con-route",
+      "coveragePrimitives": {"targetRelation":"preserved","substitutionType":null,"substitutionEvidence":null,"componentOperations":[{"componentId":"t05-p1","operation":null,"evidence":null},{"componentId":"t05-p2","operation":null,"evidence":null},{"componentId":"t05-c1","operation":"qualifies","evidence":{"text":"you're right that the cells, even the minimal cells we see now, are really complex, but I don't think anyone believes that the first cell was nearly as complex as the least complex cells today","startChar":119,"endChar":311}}],"relevantContraryMaterial":false,"contraryEvidence":null,"derivedTargetCoverage":"partial"},
+      "diagnosticPrimitives": {"defectType":"unsupported-comparison","defectEvidence":{"text":"I don't think anyone believes that the first cell was nearly as complex as the least complex cells today","startChar":207,"endChar":311},"targetImpactExplicit":true,"targetImpactEvidence":{"text":"weakens your case","startChar":83,"endChar":100},"derivedDiagnostic":true},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"con-central","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "The response preserves the modern-cell complexity target and qualifies its conclusion by distinguishing a simpler first cell, without contacting either detailed premise.",
+      "mechanismRationale": "It explicitly identifies the modern-to-first-cell comparison as unsupported and states that this mismatch weakens Tour's case.",
+      "burdenRationale": "A plausibly simpler precursor directly supports the con route's central live-explanatory-possibility bridge.", "confidence":"high"
+    },
+    {
+      "moveId": "m06", "interactionMode": "responsive", "targetPacketId": "t06", "primaryBurdenRouteId": "pro-route",
+      "coveragePrimitives": {"targetRelation":"preserved","substitutionType":null,"substitutionEvidence":null,"componentOperations":[{"componentId":"t06-p1","operation":"accepts","evidence":{"text":"you can you know mathematics can take you anywhere. You can just say it's a small number, big number. So it's but it's non zero. So I buy it.","startChar":283,"endChar":424}},{"componentId":"t06-i1","operation":"qualifies","evidence":{"text":"for every step in the synthesis and the assembly, it's a small number that so but and you have and you have to do it over and over again","startChar":61,"endChar":197}},{"componentId":"t06-c1","operation":"qualifies","evidence":{"text":"it's not a single miracle","startChar":0,"endChar":25}}],"relevantContraryMaterial":false,"contraryEvidence":null,"derivedTargetCoverage":"full"},
+      "diagnosticPrimitives": {"defectType":"invalid-inference","defectEvidence":{"text":"for every step in the synthesis and the assembly, it's a small number that so but and you have and you have to do it over and over again","startChar":61,"endChar":197},"targetImpactExplicit":true,"targetImpactEvidence":{"text":"everything is fighting against you","startChar":202,"endChar":236},"derivedDiagnostic":true},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"pro-central","contactMode":"supports"},{"bridgeId":"pro-subsidiary","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "Tour preserves the probability target, accepts unquantified nonzero terms, and separately qualifies both the aggregate inference and single-miracle conclusion through repeated steps.",
+      "mechanismRationale": "He identifies the inference's failure to compound many required steps and explicitly states that the resulting conditions fight against origin.",
+      "burdenRationale": "Repeated synthesis and assembly obstacles support both the central unresolved-steps bridge and the subsidiary probabilistic-constraint bridge.", "confidence":"high"
+    },
+    {
+      "moveId": "m07", "interactionMode": "constructive", "targetPacketId": null, "primaryBurdenRouteId": "con-route",
+      "coveragePrimitives": {"targetRelation":"not-applicable","substitutionType":null,"substitutionEvidence":null,"componentOperations":[],"relevantContraryMaterial":null,"contraryEvidence":null,"derivedTargetCoverage":"not-applicable"},
+      "diagnosticPrimitives": {"defectType":"none","defectEvidence":null,"targetImpactExplicit":false,"targetImpactEvidence":null,"derivedDiagnostic":false},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"con-subsidiary","contactMode":"supports"}],"derivedBurdenRelation":"advances-sub-burden"},
+      "coverageRationale": "This is a locked constructive act, so target relation and component-contact operations are mechanically not applicable.",
+      "mechanismRationale": "The move supplies a potential empirical falsifier rather than diagnosing a defect in a locked opponent target or replacing a malformed demand.",
+      "burdenRationale": "Independent exoplanet life is a specific conditional observation bearing directly on the con route's subsidiary test bridge.", "confidence":"high"
+    },
+    {
+      "moveId": "m08", "interactionMode": "responsive", "targetPacketId": "t08", "primaryBurdenRouteId": "pro-route",
+      "coveragePrimitives": {"targetRelation":"substituted","substitutionType":"object","substitutionEvidence":{"text":"But it's still a hard question to know how that life formed.","startChar":397,"endChar":457},"componentOperations":[],"relevantContraryMaterial":false,"contraryEvidence":null,"derivedTargetCoverage":"substitution"},
+      "diagnosticPrimitives": {"defectType":"none","defectEvidence":null,"targetImpactExplicit":false,"targetImpactEvidence":null,"derivedDiagnostic":false},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"pro-central","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "The target concerns whether independent exoplanet life defeats a rarity argument, while Tour changes the object to whether the formation mechanism is known.",
+      "mechanismRationale": "The response redirects the issue but does not explicitly diagnose a formal defect or explain and replace a malformed demand.",
+      "burdenRationale": "The continuing difficulty of explaining how life formed supports the pro route's central unresolved-mechanism bridge.", "confidence":"high"
+    },
+    {
+      "moveId": "m09", "interactionMode": "responsive", "targetPacketId": "t09", "primaryBurdenRouteId": "con-route",
+      "coveragePrimitives": {"targetRelation":"substituted","substitutionType":"comparison-class","substitutionEvidence":{"text":"a universe that was that was teameming with life, not just on the Earth, but like on Titan and in Mars and in every exoplanet we look to","startChar":75,"endChar":211},"componentOperations":[],"relevantContraryMaterial":false,"contraryEvidence":null,"derivedTargetCoverage":"substitution"},
+      "diagnosticPrimitives": {"defectType":"none","defectEvidence":null,"targetImpactExplicit":false,"targetImpactEvidence":null,"derivedDiagnostic":false},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"con-central","contactMode":"supports"},{"bridgeId":"con-subsidiary","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "Tour's target is one additional independent origin, but Swamidass changes the comparison class to a universe teeming with life across nearby worlds and exoplanets.",
+      "mechanismRationale": "The counterfactual supplies a different comparison class without explicitly alleging a typed defect or presenting a full demand reframe.",
+      "burdenRationale": "The abundance conditional supports both a live tractability possibility and a specific observation-based test within the con route.", "confidence":"high"
+    },
+    {
+      "moveId": "m10", "interactionMode": "responsive", "targetPacketId": "t10", "primaryBurdenRouteId": "pro-route",
+      "coveragePrimitives": {"targetRelation":"preserved","substitutionType":null,"substitutionEvidence":null,"componentOperations":[{"componentId":"t10-p1","operation":"qualifies","evidence":{"text":"you'd have to have these miraculous steps over and over and over again which makes that number smaller and smaller and smaller","startChar":73,"endChar":199}},{"componentId":"t10-p2","operation":null,"evidence":null},{"componentId":"t10-c1","operation":"accepts","evidence":{"text":"It doesn't go to zero.","startChar":201,"endChar":223}}],"relevantContraryMaterial":false,"contraryEvidence":null,"derivedTargetCoverage":"partial"},
+      "diagnosticPrimitives": {"defectType":"none","defectEvidence":null,"targetImpactExplicit":false,"targetImpactEvidence":null,"derivedDiagnostic":false},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"pro-subsidiary","contactMode":"supports"}],"derivedBurdenRelation":"advances-sub-burden"},
+      "coverageRationale": "Tour preserves the nonzero chemical-probability target, qualifies the per-reaction premise through compounded steps, and accepts the greater-than-zero conclusion, leaving the only-chemistry premise untouched.",
+      "mechanismRationale": "The response offers a probability qualification but does not explicitly identify a typed logical defect and its target impact or reframe a demand.",
+      "burdenRationale": "Compounding many low-probability steps directly supports the pro route's subsidiary probabilistic-constraint bridge.", "confidence":"high"
+    },
+    {
+      "moveId": "m11", "interactionMode": "responsive", "targetPacketId": "t11", "primaryBurdenRouteId": "con-route",
+      "coveragePrimitives": {"targetRelation":"substituted","substitutionType":"strength","substitutionEvidence":{"text":"if we took all the physical components of a cell and like replicated it with like a Star Trek replicator exactly the same there. You say that it may not actually be living.","startChar":95,"endChar":267},"componentOperations":[],"relevantContraryMaterial":false,"contraryEvidence":null,"derivedTargetCoverage":"substitution"},
+      "diagnosticPrimitives": {"defectType":"none","defectEvidence":null,"targetImpactExplicit":false,"targetImpactEvidence":null,"derivedDiagnostic":false},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"con-central","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "The response strengthens Tour's recently-dead-cell mystery into the claim that a perfectly reconstructed physical duplicate might remain nonliving.",
+      "mechanismRationale": "The vitalism question tests a stronger implication, but it does not assert a typed defect with explicit impact or explain a malformed demand.",
+      "burdenRationale": "Testing whether complete physical replication suffices supports the con route's central live natural-explanation bridge.", "confidence":"high"
+    },
+    {
+      "moveId": "m12", "interactionMode": "responsive", "targetPacketId": "t12", "primaryBurdenRouteId": "pro-route",
+      "coveragePrimitives": {"targetRelation":"preserved","substitutionType":null,"substitutionEvidence":null,"componentOperations":[{"componentId":"t12-p1","operation":"distinguishes","evidence":{"text":"What I said is you take a cell that is just died. Everything's near in place. Everything's near in place and the thing's not alive and it doesn't spontaneously pop back into life as far as we can tell.","startChar":28,"endChar":229}},{"componentId":"t12-c1","operation":"denies","evidence":{"text":"No, that's not what I said.","startChar":0,"endChar":27}}],"relevantContraryMaterial":false,"contraryEvidence":null,"derivedTargetCoverage":"full"},
+      "diagnosticPrimitives": {"defectType":"ambiguity","defectEvidence":{"text":"No, that's not what I said.","startChar":0,"endChar":27},"targetImpactExplicit":true,"targetImpactEvidence":{"text":"What I said is you take a cell that is just died. Everything's near in place. Everything's near in place and the thing's not alive and it doesn't spontaneously pop back into life as far as we can tell.","startChar":28,"endChar":229},"derivedDiagnostic":true},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"pro-subsidiary","contactMode":"supports"}],"derivedBurdenRelation":"advances-sub-burden"},
+      "coverageRationale": "Tour preserves the reconstruction implication, denies that it represents his claim, and distinguishes a recently dead cell from a fabricated exact duplicate.",
+      "mechanismRationale": "He explicitly flags the interpretation as not what he said and restates the narrower dead-cell case, making the ambiguity's impact explicit.",
+      "burdenRationale": "The dead-cell non-restart observation supports the pro route's subsidiary complexity and constraint bridge.", "confidence":"high"
+    }
+  ],
+  "audit": {"moveCount":12,"allInventoryLocksCopied":true,"evidenceOffsetErrors":0,"derivationMismatches":0,"scoreFieldsPresent":false,"allMovesAnnotatedOnce":true}
+}

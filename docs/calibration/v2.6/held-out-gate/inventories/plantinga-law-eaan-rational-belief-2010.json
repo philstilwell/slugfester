@@ -1,0 +1,648 @@
+{
+  "schemaVersion": "2.6-atomic-inventory",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.6",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.6",
+  "gateId": "v2.6-held-out-target-contact-gate",
+  "debateId": "plantinga-law-eaan-rational-belief-2010",
+  "debateNumber": "129",
+  "videoId": "vAJHkRkWCm0",
+  "motion": "Is the evolutionary argument against naturalism successful at showing that naturalism plus evolution gives its believers a defeater for trusting their cognitive faculties?",
+  "sides": {
+    "pro": {
+      "label": "EAAN defense",
+      "speakers": [
+        "Alvin Plantinga"
+      ]
+    },
+    "con": {
+      "label": "Reliability challenge",
+      "speakers": [
+        "Stephen Law"
+      ]
+    }
+  },
+  "burdenRoutes": [
+    {
+      "id": "pro-eaan-route",
+      "side": "pro",
+      "description": "Establish that naturalism plus evolution rationally defeats confidence in cognitive reliability and thereby defeats itself.",
+      "successCriteria": "Support the low reliability probability premise, the reliability defeater, and its extension to naturalism plus evolution.",
+      "bridges": [
+        {
+          "id": "pro-motion",
+          "tier": "motion",
+          "description": "Connect the reliability defeater back to rational acceptance of naturalism plus evolution."
+        },
+        {
+          "id": "pro-central",
+          "tier": "central",
+          "description": "Show that adaptive neurological success does not select belief content for truth."
+        },
+        {
+          "id": "pro-subsidiary",
+          "tier": "subsidiary",
+          "description": "Clarify naturalism, materialism, cognitive reliability, or the scope of the conclusion."
+        }
+      ]
+    },
+    {
+      "id": "con-reliability-route",
+      "side": "con",
+      "description": "Show that evolution can favor true belief or that the proposed reliability problem does not uniquely support the EAAN.",
+      "successCriteria": "Defend a behavior-to-content constraint or establish a parallel skeptical difficulty for the proposed theistic alternative.",
+      "bridges": [
+        {
+          "id": "con-motion",
+          "tier": "motion",
+          "description": "Undercut the claimed rational self-defeat of naturalism plus evolution."
+        },
+        {
+          "id": "con-central",
+          "tier": "central",
+          "description": "Connect adaptive behavior and desires to selection for generally true belief content."
+        },
+        {
+          "id": "con-subsidiary",
+          "tier": "subsidiary",
+          "description": "Clarify the EAAN conclusion or compare its skeptical implications with theism."
+        }
+      ]
+    }
+  ],
+  "source": {
+    "transcriptPath": ".assessment-cache/captions/vAJHkRkWCm0/transcript.txt",
+    "transcriptSha256": "7187052aba2de7eded77bcd036ba715925dc5a3b51c84a88ca352536d8b4f3a0",
+    "eventsPath": ".assessment-cache/captions/vAJHkRkWCm0/events.json",
+    "eventsSha256": "927ae9acabe815a9955b5f504692d9f575b9757f2901f26d1095c31a09efdc4a",
+    "manifestPath": ".assessment-cache/captions/vAJHkRkWCm0/manifest.json",
+    "manifestSha256": "c10cfbafb21cb30fcbee599902446522b1a49be66b56ea9e13c8c21f2811b32d",
+    "limitations": "YouTube auto-generated English captions contain occasional lexical errors; selected turns have clear named or uninterrupted turn ownership and therefore high attribution confidence."
+  },
+  "inventoryProtocol": {
+    "builtAt": "2026-08-03T16:00:00Z",
+    "builderModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "singleSpeakerAtomicActs": true,
+    "targetPacketsPrelocked": true,
+    "burdenRoutesPrelocked": true,
+    "componentGraphsPrelocked": true,
+    "targetRecencyChecked": true,
+    "selectionStatement": "Twelve chronological single-speaker acts were selected from the complete substantive exchange: two constructive acts per side and eight direct responsive acts."
+  },
+  "moves": [
+    {
+      "moveId": "129-m01",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "timestamp": "15:14",
+      "sourceSpan": {
+        "startMs": 914720,
+        "endMs": 966000
+      },
+      "sourceExcerpt": "but now as to the evolutionary argument it's really an argument against naturalism which i take to be the idea that there isn't any such person as god or anything like god so that naturalism is stronger than atheism you could be an atheist without rising to the full heights or descending to the full depths of naturalism but if you're a naturist you have to be an atheist",
+      "sourceExcerptSha256": "7e470d507d251a47c0747c22fb29d250206a262a7f1760b9b5d1344c2b632aa5",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "constructive",
+      "targetPacket": null,
+      "burdenPacket": {
+        "primaryRouteId": "pro-eaan-route",
+        "eligibleBridgeIds": [
+          "pro-subsidiary"
+        ],
+        "selectionRationale": "This act fixes the argument's naturalist target and distinguishes it from atheism before the inferential premises are introduced."
+      },
+      "selectionRationale": "A foundational definition is independently load-bearing because the later probability claim is explicitly conditional on this conception of naturalism."
+    },
+    {
+      "moveId": "129-m02",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "timestamp": "17:03",
+      "sourceSpan": {
+        "startMs": 1023440,
+        "endMs": 1051000
+      },
+      "sourceExcerpt": "now my argument goes like this my argument goes like this the first premise is that we can put it like this isn't exactly right but it's close if naturalism and evolution were both true then the probability that our cognitive faculties would be reliable is low all right so if they were both true then the probability would be low the probability that our faculties are reliable would be low",
+      "sourceExcerptSha256": "8fbbb88df631a53c140a25eecf8281348d51de973d5f67891374a98ccf6ea158",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "constructive",
+      "targetPacket": null,
+      "burdenPacket": {
+        "primaryRouteId": "pro-eaan-route",
+        "eligibleBridgeIds": [
+          "pro-central"
+        ],
+        "selectionRationale": "The low conditional probability premise is the central bridge from evolutionary materialism to the claimed reliability defeater."
+      },
+      "selectionRationale": "This compact statement isolates the argument's disputed first premise without combining it with the subsequent defeater-transmission steps."
+    },
+    {
+      "moveId": "129-m03",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "timestamp": "31:09",
+      "sourceSpan": {
+        "startMs": 1867760,
+        "endMs": 1919000
+      },
+      "sourceExcerpt": "suggestion would go something like this um presumably um organisms such as us ourselves need water and a food and a mate and so natural selection will tend to produce enough desires for those kinds of things those desires by themselves of course then produce behavior you also need to have beliefs and so suppose that i crave water i'm thirsty suppose there's water to the south of me but nowhere else um if i have the belief that there's water that's to the south",
+      "sourceExcerptSha256": "c950d3bda3e74aeaab9deb2c91a0dbdfd20ef9782fb4e7eb76b2fcd7021297a5",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "constructive",
+      "targetPacket": null,
+      "burdenPacket": {
+        "primaryRouteId": "con-reliability-route",
+        "eligibleBridgeIds": [
+          "con-central"
+        ],
+        "selectionRationale": "The water-and-desire example introduces the con side's positive causal account linking accurate belief to adaptive success."
+      },
+      "selectionRationale": "This is the first self-contained presentation of Law's alternative selection mechanism and initiates the sustained responsive exchange that follows."
+    },
+    {
+      "moveId": "129-m04",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "timestamp": "32:21",
+      "sourceSpan": {
+        "startMs": 1941039,
+        "endMs": 1995000
+      },
+      "sourceExcerpt": "sure um let's back up a little bit let's let's think about a frog sitting on a lily pond and a fly whizzes by the frog's tongue flicks out and captures the fly which of course contributes to the frog's survival and reproductive prospects let's say so so there must be neurology in the frog that tracks the fly and um and determines how far the fly is at wave and what's velocity isn't like of that might must be indicators in the frog that",
+      "sourceExcerptSha256": "ee4f22a55b00ce6ebcb28115c4de0b5f09e78d26c932503b9011d29620785156",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "129-t04",
+        "targetSpeaker": "Stephen Law",
+        "sourceSpan": {
+          "startMs": 1873519,
+          "endMs": 1911000
+        },
+        "sourceExcerpt": "organisms such as us ourselves need water and a food and a mate and so natural selection will tend to produce enough desires for those kinds of things those desires by themselves of course then produce behavior you also need to have beliefs and so suppose that i crave water i'm thirsty suppose there's water to the south of me but nowhere else",
+        "sourceExcerptSha256": "6d3512348cbd73ad201713f54f8c8ccf59c724cdb7702ce3a7e7d360e7f11fcc",
+        "claim": "Adaptive needs and desires select accurate location beliefs that guide successful behavior.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "129-t04-c1",
+            "text": "Organisms have adaptive needs and corresponding desires.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "129-t04-c2",
+            "text": "Accurate location beliefs combine with desires to produce successful adaptive behavior.",
+            "kind": "inference",
+            "dependsOn": [
+              "129-t04-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "Plantinga immediately answers Law's water model with a frog case retaining adaptive tracking while separating it from belief truth."
+      },
+      "burdenPacket": {
+        "primaryRouteId": "pro-eaan-route",
+        "eligibleBridgeIds": [
+          "pro-central"
+        ],
+        "selectionRationale": "The frog mechanism is eligible for the central bridge concerning adaptive neurological tracking versus semantic truth."
+      },
+      "selectionRationale": "This is Plantinga's first direct reply to the water example and introduces the frog mechanism used throughout his subsequent replies."
+    },
+    {
+      "moveId": "129-m05",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "timestamp": "35:22",
+      "sourceSpan": {
+        "startMs": 2122880,
+        "endMs": 2176000
+      },
+      "sourceExcerpt": "which is this i mean it must be maybe it's true that um natural selection um is not interested in the truth of beliefs per se what it's interested in is is getting the right behavior produced adaptive behavior um but if beliefs are associated with say certain neural structures if they are just those neural structures or if um well let's just suppose for the sake of argument that they are um surely you can't just plug any old belief into any old neural",
+      "sourceExcerptSha256": "16e3f6516ef0ddd547815de325042ed319ca0230b049feb6418c85624ede84c3",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "129-t05",
+        "targetSpeaker": "Alvin Plantinga",
+        "sourceSpan": {
+          "startMs": 2005360,
+          "endMs": 2034000
+        },
+        "sourceExcerpt": "but it doesn't matter as far as the frogs capturing the fly is concerned doesn't matter as far as that underlying neurology its adaptiveness is concerned whether or not that whether or not that police that belief content is true could be true that's fine could equally well be false all that really counts is that the underlying neurology produced the right kind of behavior",
+        "sourceExcerptSha256": "bd8aa0495b57d14b67aa21fa218f1069aa148a7664dc410d74380e136bac8a8c",
+        "claim": "Adaptive success depends on neurology and behavior, not on whether associated belief content is true.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "129-t05-c1",
+            "text": "The same adaptive neurology could carry true or false belief content.",
+            "kind": "modality",
+            "dependsOn": []
+          },
+          {
+            "id": "129-t05-c2",
+            "text": "Only behavior matters to the neurology's adaptive success.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "129-t05-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "Law directly contests the asserted independence of belief content by introducing conceptual constraints on content attribution."
+      },
+      "burdenPacket": {
+        "primaryRouteId": "con-reliability-route",
+        "eligibleBridgeIds": [
+          "con-central"
+        ],
+        "selectionRationale": "Conceptual constraints are offered as the central bridge connecting behavior-producing neural states to truth-conducive content."
+      },
+      "selectionRationale": "The act isolates Law's conceptual-constraint objection before he applies it again to the detailed water example."
+    },
+    {
+      "moveId": "129-m06",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "timestamp": "36:50",
+      "sourceSpan": {
+        "startMs": 2210960,
+        "endMs": 2267000
+      },
+      "sourceExcerpt": "see now of course i'm taking it uh that we're thinking about this from the point of view of materialism about uh human beings and we can suppose then as you suggest that maybe a belief just is a certain neural structure um but it's important in this context not to think about how things actually are so much as how things would be if both materialism and naturalism and evolution of all three of these things were true i mean you say it's uh",
+      "sourceExcerptSha256": "038dd7071fb1194aed6a693225b0670da6f6725251d09e739ff39f6776ec00ec",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "129-t06",
+        "targetSpeaker": "Stephen Law",
+        "sourceSpan": {
+          "startMs": 2142160,
+          "endMs": 2177000
+        },
+        "sourceExcerpt": "but if beliefs are associated with say certain neural structures if they are just those neural structures or if um well let's just suppose for the sake of argument that they are um surely you can't just plug any old belief into any old neural structure willy-nilly um there are if you like conceptual constraints on what um particular belief a particular neural structure might be",
+        "sourceExcerptSha256": "1e95ee4c1962775640ffc87c1d57aa180366dcfcfd5ec714c2e5aa59e6dee635",
+        "claim": "Conceptual constraints prevent arbitrary belief contents from being assigned to behavior-producing neural structures.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "129-t06-c1",
+            "text": "Belief content is conceptually constrained by its associated neural structure.",
+            "kind": "rule-comparison",
+            "dependsOn": []
+          }
+        ],
+        "selectionRationale": "Plantinga grants possible identity with neural structure but immediately questions why the constraint favors the behavior-corresponding content."
+      },
+      "burdenPacket": {
+        "primaryRouteId": "pro-eaan-route",
+        "eligibleBridgeIds": [
+          "pro-central"
+        ],
+        "selectionRationale": "The response bears directly on whether adaptive neurology supplies a truth-linked semantic constraint."
+      },
+      "selectionRationale": "This reply preserves Law's content-constraint target and asks for the missing probability warrant rather than shifting to another issue."
+    },
+    {
+      "moveId": "129-m07",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "timestamp": "40:18",
+      "sourceSpan": {
+        "startMs": 2425520,
+        "endMs": 2473000
+      },
+      "sourceExcerpt": "i mean what i'm suggesting is that that if the belief produces in conjunction with a strong desire for water um movement in the direct you know in in in a southerly direction then it's a very strong candidate for being the belief that there's water to the south i mean maybe maybe it isn't it's possible uh that it's not that belief i'll acknowledge that possibility but surely it becomes a very strong candidate whereas the belief that there's water to the north it's",
+      "sourceExcerptSha256": "97af33ad0591c8423454ec52ca4e18da8a860587bc6d771d80b017b4fc4e4074",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "129-t07",
+        "targetSpeaker": "Alvin Plantinga",
+        "sourceSpan": {
+          "startMs": 2385520,
+          "endMs": 2417000
+        },
+        "sourceExcerpt": "one should think that that particular belief that gets associated with the underlying neurology when the underlying neurology causes a given kind of behavior let's say i can't see why one should think that it's just has to be the case that that belief is connected somehow with um with whatever it is that um whatever it is whatever kind of action it is that issues from the underlying neurology maybe so but it might just will not be so",
+        "sourceExcerptSha256": "044bf96ba4c7dd3756d62a061109388909d476bdc6dd72eed7fca33f1e2aea16",
+        "claim": "There is no established reason to connect neural behavior output with a corresponding belief content.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "129-t07-c1",
+            "text": "No warrant connects a neural state's behavioral output to matching belief content.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "129-t07-c2"
+            ]
+          },
+          {
+            "id": "129-t07-c2",
+            "text": "The content associated with adaptive neurology might fail to match its resulting action.",
+            "kind": "modality",
+            "dependsOn": []
+          }
+        ],
+        "selectionRationale": "Law immediately supplies the requested probability rationale by contrasting strong and weak candidate contents."
+      },
+      "burdenPacket": {
+        "primaryRouteId": "con-reliability-route",
+        "eligibleBridgeIds": [
+          "con-central"
+        ],
+        "selectionRationale": "The candidate-content comparison is the central con bridge from adaptive output to probable truth."
+      },
+      "selectionRationale": "This is Law's clearest probabilistic formulation and directly answers Plantinga's request for grounds rather than merely repeating the water case."
+    },
+    {
+      "moveId": "129-m08",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "timestamp": "41:13",
+      "sourceSpan": {
+        "startMs": 2473119,
+        "endMs": 2537000
+      },
+      "sourceExcerpt": "well now that's uh i guess a point where we are seeing quite eye to ear i don't see uh the grounds for that probability probability type judgment i mean if we go back to the frog again imagine the frog sitting on the lily pond and the in the spy comes flying by yeah maybe the frog has beliefs and maybe those beliefs are determined by the underlying neurological structure that structure causes the frog to capture the fly but i can't see any",
+      "sourceExcerptSha256": "b17600ef66647fc331a4b58c86a22ea07d036a0105d54d640d802da8d8b217be",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "129-t08",
+        "targetSpeaker": "Stephen Law",
+        "sourceSpan": {
+          "startMs": 2437440,
+          "endMs": 2473000
+        },
+        "sourceExcerpt": "then it's a very strong candidate for being the belief that there's water to the south i mean maybe maybe it isn't it's possible uh that it's not that belief i'll acknowledge that possibility but surely it becomes a very strong candidate whereas the belief that there's water to the north it's a rather unlikely candidate for being that particular belief and so it seems to me that you know natural selection is it's more likely than to favor the",
+        "sourceExcerptSha256": "c5a4e11b1d0f7428c73de115a1d282e7e7eeb60d96426f10f63999352d9f1247",
+        "claim": "Behavior toward southern water makes the matching true content more probable than a contrary content.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "129-t08-c1",
+            "text": "Matching belief content is a stronger candidate given desire-guided behavior.",
+            "kind": "rule-comparison",
+            "dependsOn": []
+          },
+          {
+            "id": "129-t08-c2",
+            "text": "Natural selection therefore more likely favors true than false belief in the case.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "129-t08-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "Plantinga directly denies the candidate-probability inference and returns to the frog as a counterexample."
+      },
+      "burdenPacket": {
+        "primaryRouteId": "pro-eaan-route",
+        "eligibleBridgeIds": [
+          "pro-central"
+        ],
+        "selectionRationale": "The response contests the key central inference from behavior to semantically matching content."
+      },
+      "selectionRationale": "This atomic reply targets the probabilistic comparison and presents one counterpossibility without incorporating the later numerical calculation."
+    },
+    {
+      "moveId": "129-m09",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "timestamp": "42:18",
+      "sourceSpan": {
+        "startMs": 2536400,
+        "endMs": 2578000
+      },
+      "sourceExcerpt": "the behavior yeah well i'm saying that it has to be the belief that you know there's a flyer location x in order for it it's desired for flyers to produce the behavior that sticks its tongue out and hits location x it doesn't necessarily have to be that belief but surely if we if we're going to start attributing beliefs to the frog uh that's got to be pretty pretty high up the list of of of beliefs uh so far as you know",
+      "sourceExcerptSha256": "c2e642cfa9e1e5bb969a40ad1d067a68babc1ac46f8f4c8dba962639fce9cd25",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "129-t09",
+        "targetSpeaker": "Alvin Plantinga",
+        "sourceSpan": {
+          "startMs": 2492720,
+          "endMs": 2537000
+        },
+        "sourceExcerpt": "the frog has beliefs and maybe those beliefs are determined by the underlying neurological structure that structure causes the frog to capture the fly but i can't see any reason why if there are beliefs determined by that structure they have to have anything to do with flies i mean maybe uh the frog believes something totally different you know maybe maybe the frog doesn't believe anything on that occasion about flies or little black dots",
+        "sourceExcerptSha256": "95780afc0cbd8ee667770da3d1d485e35463dc2eaaa0f8a8910fd5c5738e7b01",
+        "claim": "The frog's adaptive neural structure need not determine fly-related belief content.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "129-t09-c1",
+            "text": "Fly-catching neurology need not determine fly-related belief content.",
+            "kind": "modality",
+            "dependsOn": []
+          }
+        ],
+        "selectionRationale": "Law immediately rejects the unrelated-content possibility as implausible under ordinary belief attribution."
+      },
+      "burdenPacket": {
+        "primaryRouteId": "con-reliability-route",
+        "eligibleBridgeIds": [
+          "con-central"
+        ],
+        "selectionRationale": "The attribution comparison bears directly on the central content-to-behavior constraint."
+      },
+      "selectionRationale": "This reply applies the content constraint to Plantinga's own frog example and contrasts the relevant belief with plainly unrelated contents."
+    },
+    {
+      "moveId": "129-m10",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "timestamp": "43:32",
+      "sourceSpan": {
+        "startMs": 2612319,
+        "endMs": 2664000
+      },
+      "sourceExcerpt": "well i i don't uh i don't think i don't say that evolution is more likely to produce false beliefs what i say is that um given given materialism the probability with given materialism this underlying structure uh causes adaptive behavior and also determines a certain belief or a certain belief content but it doesn't matter for the success or for the adaptiveness of the action whether that belief content belief determined by the neurology is a true belief or a false belief might as",
+      "sourceExcerptSha256": "69a685cc6b1fbb585eb1f996e6c559de19f788bd10c93121ab2e6e27ef2931a3",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "129-t10",
+        "targetSpeaker": "Stephen Law",
+        "sourceSpan": {
+          "startMs": 2538079,
+          "endMs": 2578000
+        },
+        "sourceExcerpt": "it has to be the belief that you know there's a flyer location x in order for it it's desired for flyers to produce the behavior that sticks its tongue out and hits location x it doesn't necessarily have to be that belief but surely if we if we're going to start attributing beliefs to the frog uh that's got to be pretty pretty high up the list of of of beliefs uh so far as you know it being",
+        "sourceExcerptSha256": "6da58bc903d1d137779a0382660ac2b565174a6d5b8566d01c6db912ff702067",
+        "claim": "Fly-location content ranks highly when attributing beliefs that combine with desire to explain fly-catching behavior.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "129-t10-c1",
+            "text": "Fly-location content is highly probable under belief attribution to the frog.",
+            "kind": "rule-comparison",
+            "dependsOn": []
+          }
+        ],
+        "selectionRationale": "Plantinga immediately distinguishes equal truth probability from the moderator's stronger false-belief formulation and restates content neutrality."
+      },
+      "burdenPacket": {
+        "primaryRouteId": "pro-eaan-route",
+        "eligibleBridgeIds": [
+          "pro-central"
+        ],
+        "selectionRationale": "The half-probability clarification is eligible for the central bridge supporting low faculty reliability."
+      },
+      "selectionRationale": "This response clarifies the exact probability claim and directly resists the attribution-based ranking without adding the later aggregate arithmetic."
+    },
+    {
+      "moveId": "129-m11",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "timestamp": "52:22",
+      "sourceSpan": {
+        "startMs": 3140880,
+        "endMs": 3227000
+      },
+      "sourceExcerpt": "you wanted to say something well yeah i mean there are kind of there are two bits to this argument first of all we need to show that uh naturalism are combined with the theory of evolution ends up kind of a self-defeating position but um there's also the thread that um theism combined with evolution doesn't run into that those kinds of problems and actually it seems to me that it it does i mean maybe you know if we embrace naturalism the theory",
+      "sourceExcerptSha256": "60674cbd187f9f3048aaeb483fde75564dc95098c73b5429c198a149a3666cf3",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "constructive",
+      "targetPacket": null,
+      "burdenPacket": {
+        "primaryRouteId": "con-reliability-route",
+        "eligibleBridgeIds": [
+          "con-subsidiary"
+        ],
+        "selectionRationale": "The parallel-skepticism line adds a distinct comparison showing the proposed theistic setting may face an analogous problem."
+      },
+      "selectionRationale": "This is a new, self-contained con line comparing naturalist and theistic skeptical consequences, distinct from the earlier semantic-content mechanism."
+    },
+    {
+      "moveId": "129-m12",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "timestamp": "59:10",
+      "sourceSpan": {
+        "startMs": 3550799,
+        "endMs": 3615000
+      },
+      "sourceExcerpt": "as to his last suggestion of course i don't for a moment think that my cognitive faculties reveal to me that there isn't any such person as god i think i mean he brings up the problem of evil and the first thing to say is that theists have to take this problem very seriously uh he is all the way going all the way back to the psalms in the old testament and in particular job have found the existence of suffering and the",
+      "sourceExcerptSha256": "913bcbc9bbad09dfe967cab87df74a6a09b5620fdf39d50cbe341cf1397f2794",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "129-t12",
+        "targetSpeaker": "Stephen Law",
+        "sourceSpan": {
+          "startMs": 3180960,
+          "endMs": 3227000
+        },
+        "sourceExcerpt": "but uh it may be that the combination of theism and evolution um runs into exactly the same kind of problem so that so so so here's a suggestion um if if i suppose that there is a god of the sort that alvin believes in and that i have reliable cognitive faculties as a result when i apply those faculties it seems to me i come up with i discover all sorts of things which um reveal that in",
+        "sourceExcerptSha256": "8a98ad88f1f3121d665546744c51d519058160b3091fa154d67ef369573d487d",
+        "claim": "Theistic evolution faces parallel self-undermining skepticism because reliable faculties reveal evidence against that God.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "129-t12-c1",
+            "text": "Reliable cognitive faculties reveal appalling suffering as evidence against the Christian God.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "129-t12-c2",
+            "text": "Theistic evolution therefore enters a parallel self-undermining skeptical problem.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "129-t12-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "Plantinga's first substantive answer directly qualifies the evidential force of suffering and denies that it amounts to faculty-revealed nonexistence."
+      },
+      "burdenPacket": {
+        "primaryRouteId": "pro-eaan-route",
+        "eligibleBridgeIds": [
+          "pro-subsidiary"
+        ],
+        "selectionRationale": "The response addresses a subsidiary comparison about whether theistic cognition is analogously self-undermining."
+      },
+      "selectionRationale": "This final selected reply directly addresses Law's distinct parallel-skepticism construction while remaining a single response about suffering's evidential force."
+    }
+  ],
+  "audit": {
+    "moveCount": 12,
+    "proMoveCount": 7,
+    "conMoveCount": 5,
+    "constructiveMoveCount": 4,
+    "responsiveMoveCount": 8,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "burdenRouteViolations": 0,
+    "componentGraphViolations": 0,
+    "componentOverlapViolations": 0,
+    "targetRecencyViolations": 0,
+    "unresolvedSpeakerAttributions": 0,
+    "excludedCandidates": [
+      {
+        "timestamp": "29:01",
+        "reason": "Excluded because the short clarification exchange is less load-bearing than the sustained reliability mechanism dispute."
+      },
+      {
+        "timestamp": "49:24",
+        "reason": "Excluded because the teleology aside is peripheral to the locked burden routes and sampling balance."
+      }
+    ]
+  }
+}

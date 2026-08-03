@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "2.6-atomic-inventory",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.6",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.6",
+  "gateId": "v2.6-held-out-target-contact-gate",
+  "debateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+  "debateNumber": "173",
+  "videoId": "JZRcYaAYWg4",
+  "motion": "Is the Catholic Church, considered as an institution and global social force, a force for good in the world?",
+  "sides": {
+    "pro": {"label": "The Church is a force for good", "speakers": ["John Onaiyekan", "Ann Widdecombe"]},
+    "con": {"label": "The Church is not a force for good", "speakers": ["Stephen Fry", "Christopher Hitchens"]}
+  },
+  "burdenRoutes": [
+    {
+      "id": "pro-institutional-good",
+      "side": "pro",
+      "description": "Establish that the contemporary Catholic Church produces institutionally attributable goods sufficient to support the motion.",
+      "successCriteria": "Connect distinctive Church teaching, organization, or practice to substantial present benefits while answering institution-level harms.",
+      "bridges": [
+        {"id": "pro-motion-net-good", "tier": "motion", "description": "The institution's contemporary effects warrant calling it a force for good overall."},
+        {"id": "pro-central-humanitarian", "tier": "central", "description": "Church organization materially supplies health, education, relief, or community services."},
+        {"id": "pro-subsidiary-doctrine", "tier": "subsidiary", "description": "Church teachings or spiritual practices provide moral guidance, hope, or motivation."}
+      ]
+    },
+    {
+      "id": "con-institutional-harm",
+      "side": "con",
+      "description": "Establish that the Catholic Church's institutional structure, doctrines, or policies produce grave harms incompatible with the motion.",
+      "successCriteria": "Connect recurring or current harms to authoritative Church structures or teachings and rebut charity-based defenses of the institution.",
+      "bridges": [
+        {"id": "con-motion-not-good", "tier": "motion", "description": "The institution's attributable harms defeat its characterization as a force for good overall."},
+        {"id": "con-central-institutional-harm", "tier": "central", "description": "Hierarchy, policy, or doctrine systematically causes, protects, or perpetuates serious harm."},
+        {"id": "con-subsidiary-charity-rebuttal", "tier": "subsidiary", "description": "Humanitarian activity does not uniquely validate the Church or outweigh institutional harms."}
+      ]
+    }
+  ],
+  "source": {
+    "transcriptPath": ".assessment-cache/captions/JZRcYaAYWg4/transcript.txt",
+    "transcriptSha256": "45f945b11260356c72a96cb621ed3190a26cb86cdcf4ed08e6168d47a60888e3",
+    "eventsPath": ".assessment-cache/captions/JZRcYaAYWg4/events.json",
+    "eventsSha256": "6f7d3f3d825bcb392ba325384ca85be0af78e0c908e79748a2d671c72ef771dc",
+    "manifestPath": ".assessment-cache/captions/JZRcYaAYWg4/manifest.json",
+    "manifestSha256": "f1d5c798300f861ae29def1cb430b3eeacb293a4fb3d984c8f5386b590599220",
+    "limitations": "English auto-generated captions contain occasional name errors and disfluencies; selected acts occur inside chair-announced, continuous speaker turns with high-confidence attribution."
+  },
+  "inventoryProtocol": {
+    "builtAt": "2026-08-03T16:00:00-04:00",
+    "builderModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "singleSpeakerAtomicActs": true,
+    "targetPacketsPrelocked": true,
+    "burdenRoutesPrelocked": true,
+    "componentGraphsPrelocked": true,
+    "targetRecencyChecked": true,
+    "selectionStatement": "Twelve chronological single-speaker acts were sampled from the complete substantive exchange: one constructive and two responsive acts per named speaker, with two constructive acts per side and eight responsive acts overall."
+  },
+  "moves": [
+    {
+      "moveId": "173-m01", "side": "pro", "speaker": "John Onaiyekan", "timestamp": "08:42", "sourceSpan": {"startMs": 522000, "endMs": 570000},
+      "sourceExcerpt": "Independent statistics have shown that the Catholic Church is doing far more than its numbers and its population would probably suggest. The action of the Church is most significant in communities that are reduced to poverty and misery by human neglect and sometimes by hostile environments.",
+      "sourceExcerptSha256": "a6ec5821856580be86f929b81d54e992911d84e6aa1f61270621bcf0db48c20a", "quoteKind": "quote", "speakerAttributionConfidence": "high", "audioChecked": false, "audioVerification": null, "interactionMode": "constructive", "targetPacket": null,
+      "burdenPacket": {"primaryRouteId": "pro-institutional-good", "eligibleBridgeIds": ["pro-motion-net-good", "pro-central-humanitarian"], "selectionRationale": "This act directly links the Church's institutional activity to substantial welfare benefits and the motion-level characterization."},
+      "selectionRationale": "A discrete empirical constructive claim about the scale and location of Church welfare activity, delivered within Onaiyekan's announced opening turn."
+    },
+    {
+      "moveId": "173-m02", "side": "con", "speaker": "Christopher Hitchens", "timestamp": "20:28", "sourceSpan": {"startMs": 1228000, "endMs": 1268000},
+      "sourceExcerpt": "These are very serious matters and they're not to be laughed off by references to the occasional work of Catholic charities. But, I draw your attention not just to the apologies, ladies and gentlemen, but to the evasive and euphemistic form that they take.",
+      "sourceExcerptSha256": "add06c666d7532ff113b49e41a3174364535ebde954d70d1cb31506e8944d879", "quoteKind": "quote", "speakerAttributionConfidence": "high", "audioChecked": false, "audioVerification": null, "interactionMode": "constructive", "targetPacket": null,
+      "burdenPacket": {"primaryRouteId": "con-institutional-harm", "eligibleBridgeIds": ["con-motion-not-good", "con-central-institutional-harm", "con-subsidiary-charity-rebuttal"], "selectionRationale": "The act treats institutional evasion as serious continuing harm and expressly rejects charity as an adequate answer."},
+      "selectionRationale": "A self-contained constructive claim that institutional apology practices evade responsibility and are not offset by charitable work."
+    },
+    {
+      "moveId": "173-m03", "side": "pro", "speaker": "Ann Widdecombe", "timestamp": "39:15", "sourceSpan": {"startMs": 2355000, "endMs": 2390000},
+      "sourceExcerpt": "He also suggests that the Pope welcomed back a Holocaust-denying bishop. Let us first remember that the bishop in question was originally expelled for disobedience. Upon being reinstated and upon reiterating his views the Pope, a fact conveniently ignored by Mr. Hitchens commanded him to repent.",
+      "sourceExcerptSha256": "340458fdfaa3dd599e7bd5d16fc4abb131be54c9583dfaf0e207b514ce84e56e", "quoteKind": "quote", "speakerAttributionConfidence": "high", "audioChecked": false, "audioVerification": null, "interactionMode": "responsive",
+      "targetPacket": {"id": "173-t03", "targetSpeaker": "Christopher Hitchens", "sourceSpan": {"startMs": 1673000, "endMs": 1697000}, "sourceExcerpt": "He was quite rightly excommunicated some years ago along with several other members of his ratbag organization. But Joseph Ratzinger has invited him back in to the communion because to him, having this man, this liar, this fraud, this racist in the church is more important because it's church unity than the things that he said and done and continues to stand", "sourceExcerptSha256": "6cb89db4b6077325a282224e3c2fa3ca6feaa18ebe54531b95ab0afebde3630d", "claim": "Ratzinger restored a Holocaust-denying bishop because Church unity mattered more than the bishop's racism.", "targetRelationToMove": "immediate-opponent-claim", "interveningOpponentClaim": false, "exceptionRationale": null, "indispensableComponents": [{"id": "t03-c1", "text": "Ratzinger invited the excommunicated bishop back into communion", "kind": "fact-premise", "dependsOn": []}, {"id": "t03-c2", "text": "Church unity mattered more to Ratzinger than the bishop's racist conduct", "kind": "inference", "dependsOn": ["t03-c1"]}], "selectionRationale": "Widdecombe explicitly identifies Hitchens's reinstatement allegation and answers its omitted disciplinary context in her first opposing turn."},
+      "burdenPacket": {"primaryRouteId": "pro-institutional-good", "eligibleBridgeIds": ["pro-central-humanitarian"], "selectionRationale": "Correcting an allegation about current papal discipline bears centrally on whether the institution protects serious wrongdoing."},
+      "selectionRationale": "A narrow factual reply concerning one bishop's reinstatement and the Pope's subsequent demand for repentance."
+    },
+    {
+      "moveId": "173-m04", "side": "pro", "speaker": "Ann Widdecombe", "timestamp": "40:00", "sourceSpan": {"startMs": 2400000, "endMs": 2440000},
+      "sourceExcerpt": "If you are going to judge the Catholic Church at any given stage in history then you have to judge it against the standards that were prevailing at the time. And condemning the Inquisition, which was a horrible thing condemning the Inquisition in isolation from condemning just about the whole, in fact the whole of European society",
+      "sourceExcerptSha256": "e200e4679e5920859d487e33d4a94ed208ea1015dec2f7603230fd53bb21a5aa", "quoteKind": "quote", "speakerAttributionConfidence": "high", "audioChecked": false, "audioVerification": null, "interactionMode": "responsive",
+      "targetPacket": {"id": "173-t04", "targetSpeaker": "Christopher Hitchens", "sourceSpan": {"startMs": 1380000, "endMs": 1445000}, "sourceExcerpt": "But the rape and torture of children is not something to be relativized. It's not something to be excused as a few bad priests. It's certainly not to be excused by the hideously false claim made by some Catholic conservatives that this wouldn't have happened if queers hadn't been allowed into the church.", "sourceExcerptSha256": "beaca62cca25f557af4042b0aaf80a35a392e96b87ee79fa929a359d4beae8b3", "claim": "Institutional child abuse cannot be excused or relativized as isolated misconduct.", "targetRelationToMove": "immediate-opponent-claim", "interveningOpponentClaim": false, "exceptionRationale": null, "indispensableComponents": [{"id": "t04-c1", "text": "Children were raped and tortured within the Church", "kind": "fact-premise", "dependsOn": []}, {"id": "t04-c2", "text": "The abuse cannot be relativized or dismissed as a few bad priests", "kind": "conclusion", "dependsOn": ["t04-c1"]}], "selectionRationale": "Widdecombe's historical-standard rule is offered in direct response to Hitchens's immediately preceding institution-level condemnation."},
+      "burdenPacket": {"primaryRouteId": "pro-institutional-good", "eligibleBridgeIds": ["pro-motion-net-good"], "selectionRationale": "The comparison class for historical wrongdoing affects whether those wrongs defeat the overall institutional characterization."},
+      "selectionRationale": "A single comparative rule requiring historical conduct to be assessed against contemporaneous social standards."
+    },
+    {
+      "moveId": "173-m05", "side": "pro", "speaker": "Ann Widdecombe", "timestamp": "43:36", "sourceSpan": {"startMs": 2616000, "endMs": 2665000},
+      "sourceExcerpt": "But when we ask who whether the Catholic Church is a force for good, let's just try to imagine a world today without, for example, the billions of pounds that are poured into overseas aid by the Catholic Church, contributing year on year more than any single nation. Imagine the developing world had been left without the input of the medicine and the education that was brought to it by the missions.",
+      "sourceExcerptSha256": "8c5ab66adb873ae15fc2d6d25a52b115c79fa8cb1172473c153f669cbbce7fa4", "quoteKind": "quote", "speakerAttributionConfidence": "high", "audioChecked": false, "audioVerification": null, "interactionMode": "constructive", "targetPacket": null,
+      "burdenPacket": {"primaryRouteId": "pro-institutional-good", "eligibleBridgeIds": ["pro-motion-net-good", "pro-central-humanitarian"], "selectionRationale": "The counterfactual absence of institutional aid directly supports both the humanitarian and overall-good bridges."},
+      "selectionRationale": "A discrete counterfactual constructive argument linking Catholic institutional resources to medicine, education, and overseas aid."
+    },
+    {
+      "moveId": "173-m06", "side": "con", "speaker": "Stephen Fry", "timestamp": "58:19", "sourceSpan": {"startMs": 3499000, "endMs": 3545000},
+      "sourceExcerpt": "And it was his job to deal with the child abuse scandal that was brewing. His first act was to write a letter to Catholic bishops ordering them on pain of excommunication not to talk to the police or anyone else. Investigation should be handled he wrote and I'm quoting that letter in the most secretive way restrained by perpetual silence.",
+      "sourceExcerptSha256": "f96bacde880618cc45a180b5954eb3e6716a4e15a2edb7c44bb79f58d673e46b", "quoteKind": "quote", "speakerAttributionConfidence": "high", "audioChecked": false, "audioVerification": null, "interactionMode": "constructive", "targetPacket": null,
+      "burdenPacket": {"primaryRouteId": "con-institutional-harm", "eligibleBridgeIds": ["con-motion-not-good", "con-central-institutional-harm"], "selectionRationale": "An alleged authoritative secrecy order connects abuse concealment to hierarchy rather than isolated individual conduct."},
+      "selectionRationale": "A bounded institutional-cover-up claim about Ratzinger's alleged instruction to bishops during the abuse scandal."
+    },
+    {
+      "moveId": "173-m07", "side": "con", "speaker": "Christopher Hitchens", "timestamp": "1:12:46", "sourceSpan": {"startMs": 4366000, "endMs": 4400000},
+      "sourceExcerpt": "I knew we wouldn't get through without talk about uh money being given away on on personally humanitarian projects in the third world. You never don't get that. You never get the admission that it's done to proselytize for religion either, which my friends at Medecins Sans Frontieres, Doctors Without Borders, for example, or Amnesty International don't do.",
+      "sourceExcerptSha256": "18e00e4a38959b75e4a1a6793bdacab7f5c3fed6acd6c283209f9f2a5dbe7d1d", "quoteKind": "quote", "speakerAttributionConfidence": "high", "audioChecked": false, "audioVerification": null, "interactionMode": "responsive",
+      "targetPacket": {"id": "173-t07", "targetSpeaker": "Ann Widdecombe", "sourceSpan": {"startMs": 2616000, "endMs": 2665000}, "sourceExcerpt": "let's just try to imagine a world today without, for example, the billions of pounds that are poured into overseas aid by the Catholic Church, contributing year on year more than any single nation. Imagine the developing world had been left without the input of the medicine and the education that was brought to it by the missions.", "sourceExcerptSha256": "335dd9ee1ec427ac5583707aad6adf7424f6cef9de25a4e9768f32efbcaf1ea6", "claim": "Catholic institutional aid provides exceptionally large and indispensable benefits to the developing world.", "targetRelationToMove": "earlier-load-bearing-claim", "interveningOpponentClaim": true, "exceptionRationale": "Audience questions intervened, but Hitchens explicitly names Widdecombe and returns to her aid argument as the load-bearing pro claim he is answering.", "indispensableComponents": [{"id": "t07-c1", "text": "The Catholic Church pours exceptionally large sums into overseas aid", "kind": "fact-premise", "dependsOn": []}, {"id": "t07-c2", "text": "Catholic missions brought medicine and education to the developing world", "kind": "fact-premise", "dependsOn": []}, {"id": "t07-c3", "text": "The developing world would be materially worse without those Catholic contributions", "kind": "conclusion", "dependsOn": ["t07-c1", "t07-c2"]}], "selectionRationale": "Hitchens explicitly announces a reply to Widdecombe and attacks the character and purpose of the aid she presented."},
+      "burdenPacket": {"primaryRouteId": "con-institutional-harm", "eligibleBridgeIds": ["con-subsidiary-charity-rebuttal"], "selectionRationale": "The response contests whether humanitarian provision supplies distinctive support for the institution rather than proselytizing leverage."},
+      "selectionRationale": "A focused response arguing that Catholic humanitarian projects proselytize, unlike named secular humanitarian organizations."
+    },
+    {
+      "moveId": "173-m08", "side": "con", "speaker": "Christopher Hitchens", "timestamp": "1:13:13", "sourceSpan": {"startMs": 4393000, "endMs": 4430000},
+      "sourceExcerpt": "But if I'm debating with a Mormon and I say, \"Are you serious? Joseph Smith got a special revelation on plates of gold in upstate New York?\" And I ridicule the absurd absurdity of the Church of Latter-Day Saints, he's going to say to me, \"Boy, you should see our missionaries in Bolivia, though.\" It's always the same.",
+      "sourceExcerptSha256": "13dbbff66833536e24e90c5882eba550878b24d11304ea03711abd93de97d685", "quoteKind": "quote", "speakerAttributionConfidence": "high", "audioChecked": false, "audioVerification": null, "interactionMode": "responsive",
+      "targetPacket": {"id": "173-t08", "targetSpeaker": "Ann Widdecombe", "sourceSpan": {"startMs": 2710000, "endMs": 2750000}, "sourceExcerpt": "It is not just the hierarchy of the church. And I believe that the church to which I belong is a massive, massive force for good. But let us not just keep the debate at that level. I knew somehow that when we were here tonight, we would be discussing child abuse and condoms.", "sourceExcerptSha256": "458895f5673607000d52582319bdfc328ba665a1f1f355caf010a2916be599d2", "claim": "The good done by members makes the Church a massive force for good despite focus on abuse and condoms.", "targetRelationToMove": "earlier-load-bearing-claim", "interveningOpponentClaim": true, "exceptionRationale": "Hitchens's Mormon analogy continues his explicit return to Widdecombe's earlier load-bearing move from the same uninterrupted answer after audience interventions.", "indispensableComponents": [{"id": "t08-c1", "text": "The Church includes its members rather than only its hierarchy", "kind": "rule-comparison", "dependsOn": []}, {"id": "t08-c2", "text": "Members' good works make the Church a massive force for good", "kind": "conclusion", "dependsOn": ["t08-c1"]}, {"id": "t08-c3", "text": "Focusing on abuse and condoms keeps the debate at the wrong level", "kind": "inference", "dependsOn": ["t08-c2"]}], "selectionRationale": "The analogy tests whether good missionary works establish the truth or goodness of the institution that sponsors them."},
+      "burdenPacket": {"primaryRouteId": "con-institutional-harm", "eligibleBridgeIds": ["con-subsidiary-charity-rebuttal"], "selectionRationale": "The cross-religion analogy directly challenges the inferential force of missionary social services as institutional vindication."},
+      "selectionRationale": "A separate analogy arguing that missionary services cannot validate an institution's disputed truth or overall goodness."
+    },
+    {
+      "moveId": "173-m09", "side": "con", "speaker": "Stephen Fry", "timestamp": "1:38:03", "sourceSpan": {"startMs": 5883000, "endMs": 5920000},
+      "sourceExcerpt": "I'm slightly disappointed that uh um we're going to be particular should say, \"Oh, I knew they'd bring up condoms and child rape and homosexuality.\" It's a bit like a burglar in court say, \"You would bring up that burglary and that manslaughter. You never mention the fact I give my father a birthday present.\"",
+      "sourceExcerptSha256": "2fea908628c556d09e82f28a41ca86bd5eef6ed7b7f81fd477199f390b238bcc", "quoteKind": "quote", "speakerAttributionConfidence": "high", "audioChecked": false, "audioVerification": null, "interactionMode": "responsive",
+      "targetPacket": {"id": "173-t09", "targetSpeaker": "Ann Widdecombe", "sourceSpan": {"startMs": 2710000, "endMs": 2750000}, "sourceExcerpt": "I knew somehow that when we were here tonight, we would be discussing child abuse and condoms. They came in the end. I was almost thought we were going to get through an entire speech without condoms from Christopher Hitchens, but we got them at the end. If he has a creed, it would be I believe in condoms.", "sourceExcerptSha256": "d64bc8d848129f25593297b2a73136da80657f6845eaf0395670baa545bdd95f", "claim": "The opposition's focus on child abuse and condoms improperly narrows the debate and reflects its fixation.", "targetRelationToMove": "earlier-load-bearing-claim", "interveningOpponentClaim": true, "exceptionRationale": "Fry quotes Widdecombe's distinctive dismissal nearly verbatim in closing, making the earlier claim explicit and load-bearing despite later interventions.", "indispensableComponents": [{"id": "t09-c1", "text": "The opposition predictably focuses on child abuse and condoms", "kind": "fact-premise", "dependsOn": []}, {"id": "t09-c2", "text": "That focus keeps the debate at an improperly narrow level", "kind": "conclusion", "dependsOn": ["t09-c1"]}], "selectionRationale": "Fry's burglar analogy directly attacks Widdecombe's attempt to diminish the relevance of the opposition's recurring harm examples."},
+      "burdenPacket": {"primaryRouteId": "con-institutional-harm", "eligibleBridgeIds": ["con-central-institutional-harm"], "selectionRationale": "The reply defends child abuse and sexual-policy harms as central evidence rather than an irrelevant thematic fixation."},
+      "selectionRationale": "A compact analogy answering the contention that repeated discussion of abuse, condoms, and homosexuality is an improper obsession."
+    },
+    {
+      "moveId": "173-m10", "side": "con", "speaker": "Stephen Fry", "timestamp": "1:39:15", "sourceSpan": {"startMs": 5955000, "endMs": 6000000},
+      "sourceExcerpt": "it's terribly disappointing to hear that those who who want to stand up for a church that is based on a founder who was put to death by capital punishment, who for all we know from what he said seemed to be very, very understanding, imaginative, pure, simple, remarkably intelligent in a Socratic kind of way. And he's represented by, really, I'm afraid, pretty low-rent intelligences and pretty low-rent imaginations.",
+      "sourceExcerptSha256": "c5d7b66fa0367ede3f0614905290aab2c2e555971eb0b178ff0bfaa89144de3c", "quoteKind": "quote", "speakerAttributionConfidence": "high", "audioChecked": false, "audioVerification": null, "interactionMode": "responsive",
+      "targetPacket": {"id": "173-t10", "targetSpeaker": "Ann Widdecombe", "sourceSpan": {"startMs": 5174000, "endMs": 5210000}, "sourceExcerpt": "I actually went to a Catholic school. I absorbed Catholic doctrine. I was certainly taught about limbo, and I don't actually recognize Stephen's description of it. Because it was it wasn't for all eternity. What limbo was was simply, and I do appreciate that to most people this won't matter, but it just needs answering.", "sourceExcerptSha256": "940cf53ce882a42d5c8c7db445a3bb9ee06a604dccf2e06d1be75b47df999212", "claim": "Fry's account of limbo is theologically mistaken because limbo was not eternal.", "targetRelationToMove": "earlier-load-bearing-claim", "interveningOpponentClaim": true, "exceptionRationale": "Fry explicitly rejects the claimed need for magisterial or theological expertise immediately before this excerpt, returning to Widdecombe's named limbo correction after later audience material.", "indispensableComponents": [{"id": "t10-c1", "text": "Widdecombe was taught Catholic doctrine about limbo", "kind": "fact-premise", "dependsOn": []}, {"id": "t10-c2", "text": "Limbo was a temporary wait rather than an eternal state", "kind": "fact-premise", "dependsOn": []}, {"id": "t10-c3", "text": "Fry's description of limbo is therefore mistaken", "kind": "conclusion", "dependsOn": ["t10-c1", "t10-c2"]}], "selectionRationale": "Fry rejects the authority and quality of the theological defense used to correct his limbo account."},
+      "burdenPacket": {"primaryRouteId": "con-institutional-harm", "eligibleBridgeIds": ["con-central-institutional-harm"], "selectionRationale": "The adequacy of official theological defenses bears on whether doctrine authoritatively perpetuates the alleged harm."},
+      "selectionRationale": "A discrete response challenging the intellectual and moral adequacy of the theological representation offered for the Church."
+    },
+    {
+      "moveId": "173-m11", "side": "pro", "speaker": "John Onaiyekan", "timestamp": "1:51:43", "sourceSpan": {"startMs": 6703000, "endMs": 6740000},
+      "sourceExcerpt": "The Catholic Church is a force for good in the world. It did not say it is the only source for good. It did not say it has always been a source for good. It's not in the past tense. It's in the present tense. Is a source for good. The way I learned logic, this is the way I would proceed.",
+      "sourceExcerptSha256": "d5f47ab04c3de94e9a28c15a5a7a7ef24dfb4d7035e28c0c90c91dd5884448e6", "quoteKind": "quote", "speakerAttributionConfidence": "high", "audioChecked": false, "audioVerification": null, "interactionMode": "responsive",
+      "targetPacket": {"id": "173-t11", "targetSpeaker": "Christopher Hitchens", "sourceSpan": {"startMs": 6569000, "endMs": 6610000}, "sourceExcerpt": "Now, relativism, I thought we were agreed. But Ann Widdecombe says slavery has to be considered in context. What's more relative than that? But there were people at the time, Thomas Paine, Benjamin Franklin, who were innumerable humanists and secularists who said slavery is is evil. The church wouldn't agree.", "sourceExcerptSha256": "0b08301cd2f11011b120c9c3bf361d293180e200abe42febee4894498a0760f0", "claim": "Historical Church support for slavery exposes relativism and moral failure in its claimed authority.", "targetRelationToMove": "immediate-opponent-claim", "interveningOpponentClaim": false, "exceptionRationale": null, "indispensableComponents": [{"id": "t11-c1", "text": "Contemporary humanists and secularists condemned slavery", "kind": "fact-premise", "dependsOn": []}, {"id": "t11-c2", "text": "The Church did not condemn slavery at that time", "kind": "fact-premise", "dependsOn": []}, {"id": "t11-c3", "text": "The Church's historical position exposes relativism and moral failure", "kind": "conclusion", "dependsOn": ["t11-c1", "t11-c2"]}], "selectionRationale": "Onaiyekan immediately answers Hitchens's historical challenge by distinguishing the present-tense, non-exclusive proposition actually under debate."},
+      "burdenPacket": {"primaryRouteId": "pro-institutional-good", "eligibleBridgeIds": ["pro-motion-net-good"], "selectionRationale": "Clarifying the temporal and comparative scope defines what must be established for the motion-level burden."},
+      "selectionRationale": "A precise scope reply distinguishing present institutional goodness from claims of unique or exceptionless historical goodness."
+    },
+    {
+      "moveId": "173-m12", "side": "pro", "speaker": "John Onaiyekan", "timestamp": "1:55:19", "sourceSpan": {"startMs": 6919000, "endMs": 6960000},
+      "sourceExcerpt": "As for condoms, um Mrs. Weather Man already has shown that there are scientific positions that support the position of the church. All I want to add here is this. If indeed the burden of HIV and AIDS is in Africa, know that it is my nephews, my nieces who are most affected. And let nobody out there think that they care more about the life of my own nieces and nephews than I care.",
+      "sourceExcerptSha256": "63b3584a157023d15183a9f5f41628b502affb892409c6391138d8bbffec308d", "quoteKind": "quote", "speakerAttributionConfidence": "high", "audioChecked": false, "audioVerification": null, "interactionMode": "responsive",
+      "targetPacket": {"id": "173-t12", "targetSpeaker": "Christopher Hitchens", "sourceSpan": {"startMs": 6378000, "endMs": 6420000}, "sourceExcerpt": "Against this one solution, the Catholic Church has set its face. The efforts of the missionary church in the third world mean more people die, not less. It's as simple as that. More famine, more disease, more ignorance, more random and avoidable death.", "sourceExcerptSha256": "1841dced125302c1965963dc0effa4d2e6b56ce38e78fd5961eec24e5a943adc", "claim": "By opposing women's reproductive control, missionary Church policy causes more death, famine, disease, and ignorance.", "targetRelationToMove": "immediate-opponent-claim", "interveningOpponentClaim": false, "exceptionRationale": null, "indispensableComponents": [{"id": "t12-c1", "text": "Women's reproductive control is the effective solution opposed by the Church", "kind": "fact-premise", "dependsOn": []}, {"id": "t12-c2", "text": "Missionary Church policy produces more death, famine, disease, and ignorance", "kind": "conclusion", "dependsOn": ["t12-c1"]}], "selectionRationale": "Onaiyekan's condom reply directly returns to the reproductive-policy harm claim in Hitchens's immediately preceding closing statement."},
+      "burdenPacket": {"primaryRouteId": "pro-institutional-good", "eligibleBridgeIds": ["pro-motion-net-good", "pro-central-humanitarian"], "selectionRationale": "Disputing alleged mortality effects bears directly on both institutional humanitarian impact and the overall motion."},
+      "selectionRationale": "A focused response asserting scientific support and personal stake against the claim that Church sexual policy worsens African mortality."
+    }
+  ],
+  "audit": {
+    "moveCount": 12, "proMoveCount": 6, "conMoveCount": 6, "constructiveMoveCount": 4, "responsiveMoveCount": 8,
+    "atomicityViolations": 0, "targetPacketViolations": 0, "burdenRouteViolations": 0, "componentGraphViolations": 0, "componentOverlapViolations": 0, "targetRecencyViolations": 0, "unresolvedSpeakerAttributions": 0,
+    "excludedCandidates": [
+      {"timestamp": "1:15:49", "reason": "Excluded because the immediate target was an audience claim rather than an opponent move."},
+      {"timestamp": "1:24:50", "reason": "Excluded because the immediate homosexuality prompt came from the audience and did not lock cleanly to a prior opponent act."}
+    ]
+  }
+}

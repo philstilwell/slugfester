@@ -1,0 +1,455 @@
+{
+  "schemaVersion": "2.6-held-out-target-contact-gate-reliability",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.6",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.6",
+  "gateId": "v2.6-held-out-target-contact-gate",
+  "model": "5.6 Sol",
+  "calibrationOnly": true,
+  "analyzedAt": "2026-08-03T12:51:39.841Z",
+  "sourceQa": {
+    "localTranscriptChains": 3,
+    "paidTranscriptionCalls": 0,
+    "inventoriesIndependentlyReviewed": 3,
+    "triggeredThirdReviews": 2
+  },
+  "independence": {
+    "inventoryBuilders": "fresh-score-blind-per-debate",
+    "inventoryReviewers": "different-fresh-per-debate",
+    "annotationPasses": "two-different-fresh-isolated-tasks-per-debate",
+    "adjudication": "fresh-primitive-only-no-scores",
+    "legacyAssessmentAccessed": false
+  },
+  "denominatorRules": {
+    "responsiveTargetRelation": "All eight responsive moves per debate.",
+    "componentContactAndOperation": "Only target components on responsive moves for which both independent passes classify the target relation as preserved.",
+    "allMoveCoverage": "All twelve moves per debate, including four constructive not-applicable labels.",
+    "responsiveCoverage": "All eight responsive moves per debate.",
+    "otherPrimitiveAndDerivedFields": "All twelve moves per debate."
+  },
+  "debates": [
+    {
+      "debateNumber": "129",
+      "debateId": "plantinga-law-eaan-rational-belief-2010",
+      "moveCount": 12,
+      "responsiveMoveCount": 8,
+      "componentContactJudgmentCount": 13,
+      "agreement": {
+        "responsiveTargetRelation": 1,
+        "componentContactMicro": 0.8462,
+        "componentOperationMicro": 0.7692,
+        "responsiveCoverage": 0.875,
+        "coverage": 0.9167,
+        "defectType": 0.9167,
+        "targetImpactExplicit": 1,
+        "malformedDemandExplained": 1,
+        "replacementDemandStated": 1,
+        "contactedBridgeSet": 1,
+        "diagnostic": 1,
+        "reframe": 1,
+        "burden": 1,
+        "tuple": 0.9167
+      },
+      "debateGates": {
+        "responsiveTargetRelation": {
+          "minimum": 0.75,
+          "observed": 1,
+          "status": "pass"
+        },
+        "componentContactMicro": {
+          "minimum": 0.8,
+          "observed": 0.8462,
+          "status": "pass"
+        },
+        "responsiveCoverage": {
+          "minimum": 0.75,
+          "observed": 0.875,
+          "status": "pass"
+        }
+      },
+      "debateLevelPassed": true,
+      "primitiveDisagreementCount": 6,
+      "thirdReviewTriggered": false
+    },
+    {
+      "debateNumber": "173",
+      "debateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+      "moveCount": 12,
+      "responsiveMoveCount": 8,
+      "componentContactJudgmentCount": 14,
+      "agreement": {
+        "responsiveTargetRelation": 0.75,
+        "componentContactMicro": 0.9286,
+        "componentOperationMicro": 0.8571,
+        "responsiveCoverage": 0.625,
+        "coverage": 0.75,
+        "defectType": 0.5833,
+        "targetImpactExplicit": 0.5,
+        "malformedDemandExplained": 1,
+        "replacementDemandStated": 1,
+        "contactedBridgeSet": 1,
+        "diagnostic": 0.5,
+        "reframe": 1,
+        "burden": 1,
+        "tuple": 0.4167
+      },
+      "debateGates": {
+        "responsiveTargetRelation": {
+          "minimum": 0.75,
+          "observed": 0.75,
+          "status": "pass"
+        },
+        "componentContactMicro": {
+          "minimum": 0.8,
+          "observed": 0.9286,
+          "status": "pass"
+        },
+        "responsiveCoverage": {
+          "minimum": 0.75,
+          "observed": 0.625,
+          "status": "fail"
+        }
+      },
+      "debateLevelPassed": false,
+      "primitiveDisagreementCount": 41,
+      "thirdReviewTriggered": true
+    },
+    {
+      "debateNumber": "192",
+      "debateId": "tour-swamidass-origin-life-chemistry-2020",
+      "moveCount": 12,
+      "responsiveMoveCount": 8,
+      "componentContactJudgmentCount": 13,
+      "agreement": {
+        "responsiveTargetRelation": 0.875,
+        "componentContactMicro": 0.9231,
+        "componentOperationMicro": 0.7692,
+        "responsiveCoverage": 0.875,
+        "coverage": 0.9167,
+        "defectType": 0.75,
+        "targetImpactExplicit": 0.9167,
+        "malformedDemandExplained": 1,
+        "replacementDemandStated": 1,
+        "contactedBridgeSet": 1,
+        "diagnostic": 0.9167,
+        "reframe": 1,
+        "burden": 1,
+        "tuple": 0.8333
+      },
+      "debateGates": {
+        "responsiveTargetRelation": {
+          "minimum": 0.75,
+          "observed": 0.875,
+          "status": "pass"
+        },
+        "componentContactMicro": {
+          "minimum": 0.8,
+          "observed": 0.9231,
+          "status": "pass"
+        },
+        "responsiveCoverage": {
+          "minimum": 0.75,
+          "observed": 0.875,
+          "status": "pass"
+        }
+      },
+      "debateLevelPassed": true,
+      "primitiveDisagreementCount": 24,
+      "thirdReviewTriggered": true
+    }
+  ],
+  "agreement": {
+    "moveCount": 36,
+    "responsiveMoveCount": 24,
+    "componentContact": {
+      "exactAgreement": 0.9,
+      "judgmentCount": 40
+    },
+    "componentOperation": {
+      "exactAgreement": 0.8,
+      "judgmentCount": 40,
+      "gateRole": "diagnostic-only"
+    },
+    "responsiveTargetRelation": {
+      "exactAgreement": 0.875
+    },
+    "defectType": {
+      "exactAgreement": 0.75
+    },
+    "targetImpactExplicit": {
+      "exactAgreement": 0.8056
+    },
+    "malformedDemandExplained": {
+      "exactAgreement": 1
+    },
+    "replacementDemandStated": {
+      "exactAgreement": 1
+    },
+    "contactedBridgeSet": {
+      "exactAgreement": 1
+    },
+    "targetCoverage": {
+      "exactAgreement": 0.8611,
+      "cohensKappa": 0.8158
+    },
+    "responsiveTargetCoverage": {
+      "exactAgreement": 0.7917
+    },
+    "diagnosticFlag": {
+      "exactAgreement": 0.8056,
+      "adjudicatedPositiveCount": 9
+    },
+    "reframeFlag": {
+      "exactAgreement": 1,
+      "adjudicatedPositiveCount": 3
+    },
+    "burdenRelation": {
+      "exactAgreement": 1,
+      "cohensKappa": 1
+    },
+    "exactDerivedTupleAgreement": 0.7222
+  },
+  "diagnostics": {
+    "componentContactDisagreementPairs": {
+      "false <-> true": 4
+    },
+    "componentOperationDisagreementPairs": {
+      "accepts <-> null": 2,
+      "null <-> qualifies": 2,
+      "denies <-> undermines": 2,
+      "qualifies <-> undermines": 1,
+      "accepts <-> qualifies": 1
+    },
+    "targetRelationDisagreementPairs": {
+      "preserved <-> substituted": 3
+    },
+    "defectTypeDisagreementPairs": {
+      "missing-premise <-> unsupported-comparison": 1,
+      "none <-> other": 2,
+      "missing-premise <-> none": 2,
+      "ambiguity <-> none": 1,
+      "ambiguity <-> unsupported-comparison": 1,
+      "invalid-inference <-> missing-premise": 1,
+      "ambiguity <-> other": 1
+    },
+    "targetImpactDisagreementDirections": {
+      "true -> false": 7
+    },
+    "malformedDemandDisagreementDirections": {},
+    "replacementDemandDisagreementDirections": {},
+    "contactedBridgeSetDisagreementCount": 0,
+    "coverageDisagreementPairs": {
+      "full <-> relevant-nonanswer": 1,
+      "full <-> partial": 1,
+      "partial <-> substitution": 3
+    },
+    "burdenDisagreementPairs": {},
+    "diagnosticDisagreementDirections": {
+      "true -> false": 7
+    },
+    "reframeDisagreementDirections": {},
+    "finalCoverageDistribution": {
+      "not-applicable": 12,
+      "full": 10,
+      "partial": 6,
+      "relevant-nonanswer": 4,
+      "substitution": 4
+    },
+    "finalBurdenDistribution": {
+      "completes": 9,
+      "advances-central": 19,
+      "advances-sub-burden": 8,
+      "topical-peripheral": 0,
+      "unadopted-or-irrelevant": 0
+    },
+    "finalMechanismPositiveCounts": {
+      "diagnostic": 9,
+      "reframe": 3
+    },
+    "primitiveDisagreementCount": 71,
+    "tupleDisagreementCount": 10
+  },
+  "gates": {
+    "componentContactMicroExact": {
+      "minimum": 0.9,
+      "observed": 0.9,
+      "status": "pass"
+    },
+    "responsiveTargetRelationExact": {
+      "minimum": 0.9,
+      "observed": 0.875,
+      "status": "fail"
+    },
+    "coverageExactAgreement": {
+      "minimum": 0.85,
+      "observed": 0.8611,
+      "status": "pass"
+    },
+    "coverageKappa": {
+      "minimum": 0.75,
+      "observed": 0.8158,
+      "status": "pass"
+    },
+    "responsiveCoverageExact": {
+      "minimum": 0.8,
+      "observed": 0.7917,
+      "status": "fail"
+    },
+    "defectTypeExact": {
+      "minimum": 0.85,
+      "observed": 0.75,
+      "status": "fail"
+    },
+    "targetImpactExplicitExact": {
+      "minimum": 0.9,
+      "observed": 0.8056,
+      "status": "fail"
+    },
+    "malformedDemandExplainedExact": {
+      "minimum": 0.9,
+      "observed": 1,
+      "status": "pass"
+    },
+    "replacementDemandStatedExact": {
+      "minimum": 0.9,
+      "observed": 1,
+      "status": "pass"
+    },
+    "contactedBridgeSetExact": {
+      "minimum": 0.8,
+      "observed": 1,
+      "status": "pass"
+    },
+    "diagnosticExactAgreement": {
+      "minimum": 0.9,
+      "observed": 0.8056,
+      "status": "fail"
+    },
+    "diagnosticPositivePower": {
+      "minimum": 3,
+      "observed": 9,
+      "status": "pass"
+    },
+    "reframeExactAgreement": {
+      "minimum": 0.9,
+      "observed": 1,
+      "status": "pass"
+    },
+    "reframePositivePower": {
+      "minimum": 3,
+      "observed": 3,
+      "status": "pass"
+    },
+    "burdenExactAgreement": {
+      "minimum": 0.8,
+      "observed": 1,
+      "status": "pass"
+    },
+    "burdenKappa": {
+      "minimum": 0.7,
+      "observed": 1,
+      "status": "pass"
+    },
+    "exactDerivedTupleAgreement": {
+      "minimum": 0.7,
+      "observed": 0.7222,
+      "status": "pass"
+    }
+  },
+  "hardGates": {
+    "moveCount": {
+      "required": 36,
+      "observed": 36,
+      "status": "pass"
+    },
+    "responsiveMoveCount": {
+      "required": 24,
+      "observed": 24,
+      "status": "pass"
+    },
+    "inventoryAtomicityViolations": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "targetPacketViolations": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "burdenRouteViolations": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "componentGraphViolations": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "componentOverlapViolations": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "targetRecencyViolations": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "inventoryReviewViolations": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "sourceHashMismatches": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "evidenceOffsetErrors": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "derivationMismatches": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "unresolvedSpeakerAttributions": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "unresolvedAnnotationDisagreements": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "movesMissingFinalLock": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "prohibitedInputContamination": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "schemaVariants": {
+      "maximum": 1,
+      "observed": 1,
+      "status": "pass"
+    }
+  },
+  "decision": {
+    "annotationGatesPassed": false,
+    "debateLevelGatesPassed": false,
+    "hardGatesPassed": true,
+    "heldOutAnnotationGate": "not-passed",
+    "completeV26ThreeDebateNumericalGate": "not-authorized",
+    "tenDebateGate": "not-authorized",
+    "corpusWide": "not-ready",
+    "reason": "At least one preregistered aggregate, debate-level, or hard gate failed; the stop rule blocks numerical scoring and composition."
+  }
+}

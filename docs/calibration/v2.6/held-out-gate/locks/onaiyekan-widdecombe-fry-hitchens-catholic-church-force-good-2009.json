@@ -1,0 +1,951 @@
+{
+  "schemaVersion": "2.6-derived-annotation-lock",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.6",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.6",
+  "gateId": "v2.6-held-out-target-contact-gate",
+  "debateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+  "debateNumber": "173",
+  "model": "5.6 Sol",
+  "calibrationOnly": true,
+  "lockedAt": "2026-08-03T17:30:00-04:00",
+  "isolation": {
+    "method": "fresh-v2.6-primitive-adjudication-task",
+    "legacyMaterialAvailable": false,
+    "numericalScoresAvailable": false,
+    "statement": "Fresh primitive-only adjudication used only the inventory, two isolated passes, and the v2.6 rules; no legacy material or numerical scores were available."
+  },
+  "source": {
+    "passAPath": "docs/calibration/v2.6/held-out-gate/pass-a/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+    "passASha256": "e85bc8ff2a67f1654eed7c1c870b8d966d272aa9e385651182835518d3114757",
+    "passBPath": "docs/calibration/v2.6/held-out-gate/pass-b/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+    "passBSha256": "4b9764b7c13088329ab58e38e80b1b70ac00703312cf1ebcc59b5a4b2f77ccec",
+    "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+    "inventorySha256": "b1dc47ac4689cd091dac2eac600b2172f686f1d20015fe2e1e3b96995be75f51"
+  },
+  "annotations": [
+    {
+      "moveId": "173-m01",
+      "interactionMode": "constructive",
+      "targetPacketId": null,
+      "primaryBurdenRouteId": "pro-institutional-good",
+      "coveragePrimitives": {
+        "targetRelation": "not-applicable",
+        "substitutionType": null,
+        "substitutionEvidence": null,
+        "componentOperations": [],
+        "relevantContraryMaterial": null,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "not-applicable"
+      },
+      "diagnosticPrimitives": {
+        "defectType": "none",
+        "defectEvidence": null,
+        "targetImpactExplicit": false,
+        "targetImpactEvidence": null,
+        "derivedDiagnostic": false
+      },
+      "reframePrimitives": {
+        "malformedDemandExplained": false,
+        "malformedDemandEvidence": null,
+        "replacementDemandStated": false,
+        "replacementDemandEvidence": null,
+        "derivedReframe": false
+      },
+      "burdenPrimitives": {
+        "contactedBridges": [
+          {
+            "bridgeId": "pro-motion-net-good",
+            "contactMode": "supports"
+          },
+          {
+            "bridgeId": "pro-central-humanitarian",
+            "contactMode": "supports"
+          }
+        ],
+        "derivedBurdenRelation": "completes"
+      },
+      "coverageRationale": "This is a constructive welfare-scale claim, so target relation and component contact are not applicable.",
+      "mechanismRationale": "The act advances affirmative evidence rather than diagnosing a discrete opponent defect or repairing a malformed demand.",
+      "burdenRationale": "The claimed disproportionate Church welfare activity supports both the motion-level and central humanitarian bridges.",
+      "fieldSources": {
+        "targetRelation": "agreement",
+        "substitutionType": "agreement",
+        "substitutionEvidence": "agreement",
+        "componentOperations": "agreement",
+        "relevantContraryMaterial": "agreement",
+        "contraryEvidence": "agreement",
+        "defectType": "agreement",
+        "defectEvidence": "agreement",
+        "targetImpactExplicit": "agreement",
+        "targetImpactEvidence": "agreement",
+        "malformedDemandExplained": "agreement",
+        "malformedDemandEvidence": "agreement",
+        "replacementDemandStated": "agreement",
+        "replacementDemandEvidence": "agreement",
+        "contactedBridges": "agreement"
+      }
+    },
+    {
+      "moveId": "173-m02",
+      "interactionMode": "constructive",
+      "targetPacketId": null,
+      "primaryBurdenRouteId": "con-institutional-harm",
+      "coveragePrimitives": {
+        "targetRelation": "not-applicable",
+        "substitutionType": null,
+        "substitutionEvidence": null,
+        "componentOperations": [],
+        "relevantContraryMaterial": null,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "not-applicable"
+      },
+      "diagnosticPrimitives": {
+        "defectType": "none",
+        "defectEvidence": null,
+        "targetImpactExplicit": false,
+        "targetImpactEvidence": null,
+        "derivedDiagnostic": false
+      },
+      "reframePrimitives": {
+        "malformedDemandExplained": false,
+        "malformedDemandEvidence": null,
+        "replacementDemandStated": false,
+        "replacementDemandEvidence": null,
+        "derivedReframe": false
+      },
+      "burdenPrimitives": {
+        "contactedBridges": [
+          {
+            "bridgeId": "con-motion-not-good",
+            "contactMode": "supports"
+          },
+          {
+            "bridgeId": "con-central-institutional-harm",
+            "contactMode": "supports"
+          },
+          {
+            "bridgeId": "con-subsidiary-charity-rebuttal",
+            "contactMode": "supports"
+          }
+        ],
+        "derivedBurdenRelation": "completes"
+      },
+      "coverageRationale": "This is a constructive institutional-evasion claim, so no opponent target packet or component operation applies.",
+      "mechanismRationale": "Although the act calls apologies evasive, it does not operate as a response to a locked target and supplies no complete diagnostic primitive set.",
+      "burdenRationale": "Institutional evasion and the express rejection of charity as an offset contact every eligible con bridge, including the motion tier.",
+      "fieldSources": {
+        "targetRelation": "agreement",
+        "substitutionType": "agreement",
+        "substitutionEvidence": "agreement",
+        "componentOperations": "agreement",
+        "relevantContraryMaterial": "agreement",
+        "contraryEvidence": "agreement",
+        "defectType": "adjudication",
+        "defectEvidence": "adjudication",
+        "targetImpactExplicit": "adjudication",
+        "targetImpactEvidence": "adjudication",
+        "malformedDemandExplained": "agreement",
+        "malformedDemandEvidence": "agreement",
+        "replacementDemandStated": "agreement",
+        "replacementDemandEvidence": "agreement",
+        "contactedBridges": "agreement"
+      }
+    },
+    {
+      "moveId": "173-m03",
+      "interactionMode": "responsive",
+      "targetPacketId": "173-t03",
+      "primaryBurdenRouteId": "pro-institutional-good",
+      "coveragePrimitives": {
+        "targetRelation": "preserved",
+        "substitutionType": null,
+        "substitutionEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "t03-c1",
+            "operation": "accepts",
+            "evidence": {
+              "text": "Upon being reinstated",
+              "startChar": 165,
+              "endChar": 186
+            }
+          },
+          {
+            "componentId": "t03-c2",
+            "operation": "undermines",
+            "evidence": {
+              "text": "commanded him to repent",
+              "startChar": 272,
+              "endChar": 295
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "full"
+      },
+      "diagnosticPrimitives": {
+        "defectType": "missing-premise",
+        "defectEvidence": {
+          "text": "a fact conveniently ignored by Mr. Hitchens",
+          "startChar": 228,
+          "endChar": 271
+        },
+        "targetImpactExplicit": false,
+        "targetImpactEvidence": null,
+        "derivedDiagnostic": false
+      },
+      "reframePrimitives": {
+        "malformedDemandExplained": false,
+        "malformedDemandEvidence": null,
+        "replacementDemandStated": false,
+        "replacementDemandEvidence": null,
+        "derivedReframe": false
+      },
+      "burdenPrimitives": {
+        "contactedBridges": [
+          {
+            "bridgeId": "pro-motion-net-good",
+            "contactMode": "supports"
+          }
+        ],
+        "derivedBurdenRelation": "completes"
+      },
+      "coverageRationale": "The reinstatement is expressly accepted, while the command to repent separately undermines the claimed preference for unity over racist conduct.",
+      "mechanismRationale": "It explicitly alleges an omitted fact, but does not explicitly state how that omission changes the locked target's inferential result.",
+      "burdenRationale": "The disciplinary-context reply supports the eligible motion-level bridge by resisting an institution-level papal misconduct allegation.",
+      "fieldSources": {
+        "targetRelation": "agreement",
+        "substitutionType": "agreement",
+        "substitutionEvidence": "agreement",
+        "componentOperations": "adjudication",
+        "relevantContraryMaterial": "agreement",
+        "contraryEvidence": "agreement",
+        "defectType": "agreement",
+        "defectEvidence": "agreement",
+        "targetImpactExplicit": "adjudication",
+        "targetImpactEvidence": "adjudication",
+        "malformedDemandExplained": "agreement",
+        "malformedDemandEvidence": "agreement",
+        "replacementDemandStated": "agreement",
+        "replacementDemandEvidence": "agreement",
+        "contactedBridges": "agreement"
+      }
+    },
+    {
+      "moveId": "173-m04",
+      "interactionMode": "responsive",
+      "targetPacketId": "173-t04",
+      "primaryBurdenRouteId": "pro-institutional-good",
+      "coveragePrimitives": {
+        "targetRelation": "preserved",
+        "substitutionType": null,
+        "substitutionEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "t04-c1",
+            "operation": "accepts",
+            "evidence": {
+              "text": "the Inquisition, which was a horrible thing",
+              "startChar": 173,
+              "endChar": 216
+            }
+          },
+          {
+            "componentId": "t04-c2",
+            "operation": "qualifies",
+            "evidence": {
+              "text": "judge it against the standards that were prevailing at the time",
+              "startChar": 93,
+              "endChar": 156
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "full"
+      },
+      "diagnosticPrimitives": {
+        "defectType": "unsupported-comparison",
+        "defectEvidence": {
+          "text": "condemning the Inquisition in isolation from condemning just about the whole, in fact the whole of European society",
+          "startChar": 217,
+          "endChar": 332
+        },
+        "targetImpactExplicit": true,
+        "targetImpactEvidence": {
+          "text": "judge it against the standards that were prevailing at the time",
+          "startChar": 93,
+          "endChar": 156
+        },
+        "derivedDiagnostic": true
+      },
+      "reframePrimitives": {
+        "malformedDemandExplained": true,
+        "malformedDemandEvidence": {
+          "text": "condemning the Inquisition in isolation from condemning just about the whole, in fact the whole of European society",
+          "startChar": 217,
+          "endChar": 332
+        },
+        "replacementDemandStated": true,
+        "replacementDemandEvidence": {
+          "text": "judge it against the standards that were prevailing at the time",
+          "startChar": 93,
+          "endChar": 156
+        },
+        "derivedReframe": true
+      },
+      "burdenPrimitives": {
+        "contactedBridges": [
+          {
+            "bridgeId": "pro-motion-net-good",
+            "contactMode": "supports"
+          }
+        ],
+        "derivedBurdenRelation": "completes"
+      },
+      "coverageRationale": "The response preserves the historical-wrongs target, grants the Inquisition's wrongness, and qualifies its force through a contemporaneous comparison class.",
+      "mechanismRationale": "It identifies isolated comparison as defective, states why, and replaces it with the prevailing-standards comparison demand.",
+      "burdenRationale": "The historical comparison directly supports the eligible motion bridge by limiting how past wrongdoing bears on overall institutional goodness.",
+      "fieldSources": {
+        "targetRelation": "agreement",
+        "substitutionType": "agreement",
+        "substitutionEvidence": "agreement",
+        "componentOperations": "adjudication",
+        "relevantContraryMaterial": "agreement",
+        "contraryEvidence": "agreement",
+        "defectType": "agreement",
+        "defectEvidence": "agreement",
+        "targetImpactExplicit": "agreement",
+        "targetImpactEvidence": "adjudication",
+        "malformedDemandExplained": "agreement",
+        "malformedDemandEvidence": "agreement",
+        "replacementDemandStated": "agreement",
+        "replacementDemandEvidence": "adjudication",
+        "contactedBridges": "agreement"
+      }
+    },
+    {
+      "moveId": "173-m05",
+      "interactionMode": "constructive",
+      "targetPacketId": null,
+      "primaryBurdenRouteId": "pro-institutional-good",
+      "coveragePrimitives": {
+        "targetRelation": "not-applicable",
+        "substitutionType": null,
+        "substitutionEvidence": null,
+        "componentOperations": [],
+        "relevantContraryMaterial": null,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "not-applicable"
+      },
+      "diagnosticPrimitives": {
+        "defectType": "none",
+        "defectEvidence": null,
+        "targetImpactExplicit": false,
+        "targetImpactEvidence": null,
+        "derivedDiagnostic": false
+      },
+      "reframePrimitives": {
+        "malformedDemandExplained": false,
+        "malformedDemandEvidence": null,
+        "replacementDemandStated": false,
+        "replacementDemandEvidence": null,
+        "derivedReframe": false
+      },
+      "burdenPrimitives": {
+        "contactedBridges": [
+          {
+            "bridgeId": "pro-motion-net-good",
+            "contactMode": "supports"
+          },
+          {
+            "bridgeId": "pro-central-humanitarian",
+            "contactMode": "supports"
+          }
+        ],
+        "derivedBurdenRelation": "completes"
+      },
+      "coverageRationale": "This counterfactual aid argument is constructive, making target relation and component contact not applicable.",
+      "mechanismRationale": "The act supplies positive institutional-benefit evidence and neither diagnoses a locked target defect nor reframes a malformed demand.",
+      "burdenRationale": "The aid, medicine, and education counterfactual supports both the motion-level and central humanitarian bridges.",
+      "fieldSources": {
+        "targetRelation": "agreement",
+        "substitutionType": "agreement",
+        "substitutionEvidence": "agreement",
+        "componentOperations": "agreement",
+        "relevantContraryMaterial": "agreement",
+        "contraryEvidence": "agreement",
+        "defectType": "agreement",
+        "defectEvidence": "agreement",
+        "targetImpactExplicit": "agreement",
+        "targetImpactEvidence": "agreement",
+        "malformedDemandExplained": "agreement",
+        "malformedDemandEvidence": "agreement",
+        "replacementDemandStated": "agreement",
+        "replacementDemandEvidence": "agreement",
+        "contactedBridges": "agreement"
+      }
+    },
+    {
+      "moveId": "173-m06",
+      "interactionMode": "constructive",
+      "targetPacketId": null,
+      "primaryBurdenRouteId": "con-institutional-harm",
+      "coveragePrimitives": {
+        "targetRelation": "not-applicable",
+        "substitutionType": null,
+        "substitutionEvidence": null,
+        "componentOperations": [],
+        "relevantContraryMaterial": null,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "not-applicable"
+      },
+      "diagnosticPrimitives": {
+        "defectType": "none",
+        "defectEvidence": null,
+        "targetImpactExplicit": false,
+        "targetImpactEvidence": null,
+        "derivedDiagnostic": false
+      },
+      "reframePrimitives": {
+        "malformedDemandExplained": false,
+        "malformedDemandEvidence": null,
+        "replacementDemandStated": false,
+        "replacementDemandEvidence": null,
+        "derivedReframe": false
+      },
+      "burdenPrimitives": {
+        "contactedBridges": [
+          {
+            "bridgeId": "con-motion-not-good",
+            "contactMode": "supports"
+          },
+          {
+            "bridgeId": "con-central-institutional-harm",
+            "contactMode": "supports"
+          }
+        ],
+        "derivedBurdenRelation": "completes"
+      },
+      "coverageRationale": "This hierarchy-and-secrecy allegation is constructive, so there is no responsive target relation or component graph to annotate.",
+      "mechanismRationale": "The act presents direct constructive evidence of institutional concealment without diagnosing a locked opponent move or replacing its demand.",
+      "burdenRationale": "The alleged authoritative secrecy order supports both the overall con motion bridge and the central institutional-harm bridge.",
+      "fieldSources": {
+        "targetRelation": "agreement",
+        "substitutionType": "agreement",
+        "substitutionEvidence": "agreement",
+        "componentOperations": "agreement",
+        "relevantContraryMaterial": "agreement",
+        "contraryEvidence": "agreement",
+        "defectType": "agreement",
+        "defectEvidence": "agreement",
+        "targetImpactExplicit": "agreement",
+        "targetImpactEvidence": "agreement",
+        "malformedDemandExplained": "agreement",
+        "malformedDemandEvidence": "agreement",
+        "replacementDemandStated": "agreement",
+        "replacementDemandEvidence": "agreement",
+        "contactedBridges": "agreement"
+      }
+    },
+    {
+      "moveId": "173-m07",
+      "interactionMode": "responsive",
+      "targetPacketId": "173-t07",
+      "primaryBurdenRouteId": "con-institutional-harm",
+      "coveragePrimitives": {
+        "targetRelation": "preserved",
+        "substitutionType": null,
+        "substitutionEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "t07-c1",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "t07-c2",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "t07-c3",
+            "operation": null,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": true,
+        "contraryEvidence": {
+          "text": "it's done to proselytize for religion",
+          "startChar": 194,
+          "endChar": 231
+        },
+        "derivedTargetCoverage": "relevant-nonanswer"
+      },
+      "diagnosticPrimitives": {
+        "defectType": "none",
+        "defectEvidence": null,
+        "targetImpactExplicit": false,
+        "targetImpactEvidence": null,
+        "derivedDiagnostic": false
+      },
+      "reframePrimitives": {
+        "malformedDemandExplained": false,
+        "malformedDemandEvidence": null,
+        "replacementDemandStated": false,
+        "replacementDemandEvidence": null,
+        "derivedReframe": false
+      },
+      "burdenPrimitives": {
+        "contactedBridges": [
+          {
+            "bridgeId": "con-subsidiary-charity-rebuttal",
+            "contactMode": "supports"
+          }
+        ],
+        "derivedBurdenRelation": "advances-sub-burden"
+      },
+      "coverageRationale": "The response preserves the Catholic-aid target but proselytizing motive does not accept, deny, qualify, explain, distinguish, or undermine any locked welfare node.",
+      "mechanismRationale": "The motive criticism supplies relevant contrary context, not a typed defect with an explicit consequence or a complete demand replacement.",
+      "burdenRationale": "The contrast with secular charities supports only the eligible subsidiary charity-rebuttal bridge.",
+      "fieldSources": {
+        "targetRelation": "agreement",
+        "substitutionType": "agreement",
+        "substitutionEvidence": "agreement",
+        "componentOperations": "agreement",
+        "relevantContraryMaterial": "agreement",
+        "contraryEvidence": "agreement",
+        "defectType": "adjudication",
+        "defectEvidence": "adjudication",
+        "targetImpactExplicit": "adjudication",
+        "targetImpactEvidence": "adjudication",
+        "malformedDemandExplained": "agreement",
+        "malformedDemandEvidence": "agreement",
+        "replacementDemandStated": "agreement",
+        "replacementDemandEvidence": "agreement",
+        "contactedBridges": "agreement"
+      }
+    },
+    {
+      "moveId": "173-m08",
+      "interactionMode": "responsive",
+      "targetPacketId": "173-t08",
+      "primaryBurdenRouteId": "con-institutional-harm",
+      "coveragePrimitives": {
+        "targetRelation": "preserved",
+        "substitutionType": null,
+        "substitutionEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "t08-c1",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "t08-c2",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "t08-c3",
+            "operation": null,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": true,
+        "contraryEvidence": {
+          "text": "Boy, you should see our missionaries in Bolivia, though",
+          "startChar": 239,
+          "endChar": 294
+        },
+        "derivedTargetCoverage": "relevant-nonanswer"
+      },
+      "diagnosticPrimitives": {
+        "defectType": "unsupported-comparison",
+        "defectEvidence": {
+          "text": "if I'm debating with a Mormon and I say, \"Are you serious? Joseph Smith got a special revelation on plates of gold in upstate New York?\" And I ridicule the absurd absurdity of the Church of Latter-Day Saints, he's going to say to me, \"Boy, you should see our missionaries in Bolivia, though.\" It's always the same.",
+          "startChar": 4,
+          "endChar": 318
+        },
+        "targetImpactExplicit": false,
+        "targetImpactEvidence": null,
+        "derivedDiagnostic": false
+      },
+      "reframePrimitives": {
+        "malformedDemandExplained": false,
+        "malformedDemandEvidence": null,
+        "replacementDemandStated": false,
+        "replacementDemandEvidence": null,
+        "derivedReframe": false
+      },
+      "burdenPrimitives": {
+        "contactedBridges": [
+          {
+            "bridgeId": "con-subsidiary-charity-rebuttal",
+            "contactMode": "supports"
+          }
+        ],
+        "derivedBurdenRelation": "advances-sub-burden"
+      },
+      "coverageRationale": "The Mormon analogy preserves the charity topic but does not operate on the Catholic aid amount, supplied services, or developing-world counterfactual nodes.",
+      "mechanismRationale": "The full Mormon analogy identifies the unsupported comparison pattern, but it does not explicitly state an impact on a locked target node.",
+      "burdenRationale": "The cross-religion analogy supports the eligible subsidiary claim that humanitarian work does not uniquely vindicate the Church.",
+      "fieldSources": {
+        "targetRelation": "agreement",
+        "substitutionType": "agreement",
+        "substitutionEvidence": "agreement",
+        "componentOperations": "agreement",
+        "relevantContraryMaterial": "agreement",
+        "contraryEvidence": "adjudication",
+        "defectType": "agreement",
+        "defectEvidence": "adjudication",
+        "targetImpactExplicit": "adjudication",
+        "targetImpactEvidence": "adjudication",
+        "malformedDemandExplained": "agreement",
+        "malformedDemandEvidence": "agreement",
+        "replacementDemandStated": "agreement",
+        "replacementDemandEvidence": "agreement",
+        "contactedBridges": "agreement"
+      }
+    },
+    {
+      "moveId": "173-m09",
+      "interactionMode": "responsive",
+      "targetPacketId": "173-t09",
+      "primaryBurdenRouteId": "con-institutional-harm",
+      "coveragePrimitives": {
+        "targetRelation": "preserved",
+        "substitutionType": null,
+        "substitutionEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "t09-c1",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "t09-c2",
+            "operation": "undermines",
+            "evidence": {
+              "text": "It's a bit like a burglar in court say, \"You would bring up that burglary and that manslaughter. You never mention the fact I give my father a birthday present.\"",
+              "startChar": 149,
+              "endChar": 310
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "partial"
+      },
+      "diagnosticPrimitives": {
+        "defectType": "unsupported-comparison",
+        "defectEvidence": {
+          "text": "It's a bit like a burglar in court say, \"You would bring up that burglary and that manslaughter. You never mention the fact I give my father a birthday present.\"",
+          "startChar": 149,
+          "endChar": 310
+        },
+        "targetImpactExplicit": true,
+        "targetImpactEvidence": {
+          "text": "You would bring up that burglary and that manslaughter. You never mention the fact I give my father a birthday present.",
+          "startChar": 190,
+          "endChar": 309
+        },
+        "derivedDiagnostic": true
+      },
+      "reframePrimitives": {
+        "malformedDemandExplained": false,
+        "malformedDemandEvidence": null,
+        "replacementDemandStated": false,
+        "replacementDemandEvidence": null,
+        "derivedReframe": false
+      },
+      "burdenPrimitives": {
+        "contactedBridges": [
+          {
+            "bridgeId": "con-central-institutional-harm",
+            "contactMode": "supports"
+          }
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "coverageRationale": "The quoted focus supplies orientation but is not accepted as predictably improper; the full burglar analogy independently undermines the narrowness conclusion.",
+      "mechanismRationale": "The full burglar comparison identifies the unsupported relevance comparison and expressly shows why grave alleged wrongs remain relevant despite unrelated good acts.",
+      "burdenRationale": "Defending abuse and sexual-policy harms as relevant supports the eligible central institutional-harm bridge.",
+      "fieldSources": {
+        "targetRelation": "agreement",
+        "substitutionType": "agreement",
+        "substitutionEvidence": "agreement",
+        "componentOperations": "adjudication",
+        "relevantContraryMaterial": "agreement",
+        "contraryEvidence": "agreement",
+        "defectType": "agreement",
+        "defectEvidence": "adjudication",
+        "targetImpactExplicit": "agreement",
+        "targetImpactEvidence": "adjudication",
+        "malformedDemandExplained": "agreement",
+        "malformedDemandEvidence": "agreement",
+        "replacementDemandStated": "agreement",
+        "replacementDemandEvidence": "agreement",
+        "contactedBridges": "agreement"
+      }
+    },
+    {
+      "moveId": "173-m10",
+      "interactionMode": "responsive",
+      "targetPacketId": "173-t10",
+      "primaryBurdenRouteId": "con-institutional-harm",
+      "coveragePrimitives": {
+        "targetRelation": "substituted",
+        "substitutionType": "object",
+        "substitutionEvidence": {
+          "text": "there's some magisterial and mystical reason behind limbo",
+          "startChar": 14,
+          "endChar": 71
+        },
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "substitution"
+      },
+      "diagnosticPrimitives": {
+        "defectType": "none",
+        "defectEvidence": null,
+        "targetImpactExplicit": false,
+        "targetImpactEvidence": null,
+        "derivedDiagnostic": false
+      },
+      "reframePrimitives": {
+        "malformedDemandExplained": false,
+        "malformedDemandEvidence": null,
+        "replacementDemandStated": false,
+        "replacementDemandEvidence": null,
+        "derivedReframe": false
+      },
+      "burdenPrimitives": {
+        "contactedBridges": [
+          {
+            "bridgeId": "con-central-institutional-harm",
+            "contactMode": "supports"
+          }
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "coverageRationale": "The response changes the locked factual question about limbo's duration into a rejection of a magisterial or mystical rationale for limbo.",
+      "mechanismRationale": "After object substitution, the contemptuous rejection does not provide a complete typed diagnostic or malformed-demand replacement.",
+      "burdenRationale": "Rejecting theological authority behind the doctrine supports the eligible central institutional-harm bridge.",
+      "fieldSources": {
+        "targetRelation": "adjudication",
+        "substitutionType": "adjudication",
+        "substitutionEvidence": "adjudication",
+        "componentOperations": "adjudication",
+        "relevantContraryMaterial": "agreement",
+        "contraryEvidence": "agreement",
+        "defectType": "adjudication",
+        "defectEvidence": "adjudication",
+        "targetImpactExplicit": "adjudication",
+        "targetImpactEvidence": "adjudication",
+        "malformedDemandExplained": "agreement",
+        "malformedDemandEvidence": "agreement",
+        "replacementDemandStated": "agreement",
+        "replacementDemandEvidence": "agreement",
+        "contactedBridges": "agreement"
+      }
+    },
+    {
+      "moveId": "173-m11",
+      "interactionMode": "responsive",
+      "targetPacketId": "173-t11",
+      "primaryBurdenRouteId": "pro-institutional-good",
+      "coveragePrimitives": {
+        "targetRelation": "substituted",
+        "substitutionType": "strength",
+        "substitutionEvidence": {
+          "text": "It did not say it has always been a source for good. It's not in the past tense. It's in the present tense.",
+          "startChar": 101,
+          "endChar": 208
+        },
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "substitution"
+      },
+      "diagnosticPrimitives": {
+        "defectType": "none",
+        "defectEvidence": null,
+        "targetImpactExplicit": false,
+        "targetImpactEvidence": null,
+        "derivedDiagnostic": false
+      },
+      "reframePrimitives": {
+        "malformedDemandExplained": true,
+        "malformedDemandEvidence": {
+          "text": "It did not say it has always been a source for good.",
+          "startChar": 101,
+          "endChar": 153
+        },
+        "replacementDemandStated": true,
+        "replacementDemandEvidence": {
+          "text": "It's not in the past tense. It's in the present tense.",
+          "startChar": 154,
+          "endChar": 208
+        },
+        "derivedReframe": true
+      },
+      "burdenPrimitives": {
+        "contactedBridges": [
+          {
+            "bridgeId": "pro-motion-net-good",
+            "contactMode": "supports"
+          }
+        ],
+        "derivedBurdenRelation": "completes"
+      },
+      "coverageRationale": "The reply replaces Hitchens's historical-authority challenge with the weaker present-tense proposition that the Church need not always have been good.",
+      "mechanismRationale": "It explains that an all-times demand exceeds the motion and explicitly replaces that demand with the present-tense proposition.",
+      "burdenRationale": "The scope clarification directly supports the sole eligible motion-level bridge.",
+      "fieldSources": {
+        "targetRelation": "adjudication",
+        "substitutionType": "adjudication",
+        "substitutionEvidence": "adjudication",
+        "componentOperations": "adjudication",
+        "relevantContraryMaterial": "agreement",
+        "contraryEvidence": "agreement",
+        "defectType": "adjudication",
+        "defectEvidence": "adjudication",
+        "targetImpactExplicit": "adjudication",
+        "targetImpactEvidence": "adjudication",
+        "malformedDemandExplained": "agreement",
+        "malformedDemandEvidence": "agreement",
+        "replacementDemandStated": "agreement",
+        "replacementDemandEvidence": "adjudication",
+        "contactedBridges": "agreement"
+      }
+    },
+    {
+      "moveId": "173-m12",
+      "interactionMode": "responsive",
+      "targetPacketId": "173-t12",
+      "primaryBurdenRouteId": "pro-institutional-good",
+      "coveragePrimitives": {
+        "targetRelation": "preserved",
+        "substitutionType": null,
+        "substitutionEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "t12-c1",
+            "operation": "distinguishes",
+            "evidence": {
+              "text": "We are not talking of the validity or the value of one sexual act with a good condom done properly.",
+              "startChar": 100,
+              "endChar": 199
+            }
+          },
+          {
+            "componentId": "t12-c2",
+            "operation": "undermines",
+            "evidence": {
+              "text": "The fact is that when that is done, AIDS is increased, not decreased.",
+              "startChar": 331,
+              "endChar": 400
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "full"
+      },
+      "diagnosticPrimitives": {
+        "defectType": "ambiguity",
+        "defectEvidence": {
+          "text": "We are not talking of the validity or the value of one sexual act with a good condom done properly.",
+          "startChar": 100,
+          "endChar": 199
+        },
+        "targetImpactExplicit": true,
+        "targetImpactEvidence": {
+          "text": "The fact is that when that is done, AIDS is increased, not decreased.",
+          "startChar": 331,
+          "endChar": 400
+        },
+        "derivedDiagnostic": true
+      },
+      "reframePrimitives": {
+        "malformedDemandExplained": true,
+        "malformedDemandEvidence": {
+          "text": "We are not talking of the validity or the value of one sexual act with a good condom done properly.",
+          "startChar": 100,
+          "endChar": 199
+        },
+        "replacementDemandStated": true,
+        "replacementDemandEvidence": {
+          "text": "We are talking of condoms being distributed indiscriminately to young people and being told that once you wear this, you are safe.",
+          "startChar": 200,
+          "endChar": 330
+        },
+        "derivedReframe": true
+      },
+      "burdenPrimitives": {
+        "contactedBridges": [
+          {
+            "bridgeId": "pro-motion-net-good",
+            "contactMode": "supports"
+          },
+          {
+            "bridgeId": "pro-central-humanitarian",
+            "contactMode": "supports"
+          }
+        ],
+        "derivedBurdenRelation": "completes"
+      },
+      "coverageRationale": "The response preserves condom efficacy, distinguishes correct individual use from indiscriminate distribution, and separately undermines the claim that the Pope's population-level warning is false.",
+      "mechanismRationale": "It identifies the individual-versus-distribution ambiguity, states the alleged epidemiological consequence, and expressly supplies the replacement population-level issue.",
+      "burdenRationale": "The claimed epidemiological effect supports both the eligible motion and central humanitarian bridges.",
+      "fieldSources": {
+        "targetRelation": "agreement",
+        "substitutionType": "agreement",
+        "substitutionEvidence": "agreement",
+        "componentOperations": "adjudication",
+        "relevantContraryMaterial": "agreement",
+        "contraryEvidence": "agreement",
+        "defectType": "adjudication",
+        "defectEvidence": "agreement",
+        "targetImpactExplicit": "agreement",
+        "targetImpactEvidence": "adjudication",
+        "malformedDemandExplained": "agreement",
+        "malformedDemandEvidence": "agreement",
+        "replacementDemandStated": "agreement",
+        "replacementDemandEvidence": "agreement",
+        "contactedBridges": "agreement"
+      }
+    }
+  ],
+  "agreement": {
+    "moveCount": 12,
+    "responsiveMoveCount": 8,
+    "componentContactAgreementCount": 13,
+    "componentContactJudgmentCount": 14,
+    "componentOperationAgreementCount": 12,
+    "componentOperationJudgmentCount": 14,
+    "targetRelationAgreementCount": 6,
+    "defectTypeAgreementCount": 7,
+    "targetImpactAgreementCount": 6,
+    "malformedDemandAgreementCount": 12,
+    "replacementDemandAgreementCount": 12,
+    "bridgeSetAgreementCount": 12,
+    "coverageAgreementCount": 9,
+    "responsiveCoverageAgreementCount": 5,
+    "diagnosticAgreementCount": 6,
+    "reframeAgreementCount": 12,
+    "burdenAgreementCount": 12,
+    "exactDerivedTupleAgreementCount": 5
+  },
+  "audit": {
+    "primitiveDisagreementCount": 41,
+    "adjudicatedPrimitiveCount": 41,
+    "evidenceOffsetErrors": 0,
+    "derivationMismatches": 0,
+    "unresolvedDisagreements": 0,
+    "movesMissingFinalLock": 0
+  }
+}

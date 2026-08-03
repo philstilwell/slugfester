@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "2.6-inventory-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.6",
+  "gateId": "v2.6-held-out-target-contact-gate",
+  "debateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+  "debateNumber": "173",
+  "reviewedAt": "2026-08-03T08:33:25-04:00",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-independent-v2.6-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "statement": "The draft inventory was reviewed independently against only the allowed v2.6 specifications, validators, source chain, gate manifest, and complete transcript; no annotation pass or lock was available."
+  },
+  "source": {
+    "draftInventoryPath": "docs/calibration/v2.6/held-out-gate/draft-inventories/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+    "draftInventorySha256": "991b156dd47067fdd2e079ce39bea5a3aed7cafab8fe979ca70fad87d36932ff",
+    "reviewedInventoryPath": "docs/calibration/v2.6/held-out-gate/reviewed-inventories/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+    "reviewedInventorySha256": "b1dc47ac4689cd091dac2eac600b2172f686f1d20015fe2e1e3b96995be75f51",
+    "transcriptSha256": "45f945b11260356c72a96cb621ed3190a26cb86cdcf4ed08e6168d47a60888e3",
+    "eventsSha256": "6f7d3f3d825bcb392ba325384ca85be0af78e0c908e79748a2d671c72ef771dc",
+    "manifestSha256": "f1d5c798300f861ae29def1cb430b3eeacb293a4fb3d984c8f5386b590599220",
+    "workflowSha256": "6fd880986be5c9c91043bcf5ed0f85c45c628ae6454066c95b185e80e7a07a60",
+    "inventorySchemaSha256": "5ec4ee92b3fb54755b0dddffb81901f09b4c4e0aa69108e3d46acd29f2972363",
+    "gateManifestSha256": "5170cce90e604bb2622b3fd870e2a9fe0c9b6b315a819d98e1f8a20b585dc210"
+  },
+  "findings": [
+    {"findingId": "173-r01", "category": "target-recency", "moveId": "173-m03", "description": "The Williamson allegation was not the immediate opponent claim because Hitchens advanced several distinct claims afterward; the response explicitly returned to the earlier allegation.", "disposition": "repaired"},
+    {"findingId": "173-r02", "category": "burden-route", "moveId": "173-m03", "description": "The humanitarian central bridge did not describe a reply about papal discipline and institutional protection; the motion-level bridge is the eligible route connection.", "disposition": "repaired"},
+    {"findingId": "173-r03", "category": "target-packet", "moveId": "173-m04", "description": "The historical comparison rule answered Hitchens's catalogue of admitted historical wrongs, not his later non-relativization claim about institutional child abuse.", "disposition": "repaired"},
+    {"findingId": "173-r04", "category": "target-packet", "moveId": "173-m08", "description": "The Mormon missionary analogy continued the immediately preceding reply to Widdecombe's aid counterfactual, rather than targeting her separate membership-and-hierarchy claim.", "disposition": "repaired"},
+    {"findingId": "173-r05", "category": "source-fidelity", "moveId": "173-m10", "description": "The sampled excerpt began after Fry's actual limbo response and instead captured a broader criticism of the Church's representatives, so it did not faithfully instantiate the locked reply.", "disposition": "repaired"},
+    {"findingId": "173-r06", "category": "component-graph", "moveId": "173-m10", "description": "Widdecombe's autobiographical statement that she attended Catholic school was not indispensable to her theological correction and was removed from the target graph.", "disposition": "repaired"},
+    {"findingId": "173-r07", "category": "target-recency", "moveId": "173-m11", "description": "Hitchens advanced moral-chaos, invented-gods, and repentance claims after the slavery argument, making Onaiyekan's scope reply an explicit return to an earlier load-bearing claim.", "disposition": "repaired"},
+    {"findingId": "173-r08", "category": "target-packet", "moveId": "173-m12", "description": "The selected act specifically disputes Fry's earlier condom-efficacy argument; the draft instead locked Hitchens's broader reproductive-control and mortality claim and omitted the act's operative empirical denial.", "disposition": "repaired"},
+    {"findingId": "173-r09", "category": "sampling", "moveId": null, "description": "The repaired inventory retains twelve chronological acts, balanced six per side, one constructive and two responsive acts for each of all four named speakers.", "disposition": "not-a-violation"},
+    {"findingId": "173-r10", "category": "speaker-attribution", "moveId": null, "description": "All twelve acts occur within chair-announced continuous turns and preserve ownership across Onaiyekan, Widdecombe, Fry, and Hitchens with no mixed-speaker excerpts.", "disposition": "not-a-violation"},
+    {"findingId": "173-r11", "category": "component-overlap", "moveId": null, "description": "After repair, every responsive packet contains nonduplicative indispensable propositions with node-specific kinds and no stylistic paraphrase duplication within a packet.", "disposition": "not-a-violation"},
+    {"findingId": "173-r12", "category": "atomicity", "moveId": null, "description": "Each retained excerpt expresses one bounded argumentative act; the repaired Fry and Onaiyekan excerpts now contain the operative reply rather than adjacent argumentative material.", "disposition": "not-a-violation"}
+  ],
+  "repairs": [
+    {"findingId": "173-r01", "change": "Reclassified target 173-t03 as an earlier load-bearing claim and added the required intervening-claim rationale.", "triggerCategory": "target-recency"},
+    {"findingId": "173-r02", "change": "Replaced pro-central-humanitarian with pro-motion-net-good and revised the bridge-selection rationale.", "triggerCategory": "burden-route-or-tier"},
+    {"findingId": "173-r03", "change": "Rebuilt target 173-t04 from Hitchens's exact historical-wrongs excerpt with a matching two-node component graph and earlier-target rationale.", "triggerCategory": "target-packet"},
+    {"findingId": "173-r04", "change": "Retargeted 173-t08 to Widdecombe's aid counterfactual and rebuilt its three components to match the charity inference tested by the Mormon analogy.", "triggerCategory": "target-packet"},
+    {"findingId": "173-r05", "change": "Replaced move 173-m10's excerpt, span, timestamp, hash, and selection rationale with Fry's exact limbo-authority reply.", "triggerCategory": "meaning"},
+    {"findingId": "173-r06", "change": "Removed the nonindispensable autobiographical component from 173-t10 and renumbered the remaining premise-conclusion dependency graph.", "triggerCategory": "component-graph"},
+    {"findingId": "173-r07", "change": "Reclassified target 173-t11 as an earlier load-bearing claim and documented the intervening opponent claims.", "triggerCategory": "target-recency"},
+    {"findingId": "173-r08", "change": "Retargeted 173-t12 to Fry, rebuilt its condom-efficacy packet, and replaced the sampled move excerpt with Onaiyekan's exact population-level empirical denial.", "triggerCategory": "target-packet"}
+  ],
+  "thirdReviewTrigger": {
+    "required": true,
+    "categories": ["target-recency", "burden-route-or-tier", "target-packet", "meaning", "component-graph"],
+    "rationale": "Repairs changed target recency, burden bridge eligibility, target packets, component structure, and the meaning-bearing excerpts for responsive acts, so a fresh third review is mandatory."
+  },
+  "audit": {
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "burdenRouteViolations": 0,
+    "componentGraphViolations": 0,
+    "componentOverlapViolations": 0,
+    "targetRecencyViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "reviewedInventoryValidatorPassed": true
+  }
+}

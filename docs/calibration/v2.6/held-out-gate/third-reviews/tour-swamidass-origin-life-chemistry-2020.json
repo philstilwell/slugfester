@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "2.6-triggered-third-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.6",
+  "gateId": "v2.6-held-out-target-contact-gate",
+  "debateId": "tour-swamidass-origin-life-chemistry-2020",
+  "debateNumber": "192",
+  "reviewedAt": "2026-08-03T12:34:40Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-triggered-v2.6-third-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "statement": "This fresh third review used only the authorized v2.6 gate files, reviewed inventory, first review, and complete target transcript-event-manifest chain; no annotation pass or lock was available."
+  },
+  "source": {
+    "firstReviewPath": "docs/calibration/v2.6/held-out-gate/inventory-reviews/tour-swamidass-origin-life-chemistry-2020.json",
+    "firstReviewSha256": "21413b3af1b556813b1e941193005009ed8201dcd9f78cba6bc64600c7d94c6f",
+    "reviewedInventoryPath": "docs/calibration/v2.6/held-out-gate/reviewed-inventories/tour-swamidass-origin-life-chemistry-2020.json",
+    "reviewedInventorySha256": "d7790a42ce0b7dc559939b0c25aa29eeb7ccd15e659c34e10242897374cf0b1f",
+    "finalInventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/tour-swamidass-origin-life-chemistry-2020.json",
+    "finalInventorySha256": "09eb92b5273a674ba48bb76a5f96f2131af7b2b6bacb863fdf8e9d733b08ef19",
+    "transcriptSha256": "122f85b698196a7e20ec97623066c0592dac5388b35b8a9a211ae206640026af",
+    "eventsSha256": "2ba4a23d505273b6069dc549d44836734c99609b753267eb2c3408bf17a31f5c",
+    "manifestSha256": "a32e9a5798025a0c09fb5fb22404063ad6475b2afc625319df6a6f818faff2a3"
+  },
+  "triggerCategories": [
+    "sampling",
+    "target-packet",
+    "component-graph",
+    "target-recency",
+    "atomicity",
+    "speaker-ownership"
+  ],
+  "findings": [
+    {
+      "findingId": "tr01",
+      "category": "atomicity",
+      "moveId": "m02",
+      "description": "The selected act began mid-phrase and ended with the unfinished clause 'even if you' rather than a complete single-speaker assertion.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "tr02",
+      "category": "atomicity",
+      "moveId": "m03",
+      "description": "The selected act ended with 'Ammonia is even harsher', leaving the comparison unfinished despite an earlier complete mechanism statement.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "tr03",
+      "category": "atomicity",
+      "moveId": "m04",
+      "description": "The selected act retained a leading fragment and ended with the unfinished words 'So I' after an otherwise complete humility claim.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "tr04",
+      "category": "atomicity",
+      "moveId": "m05",
+      "description": "The selected response ended with the new unfinished question fragment 'How many protein' after completing its simpler-first-cell qualification.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "tr05",
+      "category": "atomicity",
+      "moveId": "m06",
+      "description": "The selected response ended with 'No, you', the beginning of a further demand, rather than at the completed repeated-improbability reply.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "tr06",
+      "category": "target-packet",
+      "moveId": "m09",
+      "description": "The repaired target claim and graph still described exoplanet abundance as irrelevant, while Tour's completed immediate claim was that a second independent origin would not ease explaining the first origin.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "tr07",
+      "category": "atomicity",
+      "moveId": "m11",
+      "description": "The selected response began with the orphaned word 'this' from the prior caption phrase before Swamidass's complete vitalism reformulation.",
+      "disposition": "repaired"
+    }
+  ],
+  "repairs": [
+    {
+      "findingId": "tr01",
+      "change": "Moved m02's start to the beginning of its asserted sentence and trimmed the unfinished closing clause, then recomputed the excerpt hash."
+    },
+    {
+      "findingId": "tr02",
+      "change": "Trimmed m03 after the completed ammonia-environment assertion and recomputed the exact excerpt hash."
+    },
+    {
+      "findingId": "tr03",
+      "change": "Removed m04's leading and trailing fragments while retaining the complete evidential-humility claim, then recomputed its hash."
+    },
+    {
+      "findingId": "tr04",
+      "change": "Trimmed m05 before the unfinished protein question while preserving its full simpler-first-cell qualification and recomputed its hash."
+    },
+    {
+      "findingId": "tr05",
+      "change": "Trimmed m06 at the completed nonzero-probability reply before the next demand began and recomputed its excerpt hash."
+    },
+    {
+      "findingId": "tr06",
+      "change": "Rewrote m09's claim and three-node graph to lock Tour's first-origin burden and his conclusion that a second origin would not make it easier."
+    },
+    {
+      "findingId": "tr07",
+      "change": "Removed m11's orphaned leading word while preserving the complete single-speaker reformulation and recomputed its excerpt hash."
+    }
+  ],
+  "audit": {
+    "triggeredIssuesRechecked": true,
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "burdenRouteViolations": 0,
+    "componentGraphViolations": 0,
+    "componentOverlapViolations": 0,
+    "targetRecencyViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "finalInventoryValidatorPassed": true
+  }
+}
