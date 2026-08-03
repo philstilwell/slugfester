@@ -1,0 +1,445 @@
+{
+  "schemaVersion": "2.3-response-classification-pass",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.3",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.3",
+  "gateId": "v2.3-three-debate-classification-gate",
+  "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+  "debateNumber": "81",
+  "pass": "A",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "completedAt": "2026-08-03T01:06:19Z",
+  "isolation": {
+    "method": "fresh-isolated-classification-task",
+    "allowedInputs": [
+      "docs/assessment-workflow-v2.3.md",
+      "docs/reassessment-rubric-v2.3.md",
+      "docs/calibration/v2.3/response-classification-schema.json",
+      "docs/calibration/v2.3/three-debate-gate/gate-manifest.json",
+      "docs/calibration/v2.3/three-debate-gate/inventories/rasmussen-oppy-ultimate-reality-naturalism-2020.json",
+      "docs/calibration/v2.2/complete-gate/audio-verification/rasmussen-oppy-ultimate-reality-naturalism-2020.json",
+      ".assessment-cache/captions/YhqFdIb13bk/transcript.txt",
+      ".assessment-cache/captions/YhqFdIb13bk/events.json",
+      ".assessment-cache/captions/YhqFdIb13bk/manifest.json"
+    ],
+    "prohibitedInputsConfirmed": true,
+    "contaminationDetected": false,
+    "statement": "This fresh classification pass used only the nine enumerated analytical inputs and did not inspect any score, prior response class, adjudication, critique, tag, verdict, or legacy assessment artifact."
+  },
+  "source": {
+    "videoId": "YhqFdIb13bk",
+    "inventoryPath": "docs/calibration/v2.3/three-debate-gate/inventories/rasmussen-oppy-ultimate-reality-naturalism-2020.json",
+    "inventorySha256": "d99942d42f653469ce18ec25f8de840bc1784bd01cd661033474681bc2e9725e",
+    "transcriptSha256": "1892348c2caa65082767c0278c9cb5f75093d28ec91d159df46dc690a2e0bbc9",
+    "eventsSha256": "573271176713a5b0a83b0fd01e5435bb75789185c3808468c021ddce5c2e2df7",
+    "captionManifestSha256": "2a9a560ec016ec9a7d29e6b2dd7b66ef518dc8d83214f32ca6116cca6b0d3be5",
+    "audioVerificationPath": "docs/calibration/v2.2/complete-gate/audio-verification/rasmussen-oppy-ultimate-reality-naturalism-2020.json",
+    "audioVerificationSha256": "e412902329206db1042453c442805c7f9745e2e9ca4a8dd335304204183794f3",
+    "gateManifestSha256": "ce907cfa1eb1142ada54fdeec3cf265d6209377e875a8b4dd5e8a4a5fcb02a1d",
+    "workflowSha256": "3062319a38ae940d1c5ac1e71348359734e5825de4f36f58fa312d40e9ee21bb",
+    "rubricSha256": "f2d72abbf1b81547337f847f1af0877870617b023af889194cc52bc223da3f5b",
+    "schemaSha256": "4ff69fce846a21c70757a32ef4afc05c1615550eeab92a94134d85d16431ab34",
+    "limitations": "The source is an auto-caption event chain without native speaker labels. Existing local audio verification resolves every medium-confidence handoff, including the corrected extended span for M23; classification remains limited to the locked inventory acts and their transcript context."
+  },
+  "classifications": [
+    {
+      "moveId": "M01",
+      "sectionId": "S1",
+      "side": "pro",
+      "targetMoveIds": [],
+      "responseClass": "constructive-opening",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "State the evaluative virtues used to compare the rival foundational accounts."
+      ],
+      "decisiveTargetSummary": "No live opponent claim is being answered; the act establishes the pro side's shared evaluative method.",
+      "rationale": "Rasmussen introduces simplicity, explanatory power, and predictive success as standards for his own case. The act is motion-level method building rather than a reply to an opponent claim.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M02",
+      "sectionId": "S1",
+      "side": "con",
+      "targetMoveIds": [],
+      "responseClass": "constructive-opening",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "Establish accurate reconstruction of whole worldviews as a prerequisite for comparison."
+      ],
+      "decisiveTargetSummary": "The brief assent to M01 is contextual; the selected argumentative act principally establishes the con side's worldview-comparison method.",
+      "rationale": "Oppy says the proposed virtues sound acceptable, then develops his own methodological requirement that rival global theories be understood before argument. That requirement builds B-B2 rather than principally answering M01.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "M03",
+      "sectionId": "S1",
+      "side": "con",
+      "targetMoveIds": [],
+      "responseClass": "constructive-opening",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "Define worldview commitments as including the logical consequences of stated beliefs."
+      ],
+      "decisiveTargetSummary": "No live opponent claim is targeted; Oppy constructively defines the commitment scope of a worldview.",
+      "rationale": "The closure-under-consequence claim supplies an independent con-side standard for later total-theory comparison. It is not framed as an answer to a selected pro move.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M04",
+      "sectionId": "S2",
+      "side": "pro",
+      "targetMoveIds": [],
+      "responseClass": "constructive-opening",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "Clarify what classificatory content the primitive term natural contributes."
+      ],
+      "decisiveTargetSummary": "The act expressly disclaims a defect allegation and opens the pro side's terminology inquiry without answering a selected opponent claim.",
+      "rationale": "Rasmussen asks for the content of natural while explicitly saying the question is not a dialectical attack. The clarification initiates his burden about whether the proposed foundation is excluded by naturalism.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M05",
+      "sectionId": "S2",
+      "side": "con",
+      "targetMoveIds": [
+        "M04"
+      ],
+      "responseClass": "full-answer",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "Explain the contrast that gives natural its classificatory content."
+      ],
+      "decisiveTargetSummary": "M04 asks what natural contributes, and M05 answers by locating its content in the created realm's historical contrast with theological entities.",
+      "rationale": "Oppy directly supplies the requested origin and contrast class, including why natural did not historically apply to every entity. That covers the indispensable meaning question in M04, whether or not the historical account is ultimately adequate.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M06",
+      "sectionId": "S3",
+      "side": "pro",
+      "targetMoveIds": [],
+      "responseClass": "constructive-opening",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "Frame unexplained fundamental limits as complexity and contrast limited, unlimited, and agnostic foundation theories."
+      ],
+      "decisiveTargetSummary": "No selected opponent claim is being answered; this is the pro side's core no-arbitrary-limits construction.",
+      "rationale": "Rasmussen lays out the alternatives for the necessary initial reality and supplies the simplicity motivation for removing unexplained limits. The move initiates A-B1 rather than replying to a prior con argument.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M07",
+      "sectionId": "S3",
+      "side": "con",
+      "targetMoveIds": [],
+      "responseClass": "diagnostic-defeat",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "Removing arbitrary limits must itself entail minded attributes rather than adding new positive content."
+      ],
+      "decisiveTargetSummary": "The decisive target is Rasmussen's live but unselected suggestion that shaving limits can yield mindedness; no inventory move contains that full target, so targetMoveIds is empty.",
+      "rationale": "Oppy diagnoses a missing inferential bridge: subtracting restrictions does not by itself introduce consciousness or mind. If correct, that diagnosis defeats the mindedness inference without requiring a rival account of consciousness.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "M08",
+      "sectionId": "S3",
+      "side": "pro",
+      "targetMoveIds": [
+        "M07"
+      ],
+      "responseClass": "partial-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Show why removing value limits yields supreme value and a supreme foundation.",
+        "Show why the further minded or divine attributes follow without being added commitments."
+      ],
+      "decisiveTargetSummary": "M07 challenges the bridge from limit removal to positive minded attributes; M08 supplies a value-to-supremacy route but not the further derivations.",
+      "rationale": "Rasmussen answers one indispensable step by tying necessary existence and removal of value limits to supreme value. He leaves Oppy's central concern about deriving mind and other substantive attributes for later work.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M09",
+      "sectionId": "S3",
+      "side": "con",
+      "targetMoveIds": [
+        "M08"
+      ],
+      "responseClass": "diagnostic-defeat",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "The simple predicate supremacy must warrant the substantive attributes claimed to follow from it."
+      ],
+      "decisiveTargetSummary": "M08 relies on derivations from supremacy, and M09 isolates the absence of those derivations as the decisive defect.",
+      "rationale": "Oppy identifies a missing premise rather than offering a competing foundation: the claimed entailments from supremacy have not been shown. If that gap remains, M08's positive characterization does not follow.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M10",
+      "sectionId": "S3",
+      "side": "pro",
+      "targetMoveIds": [
+        "M09"
+      ],
+      "responseClass": "partial-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Identify the specific attributes and predictions alleged to follow from supreme value.",
+        "Supply a warrant showing why each substantive consequence follows from supreme value."
+      ],
+      "decisiveTargetSummary": "M09 demands the derivational bridge from supremacy; M10 identifies proposed consequences but supports the bridge only by tentative intuition.",
+      "rationale": "The list makes the intended predictions concrete and therefore answers the content question. It does not complete the indispensable entailment or warrant that Oppy's diagnosis requested.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M11",
+      "sectionId": "S3",
+      "side": "con",
+      "targetMoveIds": [
+        "M06",
+        "M10"
+      ],
+      "responseClass": "relevant-counterargument",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Determine whether the initial state has arbitrary or absent fundamental limits.",
+        "Establish that supreme value and its listed predictions follow from the initial state's characterization."
+      ],
+      "decisiveTargetSummary": "M06 frames the limits alternatives and M10 adds predicted attributes; M11 counters with evidential restraint but resolves neither inference.",
+      "rationale": "Oppy's appeal to the lack of scientific access is contrary material relevant to positive characterization of the initial state. It does not answer whether no limits imply supremacy or whether the proposed attributes follow.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M12",
+      "sectionId": "S4",
+      "side": "pro",
+      "targetMoveIds": [],
+      "responseClass": "full-answer",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "Distinguish necessary existence from whether a necessary entity's specific properties admit deeper explanation."
+      ],
+      "decisiveTargetSummary": "The decisive claim that necessity ends the relevant explanatory demand occurs only in unselected transcript material after M11's span, so targetMoveIds is empty.",
+      "rationale": "Rasmussen grants that necessity can end one why-question and then directly answers the stronger stopping claim by separating existence from feature explanation and illustrating deeper explanation among necessary truths.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "M13",
+      "sectionId": "S4",
+      "side": "con",
+      "targetMoveIds": [],
+      "responseClass": "constructive-opening",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "Calibrate the naturalistic initial-state proposal to current ignorance and possible future physical complexity."
+      ],
+      "decisiveTargetSummary": "Although linked to M12, the selected act does not answer its deeper-explanation claim and instead constructively states the con side's empirical vulnerability.",
+      "rationale": "Oppy concedes that future physics could reveal complexity and emphasizes the present lack of information. That chiefly builds B-B1's epistemic-restraint case rather than engaging M12's necessity distinction.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "M14",
+      "sectionId": "S4",
+      "side": "pro",
+      "targetMoveIds": [
+        "M13"
+      ],
+      "responseClass": "partial-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Address the current absence of physical information about the initial state.",
+        "Address the possibility that future physics could overturn a simple initial-state expectation."
+      ],
+      "decisiveTargetSummary": "M13 grounds restraint in present ignorance and future physics; M14 argues for independent cross-domain evidence but does not resolve the future-physics vulnerability.",
+      "rationale": "Rasmussen answers the present-evidence component by identifying modality, axiology, and mathematics as additional constraints. He leaves untouched the concession that later physical evidence may reveal unexpected complexity.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M15",
+      "sectionId": "S4",
+      "side": "con",
+      "targetMoveIds": [
+        "M14"
+      ],
+      "responseClass": "partial-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Show that considerations beyond present physics can constrain the nature of the initial reality.",
+        "Show that modal, axiological, and mathematical warrants are relevant constraints rather than failed a priori prescriptions to physics."
+      ],
+      "decisiveTargetSummary": "M14 claims cross-domain constraints on the foundation; M15 challenges a priori direction of physics but does not address the distinct nonphysical warrants individually.",
+      "rationale": "Oppy answers part of the methodological route by invoking causal continuity and the poor historical record of a priori constraints on physics. He does not settle whether modality, value, or mathematics independently bear on the broader foundation.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "M16",
+      "sectionId": "S4",
+      "side": "pro",
+      "targetMoveIds": [
+        "M15"
+      ],
+      "responseClass": "relevant-counterargument",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Answer why causal continuity gives physics priority concerning the initial physical state.",
+        "Answer the poor historical record of imposing a priori constraints on physics."
+      ],
+      "decisiveTargetSummary": "M15 challenges a priori constraints on physics; M16 offers a relevant unification analogy but does not answer either stated methodological objection.",
+      "rationale": "Mathematical axiomatization supplies contrary material about the possible value of deeper unification, yet it neither addresses causal continuity nor rehabilitates the historical record of a priori physical prescriptions.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M17",
+      "sectionId": "S4",
+      "side": "con",
+      "targetMoveIds": [
+        "M16"
+      ],
+      "responseClass": "diagnostic-defeat",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "Axiomatization must independently support the derived truths rather than merely systematize beliefs already held."
+      ],
+      "decisiveTargetSummary": "M16 treats simpler derivation as an explanatory advantage; M17 diagnoses the reversed epistemic direction that blocks that inference.",
+      "rationale": "Oppy argues that accessible results can justify the axioms rather than the axioms supplying independent reason for the results. If correct, neat axiomatization alone cannot carry M16's theory-choice consequence.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M18",
+      "sectionId": "S5",
+      "side": "pro",
+      "targetMoveIds": [],
+      "responseClass": "constructive-opening",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "Establish introspective access to phenomenal content and its apparent distinction from physical features."
+      ],
+      "decisiveTargetSummary": "No live opponent claim is being answered; Rasmussen opens the pro consciousness case from first-person awareness.",
+      "rationale": "The act introduces introspection and direct discrimination as the epistemic basis for irreducible consciousness. It is the constructive foundation of A-B3 rather than a reply.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M19",
+      "sectionId": "S5",
+      "side": "con",
+      "targetMoveIds": [
+        "M18"
+      ],
+      "responseClass": "relevant-counterargument",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Explain why introspection provides direct access to phenomenal content.",
+        "Show that introspection discriminates phenomenal properties from physical processing and supports irreducibility."
+      ],
+      "decisiveTargetSummary": "M18 advances an introspective distinction; M19 states neural identity as a contrary metaphysical account without yet answering that distinction.",
+      "rationale": "Identity theory is directly relevant contrary material and offers an alternative account of consciousness. In the selected act, Oppy does not yet explain why Rasmussen's introspective discrimination fails.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M20",
+      "sectionId": "S5",
+      "side": "con",
+      "targetMoveIds": [
+        "M18"
+      ],
+      "responseClass": "partial-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Show whether introspection can discriminate mental properties from neural processing.",
+        "Compare the introspective argument with behavior, animal, and neural-insult evidence for identity theory.",
+        "Connect any irreducibility result to the comparative mind-first foundation claim."
+      ],
+      "decisiveTargetSummary": "M18 relies on introspection and a mind-first consequence; M20 supplies broader evidence bearing on identity but leaves the direct distinction and foundation link unresolved.",
+      "rationale": "Oppy answers the comparative-evidence component by explaining the abductive basis for identity theory outside introspection. He does not resolve Rasmussen's claimed direct property distinction or its separate mind-first consequence.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M21",
+      "sectionId": "S5",
+      "side": "pro",
+      "targetMoveIds": [
+        "M19",
+        "M20"
+      ],
+      "responseClass": "partial-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Show that identity of a conscious event with a neural event entails identity of their mental and physical property types.",
+        "Show that the broader empirical evidence favors identity theory over a view with irreducibly distinct properties."
+      ],
+      "decisiveTargetSummary": "M19 states identity and M20 supplies its empirical warrant; M21 challenges the type-level inference while conceding that the neuroscience remains disputed.",
+      "rationale": "Rasmussen makes contact with the identity claim by distinguishing token event identity from the properties it instantiates. He does not answer the empirical categories Oppy cites as support for preferring the identity account.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M22",
+      "sectionId": "S5",
+      "side": "pro",
+      "targetMoveIds": [
+        "M19"
+      ],
+      "responseClass": "diagnostic-defeat",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "The identity claim must distinguish token event identity from identity of mental and physical property types."
+      ],
+      "decisiveTargetSummary": "M19 says consciousness just is neural functioning; M22 diagnoses an unresolved type-token ambiguity in that identity claim.",
+      "rationale": "Rasmussen identifies a distinction under which one event can be identical while instantiating irreducibly different properties. If that ambiguity is real, the bare identity assertion does not establish the type-level conclusion.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M23",
+      "sectionId": "S6",
+      "side": "con",
+      "targetMoveIds": [],
+      "responseClass": "diagnostic-defeat",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "A local advantage must warrant an inference to superiority of the complete worldview rather than assume everything else equal."
+      ],
+      "decisiveTargetSummary": "The decisive target is a generic live local-advantage-to-worldview-victory inference developed in unselected transcript material; neither M01 nor M06 contains that full inference, so targetMoveIds is empty.",
+      "rationale": "Oppy identifies an invalid comparative step: selecting one favorable datum while assuming all remaining commitments equal cannot establish the better total worldview. If correct, that diagnosis defeats the inference without supplying a full rival ledger.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M24",
+      "sectionId": "S6",
+      "side": "pro",
+      "targetMoveIds": [
+        "M23"
+      ],
+      "responseClass": "justified-reframe",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Explain why treating every focused comparison as an attempted overall victory misstates its purpose.",
+        "Answer the corrected question by giving focused comparison a legitimate clarificatory role without inferring total-worldview superiority."
+      ],
+      "decisiveTargetSummary": "M23 attacks local comparisons used as victory claims; M24 accepts that defect and reframes local analysis as clarification rather than an overall verdict.",
+      "rationale": "Rasmussen explains that the criticized demand is malformed when it assumes a dialectical contest, then answers the corrected methodological question by limiting one-property comparison to clarity before wider assessment.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "M25",
+      "sectionId": "S6",
+      "side": "con",
+      "targetMoveIds": [
+        "M24"
+      ],
+      "responseClass": "full-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Allow irrelevant shared ordinary and scientific commitments to be bracketed during focused inquiry.",
+        "Preserve the need to compare the large remaining set of consequential worldview differences."
+      ],
+      "decisiveTargetSummary": "M24 defends focused inquiry against an unwieldy total ledger; M25 grants bracketing of shared facts while preserving the material remainder.",
+      "rationale": "Oppy answers both parts of Rasmussen's concern: agreed common-sense and scientific facts need not distract the inquiry, yet the remaining disagreements are still extensive and comparison-relevant.",
+      "confidence": "high"
+    }
+  ],
+  "audit": {
+    "moveCount": 25,
+    "scoreFieldsPresent": false,
+    "allMovesClassifiedOnce": true
+  }
+}

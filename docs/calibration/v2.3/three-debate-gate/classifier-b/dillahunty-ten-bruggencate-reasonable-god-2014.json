@@ -1,0 +1,485 @@
+{
+  "schemaVersion": "2.3-response-classification-pass",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.3",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.3",
+  "gateId": "v2.3-three-debate-classification-gate",
+  "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+  "debateNumber": "05",
+  "pass": "B",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "completedAt": "2026-08-03T01:07:18Z",
+  "isolation": {
+    "method": "fresh-isolated-classification-task",
+    "allowedInputs": [
+      "docs/assessment-workflow-v2.3.md",
+      "docs/reassessment-rubric-v2.3.md",
+      "docs/calibration/v2.3/response-classification-schema.json",
+      "docs/calibration/v2.3/three-debate-gate/gate-manifest.json",
+      "docs/calibration/v2.3/three-debate-gate/inventories/dillahunty-ten-bruggencate-reasonable-god-2014.json",
+      "docs/calibration/v2.2/complete-gate/audio-verification/dillahunty-ten-bruggencate-reasonable-god-2014.json",
+      ".assessment-cache/captions/OL8LREmbDi0/transcript.txt",
+      ".assessment-cache/captions/OL8LREmbDi0/events.json",
+      ".assessment-cache/captions/OL8LREmbDi0/manifest.json"
+    ],
+    "prohibitedInputsConfirmed": true,
+    "contaminationDetected": false,
+    "statement": "This fresh Classifier B task used only the nine enumerated source and contract inputs and did not inspect any prior classification, score, adjudication, critique, verdict, or legacy assessment material."
+  },
+  "source": {
+    "videoId": "OL8LREmbDi0",
+    "inventoryPath": "docs/calibration/v2.3/three-debate-gate/inventories/dillahunty-ten-bruggencate-reasonable-god-2014.json",
+    "inventorySha256": "ecf8fb26d678fb860f9b0ce2457e18fc6afbaa108d7d1df2bf0005cde060fe92",
+    "transcriptSha256": "bd430d54672142640c78efaf3630dcbbfd15e833732058f53bd5df60b3b92a17",
+    "eventsSha256": "ec182e33fd6ecc7af309efceffc13f87af1e6e8ee2be8dd0bc24394cc3a5e05a",
+    "captionManifestSha256": "e10fd606a6127193c78d4c3c566b72e1bea36ffa0583978a2d75aa33179457fe",
+    "audioVerificationPath": "docs/calibration/v2.2/complete-gate/audio-verification/dillahunty-ten-bruggencate-reasonable-god-2014.json",
+    "audioVerificationSha256": "1f84b761f550a5b4101f6f0938b7e62be45257a27fc20debc11a4683f9b46591",
+    "gateManifestSha256": "ce907cfa1eb1142ada54fdeec3cf265d6209377e875a8b4dd5e8a4a5fcb02a1d",
+    "workflowSha256": "3062319a38ae940d1c5ac1e71348359734e5825de4f36f58fa312d40e9ee21bb",
+    "rubricSha256": "f2d72abbf1b81547337f847f1af0877870617b023af889194cc52bc223da3f5b",
+    "schemaSha256": "4ff69fce846a21c70757a32ef4afc05c1615550eeab92a94134d85d16431ab34",
+    "limitations": "The source is an auto-generated caption chain with occasional recognition errors and mixed-speaker spans; the retained audio-verification artifact resolves every medium-confidence inventory attribution, including the audience attribution for D05-M022."
+  },
+  "classifications": [
+    {
+      "moveId": "D05-M001",
+      "sectionId": "SEC-1-REASONABLENESS",
+      "side": "pro",
+      "targetMoveIds": [],
+      "responseClass": "constructive-opening",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "A motion-level route from God's existence to the reasonableness of believing that God exists."
+      ],
+      "decisiveTargetSummary": "No live opponent claim is principally targeted; the move opens the pro case with its central syllogism.",
+      "rationale": "The selected act states the pro side's initial argument and identifies its truth premise before the opponent has presented a live debate claim, so the first decision-tree class applies.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M002",
+      "sectionId": "SEC-1-REASONABLENESS",
+      "side": "con",
+      "targetMoveIds": [],
+      "responseClass": "constructive-opening",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "A governing con-side standard connecting reasonable belief with justification, validity, soundness, and supported premises."
+      ],
+      "decisiveTargetSummary": "The selected act principally lays the con side's evaluative groundwork rather than answering a particular pro claim.",
+      "rationale": "Matt explicitly introduces this span as groundwork for his own position and defines the standard by which reasonable belief will be assessed; any implication for the earlier syllogism is secondary to that constructive function.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M003",
+      "sectionId": "SEC-1-REASONABLENESS",
+      "side": "con",
+      "targetMoveIds": [
+        "D05-M005"
+      ],
+      "responseClass": "justified-reframe",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Explain why ultimate certainty or ultimate-reality knowledge is not required by the motion's reasonableness question.",
+        "Supply the corrected action-guiding standard of proportionately justified belief."
+      ],
+      "decisiveTargetSummary": "The strongest selected live target is D05-M005's demand for ultimate-reality knowledge before truth can be assessed.",
+      "rationale": "The move explicitly explains that certainty and ultimate knowledge are the wrong demand for this motion, then replaces that demand with and answers under a standard of justified, action-guiding belief aimed at an accurate map of reality.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M004",
+      "sectionId": "SEC-1-REASONABLENESS",
+      "side": "pro",
+      "targetMoveIds": [
+        "D05-M002",
+        "D05-M003"
+      ],
+      "responseClass": "justified-reframe",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Explain why listener-directed public evidence is allegedly the wrong adjudicative demand.",
+        "State the corrected epistemic route by which the audience is said already to know God and truth."
+      ],
+      "decisiveTargetSummary": "The move targets the con standard of public evidential support and its fallibilist separation of reasonableness from certainty.",
+      "rationale": "Sye explains the evidential demand as malformed because it treats the listener rather than God as judge, then supplies his corrected answer that knowledge must start with God and that everyone already knows God; classification concerns coverage, not whether those claims are well warranted.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "D05-M005",
+      "sectionId": "SEC-2-ULTIMATE-REALITY",
+      "side": "pro",
+      "targetMoveIds": [],
+      "responseClass": "constructive-opening",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Ultimate-reality knowledge is required for truth claims.",
+        "Revelation from the Christian God supplies that otherwise unavailable knowledge."
+      ],
+      "decisiveTargetSummary": "No live opponent claim is principally answered; this is the opening's constructive bridge from skepticism to revelation.",
+      "rationale": "Although the opening invokes prior recordings of Matt, the selected act principally builds the pro burden by asserting the necessity and availability of divine revelation, so the constructive-opening branch controls and requires an empty target set.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M006",
+      "sectionId": "SEC-2-ULTIMATE-REALITY",
+      "side": "con",
+      "targetMoveIds": [
+        "D05-M005"
+      ],
+      "responseClass": "justified-reframe",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Explain why an ultimate refutation of hard solipsism is not required for responsible inquiry.",
+        "Supply a corrected fallibilist basis for proceeding within experienced reality."
+      ],
+      "decisiveTargetSummary": "D05-M005 makes ultimate-reality knowledge a prerequisite for truth and offers revelation as the escape from skepticism.",
+      "rationale": "Matt concedes that hard solipsism lacks an ultimate solution, explains why that absolute demand need not halt inquiry, and answers the corrected practical question by adopting minimal, apparently reliable starting points within experienced reality.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M007",
+      "sectionId": "SEC-2-ULTIMATE-REALITY",
+      "side": "pro",
+      "targetMoveIds": [
+        "D05-M006"
+      ],
+      "responseClass": "relevant-counterargument",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Distinguish inability to disprove a brain-in-a-vat scenario from establishing that the scenario is possible or true.",
+        "Explain the fallible warrant for relying on senses and reasoning within experienced reality."
+      ],
+      "decisiveTargetSummary": "D05-M006's fallibilist treatment of solipsism and practical reliance on experienced reality is the live target.",
+      "rationale": "The selected Sye act presses a modal inference from non-refutation and asks for the basis of sensory and rational trust, but it neither answers the target's distinction nor yet supplies the later circularity diagnosis, so it is contrary pressure rather than an answer.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M008",
+      "sectionId": "SEC-2-ULTIMATE-REALITY",
+      "side": "con",
+      "targetMoveIds": [
+        "D05-M007"
+      ],
+      "responseClass": "diagnostic-defeat",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "The inference from failure to demonstrate not-P to the possibility or truth of P."
+      ],
+      "decisiveTargetSummary": "The target is D05-M007's inference that inability to prove one is not a brain in a vat establishes that one could be.",
+      "rationale": "Matt obtains agreement that non-demonstrated impossibility does not establish possibility and that non-demonstrated falsity does not establish truth, then applies those admissions to the disputed inference; if correct, that defect itself defeats the target inference.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M009",
+      "sectionId": "SEC-3-LOGIC-FOUNDATION",
+      "side": "pro",
+      "targetMoveIds": [],
+      "responseClass": "weaker-substitution",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "The unselected naturalistic position would have to reduce the normativity and truth of thought to nothing more than biochemical output."
+      ],
+      "decisiveTargetSummary": "The target is a reductive biochemical reconstruction found only in unselected transcript material, so no inventory move ID is available.",
+      "rationale": "The move attacks the materially stronger claim that thought is nothing but chemical fizz and that truth must be produced by chemistry, rather than engaging the selected con standard that logic is accepted and beliefs require support; no selected move states the substituted target.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "D05-M010",
+      "sectionId": "SEC-3-LOGIC-FOUNDATION",
+      "side": "con",
+      "targetMoveIds": [
+        "D05-M009"
+      ],
+      "responseClass": "justified-reframe",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Explain why a further metaphysical foundation beyond the logical absolutes is not an established requirement.",
+        "Supply the corrected minimal starting point of accepting the logical absolutes without adding an unsupported divine posit."
+      ],
+      "decisiveTargetSummary": "D05-M009 argues that a naturalistic account cannot yield truth or logical necessity and therefore cannot account for reasoning.",
+      "rationale": "Matt explains that the demand for an additional foundation may be incoherent or needlessly expands shared presuppositions, then answers the corrected demand by stopping at the mutually accepted logical absolutes while placing the extra comparative claim on Sye.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M011",
+      "sectionId": "SEC-3-LOGIC-FOUNDATION",
+      "side": "con",
+      "targetMoveIds": [
+        "D05-M005",
+        "D05-M009"
+      ],
+      "responseClass": "diagnostic-defeat",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "A demonstrated dependence or explanatory mechanism connecting logical absolutes to the Christian God.",
+        "A demonstration that relevant non-Christian alternatives cannot account for logical absolutes."
+      ],
+      "decisiveTargetSummary": "The target is the selected pro case's positive divine foundation and its negative claim that non-Christian reasoning cannot yield truth.",
+      "rationale": "The move identifies the missing explanatory bridge and missing comparative exclusion rather than attempting a rival metaphysics; if those absences are as described, the transcendental conclusion is not established and no further substantive answer is needed.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M012",
+      "sectionId": "SEC-3-LOGIC-FOUNDATION",
+      "side": "pro",
+      "targetMoveIds": [
+        "D05-M010",
+        "D05-M011"
+      ],
+      "responseClass": "partial-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "State the alleged dependence relation by which Christianity accounts for logical absolutes.",
+        "Demonstrate why that relation is more than assertion and why relevant alternatives cannot supply an account."
+      ],
+      "decisiveTargetSummary": "D05-M010 and D05-M011 jointly demand both a positive Christian account of logic and comparative exclusion of alternatives.",
+      "rationale": "Sye supplies a direct proposed relation—logical absolutes reflect God's thinking and are known by revelation—but leaves the demand for demonstration and exclusion of other foundations unresolved, so at least one indispensable component is covered and another is not.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M013",
+      "sectionId": "SEC-4-REASON-CIRCULARITY-INDUCTION",
+      "side": "pro",
+      "targetMoveIds": [
+        "D05-M006"
+      ],
+      "responseClass": "diagnostic-defeat",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "A non-vicious basis for relying on reason's apparent reliability without using the same reason as its proof."
+      ],
+      "decisiveTargetSummary": "D05-M006's reliance on reason and experienced reliability is targeted through the later explicit track-record answer.",
+      "rationale": "Sye identifies an alleged self-validating circle in using reason to establish reason's reliability and states why invalid reason could not diagnose itself; if that diagnosis is correct, it defeats the offered warrant without requiring an alternative epistemology.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M014",
+      "sectionId": "SEC-4-REASON-CIRCULARITY-INDUCTION",
+      "side": "con",
+      "targetMoveIds": [
+        "D05-M013"
+      ],
+      "responseClass": "justified-reframe",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Explain why induction need not provide an exceptionless or deductively certain guarantee.",
+        "Supply the corrected probabilistic warrant based on observed regularity and proportionate confidence."
+      ],
+      "decisiveTargetSummary": "D05-M013 is the selected source of the broader circularity challenge instantiated by the immediate unselected induction question.",
+      "rationale": "Matt limits the claim from certainty about an identical future to rationally justified expectation of broad continuity and answers that corrected predictive question with the observed trend, satisfying both steps of a justified reframe.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M015",
+      "sectionId": "SEC-4-REASON-CIRCULARITY-INDUCTION",
+      "side": "pro",
+      "targetMoveIds": [
+        "D05-M014"
+      ],
+      "responseClass": "weaker-substitution",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "D05-M014's calibrated claim that past regularities warrant probabilities rather than deductive guarantees about the next case."
+      ],
+      "decisiveTargetSummary": "The live target is D05-M014's explicitly probabilistic and non-exceptionless account of induction.",
+      "rationale": "The death and house examples criticize an inference from past cases to certainty about the next case, even though the target expressly disavows certainty and exact sameness; the move therefore attacks a materially stronger, weaker-to-defend substitute.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M016",
+      "sectionId": "SEC-4-REASON-CIRCULARITY-INDUCTION",
+      "side": "con",
+      "targetMoveIds": [
+        "D05-M015"
+      ],
+      "responseClass": "justified-reframe",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Explain why a demand to prove the next event or exclude every alternative misstates induction's task.",
+        "Answer the corrected question by giving a probability-based prediction from past experience."
+      ],
+      "decisiveTargetSummary": "D05-M015 treats the next death or house as though induction claimed certain entailment from the past.",
+      "rationale": "Matt explicitly changes the question from what must occur to what one should predict, explains that induction concerns probabilities rather than certainty, and answers the corrected house example with experience-based prediction.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M017",
+      "sectionId": "SEC-5-REVELATION-RIVALS",
+      "side": "con",
+      "targetMoveIds": [
+        "D05-M005"
+      ],
+      "responseClass": "diagnostic-defeat",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "A publicly usable discriminator must identify Christian revelation as reliable among incompatible purported revelations."
+      ],
+      "decisiveTargetSummary": "D05-M005's bare appeal to Christian revelation as the reliable route to ultimate truth is the selected live target.",
+      "rationale": "Matt identifies incompatible revelation claims and the absence of a verifiable way to select the genuine conduit; if that missing discriminatory premise remains, the appeal to revelation alone cannot establish the specifically Christian epistemic route.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M018",
+      "sectionId": "SEC-5-REVELATION-RIVALS",
+      "side": "pro",
+      "targetMoveIds": [],
+      "responseClass": "weaker-substitution",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "The unselected audience challenge requests reconciliation of an apparent scriptural error or contradiction under Sye's own claimed authority."
+      ],
+      "decisiveTargetSummary": "The immediate target appears only in unselected transcript material, so the target set is empty despite the broader thematic link to D05-M017.",
+      "rationale": "Instead of addressing the concrete internal question, Sye replaces it with a dispute over whether an atheist may judge scripture and offers proclamation rather than reconciliation; merely rejecting the questioner's authority does not answer the corrected demand.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "D05-M019",
+      "sectionId": "SEC-5-REVELATION-RIVALS",
+      "side": "pro",
+      "targetMoveIds": [
+        "D05-M017"
+      ],
+      "responseClass": "partial-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Provide a discriminator between Christianity and a concrete rival revelation such as Islam.",
+        "Provide a generally usable method that also handles other incompatible religious and intra-Christian revelation claims."
+      ],
+      "decisiveTargetSummary": "D05-M017 demands a way to distinguish Christian revelation from the wider field of incompatible revelation claims.",
+      "rationale": "Sye offers an internal-consistency test intended to disqualify Islam, which addresses one indispensable rival case, but he does not supply a common method for the remaining religious and intra-Christian conflicts raised by the target.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M020",
+      "sectionId": "SEC-5-REVELATION-RIVALS",
+      "side": "con",
+      "targetMoveIds": [
+        "D05-M012",
+        "D05-M019"
+      ],
+      "responseClass": "diagnostic-defeat",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "The transcendental template must identify the Christian God rather than permit any deity to be inserted as the required foundation.",
+        "The revelation route must provide a non-private discriminator that is not merely another tradition's assertion."
+      ],
+      "decisiveTargetSummary": "The move targets D05-M012's God-and-revelation account and D05-M019's limited exclusion of Islam with a generalized parity test.",
+      "rationale": "The question exposes that rival traditions can substitute their own deity and revelation into the same argumentative slots; if that symmetry is not broken, the specifically Christian conclusion does not follow and the diagnosis itself defeats the discriminatory inference.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M021",
+      "sectionId": "SEC-5-REVELATION-RIVALS",
+      "side": "pro",
+      "targetMoveIds": [
+        "D05-M020"
+      ],
+      "responseClass": "partial-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Explain why the same transcendental defense is not equally available to rival religious traditions.",
+        "Supply a common discriminatory basis that avoids simply selecting one tradition's scripture from inside that tradition."
+      ],
+      "decisiveTargetSummary": "D05-M020 asks both whether rivals may use the same template and how the resulting parity can be broken.",
+      "rationale": "Sye directly answers that the defense is available to rivals and states his biblical reason for denying their gods, covering the availability component, but he leaves the requested common discriminator and the charge of intellectual isolation unresolved.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M022",
+      "sectionId": "SEC-6-FALSIFIABILITY-CLOSING",
+      "side": "con",
+      "targetMoveIds": [
+        "D05-M005",
+        "D05-M012"
+      ],
+      "responseClass": "relevant-counterargument",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Explain how a fallible recipient can rule out false or deceptive purported revelation.",
+        "State a possible evidential condition under which the revelation-based position could be revised."
+      ],
+      "decisiveTargetSummary": "The questions pressure the reliability and corrigibility of the revelation claims in D05-M005 and D05-M012.",
+      "rationale": "The selected audience acts pose divine-deception and revisability hypotheticals that are directly relevant to the revelation route, but the questions themselves do not yet assert a defect or answer an indispensable target component; Sye's answers in the mixed span are not attributed to the selected con act.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M023",
+      "sectionId": "SEC-6-FALSIFIABILITY-CLOSING",
+      "side": "pro",
+      "targetMoveIds": [
+        "D05-M010",
+        "D05-M020"
+      ],
+      "responseClass": "weaker-substitution",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Supply a public bridge selecting the Christian God rather than a generic absolute or rival deity.",
+        "Demonstrate the claimed unique explanatory dependence rather than merely restating the Christian starting point."
+      ],
+      "decisiveTargetSummary": "The strongest selected live demands are D05-M010's exclusivity challenge and D05-M020's rival-substitution challenge.",
+      "rationale": "Sye corrects a reversed inference from absolutes to God, but the selected targets ask why Christianity is the uniquely warranted starting point; restating God-to-absolutes changes the issue and leaves the stronger discriminatory demand untouched.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "D05-M024",
+      "sectionId": "SEC-6-FALSIFIABILITY-CLOSING",
+      "side": "pro",
+      "targetMoveIds": [
+        "D05-M017",
+        "D05-M022"
+      ],
+      "responseClass": "weaker-substitution",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Provide a public discriminator establishing Christian revelation over incompatible rivals.",
+        "Explain how the claimed revelation can be tested for error or revised through evidence."
+      ],
+      "decisiveTargetSummary": "D05-M017 and D05-M022 leave live challenges about revelation's discrimination and corrigibility before the pro closing.",
+      "rationale": "The closing substitutes a moral and eschatological choice between Christianity and absurdity, plus assertions of universal God-knowledge, for the unresolved epistemic tests; it neither answers the rival-revelation problem nor the revisability question.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "D05-M025",
+      "sectionId": "SEC-6-FALSIFIABILITY-CLOSING",
+      "side": "con",
+      "targetMoveIds": [
+        "D05-M021",
+        "D05-M023",
+        "D05-M024"
+      ],
+      "responseClass": "diagnostic-defeat",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Demonstrate that Christianity uniquely accounts for reason and logic rather than only asserting that alternatives fail.",
+        "Carry the pro burden of showing reasonable belief without shifting to a demand that critics prove their own complete worldview."
+      ],
+      "decisiveTargetSummary": "The target is the final selected pro line: biblical exclusion of rivals, Christianity as the required starting point, and Christianity-or-absurdity.",
+      "rationale": "Matt identifies missing demonstration and burden reversal as defects internal to the pro case; if those diagnoses are correct, the pro exclusivity and motion-level reasonableness claims fail without the con side needing to construct a complete rival metaphysics.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "D05-M026",
+      "sectionId": "SEC-6-FALSIFIABILITY-CLOSING",
+      "side": "con",
+      "targetMoveIds": [
+        "D05-M004",
+        "D05-M024"
+      ],
+      "responseClass": "justified-reframe",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Explain why certainty or the possibility of error does not determine whether a claim is true or reasonably believed.",
+        "Answer the corrected motion-level question in terms of proportionate justification for belief."
+      ],
+      "decisiveTargetSummary": "D05-M004 and D05-M024 insist on universal God-knowledge and a certainty-laden Christian-or-absurdity posture.",
+      "rationale": "Matt explains that certainty measures confidence rather than truth and that possible error is not actual error, then returns to the corrected question by stating that the debate supplied no reasonable justification for God-belief.",
+      "confidence": "high"
+    }
+  ],
+  "audit": {
+    "moveCount": 26,
+    "scoreFieldsPresent": false,
+    "allMovesClassifiedOnce": true
+  }
+}

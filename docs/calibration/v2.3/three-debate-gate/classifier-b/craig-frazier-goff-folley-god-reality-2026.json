@@ -1,0 +1,495 @@
+{
+  "schemaVersion": "2.3-response-classification-pass",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.3",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.3",
+  "gateId": "v2.3-three-debate-classification-gate",
+  "debateId": "craig-frazier-goff-folley-god-reality-2026",
+  "debateNumber": "95",
+  "pass": "B",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "completedAt": "2026-08-03T01:18:47Z",
+  "isolation": {
+    "method": "fresh-isolated-classification-task",
+    "allowedInputs": [
+      "docs/assessment-workflow-v2.3.md",
+      "docs/reassessment-rubric-v2.3.md",
+      "docs/calibration/v2.3/response-classification-schema.json",
+      "docs/calibration/v2.3/three-debate-gate/gate-manifest.json",
+      "docs/calibration/v2.3/three-debate-gate/inventories/craig-frazier-goff-folley-god-reality-2026.json",
+      "docs/calibration/v2.2/complete-gate/audio-verification/craig-frazier-goff-folley-god-reality-2026.json",
+      ".assessment-cache/captions/ZVMMO_kgtDQ/transcript.txt",
+      ".assessment-cache/captions/ZVMMO_kgtDQ/events.json",
+      ".assessment-cache/captions/ZVMMO_kgtDQ/manifest.json"
+    ],
+    "prohibitedInputsConfirmed": true,
+    "contaminationDetected": false,
+    "statement": "This fresh classification pass used only the exact nine allowed debate inputs and did not inspect any classifier pass, score, adjudication, critique, legacy assessment, or other analytical artifact."
+  },
+  "source": {
+    "videoId": "ZVMMO_kgtDQ",
+    "inventoryPath": "docs/calibration/v2.3/three-debate-gate/inventories/craig-frazier-goff-folley-god-reality-2026.json",
+    "inventorySha256": "3a2bc656672c1eb1779a38ed77f19fdd65875ae739f62cf3b15dc7944f910d01",
+    "transcriptSha256": "1358b685c8e4a587861a363af58028b37cb4531bccba2e7a86f0df26b362826a",
+    "eventsSha256": "00f71b96a5433a6e1b6da9812c3db464e4a0fcd0752aaa91fef0d9764a1631d1",
+    "captionManifestSha256": "29ebed11fb56830d9d1be6239635664a994d5a7f7cdf6d6f0971fd34ba512d45",
+    "audioVerificationPath": "docs/calibration/v2.2/complete-gate/audio-verification/craig-frazier-goff-folley-god-reality-2026.json",
+    "audioVerificationSha256": "e8e6b2c27f851c19643778c0d966974f7a31df705e475fbac4846dcdc1e76a8b",
+    "gateManifestSha256": "ce907cfa1eb1142ada54fdeec3cf265d6209377e875a8b4dd5e8a4a5fcb02a1d",
+    "workflowSha256": "3062319a38ae940d1c5ac1e71348359734e5825de4f36f58fa312d40e9ee21bb",
+    "rubricSha256": "f2d72abbf1b81547337f847f1af0877870617b023af889194cc52bc223da3f5b",
+    "schemaSha256": "4ff69fce846a21c70757a32ef4afc05c1615550eeab92a94134d85d16431ab34",
+    "limitations": "The source is an auto-generated English caption track. Most speaker turns are recoverable from handoffs, direct address, and continuity; the two inventory moves with medium attribution confidence were successfully verified against the local audio-verification record. Classification remains limited to the selected argumentative acts and their live transcript context."
+  },
+  "classifications": [
+    {
+      "moveId": "S1-M1",
+      "sectionId": "S1",
+      "side": "pro",
+      "targetMoveIds": [],
+      "responseClass": "constructive-opening",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "A cumulative explanatory route from physical reality to a transcendent personal creator"
+      ],
+      "decisiveTargetSummary": "Craig is constructing the pro case rather than principally answering a live opponent claim.",
+      "rationale": "The act introduces contingency and a finite cosmic beginning as members of Craig's cumulative case for theism. Because its principal function is to build the adopted pro burden, the constructive-opening branch applies first.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S1-M2",
+      "sectionId": "S1",
+      "side": "con",
+      "targetMoveIds": [],
+      "responseClass": "constructive-opening",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "A relational and unified alternative starting point for explaining physical reality"
+      ],
+      "decisiveTargetSummary": "Frazier is building her own non-dual explanatory frame in her opening presentation.",
+      "rationale": "Although Craig's case is already live and the inventory records a response link, this selected act principally lays out Frazier's positive unity-and-continuity framework. It therefore satisfies the first decision-tree branch before any reply class is considered.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S1-M3",
+      "sectionId": "S1",
+      "side": "con",
+      "targetMoveIds": [],
+      "responseClass": "constructive-opening",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "A limited-God synthesis that preserves theistic explanatory pressure while accommodating suffering"
+      ],
+      "decisiveTargetSummary": "Goff is defining the comparative requirements of his own limited-God position.",
+      "rationale": "The move occurs within Goff's opening construction and states why his view must combine theistic explanatory considerations with the evidential force of suffering. Its principal work is establishing his adopted burden, not answering one selected Craig premise.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S1-M4",
+      "sectionId": "S1",
+      "side": "con",
+      "targetMoveIds": [
+        "S1-M1"
+      ],
+      "responseClass": "partial-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "The causal principle used within ordinary experience can be applied to the universe as a whole",
+        "The resulting cause can be shown to possess the specifically divine properties needed by the pro conclusion"
+      ],
+      "decisiveTargetSummary": "Folley tests the Kalam route represented by Craig's opening cosmological case.",
+      "rationale": "Folley reconstructs the argument's two-stage route and questions the extrapolation of in-universe causal principles beyond ordinary objects. That contacts an indispensable causal bridge, but it leaves the beginning premise and much of the second-stage property inference unresolved.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "S1-M5",
+      "sectionId": "S1",
+      "side": "pro",
+      "targetMoveIds": [],
+      "responseClass": "full-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Counterintuitiveness must be distinguished from genuine metaphysical impossibility for an actual infinite past",
+        "A tenseless block-universe account allegedly removes the need to traverse an infinite past"
+      ],
+      "decisiveTargetSummary": "The compound target is an audience objection found only in unselected transcript material, so no inventory target ID is available.",
+      "rationale": "Within the selected act Craig addresses both indispensable parts: he treats reliable metaphysical intuition as evidence of impossibility without requiring formal contradiction, and he rejects the tenseless escape by defending experienced temporal becoming. Coverage is complete even though the merits remain separately assessable.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S2-M1",
+      "sectionId": "S2",
+      "side": "con",
+      "targetMoveIds": [],
+      "responseClass": "partial-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "A Hindu or emanationist account must provide a generative ground distinct from the manifested world",
+        "That account must explain why its ground is a viable alternative to classical creation rather than merely another label"
+      ],
+      "decisiveTargetSummary": "The decisive challenge is the moderator's unselected report of Craig's objection to Frazier's published view.",
+      "rationale": "Frazier answers the demand for an explanatory level by identifying generative powers and a radically different supporting condition across several traditions. She does not yet explain enough of that ground to establish its viability against the specifically classical alternative, leaving one indispensable component open.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "S2-M2",
+      "sectionId": "S2",
+      "side": "pro",
+      "targetMoveIds": [
+        "S2-M1"
+      ],
+      "responseClass": "full-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "The proposed bi-level similarity must preserve or erase an ontological creator-creation distinction",
+        "The ground and the physical universe must have a specified modal and material relation"
+      ],
+      "decisiveTargetSummary": "Craig answers Frazier's claim that the compared traditions share a broadly bi-level structure.",
+      "rationale": "Craig supplies the differentiating ontology: an immaterial, transcendent, necessary creator and a material, contingent creation, with creation by rather than out of God. This addresses every indispensable component of the selected similarity claim, whether or not the distinctions ultimately succeed.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S2-M3",
+      "sectionId": "S2",
+      "side": "con",
+      "targetMoveIds": [
+        "S2-M2"
+      ],
+      "responseClass": "relevant-counterargument",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "Classical creation retains ontological separation between a necessary creator and contingent creation despite dependence"
+      ],
+      "decisiveTargetSummary": "The live target is Craig's claim that creation by God is categorically distinct from emanation out of God.",
+      "rationale": "Continuous sustaining and grounding materially narrow the rhetorical contrast between creation and emanation, so the act is contrary and relevant. It does not answer the indispensable modal and ontological distinction Craig states, and therefore does not qualify as a full or partial answer.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S2-M4",
+      "sectionId": "S2",
+      "side": "con",
+      "targetMoveIds": [
+        "S2-M2"
+      ],
+      "responseClass": "relevant-counterargument",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "God and universe are wholly ontologically distinct rather than sharing a necessary conscious core"
+      ],
+      "decisiveTargetSummary": "Goff opposes Craig's strict creator-creation separation with an overlap model.",
+      "rationale": "The Venn model supplies substantive contrary metaphysical material relevant to Craig's strict separation, but it does not answer the modal and material reasons Craig gave for that separation. It is therefore a relevant counterargument rather than an answer to an indispensable component.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S2-M5",
+      "sectionId": "S2",
+      "side": "pro",
+      "targetMoveIds": [
+        "S2-M4"
+      ],
+      "responseClass": "diagnostic-defeat",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "The alleged overlap must coherently assign one shared subject the modal and spatiotemporal properties of both circles"
+      ],
+      "decisiveTargetSummary": "Craig targets the internal coherence of Goff's proposed God-universe overlap.",
+      "rationale": "Craig identifies a direct property contradiction: the two circles are defined by mutually exclusive temporal, material, spatial, and modal predicates. If that diagnosis is correct, the overlap itself fails without a further substantive alternative, satisfying diagnostic-defeat.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S2-M6",
+      "sectionId": "S2",
+      "side": "con",
+      "targetMoveIds": [
+        "S2-M5"
+      ],
+      "responseClass": "full-answer",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "Craig's contradiction follows only if every part of the universe is essentially temporal, material, and contingent"
+      ],
+      "decisiveTargetSummary": "Goff answers the property-assignment premise on which Craig's contradiction diagnosis depends.",
+      "rationale": "Goff expressly denies that the whole universe is essentially contingent and locates the overlap only in a necessary, timeless, uncreated core. That addresses the indispensable premise generating Craig's contradiction; classification concerns that complete coverage, not whether Goff can independently establish the core.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S3-M1",
+      "sectionId": "S3",
+      "side": "con",
+      "targetMoveIds": [],
+      "responseClass": "constructive-opening",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "A warrant connecting neural suppression and ego dissolution to disclosure of fundamental consciousness"
+      ],
+      "decisiveTargetSummary": "Goff is constructing the experiential and neurophysiological basis of his own metaphysics.",
+      "rationale": "The act presents neural suppression and the light-bulb filter metaphor as positive support for Goff's consciousness-first view. No live opponent claim is the principal object of the selected act, so the constructive-opening branch applies first.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S3-M2",
+      "sectionId": "S3",
+      "side": "pro",
+      "targetMoveIds": [
+        "S3-M1"
+      ],
+      "responseClass": "diagnostic-defeat",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "The experience must have objective truth controls rather than merely overwhelming private force",
+        "Those controls must discriminate Goff's interpretation from incompatible religious interpretations"
+      ],
+      "decisiveTargetSummary": "Craig attacks the discriminating warrant from Goff's experience to his worldview.",
+      "rationale": "Craig identifies missing objective controls and introduces a rival Christian experience with purported historical controls. If Goff's evidence cannot discriminate among incompatible interpretations, the selected experiential inference is defeated without Craig needing to supply a competing account of the drug event.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S3-M3",
+      "sectionId": "S3",
+      "side": "con",
+      "targetMoveIds": [
+        "S3-M2"
+      ],
+      "responseClass": "partial-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Private experience requires a defensible route to truth rather than an impossible external check",
+        "Goff's experience must be distinguished from Craig's incompatible Christian experience and its claimed public controls"
+      ],
+      "decisiveTargetSummary": "Goff replies to Craig's demand for objective and discriminating controls on mystical evidence.",
+      "rationale": "Goff answers the external-check demand by arguing that all knowledge begins in apparent experience and offers intensity and uniformity as internal evidence. He leaves Craig's rival Christian interpretation and claimed historical discriminator unresolved, so only part of the compound target is answered.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S3-M4",
+      "sectionId": "S3",
+      "side": "con",
+      "targetMoveIds": [],
+      "responseClass": "diagnostic-defeat",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "Purported propositional cognitive content must possess enough structure to be content and enter public discourse"
+      ],
+      "decisiveTargetSummary": "The target is Goff's unselected transcript claim that his experience has completely unstructured propositional content.",
+      "rationale": "Folley does more than request clarification: he identifies a conceptual conflict between cognitive content and the total absence of structure, and states the public-discourse consequence. If content necessarily implies structure, Goff's characterization fails on its own terms, which is diagnostic defeat.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "S3-M5",
+      "sectionId": "S3",
+      "side": "con",
+      "targetMoveIds": [
+        "S3-M2",
+        "S3-M4"
+      ],
+      "responseClass": "weaker-substitution",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "The experience must have public or discriminating warrant for its metaphysical interpretation",
+        "Its claimed cognitive content must be structured enough to support an assessable inference"
+      ],
+      "decisiveTargetSummary": "Frazier replies to the selected challenges about objective control and structured cognitive content.",
+      "rationale": "Frazier shows that unfamiliar experiences can be veridical, but neither Craig nor Folley treats unfamiliarity alone as the decisive defect. She substitutes the weaker question whether novelty entails fabrication for the live demands concerning discriminating control and inferentially usable structure.",
+      "confidence": "medium"
+    },
+    {
+      "moveId": "S3-M6",
+      "sectionId": "S3",
+      "side": "pro",
+      "targetMoveIds": [
+        "S3-M3"
+      ],
+      "responseClass": "diagnostic-defeat",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "The experience's content must discriminate Goff's limited-God interpretation from orthodox theism"
+      ],
+      "decisiveTargetSummary": "Craig targets the underdetermination of Goff's worldview by the reported experience.",
+      "rationale": "Craig isolates the missing discriminator and asks why the same experience should not be interpreted as experience of the orthodox God. If the reported content cannot distinguish the two accounts, Goff's inference to his specific conception fails without a separate substantive answer.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S4-M1",
+      "sectionId": "S4",
+      "side": "pro",
+      "targetMoveIds": [],
+      "responseClass": "constructive-opening",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "A route from atheistic finitude and self-created purpose to the absence of objective human meaning"
+      ],
+      "decisiveTargetSummary": "Craig is constructing the pro side's objective-meaning argument in his opening.",
+      "rationale": "The act states Craig's positive case that extinction leaves self-created purposes merely subjective and objectively insignificant. It is case-building against the motion-level alternative rather than a response to a live opponent move, so constructive-opening controls.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S4-M2",
+      "sectionId": "S4",
+      "side": "con",
+      "targetMoveIds": [
+        "S4-M1"
+      ],
+      "responseClass": "justified-reframe",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "The singular question about meaning must not reify several distinct senses into one property",
+        "The corrected inquiry must compare which senses of meaning are improved, worsened, or unaffected by God"
+      ],
+      "decisiveTargetSummary": "Folley reframes Craig's unitary objective-versus-subjective treatment of meaning.",
+      "rationale": "Folley explains the defect in the original demand as a linguistic reification of a polysemous term, then answers the corrected plural demand by distinguishing senses and allowing that God affects them differently. Both the justification and corrected answer are supplied.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S4-M3",
+      "sectionId": "S4",
+      "side": "con",
+      "targetMoveIds": [
+        "S4-M4"
+      ],
+      "responseClass": "diagnostic-defeat",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "A creator-assigned purpose must be worthy of endorsement rather than merely imposed by its creator"
+      ],
+      "decisiveTargetSummary": "Frazier attacks Craig's asserted bridge from transcendent creator to objectively valuable purpose.",
+      "rationale": "The puppy-purpose counterexample identifies a missing premise: being created for an end does not make the end valuable or authoritative. If that distinction holds, Craig's stated inference from divine assignment to objective meaning fails without any further rival theory.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S4-M4",
+      "sectionId": "S4",
+      "side": "pro",
+      "targetMoveIds": [
+        "S4-M2"
+      ],
+      "responseClass": "justified-reframe",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Folley's subjective and plural senses must be distinguished from the objective-purpose claim Craig intends",
+        "The corrected objective-purpose question must receive a substantive answer"
+      ],
+      "decisiveTargetSummary": "Craig reframes Folley's plural subjective discussion toward the objective-purpose issue he adopted.",
+      "rationale": "Craig explains that subjective fulfillment is not the disputed demand because finite outcomes allegedly leave such projects arbitrary, then states the corrected objective question and answers it with a transcendent purpose of knowing and enjoying God. The two-step reframe is explicit.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S4-M5",
+      "sectionId": "S4",
+      "side": "con",
+      "targetMoveIds": [
+        "S4-M4"
+      ],
+      "responseClass": "partial-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Subject-involving meaning is allegedly arbitrary because agents can simply make it up",
+        "Only an external transcendent source allegedly gives human purposes objective significance"
+      ],
+      "decisiveTargetSummary": "Folley answers Craig's claim that non-theistic, subject-involving meaning is merely arbitrary.",
+      "rationale": "Folley directly answers the arbitrariness component by showing that psychology constrains what agents can value even on a radical subjectivist view. He does not establish the stance-independent or transcendent significance Craig demands, leaving the other indispensable component unresolved.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S5-M1",
+      "sectionId": "S5",
+      "side": "con",
+      "targetMoveIds": [],
+      "responseClass": "full-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Hinduism allegedly lacks binding moral responsibility when good karma or liberation can be declined",
+        "The freedom to decline a spiritual end must be distinguished from freedom to violate moral duties"
+      ],
+      "decisiveTargetSummary": "The target is the moderator's unselected characterization of Frazier's prior view, so no inventory move ID applies.",
+      "rationale": "Frazier corrects the conflation by grounding responsibility in conscious interaction and dharmic moral structure while distinguishing that duty from the optional pursuit of liberation and divine punishment. She addresses every indispensable part of the live characterization.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S5-M2",
+      "sectionId": "S5",
+      "side": "con",
+      "targetMoveIds": [],
+      "responseClass": "justified-reframe",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Mere objective value must be distinguished from motivational or prudential authority",
+        "The corrected comparison must identify what theism adds beyond impersonal objective value"
+      ],
+      "decisiveTargetSummary": "Folley answers an unselected moderator prompt about objective morality rather than a selected inventory move.",
+      "rationale": "Folley explains why focusing on mere objectivity understates and mislocates the distinctive theistic claim, then answers the corrected comparison by identifying an agential enforcer who aligns conduct with prudence. This supplies both required steps of a justified reframe.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S5-M3",
+      "sectionId": "S5",
+      "side": "pro",
+      "targetMoveIds": [
+        "S5-M2"
+      ],
+      "responseClass": "full-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Objective value alone does not explain categorical moral oughtness",
+        "A theistic authority must add obligation rather than merely coercive or prudential enforcement"
+      ],
+      "decisiveTargetSummary": "Craig answers Folley's distinction between impersonal objective value and agential authority.",
+      "rationale": "Craig accepts that objectivity alone is insufficient, distinguishes values from duties, and grounds duties in commands issued by a qualified authority whose nature is paradigmatically good. Every indispensable component is addressed, independently of the eventual soundness of those warrants.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S5-M4",
+      "sectionId": "S5",
+      "side": "con",
+      "targetMoveIds": [
+        "S5-M3"
+      ],
+      "responseClass": "relevant-counterargument",
+      "compoundTarget": false,
+      "indispensableComponents": [
+        "Objective evaluative hierarchy and moral obligation allegedly require commands from a qualified divine authority"
+      ],
+      "decisiveTargetSummary": "Goff offers an objective evaluative alternative to Craig's divine-command account.",
+      "rationale": "The grass-counting example supplies contrary material for objective hierarchy without divine command and is relevant to Craig's exclusivity claim. It does not answer the indispensable bridge from value to duty or the role of qualified authority, so it remains a relevant counterargument.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S5-M5",
+      "sectionId": "S5",
+      "side": "con",
+      "targetMoveIds": [
+        "S5-M3"
+      ],
+      "responseClass": "partial-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Imperatives from a qualified authority allegedly generate genuine moral duties",
+        "God's paradigmatically good nature allegedly qualifies that authority and constrains the commands"
+      ],
+      "decisiveTargetSummary": "Frazier challenges the authority bridge and practical use of alleged divine commands.",
+      "rationale": "Frazier directly contests whether power and deference can create moral authority and adds the danger of humans appropriating divine-command claims. She does not answer Craig's indispensable qualification that God's paradigmatically good nature constrains and licenses the commands, leaving the compound target incomplete.",
+      "confidence": "high"
+    },
+    {
+      "moveId": "S5-M6",
+      "sectionId": "S5",
+      "side": "pro",
+      "targetMoveIds": [
+        "S5-M2"
+      ],
+      "responseClass": "full-answer",
+      "compoundTarget": true,
+      "indispensableComponents": [
+        "Folley's enforcement account identifies theism's force with prudential self-interest",
+        "A theistic account must explain why moral duty can govern when prudence points the other way"
+      ],
+      "decisiveTargetSummary": "Craig answers Folley's claim that theistic moral force is fundamentally prudential enforcement.",
+      "rationale": "Craig explicitly distinguishes moral duty from prudence, identifies cases where they conflict, and states that theism supplies a basis for following duty at self-interest's expense. This covers both indispensable components even though the selected act compresses the supporting warrant.",
+      "confidence": "high"
+    }
+  ],
+  "audit": {
+    "moveCount": 28,
+    "scoreFieldsPresent": false,
+    "allMovesClassifiedOnce": true
+  }
+}
