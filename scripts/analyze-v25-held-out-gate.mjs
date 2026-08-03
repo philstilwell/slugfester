@@ -11,7 +11,7 @@ function assert(condition, message) { if (!condition) throw new Error(message); 
 function fixed(value) { return Number(value.toFixed(4)); }
 function sha256(value) { return createHash("sha256").update(value).digest("hex"); }
 async function exists(file) { try { await access(file); return true; } catch { return false; } }
-async function load(file) { const source = await readFile(file, "utf8"); return { source, json: JSON.parse(source), hash: sha256(source) }; }
+async function load(file) { const source = await readFile(file, "utf8"); return { source, json: path.extname(file) === ".json" ? JSON.parse(source) : null, hash: sha256(source) }; }
 function ratio(count, denominator) { return denominator === 0 ? 1 : fixed(count / denominator); }
 function kappa(left, right, labels) {
   const count = left.length;

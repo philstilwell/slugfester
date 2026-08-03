@@ -1,0 +1,343 @@
+{
+  "schemaVersion": "2.5-held-out-derived-annotation-gate-reliability",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.5",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.5",
+  "gateId": "v2.5-held-out-derived-annotation-gate",
+  "model": "5.6 Sol",
+  "calibrationOnly": true,
+  "analyzedAt": "2026-08-03T04:14:22.384Z",
+  "sourceQa": {
+    "localTranscriptChains": 3,
+    "paidTranscriptionCalls": 0,
+    "inventoriesIndependentlyReviewed": 3,
+    "triggeredThirdReviews": 3
+  },
+  "independence": {
+    "inventoryBuilders": "fresh-score-blind-per-debate",
+    "inventoryReviewers": "different-fresh-per-debate",
+    "annotationPasses": "two-different-fresh-isolated-tasks-per-debate",
+    "adjudication": "fresh-primitive-only-no-scores",
+    "legacyAssessmentAccessed": false
+  },
+  "debates": [
+    {
+      "debateNumber": "184",
+      "debateId": "enoch-sampson-loeb-lutz-moral-realism-2024",
+      "moveCount": 12,
+      "componentContactJudgmentCount": 15,
+      "agreement": {
+        "componentContactMicro": 0.9333,
+        "targetPreservation": 0.75,
+        "defectType": 0.9167,
+        "targetImpactExplicit": 1,
+        "malformedDemandExplained": 0.8333,
+        "replacementDemandStated": 0.9167,
+        "contactedBridgeSet": 1,
+        "coverage": 0.75,
+        "diagnostic": 1,
+        "reframe": 0.8333,
+        "burden": 1,
+        "tuple": 0.5833
+      },
+      "primitiveDisagreementCount": 14,
+      "thirdReviewTriggered": true
+    },
+    {
+      "debateNumber": "130",
+      "debateId": "licona-carrier-resurrection-history-2010",
+      "moveCount": 12,
+      "componentContactJudgmentCount": 25,
+      "agreement": {
+        "componentContactMicro": 0.68,
+        "targetPreservation": 1,
+        "defectType": 0.9167,
+        "targetImpactExplicit": 1,
+        "malformedDemandExplained": 1,
+        "replacementDemandStated": 1,
+        "contactedBridgeSet": 0.75,
+        "coverage": 0.8333,
+        "diagnostic": 1,
+        "reframe": 1,
+        "burden": 0.9167,
+        "tuple": 0.75
+      },
+      "primitiveDisagreementCount": 17,
+      "thirdReviewTriggered": true
+    },
+    {
+      "debateNumber": "185",
+      "debateId": "dennett-caruso-free-will-responsibility-2021",
+      "moveCount": 12,
+      "componentContactJudgmentCount": 15,
+      "agreement": {
+        "componentContactMicro": 0.9333,
+        "targetPreservation": 1,
+        "defectType": 0.9167,
+        "targetImpactExplicit": 0.9167,
+        "malformedDemandExplained": 1,
+        "replacementDemandStated": 1,
+        "contactedBridgeSet": 0.8333,
+        "coverage": 0.9167,
+        "diagnostic": 0.9167,
+        "reframe": 1,
+        "burden": 1,
+        "tuple": 0.8333
+      },
+      "primitiveDisagreementCount": 15,
+      "thirdReviewTriggered": true
+    }
+  ],
+  "agreement": {
+    "moveCount": 36,
+    "componentContact": {
+      "exactAgreement": 0.8182,
+      "judgmentCount": 55
+    },
+    "targetPreservation": {
+      "exactAgreement": 0.9167
+    },
+    "defectType": {
+      "exactAgreement": 0.9167
+    },
+    "targetImpactExplicit": {
+      "exactAgreement": 0.9722
+    },
+    "malformedDemandExplained": {
+      "exactAgreement": 0.9444
+    },
+    "replacementDemandStated": {
+      "exactAgreement": 0.9722
+    },
+    "contactedBridgeSet": {
+      "exactAgreement": 0.8611
+    },
+    "targetCoverage": {
+      "exactAgreement": 0.8333,
+      "cohensKappa": 0.7736
+    },
+    "diagnosticFlag": {
+      "exactAgreement": 0.9722,
+      "adjudicatedPositiveCount": 16
+    },
+    "reframeFlag": {
+      "exactAgreement": 0.9444,
+      "adjudicatedPositiveCount": 7
+    },
+    "burdenRelation": {
+      "exactAgreement": 0.9722,
+      "cohensKappa": 0.956
+    },
+    "exactDerivedTupleAgreement": 0.7222
+  },
+  "diagnostics": {
+    "componentContactDisagreementPairs": {
+      "addressed <-> not-addressed": 10
+    },
+    "targetPreservationDisagreementDirections": {
+      "true -> false": 3
+    },
+    "defectTypeDisagreementPairs": {
+      "contradiction <-> other": 1,
+      "invalid-inference <-> missing-premise": 1,
+      "invalid-inference <-> none": 1
+    },
+    "targetImpactDisagreementDirections": {
+      "true -> false": 1
+    },
+    "malformedDemandDisagreementDirections": {
+      "true -> false": 2
+    },
+    "replacementDemandDisagreementDirections": {
+      "false -> true": 1
+    },
+    "contactedBridgeSetDisagreementCount": 5,
+    "coverageDisagreementPairs": {
+      "partial <-> substitution": 1,
+      "full <-> substitution": 2,
+      "partial <-> relevant-nonanswer": 1,
+      "full <-> partial": 2
+    },
+    "burdenDisagreementPairs": {
+      "advances-central <-> advances-sub-burden": 1
+    },
+    "diagnosticDisagreementDirections": {
+      "true -> false": 1
+    },
+    "reframeDisagreementDirections": {
+      "true -> false": 2
+    },
+    "finalCoverageDistribution": {
+      "not-applicable": 12,
+      "full": 6,
+      "partial": 11,
+      "relevant-nonanswer": 1,
+      "substitution": 6
+    },
+    "finalBurdenDistribution": {
+      "completes": 10,
+      "advances-central": 17,
+      "advances-sub-burden": 9,
+      "topical-peripheral": 0,
+      "unadopted-or-irrelevant": 0
+    },
+    "finalMechanismPositiveCounts": {
+      "diagnostic": 16,
+      "reframe": 7
+    },
+    "primitiveDisagreementCount": 46,
+    "tupleDisagreementCount": 10
+  },
+  "gates": {
+    "componentContactMicroExact": {
+      "minimum": 0.9,
+      "observed": 0.8182,
+      "status": "fail"
+    },
+    "targetPreservationExact": {
+      "minimum": 0.9,
+      "observed": 0.9167,
+      "status": "pass"
+    },
+    "defectTypeExact": {
+      "minimum": 0.85,
+      "observed": 0.9167,
+      "status": "pass"
+    },
+    "targetImpactExplicitExact": {
+      "minimum": 0.9,
+      "observed": 0.9722,
+      "status": "pass"
+    },
+    "malformedDemandExplainedExact": {
+      "minimum": 0.9,
+      "observed": 0.9444,
+      "status": "pass"
+    },
+    "replacementDemandStatedExact": {
+      "minimum": 0.9,
+      "observed": 0.9722,
+      "status": "pass"
+    },
+    "contactedBridgeSetExact": {
+      "minimum": 0.8,
+      "observed": 0.8611,
+      "status": "pass"
+    },
+    "coverageExactAgreement": {
+      "minimum": 0.85,
+      "observed": 0.8333,
+      "status": "fail"
+    },
+    "coverageKappa": {
+      "minimum": 0.75,
+      "observed": 0.7736,
+      "status": "pass"
+    },
+    "diagnosticExactAgreement": {
+      "minimum": 0.9,
+      "observed": 0.9722,
+      "status": "pass"
+    },
+    "diagnosticPositivePower": {
+      "minimum": 3,
+      "observed": 16,
+      "status": "pass"
+    },
+    "reframeExactAgreement": {
+      "minimum": 0.9,
+      "observed": 0.9444,
+      "status": "pass"
+    },
+    "reframePositivePower": {
+      "minimum": 3,
+      "observed": 7,
+      "status": "pass"
+    },
+    "burdenExactAgreement": {
+      "minimum": 0.8,
+      "observed": 0.9722,
+      "status": "pass"
+    },
+    "burdenKappa": {
+      "minimum": 0.7,
+      "observed": 0.956,
+      "status": "pass"
+    },
+    "exactDerivedTupleAgreement": {
+      "minimum": 0.7,
+      "observed": 0.7222,
+      "status": "pass"
+    }
+  },
+  "hardGates": {
+    "moveCount": {
+      "required": 36,
+      "observed": 36,
+      "status": "pass"
+    },
+    "inventoryAtomicityViolations": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "targetPacketViolations": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "burdenRouteViolations": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "sourceHashMismatches": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "evidenceOffsetErrors": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "derivationMismatches": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "unresolvedSpeakerAttributions": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "unresolvedAnnotationDisagreements": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "movesMissingFinalLock": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "schemaVariants": {
+      "maximum": 1,
+      "observed": 1,
+      "status": "pass"
+    },
+    "prohibitedInputContamination": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    }
+  },
+  "decision": {
+    "annotationGatesPassed": false,
+    "hardGatesPassed": true,
+    "heldOutAnnotationGate": "not-passed",
+    "completeV25ThreeDebateNumericalGate": "not-authorized",
+    "tenDebateGate": "not-authorized",
+    "corpusWide": "not-ready",
+    "reason": "At least one preregistered annotation or hard gate failed; the stop rule blocks numerical scoring and composition."
+  }
+}
