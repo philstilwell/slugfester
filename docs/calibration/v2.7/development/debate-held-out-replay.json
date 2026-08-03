@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "2.7-development-replay",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.7",
+  "heldOutEligible": false,
+  "interpretation": "Deterministic leave-one-debate-out rule replay over retired development cases; this is a regression and behavior-coverage test, not independent-rater evidence.",
+  "source": {
+    "examplesPath": "docs/calibration/v2.7/development/orthogonal-target-diagnostic-examples.json",
+    "examplesSha256": "61470975c752fa967c3040e1758c9d18350bc13cceb49e717a06f7fe25eecc95"
+  },
+  "replays": [
+    {
+      "heldOutDebateId": "plantinga-law-eaan-rational-belief-2010",
+      "calibrationDebateIds": [
+        "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+        "tour-swamidass-origin-life-chemistry-2020"
+      ],
+      "caseCount": 3,
+      "representedInteractionModes": [
+        "responsive"
+      ],
+      "phenomena": {
+        "objectChange": 0,
+        "scopeChange": 0,
+        "relevantNonanswer": 1,
+        "nonanswer": 0,
+        "full": 1,
+        "partial": 1,
+        "diagnosticPositive": 1,
+        "diagnosticNegative": 2
+      },
+      "deterministicReplay": {
+        "dispositionErrors": 0,
+        "coverageErrors": 0,
+        "diagnosticErrors": 0,
+        "passed": true
+      }
+    },
+    {
+      "heldOutDebateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+      "calibrationDebateIds": [
+        "plantinga-law-eaan-rational-belief-2010",
+        "tour-swamidass-origin-life-chemistry-2020"
+      ],
+      "caseCount": 8,
+      "representedInteractionModes": [
+        "constructive",
+        "responsive"
+      ],
+      "phenomena": {
+        "objectChange": 1,
+        "scopeChange": 1,
+        "relevantNonanswer": 2,
+        "nonanswer": 0,
+        "full": 2,
+        "partial": 2,
+        "diagnosticPositive": 3,
+        "diagnosticNegative": 5
+      },
+      "deterministicReplay": {
+        "dispositionErrors": 0,
+        "coverageErrors": 0,
+        "diagnosticErrors": 0,
+        "passed": true
+      }
+    },
+    {
+      "heldOutDebateId": "tour-swamidass-origin-life-chemistry-2020",
+      "calibrationDebateIds": [
+        "plantinga-law-eaan-rational-belief-2010",
+        "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009"
+      ],
+      "caseCount": 4,
+      "representedInteractionModes": [
+        "responsive"
+      ],
+      "phenomena": {
+        "objectChange": 1,
+        "scopeChange": 0,
+        "relevantNonanswer": 0,
+        "nonanswer": 0,
+        "full": 2,
+        "partial": 1,
+        "diagnosticPositive": 3,
+        "diagnosticNegative": 1
+      },
+      "deterministicReplay": {
+        "dispositionErrors": 0,
+        "coverageErrors": 0,
+        "diagnosticErrors": 0,
+        "passed": true
+      }
+    }
+  ],
+  "stableModuleRegression": {
+    "moveCount": 36,
+    "burdenDerivationRegressions": 0,
+    "reframeDerivationRegressions": 0,
+    "debates": [
+      {
+        "debateId": "plantinga-law-eaan-rational-belief-2010",
+        "moveCount": 12,
+        "burdenDerivationRegressions": 0,
+        "reframeDerivationRegressions": 0
+      },
+      {
+        "debateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+        "moveCount": 12,
+        "burdenDerivationRegressions": 0,
+        "reframeDerivationRegressions": 0
+      },
+      {
+        "debateId": "tour-swamidass-origin-life-chemistry-2020",
+        "moveCount": 12,
+        "burdenDerivationRegressions": 0,
+        "reframeDerivationRegressions": 0
+      }
+    ],
+    "passed": true
+  },
+  "decision": {
+    "passed": true,
+    "heldOutGateStillRequired": true
+  }
+}

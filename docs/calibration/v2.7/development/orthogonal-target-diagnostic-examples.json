@@ -1,0 +1,1720 @@
+{
+  "schemaVersion": "2.7-orthogonal-target-diagnostic-development",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.7",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.7",
+  "sourceGateId": "v2.6-held-out-target-contact-gate",
+  "heldOutEligible": false,
+  "retiredDebates": [
+    "plantinga-law-eaan-rational-belief-2010",
+    "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+    "tour-swamidass-origin-life-chemistry-2020"
+  ],
+  "cases": [
+    {
+      "caseId": "v27-dev-129-129-m04",
+      "debateId": "plantinga-law-eaan-rational-belief-2010",
+      "debateNumber": "129",
+      "moveId": "129-m04",
+      "speaker": "Alvin Plantinga",
+      "interactionMode": "responsive",
+      "sourceSpan": {
+        "startMs": 1941039,
+        "endMs": 1995000
+      },
+      "sourceExcerpt": "sure um let's back up a little bit let's let's think about a frog sitting on a lily pond and a fly whizzes by the frog's tongue flicks out and captures the fly which of course contributes to the frog's survival and reproductive prospects let's say so so there must be neurology in the frog that tracks the fly and um and determines how far the fly is at wave and what's velocity isn't like of that might must be indicators in the frog that",
+      "sourceExcerptSha256": "ee4f22a55b00ce6ebcb28115c4de0b5f09e78d26c932503b9011d29620785156",
+      "targetPacket": {
+        "id": "129-t04",
+        "targetSpeaker": "Stephen Law",
+        "sourceSpan": {
+          "startMs": 1873519,
+          "endMs": 1911000
+        },
+        "sourceExcerpt": "organisms such as us ourselves need water and a food and a mate and so natural selection will tend to produce enough desires for those kinds of things those desires by themselves of course then produce behavior you also need to have beliefs and so suppose that i crave water i'm thirsty suppose there's water to the south of me but nowhere else",
+        "sourceExcerptSha256": "6d3512348cbd73ad201713f54f8c8ccf59c724cdb7702ce3a7e7d360e7f11fcc",
+        "claim": "Adaptive needs and desires select accurate location beliefs that guide successful behavior.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "129-t04-c1",
+            "text": "Organisms have adaptive needs and corresponding desires.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "129-t04-c2",
+            "text": "Accurate location beliefs combine with desires to produce successful adaptive behavior.",
+            "kind": "inference",
+            "dependsOn": [
+              "129-t04-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "Plantinga immediately answers Law's water model with a frog case retaining adaptive tracking while separating it from belief truth."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/plantinga-law-eaan-rational-belief-2010.json",
+        "inventorySha256": "cd8be904971e6def24f76424860890e961111e3e0558b7ec5bda3f6bc7a22f9e",
+        "passAPath": "docs/calibration/v2.6/held-out-gate/pass-a/plantinga-law-eaan-rational-belief-2010.json",
+        "passASha256": "a1856956deb2d4f5386e752d0fcad1d9282f4fbcac23076a0125d461c36caec6",
+        "passBPath": "docs/calibration/v2.6/held-out-gate/pass-b/plantinga-law-eaan-rational-belief-2010.json",
+        "passBSha256": "d65e55c5896998d77caa81a7544bff1bffdcb38814f2da3007d0dc9f13753ac3",
+        "lockPath": "docs/calibration/v2.6/held-out-gate/locks/plantinga-law-eaan-rational-belief-2010.json",
+        "lockSha256": "887e2a4d550277ff1d8b1c26f95e97f4c5572d90f492751c2931178d1c456f00"
+      },
+      "v26Disagreements": {
+        "fields": [
+          "coverage"
+        ],
+        "componentDisagreements": [
+          {
+            "componentId": "129-t04-c1",
+            "contactDisagreement": true,
+            "operationDisagreement": true
+          },
+          {
+            "componentId": "129-t04-c2",
+            "contactDisagreement": true,
+            "operationDisagreement": true
+          }
+        ]
+      },
+      "finalCoverage": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "objectEvidence": null,
+        "targetScopeRelation": "same",
+        "scopeEvidence": null,
+        "targetBurdenRelation": "retained",
+        "burdenEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "129-t04-c1",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "129-t04-c2",
+            "operation": null,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": true,
+        "contraryEvidence": {
+          "text": "there must be neurology in the frog that tracks the fly",
+          "startChar": 254,
+          "endChar": 309
+        },
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "relevant-nonanswer"
+      },
+      "finalDiagnostic": {
+        "applicability": "applicable",
+        "defectType": "none",
+        "defectObject": null,
+        "defectEvidence": null,
+        "impactMode": "none",
+        "impactEvidence": null,
+        "derivedDiagnostic": false
+      },
+      "rationale": "The frog material supplies relevant contrary neurology but does not operate on Law's adaptive-needs premise or the inference connecting accurate content to behavior."
+    },
+    {
+      "caseId": "v27-dev-129-129-m07",
+      "debateId": "plantinga-law-eaan-rational-belief-2010",
+      "debateNumber": "129",
+      "moveId": "129-m07",
+      "speaker": "Stephen Law",
+      "interactionMode": "responsive",
+      "sourceSpan": {
+        "startMs": 2425520,
+        "endMs": 2473000
+      },
+      "sourceExcerpt": "i mean what i'm suggesting is that that if the belief produces in conjunction with a strong desire for water um movement in the direct you know in in in a southerly direction then it's a very strong candidate for being the belief that there's water to the south i mean maybe maybe it isn't it's possible uh that it's not that belief i'll acknowledge that possibility but surely it becomes a very strong candidate whereas the belief that there's water to the north it's",
+      "sourceExcerptSha256": "97af33ad0591c8423454ec52ca4e18da8a860587bc6d771d80b017b4fc4e4074",
+      "targetPacket": {
+        "id": "129-t07",
+        "targetSpeaker": "Alvin Plantinga",
+        "sourceSpan": {
+          "startMs": 2385520,
+          "endMs": 2417000
+        },
+        "sourceExcerpt": "one should think that that particular belief that gets associated with the underlying neurology when the underlying neurology causes a given kind of behavior let's say i can't see why one should think that it's just has to be the case that that belief is connected somehow with um with whatever it is that um whatever it is whatever kind of action it is that issues from the underlying neurology maybe so but it might just will not be so",
+        "sourceExcerptSha256": "044bf96ba4c7dd3756d62a061109388909d476bdc6dd72eed7fca33f1e2aea16",
+        "claim": "There is no established reason to connect neural behavior output with a corresponding belief content.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "129-t07-c1",
+            "text": "No warrant connects a neural state's behavioral output to matching belief content.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "129-t07-c2"
+            ]
+          },
+          {
+            "id": "129-t07-c2",
+            "text": "The content associated with adaptive neurology might fail to match its resulting action.",
+            "kind": "modality",
+            "dependsOn": []
+          }
+        ],
+        "selectionRationale": "Law immediately supplies the requested probability rationale by contrasting strong and weak candidate contents."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/plantinga-law-eaan-rational-belief-2010.json",
+        "inventorySha256": "cd8be904971e6def24f76424860890e961111e3e0558b7ec5bda3f6bc7a22f9e",
+        "passAPath": "docs/calibration/v2.6/held-out-gate/pass-a/plantinga-law-eaan-rational-belief-2010.json",
+        "passASha256": "a1856956deb2d4f5386e752d0fcad1d9282f4fbcac23076a0125d461c36caec6",
+        "passBPath": "docs/calibration/v2.6/held-out-gate/pass-b/plantinga-law-eaan-rational-belief-2010.json",
+        "passBSha256": "d65e55c5896998d77caa81a7544bff1bffdcb38814f2da3007d0dc9f13753ac3",
+        "lockPath": "docs/calibration/v2.6/held-out-gate/locks/plantinga-law-eaan-rational-belief-2010.json",
+        "lockSha256": "887e2a4d550277ff1d8b1c26f95e97f4c5572d90f492751c2931178d1c456f00"
+      },
+      "v26Disagreements": {
+        "fields": [],
+        "componentDisagreements": [
+          {
+            "componentId": "129-t07-c1",
+            "contactDisagreement": false,
+            "operationDisagreement": true
+          }
+        ]
+      },
+      "finalCoverage": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "objectEvidence": null,
+        "targetScopeRelation": "same",
+        "scopeEvidence": null,
+        "targetBurdenRelation": "retained",
+        "burdenEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "129-t07-c1",
+            "operation": "denies",
+            "evidence": {
+              "text": "then it's a very strong candidate for being the belief that there's water to the south",
+              "startChar": 175,
+              "endChar": 261
+            }
+          },
+          {
+            "componentId": "129-t07-c2",
+            "operation": "accepts",
+            "evidence": {
+              "text": "maybe maybe it isn't it's possible uh that it's not that belief i'll acknowledge that possibility",
+              "startChar": 269,
+              "endChar": 366
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full"
+      },
+      "finalDiagnostic": {
+        "applicability": "applicable",
+        "defectType": "none",
+        "defectObject": null,
+        "defectEvidence": null,
+        "impactMode": "none",
+        "impactEvidence": null,
+        "derivedDiagnostic": false
+      },
+      "rationale": "The move preserves the same warrant target, denies the no-warrant conclusion, and accepts the residual possibility of mismatched content; no diagnostic defect is expressed."
+    },
+    {
+      "caseId": "v27-dev-129-129-m08",
+      "debateId": "plantinga-law-eaan-rational-belief-2010",
+      "debateNumber": "129",
+      "moveId": "129-m08",
+      "speaker": "Alvin Plantinga",
+      "interactionMode": "responsive",
+      "sourceSpan": {
+        "startMs": 2473119,
+        "endMs": 2537000
+      },
+      "sourceExcerpt": "well now that's uh i guess a point where we are seeing quite eye to ear i don't see uh the grounds for that probability probability type judgment i mean if we go back to the frog again imagine the frog sitting on the lily pond and the in the spy comes flying by yeah maybe the frog has beliefs and maybe those beliefs are determined by the underlying neurological structure that structure causes the frog to capture the fly but i can't see any",
+      "sourceExcerptSha256": "b17600ef66647fc331a4b58c86a22ea07d036a0105d54d640d802da8d8b217be",
+      "targetPacket": {
+        "id": "129-t08",
+        "targetSpeaker": "Stephen Law",
+        "sourceSpan": {
+          "startMs": 2437440,
+          "endMs": 2473000
+        },
+        "sourceExcerpt": "then it's a very strong candidate for being the belief that there's water to the south i mean maybe maybe it isn't it's possible uh that it's not that belief i'll acknowledge that possibility but surely it becomes a very strong candidate whereas the belief that there's water to the north it's a rather unlikely candidate for being that particular belief and so it seems to me that you know natural selection is it's more likely than to favor the",
+        "sourceExcerptSha256": "c5a4e11b1d0f7428c73de115a1d282e7e7eeb60d96426f10f63999352d9f1247",
+        "claim": "Behavior toward southern water makes the matching true content more probable than a contrary content.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "129-t08-c1",
+            "text": "Matching belief content is a stronger candidate given desire-guided behavior.",
+            "kind": "rule-comparison",
+            "dependsOn": []
+          },
+          {
+            "id": "129-t08-c2",
+            "text": "Natural selection therefore more likely favors true than false belief in the case.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "129-t08-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "Plantinga directly denies the candidate-probability inference and returns to the frog as a counterexample."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/plantinga-law-eaan-rational-belief-2010.json",
+        "inventorySha256": "cd8be904971e6def24f76424860890e961111e3e0558b7ec5bda3f6bc7a22f9e",
+        "passAPath": "docs/calibration/v2.6/held-out-gate/pass-a/plantinga-law-eaan-rational-belief-2010.json",
+        "passASha256": "a1856956deb2d4f5386e752d0fcad1d9282f4fbcac23076a0125d461c36caec6",
+        "passBPath": "docs/calibration/v2.6/held-out-gate/pass-b/plantinga-law-eaan-rational-belief-2010.json",
+        "passBSha256": "d65e55c5896998d77caa81a7544bff1bffdcb38814f2da3007d0dc9f13753ac3",
+        "lockPath": "docs/calibration/v2.6/held-out-gate/locks/plantinga-law-eaan-rational-belief-2010.json",
+        "lockSha256": "887e2a4d550277ff1d8b1c26f95e97f4c5572d90f492751c2931178d1c456f00"
+      },
+      "v26Disagreements": {
+        "fields": [
+          "defect-type"
+        ],
+        "componentDisagreements": []
+      },
+      "finalCoverage": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "objectEvidence": null,
+        "targetScopeRelation": "same",
+        "scopeEvidence": null,
+        "targetBurdenRelation": "retained",
+        "burdenEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "129-t08-c1",
+            "operation": "undermines",
+            "evidence": {
+              "text": "i don't see uh the grounds for that probability probability type judgment",
+              "startChar": 72,
+              "endChar": 145
+            }
+          },
+          {
+            "componentId": "129-t08-c2",
+            "operation": null,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial"
+      },
+      "finalDiagnostic": {
+        "applicability": "applicable",
+        "defectType": "evidential-insufficiency",
+        "defectObject": {
+          "objectType": "target-component",
+          "objectId": "129-t08-c1"
+        },
+        "defectEvidence": {
+          "text": "i don't see uh the grounds for that probability probability type judgment",
+          "startChar": 72,
+          "endChar": 145
+        },
+        "impactMode": "inferential-consequence",
+        "impactEvidence": {
+          "text": "i don't see uh the grounds for that probability probability type judgment",
+          "startChar": 72,
+          "endChar": 145
+        },
+        "derivedDiagnostic": true
+      },
+      "rationale": "Plantinga preserves the probability comparison, attacks its warrant at the comparison node, and explicitly says the judgment lacks grounds, which states an inferential evidential consequence."
+    },
+    {
+      "caseId": "v27-dev-173-173-m02",
+      "debateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+      "debateNumber": "173",
+      "moveId": "173-m02",
+      "speaker": "Christopher Hitchens",
+      "interactionMode": "constructive",
+      "sourceSpan": {
+        "startMs": 1228000,
+        "endMs": 1268000
+      },
+      "sourceExcerpt": "These are very serious matters and they're not to be laughed off by references to the occasional work of Catholic charities. But, I draw your attention not just to the apologies, ladies and gentlemen, but to the evasive and euphemistic form that they take.",
+      "sourceExcerptSha256": "add06c666d7532ff113b49e41a3174364535ebde954d70d1cb31506e8944d879",
+      "targetPacket": null,
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "inventorySha256": "b1dc47ac4689cd091dac2eac600b2172f686f1d20015fe2e1e3b96995be75f51",
+        "passAPath": "docs/calibration/v2.6/held-out-gate/pass-a/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "passASha256": "e85bc8ff2a67f1654eed7c1c870b8d966d272aa9e385651182835518d3114757",
+        "passBPath": "docs/calibration/v2.6/held-out-gate/pass-b/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "passBSha256": "4b9764b7c13088329ab58e38e80b1b70ac00703312cf1ebcc59b5a4b2f77ccec",
+        "lockPath": "docs/calibration/v2.6/held-out-gate/locks/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "lockSha256": "5b21866877adac5e30b981b49554e8b45d6621dc4426e1862fb0ecd984178a52"
+      },
+      "v26Disagreements": {
+        "fields": [
+          "defect-type",
+          "target-impact",
+          "diagnostic"
+        ],
+        "componentDisagreements": []
+      },
+      "finalCoverage": {
+        "targetObjectRelation": "not-applicable",
+        "objectChangeType": null,
+        "objectEvidence": null,
+        "targetScopeRelation": "not-applicable",
+        "scopeEvidence": null,
+        "targetBurdenRelation": "not-applicable",
+        "burdenEvidence": null,
+        "componentOperations": [],
+        "relevantContraryMaterial": null,
+        "contraryEvidence": null,
+        "derivedTargetDisposition": "not-applicable",
+        "derivedTargetCoverage": "not-applicable"
+      },
+      "finalDiagnostic": {
+        "applicability": "not-applicable",
+        "defectType": "none",
+        "defectObject": null,
+        "defectEvidence": null,
+        "impactMode": "not-applicable",
+        "impactEvidence": null,
+        "derivedDiagnostic": false
+      },
+      "rationale": "This constructive institutional-evasion allegation has no locked opponent target; coverage and diagnostic classification are therefore not applicable rather than inferred from anticipated opposition."
+    },
+    {
+      "caseId": "v27-dev-173-173-m03",
+      "debateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+      "debateNumber": "173",
+      "moveId": "173-m03",
+      "speaker": "Ann Widdecombe",
+      "interactionMode": "responsive",
+      "sourceSpan": {
+        "startMs": 2355000,
+        "endMs": 2390000
+      },
+      "sourceExcerpt": "He also suggests that the Pope welcomed back a Holocaust-denying bishop. Let us first remember that the bishop in question was originally expelled for disobedience. Upon being reinstated and upon reiterating his views the Pope, a fact conveniently ignored by Mr. Hitchens commanded him to repent.",
+      "sourceExcerptSha256": "340458fdfaa3dd599e7bd5d16fc4abb131be54c9583dfaf0e207b514ce84e56e",
+      "targetPacket": {
+        "id": "173-t03",
+        "targetSpeaker": "Christopher Hitchens",
+        "sourceSpan": {
+          "startMs": 1673000,
+          "endMs": 1697000
+        },
+        "sourceExcerpt": "He was quite rightly excommunicated some years ago along with several other members of his ratbag organization. But Joseph Ratzinger has invited him back in to the communion because to him, having this man, this liar, this fraud, this racist in the church is more important because it's church unity than the things that he said and done and continues to stand",
+        "sourceExcerptSha256": "6cb89db4b6077325a282224e3c2fa3ca6feaa18ebe54531b95ab0afebde3630d",
+        "claim": "Ratzinger restored a Holocaust-denying bishop because Church unity mattered more than the bishop's racism.",
+        "targetRelationToMove": "earlier-load-bearing-claim",
+        "interveningOpponentClaim": true,
+        "exceptionRationale": "Hitchens continued with distinct Rwanda, AIDS, homosexuality, indulgence, and infallibility claims before Widdecombe explicitly returned to the earlier Williamson reinstatement allegation.",
+        "indispensableComponents": [
+          {
+            "id": "t03-c1",
+            "text": "Ratzinger invited the excommunicated bishop back into communion",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t03-c2",
+            "text": "Church unity mattered more to Ratzinger than the bishop's racist conduct",
+            "kind": "inference",
+            "dependsOn": [
+              "t03-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "Widdecombe explicitly identifies Hitchens's reinstatement allegation and answers its omitted disciplinary context in her first opposing turn."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "inventorySha256": "b1dc47ac4689cd091dac2eac600b2172f686f1d20015fe2e1e3b96995be75f51",
+        "passAPath": "docs/calibration/v2.6/held-out-gate/pass-a/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "passASha256": "e85bc8ff2a67f1654eed7c1c870b8d966d272aa9e385651182835518d3114757",
+        "passBPath": "docs/calibration/v2.6/held-out-gate/pass-b/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "passBSha256": "4b9764b7c13088329ab58e38e80b1b70ac00703312cf1ebcc59b5a4b2f77ccec",
+        "lockPath": "docs/calibration/v2.6/held-out-gate/locks/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "lockSha256": "5b21866877adac5e30b981b49554e8b45d6621dc4426e1862fb0ecd984178a52"
+      },
+      "v26Disagreements": {
+        "fields": [
+          "target-impact",
+          "diagnostic"
+        ],
+        "componentDisagreements": []
+      },
+      "finalCoverage": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "objectEvidence": null,
+        "targetScopeRelation": "same",
+        "scopeEvidence": null,
+        "targetBurdenRelation": "retained",
+        "burdenEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "t03-c1",
+            "operation": "accepts",
+            "evidence": {
+              "text": "Upon being reinstated",
+              "startChar": 165,
+              "endChar": 186
+            }
+          },
+          {
+            "componentId": "t03-c2",
+            "operation": "undermines",
+            "evidence": {
+              "text": "commanded him to repent",
+              "startChar": 272,
+              "endChar": 295
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full"
+      },
+      "finalDiagnostic": {
+        "applicability": "applicable",
+        "defectType": "missing-premise",
+        "defectObject": {
+          "objectType": "target-component",
+          "objectId": "t03-c2"
+        },
+        "defectEvidence": {
+          "text": "a fact conveniently ignored by Mr. Hitchens",
+          "startChar": 228,
+          "endChar": 271
+        },
+        "impactMode": "none",
+        "impactEvidence": null,
+        "derivedDiagnostic": false
+      },
+      "rationale": "Widdecombe identifies an allegedly omitted disciplinary fact but does not state what that omission does to the unity-over-racism inference, so impact remains none."
+    },
+    {
+      "caseId": "v27-dev-173-173-m07",
+      "debateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+      "debateNumber": "173",
+      "moveId": "173-m07",
+      "speaker": "Christopher Hitchens",
+      "interactionMode": "responsive",
+      "sourceSpan": {
+        "startMs": 4366000,
+        "endMs": 4400000
+      },
+      "sourceExcerpt": "I knew we wouldn't get through without talk about uh money being given away on on personally humanitarian projects in the third world. You never don't get that. You never get the admission that it's done to proselytize for religion either, which my friends at Medecins Sans Frontieres, Doctors Without Borders, for example, or Amnesty International don't do.",
+      "sourceExcerptSha256": "18e00e4a38959b75e4a1a6793bdacab7f5c3fed6acd6c283209f9f2a5dbe7d1d",
+      "targetPacket": {
+        "id": "173-t07",
+        "targetSpeaker": "Ann Widdecombe",
+        "sourceSpan": {
+          "startMs": 2616000,
+          "endMs": 2665000
+        },
+        "sourceExcerpt": "let's just try to imagine a world today without, for example, the billions of pounds that are poured into overseas aid by the Catholic Church, contributing year on year more than any single nation. Imagine the developing world had been left without the input of the medicine and the education that was brought to it by the missions.",
+        "sourceExcerptSha256": "335dd9ee1ec427ac5583707aad6adf7424f6cef9de25a4e9768f32efbcaf1ea6",
+        "claim": "Catholic institutional aid provides exceptionally large and indispensable benefits to the developing world.",
+        "targetRelationToMove": "earlier-load-bearing-claim",
+        "interveningOpponentClaim": true,
+        "exceptionRationale": "Audience questions intervened, but Hitchens explicitly names Widdecombe and returns to her aid argument as the load-bearing pro claim he is answering.",
+        "indispensableComponents": [
+          {
+            "id": "t07-c1",
+            "text": "The Catholic Church pours exceptionally large sums into overseas aid",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t07-c2",
+            "text": "Catholic missions brought medicine and education to the developing world",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t07-c3",
+            "text": "The developing world would be materially worse without those Catholic contributions",
+            "kind": "conclusion",
+            "dependsOn": [
+              "t07-c1",
+              "t07-c2"
+            ]
+          }
+        ],
+        "selectionRationale": "Hitchens explicitly announces a reply to Widdecombe and attacks the character and purpose of the aid she presented."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "inventorySha256": "b1dc47ac4689cd091dac2eac600b2172f686f1d20015fe2e1e3b96995be75f51",
+        "passAPath": "docs/calibration/v2.6/held-out-gate/pass-a/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "passASha256": "e85bc8ff2a67f1654eed7c1c870b8d966d272aa9e385651182835518d3114757",
+        "passBPath": "docs/calibration/v2.6/held-out-gate/pass-b/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "passBSha256": "4b9764b7c13088329ab58e38e80b1b70ac00703312cf1ebcc59b5a4b2f77ccec",
+        "lockPath": "docs/calibration/v2.6/held-out-gate/locks/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "lockSha256": "5b21866877adac5e30b981b49554e8b45d6621dc4426e1862fb0ecd984178a52"
+      },
+      "v26Disagreements": {
+        "fields": [
+          "defect-type",
+          "target-impact",
+          "diagnostic"
+        ],
+        "componentDisagreements": []
+      },
+      "finalCoverage": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "objectEvidence": null,
+        "targetScopeRelation": "same",
+        "scopeEvidence": null,
+        "targetBurdenRelation": "retained",
+        "burdenEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "t07-c1",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "t07-c2",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "t07-c3",
+            "operation": null,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": true,
+        "contraryEvidence": {
+          "text": "it's done to proselytize for religion",
+          "startChar": 194,
+          "endChar": 231
+        },
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "relevant-nonanswer"
+      },
+      "finalDiagnostic": {
+        "applicability": "applicable",
+        "defectType": "none",
+        "defectObject": null,
+        "defectEvidence": null,
+        "impactMode": "none",
+        "impactEvidence": null,
+        "derivedDiagnostic": false
+      },
+      "rationale": "The proselytizing-motive criticism bears on institutional moral credit but performs no operation on the amount, services, or indispensable-benefit conclusion and diagnoses no locked defect."
+    },
+    {
+      "caseId": "v27-dev-173-173-m08",
+      "debateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+      "debateNumber": "173",
+      "moveId": "173-m08",
+      "speaker": "Christopher Hitchens",
+      "interactionMode": "responsive",
+      "sourceSpan": {
+        "startMs": 4393000,
+        "endMs": 4430000
+      },
+      "sourceExcerpt": "But if I'm debating with a Mormon and I say, \"Are you serious? Joseph Smith got a special revelation on plates of gold in upstate New York?\" And I ridicule the absurd absurdity of the Church of Latter-Day Saints, he's going to say to me, \"Boy, you should see our missionaries in Bolivia, though.\" It's always the same.",
+      "sourceExcerptSha256": "13dbbff66833536e24e90c5882eba550878b24d11304ea03711abd93de97d685",
+      "targetPacket": {
+        "id": "173-t08",
+        "targetSpeaker": "Ann Widdecombe",
+        "sourceSpan": {
+          "startMs": 2616000,
+          "endMs": 2665000
+        },
+        "sourceExcerpt": "let's just try to imagine a world today without, for example, the billions of pounds that are poured into overseas aid by the Catholic Church, contributing year on year more than any single nation. Imagine the developing world had been left without the input of the medicine and the education that was brought to it by the missions.",
+        "sourceExcerptSha256": "335dd9ee1ec427ac5583707aad6adf7424f6cef9de25a4e9768f32efbcaf1ea6",
+        "claim": "Catholic institutional aid provides exceptionally large and indispensable benefits to the developing world.",
+        "targetRelationToMove": "earlier-load-bearing-claim",
+        "interveningOpponentClaim": true,
+        "exceptionRationale": "The Mormon analogy immediately continues Hitchens's explicit return to Widdecombe's earlier aid argument after audience questions and tests that same charity-based inference by comparison.",
+        "indispensableComponents": [
+          {
+            "id": "t08-c1",
+            "text": "The Catholic Church pours exceptionally large sums into overseas aid",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t08-c2",
+            "text": "Catholic missions brought medicine and education to the developing world",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t08-c3",
+            "text": "The developing world would be materially worse without those Catholic contributions",
+            "kind": "conclusion",
+            "dependsOn": [
+              "t08-c1",
+              "t08-c2"
+            ]
+          }
+        ],
+        "selectionRationale": "The Mormon-missionary analogy tests whether the immediately discussed social services establish the sponsoring institution's goodness."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "inventorySha256": "b1dc47ac4689cd091dac2eac600b2172f686f1d20015fe2e1e3b96995be75f51",
+        "passAPath": "docs/calibration/v2.6/held-out-gate/pass-a/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "passASha256": "e85bc8ff2a67f1654eed7c1c870b8d966d272aa9e385651182835518d3114757",
+        "passBPath": "docs/calibration/v2.6/held-out-gate/pass-b/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "passBSha256": "4b9764b7c13088329ab58e38e80b1b70ac00703312cf1ebcc59b5a4b2f77ccec",
+        "lockPath": "docs/calibration/v2.6/held-out-gate/locks/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "lockSha256": "5b21866877adac5e30b981b49554e8b45d6621dc4426e1862fb0ecd984178a52"
+      },
+      "v26Disagreements": {
+        "fields": [
+          "target-impact",
+          "diagnostic"
+        ],
+        "componentDisagreements": []
+      },
+      "finalCoverage": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "objectEvidence": null,
+        "targetScopeRelation": "same",
+        "scopeEvidence": null,
+        "targetBurdenRelation": "retained",
+        "burdenEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "t08-c1",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "t08-c2",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "t08-c3",
+            "operation": null,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": true,
+        "contraryEvidence": {
+          "text": "Boy, you should see our missionaries in Bolivia, though",
+          "startChar": 239,
+          "endChar": 294
+        },
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "relevant-nonanswer"
+      },
+      "finalDiagnostic": {
+        "applicability": "applicable",
+        "defectType": "unsupported-comparison",
+        "defectObject": {
+          "objectType": "target-packet",
+          "objectId": "173-t08"
+        },
+        "defectEvidence": {
+          "text": "if I'm debating with a Mormon and I say, \"Are you serious? Joseph Smith got a special revelation on plates of gold in upstate New York?\" And I ridicule the absurd absurdity of the Church of Latter-Day Saints, he's going to say to me, \"Boy, you should see our missionaries in Bolivia, though.\" It's always the same.",
+          "startChar": 4,
+          "endChar": 318
+        },
+        "impactMode": "verdict",
+        "impactEvidence": {
+          "text": "It's always the same",
+          "startChar": 297,
+          "endChar": 317
+        },
+        "derivedDiagnostic": false
+      },
+      "rationale": "The Mormon analogy expresses an unsupported-comparison criticism and a verdict that the pattern recurs, but it never states the inferential consequence for the Catholic-aid target."
+    },
+    {
+      "caseId": "v27-dev-173-173-m09",
+      "debateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+      "debateNumber": "173",
+      "moveId": "173-m09",
+      "speaker": "Stephen Fry",
+      "interactionMode": "responsive",
+      "sourceSpan": {
+        "startMs": 5883000,
+        "endMs": 5920000
+      },
+      "sourceExcerpt": "I'm slightly disappointed that uh um we're going to be particular should say, \"Oh, I knew they'd bring up condoms and child rape and homosexuality.\" It's a bit like a burglar in court say, \"You would bring up that burglary and that manslaughter. You never mention the fact I give my father a birthday present.\"",
+      "sourceExcerptSha256": "2fea908628c556d09e82f28a41ca86bd5eef6ed7b7f81fd477199f390b238bcc",
+      "targetPacket": {
+        "id": "173-t09",
+        "targetSpeaker": "Ann Widdecombe",
+        "sourceSpan": {
+          "startMs": 2710000,
+          "endMs": 2750000
+        },
+        "sourceExcerpt": "I knew somehow that when we were here tonight, we would be discussing child abuse and condoms. They came in the end. I was almost thought we were going to get through an entire speech without condoms from Christopher Hitchens, but we got them at the end. If he has a creed, it would be I believe in condoms.",
+        "sourceExcerptSha256": "d64bc8d848129f25593297b2a73136da80657f6845eaf0395670baa545bdd95f",
+        "claim": "The opposition's focus on child abuse and condoms improperly narrows the debate and reflects its fixation.",
+        "targetRelationToMove": "earlier-load-bearing-claim",
+        "interveningOpponentClaim": true,
+        "exceptionRationale": "Fry quotes Widdecombe's distinctive dismissal nearly verbatim in closing, making the earlier claim explicit and load-bearing despite later interventions.",
+        "indispensableComponents": [
+          {
+            "id": "t09-c1",
+            "text": "The opposition predictably focuses on child abuse and condoms",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t09-c2",
+            "text": "That focus keeps the debate at an improperly narrow level",
+            "kind": "conclusion",
+            "dependsOn": [
+              "t09-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "Fry's burglar analogy directly attacks Widdecombe's attempt to diminish the relevance of the opposition's recurring harm examples."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "inventorySha256": "b1dc47ac4689cd091dac2eac600b2172f686f1d20015fe2e1e3b96995be75f51",
+        "passAPath": "docs/calibration/v2.6/held-out-gate/pass-a/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "passASha256": "e85bc8ff2a67f1654eed7c1c870b8d966d272aa9e385651182835518d3114757",
+        "passBPath": "docs/calibration/v2.6/held-out-gate/pass-b/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "passBSha256": "4b9764b7c13088329ab58e38e80b1b70ac00703312cf1ebcc59b5a4b2f77ccec",
+        "lockPath": "docs/calibration/v2.6/held-out-gate/locks/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "lockSha256": "5b21866877adac5e30b981b49554e8b45d6621dc4426e1862fb0ecd984178a52"
+      },
+      "v26Disagreements": {
+        "fields": [
+          "coverage"
+        ],
+        "componentDisagreements": [
+          {
+            "componentId": "t09-c1",
+            "contactDisagreement": true,
+            "operationDisagreement": true
+          }
+        ]
+      },
+      "finalCoverage": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "objectEvidence": null,
+        "targetScopeRelation": "same",
+        "scopeEvidence": null,
+        "targetBurdenRelation": "retained",
+        "burdenEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "t09-c1",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "t09-c2",
+            "operation": "undermines",
+            "evidence": {
+              "text": "It's a bit like a burglar in court say, \"You would bring up that burglary and that manslaughter. You never mention the fact I give my father a birthday present.\"",
+              "startChar": 149,
+              "endChar": 310
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial"
+      },
+      "finalDiagnostic": {
+        "applicability": "applicable",
+        "defectType": "irrelevance",
+        "defectObject": {
+          "objectType": "target-component",
+          "objectId": "t09-c2"
+        },
+        "defectEvidence": {
+          "text": "It's a bit like a burglar in court say, \"You would bring up that burglary and that manslaughter. You never mention the fact I give my father a birthday present.\"",
+          "startChar": 149,
+          "endChar": 310
+        },
+        "impactMode": "inferential-consequence",
+        "impactEvidence": {
+          "text": "You would bring up that burglary and that manslaughter. You never mention the fact I give my father a birthday present.",
+          "startChar": 190,
+          "endChar": 309
+        },
+        "derivedDiagnostic": true
+      },
+      "rationale": "The burglar analogy preserves the target, contacts only the improper-narrowness conclusion, and expressly shows why unrelated good acts do not make grave alleged wrongdoing irrelevant."
+    },
+    {
+      "caseId": "v27-dev-173-173-m10",
+      "debateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+      "debateNumber": "173",
+      "moveId": "173-m10",
+      "speaker": "Stephen Fry",
+      "interactionMode": "responsive",
+      "sourceSpan": {
+        "startMs": 5938840,
+        "endMs": 5965200
+      },
+      "sourceExcerpt": "Don't tell me there's some magisterial and mystical reason behind limbo that I'm too stupid to understand. That's not good enough. It really isn't. As um As a rather more a rather more contemporary theologian, Bultmann, said, \"The problem with mysticism is it begins in mist and ends in schism.\"",
+      "sourceExcerptSha256": "fec5da89303eaa15d5cdd4ce9085c45b8cb2ca3c53967fb61ce4778752168ff4",
+      "targetPacket": {
+        "id": "173-t10",
+        "targetSpeaker": "Ann Widdecombe",
+        "sourceSpan": {
+          "startMs": 5174000,
+          "endMs": 5210000
+        },
+        "sourceExcerpt": "I actually went to a Catholic school. I absorbed Catholic doctrine. I was certainly taught about limbo, and I don't actually recognize Stephen's description of it. Because it was it wasn't for all eternity. What limbo was was simply, and I do appreciate that to most people this won't matter, but it just needs answering.",
+        "sourceExcerptSha256": "940cf53ce882a42d5c8c7db445a3bb9ee06a604dccf2e06d1be75b47df999212",
+        "claim": "Fry's account of limbo is theologically mistaken because limbo was not eternal.",
+        "targetRelationToMove": "earlier-load-bearing-claim",
+        "interveningOpponentClaim": true,
+        "exceptionRationale": "Fry explicitly rejects the claimed need for magisterial or theological expertise, returning to Widdecombe's named limbo correction after later audience material.",
+        "indispensableComponents": [
+          {
+            "id": "t10-c1",
+            "text": "Limbo was a temporary wait rather than an eternal state",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t10-c2",
+            "text": "Fry's description of limbo is therefore mistaken",
+            "kind": "conclusion",
+            "dependsOn": [
+              "t10-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "Fry rejects the authority and quality of the theological defense used to correct his limbo account."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "inventorySha256": "b1dc47ac4689cd091dac2eac600b2172f686f1d20015fe2e1e3b96995be75f51",
+        "passAPath": "docs/calibration/v2.6/held-out-gate/pass-a/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "passASha256": "e85bc8ff2a67f1654eed7c1c870b8d966d272aa9e385651182835518d3114757",
+        "passBPath": "docs/calibration/v2.6/held-out-gate/pass-b/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "passBSha256": "4b9764b7c13088329ab58e38e80b1b70ac00703312cf1ebcc59b5a4b2f77ccec",
+        "lockPath": "docs/calibration/v2.6/held-out-gate/locks/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "lockSha256": "5b21866877adac5e30b981b49554e8b45d6621dc4426e1862fb0ecd984178a52"
+      },
+      "v26Disagreements": {
+        "fields": [
+          "target-relation",
+          "coverage",
+          "defect-type",
+          "target-impact",
+          "diagnostic"
+        ],
+        "componentDisagreements": []
+      },
+      "finalCoverage": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "question-type",
+        "objectEvidence": {
+          "text": "there's some magisterial and mystical reason behind limbo",
+          "startChar": 14,
+          "endChar": 71
+        },
+        "targetScopeRelation": "same",
+        "scopeEvidence": null,
+        "targetBurdenRelation": "retained",
+        "burdenEvidence": null,
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution"
+      },
+      "finalDiagnostic": {
+        "applicability": "applicable",
+        "defectType": "none",
+        "defectObject": null,
+        "defectEvidence": null,
+        "impactMode": "none",
+        "impactEvidence": null,
+        "derivedDiagnostic": false
+      },
+      "rationale": "Fry changes the factual duration-and-mistake question into rejection of a mystical rationale. Component contact and diagnostic claims about the original target are unavailable after that object change."
+    },
+    {
+      "caseId": "v27-dev-173-173-m11",
+      "debateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+      "debateNumber": "173",
+      "moveId": "173-m11",
+      "speaker": "John Onaiyekan",
+      "interactionMode": "responsive",
+      "sourceSpan": {
+        "startMs": 6703000,
+        "endMs": 6740000
+      },
+      "sourceExcerpt": "The Catholic Church is a force for good in the world. It did not say it is the only source for good. It did not say it has always been a source for good. It's not in the past tense. It's in the present tense. Is a source for good. The way I learned logic, this is the way I would proceed.",
+      "sourceExcerptSha256": "d5f47ab04c3de94e9a28c15a5a7a7ef24dfb4d7035e28c0c90c91dd5884448e6",
+      "targetPacket": {
+        "id": "173-t11",
+        "targetSpeaker": "Christopher Hitchens",
+        "sourceSpan": {
+          "startMs": 6569000,
+          "endMs": 6610000
+        },
+        "sourceExcerpt": "Now, relativism, I thought we were agreed. But Ann Widdecombe says slavery has to be considered in context. What's more relative than that? But there were people at the time, Thomas Paine, Benjamin Franklin, who were innumerable humanists and secularists who said slavery is is evil. The church wouldn't agree.",
+        "sourceExcerptSha256": "0b08301cd2f11011b120c9c3bf361d293180e200abe42febee4894498a0760f0",
+        "claim": "Historical Church support for slavery exposes relativism and moral failure in its claimed authority.",
+        "targetRelationToMove": "earlier-load-bearing-claim",
+        "interveningOpponentClaim": true,
+        "exceptionRationale": "Hitchens continued from the slavery challenge to moral-chaos, invented-gods, and repentance claims before Onaiyekan explicitly returned to the motion's present-tense scope.",
+        "indispensableComponents": [
+          {
+            "id": "t11-c1",
+            "text": "Contemporary humanists and secularists condemned slavery",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t11-c2",
+            "text": "The Church did not condemn slavery at that time",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t11-c3",
+            "text": "The Church's historical position exposes relativism and moral failure",
+            "kind": "conclusion",
+            "dependsOn": [
+              "t11-c1",
+              "t11-c2"
+            ]
+          }
+        ],
+        "selectionRationale": "Onaiyekan answers Hitchens's earlier historical challenge by distinguishing the present-tense, non-exclusive proposition actually under debate."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "inventorySha256": "b1dc47ac4689cd091dac2eac600b2172f686f1d20015fe2e1e3b96995be75f51",
+        "passAPath": "docs/calibration/v2.6/held-out-gate/pass-a/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "passASha256": "e85bc8ff2a67f1654eed7c1c870b8d966d272aa9e385651182835518d3114757",
+        "passBPath": "docs/calibration/v2.6/held-out-gate/pass-b/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "passBSha256": "4b9764b7c13088329ab58e38e80b1b70ac00703312cf1ebcc59b5a4b2f77ccec",
+        "lockPath": "docs/calibration/v2.6/held-out-gate/locks/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "lockSha256": "5b21866877adac5e30b981b49554e8b45d6621dc4426e1862fb0ecd984178a52"
+      },
+      "v26Disagreements": {
+        "fields": [
+          "target-relation",
+          "coverage",
+          "defect-type",
+          "target-impact",
+          "diagnostic"
+        ],
+        "componentDisagreements": []
+      },
+      "finalCoverage": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "objectEvidence": null,
+        "targetScopeRelation": "narrowed",
+        "scopeEvidence": {
+          "text": "It did not say it has always been a source for good. It's not in the past tense. It's in the present tense.",
+          "startChar": 101,
+          "endChar": 208
+        },
+        "targetBurdenRelation": "retained",
+        "burdenEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "t11-c1",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "t11-c2",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "t11-c3",
+            "operation": "qualifies",
+            "evidence": {
+              "text": "It's not in the past tense. It's in the present tense. Is a source for good.",
+              "startChar": 154,
+              "endChar": 230
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial"
+      },
+      "finalDiagnostic": {
+        "applicability": "applicable",
+        "defectType": "scope-mismatch",
+        "defectObject": {
+          "objectType": "target-component",
+          "objectId": "t11-c3"
+        },
+        "defectEvidence": {
+          "text": "It did not say it has always been a source for good.",
+          "startChar": 101,
+          "endChar": 153
+        },
+        "impactMode": "inferential-consequence",
+        "impactEvidence": {
+          "text": "It's not in the past tense. It's in the present tense. Is a source for good.",
+          "startChar": 154,
+          "endChar": 230
+        },
+        "derivedDiagnostic": true
+      },
+      "rationale": "The response keeps the Church-goodness object and burden but narrows temporal scope to the present. It qualifies the historical conclusion and explicitly links that correction to the motion's tense."
+    },
+    {
+      "caseId": "v27-dev-173-173-m12",
+      "debateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+      "debateNumber": "173",
+      "moveId": "173-m12",
+      "speaker": "John Onaiyekan",
+      "interactionMode": "responsive",
+      "sourceSpan": {
+        "startMs": 6945160,
+        "endMs": 6980200
+      },
+      "sourceExcerpt": "So, if I if we take a position, it is because we seriously believe that this is the right position. We are not talking of the validity or the value of one sexual act with a good condom done properly. We are talking of condoms being distributed indiscriminately to young people and being told that once you wear this, you are safe. The fact is that when that is done, AIDS is increased, not decreased. I think you just This is being proved from epidemiological research.",
+      "sourceExcerptSha256": "62575923201f5cf91df50a04184b5934938e8fcc730b8a2bfbc01f31ef7ba9ea",
+      "targetPacket": {
+        "id": "173-t12",
+        "targetSpeaker": "Stephen Fry",
+        "sourceSpan": {
+          "startMs": 3770520,
+          "endMs": 3818160
+        },
+        "sourceExcerpt": "But through an amazing initiative called ABC, abstinence, be faithful, correct use of condoms. Those three, I am not denying that abstinence is a very good way of not getting AIDS. It really is. It works. It So does being faithful. BUT SO DO CONDOMS. AND DO NOT deny it. And this pope this pope not satisfied not satisfied with saying \"Condoms are against our religion, please consider first abstinence, second being faithful to your partner.\" He spreads the lie that condoms actually increase the incidence of AIDS.",
+        "sourceExcerptSha256": "907edb87fa164f48ad16bd3967c294b31d9ed40684186151a231d1b85251572f",
+        "claim": "Correct condom use reduces HIV transmission, contrary to the Pope's claim that condoms increase AIDS incidence.",
+        "targetRelationToMove": "earlier-load-bearing-claim",
+        "interveningOpponentClaim": true,
+        "exceptionRationale": "Widdecombe's closing and Hitchens's later reproductive-policy claim intervened, but Onaiyekan explicitly returned to the condom-efficacy dispute developed by Fry and disputed its central empirical proposition.",
+        "indispensableComponents": [
+          {
+            "id": "t12-c1",
+            "text": "Correct condom use reduces HIV transmission",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t12-c2",
+            "text": "The Pope falsely claims that condoms increase AIDS incidence",
+            "kind": "conclusion",
+            "dependsOn": [
+              "t12-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "Onaiyekan's explicit condom-efficacy reply returns to Fry's earlier load-bearing assertion that correct condom use works and papal teaching falsely denies it."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "inventorySha256": "b1dc47ac4689cd091dac2eac600b2172f686f1d20015fe2e1e3b96995be75f51",
+        "passAPath": "docs/calibration/v2.6/held-out-gate/pass-a/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "passASha256": "e85bc8ff2a67f1654eed7c1c870b8d966d272aa9e385651182835518d3114757",
+        "passBPath": "docs/calibration/v2.6/held-out-gate/pass-b/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "passBSha256": "4b9764b7c13088329ab58e38e80b1b70ac00703312cf1ebcc59b5a4b2f77ccec",
+        "lockPath": "docs/calibration/v2.6/held-out-gate/locks/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009.json",
+        "lockSha256": "5b21866877adac5e30b981b49554e8b45d6621dc4426e1862fb0ecd984178a52"
+      },
+      "v26Disagreements": {
+        "fields": [
+          "defect-type"
+        ],
+        "componentDisagreements": [
+          {
+            "componentId": "t12-c2",
+            "contactDisagreement": false,
+            "operationDisagreement": true
+          }
+        ]
+      },
+      "finalCoverage": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "objectEvidence": null,
+        "targetScopeRelation": "same",
+        "scopeEvidence": null,
+        "targetBurdenRelation": "retained",
+        "burdenEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "t12-c1",
+            "operation": "distinguishes",
+            "evidence": {
+              "text": "We are not talking of the validity or the value of one sexual act with a good condom done properly.",
+              "startChar": 100,
+              "endChar": 199
+            }
+          },
+          {
+            "componentId": "t12-c2",
+            "operation": "undermines",
+            "evidence": {
+              "text": "The fact is that when that is done, AIDS is increased, not decreased.",
+              "startChar": 331,
+              "endChar": 400
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full"
+      },
+      "finalDiagnostic": {
+        "applicability": "applicable",
+        "defectType": "ambiguity",
+        "defectObject": {
+          "objectType": "target-packet",
+          "objectId": "173-t12"
+        },
+        "defectEvidence": {
+          "text": "We are not talking of the validity or the value of one sexual act with a good condom done properly.",
+          "startChar": 100,
+          "endChar": 199
+        },
+        "impactMode": "inferential-consequence",
+        "impactEvidence": {
+          "text": "The fact is that when that is done, AIDS is increased, not decreased.",
+          "startChar": 331,
+          "endChar": 400
+        },
+        "derivedDiagnostic": true
+      },
+      "rationale": "Onaiyekan preserves the condom-efficacy target, distinguishes individual correct use from population distribution, and states the asserted epidemiological consequence of that ambiguity."
+    },
+    {
+      "caseId": "v27-dev-192-m06",
+      "debateId": "tour-swamidass-origin-life-chemistry-2020",
+      "debateNumber": "192",
+      "moveId": "m06",
+      "speaker": "James Tour",
+      "interactionMode": "responsive",
+      "sourceSpan": {
+        "startMs": 1914480,
+        "endMs": 1945519
+      },
+      "sourceExcerpt": "it's not a single miracle. It's not a single miracle because for every step in the synthesis and the assembly, it's a small number that so but and you have and you have to do it over and over again and everything is fighting against you. So in other words, we're clueless and if you you can you know mathematics can take you anywhere. You can just say it's a small number, big number. So it's but it's non zero. So I buy it.",
+      "sourceExcerptSha256": "e51aa34f5e27ba2e235945ed48cc30dab49e5b35d14156a03b8f06c2e19669c3",
+      "targetPacket": {
+        "id": "t06",
+        "targetSpeaker": "S. Joshua Swamidass",
+        "sourceSpan": {
+          "startMs": 1881200,
+          "endMs": 1907279
+        },
+        "sourceExcerpt": "small that is or how big that other number is. So that means that you get a number that's undefined like mathematically it's like a 0 divided by 0. It's undefined. You can't really say what it is. And so it's hard for me to know. And I agree that means that the first cell in in in the scenario I'm giving you right now would be a statistical miracle. If we were a you know there was a movie recently comic",
+        "sourceExcerptSha256": "fa5c9738dd4f7a3c8813a09e71f45aaa2b075326e3780ae8c586adb90a6ee014",
+        "claim": "Unquantified small probabilities and a vast opportunity space leave the natural-origin probability undefined and support agnosticism.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "t06-p1",
+            "text": "The small event probability and large opportunity count cannot presently be quantified.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t06-i1",
+            "text": "Their combination therefore yields an undefined overall probability.",
+            "kind": "inference",
+            "dependsOn": [
+              "t06-p1"
+            ]
+          },
+          {
+            "id": "t06-c1",
+            "text": "The evidence warrants agnosticism even if origin would be a statistical miracle.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "t06-i1"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the immediately preceding sustained opponent argument, and Tour answers its single-miracle probabilistic framing directly."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/tour-swamidass-origin-life-chemistry-2020.json",
+        "inventorySha256": "09eb92b5273a674ba48bb76a5f96f2131af7b2b6bacb863fdf8e9d733b08ef19",
+        "passAPath": "docs/calibration/v2.6/held-out-gate/pass-a/tour-swamidass-origin-life-chemistry-2020.json",
+        "passASha256": "6b797ae62c91b1b702bff78dc28ea56e1386de1fb3febfe10057874e645b54a8",
+        "passBPath": "docs/calibration/v2.6/held-out-gate/pass-b/tour-swamidass-origin-life-chemistry-2020.json",
+        "passBSha256": "dbb3a4b3daa366e990ecf679383beba6aa6a0fa4ae473d345627546a5d73cb93",
+        "lockPath": "docs/calibration/v2.6/held-out-gate/locks/tour-swamidass-origin-life-chemistry-2020.json",
+        "lockSha256": "dd1d9bc1fadc53dd4f5d2dee4937333fe4ce547b5cd3328d233d7ff181d76b4f"
+      },
+      "v26Disagreements": {
+        "fields": [
+          "defect-type"
+        ],
+        "componentDisagreements": [
+          {
+            "componentId": "t06-i1",
+            "contactDisagreement": false,
+            "operationDisagreement": true
+          }
+        ]
+      },
+      "finalCoverage": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "objectEvidence": null,
+        "targetScopeRelation": "same",
+        "scopeEvidence": null,
+        "targetBurdenRelation": "retained",
+        "burdenEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "t06-p1",
+            "operation": "accepts",
+            "evidence": {
+              "text": "we're clueless",
+              "startChar": 257,
+              "endChar": 271
+            }
+          },
+          {
+            "componentId": "t06-i1",
+            "operation": "undermines",
+            "evidence": {
+              "text": "It's not a single miracle because for every step in the synthesis and the assembly, it's a small number",
+              "startChar": 27,
+              "endChar": 130
+            }
+          },
+          {
+            "componentId": "t06-c1",
+            "operation": "qualifies",
+            "evidence": {
+              "text": "it's not a single miracle",
+              "startChar": 0,
+              "endChar": 25
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full"
+      },
+      "finalDiagnostic": {
+        "applicability": "applicable",
+        "defectType": "missing-premise",
+        "defectObject": {
+          "objectType": "target-component",
+          "objectId": "t06-i1"
+        },
+        "defectEvidence": {
+          "text": "you have to do it over and over again and everything is fighting against you",
+          "startChar": 160,
+          "endChar": 236
+        },
+        "impactMode": "inferential-consequence",
+        "impactEvidence": {
+          "text": "It's not a single miracle because for every step in the synthesis and the assembly, it's a small number",
+          "startChar": 27,
+          "endChar": 130
+        },
+        "derivedDiagnostic": true
+      },
+      "rationale": "Tour preserves the probability target, identifies omitted repeated synthesis steps at the inference node, and explicitly states that their repetition changes the miracle and probability assessment."
+    },
+    {
+      "caseId": "v27-dev-192-m08",
+      "debateId": "tour-swamidass-origin-life-chemistry-2020",
+      "debateNumber": "192",
+      "moveId": "m08",
+      "speaker": "James Tour",
+      "interactionMode": "responsive",
+      "sourceSpan": {
+        "startMs": 1998720,
+        "endMs": 2029039
+      },
+      "sourceExcerpt": "I mean, do I think it will ever happen? It's irrelevant what I think on something like that. It's irrelevant what I think. I mean, I mean, the the universe is very large. There's a lot of exoplanets. It's irrelevant what I now as a believer in Jesus Christ, I believe that everything that is that has been created has been created by him. So, that means he would have created it on another place. But it's still a hard question to know how that life formed.",
+      "sourceExcerptSha256": "ae125e55474f46b1398dd4507deef6d6d552a6cba2c6cc79993578cf0fb1498d",
+      "targetPacket": {
+        "id": "t08",
+        "targetSpeaker": "S. Joshua Swamidass",
+        "sourceSpan": {
+          "startMs": 1967840,
+          "endMs": 1995919
+        },
+        "sourceExcerpt": "So, here's an ironic thing about where my argument would really fail. If we discovered life on other planets that were not in our solar system, if we discovered life on an exoplanet that was far enough away that could have been couldn't have been seated from here, I think that would severely undermine my argument because it would show that life has arisen more than once in a in a in a fairly defined space.",
+        "sourceExcerptSha256": "c60d3fe7ec5aa13bfb459573dfa50e363337cfcfa25d20b93a7132965e2ad8f1",
+        "claim": "Independent exoplanet life would severely undermine the argument from a singular rare origin.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "t08-p1",
+            "text": "Life could be found on a sufficiently distant exoplanet without seeding from Earth.",
+            "kind": "modality",
+            "dependsOn": []
+          },
+          {
+            "id": "t08-i1",
+            "text": "Such a finding would show that life arose independently more than once in a defined space.",
+            "kind": "inference",
+            "dependsOn": [
+              "t08-p1"
+            ]
+          },
+          {
+            "id": "t08-c1",
+            "text": "That result would severely undermine Swamidass's rarity-based argument.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "t08-i1"
+            ]
+          }
+        ],
+        "selectionRationale": "Tour immediately answers the proposed exoplanet test and disputes its bearing on the unresolved chemical mechanism."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/tour-swamidass-origin-life-chemistry-2020.json",
+        "inventorySha256": "09eb92b5273a674ba48bb76a5f96f2131af7b2b6bacb863fdf8e9d733b08ef19",
+        "passAPath": "docs/calibration/v2.6/held-out-gate/pass-a/tour-swamidass-origin-life-chemistry-2020.json",
+        "passASha256": "6b797ae62c91b1b702bff78dc28ea56e1386de1fb3febfe10057874e645b54a8",
+        "passBPath": "docs/calibration/v2.6/held-out-gate/pass-b/tour-swamidass-origin-life-chemistry-2020.json",
+        "passBSha256": "dbb3a4b3daa366e990ecf679383beba6aa6a0fa4ae473d345627546a5d73cb93",
+        "lockPath": "docs/calibration/v2.6/held-out-gate/locks/tour-swamidass-origin-life-chemistry-2020.json",
+        "lockSha256": "dd1d9bc1fadc53dd4f5d2dee4937333fe4ce547b5cd3328d233d7ff181d76b4f"
+      },
+      "v26Disagreements": {
+        "fields": [
+          "target-relation",
+          "coverage"
+        ],
+        "componentDisagreements": []
+      },
+      "finalCoverage": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "question-type",
+        "objectEvidence": {
+          "text": "But it's still a hard question to know how that life formed.",
+          "startChar": 397,
+          "endChar": 457
+        },
+        "targetScopeRelation": "same",
+        "scopeEvidence": null,
+        "targetBurdenRelation": "retained",
+        "burdenEvidence": null,
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution"
+      },
+      "finalDiagnostic": {
+        "applicability": "applicable",
+        "defectType": "none",
+        "defectObject": null,
+        "defectEvidence": null,
+        "impactMode": "none",
+        "impactEvidence": null,
+        "derivedDiagnostic": false
+      },
+      "rationale": "Tour changes the question from what independent exoplanet life would show about rarity to whether the formation mechanism is understood; component operations are not applicable."
+    },
+    {
+      "caseId": "v27-dev-192-m10",
+      "debateId": "tour-swamidass-origin-life-chemistry-2020",
+      "debateNumber": "192",
+      "moveId": "m10",
+      "speaker": "James Tour",
+      "interactionMode": "responsive",
+      "sourceSpan": {
+        "startMs": 2853119,
+        "endMs": 2867359
+      },
+      "sourceExcerpt": "Yeah. Yeah. And and so, yeah, mathematics can take you anywhere. And you you'd have to have these miraculous steps over and over and over again which makes that number smaller and smaller and smaller. It doesn't go to zero.",
+      "sourceExcerptSha256": "19d7ee1317919e2ffc1c3c1ef4a21c1232dac41e3fca2aa6144fec61e18be86e",
+      "targetPacket": {
+        "id": "t10",
+        "targetSpeaker": "S. Joshua Swamidass",
+        "sourceSpan": {
+          "startMs": 2814960,
+          "endMs": 2852680
+        },
+        "sourceExcerpt": "thermodynamics works. It's um there's like a finite nonzero probability of any chemical reaction happening. And I don't I think all you need is chemical reactions for life to arise. And so, um, I mean, it could be like, you know, a one, like it could be 0.00 with like a thousand zeros after it, 1%. Or it might even be smaller than that. But, um, but it's hard to imagine how it would be literally zero. Exactly zero. That's why.",
+        "sourceExcerptSha256": "fcbf037441a60567fffa204f08b9425e445db1fe69ae5ad64641a3a6bb608928",
+        "claim": "Thermodynamics makes a wholly chemical origin of life have a finite probability greater than zero.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "t10-p1",
+            "text": "Any chemical reaction has a finite nonzero thermodynamic probability.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t10-p2",
+            "text": "Only chemical reactions are required for life to arise.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t10-c1",
+            "text": "A chemical origin of life therefore has probability greater than exactly zero.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "t10-p1",
+              "t10-p2"
+            ]
+          }
+        ],
+        "selectionRationale": "Tour immediately accepts nonzero probability while qualifying the inference by emphasizing repeated required steps."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/tour-swamidass-origin-life-chemistry-2020.json",
+        "inventorySha256": "09eb92b5273a674ba48bb76a5f96f2131af7b2b6bacb863fdf8e9d733b08ef19",
+        "passAPath": "docs/calibration/v2.6/held-out-gate/pass-a/tour-swamidass-origin-life-chemistry-2020.json",
+        "passASha256": "6b797ae62c91b1b702bff78dc28ea56e1386de1fb3febfe10057874e645b54a8",
+        "passBPath": "docs/calibration/v2.6/held-out-gate/pass-b/tour-swamidass-origin-life-chemistry-2020.json",
+        "passBSha256": "dbb3a4b3daa366e990ecf679383beba6aa6a0fa4ae473d345627546a5d73cb93",
+        "lockPath": "docs/calibration/v2.6/held-out-gate/locks/tour-swamidass-origin-life-chemistry-2020.json",
+        "lockSha256": "dd1d9bc1fadc53dd4f5d2dee4937333fe4ce547b5cd3328d233d7ff181d76b4f"
+      },
+      "v26Disagreements": {
+        "fields": [
+          "defect-type",
+          "target-impact",
+          "diagnostic"
+        ],
+        "componentDisagreements": [
+          {
+            "componentId": "t10-p1",
+            "contactDisagreement": true,
+            "operationDisagreement": true
+          },
+          {
+            "componentId": "t10-c1",
+            "contactDisagreement": false,
+            "operationDisagreement": true
+          }
+        ]
+      },
+      "finalCoverage": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "objectEvidence": null,
+        "targetScopeRelation": "same",
+        "scopeEvidence": null,
+        "targetBurdenRelation": "retained",
+        "burdenEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "t10-p1",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "t10-p2",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "t10-c1",
+            "operation": "qualifies",
+            "evidence": {
+              "text": "you'd have to have these miraculous steps over and over and over again which makes that number smaller and smaller and smaller. It doesn't go to zero",
+              "startChar": 73,
+              "endChar": 222
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial"
+      },
+      "finalDiagnostic": {
+        "applicability": "applicable",
+        "defectType": "missing-premise",
+        "defectObject": {
+          "objectType": "target-component",
+          "objectId": "t10-c1"
+        },
+        "defectEvidence": {
+          "text": "you'd have to have these miraculous steps over and over and over again",
+          "startChar": 73,
+          "endChar": 143
+        },
+        "impactMode": "inferential-consequence",
+        "impactEvidence": {
+          "text": "which makes that number smaller and smaller and smaller. It doesn't go to zero",
+          "startChar": 144,
+          "endChar": 222
+        },
+        "derivedDiagnostic": true
+      },
+      "rationale": "Tour preserves the nonzero-probability target, identifies omitted repeated steps, and explicitly states that those steps make the resulting number progressively smaller."
+    },
+    {
+      "caseId": "v27-dev-192-m12",
+      "debateId": "tour-swamidass-origin-life-chemistry-2020",
+      "debateNumber": "192",
+      "moveId": "m12",
+      "speaker": "James Tour",
+      "interactionMode": "responsive",
+      "sourceSpan": {
+        "startMs": 2962240,
+        "endMs": 2997760
+      },
+      "sourceExcerpt": "No, that's not what I said. What I said is you take a cell that is just died. Everything's near in place. Everything's near in place and the thing's not alive and it doesn't spontaneously pop back into life as far as we can tell. So there's something mysterious to us about even this that that living system. It's hard to understand that. Now if you so so uh that's about as philosophical as I can get Joshua.",
+      "sourceExcerptSha256": "12705e5bedd4f028f95eacd4dd953a99e4268f9901f865c241e0bbb85d9e62c1",
+      "targetPacket": {
+        "id": "t12",
+        "targetSpeaker": "S. Joshua Swamidass",
+        "sourceSpan": {
+          "startMs": 2930480,
+          "endMs": 2964880
+        },
+        "sourceExcerpt": "this. So this sounds like in some way you're wondering about vitalism. Like there's So you're saying if we took all the physical components of a cell and like replicated it with like a Star Trek replicator exactly the same there. You say that it may not actually be living. What is the positions and velocities are identical? All the components are identical down to atomic scale. You're saying it may in electronic scale. You're saying that it may not actually be uh it may not actually be alive.",
+        "sourceExcerptSha256": "a5cad6c7aafe57e9a2017f5c957091afd5e47afe9156e661f46f42a7a3c1f1bc",
+        "claim": "Tour's claim implies that an atomically and electronically identical reconstructed cell might remain nonliving.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "t12-p1",
+            "text": "A hypothetical reconstruction duplicates all physical cell components, positions, velocities, and atomic or electronic details.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t12-c1",
+            "text": "Tour's view implies that this physically identical reconstruction might nevertheless not be alive.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "t12-p1"
+            ]
+          }
+        ],
+        "selectionRationale": "Tour immediately denies that stronger reconstruction implication and restates the narrower recently-dead-cell observation."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.6/held-out-gate/inventories/tour-swamidass-origin-life-chemistry-2020.json",
+        "inventorySha256": "09eb92b5273a674ba48bb76a5f96f2131af7b2b6bacb863fdf8e9d733b08ef19",
+        "passAPath": "docs/calibration/v2.6/held-out-gate/pass-a/tour-swamidass-origin-life-chemistry-2020.json",
+        "passASha256": "6b797ae62c91b1b702bff78dc28ea56e1386de1fb3febfe10057874e645b54a8",
+        "passBPath": "docs/calibration/v2.6/held-out-gate/pass-b/tour-swamidass-origin-life-chemistry-2020.json",
+        "passBSha256": "dbb3a4b3daa366e990ecf679383beba6aa6a0fa4ae473d345627546a5d73cb93",
+        "lockPath": "docs/calibration/v2.6/held-out-gate/locks/tour-swamidass-origin-life-chemistry-2020.json",
+        "lockSha256": "dd1d9bc1fadc53dd4f5d2dee4937333fe4ce547b5cd3328d233d7ff181d76b4f"
+      },
+      "v26Disagreements": {
+        "fields": [
+          "defect-type"
+        ],
+        "componentDisagreements": []
+      },
+      "finalCoverage": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "objectEvidence": null,
+        "targetScopeRelation": "same",
+        "scopeEvidence": null,
+        "targetBurdenRelation": "retained",
+        "burdenEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "t12-p1",
+            "operation": "distinguishes",
+            "evidence": {
+              "text": "you take a cell that is just died. Everything's near in place",
+              "startChar": 43,
+              "endChar": 104
+            }
+          },
+          {
+            "componentId": "t12-c1",
+            "operation": "denies",
+            "evidence": {
+              "text": "No, that's not what I said",
+              "startChar": 0,
+              "endChar": 26
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full"
+      },
+      "finalDiagnostic": {
+        "applicability": "applicable",
+        "defectType": "attribution-error",
+        "defectObject": {
+          "objectType": "target-packet",
+          "objectId": "t12"
+        },
+        "defectEvidence": {
+          "text": "No, that's not what I said",
+          "startChar": 0,
+          "endChar": 26
+        },
+        "impactMode": "inferential-consequence",
+        "impactEvidence": {
+          "text": "you take a cell that is just died. Everything's near in place",
+          "startChar": 43,
+          "endChar": 104
+        },
+        "derivedDiagnostic": true
+      },
+      "rationale": "Tour expressly disowns the physically identical reconstruction attributed to him and replaces it with a recently dead cell, directly stating the correction's consequence for the target attribution."
+    }
+  ],
+  "audit": {
+    "caseCount": 15,
+    "sourceDisagreementCounts": {
+      "caseCount": 15,
+      "targetRelation": 3,
+      "coverage": 5,
+      "defectType": 9,
+      "targetImpact": 7,
+      "diagnostic": 7,
+      "componentContact": 4,
+      "componentOperation": 8
+    },
+    "targetAxisEvidenceErrors": 0,
+    "componentEvidenceErrors": 0,
+    "diagnosticObjectErrors": 0,
+    "diagnosticEvidenceErrors": 0,
+    "derivationErrors": 0,
+    "stableContactRegressions": 0,
+    "heldOutContamination": 0
+  }
+}

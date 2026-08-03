@@ -1,0 +1,73 @@
+#!/usr/bin/env node
+
+import { createHash } from "node:crypto";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
+import {
+  CONTACT_OPERATIONS, DEFECT_TYPES, OBJECT_CHANGE_TYPES,
+  deriveBurdenRelation, deriveCoverage, deriveDiagnostic, deriveReframe, deriveTargetDisposition, evidenceMatches,
+} from "./lib/v27-derived-annotations.mjs";
+
+const [passArgument, gateArgument = "docs/calibration/v2.7/held-out-gates/gate-manifest.json"] = process.argv.slice(2);
+if (!passArgument) { console.error("Usage: node scripts/validate-v27-annotation-pass.mjs <pass.json> [gate.json]"); process.exit(1); }
+const assert = (condition, message) => { if (!condition) throw new Error(message); };
+const sha256 = (value) => createHash("sha256").update(value).digest("hex");
+const equal = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+const exactKeys = (value, expected, label) => { assert(value && typeof value === "object" && !Array.isArray(value), `${label} must be object`); assert(equal(Object.keys(value).sort(), [...expected].sort()), `${label} keys differ`); };
+
+function validateCoverage(move, coverage, label) {
+  exactKeys(coverage, ["targetObjectRelation", "objectChangeType", "objectEvidence", "targetScopeRelation", "scopeEvidence", "targetBurdenRelation", "burdenEvidence", "componentOperations", "relevantContraryMaterial", "contraryEvidence", "derivedTargetDisposition", "derivedTargetCoverage"], `${label}.coverage`);
+  for (const field of ["objectEvidence", "scopeEvidence", "burdenEvidence", "contraryEvidence"]) assert(evidenceMatches(move.sourceExcerpt, coverage[field]), `${label} ${field} offset mismatch`);
+  const expectedComponents = (move.targetPacket?.indispensableComponents ?? []).map((item) => item.id).sort(); const actualComponents = coverage.componentOperations.map((item) => item.componentId).sort(); const seen = new Set();
+  for (const item of coverage.componentOperations) { exactKeys(item, ["componentId", "operation", "evidence"], `${label}.componentOperation`); assert(!seen.has(item.componentId), `${label} duplicate component operation`); seen.add(item.componentId); assert(item.operation === null || CONTACT_OPERATIONS.includes(item.operation), `${label} invalid component operation`); assert((item.operation === null) === (item.evidence === null) && evidenceMatches(move.sourceExcerpt, item.evidence), `${label} component evidence invalid`); }
+  if (move.interactionMode === "constructive") {
+    assert(coverage.targetObjectRelation === "not-applicable" && coverage.targetScopeRelation === "not-applicable" && coverage.targetBurdenRelation === "not-applicable" && coverage.objectChangeType === null && coverage.objectEvidence === null && coverage.scopeEvidence === null && coverage.burdenEvidence === null && coverage.componentOperations.length === 0 && coverage.relevantContraryMaterial === null && coverage.contraryEvidence === null, `${label} constructive coverage invalid`);
+  } else {
+    if (coverage.targetObjectRelation === "changed") assert(OBJECT_CHANGE_TYPES.includes(coverage.objectChangeType) && coverage.objectEvidence !== null, `${label} changed-object evidence invalid`); else assert(coverage.targetObjectRelation === "same" && coverage.objectChangeType === null && coverage.objectEvidence === null, `${label} same-object primitive invalid`);
+    if (coverage.targetScopeRelation === "same") assert(coverage.scopeEvidence === null, `${label} same-scope evidence invalid`); else assert(["narrowed", "strengthened", "modality-shift"].includes(coverage.targetScopeRelation) && coverage.scopeEvidence !== null, `${label} changed-scope evidence invalid`);
+    if (coverage.targetBurdenRelation === "retained") assert(coverage.burdenEvidence === null, `${label} retained-burden evidence invalid`); else assert(["reassigned", "replaced"].includes(coverage.targetBurdenRelation) && coverage.burdenEvidence !== null, `${label} changed-burden evidence invalid`);
+    if (deriveTargetDisposition(move, coverage) === "substituted") assert(coverage.componentOperations.length === 0 && coverage.relevantContraryMaterial === false && coverage.contraryEvidence === null, `${label} substituted applicability invalid`);
+    else {
+      assert(equal(expectedComponents, actualComponents), `${label} component set mismatch`); const hasContact = coverage.componentOperations.some((item) => item.operation !== null); assert(typeof coverage.relevantContraryMaterial === "boolean", `${label} contrary-material flag invalid`);
+      if (hasContact) assert(coverage.relevantContraryMaterial === false && coverage.contraryEvidence === null, `${label} contact and contrary material conflict`); else assert((coverage.relevantContraryMaterial === true) === (coverage.contraryEvidence !== null), `${label} contrary evidence mismatch`);
+      if (coverage.targetScopeRelation !== "same") assert(coverage.componentOperations.some((item) => ["qualifies", "distinguishes"].includes(item.operation)), `${label} scope change lacks qualifying operation`);
+    }
+  }
+  assert(coverage.derivedTargetDisposition === deriveTargetDisposition(move, coverage) && coverage.derivedTargetCoverage === deriveCoverage(move, coverage), `${label} target derivation mismatch`);
+}
+
+function validateMechanismAndBurden(inventory, move, annotation, label) {
+  const diagnostic = annotation.diagnosticPrimitives;
+  exactKeys(diagnostic, ["applicability", "defectType", "defectObject", "defectEvidence", "impactMode", "impactEvidence", "derivedDiagnostic"], `${label}.diagnostic`);
+  assert(DEFECT_TYPES.includes(diagnostic.defectType) && evidenceMatches(move.sourceExcerpt, diagnostic.defectEvidence) && evidenceMatches(move.sourceExcerpt, diagnostic.impactEvidence), `${label} diagnostic evidence invalid`);
+  if (move.interactionMode === "constructive") assert(diagnostic.applicability === "not-applicable" && diagnostic.defectType === "none" && diagnostic.defectObject === null && diagnostic.defectEvidence === null && diagnostic.impactMode === "not-applicable" && diagnostic.impactEvidence === null, `${label} constructive diagnostic invalid`);
+  else if (diagnostic.defectType === "none") assert(diagnostic.applicability === "applicable" && diagnostic.defectObject === null && diagnostic.defectEvidence === null && diagnostic.impactMode === "none" && diagnostic.impactEvidence === null, `${label} no-defect diagnostic invalid`);
+  else {
+    assert(diagnostic.applicability === "applicable" && annotation.coveragePrimitives.derivedTargetDisposition === "preserved" && diagnostic.defectObject !== null && diagnostic.defectEvidence !== null, `${label} defect applicability/object invalid`);
+    if (diagnostic.defectObject.objectType === "target-packet") assert(diagnostic.defectObject.objectId === move.targetPacket.id, `${label} diagnostic packet lock invalid`);
+    else assert(diagnostic.defectObject.objectType === "target-component" && move.targetPacket.indispensableComponents.some((item) => item.id === diagnostic.defectObject.objectId), `${label} diagnostic component lock invalid`);
+    if (diagnostic.impactMode === "none") assert(diagnostic.impactEvidence === null, `${label} none impact evidence invalid`); else assert(["verdict", "inferential-consequence"].includes(diagnostic.impactMode) && diagnostic.impactEvidence !== null, `${label} impact evidence invalid`);
+  }
+  assert(diagnostic.derivedDiagnostic === deriveDiagnostic(move, diagnostic), `${label} diagnostic derivation mismatch`);
+  const reframe = annotation.reframePrimitives; exactKeys(reframe, ["malformedDemandExplained", "malformedDemandEvidence", "replacementDemandStated", "replacementDemandEvidence", "derivedReframe"], `${label}.reframe`);
+  assert(evidenceMatches(move.sourceExcerpt, reframe.malformedDemandEvidence) && evidenceMatches(move.sourceExcerpt, reframe.replacementDemandEvidence), `${label} reframe evidence invalid`); assert((reframe.malformedDemandExplained === false) === (reframe.malformedDemandEvidence === null) && (reframe.replacementDemandStated === false) === (reframe.replacementDemandEvidence === null) && reframe.derivedReframe === deriveReframe(reframe), `${label} reframe primitive/derivation invalid`);
+  const burden = annotation.burdenPrimitives; exactKeys(burden, ["contactedBridges", "derivedBurdenRelation"], `${label}.burden`); const contacted = new Set();
+  for (const item of burden.contactedBridges) { exactKeys(item, ["bridgeId", "contactMode"], `${label}.bridgeContact`); assert(!contacted.has(item.bridgeId) && move.burdenPacket.eligibleBridgeIds.includes(item.bridgeId) && ["supports", "attacks"].includes(item.contactMode), `${label} ineligible/duplicate bridge`); contacted.add(item.bridgeId); }
+  if (move.burdenPacket.primaryRouteId === null) assert(burden.contactedBridges.length === 0, `${label} null route has bridge contacts`); assert(burden.derivedBurdenRelation === deriveBurdenRelation(inventory, move, burden), `${label} burden derivation invalid`);
+}
+
+const [passText, gateText] = await Promise.all([readFile(path.resolve(passArgument), "utf8"), readFile(path.resolve(gateArgument), "utf8")]); const artifact = JSON.parse(passText); const gate = JSON.parse(gateText);
+const laneKey = artifact.lane === "dyadic" ? "dyadic" : artifact.lane === "multi-speaker" ? "multiSpeaker" : null; assert(laneKey, "invalid lane"); const lane = gate.lanes?.[laneKey]; assert(lane, "lane absent from gate"); const debate = lane.debates.find((item) => item.debateId === artifact.debateId); assert(debate, "annotation debate not preregistered");
+exactKeys(artifact, ["schemaVersion", "workflowVersion", "rubricVersion", "gateId", "lane", "debateId", "debateNumber", "pass", "model", "calibrationOnly", "completedAt", "isolation", "source", "annotations", "audit"], "pass");
+assert(artifact.schemaVersion === "2.7-single-annotation-pass" && artifact.workflowVersion === gate.workflowVersion && artifact.rubricVersion === gate.rubricVersion && artifact.gateId === lane.gateId && artifact.debateNumber === debate.number && ["A", "B"].includes(artifact.pass) && artifact.model === "5.6 Sol" && artifact.calibrationOnly === true, "pass identity mismatch");
+const laneDirectory = artifact.lane === "dyadic" ? "dyadic" : "multi-speaker";
+const expectedInputs = ["docs/assessment-workflow-v2.7.md", "docs/reassessment-rubric-v2.7.md", "docs/calibration/v2.7/annotation-pass-schema.json", "docs/calibration/v2.7/held-out-gates/gate-manifest.json", "docs/calibration/v2.7/development/annotation-manual.md", "docs/calibration/v2.7/development/orthogonal-target-diagnostic-examples.json", `docs/calibration/v2.7/held-out-gates/${laneDirectory}/inventories/${debate.debateId}.json`, `.assessment-cache/captions/${debate.videoId}/transcript.txt`, `.assessment-cache/captions/${debate.videoId}/events.json`, `.assessment-cache/captions/${debate.videoId}/manifest.json`];
+exactKeys(artifact.isolation, ["method", "allowedInputs", "prohibitedInputsConfirmed", "contaminationDetected", "statement"], "isolation"); assert(artifact.isolation.method === "fresh-isolated-v2.7-single-schema-annotation-task" && artifact.isolation.prohibitedInputsConfirmed === true && artifact.isolation.contaminationDetected === false && equal([...artifact.isolation.allowedInputs].sort(), [...expectedInputs].sort()) && artifact.isolation.statement.trim().length >= 40, "pass isolation/allowlist failed");
+exactKeys(artifact.source, ["videoId", "inventoryPath", "inventorySha256", "transcriptSha256", "eventsSha256", "manifestSha256", "gateManifestSha256", "workflowSha256", "rubricSha256", "schemaSha256", "developmentManualSha256", "developmentExamplesSha256", "limitations"], "source"); assert(artifact.source.videoId === debate.videoId && artifact.source.inventoryPath === expectedInputs[6], "pass source identity mismatch");
+const mapping = { inventorySha256: expectedInputs[6], transcriptSha256: expectedInputs[7], eventsSha256: expectedInputs[8], manifestSha256: expectedInputs[9], gateManifestSha256: expectedInputs[3], workflowSha256: expectedInputs[0], rubricSha256: expectedInputs[1], schemaSha256: expectedInputs[2], developmentManualSha256: expectedInputs[4], developmentExamplesSha256: expectedInputs[5] }; const loaded = {};
+for (const [field, file] of Object.entries(mapping)) { loaded[field] = await readFile(path.resolve(file), "utf8"); assert(artifact.source[field] === sha256(loaded[field]), `${field} mismatch`); }
+const inventory = JSON.parse(loaded.inventorySha256); const byId = new Map(inventory.moves.map((move) => [move.moveId, move])); const seen = new Set(); assert(artifact.annotations.length === inventory.moves.length, "pass move count differs from inventory");
+for (const [index, annotation] of artifact.annotations.entries()) { const label = `annotations[${index}]`; exactKeys(annotation, ["moveId", "interactionMode", "targetPacketId", "primaryBurdenRouteId", "coveragePrimitives", "diagnosticPrimitives", "reframePrimitives", "burdenPrimitives", "coverageRationale", "mechanismRationale", "burdenRationale", "confidence"], label); assert(!seen.has(annotation.moveId), `${label} duplicate move`); seen.add(annotation.moveId); const move = byId.get(annotation.moveId); assert(move, `${label} unknown move`); assert(annotation.interactionMode === move.interactionMode && annotation.targetPacketId === (move.targetPacket?.id ?? null) && annotation.primaryBurdenRouteId === move.burdenPacket.primaryRouteId, `${label} inventory lock changed`); validateCoverage(move, annotation.coveragePrimitives, label); validateMechanismAndBurden(inventory, move, annotation, label); assert(annotation.coverageRationale.trim().length >= 40 && annotation.mechanismRationale.trim().length >= 40 && annotation.burdenRationale.trim().length >= 40 && ["high", "medium", "low"].includes(annotation.confidence), `${label} rationale/confidence invalid`); }
+assert(seen.size === byId.size, "not all moves annotated"); exactKeys(artifact.audit, ["moveCount", "allInventoryLocksCopied", "evidenceOffsetErrors", "targetAxisApplicabilityErrors", "diagnosticObjectErrors", "derivationMismatches", "scoreFieldsPresent", "allMovesAnnotatedOnce"], "audit");
+assert(artifact.audit.moveCount === inventory.moves.length && artifact.audit.allInventoryLocksCopied === true && artifact.audit.evidenceOffsetErrors === 0 && artifact.audit.targetAxisApplicabilityErrors === 0 && artifact.audit.diagnosticObjectErrors === 0 && artifact.audit.derivationMismatches === 0 && artifact.audit.scoreFieldsPresent === false && artifact.audit.allMovesAnnotatedOnce === true, "pass audit failed");
+console.log(JSON.stringify({ status: "passed", lane: artifact.lane, debateId: artifact.debateId, pass: artifact.pass, moveCount: artifact.annotations.length, passSha256: sha256(passText) }, null, 2));

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v2.7-orthogonal-target-diagnostic-development",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "workflowVersion", "rubricVersion", "sourceGateId", "heldOutEligible", "retiredDebates", "cases", "audit"],
+  "properties": {
+    "schemaVersion": {"const": "2.7-orthogonal-target-diagnostic-development"},
+    "workflowVersion": {"const": "Slugfester Reassessment Workflow v2.7"},
+    "rubricVersion": {"const": "Slugfester Reassessment Rubric v2.7"},
+    "sourceGateId": {"const": "v2.6-held-out-target-contact-gate"},
+    "heldOutEligible": {"const": false},
+    "retiredDebates": {"type": "array", "minItems": 3, "maxItems": 3, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "cases": {"type": "array", "minItems": 15, "maxItems": 15, "items": {"$ref": "#/$defs/case"}},
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["caseCount", "sourceDisagreementCounts", "targetAxisEvidenceErrors", "componentEvidenceErrors", "diagnosticObjectErrors", "diagnosticEvidenceErrors", "derivationErrors", "stableContactRegressions", "heldOutContamination"],
+      "properties": {
+        "caseCount": {"const": 15},
+        "sourceDisagreementCounts": {"type": "object"},
+        "targetAxisEvidenceErrors": {"const": 0},
+        "componentEvidenceErrors": {"const": 0},
+        "diagnosticObjectErrors": {"const": 0},
+        "diagnosticEvidenceErrors": {"const": 0},
+        "derivationErrors": {"const": 0},
+        "stableContactRegressions": {"const": 0},
+        "heldOutContamination": {"const": 0}
+      }
+    }
+  },
+  "$defs": {
+    "digest": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "span": {"type": "object", "additionalProperties": false, "required": ["startMs", "endMs"], "properties": {"startMs": {"type": "integer", "minimum": 0}, "endMs": {"type": "integer", "minimum": 1}}},
+    "evidence": {"type": ["object", "null"], "additionalProperties": false, "required": ["text", "startChar", "endChar"], "properties": {"text": {"type": "string", "minLength": 1}, "startChar": {"type": "integer", "minimum": 0}, "endChar": {"type": "integer", "minimum": 1}}},
+    "component": {"type": "object", "additionalProperties": false, "required": ["id", "text", "kind", "dependsOn"], "properties": {"id": {"type": "string", "minLength": 1}, "text": {"type": "string", "minLength": 5}, "kind": {"enum": ["fact-premise", "rule-comparison", "inference", "burden", "modality", "conclusion"]}, "dependsOn": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}}}},
+    "target": {"type": ["object", "null"], "additionalProperties": false, "required": ["id", "targetSpeaker", "sourceSpan", "sourceExcerpt", "sourceExcerptSha256", "claim", "targetRelationToMove", "interveningOpponentClaim", "exceptionRationale", "indispensableComponents", "selectionRationale"], "properties": {"id": {"type": "string", "minLength": 1}, "targetSpeaker": {"type": "string", "minLength": 1}, "sourceSpan": {"$ref": "#/$defs/span"}, "sourceExcerpt": {"type": "string", "minLength": 20}, "sourceExcerptSha256": {"$ref": "#/$defs/digest"}, "claim": {"type": "string", "minLength": 10}, "targetRelationToMove": {"enum": ["immediate-opponent-claim", "earlier-load-bearing-claim"]}, "interveningOpponentClaim": {"type": "boolean"}, "exceptionRationale": {"type": ["string", "null"]}, "indispensableComponents": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/component"}}, "selectionRationale": {"type": "string", "minLength": 30}}},
+    "operation": {"type": "object", "additionalProperties": false, "required": ["componentId", "operation", "evidence"], "properties": {"componentId": {"type": "string", "minLength": 1}, "operation": {"type": ["string", "null"], "enum": [null, "accepts", "denies", "distinguishes", "qualifies", "explains", "undermines"]}, "evidence": {"$ref": "#/$defs/evidence"}}},
+    "coverage": {"type": "object", "additionalProperties": false, "required": ["targetObjectRelation", "objectChangeType", "objectEvidence", "targetScopeRelation", "scopeEvidence", "targetBurdenRelation", "burdenEvidence", "componentOperations", "relevantContraryMaterial", "contraryEvidence", "derivedTargetDisposition", "derivedTargetCoverage"], "properties": {"targetObjectRelation": {"enum": ["not-applicable", "same", "changed"]}, "objectChangeType": {"type": ["string", "null"], "enum": [null, "subject", "referent", "comparison-class", "baseline", "question-type"]}, "objectEvidence": {"$ref": "#/$defs/evidence"}, "targetScopeRelation": {"enum": ["not-applicable", "same", "narrowed", "strengthened", "modality-shift"]}, "scopeEvidence": {"$ref": "#/$defs/evidence"}, "targetBurdenRelation": {"enum": ["not-applicable", "retained", "reassigned", "replaced"]}, "burdenEvidence": {"$ref": "#/$defs/evidence"}, "componentOperations": {"type": "array", "items": {"$ref": "#/$defs/operation"}}, "relevantContraryMaterial": {"type": ["boolean", "null"]}, "contraryEvidence": {"$ref": "#/$defs/evidence"}, "derivedTargetDisposition": {"enum": ["not-applicable", "preserved", "substituted"]}, "derivedTargetCoverage": {"enum": ["not-applicable", "full", "partial", "relevant-nonanswer", "nonanswer", "substitution"]}}},
+    "diagnosticObject": {"type": ["object", "null"], "additionalProperties": false, "required": ["objectType", "objectId"], "properties": {"objectType": {"enum": ["target-packet", "target-component"]}, "objectId": {"type": "string", "minLength": 1}}},
+    "diagnostic": {"type": "object", "additionalProperties": false, "required": ["applicability", "defectType", "defectObject", "defectEvidence", "impactMode", "impactEvidence", "derivedDiagnostic"], "properties": {"applicability": {"enum": ["not-applicable", "applicable"]}, "defectType": {"enum": ["none", "contradiction", "missing-premise", "ambiguity", "invalid-inference", "unsupported-comparison", "irrelevance", "evidential-insufficiency", "scope-mismatch", "attribution-error"]}, "defectObject": {"$ref": "#/$defs/diagnosticObject"}, "defectEvidence": {"$ref": "#/$defs/evidence"}, "impactMode": {"enum": ["not-applicable", "none", "verdict", "inferential-consequence"]}, "impactEvidence": {"$ref": "#/$defs/evidence"}, "derivedDiagnostic": {"type": "boolean"}}},
+    "case": {"type": "object", "additionalProperties": false, "required": ["caseId", "debateId", "debateNumber", "moveId", "speaker", "interactionMode", "sourceSpan", "sourceExcerpt", "sourceExcerptSha256", "targetPacket", "provenance", "v26Disagreements", "finalCoverage", "finalDiagnostic", "rationale"], "properties": {"caseId": {"type": "string", "minLength": 1}, "debateId": {"type": "string", "minLength": 1}, "debateNumber": {"type": "string", "minLength": 1}, "moveId": {"type": "string", "minLength": 1}, "speaker": {"type": "string", "minLength": 1}, "interactionMode": {"enum": ["constructive", "responsive"]}, "sourceSpan": {"$ref": "#/$defs/span"}, "sourceExcerpt": {"type": "string", "minLength": 30}, "sourceExcerptSha256": {"$ref": "#/$defs/digest"}, "targetPacket": {"$ref": "#/$defs/target"}, "provenance": {"type": "object"}, "v26Disagreements": {"type": "object"}, "finalCoverage": {"$ref": "#/$defs/coverage"}, "finalDiagnostic": {"$ref": "#/$defs/diagnostic"}, "rationale": {"type": "string", "minLength": 60}}}
+  }
+}
