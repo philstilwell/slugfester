@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-response-classification-pass-v2.3",
+  "title": "Slugfester v2.3 response-classification pass",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "workflowVersion", "rubricVersion", "gateId", "debateId", "debateNumber", "pass", "assessmentModel", "calibrationOnly", "completedAt", "isolation", "source", "classifications", "audit"],
+  "properties": {
+    "schemaVersion": {"const": "2.3-response-classification-pass"},
+    "workflowVersion": {"const": "Slugfester Reassessment Workflow v2.3"},
+    "rubricVersion": {"const": "Slugfester Reassessment Rubric v2.3"},
+    "gateId": {"const": "v2.3-three-debate-classification-gate"},
+    "debateId": {"type": "string", "minLength": 1},
+    "debateNumber": {"type": "string", "minLength": 1},
+    "pass": {"enum": ["A", "B"]},
+    "assessmentModel": {"const": "5.6 Sol"},
+    "calibrationOnly": {"const": true},
+    "completedAt": {"type": "string", "format": "date-time"},
+    "isolation": {"$ref": "#/$defs/isolation"},
+    "source": {"$ref": "#/$defs/source"},
+    "classifications": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/classification"}},
+    "audit": {"type": "object", "additionalProperties": false, "required": ["moveCount", "scoreFieldsPresent", "allMovesClassifiedOnce"], "properties": {"moveCount": {"type": "integer", "minimum": 1}, "scoreFieldsPresent": {"const": false}, "allMovesClassifiedOnce": {"const": true}}}
+  },
+  "$defs": {
+    "digest": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "responseClass": {"enum": ["constructive-opening", "full-answer", "partial-answer", "diagnostic-defeat", "relevant-counterargument", "justified-reframe", "weaker-substitution"]},
+    "isolation": {"type": "object", "additionalProperties": false, "required": ["method", "allowedInputs", "prohibitedInputsConfirmed", "contaminationDetected", "statement"], "properties": {"method": {"const": "fresh-isolated-classification-task"}, "allowedInputs": {"type": "array", "minItems": 8, "items": {"type": "string"}, "uniqueItems": true}, "prohibitedInputsConfirmed": {"const": true}, "contaminationDetected": {"const": false}, "statement": {"type": "string", "minLength": 40}}},
+    "source": {"type": "object", "additionalProperties": false, "required": ["videoId", "inventoryPath", "inventorySha256", "transcriptSha256", "eventsSha256", "captionManifestSha256", "audioVerificationPath", "audioVerificationSha256", "gateManifestSha256", "workflowSha256", "rubricSha256", "schemaSha256", "limitations"], "properties": {"videoId": {"type": "string", "minLength": 1}, "inventoryPath": {"type": "string", "minLength": 1}, "inventorySha256": {"$ref": "#/$defs/digest"}, "transcriptSha256": {"$ref": "#/$defs/digest"}, "eventsSha256": {"$ref": "#/$defs/digest"}, "captionManifestSha256": {"$ref": "#/$defs/digest"}, "audioVerificationPath": {"type": "string", "minLength": 1}, "audioVerificationSha256": {"$ref": "#/$defs/digest"}, "gateManifestSha256": {"$ref": "#/$defs/digest"}, "workflowSha256": {"$ref": "#/$defs/digest"}, "rubricSha256": {"$ref": "#/$defs/digest"}, "schemaSha256": {"$ref": "#/$defs/digest"}, "limitations": {"type": "string", "minLength": 1}}},
+    "classification": {"type": "object", "additionalProperties": false, "required": ["moveId", "sectionId", "side", "targetMoveIds", "responseClass", "compoundTarget", "indispensableComponents", "decisiveTargetSummary", "rationale", "confidence"], "properties": {"moveId": {"type": "string", "minLength": 1}, "sectionId": {"type": "string", "minLength": 1}, "side": {"enum": ["pro", "con"]}, "targetMoveIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}, "responseClass": {"$ref": "#/$defs/responseClass"}, "compoundTarget": {"type": "boolean"}, "indispensableComponents": {"type": "array", "items": {"type": "string", "minLength": 3}, "uniqueItems": true}, "decisiveTargetSummary": {"type": "string", "minLength": 10}, "rationale": {"type": "string", "minLength": 40}, "confidence": {"enum": ["high", "medium", "low"]}}}
+  }
+}

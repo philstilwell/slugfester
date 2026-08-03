@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "2.3-three-debate-gate",
+  "gateId": "v2.3-three-debate-classification-gate",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.3",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.3",
+  "calibrationOnly": true,
+  "preregistration": {
+    "lockedAt": "2026-08-03T01:00:00Z",
+    "lockedBy": "5.6 Sol workflow orchestrator",
+    "comparisonGate": "docs/calibration/v2.2/complete-gate/gate-manifest.json",
+    "comparisonReliability": "docs/calibration/v2.2/complete-gate/reliability-analysis.json",
+    "controlledVariables": ["debate sample", "full transcripts", "audio-verification artifacts", "burden map", "section definitions", "section weights", "move IDs", "move sides", "move importance", "source spans", "dimension weights", "numerical disagreement thresholds", "numerical review thresholds"],
+    "changedVariables": ["response classification occurs in a separate blind two-pass stage", "all class disagreements are adjudicated before scoring", "one response class is locked for both scorers", "responsiveness uses mutually exclusive class ranges", "calibration and charity are separately rated and mechanically averaged", "burden-adjustment exclusion audit is expanded"],
+    "legacyAssessmentEmbargo": "Classifiers and scorers may not access production assessments, v2.1 or v2.2 scores, prior response classes, adjudications, reliability results, critiques, tags, Overall Commentary, or AI Extensions. Numerical scorers may access only the final v2.3 response lock, never raw classifier passes."
+  },
+  "sample": {
+    "initialCompleteDebates": 3,
+    "debates": [
+      {"number": "05", "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014", "videoId": "OL8LREmbDi0", "stratum": "lopsided asymmetric burden", "sourceInventory": "docs/calibration/v2.2/complete-gate/inventories/dillahunty-ten-bruggencate-reasonable-god-2014.json", "sourceAudioVerification": "docs/calibration/v2.2/complete-gate/audio-verification/dillahunty-ten-bruggencate-reasonable-god-2014.json"},
+      {"number": "81", "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020", "videoId": "YhqFdIb13bk", "stratum": "close analytic", "sourceInventory": "docs/calibration/v2.2/complete-gate/inventories/rasmussen-oppy-ultimate-reality-naturalism-2020.json", "sourceAudioVerification": "docs/calibration/v2.2/complete-gate/audio-verification/rasmussen-oppy-ultimate-reality-naturalism-2020.json"},
+      {"number": "95", "debateId": "craig-frazier-goff-folley-god-reality-2026", "videoId": "ZVMMO_kgtDQ", "stratum": "multi-person pluralist", "sourceInventory": "docs/calibration/v2.2/complete-gate/inventories/craig-frazier-goff-folley-god-reality-2026.json", "sourceAudioVerification": "docs/calibration/v2.2/complete-gate/audio-verification/craig-frazier-goff-folley-god-reality-2026.json"}
+    ]
+  },
+  "executionProtocol": {
+    "model": "5.6 Sol",
+    "sourceReuse": "Mechanically copy v2.2 inventories, retain source-QA corrections, and revalidate every transcript and raw audio hash; no new paid call is planned.",
+    "classificationSchema": "docs/calibration/v2.3/response-classification-schema.json",
+    "scoringSchema": "docs/calibration/v2.3/scoring-pass-schema.json",
+    "classification": "Two fresh isolated model tasks classify every move without scores or prior classes; a third fresh task adjudicates every class or target disagreement.",
+    "responseLock": "Exactly one class and target set per move is frozen before scoring and supplied identically to both scorers.",
+    "scoring": "Two different fresh isolated model tasks numerically score every move using the response lock and no raw classifier pass or prior score.",
+    "adjudication": "A fresh task adjudicates only threshold-triggered numerical disagreements; it cannot change the locked response class.",
+    "stopRule": "Failure of classification or numerical reliability blocks composition and expansion."
+  },
+  "hardGates": {
+    "fullTranscriptAcquisitionRateMinimum": 1,
+    "mediumAndLowMoveAudioVerificationRateMinimum": 1,
+    "unresolvedMediumOrLowSpeakerAttributionsMaximum": 0,
+    "singleClassificationSchemaRequired": true,
+    "singleScoringPassSchemaRequired": true,
+    "classificationIsolationRequired": true,
+    "scoringIsolationRequired": true,
+    "unresolvedClassificationDisagreementsMaximum": 0,
+    "movesMissingLockedClassMaximum": 0,
+    "burdenAdjustmentEligibilityViolationsMaximum": 0,
+    "missingRequiredScoreAdjudicationsMaximum": 0,
+    "calculatorArtifactMismatchesMaximum": 0,
+    "calibrationIsolationRequired": true,
+    "completeArgumentInventoryRequired": true,
+    "completeScorecardRequired": true,
+    "aiExtensionNoveltyMapCompletionRateMinimum": 1,
+    "renderingAuditRequired": true
+  },
+  "classificationGates": {
+    "exactClassDisagreementRateMaximum": 0.15,
+    "exactClassAgreementMinimum": 0.85,
+    "cohensKappaMinimum": 0.75
+  },
+  "reviewGates": {
+    "meanAbsoluteDimensionDeltaMaximum": 5,
+    "moveAdjudicationRateMaximum": 0.25,
+    "overallScorePassDeltaMaximum": 5,
+    "winnerFlipReviewThreshold": 0.2,
+    "rankCorrelationReviewThreshold": 0.9
+  },
+  "readinessRule": {
+    "initialGate": "Every classification, numerical, and hard gate must pass; thresholds remain frozen after preregistration.",
+    "expandedGate": "A pass authorizes only a separately preregistered ten-complete-debate v2.3 gate.",
+    "corpusWide": "All 195 debates remain unauthorized until the ten-debate gate passes and the editor explicitly approves production promotion."
+  },
+  "decision": {"initialGate": "pending", "expandedGate": "not-authorized", "corpusWide": "not-ready"}
+}
