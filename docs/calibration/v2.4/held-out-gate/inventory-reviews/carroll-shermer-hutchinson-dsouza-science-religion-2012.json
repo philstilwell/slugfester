@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "2.4-inventory-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.4",
+  "gateId": "v2.4-held-out-orthogonal-annotation-gate",
+  "debateId": "carroll-shermer-hutchinson-dsouza-science-religion-2012",
+  "debateNumber": "35",
+  "reviewedAt": "2026-08-03T02:35:26Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-independent-v2.4-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "statement": "This fresh review used only the v2.4 workflow, exact schemas and gate manifest, this debate's draft inventory and local caption chain, and the two validators; no legacy, development, other-debate, score, classification, or annotation material was available."
+  },
+  "source": {
+    "draftInventoryPath": "docs/calibration/v2.4/held-out-gate/draft-inventories/carroll-shermer-hutchinson-dsouza-science-religion-2012.json",
+    "draftInventorySha256": "b50b7df7ee3f104dc9d247ac4bce5bd3184227feba4d99f56066163242ee2ed6",
+    "finalInventoryPath": "docs/calibration/v2.4/held-out-gate/inventories/carroll-shermer-hutchinson-dsouza-science-religion-2012.json",
+    "finalInventorySha256": "f01395f4c9bb7961cd7534ccbce1ee3e74d11e6e6312c2906543614ddc159617",
+    "transcriptSha256": "51e43ff9453eda91fbb7a6816c1adbb2c3b7e8361f31fd7f2568c6de34251d16",
+    "eventsSha256": "eb553642477116561edeb0a6f946fd31b3f9cd0062ab8f9d8fe683add1a76aee",
+    "manifestSha256": "028f8fe555ce43955d69694bba626e04bc4997d1402451a21525dc657a832dde",
+    "workflowSha256": "46cd91668cb5f7c8c699fc42898be2cf180d86f8a26f7463649b75250f378b20",
+    "inventorySchemaSha256": "312f6414da67514da6fb36fcd5a8e8a3f3afa01b9f6f0b0310a7f92ffcf4029e",
+    "gateManifestSha256": "8ddbf22f1e68a085dc962b53afb2181076608aa5704925c76a21f6313d2c5ff2"
+  },
+  "findings": [
+    {
+      "findingId": "35-F001",
+      "category": "sampling",
+      "moveId": "35-M04",
+      "description": "The draft selected the later 18:29 scope-and-evidence passage as the second con constructive even though the distinct, load-bearing 18:05 scientism self-validation argument qualified earlier.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "35-F002",
+      "category": "atomicity",
+      "moveId": "35-M09",
+      "description": "The draft move span and excerpt extended into a caption event that combines the end of Shermer's deterministic-purpose answer with D'Souza's next follow-up question.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "35-F003",
+      "category": "source-fidelity",
+      "moveId": "35-M10",
+      "description": "The draft response excerpt began after Shermer's words 'I don't think,' leaving a surface reading that reverses his statement about whether science can measure the unmeasurable.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "35-F004",
+      "category": "target-packet",
+      "moveId": "35-M10",
+      "description": "The draft target span reached into the shared caption event containing Shermer's answer, so it did not cleanly isolate D'Souza's prior immaterial-evidence target.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "35-F005",
+      "category": "target-packet",
+      "moveId": "35-M12",
+      "description": "The draft target span continued through the event that begins Shermer's next cross-examination question rather than ending with D'Souza's human-and-experiential evidence claim.",
+      "disposition": "repaired"
+    }
+  ],
+  "repairs": [
+    {
+      "findingId": "35-F001",
+      "change": "Replaced 35-M04 with the earlier 18:05-18:26 scientism self-validation act, updated its exact excerpt and hash, retained only CON-SCOPE-AND-EVIDENCE, and rewrote its selection rationale."
+    },
+    {
+      "findingId": "35-F002",
+      "change": "Shortened 35-M09 to end at 5239440 ms with Shermer's complete deterministic account through evolved goals and experienced meaning, then recomputed the excerpt hash."
+    },
+    {
+      "findingId": "35-F003",
+      "change": "Replaced 35-M10's misleading fragment with the exact 5303679-5319000 ms passage stating that an entity outside spacetime is inaccessible but physical intervention would be measurable, then recomputed its hash."
+    },
+    {
+      "findingId": "35-F004",
+      "change": "Tightened 35-T10 to D'Souza alone at 5284639-5293600 ms, retained the exact material-being and immaterial-evidence claim, and recomputed the target excerpt hash."
+    },
+    {
+      "findingId": "35-F005",
+      "change": "Tightened 35-T12 to 5013560-5024719 ms, shortened the exact excerpt before Shermer's question, aligned the claim and second indispensable component, and recomputed the target hash."
+    }
+  ],
+  "audit": {
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "burdenViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "finalInventoryValidatorPassed": true
+  }
+}

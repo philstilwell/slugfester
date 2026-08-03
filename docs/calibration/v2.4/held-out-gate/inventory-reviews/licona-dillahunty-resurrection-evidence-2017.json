@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "2.4-inventory-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.4",
+  "gateId": "v2.4-held-out-orthogonal-annotation-gate",
+  "debateId": "licona-dillahunty-resurrection-evidence-2017",
+  "debateNumber": "150",
+  "reviewedAt": "2026-08-03T02:33:31Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-independent-v2.4-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "statement": "Fresh independent review used only the authorized v2.4 contracts, preregistered gate manifest, Debate 150 draft inventory, local caption chain, and validators; no legacy assessment, development example, annotation pass, score, or other debate was available."
+  },
+  "source": {
+    "draftInventoryPath": "docs/calibration/v2.4/held-out-gate/draft-inventories/licona-dillahunty-resurrection-evidence-2017.json",
+    "draftInventorySha256": "0c2253d7ee65c5ced813d517ebb62e8200b8e916c01830808eeef67fa54685e0",
+    "finalInventoryPath": "docs/calibration/v2.4/held-out-gate/inventories/licona-dillahunty-resurrection-evidence-2017.json",
+    "finalInventorySha256": "0d529de5c9d6093d1268031e097b02d5e5ff7f2b8229da033d629e80bca45206",
+    "transcriptSha256": "f24ccb20690144ccfcecff41f4b274f6d9f285d10f7d190cdb998398c4554fbd",
+    "eventsSha256": "a9e6767e0f7325793049c7af2483841d23af4bbcd2766d6bd8789e5cf4e0aa44",
+    "manifestSha256": "b9df8f56313a43e7c141abb5eee8d05d4005283d956123ff7b7fa78f6a7a0a50",
+    "workflowSha256": "46cd91668cb5f7c8c699fc42898be2cf180d86f8a26f7463649b75250f378b20",
+    "inventorySchemaSha256": "312f6414da67514da6fb36fcd5a8e8a3f3afa01b9f6f0b0310a7f92ffcf4029e",
+    "gateManifestSha256": "8ddbf22f1e68a085dc962b53afb2181076608aa5704925c76a21f6313d2c5ff2"
+  },
+  "findings": [
+    {
+      "findingId": "D150-REVIEW-001",
+      "category": "sampling",
+      "moveId": "D150-M11",
+      "description": "The draft incorrectly skipped Dillahunty's 45-word single-speaker response beginning at 01:33:06, even though it was the earliest qualifying responsive act in chronological quarter four.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "D150-REVIEW-002",
+      "category": "source-fidelity",
+      "moveId": null,
+      "description": "After repair, every move and target excerpt is an exact normalized caption substring within its locked span, and every excerpt and caption-chain digest matches its source.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "D150-REVIEW-003",
+      "category": "atomicity",
+      "moveId": null,
+      "description": "After repair, all twelve selected moves contain one speaker's one primary argumentative act; proportional boundaries isolate turns where caption events straddle a speaker handoff.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "D150-REVIEW-004",
+      "category": "target-packet",
+      "moveId": null,
+      "description": "All eight responsive moves target the strongest live prior opposing claim, use exact prior excerpts, and lock only components indispensable to that claim's success.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "D150-REVIEW-005",
+      "category": "burden",
+      "moveId": null,
+      "description": "The four burden definitions and observable success criteria track the two adopted pro burdens and two adopted skeptical burdens, and every move references an applicable prelocked burden ID.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "D150-REVIEW-006",
+      "category": "speaker-attribution",
+      "moveId": null,
+      "description": "All selected acts remain high-confidence attributions from the announced formal turn structure and unambiguous rebuttal or cross-examination handoffs; no medium- or low-confidence act remains.",
+      "disposition": "not-a-violation"
+    }
+  ],
+  "repairs": [
+    {
+      "findingId": "D150-REVIEW-001",
+      "change": "Replaced draft M11 with Dillahunty's earlier 01:33:06 challenge and its exact target packet, moved Licona's next qualifying corroboration answer into M12 with renumbered target components, removed the later Paul question from the sample, updated the exclusion log, and changed the final side counts from 7 pro/5 con to 6 pro/6 con."
+    }
+  ],
+  "audit": {
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "burdenViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "finalInventoryValidatorPassed": true
+  }
+}

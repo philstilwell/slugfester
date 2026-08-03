@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "2.4-inventory-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.4",
+  "gateId": "v2.4-held-out-orthogonal-annotation-gate",
+  "debateId": "huemer-oppy-souls-personal-identity-2022",
+  "debateNumber": "190",
+  "reviewedAt": "2026-08-03T02:44:44Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-independent-v2.4-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "statement": "A fresh independent task reviewed only the locked v2.4 contracts, preregistered manifest, draft inventory, full local transcript chain, and exact validators; no legacy assessment, development example, annotation pass, score, or other debate was available."
+  },
+  "source": {
+    "draftInventoryPath": "docs/calibration/v2.4/held-out-gate/draft-inventories/huemer-oppy-souls-personal-identity-2022.json",
+    "draftInventorySha256": "af417f25fe691578a714e5db51ce65e6f167ac038e224d5a2077bb44877a91ea",
+    "finalInventoryPath": "docs/calibration/v2.4/held-out-gate/inventories/huemer-oppy-souls-personal-identity-2022.json",
+    "finalInventorySha256": "384d91fbd0fd2727595483e4f08821eff2d6c6e8bbe5d5501fbd3502b88c8e52",
+    "transcriptSha256": "8ad124154675eef151672bd438520af0a514ddea61f822ee18534959957cee3d",
+    "eventsSha256": "fc752494e233eff522021e36dcba0a3f2efdab7feab46649cd356d155d974272",
+    "manifestSha256": "29f9d3bd89a96dd9b8e8654d2f7aa2f8ead528526fefa2cbc4f2b5e6dd7b64de",
+    "workflowSha256": "46cd91668cb5f7c8c699fc42898be2cf180d86f8a26f7463649b75250f378b20",
+    "inventorySchemaSha256": "312f6414da67514da6fb36fcd5a8e8a3f3afa01b9f6f0b0310a7f92ffcf4029e",
+    "gateManifestSha256": "8ddbf22f1e68a085dc962b53afb2181076608aa5704925c76a21f6313d2c5ff2"
+  },
+  "findings": [
+    {
+      "findingId": "D190-RF01",
+      "category": "sampling",
+      "moveId": "D190-M03",
+      "description": "The draft selected Oppy's 00:20:31 scale-autonomy argument as his second constructive even though his 00:13:09 physical-state answer to the Mary case is an earlier load-bearing constructive act.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "D190-RF02",
+      "category": "sampling",
+      "moveId": "D190-M06",
+      "description": "The draft used Huemer's 00:38:02 reply as the second first-quarter response, but Oppy's distinct 00:37:30 claim that organism-level physical states can bear representational content qualifies earlier.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "D190-RF03",
+      "category": "burden",
+      "moveId": null,
+      "description": "The draft assigned probability, identity, and finite-history objections to CON-BRAIN-DEPENDENCE even when the selected acts contained no brain-dependence premise, and it lacked a con burden for the independent recurrence and identity bridge.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "D190-RF04",
+      "category": "source-fidelity",
+      "moveId": "D190-M08",
+      "description": "The draft excerpt ended while merely raising whether a recurring office counts as the same office, but its rationale attributed Huemer's later conclusion that office identity may be semantic while future personal identity is not verbal.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "D190-RF05",
+      "category": "sampling",
+      "moveId": "D190-M09",
+      "description": "The draft labeled the 01:16:57 and 01:17:32 acts as third-quarter selections, although the exact interval after the fourth constructive through the last substantive act places the third-quarter boundary at 01:19:24.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "D190-RF06",
+      "category": "sampling",
+      "moveId": "D190-M08",
+      "description": "The qualifying 00:59:42 con follow-up precedes the selected pro response, but the draft did not log that it was skipped to enforce the preregistered minimum of four total moves per side.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "D190-RF07",
+      "category": "sampling",
+      "moveId": "D190-M12",
+      "description": "The draft's final response targeted whether infinite value destroys consequentialism, a downstream ethical issue rather than a load-bearing soul or survival component, while a later response directly addressed whether physical recurrence remains possible after heat death.",
+      "disposition": "repaired"
+    }
+  ],
+  "repairs": [
+    {
+      "findingId": "D190-RF01",
+      "change": "Replaced D190-M03 with Oppy's exact 00:13:09-00:13:43 constructive act, recomputed its excerpt hash, and tied it to CON-ORGANISM-IDENTITY."
+    },
+    {
+      "findingId": "D190-RF02",
+      "change": "Replaced D190-M06 with Oppy's exact 00:37:30-00:38:00 response and rebuilt its target packet around Huemer's intrinsic-aboutness claim."
+    },
+    {
+      "findingId": "D190-RF03",
+      "change": "Added CON-NO-SURVIVAL-BRIDGE with observable success criteria and remapped the con probability, modal, and future-recurrence attacks to it, leaving CON-BRAIN-DEPENDENCE only on the brain-dependent act."
+    },
+    {
+      "findingId": "D190-RF04",
+      "change": "Moved D190-M08 to the exact 01:00:39-01:01:02 span containing Huemer's semantic-office versus nonverbal-person distinction, then recomputed the excerpt hash and aligned the rationale."
+    },
+    {
+      "findingId": "D190-RF05",
+      "change": "Locked quarter boundaries at 00:56:43, 01:19:24, and 01:42:05; replaced D190-M09 and D190-M10 with the earliest qualifying 01:19:30 and 01:20:26 acts and rebuilt both target packets."
+    },
+    {
+      "findingId": "D190-RF06",
+      "change": "Logged the 00:59:42 qualifying con follow-up as skipped solely for the four-move side floor and stated that exception explicitly in the final chronological selection statement."
+    },
+    {
+      "findingId": "D190-RF07",
+      "change": "Replaced D190-M12 with Oppy's exact 02:02:06 response to Huemer's proton-regeneration possibility, rebuilt the indispensable components, remapped the burden, and logged the 02:01:03 ethical reply as excluded."
+    }
+  ],
+  "audit": {
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "burdenViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "finalInventoryValidatorPassed": true
+  }
+}
