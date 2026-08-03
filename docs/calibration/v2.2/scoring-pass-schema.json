@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-scoring-pass-v2.2",
+  "title": "Slugfester v2.2 scoring pass",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "workflowVersion", "rubricVersion", "gateId", "debateId", "debateNumber", "pass", "assessmentModel", "calibrationOnly", "completedAt", "isolation", "source", "dimensionWeights", "moveScores", "sectionScores", "burdenCompletionAdjustment", "overall", "calculationAudit"],
+  "properties": {
+    "schemaVersion": {"const": "2.2-scoring-pass"},
+    "workflowVersion": {"const": "Slugfester Reassessment Workflow v2.2"},
+    "rubricVersion": {"const": "Slugfester Reassessment Rubric v2.2"},
+    "gateId": {"const": "v2.2-three-debate-remediation-gate"},
+    "debateId": {"type": "string", "minLength": 1},
+    "debateNumber": {"type": "string", "minLength": 1},
+    "pass": {"enum": ["A", "B"]},
+    "assessmentModel": {"const": "5.6 Sol"},
+    "calibrationOnly": {"const": true},
+    "completedAt": {"type": "string", "format": "date-time"},
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method", "allowedInputs", "prohibitedInputsConfirmed", "contaminationDetected", "statement"],
+      "properties": {
+        "method": {"const": "fresh-isolated-model-task"},
+        "allowedInputs": {"type": "array", "minItems": 7, "items": {"type": "string"}, "uniqueItems": true},
+        "prohibitedInputsConfirmed": {"const": true},
+        "contaminationDetected": {"const": false},
+        "statement": {"type": "string", "minLength": 40}
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["videoId", "inventoryPath", "inventorySha256", "transcriptSha256", "eventsSha256", "captionManifestSha256", "audioVerificationPath", "audioVerificationSha256", "gateManifestSha256", "workflowSha256", "rubricSha256", "schemaSha256", "limitations"],
+      "properties": {
+        "videoId": {"type": "string", "minLength": 1},
+        "inventoryPath": {"type": "string", "minLength": 1},
+        "inventorySha256": {"$ref": "#/$defs/digest"},
+        "transcriptSha256": {"$ref": "#/$defs/digest"},
+        "eventsSha256": {"$ref": "#/$defs/digest"},
+        "captionManifestSha256": {"$ref": "#/$defs/digest"},
+        "audioVerificationPath": {"type": "string", "minLength": 1},
+        "audioVerificationSha256": {"$ref": "#/$defs/digest"},
+        "gateManifestSha256": {"$ref": "#/$defs/digest"},
+        "workflowSha256": {"$ref": "#/$defs/digest"},
+        "rubricSha256": {"$ref": "#/$defs/digest"},
+        "schemaSha256": {"$ref": "#/$defs/digest"},
+        "limitations": {"type": "string", "minLength": 1}
+      }
+    },
+    "dimensionWeights": {"$ref": "#/$defs/dimensionWeights"},
+    "moveScores": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/moveScore"}},
+    "sectionScores": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/sectionScore"}},
+    "burdenCompletionAdjustment": {"$ref": "#/$defs/sideAdjustments"},
+    "overall": {"$ref": "#/$defs/sideOverall"},
+    "calculationAudit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["moveCount", "sectionCount", "sectionWeightTotal", "allMoveScoresRecomputed", "allSectionScoresRecomputed", "allOverallScoresRecomputed"],
+      "properties": {
+        "moveCount": {"type": "integer", "minimum": 1},
+        "sectionCount": {"type": "integer", "minimum": 1},
+        "sectionWeightTotal": {"const": 100},
+        "allMoveScoresRecomputed": {"const": true},
+        "allSectionScoresRecomputed": {"const": true},
+        "allOverallScoresRecomputed": {"const": true}
+      }
+    }
+  },
+  "$defs": {
+    "digest": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "score": {"type": "integer", "minimum": 0, "maximum": 100},
+    "dimensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["logicalCoherence", "evidenceWarrant", "responsiveness", "relevanceBurden", "precisionClarity", "calibrationCharity"],
+      "properties": {
+        "logicalCoherence": {"$ref": "#/$defs/score"},
+        "evidenceWarrant": {"$ref": "#/$defs/score"},
+        "responsiveness": {"$ref": "#/$defs/score"},
+        "relevanceBurden": {"$ref": "#/$defs/score"},
+        "precisionClarity": {"$ref": "#/$defs/score"},
+        "calibrationCharity": {"$ref": "#/$defs/score"}
+      }
+    },
+    "dimensionWeights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["logicalCoherence", "evidenceWarrant", "responsiveness", "relevanceBurden", "precisionClarity", "calibrationCharity"],
+      "properties": {
+        "logicalCoherence": {"const": 0.25},
+        "evidenceWarrant": {"const": 0.2},
+        "responsiveness": {"const": 0.2},
+        "relevanceBurden": {"const": 0.15},
+        "precisionClarity": {"const": 0.1},
+        "calibrationCharity": {"const": 0.1}
+      }
+    },
+    "moveScore": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["moveId", "sectionId", "side", "importance", "timestamp", "sourceSpan", "responseClass", "dimensions", "moveScore", "evidenceBasis", "rationale", "assessmentConfidence"],
+      "properties": {
+        "moveId": {"type": "string", "minLength": 1},
+        "sectionId": {"type": "string", "minLength": 1},
+        "side": {"enum": ["pro", "con"]},
+        "importance": {"type": "integer", "minimum": 1, "maximum": 3},
+        "timestamp": {"type": "string", "minLength": 1},
+        "sourceSpan": {"type": "object", "additionalProperties": false, "required": ["startMs", "endMs"], "properties": {"startMs": {"type": "integer", "minimum": 0}, "endMs": {"type": "integer", "minimum": 1}}},
+        "responseClass": {"enum": ["constructive-opening", "full-direct-answer", "partial-direct-answer", "relevant-counterargument", "diagnostic-question", "justified-reframe", "topic-shift-or-weaker-substitution"]},
+        "dimensions": {"$ref": "#/$defs/dimensions"},
+        "moveScore": {"$ref": "#/$defs/score"},
+        "evidenceBasis": {"type": "string", "minLength": 20},
+        "rationale": {"type": "string", "minLength": 40},
+        "assessmentConfidence": {"enum": ["high", "medium", "low"]}
+      }
+    },
+    "sectionSideScore": {"type": "object", "additionalProperties": false, "required": ["moveIds", "importanceTotal", "score"], "properties": {"moveIds": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true}, "importanceTotal": {"type": "integer", "minimum": 1}, "score": {"$ref": "#/$defs/score"}}},
+    "sectionScore": {"type": "object", "additionalProperties": false, "required": ["sectionId", "weightPercent", "pro", "con"], "properties": {"sectionId": {"type": "string", "minLength": 1}, "weightPercent": {"type": "number", "exclusiveMinimum": 0, "maximum": 100}, "pro": {"$ref": "#/$defs/sectionSideScore"}, "con": {"$ref": "#/$defs/sectionSideScore"}}},
+    "eligibility": {"type": "object", "additionalProperties": false, "required": ["distinctDebateWideConsequence", "affectsBurdenCompletion", "notAlreadyScored", "relatedMoveIds", "distinctConsequence"], "properties": {"distinctDebateWideConsequence": {"type": "boolean"}, "affectsBurdenCompletion": {"type": "boolean"}, "notAlreadyScored": {"type": "boolean"}, "relatedMoveIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}, "distinctConsequence": {"type": "string", "minLength": 1}}},
+    "adjustment": {"type": "object", "additionalProperties": false, "required": ["value", "rationale", "eligibility"], "properties": {"value": {"type": "integer", "minimum": -5, "maximum": 5}, "rationale": {"type": "string", "minLength": 20}, "eligibility": {"$ref": "#/$defs/eligibility"}}},
+    "sideAdjustments": {"type": "object", "additionalProperties": false, "required": ["pro", "con"], "properties": {"pro": {"$ref": "#/$defs/adjustment"}, "con": {"$ref": "#/$defs/adjustment"}}},
+    "overallSide": {"type": "object", "additionalProperties": false, "required": ["weightedSectionMean", "burdenCompletionAdjustment", "score"], "properties": {"weightedSectionMean": {"type": "number", "minimum": 0, "maximum": 100}, "burdenCompletionAdjustment": {"type": "integer", "minimum": -5, "maximum": 5}, "score": {"$ref": "#/$defs/score"}}},
+    "sideOverall": {"type": "object", "additionalProperties": false, "required": ["pro", "con"], "properties": {"pro": {"$ref": "#/$defs/overallSide"}, "con": {"$ref": "#/$defs/overallSide"}}}
+  }
+}

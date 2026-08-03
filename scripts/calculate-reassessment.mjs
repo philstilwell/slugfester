@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 
 import { readFile, writeFile } from "node:fs/promises";
-import { calculateV2Ledger, calculateV21Ledger } from "./lib/reassessment-scoring.mjs";
+import {
+  calculateV2Ledger,
+  calculateV21Ledger,
+  calculateV22Ledger
+} from "./lib/reassessment-scoring.mjs";
 
 const args = process.argv.slice(2);
 const write = args.includes("--write");
@@ -15,7 +19,12 @@ if (!ledgerPath || (write && check)) {
 
 const source = await readFile(ledgerPath, "utf8");
 const input = JSON.parse(source);
-const calculated = input.schemaVersion === "2.1" ? calculateV21Ledger(input) : calculateV2Ledger(input);
+const calculated =
+  input.schemaVersion === "2.2"
+    ? calculateV22Ledger(input)
+    : input.schemaVersion === "2.1"
+      ? calculateV21Ledger(input)
+      : calculateV2Ledger(input);
 const output = `${JSON.stringify(calculated, null, 2)}\n`;
 
 if (check) {

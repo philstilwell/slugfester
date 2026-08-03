@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "2.2-complete-gate",
+  "gateId": "v2.2-three-debate-remediation-gate",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.2",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.2",
+  "calibrationOnly": true,
+  "preregistration": {
+    "lockedAt": "2026-08-03T00:00:00Z",
+    "lockedBy": "5.6 Sol workflow orchestrator",
+    "comparisonGate": "docs/calibration/v2.1/complete-gate/gate-manifest.json",
+    "comparisonReliability": "docs/calibration/v2.1/complete-gate/reliability-analysis.json",
+    "controlledVariables": ["debate sample", "burden map", "section definitions", "section weights", "move IDs", "move importance", "source spans", "dimension weights", "disagreement thresholds", "review thresholds"],
+    "changedVariables": ["rubric anchors", "response-class ceilings", "pass JSON schema", "burden-adjustment eligibility", "medium-confidence audio verification"],
+    "legacyAssessmentEmbargo": "Legacy scores, v2.1 passes, adjudications, reliability results, production critiques, tags, Overall Commentary, and AI Extensions are prohibited inputs to both v2.2 scoring passes."
+  },
+  "sample": {
+    "initialCompleteDebates": 3,
+    "debates": [
+      {"number": "05", "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014", "videoId": "OL8LREmbDi0", "stratum": "lopsided asymmetric burden", "sourceInventory": "docs/calibration/v2.1/complete-gate/inventories/dillahunty-ten-bruggencate-reasonable-god-2014.json"},
+      {"number": "81", "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020", "videoId": "YhqFdIb13bk", "stratum": "close analytic", "sourceInventory": "docs/calibration/v2.1/complete-gate/inventories/rasmussen-oppy-ultimate-reality-naturalism-2020.json"},
+      {"number": "95", "debateId": "craig-frazier-goff-folley-god-reality-2026", "videoId": "ZVMMO_kgtDQ", "stratum": "multi-person pluralist", "sourceInventory": "docs/calibration/v2.1/complete-gate/inventories/craig-frazier-goff-folley-god-reality-2026.json"}
+    ]
+  },
+  "executionProtocol": {
+    "model": "5.6 Sol",
+    "inventory": "Copy the v2.1 locked inventory without changing burdens, sections, weights, move selection, importance, or source spans; add only v2.2 provenance and audio-verification metadata.",
+    "audioVerification": "Every medium- or low-confidence move must have a successful local audio-verification artifact and hash before either pass begins.",
+    "passSchema": "docs/calibration/v2.2/scoring-pass-schema.json",
+    "passA": "A fresh isolated 5.6 Sol task scores the locked inventory using only the explicit v2.2 allowlist.",
+    "passB": "A different fresh isolated 5.6 Sol task scores the identical inventory without Pass A or v2.1 scoring material.",
+    "adjudication": "A fresh task compares only schema-valid Pass A and Pass B outputs and adjudicates threshold-triggered differences under v2.2.",
+    "productionIsolation": "All artifacts remain under docs/calibration/v2.2/complete-gate and never update production debates, ledgers, or rankings."
+  },
+  "hardGates": {
+    "fullTranscriptAcquisitionRateMinimum": 1,
+    "mediumAndLowMoveAudioVerificationRateMinimum": 1,
+    "centralQuoteAudioOrIndependentTranscriptVerificationRateMinimum": 1,
+    "unresolvedMediumOrLowSpeakerAttributionsMaximum": 0,
+    "singleScoringPassSchemaRequired": true,
+    "scoringPassIsolation": "separate model tasks with explicit file allowlists and no score or rationale leakage",
+    "burdenAdjustmentEligibilityViolationsMaximum": 0,
+    "missingRequiredAdjudicationsMaximum": 0,
+    "calculatorArtifactMismatchesMaximum": 0,
+    "calibrationIsolationRequired": true,
+    "completeArgumentInventoryRequired": true,
+    "completeScorecardRequired": true,
+    "aiExtensionNoveltyMapCompletionRateMinimum": 1
+  },
+  "reviewGates": {
+    "meanAbsoluteDimensionDeltaMaximum": 5,
+    "moveAdjudicationRateMaximum": 0.25,
+    "overallScorePassDeltaMaximum": 5,
+    "winnerFlipReviewThreshold": 0.2,
+    "rankCorrelationReviewThreshold": 0.9
+  },
+  "readinessRule": {
+    "initialGate": "Every hard gate must pass; review exceptions require documented evidence-based adjudication.",
+    "expandedGate": "A pass authorizes only a preregistered ten-complete-debate v2.2 gate.",
+    "corpusWide": "All 195 debates remain unauthorized until the ten-debate gate passes and the editor explicitly approves promotion."
+  },
+  "decision": {"initialGate": "pending", "expandedGate": "not-authorized", "corpusWide": "not-ready"}
+}

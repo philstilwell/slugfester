@@ -13,6 +13,8 @@ export const DIMENSION_WEIGHTS = Object.freeze({
 export const V2_RUBRIC = "Slugfester Reassessment Rubric v2";
 export const V21_RUBRIC = "Slugfester Reassessment Rubric v2.1";
 export const V21_WORKFLOW = "Slugfester Reassessment Workflow v2.1";
+export const V22_RUBRIC = "Slugfester Reassessment Rubric v2.2";
+export const V22_WORKFLOW = "Slugfester Reassessment Workflow v2.2";
 export const V21_DIMENSION_DISAGREEMENT_THRESHOLD = 8;
 export const V21_MOVE_DISAGREEMENT_THRESHOLD = 4;
 export const V21_ADJUSTMENT_DISAGREEMENT_THRESHOLD = 2;
@@ -411,6 +413,298 @@ export function calculateV21Ledger(input) {
       ledger.aiExtensionReview.noveltyMap.length > 0,
       "production ledgers require an AI Extension novelty map"
     );
+  }
+  return ledger;
+}
+
+function validateV22AdjustmentEntry(entry, label, validMoveIds) {
+  requireNumber(entry?.value, `${label}.value`, { min: -5, max: 5, integer: true });
+  assert(
+    typeof entry.rationale === "string" && entry.rationale.trim().length >= 20,
+    `${label}.rationale must contain at least 20 characters`
+  );
+  const eligibility = entry.eligibility;
+  assert(eligibility && typeof eligibility === "object", `${label}.eligibility is required`);
+  for (const key of [
+    "distinctDebateWideConsequence",
+    "affectsBurdenCompletion",
+    "notAlreadyScored"
+  ]) {
+    assert(typeof eligibility[key] === "boolean", `${label}.eligibility.${key} must be a boolean`);
+  }
+  assert(
+    Array.isArray(eligibility.relatedMoveIds),
+    `${label}.eligibility.relatedMoveIds must be an array`
+  );
+  assert(
+    new Set(eligibility.relatedMoveIds).size === eligibility.relatedMoveIds.length,
+    `${label}.eligibility.relatedMoveIds must be unique`
+  );
+  for (const moveId of eligibility.relatedMoveIds) {
+    assert(validMoveIds.has(moveId), `${label} references unknown move ${moveId}`);
+  }
+  assert(
+    typeof eligibility.distinctConsequence === "string" &&
+      eligibility.distinctConsequence.trim(),
+    `${label}.eligibility.distinctConsequence is required`
+  );
+
+  const eligible =
+    eligibility.distinctDebateWideConsequence &&
+    eligibility.affectsBurdenCompletion &&
+    eligibility.notAlreadyScored &&
+    eligibility.relatedMoveIds.length > 0 &&
+    eligibility.distinctConsequence.trim().toLowerCase() !== "none";
+  if (entry.value !== 0) {
+    assert(eligible, `${label} is ineligible for a nonzero burden adjustment`);
+  } else {
+    assert(!eligible, `${label} records full eligibility but assigns zero; record the failed exclusion condition`);
+  }
+  return eligible;
+}
+
+function resolveBurdenAdjustmentV22(adjustment, label, validMoveIds) {
+  assert(adjustment?.passA && adjustment?.passB, `${label} requires passA and passB`);
+  const passAEligible = validateV22AdjustmentEntry(
+    adjustment.passA,
+    `${label}.passA`,
+    validMoveIds
+  );
+  const passBEligible = validateV22AdjustmentEntry(
+    adjustment.passB,
+    `${label}.passB`,
+    validMoveIds
+  );
+  const delta = Math.abs(adjustment.passA.value - adjustment.passB.value);
+  const requiresAdjudication = delta > V21_ADJUSTMENT_DISAGREEMENT_THRESHOLD;
+  let final;
+  if (requiresAdjudication) {
+    assert(adjustment.adjudication, `${label} requires adjudication`);
+    validateV22AdjustmentEntry(
+      adjustment.adjudication,
+      `${label}.adjudication`,
+      validMoveIds
+    );
+    final = adjustment.adjudication;
+  } else {
+    const sameEligibleConsequence =
+      passAEligible &&
+      passBEligible &&
+      Math.sign(adjustment.passA.value) === Math.sign(adjustment.passB.value) &&
+      adjustment.passA.eligibility.distinctConsequence.trim().toLowerCase() ===
+        adjustment.passB.eligibility.distinctConsequence.trim().toLowerCase();
+    if (sameEligibleConsequence) {
+      final = {
+        value: rounded((adjustment.passA.value + adjustment.passB.value) / 2),
+        rationale:
+          "Rounded mean of two eligible pass adjustments identifying the same distinct debate-wide consequence.",
+        eligibility: structuredClone(adjustment.passA.eligibility)
+      };
+    } else {
+      final = {
+        value: 0,
+        rationale:
+          "No shared eligible distinct debate-wide consequence survives the duplicate-adjustment exclusion rule.",
+        eligibility: {
+          distinctDebateWideConsequence: false,
+          affectsBurdenCompletion: false,
+          notAlreadyScored: false,
+          relatedMoveIds: [],
+          distinctConsequence: "none"
+        }
+      };
+    }
+  }
+  return { delta, requiresAdjudication, final };
+}
+
+export function calculateV22Ledger(input) {
+  const ledger = structuredClone(input);
+  const sideKeys = ["pro", "con"];
+
+  assert(ledger.schemaVersion === "2.2", "schemaVersion must be 2.2");
+  assert(ledger.workflowVersion === V22_WORKFLOW, `workflowVersion must be ${V22_WORKFLOW}`);
+  assert(ledger.rubricVersion === V22_RUBRIC, `rubricVersion must be ${V22_RUBRIC}`);
+  assert(typeof ledger.calibrationOnly === "boolean", "calibrationOnly must be a boolean");
+  assert(typeof ledger.model === "string" && ledger.model.trim(), "model is required");
+  assert(typeof ledger.sourceManifest === "string" && ledger.sourceManifest.trim(), "sourceManifest is required");
+  for (const [key, value] of Object.entries({
+    blindPacketSha256: ledger.blindPacketSha256,
+    inventorySha256: ledger.inventorySha256,
+    audioVerificationSha256: ledger.audioVerificationSha256,
+    passASha256: ledger.passASha256,
+    passBSha256: ledger.passBSha256
+  })) {
+    assert(typeof value === "string" && /^[a-f0-9]{64}$/.test(value), `${key} must be a SHA-256 digest`);
+  }
+  assert(
+    ledger.assessmentPasses?.passA && ledger.assessmentPasses?.passB,
+    "assessmentPasses.passA and assessmentPasses.passB are required"
+  );
+  for (const passKey of ["passA", "passB"]) {
+    const assessmentPass = ledger.assessmentPasses[passKey];
+    assert(assessmentPass.model === ledger.model, `${passKey}.model must match ledger.model`);
+    assert(typeof assessmentPass.completedAt === "string" && assessmentPass.completedAt, `${passKey}.completedAt is required`);
+    assert(typeof assessmentPass.contextIsolation === "string" && assessmentPass.contextIsolation, `${passKey}.contextIsolation is required`);
+    assert(assessmentPass.schemaValidated === true, `${passKey}.schemaValidated must be true`);
+  }
+  assert(
+    typeof ledger.passIndependence?.level === "string" && ledger.passIndependence.level,
+    "passIndependence.level is required"
+  );
+  assert(Array.isArray(ledger.burdens) && ledger.burdens.length >= 2, "burdens must include both sides");
+  const burdenIds = new Set();
+  for (const [index, burden] of ledger.burdens.entries()) {
+    assert(burden.id && ["pro", "con"].includes(burden.side), `burdens[${index}] needs id and valid side`);
+    assert(!burdenIds.has(burden.id), `duplicate burden id: ${burden.id}`);
+    burdenIds.add(burden.id);
+    assert(burden.description && burden.successCriteria, `burdens[${index}] needs description and successCriteria`);
+  }
+  assert(ledger.sectionWeightsLockedBeforeScoring === true, "section weights must be locked before scoring");
+  assert(ledger.moveImportanceLockedBeforeScoring === true, "move importance must be locked before scoring");
+  assert(Array.isArray(ledger.sections) && ledger.sections.length > 0, "sections must not be empty");
+
+  const sectionWeightTotal = ledger.sections.reduce(
+    (total, section, index) =>
+      total + requireNumber(section.weightPercent, `sections[${index}].weightPercent`, { min: 1, max: 100 }),
+    0
+  );
+  assert(Math.abs(sectionWeightTotal - 100) < 0.001, "section weight percentages must sum to 100");
+
+  const validMoveIds = new Set();
+  for (const section of ledger.sections) {
+    for (const sideKey of sideKeys) {
+      for (const move of section.sides?.[sideKey]?.moves ?? []) {
+        assert(move.id && !validMoveIds.has(move.id), `duplicate or missing move id: ${move.id}`);
+        validMoveIds.add(move.id);
+      }
+    }
+  }
+
+  const audit = {
+    moveCount: 0,
+    adjudicationCount: 0,
+    adjustmentAdjudicationCount: 0,
+    maxDimensionDelta: 0,
+    maxMoveScoreDelta: 0,
+    maxAdjustmentDelta: 0,
+    mediumOrLowMoveCount: 0,
+    audioVerifiedMediumOrLowMoveCount: 0
+  };
+
+  ledger.sections.forEach((section, sectionIndex) => {
+    assert(section.id && section.title && section.weightRationale, `sections[${sectionIndex}] needs id, title, and weightRationale`);
+    for (const sideKey of sideKeys) {
+      const side = section.sides?.[sideKey];
+      assert(side && Array.isArray(side.moves), `${section.id}.${sideKey}.moves is required`);
+      side.moves.forEach((move, moveIndex) => {
+        const label = `${section.id}.${sideKey}.moves[${moveIndex}]`;
+        assert(move.id && move.timestamp && move.sourceExcerpt, `${label} needs id, timestamp, and sourceExcerpt`);
+        const sourceExcerptWordCount = move.sourceExcerpt.trim().split(/\s+/).filter(Boolean).length;
+        assert(sourceExcerptWordCount >= 30 && sourceExcerptWordCount <= 90, `${label}.sourceExcerpt must contain 30 to 90 words`);
+        assert(move.sourceSpan?.start === move.timestamp && typeof move.sourceSpan?.end === "string", `${label}.sourceSpan must begin at timestamp and include an end timestamp`);
+        assert(["quote", "condensation"].includes(move.quoteKind), `${label}.quoteKind is invalid`);
+        assert(["high", "medium", "low"].includes(move.speakerAttributionConfidence), `${label}.speakerAttributionConfidence is invalid`);
+        assert(typeof move.audioChecked === "boolean", `${label}.audioChecked must be a boolean`);
+        if (["medium", "low"].includes(move.speakerAttributionConfidence)) {
+          audit.mediumOrLowMoveCount += 1;
+          assert(move.audioChecked === true, `${label} must be audio checked before scoring`);
+          assert(move.audioVerification?.status === "verified", `${label}.audioVerification.status must be verified`);
+          assert(typeof move.audioVerification.path === "string" && move.audioVerification.path, `${label}.audioVerification.path is required`);
+          assert(/^[a-f0-9]{64}$/.test(move.audioVerification.sha256 ?? ""), `${label}.audioVerification.sha256 must be a digest`);
+          assert(move.audioVerification.resolvedSpeaker === move.speaker, `${label}.audioVerification.resolvedSpeaker must match move.speaker`);
+          audit.audioVerifiedMediumOrLowMoveCount += 1;
+        }
+        assert(Array.isArray(move.burdenIds), `${label}.burdenIds must be an array`);
+        assert(Array.isArray(move.respondsToIds), `${label}.respondsToIds must be an array`);
+        assert(move.passA?.dimensions && move.passB?.dimensions, `${label} requires passA and passB dimensions`);
+        for (const passKey of ["passA", "passB"]) {
+          assert(typeof move[passKey].rationale === "string" && move[passKey].rationale.trim(), `${label}.${passKey}.rationale is required`);
+          assert(typeof move[passKey].responseClass === "string" && move[passKey].responseClass, `${label}.${passKey}.responseClass is required`);
+        }
+        for (const burdenId of move.burdenIds) {
+          assert(burdenIds.has(burdenId), `${label} references unknown burden ${burdenId}`);
+        }
+
+        const disagreement = moveDisagreement(move.passA.dimensions, move.passB.dimensions);
+        Object.assign(move, disagreement);
+        if (disagreement.requiresAdjudication) {
+          assert(move.adjudication?.dimensions, `${label} requires adjudication dimensions`);
+          assert(typeof move.adjudication.rationale === "string" && move.adjudication.rationale.trim(), `${label} requires an adjudication rationale`);
+          assert(typeof move.adjudication.responseClass === "string" && move.adjudication.responseClass, `${label}.adjudication.responseClass is required`);
+          move.finalDimensions = move.adjudication.dimensions;
+          audit.adjudicationCount += 1;
+        } else {
+          move.finalDimensions = averageDimensions(move.passA.dimensions, move.passB.dimensions);
+        }
+        move.finalScore = scoreDimensions(move.finalDimensions, `${label}.finalDimensions`);
+        audit.moveCount += 1;
+        audit.maxDimensionDelta = Math.max(audit.maxDimensionDelta, disagreement.maxDimensionDelta);
+        audit.maxMoveScoreDelta = Math.max(audit.maxMoveScoreDelta, disagreement.scoreDelta);
+      });
+
+      assert(side.moves.length > 0, `${section.id}.${sideKey} needs at least one scored move`);
+      side.passAScore = rounded(calculateImportanceWeightedMean(side.moves, "passAScore"));
+      side.passBScore = rounded(calculateImportanceWeightedMean(side.moves, "passBScore"));
+      side.score = rounded(calculateImportanceWeightedMean(side.moves, "finalScore"));
+    }
+  });
+
+  for (const sideKey of sideKeys) {
+    const adjustment = resolveBurdenAdjustmentV22(
+      ledger.burdenCompletionAdjustment[sideKey],
+      `${sideKey}.burdenCompletionAdjustment`,
+      validMoveIds
+    );
+    ledger.burdenCompletionAdjustment[sideKey].delta = adjustment.delta;
+    ledger.burdenCompletionAdjustment[sideKey].requiresAdjudication = adjustment.requiresAdjudication;
+    ledger.burdenCompletionAdjustment[sideKey].final = adjustment.final;
+    audit.maxAdjustmentDelta = Math.max(audit.maxAdjustmentDelta, adjustment.delta);
+    if (adjustment.requiresAdjudication) audit.adjustmentAdjudicationCount += 1;
+
+    const passA = calculateV21Overall(
+      ledger.sections.map((section) => section.sides[sideKey].passAScore),
+      ledger.sections,
+      ledger.burdenCompletionAdjustment[sideKey].passA,
+      sideKey
+    );
+    const passB = calculateV21Overall(
+      ledger.sections.map((section) => section.sides[sideKey].passBScore),
+      ledger.sections,
+      ledger.burdenCompletionAdjustment[sideKey].passB,
+      sideKey
+    );
+    const final = calculateV21Overall(
+      ledger.sections.map((section) => section.sides[sideKey].score),
+      ledger.sections,
+      adjustment.final,
+      sideKey
+    );
+    ledger.overall ??= {};
+    ledger.overall[sideKey] = {
+      passA,
+      passB,
+      ...final,
+      confidenceRange: {
+        low: Math.max(SCORE_MIN, Math.min(passA.score, passB.score, final.score) - 2),
+        high: Math.min(SCORE_MAX, Math.max(passA.score, passB.score, final.score) + 2)
+      }
+    };
+  }
+
+  ledger.agreementAudit = {
+    ...audit,
+    adjudicationRate: audit.moveCount ? fixed(audit.adjudicationCount / audit.moveCount) : 0,
+    mediumOrLowAudioVerificationRate: audit.mediumOrLowMoveCount
+      ? fixed(audit.audioVerifiedMediumOrLowMoveCount / audit.mediumOrLowMoveCount)
+      : 1
+  };
+  assert(ledger.tagReview?.performedAfterScoring === true, "tagReview must occur after scoring");
+  assert(Array.isArray(ledger.tagReview.candidates), "tagReview.candidates must be an array");
+  assert(ledger.aiExtensionReview?.performedAfterAssessment === true, "aiExtensionReview must occur after assessment");
+  assert(Array.isArray(ledger.aiExtensionReview.noveltyMap), "aiExtensionReview.noveltyMap must be an array");
+  if (!ledger.calibrationOnly) {
+    assert(ledger.aiExtensionReview.noveltyMap.length > 0, "production ledgers require an AI Extension novelty map");
   }
   return ledger;
 }
