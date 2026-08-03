@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v2.4-inventory-review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "workflowVersion", "gateId", "debateId", "debateNumber", "reviewedAt", "reviewerModel", "calibrationOnly", "isolation", "source", "findings", "repairs", "audit"],
+  "properties": {
+    "schemaVersion": {"const": "2.4-inventory-review"},
+    "workflowVersion": {"const": "Slugfester Reassessment Workflow v2.4"},
+    "gateId": {"const": "v2.4-held-out-orthogonal-annotation-gate"},
+    "debateId": {"type": "string", "minLength": 1},
+    "debateNumber": {"type": "string", "minLength": 1},
+    "reviewedAt": {"type": "string", "format": "date-time"},
+    "reviewerModel": {"const": "5.6 Sol"},
+    "calibrationOnly": {"const": true},
+    "isolation": {"type": "object", "additionalProperties": false, "required": ["method", "legacyMaterialAccessed", "developmentExamplesAccessed", "annotationPassesAvailable", "statement"], "properties": {"method": {"const": "fresh-independent-v2.4-inventory-review"}, "legacyMaterialAccessed": {"const": false}, "developmentExamplesAccessed": {"const": false}, "annotationPassesAvailable": {"const": false}, "statement": {"type": "string", "minLength": 40}}},
+    "source": {"type": "object", "additionalProperties": false, "required": ["draftInventoryPath", "draftInventorySha256", "finalInventoryPath", "finalInventorySha256", "transcriptSha256", "eventsSha256", "manifestSha256", "workflowSha256", "inventorySchemaSha256", "gateManifestSha256"], "properties": {"draftInventoryPath": {"type": "string", "minLength": 1}, "draftInventorySha256": {"$ref": "#/$defs/digest"}, "finalInventoryPath": {"type": "string", "minLength": 1}, "finalInventorySha256": {"$ref": "#/$defs/digest"}, "transcriptSha256": {"$ref": "#/$defs/digest"}, "eventsSha256": {"$ref": "#/$defs/digest"}, "manifestSha256": {"$ref": "#/$defs/digest"}, "workflowSha256": {"$ref": "#/$defs/digest"}, "inventorySchemaSha256": {"$ref": "#/$defs/digest"}, "gateManifestSha256": {"$ref": "#/$defs/digest"}}},
+    "findings": {"type": "array", "items": {"$ref": "#/$defs/finding"}},
+    "repairs": {"type": "array", "items": {"$ref": "#/$defs/repair"}},
+    "audit": {"type": "object", "additionalProperties": false, "required": ["sourceFidelityViolations", "atomicityViolations", "targetPacketViolations", "burdenViolations", "samplingViolations", "speakerAttributionViolations", "unresolvedFindings", "finalInventoryValidatorPassed"], "properties": {"sourceFidelityViolations": {"const": 0}, "atomicityViolations": {"const": 0}, "targetPacketViolations": {"const": 0}, "burdenViolations": {"const": 0}, "samplingViolations": {"const": 0}, "speakerAttributionViolations": {"const": 0}, "unresolvedFindings": {"const": 0}, "finalInventoryValidatorPassed": {"const": true}}}
+  },
+  "$defs": {
+    "digest": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "finding": {"type": "object", "additionalProperties": false, "required": ["findingId", "category", "moveId", "description", "disposition"], "properties": {"findingId": {"type": "string", "minLength": 1}, "category": {"enum": ["source-fidelity", "atomicity", "target-packet", "burden", "sampling", "speaker-attribution"]}, "moveId": {"type": ["string", "null"]}, "description": {"type": "string", "minLength": 20}, "disposition": {"enum": ["repaired", "not-a-violation"]}}},
+    "repair": {"type": "object", "additionalProperties": false, "required": ["findingId", "change"], "properties": {"findingId": {"type": "string", "minLength": 1}, "change": {"type": "string", "minLength": 20}}}
+  }
+}

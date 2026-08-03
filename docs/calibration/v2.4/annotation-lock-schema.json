@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v2.4-annotation-lock",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "workflowVersion", "rubricVersion", "gateId", "debateId", "debateNumber", "model", "calibrationOnly", "lockedAt", "isolation", "source", "annotations", "agreement", "audit"],
+  "properties": {
+    "schemaVersion": {"const": "2.4-annotation-lock"},
+    "workflowVersion": {"const": "Slugfester Reassessment Workflow v2.4"},
+    "rubricVersion": {"const": "Slugfester Reassessment Rubric v2.4"},
+    "gateId": {"const": "v2.4-held-out-orthogonal-annotation-gate"},
+    "debateId": {"type": "string", "minLength": 1},
+    "debateNumber": {"type": "string", "minLength": 1},
+    "model": {"const": "5.6 Sol"},
+    "calibrationOnly": {"const": true},
+    "lockedAt": {"type": "string", "format": "date-time"},
+    "isolation": {"type": "object", "additionalProperties": false, "required": ["method", "legacyMaterialAvailable", "numericalScoresAvailable", "statement"], "properties": {"method": {"const": "fresh-v2.4-annotation-adjudication-task"}, "legacyMaterialAvailable": {"const": false}, "numericalScoresAvailable": {"const": false}, "statement": {"type": "string", "minLength": 40}}},
+    "source": {"type": "object", "additionalProperties": false, "required": ["passAPath", "passASha256", "passBPath", "passBSha256", "inventoryPath", "inventorySha256"], "properties": {"passAPath": {"type": "string", "minLength": 1}, "passASha256": {"$ref": "#/$defs/digest"}, "passBPath": {"type": "string", "minLength": 1}, "passBSha256": {"$ref": "#/$defs/digest"}, "inventoryPath": {"type": "string", "minLength": 1}, "inventorySha256": {"$ref": "#/$defs/digest"}}},
+    "annotations": {"type": "array", "minItems": 12, "maxItems": 12, "items": {"$ref": "#/$defs/annotation"}},
+    "agreement": {"type": "object", "additionalProperties": false, "required": ["moveCount", "coverageAgreementCount", "diagnosticAgreementCount", "reframeAgreementCount", "burdenAgreementCount", "exactTupleAgreementCount"], "properties": {"moveCount": {"const": 12}, "coverageAgreementCount": {"type": "integer", "minimum": 0, "maximum": 12}, "diagnosticAgreementCount": {"type": "integer", "minimum": 0, "maximum": 12}, "reframeAgreementCount": {"type": "integer", "minimum": 0, "maximum": 12}, "burdenAgreementCount": {"type": "integer", "minimum": 0, "maximum": 12}, "exactTupleAgreementCount": {"type": "integer", "minimum": 0, "maximum": 12}}},
+    "audit": {"type": "object", "additionalProperties": false, "required": ["fieldDisagreementCount", "adjudicatedFieldCount", "unresolvedDisagreements", "movesMissingFinalLock"], "properties": {"fieldDisagreementCount": {"type": "integer", "minimum": 0}, "adjudicatedFieldCount": {"type": "integer", "minimum": 0}, "unresolvedDisagreements": {"const": 0}, "movesMissingFinalLock": {"const": 0}}}
+  },
+  "$defs": {
+    "digest": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "sourceKind": {"enum": ["agreement", "adjudication"]},
+    "annotation": {"type": "object", "additionalProperties": false, "required": ["moveId", "interactionMode", "targetPacketId", "targetCoverage", "diagnostic", "reframe", "burdenRelation", "fieldSources", "coverageRationale", "mechanismRationale", "burdenRationale"], "properties": {"moveId": {"type": "string", "minLength": 1}, "interactionMode": {"enum": ["constructive", "responsive"]}, "targetPacketId": {"type": ["string", "null"]}, "targetCoverage": {"enum": ["not-applicable", "full", "partial", "relevant-nonanswer", "substitution"]}, "diagnostic": {"type": "boolean"}, "reframe": {"type": "boolean"}, "burdenRelation": {"enum": ["completes", "advances-central", "advances-sub-burden", "topical-peripheral", "unadopted-or-irrelevant"]}, "fieldSources": {"type": "object", "additionalProperties": false, "required": ["targetCoverage", "diagnostic", "reframe", "burdenRelation"], "properties": {"targetCoverage": {"$ref": "#/$defs/sourceKind"}, "diagnostic": {"$ref": "#/$defs/sourceKind"}, "reframe": {"$ref": "#/$defs/sourceKind"}, "burdenRelation": {"$ref": "#/$defs/sourceKind"}}}, "coverageRationale": {"type": "string", "minLength": 40}, "mechanismRationale": {"type": "string", "minLength": 40}, "burdenRationale": {"type": "string", "minLength": 40}}}
+  }
+}
