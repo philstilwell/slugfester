@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "2.5-triggered-third-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.5",
+  "gateId": "v2.5-held-out-derived-annotation-gate",
+  "debateId": "licona-carrier-resurrection-history-2010",
+  "debateNumber": "130",
+  "reviewedAt": "2026-08-03T03:46:05Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-triggered-v2.5-third-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "statement": "Independently reviewed only the allowed v2.5 workflow, schemas, gate manifest, first review, reviewed inventory, local caption chain, and validators for debate 130; the draft inventory and all prohibited materials remained unavailable."
+  },
+  "source": {
+    "firstReviewPath": "docs/calibration/v2.5/held-out-gate/inventory-reviews/licona-carrier-resurrection-history-2010.json",
+    "firstReviewSha256": "b42ac682f290173a5f208fedc6b68dbf4d3a89e6543825bac48c8231a8a731d5",
+    "reviewedInventoryPath": "docs/calibration/v2.5/held-out-gate/reviewed-inventories/licona-carrier-resurrection-history-2010.json",
+    "reviewedInventorySha256": "90297d8632abd3e0f25a7ec0cd6d1fb27b484e203ed91defc73d4384bf19672d",
+    "finalInventoryPath": "docs/calibration/v2.5/held-out-gate/inventories/licona-carrier-resurrection-history-2010.json",
+    "finalInventorySha256": "90297d8632abd3e0f25a7ec0cd6d1fb27b484e203ed91defc73d4384bf19672d",
+    "transcriptSha256": "4db3c90469196c75e7ad14e960367e1c8360ec1523683897ee772309919da97b",
+    "eventsSha256": "cc44372243cbd640ad13a702286c232c90667636fbb385499552822e11cfeda1",
+    "manifestSha256": "771f1afb79b7f597c7cc6deaf67274de96ec80bdfc1b065e54e22ac6fa4d8699"
+  },
+  "triggerCategories": [
+    "sampling",
+    "target-packet",
+    "burden-route-or-tier"
+  ],
+  "findings": [
+    {
+      "findingId": "d130-third-f001",
+      "category": "sampling",
+      "moveId": null,
+      "description": "The repaired pro constructives at 00:13:42 and 00:14:10 are the first two distinct side-specific load-bearing factual acts after Licona's narrative, methodological, and source-selection setup.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "d130-third-f002",
+      "category": "sampling",
+      "moveId": null,
+      "description": "The eight responsive acts remain chronological and place one high-confidence act from each side in each of the four equal quarters from 00:46:03 through 01:59:33.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "d130-third-f003",
+      "category": "target-packet",
+      "moveId": "d130-m06-con-responsive-cultural-context",
+      "description": "The repaired 28-word target isolates Licona's loner-versus-preaching-and-congregation objection, preserving exactly the objection answered by Carrier's cultural-context response.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "d130-third-f004",
+      "category": "target-packet",
+      "moveId": "d130-m08-con-responsive-rare-conjunction",
+      "description": "The repaired 87-word target includes the factual conjunction, the asserted inadequacy of natural explanations, and Licona's explicit missing-body comparison, with four faithful indispensable components.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "d130-third-f005",
+      "category": "burden-route",
+      "moveId": "d130-m08-con-responsive-rare-conjunction",
+      "description": "Limiting move 08 to con-central-natural-explanation accurately captures its naturalistic-prediction claim without importing an exceptional threshold or cult-participant premise.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "d130-third-f006",
+      "category": "burden-route",
+      "moveId": "d130-m12-con-responsive-unmet-burden",
+      "description": "Limiting move 12 to pro-motion-preference and pro-central-explanatory-comparison accurately captures Carrier's attack on comparative sufficiency without treating conceded generic reports as disputed appearance-data premises.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "d130-third-f007",
+      "category": "source-fidelity",
+      "moveId": null,
+      "description": "All move and target excerpts reproduce exact normalized event text inside their spans, all excerpt and source hashes match, and the manifest closes the transcript and event hash chain.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "d130-third-f008",
+      "category": "speaker-attribution",
+      "moveId": null,
+      "description": "Every selected move and target lies within an explicit moderated opening, questioning turn, answer turn, or uninterrupted closing statement owned by the recorded speaker; the two mixed-boundary candidates remain excluded.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "d130-third-f009",
+      "category": "atomicity",
+      "moveId": null,
+      "description": "All twelve 30-to-90-word excerpts are coherent single-speaker acts with no moderator or opponent text, and each of the eight responses has one prior opponent target packet.",
+      "disposition": "not-a-violation"
+    },
+    {
+      "findingId": "d130-third-f010",
+      "category": "burden-route",
+      "moveId": null,
+      "description": "The two adopted routes contain distinct motion, central, and subsidiary bridges, and every move's primary route and eligible bridge set is supported or attacked by the exact atomic act without importing later material.",
+      "disposition": "not-a-violation"
+    }
+  ],
+  "repairs": [],
+  "audit": {
+    "triggeredIssuesRechecked": true,
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "burdenRouteViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "finalInventoryValidatorPassed": true
+  }
+}
