@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "2.6-held-out-target-contact-gate",
+  "gateId": "v2.6-held-out-target-contact-gate",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.6",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.6",
+  "model": "5.6 Sol",
+  "calibrationOnly": true,
+  "preregistration": {
+    "lockedAt": "2026-08-03T12:12:29Z",
+    "developmentCommit": "a3eefa24db68f5b717ae57712dca57042afae675",
+    "sampleSelectedFrom": "production debate metadata only",
+    "transcriptsReviewedBeforeLock": false,
+    "excludedDevelopmentAndHeldOutDebates": [
+      "craig-oconnor-god-debate-2026",
+      "hitchens-dsouza-religion-problem-2010",
+      "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "goff-carroll-consciousness-fundamental-2023",
+      "harris-prager-religion-morality-public-reason-2014",
+      "jones-dillahunty-quantum-idealism-demonstrability-2026",
+      "oconnor-baker-hytch-argument-from-reason-2020",
+      "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "tour-cronin-origin-of-life-2020",
+      "craig-frazier-goff-folley-god-reality-2026",
+      "carroll-shermer-hutchinson-dsouza-science-religion-2012",
+      "licona-dillahunty-resurrection-evidence-2017",
+      "huemer-oppy-souls-personal-identity-2022",
+      "enoch-sampson-loeb-lutz-moral-realism-2024",
+      "licona-carrier-resurrection-history-2010",
+      "dennett-caruso-free-will-responsibility-2021"
+    ],
+    "developmentData": "The eight retired v2.5 target-contact dispute cases, including all ten component-contact, six coverage, and three target-relation disagreements; no v2.6 held-out debate may enter development.",
+    "thresholdChangeRule": "No threshold, sample member, denominator rule, derivation rule, required field, or validator behavior may change after a v2.6 held-out transcript or annotation result is viewed. A defect discovered afterward invalidates this gate and requires a new version and fresh sample.",
+    "denominatorRules": {
+      "responsiveTargetRelation": "All eight responsive moves per debate.",
+      "componentContactAndOperation": "Only target components on responsive moves for which both independent passes classify the target relation as preserved.",
+      "allMoveCoverage": "All twelve moves per debate, including four constructive not-applicable labels.",
+      "responsiveCoverage": "All eight responsive moves per debate.",
+      "otherPrimitiveAndDerivedFields": "All twelve moves per debate."
+    }
+  },
+  "sample": {
+    "debateCount": 3,
+    "movesPerDebate": 12,
+    "moveCount": 36,
+    "responsiveMovesPerDebate": 8,
+    "responsiveMoveCount": 24,
+    "debates": [
+      {
+        "number": "129",
+        "debateId": "plantinga-law-eaan-rational-belief-2010",
+        "videoId": "vAJHkRkWCm0",
+        "stratum": "analytic epistemology and evolutionary inference",
+        "motion": "Is the evolutionary argument against naturalism successful at showing that naturalism plus evolution gives its believers a defeater for trusting their cognitive faculties?",
+        "sides": {
+          "pro": { "label": "EAAN defense", "speakers": ["Alvin Plantinga"] },
+          "con": { "label": "Reliability challenge", "speakers": ["Stephen Law"] }
+        }
+      },
+      {
+        "number": "173",
+        "debateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+        "videoId": "JZRcYaAYWg4",
+        "stratum": "four-speaker institutional and public-reason argument",
+        "motion": "Is the Catholic Church, considered as an institution and global social force, a force for good in the world?",
+        "sides": {
+          "pro": { "label": "The Church is a force for good", "speakers": ["John Onaiyekan", "Ann Widdecombe"] },
+          "con": { "label": "The Church is not a force for good", "speakers": ["Stephen Fry", "Christopher Hitchens"] }
+        }
+      },
+      {
+        "number": "192",
+        "debateId": "tour-swamidass-origin-life-chemistry-2020",
+        "videoId": "yJgr38h_3H0",
+        "stratum": "origin-of-life scientific explanatory comparison",
+        "motion": "Has science come meaningfully close to explaining how life first arose from nonliving chemistry?",
+        "sides": {
+          "pro": { "label": "Science is nowhere close", "speakers": ["James Tour"] },
+          "con": { "label": "Limited clues justify agnosticism", "speakers": ["S. Joshua Swamidass"] }
+        }
+      }
+    ]
+  },
+  "inventoryProtocol": {
+    "movesPerDebate": 12,
+    "constructiveMovesPerSide": 2,
+    "responsiveMovesTotal": 8,
+    "minimumMovesPerSide": 4,
+    "sourceExcerptWords": { "minimum": 30, "maximum": 90 },
+    "targetExcerptWords": { "minimum": 15, "maximum": 90 },
+    "singleSpeakerAtomicActRequired": true,
+    "highSpeakerConfidenceOrVerifiedAudioRequired": true,
+    "freshIndependentReviewRequired": true,
+    "thirdReviewTriggers": ["meaning", "sampling", "speaker-ownership", "burden-route-or-tier", "atomicity", "target-packet", "component-graph", "target-recency"]
+  },
+  "derivationRules": {
+    "componentContact": "non-null qualifying operation=>addressed; null=>not-addressed; no propagation through graph edges",
+    "coverage": "constructive=>not-applicable; responsive substituted=>substitution; preserved all components operated=>full; preserved some=>partial; preserved none plus cited relevant contrary material=>relevant-nonanswer; otherwise substitution",
+    "diagnostic": "defectType != none AND defectEvidence present AND targetImpactExplicit true AND impactEvidence present",
+    "reframe": "malformedDemandExplained true with evidence AND replacementDemandStated true with evidence",
+    "burdenRelation": "null route=>unadopted-or-irrelevant; no bridge contact=>topical-peripheral; otherwise highest contacted tier motion=>completes, central=>advances-central, subsidiary=>advances-sub-burden"
+  },
+  "annotationGates": {
+    "componentContactMicroExactMinimum": 0.9,
+    "responsiveTargetRelationExactMinimum": 0.9,
+    "coverageExactAgreementMinimum": 0.85,
+    "coverageKappaMinimum": 0.75,
+    "responsiveCoverageExactMinimum": 0.8,
+    "diagnosticFlagExactAgreementMinimum": 0.9,
+    "reframeFlagExactAgreementMinimum": 0.9,
+    "mechanismPositiveCountMinimum": 3,
+    "burdenRelationExactAgreementMinimum": 0.8,
+    "burdenRelationKappaMinimum": 0.7,
+    "exactDerivedTupleAgreementMinimum": 0.7,
+    "defectTypeExactMinimum": 0.85,
+    "targetImpactExplicitExactMinimum": 0.9,
+    "malformedDemandExplainedExactMinimum": 0.9,
+    "replacementDemandStatedExactMinimum": 0.9,
+    "contactedBridgeSetExactMinimum": 0.8
+  },
+  "debateLevelGates": {
+    "responsiveTargetRelationExactMinimum": 0.75,
+    "componentContactMicroExactMinimum": 0.8,
+    "responsiveCoverageExactMinimum": 0.75
+  },
+  "reportedDiagnostics": {
+    "componentOperationMicroExact": "reported but not a promotion gate"
+  },
+  "hardGates": {
+    "moveCount": 36,
+    "responsiveMoveCount": 24,
+    "inventoryAtomicityViolationsMaximum": 0,
+    "targetPacketViolationsMaximum": 0,
+    "burdenRouteViolationsMaximum": 0,
+    "componentGraphViolationsMaximum": 0,
+    "componentOverlapViolationsMaximum": 0,
+    "targetRecencyViolationsMaximum": 0,
+    "inventoryReviewViolationsMaximum": 0,
+    "sourceHashMismatchesMaximum": 0,
+    "evidenceOffsetErrorsMaximum": 0,
+    "derivationMismatchesMaximum": 0,
+    "unresolvedSpeakerAttributionsMaximum": 0,
+    "unresolvedAnnotationDisagreementsMaximum": 0,
+    "movesMissingFinalLockMaximum": 0,
+    "schemaVariantsMaximum": 1,
+    "prohibitedInputContaminationMaximum": 0
+  },
+  "readinessRule": {
+    "passedGate": "Authorizes only preregistration of a complete v2.6 three-debate numerical gate.",
+    "tenDebateGate": "Not authorized by this annotation-only gate.",
+    "corpusWide": "Not authorized."
+  },
+  "decision": {
+    "heldOutAnnotationGate": "pending",
+    "completeNumericalGate": "not-authorized",
+    "tenDebateGate": "not-authorized",
+    "corpusWide": "not-ready"
+  }
+}
