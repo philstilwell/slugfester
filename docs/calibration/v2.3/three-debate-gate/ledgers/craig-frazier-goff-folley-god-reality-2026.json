@@ -1,0 +1,2877 @@
+{
+  "schemaVersion": "2.3",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.3",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.3",
+  "calibrationOnly": true,
+  "debateId": "craig-frazier-goff-folley-god-reality-2026",
+  "debateNumber": "95",
+  "model": "5.6 Sol",
+  "sourceManifest": "docs/calibration/v2.1/source-manifests/craig-frazier-goff-folley-god-reality-2026.json",
+  "blindPacketSha256": "23607c3521c15867281d67dc22eb34c4b61f5a1b51ef28122566ebb98f33f29b",
+  "gateManifestSha256": "ce907cfa1eb1142ada54fdeec3cf265d6209377e875a8b4dd5e8a4a5fcb02a1d",
+  "inventorySha256": "3a2bc656672c1eb1779a38ed77f19fdd65875ae739f62cf3b15dc7944f910d01",
+  "audioVerificationSha256": "e8e6b2c27f851c19643778c0d966974f7a31df705e475fbac4846dcdc1e76a8b",
+  "responseLockSha256": "266731d350c30bcf6bcc1d53bee23fcc4831c1a7a9eb75aa6bd86bab8d6d4571",
+  "passASha256": "c4a1e681f9ccf3e80ae957b8d674b7edeb57dd965a5cab686cd24b2d0b9317d8",
+  "passBSha256": "f09cd49cefd67eb1fa7ad521567b391af90d6079967d1db0510e9ad65baece7c",
+  "scoreAdjudicationSha256": "f22869d63df842991df037c6c6d7ab9b1be7f1b864e3efde5f3203896d98d811",
+  "classificationLock": {
+    "exactClassAgreement": 0.5,
+    "exactClassDisagreementRate": 0.5,
+    "cohensKappa": 0.3969,
+    "classifierASha256": "5f98d8620b9d5c9f99b54a4202c413bb8d5fca52515fd40df5982046b2f599e0",
+    "classifierBSha256": "7cc0cd91935352772319794e65e7137832aab87673fbd0efdaca5182bd3b51d0"
+  },
+  "assessmentPasses": {
+    "passA": {
+      "model": "5.6 Sol",
+      "completedAt": "2026-08-03T01:44:07Z",
+      "contextIsolation": "This fresh isolated scoring pass used exactly the ten allowed inputs listed here. It did not access raw classifier passes, another scoring pass, prior scores or classes, legacy assessments, critiques, tags, commentary, or AI Extensions.",
+      "schemaValidated": true
+    },
+    "passB": {
+      "model": "5.6 Sol",
+      "completedAt": "2026-08-03T01:44:12Z",
+      "contextIsolation": "Pass B was completed in a fresh isolated scoring task using only the ten listed inputs; no raw classifier pass, Pass A artifact, legacy assessment, prior score, critique, tag, commentary, or AI Extension was accessed.",
+      "schemaValidated": true
+    }
+  },
+  "passIndependence": {
+    "level": "separate-classification-lock-and-isolated-5.6-Sol-scoring-tasks",
+    "passAAccessedPassB": false,
+    "passBAccessedPassA": false,
+    "rawClassifierPassesAccessedByScorers": false,
+    "legacyAssessmentAccessed": false
+  },
+  "burdens": [
+    {
+      "id": "P-B1",
+      "side": "pro",
+      "description": "Show that physical reality has an ultimately personal, transcendent creator rather than being brute, necessary, or grounded impersonally.",
+      "successCriteria": "Give a defensible route from features of physical reality to a personal transcendent cause and answer the principal rival-grounding objections raised in the exchange."
+    },
+    {
+      "id": "P-B2",
+      "side": "pro",
+      "description": "Show that classical theism supplies objective meaning and moral obligation in a way the alternatives do not.",
+      "successCriteria": "Explain both the grounding and normative authority of meaning and duty, and answer challenges about arbitrariness, coercion, and independently accessible value."
+    },
+    {
+      "id": "P-B3",
+      "side": "pro",
+      "description": "Defend classical-theist epistemic controls against rival mystical and pluralist accounts.",
+      "successCriteria": "Provide public or otherwise discriminating grounds for the classical account and identify non-question-begging defeaters for competing experience-based claims."
+    },
+    {
+      "id": "C-B1",
+      "side": "con",
+      "speaker": "Jessica Frazier",
+      "description": "Develop an impersonal or non-dual account of cosmic unity, order, emergence, and value that is not reducible to classical theism.",
+      "successCriteria": "State the alternative's explanatory structure and show how it accounts for relevant features without merely renaming them divine."
+    },
+    {
+      "id": "C-B2",
+      "side": "con",
+      "speaker": "Philip Goff",
+      "description": "Defend a consciousness-involving, limited-God alternative that accommodates existence, fine-tuning, mystical experience, and suffering.",
+      "successCriteria": "Connect the experience and metaphysics through an intelligible inference, avoid contradiction, and explain how divine limitation addresses suffering."
+    },
+    {
+      "id": "C-B3",
+      "side": "con",
+      "speaker": "Joe Folley",
+      "description": "Challenge the necessity of classical theism for meaning and normativity while maintaining an appropriately agnostic posture on cosmic origins.",
+      "successCriteria": "Distinguish kinds of meaning, explain constraints on valuation or obligation, and identify what theistic authority adds without treating uncertainty as a contrary proof."
+    },
+    {
+      "id": "C-B4",
+      "side": "con",
+      "description": "Test whether the pro case establishes classical theism rather than only some cause, ground, value source, or religious interpretation.",
+      "successCriteria": "Expose an unearned inference from shared or ambiguous evidence to the specifically classical-theist conclusion."
+    }
+  ],
+  "sectionWeightsLockedBeforeScoring": true,
+  "moveImportanceLockedBeforeScoring": true,
+  "responseClassesLockedBeforeScoring": true,
+  "sections": [
+    {
+      "id": "S1",
+      "title": "Cosmic explanation and comparative scope",
+      "weightPercent": 22,
+      "weightRationale": "The motion centrally asks where physical reality came from and which worldview explains it; this section therefore receives the largest weight without treating Craig's enumerated but mostly undeveloped arguments as six separate successes.",
+      "sides": {
+        "pro": {
+          "moves": [
+            {
+              "id": "S1-M1",
+              "speaker": "William Lane Craig",
+              "timestamp": "00:04:09",
+              "sourceSpan": {
+                "start": "00:04:09",
+                "end": "00:04:34.800"
+              },
+              "sourceExcerpt": "In the course of my philosophical work, I've defended six arguments for God's existence in support of a positive answer to that question. First, God is the best explanation of why anything at all exists rather than just nothing. Second, God is the best explanation of the absolute beginning of the universe at a point in the finite past.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "P-B1"
+              ],
+              "respondsToIds": [],
+              "importance": 3,
+              "lockedResponseClass": "constructive-opening",
+              "responseLockTargetMoveIds": [],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 50,
+                  "responsiveness": 78,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 69
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 62,
+                  "representationalCharity": 75,
+                  "combined": 69
+                },
+                "rationale": "The move clearly establishes the pro case's central route and is precise enough to audit, but it remains an enumerated assertion rather than a developed best-explanation argument. Charity is genuinely not tested by this constructive act, so the fixed value of 75 is used.",
+                "lockedResponseClass": "constructive-opening"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 52,
+                  "responsiveness": 78,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 72
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 68,
+                  "representationalCharity": 75,
+                  "combined": 72
+                },
+                "rationale": "The two routes are clear and central to P-B1, yet their inferential bridges remain mostly enumerated rather than defended. The constructive contribution is substantial but incomplete, and charity is not genuinely tested in this opening act.",
+                "lockedResponseClass": "constructive-opening"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 1,
+                "evidenceWarrant": 2,
+                "responsiveness": 0,
+                "relevanceBurden": 8,
+                "precisionClarity": 6,
+                "calibrationCharity": 3
+              },
+              "maxDimensionDelta": 8,
+              "passAScore": 70,
+              "passBScore": 73,
+              "scoreDelta": 3,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 65,
+                "representationalCharity": 75,
+                "combined": 70
+              },
+              "finalDimensions": {
+                "logicalCoherence": 72,
+                "evidenceWarrant": 51,
+                "responsiveness": 78,
+                "relevanceBurden": 82,
+                "precisionClarity": 85,
+                "calibrationCharity": 70
+              },
+              "finalScore": 72
+            },
+            {
+              "id": "S1-M5",
+              "speaker": "William Lane Craig",
+              "timestamp": "01:25:18",
+              "sourceSpan": {
+                "start": "01:25:18",
+                "end": "01:26:42.800"
+              },
+              "sourceExcerpt": "The reality of temporal becoming is more evident to us than the reality of the external world because we sense temporal becoming in the inner life of the mind, the thoughts that succeed one another as well as in the external world. So, that's I think a quite hopeless defeater of the argument against the infinitude of the past to try to appeal to this tenseless theory of time.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "P-B1"
+              ],
+              "respondsToIds": [
+                "S1-M4"
+              ],
+              "importance": 2,
+              "lockedResponseClass": "full-answer",
+              "responseLockTargetMoveIds": [],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 87,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 66
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 65,
+                  "representationalCharity": 66,
+                  "combined": 66
+                },
+                "rationale": "All indispensable parts of the audience objection are covered, warranting full-answer responsiveness. The inferential force remains mixed because modal analogies and phenomenology do not by themselves establish a finite past, while calling the tenseless view a hopeless defeater is insufficiently calibrated and charitable.",
+                "lockedResponseClass": "full-answer"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 88,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 67
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 69,
+                  "representationalCharity": 64,
+                  "combined": 67
+                },
+                "rationale": "The response covers the compound audience objection and adds several mutually supporting routes. The claims that temporal becoming is more evident than the external world and that the tenseless reply is hopeless are stronger than the supplied warrant and do not present the rival theory charitably.",
+                "lockedResponseClass": "full-answer"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 3,
+                "evidenceWarrant": 4,
+                "responsiveness": 1,
+                "relevanceBurden": 2,
+                "precisionClarity": 6,
+                "calibrationCharity": 1
+              },
+              "maxDimensionDelta": 6,
+              "passAScore": 77,
+              "passBScore": 79,
+              "scoreDelta": 2,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 67,
+                "representationalCharity": 65,
+                "combined": 66
+              },
+              "finalDimensions": {
+                "logicalCoherence": 77,
+                "evidenceWarrant": 70,
+                "responsiveness": 88,
+                "relevanceBurden": 82,
+                "precisionClarity": 81,
+                "calibrationCharity": 66
+              },
+              "finalScore": 78
+            }
+          ],
+          "passAScore": 73,
+          "passBScore": 75,
+          "score": 74
+        },
+        "con": {
+          "moves": [
+            {
+              "id": "S1-M2",
+              "speaker": "Jessica Frazier",
+              "timestamp": "00:11:34",
+              "sourceSpan": {
+                "start": "00:11:34",
+                "end": "00:12:07.600"
+              },
+              "sourceExcerpt": "If we look at everything in the world around us, all these people, we tend to just see the objects, we need to remember to see the connections, the spaces, the continuum, the way in which everything we see is unified in some sense through causes, through space-time relations.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "C-B1",
+                "C-B4"
+              ],
+              "respondsToIds": [
+                "S1-M1"
+              ],
+              "importance": 2,
+              "lockedResponseClass": "constructive-opening",
+              "responseLockTargetMoveIds": [],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 72,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 70,
+                  "calibrationCharity": 71
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 67,
+                  "representationalCharity": 75,
+                  "combined": 71
+                },
+                "rationale": "This is a relevant starting point for an impersonal alternative, but the inference from ubiquitous relations to an explanatory cosmic unity remains compressed and the alternative's structure is not yet specified. Charity is genuinely not tested, so it receives exactly 75.",
+                "lockedResponseClass": "constructive-opening"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 73,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 77
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 78,
+                  "representationalCharity": 75,
+                  "combined": 77
+                },
+                "rationale": "The observations support a coherent relational starting point, but the move leaves the bridge from pervasive connection to an explanatory non-dual ground underdeveloped. It advances C-B1 without yet supplying its full explanatory structure; charity is not tested.",
+                "lockedResponseClass": "constructive-opening"
+              },
+              "adjudication": {
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 73,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 74
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 72,
+                  "representationalCharity": 75,
+                  "combined": 74
+                },
+                "rationale": "The span offers direct observations of causal and spacetime relations and names Bradley's regress, so it has more than bare assertion behind its relational starting point. But it does not state the regress or supply the bridge from pervasive relations to an explanatory cosmic unity, keeping evidence and warrant in the low mixed band. The act clearly establishes a necessary constructive sub-burden; its phrase 'in some sense' supplies useful calibration, and charity is not tested, so the fixed 75 anchor applies.",
+                "lockedResponseClass": "constructive-opening"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 4,
+                "evidenceWarrant": 10,
+                "responsiveness": 1,
+                "relevanceBurden": 1,
+                "precisionClarity": 6,
+                "calibrationCharity": 6
+              },
+              "maxDimensionDelta": 10,
+              "passAScore": 69,
+              "passBScore": 73,
+              "scoreDelta": 4,
+              "requiresAdjudication": true,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 72,
+                "representationalCharity": 75,
+                "combined": 74
+              },
+              "finalDimensions": {
+                "logicalCoherence": 69,
+                "evidenceWarrant": 62,
+                "responsiveness": 73,
+                "relevanceBurden": 75,
+                "precisionClarity": 72,
+                "calibrationCharity": 74
+              },
+              "finalScore": 70
+            },
+            {
+              "id": "S1-M3",
+              "speaker": "Philip Goff",
+              "timestamp": "00:16:54",
+              "sourceSpan": {
+                "start": "00:16:54",
+                "end": "00:17:35.200"
+              },
+              "sourceExcerpt": "I'm also very much persuaded by certain traditional arguments for God's existence, kind of like Bill likes, arguments rooted in the need to explain why the universe exists, why it's fine-tuned for life. The problem is though, I'm also completely persuaded by the most discussed argument against God's existence rooted in the need to explain why there's so much suffering in the world.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "C-B2",
+                "C-B4"
+              ],
+              "respondsToIds": [
+                "S1-M1"
+              ],
+              "importance": 3,
+              "lockedResponseClass": "constructive-opening",
+              "responseLockTargetMoveIds": [],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 78,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 84
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 81,
+                  "representationalCharity": 86,
+                  "combined": 84
+                },
+                "rationale": "The comparative framing is clear, fair, and central to Goff's adopted burden, but the selected act mainly announces the competing explanatory pressures rather than connecting them to a worked-out limited-God theory. Its balanced concessions support strong calibration and charity.",
+                "lockedResponseClass": "constructive-opening"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 79,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 85
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 82,
+                  "representationalCharity": 88,
+                  "combined": 85
+                },
+                "rationale": "The comparative tension is stated clearly and with notable fairness to the pro case. It centrally frames C-B2 and C-B4, but the selected act does not yet show how a limited God explains the accepted data or the observed suffering.",
+                "lockedResponseClass": "constructive-opening"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 2,
+                "evidenceWarrant": 3,
+                "responsiveness": 1,
+                "relevanceBurden": 2,
+                "precisionClarity": 3,
+                "calibrationCharity": 1
+              },
+              "maxDimensionDelta": 3,
+              "passAScore": 74,
+              "passBScore": 76,
+              "scoreDelta": 2,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 82,
+                "representationalCharity": 87,
+                "combined": 85
+              },
+              "finalDimensions": {
+                "logicalCoherence": 74,
+                "evidenceWarrant": 59,
+                "responsiveness": 79,
+                "relevanceBurden": 82,
+                "precisionClarity": 84,
+                "calibrationCharity": 85
+              },
+              "finalScore": 75
+            },
+            {
+              "id": "S1-M4",
+              "speaker": "Joe Folley",
+              "timestamp": "00:55:08",
+              "sourceSpan": {
+                "start": "00:55:08",
+                "end": "00:55:48.800"
+              },
+              "sourceExcerpt": "There's an attempt to use principles that are considered to be justified in order to trace something in the Kalam case, trace something back to the beginning of the universe and infer something about it. And then through the second stage we establish that cause has various properties and it begins to look like God.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "C-B3",
+                "C-B4"
+              ],
+              "respondsToIds": [
+                "S1-M1"
+              ],
+              "importance": 2,
+              "lockedResponseClass": "partial-answer",
+              "responseLockTargetMoveIds": [
+                "S1-M1"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 61,
+                  "relevanceBurden": 73,
+                  "precisionClarity": 71,
+                  "calibrationCharity": 86
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 83,
+                  "representationalCharity": 88,
+                  "combined": 86
+                },
+                "rationale": "The concession is unusually fair and calibrated, and it makes contact with one important route in Craig's opening. It remains a limited partial answer because the selected act neither reaches the independent contingency route nor fully develops the extrapolation objection.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 61,
+                  "relevanceBurden": 66,
+                  "precisionClarity": 69,
+                  "calibrationCharity": 87
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 89,
+                  "representationalCharity": 84,
+                  "combined": 87
+                },
+                "rationale": "The reconstruction is fair and explicitly modest, but the toy formulation is compressed and does not address the independent contingency component of S1-M1. Its limited target coverage fixes responsiveness in the lower partial-answer range.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 5,
+                "evidenceWarrant": 4,
+                "responsiveness": 0,
+                "relevanceBurden": 7,
+                "precisionClarity": 2,
+                "calibrationCharity": 1
+              },
+              "maxDimensionDelta": 7,
+              "passAScore": 70,
+              "passBScore": 66,
+              "scoreDelta": 4,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 86,
+                "representationalCharity": 86,
+                "combined": 86
+              },
+              "finalDimensions": {
+                "logicalCoherence": 71,
+                "evidenceWarrant": 60,
+                "responsiveness": 61,
+                "relevanceBurden": 70,
+                "precisionClarity": 70,
+                "calibrationCharity": 86
+              },
+              "finalScore": 68
+            }
+          ],
+          "passAScore": 71,
+          "passBScore": 72,
+          "score": 72
+        }
+      }
+    },
+    {
+      "id": "S2",
+      "title": "Creator, creation, and non-dual alternatives",
+      "weightPercent": 18,
+      "weightRationale": "The exchange directly tests whether explanatory dependence entails ontological separation, emanation, or overlap, an important discriminator among the represented worldviews.",
+      "sides": {
+        "pro": {
+          "moves": [
+            {
+              "id": "S2-M2",
+              "speaker": "William Lane Craig",
+              "timestamp": "00:47:25",
+              "sourceSpan": {
+                "start": "00:47:25",
+                "end": "00:47:56.400"
+              },
+              "sourceExcerpt": "There's a creator-creation distinction since the creation is material in space and time, but the creator is an immaterial, spiritual, transcendent reality that has brought the physical world into being. In this case, we would want to say, I think, that God is what you've called a self-natured being.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "P-B1"
+              ],
+              "respondsToIds": [
+                "S2-M1"
+              ],
+              "importance": 3,
+              "lockedResponseClass": "full-answer",
+              "responseLockTargetMoveIds": [
+                "S2-M1"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 88,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 80
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 79,
+                  "representationalCharity": 80,
+                  "combined": 80
+                },
+                "rationale": "The property and modal distinctions directly cover the live two-level comparison and clearly state the classical ontology, so responsiveness and burden relevance are strong. The conceptual scheme is asserted more than defended, leaving a bounded warrant gap despite high coherence and precision.",
+                "lockedResponseClass": "full-answer"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 84,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 80
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 81,
+                  "representationalCharity": 78,
+                  "combined": 80
+                },
+                "rationale": "The property contrast supplies a clear classical answer to the proposed similarity and directly advances P-B1. Its coverage is complete but compressed, while the move largely asserts rather than independently warrants the creator's modal and ontological status.",
+                "lockedResponseClass": "full-answer"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 1,
+                "evidenceWarrant": 2,
+                "responsiveness": 4,
+                "relevanceBurden": 2,
+                "precisionClarity": 1,
+                "calibrationCharity": 0
+              },
+              "maxDimensionDelta": 4,
+              "passAScore": 82,
+              "passBScore": 81,
+              "scoreDelta": 1,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 80,
+                "representationalCharity": 79,
+                "combined": 80
+              },
+              "finalDimensions": {
+                "logicalCoherence": 83,
+                "evidenceWarrant": 69,
+                "responsiveness": 86,
+                "relevanceBurden": 87,
+                "precisionClarity": 88,
+                "calibrationCharity": 80
+              },
+              "finalScore": 82
+            },
+            {
+              "id": "S2-M5",
+              "speaker": "William Lane Craig",
+              "timestamp": "00:52:27",
+              "sourceSpan": {
+                "start": "00:52:27",
+                "end": "00:52:58.200"
+              },
+              "sourceExcerpt": "If one circle of the Venn diagram represents everything that is timeless, immaterial, spaceless, necessarily existent, and the other circle represents everything that is temporal, material, contingent, then they cannot overlap. Those are self-contradictory. So, the area of overlap is a contradiction.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "P-B1",
+                "P-B3"
+              ],
+              "respondsToIds": [
+                "S2-M4"
+              ],
+              "importance": 3,
+              "lockedResponseClass": "diagnostic-defeat",
+              "responseLockTargetMoveIds": [
+                "S2-M4"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 58,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 87,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 53
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 54,
+                  "representationalCharity": 52,
+                  "combined": 53
+                },
+                "rationale": "The diagnosis is clear and would defeat overlap if its universal property assignment were correct, supporting high locked-class responsiveness. However, it builds the contradiction by treating the entire universe as essentially contingent and temporal, a premise Goff's shared-core proposal does not grant, so the reconstruction and certainty are materially uncharitable and overconfident.",
+                "lockedResponseClass": "diagnostic-defeat"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 83,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 59
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 63,
+                  "representationalCharity": 55,
+                  "combined": 59
+                },
+                "rationale": "The conditional contradiction is sharply stated and would defeat the overlap if its property assignment were accurate. Goff had located only a timeless uncreated core in the overlap, so treating the whole universe circle as uniformly contingent materially weakens his position and reduces warrant and charity.",
+                "lockedResponseClass": "diagnostic-defeat"
+              },
+              "adjudication": {
+                "dimensions": {
+                  "logicalCoherence": 66,
+                  "evidenceWarrant": 56,
+                  "responsiveness": 85,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 56
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 58,
+                  "representationalCharity": 54,
+                  "combined": 56
+                },
+                "rationale": "Craig states a valid conditional contradiction: entities with mutually exclusive temporal, material, and modal properties cannot occupy the same overlap. The route is therefore more coherent than Pass A's score suggests. Its scope is still materially defective because Goff had placed a timeless, spaceless, uncreated conscious core—not the contingent remainder of the universe—in the overlap; Craig supplies no warrant for assigning the whole universe circle the contrary properties. The diagnosis would defeat the target if its premise held, preserving high locked-class responsiveness, while overconfidence and the weaker reconstruction lower calibration and charity.",
+                "lockedResponseClass": "diagnostic-defeat"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 14,
+                "evidenceWarrant": 7,
+                "responsiveness": 4,
+                "relevanceBurden": 2,
+                "precisionClarity": 3,
+                "calibrationCharity": 6
+              },
+              "maxDimensionDelta": 14,
+              "passAScore": 71,
+              "passBScore": 73,
+              "scoreDelta": 2,
+              "requiresAdjudication": true,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 58,
+                "representationalCharity": 54,
+                "combined": 56
+              },
+              "finalDimensions": {
+                "logicalCoherence": 66,
+                "evidenceWarrant": 56,
+                "responsiveness": 85,
+                "relevanceBurden": 85,
+                "precisionClarity": 87,
+                "calibrationCharity": 56
+              },
+              "finalScore": 72
+            }
+          ],
+          "passAScore": 77,
+          "passBScore": 77,
+          "score": 77
+        },
+        "con": {
+          "moves": [
+            {
+              "id": "S2-M1",
+              "speaker": "Jessica Frazier",
+              "timestamp": "00:45:46",
+              "sourceSpan": {
+                "start": "00:45:46",
+                "end": "00:46:36.800"
+              },
+              "sourceExcerpt": "There's whatever creates the world. If you're a Thomist, they're the powers in God, the concepts in God that unfold and generate. And then there's the parts of God which are under it. And if you're a physicist, there's the Big Bang and the whatever it is that's generating space-time.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "C-B1",
+                "C-B4"
+              ],
+              "respondsToIds": [
+                "S1-M1"
+              ],
+              "importance": 2,
+              "lockedResponseClass": "partial-answer",
+              "responseLockTargetMoveIds": [],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 67,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 64,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 64,
+                  "calibrationCharity": 74
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 67,
+                  "representationalCharity": 80,
+                  "combined": 74
+                },
+                "rationale": "The examples answer the request for a non-classical bi-level structure and fairly acknowledge common ground with Christianity. They do not establish why the proposed supporting condition is explanatorily viable or how the analogies map precisely across the traditions, leaving a material component unanswered.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 68,
+                  "relevanceBurden": 73,
+                  "precisionClarity": 65,
+                  "calibrationCharity": 65
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 68,
+                  "representationalCharity": 62,
+                  "combined": 65
+                },
+                "rationale": "The comparison answers the request for a generative and supporting structure, but its analogies are loose and terms such as under, surrounding, and supporting are not distinguished. The treatment of Thomism is materially rough, and comparative viability remains open.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "adjudication": {
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 66,
+                  "relevanceBurden": 74,
+                  "precisionClarity": 65,
+                  "calibrationCharity": 66
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 67,
+                  "representationalCharity": 64,
+                  "combined": 66
+                },
+                "rationale": "Frazier supplies multiple examples of a generative level plus a supporting condition, answering one part of the prompted comparison while leaving comparative viability open. Her repeated qualifications temper the breadth of the claim, but the loose treatment of Thomist concepts as unfolding powers and especially of 'parts of God' materially misstates the strongest classical view on which the analogy depends. Charity is therefore below neutral while not collapsing into caricature; the rounded subrating mean is 66 and responsiveness remains within the locked partial-answer band.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 1,
+                "evidenceWarrant": 5,
+                "responsiveness": 4,
+                "relevanceBurden": 2,
+                "precisionClarity": 1,
+                "calibrationCharity": 9
+              },
+              "maxDimensionDelta": 9,
+              "passAScore": 68,
+              "passBScore": 67,
+              "scoreDelta": 1,
+              "requiresAdjudication": true,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 67,
+                "representationalCharity": 64,
+                "combined": 66
+              },
+              "finalDimensions": {
+                "logicalCoherence": 68,
+                "evidenceWarrant": 62,
+                "responsiveness": 66,
+                "relevanceBurden": 74,
+                "precisionClarity": 65,
+                "calibrationCharity": 66
+              },
+              "finalScore": 67
+            },
+            {
+              "id": "S2-M3",
+              "speaker": "Jessica Frazier",
+              "timestamp": "00:48:53",
+              "sourceSpan": {
+                "start": "00:48:53",
+                "end": "00:49:25.200"
+              },
+              "sourceExcerpt": "Emanationism gets given lots of different ontological sort of play outs, right? I mean, even Aquinas will say creation ex nihilo never means that God creates the world and then he's like, ‘That was great. I'm going away.’ In fact, that was a heresy. The universe, all that the divine creates, is always sustained.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "C-B1",
+                "C-B4"
+              ],
+              "respondsToIds": [
+                "S2-M2"
+              ],
+              "importance": 2,
+              "lockedResponseClass": "relevant-counterargument",
+              "responseLockTargetMoveIds": [
+                "S2-M2"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 63,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 82
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 78,
+                  "representationalCharity": 85,
+                  "combined": 82
+                },
+                "rationale": "Continuous sustaining is clear, relevant contrary material and is presented fairly, but it does not answer Craig's necessary-versus-contingent or by-versus-out-of distinctions. The counterargument therefore earns solid scores outside responsiveness while remaining within its locked 50–69 response band.",
+                "lockedResponseClass": "relevant-counterargument"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 61,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 80
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 77,
+                  "representationalCharity": 82,
+                  "combined": 80
+                },
+                "rationale": "Continuous sustaining materially narrows a simple separation contrast and is stated clearly. It does not answer Craig's creation-by rather than creation-out-of distinction or the necessary-versus-contingent property assignment, so the locked counterargument remains only moderately responsive.",
+                "lockedResponseClass": "relevant-counterargument"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 1,
+                "evidenceWarrant": 0,
+                "responsiveness": 2,
+                "relevanceBurden": 0,
+                "precisionClarity": 1,
+                "calibrationCharity": 2
+              },
+              "maxDimensionDelta": 2,
+              "passAScore": 73,
+              "passBScore": 73,
+              "scoreDelta": 0,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 78,
+                "representationalCharity": 84,
+                "combined": 81
+              },
+              "finalDimensions": {
+                "logicalCoherence": 76,
+                "evidenceWarrant": 72,
+                "responsiveness": 62,
+                "relevanceBurden": 72,
+                "precisionClarity": 81,
+                "calibrationCharity": 81
+              },
+              "finalScore": 73
+            },
+            {
+              "id": "S2-M4",
+              "speaker": "Philip Goff",
+              "timestamp": "00:51:03",
+              "sourceSpan": {
+                "start": "00:51:03",
+                "end": "00:51:42"
+              },
+              "sourceExcerpt": "Think of a Venn diagram where you've got the bit of God that's wholly other, that's completely separate from the universe; the bit of the universe or the nature of the universe which is wholly separate to God; and then the bit in the middle, like a Venn diagram.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "C-B2",
+                "C-B4"
+              ],
+              "respondsToIds": [
+                "S2-M2"
+              ],
+              "importance": 3,
+              "lockedResponseClass": "relevant-counterargument",
+              "responseLockTargetMoveIds": [
+                "S2-M2"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 64,
+                  "evidenceWarrant": 48,
+                  "responsiveness": 67,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 72
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 65,
+                  "representationalCharity": 78,
+                  "combined": 72
+                },
+                "rationale": "The overlap model is substantive and central to Goff's burden, but the selected act does not yet answer Craig's reasons for strict separation. Its crucial identification of experienced pure consciousness with a necessary shared core is asserted without an evidential bridge, limiting coherence and warrant.",
+                "lockedResponseClass": "relevant-counterargument"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 67,
+                  "evidenceWarrant": 52,
+                  "responsiveness": 62,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 76
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 73,
+                  "representationalCharity": 78,
+                  "combined": 76
+                },
+                "rationale": "The rival ontology is intelligible enough to pressure P-B1 and centrally advances C-B2, but the metaphor does not itself establish the shared entity or reconcile its categories. Evidence rests on the earlier experience without a defended bridge in this span.",
+                "lockedResponseClass": "relevant-counterargument"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 3,
+                "evidenceWarrant": 4,
+                "responsiveness": 5,
+                "relevanceBurden": 0,
+                "precisionClarity": 3,
+                "calibrationCharity": 4
+              },
+              "maxDimensionDelta": 5,
+              "passAScore": 66,
+              "passBScore": 66,
+              "scoreDelta": 0,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 69,
+                "representationalCharity": 78,
+                "combined": 74
+              },
+              "finalDimensions": {
+                "logicalCoherence": 66,
+                "evidenceWarrant": 50,
+                "responsiveness": 65,
+                "relevanceBurden": 80,
+                "precisionClarity": 74,
+                "calibrationCharity": 74
+              },
+              "finalScore": 66
+            },
+            {
+              "id": "S2-M6",
+              "speaker": "Philip Goff",
+              "timestamp": "00:52:59",
+              "sourceSpan": {
+                "start": "00:52:59",
+                "end": "00:53:31.200"
+              },
+              "sourceExcerpt": "I wouldn't define the physical universe as essentially contingent then. I think most of it is, but I think there's something at the core of the universe, there's something at the core of you, Bill, and at the core of me that is necessary, timeless, uncreated. And that's where the overlap is.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "C-B2"
+              ],
+              "respondsToIds": [
+                "S2-M5"
+              ],
+              "importance": 3,
+              "lockedResponseClass": "diagnostic-defeat",
+              "responseLockTargetMoveIds": [
+                "S2-M5"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 52,
+                  "responsiveness": 90,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 77
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 67,
+                  "representationalCharity": 86,
+                  "combined": 77
+                },
+                "rationale": "This directly identifies the premise generating Craig's contradiction and explains why removing it dissolves the diagnosis, earning explicit diagnostic responsiveness. The reply is logically stable and fair but still treats the existence and necessity of the proposed conscious core as an unsupported metaphysical assertion.",
+                "lockedResponseClass": "diagnostic-defeat"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 52,
+                  "responsiveness": 91,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 82
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 78,
+                  "representationalCharity": 86,
+                  "combined": 82
+                },
+                "rationale": "The diagnosis directly removes the contradiction in Craig's reconstruction and clearly distinguishes most contingent universe from the proposed shared core. It is highly responsive and coherent, although the existence and consciousness of that core remain asserted rather than independently supported.",
+                "lockedResponseClass": "diagnostic-defeat"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 4,
+                "evidenceWarrant": 0,
+                "responsiveness": 1,
+                "relevanceBurden": 3,
+                "precisionClarity": 5,
+                "calibrationCharity": 5
+              },
+              "maxDimensionDelta": 5,
+              "passAScore": 76,
+              "passBScore": 78,
+              "scoreDelta": 2,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 73,
+                "representationalCharity": 86,
+                "combined": 80
+              },
+              "finalDimensions": {
+                "logicalCoherence": 80,
+                "evidenceWarrant": 52,
+                "responsiveness": 91,
+                "relevanceBurden": 85,
+                "precisionClarity": 82,
+                "calibrationCharity": 80
+              },
+              "finalScore": 78
+            }
+          ],
+          "passAScore": 71,
+          "passBScore": 71,
+          "score": 71
+        }
+      }
+    },
+    {
+      "id": "S3",
+      "title": "Mystical experience and public warrant",
+      "weightPercent": 22,
+      "weightRationale": "Mystical experience supplies Goff's principal evidence and generates sustained replies about cognitive content, defeaters, and public accessibility; it is tied with cosmic explanation for highest weight.",
+      "sides": {
+        "pro": {
+          "moves": [
+            {
+              "id": "S3-M2",
+              "speaker": "William Lane Craig",
+              "timestamp": "00:24:37",
+              "sourceSpan": {
+                "start": "00:24:37",
+                "end": "00:25:21.200"
+              },
+              "sourceExcerpt": "Once one starts appealing to these sorts of mystical experiences to justify your worldview, it seems to me that you've lost all controls on objectivity and on truth. I too could claim what you would probably call a mystical experience, namely, at the age of sixteen, after six months of the most intense soul-searching I've ever been through, I was spiritually born again.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "P-B3"
+              ],
+              "respondsToIds": [
+                "S3-M1"
+              ],
+              "importance": 3,
+              "lockedResponseClass": "diagnostic-defeat",
+              "responseLockTargetMoveIds": [
+                "S3-M1"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 91,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 77
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 77,
+                  "representationalCharity": 77,
+                  "combined": 77
+                },
+                "rationale": "The underdetermination diagnosis reaches the decisive missing bridge from private experience to worldview and would defeat that inference if unanswered. The personal counterexample makes the issue vivid, though the phrase that all truth controls are lost overstates the conclusion and the span does not independently validate Craig's preferred controls.",
+                "lockedResponseClass": "diagnostic-defeat"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 88,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 76
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 75,
+                  "representationalCharity": 77,
+                  "combined": 76
+                },
+                "rationale": "The rival experience makes the missing discriminator explicit and directly advances P-B3. Saying that all objectivity and truth controls are lost overstates the diagnosis, but the selected act fairly targets Goff's worldview inference rather than denying that an experience occurred.",
+                "lockedResponseClass": "diagnostic-defeat"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 2,
+                "evidenceWarrant": 2,
+                "responsiveness": 3,
+                "relevanceBurden": 2,
+                "precisionClarity": 0,
+                "calibrationCharity": 1
+              },
+              "maxDimensionDelta": 3,
+              "passAScore": 83,
+              "passBScore": 82,
+              "scoreDelta": 1,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 76,
+                "representationalCharity": 77,
+                "combined": 77
+              },
+              "finalDimensions": {
+                "logicalCoherence": 83,
+                "evidenceWarrant": 69,
+                "responsiveness": 90,
+                "relevanceBurden": 90,
+                "precisionClarity": 86,
+                "calibrationCharity": 77
+              },
+              "finalScore": 82
+            },
+            {
+              "id": "S3-M6",
+              "speaker": "William Lane Craig",
+              "timestamp": "00:53:43",
+              "sourceSpan": {
+                "start": "00:53:43",
+                "end": "00:54:15.600"
+              },
+              "sourceExcerpt": "How do you know, Philip, that your mystical experience was not an experience of the orthodox God? How do you know that it was this indescribable, self-contradictory, strange God, especially since there doesn't seem to be any cognitive content to differentiate it? Maybe you had an experience of the orthodox God.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "P-B3"
+              ],
+              "respondsToIds": [
+                "S3-M3",
+                "S3-M5"
+              ],
+              "importance": 3,
+              "lockedResponseClass": "diagnostic-defeat",
+              "responseLockTargetMoveIds": [
+                "S3-M3"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 92,
+                  "relevanceBurden": 93,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 70
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 79,
+                  "representationalCharity": 61,
+                  "combined": 70
+                },
+                "rationale": "This isolates the exact missing discriminator and states its consequence clearly, making it a strong diagnostic defeat of the selected worldview inference. The added labels 'self-contradictory' and 'strange' import a contested caricature of Goff's account, so charity is materially lower even though the core objection remains strong.",
+                "lockedResponseClass": "diagnostic-defeat"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 91,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 73
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 77,
+                  "representationalCharity": 68,
+                  "combined": 73
+                },
+                "rationale": "The question pinpoints the decisive missing bridge and its worldview-level consequence, making it highly responsive to P-B3. Calling Goff's God self-contradictory and treating the report as contentless understates Goff's proposed content, so charity is materially reduced.",
+                "lockedResponseClass": "diagnostic-defeat"
+              },
+              "adjudication": {
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 92,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 71
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 78,
+                  "representationalCharity": 64,
+                  "combined": 71
+                },
+                "rationale": "Craig's question identifies the decisive underdetermination: the reported experience needs some feature favoring Goff's non-orthodox interpretation over an orthodox-God interpretation. The preceding exchange supplies a real basis for asking for that discriminator, but Craig overstates it by saying there appears to be no cognitive content after Goff had described timeless, uncreated, non-individuated content. Evidence and warrant are therefore mixed rather than strong. The core diagnosis is explicit, central, and potentially defeating, sustaining very high locked-class responsiveness, while the loaded labels 'self-contradictory' and 'strange' reduce charity.",
+                "lockedResponseClass": "diagnostic-defeat"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 4,
+                "evidenceWarrant": 12,
+                "responsiveness": 1,
+                "relevanceBurden": 5,
+                "precisionClarity": 4,
+                "calibrationCharity": 3
+              },
+              "maxDimensionDelta": 12,
+              "passAScore": 85,
+              "passBScore": 81,
+              "scoreDelta": 4,
+              "requiresAdjudication": true,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 78,
+                "representationalCharity": 64,
+                "combined": 71
+              },
+              "finalDimensions": {
+                "logicalCoherence": 86,
+                "evidenceWarrant": 67,
+                "responsiveness": 92,
+                "relevanceBurden": 90,
+                "precisionClarity": 87,
+                "calibrationCharity": 71
+              },
+              "finalScore": 83
+            }
+          ],
+          "passAScore": 84,
+          "passBScore": 82,
+          "score": 83
+        },
+        "con": {
+          "moves": [
+            {
+              "id": "S3-M1",
+              "speaker": "Philip Goff",
+              "timestamp": "00:23:12",
+              "sourceSpan": {
+                "start": "00:23:12",
+                "end": "00:23:47.200"
+              },
+              "sourceExcerpt": "Neurophysiologically, what it looks like it's doing is suppressing, stopping neural activity, not creating new neural activity like you imagine in a hallucination. Imagine my mind is a light bulb wrapped in cotton wool. The cotton wool is what's particular to me, Philip Goff, and the light bulb is this pure consciousness.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "C-B2"
+              ],
+              "respondsToIds": [],
+              "importance": 3,
+              "lockedResponseClass": "full-answer",
+              "responseLockTargetMoveIds": [],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 60,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 86,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 68
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 57,
+                  "representationalCharity": 78,
+                  "combined": 68
+                },
+                "rationale": "The act covers both fabrication and disclosure components of the drug-causation objection, so it is structurally complete. Neural suppression does not itself favor metaphysical disclosure over altered processing, and the filter metaphor adds compatibility rather than comparative evidence, making the conclusion materially underwarranted and overconfident.",
+                "lockedResponseClass": "full-answer"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 63,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 84,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 70
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 65,
+                  "representationalCharity": 74,
+                  "combined": 70
+                },
+                "rationale": "The answer covers both drug causation and a proposed disclosure mechanism, satisfying the locked full-answer coverage. Neural suppression is compatible with the filter account but does not establish it, and the contrast with hallucination is too simple to bear the metaphysical conclusion.",
+                "lockedResponseClass": "full-answer"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 3,
+                "evidenceWarrant": 5,
+                "responsiveness": 2,
+                "relevanceBurden": 2,
+                "precisionClarity": 7,
+                "calibrationCharity": 2
+              },
+              "maxDimensionDelta": 7,
+              "passAScore": 72,
+              "passBScore": 71,
+              "scoreDelta": 1,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 61,
+                "representationalCharity": 76,
+                "combined": 69
+              },
+              "finalDimensions": {
+                "logicalCoherence": 62,
+                "evidenceWarrant": 62,
+                "responsiveness": 85,
+                "relevanceBurden": 81,
+                "precisionClarity": 78,
+                "calibrationCharity": 69
+              },
+              "finalScore": 72
+            },
+            {
+              "id": "S3-M3",
+              "speaker": "Philip Goff",
+              "timestamp": "00:36:10",
+              "sourceSpan": {
+                "start": "00:36:10",
+                "end": "00:36:50"
+              },
+              "sourceExcerpt": "You can't get outside of your consciousness and check whether it's corresponding to reality. So, what do you do? You've just got to decide which experiences seem most evident. And anybody who's had the experience I had—it is more compelling than anything in ordinary experience, far more compelling. Also, with this particular substance, it is very uniform.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "C-B2"
+              ],
+              "respondsToIds": [
+                "S3-M2"
+              ],
+              "importance": 3,
+              "lockedResponseClass": "partial-answer",
+              "responseLockTargetMoveIds": [
+                "S3-M2"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 67,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 68,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 58
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 54,
+                  "representationalCharity": 61,
+                  "combined": 58
+                },
+                "rationale": "The reply addresses one epistemic component by explaining why experience must serve as a starting point, but intensity does not establish veridicality and the uniformity claim is undocumented. It also weakens Craig's demand into an impossible direct correspondence check while leaving indirect controls and the rival Christian interpretation unresolved.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 66,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 70,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 67
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 68,
+                  "representationalCharity": 65,
+                  "combined": 67
+                },
+                "rationale": "The response answers the demand for an impossible external correspondence check and admits possible delusion. It does not answer indirect public controls or Craig's rival interpretation, and intensity plus uniformity do not by themselves establish metaphysical veridicality.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "adjudication": {
+                "dimensions": {
+                  "logicalCoherence": 66,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 69,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 62
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 61,
+                  "representationalCharity": 63,
+                  "combined": 62
+                },
+                "rationale": "Goff explicitly concedes possible delusion and the difficulty of the issue, which warrants materially more calibration than an unqualified assertion. That caution is offset by the unsupported claims that the experience is more compelling than ordinary experience for anyone who has it and is 'perfectly uniform.' He also accurately invokes Craig's know/show distinction but substitutes the impossibility of a direct external correspondence check for Craig's demand for indirect historical and rival-interpretation controls. The resulting subratings balance genuine caution with a material overclaim and a weakened target; responsiveness stays in the locked partial-answer range.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 1,
+                "evidenceWarrant": 6,
+                "responsiveness": 2,
+                "relevanceBurden": 2,
+                "precisionClarity": 1,
+                "calibrationCharity": 9
+              },
+              "maxDimensionDelta": 9,
+              "passAScore": 67,
+              "passBScore": 69,
+              "scoreDelta": 2,
+              "requiresAdjudication": true,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 61,
+                "representationalCharity": 63,
+                "combined": 62
+              },
+              "finalDimensions": {
+                "logicalCoherence": 66,
+                "evidenceWarrant": 60,
+                "responsiveness": 69,
+                "relevanceBurden": 76,
+                "precisionClarity": 75,
+                "calibrationCharity": 62
+              },
+              "finalScore": 67
+            },
+            {
+              "id": "S3-M4",
+              "speaker": "Joe Folley",
+              "timestamp": "00:40:03",
+              "sourceSpan": {
+                "start": "00:40:03",
+                "end": "00:40:50.800"
+              },
+              "sourceExcerpt": "I don't quite know what an unstructured cognitive content looks like. It seems like the really cool thing and the useful thing about cognitive content is that we can put it in structures and thus it can enter the public arena of discourse. It seems like cognitive content, at least as far as I can tell, would imply structure.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "C-B3",
+                "C-B4"
+              ],
+              "respondsToIds": [
+                "S3-M3"
+              ],
+              "importance": 2,
+              "lockedResponseClass": "diagnostic-defeat",
+              "responseLockTargetMoveIds": [],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 85,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 87
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 92,
+                  "representationalCharity": 82,
+                  "combined": 87
+                },
+                "rationale": "The conceptual diagnosis is explicit and would block public inference if content necessarily required the relevant structure. That necessity is asserted rather than demonstrated and phenomenological structure may differ from linguistic articulation, but Folley's repeated qualifications and invitation to correction are exceptionally well calibrated.",
+                "lockedResponseClass": "diagnostic-defeat"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 84,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 89
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 91,
+                  "representationalCharity": 86,
+                  "combined": 89
+                },
+                "rationale": "The move accurately isolates a tension in Goff's characterization and explains why it matters for public warrant. The claim that content implies articulable structure is plausible but not defended, while Folley's repeated qualifications make the confidence level proportionate.",
+                "lockedResponseClass": "diagnostic-defeat"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 6,
+                "evidenceWarrant": 3,
+                "responsiveness": 1,
+                "relevanceBurden": 1,
+                "precisionClarity": 3,
+                "calibrationCharity": 2
+              },
+              "maxDimensionDelta": 6,
+              "passAScore": 75,
+              "passBScore": 77,
+              "scoreDelta": 2,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 92,
+                "representationalCharity": 84,
+                "combined": 88
+              },
+              "finalDimensions": {
+                "logicalCoherence": 75,
+                "evidenceWarrant": 57,
+                "responsiveness": 85,
+                "relevanceBurden": 80,
+                "precisionClarity": 81,
+                "calibrationCharity": 88
+              },
+              "finalScore": 76
+            },
+            {
+              "id": "S3-M5",
+              "speaker": "Jessica Frazier",
+              "timestamp": "00:43:22",
+              "sourceSpan": {
+                "start": "00:43:22",
+                "end": "00:44:11.200"
+              },
+              "sourceExcerpt": "You might have to speak to experiences that go beyond the usual. The first time as a kid I experienced what it was like when the plane dives and you feel weightlessness, it was a new experience. It didn't mean it was not a veridical experience. It was just an unusual thing.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "C-B1",
+                "C-B4"
+              ],
+              "respondsToIds": [
+                "S3-M2",
+                "S3-M4"
+              ],
+              "importance": 2,
+              "lockedResponseClass": "partial-answer",
+              "responseLockTargetMoveIds": [
+                "S3-M4"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 62,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 72
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 76,
+                  "representationalCharity": 67,
+                  "combined": 72
+                },
+                "rationale": "The analogy gives a recoverable reason that novelty alone does not defeat experiential content and thus answers a limited component of the live objection. It does not supply publicly discriminating structure or evidence for Goff's metaphysical interpretation, and its verificationist characterization somewhat weakens the actual demand.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 66,
+                  "relevanceBurden": 68,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 81
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 82,
+                  "representationalCharity": 80,
+                  "combined": 81
+                },
+                "rationale": "The analogy supports the limited claim that unfamiliarity alone is not a defeater and is carefully qualified. It does not establish that the mystical report has public structure or favors any worldview, leaving the decisive evidential demand unresolved.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "adjudication": {
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 64,
+                  "relevanceBurden": 69,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 76
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 79,
+                  "representationalCharity": 73,
+                  "combined": 76
+                },
+                "rationale": "Frazier carefully limits the weightlessness analogy to the defensible point that novelty does not automatically imply fabrication, repeatedly using qualified language rather than claiming that unusual experience proves Goff's worldview. That supports strong calibration. She initially represents Folley's content concern accurately, but later recasts the public-warrant problem as a verificationist or logical-positivist rejection of unusual experience, omitting the demand for discriminating structure. Charity is therefore above neutral but not as high as Pass B's score; the move answers only the limited unfamiliarity component and remains within the partial-answer band.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 0,
+                "evidenceWarrant": 3,
+                "responsiveness": 4,
+                "relevanceBurden": 2,
+                "precisionClarity": 3,
+                "calibrationCharity": 9
+              },
+              "maxDimensionDelta": 9,
+              "passAScore": 69,
+              "passBScore": 70,
+              "scoreDelta": 1,
+              "requiresAdjudication": true,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 79,
+                "representationalCharity": 73,
+                "combined": 76
+              },
+              "finalDimensions": {
+                "logicalCoherence": 71,
+                "evidenceWarrant": 66,
+                "responsiveness": 64,
+                "relevanceBurden": 69,
+                "precisionClarity": 77,
+                "calibrationCharity": 76
+              },
+              "finalScore": 69
+            }
+          ],
+          "passAScore": 71,
+          "passBScore": 71,
+          "score": 71
+        }
+      }
+    },
+    {
+      "id": "S4",
+      "title": "Objective and subjective meaning",
+      "weightPercent": 18,
+      "weightRationale": "Meaning is explicit in the motion and opening cases, but the discussion concerns several distinct senses and is less directly developed than origins or mystical warrant.",
+      "sides": {
+        "pro": {
+          "moves": [
+            {
+              "id": "S4-M1",
+              "speaker": "William Lane Craig",
+              "timestamp": "00:02:29",
+              "sourceSpan": {
+                "start": "00:02:29",
+                "end": "00:03:17.200"
+              },
+              "sourceExcerpt": "Many atheists have recognized that if God does not exist, then our lives are ultimately meaningless. For no matter what we do, it really doesn't matter because everything winds up the same regardless. You can try to make up a meaning to your life, but that's purely subjective. That's just pretending that your life has meaning.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "P-B2"
+              ],
+              "respondsToIds": [],
+              "importance": 3,
+              "lockedResponseClass": "constructive-opening",
+              "responseLockTargetMoveIds": [],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 57,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 78,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 57
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 58,
+                  "representationalCharity": 55,
+                  "combined": 57
+                },
+                "rationale": "The move squarely establishes the central pro meaning burden and clearly distinguishes objective from subjective significance. Its main inference is underdeveloped because equal eventual outcomes do not by themselves erase earlier differences, while portraying atheistic meaning as pretending weakens the live alternative and overstates the warrant.",
+                "lockedResponseClass": "constructive-opening"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 58,
+                  "evidenceWarrant": 48,
+                  "responsiveness": 78,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 57
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 58,
+                  "representationalCharity": 55,
+                  "combined": 57
+                },
+                "rationale": "The act clearly opens the central P-B2 meaning route, but no bridge shows why eventual extinction eliminates present objective significance. Equating subjective or constructed meaning with pretending materially weakens the live alternative and exceeds the warrant supplied.",
+                "lockedResponseClass": "constructive-opening"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 1,
+                "evidenceWarrant": 7,
+                "responsiveness": 0,
+                "relevanceBurden": 2,
+                "precisionClarity": 7,
+                "calibrationCharity": 0
+              },
+              "maxDimensionDelta": 7,
+              "passAScore": 67,
+              "passBScore": 67,
+              "scoreDelta": 0,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 58,
+                "representationalCharity": 55,
+                "combined": 57
+              },
+              "finalDimensions": {
+                "logicalCoherence": 58,
+                "evidenceWarrant": 52,
+                "responsiveness": 78,
+                "relevanceBurden": 86,
+                "precisionClarity": 82,
+                "calibrationCharity": 57
+              },
+              "finalScore": 67
+            },
+            {
+              "id": "S4-M4",
+              "speaker": "William Lane Craig",
+              "timestamp": "00:27:20",
+              "sourceSpan": {
+                "start": "00:27:20",
+                "end": "00:28:00"
+              },
+              "sourceExcerpt": "I'm talking about meaning in an objective sense, not a subjective sense. Is there an objective meaning to human existence? And it seems to me to have an objective meaning, we need this external transcendent reality, God, to tell us what the objective meaning in life is. The meaning of life is to glorify God and to know him and enjoy him forever.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "P-B2"
+              ],
+              "respondsToIds": [
+                "S4-M2"
+              ],
+              "importance": 3,
+              "lockedResponseClass": "full-answer",
+              "responseLockTargetMoveIds": [
+                "S4-M2"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 54,
+                  "responsiveness": 84,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 72
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 64,
+                  "representationalCharity": 79,
+                  "combined": 72
+                },
+                "rationale": "The reply covers Folley's ambiguity challenge and supplies a clear relation between God and the selected sense, satisfying the locked full-answer structure. It largely stipulates rather than warrants why external assignment generates objective value, so coherence, evidence, and calibration remain materially limited.",
+                "lockedResponseClass": "full-answer"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 52,
+                  "responsiveness": 85,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 71
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 69,
+                  "representationalCharity": 73,
+                  "combined": 71
+                },
+                "rationale": "The clarification covers Folley's ambiguity challenge and states the proposed theistic relation with precision. It does not warrant why an external assignment becomes objective or valuable, and the surrounding dismissal of subjective meaning leaves the rival view underrepresented.",
+                "lockedResponseClass": "full-answer"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 0,
+                "evidenceWarrant": 2,
+                "responsiveness": 1,
+                "relevanceBurden": 2,
+                "precisionClarity": 5,
+                "calibrationCharity": 1
+              },
+              "maxDimensionDelta": 5,
+              "passAScore": 73,
+              "passBScore": 73,
+              "scoreDelta": 0,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 67,
+                "representationalCharity": 76,
+                "combined": 72
+              },
+              "finalDimensions": {
+                "logicalCoherence": 68,
+                "evidenceWarrant": 53,
+                "responsiveness": 85,
+                "relevanceBurden": 85,
+                "precisionClarity": 86,
+                "calibrationCharity": 72
+              },
+              "finalScore": 73
+            }
+          ],
+          "passAScore": 70,
+          "passBScore": 70,
+          "score": 70
+        },
+        "con": {
+          "moves": [
+            {
+              "id": "S4-M2",
+              "speaker": "Joe Folley",
+              "timestamp": "00:06:14",
+              "sourceSpan": {
+                "start": "00:06:14",
+                "end": "00:06:56.800"
+              },
+              "sourceExcerpt": "We hear ‘what is the meaning of life’ and we are necessarily fixed into a kind of reified view of the question. We think, ‘Okay, there must be this thing called meaning out there and we need to find it.’ If we look at the way that we use the term meaning, it seems to refer to different related but ultimately distinct things.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "C-B3",
+                "C-B4"
+              ],
+              "respondsToIds": [
+                "S4-M1"
+              ],
+              "importance": 3,
+              "lockedResponseClass": "justified-reframe",
+              "responseLockTargetMoveIds": [
+                "S4-M1"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 88,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 85
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 82,
+                  "representationalCharity": 88,
+                  "combined": 85
+                },
+                "rationale": "The defect in the unitary demand and the corrected polysemous inquiry are both explicit, complete, and fair to theistic possibilities. The selected span does not fully defend the taxonomy with independent evidence, but it provides a strong conceptual reframe central to the con burden.",
+                "lockedResponseClass": "justified-reframe"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 87,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 86
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 86,
+                  "representationalCharity": 86,
+                  "combined": 86
+                },
+                "rationale": "The move explicitly diagnoses the malformed unitary demand and answers a corrected polysemous inquiry. It also fairly grants that theism can increase some senses of meaning, producing a strong, precise, and well-calibrated challenge to P-B2.",
+                "lockedResponseClass": "justified-reframe"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 0,
+                "evidenceWarrant": 2,
+                "responsiveness": 1,
+                "relevanceBurden": 2,
+                "precisionClarity": 1,
+                "calibrationCharity": 1
+              },
+              "maxDimensionDelta": 2,
+              "passAScore": 83,
+              "passBScore": 83,
+              "scoreDelta": 0,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 84,
+                "representationalCharity": 87,
+                "combined": 86
+              },
+              "finalDimensions": {
+                "logicalCoherence": 84,
+                "evidenceWarrant": 73,
+                "responsiveness": 88,
+                "relevanceBurden": 86,
+                "precisionClarity": 88,
+                "calibrationCharity": 86
+              },
+              "finalScore": 84
+            },
+            {
+              "id": "S4-M3",
+              "speaker": "Jessica Frazier",
+              "timestamp": "00:28:17",
+              "sourceSpan": {
+                "start": "00:28:17",
+                "end": "00:29:09.200"
+              },
+              "sourceExcerpt": "If God says, ‘What I really want you to do is kick puppies, and if you do it really well, you'll get to heaven,’ your job is to say, ‘That's stupid. Even though you're God and you created me, I'm not going to do that. I have access to higher values.’ Just because you're created for something doesn't mean you have to value it.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "C-B1",
+                "C-B4"
+              ],
+              "respondsToIds": [
+                "S4-M1"
+              ],
+              "importance": 3,
+              "lockedResponseClass": "diagnostic-defeat",
+              "responseLockTargetMoveIds": [
+                "S4-M4"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 91,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 82
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 82,
+                  "representationalCharity": 82,
+                  "combined": 82
+                },
+                "rationale": "The counterexample exposes the missing creator-to-value bridge directly and would defeat the unqualified purpose inference without requiring a complete rival theory. It is clear, proportionate, and closely tied to the classical-theism discriminator, with only the underlying account of access to higher value left compressed.",
+                "lockedResponseClass": "diagnostic-defeat"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 89,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 78
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 78,
+                  "representationalCharity": 77,
+                  "combined": 78
+                },
+                "rationale": "The counterexample clearly exposes a missing purpose-to-value bridge and directly pressures P-B2 without requiring a complete rival theory. The move still asserts access to higher values rather than grounding them, but that gap does not undermine the narrow diagnosis.",
+                "lockedResponseClass": "diagnostic-defeat"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 2,
+                "evidenceWarrant": 6,
+                "responsiveness": 2,
+                "relevanceBurden": 3,
+                "precisionClarity": 0,
+                "calibrationCharity": 4
+              },
+              "maxDimensionDelta": 6,
+              "passAScore": 86,
+              "passBScore": 83,
+              "scoreDelta": 3,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 80,
+                "representationalCharity": 80,
+                "combined": 80
+              },
+              "finalDimensions": {
+                "logicalCoherence": 87,
+                "evidenceWarrant": 73,
+                "responsiveness": 90,
+                "relevanceBurden": 90,
+                "precisionClarity": 85,
+                "calibrationCharity": 80
+              },
+              "finalScore": 84
+            },
+            {
+              "id": "S4-M5",
+              "speaker": "Joe Folley",
+              "timestamp": "00:33:59",
+              "sourceSpan": {
+                "start": "00:33:59",
+                "end": "00:34:59.200"
+              },
+              "sourceExcerpt": "It's clearly not arbitrary in the sense that you can't choose to find anything meaningful. Even if we take a radically extreme subjectivist position on meaning, there are still broad limitations on what you can create. If you're a naturalist, then there are still going to be a limited number of things that most humans would be able to value.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "C-B3"
+              ],
+              "respondsToIds": [
+                "S4-M1",
+                "S4-M4"
+              ],
+              "importance": 2,
+              "lockedResponseClass": "partial-answer",
+              "responseLockTargetMoveIds": [
+                "S4-M4"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 66,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 85
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 84,
+                  "representationalCharity": 85,
+                  "combined": 85
+                },
+                "rationale": "The selected act directly answers unrestricted arbitrariness and does so with careful qualifications and a fair sense distinction. It does not explain why constrained valuation is objectively significant or answer Craig's extinction premise, so the omitted indispensable components keep responsiveness in the lower partial-answer band.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 70,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 89
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 91,
+                  "representationalCharity": 87,
+                  "combined": 89
+                },
+                "rationale": "The move directly answers unrestricted arbitrariness and carefully limits its claim, conceding that objectionable values may remain. It does not show stance-independent significance or answer Craig's extinction premise, so its partial-answer score remains bounded.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 1,
+                "evidenceWarrant": 2,
+                "responsiveness": 4,
+                "relevanceBurden": 5,
+                "precisionClarity": 3,
+                "calibrationCharity": 4
+              },
+              "maxDimensionDelta": 5,
+              "passAScore": 74,
+              "passBScore": 77,
+              "scoreDelta": 3,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 88,
+                "representationalCharity": 86,
+                "combined": 87
+              },
+              "finalDimensions": {
+                "logicalCoherence": 80,
+                "evidenceWarrant": 69,
+                "responsiveness": 68,
+                "relevanceBurden": 75,
+                "precisionClarity": 81,
+                "calibrationCharity": 87
+              },
+              "finalScore": 75
+            }
+          ],
+          "passAScore": 82,
+          "passBScore": 82,
+          "score": 82
+        }
+      }
+    },
+    {
+      "id": "S5",
+      "title": "Moral value, obligation, and authority",
+      "weightPercent": 20,
+      "weightRationale": "Objective moral obligation is one of Craig's six stated arguments and receives extended, direct engagement about value, oughtness, prudence, and authority.",
+      "sides": {
+        "pro": {
+          "moves": [
+            {
+              "id": "S5-M3",
+              "speaker": "William Lane Craig",
+              "timestamp": "01:06:26",
+              "sourceSpan": {
+                "start": "01:06:26",
+                "end": "01:07:19.200"
+              },
+              "sourceExcerpt": "Objectivity is not enough by itself to have objective moral values. We need some sort of oughtness: I ought to do this; I ought not to do that. This is a matter of moral duties. Moral duties arise from imperatives issued by a qualified authority. And God, as the paradigmatic good, is qualified to issue such moral commands to us.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "P-B2"
+              ],
+              "respondsToIds": [
+                "S5-M2"
+              ],
+              "importance": 3,
+              "lockedResponseClass": "full-answer",
+              "responseLockTargetMoveIds": [
+                "S5-M2"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 88,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 80
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 70,
+                  "representationalCharity": 90,
+                  "combined": 80
+                },
+                "rationale": "Both the value and enforcement components are addressed, and Craig fairly credits Folley's point, supporting full-answer responsiveness and central burden relevance. The crucial bridges from good nature to value and qualified authority to binding duty are asserted without comparison to rival accounts, limiting warrant and coherence.",
+                "lockedResponseClass": "full-answer"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 89,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 83
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 76,
+                  "representationalCharity": 90,
+                  "combined": 83
+                },
+                "rationale": "The two-part answer is explicit, charitable, and directly completes the central structure of P-B2. The authority-to-duty bridge and the qualification by God's nature are asserted rather than independently defended, limiting coherence and warrant despite complete coverage.",
+                "lockedResponseClass": "full-answer"
+              },
+              "adjudication": {
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 56,
+                  "responsiveness": 89,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 82
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 73,
+                  "representationalCharity": 90,
+                  "combined": 82
+                },
+                "rationale": "Craig clearly distinguishes moral values from duties, locates values in God's nature, and locates duties in commands from a qualified authority, so the two-part answer is precise and complete enough for high full-answer responsiveness. Precision falls short of Pass B's 91 because the opening claim that objectivity is insufficient for 'objective moral values' blurs the value-duty distinction before the subsequent clarification, and 'qualified authority' remains compressed. He fairly credits Folley's objection, while the unargued authority-to-duty and nature-to-value bridges keep evidence and coherence materially below the strongest bands.",
+                "lockedResponseClass": "full-answer"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 4,
+                "evidenceWarrant": 3,
+                "responsiveness": 1,
+                "relevanceBurden": 1,
+                "precisionClarity": 11,
+                "calibrationCharity": 3
+              },
+              "maxDimensionDelta": 11,
+              "passAScore": 77,
+              "passBScore": 80,
+              "scoreDelta": 3,
+              "requiresAdjudication": true,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 73,
+                "representationalCharity": 90,
+                "combined": 82
+              },
+              "finalDimensions": {
+                "logicalCoherence": 76,
+                "evidenceWarrant": 56,
+                "responsiveness": 89,
+                "relevanceBurden": 90,
+                "precisionClarity": 86,
+                "calibrationCharity": 82
+              },
+              "finalScore": 78
+            },
+            {
+              "id": "S5-M6",
+              "speaker": "William Lane Craig",
+              "timestamp": "01:08:37",
+              "sourceSpan": {
+                "start": "01:08:37",
+                "end": "01:09:14.800"
+              },
+              "sourceExcerpt": "What happens when your moral duty contradicts what prudence tells you to do? Self-interest and morality often come head-on into conflict. Theism provides a basis for doing your moral duty even at the expense of self-interest, and therefore following your moral obligations over your prudential interests. That's one more practical argument in support of a theistic perspective.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "P-B2"
+              ],
+              "respondsToIds": [
+                "S5-M2"
+              ],
+              "importance": 2,
+              "lockedResponseClass": "partial-answer",
+              "responseLockTargetMoveIds": [
+                "S5-M2"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 69,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 77
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 72,
+                  "representationalCharity": 82,
+                  "combined": 77
+                },
+                "rationale": "The move directly answers Folley's reduction of theistic moral force to prudential enforcement and states the conflict clearly. It does not explain how theism non-prudentially motivates duty or answer what objectivity itself contributes, leaving a material component unresolved and the positive warrant compressed.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 68,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 73
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 72,
+                  "representationalCharity": 74,
+                  "combined": 73
+                },
+                "rationale": "The conceptual distinction directly answers Folley's reduction of theistic force to prudence and advances P-B2. The move does not explain why theism supplies non-prudential motivation or what objectivity contributes, and eternal consequences could realign duty with prudence.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 2,
+                "evidenceWarrant": 0,
+                "responsiveness": 1,
+                "relevanceBurden": 4,
+                "precisionClarity": 2,
+                "calibrationCharity": 4
+              },
+              "maxDimensionDelta": 4,
+              "passAScore": 72,
+              "passBScore": 70,
+              "scoreDelta": 2,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 72,
+                "representationalCharity": 78,
+                "combined": 75
+              },
+              "finalDimensions": {
+                "logicalCoherence": 74,
+                "evidenceWarrant": 55,
+                "responsiveness": 69,
+                "relevanceBurden": 81,
+                "precisionClarity": 83,
+                "calibrationCharity": 75
+              },
+              "finalScore": 71
+            }
+          ],
+          "passAScore": 75,
+          "passBScore": 76,
+          "score": 75
+        },
+        "con": {
+          "moves": [
+            {
+              "id": "S5-M1",
+              "speaker": "Jessica Frazier",
+              "timestamp": "01:01:51",
+              "sourceSpan": {
+                "start": "01:01:51",
+                "end": "01:02:41.200"
+              },
+              "sourceExcerpt": "Hinduism says there are moral structures. If you're in the world and you're a consciousness and you're interacting with other consciousness, you have moral responsibilities. And since you are and I am and we all are here, we have those responsibilities. Hinduism is extremely invested in understanding what's called dharma, the structure of how the world around us works.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "C-B1",
+                "C-B4"
+              ],
+              "respondsToIds": [],
+              "importance": 3,
+              "lockedResponseClass": "justified-reframe",
+              "responseLockTargetMoveIds": [],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 88,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 80
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 73,
+                  "representationalCharity": 86,
+                  "combined": 80
+                },
+                "rationale": "The moderator's conflation is identified and the corrected moral question receives a clear answer, producing strong justified-reframe responsiveness. The positive route from interaction and dharmic structure to genuine obligation is asserted rather than explained, leaving a material warrant gap despite fair representation.",
+                "lockedResponseClass": "justified-reframe"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 87,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 83
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 80,
+                  "representationalCharity": 86,
+                  "combined": 83
+                },
+                "rationale": "The act explicitly corrects the moderator's conflation and answers the corrected moral-duty question, fairly representing the source of confusion. It advances C-B1 and C-B4, though conscious interaction and moral fabric are stated rather than fully grounded.",
+                "lockedResponseClass": "justified-reframe"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 1,
+                "evidenceWarrant": 5,
+                "responsiveness": 1,
+                "relevanceBurden": 1,
+                "precisionClarity": 2,
+                "calibrationCharity": 3
+              },
+              "maxDimensionDelta": 5,
+              "passAScore": 77,
+              "passBScore": 79,
+              "scoreDelta": 2,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 77,
+                "representationalCharity": 86,
+                "combined": 82
+              },
+              "finalDimensions": {
+                "logicalCoherence": 78,
+                "evidenceWarrant": 63,
+                "responsiveness": 88,
+                "relevanceBurden": 85,
+                "precisionClarity": 81,
+                "calibrationCharity": 82
+              },
+              "finalScore": 79
+            },
+            {
+              "id": "S5-M2",
+              "speaker": "Joe Folley",
+              "timestamp": "01:03:54",
+              "sourceSpan": {
+                "start": "01:03:54",
+                "end": "01:04:43.200"
+              },
+              "sourceExcerpt": "The mere objectivity of value seems to be underselling the strength of theism here. The Platonic good is a little bit toothless. The advantage of theism isn't necessarily in the mere objectivity of values. It's in the presence of an enforcer of values. That doesn't have anything to do with objectivity at all.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "high",
+              "audioChecked": false,
+              "burdenIds": [
+                "C-B3",
+                "C-B4"
+              ],
+              "respondsToIds": [],
+              "importance": 3,
+              "lockedResponseClass": "constructive-opening",
+              "responseLockTargetMoveIds": [],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 85,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 90
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 88,
+                  "representationalCharity": 91,
+                  "combined": 90
+                },
+                "rationale": "The distinction is coherent, central to his adopted burden, unusually charitable to theism, and explicitly qualified. It develops a strong constructive route, though the claim that enforcement is the relevant advantage remains conceptual and does not yet provide a full alternative account of obligation.",
+                "lockedResponseClass": "constructive-opening"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 80,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 88
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 88,
+                  "representationalCharity": 87,
+                  "combined": 88
+                },
+                "rationale": "The distinction is clear, central to C-B3 and C-B4, and unusually fair to theism. Its warrant remains largely conceptual, and describing God's advantage principally as enforcement does not yet resolve whether qualified authority can ground non-prudential duty.",
+                "lockedResponseClass": "constructive-opening"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 1,
+                "evidenceWarrant": 3,
+                "responsiveness": 5,
+                "relevanceBurden": 1,
+                "precisionClarity": 0,
+                "calibrationCharity": 2
+              },
+              "maxDimensionDelta": 5,
+              "passAScore": 80,
+              "passBScore": 78,
+              "scoreDelta": 2,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 88,
+                "representationalCharity": 89,
+                "combined": 89
+              },
+              "finalDimensions": {
+                "logicalCoherence": 81,
+                "evidenceWarrant": 64,
+                "responsiveness": 83,
+                "relevanceBurden": 86,
+                "precisionClarity": 82,
+                "calibrationCharity": 89
+              },
+              "finalScore": 80
+            },
+            {
+              "id": "S5-M4",
+              "speaker": "Philip Goff",
+              "timestamp": "01:09:18",
+              "sourceSpan": {
+                "start": "01:09:18",
+                "end": "01:10:12.800"
+              },
+              "sourceExcerpt": "David Hume has this idea that all fundamental life goals are on a par. Reason is the slave of the passions. I just think that can't be true. Imagine someone whose fundamental life goal is counting blades of grass, and they don't enjoy it, they get no pleasure from it. That's just their fundamental life goal.",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "medium",
+              "audioChecked": true,
+              "audioVerification": {
+                "status": "verified",
+                "path": "docs/calibration/v2.2/complete-gate/audio-verification/craig-frazier-goff-folley-god-reality-2026.json",
+                "sha256": "e8e6b2c27f851c19643778c0d966974f7a31df705e475fbac4846dcdc1e76a8b",
+                "resolvedSpeaker": "Philip Goff"
+              },
+              "burdenIds": [
+                "C-B2",
+                "C-B4"
+              ],
+              "respondsToIds": [
+                "S5-M2",
+                "S5-M3"
+              ],
+              "importance": 2,
+              "lockedResponseClass": "partial-answer",
+              "responseLockTargetMoveIds": [
+                "S5-M3"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 67,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 74
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 70,
+                  "representationalCharity": 78,
+                  "combined": 74
+                },
+                "rationale": "The example clearly contests one indispensable value component of Craig's exclusivity claim, but intuitive absurdity alone does not establish stance-independent ranking. It leaves the separate authority-to-duty bridge untouched, so responsiveness remains partial despite useful relevance and clarity.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 61,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 80
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 77,
+                  "representationalCharity": 82,
+                  "combined": 80
+                },
+                "rationale": "The counterexample gives an intuitive reason to rank ends and thereby contests one component of exclusivity for divine moral value. Intuition alone does not establish objective status, and the move does not answer Craig's distinct authority-based account of duties.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 5,
+                "evidenceWarrant": 4,
+                "responsiveness": 6,
+                "relevanceBurden": 4,
+                "precisionClarity": 4,
+                "calibrationCharity": 6
+              },
+              "maxDimensionDelta": 6,
+              "passAScore": 72,
+              "passBScore": 69,
+              "scoreDelta": 3,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 74,
+                "representationalCharity": 80,
+                "combined": 77
+              },
+              "finalDimensions": {
+                "logicalCoherence": 76,
+                "evidenceWarrant": 60,
+                "responsiveness": 64,
+                "relevanceBurden": 74,
+                "precisionClarity": 80,
+                "calibrationCharity": 77
+              },
+              "finalScore": 71
+            },
+            {
+              "id": "S5-M5",
+              "speaker": "Jessica Frazier",
+              "timestamp": "01:12:55",
+              "sourceSpan": {
+                "start": "01:12:55",
+                "end": "01:13:58.200"
+              },
+              "sourceExcerpt": "It means that God is just another authority who, regardless of whether he's moral or not, has got the power to decide for us what we ought to do, and we're going to defer to it. There's also a political, a human, a practical danger to this kind of ‘whatever he says is innately good because he says it.’",
+              "quoteKind": "quote",
+              "speakerAttributionConfidence": "medium",
+              "audioChecked": true,
+              "audioVerification": {
+                "status": "verified",
+                "path": "docs/calibration/v2.2/complete-gate/audio-verification/craig-frazier-goff-folley-god-reality-2026.json",
+                "sha256": "e8e6b2c27f851c19643778c0d966974f7a31df705e475fbac4846dcdc1e76a8b",
+                "resolvedSpeaker": "Jessica Frazier"
+              },
+              "burdenIds": [
+                "C-B1",
+                "C-B4"
+              ],
+              "respondsToIds": [
+                "S5-M3"
+              ],
+              "importance": 3,
+              "lockedResponseClass": "partial-answer",
+              "responseLockTargetMoveIds": [
+                "S5-M3"
+              ],
+              "passA": {
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 65,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 59
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 65,
+                  "representationalCharity": 52,
+                  "combined": 59
+                },
+                "rationale": "The authority-to-duty bridge and practical appropriation risk are relevant and important, but the selected objection reconstructs Craig's qualified authority as sheer power regardless of morality. Because it omits his explicit good-nature qualification, the reply is materially uncharitable and answers only part of the compound account.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "passB": {
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 67,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 65
+                },
+                "calibrationCharitySubratings": {
+                  "epistemicCalibration": 72,
+                  "representationalCharity": 58,
+                  "combined": 65
+                },
+                "rationale": "The authority-to-ought concern and appropriation risk are relevant and clearly consequential. The move reconstructs Craig's qualified, paradigmatically good authority as sheer power regardless of morality, leaving his indispensable good-nature qualification unanswered and reducing charity.",
+                "lockedResponseClass": "partial-answer"
+              },
+              "dimensionDeltas": {
+                "logicalCoherence": 2,
+                "evidenceWarrant": 0,
+                "responsiveness": 2,
+                "relevanceBurden": 0,
+                "precisionClarity": 7,
+                "calibrationCharity": 6
+              },
+              "maxDimensionDelta": 7,
+              "passAScore": 68,
+              "passBScore": 70,
+              "scoreDelta": 2,
+              "requiresAdjudication": false,
+              "finalCalibrationCharitySubratings": {
+                "epistemicCalibration": 69,
+                "representationalCharity": 55,
+                "combined": 62
+              },
+              "finalDimensions": {
+                "logicalCoherence": 71,
+                "evidenceWarrant": 60,
+                "responsiveness": 66,
+                "relevanceBurden": 82,
+                "precisionClarity": 78,
+                "calibrationCharity": 62
+              },
+              "finalScore": 69
+            }
+          ],
+          "passAScore": 74,
+          "passBScore": 74,
+          "score": 75
+        }
+      }
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "passA": {
+        "value": 0,
+        "rationale": "No eligible pro-side debate-wide residual consequence survives the strengthened burden-adjustment exclusion test.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "none",
+          "relatedMoveIds": [],
+          "distinctConsequence": "none",
+          "alreadyCapturedBy": [
+            "All observed pro burden performance is already captured by the scored move dimensions, move importance, section weights, and inventory selection."
+          ],
+          "counterfactual": "No adjustment is applied."
+        }
+      },
+      "passB": {
+        "value": 0,
+        "rationale": "No distinct unscored debate-wide consequence survives the strengthened burden-adjustment exclusion audit for the pro side.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "none",
+          "relatedMoveIds": [],
+          "distinctConsequence": "none",
+          "alreadyCapturedBy": [
+            "All identified pro burden-completion effects are captured by the scored move dimensions, move importance, section weights, and locked inventory selection."
+          ],
+          "counterfactual": "No adjustment is applied."
+        }
+      },
+      "delta": 0,
+      "requiresAdjudication": false,
+      "final": {
+        "value": 0,
+        "rationale": "No shared eligible debate-wide consequence remains outside the scored mechanics.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "none",
+          "relatedMoveIds": [],
+          "distinctConsequence": "none",
+          "alreadyCapturedBy": [
+            "All identified performance is represented by scored moves, importance, or section weights."
+          ],
+          "counterfactual": "No adjustment is applied."
+        }
+      }
+    },
+    "con": {
+      "passA": {
+        "value": 0,
+        "rationale": "No eligible con-side debate-wide residual consequence survives the strengthened burden-adjustment exclusion test.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "none",
+          "relatedMoveIds": [],
+          "distinctConsequence": "none",
+          "alreadyCapturedBy": [
+            "All observed con burden performance is already captured by the scored move dimensions, move importance, section weights, and inventory selection."
+          ],
+          "counterfactual": "No adjustment is applied."
+        }
+      },
+      "passB": {
+        "value": 0,
+        "rationale": "No distinct unscored debate-wide consequence survives the strengthened burden-adjustment exclusion audit for the con side.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "none",
+          "relatedMoveIds": [],
+          "distinctConsequence": "none",
+          "alreadyCapturedBy": [
+            "All identified con burden-completion effects are captured by the scored move dimensions, move importance, section weights, and locked inventory selection."
+          ],
+          "counterfactual": "No adjustment is applied."
+        }
+      },
+      "delta": 0,
+      "requiresAdjudication": false,
+      "final": {
+        "value": 0,
+        "rationale": "No shared eligible debate-wide consequence remains outside the scored mechanics.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "none",
+          "relatedMoveIds": [],
+          "distinctConsequence": "none",
+          "alreadyCapturedBy": [
+            "All identified performance is represented by scored moves, importance, or section weights."
+          ],
+          "counterfactual": "No adjustment is applied."
+        }
+      }
+    }
+  },
+  "tagReview": {
+    "performedAfterScoring": true,
+    "candidates": []
+  },
+  "aiExtensionReview": {
+    "performedAfterAssessment": false,
+    "noveltyMap": []
+  },
+  "overall": {
+    "pro": {
+      "passA": {
+        "weightedSectionMean": 76,
+        "burdenCompletionAdjustment": 0,
+        "score": 76
+      },
+      "passB": {
+        "weightedSectionMean": 76.2,
+        "burdenCompletionAdjustment": 0,
+        "score": 76
+      },
+      "weightedSectionMean": 76,
+      "burdenCompletionAdjustment": 0,
+      "score": 76,
+      "confidenceRange": {
+        "low": 74,
+        "high": 78
+      }
+    },
+    "con": {
+      "passA": {
+        "weightedSectionMean": 73.58,
+        "burdenCompletionAdjustment": 0,
+        "score": 74
+      },
+      "passB": {
+        "weightedSectionMean": 73.8,
+        "burdenCompletionAdjustment": 0,
+        "score": 74
+      },
+      "weightedSectionMean": 74,
+      "burdenCompletionAdjustment": 0,
+      "score": 74,
+      "confidenceRange": {
+        "low": 72,
+        "high": 76
+      }
+    }
+  },
+  "agreementAudit": {
+    "moveCount": 28,
+    "adjudicationCount": 7,
+    "adjustmentAdjudicationCount": 0,
+    "maxDimensionDelta": 14,
+    "maxMoveScoreDelta": 4,
+    "maxAdjustmentDelta": 0,
+    "adjudicationRate": 0.25
+  }
+}

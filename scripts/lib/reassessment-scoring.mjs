@@ -21,6 +21,16 @@ export const V21_DIMENSION_DISAGREEMENT_THRESHOLD = 8;
 export const V21_MOVE_DISAGREEMENT_THRESHOLD = 4;
 export const V21_ADJUSTMENT_DISAGREEMENT_THRESHOLD = 2;
 
+export const V23_RESPONSE_RANGES = Object.freeze({
+  "constructive-opening": Object.freeze([0, 100]),
+  "full-answer": Object.freeze([80, 100]),
+  "partial-answer": Object.freeze([55, 79]),
+  "diagnostic-defeat": Object.freeze([80, 100]),
+  "relevant-counterargument": Object.freeze([50, 69]),
+  "justified-reframe": Object.freeze([80, 100]),
+  "weaker-substitution": Object.freeze([0, 49])
+});
+
 function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
@@ -49,6 +59,21 @@ export function scoreDimensions(dimensions, label = "dimensions") {
       0
     )
   );
+}
+
+export function combineCalibrationCharity(subratings, label = "calibrationCharitySubratings") {
+  assert(subratings && typeof subratings === "object", `${label} must be an object`);
+  const epistemicCalibration = requireNumber(
+    subratings.epistemicCalibration,
+    `${label}.epistemicCalibration`,
+    { integer: true }
+  );
+  const representationalCharity = requireNumber(
+    subratings.representationalCharity,
+    `${label}.representationalCharity`,
+    { integer: true }
+  );
+  return rounded((epistemicCalibration + representationalCharity) / 2);
 }
 
 export function calculateV2SectionScore({ moveScores, coverage, burdenProgress, coherence }) {
@@ -708,5 +733,166 @@ export function calculateV22Ledger(input) {
   if (!ledger.calibrationOnly) {
     assert(ledger.aiExtensionReview.noveltyMap.length > 0, "production ledgers require an AI Extension novelty map");
   }
+  return ledger;
+}
+
+function validateV23AdjustmentEntry(entry, label, validMoveIds, validBurdenIds) {
+  requireNumber(entry?.value, `${label}.value`, { min: -5, max: 5, integer: true });
+  assert(typeof entry.rationale === "string" && entry.rationale.trim().length >= 20, `${label}.rationale is too short`);
+  const eligibility = entry.eligibility;
+  assert(eligibility && typeof eligibility === "object", `${label}.eligibility is required`);
+  for (const key of ["distinctDebateWideConsequence", "affectsBurdenCompletion", "notAlreadyScored"]) {
+    assert(typeof eligibility[key] === "boolean", `${label}.eligibility.${key} must be boolean`);
+  }
+  for (const key of ["affectedBurdenIds", "relatedMoveIds", "alreadyCapturedBy"]) {
+    assert(Array.isArray(eligibility[key]), `${label}.eligibility.${key} must be an array`);
+    assert(new Set(eligibility[key]).size === eligibility[key].length, `${label}.eligibility.${key} must be unique`);
+  }
+  for (const burdenId of eligibility.affectedBurdenIds) assert(validBurdenIds.has(burdenId), `${label} references unknown burden ${burdenId}`);
+  for (const moveId of eligibility.relatedMoveIds) assert(validMoveIds.has(moveId), `${label} references unknown move ${moveId}`);
+  for (const key of ["completionCriterion", "distinctConsequence", "counterfactual"]) {
+    assert(typeof eligibility[key] === "string" && eligibility[key].trim(), `${label}.eligibility.${key} is required`);
+  }
+  const eligible =
+    eligibility.distinctDebateWideConsequence &&
+    eligibility.affectsBurdenCompletion &&
+    eligibility.notAlreadyScored &&
+    eligibility.affectedBurdenIds.length > 0 &&
+    eligibility.completionCriterion.trim().toLowerCase() !== "none" &&
+    eligibility.relatedMoveIds.length > 0 &&
+    eligibility.distinctConsequence.trim().toLowerCase() !== "none" &&
+    eligibility.alreadyCapturedBy.length === 0 &&
+    eligibility.counterfactual.trim().toLowerCase() !== "none";
+  assert(entry.value === 0 ? !eligible : eligible, `${label} conflicts with the strengthened exclusion rule`);
+  return eligible;
+}
+
+function zeroV23Adjustment() {
+  return {
+    value: 0,
+    rationale: "No shared eligible debate-wide consequence remains outside the scored mechanics.",
+    eligibility: {
+      distinctDebateWideConsequence: false,
+      affectsBurdenCompletion: false,
+      notAlreadyScored: false,
+      affectedBurdenIds: [],
+      completionCriterion: "none",
+      relatedMoveIds: [],
+      distinctConsequence: "none",
+      alreadyCapturedBy: ["All identified performance is represented by scored moves, importance, or section weights."],
+      counterfactual: "No adjustment is applied."
+    }
+  };
+}
+
+function resolveBurdenAdjustmentV23(adjustment, label, validMoveIds, validBurdenIds) {
+  assert(adjustment?.passA && adjustment?.passB, `${label} requires passA and passB`);
+  const aEligible = validateV23AdjustmentEntry(adjustment.passA, `${label}.passA`, validMoveIds, validBurdenIds);
+  const bEligible = validateV23AdjustmentEntry(adjustment.passB, `${label}.passB`, validMoveIds, validBurdenIds);
+  const delta = Math.abs(adjustment.passA.value - adjustment.passB.value);
+  const requiresAdjudication = delta > V21_ADJUSTMENT_DISAGREEMENT_THRESHOLD;
+  let final;
+  if (requiresAdjudication) {
+    assert(adjustment.adjudication, `${label} requires adjudication`);
+    validateV23AdjustmentEntry(adjustment.adjudication, `${label}.adjudication`, validMoveIds, validBurdenIds);
+    final = structuredClone(adjustment.adjudication);
+  } else {
+    const sameEligibleConsequence =
+      aEligible && bEligible &&
+      Math.sign(adjustment.passA.value) === Math.sign(adjustment.passB.value) &&
+      adjustment.passA.eligibility.distinctConsequence.trim().toLowerCase() ===
+        adjustment.passB.eligibility.distinctConsequence.trim().toLowerCase();
+    final = sameEligibleConsequence
+      ? {
+          value: rounded((adjustment.passA.value + adjustment.passB.value) / 2),
+          rationale: "Rounded mean of two eligible passes identifying the same distinct debate-wide consequence.",
+          eligibility: structuredClone(adjustment.passA.eligibility)
+        }
+      : zeroV23Adjustment();
+  }
+  return { delta, requiresAdjudication, final };
+}
+
+export function calculateV23Ledger(input) {
+  const ledger = structuredClone(input);
+  assert(ledger.schemaVersion === "2.3", "schemaVersion must be 2.3");
+  assert(ledger.workflowVersion === V23_WORKFLOW, `workflowVersion must be ${V23_WORKFLOW}`);
+  assert(ledger.rubricVersion === V23_RUBRIC, `rubricVersion must be ${V23_RUBRIC}`);
+  assert(ledger.calibrationOnly === true, "v2.3 gate ledgers must be calibration-only");
+  const burdenIds = new Set((ledger.burdens ?? []).map((burden) => burden.id));
+  assert(burdenIds.size >= 2, "burdens must include stable IDs for both sides");
+  const moveIds = new Set();
+  for (const section of ledger.sections ?? []) {
+    for (const side of ["pro", "con"]) {
+      for (const move of section.sides?.[side]?.moves ?? []) {
+        assert(move.id && !moveIds.has(move.id), `duplicate or missing move ID ${move.id}`);
+        moveIds.add(move.id);
+      }
+    }
+  }
+  const audit = { moveCount: 0, adjudicationCount: 0, adjustmentAdjudicationCount: 0, maxDimensionDelta: 0, maxMoveScoreDelta: 0, maxAdjustmentDelta: 0 };
+  let sectionWeightTotal = 0;
+  for (const [sectionIndex, section] of ledger.sections.entries()) {
+    sectionWeightTotal += requireNumber(section.weightPercent, `sections[${sectionIndex}].weightPercent`, {min: 1, max: 100});
+    for (const side of ["pro", "con"]) {
+      const moves = section.sides?.[side]?.moves;
+      assert(Array.isArray(moves) && moves.length > 0, `${section.id}.${side}.moves must not be empty`);
+      for (const [moveIndex, move] of moves.entries()) {
+        const label = `${section.id}.${side}.moves[${moveIndex}]`;
+        const range = V23_RESPONSE_RANGES[move.lockedResponseClass];
+        assert(range, `${label}.lockedResponseClass is invalid`);
+        for (const passKey of ["passA", "passB"]) {
+          const pass = move[passKey];
+          assert(pass?.dimensions && pass?.calibrationCharitySubratings, `${label}.${passKey} is incomplete`);
+          const combined = combineCalibrationCharity(pass.calibrationCharitySubratings, `${label}.${passKey}.calibrationCharitySubratings`);
+          assert(pass.calibrationCharitySubratings.combined === combined, `${label}.${passKey} combined subrating mismatch`);
+          assert(pass.dimensions.calibrationCharity === combined, `${label}.${passKey} calibrationCharity mismatch`);
+          assert(pass.dimensions.responsiveness >= range[0] && pass.dimensions.responsiveness <= range[1], `${label}.${passKey} violates locked class range`);
+        }
+        const disagreement = moveDisagreement(move.passA.dimensions, move.passB.dimensions);
+        Object.assign(move, disagreement);
+        move.passAScore = disagreement.passAScore;
+        move.passBScore = disagreement.passBScore;
+        if (disagreement.requiresAdjudication) {
+          assert(move.adjudication?.dimensions && move.adjudication?.calibrationCharitySubratings, `${label} requires adjudication`);
+          assert(move.adjudication.lockedResponseClass === move.lockedResponseClass, `${label} adjudication changed locked class`);
+          const combined = combineCalibrationCharity(move.adjudication.calibrationCharitySubratings, `${label}.adjudication.calibrationCharitySubratings`);
+          assert(move.adjudication.calibrationCharitySubratings.combined === combined && move.adjudication.dimensions.calibrationCharity === combined, `${label} adjudication combined score mismatch`);
+          assert(move.adjudication.dimensions.responsiveness >= range[0] && move.adjudication.dimensions.responsiveness <= range[1], `${label} adjudication violates locked class range`);
+          move.finalCalibrationCharitySubratings = structuredClone(move.adjudication.calibrationCharitySubratings);
+          move.finalDimensions = structuredClone(move.adjudication.dimensions);
+          audit.adjudicationCount += 1;
+        } else {
+          move.finalCalibrationCharitySubratings = {
+            epistemicCalibration: rounded((move.passA.calibrationCharitySubratings.epistemicCalibration + move.passB.calibrationCharitySubratings.epistemicCalibration) / 2),
+            representationalCharity: rounded((move.passA.calibrationCharitySubratings.representationalCharity + move.passB.calibrationCharitySubratings.representationalCharity) / 2)
+          };
+          move.finalCalibrationCharitySubratings.combined = combineCalibrationCharity(move.finalCalibrationCharitySubratings);
+          move.finalDimensions = averageDimensions(move.passA.dimensions, move.passB.dimensions);
+          move.finalDimensions.calibrationCharity = move.finalCalibrationCharitySubratings.combined;
+        }
+        move.finalScore = scoreDimensions(move.finalDimensions, `${label}.finalDimensions`);
+        audit.moveCount += 1;
+        audit.maxDimensionDelta = Math.max(audit.maxDimensionDelta, disagreement.maxDimensionDelta);
+        audit.maxMoveScoreDelta = Math.max(audit.maxMoveScoreDelta, disagreement.scoreDelta);
+      }
+      section.sides[side].passAScore = rounded(calculateImportanceWeightedMean(moves, "passAScore"));
+      section.sides[side].passBScore = rounded(calculateImportanceWeightedMean(moves, "passBScore"));
+      section.sides[side].score = rounded(calculateImportanceWeightedMean(moves, "finalScore"));
+    }
+  }
+  assert(Math.abs(sectionWeightTotal - 100) < 0.001, "section weights must total 100");
+  for (const side of ["pro", "con"]) {
+    const adjustment = resolveBurdenAdjustmentV23(ledger.burdenCompletionAdjustment[side], `${side}.burdenCompletionAdjustment`, moveIds, burdenIds);
+    Object.assign(ledger.burdenCompletionAdjustment[side], adjustment);
+    audit.maxAdjustmentDelta = Math.max(audit.maxAdjustmentDelta, adjustment.delta);
+    if (adjustment.requiresAdjudication) audit.adjustmentAdjudicationCount += 1;
+    const passA = calculateV21Overall(ledger.sections.map((section) => section.sides[side].passAScore), ledger.sections, ledger.burdenCompletionAdjustment[side].passA, side);
+    const passB = calculateV21Overall(ledger.sections.map((section) => section.sides[side].passBScore), ledger.sections, ledger.burdenCompletionAdjustment[side].passB, side);
+    const final = calculateV21Overall(ledger.sections.map((section) => section.sides[side].score), ledger.sections, adjustment.final, side);
+    ledger.overall ??= {};
+    ledger.overall[side] = {passA, passB, ...final, confidenceRange: {low: Math.max(0, Math.min(passA.score, passB.score, final.score) - 2), high: Math.min(100, Math.max(passA.score, passB.score, final.score) + 2)}};
+  }
+  ledger.agreementAudit = {...audit, adjudicationRate: audit.moveCount ? fixed(audit.adjudicationCount / audit.moveCount) : 0};
   return ledger;
 }

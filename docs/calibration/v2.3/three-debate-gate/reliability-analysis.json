@@ -1,0 +1,514 @@
+{
+  "schemaVersion": "2.3-three-debate-gate-reliability",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.3",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.3",
+  "model": "5.6 Sol",
+  "calibrationOnly": true,
+  "analyzedAt": "2026-08-03T01:58:34.703Z",
+  "sample": {
+    "debateCount": 3,
+    "moveCount": 79,
+    "dimensionJudgmentCount": 474,
+    "debateIds": [
+      "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "craig-frazier-goff-folley-god-reality-2026"
+    ]
+  },
+  "sourceQa": {
+    "mediumOrLowMoves": 14,
+    "audioVerified": 14,
+    "unresolved": 0,
+    "newPaidTranscriptionCalls": 0,
+    "preservedV22Corrections": 2
+  },
+  "independence": {
+    "classificationLevel": "two-fresh-isolated-5.6-Sol-tasks-plus-fresh-adjudication",
+    "scoringLevel": "two-different-fresh-isolated-5.6-Sol-tasks-using-only-final-lock",
+    "rawClassifierPassesAvailableToScorers": false,
+    "legacyAssessmentAccessed": false
+  },
+  "classificationDebates": [
+    {
+      "debateNumber": "05",
+      "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "moveCount": 26,
+      "exactClassAgreementCount": 20,
+      "exactClassDisagreementCount": 6,
+      "exactClassAgreement": 0.7692,
+      "exactClassDisagreementRate": 0.2308,
+      "targetSetDisagreementCount": 6,
+      "cohensKappa": 0.7138,
+      "adjudicatedClassOrTargetDisagreements": 9
+    },
+    {
+      "debateNumber": "81",
+      "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "moveCount": 25,
+      "exactClassAgreementCount": 13,
+      "exactClassDisagreementCount": 12,
+      "exactClassAgreement": 0.52,
+      "exactClassDisagreementRate": 0.48,
+      "targetSetDisagreementCount": 7,
+      "cohensKappa": 0.4129,
+      "adjudicatedClassOrTargetDisagreements": 15
+    },
+    {
+      "debateNumber": "95",
+      "debateId": "craig-frazier-goff-folley-god-reality-2026",
+      "moveCount": 28,
+      "exactClassAgreementCount": 14,
+      "exactClassDisagreementCount": 14,
+      "exactClassAgreement": 0.5,
+      "exactClassDisagreementRate": 0.5,
+      "targetSetDisagreementCount": 1,
+      "cohensKappa": 0.3969,
+      "adjudicatedClassOrTargetDisagreements": 14
+    }
+  ],
+  "classificationAgreement": {
+    "moveCount": 79,
+    "exactClassAgreementCount": 47,
+    "exactClassDisagreementCount": 32,
+    "exactClassAgreement": 0.5949,
+    "exactClassDisagreementRate": 0.4051,
+    "targetSetDisagreementCount": 14,
+    "classificationAdjudicationCount": 38,
+    "cohensKappa": 0.5191
+  },
+  "classificationDiagnostics": {
+    "classifierDistribution": {
+      "A": {
+        "constructive-opening": 17,
+        "full-answer": 8,
+        "partial-answer": 17,
+        "diagnostic-defeat": 18,
+        "relevant-counterargument": 5,
+        "justified-reframe": 10,
+        "weaker-substitution": 4
+      },
+      "B": {
+        "constructive-opening": 14,
+        "full-answer": 14,
+        "partial-answer": 13,
+        "diagnostic-defeat": 13,
+        "relevant-counterargument": 7,
+        "justified-reframe": 12,
+        "weaker-substitution": 6
+      }
+    },
+    "disagreementPairs": {
+      "full-answer <-> partial-answer": 5,
+      "partial-answer <-> relevant-counterargument": 5,
+      "full-answer <-> justified-reframe": 4,
+      "diagnostic-defeat <-> relevant-counterargument": 2,
+      "constructive-opening <-> full-answer": 2,
+      "diagnostic-defeat <-> full-answer": 2,
+      "relevant-counterargument <-> weaker-substitution": 1,
+      "diagnostic-defeat <-> justified-reframe": 1,
+      "justified-reframe <-> weaker-substitution": 1,
+      "constructive-opening <-> weaker-substitution": 1,
+      "constructive-opening <-> relevant-counterargument": 1,
+      "diagnostic-defeat <-> partial-answer": 1,
+      "constructive-opening <-> diagnostic-defeat": 1,
+      "constructive-opening <-> partial-answer": 1,
+      "full-answer <-> relevant-counterargument": 1,
+      "justified-reframe <-> partial-answer": 1,
+      "partial-answer <-> weaker-substitution": 1,
+      "constructive-opening <-> justified-reframe": 1
+    }
+  },
+  "classificationGates": {
+    "exactClassDisagreementRate": {
+      "maximum": 0.15,
+      "observed": 0.4051,
+      "status": "fail"
+    },
+    "exactClassAgreement": {
+      "minimum": 0.85,
+      "observed": 0.5949,
+      "status": "fail"
+    },
+    "cohensKappa": {
+      "minimum": 0.75,
+      "observed": 0.5191,
+      "status": "fail"
+    },
+    "unresolvedDisagreements": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "movesMissingLock": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    }
+  },
+  "classificationReliabilityPassed": false,
+  "debates": [
+    {
+      "debateNumber": "05",
+      "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "stratum": "lopsided asymmetric burden",
+      "moveCount": 26,
+      "triggeredMoveCount": 13,
+      "moveAdjudicationRate": 0.5,
+      "sideAgreement": {
+        "pro": {
+          "moveCount": 13,
+          "meanAbsoluteDimensionDelta": 4.962,
+          "maxDimensionDelta": 27,
+          "meanAbsoluteMoveScoreDelta": 2.769,
+          "maxMoveScoreDelta": 7,
+          "passAOverall": 53,
+          "passBOverall": 52,
+          "overallScoreDelta": 1,
+          "finalOverall": 52
+        },
+        "con": {
+          "moveCount": 13,
+          "meanAbsoluteDimensionDelta": 2,
+          "maxDimensionDelta": 12,
+          "meanAbsoluteMoveScoreDelta": 1.615,
+          "maxMoveScoreDelta": 5,
+          "passAOverall": 87,
+          "passBOverall": 86,
+          "overallScoreDelta": 1,
+          "finalOverall": 87
+        }
+      },
+      "passWinnerClassification": {
+        "passA": "con",
+        "passB": "con",
+        "final": "con",
+        "stableAcrossPasses": true
+      }
+    },
+    {
+      "debateNumber": "81",
+      "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "stratum": "close analytic",
+      "moveCount": 25,
+      "triggeredMoveCount": 3,
+      "moveAdjudicationRate": 0.12,
+      "sideAgreement": {
+        "pro": {
+          "moveCount": 12,
+          "meanAbsoluteDimensionDelta": 2.639,
+          "maxDimensionDelta": 11,
+          "meanAbsoluteMoveScoreDelta": 1.417,
+          "maxMoveScoreDelta": 6,
+          "passAOverall": 75,
+          "passBOverall": 76,
+          "overallScoreDelta": 1,
+          "finalOverall": 76
+        },
+        "con": {
+          "moveCount": 13,
+          "meanAbsoluteDimensionDelta": 1.923,
+          "maxDimensionDelta": 10,
+          "meanAbsoluteMoveScoreDelta": 1.385,
+          "maxMoveScoreDelta": 3,
+          "passAOverall": 82,
+          "passBOverall": 82,
+          "overallScoreDelta": 0,
+          "finalOverall": 82
+        }
+      },
+      "passWinnerClassification": {
+        "passA": "con",
+        "passB": "con",
+        "final": "con",
+        "stableAcrossPasses": true
+      }
+    },
+    {
+      "debateNumber": "95",
+      "debateId": "craig-frazier-goff-folley-god-reality-2026",
+      "stratum": "multi-person pluralist",
+      "moveCount": 28,
+      "triggeredMoveCount": 7,
+      "moveAdjudicationRate": 0.25,
+      "sideAgreement": {
+        "pro": {
+          "moveCount": 10,
+          "meanAbsoluteDimensionDelta": 3.1,
+          "maxDimensionDelta": 14,
+          "meanAbsoluteMoveScoreDelta": 1.8,
+          "maxMoveScoreDelta": 4,
+          "passAOverall": 76,
+          "passBOverall": 76,
+          "overallScoreDelta": 0,
+          "finalOverall": 76
+        },
+        "con": {
+          "moveCount": 18,
+          "meanAbsoluteDimensionDelta": 2.935,
+          "maxDimensionDelta": 10,
+          "meanAbsoluteMoveScoreDelta": 1.889,
+          "maxMoveScoreDelta": 4,
+          "passAOverall": 74,
+          "passBOverall": 74,
+          "overallScoreDelta": 0,
+          "finalOverall": 74
+        }
+      },
+      "passWinnerClassification": {
+        "passA": "pro",
+        "passB": "pro",
+        "final": "pro",
+        "stableAcrossPasses": true
+      }
+    }
+  ],
+  "aggregateAgreement": {
+    "meanAbsoluteDimensionDelta": 2.924,
+    "maxDimensionDelta": 27,
+    "meanAbsoluteMoveScoreDelta": 1.823,
+    "maxMoveScoreDelta": 7,
+    "meanDeltaByDimension": {
+      "logicalCoherence": 2.671,
+      "evidenceWarrant": 3.215,
+      "responsiveness": 2.19,
+      "relevanceBurden": 3.722,
+      "precisionClarity": 2.671,
+      "calibrationCharity": 3.076
+    },
+    "meanDeltaByCalibrationCharitySubrating": {
+      "epistemicCalibration": 3.975,
+      "representationalCharity": 3.43
+    },
+    "thresholdTriggersByDimension": {
+      "logicalCoherence": 4,
+      "evidenceWarrant": 5,
+      "responsiveness": 2,
+      "relevanceBurden": 8,
+      "precisionClarity": 2,
+      "calibrationCharity": 6
+    },
+    "lockedClassTriggerRates": {
+      "constructive-opening": {
+        "moveCount": 15,
+        "triggeredMoveCount": 5,
+        "triggerRate": 0.3333
+      },
+      "full-answer": {
+        "moveCount": 13,
+        "triggeredMoveCount": 3,
+        "triggerRate": 0.2308
+      },
+      "partial-answer": {
+        "moveCount": 17,
+        "triggeredMoveCount": 5,
+        "triggerRate": 0.2941
+      },
+      "diagnostic-defeat": {
+        "moveCount": 14,
+        "triggeredMoveCount": 3,
+        "triggerRate": 0.2143
+      },
+      "relevant-counterargument": {
+        "moveCount": 5,
+        "triggeredMoveCount": 1,
+        "triggerRate": 0.2
+      },
+      "justified-reframe": {
+        "moveCount": 11,
+        "triggeredMoveCount": 2,
+        "triggerRate": 0.1818
+      },
+      "weaker-substitution": {
+        "moveCount": 4,
+        "triggeredMoveCount": 4,
+        "triggerRate": 1
+      }
+    },
+    "triggeredMoveCount": 23,
+    "moveAdjudicationRate": 0.2911,
+    "maximumOverallScorePassDelta": 1,
+    "winnerClassificationDifferenceCount": 0,
+    "winnerClassificationDifferenceRate": 0,
+    "passRankCorrelation": {
+      "pro": 0.866,
+      "con": 1,
+      "minimum": 0.866
+    }
+  },
+  "reviewGates": {
+    "meanAbsoluteDimensionDelta": {
+      "maximum": 5,
+      "observed": 2.924,
+      "status": "pass"
+    },
+    "moveAdjudicationRate": {
+      "maximum": 0.25,
+      "observed": 0.2911,
+      "status": "fail"
+    },
+    "overallScorePassDelta": {
+      "maximum": 5,
+      "observedMaximum": 1,
+      "status": "pass"
+    },
+    "winnerFlipReview": {
+      "maximum": 0.2,
+      "observed": 0,
+      "status": "pass"
+    },
+    "rankCorrelation": {
+      "minimum": 0.9,
+      "observedMinimum": 0.866,
+      "status": "fail"
+    }
+  },
+  "numericalReliabilityPassed": false,
+  "comparisonToV22": {
+    "meanAbsoluteDimensionDeltaChange": -0.593,
+    "moveAdjudicationRateChange": -0.038,
+    "triggeredMoveCountChange": -3,
+    "maximumOverallScorePassDeltaChange": -1,
+    "responseClassDisagreementRateChange": 0.1519,
+    "finalWinnerChangeCount": 1,
+    "finalWinnerChangeRate": 0.3333,
+    "finalScoreComparison": [
+      {
+        "debateNumber": "05",
+        "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+        "v22": {
+          "pro": 56,
+          "con": 85,
+          "winner": "con"
+        },
+        "v23": {
+          "pro": 52,
+          "con": 87,
+          "winner": "con"
+        },
+        "change": {
+          "pro": -4,
+          "con": 2,
+          "winnerChanged": false
+        }
+      },
+      {
+        "debateNumber": "81",
+        "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+        "v22": {
+          "pro": 76,
+          "con": 81,
+          "winner": "con"
+        },
+        "v23": {
+          "pro": 76,
+          "con": 82,
+          "winner": "con"
+        },
+        "change": {
+          "pro": 0,
+          "con": 1,
+          "winnerChanged": false
+        }
+      },
+      {
+        "debateNumber": "95",
+        "debateId": "craig-frazier-goff-folley-god-reality-2026",
+        "v22": {
+          "pro": 73,
+          "con": 75,
+          "winner": "con"
+        },
+        "v23": {
+          "pro": 76,
+          "con": 74,
+          "winner": "pro"
+        },
+        "change": {
+          "pro": 3,
+          "con": -1,
+          "winnerChanged": true
+        }
+      }
+    ]
+  },
+  "coreHardGates": {
+    "fullTranscriptAcquisition": {
+      "minimum": 1,
+      "observed": 1,
+      "status": "pass"
+    },
+    "mediumAndLowMoveAudioVerification": {
+      "minimum": 1,
+      "observed": 1,
+      "status": "pass"
+    },
+    "singleClassificationSchema": {
+      "required": true,
+      "observed": true,
+      "status": "pass"
+    },
+    "singleScoringSchema": {
+      "required": true,
+      "observed": true,
+      "status": "pass"
+    },
+    "classificationAndScoringIsolation": {
+      "required": true,
+      "observed": true,
+      "status": "pass"
+    },
+    "unresolvedClassificationDisagreements": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "burdenAdjustmentEligibilityViolations": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "missingRequiredScoreAdjudications": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "calculatorArtifactMismatches": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    }
+  },
+  "compositionHardGates": {
+    "completeScorecards": {
+      "required": true,
+      "observed": false,
+      "status": "stopped"
+    },
+    "centralQuoteVerification": {
+      "minimum": 1,
+      "observed": 0,
+      "status": "stopped"
+    },
+    "aiExtensionNoveltyMap": {
+      "minimum": 1,
+      "observed": 0,
+      "status": "stopped"
+    },
+    "renderingAudit": {
+      "required": true,
+      "observed": false,
+      "status": "stopped"
+    }
+  },
+  "gateDecision": {
+    "classificationReliabilityPassed": false,
+    "numericalReliabilityPassed": false,
+    "coreHardGatePassed": true,
+    "compositionAuthorized": false,
+    "compositionComplete": false,
+    "initialThreeDebateGate": "not-passed",
+    "canAuthorizeTenDebateGate": false,
+    "canAuthorizeAll195Debates": false,
+    "reason": "The preregistered response-classification reliability gate failed."
+  }
+}
