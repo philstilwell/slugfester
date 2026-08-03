@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "2.7-lane-reliability-analysis",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.7",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.7",
+  "gateId": "v2.7-dyadic-held-out-gate",
+  "lane": "dyadic",
+  "analyzedAt": "2026-08-03T18:23:15.519Z",
+  "sources": {
+    "gateManifestPath": "docs/calibration/v2.7/held-out-gates/gate-manifest.json",
+    "gateManifestSha256": "28b132a4e8510faaab683ae05f554f05ef943d742312e2088f0dc2be44652420",
+    "locks": [
+      {
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "path": "docs/calibration/v2.7/held-out-gates/dyadic/locks/pageau-folley-logos-meaning-resurrection-2026.json",
+        "sha256": "0c3e66b518572230e955421d6b5a69fec1f2e77b19be5096d78c3a920ef38a60"
+      },
+      {
+        "debateId": "knechtle-aron-ra-god-existence-2023",
+        "path": "docs/calibration/v2.7/held-out-gates/dyadic/locks/knechtle-aron-ra-god-existence-2023.json",
+        "sha256": "9a550bc6a4c9b8f74cb6c436042877e576c939f88ff7a245ef56de6645c0b48f"
+      },
+      {
+        "debateId": "lennox-atkins-science-explain-everything-2019",
+        "path": "docs/calibration/v2.7/held-out-gates/dyadic/locks/lennox-atkins-science-explain-everything-2019.json",
+        "sha256": "3121ea6d23b007f9ff8a53289d29c15d2139d5d8fc045c6c4253333b77250dfb"
+      }
+    ]
+  },
+  "denominators": {
+    "moveCount": 36,
+    "responsiveMoveCount": 24,
+    "componentContactJudgmentCount": 38,
+    "componentOperationJudgmentCount": 38,
+    "diagnosticObjectJudgmentCount": 9
+  },
+  "metrics": {
+    "targetObjectExact": 0.875,
+    "targetScopeExact": 0.9166666666666666,
+    "targetBurdenExact": 0.9583333333333334,
+    "componentContactMicroExact": 0.8947368421052632,
+    "responsiveCoverageExact": 0.7916666666666666,
+    "responsiveCoverageKappa": 0.6833773087071239,
+    "defectTypeExact": 0.8333333333333334,
+    "diagnosticObjectExact": 0.7777777777777778,
+    "impactModeExact": 0.8333333333333334,
+    "diagnosticExact": 0.875,
+    "malformedDemandExact": 0.9444444444444444,
+    "replacementDemandExact": 1,
+    "reframeExact": 1,
+    "bridgeSetExact": 1,
+    "burdenExact": 1,
+    "burdenKappa": 1,
+    "exactDerivedTupleExact": 0.8055555555555556,
+    "componentOperationDiagnosticExact": 0.8157894736842105,
+    "allMoveCoverageDiagnosticExact": 0.8611111111111112,
+    "diagnosticPositiveCount": 6,
+    "reframePositiveCount": 0
+  },
+  "thresholds": {
+    "targetObjectExact": 0.9,
+    "targetScopeExact": 0.85,
+    "targetBurdenExact": 0.9,
+    "componentContactMicroExact": 0.9,
+    "responsiveCoverageExact": 0.85,
+    "responsiveCoverageKappa": 0.75,
+    "defectTypeExact": 0.85,
+    "diagnosticObjectExact": 0.85,
+    "impactModeExact": 0.9,
+    "diagnosticExact": 0.9,
+    "minimumDiagnosticPositives": 3,
+    "malformedDemandExact": 0.9,
+    "replacementDemandExact": 0.9,
+    "reframeExact": 0.9,
+    "minimumReframePositives": 3,
+    "bridgeSetExact": 0.8,
+    "burdenExact": 0.8,
+    "burdenKappa": 0.7,
+    "exactDerivedTupleExact": 0.7,
+    "perDebateTargetObjectExact": 0.75,
+    "perDebateComponentContactMicroExact": 0.8,
+    "perDebateResponsiveCoverageExact": 0.75,
+    "perDebateImpactModeExact": 0.75
+  },
+  "aggregateGates": {
+    "targetObjectExact": false,
+    "targetScopeExact": true,
+    "targetBurdenExact": true,
+    "componentContactMicroExact": false,
+    "responsiveCoverageExact": false,
+    "responsiveCoverageKappa": false,
+    "defectTypeExact": false,
+    "diagnosticObjectExact": false,
+    "impactModeExact": false,
+    "diagnosticExact": false,
+    "diagnosticPositiveCount": true,
+    "malformedDemandExact": true,
+    "replacementDemandExact": true,
+    "reframeExact": true,
+    "reframePositiveCount": false,
+    "bridgeSetExact": true,
+    "burdenExact": true,
+    "burdenKappa": true,
+    "exactDerivedTupleExact": true
+  },
+  "perDebate": [
+    {
+      "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+      "targetObjectExact": 1,
+      "componentContactMicroExact": 0.8461538461538461,
+      "responsiveCoverageExact": 0.875,
+      "impactModeExact": 0.875,
+      "passed": true
+    },
+    {
+      "debateId": "knechtle-aron-ra-god-existence-2023",
+      "targetObjectExact": 0.875,
+      "componentContactMicroExact": 0.9333333333333333,
+      "responsiveCoverageExact": 0.875,
+      "impactModeExact": 0.875,
+      "passed": true
+    },
+    {
+      "debateId": "lennox-atkins-science-explain-everything-2019",
+      "targetObjectExact": 0.75,
+      "componentContactMicroExact": 0.9,
+      "responsiveCoverageExact": 0.625,
+      "impactModeExact": 0.75,
+      "passed": false
+    }
+  ],
+  "hardGates": {
+    "auditViolations": 0,
+    "missingRequiredReviews": 0,
+    "reviewChainViolations": 0,
+    "passed": true
+  },
+  "decision": {
+    "passed": false,
+    "numericalScoringAuthorized": false,
+    "nextStep": "A pass authorizes preregistration of this lane's separate numerical gate; it does not authorize scoring."
+  }
+}

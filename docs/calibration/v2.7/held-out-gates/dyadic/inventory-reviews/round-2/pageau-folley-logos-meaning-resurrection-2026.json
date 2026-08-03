@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "2.7-inventory-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.7",
+  "gateId": "v2.7-dyadic-held-out-gate",
+  "lane": "dyadic",
+  "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+  "debateNumber": "62",
+  "reviewRound": 2,
+  "reviewedAt": "2026-08-03T17:19:12Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-independent-v2.7-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "priorReviewAvailable": true,
+    "statement": "A fresh independent read-only review audited every move and target against the complete authorized transcript and event chain without accessing prohibited materials."
+  },
+  "source": {
+    "inputInventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/pageau-folley-logos-meaning-resurrection-2026.json",
+    "inputInventorySha256": "d836a91ef0025053e237cfff2f9c6c78ad0c9089ef3752398aa8c6a9b76e4728",
+    "outputInventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/pageau-folley-logos-meaning-resurrection-2026.json",
+    "outputInventorySha256": "d836a91ef0025053e237cfff2f9c6c78ad0c9089ef3752398aa8c6a9b76e4728",
+    "priorReviewPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventory-reviews/round-1/pageau-folley-logos-meaning-resurrection-2026.json",
+    "priorReviewSha256": "83d80352fd1ae0a85230be6585f98b162c1e75daa9e45d7df07eff101cfe05f3",
+    "transcriptSha256": "179a89a9d3ffde116ca3baf8bdd0c575df7936cb680700213dfd036b19ab7aa3",
+    "eventsSha256": "09cab3056f81e6931c545295ad388a5b88c322b086eddc061f0b40b9290db36e",
+    "manifestSha256": "13cbdd5518d386af0d0d201477eec59992eb8866d9684b080b0b8257fdee307c",
+    "workflowSha256": "89e97666e6e1d98bf2d9e0dbd3a5fe3665509a955806e7c12d789f2a77d98641",
+    "inventorySchemaSha256": "7d1cb858a2a41fe3d15bdeb6c790aa26a4f2831a09b69235fde112740961286e",
+    "gateManifestSha256": "28b132a4e8510faaab683ae05f554f05ef943d742312e2088f0dc2be44652420"
+  },
+  "findings": [],
+  "repairs": [],
+  "nextReviewTrigger": {
+    "required": false,
+    "categories": [],
+    "rationale": "The complete round-two audit found no protected-field violation requiring repair or any further semantic review."
+  },
+  "audit": {
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "targetSideViolations": 0,
+    "ownershipAdoptionViolations": 0,
+    "burdenRouteViolations": 0,
+    "componentGraphViolations": 0,
+    "componentOverlapViolations": 0,
+    "targetRecencyViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "outputInventoryValidatorPassed": true
+  }
+}

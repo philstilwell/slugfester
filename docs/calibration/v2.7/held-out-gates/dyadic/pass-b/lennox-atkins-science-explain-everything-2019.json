@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "2.7-single-annotation-pass",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.7",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.7",
+  "gateId": "v2.7-dyadic-held-out-gate",
+  "lane": "dyadic",
+  "debateId": "lennox-atkins-science-explain-everything-2019",
+  "debateNumber": "04",
+  "pass": "B",
+  "model": "5.6 Sol",
+  "calibrationOnly": true,
+  "completedAt": "2026-08-03T17:54:30Z",
+  "isolation": {
+    "method": "fresh-isolated-v2.7-single-schema-annotation-task",
+    "allowedInputs": [
+      "docs/assessment-workflow-v2.7.md",
+      "docs/reassessment-rubric-v2.7.md",
+      "docs/calibration/v2.7/annotation-pass-schema.json",
+      "docs/calibration/v2.7/held-out-gates/gate-manifest.json",
+      "docs/calibration/v2.7/development/annotation-manual.md",
+      "docs/calibration/v2.7/development/orthogonal-target-diagnostic-examples.json",
+      "docs/calibration/v2.7/held-out-gates/dyadic/inventories/lennox-atkins-science-explain-everything-2019.json",
+      ".assessment-cache/captions/fSYwCaFkYno/transcript.txt",
+      ".assessment-cache/captions/fSYwCaFkYno/events.json",
+      ".assessment-cache/captions/fSYwCaFkYno/manifest.json"
+    ],
+    "prohibitedInputsConfirmed": true,
+    "contaminationDetected": false,
+    "statement": "Pass B was completed in a fresh isolated context using only the ten expressly allowed content inputs."
+  },
+  "source": {
+    "videoId": "fSYwCaFkYno",
+    "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/lennox-atkins-science-explain-everything-2019.json",
+    "inventorySha256": "d6b0e8abdb54573079b9fd7de2eddfdcaf10ae6cd5d40c01ce8cbb4d1e1696ad",
+    "transcriptSha256": "75f073cd00302d207f5386663ddf50d9517659dc38e587ac03d5c930322cd302",
+    "eventsSha256": "fade372893ceaf7793f820a0645ed171437b45ebe2b641f28a86cd81af251499",
+    "manifestSha256": "ea875d78124276e903721d653143c17b936b34535647da2c9fc9f49e7e18eecf",
+    "gateManifestSha256": "28b132a4e8510faaab683ae05f554f05ef943d742312e2088f0dc2be44652420",
+    "workflowSha256": "89e97666e6e1d98bf2d9e0dbd3a5fe3665509a955806e7c12d789f2a77d98641",
+    "rubricSha256": "a7ad4d3026fe02d6ecaa08ce351ee2a6099252283716e781902fa81893465b45",
+    "schemaSha256": "52a458850cc4160de4888913b17fc1d88b4a439a50056bfb3e3ec78697fe9124",
+    "developmentManualSha256": "096ec7c2d48cbf06b89ce8c106d2fbf83e8ff48e0e7292667da7cf41347c8363",
+    "developmentExamplesSha256": "61470975c752fa967c3040e1758c9d18350bc13cceb49e717a06f7fe25eecc95",
+    "limitations": "The complete platform-caption source lacks native speaker labels; the frozen inventory limits selected moves to high-confidence attributed turns."
+  },
+  "annotations": [
+    {
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-01", "interactionMode": "constructive", "targetPacketId": null, "primaryBurdenRouteId": "lennox-atkins-science-explain-everything-2019-con-route",
+      "coveragePrimitives": {"targetObjectRelation":"not-applicable","objectChangeType":null,"objectEvidence":null,"targetScopeRelation":"not-applicable","scopeEvidence":null,"targetBurdenRelation":"not-applicable","burdenEvidence":null,"componentOperations":[],"relevantContraryMaterial":null,"contraryEvidence":null,"derivedTargetDisposition":"not-applicable","derivedTargetCoverage":"not-applicable"},
+      "diagnosticPrimitives": {"applicability":"not-applicable","defectType":"none","defectObject":null,"defectEvidence":null,"impactMode":"not-applicable","impactEvidence":null,"derivedDiagnostic":false},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"lennox-atkins-science-explain-everything-2019-con-central","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "This is a constructive definition of scientific method and therefore has no locked responsive target.", "mechanismRationale": "The move neither diagnoses an opponent defect nor explains and replaces a malformed demand.", "burdenRationale": "The evidence-based definition directly supports the con side's locked central bridge about scientific explanation.", "confidence": "high"
+    },
+    {
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-02", "interactionMode": "constructive", "targetPacketId": null, "primaryBurdenRouteId": "lennox-atkins-science-explain-everything-2019-con-route",
+      "coveragePrimitives": {"targetObjectRelation":"not-applicable","objectChangeType":null,"objectEvidence":null,"targetScopeRelation":"not-applicable","scopeEvidence":null,"targetBurdenRelation":"not-applicable","burdenEvidence":null,"componentOperations":[],"relevantContraryMaterial":null,"contraryEvidence":null,"derivedTargetDisposition":"not-applicable","derivedTargetCoverage":"not-applicable"},
+      "diagnosticPrimitives": {"applicability":"not-applicable","defectType":"none","defectObject":null,"defectEvidence":null,"impactMode":"not-applicable","impactEvidence":null,"derivedDiagnostic":false},
+      "reframePrimitives": {"malformedDemandExplained":true,"malformedDemandEvidence":{"text":"when you ask questions for which there is no evidence","startChar":13,"endChar":66},"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"lennox-atkins-science-explain-everything-2019-con-central","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "This constructive move has no locked opponent packet, so target axes and coverage are not applicable.", "mechanismRationale": "Atkins explains why unevidenced questions are malformed but states no replacement demand in this bounded move.", "burdenRationale": "Restricting science to real evidential questions directly advances the con side's central explanatory bridge.", "confidence": "high"
+    },
+    {
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-03", "interactionMode": "constructive", "targetPacketId": null, "primaryBurdenRouteId": "lennox-atkins-science-explain-everything-2019-pro-route",
+      "coveragePrimitives": {"targetObjectRelation":"not-applicable","objectChangeType":null,"objectEvidence":null,"targetScopeRelation":"not-applicable","scopeEvidence":null,"targetBurdenRelation":"not-applicable","burdenEvidence":null,"componentOperations":[],"relevantContraryMaterial":null,"contraryEvidence":null,"derivedTargetDisposition":"not-applicable","derivedTargetCoverage":"not-applicable"},
+      "diagnosticPrimitives": {"applicability":"not-applicable","defectType":"none","defectObject":null,"defectEvidence":null,"impactMode":"not-applicable","impactEvidence":null,"derivedDiagnostic":false},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"lennox-atkins-science-explain-everything-2019-pro-central","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "This is Lennox's constructive statement of the natural-science issue and has no responsive target packet.", "mechanismRationale": "Without a locked opponent target, diagnostic classification is unavailable and no complete demand reframe is expressed.", "burdenRationale": "The categorical denial that natural science answers every question directly supports the pro central bridge.", "confidence": "high"
+    },
+    {
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-04", "interactionMode": "constructive", "targetPacketId": null, "primaryBurdenRouteId": "lennox-atkins-science-explain-everything-2019-pro-route",
+      "coveragePrimitives": {"targetObjectRelation":"not-applicable","objectChangeType":null,"objectEvidence":null,"targetScopeRelation":"not-applicable","scopeEvidence":null,"targetBurdenRelation":"not-applicable","burdenEvidence":null,"componentOperations":[],"relevantContraryMaterial":null,"contraryEvidence":null,"derivedTargetDisposition":"not-applicable","derivedTargetCoverage":"not-applicable"},
+      "diagnosticPrimitives": {"applicability":"not-applicable","defectType":"none","defectObject":null,"defectEvidence":null,"impactMode":"not-applicable","impactEvidence":null,"derivedDiagnostic":false},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"lennox-atkins-science-explain-everything-2019-pro-central","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "The boiling-water analogy is constructive support and is not annotated against an anticipated opponent target.", "mechanismRationale": "The constructive analogy offers no applicable locked diagnostic object and does not perform a two-part reframe.", "burdenRationale": "The contrast between mechanisms and agent purposes directly advances the pro side's central explanatory limit.", "confidence": "high"
+    },
+    {
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-05", "interactionMode": "responsive", "targetPacketId": "lennox-atkins-science-explain-everything-2019-target-05", "primaryBurdenRouteId": "lennox-atkins-science-explain-everything-2019-con-route",
+      "coveragePrimitives": {"targetObjectRelation":"same","objectChangeType":null,"objectEvidence":null,"targetScopeRelation":"same","scopeEvidence":null,"targetBurdenRelation":"retained","burdenEvidence":null,"componentOperations":[{"componentId":"lennox-atkins-science-explain-everything-2019-target-05-c1","operation":"undermines","evidence":{"text":"dismiss that as something that simply has no evidence whatsoever","startChar":355,"endChar":419}},{"componentId":"lennox-atkins-science-explain-everything-2019-target-05-c2","operation":"accepts","evidence":{"text":"it is the foundation of Christian faith","startChar":260,"endChar":299}}],"relevantContraryMaterial":false,"contraryEvidence":null,"derivedTargetDisposition":"preserved","derivedTargetCoverage":"full"},
+      "diagnosticPrimitives": {"applicability":"applicable","defectType":"evidential-insufficiency","defectObject":{"objectType":"target-packet","objectId":"lennox-atkins-science-explain-everything-2019-target-05"},"defectEvidence":{"text":"simply has no evidence whatsoever","startChar":386,"endChar":419},"impactMode":"inferential-consequence","impactEvidence":{"text":"dismiss that as something that simply has no evidence whatsoever","startChar":355,"endChar":419},"derivedDiagnostic":true},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"lennox-atkins-science-explain-everything-2019-con-central","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "Atkins preserves the resurrection-evidence target, accepts its foundational status, and attacks its evidential warrant.", "mechanismRationale": "He identifies lack of evidence at packet level and expressly links that insufficiency to dismissal of the claim.", "burdenRationale": "Rejecting the central supernatural evidence directly supports the con side's science-without-supernatural-additions bridge.", "confidence": "high"
+    },
+    {
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-06", "interactionMode": "responsive", "targetPacketId": "lennox-atkins-science-explain-everything-2019-target-06", "primaryBurdenRouteId": "lennox-atkins-science-explain-everything-2019-pro-route",
+      "coveragePrimitives": {"targetObjectRelation":"same","objectChangeType":null,"objectEvidence":null,"targetScopeRelation":"modality-shift","scopeEvidence":{"text":"dead bodies don't normally rise","startChar":237,"endChar":268},"targetBurdenRelation":"retained","burdenEvidence":null,"componentOperations":[{"componentId":"lennox-atkins-science-explain-everything-2019-target-06-c1","operation":null,"evidence":null},{"componentId":"lennox-atkins-science-explain-everything-2019-target-06-c2","operation":"qualifies","evidence":{"text":"dead bodies don't normally rise","startChar":237,"endChar":268}},{"componentId":"lennox-atkins-science-explain-everything-2019-target-06-c3","operation":"denies","evidence":{"text":"science cannot forbid a resurrection","startChar":47,"endChar":83}}],"relevantContraryMaterial":false,"contraryEvidence":null,"derivedTargetDisposition":"preserved","derivedTargetCoverage":"partial"},
+      "diagnosticPrimitives": {"applicability":"applicable","defectType":"scope-mismatch","defectObject":{"objectType":"target-component","objectId":"lennox-atkins-science-explain-everything-2019-target-06-c3"},"defectEvidence":{"text":"dead bodies don't normally rise","startChar":237,"endChar":268},"impactMode":"inferential-consequence","impactEvidence":{"text":"science cannot forbid a resurrection","startChar":47,"endChar":83},"derivedDiagnostic":true},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"lennox-atkins-science-explain-everything-2019-pro-central","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "Lennox keeps the resurrection target but shifts impossibility to normal regularity, qualifying one rule and denying the conclusion.", "mechanismRationale": "The normality-versus-impossibility mismatch is tied expressly to the consequence that science cannot forbid resurrection.", "burdenRationale": "Limiting what natural regularities can exclude directly advances the pro central bridge concerning science's limits.", "confidence": "high"
+    },
+    {
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-07", "interactionMode": "responsive", "targetPacketId": "lennox-atkins-science-explain-everything-2019-target-07", "primaryBurdenRouteId": "lennox-atkins-science-explain-everything-2019-con-route",
+      "coveragePrimitives": {"targetObjectRelation":"changed","objectChangeType":"referent","objectEvidence":{"text":"religious explanations which resort to God did it","startChar":99,"endChar":148},"targetScopeRelation":"same","scopeEvidence":null,"targetBurdenRelation":"retained","burdenEvidence":null,"componentOperations":[],"relevantContraryMaterial":false,"contraryEvidence":null,"derivedTargetDisposition":"substituted","derivedTargetCoverage":"substitution"},
+      "diagnosticPrimitives": {"applicability":"applicable","defectType":"none","defectObject":null,"defectEvidence":null,"impactMode":"none","impactEvidence":null,"derivedDiagnostic":false},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"lennox-atkins-science-explain-everything-2019-con-central","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "Atkins changes from Lennox's specific creator-regularity-resurrection packet to generic religious God-did-it explanations.", "mechanismRationale": "The intellectual-laziness verdict concerns the substituted generic referent and states no locked defect on the original packet.", "burdenRationale": "The generic critique of supernatural explanation still directly supports the con side's central naturalistic bridge.", "confidence": "medium"
+    },
+    {
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-08", "interactionMode": "responsive", "targetPacketId": "lennox-atkins-science-explain-everything-2019-target-08", "primaryBurdenRouteId": "lennox-atkins-science-explain-everything-2019-con-route",
+      "coveragePrimitives": {"targetObjectRelation":"changed","objectChangeType":"question-type","objectEvidence":{"text":"they will arrive at explanations that do not require the insertion of words like God","startChar":89,"endChar":173},"targetScopeRelation":"same","scopeEvidence":null,"targetBurdenRelation":"retained","burdenEvidence":null,"componentOperations":[],"relevantContraryMaterial":false,"contraryEvidence":null,"derivedTargetDisposition":"substituted","derivedTargetCoverage":"substitution"},
+      "diagnosticPrimitives": {"applicability":"applicable","defectType":"none","defectObject":null,"defectEvidence":null,"impactMode":"none","impactEvidence":null,"derivedDiagnostic":false},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"lennox-atkins-science-explain-everything-2019-con-central","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "The reply changes from whether atheism warrants rational trust to whether science will eventually explain without God.", "mechanismRationale": "Calling God a disguise criticizes the substituted explanatory practice, not a locked component of the rationality claim.", "burdenRationale": "Confidence in future non-theistic explanation directly supports the con side's central science-explains-reality bridge.", "confidence": "high"
+    },
+    {
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-09", "interactionMode": "responsive", "targetPacketId": "lennox-atkins-science-explain-everything-2019-target-09", "primaryBurdenRouteId": "lennox-atkins-science-explain-everything-2019-pro-route",
+      "coveragePrimitives": {"targetObjectRelation":"same","objectChangeType":null,"objectEvidence":null,"targetScopeRelation":"same","scopeEvidence":null,"targetBurdenRelation":"retained","burdenEvidence":null,"componentOperations":[{"componentId":"lennox-atkins-science-explain-everything-2019-target-09-c1","operation":"undermines","evidence":{"text":"because my credits equal my debts there's nothing going on at all","startChar":142,"endChar":207}}],"relevantContraryMaterial":false,"contraryEvidence":null,"derivedTargetDisposition":"preserved","derivedTargetCoverage":"full"},
+      "diagnosticPrimitives": {"applicability":"applicable","defectType":"invalid-inference","defectObject":{"objectType":"target-packet","objectId":"lennox-atkins-science-explain-everything-2019-target-09"},"defectEvidence":{"text":"because my credits equal my debts there's nothing going on at all","startChar":142,"endChar":207},"impactMode":"inferential-consequence","impactEvidence":{"text":"because my credits equal my debts there's nothing going on at all","startChar":142,"endChar":207},"derivedDiagnostic":true},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"lennox-atkins-science-explain-everything-2019-pro-central","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "The credits-and-debts analogy retains the equal-opposites target and attacks its proposed explanatory force.", "mechanismRationale": "The analogy explicitly exposes the inference from balanced quantities to nothing-going-on as not following.", "burdenRationale": "Attacking the equal-opposites origin explanation advances the pro side's central case for explanatory limits.", "confidence": "medium"
+    },
+    {
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-10", "interactionMode": "responsive", "targetPacketId": "lennox-atkins-science-explain-everything-2019-target-10", "primaryBurdenRouteId": "lennox-atkins-science-explain-everything-2019-con-route",
+      "coveragePrimitives": {"targetObjectRelation":"changed","objectChangeType":"referent","objectEvidence":{"text":"in some cases religion can be palliative","startChar":78,"endChar":118},"targetScopeRelation":"narrowed","scopeEvidence":{"text":"in some cases","startChar":78,"endChar":91},"targetBurdenRelation":"retained","burdenEvidence":null,"componentOperations":[],"relevantContraryMaterial":false,"contraryEvidence":null,"derivedTargetDisposition":"substituted","derivedTargetCoverage":"substitution"},
+      "diagnosticPrimitives": {"applicability":"applicable","defectType":"none","defectObject":null,"defectEvidence":null,"impactMode":"none","impactEvidence":null,"derivedDiagnostic":false},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"lennox-atkins-science-explain-everything-2019-con-central","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "Atkins changes from what atheism offers to what religion offers as comfort, additionally restricting that claim to some cases.", "mechanismRationale": "The false-comfort verdict concerns the substituted religious referent and does not diagnose the locked atheism packet.", "burdenRationale": "Characterizing religious hope as false comfort supports the con central bridge against supernatural additions.", "confidence": "medium"
+    },
+    {
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-11", "interactionMode": "responsive", "targetPacketId": "lennox-atkins-science-explain-everything-2019-target-11", "primaryBurdenRouteId": "lennox-atkins-science-explain-everything-2019-pro-route",
+      "coveragePrimitives": {"targetObjectRelation":"same","objectChangeType":null,"objectEvidence":null,"targetScopeRelation":"same","scopeEvidence":null,"targetBurdenRelation":"retained","burdenEvidence":null,"componentOperations":[{"componentId":"lennox-atkins-science-explain-everything-2019-target-11-c1","operation":"accepts","evidence":{"text":"science chemistry I believe can tell me that if I put arsenic in my granny's tea it will give her a pretty rough time","startChar":85,"endChar":202}},{"componentId":"lennox-atkins-science-explain-everything-2019-target-11-c2","operation":"denies","evidence":{"text":"science chemistry cannot tell me whether I ought to do it or not","startChar":207,"endChar":271}}],"relevantContraryMaterial":false,"contraryEvidence":null,"derivedTargetDisposition":"preserved","derivedTargetCoverage":"full"},
+      "diagnosticPrimitives": {"applicability":"applicable","defectType":"invalid-inference","defectObject":{"objectType":"target-component","objectId":"lennox-atkins-science-explain-everything-2019-target-11-c2"},"defectEvidence":{"text":"science chemistry cannot tell me whether I ought to do it or not","startChar":207,"endChar":271},"impactMode":"inferential-consequence","impactEvidence":{"text":"science chemistry cannot tell me whether I ought to do it or not","startChar":207,"endChar":271},"derivedDiagnostic":true},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"lennox-atkins-science-explain-everything-2019-pro-central","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "Lennox accepts scientific prediction of consequences but denies the inference that it determines what one ought to do.", "mechanismRationale": "The descriptive-to-normative inference is rejected with an explicit consequence for the target ought conclusion.", "burdenRationale": "The arsenic example directly advances the pro central claim that moral explanation exceeds natural science.", "confidence": "high"
+    },
+    {
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-12", "interactionMode": "responsive", "targetPacketId": "lennox-atkins-science-explain-everything-2019-target-12", "primaryBurdenRouteId": "lennox-atkins-science-explain-everything-2019-pro-route",
+      "coveragePrimitives": {"targetObjectRelation":"same","objectChangeType":null,"objectEvidence":null,"targetScopeRelation":"narrowed","scopeEvidence":{"text":"you're making inferences to the best explanation rather than being able to demonstrate that everything happens","startChar":211,"endChar":321},"targetBurdenRelation":"retained","burdenEvidence":null,"componentOperations":[{"componentId":"lennox-atkins-science-explain-everything-2019-target-12-c1","operation":"qualifies","evidence":{"text":"you're making inferences to the best explanation rather than being able to demonstrate that everything happens","startChar":211,"endChar":321}},{"componentId":"lennox-atkins-science-explain-everything-2019-target-12-c2","operation":null,"evidence":null}],"relevantContraryMaterial":false,"contraryEvidence":null,"derivedTargetDisposition":"preserved","derivedTargetCoverage":"partial"},
+      "diagnosticPrimitives": {"applicability":"applicable","defectType":"evidential-insufficiency","defectObject":{"objectType":"target-component","objectId":"lennox-atkins-science-explain-everything-2019-target-12-c1"},"defectEvidence":{"text":"rather than being able to demonstrate that everything happens","startChar":260,"endChar":321},"impactMode":"inferential-consequence","impactEvidence":{"text":"you're making inferences to the best explanation rather than being able to demonstrate that everything happens","startChar":211,"endChar":321},"derivedDiagnostic":true},
+      "reframePrimitives": {"malformedDemandExplained":false,"malformedDemandEvidence":null,"replacementDemandStated":false,"replacementDemandEvidence":null,"derivedReframe":false},
+      "burdenPrimitives": {"contactedBridges":[{"bridgeId":"lennox-atkins-science-explain-everything-2019-pro-central","contactMode":"supports"}],"derivedBurdenRelation":"advances-central"},
+      "coverageRationale": "Lennox retains the biology-explanation object but narrows its force from near-total accounting to best-explanation inference.", "mechanismRationale": "He expressly contrasts inferential support with demonstration, stating the evidential limitation on the target rule.", "burdenRationale": "The biology-physics distinction directly advances the pro claim that scientific explanation has differing limits.", "confidence": "medium"
+    }
+  ],
+  "audit": {"moveCount":12,"allInventoryLocksCopied":true,"evidenceOffsetErrors":0,"targetAxisApplicabilityErrors":0,"diagnosticObjectErrors":0,"derivationMismatches":0,"scoreFieldsPresent":false,"allMovesAnnotatedOnce":true}
+}

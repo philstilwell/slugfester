@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "2.7-inventory-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.7",
+  "gateId": "v2.7-multi-speaker-held-out-gate",
+  "lane": "multi-speaker",
+  "debateId": "krauss-meyer-lamoureux-god-science-universe-2016",
+  "debateNumber": "84",
+  "reviewRound": 1,
+  "reviewedAt": "2026-08-03T17:25:56Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-independent-v2.7-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "priorReviewAvailable": false,
+    "statement": "This fresh round-one review used only the authorized v2.7 workflow, gate and inventory files, validators, and the complete named transcript, events, and manifest chain; no prior semantic review or prohibited material was available or accessed."
+  },
+  "source": {
+    "inputInventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/review-inputs/round-1/krauss-meyer-lamoureux-god-science-universe-2016.json",
+    "inputInventorySha256": "0960f3d538de9cf02b8c750a0f52367e3884937da3937cf96c89fae4b4ab1351",
+    "outputInventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/krauss-meyer-lamoureux-god-science-universe-2016.json",
+    "outputInventorySha256": "9b83c9c5141d168d84a24ad5f10439456d546229f7ec6a44ca6f90a823ef2b6b",
+    "priorReviewPath": null,
+    "priorReviewSha256": null,
+    "transcriptSha256": "11381198f8dab41f13af207e7cce79684081b27f0db256ad16c710cd14cffe1f",
+    "eventsSha256": "82dc776ab1ae526749eb5d7bbad99002252ab379278df718d6d82b0db071ff9a",
+    "manifestSha256": "eb110eb45d29e4e73e7abe3e50764ba08adf337c75d345e8a9fdc1afce6ab2a7",
+    "workflowSha256": "89e97666e6e1d98bf2d9e0dbd3a5fe3665509a955806e7c12d789f2a77d98641",
+    "inventorySchemaSha256": "7d1cb858a2a41fe3d15bdeb6c790aa26a4f2831a09b69235fde112740961286e",
+    "gateManifestSha256": "28b132a4e8510faaab683ae05f554f05ef943d742312e2088f0dc2be44652420"
+  },
+  "findings": [
+    {
+      "findingId": "round1-atomic-spans",
+      "category": "atomicity",
+      "moveId": null,
+      "description": "The frozen inventory used broad source spans for numerous moves, often extending substantially beyond the quoted atomic act and obscuring where one claim ended and an adjacent premise, example, institutional step, or reply began.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "round1-responsive-sampling",
+      "category": "sampling",
+      "moveId": "krauss-meyer-lamoureux-god-science-universe-2016-move-07",
+      "description": "The frozen inventory counted Lamoureux's praise of Krauss at 1:39:42 as responsive and split the following vacuum-state objection into multiple nominal responses, so its twelve responsive selections did not represent twelve distinct opponent-responsive acts.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "round1-same-side-exclusion",
+      "category": "ownership-adoption",
+      "moveId": "krauss-meyer-lamoureux-god-science-universe-2016-move-16",
+      "description": "The frozen move at 2:03:33 principally challenged Stephen Meyer and intelligent design, but Meyer and Lamoureux occupy the same registered side and no opponent-owned Krauss claim made that act eligible for responsive credit.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "round1-target-selection",
+      "category": "target-packet",
+      "moveId": null,
+      "description": "Several frozen responsive packets selected generic or semantically mismatched opponent claims: Krauss's evolutionary and origin-of-life replies were attached to methodological naturalism, his scriptural challenge was attached to a general metaphysics claim, and Lamoureux's vacuum objection was attached to an overbroad cosmology summary.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "round1-target-recency",
+      "category": "target-recency",
+      "moveId": "krauss-meyer-lamoureux-god-science-universe-2016-move-15",
+      "description": "The frozen packet reused Krauss's earlier general natural-selection response for Meyer's programmer-input objection even though Krauss's immediately preceding Go-machine example was the specific opponent claim Meyer answered.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "round1-component-graphs",
+      "category": "component-graph",
+      "moveId": null,
+      "description": "The frozen responsive packets generally collapsed multi-step target arguments into one untyped semantic unit, omitting indispensable premises, comparisons, modalities, inferences, conclusions, and their dependency edges.",
+      "disposition": "repaired"
+    }
+  ],
+  "repairs": [
+    {
+      "findingId": "round1-atomic-spans",
+      "change": "The candidate tightens every selected source span and excerpt to a bounded single-speaker argumentative act, ending before adjacent examples, peer-review stages, transitions, or new replies.",
+      "triggerCategory": "atomicity"
+    },
+    {
+      "findingId": "round1-responsive-sampling",
+      "change": "The candidate excludes the non-oppositional praise and duplicate fragments, substitutes distinct responsive acts by Meyer and Lamoureux, and preserves sixteen chronological moves with four constructive and twelve responsive moves and the required per-speaker coverage.",
+      "triggerCategory": "sampling"
+    },
+    {
+      "findingId": "round1-same-side-exclusion",
+      "change": "The candidate removes the Lamoureux-to-Meyer same-side exchange from responsive credit and replaces it with Lamoureux's explicit response to Krauss's claim that successful scientific practice has not needed God.",
+      "triggerCategory": "ownership-adoption"
+    },
+    {
+      "findingId": "round1-target-selection",
+      "change": "The candidate relocks each affected packet to the specific opponent-owned claim actually answered, including Krauss's protein-search, origin-of-life, and scriptural targets and Lamoureux's quantum-vacuum target.",
+      "triggerCategory": "target-packet"
+    },
+    {
+      "findingId": "round1-target-recency",
+      "change": "The candidate targets move 15 to Krauss's immediately preceding Go-machine evolutionary-learning claim and separately preserves the broader selection-versus-randomness target for move 14.",
+      "triggerCategory": "target-recency"
+    },
+    {
+      "findingId": "round1-component-graphs",
+      "change": "The candidate reconstructs the responsive targets as typed atomic components with explicit acyclic dependencies and separates premises, comparisons, modalities, inferences, and conclusions without duplicative overlap.",
+      "triggerCategory": "component-graph"
+    }
+  ],
+  "nextReviewTrigger": {
+    "required": true,
+    "categories": [
+      "atomicity",
+      "component-graph",
+      "ownership-adoption",
+      "sampling",
+      "target-packet",
+      "target-recency"
+    ],
+    "rationale": "A second fresh independent semantic review is mandatory for every multi-speaker round-one inventory, and the repaired protected fields independently require that follow-up."
+  },
+  "audit": {
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "targetSideViolations": 0,
+    "ownershipAdoptionViolations": 0,
+    "burdenRouteViolations": 0,
+    "componentGraphViolations": 0,
+    "componentOverlapViolations": 0,
+    "targetRecencyViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "outputInventoryValidatorPassed": true
+  }
+}

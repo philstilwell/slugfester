@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "2.7-inventory-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.7",
+  "gateId": "v2.7-multi-speaker-held-out-gate",
+  "lane": "multi-speaker",
+  "debateId": "hitchens-kushner-gomes-god-religion-morality-2009",
+  "debateNumber": "71",
+  "reviewRound": 2,
+  "reviewedAt": "2026-08-03T17:51:12Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-independent-v2.7-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "priorReviewAvailable": true,
+    "statement": "Fresh independent round-two classification review used only the authorized workflow, gate manifest, schemas, validators, preserved snapshot, repaired candidate, official round-one review, and complete named transcript, events, manifest, and audio-obligation chain."
+  },
+  "source": {
+    "inputInventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/review-inputs/round-2/hitchens-kushner-gomes-god-religion-morality-2009.json",
+    "inputInventorySha256": "a6afd4808ef39db455db405cd1d8750dc90527800e6a8f4cbfc7add0244835e1",
+    "outputInventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/hitchens-kushner-gomes-god-religion-morality-2009.json",
+    "outputInventorySha256": "a207612720c8b9200dc0a106009b420e62ebed6e7f221e71b0d1a5314bf9fb8f",
+    "priorReviewPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventory-reviews/round-1/hitchens-kushner-gomes-god-religion-morality-2009.json",
+    "priorReviewSha256": "68bf9c526f7a5ed5e699552c438aff7ea94a40268928218135b51ee15594729b",
+    "transcriptSha256": "0cf2ca16cbe4e462b6303449ddb096f58f6183792229ec2d89919a1ddfe62a7f",
+    "eventsSha256": "42f50cdf634d660f8153a20aee55852a326e515f30da5987adda3f22beaa9fb5",
+    "manifestSha256": "e9fec0a1a7646bbfa5e606c06c2f01638dee13dc366907b00b7e70ad75933816",
+    "workflowSha256": "89e97666e6e1d98bf2d9e0dbd3a5fe3665509a955806e7c12d789f2a77d98641",
+    "inventorySchemaSha256": "7d1cb858a2a41fe3d15bdeb6c790aa26a4f2831a09b69235fde112740961286e",
+    "gateManifestSha256": "28b132a4e8510faaab683ae05f554f05ef943d742312e2088f0dc2be44652420"
+  },
+  "findings": [
+    {
+      "findingId": "round-2-finding-01",
+      "category": "atomicity",
+      "moveId": null,
+      "description": "The candidate genuinely repairs snapshot source boundaries in moves 01, 05, 07, 08, 10, 13, 14, 15, and 16 by completing or cleanly bounding the selected single-speaker acts and removing partial trailing, handoff, or fragmentary language.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "round-2-finding-02",
+      "category": "target-packet",
+      "moveId": "hitchens-kushner-gomes-god-religion-morality-2009-move-08",
+      "description": "The candidate replaces move 08's mismatched unique-morality target with Hitchens's specific accusation that religious spokesmen avoid acknowledging and apologizing for serious religious wrongdoing.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "round-2-finding-03",
+      "category": "component-graph",
+      "moveId": "hitchens-kushner-gomes-god-religion-morality-2009-move-08",
+      "description": "The candidate replaces move 08's obsolete comparison graph with an acyclic premise-to-conclusion graph representing serious religious wrongdoing and the consequent accusation of unapologetic religious advocacy.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "round-2-finding-04",
+      "category": "target-recency",
+      "moveId": "hitchens-kushner-gomes-god-religion-morality-2009-move-08",
+      "description": "The candidate replaces move 08's older 10:46 challenge with Hitchens's later 11:56–12:14 formulation, which is the latest opponent-owned claim specifically answered by Gomes's confession-based acknowledgment.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "round-2-finding-05",
+      "category": "target-packet",
+      "moveId": "hitchens-kushner-gomes-god-religion-morality-2009-move-08",
+      "description": "The move 08 target replacement materially repairs represented meaning by aligning Gomes's response object with Hitchens's apology accusation rather than the distinct demand for a uniquely religious moral action.",
+      "disposition": "repaired"
+    }
+  ],
+  "repairs": [
+    {
+      "findingId": "round-2-finding-01",
+      "change": "Extended, trimmed, or shifted the affected source spans and regenerated their excerpts and hashes so each selected act has a transcript-faithful argumentative boundary.",
+      "triggerCategory": "atomicity"
+    },
+    {
+      "findingId": "round-2-finding-02",
+      "change": "Rebuilt move 08's target packet around Hitchens's immediately preceding accusation concerning religious wrongdoing and the failure of religious spokesmen to apologize.",
+      "triggerCategory": "target-packet"
+    },
+    {
+      "findingId": "round-2-finding-03",
+      "change": "Replaced move 08's three-node unique-morality graph with the two-node wrongdoing-to-unapologetic-advocacy graph supported by its repaired target excerpt.",
+      "triggerCategory": "component-graph"
+    },
+    {
+      "findingId": "round-2-finding-04",
+      "change": "Advanced move 08's target span from 646000–669240 milliseconds to the more recent responsive target at 716680–734200 milliseconds.",
+      "triggerCategory": "target-recency"
+    },
+    {
+      "findingId": "round-2-finding-05",
+      "change": "Corrected move 08's semantic pairing so its claim, response object, components, and selection rationale represent the actual apology exchange.",
+      "triggerCategory": "meaning"
+    }
+  ],
+  "nextReviewTrigger": {
+    "required": true,
+    "categories": [
+      "atomicity",
+      "target-packet",
+      "component-graph",
+      "target-recency",
+      "meaning"
+    ],
+    "rationale": "The candidate is clean, but these genuine protected snapshot-to-candidate repairs require a fresh round-three semantic review."
+  },
+  "audit": {
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "targetSideViolations": 0,
+    "ownershipAdoptionViolations": 0,
+    "burdenRouteViolations": 0,
+    "componentGraphViolations": 0,
+    "componentOverlapViolations": 0,
+    "targetRecencyViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "outputInventoryValidatorPassed": true
+  }
+}

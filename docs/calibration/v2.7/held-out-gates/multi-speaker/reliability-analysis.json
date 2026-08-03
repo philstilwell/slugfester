@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "2.7-lane-reliability-analysis",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.7",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.7",
+  "gateId": "v2.7-multi-speaker-held-out-gate",
+  "lane": "multi-speaker",
+  "analyzedAt": "2026-08-03T18:19:36.743Z",
+  "sources": {
+    "gateManifestPath": "docs/calibration/v2.7/held-out-gates/gate-manifest.json",
+    "gateManifestSha256": "28b132a4e8510faaab683ae05f554f05ef943d742312e2088f0dc2be44652420",
+    "locks": [
+      {
+        "debateId": "hitchens-kushner-gomes-god-religion-morality-2009",
+        "path": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "sha256": "5432d5c42e4f3e9594e0429bff63f5870d56ddee37254cadd2018df7672a8e0e"
+      },
+      {
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "path": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "sha256": "aab3f23e672b9f0787ec01880112094ed5c55c26f2284e3d058700924f5d376e"
+      },
+      {
+        "debateId": "krauss-meyer-lamoureux-god-science-universe-2016",
+        "path": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "sha256": "1a9604e70381c30094f488b1d6cfe67be14dedf1a5834bc09612f0a72db747cb"
+      }
+    ]
+  },
+  "denominators": {
+    "moveCount": 48,
+    "responsiveMoveCount": 36,
+    "componentContactJudgmentCount": 54,
+    "componentOperationJudgmentCount": 54,
+    "diagnosticObjectJudgmentCount": 22
+  },
+  "metrics": {
+    "targetObjectExact": 0.75,
+    "targetScopeExact": 0.9444444444444444,
+    "targetBurdenExact": 1,
+    "componentContactMicroExact": 0.9444444444444444,
+    "responsiveCoverageExact": 0.7222222222222222,
+    "responsiveCoverageKappa": 0.5918367346938775,
+    "defectTypeExact": 0.5833333333333334,
+    "diagnosticObjectExact": 0.2727272727272727,
+    "impactModeExact": 0.6111111111111112,
+    "diagnosticExact": 0.6666666666666666,
+    "malformedDemandExact": 0.9791666666666666,
+    "replacementDemandExact": 0.9791666666666666,
+    "reframeExact": 0.9791666666666666,
+    "bridgeSetExact": 1,
+    "burdenExact": 1,
+    "burdenKappa": 1,
+    "exactDerivedTupleExact": 0.625,
+    "componentOperationDiagnosticExact": 0.8148148148148148,
+    "allMoveCoverageDiagnosticExact": 0.7916666666666666,
+    "diagnosticPositiveCount": 13,
+    "reframePositiveCount": 3
+  },
+  "thresholds": {
+    "targetObjectExact": 0.9,
+    "targetScopeExact": 0.85,
+    "targetBurdenExact": 0.9,
+    "componentContactMicroExact": 0.9,
+    "responsiveCoverageExact": 0.85,
+    "responsiveCoverageKappa": 0.75,
+    "defectTypeExact": 0.85,
+    "diagnosticObjectExact": 0.85,
+    "impactModeExact": 0.9,
+    "diagnosticExact": 0.9,
+    "minimumDiagnosticPositives": 3,
+    "malformedDemandExact": 0.9,
+    "replacementDemandExact": 0.9,
+    "reframeExact": 0.9,
+    "minimumReframePositives": 3,
+    "bridgeSetExact": 0.8,
+    "burdenExact": 0.8,
+    "burdenKappa": 0.7,
+    "exactDerivedTupleExact": 0.7,
+    "perDebateTargetObjectExact": 0.75,
+    "perDebateComponentContactMicroExact": 0.8,
+    "perDebateResponsiveCoverageExact": 0.75,
+    "perDebateImpactModeExact": 0.75
+  },
+  "aggregateGates": {
+    "targetObjectExact": false,
+    "targetScopeExact": true,
+    "targetBurdenExact": true,
+    "componentContactMicroExact": true,
+    "responsiveCoverageExact": false,
+    "responsiveCoverageKappa": false,
+    "defectTypeExact": false,
+    "diagnosticObjectExact": false,
+    "impactModeExact": false,
+    "diagnosticExact": false,
+    "diagnosticPositiveCount": true,
+    "malformedDemandExact": true,
+    "replacementDemandExact": true,
+    "reframeExact": true,
+    "reframePositiveCount": true,
+    "bridgeSetExact": true,
+    "burdenExact": true,
+    "burdenKappa": true,
+    "exactDerivedTupleExact": false
+  },
+  "perDebate": [
+    {
+      "debateId": "hitchens-kushner-gomes-god-religion-morality-2009",
+      "targetObjectExact": 0.8333333333333334,
+      "componentContactMicroExact": 1,
+      "responsiveCoverageExact": 0.8333333333333334,
+      "impactModeExact": 0.9166666666666666,
+      "passed": true
+    },
+    {
+      "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "targetObjectExact": 0.75,
+      "componentContactMicroExact": 0.9411764705882353,
+      "responsiveCoverageExact": 0.6666666666666666,
+      "impactModeExact": 0.3333333333333333,
+      "passed": false
+    },
+    {
+      "debateId": "krauss-meyer-lamoureux-god-science-universe-2016",
+      "targetObjectExact": 0.6666666666666666,
+      "componentContactMicroExact": 0.8888888888888888,
+      "responsiveCoverageExact": 0.6666666666666666,
+      "impactModeExact": 0.5833333333333334,
+      "passed": false
+    }
+  ],
+  "hardGates": {
+    "auditViolations": 0,
+    "missingRequiredReviews": 0,
+    "reviewChainViolations": 0,
+    "passed": true
+  },
+  "decision": {
+    "passed": false,
+    "numericalScoringAuthorized": false,
+    "nextStep": "A pass authorizes preregistration of this lane's separate numerical gate; it does not authorize scoring."
+  }
+}

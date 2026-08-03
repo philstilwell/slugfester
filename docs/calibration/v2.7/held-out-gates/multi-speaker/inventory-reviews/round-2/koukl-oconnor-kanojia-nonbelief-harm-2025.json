@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "2.7-inventory-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.7",
+  "gateId": "v2.7-multi-speaker-held-out-gate",
+  "lane": "multi-speaker",
+  "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+  "debateNumber": "154",
+  "reviewRound": 2,
+  "reviewedAt": "2026-08-03T17:36:01Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-independent-v2.7-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "priorReviewAvailable": true,
+    "statement": "This fresh round-two review used only the authorized v2.7 workflow, gate manifest, schemas, validators, current inventory, prior round-one review, and the complete named transcript, event, manifest, and audio-evidence chain."
+  },
+  "source": {
+    "inputInventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+    "inputInventorySha256": "ed7a0cf3b17c4f69c4895d5f8734ed335d582b2263dbd1ad5598a78ae0f25f87",
+    "outputInventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+    "outputInventorySha256": "ed7a0cf3b17c4f69c4895d5f8734ed335d582b2263dbd1ad5598a78ae0f25f87",
+    "priorReviewPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventory-reviews/round-1/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+    "priorReviewSha256": "683471b31c67d034087243378437052bf7878012ce638e2776ffbf70e94281d4",
+    "transcriptSha256": "7ee69301250617e3c9ff2116c668d4887ceb0c112bc373ded281cbe63f8542b1",
+    "eventsSha256": "0b143e18682e794f7d330a83f1fd84c4433043509a3573475da9e9400a04e2a8",
+    "manifestSha256": "3fa5fc85e7389218329a46777ed724b1fb9f92b6d9c868061f06c1f4cd853095",
+    "workflowSha256": "89e97666e6e1d98bf2d9e0dbd3a5fe3665509a955806e7c12d789f2a77d98641",
+    "inventorySchemaSha256": "7d1cb858a2a41fe3d15bdeb6c790aa26a4f2831a09b69235fde112740961286e",
+    "gateManifestSha256": "28b132a4e8510faaab683ae05f554f05ef943d742312e2088f0dc2be44652420"
+  },
+  "findings": [],
+  "repairs": [],
+  "nextReviewTrigger": {
+    "required": false,
+    "categories": [],
+    "rationale": "The round-two audit found no remaining protected-field defect and made no repair requiring a third review."
+  },
+  "audit": {
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "targetSideViolations": 0,
+    "ownershipAdoptionViolations": 0,
+    "burdenRouteViolations": 0,
+    "componentGraphViolations": 0,
+    "componentOverlapViolations": 0,
+    "targetRecencyViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "outputInventoryValidatorPassed": true
+  }
+}

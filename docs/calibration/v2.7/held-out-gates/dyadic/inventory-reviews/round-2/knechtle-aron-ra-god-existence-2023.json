@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "2.7-inventory-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.7",
+  "gateId": "v2.7-dyadic-held-out-gate",
+  "lane": "dyadic",
+  "debateId": "knechtle-aron-ra-god-existence-2023",
+  "debateNumber": "152",
+  "reviewRound": 2,
+  "reviewedAt": "2026-08-03T17:22:19Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-independent-v2.7-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "priorReviewAvailable": true,
+    "statement": "A fresh read-only 5.6 Sol context independently audited the complete authorized transcript and event chain without legacy assessments, development examples, annotation passes, annotation locks, or reliability outputs; the required prior review was available."
+  },
+  "source": {
+    "inputInventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/knechtle-aron-ra-god-existence-2023.json",
+    "inputInventorySha256": "b36b4e1a970d76e9edc51ab7acfdcb0604a94b5939e73ccc49781d022aabac54",
+    "outputInventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/knechtle-aron-ra-god-existence-2023.json",
+    "outputInventorySha256": "b36b4e1a970d76e9edc51ab7acfdcb0604a94b5939e73ccc49781d022aabac54",
+    "priorReviewPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventory-reviews/round-1/knechtle-aron-ra-god-existence-2023.json",
+    "priorReviewSha256": "a7bdbc34f1ab606933ffb5e3c679480038e8909ac0e7b6d1b2648e6539aa0ce1",
+    "transcriptSha256": "afb9789743fdea882d2d18591b2504f773f9b0c08df226c2bcbda5de47ec2ed7",
+    "eventsSha256": "8c3e7c8a52185cadaa1b5d03d50a844dc2dce7ec902054d95efa0aa88c666e33",
+    "manifestSha256": "96dfa97128a08b3adeee33d6cfffbe4dcd684d6579a875b14cf9586d8f9f1b6d",
+    "workflowSha256": "89e97666e6e1d98bf2d9e0dbd3a5fe3665509a955806e7c12d789f2a77d98641",
+    "inventorySchemaSha256": "7d1cb858a2a41fe3d15bdeb6c790aa26a4f2831a09b69235fde112740961286e",
+    "gateManifestSha256": "28b132a4e8510faaab683ae05f554f05ef943d742312e2088f0dc2be44652420"
+  },
+  "findings": [],
+  "repairs": [],
+  "nextReviewTrigger": {
+    "required": false,
+    "categories": [],
+    "rationale": "The follow-up audit found no remaining protected-field violation and made no repair requiring another semantic review."
+  },
+  "audit": {
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "targetSideViolations": 0,
+    "ownershipAdoptionViolations": 0,
+    "burdenRouteViolations": 0,
+    "componentGraphViolations": 0,
+    "componentOverlapViolations": 0,
+    "targetRecencyViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "outputInventoryValidatorPassed": true
+  }
+}
