@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "2.4-held-out-annotation-gate",
+  "gateId": "v2.4-held-out-orthogonal-annotation-gate",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.4",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.4",
+  "model": "5.6 Sol",
+  "calibrationOnly": true,
+  "preregistration": {
+    "lockedAt": "2026-08-03T02:08:00Z",
+    "sampleSelectedFrom": "production debate metadata only",
+    "transcriptsReviewedBeforeLock": false,
+    "excludedDevelopmentDebates": ["craig-oconnor-god-debate-2026", "hitchens-dsouza-religion-problem-2010", "dillahunty-ten-bruggencate-reasonable-god-2014", "goff-carroll-consciousness-fundamental-2023", "harris-prager-religion-morality-public-reason-2014", "jones-dillahunty-quantum-idealism-demonstrability-2026", "oconnor-baker-hytch-argument-from-reason-2020", "rasmussen-oppy-ultimate-reality-naturalism-2020", "tour-cronin-origin-of-life-2020", "craig-frazier-goff-folley-god-reality-2026"],
+    "developmentData": "The 32 v2.3 exact class disagreements only; held-out debates may not enter the development examples.",
+    "thresholdChangeRule": "No threshold, sample member, or required field may change after a held-out transcript or annotation result is viewed."
+  },
+  "sample": {
+    "debateCount": 3,
+    "movesPerDebate": 12,
+    "moveCount": 36,
+    "debates": [
+      {"number": "35", "debateId": "carroll-shermer-hutchinson-dsouza-science-religion-2012", "videoId": "ulykALV2FQ8", "stratum": "multi-party science and religion", "motion": "Has science refuted religion, or does that claim overreach by confusing scientific method with scientism and by ignoring non-scientific forms of evidence?", "sides": {"pro": {"label": "Science refuted religion", "speakers": ["Sean Carroll", "Michael Shermer"]}, "con": {"label": "Religion not refuted", "speakers": ["Ian Hutchinson", "Dinesh D'Souza"]}}},
+      {"number": "150", "debateId": "licona-dillahunty-resurrection-evidence-2017", "videoId": "IW9w6c2RWmA", "stratum": "historical claim and asymmetric evidential burden", "motion": "Did Jesus rise from the dead, and can historical evidence plus allegedly supernatural phenomena justify that conclusion?", "sides": {"pro": {"label": "Resurrection hypothesis", "speakers": ["Mike Licona"]}, "con": {"label": "Skeptical evidentialism", "speakers": ["Matt Dillahunty"]}}},
+      {"number": "190", "debateId": "huemer-oppy-souls-personal-identity-2022", "videoId": "gxSi0htNihk", "stratum": "close analytic philosophy of mind", "motion": "Do conscious persons possess nonphysical mental substances that can survive bodily death?", "sides": {"pro": {"label": "Nonphysical souls exist", "speakers": ["Michael Huemer"]}, "con": {"label": "Persons are natural organisms", "speakers": ["Graham Oppy"]}}}
+    ]
+  },
+  "inventoryProtocol": {
+    "movesPerDebate": 12,
+    "constructiveMovesPerSide": 2,
+    "responsiveMovesTotal": 8,
+    "minimumMovesPerSide": 4,
+    "sourceExcerptWords": {"minimum": 30, "maximum": 90},
+    "targetExcerptWords": {"minimum": 15, "maximum": 90},
+    "singleSpeakerAtomicActRequired": true,
+    "highSpeakerConfidenceOrVerifiedAudioRequired": true,
+    "freshIndependentReviewRequired": true
+  },
+  "executionProtocol": {
+    "developmentExamples": "Convert all 32 v2.3 class disagreements to the orthogonal v2.4 fields before held-out classification.",
+    "inventory": "A fresh task builds each inventory from the full local source with no legacy assessment or development-example access.",
+    "inventoryReview": "A different fresh task checks and repairs source fidelity, atomicity, target packets, burdens, and sampling compliance before annotation.",
+    "passA": "A fresh isolated 5.6 Sol task uses the exact annotation allowlist and no prior assessment or Pass B.",
+    "passB": "A different fresh isolated 5.6 Sol task uses the identical allowlist and no Pass A.",
+    "adjudication": "A fresh task resolves every field disagreement without scores or legacy assessments.",
+    "stopRule": "Any failed annotation or hard gate blocks numerical scoring and all composition."
+  },
+  "annotationGates": {
+    "coverageExactAgreementMinimum": 0.85,
+    "coverageKappaMinimum": 0.75,
+    "diagnosticFlagExactAgreementMinimum": 0.9,
+    "reframeFlagExactAgreementMinimum": 0.9,
+    "mechanismPositiveCountMinimum": 3,
+    "burdenRelationExactAgreementMinimum": 0.8,
+    "burdenRelationKappaMinimum": 0.7,
+    "exactTupleAgreementMinimum": 0.7
+  },
+  "hardGates": {
+    "moveCount": 36,
+    "inventoryAtomicityViolationsMaximum": 0,
+    "targetPacketViolationsMaximum": 0,
+    "sourceHashMismatchesMaximum": 0,
+    "unresolvedSpeakerAttributionsMaximum": 0,
+    "unresolvedAnnotationDisagreementsMaximum": 0,
+    "movesMissingFinalLockMaximum": 0,
+    "schemaVariantsMaximum": 1,
+    "prohibitedInputContaminationMaximum": 0
+  },
+  "readinessRule": {
+    "passedGate": "Authorizes only a separately preregistered complete v2.4 three-debate numerical gate.",
+    "tenDebateGate": "Not authorized by this annotation-only gate.",
+    "corpusWide": "Not authorized."
+  },
+  "decision": {"heldOutAnnotationGate": "pending", "completeNumericalGate": "not-authorized", "tenDebateGate": "not-authorized", "corpusWide": "not-ready"}
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v2.4-annotation-pass",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "workflowVersion", "rubricVersion", "gateId", "debateId", "debateNumber", "pass", "model", "calibrationOnly", "completedAt", "isolation", "source", "annotations", "audit"],
+  "properties": {
+    "schemaVersion": {"const": "2.4-annotation-pass"},
+    "workflowVersion": {"const": "Slugfester Reassessment Workflow v2.4"},
+    "rubricVersion": {"const": "Slugfester Reassessment Rubric v2.4"},
+    "gateId": {"const": "v2.4-held-out-orthogonal-annotation-gate"},
+    "debateId": {"type": "string", "minLength": 1},
+    "debateNumber": {"type": "string", "minLength": 1},
+    "pass": {"enum": ["A", "B"]},
+    "model": {"const": "5.6 Sol"},
+    "calibrationOnly": {"const": true},
+    "completedAt": {"type": "string", "format": "date-time"},
+    "isolation": {"$ref": "#/$defs/isolation"},
+    "source": {"$ref": "#/$defs/source"},
+    "annotations": {"type": "array", "minItems": 12, "maxItems": 12, "items": {"$ref": "#/$defs/annotation"}},
+    "audit": {"type": "object", "additionalProperties": false, "required": ["moveCount", "allInteractionModesCopied", "allTargetPacketIdsCopied", "scoreFieldsPresent", "allMovesAnnotatedOnce"], "properties": {"moveCount": {"const": 12}, "allInteractionModesCopied": {"const": true}, "allTargetPacketIdsCopied": {"const": true}, "scoreFieldsPresent": {"const": false}, "allMovesAnnotatedOnce": {"const": true}}}
+  },
+  "$defs": {
+    "digest": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "isolation": {"type": "object", "additionalProperties": false, "required": ["method", "allowedInputs", "prohibitedInputsConfirmed", "contaminationDetected", "statement"], "properties": {"method": {"const": "fresh-isolated-v2.4-annotation-task"}, "allowedInputs": {"type": "array", "minItems": 10, "maxItems": 10, "items": {"type": "string"}, "uniqueItems": true}, "prohibitedInputsConfirmed": {"const": true}, "contaminationDetected": {"const": false}, "statement": {"type": "string", "minLength": 40}}},
+    "source": {"type": "object", "additionalProperties": false, "required": ["videoId", "inventoryPath", "inventorySha256", "transcriptSha256", "eventsSha256", "manifestSha256", "gateManifestSha256", "workflowSha256", "rubricSha256", "schemaSha256", "developmentManualSha256", "developmentExamplesSha256", "limitations"], "properties": {"videoId": {"type": "string", "minLength": 1}, "inventoryPath": {"type": "string", "minLength": 1}, "inventorySha256": {"$ref": "#/$defs/digest"}, "transcriptSha256": {"$ref": "#/$defs/digest"}, "eventsSha256": {"$ref": "#/$defs/digest"}, "manifestSha256": {"$ref": "#/$defs/digest"}, "gateManifestSha256": {"$ref": "#/$defs/digest"}, "workflowSha256": {"$ref": "#/$defs/digest"}, "rubricSha256": {"$ref": "#/$defs/digest"}, "schemaSha256": {"$ref": "#/$defs/digest"}, "developmentManualSha256": {"$ref": "#/$defs/digest"}, "developmentExamplesSha256": {"$ref": "#/$defs/digest"}, "limitations": {"type": "string", "minLength": 1}}},
+    "annotation": {"type": "object", "additionalProperties": false, "required": ["moveId", "interactionMode", "targetPacketId", "targetCoverage", "mechanismFlags", "burdenRelation", "coverageRationale", "mechanismRationale", "burdenRationale", "confidence"], "properties": {"moveId": {"type": "string", "minLength": 1}, "interactionMode": {"enum": ["constructive", "responsive"]}, "targetPacketId": {"type": ["string", "null"]}, "targetCoverage": {"enum": ["not-applicable", "full", "partial", "relevant-nonanswer", "substitution"]}, "mechanismFlags": {"type": "object", "additionalProperties": false, "required": ["diagnostic", "reframe"], "properties": {"diagnostic": {"type": "boolean"}, "reframe": {"type": "boolean"}}}, "burdenRelation": {"enum": ["completes", "advances-central", "advances-sub-burden", "topical-peripheral", "unadopted-or-irrelevant"]}, "coverageRationale": {"type": "string", "minLength": 40}, "mechanismRationale": {"type": "string", "minLength": 40}, "burdenRationale": {"type": "string", "minLength": 40}, "confidence": {"enum": ["high", "medium", "low"]}}}
+  }
+}
