@@ -47,6 +47,7 @@ for (const debate of gate.sample.debates) {
   assert(inventory.workflowVersion === gate.workflowVersion, `${debate.debateId}: workflow mismatch`);
   assert(inventory.rubricVersion === gate.rubricVersion, `${debate.debateId}: rubric mismatch`);
   assert(inventory.debateId === debate.debateId, `${debate.debateId}: inventory ID mismatch`);
+  assert(inventory.debateNumber === debate.number, `${debate.debateId}: inventory number mismatch`);
   assert(inventory.controlledRerun.sourceInventory === debate.sourceInventory, `${debate.debateId}: source inventory path mismatch`);
   assert(inventory.controlledRerun.sourceInventorySha256 === sha256(sourceInventorySource), `${debate.debateId}: source inventory hash mismatch`);
   assert(inventory.source.audioVerificationSha256 === sha256(auditSource), `${debate.debateId}: audio audit hash mismatch`);

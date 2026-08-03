@@ -24,6 +24,7 @@ function workspaceRelative(filePath) {
 const debates = [
   {
     debateId: "dillahunty-ten-bruggencate-reasonable-god-2014",
+    debateNumber: "05",
     videoId: "OL8LREmbDi0",
     sourceInventory: "docs/calibration/v2.1/complete-gate/inventories/dillahunty-ten-bruggencate-reasonable-god-2014.json",
     references: [
@@ -95,6 +96,7 @@ const debates = [
   },
   {
     debateId: "rasmussen-oppy-ultimate-reality-naturalism-2020",
+    debateNumber: "81",
     videoId: "YhqFdIb13bk",
     sourceInventory: "docs/calibration/v2.1/complete-gate/inventories/rasmussen-oppy-ultimate-reality-naturalism-2020.json",
     references: [
@@ -166,6 +168,7 @@ const debates = [
   },
   {
     debateId: "craig-frazier-goff-folley-god-reality-2026",
+    debateNumber: "95",
     videoId: "ZVMMO_kgtDQ",
     sourceInventory: "docs/calibration/v2.1/complete-gate/inventories/craig-frazier-goff-folley-god-reality-2026.json",
     references: [
@@ -286,6 +289,7 @@ for (const debate of debates) {
   inventory.schemaVersion = "2.2-argument-inventory";
   inventory.workflowVersion = "Slugfester Reassessment Workflow v2.2";
   inventory.rubricVersion = "Slugfester Reassessment Rubric v2.2";
+  inventory.debateNumber = debate.debateNumber;
   inventory.controlledRerun = {
     sourceInventory: debate.sourceInventory,
     sourceInventorySha256: sha256(sourceInventorySource),

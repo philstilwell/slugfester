@@ -234,7 +234,12 @@ for (const [label, recorded, source] of [
 assert(relative(audioVerificationPath) === scoringPass.source.audioVerificationPath, "source.audioVerificationPath must be workspace-relative");
 
 exactKeys(scoringPass.dimensionWeights, Object.keys(DIMENSION_WEIGHTS), "dimensionWeights");
-assert(JSON.stringify(scoringPass.dimensionWeights) === JSON.stringify(DIMENSION_WEIGHTS), "dimensionWeights differ from repository constants");
+for (const [dimension, weight] of Object.entries(DIMENSION_WEIGHTS)) {
+  assert(
+    scoringPass.dimensionWeights[dimension] === weight,
+    `dimensionWeights.${dimension} differs from the repository constant`
+  );
+}
 
 const lockedMoves = inventoryMoves(inventory);
 const lockedMoveById = new Map(lockedMoves.map((entry) => [entry.move.id, entry]));
