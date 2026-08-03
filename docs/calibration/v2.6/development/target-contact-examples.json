@@ -1,0 +1,718 @@
+{
+  "schemaVersion": "2.6-target-contact-development",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.6",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.6",
+  "sourceGateId": "v2.5-held-out-derived-annotation-gate",
+  "heldOutEligible": false,
+  "retiredDebates": [
+    "enoch-sampson-loeb-lutz-moral-realism-2024",
+    "licona-carrier-resurrection-history-2010",
+    "dennett-caruso-free-will-responsibility-2021"
+  ],
+  "cases": [
+    {
+      "caseId": "v26-dev-130-d130-m07-pro-responsive-distinctive-context",
+      "debateId": "licona-carrier-resurrection-history-2010",
+      "debateNumber": "130",
+      "moveId": "d130-m07-pro-responsive-distinctive-context",
+      "speaker": "Mike Licona",
+      "sourceSpan": {
+        "startMs": 4156820,
+        "endMs": 4186680
+      },
+      "sourceExcerpt": "so at minimum we've got a guy who's making some really interesting claims about himself in relation his relationship to God that he is performing deeds that he and others believe are miracles and exorcisms and he predicts his Vaman inviolate death and and subsequent resurrection and then all of a sudden we've got all this these appearances were people friends and foes individuals and groups sincerely believe that he has risen from the dead and has appeared to them",
+      "sourceExcerptSha256": "36907d284ce4837f405468ad822fe52d8585ef1d45a3987fa6c15948f3e4c5b9",
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.5/held-out-gate/inventories/licona-carrier-resurrection-history-2010.json",
+        "inventorySha256": "90297d8632abd3e0f25a7ec0cd6d1fb27b484e203ed91defc73d4384bf19672d",
+        "passAPath": "docs/calibration/v2.5/held-out-gate/pass-a/licona-carrier-resurrection-history-2010.json",
+        "passASha256": "50c83fb16e3a33afe763518121fe5422c57335c6916ef1afaf76778d27833871",
+        "passBPath": "docs/calibration/v2.5/held-out-gate/pass-b/licona-carrier-resurrection-history-2010.json",
+        "passBSha256": "32bb46eead26c673e4927ca8d52079d74891b48d3ed3e5c86518a0b879822c2c",
+        "lockPath": "docs/calibration/v2.5/held-out-gate/locks/licona-carrier-resurrection-history-2010.json",
+        "lockSha256": "8fcf695e7ca1a3731292f98c8f203099341ec880bb781aa32421c20401b929e4"
+      },
+      "v25Disagreements": {
+        "componentIds": [
+          "d130-t07-c1",
+          "d130-t07-c3"
+        ],
+        "coverage": true,
+        "targetRelation": false
+      },
+      "targetPacket": {
+        "id": "d130-t07-carrier-ordinary-missing-body",
+        "targetSpeaker": "Richard Carrier",
+        "sourceSpan": {
+          "startMs": 1663550,
+          "endMs": 1681730
+        },
+        "sourceExcerpt": "bodies go missing all the time but when bodies go missing we don't assume they rose from the dead to the contrary we know when bodies go missing it's usually because they were stolen or misplaced you would have to disprove those theories before you could believe anything less likely because those things are so much more probable",
+        "claim": "Missing bodies ordinarily result from theft or misplacement, which must be excluded before considering resurrection.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "d130-t07-c1",
+            "text": "Missing bodies are not ordinarily treated as resurrections.",
+            "kind": "rule-comparison",
+            "dependsOn": []
+          },
+          {
+            "id": "d130-t07-c2",
+            "text": "Theft or misplacement is the usual explanation.",
+            "kind": "rule-comparison",
+            "dependsOn": []
+          },
+          {
+            "id": "d130-t07-c3",
+            "text": "More probable ordinary theories must be disproved first.",
+            "kind": "burden",
+            "dependsOn": [
+              "d130-t07-c1",
+              "d130-t07-c2"
+            ]
+          }
+        ]
+      },
+      "finalCoverage": {
+        "targetRelation": "preserved",
+        "substitutionType": null,
+        "substitutionEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "d130-t07-c1",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "d130-t07-c2",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "d130-t07-c3",
+            "operation": null,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": true,
+        "contraryEvidence": {
+          "text": "he is performing deeds that he and others believe are miracles and exorcisms and he predicts his Vaman inviolate death and and subsequent resurrection",
+          "startChar": 129,
+          "endChar": 279
+        },
+        "derivedTargetCoverage": "relevant-nonanswer"
+      },
+      "rationale": "The response keeps the ordinary-missing-body target in view but supplies only case-specific contrary material. It performs no qualifying operation on the ordinary baseline, theft-or-misplacement comparison, or exclusion burden."
+    },
+    {
+      "caseId": "v26-dev-130-d130-m08-con-responsive-rare-conjunction",
+      "debateId": "licona-carrier-resurrection-history-2010",
+      "debateNumber": "130",
+      "moveId": "d130-m08-con-responsive-rare-conjunction",
+      "speaker": "Richard Carrier",
+      "sourceSpan": {
+        "startMs": 4231980,
+        "endMs": 4255410
+      },
+      "sourceExcerpt": "the mere fact that it's a conjunction only would make it rarer but Christianity is actually rare I mean there there's there aren't a whole bunch of religions we'll just exactly like Christianity in the same way so again that that's actually the evidence actually is what is predicted by the naturalistic hypothesis that we should only expect to see very few of these and and in case in that actual case we do",
+      "sourceExcerptSha256": "4118326183d4e8ef25a89fcd388313e0fe56a48006783a9bd21a6bacfc467dd7",
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.5/held-out-gate/inventories/licona-carrier-resurrection-history-2010.json",
+        "inventorySha256": "90297d8632abd3e0f25a7ec0cd6d1fb27b484e203ed91defc73d4384bf19672d",
+        "passAPath": "docs/calibration/v2.5/held-out-gate/pass-a/licona-carrier-resurrection-history-2010.json",
+        "passASha256": "50c83fb16e3a33afe763518121fe5422c57335c6916ef1afaf76778d27833871",
+        "passBPath": "docs/calibration/v2.5/held-out-gate/pass-b/licona-carrier-resurrection-history-2010.json",
+        "passBSha256": "32bb46eead26c673e4927ca8d52079d74891b48d3ed3e5c86518a0b879822c2c",
+        "lockPath": "docs/calibration/v2.5/held-out-gate/locks/licona-carrier-resurrection-history-2010.json",
+        "lockSha256": "8fcf695e7ca1a3731292f98c8f203099341ec880bb781aa32421c20401b929e4"
+      },
+      "v25Disagreements": {
+        "componentIds": [
+          "d130-t08-c1",
+          "d130-t08-c2",
+          "d130-t08-c3"
+        ],
+        "coverage": true,
+        "targetRelation": false
+      },
+      "targetPacket": {
+        "id": "d130-t08-licona-distinctive-context",
+        "targetSpeaker": "Mike Licona",
+        "sourceSpan": {
+          "startMs": 4163360,
+          "endMs": 4202610
+        },
+        "sourceExcerpt": "that he is performing deeds that he and others believe are miracles and exorcisms and he predicts his Vaman inviolate death and and subsequent resurrection and then all of a sudden we've got all this these appearances were people friends and foes individuals and groups sincerely believe that he has risen from the dead and has appeared to them now if as I would argue naturalistic explanations aren't adequate and explaining these I think that that's a big difference between that and say a body goes missing",
+        "claim": "Jesus's reputed miraculous deeds, predicted death and resurrection, and varied appearances make this case different from an ordinary missing body because natural alternatives are inadequate.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "d130-t08-c1",
+            "text": "Jesus performed deeds regarded as miracles and exorcisms.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "d130-t08-c2",
+            "text": "Jesus predicted his death and resurrection.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "d130-t08-c3",
+            "text": "Friends, foes, individuals, and groups reportedly believed he appeared risen.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "d130-t08-c4",
+            "text": "Natural explanations are inadequate, distinguishing this case from a merely missing body.",
+            "kind": "inference",
+            "dependsOn": [
+              "d130-t08-c1",
+              "d130-t08-c2",
+              "d130-t08-c3"
+            ]
+          }
+        ]
+      },
+      "finalCoverage": {
+        "targetRelation": "preserved",
+        "substitutionType": null,
+        "substitutionEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "d130-t08-c1",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "d130-t08-c2",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "d130-t08-c3",
+            "operation": null,
+            "evidence": null
+          },
+          {
+            "componentId": "d130-t08-c4",
+            "operation": "undermines",
+            "evidence": {
+              "text": "that's actually the evidence actually is what is predicted by the naturalistic hypothesis",
+              "startChar": 225,
+              "endChar": 314
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "partial"
+      },
+      "rationale": "The response attacks the inference that the conjunction disfavors naturalism, but no operation propagates from that inference node to the three historical-premise nodes. Coverage therefore remains partial."
+    },
+    {
+      "caseId": "v26-dev-130-d130-m11-pro-responsive-explanatory-scope",
+      "debateId": "licona-carrier-resurrection-history-2010",
+      "debateNumber": "130",
+      "moveId": "d130-m11-pro-responsive-explanatory-scope",
+      "speaker": "Mike Licona",
+      "sourceSpan": {
+        "startMs": 6491580,
+        "endMs": 6521940
+      },
+      "sourceExcerpt": "we wouldn't expect group appearances we wouldn't expect Paul to loosen 8 the last person in the world he'd want to see as my friend Lydia lagrua the group puts it if Jesus did not rise from the dead the most likely thing to have occurred is nothing no one hallucinates Paul remains a Jew and the Messianic movement of Christianity falls apart in short time just like every other failed messianic movement so Rick's hypothesis fails in its explanatory scope",
+      "sourceExcerptSha256": "63e5e887ced16e83cafa2737311cbfe39d6e529bf0c4231dd0ca1fb4031484cc",
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.5/held-out-gate/inventories/licona-carrier-resurrection-history-2010.json",
+        "inventorySha256": "90297d8632abd3e0f25a7ec0cd6d1fb27b484e203ed91defc73d4384bf19672d",
+        "passAPath": "docs/calibration/v2.5/held-out-gate/pass-a/licona-carrier-resurrection-history-2010.json",
+        "passASha256": "50c83fb16e3a33afe763518121fe5422c57335c6916ef1afaf76778d27833871",
+        "passBPath": "docs/calibration/v2.5/held-out-gate/pass-b/licona-carrier-resurrection-history-2010.json",
+        "passBSha256": "32bb46eead26c673e4927ca8d52079d74891b48d3ed3e5c86518a0b879822c2c",
+        "lockPath": "docs/calibration/v2.5/held-out-gate/locks/licona-carrier-resurrection-history-2010.json",
+        "lockSha256": "8fcf695e7ca1a3731292f98c8f203099341ec880bb781aa32421c20401b929e4"
+      },
+      "v25Disagreements": {
+        "componentIds": [
+          "d130-t11-c1"
+        ],
+        "coverage": false,
+        "targetRelation": false
+      },
+      "targetPacket": {
+        "id": "d130-t11-carrier-contagion-sequence",
+        "targetSpeaker": "Richard Carrier",
+        "sourceSpan": {
+          "startMs": 5800210,
+          "endMs": 5821630
+        },
+        "sourceExcerpt": "we have the leader has the private vision to himself and then it becomes it becomes a contagious hallucination essentially and this is another thing we've studies the idea of hallucinatory contagion where a particular leader cares medic leader anchors people and inspires them and guides them and actually sort of suggests through the power of suggestion what they should see and what's expected to see",
+        "claim": "A leader-anchored contagious hallucination explains the sequence from private vision to group appearances.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "d130-t11-c1",
+            "text": "The sequence begins with a leader's private vision.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "d130-t11-c2",
+            "text": "Hallucinatory contagion spreads the experience to a group.",
+            "kind": "inference",
+            "dependsOn": [
+              "d130-t11-c1",
+              "d130-t11-c3"
+            ]
+          },
+          {
+            "id": "d130-t11-c3",
+            "text": "Anchoring and suggestion guide what the group expects to see.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          }
+        ]
+      },
+      "finalCoverage": {
+        "targetRelation": "preserved",
+        "substitutionType": null,
+        "substitutionEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "d130-t11-c1",
+            "operation": "denies",
+            "evidence": {
+              "text": "nothing no one hallucinates",
+              "startChar": 241,
+              "endChar": 268
+            }
+          },
+          {
+            "componentId": "d130-t11-c2",
+            "operation": "denies",
+            "evidence": {
+              "text": "we wouldn't expect group appearances",
+              "startChar": 0,
+              "endChar": 36
+            }
+          },
+          {
+            "componentId": "d130-t11-c3",
+            "operation": null,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "partial"
+      },
+      "rationale": "The move denies both the initiating hallucination and the expected group result, while leaving the distinct anchoring-and-suggestion mechanism untouched. Two of three nodes are contacted, so coverage is partial."
+    },
+    {
+      "caseId": "v26-dev-130-d130-m12-con-responsive-unmet-burden",
+      "debateId": "licona-carrier-resurrection-history-2010",
+      "debateNumber": "130",
+      "moveId": "d130-m12-con-responsive-unmet-burden",
+      "speaker": "Richard Carrier",
+      "sourceSpan": {
+        "startMs": 6789060,
+        "endMs": 6813510
+      },
+      "sourceExcerpt": "far most missing bodies throughout history are not the result of resurrections by far most appearances of gods or dead people are not resurrections either and that's a fact no one can deny so mike from my perspective mike has to prove the evidence for his claim about Jesus is exceptional enough to prove that none of the usual things happened in this case and I don't think he's met that burden",
+      "sourceExcerptSha256": "f60c617af28fbb44fe0600cff4d24ed2a8e4093fb3330fb8f0c63b4b38e05924",
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.5/held-out-gate/inventories/licona-carrier-resurrection-history-2010.json",
+        "inventorySha256": "90297d8632abd3e0f25a7ec0cd6d1fb27b484e203ed91defc73d4384bf19672d",
+        "passAPath": "docs/calibration/v2.5/held-out-gate/pass-a/licona-carrier-resurrection-history-2010.json",
+        "passASha256": "50c83fb16e3a33afe763518121fe5422c57335c6916ef1afaf76778d27833871",
+        "passBPath": "docs/calibration/v2.5/held-out-gate/pass-b/licona-carrier-resurrection-history-2010.json",
+        "passBSha256": "32bb46eead26c673e4927ca8d52079d74891b48d3ed3e5c86518a0b879822c2c",
+        "lockPath": "docs/calibration/v2.5/held-out-gate/locks/licona-carrier-resurrection-history-2010.json",
+        "lockSha256": "8fcf695e7ca1a3731292f98c8f203099341ec880bb781aa32421c20401b929e4"
+      },
+      "v25Disagreements": {
+        "componentIds": [
+          "d130-t12-c1",
+          "d130-t12-c4"
+        ],
+        "coverage": false,
+        "targetRelation": false
+      },
+      "targetPacket": {
+        "id": "d130-t12-licona-explanatory-scope",
+        "targetSpeaker": "Mike Licona",
+        "sourceSpan": {
+          "startMs": 6491580,
+          "endMs": 6521940
+        },
+        "sourceExcerpt": "we wouldn't expect group appearances we wouldn't expect Paul to loosen 8 the last person in the world he'd want to see as my friend Lydia lagrua the group puts it if Jesus did not rise from the dead the most likely thing to have occurred is nothing no one hallucinates Paul remains a Jew and the Messianic movement of Christianity falls apart in short time just like every other failed messianic movement so Rick's hypothesis fails in its explanatory scope",
+        "claim": "Without resurrection, group appearances, Paul's conversion, and movement survival are unexpected, so Carrier's account lacks explanatory scope.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "d130-t12-c1",
+            "text": "Group appearances are unexpected without resurrection.",
+            "kind": "modality",
+            "dependsOn": []
+          },
+          {
+            "id": "d130-t12-c2",
+            "text": "Paul would be an unlikely hallucination subject and would remain Jewish.",
+            "kind": "modality",
+            "dependsOn": []
+          },
+          {
+            "id": "d130-t12-c3",
+            "text": "The messianic movement would otherwise collapse.",
+            "kind": "modality",
+            "dependsOn": []
+          },
+          {
+            "id": "d130-t12-c4",
+            "text": "Carrier's hypothesis therefore fails explanatory scope.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "d130-t12-c1",
+              "d130-t12-c2",
+              "d130-t12-c3"
+            ]
+          }
+        ]
+      },
+      "finalCoverage": {
+        "targetRelation": "substituted",
+        "substitutionType": "burden",
+        "substitutionEvidence": {
+          "text": "mike has to prove the evidence for his claim about Jesus is exceptional enough to prove that none of the usual things happened in this case",
+          "startChar": 217,
+          "endChar": 356
+        },
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "substitution"
+      },
+      "rationale": "The response replaces Licona's demand that Carrier explain the listed outcomes with an affirmative burden on Licona to exclude ordinary causes. Component operations are not applicable after that burden substitution."
+    },
+    {
+      "caseId": "v26-dev-184-184-move-07",
+      "debateId": "enoch-sampson-loeb-lutz-moral-realism-2024",
+      "debateNumber": "184",
+      "moveId": "184-move-07",
+      "speaker": "Don Loeb",
+      "sourceSpan": {
+        "startMs": 3114920,
+        "endMs": 3129400
+      },
+      "sourceExcerpt": "now we're back to arguing about whether moral facts figure in the best um explanation of anything right including of my experience and I'm still waiting for an argument to um for that",
+      "sourceExcerptSha256": "38c604e27dca0e569c56f510ea8609944f5b0d9dfd45e6543b62ca1abb1c0cd3",
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.5/held-out-gate/inventories/enoch-sampson-loeb-lutz-moral-realism-2024.json",
+        "inventorySha256": "2b93fb107940f71a4a1ae92b5cdaa1ee3d20cba07e219802ddff9658e022d2bf",
+        "passAPath": "docs/calibration/v2.5/held-out-gate/pass-a/enoch-sampson-loeb-lutz-moral-realism-2024.json",
+        "passASha256": "f18d9642a6cc7cfaa5ef4a58f0a39d403c5defe5da8655d4a9e5f638572616e2",
+        "passBPath": "docs/calibration/v2.5/held-out-gate/pass-b/enoch-sampson-loeb-lutz-moral-realism-2024.json",
+        "passBSha256": "f1cdd3469e688c48e17c322b35046ce4d1656713614adcf90eb784bed549032a",
+        "lockPath": "docs/calibration/v2.5/held-out-gate/locks/enoch-sampson-loeb-lutz-moral-realism-2024.json",
+        "lockSha256": "0631d20807e87612ce0b32de94c941c73208dc010a70ac2a139858ea8d8a1929"
+      },
+      "v25Disagreements": {
+        "componentIds": [
+          "184-target-07-c1"
+        ],
+        "coverage": true,
+        "targetRelation": true
+      },
+      "targetPacket": {
+        "id": "184-target-07",
+        "targetSpeaker": "Eric Sampson",
+        "sourceSpan": {
+          "startMs": 2101480,
+          "endMs": 2115760
+        },
+        "sourceExcerpt": "the moral truths the facts are part of our experience when we turn our attention to them just as when you look at a cup the cup becomes part of your experience the truth that it's morally wrong to cause enormous suffering for no reason becomes a part of your experience",
+        "claim": "Reflective attention makes moral truths constituents of experience in a way analogous to a cup's being part of perceptual experience.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "184-target-07-c1",
+            "text": "Moral truths become part of experience when attention is directed to them.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "184-target-07-c2"
+            ]
+          },
+          {
+            "id": "184-target-07-c2",
+            "text": "The relation is analogized to a cup becoming part of perceptual experience.",
+            "kind": "rule-comparison",
+            "dependsOn": []
+          }
+        ]
+      },
+      "finalCoverage": {
+        "targetRelation": "substituted",
+        "substitutionType": "object",
+        "substitutionEvidence": {
+          "text": "whether moral facts figure in the best um explanation of anything right including of my experience",
+          "startChar": 32,
+          "endChar": 130
+        },
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "substitution"
+      },
+      "rationale": "The response changes a constitution-of-experience claim into the distinct question whether moral facts enter the best explanation of experience. The original component graph is therefore not annotated."
+    },
+    {
+      "caseId": "v26-dev-184-184-move-09",
+      "debateId": "enoch-sampson-loeb-lutz-moral-realism-2024",
+      "debateNumber": "184",
+      "moveId": "184-move-09",
+      "speaker": "David Enoch",
+      "sourceSpan": {
+        "startMs": 4024359,
+        "endMs": 4045680
+      },
+      "sourceExcerpt": "that was not my question to say that that's not a way of getting knowledge is like Don saying oh that's interesting it turns out that you don't care about some people that I care about my question is is there any problem with it not is it or is it not classified into this or that drawer but is there anything wrong with it",
+      "sourceExcerptSha256": "00c80922e7771da29aead2fdd5f8aedc1b65eb49c7d6457b35b04aef16e1f1ff",
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.5/held-out-gate/inventories/enoch-sampson-loeb-lutz-moral-realism-2024.json",
+        "inventorySha256": "2b93fb107940f71a4a1ae92b5cdaa1ee3d20cba07e219802ddff9658e022d2bf",
+        "passAPath": "docs/calibration/v2.5/held-out-gate/pass-a/enoch-sampson-loeb-lutz-moral-realism-2024.json",
+        "passASha256": "f18d9642a6cc7cfaa5ef4a58f0a39d403c5defe5da8655d4a9e5f638572616e2",
+        "passBPath": "docs/calibration/v2.5/held-out-gate/pass-b/enoch-sampson-loeb-lutz-moral-realism-2024.json",
+        "passBSha256": "f1cdd3469e688c48e17c322b35046ce4d1656713614adcf90eb784bed549032a",
+        "lockPath": "docs/calibration/v2.5/held-out-gate/locks/enoch-sampson-loeb-lutz-moral-realism-2024.json",
+        "lockSha256": "0631d20807e87612ce0b32de94c941c73208dc010a70ac2a139858ea8d8a1929"
+      },
+      "v25Disagreements": {
+        "componentIds": [],
+        "coverage": true,
+        "targetRelation": true
+      },
+      "targetPacket": {
+        "id": "184-target-09",
+        "targetSpeaker": "Matthew Lutz",
+        "sourceSpan": {
+          "startMs": 4015000,
+          "endMs": 4024359
+        },
+        "sourceExcerpt": "well for me uh if you are forming beliefs on the basis of wishful thinking or the gambler's fallacy um those are not ways of getting knowledge",
+        "claim": "Forming beliefs through wishful thinking or the gambler's fallacy does not produce knowledge.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "184-target-09-c1",
+            "text": "Wishful thinking and the gambler's fallacy are not ways of acquiring knowledge.",
+            "kind": "rule-comparison",
+            "dependsOn": []
+          }
+        ]
+      },
+      "finalCoverage": {
+        "targetRelation": "substituted",
+        "substitutionType": "object",
+        "substitutionEvidence": {
+          "text": "not is it or is it not classified into this or that drawer but is there anything wrong with it",
+          "startChar": 229,
+          "endChar": 323
+        },
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "substitution"
+      },
+      "rationale": "The response explicitly replaces the epistemic-classification target with a normative question about whether the method is wrong. That object substitution makes component contact not applicable."
+    },
+    {
+      "caseId": "v26-dev-184-184-move-10",
+      "debateId": "enoch-sampson-loeb-lutz-moral-realism-2024",
+      "debateNumber": "184",
+      "moveId": "184-move-10",
+      "speaker": "Matthew Lutz",
+      "sourceSpan": {
+        "startMs": 4059279,
+        "endMs": 4080839
+      },
+      "sourceExcerpt": "well I mean I do say that but I care to know in most cases and so for me from my deliberative perspective that's highly significant and so I do make an error when I uh engage in wishful thinking or the gamblers fallacy because I'm failing to live up to the standards of knowledge that I set for myself",
+      "sourceExcerptSha256": "ef3e79cd8c0642132cf2cb7e8b0621895f69e4ca6f07c8a2da9c0fe72295b05c",
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.5/held-out-gate/inventories/enoch-sampson-loeb-lutz-moral-realism-2024.json",
+        "inventorySha256": "2b93fb107940f71a4a1ae92b5cdaa1ee3d20cba07e219802ddff9658e022d2bf",
+        "passAPath": "docs/calibration/v2.5/held-out-gate/pass-a/enoch-sampson-loeb-lutz-moral-realism-2024.json",
+        "passASha256": "f18d9642a6cc7cfaa5ef4a58f0a39d403c5defe5da8655d4a9e5f638572616e2",
+        "passBPath": "docs/calibration/v2.5/held-out-gate/pass-b/enoch-sampson-loeb-lutz-moral-realism-2024.json",
+        "passBSha256": "f1cdd3469e688c48e17c322b35046ce4d1656713614adcf90eb784bed549032a",
+        "lockPath": "docs/calibration/v2.5/held-out-gate/locks/enoch-sampson-loeb-lutz-moral-realism-2024.json",
+        "lockSha256": "0631d20807e87612ce0b32de94c941c73208dc010a70ac2a139858ea8d8a1929"
+      },
+      "v25Disagreements": {
+        "componentIds": [],
+        "coverage": true,
+        "targetRelation": true
+      },
+      "targetPacket": {
+        "id": "184-target-10",
+        "targetSpeaker": "David Enoch",
+        "sourceSpan": {
+          "startMs": 4024359,
+          "endMs": 4045680
+        },
+        "sourceExcerpt": "that was not my question to say that that's not a way of getting knowledge is like Don saying oh that's interesting it turns out that you don't care about some people that I care about my question is is there any problem with it not is it or is it not classified into this or that drawer but is there anything wrong with it",
+        "claim": "Calling a method non-knowledge or noting differences in concern does not answer whether there is anything genuinely wrong with that method.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "184-target-10-c1",
+            "text": "Classifying a method as not producing knowledge does not answer the objection.",
+            "kind": "rule-comparison",
+            "dependsOn": []
+          },
+          {
+            "id": "184-target-10-c2",
+            "text": "A difference in what people care about is likewise only a classification or description.",
+            "kind": "rule-comparison",
+            "dependsOn": []
+          },
+          {
+            "id": "184-target-10-c3",
+            "text": "The demanded answer is whether there is anything wrong with the method.",
+            "kind": "burden",
+            "dependsOn": [
+              "184-target-10-c1",
+              "184-target-10-c2"
+            ]
+          }
+        ]
+      },
+      "finalCoverage": {
+        "targetRelation": "substituted",
+        "substitutionType": "comparison-class",
+        "substitutionEvidence": {
+          "text": "the standards of knowledge that I set for myself",
+          "startChar": 253,
+          "endChar": 301
+        },
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "substitution"
+      },
+      "rationale": "The demanded standard is genuine wrongness, but the reply substitutes the speaker's self-adopted epistemic standard. The changed comparison class controls before any component operation is considered."
+    },
+    {
+      "caseId": "v26-dev-185-m12-con-q4-responsive-rules-versus-reactive-attitudes",
+      "debateId": "dennett-caruso-free-will-responsibility-2021",
+      "debateNumber": "185",
+      "moveId": "m12-con-q4-responsive-rules-versus-reactive-attitudes",
+      "speaker": "Gregg Caruso",
+      "sourceSpan": {
+        "startMs": 7268480,
+        "endMs": 7299199
+      },
+      "sourceExcerpt": "the question i you know that i still think is the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified because those are the ones that are philosophically significant right do i want to attach to my parenting when i when i punish my daughter by taking her cell phone away do i want or am i justified in exhibiting resentment or indignation or moral anger",
+      "sourceExcerptSha256": "a0ac9a82a5ba2a029225b9264b99a2e873f7bbcbb52b1c586c07dad0a2957125",
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.5/held-out-gate/inventories/dennett-caruso-free-will-responsibility-2021.json",
+        "inventorySha256": "a6a3a662e5cd857d70403d582dc532ab23252e33323a7436e32f895ac34fc578",
+        "passAPath": "docs/calibration/v2.5/held-out-gate/pass-a/dennett-caruso-free-will-responsibility-2021.json",
+        "passASha256": "2bbc0463faa182338cc4c8f6aa0985c6fe81523897d8c852199774931601a107",
+        "passBPath": "docs/calibration/v2.5/held-out-gate/pass-b/dennett-caruso-free-will-responsibility-2021.json",
+        "passBSha256": "27c2249010e705962f1bbb1081b8d1fc827e9ca9cd97aa7c5877ac1653dd5f68",
+        "lockPath": "docs/calibration/v2.5/held-out-gate/locks/dennett-caruso-free-will-responsibility-2021.json",
+        "lockSha256": "1aa668102c7405d1704fbf7e221bf10db1e24bac5eed8595de32c6b9443a1a02"
+      },
+      "v25Disagreements": {
+        "componentIds": [
+          "t12-c2-social-cornerstone"
+        ],
+        "coverage": true,
+        "targetRelation": false
+      },
+      "targetPacket": {
+        "id": "t12-dennett-agreed-penalties-bedrock",
+        "targetSpeaker": "Daniel Dennett",
+        "sourceSpan": {
+          "startMs": 7049119,
+          "endMs": 7082800
+        },
+        "sourceExcerpt": "the penalties that you agree to live by if you want to be a member you agree if you if you violate these principles you are to blame and you will be punished and this is bedrock it is a it is a it is the cornerstone of a free and secure society and it has nothing to do again with either luck or determinism",
+        "claim": "Agreed blame and punishment for rule violations are a determination-independent cornerstone of a secure society.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "t12-c1-agreed-penalties",
+            "text": "Membership entails agreement to blame and punishment when the governing principles are violated.",
+            "kind": "rule-comparison",
+            "dependsOn": []
+          },
+          {
+            "id": "t12-c2-social-cornerstone",
+            "text": "Those penalties are a bedrock condition of free and secure society regardless of luck or determinism.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "t12-c1-agreed-penalties"
+            ]
+          }
+        ]
+      },
+      "finalCoverage": {
+        "targetRelation": "preserved",
+        "substitutionType": null,
+        "substitutionEvidence": null,
+        "componentOperations": [
+          {
+            "componentId": "t12-c1-agreed-penalties",
+            "operation": "distinguishes",
+            "evidence": {
+              "text": "not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified",
+              "startChar": 92,
+              "endChar": 231
+            }
+          },
+          {
+            "componentId": "t12-c2-social-cornerstone",
+            "operation": null,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "derivedTargetCoverage": "partial"
+      },
+      "rationale": "The response distinguishes penalty practices from desert-laden reactive attitudes, contacting the agreed-penalties node. It does not address the separate claim that penalties are a social cornerstone."
+    }
+  ],
+  "audit": {
+    "caseCount": 8,
+    "componentContactDisagreementCount": 10,
+    "coverageDisagreementCount": 6,
+    "targetRelationDisagreementCount": 3,
+    "operationEvidenceErrors": 0,
+    "substitutionEvidenceErrors": 0,
+    "graphErrors": 0,
+    "derivationErrors": 0,
+    "heldOutContamination": 0
+  }
+}

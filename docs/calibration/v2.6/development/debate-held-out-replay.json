@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "2.6-debate-held-out-development-replay",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.6",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.6",
+  "replayType": "deterministic-rules-only-not-independent-rater-test",
+  "heldOutEligible": false,
+  "sourceExamplesPath": "docs/calibration/v2.6/development/target-contact-examples.json",
+  "folds": [
+    {
+      "heldOutDebate": "licona-carrier-resurrection-history-2010",
+      "trainingDebates": [
+        "enoch-sampson-loeb-lutz-moral-realism-2024",
+        "dennett-caruso-free-will-responsibility-2021"
+      ],
+      "trainingCaseCount": 4,
+      "heldOutCaseCount": 4,
+      "ruleChangesDuringFold": 0,
+      "graphPassCount": 4,
+      "evidencePassCount": 4,
+      "derivationPassCount": 4,
+      "status": "pass"
+    },
+    {
+      "heldOutDebate": "enoch-sampson-loeb-lutz-moral-realism-2024",
+      "trainingDebates": [
+        "licona-carrier-resurrection-history-2010",
+        "dennett-caruso-free-will-responsibility-2021"
+      ],
+      "trainingCaseCount": 5,
+      "heldOutCaseCount": 3,
+      "ruleChangesDuringFold": 0,
+      "graphPassCount": 3,
+      "evidencePassCount": 3,
+      "derivationPassCount": 3,
+      "status": "pass"
+    },
+    {
+      "heldOutDebate": "dennett-caruso-free-will-responsibility-2021",
+      "trainingDebates": [
+        "licona-carrier-resurrection-history-2010",
+        "enoch-sampson-loeb-lutz-moral-realism-2024"
+      ],
+      "trainingCaseCount": 7,
+      "heldOutCaseCount": 1,
+      "ruleChangesDuringFold": 0,
+      "graphPassCount": 1,
+      "evidencePassCount": 1,
+      "derivationPassCount": 1,
+      "status": "pass"
+    }
+  ],
+  "aggregate": {
+    "debateCount": 3,
+    "caseCount": 8,
+    "foldsPassed": 3,
+    "ruleChangesAcrossFolds": 0,
+    "graphFailures": 0,
+    "evidenceFailures": 0,
+    "derivationFailures": 0
+  },
+  "interpretation": "Every retired debate can be excluded in turn without changing the fixed v2.6 rules, and each excluded case remains mechanically valid. This detects rule/data entanglement and implementation defects but does not estimate fresh annotator agreement."
+}
