@@ -1,0 +1,259 @@
+{
+  "schemaVersion": "3.1-retired-verification-gate-manifest",
+  "gateId": "v3.1-retired-three-debate-focused-verification-test",
+  "status": "frozen-before-v3.1-passes",
+  "frozenAt": "2026-08-03T23:33:02.000Z",
+  "calibrationOnly": true,
+  "heldOutTranscriptsOpened": false,
+  "numericalScoringAuthorized": false,
+  "productionMutationAuthorized": false,
+  "workflowVersion": "Slugfester Focused AI Verification Workflow v3.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.1",
+  "model": "5.6 Sol",
+  "architecture": {
+    "rawPassesPerDebate": 2,
+    "passIsolation": "fresh-ephemeral-allowlisted-workspace",
+    "disagreementExtraction": "semantic-values-separated-from-evidence",
+    "focusedVerificationFamiliesPerDebate": 4,
+    "verificationScope": "all-compound-primitives-in-four-blinded-families",
+    "verifierSeesRawValues": false,
+    "finalSemanticAuthority": "focused-verifier",
+    "evidenceCanonicalization": "shortest-valid-matching-semantic-span",
+    "finalLockMerge": "deterministic",
+    "scoresBeforeFinalLockProhibited": true
+  },
+  "sample": {
+    "selectionFrozenBeforePasses": true,
+    "allDebatesRetired": true,
+    "debates": [
+      {
+        "debateNumber": "62",
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "lane": "dyadic",
+        "role": "straightforward-dyadic",
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/pageau-folley-logos-meaning-resurrection-2026.json",
+        "path": "docs/calibration/v3.1/retired-three-debate-test/inputs/pageau-folley-logos-meaning-resurrection-2026.json",
+        "sha256": "b48dbd72109b8d8179067e20ceda5e38b9f980a8a6ebc76e37b5512080befd69",
+        "caseCount": 3,
+        "gold": {
+          "path": "docs/calibration/v3.1/retired-three-debate-test/gold/pageau-folley-logos-meaning-resurrection-2026.json",
+          "sha256": "733e4113f77f374daf38d405110dc894aa785aa15ae791adffe4de26da8506ee",
+          "annotationCount": 3
+        },
+        "sourceAudit": {
+          "path": "docs/calibration/v3.1/retired-three-debate-test/source-audit/pageau-folley-logos-meaning-resurrection-2026.json",
+          "sha256": "89bb30978621f52632d3f59e0ae7e891b8629f317b80501d6f232aa58f6a956f",
+          "mediumOrLowMoveCount": 1,
+          "audioVerifiedMediumOrLowMoveCount": 1
+        },
+        "fieldPackets": {
+          "targeting-burden": {
+            "path": "docs/calibration/v3.1/retired-three-debate-test/field-packets/targeting-burden/pageau-folley-logos-meaning-resurrection-2026.json",
+            "sha256": "c5abbf5b0cb1acb129b273d2141b970e98c39a21b2ac3471e44228693ccc94a2"
+          },
+          "coverage": {
+            "path": "docs/calibration/v3.1/retired-three-debate-test/field-packets/coverage/pageau-folley-logos-meaning-resurrection-2026.json",
+            "sha256": "7249486218f70eaecccc33296bad57d2bb820c16e98824e57062c7c319952fcf"
+          },
+          "diagnostic": {
+            "path": "docs/calibration/v3.1/retired-three-debate-test/field-packets/diagnostic/pageau-folley-logos-meaning-resurrection-2026.json",
+            "sha256": "cfec2cde79dbb879f2b6562ff4c585e782f65f8cc5502d756602aa5cf0496042"
+          },
+          "reframe": {
+            "path": "docs/calibration/v3.1/retired-three-debate-test/field-packets/reframe/pageau-folley-logos-meaning-resurrection-2026.json",
+            "sha256": "a3f1db61416feae06be8f6769e2c7c28f8b708dfb8cddb1f3665a1263e2f06cd"
+          }
+        }
+      },
+      {
+        "debateNumber": "185",
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "lane": "dyadic",
+        "role": "difficult-dyadic-reframe",
+        "inventoryPath": "docs/calibration/v2.5/held-out-gate/inventories/dennett-caruso-free-will-responsibility-2021.json",
+        "path": "docs/calibration/v3.1/retired-three-debate-test/inputs/dennett-caruso-free-will-responsibility-2021.json",
+        "sha256": "c13e8be680976a5262d62c369c364d4a5801e46b9db4f83f2aac0e1d11799010",
+        "caseCount": 4,
+        "gold": {
+          "path": "docs/calibration/v3.1/retired-three-debate-test/gold/dennett-caruso-free-will-responsibility-2021.json",
+          "sha256": "915b2cd749b41c053d12e3e13596913981ebda32f19b2db40a7b26cedbb7a07a",
+          "annotationCount": 4
+        },
+        "sourceAudit": {
+          "path": "docs/calibration/v3.1/retired-three-debate-test/source-audit/dennett-caruso-free-will-responsibility-2021.json",
+          "sha256": "b05866f021446055a0433ad1072f361ec09b14ef00c42e4a9505b90684063f74",
+          "mediumOrLowMoveCount": 0,
+          "audioVerifiedMediumOrLowMoveCount": 0
+        },
+        "fieldPackets": {
+          "targeting-burden": {
+            "path": "docs/calibration/v3.1/retired-three-debate-test/field-packets/targeting-burden/dennett-caruso-free-will-responsibility-2021.json",
+            "sha256": "ede53dca80f98ff68fb2a1e9c4c2f75c802373d1227a6afd938f54b0ded7b85c"
+          },
+          "coverage": {
+            "path": "docs/calibration/v3.1/retired-three-debate-test/field-packets/coverage/dennett-caruso-free-will-responsibility-2021.json",
+            "sha256": "435d6481e278702bfbcca6793994df07505e95bcb1ba918d9aae2e64cf06a68c"
+          },
+          "diagnostic": {
+            "path": "docs/calibration/v3.1/retired-three-debate-test/field-packets/diagnostic/dennett-caruso-free-will-responsibility-2021.json",
+            "sha256": "7581c4d3dcf82fbda4d8f5796df476a6b700a4d6d2504aa84e1575acdf2e7f5f"
+          },
+          "reframe": {
+            "path": "docs/calibration/v3.1/retired-three-debate-test/field-packets/reframe/dennett-caruso-free-will-responsibility-2021.json",
+            "sha256": "bea666557aa5e5e739503ff33cd2face51080c2a2c556d715741efd36904e1f4"
+          }
+        }
+      },
+      {
+        "debateNumber": "154",
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "lane": "multi-speaker",
+        "role": "multi-speaker",
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "path": "docs/calibration/v3.1/retired-three-debate-test/inputs/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "sha256": "aeefa3745721dde67b4bc0f812406f5ba61b77f842902b6c1ceff5cd2755811f",
+        "caseCount": 6,
+        "gold": {
+          "path": "docs/calibration/v3.1/retired-three-debate-test/gold/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+          "sha256": "7ffdfef13f30b05e33cda61e67b1c219549ded975e6081656de53e655e5d11c6",
+          "annotationCount": 6
+        },
+        "sourceAudit": {
+          "path": "docs/calibration/v3.1/retired-three-debate-test/source-audit/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+          "sha256": "1e07f4cbfaf8ef41468370b6367dc9234266a53febf5380401a860530824febe",
+          "mediumOrLowMoveCount": 0,
+          "audioVerifiedMediumOrLowMoveCount": 0
+        },
+        "fieldPackets": {
+          "targeting-burden": {
+            "path": "docs/calibration/v3.1/retired-three-debate-test/field-packets/targeting-burden/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+            "sha256": "2bb22677410efdb97e2fd3f53e7ff98e4dfb775a1f3003ee308d230ca4a214f6"
+          },
+          "coverage": {
+            "path": "docs/calibration/v3.1/retired-three-debate-test/field-packets/coverage/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+            "sha256": "b0f8f9a44ca23ea1bca2119d3faf9cff0d3e0b20c8279dce700656e960733c81"
+          },
+          "diagnostic": {
+            "path": "docs/calibration/v3.1/retired-three-debate-test/field-packets/diagnostic/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+            "sha256": "8b67c3d46fc9cc4ce1433cab208dea636be16c36a86b0fb976726ff721b2963b"
+          },
+          "reframe": {
+            "path": "docs/calibration/v3.1/retired-three-debate-test/field-packets/reframe/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+            "sha256": "d0cea9e4c0288038a839e5ecb9ef349aa52b9f0512ea8f45190b3903a1cb21be"
+          }
+        }
+      }
+    ],
+    "debateCount": 3,
+    "caseCount": 13
+  },
+  "goldProvenance": {
+    "priorV30ManifestPath": "docs/calibration/v3.0/retired-three-debate-test/gate-manifest.json",
+    "priorV30ManifestSha256": "064bb9d9c5a57d93d8b7ec2ddb7b8ea9e6c6459738fe4bcae9822fdc50135962",
+    "constructedBeforeV31Passes": true
+  },
+  "thresholds": {
+    "finalOriginalTargetContactExact": 0.95,
+    "finalScopeExact": 0.9,
+    "finalBurdenAdjustmentExact": 0.95,
+    "finalComponentContactMicroExact": 0.9,
+    "finalCoverageExact": 0.85,
+    "finalDefectTypeExact": 0.85,
+    "finalConsequenceExact": 0.9,
+    "finalDiagnosticExact": 0.9,
+    "finalReframeExact": 0.9,
+    "finalBurdenRelevanceExact": 0.9,
+    "finalExactDerivedTupleExact": 0.8,
+    "finalDiagnosticPositiveRecall": 0.8,
+    "finalReframePositiveRecall": 1,
+    "unresolvedDisputesMaximum": 0,
+    "nondisputedAlterationsMaximum": 0,
+    "mediumLowAudioVerificationRate": 1
+  },
+  "passIsolation": {
+    "passAllowedInputs": [
+      "workflow.md",
+      "rubric.md",
+      "manual.md",
+      "schema.json",
+      "input.json"
+    ],
+    "verificationAllowedInputs": [
+      "workflow.md",
+      "rubric.md",
+      "manual.md",
+      "schema.json",
+      "field-packet.json"
+    ],
+    "prohibitedInputs": [
+      "gold keys",
+      "other raw pass",
+      "raw candidate values",
+      "agreement status",
+      "other verification families",
+      "legacy assessment",
+      "numerical scores",
+      "Overall Commentary",
+      "AI Extension",
+      "production debate objects"
+    ]
+  },
+  "outputs": {
+    "pageau-folley-logos-meaning-resurrection-2026": {
+      "passA": "docs/calibration/v3.1/retired-three-debate-test/pass-a/pageau-folley-logos-meaning-resurrection-2026.json",
+      "passB": "docs/calibration/v3.1/retired-three-debate-test/pass-b/pageau-folley-logos-meaning-resurrection-2026.json",
+      "semanticDisagreements": "docs/calibration/v3.1/retired-three-debate-test/semantic-disagreements/pageau-folley-logos-meaning-resurrection-2026.json",
+      "verifications": {
+        "targeting-burden": "docs/calibration/v3.1/retired-three-debate-test/verifications/targeting-burden/pageau-folley-logos-meaning-resurrection-2026.json",
+        "coverage": "docs/calibration/v3.1/retired-three-debate-test/verifications/coverage/pageau-folley-logos-meaning-resurrection-2026.json",
+        "diagnostic": "docs/calibration/v3.1/retired-three-debate-test/verifications/diagnostic/pageau-folley-logos-meaning-resurrection-2026.json",
+        "reframe": "docs/calibration/v3.1/retired-three-debate-test/verifications/reframe/pageau-folley-logos-meaning-resurrection-2026.json"
+      },
+      "finalLock": "docs/calibration/v3.1/retired-three-debate-test/final-locks/pageau-folley-logos-meaning-resurrection-2026.json",
+      "scoringInput": "docs/calibration/v3.1/retired-three-debate-test/scoring-inputs/pageau-folley-logos-meaning-resurrection-2026.json"
+    },
+    "dennett-caruso-free-will-responsibility-2021": {
+      "passA": "docs/calibration/v3.1/retired-three-debate-test/pass-a/dennett-caruso-free-will-responsibility-2021.json",
+      "passB": "docs/calibration/v3.1/retired-three-debate-test/pass-b/dennett-caruso-free-will-responsibility-2021.json",
+      "semanticDisagreements": "docs/calibration/v3.1/retired-three-debate-test/semantic-disagreements/dennett-caruso-free-will-responsibility-2021.json",
+      "verifications": {
+        "targeting-burden": "docs/calibration/v3.1/retired-three-debate-test/verifications/targeting-burden/dennett-caruso-free-will-responsibility-2021.json",
+        "coverage": "docs/calibration/v3.1/retired-three-debate-test/verifications/coverage/dennett-caruso-free-will-responsibility-2021.json",
+        "diagnostic": "docs/calibration/v3.1/retired-three-debate-test/verifications/diagnostic/dennett-caruso-free-will-responsibility-2021.json",
+        "reframe": "docs/calibration/v3.1/retired-three-debate-test/verifications/reframe/dennett-caruso-free-will-responsibility-2021.json"
+      },
+      "finalLock": "docs/calibration/v3.1/retired-three-debate-test/final-locks/dennett-caruso-free-will-responsibility-2021.json",
+      "scoringInput": "docs/calibration/v3.1/retired-three-debate-test/scoring-inputs/dennett-caruso-free-will-responsibility-2021.json"
+    },
+    "koukl-oconnor-kanojia-nonbelief-harm-2025": {
+      "passA": "docs/calibration/v3.1/retired-three-debate-test/pass-a/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+      "passB": "docs/calibration/v3.1/retired-three-debate-test/pass-b/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+      "semanticDisagreements": "docs/calibration/v3.1/retired-three-debate-test/semantic-disagreements/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+      "verifications": {
+        "targeting-burden": "docs/calibration/v3.1/retired-three-debate-test/verifications/targeting-burden/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "coverage": "docs/calibration/v3.1/retired-three-debate-test/verifications/coverage/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "diagnostic": "docs/calibration/v3.1/retired-three-debate-test/verifications/diagnostic/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "reframe": "docs/calibration/v3.1/retired-three-debate-test/verifications/reframe/koukl-oconnor-kanojia-nonbelief-harm-2025.json"
+      },
+      "finalLock": "docs/calibration/v3.1/retired-three-debate-test/final-locks/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+      "scoringInput": "docs/calibration/v3.1/retired-three-debate-test/scoring-inputs/koukl-oconnor-kanojia-nonbelief-harm-2025.json"
+    }
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.1.md": "afdc851334310371f515db9234427ebcfe18f9016b151571180cff80859055d6",
+    "docs/reassessment-rubric-v3.1.md": "b054a1e1fbf8edb434907761258a7c683dbfbf122a7679e9dd6661fe48f96b7b",
+    "docs/calibration/v3.1/retired-three-debate-test/annotation-manual.md": "94b992d4aeaf9904571b5712cb72854153f78c15315377c875b9d3e59fee768a",
+    "docs/calibration/v3.1/retired-three-debate-test/verification-manual.md": "099596e30752b120345939d27268a36de2c42afe6c2465b4c4f166324d6c3cd9",
+    "docs/calibration/v3.1/retired-three-debate-test/consensus-pass-schema.json": "7a62443eb205757f9015470b1d0b45f6865e667253a6a164a634f848ef8a602f",
+    "docs/calibration/v3.1/retired-three-debate-test/field-verification-schema.json": "9d59946bf1eda552fcb10d5616281421c84b2a5e7a085e432c9686dfd1387b4e",
+    "scripts/lib/v31-verification.mjs": "d9ac39a7183dc987b3b86b120f7c31d3b98945aa2e73d2f84407ab931345b450",
+    "scripts/build-v31-retired-verification-test.mjs": "561d939b2b1b8a141f09e0d2b1201cda16dd82cb16a2a03349b786ea2aecd57f",
+    "scripts/validate-v31-consensus-pass.mjs": "776da569d927d91b95ec8909637d7320130a8fe61db71009566bfbff5d99aaa2",
+    "scripts/extract-v31-semantic-disagreements.mjs": "23aa84b9448a2a4d05b6b78a3e980103967d0247f8edd5e7bc5511491678f4fd",
+    "scripts/validate-v31-field-verification.mjs": "8014bce142366a441c6c9bf23001b25325665011e7b416d99d8521e506d0c007",
+    "scripts/merge-v31-verification-locks.mjs": "4fe98d244c6faf3d2f25d43a7ff2a212d14cef03040652eb2c9377688624a089",
+    "scripts/analyze-v31-retired-verification-test.mjs": "240c76cbe46e9eecac6d050388b4810f471b1fde37bac615f30d27e9ae39dc9b",
+    "scripts/validate-v31-retired-verification-test.mjs": "4a66be23a14b0152a574ec8f2a25344963cdc73ff0afb5b4262c45d04ab4f97c",
+    "scripts/run-v31-retired-verification-test.mjs": "c86b42924874dc6a87d0ff7e419a2d61da816df905dda98957c4fce9605b53b6"
+  }
+}

@@ -1,0 +1,394 @@
+{
+  "schemaVersion": "3.1-field-family-packet",
+  "workflowVersion": "Slugfester Focused AI Verification Workflow v3.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.1",
+  "model": "5.6 Sol",
+  "gateId": "v3.1-retired-three-debate-focused-verification-test",
+  "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+  "debateNumber": "62",
+  "lane": "dyadic",
+  "family": "coverage",
+  "calibrationOnly": true,
+  "builtFromInputSha256": "b48dbd72109b8d8179067e20ceda5e38b9f980a8a6ebc76e37b5512080befd69",
+  "caseCount": 3,
+  "fieldCount": 12,
+  "cases": [
+    {
+      "caseId": "v291-dev-62-04",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-04",
+      "lockedCase": {
+        "caseId": "v291-dev-62-04",
+        "lane": "dyadic",
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "debateNumber": "62",
+        "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-04",
+        "side": "con",
+        "speaker": "Joe Folley",
+        "sourceExcerpt": ">> I think so. I think that um yeah I think I think especially with with people that's a very good example right because es and I think that that's one that I think fits quite nicely within my worldview as well. You know we are all currently you know submitting to a certain idea of what we're going to do.",
+        "sourceExcerptSha256": "b197efca08e9efb937b4e0c653314f814272db2c0c50da3fe90465e27fd706eb",
+        "targetPacket": {
+          "id": "pageau-folley-logos-meaning-resurrection-2026-target-04",
+          "targetSpeaker": "Jonathan Pageau",
+          "targetSide": "pro",
+          "ownershipScope": "speaker-only",
+          "adoptionRecords": [],
+          "sourceSpan": {
+            "startMs": 1766960,
+            "endMs": 1793600
+          },
+          "sourceExcerpt": "enact a form of unity. They they come together and bind towards a purpose and they elect a mayor and they and you can say well that's just an emergent property of people being together. But then suddenly now the mayor puts someone in jail because they they broke a law and so it constrains back down on the part. So to say it's just an emergent property isn't sufficient to be able to understand the way that that onlogical realities that are higher actually constrain those that are below.",
+          "sourceExcerptSha256": "6d2dfddf00b48675756f4157fe7e5aba7608f9ea9548eb9630a0d92584fa2fc3",
+          "claim": "People enact unity toward a purpose and elect a mayor who constrains them, so calling higher ontological realities merely emergent is insufficient.",
+          "targetRelationToMove": "immediate-opponent-claim",
+          "interveningOpponentClaim": false,
+          "exceptionRationale": null,
+          "indispensableComponents": [
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-04-c1",
+              "text": "People enact a form of unity by binding toward a purpose and electing a mayor.",
+              "kind": "fact-premise",
+              "dependsOn": []
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-04-c2",
+              "text": "The mayor enforces law on the people and thereby constrains downward on the parts.",
+              "kind": "fact-premise",
+              "dependsOn": [
+                "pageau-folley-logos-meaning-resurrection-2026-target-04-c1"
+              ]
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-04-c3",
+              "text": "Higher ontological realities can constrain the realities beneath them.",
+              "kind": "inference",
+              "dependsOn": [
+                "pageau-folley-logos-meaning-resurrection-2026-target-04-c1",
+                "pageau-folley-logos-meaning-resurrection-2026-target-04-c2"
+              ]
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-04-c4",
+              "text": "Calling the higher reality merely emergent is insufficient to explain that downward constraint.",
+              "kind": "conclusion",
+              "dependsOn": [
+                "pageau-folley-logos-meaning-resurrection-2026-target-04-c3"
+              ]
+            }
+          ],
+          "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+        },
+        "burdenContext": {
+          "burdenPacket": {
+            "primaryRouteId": "pageau-folley-logos-meaning-resurrection-2026-con-route",
+            "eligibleBridgeIds": [
+              "pageau-folley-logos-meaning-resurrection-2026-con-subsidiary"
+            ],
+            "selectionRationale": "The move directly bears on the subsidiary bridge selected for the speaker's side rather than merely mentioning the debate topic."
+          },
+          "route": {
+            "id": "pageau-folley-logos-meaning-resurrection-2026-con-route",
+            "side": "con",
+            "description": "Patterns and values are pragmatically useful abstractions grounded in human minds and social practices.",
+            "successCriteria": "Higher-level organization does not require a willful or transcendent divine source.",
+            "bridges": [
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-con-motion",
+                "tier": "motion",
+                "description": "Establish the con side's complete answer to the stated debate motion."
+              },
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-con-central",
+                "tier": "central",
+                "description": "Patterns and values are pragmatically useful abstractions grounded in human minds and social practices."
+              },
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-con-subsidiary",
+                "tier": "subsidiary",
+                "description": "Support a narrower evidential or conceptual consideration used by the con side."
+              }
+            ]
+          }
+        },
+        "fixtureOrigin": {
+          "type": "v2.8.2-retired-development-case",
+          "sourceCaseId": "v282-dev-62-04",
+          "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+          "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+        },
+        "sourceMetadata": {
+          "timestamp": "29:56",
+          "sourceSpan": {
+            "startMs": 1796320,
+            "endMs": 1810720
+          },
+          "speakerAttributionConfidence": "high",
+          "audioChecked": false,
+          "audioVerification": null
+        }
+      },
+      "fields": [
+        {
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-04-c1",
+          "question": "Does exact response language contact indispensable component pageau-folley-logos-meaning-resurrection-2026-target-04-c1: People enact a form of unity by binding toward a purpose and electing a mayor.? Default false; do not propagate contact from another component."
+        },
+        {
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-04-c2",
+          "question": "Does exact response language contact indispensable component pageau-folley-logos-meaning-resurrection-2026-target-04-c2: The mayor enforces law on the people and thereby constrains downward on the parts.? Default false; do not propagate contact from another component."
+        },
+        {
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-04-c3",
+          "question": "Does exact response language contact indispensable component pageau-folley-logos-meaning-resurrection-2026-target-04-c3: Higher ontological realities can constrain the realities beneath them.? Default false; do not propagate contact from another component."
+        },
+        {
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-04-c4",
+          "question": "Does exact response language contact indispensable component pageau-folley-logos-meaning-resurrection-2026-target-04-c4: Calling the higher reality merely emergent is insufficient to explain that downward constraint.? Default false; do not propagate contact from another component."
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "question": "With no indispensable component contacted, does exact response language still supply relevant contrary material bearing on the target? Default false."
+        }
+      ]
+    },
+    {
+      "caseId": "v291-dev-62-07",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-07",
+      "lockedCase": {
+        "caseId": "v291-dev-62-07",
+        "lane": "dyadic",
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "debateNumber": "62",
+        "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-07",
+        "side": "pro",
+        "speaker": "Jonathan Pageau",
+        "sourceExcerpt": "it is definitely using a a deep analogical language in order to describe something that happened and that we remember, you know, we remember to the extent that we can remember and that brings us to this problem of the gap like the fact that the fact that we suffer and the fact that we think that we shouldn't be suffering,",
+        "sourceExcerptSha256": "107bfff64f2e6695e92fcefaa3de704f8e44012053d87a7e94db7b015d308bac",
+        "targetPacket": {
+          "id": "pageau-folley-logos-meaning-resurrection-2026-target-07",
+          "targetSpeaker": "Joe Folley",
+          "targetSide": "con",
+          "ownershipScope": "speaker-only",
+          "adoptionRecords": [],
+          "sourceSpan": {
+            "startMs": 2611920,
+            "endMs": 2633119
+          },
+          "sourceExcerpt": ">> Yes. Well, I I think that there are for me it's the um more I don't want to use the word literal because I think literal is actually rather vague in a sense, but but historical I suppose um aspects of biblical text that I would struggle with. And I don't use Genesis as an example because I mean I don't I don't think you're I don't think you believe in the literal truth of of the Genesis story or the historical truth of the Genesis story.",
+          "sourceExcerptSha256": "14e5a939b2601c1994e9f5ffa3a63f044808d3a14c4b5c8c18aca9472e7d9e76",
+          "claim": "Folley struggles with historical biblical claims and exempts Genesis because he takes Pageau not to affirm its literal or historical truth.",
+          "targetRelationToMove": "immediate-opponent-claim",
+          "interveningOpponentClaim": false,
+          "exceptionRationale": null,
+          "indispensableComponents": [
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-07-c1",
+              "text": "Historical aspects of biblical texts are what Folley struggles to accept.",
+              "kind": "fact-premise",
+              "dependsOn": []
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-07-c2",
+              "text": "Folley takes Pageau not to believe the literal or historical truth of Genesis.",
+              "kind": "modality",
+              "dependsOn": []
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-07-c3",
+              "text": "Folley therefore does not use Genesis as his example of a difficult historical claim.",
+              "kind": "conclusion",
+              "dependsOn": [
+                "pageau-folley-logos-meaning-resurrection-2026-target-07-c1",
+                "pageau-folley-logos-meaning-resurrection-2026-target-07-c2"
+              ]
+            }
+          ],
+          "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+        },
+        "burdenContext": {
+          "burdenPacket": {
+            "primaryRouteId": "pageau-folley-logos-meaning-resurrection-2026-pro-route",
+            "eligibleBridgeIds": [
+              "pageau-folley-logos-meaning-resurrection-2026-pro-central"
+            ],
+            "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+          },
+          "route": {
+            "id": "pageau-folley-logos-meaning-resurrection-2026-pro-route",
+            "side": "pro",
+            "description": "Patterns and purposive unities are real features of the world that point upward to Logos.",
+            "successCriteria": "Top-down organization and irreducible emergent wholes support a mind-like transcendent unity.",
+            "bridges": [
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-pro-motion",
+                "tier": "motion",
+                "description": "Establish the pro side's complete answer to the stated debate motion."
+              },
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-pro-central",
+                "tier": "central",
+                "description": "Patterns and purposive unities are real features of the world that point upward to Logos."
+              },
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-pro-subsidiary",
+                "tier": "subsidiary",
+                "description": "Support a narrower evidential or conceptual consideration used by the pro side."
+              }
+            ]
+          }
+        },
+        "fixtureOrigin": {
+          "type": "v2.8.2-retired-development-case",
+          "sourceCaseId": "v282-dev-62-07",
+          "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+          "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+        },
+        "sourceMetadata": {
+          "timestamp": "45:14",
+          "sourceSpan": {
+            "startMs": 2714400,
+            "endMs": 2734720
+          },
+          "speakerAttributionConfidence": "high",
+          "audioChecked": false,
+          "audioVerification": null
+        }
+      },
+      "fields": [
+        {
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-07-c1",
+          "question": "Does exact response language contact indispensable component pageau-folley-logos-meaning-resurrection-2026-target-07-c1: Historical aspects of biblical texts are what Folley struggles to accept.? Default false; do not propagate contact from another component."
+        },
+        {
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-07-c2",
+          "question": "Does exact response language contact indispensable component pageau-folley-logos-meaning-resurrection-2026-target-07-c2: Folley takes Pageau not to believe the literal or historical truth of Genesis.? Default false; do not propagate contact from another component."
+        },
+        {
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-07-c3",
+          "question": "Does exact response language contact indispensable component pageau-folley-logos-meaning-resurrection-2026-target-07-c3: Folley therefore does not use Genesis as his example of a difficult historical claim.? Default false; do not propagate contact from another component."
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "question": "With no indispensable component contacted, does exact response language still supply relevant contrary material bearing on the target? Default false."
+        }
+      ]
+    },
+    {
+      "caseId": "v291-dev-62-09",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-09",
+      "lockedCase": {
+        "caseId": "v291-dev-62-09",
+        "lane": "dyadic",
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "debateNumber": "62",
+        "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-09",
+        "side": "pro",
+        "speaker": "Jonathan Pageau",
+        "sourceExcerpt": "things. I I the thing that the thing to me is that I was convinced of the resurrection in it for a different in a different way. It's like I was convinced of the resurrection. Uh you could say because I saw what it what it meant or what it brought downstream, what it the portrait of the world that it was showing me. That's the thing that convinced me of the resurrection more than whether or not this or that historian mentioned it or or whatever.",
+        "sourceExcerptSha256": "a731ee40322cf3ca58f144aa5917d3764281acb341e5b3556a89b080b14ff10f",
+        "targetPacket": {
+          "id": "pageau-folley-logos-meaning-resurrection-2026-target-09",
+          "targetSpeaker": "Joe Folley",
+          "targetSide": "con",
+          "ownershipScope": "speaker-only",
+          "adoptionRecords": [],
+          "sourceSpan": {
+            "startMs": 4200080,
+            "endMs": 4219040
+          },
+          "sourceExcerpt": "the resurrection of the body the life everlasting you I don't want to just like recite the nine creed but you know all that kind of stuff so that that that would it would raise my confidence in all of those propositions and all of the and as a result I would then come to believe that when I die my I I my my experience would not stop. I would continue to experience things.",
+          "sourceExcerptSha256": "05ce9b1c93db380aaec148d120e4160afe56e8120713200b421630f31599541a",
+          "claim": "The posited confirmation would raise Folley's confidence in bodily resurrection, everlasting life, and related propositions, leading him to believe experience continues after death.",
+          "targetRelationToMove": "immediate-opponent-claim",
+          "interveningOpponentClaim": false,
+          "exceptionRationale": null,
+          "indispensableComponents": [
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-09-c1",
+              "text": "The posited confirmation would raise Folley's confidence in bodily resurrection, everlasting life, and related propositions.",
+              "kind": "modality",
+              "dependsOn": []
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-09-c2",
+              "text": "As a result, Folley would believe that his experience continues after death.",
+              "kind": "conclusion",
+              "dependsOn": [
+                "pageau-folley-logos-meaning-resurrection-2026-target-09-c1"
+              ]
+            }
+          ],
+          "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+        },
+        "burdenContext": {
+          "burdenPacket": {
+            "primaryRouteId": "pageau-folley-logos-meaning-resurrection-2026-pro-route",
+            "eligibleBridgeIds": [
+              "pageau-folley-logos-meaning-resurrection-2026-pro-central"
+            ],
+            "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+          },
+          "route": {
+            "id": "pageau-folley-logos-meaning-resurrection-2026-pro-route",
+            "side": "pro",
+            "description": "Patterns and purposive unities are real features of the world that point upward to Logos.",
+            "successCriteria": "Top-down organization and irreducible emergent wholes support a mind-like transcendent unity.",
+            "bridges": [
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-pro-motion",
+                "tier": "motion",
+                "description": "Establish the pro side's complete answer to the stated debate motion."
+              },
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-pro-central",
+                "tier": "central",
+                "description": "Patterns and purposive unities are real features of the world that point upward to Logos."
+              },
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-pro-subsidiary",
+                "tier": "subsidiary",
+                "description": "Support a narrower evidential or conceptual consideration used by the pro side."
+              }
+            ]
+          }
+        },
+        "fixtureOrigin": {
+          "type": "v2.8.2-retired-development-case",
+          "sourceCaseId": "v282-dev-62-09",
+          "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+          "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+        },
+        "sourceMetadata": {
+          "timestamp": "1:10:28",
+          "sourceSpan": {
+            "startMs": 4228159,
+            "endMs": 4253440
+          },
+          "speakerAttributionConfidence": "high",
+          "audioChecked": false,
+          "audioVerification": null
+        }
+      },
+      "fields": [
+        {
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-09-c1",
+          "question": "Does exact response language contact indispensable component pageau-folley-logos-meaning-resurrection-2026-target-09-c1: The posited confirmation would raise Folley's confidence in bodily resurrection, everlasting life, and related propositions.? Default false; do not propagate contact from another component."
+        },
+        {
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-09-c2",
+          "question": "Does exact response language contact indispensable component pageau-folley-logos-meaning-resurrection-2026-target-09-c2: As a result, Folley would believe that his experience continues after death.? Default false; do not propagate contact from another component."
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "question": "With no indispensable component contacted, does exact response language still supply relevant contrary material bearing on the target? Default false."
+        }
+      ]
+    }
+  ],
+  "exclusions": {
+    "rawPassValuesIncluded": false,
+    "rawPassRationalesIncluded": false,
+    "agreementStatusIncluded": false,
+    "goldIncluded": false,
+    "legacyMaterialIncluded": false,
+    "numericalScoresIncluded": false
+  }
+}

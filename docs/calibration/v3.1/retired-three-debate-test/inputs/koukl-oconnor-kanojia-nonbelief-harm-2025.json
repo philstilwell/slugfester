@@ -1,0 +1,595 @@
+{
+  "schemaVersion": "3.1-retired-debate-input",
+  "workflowVersion": "Slugfester Focused AI Verification Workflow v3.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.1",
+  "calibrationOnly": true,
+  "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+  "debateNumber": "154",
+  "lane": "multi-speaker",
+  "sampleRole": "multi-speaker",
+  "source": {
+    "transcriptPath": ".assessment-cache/captions/Esu8BXLBmZ4/transcript.txt",
+    "transcriptSha256": "7ee69301250617e3c9ff2116c668d4887ceb0c112bc373ded281cbe63f8542b1",
+    "eventsPath": ".assessment-cache/captions/Esu8BXLBmZ4/events.json",
+    "eventsSha256": "0b143e18682e794f7d330a83f1fd84c4433043509a3573475da9e9400a04e2a8",
+    "manifestPath": ".assessment-cache/captions/Esu8BXLBmZ4/manifest.json",
+    "manifestSha256": "3fa5fc85e7389218329a46777ed724b1fb9f92b6d9c868061f06c1f4cd853095",
+    "limitations": "The local source is a complete platform-caption transcript without native speaker labels. Only turns with explicit handoffs, named-address evidence, or unbroken and semantically identifiable turn continuity were selected; post-show and duplicate footage were excluded."
+  },
+  "caseCount": 6,
+  "cases": [
+    {
+      "caseId": "v291-dev-154-08",
+      "lane": "multi-speaker",
+      "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "debateNumber": "154",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-08",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "sourceExcerpt": ">> there are people who do the opposite there. There are people who do the opposite there. Yeah, there's people that would have gone the other way and they'll be in the comment section right now saying, \"Well, I went from Christianity to Islam.\"",
+      "sourceExcerptSha256": "45f98e12d301764e63a200c10243eb6e32f1ed096413d4844eec9c3787333896",
+      "targetPacket": {
+        "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08",
+        "targetSpeaker": "Greg Koukl",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 5191440,
+          "endMs": 5209520
+        },
+        "sourceExcerpt": ">> So, the the presumption that you made is a presumption. We have to keep that in mind. I mean, the people that I have talked to who are former Muslims and are now Christians, very devout Muslims, they did not have the experience of satisfaction, fullness, and connection with God with in Islam that they do in",
+        "sourceExcerptSha256": "f4cd1d5aa2fab4f221832b4c65c4cad8f331e3da12edb92e47d2d8f10be08d20",
+        "claim": "Former Muslims known to Koukl found greater satisfaction, fullness, and connection with God after converting to Christianity.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1",
+            "text": "Former devout Muslims known to Koukl report greater satisfaction and connection with God as Christians than they had in Islam.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2",
+            "text": "Those changed lives count against treating religious satisfaction as interchangeable across religions.",
+            "kind": "inference",
+            "dependsOn": [
+              "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "eligibleBridgeIds": [
+            "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "side": "con",
+          "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices.",
+          "successCriteria": "Religious purpose claims face arbitrariness, suffering, and truth-evidence problems that felt meaning cannot settle.",
+          "bridges": [
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+              "tier": "central",
+              "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-154-08",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      },
+      "sourceMetadata": {
+        "timestamp": "1:26:51",
+        "sourceSpan": {
+          "startMs": 5211440,
+          "endMs": 5219520
+        },
+        "speakerAttributionConfidence": "high",
+        "audioChecked": false,
+        "audioVerification": null
+      }
+    },
+    {
+      "caseId": "v291-dev-154-09",
+      "lane": "multi-speaker",
+      "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "debateNumber": "154",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-09",
+      "side": "con",
+      "speaker": "Alok Kanojia",
+      "sourceExcerpt": ">> in the West, right? So, I think there's a whole different set of axioms. I'm using dharma and that's what people will like put morality onto dharma, where I I don't think that that's actually fair. So, so I going back to I have a duty just to give another example um and y'all can decide whether this is moral",
+      "sourceExcerptSha256": "d3dfbe9591970ec9d714c23efe49bd92630221570f58b6e4d35ca3cad3163618",
+      "targetPacket": {
+        "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09",
+        "targetSpeaker": "Greg Koukl",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 2946880,
+          "endMs": 2964680
+        },
+        "sourceExcerpt": "The other thing is, is there any reason to believe that there is a transcendent reality, that God exists, that souls exist, that that there is an objective morality that guides our life, and if we're living virtuously, that's going to be satisfying even if we don't believe in God or not. Those are the two things",
+        "sourceExcerptSha256": "b377905fcfd0456630c6e652eeaa14cce553e5273607f3bcb9eebda600b480ca",
+        "claim": "A transcendent reality includes an objective morality that guides life and makes virtuous living satisfying.",
+        "targetRelationToMove": "earlier-load-bearing-claim",
+        "interveningOpponentClaim": true,
+        "exceptionRationale": "Kanojia explicitly contrasts Western moral axioms with dharma after Koukl presses him about transcendent moral duty, thereby engaging Koukl's earlier stated objective-morality route; the immediately preceding Koukl fragments are each too short to preserve the full load-bearing proposition without mixing speakers.",
+        "indispensableComponents": [
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c1",
+            "text": "There is a transcendent objective morality that guides human life.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c2",
+            "text": "Living virtuously under that morality is satisfying even without explicit belief in God.",
+            "kind": "inference",
+            "dependsOn": [
+              "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "eligibleBridgeIds": [
+            "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "side": "con",
+          "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices.",
+          "successCriteria": "Religious purpose claims face arbitrariness, suffering, and truth-evidence problems that felt meaning cannot settle.",
+          "bridges": [
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+              "tier": "central",
+              "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-154-09",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      },
+      "sourceMetadata": {
+        "timestamp": "1:41:10",
+        "sourceSpan": {
+          "startMs": 6070160,
+          "endMs": 6086560
+        },
+        "speakerAttributionConfidence": "high",
+        "audioChecked": false,
+        "audioVerification": null
+      }
+    },
+    {
+      "caseId": "v291-dev-154-11",
+      "lane": "multi-speaker",
+      "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "debateNumber": "154",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-11",
+      "side": "con",
+      "speaker": "Alok Kanojia",
+      "sourceExcerpt": ">> Yes, and I think there is an a layer of morality, but that is not within dharma. So, for example, there are yamas and niyamas, which are things like truthfulness, ahimsa, which means non-violence. So, there's a set of different things that we would generally speaking call morality, and doing those things is usually in accordance with",
+      "sourceExcerptSha256": "02ec2f89de55e0f709379a83d1656f2e1e527ecf261f2af2e03f23572921ecba",
+      "targetPacket": {
+        "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11",
+        "targetSpeaker": "Greg Koukl",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 6415880,
+          "endMs": 6429640
+        },
+        "sourceExcerpt": ">> So, when you say you ought to help the person in the emergency room, all you mean is you're not morally compelled to do that in in terms of a virtue, but there is a a consequence for you to do that as opposed to doing the opposite.",
+        "sourceExcerptSha256": "1e3df9bc0ec08eebf07ad7017d1ec7ccd952abeb14e88b6850ab027371dde4a3",
+        "claim": "On Kanojia's account, an emergency-room duty is only consequential rather than morally or virtuously compelling.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c1",
+            "text": "Kanojia's emergency-room duty is not a moral compulsion in terms of virtue.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c2",
+            "text": "It instead identifies a consequence of acting one way rather than another.",
+            "kind": "rule-comparison",
+            "dependsOn": [
+              "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "eligibleBridgeIds": [
+            "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "side": "con",
+          "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices.",
+          "successCriteria": "Religious purpose claims face arbitrariness, suffering, and truth-evidence problems that felt meaning cannot settle.",
+          "bridges": [
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+              "tier": "central",
+              "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-154-11",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      },
+      "sourceMetadata": {
+        "timestamp": "1:47:09",
+        "sourceSpan": {
+          "startMs": 6429640,
+          "endMs": 6447480
+        },
+        "speakerAttributionConfidence": "high",
+        "audioChecked": false,
+        "audioVerification": null
+      }
+    },
+    {
+      "caseId": "v291-dev-154-12",
+      "lane": "multi-speaker",
+      "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "debateNumber": "154",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-12",
+      "side": "con",
+      "speaker": "Alok Kanojia",
+      "sourceExcerpt": "dharma, but, you know, the Mahabharata is a great case of someone saying, \"I don't want to kill my cousins, and I don't want to kill my teacher.\" And Krishna saying, \"You absolutely should, because it is in accordance with dharma.\" So, I think dharma often times gets like translated over to morality, but I think you lose something in translation.",
+      "sourceExcerptSha256": "0ca646891ad9d33e32302ecdd652c96b880cd9c69c87d9222f0984f992128b9c",
+      "targetPacket": {
+        "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12",
+        "targetSpeaker": "Greg Koukl",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 6415880,
+          "endMs": 6429640
+        },
+        "sourceExcerpt": ">> So, when you say you ought to help the person in the emergency room, all you mean is you're not morally compelled to do that in in terms of a virtue, but there is a a consequence for you to do that as opposed to doing the opposite.",
+        "sourceExcerptSha256": "1e3df9bc0ec08eebf07ad7017d1ec7ccd952abeb14e88b6850ab027371dde4a3",
+        "claim": "On Kanojia's account, an emergency-room duty is only consequential rather than morally or virtuously compelling.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c1",
+            "text": "Kanojia's emergency-room duty is not a moral compulsion in terms of virtue.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c2",
+            "text": "It instead identifies a consequence of acting one way rather than another.",
+            "kind": "rule-comparison",
+            "dependsOn": [
+              "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "eligibleBridgeIds": [
+            "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "side": "con",
+          "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices.",
+          "successCriteria": "Religious purpose claims face arbitrariness, suffering, and truth-evidence problems that felt meaning cannot settle.",
+          "bridges": [
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+              "tier": "central",
+              "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-154-12",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      },
+      "sourceMetadata": {
+        "timestamp": "1:47:27",
+        "sourceSpan": {
+          "startMs": 6447480,
+          "endMs": 6466560
+        },
+        "speakerAttributionConfidence": "high",
+        "audioChecked": false,
+        "audioVerification": null
+      }
+    },
+    {
+      "caseId": "v291-dev-154-14",
+      "lane": "multi-speaker",
+      "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "debateNumber": "154",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-14",
+      "side": "pro",
+      "speaker": "Greg Koukl",
+      "sourceExcerpt": ">> Well, the nature of freedom in my understanding, my view, is that it can initiate things, okay? You don't have to have in a certain sense deterministic element in your in your soul that forces you to act a certain way. Why did Adam and Eve even this case act the way she did? Because she was capable of initiating a free action. And this free action in terms of rebellion, okay?",
+      "sourceExcerptSha256": "ec96cc0a92633348f7bab6202b0a1cff4e8404d01d8ee94863ed34855f122f3e",
+      "targetPacket": {
+        "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14",
+        "targetSpeaker": "Alex O'Connor",
+        "targetSide": "con",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 8167200,
+          "endMs": 8193440
+        },
+        "sourceExcerpt": "humans have a sinful nature and act upon sin, then why did Eve act upon the sin before the fall had happened? Eve must have had a proclivity to sin in order to in order to betray God in the first place. And so, I don't think it suffices to say that the explanation for why we have human beings with a proclivity to sin like Adolf Hitler is because of the fall if the fall is a result of a proclivity to sin from Eve.",
+        "sourceExcerptSha256": "0c7c35d4d5a7b7ebbb92bd1fcb70316c1b77bb2da8393bb9fc5793c2dca74297",
+        "claim": "If the fall explains humanity's proclivity to sin, Eve's sin before the fall creates a regress because it already presupposes that proclivity.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c1",
+            "text": "The fall is offered as the explanation for humanity's sinful nature and proclivity to sin.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c2",
+            "text": "Eve acted on a proclivity to sin before the fall occurred.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c3",
+            "text": "The fall therefore cannot explain the very proclivity that produced it.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c1",
+              "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c2"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-route",
+          "eligibleBridgeIds": [
+            "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-route",
+          "side": "pro",
+          "description": "A personal creator gives human beings objective purpose, flourishing, moral truth, and relationship with God.",
+          "successCriteria": "Naturalism cannot adequately explain consciousness, moral intuition, or the hunger for transcendent meaning.",
+          "bridges": [
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-motion",
+              "tier": "motion",
+              "description": "Establish the pro side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-central",
+              "tier": "central",
+              "description": "A personal creator gives human beings objective purpose, flourishing, moral truth, and relationship with God."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the pro side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-154-14",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      },
+      "sourceMetadata": {
+        "timestamp": "2:16:33",
+        "sourceSpan": {
+          "startMs": 8193440,
+          "endMs": 8219280
+        },
+        "speakerAttributionConfidence": "high",
+        "audioChecked": false,
+        "audioVerification": null
+      }
+    },
+    {
+      "caseId": "v291-dev-154-15",
+      "lane": "multi-speaker",
+      "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "debateNumber": "154",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-15",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "sourceExcerpt": ">> All that means is that the fall does not explain the proclivity to sin because Eve already had it. It does not explain the existence of evil because knowledge of that already existed before she committed the fall. It also doesn't explain the origin of suffering because of course Eve's punishment for eating from the tree of the knowledge of good and evil.",
+      "sourceExcerptSha256": "0060a9417b56cd7b54585bab817a4aeb2b594e798e5e923f4f3a814b5888e7eb",
+      "targetPacket": {
+        "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15",
+        "targetSpeaker": "Greg Koukl",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 8272760,
+          "endMs": 8294719
+        },
+        "sourceExcerpt": "okay? She wouldn't have been She wouldn't have not been able to even understand the command not to do something if she didn't have those moral categories. I think that's part of the image of God and man. Consequently, she knew she ought not do it, but she still chose, for whatever reason, to do that. And that act of disobedience created a big mess.",
+        "sourceExcerptSha256": "06ed5f85d641fc2abb52a9acaeb261702f14e828234b9a12b09d5eefd9e0bc29",
+        "claim": "Eve already possessed moral categories through the image of God, understood the command, and freely disobeyed it, thereby creating the fall's consequences.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c1",
+            "text": "Eve possessed moral categories and could understand God's command before eating from the tree.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c2",
+            "text": "She knew she ought not disobey but freely chose to do so.",
+            "kind": "fact-premise",
+            "dependsOn": [
+              "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c1"
+            ]
+          },
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c3",
+            "text": "That act of disobedience produced the fall's consequences.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c2"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "eligibleBridgeIds": [
+            "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "side": "con",
+          "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices.",
+          "successCriteria": "Religious purpose claims face arbitrariness, suffering, and truth-evidence problems that felt meaning cannot settle.",
+          "bridges": [
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+              "tier": "central",
+              "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-154-15",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      },
+      "sourceMetadata": {
+        "timestamp": "2:18:14",
+        "sourceSpan": {
+          "startMs": 8294719,
+          "endMs": 8310840
+        },
+        "speakerAttributionConfidence": "high",
+        "audioChecked": false,
+        "audioVerification": null
+      }
+    }
+  ]
+}

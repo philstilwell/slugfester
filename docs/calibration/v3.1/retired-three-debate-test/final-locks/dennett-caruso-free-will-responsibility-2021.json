@@ -1,0 +1,884 @@
+{
+  "schemaVersion": "3.1-final-verification-lock",
+  "workflowVersion": "Slugfester Focused AI Verification Workflow v3.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.1",
+  "model": "5.6 Sol",
+  "gateId": "v3.1-retired-three-debate-focused-verification-test",
+  "debateId": "dennett-caruso-free-will-responsibility-2021",
+  "debateNumber": "185",
+  "lane": "dyadic",
+  "calibrationOnly": true,
+  "source": {
+    "manifestPath": "docs/calibration/v3.1/retired-three-debate-test/gate-manifest.json",
+    "manifestSha256": "0efb23429f5feca1f0e15d09ed52c46006486ed1b599766c722f5027adb629f4",
+    "inputPath": "docs/calibration/v3.1/retired-three-debate-test/inputs/dennett-caruso-free-will-responsibility-2021.json",
+    "inputSha256": "c13e8be680976a5262d62c369c364d4a5801e46b9db4f83f2aac0e1d11799010",
+    "sourceAuditPath": "docs/calibration/v3.1/retired-three-debate-test/source-audit/dennett-caruso-free-will-responsibility-2021.json",
+    "sourceAuditSha256": "b05866f021446055a0433ad1072f361ec09b14ef00c42e4a9505b90684063f74",
+    "passAPath": "docs/calibration/v3.1/retired-three-debate-test/pass-a/dennett-caruso-free-will-responsibility-2021.json",
+    "passASha256": "4e64faa6d07f71b3a57eac1d5057d3a1e2483b122486eedc2e73ac134c5422e2",
+    "passBPath": "docs/calibration/v3.1/retired-three-debate-test/pass-b/dennett-caruso-free-will-responsibility-2021.json",
+    "passBSha256": "6cda52862114d82b8984bbc08f399d1f6458b84a4244d8b54fbcbdf489fca51d",
+    "semanticDisagreementPath": "docs/calibration/v3.1/retired-three-debate-test/semantic-disagreements/dennett-caruso-free-will-responsibility-2021.json",
+    "semanticDisagreementSha256": "eb0bd77e71b542bbc730404fb0a66ad8ca4cde9879c67e34b04b6728ab8ae319",
+    "verifications": {
+      "targeting-burden": {
+        "path": "docs/calibration/v3.1/retired-three-debate-test/verifications/targeting-burden/dennett-caruso-free-will-responsibility-2021.json",
+        "sha256": "f7b0485054eaf6c574fbfa08489ac0f65d96ecc9de927ca688cf700f3f2aadc6"
+      },
+      "coverage": {
+        "path": "docs/calibration/v3.1/retired-three-debate-test/verifications/coverage/dennett-caruso-free-will-responsibility-2021.json",
+        "sha256": "cae8084fd0147b046f05e4550c19148ae4a25a9f70669b091f832441418d52dd"
+      },
+      "diagnostic": {
+        "path": "docs/calibration/v3.1/retired-three-debate-test/verifications/diagnostic/dennett-caruso-free-will-responsibility-2021.json",
+        "sha256": "732eacda9838522c7ffb49f47d235c1b625f04de773eef2210394f0156e40bec"
+      },
+      "reframe": {
+        "path": "docs/calibration/v3.1/retired-three-debate-test/verifications/reframe/dennett-caruso-free-will-responsibility-2021.json",
+        "sha256": "329115c59fd503f5b6e5e48fb816e065cbfb049f0a27ec4de0fcf9999d22ab1d"
+      }
+    }
+  },
+  "cases": [
+    {
+      "caseId": "v291-dev-185-05",
+      "moveId": "m05-pro-q1-responsive-free-will-worth-wanting",
+      "annotation": {
+        "caseId": "v291-dev-185-05",
+        "moveId": "m05-pro-q1-responsive-free-will-worth-wanting",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 302,
+          "endChar": 441,
+          "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+        },
+        "connectedExample": true,
+        "connectionEvidence": {
+          "startChar": 302,
+          "endChar": 441,
+          "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+        },
+        "scopeRelation": "narrowed",
+        "scopeEvidence": {
+          "startChar": 73,
+          "endChar": 345,
+          "text": "we want to know about responsibility and whether whether we deserve blame and praise and so forth and as long as you stick to that as long as you stick to the fact that that's the kind of free will that matters then first of all libertarian free will doesn't matter at all"
+        },
+        "burdenAdjustment": "replaced",
+        "burdenEvidence": {
+          "startChar": 73,
+          "endChar": 345,
+          "text": "we want to know about responsibility and whether whether we deserve blame and praise and so forth and as long as you stick to that as long as you stick to the fact that that's the kind of free will that matters then first of all libertarian free will doesn't matter at all"
+        },
+        "componentContacts": [
+          {
+            "componentId": "t05-c1-beyond-control",
+            "contacted": false,
+            "evidence": null
+          },
+          {
+            "componentId": "t05-c2-no-basic-desert",
+            "contacted": true,
+            "evidence": {
+              "startChar": 302,
+              "endChar": 441,
+              "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "irrelevance",
+        "defectCue": {
+          "startChar": 302,
+          "endChar": 345,
+          "text": "libertarian free will doesn't matter at all"
+        },
+        "consequenceStated": true,
+        "consequenceCue": {
+          "startChar": 354,
+          "endChar": 441,
+          "text": "having it wouldn't give you responsibility not having it wouldn't take it away from you"
+        },
+        "malformedDemandExplained": true,
+        "malformedDemandCue": {
+          "startChar": 302,
+          "endChar": 441,
+          "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+        },
+        "replacementDemandStated": true,
+        "replacementDemandCue": {
+          "startChar": 73,
+          "endChar": 170,
+          "text": "we want to know about responsibility and whether whether we deserve blame and praise and so forth"
+        },
+        "burdenContact": {
+          "tier": "motion",
+          "bridgeId": "con-motion-no-basic-desert",
+          "evidence": {
+            "startChar": 302,
+            "endChar": 441,
+            "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+          }
+        },
+        "rationale": "All semantic primitives were independently rejudged by four source-only focused AI verifiers; exact evidence was then canonicalized mechanically from matching AI results."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "narrowed",
+        "burdenAdjustment": "replaced",
+        "coverage": "partial",
+        "diagnostic": true,
+        "reframe": true,
+        "burdenRelevance": "completes"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "narrowed",
+          "burdenAdjustment": "replaced",
+          "coverage": "partial",
+          "diagnostic": true,
+          "reframe": true,
+          "burdenRelevance": "completes"
+        },
+        "responsiveness": [
+          80,
+          100
+        ],
+        "relevanceBurden": [
+          90,
+          100
+        ]
+      },
+      "fieldSources": [
+        {
+          "fieldPath": "targetContact",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "connectedExample",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "scope",
+          "rawAgreement": false,
+          "verifierAgreesA": false,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenAdjustment",
+          "rawAgreement": false,
+          "verifierAgreesA": false,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "componentContact.t05-c1-beyond-control",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "componentContact.t05-c2-no-basic-desert",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "defect",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "consequence",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "A"
+        },
+        {
+          "fieldPath": "malformedDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "replacementDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenContact",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        }
+      ]
+    },
+    {
+      "caseId": "v291-dev-185-07",
+      "moveId": "m07-pro-q2-responsive-causation-control-diagnosis",
+      "annotation": {
+        "caseId": "v291-dev-185-07",
+        "moveId": "m07-pro-q2-responsive-causation-control-diagnosis",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 56,
+          "endChar": 94,
+          "text": "you're confusing causation and control"
+        },
+        "connectedExample": true,
+        "connectionEvidence": {
+          "startChar": 95,
+          "endChar": 209,
+          "text": "in the following way maya and marina you haven't told us what their upbringing was how much self-control they have"
+        },
+        "scopeRelation": "same",
+        "scopeEvidence": null,
+        "burdenAdjustment": "retained",
+        "burdenEvidence": null,
+        "componentContacts": [
+          {
+            "componentId": "t07-c1-sourcehood-required",
+            "contacted": false,
+            "evidence": null
+          },
+          {
+            "componentId": "t07-c2-determination-defeats-sourcehood",
+            "contacted": true,
+            "evidence": {
+              "startChar": 56,
+              "endChar": 94,
+              "text": "you're confusing causation and control"
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "invalid-inference",
+        "defectCue": {
+          "startChar": 56,
+          "endChar": 94,
+          "text": "you're confusing causation and control"
+        },
+        "consequenceStated": true,
+        "consequenceCue": {
+          "startChar": 132,
+          "endChar": 209,
+          "text": "you haven't told us what their upbringing was how much self-control they have"
+        },
+        "malformedDemandExplained": true,
+        "malformedDemandCue": {
+          "startChar": 56,
+          "endChar": 94,
+          "text": "you're confusing causation and control"
+        },
+        "replacementDemandStated": true,
+        "replacementDemandCue": {
+          "startChar": 132,
+          "endChar": 209,
+          "text": "you haven't told us what their upbringing was how much self-control they have"
+        },
+        "burdenContact": {
+          "tier": "central",
+          "bridgeId": "con-central-sourcehood",
+          "evidence": {
+            "startChar": 56,
+            "endChar": 94,
+            "text": "you're confusing causation and control"
+          }
+        },
+        "rationale": "All semantic primitives were independently rejudged by four source-only focused AI verifiers; exact evidence was then canonicalized mechanically from matching AI results."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "same",
+        "burdenAdjustment": "retained",
+        "coverage": "partial",
+        "diagnostic": true,
+        "reframe": true,
+        "burdenRelevance": "advances-central"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "same",
+          "burdenAdjustment": "retained",
+          "coverage": "partial",
+          "diagnostic": true,
+          "reframe": true,
+          "burdenRelevance": "advances-central"
+        },
+        "responsiveness": [
+          80,
+          100
+        ],
+        "relevanceBurden": [
+          75,
+          89
+        ]
+      },
+      "fieldSources": [
+        {
+          "fieldPath": "targetContact",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "connectedExample",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        },
+        {
+          "fieldPath": "scope",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenAdjustment",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "componentContact.t07-c1-sourcehood-required",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "componentContact.t07-c2-determination-defeats-sourcehood",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "defect",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "consequence",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "malformedDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "replacementDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenContact",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        }
+      ]
+    },
+    {
+      "caseId": "v291-dev-185-12",
+      "moveId": "m12-con-q4-responsive-rules-versus-reactive-attitudes",
+      "annotation": {
+        "caseId": "v291-dev-185-12",
+        "moveId": "m12-con-q4-responsive-rules-versus-reactive-attitudes",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 46,
+          "endChar": 231,
+          "text": "the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified"
+        },
+        "connectedExample": true,
+        "connectionEvidence": {
+          "startChar": 302,
+          "endChar": 483,
+          "text": "do i want to attach to my parenting when i when i punish my daughter by taking her cell phone away do i want or am i justified in exhibiting resentment or indignation or moral anger"
+        },
+        "scopeRelation": "narrowed",
+        "scopeEvidence": {
+          "startChar": 46,
+          "endChar": 231,
+          "text": "the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified"
+        },
+        "burdenAdjustment": "replaced",
+        "burdenEvidence": {
+          "startChar": 46,
+          "endChar": 231,
+          "text": "the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified"
+        },
+        "componentContacts": [
+          {
+            "componentId": "t12-c1-agreed-penalties",
+            "contacted": false,
+            "evidence": null
+          },
+          {
+            "componentId": "t12-c2-social-cornerstone",
+            "contacted": false,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": true,
+        "contraryEvidence": {
+          "startChar": 46,
+          "endChar": 231,
+          "text": "the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified"
+        },
+        "defectType": "irrelevance",
+        "defectCue": {
+          "startChar": 46,
+          "endChar": 145,
+          "text": "the more philosophically relevant question is not whether or not those practices would be justified"
+        },
+        "consequenceStated": false,
+        "consequenceCue": null,
+        "malformedDemandExplained": true,
+        "malformedDemandCue": {
+          "startChar": 46,
+          "endChar": 295,
+          "text": "the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified because those are the ones that are philosophically significant"
+        },
+        "replacementDemandStated": true,
+        "replacementDemandCue": {
+          "startChar": 150,
+          "endChar": 231,
+          "text": "the question about whether certain types of reactive attitudes would be justified"
+        },
+        "burdenContact": {
+          "tier": "motion",
+          "bridgeId": "pro-motion-responsibility",
+          "evidence": {
+            "startChar": 169,
+            "endChar": 231,
+            "text": "whether certain types of reactive attitudes would be justified"
+          }
+        },
+        "rationale": "All semantic primitives were independently rejudged by four source-only focused AI verifiers; exact evidence was then canonicalized mechanically from matching AI results."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "narrowed",
+        "burdenAdjustment": "replaced",
+        "coverage": "relevant-nonanswer",
+        "diagnostic": false,
+        "reframe": true,
+        "burdenRelevance": "completes"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "narrowed",
+          "burdenAdjustment": "replaced",
+          "coverage": "relevant-nonanswer",
+          "diagnostic": false,
+          "reframe": true,
+          "burdenRelevance": "completes"
+        },
+        "responsiveness": [
+          80,
+          100
+        ],
+        "relevanceBurden": [
+          90,
+          100
+        ]
+      },
+      "fieldSources": [
+        {
+          "fieldPath": "targetContact",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "connectedExample",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "scope",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenAdjustment",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "componentContact.t12-c1-agreed-penalties",
+          "rawAgreement": false,
+          "verifierAgreesA": false,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "componentContact.t12-c2-social-cornerstone",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "rawAgreement": false,
+          "verifierAgreesA": false,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "defect",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "A"
+        },
+        {
+          "fieldPath": "consequence",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "malformedDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "replacementDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenContact",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "A"
+        }
+      ]
+    },
+    {
+      "caseId": "v291-dev-185-08",
+      "moveId": "m08-con-q2-responsive-control-insufficient",
+      "annotation": {
+        "caseId": "v291-dev-185-08",
+        "moveId": "m08-con-q2-responsive-control-insufficient",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 261,
+          "endChar": 390,
+          "text": "i do think those those those distinctions matter they matter in all kinds of important ways but they matter for different reasons"
+        },
+        "connectedExample": false,
+        "connectionEvidence": null,
+        "scopeRelation": "narrowed",
+        "scopeEvidence": {
+          "startChar": 115,
+          "endChar": 390,
+          "text": "the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating um and i do think those those those distinctions matter they matter in all kinds of important ways but they matter for different reasons"
+        },
+        "burdenAdjustment": "replaced",
+        "burdenEvidence": {
+          "startChar": 131,
+          "endChar": 253,
+          "text": "whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+        },
+        "componentContacts": [
+          {
+            "componentId": "t08-c1-degrees-control",
+            "contacted": true,
+            "evidence": {
+              "startChar": 261,
+              "endChar": 390,
+              "text": "i do think those those those distinctions matter they matter in all kinds of important ways but they matter for different reasons"
+            }
+          },
+          {
+            "componentId": "t08-c2-well-functioning-reasons",
+            "contacted": true,
+            "evidence": {
+              "startChar": 261,
+              "endChar": 390,
+              "text": "i do think those those those distinctions matter they matter in all kinds of important ways but they matter for different reasons"
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "evidential-insufficiency",
+        "defectCue": {
+          "startChar": 131,
+          "endChar": 253,
+          "text": "whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+        },
+        "consequenceStated": true,
+        "consequenceCue": {
+          "startChar": 353,
+          "endChar": 390,
+          "text": "but they matter for different reasons"
+        },
+        "malformedDemandExplained": true,
+        "malformedDemandCue": {
+          "startChar": 131,
+          "endChar": 390,
+          "text": "whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating um and i do think those those those distinctions matter they matter in all kinds of important ways but they matter for different reasons"
+        },
+        "replacementDemandStated": true,
+        "replacementDemandCue": {
+          "startChar": 131,
+          "endChar": 253,
+          "text": "whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+        },
+        "burdenContact": {
+          "tier": "motion",
+          "bridgeId": "pro-motion-responsibility",
+          "evidence": {
+            "startChar": 131,
+            "endChar": 253,
+            "text": "whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+          }
+        },
+        "rationale": "All semantic primitives were independently rejudged by four source-only focused AI verifiers; exact evidence was then canonicalized mechanically from matching AI results."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "narrowed",
+        "burdenAdjustment": "replaced",
+        "coverage": "full",
+        "diagnostic": true,
+        "reframe": true,
+        "burdenRelevance": "completes"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "narrowed",
+          "burdenAdjustment": "replaced",
+          "coverage": "full",
+          "diagnostic": true,
+          "reframe": true,
+          "burdenRelevance": "completes"
+        },
+        "responsiveness": [
+          80,
+          100
+        ],
+        "relevanceBurden": [
+          90,
+          100
+        ]
+      },
+      "fieldSources": [
+        {
+          "fieldPath": "targetContact",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "A"
+        },
+        {
+          "fieldPath": "connectedExample",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "scope",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenAdjustment",
+          "rawAgreement": false,
+          "verifierAgreesA": false,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        },
+        {
+          "fieldPath": "componentContact.t08-c1-degrees-control",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "A"
+        },
+        {
+          "fieldPath": "componentContact.t08-c2-well-functioning-reasons",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "A"
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "defect",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        },
+        {
+          "fieldPath": "consequence",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        },
+        {
+          "fieldPath": "malformedDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        },
+        {
+          "fieldPath": "replacementDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        },
+        {
+          "fieldPath": "burdenContact",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        }
+      ]
+    }
+  ],
+  "audit": {
+    "caseCount": 4,
+    "compoundFieldCount": 48,
+    "focusedJudgmentCount": 48,
+    "unresolvedFields": 0,
+    "semanticConflictResolutions": 5,
+    "sharedAgreementOverrides": 3,
+    "evidenceCanonicalizations": 13,
+    "allDerivedFieldsRecomputed": true,
+    "participantPerformanceScoresPresent": false
+  }
+}

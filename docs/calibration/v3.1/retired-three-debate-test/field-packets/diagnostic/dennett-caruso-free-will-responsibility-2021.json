@@ -1,0 +1,465 @@
+{
+  "schemaVersion": "3.1-field-family-packet",
+  "workflowVersion": "Slugfester Focused AI Verification Workflow v3.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.1",
+  "model": "5.6 Sol",
+  "gateId": "v3.1-retired-three-debate-focused-verification-test",
+  "debateId": "dennett-caruso-free-will-responsibility-2021",
+  "debateNumber": "185",
+  "lane": "dyadic",
+  "family": "diagnostic",
+  "calibrationOnly": true,
+  "builtFromInputSha256": "c13e8be680976a5262d62c369c364d4a5801e46b9db4f83f2aac0e1d11799010",
+  "caseCount": 4,
+  "fieldCount": 8,
+  "cases": [
+    {
+      "caseId": "v291-dev-185-05",
+      "moveId": "m05-pro-q1-responsive-free-will-worth-wanting",
+      "lockedCase": {
+        "caseId": "v291-dev-185-05",
+        "lane": "dyadic",
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "debateNumber": "185",
+        "moveId": "m05-pro-q1-responsive-free-will-worth-wanting",
+        "side": "pro",
+        "speaker": "Daniel Dennett",
+        "sourceExcerpt": "and it matters for the reasons that greg sort of started out with namely we want to know about responsibility and whether whether we deserve blame and praise and so forth and as long as you stick to that as long as you stick to the fact that that's the kind of free will that matters then first of all libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you",
+        "sourceExcerptSha256": "8a9b511114341c053698823343b61c3a64efb9266d6ca61654852ead040c7306",
+        "targetPacket": {
+          "id": "t05-caruso-beyond-control-basic-desert",
+          "targetSpeaker": "Gregg Caruso",
+          "sourceSpan": {
+            "startMs": 1076000,
+            "endMs": 1097440
+          },
+          "sourceExcerpt": "so i'm a free will skeptic dan's a compatibilist and so my free will skepticism i define as uh the thesis that who we are and what we do is sort of ultimately the result of factors beyond our control and because of that we're never morally responsible in a very particular and pervasive sense which i call the basic dessert sense",
+          "sourceExcerptSha256": "74da12a7b3d44d322fc9ce52aafd76f6d3489057abc1a94208c7c03c648caecf",
+          "claim": "Factors beyond agents' control eliminate moral responsibility in the basic-desert sense.",
+          "indispensableComponents": [
+            {
+              "id": "t05-c1-beyond-control",
+              "text": "Who agents are and what they do ultimately result from factors beyond their control.",
+              "kind": "fact-premise",
+              "dependsOn": []
+            },
+            {
+              "id": "t05-c2-no-basic-desert",
+              "text": "That beyond-control condition entails that agents are never morally responsible in the basic-desert sense.",
+              "kind": "conclusion",
+              "dependsOn": [
+                "t05-c1-beyond-control"
+              ]
+            }
+          ],
+          "selectionRationale": "This exact prior span contains the skeptical premise and its basic-desert conclusion that Dennett's response distinguishes from worthwhile responsibility.",
+          "targetSide": "con",
+          "ownershipScope": "speaker-only",
+          "adoptionRecords": [],
+          "targetRelationToMove": "retired-explicit-reframe-fixture",
+          "interveningOpponentClaim": false,
+          "exceptionRationale": null
+        },
+        "burdenContext": {
+          "burdenPacket": {
+            "primaryRouteId": "con-skeptical-sourcehood-route",
+            "eligibleBridgeIds": [
+              "con-central-sourcehood",
+              "con-motion-no-basic-desert"
+            ],
+            "selectionRationale": "The response primarily contests the skeptical route by separating responsibility-conferring freedom from libertarian freedom."
+          },
+          "route": {
+            "id": "con-skeptical-sourcehood-route",
+            "side": "con",
+            "description": "Show that luck and factors beyond the agent's control defeat the sourcehood needed for basic-desert responsibility while leaving forward-looking responses available.",
+            "successCriteria": "The route succeeds if agents are shown not to be appropriate sources for basic desert and safety, rehabilitation, or rule enforcement can replace retributive blame and punishment.",
+            "bridges": [
+              {
+                "id": "con-motion-no-basic-desert",
+                "tier": "motion",
+                "description": "Basic-desert moral responsibility and retributive blame or punishment are unwarranted, even if independently justified forward-looking responses remain."
+              },
+              {
+                "id": "con-central-sourcehood",
+                "tier": "central",
+                "description": "Who agents are and what they do result from luck or factors beyond their control, so they lack the appropriate sourcehood for basic desert."
+              },
+              {
+                "id": "con-subsidiary-alternatives",
+                "tier": "subsidiary",
+                "description": "Reasons-responsive distinctions, sanctions, safety restrictions, rehabilitation, and rule enforcement can be retained on non-desert forward-looking grounds."
+              },
+              {
+                "id": "con-subsidiary-indeterminacy",
+                "tier": "subsidiary",
+                "description": "Adding physical indeterminacy does not let the agent settle which outcome occurs and therefore cannot rescue basic-desert control."
+              }
+            ]
+          }
+        },
+        "fixtureOrigin": {
+          "type": "v2.8.2-retired-development-case",
+          "sourceCaseId": "v282-dev-185-05",
+          "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+          "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+        },
+        "sourceMetadata": {
+          "timestamp": "00:23:00",
+          "sourceSpan": {
+            "startMs": 1380320,
+            "endMs": 1417600
+          },
+          "speakerAttributionConfidence": "high",
+          "audioChecked": false,
+          "audioVerification": null
+        }
+      },
+      "fields": [
+        {
+          "fieldPath": "defect",
+          "question": "What eligible defect, if any, is expressly cued in the response? Choose the first clearly expressed defect; default none."
+        },
+        {
+          "fieldPath": "consequence",
+          "question": "Does a separate exact clause state what fails, does not follow, is not established, cannot carry the claimed weight, or must be limited because of the defect? Default false."
+        }
+      ]
+    },
+    {
+      "caseId": "v291-dev-185-07",
+      "moveId": "m07-pro-q2-responsive-causation-control-diagnosis",
+      "lockedCase": {
+        "caseId": "v291-dev-185-07",
+        "lane": "dyadic",
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "debateNumber": "185",
+        "moveId": "m07-pro-q2-responsive-causation-control-diagnosis",
+        "side": "pro",
+        "speaker": "Daniel Dennett",
+        "sourceExcerpt": "okay the big mistake that i think you're making greg is you're confusing causation and control in the following way maya and marina you haven't told us what their upbringing was how much self-control they have let's assume they're both very well self-controlled",
+        "sourceExcerptSha256": "9d465ea7349f00d66c65da582a2bdbe24cc56ccff3bc13c310770ee159939d1e",
+        "targetPacket": {
+          "id": "t07-caruso-causal-sourcehood",
+          "targetSpeaker": "Gregg Caruso",
+          "sourceSpan": {
+            "startMs": 2801040,
+            "endMs": 2817119
+          },
+          "sourceExcerpt": "responsible in the required sense is because they're not the appropriate source of their actions in the right sense that is that there for them to be the appropriate source the action can't be causally determined by factors beyond their control",
+          "sourceExcerptSha256": "70d208adfd94e9cea996b1b72838b575b7d21567e576764948b1352cb20dbfb7",
+          "claim": "Causal determination by factors beyond control prevents the sourcehood required for responsibility.",
+          "indispensableComponents": [
+            {
+              "id": "t07-c1-sourcehood-required",
+              "text": "Responsibility in the required sense demands that the agent be the appropriate source of action.",
+              "kind": "fact-premise",
+              "dependsOn": []
+            },
+            {
+              "id": "t07-c2-determination-defeats-sourcehood",
+              "text": "An action causally determined by factors beyond the agent's control lacks that appropriate sourcehood.",
+              "kind": "inference",
+              "dependsOn": [
+                "t07-c1-sourcehood-required"
+              ]
+            }
+          ],
+          "selectionRationale": "The span states the exact sourcehood inference Dennett immediately labels a causation-control confusion and challenges with missing control facts.",
+          "targetSide": "con",
+          "ownershipScope": "speaker-only",
+          "adoptionRecords": [],
+          "targetRelationToMove": "retired-explicit-reframe-fixture",
+          "interveningOpponentClaim": false,
+          "exceptionRationale": null
+        },
+        "burdenContext": {
+          "burdenPacket": {
+            "primaryRouteId": "con-skeptical-sourcehood-route",
+            "eligibleBridgeIds": [
+              "con-central-sourcehood",
+              "con-motion-no-basic-desert"
+            ],
+            "selectionRationale": "The act directly attacks the con route's central sourcehood inference and could thereby reach its motion-level denial of responsibility."
+          },
+          "route": {
+            "id": "con-skeptical-sourcehood-route",
+            "side": "con",
+            "description": "Show that luck and factors beyond the agent's control defeat the sourcehood needed for basic-desert responsibility while leaving forward-looking responses available.",
+            "successCriteria": "The route succeeds if agents are shown not to be appropriate sources for basic desert and safety, rehabilitation, or rule enforcement can replace retributive blame and punishment.",
+            "bridges": [
+              {
+                "id": "con-motion-no-basic-desert",
+                "tier": "motion",
+                "description": "Basic-desert moral responsibility and retributive blame or punishment are unwarranted, even if independently justified forward-looking responses remain."
+              },
+              {
+                "id": "con-central-sourcehood",
+                "tier": "central",
+                "description": "Who agents are and what they do result from luck or factors beyond their control, so they lack the appropriate sourcehood for basic desert."
+              },
+              {
+                "id": "con-subsidiary-alternatives",
+                "tier": "subsidiary",
+                "description": "Reasons-responsive distinctions, sanctions, safety restrictions, rehabilitation, and rule enforcement can be retained on non-desert forward-looking grounds."
+              },
+              {
+                "id": "con-subsidiary-indeterminacy",
+                "tier": "subsidiary",
+                "description": "Adding physical indeterminacy does not let the agent settle which outcome occurs and therefore cannot rescue basic-desert control."
+              }
+            ]
+          }
+        },
+        "fixtureOrigin": {
+          "type": "v2.8.2-retired-development-case",
+          "sourceCaseId": "v282-dev-185-07",
+          "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+          "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+        },
+        "sourceMetadata": {
+          "timestamp": "00:46:54",
+          "sourceSpan": {
+            "startMs": 2814839,
+            "endMs": 2846640
+          },
+          "speakerAttributionConfidence": "high",
+          "audioChecked": false,
+          "audioVerification": null
+        }
+      },
+      "fields": [
+        {
+          "fieldPath": "defect",
+          "question": "What eligible defect, if any, is expressly cued in the response? Choose the first clearly expressed defect; default none."
+        },
+        {
+          "fieldPath": "consequence",
+          "question": "Does a separate exact clause state what fails, does not follow, is not established, cannot carry the claimed weight, or must be limited because of the defect? Default false."
+        }
+      ]
+    },
+    {
+      "caseId": "v291-dev-185-12",
+      "moveId": "m12-con-q4-responsive-rules-versus-reactive-attitudes",
+      "lockedCase": {
+        "caseId": "v291-dev-185-12",
+        "lane": "dyadic",
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "debateNumber": "185",
+        "moveId": "m12-con-q4-responsive-rules-versus-reactive-attitudes",
+        "side": "con",
+        "speaker": "Gregg Caruso",
+        "sourceExcerpt": "the question i you know that i still think is the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified because those are the ones that are philosophically significant right do i want to attach to my parenting when i when i punish my daughter by taking her cell phone away do i want or am i justified in exhibiting resentment or indignation or moral anger",
+        "sourceExcerptSha256": "a0ac9a82a5ba2a029225b9264b99a2e873f7bbcbb52b1c586c07dad0a2957125",
+        "targetPacket": {
+          "id": "t12-dennett-agreed-penalties-bedrock",
+          "targetSpeaker": "Daniel Dennett",
+          "sourceSpan": {
+            "startMs": 7049119,
+            "endMs": 7082800
+          },
+          "sourceExcerpt": "the penalties that you agree to live by if you want to be a member you agree if you if you violate these principles you are to blame and you will be punished and this is bedrock it is a it is a it is the cornerstone of a free and secure society and it has nothing to do again with either luck or determinism",
+          "sourceExcerptSha256": "e2f3120e7fb72f9195d711ebe53c89ff34c34052657a30c58acd97843f9424ba",
+          "claim": "Agreed blame and punishment for rule violations are a determination-independent cornerstone of a secure society.",
+          "indispensableComponents": [
+            {
+              "id": "t12-c1-agreed-penalties",
+              "text": "Membership entails agreement to blame and punishment when the governing principles are violated.",
+              "kind": "fact-premise",
+              "dependsOn": []
+            },
+            {
+              "id": "t12-c2-social-cornerstone",
+              "text": "Those penalties are a bedrock condition of free and secure society regardless of luck or determinism.",
+              "kind": "conclusion",
+              "dependsOn": [
+                "t12-c1-agreed-penalties"
+              ]
+            }
+          ],
+          "selectionRationale": "This prior pro span joins rule enforcement to blame and punishment; Caruso responds by separating justified practices from justified reactive attitudes.",
+          "targetSide": "pro",
+          "ownershipScope": "speaker-only",
+          "adoptionRecords": [],
+          "targetRelationToMove": "retired-explicit-reframe-fixture",
+          "interveningOpponentClaim": false,
+          "exceptionRationale": null
+        },
+        "burdenContext": {
+          "burdenPacket": {
+            "primaryRouteId": "pro-compatibilist-control-route",
+            "eligibleBridgeIds": [
+              "pro-subsidiary-institutions",
+              "pro-motion-responsibility"
+            ],
+            "selectionRationale": "The response attacks the pro move from socially useful rules and sanctions to the justification of resentment, indignation, or moral anger."
+          },
+          "route": {
+            "id": "pro-compatibilist-control-route",
+            "side": "pro",
+            "description": "Establish that reasons-responsive self-control, rather than causal independence, supplies free will worth wanting and warrants responsibility practices.",
+            "successCriteria": "The route succeeds if adequate reasons-responsive self-control is shown compatible with causal determination and is connected to justified everyday responsibility, blame, or punishment.",
+            "bridges": [
+              {
+                "id": "pro-motion-responsibility",
+                "tier": "motion",
+                "description": "Agents with adequate self-control can justifiably bear moral responsibility and proportionate blame or punishment despite determination or luck."
+              },
+              {
+                "id": "pro-central-control",
+                "tier": "central",
+                "description": "Reasons-responsive self-maintaining control and moral competence are real capacities that causal determination alone does not remove."
+              },
+              {
+                "id": "pro-subsidiary-institutions",
+                "tier": "subsidiary",
+                "description": "Public non-draconian rules and sanctions make responsibility practices socially functional while excusing agents whose impairments defeat control."
+              },
+              {
+                "id": "pro-subsidiary-randomness",
+                "tier": "subsidiary",
+                "description": "Practical agency needs neither libertarian sourcehood nor quantum randomness, because useful unpredictability and control are available under determination."
+              }
+            ]
+          }
+        },
+        "fixtureOrigin": {
+          "type": "v2.8.2-retired-development-case",
+          "sourceCaseId": "v282-dev-185-12",
+          "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+          "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+        },
+        "sourceMetadata": {
+          "timestamp": "02:01:08",
+          "sourceSpan": {
+            "startMs": 7268480,
+            "endMs": 7299199
+          },
+          "speakerAttributionConfidence": "high",
+          "audioChecked": false,
+          "audioVerification": null
+        }
+      },
+      "fields": [
+        {
+          "fieldPath": "defect",
+          "question": "What eligible defect, if any, is expressly cued in the response? Choose the first clearly expressed defect; default none."
+        },
+        {
+          "fieldPath": "consequence",
+          "question": "Does a separate exact clause state what fails, does not follow, is not established, cannot carry the claimed weight, or must be limited because of the defect? Default false."
+        }
+      ]
+    },
+    {
+      "caseId": "v291-dev-185-08",
+      "moveId": "m08-con-q2-responsive-control-insufficient",
+      "lockedCase": {
+        "caseId": "v291-dev-185-08",
+        "lane": "dyadic",
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "debateNumber": "185",
+        "moveId": "m08-con-q2-responsive-control-insufficient",
+        "side": "con",
+        "speaker": "Gregg Caruso",
+        "sourceExcerpt": "all the kind of compatibilist distinctions that have been made over the last 20 to 50 years um the question is not the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating um and i do think those those those distinctions matter they matter in all kinds of important ways but they matter for different reasons",
+        "sourceExcerptSha256": "4fde5bc71fdc6ecf18a1caa405df94a68fc9e86930ad35d9dae9fc2bf48c8cc9",
+        "targetPacket": {
+          "id": "t08-dennett-reasons-responsive-otherwise",
+          "targetSpeaker": "Daniel Dennett",
+          "sourceSpan": {
+            "startMs": 2994640,
+            "endMs": 3040640
+          },
+          "sourceExcerpt": "i mean i i just say this i think could have done otherwise where if you've got the degrees of freedom and if you've got between self-control we can say you could have done otherwise and what that means is you weren't tied up you weren't damaged you weren't deliberately misinformed about the case you you acted on the basis of reasons you basically are a well-functioning individual",
+          "sourceExcerptSha256": "fe4f19323d04982681669921e9d8a7692c6e9a0534a2799bc6a35e6f23fd3ec5",
+          "claim": "Relevant alternative ability consists in self-control, absence of disabling interference, and action for reasons.",
+          "indispensableComponents": [
+            {
+              "id": "t08-c1-degrees-control",
+              "text": "Degrees of freedom and self-control support the relevant sense in which an agent could have done otherwise."
+            },
+            {
+              "id": "t08-c2-well-functioning-reasons",
+              "text": "A well-functioning agent is not tied up, damaged, or misinformed and acts on the basis of reasons."
+            }
+          ],
+          "selectionRationale": "This prior Dennett span supplies the reasons-responsive compatibilist distinctions whose relevance Caruso accepts while disputing their desert-grounding sufficiency."
+        },
+        "burdenContext": {
+          "burdenPacket": {
+            "primaryRouteId": "pro-compatibilist-control-route",
+            "eligibleBridgeIds": [
+              "pro-central-control",
+              "pro-motion-responsibility"
+            ],
+            "selectionRationale": "The act attacks the pro route's bridge from accepted compatibilist control distinctions to desert-based responsibility practices."
+          },
+          "route": {
+            "id": "pro-compatibilist-control-route",
+            "side": "pro",
+            "description": "Establish that reasons-responsive self-control, rather than causal independence, supplies free will worth wanting and warrants responsibility practices.",
+            "successCriteria": "The route succeeds if adequate reasons-responsive self-control is shown compatible with causal determination and is connected to justified everyday responsibility, blame, or punishment.",
+            "bridges": [
+              {
+                "id": "pro-motion-responsibility",
+                "tier": "motion",
+                "description": "Agents with adequate self-control can justifiably bear moral responsibility and proportionate blame or punishment despite determination or luck."
+              },
+              {
+                "id": "pro-central-control",
+                "tier": "central",
+                "description": "Reasons-responsive self-maintaining control and moral competence are real capacities that causal determination alone does not remove."
+              },
+              {
+                "id": "pro-subsidiary-institutions",
+                "tier": "subsidiary",
+                "description": "Public non-draconian rules and sanctions make responsibility practices socially functional while excusing agents whose impairments defeat control."
+              },
+              {
+                "id": "pro-subsidiary-randomness",
+                "tier": "subsidiary",
+                "description": "Practical agency needs neither libertarian sourcehood nor quantum randomness, because useful unpredictability and control are available under determination."
+              }
+            ]
+          }
+        },
+        "fixtureOrigin": {
+          "type": "v2.5-retired-explicit-reframe",
+          "sourcePath": "docs/calibration/v2.5/held-out-gate/inventories/dennett-caruso-free-will-responsibility-2021.json",
+          "sourceSha256": "a6a3a662e5cd857d70403d582dc532ab23252e33323a7436e32f895ac34fc578",
+          "sourceMoveId": "m08-con-q2-responsive-control-insufficient"
+        },
+        "sourceMetadata": {
+          "timestamp": "00:52:40",
+          "sourceSpan": {
+            "startMs": 3160720,
+            "endMs": 3181920
+          },
+          "speakerAttributionConfidence": "high",
+          "audioChecked": false,
+          "audioVerification": null
+        }
+      },
+      "fields": [
+        {
+          "fieldPath": "defect",
+          "question": "What eligible defect, if any, is expressly cued in the response? Choose the first clearly expressed defect; default none."
+        },
+        {
+          "fieldPath": "consequence",
+          "question": "Does a separate exact clause state what fails, does not follow, is not established, cannot carry the claimed weight, or must be limited because of the defect? Default false."
+        }
+      ]
+    }
+  ],
+  "exclusions": {
+    "rawPassValuesIncluded": false,
+    "rawPassRationalesIncluded": false,
+    "agreementStatusIncluded": false,
+    "goldIncluded": false,
+    "legacyMaterialIncluded": false,
+    "numericalScoresIncluded": false
+  }
+}

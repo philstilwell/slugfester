@@ -1,0 +1,1234 @@
+{
+  "schemaVersion": "3.1-final-verification-lock",
+  "workflowVersion": "Slugfester Focused AI Verification Workflow v3.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.1",
+  "model": "5.6 Sol",
+  "gateId": "v3.1-retired-three-debate-focused-verification-test",
+  "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+  "debateNumber": "154",
+  "lane": "multi-speaker",
+  "calibrationOnly": true,
+  "source": {
+    "manifestPath": "docs/calibration/v3.1/retired-three-debate-test/gate-manifest.json",
+    "manifestSha256": "0efb23429f5feca1f0e15d09ed52c46006486ed1b599766c722f5027adb629f4",
+    "inputPath": "docs/calibration/v3.1/retired-three-debate-test/inputs/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+    "inputSha256": "aeefa3745721dde67b4bc0f812406f5ba61b77f842902b6c1ceff5cd2755811f",
+    "sourceAuditPath": "docs/calibration/v3.1/retired-three-debate-test/source-audit/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+    "sourceAuditSha256": "1e07f4cbfaf8ef41468370b6367dc9234266a53febf5380401a860530824febe",
+    "passAPath": "docs/calibration/v3.1/retired-three-debate-test/pass-a/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+    "passASha256": "a667181874e96a518fbcdf845fa6b22d2bc9e799dde433e123d9aad1f7907037",
+    "passBPath": "docs/calibration/v3.1/retired-three-debate-test/pass-b/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+    "passBSha256": "688447a6a3af81c59e55a42f6e827d924b37325c7de3c2899d30e0fdae94f44c",
+    "semanticDisagreementPath": "docs/calibration/v3.1/retired-three-debate-test/semantic-disagreements/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+    "semanticDisagreementSha256": "5549e61c00dfa7e010c49cb8b39e3e4fb820afb40bbd8d980ebe1e4025b3a27d",
+    "verifications": {
+      "targeting-burden": {
+        "path": "docs/calibration/v3.1/retired-three-debate-test/verifications/targeting-burden/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "sha256": "c4e4403a93bb037f034129cfa813701a5bb425018c7c2eb40b2c9a7d2ce1f63c"
+      },
+      "coverage": {
+        "path": "docs/calibration/v3.1/retired-three-debate-test/verifications/coverage/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "sha256": "9d7473a58906a9f86e4dcf4022e50be3efc3cf87c9ebc6ba2cdb9ffd91cab7c5"
+      },
+      "diagnostic": {
+        "path": "docs/calibration/v3.1/retired-three-debate-test/verifications/diagnostic/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "sha256": "b92b84771e62985336844d4913574a56e7113533b2f8f750568a9c5f9af894b9"
+      },
+      "reframe": {
+        "path": "docs/calibration/v3.1/retired-three-debate-test/verifications/reframe/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "sha256": "3d69e998ea74d041ab8f1ca3450bd93890344c63a5c7f0d64c3c5c3006bbc530"
+      }
+    }
+  },
+  "cases": [
+    {
+      "caseId": "v291-dev-154-08",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-08",
+      "annotation": {
+        "caseId": "v291-dev-154-08",
+        "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-08",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 3,
+          "endChar": 46,
+          "text": "there are people who do the opposite there."
+        },
+        "connectedExample": true,
+        "connectionEvidence": {
+          "startChar": 3,
+          "endChar": 46,
+          "text": "there are people who do the opposite there."
+        },
+        "scopeRelation": "same",
+        "scopeEvidence": null,
+        "burdenAdjustment": "retained",
+        "burdenEvidence": null,
+        "componentContacts": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1",
+            "contacted": false,
+            "evidence": null
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2",
+            "contacted": true,
+            "evidence": {
+              "startChar": 3,
+              "endChar": 46,
+              "text": "there are people who do the opposite there."
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "none",
+        "defectCue": null,
+        "consequenceStated": false,
+        "consequenceCue": null,
+        "malformedDemandExplained": false,
+        "malformedDemandCue": null,
+        "replacementDemandStated": false,
+        "replacementDemandCue": null,
+        "burdenContact": {
+          "tier": "central",
+          "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+          "evidence": {
+            "startChar": 3,
+            "endChar": 46,
+            "text": "there are people who do the opposite there."
+          }
+        },
+        "rationale": "All semantic primitives were independently rejudged by four source-only focused AI verifiers; exact evidence was then canonicalized mechanically from matching AI results."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "same",
+        "burdenAdjustment": "retained",
+        "coverage": "partial",
+        "diagnostic": false,
+        "reframe": false,
+        "burdenRelevance": "advances-central"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "same",
+          "burdenAdjustment": "retained",
+          "coverage": "partial",
+          "diagnostic": false,
+          "reframe": false,
+          "burdenRelevance": "advances-central"
+        },
+        "responsiveness": [
+          55,
+          79
+        ],
+        "relevanceBurden": [
+          75,
+          89
+        ]
+      },
+      "fieldSources": [
+        {
+          "fieldPath": "targetContact",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        },
+        {
+          "fieldPath": "connectedExample",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        },
+        {
+          "fieldPath": "scope",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenAdjustment",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "componentContact.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "componentContact.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "defect",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "consequence",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "malformedDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "replacementDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenContact",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        }
+      ]
+    },
+    {
+      "caseId": "v291-dev-154-09",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-09",
+      "annotation": {
+        "caseId": "v291-dev-154-09",
+        "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-09",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 76,
+          "endChar": 200,
+          "text": "I'm using dharma and that's what people will like put morality onto dharma, where I I don't think that that's actually fair."
+        },
+        "connectedExample": true,
+        "connectionEvidence": {
+          "startChar": 224,
+          "endChar": 312,
+          "text": "I have a duty just to give another example um and y'all can decide whether this is moral"
+        },
+        "scopeRelation": "same",
+        "scopeEvidence": null,
+        "burdenAdjustment": "retained",
+        "burdenEvidence": null,
+        "componentContacts": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c1",
+            "contacted": true,
+            "evidence": {
+              "startChar": 76,
+              "endChar": 200,
+              "text": "I'm using dharma and that's what people will like put morality onto dharma, where I I don't think that that's actually fair."
+            }
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c2",
+            "contacted": false,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "scope-mismatch",
+        "defectCue": {
+          "startChar": 27,
+          "endChar": 75,
+          "text": "I think there's a whole different set of axioms."
+        },
+        "consequenceStated": false,
+        "consequenceCue": null,
+        "malformedDemandExplained": true,
+        "malformedDemandCue": {
+          "startChar": 27,
+          "endChar": 200,
+          "text": "I think there's a whole different set of axioms. I'm using dharma and that's what people will like put morality onto dharma, where I I don't think that that's actually fair."
+        },
+        "replacementDemandStated": false,
+        "replacementDemandCue": null,
+        "burdenContact": {
+          "tier": "none",
+          "bridgeId": null,
+          "evidence": null
+        },
+        "rationale": "All semantic primitives were independently rejudged by four source-only focused AI verifiers; exact evidence was then canonicalized mechanically from matching AI results."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "same",
+        "burdenAdjustment": "retained",
+        "coverage": "partial",
+        "diagnostic": false,
+        "reframe": false,
+        "burdenRelevance": "topical-peripheral"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "same",
+          "burdenAdjustment": "retained",
+          "coverage": "partial",
+          "diagnostic": false,
+          "reframe": false,
+          "burdenRelevance": "topical-peripheral"
+        },
+        "responsiveness": [
+          55,
+          79
+        ],
+        "relevanceBurden": [
+          25,
+          54
+        ]
+      },
+      "fieldSources": [
+        {
+          "fieldPath": "targetContact",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "A"
+        },
+        {
+          "fieldPath": "connectedExample",
+          "rawAgreement": false,
+          "verifierAgreesA": true,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "scope",
+          "rawAgreement": false,
+          "verifierAgreesA": false,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenAdjustment",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "componentContact.koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c1",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        },
+        {
+          "fieldPath": "componentContact.koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c2",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "defect",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        },
+        {
+          "fieldPath": "consequence",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "malformedDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "replacementDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenContact",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        }
+      ]
+    },
+    {
+      "caseId": "v291-dev-154-11",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-11",
+      "annotation": {
+        "caseId": "v291-dev-154-11",
+        "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-11",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 3,
+          "endChar": 6,
+          "text": "Yes"
+        },
+        "connectedExample": true,
+        "connectionEvidence": {
+          "startChar": 84,
+          "endChar": 199,
+          "text": "So, for example, there are yamas and niyamas, which are things like truthfulness, ahimsa, which means non-violence."
+        },
+        "scopeRelation": "same",
+        "scopeEvidence": null,
+        "burdenAdjustment": "retained",
+        "burdenEvidence": null,
+        "componentContacts": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c1",
+            "contacted": true,
+            "evidence": {
+              "startChar": 12,
+              "endChar": 83,
+              "text": "I think there is an a layer of morality, but that is not within dharma."
+            }
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c2",
+            "contacted": false,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "scope-mismatch",
+        "defectCue": {
+          "startChar": 20,
+          "endChar": 83,
+          "text": "there is an a layer of morality, but that is not within dharma."
+        },
+        "consequenceStated": false,
+        "consequenceCue": null,
+        "malformedDemandExplained": false,
+        "malformedDemandCue": null,
+        "replacementDemandStated": false,
+        "replacementDemandCue": null,
+        "burdenContact": {
+          "tier": "none",
+          "bridgeId": null,
+          "evidence": null
+        },
+        "rationale": "All semantic primitives were independently rejudged by four source-only focused AI verifiers; exact evidence was then canonicalized mechanically from matching AI results."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "same",
+        "burdenAdjustment": "retained",
+        "coverage": "partial",
+        "diagnostic": false,
+        "reframe": false,
+        "burdenRelevance": "topical-peripheral"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "same",
+          "burdenAdjustment": "retained",
+          "coverage": "partial",
+          "diagnostic": false,
+          "reframe": false,
+          "burdenRelevance": "topical-peripheral"
+        },
+        "responsiveness": [
+          55,
+          79
+        ],
+        "relevanceBurden": [
+          25,
+          54
+        ]
+      },
+      "fieldSources": [
+        {
+          "fieldPath": "targetContact",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        },
+        {
+          "fieldPath": "connectedExample",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "A"
+        },
+        {
+          "fieldPath": "scope",
+          "rawAgreement": false,
+          "verifierAgreesA": false,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenAdjustment",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "componentContact.koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c1",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        },
+        {
+          "fieldPath": "componentContact.koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c2",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "defect",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "consequence",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "malformedDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "replacementDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenContact",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        }
+      ]
+    },
+    {
+      "caseId": "v291-dev-154-12",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-12",
+      "annotation": {
+        "caseId": "v291-dev-154-12",
+        "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-12",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 236,
+          "endChar": 348,
+          "text": "I think dharma often times gets like translated over to morality, but I think you lose something in translation."
+        },
+        "connectedExample": true,
+        "connectionEvidence": {
+          "startChar": 23,
+          "endChar": 231,
+          "text": "the Mahabharata is a great case of someone saying, \"I don't want to kill my cousins, and I don't want to kill my teacher.\" And Krishna saying, \"You absolutely should, because it is in accordance with dharma.\""
+        },
+        "scopeRelation": "same",
+        "scopeEvidence": null,
+        "burdenAdjustment": "retained",
+        "burdenEvidence": null,
+        "componentContacts": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c1",
+            "contacted": true,
+            "evidence": {
+              "startChar": 236,
+              "endChar": 348,
+              "text": "I think dharma often times gets like translated over to morality, but I think you lose something in translation."
+            }
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c2",
+            "contacted": false,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "scope-mismatch",
+        "defectCue": {
+          "startChar": 244,
+          "endChar": 348,
+          "text": "dharma often times gets like translated over to morality, but I think you lose something in translation."
+        },
+        "consequenceStated": true,
+        "consequenceCue": {
+          "startChar": 302,
+          "endChar": 348,
+          "text": "but I think you lose something in translation."
+        },
+        "malformedDemandExplained": true,
+        "malformedDemandCue": {
+          "startChar": 236,
+          "endChar": 348,
+          "text": "I think dharma often times gets like translated over to morality, but I think you lose something in translation."
+        },
+        "replacementDemandStated": true,
+        "replacementDemandCue": {
+          "startChar": 146,
+          "endChar": 231,
+          "text": "And Krishna saying, \"You absolutely should, because it is in accordance with dharma.\""
+        },
+        "burdenContact": {
+          "tier": "none",
+          "bridgeId": null,
+          "evidence": null
+        },
+        "rationale": "All semantic primitives were independently rejudged by four source-only focused AI verifiers; exact evidence was then canonicalized mechanically from matching AI results."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "same",
+        "burdenAdjustment": "retained",
+        "coverage": "partial",
+        "diagnostic": true,
+        "reframe": true,
+        "burdenRelevance": "topical-peripheral"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "same",
+          "burdenAdjustment": "retained",
+          "coverage": "partial",
+          "diagnostic": true,
+          "reframe": true,
+          "burdenRelevance": "topical-peripheral"
+        },
+        "responsiveness": [
+          80,
+          100
+        ],
+        "relevanceBurden": [
+          25,
+          54
+        ]
+      },
+      "fieldSources": [
+        {
+          "fieldPath": "targetContact",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "connectedExample",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "scope",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenAdjustment",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "componentContact.koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c1",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        },
+        {
+          "fieldPath": "componentContact.koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c2",
+          "rawAgreement": false,
+          "verifierAgreesA": true,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "defect",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "consequence",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "malformedDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "replacementDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenContact",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        }
+      ]
+    },
+    {
+      "caseId": "v291-dev-154-14",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-14",
+      "annotation": {
+        "caseId": "v291-dev-154-14",
+        "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-14",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 99,
+          "endChar": 221,
+          "text": "You don't have to have in a certain sense deterministic element in your in your soul that forces you to act a certain way."
+        },
+        "connectedExample": true,
+        "connectionEvidence": {
+          "startChar": 222,
+          "endChar": 331,
+          "text": "Why did Adam and Eve even this case act the way she did? Because she was capable of initiating a free action."
+        },
+        "scopeRelation": "modality-shift",
+        "scopeEvidence": {
+          "startChar": 99,
+          "endChar": 221,
+          "text": "You don't have to have in a certain sense deterministic element in your in your soul that forces you to act a certain way."
+        },
+        "burdenAdjustment": "retained",
+        "burdenEvidence": null,
+        "componentContacts": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c1",
+            "contacted": false,
+            "evidence": null
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c2",
+            "contacted": true,
+            "evidence": {
+              "startChar": 279,
+              "endChar": 331,
+              "text": "Because she was capable of initiating a free action."
+            }
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c3",
+            "contacted": false,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "invalid-inference",
+        "defectCue": {
+          "startChar": 9,
+          "endChar": 91,
+          "text": "the nature of freedom in my understanding, my view, is that it can initiate things"
+        },
+        "consequenceStated": false,
+        "consequenceCue": null,
+        "malformedDemandExplained": true,
+        "malformedDemandCue": {
+          "startChar": 9,
+          "endChar": 221,
+          "text": "the nature of freedom in my understanding, my view, is that it can initiate things, okay? You don't have to have in a certain sense deterministic element in your in your soul that forces you to act a certain way."
+        },
+        "replacementDemandStated": false,
+        "replacementDemandCue": null,
+        "burdenContact": {
+          "tier": "none",
+          "bridgeId": null,
+          "evidence": null
+        },
+        "rationale": "All semantic primitives were independently rejudged by four source-only focused AI verifiers; exact evidence was then canonicalized mechanically from matching AI results."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "modality-shift",
+        "burdenAdjustment": "retained",
+        "coverage": "partial",
+        "diagnostic": false,
+        "reframe": false,
+        "burdenRelevance": "topical-peripheral"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "modality-shift",
+          "burdenAdjustment": "retained",
+          "coverage": "partial",
+          "diagnostic": false,
+          "reframe": false,
+          "burdenRelevance": "topical-peripheral"
+        },
+        "responsiveness": [
+          55,
+          79
+        ],
+        "relevanceBurden": [
+          25,
+          54
+        ]
+      },
+      "fieldSources": [
+        {
+          "fieldPath": "targetContact",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        },
+        {
+          "fieldPath": "connectedExample",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "scope",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenAdjustment",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "componentContact.koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c1",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "componentContact.koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c2",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "A"
+        },
+        {
+          "fieldPath": "componentContact.koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c3",
+          "rawAgreement": false,
+          "verifierAgreesA": false,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "defect",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "A"
+        },
+        {
+          "fieldPath": "consequence",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "malformedDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "replacementDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenContact",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        }
+      ]
+    },
+    {
+      "caseId": "v291-dev-154-15",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-15",
+      "annotation": {
+        "caseId": "v291-dev-154-15",
+        "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-15",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 26,
+          "endChar": 101,
+          "text": "the fall does not explain the proclivity to sin because Eve already had it."
+        },
+        "connectedExample": false,
+        "connectionEvidence": null,
+        "scopeRelation": "strengthened",
+        "scopeEvidence": {
+          "startChar": 26,
+          "endChar": 264,
+          "text": "the fall does not explain the proclivity to sin because Eve already had it. It does not explain the existence of evil because knowledge of that already existed before she committed the fall. It also doesn't explain the origin of suffering"
+        },
+        "burdenAdjustment": "retained",
+        "burdenEvidence": null,
+        "componentContacts": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c1",
+            "contacted": true,
+            "evidence": {
+              "startChar": 152,
+              "endChar": 216,
+              "text": "knowledge of that already existed before she committed the fall."
+            }
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c2",
+            "contacted": true,
+            "evidence": {
+              "startChar": 3,
+              "endChar": 101,
+              "text": "All that means is that the fall does not explain the proclivity to sin because Eve already had it."
+            }
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c3",
+            "contacted": true,
+            "evidence": {
+              "startChar": 3,
+              "endChar": 101,
+              "text": "All that means is that the fall does not explain the proclivity to sin because Eve already had it."
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "contradiction",
+        "defectCue": {
+          "startChar": 74,
+          "endChar": 101,
+          "text": "because Eve already had it."
+        },
+        "consequenceStated": true,
+        "consequenceCue": {
+          "startChar": 26,
+          "endChar": 73,
+          "text": "the fall does not explain the proclivity to sin"
+        },
+        "malformedDemandExplained": false,
+        "malformedDemandCue": null,
+        "replacementDemandStated": false,
+        "replacementDemandCue": null,
+        "burdenContact": {
+          "tier": "none",
+          "bridgeId": null,
+          "evidence": null
+        },
+        "rationale": "All semantic primitives were independently rejudged by four source-only focused AI verifiers; exact evidence was then canonicalized mechanically from matching AI results."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "strengthened",
+        "burdenAdjustment": "retained",
+        "coverage": "full",
+        "diagnostic": true,
+        "reframe": false,
+        "burdenRelevance": "topical-peripheral"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "strengthened",
+          "burdenAdjustment": "retained",
+          "coverage": "full",
+          "diagnostic": true,
+          "reframe": false,
+          "burdenRelevance": "topical-peripheral"
+        },
+        "responsiveness": [
+          80,
+          100
+        ],
+        "relevanceBurden": [
+          25,
+          54
+        ]
+      },
+      "fieldSources": [
+        {
+          "fieldPath": "targetContact",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "B"
+        },
+        {
+          "fieldPath": "connectedExample",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "scope",
+          "rawAgreement": false,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenAdjustment",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "componentContact.koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c1",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "A"
+        },
+        {
+          "fieldPath": "componentContact.koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c2",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "componentContact.koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c3",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "A"
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "defect",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "A"
+        },
+        {
+          "fieldPath": "consequence",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "malformedDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "replacementDemand",
+          "rawAgreement": true,
+          "verifierAgreesA": true,
+          "verifierAgreesB": true,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        },
+        {
+          "fieldPath": "burdenContact",
+          "rawAgreement": true,
+          "verifierAgreesA": false,
+          "verifierAgreesB": false,
+          "focusedSemanticAuthoritative": true,
+          "evidenceSource": "verifier"
+        }
+      ]
+    }
+  ],
+  "audit": {
+    "caseCount": 6,
+    "compoundFieldCount": 74,
+    "focusedJudgmentCount": 74,
+    "unresolvedFields": 0,
+    "semanticConflictResolutions": 6,
+    "sharedAgreementOverrides": 14,
+    "evidenceCanonicalizations": 18,
+    "allDerivedFieldsRecomputed": true,
+    "participantPerformanceScoresPresent": false
+  }
+}

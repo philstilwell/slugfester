@@ -1,0 +1,197 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v3.1-field-family-verification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "workflowVersion",
+    "rubricVersion",
+    "model",
+    "debateId",
+    "debateNumber",
+    "family",
+    "completedAt",
+    "isolation",
+    "source",
+    "judgments",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "3.1-field-family-verification",
+      "type": "string"
+    },
+    "workflowVersion": {
+      "const": "Slugfester Focused AI Verification Workflow v3.1",
+      "type": "string"
+    },
+    "rubricVersion": {
+      "const": "Slugfester Reassessment Rubric v3.1",
+      "type": "string"
+    },
+    "model": {
+      "const": "5.6 Sol",
+      "type": "string"
+    },
+    "debateId": {
+      "type": "string"
+    },
+    "debateNumber": {
+      "type": "string"
+    },
+    "family": {
+      "enum": [
+        "targeting-burden",
+        "coverage",
+        "diagnostic",
+        "reframe"
+      ],
+      "type": "string"
+    },
+    "completedAt": {
+      "type": "string"
+    },
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method",
+        "allowedInputs",
+        "goldUnavailable",
+        "rawPassesUnavailable",
+        "agreementStatusUnavailable",
+        "otherFamiliesUnavailable",
+        "legacyMaterialUnavailable",
+        "numericalScoresUnavailable",
+        "statement"
+      ],
+      "properties": {
+        "method": {
+          "const": "fresh-ephemeral-v3.1-field-family-verification",
+          "type": "string"
+        },
+        "allowedInputs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "goldUnavailable": {
+          "const": true,
+          "type": "boolean"
+        },
+        "rawPassesUnavailable": {
+          "const": true,
+          "type": "boolean"
+        },
+        "agreementStatusUnavailable": {
+          "const": true,
+          "type": "boolean"
+        },
+        "otherFamiliesUnavailable": {
+          "const": true,
+          "type": "boolean"
+        },
+        "legacyMaterialUnavailable": {
+          "const": true,
+          "type": "boolean"
+        },
+        "numericalScoresUnavailable": {
+          "const": true,
+          "type": "boolean"
+        },
+        "statement": {
+          "type": "string"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fieldPacketPath",
+        "fieldPacketSha256",
+        "workflowSha256",
+        "rubricSha256",
+        "manualSha256",
+        "schemaSha256"
+      ],
+      "properties": {
+        "fieldPacketPath": {
+          "const": "field-packet.json",
+          "type": "string"
+        },
+        "fieldPacketSha256": {
+          "type": "string"
+        },
+        "workflowSha256": {
+          "type": "string"
+        },
+        "rubricSha256": {
+          "type": "string"
+        },
+        "manualSha256": {
+          "type": "string"
+        },
+        "schemaSha256": {
+          "type": "string"
+        }
+      }
+    },
+    "judgments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "caseId",
+          "fieldPath",
+          "resolvedJson",
+          "rationale"
+        ],
+        "properties": {
+          "caseId": {
+            "type": "string"
+          },
+          "fieldPath": {
+            "type": "string"
+          },
+          "resolvedJson": {
+            "type": "string"
+          },
+          "rationale": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "judgmentCount",
+        "allFieldsJudgedOnce",
+        "unexpectedFieldsAdded",
+        "scoresPresent"
+      ],
+      "properties": {
+        "judgmentCount": {
+          "type": "integer"
+        },
+        "allFieldsJudgedOnce": {
+          "const": true,
+          "type": "boolean"
+        },
+        "unexpectedFieldsAdded": {
+          "const": 0,
+          "type": "number"
+        },
+        "scoresPresent": {
+          "const": false,
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}
