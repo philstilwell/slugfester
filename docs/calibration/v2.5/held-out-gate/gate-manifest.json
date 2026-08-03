@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "2.5-held-out-derived-annotation-gate",
+  "gateId": "v2.5-held-out-derived-annotation-gate",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.5",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.5",
+  "model": "5.6 Sol",
+  "calibrationOnly": true,
+  "preregistration": {
+    "lockedAt": "2026-08-03T03:07:32Z",
+    "sampleSelectedFrom": "production debate metadata only",
+    "transcriptsReviewedBeforeLock": false,
+    "excludedDevelopmentAndHeldOutDebates": [
+      "craig-oconnor-god-debate-2026",
+      "hitchens-dsouza-religion-problem-2010",
+      "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "goff-carroll-consciousness-fundamental-2023",
+      "harris-prager-religion-morality-public-reason-2014",
+      "jones-dillahunty-quantum-idealism-demonstrability-2026",
+      "oconnor-baker-hytch-argument-from-reason-2020",
+      "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "tour-cronin-origin-of-life-2020",
+      "craig-frazier-goff-folley-god-reality-2026",
+      "carroll-shermer-hutchinson-dsouza-science-religion-2012",
+      "licona-dillahunty-resurrection-evidence-2017",
+      "huemer-oppy-souls-personal-identity-2022"
+    ],
+    "developmentData": "The 24 v2.4 disputed primitive-equivalent fields and their adjudicated locks only; no v2.5 held-out debate may enter development.",
+    "thresholdChangeRule": "No threshold, sample member, derivation rule, or required field may change after a v2.5 held-out transcript or annotation result is viewed."
+  },
+  "sample": {
+    "debateCount": 3,
+    "movesPerDebate": 12,
+    "moveCount": 36,
+    "debates": [
+      {
+        "number": "184",
+        "debateId": "enoch-sampson-loeb-lutz-moral-realism-2024",
+        "videoId": "6Uw9szL-3MA",
+        "stratum": "four-speaker analytic moral realism",
+        "motion": "Is moral realism true: are there stance-independent moral facts or truths that survive the leading semantic, metaphysical, and epistemic objections?",
+        "sides": {
+          "pro": {"label": "Moral realism", "speakers": ["David Enoch", "Eric Sampson"]},
+          "con": {"label": "Moral anti-realism", "speakers": ["Don Loeb", "Matthew Lutz"]}
+        }
+      },
+      {
+        "number": "130",
+        "debateId": "licona-carrier-resurrection-history-2010",
+        "videoId": "0IpKHdVLZb4",
+        "stratum": "historical inference and prior probability",
+        "motion": "Did Jesus rise from the dead, and does the surviving historical evidence justify preferring resurrection to natural or legendary alternatives?",
+        "sides": {
+          "pro": {"label": "Resurrection hypothesis", "speakers": ["Mike Licona"]},
+          "con": {"label": "Natural and legendary alternatives", "speakers": ["Richard Carrier"]}
+        }
+      },
+      {
+        "number": "185",
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "videoId": "AxhA7S3q49o",
+        "stratum": "analytic free will and practical responsibility",
+        "motion": "Can human agents possess the kind of free will needed for moral responsibility, or do luck and causal determination undermine basic-desert blame and punishment?",
+        "sides": {
+          "pro": {"label": "Compatibilist free will and responsibility", "speakers": ["Daniel Dennett"]},
+          "con": {"label": "Free-will skepticism", "speakers": ["Gregg Caruso"]}
+        }
+      }
+    ]
+  },
+  "inventoryProtocol": {
+    "movesPerDebate": 12,
+    "constructiveMovesPerSide": 2,
+    "responsiveMovesTotal": 8,
+    "minimumMovesPerSide": 4,
+    "sourceExcerptWords": {"minimum": 30, "maximum": 90},
+    "targetExcerptWords": {"minimum": 15, "maximum": 90},
+    "singleSpeakerAtomicActRequired": true,
+    "highSpeakerConfidenceOrVerifiedAudioRequired": true,
+    "freshIndependentReviewRequired": true,
+    "thirdReviewTriggers": ["meaning", "sampling", "speaker-ownership", "burden-route-or-tier", "atomicity", "target-packet"]
+  },
+  "derivationRules": {
+    "coverage": "constructive=>not-applicable; responsive non-preserved=>substitution; preserved all=>full; preserved some=>partial; preserved none plus relevant contrary=>relevant-nonanswer; otherwise substitution",
+    "diagnostic": "defectType != none AND defectEvidence present AND targetImpactExplicit true AND impactEvidence present",
+    "reframe": "malformedDemandExplained true with evidence AND replacementDemandStated true with evidence",
+    "burdenRelation": "null route=>unadopted-or-irrelevant; no bridge contact=>topical-peripheral; otherwise highest contacted tier motion=>completes, central=>advances-central, subsidiary=>advances-sub-burden"
+  },
+  "annotationGates": {
+    "coverageExactAgreementMinimum": 0.85,
+    "coverageKappaMinimum": 0.75,
+    "diagnosticFlagExactAgreementMinimum": 0.9,
+    "reframeFlagExactAgreementMinimum": 0.9,
+    "mechanismPositiveCountMinimum": 3,
+    "burdenRelationExactAgreementMinimum": 0.8,
+    "burdenRelationKappaMinimum": 0.7,
+    "exactDerivedTupleAgreementMinimum": 0.7,
+    "componentContactMicroExactMinimum": 0.9,
+    "targetPreservationExactMinimum": 0.9,
+    "defectTypeExactMinimum": 0.85,
+    "targetImpactExplicitExactMinimum": 0.9,
+    "malformedDemandExplainedExactMinimum": 0.9,
+    "replacementDemandStatedExactMinimum": 0.9,
+    "contactedBridgeSetExactMinimum": 0.8
+  },
+  "hardGates": {
+    "moveCount": 36,
+    "inventoryAtomicityViolationsMaximum": 0,
+    "targetPacketViolationsMaximum": 0,
+    "burdenRouteViolationsMaximum": 0,
+    "sourceHashMismatchesMaximum": 0,
+    "evidenceOffsetErrorsMaximum": 0,
+    "derivationMismatchesMaximum": 0,
+    "unresolvedSpeakerAttributionsMaximum": 0,
+    "unresolvedAnnotationDisagreementsMaximum": 0,
+    "movesMissingFinalLockMaximum": 0,
+    "schemaVariantsMaximum": 1,
+    "prohibitedInputContaminationMaximum": 0
+  },
+  "readinessRule": {
+    "passedGate": "Authorizes only preregistration of a complete v2.5 three-debate numerical gate.",
+    "tenDebateGate": "Not authorized by this annotation-only gate.",
+    "corpusWide": "Not authorized."
+  },
+  "decision": {
+    "heldOutAnnotationGate": "pending",
+    "completeNumericalGate": "not-authorized",
+    "tenDebateGate": "not-authorized",
+    "corpusWide": "not-ready"
+  }
+}

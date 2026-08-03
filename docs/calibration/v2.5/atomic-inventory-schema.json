@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v2.5-atomic-inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "workflowVersion", "rubricVersion", "gateId", "debateId", "debateNumber", "videoId", "motion", "sides", "burdenRoutes", "source", "inventoryProtocol", "moves", "audit"],
+  "properties": {
+    "schemaVersion": {"const": "2.5-atomic-inventory"},
+    "workflowVersion": {"const": "Slugfester Reassessment Workflow v2.5"},
+    "rubricVersion": {"const": "Slugfester Reassessment Rubric v2.5"},
+    "gateId": {"const": "v2.5-held-out-derived-annotation-gate"},
+    "debateId": {"type": "string", "minLength": 1},
+    "debateNumber": {"type": "string", "minLength": 1},
+    "videoId": {"type": "string", "minLength": 1},
+    "motion": {"type": "string", "minLength": 20},
+    "sides": {"type": "object", "additionalProperties": false, "required": ["pro", "con"], "properties": {"pro": {"$ref": "#/$defs/side"}, "con": {"$ref": "#/$defs/side"}}},
+    "burdenRoutes": {"type": "array", "minItems": 2, "items": {"$ref": "#/$defs/route"}},
+    "source": {"$ref": "#/$defs/source"},
+    "inventoryProtocol": {"$ref": "#/$defs/protocol"},
+    "moves": {"type": "array", "minItems": 12, "maxItems": 12, "items": {"$ref": "#/$defs/move"}},
+    "audit": {"$ref": "#/$defs/audit"}
+  },
+  "$defs": {
+    "digest": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "span": {"type": "object", "additionalProperties": false, "required": ["startMs", "endMs"], "properties": {"startMs": {"type": "integer", "minimum": 0}, "endMs": {"type": "integer", "minimum": 1}}},
+    "side": {"type": "object", "additionalProperties": false, "required": ["label", "speakers"], "properties": {"label": {"type": "string", "minLength": 1}, "speakers": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}}},
+    "bridge": {"type": "object", "additionalProperties": false, "required": ["id", "tier", "description"], "properties": {"id": {"type": "string", "minLength": 1}, "tier": {"enum": ["motion", "central", "subsidiary"]}, "description": {"type": "string", "minLength": 20}}},
+    "route": {"type": "object", "additionalProperties": false, "required": ["id", "side", "description", "successCriteria", "bridges"], "properties": {"id": {"type": "string", "minLength": 1}, "side": {"enum": ["pro", "con"]}, "description": {"type": "string", "minLength": 20}, "successCriteria": {"type": "string", "minLength": 20}, "bridges": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/bridge"}}}},
+    "source": {"type": "object", "additionalProperties": false, "required": ["transcriptPath", "transcriptSha256", "eventsPath", "eventsSha256", "manifestPath", "manifestSha256", "limitations"], "properties": {"transcriptPath": {"type": "string", "minLength": 1}, "transcriptSha256": {"$ref": "#/$defs/digest"}, "eventsPath": {"type": "string", "minLength": 1}, "eventsSha256": {"$ref": "#/$defs/digest"}, "manifestPath": {"type": "string", "minLength": 1}, "manifestSha256": {"$ref": "#/$defs/digest"}, "limitations": {"type": "string", "minLength": 1}}},
+    "protocol": {"type": "object", "additionalProperties": false, "required": ["builtAt", "builderModel", "calibrationOnly", "legacyMaterialAccessed", "developmentExamplesAccessed", "singleSpeakerAtomicActs", "targetPacketsPrelocked", "burdenRoutesPrelocked", "selectionStatement"], "properties": {"builtAt": {"type": "string", "format": "date-time"}, "builderModel": {"const": "5.6 Sol"}, "calibrationOnly": {"const": true}, "legacyMaterialAccessed": {"const": false}, "developmentExamplesAccessed": {"const": false}, "singleSpeakerAtomicActs": {"const": true}, "targetPacketsPrelocked": {"const": true}, "burdenRoutesPrelocked": {"const": true}, "selectionStatement": {"type": "string", "minLength": 40}}},
+    "component": {"type": "object", "additionalProperties": false, "required": ["id", "text"], "properties": {"id": {"type": "string", "minLength": 1}, "text": {"type": "string", "minLength": 5}}},
+    "targetPacket": {"type": "object", "additionalProperties": false, "required": ["id", "targetSpeaker", "sourceSpan", "sourceExcerpt", "sourceExcerptSha256", "claim", "indispensableComponents", "selectionRationale"], "properties": {"id": {"type": "string", "minLength": 1}, "targetSpeaker": {"type": "string", "minLength": 1}, "sourceSpan": {"$ref": "#/$defs/span"}, "sourceExcerpt": {"type": "string", "minLength": 20}, "sourceExcerptSha256": {"$ref": "#/$defs/digest"}, "claim": {"type": "string", "minLength": 10}, "indispensableComponents": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/component"}}, "selectionRationale": {"type": "string", "minLength": 40}}},
+    "burdenPacket": {"type": "object", "additionalProperties": false, "required": ["primaryRouteId", "eligibleBridgeIds", "selectionRationale"], "properties": {"primaryRouteId": {"type": ["string", "null"]}, "eligibleBridgeIds": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}}, "selectionRationale": {"type": "string", "minLength": 40}}},
+    "audioVerification": {"type": ["object", "null"], "additionalProperties": false, "required": ["status", "path", "sha256", "resolvedSpeaker"], "properties": {"status": {"const": "verified"}, "path": {"type": "string", "minLength": 1}, "sha256": {"$ref": "#/$defs/digest"}, "resolvedSpeaker": {"type": "string", "minLength": 1}}},
+    "move": {"type": "object", "additionalProperties": false, "required": ["moveId", "side", "speaker", "timestamp", "sourceSpan", "sourceExcerpt", "sourceExcerptSha256", "quoteKind", "speakerAttributionConfidence", "audioChecked", "audioVerification", "interactionMode", "targetPacket", "burdenPacket", "selectionRationale"], "properties": {"moveId": {"type": "string", "minLength": 1}, "side": {"enum": ["pro", "con"]}, "speaker": {"type": "string", "minLength": 1}, "timestamp": {"type": "string", "minLength": 1}, "sourceSpan": {"$ref": "#/$defs/span"}, "sourceExcerpt": {"type": "string", "minLength": 30}, "sourceExcerptSha256": {"$ref": "#/$defs/digest"}, "quoteKind": {"enum": ["quote", "audio-verified-quote"]}, "speakerAttributionConfidence": {"enum": ["high", "medium", "low"]}, "audioChecked": {"type": "boolean"}, "audioVerification": {"$ref": "#/$defs/audioVerification"}, "interactionMode": {"enum": ["constructive", "responsive"]}, "targetPacket": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/targetPacket"}]}, "burdenPacket": {"$ref": "#/$defs/burdenPacket"}, "selectionRationale": {"type": "string", "minLength": 40}}},
+    "excludedCandidate": {"type": "object", "additionalProperties": false, "required": ["timestamp", "reason"], "properties": {"timestamp": {"type": "string", "minLength": 1}, "reason": {"type": "string", "minLength": 10}}},
+    "audit": {"type": "object", "additionalProperties": false, "required": ["moveCount", "proMoveCount", "conMoveCount", "constructiveMoveCount", "responsiveMoveCount", "atomicityViolations", "targetPacketViolations", "burdenRouteViolations", "unresolvedSpeakerAttributions", "excludedCandidates"], "properties": {"moveCount": {"const": 12}, "proMoveCount": {"type": "integer", "minimum": 4}, "conMoveCount": {"type": "integer", "minimum": 4}, "constructiveMoveCount": {"const": 4}, "responsiveMoveCount": {"const": 8}, "atomicityViolations": {"const": 0}, "targetPacketViolations": {"const": 0}, "burdenRouteViolations": {"const": 0}, "unresolvedSpeakerAttributions": {"const": 0}, "excludedCandidates": {"type": "array", "items": {"$ref": "#/$defs/excludedCandidate"}}}}
+  }
+}

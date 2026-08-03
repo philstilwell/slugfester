@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v2.5-derived-annotation-pass",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "workflowVersion", "rubricVersion", "gateId", "debateId", "debateNumber", "pass", "model", "calibrationOnly", "completedAt", "isolation", "source", "annotations", "audit"],
+  "properties": {
+    "schemaVersion": {"const": "2.5-derived-annotation-pass"},
+    "workflowVersion": {"const": "Slugfester Reassessment Workflow v2.5"},
+    "rubricVersion": {"const": "Slugfester Reassessment Rubric v2.5"},
+    "gateId": {"const": "v2.5-held-out-derived-annotation-gate"},
+    "debateId": {"type": "string", "minLength": 1},
+    "debateNumber": {"type": "string", "minLength": 1},
+    "pass": {"enum": ["A", "B"]},
+    "model": {"const": "5.6 Sol"},
+    "calibrationOnly": {"const": true},
+    "completedAt": {"type": "string", "format": "date-time"},
+    "isolation": {"$ref": "#/$defs/isolation"},
+    "source": {"$ref": "#/$defs/source"},
+    "annotations": {"type": "array", "minItems": 12, "maxItems": 12, "items": {"$ref": "#/$defs/annotation"}},
+    "audit": {"type": "object", "additionalProperties": false, "required": ["moveCount", "allInventoryLocksCopied", "evidenceOffsetErrors", "derivationMismatches", "scoreFieldsPresent", "allMovesAnnotatedOnce"], "properties": {"moveCount": {"const": 12}, "allInventoryLocksCopied": {"const": true}, "evidenceOffsetErrors": {"const": 0}, "derivationMismatches": {"const": 0}, "scoreFieldsPresent": {"const": false}, "allMovesAnnotatedOnce": {"const": true}}}
+  },
+  "$defs": {
+    "digest": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "evidence": {"type": ["object", "null"], "additionalProperties": false, "required": ["text", "startChar", "endChar"], "properties": {"text": {"type": "string", "minLength": 1}, "startChar": {"type": "integer", "minimum": 0}, "endChar": {"type": "integer", "minimum": 1}}},
+    "isolation": {"type": "object", "additionalProperties": false, "required": ["method", "allowedInputs", "prohibitedInputsConfirmed", "contaminationDetected", "statement"], "properties": {"method": {"const": "fresh-isolated-v2.5-derived-annotation-task"}, "allowedInputs": {"type": "array", "minItems": 10, "maxItems": 10, "uniqueItems": true, "items": {"type": "string"}}, "prohibitedInputsConfirmed": {"const": true}, "contaminationDetected": {"const": false}, "statement": {"type": "string", "minLength": 40}}},
+    "source": {"type": "object", "additionalProperties": false, "required": ["videoId", "inventoryPath", "inventorySha256", "transcriptSha256", "eventsSha256", "manifestSha256", "gateManifestSha256", "workflowSha256", "rubricSha256", "schemaSha256", "developmentManualSha256", "developmentExamplesSha256", "limitations"], "properties": {"videoId": {"type": "string", "minLength": 1}, "inventoryPath": {"type": "string", "minLength": 1}, "inventorySha256": {"$ref": "#/$defs/digest"}, "transcriptSha256": {"$ref": "#/$defs/digest"}, "eventsSha256": {"$ref": "#/$defs/digest"}, "manifestSha256": {"$ref": "#/$defs/digest"}, "gateManifestSha256": {"$ref": "#/$defs/digest"}, "workflowSha256": {"$ref": "#/$defs/digest"}, "rubricSha256": {"$ref": "#/$defs/digest"}, "schemaSha256": {"$ref": "#/$defs/digest"}, "developmentManualSha256": {"$ref": "#/$defs/digest"}, "developmentExamplesSha256": {"$ref": "#/$defs/digest"}, "limitations": {"type": "string", "minLength": 1}}},
+    "componentContact": {"type": "object", "additionalProperties": false, "required": ["componentId", "contact"], "properties": {"componentId": {"type": "string", "minLength": 1}, "contact": {"enum": ["addressed", "not-addressed"]}}},
+    "coverage": {"type": "object", "additionalProperties": false, "required": ["componentContacts", "targetPreserved", "relevantContraryMaterial", "derivedTargetCoverage"], "properties": {"componentContacts": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/componentContact"}}, "targetPreserved": {"type": ["boolean", "null"]}, "relevantContraryMaterial": {"type": ["boolean", "null"]}, "derivedTargetCoverage": {"enum": ["not-applicable", "full", "partial", "relevant-nonanswer", "substitution"]}}},
+    "diagnostic": {"type": "object", "additionalProperties": false, "required": ["defectType", "defectEvidence", "targetImpactExplicit", "targetImpactEvidence", "derivedDiagnostic"], "properties": {"defectType": {"enum": ["none", "contradiction", "missing-premise", "ambiguity", "invalid-inference", "unsupported-comparison", "other"]}, "defectEvidence": {"$ref": "#/$defs/evidence"}, "targetImpactExplicit": {"type": "boolean"}, "targetImpactEvidence": {"$ref": "#/$defs/evidence"}, "derivedDiagnostic": {"type": "boolean"}}},
+    "reframe": {"type": "object", "additionalProperties": false, "required": ["malformedDemandExplained", "malformedDemandEvidence", "replacementDemandStated", "replacementDemandEvidence", "derivedReframe"], "properties": {"malformedDemandExplained": {"type": "boolean"}, "malformedDemandEvidence": {"$ref": "#/$defs/evidence"}, "replacementDemandStated": {"type": "boolean"}, "replacementDemandEvidence": {"$ref": "#/$defs/evidence"}, "derivedReframe": {"type": "boolean"}}},
+    "bridgeContact": {"type": "object", "additionalProperties": false, "required": ["bridgeId", "contactMode"], "properties": {"bridgeId": {"type": "string", "minLength": 1}, "contactMode": {"enum": ["supports", "attacks"]}}},
+    "burden": {"type": "object", "additionalProperties": false, "required": ["contactedBridges", "derivedBurdenRelation"], "properties": {"contactedBridges": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/bridgeContact"}}, "derivedBurdenRelation": {"enum": ["completes", "advances-central", "advances-sub-burden", "topical-peripheral", "unadopted-or-irrelevant"]}}},
+    "annotation": {"type": "object", "additionalProperties": false, "required": ["moveId", "interactionMode", "targetPacketId", "primaryBurdenRouteId", "coveragePrimitives", "diagnosticPrimitives", "reframePrimitives", "burdenPrimitives", "coverageRationale", "mechanismRationale", "burdenRationale", "confidence"], "properties": {"moveId": {"type": "string", "minLength": 1}, "interactionMode": {"enum": ["constructive", "responsive"]}, "targetPacketId": {"type": ["string", "null"]}, "primaryBurdenRouteId": {"type": ["string", "null"]}, "coveragePrimitives": {"$ref": "#/$defs/coverage"}, "diagnosticPrimitives": {"$ref": "#/$defs/diagnostic"}, "reframePrimitives": {"$ref": "#/$defs/reframe"}, "burdenPrimitives": {"$ref": "#/$defs/burden"}, "coverageRationale": {"type": "string", "minLength": 40}, "mechanismRationale": {"type": "string", "minLength": 40}, "burdenRationale": {"type": "string", "minLength": 40}, "confidence": {"enum": ["high", "medium", "low"]}}}
+  }
+}
