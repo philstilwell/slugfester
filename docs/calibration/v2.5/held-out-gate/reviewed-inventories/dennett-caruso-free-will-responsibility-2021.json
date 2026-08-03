@@ -1,0 +1,620 @@
+{
+  "schemaVersion": "2.5-atomic-inventory",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.5",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.5",
+  "gateId": "v2.5-held-out-derived-annotation-gate",
+  "debateId": "dennett-caruso-free-will-responsibility-2021",
+  "debateNumber": "185",
+  "videoId": "AxhA7S3q49o",
+  "motion": "Can human agents possess the kind of free will needed for moral responsibility, or do luck and causal determination undermine basic-desert blame and punishment?",
+  "sides": {
+    "pro": {
+      "label": "Compatibilist free will and responsibility",
+      "speakers": [
+        "Daniel Dennett"
+      ]
+    },
+    "con": {
+      "label": "Free-will skepticism",
+      "speakers": [
+        "Gregg Caruso"
+      ]
+    }
+  },
+  "burdenRoutes": [
+    {
+      "id": "pro-compatibilist-control-route",
+      "side": "pro",
+      "description": "Establish that reasons-responsive self-control, rather than causal independence, supplies free will worth wanting and warrants responsibility practices.",
+      "successCriteria": "The route succeeds if adequate reasons-responsive self-control is shown compatible with causal determination and is connected to justified everyday responsibility, blame, or punishment.",
+      "bridges": [
+        {
+          "id": "pro-motion-responsibility",
+          "tier": "motion",
+          "description": "Agents with adequate self-control can justifiably bear moral responsibility and proportionate blame or punishment despite determination or luck."
+        },
+        {
+          "id": "pro-central-control",
+          "tier": "central",
+          "description": "Reasons-responsive self-maintaining control and moral competence are real capacities that causal determination alone does not remove."
+        },
+        {
+          "id": "pro-subsidiary-institutions",
+          "tier": "subsidiary",
+          "description": "Public non-draconian rules and sanctions make responsibility practices socially functional while excusing agents whose impairments defeat control."
+        },
+        {
+          "id": "pro-subsidiary-randomness",
+          "tier": "subsidiary",
+          "description": "Practical agency needs neither libertarian sourcehood nor quantum randomness, because useful unpredictability and control are available under determination."
+        }
+      ]
+    },
+    {
+      "id": "con-skeptical-sourcehood-route",
+      "side": "con",
+      "description": "Show that luck and factors beyond the agent's control defeat the sourcehood needed for basic-desert responsibility while leaving forward-looking responses available.",
+      "successCriteria": "The route succeeds if agents are shown not to be appropriate sources for basic desert and safety, rehabilitation, or rule enforcement can replace retributive blame and punishment.",
+      "bridges": [
+        {
+          "id": "con-motion-no-basic-desert",
+          "tier": "motion",
+          "description": "Basic-desert moral responsibility and retributive blame or punishment are unwarranted, even if independently justified forward-looking responses remain."
+        },
+        {
+          "id": "con-central-sourcehood",
+          "tier": "central",
+          "description": "Who agents are and what they do result from luck or factors beyond their control, so they lack the appropriate sourcehood for basic desert."
+        },
+        {
+          "id": "con-subsidiary-alternatives",
+          "tier": "subsidiary",
+          "description": "Reasons-responsive distinctions, sanctions, safety restrictions, rehabilitation, and rule enforcement can be retained on non-desert forward-looking grounds."
+        },
+        {
+          "id": "con-subsidiary-indeterminacy",
+          "tier": "subsidiary",
+          "description": "Adding physical indeterminacy does not let the agent settle which outcome occurs and therefore cannot rescue basic-desert control."
+        }
+      ]
+    }
+  ],
+  "source": {
+    "transcriptPath": ".assessment-cache/captions/AxhA7S3q49o/transcript.txt",
+    "transcriptSha256": "bcfc11bc3e5a181d72c0cd073acba09d43e1bd6fbb6803ac31f18be2d539e98b",
+    "eventsPath": ".assessment-cache/captions/AxhA7S3q49o/events.json",
+    "eventsSha256": "b144776e56915556eb6a0aa88183eae51d2bf06b4a8dd18cf3d79dad2cdf3a7e",
+    "manifestPath": ".assessment-cache/captions/AxhA7S3q49o/manifest.json",
+    "manifestSha256": "566c51d307d76a5b220d3431c172131d43f19a3f44c4df41049b13f48a3ab80a",
+    "limitations": "The source is overlapping auto-generated English ASR without diarization. Only spans with explicit named handoffs, self-identification, or uninterrupted locally identifiable turns were retained at high confidence; no local audio verification was supplied, and several medium-confidence overlaps were excluded and logged."
+  },
+  "inventoryProtocol": {
+    "builtAt": "2026-08-03T03:22:30Z",
+    "builderModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "singleSpeakerAtomicActs": true,
+    "targetPacketsPrelocked": true,
+    "burdenRoutesPrelocked": true,
+    "selectionStatement": "Selected the first two load-bearing constructives per side, then two responsive acts in each fixed quarter of 0-7,567,000 ms: Q1 [0,1,891,750), Q2 [1,891,750,3,783,500), Q3 [3,783,500,5,675,250), and Q4 [5,675,250,7,567,000]; only high-confidence single-speaker spans were retained."
+  },
+  "moves": [
+    {
+      "moveId": "m01-pro-constructive-libertarian-incoherence",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "timestamp": "00:11:22",
+      "sourceSpan": {
+        "startMs": 682399,
+        "endMs": 712320
+      },
+      "sourceExcerpt": "i think i think libertarianism is a great case this is there's nothing good to be said about libertarianism nobody's ever offered a coherent model of a libertarian free will and it just flies in the face of everything that we've learned about uh physics and biology and the way people are put together it's it's a it's an embarrassment",
+      "sourceExcerptSha256": "59141912b7f89bd13e94171a8f88e633557c50a99848a51682f52d4acbcf8fb6",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "constructive",
+      "targetPacket": null,
+      "burdenPacket": {
+        "primaryRouteId": "pro-compatibilist-control-route",
+        "eligibleBridgeIds": [
+          "pro-subsidiary-randomness"
+        ],
+        "selectionRationale": "This constructive rejects libertarian causal independence as incoherent and scientifically unsupported, so it bears on the subsidiary anti-libertarian bridge rather than the central reasons-responsive-control bridge."
+      },
+      "selectionRationale": "This is Dennett's first load-bearing constructive on the disputed kind of freedom, isolated before the moderator's following clarification."
+    },
+    {
+      "moveId": "m02-pro-constructive-randomness-control",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "timestamp": "00:12:55",
+      "sourceSpan": {
+        "startMs": 775760,
+        "endMs": 809519
+      },
+      "sourceExcerpt": "but that's not the point flips are a great example of a random phenomenon except they're not quantum random and they don't have to be so quantum physics doesn't get you anything that you can't get with coin flips so you've already got pointless unproblematic they're just as determined as dice throws and just as uncontrollable the issue is control",
+      "sourceExcerptSha256": "e7f2823d757803737cf4a5a0872975a0ec93dfbaa399cb864cb31f8ce1842fe7",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "constructive",
+      "targetPacket": null,
+      "burdenPacket": {
+        "primaryRouteId": "pro-compatibilist-control-route",
+        "eligibleBridgeIds": [
+          "pro-central-control",
+          "pro-subsidiary-randomness"
+        ],
+        "selectionRationale": "The act makes control, rather than quantum indeterminacy, the operative bridge for a compatibilist account of agency."
+      },
+      "selectionRationale": "This is Dennett's second load-bearing constructive, presenting the control-versus-randomness distinction as a separate atomic claim."
+    },
+    {
+      "moveId": "m03-con-constructive-indeterminacy-control-gap",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "timestamp": "00:14:04",
+      "sourceSpan": {
+        "startMs": 844000,
+        "endMs": 868240
+      },
+      "sourceExcerpt": "the kind that just introduces indeterminacy at the level of physical events i think for me the real problem there is um that the agent um lacks the ability to settle which outcome ultimately occurs that is even if you place the indeterminacy at a very philosophically strategic moment in deliberation",
+      "sourceExcerptSha256": "8017c93891ee71a4ff8b60e55075bddd8ba054bf9aeed9ec5ffa07e3d6e02e21",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "constructive",
+      "targetPacket": null,
+      "burdenPacket": {
+        "primaryRouteId": "con-skeptical-sourcehood-route",
+        "eligibleBridgeIds": [
+          "con-central-sourcehood",
+          "con-subsidiary-indeterminacy"
+        ],
+        "selectionRationale": "This constructive states why physical indeterminacy fails to supply the outcome-settling agency needed by the skeptical route."
+      },
+      "selectionRationale": "This is Caruso's first load-bearing constructive, isolating the failure of indeterminacy to confer agent-level control over outcomes."
+    },
+    {
+      "moveId": "m04-con-constructive-basic-desert-thesis",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "timestamp": "00:17:56",
+      "sourceSpan": {
+        "startMs": 1076000,
+        "endMs": 1097440
+      },
+      "sourceExcerpt": "so i'm a free will skeptic dan's a compatibilist and so my free will skepticism i define as uh the thesis that who we are and what we do is sort of ultimately the result of factors beyond our control and because of that we're never morally responsible in a very particular and pervasive sense which i call the basic dessert sense",
+      "sourceExcerptSha256": "74da12a7b3d44d322fc9ce52aafd76f6d3489057abc1a94208c7c03c648caecf",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "constructive",
+      "targetPacket": null,
+      "burdenPacket": {
+        "primaryRouteId": "con-skeptical-sourcehood-route",
+        "eligibleBridgeIds": [
+          "con-central-sourcehood",
+          "con-motion-no-basic-desert"
+        ],
+        "selectionRationale": "The act explicitly states both the beyond-control central bridge and the no-basic-desert motion-level conclusion."
+      },
+      "selectionRationale": "This is Caruso's second load-bearing constructive and his explicit self-identification and compact statement of the skeptical thesis."
+    },
+    {
+      "moveId": "m05-pro-q1-responsive-free-will-worth-wanting",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "timestamp": "00:23:00",
+      "sourceSpan": {
+        "startMs": 1380320,
+        "endMs": 1417600
+      },
+      "sourceExcerpt": "and it matters for the reasons that greg sort of started out with namely we want to know about responsibility and whether whether we deserve blame and praise and so forth and as long as you stick to that as long as you stick to the fact that that's the kind of free will that matters then first of all libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you",
+      "sourceExcerptSha256": "8a9b511114341c053698823343b61c3a64efb9266d6ca61654852ead040c7306",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "t05-caruso-beyond-control-basic-desert",
+        "targetSpeaker": "Gregg Caruso",
+        "sourceSpan": {
+          "startMs": 1076000,
+          "endMs": 1097440
+        },
+        "sourceExcerpt": "so i'm a free will skeptic dan's a compatibilist and so my free will skepticism i define as uh the thesis that who we are and what we do is sort of ultimately the result of factors beyond our control and because of that we're never morally responsible in a very particular and pervasive sense which i call the basic dessert sense",
+        "sourceExcerptSha256": "74da12a7b3d44d322fc9ce52aafd76f6d3489057abc1a94208c7c03c648caecf",
+        "claim": "Factors beyond agents' control eliminate moral responsibility in the basic-desert sense.",
+        "indispensableComponents": [
+          {
+            "id": "t05-c1-beyond-control",
+            "text": "Who agents are and what they do ultimately result from factors beyond their control."
+          },
+          {
+            "id": "t05-c2-no-basic-desert",
+            "text": "That beyond-control condition entails that agents are never morally responsible in the basic-desert sense."
+          }
+        ],
+        "selectionRationale": "This exact prior span contains the skeptical premise and its basic-desert conclusion that Dennett's response distinguishes from worthwhile responsibility."
+      },
+      "burdenPacket": {
+        "primaryRouteId": "con-skeptical-sourcehood-route",
+        "eligibleBridgeIds": [
+          "con-central-sourcehood",
+          "con-motion-no-basic-desert"
+        ],
+        "selectionRationale": "The response primarily contests the skeptical route by separating responsibility-conferring freedom from libertarian freedom."
+      },
+      "selectionRationale": "This Q1 act is the first clear pro response to Caruso's stated thesis and remains one uninterrupted Dennett turn after a named handoff."
+    },
+    {
+      "moveId": "m06-con-q1-responsive-responsibility-narrowing",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "timestamp": "00:30:11",
+      "sourceSpan": {
+        "startMs": 1811120,
+        "endMs": 1844159
+      },
+      "sourceExcerpt": "my free will skepticism um and i would say it's true of uh dirk pierre booms and neil levees as well um we don't deny all forms of responsibility we are very particular in that the kind of more responsibility we're denying is what we call basic desert law responsibility i.e the kind of responsibility that would make one truly deserving of praise and blame and punishment and reward um now i think in a purely backward looking sense but we come back to that",
+      "sourceExcerptSha256": "da939ceb367ea49b7d3315aa357e3269bfded4038895d2a9f6b117b8a009dadf",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "t06-dennett-control-responsibility-distinction",
+        "targetSpeaker": "Daniel Dennett",
+        "sourceSpan": {
+          "startMs": 1427520,
+          "endMs": 1474320
+        },
+        "sourceExcerpt": "look around us we see people who manifestly do not have control of themselves they're they have mental disorders they've got brain damage they in one way or another maybe they had terrible childhoods that have left them really in a bad way they don't have free will we have a nice clear distinction between those people and the people who are in in charge of themselves who are in control who can take responsibility what we really want is for people to take responsibility now",
+        "sourceExcerptSha256": "28c5c786c98d55651ef88795821f6c546618c566d201d58051669525ac3584c2",
+        "claim": "Control distinguishes impaired agents without free will from agents able to take responsibility.",
+        "indispensableComponents": [
+          {
+            "id": "t06-c1-impaired-lack-control",
+            "text": "Mental disorder, brain damage, or a damaging upbringing can leave an agent without self-control or free will."
+          },
+          {
+            "id": "t06-c2-controlled-take-responsibility",
+            "text": "Agents who are in control can take responsibility, which is the responsibility practice worth seeking."
+          }
+        ],
+        "selectionRationale": "This is the prior pro claim Caruso narrows: he preserves some control-based responsibility while denying only backward-looking basic desert."
+      },
+      "burdenPacket": {
+        "primaryRouteId": "pro-compatibilist-control-route",
+        "eligibleBridgeIds": [
+          "pro-central-control",
+          "pro-motion-responsibility"
+        ],
+        "selectionRationale": "The response targets the pro route's move from control to responsibility by limiting which kind of responsibility skepticism denies."
+      },
+      "selectionRationale": "This Q1 act follows the explicit moderator cue for Gregg and supplies a focused qualification of Dennett's responsibility claim."
+    },
+    {
+      "moveId": "m07-pro-q2-responsive-causation-control-diagnosis",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "timestamp": "00:46:54",
+      "sourceSpan": {
+        "startMs": 2814839,
+        "endMs": 2846640
+      },
+      "sourceExcerpt": "okay the big mistake that i think you're making greg is you're confusing causation and control in the following way maya and marina you haven't told us what their upbringing was how much self-control they have let's assume they're both very well self-controlled",
+      "sourceExcerptSha256": "9d465ea7349f00d66c65da582a2bdbe24cc56ccff3bc13c310770ee159939d1e",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "t07-caruso-causal-sourcehood",
+        "targetSpeaker": "Gregg Caruso",
+        "sourceSpan": {
+          "startMs": 2801040,
+          "endMs": 2817119
+        },
+        "sourceExcerpt": "responsible in the required sense is because they're not the appropriate source of their actions in the right sense that is that there for them to be the appropriate source the action can't be causally determined by factors beyond their control",
+        "sourceExcerptSha256": "70d208adfd94e9cea996b1b72838b575b7d21567e576764948b1352cb20dbfb7",
+        "claim": "Causal determination by factors beyond control prevents the sourcehood required for responsibility.",
+        "indispensableComponents": [
+          {
+            "id": "t07-c1-sourcehood-required",
+            "text": "Responsibility in the required sense demands that the agent be the appropriate source of action."
+          },
+          {
+            "id": "t07-c2-determination-defeats-sourcehood",
+            "text": "An action causally determined by factors beyond the agent's control lacks that appropriate sourcehood."
+          }
+        ],
+        "selectionRationale": "The span states the exact sourcehood inference Dennett immediately labels a causation-control confusion and challenges with missing control facts."
+      },
+      "burdenPacket": {
+        "primaryRouteId": "con-skeptical-sourcehood-route",
+        "eligibleBridgeIds": [
+          "con-central-sourcehood",
+          "con-motion-no-basic-desert"
+        ],
+        "selectionRationale": "The act directly attacks the con route's central sourcehood inference and could thereby reach its motion-level denial of responsibility."
+      },
+      "selectionRationale": "This Q2 pro response is atomic, directly names Gregg's alleged error, and ends before the following brief interjection."
+    },
+    {
+      "moveId": "m08-con-q2-responsive-control-insufficient",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "timestamp": "00:52:40",
+      "sourceSpan": {
+        "startMs": 3160720,
+        "endMs": 3181920
+      },
+      "sourceExcerpt": "all the kind of compatibilist distinctions that have been made over the last 20 to 50 years um the question is not the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating um and i do think those those those distinctions matter they matter in all kinds of important ways but they matter for different reasons",
+      "sourceExcerptSha256": "4fde5bc71fdc6ecf18a1caa405df94a68fc9e86930ad35d9dae9fc2bf48c8cc9",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "t08-dennett-reasons-responsive-otherwise",
+        "targetSpeaker": "Daniel Dennett",
+        "sourceSpan": {
+          "startMs": 2994640,
+          "endMs": 3040640
+        },
+        "sourceExcerpt": "i mean i i just say this i think could have done otherwise where if you've got the degrees of freedom and if you've got between self-control we can say you could have done otherwise and what that means is you weren't tied up you weren't damaged you weren't deliberately misinformed about the case you you acted on the basis of reasons you basically are a well-functioning individual",
+        "sourceExcerptSha256": "fe4f19323d04982681669921e9d8a7692c6e9a0534a2799bc6a35e6f23fd3ec5",
+        "claim": "Relevant alternative ability consists in self-control, absence of disabling interference, and action for reasons.",
+        "indispensableComponents": [
+          {
+            "id": "t08-c1-degrees-control",
+            "text": "Degrees of freedom and self-control support the relevant sense in which an agent could have done otherwise."
+          },
+          {
+            "id": "t08-c2-well-functioning-reasons",
+            "text": "A well-functioning agent is not tied up, damaged, or misinformed and acts on the basis of reasons."
+          }
+        ],
+        "selectionRationale": "This prior Dennett span supplies the reasons-responsive compatibilist distinctions whose relevance Caruso accepts while disputing their desert-grounding sufficiency."
+      },
+      "burdenPacket": {
+        "primaryRouteId": "pro-compatibilist-control-route",
+        "eligibleBridgeIds": [
+          "pro-central-control",
+          "pro-motion-responsibility"
+        ],
+        "selectionRationale": "The act attacks the pro route's bridge from accepted compatibilist control distinctions to desert-based responsibility practices."
+      },
+      "selectionRationale": "This Q2 con response isolates one claim: compatibilist distinctions matter, but their relevance does not establish basic-desert practices."
+    },
+    {
+      "moveId": "m09-pro-q3-responsive-no-threat-pill",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "timestamp": "01:09:09",
+      "sourceSpan": {
+        "startMs": 4149520,
+        "endMs": 4184560
+      },
+      "sourceExcerpt": "uh greg's colleagues invent a pill which renders one uh no longer likely to commit a crime and the first mother the one that did it and deliberately tried to get away with murder and we catch her she said okay i take the pill gulp thank you now uh let me go about my the rest of my life just fine um i'm no longer a threat to anybody",
+      "sourceExcerptSha256": "94fb3303c85b606473ad0d2a8e59eb083f6111f33eda2d66036c5750e4fbd568",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "t09-caruso-future-threat-sanctions",
+        "targetSpeaker": "Gregg Caruso",
+        "sourceSpan": {
+          "startMs": 4060319,
+          "endMs": 4094720
+        },
+        "sourceExcerpt": "responsibility is relevant because i would argue that mother three is different than mother two because she does pose a potential threat to her other two remaining children um if those children remain in the home let's say and she's habitually negligent now i don't think incapacitation or jail would be warranted in the third case but i do think maybe supervision or child protective services getting involved or mandatory parenting or counseling something in this case the sure the safety of those children",
+        "sourceExcerptSha256": "e66fb9bc4bc325c200f181c40ca81f9675dc807343828dd017aab373a93afae6",
+        "claim": "Sanctions should track future threat and use the least restrictive safety-protecting intervention.",
+        "indispensableComponents": [
+          {
+            "id": "t09-c1-habitual-threat",
+            "text": "The habitually negligent mother differs because she poses a future threat to her remaining children."
+          },
+          {
+            "id": "t09-c2-protective-alternative",
+            "text": "Supervision, protective services, parenting intervention, or counseling can protect the children without jail."
+          }
+        ],
+        "selectionRationale": "This prior con span makes future threat and protective intervention decisive, which Dennett tests with a deliberate offender rendered harmless by a pill."
+      },
+      "burdenPacket": {
+        "primaryRouteId": "con-skeptical-sourcehood-route",
+        "eligibleBridgeIds": [
+          "con-subsidiary-alternatives",
+          "con-motion-no-basic-desert"
+        ],
+        "selectionRationale": "The hypothetical attacks the future-threat alternative and tests whether the con route can omit backward-looking desert altogether."
+      },
+      "selectionRationale": "This Q3 pro response is an atomic counterexample to the immediately developed future-threat model and is clearly Dennett after a named cue."
+    },
+    {
+      "moveId": "m10-con-q3-responsive-punishment-without-free-will",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "timestamp": "01:19:27",
+      "sourceSpan": {
+        "startMs": 4767120,
+        "endMs": 4799199
+      },
+      "sourceExcerpt": "if dan defends a view of punishment that's consistent with the same views that are held by foreign skeptics how is his view any different um and why why does it need free will and so one thing i would just say is for the listeners you could agree in part with some of dan's criticisms of my own view i i think i have responses um but even if you did that doesn't entail that we need to bring back free will and basic dessert",
+      "sourceExcerptSha256": "0d6e02dc74562986b7979bfb8a9202f0c5782e6c44d6736311997dccfcb4798f",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "t10-dennett-humane-punishment-convergence",
+        "targetSpeaker": "Daniel Dennett",
+        "sourceSpan": {
+          "startMs": 4648560,
+          "endMs": 4698000
+        },
+        "sourceExcerpt": "greg's quarantine system he he recognizes this is a cliff he doesn't want to fall over but i don't think he's put enough barriers up and when he does put the barriers up what he's going to have is a system of humane punishment okay draculian punishment not retributivist punishment but humane punishment and the the violent criminals will be humanely punished and the white-collar criminals will be humanely punished and the white-collar criminals will will have uh more punishment than they do now",
+        "sourceExcerptSha256": "c4c9f3957b11d251dadbd9eda6da775bfbe5814bd8062de3e3d8a22d4294caab",
+        "claim": "An adequately constrained quarantine system converges on humane non-retributive punishment.",
+        "indispensableComponents": [
+          {
+            "id": "t10-c1-barriers-needed",
+            "text": "The quarantine system lacks adequate barriers against a dangerous cliff."
+          },
+          {
+            "id": "t10-c2-humane-punishment",
+            "text": "Adding the needed barriers yields humane, non-retributive punishment for both violent and white-collar offenders."
+          }
+        ],
+        "selectionRationale": "Dennett's convergence claim is the exact prior opponent position Caruso answers by asking why an account available to skeptics needs free will or basic desert."
+      },
+      "burdenPacket": {
+        "primaryRouteId": "pro-compatibilist-control-route",
+        "eligibleBridgeIds": [
+          "pro-subsidiary-institutions",
+          "pro-motion-responsibility"
+        ],
+        "selectionRationale": "The response challenges whether the pro institutional account needs free will or desert and thus attacks both its subsidiary and motion connection."
+      },
+      "selectionRationale": "This Q3 con response directly answers Dennett's convergence criticism and stays within a single uninterrupted Caruso turn."
+    },
+    {
+      "moveId": "m11-pro-q4-responsive-moral-agents-club",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "timestamp": "01:57:29",
+      "sourceSpan": {
+        "startMs": 7049119,
+        "endMs": 7082800
+      },
+      "sourceExcerpt": "the penalties that you agree to live by if you want to be a member you agree if you if you violate these principles you are to blame and you will be punished and this is bedrock it is a it is a it is the cornerstone of a free and secure society and it has nothing to do again with either luck or determinism",
+      "sourceExcerptSha256": "e2f3120e7fb72f9195d711ebe53c89ff34c34052657a30c58acd97843f9424ba",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "t11-caruso-reactive-attitudes-game-rules",
+        "targetSpeaker": "Gregg Caruso",
+        "sourceSpan": {
+          "startMs": 6961360,
+          "endMs": 6974239
+        },
+        "sourceExcerpt": "and without certain kind of communicative functions that make interpersonal reactive attitudes significantly different than the enforcement of rules and games",
+        "sourceExcerptSha256": "ffca7eb85029c26a0e357049d86f6d7f007ae9b7d04ec7b9aa1ad1be315cfb49",
+        "claim": "Interpersonal reactive attitudes differ significantly from merely enforcing rules in games.",
+        "indispensableComponents": [
+          {
+            "id": "t11-c1-communicative-difference",
+            "text": "Distinct communicative functions separate interpersonal reactive attitudes from game-rule enforcement."
+          }
+        ],
+        "selectionRationale": "The exact prior con span states the game-versus-interpersonal distinction that Dennett answers by treating society as a rule-governed moral agents' club."
+      },
+      "burdenPacket": {
+        "primaryRouteId": "con-skeptical-sourcehood-route",
+        "eligibleBridgeIds": [
+          "con-subsidiary-alternatives",
+          "con-motion-no-basic-desert"
+        ],
+        "selectionRationale": "The response attacks the con separation of rule enforcement from blame and punishment by making agreed social penalties foundational."
+      },
+      "selectionRationale": "This Q4 pro response completes Dennett's uninterrupted answer to Caruso's game-rule distinction with a clear society-level claim."
+    },
+    {
+      "moveId": "m12-con-q4-responsive-rules-versus-reactive-attitudes",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "timestamp": "02:01:08",
+      "sourceSpan": {
+        "startMs": 7268480,
+        "endMs": 7299199
+      },
+      "sourceExcerpt": "the question i you know that i still think is the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified because those are the ones that are philosophically significant right do i want to attach to my parenting when i when i punish my daughter by taking her cell phone away do i want or am i justified in exhibiting resentment or indignation or moral anger",
+      "sourceExcerptSha256": "a0ac9a82a5ba2a029225b9264b99a2e873f7bbcbb52b1c586c07dad0a2957125",
+      "quoteKind": "quote",
+      "speakerAttributionConfidence": "high",
+      "audioChecked": false,
+      "audioVerification": null,
+      "interactionMode": "responsive",
+      "targetPacket": {
+        "id": "t12-dennett-agreed-penalties-bedrock",
+        "targetSpeaker": "Daniel Dennett",
+        "sourceSpan": {
+          "startMs": 7049119,
+          "endMs": 7082800
+        },
+        "sourceExcerpt": "the penalties that you agree to live by if you want to be a member you agree if you if you violate these principles you are to blame and you will be punished and this is bedrock it is a it is a it is the cornerstone of a free and secure society and it has nothing to do again with either luck or determinism",
+        "sourceExcerptSha256": "e2f3120e7fb72f9195d711ebe53c89ff34c34052657a30c58acd97843f9424ba",
+        "claim": "Agreed blame and punishment for rule violations are a determination-independent cornerstone of a secure society.",
+        "indispensableComponents": [
+          {
+            "id": "t12-c1-agreed-penalties",
+            "text": "Membership entails agreement to blame and punishment when the governing principles are violated."
+          },
+          {
+            "id": "t12-c2-social-cornerstone",
+            "text": "Those penalties are a bedrock condition of free and secure society regardless of luck or determinism."
+          }
+        ],
+        "selectionRationale": "This prior pro span joins rule enforcement to blame and punishment; Caruso responds by separating justified practices from justified reactive attitudes."
+      },
+      "burdenPacket": {
+        "primaryRouteId": "pro-compatibilist-control-route",
+        "eligibleBridgeIds": [
+          "pro-subsidiary-institutions",
+          "pro-motion-responsibility"
+        ],
+        "selectionRationale": "The response attacks the pro move from socially useful rules and sanctions to the justification of resentment, indignation, or moral anger."
+      },
+      "selectionRationale": "This Q4 con response is the later direct distinction between justified sanctions and the separate justification of desert-laden reactive attitudes."
+    }
+  ],
+  "audit": {
+    "moveCount": 12,
+    "proMoveCount": 6,
+    "conMoveCount": 6,
+    "constructiveMoveCount": 4,
+    "responsiveMoveCount": 8,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "burdenRouteViolations": 0,
+    "unresolvedSpeakerAttributions": 0,
+    "excludedCandidates": [
+      {
+        "timestamp": "00:05:12",
+        "reason": "Opening guest answer follows the host prompt without a named handoff or diarization; speaker ownership was medium confidence and no audio verification was supplied."
+      },
+      {
+        "timestamp": "00:34:37",
+        "reason": "Rapid interruption after the moderator's cue contains overlapping short turns, leaving the atomic speaker boundary medium confidence without audio verification."
+      },
+      {
+        "timestamp": "00:41:11",
+        "reason": "The fast Dennett-Caruso exchange lacks a clean local handoff in the ASR events, so the candidate was excluded at medium speaker confidence."
+      },
+      {
+        "timestamp": "01:09:56",
+        "reason": "The reply begins in an overlapped transition after the pill hypothetical; ownership was not locked above medium confidence without local audio."
+      }
+    ]
+  }
+}

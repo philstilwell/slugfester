@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "2.5-inventory-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.5",
+  "gateId": "v2.5-held-out-derived-annotation-gate",
+  "debateId": "dennett-caruso-free-will-responsibility-2021",
+  "debateNumber": "185",
+  "reviewedAt": "2026-08-03T03:35:56Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-independent-v2.5-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "statement": "Fresh first review used only the preregistered v2.5 workflow, schemas, gate manifest, target draft, local caption chain, and the two inventory validators; no legacy, development, annotation-pass, score, or other-debate material was accessed."
+  },
+  "source": {
+    "draftInventoryPath": "docs/calibration/v2.5/held-out-gate/draft-inventories/dennett-caruso-free-will-responsibility-2021.json",
+    "draftInventorySha256": "c88b2516c9c78b0933ae6bcef69d0d3166400fcf3b4d3167030e21276310f68e",
+    "reviewedInventoryPath": "docs/calibration/v2.5/held-out-gate/reviewed-inventories/dennett-caruso-free-will-responsibility-2021.json",
+    "reviewedInventorySha256": "a6a3a662e5cd857d70403d582dc532ab23252e33323a7436e32f895ac34fc578",
+    "transcriptSha256": "bcfc11bc3e5a181d72c0cd073acba09d43e1bd6fbb6803ac31f18be2d539e98b",
+    "eventsSha256": "b144776e56915556eb6a0aa88183eae51d2bf06b4a8dd18cf3d79dad2cdf3a7e",
+    "manifestSha256": "566c51d307d76a5b220d3431c172131d43f19a3f44c4df41049b13f48a3ab80a",
+    "workflowSha256": "bd5f4c2f2b24f69611bd9e67b53cce291bf678f73bcbb8787688e49d721f998a",
+    "inventorySchemaSha256": "0c0c7e6d2e39fee1b3f81b797999889fb91bca79a675017645c0bded27ad7821",
+    "gateManifestSha256": "14f1fda2cb819a6b404b8a25d437ed280346a0e2c0db972b8d2af59e0e8ba67d"
+  },
+  "findings": [
+    {
+      "findingId": "f01-m01-eligible-bridge-tier",
+      "category": "burden-route",
+      "moveId": "m01-pro-constructive-libertarian-incoherence",
+      "description": "The excerpt rejects libertarian free will as incoherent and scientifically unsupported but does not establish reasons-responsive self-control, so the central-control bridge was not eligible; the subsidiary anti-libertarian/randomness bridge is the supported tier.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "f02-m10-target-component-overclaim",
+      "category": "target-packet",
+      "moveId": "m10-con-q3-responsive-punishment-without-free-will",
+      "description": "Target component t10-c2 characterized the proposed punishment as non-draconian, but the committed ASR excerpt establishes humane and non-retributive punishment without reliably establishing that additional modifier.",
+      "disposition": "repaired"
+    }
+  ],
+  "repairs": [
+    {
+      "findingId": "f01-m01-eligible-bridge-tier",
+      "change": "Replaced m01's eligible pro-central-control bridge with pro-subsidiary-randomness and rewrote the burden-packet rationale to match the excerpt's anti-libertarian content and subsidiary tier.",
+      "triggerCategory": "burden-route-or-tier"
+    },
+    {
+      "findingId": "f02-m10-target-component-overclaim",
+      "change": "Removed the unsupported non-draconian modifier from target component t10-c2 and corrected the target claim's article without altering its supported humane, non-retributive convergence meaning.",
+      "triggerCategory": "target-packet"
+    }
+  ],
+  "thirdReviewTrigger": {
+    "required": true,
+    "categories": [
+      "burden-route-or-tier",
+      "target-packet"
+    ],
+    "rationale": "A fresh third review is required because this first review changed an eligible burden bridge and tier for m01 and changed the semantic contents of m10's locked target packet."
+  },
+  "audit": {
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "burdenRouteViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "reviewedInventoryValidatorPassed": true
+  }
+}
