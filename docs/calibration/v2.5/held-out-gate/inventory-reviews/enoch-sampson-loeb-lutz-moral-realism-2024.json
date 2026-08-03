@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "2.5-inventory-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.5",
+  "gateId": "v2.5-held-out-derived-annotation-gate",
+  "debateId": "enoch-sampson-loeb-lutz-moral-realism-2024",
+  "debateNumber": "184",
+  "reviewedAt": "2026-08-03T03:40:20Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-independent-v2.5-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "statement": "This first review used only the preregistered v2.5 workflow, schemas, gate manifest, draft inventory, local caption chain, and the two inventory validators authorized for debate 184."
+  },
+  "source": {
+    "draftInventoryPath": "docs/calibration/v2.5/held-out-gate/draft-inventories/enoch-sampson-loeb-lutz-moral-realism-2024.json",
+    "draftInventorySha256": "d57f74c86ff9412556eca5577e93f3099717131f7281c215ed75e8ea3894e180",
+    "reviewedInventoryPath": "docs/calibration/v2.5/held-out-gate/reviewed-inventories/enoch-sampson-loeb-lutz-moral-realism-2024.json",
+    "reviewedInventorySha256": "7852d21057528188956569d0f26d346a984501e2661a9494faacefee07b44a3f",
+    "transcriptSha256": "b856ac8642eb744f11cf4d77bbbf3776430a2907f2341caf242b24291323e1d4",
+    "eventsSha256": "ce6e3b0249def2172eab06f3db03b765c5c8ea7bfabcfc4386d6203a440f3542",
+    "manifestSha256": "24783e957f4244dd72101df8e4975054f81704b3948639fd0516a06e268f9f56",
+    "workflowSha256": "bd5f4c2f2b24f69611bd9e67b53cce291bf678f73bcbb8787688e49d721f998a",
+    "inventorySchemaSha256": "0c0c7e6d2e39fee1b3f81b797999889fb91bca79a675017645c0bded27ad7821",
+    "gateManifestSha256": "14f1fda2cb819a6b404b8a25d437ed280346a0e2c0db972b8d2af59e0e8ba67d"
+  },
+  "findings": [
+    {
+      "findingId": "184-review-f01",
+      "category": "sampling",
+      "moveId": "184-move-11",
+      "description": "The draft quarter-four act at 01:30:03 answers an audience chat prompt whose text is absent from the transcript, so it cannot lock an exact prior opponent target without an artificial pairing.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "184-review-f02",
+      "category": "source-fidelity",
+      "moveId": "184-move-11",
+      "description": "Replacing the ineligible quarter-four act changes the slot's substantive source meaning and therefore requires exact relocking of its timestamp, event span, excerpt, and excerpt digest.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "184-review-f03",
+      "category": "speaker-attribution",
+      "moveId": "184-move-11",
+      "description": "The eligible replacement act is owned by Eric Sampson on the pro side, rather than by Don Loeb on the con side as in the superseded draft slot.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "184-review-f04",
+      "category": "atomicity",
+      "moveId": "184-move-11",
+      "description": "The repaired slot needs a newly locked single-speaker atomic boundary around Sampson's self-undermining objection rather than retaining the superseded audience-response act.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "184-review-f05",
+      "category": "target-packet",
+      "moveId": "184-move-11",
+      "description": "The draft target packet forced Enoch's earlier criticism onto an act elicited by an unavailable audience question; the replacement act instead contacts Lutz's exact evidential-connection principle.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "184-review-f06",
+      "category": "burden-route",
+      "moveId": null,
+      "description": "The error-not-permission distinction is a rhetorical implication-management point, not a necessary bridge on the adopted error-theory route, and it inflated the route graph.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "184-review-f07",
+      "category": "target-packet",
+      "moveId": "184-move-05",
+      "description": "Target 05 split explanatory idleness and undiminished explanation into duplicate indispensable contact units, which would overcount one conclusion in component-level classification.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "184-review-f08",
+      "category": "target-packet",
+      "moveId": "184-move-07",
+      "description": "Target 07 treated the concrete suffering example as a third indispensable component even though it only instantiates the constitution claim and perceptual analogy.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "184-review-f09",
+      "category": "target-packet",
+      "moveId": "184-move-09",
+      "description": "Target 09 redundantly split its positive conceptual-cognitive account and negative external-fact contrast into three overlapping indispensable contact units.",
+      "disposition": "repaired"
+    }
+  ],
+  "repairs": [
+    {
+      "findingId": "184-review-f01",
+      "change": "Replaced the 01:30:03 audience-response candidate with Sampson's eligible 01:32:55 quarter-four opponent-responsive act; updated the selection statement, side counts, and excluded-candidate log.",
+      "triggerCategory": "sampling"
+    },
+    {
+      "findingId": "184-review-f02",
+      "change": "Relocked move 11 to the exact 5575400-5596320 event span and Sampson self-undermining excerpt, with its verified excerpt SHA-256 and timestamp.",
+      "triggerCategory": "meaning"
+    },
+    {
+      "findingId": "184-review-f03",
+      "change": "Changed move 11 ownership from Don Loeb/con to Eric Sampson/pro to match Enoch's explicit concession of the pro closing time and Sampson's sustained argumentative voice.",
+      "triggerCategory": "speaker-ownership"
+    },
+    {
+      "findingId": "184-review-f04",
+      "change": "Locked the replacement move 11 as one single-speaker atomic act stating the self-undermining objection, without adjacent closing arguments or moderator material.",
+      "triggerCategory": "atomicity"
+    },
+    {
+      "findingId": "184-review-f05",
+      "change": "Rebuilt target 11 from Lutz's exact prior 2789520-2811800 evidential-connection claim and reduced it to its single indispensable condition.",
+      "triggerCategory": "target-packet"
+    },
+    {
+      "findingId": "184-review-f06",
+      "change": "Removed con-subsidiary-error-not-permission from the con route and routed repaired move 11 only to con-subsidiary-epistemic-connection, which its objection attacks.",
+      "triggerCategory": "burden-route-or-tier"
+    },
+    {
+      "findingId": "184-review-f07",
+      "change": "Consolidated target 05 into two nonduplicative components: complete nonmoral explanation and resulting moral-fact dispensability; updated its selection rationale.",
+      "triggerCategory": "target-packet"
+    },
+    {
+      "findingId": "184-review-f08",
+      "change": "Removed the concrete suffering example from target 07's indispensable-component list while preserving the constitution claim and cup analogy; updated its rationale.",
+      "triggerCategory": "target-packet"
+    },
+    {
+      "findingId": "184-review-f09",
+      "change": "Consolidated target 09 into a positive conceptual-cognitive component and a negative external-or-Platonic-fact component; updated its rationale.",
+      "triggerCategory": "target-packet"
+    }
+  ],
+  "thirdReviewTrigger": {
+    "required": true,
+    "categories": [
+      "meaning",
+      "sampling",
+      "speaker-ownership",
+      "burden-route-or-tier",
+      "atomicity",
+      "target-packet"
+    ],
+    "rationale": "The repaired quarter-four move changes substantive meaning, sampling, speaker ownership, atomic boundaries, target semantics, and burden routing; three additional target packets also changed."
+  },
+  "audit": {
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "burdenRouteViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "reviewedInventoryValidatorPassed": true
+  }
+}
