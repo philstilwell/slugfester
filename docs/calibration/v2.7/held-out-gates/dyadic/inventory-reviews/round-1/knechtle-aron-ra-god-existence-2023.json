@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "2.7-inventory-review",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.7",
+  "gateId": "v2.7-dyadic-held-out-gate",
+  "lane": "dyadic",
+  "debateId": "knechtle-aron-ra-god-existence-2023",
+  "debateNumber": "152",
+  "reviewRound": 1,
+  "reviewedAt": "2026-08-03T14:20:00Z",
+  "reviewerModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "method": "fresh-independent-v2.7-inventory-review",
+    "legacyMaterialAccessed": false,
+    "developmentExamplesAccessed": false,
+    "annotationPassesAvailable": false,
+    "priorReviewAvailable": false,
+    "statement": "A fresh read-only 5.6 Sol context reviewed the complete canonical transcript and event chain without legacy assessments, examples, scores, annotation passes, or prior review findings."
+  },
+  "source": {
+    "inputInventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/review-inputs/round-1/knechtle-aron-ra-god-existence-2023.json",
+    "inputInventorySha256": "f592b56683b44f3d9eeee0fd02f83cd35a9e8208e9c980b85b0d742210d3a294",
+    "outputInventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/knechtle-aron-ra-god-existence-2023.json",
+    "outputInventorySha256": "b36b4e1a970d76e9edc51ab7acfdcb0604a94b5939e73ccc49781d022aabac54",
+    "priorReviewPath": null,
+    "priorReviewSha256": null,
+    "transcriptSha256": "afb9789743fdea882d2d18591b2504f773f9b0c08df226c2bcbda5de47ec2ed7",
+    "eventsSha256": "8c3e7c8a52185cadaa1b5d03d50a844dc2dce7ec902054d95efa0aa88c666e33",
+    "manifestSha256": "96dfa97128a08b3adeee33d6cfffbe4dcd684d6579a875b14cf9586d8f9f1b6d",
+    "workflowSha256": "89e97666e6e1d98bf2d9e0dbd3a5fe3665509a955806e7c12d789f2a77d98641",
+    "inventorySchemaSha256": "7d1cb858a2a41fe3d15bdeb6c790aa26a4f2831a09b69235fde112740961286e",
+    "gateManifestSha256": "28b132a4e8510faaab683ae05f554f05ef943d742312e2088f0dc2be44652420"
+  },
+  "findings": [
+    {
+      "findingId": "knechtle-aron-ra-god-existence-2023-round-1-f1",
+      "category": "sampling",
+      "moveId": null,
+      "description": "The original eight responsive selections clustered between 30:20 and 40:25 and overrepresented one cellular-complexity sequence.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "knechtle-aron-ra-god-existence-2023-round-1-f2",
+      "category": "source-fidelity",
+      "moveId": "knechtle-aron-ra-god-existence-2023-move-10",
+      "description": "Several original moves began with the opponent or crossed rapid handoffs while retaining high-confidence single-speaker attribution.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "knechtle-aron-ra-god-existence-2023-round-1-f3",
+      "category": "target-recency",
+      "moveId": "knechtle-aron-ra-god-existence-2023-move-12",
+      "description": "The original packet treated a topic-changing scripture monologue as if it answered the preceding irreducible-complexity clarification.",
+      "disposition": "repaired"
+    },
+    {
+      "findingId": "knechtle-aron-ra-god-existence-2023-round-1-f4",
+      "category": "component-graph",
+      "moveId": "knechtle-aron-ra-god-existence-2023-move-08",
+      "description": "Original one-node packets merged predictions, observations, comparisons, burdens, and conclusions into undifferentiated fact premises.",
+      "disposition": "repaired"
+    }
+  ],
+  "repairs": [
+    {
+      "findingId": "knechtle-aron-ra-god-existence-2023-round-1-f1",
+      "change": "Resampled the complete debate across logic, morality, design and evolution, existence, evidence, and burden-of-proof exchanges.",
+      "triggerCategory": "sampling"
+    },
+    {
+      "findingId": "knechtle-aron-ra-god-existence-2023-round-1-f2",
+      "change": "Replaced contaminated selections with exact caption-event boundaries and excluded mixed handoff events from both moves and targets.",
+      "triggerCategory": "speaker-ownership"
+    },
+    {
+      "findingId": "knechtle-aron-ra-god-existence-2023-round-1-f3",
+      "change": "Selected genuine immediate responses and relocked the actual most recent opponent claims throughout the reconstructed sample.",
+      "triggerCategory": "target-recency"
+    },
+    {
+      "findingId": "knechtle-aron-ra-god-existence-2023-round-1-f4",
+      "change": "Built typed multi-node graphs for comparative design, moral, and evidential arguments and retained narrow subsidiary routing where appropriate.",
+      "triggerCategory": "component-graph"
+    }
+  ],
+  "nextReviewTrigger": {
+    "required": true,
+    "categories": [
+      "sampling",
+      "speaker-ownership",
+      "target-recency",
+      "component-graph"
+    ],
+    "rationale": "Protected sampling, speaker-ownership, target, and component-graph fields changed, so a fresh follow-up semantic review is mandatory before annotation."
+  },
+  "audit": {
+    "sourceFidelityViolations": 0,
+    "atomicityViolations": 0,
+    "targetPacketViolations": 0,
+    "targetSideViolations": 0,
+    "ownershipAdoptionViolations": 0,
+    "burdenRouteViolations": 0,
+    "componentGraphViolations": 0,
+    "componentOverlapViolations": 0,
+    "targetRecencyViolations": 0,
+    "samplingViolations": 0,
+    "speakerAttributionViolations": 0,
+    "unresolvedFindings": 0,
+    "outputInventoryValidatorPassed": true
+  }
+}

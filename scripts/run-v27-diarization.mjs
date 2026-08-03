@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+import { spawn } from "node:child_process";
+import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
+import path from "node:path";
+
+const gate = JSON.parse(await readFile(path.resolve("docs/calibration/v2.7/held-out-gates/gate-manifest.json"), "utf8")); const cli = "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py"; const jobs = [];
+for (const lane of Object.values(gate.lanes)) for (const debate of lane.debates) { const base = path.resolve("output/transcribe/v27-gate", debate.debateId); const chunkDirectory = path.join(base, "chunks"); const outputDirectory = path.join(base, "diarized"); await mkdir(outputDirectory, { recursive: true }); const chunks = (await readdir(chunkDirectory)).filter((name) => /^chunk-\d+\.mp3$/.test(name)).sort(); for (const chunk of chunks) jobs.push({ debate, audio: path.join(chunkDirectory, chunk), output: path.join(outputDirectory, chunk.replace(/\.mp3$/, ".json")) }); }
+async function validExisting(file) { try { const parsed = JSON.parse(await readFile(file, "utf8")); return Array.isArray(parsed.segments) && parsed.segments.length > 0; } catch { return false; } }
+async function run(job) { if (await validExisting(job.output)) return { skipped: true, job }; return await new Promise((resolve, reject) => { const child = spawn("python3", [cli, job.audio, "--model", "gpt-4o-transcribe-diarize", "--response-format", "diarized_json", "--chunking-strategy", "auto", "--language", "en", "--out", job.output], { stdio: ["ignore", "pipe", "pipe"] }); let stderr = ""; child.stderr.on("data", (data) => { stderr += data; }); child.on("exit", (code) => code === 0 ? resolve({ skipped: false, job }) : reject(new Error(`${job.output}: exit ${code}: ${stderr}`))); }); }
+let next = 0; let completed = 0; const concurrency = 3; async function worker() { while (next < jobs.length) { const index = next++; const result = await run(jobs[index]); completed += 1; console.log(JSON.stringify({ completed, total: jobs.length, debateId: result.job.debate.debateId, chunk: path.basename(result.job.output), skipped: result.skipped })); } }
+await Promise.all(Array.from({ length: concurrency }, () => worker()));
+const sha256 = (value) => createHash("sha256").update(value).digest("hex"); const files = []; for (const job of jobs) { const raw = await readFile(job.output, "utf8"); const parsed = JSON.parse(raw); if (!Array.isArray(parsed.segments) || parsed.segments.length === 0) throw new Error(`${job.output}: no segments`); files.push({ debateId: job.debate.debateId, path: path.relative(process.cwd(), job.output), sha256: sha256(raw), segmentCount: parsed.segments.length }); }
+const manifest = { schemaVersion: "2.7-paid-diarization-run", model: "gpt-4o-transcribe-diarize", responseFormat: "diarized_json", chunkSeconds: 900, estimatedRateUsdPerMinute: 0.006, estimatedMinutes: 930.1, estimatedCostUsd: 5.58, conservativeCeilingUsd: 11.16, files };
+await writeFile(path.resolve("output/transcribe/v27-gate/diarization-run-manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`); console.log(JSON.stringify({ status: "passed", jobCount: jobs.length, output: "output/transcribe/v27-gate/diarization-run-manifest.json" }));
