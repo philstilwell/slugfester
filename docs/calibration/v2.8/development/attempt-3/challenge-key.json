@@ -1,0 +1,1599 @@
+{
+  "schemaVersion": "2.8.2-development-challenge-pass",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.8.2",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.8.2",
+  "pass": "KEY",
+  "model": "5.6 Sol",
+  "calibrationOnly": true,
+  "completedAt": "2026-08-03T20:43:34.355Z",
+  "isolation": {
+    "method": "v2.8.1-independent-key-carried-forward-without-semantic-change",
+    "allowedInputs": [
+      "docs/assessment-workflow-v2.8.2.md",
+      "docs/reassessment-rubric-v2.8.2.md",
+      "docs/calibration/v2.8/development/attempt-3/annotation-manual.md",
+      "docs/calibration/v2.8/development/attempt-3/challenge-annotation-schema.json",
+      "docs/calibration/v2.8/development/attempt-3/challenge-input.json"
+    ],
+    "keyUnavailable": true,
+    "otherPassUnavailable": true,
+    "attemptOnePassesUnavailable": true,
+    "legacyMaterialUnavailable": true,
+    "numericalScoresUnavailable": true,
+    "statement": "The independently readjudicated v2.8.1 semantic key was carried forward before blind passes because v2.8.2 changes only non-degenerate completion validation, not annotation semantics or fixture content."
+  },
+  "source": {
+    "inputPath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+    "inputSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302",
+    "workflowSha256": "3ef1c86ed4539de66843c83ea6dbbc25a7843cf7a62f0fdcba402f15adc804ff",
+    "rubricSha256": "87cdceaa4b20d11a06ad2e35a8835cfd4a6097710ed07badf0ae339f2c60f7df",
+    "manualSha256": "489c517f583bb6c4c1dc2d4be47511b75066f0a9eb22ca6846eb758927defecb",
+    "schemaSha256": "cfbba6fc3f6d6cbf2d83e2df88369b210125c28f60572162626e9127db1c66ae"
+  },
+  "annotations": [
+    {
+      "caseId": "v282-dev-04-05",
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-05",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-05-c1",
+          "operation": "undermines",
+          "evidence": {
+            "startChar": 371,
+            "endChar": 419,
+            "text": "something that simply has no evidence whatsoever"
+          }
+        },
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-05-c2",
+          "operation": "denies",
+          "evidence": {
+            "startChar": 0,
+            "endChar": 16,
+            "text": "it didn't happen"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "evidential-insufficiency",
+      "defectObject": {
+        "objectType": "target-component",
+        "objectId": "lennox-atkins-science-explain-everything-2019-target-05-c2"
+      },
+      "diagnosticCue": {
+        "startChar": 371,
+        "endChar": 419,
+        "text": "something that simply has no evidence whatsoever"
+      },
+      "impactMode": "inferential-consequence",
+      "impactCue": {
+        "startChar": 300,
+        "endChar": 339,
+        "text": "that doesn't mean to say that it's true"
+      },
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "lennox-atkins-science-explain-everything-2019-con-central",
+          "contactMode": "attacks",
+          "evidence": {
+            "startChar": 371,
+            "endChar": 419,
+            "text": "something that simply has no evidence whatsoever"
+          }
+        }
+      ],
+      "rationale": "The response directly rejects the resurrection and separately attacks its evidential status, while expressly stating that foundational status does not establish truth."
+    },
+    {
+      "caseId": "v282-dev-04-06",
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-06",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "modality-shift",
+      "scopeEvidence": {
+        "startChar": 237,
+        "endChar": 268,
+        "text": "dead bodies don't normally rise"
+      },
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-06-c1",
+          "operation": null,
+          "evidence": null
+        },
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-06-c2",
+          "operation": "qualifies",
+          "evidence": {
+            "startChar": 237,
+            "endChar": 268,
+            "text": "dead bodies don't normally rise"
+          }
+        },
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-06-c3",
+          "operation": "denies",
+          "evidence": {
+            "startChar": 47,
+            "endChar": 83,
+            "text": "science cannot forbid a resurrection"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "scope-mismatch",
+      "defectObject": {
+        "objectType": "target-component",
+        "objectId": "lennox-atkins-science-explain-everything-2019-target-06-c3"
+      },
+      "diagnosticCue": {
+        "startChar": 47,
+        "endChar": 83,
+        "text": "science cannot forbid a resurrection"
+      },
+      "impactMode": "inferential-consequence",
+      "impactCue": {
+        "startChar": 47,
+        "endChar": 83,
+        "text": "science cannot forbid a resurrection"
+      },
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "lennox-atkins-science-explain-everything-2019-pro-central",
+          "contactMode": "supports",
+          "evidence": {
+            "startChar": 307,
+            "endChar": 379,
+            "text": "means that we recognize something very special happened if it did happen"
+          }
+        }
+      ],
+      "rationale": "The answer directly limits the natural regularity to what normally happens and denies that science can elevate that regularity into an impossibility ruling."
+    },
+    {
+      "caseId": "v282-dev-04-10",
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-10",
+      "mappingBasis": "object-change",
+      "mappingEvidence": {
+        "startChar": 78,
+        "endChar": 118,
+        "text": "in some cases religion can be palliative"
+      },
+      "targetObjectRelation": "changed",
+      "objectChangeType": "subject",
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-10-c1",
+          "operation": null,
+          "evidence": null
+        },
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-10-c2",
+          "operation": null,
+          "evidence": null
+        },
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-10-c3",
+          "operation": null,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectObject": null,
+      "diagnosticCue": null,
+      "impactMode": "none",
+      "impactCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [],
+      "rationale": "Instead of addressing what atheism offers, the response changes the subject to religion's occasional palliative comfort, so substitution leaves every target component untouched."
+    },
+    {
+      "caseId": "v282-dev-04-11",
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-11",
+      "mappingBasis": "connected-example",
+      "mappingEvidence": {
+        "startChar": 207,
+        "endChar": 271,
+        "text": "science chemistry cannot tell me whether I ought to do it or not"
+      },
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-11-c1",
+          "operation": null,
+          "evidence": null
+        },
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-11-c2",
+          "operation": "denies",
+          "evidence": {
+            "startChar": 207,
+            "endChar": 271,
+            "text": "science chemistry cannot tell me whether I ought to do it or not"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectObject": null,
+      "diagnosticCue": null,
+      "impactMode": "none",
+      "impactCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "lennox-atkins-science-explain-everything-2019-pro-central",
+          "contactMode": "supports",
+          "evidence": {
+            "startChar": 207,
+            "endChar": 271,
+            "text": "science chemistry cannot tell me whether I ought to do it or not"
+          }
+        }
+      ],
+      "rationale": "The arsenic example expressly maps scientific description to the normative issue: chemistry can describe effects but cannot determine what an agent ought to do."
+    },
+    {
+      "caseId": "v282-dev-152-08",
+      "moveId": "knechtle-aron-ra-god-existence-2023-move-08",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "knechtle-aron-ra-god-existence-2023-target-08-c1",
+          "operation": "explains",
+          "evidence": {
+            "startChar": 0,
+            "endChar": 101,
+            "text": "groups will find political or religious reasons to justify the evil that they know that they're doing"
+          }
+        },
+        {
+          "componentId": "knechtle-aron-ra-god-existence-2023-target-08-c2",
+          "operation": null,
+          "evidence": null
+        },
+        {
+          "componentId": "knechtle-aron-ra-god-existence-2023-target-08-c3",
+          "operation": "explains",
+          "evidence": {
+            "startChar": 0,
+            "endChar": 101,
+            "text": "groups will find political or religious reasons to justify the evil that they know that they're doing"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectObject": null,
+      "diagnosticCue": null,
+      "impactMode": "none",
+      "impactCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "knechtle-aron-ra-god-existence-2023-con-central",
+          "contactMode": "supports",
+          "evidence": {
+            "startChar": 0,
+            "endChar": 101,
+            "text": "groups will find political or religious reasons to justify the evil that they know that they're doing"
+          }
+        }
+      ],
+      "rationale": "The response treats acknowledged evil as the datum and explains apparent group approval through political or religious rationalization, without transferring the live burden."
+    },
+    {
+      "caseId": "v282-dev-154-08",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-08",
+      "mappingBasis": "connected-example",
+      "mappingEvidence": {
+        "startChar": 3,
+        "endChar": 45,
+        "text": "there are people who do the opposite there"
+      },
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1",
+          "operation": "undermines",
+          "evidence": {
+            "startChar": 105,
+            "endChar": 146,
+            "text": "people that would have gone the other way"
+          }
+        },
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2",
+          "operation": "undermines",
+          "evidence": {
+            "startChar": 3,
+            "endChar": 45,
+            "text": "there are people who do the opposite there"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectObject": null,
+      "diagnosticCue": null,
+      "impactMode": "none",
+      "impactCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+          "contactMode": "supports",
+          "evidence": {
+            "startChar": 210,
+            "endChar": 243,
+            "text": "I went from Christianity to Islam"
+          }
+        }
+      ],
+      "rationale": "The expressly opposite conversion example remains connected to Koukl's conversion evidence and attacks the one-directional evidential force without denying his report."
+    },
+    {
+      "caseId": "v282-dev-154-09",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-09",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c1",
+          "operation": "distinguishes",
+          "evidence": {
+            "startChar": 109,
+            "endChar": 199,
+            "text": "people will like put morality onto dharma, where I I don't think that that's actually fair"
+          }
+        },
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c2",
+          "operation": null,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "ambiguity",
+      "defectObject": {
+        "objectType": "target-component",
+        "objectId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c1"
+      },
+      "diagnosticCue": {
+        "startChar": 35,
+        "endChar": 74,
+        "text": "there's a whole different set of axioms"
+      },
+      "impactMode": "none",
+      "impactCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [],
+      "rationale": "Kanojia directly distinguishes dharma from the morality being projected onto it and identifies different axioms, but does not expressly contact the satisfaction inference."
+    },
+    {
+      "caseId": "v282-dev-154-11",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-11",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c1",
+          "operation": "distinguishes",
+          "evidence": {
+            "startChar": 20,
+            "endChar": 82,
+            "text": "there is an a layer of morality, but that is not within dharma"
+          }
+        },
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c2",
+          "operation": null,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "ambiguity",
+      "defectObject": {
+        "objectType": "target-component",
+        "objectId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c1"
+      },
+      "diagnosticCue": {
+        "startChar": 20,
+        "endChar": 82,
+        "text": "there is an a layer of morality, but that is not within dharma"
+      },
+      "impactMode": "none",
+      "impactCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [],
+      "rationale": "The response explicitly partitions morality from dharma, correcting the category used in the emergency-duty characterization while leaving the consequential comparison untouched."
+    },
+    {
+      "caseId": "v282-dev-154-12",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-12",
+      "mappingBasis": "connected-example",
+      "mappingEvidence": {
+        "startChar": 23,
+        "endChar": 54,
+        "text": "the Mahabharata is a great case"
+      },
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c1",
+          "operation": "distinguishes",
+          "evidence": {
+            "startChar": 244,
+            "endChar": 347,
+            "text": "dharma often times gets like translated over to morality, but I think you lose something in translation"
+          }
+        },
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c2",
+          "operation": "explains",
+          "evidence": {
+            "startChar": 167,
+            "endChar": 229,
+            "text": "You absolutely should, because it is in accordance with dharma"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "ambiguity",
+      "defectObject": {
+        "objectType": "target-component",
+        "objectId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c1"
+      },
+      "diagnosticCue": {
+        "startChar": 244,
+        "endChar": 347,
+        "text": "dharma often times gets like translated over to morality, but I think you lose something in translation"
+      },
+      "impactMode": "none",
+      "impactCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+          "contactMode": "supports",
+          "evidence": {
+            "startChar": 244,
+            "endChar": 347,
+            "text": "dharma often times gets like translated over to morality, but I think you lose something in translation"
+          }
+        }
+      ],
+      "rationale": "The Mahabharata is expressly introduced as a case explaining duty under dharma, and the response explicitly distinguishes dharma from morality as a translation loss."
+    },
+    {
+      "caseId": "v282-dev-154-14",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-14",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c1",
+          "operation": null,
+          "evidence": null
+        },
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c2",
+          "operation": "denies",
+          "evidence": {
+            "startChar": 279,
+            "endChar": 330,
+            "text": "Because she was capable of initiating a free action"
+          }
+        },
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c3",
+          "operation": "undermines",
+          "evidence": {
+            "startChar": 99,
+            "endChar": 220,
+            "text": "You don't have to have in a certain sense deterministic element in your in your soul that forces you to act a certain way"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "missing-premise",
+      "defectObject": {
+        "objectType": "target-component",
+        "objectId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c3"
+      },
+      "diagnosticCue": {
+        "startChar": 99,
+        "endChar": 220,
+        "text": "You don't have to have in a certain sense deterministic element in your in your soul that forces you to act a certain way"
+      },
+      "impactMode": "none",
+      "impactCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-central",
+          "contactMode": "supports",
+          "evidence": {
+            "startChar": 9,
+            "endChar": 91,
+            "text": "the nature of freedom in my understanding, my view, is that it can initiate things"
+          }
+        }
+      ],
+      "rationale": "Koukl directly replaces the asserted prior proclivity with agent-initiated freedom and attacks the regress's assumed deterministic element without shifting the burden."
+    },
+    {
+      "caseId": "v282-dev-154-15",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-15",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c1",
+          "operation": "accepts",
+          "evidence": {
+            "startChar": 102,
+            "endChar": 215,
+            "text": "It does not explain the existence of evil because knowledge of that already existed before she committed the fall"
+          }
+        },
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c2",
+          "operation": "undermines",
+          "evidence": {
+            "startChar": 26,
+            "endChar": 100,
+            "text": "the fall does not explain the proclivity to sin because Eve already had it"
+          }
+        },
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c3",
+          "operation": "undermines",
+          "evidence": {
+            "startChar": 217,
+            "endChar": 264,
+            "text": "It also doesn't explain the origin of suffering"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "invalid-inference",
+      "defectObject": {
+        "objectType": "target-component",
+        "objectId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c3"
+      },
+      "diagnosticCue": {
+        "startChar": 217,
+        "endChar": 264,
+        "text": "It also doesn't explain the origin of suffering"
+      },
+      "impactMode": "inferential-consequence",
+      "impactCue": {
+        "startChar": 26,
+        "endChar": 100,
+        "text": "the fall does not explain the proclivity to sin because Eve already had it"
+      },
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+          "contactMode": "supports",
+          "evidence": {
+            "startChar": 217,
+            "endChar": 264,
+            "text": "It also doesn't explain the origin of suffering"
+          }
+        }
+      ],
+      "rationale": "O'Connor allows the pre-fall moral knowledge datum but expressly says it cannot explain the prior proclivity, evil, or suffering attributed to the disobedience."
+    },
+    {
+      "caseId": "v282-dev-185-05",
+      "moveId": "m05-pro-q1-responsive-free-will-worth-wanting",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "t05-c1-beyond-control",
+          "operation": null,
+          "evidence": null
+        },
+        {
+          "componentId": "t05-c2-no-basic-desert",
+          "operation": "distinguishes",
+          "evidence": {
+            "startChar": 302,
+            "endChar": 441,
+            "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectObject": null,
+      "diagnosticCue": null,
+      "impactMode": "none",
+      "impactCue": null,
+      "malformedDemandExplained": true,
+      "malformedDemandCue": {
+        "startChar": 302,
+        "endChar": 441,
+        "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+      },
+      "replacementDemandStated": true,
+      "replacementDemandCue": {
+        "startChar": 73,
+        "endChar": 170,
+        "text": "we want to know about responsibility and whether whether we deserve blame and praise and so forth"
+      },
+      "contactedBridges": [
+        {
+          "bridgeId": "con-central-sourcehood",
+          "contactMode": "attacks",
+          "evidence": {
+            "startChar": 302,
+            "endChar": 441,
+            "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+          }
+        }
+      ],
+      "rationale": "Dennett directly distinguishes responsibility worth wanting from libertarian freedom and states that possessing or lacking the latter changes no responsibility outcome."
+    },
+    {
+      "caseId": "v282-dev-185-07",
+      "moveId": "m07-pro-q2-responsive-causation-control-diagnosis",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "t07-c1-sourcehood-required",
+          "operation": "distinguishes",
+          "evidence": {
+            "startChar": 5,
+            "endChar": 94,
+            "text": "the big mistake that i think you're making greg is you're confusing causation and control"
+          }
+        },
+        {
+          "componentId": "t07-c2-determination-defeats-sourcehood",
+          "operation": "undermines",
+          "evidence": {
+            "startChar": 132,
+            "endChar": 209,
+            "text": "you haven't told us what their upbringing was how much self-control they have"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "ambiguity",
+      "defectObject": {
+        "objectType": "target-component",
+        "objectId": "t07-c1-sourcehood-required"
+      },
+      "diagnosticCue": {
+        "startChar": 5,
+        "endChar": 94,
+        "text": "the big mistake that i think you're making greg is you're confusing causation and control"
+      },
+      "impactMode": "verdict",
+      "impactCue": {
+        "startChar": 5,
+        "endChar": 20,
+        "text": "the big mistake"
+      },
+      "malformedDemandExplained": true,
+      "malformedDemandCue": {
+        "startChar": 56,
+        "endChar": 115,
+        "text": "you're confusing causation and control in the following way"
+      },
+      "replacementDemandStated": true,
+      "replacementDemandCue": {
+        "startChar": 132,
+        "endChar": 209,
+        "text": "you haven't told us what their upbringing was how much self-control they have"
+      },
+      "contactedBridges": [
+        {
+          "bridgeId": "con-central-sourcehood",
+          "contactMode": "attacks",
+          "evidence": {
+            "startChar": 5,
+            "endChar": 94,
+            "text": "the big mistake that i think you're making greg is you're confusing causation and control"
+          }
+        }
+      ],
+      "rationale": "The response expressly diagnoses a confusion between causation and control across the packet and notes missing control facts, attacking the sourcehood inference."
+    },
+    {
+      "caseId": "v282-dev-185-12",
+      "moveId": "m12-con-q4-responsive-rules-versus-reactive-attitudes",
+      "mappingBasis": "object-change",
+      "mappingEvidence": {
+        "startChar": 46,
+        "endChar": 231,
+        "text": "the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified"
+      },
+      "targetObjectRelation": "changed",
+      "objectChangeType": "question-type",
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "replaced",
+      "burdenEvidence": {
+        "startChar": 46,
+        "endChar": 231,
+        "text": "the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified"
+      },
+      "componentOperations": [
+        {
+          "componentId": "t12-c1-agreed-penalties",
+          "operation": null,
+          "evidence": null
+        },
+        {
+          "componentId": "t12-c2-social-cornerstone",
+          "operation": null,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectObject": null,
+      "diagnosticCue": null,
+      "impactMode": "none",
+      "impactCue": null,
+      "malformedDemandExplained": true,
+      "malformedDemandCue": {
+        "startChar": 92,
+        "endChar": 295,
+        "text": "not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified because those are the ones that are philosophically significant"
+      },
+      "replacementDemandStated": true,
+      "replacementDemandCue": {
+        "startChar": 150,
+        "endChar": 231,
+        "text": "the question about whether certain types of reactive attitudes would be justified"
+      },
+      "contactedBridges": [],
+      "rationale": "The response explicitly replaces the institutional-practice question with whether reactive attitudes are justified; because the target is substituted, both components remain null."
+    },
+    {
+      "caseId": "v282-dev-62-04",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-04",
+      "mappingBasis": "connected-example",
+      "mappingEvidence": {
+        "startChar": 80,
+        "endChar": 106,
+        "text": "that's a very good example"
+      },
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-04-c1",
+          "operation": "accepts",
+          "evidence": {
+            "startChar": 141,
+            "endChar": 210,
+            "text": "that's one that I think fits quite nicely within my worldview as well"
+          }
+        },
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-04-c2",
+          "operation": null,
+          "evidence": null
+        },
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-04-c3",
+          "operation": null,
+          "evidence": null
+        },
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-04-c4",
+          "operation": null,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectObject": null,
+      "diagnosticCue": null,
+      "impactMode": "none",
+      "impactCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-con-subsidiary",
+          "contactMode": "supports",
+          "evidence": {
+            "startChar": 221,
+            "endChar": 305,
+            "text": "we are all currently you know submitting to a certain idea of what we're going to do"
+          }
+        }
+      ],
+      "rationale": "Folley expressly identifies Pageau's case as a good example fitting his worldview and relies on collective submission, but does not explicitly operate on the remaining graph components."
+    },
+    {
+      "caseId": "v282-dev-62-07",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-07",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-07-c1",
+          "operation": null,
+          "evidence": null
+        },
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-07-c2",
+          "operation": "denies",
+          "evidence": {
+            "startChar": 0,
+            "endChar": 96,
+            "text": "it is definitely using a a deep analogical language in order to describe something that happened"
+          }
+        },
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-07-c3",
+          "operation": null,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "attribution-error",
+      "defectObject": {
+        "objectType": "target-component",
+        "objectId": "pageau-folley-logos-meaning-resurrection-2026-target-07-c2"
+      },
+      "diagnosticCue": {
+        "startChar": 0,
+        "endChar": 96,
+        "text": "it is definitely using a a deep analogical language in order to describe something that happened"
+      },
+      "impactMode": "inferential-consequence",
+      "impactCue": {
+        "startChar": 0,
+        "endChar": 96,
+        "text": "it is definitely using a a deep analogical language in order to describe something that happened"
+      },
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-pro-central",
+          "contactMode": "supports",
+          "evidence": {
+            "startChar": 0,
+            "endChar": 96,
+            "text": "it is definitely using a a deep analogical language in order to describe something that happened"
+          }
+        }
+      ],
+      "rationale": "Pageau directly disowns the attribution that Genesis lacks historical reference by saying its analogical language describes something that happened and is remembered."
+    },
+    {
+      "caseId": "v282-dev-62-09",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-09",
+      "mappingBasis": "object-change",
+      "mappingEvidence": {
+        "startChar": 51,
+        "endChar": 127,
+        "text": "I was convinced of the resurrection in it for a different in a different way"
+      },
+      "targetObjectRelation": "changed",
+      "objectChangeType": "subject",
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-09-c1",
+          "operation": null,
+          "evidence": null
+        },
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-09-c2",
+          "operation": null,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectObject": null,
+      "diagnosticCue": null,
+      "impactMode": "none",
+      "impactCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [],
+      "rationale": "The response changes the subject from Folley's hypothetical confidence and post-death belief to Pageau's own different route to resurrection conviction, leaving components null."
+    },
+    {
+      "caseId": "v282-dev-71-05",
+      "moveId": "hitchens-kushner-gomes-god-religion-morality-2009-move-05",
+      "mappingBasis": "object-change",
+      "mappingEvidence": {
+        "startChar": 116,
+        "endChar": 217,
+        "text": "let's take religion and skepticism at their best or let's take religion and skepticism at their worst"
+      },
+      "targetObjectRelation": "changed",
+      "objectChangeType": "comparison-class",
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "replaced",
+      "burdenEvidence": {
+        "startChar": 116,
+        "endChar": 217,
+        "text": "let's take religion and skepticism at their best or let's take religion and skepticism at their worst"
+      },
+      "componentOperations": [
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-05-c1",
+          "operation": null,
+          "evidence": null
+        },
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-05-c2",
+          "operation": null,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectObject": null,
+      "diagnosticCue": null,
+      "impactMode": "none",
+      "impactCue": null,
+      "malformedDemandExplained": true,
+      "malformedDemandCue": {
+        "startChar": 52,
+        "endChar": 115,
+        "text": "we don't compare the worst of one side with the best of another"
+      },
+      "replacementDemandStated": true,
+      "replacementDemandCue": {
+        "startChar": 116,
+        "endChar": 217,
+        "text": "let's take religion and skepticism at their best or let's take religion and skepticism at their worst"
+      },
+      "contactedBridges": [],
+      "rationale": "Kushner says the asymmetrical comparison is malformed and explicitly replaces it with like-for-like best or worst cases, changing the target comparison class."
+    },
+    {
+      "caseId": "v282-dev-71-10",
+      "moveId": "hitchens-kushner-gomes-god-religion-morality-2009-move-10",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "narrowed",
+      "scopeEvidence": {
+        "startChar": 255,
+        "endChar": 380,
+        "text": "these are human aspirations an attempt for human beings to acquire something grander and and and more noble than we ourselves"
+      },
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-10-c1",
+          "operation": "qualifies",
+          "evidence": {
+            "startChar": 255,
+            "endChar": 380,
+            "text": "these are human aspirations an attempt for human beings to acquire something grander and and and more noble than we ourselves"
+          }
+        },
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-10-c2",
+          "operation": null,
+          "evidence": null
+        },
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-10-c3",
+          "operation": "denies",
+          "evidence": {
+            "startChar": 230,
+            "endChar": 254,
+            "text": "this isn't the way it is"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectObject": null,
+      "diagnosticCue": null,
+      "impactMode": "none",
+      "impactCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "hitchens-kushner-gomes-god-religion-morality-2009-pro-central",
+          "contactMode": "supports",
+          "evidence": {
+            "startChar": 255,
+            "endChar": 380,
+            "text": "these are human aspirations an attempt for human beings to acquire something grander and and and more noble than we ourselves"
+          }
+        }
+      ],
+      "rationale": "Gomes narrows the human-origin description to aspirational textual expression and directly rejects the crude dictated-text alternative, without expressly addressing every inference detail."
+    },
+    {
+      "caseId": "v282-dev-71-11",
+      "moveId": "hitchens-kushner-gomes-god-religion-morality-2009-move-11",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "narrowed",
+      "scopeEvidence": {
+        "startChar": 211,
+        "endChar": 357,
+        "text": "they tried to write it down in what became the Bible and it is an imperfect flawed incomplete record of what I think was a Transcendent experience"
+      },
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-11-c1",
+          "operation": "qualifies",
+          "evidence": {
+            "startChar": 211,
+            "endChar": 357,
+            "text": "they tried to write it down in what became the Bible and it is an imperfect flawed incomplete record of what I think was a Transcendent experience"
+          }
+        },
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-11-c2",
+          "operation": "explains",
+          "evidence": {
+            "startChar": 120,
+            "endChar": 180,
+            "text": "you will never capture the wonderfulness of it in your words"
+          }
+        },
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-11-c3",
+          "operation": "denies",
+          "evidence": {
+            "startChar": 211,
+            "endChar": 357,
+            "text": "they tried to write it down in what became the Bible and it is an imperfect flawed incomplete record of what I think was a Transcendent experience"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectObject": null,
+      "diagnosticCue": null,
+      "impactMode": "none",
+      "impactCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "hitchens-kushner-gomes-god-religion-morality-2009-pro-central",
+          "contactMode": "supports",
+          "evidence": {
+            "startChar": 211,
+            "endChar": 357,
+            "text": "they tried to write it down in what became the Bible and it is an imperfect flawed incomplete record of what I think was a Transcendent experience"
+          }
+        }
+      ],
+      "rationale": "Kushner grants an imperfect human record and explains its flaws through linguistic limits, while denying that human inscription excludes an underlying transcendent experience."
+    },
+    {
+      "caseId": "v282-dev-71-16",
+      "moveId": "hitchens-kushner-gomes-god-religion-morality-2009-move-16",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c1",
+          "operation": "denies",
+          "evidence": {
+            "startChar": 110,
+            "endChar": 168,
+            "text": "they're committing the original crimes as a Divine mandate"
+          }
+        },
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c2",
+          "operation": null,
+          "evidence": null
+        },
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c3",
+          "operation": "denies",
+          "evidence": {
+            "startChar": 39,
+            "endChar": 109,
+            "text": "they are not baptizing retrospectively their crimes in the name of God"
+          }
+        },
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c4",
+          "operation": "denies",
+          "evidence": {
+            "startChar": 110,
+            "endChar": 168,
+            "text": "they're committing the original crimes as a Divine mandate"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "contradiction",
+      "defectObject": {
+        "objectType": "target-packet",
+        "objectId": "hitchens-kushner-gomes-god-religion-morality-2009-target-16"
+      },
+      "diagnosticCue": {
+        "startChar": 304,
+        "endChar": 357,
+        "text": "it's exactly the opposite of what the rabbi just said"
+      },
+      "impactMode": "inferential-consequence",
+      "impactCue": {
+        "startChar": 304,
+        "endChar": 357,
+        "text": "it's exactly the opposite of what the rabbi just said"
+      },
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "hitchens-kushner-gomes-god-religion-morality-2009-con-central",
+          "contactMode": "supports",
+          "evidence": {
+            "startChar": 110,
+            "endChar": 168,
+            "text": "they're committing the original crimes as a Divine mandate"
+          }
+        }
+      ],
+      "rationale": "Hitchens explicitly says the causal ordering is the opposite: perpetrators do not add religion retrospectively but commit the original crimes under a divine mandate."
+    },
+    {
+      "caseId": "v282-dev-84-07",
+      "moveId": "krauss-meyer-lamoureux-god-science-universe-2016-move-07",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "krauss-meyer-lamoureux-god-science-universe-2016-target-07-c1",
+          "operation": "distinguishes",
+          "evidence": {
+            "startChar": 215,
+            "endChar": 315,
+            "text": "it's not a sim a strictly negative argument about what evolutionary processes are incapable of doing"
+          }
+        },
+        {
+          "componentId": "krauss-meyer-lamoureux-god-science-universe-2016-target-07-c2",
+          "operation": "undermines",
+          "evidence": {
+            "startChar": 327,
+            "endChar": 429,
+            "text": "it's based on our uniform and repeated experience of what what intelligent agents are capable of doing"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "attribution-error",
+      "defectObject": {
+        "objectType": "target-packet",
+        "objectId": "krauss-meyer-lamoureux-god-science-universe-2016-target-07"
+      },
+      "diagnosticCue": {
+        "startChar": 152,
+        "endChar": 214,
+        "text": "the argument that I'm making is not an argument from ignorance"
+      },
+      "impactMode": "inferential-consequence",
+      "impactCue": {
+        "startChar": 152,
+        "endChar": 214,
+        "text": "the argument that I'm making is not an argument from ignorance"
+      },
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "krauss-meyer-lamoureux-god-science-universe-2016-con-central",
+          "contactMode": "supports",
+          "evidence": {
+            "startChar": 327,
+            "endChar": 429,
+            "text": "it's based on our uniform and repeated experience of what what intelligent agents are capable of doing"
+          }
+        }
+      ],
+      "rationale": "Meyer expressly disowns the argument-from-ignorance attribution and distinguishes a negative gap appeal from his claimed positive uniform-experience inference."
+    },
+    {
+      "caseId": "v282-dev-84-09",
+      "moveId": "krauss-meyer-lamoureux-god-science-universe-2016-move-09",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "krauss-meyer-lamoureux-god-science-universe-2016-target-09-c1",
+          "operation": "distinguishes",
+          "evidence": {
+            "startChar": 34,
+            "endChar": 67,
+            "text": "the nothing really is not nothing"
+          }
+        },
+        {
+          "componentId": "krauss-meyer-lamoureux-god-science-universe-2016-target-09-c2",
+          "operation": "undermines",
+          "evidence": {
+            "startChar": 267,
+            "endChar": 412,
+            "text": "these vacuum States amount to the relativistic quantum fuel theoretical version of their not being any physical stuff at all but that's not right"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "ambiguity",
+      "defectObject": {
+        "objectType": "target-component",
+        "objectId": "krauss-meyer-lamoureux-god-science-universe-2016-target-09-c1"
+      },
+      "diagnosticCue": {
+        "startChar": 34,
+        "endChar": 67,
+        "text": "the nothing really is not nothing"
+      },
+      "impactMode": "inferential-consequence",
+      "impactCue": {
+        "startChar": 267,
+        "endChar": 412,
+        "text": "these vacuum States amount to the relativistic quantum fuel theoretical version of their not being any physical stuff at all but that's not right"
+      },
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "krauss-meyer-lamoureux-god-science-universe-2016-con-central",
+          "contactMode": "supports",
+          "evidence": {
+            "startChar": 34,
+            "endChar": 67,
+            "text": "the nothing really is not nothing"
+          }
+        }
+      ],
+      "rationale": "Lamoureux explicitly distinguishes quantum vacuum states from no physical stuff at all and uses that meaning distinction to undermine the empty-space inference."
+    },
+    {
+      "caseId": "v282-dev-84-12",
+      "moveId": "krauss-meyer-lamoureux-god-science-universe-2016-move-12",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "krauss-meyer-lamoureux-god-science-universe-2016-target-12-c1",
+          "operation": "undermines",
+          "evidence": {
+            "startChar": 236,
+            "endChar": 340,
+            "text": "why believe that's the word of God and not the Egyptian uh uh or the or the Norse myths or anything else"
+          }
+        },
+        {
+          "componentId": "krauss-meyer-lamoureux-god-science-universe-2016-target-12-c2",
+          "operation": null,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "unsupported-comparison",
+      "defectObject": {
+        "objectType": "target-packet",
+        "objectId": "krauss-meyer-lamoureux-god-science-universe-2016-target-12"
+      },
+      "diagnosticCue": {
+        "startChar": 236,
+        "endChar": 340,
+        "text": "why believe that's the word of God and not the Egyptian uh uh or the or the Norse myths or anything else"
+      },
+      "impactMode": "none",
+      "impactCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "krauss-meyer-lamoureux-god-science-universe-2016-pro-subsidiary",
+          "contactMode": "attacks",
+          "evidence": {
+            "startChar": 236,
+            "endChar": 340,
+            "text": "why believe that's the word of God and not the Egyptian uh uh or the or the Norse myths or anything else"
+          }
+        }
+      ],
+      "rationale": "Krauss directly challenges the warrant for privileging the Bible as God's word over named Egyptian and Norse alternatives, without addressing the miracle-support component."
+    },
+    {
+      "caseId": "v282-dev-84-14",
+      "moveId": "krauss-meyer-lamoureux-god-science-universe-2016-move-14",
+      "mappingBasis": "direct",
+      "mappingEvidence": null,
+      "targetObjectRelation": "same",
+      "objectChangeType": null,
+      "targetScopeRelation": "same",
+      "scopeEvidence": null,
+      "targetBurdenRelation": "retained",
+      "burdenEvidence": null,
+      "componentOperations": [
+        {
+          "componentId": "krauss-meyer-lamoureux-god-science-universe-2016-target-14-c1",
+          "operation": "accepts",
+          "evidence": {
+            "startChar": 3,
+            "endChar": 122,
+            "text": "there's a big difference between a purely chance hypothesis and a hypothesis that combines chance and natural selection"
+          }
+        },
+        {
+          "componentId": "krauss-meyer-lamoureux-god-science-universe-2016-target-14-c2",
+          "operation": "denies",
+          "evidence": {
+            "startChar": 355,
+            "endChar": 413,
+            "text": "the mechanism that I'm critiquing is not a straight chance"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "attribution-error",
+      "defectObject": {
+        "objectType": "target-component",
+        "objectId": "krauss-meyer-lamoureux-god-science-universe-2016-target-14-c2"
+      },
+      "diagnosticCue": {
+        "startChar": 251,
+        "endChar": 284,
+        "text": "I'm not arguing from chance alone"
+      },
+      "impactMode": "inferential-consequence",
+      "impactCue": {
+        "startChar": 355,
+        "endChar": 413,
+        "text": "the mechanism that I'm critiquing is not a straight chance"
+      },
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "contactedBridges": [
+        {
+          "bridgeId": "krauss-meyer-lamoureux-god-science-universe-2016-con-central",
+          "contactMode": "supports",
+          "evidence": {
+            "startChar": 3,
+            "endChar": 122,
+            "text": "there's a big difference between a purely chance hypothesis and a hypothesis that combines chance and natural selection"
+          }
+        }
+      ],
+      "rationale": "Meyer expressly grants the chance-plus-selection distinction and disowns the attribution that his critique treats evolution as a straight chance mechanism."
+    }
+  ],
+  "audit": {
+    "caseCount": 25,
+    "allCasesAnnotatedOnce": true,
+    "componentSetErrors": 0,
+    "evidenceErrors": 0,
+    "diagnosticEligibilityErrors": 0,
+    "derivedFieldsPresent": false,
+    "scoreFieldsPresent": false,
+    "nonDefaultCounts": {
+      "objectChanges": 4,
+      "connectedExamples": 4,
+      "componentContacts": 38,
+      "diagnosticCandidates": 14,
+      "diagnosticPositives": 8,
+      "reframePositives": 4,
+      "bridgeContacts": 19,
+      "uniqueRationales": 25
+    }
+  }
+}

@@ -1,0 +1,1728 @@
+{
+  "schemaVersion": "2.9.1-development-challenge-pass",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.9.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.9.1",
+  "pass": "KEY-A",
+  "model": "5.6 Sol",
+  "calibrationOnly": true,
+  "completedAt": "2026-08-03T12:00:00-04:00",
+  "isolation": {
+    "method": "fresh-isolated-v2.9.1-key-candidate",
+    "allowedInputs": [
+      "docs/assessment-workflow-v2.9.1.md",
+      "docs/reassessment-rubric-v2.9.1.md",
+      "docs/calibration/v2.9/development/attempt-2/annotation-manual.md",
+      "docs/calibration/v2.9/development/attempt-2/challenge-annotation-schema.json",
+      "docs/calibration/v2.9/development/attempt-2/challenge-input.json",
+      "docs/calibration/v2.9/development/attempt-2/practice-fixture.json"
+    ],
+    "priorKeysUnavailable": true,
+    "blindPassesUnavailable": true,
+    "legacyMaterialUnavailable": true,
+    "numericalScoresUnavailable": true,
+    "statement": "This candidate was classified in a fresh isolated context using exactly the six declared v2.9.1 inputs."
+  },
+  "source": {
+    "inputPath": "docs/calibration/v2.9/development/attempt-2/challenge-input.json",
+    "inputSha256": "9e4594cbbd1adfeeafca98c5c1765dca1eb8c384ed780a7184802165126c1f2b",
+    "workflowSha256": "7eb66c58c3117b6bc165291e9150d6ba18af579452caf2345e2d4d3608373bba",
+    "rubricSha256": "efb112c0ea6a55ea8202801661cd96506150b1faae34226e356f41ae1d531790",
+    "manualSha256": "24e07a3d60bdc5d5ec98bedb5b9247db34764ea76ee259b88139dc0988d7b998",
+    "schemaSha256": "053e12c98923771d7470dc359a06de54750cdce98cfec0ec84b186403e15b98b"
+  },
+  "annotations": [
+    {
+      "caseId": "v291-dev-04-05",
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-05",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 0,
+        "endChar": 16,
+        "text": "it didn't happen"
+      },
+      "connectedExample": true,
+      "connectionEvidence": {
+        "startChar": 115,
+        "endChar": 229,
+        "text": "when you've got a dead body it's decaying straight away there's no way that it's going to reconstitute in some way"
+      },
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-05-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 371,
+            "endChar": 419,
+            "text": "something that simply has no evidence whatsoever"
+          }
+        },
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-05-c2",
+          "contacted": true,
+          "evidence": {
+            "startChar": 260,
+            "endChar": 299,
+            "text": "it is the foundation of Christian faith"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "evidential-insufficiency",
+      "defectCue": {
+        "startChar": 386,
+        "endChar": 419,
+        "text": "simply has no evidence whatsoever"
+      },
+      "consequenceStated": true,
+      "consequenceCue": {
+        "startChar": 349,
+        "endChar": 367,
+        "text": "let's dismiss that"
+      },
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "lennox-atkins-science-explain-everything-2019-con-central",
+        "evidence": {
+          "startChar": 371,
+          "endChar": 419,
+          "text": "something that simply has no evidence whatsoever"
+        }
+      },
+      "rationale": "Case v291-dev-04-05 has 2 of 2 indispensable components contacted, evidential-insufficiency cue with a separate consequence, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-04-06",
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-06",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 47,
+        "endChar": 83,
+        "text": "science cannot forbid a resurrection"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "modality-shift",
+      "scopeEvidence": {
+        "startChar": 47,
+        "endChar": 83,
+        "text": "science cannot forbid a resurrection"
+      },
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-06-c1",
+          "contacted": false,
+          "evidence": null
+        },
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-06-c2",
+          "contacted": true,
+          "evidence": {
+            "startChar": 237,
+            "endChar": 268,
+            "text": "dead bodies don't normally rise"
+          }
+        },
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-06-c3",
+          "contacted": true,
+          "evidence": {
+            "startChar": 47,
+            "endChar": 83,
+            "text": "science cannot forbid a resurrection"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "scope-mismatch",
+      "defectCue": {
+        "startChar": 100,
+        "endChar": 170,
+        "text": "science proceeds on discovering the regularities to which nature works"
+      },
+      "consequenceStated": true,
+      "consequenceCue": {
+        "startChar": 47,
+        "endChar": 83,
+        "text": "science cannot forbid a resurrection"
+      },
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "lennox-atkins-science-explain-everything-2019-pro-central",
+        "evidence": {
+          "startChar": 100,
+          "endChar": 170,
+          "text": "science proceeds on discovering the regularities to which nature works"
+        }
+      },
+      "rationale": "Case v291-dev-04-06 has 2 of 3 indispensable components contacted, scope-mismatch cue with a separate consequence, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-04-10",
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-10",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 92,
+        "endChar": 173,
+        "text": "religion can be palliative it can be a great comfort to them it's a false comfort"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-10-c1",
+          "contacted": false,
+          "evidence": null
+        },
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-10-c2",
+          "contacted": false,
+          "evidence": null
+        },
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-10-c3",
+          "contacted": true,
+          "evidence": {
+            "startChar": 153,
+            "endChar": 173,
+            "text": "it's a false comfort"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectCue": null,
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "lennox-atkins-science-explain-everything-2019-con-central",
+        "evidence": {
+          "startChar": 153,
+          "endChar": 173,
+          "text": "it's a false comfort"
+        }
+      },
+      "rationale": "Case v291-dev-04-10 has 1 of 3 indispensable components contacted, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-04-11",
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-11",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 207,
+        "endChar": 271,
+        "text": "science chemistry cannot tell me whether I ought to do it or not"
+      },
+      "connectedExample": true,
+      "connectionEvidence": {
+        "startChar": 130,
+        "endChar": 271,
+        "text": "if I put arsenic in my granny's tea it will give her a pretty rough time but science chemistry cannot tell me whether I ought to do it or not"
+      },
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-11-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 85,
+            "endChar": 202,
+            "text": "science chemistry I believe can tell me that if I put arsenic in my granny's tea it will give her a pretty rough time"
+          }
+        },
+        {
+          "componentId": "lennox-atkins-science-explain-everything-2019-target-11-c2",
+          "contacted": true,
+          "evidence": {
+            "startChar": 207,
+            "endChar": 271,
+            "text": "science chemistry cannot tell me whether I ought to do it or not"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "scope-mismatch",
+      "defectCue": {
+        "startChar": 85,
+        "endChar": 202,
+        "text": "science chemistry I believe can tell me that if I put arsenic in my granny's tea it will give her a pretty rough time"
+      },
+      "consequenceStated": true,
+      "consequenceCue": {
+        "startChar": 207,
+        "endChar": 271,
+        "text": "science chemistry cannot tell me whether I ought to do it or not"
+      },
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "lennox-atkins-science-explain-everything-2019-pro-central",
+        "evidence": {
+          "startChar": 207,
+          "endChar": 271,
+          "text": "science chemistry cannot tell me whether I ought to do it or not"
+        }
+      },
+      "rationale": "Case v291-dev-04-11 has 2 of 2 indispensable components contacted, scope-mismatch cue with a separate consequence, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-152-08",
+      "moveId": "knechtle-aron-ra-god-existence-2023-move-08",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 30,
+        "endChar": 101,
+        "text": "religious reasons to justify the evil that they know that they're doing"
+      },
+      "connectedExample": true,
+      "connectionEvidence": {
+        "startChar": 102,
+        "endChar": 247,
+        "text": "you and I can both come up with exceptions of how of the excuses that people have written into their Dogma to justify the evil that they're doing"
+      },
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "knechtle-aron-ra-god-existence-2023-target-08-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 0,
+            "endChar": 101,
+            "text": "groups will find political or religious reasons to justify the evil that they know that they're doing"
+          }
+        },
+        {
+          "componentId": "knechtle-aron-ra-god-existence-2023-target-08-c2",
+          "contacted": false,
+          "evidence": null
+        },
+        {
+          "componentId": "knechtle-aron-ra-god-existence-2023-target-08-c3",
+          "contacted": true,
+          "evidence": {
+            "startChar": 0,
+            "endChar": 101,
+            "text": "groups will find political or religious reasons to justify the evil that they know that they're doing"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectCue": null,
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "knechtle-aron-ra-god-existence-2023-con-central",
+        "evidence": {
+          "startChar": 0,
+          "endChar": 101,
+          "text": "groups will find political or religious reasons to justify the evil that they know that they're doing"
+        }
+      },
+      "rationale": "Case v291-dev-152-08 has 2 of 3 indispensable components contacted, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-154-08",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-08",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 3,
+        "endChar": 45,
+        "text": "there are people who do the opposite there"
+      },
+      "connectedExample": true,
+      "connectionEvidence": {
+        "startChar": 97,
+        "endChar": 245,
+        "text": "there's people that would have gone the other way and they'll be in the comment section right now saying, \"Well, I went from Christianity to Islam.\""
+      },
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 3,
+            "endChar": 45,
+            "text": "there are people who do the opposite there"
+          }
+        },
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2",
+          "contacted": true,
+          "evidence": {
+            "startChar": 3,
+            "endChar": 45,
+            "text": "there are people who do the opposite there"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectCue": null,
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+        "evidence": {
+          "startChar": 97,
+          "endChar": 146,
+          "text": "there's people that would have gone the other way"
+        }
+      },
+      "rationale": "Case v291-dev-154-08 has 2 of 2 indispensable components contacted, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-154-09",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-09",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 109,
+        "endChar": 199,
+        "text": "people will like put morality onto dharma, where I I don't think that that's actually fair"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "replaced",
+      "burdenEvidence": {
+        "startChar": 210,
+        "endChar": 266,
+        "text": "going back to I have a duty just to give another example"
+      },
+      "componentContacts": [
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 35,
+            "endChar": 74,
+            "text": "there's a whole different set of axioms"
+          }
+        },
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c2",
+          "contacted": false,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "ambiguity",
+      "defectCue": {
+        "startChar": 109,
+        "endChar": 150,
+        "text": "people will like put morality onto dharma"
+      },
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": true,
+      "malformedDemandCue": {
+        "startChar": 152,
+        "endChar": 199,
+        "text": "where I I don't think that that's actually fair"
+      },
+      "replacementDemandStated": true,
+      "replacementDemandCue": {
+        "startChar": 224,
+        "endChar": 266,
+        "text": "I have a duty just to give another example"
+      },
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+        "evidence": {
+          "startChar": 35,
+          "endChar": 74,
+          "text": "there's a whole different set of axioms"
+        }
+      },
+      "rationale": "Case v291-dev-154-09 has 1 of 2 indispensable components contacted, ambiguity cue without a separate consequence, a complete two-clause reframe, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-154-11",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-11",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 20,
+        "endChar": 82,
+        "text": "there is an a layer of morality, but that is not within dharma"
+      },
+      "connectedExample": true,
+      "connectionEvidence": {
+        "startChar": 88,
+        "endChar": 198,
+        "text": "for example, there are yamas and niyamas, which are things like truthfulness, ahimsa, which means non-violence"
+      },
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 20,
+            "endChar": 82,
+            "text": "there is an a layer of morality, but that is not within dharma"
+          }
+        },
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c2",
+          "contacted": false,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectCue": null,
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+        "evidence": {
+          "startChar": 20,
+          "endChar": 51,
+          "text": "there is an a layer of morality"
+        }
+      },
+      "rationale": "Case v291-dev-154-11 has 1 of 2 indispensable components contacted, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-154-12",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-12",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 244,
+        "endChar": 347,
+        "text": "dharma often times gets like translated over to morality, but I think you lose something in translation"
+      },
+      "connectedExample": true,
+      "connectionEvidence": {
+        "startChar": 23,
+        "endChar": 231,
+        "text": "the Mahabharata is a great case of someone saying, \"I don't want to kill my cousins, and I don't want to kill my teacher.\" And Krishna saying, \"You absolutely should, because it is in accordance with dharma.\""
+      },
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c1",
+          "contacted": false,
+          "evidence": null
+        },
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c2",
+          "contacted": false,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": true,
+      "contraryEvidence": {
+        "startChar": 244,
+        "endChar": 347,
+        "text": "dharma often times gets like translated over to morality, but I think you lose something in translation"
+      },
+      "defectType": "ambiguity",
+      "defectCue": {
+        "startChar": 244,
+        "endChar": 300,
+        "text": "dharma often times gets like translated over to morality"
+      },
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+        "evidence": {
+          "startChar": 314,
+          "endChar": 347,
+          "text": "you lose something in translation"
+        }
+      },
+      "rationale": "Case v291-dev-154-12 has 0 of 2 indispensable components contacted, ambiguity cue without a separate consequence, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-154-14",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-14",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 222,
+        "endChar": 331,
+        "text": "Why did Adam and Eve even this case act the way she did? Because she was capable of initiating a free action."
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c1",
+          "contacted": false,
+          "evidence": null
+        },
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c2",
+          "contacted": true,
+          "evidence": {
+            "startChar": 287,
+            "endChar": 330,
+            "text": "she was capable of initiating a free action"
+          }
+        },
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c3",
+          "contacted": true,
+          "evidence": {
+            "startChar": 9,
+            "endChar": 91,
+            "text": "the nature of freedom in my understanding, my view, is that it can initiate things"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectCue": null,
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-central",
+        "evidence": {
+          "startChar": 287,
+          "endChar": 330,
+          "text": "she was capable of initiating a free action"
+        }
+      },
+      "rationale": "Case v291-dev-154-14 has 2 of 3 indispensable components contacted, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-154-15",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-15",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 26,
+        "endChar": 100,
+        "text": "the fall does not explain the proclivity to sin because Eve already had it"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 152,
+            "endChar": 215,
+            "text": "knowledge of that already existed before she committed the fall"
+          }
+        },
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c2",
+          "contacted": true,
+          "evidence": {
+            "startChar": 82,
+            "endChar": 100,
+            "text": "Eve already had it"
+          }
+        },
+        {
+          "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c3",
+          "contacted": true,
+          "evidence": {
+            "startChar": 283,
+            "endChar": 358,
+            "text": "Eve's punishment for eating from the tree of the knowledge of good and evil"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "invalid-inference",
+      "defectCue": {
+        "startChar": 74,
+        "endChar": 100,
+        "text": "because Eve already had it"
+      },
+      "consequenceStated": true,
+      "consequenceCue": {
+        "startChar": 26,
+        "endChar": 73,
+        "text": "the fall does not explain the proclivity to sin"
+      },
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+        "evidence": {
+          "startChar": 102,
+          "endChar": 143,
+          "text": "It does not explain the existence of evil"
+        }
+      },
+      "rationale": "Case v291-dev-154-15 has 3 of 3 indispensable components contacted, invalid-inference cue with a separate consequence, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-185-05",
+      "moveId": "m05-pro-q1-responsive-free-will-worth-wanting",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 122,
+        "endChar": 170,
+        "text": "whether we deserve blame and praise and so forth"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "t05-c1-beyond-control",
+          "contacted": false,
+          "evidence": null
+        },
+        {
+          "componentId": "t05-c2-no-basic-desert",
+          "contacted": true,
+          "evidence": {
+            "startChar": 354,
+            "endChar": 441,
+            "text": "having it wouldn't give you responsibility not having it wouldn't take it away from you"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectCue": null,
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "con-central-sourcehood",
+        "evidence": {
+          "startChar": 302,
+          "endChar": 441,
+          "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+        }
+      },
+      "rationale": "Case v291-dev-185-05 has 1 of 2 indispensable components contacted, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-185-07",
+      "moveId": "m07-pro-q2-responsive-causation-control-diagnosis",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 56,
+        "endChar": 94,
+        "text": "you're confusing causation and control"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "t07-c1-sourcehood-required",
+          "contacted": false,
+          "evidence": null
+        },
+        {
+          "componentId": "t07-c2-determination-defeats-sourcehood",
+          "contacted": true,
+          "evidence": {
+            "startChar": 56,
+            "endChar": 94,
+            "text": "you're confusing causation and control"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "ambiguity",
+      "defectCue": {
+        "startChar": 56,
+        "endChar": 94,
+        "text": "you're confusing causation and control"
+      },
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "con-central-sourcehood",
+        "evidence": {
+          "startChar": 56,
+          "endChar": 94,
+          "text": "you're confusing causation and control"
+        }
+      },
+      "rationale": "Case v291-dev-185-07 has 1 of 2 indispensable components contacted, ambiguity cue without a separate consequence, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-185-12",
+      "moveId": "m12-con-q4-responsive-rules-versus-reactive-attitudes",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 92,
+        "endChar": 145,
+        "text": "not whether or not those practices would be justified"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "replaced",
+      "burdenEvidence": {
+        "startChar": 46,
+        "endChar": 231,
+        "text": "the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified"
+      },
+      "componentContacts": [
+        {
+          "componentId": "t12-c1-agreed-penalties",
+          "contacted": true,
+          "evidence": {
+            "startChar": 96,
+            "endChar": 145,
+            "text": "whether or not those practices would be justified"
+          }
+        },
+        {
+          "componentId": "t12-c2-social-cornerstone",
+          "contacted": false,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectCue": null,
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": true,
+      "malformedDemandCue": {
+        "startChar": 240,
+        "endChar": 295,
+        "text": "those are the ones that are philosophically significant"
+      },
+      "replacementDemandStated": true,
+      "replacementDemandCue": {
+        "startChar": 150,
+        "endChar": 231,
+        "text": "the question about whether certain types of reactive attitudes would be justified"
+      },
+      "burdenContact": {
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-institutions",
+        "evidence": {
+          "startChar": 96,
+          "endChar": 145,
+          "text": "whether or not those practices would be justified"
+        }
+      },
+      "rationale": "Case v291-dev-185-12 has 1 of 2 indispensable components contacted, a complete two-clause reframe, subsidiary burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-62-04",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-04",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 73,
+        "endChar": 106,
+        "text": "people that's a very good example"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-04-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 221,
+            "endChar": 305,
+            "text": "we are all currently you know submitting to a certain idea of what we're going to do"
+          }
+        },
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-04-c2",
+          "contacted": false,
+          "evidence": null
+        },
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-04-c3",
+          "contacted": false,
+          "evidence": null
+        },
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-04-c4",
+          "contacted": false,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectCue": null,
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "subsidiary",
+        "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-con-subsidiary",
+        "evidence": {
+          "startChar": 221,
+          "endChar": 305,
+          "text": "we are all currently you know submitting to a certain idea of what we're going to do"
+        }
+      },
+      "rationale": "Case v291-dev-62-04 has 1 of 4 indispensable components contacted, subsidiary burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-62-07",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-07",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 0,
+        "endChar": 96,
+        "text": "it is definitely using a a deep analogical language in order to describe something that happened"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-07-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 73,
+            "endChar": 117,
+            "text": "something that happened and that we remember"
+          }
+        },
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-07-c2",
+          "contacted": true,
+          "evidence": {
+            "startChar": 17,
+            "endChar": 51,
+            "text": "using a a deep analogical language"
+          }
+        },
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-07-c3",
+          "contacted": false,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectCue": null,
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-pro-central",
+        "evidence": {
+          "startChar": 17,
+          "endChar": 96,
+          "text": "using a a deep analogical language in order to describe something that happened"
+        }
+      },
+      "rationale": "Case v291-dev-62-07 has 2 of 3 indispensable components contacted, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-62-09",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-09",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 51,
+        "endChar": 86,
+        "text": "I was convinced of the resurrection"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "modality-shift",
+      "scopeEvidence": {
+        "startChar": 51,
+        "endChar": 86,
+        "text": "I was convinced of the resurrection"
+      },
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-09-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 51,
+            "endChar": 86,
+            "text": "I was convinced of the resurrection"
+          }
+        },
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-09-c2",
+          "contacted": false,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectCue": null,
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-pro-central",
+        "evidence": {
+          "startChar": 268,
+          "endChar": 316,
+          "text": "the portrait of the world that it was showing me"
+        }
+      },
+      "rationale": "Case v291-dev-62-09 has 1 of 2 indispensable components contacted, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-71-05",
+      "moveId": "hitchens-kushner-gomes-god-religion-morality-2009-move-05",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 222,
+        "endChar": 309,
+        "text": "not compare the sins of religion with the virtues of secularism or the other way around"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-05-c1",
+          "contacted": false,
+          "evidence": null
+        },
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-05-c2",
+          "contacted": true,
+          "evidence": {
+            "startChar": 222,
+            "endChar": 309,
+            "text": "not compare the sins of religion with the virtues of secularism or the other way around"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "unsupported-comparison",
+      "defectCue": {
+        "startChar": 52,
+        "endChar": 115,
+        "text": "we don't compare the worst of one side with the best of another"
+      },
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "none",
+        "bridgeId": null,
+        "evidence": null
+      },
+      "rationale": "Case v291-dev-71-05 has 1 of 2 indispensable components contacted, unsupported-comparison cue without a separate consequence; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-71-10",
+      "moveId": "hitchens-kushner-gomes-god-religion-morality-2009-move-10",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 255,
+        "endChar": 339,
+        "text": "these are human aspirations an attempt for human beings to acquire something grander"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-10-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 255,
+            "endChar": 282,
+            "text": "these are human aspirations"
+          }
+        },
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-10-c2",
+          "contacted": true,
+          "evidence": {
+            "startChar": 207,
+            "endChar": 229,
+            "text": "he needs a good editor"
+          }
+        },
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-10-c3",
+          "contacted": true,
+          "evidence": {
+            "startChar": 230,
+            "endChar": 282,
+            "text": "this isn't the way it is these are human aspirations"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectCue": null,
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "hitchens-kushner-gomes-god-religion-morality-2009-pro-central",
+        "evidence": {
+          "startChar": 255,
+          "endChar": 339,
+          "text": "these are human aspirations an attempt for human beings to acquire something grander"
+        }
+      },
+      "rationale": "Case v291-dev-71-10 has 3 of 3 indispensable components contacted, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-71-11",
+      "moveId": "hitchens-kushner-gomes-god-religion-morality-2009-move-11",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 211,
+        "endChar": 357,
+        "text": "they tried to write it down in what became the Bible and it is an imperfect flawed incomplete record of what I think was a Transcendent experience"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-11-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 211,
+            "endChar": 263,
+            "text": "they tried to write it down in what became the Bible"
+          }
+        },
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-11-c2",
+          "contacted": true,
+          "evidence": {
+            "startChar": 268,
+            "endChar": 311,
+            "text": "it is an imperfect flawed incomplete record"
+          }
+        },
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-11-c3",
+          "contacted": true,
+          "evidence": {
+            "startChar": 315,
+            "endChar": 357,
+            "text": "what I think was a Transcendent experience"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectCue": null,
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "hitchens-kushner-gomes-god-religion-morality-2009-pro-central",
+        "evidence": {
+          "startChar": 315,
+          "endChar": 357,
+          "text": "what I think was a Transcendent experience"
+        }
+      },
+      "rationale": "Case v291-dev-71-11 has 3 of 3 indispensable components contacted, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-71-16",
+      "moveId": "hitchens-kushner-gomes-god-religion-morality-2009-move-16",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 304,
+        "endChar": 357,
+        "text": "it's exactly the opposite of what the rabbi just said"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 110,
+            "endChar": 168,
+            "text": "they're committing the original crimes as a Divine mandate"
+          }
+        },
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c2",
+          "contacted": true,
+          "evidence": {
+            "startChar": 193,
+            "endChar": 233,
+            "text": "no one has the right to live here but us"
+          }
+        },
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c3",
+          "contacted": true,
+          "evidence": {
+            "startChar": 39,
+            "endChar": 109,
+            "text": "they are not baptizing retrospectively their crimes in the name of God"
+          }
+        },
+        {
+          "componentId": "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c4",
+          "contacted": true,
+          "evidence": {
+            "startChar": 110,
+            "endChar": 168,
+            "text": "they're committing the original crimes as a Divine mandate"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "attribution-error",
+      "defectCue": {
+        "startChar": 304,
+        "endChar": 357,
+        "text": "it's exactly the opposite of what the rabbi just said"
+      },
+      "consequenceStated": true,
+      "consequenceCue": {
+        "startChar": 39,
+        "endChar": 109,
+        "text": "they are not baptizing retrospectively their crimes in the name of God"
+      },
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "hitchens-kushner-gomes-god-religion-morality-2009-con-central",
+        "evidence": {
+          "startChar": 110,
+          "endChar": 168,
+          "text": "they're committing the original crimes as a Divine mandate"
+        }
+      },
+      "rationale": "Case v291-dev-71-16 has 4 of 4 indispensable components contacted, attribution-error cue with a separate consequence, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-84-07",
+      "moveId": "krauss-meyer-lamoureux-god-science-universe-2016-move-07",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 152,
+        "endChar": 214,
+        "text": "the argument that I'm making is not an argument from ignorance"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "krauss-meyer-lamoureux-god-science-universe-2016-target-07-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 220,
+            "endChar": 315,
+            "text": "not a sim a strictly negative argument about what evolutionary processes are incapable of doing"
+          }
+        },
+        {
+          "componentId": "krauss-meyer-lamoureux-god-science-universe-2016-target-07-c2",
+          "contacted": true,
+          "evidence": {
+            "startChar": 184,
+            "endChar": 214,
+            "text": "not an argument from ignorance"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "attribution-error",
+      "defectCue": {
+        "startChar": 152,
+        "endChar": 214,
+        "text": "the argument that I'm making is not an argument from ignorance"
+      },
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "krauss-meyer-lamoureux-god-science-universe-2016-con-central",
+        "evidence": {
+          "startChar": 327,
+          "endChar": 429,
+          "text": "it's based on our uniform and repeated experience of what what intelligent agents are capable of doing"
+        }
+      },
+      "rationale": "Case v291-dev-84-07 has 2 of 2 indispensable components contacted, attribution-error cue without a separate consequence, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-84-09",
+      "moveId": "krauss-meyer-lamoureux-god-science-universe-2016-move-09",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 34,
+        "endChar": 67,
+        "text": "the nothing really is not nothing"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "krauss-meyer-lamoureux-god-science-universe-2016-target-09-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 267,
+            "endChar": 412,
+            "text": "these vacuum States amount to the relativistic quantum fuel theoretical version of their not being any physical stuff at all but that's not right"
+          }
+        },
+        {
+          "componentId": "krauss-meyer-lamoureux-god-science-universe-2016-target-09-c2",
+          "contacted": false,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "ambiguity",
+      "defectCue": {
+        "startChar": 34,
+        "endChar": 67,
+        "text": "the nothing really is not nothing"
+      },
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "krauss-meyer-lamoureux-god-science-universe-2016-con-central",
+        "evidence": {
+          "startChar": 267,
+          "endChar": 412,
+          "text": "these vacuum States amount to the relativistic quantum fuel theoretical version of their not being any physical stuff at all but that's not right"
+        }
+      },
+      "rationale": "Case v291-dev-84-09 has 1 of 2 indispensable components contacted, ambiguity cue without a separate consequence, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-84-12",
+      "moveId": "krauss-meyer-lamoureux-god-science-universe-2016-move-12",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 236,
+        "endChar": 340,
+        "text": "why believe that's the word of God and not the Egyptian uh uh or the or the Norse myths or anything else"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "krauss-meyer-lamoureux-god-science-universe-2016-target-12-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 236,
+            "endChar": 270,
+            "text": "why believe that's the word of God"
+          }
+        },
+        {
+          "componentId": "krauss-meyer-lamoureux-god-science-universe-2016-target-12-c2",
+          "contacted": false,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectCue": null,
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "subsidiary",
+        "bridgeId": "krauss-meyer-lamoureux-god-science-universe-2016-pro-subsidiary",
+        "evidence": {
+          "startChar": 236,
+          "endChar": 340,
+          "text": "why believe that's the word of God and not the Egyptian uh uh or the or the Norse myths or anything else"
+        }
+      },
+      "rationale": "Case v291-dev-84-12 has 1 of 2 indispensable components contacted, subsidiary burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-84-14",
+      "moveId": "krauss-meyer-lamoureux-god-science-universe-2016-move-14",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 3,
+        "endChar": 122,
+        "text": "there's a big difference between a purely chance hypothesis and a hypothesis that combines chance and natural selection"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "retained",
+      "burdenEvidence": null,
+      "componentContacts": [
+        {
+          "componentId": "krauss-meyer-lamoureux-god-science-universe-2016-target-14-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 355,
+            "endChar": 523,
+            "text": "the mechanism that I'm critiquing is not a straight chance but it's uh a search for possibilities and then natural selection would select those that are functionally uh"
+          }
+        },
+        {
+          "componentId": "krauss-meyer-lamoureux-god-science-universe-2016-target-14-c2",
+          "contacted": true,
+          "evidence": {
+            "startChar": 251,
+            "endChar": 284,
+            "text": "I'm not arguing from chance alone"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "attribution-error",
+      "defectCue": {
+        "startChar": 251,
+        "endChar": 284,
+        "text": "I'm not arguing from chance alone"
+      },
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": false,
+      "malformedDemandCue": null,
+      "replacementDemandStated": false,
+      "replacementDemandCue": null,
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "krauss-meyer-lamoureux-god-science-universe-2016-con-central",
+        "evidence": {
+          "startChar": 462,
+          "endChar": 523,
+          "text": "natural selection would select those that are functionally uh"
+        }
+      },
+      "rationale": "Case v291-dev-84-14 has 2 of 2 indispensable components contacted, attribution-error cue without a separate consequence, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-184-09",
+      "moveId": "184-move-09",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 25,
+        "endChar": 74,
+        "text": "to say that that's not a way of getting knowledge"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "replaced",
+      "burdenEvidence": {
+        "startChar": 185,
+        "endChar": 323,
+        "text": "my question is is there any problem with it not is it or is it not classified into this or that drawer but is there anything wrong with it"
+      },
+      "componentContacts": [
+        {
+          "componentId": "184-target-09-c1",
+          "contacted": true,
+          "evidence": {
+            "startChar": 25,
+            "endChar": 74,
+            "text": "to say that that's not a way of getting knowledge"
+          }
+        }
+      ],
+      "relevantContraryMaterial": false,
+      "contraryEvidence": null,
+      "defectType": "none",
+      "defectCue": null,
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": true,
+      "malformedDemandCue": {
+        "startChar": 229,
+        "endChar": 287,
+        "text": "not is it or is it not classified into this or that drawer"
+      },
+      "replacementDemandStated": true,
+      "replacementDemandCue": {
+        "startChar": 292,
+        "endChar": 323,
+        "text": "is there anything wrong with it"
+      },
+      "burdenContact": {
+        "tier": "central",
+        "bridgeId": "con-central-instrumental-sufficiency",
+        "evidence": {
+          "startChar": 292,
+          "endChar": 323,
+          "text": "is there anything wrong with it"
+        }
+      },
+      "rationale": "Case v291-dev-184-09 has 1 of 1 indispensable components contacted, a complete two-clause reframe, central burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    },
+    {
+      "caseId": "v291-dev-185-08",
+      "moveId": "m08-con-q2-responsive-control-insufficient",
+      "originalTargetContact": true,
+      "targetEvidence": {
+        "startChar": 0,
+        "endChar": 91,
+        "text": "all the kind of compatibilist distinctions that have been made over the last 20 to 50 years"
+      },
+      "connectedExample": false,
+      "connectionEvidence": null,
+      "scopeRelation": "same",
+      "scopeEvidence": null,
+      "burdenAdjustment": "replaced",
+      "burdenEvidence": {
+        "startChar": 115,
+        "endChar": 253,
+        "text": "the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+      },
+      "componentContacts": [
+        {
+          "componentId": "t08-c1-degrees-control",
+          "contacted": false,
+          "evidence": null
+        },
+        {
+          "componentId": "t08-c2-well-functioning-reasons",
+          "contacted": false,
+          "evidence": null
+        }
+      ],
+      "relevantContraryMaterial": true,
+      "contraryEvidence": {
+        "startChar": 284,
+        "endChar": 390,
+        "text": "those distinctions matter they matter in all kinds of important ways but they matter for different reasons"
+      },
+      "defectType": "none",
+      "defectCue": null,
+      "consequenceStated": false,
+      "consequenceCue": null,
+      "malformedDemandExplained": true,
+      "malformedDemandCue": {
+        "startChar": 284,
+        "endChar": 390,
+        "text": "those distinctions matter they matter in all kinds of important ways but they matter for different reasons"
+      },
+      "replacementDemandStated": true,
+      "replacementDemandCue": {
+        "startChar": 131,
+        "endChar": 253,
+        "text": "whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+      },
+      "burdenContact": {
+        "tier": "motion",
+        "bridgeId": "pro-motion-responsibility",
+        "evidence": {
+          "startChar": 179,
+          "endChar": 253,
+          "text": "ground the kinds of more dessert-based moral practices that we're debating"
+        }
+      },
+      "rationale": "Case v291-dev-185-08 has 0 of 2 indispensable components contacted, a complete two-clause reframe, motion burden contact; its exact cited language fixes these primitives without inferred dependency contact."
+    }
+  ],
+  "audit": {
+    "caseCount": 27,
+    "allCasesAnnotatedOnce": true,
+    "componentSetErrors": 0,
+    "evidenceErrors": 0,
+    "derivedFieldsPresent": false,
+    "scoreFieldsPresent": false,
+    "nonDefaultCounts": {
+      "originalTargetContacts": 27,
+      "connectedExamples": 6,
+      "componentContacts": 43,
+      "defectCandidates": 12,
+      "diagnosticPositives": 5,
+      "reframePositives": 4,
+      "burdenContacts": 26,
+      "uniqueRationales": 27
+    }
+  }
+}

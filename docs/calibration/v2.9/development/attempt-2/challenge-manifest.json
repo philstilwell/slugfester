@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "2.9.1-development-challenge-manifest",
+  "status": "frozen-before-blind-passes",
+  "frozenAt": "2026-08-03T21:23:29.119Z",
+  "calibrationOnly": true,
+  "heldOutTranscriptsOpened": false,
+  "numericalScoringAuthorized": false,
+  "productionMutationAuthorized": false,
+  "workflowVersion": "Slugfester Reassessment Workflow v2.9.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.9.1",
+  "attempt": 2,
+  "caseCount": 27,
+  "laneCounts": {
+    "dyadic": 12,
+    "multiSpeaker": 15
+  },
+  "keyFeatureCounts": {
+    "diagnosticPositive": 8,
+    "diagnosticNegative": 19,
+    "reframePositive": 3,
+    "reframeNegative": 24
+  },
+  "thresholds": {
+    "originalTargetContactExact": 0.9,
+    "scopeExact": 0.9,
+    "burdenAdjustmentExact": 0.9,
+    "componentContactMicroExact": 0.9,
+    "coverageExact": 0.85,
+    "coverageKappa": 0.75,
+    "defectTypeExact": 0.85,
+    "consequenceExact": 0.9,
+    "diagnosticExact": 0.9,
+    "reframeExact": 0.9,
+    "burdenRelevanceExact": 0.85,
+    "burdenRelevanceKappa": 0.75,
+    "exactDerivedTupleExact": 0.75,
+    "diagnosticPositiveRecall": 0.8,
+    "reframePositiveRecall": 0.8
+  },
+  "passIsolation": {
+    "model": "5.6 Sol",
+    "method": "fresh-isolated-v2.9.1-development-challenge",
+    "allowedInputs": [
+      "docs/assessment-workflow-v2.9.1.md",
+      "docs/reassessment-rubric-v2.9.1.md",
+      "docs/calibration/v2.9/development/attempt-2/annotation-manual.md",
+      "docs/calibration/v2.9/development/attempt-2/challenge-annotation-schema.json",
+      "docs/calibration/v2.9/development/attempt-2/challenge-input.json",
+      "docs/calibration/v2.9/development/attempt-2/practice-fixture.json"
+    ],
+    "prohibitedInputs": [
+      "docs/calibration/v2.9/development/attempt-2/key-candidate-a.json",
+      "docs/calibration/v2.9/development/attempt-2/key-candidate-b.json",
+      "docs/calibration/v2.9/development/attempt-2/challenge-key.json",
+      "docs/calibration/v2.9/development/attempt-2/key-adjudication-ledger.md",
+      "docs/calibration/v2.9/development/attempt-2/challenge-pass-a.json",
+      "docs/calibration/v2.9/development/attempt-2/challenge-pass-b.json"
+    ]
+  },
+  "outputs": {
+    "passA": "docs/calibration/v2.9/development/attempt-2/challenge-pass-a.json",
+    "passB": "docs/calibration/v2.9/development/attempt-2/challenge-pass-b.json",
+    "analysis": "docs/calibration/v2.9/development/attempt-2/challenge-analysis.json"
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v2.9.1.md": "7eb66c58c3117b6bc165291e9150d6ba18af579452caf2345e2d4d3608373bba",
+    "docs/reassessment-rubric-v2.9.1.md": "efb112c0ea6a55ea8202801661cd96506150b1faae34226e356f41ae1d531790",
+    "docs/calibration/v2.9/development/attempt-2/annotation-manual.md": "24e07a3d60bdc5d5ec98bedb5b9247db34764ea76ee259b88139dc0988d7b998",
+    "docs/calibration/v2.9/development/attempt-2/challenge-annotation-schema.json": "053e12c98923771d7470dc359a06de54750cdce98cfec0ec84b186403e15b98b",
+    "docs/calibration/v2.9/development/attempt-2/practice-fixture.json": "90f739a9575573136c760c2ba8ce5c7db3661bf6e51ea9e3ebc1dacfeb76e97f",
+    "docs/calibration/v2.9/development/attempt-2/challenge-input.json": "9e4594cbbd1adfeeafca98c5c1765dca1eb8c384ed780a7184802165126c1f2b",
+    "docs/calibration/v2.9/development/attempt-2/selection-ledger.json": "06c1fb26183134a1c4e0ec35740ec9539ba4a6ba4507c46a3f4a635f047eb0d4",
+    "docs/calibration/v2.9/development/attempt-2/key-candidate-a.json": "b3b9556fb3a4065bdfbb0e473d5b37d651332a2ebaee9e9ef0b0ed669f926606",
+    "docs/calibration/v2.9/development/attempt-2/key-candidate-b.json": "3d7c638a216daa8dc82855d20758ed1798b98e5ce0a4936dcb6c0da5fd1188cc",
+    "docs/calibration/v2.9/development/attempt-2/challenge-key.json": "00169be908882d9be555347043234199a3ad2063c80078720190f09d26cc3b84",
+    "docs/calibration/v2.9/development/attempt-2/key-adjudication-ledger.md": "be1bd16e12e1662b69bfe8aeb513f4c565269bb2e5631b9e60dea0d5e31714e1",
+    "scripts/lib/v291-semantics.mjs": "e34d837111f33e0ae5377433c802ca1b692eb5fc55af88ab68923b7d6fda0524",
+    "scripts/build-v291-development-attempt.mjs": "61254d0a1892b296a4aedf4af2fd091e9684b546e723fbe38f2b4d94ea5387ff",
+    "scripts/build-v291-pass-validator.mjs": "6d47995a0a6e428dd42af6d0d4df02a2dbdd22e1f9d58796777b66eb7b2f9869",
+    "scripts/validate-v291-practice-fixture.mjs": "a8b1fd5d93732b2a1d8916c2b99a0e9e850ea75265bda12b624dcc9376af3af2",
+    "scripts/validate-v291-development-input.mjs": "6706976d2a3874728fb304c6d3b3f2a99bb89ae1696ec67dfd88137ca46ada2f",
+    "scripts/validate-v291-development-pass.mjs": "7e9f5ba81841d8f5769a4682b05a00302c5459e549432d6568df782ab253ee27",
+    "scripts/analyze-v291-development-challenge.mjs": "1dc3d0deba7a6377500907be045e235f3242240f41477fa092afbf208caecb14",
+    "scripts/build-v291-challenge-manifest.mjs": "49d5c55329d2dc923fd2767a85d7df01786e75c22226e1e872e2eb8f9dc67299"
+  }
+}

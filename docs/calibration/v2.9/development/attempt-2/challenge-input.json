@@ -1,0 +1,2355 @@
+{
+  "schemaVersion": "2.9.1-development-challenge-input",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.9.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.9.1",
+  "calibrationOnly": true,
+  "numericalScoresIncluded": false,
+  "legacyPassLabelsIncluded": false,
+  "sourceGateCommit": "retired-v2.8.2-plus-v2.5-explicit-reframe-material-only",
+  "caseCount": 27,
+  "laneCounts": {
+    "dyadic": 12,
+    "multiSpeaker": 15
+  },
+  "cases": [
+    {
+      "caseId": "v291-dev-04-05",
+      "lane": "dyadic",
+      "debateId": "lennox-atkins-science-explain-everything-2019",
+      "debateNumber": "04",
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-05",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "sourceExcerpt": "it didn't happen how could it happen and science I think could even go so far as saying it simply could not happen when you've got a dead body it's decaying straight away there's no way that it's going to reconstitute in some way it's absurd and I accept that it is the foundation of Christian faith that doesn't mean to say that it's true and so I let's dismiss that as something that simply has no evidence whatsoever",
+      "sourceExcerptSha256": "04013b0d4e31396e0fb562711a2a4d695d9e36f2a290220d4929f8f83cb6267b",
+      "targetPacket": {
+        "id": "lennox-atkins-science-explain-everything-2019-target-05",
+        "targetSpeaker": "John Lennox",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 990290,
+          "endMs": 1009300
+        },
+        "sourceExcerpt": "but what really makes me in one sense very much in favor of the Christian faith is that from the very start it claims to be evidence based the central piece of evidence is of course as you probably know the resurrection of Jesus",
+        "sourceExcerptSha256": "fd9bee0d6d91eb786c74ae875a2fc5424cedbf4ec91c94161f96a64c4af1a42d",
+        "claim": "Christianity claims to be evidence-based, with Jesus's resurrection as its central piece of evidence.",
+        "targetRelationToMove": "earlier-load-bearing-claim",
+        "interveningOpponentClaim": true,
+        "exceptionRationale": "Atkins explicitly returns to Lennox's resurrection-evidence claim; Lennox's intervening methodology and mechanism-versus-purpose claims concern different issues and do not supersede this target.",
+        "indispensableComponents": [
+          {
+            "id": "lennox-atkins-science-explain-everything-2019-target-05-c1",
+            "text": "Christianity claims from its beginning to be evidence-based.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "lennox-atkins-science-explain-everything-2019-target-05-c2",
+            "text": "Jesus's resurrection is Christianity's central piece of evidence.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "lennox-atkins-science-explain-everything-2019-con-route",
+          "eligibleBridgeIds": [
+            "lennox-atkins-science-explain-everything-2019-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "lennox-atkins-science-explain-everything-2019-con-route",
+          "side": "con",
+          "description": "Evidence-based science can in principle explain every real question without supernatural additions.",
+          "successCriteria": "Purpose and afterlife questions lack evidence, while natural processes can account for reality and consciousness.",
+          "bridges": [
+            {
+              "id": "lennox-atkins-science-explain-everything-2019-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "lennox-atkins-science-explain-everything-2019-con-central",
+              "tier": "central",
+              "description": "Evidence-based science can in principle explain every real question without supernatural additions."
+            },
+            {
+              "id": "lennox-atkins-science-explain-everything-2019-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-04-05",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-04-06",
+      "lane": "dyadic",
+      "debateId": "lennox-atkins-science-explain-everything-2019",
+      "debateNumber": "04",
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-06",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "sourceExcerpt": "wouldn't quite argue that way I would say that science cannot forbid a resurrection because you see science proceeds on discovering the regularities to which nature works and has done a very impressive job and the fact that we know that dead bodies don't normally rise that is a law of nature in that sense means that we recognize something very special happened if it did happen",
+      "sourceExcerptSha256": "87839a0c2e1cfff6395579bc6f969c1ab9a0aadde1808a31d88024132ceaa9f5",
+      "targetPacket": {
+        "id": "lennox-atkins-science-explain-everything-2019-target-06",
+        "targetSpeaker": "Peter Atkins",
+        "targetSide": "con",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 1177189,
+          "endMs": 1207399
+        },
+        "sourceExcerpt": "it didn't happen how could it happen and science I think could even go so far as saying it simply could not happen when you've got a dead body it's decaying straight away there's no way that it's going to reconstitute in some way it's absurd and I accept that it is the foundation of Christian faith that doesn't mean to say that it's true and so I let's dismiss that as something that simply has no evidence whatsoever",
+        "sourceExcerptSha256": "04013b0d4e31396e0fb562711a2a4d695d9e36f2a290220d4929f8f83cb6267b",
+        "claim": "Science can rule out resurrection because dead bodies decay immediately and cannot reconstitute.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "lennox-atkins-science-explain-everything-2019-target-06-c1",
+            "text": "Dead bodies begin decaying immediately.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "lennox-atkins-science-explain-everything-2019-target-06-c2",
+            "text": "A decaying dead body cannot reconstitute.",
+            "kind": "rule-comparison",
+            "dependsOn": []
+          },
+          {
+            "id": "lennox-atkins-science-explain-everything-2019-target-06-c3",
+            "text": "Science can therefore rule out resurrection.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "lennox-atkins-science-explain-everything-2019-target-06-c1",
+              "lennox-atkins-science-explain-everything-2019-target-06-c2"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "lennox-atkins-science-explain-everything-2019-pro-route",
+          "eligibleBridgeIds": [
+            "lennox-atkins-science-explain-everything-2019-pro-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "lennox-atkins-science-explain-everything-2019-pro-route",
+          "side": "pro",
+          "description": "Natural science is powerful but cannot exhaust historical, purposive, moral, and theological explanation.",
+          "successCriteria": "Rational intelligibility, agency, and the resurrection provide evidence for explanations beyond natural science.",
+          "bridges": [
+            {
+              "id": "lennox-atkins-science-explain-everything-2019-pro-motion",
+              "tier": "motion",
+              "description": "Establish the pro side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "lennox-atkins-science-explain-everything-2019-pro-central",
+              "tier": "central",
+              "description": "Natural science is powerful but cannot exhaust historical, purposive, moral, and theological explanation."
+            },
+            {
+              "id": "lennox-atkins-science-explain-everything-2019-pro-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the pro side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-04-06",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-04-10",
+      "lane": "dyadic",
+      "debateId": "lennox-atkins-science-explain-everything-2019",
+      "debateNumber": "04",
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-10",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "sourceExcerpt": "people get through often very difficult challenging lines then I can see that in some cases religion can be palliative it can be a great comfort to them it's a false comfort but yeah they don't know",
+      "sourceExcerptSha256": "096e501799e1e1a607003cca957461e5e0b3ee58efa01b232d3f5f6667c867cb",
+      "targetPacket": {
+        "id": "lennox-atkins-science-explain-everything-2019-target-10",
+        "targetSpeaker": "John Lennox",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 4140010,
+          "endMs": 4147699
+        },
+        "sourceExcerpt": "telling them there is no god there's no life after death there's no resurrection there's no ultimate hope in your atheist",
+        "sourceExcerptSha256": "334555ca9685294ad109cb1b267e20e994a97b26307d43e0ac172b1ad2737816",
+        "claim": "Atheism tells people there is no God, life after death, resurrection, or ultimate hope.",
+        "targetRelationToMove": "earlier-load-bearing-claim",
+        "interveningOpponentClaim": true,
+        "exceptionRationale": "Atkins's false-comfort concession returns to Lennox's no-ultimate-hope challenge; Lennox's intervening point about people denied justice in this life extends the practical stakes without superseding the afterlife target.",
+        "indispensableComponents": [
+          {
+            "id": "lennox-atkins-science-explain-everything-2019-target-10-c1",
+            "text": "Atkins tells people there is no God.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "lennox-atkins-science-explain-everything-2019-target-10-c2",
+            "text": "Atkins tells people there is no life after death and no resurrection.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "lennox-atkins-science-explain-everything-2019-target-10-c3",
+            "text": "Atkins's atheist position therefore offers no ultimate hope.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "lennox-atkins-science-explain-everything-2019-target-10-c1",
+              "lennox-atkins-science-explain-everything-2019-target-10-c2"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "lennox-atkins-science-explain-everything-2019-con-route",
+          "eligibleBridgeIds": [
+            "lennox-atkins-science-explain-everything-2019-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "lennox-atkins-science-explain-everything-2019-con-route",
+          "side": "con",
+          "description": "Evidence-based science can in principle explain every real question without supernatural additions.",
+          "successCriteria": "Purpose and afterlife questions lack evidence, while natural processes can account for reality and consciousness.",
+          "bridges": [
+            {
+              "id": "lennox-atkins-science-explain-everything-2019-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "lennox-atkins-science-explain-everything-2019-con-central",
+              "tier": "central",
+              "description": "Evidence-based science can in principle explain every real question without supernatural additions."
+            },
+            {
+              "id": "lennox-atkins-science-explain-everything-2019-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-04-10",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-04-11",
+      "lane": "dyadic",
+      "debateId": "lennox-atkins-science-explain-everything-2019",
+      "debateNumber": "04",
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-11",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "sourceExcerpt": "faced with a huge moral question that's often been debated and at the simplest level science chemistry I believe can tell me that if I put arsenic in my granny's tea it will give her a pretty rough time but science chemistry cannot tell me whether I ought to do it or not",
+      "sourceExcerptSha256": "494e89ae384dbf6779d5d4e3f913325c29e330568a9a1486bdaf5e83d572d438",
+      "targetPacket": {
+        "id": "lennox-atkins-science-explain-everything-2019-target-11",
+        "targetSpeaker": "Peter Atkins",
+        "targetSide": "con",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 4764619,
+          "endMs": 4795849
+        },
+        "sourceExcerpt": "and that's a interesting question I think you need to know the psychology of the of the politician if they have any some clearly don't you you have to look at their their general upbringing and attitudes in a scientific way maybe a statistical way I think there are you can bring to bear the scientific method on two questions about how political decision how they should act",
+        "sourceExcerptSha256": "7c98007560e7b4cb3b4645c4a1989c6c5594deeb9b8eecf96300bf5398b38489",
+        "claim": "Scientific and statistical study of politicians' psychology, upbringing, and attitudes can address how political decision-makers should act.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "lennox-atkins-science-explain-everything-2019-target-11-c1",
+            "text": "Politicians' psychology, upbringing, and attitudes can be studied scientifically and statistically.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "lennox-atkins-science-explain-everything-2019-target-11-c2",
+            "text": "Scientific method can therefore address how political decision-makers should act.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "lennox-atkins-science-explain-everything-2019-target-11-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "lennox-atkins-science-explain-everything-2019-pro-route",
+          "eligibleBridgeIds": [
+            "lennox-atkins-science-explain-everything-2019-pro-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "lennox-atkins-science-explain-everything-2019-pro-route",
+          "side": "pro",
+          "description": "Natural science is powerful but cannot exhaust historical, purposive, moral, and theological explanation.",
+          "successCriteria": "Rational intelligibility, agency, and the resurrection provide evidence for explanations beyond natural science.",
+          "bridges": [
+            {
+              "id": "lennox-atkins-science-explain-everything-2019-pro-motion",
+              "tier": "motion",
+              "description": "Establish the pro side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "lennox-atkins-science-explain-everything-2019-pro-central",
+              "tier": "central",
+              "description": "Natural science is powerful but cannot exhaust historical, purposive, moral, and theological explanation."
+            },
+            {
+              "id": "lennox-atkins-science-explain-everything-2019-pro-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the pro side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-04-11",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-152-08",
+      "lane": "dyadic",
+      "debateId": "knechtle-aron-ra-god-existence-2023",
+      "debateNumber": "152",
+      "moveId": "knechtle-aron-ra-god-existence-2023-move-08",
+      "side": "con",
+      "speaker": "Aron Ra",
+      "sourceExcerpt": "groups will find political or religious reasons to justify the evil that they know that they're doing you and I can both come up with exceptions of how of the excuses that people have written into their Dogma to justify the evil that they're doing we can do that all day",
+      "sourceExcerptSha256": "e5627939c84cbdf688a8f5e1ea8343791dc235282942805a2dea61d32f3c0c54",
+      "targetPacket": {
+        "id": "knechtle-aron-ra-god-existence-2023-target-08",
+        "targetSpeaker": "Stuart Knechtle",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 3637440,
+          "endMs": 3655160
+        },
+        "sourceExcerpt": "how do you explain the recent woman who you know she's a writer for the Boston Globe strong atheist she went down and was trying to help eradicate in a certain tribe on her killings they thought honor killings were fine",
+        "sourceExcerptSha256": "3111528158affdf01b70ae40a4c9b5d6f7d2f7d7779425eb666d5f7ef01c20e3",
+        "claim": "A tribe's acceptance of honor killings poses a challenge to Aron's account of universal moral recognition.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "knechtle-aron-ra-god-existence-2023-target-08-c1",
+            "text": "A tribe regarded honor killings as acceptable.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "knechtle-aron-ra-god-existence-2023-target-08-c2",
+            "text": "A strong atheist tried to eradicate that practice.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "knechtle-aron-ra-god-existence-2023-target-08-c3",
+            "text": "Aron's account of universal moral recognition must explain this conflict.",
+            "kind": "burden",
+            "dependsOn": [
+              "knechtle-aron-ra-god-existence-2023-target-08-c1",
+              "knechtle-aron-ra-god-existence-2023-target-08-c2"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "knechtle-aron-ra-god-existence-2023-con-route",
+          "eligibleBridgeIds": [
+            "knechtle-aron-ra-god-existence-2023-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "knechtle-aron-ra-god-existence-2023-con-route",
+          "side": "con",
+          "description": "Natural properties, evolution, social cooperation, and evidence-based inquiry require no designer or divine lawgiver.",
+          "successCriteria": "Religious claims lack adequate evidence and often shift burdens that properly remain with the theist.",
+          "bridges": [
+            {
+              "id": "knechtle-aron-ra-god-existence-2023-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "knechtle-aron-ra-god-existence-2023-con-central",
+              "tier": "central",
+              "description": "Natural properties, evolution, social cooperation, and evidence-based inquiry require no designer or divine lawgiver."
+            },
+            {
+              "id": "knechtle-aron-ra-god-existence-2023-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-152-08",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-154-08",
+      "lane": "multi-speaker",
+      "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "debateNumber": "154",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-08",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "sourceExcerpt": ">> there are people who do the opposite there. There are people who do the opposite there. Yeah, there's people that would have gone the other way and they'll be in the comment section right now saying, \"Well, I went from Christianity to Islam.\"",
+      "sourceExcerptSha256": "45f98e12d301764e63a200c10243eb6e32f1ed096413d4844eec9c3787333896",
+      "targetPacket": {
+        "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08",
+        "targetSpeaker": "Greg Koukl",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 5191440,
+          "endMs": 5209520
+        },
+        "sourceExcerpt": ">> So, the the presumption that you made is a presumption. We have to keep that in mind. I mean, the people that I have talked to who are former Muslims and are now Christians, very devout Muslims, they did not have the experience of satisfaction, fullness, and connection with God with in Islam that they do in",
+        "sourceExcerptSha256": "f4cd1d5aa2fab4f221832b4c65c4cad8f331e3da12edb92e47d2d8f10be08d20",
+        "claim": "Former Muslims known to Koukl found greater satisfaction, fullness, and connection with God after converting to Christianity.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1",
+            "text": "Former devout Muslims known to Koukl report greater satisfaction and connection with God as Christians than they had in Islam.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2",
+            "text": "Those changed lives count against treating religious satisfaction as interchangeable across religions.",
+            "kind": "inference",
+            "dependsOn": [
+              "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "eligibleBridgeIds": [
+            "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "side": "con",
+          "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices.",
+          "successCriteria": "Religious purpose claims face arbitrariness, suffering, and truth-evidence problems that felt meaning cannot settle.",
+          "bridges": [
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+              "tier": "central",
+              "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-154-08",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-154-09",
+      "lane": "multi-speaker",
+      "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "debateNumber": "154",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-09",
+      "side": "con",
+      "speaker": "Alok Kanojia",
+      "sourceExcerpt": ">> in the West, right? So, I think there's a whole different set of axioms. I'm using dharma and that's what people will like put morality onto dharma, where I I don't think that that's actually fair. So, so I going back to I have a duty just to give another example um and y'all can decide whether this is moral",
+      "sourceExcerptSha256": "d3dfbe9591970ec9d714c23efe49bd92630221570f58b6e4d35ca3cad3163618",
+      "targetPacket": {
+        "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09",
+        "targetSpeaker": "Greg Koukl",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 2946880,
+          "endMs": 2964680
+        },
+        "sourceExcerpt": "The other thing is, is there any reason to believe that there is a transcendent reality, that God exists, that souls exist, that that there is an objective morality that guides our life, and if we're living virtuously, that's going to be satisfying even if we don't believe in God or not. Those are the two things",
+        "sourceExcerptSha256": "b377905fcfd0456630c6e652eeaa14cce553e5273607f3bcb9eebda600b480ca",
+        "claim": "A transcendent reality includes an objective morality that guides life and makes virtuous living satisfying.",
+        "targetRelationToMove": "earlier-load-bearing-claim",
+        "interveningOpponentClaim": true,
+        "exceptionRationale": "Kanojia explicitly contrasts Western moral axioms with dharma after Koukl presses him about transcendent moral duty, thereby engaging Koukl's earlier stated objective-morality route; the immediately preceding Koukl fragments are each too short to preserve the full load-bearing proposition without mixing speakers.",
+        "indispensableComponents": [
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c1",
+            "text": "There is a transcendent objective morality that guides human life.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c2",
+            "text": "Living virtuously under that morality is satisfying even without explicit belief in God.",
+            "kind": "inference",
+            "dependsOn": [
+              "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "eligibleBridgeIds": [
+            "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "side": "con",
+          "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices.",
+          "successCriteria": "Religious purpose claims face arbitrariness, suffering, and truth-evidence problems that felt meaning cannot settle.",
+          "bridges": [
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+              "tier": "central",
+              "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-154-09",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-154-11",
+      "lane": "multi-speaker",
+      "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "debateNumber": "154",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-11",
+      "side": "con",
+      "speaker": "Alok Kanojia",
+      "sourceExcerpt": ">> Yes, and I think there is an a layer of morality, but that is not within dharma. So, for example, there are yamas and niyamas, which are things like truthfulness, ahimsa, which means non-violence. So, there's a set of different things that we would generally speaking call morality, and doing those things is usually in accordance with",
+      "sourceExcerptSha256": "02ec2f89de55e0f709379a83d1656f2e1e527ecf261f2af2e03f23572921ecba",
+      "targetPacket": {
+        "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11",
+        "targetSpeaker": "Greg Koukl",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 6415880,
+          "endMs": 6429640
+        },
+        "sourceExcerpt": ">> So, when you say you ought to help the person in the emergency room, all you mean is you're not morally compelled to do that in in terms of a virtue, but there is a a consequence for you to do that as opposed to doing the opposite.",
+        "sourceExcerptSha256": "1e3df9bc0ec08eebf07ad7017d1ec7ccd952abeb14e88b6850ab027371dde4a3",
+        "claim": "On Kanojia's account, an emergency-room duty is only consequential rather than morally or virtuously compelling.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c1",
+            "text": "Kanojia's emergency-room duty is not a moral compulsion in terms of virtue.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c2",
+            "text": "It instead identifies a consequence of acting one way rather than another.",
+            "kind": "rule-comparison",
+            "dependsOn": [
+              "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "eligibleBridgeIds": [
+            "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "side": "con",
+          "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices.",
+          "successCriteria": "Religious purpose claims face arbitrariness, suffering, and truth-evidence problems that felt meaning cannot settle.",
+          "bridges": [
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+              "tier": "central",
+              "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-154-11",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-154-12",
+      "lane": "multi-speaker",
+      "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "debateNumber": "154",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-12",
+      "side": "con",
+      "speaker": "Alok Kanojia",
+      "sourceExcerpt": "dharma, but, you know, the Mahabharata is a great case of someone saying, \"I don't want to kill my cousins, and I don't want to kill my teacher.\" And Krishna saying, \"You absolutely should, because it is in accordance with dharma.\" So, I think dharma often times gets like translated over to morality, but I think you lose something in translation.",
+      "sourceExcerptSha256": "0ca646891ad9d33e32302ecdd652c96b880cd9c69c87d9222f0984f992128b9c",
+      "targetPacket": {
+        "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12",
+        "targetSpeaker": "Greg Koukl",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 6415880,
+          "endMs": 6429640
+        },
+        "sourceExcerpt": ">> So, when you say you ought to help the person in the emergency room, all you mean is you're not morally compelled to do that in in terms of a virtue, but there is a a consequence for you to do that as opposed to doing the opposite.",
+        "sourceExcerptSha256": "1e3df9bc0ec08eebf07ad7017d1ec7ccd952abeb14e88b6850ab027371dde4a3",
+        "claim": "On Kanojia's account, an emergency-room duty is only consequential rather than morally or virtuously compelling.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c1",
+            "text": "Kanojia's emergency-room duty is not a moral compulsion in terms of virtue.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c2",
+            "text": "It instead identifies a consequence of acting one way rather than another.",
+            "kind": "rule-comparison",
+            "dependsOn": [
+              "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "eligibleBridgeIds": [
+            "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "side": "con",
+          "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices.",
+          "successCriteria": "Religious purpose claims face arbitrariness, suffering, and truth-evidence problems that felt meaning cannot settle.",
+          "bridges": [
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+              "tier": "central",
+              "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-154-12",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-154-14",
+      "lane": "multi-speaker",
+      "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "debateNumber": "154",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-14",
+      "side": "pro",
+      "speaker": "Greg Koukl",
+      "sourceExcerpt": ">> Well, the nature of freedom in my understanding, my view, is that it can initiate things, okay? You don't have to have in a certain sense deterministic element in your in your soul that forces you to act a certain way. Why did Adam and Eve even this case act the way she did? Because she was capable of initiating a free action. And this free action in terms of rebellion, okay?",
+      "sourceExcerptSha256": "ec96cc0a92633348f7bab6202b0a1cff4e8404d01d8ee94863ed34855f122f3e",
+      "targetPacket": {
+        "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14",
+        "targetSpeaker": "Alex O'Connor",
+        "targetSide": "con",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 8167200,
+          "endMs": 8193440
+        },
+        "sourceExcerpt": "humans have a sinful nature and act upon sin, then why did Eve act upon the sin before the fall had happened? Eve must have had a proclivity to sin in order to in order to betray God in the first place. And so, I don't think it suffices to say that the explanation for why we have human beings with a proclivity to sin like Adolf Hitler is because of the fall if the fall is a result of a proclivity to sin from Eve.",
+        "sourceExcerptSha256": "0c7c35d4d5a7b7ebbb92bd1fcb70316c1b77bb2da8393bb9fc5793c2dca74297",
+        "claim": "If the fall explains humanity's proclivity to sin, Eve's sin before the fall creates a regress because it already presupposes that proclivity.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c1",
+            "text": "The fall is offered as the explanation for humanity's sinful nature and proclivity to sin.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c2",
+            "text": "Eve acted on a proclivity to sin before the fall occurred.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c3",
+            "text": "The fall therefore cannot explain the very proclivity that produced it.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c1",
+              "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c2"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-route",
+          "eligibleBridgeIds": [
+            "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-route",
+          "side": "pro",
+          "description": "A personal creator gives human beings objective purpose, flourishing, moral truth, and relationship with God.",
+          "successCriteria": "Naturalism cannot adequately explain consciousness, moral intuition, or the hunger for transcendent meaning.",
+          "bridges": [
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-motion",
+              "tier": "motion",
+              "description": "Establish the pro side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-central",
+              "tier": "central",
+              "description": "A personal creator gives human beings objective purpose, flourishing, moral truth, and relationship with God."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the pro side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-154-14",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-154-15",
+      "lane": "multi-speaker",
+      "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "debateNumber": "154",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-15",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "sourceExcerpt": ">> All that means is that the fall does not explain the proclivity to sin because Eve already had it. It does not explain the existence of evil because knowledge of that already existed before she committed the fall. It also doesn't explain the origin of suffering because of course Eve's punishment for eating from the tree of the knowledge of good and evil.",
+      "sourceExcerptSha256": "0060a9417b56cd7b54585bab817a4aeb2b594e798e5e923f4f3a814b5888e7eb",
+      "targetPacket": {
+        "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15",
+        "targetSpeaker": "Greg Koukl",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 8272760,
+          "endMs": 8294719
+        },
+        "sourceExcerpt": "okay? She wouldn't have been She wouldn't have not been able to even understand the command not to do something if she didn't have those moral categories. I think that's part of the image of God and man. Consequently, she knew she ought not do it, but she still chose, for whatever reason, to do that. And that act of disobedience created a big mess.",
+        "sourceExcerptSha256": "06ed5f85d641fc2abb52a9acaeb261702f14e828234b9a12b09d5eefd9e0bc29",
+        "claim": "Eve already possessed moral categories through the image of God, understood the command, and freely disobeyed it, thereby creating the fall's consequences.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c1",
+            "text": "Eve possessed moral categories and could understand God's command before eating from the tree.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c2",
+            "text": "She knew she ought not disobey but freely chose to do so.",
+            "kind": "fact-premise",
+            "dependsOn": [
+              "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c1"
+            ]
+          },
+          {
+            "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c3",
+            "text": "That act of disobedience produced the fall's consequences.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c2"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "eligibleBridgeIds": [
+            "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-route",
+          "side": "con",
+          "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices.",
+          "successCriteria": "Religious purpose claims face arbitrariness, suffering, and truth-evidence problems that felt meaning cannot settle.",
+          "bridges": [
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+              "tier": "central",
+              "description": "Subjective meaning and practical flourishing can arise through secular, psychological, and spiritual practices."
+            },
+            {
+              "id": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-154-15",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-185-05",
+      "lane": "dyadic",
+      "debateId": "dennett-caruso-free-will-responsibility-2021",
+      "debateNumber": "185",
+      "moveId": "m05-pro-q1-responsive-free-will-worth-wanting",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "sourceExcerpt": "and it matters for the reasons that greg sort of started out with namely we want to know about responsibility and whether whether we deserve blame and praise and so forth and as long as you stick to that as long as you stick to the fact that that's the kind of free will that matters then first of all libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you",
+      "sourceExcerptSha256": "8a9b511114341c053698823343b61c3a64efb9266d6ca61654852ead040c7306",
+      "targetPacket": {
+        "id": "t05-caruso-beyond-control-basic-desert",
+        "targetSpeaker": "Gregg Caruso",
+        "sourceSpan": {
+          "startMs": 1076000,
+          "endMs": 1097440
+        },
+        "sourceExcerpt": "so i'm a free will skeptic dan's a compatibilist and so my free will skepticism i define as uh the thesis that who we are and what we do is sort of ultimately the result of factors beyond our control and because of that we're never morally responsible in a very particular and pervasive sense which i call the basic dessert sense",
+        "sourceExcerptSha256": "74da12a7b3d44d322fc9ce52aafd76f6d3489057abc1a94208c7c03c648caecf",
+        "claim": "Factors beyond agents' control eliminate moral responsibility in the basic-desert sense.",
+        "indispensableComponents": [
+          {
+            "id": "t05-c1-beyond-control",
+            "text": "Who agents are and what they do ultimately result from factors beyond their control.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t05-c2-no-basic-desert",
+            "text": "That beyond-control condition entails that agents are never morally responsible in the basic-desert sense.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "t05-c1-beyond-control"
+            ]
+          }
+        ],
+        "selectionRationale": "This exact prior span contains the skeptical premise and its basic-desert conclusion that Dennett's response distinguishes from worthwhile responsibility.",
+        "targetSide": "con",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "targetRelationToMove": "retired-explicit-reframe-fixture",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "con-skeptical-sourcehood-route",
+          "eligibleBridgeIds": [
+            "con-central-sourcehood",
+            "con-motion-no-basic-desert"
+          ],
+          "selectionRationale": "The response primarily contests the skeptical route by separating responsibility-conferring freedom from libertarian freedom."
+        },
+        "route": {
+          "id": "con-skeptical-sourcehood-route",
+          "side": "con",
+          "description": "Show that luck and factors beyond the agent's control defeat the sourcehood needed for basic-desert responsibility while leaving forward-looking responses available.",
+          "successCriteria": "The route succeeds if agents are shown not to be appropriate sources for basic desert and safety, rehabilitation, or rule enforcement can replace retributive blame and punishment.",
+          "bridges": [
+            {
+              "id": "con-motion-no-basic-desert",
+              "tier": "motion",
+              "description": "Basic-desert moral responsibility and retributive blame or punishment are unwarranted, even if independently justified forward-looking responses remain."
+            },
+            {
+              "id": "con-central-sourcehood",
+              "tier": "central",
+              "description": "Who agents are and what they do result from luck or factors beyond their control, so they lack the appropriate sourcehood for basic desert."
+            },
+            {
+              "id": "con-subsidiary-alternatives",
+              "tier": "subsidiary",
+              "description": "Reasons-responsive distinctions, sanctions, safety restrictions, rehabilitation, and rule enforcement can be retained on non-desert forward-looking grounds."
+            },
+            {
+              "id": "con-subsidiary-indeterminacy",
+              "tier": "subsidiary",
+              "description": "Adding physical indeterminacy does not let the agent settle which outcome occurs and therefore cannot rescue basic-desert control."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-185-05",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-185-07",
+      "lane": "dyadic",
+      "debateId": "dennett-caruso-free-will-responsibility-2021",
+      "debateNumber": "185",
+      "moveId": "m07-pro-q2-responsive-causation-control-diagnosis",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "sourceExcerpt": "okay the big mistake that i think you're making greg is you're confusing causation and control in the following way maya and marina you haven't told us what their upbringing was how much self-control they have let's assume they're both very well self-controlled",
+      "sourceExcerptSha256": "9d465ea7349f00d66c65da582a2bdbe24cc56ccff3bc13c310770ee159939d1e",
+      "targetPacket": {
+        "id": "t07-caruso-causal-sourcehood",
+        "targetSpeaker": "Gregg Caruso",
+        "sourceSpan": {
+          "startMs": 2801040,
+          "endMs": 2817119
+        },
+        "sourceExcerpt": "responsible in the required sense is because they're not the appropriate source of their actions in the right sense that is that there for them to be the appropriate source the action can't be causally determined by factors beyond their control",
+        "sourceExcerptSha256": "70d208adfd94e9cea996b1b72838b575b7d21567e576764948b1352cb20dbfb7",
+        "claim": "Causal determination by factors beyond control prevents the sourcehood required for responsibility.",
+        "indispensableComponents": [
+          {
+            "id": "t07-c1-sourcehood-required",
+            "text": "Responsibility in the required sense demands that the agent be the appropriate source of action.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t07-c2-determination-defeats-sourcehood",
+            "text": "An action causally determined by factors beyond the agent's control lacks that appropriate sourcehood.",
+            "kind": "inference",
+            "dependsOn": [
+              "t07-c1-sourcehood-required"
+            ]
+          }
+        ],
+        "selectionRationale": "The span states the exact sourcehood inference Dennett immediately labels a causation-control confusion and challenges with missing control facts.",
+        "targetSide": "con",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "targetRelationToMove": "retired-explicit-reframe-fixture",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "con-skeptical-sourcehood-route",
+          "eligibleBridgeIds": [
+            "con-central-sourcehood",
+            "con-motion-no-basic-desert"
+          ],
+          "selectionRationale": "The act directly attacks the con route's central sourcehood inference and could thereby reach its motion-level denial of responsibility."
+        },
+        "route": {
+          "id": "con-skeptical-sourcehood-route",
+          "side": "con",
+          "description": "Show that luck and factors beyond the agent's control defeat the sourcehood needed for basic-desert responsibility while leaving forward-looking responses available.",
+          "successCriteria": "The route succeeds if agents are shown not to be appropriate sources for basic desert and safety, rehabilitation, or rule enforcement can replace retributive blame and punishment.",
+          "bridges": [
+            {
+              "id": "con-motion-no-basic-desert",
+              "tier": "motion",
+              "description": "Basic-desert moral responsibility and retributive blame or punishment are unwarranted, even if independently justified forward-looking responses remain."
+            },
+            {
+              "id": "con-central-sourcehood",
+              "tier": "central",
+              "description": "Who agents are and what they do result from luck or factors beyond their control, so they lack the appropriate sourcehood for basic desert."
+            },
+            {
+              "id": "con-subsidiary-alternatives",
+              "tier": "subsidiary",
+              "description": "Reasons-responsive distinctions, sanctions, safety restrictions, rehabilitation, and rule enforcement can be retained on non-desert forward-looking grounds."
+            },
+            {
+              "id": "con-subsidiary-indeterminacy",
+              "tier": "subsidiary",
+              "description": "Adding physical indeterminacy does not let the agent settle which outcome occurs and therefore cannot rescue basic-desert control."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-185-07",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-185-12",
+      "lane": "dyadic",
+      "debateId": "dennett-caruso-free-will-responsibility-2021",
+      "debateNumber": "185",
+      "moveId": "m12-con-q4-responsive-rules-versus-reactive-attitudes",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "sourceExcerpt": "the question i you know that i still think is the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified because those are the ones that are philosophically significant right do i want to attach to my parenting when i when i punish my daughter by taking her cell phone away do i want or am i justified in exhibiting resentment or indignation or moral anger",
+      "sourceExcerptSha256": "a0ac9a82a5ba2a029225b9264b99a2e873f7bbcbb52b1c586c07dad0a2957125",
+      "targetPacket": {
+        "id": "t12-dennett-agreed-penalties-bedrock",
+        "targetSpeaker": "Daniel Dennett",
+        "sourceSpan": {
+          "startMs": 7049119,
+          "endMs": 7082800
+        },
+        "sourceExcerpt": "the penalties that you agree to live by if you want to be a member you agree if you if you violate these principles you are to blame and you will be punished and this is bedrock it is a it is a it is the cornerstone of a free and secure society and it has nothing to do again with either luck or determinism",
+        "sourceExcerptSha256": "e2f3120e7fb72f9195d711ebe53c89ff34c34052657a30c58acd97843f9424ba",
+        "claim": "Agreed blame and punishment for rule violations are a determination-independent cornerstone of a secure society.",
+        "indispensableComponents": [
+          {
+            "id": "t12-c1-agreed-penalties",
+            "text": "Membership entails agreement to blame and punishment when the governing principles are violated.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "t12-c2-social-cornerstone",
+            "text": "Those penalties are a bedrock condition of free and secure society regardless of luck or determinism.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "t12-c1-agreed-penalties"
+            ]
+          }
+        ],
+        "selectionRationale": "This prior pro span joins rule enforcement to blame and punishment; Caruso responds by separating justified practices from justified reactive attitudes.",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "targetRelationToMove": "retired-explicit-reframe-fixture",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "pro-compatibilist-control-route",
+          "eligibleBridgeIds": [
+            "pro-subsidiary-institutions",
+            "pro-motion-responsibility"
+          ],
+          "selectionRationale": "The response attacks the pro move from socially useful rules and sanctions to the justification of resentment, indignation, or moral anger."
+        },
+        "route": {
+          "id": "pro-compatibilist-control-route",
+          "side": "pro",
+          "description": "Establish that reasons-responsive self-control, rather than causal independence, supplies free will worth wanting and warrants responsibility practices.",
+          "successCriteria": "The route succeeds if adequate reasons-responsive self-control is shown compatible with causal determination and is connected to justified everyday responsibility, blame, or punishment.",
+          "bridges": [
+            {
+              "id": "pro-motion-responsibility",
+              "tier": "motion",
+              "description": "Agents with adequate self-control can justifiably bear moral responsibility and proportionate blame or punishment despite determination or luck."
+            },
+            {
+              "id": "pro-central-control",
+              "tier": "central",
+              "description": "Reasons-responsive self-maintaining control and moral competence are real capacities that causal determination alone does not remove."
+            },
+            {
+              "id": "pro-subsidiary-institutions",
+              "tier": "subsidiary",
+              "description": "Public non-draconian rules and sanctions make responsibility practices socially functional while excusing agents whose impairments defeat control."
+            },
+            {
+              "id": "pro-subsidiary-randomness",
+              "tier": "subsidiary",
+              "description": "Practical agency needs neither libertarian sourcehood nor quantum randomness, because useful unpredictability and control are available under determination."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-185-12",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-62-04",
+      "lane": "dyadic",
+      "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+      "debateNumber": "62",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-04",
+      "side": "con",
+      "speaker": "Joe Folley",
+      "sourceExcerpt": ">> I think so. I think that um yeah I think I think especially with with people that's a very good example right because es and I think that that's one that I think fits quite nicely within my worldview as well. You know we are all currently you know submitting to a certain idea of what we're going to do.",
+      "sourceExcerptSha256": "b197efca08e9efb937b4e0c653314f814272db2c0c50da3fe90465e27fd706eb",
+      "targetPacket": {
+        "id": "pageau-folley-logos-meaning-resurrection-2026-target-04",
+        "targetSpeaker": "Jonathan Pageau",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 1766960,
+          "endMs": 1793600
+        },
+        "sourceExcerpt": "enact a form of unity. They they come together and bind towards a purpose and they elect a mayor and they and you can say well that's just an emergent property of people being together. But then suddenly now the mayor puts someone in jail because they they broke a law and so it constrains back down on the part. So to say it's just an emergent property isn't sufficient to be able to understand the way that that onlogical realities that are higher actually constrain those that are below.",
+        "sourceExcerptSha256": "6d2dfddf00b48675756f4157fe7e5aba7608f9ea9548eb9630a0d92584fa2fc3",
+        "claim": "People enact unity toward a purpose and elect a mayor who constrains them, so calling higher ontological realities merely emergent is insufficient.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "pageau-folley-logos-meaning-resurrection-2026-target-04-c1",
+            "text": "People enact a form of unity by binding toward a purpose and electing a mayor.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "pageau-folley-logos-meaning-resurrection-2026-target-04-c2",
+            "text": "The mayor enforces law on the people and thereby constrains downward on the parts.",
+            "kind": "fact-premise",
+            "dependsOn": [
+              "pageau-folley-logos-meaning-resurrection-2026-target-04-c1"
+            ]
+          },
+          {
+            "id": "pageau-folley-logos-meaning-resurrection-2026-target-04-c3",
+            "text": "Higher ontological realities can constrain the realities beneath them.",
+            "kind": "inference",
+            "dependsOn": [
+              "pageau-folley-logos-meaning-resurrection-2026-target-04-c1",
+              "pageau-folley-logos-meaning-resurrection-2026-target-04-c2"
+            ]
+          },
+          {
+            "id": "pageau-folley-logos-meaning-resurrection-2026-target-04-c4",
+            "text": "Calling the higher reality merely emergent is insufficient to explain that downward constraint.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "pageau-folley-logos-meaning-resurrection-2026-target-04-c3"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "pageau-folley-logos-meaning-resurrection-2026-con-route",
+          "eligibleBridgeIds": [
+            "pageau-folley-logos-meaning-resurrection-2026-con-subsidiary"
+          ],
+          "selectionRationale": "The move directly bears on the subsidiary bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "pageau-folley-logos-meaning-resurrection-2026-con-route",
+          "side": "con",
+          "description": "Patterns and values are pragmatically useful abstractions grounded in human minds and social practices.",
+          "successCriteria": "Higher-level organization does not require a willful or transcendent divine source.",
+          "bridges": [
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-con-central",
+              "tier": "central",
+              "description": "Patterns and values are pragmatically useful abstractions grounded in human minds and social practices."
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-62-04",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-62-07",
+      "lane": "dyadic",
+      "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+      "debateNumber": "62",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-07",
+      "side": "pro",
+      "speaker": "Jonathan Pageau",
+      "sourceExcerpt": "it is definitely using a a deep analogical language in order to describe something that happened and that we remember, you know, we remember to the extent that we can remember and that brings us to this problem of the gap like the fact that the fact that we suffer and the fact that we think that we shouldn't be suffering,",
+      "sourceExcerptSha256": "107bfff64f2e6695e92fcefaa3de704f8e44012053d87a7e94db7b015d308bac",
+      "targetPacket": {
+        "id": "pageau-folley-logos-meaning-resurrection-2026-target-07",
+        "targetSpeaker": "Joe Folley",
+        "targetSide": "con",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 2611920,
+          "endMs": 2633119
+        },
+        "sourceExcerpt": ">> Yes. Well, I I think that there are for me it's the um more I don't want to use the word literal because I think literal is actually rather vague in a sense, but but historical I suppose um aspects of biblical text that I would struggle with. And I don't use Genesis as an example because I mean I don't I don't think you're I don't think you believe in the literal truth of of the Genesis story or the historical truth of the Genesis story.",
+        "sourceExcerptSha256": "14e5a939b2601c1994e9f5ffa3a63f044808d3a14c4b5c8c18aca9472e7d9e76",
+        "claim": "Folley struggles with historical biblical claims and exempts Genesis because he takes Pageau not to affirm its literal or historical truth.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "pageau-folley-logos-meaning-resurrection-2026-target-07-c1",
+            "text": "Historical aspects of biblical texts are what Folley struggles to accept.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "pageau-folley-logos-meaning-resurrection-2026-target-07-c2",
+            "text": "Folley takes Pageau not to believe the literal or historical truth of Genesis.",
+            "kind": "modality",
+            "dependsOn": []
+          },
+          {
+            "id": "pageau-folley-logos-meaning-resurrection-2026-target-07-c3",
+            "text": "Folley therefore does not use Genesis as his example of a difficult historical claim.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "pageau-folley-logos-meaning-resurrection-2026-target-07-c1",
+              "pageau-folley-logos-meaning-resurrection-2026-target-07-c2"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "pageau-folley-logos-meaning-resurrection-2026-pro-route",
+          "eligibleBridgeIds": [
+            "pageau-folley-logos-meaning-resurrection-2026-pro-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "pageau-folley-logos-meaning-resurrection-2026-pro-route",
+          "side": "pro",
+          "description": "Patterns and purposive unities are real features of the world that point upward to Logos.",
+          "successCriteria": "Top-down organization and irreducible emergent wholes support a mind-like transcendent unity.",
+          "bridges": [
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-pro-motion",
+              "tier": "motion",
+              "description": "Establish the pro side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-pro-central",
+              "tier": "central",
+              "description": "Patterns and purposive unities are real features of the world that point upward to Logos."
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-pro-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the pro side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-62-07",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-62-09",
+      "lane": "dyadic",
+      "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+      "debateNumber": "62",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-09",
+      "side": "pro",
+      "speaker": "Jonathan Pageau",
+      "sourceExcerpt": "things. I I the thing that the thing to me is that I was convinced of the resurrection in it for a different in a different way. It's like I was convinced of the resurrection. Uh you could say because I saw what it what it meant or what it brought downstream, what it the portrait of the world that it was showing me. That's the thing that convinced me of the resurrection more than whether or not this or that historian mentioned it or or whatever.",
+      "sourceExcerptSha256": "a731ee40322cf3ca58f144aa5917d3764281acb341e5b3556a89b080b14ff10f",
+      "targetPacket": {
+        "id": "pageau-folley-logos-meaning-resurrection-2026-target-09",
+        "targetSpeaker": "Joe Folley",
+        "targetSide": "con",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 4200080,
+          "endMs": 4219040
+        },
+        "sourceExcerpt": "the resurrection of the body the life everlasting you I don't want to just like recite the nine creed but you know all that kind of stuff so that that that would it would raise my confidence in all of those propositions and all of the and as a result I would then come to believe that when I die my I I my my experience would not stop. I would continue to experience things.",
+        "sourceExcerptSha256": "05ce9b1c93db380aaec148d120e4160afe56e8120713200b421630f31599541a",
+        "claim": "The posited confirmation would raise Folley's confidence in bodily resurrection, everlasting life, and related propositions, leading him to believe experience continues after death.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "pageau-folley-logos-meaning-resurrection-2026-target-09-c1",
+            "text": "The posited confirmation would raise Folley's confidence in bodily resurrection, everlasting life, and related propositions.",
+            "kind": "modality",
+            "dependsOn": []
+          },
+          {
+            "id": "pageau-folley-logos-meaning-resurrection-2026-target-09-c2",
+            "text": "As a result, Folley would believe that his experience continues after death.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "pageau-folley-logos-meaning-resurrection-2026-target-09-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "pageau-folley-logos-meaning-resurrection-2026-pro-route",
+          "eligibleBridgeIds": [
+            "pageau-folley-logos-meaning-resurrection-2026-pro-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "pageau-folley-logos-meaning-resurrection-2026-pro-route",
+          "side": "pro",
+          "description": "Patterns and purposive unities are real features of the world that point upward to Logos.",
+          "successCriteria": "Top-down organization and irreducible emergent wholes support a mind-like transcendent unity.",
+          "bridges": [
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-pro-motion",
+              "tier": "motion",
+              "description": "Establish the pro side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-pro-central",
+              "tier": "central",
+              "description": "Patterns and purposive unities are real features of the world that point upward to Logos."
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-pro-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the pro side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-62-09",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-71-05",
+      "lane": "multi-speaker",
+      "debateId": "hitchens-kushner-gomes-god-religion-morality-2009",
+      "debateNumber": "71",
+      "moveId": "hitchens-kushner-gomes-god-religion-morality-2009-move-05",
+      "side": "pro",
+      "speaker": "Harold Kushner",
+      "sourceExcerpt": "ground rules for this evening's discussion was that we don't compare the worst of one side with the best of another let's take religion and skepticism at their best or let's take religion and skepticism at their worst but not compare the sins of religion with the virtues of secularism or the other way around",
+      "sourceExcerptSha256": "4b42d5c5aabbd3816cf38eba52c122427ab47af3b70045753c2d58b0d2e786d5",
+      "targetPacket": {
+        "id": "hitchens-kushner-gomes-god-religion-morality-2009-target-05",
+        "targetSpeaker": "Christopher Hitchens",
+        "targetSide": "con",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 317639,
+          "endMs": 337080
+        },
+        "sourceExcerpt": "the parties of God really sincerely intend the destruction of everything I know of and care about is worth defending and I in turn sincerely intend wish hope to defeat them and I make no sectarian exemption for this the Messianic Jewish settlers on the West",
+        "sourceExcerptSha256": "215d6b603bff6e0f6fb8b7e5a7dbb5b93b341cce5cde248136fb2b066b2872b4",
+        "claim": "The parties of God intend to destroy what Hitchens values and must be defeated without sectarian exemptions.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "hitchens-kushner-gomes-god-religion-morality-2009-target-05-c1",
+            "text": "The parties of God intend to destroy things Hitchens regards as worth defending.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "hitchens-kushner-gomes-god-religion-morality-2009-target-05-c2",
+            "text": "They should therefore be defeated without a sectarian exemption.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "hitchens-kushner-gomes-god-religion-morality-2009-target-05-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "hitchens-kushner-gomes-god-religion-morality-2009-pro-route",
+          "eligibleBridgeIds": [
+            "hitchens-kushner-gomes-god-religion-morality-2009-pro-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "hitchens-kushner-gomes-god-religion-morality-2009-pro-route",
+          "side": "pro",
+          "description": "Religious belief and tradition provide transcendent meaning, resilience, moral aspiration, and communal wisdom.",
+          "successCriteria": "Fallible religious institutions can be reformed while preserving the experiential and moral value of faith.",
+          "bridges": [
+            {
+              "id": "hitchens-kushner-gomes-god-religion-morality-2009-pro-motion",
+              "tier": "motion",
+              "description": "Establish the pro side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "hitchens-kushner-gomes-god-religion-morality-2009-pro-central",
+              "tier": "central",
+              "description": "Religious belief and tradition provide transcendent meaning, resilience, moral aspiration, and communal wisdom."
+            },
+            {
+              "id": "hitchens-kushner-gomes-god-religion-morality-2009-pro-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the pro side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-71-05",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-71-10",
+      "lane": "multi-speaker",
+      "debateId": "hitchens-kushner-gomes-god-religion-morality-2009",
+      "debateNumber": "71",
+      "moveId": "hitchens-kushner-gomes-god-religion-morality-2009-move-10",
+      "side": "pro",
+      "speaker": "Peter Gomes",
+      "sourceExcerpt": "does seem to me from my lifelong study of Religion that uh if this is in fact dropped down from heaven and some Dex Machina or that God is the uh uh the dictator the author of everything that's in the Bible he needs a good editor this isn't the way it is these are human aspirations an attempt for human beings to acquire something grander and and and more noble than we ourselves",
+      "sourceExcerptSha256": "688804e4dc0d24bd60b9892029b41703b8d390bd48e94800dd30868e9fae4892",
+      "targetPacket": {
+        "id": "hitchens-kushner-gomes-god-religion-morality-2009-target-10",
+        "targetSpeaker": "Christopher Hitchens",
+        "targetSide": "con",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 905800,
+          "endMs": 929040
+        },
+        "sourceExcerpt": "Rob that's God Dr man man made God in his own image that's why there are so many gods that's why the gods often say such stupid and wicked things uh that's why they fight with each other uh it's exactly religion is what you would expect if it was created by primates who were half a chromosome away from a chimpanzee which we now know it to be",
+        "sourceExcerptSha256": "b51e151fec78c596e84e7cf35a08775cb7f67ed90806af8f5e5db7a8eecd513a",
+        "claim": "Humans made gods in their own image, which explains the multiplicity, conflict, and moral defects of gods.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "hitchens-kushner-gomes-god-religion-morality-2009-target-10-c1",
+            "text": "Humans made God in their own image.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "hitchens-kushner-gomes-god-religion-morality-2009-target-10-c2",
+            "text": "That human origin explains why gods are numerous, conflict, and say morally bad things.",
+            "kind": "inference",
+            "dependsOn": [
+              "hitchens-kushner-gomes-god-religion-morality-2009-target-10-c1"
+            ]
+          },
+          {
+            "id": "hitchens-kushner-gomes-god-religion-morality-2009-target-10-c3",
+            "text": "Religion is what one would expect from primate invention rather than revelation.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "hitchens-kushner-gomes-god-religion-morality-2009-target-10-c1",
+              "hitchens-kushner-gomes-god-religion-morality-2009-target-10-c2"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "hitchens-kushner-gomes-god-religion-morality-2009-pro-route",
+          "eligibleBridgeIds": [
+            "hitchens-kushner-gomes-god-religion-morality-2009-pro-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "hitchens-kushner-gomes-god-religion-morality-2009-pro-route",
+          "side": "pro",
+          "description": "Religious belief and tradition provide transcendent meaning, resilience, moral aspiration, and communal wisdom.",
+          "successCriteria": "Fallible religious institutions can be reformed while preserving the experiential and moral value of faith.",
+          "bridges": [
+            {
+              "id": "hitchens-kushner-gomes-god-religion-morality-2009-pro-motion",
+              "tier": "motion",
+              "description": "Establish the pro side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "hitchens-kushner-gomes-god-religion-morality-2009-pro-central",
+              "tier": "central",
+              "description": "Religious belief and tradition provide transcendent meaning, resilience, moral aspiration, and communal wisdom."
+            },
+            {
+              "id": "hitchens-kushner-gomes-god-religion-morality-2009-pro-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the pro side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-71-10",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-71-11",
+      "lane": "multi-speaker",
+      "debateId": "hitchens-kushner-gomes-god-religion-morality-2009",
+      "debateNumber": "71",
+      "moveId": "hitchens-kushner-gomes-god-religion-morality-2009-move-11",
+      "side": "pro",
+      "speaker": "Harold Kushner",
+      "sourceExcerpt": "we I think we've all experience if you have this this wonderful thing happened to you you try to tell a friend about it you will never capture the wonderfulness of it in your words that's what happened at Sinai they tried to write it down in what became the Bible and it is an imperfect flawed incomplete record of what I think was a Transcendent experience now beron Russell was asked",
+      "sourceExcerptSha256": "89e9768b7dfbcb233723bc00d3b636aab30b995d6d451707e414fdcfce83af5f",
+      "targetPacket": {
+        "id": "hitchens-kushner-gomes-god-religion-morality-2009-target-11",
+        "targetSpeaker": "Christopher Hitchens",
+        "targetSide": "con",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 905800,
+          "endMs": 929040
+        },
+        "sourceExcerpt": "Rob that's God Dr man man made God in his own image that's why there are so many gods that's why the gods often say such stupid and wicked things uh that's why they fight with each other uh it's exactly religion is what you would expect if it was created by primates who were half a chromosome away from a chimpanzee which we now know it to be",
+        "sourceExcerptSha256": "b51e151fec78c596e84e7cf35a08775cb7f67ed90806af8f5e5db7a8eecd513a",
+        "claim": "Humans made gods in their own image, which explains the multiplicity, conflict, and moral defects of gods.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "hitchens-kushner-gomes-god-religion-morality-2009-target-11-c1",
+            "text": "Humans made God in their own image.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "hitchens-kushner-gomes-god-religion-morality-2009-target-11-c2",
+            "text": "That human origin explains why gods are numerous, conflict, and say morally bad things.",
+            "kind": "inference",
+            "dependsOn": [
+              "hitchens-kushner-gomes-god-religion-morality-2009-target-11-c1"
+            ]
+          },
+          {
+            "id": "hitchens-kushner-gomes-god-religion-morality-2009-target-11-c3",
+            "text": "Religion is what one would expect from primate invention rather than revelation.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "hitchens-kushner-gomes-god-religion-morality-2009-target-11-c1",
+              "hitchens-kushner-gomes-god-religion-morality-2009-target-11-c2"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "hitchens-kushner-gomes-god-religion-morality-2009-pro-route",
+          "eligibleBridgeIds": [
+            "hitchens-kushner-gomes-god-religion-morality-2009-pro-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "hitchens-kushner-gomes-god-religion-morality-2009-pro-route",
+          "side": "pro",
+          "description": "Religious belief and tradition provide transcendent meaning, resilience, moral aspiration, and communal wisdom.",
+          "successCriteria": "Fallible religious institutions can be reformed while preserving the experiential and moral value of faith.",
+          "bridges": [
+            {
+              "id": "hitchens-kushner-gomes-god-religion-morality-2009-pro-motion",
+              "tier": "motion",
+              "description": "Establish the pro side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "hitchens-kushner-gomes-god-religion-morality-2009-pro-central",
+              "tier": "central",
+              "description": "Religious belief and tradition provide transcendent meaning, resilience, moral aspiration, and communal wisdom."
+            },
+            {
+              "id": "hitchens-kushner-gomes-god-religion-morality-2009-pro-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the pro side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-71-11",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-71-16",
+      "lane": "multi-speaker",
+      "debateId": "hitchens-kushner-gomes-god-religion-morality-2009",
+      "debateNumber": "71",
+      "moveId": "hitchens-kushner-gomes-god-religion-morality-2009-move-16",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "sourceExcerpt": "small true but they're not they're not they are not baptizing retrospectively their crimes in the name of God they're committing the original crimes as a Divine mandate they're saying no no no no one has the right to live here but us God gave us this territory it is Holy Land Our God gives it all to us it's exactly the opposite of what the rabbi just said",
+      "sourceExcerptSha256": "6e1856b864188de9b79e41aa29f6a076df01658c293aef5177684b681a8eaf1f",
+      "targetPacket": {
+        "id": "hitchens-kushner-gomes-god-religion-morality-2009-target-16",
+        "targetSpeaker": "Harold Kushner",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 5453760,
+          "endMs": 5486880
+        },
+        "sourceExcerpt": "Peter I think maybe it works the other way around it's not that religious people go out and kill and carry on Wars it's that people kill and carry on Wars and at some basic human level they int it that what they're doing is wrong and so they look for the veneer of religion to cover it and justify what they are doing they are kidnapping and misusing religion to excuse the what they recognize as misbehavior wouldn't that be the",
+        "sourceExcerptSha256": "5c211eb199e29adb99fc467ad023c6c9c0f19217a15973d3dbd9af047a18e56a",
+        "claim": "People first choose war while knowing it is wrong and then misuse religion as a justificatory veneer.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c1",
+            "text": "People undertake killing and war for prior human reasons.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c2",
+            "text": "They recognize at some level that the conduct is wrong.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c3",
+            "text": "They then use religion as a veneer to justify that conduct.",
+            "kind": "inference",
+            "dependsOn": [
+              "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c1",
+              "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c2"
+            ]
+          },
+          {
+            "id": "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c4",
+            "text": "Religion is being misused rather than originating the violence.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c1",
+              "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c3"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "hitchens-kushner-gomes-god-religion-morality-2009-con-route",
+          "eligibleBridgeIds": [
+            "hitchens-kushner-gomes-god-religion-morality-2009-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "hitchens-kushner-gomes-god-religion-morality-2009-con-route",
+          "side": "con",
+          "description": "Morality and numinous experience do not require supernatural belief, while religion adds dangerous authority claims.",
+          "successCriteria": "Religious doctrines and institutions generate distinctive harms and cannot claim an exclusive moral source.",
+          "bridges": [
+            {
+              "id": "hitchens-kushner-gomes-god-religion-morality-2009-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "hitchens-kushner-gomes-god-religion-morality-2009-con-central",
+              "tier": "central",
+              "description": "Morality and numinous experience do not require supernatural belief, while religion adds dangerous authority claims."
+            },
+            {
+              "id": "hitchens-kushner-gomes-god-religion-morality-2009-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-71-16",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-84-07",
+      "lane": "multi-speaker",
+      "debateId": "krauss-meyer-lamoureux-god-science-universe-2016",
+      "debateNumber": "84",
+      "moveId": "krauss-meyer-lamoureux-god-science-universe-2016-move-07",
+      "side": "con",
+      "speaker": "Stephen Meyer",
+      "sourceExcerpt": "the best explanation again building on the work of Charles Darwin in his method of multiple competing hypotheses or inference to the best nation and so the argument that I'm making is not an argument from ignorance it's not a sim a strictly negative argument about what evolutionary processes are incapable of doing but rather it's based on our uniform and repeated experience of what what intelligent agents are capable of doing in other words a cause which is known to produce the effect in question",
+      "sourceExcerptSha256": "3a43d81deeb3d5ae2c51d4e74ae27dbcc732a28d072fab60d911bbb3099fb21e",
+      "targetPacket": {
+        "id": "krauss-meyer-lamoureux-god-science-universe-2016-target-07",
+        "targetSpeaker": "Lawrence Krauss",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 1669919,
+          "endMs": 1684559
+        },
+        "sourceExcerpt": "scientific theory cannot yet render an explanation on every point should not be used as a pretext to thrust an untestable alternative hypothesis grounded in religion into the science classroom or to risk represent well-established scientific propositions we don't know the answer but that",
+        "sourceExcerptSha256": "710779dc4758875397478050d49625d1af352bada2fa09f8f555510c908d49e9",
+        "claim": "An explanatory gap does not license inserting an untestable religious hypothesis into science or misrepresenting established propositions.",
+        "targetRelationToMove": "earlier-load-bearing-claim",
+        "interveningOpponentClaim": true,
+        "exceptionRationale": "Meyer opens his designated response by directly rejecting the ignorance-or-gap characterization that Krauss made load-bearing in his opening; later Krauss material addresses cosmology rather than the logical form of design inference.",
+        "indispensableComponents": [
+          {
+            "id": "krauss-meyer-lamoureux-god-science-universe-2016-target-07-c1",
+            "text": "A scientific theory's current explanatory gap does not support an untestable religious alternative.",
+            "kind": "rule-comparison",
+            "dependsOn": []
+          },
+          {
+            "id": "krauss-meyer-lamoureux-god-science-universe-2016-target-07-c2",
+            "text": "Intelligent design therefore cannot be admitted merely because established science is incomplete.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "krauss-meyer-lamoureux-god-science-universe-2016-target-07-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "krauss-meyer-lamoureux-god-science-universe-2016-con-route",
+          "eligibleBridgeIds": [
+            "krauss-meyer-lamoureux-god-science-universe-2016-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "krauss-meyer-lamoureux-god-science-universe-2016-con-route",
+          "side": "con",
+          "description": "Biological information and cosmic fine-tuning support a mind-based design inference.",
+          "successCriteria": "Evolutionary creation and a non-concordist reading of scripture integrate Christian theism with mainstream science.",
+          "bridges": [
+            {
+              "id": "krauss-meyer-lamoureux-god-science-universe-2016-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "krauss-meyer-lamoureux-god-science-universe-2016-con-central",
+              "tier": "central",
+              "description": "Biological information and cosmic fine-tuning support a mind-based design inference."
+            },
+            {
+              "id": "krauss-meyer-lamoureux-god-science-universe-2016-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-84-07",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-84-09",
+      "lane": "multi-speaker",
+      "debateId": "krauss-meyer-lamoureux-god-science-universe-2016",
+      "debateNumber": "84",
+      "moveId": "krauss-meyer-lamoureux-god-science-universe-2016-move-09",
+      "side": "con",
+      "speaker": "Denis Lamoureux",
+      "sourceExcerpt": "from a variety of physicists that the nothing really is not nothing and of course when you see a title like that you get the impression it is out of nothing and here's David Albert atheist by the way and double PhD says the following Krauss seems to be thinking that these vacuum States amount to the relativistic quantum fuel theoretical version of their not being any physical stuff at all but that's not right",
+      "sourceExcerptSha256": "d63c93e12a491fb5ab88ae6b645a2985fadb967e485ccec7e55354f4eae5e842",
+      "targetPacket": {
+        "id": "krauss-meyer-lamoureux-god-science-universe-2016-target-09",
+        "targetSpeaker": "Lawrence Krauss",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 1216500,
+          "endMs": 1232700
+        },
+        "sourceExcerpt": "in particular empty space is not so empty and the laws of quantum mechanics tell us that it's a boiling bubbling blue of virtual particles when you have gravity in it means if you wait long enough empty space with nothing in it can start to produce particles it won't",
+        "sourceExcerptSha256": "428eff48a4adce58aabd03be0e189d89fe72d0c0cd2dcde5f603b49315841282",
+        "claim": "Quantum-mechanical empty space can generate particles without violating physical laws.",
+        "targetRelationToMove": "earlier-load-bearing-claim",
+        "interveningOpponentClaim": true,
+        "exceptionRationale": "Lamoureux expressly names Krauss's title and targets the earlier quantum-vacuum premise; the intervening material addresses consequences of the model but does not alter what its 'nothing' contains.",
+        "indispensableComponents": [
+          {
+            "id": "krauss-meyer-lamoureux-god-science-universe-2016-target-09-c1",
+            "text": "Quantum empty space contains a boiling field of virtual particles.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "krauss-meyer-lamoureux-god-science-universe-2016-target-09-c2",
+            "text": "Such empty space can produce particles without violating physical law.",
+            "kind": "inference",
+            "dependsOn": [
+              "krauss-meyer-lamoureux-god-science-universe-2016-target-09-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "krauss-meyer-lamoureux-god-science-universe-2016-con-route",
+          "eligibleBridgeIds": [
+            "krauss-meyer-lamoureux-god-science-universe-2016-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "krauss-meyer-lamoureux-god-science-universe-2016-con-route",
+          "side": "con",
+          "description": "Biological information and cosmic fine-tuning support a mind-based design inference.",
+          "successCriteria": "Evolutionary creation and a non-concordist reading of scripture integrate Christian theism with mainstream science.",
+          "bridges": [
+            {
+              "id": "krauss-meyer-lamoureux-god-science-universe-2016-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "krauss-meyer-lamoureux-god-science-universe-2016-con-central",
+              "tier": "central",
+              "description": "Biological information and cosmic fine-tuning support a mind-based design inference."
+            },
+            {
+              "id": "krauss-meyer-lamoureux-god-science-universe-2016-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-84-09",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-84-12",
+      "lane": "multi-speaker",
+      "debateId": "krauss-meyer-lamoureux-god-science-universe-2016",
+      "debateNumber": "84",
+      "moveId": "krauss-meyer-lamoureux-god-science-universe-2016-move-12",
+      "side": "pro",
+      "speaker": "Lawrence Krauss",
+      "sourceExcerpt": "would think it's the word of God as opposed to say actually I have the the Flying Spaghetti Monster On My Level here which I think is a much more rational argument for how the world came about in a much more moral one but why why don't why believe that's the word of God and not the Egyptian uh uh or the or the Norse myths or anything else it's beyond me let me just close by saying",
+      "sourceExcerptSha256": "bcb06fa1ec70640d804cd1eda916f5111628c98aaa1b93eda40af8912e808381",
+      "targetPacket": {
+        "id": "krauss-meyer-lamoureux-god-science-universe-2016-target-12",
+        "targetSpeaker": "Denis Lamoureux",
+        "targetSide": "con",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 3965400,
+          "endMs": 3983819
+        },
+        "sourceExcerpt": "I believe that the Bible is the inspired word of God Lawrence don't shake okay have experienced miracles in fact I have a Pentecostal twist to my Theology and when I was here in grad school I used to go to the stone Pentecostal church and I",
+        "sourceExcerptSha256": "cccedb59bac53339b3f30c6e3fabffcec4408a08b4325f9e73083a1180f01162",
+        "claim": "Lamoureux accepts the Bible as inspired, reports miracles, and holds an explicitly Pentecostal theology.",
+        "targetRelationToMove": "earlier-load-bearing-claim",
+        "interveningOpponentClaim": true,
+        "exceptionRationale": "Krauss directly asks why Lamoureux's announced scriptural commitment should be privileged over Egyptian or Norse myths; extensive intervening scientific material does not answer that justificatory burden.",
+        "indispensableComponents": [
+          {
+            "id": "krauss-meyer-lamoureux-god-science-universe-2016-target-12-c1",
+            "text": "The Bible is the inspired word of God.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "krauss-meyer-lamoureux-god-science-universe-2016-target-12-c2",
+            "text": "Lamoureux's reported miracles and Pentecostal theology support his religious commitment.",
+            "kind": "fact-premise",
+            "dependsOn": [
+              "krauss-meyer-lamoureux-god-science-universe-2016-target-12-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "krauss-meyer-lamoureux-god-science-universe-2016-pro-route",
+          "eligibleBridgeIds": [
+            "krauss-meyer-lamoureux-god-science-universe-2016-pro-subsidiary"
+          ],
+          "selectionRationale": "The move directly bears on the subsidiary bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "krauss-meyer-lamoureux-god-science-universe-2016-pro-route",
+          "side": "pro",
+          "description": "Cosmology, evolutionary biology, and physical self-organization support scientific naturalism without divine intervention.",
+          "successCriteria": "Testable natural mechanisms outperform design inferences and treat current ignorance as a research problem.",
+          "bridges": [
+            {
+              "id": "krauss-meyer-lamoureux-god-science-universe-2016-pro-motion",
+              "tier": "motion",
+              "description": "Establish the pro side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "krauss-meyer-lamoureux-god-science-universe-2016-pro-central",
+              "tier": "central",
+              "description": "Cosmology, evolutionary biology, and physical self-organization support scientific naturalism without divine intervention."
+            },
+            {
+              "id": "krauss-meyer-lamoureux-god-science-universe-2016-pro-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the pro side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-84-12",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-84-14",
+      "lane": "multi-speaker",
+      "debateId": "krauss-meyer-lamoureux-god-science-universe-2016",
+      "debateNumber": "84",
+      "moveId": "krauss-meyer-lamoureux-god-science-universe-2016-move-14",
+      "side": "con",
+      "speaker": "Stephen Meyer",
+      "sourceExcerpt": "um there's a big difference between a purely chance hypothesis and a hypothesis that combines chance and natural selection and the critique that I'm providing is one which is critiquing natural selection acting on random mutational uh variations so I I'm not arguing from chance alone the the point is that the the so I'm I'm perfectly aware that the the the mechanism that I'm critiquing is not a straight chance but it's uh a search for possibilities and then natural selection would select those that are functionally uh",
+      "sourceExcerptSha256": "014afd230cf9dd145718ee29d49d98dbed10de9cc2b9f5d2db96dea41a549246",
+      "targetPacket": {
+        "id": "krauss-meyer-lamoureux-god-science-universe-2016-target-14",
+        "targetSpeaker": "Lawrence Krauss",
+        "targetSide": "pro",
+        "ownershipScope": "speaker-only",
+        "adoptionRecords": [],
+        "sourceSpan": {
+          "startMs": 6112920,
+          "endMs": 6141420
+        },
+        "sourceExcerpt": "evolution is not a random process I mean and Richard talks about it and at length and so should we all evolution is a directed process it's directed by natural selection it's the argument you gave is the same as the argument that the old argument well it's you know creating a living being from by Evolutions like a hurricane going through a junkyard and producing a 747 that sounds pretty convincing if you talk about all the possibilities for all the parts of the junkyard but that's not",
+        "sourceExcerptSha256": "4d61a297c7575d218ee65c37c9fa4eff6fe16d53f92ad75ebae7d18e270335a6",
+        "claim": "Evolution is directed by natural selection rather than being a uniformly random search, so Meyer's probability analogy misrepresents it.",
+        "targetRelationToMove": "immediate-opponent-claim",
+        "interveningOpponentClaim": false,
+        "exceptionRationale": null,
+        "indispensableComponents": [
+          {
+            "id": "krauss-meyer-lamoureux-god-science-universe-2016-target-14-c1",
+            "text": "Evolution is not a uniformly random process because natural selection directs which variations persist.",
+            "kind": "fact-premise",
+            "dependsOn": []
+          },
+          {
+            "id": "krauss-meyer-lamoureux-god-science-universe-2016-target-14-c2",
+            "text": "A purely random-search analogy therefore misrepresents evolution.",
+            "kind": "conclusion",
+            "dependsOn": [
+              "krauss-meyer-lamoureux-god-science-universe-2016-target-14-c1"
+            ]
+          }
+        ],
+        "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "krauss-meyer-lamoureux-god-science-universe-2016-con-route",
+          "eligibleBridgeIds": [
+            "krauss-meyer-lamoureux-god-science-universe-2016-con-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "krauss-meyer-lamoureux-god-science-universe-2016-con-route",
+          "side": "con",
+          "description": "Biological information and cosmic fine-tuning support a mind-based design inference.",
+          "successCriteria": "Evolutionary creation and a non-concordist reading of scripture integrate Christian theism with mainstream science.",
+          "bridges": [
+            {
+              "id": "krauss-meyer-lamoureux-god-science-universe-2016-con-motion",
+              "tier": "motion",
+              "description": "Establish the con side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "krauss-meyer-lamoureux-god-science-universe-2016-con-central",
+              "tier": "central",
+              "description": "Biological information and cosmic fine-tuning support a mind-based design inference."
+            },
+            {
+              "id": "krauss-meyer-lamoureux-god-science-universe-2016-con-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the con side."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.8.2-retired-development-case",
+        "sourceCaseId": "v282-dev-84-14",
+        "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+        "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+      }
+    },
+    {
+      "caseId": "v291-dev-184-09",
+      "lane": "multi-speaker",
+      "debateId": "enoch-sampson-loeb-lutz-moral-realism-2024",
+      "debateNumber": "184",
+      "moveId": "184-move-09",
+      "side": "pro",
+      "speaker": "David Enoch",
+      "sourceExcerpt": "that was not my question to say that that's not a way of getting knowledge is like Don saying oh that's interesting it turns out that you don't care about some people that I care about my question is is there any problem with it not is it or is it not classified into this or that drawer but is there anything wrong with it",
+      "sourceExcerptSha256": "00c80922e7771da29aead2fdd5f8aedc1b65eb49c7d6457b35b04aef16e1f1ff",
+      "targetPacket": {
+        "id": "184-target-09",
+        "targetSpeaker": "Matthew Lutz",
+        "sourceSpan": {
+          "startMs": 4015000,
+          "endMs": 4024359
+        },
+        "sourceExcerpt": "well for me uh if you are forming beliefs on the basis of wishful thinking or the gambler's fallacy um those are not ways of getting knowledge",
+        "sourceExcerptSha256": "dff74af18e0bb4dd68e512c80fb15e581a38f693cda8ed9e44f8a45c4b024128",
+        "claim": "Forming beliefs through wishful thinking or the gambler's fallacy does not produce knowledge.",
+        "indispensableComponents": [
+          {
+            "id": "184-target-09-c1",
+            "text": "Wishful thinking and the gambler's fallacy are not ways of acquiring knowledge."
+          }
+        ],
+        "selectionRationale": "The packet locks Lutz's immediate compact reply that wishful thinking and the gambler's fallacy do not yield knowledge, which is the classification Enoch directly challenges."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "con-route-error-theory",
+          "eligibleBridgeIds": [
+            "con-central-instrumental-sufficiency"
+          ],
+          "selectionRationale": "The move attacks the con route's desire-relative sufficiency by arguing that classifying a method as non-knowledge does not answer the stance-independent question whether it is wrong."
+        },
+        "route": {
+          "id": "con-route-error-theory",
+          "side": "con",
+          "description": "Establish error-theoretic anti-realism by denying moral facts explanatory or evidential standing and supplying nonmoral accounts of deliberation and criticism.",
+          "successCriteria": "This route succeeds if the con side shows that stance-independent moral facts lack adequate evidence or explanatory necessity and that moral intuitions, deliberation, and criticism can be explained without them.",
+          "bridges": [
+            {
+              "id": "con-motion-antirealism",
+              "tier": "motion",
+              "description": "Establish that there are no stance-independent moral facts or truths of the kind asserted by the realist side."
+            },
+            {
+              "id": "con-central-explanatory-exclusion",
+              "tier": "central",
+              "description": "Show that nonmoral facts fully explain moral experiences and intuitions, so those experiences provide no evidence for moral facts."
+            },
+            {
+              "id": "con-central-instrumental-sufficiency",
+              "tier": "central",
+              "description": "Show that desire-relative instrumental relations adequately explain deliberative reasons and criticism without categorical moral reasons."
+            },
+            {
+              "id": "con-central-analytic-apriori",
+              "tier": "central",
+              "description": "Preserve philosophical and a priori knowledge without external abstract moral facts by treating such knowledge as analytic reflection on concepts."
+            },
+            {
+              "id": "con-subsidiary-epistemic-connection",
+              "tier": "subsidiary",
+              "description": "Require a nonaccidental connection between an experience and a claimed fact before the experience can count as evidence for that fact."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.5-retired-explicit-reframe",
+        "sourcePath": "docs/calibration/v2.5/held-out-gate/inventories/enoch-sampson-loeb-lutz-moral-realism-2024.json",
+        "sourceSha256": "2b93fb107940f71a4a1ae92b5cdaa1ee3d20cba07e219802ddff9658e022d2bf",
+        "sourceMoveId": "184-move-09"
+      }
+    },
+    {
+      "caseId": "v291-dev-185-08",
+      "lane": "dyadic",
+      "debateId": "dennett-caruso-free-will-responsibility-2021",
+      "debateNumber": "185",
+      "moveId": "m08-con-q2-responsive-control-insufficient",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "sourceExcerpt": "all the kind of compatibilist distinctions that have been made over the last 20 to 50 years um the question is not the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating um and i do think those those those distinctions matter they matter in all kinds of important ways but they matter for different reasons",
+      "sourceExcerptSha256": "4fde5bc71fdc6ecf18a1caa405df94a68fc9e86930ad35d9dae9fc2bf48c8cc9",
+      "targetPacket": {
+        "id": "t08-dennett-reasons-responsive-otherwise",
+        "targetSpeaker": "Daniel Dennett",
+        "sourceSpan": {
+          "startMs": 2994640,
+          "endMs": 3040640
+        },
+        "sourceExcerpt": "i mean i i just say this i think could have done otherwise where if you've got the degrees of freedom and if you've got between self-control we can say you could have done otherwise and what that means is you weren't tied up you weren't damaged you weren't deliberately misinformed about the case you you acted on the basis of reasons you basically are a well-functioning individual",
+        "sourceExcerptSha256": "fe4f19323d04982681669921e9d8a7692c6e9a0534a2799bc6a35e6f23fd3ec5",
+        "claim": "Relevant alternative ability consists in self-control, absence of disabling interference, and action for reasons.",
+        "indispensableComponents": [
+          {
+            "id": "t08-c1-degrees-control",
+            "text": "Degrees of freedom and self-control support the relevant sense in which an agent could have done otherwise."
+          },
+          {
+            "id": "t08-c2-well-functioning-reasons",
+            "text": "A well-functioning agent is not tied up, damaged, or misinformed and acts on the basis of reasons."
+          }
+        ],
+        "selectionRationale": "This prior Dennett span supplies the reasons-responsive compatibilist distinctions whose relevance Caruso accepts while disputing their desert-grounding sufficiency."
+      },
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "pro-compatibilist-control-route",
+          "eligibleBridgeIds": [
+            "pro-central-control",
+            "pro-motion-responsibility"
+          ],
+          "selectionRationale": "The act attacks the pro route's bridge from accepted compatibilist control distinctions to desert-based responsibility practices."
+        },
+        "route": {
+          "id": "pro-compatibilist-control-route",
+          "side": "pro",
+          "description": "Establish that reasons-responsive self-control, rather than causal independence, supplies free will worth wanting and warrants responsibility practices.",
+          "successCriteria": "The route succeeds if adequate reasons-responsive self-control is shown compatible with causal determination and is connected to justified everyday responsibility, blame, or punishment.",
+          "bridges": [
+            {
+              "id": "pro-motion-responsibility",
+              "tier": "motion",
+              "description": "Agents with adequate self-control can justifiably bear moral responsibility and proportionate blame or punishment despite determination or luck."
+            },
+            {
+              "id": "pro-central-control",
+              "tier": "central",
+              "description": "Reasons-responsive self-maintaining control and moral competence are real capacities that causal determination alone does not remove."
+            },
+            {
+              "id": "pro-subsidiary-institutions",
+              "tier": "subsidiary",
+              "description": "Public non-draconian rules and sanctions make responsibility practices socially functional while excusing agents whose impairments defeat control."
+            },
+            {
+              "id": "pro-subsidiary-randomness",
+              "tier": "subsidiary",
+              "description": "Practical agency needs neither libertarian sourcehood nor quantum randomness, because useful unpredictability and control are available under determination."
+            }
+          ]
+        }
+      },
+      "fixtureOrigin": {
+        "type": "v2.5-retired-explicit-reframe",
+        "sourcePath": "docs/calibration/v2.5/held-out-gate/inventories/dennett-caruso-free-will-responsibility-2021.json",
+        "sourceSha256": "a6a3a662e5cd857d70403d582dc532ab23252e33323a7436e32f895ac34fc578",
+        "sourceMoveId": "m08-con-q2-responsive-control-insufficient"
+      }
+    }
+  ]
+}

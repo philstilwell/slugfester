@@ -1,0 +1,426 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v2.9.1-development-challenge-pass",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "workflowVersion",
+    "rubricVersion",
+    "pass",
+    "model",
+    "calibrationOnly",
+    "completedAt",
+    "isolation",
+    "source",
+    "annotations",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "2.9.1-development-challenge-pass"
+    },
+    "workflowVersion": {
+      "const": "Slugfester Reassessment Workflow v2.9.1"
+    },
+    "rubricVersion": {
+      "const": "Slugfester Reassessment Rubric v2.9.1"
+    },
+    "pass": {
+      "enum": [
+        "A",
+        "B",
+        "KEY-A",
+        "KEY-B",
+        "KEY"
+      ]
+    },
+    "model": {
+      "const": "5.6 Sol"
+    },
+    "calibrationOnly": {
+      "const": true
+    },
+    "completedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method",
+        "allowedInputs",
+        "priorKeysUnavailable",
+        "blindPassesUnavailable",
+        "legacyMaterialUnavailable",
+        "numericalScoresUnavailable",
+        "statement"
+      ],
+      "properties": {
+        "method": {
+          "enum": [
+            "fresh-isolated-v2.9.1-key-candidate",
+            "fresh-isolated-v2.9.1-key-adjudication",
+            "fresh-isolated-v2.9.1-development-challenge"
+          ]
+        },
+        "allowedInputs": {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 8,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "priorKeysUnavailable": {
+          "const": true
+        },
+        "blindPassesUnavailable": {
+          "const": true
+        },
+        "legacyMaterialUnavailable": {
+          "const": true
+        },
+        "numericalScoresUnavailable": {
+          "const": true
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 50
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "inputPath",
+        "inputSha256",
+        "workflowSha256",
+        "rubricSha256",
+        "manualSha256",
+        "schemaSha256"
+      ],
+      "properties": {
+        "inputPath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "inputSha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "workflowSha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "rubricSha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "manualSha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "schemaSha256": {
+          "$ref": "#/$defs/digest"
+        }
+      }
+    },
+    "annotations": {
+      "type": "array",
+      "minItems": 20,
+      "items": {
+        "$ref": "#/$defs/annotation"
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "caseCount",
+        "allCasesAnnotatedOnce",
+        "componentSetErrors",
+        "evidenceErrors",
+        "derivedFieldsPresent",
+        "scoreFieldsPresent",
+        "nonDefaultCounts"
+      ],
+      "properties": {
+        "caseCount": {
+          "type": "integer",
+          "minimum": 20
+        },
+        "allCasesAnnotatedOnce": {
+          "const": true
+        },
+        "componentSetErrors": {
+          "const": 0
+        },
+        "evidenceErrors": {
+          "const": 0
+        },
+        "derivedFieldsPresent": {
+          "const": false
+        },
+        "scoreFieldsPresent": {
+          "const": false
+        },
+        "nonDefaultCounts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "originalTargetContacts",
+            "connectedExamples",
+            "componentContacts",
+            "defectCandidates",
+            "diagnosticPositives",
+            "reframePositives",
+            "burdenContacts",
+            "uniqueRationales"
+          ],
+          "properties": {
+            "originalTargetContacts": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "connectedExamples": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "componentContacts": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "defectCandidates": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "diagnosticPositives": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "reframePositives": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "burdenContacts": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "uniqueRationales": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "span": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "startChar",
+        "endChar",
+        "text"
+      ],
+      "properties": {
+        "startChar": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "endChar": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "componentContact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "componentId",
+        "contacted",
+        "evidence"
+      ],
+      "properties": {
+        "componentId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contacted": {
+          "type": "boolean"
+        },
+        "evidence": {
+          "$ref": "#/$defs/span"
+        }
+      }
+    },
+    "burdenContact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tier",
+        "bridgeId",
+        "evidence"
+      ],
+      "properties": {
+        "tier": {
+          "enum": [
+            "none",
+            "subsidiary",
+            "central",
+            "motion"
+          ]
+        },
+        "bridgeId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence": {
+          "$ref": "#/$defs/span"
+        }
+      }
+    },
+    "annotation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "caseId",
+        "moveId",
+        "originalTargetContact",
+        "targetEvidence",
+        "connectedExample",
+        "connectionEvidence",
+        "scopeRelation",
+        "scopeEvidence",
+        "burdenAdjustment",
+        "burdenEvidence",
+        "componentContacts",
+        "relevantContraryMaterial",
+        "contraryEvidence",
+        "defectType",
+        "defectCue",
+        "consequenceStated",
+        "consequenceCue",
+        "malformedDemandExplained",
+        "malformedDemandCue",
+        "replacementDemandStated",
+        "replacementDemandCue",
+        "burdenContact",
+        "rationale"
+      ],
+      "properties": {
+        "caseId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "moveId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "originalTargetContact": {
+          "type": "boolean"
+        },
+        "targetEvidence": {
+          "$ref": "#/$defs/span"
+        },
+        "connectedExample": {
+          "type": "boolean"
+        },
+        "connectionEvidence": {
+          "$ref": "#/$defs/span"
+        },
+        "scopeRelation": {
+          "enum": [
+            "same",
+            "narrowed",
+            "strengthened",
+            "modality-shift"
+          ]
+        },
+        "scopeEvidence": {
+          "$ref": "#/$defs/span"
+        },
+        "burdenAdjustment": {
+          "enum": [
+            "retained",
+            "reassigned",
+            "replaced"
+          ]
+        },
+        "burdenEvidence": {
+          "$ref": "#/$defs/span"
+        },
+        "componentContacts": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/componentContact"
+          }
+        },
+        "relevantContraryMaterial": {
+          "type": "boolean"
+        },
+        "contraryEvidence": {
+          "$ref": "#/$defs/span"
+        },
+        "defectType": {
+          "enum": [
+            "none",
+            "attribution-error",
+            "contradiction",
+            "ambiguity",
+            "scope-mismatch",
+            "unsupported-comparison",
+            "missing-premise",
+            "invalid-inference",
+            "evidential-insufficiency",
+            "irrelevance"
+          ]
+        },
+        "defectCue": {
+          "$ref": "#/$defs/span"
+        },
+        "consequenceStated": {
+          "type": "boolean"
+        },
+        "consequenceCue": {
+          "$ref": "#/$defs/span"
+        },
+        "malformedDemandExplained": {
+          "type": "boolean"
+        },
+        "malformedDemandCue": {
+          "$ref": "#/$defs/span"
+        },
+        "replacementDemandStated": {
+          "type": "boolean"
+        },
+        "replacementDemandCue": {
+          "$ref": "#/$defs/span"
+        },
+        "burdenContact": {
+          "$ref": "#/$defs/burdenContact"
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 40
+        }
+      }
+    }
+  }
+}

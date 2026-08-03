@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2.8.1-development-attempt-decision",
+  "attempt": 2,
+  "status": "failed-pre-analysis",
+  "decidedAt": "2026-08-03T16:45:00-04:00",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.8.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.8.1",
+  "manifestSha256": "1ed9faae8fb2bec7381a7712c363e0beb0cd890f02c99bcf279da748bbf2e769",
+  "passA": {
+    "path": "docs/calibration/v2.8/development/attempt-2/challenge-pass-a.json",
+    "sha256": "d22c4c5b90fe819ad3c07e3ebf0f159027e24e2b62df9145b50b13d67fc25578",
+    "schemaValid": true,
+    "isolationValid": true,
+    "semanticCompletionValid": false,
+    "reason": "All 25 cases used the same default rationale, all target objects were preserved, every component operation was null, every defect and impact was none, every reframe primitive was false, and every bridge set was empty. The validator lacked a non-degeneracy completion gate."
+  },
+  "passB": {
+    "path": null,
+    "schemaValid": false,
+    "isolationValid": false,
+    "semanticCompletionValid": false,
+    "reason": "The fresh context opened the reassess-slugfester-debates skill file outside the five-file allowlist and was terminated before a pass artifact was accepted."
+  },
+  "analysisCreated": false,
+  "challengePassed": false,
+  "executablePreflightAuthorized": false,
+  "heldOutSelectionAuthorized": false,
+  "numericalScoringAuthorized": false,
+  "nextStep": "Create v2.8.2 under a new attempt with unchanged semantic labels and thresholds plus validator-enforced non-default feature counts, unique rationales, and strict file-read isolation."
+}
+

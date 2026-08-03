@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v2.8-development-challenge-pass",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "workflowVersion", "rubricVersion", "pass", "model", "calibrationOnly", "completedAt", "isolation", "source", "annotations", "audit"],
+  "properties": {
+    "schemaVersion": {"const": "2.8-development-challenge-pass"},
+    "workflowVersion": {"const": "Slugfester Reassessment Workflow v2.8"},
+    "rubricVersion": {"const": "Slugfester Reassessment Rubric v2.8"},
+    "pass": {"enum": ["A", "B"]},
+    "model": {"const": "5.6 Sol"},
+    "calibrationOnly": {"const": true},
+    "completedAt": {"type": "string", "format": "date-time"},
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method", "allowedInputs", "keyUnavailable", "otherPassUnavailable", "legacyMaterialUnavailable", "numericalScoresUnavailable", "statement"],
+      "properties": {
+        "method": {"const": "fresh-isolated-v2.8-development-challenge"},
+        "allowedInputs": {"type": "array", "minItems": 5, "maxItems": 5, "uniqueItems": true, "items": {"type": "string"}},
+        "keyUnavailable": {"const": true},
+        "otherPassUnavailable": {"const": true},
+        "legacyMaterialUnavailable": {"const": true},
+        "numericalScoresUnavailable": {"const": true},
+        "statement": {"type": "string", "minLength": 40}
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["inputPath", "inputSha256", "workflowSha256", "rubricSha256", "manualSha256", "schemaSha256"],
+      "properties": {
+        "inputPath": {"type": "string", "minLength": 1},
+        "inputSha256": {"$ref": "#/$defs/digest"},
+        "workflowSha256": {"$ref": "#/$defs/digest"},
+        "rubricSha256": {"$ref": "#/$defs/digest"},
+        "manualSha256": {"$ref": "#/$defs/digest"},
+        "schemaSha256": {"$ref": "#/$defs/digest"}
+      }
+    },
+    "annotations": {"type": "array", "minItems": 12, "items": {"$ref": "#/$defs/annotation"}},
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["caseCount", "allCasesAnnotatedOnce", "componentSetErrors", "derivationErrors", "diagnosticEligibilityErrors", "scoreFieldsPresent"],
+      "properties": {
+        "caseCount": {"type": "integer", "minimum": 12},
+        "allCasesAnnotatedOnce": {"const": true},
+        "componentSetErrors": {"const": 0},
+        "derivationErrors": {"const": 0},
+        "diagnosticEligibilityErrors": {"const": 0},
+        "scoreFieldsPresent": {"const": false}
+      }
+    }
+  },
+  "$defs": {
+    "digest": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "componentOperation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["componentId", "operation"],
+      "properties": {
+        "componentId": {"type": "string", "minLength": 1},
+        "operation": {"type": ["string", "null"], "enum": [null, "accepts", "denies", "distinguishes", "qualifies", "explains", "undermines"]}
+      }
+    },
+    "diagnosticObject": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["objectType", "objectId"],
+      "properties": {
+        "objectType": {"enum": ["target-packet", "target-component"]},
+        "objectId": {"type": "string", "minLength": 1}
+      }
+    },
+    "bridgeContact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bridgeId", "contactMode"],
+      "properties": {
+        "bridgeId": {"type": "string", "minLength": 1},
+        "contactMode": {"enum": ["supports", "attacks"]}
+      }
+    },
+    "annotation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["caseId", "moveId", "targetObjectRelation", "objectChangeType", "targetScopeRelation", "targetBurdenRelation", "componentOperations", "relevantContraryMaterial", "derivedTargetDisposition", "derivedSubstitutionCause", "derivedTargetCoverage", "defectType", "defectObject", "impactMode", "derivedDiagnostic", "malformedDemandExplained", "replacementDemandStated", "derivedReframe", "contactedBridges", "derivedBurdenRelation", "rationale"],
+      "properties": {
+        "caseId": {"type": "string", "minLength": 1},
+        "moveId": {"type": "string", "minLength": 1},
+        "targetObjectRelation": {"enum": ["same", "changed"]},
+        "objectChangeType": {"type": ["string", "null"], "enum": [null, "subject", "referent", "comparison-class", "baseline", "question-type"]},
+        "targetScopeRelation": {"enum": ["same", "narrowed", "strengthened", "modality-shift"]},
+        "targetBurdenRelation": {"enum": ["retained", "reassigned", "replaced"]},
+        "componentOperations": {"type": "array", "items": {"$ref": "#/$defs/componentOperation"}},
+        "relevantContraryMaterial": {"type": "boolean"},
+        "derivedTargetDisposition": {"enum": ["preserved", "substituted"]},
+        "derivedSubstitutionCause": {"enum": ["none", "object-change", "burden-reassignment", "burden-replacement"]},
+        "derivedTargetCoverage": {"enum": ["full", "partial", "relevant-nonanswer", "nonanswer", "substitution"]},
+        "defectType": {"enum": ["none", "contradiction", "missing-premise", "ambiguity", "invalid-inference", "unsupported-comparison", "irrelevance", "evidential-insufficiency", "scope-mismatch", "attribution-error"]},
+        "defectObject": {"$ref": "#/$defs/diagnosticObject"},
+        "impactMode": {"enum": ["none", "verdict", "inferential-consequence"]},
+        "derivedDiagnostic": {"type": "boolean"},
+        "malformedDemandExplained": {"type": "boolean"},
+        "replacementDemandStated": {"type": "boolean"},
+        "derivedReframe": {"type": "boolean"},
+        "contactedBridges": {"type": "array", "items": {"$ref": "#/$defs/bridgeContact"}},
+        "derivedBurdenRelation": {"enum": ["completes", "advances-central", "advances-sub-burden", "topical-peripheral", "unadopted-or-irrelevant"]},
+        "rationale": {"type": "string", "minLength": 60}
+      }
+    }
+  }
+}

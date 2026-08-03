@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "2.8.2-development-attempt-decision",
+  "attempt": 3,
+  "status": "failed-reliability-analysis",
+  "decidedAt": "2026-08-03T16:54:40-04:00",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.8.2",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.8.2",
+  "manifestSha256": "1df40406f54ea4efd44401fbadb5df1e376f6cdcd14ec284a0c4bbfcf1b2a3f5",
+  "passA": {
+    "path": "docs/calibration/v2.8/development/attempt-3/challenge-pass-a.json",
+    "sha256": "df74110c06380b538b15e2dddc08ff5b643cc86d6948d03e5e521f8d12dce2a3",
+    "schemaValid": true,
+    "isolationValid": true,
+    "semanticCompletionValid": true
+  },
+  "passB": {
+    "path": "docs/calibration/v2.8/development/attempt-3/challenge-pass-b.json",
+    "sha256": "0879b94e95b5d9bf25a09070d8e7f2231dcb91801be2553815f5bc01c01aeb0a",
+    "schemaValid": true,
+    "isolationValid": true,
+    "semanticCompletionValid": true
+  },
+  "analysisPath": "docs/calibration/v2.8/development/attempt-3/challenge-analysis.json",
+  "challengePassed": false,
+  "hardGatesPassed": 3,
+  "hardGatesTotal": 18,
+  "executablePreflightAuthorized": false,
+  "heldOutSelectionAuthorized": false,
+  "numericalScoringAuthorized": false,
+  "productionMutationAuthorized": false,
+  "nextStep": "Freeze v2.8.2 and replace its scoring-relevant primitives with a lower-granularity v2.9 classification contract before any further blind gate."
+}

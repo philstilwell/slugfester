@@ -1,0 +1,491 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v2.8.2-development-challenge-pass",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "workflowVersion",
+    "rubricVersion",
+    "pass",
+    "model",
+    "calibrationOnly",
+    "completedAt",
+    "isolation",
+    "source",
+    "annotations",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "2.8.2-development-challenge-pass"
+    },
+    "workflowVersion": {
+      "const": "Slugfester Reassessment Workflow v2.8.2"
+    },
+    "rubricVersion": {
+      "const": "Slugfester Reassessment Rubric v2.8.2"
+    },
+    "pass": {
+      "enum": [
+        "A",
+        "B",
+        "KEY"
+      ]
+    },
+    "model": {
+      "const": "5.6 Sol"
+    },
+    "calibrationOnly": {
+      "const": true
+    },
+    "completedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method",
+        "allowedInputs",
+        "keyUnavailable",
+        "otherPassUnavailable",
+        "attemptOnePassesUnavailable",
+        "legacyMaterialUnavailable",
+        "numericalScoresUnavailable",
+        "statement"
+      ],
+      "properties": {
+        "method": {
+          "enum": [
+            "fresh-isolated-v2.8.2-development-challenge",
+            "v2.8.1-independent-key-carried-forward-without-semantic-change"
+          ]
+        },
+        "allowedInputs": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "keyUnavailable": {
+          "type": "boolean"
+        },
+        "otherPassUnavailable": {
+          "const": true
+        },
+        "attemptOnePassesUnavailable": {
+          "const": true
+        },
+        "legacyMaterialUnavailable": {
+          "const": true
+        },
+        "numericalScoresUnavailable": {
+          "const": true
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 50
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "inputPath",
+        "inputSha256",
+        "workflowSha256",
+        "rubricSha256",
+        "manualSha256",
+        "schemaSha256"
+      ],
+      "properties": {
+        "inputPath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "inputSha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "workflowSha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "rubricSha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "manualSha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "schemaSha256": {
+          "$ref": "#/$defs/digest"
+        }
+      }
+    },
+    "annotations": {
+      "type": "array",
+      "minItems": 12,
+      "items": {
+        "$ref": "#/$defs/annotation"
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "caseCount",
+        "allCasesAnnotatedOnce",
+        "componentSetErrors",
+        "evidenceErrors",
+        "diagnosticEligibilityErrors",
+        "derivedFieldsPresent",
+        "scoreFieldsPresent",
+        "nonDefaultCounts"
+      ],
+      "properties": {
+        "caseCount": {
+          "type": "integer",
+          "minimum": 12
+        },
+        "allCasesAnnotatedOnce": {
+          "const": true
+        },
+        "componentSetErrors": {
+          "const": 0
+        },
+        "evidenceErrors": {
+          "const": 0
+        },
+        "diagnosticEligibilityErrors": {
+          "const": 0
+        },
+        "derivedFieldsPresent": {
+          "const": false
+        },
+        "scoreFieldsPresent": {
+          "const": false
+        },
+        "nonDefaultCounts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "objectChanges",
+            "connectedExamples",
+            "componentContacts",
+            "diagnosticCandidates",
+            "diagnosticPositives",
+            "reframePositives",
+            "bridgeContacts",
+            "uniqueRationales"
+          ],
+          "properties": {
+            "objectChanges": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "connectedExamples": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "componentContacts": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "diagnosticCandidates": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "diagnosticPositives": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "reframePositives": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "bridgeContacts": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "uniqueRationales": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "span": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "startChar",
+        "endChar",
+        "text"
+      ],
+      "properties": {
+        "startChar": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "endChar": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "componentOperation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "componentId",
+        "operation",
+        "evidence"
+      ],
+      "properties": {
+        "componentId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "operation": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            null,
+            "denies",
+            "qualifies",
+            "distinguishes",
+            "explains",
+            "accepts",
+            "undermines"
+          ]
+        },
+        "evidence": {
+          "$ref": "#/$defs/span"
+        }
+      }
+    },
+    "diagnosticObject": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "objectType",
+        "objectId"
+      ],
+      "properties": {
+        "objectType": {
+          "enum": [
+            "target-packet",
+            "target-component"
+          ]
+        },
+        "objectId": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "bridgeContact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bridgeId",
+        "contactMode",
+        "evidence"
+      ],
+      "properties": {
+        "bridgeId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contactMode": {
+          "enum": [
+            "supports",
+            "attacks"
+          ]
+        },
+        "evidence": {
+          "$ref": "#/$defs/span"
+        }
+      }
+    },
+    "annotation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "caseId",
+        "moveId",
+        "mappingBasis",
+        "mappingEvidence",
+        "targetObjectRelation",
+        "objectChangeType",
+        "targetScopeRelation",
+        "scopeEvidence",
+        "targetBurdenRelation",
+        "burdenEvidence",
+        "componentOperations",
+        "relevantContraryMaterial",
+        "contraryEvidence",
+        "defectType",
+        "defectObject",
+        "diagnosticCue",
+        "impactMode",
+        "impactCue",
+        "malformedDemandExplained",
+        "malformedDemandCue",
+        "replacementDemandStated",
+        "replacementDemandCue",
+        "contactedBridges",
+        "rationale"
+      ],
+      "properties": {
+        "caseId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "moveId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mappingBasis": {
+          "enum": [
+            "direct",
+            "connected-example",
+            "object-change"
+          ]
+        },
+        "mappingEvidence": {
+          "$ref": "#/$defs/span"
+        },
+        "targetObjectRelation": {
+          "enum": [
+            "same",
+            "changed"
+          ]
+        },
+        "objectChangeType": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            null,
+            "subject",
+            "referent",
+            "comparison-class",
+            "baseline",
+            "question-type"
+          ]
+        },
+        "targetScopeRelation": {
+          "enum": [
+            "same",
+            "narrowed",
+            "strengthened",
+            "modality-shift"
+          ]
+        },
+        "scopeEvidence": {
+          "$ref": "#/$defs/span"
+        },
+        "targetBurdenRelation": {
+          "enum": [
+            "retained",
+            "reassigned",
+            "replaced"
+          ]
+        },
+        "burdenEvidence": {
+          "$ref": "#/$defs/span"
+        },
+        "componentOperations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/componentOperation"
+          }
+        },
+        "relevantContraryMaterial": {
+          "type": "boolean"
+        },
+        "contraryEvidence": {
+          "$ref": "#/$defs/span"
+        },
+        "defectType": {
+          "enum": [
+            "none",
+            "attribution-error",
+            "contradiction",
+            "ambiguity",
+            "scope-mismatch",
+            "unsupported-comparison",
+            "missing-premise",
+            "invalid-inference",
+            "evidential-insufficiency",
+            "irrelevance"
+          ]
+        },
+        "defectObject": {
+          "$ref": "#/$defs/diagnosticObject"
+        },
+        "diagnosticCue": {
+          "$ref": "#/$defs/span"
+        },
+        "impactMode": {
+          "enum": [
+            "none",
+            "verdict",
+            "inferential-consequence"
+          ]
+        },
+        "impactCue": {
+          "$ref": "#/$defs/span"
+        },
+        "malformedDemandExplained": {
+          "type": "boolean"
+        },
+        "malformedDemandCue": {
+          "$ref": "#/$defs/span"
+        },
+        "replacementDemandStated": {
+          "type": "boolean"
+        },
+        "replacementDemandCue": {
+          "$ref": "#/$defs/span"
+        },
+        "contactedBridges": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/bridgeContact"
+          }
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 70
+        }
+      }
+    }
+  }
+}

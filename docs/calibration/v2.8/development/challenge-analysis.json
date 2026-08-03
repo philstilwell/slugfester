@@ -1,0 +1,536 @@
+{
+  "schemaVersion": "2.8-development-challenge-analysis",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.8",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.8",
+  "analyzedAt": "2026-08-03T20:14:39.875Z",
+  "sources": {
+    "manifestPath": "docs/calibration/v2.8/development/challenge-manifest.json",
+    "manifestSha256": "3205ba8f0d3ab58ba102f3ceb71e70a5febdc1215f90dfd199a1ecab64edf290",
+    "inputPath": "docs/calibration/v2.8/development/challenge-input.json",
+    "inputSha256": "bb8a407674bd1d7897b70bcffa4ab60d888cc005537a3bc8b7dcfd16e6fb8a3c",
+    "keyPath": "docs/calibration/v2.8/development/challenge-key.json",
+    "keySha256": "a1f261346e15e80a826cebcafec40ae26a3a262534b5fc4145d0418ba6606b4f",
+    "passAPath": "docs/calibration/v2.8/development/challenge-pass-a.json",
+    "passASha256": "5989aa05bf24ee1c150fdf853932337eb357ac302033ed2ce450b9c19a50b9bc",
+    "passBPath": "docs/calibration/v2.8/development/challenge-pass-b.json",
+    "passBSha256": "ce4248e6512345000989df7c668920954a43e716c71c8d31e00f1ff822d04ea8"
+  },
+  "denominators": {
+    "cases": 49,
+    "targetObject": 43,
+    "targetScope": 43,
+    "targetBurden": 47,
+    "coverage": 37,
+    "defectType": 39,
+    "impactMode": 42,
+    "diagnostic": 42,
+    "reframe": 45,
+    "burden": 49,
+    "exactTuple": 31,
+    "diagnosticObjectJudgments": 28,
+    "diagnosticObject": 15,
+    "componentJudgments": 97,
+    "componentContact": 90,
+    "componentOperation": 70
+  },
+  "metrics": {
+    "targetObjectExact": 0.8775510204081632,
+    "targetScopeExact": 0.8775510204081632,
+    "targetBurdenExact": 0.9591836734693877,
+    "componentContactMicroExact": 0.9278350515463918,
+    "componentOperationMicroExact": 0.7216494845360825,
+    "responsiveCoverageExact": 0.7551020408163265,
+    "responsiveCoverageKappa": 0.5930795847750864,
+    "defectTypeExact": 0.7959183673469388,
+    "diagnosticObjectExact": 0.5357142857142857,
+    "impactModeExact": 0.8571428571428571,
+    "diagnosticExact": 0.8571428571428571,
+    "reframeExact": 0.9183673469387755,
+    "burdenExact": 1,
+    "burdenKappa": 1,
+    "exactDerivedTupleExact": 0.6326530612244898,
+    "diagnosticPositiveCountA": 26,
+    "diagnosticPositiveCountB": 23,
+    "reframePositiveCountA": 5,
+    "reframePositiveCountB": 5,
+    "cascadeDisagreementCount": 6
+  },
+  "keyAccuracy": {
+    "A": {
+      "targetObjectRelation": 0.7346938775510204,
+      "targetScopeRelation": 0.8163265306122449,
+      "targetBurdenRelation": 0.9387755102040817,
+      "derivedTargetCoverage": 0.5714285714285714,
+      "defectType": 0.6122448979591837,
+      "impactMode": 0.6122448979591837,
+      "derivedDiagnostic": 0.6122448979591837,
+      "derivedReframe": 0.9183673469387755,
+      "derivedBurdenRelation": 1,
+      "diagnosticObject": 0.391304347826087,
+      "componentOperations": 0.3673469387755102,
+      "diagnosticPositiveRecall": 0.6842105263157895,
+      "reframePositiveRecall": 0.6666666666666666
+    },
+    "B": {
+      "targetObjectRelation": 0.8163265306122449,
+      "targetScopeRelation": 0.7755102040816326,
+      "targetBurdenRelation": 0.9387755102040817,
+      "derivedTargetCoverage": 0.5510204081632653,
+      "defectType": 0.6326530612244898,
+      "impactMode": 0.673469387755102,
+      "derivedDiagnostic": 0.673469387755102,
+      "derivedReframe": 0.9591836734693877,
+      "derivedBurdenRelation": 1,
+      "diagnosticObject": 0.5217391304347826,
+      "componentOperations": 0.24489795918367346,
+      "diagnosticPositiveRecall": 0.6842105263157895,
+      "reframePositiveRecall": 1
+    }
+  },
+  "thresholds": {
+    "targetObjectExact": 0.9,
+    "targetScopeExact": 0.85,
+    "targetBurdenExact": 0.9,
+    "componentContactMicroExact": 0.9,
+    "responsiveCoverageExact": 0.85,
+    "responsiveCoverageKappa": 0.75,
+    "defectTypeExact": 0.85,
+    "diagnosticObjectExact": 0.85,
+    "impactModeExact": 0.9,
+    "diagnosticExact": 0.9,
+    "reframeExact": 0.9,
+    "burdenExact": 0.8,
+    "burdenKappa": 0.7,
+    "exactDerivedTupleExact": 0.7,
+    "diagnosticPositiveRecall": 0.8,
+    "reframePositiveRecall": 1
+  },
+  "gates": {
+    "targetObjectExact": false,
+    "targetScopeExact": true,
+    "targetBurdenExact": true,
+    "componentContactMicroExact": true,
+    "responsiveCoverageExact": false,
+    "responsiveCoverageKappa": false,
+    "defectTypeExact": false,
+    "diagnosticObjectExact": false,
+    "impactModeExact": false,
+    "diagnosticExact": false,
+    "reframeExact": true,
+    "burdenExact": true,
+    "burdenKappa": true,
+    "exactDerivedTupleExact": false,
+    "keyDiagnosticPositiveRecallA": false,
+    "keyDiagnosticPositiveRecallB": false,
+    "keyReframePositiveRecallA": false,
+    "keyReframePositiveRecallB": true
+  },
+  "cascadeCases": [
+    "v28-dev-152-09",
+    "v28-dev-152-11",
+    "v28-dev-154-13",
+    "v28-dev-62-12",
+    "v28-dev-71-07",
+    "v28-dev-71-14"
+  ],
+  "perCase": [
+    {
+      "caseId": "v28-dev-04-05",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-04-06",
+      "targetObjectAgreement": true,
+      "coverageAgreement": false,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-04-07",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-04-09",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-04-10",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-04-11",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-04-12",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-152-06",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": false,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-152-08",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-152-09",
+      "targetObjectAgreement": false,
+      "coverageAgreement": false,
+      "diagnosticAgreement": false,
+      "reframeAgreement": true,
+      "cascadeDisagreement": true
+    },
+    {
+      "caseId": "v28-dev-152-11",
+      "targetObjectAgreement": false,
+      "coverageAgreement": false,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": true
+    },
+    {
+      "caseId": "v28-dev-154-05",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-154-06",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": false,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-154-07",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-154-08",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-154-09",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-154-10",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": false,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-154-11",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-154-12",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-154-13",
+      "targetObjectAgreement": false,
+      "coverageAgreement": false,
+      "diagnosticAgreement": false,
+      "reframeAgreement": true,
+      "cascadeDisagreement": true
+    },
+    {
+      "caseId": "v28-dev-154-14",
+      "targetObjectAgreement": true,
+      "coverageAgreement": false,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-154-15",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-62-04",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-62-06",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-62-07",
+      "targetObjectAgreement": true,
+      "coverageAgreement": false,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-62-08",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": false,
+      "reframeAgreement": false,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-62-09",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-62-12",
+      "targetObjectAgreement": false,
+      "coverageAgreement": false,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": true
+    },
+    {
+      "caseId": "v28-dev-71-05",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-71-06",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-71-07",
+      "targetObjectAgreement": false,
+      "coverageAgreement": false,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": true
+    },
+    {
+      "caseId": "v28-dev-71-08",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": false,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-71-10",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-71-11",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-71-13",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-71-14",
+      "targetObjectAgreement": false,
+      "coverageAgreement": false,
+      "diagnosticAgreement": true,
+      "reframeAgreement": false,
+      "cascadeDisagreement": true
+    },
+    {
+      "caseId": "v28-dev-71-15",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-71-16",
+      "targetObjectAgreement": true,
+      "coverageAgreement": false,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-84-05",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-84-06",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-84-07",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-84-09",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-84-10",
+      "targetObjectAgreement": true,
+      "coverageAgreement": false,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-84-11",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-84-12",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-84-13",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": false,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-84-14",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-84-15",
+      "targetObjectAgreement": true,
+      "coverageAgreement": true,
+      "diagnosticAgreement": true,
+      "reframeAgreement": true,
+      "cascadeDisagreement": false
+    },
+    {
+      "caseId": "v28-dev-84-16",
+      "targetObjectAgreement": true,
+      "coverageAgreement": false,
+      "diagnosticAgreement": true,
+      "reframeAgreement": false,
+      "cascadeDisagreement": false
+    }
+  ],
+  "decision": {
+    "passed": false,
+    "heldOutSelectionAuthorized": false,
+    "numericalScoringAuthorized": false,
+    "nextStep": "Refine v2.8 development rules without opening fresh held-out transcripts, then rerun a new challenge attempt."
+  }
+}

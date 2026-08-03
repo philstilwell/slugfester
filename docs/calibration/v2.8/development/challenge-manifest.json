@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "2.8-development-challenge-manifest",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.8",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.8",
+  "preregisteredAt": "2026-08-03T23:58:00Z",
+  "sourceGateCommit": "12e43368cc8515a4f5cd76daf5ecf6cc91d348df",
+  "calibrationOnly": true,
+  "challengePurpose": "Test whether the v2.8 deterministic rules can be applied consistently to retired v2.7 disagreement and rare-feature cases before any fresh held-out transcript is opened.",
+  "caseCount": 49,
+  "thresholds": {
+    "targetObjectExact": 0.9,
+    "targetScopeExact": 0.85,
+    "targetBurdenExact": 0.9,
+    "componentContactMicroExact": 0.9,
+    "responsiveCoverageExact": 0.85,
+    "responsiveCoverageKappa": 0.75,
+    "defectTypeExact": 0.85,
+    "diagnosticObjectExact": 0.85,
+    "impactModeExact": 0.9,
+    "diagnosticExact": 0.9,
+    "reframeExact": 0.9,
+    "burdenExact": 0.8,
+    "burdenKappa": 0.7,
+    "exactDerivedTupleExact": 0.7,
+    "diagnosticPositiveRecall": 0.8,
+    "reframePositiveRecall": 1
+  },
+  "denominators": {
+    "targetAxesCoverageDiagnosticReframeBurden": "all 49 responsive challenge cases",
+    "componentContactAndOperation": "target components where both passes preserve the target",
+    "diagnosticObject": "cases where at least one pass selects a non-none defect",
+    "positiveRecall": "hidden-key positive cases",
+    "cascadeDisagreement": "object-disagreement cases with downstream coverage or operation disagreement"
+  },
+  "rareFeatureRequirements": {
+    "minimumDiagnosticPositivesInKey": 3,
+    "minimumDiagnosticNegativesInKey": 3,
+    "minimumReframePositivesInKey": 3,
+    "minimumReframeNegativesInKey": 3
+  },
+  "stopRule": {
+    "keyHiddenFromPasses": true,
+    "otherPassHidden": true,
+    "failedAttemptFrozen": true,
+    "freshHeldOutSelectionAuthorizedOnlyOnPass": true,
+    "numericalScoringAuthorized": false
+  },
+  "sources": {
+    "workflowSha256": "8ae7a90888f72b770c9a382e354ef9dfab31a22b3eb3c2f2428fc4c1a9f5a689",
+    "rubricSha256": "9073a99cc00451ba73b4a738ee4e1260831352ceadeeb559b0bfd513a289b4ad",
+    "manualSha256": "43c10ef882701fe2dcb48158ff732e2632c160391f443c41f73500ba32b0f99f",
+    "challengeInputSha256": "bb8a407674bd1d7897b70bcffa4ab60d888cc005537a3bc8b7dcfd16e6fb8a3c",
+    "challengeKeySha256": "a1f261346e15e80a826cebcafec40ae26a3a262534b5fc4145d0418ba6606b4f",
+    "challengeSchemaSha256": "333c00825ba118ba2af1abc8d8dd160506bdc3c7ae5cdda9581c1cee547f01f7",
+    "semanticsLibrarySha256": "b36bc6ecbe077cfd99d55b02fc09c01a9f37d8572bb1be53d66df93d781c5677",
+    "builderSha256": "9da2f8edf5854e5bdcf5a4f9423b38e27a0caceb5a7e120ba734e7f082b79a51",
+    "inputKeyValidatorSha256": "ac2483c36bf250af6ec90d3cdbd5f6792eb2ea72c9a605912fdfcef7e3692927",
+    "blindPassValidatorSha256": "856e98d1ba4194fdfe467b36adb3c55a961f2d854c7ed7b918df6e10ca0608f8",
+    "analyzerSha256": "dff4e9ec3086106e459895dd8b9dd57a4cf4354eca61d66ee360a54c1cb183a0",
+    "manifestValidatorSha256": "c0e0c9d96fb5255385b8b8efebbb5573f71b1beb7dc50d9b5e0d426f35e20cd6"
+  }
+}

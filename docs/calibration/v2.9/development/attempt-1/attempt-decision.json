@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "2.9-development-attempt-decision",
+  "attempt": 1,
+  "status": "failed-key-construction-preflight",
+  "decidedAt": "2026-08-03T17:06:48-04:00",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.9",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.9",
+  "candidateA": {
+    "path": null,
+    "complete": false,
+    "reason": "The fresh context could not complete an artifact within its run."
+  },
+  "candidateB": {
+    "path": "docs/calibration/v2.9/development/attempt-1/key-candidate-b.json",
+    "sha256": "c1ac07546e22927a7246e024f44156b36a1393467db2533058f0f03a7256fd9e",
+    "structurallyComplete": true,
+    "completionFloorValid": false,
+    "reason": "Independent semantic annotation found one exclusive substitution and one reframe; the frozen completion floors required three of each. Repair was terminated rather than permitting count-driven relabeling."
+  },
+  "adjudicationCreated": false,
+  "manifestCreated": false,
+  "blindPassesCreated": false,
+  "challengePassed": false,
+  "executablePreflightAuthorized": false,
+  "heldOutSelectionAuthorized": false,
+  "numericalScoringAuthorized": false,
+  "productionMutationAuthorized": false,
+  "nextStep": "Create v2.9.1, remove exclusive substitution from the scoring contract, add two retired explicit-reframe fixtures, and rerun key construction with feature floors justified by the selected cases."
+}

@@ -1,0 +1,2463 @@
+{
+  "schemaVersion": "2.8-development-challenge-key",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.8",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.8",
+  "sourceGateCommit": "12e43368cc8515a4f5cd76daf5ecf6cc91d348df",
+  "calibrationOnly": true,
+  "inputPath": "docs/calibration/v2.8/development/challenge-input.json",
+  "inputSha256": "bb8a407674bd1d7897b70bcffa4ab60d888cc005537a3bc8b7dcfd16e6fb8a3c",
+  "caseCount": 49,
+  "rareFeatureAudit": {
+    "diagnosticPositiveCaseIds": [
+      "v28-dev-04-05",
+      "v28-dev-04-06",
+      "v28-dev-04-09",
+      "v28-dev-04-11",
+      "v28-dev-04-12",
+      "v28-dev-152-09",
+      "v28-dev-154-05",
+      "v28-dev-154-06",
+      "v28-dev-154-07",
+      "v28-dev-154-10",
+      "v28-dev-154-11",
+      "v28-dev-154-14",
+      "v28-dev-71-13",
+      "v28-dev-84-05",
+      "v28-dev-84-06",
+      "v28-dev-84-07",
+      "v28-dev-84-10",
+      "v28-dev-84-14",
+      "v28-dev-84-15"
+    ],
+    "diagnosticNegativeCaseIds": [
+      "v28-dev-04-07",
+      "v28-dev-04-10",
+      "v28-dev-152-06",
+      "v28-dev-152-08",
+      "v28-dev-152-11",
+      "v28-dev-154-08",
+      "v28-dev-154-09",
+      "v28-dev-154-12",
+      "v28-dev-154-13",
+      "v28-dev-154-15",
+      "v28-dev-62-04",
+      "v28-dev-62-06",
+      "v28-dev-62-07",
+      "v28-dev-62-08",
+      "v28-dev-62-09",
+      "v28-dev-62-12",
+      "v28-dev-71-05",
+      "v28-dev-71-06",
+      "v28-dev-71-07",
+      "v28-dev-71-08",
+      "v28-dev-71-10",
+      "v28-dev-71-11",
+      "v28-dev-71-14",
+      "v28-dev-71-15",
+      "v28-dev-71-16",
+      "v28-dev-84-09",
+      "v28-dev-84-11",
+      "v28-dev-84-12",
+      "v28-dev-84-13",
+      "v28-dev-84-16"
+    ],
+    "reframePositiveCaseIds": [
+      "v28-dev-154-13",
+      "v28-dev-71-05",
+      "v28-dev-71-14"
+    ],
+    "reframeNegativeCaseIds": [
+      "v28-dev-04-05",
+      "v28-dev-04-06",
+      "v28-dev-04-07",
+      "v28-dev-04-09",
+      "v28-dev-04-10",
+      "v28-dev-04-11",
+      "v28-dev-04-12",
+      "v28-dev-152-06",
+      "v28-dev-152-08",
+      "v28-dev-152-09",
+      "v28-dev-152-11",
+      "v28-dev-154-05",
+      "v28-dev-154-06",
+      "v28-dev-154-07",
+      "v28-dev-154-08",
+      "v28-dev-154-09",
+      "v28-dev-154-10",
+      "v28-dev-154-11",
+      "v28-dev-154-12",
+      "v28-dev-154-14",
+      "v28-dev-154-15",
+      "v28-dev-62-04",
+      "v28-dev-62-06",
+      "v28-dev-62-07",
+      "v28-dev-62-08",
+      "v28-dev-62-09",
+      "v28-dev-62-12",
+      "v28-dev-71-06",
+      "v28-dev-71-07",
+      "v28-dev-71-08",
+      "v28-dev-71-10",
+      "v28-dev-71-11",
+      "v28-dev-71-13",
+      "v28-dev-71-15",
+      "v28-dev-71-16",
+      "v28-dev-84-05",
+      "v28-dev-84-06",
+      "v28-dev-84-07",
+      "v28-dev-84-09",
+      "v28-dev-84-10",
+      "v28-dev-84-11",
+      "v28-dev-84-12",
+      "v28-dev-84-13",
+      "v28-dev-84-14",
+      "v28-dev-84-15",
+      "v28-dev-84-16"
+    ]
+  },
+  "cases": [
+    {
+      "caseId": "v28-dev-04-05",
+      "disagreementFields": [
+        "componentOperations"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "lennox-atkins-science-explain-everything-2019-target-05-c1:undermines",
+          "lennox-atkins-science-explain-everything-2019-target-05-c2:accepts"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full",
+        "defectType": "evidential-insufficiency",
+        "defectObject": "target-packet:lennox-atkins-science-explain-everything-2019-target-05",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "lennox-atkins-science-explain-everything-2019-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Atkins preserves the packet, accepts the resurrection claim foundational role, and attacks its claimed evidential warrant.",
+        "mechanism": "The no-evidence defect is tied to the stated consequence that the resurrection claim should be dismissed.",
+        "burden": "Rejecting the central supernatural evidence supports the con side's evidence-based central explanatory route."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/lennox-atkins-science-explain-everything-2019.json",
+        "inventorySha256": "d6b0e8abdb54573079b9fd7de2eddfdcaf10ae6cd5d40c01ce8cbb4d1e1696ad",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/lennox-atkins-science-explain-everything-2019.json",
+        "passASha256": "b2988afc805ea9a3593d7ed6bf9cde963016ffa5c0c837a2e4d54ab728d06cce",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/lennox-atkins-science-explain-everything-2019.json",
+        "passBSha256": "afcef4cceb0ce5a59ba3c8228652ea97e990e79ff839185b70bed8e196d093b6",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/lennox-atkins-science-explain-everything-2019.json",
+        "lockSha256": "3121ea6d23b007f9ff8a53289d29c15d2139d5d8fc045c6c4253333b77250dfb"
+      }
+    },
+    {
+      "caseId": "v28-dev-04-06",
+      "disagreementFields": [
+        "defectType"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "modality-shift",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "lennox-atkins-science-explain-everything-2019-target-06-c1:none",
+          "lennox-atkins-science-explain-everything-2019-target-06-c2:qualifies",
+          "lennox-atkins-science-explain-everything-2019-target-06-c3:denies"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "scope-mismatch",
+        "defectObject": "target-component:lennox-atkins-science-explain-everything-2019-target-06-c3",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "lennox-atkins-science-explain-everything-2019-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "The response retains resurrection but shifts impossibility to normal regularity, qualifying one rule and denying the conclusion.",
+        "mechanism": "The response identifies the mismatch between normal nonoccurrence and impossibility, then states that science cannot forbid resurrection.",
+        "burden": "Limiting what natural law can rule out directly supports the pro side's central science-limits bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/lennox-atkins-science-explain-everything-2019.json",
+        "inventorySha256": "d6b0e8abdb54573079b9fd7de2eddfdcaf10ae6cd5d40c01ce8cbb4d1e1696ad",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/lennox-atkins-science-explain-everything-2019.json",
+        "passASha256": "b2988afc805ea9a3593d7ed6bf9cde963016ffa5c0c837a2e4d54ab728d06cce",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/lennox-atkins-science-explain-everything-2019.json",
+        "passBSha256": "afcef4cceb0ce5a59ba3c8228652ea97e990e79ff839185b70bed8e196d093b6",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/lennox-atkins-science-explain-everything-2019.json",
+        "lockSha256": "3121ea6d23b007f9ff8a53289d29c15d2139d5d8fc045c6c4253333b77250dfb"
+      }
+    },
+    {
+      "caseId": "v28-dev-04-07",
+      "disagreementFields": [
+        "targetObjectRelation",
+        "objectChangeType",
+        "componentOperations",
+        "derivedTargetDisposition",
+        "derivedTargetCoverage",
+        "defectType",
+        "defectObject",
+        "impactMode"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "referent",
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "lennox-atkins-science-explain-everything-2019-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Atkins changes from the specific creator-regularity-resurrection packet to generic religious God-did-it explanations.",
+        "mechanism": "The criticism and laziness verdict concern the substituted generic referent, not a locked defect on the original packet.",
+        "burden": "Attacking supernatural explanation as evidentially empty supports the con side's locked central bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/lennox-atkins-science-explain-everything-2019.json",
+        "inventorySha256": "d6b0e8abdb54573079b9fd7de2eddfdcaf10ae6cd5d40c01ce8cbb4d1e1696ad",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/lennox-atkins-science-explain-everything-2019.json",
+        "passASha256": "b2988afc805ea9a3593d7ed6bf9cde963016ffa5c0c837a2e4d54ab728d06cce",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/lennox-atkins-science-explain-everything-2019.json",
+        "passBSha256": "afcef4cceb0ce5a59ba3c8228652ea97e990e79ff839185b70bed8e196d093b6",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/lennox-atkins-science-explain-everything-2019.json",
+        "lockSha256": "3121ea6d23b007f9ff8a53289d29c15d2139d5d8fc045c6c4253333b77250dfb"
+      }
+    },
+    {
+      "caseId": "v28-dev-04-09",
+      "disagreementFields": [
+        "componentOperations",
+        "relevantContraryMaterial",
+        "derivedTargetCoverage",
+        "impactMode",
+        "derivedDiagnostic"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "lennox-atkins-science-explain-everything-2019-target-09-c1:none"
+        ],
+        "relevantContraryMaterial": true,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "relevant-nonanswer",
+        "defectType": "invalid-inference",
+        "defectObject": "target-packet:lennox-atkins-science-explain-everything-2019-target-09",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "lennox-atkins-science-explain-everything-2019-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "The analogy is relevant to the equal-opposites thesis but does not deny or otherwise operate on that locked fact-premise.",
+        "mechanism": "The mapped credits-and-debts analogy identifies the inference and expressly presents the nothing-going-on consequence as not following.",
+        "burden": "Questioning the explanatory sufficiency of balanced opposites supports the pro side's central science-limits bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/lennox-atkins-science-explain-everything-2019.json",
+        "inventorySha256": "d6b0e8abdb54573079b9fd7de2eddfdcaf10ae6cd5d40c01ce8cbb4d1e1696ad",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/lennox-atkins-science-explain-everything-2019.json",
+        "passASha256": "b2988afc805ea9a3593d7ed6bf9cde963016ffa5c0c837a2e4d54ab728d06cce",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/lennox-atkins-science-explain-everything-2019.json",
+        "passBSha256": "afcef4cceb0ce5a59ba3c8228652ea97e990e79ff839185b70bed8e196d093b6",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/lennox-atkins-science-explain-everything-2019.json",
+        "lockSha256": "3121ea6d23b007f9ff8a53289d29c15d2139d5d8fc045c6c4253333b77250dfb"
+      }
+    },
+    {
+      "caseId": "v28-dev-04-10",
+      "disagreementFields": [
+        "targetObjectRelation",
+        "objectChangeType",
+        "targetScopeRelation",
+        "componentOperations",
+        "derivedTargetDisposition",
+        "derivedTargetCoverage"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "referent",
+        "targetScopeRelation": "narrowed",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "lennox-atkins-science-explain-everything-2019-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Atkins changes from what atheism offers to what religion offers as comfort, restricting the new claim to some cases.",
+        "mechanism": "The false-comfort verdict concerns the substituted religious referent and diagnoses no defect on the locked atheism packet.",
+        "burden": "Treating religious consolation as false supports the con side's rejection of unsupported afterlife additions."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/lennox-atkins-science-explain-everything-2019.json",
+        "inventorySha256": "d6b0e8abdb54573079b9fd7de2eddfdcaf10ae6cd5d40c01ce8cbb4d1e1696ad",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/lennox-atkins-science-explain-everything-2019.json",
+        "passASha256": "b2988afc805ea9a3593d7ed6bf9cde963016ffa5c0c837a2e4d54ab728d06cce",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/lennox-atkins-science-explain-everything-2019.json",
+        "passBSha256": "afcef4cceb0ce5a59ba3c8228652ea97e990e79ff839185b70bed8e196d093b6",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/lennox-atkins-science-explain-everything-2019.json",
+        "lockSha256": "3121ea6d23b007f9ff8a53289d29c15d2139d5d8fc045c6c4253333b77250dfb"
+      }
+    },
+    {
+      "caseId": "v28-dev-04-11",
+      "disagreementFields": [],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "lennox-atkins-science-explain-everything-2019-target-11-c1:accepts",
+          "lennox-atkins-science-explain-everything-2019-target-11-c2:denies"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full",
+        "defectType": "invalid-inference",
+        "defectObject": "target-component:lennox-atkins-science-explain-everything-2019-target-11-c2",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "lennox-atkins-science-explain-everything-2019-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "The response grants scientific prediction of consequences but denies the conclusion that science supplies the normative ought.",
+        "mechanism": "The expressed inability of chemistry to determine what ought to be done states the inference's exact consequence.",
+        "burden": "Separating descriptive chemistry from moral obligation directly supports the pro side's central science-limits bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/lennox-atkins-science-explain-everything-2019.json",
+        "inventorySha256": "d6b0e8abdb54573079b9fd7de2eddfdcaf10ae6cd5d40c01ce8cbb4d1e1696ad",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/lennox-atkins-science-explain-everything-2019.json",
+        "passASha256": "b2988afc805ea9a3593d7ed6bf9cde963016ffa5c0c837a2e4d54ab728d06cce",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/lennox-atkins-science-explain-everything-2019.json",
+        "passBSha256": "afcef4cceb0ce5a59ba3c8228652ea97e990e79ff839185b70bed8e196d093b6",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/lennox-atkins-science-explain-everything-2019.json",
+        "lockSha256": "3121ea6d23b007f9ff8a53289d29c15d2139d5d8fc045c6c4253333b77250dfb"
+      }
+    },
+    {
+      "caseId": "v28-dev-04-12",
+      "disagreementFields": [
+        "defectType"
+      ],
+      "v28Adjustments": [
+        "Diagnostic object moved to the target packet because the v2.7 component kind is ineligible for this defect under the v2.8 matrix."
+      ],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "narrowed",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "lennox-atkins-science-explain-everything-2019-target-12-c1:qualifies",
+          "lennox-atkins-science-explain-everything-2019-target-12-c2:none"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "evidential-insufficiency",
+        "defectObject": "target-packet:lennox-atkins-science-explain-everything-2019-target-12",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "lennox-atkins-science-explain-everything-2019-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "The response keeps the biology-law object but narrows near-total demonstration to inference to the best explanation.",
+        "mechanism": "The contrast between best-explanation inference and demonstration expressly states the evidential limitation on the target rule.",
+        "burden": "Limiting biological law's demonstrative reach directly supports the pro side's central science-limits bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/lennox-atkins-science-explain-everything-2019.json",
+        "inventorySha256": "d6b0e8abdb54573079b9fd7de2eddfdcaf10ae6cd5d40c01ce8cbb4d1e1696ad",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/lennox-atkins-science-explain-everything-2019.json",
+        "passASha256": "b2988afc805ea9a3593d7ed6bf9cde963016ffa5c0c837a2e4d54ab728d06cce",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/lennox-atkins-science-explain-everything-2019.json",
+        "passBSha256": "afcef4cceb0ce5a59ba3c8228652ea97e990e79ff839185b70bed8e196d093b6",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/lennox-atkins-science-explain-everything-2019.json",
+        "lockSha256": "3121ea6d23b007f9ff8a53289d29c15d2139d5d8fc045c6c4253333b77250dfb"
+      }
+    },
+    {
+      "caseId": "v28-dev-152-06",
+      "disagreementFields": [
+        "componentOperations",
+        "malformedDemandExplained"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "knechtle-aron-ra-god-existence-2023-target-06-c1:none",
+          "knechtle-aron-ra-god-existence-2023-target-06-c2:none",
+          "knechtle-aron-ra-god-existence-2023-target-06-c3:none",
+          "knechtle-aron-ra-god-existence-2023-target-06-c4:explains"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "knechtle-aron-ra-god-existence-2023-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Aron retains the demand and explains only the mathematics-burden component; he does not contact the reason-and-logic components.",
+        "mechanism": "The comparison answers the mathematics demand but does not explicitly explain that the demand itself is malformed.",
+        "burden": "The unchanged-arithmetic comparison directly supports the locked con central natural-properties bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/knechtle-aron-ra-god-existence-2023.json",
+        "inventorySha256": "b36b4e1a970d76e9edc51ab7acfdcb0604a94b5939e73ccc49781d022aabac54",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/knechtle-aron-ra-god-existence-2023.json",
+        "passASha256": "c25e762a808f07a4a739211ea3ca0cc9dae46af15972e1ea1c7380646424dc4f",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/knechtle-aron-ra-god-existence-2023.json",
+        "passBSha256": "44ac8a3a8a79cb1f6e3697174bd4c3c56c63adc64aae0d60c54dffc7581e16ea",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/knechtle-aron-ra-god-existence-2023.json",
+        "lockSha256": "9a550bc6a4c9b8f74cb6c436042877e576c939f88ff7a245ef56de6645c0b48f"
+      }
+    },
+    {
+      "caseId": "v28-dev-152-08",
+      "disagreementFields": [
+        "componentOperations",
+        "defectType",
+        "defectObject",
+        "impactMode",
+        "derivedDiagnostic"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "knechtle-aron-ra-god-existence-2023-target-08-c1:distinguishes",
+          "knechtle-aron-ra-god-existence-2023-target-08-c2:none",
+          "knechtle-aron-ra-god-existence-2023-target-08-c3:explains"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "knechtle-aron-ra-god-existence-2023-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Aron distinguishes outward justification from inward moral recognition and explains the conflict, while leaving the atheist actor untouched.",
+        "mechanism": "The move explains the apparent conflict but does not explicitly diagnose a listed defect or state a distinct inferential consequence.",
+        "burden": "The dogmatic-excuse explanation directly supports the locked con central social-morality bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/knechtle-aron-ra-god-existence-2023.json",
+        "inventorySha256": "b36b4e1a970d76e9edc51ab7acfdcb0604a94b5939e73ccc49781d022aabac54",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/knechtle-aron-ra-god-existence-2023.json",
+        "passASha256": "c25e762a808f07a4a739211ea3ca0cc9dae46af15972e1ea1c7380646424dc4f",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/knechtle-aron-ra-god-existence-2023.json",
+        "passBSha256": "44ac8a3a8a79cb1f6e3697174bd4c3c56c63adc64aae0d60c54dffc7581e16ea",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/knechtle-aron-ra-god-existence-2023.json",
+        "lockSha256": "9a550bc6a4c9b8f74cb6c436042877e576c939f88ff7a245ef56de6645c0b48f"
+      }
+    },
+    {
+      "caseId": "v28-dev-152-09",
+      "disagreementFields": [],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "narrowed",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "knechtle-aron-ra-god-existence-2023-target-09-c1:none",
+          "knechtle-aron-ra-god-existence-2023-target-09-c2:none",
+          "knechtle-aron-ra-god-existence-2023-target-09-c3:distinguishes"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "scope-mismatch",
+        "defectObject": "target-component:knechtle-aron-ra-god-existence-2023-target-09-c3",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "knechtle-aron-ra-god-existence-2023-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Stuart keeps the science-design object but narrows the reply to cosmic origin rather than science generally.",
+        "mechanism": "Stuart identifies a scope mismatch and states its consequence: cosmic origins still require something to initiate the universe.",
+        "burden": "The origin distinction directly supports the locked pro central creator-explanation bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/knechtle-aron-ra-god-existence-2023.json",
+        "inventorySha256": "b36b4e1a970d76e9edc51ab7acfdcb0604a94b5939e73ccc49781d022aabac54",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/knechtle-aron-ra-god-existence-2023.json",
+        "passASha256": "c25e762a808f07a4a739211ea3ca0cc9dae46af15972e1ea1c7380646424dc4f",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/knechtle-aron-ra-god-existence-2023.json",
+        "passBSha256": "44ac8a3a8a79cb1f6e3697174bd4c3c56c63adc64aae0d60c54dffc7581e16ea",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/knechtle-aron-ra-god-existence-2023.json",
+        "lockSha256": "9a550bc6a4c9b8f74cb6c436042877e576c939f88ff7a245ef56de6645c0b48f"
+      }
+    },
+    {
+      "caseId": "v28-dev-152-11",
+      "disagreementFields": [
+        "targetObjectRelation",
+        "objectChangeType",
+        "targetScopeRelation",
+        "componentOperations",
+        "derivedTargetDisposition",
+        "derivedTargetCoverage"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "modality-shift",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "knechtle-aron-ra-god-existence-2023-target-11-c1:none",
+          "knechtle-aron-ra-god-existence-2023-target-11-c2:none",
+          "knechtle-aron-ra-god-existence-2023-target-11-c3:qualifies"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "knechtle-aron-ra-god-existence-2023-pro-subsidiary:supports"
+        ],
+        "derivedBurdenRelation": "advances-sub-burden"
+      },
+      "rationale": {
+        "coverage": "The evidential object and burden remain, while Stuart shifts to possible unknown divine reasons and qualifies the no-verifiable-truth conclusion.",
+        "mechanism": "The possibility qualification changes modality but does not explicitly identify a listed diagnostic defect or reframe the demand.",
+        "burden": "The unknown-reasons possibility supports only the locked pro subsidiary evidential consideration."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/knechtle-aron-ra-god-existence-2023.json",
+        "inventorySha256": "b36b4e1a970d76e9edc51ab7acfdcb0604a94b5939e73ccc49781d022aabac54",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/knechtle-aron-ra-god-existence-2023.json",
+        "passASha256": "c25e762a808f07a4a739211ea3ca0cc9dae46af15972e1ea1c7380646424dc4f",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/knechtle-aron-ra-god-existence-2023.json",
+        "passBSha256": "44ac8a3a8a79cb1f6e3697174bd4c3c56c63adc64aae0d60c54dffc7581e16ea",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/knechtle-aron-ra-god-existence-2023.json",
+        "lockSha256": "9a550bc6a4c9b8f74cb6c436042877e576c939f88ff7a245ef56de6645c0b48f"
+      }
+    },
+    {
+      "caseId": "v28-dev-154-05",
+      "disagreementFields": [
+        "defectType",
+        "defectObject",
+        "impactMode",
+        "derivedDiagnostic"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "strengthened",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-05-c1:distinguishes",
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-05-c2:none"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "scope-mismatch",
+        "defectObject": "target-packet:koukl-oconnor-kanojia-nonbelief-harm-2025-target-05",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "O'Connor retains creator-assigned purpose but strengthens the adequacy standard to what people really want, distinguishing assignment from sufficiency while leaving friendship unaddressed.",
+        "mechanism": "He identifies a scope mismatch between having assigned purpose and having enough meaning, with the stated consequence that assignment does not address the relevant human demand.",
+        "burden": "Showing that authoritative assignment alone is insufficient directly advances the con side's central account of meaningful flourishing."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "inventorySha256": "ed7a0cf3b17c4f69c4895d5f8734ed335d582b2263dbd1ad5598a78ae0f25f87",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passASha256": "fa082f3a6efc13ef829c86002deb441068ef35467ee63c9035a5cc59da03f0c9",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passBSha256": "fb931e92cfd5cdd302f50ef083bce1b312b197aa5be443cc08a45d822645759e",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "lockSha256": "aab3f23e672b9f0787ec01880112094ed5c55c26f2284e3d058700924f5d376e"
+      }
+    },
+    {
+      "caseId": "v28-dev-154-06",
+      "disagreementFields": [
+        "componentOperations",
+        "defectType",
+        "defectObject",
+        "impactMode",
+        "derivedDiagnostic"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-06-c1:accepts",
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-06-c2:accepts",
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-06-c3:distinguishes"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full",
+        "defectType": "unsupported-comparison",
+        "defectObject": "target-packet:koukl-oconnor-kanojia-nonbelief-harm-2025-target-06",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Koukl accepts the paperclip case's dissatisfaction but distinguishes arbitrary production from loving friendship, directly operating on every locked component.",
+        "mechanism": "The loving-character difference attacks the paperclip comparison's support, and Koukl expressly concludes that the divine purpose is not thereby arbitrary or negligible.",
+        "burden": "The loving-friendship distinction directly supports the pro side's central objective-purpose route against the analogy."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "inventorySha256": "ed7a0cf3b17c4f69c4895d5f8734ed335d582b2263dbd1ad5598a78ae0f25f87",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passASha256": "fa082f3a6efc13ef829c86002deb441068ef35467ee63c9035a5cc59da03f0c9",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passBSha256": "fb931e92cfd5cdd302f50ef083bce1b312b197aa5be443cc08a45d822645759e",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "lockSha256": "aab3f23e672b9f0787ec01880112094ed5c55c26f2284e3d058700924f5d376e"
+      }
+    },
+    {
+      "caseId": "v28-dev-154-07",
+      "disagreementFields": [
+        "componentOperations",
+        "derivedTargetCoverage",
+        "defectType",
+        "defectObject",
+        "impactMode",
+        "derivedDiagnostic"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-07-c1:none",
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-07-c2:distinguishes",
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-07-c3:denies"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "unsupported-comparison",
+        "defectObject": "target-component:koukl-oconnor-kanojia-nonbelief-harm-2025-target-07-c2",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Koukl preserves the content-versus-satisfaction issue, distinguishes theological views of persons, and denies that content is experientially inert, but does not address expected happiness itself.",
+        "mechanism": "The illusion-versus-significant-individual contrast challenges cross-religion comparability and explicitly links the difference to a different lived experience.",
+        "burden": "Arguing that theological truth-content affects experience directly advances the pro side's central relationship-and-flourishing route."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "inventorySha256": "ed7a0cf3b17c4f69c4895d5f8734ed335d582b2263dbd1ad5598a78ae0f25f87",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passASha256": "fa082f3a6efc13ef829c86002deb441068ef35467ee63c9035a5cc59da03f0c9",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passBSha256": "fb931e92cfd5cdd302f50ef083bce1b312b197aa5be443cc08a45d822645759e",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "lockSha256": "aab3f23e672b9f0787ec01880112094ed5c55c26f2284e3d058700924f5d376e"
+      }
+    },
+    {
+      "caseId": "v28-dev-154-08",
+      "disagreementFields": [
+        "defectType",
+        "defectObject"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1:undermines",
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2:undermines"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full",
+        "defectType": "evidential-insufficiency",
+        "defectObject": "target-packet:koukl-oconnor-kanojia-nonbelief-harm-2025-target-08",
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "The reverse-conversion counterexample attacks both the one-way anecdotal premise and its use against religious interchangeability, contacting the entire packet.",
+        "mechanism": "O'Connor supplies contrary cases that expose evidential insufficiency, but the short reply does not explicitly state the resulting inferential consequence.",
+        "burden": "Counterexamples to uniquely Christian satisfaction support the con side's central claim that flourishing is not exclusive to Christian theism."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "inventorySha256": "ed7a0cf3b17c4f69c4895d5f8734ed335d582b2263dbd1ad5598a78ae0f25f87",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passASha256": "fa082f3a6efc13ef829c86002deb441068ef35467ee63c9035a5cc59da03f0c9",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passBSha256": "fb931e92cfd5cdd302f50ef083bce1b312b197aa5be443cc08a45d822645759e",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "lockSha256": "aab3f23e672b9f0787ec01880112094ed5c55c26f2284e3d058700924f5d376e"
+      }
+    },
+    {
+      "caseId": "v28-dev-154-09",
+      "disagreementFields": [
+        "targetObjectRelation",
+        "objectChangeType",
+        "componentOperations",
+        "derivedTargetDisposition",
+        "derivedTargetCoverage",
+        "defectType",
+        "defectObject",
+        "impactMode"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "referent",
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Kanojia changes the referent from Koukl's transcendent objective morality to dharma and disputes projecting Western morality onto that distinct concept.",
+        "mechanism": "The move marks a framework difference but does not explicitly diagnose a qualifying defect in the locked objective-morality packet.",
+        "burden": "Distinguishing dharma from Western moral categories supports the con side's broader spiritual-practice alternative at the central level."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "inventorySha256": "ed7a0cf3b17c4f69c4895d5f8734ed335d582b2263dbd1ad5598a78ae0f25f87",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passASha256": "fa082f3a6efc13ef829c86002deb441068ef35467ee63c9035a5cc59da03f0c9",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passBSha256": "fb931e92cfd5cdd302f50ef083bce1b312b197aa5be443cc08a45d822645759e",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "lockSha256": "aab3f23e672b9f0787ec01880112094ed5c55c26f2284e3d058700924f5d376e"
+      }
+    },
+    {
+      "caseId": "v28-dev-154-10",
+      "disagreementFields": [
+        "impactMode",
+        "derivedDiagnostic"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-10-c1:distinguishes",
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-10-c2:undermines"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full",
+        "defectType": "ambiguity",
+        "defectObject": "target-packet:koukl-oconnor-kanojia-nonbelief-harm-2025-target-10",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Kanojia distinguishes dharma's regularity from moral ought and attacks the universality of the commonsense category.",
+        "mechanism": "He identifies non-equivalent concepts and states that the commonsense inference depends on what a culture makes common.",
+        "burden": "The dharma distinction advances the con side's central alternative framework for duty and meaningful practice."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "inventorySha256": "ed7a0cf3b17c4f69c4895d5f8734ed335d582b2263dbd1ad5598a78ae0f25f87",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passASha256": "fa082f3a6efc13ef829c86002deb441068ef35467ee63c9035a5cc59da03f0c9",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passBSha256": "fb931e92cfd5cdd302f50ef083bce1b312b197aa5be443cc08a45d822645759e",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "lockSha256": "aab3f23e672b9f0787ec01880112094ed5c55c26f2284e3d058700924f5d376e"
+      }
+    },
+    {
+      "caseId": "v28-dev-154-11",
+      "disagreementFields": [],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c1:denies",
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c2:distinguishes"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full",
+        "defectType": "attribution-error",
+        "defectObject": "target-packet:koukl-oconnor-kanojia-nonbelief-harm-2025-target-11",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Kanojia directly denies that his account lacks morality and distinguishes the morality layer from dharma, contacting both attribution components.",
+        "mechanism": "He corrects the attributed view and identifies truthfulness and nonviolence as the resulting distinct moral category.",
+        "burden": "A differentiated but real moral layer supports the con side's central claim that non-Christian practices can guide flourishing."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "inventorySha256": "ed7a0cf3b17c4f69c4895d5f8734ed335d582b2263dbd1ad5598a78ae0f25f87",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passASha256": "fa082f3a6efc13ef829c86002deb441068ef35467ee63c9035a5cc59da03f0c9",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passBSha256": "fb931e92cfd5cdd302f50ef083bce1b312b197aa5be443cc08a45d822645759e",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "lockSha256": "aab3f23e672b9f0787ec01880112094ed5c55c26f2284e3d058700924f5d376e"
+      }
+    },
+    {
+      "caseId": "v28-dev-154-12",
+      "disagreementFields": [
+        "targetObjectRelation",
+        "objectChangeType",
+        "componentOperations",
+        "derivedTargetDisposition",
+        "derivedTargetCoverage",
+        "defectType",
+        "defectObject",
+        "impactMode",
+        "derivedDiagnostic"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "subject",
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "The move changes from the emergency-room duty to the Mahabharata killing case, so it substitutes a different subject rather than contacting those components.",
+        "mechanism": "Because the response substitutes the Mahabharata subject, it does not diagnose a qualifying defect in the locked emergency-room target packet.",
+        "burden": "The counterexample supports the con side's central case for a distinct spiritual framework of duty and flourishing."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "inventorySha256": "ed7a0cf3b17c4f69c4895d5f8734ed335d582b2263dbd1ad5598a78ae0f25f87",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passASha256": "fa082f3a6efc13ef829c86002deb441068ef35467ee63c9035a5cc59da03f0c9",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passBSha256": "fb931e92cfd5cdd302f50ef083bce1b312b197aa5be443cc08a45d822645759e",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "lockSha256": "aab3f23e672b9f0787ec01880112094ed5c55c26f2284e3d058700924f5d376e"
+      }
+    },
+    {
+      "caseId": "v28-dev-154-13",
+      "disagreementFields": [],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "question-type",
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "replaced",
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": true,
+        "replacementDemandStated": true,
+        "derivedReframe": true,
+        "contactedBridges": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "O'Connor disowns the external moral-assessment demand and replaces it with Christianity's internal predictive question, changing question type and burden.",
+        "mechanism": "The substituted target has no locked-target defect; separately, he explains the moral demand as malformed and states a replacement predictive test.",
+        "burden": "The internal suffering prediction directly advances the con side's central truth-evidence objection to Christian purpose claims."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "inventorySha256": "ed7a0cf3b17c4f69c4895d5f8734ed335d582b2263dbd1ad5598a78ae0f25f87",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passASha256": "fa082f3a6efc13ef829c86002deb441068ef35467ee63c9035a5cc59da03f0c9",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passBSha256": "fb931e92cfd5cdd302f50ef083bce1b312b197aa5be443cc08a45d822645759e",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "lockSha256": "aab3f23e672b9f0787ec01880112094ed5c55c26f2284e3d058700924f5d376e"
+      }
+    },
+    {
+      "caseId": "v28-dev-154-14",
+      "disagreementFields": [
+        "defectType",
+        "defectObject",
+        "impactMode",
+        "derivedDiagnostic"
+      ],
+      "v28Adjustments": [
+        "Diagnostic object moved to the target packet because the v2.7 component kind is ineligible for this defect under the v2.8 matrix."
+      ],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c1:none",
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c2:denies",
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c3:undermines"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "missing-premise",
+        "defectObject": "target-packet:koukl-oconnor-kanojia-nonbelief-harm-2025-target-14",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Koukl preserves the regress target, denies that Eve's act required a prior proclivity, and undermines the conclusion through free initiation, leaving the offered fall explanation untouched.",
+        "mechanism": "He identifies the missing necessity premise that action requires a determining proclivity and states that Eve could instead initiate a free action.",
+        "burden": "The free-action explanation supports the pro side's central theistic response to suffering and moral agency."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "inventorySha256": "ed7a0cf3b17c4f69c4895d5f8734ed335d582b2263dbd1ad5598a78ae0f25f87",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passASha256": "fa082f3a6efc13ef829c86002deb441068ef35467ee63c9035a5cc59da03f0c9",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passBSha256": "fb931e92cfd5cdd302f50ef083bce1b312b197aa5be443cc08a45d822645759e",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "lockSha256": "aab3f23e672b9f0787ec01880112094ed5c55c26f2284e3d058700924f5d376e"
+      }
+    },
+    {
+      "caseId": "v28-dev-154-15",
+      "disagreementFields": [
+        "targetObjectRelation",
+        "objectChangeType",
+        "targetScopeRelation",
+        "componentOperations",
+        "derivedTargetDisposition",
+        "derivedTargetCoverage",
+        "defectType",
+        "defectObject",
+        "impactMode",
+        "derivedDiagnostic"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "question-type",
+        "targetScopeRelation": "strengthened",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "O'Connor changes from what Eve knew and did to what the fall explains, while strengthening the explanatory range through evil and suffering origins.",
+        "mechanism": "Because the response changes to a broader explanatory question, it does not diagnose a defect against the preserved locked target packet.",
+        "burden": "The alleged explanatory failure directly advances the con side's central suffering and truth-evidence objection."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "inventorySha256": "ed7a0cf3b17c4f69c4895d5f8734ed335d582b2263dbd1ad5598a78ae0f25f87",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passASha256": "fa082f3a6efc13ef829c86002deb441068ef35467ee63c9035a5cc59da03f0c9",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "passBSha256": "fb931e92cfd5cdd302f50ef083bce1b312b197aa5be443cc08a45d822645759e",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "lockSha256": "aab3f23e672b9f0787ec01880112094ed5c55c26f2284e3d058700924f5d376e"
+      }
+    },
+    {
+      "caseId": "v28-dev-62-04",
+      "disagreementFields": [
+        "componentOperations"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "pageau-folley-logos-meaning-resurrection-2026-target-04-c1:accepts",
+          "pageau-folley-logos-meaning-resurrection-2026-target-04-c2:none",
+          "pageau-folley-logos-meaning-resurrection-2026-target-04-c3:none",
+          "pageau-folley-logos-meaning-resurrection-2026-target-04-c4:none"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "pageau-folley-logos-meaning-resurrection-2026-con-subsidiary:supports"
+        ],
+        "derivedBurdenRelation": "advances-sub-burden"
+      },
+      "rationale": {
+        "coverage": "Folley preserves the city-unity target and accepts coordinated submission to a shared purpose, but does not address downward enforcement or emergence's alleged insufficiency.",
+        "mechanism": "The response offers agreement and worldview compatibility without expressly diagnosing a defect, stating an impact, or reframing a demand.",
+        "burden": "The compatibility claim supports the con side's eligible subsidiary bridge by resisting a uniquely theistic reading of social unity."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/pageau-folley-logos-meaning-resurrection-2026.json",
+        "inventorySha256": "d836a91ef0025053e237cfff2f9c6c78ad0c9089ef3752398aa8c6a9b76e4728",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/pageau-folley-logos-meaning-resurrection-2026.json",
+        "passASha256": "f083bbc5a677e1d489d01cbd849b9cda462f8aa3ec1d7a3524caa15ffa38c044",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/pageau-folley-logos-meaning-resurrection-2026.json",
+        "passBSha256": "ea05ba656134c96abd062f17a97c44686025a5cf9dca378ba64a8dfd9e7538cf",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/pageau-folley-logos-meaning-resurrection-2026.json",
+        "lockSha256": "0c3e66b518572230e955421d6b5a69fec1f2e77b19be5096d78c3a920ef38a60"
+      }
+    },
+    {
+      "caseId": "v28-dev-62-06",
+      "disagreementFields": [
+        "objectChangeType"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "question-type",
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "pageau-folley-logos-meaning-resurrection-2026-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Folley changes the question from Genesis's comparative superiority, civilizational anchoring, and loss risk to whether scripture offers allegorical lessons.",
+        "mechanism": "The response supplies alternative positive material about allegory but does not identify a typed defect, impact consequence, or demand reframe.",
+        "burden": "Locating Genesis's value in widely available allegorical lessons supports the con side's central pragmatic account."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/pageau-folley-logos-meaning-resurrection-2026.json",
+        "inventorySha256": "d836a91ef0025053e237cfff2f9c6c78ad0c9089ef3752398aa8c6a9b76e4728",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/pageau-folley-logos-meaning-resurrection-2026.json",
+        "passASha256": "f083bbc5a677e1d489d01cbd849b9cda462f8aa3ec1d7a3524caa15ffa38c044",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/pageau-folley-logos-meaning-resurrection-2026.json",
+        "passBSha256": "ea05ba656134c96abd062f17a97c44686025a5cf9dca378ba64a8dfd9e7538cf",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/pageau-folley-logos-meaning-resurrection-2026.json",
+        "lockSha256": "0c3e66b518572230e955421d6b5a69fec1f2e77b19be5096d78c3a920ef38a60"
+      }
+    },
+    {
+      "caseId": "v28-dev-62-07",
+      "disagreementFields": [
+        "componentOperations",
+        "impactMode",
+        "derivedDiagnostic"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "pageau-folley-logos-meaning-resurrection-2026-target-07-c1:none",
+          "pageau-folley-logos-meaning-resurrection-2026-target-07-c2:denies",
+          "pageau-folley-logos-meaning-resurrection-2026-target-07-c3:undermines"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "attribution-error",
+        "defectObject": "target-component:pageau-folley-logos-meaning-resurrection-2026-target-07-c2",
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "pageau-folley-logos-meaning-resurrection-2026-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Pageau preserves the historical-Genesis target, denies Folley's attribution that he rejects historicity, and thereby undermines the reason for exempting Genesis.",
+        "mechanism": "Pageau expressly corrects the historical-truth attribution, but the excerpt does not state a further inferential consequence for the exemption conclusion.",
+        "burden": "Affirming an event remembered through analogical language supports the pro side's central symbolic-realist bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/pageau-folley-logos-meaning-resurrection-2026.json",
+        "inventorySha256": "d836a91ef0025053e237cfff2f9c6c78ad0c9089ef3752398aa8c6a9b76e4728",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/pageau-folley-logos-meaning-resurrection-2026.json",
+        "passASha256": "f083bbc5a677e1d489d01cbd849b9cda462f8aa3ec1d7a3524caa15ffa38c044",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/pageau-folley-logos-meaning-resurrection-2026.json",
+        "passBSha256": "ea05ba656134c96abd062f17a97c44686025a5cf9dca378ba64a8dfd9e7538cf",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/pageau-folley-logos-meaning-resurrection-2026.json",
+        "lockSha256": "0c3e66b518572230e955421d6b5a69fec1f2e77b19be5096d78c3a920ef38a60"
+      }
+    },
+    {
+      "caseId": "v28-dev-62-08",
+      "disagreementFields": [
+        "targetBurdenRelation"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "question-type",
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "replaced",
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "pageau-folley-logos-meaning-resurrection-2026-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "After accepting the prior point, Folley replaces the nostalgia-to-event question with how predictive or observational theological claims should be assessed.",
+        "mechanism": "His explicit new point changes the live demand, but he neither explains the former demand as malformed nor states a qualifying diagnostic defect.",
+        "burden": "Treating observational theological descriptions as science-like supports the con side's central nontranscendent explanatory route."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/pageau-folley-logos-meaning-resurrection-2026.json",
+        "inventorySha256": "d836a91ef0025053e237cfff2f9c6c78ad0c9089ef3752398aa8c6a9b76e4728",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/pageau-folley-logos-meaning-resurrection-2026.json",
+        "passASha256": "f083bbc5a677e1d489d01cbd849b9cda462f8aa3ec1d7a3524caa15ffa38c044",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/pageau-folley-logos-meaning-resurrection-2026.json",
+        "passBSha256": "ea05ba656134c96abd062f17a97c44686025a5cf9dca378ba64a8dfd9e7538cf",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/pageau-folley-logos-meaning-resurrection-2026.json",
+        "lockSha256": "0c3e66b518572230e955421d6b5a69fec1f2e77b19be5096d78c3a920ef38a60"
+      }
+    },
+    {
+      "caseId": "v28-dev-62-09",
+      "disagreementFields": [
+        "objectChangeType"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "referent",
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "pageau-folley-logos-meaning-resurrection-2026-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Pageau changes the referent from Folley's hypothetical confirmation and resulting beliefs to Pageau's own meaning-based route to resurrection conviction.",
+        "mechanism": "The move contrasts evidential routes without expressly diagnosing Folley's route as defective or explaining and replacing a malformed demand.",
+        "burden": "The meaning and downstream-worldview basis for resurrection belief supports the pro side's central Logos-oriented bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/pageau-folley-logos-meaning-resurrection-2026.json",
+        "inventorySha256": "d836a91ef0025053e237cfff2f9c6c78ad0c9089ef3752398aa8c6a9b76e4728",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/pageau-folley-logos-meaning-resurrection-2026.json",
+        "passASha256": "f083bbc5a677e1d489d01cbd849b9cda462f8aa3ec1d7a3524caa15ffa38c044",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/pageau-folley-logos-meaning-resurrection-2026.json",
+        "passBSha256": "ea05ba656134c96abd062f17a97c44686025a5cf9dca378ba64a8dfd9e7538cf",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/pageau-folley-logos-meaning-resurrection-2026.json",
+        "lockSha256": "0c3e66b518572230e955421d6b5a69fec1f2e77b19be5096d78c3a920ef38a60"
+      }
+    },
+    {
+      "caseId": "v28-dev-62-12",
+      "disagreementFields": [
+        "componentOperations",
+        "relevantContraryMaterial",
+        "derivedTargetCoverage"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "pageau-folley-logos-meaning-resurrection-2026-target-12-c1:none",
+          "pageau-folley-logos-meaning-resurrection-2026-target-12-c2:none"
+        ],
+        "relevantContraryMaterial": true,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "relevant-nonanswer",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "pageau-folley-logos-meaning-resurrection-2026-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Pageau keeps the values-and-social-organization object but offers relevant contrary structure language without operating on either locked component.",
+        "mechanism": "Calling celebrated purposes structuring realities and little-g gods states no typed defect or explicit consequence for Folley's inference.",
+        "burden": "Identifying celebrated purposes with structures and little-g gods supports the pro side's central purposive-unity bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/pageau-folley-logos-meaning-resurrection-2026.json",
+        "inventorySha256": "d836a91ef0025053e237cfff2f9c6c78ad0c9089ef3752398aa8c6a9b76e4728",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-a/pageau-folley-logos-meaning-resurrection-2026.json",
+        "passASha256": "f083bbc5a677e1d489d01cbd849b9cda462f8aa3ec1d7a3524caa15ffa38c044",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/dyadic/pass-b/pageau-folley-logos-meaning-resurrection-2026.json",
+        "passBSha256": "ea05ba656134c96abd062f17a97c44686025a5cf9dca378ba64a8dfd9e7538cf",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/dyadic/locks/pageau-folley-logos-meaning-resurrection-2026.json",
+        "lockSha256": "0c3e66b518572230e955421d6b5a69fec1f2e77b19be5096d78c3a920ef38a60"
+      }
+    },
+    {
+      "caseId": "v28-dev-71-05",
+      "disagreementFields": [
+        "objectChangeType"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "comparison-class",
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": true,
+        "replacementDemandStated": true,
+        "derivedReframe": true,
+        "contactedBridges": [
+          "hitchens-kushner-gomes-god-religion-morality-2009-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "The response changes from Hitchens’s specific theocratic-party claim to a general religion-versus-skepticism comparison class, so substitution follows.",
+        "mechanism": "Kushner explicitly rejects an asymmetric comparison and supplies the matched best-to-best or worst-to-worst replacement demand.",
+        "burden": "The fairness rule supports the pro central route by limiting what selected religious harms establish about religion's overall value."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "inventorySha256": "a207612720c8b9200dc0a106009b420e62ebed6e7f221e71b0d1a5314bf9fb8f",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passASha256": "e476b4c4942ecf1291c9ce69feea9cff241a8d0e2b8b17c6706aa83d07d5d17e",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passBSha256": "8889133693f4fc118b3cd2172b142f0ecc53990fa9a3ef0228a6d0bd6ac8560a",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "lockSha256": "5432d5c42e4f3e9594e0429bff63f5870d56ddee37254cadd2018df7672a8e0e"
+      }
+    },
+    {
+      "caseId": "v28-dev-71-06",
+      "disagreementFields": [
+        "replacementDemandStated"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "question-type",
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "replaced",
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": true,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "hitchens-kushner-gomes-god-religion-morality-2009-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "The ethical-uniqueness challenge changes the question and replaces Gomes’s burden concerning practical lived Christian commitment.",
+        "mechanism": "The excerpt states a replacement demand but does not explain the original demand as malformed or diagnose a listed defect.",
+        "burden": "The uniqueness challenge directly advances the con central route that ethical action does not require supernatural belief."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "inventorySha256": "a207612720c8b9200dc0a106009b420e62ebed6e7f221e71b0d1a5314bf9fb8f",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passASha256": "e476b4c4942ecf1291c9ce69feea9cff241a8d0e2b8b17c6706aa83d07d5d17e",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passBSha256": "8889133693f4fc118b3cd2172b142f0ecc53990fa9a3ef0228a6d0bd6ac8560a",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "lockSha256": "5432d5c42e4f3e9594e0429bff63f5870d56ddee37254cadd2018df7672a8e0e"
+      }
+    },
+    {
+      "caseId": "v28-dev-71-07",
+      "disagreementFields": [
+        "targetObjectRelation",
+        "objectChangeType",
+        "componentOperations",
+        "derivedTargetDisposition",
+        "derivedTargetCoverage"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "question-type",
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "hitchens-kushner-gomes-god-religion-morality-2009-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "The higher-power recovery example concerns therapeutic cleansing and resilience, changing the question from a uniquely religious ethical statement or action.",
+        "mechanism": "It offers a different benefit rather than diagnosing the locked claim or supplying a complete two-part demand reframe.",
+        "burden": "Spiritual cleansing and recovery directly support the pro central claim that faith supplies distinctive resilience and transformation."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "inventorySha256": "a207612720c8b9200dc0a106009b420e62ebed6e7f221e71b0d1a5314bf9fb8f",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passASha256": "e476b4c4942ecf1291c9ce69feea9cff241a8d0e2b8b17c6706aa83d07d5d17e",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passBSha256": "8889133693f4fc118b3cd2172b142f0ecc53990fa9a3ef0228a6d0bd6ac8560a",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "lockSha256": "5432d5c42e4f3e9594e0429bff63f5870d56ddee37254cadd2018df7672a8e0e"
+      }
+    },
+    {
+      "caseId": "v28-dev-71-08",
+      "disagreementFields": [
+        "componentOperations"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "hitchens-kushner-gomes-god-religion-morality-2009-target-08-c1:explains",
+          "hitchens-kushner-gomes-god-religion-morality-2009-target-08-c2:denies"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "hitchens-kushner-gomes-god-religion-morality-2009-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Gomes preserves the wrongdoing-and-apology target, explains failure through human fallibility, and counters nonacknowledgment by acknowledging it.",
+        "mechanism": "The reply directly operates on both components but does not explicitly identify any listed diagnostic defect.",
+        "burden": "The fallible-construction account advances the pro central reformability claim while preserving religious moral aspiration."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "inventorySha256": "a207612720c8b9200dc0a106009b420e62ebed6e7f221e71b0d1a5314bf9fb8f",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passASha256": "e476b4c4942ecf1291c9ce69feea9cff241a8d0e2b8b17c6706aa83d07d5d17e",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passBSha256": "8889133693f4fc118b3cd2172b142f0ecc53990fa9a3ef0228a6d0bd6ac8560a",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "lockSha256": "5432d5c42e4f3e9594e0429bff63f5870d56ddee37254cadd2018df7672a8e0e"
+      }
+    },
+    {
+      "caseId": "v28-dev-71-10",
+      "disagreementFields": [
+        "componentOperations"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "hitchens-kushner-gomes-god-religion-morality-2009-target-10-c1:accepts",
+          "hitchens-kushner-gomes-god-religion-morality-2009-target-10-c2:distinguishes",
+          "hitchens-kushner-gomes-god-religion-morality-2009-target-10-c3:denies"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "hitchens-kushner-gomes-god-religion-morality-2009-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Gomes accepts human authorship, distinguishes noble aspiration from the primate-defect explanation, and denies its conclusion.",
+        "mechanism": "The answer reinterprets all target components but does not expressly state a qualifying diagnostic defect.",
+        "burden": "The aspiration model directly advances the pro central claim that fallible traditions can still orient people toward nobler goods."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "inventorySha256": "a207612720c8b9200dc0a106009b420e62ebed6e7f221e71b0d1a5314bf9fb8f",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passASha256": "e476b4c4942ecf1291c9ce69feea9cff241a8d0e2b8b17c6706aa83d07d5d17e",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passBSha256": "8889133693f4fc118b3cd2172b142f0ecc53990fa9a3ef0228a6d0bd6ac8560a",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "lockSha256": "5432d5c42e4f3e9594e0429bff63f5870d56ddee37254cadd2018df7672a8e0e"
+      }
+    },
+    {
+      "caseId": "v28-dev-71-11",
+      "disagreementFields": [
+        "componentOperations"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "hitchens-kushner-gomes-god-religion-morality-2009-target-11-c1:distinguishes",
+          "hitchens-kushner-gomes-god-religion-morality-2009-target-11-c2:explains",
+          "hitchens-kushner-gomes-god-religion-morality-2009-target-11-c3:denies"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "hitchens-kushner-gomes-god-religion-morality-2009-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Kushner distinguishes a human record from transcendent origin, explains textual imperfection, and denies mere primate invention.",
+        "mechanism": "The experience-to-record analogy supplies an alternative mechanism without expressly identifying a listed diagnostic defect.",
+        "burden": "The Sinai account directly supports the pro central route by preserving transcendence while explaining institutional and textual fallibility."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "inventorySha256": "a207612720c8b9200dc0a106009b420e62ebed6e7f221e71b0d1a5314bf9fb8f",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passASha256": "e476b4c4942ecf1291c9ce69feea9cff241a8d0e2b8b17c6706aa83d07d5d17e",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passBSha256": "8889133693f4fc118b3cd2172b142f0ecc53990fa9a3ef0228a6d0bd6ac8560a",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "lockSha256": "5432d5c42e4f3e9594e0429bff63f5870d56ddee37254cadd2018df7672a8e0e"
+      }
+    },
+    {
+      "caseId": "v28-dev-71-13",
+      "disagreementFields": [],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "hitchens-kushner-gomes-god-religion-morality-2009-target-13-c1:undermines",
+          "hitchens-kushner-gomes-god-religion-morality-2009-target-13-c2:undermines"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full",
+        "defectType": "evidential-insufficiency",
+        "defectObject": "target-packet:hitchens-kushner-gomes-god-religion-morality-2009-target-13",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "hitchens-kushner-gomes-god-religion-morality-2009-pro-subsidiary:supports"
+        ],
+        "derivedBurdenRelation": "advances-sub-burden"
+      },
+      "rationale": {
+        "coverage": "Gomes preserves Hitchens's theology-status argument and attacks both its instructional basis and its nonsubject conclusion.",
+        "mechanism": "He identifies inadequate instruction as insufficient support and says it cannot warrant the broader career-level conclusion.",
+        "burden": "The reply supports a pro subsidiary bridge by defending theology from an autobiographical instructional generalization."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "inventorySha256": "a207612720c8b9200dc0a106009b420e62ebed6e7f221e71b0d1a5314bf9fb8f",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passASha256": "e476b4c4942ecf1291c9ce69feea9cff241a8d0e2b8b17c6706aa83d07d5d17e",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passBSha256": "8889133693f4fc118b3cd2172b142f0ecc53990fa9a3ef0228a6d0bd6ac8560a",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "lockSha256": "5432d5c42e4f3e9594e0429bff63f5870d56ddee37254cadd2018df7672a8e0e"
+      }
+    },
+    {
+      "caseId": "v28-dev-71-14",
+      "disagreementFields": [
+        "malformedDemandExplained",
+        "derivedReframe"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "question-type",
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "replaced",
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": true,
+        "replacementDemandStated": true,
+        "derivedReframe": true,
+        "contactedBridges": [
+          "hitchens-kushner-gomes-god-religion-morality-2009-pro-subsidiary:supports"
+        ],
+        "derivedBurdenRelation": "advances-sub-burden"
+      },
+      "rationale": {
+        "coverage": "Kushner changes the divine-covenant question into historical provenance and replaces the requested theological answer.",
+        "mechanism": "He explains the theological framing as malformed and states a replacement inquiry about Jewish textual authorship.",
+        "burden": "The historical-provenance response supports only a pro subsidiary consideration about Judaism's distinctive textual relationship."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "inventorySha256": "a207612720c8b9200dc0a106009b420e62ebed6e7f221e71b0d1a5314bf9fb8f",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passASha256": "e476b4c4942ecf1291c9ce69feea9cff241a8d0e2b8b17c6706aa83d07d5d17e",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passBSha256": "8889133693f4fc118b3cd2172b142f0ecc53990fa9a3ef0228a6d0bd6ac8560a",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "lockSha256": "5432d5c42e4f3e9594e0429bff63f5870d56ddee37254cadd2018df7672a8e0e"
+      }
+    },
+    {
+      "caseId": "v28-dev-71-15",
+      "disagreementFields": [
+        "targetObjectRelation",
+        "objectChangeType",
+        "componentOperations",
+        "derivedTargetDisposition",
+        "derivedTargetCoverage"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "narrowed",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "hitchens-kushner-gomes-god-religion-morality-2009-target-15-c1:none",
+          "hitchens-kushner-gomes-god-religion-morality-2009-target-15-c2:qualifies"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "hitchens-kushner-gomes-god-religion-morality-2009-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "The same institutional male-domination object remains, while the answer narrows it temporally and denominationally to modern Protestant reform.",
+        "mechanism": "The reform example qualifies the institutional-form component but does not explicitly diagnose a listed defect.",
+        "burden": "Successful ordination reform directly advances the pro central claim that fallible religious institutions can be reformed."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "inventorySha256": "a207612720c8b9200dc0a106009b420e62ebed6e7f221e71b0d1a5314bf9fb8f",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passASha256": "e476b4c4942ecf1291c9ce69feea9cff241a8d0e2b8b17c6706aa83d07d5d17e",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passBSha256": "8889133693f4fc118b3cd2172b142f0ecc53990fa9a3ef0228a6d0bd6ac8560a",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "lockSha256": "5432d5c42e4f3e9594e0429bff63f5870d56ddee37254cadd2018df7672a8e0e"
+      }
+    },
+    {
+      "caseId": "v28-dev-71-16",
+      "disagreementFields": [
+        "defectType",
+        "defectObject",
+        "impactMode",
+        "derivedDiagnostic"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c1:denies",
+          "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c2:none",
+          "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c3:denies",
+          "hitchens-kushner-gomes-god-religion-morality-2009-target-16-c4:denies"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "hitchens-kushner-gomes-god-religion-morality-2009-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Hitchens preserves the violence-origin target and denies three components through a divine-mandate counterexample, leaving recognition untouched.",
+        "mechanism": "The counterexample denies Kushner’s account, but “the opposite” does not identify an internal contradiction or state a qualifying diagnostic consequence.",
+        "burden": "The divine-mandate counterexample directly advances the con central claim that religion can originate distinctive moral harms."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "inventorySha256": "a207612720c8b9200dc0a106009b420e62ebed6e7f221e71b0d1a5314bf9fb8f",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passASha256": "e476b4c4942ecf1291c9ce69feea9cff241a8d0e2b8b17c6706aa83d07d5d17e",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "passBSha256": "8889133693f4fc118b3cd2172b142f0ecc53990fa9a3ef0228a6d0bd6ac8560a",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/hitchens-kushner-gomes-god-religion-morality-2009.json",
+        "lockSha256": "5432d5c42e4f3e9594e0429bff63f5870d56ddee37254cadd2018df7672a8e0e"
+      }
+    },
+    {
+      "caseId": "v28-dev-84-05",
+      "disagreementFields": [
+        "componentOperations",
+        "defectObject"
+      ],
+      "v28Adjustments": [
+        "Diagnostic object moved to the target packet because the v2.7 component kind is ineligible for this defect under the v2.8 matrix."
+      ],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-05-c1:none",
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-05-c2:distinguishes",
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-05-c3:none"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "scope-mismatch",
+        "defectObject": "target-packet:krauss-meyer-lamoureux-god-science-universe-2016-target-05",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "The move preserves Krauss’s redundancy inference and distinguishes the metaphysical God question from the physical domain of science.",
+        "mechanism": "The scope-mismatch diagnosis attaches to the redundancy inference, and the nonscientific-domain statement supplies its inferential consequence.",
+        "burden": "The physical-versus-metaphysical distinction supports the con side’s locked central theistic-interpretation bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "inventorySha256": "9b83c9c5141d168d84a24ad5f10439456d546229f7ec6a44ca6f90a823ef2b6b",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passASha256": "8fb5600ef4ad11b5b635b891f87465de83f1dcdb3bc154a6c82925d37f1c3d8b",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passBSha256": "b97b411caf2f857c5993a47affb6de5223b2f7079e6d8aaee6ebd10fce485c00",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "lockSha256": "1a9604e70381c30094f488b1d6cfe67be14dedf1a5834bc09612f0a72db747cb"
+      }
+    },
+    {
+      "caseId": "v28-dev-84-06",
+      "disagreementFields": [
+        "componentOperations",
+        "defectType"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-06-c1:none",
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-06-c2:undermines",
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-06-c3:qualifies"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "missing-premise",
+        "defectObject": "target-component:krauss-meyer-lamoureux-god-science-universe-2016-target-06-c2",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "The natural-route premise remains untouched, while the move attacks the bridge from scientific results to metaphysical redundancy and qualifies the evidential conclusion.",
+        "mechanism": "The missing cross-paradigm link is the narrowest expressed defect, and the required step of faith states its inferential consequence.",
+        "burden": "The reciprocal science-metaphysics account directly advances the con side’s locked central bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "inventorySha256": "9b83c9c5141d168d84a24ad5f10439456d546229f7ec6a44ca6f90a823ef2b6b",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passASha256": "8fb5600ef4ad11b5b635b891f87465de83f1dcdb3bc154a6c82925d37f1c3d8b",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passBSha256": "b97b411caf2f857c5993a47affb6de5223b2f7079e6d8aaee6ebd10fce485c00",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "lockSha256": "1a9604e70381c30094f488b1d6cfe67be14dedf1a5834bc09612f0a72db747cb"
+      }
+    },
+    {
+      "caseId": "v28-dev-84-07",
+      "disagreementFields": [],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-07-c1:distinguishes",
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-07-c2:denies"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full",
+        "defectType": "attribution-error",
+        "defectObject": "target-packet:krauss-meyer-lamoureux-god-science-universe-2016-target-07",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Meyer distinguishes his positive causal inference from an ignorance argument and denies that design rests merely on scientific incompleteness.",
+        "mechanism": "He expressly disowns the ignorance attribution and supplies repeated experience of intelligent agency as the corrected causal basis.",
+        "burden": "The known-cause formulation directly advances the con side’s central intelligent-source bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "inventorySha256": "9b83c9c5141d168d84a24ad5f10439456d546229f7ec6a44ca6f90a823ef2b6b",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passASha256": "8fb5600ef4ad11b5b635b891f87465de83f1dcdb3bc154a6c82925d37f1c3d8b",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passBSha256": "b97b411caf2f857c5993a47affb6de5223b2f7079e6d8aaee6ebd10fce485c00",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "lockSha256": "1a9604e70381c30094f488b1d6cfe67be14dedf1a5834bc09612f0a72db747cb"
+      }
+    },
+    {
+      "caseId": "v28-dev-84-09",
+      "disagreementFields": [
+        "targetObjectRelation",
+        "objectChangeType",
+        "componentOperations",
+        "derivedTargetDisposition",
+        "derivedTargetCoverage",
+        "defectType",
+        "defectObject",
+        "impactMode"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-09-c1:distinguishes",
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-09-c2:none"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "ambiguity",
+        "defectObject": "target-component:krauss-meyer-lamoureux-god-science-universe-2016-target-09-c1",
+        "impactMode": "verdict",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Lamoureux preserves Krauss’s explicitly nonempty quantum-vacuum referent and distinguishes that vacuum from an absence of physical stuff.",
+        "mechanism": "The response identifies ambiguity in the vacuum premise but gives only the verdict that the no-physical-stuff reading is wrong.",
+        "burden": "The clarification of cosmological nothing directly supports the con side’s central theistic-interpretation bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "inventorySha256": "9b83c9c5141d168d84a24ad5f10439456d546229f7ec6a44ca6f90a823ef2b6b",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passASha256": "8fb5600ef4ad11b5b635b891f87465de83f1dcdb3bc154a6c82925d37f1c3d8b",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passBSha256": "b97b411caf2f857c5993a47affb6de5223b2f7079e6d8aaee6ebd10fce485c00",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "lockSha256": "1a9604e70381c30094f488b1d6cfe67be14dedf1a5834bc09612f0a72db747cb"
+      }
+    },
+    {
+      "caseId": "v28-dev-84-10",
+      "disagreementFields": [
+        "defectType",
+        "impactMode",
+        "derivedDiagnostic"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-10-c1:none",
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-10-c2:undermines"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "invalid-inference",
+        "defectObject": "target-component:krauss-meyer-lamoureux-god-science-universe-2016-target-10-c2",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Krauss preserves the protein-search target and attacks its undirected-search inference through the role of natural selection.",
+        "mechanism": "The random-search analogy identifies an inferential defect, while the statement that evolution is not random supplies the consequence.",
+        "burden": "Natural selection as a directed filter directly advances the pro side’s central evolutionary-naturalism bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "inventorySha256": "9b83c9c5141d168d84a24ad5f10439456d546229f7ec6a44ca6f90a823ef2b6b",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passASha256": "8fb5600ef4ad11b5b635b891f87465de83f1dcdb3bc154a6c82925d37f1c3d8b",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passBSha256": "b97b411caf2f857c5993a47affb6de5223b2f7079e6d8aaee6ebd10fce485c00",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "lockSha256": "1a9604e70381c30094f488b1d6cfe67be14dedf1a5834bc09612f0a72db747cb"
+      }
+    },
+    {
+      "caseId": "v28-dev-84-11",
+      "disagreementFields": [
+        "targetObjectRelation",
+        "objectChangeType",
+        "componentOperations",
+        "derivedTargetDisposition",
+        "derivedTargetCoverage"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "subject",
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "The move changes subject from the probability of finding information for new protein folds to candidate prebiotic chemistry and RNA pathways.",
+        "mechanism": "Because the locked protein-search packet is substituted, the natural-trajectory material supplies no applicable diagnostic defect on that packet.",
+        "burden": "Chemical self-organization and RNA trajectories directly support the pro side’s central natural-mechanism bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "inventorySha256": "9b83c9c5141d168d84a24ad5f10439456d546229f7ec6a44ca6f90a823ef2b6b",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passASha256": "8fb5600ef4ad11b5b635b891f87465de83f1dcdb3bc154a6c82925d37f1c3d8b",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passBSha256": "b97b411caf2f857c5993a47affb6de5223b2f7079e6d8aaee6ebd10fce485c00",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "lockSha256": "1a9604e70381c30094f488b1d6cfe67be14dedf1a5834bc09612f0a72db747cb"
+      }
+    },
+    {
+      "caseId": "v28-dev-84-12",
+      "disagreementFields": [
+        "defectObject"
+      ],
+      "v28Adjustments": [
+        "Diagnostic object moved to the target packet because the v2.7 component kind is ineligible for this defect under the v2.8 matrix."
+      ],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-12-c1:undermines",
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-12-c2:none"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "unsupported-comparison",
+        "defectObject": "target-packet:krauss-meyer-lamoureux-god-science-universe-2016-target-12",
+        "impactMode": "verdict",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-pro-subsidiary:supports"
+        ],
+        "derivedBurdenRelation": "advances-sub-burden"
+      },
+      "rationale": {
+        "coverage": "Krauss preserves Lamoureux’s scriptural commitment and undermines its warrant through a comparison with rival religious traditions.",
+        "mechanism": "The unsupported comparison concerns the inspired-Bible component, while “it’s beyond me” remains only a verdict without consequence.",
+        "burden": "The comparative-religion challenge contacts the pro side’s locked subsidiary bridge and therefore advances a sub-burden."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "inventorySha256": "9b83c9c5141d168d84a24ad5f10439456d546229f7ec6a44ca6f90a823ef2b6b",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passASha256": "8fb5600ef4ad11b5b635b891f87465de83f1dcdb3bc154a6c82925d37f1c3d8b",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passBSha256": "b97b411caf2f857c5993a47affb6de5223b2f7079e6d8aaee6ebd10fce485c00",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "lockSha256": "1a9604e70381c30094f488b1d6cfe67be14dedf1a5834bc09612f0a72db747cb"
+      }
+    },
+    {
+      "caseId": "v28-dev-84-13",
+      "disagreementFields": [
+        "targetObjectRelation",
+        "objectChangeType",
+        "componentOperations",
+        "derivedTargetDisposition",
+        "derivedTargetCoverage",
+        "defectType",
+        "defectObject",
+        "impactMode",
+        "derivedDiagnostic"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "changed",
+        "objectChangeType": "comparison-class",
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "substituted",
+        "derivedTargetCoverage": "substitution",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-pro-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "The response changes comparison class from sequence-specific DNA information and software-like coding to generic design-like natural structures.",
+        "mechanism": "Because the DNA-information packet is substituted by snowflakes and fullerene, no typed diagnostic defect remains applicable to the locked packet.",
+        "burden": "Natural production of design-like structures directly supports the pro side’s central physical-self-organization bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "inventorySha256": "9b83c9c5141d168d84a24ad5f10439456d546229f7ec6a44ca6f90a823ef2b6b",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passASha256": "8fb5600ef4ad11b5b635b891f87465de83f1dcdb3bc154a6c82925d37f1c3d8b",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passBSha256": "b97b411caf2f857c5993a47affb6de5223b2f7079e6d8aaee6ebd10fce485c00",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "lockSha256": "1a9604e70381c30094f488b1d6cfe67be14dedf1a5834bc09612f0a72db747cb"
+      }
+    },
+    {
+      "caseId": "v28-dev-84-14",
+      "disagreementFields": [
+        "defectObject"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-14-c1:accepts",
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-14-c2:denies"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "full",
+        "defectType": "attribution-error",
+        "defectObject": "target-component:krauss-meyer-lamoureux-god-science-universe-2016-target-14-c2",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Meyer accepts the chance-plus-selection distinction but denies that Krauss’s pure-random-search criticism accurately characterizes his critique.",
+        "mechanism": "The attribution error concerns the misrepresentation conclusion, and Meyer states that his actual critique includes selection acting on variation.",
+        "burden": "Preserving the probability critique against selection directly advances the con side’s central design-inference bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "inventorySha256": "9b83c9c5141d168d84a24ad5f10439456d546229f7ec6a44ca6f90a823ef2b6b",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passASha256": "8fb5600ef4ad11b5b635b891f87465de83f1dcdb3bc154a6c82925d37f1c3d8b",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passBSha256": "b97b411caf2f857c5993a47affb6de5223b2f7079e6d8aaee6ebd10fce485c00",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "lockSha256": "1a9604e70381c30094f488b1d6cfe67be14dedf1a5834bc09612f0a72db747cb"
+      }
+    },
+    {
+      "caseId": "v28-dev-84-15",
+      "disagreementFields": [
+        "targetObjectRelation",
+        "objectChangeType",
+        "componentOperations",
+        "derivedTargetDisposition",
+        "derivedTargetCoverage",
+        "defectType",
+        "defectObject",
+        "impactMode",
+        "derivedDiagnostic"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-15-c1:denies",
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-15-c2:none",
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-15-c3:undermines"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "unsupported-comparison",
+        "defectObject": "target-packet:krauss-meyer-lamoureux-god-science-universe-2016-target-15",
+        "impactMode": "inferential-consequence",
+        "derivedDiagnostic": true,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Meyer preserves Krauss’s evolutionary-algorithm packet, denies programmer independence, and attacks its relevance to biological evolution.",
+        "mechanism": "Programmer-supplied information identifies an unsupported comparison, and the claimed failure to simulate biology states the inferential consequence.",
+        "burden": "The programmer-input objection directly advances the con side’s central information-and-design bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "inventorySha256": "9b83c9c5141d168d84a24ad5f10439456d546229f7ec6a44ca6f90a823ef2b6b",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passASha256": "8fb5600ef4ad11b5b635b891f87465de83f1dcdb3bc154a6c82925d37f1c3d8b",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passBSha256": "b97b411caf2f857c5993a47affb6de5223b2f7079e6d8aaee6ebd10fce485c00",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "lockSha256": "1a9604e70381c30094f488b1d6cfe67be14dedf1a5834bc09612f0a72db747cb"
+      }
+    },
+    {
+      "caseId": "v28-dev-84-16",
+      "disagreementFields": [
+        "targetScopeRelation",
+        "componentOperations",
+        "defectType",
+        "defectObject",
+        "impactMode",
+        "derivedDiagnostic"
+      ],
+      "v28Adjustments": [],
+      "expected": {
+        "targetObjectRelation": "same",
+        "objectChangeType": null,
+        "targetScopeRelation": "same",
+        "targetBurdenRelation": "retained",
+        "componentOperations": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-16-c1:accepts",
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-16-c2:none",
+          "krauss-meyer-lamoureux-god-science-universe-2016-target-16-c3:distinguishes"
+        ],
+        "relevantContraryMaterial": false,
+        "derivedTargetDisposition": "preserved",
+        "derivedTargetCoverage": "partial",
+        "defectType": "none",
+        "defectObject": null,
+        "impactMode": "none",
+        "derivedDiagnostic": false,
+        "malformedDemandExplained": false,
+        "replacementDemandStated": false,
+        "derivedReframe": false,
+        "contactedBridges": [
+          "krauss-meyer-lamoureux-god-science-universe-2016-con-central:supports"
+        ],
+        "derivedBurdenRelation": "advances-central"
+      },
+      "rationale": {
+        "coverage": "Lamoureux accepts scientific success and distinguishes scientific practice from philosophical and theological methods without changing the target’s stated scope.",
+        "mechanism": "The move supplies a methodological distinction but does not expressly diagnose a typed defect or state an inferential impact on the locked target.",
+        "burden": "The plurality-of-methods distinction directly supports the con side’s central theistic-interpretation bridge."
+      },
+      "provenance": {
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "inventorySha256": "9b83c9c5141d168d84a24ad5f10439456d546229f7ec6a44ca6f90a823ef2b6b",
+        "passAPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-a/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passASha256": "8fb5600ef4ad11b5b635b891f87465de83f1dcdb3bc154a6c82925d37f1c3d8b",
+        "passBPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/pass-b/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "passBSha256": "b97b411caf2f857c5993a47affb6de5223b2f7079e6d8aaee6ebd10fce485c00",
+        "lockPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/locks/krauss-meyer-lamoureux-god-science-universe-2016.json",
+        "lockSha256": "1a9604e70381c30094f488b1d6cfe67be14dedf1a5834bc09612f0a72db747cb"
+      }
+    }
+  ]
+}

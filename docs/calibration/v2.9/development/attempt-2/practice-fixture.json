@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "2.9.1-practice-fixture",
+  "calibrationOnly": true,
+  "purpose": "Synthetic contrastive examples; none is a development or held-out challenge case.",
+  "examples": [
+    {
+      "id": "practice-diagnostic",
+      "target": "All reports were independently verified, so the summary is reliable.",
+      "response": "The reports were not independently checked, so the summary is not established.",
+      "expected": {
+        "originalTargetContact": true,
+        "connectedExample": false,
+        "contactedComponentCount": 2,
+        "defectType": "evidential-insufficiency",
+        "consequenceStated": true,
+        "diagnostic": true,
+        "reframe": false
+      }
+    },
+    {
+      "id": "practice-reframe",
+      "target": "Why must the policy preserve tradition?",
+      "response": "That demand assumes tradition is the correct standard without defending it. The relevant test is which policy minimizes harm.",
+      "expected": {
+        "originalTargetContact": true,
+        "connectedExample": false,
+        "burdenAdjustment": "replaced",
+        "diagnostic": false,
+        "reframe": true
+      }
+    },
+    {
+      "id": "practice-connected-example",
+      "target": "Peer-city comparisons show this city's program is unusually expensive.",
+      "response": "Consider Harbor City: it uses the same accounting rules, and its lower cost shows why the peer-city comparison bears on our program.",
+      "expected": {
+        "originalTargetContact": true,
+        "connectedExample": true,
+        "diagnostic": false,
+        "reframe": false
+      }
+    },
+    {
+      "id": "practice-unaddressed-redirection",
+      "target": "Did the evidence establish that this treatment works?",
+      "response": "The real question is whether clinics can afford the treatment.",
+      "expected": {
+        "originalTargetContact": false,
+        "connectedExample": false,
+        "burdenAdjustment": "replaced",
+        "diagnostic": false,
+        "reframe": false,
+        "targetDisposition": "unaddressed"
+      }
+    }
+  ]
+}

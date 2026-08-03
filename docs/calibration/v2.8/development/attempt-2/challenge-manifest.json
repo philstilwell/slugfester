@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "2.8.1-development-challenge-manifest",
+  "status": "frozen-before-blind-passes",
+  "frozenAt": "2026-08-03T20:38:42.485Z",
+  "calibrationOnly": true,
+  "heldOutTranscriptsOpened": false,
+  "numericalScoringAuthorized": false,
+  "workflowVersion": "Slugfester Reassessment Workflow v2.8.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.8.1",
+  "attempt": 2,
+  "caseCount": 25,
+  "laneCounts": {
+    "dyadic": 11,
+    "multiSpeaker": 14
+  },
+  "keyFeatureCounts": {
+    "diagnosticPositive": 8,
+    "diagnosticNegative": 17,
+    "reframePositive": 4,
+    "reframeNegative": 21
+  },
+  "thresholds": {
+    "targetObjectExact": 0.9,
+    "targetScopeExact": 0.85,
+    "targetBurdenExact": 0.9,
+    "componentContactMicroExact": 0.9,
+    "responsiveCoverageExact": 0.85,
+    "responsiveCoverageKappa": 0.75,
+    "defectTypeExact": 0.85,
+    "diagnosticObjectExact": 0.85,
+    "impactModeExact": 0.9,
+    "diagnosticExact": 0.9,
+    "reframeExact": 0.9,
+    "burdenExact": 0.8,
+    "burdenKappa": 0.7,
+    "exactDerivedTupleExact": 0.7,
+    "diagnosticPositiveRecall": 0.8,
+    "reframePositiveRecall": 1
+  },
+  "passIsolation": {
+    "model": "5.6 Sol",
+    "method": "fresh-isolated-v2.8.1-development-challenge",
+    "allowedInputs": [
+      "docs/assessment-workflow-v2.8.1.md",
+      "docs/reassessment-rubric-v2.8.1.md",
+      "docs/calibration/v2.8/development/attempt-2/annotation-manual.md",
+      "docs/calibration/v2.8/development/attempt-2/challenge-annotation-schema.json",
+      "docs/calibration/v2.8/development/attempt-2/challenge-input.json"
+    ],
+    "prohibitedInputs": [
+      "docs/calibration/v2.8/development/attempt-2/challenge-key.json",
+      "docs/calibration/v2.8/development/attempt-2/key-review-ledger.md",
+      "docs/calibration/v2.8/development/attempt-2/challenge-pass-a.json",
+      "docs/calibration/v2.8/development/attempt-2/challenge-pass-b.json",
+      "docs/calibration/v2.8/development/challenge-key.json",
+      "docs/calibration/v2.8/development/challenge-pass-a.json",
+      "docs/calibration/v2.8/development/challenge-pass-b.json"
+    ]
+  },
+  "outputs": {
+    "passA": "docs/calibration/v2.8/development/attempt-2/challenge-pass-a.json",
+    "passB": "docs/calibration/v2.8/development/attempt-2/challenge-pass-b.json",
+    "analysis": "docs/calibration/v2.8/development/attempt-2/challenge-analysis.json"
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v2.8.1.md": "b20f729711c4537492378146199e877c0692163a7b117418be2d3b8cdd85d002",
+    "docs/reassessment-rubric-v2.8.1.md": "0758a93f0efd394a28110fe1ecc1150504dede2871ec7434213738388fced93d",
+    "docs/calibration/v2.8/development/attempt-2/annotation-manual.md": "3865ff3ae7653c918e1eb96db89e5cd5c38c03f6e658ed84b27c990d6355b029",
+    "docs/calibration/v2.8/development/attempt-2/challenge-annotation-schema.json": "cebba81baa66cc93045908b561bd3a454be8e3fb8d2b83d191b71cffc0b5568b",
+    "docs/calibration/v2.8/development/attempt-2/challenge-input.json": "1789ae61928f86552da7629daf807dab4f8a95226413ebbc27d4684ba11c07bb",
+    "docs/calibration/v2.8/development/attempt-2/selection-ledger.json": "e74a17160a4f6349ee8f35fcf1c38e64c931955ddaa29494394c8665b41a6ee2",
+    "docs/calibration/v2.8/development/attempt-2/challenge-key.json": "b5d84f66259cbecd45eef2831b6a14ab7744a391e980e252a54a0ad8bacd07d4",
+    "docs/calibration/v2.8/development/attempt-2/key-review-ledger.md": "0a302a96dc741aadcba003c76f2ddd465cf2535a8546822bbd275214c41b8b5e",
+    "scripts/lib/v281-semantics.mjs": "81c2d2cf9d9b0df6ba241ea2b2c005f5dfa654af9ba2f4257885820a46e93acd",
+    "scripts/build-v281-development-challenge.mjs": "b9fd31e5256e902d5b493b60e816f38b7fa846d311a7e17f04fb27e8a0eae0fa",
+    "scripts/validate-v281-development-input.mjs": "898284360c506c36aefef12e36dfeefd6aca0c36cee65844dd9dea13709e587e",
+    "scripts/validate-v281-development-pass.mjs": "058f2854167a0014d9b37071772ce84c81c879c5234b50744a108516704eff11",
+    "scripts/analyze-v281-development-challenge.mjs": "5a137bd11b923355630fd2991f1cfbe5e0515f3fc1d14ef6bfe276e27444b4d9",
+    "scripts/build-v281-challenge-manifest.mjs": "3efe0aff1a46c21a704fd2467314368e2716e038f31a1963ad20b8facc8084b7"
+  }
+}
