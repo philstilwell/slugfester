@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "2.2-audio-verification",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.2",
+  "debateId": "craig-frazier-goff-folley-god-reality-2026",
+  "videoId": "ZVMMO_kgtDQ",
+  "calibrationOnly": true,
+  "verifiedAt": "2026-08-03T00:08:00Z",
+  "sourceAudio": {
+    "sourceUrl": "https://www.youtube.com/watch?v=ZVMMO_kgtDQ",
+    "localPath": "output/transcribe/v2.2-audio-verification/ZVMMO_kgtDQ/source.m4a",
+    "sha256": "3e3e5ca3be141826804bbebf21bc4c34cc1467548c96612e4957ba4a0dee1020",
+    "storage": "ignored local artifact"
+  },
+  "speakerReferences": [
+    {
+      "speaker": "William Lane Craig",
+      "localPath": "output/transcribe/v2.2-audio-verification/ZVMMO_kgtDQ/refs/william-lane-craig.wav",
+      "sha256": "6aece9d1b080f7a276bac6115c2dc023dfada0013bbf9c19c5ca04c0bea718d8",
+      "durationSeconds": 8
+    },
+    {
+      "speaker": "Jessica Frazier",
+      "localPath": "output/transcribe/v2.2-audio-verification/ZVMMO_kgtDQ/refs/jessica-frazier.wav",
+      "sha256": "9a96bf7178f2a9154e2645b673f6eb7315aafeacb313e1113c45457c5a543e6c",
+      "durationSeconds": 8
+    },
+    {
+      "speaker": "Philip Goff",
+      "localPath": "output/transcribe/v2.2-audio-verification/ZVMMO_kgtDQ/refs/philip-goff.wav",
+      "sha256": "37b68286913283e11ad7ffe4b90c95dc2ede978e6b780fa4990561e6f2b04842",
+      "durationSeconds": 8
+    },
+    {
+      "speaker": "Joe Folley",
+      "localPath": "output/transcribe/v2.2-audio-verification/ZVMMO_kgtDQ/refs/joe-folley.wav",
+      "sha256": "afdccaffded93969e0d4a9f3a7459f7c114c5a7f420422f10aa659710522f09b",
+      "durationSeconds": 8
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "S5-M4",
+      "originalSpeaker": "Philip Goff",
+      "resolvedSpeaker": "Philip Goff",
+      "status": "verified",
+      "verificationConfidence": "high",
+      "method": "gpt-4o-transcribe-diarize with known-speaker references, checked against the local caption event chain",
+      "clip": {
+        "localPath": "output/transcribe/v2.2-audio-verification/ZVMMO_kgtDQ/clips/S5-M4.wav",
+        "sha256": "0b3fd5852fa343a132388147cefed753f4469e75414470f69b1c4fd57d7b4924",
+        "durationSeconds": 60.8
+      },
+      "transcript": {
+        "localPath": "output/transcribe/v2.2-audio-verification/ZVMMO_kgtDQ/transcripts/S5-M4.transcript.json",
+        "sha256": "bb9656c77d89ab7b9c47b742f627b8ee04242098df72ac44435fd300e613ade7",
+        "model": "gpt-4o-transcribe-diarize",
+        "responseFormat": "diarized_json"
+      },
+      "verificationExcerpt": "Imagine someone whose fundamental life goal is counting blades of grass.",
+      "speakerEvidence": "Known-speaker diarization assigns the Hume discussion and grass-counting counterexample continuously to Goff."
+    },
+    {
+      "moveId": "S5-M5",
+      "originalSpeaker": "Jessica Frazier",
+      "resolvedSpeaker": "Jessica Frazier",
+      "status": "verified",
+      "verificationConfidence": "high",
+      "method": "gpt-4o-transcribe-diarize with known-speaker references, checked against the local caption event chain",
+      "clip": {
+        "localPath": "output/transcribe/v2.2-audio-verification/ZVMMO_kgtDQ/clips/S5-M5.wav",
+        "sha256": "fb79429edd8c0f71f2ce116c6dd4a3794a3687b67560a0d3108b0e3191c9485c",
+        "durationSeconds": 69.2
+      },
+      "transcript": {
+        "localPath": "output/transcribe/v2.2-audio-verification/ZVMMO_kgtDQ/transcripts/S5-M5.transcript.json",
+        "sha256": "4847ee1ea5df032a9bb62ae3ba4dde7a725b386f3a0bd7eedf07cb8895ef63f5",
+        "model": "gpt-4o-transcribe-diarize",
+        "responseFormat": "diarized_json"
+      },
+      "verificationExcerpt": "It means that God is just another authority who, regardless of whether he's moral or not, has got the power to decide for us.",
+      "speakerEvidence": "Known-speaker diarization separates Folley and Goff's brief setup from Frazier's authority and political-danger objection."
+    }
+  ],
+  "totals": {
+    "mediumOrLowMoves": 2,
+    "verified": 2,
+    "unresolved": 0,
+    "verificationRate": 1,
+    "sourceQaCorrections": 0
+  },
+  "costScope": {
+    "approved": true,
+    "estimate": "$0.10–$0.50 expected; $1 ceiling",
+    "billableModelCalls": 2,
+    "note": "The extra #81 call verified the corrected M23 span. Rejected preflight calls produced no transcript artifact."
+  }
+}

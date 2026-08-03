@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "2.2-audio-verification",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.2",
+  "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+  "videoId": "OL8LREmbDi0",
+  "calibrationOnly": true,
+  "verifiedAt": "2026-08-03T00:08:00Z",
+  "sourceAudio": {
+    "sourceUrl": "https://www.youtube.com/watch?v=OL8LREmbDi0",
+    "localPath": "output/transcribe/v2.2-audio-verification/OL8LREmbDi0/source.m4a",
+    "sha256": "cf9e2988de72447e762907c7ded014ca5a96cf9970c52d170c54b2aacc628fa0",
+    "storage": "ignored local artifact"
+  },
+  "speakerReferences": [
+    {
+      "speaker": "Sye Ten Bruggencate",
+      "localPath": "output/transcribe/v2.2-audio-verification/OL8LREmbDi0/refs/sye-ten-bruggencate.wav",
+      "sha256": "1de8115e931b9de19f76a5bad4e30cef65ee10337daf6fd23f5ea2d0c743fe98",
+      "durationSeconds": 8
+    },
+    {
+      "speaker": "Matt Dillahunty",
+      "localPath": "output/transcribe/v2.2-audio-verification/OL8LREmbDi0/refs/matt-dillahunty.wav",
+      "sha256": "cdc0768e87dc23821872fa1e382049c65588e9e6402e7459aaa13d6e06b0a034",
+      "durationSeconds": 8
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "D05-M007",
+      "originalSpeaker": "Sye Ten Bruggencate",
+      "resolvedSpeaker": "Sye Ten Bruggencate",
+      "status": "verified",
+      "verificationConfidence": "high",
+      "method": "gpt-4o-transcribe-diarize with known-speaker references, checked against the local caption event chain",
+      "clip": {
+        "localPath": "output/transcribe/v2.2-audio-verification/OL8LREmbDi0/clips/D05-M007.wav",
+        "sha256": "74ddc11a6dbdc88ea1fb5baf3964f7a5259113ce9ef90ba1b79a024bdd419f87",
+        "durationSeconds": 32.959
+      },
+      "transcript": {
+        "localPath": "output/transcribe/v2.2-audio-verification/OL8LREmbDi0/transcripts/D05-M007.transcript.json",
+        "sha256": "624d88227b6369a8fb12bb651b5b2cc38e5bbb49a5923e0b1f6b9c073bcc0344",
+        "model": "gpt-4o-transcribe-diarize",
+        "responseFormat": "diarized_json"
+      },
+      "verificationExcerpt": "Right, but the fact is you've admitted you could be a brain in a vat.",
+      "speakerEvidence": "The known-speaker diarization assigns the opening challenge, modal inference, and closing basis question to Sye; Matt's interleaved correction is separately labeled."
+    },
+    {
+      "moveId": "D05-M008",
+      "originalSpeaker": "Matt Dillahunty",
+      "resolvedSpeaker": "Matt Dillahunty",
+      "status": "verified",
+      "verificationConfidence": "high",
+      "method": "gpt-4o-transcribe-diarize with known-speaker references, checked against the local caption event chain",
+      "clip": {
+        "localPath": "output/transcribe/v2.2-audio-verification/OL8LREmbDi0/clips/D05-M008.wav",
+        "sha256": "786bcc6046ad25db8f4bf808ed975c17d9fc08bcff967c8f1cd2d3522e7a1df4",
+        "durationSeconds": 45.24
+      },
+      "transcript": {
+        "localPath": "output/transcribe/v2.2-audio-verification/OL8LREmbDi0/transcripts/D05-M008.transcript.json",
+        "sha256": "8045fc20d8d5f9d7566d79ceb4820b1ebff921198ede7f7ecd2cf4d32d560839",
+        "model": "gpt-4o-transcribe-diarize",
+        "responseFormat": "diarized_json"
+      },
+      "verificationExcerpt": "If something hasn't been demonstrated to be impossible, is it then possible?",
+      "speakerEvidence": "The known-speaker diarization assigns both diagnostic questions and their application to Matt; Sye's short answers are separately labeled."
+    },
+    {
+      "moveId": "D05-M012",
+      "originalSpeaker": "Sye Ten Bruggencate",
+      "resolvedSpeaker": "Sye Ten Bruggencate",
+      "status": "verified",
+      "verificationConfidence": "high",
+      "method": "gpt-4o-transcribe-diarize with known-speaker references, checked against the local caption event chain",
+      "clip": {
+        "localPath": "output/transcribe/v2.2-audio-verification/OL8LREmbDi0/clips/D05-M012.wav",
+        "sha256": "b9109fa3b6fbe5ca36e0c97eb0a616103861efa5b10b40a11764f96bea412182",
+        "durationSeconds": 30.4
+      },
+      "transcript": {
+        "localPath": "output/transcribe/v2.2-audio-verification/OL8LREmbDi0/transcripts/D05-M012.transcript.json",
+        "sha256": "907daf623efb6db91b2947049f256415485eb671e52dafe6bb289e0dc4142be0",
+        "model": "gpt-4o-transcribe-diarize",
+        "responseFormat": "diarized_json"
+      },
+      "verificationExcerpt": "Logical absolutes reflect the thinking of God.",
+      "speakerEvidence": "The known-speaker diarization identifies Matt's demonstration request, followed by Sye's account and revelation answer."
+    },
+    {
+      "moveId": "D05-M013",
+      "originalSpeaker": "Sye Ten Bruggencate",
+      "resolvedSpeaker": "Sye Ten Bruggencate",
+      "status": "verified",
+      "verificationConfidence": "high",
+      "method": "gpt-4o-transcribe-diarize with known-speaker references, checked against the local caption event chain",
+      "clip": {
+        "localPath": "output/transcribe/v2.2-audio-verification/OL8LREmbDi0/clips/D05-M013.wav",
+        "sha256": "c73997f909a3785e9db457c160d454deb6ac2c353025a379f7c8fa26e5c502f1",
+        "durationSeconds": 55.44
+      },
+      "transcript": {
+        "localPath": "output/transcribe/v2.2-audio-verification/OL8LREmbDi0/transcripts/D05-M013.transcript.json",
+        "sha256": "a86b84e6a28fdaecbe20f5cc5bf447554a5970b9a20861a011642f1e4bcfefe8",
+        "model": "gpt-4o-transcribe-diarize",
+        "responseFormat": "diarized_json"
+      },
+      "verificationExcerpt": "Is it circular to use your reasoning to justify your reasoning?",
+      "speakerEvidence": "The known-speaker diarization assigns the repeated circularity challenge and final inference to Sye; Matt's practical-necessity response is distinct."
+    },
+    {
+      "moveId": "D05-M015",
+      "originalSpeaker": "Sye Ten Bruggencate",
+      "resolvedSpeaker": "Sye Ten Bruggencate",
+      "status": "verified",
+      "verificationConfidence": "high",
+      "method": "gpt-4o-transcribe-diarize with known-speaker references, checked against the local caption event chain",
+      "clip": {
+        "localPath": "output/transcribe/v2.2-audio-verification/OL8LREmbDi0/clips/D05-M015.wav",
+        "sha256": "20aa4790853bb365968a412161233239586a5fcc15a7698209d36e960100467a",
+        "durationSeconds": 36.399
+      },
+      "transcript": {
+        "localPath": "output/transcribe/v2.2-audio-verification/OL8LREmbDi0/transcripts/D05-M015.transcript.json",
+        "sha256": "a44465d16ccb2baee88206b729b3879cc564b75b5df5a8cf3184210edbf9ae67",
+        "model": "gpt-4o-transcribe-diarize",
+        "responseFormat": "diarized_json"
+      },
+      "verificationExcerpt": "On what basis do you assume that the future will be like the past?",
+      "speakerEvidence": "The known-speaker diarization assigns the mortality analogy and renewed induction question to Sye, with Matt's replies separately marked."
+    },
+    {
+      "moveId": "D05-M022",
+      "originalSpeaker": "Matt Dillahunty",
+      "resolvedSpeaker": "Unidentified audience members",
+      "status": "verified",
+      "verificationConfidence": "high",
+      "method": "gpt-4o-transcribe-diarize with known-speaker references, checked against the local caption event chain",
+      "clip": {
+        "localPath": "output/transcribe/v2.2-audio-verification/OL8LREmbDi0/clips/D05-M022.wav",
+        "sha256": "73eca432a2d88cdde7925d856fc9d8d1a35446cc75de112b31f0339877c7d56e",
+        "durationSeconds": 52.08
+      },
+      "transcript": {
+        "localPath": "output/transcribe/v2.2-audio-verification/OL8LREmbDi0/transcripts/D05-M022.transcript.json",
+        "sha256": "9d19bbdae5c8b8b24263e6b243dbbb7324603f3c5e6de85c330d4d0b918c1645",
+        "model": "gpt-4o-transcribe-diarize",
+        "responseFormat": "diarized_json"
+      },
+      "verificationExcerpt": "Is it possible that God has supplied you with a revelation that is at least in part false?",
+      "speakerEvidence": "Audio and diarization show two audience questions addressed to Sye. Matt did not ask the selected questions; Sye supplied the substantive answers.",
+      "sourceQaCorrection": {
+        "field": "speaker",
+        "before": "Matt Dillahunty",
+        "after": "Unidentified audience members",
+        "reason": "The v2.1 mixed-dialogue caption span collapsed audience questions and answers and incorrectly attributed the critical move to Matt."
+      }
+    }
+  ],
+  "totals": {
+    "mediumOrLowMoves": 6,
+    "verified": 6,
+    "unresolved": 0,
+    "verificationRate": 1,
+    "sourceQaCorrections": 1
+  },
+  "costScope": {
+    "approved": true,
+    "estimate": "$0.10–$0.50 expected; $1 ceiling",
+    "billableModelCalls": 6,
+    "note": "The extra #81 call verified the corrected M23 span. Rejected preflight calls produced no transcript artifact."
+  }
+}
