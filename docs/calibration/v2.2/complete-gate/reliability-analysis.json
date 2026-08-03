@@ -1,0 +1,442 @@
+{
+  "schemaVersion": "2.2-complete-gate-reliability",
+  "workflowVersion": "Slugfester Reassessment Workflow v2.2",
+  "rubricVersion": "Slugfester Reassessment Rubric v2.2",
+  "model": "5.6 Sol",
+  "calibrationOnly": true,
+  "analyzedAt": "2026-08-03T00:41:30.189Z",
+  "sample": {
+    "debateCount": 3,
+    "moveCount": 79,
+    "dimensionJudgmentCount": 474,
+    "debateIds": [
+      "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "craig-frazier-goff-folley-god-reality-2026"
+    ]
+  },
+  "independence": {
+    "level": "separate-isolated-5.6-Sol-model-tasks",
+    "passAAccessedPassB": false,
+    "passBAccessedPassA": false,
+    "legacyAssessmentAccessed": false
+  },
+  "sourceQa": {
+    "mediumOrLowMoves": 14,
+    "audioVerified": 14,
+    "unresolved": 0,
+    "correctionsBeforeScoring": 2,
+    "correctionSummary": [
+      "D05-M022 speaker corrected from Matt Dillahunty to unidentified audience members.",
+      "M23 end span extended to include Graham Oppy's audio-verified answer rather than moderator-only setup."
+    ]
+  },
+  "debates": [
+    {
+      "debateNumber": "05",
+      "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "stratum": "lopsided asymmetric burden",
+      "moveCount": 26,
+      "triggeredMoveCount": 11,
+      "moveAdjudicationRate": 0.4231,
+      "meanAbsoluteDimensionDelta": 3.859,
+      "maxDimensionDelta": 28,
+      "meanAbsoluteMoveScoreDelta": 3.115,
+      "maxMoveScoreDelta": 16,
+      "sideAgreement": {
+        "pro": {
+          "moveCount": 13,
+          "meanAbsoluteDimensionDelta": 4.808,
+          "maxDimensionDelta": 28,
+          "meanAbsoluteMoveScoreDelta": 3.923,
+          "maxMoveScoreDelta": 16,
+          "meanDeltaByDimension": {
+            "logicalCoherence": 3.769,
+            "evidenceWarrant": 2.846,
+            "responsiveness": 7.692,
+            "relevanceBurden": 5.615,
+            "precisionClarity": 2.846,
+            "calibrationCharity": 6.077
+          },
+          "passAOverall": 57,
+          "passBOverall": 55,
+          "overallScoreDelta": 2,
+          "finalOverall": 56
+        },
+        "con": {
+          "moveCount": 13,
+          "meanAbsoluteDimensionDelta": 2.91,
+          "maxDimensionDelta": 20,
+          "meanAbsoluteMoveScoreDelta": 2.308,
+          "maxMoveScoreDelta": 6,
+          "meanDeltaByDimension": {
+            "logicalCoherence": 2.462,
+            "evidenceWarrant": 4.077,
+            "responsiveness": 4.462,
+            "relevanceBurden": 2.308,
+            "precisionClarity": 1.615,
+            "calibrationCharity": 2.538
+          },
+          "passAOverall": 85,
+          "passBOverall": 85,
+          "overallScoreDelta": 0,
+          "finalOverall": 85
+        }
+      },
+      "passWinnerClassification": {
+        "passA": "con",
+        "passB": "con",
+        "final": "con",
+        "stableAcrossPasses": true
+      },
+      "attribution": {
+        "high": 20,
+        "medium": 6,
+        "low": 0,
+        "audioCheckedMediumOrLow": 6
+      },
+      "comparisonToV21": {
+        "triggeredMoveCountChange": -1,
+        "moveAdjudicationRateChange": -0.0384,
+        "finalOverallChange": {
+          "pro": -1,
+          "con": -2
+        }
+      }
+    },
+    {
+      "debateNumber": "81",
+      "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "stratum": "close analytic",
+      "moveCount": 25,
+      "triggeredMoveCount": 6,
+      "moveAdjudicationRate": 0.24,
+      "meanAbsoluteDimensionDelta": 2.813,
+      "maxDimensionDelta": 19,
+      "meanAbsoluteMoveScoreDelta": 1.88,
+      "maxMoveScoreDelta": 6,
+      "sideAgreement": {
+        "pro": {
+          "moveCount": 12,
+          "meanAbsoluteDimensionDelta": 2.861,
+          "maxDimensionDelta": 12,
+          "meanAbsoluteMoveScoreDelta": 1.667,
+          "maxMoveScoreDelta": 6,
+          "meanDeltaByDimension": {
+            "logicalCoherence": 1.5,
+            "evidenceWarrant": 3.5,
+            "responsiveness": 3.667,
+            "relevanceBurden": 3.417,
+            "precisionClarity": 2.333,
+            "calibrationCharity": 2.75
+          },
+          "passAOverall": 76,
+          "passBOverall": 76,
+          "overallScoreDelta": 0,
+          "finalOverall": 76
+        },
+        "con": {
+          "moveCount": 13,
+          "meanAbsoluteDimensionDelta": 2.769,
+          "maxDimensionDelta": 19,
+          "meanAbsoluteMoveScoreDelta": 2.077,
+          "maxMoveScoreDelta": 6,
+          "meanDeltaByDimension": {
+            "logicalCoherence": 0.769,
+            "evidenceWarrant": 2.538,
+            "responsiveness": 5.077,
+            "relevanceBurden": 3.154,
+            "precisionClarity": 2.538,
+            "calibrationCharity": 2.538
+          },
+          "passAOverall": 82,
+          "passBOverall": 81,
+          "overallScoreDelta": 1,
+          "finalOverall": 81
+        }
+      },
+      "passWinnerClassification": {
+        "passA": "con",
+        "passB": "con",
+        "final": "con",
+        "stableAcrossPasses": true
+      },
+      "attribution": {
+        "high": 19,
+        "medium": 6,
+        "low": 0,
+        "audioCheckedMediumOrLow": 6
+      },
+      "comparisonToV21": {
+        "triggeredMoveCountChange": 4,
+        "moveAdjudicationRateChange": 0.16,
+        "finalOverallChange": {
+          "pro": -4,
+          "con": -4
+        }
+      }
+    },
+    {
+      "debateNumber": "95",
+      "debateId": "craig-frazier-goff-folley-god-reality-2026",
+      "stratum": "multi-person pluralist",
+      "moveCount": 28,
+      "triggeredMoveCount": 9,
+      "moveAdjudicationRate": 0.3214,
+      "meanAbsoluteDimensionDelta": 3.827,
+      "maxDimensionDelta": 29,
+      "meanAbsoluteMoveScoreDelta": 2.893,
+      "maxMoveScoreDelta": 11,
+      "sideAgreement": {
+        "pro": {
+          "moveCount": 10,
+          "meanAbsoluteDimensionDelta": 4.467,
+          "maxDimensionDelta": 28,
+          "meanAbsoluteMoveScoreDelta": 3.6,
+          "maxMoveScoreDelta": 11,
+          "meanDeltaByDimension": {
+            "logicalCoherence": 4.5,
+            "evidenceWarrant": 4,
+            "responsiveness": 5.3,
+            "relevanceBurden": 3.9,
+            "precisionClarity": 2.8,
+            "calibrationCharity": 6.3
+          },
+          "passAOverall": 73,
+          "passBOverall": 73,
+          "overallScoreDelta": 0,
+          "finalOverall": 73
+        },
+        "con": {
+          "moveCount": 18,
+          "meanAbsoluteDimensionDelta": 3.472,
+          "maxDimensionDelta": 29,
+          "meanAbsoluteMoveScoreDelta": 2.5,
+          "maxMoveScoreDelta": 11,
+          "meanDeltaByDimension": {
+            "logicalCoherence": 2.778,
+            "evidenceWarrant": 3.722,
+            "responsiveness": 3.889,
+            "relevanceBurden": 4.111,
+            "precisionClarity": 2.667,
+            "calibrationCharity": 3.667
+          },
+          "passAOverall": 74,
+          "passBOverall": 74,
+          "overallScoreDelta": 0,
+          "finalOverall": 75
+        }
+      },
+      "passWinnerClassification": {
+        "passA": "con",
+        "passB": "con",
+        "final": "con",
+        "stableAcrossPasses": true
+      },
+      "attribution": {
+        "high": 26,
+        "medium": 2,
+        "low": 0,
+        "audioCheckedMediumOrLow": 2
+      },
+      "comparisonToV21": {
+        "triggeredMoveCountChange": -3,
+        "moveAdjudicationRateChange": -0.1072,
+        "finalOverallChange": {
+          "pro": -1,
+          "con": -1
+        }
+      }
+    }
+  ],
+  "aggregateAgreement": {
+    "meanAbsoluteDimensionDelta": 3.517,
+    "maxDimensionDelta": 29,
+    "meanAbsoluteMoveScoreDelta": 2.646,
+    "maxMoveScoreDelta": 16,
+    "meanAbsoluteDimensionDeltaBySide": {
+      "pro": 4.043,
+      "con": 3.098
+    },
+    "meanAbsoluteMoveScoreDeltaBySide": {
+      "pro": 3.057,
+      "con": 2.318
+    },
+    "meanDeltaByDimensionAndSide": {
+      "pro": {
+        "logicalCoherence": 3.2,
+        "evidenceWarrant": 3.4,
+        "responsiveness": 5.629,
+        "relevanceBurden": 4.371,
+        "precisionClarity": 2.657,
+        "calibrationCharity": 5
+      },
+      "con": {
+        "logicalCoherence": 2.091,
+        "evidenceWarrant": 3.477,
+        "responsiveness": 4.409,
+        "relevanceBurden": 3.295,
+        "precisionClarity": 2.318,
+        "calibrationCharity": 3
+      }
+    },
+    "triggeredMoveCount": 26,
+    "moveAdjudicationRate": 0.3291,
+    "maximumOverallScorePassDelta": 2,
+    "winnerClassificationDifferenceCount": 0,
+    "winnerClassificationDifferenceRate": 0,
+    "passRankCorrelation": {
+      "pro": 1,
+      "con": 1,
+      "minimum": 1
+    },
+    "missingRequiredMoveAdjudications": 0,
+    "missingRequiredAdjustmentAdjudications": 0,
+    "burdenAdjustmentEligibilityViolations": 0,
+    "calculatorArtifactMismatches": 0
+  },
+  "triggerDiagnostics": {
+    "responseClassMismatchCount": 20,
+    "responseClassMismatchRate": 0.2532,
+    "triggeredMoveWithResponseClassMismatchCount": 13,
+    "shareOfTriggeredMovesWithResponseClassMismatch": 0.5,
+    "thresholdTriggersByDimension": {
+      "logicalCoherence": 3,
+      "evidenceWarrant": 4,
+      "responsiveness": 17,
+      "relevanceBurden": 7,
+      "precisionClarity": 1,
+      "calibrationCharity": 8
+    },
+    "thresholdTriggersByDimensionV21": {
+      "logicalCoherence": 3,
+      "evidenceWarrant": 6,
+      "responsiveness": 8,
+      "relevanceBurden": 11,
+      "precisionClarity": 5,
+      "calibrationCharity": 9
+    },
+    "changeByDimension": {
+      "logicalCoherence": 0,
+      "evidenceWarrant": -2,
+      "responsiveness": 9,
+      "relevanceBurden": -4,
+      "precisionClarity": -4,
+      "calibrationCharity": -1
+    }
+  },
+  "comparisonToV21": {
+    "meanAbsoluteDimensionDeltaChange": 0.15,
+    "moveAdjudicationRateChange": 0,
+    "triggeredMoveCountChange": 0,
+    "maximumOverallScorePassDeltaChange": -2,
+    "winnerClassificationDifferenceRateChange": -0.3333
+  },
+  "hardGates": {
+    "fullTranscriptAcquisition": {
+      "minimum": 1,
+      "observed": 1,
+      "status": "pass"
+    },
+    "mediumAndLowMoveAudioVerification": {
+      "minimum": 1,
+      "observed": 1,
+      "status": "pass"
+    },
+    "centralQuoteAudioOrIndependentTranscriptVerification": {
+      "minimum": 1,
+      "observed": 0,
+      "status": "pending"
+    },
+    "unresolvedMediumOrLowSpeakerAttributions": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "singleScoringPassSchema": {
+      "required": true,
+      "observed": true,
+      "status": "pass"
+    },
+    "scoringPassIsolation": {
+      "required": true,
+      "observed": true,
+      "status": "pass"
+    },
+    "burdenAdjustmentEligibilityViolations": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "missingRequiredAdjudications": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "calculatorArtifactMismatches": {
+      "maximum": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    "calibrationIsolation": {
+      "required": true,
+      "observed": true,
+      "status": "pass"
+    },
+    "completeArgumentInventory": {
+      "required": true,
+      "observed": true,
+      "status": "pass"
+    },
+    "completeScorecard": {
+      "required": true,
+      "observed": false,
+      "status": "pending"
+    },
+    "aiExtensionNoveltyMapCompletion": {
+      "minimum": 1,
+      "observed": 0,
+      "status": "pending"
+    },
+    "renderingAudit": {
+      "required": true,
+      "observed": false,
+      "status": "pending"
+    }
+  },
+  "reviewGates": {
+    "meanAbsoluteDimensionDelta": {
+      "maximum": 5,
+      "observed": 3.517,
+      "status": "pass"
+    },
+    "moveAdjudicationRate": {
+      "maximum": 0.25,
+      "observed": 0.3291,
+      "status": "exception-review-required"
+    },
+    "overallScorePassDelta": {
+      "maximum": 5,
+      "observedMaximum": 2,
+      "status": "pass"
+    },
+    "winnerFlipReview": {
+      "threshold": 0.2,
+      "observed": 0,
+      "status": "pass"
+    },
+    "rankCorrelation": {
+      "minimum": 0.9,
+      "observedMinimum": 1,
+      "status": "pass"
+    }
+  },
+  "gateDecision": {
+    "numericalReliabilityPassed": false,
+    "initialThreeDebateGate": "not-passed",
+    "canAuthorizeExpandedTenDebateGate": false,
+    "canAuthorizeAll195Debates": false,
+    "pendingComposition": true,
+    "reason": "One or more preregistered numerical reliability gates did not pass."
+  }
+}

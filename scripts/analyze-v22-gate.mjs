@@ -78,6 +78,11 @@ const passOverall = { pro: { A: [], B: [] }, con: { A: [], B: [] } };
 let winnerDifferenceCount = 0;
 let mediumOrLowCount = 0;
 let audioVerifiedMediumOrLowCount = 0;
+let responseClassMismatchCount = 0;
+let triggeredMoveWithResponseClassMismatchCount = 0;
+const triggerCountByDimension = Object.fromEntries(
+  Object.keys(v21.aggregateAgreement.meanDeltaByDimensionAndSide.pro).map((key) => [key, 0])
+);
 
 for (const debate of gate.sample.debates) {
   const ledger = JSON.parse(
@@ -140,6 +145,17 @@ for (const debate of gate.sample.debates) {
   passWinners.stableAcrossPasses = passWinners.passA === passWinners.passB;
   if (!passWinners.stableAcrossPasses) winnerDifferenceCount += 1;
   const triggered = flatMoves.filter(({ move }) => move.requiresAdjudication).length;
+  for (const { move } of flatMoves) {
+    const responseClassMismatch =
+      move.passA.responseClass !== move.passB.responseClass;
+    if (responseClassMismatch) responseClassMismatchCount += 1;
+    if (responseClassMismatch && move.requiresAdjudication) {
+      triggeredMoveWithResponseClassMismatchCount += 1;
+    }
+    for (const [dimension, delta] of Object.entries(move.dimensionDeltas)) {
+      if (delta > 8) triggerCountByDimension[dimension] += 1;
+    }
+  }
   triggeredMoveCount += triggered;
   moveCount += flatMoves.length;
   dimensionJudgmentCount += flatMoves.length * 6;
@@ -350,6 +366,29 @@ const hardGates = {
     status: renderingAuditExists ? "pass" : "pending"
   }
 };
+const v21TriggerCountByDimension = Object.fromEntries(
+  Object.keys(triggerCountByDimension).map((key) => [key, 0])
+);
+for (const debate of gate.sample.debates) {
+  const ledger = JSON.parse(
+    await readFile(
+      path.resolve(
+        "docs/calibration/v2.1/complete-gate/ledgers",
+        `${debate.debateId}.json`
+      ),
+      "utf8"
+    )
+  );
+  for (const section of ledger.sections) {
+    for (const side of ["pro", "con"]) {
+      for (const move of section.sides[side].moves) {
+        for (const [dimension, delta] of Object.entries(move.dimensionDeltas)) {
+          if (delta > 8) v21TriggerCountByDimension[dimension] += 1;
+        }
+      }
+    }
+  }
+}
 const numericalReliabilityPassed =
   reviewGates.meanAbsoluteDimensionDelta.status === "pass" &&
   reviewGates.moveAdjudicationRate.status === "pass" &&
@@ -388,6 +427,23 @@ const report = {
   },
   debates: debateReports,
   aggregateAgreement: aggregate,
+  triggerDiagnostics: {
+    responseClassMismatchCount,
+    responseClassMismatchRate: fixed(responseClassMismatchCount / moveCount, 4),
+    triggeredMoveWithResponseClassMismatchCount,
+    shareOfTriggeredMovesWithResponseClassMismatch: fixed(
+      triggeredMoveWithResponseClassMismatchCount / triggeredMoveCount,
+      4
+    ),
+    thresholdTriggersByDimension: triggerCountByDimension,
+    thresholdTriggersByDimensionV21: v21TriggerCountByDimension,
+    changeByDimension: Object.fromEntries(
+      Object.keys(triggerCountByDimension).map((dimension) => [
+        dimension,
+        triggerCountByDimension[dimension] - v21TriggerCountByDimension[dimension]
+      ])
+    )
+  },
   comparisonToV21: {
     meanAbsoluteDimensionDeltaChange: fixed(
       aggregate.meanAbsoluteDimensionDelta - v21.aggregateAgreement.meanAbsoluteDimensionDelta
