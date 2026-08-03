@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "3.0-retired-consensus-gate-decision",
+  "gateId": "v3.0-retired-three-debate-consensus-test",
+  "decidedAt": "2026-08-03T22:18:30.000Z",
+  "workflowVersion": "Slugfester Adjudicated Consensus Workflow v3.0",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.0",
+  "model": "5.6 Sol",
+  "status": "failed-final-adjudicated-accuracy",
+  "manifestSha256": "064bb9d9c5a57d93d8b7ec2ddb7b8ea9e6c6459738fe4bcae9822fdc50135962",
+  "analysisSha256": "44c7d95040e26e4897e74c088a2bd84e2b284e82bd256a3bf08b11601ed4a060",
+  "failureDiagnosticsPath": "docs/calibration/v3.0/retired-three-debate-test/failure-diagnostics.json",
+  "hardGatesPassed": 7,
+  "hardGatesTotal": 16,
+  "executionIntegrity": {
+    "rawPassesValidated": 6,
+    "disputeOnlyAdjudicationsValidated": 3,
+    "disputesExtracted": 71,
+    "disputesResolved": 71,
+    "unresolvedDisputes": 0,
+    "nondisputedAlterations": 0,
+    "mediumOrLowMoves": 1,
+    "audioVerifiedMediumOrLowMoves": 1,
+    "heldOutTranscriptsOpened": false,
+    "participantPerformanceScoresGenerated": false,
+    "productionFilesMutated": false
+  },
+  "authorization": {
+    "v3_1RetiredRepair": true,
+    "heldOutGatePreregistration": false,
+    "heldOutTranscriptOpening": false,
+    "numericalScoring": false,
+    "all195Debates": false
+  },
+  "nextStep": "Revise the architecture on retired material by separating semantic disputes from evidence canonicalization and adding a high-risk shared-agreement verification control; then rerun the same retired three-debate test before any held-out gate."
+}
+

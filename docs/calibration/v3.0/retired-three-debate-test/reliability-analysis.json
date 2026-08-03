@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "3.0-retired-consensus-analysis",
+  "workflowVersion": "Slugfester Adjudicated Consensus Workflow v3.0",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.0",
+  "analyzedAt": "2026-08-03T22:16:35.569Z",
+  "sources": {
+    "manifestPath": "docs/calibration/v3.0/retired-three-debate-test/gate-manifest.json",
+    "manifestSha256": "064bb9d9c5a57d93d8b7ec2ddb7b8ea9e6c6459738fe4bcae9822fdc50135962"
+  },
+  "sample": {
+    "debateCount": 3,
+    "caseCount": 13,
+    "laneCounts": {
+      "dyadic": 7,
+      "multiSpeaker": 6
+    },
+    "diagnosticGoldPositiveCount": 3,
+    "reframeGoldPositiveCount": 2
+  },
+  "rawPassAgreementMonitoring": {
+    "originalTargetContactExact": 1,
+    "connectedExampleExact": 0.6923076923076923,
+    "scopeExact": 0.8461538461538461,
+    "burdenAdjustmentExact": 0.8461538461538461,
+    "componentContactMicroExact": 0.8709677419354839,
+    "coverageExact": 0.7692307692307693,
+    "defectTypeExact": 0.5384615384615384,
+    "consequenceExact": 0.7692307692307693,
+    "diagnosticExact": 0.7692307692307693,
+    "reframeExact": 0.8461538461538461,
+    "burdenRelevanceExact": 1,
+    "exactDerivedTupleExact": 0.5384615384615384
+  },
+  "finalAdjudicatedAccuracy": {
+    "originalTargetContactExact": 1,
+    "connectedExampleExact": 0.5384615384615384,
+    "scopeExact": 0.46153846153846156,
+    "burdenAdjustmentExact": 0.8461538461538461,
+    "componentContactMicroExact": 0.6451612903225806,
+    "coverageExact": 0.5384615384615384,
+    "defectTypeExact": 0.3076923076923077,
+    "consequenceExact": 0.6153846153846154,
+    "diagnosticExact": 0.6153846153846154,
+    "reframeExact": 0.7692307692307693,
+    "burdenRelevanceExact": 1,
+    "exactDerivedTupleExact": 0.07692307692307693,
+    "diagnosticPositiveRecall": 1,
+    "reframePositiveRecall": 1
+  },
+  "finalAccuracyByLane": {
+    "dyadic": {
+      "originalTargetContactExact": 1,
+      "connectedExampleExact": 0.2857142857142857,
+      "scopeExact": 0.5714285714285714,
+      "burdenAdjustmentExact": 0.8571428571428571,
+      "componentContactMicroExact": 0.5882352941176471,
+      "coverageExact": 0.5714285714285714,
+      "defectTypeExact": 0.2857142857142857,
+      "consequenceExact": 0.5714285714285714,
+      "diagnosticExact": 0.5714285714285714,
+      "reframeExact": 0.7142857142857143,
+      "burdenRelevanceExact": 1,
+      "exactDerivedTupleExact": 0.14285714285714285
+    },
+    "multi-speaker": {
+      "originalTargetContactExact": 1,
+      "connectedExampleExact": 0.8333333333333334,
+      "scopeExact": 0.3333333333333333,
+      "burdenAdjustmentExact": 0.8333333333333334,
+      "componentContactMicroExact": 0.7142857142857143,
+      "coverageExact": 0.5,
+      "defectTypeExact": 0.3333333333333333,
+      "consequenceExact": 0.6666666666666666,
+      "diagnosticExact": 0.6666666666666666,
+      "reframeExact": 0.8333333333333334,
+      "burdenRelevanceExact": 1,
+      "exactDerivedTupleExact": 0
+    }
+  },
+  "adjudication": {
+    "debates": [
+      {
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "debateNumber": "62",
+        "lane": "dyadic",
+        "role": "straightforward-dyadic",
+        "caseCount": 3,
+        "disputedCaseCount": 3,
+        "disputeCount": 16,
+        "selectionCounts": {
+          "A": 6,
+          "B": 10,
+          "novel": 0
+        },
+        "unresolvedDisputes": 0,
+        "nondisputedAlterations": 0,
+        "finalLockSha256": "2b3ab6afd2e977f456c1a48144fbcf25897e881e84d339132c25b7ece20915ae",
+        "scoringInputSha256": "1b93a3c98db31430c876e9d8d64b03fd8e4b5465d93ee9df8fd88a0a5444b673"
+      },
+      {
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "debateNumber": "185",
+        "lane": "dyadic",
+        "role": "difficult-dyadic-reframe",
+        "caseCount": 4,
+        "disputedCaseCount": 4,
+        "disputeCount": 26,
+        "selectionCounts": {
+          "A": 12,
+          "B": 13,
+          "novel": 1
+        },
+        "unresolvedDisputes": 0,
+        "nondisputedAlterations": 0,
+        "finalLockSha256": "9cc778a925102a12d1365f835cdc00355d02e6bd73e4085240c3b55d7f31f38e",
+        "scoringInputSha256": "4e7d06d12ef6f8cf033aba9a34e4f94f3c9112344efc93f8068ecd1a6797d2a8"
+      },
+      {
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "debateNumber": "154",
+        "lane": "multi-speaker",
+        "role": "multi-speaker",
+        "caseCount": 6,
+        "disputedCaseCount": 6,
+        "disputeCount": 29,
+        "selectionCounts": {
+          "A": 10,
+          "B": 19,
+          "novel": 0
+        },
+        "unresolvedDisputes": 0,
+        "nondisputedAlterations": 0,
+        "finalLockSha256": "70b654ed274479594a88970aae460c360c04a99b38dcb6e39bd2293c391d299b",
+        "scoringInputSha256": "9dc1828130707387b6c2fad13c155d602d63955b65f04cab8e973b911706ed5f"
+      }
+    ],
+    "totalDisputedCases": 13,
+    "totalDisputes": 71,
+    "selectionCounts": {
+      "A": 28,
+      "B": 42,
+      "novel": 1
+    }
+  },
+  "sourceGate": {
+    "mediumOrLowMoveCount": 1,
+    "audioVerifiedMediumOrLowMoveCount": 1,
+    "audioVerificationRate": 1
+  },
+  "thresholds": {
+    "finalOriginalTargetContactExact": 0.95,
+    "finalScopeExact": 0.9,
+    "finalBurdenAdjustmentExact": 0.95,
+    "finalComponentContactMicroExact": 0.9,
+    "finalCoverageExact": 0.85,
+    "finalDefectTypeExact": 0.85,
+    "finalConsequenceExact": 0.9,
+    "finalDiagnosticExact": 0.9,
+    "finalReframeExact": 0.9,
+    "finalBurdenRelevanceExact": 0.9,
+    "finalExactDerivedTupleExact": 0.8,
+    "finalDiagnosticPositiveRecall": 0.8,
+    "finalReframePositiveRecall": 1,
+    "unresolvedDisputesMaximum": 0,
+    "nondisputedAlterationsMaximum": 0,
+    "mediumLowAudioVerificationRate": 1
+  },
+  "gates": {
+    "finalOriginalTargetContactExact": true,
+    "finalScopeExact": false,
+    "finalBurdenAdjustmentExact": false,
+    "finalComponentContactMicroExact": false,
+    "finalCoverageExact": false,
+    "finalDefectTypeExact": false,
+    "finalConsequenceExact": false,
+    "finalDiagnosticExact": false,
+    "finalReframeExact": false,
+    "finalBurdenRelevanceExact": true,
+    "finalExactDerivedTupleExact": false,
+    "finalDiagnosticPositiveRecall": true,
+    "finalReframePositiveRecall": true,
+    "unresolvedDisputes": true,
+    "nondisputedAlterations": true,
+    "mediumLowAudioVerificationRate": true
+  },
+  "decision": {
+    "passed": false,
+    "retiredExecutionGatePassed": false,
+    "heldOutGatePreregistrationAuthorized": false,
+    "heldOutTranscriptsAuthorized": false,
+    "numericalScoringAuthorized": false,
+    "productionMutationAuthorized": false,
+    "nextStep": "Freeze this retired test as failed and repair the adjudicated-consensus architecture without opening held-out material."
+  }
+}

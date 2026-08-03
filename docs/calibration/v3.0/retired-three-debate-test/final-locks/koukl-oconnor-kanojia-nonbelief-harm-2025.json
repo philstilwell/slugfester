@@ -1,0 +1,701 @@
+{
+  "schemaVersion": "3.0-final-consensus-lock",
+  "workflowVersion": "Slugfester Adjudicated Consensus Workflow v3.0",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.0",
+  "model": "5.6 Sol",
+  "gateId": "v3.0-retired-three-debate-consensus-test",
+  "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+  "debateNumber": "154",
+  "lane": "multi-speaker",
+  "calibrationOnly": true,
+  "source": {
+    "manifestPath": "docs/calibration/v3.0/retired-three-debate-test/gate-manifest.json",
+    "manifestSha256": "064bb9d9c5a57d93d8b7ec2ddb7b8ea9e6c6459738fe4bcae9822fdc50135962",
+    "inputPath": "docs/calibration/v3.0/retired-three-debate-test/inputs/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+    "inputSha256": "222bc348b30e2f9ca7703306b30ad6ca4f84c4b6e43309a301f6cf6de646aa88",
+    "sourceAuditPath": "docs/calibration/v3.0/retired-three-debate-test/source-audit/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+    "sourceAuditSha256": "e23cd35f1ec748c5db114ba2f32b1e0bd6b3410b54bc974ea93c11bd9957d1e6",
+    "passAPath": "docs/calibration/v3.0/retired-three-debate-test/pass-a/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+    "passASha256": "00d18d47299ae98cdbb93b552c7c1096d4ea6ef47f18b55f90d4f9e604be7fd9",
+    "passBPath": "docs/calibration/v3.0/retired-three-debate-test/pass-b/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+    "passBSha256": "79a527c976d7d719d16a29f47c511e683d2b28bf4cea37e4e8545a74af83df0b",
+    "disputePacketPath": "docs/calibration/v3.0/retired-three-debate-test/dispute-packets/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+    "disputePacketSha256": "c8d27cd8ffe9217bf977821af03b34de0d77424a3e9445d0a76be681e4de0868",
+    "adjudicationPath": "docs/calibration/v3.0/retired-three-debate-test/adjudications/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+    "adjudicationSha256": "9b5e5b762ab4086e9fc518893f855ad03d80d2b4a53b2068ecfa3fd43c1d385c"
+  },
+  "cases": [
+    {
+      "caseId": "v291-dev-154-08",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-08",
+      "annotation": {
+        "caseId": "v291-dev-154-08",
+        "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-08",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 97,
+          "endChar": 245,
+          "text": "there's people that would have gone the other way and they'll be in the comment section right now saying, \"Well, I went from Christianity to Islam.\""
+        },
+        "connectedExample": true,
+        "connectionEvidence": {
+          "startChar": 97,
+          "endChar": 245,
+          "text": "there's people that would have gone the other way and they'll be in the comment section right now saying, \"Well, I went from Christianity to Islam.\""
+        },
+        "scopeRelation": "same",
+        "scopeEvidence": null,
+        "burdenAdjustment": "retained",
+        "burdenEvidence": null,
+        "componentContacts": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1",
+            "contacted": false,
+            "evidence": null
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2",
+            "contacted": true,
+            "evidence": {
+              "startChar": 97,
+              "endChar": 245,
+              "text": "there's people that would have gone the other way and they'll be in the comment section right now saying, \"Well, I went from Christianity to Islam.\""
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "evidential-insufficiency",
+        "defectCue": {
+          "startChar": 3,
+          "endChar": 46,
+          "text": "there are people who do the opposite there."
+        },
+        "consequenceStated": false,
+        "consequenceCue": null,
+        "malformedDemandExplained": false,
+        "malformedDemandCue": null,
+        "replacementDemandStated": false,
+        "replacementDemandCue": null,
+        "burdenContact": {
+          "tier": "central",
+          "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+          "evidence": {
+            "startChar": 97,
+            "endChar": 245,
+            "text": "there's people that would have gone the other way and they'll be in the comment section right now saying, \"Well, I went from Christianity to Islam.\""
+          }
+        },
+        "rationale": "The reverse-conversion example contacts only the interchangeability inference and directly advances the con central bridge. Final consensus used 3 dispute-only resolutions; both raw rationales remain preserved by hash."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "same",
+        "burdenAdjustment": "retained",
+        "coverage": "partial",
+        "diagnostic": false,
+        "reframe": false,
+        "burdenRelevance": "advances-central"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "same",
+          "burdenAdjustment": "retained",
+          "coverage": "partial",
+          "diagnostic": false,
+          "reframe": false,
+          "burdenRelevance": "advances-central"
+        },
+        "responsiveness": [
+          55,
+          79
+        ],
+        "relevanceBurden": [
+          75,
+          89
+        ]
+      },
+      "disputeIds": [
+        "154-D001",
+        "154-D002",
+        "154-D003"
+      ]
+    },
+    {
+      "caseId": "v291-dev-154-09",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-09",
+      "annotation": {
+        "caseId": "v291-dev-154-09",
+        "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-09",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 76,
+          "endChar": 200,
+          "text": "I'm using dharma and that's what people will like put morality onto dharma, where I I don't think that that's actually fair."
+        },
+        "connectedExample": true,
+        "connectionEvidence": {
+          "startChar": 201,
+          "endChar": 312,
+          "text": "So, so I going back to I have a duty just to give another example um and y'all can decide whether this is moral"
+        },
+        "scopeRelation": "narrowed",
+        "scopeEvidence": {
+          "startChar": 3,
+          "endChar": 75,
+          "text": "in the West, right? So, I think there's a whole different set of axioms."
+        },
+        "burdenAdjustment": "retained",
+        "burdenEvidence": null,
+        "componentContacts": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c1",
+            "contacted": true,
+            "evidence": {
+              "startChar": 27,
+              "endChar": 200,
+              "text": "I think there's a whole different set of axioms. I'm using dharma and that's what people will like put morality onto dharma, where I I don't think that that's actually fair."
+            }
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-09-c2",
+            "contacted": false,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "scope-mismatch",
+        "defectCue": {
+          "startChar": 76,
+          "endChar": 200,
+          "text": "I'm using dharma and that's what people will like put morality onto dharma, where I I don't think that that's actually fair."
+        },
+        "consequenceStated": true,
+        "consequenceCue": {
+          "startChar": 158,
+          "endChar": 200,
+          "text": "I I don't think that that's actually fair."
+        },
+        "malformedDemandExplained": true,
+        "malformedDemandCue": {
+          "startChar": 3,
+          "endChar": 200,
+          "text": "in the West, right? So, I think there's a whole different set of axioms. I'm using dharma and that's what people will like put morality onto dharma, where I I don't think that that's actually fair."
+        },
+        "replacementDemandStated": false,
+        "replacementDemandCue": null,
+        "burdenContact": {
+          "tier": "central",
+          "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+          "evidence": {
+            "startChar": 76,
+            "endChar": 200,
+            "text": "I'm using dharma and that's what people will like put morality onto dharma, where I I don't think that that's actually fair."
+          }
+        },
+        "rationale": "The response narrows contact to objective morality by distinguishing dharma from Western axioms, leaves satisfaction untouched, and advances the con central bridge. Final consensus used 6 dispute-only resolutions; both raw rationales remain preserved by hash."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "narrowed",
+        "burdenAdjustment": "retained",
+        "coverage": "partial",
+        "diagnostic": true,
+        "reframe": false,
+        "burdenRelevance": "advances-central"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "narrowed",
+          "burdenAdjustment": "retained",
+          "coverage": "partial",
+          "diagnostic": true,
+          "reframe": false,
+          "burdenRelevance": "advances-central"
+        },
+        "responsiveness": [
+          80,
+          100
+        ],
+        "relevanceBurden": [
+          75,
+          89
+        ]
+      },
+      "disputeIds": [
+        "154-D004",
+        "154-D005",
+        "154-D006",
+        "154-D007",
+        "154-D008",
+        "154-D009"
+      ]
+    },
+    {
+      "caseId": "v291-dev-154-11",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-11",
+      "annotation": {
+        "caseId": "v291-dev-154-11",
+        "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-11",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 3,
+          "endChar": 83,
+          "text": "Yes, and I think there is an a layer of morality, but that is not within dharma."
+        },
+        "connectedExample": true,
+        "connectionEvidence": {
+          "startChar": 84,
+          "endChar": 199,
+          "text": "So, for example, there are yamas and niyamas, which are things like truthfulness, ahimsa, which means non-violence."
+        },
+        "scopeRelation": "narrowed",
+        "scopeEvidence": {
+          "startChar": 3,
+          "endChar": 83,
+          "text": "Yes, and I think there is an a layer of morality, but that is not within dharma."
+        },
+        "burdenAdjustment": "retained",
+        "burdenEvidence": null,
+        "componentContacts": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c1",
+            "contacted": true,
+            "evidence": {
+              "startChar": 3,
+              "endChar": 83,
+              "text": "Yes, and I think there is an a layer of morality, but that is not within dharma."
+            }
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-11-c2",
+            "contacted": true,
+            "evidence": {
+              "startChar": 3,
+              "endChar": 83,
+              "text": "Yes, and I think there is an a layer of morality, but that is not within dharma."
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "scope-mismatch",
+        "defectCue": {
+          "startChar": 20,
+          "endChar": 51,
+          "text": "there is an a layer of morality"
+        },
+        "consequenceStated": true,
+        "consequenceCue": {
+          "startChar": 53,
+          "endChar": 83,
+          "text": "but that is not within dharma."
+        },
+        "malformedDemandExplained": true,
+        "malformedDemandCue": {
+          "startChar": 12,
+          "endChar": 199,
+          "text": "I think there is an a layer of morality, but that is not within dharma. So, for example, there are yamas and niyamas, which are things like truthfulness, ahimsa, which means non-violence."
+        },
+        "replacementDemandStated": false,
+        "replacementDemandCue": null,
+        "burdenContact": {
+          "tier": "central",
+          "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+          "evidence": {
+            "startChar": 84,
+            "endChar": 199,
+            "text": "So, for example, there are yamas and niyamas, which are things like truthfulness, ahimsa, which means non-violence."
+          }
+        },
+        "rationale": "The reply contacts only the moral-compulsion component through an attribution correction, while its yamas example advances the con central bridge. Final consensus used 7 dispute-only resolutions; both raw rationales remain preserved by hash."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "narrowed",
+        "burdenAdjustment": "retained",
+        "coverage": "full",
+        "diagnostic": true,
+        "reframe": false,
+        "burdenRelevance": "advances-central"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "narrowed",
+          "burdenAdjustment": "retained",
+          "coverage": "full",
+          "diagnostic": true,
+          "reframe": false,
+          "burdenRelevance": "advances-central"
+        },
+        "responsiveness": [
+          80,
+          100
+        ],
+        "relevanceBurden": [
+          75,
+          89
+        ]
+      },
+      "disputeIds": [
+        "154-D010",
+        "154-D011",
+        "154-D012",
+        "154-D013",
+        "154-D014",
+        "154-D015",
+        "154-D016"
+      ]
+    },
+    {
+      "caseId": "v291-dev-154-12",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-12",
+      "annotation": {
+        "caseId": "v291-dev-154-12",
+        "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-12",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 232,
+          "endChar": 348,
+          "text": "So, I think dharma often times gets like translated over to morality, but I think you lose something in translation."
+        },
+        "connectedExample": true,
+        "connectionEvidence": {
+          "startChar": 23,
+          "endChar": 231,
+          "text": "the Mahabharata is a great case of someone saying, \"I don't want to kill my cousins, and I don't want to kill my teacher.\" And Krishna saying, \"You absolutely should, because it is in accordance with dharma.\""
+        },
+        "scopeRelation": "same",
+        "scopeEvidence": null,
+        "burdenAdjustment": "replaced",
+        "burdenEvidence": {
+          "startChar": 167,
+          "endChar": 230,
+          "text": "You absolutely should, because it is in accordance with dharma."
+        },
+        "componentContacts": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c1",
+            "contacted": true,
+            "evidence": {
+              "startChar": 232,
+              "endChar": 348,
+              "text": "So, I think dharma often times gets like translated over to morality, but I think you lose something in translation."
+            }
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-12-c2",
+            "contacted": true,
+            "evidence": {
+              "startChar": 167,
+              "endChar": 230,
+              "text": "You absolutely should, because it is in accordance with dharma."
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "ambiguity",
+        "defectCue": {
+          "startChar": 236,
+          "endChar": 300,
+          "text": "I think dharma often times gets like translated over to morality"
+        },
+        "consequenceStated": true,
+        "consequenceCue": {
+          "startChar": 302,
+          "endChar": 348,
+          "text": "but I think you lose something in translation."
+        },
+        "malformedDemandExplained": true,
+        "malformedDemandCue": {
+          "startChar": 23,
+          "endChar": 348,
+          "text": "the Mahabharata is a great case of someone saying, \"I don't want to kill my cousins, and I don't want to kill my teacher.\" And Krishna saying, \"You absolutely should, because it is in accordance with dharma.\" So, I think dharma often times gets like translated over to morality, but I think you lose something in translation."
+        },
+        "replacementDemandStated": true,
+        "replacementDemandCue": {
+          "startChar": 167,
+          "endChar": 230,
+          "text": "You absolutely should, because it is in accordance with dharma."
+        },
+        "burdenContact": {
+          "tier": "central",
+          "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+          "evidence": {
+            "startChar": 167,
+            "endChar": 230,
+            "text": "You absolutely should, because it is in accordance with dharma."
+          }
+        },
+        "rationale": "The Mahabharata example contacts only the moral-compulsion component, supplies a complete ambiguity diagnostic and dharma reframe, and advances the con central bridge. Final consensus used 5 dispute-only resolutions; both raw rationales remain preserved by hash."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "same",
+        "burdenAdjustment": "replaced",
+        "coverage": "full",
+        "diagnostic": true,
+        "reframe": true,
+        "burdenRelevance": "advances-central"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "same",
+          "burdenAdjustment": "replaced",
+          "coverage": "full",
+          "diagnostic": true,
+          "reframe": true,
+          "burdenRelevance": "advances-central"
+        },
+        "responsiveness": [
+          80,
+          100
+        ],
+        "relevanceBurden": [
+          75,
+          89
+        ]
+      },
+      "disputeIds": [
+        "154-D017",
+        "154-D018",
+        "154-D019",
+        "154-D020",
+        "154-D021"
+      ]
+    },
+    {
+      "caseId": "v291-dev-154-14",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-14",
+      "annotation": {
+        "caseId": "v291-dev-154-14",
+        "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-14",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 99,
+          "endChar": 221,
+          "text": "You don't have to have in a certain sense deterministic element in your in your soul that forces you to act a certain way."
+        },
+        "connectedExample": false,
+        "connectionEvidence": null,
+        "scopeRelation": "modality-shift",
+        "scopeEvidence": {
+          "startChar": 99,
+          "endChar": 221,
+          "text": "You don't have to have in a certain sense deterministic element in your in your soul that forces you to act a certain way."
+        },
+        "burdenAdjustment": "retained",
+        "burdenEvidence": null,
+        "componentContacts": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c1",
+            "contacted": false,
+            "evidence": null
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c2",
+            "contacted": true,
+            "evidence": {
+              "startChar": 222,
+              "endChar": 331,
+              "text": "Why did Adam and Eve even this case act the way she did? Because she was capable of initiating a free action."
+            }
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-14-c3",
+            "contacted": false,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "invalid-inference",
+        "defectCue": {
+          "startChar": 99,
+          "endChar": 221,
+          "text": "You don't have to have in a certain sense deterministic element in your in your soul that forces you to act a certain way."
+        },
+        "consequenceStated": false,
+        "consequenceCue": null,
+        "malformedDemandExplained": false,
+        "malformedDemandCue": null,
+        "replacementDemandStated": false,
+        "replacementDemandCue": null,
+        "burdenContact": {
+          "tier": "central",
+          "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-pro-central",
+          "evidence": {
+            "startChar": 222,
+            "endChar": 381,
+            "text": "Why did Adam and Eve even this case act the way she did? Because she was capable of initiating a free action. And this free action in terms of rebellion, okay?"
+          }
+        },
+        "rationale": "The free-action account contacts the Eve-proclivity premise and regress conclusion through a modality shift, and it advances the pro central bridge. Final consensus used 3 dispute-only resolutions; both raw rationales remain preserved by hash."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "modality-shift",
+        "burdenAdjustment": "retained",
+        "coverage": "partial",
+        "diagnostic": false,
+        "reframe": false,
+        "burdenRelevance": "advances-central"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "modality-shift",
+          "burdenAdjustment": "retained",
+          "coverage": "partial",
+          "diagnostic": false,
+          "reframe": false,
+          "burdenRelevance": "advances-central"
+        },
+        "responsiveness": [
+          55,
+          79
+        ],
+        "relevanceBurden": [
+          75,
+          89
+        ]
+      },
+      "disputeIds": [
+        "154-D022",
+        "154-D023",
+        "154-D024"
+      ]
+    },
+    {
+      "caseId": "v291-dev-154-15",
+      "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-15",
+      "annotation": {
+        "caseId": "v291-dev-154-15",
+        "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-15",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 26,
+          "endChar": 101,
+          "text": "the fall does not explain the proclivity to sin because Eve already had it."
+        },
+        "connectedExample": true,
+        "connectionEvidence": {
+          "startChar": 217,
+          "endChar": 359,
+          "text": "It also doesn't explain the origin of suffering because of course Eve's punishment for eating from the tree of the knowledge of good and evil."
+        },
+        "scopeRelation": "narrowed",
+        "scopeEvidence": {
+          "startChar": 26,
+          "endChar": 101,
+          "text": "the fall does not explain the proclivity to sin because Eve already had it."
+        },
+        "burdenAdjustment": "retained",
+        "burdenEvidence": null,
+        "componentContacts": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c1",
+            "contacted": true,
+            "evidence": {
+              "startChar": 102,
+              "endChar": 216,
+              "text": "It does not explain the existence of evil because knowledge of that already existed before she committed the fall."
+            }
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c2",
+            "contacted": false,
+            "evidence": null
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c3",
+            "contacted": true,
+            "evidence": {
+              "startChar": 217,
+              "endChar": 359,
+              "text": "It also doesn't explain the origin of suffering because of course Eve's punishment for eating from the tree of the knowledge of good and evil."
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "invalid-inference",
+        "defectCue": {
+          "startChar": 26,
+          "endChar": 101,
+          "text": "the fall does not explain the proclivity to sin because Eve already had it."
+        },
+        "consequenceStated": true,
+        "consequenceCue": {
+          "startChar": 102,
+          "endChar": 143,
+          "text": "It does not explain the existence of evil"
+        },
+        "malformedDemandExplained": false,
+        "malformedDemandCue": null,
+        "replacementDemandStated": false,
+        "replacementDemandCue": null,
+        "burdenContact": {
+          "tier": "central",
+          "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-central",
+          "evidence": {
+            "startChar": 217,
+            "endChar": 359,
+            "text": "It also doesn't explain the origin of suffering because of course Eve's punishment for eating from the tree of the knowledge of good and evil."
+          }
+        },
+        "rationale": "The reply contacts the prior-moral-knowledge and fall-consequence components, supplies a complete evidential-insufficiency diagnostic, and advances the con central bridge. Final consensus used 5 dispute-only resolutions; both raw rationales remain preserved by hash."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "narrowed",
+        "burdenAdjustment": "retained",
+        "coverage": "partial",
+        "diagnostic": true,
+        "reframe": false,
+        "burdenRelevance": "advances-central"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "narrowed",
+          "burdenAdjustment": "retained",
+          "coverage": "partial",
+          "diagnostic": true,
+          "reframe": false,
+          "burdenRelevance": "advances-central"
+        },
+        "responsiveness": [
+          80,
+          100
+        ],
+        "relevanceBurden": [
+          75,
+          89
+        ]
+      },
+      "disputeIds": [
+        "154-D025",
+        "154-D026",
+        "154-D027",
+        "154-D028",
+        "154-D029"
+      ]
+    }
+  ],
+  "audit": {
+    "caseCount": 6,
+    "disputeCount": 29,
+    "resolvedDisputeCount": 29,
+    "unresolvedDisputes": 0,
+    "nondisputedAlterations": 0,
+    "derivedFieldsRecomputed": true,
+    "participantPerformanceScoresPresent": false
+  }
+}

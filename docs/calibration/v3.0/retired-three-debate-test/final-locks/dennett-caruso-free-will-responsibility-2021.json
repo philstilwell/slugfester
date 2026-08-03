@@ -1,0 +1,504 @@
+{
+  "schemaVersion": "3.0-final-consensus-lock",
+  "workflowVersion": "Slugfester Adjudicated Consensus Workflow v3.0",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.0",
+  "model": "5.6 Sol",
+  "gateId": "v3.0-retired-three-debate-consensus-test",
+  "debateId": "dennett-caruso-free-will-responsibility-2021",
+  "debateNumber": "185",
+  "lane": "dyadic",
+  "calibrationOnly": true,
+  "source": {
+    "manifestPath": "docs/calibration/v3.0/retired-three-debate-test/gate-manifest.json",
+    "manifestSha256": "064bb9d9c5a57d93d8b7ec2ddb7b8ea9e6c6459738fe4bcae9822fdc50135962",
+    "inputPath": "docs/calibration/v3.0/retired-three-debate-test/inputs/dennett-caruso-free-will-responsibility-2021.json",
+    "inputSha256": "c993fc7476135c0d66d01352c12f992968adecf7a2d7558056cd2c50fc4bbf69",
+    "sourceAuditPath": "docs/calibration/v3.0/retired-three-debate-test/source-audit/dennett-caruso-free-will-responsibility-2021.json",
+    "sourceAuditSha256": "9f5917df14aa8dc9cacf5ee47afe64a5db250b59c0a57185aec87349aca8ea82",
+    "passAPath": "docs/calibration/v3.0/retired-three-debate-test/pass-a/dennett-caruso-free-will-responsibility-2021.json",
+    "passASha256": "2020d91fcb4bf5f5b5aa00116202da382fa3860d36684181dc9a0688a9c57522",
+    "passBPath": "docs/calibration/v3.0/retired-three-debate-test/pass-b/dennett-caruso-free-will-responsibility-2021.json",
+    "passBSha256": "8d9f16941c45e4d265021f3103a992ca5814c391b45d9faea60489f0a406ba48",
+    "disputePacketPath": "docs/calibration/v3.0/retired-three-debate-test/dispute-packets/dennett-caruso-free-will-responsibility-2021.json",
+    "disputePacketSha256": "cd5710a2bd28bfc13114df0901914d390d53b6d5897852d90b901cb74a6d84b7",
+    "adjudicationPath": "docs/calibration/v3.0/retired-three-debate-test/adjudications/dennett-caruso-free-will-responsibility-2021.json",
+    "adjudicationSha256": "367ccad47081fba2fbc07a22bd339ba27d741410573e2b3cf7378e560b82e44b"
+  },
+  "cases": [
+    {
+      "caseId": "v291-dev-185-05",
+      "moveId": "m05-pro-q1-responsive-free-will-worth-wanting",
+      "annotation": {
+        "caseId": "v291-dev-185-05",
+        "moveId": "m05-pro-q1-responsive-free-will-worth-wanting",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 302,
+          "endChar": 441,
+          "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+        },
+        "connectedExample": false,
+        "connectionEvidence": null,
+        "scopeRelation": "same",
+        "scopeEvidence": null,
+        "burdenAdjustment": "retained",
+        "burdenEvidence": null,
+        "componentContacts": [
+          {
+            "componentId": "t05-c1-beyond-control",
+            "contacted": false,
+            "evidence": null
+          },
+          {
+            "componentId": "t05-c2-no-basic-desert",
+            "contacted": true,
+            "evidence": {
+              "startChar": 302,
+              "endChar": 441,
+              "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "irrelevance",
+        "defectCue": {
+          "startChar": 302,
+          "endChar": 345,
+          "text": "libertarian free will doesn't matter at all"
+        },
+        "consequenceStated": true,
+        "consequenceCue": {
+          "startChar": 302,
+          "endChar": 441,
+          "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+        },
+        "malformedDemandExplained": true,
+        "malformedDemandCue": {
+          "startChar": 302,
+          "endChar": 441,
+          "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+        },
+        "replacementDemandStated": true,
+        "replacementDemandCue": {
+          "startChar": 73,
+          "endChar": 170,
+          "text": "we want to know about responsibility and whether whether we deserve blame and praise and so forth"
+        },
+        "burdenContact": {
+          "tier": "motion",
+          "bridgeId": "con-motion-no-basic-desert",
+          "evidence": {
+            "startChar": 302,
+            "endChar": 441,
+            "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+          }
+        },
+        "rationale": "Only the no-basic-desert inference is contacted; the move diagnoses libertarian freedom as irrelevant, reframes the demand around responsibility, and reaches the motion bridge. Final consensus used 3 dispute-only resolutions; both raw rationales remain preserved by hash."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "same",
+        "burdenAdjustment": "retained",
+        "coverage": "partial",
+        "diagnostic": true,
+        "reframe": true,
+        "burdenRelevance": "completes"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "same",
+          "burdenAdjustment": "retained",
+          "coverage": "partial",
+          "diagnostic": true,
+          "reframe": true,
+          "burdenRelevance": "completes"
+        },
+        "responsiveness": [
+          80,
+          100
+        ],
+        "relevanceBurden": [
+          90,
+          100
+        ]
+      },
+      "disputeIds": [
+        "185-D001",
+        "185-D002",
+        "185-D003"
+      ]
+    },
+    {
+      "caseId": "v291-dev-185-07",
+      "moveId": "m07-pro-q2-responsive-causation-control-diagnosis",
+      "annotation": {
+        "caseId": "v291-dev-185-07",
+        "moveId": "m07-pro-q2-responsive-causation-control-diagnosis",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 56,
+          "endChar": 94,
+          "text": "you're confusing causation and control"
+        },
+        "connectedExample": true,
+        "connectionEvidence": {
+          "startChar": 95,
+          "endChar": 209,
+          "text": "in the following way maya and marina you haven't told us what their upbringing was how much self-control they have"
+        },
+        "scopeRelation": "same",
+        "scopeEvidence": null,
+        "burdenAdjustment": "replaced",
+        "burdenEvidence": {
+          "startChar": 116,
+          "endChar": 209,
+          "text": "maya and marina you haven't told us what their upbringing was how much self-control they have"
+        },
+        "componentContacts": [
+          {
+            "componentId": "t07-c1-sourcehood-required",
+            "contacted": false,
+            "evidence": null
+          },
+          {
+            "componentId": "t07-c2-determination-defeats-sourcehood",
+            "contacted": true,
+            "evidence": {
+              "startChar": 56,
+              "endChar": 94,
+              "text": "you're confusing causation and control"
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "invalid-inference",
+        "defectCue": {
+          "startChar": 56,
+          "endChar": 94,
+          "text": "you're confusing causation and control"
+        },
+        "consequenceStated": true,
+        "consequenceCue": {
+          "startChar": 116,
+          "endChar": 209,
+          "text": "maya and marina you haven't told us what their upbringing was how much self-control they have"
+        },
+        "malformedDemandExplained": true,
+        "malformedDemandCue": {
+          "startChar": 56,
+          "endChar": 94,
+          "text": "you're confusing causation and control"
+        },
+        "replacementDemandStated": true,
+        "replacementDemandCue": {
+          "startChar": 116,
+          "endChar": 209,
+          "text": "maya and marina you haven't told us what their upbringing was how much self-control they have"
+        },
+        "burdenContact": {
+          "tier": "central",
+          "bridgeId": "con-central-sourcehood",
+          "evidence": {
+            "startChar": 56,
+            "endChar": 94,
+            "text": "you're confusing causation and control"
+          }
+        },
+        "rationale": "The move contacts only determination's alleged defeat of sourcehood, uses Maya and Marina as a connected example, diagnoses a causation-control inference, reframes toward self-control, and reaches the central bridge. Final consensus used 7 dispute-only resolutions; both raw rationales remain preserved by hash."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "same",
+        "burdenAdjustment": "replaced",
+        "coverage": "partial",
+        "diagnostic": true,
+        "reframe": true,
+        "burdenRelevance": "advances-central"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "same",
+          "burdenAdjustment": "replaced",
+          "coverage": "partial",
+          "diagnostic": true,
+          "reframe": true,
+          "burdenRelevance": "advances-central"
+        },
+        "responsiveness": [
+          80,
+          100
+        ],
+        "relevanceBurden": [
+          75,
+          89
+        ]
+      },
+      "disputeIds": [
+        "185-D004",
+        "185-D005",
+        "185-D006",
+        "185-D007",
+        "185-D008",
+        "185-D009",
+        "185-D010"
+      ]
+    },
+    {
+      "caseId": "v291-dev-185-12",
+      "moveId": "m12-con-q4-responsive-rules-versus-reactive-attitudes",
+      "annotation": {
+        "caseId": "v291-dev-185-12",
+        "moveId": "m12-con-q4-responsive-rules-versus-reactive-attitudes",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 92,
+          "endChar": 231,
+          "text": "not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified"
+        },
+        "connectedExample": true,
+        "connectionEvidence": {
+          "startChar": 302,
+          "endChar": 483,
+          "text": "do i want to attach to my parenting when i when i punish my daughter by taking her cell phone away do i want or am i justified in exhibiting resentment or indignation or moral anger"
+        },
+        "scopeRelation": "narrowed",
+        "scopeEvidence": {
+          "startChar": 92,
+          "endChar": 231,
+          "text": "not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified"
+        },
+        "burdenAdjustment": "replaced",
+        "burdenEvidence": {
+          "startChar": 92,
+          "endChar": 231,
+          "text": "not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified"
+        },
+        "componentContacts": [
+          {
+            "componentId": "t12-c1-agreed-penalties",
+            "contacted": false,
+            "evidence": null
+          },
+          {
+            "componentId": "t12-c2-social-cornerstone",
+            "contacted": false,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": true,
+        "contraryEvidence": {
+          "startChar": 92,
+          "endChar": 231,
+          "text": "not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified"
+        },
+        "defectType": "scope-mismatch",
+        "defectCue": {
+          "startChar": 92,
+          "endChar": 231,
+          "text": "not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified"
+        },
+        "consequenceStated": true,
+        "consequenceCue": {
+          "startChar": 150,
+          "endChar": 295,
+          "text": "the question about whether certain types of reactive attitudes would be justified because those are the ones that are philosophically significant"
+        },
+        "malformedDemandExplained": true,
+        "malformedDemandCue": {
+          "startChar": 46,
+          "endChar": 295,
+          "text": "the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified because those are the ones that are philosophically significant"
+        },
+        "replacementDemandStated": true,
+        "replacementDemandCue": {
+          "startChar": 150,
+          "endChar": 231,
+          "text": "the question about whether certain types of reactive attitudes would be justified"
+        },
+        "burdenContact": {
+          "tier": "motion",
+          "bridgeId": "pro-motion-responsibility",
+          "evidence": {
+            "startChar": 414,
+            "endChar": 483,
+            "text": "am i justified in exhibiting resentment or indignation or moral anger"
+          }
+        },
+        "rationale": "No indispensable target component is directly contacted, but the parenting example supports a scope-mismatch diagnosis and reframe from practices to reactive attitudes at the motion tier. Final consensus used 7 dispute-only resolutions; both raw rationales remain preserved by hash."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "narrowed",
+        "burdenAdjustment": "replaced",
+        "coverage": "relevant-nonanswer",
+        "diagnostic": true,
+        "reframe": true,
+        "burdenRelevance": "completes"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "narrowed",
+          "burdenAdjustment": "replaced",
+          "coverage": "relevant-nonanswer",
+          "diagnostic": true,
+          "reframe": true,
+          "burdenRelevance": "completes"
+        },
+        "responsiveness": [
+          80,
+          100
+        ],
+        "relevanceBurden": [
+          90,
+          100
+        ]
+      },
+      "disputeIds": [
+        "185-D011",
+        "185-D012",
+        "185-D013",
+        "185-D014",
+        "185-D015",
+        "185-D016",
+        "185-D017"
+      ]
+    },
+    {
+      "caseId": "v291-dev-185-08",
+      "moveId": "m08-con-q2-responsive-control-insufficient",
+      "annotation": {
+        "caseId": "v291-dev-185-08",
+        "moveId": "m08-con-q2-responsive-control-insufficient",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 0,
+          "endChar": 253,
+          "text": "all the kind of compatibilist distinctions that have been made over the last 20 to 50 years um the question is not the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+        },
+        "connectedExample": false,
+        "connectionEvidence": null,
+        "scopeRelation": "strengthened",
+        "scopeEvidence": {
+          "startChar": 131,
+          "endChar": 253,
+          "text": "whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+        },
+        "burdenAdjustment": "replaced",
+        "burdenEvidence": {
+          "startChar": 115,
+          "endChar": 253,
+          "text": "the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+        },
+        "componentContacts": [
+          {
+            "componentId": "t08-c1-degrees-control",
+            "contacted": true,
+            "evidence": {
+              "startChar": 0,
+              "endChar": 253,
+              "text": "all the kind of compatibilist distinctions that have been made over the last 20 to 50 years um the question is not the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+            }
+          },
+          {
+            "componentId": "t08-c2-well-functioning-reasons",
+            "contacted": true,
+            "evidence": {
+              "startChar": 0,
+              "endChar": 253,
+              "text": "all the kind of compatibilist distinctions that have been made over the last 20 to 50 years um the question is not the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "scope-mismatch",
+        "defectCue": {
+          "startChar": 284,
+          "endChar": 390,
+          "text": "those distinctions matter they matter in all kinds of important ways but they matter for different reasons"
+        },
+        "consequenceStated": true,
+        "consequenceCue": {
+          "startChar": 284,
+          "endChar": 390,
+          "text": "those distinctions matter they matter in all kinds of important ways but they matter for different reasons"
+        },
+        "malformedDemandExplained": true,
+        "malformedDemandCue": {
+          "startChar": 284,
+          "endChar": 390,
+          "text": "those distinctions matter they matter in all kinds of important ways but they matter for different reasons"
+        },
+        "replacementDemandStated": true,
+        "replacementDemandCue": {
+          "startChar": 115,
+          "endChar": 253,
+          "text": "the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+        },
+        "burdenContact": {
+          "tier": "motion",
+          "bridgeId": "pro-motion-responsibility",
+          "evidence": {
+            "startChar": 115,
+            "endChar": 253,
+            "text": "the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+          }
+        },
+        "rationale": "Both compatibilist-control components are contacted, while their desert-grounding sufficiency is strengthened and replaced; the scope reframe reaches the motion bridge without a separate diagnostic consequence. Final consensus used 9 dispute-only resolutions; both raw rationales remain preserved by hash."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "strengthened",
+        "burdenAdjustment": "replaced",
+        "coverage": "full",
+        "diagnostic": true,
+        "reframe": true,
+        "burdenRelevance": "completes"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "strengthened",
+          "burdenAdjustment": "replaced",
+          "coverage": "full",
+          "diagnostic": true,
+          "reframe": true,
+          "burdenRelevance": "completes"
+        },
+        "responsiveness": [
+          80,
+          100
+        ],
+        "relevanceBurden": [
+          90,
+          100
+        ]
+      },
+      "disputeIds": [
+        "185-D018",
+        "185-D019",
+        "185-D020",
+        "185-D021",
+        "185-D022",
+        "185-D023",
+        "185-D024",
+        "185-D025",
+        "185-D026"
+      ]
+    }
+  ],
+  "audit": {
+    "caseCount": 4,
+    "disputeCount": 26,
+    "resolvedDisputeCount": 26,
+    "unresolvedDisputes": 0,
+    "nondisputedAlterations": 0,
+    "derivedFieldsRecomputed": true,
+    "participantPerformanceScoresPresent": false
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "3.0-retired-consensus-failure-diagnostics",
+  "createdAt": "2026-08-03T22:18:00.978Z",
+  "sources": {
+    "manifestPath": "docs/calibration/v3.0/retired-three-debate-test/gate-manifest.json",
+    "manifestSha256": "064bb9d9c5a57d93d8b7ec2ddb7b8ea9e6c6459738fe4bcae9822fdc50135962",
+    "analysisPath": "docs/calibration/v3.0/retired-three-debate-test/reliability-analysis.json",
+    "analysisSha256": "44c7d95040e26e4897e74c088a2bd84e2b284e82bd256a3bf08b11601ed4a060"
+  },
+  "counts": {
+    "semanticJudgmentCount": 161,
+    "compoundDisputeCount": 71,
+    "semanticDisputeCount": 25,
+    "evidenceOnlyDisputeCount": 46,
+    "rawAgreedSemanticCount": 136,
+    "rawAgreedButWrongCount": 33,
+    "disputedFinalCorrectCount": 7,
+    "disputedFinalWrongCount": 18,
+    "disputedCorrectCandidateAvailableCount": 23,
+    "disputedNeitherCandidateCorrectCount": 2
+  },
+  "rates": {
+    "sharedErrorAmongAgreements": 0.2426470588235294,
+    "adjudicatorSemanticAccuracy": 0.28,
+    "correctCandidateAvailabilityOnSemanticDisputes": 0.92,
+    "evidenceOnlyShareOfCompoundDisputes": 0.647887323943662
+  },
+  "byField": {
+    "targetContact": {
+      "agreedCorrect": 13,
+      "agreedWrong": 0,
+      "disputedFinalCorrect": 0,
+      "disputedFinalWrong": 0,
+      "correctCandidateAvailable": 0,
+      "neitherCandidateCorrect": 0,
+      "total": 13
+    },
+    "connectedExample": {
+      "agreedCorrect": 7,
+      "agreedWrong": 2,
+      "disputedFinalCorrect": 0,
+      "disputedFinalWrong": 4,
+      "correctCandidateAvailable": 4,
+      "neitherCandidateCorrect": 0,
+      "total": 13
+    },
+    "scope": {
+      "agreedCorrect": 6,
+      "agreedWrong": 5,
+      "disputedFinalCorrect": 0,
+      "disputedFinalWrong": 2,
+      "correctCandidateAvailable": 2,
+      "neitherCandidateCorrect": 0,
+      "total": 13
+    },
+    "burdenAdjustment": {
+      "agreedCorrect": 9,
+      "agreedWrong": 2,
+      "disputedFinalCorrect": 2,
+      "disputedFinalWrong": 0,
+      "correctCandidateAvailable": 2,
+      "neitherCandidateCorrect": 0,
+      "total": 13
+    },
+    "component": {
+      "agreedCorrect": 20,
+      "agreedWrong": 7,
+      "disputedFinalCorrect": 0,
+      "disputedFinalWrong": 4,
+      "correctCandidateAvailable": 4,
+      "neitherCandidateCorrect": 0,
+      "total": 31
+    },
+    "contrary": {
+      "agreedCorrect": 10,
+      "agreedWrong": 2,
+      "disputedFinalCorrect": 0,
+      "disputedFinalWrong": 1,
+      "correctCandidateAvailable": 1,
+      "neitherCandidateCorrect": 0,
+      "total": 13
+    },
+    "defect": {
+      "agreedCorrect": 2,
+      "agreedWrong": 5,
+      "disputedFinalCorrect": 2,
+      "disputedFinalWrong": 4,
+      "correctCandidateAvailable": 4,
+      "neitherCandidateCorrect": 2,
+      "total": 13
+    },
+    "consequence": {
+      "agreedCorrect": 8,
+      "agreedWrong": 2,
+      "disputedFinalCorrect": 0,
+      "disputedFinalWrong": 3,
+      "correctCandidateAvailable": 3,
+      "neitherCandidateCorrect": 0,
+      "total": 13
+    },
+    "malformed": {
+      "agreedCorrect": 7,
+      "agreedWrong": 5,
+      "disputedFinalCorrect": 1,
+      "disputedFinalWrong": 0,
+      "correctCandidateAvailable": 1,
+      "neitherCandidateCorrect": 0,
+      "total": 13
+    },
+    "replacement": {
+      "agreedCorrect": 8,
+      "agreedWrong": 3,
+      "disputedFinalCorrect": 2,
+      "disputedFinalWrong": 0,
+      "correctCandidateAvailable": 2,
+      "neitherCandidateCorrect": 0,
+      "total": 13
+    },
+    "burdenContact": {
+      "agreedCorrect": 13,
+      "agreedWrong": 0,
+      "disputedFinalCorrect": 0,
+      "disputedFinalWrong": 0,
+      "correctCandidateAvailable": 0,
+      "neitherCandidateCorrect": 0,
+      "total": 13
+    }
+  },
+  "diagnosis": [
+    "Dispute-only adjudication cannot repair correlated same-model errors when both raw passes agree on the same wrong semantic value.",
+    "The adjudicator selected the gold-matching candidate on only 7 of 25 semantic disputes even though one raw candidate matched gold on 23 of 25.",
+    "Exact evidence-span differences created 46 of 71 adjudication items and likely diluted attention from the 25 semantic conflicts.",
+    "Target contact and burden-route tier remained fully accurate; overclassification concentrated in connected examples, scope changes, component contact, defect typing, consequences, and reframes."
+  ],
+  "postHocRecommendations": [
+    "Separate semantic disputes from evidence-span canonicalization; adjudicate semantics first and select the shortest valid evidence span mechanically afterward.",
+    "Add a conservative verification stage for high-risk positive fields even when A and B agree, because shared agreement is not an accuracy guarantee.",
+    "Use explicit per-field adjudication questions and default-presumption reminders instead of one long mixed dispute list.",
+    "Retain target-contact and burden-tier rules, which passed, and do not remove multi-speaker debates based on this result."
+  ]
+}

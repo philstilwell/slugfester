@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v3.0-dispute-adjudication",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "workflowVersion",
+    "rubricVersion",
+    "model",
+    "debateId",
+    "debateNumber",
+    "completedAt",
+    "isolation",
+    "source",
+    "resolutions",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "3.0-dispute-adjudication",
+      "type": "string"
+    },
+    "workflowVersion": {
+      "const": "Slugfester Adjudicated Consensus Workflow v3.0",
+      "type": "string"
+    },
+    "rubricVersion": {
+      "const": "Slugfester Reassessment Rubric v3.0",
+      "type": "string"
+    },
+    "model": {
+      "const": "5.6 Sol",
+      "type": "string"
+    },
+    "debateId": {
+      "type": "string"
+    },
+    "debateNumber": {
+      "type": "string"
+    },
+    "completedAt": {
+      "type": "string"
+    },
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method",
+        "allowedInputs",
+        "goldUnavailable",
+        "completePassesUnavailable",
+        "nondisputedFieldsUnavailable",
+        "legacyMaterialUnavailable",
+        "numericalScoresUnavailable",
+        "statement"
+      ],
+      "properties": {
+        "method": {
+          "const": "fresh-ephemeral-v3.0-dispute-only-adjudication",
+          "type": "string"
+        },
+        "allowedInputs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "goldUnavailable": {
+          "const": true,
+          "type": "boolean"
+        },
+        "completePassesUnavailable": {
+          "const": true,
+          "type": "boolean"
+        },
+        "nondisputedFieldsUnavailable": {
+          "const": true,
+          "type": "boolean"
+        },
+        "legacyMaterialUnavailable": {
+          "const": true,
+          "type": "boolean"
+        },
+        "numericalScoresUnavailable": {
+          "const": true,
+          "type": "boolean"
+        },
+        "statement": {
+          "type": "string"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "disputePacketPath",
+        "disputePacketSha256",
+        "workflowSha256",
+        "rubricSha256",
+        "manualSha256",
+        "schemaSha256"
+      ],
+      "properties": {
+        "disputePacketPath": {
+          "const": "dispute-packet.json",
+          "type": "string"
+        },
+        "disputePacketSha256": {
+          "type": "string"
+        },
+        "workflowSha256": {
+          "type": "string"
+        },
+        "rubricSha256": {
+          "type": "string"
+        },
+        "manualSha256": {
+          "type": "string"
+        },
+        "schemaSha256": {
+          "type": "string"
+        }
+      }
+    },
+    "resolutions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "disputeId",
+          "caseId",
+          "fieldPath",
+          "selection",
+          "resolvedJson",
+          "rationale"
+        ],
+        "properties": {
+          "disputeId": {
+            "type": "string"
+          },
+          "caseId": {
+            "type": "string"
+          },
+          "fieldPath": {
+            "type": "string"
+          },
+          "selection": {
+            "enum": [
+              "A",
+              "B",
+              "novel"
+            ],
+            "type": "string"
+          },
+          "resolvedJson": {
+            "type": "string"
+          },
+          "rationale": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "disputeCount",
+        "allDisputesResolvedOnce",
+        "unexpectedFieldsAdded",
+        "scoresPresent"
+      ],
+      "properties": {
+        "disputeCount": {
+          "type": "integer"
+        },
+        "allDisputesResolvedOnce": {
+          "const": true,
+          "type": "boolean"
+        },
+        "unexpectedFieldsAdded": {
+          "const": 0,
+          "type": "number"
+        },
+        "scoresPresent": {
+          "const": false,
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}
