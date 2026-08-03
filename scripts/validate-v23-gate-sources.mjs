@@ -83,8 +83,8 @@ for (const debate of gate.sample.debates) {
   ]);
   const captionManifest = JSON.parse(manifestSource);
   assert(after.source.transcriptSha256 === sha256(transcript), `${debate.debateId}: transcript hash mismatch`);
-  assert(captionManifest.files.transcript.sha256 === sha256(transcript), `${debate.debateId}: caption manifest transcript mismatch`);
-  assert(captionManifest.files.events.sha256 === sha256(events), `${debate.debateId}: caption manifest events mismatch`);
+  assert(captionManifest.transcriptSha256 === sha256(transcript), `${debate.debateId}: caption manifest transcript mismatch`);
+  assert(captionManifest.normalizedEventsSha256 === sha256(events), `${debate.debateId}: caption manifest events mismatch`);
 
   assert(audio.totals.unresolved === 0 && audio.totals.verificationRate === 1, `${debate.debateId}: unresolved audio audit`);
   assert(audio.sourceAudio.sha256 === sha256(await readFile(path.join(workspaceRoot, audio.sourceAudio.localPath))), `${debate.debateId}: raw source audio hash mismatch`);
