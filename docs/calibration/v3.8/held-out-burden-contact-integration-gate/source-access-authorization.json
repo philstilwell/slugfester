@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "3.8-heldout-burden-contact-source-access-authorization",
+  "gateId": "v3.8-heldout-burden-contact-integration-gate",
+  "status": "source-access-and-preparation-authorized",
+  "authorizedAt": "2026-08-04T06:50:35Z",
+  "authorizationBasis": "The user instructed Codex to continue at its discretion after being told that the next justified step was authorization to open the three selected local transcripts and prepare independently reviewed source artifacts.",
+  "authorizationCheckpointCommit": "64367317b2af636415dc6cd8de69a88f45fdf084",
+  "gateManifest": {
+    "path": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/gate-manifest.json",
+    "sha256": "59c60922f815e46f15bebd014dc4e90981d9ca9983047ac9f0c3158a8151e60c"
+  },
+  "authorized": {
+    "readSelectedLocalTranscriptChains": true,
+    "verifySelectedLocalTranscriptHashes": true,
+    "buildSourceAudit": true,
+    "runAISourcePreparation": true,
+    "runIndependentAISourceReview": true,
+    "runDisputedPreparationFieldAdjudication": true,
+    "verifyMediumOrLowAttributionAgainstAudio": true,
+    "buildAndValidateSourcePreparationTooling": true
+  },
+  "stillBlocked": {
+    "burdenContactClassificationPasses": true,
+    "classificationAdjudication": true,
+    "numericalParticipantScoring": true,
+    "assessmentProse": true,
+    "overallCommentary": true,
+    "aiExtension": true,
+    "benchmarkMutation": true,
+    "productionMutation": true,
+    "all195Debates": true
+  },
+  "execution": {
+    "model": {
+      "label": "5.6 Sol",
+      "slug": "gpt-5.6-sol",
+      "reasoningEffort": "high"
+    },
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredModelApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "newPaidTranscriptionRequiresFreshEstimateAndApproval": true,
+    "attemptsPerAIContext": 1,
+    "modelOutputRetriesMaximum": 0
+  },
+  "selectedVideoIds": [
+    "g1TlLCSn_5o",
+    "zQBY5K-Ns2Y",
+    "9JVRy7bR7zI"
+  ]
+}
