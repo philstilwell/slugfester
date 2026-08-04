@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "3.7.6-case-disjoint-burden-contact-dispute-diagnostics",
+  "status": "gate-passed-one-adjudicated-boundary",
+  "initialAgreement": {
+    "agreements": 11,
+    "compositeCases": 12,
+    "rate": 0.9167,
+    "minimumRequired": 11,
+    "disagreementsMaximum": 1
+  },
+  "dispute": {
+    "bundleId": "burden-contact-disjoint-152-08",
+    "issue": "religious-practice-criticism-versus-moral-grounding-contact",
+    "passA": {
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "creator-pro-subsidiary-morality"
+      }
+    },
+    "passB": {
+      "burdenContact": null
+    },
+    "passC": {
+      "burdenContact": null
+    },
+    "twoVoteResolution": {
+      "burdenContact": null
+    },
+    "provisionalReference": {
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "creator-pro-subsidiary-morality"
+      }
+    },
+    "diagnosis": "The excerpt claims that groups knowingly rationalize evil through political or religious dogma. That criticism of practice does not by itself supply a reason for or against the bridge's distinct metaphysical claim that objective obligations require a transcendent lawgiver. Passes B and C therefore applied the exact-proposition exclusion more narrowly than pass A and the provisional AI reference."
+  },
+  "controls": {
+    "initialContextsValid": 6,
+    "adjudicationContextsValid": 1,
+    "finalTwoVoteBundles": 12,
+    "unresolvedBundles": 0,
+    "retries": 0,
+    "schemaRejections": 0,
+    "streamRecoveries": 0,
+    "scoringFields": 0,
+    "localTranscriptHashesVerified": 3,
+    "uniqueLocalExcerptMatches": 12,
+    "requiredAudioVerifications": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "documentationCaution": {
+    "canonicalWorkflowContainsExposedSmokeThreshold": true,
+    "testSpecificThresholdFrozenSeparately": true,
+    "individualSemanticDecisionInvalidated": false,
+    "requiredBeforeHeldOutGate": "Move sample-specific threshold language out of the model-facing invariant workflow and into the held-out gate manifest."
+  },
+  "authorization": {
+    "heldOutBurdenContactIntegrationGatePreregistration": true,
+    "heldOutAccess": false,
+    "numericalParticipantScoring": false,
+    "assessmentProse": false,
+    "benchmarkMutation": false,
+    "productionMutation": false
+  }
+}

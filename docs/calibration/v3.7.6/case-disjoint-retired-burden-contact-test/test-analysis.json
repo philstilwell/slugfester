@@ -1,0 +1,412 @@
+{
+  "schemaVersion": "3.7.6-case-disjoint-burden-contact-analysis",
+  "analyzedAt": "2026-08-04T06:35:07.877Z",
+  "status": "case-disjoint-burden-contact-pass",
+  "warning": "This AI-only retired case-disjoint test measures repeatability of composite burden-contact choices. It does not establish human ground truth, scoring validity, assessment-prose validity, or production readiness.",
+  "sources": {
+    "executionManifestSha256": "9eb096605936ece8df8d32ca0d63e23db9371cef0b8878ca7ed9612e8c23e1e8",
+    "initialExecutionSha256": "7eea4cf7432cbcec4c49ade195c4b32d3582e4f49ae8f113fc897e576b13ab0d",
+    "initialDisagreementsSha256": "14bd1897ad18e151dfe316809cafa77ad878ba8ca468510e5b6e23fec1addc9d",
+    "adjudicationExecutionSha256": "b93bae28ed5ac9a9f93d60b4e5c2137a8cfb06e87f9e819e6a0ea0fa6fda1deb",
+    "sealedOptionMapSha256": "3c2f2b0a27bb4bc7c8b92156b5dfc9e5ecadf40691deb1e5d7611921b21eedc4",
+    "adjudicationOptionMapSha256": "205cd97d2b17a9c8f6379ed98449aea7054b260608c3c24e6a4550633ba74a92"
+  },
+  "results": {
+    "initial": {
+      "compositeCases": 12,
+      "agreements": 11,
+      "disagreements": 1,
+      "adjudicationContexts": 1
+    },
+    "final": {
+      "compositeCases": 12,
+      "resolved": 12,
+      "matchesProvisionalReference": 11,
+      "differsFromProvisionalReference": 1,
+      "contactCounts": {
+        "none": 3,
+        "support": 7,
+        "attack": 2,
+        "motion": 1,
+        "central": 1,
+        "subsidiary": 7
+      },
+      "decisions": [
+        {
+          "bundleId": "burden-contact-disjoint-04-05",
+          "debateNumber": "04",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "science-con-subsidiary-resurrection"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "science-con-subsidiary-resurrection"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "polarity": "support",
+              "tier": "subsidiary",
+              "bridgeId": "science-con-subsidiary-resurrection"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesProvisionalReference": true
+        },
+        {
+          "bundleId": "burden-contact-disjoint-04-06",
+          "debateNumber": "04",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "subsidiary",
+                "bridgeId": "science-con-subsidiary-resurrection"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "subsidiary",
+                "bridgeId": "science-con-subsidiary-resurrection"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "polarity": "attack",
+              "tier": "subsidiary",
+              "bridgeId": "science-con-subsidiary-resurrection"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesProvisionalReference": true
+        },
+        {
+          "bundleId": "burden-contact-disjoint-04-10",
+          "debateNumber": "04",
+          "votes": {
+            "passA": {
+              "burdenContact": null
+            },
+            "passB": {
+              "burdenContact": null
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": null
+          },
+          "supportingVotes": 2,
+          "matchesProvisionalReference": true
+        },
+        {
+          "bundleId": "burden-contact-disjoint-04-11",
+          "debateNumber": "04",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "motion",
+                "bridgeId": "science-con-motion-explanatory-completeness"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "motion",
+                "bridgeId": "science-con-motion-explanatory-completeness"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "polarity": "attack",
+              "tier": "motion",
+              "bridgeId": "science-con-motion-explanatory-completeness"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesProvisionalReference": true
+        },
+        {
+          "bundleId": "burden-contact-disjoint-62-06",
+          "debateNumber": "62",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "logos-con-subsidiary-scriptural-allegory"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "logos-con-subsidiary-scriptural-allegory"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "polarity": "support",
+              "tier": "subsidiary",
+              "bridgeId": "logos-con-subsidiary-scriptural-allegory"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesProvisionalReference": true
+        },
+        {
+          "bundleId": "burden-contact-disjoint-62-07",
+          "debateNumber": "62",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "logos-pro-subsidiary-analogical-memory"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "logos-pro-subsidiary-analogical-memory"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "polarity": "support",
+              "tier": "subsidiary",
+              "bridgeId": "logos-pro-subsidiary-analogical-memory"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesProvisionalReference": true
+        },
+        {
+          "bundleId": "burden-contact-disjoint-62-08",
+          "debateNumber": "62",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "logos-con-subsidiary-empirical-claims"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "logos-con-subsidiary-empirical-claims"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "polarity": "support",
+              "tier": "subsidiary",
+              "bridgeId": "logos-con-subsidiary-empirical-claims"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesProvisionalReference": true
+        },
+        {
+          "bundleId": "burden-contact-disjoint-62-12",
+          "debateNumber": "62",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "logos-pro-subsidiary-governing-values"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "logos-pro-subsidiary-governing-values"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "polarity": "support",
+              "tier": "subsidiary",
+              "bridgeId": "logos-pro-subsidiary-governing-values"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesProvisionalReference": true
+        },
+        {
+          "bundleId": "burden-contact-disjoint-152-06",
+          "debateNumber": "152",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "creator-con-subsidiary-logic"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "creator-con-subsidiary-logic"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "polarity": "support",
+              "tier": "subsidiary",
+              "bridgeId": "creator-con-subsidiary-logic"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesProvisionalReference": true
+        },
+        {
+          "bundleId": "burden-contact-disjoint-152-08",
+          "debateNumber": "152",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "subsidiary",
+                "bridgeId": "creator-pro-subsidiary-morality"
+              }
+            },
+            "passB": {
+              "burdenContact": null
+            },
+            "passC": {
+              "burdenContact": null
+            }
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": null
+          },
+          "supportingVotes": 2,
+          "matchesProvisionalReference": false
+        },
+        {
+          "bundleId": "burden-contact-disjoint-152-09",
+          "debateNumber": "152",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "creator-pro-central-origin"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "creator-pro-central-origin"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "polarity": "support",
+              "tier": "central",
+              "bridgeId": "creator-pro-central-origin"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesProvisionalReference": true
+        },
+        {
+          "bundleId": "burden-contact-disjoint-152-11",
+          "debateNumber": "152",
+          "votes": {
+            "passA": {
+              "burdenContact": null
+            },
+            "passB": {
+              "burdenContact": null
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": null
+          },
+          "supportingVotes": 2,
+          "matchesProvisionalReference": true
+        }
+      ]
+    }
+  },
+  "gates": {
+    "structural": {
+      "initialContextsCompleted": true,
+      "initialContextsValid": true,
+      "adjudicationContextsValid": true,
+      "preInferenceSchemaRejections": true,
+      "modelOutputRetries": true,
+      "streamRecoveries": true,
+      "invalidInitialBundles": true,
+      "audioVerificationComplete": true,
+      "scoringFields": true,
+      "meteredApiCost": true,
+      "transcriptionCost": true
+    },
+    "semantic": {
+      "bundleCoverage": true,
+      "minimumInitialAgreement": true,
+      "maximumInitialDisagreement": true,
+      "finalTwoVoteConsensus": true,
+      "unresolvedBundles": true
+    }
+  },
+  "passed": true,
+  "decision": {
+    "heldOutBurdenContactIntegrationGatePreregistrationAuthorized": true,
+    "heldOutAccessAuthorized": false,
+    "benchmarkMutationAuthorized": false,
+    "largerModelBatchAuthorized": false,
+    "numericalParticipantScoringAuthorized": false,
+    "assessmentProseAuthorized": false,
+    "productionMutationAuthorized": false
+  }
+}
