@@ -1,0 +1,234 @@
+{
+  "schemaVersion": "3.8.5-coverage-transport-amendment-execution-manifest",
+  "protocolId": "v3.8.5-coverage-transport-amendment",
+  "parentProtocolId": "v3.8.4-heldout-score-reconstruction-gate",
+  "stage": "fresh-debate-161-coverage-proposal",
+  "status": "frozen-single-context-amendment-authorized",
+  "frozenAt": "2026-08-04T14:21:01Z",
+  "checkpointCommit": "bf429e363dbc347480f5104ea1b136b3ac0c01cd",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "amendmentBasis": {
+    "v384GateTerminatedWithoutPass": true,
+    "failedAttempts": [
+      {
+        "attempt": "v3.8.4-original",
+        "lock": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-execution-manifest.json",
+        "execution": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-model-execution.json",
+        "rawOutput": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/raw-outputs/debate-161.json",
+        "enrichedOutput": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-161.json",
+        "rawSha256": "9fa0e861fc4b8a255b40be691e6ac8cee5404136510e26e35e6332e28da8c91a",
+        "enrichedSha256": "a262c0b1898f56be04c37463d767e0f6f88a44e6fb6d13ce4e111969aa5edbc9",
+        "status": "stream-recovery-limit-exceeded",
+        "commandExitCode": 0,
+        "validationExitCode": 0,
+        "streamRecoveries": 6,
+        "previousLimit": 2,
+        "downstreamReuseAuthorized": false
+      },
+      {
+        "attempt": "v3.8.4-correction-01",
+        "lock": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-correction-01/execution-manifest.json",
+        "execution": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-correction-01/model-execution.json",
+        "rawOutput": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-correction-01/raw-output.json",
+        "enrichedOutput": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-correction-01/enriched-output.json",
+        "rawSha256": "74df8ba4e965bc8c6277e84d55033bff84a81dffebb4fc13aa1024f1a2b723ab",
+        "enrichedSha256": "db7b99c92b5c07ad12c31f70e9cc1f8665d93efb98aa30f78b0dfa1403e7274b",
+        "status": "stream-recovery-limit-exceeded",
+        "commandExitCode": 0,
+        "validationExitCode": 0,
+        "streamRecoveries": 4,
+        "previousLimit": 2,
+        "downstreamReuseAuthorized": false
+      },
+      {
+        "attempt": "v3.8.4-correction-02",
+        "lock": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-correction-02/execution-manifest.json",
+        "execution": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-correction-02/model-execution.json",
+        "rawOutput": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-correction-02/raw-output.json",
+        "enrichedOutput": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-correction-02/enriched-output.json",
+        "rawSha256": "2e89732ad932191f53b081fa183bb056335e247b04a4c9f617a3a0e0c20df14b",
+        "enrichedSha256": "5253cdefea41d5eaaf3b392f90de47b7f672374fe5e8aa400a5be83ba345056e",
+        "status": "stream-recovery-limit-exceeded",
+        "commandExitCode": 0,
+        "validationExitCode": 0,
+        "streamRecoveries": 4,
+        "previousLimit": 2,
+        "downstreamReuseAuthorized": false
+      }
+    ],
+    "failedArtifactsPreserved": true,
+    "failedArtifactsVisibleToFreshModel": false,
+    "failedArtifactsReclassified": false,
+    "validDebatesRerun": false,
+    "semanticPacketChanged": false,
+    "schemaChanged": false,
+    "sourceChanged": false,
+    "transportRuleChangedProspectively": true
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "modelInputs": {
+    "workflow": "docs/assessment-workflow-v3.8.4.md",
+    "rubric": "docs/reassessment-rubric-v3.8.4.md",
+    "manual": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage-manual.md"
+  },
+  "proposalContext": {
+    "debateNumber": "161",
+    "packet": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/packets/debate-161.json",
+    "schema": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/schemas/debate-161.schema.json",
+    "transcript": ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt",
+    "events": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+    "captionManifest": ".assessment-cache/captions/9JVRy7bR7zI/manifest.json",
+    "rawOutput": "docs/calibration/v3.8.5/coverage-transport-amendment/raw-output.json",
+    "enrichedOutput": "docs/calibration/v3.8.5/coverage-transport-amendment/enriched-output.json"
+  },
+  "preservedValidOutputs": {
+    "55": {
+      "rawOutput": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/raw-outputs/debate-55.json",
+      "enrichedOutput": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-55.json",
+      "rawSha256": "473143108c34446620fcf84d27e0cfee9e66a4d15fb33d93ad934b04c54e7c67",
+      "enrichedSha256": "1c0585f79448fe26cf0f392142fdc105b1b1bd375f276e55b1f4c0e54fa4fa79",
+      "status": "completed-valid",
+      "streamRecoveries": 2
+    },
+    "103": {
+      "rawOutput": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/raw-outputs/debate-103.json",
+      "enrichedOutput": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-103.json",
+      "rawSha256": "a9f104c61c7edeaa66a2fbd0ad406fa74df5d58937ae1610e72b53cf0dbf2916",
+      "enrichedSha256": "a05ee6115eb9df87ed3cc37c15c2cc1f2e65ec47d2d48194bcfad4b98c852d14",
+      "status": "completed-valid",
+      "streamRecoveries": 2
+    }
+  },
+  "finalProposalInputMapAfterSuccessfulAmendment": {
+    "55": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-55.json",
+    "103": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-103.json",
+    "161": "docs/calibration/v3.8.5/coverage-transport-amendment/enriched-output.json"
+  },
+  "authorization": {
+    "freshCoverageProposalContexts": 1,
+    "coverageProposalModelExecution": true,
+    "coverageReviewPacketConstructionAfterPass": true,
+    "coverageReviewModelExecution": false,
+    "coverageAdjudicationModelExecution": false,
+    "audioVerification": false,
+    "burdenContactModelExecution": false,
+    "scoringModelExecution": false,
+    "numericalParticipantScoring": false,
+    "assessmentProse": false,
+    "productionMutation": false,
+    "all195Debates": false
+  },
+  "isolation": {
+    "temporaryCodexHome": true,
+    "freshSourceDirectory": true,
+    "fullTranscriptAndTimestampedEventsAvailable": true,
+    "priorDebate161ProposalsAvailable": false,
+    "Debates103And55OutputsAvailable": false,
+    "legacyAssessmentAvailable": false,
+    "seedProvisionalBurdenContactsAvailable": false,
+    "scoresAvailable": false
+  },
+  "executionPolicy": {
+    "attempts": 1,
+    "modelOutputRetriesMaximum": 0,
+    "perInvocationTimeoutMs": 3600000,
+    "recoverableStreamEventsNormalMaximum": 2,
+    "recoverableStreamEventsHardMaximum": 8,
+    "transportClassification": {
+      "clean": "0-2",
+      "recoveredDegraded": "3-8",
+      "invalid": ">8 or unrecovered"
+    },
+    "transportEventsExtractedFromStderrOnly": true,
+    "transportEventLinesRecorded": true,
+    "stdoutAndStderrHashesRecorded": true,
+    "boundedReadLinesMaximum": 400,
+    "provisionalJsonMessagesMaximum": 0,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "acceptanceRule": {
+    "normalCommandExitRequired": true,
+    "timeoutForbidden": true,
+    "terminationSignalForbidden": true,
+    "exactlyOneSchemaConformingFinalOutputRequired": true,
+    "deterministicCoverageValidationRequired": true,
+    "recoverableStreamEventsAtOrBelowHardMaximumRequired": true,
+    "independentCoverageReviewRequiredRegardlessOfTransportClassification": true
+  },
+  "stopRules": {
+    "anySourceHashMismatchBlocksModelExecution": true,
+    "anyPreexistingFutureOutputBlocksModelExecution": true,
+    "anyAcceptanceFailureBlocksReviewPacketConstruction": true,
+    "furtherAutomaticRetryAuthorized": false,
+    "transportCeilingMayNotChangeAfterOutput": true
+  },
+  "artifacts": {
+    "modelExecution": "docs/calibration/v3.8.5/coverage-transport-amendment/model-execution.json",
+    "rawOutput": "docs/calibration/v3.8.5/coverage-transport-amendment/raw-output.json",
+    "enrichedOutput": "docs/calibration/v3.8.5/coverage-transport-amendment/enriched-output.json",
+    "coverageReviewLock": null,
+    "scoringArtifacts": null,
+    "assessmentArtifacts": null
+  },
+  "dryContract": {
+    "command": "node scripts/test-v385-transport-amendment.mjs",
+    "stderrOnlyExtractionVerified": true,
+    "genericResumeIgnored": true,
+    "boundaryClassificationsVerified": [
+      0,
+      2,
+      3,
+      8,
+      9
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v3.8.5/coverage-transport-amendment/raw-output.json",
+    "docs/calibration/v3.8.5/coverage-transport-amendment/enriched-output.json",
+    "docs/calibration/v3.8.5/coverage-transport-amendment/model-execution.json"
+  ],
+  "sourceHashes": {
+    "docs/calibration/v3.8.5/coverage-transport-amendment/preregistration.md": "256b5a1608382b84e4553bde617d6176a19f835c83eeb7af49892b77df2f6c3a",
+    "docs/assessment-workflow-v3.8.4.md": "49dda91a87c0ebbab9666d6c732035bde17939d84f4b71b326f4f04b917ddd5a",
+    "docs/reassessment-rubric-v3.8.4.md": "fda29887abb26f1f5a6f7b772e26434db0c055ec3efe42be4eeea602f5a84909",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/gate-manifest.json": "23188acc97e560335235293626098e2560f5d832e2738c3b68edd5445930bafb",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage-manual.md": "6cb4f86e5d4308905da74ef6c424d48fac6f53668d2c4a8ded04967fb767ba76",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-execution-manifest.json": "630fe6b8c12833892ee17527d24bdd9afe6dc5f99fa8f42e7accba9986b3084d",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-model-execution.json": "1eaa6abad0326b998048e79ac82e08b3ed0cdf5898ae896e3b675966b70df4a6",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-correction-01/execution-manifest.json": "d329a4073bd6c3019f9ccdb4b7eb0a3174d55d155a8ffd59ccedba9bf65ab2b4",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-correction-01/model-execution.json": "8b86138e97484e9f20e330261710acfbafe5dfda402dccb9ffb4db317e0d1989",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-correction-02/execution-manifest.json": "0ee9cef4fbd00b70ca5a6d389b8fa471a2d4029dbc12195556941ded7a8e3f6f",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-correction-02/model-execution.json": "337e4668dcea540a6b67330a8bd2c25be299c08e4e33c25157ce9904a5babe60",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/packets/debate-161.json": "093a3928c7251c91fcd1b2b00a19cb42aa1996d57c28528952ae07cc1c14d099",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/schemas/debate-161.schema.json": "02149eef27211e7aeb6b4797eba43150794240e116ddd3e21f7444dced4afad8",
+    ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt": "9de6853aa2dd4eaf8e0d669f895b719b7fbc15ab55a7f8eab271c92974771b78",
+    ".assessment-cache/captions/9JVRy7bR7zI/events.json": "5dd29c053f0e5da4ed79b6f818fb844a6515552671dbc4014916d18ca1d2cbbc",
+    ".assessment-cache/captions/9JVRy7bR7zI/manifest.json": "436f3f2be4fd5e84338f6244eae1398dbcb11c56ac514920a80cad440790dc18",
+    "docs/calibration/v3.8.2/held-out-source-preparation-instrumentation-continuation/resolved/debate-161.json": "9f973db9f290c9f7dc2f37942247a115bb3f49b9dc4db6ba4b51c267b39a506a",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/raw-outputs/debate-55.json": "473143108c34446620fcf84d27e0cfee9e66a4d15fb33d93ad934b04c54e7c67",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-55.json": "1c0585f79448fe26cf0f392142fdc105b1b1bd375f276e55b1f4c0e54fa4fa79",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/raw-outputs/debate-103.json": "a9f104c61c7edeaa66a2fbd0ad406fa74df5d58937ae1610e72b53cf0dbf2916",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-103.json": "a05ee6115eb9df87ed3cc37c15c2cc1f2e65ec47d2d48194bcfad4b98c852d14",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/raw-outputs/debate-161.json": "9fa0e861fc4b8a255b40be691e6ac8cee5404136510e26e35e6332e28da8c91a",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-161.json": "a262c0b1898f56be04c37463d767e0f6f88a44e6fb6d13ce4e111969aa5edbc9",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-correction-01/raw-output.json": "74df8ba4e965bc8c6277e84d55033bff84a81dffebb4fc13aa1024f1a2b723ab",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-correction-01/enriched-output.json": "db7b99c92b5c07ad12c31f70e9cc1f8665d93efb98aa30f78b0dfa1403e7274b",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-correction-02/raw-output.json": "2e89732ad932191f53b081fa183bb056335e247b04a4c9f617a3a0e0c20df14b",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-correction-02/enriched-output.json": "5253cdefea41d5eaaf3b392f90de47b7f672374fe5e8aa400a5be83ba345056e",
+    "scripts/lib/v384-coverage-preparation.mjs": "5a37b262e3a1c819c01f6ce6e808bcf19e57a4bb5b2df04ee659c2b72ea122f2",
+    "scripts/lib/v385-transport.mjs": "f20d5cb026e0c2720d32276ddcbb612ec852e3732d7653e47a98ba5ffa880dfe",
+    "scripts/validate-v384-coverage-proposal.mjs": "8e426a614e27d15d4cf357af838b74d76657328d9430f77ebe61ef4de5d68c9d",
+    "scripts/test-v385-transport-amendment.mjs": "791643e85aaba4eb23fe0b7235f5b5eacc523e53d766d920b572f5fdf05dc306",
+    "scripts/preregister-v385-coverage-transport-amendment.mjs": "18f257f050dd856955e7a171a514b8355b5a535b4600ab6c9b7ffb7d4fb3a680",
+    "scripts/validate-v385-coverage-transport-amendment-lock.mjs": "67c70d0cc3625adaa07a2edac2d4a9ea173fa3c31d240e1509b8a6c44cbb1651",
+    "scripts/run-v385-coverage-transport-amendment.mjs": "ddd2ebc82b3c77a8d6f6d7f24ac08f8d60be30279c3fb38ab871ec5ad1e54138"
+  }
+}
