@@ -1,0 +1,243 @@
+{
+  "schemaVersion": "3.8.8-burden-contact-initial-execution-manifest",
+  "protocolId": "v3.8.8-burden-contact-consensus",
+  "stage": "two-independent-burden-contact-passes",
+  "status": "frozen-six-context-authorized",
+  "frozenAt": "2026-08-04T16:40:34Z",
+  "checkpointCommit": "08e5358be524bca36925d6a02ff916aaa4b81ee6",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "modelInputs": {
+    "workflow": "docs/assessment-workflow-v3.8.md",
+    "rubric": "docs/reassessment-rubric-v3.8.md",
+    "manual": "docs/calibration/v3.8.8/burden-contact-consensus/classification-manual.md",
+    "fullTranscriptRequired": true,
+    "timestampedEventsRequired": true
+  },
+  "population": {
+    "finalMoves": 81,
+    "inheritedTwoVoteTuples": 9,
+    "excludedPriorTuples": 3,
+    "newMoves": 72,
+    "newByDebate": {
+      "55": 25,
+      "103": 22,
+      "161": 25
+    },
+    "candidatesPerNewMove": 21
+  },
+  "contexts": [
+    {
+      "reviewerPass": "pass-a",
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "bundleCount": 25,
+      "packet": "docs/calibration/v3.8.8/burden-contact-consensus/packets/pass-a/debate-55.json",
+      "schema": "docs/calibration/v3.8.8/burden-contact-consensus/schemas/pass-a/debate-55.schema.json",
+      "transcript": ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt",
+      "events": ".assessment-cache/captions/zQBY5K-Ns2Y/events.json",
+      "output": "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-a/debate-55.json"
+    },
+    {
+      "reviewerPass": "pass-a",
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "bundleCount": 22,
+      "packet": "docs/calibration/v3.8.8/burden-contact-consensus/packets/pass-a/debate-103.json",
+      "schema": "docs/calibration/v3.8.8/burden-contact-consensus/schemas/pass-a/debate-103.schema.json",
+      "transcript": ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt",
+      "events": ".assessment-cache/captions/g1TlLCSn_5o/events.json",
+      "output": "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-a/debate-103.json"
+    },
+    {
+      "reviewerPass": "pass-a",
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "bundleCount": 25,
+      "packet": "docs/calibration/v3.8.8/burden-contact-consensus/packets/pass-a/debate-161.json",
+      "schema": "docs/calibration/v3.8.8/burden-contact-consensus/schemas/pass-a/debate-161.schema.json",
+      "transcript": ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt",
+      "events": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+      "output": "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-a/debate-161.json"
+    },
+    {
+      "reviewerPass": "pass-b",
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "bundleCount": 25,
+      "packet": "docs/calibration/v3.8.8/burden-contact-consensus/packets/pass-b/debate-55.json",
+      "schema": "docs/calibration/v3.8.8/burden-contact-consensus/schemas/pass-b/debate-55.schema.json",
+      "transcript": ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt",
+      "events": ".assessment-cache/captions/zQBY5K-Ns2Y/events.json",
+      "output": "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-b/debate-55.json"
+    },
+    {
+      "reviewerPass": "pass-b",
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "bundleCount": 22,
+      "packet": "docs/calibration/v3.8.8/burden-contact-consensus/packets/pass-b/debate-103.json",
+      "schema": "docs/calibration/v3.8.8/burden-contact-consensus/schemas/pass-b/debate-103.schema.json",
+      "transcript": ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt",
+      "events": ".assessment-cache/captions/g1TlLCSn_5o/events.json",
+      "output": "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-b/debate-103.json"
+    },
+    {
+      "reviewerPass": "pass-b",
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "bundleCount": 25,
+      "packet": "docs/calibration/v3.8.8/burden-contact-consensus/packets/pass-b/debate-161.json",
+      "schema": "docs/calibration/v3.8.8/burden-contact-consensus/schemas/pass-b/debate-161.schema.json",
+      "transcript": ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt",
+      "events": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+      "output": "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-b/debate-161.json"
+    }
+  ],
+  "authorization": {
+    "initialBurdenContactContexts": 6,
+    "initialBurdenContactModelExecution": true,
+    "deterministicDisagreementExtractionAfterPass": true,
+    "burdenContactAdjudicationModelExecution": false,
+    "responseQualityModelExecution": false,
+    "scoringModelExecution": false,
+    "numericalParticipantScoring": false,
+    "assessmentProse": false,
+    "productionMutation": false,
+    "tenDebateGate": false,
+    "all195Debates": false
+  },
+  "isolation": {
+    "freshTemporaryCodexHomePerContext": true,
+    "freshSourceDirectoryPerContext": true,
+    "otherPassUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "inheritedTuplesUnavailable": true,
+    "sealedOptionMapUnavailable": true,
+    "priorRationalesUnavailable": true,
+    "legacyAssessmentUnavailable": true,
+    "sectionWeightsUnavailable": true,
+    "scoresUnavailable": true,
+    "winnerUnavailable": true
+  },
+  "classificationPolicy": {
+    "completeCompositeTupleOnly": true,
+    "noContactPlusSupportAndAttackForTenBridges": true,
+    "anonymousOptionsCounterbalancedBetweenPasses": true,
+    "evidenceMustBeUniqueAtomicSubstring": true,
+    "deterministicCompleteTupleComparison": true,
+    "disputeOnlyThirdPassRequiresSeparateLock": true,
+    "finalTupleRequiresMatchingVotes": 2
+  },
+  "audioPolicy": {
+    "mediumOrLowConfidenceRequiresCompletedAudioVerification": true,
+    "finalMoveAttributionsHigh": 81,
+    "requiredAudioVerifications": 0,
+    "pendingAudioVerifications": 0
+  },
+  "executionPolicy": {
+    "contexts": 6,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "perInvocationTimeoutMs": 3600000,
+    "recoverableStreamEventsNormalMaximum": 2,
+    "recoverableStreamEventsHardMaximum": 8,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "acceptanceRule": {
+    "validContextsRequired": 6,
+    "validNewMoveOutputsRequiredAcrossPasses": 144,
+    "closedSchemaAndDeterministicValidationRequired": true,
+    "invalidBundlesMaximum": 0,
+    "modelScoreFieldsMaximum": 0,
+    "disagreementCountDoesNotFailInitialPhase": true
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocksExecution": true,
+    "preexistingOutputBlocksExecution": true,
+    "invalidContextBlocksDisagreementExtraction": true,
+    "pendingAudioBlocksExecution": true,
+    "furtherAutomaticRetryAuthorized": false,
+    "adjudicationRequiresSeparatePhaseLock": true,
+    "scoringRemainsBlocked": true
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v3.8.8/burden-contact-consensus/initial-model-execution.json",
+    "outputs": [
+      "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-a/debate-55.json",
+      "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-a/debate-103.json",
+      "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-a/debate-161.json",
+      "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-b/debate-55.json",
+      "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-b/debate-103.json",
+      "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-b/debate-161.json"
+    ],
+    "inheritedLedger": "docs/calibration/v3.8.8/burden-contact-consensus/inherited-consensus-ledger.json",
+    "sealedOptionMap": "docs/calibration/v3.8.8/burden-contact-consensus/sealed-option-map.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-a/debate-55.json",
+    "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-a/debate-103.json",
+    "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-a/debate-161.json",
+    "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-b/debate-55.json",
+    "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-b/debate-103.json",
+    "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-b/debate-161.json",
+    "docs/calibration/v3.8.8/burden-contact-consensus/initial-model-execution.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.8.md": "eb506e3d7bda146173ace0ad9936f816438ea88d65fd0a8a592fd98d7cdec62b",
+    "docs/reassessment-rubric-v3.8.md": "a8754450c35431e857ae794e1a6aefd7dcfdb698457032e22c96471525fd5312",
+    "docs/calibration/v3.8.8/burden-contact-consensus/classification-manual.md": "2b326fb52e0ba586726dcccb275e1943558030d502c519b2abeb47c60f738b6f",
+    "docs/calibration/v3.8.8/burden-contact-consensus/preregistration.md": "81e12858e40b4d688ae2503b9618f3e9979a7c40b00ad1d7154ef0adc68afe5e",
+    "docs/calibration/v3.8.8/coverage-consensus/final-coverage-inventory.json": "3400e9e6591ffb371704f9a7f69fa905cedd3e47e3427a2d6f219514e5c2fabd",
+    "docs/calibration/v3.8.8/section-weight-consensus/section-weight-consensus-analysis.json": "eedfe2c5b1c1f49b1673b54b9efe549378901cdb6cb820c41f70541d985c6398",
+    "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/gate-analysis.json": "8c1acef88b669771aa8cc8e1dda098b6c1603941d82147c50907551669366d4a",
+    "docs/calibration/v3.8.2/held-out-source-preparation-instrumentation-continuation/final-source-inventory.json": "6196d8c6ca80886274676c184ddf97b66c4654dc27b41f722d553b1fc2558907",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-audit.json": "99809f45e46fbb857d0e7dd947e82f555fa35da5f3b8bed7dacdfc8a0d97443d",
+    "docs/calibration/v3.8.8/burden-contact-consensus/packet-construction-audit.json": "78668d4c765af67e425a530f47c8f367470fb24503be0f9d6e34e789f25d87d0",
+    "docs/calibration/v3.8.8/burden-contact-consensus/dry-fixture.json": "37c944bf0d9774f39c4ec5c1e51b4a9ce105a5081182b074338d3de0a66c688a",
+    "docs/calibration/v3.8.8/burden-contact-consensus/inherited-consensus-ledger.json": "3e5e3ec7f1fff24974579f8e9894f920ad246890ebd7af12b9825e9d39ba004f",
+    "docs/calibration/v3.8.8/burden-contact-consensus/sealed-option-map.json": "c2abedcecd7e7135a6f92055a9e9cc517eb55bf57c5a28270c10e9ae23c41b4c",
+    "docs/calibration/v3.8.8/burden-contact-consensus/packet-development-assessment.md": "c9be947c0484c764e607239da6051a565d3231a081b120bc4e2c91ba5be94b53",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v37-retired-semantic.mjs": "2fe113760e4b2bb97104025d39755d8ceeeecded89fbaea683cc5c9cce188296",
+    "scripts/lib/v385-transport.mjs": "f20d5cb026e0c2720d32276ddcbb612ec852e3732d7653e47a98ba5ffa880dfe",
+    "scripts/lib/v388-burden-contact.mjs": "0ffa765fda32a7c79295605fe522deab51bba4938ffed3c579a0a07434f2a61b",
+    "scripts/build-v388-burden-contact-packets.mjs": "fc1de960c9a4d4a17c5f58a100ffdead366db145e97d77e4bb418730943145da",
+    "scripts/validate-v388-burden-contact-output.mjs": "b7dee8c1dba7fc45d7e1375b7f47e793a85981d2f43c10bb1f35f6064f1c926d",
+    "scripts/test-v388-burden-contact-tooling.mjs": "35e1645dfc0210b7d1128e3c8a4d4dd7d53d532c43442ffdfb72d572287be9bc",
+    "scripts/preregister-v388-burden-contact-execution.mjs": "4d41f5d757dd2dda181611bce0bc00b8247a447e486002b3804568a2d9279ca2",
+    "scripts/validate-v388-burden-contact-execution-lock.mjs": "9691c8bc3465394a1b48e001e93a757ba50c8625734caf86ed18b117abc34f61",
+    "scripts/run-v388-burden-contact-initial.mjs": "e04e57e3129866f1a4cbb39e2bbdaabc597f36ce0d99c8b22a388d95d60756cf",
+    "docs/calibration/v3.8.8/burden-contact-consensus/packets/pass-a/debate-55.json": "a67c673fc6e2c10c3e27975e80b0e0c1b2efa3f0bccf4ac3c27846aa4af62242",
+    "docs/calibration/v3.8.8/burden-contact-consensus/schemas/pass-a/debate-55.schema.json": "a5d77fd6a96d6bc8007d0a24df8764beb432f03a1bc2868efab369c0da797079",
+    "docs/calibration/v3.8.8/burden-contact-consensus/packets/pass-a/debate-103.json": "346c624507402470bd00c20264f3410fd8da6990eecb1425d7f8db78384c4c45",
+    "docs/calibration/v3.8.8/burden-contact-consensus/schemas/pass-a/debate-103.schema.json": "9f9b9abec73a6c7e956e12240af88d4518df8f3a8382e54765f9377aea58033f",
+    "docs/calibration/v3.8.8/burden-contact-consensus/packets/pass-a/debate-161.json": "fad801de734d496f9a74837af9e7c6fec183d6a05365ddc80dbe30aa103f4043",
+    "docs/calibration/v3.8.8/burden-contact-consensus/schemas/pass-a/debate-161.schema.json": "c5e83fecc5014ed99a10da8aeb9188b39fa2dea92b7c898c5bcfe378f3ae97aa",
+    "docs/calibration/v3.8.8/burden-contact-consensus/packets/pass-b/debate-55.json": "d40624c6edcf548196d55bd2f9a4151a49d40a19906d02fe3943ae039baa420c",
+    "docs/calibration/v3.8.8/burden-contact-consensus/schemas/pass-b/debate-55.schema.json": "50080b04f7494c1620fc526b08e7012c6b251bd48bf45967f9a3e79e8865b416",
+    "docs/calibration/v3.8.8/burden-contact-consensus/packets/pass-b/debate-103.json": "48caa408db645c85f611cbcb48edbe7d74f970870f14ee37ba3787f23414f2be",
+    "docs/calibration/v3.8.8/burden-contact-consensus/schemas/pass-b/debate-103.schema.json": "7c8716d57ea284bd250948576a8d2ffc3101e5736b7a8fe1413815edfa40e455",
+    "docs/calibration/v3.8.8/burden-contact-consensus/packets/pass-b/debate-161.json": "6827a806674a7feec31ffcb05bb077d9c0d93f82e4c04a1f6e2ae6143cc8a90f",
+    "docs/calibration/v3.8.8/burden-contact-consensus/schemas/pass-b/debate-161.schema.json": "7a171ea7d3a740b53be629f1d00e04b145447b5f19d2be26878c66ff4a203531",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt": "305d9eacbd581a9aac9f5f246f63097deef6e6020af7a8031e14ca9cfbba66c2",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/events.json": "d09e63acc41236158b808b6242c871428a467697fba1f2454cfac143c185aa3f",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/manifest.json": "73f97e374fa98f388528e03ed39e1272f77c9fec6cee46345fdfba9c3177c099",
+    ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt": "f852392592bdbaf149c1816fe93fb76e84b65577b4c6d85c52a50bb2db95be29",
+    ".assessment-cache/captions/g1TlLCSn_5o/events.json": "b9846f8275ade82451cfd86a4b4b5eefa89a9bbf1515067e2e18965bcadf03dc",
+    ".assessment-cache/captions/g1TlLCSn_5o/manifest.json": "0e24d0057065d03651c845abfd66fa90a04ed2dfbd582afe098e60d830fbde2a",
+    ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt": "9de6853aa2dd4eaf8e0d669f895b719b7fbc15ab55a7f8eab271c92974771b78",
+    ".assessment-cache/captions/9JVRy7bR7zI/events.json": "5dd29c053f0e5da4ed79b6f818fb844a6515552671dbc4014916d18ca1d2cbbc",
+    ".assessment-cache/captions/9JVRy7bR7zI/manifest.json": "436f3f2be4fd5e84338f6244eae1398dbcb11c56ac514920a80cad440790dc18"
+  }
+}
