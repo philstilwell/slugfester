@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "v3.8.8 reconstruction critique correction Debate 55",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "calibrationOnly",
+    "corrections"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.8-reconstruction-prose-correction"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "v3.8.8-recovered-diagnostic-reconstruction"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "55"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "craig-malpass-kalam-nothing-2026"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "calibrationOnly": {
+      "type": "boolean",
+      "const": true
+    },
+    "corrections": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "critique"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string"
+          },
+          "critique": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

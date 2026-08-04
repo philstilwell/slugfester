@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "3.8.8-reconstruction-prose-correction-execution-manifest",
+  "protocolId": "v3.8.8-recovered-diagnostic-reconstruction",
+  "status": "frozen-critique-only-correction-authorized",
+  "createdAt": "2026-08-04T20:37:02.321Z",
+  "debateNumber": "55",
+  "debateId": "craig-malpass-kalam-nothing-2026",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "correctionBoundary": {
+    "modelMutableFields": [
+      "craig-malpass-kalam-nothing-2026-coverage-16-v384.critique"
+    ],
+    "deterministicNormalizationFields": [
+      "aiExtension.disclaimer"
+    ],
+    "otherFieldsMutable": false
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "perInvocationTimeoutMs": 600000,
+    "retriesAuthorized": 0,
+    "apiKeysRemoved": true,
+    "meteredApiCostUsd": 0
+  },
+  "sourceHashes": {
+    "docs/calibration/v3.8.8/reconstruction/prose-correction/manual.md": "250e85b38b0a0920dd301a490c6d04b4cd37fa147f87197d6c292accbb89aa07",
+    "docs/calibration/v3.8.8/reconstruction/outputs/debate-55.json": "10633b3d3bea0aa552332bae8c194f8d7a82b9729db43f74d1035a0425858d86",
+    "docs/calibration/v3.8.8/reconstruction/packets/debate-55.json": "34f12d2e14495a18795f167f21a0f3de450333d839e1fab76b03c3a5ea01cb85",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/packets/debate-55.json": "e16f38adac68c99504ee76cfe0755641befa3cd81296603f9762aa093a605b3b",
+    "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/model-execution.json": "391aca7ddcd9ef2842520c9afa446d10d30fcf9597c9dcf268b662e998a009be",
+    "docs/calibration/v3.8.8/reconstruction/prose-correction/debate-55/packet.json": "cf53f70e888c9285772d89f9eab8d6f9dae00881c74b1fcf43bd3e2b1c1bf3d9",
+    "docs/calibration/v3.8.8/reconstruction/prose-correction/debate-55/schema.json": "71965528555843b0cdcdeb9184e3cf24fb974f930f17936155b7305b66de8b25",
+    "docs/calibration/v3.8.8/reconstruction/prose-correction/debate-55/defect-audit.json": "2e1e96e4dd094710efc1fca9b22bb0c4c4827cee6af3212268413a440f3641cc",
+    "docs/reassessment-rubric-v3.8.4.md": "fda29887abb26f1f5a6f7b772e26434db0c055ec3efe42be4eeea602f5a84909",
+    "scripts/validate-v388-reconstruction-output.mjs": "060e75adf68b1256fd4920aee06ee97600378057170d28febbb81ca9ec97e741"
+  },
+  "packet": "docs/calibration/v3.8.8/reconstruction/prose-correction/debate-55/packet.json",
+  "schema": "docs/calibration/v3.8.8/reconstruction/prose-correction/debate-55/schema.json",
+  "output": "docs/calibration/v3.8.8/reconstruction/prose-correction/debate-55/model-output.json",
+  "artifacts": {
+    "execution": "docs/calibration/v3.8.8/reconstruction/prose-correction/debate-55/model-execution.json",
+    "mergedOutput": "docs/calibration/v3.8.8/reconstruction/validated-outputs/debate-55.json",
+    "mergeAudit": "docs/calibration/v3.8.8/reconstruction/prose-correction/debate-55/merge-audit.json"
+  },
+  "authorization": {
+    "correctionModelExecution": true,
+    "deterministicMerge": false,
+    "continuationContexts": false,
+    "productionMutation": false,
+    "tenDebateGate": false,
+    "all195Debates": false
+  }
+}
