@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "3.8.7-coverage-batch-span-correction-model-execution",
+  "protocolId": "v3.8.7-coverage-batch-span-correction",
+  "stage": "debate-161-exhaustive-batch-coordinate-correction",
+  "startedAt": "2026-08-04T14:42:34.726Z",
+  "completedAt": "2026-08-04T14:47:54.359Z",
+  "contextsPlanned": 1,
+  "validOutputContexts": 1,
+  "totalAttempts": 1,
+  "totalRetries": 0,
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsd": 0,
+  "result": {
+    "debateNumber": "161",
+    "targetRefs": [
+      "addition-01",
+      "addition-02",
+      "addition-03",
+      "addition-07"
+    ],
+    "model": "5.6 Sol",
+    "modelSlug": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "attemptCount": 1,
+    "retryCount": 0,
+    "startedAt": "2026-08-04T14:42:34.726Z",
+    "completedAt": "2026-08-04T14:47:54.276Z",
+    "elapsedMs": 319549,
+    "timeoutMs": 1200000,
+    "timedOut": false,
+    "terminationSignal": null,
+    "commandExitCode": 0,
+    "subscriptionAuthenticated": true,
+    "apiKeysRemoved": true,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "recoverableStreamEvents": 0,
+    "transportClassification": "clean",
+    "transportEventLines": [],
+    "stdoutSha256": "1266b7aecfccd165830ae420f97a12fc77f73ace2c05e87557dfb10877d41e3f",
+    "stderrSha256": "7d963e823ffd1f3ad36c19411bedfe1faacd47be59646b372a9e9bd8b58ff681",
+    "spawnError": null,
+    "status": "completed-valid-clean",
+    "gateAcceptancePassed": true,
+    "correctionOutputWritten": true,
+    "correctionOutputSha256": "ae07dc4d5703f9c52039e248ec9bde8b9ea5749904ec3a2291af402179ab252f",
+    "correctionSummary": [
+      {
+        "targetLocalRef": "addition-01",
+        "startEvent": 287,
+        "endEvent": 323,
+        "wordCount": 213,
+        "durationMs": 113370
+      },
+      {
+        "targetLocalRef": "addition-02",
+        "startEvent": 377,
+        "endEvent": 406,
+        "wordCount": 195,
+        "durationMs": 99940
+      },
+      {
+        "targetLocalRef": "addition-03",
+        "startEvent": 438,
+        "endEvent": 472,
+        "wordCount": 216,
+        "durationMs": 98579
+      },
+      {
+        "targetLocalRef": "addition-07",
+        "startEvent": 907,
+        "endEvent": 940,
+        "wordCount": 216,
+        "durationMs": 86100
+      }
+    ],
+    "noncoordinateMutationCount": 0,
+    "correctedRawOutputWritten": true,
+    "correctedRawOutputSha256": "bf9d2d133b76cd4561b303e94979ebb2a33f1af306cdc30f0276d40405845cd5",
+    "enrichedOutputWritten": true,
+    "enrichedOutputSha256": "a961ac058e3a03b0b486528060174ff146927516dd07b47fa1dd3007b5be0917",
+    "completeCoverageValidationPassed": true,
+    "validationExitCode": 0,
+    "validationMessage": null
+  }
+}
