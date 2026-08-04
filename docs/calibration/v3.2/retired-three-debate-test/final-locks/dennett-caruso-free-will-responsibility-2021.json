@@ -1,0 +1,618 @@
+{
+  "schemaVersion": "3.2-final-hybrid-lock",
+  "workflowVersion": "Slugfester Hybrid Risk Adjudication Workflow v3.2",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.2",
+  "models": {
+    "passA": "5.6 Terra",
+    "passB": "5.6 Sol",
+    "adjudicator": "5.6 Sol"
+  },
+  "debateId": "dennett-caruso-free-will-responsibility-2021",
+  "debateNumber": "185",
+  "builtAt": "2026-08-04T00:52:57.445Z",
+  "sources": {
+    "manifestSha256": "48b4066d4008b5921a0affe6b9ce18e67c210fa645bffeb98fc28981694b3135",
+    "inputSha256": "6d8bc54534869c9cdf4459b2f0c838bdc901d67750067edd8d47176148f89486",
+    "passASha256": "c8601d11911e733ec7d2be6802848520d0bb95c0e619e340bc634c56dd9fb789",
+    "passBSha256": "fc60d0675bea842bd383249276da90b0033acfd11d4aa3f5a0a57ca3b5783470",
+    "disputePacketSha256": "a614cb1b7a5d27c53914359db3cc7145b8b3ace01e08d3cbb3b0fa4f19f04bef",
+    "adjudicationSha256": "927d618b95d21f5227e587a53015cda1d042f42ae48cc03f290de227d2f44fe6"
+  },
+  "cases": [
+    {
+      "caseId": "v291-dev-185-05",
+      "moveId": "m05-pro-q1-responsive-free-will-worth-wanting",
+      "annotation": {
+        "caseId": "v291-dev-185-05",
+        "moveId": "m05-pro-q1-responsive-free-will-worth-wanting",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 302,
+          "endChar": 441,
+          "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+        },
+        "connectedExample": false,
+        "connectionEvidence": null,
+        "scopeRelation": "same",
+        "scopeEvidence": null,
+        "burdenAdjustment": "retained",
+        "burdenEvidence": null,
+        "componentContacts": [
+          {
+            "componentId": "t05-c1-beyond-control",
+            "contacted": false,
+            "evidence": null
+          },
+          {
+            "componentId": "t05-c2-no-basic-desert",
+            "contacted": true,
+            "evidence": {
+              "startChar": 302,
+              "endChar": 441,
+              "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "irrelevance",
+        "defectCue": {
+          "startChar": 302,
+          "endChar": 441,
+          "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+        },
+        "consequenceStated": true,
+        "consequenceCue": {
+          "startChar": 302,
+          "endChar": 345,
+          "text": "libertarian free will doesn't matter at all"
+        },
+        "malformedDemandExplained": true,
+        "malformedDemandCue": {
+          "startChar": 302,
+          "endChar": 441,
+          "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+        },
+        "replacementDemandStated": true,
+        "replacementDemandCue": {
+          "startChar": 73,
+          "endChar": 283,
+          "text": "we want to know about responsibility and whether whether we deserve blame and praise and so forth and as long as you stick to that as long as you stick to the fact that that's the kind of free will that matters"
+        },
+        "burdenContact": {
+          "tier": "motion",
+          "bridgeId": "con-motion-no-basic-desert",
+          "evidence": {
+            "startChar": 302,
+            "endChar": 441,
+            "text": "libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you"
+          }
+        },
+        "rationale": "The v3.2 final annotation combines unflagged cross-model agreement with validated risk adjudication and deterministic evidence canonicalization."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "same",
+        "burdenAdjustment": "retained",
+        "coverage": "partial",
+        "diagnostic": true,
+        "reframe": true,
+        "burdenRelevance": "completes"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "same",
+          "burdenAdjustment": "retained",
+          "coverage": "partial",
+          "diagnostic": true,
+          "reframe": true,
+          "burdenRelevance": "completes"
+        },
+        "responsiveness": [
+          80,
+          100
+        ],
+        "relevanceBurden": [
+          90,
+          100
+        ]
+      },
+      "provenance": [
+        {
+          "fieldPath": "targetContact",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "connectedExample",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "scope",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "burdenAdjustment",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "componentContact.t05-c1-beyond-control",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "componentContact.t05-c2-no-basic-desert",
+          "source": "high-risk-agreement:retain"
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "source": "high-risk-agreement:retain"
+        },
+        {
+          "fieldPath": "defect",
+          "source": "semantic-conflict:B"
+        },
+        {
+          "fieldPath": "consequence",
+          "source": "semantic-conflict:B"
+        },
+        {
+          "fieldPath": "malformedDemand",
+          "source": "semantic-conflict:B"
+        },
+        {
+          "fieldPath": "replacementDemand",
+          "source": "semantic-conflict:B"
+        },
+        {
+          "fieldPath": "burdenContact",
+          "source": "semantic-conflict:B"
+        }
+      ]
+    },
+    {
+      "caseId": "v291-dev-185-07",
+      "moveId": "m07-pro-q2-responsive-causation-control-diagnosis",
+      "annotation": {
+        "caseId": "v291-dev-185-07",
+        "moveId": "m07-pro-q2-responsive-causation-control-diagnosis",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 5,
+          "endChar": 94,
+          "text": "the big mistake that i think you're making greg is you're confusing causation and control"
+        },
+        "connectedExample": false,
+        "connectionEvidence": null,
+        "scopeRelation": "same",
+        "scopeEvidence": null,
+        "burdenAdjustment": "retained",
+        "burdenEvidence": null,
+        "componentContacts": [
+          {
+            "componentId": "t07-c1-sourcehood-required",
+            "contacted": false,
+            "evidence": null
+          },
+          {
+            "componentId": "t07-c2-determination-defeats-sourcehood",
+            "contacted": true,
+            "evidence": {
+              "startChar": 5,
+              "endChar": 94,
+              "text": "the big mistake that i think you're making greg is you're confusing causation and control"
+            }
+          }
+        ],
+        "relevantContraryMaterial": false,
+        "contraryEvidence": null,
+        "defectType": "invalid-inference",
+        "defectCue": {
+          "startChar": 56,
+          "endChar": 94,
+          "text": "you're confusing causation and control"
+        },
+        "consequenceStated": false,
+        "consequenceCue": null,
+        "malformedDemandExplained": true,
+        "malformedDemandCue": {
+          "startChar": 5,
+          "endChar": 94,
+          "text": "the big mistake that i think you're making greg is you're confusing causation and control"
+        },
+        "replacementDemandStated": false,
+        "replacementDemandCue": null,
+        "burdenContact": {
+          "tier": "central",
+          "bridgeId": "con-central-sourcehood",
+          "evidence": {
+            "startChar": 56,
+            "endChar": 94,
+            "text": "you're confusing causation and control"
+          }
+        },
+        "rationale": "The v3.2 final annotation combines unflagged cross-model agreement with validated risk adjudication and deterministic evidence canonicalization."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "same",
+        "burdenAdjustment": "retained",
+        "coverage": "partial",
+        "diagnostic": false,
+        "reframe": false,
+        "burdenRelevance": "advances-central"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "same",
+          "burdenAdjustment": "retained",
+          "coverage": "partial",
+          "diagnostic": false,
+          "reframe": false,
+          "burdenRelevance": "advances-central"
+        },
+        "responsiveness": [
+          55,
+          79
+        ],
+        "relevanceBurden": [
+          75,
+          89
+        ]
+      },
+      "provenance": [
+        {
+          "fieldPath": "targetContact",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "connectedExample",
+          "source": "semantic-conflict:A"
+        },
+        {
+          "fieldPath": "scope",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "burdenAdjustment",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "componentContact.t07-c1-sourcehood-required",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "componentContact.t07-c2-determination-defeats-sourcehood",
+          "source": "high-risk-agreement:retain"
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "source": "high-risk-agreement:retain"
+        },
+        {
+          "fieldPath": "defect",
+          "source": "high-risk-agreement:retain"
+        },
+        {
+          "fieldPath": "consequence",
+          "source": "high-risk-agreement:retain"
+        },
+        {
+          "fieldPath": "malformedDemand",
+          "source": "semantic-conflict:B"
+        },
+        {
+          "fieldPath": "replacementDemand",
+          "source": "semantic-conflict:A"
+        },
+        {
+          "fieldPath": "burdenContact",
+          "source": "unflagged-agreement"
+        }
+      ]
+    },
+    {
+      "caseId": "v291-dev-185-12",
+      "moveId": "m12-con-q4-responsive-rules-versus-reactive-attitudes",
+      "annotation": {
+        "caseId": "v291-dev-185-12",
+        "moveId": "m12-con-q4-responsive-rules-versus-reactive-attitudes",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 46,
+          "endChar": 231,
+          "text": "the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified"
+        },
+        "connectedExample": true,
+        "connectionEvidence": {
+          "startChar": 302,
+          "endChar": 400,
+          "text": "do i want to attach to my parenting when i when i punish my daughter by taking her cell phone away"
+        },
+        "scopeRelation": "same",
+        "scopeEvidence": null,
+        "burdenAdjustment": "replaced",
+        "burdenEvidence": {
+          "startChar": 46,
+          "endChar": 231,
+          "text": "the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified"
+        },
+        "componentContacts": [
+          {
+            "componentId": "t12-c1-agreed-penalties",
+            "contacted": false,
+            "evidence": null
+          },
+          {
+            "componentId": "t12-c2-social-cornerstone",
+            "contacted": false,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": true,
+        "contraryEvidence": {
+          "startChar": 169,
+          "endChar": 295,
+          "text": "whether certain types of reactive attitudes would be justified because those are the ones that are philosophically significant"
+        },
+        "defectType": "none",
+        "defectCue": null,
+        "consequenceStated": false,
+        "consequenceCue": null,
+        "malformedDemandExplained": false,
+        "malformedDemandCue": null,
+        "replacementDemandStated": true,
+        "replacementDemandCue": {
+          "startChar": 150,
+          "endChar": 231,
+          "text": "the question about whether certain types of reactive attitudes would be justified"
+        },
+        "burdenContact": {
+          "tier": "motion",
+          "bridgeId": "pro-motion-responsibility",
+          "evidence": {
+            "startChar": 169,
+            "endChar": 231,
+            "text": "whether certain types of reactive attitudes would be justified"
+          }
+        },
+        "rationale": "The v3.2 final annotation combines unflagged cross-model agreement with validated risk adjudication and deterministic evidence canonicalization."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "same",
+        "burdenAdjustment": "replaced",
+        "coverage": "relevant-nonanswer",
+        "diagnostic": false,
+        "reframe": false,
+        "burdenRelevance": "completes"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "same",
+          "burdenAdjustment": "replaced",
+          "coverage": "relevant-nonanswer",
+          "diagnostic": false,
+          "reframe": false,
+          "burdenRelevance": "completes"
+        },
+        "responsiveness": [
+          40,
+          69
+        ],
+        "relevanceBurden": [
+          90,
+          100
+        ]
+      },
+      "provenance": [
+        {
+          "fieldPath": "targetContact",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "connectedExample",
+          "source": "high-risk-agreement:retain"
+        },
+        {
+          "fieldPath": "scope",
+          "source": "high-risk-agreement:retain"
+        },
+        {
+          "fieldPath": "burdenAdjustment",
+          "source": "high-risk-agreement:retain"
+        },
+        {
+          "fieldPath": "componentContact.t12-c1-agreed-penalties",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "componentContact.t12-c2-social-cornerstone",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "source": "high-risk-agreement:retain"
+        },
+        {
+          "fieldPath": "defect",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "consequence",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "malformedDemand",
+          "source": "semantic-conflict:B"
+        },
+        {
+          "fieldPath": "replacementDemand",
+          "source": "high-risk-agreement:retain"
+        },
+        {
+          "fieldPath": "burdenContact",
+          "source": "unflagged-agreement"
+        }
+      ]
+    },
+    {
+      "caseId": "v291-dev-185-08",
+      "moveId": "m08-con-q2-responsive-control-insufficient",
+      "annotation": {
+        "caseId": "v291-dev-185-08",
+        "moveId": "m08-con-q2-responsive-control-insufficient",
+        "originalTargetContact": true,
+        "targetEvidence": {
+          "startChar": 131,
+          "endChar": 253,
+          "text": "whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+        },
+        "connectedExample": false,
+        "connectionEvidence": null,
+        "scopeRelation": "same",
+        "scopeEvidence": null,
+        "burdenAdjustment": "replaced",
+        "burdenEvidence": {
+          "startChar": 115,
+          "endChar": 253,
+          "text": "the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+        },
+        "componentContacts": [
+          {
+            "componentId": "t08-c1-degrees-control",
+            "contacted": false,
+            "evidence": null
+          },
+          {
+            "componentId": "t08-c2-well-functioning-reasons",
+            "contacted": false,
+            "evidence": null
+          }
+        ],
+        "relevantContraryMaterial": true,
+        "contraryEvidence": {
+          "startChar": 115,
+          "endChar": 253,
+          "text": "the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+        },
+        "defectType": "none",
+        "defectCue": null,
+        "consequenceStated": false,
+        "consequenceCue": null,
+        "malformedDemandExplained": false,
+        "malformedDemandCue": null,
+        "replacementDemandStated": true,
+        "replacementDemandCue": {
+          "startChar": 115,
+          "endChar": 253,
+          "text": "the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+        },
+        "burdenContact": {
+          "tier": "motion",
+          "bridgeId": "pro-motion-responsibility",
+          "evidence": {
+            "startChar": 131,
+            "endChar": 253,
+            "text": "whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating"
+          }
+        },
+        "rationale": "The v3.2 final annotation combines unflagged cross-model agreement with validated risk adjudication and deterministic evidence canonicalization."
+      },
+      "derived": {
+        "targetDisposition": "preserved",
+        "scopeRelation": "same",
+        "burdenAdjustment": "replaced",
+        "coverage": "relevant-nonanswer",
+        "diagnostic": false,
+        "reframe": false,
+        "burdenRelevance": "completes"
+      },
+      "scoringBands": {
+        "derived": {
+          "targetDisposition": "preserved",
+          "scopeRelation": "same",
+          "burdenAdjustment": "replaced",
+          "coverage": "relevant-nonanswer",
+          "diagnostic": false,
+          "reframe": false,
+          "burdenRelevance": "completes"
+        },
+        "responsiveness": [
+          40,
+          69
+        ],
+        "relevanceBurden": [
+          90,
+          100
+        ]
+      },
+      "provenance": [
+        {
+          "fieldPath": "targetContact",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "connectedExample",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "scope",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "burdenAdjustment",
+          "source": "high-risk-agreement:retain"
+        },
+        {
+          "fieldPath": "componentContact.t08-c1-degrees-control",
+          "source": "semantic-conflict:A"
+        },
+        {
+          "fieldPath": "componentContact.t08-c2-well-functioning-reasons",
+          "source": "semantic-conflict:A"
+        },
+        {
+          "fieldPath": "relevantContraryMaterial",
+          "source": "semantic-conflict:A"
+        },
+        {
+          "fieldPath": "defect",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "consequence",
+          "source": "unflagged-agreement"
+        },
+        {
+          "fieldPath": "malformedDemand",
+          "source": "semantic-conflict:B"
+        },
+        {
+          "fieldPath": "replacementDemand",
+          "source": "high-risk-agreement:retain"
+        },
+        {
+          "fieldPath": "burdenContact",
+          "source": "unflagged-agreement"
+        }
+      ]
+    }
+  ],
+  "audit": {
+    "caseCount": 4,
+    "compoundFieldCount": 48,
+    "adjudicatedFieldCount": 26,
+    "semanticConflictCount": 13,
+    "riskAgreementCount": 13,
+    "dependencyCompanionCount": 0,
+    "retainedAgreementCount": 13,
+    "overrideCount": 0,
+    "unflaggedAgreementCount": 22,
+    "unflaggedAlterations": 0,
+    "evidenceCanonicalizations": 5,
+    "unresolvedFields": 0,
+    "participantPerformanceScoresPresent": false
+  }
+}

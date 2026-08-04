@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "3.2-retired-hybrid-gate-manifest",
+  "gateId": "v3.2-retired-three-debate-hybrid-risk-test",
+  "status": "frozen-before-v3.2-passes",
+  "frozenAt": "2026-08-04T00:29:00.000Z",
+  "calibrationOnly": true,
+  "developmentInformedByPriorRetiredFailures": true,
+  "heldOutTranscriptsOpened": false,
+  "numericalScoringAuthorized": false,
+  "productionMutationAuthorized": false,
+  "workflowVersion": "Slugfester Hybrid Risk Adjudication Workflow v3.2",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.2",
+  "models": {
+    "passA": "5.6 Terra",
+    "passB": "5.6 Sol",
+    "adjudicator": "5.6 Sol",
+    "reasoningEffort": "Extra High"
+  },
+  "architecture": {
+    "completePassesPerDebate": 2,
+    "adjudicationsPerDebate": 1,
+    "semanticEvidenceSeparation": true,
+    "disputeScope": "semantic-conflicts-plus-deterministic-high-risk-agreements-and-dependency-companions",
+    "conflictCandidateSpace": "A-or-B-only",
+    "sharedAgreementDefault": "retain",
+    "unflaggedAgreementMutable": false,
+    "evidenceCanonicalization": "shortest-valid-matching-semantic-span",
+    "scoresBeforeFinalLockProhibited": true
+  },
+  "sample": {
+    "selectionFrozenBeforePasses": true,
+    "allDebatesRetired": true,
+    "debates": [
+      {
+        "debateNumber": "62",
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "lane": "dyadic",
+        "role": "straightforward-dyadic",
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/dyadic/inventories/pageau-folley-logos-meaning-resurrection-2026.json",
+        "path": "docs/calibration/v3.2/retired-three-debate-test/inputs/pageau-folley-logos-meaning-resurrection-2026.json",
+        "sha256": "5fb16c0f52dd15dd1d071a113a74f4f26291c3bf6038efd50cb98804ef711af9",
+        "caseCount": 3,
+        "gold": {
+          "path": "docs/calibration/v3.2/retired-three-debate-test/gold/pageau-folley-logos-meaning-resurrection-2026.json",
+          "sha256": "57de216e0de46b54d76d887d38dc10c28f4704401803e2a74a1e01dab4450078",
+          "annotationCount": 3
+        },
+        "sourceAudit": {
+          "path": "docs/calibration/v3.2/retired-three-debate-test/source-audit/pageau-folley-logos-meaning-resurrection-2026.json",
+          "sha256": "e75d809a153d1aaa79ed131fca7357f5996fffcc37ee9d3d474fc15d8820bb50",
+          "mediumOrLowMoveCount": 1,
+          "audioVerifiedMediumOrLowMoveCount": 1
+        }
+      },
+      {
+        "debateNumber": "185",
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "lane": "dyadic",
+        "role": "difficult-dyadic-reframe",
+        "inventoryPath": "docs/calibration/v2.5/held-out-gate/inventories/dennett-caruso-free-will-responsibility-2021.json",
+        "path": "docs/calibration/v3.2/retired-three-debate-test/inputs/dennett-caruso-free-will-responsibility-2021.json",
+        "sha256": "6d8bc54534869c9cdf4459b2f0c838bdc901d67750067edd8d47176148f89486",
+        "caseCount": 4,
+        "gold": {
+          "path": "docs/calibration/v3.2/retired-three-debate-test/gold/dennett-caruso-free-will-responsibility-2021.json",
+          "sha256": "b10dcc33649b800b895b93d1545865dec1c2d52fa21dea5c73ac21e9ebcc6f42",
+          "annotationCount": 4
+        },
+        "sourceAudit": {
+          "path": "docs/calibration/v3.2/retired-three-debate-test/source-audit/dennett-caruso-free-will-responsibility-2021.json",
+          "sha256": "afd05eb1d757261f4bbd612fea49f7e0b48b2d6faf3ccd89b969d2b090400644",
+          "mediumOrLowMoveCount": 0,
+          "audioVerifiedMediumOrLowMoveCount": 0
+        }
+      },
+      {
+        "debateNumber": "154",
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "lane": "multi-speaker",
+        "role": "multi-speaker",
+        "inventoryPath": "docs/calibration/v2.7/held-out-gates/multi-speaker/inventories/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "path": "docs/calibration/v3.2/retired-three-debate-test/inputs/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+        "sha256": "645b4b097e94e817dad25ce27866cda5d37f8f943342ec776924d18f6593f9b7",
+        "caseCount": 6,
+        "gold": {
+          "path": "docs/calibration/v3.2/retired-three-debate-test/gold/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+          "sha256": "7ebe6b1290a4c825bb38181a7fc15ffa688b7bfdab84a885c48aeeb79f4e04c9",
+          "annotationCount": 6
+        },
+        "sourceAudit": {
+          "path": "docs/calibration/v3.2/retired-three-debate-test/source-audit/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+          "sha256": "80ce8464b6b92a5a7025226758e16e6e641a1c99375c92277f094cc3cc0b84e1",
+          "mediumOrLowMoveCount": 0,
+          "audioVerifiedMediumOrLowMoveCount": 0
+        }
+      }
+    ],
+    "debateCount": 3,
+    "caseCount": 13
+  },
+  "goldProvenance": {
+    "priorV31ManifestPath": "docs/calibration/v3.1/retired-three-debate-test/gate-manifest.json",
+    "priorV31ManifestSha256": "0efb23429f5feca1f0e15d09ed52c46006486ed1b599766c722f5027adb629f4",
+    "constructedBeforeV32Passes": true
+  },
+  "thresholds": {
+    "finalOriginalTargetContactExact": 0.95,
+    "finalScopeExact": 0.9,
+    "finalBurdenAdjustmentExact": 0.95,
+    "finalComponentContactMicroExact": 0.9,
+    "finalCoverageExact": 0.85,
+    "finalDefectTypeExact": 0.85,
+    "finalConsequenceExact": 0.9,
+    "finalDiagnosticExact": 0.9,
+    "finalReframeExact": 0.9,
+    "finalBurdenRelevanceExact": 0.9,
+    "finalExactDerivedTupleExact": 0.8,
+    "finalDiagnosticPositiveRecall": 0.8,
+    "finalReframePositiveRecall": 1,
+    "unresolvedDisputesMaximum": 0,
+    "nondisputedAlterationsMaximum": 0,
+    "mediumLowAudioVerificationRate": 1
+  },
+  "passIsolation": {
+    "passAllowedInputs": [
+      "workflow.md",
+      "rubric.md",
+      "manual.md",
+      "schema.json",
+      "input.json"
+    ],
+    "adjudicationAllowedInputs": [
+      "workflow.md",
+      "rubric.md",
+      "manual.md",
+      "schema.json",
+      "dispute-packet.json"
+    ],
+    "prohibitedInputs": [
+      "gold keys",
+      "other complete pass",
+      "unflagged fields",
+      "legacy assessment",
+      "numerical scores",
+      "Overall Commentary",
+      "AI Extension",
+      "production debate objects"
+    ]
+  },
+  "outputs": {
+    "pageau-folley-logos-meaning-resurrection-2026": {
+      "passA": "docs/calibration/v3.2/retired-three-debate-test/pass-a/pageau-folley-logos-meaning-resurrection-2026.json",
+      "passB": "docs/calibration/v3.2/retired-three-debate-test/pass-b/pageau-folley-logos-meaning-resurrection-2026.json",
+      "disputePacket": "docs/calibration/v3.2/retired-three-debate-test/dispute-packets/pageau-folley-logos-meaning-resurrection-2026.json",
+      "adjudication": "docs/calibration/v3.2/retired-three-debate-test/adjudications/pageau-folley-logos-meaning-resurrection-2026.json",
+      "finalLock": "docs/calibration/v3.2/retired-three-debate-test/final-locks/pageau-folley-logos-meaning-resurrection-2026.json",
+      "scoringInput": "docs/calibration/v3.2/retired-three-debate-test/scoring-inputs/pageau-folley-logos-meaning-resurrection-2026.json"
+    },
+    "dennett-caruso-free-will-responsibility-2021": {
+      "passA": "docs/calibration/v3.2/retired-three-debate-test/pass-a/dennett-caruso-free-will-responsibility-2021.json",
+      "passB": "docs/calibration/v3.2/retired-three-debate-test/pass-b/dennett-caruso-free-will-responsibility-2021.json",
+      "disputePacket": "docs/calibration/v3.2/retired-three-debate-test/dispute-packets/dennett-caruso-free-will-responsibility-2021.json",
+      "adjudication": "docs/calibration/v3.2/retired-three-debate-test/adjudications/dennett-caruso-free-will-responsibility-2021.json",
+      "finalLock": "docs/calibration/v3.2/retired-three-debate-test/final-locks/dennett-caruso-free-will-responsibility-2021.json",
+      "scoringInput": "docs/calibration/v3.2/retired-three-debate-test/scoring-inputs/dennett-caruso-free-will-responsibility-2021.json"
+    },
+    "koukl-oconnor-kanojia-nonbelief-harm-2025": {
+      "passA": "docs/calibration/v3.2/retired-three-debate-test/pass-a/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+      "passB": "docs/calibration/v3.2/retired-three-debate-test/pass-b/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+      "disputePacket": "docs/calibration/v3.2/retired-three-debate-test/dispute-packets/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+      "adjudication": "docs/calibration/v3.2/retired-three-debate-test/adjudications/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+      "finalLock": "docs/calibration/v3.2/retired-three-debate-test/final-locks/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+      "scoringInput": "docs/calibration/v3.2/retired-three-debate-test/scoring-inputs/koukl-oconnor-kanojia-nonbelief-harm-2025.json"
+    }
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.2.md": "3fbf504fefec344294fe1ab542b5e8bc79ac1cbc68a61a7c1ce25dcdd18e89bb",
+    "docs/reassessment-rubric-v3.2.md": "fcb9154a8002f290f2a6cc759ea5aa84b47fc9a2b312ebf2ae72c1089ca98bd1",
+    "docs/calibration/v3.2/retired-three-debate-test/annotation-manual.md": "87dd597de919e99a3eefe0233af03e6286c2ca3130e7cad3df451895b9b8d4be",
+    "docs/calibration/v3.2/retired-three-debate-test/adjudication-manual.md": "770a2742774fa6a3af7398346bb70436c6893dfcede2955a9375adc76c48c5fc",
+    "docs/calibration/v3.2/retired-three-debate-test/hybrid-pass-schema.json": "e7a85d9f7ea5a30f141b5792f197ca21b06fe77413eb62bf0f7cc13b775b63b6",
+    "docs/calibration/v3.2/retired-three-debate-test/risk-adjudication-schema.json": "0a0e0cde5b78a413d2db5a71a5e38e8a6a801da56575ddcc8ab5149c54b94ccd",
+    "scripts/lib/v32-risk-adjudication.mjs": "2b403032ac11f9eb1912cae9698fbe7ffa58fd2fd8d5ed97efd9ed558a857856",
+    "scripts/build-v32-retired-hybrid-test.mjs": "e5cb96490bbfb0b43bf2a0417074e3dd86a0cd59ef4ca2cb6bc6b154d6dd34b7",
+    "scripts/validate-v32-hybrid-pass.mjs": "44470cd29e16d5b0b99c5b59e5f46e8ad1c7b781a549cfbecb9e7e164482527f",
+    "scripts/extract-v32-risk-disputes.mjs": "8748e31cc9abba119105a0dd12683d60798ce1710a0f6104ab43703defa93829",
+    "scripts/validate-v32-risk-adjudication.mjs": "19ff7fe0eff87614a4d590f2caac34eed3a133314f43a1b9e553d9fb12402c95",
+    "scripts/merge-v32-hybrid-locks.mjs": "661cc268a6d49ad3ae904acacdf39fe62bc71ab9ded51f37af31198ff0d5284d",
+    "scripts/analyze-v32-retired-hybrid-test.mjs": "93d38833d76403026d92b1ef7670aa2b67be9fab1e9d7a22c31432cea9cb9485",
+    "scripts/validate-v32-retired-hybrid-test.mjs": "1599be8b1d90b0b86d44d469b125b661aa84d7c0138fd8b1ed4355d97ee42e6a",
+    "scripts/run-v32-retired-hybrid-test.mjs": "c412540e91ddb062e3858e2be383b452407cefa0b012fd2afb7c2db119b768cf"
+  },
+  "schemaHashes": {
+    "pass": "e7a85d9f7ea5a30f141b5792f197ca21b06fe77413eb62bf0f7cc13b775b63b6",
+    "adjudication": "0a0e0cde5b78a413d2db5a71a5e38e8a6a801da56575ddcc8ab5149c54b94ccd"
+  }
+}

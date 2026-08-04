@@ -1,0 +1,233 @@
+{
+  "schemaVersion": "3.2-retired-hybrid-analysis",
+  "workflowVersion": "Slugfester Hybrid Risk Adjudication Workflow v3.2",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.2",
+  "analyzedAt": "2026-08-04T00:52:57.505Z",
+  "sources": {
+    "manifestPath": "docs/calibration/v3.2/retired-three-debate-test/gate-manifest.json",
+    "manifestSha256": "48b4066d4008b5921a0affe6b9ce18e67c210fa645bffeb98fc28981694b3135"
+  },
+  "sample": {
+    "debateCount": 3,
+    "caseCount": 13,
+    "semanticFieldCount": 161,
+    "diagnosticGoldPositiveCount": 3,
+    "reframeGoldPositiveCount": 2
+  },
+  "passAAccuracy": {
+    "originalTargetContactExact": 0.9230769230769231,
+    "connectedExampleExact": 0.8461538461538461,
+    "scopeExact": 0.9230769230769231,
+    "burdenAdjustmentExact": 1,
+    "componentContactMicroExact": 0.8064516129032258,
+    "coverageExact": 0.6923076923076923,
+    "defectTypeExact": 0.6153846153846154,
+    "consequenceExact": 0.7692307692307693,
+    "diagnosticExact": 0.7692307692307693,
+    "reframeExact": 1,
+    "burdenRelevanceExact": 0.8461538461538461,
+    "exactDerivedTupleExact": 0.5384615384615384
+  },
+  "passBAccuracy": {
+    "originalTargetContactExact": 1,
+    "connectedExampleExact": 0.6923076923076923,
+    "scopeExact": 0.7692307692307693,
+    "burdenAdjustmentExact": 1,
+    "componentContactMicroExact": 0.6451612903225806,
+    "coverageExact": 0.5384615384615384,
+    "defectTypeExact": 0.6923076923076923,
+    "consequenceExact": 0.8461538461538461,
+    "diagnosticExact": 0.8461538461538461,
+    "reframeExact": 0.6153846153846154,
+    "burdenRelevanceExact": 1,
+    "exactDerivedTupleExact": 0.23076923076923078
+  },
+  "crossModelAgreementMonitoring": {
+    "originalTargetContactExact": 0.9230769230769231,
+    "connectedExampleExact": 0.8461538461538461,
+    "scopeExact": 0.8461538461538461,
+    "burdenAdjustmentExact": 1,
+    "componentContactMicroExact": 0.7741935483870968,
+    "coverageExact": 0.6153846153846154,
+    "defectTypeExact": 0.6923076923076923,
+    "consequenceExact": 0.7692307692307693,
+    "diagnosticExact": 0.7692307692307693,
+    "reframeExact": 0.6153846153846154,
+    "burdenRelevanceExact": 0.8461538461538461,
+    "exactDerivedTupleExact": 0.3076923076923077
+  },
+  "finalHybridAccuracy": {
+    "originalTargetContactExact": 1,
+    "connectedExampleExact": 0.7692307692307693,
+    "scopeExact": 0.8461538461538461,
+    "burdenAdjustmentExact": 1,
+    "componentContactMicroExact": 0.8064516129032258,
+    "coverageExact": 0.6923076923076923,
+    "defectTypeExact": 0.6153846153846154,
+    "consequenceExact": 0.7692307692307693,
+    "diagnosticExact": 0.7692307692307693,
+    "reframeExact": 0.6923076923076923,
+    "burdenRelevanceExact": 0.9230769230769231,
+    "exactDerivedTupleExact": 0.46153846153846156,
+    "diagnosticPositiveRecall": 0.3333333333333333,
+    "reframePositiveRecall": 0
+  },
+  "semanticReliability": {
+    "rawAgreementCount": 128,
+    "sharedRawErrorCount": 12,
+    "sharedRawErrorRate": 0.09375,
+    "sharedErrorsRiskCaptured": 7,
+    "sharedErrorRiskCaptureRate": 0.5833333333333334,
+    "sharedErrorsCorrected": 0,
+    "sharedErrorCorrectionRate": 0,
+    "semanticConflictCount": 33,
+    "conflictsWithCorrectCandidate": 32,
+    "adjudicatorCorrectOnConflicts": 15,
+    "adjudicatorConflictAccuracy": 0.45454545454545453,
+    "agreementOverrideCount": 0,
+    "correctAgreementOverrides": 0,
+    "harmfulAgreementOverrides": 0,
+    "wrongToDifferentWrongOverrides": 0
+  },
+  "adjudication": {
+    "debates": [
+      {
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "debateNumber": "62",
+        "lane": "dyadic",
+        "role": "straightforward-dyadic",
+        "caseCount": 3,
+        "fieldCount": 14,
+        "counts": {
+          "semantic-conflict": 6,
+          "high-risk-agreement": 8,
+          "dependency-companion": 0
+        },
+        "selectionCounts": {
+          "A": 3,
+          "B": 3,
+          "retain": 8,
+          "override": 0
+        },
+        "unflaggedAlterations": 0,
+        "unresolvedFields": 0,
+        "finalLockSha256": "696ab616253a6c6a963abc2d3ab85becf71bb445ce2d23000a9ea69a2bcc2e1b",
+        "scoringInputSha256": "58845a14e8cc8704a2d63ceb4c6f33523fbd7cafd60d32028ec42591f15d400e"
+      },
+      {
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "debateNumber": "185",
+        "lane": "dyadic",
+        "role": "difficult-dyadic-reframe",
+        "caseCount": 4,
+        "fieldCount": 26,
+        "counts": {
+          "semantic-conflict": 13,
+          "high-risk-agreement": 13,
+          "dependency-companion": 0
+        },
+        "selectionCounts": {
+          "A": 5,
+          "B": 8,
+          "retain": 13,
+          "override": 0
+        },
+        "unflaggedAlterations": 0,
+        "unresolvedFields": 0,
+        "finalLockSha256": "d48a3e08271256208b02a859260a5d26effc4327d3b77689c8e26c856c785c23",
+        "scoringInputSha256": "ee3221d0f63de1c2d1b2b862d3bd4094ab057b05be107360e5183b856f2c0a90"
+      },
+      {
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "debateNumber": "154",
+        "lane": "multi-speaker",
+        "role": "multi-speaker",
+        "caseCount": 6,
+        "fieldCount": 36,
+        "counts": {
+          "semantic-conflict": 14,
+          "high-risk-agreement": 22,
+          "dependency-companion": 0
+        },
+        "selectionCounts": {
+          "A": 5,
+          "B": 9,
+          "retain": 22,
+          "override": 0
+        },
+        "unflaggedAlterations": 0,
+        "unresolvedFields": 0,
+        "finalLockSha256": "d69db8a157972a107a52bd09e79e4ff909b25d19a7d8d7eed2e8bb953440d7b6",
+        "scoringInputSha256": "427165ed395e949066ac945bbca69ed7b09ea649de0d5b62996cad2c9024b318"
+      }
+    ],
+    "completeContexts": 6,
+    "adjudicatorContexts": 3
+  },
+  "sourceGate": {
+    "mediumOrLowMoveCount": 1,
+    "audioVerifiedMediumOrLowMoveCount": 1,
+    "audioVerificationRate": 1
+  },
+  "comparisonToV31": {
+    "originalTargetContactExact": 0,
+    "connectedExampleExact": 0.23076923076923084,
+    "scopeExact": 0.3846153846153846,
+    "burdenAdjustmentExact": 0.15384615384615385,
+    "componentContactMicroExact": 0.06451612903225801,
+    "coverageExact": 0.07692307692307687,
+    "defectTypeExact": 0.23076923076923078,
+    "consequenceExact": 0.07692307692307698,
+    "diagnosticExact": 0.07692307692307698,
+    "reframeExact": -0.07692307692307698,
+    "burdenRelevanceExact": 0.3076923076923077,
+    "exactDerivedTupleExact": 0.38461538461538464,
+    "diagnosticPositiveRecall": -0.3333333333333333,
+    "reframePositiveRecall": -1
+  },
+  "thresholds": {
+    "finalOriginalTargetContactExact": 0.95,
+    "finalScopeExact": 0.9,
+    "finalBurdenAdjustmentExact": 0.95,
+    "finalComponentContactMicroExact": 0.9,
+    "finalCoverageExact": 0.85,
+    "finalDefectTypeExact": 0.85,
+    "finalConsequenceExact": 0.9,
+    "finalDiagnosticExact": 0.9,
+    "finalReframeExact": 0.9,
+    "finalBurdenRelevanceExact": 0.9,
+    "finalExactDerivedTupleExact": 0.8,
+    "finalDiagnosticPositiveRecall": 0.8,
+    "finalReframePositiveRecall": 1,
+    "unresolvedDisputesMaximum": 0,
+    "nondisputedAlterationsMaximum": 0,
+    "mediumLowAudioVerificationRate": 1
+  },
+  "gates": {
+    "finalOriginalTargetContactExact": true,
+    "finalScopeExact": false,
+    "finalBurdenAdjustmentExact": true,
+    "finalComponentContactMicroExact": false,
+    "finalCoverageExact": false,
+    "finalDefectTypeExact": false,
+    "finalConsequenceExact": false,
+    "finalDiagnosticExact": false,
+    "finalReframeExact": false,
+    "finalBurdenRelevanceExact": true,
+    "finalExactDerivedTupleExact": false,
+    "finalDiagnosticPositiveRecall": false,
+    "finalReframePositiveRecall": false,
+    "unresolvedFields": true,
+    "unflaggedAlterations": true,
+    "mediumLowAudioVerificationRate": true
+  },
+  "decision": {
+    "passed": false,
+    "retiredExecutionGatePassed": false,
+    "heldOutGatePreregistrationAuthorized": false,
+    "heldOutTranscriptsAuthorized": false,
+    "numericalScoringAuthorized": false,
+    "productionMutationAuthorized": false,
+    "nextStep": "Freeze v3.2 as failed; do not open held-out material or score production debates."
+  }
+}
