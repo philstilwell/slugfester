@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "3.7.5-correction-development-manifest",
+  "protocolId": "v3.7.5-taxonomy-priority-correction-smoke",
+  "status": "frozen-packet-development-model-execution-blocked",
+  "frozenAt": "2026-08-04T05:43:35.277Z",
+  "workflowVersion": "Slugfester Taxonomy-and-Priority Correction Workflow v3.7.5",
+  "rubricVersion": "Slugfester Taxonomy-and-Priority Correction Rubric v3.7.5",
+  "calibrationOnly": true,
+  "exposedCorrectionCases": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "sample": {
+    "debateNumbers": [
+      "62",
+      "154",
+      "185"
+    ],
+    "debateCount": 3,
+    "atomicBundleCount": 8,
+    "diagnosticBundles": 4,
+    "burdenBundles": 4,
+    "allSpeakerAttributionConfidenceHigh": true
+  },
+  "correctionTargets": {
+    "diagnosticLabelPrecedence": true,
+    "burdenRoutePriority": true,
+    "thresholdLowering": false
+  },
+  "developmentReference": {
+    "warning": "Development references combine retired fixtures and prior two-vote AI resolutions; they are not human ground truth and are unavailable to model contexts.",
+    "diagnostic": "v3.6.1 retired normalized fixtures",
+    "burden62": "v3.7.4 two-initial-vote resolution",
+    "burden154": "v3.2 retired key",
+    "burden18507": "v3.7.4 adjudicated two-vote resolution",
+    "burden18505": "v3.7.3 two-initial-vote resolution"
+  },
+  "plannedExecution": {
+    "initialContexts": 6,
+    "adjudicationContextsMaximum": 3,
+    "attemptsPerContext": 1,
+    "modelOutputRetriesMaximum": 0,
+    "sameRequestStreamRecoveriesMaximum": 0,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "frozenThresholds": {
+    "validInitialContexts": 6,
+    "initialAtomicBundleAgreementsRequired": 8,
+    "initialInvalidBundlesMaximum": 0,
+    "finalTwoVoteBundlesRequired": 8,
+    "unresolvedBundlesMaximum": 0,
+    "scoringFieldsMaximum": 0
+  },
+  "passMeaning": "A pass may authorize separate preregistration of a corrected disjoint repeatability test only.",
+  "developmentState": {
+    "packetsBuilt": true,
+    "schemasBuilt": true,
+    "dryFixturePassed": true,
+    "executionRunnerImplemented": false,
+    "disagreementExtractorImplemented": false,
+    "adjudicationRunnerImplemented": false,
+    "analyzerImplemented": false,
+    "modelExecutionAuthorized": false
+  },
+  "priorV374": {
+    "manifestPath": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/gate-manifest.json",
+    "manifestSha256": "73bf66f31f369bd4270371e00b1e74b3e5a1cf1b3c1b25666816c9b14c133c19",
+    "analysisPath": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/test-analysis.json",
+    "analysisSha256": "45ec0024ebb37e3923ab02181942db1187ed1fee12cd4a4396bead0e930c565b",
+    "diagnosticsPath": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/failure-diagnostics.json",
+    "diagnosticsSha256": "38344d296b917eaa68313690f279066c750ce2e50530034b46ddc749eecf4eba",
+    "outcome": "mechanics-pass-semantic-repeatability-fail"
+  },
+  "sealedOptionMap": {
+    "path": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/sealed-option-map.json",
+    "sha256": "5f4956437c7aebe767fb75aa7cac73beec61a47959ad3de36d4aee446a2436d4",
+    "unavailableToModelContexts": true
+  },
+  "contexts": {
+    "pass-a": {
+      "62": {
+        "packet": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/packets/pass-a/debate-62.json",
+        "packetSha256": "31e9fd65145bc59f47051db476052cfee76aec7d6b3b33a6a25e84ab4b9d1606",
+        "schema": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/schemas/pass-a/debate-62.schema.json",
+        "schemaSha256": "c4c1692dac02e993724cd1f41b1e00718066e1f17f1c14432848209b1f926e10",
+        "bundleCount": 2
+      },
+      "154": {
+        "packet": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/packets/pass-a/debate-154.json",
+        "packetSha256": "162be741bc0e1a944aa1c0b70fc276ef6d21e91ae7a74ef1c3b48a7871d43f83",
+        "schema": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/schemas/pass-a/debate-154.schema.json",
+        "schemaSha256": "6d36760e6a6e97557cfa051a147c4dfdc80fb3ce586ee74bcf728b3015a86157",
+        "bundleCount": 3
+      },
+      "185": {
+        "packet": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/packets/pass-a/debate-185.json",
+        "packetSha256": "9dcb59761f47e0a1effca380d919656615b9ea323016d0e36e84c398ff81d951",
+        "schema": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/schemas/pass-a/debate-185.schema.json",
+        "schemaSha256": "d498ad81201a8e54f2f930b573a7bd73922e2d6f11203441f80cc8d91fbe4d1d",
+        "bundleCount": 3
+      }
+    },
+    "pass-b": {
+      "62": {
+        "packet": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/packets/pass-b/debate-62.json",
+        "packetSha256": "29d86e4cd35388e7b82e8beb47abbc28f70031114067fe40851593d42ddbdedb",
+        "schema": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/schemas/pass-b/debate-62.schema.json",
+        "schemaSha256": "33808985dcb114a35a4458480b0530ccfae54448f5027ddc2b7b3db6b3c19746",
+        "bundleCount": 2
+      },
+      "154": {
+        "packet": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/packets/pass-b/debate-154.json",
+        "packetSha256": "6f714a9c0825af839c3de9b4c60b99da89520de30cd86e836564f11e5376a00f",
+        "schema": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/schemas/pass-b/debate-154.schema.json",
+        "schemaSha256": "b9287f5c1c48107c6a11a3c05fa845ee3f705b770ba1dbc6bdafc0e7e1c1928e",
+        "bundleCount": 3
+      },
+      "185": {
+        "packet": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/packets/pass-b/debate-185.json",
+        "packetSha256": "7cfdc693e9837717d3b724859ba5e1b5ad7ff265dbc72a4aeb75126f0d8347aa",
+        "schema": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/schemas/pass-b/debate-185.schema.json",
+        "schemaSha256": "b719319ac2986002e6c6ab81ae8294182603ea3c9b38f220237b06b67de5eacf",
+        "bundleCount": 3
+      }
+    }
+  },
+  "dryFixture": {
+    "path": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/dry-fixture.json",
+    "sha256": "a80c719da80853fd8e788bd98ed495dec9ae925311fc6fe9b9d1d348d247d218"
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.7.5.md": "b953ba6cbd76ae010e71a2be6ba914ba6fef158bdc91a552cabbccfc3c4b3553",
+    "docs/reassessment-rubric-v3.7.5.md": "d5bd53cfead676d59b6c94405f2fbf947008f558d850e9cff21c2f03c6e125b4",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/smoke-manual.md": "57789edfa71ae266d42ea6f0f0ca80d804c7647e47b2ae7854e02430673043c0",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/dry-fixture.json": "a80c719da80853fd8e788bd98ed495dec9ae925311fc6fe9b9d1d348d247d218",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/sealed-option-map.json": "5f4956437c7aebe767fb75aa7cac73beec61a47959ad3de36d4aee446a2436d4",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/packets/pass-a/debate-62.json": "31e9fd65145bc59f47051db476052cfee76aec7d6b3b33a6a25e84ab4b9d1606",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/schemas/pass-a/debate-62.schema.json": "c4c1692dac02e993724cd1f41b1e00718066e1f17f1c14432848209b1f926e10",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/packets/pass-a/debate-154.json": "162be741bc0e1a944aa1c0b70fc276ef6d21e91ae7a74ef1c3b48a7871d43f83",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/schemas/pass-a/debate-154.schema.json": "6d36760e6a6e97557cfa051a147c4dfdc80fb3ce586ee74bcf728b3015a86157",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/packets/pass-a/debate-185.json": "9dcb59761f47e0a1effca380d919656615b9ea323016d0e36e84c398ff81d951",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/schemas/pass-a/debate-185.schema.json": "d498ad81201a8e54f2f930b573a7bd73922e2d6f11203441f80cc8d91fbe4d1d",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/packets/pass-b/debate-62.json": "29d86e4cd35388e7b82e8beb47abbc28f70031114067fe40851593d42ddbdedb",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/schemas/pass-b/debate-62.schema.json": "33808985dcb114a35a4458480b0530ccfae54448f5027ddc2b7b3db6b3c19746",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/packets/pass-b/debate-154.json": "6f714a9c0825af839c3de9b4c60b99da89520de30cd86e836564f11e5376a00f",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/schemas/pass-b/debate-154.schema.json": "b9287f5c1c48107c6a11a3c05fa845ee3f705b770ba1dbc6bdafc0e7e1c1928e",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/packets/pass-b/debate-185.json": "7cfdc693e9837717d3b724859ba5e1b5ad7ff265dbc72a4aeb75126f0d8347aa",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/schemas/pass-b/debate-185.schema.json": "b719319ac2986002e6c6ab81ae8294182603ea3c9b38f220237b06b67de5eacf",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v37-retired-semantic.mjs": "2fe113760e4b2bb97104025d39755d8ceeeecded89fbaea683cc5c9cce188296",
+    "scripts/lib/v372-atomic-bundles.mjs": "ec5908ea20bd0b099095257ee614d07893a1b245bf693abee2f697a3f0de0a0c",
+    "scripts/lib/v375-correction.mjs": "2c691589e340c1ca5bd4f801272ffe9a060de161905ad66abf98b26ea79c41cc",
+    "scripts/build-v375-correction-packets.mjs": "f2c076e2c601e7141e8dd00b8c968e6ea201818307606a93ea7cf0fa6b3ea487",
+    "scripts/test-v375-correction-packets.mjs": "4df84ee977f720189b3fd5ff6458b4976b2b5a53b38780c446d11fc1930a1706",
+    "scripts/preregister-v375-correction-development.mjs": "a1214ba923a34bedfd45ecb1bbf387eafe03346615d6d51982146d8a86a1b20b",
+    "scripts/validate-v375-correction-development.mjs": "444dd35f4226f20c634d34be29460ae299ca6cc91c3d0510d7e960d778005213",
+    "docs/calibration/v3.2/retired-three-debate-test/inputs/pageau-folley-logos-meaning-resurrection-2026.json": "5fb16c0f52dd15dd1d071a113a74f4f26291c3bf6038efd50cb98804ef711af9",
+    "docs/calibration/v3.2/retired-three-debate-test/inputs/koukl-oconnor-kanojia-nonbelief-harm-2025.json": "645b4b097e94e817dad25ce27866cda5d37f8f943342ec776924d18f6593f9b7",
+    "docs/calibration/v3.2/retired-three-debate-test/inputs/dennett-caruso-free-will-responsibility-2021.json": "6d8bc54534869c9cdf4459b2f0c838bdc901d67750067edd8d47176148f89486",
+    "docs/calibration/v3.6.1/decision-card-development/retired-fixtures.json": "40a0914dcec88a5ade7174a947c9a8da91cfbac8c0b8537b62a24304ac766dd2",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/gate-manifest.json": "73bf66f31f369bd4270371e00b1e74b3e5a1cf1b3c1b25666816c9b14c133c19",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/test-analysis.json": "45ec0024ebb37e3923ab02181942db1187ed1fee12cd4a4396bead0e930c565b",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/failure-diagnostics.json": "38344d296b917eaa68313690f279066c750ce2e50530034b46ddc749eecf4eba"
+  },
+  "prohibitions": {
+    "modelExecution": true,
+    "correctedBenchmarkKey": true,
+    "largerModelBatch": true,
+    "heldOutAccess": true,
+    "numericalParticipantScoring": true,
+    "assessmentProse": true,
+    "productionMutation": true
+  }
+}
