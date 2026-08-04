@@ -1,0 +1,589 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v388-independent-coverage-review-55",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "candidateReviews",
+    "missingMoves",
+    "bridgeCoverage",
+    "materialConcessionAudit",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.8-independent-coverage-review-output"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "55"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "craig-malpass-kalam-nothing-2026"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "coverage-reviewer"
+    },
+    "candidateReviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidateRef",
+          "candidateValid",
+          "speaker",
+          "side",
+          "proposition",
+          "attributionConfidence",
+          "attributionBasis",
+          "selectionRole",
+          "moveKind",
+          "respondsToRefs",
+          "rationale"
+        ],
+        "properties": {
+          "candidateRef": {
+            "type": "string",
+            "enum": [
+              "candidate-01",
+              "candidate-02",
+              "candidate-03",
+              "candidate-04",
+              "candidate-05",
+              "candidate-06",
+              "candidate-07",
+              "candidate-08",
+              "candidate-09",
+              "candidate-10",
+              "candidate-11",
+              "candidate-12",
+              "candidate-13",
+              "candidate-14",
+              "candidate-15",
+              "candidate-16",
+              "candidate-17",
+              "candidate-18",
+              "candidate-19",
+              "candidate-20",
+              "candidate-21",
+              "candidate-22",
+              "candidate-23",
+              "candidate-24",
+              "candidate-25",
+              "candidate-26",
+              "candidate-27",
+              "candidate-28"
+            ]
+          },
+          "candidateValid": {
+            "type": "boolean"
+          },
+          "speaker": {
+            "type": "string",
+            "enum": [
+              "William Lane Craig",
+              "Alex Malpass"
+            ]
+          },
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "proposition": {
+            "type": "string",
+            "minLength": 30
+          },
+          "attributionConfidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "attributionBasis": {
+            "type": "string",
+            "minLength": 50
+          },
+          "selectionRole": {
+            "type": "string",
+            "enum": [
+              "load-bearing-constructive",
+              "major-direct-reply",
+              "material-concession",
+              "contextual-only"
+            ]
+          },
+          "moveKind": {
+            "type": "string",
+            "enum": [
+              "constructive",
+              "reply",
+              "concession"
+            ]
+          },
+          "respondsToRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "candidate-01",
+                "candidate-02",
+                "candidate-03",
+                "candidate-04",
+                "candidate-05",
+                "candidate-06",
+                "candidate-07",
+                "candidate-08",
+                "candidate-09",
+                "candidate-10",
+                "candidate-11",
+                "candidate-12",
+                "candidate-13",
+                "candidate-14",
+                "candidate-15",
+                "candidate-16",
+                "candidate-17",
+                "candidate-18",
+                "candidate-19",
+                "candidate-20",
+                "candidate-21",
+                "candidate-22",
+                "candidate-23",
+                "candidate-24",
+                "candidate-25",
+                "candidate-26",
+                "candidate-27",
+                "candidate-28",
+                "missing-01",
+                "missing-02",
+                "missing-03",
+                "missing-04",
+                "missing-05",
+                "missing-06",
+                "missing-07",
+                "missing-08"
+              ]
+            },
+            "maxItems": 8
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 70
+          }
+        }
+      },
+      "minItems": 28,
+      "maxItems": 28
+    },
+    "missingMoves": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "missingRef",
+          "startEvent",
+          "endEvent",
+          "speaker",
+          "side",
+          "proposition",
+          "attributionConfidence",
+          "attributionBasis",
+          "selectionRole",
+          "moveKind",
+          "respondsToRefs",
+          "rationale"
+        ],
+        "properties": {
+          "missingRef": {
+            "type": "string",
+            "enum": [
+              "missing-01",
+              "missing-02",
+              "missing-03",
+              "missing-04",
+              "missing-05",
+              "missing-06",
+              "missing-07",
+              "missing-08"
+            ]
+          },
+          "startEvent": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 2470
+          },
+          "endEvent": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 2470
+          },
+          "speaker": {
+            "type": "string",
+            "enum": [
+              "William Lane Craig",
+              "Alex Malpass"
+            ]
+          },
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "proposition": {
+            "type": "string",
+            "minLength": 30
+          },
+          "attributionConfidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "attributionBasis": {
+            "type": "string",
+            "minLength": 50
+          },
+          "selectionRole": {
+            "type": "string",
+            "enum": [
+              "load-bearing-constructive",
+              "major-direct-reply",
+              "material-concession",
+              "contextual-only"
+            ]
+          },
+          "moveKind": {
+            "type": "string",
+            "enum": [
+              "constructive",
+              "reply",
+              "concession"
+            ]
+          },
+          "respondsToRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "candidate-01",
+                "candidate-02",
+                "candidate-03",
+                "candidate-04",
+                "candidate-05",
+                "candidate-06",
+                "candidate-07",
+                "candidate-08",
+                "candidate-09",
+                "candidate-10",
+                "candidate-11",
+                "candidate-12",
+                "candidate-13",
+                "candidate-14",
+                "candidate-15",
+                "candidate-16",
+                "candidate-17",
+                "candidate-18",
+                "candidate-19",
+                "candidate-20",
+                "candidate-21",
+                "candidate-22",
+                "candidate-23",
+                "candidate-24",
+                "candidate-25",
+                "candidate-26",
+                "candidate-27",
+                "candidate-28",
+                "missing-01",
+                "missing-02",
+                "missing-03",
+                "missing-04",
+                "missing-05",
+                "missing-06",
+                "missing-07",
+                "missing-08"
+              ]
+            },
+            "maxItems": 8
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 70
+          }
+        }
+      },
+      "maxItems": 8
+    },
+    "bridgeCoverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "bridgeId",
+          "status",
+          "moveRefs",
+          "omission",
+          "rationale"
+        ],
+        "properties": {
+          "bridgeId": {
+            "type": "string",
+            "enum": [
+              "craig-malpass-kalam-nothing-2026-pro-motion-v381",
+              "craig-malpass-kalam-nothing-2026-pro-central-v381",
+              "craig-malpass-kalam-nothing-2026-pro-subsidiary-1-v381",
+              "craig-malpass-kalam-nothing-2026-pro-subsidiary-2-v381",
+              "craig-malpass-kalam-nothing-2026-pro-subsidiary-3-v381",
+              "craig-malpass-kalam-nothing-2026-con-motion-v381",
+              "craig-malpass-kalam-nothing-2026-con-central-v381",
+              "craig-malpass-kalam-nothing-2026-con-subsidiary-1-v381",
+              "craig-malpass-kalam-nothing-2026-con-subsidiary-2-v381",
+              "craig-malpass-kalam-nothing-2026-con-subsidiary-3-v381"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "represented",
+              "consequential-omission"
+            ]
+          },
+          "moveRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "candidate-01",
+                "candidate-02",
+                "candidate-03",
+                "candidate-04",
+                "candidate-05",
+                "candidate-06",
+                "candidate-07",
+                "candidate-08",
+                "candidate-09",
+                "candidate-10",
+                "candidate-11",
+                "candidate-12",
+                "candidate-13",
+                "candidate-14",
+                "candidate-15",
+                "candidate-16",
+                "candidate-17",
+                "candidate-18",
+                "candidate-19",
+                "candidate-20",
+                "candidate-21",
+                "candidate-22",
+                "candidate-23",
+                "candidate-24",
+                "candidate-25",
+                "candidate-26",
+                "candidate-27",
+                "candidate-28",
+                "missing-01",
+                "missing-02",
+                "missing-03",
+                "missing-04",
+                "missing-05",
+                "missing-06",
+                "missing-07",
+                "missing-08"
+              ]
+            },
+            "maxItems": 8
+          },
+          "omission": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "side",
+                  "speaker",
+                  "opportunityStartEvent",
+                  "opportunityEndEvent",
+                  "omittedResponse",
+                  "assessmentConsequence"
+                ],
+                "properties": {
+                  "side": {
+                    "type": "string",
+                    "enum": [
+                      "pro",
+                      "con"
+                    ]
+                  },
+                  "speaker": {
+                    "type": "string",
+                    "enum": [
+                      "William Lane Craig",
+                      "Alex Malpass"
+                    ]
+                  },
+                  "opportunityStartEvent": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 2470
+                  },
+                  "opportunityEndEvent": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 2470
+                  },
+                  "omittedResponse": {
+                    "type": "string",
+                    "minLength": 60
+                  },
+                  "assessmentConsequence": {
+                    "type": "string",
+                    "minLength": 60
+                  }
+                }
+              }
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          }
+        }
+      },
+      "minItems": 10,
+      "maxItems": 10
+    },
+    "materialConcessionAudit": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "side",
+          "status",
+          "moveRefs",
+          "rationale"
+        ],
+        "properties": {
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "represented",
+              "none-found"
+            ]
+          },
+          "moveRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "candidate-01",
+                "candidate-02",
+                "candidate-03",
+                "candidate-04",
+                "candidate-05",
+                "candidate-06",
+                "candidate-07",
+                "candidate-08",
+                "candidate-09",
+                "candidate-10",
+                "candidate-11",
+                "candidate-12",
+                "candidate-13",
+                "candidate-14",
+                "candidate-15",
+                "candidate-16",
+                "candidate-17",
+                "candidate-18",
+                "candidate-19",
+                "candidate-20",
+                "candidate-21",
+                "candidate-22",
+                "candidate-23",
+                "candidate-24",
+                "candidate-25",
+                "candidate-26",
+                "candidate-27",
+                "candidate-28",
+                "missing-01",
+                "missing-02",
+                "missing-03",
+                "missing-04",
+                "missing-05",
+                "missing-06",
+                "missing-07",
+                "missing-08"
+              ]
+            },
+            "maxItems": 6
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          }
+        }
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fullTranscriptReviewed",
+        "candidateInventoryTreatedAsProvisional",
+        "hiddenProposalFieldsUnavailable",
+        "scoresAndAssessmentProseAbsent",
+        "coverageClaim"
+      ],
+      "properties": {
+        "fullTranscriptReviewed": {
+          "type": "boolean",
+          "const": true
+        },
+        "candidateInventoryTreatedAsProvisional": {
+          "type": "boolean",
+          "const": true
+        },
+        "hiddenProposalFieldsUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "scoresAndAssessmentProseAbsent": {
+          "type": "boolean",
+          "const": true
+        },
+        "coverageClaim": {
+          "type": "string",
+          "const": "complete-independent-review-pending-disagreement-extraction"
+        }
+      }
+    }
+  }
+}
