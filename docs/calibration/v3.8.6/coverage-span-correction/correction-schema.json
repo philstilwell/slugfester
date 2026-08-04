@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v386-coverage-span-correction-161",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "debateNumber",
+    "targetLocalRef",
+    "startEvent",
+    "endEvent",
+    "rationale"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.6-coverage-span-correction-output"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "161"
+    },
+    "targetLocalRef": {
+      "type": "string",
+      "const": "addition-01"
+    },
+    "startEvent": {
+      "type": "integer",
+      "minimum": 280,
+      "maximum": 323
+    },
+    "endEvent": {
+      "type": "integer",
+      "minimum": 280,
+      "maximum": 323
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 80
+    }
+  }
+}

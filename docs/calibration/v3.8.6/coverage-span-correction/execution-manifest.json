@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "3.8.6-coverage-span-correction-execution-manifest",
+  "protocolId": "v3.8.6-coverage-span-correction",
+  "parentProtocolId": "v3.8.5-coverage-transport-amendment",
+  "stage": "debate-161-coordinate-only-correction",
+  "status": "frozen-single-context-coordinate-correction-authorized",
+  "frozenAt": "2026-08-04T14:35:26Z",
+  "checkpointCommit": "fd84851b7308e8b164625c64bbd504dd21c4de05",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "correctionBasis": {
+    "failedArtifact": "docs/calibration/v3.8.5/coverage-transport-amendment/raw-output.json",
+    "failedArtifactSha256": "4004e1df8247041ff99da2527a1af97f077f2fad3c6ee754046a82a655df7ac0",
+    "failedExecution": "docs/calibration/v3.8.5/coverage-transport-amendment/model-execution.json",
+    "targetLocalRef": "addition-01",
+    "originalWordCount": 253,
+    "soleFailure": "atomic source span exceeds 220 normalized words",
+    "v385TransportPassedClean": true,
+    "fullDebateRerun": false,
+    "semanticReassessment": false
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "modelContext": {
+    "packet": "docs/calibration/v3.8.6/coverage-span-correction/correction-packet.json",
+    "schema": "docs/calibration/v3.8.6/coverage-span-correction/correction-schema.json",
+    "priorFullProposalAvailable": false,
+    "localTimestampedWindowOnly": true
+  },
+  "mergeContext": {
+    "sourceRawOutput": "docs/calibration/v3.8.5/coverage-transport-amendment/raw-output.json",
+    "sourcePacket": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/packets/debate-161.json",
+    "sourceSchema": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/schemas/debate-161.schema.json",
+    "sourceEvents": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+    "immutableFields": "all fields except additions[localRef=addition-01].startEvent and .endEvent"
+  },
+  "authorization": {
+    "freshCoordinateCorrectionContexts": 1,
+    "coordinateCorrectionModelExecution": true,
+    "deterministicMergeAndFullCoverageValidation": true,
+    "coverageReviewPacketConstructionAfterPass": true,
+    "coverageReviewModelExecution": false,
+    "coverageAdjudicationModelExecution": false,
+    "burdenContactModelExecution": false,
+    "scoringModelExecution": false,
+    "numericalParticipantScoring": false,
+    "assessmentProse": false,
+    "productionMutation": false,
+    "all195Debates": false
+  },
+  "executionPolicy": {
+    "attempts": 1,
+    "modelOutputRetriesMaximum": 0,
+    "perInvocationTimeoutMs": 900000,
+    "recoverableStreamEventsNormalMaximum": 2,
+    "recoverableStreamEventsHardMaximum": 8,
+    "transportEventsExtractedFromStderrOnly": true,
+    "canonicalNoncoordinateIdentityRequired": true,
+    "completeCoverageRevalidationRequired": true,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "acceptanceRule": {
+    "normalCommandExitRequired": true,
+    "correctionSchemaRequired": true,
+    "correctedSpanWithinOriginalRequired": true,
+    "correctedSpanWordsMinimum": 20,
+    "correctedSpanWordsMaximum": 220,
+    "correctedSpanDurationMsMaximum": 150000,
+    "noncoordinateMutationCountMaximum": 0,
+    "completeCoverageValidatorExitCodeRequired": 0,
+    "recoverableStreamEventsHardMaximum": 8
+  },
+  "stopRules": {
+    "anySourceHashMismatchBlocksExecution": true,
+    "anyPreexistingOutputBlocksExecution": true,
+    "anyAcceptanceFailureBlocksReview": true,
+    "furtherAutomaticRetryAuthorized": false
+  },
+  "outputs": {
+    "correctionOutput": "docs/calibration/v3.8.6/coverage-span-correction/correction-output.json",
+    "correctedRawOutput": "docs/calibration/v3.8.6/coverage-span-correction/corrected-raw-output.json",
+    "enrichedOutput": "docs/calibration/v3.8.6/coverage-span-correction/enriched-output.json",
+    "modelExecution": "docs/calibration/v3.8.6/coverage-span-correction/model-execution.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v3.8.6/coverage-span-correction/correction-output.json",
+    "docs/calibration/v3.8.6/coverage-span-correction/corrected-raw-output.json",
+    "docs/calibration/v3.8.6/coverage-span-correction/enriched-output.json",
+    "docs/calibration/v3.8.6/coverage-span-correction/model-execution.json"
+  ],
+  "sourceHashes": {
+    "docs/calibration/v3.8.6/coverage-span-correction/preregistration.md": "a5c5821fabc1715d89df49d065c3ddd9eac037f9a09545f59311fd1fd16276a9",
+    "docs/calibration/v3.8.6/coverage-span-correction/correction-packet.json": "374d1488472f62185b285153a1aaf01114db5ccd2fd1499140d0c448d21a81ab",
+    "docs/calibration/v3.8.6/coverage-span-correction/correction-schema.json": "ea3f59d48b7cd72bb616a3a606cd69ffe0415b5b94b4932f6a3e5be93714babe",
+    "docs/calibration/v3.8.5/coverage-transport-amendment/execution-manifest.json": "14a2dd8167cf073e3467f403327c6fbe75f3197f7e31113fe8cdf0ee871d980b",
+    "docs/calibration/v3.8.5/coverage-transport-amendment/model-execution.json": "27e27bd708de7baa8c59c13589c47fda33e47ecd8ca76ab1feef206812195615",
+    "docs/calibration/v3.8.5/coverage-transport-amendment/raw-output.json": "4004e1df8247041ff99da2527a1af97f077f2fad3c6ee754046a82a655df7ac0",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/packets/debate-161.json": "093a3928c7251c91fcd1b2b00a19cb42aa1996d57c28528952ae07cc1c14d099",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/schemas/debate-161.schema.json": "02149eef27211e7aeb6b4797eba43150794240e116ddd3e21f7444dced4afad8",
+    ".assessment-cache/captions/9JVRy7bR7zI/events.json": "5dd29c053f0e5da4ed79b6f818fb844a6515552671dbc4014916d18ca1d2cbbc",
+    ".assessment-cache/captions/9JVRy7bR7zI/manifest.json": "436f3f2be4fd5e84338f6244eae1398dbcb11c56ac514920a80cad440790dc18",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v37-retired-semantic.mjs": "2fe113760e4b2bb97104025d39755d8ceeeecded89fbaea683cc5c9cce188296",
+    "scripts/lib/v381-source-preparation.mjs": "ccc2c66a1c2ab50fbebc26888f622c9632fb273c2b24b45ea68618188df384d7",
+    "scripts/lib/v384-coverage-preparation.mjs": "5a37b262e3a1c819c01f6ce6e808bcf19e57a4bb5b2df04ee659c2b72ea122f2",
+    "scripts/lib/v385-transport.mjs": "f20d5cb026e0c2720d32276ddcbb612ec852e3732d7653e47a98ba5ffa880dfe",
+    "scripts/validate-v384-coverage-proposal.mjs": "8e426a614e27d15d4cf357af838b74d76657328d9430f77ebe61ef4de5d68c9d",
+    "scripts/build-v386-coverage-span-correction.mjs": "0f73e984cc24acefb2aff7370756d33500a1f28d3cad42c8cc6abd31976281e1",
+    "scripts/preregister-v386-coverage-span-correction.mjs": "b3cf687067ef531b6898c254be2c846be20ab3c0e16e6c6b5ab4fb56c46c4e60",
+    "scripts/validate-v386-coverage-span-correction-lock.mjs": "e08b45a2eb548d0c49cd7dee3964ab65f4242246db4bdb842982ef6ff6db2a7f",
+    "scripts/run-v386-coverage-span-correction.mjs": "4510561c46bb645868ef25370c88e1ed44fff7b60cb7dd2ce52c2aa4f460d504"
+  }
+}
