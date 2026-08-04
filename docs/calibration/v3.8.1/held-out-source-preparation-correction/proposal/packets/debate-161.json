@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "3.8.1-source-proposal-packet",
+  "debateNumber": "161",
+  "debateId": "craig-millican-does-god-exist-2011",
+  "motion": "Does the evidence from cosmology, fine-tuning, morality, Jesus' resurrection, and religious experience make Christian theism more reasonable than skeptical atheism?",
+  "sides": {
+    "pro": {
+      "label": "Christian theist",
+      "speakers": [
+        "William Lane Craig"
+      ]
+    },
+    "con": {
+      "label": "Skeptical atheist",
+      "speakers": [
+        "Peter Millican"
+      ]
+    }
+  },
+  "durationSeconds": 8316,
+  "eventCount": 3159,
+  "requiredCandidateMoves": 8,
+  "requiredCandidatesPerSide": 4,
+  "requiredRouteShapePerSide": {
+    "motionBridges": 1,
+    "centralBridges": 1,
+    "subsidiaryBridges": 3
+  },
+  "routeIdentities": {
+    "pro": {
+      "routeId": "craig-millican-does-god-exist-2011-pro-route-v381",
+      "bridgeIds": {
+        "motion": "craig-millican-does-god-exist-2011-pro-motion-v381",
+        "central": "craig-millican-does-god-exist-2011-pro-central-v381",
+        "subsidiary": [
+          "craig-millican-does-god-exist-2011-pro-subsidiary-1-v381",
+          "craig-millican-does-god-exist-2011-pro-subsidiary-2-v381",
+          "craig-millican-does-god-exist-2011-pro-subsidiary-3-v381"
+        ]
+      }
+    },
+    "con": {
+      "routeId": "craig-millican-does-god-exist-2011-con-route-v381",
+      "bridgeIds": {
+        "motion": "craig-millican-does-god-exist-2011-con-motion-v381",
+        "central": "craig-millican-does-god-exist-2011-con-central-v381",
+        "subsidiary": [
+          "craig-millican-does-god-exist-2011-con-subsidiary-1-v381",
+          "craig-millican-does-god-exist-2011-con-subsidiary-2-v381",
+          "craig-millican-does-god-exist-2011-con-subsidiary-3-v381"
+        ]
+      }
+    }
+  },
+  "allowedBridgeIds": [
+    "craig-millican-does-god-exist-2011-pro-motion-v381",
+    "craig-millican-does-god-exist-2011-pro-central-v381",
+    "craig-millican-does-god-exist-2011-pro-subsidiary-1-v381",
+    "craig-millican-does-god-exist-2011-pro-subsidiary-2-v381",
+    "craig-millican-does-god-exist-2011-pro-subsidiary-3-v381",
+    "craig-millican-does-god-exist-2011-con-motion-v381",
+    "craig-millican-does-god-exist-2011-con-central-v381",
+    "craig-millican-does-god-exist-2011-con-subsidiary-1-v381",
+    "craig-millican-does-god-exist-2011-con-subsidiary-2-v381",
+    "craig-millican-does-god-exist-2011-con-subsidiary-3-v381"
+  ],
+  "candidateIdPolicy": "Do not emit candidate IDs; IDs are derived deterministically from debate identity and array position after validation.",
+  "contactPolicy": "Use null or exactly {polarity, bridgeId}; bridgeId must be copied from allowedBridgeIds.",
+  "sourceFilesInContext": {
+    "transcript": "transcript.txt",
+    "events": "events.json"
+  },
+  "prohibitedOutputs": [
+    "candidate IDs",
+    "scores",
+    "participant assessments",
+    "Overall Commentary",
+    "AI Extension"
+  ]
+}

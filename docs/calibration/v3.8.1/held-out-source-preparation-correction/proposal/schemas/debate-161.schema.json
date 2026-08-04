@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v381-source-proposal-161",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "routes",
+    "moves"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.1-source-proposal-output"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "161"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "craig-millican-does-god-exist-2011"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "proposal"
+    },
+    "routes": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "routeId",
+          "side",
+          "description",
+          "successCriteria",
+          "bridges"
+        ],
+        "properties": {
+          "routeId": {
+            "type": "string"
+          },
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 40
+          },
+          "successCriteria": {
+            "type": "string",
+            "minLength": 40
+          },
+          "bridges": {
+            "type": "array",
+            "minItems": 5,
+            "maxItems": 5,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bridgeId",
+                "tier",
+                "description"
+              ],
+              "properties": {
+                "bridgeId": {
+                  "type": "string",
+                  "enum": [
+                    "craig-millican-does-god-exist-2011-pro-motion-v381",
+                    "craig-millican-does-god-exist-2011-pro-central-v381",
+                    "craig-millican-does-god-exist-2011-pro-subsidiary-1-v381",
+                    "craig-millican-does-god-exist-2011-pro-subsidiary-2-v381",
+                    "craig-millican-does-god-exist-2011-pro-subsidiary-3-v381",
+                    "craig-millican-does-god-exist-2011-con-motion-v381",
+                    "craig-millican-does-god-exist-2011-con-central-v381",
+                    "craig-millican-does-god-exist-2011-con-subsidiary-1-v381",
+                    "craig-millican-does-god-exist-2011-con-subsidiary-2-v381",
+                    "craig-millican-does-god-exist-2011-con-subsidiary-3-v381"
+                  ]
+                },
+                "tier": {
+                  "type": "string",
+                  "enum": [
+                    "motion",
+                    "central",
+                    "subsidiary"
+                  ]
+                },
+                "description": {
+                  "type": "string",
+                  "minLength": 30
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "moves": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "startEvent",
+          "endEvent",
+          "speaker",
+          "side",
+          "proposition",
+          "attributionConfidence",
+          "attributionBasis",
+          "provisionalBurdenContact",
+          "selectionRationale"
+        ],
+        "properties": {
+          "startEvent": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 3158
+          },
+          "endEvent": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 3158
+          },
+          "speaker": {
+            "type": "string",
+            "enum": [
+              "William Lane Craig",
+              "Peter Millican"
+            ]
+          },
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "proposition": {
+            "type": "string",
+            "minLength": 30
+          },
+          "attributionConfidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "attributionBasis": {
+            "type": "string",
+            "minLength": 40
+          },
+          "provisionalBurdenContact": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "polarity",
+                  "bridgeId"
+                ],
+                "properties": {
+                  "polarity": {
+                    "type": "string",
+                    "enum": [
+                      "support",
+                      "attack"
+                    ]
+                  },
+                  "bridgeId": {
+                    "type": "string",
+                    "enum": [
+                      "craig-millican-does-god-exist-2011-pro-motion-v381",
+                      "craig-millican-does-god-exist-2011-pro-central-v381",
+                      "craig-millican-does-god-exist-2011-pro-subsidiary-1-v381",
+                      "craig-millican-does-god-exist-2011-pro-subsidiary-2-v381",
+                      "craig-millican-does-god-exist-2011-pro-subsidiary-3-v381",
+                      "craig-millican-does-god-exist-2011-con-motion-v381",
+                      "craig-millican-does-god-exist-2011-con-central-v381",
+                      "craig-millican-does-god-exist-2011-con-subsidiary-1-v381",
+                      "craig-millican-does-god-exist-2011-con-subsidiary-2-v381",
+                      "craig-millican-does-god-exist-2011-con-subsidiary-3-v381"
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "selectionRationale": {
+            "type": "string",
+            "minLength": 80
+          }
+        }
+      }
+    }
+  }
+}

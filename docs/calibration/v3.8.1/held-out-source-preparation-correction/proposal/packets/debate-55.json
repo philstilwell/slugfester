@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "3.8.1-source-proposal-packet",
+  "debateNumber": "55",
+  "debateId": "craig-malpass-kalam-nothing-2026",
+  "motion": "Does the Kalam cosmological argument show that the universe began to exist, has a cause, and points to a personal creator?",
+  "sides": {
+    "pro": {
+      "label": "Kalam defender",
+      "speakers": [
+        "William Lane Craig"
+      ]
+    },
+    "con": {
+      "label": "Kalam critic",
+      "speakers": [
+        "Alex Malpass"
+      ]
+    }
+  },
+  "durationSeconds": 5355,
+  "eventCount": 2471,
+  "requiredCandidateMoves": 8,
+  "requiredCandidatesPerSide": 4,
+  "requiredRouteShapePerSide": {
+    "motionBridges": 1,
+    "centralBridges": 1,
+    "subsidiaryBridges": 3
+  },
+  "routeIdentities": {
+    "pro": {
+      "routeId": "craig-malpass-kalam-nothing-2026-pro-route-v381",
+      "bridgeIds": {
+        "motion": "craig-malpass-kalam-nothing-2026-pro-motion-v381",
+        "central": "craig-malpass-kalam-nothing-2026-pro-central-v381",
+        "subsidiary": [
+          "craig-malpass-kalam-nothing-2026-pro-subsidiary-1-v381",
+          "craig-malpass-kalam-nothing-2026-pro-subsidiary-2-v381",
+          "craig-malpass-kalam-nothing-2026-pro-subsidiary-3-v381"
+        ]
+      }
+    },
+    "con": {
+      "routeId": "craig-malpass-kalam-nothing-2026-con-route-v381",
+      "bridgeIds": {
+        "motion": "craig-malpass-kalam-nothing-2026-con-motion-v381",
+        "central": "craig-malpass-kalam-nothing-2026-con-central-v381",
+        "subsidiary": [
+          "craig-malpass-kalam-nothing-2026-con-subsidiary-1-v381",
+          "craig-malpass-kalam-nothing-2026-con-subsidiary-2-v381",
+          "craig-malpass-kalam-nothing-2026-con-subsidiary-3-v381"
+        ]
+      }
+    }
+  },
+  "allowedBridgeIds": [
+    "craig-malpass-kalam-nothing-2026-pro-motion-v381",
+    "craig-malpass-kalam-nothing-2026-pro-central-v381",
+    "craig-malpass-kalam-nothing-2026-pro-subsidiary-1-v381",
+    "craig-malpass-kalam-nothing-2026-pro-subsidiary-2-v381",
+    "craig-malpass-kalam-nothing-2026-pro-subsidiary-3-v381",
+    "craig-malpass-kalam-nothing-2026-con-motion-v381",
+    "craig-malpass-kalam-nothing-2026-con-central-v381",
+    "craig-malpass-kalam-nothing-2026-con-subsidiary-1-v381",
+    "craig-malpass-kalam-nothing-2026-con-subsidiary-2-v381",
+    "craig-malpass-kalam-nothing-2026-con-subsidiary-3-v381"
+  ],
+  "candidateIdPolicy": "Do not emit candidate IDs; IDs are derived deterministically from debate identity and array position after validation.",
+  "contactPolicy": "Use null or exactly {polarity, bridgeId}; bridgeId must be copied from allowedBridgeIds.",
+  "sourceFilesInContext": {
+    "transcript": "transcript.txt",
+    "events": "events.json"
+  },
+  "prohibitedOutputs": [
+    "candidate IDs",
+    "scores",
+    "participant assessments",
+    "Overall Commentary",
+    "AI Extension"
+  ]
+}

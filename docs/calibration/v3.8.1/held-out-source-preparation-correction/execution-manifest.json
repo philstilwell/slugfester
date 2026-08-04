@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "3.8.1-heldout-source-preparation-correction-execution-manifest",
+  "protocolId": "v3.8.1-heldout-source-preparation-correction",
+  "parentGateId": "v3.8-heldout-burden-contact-integration-gate",
+  "status": "frozen-correction-execution-authorized",
+  "frozenAt": "2026-08-04T08:24:00.000Z",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "correctionBasis": {
+    "failedAttempt": "v3.8",
+    "failedAttemptStatus": "failed-at-proposal-boundary",
+    "invalidOutputsReused": false,
+    "rerunAllProposalContexts": true
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "modelInputs": {
+    "workflow": "docs/assessment-workflow-v3.8.md",
+    "rubric": "docs/reassessment-rubric-v3.8.md",
+    "manual": "docs/calibration/v3.8.1/held-out-source-preparation-correction/source-preparation-manual.md"
+  },
+  "debateNumbers": [
+    "103",
+    "55",
+    "161"
+  ],
+  "proposalContexts": {
+    "55": {
+      "debateNumber": "55",
+      "packet": "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/packets/debate-55.json",
+      "schema": "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/schemas/debate-55.schema.json",
+      "rawOutput": "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/raw-outputs/debate-55.json",
+      "enrichedOutput": "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/enriched-outputs/debate-55.json",
+      "transcript": ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt",
+      "events": ".assessment-cache/captions/zQBY5K-Ns2Y/events.json"
+    },
+    "103": {
+      "debateNumber": "103",
+      "packet": "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/packets/debate-103.json",
+      "schema": "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/schemas/debate-103.schema.json",
+      "rawOutput": "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/raw-outputs/debate-103.json",
+      "enrichedOutput": "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/enriched-outputs/debate-103.json",
+      "transcript": ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt",
+      "events": ".assessment-cache/captions/g1TlLCSn_5o/events.json"
+    },
+    "161": {
+      "debateNumber": "161",
+      "packet": "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/packets/debate-161.json",
+      "schema": "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/schemas/debate-161.schema.json",
+      "rawOutput": "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/raw-outputs/debate-161.json",
+      "enrichedOutput": "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/enriched-outputs/debate-161.json",
+      "transcript": ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt",
+      "events": ".assessment-cache/captions/9JVRy7bR7zI/events.json"
+    }
+  },
+  "authorization": {
+    "sourcePreparationModelExecution": true,
+    "burdenContactClassificationPasses": false,
+    "numericalParticipantScoring": false,
+    "assessmentProse": false,
+    "benchmarkMutation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  },
+  "authorizationScope": "Exactly three fresh source-proposal contexts, three isolated label-blind source-review contexts, and at most one dispute-only source-adjudication context per selected debate.",
+  "isolation": {
+    "temporaryCodexHomePerContext": true,
+    "proposalAndReviewContextsSeparate": true,
+    "reviewPacketsHideProposalLabelsAttributionAndRationales": true,
+    "adjudicationPacketsContainOnlyDisputedFields": true,
+    "legacyInvalidOutputsUnavailable": true,
+    "priorAssessmentContentUnavailable": true,
+    "scoresUnavailable": true
+  },
+  "executionPolicy": {
+    "proposalContexts": 3,
+    "reviewContexts": 3,
+    "adjudicationContextsMaximum": 3,
+    "attemptsPerContext": 1,
+    "modelOutputRetriesMaximum": 0,
+    "sameRequestStreamRecoveriesMaximumPerContext": 2,
+    "sameRequestStreamRecoveryMeaning": "Transport reconnection inside the same Codex request/session; never a new inference attempt.",
+    "perInvocationTimeoutMs": 3600000,
+    "timedOutContextsMaximum": 0,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "deterministicNormalization": {
+    "proposalCandidateIdsModelAuthored": false,
+    "candidateIdRule": "debateId plus ordered array position",
+    "semanticFieldsChanged": false,
+    "rawAndEnrichedHashesRequired": true
+  },
+  "consensusPolicy": {
+    "finalPreparationFieldRequiresMatchingVotes": 2,
+    "thirdPassLimitedToTwoInitialValues": true,
+    "audioRequiredIfEitherInitialAttributionBelowHigh": true,
+    "unresolvedAudioExcludesMove": true
+  },
+  "selectionPolicy": {
+    "candidatesPerDebate": 8,
+    "finalMovesPerDebate": 4,
+    "finalMovesPerSide": 2,
+    "requiredCategories": [
+      "none",
+      "support",
+      "attack"
+    ],
+    "preferTierDiversityThenTemporalSpreadThenLexicalId": true,
+    "directBridgeIdsOnly": true
+  },
+  "dryFixture": {
+    "path": "docs/calibration/v3.8.1/held-out-source-preparation-correction/end-to-end-dry-fixture.json",
+    "sha256": "9313837901ad6d7a3d0cf222fb7ac5d6e558830ccafc528aeb12af2d98ad918c"
+  },
+  "artifacts": {
+    "proposalExecution": "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/model-execution.json",
+    "reviewLock": "docs/calibration/v3.8.1/held-out-source-preparation-correction/review/phase-lock.json",
+    "reviewExecution": "docs/calibration/v3.8.1/held-out-source-preparation-correction/review/model-execution.json",
+    "initialDisagreements": "docs/calibration/v3.8.1/held-out-source-preparation-correction/initial-disagreements.json",
+    "adjudicationOptionMap": "docs/calibration/v3.8.1/held-out-source-preparation-correction/adjudication-option-map.json",
+    "adjudicationLock": "docs/calibration/v3.8.1/held-out-source-preparation-correction/adjudication/phase-lock.json",
+    "adjudicationExecution": "docs/calibration/v3.8.1/held-out-source-preparation-correction/adjudication/model-execution.json",
+    "analysis": "docs/calibration/v3.8.1/held-out-source-preparation-correction/source-preparation-analysis.json",
+    "finalInventory": "docs/calibration/v3.8.1/held-out-source-preparation-correction/final-source-inventory.json"
+  },
+  "passMeaning": "A completed correction may authorize preregistration of classification-packet construction only. Classification model execution, scores, prose, production changes, and corpus rollout remain blocked.",
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.8.md": "eb506e3d7bda146173ace0ad9936f816438ea88d65fd0a8a592fd98d7cdec62b",
+    "docs/reassessment-rubric-v3.8.md": "a8754450c35431e857ae794e1a6aefd7dcfdb698457032e22c96471525fd5312",
+    "docs/calibration/v3.8.1/held-out-source-preparation-correction/source-preparation-manual.md": "0fa440361ac4c07d524196dee5cca841db1ac39b9f8a9441c649a721d0d50131",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/gate-manifest.json": "59c60922f815e46f15bebd014dc4e90981d9ca9983047ac9f0c3158a8151e60c",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-audit.json": "99809f45e46fbb857d0e7dd947e82f555fa35da5f3b8bed7dacdfc8a0d97443d",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation/frozen-attempt-failure.json": "46a705a6dc7b8aacadc464ea4e53f81f991848b8e9b57c07334e8c867907b775",
+    "docs/calibration/v3.8.1/held-out-source-preparation-correction/end-to-end-dry-fixture.json": "9313837901ad6d7a3d0cf222fb7ac5d6e558830ccafc528aeb12af2d98ad918c",
+    "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/packets/debate-55.json": "20182f0d4e201e42db92ccf0538f09079285e180056be1673c36523f7c4e837a",
+    "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/schemas/debate-55.schema.json": "694be4feb4b345f825d2b8ee8644ba2f7b3e861f1db9965cec7b6153d92a13bb",
+    "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/packets/debate-103.json": "6b16e469a8dbf57d7109510efadc5af7ce0812acda471245c20eb8b774a93b69",
+    "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/schemas/debate-103.schema.json": "1a27669818b5e3de16692f8080aee241b9ab4dab0d93bc1c60285c6378919a48",
+    "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/packets/debate-161.json": "304d632c657b54abc6ecf3473868086a12f77ac98bafdd5c9415c0034294c875",
+    "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/schemas/debate-161.schema.json": "ed7bc55cf8d4bc00ec2c202e7a858149479efaaab10c210b430538b90cdc38f0",
+    "scripts/lib/v381-source-preparation.mjs": "ccc2c66a1c2ab50fbebc26888f622c9632fb273c2b24b45ea68618188df384d7",
+    "scripts/lib/v381-source-execution.mjs": "d5c53ec36b8c4de9572e3e279e11a59b6ca261c5f5c89969311bca76f3a4e598",
+    "scripts/build-v381-source-preparation-packets.mjs": "454174f30d39a4d11065fe1ae409debb4dbcb5b5214737f06a461c87650de4d0",
+    "scripts/validate-v381-source-proposal.mjs": "4825056493d086c9294ba386991cf66f33d3d2c66d893a66e0a8e72173e41ce1",
+    "scripts/build-v381-source-review-packets.mjs": "d6e0cb836f3fce0d9780f5c7e3d97a9b453e6b8a840c6c52f28fc16404584b58",
+    "scripts/validate-v381-source-review.mjs": "2928c5bc0f08145c501c757a8dd7ea9a2d01efefcb8b82e5e3bb2013da746b06",
+    "scripts/validate-v381-source-adjudication.mjs": "6df9ea7f5e22f2cde7ad5e33bf94bf6948d823424310802c3d3c1585a0961ce5",
+    "scripts/extract-v381-source-disagreements.mjs": "49fa8dde052af7d95c99529eb8f324f6dd9cd0581817089581aefa1ac1e327a5",
+    "scripts/analyze-v381-source-preparation.mjs": "4d5bc3f8c633501d6746adeace4d19385fcb2c4b907516629425e01e78fcfad1",
+    "scripts/test-v381-source-preparation-end-to-end.mjs": "172c6e61dd15af518999be33273d848cd8c7d6400dc66f15f4f069ed65a22cf1",
+    "scripts/run-v381-source-preparation.mjs": "139c82e13c73d3fe4455d4a05c873469be866ff1205c910e350cab9643128d40",
+    "scripts/preregister-v381-source-execution.mjs": "9c1ad00fda435246dc6df35828f9880a915135059412de208493893e310517dd",
+    "scripts/validate-v381-source-execution-lock.mjs": "d1bdfc861ea6b5fd71082faeb64ebea8f6662893c1d2009fb526b6ff4a22bd08",
+    "scripts/validate-v381-source-preparation-result.mjs": "64961386c4b8d7817564fdf575331a4c361736b367c3aad0fbe32b69d97bc656"
+  }
+}
