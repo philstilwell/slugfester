@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "3.8.8-coverage-coherence-adjudication-execution-manifest",
+  "protocolId": "v3.8.8-coverage-atomic-coherence-adjudication",
+  "stage": "cross-field-atomic-bundle-adjudication",
+  "status": "frozen-one-context-authorized",
+  "frozenAt": "2026-08-04T16:03:15Z",
+  "checkpointCommit": "27416de87a39b6c2533c8a322b33ffa9ed65637e",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "modelInputs": {
+    "workflow": "docs/assessment-workflow-v3.8.4.md",
+    "rubric": "docs/reassessment-rubric-v3.8.4.md",
+    "manual": "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication-manual.md",
+    "packet": "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/packet.json",
+    "schema": "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/schema.json"
+  },
+  "authorization": {
+    "modelContexts": 1,
+    "coherenceAdjudicationModelExecution": true,
+    "deterministicConsensusMergeAfterPass": true,
+    "sectionAndWeightLocking": false,
+    "burdenContactModelExecution": false,
+    "scoringModelExecution": false,
+    "assessmentProse": false,
+    "productionMutation": false,
+    "tenDebateGate": false,
+    "all195Debates": false
+  },
+  "isolation": {
+    "temporaryCodexHome": true,
+    "freshSourceDirectory": true,
+    "oneAtomicBundleOnly": true,
+    "anonymousOptionOrder": true,
+    "privateOptionMapAvailableToModel": false,
+    "fieldwiseAdjudicationAvailableToModel": false,
+    "initialPassOutputsAvailableToModel": false,
+    "otherDebatesAvailableToModel": false,
+    "scoresAvailable": false,
+    "winnerAvailable": false
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attempts": 1,
+    "retriesMaximum": 0,
+    "perInvocationTimeoutMs": 3600000,
+    "recoverableStreamEventsNormalMaximum": 2,
+    "recoverableStreamEventsHardMaximum": 8,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "acceptanceRule": {
+    "validContextsRequired": 1,
+    "wholeSuppliedBundleOnlyRequired": true,
+    "exactBundleCountRequired": 1,
+    "closedSchemaAndDeterministicValidationRequired": true,
+    "modelScoreFieldsMaximum": 0
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocksExecution": true,
+    "preexistingOutputBlocksExecution": true,
+    "invalidOutputBlocksConsensusMerge": true,
+    "componentMixingForbidden": true,
+    "furtherAutomaticRetryAuthorized": false,
+    "scoringRemainsBlocked": true
+  },
+  "artifacts": {
+    "audit": "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/coherence-audit.json",
+    "privateOptionMap": "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/private-option-map.json",
+    "output": "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/output.json",
+    "execution": "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/model-execution.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/output.json",
+    "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/model-execution.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.8.4.md": "49dda91a87c0ebbab9666d6c732035bde17939d84f4b71b326f4f04b917ddd5a",
+    "docs/reassessment-rubric-v3.8.4.md": "fda29887abb26f1f5a6f7b772e26434db0c055ec3efe42be4eeea602f5a84909",
+    "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication-manual.md": "1aa9ca750e446e9a6f96b95043c2446519a3cc6e79ddc10dd27a7d9d0f4eb027",
+    "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/packet.json": "b133aa47825df01c8a731a17b720d3ee04f760b360b9f1d300d4754a13eaae80",
+    "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/schema.json": "cc386e7ee1c6451f2489bf29acb9472db8b419b52e42c8fc3abd99d971e49af7",
+    "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/private-option-map.json": "0460759b8fb0ba0a2da56fc4723ca4c6a351849045dbe225e3e227c468bb41f0",
+    "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/coherence-audit.json": "f4aefccb58ca86578c3f4904ed5c6eb8150411611c0c027789b0ad64f44a0f33",
+    "docs/calibration/v3.8.8/coverage-consensus/initial-disagreements.json": "2fd750ec5cfffac03e6245723d544619c13907266439b4a8b252db4d8e9dd372",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication-option-map.json": "8a7ac0c2543418d23f8ef7f428ba1c7674bef560f423c819661be738a10ace3c",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication/model-execution.json": "7519477e67432e9b1e3d4d04c4daafceac63a611071578ace91ddedfbb464ced",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication/outputs/debate-103.json": "f8a0682246a8f96d4c5cb4e5449efa515a002554f925869bd8af5c8d11316e85",
+    "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/conditional-field-audit.json": "b6470fa68d8b1880a5f353076e49c84d84f7bb90e093395023e2a8a9be07b456",
+    "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/output.json": "30bb2948c43d33577102e66cd0d7e2b1b0bc67b97e54ed04dc87d065a7ec3ef8",
+    "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/model-execution.json": "abf218c61eff360552f8c1d1fe2d82344b0cde6070dacf9f0f9498927fdfdd37",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v37-retired-semantic.mjs": "2fe113760e4b2bb97104025d39755d8ceeeecded89fbaea683cc5c9cce188296",
+    "scripts/lib/v381-source-preparation.mjs": "ccc2c66a1c2ab50fbebc26888f622c9632fb273c2b24b45ea68618188df384d7",
+    "scripts/lib/v385-transport.mjs": "f20d5cb026e0c2720d32276ddcbb612ec852e3732d7653e47a98ba5ffa880dfe",
+    "scripts/lib/v388-coverage-consensus.mjs": "531a2d9a1b735fe6cc367a9a59d101327ee3ab1e20e668b9c09f1c5b378a54e4",
+    "scripts/prepare-v388-coverage-coherence-adjudication.mjs": "a1c064133393b57940d51c4d602163ab9f4b9681dfef0f670f9eb5697a2d4915",
+    "scripts/validate-v388-coverage-coherence-adjudication.mjs": "59d91c61e83487adfbebced23b7ed1be1933cab506ba3cd5e1e13caf0e773151",
+    "scripts/preregister-v388-coverage-coherence-adjudication.mjs": "2bb4c2cfa6796ef7c3fee0e7129299ddbc791eeb853de7d73ad02b85735764da",
+    "scripts/validate-v388-coverage-coherence-adjudication-lock.mjs": "146b5c277f8ef2261efec6b9a55214572ce332fae72c7cfa8372ab0f6b1e5a55",
+    "scripts/run-v388-coverage-coherence-adjudication.mjs": "f425119c9538a6eb253c36d6d1e39cc387da0da49a4019ba2ef8891917fbdff6"
+  }
+}
