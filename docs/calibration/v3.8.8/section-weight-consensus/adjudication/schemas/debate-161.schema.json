@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v388-section-weight-adjudication-161",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "plans"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.8-section-weight-adjudication-output"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "161"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "craig-millican-does-god-exist-2011"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "section-weight-adjudicator"
+    },
+    "plans": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "fieldId",
+          "optionId",
+          "rationale"
+        ],
+        "properties": {
+          "fieldId": {
+            "type": "string",
+            "const": "debate:craig-millican-does-god-exist-2011:sectionWeightPlan"
+          },
+          "optionId": {
+            "type": "string",
+            "enum": [
+              "option-1",
+              "option-2"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 120
+          }
+        }
+      }
+    }
+  }
+}
