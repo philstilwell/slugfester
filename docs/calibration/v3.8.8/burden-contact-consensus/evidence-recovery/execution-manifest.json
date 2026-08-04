@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "3.8.8-burden-contact-evidence-recovery-execution-manifest",
+  "protocolId": "v3.8.8-contact-evidence-only-recovery",
+  "status": "frozen-one-context-authorized",
+  "frozenAt": "2026-08-04T17:14:30Z",
+  "checkpointCommit": "1955dcbef177a5a48ab0688959a703fb80894c85",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "context": {
+    "recoveryId": "v388-contact-evidence-recovery-55-pass-a-bundles-04-20",
+    "debateNumber": "55",
+    "reviewerPass": "pass-a",
+    "bundleIds": [
+      "v388-contact-55-04",
+      "v388-contact-55-20"
+    ],
+    "manual": "docs/calibration/v3.8.8/burden-contact-consensus/evidence-recovery/manual.md",
+    "packet": "docs/calibration/v3.8.8/burden-contact-consensus/evidence-recovery/packet.json",
+    "schema": "docs/calibration/v3.8.8/burden-contact-consensus/evidence-recovery/schema.json",
+    "output": "docs/calibration/v3.8.8/burden-contact-consensus/evidence-recovery/model-output.json"
+  },
+  "authorization": {
+    "evidenceRecoveryContexts": 1,
+    "evidenceRecoveryModelExecution": true,
+    "semanticClassificationChange": false,
+    "burdenContactReclassification": false,
+    "disagreementExtraction": false,
+    "adjudicationModelExecution": false,
+    "responseQualityModelExecution": false,
+    "scoringModelExecution": false,
+    "numericalParticipantScoring": false,
+    "assessmentProse": false,
+    "productionMutation": false,
+    "tenDebateGate": false,
+    "all195Debates": false
+  },
+  "isolation": {
+    "freshTemporaryCodexHome": true,
+    "freshSourceDirectory": true,
+    "otherBundlesUnavailable": true,
+    "otherPassUnavailable": true,
+    "optionMappingUnavailable": true,
+    "candidateUniverseUnavailable": true,
+    "scoresUnavailable": true,
+    "winnerUnavailable": true
+  },
+  "immutableFields": {
+    "targets": [
+      {
+        "bundleId": "v388-contact-55-04",
+        "optionId": "option-19",
+        "rationaleSha256": "9221d340803d8753b6dc0ee8237ee54e4a80be1ef403b32e3f66820d8597f38f"
+      },
+      {
+        "bundleId": "v388-contact-55-20",
+        "optionId": "option-13",
+        "rationaleSha256": "072976682b12b6a2cfeb200944e4e0c8fc7928bf218f09c49013ba23fd172d8f"
+      }
+    ],
+    "allOtherFieldsAndBundles": true
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "perInvocationTimeoutMs": 3600000,
+    "recoverableStreamEventsNormalMaximum": 2,
+    "recoverableStreamEventsHardMaximum": 8,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "acceptanceRule": {
+    "validContextsRequired": 1,
+    "replacementEvidenceFieldsRequired": 2,
+    "replacementEvidenceExactUniqueSubstringRequired": true,
+    "semanticChangesMaximum": 0,
+    "scoreFieldsMaximum": 0,
+    "recoveredFullOutputMustValidate": true
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocksExecution": true,
+    "preexistingOutputBlocksExecution": true,
+    "invalidRecoveryBlocksCompilation": true,
+    "furtherAutomaticRetryAuthorized": false,
+    "disagreementExtractionRemainsBlockedUntilRecoveredOutputValidates": true,
+    "scoringRemainsBlocked": true
+  },
+  "artifacts": {
+    "modelExecution": "docs/calibration/v3.8.8/burden-contact-consensus/evidence-recovery/model-execution.json",
+    "recoveredOutput": "docs/calibration/v3.8.8/burden-contact-consensus/evidence-recovery/recovered-output.json",
+    "recoveryAudit": "docs/calibration/v3.8.8/burden-contact-consensus/evidence-recovery/recovery-audit.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v3.8.8/burden-contact-consensus/evidence-recovery/model-output.json",
+    "docs/calibration/v3.8.8/burden-contact-consensus/evidence-recovery/model-execution.json",
+    "docs/calibration/v3.8.8/burden-contact-consensus/evidence-recovery/recovered-output.json",
+    "docs/calibration/v3.8.8/burden-contact-consensus/evidence-recovery/recovery-audit.json"
+  ],
+  "sourceHashes": {
+    "docs/calibration/v3.8.8/burden-contact-consensus/evidence-recovery/manual.md": "c424e3d84d81dea314ce252d6d40465e96dbaffe88f6c6f86e1d495d47716a17",
+    "docs/calibration/v3.8.8/burden-contact-consensus/evidence-recovery/packet.json": "9e590e109693862c6c2b2bbc1b73f6461cc7bdfc0a117716f6a8a566ae2ed5f2",
+    "docs/calibration/v3.8.8/burden-contact-consensus/evidence-recovery/schema.json": "6f14c87ca28a96c4f649845b38ea79329672deb8afc34ae19a3106abc639b38e",
+    "docs/calibration/v3.8.8/burden-contact-consensus/evidence-recovery/defect-audit.json": "a0c29547f046ca3fc523be107fa61f2216bad8a209ae45b938f0176cabf9e289",
+    "docs/calibration/v3.8.8/burden-contact-consensus/evidence-recovery/dry-output.json": "fce46f3ccba1524fa424fa5cbe19a8c207806237aedceccb4a86443d1e206d1e",
+    "docs/calibration/v3.8.8/burden-contact-consensus/initial-execution-manifest.json": "5f7654b1dc7a5258512afbc4f231523899a0e729e954c59ded95594abb30b0b0",
+    "docs/calibration/v3.8.8/burden-contact-consensus/initial-model-execution.json": "df2892c7dfb0eb1aec1bd1a08bb363e77bacef33fb7cea7015f95ea3b5a21255",
+    "docs/calibration/v3.8.8/burden-contact-consensus/initial-execution-assessment.md": "647fccda5d045fa1f3d60e08cc6cf1f6092636bb570a51c20276508a46453dfa",
+    "docs/calibration/v3.8.8/burden-contact-consensus/initial-outputs/pass-a/debate-55.json": "ba529d56d4f399ca75aa4d2ff8d9bdffe3b9e40f65f78938e93d5c195bb736fd",
+    "docs/calibration/v3.8.8/burden-contact-consensus/packets/pass-a/debate-55.json": "a67c673fc6e2c10c3e27975e80b0e0c1b2efa3f0bccf4ac3c27846aa4af62242",
+    "docs/calibration/v3.8.8/burden-contact-consensus/schemas/pass-a/debate-55.schema.json": "a5d77fd6a96d6bc8007d0a24df8764beb432f03a1bc2868efab369c0da797079",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v37-retired-semantic.mjs": "2fe113760e4b2bb97104025d39755d8ceeeecded89fbaea683cc5c9cce188296",
+    "scripts/lib/v385-transport.mjs": "f20d5cb026e0c2720d32276ddcbb612ec852e3732d7653e47a98ba5ffa880dfe",
+    "scripts/lib/v388-burden-contact.mjs": "0ffa765fda32a7c79295605fe522deab51bba4938ffed3c579a0a07434f2a61b",
+    "scripts/build-v388-contact-evidence-recovery.mjs": "3aac2cad0aaf8cccaf17214b4d65a823088da7604b5efa2459851486cc1a252b",
+    "scripts/validate-v388-contact-evidence-recovery.mjs": "93ac00b7adc14c1e90f08577d27b24037e62f3d443dafa55e8a67fd289d3faa0",
+    "scripts/test-v388-contact-evidence-recovery.mjs": "ec323284e81ad28d725facb0540bbc24b55258e36fe243701db72866a0a354fe",
+    "scripts/preregister-v388-contact-evidence-recovery.mjs": "a3a259a0625361b3ae03b2fb88e44a9c307353735f20406752b3b31762df880f",
+    "scripts/validate-v388-contact-evidence-recovery-lock.mjs": "6d3453880c21ebb01aeff27a13c145b8e1098e2741de058135ef9b2fb707084d",
+    "scripts/run-v388-contact-evidence-recovery.mjs": "daee97dee4d357b0466585f0a0ec860411c8ca1e78bcfe4cd939855e8f0f3c3f",
+    "scripts/compile-v388-contact-evidence-recovery.mjs": "a6b7532e3b88ea847faf944e29a8228881ad5aac21e8439df2219fa8ce0ad550"
+  }
+}
