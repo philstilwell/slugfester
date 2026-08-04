@@ -1,0 +1,205 @@
+{
+  "schemaVersion": "3.7.6-disjoint-burden-contact-development-manifest",
+  "protocolId": "v3.7.6-case-disjoint-retired-burden-contact-test",
+  "status": "frozen-packet-development-model-execution-blocked",
+  "frozenAt": "2026-08-04T06:25:15.782Z",
+  "workflowVersion": "Slugfester Burden-Contact Decomposition Workflow v3.7.6",
+  "rubricVersion": "Slugfester Burden-Contact Decomposition Rubric v3.7.6",
+  "calibrationOnly": true,
+  "retiredCases": true,
+  "caseDisjointFromV376Development": true,
+  "dyadicOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "sample": {
+    "debateNumbers": [
+      "04",
+      "62",
+      "152"
+    ],
+    "debateCount": 3,
+    "compositeCaseCount": 12,
+    "casesPerDebate": 4,
+    "multiSpeakerDebates": 0,
+    "developmentOverlapCoordinates": 0,
+    "allSpeakerAttributionConfidenceHigh": true,
+    "provisionalCategoryBalance": {
+      "none": 2,
+      "support": 7,
+      "attack": 3,
+      "motion": 1,
+      "central": 1,
+      "subsidiary": 8
+    }
+  },
+  "decomposition": {
+    "exactPropositionContactFirst": true,
+    "explicitNoContactCandidate": true,
+    "supportAttackPolarityExplicit": true,
+    "bridgeSelectedWithinValidComposite": true,
+    "genericSubsidiaryCatchAllProhibited": true,
+    "motionRequiresCompleteConclusion": true
+  },
+  "sourceControls": {
+    "localTranscriptRequired": true,
+    "localTranscriptHashesVerified": true,
+    "uniqueNormalizedEventMatchRequired": true,
+    "mediumOrLowAttributionRequiresAudioVerification": true,
+    "mediumOrLowAttributionsInSample": 0,
+    "requiredAudioVerifications": 0,
+    "completedAudioVerifications": 0
+  },
+  "provisionalReference": {
+    "warning": "AI-authored retired references only test candidate coverage and category balance; they are hidden from model contexts and are not a pass threshold, benchmark, or human ground truth."
+  },
+  "plannedExecution": {
+    "initialContexts": 6,
+    "adjudicationContextsMaximum": 3,
+    "attemptsPerContext": 1,
+    "modelOutputRetriesMaximum": 0,
+    "sameRequestStreamRecoveriesMaximum": 0,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "frozenThresholds": {
+    "validInitialContexts": 6,
+    "initialCompositeAgreementsMinimum": 11,
+    "initialCompositeCases": 12,
+    "initialDisagreementsMaximum": 1,
+    "initialInvalidBundlesMaximum": 0,
+    "finalTwoVoteBundlesRequired": 12,
+    "unresolvedBundlesMaximum": 0,
+    "requiredAudioVerificationRate": 1,
+    "scoringFieldsMaximum": 0
+  },
+  "passMeaning": "A pass may authorize separate preregistration of a narrow held-out burden-contact integration gate only; it does not authorize held-out access, numerical scoring, assessment prose, benchmark mutation, or production reassessment.",
+  "developmentState": {
+    "packetsBuilt": true,
+    "schemasBuilt": true,
+    "dryFixturePassed": true,
+    "sourceAuditPassed": true,
+    "executionRunnerImplemented": false,
+    "disagreementExtractorImplemented": false,
+    "adjudicationRunnerImplemented": false,
+    "analyzerImplemented": false,
+    "modelExecutionAuthorized": false
+  },
+  "priorV376Smoke": {
+    "manifestPath": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/execution-manifest.json",
+    "manifestSha256": "3dd2ba1153c8091eacd246b8fd68150b9801e6140f7f820b3aad19d5097a925c",
+    "analysisPath": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/smoke-analysis.json",
+    "analysisSha256": "7b02611fbd69eeab4b50e7dc4d2364d2883d3e8a50ac73f336ce0be81cb64ef8",
+    "assessmentPath": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/execution-assessment.md",
+    "assessmentSha256": "e9bedac0d882e3af84c59f7eaee6e55dacd048552bbf1e404a23662dc5865b8a",
+    "outcome": "perfect-initial-composite-repeatability-pass"
+  },
+  "sealedOptionMap": {
+    "path": "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/sealed-option-map.json",
+    "sha256": "3c2f2b0a27bb4bc7c8b92156b5dfc9e5ecadf40691deb1e5d7611921b21eedc4",
+    "unavailableToModelContexts": true
+  },
+  "sourceAudit": {
+    "path": "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/source-audit.json",
+    "sha256": "5d841322d5cb4c827717374ed1792a65d3225f329c89bbe37f807c934acde1a2"
+  },
+  "contexts": {
+    "pass-a": {
+      "62": {
+        "packet": "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/packets/pass-a/debate-62.json",
+        "packetSha256": "fa9e8e32b6211567371740f955d5f4e39f7773b39a6ce738ddd790e19af84634",
+        "schema": "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/schemas/pass-a/debate-62.schema.json",
+        "schemaSha256": "5c285284c41fc556cb26df43f24d6f1bcc0da47d24d5a3d8a87508c5517afa8a",
+        "bundleCount": 4
+      },
+      "152": {
+        "packet": "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/packets/pass-a/debate-152.json",
+        "packetSha256": "bb450db2a9c9e89d82f22df3f703a04720d4367601d684053c2e00945d729f49",
+        "schema": "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/schemas/pass-a/debate-152.schema.json",
+        "schemaSha256": "7135a7062225e11fa42dc01d010af5d5a8132c30307e423a6c84526c19de25c3",
+        "bundleCount": 4
+      },
+      "04": {
+        "packet": "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/packets/pass-a/debate-04.json",
+        "packetSha256": "41689ad507e159e6d201a46a6e956be75dfdbafa3082fabff3fc2ebf314c28d3",
+        "schema": "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/schemas/pass-a/debate-04.schema.json",
+        "schemaSha256": "92fba18addc26c4f4a9759aa4dc469a1a6433777059124527f41ee8da4d31b50",
+        "bundleCount": 4
+      }
+    },
+    "pass-b": {
+      "62": {
+        "packet": "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/packets/pass-b/debate-62.json",
+        "packetSha256": "ebce5a8126e3adc7e682453d592740fc1560f12231c777920bbba1d8f00227a4",
+        "schema": "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/schemas/pass-b/debate-62.schema.json",
+        "schemaSha256": "411b1d2d8db79e7b31778259b8f65a6ded67099743816f619b7aabbe40a34b2a",
+        "bundleCount": 4
+      },
+      "152": {
+        "packet": "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/packets/pass-b/debate-152.json",
+        "packetSha256": "93301cf89d4a9b879130644524a18e739d4e4b96a3689e381609ed5945299131",
+        "schema": "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/schemas/pass-b/debate-152.schema.json",
+        "schemaSha256": "bcbdac5e5077997e1659c4ca53a493f91a36e37a2f8c5ca28b31ded2c4996f5f",
+        "bundleCount": 4
+      },
+      "04": {
+        "packet": "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/packets/pass-b/debate-04.json",
+        "packetSha256": "ff565b12c5c08f004708b6b2a7235a2af7af4599718181e6763f5c66dd701140",
+        "schema": "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/schemas/pass-b/debate-04.schema.json",
+        "schemaSha256": "7dfe2dbea32ae5566b0ad0db5570108fdaf51e2a7850bcd305e7dad6a332ba01",
+        "bundleCount": 4
+      }
+    }
+  },
+  "dryFixture": {
+    "path": "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/dry-fixture.json",
+    "sha256": "fbd4d57acb70566a0c1adc6eb6bcf669fe1399312575ecac3477a5daf7eda63a"
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.7.6.md": "b5a615b276422f4146908b4495871a73171457d3a931f5455f21d960b9d5e540",
+    "docs/reassessment-rubric-v3.7.6.md": "e3dc1ae838bdae7dd0878cd415e62f6648cb911204a78315d932990bc8bce488",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/test-manual.md": "3452f4d4802661e10439bf6767b5d719dfa4f78a2ea1b635e0050dbc660b2d85",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/dry-fixture.json": "fbd4d57acb70566a0c1adc6eb6bcf669fe1399312575ecac3477a5daf7eda63a",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/sealed-option-map.json": "3c2f2b0a27bb4bc7c8b92156b5dfc9e5ecadf40691deb1e5d7611921b21eedc4",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/source-audit.json": "5d841322d5cb4c827717374ed1792a65d3225f329c89bbe37f807c934acde1a2",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/packets/pass-a/debate-04.json": "41689ad507e159e6d201a46a6e956be75dfdbafa3082fabff3fc2ebf314c28d3",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/schemas/pass-a/debate-04.schema.json": "92fba18addc26c4f4a9759aa4dc469a1a6433777059124527f41ee8da4d31b50",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/packets/pass-a/debate-62.json": "fa9e8e32b6211567371740f955d5f4e39f7773b39a6ce738ddd790e19af84634",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/schemas/pass-a/debate-62.schema.json": "5c285284c41fc556cb26df43f24d6f1bcc0da47d24d5a3d8a87508c5517afa8a",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/packets/pass-a/debate-152.json": "bb450db2a9c9e89d82f22df3f703a04720d4367601d684053c2e00945d729f49",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/schemas/pass-a/debate-152.schema.json": "7135a7062225e11fa42dc01d010af5d5a8132c30307e423a6c84526c19de25c3",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/packets/pass-b/debate-04.json": "ff565b12c5c08f004708b6b2a7235a2af7af4599718181e6763f5c66dd701140",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/schemas/pass-b/debate-04.schema.json": "7dfe2dbea32ae5566b0ad0db5570108fdaf51e2a7850bcd305e7dad6a332ba01",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/packets/pass-b/debate-62.json": "ebce5a8126e3adc7e682453d592740fc1560f12231c777920bbba1d8f00227a4",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/schemas/pass-b/debate-62.schema.json": "411b1d2d8db79e7b31778259b8f65a6ded67099743816f619b7aabbe40a34b2a",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/packets/pass-b/debate-152.json": "93301cf89d4a9b879130644524a18e739d4e4b96a3689e381609ed5945299131",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/schemas/pass-b/debate-152.schema.json": "bcbdac5e5077997e1659c4ca53a493f91a36e37a2f8c5ca28b31ded2c4996f5f",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v37-retired-semantic.mjs": "2fe113760e4b2bb97104025d39755d8ceeeecded89fbaea683cc5c9cce188296",
+    "scripts/lib/v372-atomic-bundles.mjs": "ec5908ea20bd0b099095257ee614d07893a1b245bf693abee2f697a3f0de0a0c",
+    "scripts/lib/v376-burden-contact.mjs": "7e24def7f4c205145f55ba3dcbec35c0ae4d3c8edb05f08ae4309d008d338b55",
+    "scripts/lib/v376d-burden-contact.mjs": "c672f618fdd1b8f10d946c94f1c1c58482f0f37912c6fd06717b1b1ebd5e01f7",
+    "scripts/build-v376d-burden-contact-packets.mjs": "49971e90433fe880e502236ab08d85f7e16349a019c0da19e86fa275f2b42aeb",
+    "scripts/test-v376d-burden-contact-packets.mjs": "8c8b960fd57590e9325e3c90fde58ddbecec783289f8c6097a879f54931b464a",
+    "scripts/preregister-v376d-burden-contact-development.mjs": "b2f96a54a6ffbae98370cc6aa7c44d2efb1cd4eff775e7ec4870d1fe298dc3fd",
+    "scripts/validate-v376d-burden-contact-development.mjs": "979dfda9f38241cb69e0080461a3130c8ae093031c56a8528e2ad35128a3c9dc",
+    "docs/calibration/v2.8/development/challenge-input.json": "bb8a407674bd1d7897b70bcffa4ab60d888cc005537a3bc8b7dcfd16e6fb8a3c",
+    "docs/calibration/v2.1/corpus-transcript-audit.json": "1884c2764b3e716d74d500da662d1828ec711dda43d5e71b1ae781b8ac2ff31f",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/execution-manifest.json": "3dd2ba1153c8091eacd246b8fd68150b9801e6140f7f820b3aad19d5097a925c",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/smoke-analysis.json": "7b02611fbd69eeab4b50e7dc4d2364d2883d3e8a50ac73f336ce0be81cb64ef8",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/execution-assessment.md": "e9bedac0d882e3af84c59f7eaee6e55dacd048552bbf1e404a23662dc5865b8a"
+  },
+  "prohibitions": {
+    "modelExecution": true,
+    "benchmarkMutation": true,
+    "largerModelBatch": true,
+    "heldOutAccess": true,
+    "numericalParticipantScoring": true,
+    "assessmentProse": true,
+    "productionMutation": true
+  }
+}

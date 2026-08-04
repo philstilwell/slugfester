@@ -1,0 +1,315 @@
+{
+  "schemaVersion": "3.7.6-disjoint-source-audit",
+  "status": "passed-local-transcript-and-case-disjointness",
+  "sourceFixture": {
+    "path": "docs/calibration/v2.8/development/challenge-input.json",
+    "sha256": "bb8a407674bd1d7897b70bcffa4ab60d888cc005537a3bc8b7dcfd16e6fb8a3c",
+    "retired": true
+  },
+  "corpusAudit": {
+    "path": "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "sha256": "1884c2764b3e716d74d500da662d1828ec711dda43d5e71b1ae781b8ac2ff31f"
+  },
+  "debateSources": {
+    "62": {
+      "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+      "videoId": "fJ05WWnyj2g",
+      "transcriptPath": ".assessment-cache/captions/fJ05WWnyj2g/transcript.txt",
+      "transcriptSha256": "179a89a9d3ffde116ca3baf8bdd0c575df7936cb680700213dfd036b19ab7aa3",
+      "eventsPath": ".assessment-cache/captions/fJ05WWnyj2g/events.json",
+      "eventsSha256": "09cab3056f81e6931c545295ad388a5b88c322b086eddc061f0b40b9290db36e",
+      "captionKind": "asr",
+      "wordCount": 28171,
+      "eventCount": 3420
+    },
+    "152": {
+      "debateId": "knechtle-aron-ra-god-existence-2023",
+      "videoId": "9r_XAIksLdI",
+      "transcriptPath": ".assessment-cache/captions/9r_XAIksLdI/transcript.txt",
+      "transcriptSha256": "afb9789743fdea882d2d18591b2504f773f9b0c08df226c2bcbda5de47ec2ed7",
+      "eventsPath": ".assessment-cache/captions/9r_XAIksLdI/events.json",
+      "eventsSha256": "8c3e7c8a52185cadaa1b5d03d50a844dc2dce7ec902054d95efa0aa88c666e33",
+      "captionKind": "asr",
+      "wordCount": 35044,
+      "eventCount": 4653
+    },
+    "04": {
+      "debateId": "lennox-atkins-science-explain-everything-2019",
+      "videoId": "fSYwCaFkYno",
+      "transcriptPath": ".assessment-cache/captions/fSYwCaFkYno/transcript.txt",
+      "transcriptSha256": "75f073cd00302d207f5386663ddf50d9517659dc38e587ac03d5c930322cd302",
+      "eventsPath": ".assessment-cache/captions/fSYwCaFkYno/events.json",
+      "eventsSha256": "fade372893ceaf7793f820a0645ed171437b45ebe2b641f28a86cd81af251499",
+      "captionKind": "asr",
+      "wordCount": 16066,
+      "eventCount": 2031
+    }
+  },
+  "cases": [
+    {
+      "sourceCaseId": "v28-dev-04-05",
+      "caseCoordinate": "04-05",
+      "debateNumber": "04",
+      "debateId": "lennox-atkins-science-explain-everything-2019",
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-05",
+      "speaker": "Peter Atkins",
+      "side": "con",
+      "sourceExcerptSha256": "04013b0d4e31396e0fb562711a2a4d695d9e36f2a290220d4929f8f83cb6267b",
+      "normalizedEventMatchCount": 1,
+      "sourceSpan": {
+        "startMs": 1177189,
+        "endMs": 1209979,
+        "startEvent": 400,
+        "endEvent": 410
+      },
+      "speakerAttributionConfidence": "high",
+      "attributionBasis": "Retired speaker label, uninterrupted dyadic turn, and position-specific content; the normalized excerpt matched one local timestamped span.",
+      "audioChecked": false,
+      "audioVerification": null
+    },
+    {
+      "sourceCaseId": "v28-dev-04-06",
+      "caseCoordinate": "04-06",
+      "debateNumber": "04",
+      "debateId": "lennox-atkins-science-explain-everything-2019",
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-06",
+      "speaker": "John Lennox",
+      "side": "pro",
+      "sourceExcerptSha256": "87839a0c2e1cfff6395579bc6f969c1ab9a0aadde1808a31d88024132ceaa9f5",
+      "normalizedEventMatchCount": 1,
+      "sourceSpan": {
+        "startMs": 1223539,
+        "endMs": 1255519,
+        "startEvent": 417,
+        "endEvent": 426
+      },
+      "speakerAttributionConfidence": "high",
+      "attributionBasis": "Retired speaker label, uninterrupted dyadic turn, and position-specific content; the normalized excerpt matched one local timestamped span.",
+      "audioChecked": false,
+      "audioVerification": null
+    },
+    {
+      "sourceCaseId": "v28-dev-04-10",
+      "caseCoordinate": "04-10",
+      "debateNumber": "04",
+      "debateId": "lennox-atkins-science-explain-everything-2019",
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-10",
+      "speaker": "Peter Atkins",
+      "side": "con",
+      "sourceExcerptSha256": "096e501799e1e1a607003cca957461e5e0b3ee58efa01b232d3f5f6667c867cb",
+      "normalizedEventMatchCount": 1,
+      "sourceSpan": {
+        "startMs": 4189130,
+        "endMs": 4209920,
+        "startEvent": 1435,
+        "endEvent": 1439
+      },
+      "speakerAttributionConfidence": "high",
+      "attributionBasis": "Retired speaker label, uninterrupted dyadic turn, and position-specific content; the normalized excerpt matched one local timestamped span.",
+      "audioChecked": false,
+      "audioVerification": null
+    },
+    {
+      "sourceCaseId": "v28-dev-04-11",
+      "caseCoordinate": "04-11",
+      "debateNumber": "04",
+      "debateId": "lennox-atkins-science-explain-everything-2019",
+      "moveId": "lennox-atkins-science-explain-everything-2019-move-11",
+      "speaker": "John Lennox",
+      "side": "pro",
+      "sourceExcerptSha256": "494e89ae384dbf6779d5d4e3f913325c29e330568a9a1486bdaf5e83d572d438",
+      "normalizedEventMatchCount": 1,
+      "sourceSpan": {
+        "startMs": 4819880,
+        "endMs": 4841360,
+        "startEvent": 1649,
+        "endEvent": 1655
+      },
+      "speakerAttributionConfidence": "high",
+      "attributionBasis": "Retired speaker label, uninterrupted dyadic turn, and position-specific content; the normalized excerpt matched one local timestamped span.",
+      "audioChecked": false,
+      "audioVerification": null
+    },
+    {
+      "sourceCaseId": "v28-dev-62-06",
+      "caseCoordinate": "62-06",
+      "debateNumber": "62",
+      "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-06",
+      "speaker": "Joe Folley",
+      "side": "con",
+      "sourceExcerptSha256": "77a2e5f01e8b98119545f020cdf7ecb4d2f752791a543d68323dbf4395c1e746",
+      "normalizedEventMatchCount": 1,
+      "sourceSpan": {
+        "startMs": 2452160,
+        "endMs": 2479200,
+        "startEvent": 1203,
+        "endEvent": 1214
+      },
+      "speakerAttributionConfidence": "high",
+      "attributionBasis": "Retired speaker label, uninterrupted dyadic turn, and position-specific content; the normalized excerpt matched one local timestamped span.",
+      "audioChecked": false,
+      "audioVerification": null
+    },
+    {
+      "sourceCaseId": "v28-dev-62-07",
+      "caseCoordinate": "62-07",
+      "debateNumber": "62",
+      "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-07",
+      "speaker": "Jonathan Pageau",
+      "side": "pro",
+      "sourceExcerptSha256": "107bfff64f2e6695e92fcefaa3de704f8e44012053d87a7e94db7b015d308bac",
+      "normalizedEventMatchCount": 1,
+      "sourceSpan": {
+        "startMs": 2714400,
+        "endMs": 2736640,
+        "startEvent": 1335,
+        "endEvent": 1343
+      },
+      "speakerAttributionConfidence": "high",
+      "attributionBasis": "Retired speaker label, uninterrupted dyadic turn, and position-specific content; the normalized excerpt matched one local timestamped span.",
+      "audioChecked": false,
+      "audioVerification": null
+    },
+    {
+      "sourceCaseId": "v28-dev-62-08",
+      "caseCoordinate": "62-08",
+      "debateNumber": "62",
+      "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-08",
+      "speaker": "Joe Folley",
+      "side": "con",
+      "sourceExcerptSha256": "ae2b0339bc96c43b00a4c880ea4500329a0c3d66da98e07f0a5d976cbe58ec1d",
+      "normalizedEventMatchCount": 1,
+      "sourceSpan": {
+        "startMs": 2979599,
+        "endMs": 3005200,
+        "startEvent": 1469,
+        "endEvent": 1478
+      },
+      "speakerAttributionConfidence": "high",
+      "attributionBasis": "Retired speaker label, uninterrupted dyadic turn, and position-specific content; the normalized excerpt matched one local timestamped span.",
+      "audioChecked": false,
+      "audioVerification": null
+    },
+    {
+      "sourceCaseId": "v28-dev-62-12",
+      "caseCoordinate": "62-12",
+      "debateNumber": "62",
+      "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-12",
+      "speaker": "Jonathan Pageau",
+      "side": "pro",
+      "sourceExcerptSha256": "771e0757995fba44582d55813354f352841d3522e27e16678f65699ca7ce4570",
+      "normalizedEventMatchCount": 1,
+      "sourceSpan": {
+        "startMs": 6512320,
+        "endMs": 6536560,
+        "startEvent": 3166,
+        "endEvent": 3174
+      },
+      "speakerAttributionConfidence": "high",
+      "attributionBasis": "Retired speaker label, uninterrupted dyadic turn, and position-specific content; the normalized excerpt matched one local timestamped span.",
+      "audioChecked": false,
+      "audioVerification": null
+    },
+    {
+      "sourceCaseId": "v28-dev-152-06",
+      "caseCoordinate": "152-06",
+      "debateNumber": "152",
+      "debateId": "knechtle-aron-ra-god-existence-2023",
+      "moveId": "knechtle-aron-ra-god-existence-2023-move-06",
+      "speaker": "Aron Ra",
+      "side": "con",
+      "sourceExcerptSha256": "c0fe7e0732a7344b094a886d8178805a9d60cb2e3fbea57e7f6a330e380bd7fd",
+      "normalizedEventMatchCount": 1,
+      "sourceSpan": {
+        "startMs": 3053520,
+        "endMs": 3086460,
+        "startEvent": 1335,
+        "endEvent": 1347
+      },
+      "speakerAttributionConfidence": "high",
+      "attributionBasis": "Retired speaker label, uninterrupted dyadic turn, and position-specific content; the normalized excerpt matched one local timestamped span.",
+      "audioChecked": false,
+      "audioVerification": null
+    },
+    {
+      "sourceCaseId": "v28-dev-152-08",
+      "caseCoordinate": "152-08",
+      "debateNumber": "152",
+      "debateId": "knechtle-aron-ra-god-existence-2023",
+      "moveId": "knechtle-aron-ra-god-existence-2023-move-08",
+      "speaker": "Aron Ra",
+      "side": "con",
+      "sourceExcerptSha256": "e5627939c84cbdf688a8f5e1ea8343791dc235282942805a2dea61d32f3c0c54",
+      "normalizedEventMatchCount": 1,
+      "sourceSpan": {
+        "startMs": 3655160,
+        "endMs": 3675660,
+        "startEvent": 1592,
+        "endEvent": 1599
+      },
+      "speakerAttributionConfidence": "high",
+      "attributionBasis": "Retired speaker label, uninterrupted dyadic turn, and position-specific content; the normalized excerpt matched one local timestamped span.",
+      "audioChecked": false,
+      "audioVerification": null
+    },
+    {
+      "sourceCaseId": "v28-dev-152-09",
+      "caseCoordinate": "152-09",
+      "debateNumber": "152",
+      "debateId": "knechtle-aron-ra-god-existence-2023",
+      "moveId": "knechtle-aron-ra-god-existence-2023-move-09",
+      "speaker": "Stuart Knechtle",
+      "side": "pro",
+      "sourceExcerptSha256": "fffc3c63755baead9c17f43ceae4625adf54bb069a63839c11157983ed71ddf7",
+      "normalizedEventMatchCount": 1,
+      "sourceSpan": {
+        "startMs": 4384020,
+        "endMs": 4402560,
+        "startEvent": 1904,
+        "endEvent": 1909
+      },
+      "speakerAttributionConfidence": "high",
+      "attributionBasis": "Retired speaker label, uninterrupted dyadic turn, and position-specific content; the normalized excerpt matched one local timestamped span.",
+      "audioChecked": false,
+      "audioVerification": null
+    },
+    {
+      "sourceCaseId": "v28-dev-152-11",
+      "caseCoordinate": "152-11",
+      "debateNumber": "152",
+      "debateId": "knechtle-aron-ra-god-existence-2023",
+      "moveId": "knechtle-aron-ra-god-existence-2023-move-11",
+      "speaker": "Stuart Knechtle",
+      "side": "pro",
+      "sourceExcerptSha256": "56d91e54307c86cfc8a397ba1b4b889ca396ff05dd603d1394606e585ce45b6a",
+      "normalizedEventMatchCount": 1,
+      "sourceSpan": {
+        "startMs": 6909960,
+        "endMs": 6931320,
+        "startEvent": 3000,
+        "endEvent": 3006
+      },
+      "speakerAttributionConfidence": "high",
+      "attributionBasis": "Retired speaker label, uninterrupted dyadic turn, and position-specific content; the normalized excerpt matched one local timestamped span.",
+      "audioChecked": false,
+      "audioVerification": null
+    }
+  ],
+  "totals": {
+    "debateCount": 3,
+    "caseCount": 12,
+    "dyadicDebates": 3,
+    "multiSpeakerDebates": 0,
+    "developmentOverlapCoordinates": 0,
+    "uniqueLocalEventMatches": 12,
+    "highConfidenceAttributions": 12,
+    "mediumOrLowAttributions": 0,
+    "requiredAudioVerifications": 0,
+    "completedAudioVerifications": 0,
+    "paidTranscriptionCalls": 0
+  }
+}
