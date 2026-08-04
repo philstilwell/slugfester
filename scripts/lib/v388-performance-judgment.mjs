@@ -228,6 +228,11 @@ function assertRating(rating, label) {
   assertString(rating.rationale, 40, `${label}.rationale`);
 }
 
+function saysCharityWasNotTested(value) {
+  return /\bcharity\b.{0,50}\bnot\b.{0,40}\btested\b/i.test(value) ||
+    /\bno\b.{0,30}\bcharity test\b/i.test(value);
+}
+
 function responseTuple(response) {
   return {
     class: response.class,
@@ -311,8 +316,8 @@ export function validateV388PerformanceOutput(output, packet, expectedPass) {
     assertV388(typeof judgment.charityTested === "boolean", `${label}: charityTested must be boolean`);
     if (!judgment.charityTested) {
       assertV388(judgment.ratings.representationalCharity.value === 75, `${label}: untested charity must equal 75`);
-      assertV388(/not tested/i.test(judgment.ratings.representationalCharity.rationale), `${label}: untested charity rationale must say not tested`);
-    } else assertV388(!/not tested/i.test(judgment.ratings.representationalCharity.rationale), `${label}: tested charity rationale contradicts flag`);
+      assertV388(saysCharityWasNotTested(judgment.ratings.representationalCharity.rationale), `${label}: untested charity rationale must state semantically that charity was not tested`);
+    } else assertV388(!saysCharityWasNotTested(judgment.ratings.representationalCharity.rationale), `${label}: tested charity rationale contradicts flag`);
     assertString(judgment.evidenceBasis, 40, `${label}.evidenceBasis`);
     assertV388(["high", "medium", "low"].includes(judgment.assessmentConfidence), `${label}: invalid assessment confidence`);
   }
