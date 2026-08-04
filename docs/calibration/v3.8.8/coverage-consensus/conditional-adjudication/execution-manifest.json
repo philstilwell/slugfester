@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "3.8.8-coverage-conditional-adjudication-execution-manifest",
+  "protocolId": "v3.8.8-coverage-conditional-field-adjudication",
+  "stage": "conditional-proposition-only-adjudication",
+  "status": "frozen-one-context-authorized",
+  "frozenAt": "2026-08-04T15:55:08Z",
+  "checkpointCommit": "d3bb13d185eab708b9ebc75d9b921b59e54910e6",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "modelInputs": {
+    "workflow": "docs/assessment-workflow-v3.8.4.md",
+    "rubric": "docs/reassessment-rubric-v3.8.4.md",
+    "manual": "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication-manual.md",
+    "packet": "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/packet.json",
+    "schema": "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/schema.json"
+  },
+  "authorization": {
+    "modelContexts": 1,
+    "conditionalAdjudicationModelExecution": true,
+    "deterministicConsensusMergeAfterPass": true,
+    "sectionAndWeightLocking": false,
+    "burdenContactModelExecution": false,
+    "scoringModelExecution": false,
+    "assessmentProse": false,
+    "productionMutation": false,
+    "tenDebateGate": false,
+    "all195Debates": false
+  },
+  "isolation": {
+    "temporaryCodexHome": true,
+    "freshSourceDirectory": true,
+    "oneDisputedFieldOnly": true,
+    "anonymousOptionOrder": true,
+    "privateOptionMapAvailableToModel": false,
+    "earlierValidityDecisionAvailableToModel": false,
+    "initialPassOutputsAvailableToModel": false,
+    "undisputedFieldsAvailableToModel": false,
+    "scoresAvailable": false,
+    "winnerAvailable": false
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attempts": 1,
+    "retriesMaximum": 0,
+    "perInvocationTimeoutMs": 3600000,
+    "recoverableStreamEventsNormalMaximum": 2,
+    "recoverableStreamEventsHardMaximum": 8,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "acceptanceRule": {
+    "validContextsRequired": 1,
+    "suppliedOptionOnlyRequired": true,
+    "exactFieldCountRequired": 1,
+    "closedSchemaAndDeterministicValidationRequired": true,
+    "modelScoreFieldsMaximum": 0
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocksExecution": true,
+    "preexistingOutputBlocksExecution": true,
+    "invalidOutputBlocksConsensusMerge": true,
+    "furtherAutomaticRetryAuthorized": false,
+    "scoringRemainsBlocked": true
+  },
+  "artifacts": {
+    "audit": "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/conditional-field-audit.json",
+    "privateOptionMap": "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/private-option-map.json",
+    "output": "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/output.json",
+    "execution": "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/model-execution.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/output.json",
+    "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/model-execution.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.8.4.md": "49dda91a87c0ebbab9666d6c732035bde17939d84f4b71b326f4f04b917ddd5a",
+    "docs/reassessment-rubric-v3.8.4.md": "fda29887abb26f1f5a6f7b772e26434db0c055ec3efe42be4eeea602f5a84909",
+    "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication-manual.md": "ac6855a587fabf7bdaed42e91dd7679f3954f095fc1b8efd9d470fcd063f717a",
+    "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/packet.json": "e4b57a2fb3e4399102fb0927344de604780e42d7c2186fe3d51410c88859d9eb",
+    "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/schema.json": "bccca342b1d11f8a25a99162c726a138176cddf4018031ac3d0d676c39883ab6",
+    "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/private-option-map.json": "48cf33060474b1b7141e52ab7b1b4682d123ea13f154b2348f5a9cc5e11b4672",
+    "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/conditional-field-audit.json": "b6470fa68d8b1880a5f353076e49c84d84f7bb90e093395023e2a8a9be07b456",
+    "docs/calibration/v3.8.8/coverage-consensus/initial-disagreements.json": "2fd750ec5cfffac03e6245723d544619c13907266439b4a8b252db4d8e9dd372",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication-option-map.json": "8a7ac0c2543418d23f8ef7f428ba1c7674bef560f423c819661be738a10ace3c",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication/model-execution.json": "7519477e67432e9b1e3d4d04c4daafceac63a611071578ace91ddedfbb464ced",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication/outputs/debate-55.json": "6b192a3a1e4f537beab02e73976f7fd4966576ce8715a964c444b70efd13aa40",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v37-retired-semantic.mjs": "2fe113760e4b2bb97104025d39755d8ceeeecded89fbaea683cc5c9cce188296",
+    "scripts/lib/v381-source-preparation.mjs": "ccc2c66a1c2ab50fbebc26888f622c9632fb273c2b24b45ea68618188df384d7",
+    "scripts/lib/v385-transport.mjs": "f20d5cb026e0c2720d32276ddcbb612ec852e3732d7653e47a98ba5ffa880dfe",
+    "scripts/lib/v388-coverage-consensus.mjs": "531a2d9a1b735fe6cc367a9a59d101327ee3ab1e20e668b9c09f1c5b378a54e4",
+    "scripts/prepare-v388-coverage-conditional-adjudication.mjs": "99fd2e58e51932f5c56e57a4327d09acc95e3df18b062000176effda1f432460",
+    "scripts/validate-v388-coverage-conditional-adjudication.mjs": "2990c829c44bbc964c0c18740c82de425cb9759e4594cb1e42761dd32fd766fc",
+    "scripts/preregister-v388-coverage-conditional-adjudication.mjs": "ea75a1cdef5a46f8121bf998d502c3b18ca310bfcc7c1c38a8377e6ec7323fa1",
+    "scripts/validate-v388-coverage-conditional-adjudication-lock.mjs": "32325c5348f6dd1246a940e1191063ebf16260bf840bb7d7e2bad4c37423c988",
+    "scripts/run-v388-coverage-conditional-adjudication.mjs": "bd324dcd47c2aa12b174f011b72d7a96707c1b616e82babb19d62e63f07d0277"
+  }
+}
