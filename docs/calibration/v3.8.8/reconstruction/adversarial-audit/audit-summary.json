@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "3.8.8-reconstruction-adversarial-audit-summary",
+  "protocolId": "v3.8.8-reconstruction-adversarial-audit",
+  "status": "passed-supplemental-audit-execution",
+  "calibrationOnly": true,
+  "assessmentModel": "5.6 Sol",
+  "contexts": 3,
+  "verdicts": {
+    "55": "needs-review",
+    "103": "pass",
+    "161": "needs-review"
+  },
+  "concernCounts": {
+    "total": 3,
+    "high": 0,
+    "medium": 2,
+    "low": 1
+  },
+  "concerns": [
+    {
+      "debateNumber": "55",
+      "severity": "medium",
+      "checkId": "missing-direct-replies",
+      "fieldPath": "$.scorecard.sections[2].exchanges[2]",
+      "description": "The exchange pairs Craig's Grim Reaper constructive with Malpass's earlier partial-explanation reply, although that reply targets Craig's restricted-PSR move and Craig later answers it directly. Malpass expressly declined to answer the Grim Reaper move in the transcript, so omitting the actual target-and-reply chain makes the displayed pairing materially misleading.",
+      "sourceMoveIds": [
+        "craig-malpass-kalam-nothing-2026-coverage-14-v384",
+        "craig-malpass-kalam-nothing-2026-coverage-15-v384",
+        "craig-malpass-kalam-nothing-2026-coverage-missing-03-v388",
+        "craig-malpass-kalam-nothing-2026-coverage-16-v384"
+      ]
+    },
+    {
+      "debateNumber": "55",
+      "severity": "low",
+      "checkId": "novelty-integrity",
+      "fieldPath": "$.aiExtension.con.newArguments[2].novelty",
+      "description": "The item classifies its symmetric-explanatory-standard argument as introduced with no source moves, but Malpass already argues that libertarian choice resembles impersonal indeterministic causation and questions why the personal option receives preference. The AI item develops that route rather than introducing a distinct one.",
+      "sourceMoveIds": [
+        "craig-malpass-kalam-nothing-2026-candidate-07-v381"
+      ]
+    },
+    {
+      "debateNumber": "161",
+      "severity": "medium",
+      "checkId": "missing-direct-replies",
+      "fieldPath": "scorecard.sections[0].exchanges[0]",
+      "description": "Millican's displayed causation reply is presented with an outstanding live burden, but the scorecard omits Craig's later locked full answer to that exact move. Because the omitted answer scored 69 and directly contacted both locked components, its absence materially overstates how unanswered the displayed challenge remained.",
+      "sourceMoveIds": [
+        "craig-millican-does-god-exist-2011-candidate-01-v381",
+        "craig-millican-does-god-exist-2011-candidate-03-v381",
+        "craig-millican-does-god-exist-2011-coverage-10-v384"
+      ]
+    }
+  ],
+  "reconstructionMutationAuthorized": false,
+  "productionMutationAuthorized": false,
+  "tenDebateGateAuthorized": false,
+  "all195DebatesAuthorized": false,
+  "meteredModelApiCostUsd": 0,
+  "transcriptionCostUsd": 0
+}

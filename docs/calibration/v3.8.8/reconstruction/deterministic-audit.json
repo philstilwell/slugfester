@@ -230,7 +230,12 @@
     "directRepliesWithoutDisplayedTarget": 3
   },
   "supplementalAdversarialAudit": {
-    "status": "pending"
+    "status": "passed-supplemental-audit-execution",
+    "verdicts": {
+      "55": "needs-review",
+      "103": "pass",
+      "161": "needs-review"
+    }
   },
   "costs": {
     "authentication": "ChatGPT subscription",
@@ -332,8 +337,8 @@
     {
       "id": "rendering",
       "requirement": "Desktop, mobile, keyboard, accordion, and reduced-motion checks passed",
-      "passed": false,
-      "observed": "pending"
+      "passed": true,
+      "observed": "passed"
     },
     {
       "id": "metered-model-cost",
@@ -351,7 +356,6 @@
   ],
   "failedThresholdIds": [
     "clean-initial-scoring-passes",
-    "rendering",
     "transcription-cost"
   ],
   "decision": "Recovered diagnostic chain is internally valid, but the strict preregistered gate did not pass and cannot authorize the ten-debate or 195-debate rollout."

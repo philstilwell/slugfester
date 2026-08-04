@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "3.8.8-calibration-preview-rendering-audit",
+  "status": "passed",
+  "calibrationOnly": true,
+  "renderer": "src/app.js#renderCalibrationDebate",
+  "browser": "Chromium via Playwright CLI",
+  "viewports": {
+    "desktop": {
+      "width": 1440,
+      "height": 1000
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "checks": {
+    "allThreeDebatesRendered": true,
+    "productionDebateDataMutated": false,
+    "rankingsMutated": false,
+    "calibrationBannerVisible": true,
+    "noIndexMetadataApplied": true,
+    "desktopHorizontalOverflow": false,
+    "mobileHorizontalOverflow": false,
+    "overallCommentaryPrecedesAiExtension": true,
+    "aiExtensionDefaultCollapsed": true,
+    "aiExtensionOpensOnPointer": true,
+    "aiExtensionTogglesOnKeyboardEnter": true,
+    "summaryRetainsKeyboardFocus": true,
+    "summaryFocusVisible": true,
+    "summaryFocusOutlinePixels": 3,
+    "twoAiSidePanelsPerDebate": true,
+    "responsiveAiSideStacking": true,
+    "visuallyDistinctAiBackground": true,
+    "visuallyDistinctAiTextTreatment": true,
+    "exactByline": true,
+    "prohibitedTermHits": 0,
+    "reducedMotionMediaQueryMatched": true,
+    "reducedMotionTransitionDurationSeconds": 0.00001
+  },
+  "debates": [
+    {
+      "debateNumber": "55",
+      "desktopDefaultCollapsed": true,
+      "desktopOpen": true,
+      "mobileOpen": true,
+      "desktopHorizontalOverflow": false,
+      "mobileHorizontalOverflow": false,
+      "premisesRendered": 10,
+      "newArgumentsRendered": 6
+    },
+    {
+      "debateNumber": "103",
+      "desktopDefaultCollapsed": true,
+      "mobileOpen": true,
+      "desktopHorizontalOverflow": false,
+      "mobileHorizontalOverflow": false,
+      "premisesRendered": 10,
+      "newArgumentsRendered": 6
+    },
+    {
+      "debateNumber": "161",
+      "desktopDefaultCollapsed": true,
+      "mobileOpen": true,
+      "desktopHorizontalOverflow": false,
+      "mobileHorizontalOverflow": false,
+      "premisesRendered": 10,
+      "newArgumentsRendered": 4
+    }
+  ],
+  "visualInspection": {
+    "passed": true,
+    "notes": "Desktop and mobile screenshots show a readable distinct purple/blue AI panel, balanced teal/coral side cards, intact responsive stacking, and no clipped content.",
+    "screenshots": [
+      "docs/calibration/v3.8.8/reconstruction/previews/screenshots/debate-55-desktop-open.png",
+      "docs/calibration/v3.8.8/reconstruction/previews/screenshots/debate-55-mobile-open.png",
+      "docs/calibration/v3.8.8/reconstruction/previews/screenshots/debate-103-mobile-open.png",
+      "docs/calibration/v3.8.8/reconstruction/previews/screenshots/debate-161-mobile-open.png"
+    ]
+  },
+  "nonblockingConsoleNoise": [
+    "The local Python preview server returned 404 for /favicon.ico; no application resource or behavior failed."
+  ]
+}
