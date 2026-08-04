@@ -24,7 +24,7 @@ const sortedUnique = (values) => [...new Set(values)].sort();
 const intersection = (left, right) => left.filter((value) => right.includes(value));
 const consensusRoot = V388_CONSENSUS_ROOT;
 
-const [disagreements, optionMaps, audio, primaryExecution, conditionalAudit, conditionalPacket, conditionalSchema, conditionalMap, conditionalOutput, conditionalExecution] = await Promise.all([
+const [disagreements, optionMaps, audio, primaryExecution, conditionalAudit, conditionalPacket, conditionalSchema, conditionalMap, conditionalOutput, conditionalExecution, coherenceAudit, coherencePacket, coherenceSchema, coherenceMap, coherenceOutput, coherenceExecution] = await Promise.all([
   readJson(`${consensusRoot}/initial-disagreements.json`),
   readJson(`${consensusRoot}/adjudication-option-map.json`),
   readJson(`${consensusRoot}/audio-verification.json`),
@@ -34,15 +34,26 @@ const [disagreements, optionMaps, audio, primaryExecution, conditionalAudit, con
   readJson(`${consensusRoot}/conditional-adjudication/schema.json`),
   readJson(`${consensusRoot}/conditional-adjudication/private-option-map.json`),
   readJson(`${consensusRoot}/conditional-adjudication/output.json`),
-  readJson(`${consensusRoot}/conditional-adjudication/model-execution.json`)
+  readJson(`${consensusRoot}/conditional-adjudication/model-execution.json`),
+  readJson(`${consensusRoot}/coherence-adjudication/coherence-audit.json`),
+  readJson(`${consensusRoot}/coherence-adjudication/packet.json`),
+  readJson(`${consensusRoot}/coherence-adjudication/schema.json`),
+  readJson(`${consensusRoot}/coherence-adjudication/private-option-map.json`),
+  readJson(`${consensusRoot}/coherence-adjudication/output.json`),
+  readJson(`${consensusRoot}/coherence-adjudication/model-execution.json`)
 ]);
 
 assert(primaryExecution.validOutputContexts === 3 && primaryExecution.results.every((item) => item.gateAcceptancePassed), "primary coverage adjudication execution invalid");
 assert(conditionalExecution.validOutputContexts === 1 && conditionalExecution.results.every((item) => item.gateAcceptancePassed), "conditional adjudication execution invalid");
+assert(coherenceAudit.counts.violations === 1 && coherenceExecution.validOutputContexts === 1 && coherenceExecution.results.every((item) => item.gateAcceptancePassed), "coherence adjudication execution invalid");
 validateSchemaValue(validateClosedSchema(conditionalSchema), conditionalOutput, "coverageConditionalAdjudication");
 assert(conditionalOutput.fields.length === 1 && conditionalOutput.fields[0].fieldId === conditionalPacket.disputedFields[0].fieldId, "conditional output field invalid");
 const conditionalChoice = conditionalMap.fields[0].options.find((item) => item.optionId === conditionalOutput.fields[0].optionId);
 assert(conditionalChoice, "conditional option resolution absent");
+validateSchemaValue(validateClosedSchema(coherenceSchema), coherenceOutput, "coverageCoherenceAdjudication");
+assert(coherenceOutput.bundles.length === 1 && coherenceOutput.bundles[0].fieldId === coherencePacket.disputedBundles[0].fieldId, "coherence output field invalid");
+const coherenceChoice = coherenceMap.fields[0].options.find((item) => item.optionId === coherenceOutput.bundles[0].optionId);
+assert(coherenceChoice, "coherence option resolution absent");
 
 for (const record of audio.records) {
   const [clip, transcript] = await Promise.all([readBytes(record.clip.path), readBytes(record.transcription.path)]);
@@ -123,6 +134,24 @@ for (const debateNumber of V388_DEBATE_NUMBERS) {
       resolutionType: "conditional-anonymous-dispute-adjudication"
     });
     recoveredFieldCount += revived.recoveredTwoVoteAgreements.length + revived.derivedFields.length + 1;
+  }
+  if (debateNumber === coherencePacket.debateNumber) {
+    const bundleSubject = coherencePacket.disputedBundles[0].subjectId;
+    const replacements = {
+      proposition: coherenceChoice.value.proposition,
+      selectionRole: coherenceChoice.value.selectionRole,
+      moveKind: coherenceChoice.value.moveKind,
+      respondsToRefs: coherenceChoice.value.respondsToRefs
+    };
+    for (const [fieldName, finalValue] of Object.entries(replacements)) {
+      const fieldId = `candidate:${bundleSubject}:${fieldName}`;
+      const index = resolutions.findIndex((field) => field.fieldId === fieldId);
+      assert(index >= 0, `${fieldId}: coherence replacement target absent`);
+      resolutions[index] = { ...resolutions[index], initialAgreement: false, finalValue: structuredClone(finalValue), finalVotes: 2, resolutionType: "anonymous-cross-field-atomic-bundle-adjudication" };
+    }
+    const auditIndex = resolutions.findIndex((field) => field.fieldId === "concession:pro:audit");
+    assert(auditIndex >= 0, "coherence concession audit target absent");
+    resolutions[auditIndex] = { ...resolutions[auditIndex], initialAgreement: false, finalValue: structuredClone(coherenceChoice.value.concessionAudit), finalVotes: 2, resolutionType: "anonymous-cross-field-atomic-bundle-adjudication" };
   }
   const fieldMap = new Map(resolutions.map((field) => [field.fieldId, field]));
   assert(fieldMap.size === resolutions.length, `${debateNumber}: duplicate final field resolution`);
@@ -252,7 +281,7 @@ for (const debateNumber of V388_DEBATE_NUMBERS) {
 
 const selectedMoveCount = finalDebates.reduce((sum, debate) => sum + debate.moves.length, 0);
 const finalFieldCount = debateReports.reduce((sum, report) => sum + report.finalTwoVoteSupportedFields, 0);
-const coverageConsensusPassed = finalDebates.length === 3 && debateReports.every((report) => report.unresolvedFields === 0 && report.selectedMoves <= 28 && report.representedBridges === 10 && report.consequentialOmissions === 0) && finalFieldCount === originalFieldCount + recoveredFieldCount && audio.records.length === 1 && !containsScoreField(finalDebates);
+const coverageConsensusPassed = finalDebates.length === 3 && debateReports.every((report) => report.unresolvedFields === 0 && report.selectedMoves <= 28 && report.representedBridges === 10 && report.consequentialOmissions === 0) && finalFieldCount === originalFieldCount + recoveredFieldCount && audio.records.length === 1 && coherenceAudit.counts.violations === coherenceExecution.validOutputContexts && !containsScoreField(finalDebates);
 const inventory = {
   schemaVersion: "3.8.8-final-coverage-inventory",
   status: coverageConsensusPassed ? "locked-score-free-coverage-inventory" : "coverage-consensus-failed",
@@ -281,7 +310,9 @@ const analysis = {
     completedAudioVerifications: audio.records.filter((record) => record.status === "verified").length,
     primaryAdjudicationContexts: primaryExecution.validOutputContexts,
     conditionalAdjudicationContexts: conditionalExecution.validOutputContexts,
-    recoverableStreamEvents: [...primaryExecution.results, ...conditionalExecution.results].reduce((sum, item) => sum + item.recoverableStreamEvents, 0),
+    coherenceAdjudicationContexts: coherenceExecution.validOutputContexts,
+    crossFieldCoherenceViolationsResolved: coherenceExecution.validOutputContexts,
+    recoverableStreamEvents: [...primaryExecution.results, ...conditionalExecution.results, ...coherenceExecution.results].reduce((sum, item) => sum + item.recoverableStreamEvents, 0),
     scoringFields: containsScoreField(finalDebates) ? 1 : 0,
     meteredApiCostUsd: 0,
     transcriptionCostUsd: 0
