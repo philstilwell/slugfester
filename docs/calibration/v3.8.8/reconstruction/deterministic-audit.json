@@ -1,0 +1,358 @@
+{
+  "schemaVersion": "3.8.8-reconstruction-deterministic-audit",
+  "protocolId": "v3.8.8-recovered-diagnostic-reconstruction",
+  "status": "passed-diagnostic-audit",
+  "strictThreeDebateGatePassed": false,
+  "tenDebateAuthorization": false,
+  "all195Authorization": false,
+  "calibrationOnly": true,
+  "sourceValidation": {
+    "corpusDebates": 195,
+    "localTranscriptsAvailable": 195,
+    "sourceChainHashesChecked": 9
+  },
+  "scalarReliability": {
+    "fieldsCompared": 567,
+    "meanAbsoluteRawScalarDelta": 3.880071,
+    "materiallyDisputedScalarFields": 140,
+    "materiallyDisputedScalarFieldRate": 0.246914,
+    "maximumRawScalarDelta": 27
+  },
+  "scoringConsensus": {
+    "initialDisagreements": {
+      "debates": 3,
+      "uniqueMoves": 81,
+      "moveJudgmentsCompared": 162,
+      "disputedMoves": 76,
+      "responseTupleDisputes": 34,
+      "charityTestedDisputes": 6,
+      "ratingFieldDisputes": 188,
+      "diagnosticTriggerMoves": 14,
+      "burdenAdjustmentDisputes": 6,
+      "nondisputedUnequalScalarFields": 299
+    },
+    "finalLedger": {
+      "status": "passed",
+      "finalLedgerValidated": true,
+      "debates": 3,
+      "movesChecked": 81,
+      "ratingFieldsChecked": 567,
+      "disputedMoves": 76,
+      "responseTupleAdjudications": 34,
+      "responseTupleAgreements": 47,
+      "charityPairAdjudications": 6,
+      "ratingAdjudications": 190,
+      "nondisputedUnequalRatingMeans": 297,
+      "equalRatingAgreements": 80,
+      "burdenAdjustmentAdjudications": 6,
+      "thirdValuesInvented": 0,
+      "scoreDerivationAuthorized": true,
+      "assessmentProseAuthorized": false
+    },
+    "scoreReliability": {
+      "status": "passed",
+      "calculatorValidated": true,
+      "debates": 3,
+      "sides": 6,
+      "sectionsChecked": 15,
+      "movesChecked": 81,
+      "maximumDiagnosticOverallPassDelta": 2,
+      "identicalWinnerClassificationsAcrossAllDebates": true,
+      "spearmanRankCorrelationAcrossSixSideTotals": 0.985184,
+      "scoreReliabilityGatePassed": true,
+      "reconstructionPreparationAuthorized": true,
+      "assessmentProseModelExecutionAuthorized": false
+    }
+  },
+  "audioVerification": {
+    "mediumConfidenceMovesVerified": 17,
+    "minimumBagOfWordsRecall": 0.8461538461538461,
+    "representativeQuotesVerified": 6
+  },
+  "reconstruction": {
+    "debates": [
+      {
+        "debateNumber": "55",
+        "debateId": "craig-malpass-kalam-nothing-2026",
+        "outputPath": "docs/calibration/v3.8.8/reconstruction/validated-outputs/debate-55.json",
+        "outputSha256": "9592f10062d9461415acd1873a39b26b989737ee609806dd22830a57857461a9",
+        "validator": {
+          "status": "passed",
+          "debateNumber": "55",
+          "argumentsChecked": 18,
+          "critiquesChecked": 18,
+          "tagsChecked": 0,
+          "displayedMoveCoverage": 0.642857,
+          "scoreIdentityPassed": true,
+          "representativeQuotesVerified": 2,
+          "overallMinimumsPassed": true,
+          "noveltyItems": 20,
+          "introducedItems": 6,
+          "newArguments": 6,
+          "extensionBalancePassed": true,
+          "exactPlacementAccordionBylinePassed": true,
+          "prohibitedLanguageHits": 0
+        },
+        "displayedMoves": 18,
+        "ledgerMoves": 28,
+        "displayedMoveCoverage": 0.642857,
+        "loadBearingMisses": [],
+        "directRepliesWithoutDisplayedTarget": [
+          {
+            "moveId": "craig-malpass-kalam-nothing-2026-coverage-12-v384",
+            "targetIds": [
+              "craig-malpass-kalam-nothing-2026-coverage-11-v384"
+            ]
+          },
+          {
+            "moveId": "craig-malpass-kalam-nothing-2026-coverage-15-v384",
+            "targetIds": [
+              "craig-malpass-kalam-nothing-2026-coverage-14-v384"
+            ]
+          }
+        ],
+        "introducedSimilarity": [
+          {
+            "itemId": "ai-pro-argument-01",
+            "maximumSourcePropositionJaccard": 0.108108
+          },
+          {
+            "itemId": "ai-pro-argument-02",
+            "maximumSourcePropositionJaccard": 0.125
+          },
+          {
+            "itemId": "ai-pro-argument-03",
+            "maximumSourcePropositionJaccard": 0.135135
+          },
+          {
+            "itemId": "ai-con-argument-01",
+            "maximumSourcePropositionJaccard": 0.140845
+          },
+          {
+            "itemId": "ai-con-argument-02",
+            "maximumSourcePropositionJaccard": 0.176471
+          },
+          {
+            "itemId": "ai-con-argument-03",
+            "maximumSourcePropositionJaccard": 0.148649
+          }
+        ]
+      },
+      {
+        "debateNumber": "103",
+        "debateId": "woodford-edwards-rational-belief-god-2023",
+        "outputPath": "docs/calibration/v3.8.8/reconstruction/outputs/debate-103.json",
+        "outputSha256": "1938c9566df70c8c09d82a6a3d560b2fffe67a23aa09418394a206ca8ccdbf2c",
+        "validator": {
+          "status": "passed",
+          "debateNumber": "103",
+          "argumentsChecked": 18,
+          "critiquesChecked": 18,
+          "tagsChecked": 0,
+          "displayedMoveCoverage": 0.72,
+          "scoreIdentityPassed": true,
+          "representativeQuotesVerified": 2,
+          "overallMinimumsPassed": true,
+          "noveltyItems": 20,
+          "introducedItems": 2,
+          "newArguments": 6,
+          "extensionBalancePassed": true,
+          "exactPlacementAccordionBylinePassed": true,
+          "prohibitedLanguageHits": 0
+        },
+        "displayedMoves": 18,
+        "ledgerMoves": 25,
+        "displayedMoveCoverage": 0.72,
+        "loadBearingMisses": [],
+        "directRepliesWithoutDisplayedTarget": [
+          {
+            "moveId": "woodford-edwards-rational-belief-god-2023-coverage-06-v384",
+            "targetIds": [
+              "woodford-edwards-rational-belief-god-2023-candidate-05-v381"
+            ]
+          }
+        ],
+        "introducedSimilarity": [
+          {
+            "itemId": "ai-pro-argument-02",
+            "maximumSourcePropositionJaccard": 0.135802
+          },
+          {
+            "itemId": "ai-con-argument-02",
+            "maximumSourcePropositionJaccard": 0.102273
+          }
+        ]
+      },
+      {
+        "debateNumber": "161",
+        "debateId": "craig-millican-does-god-exist-2011",
+        "outputPath": "docs/calibration/v3.8.8/reconstruction/outputs/debate-161.json",
+        "outputSha256": "0f0d6a1fc837c35bcaa677de9bd94f31f7315742839aab250355024d162594d3",
+        "validator": {
+          "status": "passed",
+          "debateNumber": "161",
+          "argumentsChecked": 12,
+          "critiquesChecked": 12,
+          "tagsChecked": 0,
+          "displayedMoveCoverage": 0.428571,
+          "scoreIdentityPassed": true,
+          "representativeQuotesVerified": 2,
+          "overallMinimumsPassed": true,
+          "noveltyItems": 18,
+          "introducedItems": 2,
+          "newArguments": 4,
+          "extensionBalancePassed": true,
+          "exactPlacementAccordionBylinePassed": true,
+          "prohibitedLanguageHits": 0
+        },
+        "displayedMoves": 12,
+        "ledgerMoves": 28,
+        "displayedMoveCoverage": 0.428571,
+        "loadBearingMisses": [],
+        "directRepliesWithoutDisplayedTarget": [],
+        "introducedSimilarity": [
+          {
+            "itemId": "ai-pro-argument-01",
+            "maximumSourcePropositionJaccard": 0.097826
+          },
+          {
+            "itemId": "ai-con-argument-02",
+            "maximumSourcePropositionJaccard": 0.109756
+          }
+        ]
+      }
+    ],
+    "displayedMoves": 48,
+    "ledgerMoves": 81,
+    "loadBearingMisses": 0,
+    "directRepliesDisplayed": 27,
+    "directRepliesWithDisplayedTarget": 24,
+    "directRepliesWithoutDisplayedTarget": 3
+  },
+  "supplementalAdversarialAudit": {
+    "status": "pending"
+  },
+  "costs": {
+    "authentication": "ChatGPT subscription",
+    "meteredModelApiCostUsd": 0,
+    "estimatedTranscriptionCostUsd": 0.09421125,
+    "exactBilledCostAvailable": false
+  },
+  "recoveryHistory": {
+    "originalScoringPassesRepresentationNormalized": true,
+    "reconstructionSchemaEndpointRecoveryUsed": true,
+    "debate55BoundedProseCorrectionUsed": true,
+    "debates103And161CleanFirstContexts": true
+  },
+  "thresholds": [
+    {
+      "id": "complete-source-chains-and-audio",
+      "requirement": "3/3 complete dyadic source chains and 100% required audio verification",
+      "passed": true,
+      "observed": {
+        "sourceChainHashesChecked": 9,
+        "mediumConfidenceMovesAudioVerified": 17,
+        "representativeQuotesAudioVerified": 6
+      }
+    },
+    {
+      "id": "clean-initial-scoring-passes",
+      "requirement": "Two valid initial scoring passes per debate without post-hoc recovery",
+      "passed": false,
+      "observed": {
+        "originalCleanGatePassed": false,
+        "postHocRepresentationRecoveryUsed": true,
+        "substantiveJudgmentFieldsChangedByRecovery": 0,
+        "rawOutputsPreserved": true
+      }
+    },
+    {
+      "id": "mean-absolute-scalar-delta",
+      "requirement": "Mean absolute raw scalar delta <= 5",
+      "passed": true,
+      "limit": 5,
+      "observed": 3.880071
+    },
+    {
+      "id": "material-scalar-dispute-rate",
+      "requirement": "Materially disputed scalar-field rate <= 0.25",
+      "passed": true,
+      "limit": 0.25,
+      "observed": 0.246914
+    },
+    {
+      "id": "final-ledger-integrity",
+      "requirement": "Zero unresolved scoring fields and zero nondisputed-field mutations",
+      "passed": true,
+      "observed": {
+        "finalLedgerValidated": true,
+        "thirdValuesInvented": 0
+      }
+    },
+    {
+      "id": "diagnostic-score-reliability",
+      "requirement": "Overall pass delta <= 5, identical winners, Spearman >= 0.90",
+      "passed": true,
+      "observed": {
+        "maximumOverallDelta": 2,
+        "identicalWinners": true,
+        "spearman": 0.985184
+      }
+    },
+    {
+      "id": "burden-and-calculator-integrity",
+      "requirement": "Zero burden-adjustment exclusion violations and zero calculator mismatches",
+      "passed": true,
+      "observed": {
+        "calculatorValidated": true,
+        "nonzeroFinalAdjustments": 0
+      }
+    },
+    {
+      "id": "reconstruction-contract",
+      "requirement": "3/3 complete reconstructions with score/prose identity and verified quotes",
+      "passed": true,
+      "observed": {
+        "debates": 3,
+        "displayedMoves": 48,
+        "ledgerMoves": 81,
+        "loadBearingMisses": 0
+      }
+    },
+    {
+      "id": "ai-extension-contract",
+      "requirement": "Complete novelty maps, balanced structure, exact placement/byline, zero prohibited terms",
+      "passed": true,
+      "observed": {
+        "noveltyItems": 58,
+        "introducedItems": 10,
+        "maximumIntroducedSourceJaccard": 0.176471
+      }
+    },
+    {
+      "id": "rendering",
+      "requirement": "Desktop, mobile, keyboard, accordion, and reduced-motion checks passed",
+      "passed": false,
+      "observed": "pending"
+    },
+    {
+      "id": "metered-model-cost",
+      "requirement": "Metered model API cost = $0",
+      "passed": true,
+      "observedUsd": 0
+    },
+    {
+      "id": "transcription-cost",
+      "requirement": "Transcription cost = $0",
+      "passed": false,
+      "observedUsd": 0.09421125,
+      "note": "The required medium-confidence and representative-quote audio verification used approved paid transcription."
+    }
+  ],
+  "failedThresholdIds": [
+    "clean-initial-scoring-passes",
+    "rendering",
+    "transcription-cost"
+  ],
+  "decision": "Recovered diagnostic chain is internally valid, but the strict preregistered gate did not pass and cannot authorize the ten-debate or 195-debate rollout."
+}

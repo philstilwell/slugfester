@@ -2209,7 +2209,20 @@ function renderDebate(id) {
     return;
   }
 
-  setSeo(debateSeo(debate));
+  renderDebateObject(debate);
+}
+
+function renderDebateObject(debate, { calibrationPreview = false } = {}) {
+  const seo = debateSeo(debate);
+  setSeo(calibrationPreview
+    ? {
+        ...seo,
+        canonicalPath: null,
+        jsonLd: null,
+        robots: "noindex,nofollow",
+        title: `[Calibration preview] ${seo.title}`
+      }
+    : seo);
 
   const sectionScores = debate.sections.flatMap((section) => [
     section.score.pro,
@@ -2217,10 +2230,11 @@ function renderDebate(id) {
   ]);
 
   app.innerHTML = renderShell(`
-    <main class="debate-page">
+    <main class="debate-page"${calibrationPreview ? ' data-calibration-preview="true"' : ""}>
       <section class="debate-hero">
         <div>
           <a class="back-link" href="/">Back to debates</a>
+          ${calibrationPreview ? '<p class="source-note calibration-preview-note"><strong>Calibration preview:</strong> recovered diagnostic output only. This scorecard is excluded from production data and rankings.</p>' : ""}
           <p class="eyebrow">${escapeHtml(debateNumberLabel(debate))} · ${escapeHtml(debate.label)} · Last rendered: ${escapeHtml(debate.date)}</p>
           <h1>${escapeHtml(debate.title)}</h1>
           <p class="motion large">${escapeHtml(debate.motion)}</p>
@@ -2254,6 +2268,10 @@ function renderDebate(id) {
       ${renderLogicalExtension(debate)}
     </main>
   `);
+}
+
+export function renderCalibrationDebate(debate) {
+  renderDebateObject(debate, { calibrationPreview: true });
 }
 
 function renderSideHeading(side, tone) {

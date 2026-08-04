@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Slugfester v3.8.8 reconstruction adversarial audit",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "calibrationOnly",
+    "completedAt",
+    "isolation",
+    "verdict",
+    "checks",
+    "concerns"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "3.8.8-reconstruction-adversarial-audit" },
+    "protocolId": { "type": "string", "const": "v3.8.8-reconstruction-adversarial-audit" },
+    "debateNumber": { "type": "string", "enum": ["55", "103", "161"] },
+    "debateId": { "type": "string", "minLength": 1 },
+    "assessmentModel": { "type": "string", "const": "5.6 Sol" },
+    "calibrationOnly": { "type": "boolean", "const": true },
+    "completedAt": { "type": "string", "minLength": 20 },
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["otherDebatesUnavailable", "legacyAssessmentsUnavailable", "editingUnavailable", "contaminationDetected"],
+      "properties": {
+        "otherDebatesUnavailable": { "type": "boolean", "const": true },
+        "legacyAssessmentsUnavailable": { "type": "boolean", "const": true },
+        "editingUnavailable": { "type": "boolean", "const": true },
+        "contaminationDetected": { "type": "boolean", "const": false }
+      }
+    },
+    "verdict": { "type": "string", "enum": ["pass", "needs-review"] },
+    "checks": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["checkId", "status", "finding", "sourceMoveIds"],
+        "properties": {
+          "checkId": {
+            "type": "string",
+            "enum": [
+              "conclusion-bias",
+              "duplicate-penalty",
+              "asymmetric-burden",
+              "missing-direct-replies",
+              "score-prose-alignment",
+              "quote-fidelity",
+              "ai-attribution",
+              "novelty-integrity",
+              "charity",
+              "unsupported-claims-or-tags"
+            ]
+          },
+          "status": { "type": "string", "enum": ["passed", "concern"] },
+          "finding": { "type": "string", "minLength": 30 },
+          "sourceMoveIds": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+        }
+      }
+    },
+    "concerns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["severity", "checkId", "fieldPath", "description", "sourceMoveIds"],
+        "properties": {
+          "severity": { "type": "string", "enum": ["low", "medium", "high"] },
+          "checkId": {
+            "type": "string",
+            "enum": [
+              "conclusion-bias",
+              "duplicate-penalty",
+              "asymmetric-burden",
+              "missing-direct-replies",
+              "score-prose-alignment",
+              "quote-fidelity",
+              "ai-attribution",
+              "novelty-integrity",
+              "charity",
+              "unsupported-claims-or-tags"
+            ]
+          },
+          "fieldPath": { "type": "string", "minLength": 5 },
+          "description": { "type": "string", "minLength": 30 },
+          "sourceMoveIds": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "3.8.8-reconstruction-adversarial-audit-manifest",
+  "protocolId": "v3.8.8-reconstruction-adversarial-audit",
+  "status": "frozen-supplemental-audit-authorized",
+  "createdAt": "2026-08-04T22:06:21.542Z",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "executionPolicy": {
+    "contexts": 3,
+    "perInvocationTimeoutMs": 1200000,
+    "retriesAuthorized": 0,
+    "apiKeysRemoved": true,
+    "ephemeralCodexHome": true,
+    "auditOnly": true
+  },
+  "sourceHashes": {
+    ".assessment-cache/captions/9JVRy7bR7zI/events.json": "5dd29c053f0e5da4ed79b6f818fb844a6515552671dbc4014916d18ca1d2cbbc",
+    ".assessment-cache/captions/9JVRy7bR7zI/manifest.json": "436f3f2be4fd5e84338f6244eae1398dbcb11c56ac514920a80cad440790dc18",
+    ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt": "9de6853aa2dd4eaf8e0d669f895b719b7fbc15ab55a7f8eab271c92974771b78",
+    ".assessment-cache/captions/g1TlLCSn_5o/events.json": "b9846f8275ade82451cfd86a4b4b5eefa89a9bbf1515067e2e18965bcadf03dc",
+    ".assessment-cache/captions/g1TlLCSn_5o/manifest.json": "0e24d0057065d03651c845abfd66fa90a04ed2dfbd582afe098e60d830fbde2a",
+    ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt": "f852392592bdbaf149c1816fe93fb76e84b65577b4c6d85c52a50bb2db95be29",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/events.json": "d09e63acc41236158b808b6242c871428a467697fba1f2454cfac143c185aa3f",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/manifest.json": "73f97e374fa98f388528e03ed39e1272f77c9fec6cee46345fdfba9c3177c099",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt": "305d9eacbd581a9aac9f5f246f63097deef6e6020af7a8031e14ca9cfbba66c2",
+    "docs/assessment-workflow-v3.8.4.md": "49dda91a87c0ebbab9666d6c732035bde17939d84f4b71b326f4f04b917ddd5a",
+    "docs/calibration/v3.8.8/reconstruction/adversarial-audit/manual.md": "63351ba37c775e3ce550f0ce27e0a3399a54c9f455489eab0f462213d3ff9ace",
+    "docs/calibration/v3.8.8/reconstruction/adversarial-audit/schema.json": "d15c1f2bf62fe3b823f14e444c0968c2f7d64f287457364192fe98e6c98ee943",
+    "docs/calibration/v3.8.8/reconstruction/outputs/debate-103.json": "1938c9566df70c8c09d82a6a3d560b2fffe67a23aa09418394a206ca8ccdbf2c",
+    "docs/calibration/v3.8.8/reconstruction/outputs/debate-161.json": "0f0d6a1fc837c35bcaa677de9bd94f31f7315742839aab250355024d162594d3",
+    "docs/calibration/v3.8.8/reconstruction/packets/debate-103.json": "14bfb489ff601641a2d4e42e8a357bfa6787f100eebaf83902f54ab15c8a6719",
+    "docs/calibration/v3.8.8/reconstruction/packets/debate-161.json": "a4243d80d8ba4ec84819e1ce12a8f9d59985ff1e550aa29cac762f0d05cb853a",
+    "docs/calibration/v3.8.8/reconstruction/packets/debate-55.json": "34f12d2e14495a18795f167f21a0f3de450333d839e1fab76b03c3a5ea01cb85",
+    "docs/calibration/v3.8.8/reconstruction/validated-outputs/debate-55.json": "9592f10062d9461415acd1873a39b26b989737ee609806dd22830a57857461a9",
+    "docs/reassessment-rubric-v3.8.4.md": "fda29887abb26f1f5a6f7b772e26434db0c055ec3efe42be4eeea602f5a84909",
+    "scripts/compile-v388-reconstruction-adversarial-audit.mjs": "39816a83f7ddaac7631974492d862a761789e3be0af5eb67b3517f41f2ccfb3f",
+    "scripts/run-v388-reconstruction-adversarial-audit.mjs": "d886c898fafe9b5f3ebffed4a1538ef2b07a05a822da23ff56d846ef0d44136c",
+    "scripts/validate-v388-reconstruction-adversarial-audit.mjs": "010c620f3a1bf2d12498bc08057867c81e83f7ce94eedbd3295b93c64ccca133"
+  },
+  "contexts": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "reconstruction": "docs/calibration/v3.8.8/reconstruction/validated-outputs/debate-55.json",
+      "packet": "docs/calibration/v3.8.8/reconstruction/packets/debate-55.json",
+      "transcript": ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt",
+      "events": ".assessment-cache/captions/zQBY5K-Ns2Y/events.json",
+      "sourceManifest": ".assessment-cache/captions/zQBY5K-Ns2Y/manifest.json",
+      "output": "docs/calibration/v3.8.8/reconstruction/adversarial-audit/outputs/debate-55.json"
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "reconstruction": "docs/calibration/v3.8.8/reconstruction/outputs/debate-103.json",
+      "packet": "docs/calibration/v3.8.8/reconstruction/packets/debate-103.json",
+      "transcript": ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt",
+      "events": ".assessment-cache/captions/g1TlLCSn_5o/events.json",
+      "sourceManifest": ".assessment-cache/captions/g1TlLCSn_5o/manifest.json",
+      "output": "docs/calibration/v3.8.8/reconstruction/adversarial-audit/outputs/debate-103.json"
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "reconstruction": "docs/calibration/v3.8.8/reconstruction/outputs/debate-161.json",
+      "packet": "docs/calibration/v3.8.8/reconstruction/packets/debate-161.json",
+      "transcript": ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt",
+      "events": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+      "sourceManifest": ".assessment-cache/captions/9JVRy7bR7zI/manifest.json",
+      "output": "docs/calibration/v3.8.8/reconstruction/adversarial-audit/outputs/debate-161.json"
+    }
+  ],
+  "futureOutputs": [
+    "docs/calibration/v3.8.8/reconstruction/adversarial-audit/outputs/debate-55.json",
+    "docs/calibration/v3.8.8/reconstruction/adversarial-audit/outputs/debate-103.json",
+    "docs/calibration/v3.8.8/reconstruction/adversarial-audit/outputs/debate-161.json"
+  ],
+  "artifacts": {
+    "execution": "docs/calibration/v3.8.8/reconstruction/adversarial-audit/model-execution.json",
+    "summary": "docs/calibration/v3.8.8/reconstruction/adversarial-audit/audit-summary.json"
+  },
+  "cost": {
+    "authentication": "ChatGPT subscription",
+    "meteredModelApiCostUsd": 0,
+    "transcriptionApiCalls": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "supplementalAuditModelExecution": true,
+    "reconstructionMutation": false,
+    "productionMutation": false,
+    "tenDebateGate": false,
+    "all195Debates": false
+  }
+}
