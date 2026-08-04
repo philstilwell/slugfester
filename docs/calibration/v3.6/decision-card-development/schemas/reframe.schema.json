@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v3.6-reframe-card",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "family", "caseId", "moveId", "malformedCueText", "replacementCueText", "linkCueText", "relationText", "relationKind", "rationale"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "3.6-decision-card" },
+    "family": { "type": "string", "const": "reframe" },
+    "caseId": { "type": "string" },
+    "moveId": { "type": "string" },
+    "malformedCueText": { "anyOf": [{ "type": "null" }, { "type": "string" }] },
+    "replacementCueText": { "anyOf": [{ "type": "null" }, { "type": "string" }] },
+    "linkCueText": { "anyOf": [{ "type": "null" }, { "type": "string" }] },
+    "relationText": { "anyOf": [{ "type": "null" }, { "type": "string" }] },
+    "relationKind": { "type": "string", "enum": ["none", "because", "contrastive", "instead", "rather-than"] },
+    "rationale": { "type": "string" }
+  }
+}

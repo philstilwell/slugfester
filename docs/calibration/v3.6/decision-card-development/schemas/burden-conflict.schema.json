@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v3.6-burden-conflict-card",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "family", "caseId", "moveId", "fieldPath", "candidateSelection", "qualifyingCue", "evidenceText", "rationale"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "3.6-decision-card" },
+    "family": { "type": "string", "const": "burden-conflict" },
+    "caseId": { "type": "string" },
+    "moveId": { "type": "string" },
+    "fieldPath": { "type": "string", "enum": ["burdenAdjustment", "burdenContact"] },
+    "candidateSelection": { "type": "string", "enum": ["candidate-1", "candidate-2", "neither"] },
+    "qualifyingCue": { "type": "string", "enum": ["default-retained", "default-no-contact", "explicit-reassignment", "explicit-replacement", "eligible-bridge-support", "eligible-bridge-attack", "insufficient"] },
+    "evidenceText": { "anyOf": [{ "type": "null" }, { "type": "string" }] },
+    "rationale": { "type": "string" }
+  }
+}

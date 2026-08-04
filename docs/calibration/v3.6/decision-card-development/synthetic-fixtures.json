@@ -1,0 +1,300 @@
+{
+  "schemaVersion": "3.6-synthetic-decision-card-fixtures",
+  "fixtures": [
+    {
+      "fixtureId": "target-diagnostic-reframe-positive",
+      "challengeCase": {
+        "caseId": "v36-synthetic-01",
+        "moveId": "v36-move-01",
+        "sourceExcerpt": "The target applies only to public claims. That comparison changes the standard, so it cannot establish your conclusion. The question is not whether it is popular; instead ask whether it is justified.",
+        "targetPacket": {
+          "indispensableComponents": [
+            { "id": "c1", "text": "The target applies to public claims." },
+            { "id": "c2", "text": "The target applies to private claims." }
+          ]
+        },
+        "burdenContext": {
+          "burdenPacket": { "primaryRouteId": "route-1", "eligibleBridgeIds": ["bridge-1"] },
+          "route": { "id": "route-1", "bridges": [{ "id": "bridge-1", "tier": "central" }] }
+        }
+      },
+      "cards": {
+        "target": {
+          "schemaVersion": "3.6-decision-card",
+          "family": "target-component-example",
+          "caseId": "v36-synthetic-01",
+          "moveId": "v36-move-01",
+          "directTarget": { "contact": false, "evidenceText": null },
+          "components": [
+            { "componentId": "c1", "contactMode": "restriction", "evidenceText": "only to public claims", "licenseText": null },
+            { "componentId": "c2", "contactMode": "none", "evidenceText": null, "licenseText": null }
+          ],
+          "example": { "classification": "inside-locked-target", "evidenceText": "public claims" },
+          "scope": { "relation": "narrowed", "evidenceText": "only to public claims" },
+          "contrary": { "classification": "component-contact-precludes-contrary", "evidenceText": null },
+          "rationale": "The response restricts the first component to public claims, repeats an example already inside the target, and does not supply separate contrary material."
+        },
+        "diagnostic": {
+          "schemaVersion": "3.6-decision-card",
+          "family": "diagnostic",
+          "caseId": "v36-synthetic-01",
+          "moveId": "v36-move-01",
+          "defect": { "cueText": "changes the standard", "type": "scope-mismatch" },
+          "consequence": {
+            "cueText": "cannot establish your conclusion",
+            "linkCueText": "so it cannot",
+            "relationText": "changes the standard, so it cannot establish your conclusion",
+            "relationKind": "therefore"
+          },
+          "rationale": "The response explicitly identifies a changed standard and separately states that the comparison cannot establish the conclusion, joined by an inferential so-link."
+        },
+        "reframe": {
+          "schemaVersion": "3.6-decision-card",
+          "family": "reframe",
+          "caseId": "v36-synthetic-01",
+          "moveId": "v36-move-01",
+          "malformedCueText": "The question is not whether it is popular",
+          "replacementCueText": "ask whether it is justified",
+          "linkCueText": "instead",
+          "relationText": "The question is not whether it is popular; instead ask whether it is justified",
+          "relationKind": "instead",
+          "rationale": "The response rejects popularity as the governing question and explicitly installs justification as the replacement, with the relation marked by the word instead."
+        }
+      },
+      "burdenPackets": []
+    },
+    {
+      "fixtureId": "distinct-example-and-contrary",
+      "challengeCase": {
+        "caseId": "v36-synthetic-02",
+        "moveId": "v36-move-02",
+        "sourceExcerpt": "The claim never addresses the control condition. The prison case shows the opposite outcome.",
+        "targetPacket": {
+          "indispensableComponents": [
+            { "id": "c1", "text": "The action satisfies the control condition." },
+            { "id": "c2", "text": "The outcome establishes responsibility." }
+          ]
+        },
+        "burdenContext": {
+          "burdenPacket": { "primaryRouteId": "route-2", "eligibleBridgeIds": ["bridge-2"] },
+          "route": { "id": "route-2", "bridges": [{ "id": "bridge-2", "tier": "central" }] }
+        }
+      },
+      "cards": {
+        "target": {
+          "schemaVersion": "3.6-decision-card",
+          "family": "target-component-example",
+          "caseId": "v36-synthetic-02",
+          "moveId": "v36-move-02",
+          "directTarget": { "contact": false, "evidenceText": null },
+          "components": [
+            { "componentId": "c1", "contactMode": "none", "evidenceText": null, "licenseText": null },
+            { "componentId": "c2", "contactMode": "none", "evidenceText": null, "licenseText": null }
+          ],
+          "example": { "classification": "distinct-connected-example", "evidenceText": "The prison case shows the opposite outcome" },
+          "scope": { "relation": "same", "evidenceText": null },
+          "contrary": { "classification": "relevant-no-component", "evidenceText": "shows the opposite outcome" },
+          "rationale": "No locked component is taken up directly, but a distinct prison case is connected to the target and supplies contrary material bearing against its outcome."
+        },
+        "diagnostic": {
+          "schemaVersion": "3.6-decision-card",
+          "family": "diagnostic",
+          "caseId": "v36-synthetic-02",
+          "moveId": "v36-move-02",
+          "defect": { "cueText": null, "type": "none" },
+          "consequence": { "cueText": null, "linkCueText": null, "relationText": null, "relationKind": "none" },
+          "rationale": "The response presents contrary material and a distinct example but does not explicitly diagnose an eligible defect or state a defect-linked inferential consequence."
+        },
+        "reframe": {
+          "schemaVersion": "3.6-decision-card",
+          "family": "reframe",
+          "caseId": "v36-synthetic-02",
+          "moveId": "v36-move-02",
+          "malformedCueText": null,
+          "replacementCueText": null,
+          "linkCueText": null,
+          "relationText": null,
+          "relationKind": "none",
+          "rationale": "The response offers an opposing example without explaining that the governing demand is malformed or replacing it with a different governing success condition."
+        }
+      },
+      "burdenPackets": []
+    },
+    {
+      "fixtureId": "licensed-global-assent",
+      "challengeCase": {
+        "caseId": "v36-synthetic-03",
+        "moveId": "v36-move-03",
+        "sourceExcerpt": "Yes, I accept the entire three-part claim: evidence is reliable, the bridge follows, and the conclusion is proportionate.",
+        "targetPacket": {
+          "indispensableComponents": [
+            { "id": "c1", "text": "The evidence is reliable." },
+            { "id": "c2", "text": "The bridge follows." },
+            { "id": "c3", "text": "The conclusion is proportionate." }
+          ]
+        },
+        "burdenContext": {
+          "burdenPacket": { "primaryRouteId": null, "eligibleBridgeIds": [] },
+          "route": null
+        }
+      },
+      "cards": {
+        "target": {
+          "schemaVersion": "3.6-decision-card",
+          "family": "target-component-example",
+          "caseId": "v36-synthetic-03",
+          "moveId": "v36-move-03",
+          "directTarget": { "contact": false, "evidenceText": null },
+          "components": [
+            { "componentId": "c1", "contactMode": "explicit-global-assent", "evidenceText": "evidence is reliable", "licenseText": "I accept the entire three-part claim: evidence is reliable, the bridge follows, and the conclusion is proportionate" },
+            { "componentId": "c2", "contactMode": "explicit-global-assent", "evidenceText": "the bridge follows", "licenseText": "I accept the entire three-part claim: evidence is reliable, the bridge follows, and the conclusion is proportionate" },
+            { "componentId": "c3", "contactMode": "explicit-global-assent", "evidenceText": "the conclusion is proportionate", "licenseText": "I accept the entire three-part claim: evidence is reliable, the bridge follows, and the conclusion is proportionate" }
+          ],
+          "example": { "classification": "none", "evidenceText": null },
+          "scope": { "relation": "same", "evidenceText": null },
+          "contrary": { "classification": "component-contact-precludes-contrary", "evidenceText": null },
+          "rationale": "The explicit three-part license ranges over the entire locked proposition and names every component without narrowing, distinguishing, or redirecting any part."
+        },
+        "diagnostic": {
+          "schemaVersion": "3.6-decision-card",
+          "family": "diagnostic",
+          "caseId": "v36-synthetic-03",
+          "moveId": "v36-move-03",
+          "defect": { "cueText": null, "type": "none" },
+          "consequence": { "cueText": null, "linkCueText": null, "relationText": null, "relationKind": "none" },
+          "rationale": "The response expressly accepts the complete proposition and does not identify an inferential defect or state any separate defect-linked consequence clause."
+        },
+        "reframe": {
+          "schemaVersion": "3.6-decision-card",
+          "family": "reframe",
+          "caseId": "v36-synthetic-03",
+          "moveId": "v36-move-03",
+          "malformedCueText": null,
+          "replacementCueText": null,
+          "linkCueText": null,
+          "relationText": null,
+          "relationKind": "none",
+          "rationale": "The explicit assent neither criticizes the governing demand as malformed nor states a replacement governing question, comparison, or success condition."
+        }
+      },
+      "burdenPackets": []
+    },
+    {
+      "fixtureId": "candidate-bound-burden-conflicts",
+      "challengeCase": {
+        "caseId": "v36-synthetic-04",
+        "moveId": "v36-move-04",
+        "sourceExcerpt": "You now need to prove that every exception is impossible. That bridge gives no reason to infer the conclusion.",
+        "targetPacket": { "indispensableComponents": [{ "id": "c1", "text": "The bridge supports the conclusion." }] },
+        "burdenContext": {
+          "burdenPacket": { "primaryRouteId": "route-4", "eligibleBridgeIds": ["bridge-1"] },
+          "route": { "id": "route-4", "bridges": [{ "id": "bridge-1", "tier": "central" }] }
+        }
+      },
+      "cards": {},
+      "burdenPackets": [
+        {
+          "cardKey": "burdenAdjustment",
+          "fieldPath": "burdenAdjustment",
+          "candidate1": { "value": "retained", "evidence": null },
+          "candidate2": { "value": "reassigned", "evidence": null },
+          "card": {
+            "schemaVersion": "3.6-decision-card",
+            "family": "burden-conflict",
+            "caseId": "v36-synthetic-04",
+            "moveId": "v36-move-04",
+            "fieldPath": "burdenAdjustment",
+            "candidateSelection": "candidate-2",
+            "qualifyingCue": "explicit-reassignment",
+            "evidenceText": "You now need to prove that every exception is impossible",
+            "rationale": "The response explicitly transfers a proof demand to the interlocutor, so the reassigned candidate is selected over retained without introducing a third value."
+          }
+        },
+        {
+          "cardKey": "burdenContact",
+          "fieldPath": "burdenContact",
+          "candidate1": { "tier": "none", "bridgeId": null, "evidence": null },
+          "candidate2": { "tier": "central", "bridgeId": "bridge-1", "evidence": null },
+          "card": {
+            "schemaVersion": "3.6-decision-card",
+            "family": "burden-conflict",
+            "caseId": "v36-synthetic-04",
+            "moveId": "v36-move-04",
+            "fieldPath": "burdenContact",
+            "candidateSelection": "candidate-2",
+            "qualifyingCue": "eligible-bridge-attack",
+            "evidenceText": "That bridge gives no reason to infer the conclusion",
+            "rationale": "The response attacks the sole eligible central bridge by denying its inferential support, so the nondefault bridge-contact candidate is selected."
+          }
+        }
+      ]
+    }
+  ],
+  "invalidMutations": [
+    {
+      "fixtureId": "target-default-with-evidence",
+      "baseFixtureId": "target-diagnostic-reframe-positive",
+      "cardKey": "target",
+      "changes": [{ "path": "components.0.contactMode", "value": "none" }],
+      "expectedError": "inactive evidence must be null"
+    },
+    {
+      "fixtureId": "global-assent-without-license",
+      "baseFixtureId": "licensed-global-assent",
+      "cardKey": "target",
+      "changes": [{ "path": "components.0.licenseText", "value": null }],
+      "expectedError": "active evidence text missing"
+    },
+    {
+      "fixtureId": "contrary-with-component-contact",
+      "baseFixtureId": "target-diagnostic-reframe-positive",
+      "cardKey": "target",
+      "changes": [
+        { "path": "contrary.classification", "value": "relevant-no-component" },
+        { "path": "contrary.evidenceText", "value": "changes the standard" }
+      ],
+      "expectedError": "relevant contrary material contacts a component"
+    },
+    {
+      "fixtureId": "consequence-without-defect",
+      "baseFixtureId": "target-diagnostic-reframe-positive",
+      "cardKey": "diagnostic",
+      "changes": [
+        { "path": "defect.type", "value": "none" },
+        { "path": "defect.cueText", "value": null }
+      ],
+      "expectedError": "consequence requires a non-none defect"
+    },
+    {
+      "fixtureId": "diagnostic-link-outside-relation",
+      "baseFixtureId": "target-diagnostic-reframe-positive",
+      "cardKey": "diagnostic",
+      "changes": [{ "path": "consequence.linkCueText", "value": "The target applies" }],
+      "expectedError": "link cue lies outside relation text"
+    },
+    {
+      "fixtureId": "reframe-without-relation",
+      "baseFixtureId": "target-diagnostic-reframe-positive",
+      "cardKey": "reframe",
+      "changes": [{ "path": "relationText", "value": null }],
+      "expectedError": "active evidence text missing"
+    },
+    {
+      "fixtureId": "nondefault-burden-without-evidence",
+      "baseFixtureId": "candidate-bound-burden-conflicts",
+      "cardKey": "burdenAdjustment",
+      "changes": [{ "path": "evidenceText", "value": null }],
+      "expectedError": "active evidence text missing"
+    },
+    {
+      "fixtureId": "unresolved-burden-with-evidence",
+      "baseFixtureId": "candidate-bound-burden-conflicts",
+      "cardKey": "burdenContact",
+      "changes": [
+        { "path": "candidateSelection", "value": "neither" },
+        { "path": "qualifyingCue", "value": "insufficient" }
+      ],
+      "expectedError": "inactive evidence must be null"
+    }
+  ]
+}

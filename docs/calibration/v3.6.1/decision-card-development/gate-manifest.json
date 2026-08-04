@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "3.6.1-decision-card-development-manifest",
+  "gateId": "v3.6.1-decision-card-development",
+  "status": "frozen-before-normalization",
+  "frozenAt": "2026-08-04T03:16:02.000Z",
+  "workflowVersion": "Slugfester Targeted Decision-Card Workflow v3.6.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.6.1",
+  "calibrationOnly": true,
+  "correction": "deterministic-unique-word-boundary-evidence-context",
+  "maximumEvidenceWindowCharacters": 160,
+  "retiredGoldUsedForValidatorFixtures": true,
+  "independentModelAccuracyTest": false,
+  "modelContextsExecuted": 0,
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsd": 0,
+  "heldOutMaterialOpened": false,
+  "numericalScoringAuthorized": false,
+  "productionMutationAuthorized": false,
+  "priorV36": {
+    "manifestPath": "docs/calibration/v3.6/decision-card-development/gate-manifest.json",
+    "manifestSha256": "96460ed12614ddf3847df924d1e306dad9bb737d1117b4375af4f12b978a38f9",
+    "outcome": "failed-nonunique-retired-evidence"
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.6.1.md": "0a2451f047dba928adf5299db355feb7b3ee4cd75bc88249e17036b9356aad15",
+    "docs/reassessment-rubric-v3.6.1.md": "d34e67153d9297ce815eb1330b9bc926ff36961321a03db8a07c477bbe5bf02c",
+    "docs/calibration/v3.6/decision-card-development/schemas/target-component-example.schema.json": "5b7f19da65a38c98bddb34f91166829fa54fbc75c0f517f99a3d89958d98dde4",
+    "docs/calibration/v3.6/decision-card-development/schemas/diagnostic.schema.json": "7a663e1a26443bf1e6f7c26be05ffb1fe1cc8df0033a77f0ba5a703fe7b7bd53",
+    "docs/calibration/v3.6/decision-card-development/schemas/reframe.schema.json": "664f578caff65b39a85425845e498a7c7dbca15fcc045dea814b701a320a62e8",
+    "docs/calibration/v3.6/decision-card-development/schemas/burden-conflict.schema.json": "ec8a1a03ef0300196eff19c0a59148831b317565683d7bb90e762ec8c03ed4a9",
+    "docs/calibration/v3.6/decision-card-development/synthetic-fixtures.json": "63ae3c6597b6d3efe4ed0c6736b2a5dafcac5dd20776ad393a5441ae9b60683c",
+    "docs/calibration/v3.6/decision-card-development/retired-link-key.json": "c37783c3f7e32856e360b620ce00b9141e871a45670f9f11eae9c334297387e7",
+    "docs/calibration/v3.6/decision-card-development/retired-fixtures.json": "16f8f483dde3c665598f3a7dfe4d4a4352f6511dc8fb9bf2a4bb304352bf541c",
+    "docs/calibration/v3.6/decision-card-development/gate-failure.json": "a9b7ff379a54929245f3e40f965b8ba1d780a933755094b8aaee0078b5e05be3",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v361-evidence-context.mjs": "10402ddc746447d495ff9461ff2c7e84980eeac5968e467e1f8f03ae9605c4fb",
+    "scripts/test-v361-evidence-context.mjs": "2f6b48cb54f5902bf4e7dde78e19730801c9de587b60a27cf051b7461def858e",
+    "scripts/normalize-v361-retired-decision-fixtures.mjs": "70a0b53f1b0221876fc8d6b5c1f783d64297a52358e870ac597367e00a4a2ff6",
+    "scripts/test-v361-decision-cards.mjs": "53e5f68cda47cc807c4b042780e8c1572c2366152ac5527e60a4702233e7a0c2",
+    "scripts/validate-v361-decision-card-development.mjs": "50d5473b1c9ec4eb93a7dd4311e7bc6d30845b32bb05735dd66317fe4ba950b9"
+  },
+  "sample": {
+    "debateCount": 3,
+    "debates": [
+      {
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "debateNumber": "62",
+        "role": "straightforward-dyadic",
+        "sources": {
+          "input": {
+            "path": "docs/calibration/v3.2/retired-three-debate-test/inputs/pageau-folley-logos-meaning-resurrection-2026.json",
+            "sha256": "5fb16c0f52dd15dd1d071a113a74f4f26291c3bf6038efd50cb98804ef711af9"
+          },
+          "passA": {
+            "path": "docs/calibration/v3.2/retired-three-debate-test/pass-a/pageau-folley-logos-meaning-resurrection-2026.json",
+            "sha256": "32e73241f0c821cd08c897234a8f5c9bcb0c6210c7938ef54073eafd9ddefc39"
+          },
+          "passB": {
+            "path": "docs/calibration/v3.2/retired-three-debate-test/pass-b/pageau-folley-logos-meaning-resurrection-2026.json",
+            "sha256": "e759d99315f5e7ecf63216a6632570ef0a17a81d16091f91bb7153e9211684fa"
+          },
+          "gold": {
+            "path": "docs/calibration/v3.2/retired-three-debate-test/gold/pageau-folley-logos-meaning-resurrection-2026.json",
+            "sha256": "57de216e0de46b54d76d887d38dc10c28f4704401803e2a74a1e01dab4450078",
+            "developmentFixtureOnly": true
+          }
+        }
+      },
+      {
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "debateNumber": "185",
+        "role": "difficult-dyadic-reframe",
+        "sources": {
+          "input": {
+            "path": "docs/calibration/v3.2/retired-three-debate-test/inputs/dennett-caruso-free-will-responsibility-2021.json",
+            "sha256": "6d8bc54534869c9cdf4459b2f0c838bdc901d67750067edd8d47176148f89486"
+          },
+          "passA": {
+            "path": "docs/calibration/v3.2/retired-three-debate-test/pass-a/dennett-caruso-free-will-responsibility-2021.json",
+            "sha256": "c8601d11911e733ec7d2be6802848520d0bb95c0e619e340bc634c56dd9fb789"
+          },
+          "passB": {
+            "path": "docs/calibration/v3.2/retired-three-debate-test/pass-b/dennett-caruso-free-will-responsibility-2021.json",
+            "sha256": "fc60d0675bea842bd383249276da90b0033acfd11d4aa3f5a0a57ca3b5783470"
+          },
+          "gold": {
+            "path": "docs/calibration/v3.2/retired-three-debate-test/gold/dennett-caruso-free-will-responsibility-2021.json",
+            "sha256": "b10dcc33649b800b895b93d1545865dec1c2d52fa21dea5c73ac21e9ebcc6f42",
+            "developmentFixtureOnly": true
+          }
+        }
+      },
+      {
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "debateNumber": "154",
+        "role": "multi-speaker",
+        "sources": {
+          "input": {
+            "path": "docs/calibration/v3.2/retired-three-debate-test/inputs/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+            "sha256": "645b4b097e94e817dad25ce27866cda5d37f8f943342ec776924d18f6593f9b7"
+          },
+          "passA": {
+            "path": "docs/calibration/v3.2/retired-three-debate-test/pass-a/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+            "sha256": "591b3d469a87687452f436bfa40c7a6c16dd127e9499bee10367505e7cd67718"
+          },
+          "passB": {
+            "path": "docs/calibration/v3.2/retired-three-debate-test/pass-b/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+            "sha256": "5d3443c694aa2d409a9b6a26915c16d24122d136145bcff5b9b05bac2ef5477c"
+          },
+          "gold": {
+            "path": "docs/calibration/v3.2/retired-three-debate-test/gold/koukl-oconnor-kanojia-nonbelief-harm-2025.json",
+            "sha256": "7ebe6b1290a4c825bb38181a7fc15ffa688b7bfdab84a885c48aeeb79f4e04c9",
+            "developmentFixtureOnly": true
+          }
+        }
+      }
+    ]
+  },
+  "thresholds": {
+    "closedSchemaCount": 4,
+    "validSyntheticCardCount": 11,
+    "rejectedInvalidMutationCount": 8,
+    "retiredFamilyCardCount": 39,
+    "retiredBurdenConflictCardCount": 2,
+    "retiredSemanticMatchRate": 1,
+    "discretionaryRepairsMaximum": 0,
+    "fallbackCasesMaximum": 0,
+    "modelContextsMaximum": 0,
+    "scoringFieldsMaximum": 0
+  },
+  "outputs": {
+    "normalizedRetiredFixtures": "docs/calibration/v3.6.1/decision-card-development/retired-fixtures.json",
+    "fixtureAnalysis": "docs/calibration/v3.6.1/decision-card-development/fixture-analysis.json"
+  }
+}

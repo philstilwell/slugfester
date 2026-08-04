@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "3.6.1-decision-card-fixture-analysis",
+  "analyzedAt": "2026-08-04T03:16:02.000Z",
+  "status": "fixture-gate-pass",
+  "warning": "Retired expected cards are gold-derived validator fixtures, not independent model predictions or evidence of model accuracy.",
+  "sources": {
+    "manifestSha256": "d16815d4951e741cdc958450bb93135787bd1e1ce9bba14fd4332cb93f81a134",
+    "normalizedRetiredFixturesSha256": "40a0914dcec88a5ade7174a947c9a8da91cfbac8c0b8537b62a24304ac766dd2"
+  },
+  "results": {
+    "closedSchemaCount": 4,
+    "validSyntheticCards": 11,
+    "rejectedInvalidMutations": 8,
+    "retiredFamilyCards": 39,
+    "retiredBurdenCards": 2,
+    "semanticAssertions": 137,
+    "semanticMatches": 137,
+    "semanticMatchRate": 1,
+    "expandedEvidenceFields": 2,
+    "ambiguousEvidenceFields": 0,
+    "discretionaryRepairs": 0,
+    "fallbackCases": 0,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0
+  },
+  "gates": {
+    "closedSchemaCount": true,
+    "validSyntheticCardCount": true,
+    "rejectedInvalidMutationCount": true,
+    "retiredFamilyCardCount": true,
+    "retiredBurdenConflictCardCount": true,
+    "retiredSemanticMatchRate": true,
+    "ambiguousEvidenceFields": true,
+    "discretionaryRepairs": true,
+    "fallbackCases": true,
+    "modelContexts": true,
+    "scoringFields": true
+  },
+  "passed": true,
+  "decision": {
+    "remoteSchemaSmokeTestPreregistrationAuthorized": true,
+    "modelBatchAuthorized": false,
+    "heldOutAccessAuthorized": false,
+    "numericalScoringAuthorized": false,
+    "productionMutationAuthorized": false
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v3.6-target-component-example-card",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "family", "caseId", "moveId", "directTarget", "components", "example", "scope", "contrary", "rationale"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "3.6-decision-card" },
+    "family": { "type": "string", "const": "target-component-example" },
+    "caseId": { "type": "string" },
+    "moveId": { "type": "string" },
+    "directTarget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["contact", "evidenceText"],
+      "properties": {
+        "contact": { "type": "boolean" },
+        "evidenceText": { "anyOf": [{ "type": "null" }, { "type": "string" }] }
+      }
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["componentId", "contactMode", "evidenceText", "licenseText"],
+        "properties": {
+          "componentId": { "type": "string" },
+          "contactMode": { "type": "string", "enum": ["none", "exact-proposition", "explicit-global-assent", "denial", "restriction", "distinction", "explanation", "warrant-challenge"] },
+          "evidenceText": { "anyOf": [{ "type": "null" }, { "type": "string" }] },
+          "licenseText": { "anyOf": [{ "type": "null" }, { "type": "string" }] }
+        }
+      }
+    },
+    "example": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["classification", "evidenceText"],
+      "properties": {
+        "classification": { "type": "string", "enum": ["none", "inside-locked-target", "distinct-connected-example"] },
+        "evidenceText": { "anyOf": [{ "type": "null" }, { "type": "string" }] }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["relation", "evidenceText"],
+      "properties": {
+        "relation": { "type": "string", "enum": ["same", "narrowed", "strengthened", "modality-shift"] },
+        "evidenceText": { "anyOf": [{ "type": "null" }, { "type": "string" }] }
+      }
+    },
+    "contrary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["classification", "evidenceText"],
+      "properties": {
+        "classification": { "type": "string", "enum": ["none", "component-contact-precludes-contrary", "relevant-no-component"] },
+        "evidenceText": { "anyOf": [{ "type": "null" }, { "type": "string" }] }
+      }
+    },
+    "rationale": { "type": "string" }
+  }
+}
