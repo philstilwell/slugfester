@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "3.8.1-source-preparation-frozen-attempt-failure",
+  "protocolId": "v3.8.1-heldout-source-preparation-correction",
+  "status": "failed-at-proposal-boundary",
+  "failureClass": "execution-control-instrumentation-defect",
+  "executionStartedAt": "2026-08-04T08:14:36.550Z",
+  "executionCompletedAt": "2026-08-04T09:03:23.372Z",
+  "proposalContextsPlanned": 3,
+  "proposalContextsCompleted": 3,
+  "proposalContextsSemanticallyValid": 3,
+  "proposalContextsAcceptedByFrozenExecutionControl": 1,
+  "reviewContextsStarted": 0,
+  "adjudicationContextsStarted": 0,
+  "audioVerificationsStarted": 0,
+  "scoresDerived": false,
+  "assessmentProseWritten": false,
+  "productionMutated": false,
+  "authentication": "ChatGPT subscription",
+  "apiKeysRemoved": true,
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsd": 0,
+  "contexts": [
+    {
+      "debateNumber": "103",
+      "frozenStatus": "stream-recovery-limit-exceeded",
+      "correctedSemanticStatus": "validator-passed",
+      "elapsedSeconds": 307.676,
+      "attemptCount": 1,
+      "commandExitCode": 0,
+      "validationExitCode": 0,
+      "reportedStreamMatches": 3,
+      "rawOutputSha256": "6bda404a85f97fb41e03f84d240e8a5da56d4a3989063368c08758daff48bf6e",
+      "enrichedOutputSha256": "d3f9626b86ef2cc014f43d1b87cefebab502215f575f5b8fafbb870e5d9890fe"
+    },
+    {
+      "debateNumber": "55",
+      "frozenStatus": "completed-valid",
+      "correctedSemanticStatus": "validator-passed",
+      "elapsedSeconds": 2926.735,
+      "attemptCount": 1,
+      "commandExitCode": 0,
+      "validationExitCode": 0,
+      "reportedStreamMatches": 1,
+      "observedStructuredTransportRetries": 1,
+      "observedTurnId": "019fcbd6-c20b-7280-8b58-d448de9e1494",
+      "rawOutputSha256": "e8e553d0101144e72543c584007ca8d728752f37908a3a489d970ae2bbb16aba",
+      "enrichedOutputSha256": "0dc6acc8c1b3f93f9e42cee4bc3a545dd0be62e8783ec440bbbe057da81fe986"
+    },
+    {
+      "debateNumber": "161",
+      "frozenStatus": "stream-recovery-limit-exceeded",
+      "correctedSemanticStatus": "validator-passed",
+      "elapsedSeconds": 299.549,
+      "attemptCount": 1,
+      "commandExitCode": 0,
+      "validationExitCode": 0,
+      "reportedStreamMatches": 5,
+      "rawOutputSha256": "649f3b4e1797ed1ca02f11015b0f11b5d082f8286241de0e9d5749ecd8bdce98",
+      "enrichedOutputSha256": "637ddf6a92315fb32ee6b3a4b4e08eda3cf831239b24ee2f0b779570f6adbb65"
+    }
+  ],
+  "detectorAudit": {
+    "frozenPattern": "(reconnect|resum(?:e|ing)|stream[^\\n]{0,50}recover|retrying[^\\n]{0,50}stream)",
+    "scannedScope": "combined model stdout and stderr, including model-visible semantic content and echoed final output",
+    "falsePositiveSources": [
+      {
+        "path": "docs/calibration/v3.8.1/held-out-source-preparation-correction/source-preparation-manual.md",
+        "textClass": "ordinary protocol prose",
+        "matchedToken": "reconnect"
+      },
+      {
+        "path": "docs/calibration/v3.8.1/held-out-source-preparation-correction/proposal/raw-outputs/debate-103.json",
+        "textClass": "ordinary assessment prose",
+        "matchedToken": "resume"
+      },
+      {
+        "path": ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt",
+        "textClass": "ordinary transcript prose",
+        "matchedToken": "resume within presume"
+      },
+      {
+        "path": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+        "textClass": "ordinary event prose",
+        "matchedToken": "resume within presume"
+      }
+    ],
+    "falseNegative": {
+      "debateNumber": "55",
+      "timestamp": "2026-08-04T08:58:15.849538Z",
+      "component": "codex_core::responses_retry",
+      "turnId": "019fcbd6-c20b-7280-8b58-d448de9e1494",
+      "retryOrdinal": 1,
+      "retryMaximum": 5,
+      "reason": "The structured warning uses stream-before-retrying token order, which the frozen expression does not recognize."
+    }
+  },
+  "artifactPolicy": {
+    "retainOutputsAsFailureEvidence": true,
+    "semanticProposalReuseAuthorizedOnlyByFutureManifest": true,
+    "reuseRequirements": [
+      "exact raw path and SHA-256 match",
+      "exact enriched path and SHA-256 match",
+      "fresh deterministic validator pass",
+      "no semantic normalization",
+      "no proposal regeneration"
+    ],
+    "reviewOrAdjudicateInsideV381": false
+  },
+  "nextAuthorizedAction": "Design, fixture-test, and freeze a separate v3.8.2 instrumentation continuation; this failure record authorizes no downstream model execution by itself."
+}
