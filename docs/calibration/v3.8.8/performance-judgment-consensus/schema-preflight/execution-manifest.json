@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "3.8.8-performance-schema-endpoint-preflight-manifest",
+  "protocolId": "v3.8.8-performance-judgment-consensus",
+  "status": "frozen-one-synthetic-context-authorized",
+  "frozenAt": "2026-08-04T18:15:00.000Z",
+  "checkpointCommit": "e280ea20e3da1803d91a6816de6aee3fe1d70a88",
+  "purpose": "Prove endpoint acceptance of the exact shared schema before any further debate contexts.",
+  "syntheticOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low"
+  },
+  "input": {
+    "schema": "docs/calibration/v3.8.8/performance-judgment-consensus/performance-judgment-schema.json",
+    "schemaSha256": "93840b1df9d0fa92381ff7335f0bd6d405feea468ca746455c712db1785dee22",
+    "packet": "docs/calibration/v3.8.8/performance-judgment-consensus/schema-preflight/synthetic-packet.json",
+    "debateTranscriptAvailable": false,
+    "debateJudgmentAuthorized": false
+  },
+  "authorization": {
+    "syntheticSchemaPreflightContexts": 1,
+    "syntheticSchemaPreflightModelExecution": true,
+    "debatePerformanceModelExecution": false,
+    "scoreDerivation": false,
+    "numericalParticipantScoring": false,
+    "assessmentProse": false,
+    "furtherAutomaticRetry": false
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attempts": 1,
+    "retriesMaximum": 0,
+    "perInvocationTimeoutMs": 600000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "acceptanceRule": {
+    "endpointExitCode": 0,
+    "outputWritten": true,
+    "exactSharedSchemaUsed": true,
+    "packetAwareValidationRequired": true,
+    "validSyntheticMoves": 1,
+    "debateJudgmentsMaximum": 0
+  },
+  "artifacts": {
+    "output": "docs/calibration/v3.8.8/performance-judgment-consensus/schema-preflight/output.json",
+    "execution": "docs/calibration/v3.8.8/performance-judgment-consensus/schema-preflight/model-execution.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v3.8.8/performance-judgment-consensus/schema-preflight/output.json",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/schema-preflight/model-execution.json"
+  ],
+  "sourceHashes": {
+    "docs/calibration/v3.8.8/performance-judgment-consensus/performance-judgment-schema.json": "93840b1df9d0fa92381ff7335f0bd6d405feea468ca746455c712db1785dee22",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/schema-preflight/synthetic-packet.json": "402b8b99e70832698b11822fbbea65b49a42dc0d2768e8609bf0b84996514533",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/schema-keyword-recovery-audit.json": "c0e63623b4a2e27984e77d6557c064cbfc25426333f3195ca49978b7f3274969",
+    "scripts/lib/v388-performance-judgment.mjs": "fc17d7a6414dfef8b1945704e1174ce7df544f49847c8a4e53ee648e363f99a1",
+    "scripts/validate-v388-performance-judgment-output.mjs": "40ecc0aa912470017ee6282a50573abfd3794ae1067bc6ae5a4037e15264c41f",
+    "scripts/preregister-v388-performance-schema-preflight.mjs": "638dc8542dc98965dc34e0871300ef82ffff91db31896d029bd1b1c87970292f",
+    "scripts/validate-v388-performance-schema-preflight-lock.mjs": "a7bf2e933700e18ed1576c74b7153dc9eb600c7bd7988d79851ba88934aa3f0a",
+    "scripts/run-v388-performance-schema-preflight.mjs": "50ea4f63032089d252f5ae430fa6308d68921626b4d1e716cafc3ccc5a0ed2a4"
+  }
+}
