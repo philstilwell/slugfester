@@ -1,0 +1,348 @@
+{
+  "schemaVersion": "3.4-failed-review-semantic-postmortem",
+  "analyzedAt": "2026-08-04T02:44:01.724Z",
+  "officialGateOutcome": "failed-before-final-lock",
+  "warning": "This diagnostic ignores review-artifact validation failures only to measure semantic tendencies. It is not an accepted merge, final lock, gate result, or authorization.",
+  "sources": {
+    "manifestSha256": "01acfc270ebe0c23d6560642617c71926ec80d828109912bdbaf9cbea8bcae40"
+  },
+  "execution": {
+    "acceptedModelContexts": 6,
+    "modelOutputRetries": 0,
+    "preInferenceTransportRejections": 6,
+    "observedSameRequestStreamRecoveries": 1,
+    "unresolvedFields": 3,
+    "dualOverridesApplied": 3
+  },
+  "artifactValidation": {
+    "artifactCount": 6,
+    "validArtifactCount": 0,
+    "invalidArtifactCount": 6,
+    "artifacts": [
+      {
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "debateNumber": "62",
+        "modelKey": "terra",
+        "reviewCaseCount": 3,
+        "validUnderFrozenValidator": false,
+        "invalidCaseCount": 1,
+        "findings": [
+          {
+            "caseId": "v291-dev-62-07",
+            "findings": [
+              "default-contrary-evidence-nonnull",
+              "base-annotation:terra.v291-dev-62-07: contrary material invalid"
+            ]
+          }
+        ]
+      },
+      {
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "debateNumber": "62",
+        "modelKey": "sol",
+        "reviewCaseCount": 3,
+        "validUnderFrozenValidator": false,
+        "invalidCaseCount": 2,
+        "findings": [
+          {
+            "caseId": "v291-dev-62-07",
+            "findings": [
+              "validator-required-boundary-evidence-absent"
+            ]
+          },
+          {
+            "caseId": "v291-dev-62-09",
+            "findings": [
+              "validator-required-boundary-evidence-absent",
+              "contrary-material-without-original-target-contact",
+              "base-annotation:sol.v291-dev-62-09: contrary material invalid"
+            ]
+          }
+        ]
+      },
+      {
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "debateNumber": "185",
+        "modelKey": "terra",
+        "reviewCaseCount": 4,
+        "validUnderFrozenValidator": false,
+        "invalidCaseCount": 3,
+        "findings": [
+          {
+            "caseId": "v291-dev-185-05",
+            "findings": [
+              "default-contrary-evidence-nonnull",
+              "base-annotation:terra.v291-dev-185-05: contrary material invalid"
+            ]
+          },
+          {
+            "caseId": "v291-dev-185-07",
+            "findings": [
+              "validator-required-boundary-evidence-absent",
+              "default-contrary-evidence-nonnull",
+              "base-annotation:terra.v291-dev-185-07: contrary material invalid"
+            ]
+          },
+          {
+            "caseId": "v291-dev-185-12",
+            "findings": [
+              "validator-required-boundary-evidence-absent"
+            ]
+          }
+        ]
+      },
+      {
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "debateNumber": "185",
+        "modelKey": "sol",
+        "reviewCaseCount": 4,
+        "validUnderFrozenValidator": false,
+        "invalidCaseCount": 2,
+        "findings": [
+          {
+            "caseId": "v291-dev-185-07",
+            "findings": [
+              "validator-required-boundary-evidence-absent"
+            ]
+          },
+          {
+            "caseId": "v291-dev-185-12",
+            "findings": [
+              "validator-required-boundary-evidence-absent"
+            ]
+          }
+        ]
+      },
+      {
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "debateNumber": "154",
+        "modelKey": "terra",
+        "reviewCaseCount": 6,
+        "validUnderFrozenValidator": false,
+        "invalidCaseCount": 3,
+        "findings": [
+          {
+            "caseId": "v291-dev-154-08",
+            "findings": [
+              "validator-required-boundary-evidence-absent",
+              "contrary-material-without-original-target-contact",
+              "base-annotation:terra.v291-dev-154-08: contrary material invalid"
+            ]
+          },
+          {
+            "caseId": "v291-dev-154-11",
+            "findings": [
+              "validator-required-boundary-evidence-absent"
+            ]
+          },
+          {
+            "caseId": "v291-dev-154-12",
+            "findings": [
+              "validator-required-boundary-evidence-absent",
+              "contrary-material-without-original-target-contact",
+              "base-annotation:terra.v291-dev-154-12: contrary material invalid"
+            ]
+          }
+        ]
+      },
+      {
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "debateNumber": "154",
+        "modelKey": "sol",
+        "reviewCaseCount": 6,
+        "validUnderFrozenValidator": false,
+        "invalidCaseCount": 3,
+        "findings": [
+          {
+            "caseId": "v291-dev-154-08",
+            "findings": [
+              "validator-required-boundary-evidence-absent"
+            ]
+          },
+          {
+            "caseId": "v291-dev-154-11",
+            "findings": [
+              "validator-required-boundary-evidence-absent"
+            ]
+          },
+          {
+            "caseId": "v291-dev-154-12",
+            "findings": [
+              "validator-required-boundary-evidence-absent"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "semanticMonitoring": {
+    "rawPassAAccuracy": {
+      "originalTargetContactExact": 0.9230769230769231,
+      "connectedExampleExact": 0.8461538461538461,
+      "scopeExact": 0.9230769230769231,
+      "burdenAdjustmentExact": 1,
+      "componentContactMicroExact": 0.8064516129032258,
+      "coverageExact": 0.6923076923076923,
+      "defectTypeExact": 0.6153846153846154,
+      "consequenceExact": 0.7692307692307693,
+      "diagnosticExact": 0.7692307692307693,
+      "reframeExact": 1,
+      "burdenRelevanceExact": 0.8461538461538461,
+      "exactDerivedTupleExact": 0.5384615384615384
+    },
+    "rawPassBAccuracy": {
+      "originalTargetContactExact": 1,
+      "connectedExampleExact": 0.6923076923076923,
+      "scopeExact": 0.7692307692307693,
+      "burdenAdjustmentExact": 1,
+      "componentContactMicroExact": 0.6451612903225806,
+      "coverageExact": 0.5384615384615384,
+      "defectTypeExact": 0.6923076923076923,
+      "consequenceExact": 0.8461538461538461,
+      "diagnosticExact": 0.8461538461538461,
+      "reframeExact": 0.6153846153846154,
+      "burdenRelevanceExact": 1,
+      "exactDerivedTupleExact": 0.23076923076923078
+    },
+    "terraReviewAccuracy": {
+      "originalTargetContactExact": 0.7692307692307693,
+      "connectedExampleExact": 0.7692307692307693,
+      "scopeExact": 0.8461538461538461,
+      "burdenAdjustmentExact": 0.8461538461538461,
+      "componentContactMicroExact": 0.7096774193548387,
+      "coverageExact": 0.6153846153846154,
+      "defectTypeExact": 0.6923076923076923,
+      "consequenceExact": 0.8461538461538461,
+      "diagnosticExact": 0.8461538461538461,
+      "reframeExact": 0.8461538461538461,
+      "burdenRelevanceExact": 0.38461538461538464,
+      "exactDerivedTupleExact": 0.07692307692307693
+    },
+    "solReviewAccuracy": {
+      "originalTargetContactExact": 0.9230769230769231,
+      "connectedExampleExact": 0.6153846153846154,
+      "scopeExact": 0.5384615384615384,
+      "burdenAdjustmentExact": 0.8461538461538461,
+      "componentContactMicroExact": 0.9032258064516129,
+      "coverageExact": 0.8461538461538461,
+      "defectTypeExact": 0.6923076923076923,
+      "consequenceExact": 0.7692307692307693,
+      "diagnosticExact": 0.7692307692307693,
+      "reframeExact": 0.8461538461538461,
+      "burdenRelevanceExact": 0.5384615384615384,
+      "exactDerivedTupleExact": 0.23076923076923078
+    },
+    "simulatedFinalAccuracy": {
+      "originalTargetContactExact": 0.9230769230769231,
+      "connectedExampleExact": 0.7692307692307693,
+      "scopeExact": 0.8461538461538461,
+      "burdenAdjustmentExact": 1,
+      "componentContactMicroExact": 0.8387096774193549,
+      "coverageExact": 0.7692307692307693,
+      "defectTypeExact": 0.6153846153846154,
+      "consequenceExact": 0.8461538461538461,
+      "diagnosticExact": 0.6923076923076923,
+      "reframeExact": 0.8461538461538461,
+      "burdenRelevanceExact": 0.9230769230769231,
+      "exactDerivedTupleExact": 0.46153846153846156,
+      "diagnosticPositiveRecall": 0,
+      "reframePositiveRecall": 0.5
+    },
+    "simulatedCoherentCaseCount": 11,
+    "simulatedIncoherentCases": [
+      {
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "caseId": "v291-dev-154-12",
+        "error": "simulated.v291-dev-154-12: consequence invalid"
+      },
+      {
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "caseId": "v291-dev-154-15",
+        "error": "simulated.v291-dev-154-15: consequence invalid"
+      }
+    ]
+  },
+  "reliability": {
+    "rawAgreementCount": 128,
+    "sharedRawErrorCount": 12,
+    "sharedRawErrorsCorrected": 2,
+    "correctedSharedErrors": [
+      {
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "caseId": "v291-dev-62-04",
+        "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-04-c3",
+        "disposition": "dual-confirmed-shared-override",
+        "simulatedFinalJson": "false",
+        "goldJson": "false"
+      },
+      {
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "caseId": "v291-dev-185-12",
+        "fieldPath": "defect",
+        "disposition": "dual-confirmed-shared-override",
+        "simulatedFinalJson": "\"irrelevance\"",
+        "goldJson": "\"irrelevance\""
+      }
+    ],
+    "correctSharedRawValuesHarmed": 1,
+    "harmedCorrectSharedValues": [
+      {
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "caseId": "v291-dev-185-12",
+        "fieldPath": "scope",
+        "disposition": "dual-confirmed-shared-override",
+        "simulatedFinalJson": "\"narrowed\"",
+        "goldJson": "\"same\""
+      }
+    ],
+    "conflictCount": 33,
+    "conflictsCorrect": 21,
+    "conflictAccuracy": 0.6363636363636364,
+    "unresolvedConflicts": [
+      {
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "caseId": "v291-dev-154-09",
+        "fieldPath": "defect",
+        "simulatedFinalJson": "\"none\"",
+        "goldJson": "\"attribution-error\""
+      },
+      {
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "caseId": "v291-dev-154-12",
+        "fieldPath": "defect",
+        "simulatedFinalJson": "\"none\"",
+        "goldJson": "\"ambiguity\""
+      },
+      {
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "caseId": "v291-dev-154-15",
+        "fieldPath": "defect",
+        "simulatedFinalJson": "\"none\"",
+        "goldJson": "\"invalid-inference\""
+      }
+    ]
+  },
+  "classificationGates": {
+    "finalOriginalTargetContactExact": false,
+    "finalScopeExact": false,
+    "finalBurdenAdjustmentExact": true,
+    "finalComponentContactMicroExact": false,
+    "finalCoverageExact": false,
+    "finalDefectTypeExact": false,
+    "finalConsequenceExact": false,
+    "finalDiagnosticExact": false,
+    "finalReframeExact": false,
+    "finalBurdenRelevanceExact": true,
+    "finalExactDerivedTupleExact": false,
+    "finalDiagnosticPositiveRecall": false,
+    "finalReframePositiveRecall": false
+  },
+  "simulatedClassificationThresholdsPassed": false,
+  "decision": {
+    "officialPassed": false,
+    "disjointRetiredConfirmationAuthorized": false,
+    "heldOutAccessAuthorized": false,
+    "numericalScoringAuthorized": false,
+    "productionMutationAuthorized": false
+  }
+}
