@@ -239,6 +239,8 @@
     "assessment:v3.8.8:sections:adjudication:preregister": "node scripts/preregister-v388-section-weight-adjudication.mjs --write",
     "assessment:v3.8.8:sections:adjudication:lock": "node scripts/validate-v388-section-weight-adjudication-lock.mjs",
     "assessment:v3.8.8:sections:adjudication:run": "node scripts/run-v388-section-weight-adjudications.mjs",
+    "assessment:v3.8.8:sections:compile": "node scripts/compile-v388-section-weight-consensus.mjs --write",
+    "assessment:v3.8.8:sections:consensus:validate": "node scripts/validate-v388-section-weight-consensus-result.mjs",
     "assessment:transcripts:acquire": "node scripts/acquire-corpus-captions.mjs --concurrency 6",
     "assessment:transcripts:check": "node scripts/validate-corpus-transcripts.mjs",
     "assessment:scoring:test": "node scripts/test-reassessment-scoring.mjs",
