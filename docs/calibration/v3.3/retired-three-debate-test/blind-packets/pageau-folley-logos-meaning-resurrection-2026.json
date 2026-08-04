@@ -1,0 +1,910 @@
+{
+  "schemaVersion": "3.3-blind-bundle-packet",
+  "workflowVersion": "Slugfester Anonymous Bundled Adjudication Workflow v3.3",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.3",
+  "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+  "debateNumber": "62",
+  "calibrationOnly": true,
+  "blindness": {
+    "candidateValuesAbsent": true,
+    "rawModelIdentitiesAbsent": true,
+    "agreementStatusAbsent": true,
+    "goldAbsent": true,
+    "scoresAbsent": true,
+    "legacyMaterialAbsent": true
+  },
+  "cases": [
+    {
+      "caseId": "v291-dev-62-04",
+      "lockedCase": {
+        "caseId": "v291-dev-62-04",
+        "lane": "dyadic",
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "debateNumber": "62",
+        "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-04",
+        "side": "con",
+        "speaker": "Joe Folley",
+        "sourceExcerpt": ">> I think so. I think that um yeah I think I think especially with with people that's a very good example right because es and I think that that's one that I think fits quite nicely within my worldview as well. You know we are all currently you know submitting to a certain idea of what we're going to do.",
+        "sourceExcerptSha256": "b197efca08e9efb937b4e0c653314f814272db2c0c50da3fe90465e27fd706eb",
+        "targetPacket": {
+          "id": "pageau-folley-logos-meaning-resurrection-2026-target-04",
+          "targetSpeaker": "Jonathan Pageau",
+          "targetSide": "pro",
+          "ownershipScope": "speaker-only",
+          "adoptionRecords": [],
+          "sourceSpan": {
+            "startMs": 1766960,
+            "endMs": 1793600
+          },
+          "sourceExcerpt": "enact a form of unity. They they come together and bind towards a purpose and they elect a mayor and they and you can say well that's just an emergent property of people being together. But then suddenly now the mayor puts someone in jail because they they broke a law and so it constrains back down on the part. So to say it's just an emergent property isn't sufficient to be able to understand the way that that onlogical realities that are higher actually constrain those that are below.",
+          "sourceExcerptSha256": "6d2dfddf00b48675756f4157fe7e5aba7608f9ea9548eb9630a0d92584fa2fc3",
+          "claim": "People enact unity toward a purpose and elect a mayor who constrains them, so calling higher ontological realities merely emergent is insufficient.",
+          "targetRelationToMove": "immediate-opponent-claim",
+          "interveningOpponentClaim": false,
+          "exceptionRationale": null,
+          "indispensableComponents": [
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-04-c1",
+              "text": "People enact a form of unity by binding toward a purpose and electing a mayor.",
+              "kind": "fact-premise",
+              "dependsOn": []
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-04-c2",
+              "text": "The mayor enforces law on the people and thereby constrains downward on the parts.",
+              "kind": "fact-premise",
+              "dependsOn": [
+                "pageau-folley-logos-meaning-resurrection-2026-target-04-c1"
+              ]
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-04-c3",
+              "text": "Higher ontological realities can constrain the realities beneath them.",
+              "kind": "inference",
+              "dependsOn": [
+                "pageau-folley-logos-meaning-resurrection-2026-target-04-c1",
+                "pageau-folley-logos-meaning-resurrection-2026-target-04-c2"
+              ]
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-04-c4",
+              "text": "Calling the higher reality merely emergent is insufficient to explain that downward constraint.",
+              "kind": "conclusion",
+              "dependsOn": [
+                "pageau-folley-logos-meaning-resurrection-2026-target-04-c3"
+              ]
+            }
+          ],
+          "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+        },
+        "burdenContext": {
+          "burdenPacket": {
+            "primaryRouteId": "pageau-folley-logos-meaning-resurrection-2026-con-route",
+            "eligibleBridgeIds": [
+              "pageau-folley-logos-meaning-resurrection-2026-con-subsidiary"
+            ],
+            "selectionRationale": "The move directly bears on the subsidiary bridge selected for the speaker's side rather than merely mentioning the debate topic."
+          },
+          "route": {
+            "id": "pageau-folley-logos-meaning-resurrection-2026-con-route",
+            "side": "con",
+            "description": "Patterns and values are pragmatically useful abstractions grounded in human minds and social practices.",
+            "successCriteria": "Higher-level organization does not require a willful or transcendent divine source.",
+            "bridges": [
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-con-motion",
+                "tier": "motion",
+                "description": "Establish the con side's complete answer to the stated debate motion."
+              },
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-con-central",
+                "tier": "central",
+                "description": "Patterns and values are pragmatically useful abstractions grounded in human minds and social practices."
+              },
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-con-subsidiary",
+                "tier": "subsidiary",
+                "description": "Support a narrower evidential or conceptual consideration used by the con side."
+              }
+            ]
+          }
+        },
+        "fixtureOrigin": {
+          "type": "v2.8.2-retired-development-case",
+          "sourceCaseId": "v282-dev-62-04",
+          "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+          "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+        },
+        "sourceMetadata": {
+          "timestamp": "29:56",
+          "sourceSpan": {
+            "startMs": 1796320,
+            "endMs": 1810720
+          },
+          "speakerAttributionConfidence": "high",
+          "audioChecked": false,
+          "audioVerification": null
+        }
+      }
+    },
+    {
+      "caseId": "v291-dev-62-07",
+      "lockedCase": {
+        "caseId": "v291-dev-62-07",
+        "lane": "dyadic",
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "debateNumber": "62",
+        "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-07",
+        "side": "pro",
+        "speaker": "Jonathan Pageau",
+        "sourceExcerpt": "it is definitely using a a deep analogical language in order to describe something that happened and that we remember, you know, we remember to the extent that we can remember and that brings us to this problem of the gap like the fact that the fact that we suffer and the fact that we think that we shouldn't be suffering,",
+        "sourceExcerptSha256": "107bfff64f2e6695e92fcefaa3de704f8e44012053d87a7e94db7b015d308bac",
+        "targetPacket": {
+          "id": "pageau-folley-logos-meaning-resurrection-2026-target-07",
+          "targetSpeaker": "Joe Folley",
+          "targetSide": "con",
+          "ownershipScope": "speaker-only",
+          "adoptionRecords": [],
+          "sourceSpan": {
+            "startMs": 2611920,
+            "endMs": 2633119
+          },
+          "sourceExcerpt": ">> Yes. Well, I I think that there are for me it's the um more I don't want to use the word literal because I think literal is actually rather vague in a sense, but but historical I suppose um aspects of biblical text that I would struggle with. And I don't use Genesis as an example because I mean I don't I don't think you're I don't think you believe in the literal truth of of the Genesis story or the historical truth of the Genesis story.",
+          "sourceExcerptSha256": "14e5a939b2601c1994e9f5ffa3a63f044808d3a14c4b5c8c18aca9472e7d9e76",
+          "claim": "Folley struggles with historical biblical claims and exempts Genesis because he takes Pageau not to affirm its literal or historical truth.",
+          "targetRelationToMove": "immediate-opponent-claim",
+          "interveningOpponentClaim": false,
+          "exceptionRationale": null,
+          "indispensableComponents": [
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-07-c1",
+              "text": "Historical aspects of biblical texts are what Folley struggles to accept.",
+              "kind": "fact-premise",
+              "dependsOn": []
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-07-c2",
+              "text": "Folley takes Pageau not to believe the literal or historical truth of Genesis.",
+              "kind": "modality",
+              "dependsOn": []
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-07-c3",
+              "text": "Folley therefore does not use Genesis as his example of a difficult historical claim.",
+              "kind": "conclusion",
+              "dependsOn": [
+                "pageau-folley-logos-meaning-resurrection-2026-target-07-c1",
+                "pageau-folley-logos-meaning-resurrection-2026-target-07-c2"
+              ]
+            }
+          ],
+          "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+        },
+        "burdenContext": {
+          "burdenPacket": {
+            "primaryRouteId": "pageau-folley-logos-meaning-resurrection-2026-pro-route",
+            "eligibleBridgeIds": [
+              "pageau-folley-logos-meaning-resurrection-2026-pro-central"
+            ],
+            "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+          },
+          "route": {
+            "id": "pageau-folley-logos-meaning-resurrection-2026-pro-route",
+            "side": "pro",
+            "description": "Patterns and purposive unities are real features of the world that point upward to Logos.",
+            "successCriteria": "Top-down organization and irreducible emergent wholes support a mind-like transcendent unity.",
+            "bridges": [
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-pro-motion",
+                "tier": "motion",
+                "description": "Establish the pro side's complete answer to the stated debate motion."
+              },
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-pro-central",
+                "tier": "central",
+                "description": "Patterns and purposive unities are real features of the world that point upward to Logos."
+              },
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-pro-subsidiary",
+                "tier": "subsidiary",
+                "description": "Support a narrower evidential or conceptual consideration used by the pro side."
+              }
+            ]
+          }
+        },
+        "fixtureOrigin": {
+          "type": "v2.8.2-retired-development-case",
+          "sourceCaseId": "v282-dev-62-07",
+          "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+          "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+        },
+        "sourceMetadata": {
+          "timestamp": "45:14",
+          "sourceSpan": {
+            "startMs": 2714400,
+            "endMs": 2734720
+          },
+          "speakerAttributionConfidence": "high",
+          "audioChecked": false,
+          "audioVerification": null
+        }
+      }
+    },
+    {
+      "caseId": "v291-dev-62-09",
+      "lockedCase": {
+        "caseId": "v291-dev-62-09",
+        "lane": "dyadic",
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "debateNumber": "62",
+        "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-09",
+        "side": "pro",
+        "speaker": "Jonathan Pageau",
+        "sourceExcerpt": "things. I I the thing that the thing to me is that I was convinced of the resurrection in it for a different in a different way. It's like I was convinced of the resurrection. Uh you could say because I saw what it what it meant or what it brought downstream, what it the portrait of the world that it was showing me. That's the thing that convinced me of the resurrection more than whether or not this or that historian mentioned it or or whatever.",
+        "sourceExcerptSha256": "a731ee40322cf3ca58f144aa5917d3764281acb341e5b3556a89b080b14ff10f",
+        "targetPacket": {
+          "id": "pageau-folley-logos-meaning-resurrection-2026-target-09",
+          "targetSpeaker": "Joe Folley",
+          "targetSide": "con",
+          "ownershipScope": "speaker-only",
+          "adoptionRecords": [],
+          "sourceSpan": {
+            "startMs": 4200080,
+            "endMs": 4219040
+          },
+          "sourceExcerpt": "the resurrection of the body the life everlasting you I don't want to just like recite the nine creed but you know all that kind of stuff so that that that would it would raise my confidence in all of those propositions and all of the and as a result I would then come to believe that when I die my I I my my experience would not stop. I would continue to experience things.",
+          "sourceExcerptSha256": "05ce9b1c93db380aaec148d120e4160afe56e8120713200b421630f31599541a",
+          "claim": "The posited confirmation would raise Folley's confidence in bodily resurrection, everlasting life, and related propositions, leading him to believe experience continues after death.",
+          "targetRelationToMove": "immediate-opponent-claim",
+          "interveningOpponentClaim": false,
+          "exceptionRationale": null,
+          "indispensableComponents": [
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-09-c1",
+              "text": "The posited confirmation would raise Folley's confidence in bodily resurrection, everlasting life, and related propositions.",
+              "kind": "modality",
+              "dependsOn": []
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-target-09-c2",
+              "text": "As a result, Folley would believe that his experience continues after death.",
+              "kind": "conclusion",
+              "dependsOn": [
+                "pageau-folley-logos-meaning-resurrection-2026-target-09-c1"
+              ]
+            }
+          ],
+          "selectionRationale": "This is the most specific opponent assertion that the selected move expressly answers; its typed component graph preserves only indispensable premises, rules, inferences, burdens, modalities, and conclusions."
+        },
+        "burdenContext": {
+          "burdenPacket": {
+            "primaryRouteId": "pageau-folley-logos-meaning-resurrection-2026-pro-route",
+            "eligibleBridgeIds": [
+              "pageau-folley-logos-meaning-resurrection-2026-pro-central"
+            ],
+            "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+          },
+          "route": {
+            "id": "pageau-folley-logos-meaning-resurrection-2026-pro-route",
+            "side": "pro",
+            "description": "Patterns and purposive unities are real features of the world that point upward to Logos.",
+            "successCriteria": "Top-down organization and irreducible emergent wholes support a mind-like transcendent unity.",
+            "bridges": [
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-pro-motion",
+                "tier": "motion",
+                "description": "Establish the pro side's complete answer to the stated debate motion."
+              },
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-pro-central",
+                "tier": "central",
+                "description": "Patterns and purposive unities are real features of the world that point upward to Logos."
+              },
+              {
+                "id": "pageau-folley-logos-meaning-resurrection-2026-pro-subsidiary",
+                "tier": "subsidiary",
+                "description": "Support a narrower evidential or conceptual consideration used by the pro side."
+              }
+            ]
+          }
+        },
+        "fixtureOrigin": {
+          "type": "v2.8.2-retired-development-case",
+          "sourceCaseId": "v282-dev-62-09",
+          "sourcePath": "docs/calibration/v2.8/development/attempt-3/challenge-input.json",
+          "sourceSha256": "87190d51b3fc4ce6409739c125fd81b0502046c9f1d11d4ca61005c2d31cc302"
+        },
+        "sourceMetadata": {
+          "timestamp": "1:10:28",
+          "sourceSpan": {
+            "startMs": 4228159,
+            "endMs": 4253440
+          },
+          "speakerAttributionConfidence": "high",
+          "audioChecked": false,
+          "audioVerification": null
+        }
+      }
+    }
+  ],
+  "bundles": [
+    {
+      "bundleId": "v291-dev-62-04::targeting-coverage",
+      "caseId": "v291-dev-62-04",
+      "kind": "targeting-coverage",
+      "decisions": [
+        {
+          "decisionId": "v291-dev-62-04::targetContact",
+          "caseId": "v291-dev-62-04",
+          "ordinal": 0,
+          "fieldPath": "targetContact",
+          "question": "Exact response language bears on the locked proposition or an indispensable component.",
+          "defaultRule": "false",
+          "nearMisses": "Topic similarity, shared vocabulary, or an alternative position without contact is insufficient.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-04::connectedExample",
+          "caseId": "v291-dev-62-04",
+          "ordinal": 1,
+          "fieldPath": "connectedExample",
+          "question": "A distinct case, analogy, counterexample, or model is expressly connected to the locked target.",
+          "defaultRule": "false",
+          "nearMisses": "Named people already inside the target, a mere illustration, or another topic without an explicit connection is insufficient.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-04::scope",
+          "caseId": "v291-dev-62-04",
+          "ordinal": 2,
+          "fieldPath": "scope",
+          "question": "Change scope only for an explicit modality change or a narrower/stronger range of the same contacted proposition.",
+          "defaultRule": "same",
+          "nearMisses": "A new topic, a more interesting question, redirection, or a different evaluative concern is not a scope change.",
+          "allowedSemanticJson": [
+            "\"same\"",
+            "\"narrowed\"",
+            "\"strengthened\"",
+            "\"modality-shift\""
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-04::componentContact.pageau-folley-logos-meaning-resurrection-2026-target-04-c1",
+          "caseId": "v291-dev-62-04",
+          "ordinal": 3,
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-04-c1",
+          "question": "The response grants, uses, denies, restricts, distinguishes, explains, questions, or challenges this exact proposition: People enact a form of unity by binding toward a purpose and electing a mayor.",
+          "defaultRule": "false",
+          "nearMisses": "Word overlap, contact with a dependent component, or a nearby topic is insufficient; do not propagate contact.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-04::componentContact.pageau-folley-logos-meaning-resurrection-2026-target-04-c2",
+          "caseId": "v291-dev-62-04",
+          "ordinal": 4,
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-04-c2",
+          "question": "The response grants, uses, denies, restricts, distinguishes, explains, questions, or challenges this exact proposition: The mayor enforces law on the people and thereby constrains downward on the parts.",
+          "defaultRule": "false",
+          "nearMisses": "Word overlap, contact with a dependent component, or a nearby topic is insufficient; do not propagate contact.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-04::componentContact.pageau-folley-logos-meaning-resurrection-2026-target-04-c3",
+          "caseId": "v291-dev-62-04",
+          "ordinal": 5,
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-04-c3",
+          "question": "The response grants, uses, denies, restricts, distinguishes, explains, questions, or challenges this exact proposition: Higher ontological realities can constrain the realities beneath them.",
+          "defaultRule": "false",
+          "nearMisses": "Word overlap, contact with a dependent component, or a nearby topic is insufficient; do not propagate contact.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-04::componentContact.pageau-folley-logos-meaning-resurrection-2026-target-04-c4",
+          "caseId": "v291-dev-62-04",
+          "ordinal": 6,
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-04-c4",
+          "question": "The response grants, uses, denies, restricts, distinguishes, explains, questions, or challenges this exact proposition: Calling the higher reality merely emergent is insufficient to explain that downward constraint.",
+          "defaultRule": "false",
+          "nearMisses": "Word overlap, contact with a dependent component, or a nearby topic is insufficient; do not propagate contact.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-04::relevantContraryMaterial",
+          "caseId": "v291-dev-62-04",
+          "ordinal": 7,
+          "fieldPath": "relevantContraryMaterial",
+          "question": "With no component contacted, exact response language still supplies contrary material bearing on the target.",
+          "defaultRule": "false",
+          "nearMisses": "General opposition, a different topic, or material already counted as component contact is insufficient.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        }
+      ]
+    },
+    {
+      "bundleId": "v291-dev-62-04::diagnostic",
+      "caseId": "v291-dev-62-04",
+      "kind": "diagnostic",
+      "decisions": [
+        {
+          "decisionId": "v291-dev-62-04::defect",
+          "caseId": "v291-dev-62-04",
+          "ordinal": 8,
+          "fieldPath": "defect",
+          "question": "Choose the first expressly identified eligible defect under the rubric's ten-value taxonomy.",
+          "defaultRule": "none",
+          "nearMisses": "A denial, contrary assertion, request for detail, example, or alternative question does not by itself identify an inferential defect.",
+          "allowedSemanticJson": [
+            "\"none\"",
+            "\"attribution-error\"",
+            "\"contradiction\"",
+            "\"ambiguity\"",
+            "\"scope-mismatch\"",
+            "\"unsupported-comparison\"",
+            "\"missing-premise\"",
+            "\"invalid-inference\"",
+            "\"evidential-insufficiency\"",
+            "\"irrelevance\""
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-04::consequence",
+          "caseId": "v291-dev-62-04",
+          "ordinal": 9,
+          "fieldPath": "consequence",
+          "question": "A separate clause states what fails, does not follow, is not established, does not explain, cannot carry the weight, or must be limited because of the defect.",
+          "defaultRule": "false",
+          "nearMisses": "Restating a contrary conclusion or criticism without a defect-linked inferential limitation is insufficient.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        }
+      ]
+    },
+    {
+      "bundleId": "v291-dev-62-04::reframe",
+      "caseId": "v291-dev-62-04",
+      "kind": "reframe",
+      "decisions": [
+        {
+          "decisionId": "v291-dev-62-04::malformedDemand",
+          "caseId": "v291-dev-62-04",
+          "ordinal": 10,
+          "fieldPath": "malformedDemand",
+          "question": "The response explains why the governing demand or framing is malformed.",
+          "defaultRule": "false",
+          "nearMisses": "Calling another question more interesting or merely changing subjects is insufficient.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-04::replacementDemand",
+          "caseId": "v291-dev-62-04",
+          "ordinal": 11,
+          "fieldPath": "replacementDemand",
+          "question": "The response states a replacement governing demand or success condition.",
+          "defaultRule": "false",
+          "nearMisses": "Another topic, narrower claim, or unanswered question is insufficient without installing it as the governing demand.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        }
+      ]
+    },
+    {
+      "bundleId": "v291-dev-62-07::targeting-coverage",
+      "caseId": "v291-dev-62-07",
+      "kind": "targeting-coverage",
+      "decisions": [
+        {
+          "decisionId": "v291-dev-62-07::targetContact",
+          "caseId": "v291-dev-62-07",
+          "ordinal": 12,
+          "fieldPath": "targetContact",
+          "question": "Exact response language bears on the locked proposition or an indispensable component.",
+          "defaultRule": "false",
+          "nearMisses": "Topic similarity, shared vocabulary, or an alternative position without contact is insufficient.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-07::connectedExample",
+          "caseId": "v291-dev-62-07",
+          "ordinal": 13,
+          "fieldPath": "connectedExample",
+          "question": "A distinct case, analogy, counterexample, or model is expressly connected to the locked target.",
+          "defaultRule": "false",
+          "nearMisses": "Named people already inside the target, a mere illustration, or another topic without an explicit connection is insufficient.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-07::scope",
+          "caseId": "v291-dev-62-07",
+          "ordinal": 14,
+          "fieldPath": "scope",
+          "question": "Change scope only for an explicit modality change or a narrower/stronger range of the same contacted proposition.",
+          "defaultRule": "same",
+          "nearMisses": "A new topic, a more interesting question, redirection, or a different evaluative concern is not a scope change.",
+          "allowedSemanticJson": [
+            "\"same\"",
+            "\"narrowed\"",
+            "\"strengthened\"",
+            "\"modality-shift\""
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-07::componentContact.pageau-folley-logos-meaning-resurrection-2026-target-07-c1",
+          "caseId": "v291-dev-62-07",
+          "ordinal": 15,
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-07-c1",
+          "question": "The response grants, uses, denies, restricts, distinguishes, explains, questions, or challenges this exact proposition: Historical aspects of biblical texts are what Folley struggles to accept.",
+          "defaultRule": "false",
+          "nearMisses": "Word overlap, contact with a dependent component, or a nearby topic is insufficient; do not propagate contact.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-07::componentContact.pageau-folley-logos-meaning-resurrection-2026-target-07-c2",
+          "caseId": "v291-dev-62-07",
+          "ordinal": 16,
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-07-c2",
+          "question": "The response grants, uses, denies, restricts, distinguishes, explains, questions, or challenges this exact proposition: Folley takes Pageau not to believe the literal or historical truth of Genesis.",
+          "defaultRule": "false",
+          "nearMisses": "Word overlap, contact with a dependent component, or a nearby topic is insufficient; do not propagate contact.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-07::componentContact.pageau-folley-logos-meaning-resurrection-2026-target-07-c3",
+          "caseId": "v291-dev-62-07",
+          "ordinal": 17,
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-07-c3",
+          "question": "The response grants, uses, denies, restricts, distinguishes, explains, questions, or challenges this exact proposition: Folley therefore does not use Genesis as his example of a difficult historical claim.",
+          "defaultRule": "false",
+          "nearMisses": "Word overlap, contact with a dependent component, or a nearby topic is insufficient; do not propagate contact.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-07::relevantContraryMaterial",
+          "caseId": "v291-dev-62-07",
+          "ordinal": 18,
+          "fieldPath": "relevantContraryMaterial",
+          "question": "With no component contacted, exact response language still supplies contrary material bearing on the target.",
+          "defaultRule": "false",
+          "nearMisses": "General opposition, a different topic, or material already counted as component contact is insufficient.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        }
+      ]
+    },
+    {
+      "bundleId": "v291-dev-62-07::diagnostic",
+      "caseId": "v291-dev-62-07",
+      "kind": "diagnostic",
+      "decisions": [
+        {
+          "decisionId": "v291-dev-62-07::defect",
+          "caseId": "v291-dev-62-07",
+          "ordinal": 19,
+          "fieldPath": "defect",
+          "question": "Choose the first expressly identified eligible defect under the rubric's ten-value taxonomy.",
+          "defaultRule": "none",
+          "nearMisses": "A denial, contrary assertion, request for detail, example, or alternative question does not by itself identify an inferential defect.",
+          "allowedSemanticJson": [
+            "\"none\"",
+            "\"attribution-error\"",
+            "\"contradiction\"",
+            "\"ambiguity\"",
+            "\"scope-mismatch\"",
+            "\"unsupported-comparison\"",
+            "\"missing-premise\"",
+            "\"invalid-inference\"",
+            "\"evidential-insufficiency\"",
+            "\"irrelevance\""
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-07::consequence",
+          "caseId": "v291-dev-62-07",
+          "ordinal": 20,
+          "fieldPath": "consequence",
+          "question": "A separate clause states what fails, does not follow, is not established, does not explain, cannot carry the weight, or must be limited because of the defect.",
+          "defaultRule": "false",
+          "nearMisses": "Restating a contrary conclusion or criticism without a defect-linked inferential limitation is insufficient.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        }
+      ]
+    },
+    {
+      "bundleId": "v291-dev-62-07::reframe",
+      "caseId": "v291-dev-62-07",
+      "kind": "reframe",
+      "decisions": [
+        {
+          "decisionId": "v291-dev-62-07::malformedDemand",
+          "caseId": "v291-dev-62-07",
+          "ordinal": 21,
+          "fieldPath": "malformedDemand",
+          "question": "The response explains why the governing demand or framing is malformed.",
+          "defaultRule": "false",
+          "nearMisses": "Calling another question more interesting or merely changing subjects is insufficient.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-07::replacementDemand",
+          "caseId": "v291-dev-62-07",
+          "ordinal": 22,
+          "fieldPath": "replacementDemand",
+          "question": "The response states a replacement governing demand or success condition.",
+          "defaultRule": "false",
+          "nearMisses": "Another topic, narrower claim, or unanswered question is insufficient without installing it as the governing demand.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        }
+      ]
+    },
+    {
+      "bundleId": "v291-dev-62-09::targeting-coverage",
+      "caseId": "v291-dev-62-09",
+      "kind": "targeting-coverage",
+      "decisions": [
+        {
+          "decisionId": "v291-dev-62-09::targetContact",
+          "caseId": "v291-dev-62-09",
+          "ordinal": 23,
+          "fieldPath": "targetContact",
+          "question": "Exact response language bears on the locked proposition or an indispensable component.",
+          "defaultRule": "false",
+          "nearMisses": "Topic similarity, shared vocabulary, or an alternative position without contact is insufficient.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-09::connectedExample",
+          "caseId": "v291-dev-62-09",
+          "ordinal": 24,
+          "fieldPath": "connectedExample",
+          "question": "A distinct case, analogy, counterexample, or model is expressly connected to the locked target.",
+          "defaultRule": "false",
+          "nearMisses": "Named people already inside the target, a mere illustration, or another topic without an explicit connection is insufficient.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-09::scope",
+          "caseId": "v291-dev-62-09",
+          "ordinal": 25,
+          "fieldPath": "scope",
+          "question": "Change scope only for an explicit modality change or a narrower/stronger range of the same contacted proposition.",
+          "defaultRule": "same",
+          "nearMisses": "A new topic, a more interesting question, redirection, or a different evaluative concern is not a scope change.",
+          "allowedSemanticJson": [
+            "\"same\"",
+            "\"narrowed\"",
+            "\"strengthened\"",
+            "\"modality-shift\""
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-09::componentContact.pageau-folley-logos-meaning-resurrection-2026-target-09-c1",
+          "caseId": "v291-dev-62-09",
+          "ordinal": 26,
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-09-c1",
+          "question": "The response grants, uses, denies, restricts, distinguishes, explains, questions, or challenges this exact proposition: The posited confirmation would raise Folley's confidence in bodily resurrection, everlasting life, and related propositions.",
+          "defaultRule": "false",
+          "nearMisses": "Word overlap, contact with a dependent component, or a nearby topic is insufficient; do not propagate contact.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-09::componentContact.pageau-folley-logos-meaning-resurrection-2026-target-09-c2",
+          "caseId": "v291-dev-62-09",
+          "ordinal": 27,
+          "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-09-c2",
+          "question": "The response grants, uses, denies, restricts, distinguishes, explains, questions, or challenges this exact proposition: As a result, Folley would believe that his experience continues after death.",
+          "defaultRule": "false",
+          "nearMisses": "Word overlap, contact with a dependent component, or a nearby topic is insufficient; do not propagate contact.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-09::relevantContraryMaterial",
+          "caseId": "v291-dev-62-09",
+          "ordinal": 28,
+          "fieldPath": "relevantContraryMaterial",
+          "question": "With no component contacted, exact response language still supplies contrary material bearing on the target.",
+          "defaultRule": "false",
+          "nearMisses": "General opposition, a different topic, or material already counted as component contact is insufficient.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        }
+      ]
+    },
+    {
+      "bundleId": "v291-dev-62-09::diagnostic",
+      "caseId": "v291-dev-62-09",
+      "kind": "diagnostic",
+      "decisions": [
+        {
+          "decisionId": "v291-dev-62-09::defect",
+          "caseId": "v291-dev-62-09",
+          "ordinal": 29,
+          "fieldPath": "defect",
+          "question": "Choose the first expressly identified eligible defect under the rubric's ten-value taxonomy.",
+          "defaultRule": "none",
+          "nearMisses": "A denial, contrary assertion, request for detail, example, or alternative question does not by itself identify an inferential defect.",
+          "allowedSemanticJson": [
+            "\"none\"",
+            "\"attribution-error\"",
+            "\"contradiction\"",
+            "\"ambiguity\"",
+            "\"scope-mismatch\"",
+            "\"unsupported-comparison\"",
+            "\"missing-premise\"",
+            "\"invalid-inference\"",
+            "\"evidential-insufficiency\"",
+            "\"irrelevance\""
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-09::consequence",
+          "caseId": "v291-dev-62-09",
+          "ordinal": 30,
+          "fieldPath": "consequence",
+          "question": "A separate clause states what fails, does not follow, is not established, does not explain, cannot carry the weight, or must be limited because of the defect.",
+          "defaultRule": "false",
+          "nearMisses": "Restating a contrary conclusion or criticism without a defect-linked inferential limitation is insufficient.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        }
+      ]
+    },
+    {
+      "bundleId": "v291-dev-62-09::reframe",
+      "caseId": "v291-dev-62-09",
+      "kind": "reframe",
+      "decisions": [
+        {
+          "decisionId": "v291-dev-62-09::malformedDemand",
+          "caseId": "v291-dev-62-09",
+          "ordinal": 31,
+          "fieldPath": "malformedDemand",
+          "question": "The response explains why the governing demand or framing is malformed.",
+          "defaultRule": "false",
+          "nearMisses": "Calling another question more interesting or merely changing subjects is insufficient.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        },
+        {
+          "decisionId": "v291-dev-62-09::replacementDemand",
+          "caseId": "v291-dev-62-09",
+          "ordinal": 32,
+          "fieldPath": "replacementDemand",
+          "question": "The response states a replacement governing demand or success condition.",
+          "defaultRule": "false",
+          "nearMisses": "Another topic, narrower claim, or unanswered question is insufficient without installing it as the governing demand.",
+          "allowedSemanticJson": [
+            "false",
+            "true"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        }
+      ]
+    },
+    {
+      "bundleId": "v291-dev-62-09::burden-contact",
+      "caseId": "v291-dev-62-09",
+      "kind": "burden-contact",
+      "decisions": [
+        {
+          "decisionId": "v291-dev-62-09::burdenContact",
+          "caseId": "v291-dev-62-09",
+          "ordinal": 33,
+          "fieldPath": "burdenContact",
+          "question": "Choose the highest expressly supported or attacked eligible bridge: pageau-folley-logos-meaning-resurrection-2026-pro-central.",
+          "defaultRule": "tier none",
+          "nearMisses": "Topic contact alone is insufficient, but critical attack counts symmetrically with constructive support.",
+          "allowedSemanticJson": [
+            "{\"tier\":\"none\",\"bridgeId\":null}",
+            "{\"tier\":\"central\",\"bridgeId\":\"pageau-folley-logos-meaning-resurrection-2026-pro-central\"}"
+          ],
+          "evidenceRule": "Return null for the default semantic value. Otherwise copy one exact, complete supporting substring from sourceExcerpt; offsets are computed later by deterministic code."
+        }
+      ]
+    }
+  ],
+  "bundleCount": 10,
+  "decisionCount": 34
+}

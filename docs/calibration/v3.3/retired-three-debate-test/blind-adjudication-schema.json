@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v3.3-blind-bundle-adjudication",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "workflowVersion",
+    "rubricVersion",
+    "model",
+    "debateId",
+    "debateNumber",
+    "isolationStatement",
+    "bundles",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "enum": [
+        "3.3-blind-bundle-adjudication"
+      ]
+    },
+    "workflowVersion": {
+      "type": "string",
+      "enum": [
+        "Slugfester Anonymous Bundled Adjudication Workflow v3.3"
+      ]
+    },
+    "rubricVersion": {
+      "type": "string",
+      "enum": [
+        "Slugfester Reassessment Rubric v3.3"
+      ]
+    },
+    "model": {
+      "type": "string",
+      "enum": [
+        "5.6 Terra",
+        "5.6 Sol"
+      ]
+    },
+    "debateId": {
+      "type": "string"
+    },
+    "debateNumber": {
+      "type": "string"
+    },
+    "isolationStatement": {
+      "type": "string"
+    },
+    "bundles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "bundleId",
+          "decisions"
+        ],
+        "properties": {
+          "bundleId": {
+            "type": "string"
+          },
+          "decisions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "decisionId",
+                "fieldPath",
+                "semanticJson",
+                "evidenceText",
+                "rationale"
+              ],
+              "properties": {
+                "decisionId": {
+                  "type": "string"
+                },
+                "fieldPath": {
+                  "type": "string"
+                },
+                "semanticJson": {
+                  "type": "string"
+                },
+                "evidenceText": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "rationale": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bundleCount",
+        "decisionCount",
+        "allDecisionsMadeOnce",
+        "candidateDataSeen",
+        "scoresSeen"
+      ],
+      "properties": {
+        "bundleCount": {
+          "type": "integer"
+        },
+        "decisionCount": {
+          "type": "integer"
+        },
+        "allDecisionsMadeOnce": {
+          "type": "boolean"
+        },
+        "candidateDataSeen": {
+          "type": "boolean"
+        },
+        "scoresSeen": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}
