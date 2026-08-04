@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "3.8.8-coverage-audio-verification",
+  "status": "all-current-medium-or-low-attributions-verified",
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsd": 0,
+  "records": [
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "subjectRef": "missing-03",
+      "sourceUrl": "https://www.youtube.com/watch?v=g1TlLCSn_5o",
+      "triggerSpan": {
+        "startEvent": 931,
+        "endEvent": 952,
+        "startMs": 2123160,
+        "endMs": 2166560
+      },
+      "clip": {
+        "path": ".assessment-cache/audio-verification/v3.8.8/debate-103-missing-03.m4a",
+        "sha256": "92c6027ce344926399b837b787e9fe7e5affbe1202d20bb71cd1d474b75ccc5f",
+        "durationSeconds": 61.993,
+        "requestedSourceWindow": {
+          "startMs": 2115000,
+          "endMs": 2172000
+        }
+      },
+      "transcription": {
+        "path": "docs/calibration/v3.8.8/coverage-consensus/audio-verification/debate-103-missing-03.txt",
+        "sha256": "6ee4a7128487ee7da32202be5177237ca366e1129244207c1a514521c6fd7747",
+        "engine": "MacWhisper Large v3 Turbo",
+        "execution": "on-device",
+        "apiUsed": false
+      },
+      "status": "verified",
+      "resolvedSpeaker": "Simon Edwards",
+      "resolvedSide": "con",
+      "boundaryResolution": {
+        "captionEventWithMixedSpeakers": 952,
+        "speakerTransition": "Simon Edwards ends with 'fulfilling its purpose'; Stephen Woodford begins with 'I think the best way'.",
+        "finalAtomicRule": "Retain Edwards's terminal words through 'fulfilling its purpose' and exclude Woodford's following clause from the move.",
+        "confidenceAfterVerification": "high"
+      },
+      "verificationBasis": "The on-device transcript and audible turn boundary separate Edwards's normative-purpose objection from Woodford's reply; the apparent ambiguity was created by one auto-caption event blending both turns."
+    }
+  ]
+}

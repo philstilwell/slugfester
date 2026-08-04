@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v388-coverage-adjudication-55",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "fields"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.8-coverage-adjudication-output"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "55"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "craig-malpass-kalam-nothing-2026"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "coverage-adjudicator"
+    },
+    "fields": {
+      "type": "array",
+      "minItems": 45,
+      "maxItems": 45,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "fieldId",
+          "optionId",
+          "rationale"
+        ],
+        "properties": {
+          "fieldId": {
+            "type": "string",
+            "enum": [
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-01-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-02-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-03-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-04-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-05-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-candidate-03-v381:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-06-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-07-v384:valid",
+              "candidate:craig-malpass-kalam-nothing-2026-candidate-04-v381:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-candidate-04-v381:selectionRole",
+              "candidate:craig-malpass-kalam-nothing-2026-candidate-04-v381:moveKind",
+              "candidate:craig-malpass-kalam-nothing-2026-candidate-04-v381:respondsToRefs",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-08-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-08-v384:respondsToRefs",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-09-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-10-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-11-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-11-v384:selectionRole",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-11-v384:moveKind",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-11-v384:respondsToRefs",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-12-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-candidate-05-v381:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-candidate-06-v381:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-13-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-14-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-15-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-16-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-16-v384:selectionRole",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-16-v384:moveKind",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-16-v384:respondsToRefs",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-17-v384:valid",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-18-v384:valid",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-19-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-19-v384:selectionRole",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-19-v384:moveKind",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-19-v384:respondsToRefs",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-20-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-candidate-07-v381:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-candidate-08-v381:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-21-v384:proposition",
+              "candidate:craig-malpass-kalam-nothing-2026-coverage-22-v384:proposition",
+              "missing:craig-malpass-kalam-nothing-2026-coverage-missing-01-v388:inclusion",
+              "missing:craig-malpass-kalam-nothing-2026-coverage-missing-02-v388:inclusion",
+              "missing:craig-malpass-kalam-nothing-2026-coverage-missing-03-v388:inclusion",
+              "concession:con:audit"
+            ]
+          },
+          "optionId": {
+            "type": "string",
+            "enum": [
+              "option-1",
+              "option-2"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          }
+        }
+      }
+    }
+  }
+}

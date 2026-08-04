@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "3.8.8-coverage-adjudication-execution-manifest",
+  "protocolId": "v3.8.8-coverage-consensus-adjudication",
+  "parentProtocolId": "v3.8.8-independent-coverage-review",
+  "stage": "dispute-only-coverage-adjudication",
+  "status": "frozen-three-context-adjudication-authorized",
+  "frozenAt": "2026-08-04T15:38:20Z",
+  "checkpointCommit": "b33b95740b25350053b545d3d39c730c9d684198",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true
+  },
+  "modelInputs": {
+    "workflow": "docs/assessment-workflow-v3.8.4.md",
+    "rubric": "docs/reassessment-rubric-v3.8.4.md",
+    "manual": "docs/calibration/v3.8.8/coverage-consensus/adjudication-manual.md"
+  },
+  "adjudicationContexts": {
+    "55": {
+      "debateNumber": "55",
+      "reviewerRole": "coverage-adjudicator",
+      "packet": "docs/calibration/v3.8.8/coverage-consensus/adjudication/packets/debate-55.json",
+      "schema": "docs/calibration/v3.8.8/coverage-consensus/adjudication/schemas/debate-55.schema.json",
+      "output": "docs/calibration/v3.8.8/coverage-consensus/adjudication/outputs/debate-55.json",
+      "fieldCount": 45
+    },
+    "103": {
+      "debateNumber": "103",
+      "reviewerRole": "coverage-adjudicator",
+      "packet": "docs/calibration/v3.8.8/coverage-consensus/adjudication/packets/debate-103.json",
+      "schema": "docs/calibration/v3.8.8/coverage-consensus/adjudication/schemas/debate-103.schema.json",
+      "output": "docs/calibration/v3.8.8/coverage-consensus/adjudication/outputs/debate-103.json",
+      "fieldCount": 37
+    },
+    "161": {
+      "debateNumber": "161",
+      "reviewerRole": "coverage-adjudicator",
+      "packet": "docs/calibration/v3.8.8/coverage-consensus/adjudication/packets/debate-161.json",
+      "schema": "docs/calibration/v3.8.8/coverage-consensus/adjudication/schemas/debate-161.schema.json",
+      "output": "docs/calibration/v3.8.8/coverage-consensus/adjudication/outputs/debate-161.json",
+      "fieldCount": 35
+    }
+  },
+  "upstream": {
+    "validIndependentReviewContexts": 3,
+    "comparisonFields": 566,
+    "agreements": 449,
+    "disagreements": 117,
+    "disagreementFieldsByDebate": {
+      "55": 45,
+      "103": 37,
+      "161": 35
+    },
+    "audioVerificationsRequired": 1,
+    "audioVerificationsCompleted": 1,
+    "dryFixture": "docs/calibration/v3.8.8/coverage-consensus/dry-fixture.json"
+  },
+  "authorization": {
+    "coverageAdjudicationContexts": 3,
+    "coverageAdjudicationModelExecution": true,
+    "deterministicConsensusMergeAfterPass": true,
+    "audioVerification": false,
+    "sectionAndWeightLocking": false,
+    "burdenContactModelExecution": false,
+    "scoringModelExecution": false,
+    "numericalParticipantScoring": false,
+    "assessmentProse": false,
+    "productionMutation": false,
+    "tenDebateGate": false,
+    "all195Debates": false
+  },
+  "isolation": {
+    "temporaryCodexHomePerContext": true,
+    "freshSourceDirectoryPerContext": true,
+    "disputedFieldsOnly": true,
+    "anonymousOptionOrder": true,
+    "proposalAndReviewIdentitiesAvailableToModel": false,
+    "privateOptionMapAvailableToModel": false,
+    "initialDisagreementArtifactAvailableToModel": false,
+    "undisputedFieldsAvailableToModel": false,
+    "otherAdjudicationOutputsAvailableToModel": false,
+    "fullLegacyAssessmentAvailable": false,
+    "scoresAvailable": false,
+    "winnerAvailable": false
+  },
+  "executionPolicy": {
+    "contexts": 3,
+    "attemptsPerContext": 1,
+    "modelOutputRetriesMaximum": 0,
+    "sequentialExecution": true,
+    "perInvocationTimeoutMs": 3600000,
+    "provisionalJsonMessagesMaximum": 0,
+    "recoverableStreamEventsNormalMaximum": 2,
+    "recoverableStreamEventsHardMaximum": 8,
+    "transportEventsExtractedFromStderrOnly": true,
+    "transportEventLinesRecorded": true,
+    "stdoutAndStderrHashesRecorded": true,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "acceptanceRule": {
+    "validAdjudicationContextsRequired": 3,
+    "normalCommandExitRequired": true,
+    "timeoutForbidden": true,
+    "closedSchemaAndDeterministicValidationRequired": true,
+    "exactDisputedFieldCountRequired": true,
+    "suppliedOptionOnlyRequired": true,
+    "modelScoreFieldsMaximum": 0,
+    "recoverableStreamEventsHardMaximum": 8
+  },
+  "stopRules": {
+    "anySourceHashMismatchBlocksExecution": true,
+    "anyPreexistingOutputBlocksExecution": true,
+    "anyInvalidAdjudicationBlocksConsensusMerge": true,
+    "anyAdjudicationOutputVisibleToAnotherContextInvalidatesStage": true,
+    "finalInventoryRequiresSeparateDeterministicMerge": true,
+    "scoringRemainsBlocked": true,
+    "furtherAutomaticRetryAuthorized": false
+  },
+  "artifacts": {
+    "disagreementArtifact": "docs/calibration/v3.8.8/coverage-consensus/initial-disagreements.json",
+    "privateOptionMap": "docs/calibration/v3.8.8/coverage-consensus/adjudication-option-map.json",
+    "audioVerification": "docs/calibration/v3.8.8/coverage-consensus/audio-verification.json",
+    "adjudicationExecution": "docs/calibration/v3.8.8/coverage-consensus/adjudication/model-execution.json",
+    "adjudicationOutputs": {
+      "55": "docs/calibration/v3.8.8/coverage-consensus/adjudication/outputs/debate-55.json",
+      "103": "docs/calibration/v3.8.8/coverage-consensus/adjudication/outputs/debate-103.json",
+      "161": "docs/calibration/v3.8.8/coverage-consensus/adjudication/outputs/debate-161.json"
+    },
+    "finalCoverageInventory": null
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication/outputs/debate-55.json",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication/outputs/debate-103.json",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication/outputs/debate-161.json",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication/model-execution.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.8.4.md": "49dda91a87c0ebbab9666d6c732035bde17939d84f4b71b326f4f04b917ddd5a",
+    "docs/reassessment-rubric-v3.8.4.md": "fda29887abb26f1f5a6f7b772e26434db0c055ec3efe42be4eeea602f5a84909",
+    "docs/calibration/v3.8.8/coverage-independent-review/execution-manifest.json": "8c060087d69c5b5e1d06ad4844ac7e0fe9773c8ae3bbf3090cbd0c34562fa2e8",
+    "docs/calibration/v3.8.8/coverage-independent-review/model-execution.json": "ae43bf0b351751293a99cef5ac1977ac684e0eb1e2f5f9a85cc5c432ebc5636c",
+    "docs/calibration/v3.8.8/coverage-consensus/initial-disagreements.json": "2fd750ec5cfffac03e6245723d544619c13907266439b4a8b252db4d8e9dd372",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication-option-map.json": "8a7ac0c2543418d23f8ef7f428ba1c7674bef560f423c819661be738a10ace3c",
+    "docs/calibration/v3.8.8/coverage-consensus/dry-fixture.json": "919974bf3d4b7855bbd56e8faf09638c4814cbd3eb810d986e38145b98d2fa74",
+    "docs/calibration/v3.8.8/coverage-consensus/audio-verification.json": "e8a5c84aa781e76835b39a049babf1e709b71e439a47cb7eec356c583a5ac4d4",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication-manual.md": "adc7b372c2306b97128abce6cf8a836d1810cb1f41c6ddd39f658e0109183eab",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v37-retired-semantic.mjs": "2fe113760e4b2bb97104025d39755d8ceeeecded89fbaea683cc5c9cce188296",
+    "scripts/lib/v381-source-preparation.mjs": "ccc2c66a1c2ab50fbebc26888f622c9632fb273c2b24b45ea68618188df384d7",
+    "scripts/lib/v384-coverage-preparation.mjs": "5a37b262e3a1c819c01f6ce6e808bcf19e57a4bb5b2df04ee659c2b72ea122f2",
+    "scripts/lib/v385-transport.mjs": "f20d5cb026e0c2720d32276ddcbb612ec852e3732d7653e47a98ba5ffa880dfe",
+    "scripts/lib/v388-coverage-review.mjs": "d5cff1c4b455cb458d44ba7649d49d4cb6426cb1e6c4f8bb183a4253f2908dc2",
+    "scripts/lib/v388-coverage-consensus.mjs": "531a2d9a1b735fe6cc367a9a59d101327ee3ab1e20e668b9c09f1c5b378a54e4",
+    "scripts/extract-v388-coverage-disagreements.mjs": "d711e3643f410700f3963a33dbd16f7e11c0c75b755c6b8d76417801208fc202",
+    "scripts/test-v388-coverage-consensus-tooling.mjs": "8164892c4e755f0495a3d8317d8fb110eded47d256ddc8be415a08f0a6ba4cdf",
+    "scripts/validate-v388-coverage-adjudication.mjs": "242710ef19de2ab9f57ee3fbb96af85417fe352defd10ffedcae4c4113f41691",
+    "scripts/preregister-v388-coverage-adjudication-execution.mjs": "df151a13a4da6e1b20f688e43d0002ca4c45073bc3120cc56befc17ab80a10df",
+    "scripts/validate-v388-coverage-adjudication-execution-lock.mjs": "6c2df595ea0793d2b21dadf528ca7034457ad823e45a1a4f815f6ef11e2823bd",
+    "scripts/run-v388-coverage-adjudications.mjs": "15b67a18922b69591ba064ce8b25970ad0f9d14b7e10f1dfacf2a18476ecaa48",
+    "docs/calibration/v3.8.8/coverage-independent-review/outputs/debate-55.json": "ee80f2b03ee38091456ee4c57c73144f3e9652f488cb2e85112be9c465ff89ec",
+    "docs/calibration/v3.8.8/coverage-independent-review/private-mappings/debate-55.json": "368c59cff909e2cb3eb2b9ae1ae64a2fbf578dbcd7d059717b7b75079bad9f8b",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication/packets/debate-55.json": "3e133c5799a39fabc6ac41941b8178a4c6edea3b6f256cfa1f211638ebc7855e",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication/schemas/debate-55.schema.json": "5306e7be2273b8dbbdcc47b58a635ac166e09b724cef9675a892b0dcb629396c",
+    "docs/calibration/v3.8.8/coverage-independent-review/outputs/debate-103.json": "c215ee8e21acde69055ac970adb88f276585cab7c3eeac25574cb46412bc389f",
+    "docs/calibration/v3.8.8/coverage-independent-review/private-mappings/debate-103.json": "a7fd5db57690692d67bcc548ee86547a0d50b686779444352eb96e324af13458",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication/packets/debate-103.json": "c28d17146fba69957be1198cffb941145f223802ba14b8b3f6ff7e97c7b598ee",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication/schemas/debate-103.schema.json": "23cf9afcaccde0b18b96a7318c8ac72093abafd454ef527281511451e9e0bef6",
+    "docs/calibration/v3.8.8/coverage-independent-review/outputs/debate-161.json": "bf13450db35f7a075286540036474e94fa9e9d120eec386f44522c983b4ce408",
+    "docs/calibration/v3.8.8/coverage-independent-review/private-mappings/debate-161.json": "74c10e0e861370aac7fe68c47d249c83b08e9c23d410e9aa8d95b5f2d67b0ae0",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication/packets/debate-161.json": "45c88aea8ac046638f3f80248940f2f59328065c2a649fc4ec5c05f96d2588c3",
+    "docs/calibration/v3.8.8/coverage-consensus/adjudication/schemas/debate-161.schema.json": "9fcb76ef2f27be87f7fb2af17b7f5fe310d82847041f2e97e0c16a7b43d2ae66",
+    ".assessment-cache/audio-verification/v3.8.8/debate-103-missing-03.m4a": "92c6027ce344926399b837b787e9fe7e5affbe1202d20bb71cd1d474b75ccc5f",
+    "docs/calibration/v3.8.8/coverage-consensus/audio-verification/debate-103-missing-03.txt": "6ee4a7128487ee7da32202be5177237ca366e1129244207c1a514521c6fd7747"
+  }
+}

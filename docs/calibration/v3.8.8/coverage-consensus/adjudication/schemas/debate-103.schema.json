@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v388-coverage-adjudication-103",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "fields"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.8-coverage-adjudication-output"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "103"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "woodford-edwards-rational-belief-god-2023"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "coverage-adjudicator"
+    },
+    "fields": {
+      "type": "array",
+      "minItems": 37,
+      "maxItems": 37,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "fieldId",
+          "optionId",
+          "rationale"
+        ],
+        "properties": {
+          "fieldId": {
+            "type": "string",
+            "enum": [
+              "candidate:woodford-edwards-rational-belief-god-2023-candidate-01-v381:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-candidate-02-v381:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-01-v384:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-02-v384:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-candidate-03-v381:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-03-v384:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-04-v384:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-candidate-04-v381:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-05-v384:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-05-v384:respondsToRefs",
+              "candidate:woodford-edwards-rational-belief-god-2023-candidate-05-v381:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-candidate-05-v381:respondsToRefs",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-06-v384:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-06-v384:respondsToRefs",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-07-v384:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-07-v384:respondsToRefs",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-08-v384:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-09-v384:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-candidate-06-v381:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-candidate-06-v381:respondsToRefs",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-10-v384:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-11-v384:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-11-v384:respondsToRefs",
+              "candidate:woodford-edwards-rational-belief-god-2023-candidate-07-v381:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-candidate-07-v381:respondsToRefs",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-12-v384:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-13-v384:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-14-v384:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-15-v384:proposition",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-15-v384:selectionRole",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-15-v384:moveKind",
+              "candidate:woodford-edwards-rational-belief-god-2023-coverage-15-v384:respondsToRefs",
+              "missing:woodford-edwards-rational-belief-god-2023-coverage-missing-01-v388:inclusion",
+              "missing:woodford-edwards-rational-belief-god-2023-coverage-missing-02-v388:inclusion",
+              "missing:woodford-edwards-rational-belief-god-2023-coverage-missing-03-v388:inclusion",
+              "missing:woodford-edwards-rational-belief-god-2023-coverage-missing-04-v388:inclusion",
+              "concession:pro:audit"
+            ]
+          },
+          "optionId": {
+            "type": "string",
+            "enum": [
+              "option-1",
+              "option-2"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          }
+        }
+      }
+    }
+  }
+}
