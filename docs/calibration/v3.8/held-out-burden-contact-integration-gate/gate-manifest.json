@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "3.8-heldout-burden-contact-integration-gate-manifest",
+  "gateId": "v3.8-heldout-burden-contact-integration-gate",
+  "status": "preregistered-heldout-access-blocked",
+  "preregisteredAt": "2026-08-04T06:46:44Z",
+  "preregistrationCheckpointCommit": "280d8a32ae7c90ed969b27f1a8dec334b74ce4db",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "workflowVersion": "Slugfester Burden-Contact Integration Workflow v3.8",
+  "rubricVersion": "Slugfester Burden-Contact Integration Rubric v3.8",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "selectionProtocol": {
+    "metadataOnly": true,
+    "transcriptsOpenedBeforeLock": false,
+    "audioOpenedBeforeLock": false,
+    "legacyAssessmentsOpenedBeforeLock": false,
+    "candidateRanksInspectedBeforeSeed": false,
+    "randomizationSeed": "7b2bbbd86d4f03ca952198e2d6b6cf64",
+    "eligiblePoolPath": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/metadata-eligible-pool.json",
+    "eligiblePoolSha256": "71256e3b92aa6879b7126c01f7268be39735d239111a0d6d849a2b5aa6cf0cb6",
+    "rankFunction": "SHA-256(seed + ':v3.8-dyadic:' + debateId), ascending",
+    "selectionStatement": "Select the first three eligible dyadic metadata records by committed SHA-256 rank after excluding all debate IDs and numbers appearing in prior calibration artifacts."
+  },
+  "sample": {
+    "debateCount": 3,
+    "movesPerDebate": 4,
+    "compositeCaseCount": 12,
+    "debates": [
+      {
+        "debateId": "woodford-edwards-rational-belief-god-2023",
+        "number": "103",
+        "videoId": "g1TlLCSn_5o",
+        "motion": "Is belief in an all-powerful, all-loving God rational given alleged gratuitous evil, salvation confusion, rationality, design, and morality?",
+        "sides": {
+          "pro": {
+            "label": "Theism irrational",
+            "speakers": [
+              "Stephen Woodford"
+            ]
+          },
+          "con": {
+            "label": "Rational theism",
+            "speakers": [
+              "Simon Edwards"
+            ]
+          }
+        },
+        "speakerCount": 2,
+        "transcriptChainPresentAtSelection": true,
+        "selectionRankSha256": "00cc2af2b4040dedda260b65567ed6bd2983bdf84a76fd0d2696620039dce657"
+      },
+      {
+        "debateId": "craig-malpass-kalam-nothing-2026",
+        "number": "55",
+        "videoId": "zQBY5K-Ns2Y",
+        "motion": "Does the Kalam cosmological argument show that the universe began to exist, has a cause, and points to a personal creator?",
+        "sides": {
+          "pro": {
+            "label": "Kalam defender",
+            "speakers": [
+              "William Lane Craig"
+            ]
+          },
+          "con": {
+            "label": "Kalam critic",
+            "speakers": [
+              "Alex Malpass"
+            ]
+          }
+        },
+        "speakerCount": 2,
+        "transcriptChainPresentAtSelection": true,
+        "selectionRankSha256": "016bbaa3f8cc687907faae0286eedb357c7b6af93ac939211c310449ca3b202e"
+      },
+      {
+        "debateId": "craig-millican-does-god-exist-2011",
+        "number": "161",
+        "videoId": "9JVRy7bR7zI",
+        "motion": "Does the evidence from cosmology, fine-tuning, morality, Jesus' resurrection, and religious experience make Christian theism more reasonable than skeptical atheism?",
+        "sides": {
+          "pro": {
+            "label": "Christian theist",
+            "speakers": [
+              "William Lane Craig"
+            ]
+          },
+          "con": {
+            "label": "Skeptical atheist",
+            "speakers": [
+              "Peter Millican"
+            ]
+          }
+        },
+        "speakerCount": 2,
+        "transcriptChainPresentAtSelection": true,
+        "selectionRankSha256": "039e2a6f84f31d301cb74efb7daf545716028d836775dee4c55b07cb06313aa4"
+      }
+    ]
+  },
+  "modelInputPolicy": {
+    "invariantWorkflow": "docs/assessment-workflow-v3.8.md",
+    "invariantRubric": "docs/reassessment-rubric-v3.8.md",
+    "classificationManual": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/classification-manual.md",
+    "gateManifestUnavailableToModel": true,
+    "thresholdsUnavailableToModel": true,
+    "priorResultsUnavailableToModel": true,
+    "provisionalLabelsUnavailableToModel": true,
+    "legacyAssessmentsUnavailableToModel": true
+  },
+  "sourcePreparationPolicy": {
+    "fullLocalTranscriptRequired": true,
+    "timestampedEventsRequired": true,
+    "localManifestRequired": true,
+    "hashVerificationRequiredBeforeContentUse": true,
+    "AIProposalAndIndependentAIReviewRequired": true,
+    "disputedPreparationFieldsOnlyToIsolatedAdjudicator": true,
+    "motionCentralAndPropositionSpecificSubsidiaryBridgesRequired": true,
+    "genericSubsidiaryCatchAllProhibited": true,
+    "exactSourceCoordinatesRequired": true,
+    "contextualSufficiencyReviewRequired": true,
+    "provisionalLabelsDiagnosticOnly": true
+  },
+  "assessmentPolicy": {
+    "twoIsolatedInitialContextsPerDebate": true,
+    "sameLockedTranscriptRouteMapAndMoveInventory": true,
+    "anonymousCompositeCandidates": true,
+    "candidateOrderCounterbalanced": true,
+    "oneCompleteTuplePerMove": true,
+    "deterministicSemanticDisagreementExtraction": true,
+    "thirdContextDisputedCasesOnly": true,
+    "thirdContextMaySelectOnlyInitialTuples": true,
+    "finalTupleRequiresMatchingVotes": 2,
+    "attemptsPerContext": 1,
+    "modelOutputRetriesMaximum": 0,
+    "sameRequestStreamRecoveriesMaximum": 0
+  },
+  "audioPolicy": {
+    "highConfidenceRequiresAudioVerification": false,
+    "mediumOrLowConfidenceRequiresAudioVerification": true,
+    "unresolvedAttributionExcludedBeforePacketLock": true,
+    "requiredVerificationRate": 1
+  },
+  "thresholds": {
+    "validInitialContexts": 6,
+    "compositeCases": 12,
+    "initialCompositeAgreementsMinimum": 11,
+    "initialDisagreementsMaximum": 1,
+    "initialInvalidBundlesMaximum": 0,
+    "finalTwoVoteBundlesRequired": 12,
+    "unresolvedBundlesMaximum": 0,
+    "requiredAudioVerificationRate": 1,
+    "finalCategoryMinimums": {
+      "noContact": 2,
+      "support": 2,
+      "attack": 2,
+      "motion": 1,
+      "central": 1,
+      "subsidiary": 4
+    },
+    "scoringFieldsMaximum": 0
+  },
+  "costPolicy": {
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredModelApiCostUsdMaximum": 0,
+    "existingLocalTranscriptsRequired": true,
+    "transcriptionCostUsdMaximum": 0,
+    "newPaidTranscriptionRequiresFreshEstimate": true
+  },
+  "passMeaning": "A pass may authorize preregistration of a separate end-to-end three-debate assessment gate only. It does not authorize numerical scoring, assessment prose, benchmark mutation, production mutation, or corpus-wide reassessment.",
+  "authorization": {
+    "heldOutTranscriptContentAccess": false,
+    "sourcePreparation": false,
+    "packetConstruction": false,
+    "modelExecution": false,
+    "numericalParticipantScoring": false,
+    "assessmentProse": false,
+    "benchmarkMutation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  },
+  "emptyBeforeAccess": {
+    "sourcesDirectory": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/sources",
+    "packetsDirectory": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/packets",
+    "outputsDirectory": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/outputs"
+  },
+  "priorAuthorization": {
+    "analysisPath": "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/test-analysis.json",
+    "heldOutIntegrationGatePreregistrationAuthorized": true,
+    "heldOutAccessAuthorized": false
+  },
+  "frozenSources": {
+    "docs/assessment-workflow-v3.8.md": "eb506e3d7bda146173ace0ad9936f816438ea88d65fd0a8a592fd98d7cdec62b",
+    "docs/reassessment-rubric-v3.8.md": "a8754450c35431e857ae794e1a6aefd7dcfdb698457032e22c96471525fd5312",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/classification-manual.md": "47fa980179a17954751af26de06ad78c8362789d90491502d7dff92cca718f00",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/preregistration.md": "a0fd1028e340e2c87b1406360559cd68d736a469d44f254e5c35960cb3f26a95",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/metadata-eligible-pool.json": "71256e3b92aa6879b7126c01f7268be39735d239111a0d6d849a2b5aa6cf0cb6",
+    "scripts/build-v38-heldout-eligible-pool.mjs": "9ac62a27f7063c6d9f8618e75b626809507426f11339992bc12f27f99a314d41",
+    "scripts/preregister-v38-burden-contact-gate.mjs": "f3815353de950f2c8ff07a634fbaa0d047fcc31d3ff1dc4ecd8c5ad725c3ddc2",
+    "scripts/validate-v38-burden-contact-preregistration.mjs": "e3d309b1447a661816b6a906760ffffe7ff632561e379204fb63882e1bee3aba",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/test-analysis.json": "3edd248dd4b105841feab6f94e880abb22e2644df3a5dec80c61fcd410de9514",
+    "docs/calibration/v3.7.6/case-disjoint-retired-burden-contact-test/execution-assessment.md": "b297570d812e1cacbbb5017fa0c5d52b4fd9a7c467c0883ed58432178b3d0bf3"
+  }
+}
