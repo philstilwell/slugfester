@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "3.8.8-reconstruction-two-context-continuation-manifest",
+  "protocolId": "v3.8.8-recovered-diagnostic-reconstruction",
+  "status": "frozen-two-context-post-debate-55-continuation-authorized",
+  "createdAt": "2026-08-04T20:40:30.344Z",
+  "recoveryOf": "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/execution-manifest.json",
+  "prerequisite": {
+    "debate55ValidatedOutput": "docs/calibration/v3.8.8/reconstruction/validated-outputs/debate-55.json",
+    "debate55MergeAudit": "docs/calibration/v3.8.8/reconstruction/prose-correction/debate-55/merge-audit.json"
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "executionPolicy": {
+    "contexts": 2,
+    "perInvocationTimeoutMs": 1200000,
+    "retriesAuthorized": 0,
+    "APIKeysRemoved": true,
+    "ephemeralCodexHome": true,
+    "freshContextsNotRetries": true,
+    "critiqueTargetWords": "115-125",
+    "exactDisclosureRequired": true
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.8.4.md": "49dda91a87c0ebbab9666d6c732035bde17939d84f4b71b326f4f04b917ddd5a",
+    "docs/reassessment-rubric-v3.8.4.md": "fda29887abb26f1f5a6f7b772e26434db0c055ec3efe42be4eeea602f5a84909",
+    "docs/calibration/v3.8.8/reconstruction/manual.md": "02cd46a942e3612fa1988bb296fdecfb24c15a00b5d827d385fb9e8381967fda",
+    "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/execution-manifest.json": "8d04ea1319bb3a3fca4aa01df0ea728eb3b3e61995f93187582fd54f54697bec",
+    "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/model-execution.json": "391aca7ddcd9ef2842520c9afa446d10d30fcf9597c9dcf268b662e998a009be",
+    "docs/calibration/v3.8.8/reconstruction/validated-outputs/debate-55.json": "9592f10062d9461415acd1873a39b26b989737ee609806dd22830a57857461a9",
+    "docs/calibration/v3.8.8/reconstruction/prose-correction/debate-55/merge-audit.json": "525478e9d00d4ca1a73bcbe2a5b4ec5f84110388a65b0c2dddd7021c33b34ce0",
+    "docs/calibration/v3.8.8/reconstruction/packets/debate-103.json": "14bfb489ff601641a2d4e42e8a357bfa6787f100eebaf83902f54ab15c8a6719",
+    "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/schemas/debate-103.schema.json": "51bec2dce9a4861a5a481f079a554bb66f4dd33aab5144f3873cb49fd1c5b939",
+    ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt": "f852392592bdbaf149c1816fe93fb76e84b65577b4c6d85c52a50bb2db95be29",
+    ".assessment-cache/captions/g1TlLCSn_5o/events.json": "b9846f8275ade82451cfd86a4b4b5eefa89a9bbf1515067e2e18965bcadf03dc",
+    ".assessment-cache/captions/g1TlLCSn_5o/manifest.json": "0e24d0057065d03651c845abfd66fa90a04ed2dfbd582afe098e60d830fbde2a",
+    "docs/calibration/v3.8.8/reconstruction/packets/debate-161.json": "a4243d80d8ba4ec84819e1ce12a8f9d59985ff1e550aa29cac762f0d05cb853a",
+    "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/schemas/debate-161.schema.json": "d3f3048f45945b5a0397e2d1c16c9b70517a9fdd624efb89eeafb870085dba66",
+    ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt": "9de6853aa2dd4eaf8e0d669f895b719b7fbc15ab55a7f8eab271c92974771b78",
+    ".assessment-cache/captions/9JVRy7bR7zI/events.json": "5dd29c053f0e5da4ed79b6f818fb844a6515552671dbc4014916d18ca1d2cbbc",
+    ".assessment-cache/captions/9JVRy7bR7zI/manifest.json": "436f3f2be4fd5e84338f6244eae1398dbcb11c56ac514920a80cad440790dc18",
+    "scripts/lib/v388-reconstruction.mjs": "b91aecc26cd3a978ef807bec877222b641fff4cd911028538cd035b747f5a342",
+    "scripts/run-v388-reconstruction.mjs": "659fcbaf23dacd8fc5188099dba5598e8a94e7e349becfda7cc873c4bef4dc00",
+    "scripts/validate-v388-reconstruction-output.mjs": "060e75adf68b1256fd4920aee06ee97600378057170d28febbb81ca9ec97e741"
+  },
+  "contexts": [
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "packet": "docs/calibration/v3.8.8/reconstruction/packets/debate-103.json",
+      "schema": "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/schemas/debate-103.schema.json",
+      "transcript": ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt",
+      "events": ".assessment-cache/captions/g1TlLCSn_5o/events.json",
+      "sourceManifest": ".assessment-cache/captions/g1TlLCSn_5o/manifest.json",
+      "output": "docs/calibration/v3.8.8/reconstruction/outputs/debate-103.json"
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "packet": "docs/calibration/v3.8.8/reconstruction/packets/debate-161.json",
+      "schema": "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/schemas/debate-161.schema.json",
+      "transcript": ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt",
+      "events": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+      "sourceManifest": ".assessment-cache/captions/9JVRy7bR7zI/manifest.json",
+      "output": "docs/calibration/v3.8.8/reconstruction/outputs/debate-161.json"
+    }
+  ],
+  "futureOutputs": [
+    "docs/calibration/v3.8.8/reconstruction/outputs/debate-103.json",
+    "docs/calibration/v3.8.8/reconstruction/outputs/debate-161.json"
+  ],
+  "artifacts": {
+    "execution": "docs/calibration/v3.8.8/reconstruction/post-debate-55-continuation/model-execution.json",
+    "audit": "docs/calibration/v3.8.8/reconstruction/audit.json"
+  },
+  "cost": {
+    "meteredModelApiCostUsd": 0,
+    "additionalTranscriptionEstimatedCostUsd": 0,
+    "retryBillingRiskUsd": 0
+  },
+  "governance": {
+    "reason": "The original stopped-on-first-invalid execution never invoked Debates 103 or 161; these are their first model contexts.",
+    "automaticRetry": false,
+    "diagnosticOnly": true
+  },
+  "authorization": {
+    "reconstructionModelExecution": true,
+    "deterministicAudit": true,
+    "calibrationPreview": false,
+    "productionMutation": false,
+    "tenDebateGate": false,
+    "all195Debates": false
+  }
+}
