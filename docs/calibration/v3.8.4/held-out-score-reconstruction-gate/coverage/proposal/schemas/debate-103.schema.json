@@ -1,0 +1,539 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v384-full-coverage-proposal-103",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "seedDecisions",
+    "additions",
+    "bridgeCoverage",
+    "materialConcessionAudit",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.4-full-coverage-proposal-output"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "103"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "woodford-edwards-rational-belief-god-2023"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "coverage-proposer"
+    },
+    "seedDecisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "seedMoveId",
+          "decision",
+          "selectionRole",
+          "moveKind",
+          "respondsToRefs",
+          "rationale"
+        ],
+        "properties": {
+          "seedMoveId": {
+            "type": "string",
+            "enum": [
+              "woodford-edwards-rational-belief-god-2023-candidate-01-v381",
+              "woodford-edwards-rational-belief-god-2023-candidate-02-v381",
+              "woodford-edwards-rational-belief-god-2023-candidate-03-v381",
+              "woodford-edwards-rational-belief-god-2023-candidate-04-v381",
+              "woodford-edwards-rational-belief-god-2023-candidate-05-v381",
+              "woodford-edwards-rational-belief-god-2023-candidate-06-v381",
+              "woodford-edwards-rational-belief-god-2023-candidate-07-v381",
+              "woodford-edwards-rational-belief-god-2023-candidate-08-v381"
+            ]
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "retain",
+              "exclude"
+            ]
+          },
+          "selectionRole": {
+            "type": "string",
+            "enum": [
+              "load-bearing-constructive",
+              "major-direct-reply",
+              "material-concession",
+              "contextual-only"
+            ]
+          },
+          "moveKind": {
+            "type": "string",
+            "enum": [
+              "constructive",
+              "reply",
+              "concession"
+            ]
+          },
+          "respondsToRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "woodford-edwards-rational-belief-god-2023-candidate-01-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-02-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-03-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-04-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-05-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-06-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-07-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-08-v381",
+                "addition-01",
+                "addition-02",
+                "addition-03",
+                "addition-04",
+                "addition-05",
+                "addition-06",
+                "addition-07",
+                "addition-08",
+                "addition-09",
+                "addition-10",
+                "addition-11",
+                "addition-12",
+                "addition-13",
+                "addition-14",
+                "addition-15",
+                "addition-16",
+                "addition-17",
+                "addition-18",
+                "addition-19",
+                "addition-20",
+                "addition-21",
+                "addition-22",
+                "addition-23",
+                "addition-24"
+              ]
+            },
+            "maxItems": 6
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 70
+          }
+        }
+      },
+      "minItems": 8,
+      "maxItems": 8
+    },
+    "additions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "localRef",
+          "startEvent",
+          "endEvent",
+          "speaker",
+          "side",
+          "proposition",
+          "attributionConfidence",
+          "attributionBasis",
+          "selectionRole",
+          "moveKind",
+          "respondsToRefs",
+          "rationale"
+        ],
+        "properties": {
+          "localRef": {
+            "type": "string",
+            "enum": [
+              "addition-01",
+              "addition-02",
+              "addition-03",
+              "addition-04",
+              "addition-05",
+              "addition-06",
+              "addition-07",
+              "addition-08",
+              "addition-09",
+              "addition-10",
+              "addition-11",
+              "addition-12",
+              "addition-13",
+              "addition-14",
+              "addition-15",
+              "addition-16",
+              "addition-17",
+              "addition-18",
+              "addition-19",
+              "addition-20",
+              "addition-21",
+              "addition-22",
+              "addition-23",
+              "addition-24"
+            ]
+          },
+          "startEvent": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1358
+          },
+          "endEvent": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1358
+          },
+          "speaker": {
+            "type": "string",
+            "enum": [
+              "Stephen Woodford",
+              "Simon Edwards"
+            ]
+          },
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "proposition": {
+            "type": "string",
+            "minLength": 30
+          },
+          "attributionConfidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "attributionBasis": {
+            "type": "string",
+            "minLength": 50
+          },
+          "selectionRole": {
+            "type": "string",
+            "enum": [
+              "load-bearing-constructive",
+              "major-direct-reply",
+              "material-concession",
+              "contextual-only"
+            ]
+          },
+          "moveKind": {
+            "type": "string",
+            "enum": [
+              "constructive",
+              "reply",
+              "concession"
+            ]
+          },
+          "respondsToRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "woodford-edwards-rational-belief-god-2023-candidate-01-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-02-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-03-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-04-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-05-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-06-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-07-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-08-v381",
+                "addition-01",
+                "addition-02",
+                "addition-03",
+                "addition-04",
+                "addition-05",
+                "addition-06",
+                "addition-07",
+                "addition-08",
+                "addition-09",
+                "addition-10",
+                "addition-11",
+                "addition-12",
+                "addition-13",
+                "addition-14",
+                "addition-15",
+                "addition-16",
+                "addition-17",
+                "addition-18",
+                "addition-19",
+                "addition-20",
+                "addition-21",
+                "addition-22",
+                "addition-23",
+                "addition-24"
+              ]
+            },
+            "maxItems": 6
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 70
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 24
+    },
+    "bridgeCoverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "bridgeId",
+          "status",
+          "moveRefs",
+          "omission",
+          "rationale"
+        ],
+        "properties": {
+          "bridgeId": {
+            "type": "string",
+            "enum": [
+              "woodford-edwards-rational-belief-god-2023-pro-motion-v381",
+              "woodford-edwards-rational-belief-god-2023-pro-central-v381",
+              "woodford-edwards-rational-belief-god-2023-pro-subsidiary-1-v381",
+              "woodford-edwards-rational-belief-god-2023-pro-subsidiary-2-v381",
+              "woodford-edwards-rational-belief-god-2023-pro-subsidiary-3-v381",
+              "woodford-edwards-rational-belief-god-2023-con-motion-v381",
+              "woodford-edwards-rational-belief-god-2023-con-central-v381",
+              "woodford-edwards-rational-belief-god-2023-con-subsidiary-1-v381",
+              "woodford-edwards-rational-belief-god-2023-con-subsidiary-2-v381",
+              "woodford-edwards-rational-belief-god-2023-con-subsidiary-3-v381"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "represented",
+              "consequential-omission"
+            ]
+          },
+          "moveRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "woodford-edwards-rational-belief-god-2023-candidate-01-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-02-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-03-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-04-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-05-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-06-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-07-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-08-v381",
+                "addition-01",
+                "addition-02",
+                "addition-03",
+                "addition-04",
+                "addition-05",
+                "addition-06",
+                "addition-07",
+                "addition-08",
+                "addition-09",
+                "addition-10",
+                "addition-11",
+                "addition-12",
+                "addition-13",
+                "addition-14",
+                "addition-15",
+                "addition-16",
+                "addition-17",
+                "addition-18",
+                "addition-19",
+                "addition-20",
+                "addition-21",
+                "addition-22",
+                "addition-23",
+                "addition-24"
+              ]
+            },
+            "maxItems": 8
+          },
+          "omission": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "side",
+                  "speaker",
+                  "opportunityStartEvent",
+                  "opportunityEndEvent",
+                  "omittedResponse",
+                  "assessmentConsequence"
+                ],
+                "properties": {
+                  "side": {
+                    "type": "string",
+                    "enum": [
+                      "pro",
+                      "con"
+                    ]
+                  },
+                  "speaker": {
+                    "type": "string",
+                    "enum": [
+                      "Stephen Woodford",
+                      "Simon Edwards"
+                    ]
+                  },
+                  "opportunityStartEvent": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1358
+                  },
+                  "opportunityEndEvent": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1358
+                  },
+                  "omittedResponse": {
+                    "type": "string",
+                    "minLength": 60
+                  },
+                  "assessmentConsequence": {
+                    "type": "string",
+                    "minLength": 60
+                  }
+                }
+              }
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          }
+        }
+      },
+      "minItems": 10,
+      "maxItems": 10
+    },
+    "materialConcessionAudit": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "side",
+          "status",
+          "moveRefs",
+          "rationale"
+        ],
+        "properties": {
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "represented",
+              "none-found"
+            ]
+          },
+          "moveRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "woodford-edwards-rational-belief-god-2023-candidate-01-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-02-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-03-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-04-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-05-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-06-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-07-v381",
+                "woodford-edwards-rational-belief-god-2023-candidate-08-v381",
+                "addition-01",
+                "addition-02",
+                "addition-03",
+                "addition-04",
+                "addition-05",
+                "addition-06",
+                "addition-07",
+                "addition-08",
+                "addition-09",
+                "addition-10",
+                "addition-11",
+                "addition-12",
+                "addition-13",
+                "addition-14",
+                "addition-15",
+                "addition-16",
+                "addition-17",
+                "addition-18",
+                "addition-19",
+                "addition-20",
+                "addition-21",
+                "addition-22",
+                "addition-23",
+                "addition-24"
+              ]
+            },
+            "maxItems": 6
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          }
+        }
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fullTranscriptReviewed",
+        "seedInventoryTreatedAsIncomplete",
+        "legacyAssessmentUnavailable",
+        "scoresAndAssessmentProseAbsent",
+        "coverageClaim"
+      ],
+      "properties": {
+        "fullTranscriptReviewed": {
+          "type": "boolean",
+          "const": true
+        },
+        "seedInventoryTreatedAsIncomplete": {
+          "type": "boolean",
+          "const": true
+        },
+        "legacyAssessmentUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "scoresAndAssessmentProseAbsent": {
+          "type": "boolean",
+          "const": true
+        },
+        "coverageClaim": {
+          "type": "string",
+          "const": "complete-proposal-pending-independent-review"
+        }
+      }
+    }
+  }
+}

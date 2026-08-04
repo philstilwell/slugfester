@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "3.8.4-full-coverage-proposal-execution-manifest",
+  "protocolId": "v3.8.4-heldout-score-reconstruction-gate",
+  "parentPreregistration": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/gate-manifest.json",
+  "stage": "full-coverage-proposal",
+  "status": "frozen-coverage-proposal-execution-authorized",
+  "frozenAt": "2026-08-04T12:47:28Z",
+  "checkpointCommit": "59bd0dcde684a462c3ee333009ce355f861bdf8c",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "modelInputs": {
+    "workflow": "docs/assessment-workflow-v3.8.4.md",
+    "rubric": "docs/reassessment-rubric-v3.8.4.md",
+    "manual": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage-manual.md"
+  },
+  "debateNumbers": [
+    "103",
+    "55",
+    "161"
+  ],
+  "proposalContexts": {
+    "55": {
+      "debateNumber": "55",
+      "packet": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/packets/debate-55.json",
+      "schema": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/schemas/debate-55.schema.json",
+      "rawOutput": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/raw-outputs/debate-55.json",
+      "enrichedOutput": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-55.json",
+      "transcript": ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt",
+      "events": ".assessment-cache/captions/zQBY5K-Ns2Y/events.json",
+      "captionManifest": ".assessment-cache/captions/zQBY5K-Ns2Y/manifest.json"
+    },
+    "103": {
+      "debateNumber": "103",
+      "packet": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/packets/debate-103.json",
+      "schema": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/schemas/debate-103.schema.json",
+      "rawOutput": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/raw-outputs/debate-103.json",
+      "enrichedOutput": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-103.json",
+      "transcript": ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt",
+      "events": ".assessment-cache/captions/g1TlLCSn_5o/events.json",
+      "captionManifest": ".assessment-cache/captions/g1TlLCSn_5o/manifest.json"
+    },
+    "161": {
+      "debateNumber": "161",
+      "packet": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/packets/debate-161.json",
+      "schema": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/schemas/debate-161.schema.json",
+      "rawOutput": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/raw-outputs/debate-161.json",
+      "enrichedOutput": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-161.json",
+      "transcript": ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt",
+      "events": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+      "captionManifest": ".assessment-cache/captions/9JVRy7bR7zI/manifest.json"
+    }
+  },
+  "authorization": {
+    "coverageProposalModelExecution": true,
+    "coverageReviewModelExecution": false,
+    "coverageAdjudicationModelExecution": false,
+    "audioVerification": false,
+    "burdenContactModelExecution": false,
+    "scoringModelExecution": false,
+    "scoreAdjudicationModelExecution": false,
+    "numericalParticipantScoring": false,
+    "assessmentProse": false,
+    "renderingClaim": false,
+    "benchmarkMutation": false,
+    "productionMutation": false,
+    "tenDebateGate": false,
+    "all195Debates": false
+  },
+  "authorizationScope": "Exactly three isolated full-transcript coverage-proposal contexts: one each for Debates 103, 55, and 161. No review, adjudication, classification, scoring, prose, rendering, or production context is authorized by this lock.",
+  "isolation": {
+    "temporaryCodexHomePerContext": true,
+    "sourceDirectoryPerContext": true,
+    "fullTranscriptAndTimestampedEventsAvailable": true,
+    "priorCoverageProposalOutputsAvailable": false,
+    "legacyAssessmentAvailable": false,
+    "seedProvisionalBurdenContactsAvailable": false,
+    "scoringJudgmentsAvailable": false,
+    "scoresAvailable": false,
+    "modelAuthoredStableAdditionIds": false
+  },
+  "executionPolicy": {
+    "attemptsPerContext": 1,
+    "modelOutputRetriesMaximum": 0,
+    "sameRequestStreamRecoveriesMaximumPerContext": 2,
+    "perInvocationTimeoutMs": 3600000,
+    "timedOutContextsMaximum": 0,
+    "concurrencyMinimum": 1,
+    "concurrencyMaximum": 3,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "deterministicNormalization": {
+    "packetLocalAdditionRefsRequired": true,
+    "stableAdditionIdsModelAuthored": false,
+    "stableAdditionIdsDerivedAfterValidation": true,
+    "exactExcerptsDerivedFromEvents": true,
+    "sourceTimestampsDerivedFromEvents": true,
+    "semanticFieldsChanged": false
+  },
+  "stopRules": {
+    "anyInvalidProposalBlocksReviewPacketConstruction": true,
+    "anyTimeoutBlocksReviewPacketConstruction": true,
+    "anySourceHashMismatchBlocksModelExecution": true,
+    "anyPreexistingFutureOutputBlocksModelExecution": true,
+    "anyModelScoreFieldInvalidatesContext": true,
+    "correctionRequiresNewCommittedPhaseLock": true
+  },
+  "artifacts": {
+    "proposalExecution": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-model-execution.json",
+    "proposalRawOutputs": [
+      "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/raw-outputs/debate-55.json",
+      "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/raw-outputs/debate-103.json",
+      "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/raw-outputs/debate-161.json"
+    ],
+    "proposalEnrichedOutputs": [
+      "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-55.json",
+      "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-103.json",
+      "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-161.json"
+    ],
+    "coverageReviewLock": null,
+    "coverageAdjudicationLock": null,
+    "finalCoverageInventory": null,
+    "scoringArtifacts": null,
+    "assessmentArtifacts": null
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/raw-outputs/debate-55.json",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-55.json",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/raw-outputs/debate-103.json",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-103.json",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/raw-outputs/debate-161.json",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/enriched-outputs/debate-161.json",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-model-execution.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.8.4.md": "49dda91a87c0ebbab9666d6c732035bde17939d84f4b71b326f4f04b917ddd5a",
+    "docs/reassessment-rubric-v3.8.4.md": "fda29887abb26f1f5a6f7b772e26434db0c055ec3efe42be4eeea602f5a84909",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/gate-manifest.json": "23188acc97e560335235293626098e2560f5d832e2738c3b68edd5445930bafb",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage-manual.md": "6cb4f86e5d4308905da74ef6c424d48fac6f53668d2c4a8ded04967fb767ba76",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal-dry-fixture.json": "2ef532960e216d25cd140c0a8d0fc6518ba154a3f586c789c3d51dcbbd1d19af",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/packets/debate-55.json": "3d7a13fc391e410c58ce8eae5a9c3e6439b14bd9a2bcbadd5605f70e4c8297b4",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/schemas/debate-55.schema.json": "fb90ce6eca978596673b86da604e49cce47b068c965a75baaec39c898b4f5f6c",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt": "305d9eacbd581a9aac9f5f246f63097deef6e6020af7a8031e14ca9cfbba66c2",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/events.json": "d09e63acc41236158b808b6242c871428a467697fba1f2454cfac143c185aa3f",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/manifest.json": "73f97e374fa98f388528e03ed39e1272f77c9fec6cee46345fdfba9c3177c099",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/packets/debate-103.json": "688c05950f1af676717bf2dc065bebf5a83f045e1333e53287cd578f32088d66",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/schemas/debate-103.schema.json": "55bc9b0790203e2594e994571b510d635afdfbb67e1f1996c963e68010377db3",
+    ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt": "f852392592bdbaf149c1816fe93fb76e84b65577b4c6d85c52a50bb2db95be29",
+    ".assessment-cache/captions/g1TlLCSn_5o/events.json": "b9846f8275ade82451cfd86a4b4b5eefa89a9bbf1515067e2e18965bcadf03dc",
+    ".assessment-cache/captions/g1TlLCSn_5o/manifest.json": "0e24d0057065d03651c845abfd66fa90a04ed2dfbd582afe098e60d830fbde2a",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/packets/debate-161.json": "093a3928c7251c91fcd1b2b00a19cb42aa1996d57c28528952ae07cc1c14d099",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/schemas/debate-161.schema.json": "02149eef27211e7aeb6b4797eba43150794240e116ddd3e21f7444dced4afad8",
+    ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt": "9de6853aa2dd4eaf8e0d669f895b719b7fbc15ab55a7f8eab271c92974771b78",
+    ".assessment-cache/captions/9JVRy7bR7zI/events.json": "5dd29c053f0e5da4ed79b6f818fb844a6515552671dbc4014916d18ca1d2cbbc",
+    ".assessment-cache/captions/9JVRy7bR7zI/manifest.json": "436f3f2be4fd5e84338f6244eae1398dbcb11c56ac514920a80cad440790dc18",
+    "docs/calibration/v3.8.2/held-out-source-preparation-instrumentation-continuation/resolved/debate-103.json": "7cbff7ea759fb05f9f0d552d87440a46b6f9b58ef838c6823d4d4584c12d1221",
+    "docs/calibration/v3.8.2/held-out-source-preparation-instrumentation-continuation/resolved/debate-55.json": "3cce644965df963a1295f540f5b746657d4c2970b34958ea979c6669b44d764c",
+    "docs/calibration/v3.8.2/held-out-source-preparation-instrumentation-continuation/resolved/debate-161.json": "9f973db9f290c9f7dc2f37942247a115bb3f49b9dc4db6ba4b51c267b39a506a",
+    "package.json": "892e4a006f89bbddadde45c52aa3dea4b19b560da7c1245dd1113ffa830a8682",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v37-retired-semantic.mjs": "2fe113760e4b2bb97104025d39755d8ceeeecded89fbaea683cc5c9cce188296",
+    "scripts/lib/v381-source-preparation.mjs": "ccc2c66a1c2ab50fbebc26888f622c9632fb273c2b24b45ea68618188df384d7",
+    "scripts/lib/v384-coverage-preparation.mjs": "5a37b262e3a1c819c01f6ce6e808bcf19e57a4bb5b2df04ee659c2b72ea122f2",
+    "scripts/build-v384-coverage-proposal-packets.mjs": "f2b7b0b679299c90c7e750067615d6b6cabbdfebbf9f1cbd09c369d36116562a",
+    "scripts/validate-v384-coverage-proposal.mjs": "8e426a614e27d15d4cf357af838b74d76657328d9430f77ebe61ef4de5d68c9d",
+    "scripts/test-v384-coverage-proposal-tooling.mjs": "013bfb0756a7184078105886f08fe4786427605f1985aee20a1b0efdd1a65979",
+    "scripts/run-v384-coverage-proposals.mjs": "0dab61dade0e99453fe51e57d8fd23d01180218a57aa5489b0692f5189b08d12",
+    "scripts/preregister-v384-coverage-proposal-execution.mjs": "40898b98558af87cf57297bd696b6d1c8b0371fc95a3a40db5c7ea2505529970",
+    "scripts/validate-v384-coverage-proposal-execution-lock.mjs": "54ec66d85fba6f6db85258cf45dc6ff33651a0fdaeba8c902eeae60851d14625"
+  }
+}
