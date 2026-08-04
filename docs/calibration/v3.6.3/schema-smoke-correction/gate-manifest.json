@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "3.6.3-schema-smoke-manifest",
+  "gateId": "v3.6.3-schema-smoke-correction",
+  "status": "frozen-before-correction-smoke",
+  "frozenAt": "2026-08-04T03:32:27.000Z",
+  "workflowVersion": "Slugfester Schema-Smoke Correction Workflow v3.6.3",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.6.3",
+  "calibrationOnly": true,
+  "purpose": "target-nullability-and-unique-substring-correction-smoke",
+  "independentModelAccuracyTest": false,
+  "model": {
+    "label": "5.6 Terra",
+    "slug": "gpt-5.6-terra",
+    "reasoningEffort": "high",
+    "authentication": "ChatGPT subscription",
+    "plannedContexts": 4
+  },
+  "executionPolicy": {
+    "isolatedEphemeralContexts": true,
+    "attemptsPerContext": 1,
+    "modelOutputRetriesMaximum": 0,
+    "preInferenceSchemaRejectionsMaximum": 0,
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0
+  },
+  "priorV362": {
+    "manifestPath": "docs/calibration/v3.6.2/schema-smoke/gate-manifest.json",
+    "manifestSha256": "e193b692d0346183937949d3d1ce06233a8a1a151c64fc73b8a5f5719e2ce5d4",
+    "analysisPath": "docs/calibration/v3.6.2/schema-smoke/smoke-analysis.json",
+    "analysisSha256": "313b337778d225bd7922449d02e6377e9a5789fdf279a0ec85d778a19feaeb3b",
+    "outcome": "failed-two-of-four-valid"
+  },
+  "families": {
+    "target": {
+      "schema": "docs/calibration/v3.6.3/schema-smoke-correction/schemas/target-component-example.schema.json",
+      "packet": "docs/calibration/v3.6.2/schema-smoke/packets/target.json",
+      "schemaSha256": "0e351fad6750e24312b5e2eeadd0b5e0ea9df0ee301e0f6a54358df3d130c1f0",
+      "packetSha256": "185bd3588f20b2eb33a2b9cf170e72116316c1074e3b2b9d2b066232e07c2c88"
+    },
+    "diagnostic": {
+      "schema": "docs/calibration/v3.6/decision-card-development/schemas/diagnostic.schema.json",
+      "packet": "docs/calibration/v3.6.2/schema-smoke/packets/diagnostic.json",
+      "schemaSha256": "7a663e1a26443bf1e6f7c26be05ffb1fe1cc8df0033a77f0ba5a703fe7b7bd53",
+      "packetSha256": "f71b581973633ce0978912d7afa458a5ab819aed5a82010f206fc021dc854989"
+    },
+    "reframe": {
+      "schema": "docs/calibration/v3.6/decision-card-development/schemas/reframe.schema.json",
+      "packet": "docs/calibration/v3.6.2/schema-smoke/packets/reframe.json",
+      "schemaSha256": "664f578caff65b39a85425845e498a7c7dbca15fcc045dea814b701a320a62e8",
+      "packetSha256": "73c5fb53d6a98ecc9666b2aa6192b2f37de9324c960f6d2232478c621d8ed096"
+    },
+    "burden": {
+      "schema": "docs/calibration/v3.6/decision-card-development/schemas/burden-conflict.schema.json",
+      "packet": "docs/calibration/v3.6.2/schema-smoke/packets/burden.json",
+      "schemaSha256": "ec8a1a03ef0300196eff19c0a59148831b317565683d7bb90e762ec8c03ed4a9",
+      "packetSha256": "92cef91aa9929543474a2c044a8ed5a59dcad828c4b01d37b380b4b04832520f"
+    }
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.6.3.md": "f6e5cb41439acf495cd5296ffba8e50c7c75dfc7e30c373975523e0f861611f0",
+    "docs/reassessment-rubric-v3.6.3.md": "ee6c4fbcd1b795dc7566521f1b7262538561cc977082ad2606081a189b8da6cd",
+    "docs/calibration/v3.6.3/schema-smoke-correction/correction-manual.md": "82eb49acb427976c329f4f765c094db0d18435372453e23a22a9e0f570977533",
+    "docs/calibration/v3.6.3/schema-smoke-correction/schemas/target-component-example.schema.json": "0e351fad6750e24312b5e2eeadd0b5e0ea9df0ee301e0f6a54358df3d130c1f0",
+    "docs/calibration/v3.6.2/schema-smoke/packets/target.json": "185bd3588f20b2eb33a2b9cf170e72116316c1074e3b2b9d2b066232e07c2c88",
+    "docs/calibration/v3.6/decision-card-development/schemas/diagnostic.schema.json": "7a663e1a26443bf1e6f7c26be05ffb1fe1cc8df0033a77f0ba5a703fe7b7bd53",
+    "docs/calibration/v3.6.2/schema-smoke/packets/diagnostic.json": "f71b581973633ce0978912d7afa458a5ab819aed5a82010f206fc021dc854989",
+    "docs/calibration/v3.6/decision-card-development/schemas/reframe.schema.json": "664f578caff65b39a85425845e498a7c7dbca15fcc045dea814b701a320a62e8",
+    "docs/calibration/v3.6.2/schema-smoke/packets/reframe.json": "73c5fb53d6a98ecc9666b2aa6192b2f37de9324c960f6d2232478c621d8ed096",
+    "docs/calibration/v3.6/decision-card-development/schemas/burden-conflict.schema.json": "ec8a1a03ef0300196eff19c0a59148831b317565683d7bb90e762ec8c03ed4a9",
+    "docs/calibration/v3.6.2/schema-smoke/packets/burden.json": "92cef91aa9929543474a2c044a8ed5a59dcad828c4b01d37b380b4b04832520f",
+    "docs/calibration/v3.6/decision-card-development/synthetic-fixtures.json": "63ae3c6597b6d3efe4ed0c6736b2a5dafcac5dd20776ad393a5441ae9b60683c",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/test-v363-schema-smoke.mjs": "7521b7ca8a3ea3b921e3d3e54bee2d6e851e91f0ed2399abafa756b5928556ee",
+    "scripts/validate-v363-smoke-output.mjs": "eba7c9f053b653dbf03172fc8e211524b40104b9403e05f54602f6fcdf3d5e54",
+    "scripts/preregister-v363-schema-smoke.mjs": "8afe81a2cfe6001fb7e90135c578c82b5dec2303da01fabfdffa529a0030253d",
+    "scripts/run-v363-schema-smoke.mjs": "a387a58034ff7fdf9b33d3f5fd970b385837293d209e31535031b49c5a2d0a7b",
+    "scripts/analyze-v363-schema-smoke.mjs": "cfe5564dbfde3a0784df1ae1f9e4ed90fe4a54c01709cb0a99e0a4affea1f936",
+    "scripts/validate-v363-schema-smoke.mjs": "ef8f18b4ebc4e880f7a369a95fcffd2ec5510ff490a8b9dbf0bf678779f86a27"
+  },
+  "dryFixture": {
+    "path": "docs/calibration/v3.6.3/schema-smoke-correction/dry-fixture.json",
+    "sha256": "a0e109dba23877f1c76d4023c6997dccd0da81641bedefe47051756f94be6270"
+  },
+  "thresholds": {
+    "contextsCompleted": 4,
+    "validOutputCount": 4,
+    "preInferenceSchemaRejectionsMaximum": 0,
+    "modelOutputRetriesMaximum": 0,
+    "scoringFieldsMaximum": 0,
+    "meteredApiCostUsdMaximum": 0
+  },
+  "outputs": {
+    "target": "docs/calibration/v3.6.3/schema-smoke-correction/outputs/target.json",
+    "diagnostic": "docs/calibration/v3.6.3/schema-smoke-correction/outputs/diagnostic.json",
+    "reframe": "docs/calibration/v3.6.3/schema-smoke-correction/outputs/reframe.json",
+    "burden": "docs/calibration/v3.6.3/schema-smoke-correction/outputs/burden.json"
+  },
+  "executionResultPath": "docs/calibration/v3.6.3/schema-smoke-correction/model-execution.json",
+  "analysisPath": "docs/calibration/v3.6.3/schema-smoke-correction/smoke-analysis.json",
+  "heldOutMaterialOpened": false,
+  "numericalScoringAuthorized": false,
+  "productionMutationAuthorized": false
+}

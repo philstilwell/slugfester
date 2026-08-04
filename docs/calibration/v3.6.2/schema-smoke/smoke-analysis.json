@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "3.6.2-schema-smoke-analysis",
+  "analyzedAt": "2026-08-04T03:26:07.367Z",
+  "status": "schema-smoke-fail",
+  "warning": "Synthetic expected cards were opened only after all remote outputs closed. Their semantic comparison is monitoring only and does not contribute to the smoke gate.",
+  "sources": {
+    "manifestSha256": "e193b692d0346183937949d3d1ce06233a8a1a151c64fc73b8a5f5719e2ce5d4",
+    "executionSha256": "07ec971cc2f7bd58944889499dd48b0f21b6a71a14ce09aa5039540fc47d1b12",
+    "outputSha256": {
+      "target": "421e9f4c2d81685ad28f4da0042a9ed3bb68402d4ad7d674dcde23b18fa13259",
+      "diagnostic": "18b262dface21ef26c544bf6c709a36fcde428d57c42e5bebe21a9b9dedf90e4",
+      "reframe": "5465b2f9a77f6f1bbb73161f6280fc488a43a129ec674eb6b66e2b00d5222fdf",
+      "burden": "f12430cce691d2889ae6aa7e4182cc0eb3b8c0d0569ab2c23e7b7228f03a2386"
+    }
+  },
+  "results": {
+    "contextsPlanned": 4,
+    "contextsCompleted": 4,
+    "validOutputCount": 2,
+    "preInferenceSchemaRejections": 0,
+    "modelOutputRetries": 0,
+    "sameRequestStreamRecoveries": 0,
+    "scoringFields": 0,
+    "meteredApiCostUsd": 0,
+    "semanticMonitoringAssertions": 14,
+    "semanticMonitoringMatches": 12,
+    "semanticMonitoringMatchRate": 0.8571428571428571
+  },
+  "gates": {
+    "contextsCompleted": true,
+    "validOutputCount": false,
+    "preInferenceSchemaRejections": true,
+    "modelOutputRetries": true,
+    "scoringFields": true,
+    "meteredApiCost": true
+  },
+  "passed": false,
+  "semanticMonitoring": [
+    {
+      "family": "target",
+      "fieldPath": "directTarget.contact",
+      "matched": true
+    },
+    {
+      "family": "target",
+      "fieldPath": "components.0.contactMode",
+      "matched": true
+    },
+    {
+      "family": "target",
+      "fieldPath": "components.1.contactMode",
+      "matched": true
+    },
+    {
+      "family": "target",
+      "fieldPath": "example.classification",
+      "matched": false
+    },
+    {
+      "family": "target",
+      "fieldPath": "scope.relation",
+      "matched": true
+    },
+    {
+      "family": "target",
+      "fieldPath": "contrary.classification",
+      "matched": true
+    },
+    {
+      "family": "diagnostic",
+      "fieldPath": "defect.type",
+      "matched": true
+    },
+    {
+      "family": "diagnostic",
+      "fieldPath": "consequence.cueText",
+      "matched": true
+    },
+    {
+      "family": "diagnostic",
+      "fieldPath": "consequence.relationKind",
+      "matched": true
+    },
+    {
+      "family": "reframe",
+      "fieldPath": "malformedCueText",
+      "matched": true
+    },
+    {
+      "family": "reframe",
+      "fieldPath": "replacementCueText",
+      "matched": false
+    },
+    {
+      "family": "reframe",
+      "fieldPath": "relationKind",
+      "matched": true
+    },
+    {
+      "family": "burden",
+      "fieldPath": "candidateSelection",
+      "matched": true
+    },
+    {
+      "family": "burden",
+      "fieldPath": "qualifyingCue",
+      "matched": true
+    }
+  ],
+  "decision": {
+    "retiredSemanticCardTestPreregistrationAuthorized": false,
+    "modelBatchAuthorized": false,
+    "heldOutAccessAuthorized": false,
+    "numericalScoringAuthorized": false,
+    "assessmentProseAuthorized": false,
+    "productionMutationAuthorized": false
+  }
+}
