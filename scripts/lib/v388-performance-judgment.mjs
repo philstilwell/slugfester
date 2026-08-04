@@ -91,11 +91,11 @@ export function makeV388PerformanceSchema() {
       distinctDebateWideConsequence: { type: "boolean" },
       affectsBurdenCompletion: { type: "boolean" },
       notAlreadyScored: { type: "boolean" },
-      affectedBurdenIds: { type: "array", uniqueItems: true, items: { type: "string", minLength: 1 } },
+      affectedBurdenIds: { type: "array", items: { type: "string", minLength: 1 } },
       completionCriterion: { type: "string", minLength: 1 },
-      relatedMoveIds: { type: "array", uniqueItems: true, items: { type: "string", minLength: 1 } },
+      relatedMoveIds: { type: "array", items: { type: "string", minLength: 1 } },
       distinctConsequence: { type: "string", minLength: 1 },
-      alreadyCapturedBy: { type: "array", uniqueItems: true, items: { type: "string", minLength: 1 } },
+      alreadyCapturedBy: { type: "array", items: { type: "string", minLength: 1 } },
       counterfactual: { type: "string", minLength: 1 }
     }
   };
@@ -158,7 +158,7 @@ export function makeV388PerformanceSchema() {
               required: ["class", "decisiveTargetIds", "contactedComponents", "totalComponents", "contactedComponentSummary", "missedComponentSummary", "rationale"],
               properties: {
                 class: { type: "string", enum: V388_RESPONSE_CLASSES },
-                decisiveTargetIds: { type: "array", uniqueItems: true, items: { type: "string", minLength: 1 } },
+                decisiveTargetIds: { type: "array", items: { type: "string", minLength: 1 } },
                 contactedComponents: { type: "integer", minimum: 0 },
                 totalComponents: { type: "integer", minimum: 0 },
                 contactedComponentSummary: { type: "string" },

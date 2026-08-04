@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "3.8.8-performance-schema-keyword-recovery-audit",
+  "status": "passed-semantic-preserving-unsupported-keyword-removal",
+  "lockedRecoveryCommit": "87d3f745",
+  "officialDocumentation": "https://developers.openai.com/api/docs/guides/structured-outputs#supported-schemas",
+  "defect": "The structured-output endpoint does not permit uniqueItems; uniqueness remains a deterministic post-output invariant.",
+  "priorAttempts": {
+    "originalPreInferenceAttempts": 6,
+    "firstRecoveryPreInferenceAttempts": 6,
+    "totalPreInferenceAttempts": 12,
+    "validContexts": 0,
+    "moveJudgmentsGenerated": 0,
+    "outputFilesWritten": 0,
+    "retries": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "repair": {
+    "oldSchemaSha256": "4471467a418a379aed7986527d0b279128ad2f7ea6b712711b4a4b7f618b11ed",
+    "newSchemaSha256": "93840b1df9d0fa92381ff7335f0bd6d405feea468ca746455c712db1785dee22",
+    "removals": [
+      {
+        "path": "/properties/moveJudgments/items/properties/response/properties/decisiveTargetIds/uniqueItems",
+        "value": true,
+        "enforcementAfterRemoval": "deterministic-packet-aware-validator"
+      },
+      {
+        "path": "/properties/burdenCompletionAdjustment/properties/pro/properties/eligibility/properties/affectedBurdenIds/uniqueItems",
+        "value": true,
+        "enforcementAfterRemoval": "deterministic-packet-aware-validator"
+      },
+      {
+        "path": "/properties/burdenCompletionAdjustment/properties/pro/properties/eligibility/properties/relatedMoveIds/uniqueItems",
+        "value": true,
+        "enforcementAfterRemoval": "deterministic-packet-aware-validator"
+      },
+      {
+        "path": "/properties/burdenCompletionAdjustment/properties/pro/properties/eligibility/properties/alreadyCapturedBy/uniqueItems",
+        "value": true,
+        "enforcementAfterRemoval": "deterministic-packet-aware-validator"
+      },
+      {
+        "path": "/properties/burdenCompletionAdjustment/properties/con/properties/eligibility/properties/affectedBurdenIds/uniqueItems",
+        "value": true,
+        "enforcementAfterRemoval": "deterministic-packet-aware-validator"
+      },
+      {
+        "path": "/properties/burdenCompletionAdjustment/properties/con/properties/eligibility/properties/relatedMoveIds/uniqueItems",
+        "value": true,
+        "enforcementAfterRemoval": "deterministic-packet-aware-validator"
+      },
+      {
+        "path": "/properties/burdenCompletionAdjustment/properties/con/properties/eligibility/properties/alreadyCapturedBy/uniqueItems",
+        "value": true,
+        "enforcementAfterRemoval": "deterministic-packet-aware-validator"
+      }
+    ],
+    "removalsOnly": true,
+    "removedKeysOnlyUniqueItems": true,
+    "existingValuesChanged": 0,
+    "addedKeys": 0,
+    "uniquenessStillDeterministicallyEnforced": true,
+    "semanticJudgmentContractChanged": false
+  },
+  "supportedSubsetLint": {
+    "status": "passed",
+    "schemaNodes": 109,
+    "allowedKeywords": [
+      "$schema",
+      "$id",
+      "title",
+      "type",
+      "additionalProperties",
+      "required",
+      "properties",
+      "items",
+      "minItems",
+      "minLength",
+      "minimum",
+      "maximum",
+      "enum",
+      "const",
+      "anyOf"
+    ],
+    "unexpectedKeywords": 0,
+    "objectsMissingAdditionalPropertiesFalse": 0,
+    "objectsWithOptionalProperties": 0,
+    "constOrEnumNodesMissingExplicitType": 0
+  },
+  "authorization": {
+    "automaticRetry": false,
+    "oneContextEndpointPreflightRequiredBeforeAnyFurtherSixContextRun": true,
+    "scoreDerivation": false,
+    "assessmentProse": false
+  }
+}
