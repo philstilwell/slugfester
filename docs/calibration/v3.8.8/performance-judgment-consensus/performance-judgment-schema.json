@@ -20,9 +20,11 @@
   ],
   "properties": {
     "schemaVersion": {
+      "type": "string",
       "const": "3.8.8-performance-judgment-output"
     },
     "protocolId": {
+      "type": "string",
       "const": "v3.8.8-performance-judgment-consensus"
     },
     "debateNumber": {
@@ -34,18 +36,22 @@
       "minLength": 1
     },
     "pass": {
+      "type": "string",
       "enum": [
         "A",
         "B"
       ]
     },
     "reviewerRole": {
+      "type": "string",
       "const": "performance-judge"
     },
     "assessmentModel": {
+      "type": "string",
       "const": "5.6 Sol"
     },
     "calibrationOnly": {
+      "type": "boolean",
       "const": true
     },
     "isolation": {
@@ -61,21 +67,27 @@
       ],
       "properties": {
         "otherPassUnavailable": {
+          "type": "boolean",
           "const": true
         },
         "legacyAssessmentsUnavailable": {
+          "type": "boolean",
           "const": true
         },
         "calculatedTotalsUnavailable": {
+          "type": "boolean",
           "const": true
         },
         "winnerLabelsUnavailable": {
+          "type": "boolean",
           "const": true
         },
         "assessmentProseUnavailable": {
+          "type": "boolean",
           "const": true
         },
         "contaminationDetected": {
+          "type": "boolean",
           "const": false
         }
       }
@@ -109,6 +121,7 @@
             "minLength": 1
           },
           "side": {
+            "type": "string",
             "enum": [
               "pro",
               "con"
@@ -161,12 +174,14 @@
                 ],
                 "properties": {
                   "polarity": {
+                    "type": "string",
                     "enum": [
                       "support",
                       "attack"
                     ]
                   },
                   "tier": {
+                    "type": "string",
                     "enum": [
                       "motion",
                       "central",
@@ -195,6 +210,7 @@
             ],
             "properties": {
               "class": {
+                "type": "string",
                 "enum": [
                   "constructive-opening",
                   "full-answer",
@@ -389,6 +405,7 @@
             "minLength": 40
           },
           "assessmentConfidence": {
+            "type": "string",
             "enum": [
               "high",
               "medium",
@@ -591,24 +608,31 @@
           "minimum": 1
         },
         "allMovesJudgedOnce": {
+          "type": "boolean",
           "const": true
         },
         "lockedFieldsCopied": {
+          "type": "boolean",
           "const": true
         },
         "responseAnchorsApplied": {
+          "type": "boolean",
           "const": true
         },
         "burdenAnchorsApplied": {
+          "type": "boolean",
           "const": true
         },
         "charityAnchorApplied": {
+          "type": "boolean",
           "const": true
         },
         "burdenExclusionRuleApplied": {
+          "type": "boolean",
           "const": true
         },
         "calculatedTotalsAbsent": {
+          "type": "boolean",
           "const": true
         }
       }

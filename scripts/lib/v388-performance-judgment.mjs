@@ -76,8 +76,8 @@ export function makeV388PerformanceSchema() {
         additionalProperties: false,
         required: ["polarity", "tier", "bridgeId"],
         properties: {
-          polarity: { enum: ["support", "attack"] },
-          tier: { enum: ["motion", "central", "subsidiary"] },
+          polarity: { type: "string", enum: ["support", "attack"] },
+          tier: { type: "string", enum: ["motion", "central", "subsidiary"] },
           bridgeId: { type: "string", minLength: 1 }
         }
       }
@@ -107,25 +107,25 @@ export function makeV388PerformanceSchema() {
     additionalProperties: false,
     required: ["schemaVersion", "protocolId", "debateNumber", "debateId", "pass", "reviewerRole", "assessmentModel", "calibrationOnly", "isolation", "moveJudgments", "burdenCompletionAdjustment", "audit"],
     properties: {
-      schemaVersion: { const: "3.8.8-performance-judgment-output" },
-      protocolId: { const: "v3.8.8-performance-judgment-consensus" },
+      schemaVersion: { type: "string", const: "3.8.8-performance-judgment-output" },
+      protocolId: { type: "string", const: "v3.8.8-performance-judgment-consensus" },
       debateNumber: { type: "string", minLength: 1 },
       debateId: { type: "string", minLength: 1 },
-      pass: { enum: ["A", "B"] },
-      reviewerRole: { const: "performance-judge" },
-      assessmentModel: { const: "5.6 Sol" },
-      calibrationOnly: { const: true },
+      pass: { type: "string", enum: ["A", "B"] },
+      reviewerRole: { type: "string", const: "performance-judge" },
+      assessmentModel: { type: "string", const: "5.6 Sol" },
+      calibrationOnly: { type: "boolean", const: true },
       isolation: {
         type: "object",
         additionalProperties: false,
         required: ["otherPassUnavailable", "legacyAssessmentsUnavailable", "calculatedTotalsUnavailable", "winnerLabelsUnavailable", "assessmentProseUnavailable", "contaminationDetected"],
         properties: {
-          otherPassUnavailable: { const: true },
-          legacyAssessmentsUnavailable: { const: true },
-          calculatedTotalsUnavailable: { const: true },
-          winnerLabelsUnavailable: { const: true },
-          assessmentProseUnavailable: { const: true },
-          contaminationDetected: { const: false }
+          otherPassUnavailable: { type: "boolean", const: true },
+          legacyAssessmentsUnavailable: { type: "boolean", const: true },
+          calculatedTotalsUnavailable: { type: "boolean", const: true },
+          winnerLabelsUnavailable: { type: "boolean", const: true },
+          assessmentProseUnavailable: { type: "boolean", const: true },
+          contaminationDetected: { type: "boolean", const: false }
         }
       },
       moveJudgments: {
@@ -138,7 +138,7 @@ export function makeV388PerformanceSchema() {
           properties: {
             moveId: { type: "string", minLength: 1 },
             sectionId: { type: "string", minLength: 1 },
-            side: { enum: ["pro", "con"] },
+            side: { type: "string", enum: ["pro", "con"] },
             speaker: { type: "string", minLength: 1 },
             sourceSpan: {
               type: "object",
@@ -157,7 +157,7 @@ export function makeV388PerformanceSchema() {
               additionalProperties: false,
               required: ["class", "decisiveTargetIds", "contactedComponents", "totalComponents", "contactedComponentSummary", "missedComponentSummary", "rationale"],
               properties: {
-                class: { enum: V388_RESPONSE_CLASSES },
+                class: { type: "string", enum: V388_RESPONSE_CLASSES },
                 decisiveTargetIds: { type: "array", uniqueItems: true, items: { type: "string", minLength: 1 } },
                 contactedComponents: { type: "integer", minimum: 0 },
                 totalComponents: { type: "integer", minimum: 0 },
@@ -174,7 +174,7 @@ export function makeV388PerformanceSchema() {
             },
             charityTested: { type: "boolean" },
             evidenceBasis: { type: "string", minLength: 40 },
-            assessmentConfidence: { enum: ["high", "medium", "low"] }
+            assessmentConfidence: { type: "string", enum: ["high", "medium", "low"] }
           }
         }
       },
@@ -199,13 +199,13 @@ export function makeV388PerformanceSchema() {
         required: ["moveCount", "allMovesJudgedOnce", "lockedFieldsCopied", "responseAnchorsApplied", "burdenAnchorsApplied", "charityAnchorApplied", "burdenExclusionRuleApplied", "calculatedTotalsAbsent"],
         properties: {
           moveCount: { type: "integer", minimum: 1 },
-          allMovesJudgedOnce: { const: true },
-          lockedFieldsCopied: { const: true },
-          responseAnchorsApplied: { const: true },
-          burdenAnchorsApplied: { const: true },
-          charityAnchorApplied: { const: true },
-          burdenExclusionRuleApplied: { const: true },
-          calculatedTotalsAbsent: { const: true }
+          allMovesJudgedOnce: { type: "boolean", const: true },
+          lockedFieldsCopied: { type: "boolean", const: true },
+          responseAnchorsApplied: { type: "boolean", const: true },
+          burdenAnchorsApplied: { type: "boolean", const: true },
+          charityAnchorApplied: { type: "boolean", const: true },
+          burdenExclusionRuleApplied: { type: "boolean", const: true },
+          calculatedTotalsAbsent: { type: "boolean", const: true }
         }
       }
     }

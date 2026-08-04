@@ -29,4 +29,4 @@ The principal remaining risk is ordinary model disagreement over component decom
 
 ## Quality judgment
 
-Preparation quality is **A**. It satisfies the requested architecture and closes the known v3.8.4 ambiguity around partial responses, untested charity, and duplicate burden adjustments. Execution quality is not yet graded because no live performance judgments have been made.
+Preparation quality was initially graded **A** for semantic and deterministic-validation coverage. The first endpoint call exposed a missing compatibility check: structured output also requires explicit scalar `type` declarations on `const` and `enum` nodes. All six attempted contexts were rejected before inference, produced no judgments or output files, and cost $0. The recovery audit permits only compatible `type` additions and proves that no existing schema value or judgment rule changed. With that repair, semantic preparation remains **A**, while endpoint-compatibility preparation is downgraded to **B+** until a separately locked recovery run validates all six live contexts.

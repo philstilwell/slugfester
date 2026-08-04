@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "3.8.8-performance-schema-compatibility-recovery-audit",
+  "status": "passed-semantic-preserving-compatibility-repair",
+  "lockedExecutionCommit": "50fe699c",
+  "defect": "The structured-output endpoint requires an explicit scalar type on const and enum schema nodes.",
+  "initialExecution": {
+    "contextsAttempted": 6,
+    "validContexts": 0,
+    "moveJudgmentsGenerated": 0,
+    "outputFilesWritten": 0,
+    "retries": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "repair": {
+    "oldSchemaSha256": "8e4eae9b3ae25442f4345b2c2f737cc75fc683b9354dc49f23b5e94a8999ddcf",
+    "newSchemaSha256": "4471467a418a379aed7986527d0b279128ad2f7ea6b712711b4a4b7f618b11ed",
+    "additions": [
+      {
+        "path": "/properties/schemaVersion/type",
+        "value": "string",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/protocolId/type",
+        "value": "string",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/pass/type",
+        "value": "string",
+        "existingConstraint": "enum"
+      },
+      {
+        "path": "/properties/reviewerRole/type",
+        "value": "string",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/assessmentModel/type",
+        "value": "string",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/calibrationOnly/type",
+        "value": "boolean",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/isolation/properties/otherPassUnavailable/type",
+        "value": "boolean",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/isolation/properties/legacyAssessmentsUnavailable/type",
+        "value": "boolean",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/isolation/properties/calculatedTotalsUnavailable/type",
+        "value": "boolean",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/isolation/properties/winnerLabelsUnavailable/type",
+        "value": "boolean",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/isolation/properties/assessmentProseUnavailable/type",
+        "value": "boolean",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/isolation/properties/contaminationDetected/type",
+        "value": "boolean",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/moveJudgments/items/properties/side/type",
+        "value": "string",
+        "existingConstraint": "enum"
+      },
+      {
+        "path": "/properties/moveJudgments/items/properties/lockedBurdenContact/anyOf/1/properties/polarity/type",
+        "value": "string",
+        "existingConstraint": "enum"
+      },
+      {
+        "path": "/properties/moveJudgments/items/properties/lockedBurdenContact/anyOf/1/properties/tier/type",
+        "value": "string",
+        "existingConstraint": "enum"
+      },
+      {
+        "path": "/properties/moveJudgments/items/properties/response/properties/class/type",
+        "value": "string",
+        "existingConstraint": "enum"
+      },
+      {
+        "path": "/properties/moveJudgments/items/properties/assessmentConfidence/type",
+        "value": "string",
+        "existingConstraint": "enum"
+      },
+      {
+        "path": "/properties/audit/properties/allMovesJudgedOnce/type",
+        "value": "boolean",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/audit/properties/lockedFieldsCopied/type",
+        "value": "boolean",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/audit/properties/responseAnchorsApplied/type",
+        "value": "boolean",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/audit/properties/burdenAnchorsApplied/type",
+        "value": "boolean",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/audit/properties/charityAnchorApplied/type",
+        "value": "boolean",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/audit/properties/burdenExclusionRuleApplied/type",
+        "value": "boolean",
+        "existingConstraint": "const"
+      },
+      {
+        "path": "/properties/audit/properties/calculatedTotalsAbsent/type",
+        "value": "boolean",
+        "existingConstraint": "const"
+      }
+    ],
+    "additionsOnly": true,
+    "addedKeysOnlyType": true,
+    "existingValuesChanged": 0,
+    "removedKeys": 0,
+    "semanticJudgmentContractChanged": false
+  },
+  "authorization": {
+    "automaticRetry": false,
+    "separatelyLockedRecoveryRequired": true,
+    "scoreDerivation": false,
+    "assessmentProse": false
+  }
+}
