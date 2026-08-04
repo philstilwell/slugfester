@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "3.7.1-initial-audit-disagreements",
+  "createdAt": "2026-08-04T04:05:14.780Z",
+  "status": "initial-passes-mapped",
+  "sources": {
+    "manifestSha256": "7ef3f4e281f6004e21c084d386eb232d8ef88a9493c1a3e8ba517019696558a5",
+    "initialExecutionSha256": "15ea9936406203dec5615cd8dd771f3fbc06afad031fa55f7889b03d76b1947c",
+    "sealedOptionMapSha256": "b4879bd853834ed7feaea56323001c8d0e200712fd0ba06cd5738402fba2a18a"
+  },
+  "allInitialValid": true,
+  "counts": {
+    "assertions": 14,
+    "agreements": 10,
+    "disagreements": 4,
+    "adjudicationContexts": 2
+  },
+  "comparisons": [
+    {
+      "auditId": "audit-001",
+      "debateNumber": "62",
+      "passA": "inside-locked-target",
+      "passB": "inside-locked-target",
+      "agreed": true
+    },
+    {
+      "auditId": "audit-002",
+      "debateNumber": "62",
+      "passA": "distinction",
+      "passB": "distinction",
+      "agreed": true
+    },
+    {
+      "auditId": "audit-003",
+      "debateNumber": "62",
+      "passA": "component-contact-precludes-contrary",
+      "passB": "component-contact-precludes-contrary",
+      "agreed": true
+    },
+    {
+      "auditId": "audit-004",
+      "debateNumber": "154",
+      "passA": "attribution-error",
+      "passB": "invalid-inference",
+      "agreed": false
+    },
+    {
+      "auditId": "audit-005",
+      "debateNumber": "154",
+      "passA": "none",
+      "passB": "none",
+      "agreed": true
+    },
+    {
+      "auditId": "audit-006",
+      "debateNumber": "154",
+      "passA": "exact-proposition",
+      "passB": "none",
+      "agreed": false
+    },
+    {
+      "auditId": "audit-007",
+      "debateNumber": "154",
+      "passA": "component-contact-precludes-contrary",
+      "passB": "relevant-no-component",
+      "agreed": false
+    },
+    {
+      "auditId": "audit-008",
+      "debateNumber": "185",
+      "passA": "candidate-2",
+      "passB": "candidate-2",
+      "agreed": true
+    },
+    {
+      "auditId": "audit-009",
+      "debateNumber": "185",
+      "passA": "explicit-negation",
+      "passB": "explicit-negation",
+      "agreed": true
+    },
+    {
+      "auditId": "audit-010",
+      "debateNumber": "185",
+      "passA": "scope-mismatch",
+      "passB": "scope-mismatch",
+      "agreed": true
+    },
+    {
+      "auditId": "audit-011",
+      "debateNumber": "185",
+      "passA": true,
+      "passB": true,
+      "agreed": true
+    },
+    {
+      "auditId": "audit-012",
+      "debateNumber": "185",
+      "passA": "none",
+      "passB": "contrastive",
+      "agreed": false
+    },
+    {
+      "auditId": "audit-013",
+      "debateNumber": "185",
+      "passA": true,
+      "passB": true,
+      "agreed": true
+    },
+    {
+      "auditId": "audit-014",
+      "debateNumber": "185",
+      "passA": "contrastive",
+      "passB": "contrastive",
+      "agreed": true
+    }
+  ],
+  "adjudicationContexts": [
+    {
+      "debateNumber": "154",
+      "packet": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/packets/pass-c/debate-154.json",
+      "schema": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/schemas/pass-c/debate-154.schema.json",
+      "output": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-c/debate-154.json",
+      "decisionCount": 3
+    },
+    {
+      "debateNumber": "185",
+      "packet": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/packets/pass-c/debate-185.json",
+      "schema": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/schemas/pass-c/debate-185.schema.json",
+      "output": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-c/debate-185.json",
+      "decisionCount": 1
+    }
+  ],
+  "modelBatchAuthorized": false,
+  "heldOutAccessAuthorized": false,
+  "numericalScoringAuthorized": false,
+  "assessmentProseAuthorized": false,
+  "productionMutationAuthorized": false
+}

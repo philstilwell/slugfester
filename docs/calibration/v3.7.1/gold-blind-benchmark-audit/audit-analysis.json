@@ -1,0 +1,539 @@
+{
+  "schemaVersion": "3.7.1-gold-blind-audit-analysis",
+  "analyzedAt": "2026-08-04T04:05:43.953Z",
+  "status": "benchmark-audit-fail",
+  "warning": "This AI-only calibration audit may correct a retired development key but does not establish human ground truth or production model readiness.",
+  "sources": {
+    "manifestSha256": "7ef3f4e281f6004e21c084d386eb232d8ef88a9493c1a3e8ba517019696558a5",
+    "initialExecutionSha256": "15ea9936406203dec5615cd8dd771f3fbc06afad031fa55f7889b03d76b1947c",
+    "disagreementSha256": "4d8d7bcfda231fab9a9007ce38d5f837016a7eca583e3453cf3a6b399c165d56",
+    "adjudicationExecutionSha256": "1d67617bdc0a68c3f84c9212a1ff09f3bdc0fc4ed4cdbf619d2e137f03a252be",
+    "sealedOptionMapSha256": "b4879bd853834ed7feaea56323001c8d0e200712fd0ba06cd5738402fba2a18a",
+    "adjudicationOptionMapSha256": "3342b4f569a017f1f5824c61509fb8f76f9ff0905a8214e2ffe206a22bfb4422"
+  },
+  "results": {
+    "initial": {
+      "assertions": 14,
+      "agreements": 10,
+      "disagreements": 4,
+      "adjudicationContexts": 2
+    },
+    "final": {
+      "fields": 14,
+      "resolved": 14,
+      "changedFromRetired": 6,
+      "retainedFromRetired": 8,
+      "decisions": [
+        {
+          "auditId": "audit-001",
+          "key": "target::v291-dev-62-04::example.classification",
+          "debateNumber": "62",
+          "family": "target",
+          "caseId": "v291-dev-62-04",
+          "fieldPath": "example.classification",
+          "retiredExpected": "none",
+          "votes": {
+            "passA": "inside-locked-target",
+            "passB": "inside-locked-target",
+            "passC": null
+          },
+          "resolved": true,
+          "finalValue": "inside-locked-target",
+          "supportingVotes": 2,
+          "changesRetiredExpected": true
+        },
+        {
+          "auditId": "audit-002",
+          "key": "target::v291-dev-62-09::components.pageau-folley-logos-meaning-resurrection-2026-target-09-c1.contactMode",
+          "debateNumber": "62",
+          "family": "target",
+          "caseId": "v291-dev-62-09",
+          "fieldPath": "components.pageau-folley-logos-meaning-resurrection-2026-target-09-c1.contactMode",
+          "retiredExpected": "exact-proposition",
+          "votes": {
+            "passA": "distinction",
+            "passB": "distinction",
+            "passC": null
+          },
+          "resolved": true,
+          "finalValue": "distinction",
+          "supportingVotes": 2,
+          "changesRetiredExpected": true
+        },
+        {
+          "auditId": "audit-003",
+          "key": "target::v291-dev-62-09::contrary.classification",
+          "debateNumber": "62",
+          "family": "target",
+          "caseId": "v291-dev-62-09",
+          "fieldPath": "contrary.classification",
+          "retiredExpected": "component-contact-precludes-contrary",
+          "votes": {
+            "passA": "component-contact-precludes-contrary",
+            "passB": "component-contact-precludes-contrary",
+            "passC": null
+          },
+          "resolved": true,
+          "finalValue": "component-contact-precludes-contrary",
+          "supportingVotes": 2,
+          "changesRetiredExpected": false
+        },
+        {
+          "auditId": "audit-004",
+          "key": "diagnostic::v291-dev-154-15::defect.type",
+          "debateNumber": "154",
+          "family": "diagnostic",
+          "caseId": "v291-dev-154-15",
+          "fieldPath": "defect.type",
+          "retiredExpected": "invalid-inference",
+          "votes": {
+            "passA": "attribution-error",
+            "passB": "invalid-inference",
+            "passC": "attribution-error"
+          },
+          "resolved": true,
+          "finalValue": "attribution-error",
+          "supportingVotes": 2,
+          "changesRetiredExpected": true
+        },
+        {
+          "auditId": "audit-005",
+          "key": "target::v291-dev-154-08::components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1.contactMode",
+          "debateNumber": "154",
+          "family": "target",
+          "caseId": "v291-dev-154-08",
+          "fieldPath": "components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1.contactMode",
+          "retiredExpected": "exact-proposition",
+          "votes": {
+            "passA": "none",
+            "passB": "none",
+            "passC": null
+          },
+          "resolved": true,
+          "finalValue": "none",
+          "supportingVotes": 2,
+          "changesRetiredExpected": true
+        },
+        {
+          "auditId": "audit-006",
+          "key": "target::v291-dev-154-08::components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2.contactMode",
+          "debateNumber": "154",
+          "family": "target",
+          "caseId": "v291-dev-154-08",
+          "fieldPath": "components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2.contactMode",
+          "retiredExpected": "exact-proposition",
+          "votes": {
+            "passA": "exact-proposition",
+            "passB": "none",
+            "passC": "exact-proposition"
+          },
+          "resolved": true,
+          "finalValue": "exact-proposition",
+          "supportingVotes": 2,
+          "changesRetiredExpected": false
+        },
+        {
+          "auditId": "audit-007",
+          "key": "target::v291-dev-154-08::contrary.classification",
+          "debateNumber": "154",
+          "family": "target",
+          "caseId": "v291-dev-154-08",
+          "fieldPath": "contrary.classification",
+          "retiredExpected": "component-contact-precludes-contrary",
+          "votes": {
+            "passA": "component-contact-precludes-contrary",
+            "passB": "relevant-no-component",
+            "passC": "component-contact-precludes-contrary"
+          },
+          "resolved": true,
+          "finalValue": "component-contact-precludes-contrary",
+          "supportingVotes": 2,
+          "changesRetiredExpected": false
+        },
+        {
+          "auditId": "audit-008",
+          "key": "burden::v291-dev-185-05::candidateSelection",
+          "debateNumber": "185",
+          "family": "burden",
+          "caseId": "v291-dev-185-05",
+          "fieldPath": "candidateSelection",
+          "retiredExpected": "candidate-2",
+          "votes": {
+            "passA": "candidate-2",
+            "passB": "candidate-2",
+            "passC": null
+          },
+          "resolved": true,
+          "finalValue": "candidate-2",
+          "supportingVotes": 2,
+          "changesRetiredExpected": false
+        },
+        {
+          "auditId": "audit-009",
+          "key": "diagnostic::v291-dev-185-12::consequence.relationKind",
+          "debateNumber": "185",
+          "family": "diagnostic",
+          "caseId": "v291-dev-185-12",
+          "fieldPath": "consequence.relationKind",
+          "retiredExpected": "explicit-negation",
+          "votes": {
+            "passA": "explicit-negation",
+            "passB": "explicit-negation",
+            "passC": null
+          },
+          "resolved": true,
+          "finalValue": "explicit-negation",
+          "supportingVotes": 2,
+          "changesRetiredExpected": false
+        },
+        {
+          "auditId": "audit-010",
+          "key": "diagnostic::v291-dev-185-12::defect.type",
+          "debateNumber": "185",
+          "family": "diagnostic",
+          "caseId": "v291-dev-185-12",
+          "fieldPath": "defect.type",
+          "retiredExpected": "irrelevance",
+          "votes": {
+            "passA": "scope-mismatch",
+            "passB": "scope-mismatch",
+            "passC": null
+          },
+          "resolved": true,
+          "finalValue": "scope-mismatch",
+          "supportingVotes": 2,
+          "changesRetiredExpected": true
+        },
+        {
+          "auditId": "audit-011",
+          "key": "reframe::v291-dev-185-08::malformedDemand.explained",
+          "debateNumber": "185",
+          "family": "reframe",
+          "caseId": "v291-dev-185-08",
+          "fieldPath": "malformedDemand.explained",
+          "retiredExpected": true,
+          "votes": {
+            "passA": true,
+            "passB": true,
+            "passC": null
+          },
+          "resolved": true,
+          "finalValue": true,
+          "supportingVotes": 2,
+          "changesRetiredExpected": false
+        },
+        {
+          "auditId": "audit-012",
+          "key": "reframe::v291-dev-185-08::relationKind",
+          "debateNumber": "185",
+          "family": "reframe",
+          "caseId": "v291-dev-185-08",
+          "fieldPath": "relationKind",
+          "retiredExpected": "contrastive",
+          "votes": {
+            "passA": "none",
+            "passB": "contrastive",
+            "passC": "contrastive"
+          },
+          "resolved": true,
+          "finalValue": "contrastive",
+          "supportingVotes": 2,
+          "changesRetiredExpected": false
+        },
+        {
+          "auditId": "audit-013",
+          "key": "reframe::v291-dev-185-08::replacementDemand.stated",
+          "debateNumber": "185",
+          "family": "reframe",
+          "caseId": "v291-dev-185-08",
+          "fieldPath": "replacementDemand.stated",
+          "retiredExpected": true,
+          "votes": {
+            "passA": true,
+            "passB": true,
+            "passC": null
+          },
+          "resolved": true,
+          "finalValue": true,
+          "supportingVotes": 2,
+          "changesRetiredExpected": false
+        },
+        {
+          "auditId": "audit-014",
+          "key": "reframe::v291-dev-185-12::relationKind",
+          "debateNumber": "185",
+          "family": "reframe",
+          "caseId": "v291-dev-185-12",
+          "fieldPath": "relationKind",
+          "retiredExpected": "because",
+          "votes": {
+            "passA": "contrastive",
+            "passB": "contrastive",
+            "passC": null
+          },
+          "resolved": true,
+          "finalValue": "contrastive",
+          "supportingVotes": 2,
+          "changesRetiredExpected": true
+        }
+      ]
+    },
+    "replayAgainstAuditedKey": {
+      "terra": {
+        "assertions": 45,
+        "matches": 35,
+        "targetMatches": 21,
+        "nonTargetMatches": 14,
+        "burdenMatches": 3,
+        "mismatches": [
+          {
+            "key": "target::v291-dev-62-04::example.classification",
+            "family": "target",
+            "caseId": "v291-dev-62-04",
+            "fieldPath": "example.classification",
+            "expected": "none",
+            "actual": "inside-locked-target",
+            "matched": false
+          },
+          {
+            "key": "target::v291-dev-154-08::components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1.contactMode",
+            "family": "target",
+            "caseId": "v291-dev-154-08",
+            "fieldPath": "components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1.contactMode",
+            "expected": "exact-proposition",
+            "actual": "none",
+            "matched": false
+          },
+          {
+            "key": "target::v291-dev-154-08::components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2.contactMode",
+            "family": "target",
+            "caseId": "v291-dev-154-08",
+            "fieldPath": "components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2.contactMode",
+            "expected": "exact-proposition",
+            "actual": "none",
+            "matched": false
+          },
+          {
+            "key": "target::v291-dev-154-08::contrary.classification",
+            "family": "target",
+            "caseId": "v291-dev-154-08",
+            "fieldPath": "contrary.classification",
+            "expected": "component-contact-precludes-contrary",
+            "actual": "relevant-no-component",
+            "matched": false
+          },
+          {
+            "key": "target::v291-dev-62-09::components.pageau-folley-logos-meaning-resurrection-2026-target-09-c1.contactMode",
+            "family": "target",
+            "caseId": "v291-dev-62-09",
+            "fieldPath": "components.pageau-folley-logos-meaning-resurrection-2026-target-09-c1.contactMode",
+            "expected": "exact-proposition",
+            "actual": "distinction",
+            "matched": false
+          },
+          {
+            "key": "diagnostic::v291-dev-185-12::defect.type",
+            "family": "diagnostic",
+            "caseId": "v291-dev-185-12",
+            "fieldPath": "defect.type",
+            "expected": "irrelevance",
+            "actual": "scope-mismatch",
+            "matched": false
+          },
+          {
+            "key": "diagnostic::v291-dev-185-12::consequence.relationKind",
+            "family": "diagnostic",
+            "caseId": "v291-dev-185-12",
+            "fieldPath": "consequence.relationKind",
+            "expected": "explicit-negation",
+            "actual": "because",
+            "matched": false
+          },
+          {
+            "key": "diagnostic::v291-dev-154-15::defect.type",
+            "family": "diagnostic",
+            "caseId": "v291-dev-154-15",
+            "fieldPath": "defect.type",
+            "expected": "invalid-inference",
+            "actual": "attribution-error",
+            "matched": false
+          },
+          {
+            "key": "reframe::v291-dev-185-12::relationKind",
+            "family": "reframe",
+            "caseId": "v291-dev-185-12",
+            "fieldPath": "relationKind",
+            "expected": "because",
+            "actual": "contrastive",
+            "matched": false
+          },
+          {
+            "key": "burden::v291-dev-185-05::candidateSelection",
+            "family": "burden",
+            "caseId": "v291-dev-185-05",
+            "fieldPath": "candidateSelection",
+            "expected": "candidate-2",
+            "actual": "candidate-1",
+            "matched": false
+          }
+        ]
+      },
+      "sol": {
+        "assertions": 45,
+        "matches": 32,
+        "targetMatches": 20,
+        "nonTargetMatches": 12,
+        "burdenMatches": 3,
+        "mismatches": [
+          {
+            "key": "target::v291-dev-62-04::example.classification",
+            "family": "target",
+            "caseId": "v291-dev-62-04",
+            "fieldPath": "example.classification",
+            "expected": "none",
+            "actual": "inside-locked-target",
+            "matched": false
+          },
+          {
+            "key": "target::v291-dev-154-08::components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1.contactMode",
+            "family": "target",
+            "caseId": "v291-dev-154-08",
+            "fieldPath": "components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1.contactMode",
+            "expected": "exact-proposition",
+            "actual": "none",
+            "matched": false
+          },
+          {
+            "key": "target::v291-dev-154-08::components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2.contactMode",
+            "family": "target",
+            "caseId": "v291-dev-154-08",
+            "fieldPath": "components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2.contactMode",
+            "expected": "exact-proposition",
+            "actual": "none",
+            "matched": false
+          },
+          {
+            "key": "target::v291-dev-154-08::contrary.classification",
+            "family": "target",
+            "caseId": "v291-dev-154-08",
+            "fieldPath": "contrary.classification",
+            "expected": "component-contact-precludes-contrary",
+            "actual": "relevant-no-component",
+            "matched": false
+          },
+          {
+            "key": "target::v291-dev-62-09::components.pageau-folley-logos-meaning-resurrection-2026-target-09-c1.contactMode",
+            "family": "target",
+            "caseId": "v291-dev-62-09",
+            "fieldPath": "components.pageau-folley-logos-meaning-resurrection-2026-target-09-c1.contactMode",
+            "expected": "exact-proposition",
+            "actual": "none",
+            "matched": false
+          },
+          {
+            "key": "target::v291-dev-62-09::contrary.classification",
+            "family": "target",
+            "caseId": "v291-dev-62-09",
+            "fieldPath": "contrary.classification",
+            "expected": "component-contact-precludes-contrary",
+            "actual": "none",
+            "matched": false
+          },
+          {
+            "key": "diagnostic::v291-dev-185-12::defect.type",
+            "family": "diagnostic",
+            "caseId": "v291-dev-185-12",
+            "fieldPath": "defect.type",
+            "expected": "irrelevance",
+            "actual": "scope-mismatch",
+            "matched": false
+          },
+          {
+            "key": "diagnostic::v291-dev-185-12::consequence.relationKind",
+            "family": "diagnostic",
+            "caseId": "v291-dev-185-12",
+            "fieldPath": "consequence.relationKind",
+            "expected": "explicit-negation",
+            "actual": "because",
+            "matched": false
+          },
+          {
+            "key": "reframe::v291-dev-185-12::relationKind",
+            "family": "reframe",
+            "caseId": "v291-dev-185-12",
+            "fieldPath": "relationKind",
+            "expected": "because",
+            "actual": "contrastive",
+            "matched": false
+          },
+          {
+            "key": "reframe::v291-dev-185-08::malformedDemand.explained",
+            "family": "reframe",
+            "caseId": "v291-dev-185-08",
+            "fieldPath": "malformedDemand.explained",
+            "expected": true,
+            "actual": false,
+            "matched": false
+          },
+          {
+            "key": "reframe::v291-dev-185-08::replacementDemand.stated",
+            "family": "reframe",
+            "caseId": "v291-dev-185-08",
+            "fieldPath": "replacementDemand.stated",
+            "expected": true,
+            "actual": false,
+            "matched": false
+          },
+          {
+            "key": "reframe::v291-dev-185-08::relationKind",
+            "family": "reframe",
+            "caseId": "v291-dev-185-08",
+            "fieldPath": "relationKind",
+            "expected": "contrastive",
+            "actual": "none",
+            "matched": false
+          },
+          {
+            "key": "burden::v291-dev-185-05::candidateSelection",
+            "family": "burden",
+            "caseId": "v291-dev-185-05",
+            "fieldPath": "candidateSelection",
+            "expected": "candidate-2",
+            "actual": "candidate-1",
+            "matched": false
+          }
+        ]
+      }
+    }
+  },
+  "gates": {
+    "structural": {
+      "initialContextsCompleted": true,
+      "initialContextsValid": true,
+      "adjudicationContextsValid": true,
+      "preInferenceSchemaRejections": true,
+      "modelOutputRetries": true,
+      "streamRecoveries": true,
+      "scoringFields": true,
+      "meteredApiCost": true,
+      "transcriptionCost": true
+    },
+    "semantic": {
+      "assertionCoverage": true,
+      "initialAgreement": false,
+      "twoVoteConsensus": true,
+      "unresolvedFields": true
+    }
+  },
+  "passed": false,
+  "decision": {
+    "correctedBenchmarkKeyAuthorized": false,
+    "freshRetiredSemanticComparisonPreregistrationAuthorized": false,
+    "currentTerraProductionSelectionAuthorized": false,
+    "currentSolProductionSelectionAuthorized": false,
+    "heldOutAccessAuthorized": false,
+    "numericalParticipantScoringAuthorized": false,
+    "assessmentProseAuthorized": false,
+    "productionMutationAuthorized": false
+  }
+}

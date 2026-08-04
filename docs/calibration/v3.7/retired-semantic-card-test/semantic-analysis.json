@@ -1,0 +1,367 @@
+{
+  "schemaVersion": "3.7-retired-semantic-analysis",
+  "analyzedAt": "2026-08-04T03:49:39.741Z",
+  "status": "retired-semantic-test-fail",
+  "warning": "Expected cards are retired gold-derived development fixtures, not infallible ground truth. They were opened only after all eight isolated model contexts closed.",
+  "sources": {
+    "manifestSha256": "c0038b5f673e4b0b8aee9f502bacc9385334c41b5a04f09146dddf43a7189d7c",
+    "executionSha256": "f6393bd14e48e9d809eb6544ef32ed4f6569aaad1791e560ceb82e16b4a3fff7",
+    "outputSha256": {
+      "terra": {
+        "target": "fc5f18e3f8736176e1ae7985df29bc40058c7172b621485fe7c2b6e3bcb2f0d9",
+        "diagnostic": "babfb5c518757bee371ec9443efdb0a58e1fca8a0650e09e53704f31a8c24fff",
+        "reframe": "4bd96dbdbf4ca9dc51fee1db346c2353899f00e2a7b402b21594652fab513d29",
+        "burden": "396e327012fe36a6259bc15718330021476034ed00b4c0ac45bcb5f5b1d1bd2d"
+      },
+      "sol": {
+        "target": "ad87d1c67f94cf6c1b33b458abc7d4e665645e33302fb009c91c588f1363a3f9",
+        "diagnostic": "06890cdbe16e957701d938c27a1b02f6cb09889f6078b9bb5d1cd937a8785a87",
+        "reframe": "137df04e02d7b8bd598b93752637840c2d9bd49560f424cf7550d8830cfc26d4",
+        "burden": "9824f414ee15cbf0aacc197ae2f63025304b07b8a8d41658f4946c87b115e91a"
+      }
+    }
+  },
+  "goldOpenedAfterAllOutputsClosed": true,
+  "evidenceBoundaryWordingScored": false,
+  "rationaleWordingScored": false,
+  "results": {
+    "modelResults": {
+      "terra": {
+        "model": "5.6 Terra",
+        "assertions": 45,
+        "matches": 35,
+        "matchRate": 0.7777777777777778,
+        "targetAssertions": 26,
+        "targetMatches": 21,
+        "nonTargetAssertions": 19,
+        "nonTargetMatches": 14,
+        "burdenAssertions": 4,
+        "burdenMatches": 3,
+        "familyMatches": {
+          "target": {
+            "assertions": 26,
+            "matches": 21
+          },
+          "diagnostic": {
+            "assertions": 9,
+            "matches": 6
+          },
+          "reframe": {
+            "assertions": 6,
+            "matches": 5
+          },
+          "burden": {
+            "assertions": 4,
+            "matches": 3
+          }
+        },
+        "mismatches": [
+          {
+            "family": "target",
+            "caseId": "v291-dev-62-04",
+            "fieldPath": "example.classification",
+            "expected": "none",
+            "actual": "inside-locked-target",
+            "matched": false
+          },
+          {
+            "family": "target",
+            "caseId": "v291-dev-154-08",
+            "fieldPath": "components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1.contactMode",
+            "expected": "exact-proposition",
+            "actual": "none",
+            "matched": false
+          },
+          {
+            "family": "target",
+            "caseId": "v291-dev-154-08",
+            "fieldPath": "components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2.contactMode",
+            "expected": "exact-proposition",
+            "actual": "none",
+            "matched": false
+          },
+          {
+            "family": "target",
+            "caseId": "v291-dev-154-08",
+            "fieldPath": "contrary.classification",
+            "expected": "component-contact-precludes-contrary",
+            "actual": "relevant-no-component",
+            "matched": false
+          },
+          {
+            "family": "target",
+            "caseId": "v291-dev-62-09",
+            "fieldPath": "components.pageau-folley-logos-meaning-resurrection-2026-target-09-c1.contactMode",
+            "expected": "exact-proposition",
+            "actual": "distinction",
+            "matched": false
+          },
+          {
+            "family": "diagnostic",
+            "caseId": "v291-dev-185-12",
+            "fieldPath": "defect.type",
+            "expected": "irrelevance",
+            "actual": "scope-mismatch",
+            "matched": false
+          },
+          {
+            "family": "diagnostic",
+            "caseId": "v291-dev-185-12",
+            "fieldPath": "consequence.relationKind",
+            "expected": "explicit-negation",
+            "actual": "because",
+            "matched": false
+          },
+          {
+            "family": "diagnostic",
+            "caseId": "v291-dev-154-15",
+            "fieldPath": "defect.type",
+            "expected": "invalid-inference",
+            "actual": "attribution-error",
+            "matched": false
+          },
+          {
+            "family": "reframe",
+            "caseId": "v291-dev-185-12",
+            "fieldPath": "relationKind",
+            "expected": "because",
+            "actual": "contrastive",
+            "matched": false
+          },
+          {
+            "family": "burden",
+            "caseId": "v291-dev-185-05",
+            "fieldPath": "candidateSelection",
+            "expected": "candidate-2",
+            "actual": "candidate-1",
+            "matched": false
+          }
+        ]
+      },
+      "sol": {
+        "model": "5.6 Sol",
+        "assertions": 45,
+        "matches": 32,
+        "matchRate": 0.7111111111111111,
+        "targetAssertions": 26,
+        "targetMatches": 20,
+        "nonTargetAssertions": 19,
+        "nonTargetMatches": 12,
+        "burdenAssertions": 4,
+        "burdenMatches": 3,
+        "familyMatches": {
+          "target": {
+            "assertions": 26,
+            "matches": 20
+          },
+          "diagnostic": {
+            "assertions": 9,
+            "matches": 7
+          },
+          "reframe": {
+            "assertions": 6,
+            "matches": 2
+          },
+          "burden": {
+            "assertions": 4,
+            "matches": 3
+          }
+        },
+        "mismatches": [
+          {
+            "family": "target",
+            "caseId": "v291-dev-62-04",
+            "fieldPath": "example.classification",
+            "expected": "none",
+            "actual": "inside-locked-target",
+            "matched": false
+          },
+          {
+            "family": "target",
+            "caseId": "v291-dev-154-08",
+            "fieldPath": "components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1.contactMode",
+            "expected": "exact-proposition",
+            "actual": "none",
+            "matched": false
+          },
+          {
+            "family": "target",
+            "caseId": "v291-dev-154-08",
+            "fieldPath": "components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2.contactMode",
+            "expected": "exact-proposition",
+            "actual": "none",
+            "matched": false
+          },
+          {
+            "family": "target",
+            "caseId": "v291-dev-154-08",
+            "fieldPath": "contrary.classification",
+            "expected": "component-contact-precludes-contrary",
+            "actual": "relevant-no-component",
+            "matched": false
+          },
+          {
+            "family": "target",
+            "caseId": "v291-dev-62-09",
+            "fieldPath": "components.pageau-folley-logos-meaning-resurrection-2026-target-09-c1.contactMode",
+            "expected": "exact-proposition",
+            "actual": "none",
+            "matched": false
+          },
+          {
+            "family": "target",
+            "caseId": "v291-dev-62-09",
+            "fieldPath": "contrary.classification",
+            "expected": "component-contact-precludes-contrary",
+            "actual": "none",
+            "matched": false
+          },
+          {
+            "family": "diagnostic",
+            "caseId": "v291-dev-185-12",
+            "fieldPath": "defect.type",
+            "expected": "irrelevance",
+            "actual": "scope-mismatch",
+            "matched": false
+          },
+          {
+            "family": "diagnostic",
+            "caseId": "v291-dev-185-12",
+            "fieldPath": "consequence.relationKind",
+            "expected": "explicit-negation",
+            "actual": "because",
+            "matched": false
+          },
+          {
+            "family": "reframe",
+            "caseId": "v291-dev-185-12",
+            "fieldPath": "relationKind",
+            "expected": "because",
+            "actual": "contrastive",
+            "matched": false
+          },
+          {
+            "family": "reframe",
+            "caseId": "v291-dev-185-08",
+            "fieldPath": "malformedDemand.explained",
+            "expected": true,
+            "actual": false,
+            "matched": false
+          },
+          {
+            "family": "reframe",
+            "caseId": "v291-dev-185-08",
+            "fieldPath": "replacementDemand.stated",
+            "expected": true,
+            "actual": false,
+            "matched": false
+          },
+          {
+            "family": "reframe",
+            "caseId": "v291-dev-185-08",
+            "fieldPath": "relationKind",
+            "expected": "contrastive",
+            "actual": "none",
+            "matched": false
+          },
+          {
+            "family": "burden",
+            "caseId": "v291-dev-185-05",
+            "fieldPath": "candidateSelection",
+            "expected": "candidate-2",
+            "actual": "candidate-1",
+            "matched": false
+          }
+        ]
+      }
+    },
+    "crossModel": {
+      "assertions": 45,
+      "agreements": 39,
+      "agreementRate": 0.8666666666666667,
+      "disagreements": [
+        {
+          "key": "diagnostic::v291-dev-154-15::defect.type",
+          "terra": "attribution-error",
+          "sol": "invalid-inference",
+          "agreed": false
+        },
+        {
+          "key": "reframe::v291-dev-185-08::malformedDemand.explained",
+          "terra": true,
+          "sol": false,
+          "agreed": false
+        },
+        {
+          "key": "reframe::v291-dev-185-08::relationKind",
+          "terra": "contrastive",
+          "sol": "none",
+          "agreed": false
+        },
+        {
+          "key": "reframe::v291-dev-185-08::replacementDemand.stated",
+          "terra": true,
+          "sol": false,
+          "agreed": false
+        },
+        {
+          "key": "target::v291-dev-62-09::components.pageau-folley-logos-meaning-resurrection-2026-target-09-c1.contactMode",
+          "terra": "distinction",
+          "sol": "none",
+          "agreed": false
+        },
+        {
+          "key": "target::v291-dev-62-09::contrary.classification",
+          "terra": "component-contact-precludes-contrary",
+          "sol": "none",
+          "agreed": false
+        }
+      ]
+    }
+  },
+  "gates": {
+    "structural": {
+      "contextsCompleted": true,
+      "validOutputContexts": false,
+      "preInferenceSchemaRejections": true,
+      "modelOutputRetries": true,
+      "sameRequestStreamRecoveries": true,
+      "scoringFields": true,
+      "meteredApiCost": true,
+      "transcriptionCost": true
+    },
+    "models": {
+      "terra": {
+        "assertionCoverage": true,
+        "overallMatches": false,
+        "targetMatches": false,
+        "nonTargetMatches": false,
+        "burdenMatches": false
+      },
+      "sol": {
+        "assertionCoverage": true,
+        "overallMatches": false,
+        "targetMatches": false,
+        "nonTargetMatches": false,
+        "burdenMatches": false
+      }
+    },
+    "comparison": {
+      "crossModelAssertionCoverage": true,
+      "crossModelAgreement": false,
+      "terraMatchDeficit": true
+    }
+  },
+  "passed": false,
+  "decision": {
+    "largerRetiredSemanticReplicationPreregistrationAuthorized": false,
+    "terraRoutineCardExtractionCandidate": false,
+    "solOnlyRetiredReplicationPreregistrationAuthorized": false,
+    "workflowCorrectionRequired": true,
+    "modelBatchAuthorized": false,
+    "heldOutAccessAuthorized": false,
+    "numericalScoringAuthorized": false,
+    "assessmentProseAuthorized": false,
+    "productionMutationAuthorized": false
+  }
+}

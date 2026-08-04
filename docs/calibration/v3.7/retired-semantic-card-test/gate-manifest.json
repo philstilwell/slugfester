@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "3.7-retired-semantic-test-manifest",
+  "gateId": "v3.7-retired-semantic-card-test",
+  "status": "frozen-before-model-execution",
+  "frozenAt": "2026-08-04T03:45:15.000Z",
+  "workflowVersion": "Slugfester Retired Semantic-Card Test Workflow v3.7",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.7",
+  "calibrationOnly": true,
+  "retiredGoldComparison": true,
+  "heldOutMaterialOpened": false,
+  "numericalScoringAuthorized": false,
+  "assessmentProseAuthorized": false,
+  "productionMutationAuthorized": false,
+  "models": {
+    "terra": {
+      "label": "5.6 Terra",
+      "slug": "gpt-5.6-terra",
+      "reasoningEffort": "high"
+    },
+    "sol": {
+      "label": "5.6 Sol",
+      "slug": "gpt-5.6-sol",
+      "reasoningEffort": "high"
+    }
+  },
+  "modelKeys": [
+    "terra",
+    "sol"
+  ],
+  "families": {
+    "target": {
+      "packet": "docs/calibration/v3.7/retired-semantic-card-test/packets/target.json",
+      "packetSha256": "f8b6ad4602962718268d02608dec68248965ec7e9cbcdf8073a4bd391897bf16",
+      "schema": "docs/calibration/v3.7/retired-semantic-card-test/schemas/target.schema.json",
+      "schemaSha256": "f94bcdbea92174badce00efb92c0abc85663c988686a9e06b9654c4a42b63c77",
+      "cardCount": 4,
+      "caseIds": [
+        "v291-dev-62-04",
+        "v291-dev-185-08",
+        "v291-dev-154-08",
+        "v291-dev-62-09"
+      ]
+    },
+    "diagnostic": {
+      "packet": "docs/calibration/v3.7/retired-semantic-card-test/packets/diagnostic.json",
+      "packetSha256": "0b407b658757e42819a964c45742de8303e16f21998a6d01b8dffa808b932109",
+      "schema": "docs/calibration/v3.7/retired-semantic-card-test/schemas/diagnostic.schema.json",
+      "schemaSha256": "4e729748037a65094d16216b305fe5706eab515d440f592367a00e9702bbd3da",
+      "cardCount": 3,
+      "caseIds": [
+        "v291-dev-185-07",
+        "v291-dev-185-12",
+        "v291-dev-154-15"
+      ]
+    },
+    "reframe": {
+      "packet": "docs/calibration/v3.7/retired-semantic-card-test/packets/reframe.json",
+      "packetSha256": "b1f2eb25724c7e0774f0650a4c52465b8e85b55b0c45c87832fa3b2484f06f88",
+      "schema": "docs/calibration/v3.7/retired-semantic-card-test/schemas/reframe.schema.json",
+      "schemaSha256": "c3db13980eb502a9196c04c357bd3ea6e519b8494e58ee84a9e17ee1623c68df",
+      "cardCount": 2,
+      "caseIds": [
+        "v291-dev-185-12",
+        "v291-dev-185-08"
+      ]
+    },
+    "burden": {
+      "packet": "docs/calibration/v3.7/retired-semantic-card-test/packets/burden.json",
+      "packetSha256": "3750b68878bc820941a950b30cf71c2acc9b115af66eec4548182fb409ad8e7c",
+      "schema": "docs/calibration/v3.7/retired-semantic-card-test/schemas/burden.schema.json",
+      "schemaSha256": "e65441ca4074f5bcbea9fd2965ec1493dc02771b94ad0e1c30439241674c1aaa",
+      "cardCount": 2,
+      "caseIds": [
+        "v291-dev-62-09",
+        "v291-dev-185-05"
+      ]
+    }
+  },
+  "sample": {
+    "debateCount": 3,
+    "familyPacketCount": 4,
+    "cardCount": 11,
+    "semanticAssertionCountPerModel": 45,
+    "targetAssertionCountPerModel": 26,
+    "nonTargetAssertionCountPerModel": 19,
+    "burdenAssertionCountPerModel": 4,
+    "includesMultiSpeakerRetiredCase": true,
+    "allSpeakerAttributionConfidenceHigh": true
+  },
+  "isolation": {
+    "oneContextPerModelFamily": true,
+    "otherModelOutputsUnavailable": true,
+    "expectedCardsUnavailableUntilAllOutputsClose": true,
+    "independentClaim": "isolated-cross-model-and-cross-family-contexts; not statistical independence"
+  },
+  "executionPolicy": {
+    "plannedContexts": 8,
+    "attemptsPerContext": 1,
+    "modelOutputRetriesMaximum": 0,
+    "preInferenceSchemaRejectionsMaximum": 0,
+    "sameRequestStreamRecoveriesMaximum": 0,
+    "APIKeysRemoved": true,
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "thresholds": {
+    "completedContexts": 8,
+    "validOutputContexts": 8,
+    "semanticMatchesOverallPerModelMinimum": 41,
+    "targetMatchesPerModelMinimum": 23,
+    "nonTargetMatchesPerModelMinimum": 18,
+    "burdenMatchesPerModelMinimum": 4,
+    "crossModelAgreementMinimum": 41,
+    "terraMaximumMatchDeficitFromSol": 2,
+    "scoringFieldsMaximum": 0
+  },
+  "priorV363": {
+    "manifestPath": "docs/calibration/v3.6.3/schema-smoke-correction/gate-manifest.json",
+    "manifestSha256": "1ff92f95fe512b26ee5d7a68cf3e501cbe2122b7c9eddabe9717ebdf0aab6d53",
+    "analysisPath": "docs/calibration/v3.6.3/schema-smoke-correction/smoke-analysis.json",
+    "analysisSha256": "89be624ef0bfbfbb279c8fef3840408145416ea23c3a7721212bd3113bb273ea",
+    "outcome": "structural-correction-pass"
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.7.md": "54b905b1eb74b0b714939c4d8d95fe492605f0138642ee9ec9b51e4048139426",
+    "docs/reassessment-rubric-v3.7.md": "4eb228fa769cdd7a92837c8e0b5101cac4227704bcf75fd8370795dc2dbdb08e",
+    "docs/calibration/v3.7/retired-semantic-card-test/test-manual.md": "d0df05ef75c195f6fa6ddb830430ad6a1445cd6488cd65fdf60f9f91e29eef39",
+    "docs/calibration/v3.7/retired-semantic-card-test/packets/target.json": "f8b6ad4602962718268d02608dec68248965ec7e9cbcdf8073a4bd391897bf16",
+    "docs/calibration/v3.7/retired-semantic-card-test/schemas/target.schema.json": "f94bcdbea92174badce00efb92c0abc85663c988686a9e06b9654c4a42b63c77",
+    "docs/calibration/v3.7/retired-semantic-card-test/packets/diagnostic.json": "0b407b658757e42819a964c45742de8303e16f21998a6d01b8dffa808b932109",
+    "docs/calibration/v3.7/retired-semantic-card-test/schemas/diagnostic.schema.json": "4e729748037a65094d16216b305fe5706eab515d440f592367a00e9702bbd3da",
+    "docs/calibration/v3.7/retired-semantic-card-test/packets/reframe.json": "b1f2eb25724c7e0774f0650a4c52465b8e85b55b0c45c87832fa3b2484f06f88",
+    "docs/calibration/v3.7/retired-semantic-card-test/schemas/reframe.schema.json": "c3db13980eb502a9196c04c357bd3ea6e519b8494e58ee84a9e17ee1623c68df",
+    "docs/calibration/v3.7/retired-semantic-card-test/packets/burden.json": "3750b68878bc820941a950b30cf71c2acc9b115af66eec4548182fb409ad8e7c",
+    "docs/calibration/v3.7/retired-semantic-card-test/schemas/burden.schema.json": "e65441ca4074f5bcbea9fd2965ec1493dc02771b94ad0e1c30439241674c1aaa",
+    "docs/calibration/v3.2/retired-three-debate-test/inputs/pageau-folley-logos-meaning-resurrection-2026.json": "5fb16c0f52dd15dd1d071a113a74f4f26291c3bf6038efd50cb98804ef711af9",
+    "docs/calibration/v3.2/retired-three-debate-test/inputs/dennett-caruso-free-will-responsibility-2021.json": "6d8bc54534869c9cdf4459b2f0c838bdc901d67750067edd8d47176148f89486",
+    "docs/calibration/v3.2/retired-three-debate-test/inputs/koukl-oconnor-kanojia-nonbelief-harm-2025.json": "645b4b097e94e817dad25ce27866cda5d37f8f943342ec776924d18f6593f9b7",
+    "docs/calibration/v3.6.1/decision-card-development/retired-fixtures.json": "40a0914dcec88a5ade7174a947c9a8da91cfbac8c0b8537b62a24304ac766dd2",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v37-retired-semantic.mjs": "2fe113760e4b2bb97104025d39755d8ceeeecded89fbaea683cc5c9cce188296",
+    "scripts/build-v37-retired-semantic-packets.mjs": "6d961c1d7085ad27ee3fd18f9c6a337e48132bfb68458c4f5cd904d4f285ad9b",
+    "scripts/test-v37-retired-semantic-packets.mjs": "a4a32e7367c4d9d9b830234718d9bed561a9d4acc2ab9f1b1836acba29a7b82d",
+    "scripts/validate-v37-family-output.mjs": "28343427f6690ad582a37e159e758a106ee1eb50f8b23d85af045d07a9192a8e",
+    "scripts/preregister-v37-retired-semantic-test.mjs": "6a3c1bbd49e0e880c94360279812633443bf0261399a489b1fec8d417f7f1634",
+    "scripts/run-v37-retired-semantic-test.mjs": "3483d3a75b97127b5fd7218c6889cf79a84e50f75b05807fcb98b5c1219b1994",
+    "scripts/analyze-v37-retired-semantic-test.mjs": "649d876ac263cb017c0f75f67bee17cfe2a91daee40f624433ae66411ef5c839",
+    "scripts/validate-v37-retired-semantic-test.mjs": "83e51062a0a6f4ec749c1ab272c51be6885d0e229fe46fcd17a9c418d8f141d4"
+  },
+  "dryFixture": {
+    "path": "docs/calibration/v3.7/retired-semantic-card-test/dry-fixture.json",
+    "sha256": "5b5fa16126b8bc63f6c45b3dda34e34d9cf165493573e97839081252af598fef"
+  },
+  "outputs": {
+    "target": {
+      "terra": "docs/calibration/v3.7/retired-semantic-card-test/outputs/target/terra.json",
+      "sol": "docs/calibration/v3.7/retired-semantic-card-test/outputs/target/sol.json"
+    },
+    "diagnostic": {
+      "terra": "docs/calibration/v3.7/retired-semantic-card-test/outputs/diagnostic/terra.json",
+      "sol": "docs/calibration/v3.7/retired-semantic-card-test/outputs/diagnostic/sol.json"
+    },
+    "reframe": {
+      "terra": "docs/calibration/v3.7/retired-semantic-card-test/outputs/reframe/terra.json",
+      "sol": "docs/calibration/v3.7/retired-semantic-card-test/outputs/reframe/sol.json"
+    },
+    "burden": {
+      "terra": "docs/calibration/v3.7/retired-semantic-card-test/outputs/burden/terra.json",
+      "sol": "docs/calibration/v3.7/retired-semantic-card-test/outputs/burden/sol.json"
+    }
+  },
+  "executionResultPath": "docs/calibration/v3.7/retired-semantic-card-test/model-execution.json",
+  "analysisPath": "docs/calibration/v3.7/retired-semantic-card-test/semantic-analysis.json"
+}

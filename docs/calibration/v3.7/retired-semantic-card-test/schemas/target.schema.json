@@ -1,0 +1,310 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v3.7-target-batch",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "family",
+    "cards"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.7-family-card-batch"
+    },
+    "family": {
+      "type": "string",
+      "const": "target"
+    },
+    "cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "schemaVersion",
+          "family",
+          "caseId",
+          "moveId",
+          "directTarget",
+          "components",
+          "example",
+          "scope",
+          "contrary",
+          "rationale"
+        ],
+        "properties": {
+          "schemaVersion": {
+            "type": "string",
+            "const": "3.6-decision-card"
+          },
+          "family": {
+            "type": "string",
+            "const": "target-component-example"
+          },
+          "caseId": {
+            "type": "string"
+          },
+          "moveId": {
+            "type": "string"
+          },
+          "directTarget": {
+            "anyOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "contact",
+                  "evidenceText"
+                ],
+                "properties": {
+                  "contact": {
+                    "type": "boolean",
+                    "const": false
+                  },
+                  "evidenceText": {
+                    "type": "null"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "contact",
+                  "evidenceText"
+                ],
+                "properties": {
+                  "contact": {
+                    "type": "boolean",
+                    "const": true
+                  },
+                  "evidenceText": {
+                    "type": "string"
+                  }
+                }
+              }
+            ]
+          },
+          "components": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "componentId",
+                    "contactMode",
+                    "evidenceText",
+                    "licenseText"
+                  ],
+                  "properties": {
+                    "componentId": {
+                      "type": "string"
+                    },
+                    "contactMode": {
+                      "type": "string",
+                      "const": "none"
+                    },
+                    "evidenceText": {
+                      "type": "null"
+                    },
+                    "licenseText": {
+                      "type": "null"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "componentId",
+                    "contactMode",
+                    "evidenceText",
+                    "licenseText"
+                  ],
+                  "properties": {
+                    "componentId": {
+                      "type": "string"
+                    },
+                    "contactMode": {
+                      "type": "string",
+                      "const": "explicit-global-assent"
+                    },
+                    "evidenceText": {
+                      "type": "string"
+                    },
+                    "licenseText": {
+                      "type": "string"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "componentId",
+                    "contactMode",
+                    "evidenceText",
+                    "licenseText"
+                  ],
+                  "properties": {
+                    "componentId": {
+                      "type": "string"
+                    },
+                    "contactMode": {
+                      "type": "string",
+                      "enum": [
+                        "exact-proposition",
+                        "denial",
+                        "restriction",
+                        "distinction",
+                        "explanation",
+                        "warrant-challenge"
+                      ]
+                    },
+                    "evidenceText": {
+                      "type": "string"
+                    },
+                    "licenseText": {
+                      "type": "null"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "example": {
+            "anyOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "classification",
+                  "evidenceText"
+                ],
+                "properties": {
+                  "classification": {
+                    "type": "string",
+                    "const": "none"
+                  },
+                  "evidenceText": {
+                    "type": "null"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "classification",
+                  "evidenceText"
+                ],
+                "properties": {
+                  "classification": {
+                    "type": "string",
+                    "enum": [
+                      "inside-locked-target",
+                      "distinct-connected-example"
+                    ]
+                  },
+                  "evidenceText": {
+                    "type": "string"
+                  }
+                }
+              }
+            ]
+          },
+          "scope": {
+            "anyOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "relation",
+                  "evidenceText"
+                ],
+                "properties": {
+                  "relation": {
+                    "type": "string",
+                    "const": "same"
+                  },
+                  "evidenceText": {
+                    "type": "null"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "relation",
+                  "evidenceText"
+                ],
+                "properties": {
+                  "relation": {
+                    "type": "string",
+                    "enum": [
+                      "narrowed",
+                      "strengthened",
+                      "modality-shift"
+                    ]
+                  },
+                  "evidenceText": {
+                    "type": "string"
+                  }
+                }
+              }
+            ]
+          },
+          "contrary": {
+            "anyOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "classification",
+                  "evidenceText"
+                ],
+                "properties": {
+                  "classification": {
+                    "type": "string",
+                    "enum": [
+                      "none",
+                      "component-contact-precludes-contrary"
+                    ]
+                  },
+                  "evidenceText": {
+                    "type": "null"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "classification",
+                  "evidenceText"
+                ],
+                "properties": {
+                  "classification": {
+                    "type": "string",
+                    "const": "relevant-no-component"
+                  },
+                  "evidenceText": {
+                    "type": "string"
+                  }
+                }
+              }
+            ]
+          },
+          "rationale": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

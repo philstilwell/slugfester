@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v3.7-diagnostic-batch",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "family",
+    "cards"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.7-family-card-batch"
+    },
+    "family": {
+      "type": "string",
+      "const": "diagnostic"
+    },
+    "cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "schemaVersion",
+          "family",
+          "caseId",
+          "moveId",
+          "defect",
+          "consequence",
+          "rationale"
+        ],
+        "properties": {
+          "schemaVersion": {
+            "type": "string",
+            "const": "3.6-decision-card"
+          },
+          "family": {
+            "type": "string",
+            "const": "diagnostic"
+          },
+          "caseId": {
+            "type": "string"
+          },
+          "moveId": {
+            "type": "string"
+          },
+          "defect": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "cueText",
+              "type"
+            ],
+            "properties": {
+              "cueText": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "attribution-error",
+                  "contradiction",
+                  "ambiguity",
+                  "scope-mismatch",
+                  "unsupported-comparison",
+                  "missing-premise",
+                  "invalid-inference",
+                  "evidential-insufficiency",
+                  "irrelevance"
+                ]
+              }
+            }
+          },
+          "consequence": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "cueText",
+              "linkCueText",
+              "relationText",
+              "relationKind"
+            ],
+            "properties": {
+              "cueText": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "linkCueText": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "relationText": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "relationKind": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "because",
+                  "therefore",
+                  "contrastive",
+                  "explicit-negation",
+                  "scope-limitation"
+                ]
+              }
+            }
+          },
+          "rationale": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

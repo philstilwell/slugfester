@@ -1,0 +1,535 @@
+{
+  "schemaVersion": "3.7-retired-gold-audit-disagreements",
+  "createdAt": "2026-08-04T03:49:39.741Z",
+  "status": "deterministic-extraction-complete",
+  "scope": {
+    "calibrationOnly": true,
+    "retiredGoldIsProvisional": true,
+    "modelIdentitiesMustBeBlindedAndCandidatesCounterbalancedBeforeAnyAuditInference": true,
+    "noGoldChangesAuthorizedByThisArtifact": true,
+    "modelBatchAuthorized": false,
+    "heldOutAccessAuthorized": false,
+    "numericalScoringAuthorized": false,
+    "assessmentProseAuthorized": false,
+    "productionMutationAuthorized": false
+  },
+  "sources": {
+    "manifestPath": "docs/calibration/v3.7/retired-semantic-card-test/gate-manifest.json",
+    "manifestSha256": "c0038b5f673e4b0b8aee9f502bacc9385334c41b5a04f09146dddf43a7189d7c",
+    "analysisPath": "docs/calibration/v3.7/retired-semantic-card-test/semantic-analysis.json",
+    "analysisSha256": "7d8ced1abbe56388a60469a69994316ac3700b1178d461bcee7014e0ebb6d1aa",
+    "executionPath": "docs/calibration/v3.7/retired-semantic-card-test/model-execution.json",
+    "executionSha256": "f6393bd14e48e9d809eb6544ef32ed4f6569aaad1791e560ceb82e16b4a3fff7"
+  },
+  "counts": {
+    "consensusAgainstRetiredGold": 8,
+    "crossModelDisagreements": 6,
+    "totalDisputedFields": 14,
+    "structuralFailures": 1
+  },
+  "consensusAgainstRetiredGold": [
+    {
+      "key": "burden::v291-dev-185-05::candidateSelection",
+      "family": "burden",
+      "caseId": "v291-dev-185-05",
+      "fieldPath": "candidateSelection",
+      "retiredExpected": "candidate-2",
+      "terra": "candidate-1",
+      "sol": "candidate-1",
+      "sourceCase": {
+        "family": "burden",
+        "caseId": "v291-dev-185-05",
+        "moveId": "m05-pro-q1-responsive-free-will-worth-wanting",
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "debateNumber": "185",
+        "lane": "dyadic",
+        "speakerAttributionConfidence": "high",
+        "sourceExcerpt": "and it matters for the reasons that greg sort of started out with namely we want to know about responsibility and whether whether we deserve blame and praise and so forth and as long as you stick to that as long as you stick to the fact that that's the kind of free will that matters then first of all libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you",
+        "lockedTarget": "Factors beyond agents' control eliminate moral responsibility in the basic-desert sense.",
+        "components": [
+          {
+            "componentId": "t05-c1-beyond-control",
+            "text": "Who agents are and what they do ultimately result from factors beyond their control."
+          },
+          {
+            "componentId": "t05-c2-no-basic-desert",
+            "text": "That beyond-control condition entails that agents are never morally responsible in the basic-desert sense."
+          }
+        ],
+        "fieldPath": "burdenContact",
+        "burdenContext": {
+          "burdenPacket": {
+            "primaryRouteId": "con-skeptical-sourcehood-route",
+            "eligibleBridgeIds": [
+              "con-central-sourcehood",
+              "con-motion-no-basic-desert"
+            ],
+            "selectionRationale": "The response primarily contests the skeptical route by separating responsibility-conferring freedom from libertarian freedom."
+          },
+          "route": {
+            "id": "con-skeptical-sourcehood-route",
+            "side": "con",
+            "description": "Show that luck and factors beyond the agent's control defeat the sourcehood needed for basic-desert responsibility while leaving forward-looking responses available.",
+            "successCriteria": "The route succeeds if agents are shown not to be appropriate sources for basic desert and safety, rehabilitation, or rule enforcement can replace retributive blame and punishment.",
+            "bridges": [
+              {
+                "id": "con-motion-no-basic-desert",
+                "tier": "motion",
+                "description": "Basic-desert moral responsibility and retributive blame or punishment are unwarranted, even if independently justified forward-looking responses remain."
+              },
+              {
+                "id": "con-central-sourcehood",
+                "tier": "central",
+                "description": "Who agents are and what they do result from luck or factors beyond their control, so they lack the appropriate sourcehood for basic desert."
+              },
+              {
+                "id": "con-subsidiary-alternatives",
+                "tier": "subsidiary",
+                "description": "Reasons-responsive distinctions, sanctions, safety restrictions, rehabilitation, and rule enforcement can be retained on non-desert forward-looking grounds."
+              },
+              {
+                "id": "con-subsidiary-indeterminacy",
+                "tier": "subsidiary",
+                "description": "Adding physical indeterminacy does not let the agent settle which outcome occurs and therefore cannot rescue basic-desert control."
+              }
+            ]
+          }
+        },
+        "candidate1": {
+          "candidateId": "candidate-1",
+          "semanticValue": {
+            "tier": "central",
+            "bridgeId": "con-central-sourcehood"
+          }
+        },
+        "candidate2": {
+          "candidateId": "candidate-2",
+          "semanticValue": {
+            "tier": "motion",
+            "bridgeId": "con-motion-no-basic-desert"
+          }
+        }
+      }
+    },
+    {
+      "key": "diagnostic::v291-dev-185-12::consequence.relationKind",
+      "family": "diagnostic",
+      "caseId": "v291-dev-185-12",
+      "fieldPath": "consequence.relationKind",
+      "retiredExpected": "explicit-negation",
+      "terra": "because",
+      "sol": "because",
+      "sourceCase": {
+        "family": "diagnostic",
+        "caseId": "v291-dev-185-12",
+        "moveId": "m12-con-q4-responsive-rules-versus-reactive-attitudes",
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "debateNumber": "185",
+        "lane": "dyadic",
+        "speakerAttributionConfidence": "high",
+        "sourceExcerpt": "the question i you know that i still think is the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified because those are the ones that are philosophically significant right do i want to attach to my parenting when i when i punish my daughter by taking her cell phone away do i want or am i justified in exhibiting resentment or indignation or moral anger",
+        "lockedTarget": "Agreed blame and punishment for rule violations are a determination-independent cornerstone of a secure society.",
+        "components": [
+          {
+            "componentId": "t12-c1-agreed-penalties",
+            "text": "Membership entails agreement to blame and punishment when the governing principles are violated."
+          },
+          {
+            "componentId": "t12-c2-social-cornerstone",
+            "text": "Those penalties are a bedrock condition of free and secure society regardless of luck or determinism."
+          }
+        ]
+      }
+    },
+    {
+      "key": "diagnostic::v291-dev-185-12::defect.type",
+      "family": "diagnostic",
+      "caseId": "v291-dev-185-12",
+      "fieldPath": "defect.type",
+      "retiredExpected": "irrelevance",
+      "terra": "scope-mismatch",
+      "sol": "scope-mismatch",
+      "sourceCase": {
+        "family": "diagnostic",
+        "caseId": "v291-dev-185-12",
+        "moveId": "m12-con-q4-responsive-rules-versus-reactive-attitudes",
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "debateNumber": "185",
+        "lane": "dyadic",
+        "speakerAttributionConfidence": "high",
+        "sourceExcerpt": "the question i you know that i still think is the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified because those are the ones that are philosophically significant right do i want to attach to my parenting when i when i punish my daughter by taking her cell phone away do i want or am i justified in exhibiting resentment or indignation or moral anger",
+        "lockedTarget": "Agreed blame and punishment for rule violations are a determination-independent cornerstone of a secure society.",
+        "components": [
+          {
+            "componentId": "t12-c1-agreed-penalties",
+            "text": "Membership entails agreement to blame and punishment when the governing principles are violated."
+          },
+          {
+            "componentId": "t12-c2-social-cornerstone",
+            "text": "Those penalties are a bedrock condition of free and secure society regardless of luck or determinism."
+          }
+        ]
+      }
+    },
+    {
+      "key": "reframe::v291-dev-185-12::relationKind",
+      "family": "reframe",
+      "caseId": "v291-dev-185-12",
+      "fieldPath": "relationKind",
+      "retiredExpected": "because",
+      "terra": "contrastive",
+      "sol": "contrastive",
+      "sourceCase": {
+        "family": "reframe",
+        "caseId": "v291-dev-185-12",
+        "moveId": "m12-con-q4-responsive-rules-versus-reactive-attitudes",
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "debateNumber": "185",
+        "lane": "dyadic",
+        "speakerAttributionConfidence": "high",
+        "sourceExcerpt": "the question i you know that i still think is the more philosophically relevant question is not whether or not those practices would be justified but the question about whether certain types of reactive attitudes would be justified because those are the ones that are philosophically significant right do i want to attach to my parenting when i when i punish my daughter by taking her cell phone away do i want or am i justified in exhibiting resentment or indignation or moral anger",
+        "lockedTarget": "Agreed blame and punishment for rule violations are a determination-independent cornerstone of a secure society.",
+        "components": [
+          {
+            "componentId": "t12-c1-agreed-penalties",
+            "text": "Membership entails agreement to blame and punishment when the governing principles are violated."
+          },
+          {
+            "componentId": "t12-c2-social-cornerstone",
+            "text": "Those penalties are a bedrock condition of free and secure society regardless of luck or determinism."
+          }
+        ],
+        "governingDemand": "Agreed blame and punishment for rule violations are a determination-independent cornerstone of a secure society."
+      }
+    },
+    {
+      "key": "target::v291-dev-154-08::components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1.contactMode",
+      "family": "target",
+      "caseId": "v291-dev-154-08",
+      "fieldPath": "components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1.contactMode",
+      "retiredExpected": "exact-proposition",
+      "terra": "none",
+      "sol": "none",
+      "sourceCase": {
+        "family": "target",
+        "caseId": "v291-dev-154-08",
+        "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-08",
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "debateNumber": "154",
+        "lane": "multi-speaker",
+        "speakerAttributionConfidence": "high",
+        "sourceExcerpt": ">> there are people who do the opposite there. There are people who do the opposite there. Yeah, there's people that would have gone the other way and they'll be in the comment section right now saying, \"Well, I went from Christianity to Islam.\"",
+        "lockedTarget": "Former Muslims known to Koukl found greater satisfaction, fullness, and connection with God after converting to Christianity.",
+        "components": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1",
+            "text": "Former devout Muslims known to Koukl report greater satisfaction and connection with God as Christians than they had in Islam."
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2",
+            "text": "Those changed lives count against treating religious satisfaction as interchangeable across religions."
+          }
+        ]
+      }
+    },
+    {
+      "key": "target::v291-dev-154-08::components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2.contactMode",
+      "family": "target",
+      "caseId": "v291-dev-154-08",
+      "fieldPath": "components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2.contactMode",
+      "retiredExpected": "exact-proposition",
+      "terra": "none",
+      "sol": "none",
+      "sourceCase": {
+        "family": "target",
+        "caseId": "v291-dev-154-08",
+        "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-08",
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "debateNumber": "154",
+        "lane": "multi-speaker",
+        "speakerAttributionConfidence": "high",
+        "sourceExcerpt": ">> there are people who do the opposite there. There are people who do the opposite there. Yeah, there's people that would have gone the other way and they'll be in the comment section right now saying, \"Well, I went from Christianity to Islam.\"",
+        "lockedTarget": "Former Muslims known to Koukl found greater satisfaction, fullness, and connection with God after converting to Christianity.",
+        "components": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1",
+            "text": "Former devout Muslims known to Koukl report greater satisfaction and connection with God as Christians than they had in Islam."
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2",
+            "text": "Those changed lives count against treating religious satisfaction as interchangeable across religions."
+          }
+        ]
+      }
+    },
+    {
+      "key": "target::v291-dev-154-08::contrary.classification",
+      "family": "target",
+      "caseId": "v291-dev-154-08",
+      "fieldPath": "contrary.classification",
+      "retiredExpected": "component-contact-precludes-contrary",
+      "terra": "relevant-no-component",
+      "sol": "relevant-no-component",
+      "sourceCase": {
+        "family": "target",
+        "caseId": "v291-dev-154-08",
+        "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-08",
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "debateNumber": "154",
+        "lane": "multi-speaker",
+        "speakerAttributionConfidence": "high",
+        "sourceExcerpt": ">> there are people who do the opposite there. There are people who do the opposite there. Yeah, there's people that would have gone the other way and they'll be in the comment section right now saying, \"Well, I went from Christianity to Islam.\"",
+        "lockedTarget": "Former Muslims known to Koukl found greater satisfaction, fullness, and connection with God after converting to Christianity.",
+        "components": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1",
+            "text": "Former devout Muslims known to Koukl report greater satisfaction and connection with God as Christians than they had in Islam."
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2",
+            "text": "Those changed lives count against treating religious satisfaction as interchangeable across religions."
+          }
+        ]
+      }
+    },
+    {
+      "key": "target::v291-dev-62-04::example.classification",
+      "family": "target",
+      "caseId": "v291-dev-62-04",
+      "fieldPath": "example.classification",
+      "retiredExpected": "none",
+      "terra": "inside-locked-target",
+      "sol": "inside-locked-target",
+      "sourceCase": {
+        "family": "target",
+        "caseId": "v291-dev-62-04",
+        "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-04",
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "debateNumber": "62",
+        "lane": "dyadic",
+        "speakerAttributionConfidence": "high",
+        "sourceExcerpt": ">> I think so. I think that um yeah I think I think especially with with people that's a very good example right because es and I think that that's one that I think fits quite nicely within my worldview as well. You know we are all currently you know submitting to a certain idea of what we're going to do.",
+        "lockedTarget": "People enact unity toward a purpose and elect a mayor who constrains them, so calling higher ontological realities merely emergent is insufficient.",
+        "components": [
+          {
+            "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-04-c1",
+            "text": "People enact a form of unity by binding toward a purpose and electing a mayor."
+          },
+          {
+            "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-04-c2",
+            "text": "The mayor enforces law on the people and thereby constrains downward on the parts."
+          },
+          {
+            "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-04-c3",
+            "text": "Higher ontological realities can constrain the realities beneath them."
+          },
+          {
+            "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-04-c4",
+            "text": "Calling the higher reality merely emergent is insufficient to explain that downward constraint."
+          }
+        ]
+      }
+    }
+  ],
+  "crossModelDisagreements": [
+    {
+      "key": "diagnostic::v291-dev-154-15::defect.type",
+      "family": "diagnostic",
+      "caseId": "v291-dev-154-15",
+      "fieldPath": "defect.type",
+      "retiredExpected": "invalid-inference",
+      "terra": "attribution-error",
+      "sol": "invalid-inference",
+      "sourceCase": {
+        "family": "diagnostic",
+        "caseId": "v291-dev-154-15",
+        "moveId": "koukl-oconnor-kanojia-nonbelief-harm-2025-move-15",
+        "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+        "debateNumber": "154",
+        "lane": "multi-speaker",
+        "speakerAttributionConfidence": "high",
+        "sourceExcerpt": ">> All that means is that the fall does not explain the proclivity to sin because Eve already had it. It does not explain the existence of evil because knowledge of that already existed before she committed the fall. It also doesn't explain the origin of suffering because of course Eve's punishment for eating from the tree of the knowledge of good and evil.",
+        "lockedTarget": "Eve already possessed moral categories through the image of God, understood the command, and freely disobeyed it, thereby creating the fall's consequences.",
+        "components": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c1",
+            "text": "Eve possessed moral categories and could understand God's command before eating from the tree."
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c2",
+            "text": "She knew she ought not disobey but freely chose to do so."
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c3",
+            "text": "That act of disobedience produced the fall's consequences."
+          }
+        ]
+      }
+    },
+    {
+      "key": "reframe::v291-dev-185-08::malformedDemand.explained",
+      "family": "reframe",
+      "caseId": "v291-dev-185-08",
+      "fieldPath": "malformedDemand.explained",
+      "retiredExpected": true,
+      "terra": true,
+      "sol": false,
+      "sourceCase": {
+        "family": "reframe",
+        "caseId": "v291-dev-185-08",
+        "moveId": "m08-con-q2-responsive-control-insufficient",
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "debateNumber": "185",
+        "lane": "dyadic",
+        "speakerAttributionConfidence": "high",
+        "sourceExcerpt": "all the kind of compatibilist distinctions that have been made over the last 20 to 50 years um the question is not the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating um and i do think those those those distinctions matter they matter in all kinds of important ways but they matter for different reasons",
+        "lockedTarget": "Relevant alternative ability consists in self-control, absence of disabling interference, and action for reasons.",
+        "components": [
+          {
+            "componentId": "t08-c1-degrees-control",
+            "text": "Degrees of freedom and self-control support the relevant sense in which an agent could have done otherwise."
+          },
+          {
+            "componentId": "t08-c2-well-functioning-reasons",
+            "text": "A well-functioning agent is not tied up, damaged, or misinformed and acts on the basis of reasons."
+          }
+        ],
+        "governingDemand": "Relevant alternative ability consists in self-control, absence of disabling interference, and action for reasons."
+      }
+    },
+    {
+      "key": "reframe::v291-dev-185-08::relationKind",
+      "family": "reframe",
+      "caseId": "v291-dev-185-08",
+      "fieldPath": "relationKind",
+      "retiredExpected": "contrastive",
+      "terra": "contrastive",
+      "sol": "none",
+      "sourceCase": {
+        "family": "reframe",
+        "caseId": "v291-dev-185-08",
+        "moveId": "m08-con-q2-responsive-control-insufficient",
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "debateNumber": "185",
+        "lane": "dyadic",
+        "speakerAttributionConfidence": "high",
+        "sourceExcerpt": "all the kind of compatibilist distinctions that have been made over the last 20 to 50 years um the question is not the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating um and i do think those those those distinctions matter they matter in all kinds of important ways but they matter for different reasons",
+        "lockedTarget": "Relevant alternative ability consists in self-control, absence of disabling interference, and action for reasons.",
+        "components": [
+          {
+            "componentId": "t08-c1-degrees-control",
+            "text": "Degrees of freedom and self-control support the relevant sense in which an agent could have done otherwise."
+          },
+          {
+            "componentId": "t08-c2-well-functioning-reasons",
+            "text": "A well-functioning agent is not tied up, damaged, or misinformed and acts on the basis of reasons."
+          }
+        ],
+        "governingDemand": "Relevant alternative ability consists in self-control, absence of disabling interference, and action for reasons."
+      }
+    },
+    {
+      "key": "reframe::v291-dev-185-08::replacementDemand.stated",
+      "family": "reframe",
+      "caseId": "v291-dev-185-08",
+      "fieldPath": "replacementDemand.stated",
+      "retiredExpected": true,
+      "terra": true,
+      "sol": false,
+      "sourceCase": {
+        "family": "reframe",
+        "caseId": "v291-dev-185-08",
+        "moveId": "m08-con-q2-responsive-control-insufficient",
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "debateNumber": "185",
+        "lane": "dyadic",
+        "speakerAttributionConfidence": "high",
+        "sourceExcerpt": "all the kind of compatibilist distinctions that have been made over the last 20 to 50 years um the question is not the question is whether or not those distinctions are enough to ground the kinds of more dessert-based moral practices that we're debating um and i do think those those those distinctions matter they matter in all kinds of important ways but they matter for different reasons",
+        "lockedTarget": "Relevant alternative ability consists in self-control, absence of disabling interference, and action for reasons.",
+        "components": [
+          {
+            "componentId": "t08-c1-degrees-control",
+            "text": "Degrees of freedom and self-control support the relevant sense in which an agent could have done otherwise."
+          },
+          {
+            "componentId": "t08-c2-well-functioning-reasons",
+            "text": "A well-functioning agent is not tied up, damaged, or misinformed and acts on the basis of reasons."
+          }
+        ],
+        "governingDemand": "Relevant alternative ability consists in self-control, absence of disabling interference, and action for reasons."
+      }
+    },
+    {
+      "key": "target::v291-dev-62-09::components.pageau-folley-logos-meaning-resurrection-2026-target-09-c1.contactMode",
+      "family": "target",
+      "caseId": "v291-dev-62-09",
+      "fieldPath": "components.pageau-folley-logos-meaning-resurrection-2026-target-09-c1.contactMode",
+      "retiredExpected": "exact-proposition",
+      "terra": "distinction",
+      "sol": "none",
+      "sourceCase": {
+        "family": "target",
+        "caseId": "v291-dev-62-09",
+        "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-09",
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "debateNumber": "62",
+        "lane": "dyadic",
+        "speakerAttributionConfidence": "high",
+        "sourceExcerpt": "things. I I the thing that the thing to me is that I was convinced of the resurrection in it for a different in a different way. It's like I was convinced of the resurrection. Uh you could say because I saw what it what it meant or what it brought downstream, what it the portrait of the world that it was showing me. That's the thing that convinced me of the resurrection more than whether or not this or that historian mentioned it or or whatever.",
+        "lockedTarget": "The posited confirmation would raise Folley's confidence in bodily resurrection, everlasting life, and related propositions, leading him to believe experience continues after death.",
+        "components": [
+          {
+            "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-09-c1",
+            "text": "The posited confirmation would raise Folley's confidence in bodily resurrection, everlasting life, and related propositions."
+          },
+          {
+            "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-09-c2",
+            "text": "As a result, Folley would believe that his experience continues after death."
+          }
+        ]
+      }
+    },
+    {
+      "key": "target::v291-dev-62-09::contrary.classification",
+      "family": "target",
+      "caseId": "v291-dev-62-09",
+      "fieldPath": "contrary.classification",
+      "retiredExpected": "component-contact-precludes-contrary",
+      "terra": "component-contact-precludes-contrary",
+      "sol": "none",
+      "sourceCase": {
+        "family": "target",
+        "caseId": "v291-dev-62-09",
+        "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-09",
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "debateNumber": "62",
+        "lane": "dyadic",
+        "speakerAttributionConfidence": "high",
+        "sourceExcerpt": "things. I I the thing that the thing to me is that I was convinced of the resurrection in it for a different in a different way. It's like I was convinced of the resurrection. Uh you could say because I saw what it what it meant or what it brought downstream, what it the portrait of the world that it was showing me. That's the thing that convinced me of the resurrection more than whether or not this or that historian mentioned it or or whatever.",
+        "lockedTarget": "The posited confirmation would raise Folley's confidence in bodily resurrection, everlasting life, and related propositions, leading him to believe experience continues after death.",
+        "components": [
+          {
+            "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-09-c1",
+            "text": "The posited confirmation would raise Folley's confidence in bodily resurrection, everlasting life, and related propositions."
+          },
+          {
+            "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-09-c2",
+            "text": "As a result, Folley would believe that his experience continues after death."
+          }
+        ]
+      }
+    }
+  ],
+  "structuralFailures": [
+    {
+      "family": "diagnostic",
+      "modelKey": "terra",
+      "model": "5.6 Terra",
+      "status": "output-validation-failed",
+      "deterministicValidationPassed": false,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "outputSha256": "babfb5c518757bee371ec9443efdb0a58e1fca8a0650e09e53704f31a8c24fff"
+    }
+  ]
+}

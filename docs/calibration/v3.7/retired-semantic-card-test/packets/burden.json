@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "3.7-gold-blind-family-packet",
+  "family": "burden",
+  "cases": [
+    {
+      "caseId": "v291-dev-62-09",
+      "moveId": "pageau-folley-logos-meaning-resurrection-2026-move-09",
+      "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+      "debateNumber": "62",
+      "lane": "dyadic",
+      "speakerAttributionConfidence": "high",
+      "sourceExcerpt": "things. I I the thing that the thing to me is that I was convinced of the resurrection in it for a different in a different way. It's like I was convinced of the resurrection. Uh you could say because I saw what it what it meant or what it brought downstream, what it the portrait of the world that it was showing me. That's the thing that convinced me of the resurrection more than whether or not this or that historian mentioned it or or whatever.",
+      "lockedTarget": "The posited confirmation would raise Folley's confidence in bodily resurrection, everlasting life, and related propositions, leading him to believe experience continues after death.",
+      "components": [
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-09-c1",
+          "text": "The posited confirmation would raise Folley's confidence in bodily resurrection, everlasting life, and related propositions."
+        },
+        {
+          "componentId": "pageau-folley-logos-meaning-resurrection-2026-target-09-c2",
+          "text": "As a result, Folley would believe that his experience continues after death."
+        }
+      ],
+      "fieldPath": "burdenContact",
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "pageau-folley-logos-meaning-resurrection-2026-pro-route",
+          "eligibleBridgeIds": [
+            "pageau-folley-logos-meaning-resurrection-2026-pro-central"
+          ],
+          "selectionRationale": "The move directly bears on the central bridge selected for the speaker's side rather than merely mentioning the debate topic."
+        },
+        "route": {
+          "id": "pageau-folley-logos-meaning-resurrection-2026-pro-route",
+          "side": "pro",
+          "description": "Patterns and purposive unities are real features of the world that point upward to Logos.",
+          "successCriteria": "Top-down organization and irreducible emergent wholes support a mind-like transcendent unity.",
+          "bridges": [
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-pro-motion",
+              "tier": "motion",
+              "description": "Establish the pro side's complete answer to the stated debate motion."
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-pro-central",
+              "tier": "central",
+              "description": "Patterns and purposive unities are real features of the world that point upward to Logos."
+            },
+            {
+              "id": "pageau-folley-logos-meaning-resurrection-2026-pro-subsidiary",
+              "tier": "subsidiary",
+              "description": "Support a narrower evidential or conceptual consideration used by the pro side."
+            }
+          ]
+        }
+      },
+      "candidate1": {
+        "candidateId": "candidate-1",
+        "semanticValue": {
+          "tier": "none",
+          "bridgeId": null
+        }
+      },
+      "candidate2": {
+        "candidateId": "candidate-2",
+        "semanticValue": {
+          "tier": "central",
+          "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-pro-central"
+        }
+      }
+    },
+    {
+      "caseId": "v291-dev-185-05",
+      "moveId": "m05-pro-q1-responsive-free-will-worth-wanting",
+      "debateId": "dennett-caruso-free-will-responsibility-2021",
+      "debateNumber": "185",
+      "lane": "dyadic",
+      "speakerAttributionConfidence": "high",
+      "sourceExcerpt": "and it matters for the reasons that greg sort of started out with namely we want to know about responsibility and whether whether we deserve blame and praise and so forth and as long as you stick to that as long as you stick to the fact that that's the kind of free will that matters then first of all libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you",
+      "lockedTarget": "Factors beyond agents' control eliminate moral responsibility in the basic-desert sense.",
+      "components": [
+        {
+          "componentId": "t05-c1-beyond-control",
+          "text": "Who agents are and what they do ultimately result from factors beyond their control."
+        },
+        {
+          "componentId": "t05-c2-no-basic-desert",
+          "text": "That beyond-control condition entails that agents are never morally responsible in the basic-desert sense."
+        }
+      ],
+      "fieldPath": "burdenContact",
+      "burdenContext": {
+        "burdenPacket": {
+          "primaryRouteId": "con-skeptical-sourcehood-route",
+          "eligibleBridgeIds": [
+            "con-central-sourcehood",
+            "con-motion-no-basic-desert"
+          ],
+          "selectionRationale": "The response primarily contests the skeptical route by separating responsibility-conferring freedom from libertarian freedom."
+        },
+        "route": {
+          "id": "con-skeptical-sourcehood-route",
+          "side": "con",
+          "description": "Show that luck and factors beyond the agent's control defeat the sourcehood needed for basic-desert responsibility while leaving forward-looking responses available.",
+          "successCriteria": "The route succeeds if agents are shown not to be appropriate sources for basic desert and safety, rehabilitation, or rule enforcement can replace retributive blame and punishment.",
+          "bridges": [
+            {
+              "id": "con-motion-no-basic-desert",
+              "tier": "motion",
+              "description": "Basic-desert moral responsibility and retributive blame or punishment are unwarranted, even if independently justified forward-looking responses remain."
+            },
+            {
+              "id": "con-central-sourcehood",
+              "tier": "central",
+              "description": "Who agents are and what they do result from luck or factors beyond their control, so they lack the appropriate sourcehood for basic desert."
+            },
+            {
+              "id": "con-subsidiary-alternatives",
+              "tier": "subsidiary",
+              "description": "Reasons-responsive distinctions, sanctions, safety restrictions, rehabilitation, and rule enforcement can be retained on non-desert forward-looking grounds."
+            },
+            {
+              "id": "con-subsidiary-indeterminacy",
+              "tier": "subsidiary",
+              "description": "Adding physical indeterminacy does not let the agent settle which outcome occurs and therefore cannot rescue basic-desert control."
+            }
+          ]
+        }
+      },
+      "candidate1": {
+        "candidateId": "candidate-1",
+        "semanticValue": {
+          "tier": "central",
+          "bridgeId": "con-central-sourcehood"
+        }
+      },
+      "candidate2": {
+        "candidateId": "candidate-2",
+        "semanticValue": {
+          "tier": "motion",
+          "bridgeId": "con-motion-no-basic-desert"
+        }
+      }
+    }
+  ],
+  "blindness": {
+    "expectedCardsAbsent": true,
+    "retiredGoldAbsent": true,
+    "scoresAbsent": true,
+    "legacyMaterialAbsent": true,
+    "otherModelOutputAbsent": true
+  }
+}

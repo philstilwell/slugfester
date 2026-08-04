@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "3.7.1-gold-blind-audit-manifest",
+  "gateId": "v3.7.1-gold-blind-benchmark-audit",
+  "status": "frozen-before-model-execution",
+  "frozenAt": "2026-08-04T04:01:40.829Z",
+  "workflowVersion": "Slugfester Gold-Blind Benchmark Audit Workflow v3.7.1",
+  "rubricVersion": "Slugfester Reassessment Rubric v3.7.1",
+  "calibrationOnly": true,
+  "AIOnlyAudit": true,
+  "retiredGoldProvisional": true,
+  "candidateOriginsModelBlind": true,
+  "candidatePositionsCounterbalanced": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "debateNumbers": [
+    "62",
+    "154",
+    "185"
+  ],
+  "initialReviewerPasses": [
+    "pass-a",
+    "pass-b"
+  ],
+  "sample": {
+    "debateCount": 3,
+    "disputedFieldCount": 14,
+    "consensusAgainstRetiredGoldFields": 8,
+    "crossModelDisagreementFields": 6,
+    "allSpeakerAttributionConfidenceHigh": true
+  },
+  "isolation": {
+    "twoIndependentContextsPerDebate": true,
+    "thirdContextOnlyForInitialDisagreements": true,
+    "otherPassOutputsUnavailable": true,
+    "candidateOriginMapUnavailable": true,
+    "priorRationalesUnavailable": true,
+    "independentClaim": "isolated-context judgments; not statistical independence"
+  },
+  "consensusPolicy": {
+    "finalValueRequiresMatchingVotes": 2,
+    "thirdPassCannotInventCandidates": true,
+    "thirdPassValueSelectedByNeitherInitialPassRemainsUnresolved": true,
+    "scoresDerivedOnlyAfterAdjudication": true
+  },
+  "executionPolicy": {
+    "initialContexts": 6,
+    "adjudicationContextsMaximum": 3,
+    "attemptsPerContext": 1,
+    "modelOutputRetriesMaximum": 0,
+    "preInferenceSchemaRejectionsMaximum": 0,
+    "sameRequestStreamRecoveriesMaximum": 0,
+    "APIKeysRemoved": true,
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "thresholds": {
+    "initialContexts": 6,
+    "disputedFields": 14,
+    "initialAgreementMinimum": 12,
+    "finalTwoVoteConsensusRequired": 14,
+    "unresolvedFieldsMaximum": 0,
+    "scoringFieldsMaximum": 0
+  },
+  "prohibitions": {
+    "modelBatchAfterAudit": true,
+    "heldOutAccess": true,
+    "numericalParticipantScoring": true,
+    "assessmentProse": true,
+    "productionMutation": true
+  },
+  "v37": {
+    "manifestPath": "docs/calibration/v3.7/retired-semantic-card-test/gate-manifest.json",
+    "manifestSha256": "c0038b5f673e4b0b8aee9f502bacc9385334c41b5a04f09146dddf43a7189d7c",
+    "analysisPath": "docs/calibration/v3.7/retired-semantic-card-test/semantic-analysis.json",
+    "analysisSha256": "7d8ced1abbe56388a60469a69994316ac3700b1178d461bcee7014e0ebb6d1aa",
+    "outcome": "failed-benchmark-audit-required"
+  },
+  "auditSource": {
+    "path": "docs/calibration/v3.7/retired-semantic-card-test/gold-audit-disagreements.json",
+    "sha256": "e488408113eb65445ecfb59c88119c89d619cc87946077ec292e6867dfeeb538"
+  },
+  "sealedOptionMap": {
+    "path": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/sealed-option-map.json",
+    "sha256": "b4879bd853834ed7feaea56323001c8d0e200712fd0ba06cd5738402fba2a18a"
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.7.1.md": "6345e13ac82fca23becccc9981c3066cd679314aeb833c0ca057bf9114982be1",
+    "docs/reassessment-rubric-v3.7.1.md": "126c9836e73a9e7b6951a30f1326883277b8abe077aadfd7d4a300adbb52b183",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/audit-manual.md": "1277df9d964702d59d76bec4033384f3709d2fae3b72efdc0f6466badf971849",
+    "docs/calibration/v3.7/retired-semantic-card-test/gold-audit-disagreements.json": "e488408113eb65445ecfb59c88119c89d619cc87946077ec292e6867dfeeb538",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/sealed-option-map.json": "b4879bd853834ed7feaea56323001c8d0e200712fd0ba06cd5738402fba2a18a",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/packets/pass-a/debate-62.json": "411a126a3ac01b48ca61bb140b6445e13014e296cf51270dd87c94a335145d20",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/schemas/pass-a/debate-62.schema.json": "b36b54638007fa89ad5bae7c18e789dea0b3fd253522155f70c4409046fda22e",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/packets/pass-a/debate-154.json": "b005171ab6c025b04042999b10e85caea944c2d3235b56c75a20bad732daa06a",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/schemas/pass-a/debate-154.schema.json": "bf4dc086da10a489c86f9f413204868e0fc175f63faabd7888d5cc054c6e30f8",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/packets/pass-a/debate-185.json": "bbd07a1fc582aca6058c407bdbefc9cca20e6f4fdc285af1fa749432db773caf",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/schemas/pass-a/debate-185.schema.json": "ad6b4f6b10a8cbcd82c85184fe42bd2cfa667a7c42cbc7c4ed72a199ec28159d",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/packets/pass-b/debate-62.json": "6f4982faa0d624213f099460360e46e7679aaef814406bebce5e6919e6b4c60e",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/schemas/pass-b/debate-62.schema.json": "53cc399f0fec7dec14e934e2f541b70520af9057d7d8738dba1c91139659d0a7",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/packets/pass-b/debate-154.json": "1aa9a6f6c9980cdc1651f19dee6613a3889e8dd165fe3e5ca17c8aa8dc6f584c",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/schemas/pass-b/debate-154.schema.json": "3efec5fade3342acbee7bb59ee6eace9c35316dc4490c77d8a50eb7aa4c30931",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/packets/pass-b/debate-185.json": "516ac557d6e1ea920247487a1a5868d28fef70b0e2f154a4645839a4f49618d8",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/schemas/pass-b/debate-185.schema.json": "91ad101959f46538d3616421e179677ae55025ca2abeff03c1e9bc7947df3bc7",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v37-retired-semantic.mjs": "2fe113760e4b2bb97104025d39755d8ceeeecded89fbaea683cc5c9cce188296",
+    "scripts/lib/v371-gold-audit.mjs": "40d69cfc950fb73e521a059270946999b9455e3be13d7de5c1b733037386959e",
+    "scripts/build-v371-gold-audit-packets.mjs": "4b7495ca2e93c923faba08c58a74d1dfc6507e5fd44e1614f7390f2a2124cbcb",
+    "scripts/test-v371-gold-audit-packets.mjs": "4fbc5597a45f60e4e2e525bbe633cbb4540dfa7ea513ac5caba3d8f2b4aee8a3",
+    "scripts/validate-v371-audit-output.mjs": "5badcdae060463a03de93286d0ace6c9d77ef7639d4d7651870e107fa16a802f",
+    "scripts/extract-v371-audit-disagreements.mjs": "c01f67c4bbb8b2f1ce07bc76d98a56fc4e2864a149940a9d04cab11f5d3c7236",
+    "scripts/run-v371-gold-audit.mjs": "68df9d76920b9983a7dcd98fa58394355058afd8f25021dc1caa53bf5b499c42",
+    "scripts/analyze-v371-gold-audit.mjs": "ddfca2b97adb46d9da0aa2f974b4e834b894675fc9b5b1b671e3c42d43b54937",
+    "scripts/preregister-v371-gold-audit.mjs": "741f23d1b72eb4bf8ffb5cdc446acd6b9a57b0fa4db18a88b71afe6ccd85f188",
+    "scripts/validate-v371-gold-audit.mjs": "07c655ddee2d28588310f2e0c0018345022ad7b82f3682e1de5f2675ccf46675"
+  },
+  "dryFixture": {
+    "path": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/dry-fixture.json",
+    "sha256": "b99c2e4279b01cea229f6618457d95f5cdc7f0948e9b0fef5cb03d5f5764bd92"
+  },
+  "initialContexts": {
+    "pass-a": {
+      "62": {
+        "debateNumber": "62",
+        "reviewerPass": "pass-a",
+        "packet": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/packets/pass-a/debate-62.json",
+        "packetSha256": "411a126a3ac01b48ca61bb140b6445e13014e296cf51270dd87c94a335145d20",
+        "schema": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/schemas/pass-a/debate-62.schema.json",
+        "schemaSha256": "b36b54638007fa89ad5bae7c18e789dea0b3fd253522155f70c4409046fda22e",
+        "output": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-a/debate-62.json",
+        "decisionCount": 3
+      },
+      "154": {
+        "debateNumber": "154",
+        "reviewerPass": "pass-a",
+        "packet": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/packets/pass-a/debate-154.json",
+        "packetSha256": "b005171ab6c025b04042999b10e85caea944c2d3235b56c75a20bad732daa06a",
+        "schema": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/schemas/pass-a/debate-154.schema.json",
+        "schemaSha256": "bf4dc086da10a489c86f9f413204868e0fc175f63faabd7888d5cc054c6e30f8",
+        "output": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-a/debate-154.json",
+        "decisionCount": 4
+      },
+      "185": {
+        "debateNumber": "185",
+        "reviewerPass": "pass-a",
+        "packet": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/packets/pass-a/debate-185.json",
+        "packetSha256": "bbd07a1fc582aca6058c407bdbefc9cca20e6f4fdc285af1fa749432db773caf",
+        "schema": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/schemas/pass-a/debate-185.schema.json",
+        "schemaSha256": "ad6b4f6b10a8cbcd82c85184fe42bd2cfa667a7c42cbc7c4ed72a199ec28159d",
+        "output": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-a/debate-185.json",
+        "decisionCount": 7
+      }
+    },
+    "pass-b": {
+      "62": {
+        "debateNumber": "62",
+        "reviewerPass": "pass-b",
+        "packet": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/packets/pass-b/debate-62.json",
+        "packetSha256": "6f4982faa0d624213f099460360e46e7679aaef814406bebce5e6919e6b4c60e",
+        "schema": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/schemas/pass-b/debate-62.schema.json",
+        "schemaSha256": "53cc399f0fec7dec14e934e2f541b70520af9057d7d8738dba1c91139659d0a7",
+        "output": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-b/debate-62.json",
+        "decisionCount": 3
+      },
+      "154": {
+        "debateNumber": "154",
+        "reviewerPass": "pass-b",
+        "packet": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/packets/pass-b/debate-154.json",
+        "packetSha256": "1aa9a6f6c9980cdc1651f19dee6613a3889e8dd165fe3e5ca17c8aa8dc6f584c",
+        "schema": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/schemas/pass-b/debate-154.schema.json",
+        "schemaSha256": "3efec5fade3342acbee7bb59ee6eace9c35316dc4490c77d8a50eb7aa4c30931",
+        "output": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-b/debate-154.json",
+        "decisionCount": 4
+      },
+      "185": {
+        "debateNumber": "185",
+        "reviewerPass": "pass-b",
+        "packet": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/packets/pass-b/debate-185.json",
+        "packetSha256": "516ac557d6e1ea920247487a1a5868d28fef70b0e2f154a4645839a4f49618d8",
+        "schema": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/schemas/pass-b/debate-185.schema.json",
+        "schemaSha256": "91ad101959f46538d3616421e179677ae55025ca2abeff03c1e9bc7947df3bc7",
+        "output": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-b/debate-185.json",
+        "decisionCount": 7
+      }
+    }
+  },
+  "outputs": {
+    "initial": {
+      "pass-a": {
+        "62": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-a/debate-62.json",
+        "154": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-a/debate-154.json",
+        "185": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-a/debate-185.json"
+      },
+      "pass-b": {
+        "62": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-b/debate-62.json",
+        "154": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-b/debate-154.json",
+        "185": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-b/debate-185.json"
+      }
+    }
+  },
+  "initialExecutionPath": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/initial-model-execution.json",
+  "initialDisagreementPath": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/initial-disagreements.json",
+  "adjudicationOptionMapPath": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/adjudication-option-map.json",
+  "adjudicationExecutionPath": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/adjudication-model-execution.json",
+  "analysisPath": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/audit-analysis.json"
+}

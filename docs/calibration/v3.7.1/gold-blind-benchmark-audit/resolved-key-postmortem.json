@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "3.7.1-unauthorized-resolved-key-postmortem",
+  "status": "informational-only",
+  "warning": "The official v3.7.1 audit failed its frozen initial-agreement threshold. This counterfactual applies its complete two-vote resolutions only to diagnose whether that key would have changed the model-readiness conclusion.",
+  "officialAnalysisSha256": "0796d03c9dc9f455402136daf4c80e4de7a296e038d36006922e7d57459661e5",
+  "resolvedKeyAuthorized": false,
+  "changedFields": [
+    {
+      "key": "target::v291-dev-62-04::example.classification",
+      "retiredExpected": "none",
+      "resolvedValue": "inside-locked-target",
+      "supportingVotes": 2
+    },
+    {
+      "key": "target::v291-dev-62-09::components.pageau-folley-logos-meaning-resurrection-2026-target-09-c1.contactMode",
+      "retiredExpected": "exact-proposition",
+      "resolvedValue": "distinction",
+      "supportingVotes": 2
+    },
+    {
+      "key": "diagnostic::v291-dev-154-15::defect.type",
+      "retiredExpected": "invalid-inference",
+      "resolvedValue": "attribution-error",
+      "supportingVotes": 2
+    },
+    {
+      "key": "target::v291-dev-154-08::components.koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1.contactMode",
+      "retiredExpected": "exact-proposition",
+      "resolvedValue": "none",
+      "supportingVotes": 2
+    },
+    {
+      "key": "diagnostic::v291-dev-185-12::defect.type",
+      "retiredExpected": "irrelevance",
+      "resolvedValue": "scope-mismatch",
+      "supportingVotes": 2
+    },
+    {
+      "key": "reframe::v291-dev-185-12::relationKind",
+      "retiredExpected": "because",
+      "resolvedValue": "contrastive",
+      "supportingVotes": 2
+    }
+  ],
+  "counterfactualReplay": {
+    "terra": {
+      "assertions": 45,
+      "matches": 41,
+      "targetMatches": 24,
+      "nonTargetMatches": 17,
+      "burdenMatches": 3,
+      "originalV37ThresholdsPassed": false
+    },
+    "sol": {
+      "assertions": 45,
+      "matches": 35,
+      "targetMatches": 22,
+      "nonTargetMatches": 13,
+      "burdenMatches": 3,
+      "originalV37ThresholdsPassed": false
+    },
+    "crossModelAgreement": 39,
+    "crossModelAgreementRequired": 41,
+    "crossModelAgreementPassed": false
+  },
+  "conclusion": "Neither model would pass the original v3.7 semantic thresholds even if the six resolved changes were provisionally applied.",
+  "modelBatchAuthorized": false,
+  "heldOutAccessAuthorized": false,
+  "numericalParticipantScoringAuthorized": false,
+  "assessmentProseAuthorized": false,
+  "productionMutationAuthorized": false
+}
