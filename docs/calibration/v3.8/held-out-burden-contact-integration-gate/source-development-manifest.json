@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "3.8-heldout-source-development-manifest",
+  "gateId": "v3.8-heldout-burden-contact-integration-gate",
+  "status": "frozen-source-tooling-model-execution-blocked",
+  "frozenAt": "2026-08-04T07:02:40Z",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "debateNumbers": [
+    "103",
+    "55",
+    "161"
+  ],
+  "sourceChain": {
+    "path": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-audit.json",
+    "sha256": "99809f45e46fbb857d0e7dd947e82f555fa35da5f3b8bed7dacdfc8a0d97443d",
+    "fullLocalTranscriptRequired": true,
+    "localHashesVerified": true,
+    "paidTranscriptionCalls": 0
+  },
+  "modelInputs": {
+    "workflow": "docs/assessment-workflow-v3.8.md",
+    "rubric": "docs/reassessment-rubric-v3.8.md",
+    "manual": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation-manual.md"
+  },
+  "proposalPolicy": {
+    "contexts": 3,
+    "routesPerDebate": 2,
+    "bridgesPerRoute": 5,
+    "candidateMovesPerDebate": 8,
+    "candidatesPerSide": 4,
+    "fullTranscriptAndEventsAvailable": true,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0
+  },
+  "reviewPolicy": {
+    "contextsPlanned": 3,
+    "isolatedFromProposalLabelsAndRationales": true,
+    "sameFullTranscriptAndEventsAvailable": true,
+    "routesAndBridgesReviewed": true,
+    "moveValidityAttributionAndProvisionalContactReviewed": true,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0
+  },
+  "adjudicationPolicy": {
+    "contextsMaximum": 3,
+    "onlyDisputedPreparationFields": true,
+    "candidateValuesLimitedToProposalAndReview": true,
+    "audioTriggeredIfEitherInitialAttributionBelowHigh": true,
+    "finalFieldRequiresTwoMatchingVotes": true
+  },
+  "selectionPolicy": {
+    "finalMovesPerDebate": 4,
+    "exactlyTwoPerSide": true,
+    "provisionalNoContactSupportAndAttackEachRequiredPerDebate": true,
+    "deterministicSelectionFromAcceptedCandidates": true,
+    "provisionalLabelsDiagnosticOnly": true
+  },
+  "proposalContexts": {
+    "55": {
+      "debateNumber": "55",
+      "packet": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation/proposal/packets/debate-55.json",
+      "packetSha256": "aac4a6364fb812f09393ed8d35834917d4920164dc783a4e90526b52aba3aa61",
+      "schema": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation/proposal/schemas/debate-55.schema.json",
+      "schemaSha256": "ad4c6c77e9ee88e3ffd4cb2e05ef88b990d1ccfd5f4d33e0273f99a122e08b88",
+      "transcript": ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt",
+      "transcriptSha256": "305d9eacbd581a9aac9f5f246f63097deef6e6020af7a8031e14ca9cfbba66c2",
+      "events": ".assessment-cache/captions/zQBY5K-Ns2Y/events.json",
+      "eventsSha256": "d09e63acc41236158b808b6242c871428a467697fba1f2454cfac143c185aa3f",
+      "output": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation/proposal/outputs/debate-55.json"
+    },
+    "103": {
+      "debateNumber": "103",
+      "packet": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation/proposal/packets/debate-103.json",
+      "packetSha256": "03f3ffcfc5b4f0bfb3d5d161554784cd8cdbeef79857144f6c4bfd9d313ebb53",
+      "schema": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation/proposal/schemas/debate-103.schema.json",
+      "schemaSha256": "302633cc9d8950b3497894ca68319e1777ccea4a7cc3787cef464fc95fc59243",
+      "transcript": ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt",
+      "transcriptSha256": "f852392592bdbaf149c1816fe93fb76e84b65577b4c6d85c52a50bb2db95be29",
+      "events": ".assessment-cache/captions/g1TlLCSn_5o/events.json",
+      "eventsSha256": "b9846f8275ade82451cfd86a4b4b5eefa89a9bbf1515067e2e18965bcadf03dc",
+      "output": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation/proposal/outputs/debate-103.json"
+    },
+    "161": {
+      "debateNumber": "161",
+      "packet": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation/proposal/packets/debate-161.json",
+      "packetSha256": "1181760dff031c699213a0e5ec98909869f872467e7a7ba319189897f56aaa56",
+      "schema": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation/proposal/schemas/debate-161.schema.json",
+      "schemaSha256": "75634f8cefee96f38e199f50fdecce146cd409533b0e0a179abe6070d0fb63da",
+      "transcript": ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt",
+      "transcriptSha256": "9de6853aa2dd4eaf8e0d669f895b719b7fbc15ab55a7f8eab271c92974771b78",
+      "events": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+      "eventsSha256": "5dd29c053f0e5da4ed79b6f818fb844a6515552671dbc4014916d18ca1d2cbbc",
+      "output": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation/proposal/outputs/debate-161.json"
+    }
+  },
+  "dryFixture": {
+    "path": "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation-dry-fixture.json",
+    "sha256": "eda6c6e0ac01a6fa0ed0e3750b35c2dc9680d0bc3fb8b0503542368bf1d7efea"
+  },
+  "developmentState": {
+    "proposalPacketsBuilt": true,
+    "proposalSchemasBuilt": true,
+    "dryFixturePassed": true,
+    "executionRunnerImplemented": false,
+    "reviewPacketsBuilt": false,
+    "reviewSchemasBuilt": false,
+    "disputeExtractorImplemented": false,
+    "adjudicationRunnerImplemented": false,
+    "finalInventoryBuilderImplemented": false,
+    "modelExecutionAuthorized": false
+  },
+  "stillBlocked": {
+    "burdenContactClassificationPasses": true,
+    "classificationAdjudication": true,
+    "numericalParticipantScoring": true,
+    "assessmentProse": true,
+    "overallCommentary": true,
+    "aiExtension": true,
+    "benchmarkMutation": true,
+    "productionMutation": true,
+    "all195Debates": true
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.8.md": "eb506e3d7bda146173ace0ad9936f816438ea88d65fd0a8a592fd98d7cdec62b",
+    "docs/reassessment-rubric-v3.8.md": "a8754450c35431e857ae794e1a6aefd7dcfdb698457032e22c96471525fd5312",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation-manual.md": "a611be26d72ebc081065feccab12dd37c06d3862b4928cd1d0f24d49b4c332c2",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/gate-manifest.json": "59c60922f815e46f15bebd014dc4e90981d9ca9983047ac9f0c3158a8151e60c",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-access-authorization.json": "75e03417f30110294ae39277d6840a64ebb2a5ac13c917fd87d56291a1c7625d",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-audit.json": "99809f45e46fbb857d0e7dd947e82f555fa35da5f3b8bed7dacdfc8a0d97443d",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation-dry-fixture.json": "eda6c6e0ac01a6fa0ed0e3750b35c2dc9680d0bc3fb8b0503542368bf1d7efea",
+    "scripts/lib/v38-source-preparation.mjs": "01b9c9c7a208f2e5b25dc66360ff6c1619589daa38719ace1175f380cc243493",
+    "scripts/build-v38-source-preparation-packets.mjs": "215955736b353f17051b5a8547216ce60ca81f9afa113611bf00378f8a09009c",
+    "scripts/validate-v38-source-proposal.mjs": "f4fa2571afceb9437086d367973def6d5bfd45b4c6385e7387e9db317906486e",
+    "scripts/build-v38-source-review-packets.mjs": "b7cf9295f73ccd9171127a25bfeedb874721c62c1d2b9db571516710393d8f0e",
+    "scripts/validate-v38-source-review.mjs": "476ec46f3715c6a595358bbaf3b4c6c4d69a287f055517510fd49b35b7c58c29",
+    "scripts/test-v38-source-preparation-tooling.mjs": "ee02f1036cff39d5345cee78127e235ce684aa1022833b512b934112cceed4c0",
+    "scripts/preregister-v38-source-development.mjs": "fa0d30f5cbcb8ab9bd46243ba376a73063aae88cb2e914d693b75bf2396d9152",
+    "scripts/validate-v38-source-development.mjs": "07976767d3ad174acf53940c64b7d97f8298b735d921ae2f4b9884db060b51a4",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation/proposal/packets/debate-55.json": "aac4a6364fb812f09393ed8d35834917d4920164dc783a4e90526b52aba3aa61",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation/proposal/schemas/debate-55.schema.json": "ad4c6c77e9ee88e3ffd4cb2e05ef88b990d1ccfd5f4d33e0273f99a122e08b88",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation/proposal/packets/debate-103.json": "03f3ffcfc5b4f0bfb3d5d161554784cd8cdbeef79857144f6c4bfd9d313ebb53",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation/proposal/schemas/debate-103.schema.json": "302633cc9d8950b3497894ca68319e1777ccea4a7cc3787cef464fc95fc59243",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation/proposal/packets/debate-161.json": "1181760dff031c699213a0e5ec98909869f872467e7a7ba319189897f56aaa56",
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-preparation/proposal/schemas/debate-161.schema.json": "75634f8cefee96f38e199f50fdecce146cd409533b0e0a179abe6070d0fb63da"
+  }
+}
