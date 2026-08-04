@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "3.8.8-reconstruction-schema-recovery-execution-manifest",
+  "protocolId": "v3.8.8-recovered-diagnostic-reconstruction",
+  "status": "frozen-schema-compatibility-recovery-authorized",
+  "createdAt": "2026-08-04T20:25:54.318Z",
+  "recoveryOf": {
+    "manifest": "docs/calibration/v3.8.8/reconstruction/execution-manifest.json",
+    "failedExecution": "docs/calibration/v3.8.8/reconstruction/model-execution.json",
+    "failureStage": "endpoint-schema-validation-before-inference"
+  },
+  "governance": {
+    "cleanV384GatePassPossible": false,
+    "diagnosticOnly": true,
+    "productionMutationAuthorized": false,
+    "tenDebateGateAuthorized": false,
+    "all195DebatesAuthorized": false
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "cost": {
+    "meteredModelApiCostUsd": 0,
+    "additionalTranscriptionEstimatedCostUsd": 0,
+    "retryBillingRiskUsd": 0
+  },
+  "executionPolicy": {
+    "contexts": 3,
+    "perInvocationTimeoutMs": 1200000,
+    "retriesAuthorized": 0,
+    "APIKeysRemoved": true,
+    "ephemeralCodexHome": true,
+    "compatibilityRecovery": true
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.8.4.md": "49dda91a87c0ebbab9666d6c732035bde17939d84f4b71b326f4f04b917ddd5a",
+    "docs/reassessment-rubric-v3.8.4.md": "fda29887abb26f1f5a6f7b772e26434db0c055ec3efe42be4eeea602f5a84909",
+    "docs/calibration/v3.8.8/reconstruction/preregistration.md": "bae423eda5b0061ff3d9a5c8564a48a53ed96b20ffb5aec24ab858c0133ef438",
+    "docs/calibration/v3.8.8/reconstruction/manual.md": "02cd46a942e3612fa1988bb296fdecfb24c15a00b5d827d385fb9e8381967fda",
+    "docs/calibration/v3.8.8/reconstruction/quote-verification.json": "3002a61c2abe40c1ee8ab966d47cc591c21396ee8cd959bb13e5a07582e842b7",
+    "docs/calibration/v3.8.8/reconstruction/execution-manifest.json": "8466b2dfe6bea5d7f6b158f868559c333cfaa4bfc5c7fa299fd0a96b56f49b37",
+    "docs/calibration/v3.8.8/reconstruction/model-execution.json": "b5a1436b26234045b334ae6651d0cf0a2e1c513764dede764c0497bfff0c5a8c",
+    "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/audit.json": "872b4880d710263693825dc00f01cc087a0b261730e0318bc39338e4cbdf830e",
+    "scripts/lib/v388-reconstruction.mjs": "b91aecc26cd3a978ef807bec877222b641fff4cd911028538cd035b747f5a342",
+    "scripts/validate-v388-reconstruction-output.mjs": "060e75adf68b1256fd4920aee06ee97600378057170d28febbb81ca9ec97e741",
+    "scripts/run-v388-reconstruction.mjs": "bdfc8ff817c8fa3cd6d06a2ce2cb1944d5ab614eeb0e3792b1b64aa3f2182377",
+    "docs/calibration/v3.8.8/reconstruction/packets/debate-55.json": "34f12d2e14495a18795f167f21a0f3de450333d839e1fab76b03c3a5ea01cb85",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt": "305d9eacbd581a9aac9f5f246f63097deef6e6020af7a8031e14ca9cfbba66c2",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/events.json": "d09e63acc41236158b808b6242c871428a467697fba1f2454cfac143c185aa3f",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/manifest.json": "73f97e374fa98f388528e03ed39e1272f77c9fec6cee46345fdfba9c3177c099",
+    "docs/calibration/v3.8.8/reconstruction/packets/debate-103.json": "14bfb489ff601641a2d4e42e8a357bfa6787f100eebaf83902f54ab15c8a6719",
+    ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt": "f852392592bdbaf149c1816fe93fb76e84b65577b4c6d85c52a50bb2db95be29",
+    ".assessment-cache/captions/g1TlLCSn_5o/events.json": "b9846f8275ade82451cfd86a4b4b5eefa89a9bbf1515067e2e18965bcadf03dc",
+    ".assessment-cache/captions/g1TlLCSn_5o/manifest.json": "0e24d0057065d03651c845abfd66fa90a04ed2dfbd582afe098e60d830fbde2a",
+    "docs/calibration/v3.8.8/reconstruction/packets/debate-161.json": "a4243d80d8ba4ec84819e1ce12a8f9d59985ff1e550aa29cac762f0d05cb853a",
+    ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt": "9de6853aa2dd4eaf8e0d669f895b719b7fbc15ab55a7f8eab271c92974771b78",
+    ".assessment-cache/captions/9JVRy7bR7zI/events.json": "5dd29c053f0e5da4ed79b6f818fb844a6515552671dbc4014916d18ca1d2cbbc",
+    ".assessment-cache/captions/9JVRy7bR7zI/manifest.json": "436f3f2be4fd5e84338f6244eae1398dbcb11c56ac514920a80cad440790dc18",
+    "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/schemas/debate-55.schema.json": "c2c17b6cca415aee98ffc047f9e07b3d00ec7a8b71bcb93cb15e66d506936518",
+    "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/schemas/debate-103.schema.json": "51bec2dce9a4861a5a481f079a554bb66f4dd33aab5144f3873cb49fd1c5b939",
+    "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/schemas/debate-161.schema.json": "d3f3048f45945b5a0397e2d1c16c9b70517a9fdd624efb89eeafb870085dba66"
+  },
+  "contexts": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "packet": "docs/calibration/v3.8.8/reconstruction/packets/debate-55.json",
+      "schema": "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/schemas/debate-55.schema.json",
+      "transcript": ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt",
+      "events": ".assessment-cache/captions/zQBY5K-Ns2Y/events.json",
+      "sourceManifest": ".assessment-cache/captions/zQBY5K-Ns2Y/manifest.json",
+      "output": "docs/calibration/v3.8.8/reconstruction/outputs/debate-55.json"
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "packet": "docs/calibration/v3.8.8/reconstruction/packets/debate-103.json",
+      "schema": "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/schemas/debate-103.schema.json",
+      "transcript": ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt",
+      "events": ".assessment-cache/captions/g1TlLCSn_5o/events.json",
+      "sourceManifest": ".assessment-cache/captions/g1TlLCSn_5o/manifest.json",
+      "output": "docs/calibration/v3.8.8/reconstruction/outputs/debate-103.json"
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "packet": "docs/calibration/v3.8.8/reconstruction/packets/debate-161.json",
+      "schema": "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/schemas/debate-161.schema.json",
+      "transcript": ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt",
+      "events": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+      "sourceManifest": ".assessment-cache/captions/9JVRy7bR7zI/manifest.json",
+      "output": "docs/calibration/v3.8.8/reconstruction/outputs/debate-161.json"
+    }
+  ],
+  "futureOutputs": [
+    "docs/calibration/v3.8.8/reconstruction/outputs/debate-55.json",
+    "docs/calibration/v3.8.8/reconstruction/outputs/debate-103.json",
+    "docs/calibration/v3.8.8/reconstruction/outputs/debate-161.json"
+  ],
+  "artifacts": {
+    "execution": "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/model-execution.json",
+    "audit": "docs/calibration/v3.8.8/reconstruction/audit.json"
+  },
+  "authorization": {
+    "reconstructionModelExecution": true,
+    "deterministicAudit": true,
+    "calibrationPreview": false,
+    "productionMutation": false,
+    "tenDebateGate": false,
+    "all195Debates": false
+  }
+}

@@ -23,7 +23,7 @@ const novelty = {
   required: ["classification", "sourceMoveIds", "explanation"],
   properties: {
     classification: { type: "string", enum: ["extends", "repairs", "introduces"] },
-    sourceMoveIds: { type: "array", items: str(), uniqueItems: true },
+    sourceMoveIds: { type: "array", items: str() },
     explanation: str(20)
   }
 };

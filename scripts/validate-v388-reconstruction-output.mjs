@@ -77,6 +77,7 @@ for (const side of ["pro", "con"]) {
     assertV388Recon(!ids.has(item.id), `${side}: duplicate extension item ID ${item.id}`); ids.add(item.id);
     const novelty = item.novelty;
     assertV388Recon(["extends", "repairs", "introduces"].includes(novelty.classification), `${item.id}: novelty class`);
+    assertV388Recon(new Set(novelty.sourceMoveIds).size === novelty.sourceMoveIds.length, `${item.id}: duplicate novelty move ID`);
     assertV388Recon(novelty.sourceMoveIds.every((id) => allMoveIds.has(id)), `${item.id}: invalid novelty move ID`);
     if (novelty.classification === "introduces") { assertV388Recon(novelty.sourceMoveIds.length === 0, `${item.id}: introduced item has source moves`); introducedItems += 1; }
     else assertV388Recon(novelty.sourceMoveIds.length >= 1, `${item.id}: mapped item lacks source moves`);

@@ -10,7 +10,8 @@ import {
 } from "./lib/v388-reconstruction.mjs";
 
 const root = process.cwd();
-const manifest = await readJson(root, `${V388_RECON_ROOT}/execution-manifest.json`);
+const manifestPath = process.argv[2] ?? `${V388_RECON_ROOT}/execution-manifest.json`;
+const manifest = await readJson(root, manifestPath);
 const codex = "/Applications/ChatGPT.app/Contents/Resources/codex";
 const authSource = path.join(os.homedir(), ".codex", "auth.json");
 const run = (command, args, options = {}, timeoutMs = null) => new Promise((resolve) => {
@@ -22,7 +23,7 @@ const run = (command, args, options = {}, timeoutMs = null) => new Promise((reso
   child.on("close", (code, signal) => { if (timer) clearTimeout(timer); if (forceTimer) clearTimeout(forceTimer); resolve({ code, signal, stdout, stderr, timedOut }); });
 });
 
-assertV388Recon(manifest.status === "frozen-three-context-recovered-diagnostic-authorized" && manifest.authorization.reconstructionModelExecution && manifest.executionPolicy.retriesAuthorized === 0, "reconstruction execution unauthorized");
+assertV388Recon(["frozen-three-context-recovered-diagnostic-authorized", "frozen-schema-compatibility-recovery-authorized"].includes(manifest.status) && manifest.authorization.reconstructionModelExecution && manifest.executionPolicy.retriesAuthorized === 0, "reconstruction execution unauthorized");
 for (const [relativePath, digest] of Object.entries(manifest.sourceHashes)) assertV388Recon(sha256(await readBytes(root, relativePath)) === digest, `${relativePath}: source hash mismatch`);
 for (const future of manifest.futureOutputs) { try { await access(path.resolve(root, future)); throw new Error(`${future}: future output already exists`); } catch (error) { if (error.code !== "ENOENT") throw error; } }
 await access(codex); await access(authSource);

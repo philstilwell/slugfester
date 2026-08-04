@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "3.8.8-reconstruction-schema-compatibility-recovery-audit",
+  "protocolId": "v3.8.8-recovered-diagnostic-reconstruction",
+  "status": "passed-representation-only-schema-recovery",
+  "trigger": {
+    "endpointCode": "invalid_json_schema",
+    "unsupportedKeyword": "uniqueItems",
+    "inferenceStarted": false,
+    "outputWritten": false,
+    "meteredApiCostUsd": 0
+  },
+  "repair": {
+    "removedKeyword": "uniqueItems",
+    "occurrencesRemoved": 24,
+    "semanticUniquenessRuleRetainedInDeterministicValidator": true,
+    "allowedValuesChanged": false,
+    "scoreDataChanged": false,
+    "sourceDataChanged": false,
+    "proseGeneratedBeforeRecovery": false
+  },
+  "comparisons": [
+    {
+      "debateNumber": "55",
+      "originalSchemaPath": "docs/calibration/v3.8.8/reconstruction/schemas/debate-55.schema.json",
+      "originalSha256": "1c55d129e1015a536aab47744e9829af4625b728b1113a21a496b6bb797ec62e",
+      "recoveredSchemaPath": "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/schemas/debate-55.schema.json",
+      "removedUniqueItemsKeywords": 8
+    },
+    {
+      "debateNumber": "103",
+      "originalSchemaPath": "docs/calibration/v3.8.8/reconstruction/schemas/debate-103.schema.json",
+      "originalSha256": "4da899ac3fde4215b8266fb7861d6224b24920ff92041da83982e558c5659c8e",
+      "recoveredSchemaPath": "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/schemas/debate-103.schema.json",
+      "removedUniqueItemsKeywords": 8
+    },
+    {
+      "debateNumber": "161",
+      "originalSchemaPath": "docs/calibration/v3.8.8/reconstruction/schemas/debate-161.schema.json",
+      "originalSha256": "745f842a687c34527d51bd57bbc6c5cf85dbf8103e6ecf9f34f859317934405a",
+      "recoveredSchemaPath": "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/schemas/debate-161.schema.json",
+      "removedUniqueItemsKeywords": 8
+    }
+  ],
+  "authorization": {
+    "automaticRetry": false,
+    "separatelyLockedRecovery": true,
+    "reconstructionModelExecution": false,
+    "productionMutation": false,
+    "tenDebateGate": false,
+    "all195Debates": false
+  }
+}
