@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "3.7.3-initial-atomic-disagreements",
+  "createdAt": "2026-08-04T05:21:23.074Z",
+  "status": "initial-passes-mapped",
+  "sources": {
+    "executionManifestSha256": "b7505b5d2a5a12e9eeeea209bb8877089c85bf32d7aec8dd14f0a0bd5608dbe4",
+    "initialExecutionSha256": "0b553a8c23a4a0a5746a78c7ad1ed080e646bd822068e3c3611f64739ebd60a3",
+    "sealedOptionMapSha256": "ca6622381f8d468ed37ba574284b2e54aa046386248bb3276276da6bfbe23bc0"
+  },
+  "allInitialValid": true,
+  "counts": {
+    "bundles": 8,
+    "agreements": 8,
+    "disagreements": 0,
+    "adjudicationContexts": 0
+  },
+  "comparisons": [
+    {
+      "bundleId": "target-62-04-example",
+      "debateNumber": "62",
+      "passA": {
+        "example.classification": "inside-locked-target"
+      },
+      "passB": {
+        "example.classification": "inside-locked-target"
+      },
+      "agreed": true
+    },
+    {
+      "bundleId": "target-62-09-components",
+      "debateNumber": "62",
+      "passA": {
+        "relevantContraryCandidatePresent": true,
+        "component.c1.contactMode": "distinction",
+        "contrary.classification": "component-contact-precludes-contrary"
+      },
+      "passB": {
+        "relevantContraryCandidatePresent": true,
+        "component.c1.contactMode": "distinction",
+        "contrary.classification": "component-contact-precludes-contrary"
+      },
+      "agreed": true
+    },
+    {
+      "bundleId": "diagnostic-154-15",
+      "debateNumber": "154",
+      "passA": {
+        "consequenceStated": false,
+        "defect.type": "invalid-inference"
+      },
+      "passB": {
+        "consequenceStated": false,
+        "defect.type": "invalid-inference"
+      },
+      "agreed": true
+    },
+    {
+      "bundleId": "target-154-08-components",
+      "debateNumber": "154",
+      "passA": {
+        "relevantContraryCandidatePresent": true,
+        "component.c1.contactMode": "none",
+        "component.c2.contactMode": "none",
+        "contrary.classification": "relevant-no-component"
+      },
+      "passB": {
+        "relevantContraryCandidatePresent": true,
+        "component.c1.contactMode": "none",
+        "component.c2.contactMode": "none",
+        "contrary.classification": "relevant-no-component"
+      },
+      "agreed": true
+    },
+    {
+      "bundleId": "burden-185-05",
+      "debateNumber": "185",
+      "passA": {
+        "candidateSelection": "candidate-2"
+      },
+      "passB": {
+        "candidateSelection": "candidate-2"
+      },
+      "agreed": true
+    },
+    {
+      "bundleId": "diagnostic-185-12",
+      "debateNumber": "185",
+      "passA": {
+        "consequenceStated": true,
+        "consequence.relationKind": "explicit-negation",
+        "defect.type": "scope-mismatch"
+      },
+      "passB": {
+        "consequenceStated": true,
+        "consequence.relationKind": "explicit-negation",
+        "defect.type": "scope-mismatch"
+      },
+      "agreed": true
+    },
+    {
+      "bundleId": "reframe-185-08",
+      "debateNumber": "185",
+      "passA": {
+        "malformedDemand.explained": true,
+        "relationKind": "contrastive",
+        "replacementDemand.stated": true
+      },
+      "passB": {
+        "malformedDemand.explained": true,
+        "relationKind": "contrastive",
+        "replacementDemand.stated": true
+      },
+      "agreed": true
+    },
+    {
+      "bundleId": "reframe-185-12",
+      "debateNumber": "185",
+      "passA": {
+        "malformedDemand.explained": true,
+        "replacementDemand.stated": true,
+        "relationKind": "contrastive"
+      },
+      "passB": {
+        "malformedDemand.explained": true,
+        "replacementDemand.stated": true,
+        "relationKind": "contrastive"
+      },
+      "agreed": true
+    }
+  ],
+  "adjudicationContexts": [],
+  "broaderModelBatchAuthorized": false,
+  "heldOutAccessAuthorized": false,
+  "numericalScoringAuthorized": false,
+  "assessmentProseAuthorized": false,
+  "productionMutationAuthorized": false
+}

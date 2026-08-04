@@ -1,0 +1,208 @@
+{
+  "schemaVersion": "3.7.3-atomic-correction-smoke-execution-manifest",
+  "protocolId": "v3.7.3-exposed-atomic-bundle-correction-smoke",
+  "status": "frozen-before-model-execution",
+  "frozenAt": "2026-08-04T05:19:26.141Z",
+  "root": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "exposedDevelopmentCases": true,
+  "correctionSmokeExecutionAuthorized": true,
+  "authorizationScope": "Exactly six initial atomic-bundle contexts and at most one isolated adjudication context per sampled debate, solely for the v3.7.3 correction smoke.",
+  "developmentLock": {
+    "path": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/development-manifest.json",
+    "sha256": "dd2d37af4994f6c81b0998e316bde40a96ff7e0006e1f149a73a00053ff6ddbd",
+    "remainsImmutableAndModelExecutionBlocked": true,
+    "narrowLaterExecutionAuthorization": true
+  },
+  "workflowVersion": "Slugfester Atomic-Bundle Correction-Smoke Workflow v3.7.3",
+  "rubricVersion": "Slugfester Atomic-Bundle Correction-Smoke Rubric v3.7.3",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "debateNumbers": [
+    "62",
+    "154",
+    "185"
+  ],
+  "modelInputs": {
+    "workflow": "docs/assessment-workflow-v3.7.3.md",
+    "rubric": "docs/reassessment-rubric-v3.7.3.md",
+    "manual": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/smoke-manual.md"
+  },
+  "sealedOptionMap": {
+    "path": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/sealed-atomic-option-map.json",
+    "sha256": "ca6622381f8d468ed37ba574284b2e54aa046386248bb3276276da6bfbe23bc0",
+    "unavailableToModelContexts": true
+  },
+  "isolation": {
+    "twoInitialContextsPerDebate": true,
+    "thirdContextOnlyForDisputedBundles": true,
+    "candidateOriginsUnavailable": true,
+    "otherPassOutputsUnavailable": true,
+    "independentClaim": "isolated-context judgments; not statistical independence"
+  },
+  "consensusPolicy": {
+    "finalSemanticTupleRequiresMatchingVotes": 2,
+    "thirdPassReceivesOnlyDisputedBundles": true,
+    "thirdPassCannotAddCandidateTuples": true,
+    "thirdPassTupleSelectedByNeitherInitialPassRemainsUnresolved": true,
+    "scoresDerivedOnlyAfterAdjudication": true
+  },
+  "executionPolicy": {
+    "initialContexts": 6,
+    "adjudicationContextsMaximum": 3,
+    "attemptsPerContext": 1,
+    "modelOutputRetriesMaximum": 0,
+    "preInferenceSchemaRejectionsMaximum": 0,
+    "sameRequestStreamRecoveriesMaximum": 0,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "thresholds": {
+    "validInitialContexts": 6,
+    "atomicBundles": 8,
+    "initialAtomicBundleAgreementsMinimum": 7,
+    "initialInvalidBundlesMaximum": 0,
+    "finalTwoVoteBundlesRequired": 8,
+    "unresolvedBundlesMaximum": 0,
+    "scoringFieldsMaximum": 0
+  },
+  "passMeaning": "A passing correction smoke may authorize preregistration of a disjoint retired atomic-bundle test only.",
+  "prohibitions": {
+    "correctedBenchmarkKey": true,
+    "broaderModelBatch": true,
+    "heldOutAccess": true,
+    "numericalParticipantScoring": true,
+    "assessmentProse": true,
+    "productionMutation": true
+  },
+  "initialContexts": {
+    "pass-a": {
+      "62": {
+        "debateNumber": "62",
+        "reviewerPass": "pass-a",
+        "packet": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/packets/pass-a/debate-62.json",
+        "packetSha256": "886e3f2daabf3ae0887de4c87d6a6ac830606616fdbdefd33504877579f1ac1b",
+        "schema": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/schemas/pass-a/debate-62.schema.json",
+        "schemaSha256": "6c339f90c6b75e16bb358bfd9cf3ecf6283ea3bf11d9d4cfa6fdad3a47574540",
+        "output": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/outputs/pass-a/debate-62.json",
+        "bundleCount": 2
+      },
+      "154": {
+        "debateNumber": "154",
+        "reviewerPass": "pass-a",
+        "packet": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/packets/pass-a/debate-154.json",
+        "packetSha256": "bbb868c33a6932fa0091e06c0b235aa0330340cbdcd2fd4407080725d5a9d542",
+        "schema": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/schemas/pass-a/debate-154.schema.json",
+        "schemaSha256": "ad0e4fe75014076b57b68f2a8d09aa761f06d9404a20791c4c4a0165f4363bfe",
+        "output": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/outputs/pass-a/debate-154.json",
+        "bundleCount": 2
+      },
+      "185": {
+        "debateNumber": "185",
+        "reviewerPass": "pass-a",
+        "packet": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/packets/pass-a/debate-185.json",
+        "packetSha256": "46a435bee10bae7d671e2bf3966754b0ae81b78e011f0eebb417cefc7596903e",
+        "schema": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/schemas/pass-a/debate-185.schema.json",
+        "schemaSha256": "55f265f26eff7d7710ca99911e84d371744d21edba954d619f77b5afd531d899",
+        "output": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/outputs/pass-a/debate-185.json",
+        "bundleCount": 4
+      }
+    },
+    "pass-b": {
+      "62": {
+        "debateNumber": "62",
+        "reviewerPass": "pass-b",
+        "packet": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/packets/pass-b/debate-62.json",
+        "packetSha256": "d9416202fb651d6b2374f9c314fdd1d8dc2346c691ae4bc81cf829d70784e8d3",
+        "schema": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/schemas/pass-b/debate-62.schema.json",
+        "schemaSha256": "6611790dbc6beebc1d686bd94c0ec3751a8626ef495773714009be99b0b9756f",
+        "output": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/outputs/pass-b/debate-62.json",
+        "bundleCount": 2
+      },
+      "154": {
+        "debateNumber": "154",
+        "reviewerPass": "pass-b",
+        "packet": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/packets/pass-b/debate-154.json",
+        "packetSha256": "1ec9f9ea6f46be1dea8f3c26dac6e7e81eb93670b329897e429457bc2f531cfd",
+        "schema": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/schemas/pass-b/debate-154.schema.json",
+        "schemaSha256": "1cd54ab559f5814fcb593293418bc8504dda574756a85d13f5ac221246aec121",
+        "output": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/outputs/pass-b/debate-154.json",
+        "bundleCount": 2
+      },
+      "185": {
+        "debateNumber": "185",
+        "reviewerPass": "pass-b",
+        "packet": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/packets/pass-b/debate-185.json",
+        "packetSha256": "2947823c4a1d796ed62c9587a5d64400e09a12c268bc4fd10175c8036c967446",
+        "schema": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/schemas/pass-b/debate-185.schema.json",
+        "schemaSha256": "b6d6e23682bbcc88a2b87c0d74e4011661591c2a64a10fd5dbb043bb9146504f",
+        "output": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/outputs/pass-b/debate-185.json",
+        "bundleCount": 4
+      }
+    }
+  },
+  "outputs": {
+    "initial": {
+      "pass-a": {
+        "62": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/outputs/pass-a/debate-62.json",
+        "154": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/outputs/pass-a/debate-154.json",
+        "185": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/outputs/pass-a/debate-185.json"
+      },
+      "pass-b": {
+        "62": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/outputs/pass-b/debate-62.json",
+        "154": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/outputs/pass-b/debate-154.json",
+        "185": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/outputs/pass-b/debate-185.json"
+      }
+    }
+  },
+  "artifacts": {
+    "initialExecution": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/initial-model-execution.json",
+    "initialDisagreements": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/initial-disagreements.json",
+    "adjudicationOptionMap": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/adjudication-option-map.json",
+    "adjudicationExecution": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/adjudication-model-execution.json",
+    "analysis": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/correction-smoke-analysis.json",
+    "assessment": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/execution-assessment.md"
+  },
+  "sourceHashes": {
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/development-manifest.json": "dd2d37af4994f6c81b0998e316bde40a96ff7e0006e1f149a73a00053ff6ddbd",
+    "docs/assessment-workflow-v3.7.3.md": "3002b61809564709d78106b5ff3cb72250ed0cfcdaab7309682af1ae3ab8c1e6",
+    "docs/reassessment-rubric-v3.7.3.md": "17aa22287a863acf9d750fddd4441348d6be67fe942d299a75e954d4eab760be",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/smoke-manual.md": "160f004596cb4da7cf51ccf8a85a9873be905f650f341ef9d741098eafd94dca",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/dry-fixture.json": "d33e5b06a23915475ac93e406b2d34274a38d882449ff613120fef9bf339b227",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/sealed-atomic-option-map.json": "ca6622381f8d468ed37ba574284b2e54aa046386248bb3276276da6bfbe23bc0",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/packets/pass-a/debate-62.json": "886e3f2daabf3ae0887de4c87d6a6ac830606616fdbdefd33504877579f1ac1b",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/schemas/pass-a/debate-62.schema.json": "6c339f90c6b75e16bb358bfd9cf3ecf6283ea3bf11d9d4cfa6fdad3a47574540",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/packets/pass-a/debate-154.json": "bbb868c33a6932fa0091e06c0b235aa0330340cbdcd2fd4407080725d5a9d542",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/schemas/pass-a/debate-154.schema.json": "ad0e4fe75014076b57b68f2a8d09aa761f06d9404a20791c4c4a0165f4363bfe",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/packets/pass-a/debate-185.json": "46a435bee10bae7d671e2bf3966754b0ae81b78e011f0eebb417cefc7596903e",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/schemas/pass-a/debate-185.schema.json": "55f265f26eff7d7710ca99911e84d371744d21edba954d619f77b5afd531d899",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/packets/pass-b/debate-62.json": "d9416202fb651d6b2374f9c314fdd1d8dc2346c691ae4bc81cf829d70784e8d3",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/schemas/pass-b/debate-62.schema.json": "6611790dbc6beebc1d686bd94c0ec3751a8626ef495773714009be99b0b9756f",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/packets/pass-b/debate-154.json": "1ec9f9ea6f46be1dea8f3c26dac6e7e81eb93670b329897e429457bc2f531cfd",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/schemas/pass-b/debate-154.schema.json": "1cd54ab559f5814fcb593293418bc8504dda574756a85d13f5ac221246aec121",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/packets/pass-b/debate-185.json": "2947823c4a1d796ed62c9587a5d64400e09a12c268bc4fd10175c8036c967446",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/schemas/pass-b/debate-185.schema.json": "b6d6e23682bbcc88a2b87c0d74e4011661591c2a64a10fd5dbb043bb9146504f",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v37-retired-semantic.mjs": "2fe113760e4b2bb97104025d39755d8ceeeecded89fbaea683cc5c9cce188296",
+    "scripts/lib/v372-atomic-bundles.mjs": "ec5908ea20bd0b099095257ee614d07893a1b245bf693abee2f697a3f0de0a0c",
+    "scripts/lib/v373-atomic-packets.mjs": "48328b7bcbe76e08ba8623594ecad4f6b6c32af972da38c58d0bfd4f9727a42f",
+    "scripts/build-v373-atomic-packets.mjs": "a6d453c125d84be6f2ebd87f184110de8b3900fb6222fbf4bba798a197bda356",
+    "scripts/validate-v373-atomic-output.mjs": "2895ec409c0808e3bc795b0c4bb1ab7aa622ba9864a640c7d7182d2fd1458e9b",
+    "scripts/test-v373-atomic-packets.mjs": "4d9543a752f0ced1427c341fd63ef3eb23513042b3cdb58c345b079c560574e5",
+    "scripts/preregister-v373-atomic-packet-development.mjs": "e06ed72a842724867f67a6d88c3ec61e6cf8daf2658cb98795d8c33833f9949f",
+    "docs/calibration/v3.7.2/atomic-bundle-replay/replay-manifest.json": "7fe284355797e728b938659b0578d3a9d144726e3215c1d01e353699092e3e81",
+    "docs/calibration/v3.7.2/atomic-bundle-replay/replay-analysis.json": "b04b568944626ae1e98565750b9f34c2052b5d0bfd2b95076ce3e17fd3487a81",
+    "scripts/lib/v373-execution.mjs": "67e9442ebfc24ea606df9afb8bfad048356ca916e2386718db8cd5167f4db1f4",
+    "scripts/extract-v373-atomic-disagreements.mjs": "02091066c67fc2e68f20eeb3f9cddf6584cd4bf4660ce10a20f58544922adeb8",
+    "scripts/run-v373-atomic-correction-smoke.mjs": "a7ebc43ac5da2eea70fc18dddd61f1a95974c78d6a1d9a052ec455646b794778",
+    "scripts/analyze-v373-atomic-correction-smoke.mjs": "3f3eedb4a1c95448e1edf833d0173f04e6594b8eed8a90dad671be08e19e7ade",
+    "scripts/preregister-v373-execution.mjs": "1c9c91bd9183d3b530e44668e108807feb00752005805811c6850839840dc9a7",
+    "scripts/validate-v373-atomic-correction-smoke.mjs": "6b23f0697e810c76d5f27f231513c412afccd8e9fea61b99ab81d8f26abc7ee2"
+  }
+}
