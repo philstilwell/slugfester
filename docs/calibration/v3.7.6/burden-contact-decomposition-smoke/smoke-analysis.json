@@ -1,0 +1,301 @@
+{
+  "schemaVersion": "3.7.6-burden-contact-decomposition-analysis",
+  "analyzedAt": "2026-08-04T06:12:38.006Z",
+  "status": "burden-contact-smoke-pass",
+  "warning": "This exposed AI-only correction smoke tests repeatability of composite burden-contact choices on known development cases; it does not establish human ground truth, generalization, participant performance, or production readiness.",
+  "sources": {
+    "executionManifestSha256": "3dd2ba1153c8091eacd246b8fd68150b9801e6140f7f820b3aad19d5097a925c",
+    "initialExecutionSha256": "11cafb6b963ca7a93933559d3efcfa87589c6297503b4d3b874ec5b2a4cbc408",
+    "initialDisagreementsSha256": "3e98993b1fc91214e01ef4fde7d314d35c6de8f0caa5ef3b3f255b8855753414",
+    "adjudicationExecutionSha256": "fadd78e5f02ef81a0a89f313ab5d0a1a4d50d98bf86f474dee1d83be71d07f38",
+    "sealedOptionMapSha256": "187f05ae2e6e5311ad3baa292de90d63da3310a6fe41dd93153a5401b8be751f",
+    "adjudicationOptionMapSha256": "4ea8eed3fae4baf5026b7da3b260da5b717c374e7108cb92a633da89646f6f62"
+  },
+  "results": {
+    "initial": {
+      "compositeCases": 8,
+      "agreements": 8,
+      "disagreements": 0,
+      "adjudicationContexts": 0
+    },
+    "final": {
+      "compositeCases": 8,
+      "resolved": 8,
+      "matchesDesignFixture": 6,
+      "differsFromDesignFixture": 2,
+      "contactCounts": {
+        "none": 1,
+        "support": 5,
+        "attack": 2
+      },
+      "decisions": [
+        {
+          "bundleId": "burden-contact-62-04",
+          "debateNumber": "62",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-con-subsidiary-social-unity"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-con-subsidiary-social-unity"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "polarity": "support",
+              "tier": "subsidiary",
+              "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-con-subsidiary-social-unity"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesDesignFixture": false
+        },
+        {
+          "bundleId": "burden-contact-62-09",
+          "debateNumber": "62",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-pro-subsidiary-symbolic-meaning"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-pro-subsidiary-symbolic-meaning"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "polarity": "support",
+              "tier": "subsidiary",
+              "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-pro-subsidiary-symbolic-meaning"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesDesignFixture": true
+        },
+        {
+          "bundleId": "burden-contact-154-08",
+          "debateNumber": "154",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary-conversion"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary-conversion"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "polarity": "support",
+              "tier": "subsidiary",
+              "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary-conversion"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesDesignFixture": true
+        },
+        {
+          "bundleId": "burden-contact-154-12",
+          "debateNumber": "154",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary-dharma"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary-dharma"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "polarity": "support",
+              "tier": "subsidiary",
+              "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary-dharma"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesDesignFixture": true
+        },
+        {
+          "bundleId": "burden-contact-154-15",
+          "debateNumber": "154",
+          "votes": {
+            "passA": {
+              "burdenContact": null
+            },
+            "passB": {
+              "burdenContact": null
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": null
+          },
+          "supportingVotes": 2,
+          "matchesDesignFixture": true
+        },
+        {
+          "bundleId": "burden-contact-185-05",
+          "debateNumber": "185",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "con-subsidiary-indeterminacy"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "con-subsidiary-indeterminacy"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "polarity": "support",
+              "tier": "subsidiary",
+              "bridgeId": "con-subsidiary-indeterminacy"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesDesignFixture": false
+        },
+        {
+          "bundleId": "burden-contact-185-07",
+          "debateNumber": "185",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-sourcehood"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-sourcehood"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "polarity": "attack",
+              "tier": "central",
+              "bridgeId": "con-central-sourcehood"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesDesignFixture": true
+        },
+        {
+          "bundleId": "burden-contact-185-08",
+          "debateNumber": "185",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "motion",
+                "bridgeId": "pro-motion-responsibility"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "motion",
+                "bridgeId": "pro-motion-responsibility"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "polarity": "attack",
+              "tier": "motion",
+              "bridgeId": "pro-motion-responsibility"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesDesignFixture": true
+        }
+      ]
+    }
+  },
+  "gates": {
+    "structural": {
+      "initialContextsCompleted": true,
+      "initialContextsValid": true,
+      "adjudicationContextsValid": true,
+      "preInferenceSchemaRejections": true,
+      "modelOutputRetries": true,
+      "streamRecoveries": true,
+      "invalidInitialBundles": true,
+      "scoringFields": true,
+      "meteredApiCost": true,
+      "transcriptionCost": true
+    },
+    "semantic": {
+      "bundleCoverage": true,
+      "perfectInitialAgreement": true,
+      "finalTwoVoteConsensus": true,
+      "unresolvedBundles": true
+    }
+  },
+  "passed": true,
+  "decision": {
+    "caseDisjointBurdenContactTestPreregistrationAuthorized": true,
+    "benchmarkMutationAuthorized": false,
+    "largerModelBatchAuthorized": false,
+    "heldOutAccessAuthorized": false,
+    "numericalParticipantScoringAuthorized": false,
+    "assessmentProseAuthorized": false,
+    "productionMutationAuthorized": false
+  }
+}
