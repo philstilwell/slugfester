@@ -1,0 +1,252 @@
+{
+  "schemaVersion": "3.8.8-performance-judgment-initial-execution-manifest",
+  "protocolId": "v3.8.8-performance-judgment-consensus",
+  "stage": "two-independent-score-blind-performance-passes",
+  "status": "frozen-six-context-authorized",
+  "frozenAt": "2026-08-04T17:45:00.000Z",
+  "checkpointCommit": "ebf00708ca063ef4dd66ce9f597bbdb1f8db9f00",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "modelInputs": {
+    "workflow": "docs/assessment-workflow-v3.8.4.md",
+    "rubric": "docs/reassessment-rubric-v3.8.4.md",
+    "manual": "docs/calibration/v3.8.8/performance-judgment-consensus/manual.md",
+    "sharedSchema": "docs/calibration/v3.8.8/performance-judgment-consensus/performance-judgment-schema.json",
+    "fullTranscriptRequired": true,
+    "timestampedEventsRequired": true
+  },
+  "population": {
+    "debates": 3,
+    "moves": 81,
+    "movesByDebate": {
+      "55": 28,
+      "103": 25,
+      "161": 28
+    },
+    "highConfidenceAttributions": 81,
+    "pendingAudioVerifications": 0
+  },
+  "contexts": [
+    {
+      "pass": "A",
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "moveCount": 28,
+      "packet": "docs/calibration/v3.8.8/performance-judgment-consensus/packets/debate-55.json",
+      "schema": "docs/calibration/v3.8.8/performance-judgment-consensus/performance-judgment-schema.json",
+      "transcript": ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt",
+      "events": ".assessment-cache/captions/zQBY5K-Ns2Y/events.json",
+      "captionManifest": ".assessment-cache/captions/zQBY5K-Ns2Y/manifest.json",
+      "output": "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-55-pass-a.json"
+    },
+    {
+      "pass": "A",
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "moveCount": 25,
+      "packet": "docs/calibration/v3.8.8/performance-judgment-consensus/packets/debate-103.json",
+      "schema": "docs/calibration/v3.8.8/performance-judgment-consensus/performance-judgment-schema.json",
+      "transcript": ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt",
+      "events": ".assessment-cache/captions/g1TlLCSn_5o/events.json",
+      "captionManifest": ".assessment-cache/captions/g1TlLCSn_5o/manifest.json",
+      "output": "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-103-pass-a.json"
+    },
+    {
+      "pass": "A",
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "moveCount": 28,
+      "packet": "docs/calibration/v3.8.8/performance-judgment-consensus/packets/debate-161.json",
+      "schema": "docs/calibration/v3.8.8/performance-judgment-consensus/performance-judgment-schema.json",
+      "transcript": ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt",
+      "events": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+      "captionManifest": ".assessment-cache/captions/9JVRy7bR7zI/manifest.json",
+      "output": "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-161-pass-a.json"
+    },
+    {
+      "pass": "B",
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "moveCount": 28,
+      "packet": "docs/calibration/v3.8.8/performance-judgment-consensus/packets/debate-55.json",
+      "schema": "docs/calibration/v3.8.8/performance-judgment-consensus/performance-judgment-schema.json",
+      "transcript": ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt",
+      "events": ".assessment-cache/captions/zQBY5K-Ns2Y/events.json",
+      "captionManifest": ".assessment-cache/captions/zQBY5K-Ns2Y/manifest.json",
+      "output": "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-55-pass-b.json"
+    },
+    {
+      "pass": "B",
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "moveCount": 25,
+      "packet": "docs/calibration/v3.8.8/performance-judgment-consensus/packets/debate-103.json",
+      "schema": "docs/calibration/v3.8.8/performance-judgment-consensus/performance-judgment-schema.json",
+      "transcript": ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt",
+      "events": ".assessment-cache/captions/g1TlLCSn_5o/events.json",
+      "captionManifest": ".assessment-cache/captions/g1TlLCSn_5o/manifest.json",
+      "output": "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-103-pass-b.json"
+    },
+    {
+      "pass": "B",
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "moveCount": 28,
+      "packet": "docs/calibration/v3.8.8/performance-judgment-consensus/packets/debate-161.json",
+      "schema": "docs/calibration/v3.8.8/performance-judgment-consensus/performance-judgment-schema.json",
+      "transcript": ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt",
+      "events": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+      "captionManifest": ".assessment-cache/captions/9JVRy7bR7zI/manifest.json",
+      "output": "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-161-pass-b.json"
+    }
+  ],
+  "authorization": {
+    "initialPerformanceContexts": 6,
+    "initialPerformanceModelExecution": true,
+    "deterministicDisagreementExtractionAfterPass": true,
+    "performanceAdjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "numericalParticipantScoring": false,
+    "assessmentProse": false,
+    "productionMutation": false,
+    "tenDebateGate": false,
+    "all195Debates": false
+  },
+  "isolation": {
+    "freshTemporaryCodexHomePerContext": true,
+    "freshSourceDirectoryPerContext": true,
+    "exactSamePacketForBothPasses": true,
+    "exactSameClosedSchemaForAllContexts": true,
+    "otherPassUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerUnavailable": true,
+    "participantAssessmentProseUnavailable": true,
+    "overallCommentaryUnavailable": true,
+    "aiExtensionUnavailable": true
+  },
+  "judgmentPolicy": {
+    "responseTupleCompound": true,
+    "responseTupleFields": [
+      "class",
+      "decisiveTargetIds",
+      "contactedComponents",
+      "totalComponents"
+    ],
+    "explicitContactedAndMissedComponents": true,
+    "lockedBurdenTupleCopied": true,
+    "responseBandsEnforced": true,
+    "burdenBandsEnforced": true,
+    "charityTestedExplicit": true,
+    "untestedCharityExactly75": true,
+    "duplicateBurdenAdjustmentCaptureForcesZero": true,
+    "modelCalculatedTotalsProhibited": true,
+    "modelAssessmentProseProhibited": true
+  },
+  "disagreementPolicy": {
+    "deterministic": true,
+    "responseTupleMismatchAlwaysDisputed": true,
+    "charityTestedMismatchAlwaysDisputed": true,
+    "scalarDeltaGreaterThan": 5,
+    "diagnosticMoveDeltaGreaterThan": 4,
+    "burdenAdjustmentSemanticMismatchAlwaysDisputed": true,
+    "thirdPassDisputedFieldsOnly": true,
+    "thirdPassMayChooseOnlyTwoInitialCandidates": true,
+    "finalSemanticChoiceRequiresVotes": 2
+  },
+  "audioPolicy": {
+    "mediumConfidenceRequiresCompletedAudioVerification": true,
+    "highConfidenceAttributions": 81,
+    "pendingAudioVerifications": 0
+  },
+  "executionPolicy": {
+    "contexts": 6,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "perInvocationTimeoutMs": 3600000,
+    "recoverableStreamEventsNormalMaximum": 2,
+    "recoverableStreamEventsHardMaximum": 8,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "acceptanceRule": {
+    "validContextsRequired": 6,
+    "validMoveJudgmentsRequiredAcrossPasses": 162,
+    "singleSharedSchemaRequired": true,
+    "invalidMoveJudgmentsMaximum": 0,
+    "modelCalculatedTotalsMaximum": 0,
+    "modelAssessmentProseFieldsMaximum": 0,
+    "disagreementCountDoesNotFailInitialPhase": true
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocksExecution": true,
+    "preexistingOutputBlocksExecution": true,
+    "invalidContextBlocksDisagreementExtraction": true,
+    "pendingAudioBlocksExecution": true,
+    "furtherAutomaticRetryAuthorized": false,
+    "adjudicationRequiresSeparatePhaseLock": true,
+    "scoreDerivationRemainsBlocked": true,
+    "assessmentProseRemainsBlocked": true
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v3.8.8/performance-judgment-consensus/initial-model-execution.json",
+    "outputs": [
+      "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-55-pass-a.json",
+      "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-103-pass-a.json",
+      "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-161-pass-a.json",
+      "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-55-pass-b.json",
+      "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-103-pass-b.json",
+      "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-161-pass-b.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-55-pass-a.json",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-103-pass-a.json",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-161-pass-a.json",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-55-pass-b.json",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-103-pass-b.json",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/initial-outputs/debate-161-pass-b.json",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/initial-model-execution.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.8.4.md": "49dda91a87c0ebbab9666d6c732035bde17939d84f4b71b326f4f04b917ddd5a",
+    "docs/reassessment-rubric-v3.8.4.md": "fda29887abb26f1f5a6f7b772e26434db0c055ec3efe42be4eeea602f5a84909",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/manual.md": "aaa0896493eac6fe72728e84fdd560f50817d1709bbfba36154ee0cb7566457c",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/preregistration.md": "756e131da6b435d964fb091248c292a0e256b2068600ac88cc3f7d2e554d39e0",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/preparation-assessment.md": "2f44a8a79a7babcea14d340b16d055c690dc41d430e711475f0b25ea8a2e4e02",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/preparation-manifest.json": "be0bd9e506057de49fa39745ade7278dcd450a3dd83a800ad52dbb8017c749df",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/dry-fixture.json": "d81cb41a3ad7a2e334a04582f84a1b53e270c0580ce1c6271b7f250bb464d52c",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/performance-judgment-schema.json": "8e4eae9b3ae25442f4345b2c2f737cc75fc683b9354dc49f23b5e94a8999ddcf",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v388-performance-judgment.mjs": "4ad619ff1ace3131207ab38b7115179a18c39b50e72e873045a9c5bbe6d44c2a",
+    "scripts/build-v388-performance-judgment-packets.mjs": "17002559c7bc7d025accff7312574dcf813e23dd7d07811d376214940970925c",
+    "scripts/test-v388-performance-judgment-tooling.mjs": "56b0c3fce0c3ee23de65eaaed11be85bb0c5981ac32200faf5362e73f2f9ab25",
+    "scripts/validate-v388-performance-judgment-preparation.mjs": "afe3be4adc7b58d4bc84bf439a7f7efd6c55498b4be21b821c2807fbfaa383d0",
+    "scripts/validate-v388-performance-judgment-output.mjs": "40ecc0aa912470017ee6282a50573abfd3794ae1067bc6ae5a4037e15264c41f",
+    "scripts/preregister-v388-performance-judgment-execution.mjs": "120143516a9fc6f2b12f39e7d01453747867720bcdac319dad9766b6acef2723",
+    "scripts/validate-v388-performance-judgment-execution-lock.mjs": "d717bc8cc20135a37aeba04b9b772c1bd30b20b53a9781f25718184c67bc457e",
+    "scripts/run-v388-performance-judgment-initial.mjs": "dfed569983346730531c286ac6247eec67d246ca75c96b5d7c7e219bcf3d1cb5",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/packets/debate-55.json": "e16f38adac68c99504ee76cfe0755641befa3cd81296603f9762aa093a605b3b",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt": "305d9eacbd581a9aac9f5f246f63097deef6e6020af7a8031e14ca9cfbba66c2",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/events.json": "d09e63acc41236158b808b6242c871428a467697fba1f2454cfac143c185aa3f",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/manifest.json": "73f97e374fa98f388528e03ed39e1272f77c9fec6cee46345fdfba9c3177c099",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/packets/debate-103.json": "47d913cb51b179bfcf2d7810b9c1a4dcbf55dd8732aaf058d8d240ac5baae284",
+    ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt": "f852392592bdbaf149c1816fe93fb76e84b65577b4c6d85c52a50bb2db95be29",
+    ".assessment-cache/captions/g1TlLCSn_5o/events.json": "b9846f8275ade82451cfd86a4b4b5eefa89a9bbf1515067e2e18965bcadf03dc",
+    ".assessment-cache/captions/g1TlLCSn_5o/manifest.json": "0e24d0057065d03651c845abfd66fa90a04ed2dfbd582afe098e60d830fbde2a",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/packets/debate-161.json": "61f9b7f8997fb72dbfb1582d11d3d09d779f26f6468a71268d32198988a199a2",
+    ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt": "9de6853aa2dd4eaf8e0d669f895b719b7fbc15ab55a7f8eab271c92974771b78",
+    ".assessment-cache/captions/9JVRy7bR7zI/events.json": "5dd29c053f0e5da4ed79b6f818fb844a6515552671dbc4014916d18ca1d2cbbc",
+    ".assessment-cache/captions/9JVRy7bR7zI/manifest.json": "436f3f2be4fd5e84338f6244eae1398dbcb11c56ac514920a80cad440790dc18"
+  }
+}
