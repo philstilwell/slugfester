@@ -1,0 +1,265 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v384-scoring-judgment-pass",
+  "title": "Slugfester v3.8.4 scoring judgment pass",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "workflowVersion",
+    "rubricVersion",
+    "protocolId",
+    "debateId",
+    "debateNumber",
+    "pass",
+    "assessmentModel",
+    "calibrationOnly",
+    "completedAt",
+    "isolation",
+    "source",
+    "moveJudgments",
+    "burdenCompletionAdjustment",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {"const": "3.8.4-scoring-judgment-pass"},
+    "workflowVersion": {"const": "Slugfester End-to-End Consensus Workflow v3.8.4"},
+    "rubricVersion": {"const": "Slugfester Reassessment Rubric v3.8.4"},
+    "protocolId": {"const": "v3.8.4-heldout-score-reconstruction-gate"},
+    "debateId": {"type": "string", "minLength": 1},
+    "debateNumber": {"type": "string", "minLength": 1},
+    "pass": {"enum": ["A", "B"]},
+    "assessmentModel": {"const": "5.6 Sol"},
+    "calibrationOnly": {"const": true},
+    "completedAt": {"type": "string", "format": "date-time"},
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method", "allowedInputs", "prohibitedInputsConfirmed", "contaminationDetected", "statement"],
+      "properties": {
+        "method": {"const": "fresh-isolated-v384-scoring-context"},
+        "allowedInputs": {"type": "array", "minItems": 8, "items": {"type": "string"}, "uniqueItems": true},
+        "prohibitedInputsConfirmed": {"const": true},
+        "contaminationDetected": {"const": false},
+        "statement": {"type": "string", "minLength": 40}
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "videoId",
+        "lockedPacketPath",
+        "lockedPacketSha256",
+        "finalSourceInventorySha256",
+        "finalBurdenContactLockSha256",
+        "transcriptSha256",
+        "eventsSha256",
+        "captionManifestSha256",
+        "audioVerificationSha256",
+        "gateManifestSha256",
+        "workflowSha256",
+        "rubricSha256",
+        "schemaSha256",
+        "limitations"
+      ],
+      "properties": {
+        "videoId": {"type": "string", "minLength": 1},
+        "lockedPacketPath": {"type": "string", "minLength": 1},
+        "lockedPacketSha256": {"$ref": "#/$defs/digest"},
+        "finalSourceInventorySha256": {"$ref": "#/$defs/digest"},
+        "finalBurdenContactLockSha256": {"$ref": "#/$defs/digest"},
+        "transcriptSha256": {"$ref": "#/$defs/digest"},
+        "eventsSha256": {"$ref": "#/$defs/digest"},
+        "captionManifestSha256": {"$ref": "#/$defs/digest"},
+        "audioVerificationSha256": {"$ref": "#/$defs/digest"},
+        "gateManifestSha256": {"$ref": "#/$defs/digest"},
+        "workflowSha256": {"$ref": "#/$defs/digest"},
+        "rubricSha256": {"$ref": "#/$defs/digest"},
+        "schemaSha256": {"$ref": "#/$defs/digest"},
+        "limitations": {"type": "string", "minLength": 1}
+      }
+    },
+    "moveJudgments": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/moveJudgment"}
+    },
+    "burdenCompletionAdjustment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pro", "con"],
+      "properties": {
+        "pro": {"$ref": "#/$defs/adjustment"},
+        "con": {"$ref": "#/$defs/adjustment"}
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "moveCount",
+        "allMovesJudgedOnce",
+        "lockedSourceFieldsCopied",
+        "responseBandsApplied",
+        "burdenBandsApplied",
+        "calculatedTotalsAbsent",
+        "legacyMaterialUnavailable",
+        "otherPassUnavailable"
+      ],
+      "properties": {
+        "moveCount": {"type": "integer", "minimum": 1},
+        "allMovesJudgedOnce": {"const": true},
+        "lockedSourceFieldsCopied": {"const": true},
+        "responseBandsApplied": {"const": true},
+        "burdenBandsApplied": {"const": true},
+        "calculatedTotalsAbsent": {"const": true},
+        "legacyMaterialUnavailable": {"const": true},
+        "otherPassUnavailable": {"const": true}
+      }
+    }
+  },
+  "$defs": {
+    "digest": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "rating": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "rationale"],
+      "properties": {
+        "value": {"type": "integer", "minimum": 0, "maximum": 100},
+        "rationale": {"type": "string", "minLength": 40}
+      }
+    },
+    "burdenContact": {
+      "anyOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["polarity", "tier", "bridgeId"],
+          "properties": {
+            "polarity": {"enum": ["support", "attack"]},
+            "tier": {"enum": ["motion", "central", "subsidiary"]},
+            "bridgeId": {"type": "string", "minLength": 1}
+          }
+        }
+      ]
+    },
+    "response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["class", "decisiveTargetIds", "contactedComponents", "totalComponents", "rationale"],
+      "properties": {
+        "class": {
+          "enum": [
+            "constructive-opening",
+            "full-answer",
+            "partial-answer",
+            "diagnostic-defeat",
+            "relevant-nonanswer",
+            "justified-reframe",
+            "nonanswer"
+          ]
+        },
+        "decisiveTargetIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "contactedComponents": {"type": "integer", "minimum": 0},
+        "totalComponents": {"type": "integer", "minimum": 0},
+        "rationale": {"type": "string", "minLength": 60}
+      }
+    },
+    "ratings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "logicalCoherence",
+        "evidenceWarrant",
+        "responsiveness",
+        "relevanceBurden",
+        "precisionClarity",
+        "epistemicCalibration",
+        "representationalCharity"
+      ],
+      "properties": {
+        "logicalCoherence": {"$ref": "#/$defs/rating"},
+        "evidenceWarrant": {"$ref": "#/$defs/rating"},
+        "responsiveness": {"$ref": "#/$defs/rating"},
+        "relevanceBurden": {"$ref": "#/$defs/rating"},
+        "precisionClarity": {"$ref": "#/$defs/rating"},
+        "epistemicCalibration": {"$ref": "#/$defs/rating"},
+        "representationalCharity": {"$ref": "#/$defs/rating"}
+      }
+    },
+    "moveJudgment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "sourceSpan",
+        "lockedBurdenContact",
+        "response",
+        "ratings",
+        "evidenceBasis",
+        "assessmentConfidence"
+      ],
+      "properties": {
+        "moveId": {"type": "string", "minLength": 1},
+        "sectionId": {"type": "string", "minLength": 1},
+        "side": {"enum": ["pro", "con"]},
+        "speaker": {"type": "string", "minLength": 1},
+        "sourceSpan": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["startMs", "endMs"],
+          "properties": {
+            "startMs": {"type": "integer", "minimum": 0},
+            "endMs": {"type": "integer", "minimum": 1}
+          }
+        },
+        "lockedBurdenContact": {"$ref": "#/$defs/burdenContact"},
+        "response": {"$ref": "#/$defs/response"},
+        "ratings": {"$ref": "#/$defs/ratings"},
+        "evidenceBasis": {"type": "string", "minLength": 40},
+        "assessmentConfidence": {"enum": ["high", "medium", "low"]}
+      }
+    },
+    "eligibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "distinctDebateWideConsequence",
+        "affectsBurdenCompletion",
+        "notAlreadyScored",
+        "affectedBurdenIds",
+        "completionCriterion",
+        "relatedMoveIds",
+        "distinctConsequence",
+        "alreadyCapturedBy",
+        "counterfactual"
+      ],
+      "properties": {
+        "distinctDebateWideConsequence": {"type": "boolean"},
+        "affectsBurdenCompletion": {"type": "boolean"},
+        "notAlreadyScored": {"type": "boolean"},
+        "affectedBurdenIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "completionCriterion": {"type": "string", "minLength": 1},
+        "relatedMoveIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "distinctConsequence": {"type": "string", "minLength": 1},
+        "alreadyCapturedBy": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "counterfactual": {"type": "string", "minLength": 1}
+      }
+    },
+    "adjustment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "rationale", "eligibility"],
+      "properties": {
+        "value": {"type": "integer", "minimum": -5, "maximum": 5},
+        "rationale": {"type": "string", "minLength": 40},
+        "eligibility": {"$ref": "#/$defs/eligibility"}
+      }
+    }
+  }
+}

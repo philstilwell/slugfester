@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v384-scoring-adjudication",
+  "title": "Slugfester v3.8.4 dispute-only scoring adjudication",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "workflowVersion",
+    "rubricVersion",
+    "protocolId",
+    "debateId",
+    "debateNumber",
+    "assessmentModel",
+    "calibrationOnly",
+    "completedAt",
+    "isolation",
+    "resolutions",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {"const": "3.8.4-scoring-adjudication"},
+    "workflowVersion": {"const": "Slugfester End-to-End Consensus Workflow v3.8.4"},
+    "rubricVersion": {"const": "Slugfester Reassessment Rubric v3.8.4"},
+    "protocolId": {"const": "v3.8.4-heldout-score-reconstruction-gate"},
+    "debateId": {"type": "string", "minLength": 1},
+    "debateNumber": {"type": "string", "minLength": 1},
+    "assessmentModel": {"const": "5.6 Sol"},
+    "calibrationOnly": {"const": true},
+    "completedAt": {"type": "string", "format": "date-time"},
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method", "allowedInputs", "prohibitedInputsConfirmed", "contaminationDetected", "statement"],
+      "properties": {
+        "method": {"const": "fresh-isolated-v384-dispute-only-context"},
+        "allowedInputs": {"type": "array", "minItems": 5, "items": {"type": "string"}, "uniqueItems": true},
+        "prohibitedInputsConfirmed": {"const": true},
+        "contaminationDetected": {"const": false},
+        "statement": {"type": "string", "minLength": 40}
+      }
+    },
+    "resolutions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["disputeId", "fieldPath", "selectedCandidate", "evidenceText", "rationale"],
+        "properties": {
+          "disputeId": {"type": "string", "minLength": 1},
+          "fieldPath": {"type": "string", "minLength": 1},
+          "selectedCandidate": {"enum": ["candidate-1", "candidate-2"]},
+          "evidenceText": {"type": "string", "minLength": 1},
+          "rationale": {"type": "string", "minLength": 80}
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["disputeCount", "allDisputesResolvedOnce", "thirdValuesAbsent", "nondisputedFieldsUnavailable", "candidateOriginsUnavailable"],
+      "properties": {
+        "disputeCount": {"type": "integer", "minimum": 0},
+        "allDisputesResolvedOnce": {"const": true},
+        "thirdValuesAbsent": {"const": true},
+        "nondisputedFieldsUnavailable": {"const": true},
+        "candidateOriginsUnavailable": {"const": true}
+      }
+    }
+  }
+}

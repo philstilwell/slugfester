@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "3.8.4-contract-dry-fixture",
+  "generatedAt": "2026-08-04T00:00:00.000Z",
+  "status": "passed",
+  "responseRanges": {
+    "constructive-opening": [
+      0,
+      100
+    ],
+    "full-answer": [
+      80,
+      100
+    ],
+    "diagnostic-defeat": [
+      80,
+      100
+    ],
+    "justified-reframe": [
+      80,
+      100
+    ],
+    "partial-answer": [
+      55,
+      79
+    ],
+    "relevant-nonanswer": [
+      40,
+      69
+    ],
+    "nonanswer": [
+      0,
+      39
+    ]
+  },
+  "burdenRanges": {
+    "motion": [
+      90,
+      100
+    ],
+    "central": [
+      75,
+      89
+    ],
+    "subsidiary": [
+      55,
+      74
+    ],
+    "none": [
+      0,
+      54
+    ]
+  },
+  "checks": {
+    "fivePointScalarNondisputed": true,
+    "roundedMeanAppliedAfterPassesClose": true,
+    "sixPointScalarDisputed": true,
+    "responseClassMismatchDisputed": true,
+    "moveTotalDeltaTriggerExposesUnequalRatings": true,
+    "burdenAdjustmentSemanticMismatchDisputed": true,
+    "thirdCandidateProhibitedBySchema": true,
+    "initialCalculatedTotalsAbsentBySchema": true,
+    "extensionLanguageScanDetectsProhibitedClaims": true,
+    "exactBylineLockedBySchema": true
+  },
+  "sampleDiagnostics": {
+    "smallDelta": {
+      "responseClassMismatch": false,
+      "scalarThresholdKeys": [],
+      "diagnosticMoveScoreDelta": 2,
+      "moveTotalTrigger": false,
+      "exposedRatingKeys": []
+    },
+    "largeDelta": {
+      "responseClassMismatch": false,
+      "scalarThresholdKeys": [
+        "logicalCoherence"
+      ],
+      "diagnosticMoveScoreDelta": 2,
+      "moveTotalTrigger": false,
+      "exposedRatingKeys": [
+        "logicalCoherence"
+      ]
+    },
+    "classMismatch": {
+      "responseClassMismatch": true,
+      "scalarThresholdKeys": [],
+      "diagnosticMoveScoreDelta": 0,
+      "moveTotalTrigger": false,
+      "exposedRatingKeys": []
+    },
+    "moveTotalTrigger": {
+      "responseClassMismatch": false,
+      "scalarThresholdKeys": [],
+      "diagnosticMoveScoreDelta": 5,
+      "moveTotalTrigger": true,
+      "exposedRatingKeys": [
+        "logicalCoherence",
+        "evidenceWarrant",
+        "responsiveness",
+        "relevanceBurden",
+        "precisionClarity",
+        "epistemicCalibration",
+        "representationalCharity"
+      ]
+    }
+  }
+}
