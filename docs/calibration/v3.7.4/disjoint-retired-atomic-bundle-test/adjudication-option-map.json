@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "3.7.4-adjudication-option-map",
+  "status": "sealed-from-deterministic-disagreement-extraction",
+  "debates": {
+    "154": {
+      "bundles": [
+        {
+          "bundleId": "diagnostic-154-09",
+          "options": [
+            {
+              "optionId": "option-1",
+              "semanticTuple": {
+                "consequenceStated": false,
+                "consequence.relationKind": "none",
+                "defect.type": "invalid-inference"
+              },
+              "matchesRetiredExpected": false
+            },
+            {
+              "optionId": "option-2",
+              "semanticTuple": {
+                "consequenceStated": false,
+                "consequence.relationKind": "none",
+                "defect.type": "attribution-error"
+              },
+              "matchesRetiredExpected": true
+            },
+            {
+              "optionId": "option-3",
+              "semanticTuple": {
+                "consequenceStated": false,
+                "consequence.relationKind": "none",
+                "defect.type": "none"
+              },
+              "matchesRetiredExpected": false
+            },
+            {
+              "optionId": "option-4",
+              "semanticTuple": {
+                "consequenceStated": false,
+                "consequence.relationKind": "none",
+                "defect.type": "ambiguity"
+              },
+              "matchesRetiredExpected": false
+            }
+          ]
+        }
+      ]
+    },
+    "185": {
+      "bundles": [
+        {
+          "bundleId": "burden-185-07",
+          "options": [
+            {
+              "optionId": "option-1",
+              "semanticTuple": {
+                "burdenContact": {
+                  "tier": "subsidiary",
+                  "bridgeId": "con-subsidiary-alternatives"
+                }
+              },
+              "matchesRetiredExpected": false
+            },
+            {
+              "optionId": "option-2",
+              "semanticTuple": {
+                "burdenContact": {
+                  "tier": "subsidiary",
+                  "bridgeId": "con-subsidiary-indeterminacy"
+                }
+              },
+              "matchesRetiredExpected": false
+            },
+            {
+              "optionId": "option-3",
+              "semanticTuple": {
+                "burdenContact": {
+                  "tier": "central",
+                  "bridgeId": "con-central-sourcehood"
+                }
+              },
+              "matchesRetiredExpected": true
+            },
+            {
+              "optionId": "option-4",
+              "semanticTuple": {
+                "burdenContact": {
+                  "tier": "motion",
+                  "bridgeId": "con-motion-no-basic-desert"
+                }
+              },
+              "matchesRetiredExpected": false
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

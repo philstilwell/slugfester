@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "3.7.4-disjoint-retired-atomic-failure-diagnostics",
+  "status": "semantic-repeatability-threshold-failed",
+  "initialAgreement": {
+    "agreements": 10,
+    "bundles": 12,
+    "rate": 0.8333,
+    "requiredAgreements": 11
+  },
+  "familyDiagnostics": {
+    "target": {
+      "agreements": 4,
+      "bundles": 4,
+      "retiredExpectedMatchesAfterConsensus": 0
+    },
+    "diagnostic": {
+      "agreements": 3,
+      "bundles": 4,
+      "retiredExpectedMatchesAfterConsensus": 4
+    },
+    "reframe": {
+      "agreements": 2,
+      "bundles": 2,
+      "retiredExpectedMatchesAfterConsensus": 1
+    },
+    "burden": {
+      "agreements": 1,
+      "bundles": 2,
+      "retiredExpectedMatchesAfterConsensus": 1
+    }
+  },
+  "initialDisputes": [
+    {
+      "bundleId": "diagnostic-154-09",
+      "issue": "diagnostic-label-precedence",
+      "passA": "attribution-error",
+      "passB": "ambiguity",
+      "passC": "attribution-error",
+      "twoVoteResolution": "attribution-error",
+      "recommendedRule": "When a speaker objects that a category or proposition is being placed onto the wrong object or source, attribution-error takes precedence; ambiguity is reserved for a term or distinction whose meaning shifts across uses."
+    },
+    {
+      "bundleId": "burden-185-07",
+      "issue": "direct-attack-versus-alternative-support-priority",
+      "passA": "central-sourcehood",
+      "passB": "subsidiary-alternatives",
+      "passC": "central-sourcehood",
+      "twoVoteResolution": "central-sourcehood",
+      "recommendedRule": "A response that directly attacks a route's central inference is assigned to that attacked bridge before any subsidiary alternative it may also suggest; alternative-support contact requires independently advancing the subsidiary bridge."
+    }
+  ],
+  "controls": {
+    "allInitialContextsValid": true,
+    "allAdjudicationContextsValid": true,
+    "finalTwoVoteBundles": 12,
+    "unresolvedBundles": 0,
+    "retries": 0,
+    "schemaRejections": 0,
+    "scoringFields": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "recommendation": {
+    "lowerThreshold": false,
+    "authorizeLargerGate": false,
+    "authorizeScoringOrProse": false,
+    "nextStep": "Develop a narrow v3.7.5 exposed correction smoke for diagnostic precedence and burden-route priority, including orthogonal fixtures and no model execution until separately preregistered."
+  }
+}

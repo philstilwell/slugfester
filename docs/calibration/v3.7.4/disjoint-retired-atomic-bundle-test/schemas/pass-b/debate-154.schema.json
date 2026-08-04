@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v374-pass-b-154",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "debateNumber",
+    "reviewerPass",
+    "bundles"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.7.4-atomic-bundle-output"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "154"
+    },
+    "reviewerPass": {
+      "type": "string",
+      "const": "pass-b"
+    },
+    "bundles": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "bundleId",
+          "optionId",
+          "evidenceText",
+          "rationale"
+        ],
+        "properties": {
+          "bundleId": {
+            "type": "string"
+          },
+          "optionId": {
+            "type": "string",
+            "enum": [
+              "option-1",
+              "option-2",
+              "option-3",
+              "option-4"
+            ]
+          },
+          "evidenceText": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          }
+        }
+      }
+    }
+  }
+}

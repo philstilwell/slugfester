@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "3.7.4-disjoint-retired-atomic-gate-manifest",
+  "gateId": "v3.7.4-disjoint-retired-atomic-bundle-test",
+  "status": "frozen-before-model-execution",
+  "frozenAt": "2026-08-04T05:33:46.573Z",
+  "root": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test",
+  "workflowVersion": "Slugfester Disjoint Retired Atomic-Bundle Workflow v3.7.4",
+  "rubricVersion": "Slugfester Disjoint Retired Atomic-Bundle Rubric v3.7.4",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "retiredCaseTest": true,
+  "executionAuthorizedByThisPreregistration": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "debateNumbers": [
+    "62",
+    "154",
+    "185"
+  ],
+  "caseIds": [
+    "v291-dev-62-07",
+    "v291-dev-154-09",
+    "v291-dev-154-12",
+    "v291-dev-154-14",
+    "v291-dev-185-07"
+  ],
+  "sample": {
+    "debateCount": 3,
+    "caseCount": 5,
+    "atomicBundleCount": 12,
+    "bundlesPerDebate": 4,
+    "familyCounts": {
+      "target": 4,
+      "diagnostic": 4,
+      "reframe": 2,
+      "burden": 2
+    },
+    "includesMultiSpeakerDebate": true,
+    "allSpeakerAttributionConfidenceHigh": true
+  },
+  "disjointness": {
+    "caseIdOverlapWithV373": 0,
+    "bundleIdOverlapWithV373": 0,
+    "debateContainerOverlapWithV373": 3,
+    "limitation": "The retired source corpus contains exactly the same three debate containers; this is case- and bundle-disjoint, not debate-disjoint or held out."
+  },
+  "isolation": {
+    "twoInitialContextsPerDebate": true,
+    "thirdContextOnlyForDisputedBundles": true,
+    "candidateOriginsUnavailable": true,
+    "otherPassOutputsUnavailable": true,
+    "retiredExpectationsUnavailable": true,
+    "independentClaim": "isolated-context judgments; not statistical independence"
+  },
+  "consensusPolicy": {
+    "finalSemanticTupleRequiresMatchingVotes": 2,
+    "thirdPassReceivesOnlyDisputedBundles": true,
+    "thirdPassCannotAddCandidateTuples": true,
+    "thirdPassTupleSelectedByNeitherInitialPassRemainsUnresolved": true,
+    "scoresDerivedOnlyAfterAdjudication": true
+  },
+  "audioPolicy": {
+    "mediumConfidenceMovesRequireAudioVerification": true,
+    "sampledMediumConfidenceMoves": 0,
+    "sampledHighConfidenceMovesOnly": true
+  },
+  "executionPolicy": {
+    "initialContexts": 6,
+    "adjudicationContextsMaximum": 3,
+    "attemptsPerContext": 1,
+    "modelOutputRetriesMaximum": 0,
+    "preInferenceSchemaRejectionsMaximum": 0,
+    "sameRequestStreamRecoveriesMaximum": 0,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "thresholds": {
+    "validInitialContexts": 6,
+    "atomicBundles": 12,
+    "initialAtomicBundleAgreementsMinimum": 11,
+    "initialInvalidBundlesMaximum": 0,
+    "finalTwoVoteBundlesRequired": 12,
+    "unresolvedBundlesMaximum": 0,
+    "scoringFieldsMaximum": 0
+  },
+  "passMeaning": "A pass may authorize design of a larger retired workflow gate only.",
+  "prohibitions": {
+    "correctedBenchmarkKey": true,
+    "largerModelBatch": true,
+    "heldOutAccess": true,
+    "numericalParticipantScoring": true,
+    "assessmentProse": true,
+    "productionMutation": true
+  },
+  "priorV373": {
+    "manifestPath": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/execution-manifest.json",
+    "manifestSha256": "b7505b5d2a5a12e9eeeea209bb8877089c85bf32d7aec8dd14f0a0bd5608dbe4",
+    "analysisPath": "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/correction-smoke-analysis.json",
+    "analysisSha256": "4e57610bbc0c41e53d1e50c0ce6bca76f13d0dc18d3d72a0a641529121d16095",
+    "outcome": "correction-smoke-pass-disjoint-preregistration-authorized"
+  },
+  "modelInputs": {
+    "workflow": "docs/assessment-workflow-v3.7.4.md",
+    "rubric": "docs/reassessment-rubric-v3.7.4.md",
+    "manual": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/test-manual.md"
+  },
+  "sealedOptionMap": {
+    "path": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/sealed-atomic-option-map.json",
+    "sha256": "acaac6fbaf2968c61c9c19166f060a324cb11dc6da21dde72f9d19a77f29dc46",
+    "unavailableToModelContexts": true
+  },
+  "dryFixture": {
+    "path": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/dry-fixture.json",
+    "sha256": "ed12b25fd9b7d91ceb54dbb90f71c25b15742d2deaed8ef0faf00d19d908ee84"
+  },
+  "initialContexts": {
+    "pass-a": {
+      "62": {
+        "debateNumber": "62",
+        "reviewerPass": "pass-a",
+        "packet": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/packets/pass-a/debate-62.json",
+        "packetSha256": "d44fe915bc687e4740e81ebc0717654cf9006266d3f1abfef0acc610091c7af2",
+        "schema": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/schemas/pass-a/debate-62.schema.json",
+        "schemaSha256": "4b33582bf809a69f97daad00fb1b87a5b3e5cdf7a9dca9bac7d195768fe3bc45",
+        "output": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/outputs/pass-a/debate-62.json",
+        "bundleCount": 4
+      },
+      "154": {
+        "debateNumber": "154",
+        "reviewerPass": "pass-a",
+        "packet": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/packets/pass-a/debate-154.json",
+        "packetSha256": "425f79ab7fc77f38e78559f6c4cec56670365d26ee8232f01c4652d5c4e67204",
+        "schema": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/schemas/pass-a/debate-154.schema.json",
+        "schemaSha256": "9e89763cba432b63f865b27a70d984b8df6d02633af5c2a0f801d4f4f24e2779",
+        "output": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/outputs/pass-a/debate-154.json",
+        "bundleCount": 4
+      },
+      "185": {
+        "debateNumber": "185",
+        "reviewerPass": "pass-a",
+        "packet": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/packets/pass-a/debate-185.json",
+        "packetSha256": "4d2dd447bf16e6d867d01af88a1ae27536821ffdfd46c0a40c1a7fc43f598f9e",
+        "schema": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/schemas/pass-a/debate-185.schema.json",
+        "schemaSha256": "3a510bff38da163bec775d3244b957c698388a8cd9bb5de5846c957b69d43212",
+        "output": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/outputs/pass-a/debate-185.json",
+        "bundleCount": 4
+      }
+    },
+    "pass-b": {
+      "62": {
+        "debateNumber": "62",
+        "reviewerPass": "pass-b",
+        "packet": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/packets/pass-b/debate-62.json",
+        "packetSha256": "a2c0df5d927c401ce38b1f8ca478081b1056a17ecf7a43f669f0602d979266cb",
+        "schema": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/schemas/pass-b/debate-62.schema.json",
+        "schemaSha256": "1b369787c2c3a0c26732ce19e768222a7ba424dd43bd70194d1e16cb0735281b",
+        "output": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/outputs/pass-b/debate-62.json",
+        "bundleCount": 4
+      },
+      "154": {
+        "debateNumber": "154",
+        "reviewerPass": "pass-b",
+        "packet": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/packets/pass-b/debate-154.json",
+        "packetSha256": "d71f299bb7c430dbc8de6f3a6de291556d5ba66f455d2c43b329dea1e7903703",
+        "schema": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/schemas/pass-b/debate-154.schema.json",
+        "schemaSha256": "88088e697b29c32b7895122a8c401f3c6cc5a9dcd50942b248f115e08f0fea11",
+        "output": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/outputs/pass-b/debate-154.json",
+        "bundleCount": 4
+      },
+      "185": {
+        "debateNumber": "185",
+        "reviewerPass": "pass-b",
+        "packet": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/packets/pass-b/debate-185.json",
+        "packetSha256": "77a7f455944ab159f014e5517de1a27b5e354d0958b2cce4fc26faa9a22f9e8e",
+        "schema": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/schemas/pass-b/debate-185.schema.json",
+        "schemaSha256": "cbf02b5b0a436fc609b8411b6cf7e0677ee5d427bdf4012065921163c24c0a3f",
+        "output": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/outputs/pass-b/debate-185.json",
+        "bundleCount": 4
+      }
+    }
+  },
+  "outputs": {
+    "initial": {
+      "pass-a": {
+        "62": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/outputs/pass-a/debate-62.json",
+        "154": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/outputs/pass-a/debate-154.json",
+        "185": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/outputs/pass-a/debate-185.json"
+      },
+      "pass-b": {
+        "62": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/outputs/pass-b/debate-62.json",
+        "154": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/outputs/pass-b/debate-154.json",
+        "185": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/outputs/pass-b/debate-185.json"
+      }
+    }
+  },
+  "artifacts": {
+    "initialExecution": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/initial-model-execution.json",
+    "initialDisagreements": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/initial-disagreements.json",
+    "adjudicationOptionMap": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/adjudication-option-map.json",
+    "adjudicationExecution": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/adjudication-model-execution.json",
+    "analysis": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/test-analysis.json",
+    "assessment": "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/workflow-assessment.md"
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.7.4.md": "478824409027c3274f4bd394a452723b01adac8c8697b115c36ddeaf25ed1d6d",
+    "docs/reassessment-rubric-v3.7.4.md": "96203a63f73a5fe75ec2ad101fc617a6fe2f2e16782cc4874c738d89c26209d7",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/test-manual.md": "6428bf4e6bf34150b17b56390945832357ac22bbe69d6437c780570b48d23412",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/dry-fixture.json": "ed12b25fd9b7d91ceb54dbb90f71c25b15742d2deaed8ef0faf00d19d908ee84",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/sealed-atomic-option-map.json": "acaac6fbaf2968c61c9c19166f060a324cb11dc6da21dde72f9d19a77f29dc46",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/packets/pass-a/debate-62.json": "d44fe915bc687e4740e81ebc0717654cf9006266d3f1abfef0acc610091c7af2",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/schemas/pass-a/debate-62.schema.json": "4b33582bf809a69f97daad00fb1b87a5b3e5cdf7a9dca9bac7d195768fe3bc45",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/packets/pass-a/debate-154.json": "425f79ab7fc77f38e78559f6c4cec56670365d26ee8232f01c4652d5c4e67204",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/schemas/pass-a/debate-154.schema.json": "9e89763cba432b63f865b27a70d984b8df6d02633af5c2a0f801d4f4f24e2779",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/packets/pass-a/debate-185.json": "4d2dd447bf16e6d867d01af88a1ae27536821ffdfd46c0a40c1a7fc43f598f9e",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/schemas/pass-a/debate-185.schema.json": "3a510bff38da163bec775d3244b957c698388a8cd9bb5de5846c957b69d43212",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/packets/pass-b/debate-62.json": "a2c0df5d927c401ce38b1f8ca478081b1056a17ecf7a43f669f0602d979266cb",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/schemas/pass-b/debate-62.schema.json": "1b369787c2c3a0c26732ce19e768222a7ba424dd43bd70194d1e16cb0735281b",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/packets/pass-b/debate-154.json": "d71f299bb7c430dbc8de6f3a6de291556d5ba66f455d2c43b329dea1e7903703",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/schemas/pass-b/debate-154.schema.json": "88088e697b29c32b7895122a8c401f3c6cc5a9dcd50942b248f115e08f0fea11",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/packets/pass-b/debate-185.json": "77a7f455944ab159f014e5517de1a27b5e354d0958b2cce4fc26faa9a22f9e8e",
+    "docs/calibration/v3.7.4/disjoint-retired-atomic-bundle-test/schemas/pass-b/debate-185.schema.json": "cbf02b5b0a436fc609b8411b6cf7e0677ee5d427bdf4012065921163c24c0a3f",
+    "docs/calibration/v3.2/retired-three-debate-test/inputs/pageau-folley-logos-meaning-resurrection-2026.json": "5fb16c0f52dd15dd1d071a113a74f4f26291c3bf6038efd50cb98804ef711af9",
+    "docs/calibration/v3.2/retired-three-debate-test/inputs/koukl-oconnor-kanojia-nonbelief-harm-2025.json": "645b4b097e94e817dad25ce27866cda5d37f8f943342ec776924d18f6593f9b7",
+    "docs/calibration/v3.2/retired-three-debate-test/inputs/dennett-caruso-free-will-responsibility-2021.json": "6d8bc54534869c9cdf4459b2f0c838bdc901d67750067edd8d47176148f89486",
+    "docs/calibration/v3.2/retired-three-debate-test/gold/pageau-folley-logos-meaning-resurrection-2026.json": "57de216e0de46b54d76d887d38dc10c28f4704401803e2a74a1e01dab4450078",
+    "docs/calibration/v3.2/retired-three-debate-test/gold/koukl-oconnor-kanojia-nonbelief-harm-2025.json": "7ebe6b1290a4c825bb38181a7fc15ffa688b7bfdab84a885c48aeeb79f4e04c9",
+    "docs/calibration/v3.2/retired-three-debate-test/gold/dennett-caruso-free-will-responsibility-2021.json": "b10dcc33649b800b895b93d1545865dec1c2d52fa21dea5c73ac21e9ebcc6f42",
+    "docs/calibration/v3.6.1/decision-card-development/retired-fixtures.json": "40a0914dcec88a5ade7174a947c9a8da91cfbac8c0b8537b62a24304ac766dd2",
+    "scripts/lib/v374-disjoint-atomic.mjs": "c05990ea64680147bc8019b2f0602619f68627efb0655e30934a78d5f72a5481",
+    "scripts/build-v374-disjoint-atomic-packets.mjs": "4c1a4022718283f4b2a2db70cb8b2ea1d2b16d9579133dea8f16acf23cc23b01",
+    "scripts/test-v374-disjoint-atomic-packets.mjs": "8315e16ac4fb9e643e3af5969159d8f1e4d843ca0725dea6932a2dbe807a2c3b",
+    "scripts/validate-v374-atomic-output.mjs": "eefb8b2dcfc03cbe69e7cb1bec803f6724249077a2ab5b9193f16a7e1b7c9d22",
+    "scripts/extract-v374-disagreements.mjs": "e78a75206d429abf0206889d7f1e5433bf149c118ccdbf70b87c60f8edd845fb",
+    "scripts/run-v374-disjoint-atomic-test.mjs": "038bdfb9d34515efe52eb430beebcdc0a85e38fc75e42d8a5a31d682a8874d4d",
+    "scripts/analyze-v374-disjoint-atomic-test.mjs": "4c06de1471bec696f93d243f8ac1f9d0587bbb6aa226ebd3f9736b807d40efed",
+    "scripts/preregister-v374-disjoint-atomic-test.mjs": "038b577e68fc45d5bc648e1111f2c0fec7bb3a1d335d2aff1aeef4bb31d09677",
+    "scripts/validate-v374-disjoint-atomic-test.mjs": "6984437c60bcc57bc5bd72bb04a1c438e5ba31b268300017a478620268fc0f71",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v37-retired-semantic.mjs": "2fe113760e4b2bb97104025d39755d8ceeeecded89fbaea683cc5c9cce188296",
+    "scripts/lib/v372-atomic-bundles.mjs": "ec5908ea20bd0b099095257ee614d07893a1b245bf693abee2f697a3f0de0a0c",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/execution-manifest.json": "b7505b5d2a5a12e9eeeea209bb8877089c85bf32d7aec8dd14f0a0bd5608dbe4",
+    "docs/calibration/v3.7.3/atomic-bundle-correction-smoke/correction-smoke-analysis.json": "4e57610bbc0c41e53d1e50c0ce6bca76f13d0dc18d3d72a0a641529121d16095"
+  }
+}
