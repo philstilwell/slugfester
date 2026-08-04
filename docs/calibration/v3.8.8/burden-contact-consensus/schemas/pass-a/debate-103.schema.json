@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v388-contact-pass-a-103",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "debateNumber",
+    "debateId",
+    "reviewerPass",
+    "reviewerRole",
+    "bundles"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.8-burden-contact-output"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "103"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "woodford-edwards-rational-belief-god-2023"
+    },
+    "reviewerPass": {
+      "type": "string",
+      "const": "pass-a"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "burden-contact-classifier"
+    },
+    "bundles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "bundleId",
+          "optionId",
+          "evidenceText",
+          "rationale"
+        ],
+        "properties": {
+          "bundleId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "optionId": {
+            "type": "string",
+            "enum": [
+              "option-01",
+              "option-02",
+              "option-03",
+              "option-04",
+              "option-05",
+              "option-06",
+              "option-07",
+              "option-08",
+              "option-09",
+              "option-10",
+              "option-11",
+              "option-12",
+              "option-13",
+              "option-14",
+              "option-15",
+              "option-16",
+              "option-17",
+              "option-18",
+              "option-19",
+              "option-20",
+              "option-21"
+            ]
+          },
+          "evidenceText": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 160
+          }
+        }
+      },
+      "minItems": 22,
+      "maxItems": 22
+    }
+  }
+}
