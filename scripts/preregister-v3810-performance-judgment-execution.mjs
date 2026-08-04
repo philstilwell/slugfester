@@ -27,7 +27,7 @@ const fixture = await readJson(`${V3810_PERFORMANCE_ROOT}/dry-fixture.json`);
 const preflight = await readJson(`${V3810_PERFORMANCE_ROOT}/schema-preflight/model-execution.json`);
 assertV3810(preparation.status === "prepared-score-blind-no-model-execution" && preparation.totals.moves === 81 && preparation.totals.pendingAudioVerifications === 0, "performance preparation invalid");
 assertV3810(fixture.status === "passed" && fixture.totals.contexts === 6 && fixture.totals.judgments === 162 && fixture.totals.calculatedTotals === 0, "performance dry fixture invalid");
-assertV3810(preflight.status === "endpoint-preflight-passed" && preflight.validSyntheticContexts === 1 && preflight.debateJudgments === 0 && preflight.retries === 0, "exact-schema endpoint preflight did not pass cleanly");
+assertV3810(preflight.status === "endpoint-preflight-passed" && preflight.validSyntheticContexts === 1 && preflight.syntheticMoves === 7 && preflight.responseClassesExercised === 7 && preflight.debateJudgments === 0 && preflight.retries === 0, "expanded exact-schema endpoint preflight did not pass cleanly");
 
 const schemaPath = `${V3810_PERFORMANCE_ROOT}/performance-judgment-schema.json`;
 const contexts = [];
