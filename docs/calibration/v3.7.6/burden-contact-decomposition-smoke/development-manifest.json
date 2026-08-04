@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "3.7.6-burden-contact-development-manifest",
+  "protocolId": "v3.7.6-burden-contact-decomposition-smoke",
+  "status": "frozen-packet-development-model-execution-blocked",
+  "frozenAt": "2026-08-04T06:01:12.229Z",
+  "workflowVersion": "Slugfester Burden-Contact Decomposition Workflow v3.7.6",
+  "rubricVersion": "Slugfester Burden-Contact Decomposition Rubric v3.7.6",
+  "calibrationOnly": true,
+  "exposedDevelopmentCases": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "sample": {
+    "debateNumbers": [
+      "62",
+      "154",
+      "185"
+    ],
+    "debateCount": 3,
+    "compositeCaseCount": 8,
+    "exposedFailureCases": 3,
+    "orthogonalCases": 5,
+    "allSpeakerAttributionConfidenceHigh": true
+  },
+  "decomposition": {
+    "exactPropositionContactFirst": true,
+    "explicitNoContactCandidate": true,
+    "supportAttackPolarityExplicit": true,
+    "bridgeSelectedWithinValidComposite": true,
+    "genericSubsidiaryCatchAllProhibited": true,
+    "motionRequiresCompleteConclusion": true
+  },
+  "designFixture": {
+    "warning": "Provisional AI-authored structural expectations are used only to dry-test candidate coverage; they are hidden from model contexts and are not a benchmark or ground truth."
+  },
+  "plannedExecution": {
+    "initialContexts": 6,
+    "adjudicationContextsMaximum": 3,
+    "attemptsPerContext": 1,
+    "modelOutputRetriesMaximum": 0,
+    "sameRequestStreamRecoveriesMaximum": 0,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "frozenThresholds": {
+    "validInitialContexts": 6,
+    "initialCompositeAgreementsRequired": 8,
+    "initialInvalidBundlesMaximum": 0,
+    "finalTwoVoteBundlesRequired": 8,
+    "unresolvedBundlesMaximum": 0,
+    "scoringFieldsMaximum": 0
+  },
+  "passMeaning": "A pass may authorize separate preregistration of a case-disjoint burden-contact repeatability test only.",
+  "developmentState": {
+    "packetsBuilt": true,
+    "schemasBuilt": true,
+    "dryFixturePassed": true,
+    "executionRunnerImplemented": false,
+    "disagreementExtractorImplemented": false,
+    "adjudicationRunnerImplemented": false,
+    "analyzerImplemented": false,
+    "modelExecutionAuthorized": false
+  },
+  "priorV375": {
+    "manifestPath": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/execution-manifest.json",
+    "manifestSha256": "c64c7494f885ea84981d25a677fcb6c1355b5e69783cca9272c95b4868daff65",
+    "analysisPath": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/correction-smoke-analysis.json",
+    "analysisSha256": "eb66d90390a6b4b09f7e19d9223eabd60a3d706bbc48662c479db94e4916c11f",
+    "diagnosticsPath": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/failure-diagnostics.json",
+    "diagnosticsSha256": "a053b9c26e0b1bfa7306b229ea573b4cce2e771a5276651ee96408a72b658a86",
+    "outcome": "mechanics-pass-perfect-initial-repeatability-fail"
+  },
+  "sealedOptionMap": {
+    "path": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/sealed-option-map.json",
+    "sha256": "187f05ae2e6e5311ad3baa292de90d63da3310a6fe41dd93153a5401b8be751f",
+    "unavailableToModelContexts": true
+  },
+  "contexts": {
+    "pass-a": {
+      "62": {
+        "packet": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/packets/pass-a/debate-62.json",
+        "packetSha256": "91ae83e77f7323299b56619de22c6339f694dd4140e4a6c2feaf51708a471651",
+        "schema": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/schemas/pass-a/debate-62.schema.json",
+        "schemaSha256": "7acc525a6c33ba47564042de1cb14e11ff42c8e31b9518e6ec40109d45d67ce9",
+        "bundleCount": 2
+      },
+      "154": {
+        "packet": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/packets/pass-a/debate-154.json",
+        "packetSha256": "312afcb7c3aa11cbcdfd085fa2ea9daf8103c502db6d0f70a1c38093db16102f",
+        "schema": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/schemas/pass-a/debate-154.schema.json",
+        "schemaSha256": "88f16ced1ee22803c235822e8b2ef3ac540a59a24e5a06bfdb82d24fe8f3f277",
+        "bundleCount": 3
+      },
+      "185": {
+        "packet": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/packets/pass-a/debate-185.json",
+        "packetSha256": "b848cd80eb2d098d7452849bf61818ea66f26536e76d0ded0f6b5527b0ead143",
+        "schema": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/schemas/pass-a/debate-185.schema.json",
+        "schemaSha256": "12fecbae25dcd6fa68598b0b28c9ec44af71d3b0b806301477f31cfefddd863a",
+        "bundleCount": 3
+      }
+    },
+    "pass-b": {
+      "62": {
+        "packet": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/packets/pass-b/debate-62.json",
+        "packetSha256": "1b02a44dacdcfbc06bcbdc54191af81006a649f4a9dea6ea208d007ab1bc592d",
+        "schema": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/schemas/pass-b/debate-62.schema.json",
+        "schemaSha256": "cf0e6ac6d5382c11b7744cae202cbac5dbf5972dd2779394c66e39ffd34d962d",
+        "bundleCount": 2
+      },
+      "154": {
+        "packet": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/packets/pass-b/debate-154.json",
+        "packetSha256": "d7f6e30a078a4f7451b3a9790c2190441914e90b69050f5b523e42f1d630430c",
+        "schema": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/schemas/pass-b/debate-154.schema.json",
+        "schemaSha256": "d2e1076cbf0b253a7290da43e2c53c5e9d2d2912ac02b034c05a39e614614837",
+        "bundleCount": 3
+      },
+      "185": {
+        "packet": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/packets/pass-b/debate-185.json",
+        "packetSha256": "2772f98cf0b815dfdfcb890489857d69b2c29d48078c79ec36dd7fa3d191ef13",
+        "schema": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/schemas/pass-b/debate-185.schema.json",
+        "schemaSha256": "281992ffa1e3babe686d1594cedef4396bbf1ddbeaab28b7897a6ab98c60f605",
+        "bundleCount": 3
+      }
+    }
+  },
+  "dryFixture": {
+    "path": "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/dry-fixture.json",
+    "sha256": "2b24806a44481ecc4d751baa8f19b0e268644c09069368bd55c19b2885a8e4c5"
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.7.6.md": "b5a615b276422f4146908b4495871a73171457d3a931f5455f21d960b9d5e540",
+    "docs/reassessment-rubric-v3.7.6.md": "e3dc1ae838bdae7dd0878cd415e62f6648cb911204a78315d932990bc8bce488",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/smoke-manual.md": "4f15897274be380afa3891fd347d7496a7b7d6c32ba912c1f45edeee4203c8b5",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/dry-fixture.json": "2b24806a44481ecc4d751baa8f19b0e268644c09069368bd55c19b2885a8e4c5",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/sealed-option-map.json": "187f05ae2e6e5311ad3baa292de90d63da3310a6fe41dd93153a5401b8be751f",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/packets/pass-a/debate-62.json": "91ae83e77f7323299b56619de22c6339f694dd4140e4a6c2feaf51708a471651",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/schemas/pass-a/debate-62.schema.json": "7acc525a6c33ba47564042de1cb14e11ff42c8e31b9518e6ec40109d45d67ce9",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/packets/pass-a/debate-154.json": "312afcb7c3aa11cbcdfd085fa2ea9daf8103c502db6d0f70a1c38093db16102f",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/schemas/pass-a/debate-154.schema.json": "88f16ced1ee22803c235822e8b2ef3ac540a59a24e5a06bfdb82d24fe8f3f277",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/packets/pass-a/debate-185.json": "b848cd80eb2d098d7452849bf61818ea66f26536e76d0ded0f6b5527b0ead143",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/schemas/pass-a/debate-185.schema.json": "12fecbae25dcd6fa68598b0b28c9ec44af71d3b0b806301477f31cfefddd863a",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/packets/pass-b/debate-62.json": "1b02a44dacdcfbc06bcbdc54191af81006a649f4a9dea6ea208d007ab1bc592d",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/schemas/pass-b/debate-62.schema.json": "cf0e6ac6d5382c11b7744cae202cbac5dbf5972dd2779394c66e39ffd34d962d",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/packets/pass-b/debate-154.json": "d7f6e30a078a4f7451b3a9790c2190441914e90b69050f5b523e42f1d630430c",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/schemas/pass-b/debate-154.schema.json": "d2e1076cbf0b253a7290da43e2c53c5e9d2d2912ac02b034c05a39e614614837",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/packets/pass-b/debate-185.json": "2772f98cf0b815dfdfcb890489857d69b2c29d48078c79ec36dd7fa3d191ef13",
+    "docs/calibration/v3.7.6/burden-contact-decomposition-smoke/schemas/pass-b/debate-185.schema.json": "281992ffa1e3babe686d1594cedef4396bbf1ddbeaab28b7897a6ab98c60f605",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v37-retired-semantic.mjs": "2fe113760e4b2bb97104025d39755d8ceeeecded89fbaea683cc5c9cce188296",
+    "scripts/lib/v372-atomic-bundles.mjs": "ec5908ea20bd0b099095257ee614d07893a1b245bf693abee2f697a3f0de0a0c",
+    "scripts/lib/v376-burden-contact.mjs": "7e24def7f4c205145f55ba3dcbec35c0ae4d3c8edb05f08ae4309d008d338b55",
+    "scripts/build-v376-burden-contact-packets.mjs": "ba208f2bb6bd3e9b2241b0ceb969d7e1d3a0edf2659e5512fe28b09484ce7e71",
+    "scripts/test-v376-burden-contact-packets.mjs": "aca02feaf27b008c16cf6f1cab9e66ffef69ea39b2f03fec58900b60b34eea53",
+    "scripts/preregister-v376-burden-contact-development.mjs": "9ccf5e95b3529a1cdd8d6184184f4f1ca1e72e292b70ec90d7aa713e595042e7",
+    "scripts/validate-v376-burden-contact-development.mjs": "810778236af3a4116db39bec3b50cad90b8f7ff640eda6798e5adb021725d672",
+    "docs/calibration/v3.2/retired-three-debate-test/inputs/pageau-folley-logos-meaning-resurrection-2026.json": "5fb16c0f52dd15dd1d071a113a74f4f26291c3bf6038efd50cb98804ef711af9",
+    "docs/calibration/v3.2/retired-three-debate-test/inputs/koukl-oconnor-kanojia-nonbelief-harm-2025.json": "645b4b097e94e817dad25ce27866cda5d37f8f943342ec776924d18f6593f9b7",
+    "docs/calibration/v3.2/retired-three-debate-test/inputs/dennett-caruso-free-will-responsibility-2021.json": "6d8bc54534869c9cdf4459b2f0c838bdc901d67750067edd8d47176148f89486",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/execution-manifest.json": "c64c7494f885ea84981d25a677fcb6c1355b5e69783cca9272c95b4868daff65",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/correction-smoke-analysis.json": "eb66d90390a6b4b09f7e19d9223eabd60a3d706bbc48662c479db94e4916c11f",
+    "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/failure-diagnostics.json": "a053b9c26e0b1bfa7306b229ea573b4cce2e771a5276651ee96408a72b658a86"
+  },
+  "prohibitions": {
+    "modelExecution": true,
+    "benchmarkMutation": true,
+    "largerModelBatch": true,
+    "heldOutAccess": true,
+    "numericalParticipantScoring": true,
+    "assessmentProse": true,
+    "productionMutation": true
+  }
+}
