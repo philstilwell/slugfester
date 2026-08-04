@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "3.8.8-section-weight-adjudication-execution-manifest",
+  "protocolId": "v3.8.8-score-blind-section-weight-consensus-adjudication",
+  "stage": "whole-plan-section-weight-adjudication",
+  "status": "frozen-adjudication-contexts-authorized",
+  "frozenAt": "2026-08-04T16:25:50Z",
+  "checkpointCommit": "e6ea782673dbed54cbf9e1d798b8d7e936560549",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "modelInputs": {
+    "workflow": "docs/assessment-workflow-v3.8.4.md",
+    "rubric": "docs/reassessment-rubric-v3.8.4.md",
+    "manual": "docs/calibration/v3.8.8/section-weight-consensus/adjudication-manual.md"
+  },
+  "contexts": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "packet": "docs/calibration/v3.8.8/section-weight-consensus/adjudication/packets/debate-55.json",
+      "schema": "docs/calibration/v3.8.8/section-weight-consensus/adjudication/schemas/debate-55.schema.json",
+      "output": "docs/calibration/v3.8.8/section-weight-consensus/adjudication/outputs/debate-55.json",
+      "disputedPlans": 1
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "packet": "docs/calibration/v3.8.8/section-weight-consensus/adjudication/packets/debate-103.json",
+      "schema": "docs/calibration/v3.8.8/section-weight-consensus/adjudication/schemas/debate-103.schema.json",
+      "output": "docs/calibration/v3.8.8/section-weight-consensus/adjudication/outputs/debate-103.json",
+      "disputedPlans": 1
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "packet": "docs/calibration/v3.8.8/section-weight-consensus/adjudication/packets/debate-161.json",
+      "schema": "docs/calibration/v3.8.8/section-weight-consensus/adjudication/schemas/debate-161.schema.json",
+      "output": "docs/calibration/v3.8.8/section-weight-consensus/adjudication/outputs/debate-161.json",
+      "disputedPlans": 1
+    }
+  ],
+  "authorization": {
+    "adjudicationContexts": 3,
+    "planAdjudicationModelExecution": true,
+    "deterministicFinalPlanMergeAfterPass": true,
+    "burdenContactModelExecution": false,
+    "scoringModelExecution": false,
+    "numericalParticipantScoring": false,
+    "assessmentProse": false,
+    "productionMutation": false,
+    "tenDebateGate": false,
+    "all195Debates": false
+  },
+  "isolation": {
+    "freshTemporaryCodexHomePerContext": true,
+    "freshSourceDirectoryPerContext": true,
+    "twoAnonymousWholePlansOnly": true,
+    "componentMixingForbidden": true,
+    "passIdentityUnavailable": true,
+    "privateOptionMapUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "burdenContactTuplesUnavailable": true,
+    "scoresUnavailable": true,
+    "winnerUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 3,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "perInvocationTimeoutMs": 3600000,
+    "recoverableStreamEventsNormalMaximum": 2,
+    "recoverableStreamEventsHardMaximum": 8,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "acceptanceRule": {
+    "validContextsRequired": 3,
+    "suppliedWholePlanOnlyRequired": true,
+    "componentMixingMaximum": 0,
+    "closedSchemaAndDeterministicValidationRequired": true,
+    "modelScoreFieldsMaximum": 0
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocksExecution": true,
+    "preexistingOutputBlocksExecution": true,
+    "invalidAdjudicationBlocksFinalPlanMerge": true,
+    "furtherAutomaticRetryAuthorized": false,
+    "scoringRemainsBlocked": true
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v3.8.8/section-weight-consensus/adjudication/model-execution.json",
+    "outputs": [
+      "docs/calibration/v3.8.8/section-weight-consensus/adjudication/outputs/debate-55.json",
+      "docs/calibration/v3.8.8/section-weight-consensus/adjudication/outputs/debate-103.json",
+      "docs/calibration/v3.8.8/section-weight-consensus/adjudication/outputs/debate-161.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v3.8.8/section-weight-consensus/adjudication/outputs/debate-55.json",
+    "docs/calibration/v3.8.8/section-weight-consensus/adjudication/outputs/debate-103.json",
+    "docs/calibration/v3.8.8/section-weight-consensus/adjudication/outputs/debate-161.json",
+    "docs/calibration/v3.8.8/section-weight-consensus/adjudication/model-execution.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.8.4.md": "49dda91a87c0ebbab9666d6c732035bde17939d84f4b71b326f4f04b917ddd5a",
+    "docs/reassessment-rubric-v3.8.4.md": "fda29887abb26f1f5a6f7b772e26434db0c055ec3efe42be4eeea602f5a84909",
+    "docs/calibration/v3.8.8/section-weight-consensus/adjudication-manual.md": "cb5e7d6dc110892a2d25f206743b7730f10e2be24ac807f610a6b38cda6ba7b0",
+    "docs/calibration/v3.8.8/section-weight-consensus/initial-execution-manifest.json": "e5a4fde885f457687b3d60743b26b14eb5c027089cf8057fd2b5b711ec62aaa6",
+    "docs/calibration/v3.8.8/section-weight-consensus/initial-model-execution.json": "146645eca16226df0cc7bcfba06ae5c8893d76b1477396596b8466795dacd354",
+    "docs/calibration/v3.8.8/section-weight-consensus/initial-disagreements.json": "3c8e028ecad73f0cbe4cb04a40cad991baae29a8a9b9441e2e6f219a0503d65e",
+    "docs/calibration/v3.8.8/section-weight-consensus/adjudication-option-map.json": "8361f81d2a74fb850c91ead657dbf876a5d3d3413b60b1edf8da130c09c96f14",
+    "docs/calibration/v3.8.8/section-weight-consensus/adjudication-dry-fixture.json": "a656f08ed87e6a04ee2b54ee774de8fb4fac6b0fea726965b61f55de852af8d5",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v37-retired-semantic.mjs": "2fe113760e4b2bb97104025d39755d8ceeeecded89fbaea683cc5c9cce188296",
+    "scripts/lib/v385-transport.mjs": "f20d5cb026e0c2720d32276ddcbb612ec852e3732d7653e47a98ba5ffa880dfe",
+    "scripts/lib/v388-section-weight.mjs": "352d7c9e43e0d1c1d9df952a528b7a912bb7295af73b7abcef89a08e529779a4",
+    "scripts/extract-v388-section-weight-disagreements.mjs": "73e74008f8475f78c01258ea719beecf04ffaf4e69602c53ecb14e9975438837",
+    "scripts/test-v388-section-weight-adjudication-tooling.mjs": "103704c4240a8e711dca0136e4fc22030f19a2b0a2432f7626dce8f13799a814",
+    "scripts/validate-v388-section-weight-adjudication.mjs": "83b4da0935522e9e57595c95b2e31a1fb696a32ee49e1e9d911a493b0d9688c8",
+    "scripts/preregister-v388-section-weight-adjudication.mjs": "73897624897e379e162b9221eeb7c8aaa072f9c7298a8e4489444bed592f5ad5",
+    "scripts/validate-v388-section-weight-adjudication-lock.mjs": "47ee8942ae54d6a0bb4364efbd56949883a3610f7e11f101a084fc40534b2c2a",
+    "scripts/run-v388-section-weight-adjudications.mjs": "ba4718c8012dd989c8305540f0f6abccf4565c2bf2e7a09c16eee259514d08df",
+    "docs/calibration/v3.8.8/section-weight-consensus/packets/debate-55.json": "43a28d3f9dd4f9decb99ec45d4353a00322f62536973444918ade06862ca28de",
+    "docs/calibration/v3.8.8/section-weight-consensus/schemas/debate-55.schema.json": "dd777b61b60ba42758d7d17d3552872479976e81413097a81b7ba7220679caf0",
+    "docs/calibration/v3.8.8/section-weight-consensus/initial-outputs/debate-55-pass-a.json": "a1d798856e504c316c2705524d08d23173227a9fae56955f5b7238998c6d2f8b",
+    "docs/calibration/v3.8.8/section-weight-consensus/initial-outputs/debate-55-pass-b.json": "f753d90d1f4805e4963e6d9e084eaf3f724ccde271451ba7e69610e0021710f4",
+    "docs/calibration/v3.8.8/section-weight-consensus/packets/debate-103.json": "7af18a8149e973ca4a57a7dd284c79f463b216986a7f048ca080506c2ab42ac0",
+    "docs/calibration/v3.8.8/section-weight-consensus/schemas/debate-103.schema.json": "b5697c29fab784c1f01e2d954a5ae1028ad7cdc4babbb9a3d470ffbc54d72125",
+    "docs/calibration/v3.8.8/section-weight-consensus/initial-outputs/debate-103-pass-a.json": "5e07947b88198a583bc6dc38c80deb96f50584f6ca15df50ff336b0381a9799f",
+    "docs/calibration/v3.8.8/section-weight-consensus/initial-outputs/debate-103-pass-b.json": "933fbf84f61baf05daf5ad37da1aaa474837d76bd12616cac56175ae29099e64",
+    "docs/calibration/v3.8.8/section-weight-consensus/packets/debate-161.json": "60add11130d27fbb6c00d74b48170683f9477b7128d385310ce0c738560d5523",
+    "docs/calibration/v3.8.8/section-weight-consensus/schemas/debate-161.schema.json": "323f79f72a75acd3e5ddad9fe975fc42d4215d5e3bd0c2892d5327ceac818508",
+    "docs/calibration/v3.8.8/section-weight-consensus/initial-outputs/debate-161-pass-a.json": "4208fd2890307fe98e46c37310900c844470d852f34ce6db76d7b3cfaee3b42a",
+    "docs/calibration/v3.8.8/section-weight-consensus/initial-outputs/debate-161-pass-b.json": "ab39c71f286b772460d671ec208f4dc47d9ecb25b2966d8391100818e82baf03",
+    "docs/calibration/v3.8.8/section-weight-consensus/adjudication/packets/debate-55.json": "d674da04fbeb8f8b3d887fb9d1202da3bb7107747eddfb5fc0a9eb793d6f7ce7",
+    "docs/calibration/v3.8.8/section-weight-consensus/adjudication/schemas/debate-55.schema.json": "405c42250ae010efe7b676dfcda78c56665fb075d140ed403dd32c3e160f6b80",
+    "docs/calibration/v3.8.8/section-weight-consensus/adjudication/packets/debate-103.json": "2b795385cfc96b746f51a43a9d1c90b25779df9f17b52538e672570eb35257fa",
+    "docs/calibration/v3.8.8/section-weight-consensus/adjudication/schemas/debate-103.schema.json": "7000f6d25678e525f68756b6143ac2cc7bde587aec24bd89152718f0155edcfc",
+    "docs/calibration/v3.8.8/section-weight-consensus/adjudication/packets/debate-161.json": "63017e9a81958d69cff3fd89ed2bf4957c3c3f888f89cccb903ba15fc2882674",
+    "docs/calibration/v3.8.8/section-weight-consensus/adjudication/schemas/debate-161.schema.json": "00d508a0c6d5bfc0e787b102ed5e6260f364e5060633cf8de8e5d29d2dc723f8"
+  }
+}
