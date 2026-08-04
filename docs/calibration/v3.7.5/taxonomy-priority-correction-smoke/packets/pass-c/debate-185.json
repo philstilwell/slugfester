@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "3.7.5-correction-packet",
+  "debateNumber": "185",
+  "reviewerPass": "pass-c",
+  "allSpeakerAttributionConfidenceHigh": true,
+  "bundles": [
+    {
+      "bundleId": "burden-185-05",
+      "family": "burden",
+      "caseId": "v291-dev-185-05",
+      "sourceExcerpt": "and it matters for the reasons that greg sort of started out with namely we want to know about responsibility and whether whether we deserve blame and praise and so forth and as long as you stick to that as long as you stick to the fact that that's the kind of free will that matters then first of all libertarian free will doesn't matter at all because having it wouldn't give you responsibility not having it wouldn't take it away from you",
+      "speakerAttributionConfidence": "high",
+      "decisionContext": {
+        "lockedTarget": "Factors beyond agents' control eliminate moral responsibility in the basic-desert sense.",
+        "components": [
+          {
+            "componentId": "t05-c1-beyond-control",
+            "text": "Who agents are and what they do ultimately result from factors beyond their control."
+          },
+          {
+            "componentId": "t05-c2-no-basic-desert",
+            "text": "That beyond-control condition entails that agents are never morally responsible in the basic-desert sense."
+          }
+        ],
+        "fieldPath": "burdenContact",
+        "burdenContext": {
+          "route": {
+            "id": "con-skeptical-sourcehood-route",
+            "side": "con",
+            "description": "Show that luck and factors beyond the agent's control defeat the sourcehood needed for basic-desert responsibility while leaving forward-looking responses available.",
+            "successCriteria": "The route succeeds if agents are shown not to be appropriate sources for basic desert and safety, rehabilitation, or rule enforcement can replace retributive blame and punishment.",
+            "bridges": [
+              {
+                "id": "con-motion-no-basic-desert",
+                "tier": "motion",
+                "description": "Basic-desert moral responsibility and retributive blame or punishment are unwarranted, even if independently justified forward-looking responses remain."
+              },
+              {
+                "id": "con-central-sourcehood",
+                "tier": "central",
+                "description": "Who agents are and what they do result from luck or factors beyond their control, so they lack the appropriate sourcehood for basic desert."
+              },
+              {
+                "id": "con-subsidiary-alternatives",
+                "tier": "subsidiary",
+                "description": "Reasons-responsive distinctions, sanctions, safety restrictions, rehabilitation, and rule enforcement can be retained on non-desert forward-looking grounds."
+              },
+              {
+                "id": "con-subsidiary-indeterminacy",
+                "tier": "subsidiary",
+                "description": "Adding physical indeterminacy does not let the agent settle which outcome occurs and therefore cannot rescue basic-desert control."
+              }
+            ]
+          }
+        }
+      },
+      "independentFields": [
+        "burdenContact"
+      ],
+      "candidates": [
+        {
+          "optionId": "option-1",
+          "values": {
+            "burdenContact": {
+              "tier": "subsidiary",
+              "bridgeId": "con-subsidiary-alternatives"
+            }
+          }
+        },
+        {
+          "optionId": "option-2",
+          "values": {
+            "burdenContact": {
+              "tier": "subsidiary",
+              "bridgeId": "con-subsidiary-indeterminacy"
+            }
+          }
+        },
+        {
+          "optionId": "option-3",
+          "values": {
+            "burdenContact": {
+              "tier": "motion",
+              "bridgeId": "con-motion-no-basic-desert"
+            }
+          }
+        },
+        {
+          "optionId": "option-4",
+          "values": {
+            "burdenContact": {
+              "tier": "central",
+              "bridgeId": "con-central-sourcehood"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

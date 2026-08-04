@@ -1,0 +1,253 @@
+{
+  "schemaVersion": "3.7.5-taxonomy-priority-correction-analysis",
+  "analyzedAt": "2026-08-04T05:54:07.508Z",
+  "status": "correction-smoke-fail",
+  "warning": "This exposed AI-only correction smoke tests repeatability on known development cases; it does not establish human ground truth, generalization, participant performance, or production readiness.",
+  "sources": {
+    "executionManifestSha256": "c64c7494f885ea84981d25a677fcb6c1355b5e69783cca9272c95b4868daff65",
+    "initialExecutionSha256": "34685d789e3147aa9f7478d6eb93605e0ea207394493795404dd712487565214",
+    "initialDisagreementsSha256": "387b6880f96262d01a2b69a14f8c78e370535e69c25abadfc3e27f402138d9b1",
+    "adjudicationExecutionSha256": "ffb27b4daa7d8719d6b3d2892b5d63fcbcb8c015442208baa673d36527951619",
+    "sealedOptionMapSha256": "5f4956437c7aebe767fb75aa7cac73beec61a47959ad3de36d4aee446a2436d4",
+    "adjudicationOptionMapSha256": "0d16581929580fc0170800c235aa0bc59740fdbe472c2bee9bc8dd0ca38b10ac"
+  },
+  "results": {
+    "initial": {
+      "bundles": 8,
+      "agreements": 7,
+      "disagreements": 1,
+      "adjudicationContexts": 1
+    },
+    "final": {
+      "bundles": 8,
+      "resolved": 8,
+      "matchesDevelopmentReference": 6,
+      "differsFromDevelopmentReference": 2,
+      "decisions": [
+        {
+          "bundleId": "diagnostic-62-07",
+          "debateNumber": "62",
+          "votes": {
+            "passA": {
+              "defect.type": "none"
+            },
+            "passB": {
+              "defect.type": "none"
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "defect.type": "none"
+          },
+          "supportingVotes": 2,
+          "matchesDevelopmentReference": true
+        },
+        {
+          "bundleId": "burden-62-07",
+          "debateNumber": "62",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "tier": "subsidiary",
+                "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-pro-subsidiary"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "tier": "subsidiary",
+                "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-pro-subsidiary"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "tier": "subsidiary",
+              "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-pro-subsidiary"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesDevelopmentReference": true
+        },
+        {
+          "bundleId": "diagnostic-154-09",
+          "debateNumber": "154",
+          "votes": {
+            "passA": {
+              "defect.type": "attribution-error"
+            },
+            "passB": {
+              "defect.type": "attribution-error"
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "defect.type": "attribution-error"
+          },
+          "supportingVotes": 2,
+          "matchesDevelopmentReference": true
+        },
+        {
+          "bundleId": "diagnostic-154-15",
+          "debateNumber": "154",
+          "votes": {
+            "passA": {
+              "defect.type": "invalid-inference"
+            },
+            "passB": {
+              "defect.type": "invalid-inference"
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "defect.type": "invalid-inference"
+          },
+          "supportingVotes": 2,
+          "matchesDevelopmentReference": true
+        },
+        {
+          "bundleId": "burden-154-12",
+          "debateNumber": "154",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "tier": "subsidiary",
+                "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "tier": "subsidiary",
+                "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "tier": "subsidiary",
+              "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesDevelopmentReference": false
+        },
+        {
+          "bundleId": "diagnostic-185-07",
+          "debateNumber": "185",
+          "votes": {
+            "passA": {
+              "defect.type": "ambiguity"
+            },
+            "passB": {
+              "defect.type": "ambiguity"
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "defect.type": "ambiguity"
+          },
+          "supportingVotes": 2,
+          "matchesDevelopmentReference": true
+        },
+        {
+          "bundleId": "burden-185-07",
+          "debateNumber": "185",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "tier": "central",
+                "bridgeId": "con-central-sourcehood"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "tier": "central",
+                "bridgeId": "con-central-sourcehood"
+              }
+            },
+            "passC": null
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "tier": "central",
+              "bridgeId": "con-central-sourcehood"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesDevelopmentReference": true
+        },
+        {
+          "bundleId": "burden-185-05",
+          "debateNumber": "185",
+          "votes": {
+            "passA": {
+              "burdenContact": {
+                "tier": "subsidiary",
+                "bridgeId": "con-subsidiary-indeterminacy"
+              }
+            },
+            "passB": {
+              "burdenContact": {
+                "tier": "central",
+                "bridgeId": "con-central-sourcehood"
+              }
+            },
+            "passC": {
+              "burdenContact": {
+                "tier": "subsidiary",
+                "bridgeId": "con-subsidiary-indeterminacy"
+              }
+            }
+          },
+          "resolved": true,
+          "finalSemanticTuple": {
+            "burdenContact": {
+              "tier": "subsidiary",
+              "bridgeId": "con-subsidiary-indeterminacy"
+            }
+          },
+          "supportingVotes": 2,
+          "matchesDevelopmentReference": false
+        }
+      ]
+    }
+  },
+  "gates": {
+    "structural": {
+      "initialContextsCompleted": true,
+      "initialContextsValid": true,
+      "adjudicationContextsValid": true,
+      "preInferenceSchemaRejections": true,
+      "modelOutputRetries": true,
+      "streamRecoveries": true,
+      "invalidInitialBundles": true,
+      "scoringFields": true,
+      "meteredApiCost": true,
+      "transcriptionCost": true
+    },
+    "semantic": {
+      "bundleCoverage": true,
+      "perfectInitialAgreement": false,
+      "finalTwoVoteConsensus": true,
+      "unresolvedBundles": true
+    }
+  },
+  "passed": false,
+  "decision": {
+    "correctedDisjointRepeatabilityTestPreregistrationAuthorized": false,
+    "correctedBenchmarkKeyAuthorized": false,
+    "largerModelBatchAuthorized": false,
+    "heldOutAccessAuthorized": false,
+    "numericalParticipantScoringAuthorized": false,
+    "assessmentProseAuthorized": false,
+    "productionMutationAuthorized": false
+  }
+}

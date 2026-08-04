@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "3.7.5-taxonomy-priority-correction-failure-diagnostics",
+  "status": "perfect-initial-repeatability-threshold-failed",
+  "initialAgreement": {
+    "agreements": 7,
+    "bundles": 8,
+    "rate": 0.875,
+    "requiredAgreements": 8
+  },
+  "familyDiagnostics": {
+    "diagnostic": {
+      "agreements": 4,
+      "bundles": 4,
+      "developmentReferenceMatchesAfterConsensus": 4,
+      "assessment": "The explicit attribution-error, ambiguity, invalid-inference, and none precedence anchors were repeatable on all exposed diagnostic cases."
+    },
+    "burden": {
+      "agreements": 3,
+      "bundles": 4,
+      "developmentReferenceMatchesAfterConsensus": 2,
+      "assessment": "Direct-attack priority repaired burden-185-07, but the single burdenContact choice still conflates contact existence, polarity, and route selection."
+    }
+  },
+  "initialDisputes": [
+    {
+      "bundleId": "burden-185-05",
+      "issue": "route-contact-existence-and-polarity-conflation",
+      "passA": "subsidiary-indeterminacy",
+      "passB": "central-sourcehood",
+      "passC": "subsidiary-indeterminacy",
+      "twoVoteResolution": "subsidiary-indeterminacy",
+      "developmentReference": "motion-no-basic-desert",
+      "diagnosis": "The excerpt says libertarian freedom neither supplies nor removes responsibility. One reading treats that as an independent narrower claim about libertarian or indeterminist rescue; another treats it as a direct attack on the central inference from deficient sourcehood or control to absent responsibility. The complete motion is not stated. The candidate universe supplies no no-route-contact option and does not encode whether a bridge is supported or attacked."
+    }
+  ],
+  "stableDevelopmentReferenceDifferences": [
+    {
+      "bundleId": "burden-154-12",
+      "twoVoteResolution": "subsidiary",
+      "developmentReference": "central",
+      "interpretation": "Both passes treated the dharma-morality translation point as a narrower conceptual consideration rather than an establishment of the central secular-flourishing bridge. This is repeatable evidence against treating the provisional reference as ground truth."
+    },
+    {
+      "bundleId": "burden-185-05",
+      "twoVoteResolution": "subsidiary-indeterminacy",
+      "developmentReference": "motion-no-basic-desert",
+      "interpretation": "No pass selected the complete motion. The motion-level development reference is therefore unsupported by this run, although the correct narrower classification remains unstable."
+    }
+  ],
+  "representationDiagnosis": {
+    "missingNoContactCandidate": true,
+    "supportAttackPolarityEncoded": false,
+    "contactExistenceSeparatedFromBridgeSelection": false,
+    "bridgePropositionExactnessRequired": false,
+    "recommendedDecomposition": [
+      "First classify route contact as support, attack, or none.",
+      "Require exact proposition-level contact before bridge selection.",
+      "Select a bridge only after contact and polarity are locked.",
+      "Include an explicit no-route-contact candidate and prohibit topic-overlap promotion.",
+      "Keep motion selection limited to an expressly complete motion-level conclusion."
+    ]
+  },
+  "controls": {
+    "allInitialContextsValid": true,
+    "allAdjudicationContextsValid": true,
+    "finalTwoVoteBundles": 8,
+    "unresolvedBundles": 0,
+    "retries": 0,
+    "schemaRejections": 0,
+    "streamRecoveries": 0,
+    "scoringFields": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "recommendation": {
+    "retainDiagnosticPrecedence": true,
+    "lowerThreshold": false,
+    "authorizeCorrectedDisjointTest": false,
+    "authorizeScoringOrProse": false,
+    "nextStep": "Design a v3.7.6 burden-contact decomposition that separates contact existence, support-or-attack polarity, and exact bridge selection; includes no-route-contact; and tests the exposed failure plus orthogonal burden examples before any further model execution."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "3.7.5-initial-correction-disagreements",
+  "createdAt": "2026-08-04T05:53:47.715Z",
+  "status": "initial-passes-mapped",
+  "sources": {
+    "executionManifestSha256": "c64c7494f885ea84981d25a677fcb6c1355b5e69783cca9272c95b4868daff65",
+    "initialExecutionSha256": "34685d789e3147aa9f7478d6eb93605e0ea207394493795404dd712487565214",
+    "sealedOptionMapSha256": "5f4956437c7aebe767fb75aa7cac73beec61a47959ad3de36d4aee446a2436d4"
+  },
+  "allInitialValid": true,
+  "counts": {
+    "bundles": 8,
+    "agreements": 7,
+    "disagreements": 1,
+    "adjudicationContexts": 1
+  },
+  "comparisons": [
+    {
+      "bundleId": "diagnostic-62-07",
+      "debateNumber": "62",
+      "passA": {
+        "defect.type": "none"
+      },
+      "passB": {
+        "defect.type": "none"
+      },
+      "agreed": true
+    },
+    {
+      "bundleId": "burden-62-07",
+      "debateNumber": "62",
+      "passA": {
+        "burdenContact": {
+          "tier": "subsidiary",
+          "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-pro-subsidiary"
+        }
+      },
+      "passB": {
+        "burdenContact": {
+          "tier": "subsidiary",
+          "bridgeId": "pageau-folley-logos-meaning-resurrection-2026-pro-subsidiary"
+        }
+      },
+      "agreed": true
+    },
+    {
+      "bundleId": "diagnostic-154-09",
+      "debateNumber": "154",
+      "passA": {
+        "defect.type": "attribution-error"
+      },
+      "passB": {
+        "defect.type": "attribution-error"
+      },
+      "agreed": true
+    },
+    {
+      "bundleId": "diagnostic-154-15",
+      "debateNumber": "154",
+      "passA": {
+        "defect.type": "invalid-inference"
+      },
+      "passB": {
+        "defect.type": "invalid-inference"
+      },
+      "agreed": true
+    },
+    {
+      "bundleId": "burden-154-12",
+      "debateNumber": "154",
+      "passA": {
+        "burdenContact": {
+          "tier": "subsidiary",
+          "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary"
+        }
+      },
+      "passB": {
+        "burdenContact": {
+          "tier": "subsidiary",
+          "bridgeId": "koukl-oconnor-kanojia-nonbelief-harm-2025-con-subsidiary"
+        }
+      },
+      "agreed": true
+    },
+    {
+      "bundleId": "diagnostic-185-07",
+      "debateNumber": "185",
+      "passA": {
+        "defect.type": "ambiguity"
+      },
+      "passB": {
+        "defect.type": "ambiguity"
+      },
+      "agreed": true
+    },
+    {
+      "bundleId": "burden-185-07",
+      "debateNumber": "185",
+      "passA": {
+        "burdenContact": {
+          "tier": "central",
+          "bridgeId": "con-central-sourcehood"
+        }
+      },
+      "passB": {
+        "burdenContact": {
+          "tier": "central",
+          "bridgeId": "con-central-sourcehood"
+        }
+      },
+      "agreed": true
+    },
+    {
+      "bundleId": "burden-185-05",
+      "debateNumber": "185",
+      "passA": {
+        "burdenContact": {
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-indeterminacy"
+        }
+      },
+      "passB": {
+        "burdenContact": {
+          "tier": "central",
+          "bridgeId": "con-central-sourcehood"
+        }
+      },
+      "agreed": false
+    }
+  ],
+  "adjudicationContexts": [
+    {
+      "debateNumber": "185",
+      "reviewerPass": "pass-c",
+      "packet": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/packets/pass-c/debate-185.json",
+      "schema": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/schemas/pass-c/debate-185.schema.json",
+      "output": "docs/calibration/v3.7.5/taxonomy-priority-correction-smoke/outputs/pass-c/debate-185.json",
+      "bundleCount": 1
+    }
+  ],
+  "correctedDisjointRepeatabilityPreregistrationAuthorized": false,
+  "largerModelBatchAuthorized": false,
+  "heldOutAccessAuthorized": false,
+  "numericalScoringAuthorized": false,
+  "assessmentProseAuthorized": false,
+  "productionMutationAuthorized": false
+}
