@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "3.8.7-coverage-batch-span-correction-execution-manifest",
+  "protocolId": "v3.8.7-coverage-batch-span-correction",
+  "parentProtocolId": "v3.8.5-coverage-transport-amendment",
+  "stage": "debate-161-exhaustive-batch-coordinate-correction",
+  "status": "frozen-single-context-batch-coordinate-correction-authorized",
+  "frozenAt": "2026-08-04T14:42:17Z",
+  "checkpointCommit": "d24b78649ddd984f4a938309e706e51de23cd8fd",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "correctionBasis": {
+    "sourceRawOutput": "docs/calibration/v3.8.5/coverage-transport-amendment/raw-output.json",
+    "sourceRawSha256": "4004e1df8247041ff99da2527a1af97f077f2fad3c6ee754046a82a655df7ac0",
+    "exhaustivePreflight": "docs/calibration/v3.8.7/coverage-batch-span-correction/exhaustive-preflight.json",
+    "exhaustiveIssueCount": 4,
+    "exhaustiveIssueCode": "span-word-count",
+    "targetRefs": [
+      "addition-01",
+      "addition-02",
+      "addition-03",
+      "addition-07"
+    ],
+    "v386CorrectionUsedAsInput": false,
+    "fullDebateRerun": false,
+    "semanticReassessment": false
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "modelContext": {
+    "packet": "docs/calibration/v3.8.7/coverage-batch-span-correction/correction-packet.json",
+    "schema": "docs/calibration/v3.8.7/coverage-batch-span-correction/correction-schema.json",
+    "priorFullProposalAvailable": false,
+    "v386CorrectionAvailable": false,
+    "boundedLocalTimestampedWindowsOnly": true
+  },
+  "mergeContext": {
+    "sourceRawOutput": "docs/calibration/v3.8.5/coverage-transport-amendment/raw-output.json",
+    "sourcePacket": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/packets/debate-161.json",
+    "sourceSchema": "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/schemas/debate-161.schema.json",
+    "sourceEvents": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+    "mutableFields": [
+      "addition-01.startEvent",
+      "addition-01.endEvent",
+      "addition-02.startEvent",
+      "addition-02.endEvent",
+      "addition-03.startEvent",
+      "addition-03.endEvent",
+      "addition-07.startEvent",
+      "addition-07.endEvent"
+    ],
+    "allOtherFieldsImmutable": true
+  },
+  "authorization": {
+    "freshBatchCoordinateCorrectionContexts": 1,
+    "batchCoordinateCorrectionModelExecution": true,
+    "deterministicMergeAndFullCoverageValidation": true,
+    "coverageReviewPacketConstructionAfterPass": true,
+    "coverageReviewModelExecution": false,
+    "coverageAdjudicationModelExecution": false,
+    "burdenContactModelExecution": false,
+    "scoringModelExecution": false,
+    "numericalParticipantScoring": false,
+    "assessmentProse": false,
+    "productionMutation": false,
+    "all195Debates": false
+  },
+  "executionPolicy": {
+    "attempts": 1,
+    "modelOutputRetriesMaximum": 0,
+    "perInvocationTimeoutMs": 1200000,
+    "recoverableStreamEventsNormalMaximum": 2,
+    "recoverableStreamEventsHardMaximum": 8,
+    "transportEventsExtractedFromStderrOnly": true,
+    "canonicalNoncoordinateIdentityRequired": true,
+    "completeCoverageRevalidationRequired": true,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "acceptanceRule": {
+    "exactTargetOrderRequired": [
+      "addition-01",
+      "addition-02",
+      "addition-03",
+      "addition-07"
+    ],
+    "eachCorrectedSpanWithinItsOriginalRequired": true,
+    "correctedSpanWordsMinimum": 20,
+    "correctedSpanWordsMaximum": 220,
+    "correctedSpanDurationMsMaximum": 150000,
+    "noncoordinateMutationCountMaximum": 0,
+    "completeCoverageValidatorExitCodeRequired": 0,
+    "recoverableStreamEventsHardMaximum": 8
+  },
+  "stopRules": {
+    "anySourceHashMismatchBlocksExecution": true,
+    "anyPreexistingOutputBlocksExecution": true,
+    "anyAcceptanceFailureBlocksReview": true,
+    "furtherAutomaticRetryAuthorized": false
+  },
+  "outputs": {
+    "correctionOutput": "docs/calibration/v3.8.7/coverage-batch-span-correction/correction-output.json",
+    "correctedRawOutput": "docs/calibration/v3.8.7/coverage-batch-span-correction/corrected-raw-output.json",
+    "enrichedOutput": "docs/calibration/v3.8.7/coverage-batch-span-correction/enriched-output.json",
+    "modelExecution": "docs/calibration/v3.8.7/coverage-batch-span-correction/model-execution.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v3.8.7/coverage-batch-span-correction/correction-output.json",
+    "docs/calibration/v3.8.7/coverage-batch-span-correction/corrected-raw-output.json",
+    "docs/calibration/v3.8.7/coverage-batch-span-correction/enriched-output.json",
+    "docs/calibration/v3.8.7/coverage-batch-span-correction/model-execution.json"
+  ],
+  "sourceHashes": {
+    "docs/calibration/v3.8.7/coverage-batch-span-correction/preregistration.md": "8d673dfbec39bdcbaa2c3d8f3c8bafe302f85178b9c3f702aa4689de2e61eec6",
+    "docs/calibration/v3.8.7/coverage-batch-span-correction/exhaustive-preflight.json": "ccd0a7ffe0d3bd19404ea6f3552d8e612504b84b1fbb6af2d968f34226b02e2a",
+    "docs/calibration/v3.8.7/coverage-batch-span-correction/correction-packet.json": "92049984aba3e51458fdc5722bc26a205640219f7c7236d39cca0d6e0261f9fd",
+    "docs/calibration/v3.8.7/coverage-batch-span-correction/correction-schema.json": "e1f3c5b8dc5545f232b28b6b5aed2b8d79676b32543c5abcb3ed1e5d72b6e530",
+    "docs/calibration/v3.8.5/coverage-transport-amendment/execution-manifest.json": "14a2dd8167cf073e3467f403327c6fbe75f3197f7e31113fe8cdf0ee871d980b",
+    "docs/calibration/v3.8.5/coverage-transport-amendment/model-execution.json": "27e27bd708de7baa8c59c13589c47fda33e47ecd8ca76ab1feef206812195615",
+    "docs/calibration/v3.8.5/coverage-transport-amendment/raw-output.json": "4004e1df8247041ff99da2527a1af97f077f2fad3c6ee754046a82a655df7ac0",
+    "docs/calibration/v3.8.6/coverage-span-correction/model-execution.json": "c8af7b952a8a30fc961f987ae1ec9654b6d47dc1f0957c23684c587af1865b68",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/packets/debate-161.json": "093a3928c7251c91fcd1b2b00a19cb42aa1996d57c28528952ae07cc1c14d099",
+    "docs/calibration/v3.8.4/held-out-score-reconstruction-gate/coverage/proposal/schemas/debate-161.schema.json": "02149eef27211e7aeb6b4797eba43150794240e116ddd3e21f7444dced4afad8",
+    ".assessment-cache/captions/9JVRy7bR7zI/events.json": "5dd29c053f0e5da4ed79b6f818fb844a6515552671dbc4014916d18ca1d2cbbc",
+    ".assessment-cache/captions/9JVRy7bR7zI/manifest.json": "436f3f2be4fd5e84338f6244eae1398dbcb11c56ac514920a80cad440790dc18",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v37-retired-semantic.mjs": "2fe113760e4b2bb97104025d39755d8ceeeecded89fbaea683cc5c9cce188296",
+    "scripts/lib/v381-source-preparation.mjs": "ccc2c66a1c2ab50fbebc26888f622c9632fb273c2b24b45ea68618188df384d7",
+    "scripts/lib/v384-coverage-preparation.mjs": "5a37b262e3a1c819c01f6ce6e808bcf19e57a4bb5b2df04ee659c2b72ea122f2",
+    "scripts/lib/v385-transport.mjs": "f20d5cb026e0c2720d32276ddcbb612ec852e3732d7653e47a98ba5ffa880dfe",
+    "scripts/validate-v384-coverage-proposal.mjs": "8e426a614e27d15d4cf357af838b74d76657328d9430f77ebe61ef4de5d68c9d",
+    "scripts/audit-v385-coverage-proposal-exhaustive.mjs": "fa677f1c125bba91b88fc4c3096d4a0d25a8a9e6849b87ed0aa4f0bc330785e3",
+    "scripts/build-v387-coverage-batch-span-correction.mjs": "8385d8c2a0dc35a24843be86794a4da433b42044e23e831ce420a1f9850db76e",
+    "scripts/preregister-v387-coverage-batch-span-correction.mjs": "fb84cd651b495a4decaa2419c101dd858cb95f0f62a81abc44e61d79e5ec9252",
+    "scripts/validate-v387-coverage-batch-span-correction-lock.mjs": "555d3c31cf81af1d1ef73cf4512dce0fc8e075b97a16ef16b87f6abc19cb56f4",
+    "scripts/run-v387-coverage-batch-span-correction.mjs": "fd6b86188809c2d38a54ba7d1c81f2513c2b141599d877eb8014ace9acffa678"
+  }
+}
