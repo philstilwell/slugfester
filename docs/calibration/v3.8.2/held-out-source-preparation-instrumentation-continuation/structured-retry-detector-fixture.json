@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "3.8.2-structured-retry-detector-fixture",
+  "status": "passed",
+  "detectorScope": "Anchored WARN lines emitted by codex_core::responses_retry only",
+  "semanticFalsePositiveCases": [
+    {
+      "text": "A same-request subscription-stream reconnection is recorded separately.",
+      "parsedEvents": 0
+    },
+    {
+      "text": "We can presume to tell God how we should reason.",
+      "parsedEvents": 0
+    },
+    {
+      "text": "The moderator resumes the exchange after the question.",
+      "parsedEvents": 0
+    },
+    {
+      "text": "stream recovery and retrying stream are ordinary semantic phrases here.",
+      "parsedEvents": 0
+    }
+  ],
+  "ignoredDiagnosticCase": {
+    "text": "2026-08-04T08:58:15.849538Z INFO codex_core::responses_retry: stream disconnected - retrying sampling request (1/5 in 181ms)... turn_id=not-a-warning retries=1 max_retries=5",
+    "parsedEvents": 0
+  },
+  "exactStructuredWarning": {
+    "text": "2026-08-04T08:58:15.849538Z WARN codex_core::responses_retry: stream disconnected - retrying sampling request (1/5 in 181ms)... turn_id=019fcbd6-c20b-7280-8b58-d448de9e1494 retries=1 max_retries=5 sampling_error=stream disconnected before completion: WebSocket protocol error: Connection reset without closing handshake",
+    "parsedEvents": [
+      {
+        "timestamp": "2026-08-04T08:58:15.849538Z",
+        "component": "codex_core::responses_retry",
+        "turnId": "019fcbd6-c20b-7280-8b58-d448de9e1494",
+        "retryOrdinal": 1,
+        "retryMaximum": 5,
+        "retries": 1,
+        "maxRetries": 5,
+        "delay": "181ms",
+        "detail": "sampling_error=stream disconnected before completion: WebSocket protocol error: Connection reset without closing handshake"
+      }
+    ]
+  },
+  "assertions": {
+    "ordinaryReconnectionIgnored": true,
+    "presumeSubstringIgnored": true,
+    "resumesSubstringIgnored": true,
+    "semanticStreamPhrasesIgnored": true,
+    "nonWarningDiagnosticIgnored": true,
+    "exactWarningParsedOnce": true,
+    "turnIdAndRetryCountersParsed": true
+  }
+}

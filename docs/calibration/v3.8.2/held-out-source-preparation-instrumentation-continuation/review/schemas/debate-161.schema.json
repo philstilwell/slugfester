@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v381-source-review-161",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "routeReviews",
+    "moveReviews"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.1-source-review-output"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "161"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "craig-millican-does-god-exist-2011"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "review"
+    },
+    "routeReviews": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "side",
+          "routeAccepted",
+          "routeRationale",
+          "bridgeReviews"
+        ],
+        "properties": {
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "routeAccepted": {
+            "type": "boolean"
+          },
+          "routeRationale": {
+            "type": "string",
+            "minLength": 80
+          },
+          "bridgeReviews": {
+            "type": "array",
+            "minItems": 5,
+            "maxItems": 5,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bridgeId",
+                "accepted",
+                "rationale"
+              ],
+              "properties": {
+                "bridgeId": {
+                  "type": "string",
+                  "enum": [
+                    "craig-millican-does-god-exist-2011-pro-motion-v381",
+                    "craig-millican-does-god-exist-2011-pro-central-v381",
+                    "craig-millican-does-god-exist-2011-pro-subsidiary-1-v381",
+                    "craig-millican-does-god-exist-2011-pro-subsidiary-2-v381",
+                    "craig-millican-does-god-exist-2011-pro-subsidiary-3-v381",
+                    "craig-millican-does-god-exist-2011-con-motion-v381",
+                    "craig-millican-does-god-exist-2011-con-central-v381",
+                    "craig-millican-does-god-exist-2011-con-subsidiary-1-v381",
+                    "craig-millican-does-god-exist-2011-con-subsidiary-2-v381",
+                    "craig-millican-does-god-exist-2011-con-subsidiary-3-v381"
+                  ]
+                },
+                "accepted": {
+                  "type": "boolean"
+                },
+                "rationale": {
+                  "type": "string",
+                  "minLength": 60
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "moveReviews": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "candidateValid",
+          "speaker",
+          "side",
+          "attributionConfidence",
+          "attributionBasis",
+          "provisionalBurdenContact",
+          "rationale"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "enum": [
+              "craig-millican-does-god-exist-2011-candidate-01-v381",
+              "craig-millican-does-god-exist-2011-candidate-02-v381",
+              "craig-millican-does-god-exist-2011-candidate-03-v381",
+              "craig-millican-does-god-exist-2011-candidate-04-v381",
+              "craig-millican-does-god-exist-2011-candidate-05-v381",
+              "craig-millican-does-god-exist-2011-candidate-06-v381",
+              "craig-millican-does-god-exist-2011-candidate-07-v381",
+              "craig-millican-does-god-exist-2011-candidate-08-v381"
+            ]
+          },
+          "candidateValid": {
+            "type": "boolean"
+          },
+          "speaker": {
+            "type": "string",
+            "enum": [
+              "William Lane Craig",
+              "Peter Millican"
+            ]
+          },
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "attributionConfidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "attributionBasis": {
+            "type": "string",
+            "minLength": 40
+          },
+          "provisionalBurdenContact": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "polarity",
+                  "bridgeId"
+                ],
+                "properties": {
+                  "polarity": {
+                    "type": "string",
+                    "enum": [
+                      "support",
+                      "attack"
+                    ]
+                  },
+                  "bridgeId": {
+                    "type": "string",
+                    "enum": [
+                      "craig-millican-does-god-exist-2011-pro-motion-v381",
+                      "craig-millican-does-god-exist-2011-pro-central-v381",
+                      "craig-millican-does-god-exist-2011-pro-subsidiary-1-v381",
+                      "craig-millican-does-god-exist-2011-pro-subsidiary-2-v381",
+                      "craig-millican-does-god-exist-2011-pro-subsidiary-3-v381",
+                      "craig-millican-does-god-exist-2011-con-motion-v381",
+                      "craig-millican-does-god-exist-2011-con-central-v381",
+                      "craig-millican-does-god-exist-2011-con-subsidiary-1-v381",
+                      "craig-millican-does-god-exist-2011-con-subsidiary-2-v381",
+                      "craig-millican-does-god-exist-2011-con-subsidiary-3-v381"
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 100
+          }
+        }
+      }
+    }
+  }
+}
