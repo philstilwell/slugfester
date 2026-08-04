@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v388-contact-evidence-recovery",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "recoveryId",
+    "reviewerRole",
+    "repairs"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.8-burden-contact-evidence-recovery-output"
+    },
+    "recoveryId": {
+      "type": "string",
+      "const": "v388-contact-evidence-recovery-55-pass-a-bundles-04-20"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "evidence-recovery-reviewer"
+    },
+    "repairs": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "bundleId",
+          "replacementEvidenceText",
+          "evidenceRationale"
+        ],
+        "properties": {
+          "bundleId": {
+            "type": "string",
+            "enum": [
+              "v388-contact-55-04",
+              "v388-contact-55-20"
+            ]
+          },
+          "replacementEvidenceText": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidenceRationale": {
+            "type": "string",
+            "minLength": 120
+          }
+        }
+      }
+    }
+  }
+}
