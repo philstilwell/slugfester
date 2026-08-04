@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "3.5-compiler-replay-analysis",
+  "analyzedAt": "2026-08-04T02:59:00.000Z",
+  "status": "compiler-pass-semantic-fail",
+  "warning": "This retrospective development replay adds no independent model judgment and cannot establish generalization.",
+  "sources": {
+    "manifestSha256": "d879f3840f33ad148b850157a57b89af70ceb78e86f60183eaac4313d9b9a753",
+    "replaySummarySha256": "20814dd09eb333b43a4dc5486d136ed59df55d272b2419cfe820772ee3d5d4da"
+  },
+  "sample": {
+    "debateCount": 3,
+    "caseCount": 13,
+    "semanticFieldCount": 161,
+    "mediumOrLowMoveCount": 1,
+    "audioVerifiedMediumOrLowMoveCount": 1
+  },
+  "execution": {
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "compiler": {
+    "gates": {
+      "compiledArtifactCount": true,
+      "compiledReviewCaseCount": true,
+      "replayLockCaseCount": true,
+      "validCompiledReviewRate": true,
+      "validReplayLockRate": true,
+      "mediumLowAudioVerificationRate": true,
+      "discretionaryRepairs": true,
+      "fallbackCases": true,
+      "modelContexts": true,
+      "scoringFields": true
+    },
+    "passed": true,
+    "structural": {
+      "compiledArtifactCount": 6,
+      "compiledReviewCaseCount": 26,
+      "replayLockCaseCount": 13,
+      "validCompiledReviewCount": 26,
+      "validReplayLockCount": 13,
+      "unresolvedFields": 3,
+      "discretionaryRepairs": 0,
+      "fallbackCases": 0,
+      "scoringFields": 0,
+      "productionMutations": 0
+    }
+  },
+  "semanticMonitoring": {
+    "rawPassAAccuracy": {
+      "originalTargetContactExact": 0.9230769230769231,
+      "connectedExampleExact": 0.8461538461538461,
+      "scopeExact": 0.9230769230769231,
+      "burdenAdjustmentExact": 1,
+      "componentContactMicroExact": 0.8064516129032258,
+      "coverageExact": 0.6923076923076923,
+      "defectTypeExact": 0.6153846153846154,
+      "consequenceExact": 0.7692307692307693,
+      "diagnosticExact": 0.7692307692307693,
+      "reframeExact": 1,
+      "burdenRelevanceExact": 0.8461538461538461,
+      "exactDerivedTupleExact": 0.5384615384615384
+    },
+    "rawPassBAccuracy": {
+      "originalTargetContactExact": 1,
+      "connectedExampleExact": 0.6923076923076923,
+      "scopeExact": 0.7692307692307693,
+      "burdenAdjustmentExact": 1,
+      "componentContactMicroExact": 0.6451612903225806,
+      "coverageExact": 0.5384615384615384,
+      "defectTypeExact": 0.6923076923076923,
+      "consequenceExact": 0.8461538461538461,
+      "diagnosticExact": 0.8461538461538461,
+      "reframeExact": 0.6153846153846154,
+      "burdenRelevanceExact": 1,
+      "exactDerivedTupleExact": 0.23076923076923078
+    },
+    "replayFinalAccuracy": {
+      "originalTargetContactExact": 0.9230769230769231,
+      "connectedExampleExact": 0.7692307692307693,
+      "scopeExact": 0.8461538461538461,
+      "burdenAdjustmentExact": 1,
+      "componentContactMicroExact": 0.8387096774193549,
+      "coverageExact": 0.7692307692307693,
+      "defectTypeExact": 0.6153846153846154,
+      "consequenceExact": 0.6923076923076923,
+      "diagnosticExact": 0.6923076923076923,
+      "reframeExact": 0.8461538461538461,
+      "burdenRelevanceExact": 0.9230769230769231,
+      "exactDerivedTupleExact": 0.46153846153846156,
+      "diagnosticPositiveRecall": 0,
+      "reframePositiveRecall": 0.5
+    }
+  },
+  "reliability": {
+    "rawAgreementCount": 128,
+    "sharedRawErrorCount": 12,
+    "sharedRawErrorsCorrected": 2,
+    "correctedSharedErrors": [
+      {
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "caseId": "v291-dev-62-04",
+        "fieldPath": "componentContact.pageau-folley-logos-meaning-resurrection-2026-target-04-c3",
+        "disposition": "dual-confirmed-shared-override",
+        "finalJson": "false",
+        "goldJson": "false"
+      },
+      {
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "caseId": "v291-dev-185-12",
+        "fieldPath": "defect",
+        "disposition": "dual-confirmed-shared-override",
+        "finalJson": "\"irrelevance\"",
+        "goldJson": "\"irrelevance\""
+      }
+    ],
+    "correctSharedRawValuesHarmed": 1,
+    "harmedCorrectSharedValues": [
+      {
+        "debateId": "dennett-caruso-free-will-responsibility-2021",
+        "caseId": "v291-dev-185-12",
+        "fieldPath": "scope",
+        "disposition": "dual-confirmed-shared-override",
+        "finalJson": "\"narrowed\"",
+        "goldJson": "\"same\""
+      }
+    ],
+    "conflictCount": 33,
+    "conflictsCorrect": 19,
+    "conflictAccuracy": 0.5757575757575758,
+    "unresolvedFields": 3
+  },
+  "semanticGates": {
+    "finalOriginalTargetContactExact": false,
+    "finalScopeExact": false,
+    "finalBurdenAdjustmentExact": true,
+    "finalComponentContactMicroExact": false,
+    "finalCoverageExact": false,
+    "finalDefectTypeExact": false,
+    "finalConsequenceExact": false,
+    "finalDiagnosticExact": false,
+    "finalReframeExact": false,
+    "finalBurdenRelevanceExact": true,
+    "finalExactDerivedTupleExact": false,
+    "finalDiagnosticPositiveRecall": false,
+    "finalReframePositiveRecall": false,
+    "unresolvedFields": false
+  },
+  "semanticReady": false,
+  "decision": {
+    "compilerPassed": true,
+    "semanticReady": false,
+    "disjointRetiredModelTestAuthorized": false,
+    "heldOutAccessAuthorized": false,
+    "numericalScoringAuthorized": false,
+    "productionMutationAuthorized": false
+  }
+}
