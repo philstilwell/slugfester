@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "3.8.8-coverage-cross-field-coherence-audit",
+  "status": "one-atomic-bundle-adjudication-required",
+  "violations": [
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "stableRef": "woodford-edwards-rational-belief-god-2023-coverage-15-v384",
+      "type": "concession-audit-role-kind-response-incoherence",
+      "description": "The fieldwise result selected constructive move semantics while also selecting a represented concession audit that points to the same move; the closed concession invariant forbids that combination.",
+      "affectedFieldIds": [
+        "candidate:woodford-edwards-rational-belief-god-2023-coverage-15-v384:proposition",
+        "candidate:woodford-edwards-rational-belief-god-2023-coverage-15-v384:selectionRole",
+        "candidate:woodford-edwards-rational-belief-god-2023-coverage-15-v384:moveKind",
+        "candidate:woodford-edwards-rational-belief-god-2023-coverage-15-v384:respondsToRefs",
+        "concession:pro:audit"
+      ]
+    }
+  ],
+  "checkedInvariants": {
+    "selectedMoveRoleKindResponseCoherence": true,
+    "responseTargetsRetainedAndNonself": true,
+    "representedConcessionsReferenceSelectedSameSideMaterialConcessions": true,
+    "representedBridgesRetainSameSideEvidence": true
+  },
+  "counts": {
+    "debatesChecked": 3,
+    "movesChecked": 81,
+    "bridgesChecked": 30,
+    "concessionAuditsChecked": 6,
+    "violations": 1,
+    "atomicBundleContextsRequired": 1,
+    "scoreFields": 0
+  },
+  "artifacts": {
+    "packet": "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/packet.json",
+    "schema": "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/schema.json",
+    "privateOptionMap": "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/private-option-map.json",
+    "output": "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/output.json",
+    "execution": "docs/calibration/v3.8.8/coverage-consensus/coherence-adjudication/model-execution.json"
+  }
+}
