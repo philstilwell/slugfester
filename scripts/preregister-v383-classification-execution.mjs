@@ -33,9 +33,11 @@ const exists = async (file) => { try { await access(path.resolve(root, file)); r
 const sourceAnalysis = await readJson(V383_SOURCE_ANALYSIS);
 const audit = await readJson(`${V383_ROOT}/packet-construction-audit.json`);
 const fixture = await readJson(`${V383_ROOT}/packet-dry-fixture.json`);
+const executionFixture = await readJson(`${V383_ROOT}/execution-dry-fixture.json`);
 const sourceAudit = await readJson(V383_SOURCE_AUDIT);
 assert(sourceAnalysis.sourcePreparationPassed === true && sourceAnalysis.decision?.classificationPacketConstructionPreregistrationAuthorized === true, "upstream source gate did not authorize packet preregistration");
 assert(audit.status === "passed" && fixture.passed === true && fixture.modelContextsExecuted === 0, "packet construction did not pass cleanly");
+assert(executionFixture.passed === true && executionFixture.modelContextsExecuted === 0 && executionFixture.twoInitialTuplesOnly === true, "execution tooling did not pass cleanly");
 
 const contexts = {};
 const phaseContexts = [];
@@ -64,6 +66,7 @@ const upstreamArtifacts = [
   V383_AUDIO_REQUIRED,
   `${V383_ROOT}/packet-construction-audit.json`,
   `${V383_ROOT}/packet-dry-fixture.json`,
+  `${V383_ROOT}/execution-dry-fixture.json`,
   `${V383_ROOT}/sealed-option-map.json`,
   `${V383_ROOT}/packet-development-assessment.md`
 ];
@@ -87,11 +90,18 @@ const frozenPaths = [
   V383_MANUAL,
   V383_PREREGISTRATION,
   "scripts/lib/v383-burden-contact.mjs",
+  "scripts/lib/v383-execution.mjs",
   "scripts/lib/v382-source-transport.mjs",
   "scripts/build-v383-burden-contact-packets.mjs",
   "scripts/test-v383-burden-contact-packets.mjs",
+  "scripts/test-v383-classification-execution-tooling.mjs",
   "scripts/preregister-v383-classification-execution.mjs",
   "scripts/validate-v383-classification-execution-lock.mjs",
+  "scripts/validate-v383-burden-contact-output.mjs",
+  "scripts/extract-v383-burden-contact-disagreements.mjs",
+  "scripts/analyze-v383-burden-contact-gate.mjs",
+  "scripts/validate-v383-burden-contact-result.mjs",
+  "scripts/run-v383-burden-contact-gate.mjs",
   "docs/calibration/v3.8.2/held-out-source-preparation-instrumentation-continuation/structured-retry-detector-fixture.json",
   ...upstreamArtifacts,
   ...phaseContexts.flatMap((context) => context.modelVisibleFiles),
@@ -118,6 +128,7 @@ const manifest = {
     inventory: V383_INVENTORY,
     audit: `${V383_ROOT}/packet-construction-audit.json`,
     dryFixture: `${V383_ROOT}/packet-dry-fixture.json`,
+    executionDryFixture: `${V383_ROOT}/execution-dry-fixture.json`,
     sealedOptionMap: `${V383_ROOT}/sealed-option-map.json`,
     assessment: `${V383_ROOT}/packet-development-assessment.md`,
     debateCount: 3,
@@ -170,6 +181,14 @@ const manifest = {
     pendingAudioVerifications: 0
   },
   phaseLock: phaseLockPath,
+  artifacts: {
+    initialExecution: `${V383_ROOT}/initial-model-execution.json`,
+    initialDisagreements: `${V383_ROOT}/initial-disagreements.json`,
+    adjudicationOptionMap: `${V383_ROOT}/adjudication-option-map.json`,
+    adjudicationPhaseLock: `${V383_ROOT}/adjudication/phase-lock.json`,
+    adjudicationExecution: `${V383_ROOT}/adjudication-model-execution.json`,
+    analysis: `${V383_ROOT}/gate-analysis.json`
+  },
   authorization: {
     burdenContactClassificationInitialPasses: true,
     deterministicDisagreementExtraction: true,

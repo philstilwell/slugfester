@@ -3,8 +3,8 @@
   "protocolId": "v3.8.3-heldout-burden-contact-classification-gate",
   "parentProtocolId": "v3.8.2-heldout-source-preparation-instrumentation-continuation",
   "status": "frozen-classification-execution-authorized",
-  "frozenAt": "2026-08-04T10:26:51Z",
-  "checkpointCommit": "eb536259c26e972361ba9790d7f787bbf4617193",
+  "frozenAt": "2026-08-04T10:33:01Z",
+  "checkpointCommit": "8814475b4ce87ba3b02a31b13b95c412a03dd984",
   "calibrationOnly": true,
   "AIOnly": true,
   "dyadicOnly": true,
@@ -22,6 +22,7 @@
     "inventory": "docs/calibration/v3.8.2/held-out-source-preparation-instrumentation-continuation/final-source-inventory.json",
     "audit": "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/packet-construction-audit.json",
     "dryFixture": "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/packet-dry-fixture.json",
+    "executionDryFixture": "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/execution-dry-fixture.json",
     "sealedOptionMap": "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/sealed-option-map.json",
     "assessment": "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/packet-development-assessment.md",
     "debateCount": 3,
@@ -134,6 +135,14 @@
     "pendingAudioVerifications": 0
   },
   "phaseLock": "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/classification-phase-lock.json",
+  "artifacts": {
+    "initialExecution": "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/initial-model-execution.json",
+    "initialDisagreements": "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/initial-disagreements.json",
+    "adjudicationOptionMap": "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/adjudication-option-map.json",
+    "adjudicationPhaseLock": "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/adjudication/phase-lock.json",
+    "adjudicationExecution": "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/adjudication-model-execution.json",
+    "analysis": "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/gate-analysis.json"
+  },
   "authorization": {
     "burdenContactClassificationInitialPasses": true,
     "deterministicDisagreementExtraction": true,
@@ -152,11 +161,18 @@
     "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/classification-manual.md": "08cd5dfcb3492fc6130c62ed894734a62b2d5294cdcaf37ba8c40fbd8dc854f3",
     "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/preregistration.md": "96ad424c8e216b1ec171754dc5e8a74121e9f6eac2922f14112e4c465a396757",
     "scripts/lib/v383-burden-contact.mjs": "6941e069e78b738b0e574b8e00ec81cf7397cb3305822aac6be41aae1d25f61b",
+    "scripts/lib/v383-execution.mjs": "0049639c6fc797d3ff30e934ef3eae588278d996fb0d58f159e69b768197a860",
     "scripts/lib/v382-source-transport.mjs": "049efd48c235076ecdf67a37b7c43799885fb18f513a9b23b044c31922989b46",
     "scripts/build-v383-burden-contact-packets.mjs": "fe33bff1c944ede68a7a08bea1c9d8b3cc7ea045c288e6a8c0763fe55bf06fd7",
     "scripts/test-v383-burden-contact-packets.mjs": "ad74c5e8d31da0bce72678dafc0e78a8273cc4c1176528341335052944f1f20b",
-    "scripts/preregister-v383-classification-execution.mjs": "345de53020a5fd0dbcf5aee1010aff7cf172c1a33fcccf8c6da508c71ef9fb09",
-    "scripts/validate-v383-classification-execution-lock.mjs": "8b8d404b0beaa8fd072819997dc016612951802bfd0915bb5d7e3bff08236117",
+    "scripts/test-v383-classification-execution-tooling.mjs": "cc62a4f9784bfee900ee745571714f5905857c546e19614c091e7b859c724d6e",
+    "scripts/preregister-v383-classification-execution.mjs": "c4cdf4cdc5d2e56bfad8b135a824aee337ca97ec87bacfe9127e3f2610bde293",
+    "scripts/validate-v383-classification-execution-lock.mjs": "a2703e3192dd4bbf08c8356d4c21b3a62f7f990dd70d00c652754ace48195d0c",
+    "scripts/validate-v383-burden-contact-output.mjs": "8bc62f566964898a1ef726253abdbfcf1d7af6087c6eed0e91248dbd2c89df50",
+    "scripts/extract-v383-burden-contact-disagreements.mjs": "4897477bf9d822b66e5c4e2f1b2eed0207fa0269f21cfe815a799c6111e4f20e",
+    "scripts/analyze-v383-burden-contact-gate.mjs": "a3984c8cbdd978f86eb110d764eba66cd76aa3fc2b3a9950aa3038137564b499",
+    "scripts/validate-v383-burden-contact-result.mjs": "6f2816a68c3e89f242ca238fc3a25dbff9f1724f891c23252db021494fde51d3",
+    "scripts/run-v383-burden-contact-gate.mjs": "99e7203b2c50387213755f44ed01249477bfd3c1c6c4485a0ba074f10b27a6b0",
     "docs/calibration/v3.8.2/held-out-source-preparation-instrumentation-continuation/structured-retry-detector-fixture.json": "45c09714414f2fc178ab2c21e815056440f444bb94a0ad1b4d23584b4ef20372",
     "docs/calibration/v3.8/held-out-burden-contact-integration-gate/gate-manifest.json": "59c60922f815e46f15bebd014dc4e90981d9ca9983047ac9f0c3158a8151e60c",
     "docs/calibration/v3.8/held-out-burden-contact-integration-gate/source-audit.json": "99809f45e46fbb857d0e7dd947e82f555fa35da5f3b8bed7dacdfc8a0d97443d",
@@ -165,6 +181,7 @@
     "docs/calibration/v3.8.2/held-out-source-preparation-instrumentation-continuation/audio-verification-required.json": "4ef7d7f9132601fca2813e050e8a026d406516affbf047a350f84ab3fa705fd1",
     "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/packet-construction-audit.json": "706bf660c1f071c974c84fcefe60bb969c78d142d779f30d51a224787a5a0692",
     "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/packet-dry-fixture.json": "86b56a45748992535b84be01b646646f5d5c2db007d0408a31e3caaec23dcfaa",
+    "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/execution-dry-fixture.json": "7a883d61619157b961d067e0429da08e2f2796bd515bda3e3d10298cd493cc80",
     "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/sealed-option-map.json": "1102d15dc2f9f3ad4cc988e51835a00cd8412be3ababdcc231e5b73d8817907e",
     "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/packet-development-assessment.md": "b06fcd8b427d63fdcfc8ee460523be7cd74afba59e901abdd9205d1068f0140e",
     "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/packets/pass-a/debate-103.json": "2d3f0ca5ec46b6e813db6d1a740f6f16da21b06a654224a9cef1269581f148d1",
@@ -188,6 +205,6 @@
     ".assessment-cache/captions/zQBY5K-Ns2Y/manifest.json": "73f97e374fa98f388528e03ed39e1272f77c9fec6cee46345fdfba9c3177c099",
     ".assessment-cache/captions/g1TlLCSn_5o/manifest.json": "0e24d0057065d03651c845abfd66fa90a04ed2dfbd582afe098e60d830fbde2a",
     ".assessment-cache/captions/9JVRy7bR7zI/manifest.json": "436f3f2be4fd5e84338f6244eae1398dbcb11c56ac514920a80cad440790dc18",
-    "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/classification-phase-lock.json": "8f322a35d957ec49375e5c370cccde8114e576963807edea24aa32639d6b1ba5"
+    "docs/calibration/v3.8.3/held-out-burden-contact-classification-gate/classification-phase-lock.json": "86c038ce791e402d84f4b947b9ca45bfefa01de258d034af32a2799ab3fa4077"
   }
 }

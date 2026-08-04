@@ -25,6 +25,7 @@ const manifest = await readJson(manifestPath);
 const phaseLock = await readJson(manifest.phaseLock);
 const audit = await readJson(manifest.packetConstruction.audit);
 const fixture = await readJson(manifest.packetConstruction.dryFixture);
+const executionFixture = await readJson(manifest.packetConstruction.executionDryFixture);
 const mapping = await readJson(manifest.packetConstruction.sealedOptionMap);
 const inventory = await readJson(manifest.packetConstruction.inventory);
 const audio = await readJson(V383_AUDIO_REQUIRED);
@@ -35,6 +36,7 @@ assert(manifest.calibrationOnly === true && manifest.AIOnly === true && manifest
 assert(manifest.model?.slug === "gpt-5.6-sol" && manifest.model?.reasoningEffort === "high", "model lock invalid");
 assert(audit.status === "passed" && fixture.passed === true, "packet construction did not pass");
 assert(fixture.modelContextsExecuted === 0 && fixture.scoringFields === 0, "packet fixture crossed execution boundary");
+assert(executionFixture.passed === true && executionFixture.modelContextsExecuted === 0 && executionFixture.twoInitialTuplesOnly === true, "execution fixture invalid");
 assert(audio.pendingCount === 0 && audit.totals.pendingAudioVerifications === 0, "pending audio verification exists");
 assert(audit.totals.highConfidenceAttributions === 12 && audit.totals.requiredAudioVerifications === 0, "attribution gate invalid");
 
@@ -90,5 +92,6 @@ assert(manifest.executionPolicy.meteredApiCostUsdMaximum === 0 && manifest.execu
 assert(manifest.authorization.burdenContactClassificationInitialPasses === true && manifest.authorization.deterministicDisagreementExtraction === true && manifest.authorization.disputeOnlyClassificationAdjudication === true, "classification authorization invalid");
 for (const key of ["numericalParticipantScoring", "assessmentProse", "benchmarkMutation", "productionMutation", "all195Debates"]) assert(manifest.authorization[key] === false, `${key} must remain blocked`);
 assert(inventory.selectedMoveCount === 12 && inventory.debateCount === 3, "source inventory changed");
+for (const file of Object.values(manifest.artifacts)) assert(!(await exists(file)), `${file} exists before classification execution`);
 
 console.log(JSON.stringify({ status: "passed", artifactIntegrityPassed: true, phaseLockedContexts: contexts, compositeCases: 12, candidatesPerCase: 21, provisionalLabelsHidden: true, candidatePositionsCounterbalanced: true, requiredAudioVerifications: 0, classificationAuthorized: true, numericalScoringAuthorized: false, assessmentProseAuthorized: false, productionMutationAuthorized: false, meteredApiCostUsdMaximum: 0 }, null, 2));
