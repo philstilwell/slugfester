@@ -2,7 +2,7 @@
 
 ## Role and isolation
 
-Act only as a fresh `conditional-field-adjudicator`. Read the governing workflow, rubric, this manual, `packet.json`, and `schema.json`. The packet contains only a semantic field that became live after the earlier validity adjudication retained a candidate the independent review had rejected. It supplies two anonymously ordered values and the fixed source context.
+Act only as a fresh `conditional-field-adjudicator`. Read the governing workflow, rubric, this manual, `packet.json`, and `schema.json`. The packet contains only a semantic field that became live following a prior validity resolution. It supplies two anonymously ordered values and the fixed source context.
 
 Do not infer which option came from which pass. Do not seek the earlier validity decision, proposal, independent review, private option map, other debate records, undisputed fields, scores, winner, legacy assessment, Overall Commentary, or AI Extension.
 

@@ -86,7 +86,7 @@ const packet = {
   debateNumber: subject.debateNumber,
   debateId: subject.debateId,
   reviewerRole: "conditional-field-adjudicator",
-  reason: "candidate-retained-after-independent-review-rejection",
+  reason: "conditional-field-live-after-validity-resolution",
   disputedFields: [{
     fieldId,
     subjectType: "candidate",
