@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "3.8.8-coverage-conditional-field-audit",
+  "status": "one-supplemental-proposition-adjudication-required",
+  "revivedCandidates": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "stableRef": "craig-malpass-kalam-nothing-2026-coverage-07-v384",
+      "recoveredTwoVoteAgreements": [
+        {
+          "fieldName": "speakerSide",
+          "finalValue": {
+            "speaker": "William Lane Craig",
+            "side": "pro"
+          },
+          "finalVotes": 2
+        },
+        {
+          "fieldName": "attributionConfidence",
+          "finalValue": "high",
+          "finalVotes": 2
+        },
+        {
+          "fieldName": "moveKind",
+          "finalValue": "constructive",
+          "finalVotes": 2
+        },
+        {
+          "fieldName": "respondsToRefs",
+          "finalValue": [],
+          "finalVotes": 2
+        }
+      ],
+      "derivedFields": [
+        {
+          "fieldName": "selectionRole",
+          "finalValue": "load-bearing-constructive",
+          "basis": "The two-vote final validity decision retains the move, both source passes identify it as constructive with no response target, and the closed role-kind invariant requires a selected constructive move to use load-bearing-constructive.",
+          "upstreamVotes": {
+            "valid": 2,
+            "moveKind": 2,
+            "respondsToRefs": 2
+          }
+        }
+      ],
+      "supplementalDisputes": [
+        {
+          "fieldName": "proposition",
+          "proposalValue": "Hilbert’s fully occupied infinite hotel can continually accommodate infinitely many guests, illustrating why actual infinities belong to mathematical thought rather than concrete reality.",
+          "reviewValue": "Hilbert's Hotel illustrates the unusual rearrangements permitted by an actually infinite collection, and Hilbert confined such infinity to mathematics rather than concrete reality."
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "revivedCandidates": 1,
+    "recoveredTwoVoteAgreements": 4,
+    "deterministicallyDerivedFields": 1,
+    "supplementalDisputes": 1,
+    "supplementalModelContextsRequired": 1,
+    "scoreFields": 0
+  },
+  "artifacts": {
+    "packet": "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/packet.json",
+    "schema": "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/schema.json",
+    "privateOptionMap": "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/private-option-map.json",
+    "output": "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/output.json",
+    "execution": "docs/calibration/v3.8.8/coverage-consensus/conditional-adjudication/model-execution.json"
+  }
+}
