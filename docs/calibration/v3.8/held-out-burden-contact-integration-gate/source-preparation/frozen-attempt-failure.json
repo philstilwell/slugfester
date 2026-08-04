@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "3.8-source-preparation-frozen-attempt-failure",
+  "gateId": "v3.8-heldout-burden-contact-integration-gate",
+  "status": "failed-at-proposal-boundary",
+  "executionStartedAt": "2026-08-04T07:11:04.184Z",
+  "executionCompletedAt": "2026-08-04T08:02:09.347Z",
+  "proposalContextsPlanned": 3,
+  "proposalContextsCompleted": 2,
+  "proposalContextsValid": 0,
+  "reviewContextsStarted": 0,
+  "adjudicationContextsStarted": 0,
+  "scoresDerived": false,
+  "assessmentProseWritten": false,
+  "productionMutated": false,
+  "authentication": "ChatGPT subscription",
+  "apiKeysRemoved": true,
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsd": 0,
+  "operatorIntervention": {
+    "debateNumber": "161",
+    "action": "SIGTERM sent only to the proposal child invocation",
+    "reason": "No result after exceeding the announced 45-minute diagnostic ceiling; the frozen runner had no timeout.",
+    "parentRunnerPreserved": true,
+    "parentRecordedFailure": true
+  },
+  "contexts": [
+    {
+      "debateNumber": "103",
+      "status": "output-validation-failed",
+      "elapsedSeconds": 340.461,
+      "outputSha256": "5c8956679ce686739c9320f0ca4f0d7ca0b6c8f0a59b93305786c19a6de54b10",
+      "sameRequestStreamRecoveries": 2,
+      "firstDeterministicFailure": "woodford-edwards-rational-belief-god-2023-candidate-01: move ID or order invalid"
+    },
+    {
+      "debateNumber": "55",
+      "status": "output-validation-failed",
+      "elapsedSeconds": 406.052,
+      "outputSha256": "ef57e794b69018c124bde1d41f2c824375f8ed0718bb9a27751f675f9a814db9",
+      "sameRequestStreamRecoveries": 2,
+      "firstDeterministicFailure": "craig-malpass-kalam-nothing-2026-candidate-01: move ID or order invalid"
+    },
+    {
+      "debateNumber": "161",
+      "status": "transport-failed-after-operator-time-ceiling",
+      "elapsedSeconds": 2724.612,
+      "outputWritten": false,
+      "sameRequestStreamRecoveries": 0
+    }
+  ],
+  "auditFindings": [
+    {
+      "id": "proposal-id-contract-divergence",
+      "severity": "blocking",
+      "finding": "The model schema allowed arbitrary moveId strings while the deterministic validator required canonical ordered candidate IDs."
+    },
+    {
+      "id": "ambiguous-bridge-coordinate",
+      "severity": "blocking",
+      "finding": "The tier-filtered bridgeIndex convention was interpreted as an overall route position in completed outputs and could silently select the wrong subsidiary bridge."
+    },
+    {
+      "id": "execution-lock-stream-recovery-violation",
+      "severity": "blocking",
+      "finding": "Four same-request stream recoveries exceeded the frozen maximum of zero."
+    },
+    {
+      "id": "future-output-phase-lock",
+      "severity": "blocking",
+      "finding": "The runner attempted to hash future stage outputs before those outputs could exist."
+    },
+    {
+      "id": "missing-preregistered-timeout",
+      "severity": "blocking",
+      "finding": "The runner had no per-invocation timeout or explicit timed-out result state."
+    },
+    {
+      "id": "dry-run-lifecycle-gap",
+      "severity": "blocking",
+      "finding": "The dry fixture did not exercise the actual phase-boundary filesystem lifecycle."
+    }
+  ],
+  "artifactPolicy": {
+    "retainInvalidOutputsAsFailureEvidence": true,
+    "acceptOrNormalizeInvalidOutputs": false,
+    "reuseInvalidOutputsInCorrection": false,
+    "rerunAllProposalContextsUnderNewLock": true
+  },
+  "nextAuthorizedAction": "Design, dry-test, and freeze a separate v3.8.1 source-preparation correction; no model execution is authorized by this failure record."
+}
