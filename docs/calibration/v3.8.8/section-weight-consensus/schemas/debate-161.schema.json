@@ -1,0 +1,264 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v388-section-weight-plan-161",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "debateNumber",
+    "debateId",
+    "plannerRole",
+    "sections",
+    "bridgeMappings",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.8-section-weight-plan-output"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "161"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "craig-millican-does-god-exist-2011"
+    },
+    "plannerRole": {
+      "type": "string",
+      "const": "section-weight-planner"
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sectionId",
+          "title",
+          "rationale",
+          "weight",
+          "moveAssignments"
+        ],
+        "properties": {
+          "sectionId": {
+            "type": "string",
+            "enum": [
+              "section-01",
+              "section-02",
+              "section-03",
+              "section-04",
+              "section-05",
+              "section-06",
+              "section-07"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 70
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          },
+          "weight": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 97
+          },
+          "moveAssignments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "moveId",
+                "importance",
+                "rationale"
+              ],
+              "properties": {
+                "moveId": {
+                  "type": "string",
+                  "enum": [
+                    "craig-millican-does-god-exist-2011-candidate-01-v381",
+                    "craig-millican-does-god-exist-2011-coverage-missing-01-v388",
+                    "craig-millican-does-god-exist-2011-coverage-01-v384",
+                    "craig-millican-does-god-exist-2011-coverage-02-v384",
+                    "craig-millican-does-god-exist-2011-coverage-03-v384",
+                    "craig-millican-does-god-exist-2011-coverage-04-v384",
+                    "craig-millican-does-god-exist-2011-coverage-05-v384",
+                    "craig-millican-does-god-exist-2011-coverage-06-v384",
+                    "craig-millican-does-god-exist-2011-candidate-03-v381",
+                    "craig-millican-does-god-exist-2011-coverage-07-v384",
+                    "craig-millican-does-god-exist-2011-coverage-08-v384",
+                    "craig-millican-does-god-exist-2011-candidate-04-v381",
+                    "craig-millican-does-god-exist-2011-coverage-09-v384",
+                    "craig-millican-does-god-exist-2011-coverage-10-v384",
+                    "craig-millican-does-god-exist-2011-coverage-11-v384",
+                    "craig-millican-does-god-exist-2011-candidate-05-v381",
+                    "craig-millican-does-god-exist-2011-coverage-12-v384",
+                    "craig-millican-does-god-exist-2011-coverage-13-v384",
+                    "craig-millican-does-god-exist-2011-candidate-06-v381",
+                    "craig-millican-does-god-exist-2011-coverage-15-v384",
+                    "craig-millican-does-god-exist-2011-coverage-16-v384",
+                    "craig-millican-does-god-exist-2011-coverage-17-v384",
+                    "craig-millican-does-god-exist-2011-coverage-18-v384",
+                    "craig-millican-does-god-exist-2011-coverage-19-v384",
+                    "craig-millican-does-god-exist-2011-coverage-20-v384",
+                    "craig-millican-does-god-exist-2011-candidate-07-v381",
+                    "craig-millican-does-god-exist-2011-coverage-21-v384",
+                    "craig-millican-does-god-exist-2011-candidate-08-v381"
+                  ]
+                },
+                "importance": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "rationale": {
+                  "type": "string",
+                  "minLength": 60
+                }
+              }
+            },
+            "minItems": 2,
+            "maxItems": 28
+          }
+        }
+      },
+      "minItems": 4,
+      "maxItems": 7
+    },
+    "bridgeMappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "bridgeId",
+          "sectionIds",
+          "moveRefs",
+          "rationale"
+        ],
+        "properties": {
+          "bridgeId": {
+            "type": "string",
+            "enum": [
+              "craig-millican-does-god-exist-2011-pro-motion-v381",
+              "craig-millican-does-god-exist-2011-pro-central-v381",
+              "craig-millican-does-god-exist-2011-pro-subsidiary-1-v381",
+              "craig-millican-does-god-exist-2011-pro-subsidiary-2-v381",
+              "craig-millican-does-god-exist-2011-pro-subsidiary-3-v381",
+              "craig-millican-does-god-exist-2011-con-motion-v381",
+              "craig-millican-does-god-exist-2011-con-central-v381",
+              "craig-millican-does-god-exist-2011-con-subsidiary-1-v381",
+              "craig-millican-does-god-exist-2011-con-subsidiary-2-v381",
+              "craig-millican-does-god-exist-2011-con-subsidiary-3-v381"
+            ]
+          },
+          "sectionIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "section-01",
+                "section-02",
+                "section-03",
+                "section-04",
+                "section-05",
+                "section-06",
+                "section-07"
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 7
+          },
+          "moveRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "craig-millican-does-god-exist-2011-candidate-01-v381",
+                "craig-millican-does-god-exist-2011-coverage-missing-01-v388",
+                "craig-millican-does-god-exist-2011-coverage-01-v384",
+                "craig-millican-does-god-exist-2011-coverage-02-v384",
+                "craig-millican-does-god-exist-2011-coverage-03-v384",
+                "craig-millican-does-god-exist-2011-coverage-04-v384",
+                "craig-millican-does-god-exist-2011-coverage-05-v384",
+                "craig-millican-does-god-exist-2011-coverage-06-v384",
+                "craig-millican-does-god-exist-2011-candidate-03-v381",
+                "craig-millican-does-god-exist-2011-coverage-07-v384",
+                "craig-millican-does-god-exist-2011-coverage-08-v384",
+                "craig-millican-does-god-exist-2011-candidate-04-v381",
+                "craig-millican-does-god-exist-2011-coverage-09-v384",
+                "craig-millican-does-god-exist-2011-coverage-10-v384",
+                "craig-millican-does-god-exist-2011-coverage-11-v384",
+                "craig-millican-does-god-exist-2011-candidate-05-v381",
+                "craig-millican-does-god-exist-2011-coverage-12-v384",
+                "craig-millican-does-god-exist-2011-coverage-13-v384",
+                "craig-millican-does-god-exist-2011-candidate-06-v381",
+                "craig-millican-does-god-exist-2011-coverage-15-v384",
+                "craig-millican-does-god-exist-2011-coverage-16-v384",
+                "craig-millican-does-god-exist-2011-coverage-17-v384",
+                "craig-millican-does-god-exist-2011-coverage-18-v384",
+                "craig-millican-does-god-exist-2011-coverage-19-v384",
+                "craig-millican-does-god-exist-2011-coverage-20-v384",
+                "craig-millican-does-god-exist-2011-candidate-07-v381",
+                "craig-millican-does-god-exist-2011-coverage-21-v384",
+                "craig-millican-does-god-exist-2011-candidate-08-v381"
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 28
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          }
+        }
+      },
+      "minItems": 10,
+      "maxItems": 10
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "everyMoveAssignedExactlyOnce",
+        "everySectionContainsBothSides",
+        "sectionWeightsTotal100",
+        "everyBridgeMapped",
+        "scoreJudgmentsAbsent",
+        "coverageClaim"
+      ],
+      "properties": {
+        "everyMoveAssignedExactlyOnce": {
+          "type": "boolean",
+          "const": true
+        },
+        "everySectionContainsBothSides": {
+          "type": "boolean",
+          "const": true
+        },
+        "sectionWeightsTotal100": {
+          "type": "boolean",
+          "const": true
+        },
+        "everyBridgeMapped": {
+          "type": "boolean",
+          "const": true
+        },
+        "scoreJudgmentsAbsent": {
+          "type": "boolean",
+          "const": true
+        },
+        "coverageClaim": {
+          "type": "string",
+          "const": "complete-score-blind-section-and-weight-plan"
+        }
+      }
+    }
+  }
+}
