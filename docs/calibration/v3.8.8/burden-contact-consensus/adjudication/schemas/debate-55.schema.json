@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v388-contact-adjudication-55",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "bundles"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.8-burden-contact-adjudication-output"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "55"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "craig-malpass-kalam-nothing-2026"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "burden-contact-adjudicator"
+    },
+    "bundles": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "bundleId",
+          "optionId",
+          "evidenceText",
+          "rationale"
+        ],
+        "properties": {
+          "bundleId": {
+            "type": "string",
+            "enum": [
+              "v388-contact-55-05",
+              "v388-contact-55-15",
+              "v388-contact-55-17",
+              "v388-contact-55-19",
+              "v388-contact-55-21"
+            ]
+          },
+          "optionId": {
+            "type": "string",
+            "enum": [
+              "option-1",
+              "option-2"
+            ]
+          },
+          "evidenceText": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 160
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v388-contact-adjudication-161",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "bundles"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.8-burden-contact-adjudication-output"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "161"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "craig-millican-does-god-exist-2011"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "burden-contact-adjudicator"
+    },
+    "bundles": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "bundleId",
+          "optionId",
+          "evidenceText",
+          "rationale"
+        ],
+        "properties": {
+          "bundleId": {
+            "type": "string",
+            "enum": [
+              "v388-contact-161-02",
+              "v388-contact-161-08",
+              "v388-contact-161-27"
+            ]
+          },
+          "optionId": {
+            "type": "string",
+            "enum": [
+              "option-1",
+              "option-2"
+            ]
+          },
+          "evidenceText": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 160
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v388-contact-adjudication-103",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "bundles"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.8-burden-contact-adjudication-output"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "103"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "woodford-edwards-rational-belief-god-2023"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "burden-contact-adjudicator"
+    },
+    "bundles": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "bundleId",
+          "optionId",
+          "evidenceText",
+          "rationale"
+        ],
+        "properties": {
+          "bundleId": {
+            "type": "string",
+            "enum": [
+              "v388-contact-103-13",
+              "v388-contact-103-18",
+              "v388-contact-103-19"
+            ]
+          },
+          "optionId": {
+            "type": "string",
+            "enum": [
+              "option-1",
+              "option-2"
+            ]
+          },
+          "evidenceText": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 160
+          }
+        }
+      }
+    }
+  }
+}
