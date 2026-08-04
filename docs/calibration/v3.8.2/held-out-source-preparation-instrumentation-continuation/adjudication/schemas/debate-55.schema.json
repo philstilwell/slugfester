@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v381-source-adjudication-55",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "fields"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.1-source-adjudication-output"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "55"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "craig-malpass-kalam-nothing-2026"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "source-adjudication"
+    },
+    "fields": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "fieldId",
+          "optionId",
+          "rationale"
+        ],
+        "properties": {
+          "fieldId": {
+            "type": "string"
+          },
+          "optionId": {
+            "type": "string",
+            "enum": [
+              "option-1",
+              "option-2"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 100
+          }
+        }
+      }
+    }
+  }
+}
