@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v373-pass-a-62",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "debateNumber",
+    "reviewerPass",
+    "bundles"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.7.3-atomic-bundle-output"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "62"
+    },
+    "reviewerPass": {
+      "type": "string",
+      "const": "pass-a"
+    },
+    "bundles": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "bundleId",
+          "optionId",
+          "evidenceText",
+          "rationale"
+        ],
+        "properties": {
+          "bundleId": {
+            "type": "string"
+          },
+          "optionId": {
+            "type": "string",
+            "enum": [
+              "option-1",
+              "option-2",
+              "option-3",
+              "option-4"
+            ]
+          },
+          "evidenceText": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          }
+        }
+      }
+    }
+  }
+}

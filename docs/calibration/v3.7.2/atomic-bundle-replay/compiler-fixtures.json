@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "3.7.2-compiler-fixtures",
+  "passed": true,
+  "fixtureCount": 8,
+  "bundleSpecCoverage": {
+    "bundles": 8,
+    "auditFields": 14,
+    "independentScalars": 12,
+    "derivedWitnesses": 2
+  },
+  "modelContextsExecuted": 0,
+  "discretionaryRepairs": 0,
+  "results": [
+    {
+      "id": "target-any-contact",
+      "expectedValid": true,
+      "actualValid": true,
+      "issues": []
+    },
+    {
+      "id": "target-no-contact",
+      "expectedValid": true,
+      "actualValid": true,
+      "issues": []
+    },
+    {
+      "id": "target-witness-mismatch",
+      "expectedValid": false,
+      "actualValid": false,
+      "issues": [
+        "derived-witness-mismatch:contrary.classification"
+      ]
+    },
+    {
+      "id": "reframe-dual-positive",
+      "expectedValid": true,
+      "actualValid": true,
+      "issues": []
+    },
+    {
+      "id": "reframe-missing-relation",
+      "expectedValid": false,
+      "actualValid": false,
+      "issues": [
+        "reframe-relation-activation-mismatch"
+      ]
+    },
+    {
+      "id": "reframe-single-cue",
+      "expectedValid": true,
+      "actualValid": true,
+      "issues": []
+    },
+    {
+      "id": "diagnostic-linked",
+      "expectedValid": true,
+      "actualValid": true,
+      "issues": []
+    },
+    {
+      "id": "diagnostic-linked-inactive",
+      "expectedValid": false,
+      "actualValid": false,
+      "issues": [
+        "linked-diagnostic-bundle-inactive"
+      ]
+    }
+  ]
+}

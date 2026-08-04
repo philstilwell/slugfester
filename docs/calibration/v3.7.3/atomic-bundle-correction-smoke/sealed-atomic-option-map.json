@@ -1,0 +1,492 @@
+{
+  "schemaVersion": "3.7.3-sealed-atomic-option-map",
+  "status": "sealed-from-model-contexts",
+  "passes": {
+    "pass-a": {
+      "target-62-04-example": {
+        "debateNumber": "62",
+        "options": [
+          {
+            "optionId": "option-1",
+            "semanticTuple": {
+              "example.classification": "none"
+            },
+            "matchesRetiredExpected": true
+          },
+          {
+            "optionId": "option-2",
+            "semanticTuple": {
+              "example.classification": "inside-locked-target"
+            },
+            "matchesRetiredExpected": false
+          }
+        ]
+      },
+      "target-62-09-components": {
+        "debateNumber": "62",
+        "options": [
+          {
+            "optionId": "option-1",
+            "semanticTuple": {
+              "relevantContraryCandidatePresent": true,
+              "component.c1.contactMode": "none",
+              "contrary.classification": "relevant-no-component"
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-2",
+            "semanticTuple": {
+              "relevantContraryCandidatePresent": true,
+              "component.c1.contactMode": "exact-proposition",
+              "contrary.classification": "component-contact-precludes-contrary"
+            },
+            "matchesRetiredExpected": true
+          },
+          {
+            "optionId": "option-3",
+            "semanticTuple": {
+              "relevantContraryCandidatePresent": true,
+              "component.c1.contactMode": "distinction",
+              "contrary.classification": "component-contact-precludes-contrary"
+            },
+            "matchesRetiredExpected": false
+          }
+        ]
+      },
+      "diagnostic-154-15": {
+        "debateNumber": "154",
+        "options": [
+          {
+            "optionId": "option-1",
+            "semanticTuple": {
+              "consequenceStated": false,
+              "defect.type": "attribution-error"
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-2",
+            "semanticTuple": {
+              "consequenceStated": false,
+              "defect.type": "invalid-inference"
+            },
+            "matchesRetiredExpected": true
+          }
+        ]
+      },
+      "target-154-08-components": {
+        "debateNumber": "154",
+        "options": [
+          {
+            "optionId": "option-1",
+            "semanticTuple": {
+              "relevantContraryCandidatePresent": true,
+              "component.c1.contactMode": "none",
+              "component.c2.contactMode": "exact-proposition",
+              "contrary.classification": "component-contact-precludes-contrary"
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-2",
+            "semanticTuple": {
+              "relevantContraryCandidatePresent": true,
+              "component.c1.contactMode": "exact-proposition",
+              "component.c2.contactMode": "none",
+              "contrary.classification": "component-contact-precludes-contrary"
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-3",
+            "semanticTuple": {
+              "relevantContraryCandidatePresent": true,
+              "component.c1.contactMode": "exact-proposition",
+              "component.c2.contactMode": "exact-proposition",
+              "contrary.classification": "component-contact-precludes-contrary"
+            },
+            "matchesRetiredExpected": true
+          },
+          {
+            "optionId": "option-4",
+            "semanticTuple": {
+              "relevantContraryCandidatePresent": true,
+              "component.c1.contactMode": "none",
+              "component.c2.contactMode": "none",
+              "contrary.classification": "relevant-no-component"
+            },
+            "matchesRetiredExpected": false
+          }
+        ]
+      },
+      "burden-185-05": {
+        "debateNumber": "185",
+        "options": [
+          {
+            "optionId": "option-1",
+            "semanticTuple": {
+              "candidateSelection": "candidate-1"
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-2",
+            "semanticTuple": {
+              "candidateSelection": "candidate-2"
+            },
+            "matchesRetiredExpected": true
+          }
+        ]
+      },
+      "diagnostic-185-12": {
+        "debateNumber": "185",
+        "options": [
+          {
+            "optionId": "option-1",
+            "semanticTuple": {
+              "consequenceStated": true,
+              "consequence.relationKind": "explicit-negation",
+              "defect.type": "irrelevance"
+            },
+            "matchesRetiredExpected": true
+          },
+          {
+            "optionId": "option-2",
+            "semanticTuple": {
+              "consequenceStated": true,
+              "consequence.relationKind": "because",
+              "defect.type": "scope-mismatch"
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-3",
+            "semanticTuple": {
+              "consequenceStated": true,
+              "consequence.relationKind": "because",
+              "defect.type": "irrelevance"
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-4",
+            "semanticTuple": {
+              "consequenceStated": true,
+              "consequence.relationKind": "explicit-negation",
+              "defect.type": "scope-mismatch"
+            },
+            "matchesRetiredExpected": false
+          }
+        ]
+      },
+      "reframe-185-08": {
+        "debateNumber": "185",
+        "options": [
+          {
+            "optionId": "option-1",
+            "semanticTuple": {
+              "malformedDemand.explained": false,
+              "relationKind": "none",
+              "replacementDemand.stated": true
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-2",
+            "semanticTuple": {
+              "malformedDemand.explained": false,
+              "relationKind": "none",
+              "replacementDemand.stated": false
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-3",
+            "semanticTuple": {
+              "malformedDemand.explained": true,
+              "relationKind": "none",
+              "replacementDemand.stated": false
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-4",
+            "semanticTuple": {
+              "malformedDemand.explained": true,
+              "relationKind": "contrastive",
+              "replacementDemand.stated": true
+            },
+            "matchesRetiredExpected": true
+          }
+        ]
+      },
+      "reframe-185-12": {
+        "debateNumber": "185",
+        "options": [
+          {
+            "optionId": "option-1",
+            "semanticTuple": {
+              "malformedDemand.explained": true,
+              "replacementDemand.stated": true,
+              "relationKind": "because"
+            },
+            "matchesRetiredExpected": true
+          },
+          {
+            "optionId": "option-2",
+            "semanticTuple": {
+              "malformedDemand.explained": true,
+              "replacementDemand.stated": true,
+              "relationKind": "contrastive"
+            },
+            "matchesRetiredExpected": false
+          }
+        ]
+      }
+    },
+    "pass-b": {
+      "target-62-04-example": {
+        "debateNumber": "62",
+        "options": [
+          {
+            "optionId": "option-1",
+            "semanticTuple": {
+              "example.classification": "inside-locked-target"
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-2",
+            "semanticTuple": {
+              "example.classification": "none"
+            },
+            "matchesRetiredExpected": true
+          }
+        ]
+      },
+      "target-62-09-components": {
+        "debateNumber": "62",
+        "options": [
+          {
+            "optionId": "option-1",
+            "semanticTuple": {
+              "relevantContraryCandidatePresent": true,
+              "component.c1.contactMode": "exact-proposition",
+              "contrary.classification": "component-contact-precludes-contrary"
+            },
+            "matchesRetiredExpected": true
+          },
+          {
+            "optionId": "option-2",
+            "semanticTuple": {
+              "relevantContraryCandidatePresent": true,
+              "component.c1.contactMode": "distinction",
+              "contrary.classification": "component-contact-precludes-contrary"
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-3",
+            "semanticTuple": {
+              "relevantContraryCandidatePresent": true,
+              "component.c1.contactMode": "none",
+              "contrary.classification": "relevant-no-component"
+            },
+            "matchesRetiredExpected": false
+          }
+        ]
+      },
+      "diagnostic-154-15": {
+        "debateNumber": "154",
+        "options": [
+          {
+            "optionId": "option-1",
+            "semanticTuple": {
+              "consequenceStated": false,
+              "defect.type": "invalid-inference"
+            },
+            "matchesRetiredExpected": true
+          },
+          {
+            "optionId": "option-2",
+            "semanticTuple": {
+              "consequenceStated": false,
+              "defect.type": "attribution-error"
+            },
+            "matchesRetiredExpected": false
+          }
+        ]
+      },
+      "target-154-08-components": {
+        "debateNumber": "154",
+        "options": [
+          {
+            "optionId": "option-1",
+            "semanticTuple": {
+              "relevantContraryCandidatePresent": true,
+              "component.c1.contactMode": "exact-proposition",
+              "component.c2.contactMode": "none",
+              "contrary.classification": "component-contact-precludes-contrary"
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-2",
+            "semanticTuple": {
+              "relevantContraryCandidatePresent": true,
+              "component.c1.contactMode": "exact-proposition",
+              "component.c2.contactMode": "exact-proposition",
+              "contrary.classification": "component-contact-precludes-contrary"
+            },
+            "matchesRetiredExpected": true
+          },
+          {
+            "optionId": "option-3",
+            "semanticTuple": {
+              "relevantContraryCandidatePresent": true,
+              "component.c1.contactMode": "none",
+              "component.c2.contactMode": "none",
+              "contrary.classification": "relevant-no-component"
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-4",
+            "semanticTuple": {
+              "relevantContraryCandidatePresent": true,
+              "component.c1.contactMode": "none",
+              "component.c2.contactMode": "exact-proposition",
+              "contrary.classification": "component-contact-precludes-contrary"
+            },
+            "matchesRetiredExpected": false
+          }
+        ]
+      },
+      "burden-185-05": {
+        "debateNumber": "185",
+        "options": [
+          {
+            "optionId": "option-1",
+            "semanticTuple": {
+              "candidateSelection": "candidate-2"
+            },
+            "matchesRetiredExpected": true
+          },
+          {
+            "optionId": "option-2",
+            "semanticTuple": {
+              "candidateSelection": "candidate-1"
+            },
+            "matchesRetiredExpected": false
+          }
+        ]
+      },
+      "diagnostic-185-12": {
+        "debateNumber": "185",
+        "options": [
+          {
+            "optionId": "option-1",
+            "semanticTuple": {
+              "consequenceStated": true,
+              "consequence.relationKind": "because",
+              "defect.type": "scope-mismatch"
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-2",
+            "semanticTuple": {
+              "consequenceStated": true,
+              "consequence.relationKind": "because",
+              "defect.type": "irrelevance"
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-3",
+            "semanticTuple": {
+              "consequenceStated": true,
+              "consequence.relationKind": "explicit-negation",
+              "defect.type": "scope-mismatch"
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-4",
+            "semanticTuple": {
+              "consequenceStated": true,
+              "consequence.relationKind": "explicit-negation",
+              "defect.type": "irrelevance"
+            },
+            "matchesRetiredExpected": true
+          }
+        ]
+      },
+      "reframe-185-08": {
+        "debateNumber": "185",
+        "options": [
+          {
+            "optionId": "option-1",
+            "semanticTuple": {
+              "malformedDemand.explained": false,
+              "relationKind": "none",
+              "replacementDemand.stated": false
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-2",
+            "semanticTuple": {
+              "malformedDemand.explained": true,
+              "relationKind": "none",
+              "replacementDemand.stated": false
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-3",
+            "semanticTuple": {
+              "malformedDemand.explained": true,
+              "relationKind": "contrastive",
+              "replacementDemand.stated": true
+            },
+            "matchesRetiredExpected": true
+          },
+          {
+            "optionId": "option-4",
+            "semanticTuple": {
+              "malformedDemand.explained": false,
+              "relationKind": "none",
+              "replacementDemand.stated": true
+            },
+            "matchesRetiredExpected": false
+          }
+        ]
+      },
+      "reframe-185-12": {
+        "debateNumber": "185",
+        "options": [
+          {
+            "optionId": "option-1",
+            "semanticTuple": {
+              "malformedDemand.explained": true,
+              "replacementDemand.stated": true,
+              "relationKind": "contrastive"
+            },
+            "matchesRetiredExpected": false
+          },
+          {
+            "optionId": "option-2",
+            "semanticTuple": {
+              "malformedDemand.explained": true,
+              "replacementDemand.stated": true,
+              "relationKind": "because"
+            },
+            "matchesRetiredExpected": true
+          }
+        ]
+      }
+    }
+  }
+}

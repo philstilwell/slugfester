@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "3.7.2-atomic-bundle-replay-manifest",
+  "replayId": "v3.7.2-atomic-bundle-development-replay",
+  "status": "frozen-before-deterministic-replay",
+  "frozenAt": "2026-08-04T04:54:46.513Z",
+  "workflowVersion": "Slugfester Atomic-Bundle Compiler Workflow v3.7.2",
+  "rubricVersion": "Slugfester Atomic-Bundle Rubric v3.7.2",
+  "calibrationOnly": true,
+  "retrospectiveDevelopmentOnly": true,
+  "priorV371": {
+    "manifestPath": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/gate-manifest.json",
+    "manifestSha256": "7ef3f4e281f6004e21c084d386eb232d8ef88a9493c1a3e8ba517019696558a5",
+    "analysisPath": "docs/calibration/v3.7.1/gold-blind-benchmark-audit/audit-analysis.json",
+    "analysisSha256": "0796d03c9dc9f455402136daf4c80e4de7a296e038d36006922e7d57459661e5",
+    "outcome": "benchmark-audit-fail-complete-two-vote-resolutions"
+  },
+  "specification": {
+    "path": "docs/calibration/v3.7.2/atomic-bundle-replay/bundle-spec.json",
+    "sha256": "5f5f09e6e98d2f23dbacf866a4dfb6badd885446110b76b068ade846bf1297ad",
+    "bundles": 8,
+    "auditFields": 14,
+    "independentScalars": 12,
+    "derivedWitnesses": 2
+  },
+  "fixtures": {
+    "path": "docs/calibration/v3.7.2/atomic-bundle-replay/compiler-fixtures.json",
+    "sha256": "7a70ea5cabc7ff5245e1bc91dcfc0d06d5f6aeed1da2b21d5bd6f26285204ed5",
+    "passed": true
+  },
+  "developmentAcceptance": {
+    "compiledInitialPasses": 2,
+    "bundleCoveragePerPass": 8,
+    "compiledFinalBundles": 8,
+    "validFinalBundles": 8,
+    "discretionaryRepairsMaximum": 0,
+    "modelContexts": 0,
+    "paidTranscriptionCalls": 0,
+    "meteredApiCostUsdMaximum": 0
+  },
+  "semanticInterpretation": {
+    "initialBundleAgreementIsDiagnosticOnly": true,
+    "noPostHocPromotionThreshold": true,
+    "resolvedValuesRemainUnauthorizedBenchmarkKey": true
+  },
+  "prohibitions": {
+    "freshModelExecution": true,
+    "correctedBenchmarkKey": true,
+    "heldOutAccess": true,
+    "numericalParticipantScoring": true,
+    "assessmentProse": true,
+    "productionMutation": true
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v3.7.2.md": "c8cc120926615e59e59f5ff89c780177062811577e5da5fc04869ab4ff705bcb",
+    "docs/reassessment-rubric-v3.7.2.md": "84af64669a2ed1a81553f88b9b081d1fd89c010b5b37a3d297103ae2e3523061",
+    "docs/calibration/v3.7.2/atomic-bundle-replay/replay-manual.md": "d0e3e7954358dc5b1eb0625db2cf8b1cb165dd700fed76820ac47ac4d5b96bbc",
+    "docs/calibration/v3.7.2/atomic-bundle-replay/bundle-spec.json": "5f5f09e6e98d2f23dbacf866a4dfb6badd885446110b76b068ade846bf1297ad",
+    "docs/calibration/v3.7.2/atomic-bundle-replay/compiler-fixtures.json": "7a70ea5cabc7ff5245e1bc91dcfc0d06d5f6aeed1da2b21d5bd6f26285204ed5",
+    "scripts/lib/v36-decision-cards.mjs": "53081ef3297614a88b2df268290318d6b5bc45c8e892f03c3dac51c97b9d48b0",
+    "scripts/lib/v371-gold-audit.mjs": "40d69cfc950fb73e521a059270946999b9455e3be13d7de5c1b733037386959e",
+    "scripts/lib/v372-atomic-bundles.mjs": "ec5908ea20bd0b099095257ee614d07893a1b245bf693abee2f697a3f0de0a0c",
+    "scripts/test-v372-atomic-bundles.mjs": "29d937e48ffe081334d067e553b4a8a438f01c4e854bc4b90d40edbea061779d",
+    "scripts/preregister-v372-atomic-bundle-replay.mjs": "c1edfc22783d262c0d1389c48df59e1993e66fe456ca99971b0bf5aa0c1e5081",
+    "scripts/replay-v372-atomic-bundles.mjs": "4baa46e9db7978eb86763f6e02c5d8f6e232f6b2f4f4b7c008161aa976e0a87c",
+    "scripts/validate-v372-atomic-bundle-replay.mjs": "b0ebef22145be44e62708cec000fefe07cd59eeac77993783c0665bd84de5ba7",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/gate-manifest.json": "7ef3f4e281f6004e21c084d386eb232d8ef88a9493c1a3e8ba517019696558a5",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/audit-analysis.json": "0796d03c9dc9f455402136daf4c80e4de7a296e038d36006922e7d57459661e5",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/sealed-option-map.json": "b4879bd853834ed7feaea56323001c8d0e200712fd0ba06cd5738402fba2a18a",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/adjudication-option-map.json": "3342b4f569a017f1f5824c61509fb8f76f9ff0905a8214e2ffe206a22bfb4422",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/initial-model-execution.json": "15ea9936406203dec5615cd8dd771f3fbc06afad031fa55f7889b03d76b1947c",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/adjudication-model-execution.json": "1d67617bdc0a68c3f84c9212a1ff09f3bdc0fc4ed4cdbf619d2e137f03a252be",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-a/debate-62.json": "d57312f014955387351d5d839f047b72980299dc24be779665a7ab9c7fa63ca2",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-a/debate-154.json": "b67d87446b406722fe3be42fb43bca2bee76d5451c1aa026311e601acf2816db",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-a/debate-185.json": "123d69354795db2bd2f53ef338fb1d8e8d592e055d614ea9da33368eb34905bd",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-b/debate-62.json": "91e12ba752e2991d1d3b50a6e3eb0cb63ec0ba2a8928fe83cb449d4f880e2b00",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-b/debate-154.json": "11231edd9b2a462edb10b2483e973ebcf09fd35a41966d95cfd5466cebd0e967",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-b/debate-185.json": "8144dabb58935ed2b8c531f1d7cc654b5be01e3b2274c187dadc5d07ffa03ae5",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-c/debate-154.json": "ed725023de30e1e72b1f31b6a01293882ba44d4bcfd2263cc7b1a228123f66da",
+    "docs/calibration/v3.7.1/gold-blind-benchmark-audit/outputs/pass-c/debate-185.json": "921653bdc84edc009e461e6bdc6f0673cce46a362094c128e9b7a6a2954ea455"
+  },
+  "replayPath": "docs/calibration/v3.7.2/atomic-bundle-replay/replay-analysis.json"
+}

@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "3.7.2-atomic-bundle-spec",
+  "status": "frozen-development-spec",
+  "sourceVersion": "3.7.1-gold-blind-benchmark-audit",
+  "bundleCount": 8,
+  "auditFieldCount": 14,
+  "independentScalarCount": 12,
+  "derivedWitnessCount": 2,
+  "bundles": [
+    {
+      "bundleId": "target-62-04-example",
+      "debateNumber": "62",
+      "family": "target",
+      "caseId": "v291-dev-62-04",
+      "compiler": "singleton",
+      "inputs": [
+        { "fieldId": "example.classification", "auditId": "audit-001" }
+      ],
+      "fixedFields": {},
+      "witnesses": []
+    },
+    {
+      "bundleId": "target-62-09-components",
+      "debateNumber": "62",
+      "family": "target",
+      "caseId": "v291-dev-62-09",
+      "compiler": "target-components",
+      "inputs": [
+        { "fieldId": "component.c1.contactMode", "auditId": "audit-002" }
+      ],
+      "fixedFields": { "relevantContraryCandidatePresent": true },
+      "witnesses": [
+        { "fieldId": "contrary.classification", "auditId": "audit-003", "derivedFieldId": "contrary.classification" }
+      ]
+    },
+    {
+      "bundleId": "diagnostic-154-15",
+      "debateNumber": "154",
+      "family": "diagnostic",
+      "caseId": "v291-dev-154-15",
+      "compiler": "diagnostic-defect-only",
+      "inputs": [
+        { "fieldId": "defect.type", "auditId": "audit-004" }
+      ],
+      "fixedFields": { "consequenceStated": false },
+      "witnesses": []
+    },
+    {
+      "bundleId": "target-154-08-components",
+      "debateNumber": "154",
+      "family": "target",
+      "caseId": "v291-dev-154-08",
+      "compiler": "target-components",
+      "inputs": [
+        { "fieldId": "component.c1.contactMode", "auditId": "audit-005" },
+        { "fieldId": "component.c2.contactMode", "auditId": "audit-006" }
+      ],
+      "fixedFields": { "relevantContraryCandidatePresent": true },
+      "witnesses": [
+        { "fieldId": "contrary.classification", "auditId": "audit-007", "derivedFieldId": "contrary.classification" }
+      ]
+    },
+    {
+      "bundleId": "burden-185-05",
+      "debateNumber": "185",
+      "family": "burden",
+      "caseId": "v291-dev-185-05",
+      "compiler": "singleton",
+      "inputs": [
+        { "fieldId": "candidateSelection", "auditId": "audit-008" }
+      ],
+      "fixedFields": {},
+      "witnesses": []
+    },
+    {
+      "bundleId": "diagnostic-185-12",
+      "debateNumber": "185",
+      "family": "diagnostic",
+      "caseId": "v291-dev-185-12",
+      "compiler": "diagnostic-linked-consequence",
+      "inputs": [
+        { "fieldId": "consequence.relationKind", "auditId": "audit-009" },
+        { "fieldId": "defect.type", "auditId": "audit-010" }
+      ],
+      "fixedFields": { "consequenceStated": true },
+      "witnesses": []
+    },
+    {
+      "bundleId": "reframe-185-08",
+      "debateNumber": "185",
+      "family": "reframe",
+      "caseId": "v291-dev-185-08",
+      "compiler": "reframe",
+      "inputs": [
+        { "fieldId": "malformedDemand.explained", "auditId": "audit-011" },
+        { "fieldId": "relationKind", "auditId": "audit-012" },
+        { "fieldId": "replacementDemand.stated", "auditId": "audit-013" }
+      ],
+      "fixedFields": {},
+      "witnesses": []
+    },
+    {
+      "bundleId": "reframe-185-12",
+      "debateNumber": "185",
+      "family": "reframe",
+      "caseId": "v291-dev-185-12",
+      "compiler": "reframe",
+      "inputs": [
+        { "fieldId": "relationKind", "auditId": "audit-014" }
+      ],
+      "fixedFields": {
+        "malformedDemand.explained": true,
+        "replacementDemand.stated": true
+      },
+      "witnesses": []
+    }
+  ],
+  "prohibitions": {
+    "discretionaryRepair": true,
+    "modelExecution": true,
+    "paidTranscription": true,
+    "correctedBenchmarkKey": true,
+    "heldOutAccess": true,
+    "numericalParticipantScoring": true,
+    "assessmentProse": true,
+    "productionMutation": true
+  }
+}

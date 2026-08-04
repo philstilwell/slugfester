@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "3.7.3-atomic-bundle-packet",
+  "debateNumber": "154",
+  "reviewerPass": "pass-a",
+  "allSpeakerAttributionConfidenceHigh": true,
+  "bundles": [
+    {
+      "bundleId": "diagnostic-154-15",
+      "family": "diagnostic",
+      "caseId": "v291-dev-154-15",
+      "sourceExcerpt": ">> All that means is that the fall does not explain the proclivity to sin because Eve already had it. It does not explain the existence of evil because knowledge of that already existed before she committed the fall. It also doesn't explain the origin of suffering because of course Eve's punishment for eating from the tree of the knowledge of good and evil.",
+      "speakerAttributionConfidence": "high",
+      "decisionContext": {
+        "lockedTarget": "Eve already possessed moral categories through the image of God, understood the command, and freely disobeyed it, thereby creating the fall's consequences.",
+        "components": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c1",
+            "text": "Eve possessed moral categories and could understand God's command before eating from the tree."
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c2",
+            "text": "She knew she ought not disobey but freely chose to do so."
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-15-c3",
+            "text": "That act of disobedience produced the fall's consequences."
+          }
+        ]
+      },
+      "independentFields": [
+        "defect.type"
+      ],
+      "candidates": [
+        {
+          "optionId": "option-1",
+          "values": {
+            "defect.type": "attribution-error"
+          }
+        },
+        {
+          "optionId": "option-2",
+          "values": {
+            "defect.type": "invalid-inference"
+          }
+        }
+      ]
+    },
+    {
+      "bundleId": "target-154-08-components",
+      "family": "target",
+      "caseId": "v291-dev-154-08",
+      "sourceExcerpt": ">> there are people who do the opposite there. There are people who do the opposite there. Yeah, there's people that would have gone the other way and they'll be in the comment section right now saying, \"Well, I went from Christianity to Islam.\"",
+      "speakerAttributionConfidence": "high",
+      "decisionContext": {
+        "lockedTarget": "Former Muslims known to Koukl found greater satisfaction, fullness, and connection with God after converting to Christianity.",
+        "components": [
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c1",
+            "text": "Former devout Muslims known to Koukl report greater satisfaction and connection with God as Christians than they had in Islam."
+          },
+          {
+            "componentId": "koukl-oconnor-kanojia-nonbelief-harm-2025-target-08-c2",
+            "text": "Those changed lives count against treating religious satisfaction as interchangeable across religions."
+          }
+        ]
+      },
+      "independentFields": [
+        "component.c1.contactMode",
+        "component.c2.contactMode"
+      ],
+      "candidates": [
+        {
+          "optionId": "option-1",
+          "values": {
+            "component.c1.contactMode": "none",
+            "component.c2.contactMode": "exact-proposition"
+          }
+        },
+        {
+          "optionId": "option-2",
+          "values": {
+            "component.c1.contactMode": "exact-proposition",
+            "component.c2.contactMode": "none"
+          }
+        },
+        {
+          "optionId": "option-3",
+          "values": {
+            "component.c1.contactMode": "exact-proposition",
+            "component.c2.contactMode": "exact-proposition"
+          }
+        },
+        {
+          "optionId": "option-4",
+          "values": {
+            "component.c1.contactMode": "none",
+            "component.c2.contactMode": "none"
+          }
+        }
+      ]
+    }
+  ]
+}
