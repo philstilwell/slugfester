@@ -10,7 +10,10 @@ assertV388Recon(debateNumber, "debate number required");
 const correctionRoot = `${V388_RECON_ROOT}/prose-correction/debate-${debateNumber}`;
 const manifest = await readJson(root, `${correctionRoot}/execution-manifest.json`);
 const execution = await readJson(root, manifest.artifacts.execution), packet = await readJson(root, manifest.packet), correction = await readJson(root, manifest.output);
+const mergeAuthorization = await readJson(root, `${correctionRoot}/merge-authorization.json`);
 assertV388Recon(execution.status === "passed" && execution.result.diagnosticAcceptancePassed, "correction execution not accepted");
+assertV388Recon(mergeAuthorization.status === "deterministic-merge-authorized" && mergeAuthorization.authorization.deterministicMerge && !mergeAuthorization.authorization.productionMutation, "deterministic merge unauthorized");
+for (const [relativePath, digest] of Object.entries(mergeAuthorization.sourceHashes)) assertV388Recon(sha256(await readBytes(root, relativePath)) === digest, `${relativePath}: merge source hash mismatch`);
 const raw = await readJson(root, `${V388_RECON_ROOT}/outputs/debate-${debateNumber}.json`), merged = structuredClone(raw), changed = [];
 for (const item of correction.corrections) {
   let matches = 0;
