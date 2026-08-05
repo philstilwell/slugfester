@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "4.2.18.1-fresh-direct-three-preparation",
+  "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+  "status": "prepared-three-corrected-fresh-direct-contexts",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "directLaneOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "sample": "docs/calibration/v4.2.18.1/fresh-direct-three/source-only-sample.json",
+  "screening": "docs/calibration/v4.2.18.1/fresh-direct-three/sample-screening.json",
+  "contexts": [
+    {
+      "debateNumber": "102",
+      "debateId": "woodford-brierley-christianity-rational-2019",
+      "family": "resurrection-history",
+      "durationSeconds": 5248,
+      "captionKind": "auto",
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.2.18.1/fresh-direct-three/packets/debate-102.json",
+      "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.18.1/debate-102.jsonl",
+      "originalTranscript": ".assessment-cache/captions/EfAWALcKf2w/transcript.txt",
+      "originalEvents": ".assessment-cache/captions/EfAWALcKf2w/events.json",
+      "originalManifest": ".assessment-cache/captions/EfAWALcKf2w/manifest.json",
+      "rawOutput": "docs/calibration/v4.2.18.1/fresh-direct-three/primary-outputs/debate-102.json",
+      "compiledOutput": "docs/calibration/v4.2.18.1/fresh-direct-three/primary-compiled/debate-102.json",
+      "sourceLedgerSha256": "4f7a7fa8658df2e72c7fb05d8a0a5b414c540661c499286754dcc64e72a53c88",
+      "sourceLedgerEvents": 2625,
+      "compactCopiedInputBytes": 187972
+    },
+    {
+      "debateNumber": "107",
+      "debateId": "lennox-ruse-science-faith-evidence-god-2018",
+      "family": "evil-hiddenness",
+      "durationSeconds": 3498,
+      "captionKind": "auto",
+      "controlSampleSelected": true,
+      "packet": "docs/calibration/v4.2.18.1/fresh-direct-three/packets/debate-107.json",
+      "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.18.1/debate-107.jsonl",
+      "originalTranscript": ".assessment-cache/captions/yrnXdzQRISM/transcript.txt",
+      "originalEvents": ".assessment-cache/captions/yrnXdzQRISM/events.json",
+      "originalManifest": ".assessment-cache/captions/yrnXdzQRISM/manifest.json",
+      "rawOutput": "docs/calibration/v4.2.18.1/fresh-direct-three/primary-outputs/debate-107.json",
+      "compiledOutput": "docs/calibration/v4.2.18.1/fresh-direct-three/primary-compiled/debate-107.json",
+      "sourceLedgerSha256": "d50d8075ee77fa2742e1e2cb2cac9db7bf6a8d7f5a3cc9f44dcf01c2da1cc1f8",
+      "sourceLedgerEvents": 1296,
+      "compactCopiedInputBytes": 116803
+    },
+    {
+      "debateNumber": "126",
+      "debateId": "craig-clifton-kalam-cosmological-argument-2021",
+      "family": "science-origins",
+      "durationSeconds": 3627,
+      "captionKind": "auto",
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.2.18.1/fresh-direct-three/packets/debate-126.json",
+      "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.18.1/debate-126.jsonl",
+      "originalTranscript": ".assessment-cache/captions/TmYCwjU_5Wc/transcript.txt",
+      "originalEvents": ".assessment-cache/captions/TmYCwjU_5Wc/events.json",
+      "originalManifest": ".assessment-cache/captions/TmYCwjU_5Wc/manifest.json",
+      "rawOutput": "docs/calibration/v4.2.18.1/fresh-direct-three/primary-outputs/debate-126.json",
+      "compiledOutput": "docs/calibration/v4.2.18.1/fresh-direct-three/primary-compiled/debate-126.json",
+      "sourceLedgerSha256": "ebc868af5456d11fbd1017a0232669255a72a198fede3fc78029b815c493d4e2",
+      "sourceLedgerEvents": 1559,
+      "compactCopiedInputBytes": 126265
+    }
+  ],
+  "inputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.2.18/fresh-direct-three/manual.md",
+    "schema": "docs/calibration/v4.2.18.1/fresh-direct-three/primary.schema.json"
+  },
+  "sourcePolicy": {
+    "completeLocalTranscriptChains": true,
+    "oneLosslessTimestampedLedgerPerDebate": true,
+    "originalTranscriptAndEventsStoredLocally": true,
+    "duplicatePlainTranscriptDeliveryProhibited": true,
+    "maximumDurationSecondsExclusive": 5400,
+    "excerptMaximumCharacters": 450,
+    "excerptTokenRange": [
+      12,
+      100
+    ],
+    "minimumLexicalRecall": 0.8,
+    "minimumOrderedCoverage": 0.8
+  },
+  "controlPolicy": {
+    "selectedDebateId": "lennox-ruse-science-faith-evidence-god-2018",
+    "selectedDebateNumber": "107",
+    "visibleToPrimaryJudge": false,
+    "purpose": "force later isolated Pass B and adjudication-path exercise"
+  },
+  "executionPolicy": {
+    "attemptsPerDebate": 1,
+    "retries": 0,
+    "normalizationAuthorized": false,
+    "truncationAuthorized": false,
+    "scoreDerivationAuthorized": false
+  },
+  "totals": {
+    "debates": 3,
+    "sourceLedgerEvents": 5480,
+    "meanCompactCopiedInputBytes": 143680,
+    "maximumCompactCopiedInputBytes": 187972,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "deterministicFixtures": true,
+    "primaryExecutionManifest": false,
+    "primaryModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}

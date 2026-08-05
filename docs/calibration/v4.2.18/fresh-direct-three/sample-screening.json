@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "4.2.18-motion-only-screening",
+  "protocolId": "v4.2.18-fresh-direct-three",
+  "status": "sample-rejected-before-packet-preparation",
+  "AIOnly": true,
+  "sourceBoundary": {
+    "motionMetadataOnly": true,
+    "transcriptContentAccessed": false,
+    "audioAccessed": false,
+    "legacyAssessmentContentAccessed": false,
+    "legacyScoresAccessed": false,
+    "priorJudgmentsAccessed": false,
+    "candidateRanksReoptimized": false
+  },
+  "decisions": [
+    {
+      "debateNumber": "186",
+      "debateId": "huemer-sapolsky-free-will-determinism-2024",
+      "assignedFamily": "general-theism-religion",
+      "classifierReplays": true,
+      "substantiveAnchorPresent": false,
+      "durationEligible": true,
+      "dyadic": true
+    },
+    {
+      "debateNumber": "78",
+      "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+      "assignedFamily": "resurrection-history",
+      "classifierReplays": true,
+      "substantiveAnchorPresent": true,
+      "durationEligible": true,
+      "dyadic": true
+    },
+    {
+      "debateNumber": "85",
+      "debateId": "atkins-fox-god-science-future-humanity-2024",
+      "assignedFamily": "science-origins",
+      "classifierReplays": true,
+      "substantiveAnchorPresent": true,
+      "durationEligible": true,
+      "dyadic": true
+    }
+  ],
+  "audit": {
+    "debates": 3,
+    "distinctFamilies": 3,
+    "classifierReplayPassed": 3,
+    "substantiveAnchorPassed": 2,
+    "durationEligible": 3,
+    "dyadic": 3
+  },
+  "disposition": {
+    "reason": "motion-only family anchor failed before transcript or model access",
+    "revisedSourceOnlySelectorAuthorized": true
+  },
+  "authorization": {
+    "compactSourcePacketPreparation": false,
+    "revisedSourceOnlySelector": true,
+    "primaryModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
