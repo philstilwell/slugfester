@@ -1,0 +1,608 @@
+{
+  "schemaVersion": "4.1.6-adjudicated-calculated-scores",
+  "protocolId": "v4.1.6-triggered-pass-b-consensus",
+  "status": "retired-three-debate-score-gate-failed",
+  "sources": {
+    "finalLedgerSha256": "3df0751af27dd6ffab4deb1dd4014669438de9f2d365562ddc68c61ed3a149ee",
+    "comparatorSha256": "21b1560c00f55278f848c67e9287710f8c2366fda7887cb69d284bf5224249ec"
+  },
+  "formulaBoundary": {
+    "singleDeterministicPass": true,
+    "modelCalculatedScores": false,
+    "scoresDerivedOnlyAfterAdjudicatedLedgerLock": true,
+    "moveFormula": "repository v4.1 deterministic formula",
+    "sectionFormula": "importance-weighted move mean",
+    "overallFormula": "section-weighted mean plus eligible burden-completion adjustment, rounded and bounded 0-100"
+  },
+  "acceptanceRule": {
+    "winnerClassificationsRequired": 3,
+    "sidesWithinFiveRequired": 6,
+    "maximumAbsoluteSideDelta": 5,
+    "postResultTuningAllowed": false
+  },
+  "debates": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "scores": {
+        "protocolId": "v4.1.5-bounded-lean-risk-triggered-consensus",
+        "debateNumber": "55",
+        "debateId": "craig-malpass-kalam-nothing-2026",
+        "sections": [
+          {
+            "sectionId": "section-causal-premise",
+            "title": "Causal premise and kinds of beginning",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "pro-causal-principle",
+                    "importance": 3,
+                    "score": 73
+                  }
+                ]
+              },
+              "con": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "con-pickwickish-beginnings",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-actual-infinite",
+            "title": "Concrete actual infinities",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "pro-actual-infinite-absurdity",
+                    "importance": 3,
+                    "score": 76
+                  }
+                ]
+              },
+              "con": {
+                "score": 89,
+                "moves": [
+                  {
+                    "moveId": "con-strange-not-impossible",
+                    "importance": 3,
+                    "score": 89
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-successive-addition",
+            "title": "Successive formation of an infinite past",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "pro-successive-addition",
+                    "importance": 3,
+                    "score": 74
+                  }
+                ]
+              },
+              "con": {
+                "score": 91,
+                "moves": [
+                  {
+                    "moveId": "con-countdown-asymmetry",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-causal-power",
+            "title": "Power of the first cause",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "pro-enormous-power",
+                    "importance": 2,
+                    "score": 79
+                  }
+                ]
+              },
+              "con": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "con-small-cause",
+                    "importance": 2,
+                    "score": 76
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-personal-cause",
+            "title": "Personal versus impersonal causation",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 66,
+                "moves": [
+                  {
+                    "moveId": "pro-personal-explanation",
+                    "importance": 3,
+                    "score": 66
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "con-impersonal-indeterminism",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 73.35,
+            "burdenCompletionAdjustment": 0,
+            "score": 73
+          },
+          "con": {
+            "weightedSectionMean": 85.75,
+            "burdenCompletionAdjustment": 0,
+            "score": 86
+          }
+        },
+        "winner": "con",
+        "winningMargin": 13
+      },
+      "comparator": {
+        "expected": {
+          "pro": 71,
+          "con": 81
+        },
+        "actual": {
+          "pro": 73,
+          "con": 86
+        },
+        "deltas": {
+          "pro": 2,
+          "con": 5
+        },
+        "absoluteDeltas": {
+          "pro": 2,
+          "con": 5
+        },
+        "maximumAbsoluteDelta": 5,
+        "expectedWinner": "con",
+        "actualWinner": "con",
+        "winnerPreserved": true,
+        "bothSidesWithinFive": true
+      }
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "scores": {
+        "protocolId": "v4.1.5-bounded-lean-risk-triggered-consensus",
+        "debateNumber": "103",
+        "debateId": "woodford-edwards-rational-belief-god-2023",
+        "sections": [
+          {
+            "sectionId": "section-evil",
+            "title": "Gratuitous evil and theodicy",
+            "weightPercent": 30,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "pro-evil-parity",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "con-evil-response",
+                    "importance": 3,
+                    "score": 73
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-reason",
+            "title": "Evolution and cognitive reliability",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 86,
+                "moves": [
+                  {
+                    "moveId": "pro-reason-reply",
+                    "importance": 3,
+                    "score": 86
+                  }
+                ]
+              },
+              "con": {
+                "score": 72,
+                "moves": [
+                  {
+                    "moveId": "con-reason-constructive",
+                    "importance": 3,
+                    "score": 72
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-design",
+            "title": "Fine-tuning, design, and evolutionary explanation",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "pro-design-natural-explanation",
+                    "importance": 2,
+                    "score": 71
+                  }
+                ]
+              },
+              "con": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "con-design-constructive",
+                    "importance": 3,
+                    "score": 71
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-morality",
+            "title": "Objective morality and the Euthyphro dilemma",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "pro-moral-evolution",
+                    "importance": 2,
+                    "score": 72
+                  },
+                  {
+                    "moveId": "pro-euthyphro-rejoinder",
+                    "importance": 3,
+                    "score": 76
+                  }
+                ]
+              },
+              "con": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "con-moral-constructive",
+                    "importance": 3,
+                    "score": 76
+                  },
+                  {
+                    "moveId": "con-euthyphro-answer",
+                    "importance": 3,
+                    "score": 72
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-revelation",
+            "title": "Salvation confusion and revelation",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "pro-salvation-confusion",
+                    "importance": 3,
+                    "score": 75
+                  },
+                  {
+                    "moveId": "pro-revelation-reply",
+                    "importance": 2,
+                    "score": 74
+                  }
+                ]
+              },
+              "con": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "con-scripture-genre",
+                    "importance": 2,
+                    "score": 79
+                  },
+                  {
+                    "moveId": "con-purpose-guidance",
+                    "importance": 2,
+                    "score": 72
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 79.1,
+            "burdenCompletionAdjustment": 0,
+            "score": 79
+          },
+          "con": {
+            "weightedSectionMean": 73.15,
+            "burdenCompletionAdjustment": 0,
+            "score": 73
+          }
+        },
+        "winner": "pro",
+        "winningMargin": 6
+      },
+      "comparator": {
+        "expected": {
+          "pro": 76,
+          "con": 67
+        },
+        "actual": {
+          "pro": 79,
+          "con": 73
+        },
+        "deltas": {
+          "pro": 3,
+          "con": 6
+        },
+        "absoluteDeltas": {
+          "pro": 3,
+          "con": 6
+        },
+        "maximumAbsoluteDelta": 6,
+        "expectedWinner": "pro",
+        "actualWinner": "pro",
+        "winnerPreserved": true,
+        "bothSidesWithinFive": false
+      }
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "scores": {
+        "protocolId": "v4.1.5-bounded-lean-risk-triggered-consensus",
+        "debateNumber": "161",
+        "debateId": "craig-millican-does-god-exist-2011",
+        "sections": [
+          {
+            "sectionId": "section-cosmology",
+            "title": "Cosmic beginning, causation, and a personal cause",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "pro-cosmology-opening",
+                    "importance": 3,
+                    "score": 74
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "con-cosmology-reply",
+                    "importance": 3,
+                    "score": 87
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-finetuning",
+            "title": "Fine-tuning and designer inference",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "pro-finetuning-opening",
+                    "importance": 3,
+                    "score": 73
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "con-finetuning-reply",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-morality",
+            "title": "Objective morality and divine grounding",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "pro-morality-opening",
+                    "importance": 3,
+                    "score": 74
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "con-morality-reply",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-resurrection",
+            "title": "Resurrection evidence and natural explanation",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "pro-resurrection-opening",
+                    "importance": 3,
+                    "score": 75
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "con-resurrection-reply",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-experience-hiddenness",
+            "title": "Religious experience, diversity, and hiddenness",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 66,
+                "moves": [
+                  {
+                    "moveId": "pro-experience-opening",
+                    "importance": 2,
+                    "score": 66
+                  }
+                ]
+              },
+              "con": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "con-experience-hiddenness-reply",
+                    "importance": 3,
+                    "score": 74
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 72.8,
+            "burdenCompletionAdjustment": 0,
+            "score": 73
+          },
+          "con": {
+            "weightedSectionMean": 83.45,
+            "burdenCompletionAdjustment": 0,
+            "score": 83
+          }
+        },
+        "winner": "con",
+        "winningMargin": 10
+      },
+      "comparator": {
+        "expected": {
+          "pro": 68,
+          "con": 78
+        },
+        "actual": {
+          "pro": 73,
+          "con": 83
+        },
+        "deltas": {
+          "pro": 5,
+          "con": 5
+        },
+        "absoluteDeltas": {
+          "pro": 5,
+          "con": 5
+        },
+        "maximumAbsoluteDelta": 5,
+        "expectedWinner": "con",
+        "actualWinner": "con",
+        "winnerPreserved": true,
+        "bothSidesWithinFive": true
+      }
+    }
+  ],
+  "totals": {
+    "debates": 3,
+    "sides": 6,
+    "winnerClassificationsPreserved": 3,
+    "sidesWithinFive": 5,
+    "maximumAbsoluteDelta": 6,
+    "acceptancePassed": false
+  },
+  "authorization": {
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  }
+}
