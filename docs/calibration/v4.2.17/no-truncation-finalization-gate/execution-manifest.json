@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "4.2.17-no-truncation-finalization-execution-manifest",
+  "protocolId": "v4.2.17-no-truncation-finalization-gate",
+  "status": "frozen-three-retired-no-truncation-contexts-authorized",
+  "frozenAt": "2026-08-05T18:59:46.154Z",
+  "checkpointCommit": "a149baffc1a67c8e20d973baf139b9ff42a57253",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "contexts": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "inputs": {
+        "workflow": "docs/assessment-workflow-v4.0.md",
+        "rubric": "docs/reassessment-rubric-v3.8.4.md",
+        "manual": "docs/calibration/v4.2.17/no-truncation-finalization-gate/manual.md",
+        "packet": "docs/calibration/v3.8.8/reconstruction/packets/debate-55.json",
+        "schema": "docs/calibration/v4.2.17/no-truncation-finalization-gate/schemas/debate-55.json"
+      },
+      "validationGold": "docs/calibration/v3.8.8/reconstruction/validated-outputs/debate-55.json",
+      "rawOutput": "docs/calibration/v4.2.17/no-truncation-finalization-gate/raw/debate-55.json",
+      "validatedOutput": "docs/calibration/v4.2.17/no-truncation-finalization-gate/validated/debate-55.json",
+      "inputBytes": 189432
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "inputs": {
+        "workflow": "docs/assessment-workflow-v4.0.md",
+        "rubric": "docs/reassessment-rubric-v3.8.4.md",
+        "manual": "docs/calibration/v4.2.17/no-truncation-finalization-gate/manual.md",
+        "packet": "docs/calibration/v3.8.8/reconstruction/packets/debate-103.json",
+        "schema": "docs/calibration/v4.2.17/no-truncation-finalization-gate/schemas/debate-103.json"
+      },
+      "validationGold": "docs/calibration/v3.8.8/reconstruction/outputs/debate-103.json",
+      "rawOutput": "docs/calibration/v4.2.17/no-truncation-finalization-gate/raw/debate-103.json",
+      "validatedOutput": "docs/calibration/v4.2.17/no-truncation-finalization-gate/validated/debate-103.json",
+      "inputBytes": 176985
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "inputs": {
+        "workflow": "docs/assessment-workflow-v4.0.md",
+        "rubric": "docs/reassessment-rubric-v3.8.4.md",
+        "manual": "docs/calibration/v4.2.17/no-truncation-finalization-gate/manual.md",
+        "packet": "docs/calibration/v3.8.8/reconstruction/packets/debate-161.json",
+        "schema": "docs/calibration/v4.2.17/no-truncation-finalization-gate/schemas/debate-161.json"
+      },
+      "validationGold": "docs/calibration/v3.8.8/reconstruction/outputs/debate-161.json",
+      "rawOutput": "docs/calibration/v4.2.17/no-truncation-finalization-gate/raw/debate-161.json",
+      "validatedOutput": "docs/calibration/v4.2.17/no-truncation-finalization-gate/validated/debate-161.json",
+      "inputBytes": 189311
+    }
+  ],
+  "sourceBoundary": {
+    "completeSourcePacketsDelivered": 3,
+    "rawTranscriptsDuplicated": false,
+    "rawEventsDuplicated": false,
+    "participantJudgmentAlreadyClosed": true,
+    "scoresLockedFromPackets": true
+  },
+  "executionPolicy": {
+    "contexts": 3,
+    "attemptsPerDebate": 1,
+    "retries": 0,
+    "correctionContexts": 0,
+    "deterministicProseMutation": false,
+    "tagsSchemaClosedEmpty": true,
+    "timeoutMsPerDebate": 600000,
+    "maximumMinutesPerDebate": 4.5,
+    "maximumMeanMinutes": 4,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "isolation": {
+    "freshTemporaryCodexHomePerDebate": true,
+    "freshSourceDirectoryPerDebate": true,
+    "otherGateDebatesUnavailable": true,
+    "priorReconstructionsUnavailable": true,
+    "validationGoldUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "productionObjectsUnavailable": true
+  },
+  "authorization": {
+    "modelExecution": true,
+    "deterministicValidation": true,
+    "analysis": true,
+    "correctionModelExecution": false,
+    "proseMutation": false,
+    "scoring": false,
+    "productionMutation": false
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.2.17/no-truncation-finalization-gate/model-execution.json",
+    "analysis": "docs/calibration/v4.2.17/no-truncation-finalization-gate/analysis.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.2.17/no-truncation-finalization-gate/raw/debate-55.json",
+    "docs/calibration/v4.2.17/no-truncation-finalization-gate/validated/debate-55.json",
+    "docs/calibration/v4.2.17/no-truncation-finalization-gate/raw/debate-103.json",
+    "docs/calibration/v4.2.17/no-truncation-finalization-gate/validated/debate-103.json",
+    "docs/calibration/v4.2.17/no-truncation-finalization-gate/raw/debate-161.json",
+    "docs/calibration/v4.2.17/no-truncation-finalization-gate/validated/debate-161.json",
+    "docs/calibration/v4.2.17/no-truncation-finalization-gate/model-execution.json",
+    "docs/calibration/v4.2.17/no-truncation-finalization-gate/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.17.md": "dbf2532ea27c7a11b4e7f5665ea1a4fcbfd893f32b73dc45579f1f06d3350296",
+    "docs/calibration/v4.2.17/no-truncation-finalization-gate/preparation-manifest.json": "83b85560b57276683413be53c4536f323ead326d86f520f6d6c50c59beaefaab",
+    "docs/assessment-workflow-v4.0.md": "f3c37042481d808fc5e0a63430f021b0e4a76f9da4147d9de78a0d87e0f0c154",
+    "docs/reassessment-rubric-v3.8.4.md": "fda29887abb26f1f5a6f7b772e26434db0c055ec3efe42be4eeea602f5a84909",
+    "docs/calibration/v4.2.17/no-truncation-finalization-gate/manual.md": "c523f8855c05a677c7bfed29710c5f52ee5915802cad500143b496f2316a93e9",
+    "docs/calibration/v3.8.8/reconstruction/packets/debate-55.json": "34f12d2e14495a18795f167f21a0f3de450333d839e1fab76b03c3a5ea01cb85",
+    "docs/calibration/v4.2.17/no-truncation-finalization-gate/schemas/debate-55.json": "57fbdb29b9f3cfe0d67cb50f5aa8eefeccbab4eb030c9abab628db5f8dbe9a34",
+    "docs/calibration/v3.8.8/reconstruction/validated-outputs/debate-55.json": "9592f10062d9461415acd1873a39b26b989737ee609806dd22830a57857461a9",
+    "docs/calibration/v3.8.8/reconstruction/packets/debate-103.json": "14bfb489ff601641a2d4e42e8a357bfa6787f100eebaf83902f54ab15c8a6719",
+    "docs/calibration/v4.2.17/no-truncation-finalization-gate/schemas/debate-103.json": "b2a9af8cbab220cdc5404d1a001dd31368f9ad14f58e560c0a0427d60f67f0c2",
+    "docs/calibration/v3.8.8/reconstruction/outputs/debate-103.json": "1938c9566df70c8c09d82a6a3d560b2fffe67a23aa09418394a206ca8ccdbf2c",
+    "docs/calibration/v3.8.8/reconstruction/packets/debate-161.json": "a4243d80d8ba4ec84819e1ce12a8f9d59985ff1e550aa29cac762f0d05cb853a",
+    "docs/calibration/v4.2.17/no-truncation-finalization-gate/schemas/debate-161.json": "c59d890fb54bc71ae8a42aa91bc8445123cdde1fbd9c5f8d7e951aaa0948971d",
+    "docs/calibration/v3.8.8/reconstruction/outputs/debate-161.json": "0f0d6a1fc837c35bcaa677de9bd94f31f7315742839aab250355024d162594d3",
+    "docs/calibration/v4.2.16/three-debate-finalization-gate/analysis.json": "c54b7890c2b4deb4aea7cfa9976a10cd797a21ab4de5a4a6960b76432000215b",
+    "scripts/lib/v385-transport.mjs": "f20d5cb026e0c2720d32276ddcbb612ec852e3732d7653e47a98ba5ffa880dfe",
+    "scripts/lib/v388-reconstruction.mjs": "b91aecc26cd3a978ef807bec877222b641fff4cd911028538cd035b747f5a342",
+    "scripts/lib/v41-lean-production.mjs": "9d4f4a5a54ff4c73f50733aa148064200862991a69003823d303e7bac363d9ba",
+    "scripts/lib/v4217-finalization-gate.mjs": "67c898f558af03499b0b602b575e3fe27930d47a4a19afe1f667fd2640b5b37e",
+    "scripts/validate-v388-reconstruction-output.mjs": "060e75adf68b1256fd4920aee06ee97600378057170d28febbb81ca9ec97e741",
+    "scripts/build-v4217-finalization-gate.mjs": "83431eb6815d538c9029cfd4ed043c8d83214f59b6223176b41b41847cb125aa",
+    "scripts/test-v4217-finalization-gate.mjs": "50e1e14549abd3e2a635dc461c08c64d733ee50197b9480c4174c12410700a2e",
+    "scripts/preregister-v4217-finalization-gate.mjs": "5cb537f2e61c57852df042f25640e76c8e5574c47c25d1d141cd78fd6d4fe806",
+    "scripts/run-v4217-finalization-gate.mjs": "2eec1500ae1ee41c9e8bbe874ad90b2b25db5e13dcb0ad33476b2b6552870556",
+    "scripts/analyze-v4217-finalization-gate.mjs": "420974521341ca926accb8f1b371f71066cc43fa0481c263080a2bfa90085e15",
+    "src/data/references.js": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b"
+  }
+}
