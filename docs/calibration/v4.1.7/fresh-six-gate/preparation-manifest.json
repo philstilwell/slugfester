@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "4.1.7-fresh-six-preparation",
+  "protocolId": "v4.1.7-fresh-six-validation",
+  "status": "prepared-source-only-no-model-execution",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "primaryReasoningEffort": "low",
+    "reviewReasoningEffort": "high",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "sample": "docs/calibration/v4.1.7/fresh-six-gate/source-only-sample.json",
+  "debates": [
+    {
+      "debateNumber": "37",
+      "debateId": "ehrman-bass-resurrection-history-2023",
+      "family": "resurrection-history",
+      "durationSeconds": 4623,
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.7/fresh-six-gate/packets/debate-37.json",
+      "output": "docs/calibration/v4.1.7/fresh-six-gate/primary-outputs/debate-37.json"
+    },
+    {
+      "debateNumber": "58",
+      "debateId": "dillahunty-slick-secular-humanism-christianity-2016",
+      "family": "morality-ethics",
+      "durationSeconds": 9805,
+      "controlSampleSelected": true,
+      "packet": "docs/calibration/v4.1.7/fresh-six-gate/packets/debate-58.json",
+      "output": "docs/calibration/v4.1.7/fresh-six-gate/primary-outputs/debate-58.json"
+    },
+    {
+      "debateNumber": "91",
+      "debateId": "cutter-oppy-mind-brain-harmony-god-2025",
+      "family": "mind-agency",
+      "durationSeconds": 6671,
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.7/fresh-six-gate/packets/debate-91.json",
+      "output": "docs/calibration/v4.1.7/fresh-six-gate/primary-outputs/debate-91.json"
+    },
+    {
+      "debateNumber": "59",
+      "debateId": "bollore-halper-god-science-evidence-2026",
+      "family": "evil-hiddenness",
+      "durationSeconds": 6496,
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.7/fresh-six-gate/packets/debate-59.json",
+      "output": "docs/calibration/v4.1.7/fresh-six-gate/primary-outputs/debate-59.json"
+    },
+    {
+      "debateNumber": "144",
+      "debateId": "plantinga-dennett-evolution-naturalism-2018",
+      "family": "science-origins",
+      "durationSeconds": 6441,
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.7/fresh-six-gate/packets/debate-144.json",
+      "output": "docs/calibration/v4.1.7/fresh-six-gate/primary-outputs/debate-144.json"
+    },
+    {
+      "debateNumber": "171",
+      "debateId": "hitchens-blair-religion-force-good-2010",
+      "family": "general-theism-religion",
+      "durationSeconds": 6295,
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.7/fresh-six-gate/packets/debate-171.json",
+      "output": "docs/calibration/v4.1.7/fresh-six-gate/primary-outputs/debate-171.json"
+    }
+  ],
+  "inputs": {
+    "workflowBase": "docs/assessment-workflow-v4.0.md",
+    "workflowDerivedScores": "docs/assessment-workflow-v4.0.1.md",
+    "workflowBounded": "docs/assessment-workflow-v4.1.md",
+    "workflowBurdenIds": "docs/assessment-workflow-v4.1.1.md",
+    "workflowChronology": "docs/assessment-workflow-v4.1.2.md",
+    "workflowConsistency": "docs/assessment-workflow-v4.1.3.md",
+    "workflowBurdenTuple": "docs/assessment-workflow-v4.1.4.md",
+    "workflowTiming": "docs/assessment-workflow-v4.1.5.md",
+    "workflowPassB": "docs/assessment-workflow-v4.1.6.md",
+    "workflowFreshValidation": "docs/assessment-workflow-v4.1.7.md",
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.1.7/fresh-six-gate/manual.md",
+    "schema": "docs/calibration/v4.1.7/fresh-six-gate/schemas/primary.schema.json"
+  },
+  "endpointSchemaInheritance": {
+    "from": "v4.1.5-bounded-primary",
+    "structuralFieldsChanged": false,
+    "onlyProtocolConstantsChanged": true,
+    "deterministicTranslationFixtureRequired": true,
+    "newPaidEndpointPreflightRequired": false
+  },
+  "controlPolicy": {
+    "rate": 0.1,
+    "selectedDebateIds": [
+      "dillahunty-slick-secular-humanism-christianity-2016"
+    ],
+    "selectedNumbers": [
+      "58"
+    ],
+    "selectionVisibleToPrimaryJudge": false
+  },
+  "totals": {
+    "debates": 6,
+    "sourceOnlyPackets": 6,
+    "controlDebates": 1,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "deterministicFixtures": true,
+    "primaryExecutionManifest": false,
+    "primaryModelExecution": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  }
+}
