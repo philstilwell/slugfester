@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "4.2.9.1-long-context-schema-recovery-preparation",
+  "protocolId": "v4.2.9.1-long-context-schema-recovery",
+  "proposalProtocolId": "v4.2.9-long-context-partition-diagnostic",
+  "status": "prepared-two-schema-recovery-chunks",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "debateNumber": "99",
+  "diagnosis": {
+    "subscriptionProbePassed": true,
+    "structuredOutputProbeRejectedBeforeInference": true,
+    "exactApiError": "Invalid schema for response_format 'codex_output_schema': In context=('properties', 'schemaVersion'), schema must have a 'type' key.",
+    "originalRequestsRejectedBeforeInference": 2,
+    "originalModelOutputs": 0,
+    "schemaRepair": "Add explicit string or boolean types to every constant-valued property.",
+    "technicalProbeModelContexts": 1,
+    "technicalProbeMeteredApiCostUsd": 0
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "source": {
+    "packet": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-99.json",
+    "fullLedger": ".assessment-cache/compact-ledgers/v4.2.4/debate-99.jsonl",
+    "originalEvents": ".assessment-cache/captions/UWCvKiWjV0g/events.json",
+    "v428Execution": "docs/calibration/v4.2.8/correction-aware-retired-continuation/model-execution.json",
+    "v428Analysis": "docs/calibration/v4.2.8/correction-aware-retired-continuation/primary-analysis.json",
+    "priorPreparation": "docs/calibration/v4.2.9/long-context-partition/preparation-manifest.json",
+    "priorExecution": "docs/calibration/v4.2.9/long-context-partition/model-execution.json",
+    "priorAnalysis": "docs/calibration/v4.2.9/long-context-partition/analysis.json",
+    "priorRejectedSchema": "docs/calibration/v4.2.9/long-context-partition/schema.json"
+  },
+  "modelInputs": {
+    "selectionRubric": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.2.9/long-context-partition/manual.md",
+    "schema": "docs/calibration/v4.2.9.1/long-context-schema-recovery/schema.json",
+    "packet": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-99.json"
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-1",
+      "startEvent": 0,
+      "endEvent": 1758,
+      "chunkPath": "docs/calibration/v4.2.9/long-context-partition/chunks/chunk-1.jsonl",
+      "chunkSha256": "1ab092be9a79e87ed7a6f67bb35c5780494e5ccd7b273c8b0aa1e9013a4165b6",
+      "rows": 1759,
+      "bytes": 102648,
+      "rawOutput": "docs/calibration/v4.2.9.1/long-context-schema-recovery/proposals/chunk-1.json"
+    },
+    {
+      "chunkId": "chunk-2",
+      "startEvent": 1638,
+      "endEvent": 3396,
+      "chunkPath": "docs/calibration/v4.2.9/long-context-partition/chunks/chunk-2.jsonl",
+      "chunkSha256": "2a2d938be0f4f42d7d59a4ea76baacff33bc499765dfde2e9de3a2ffb7ee2d3f",
+      "rows": 1759,
+      "bytes": 104266,
+      "rawOutput": "docs/calibration/v4.2.9.1/long-context-schema-recovery/proposals/chunk-2.json"
+    }
+  ],
+  "coverage": {
+    "originalEvents": 3397,
+    "jointlyCoveredEvents": 3397,
+    "overlapStartEvent": 1638,
+    "overlapEndEvent": 1758,
+    "overlapEvents": 121,
+    "complete": true
+  },
+  "policy": {
+    "scoreBlindSourceDiscoveryOnly": true,
+    "contexts": 2,
+    "schemaRecoveryRequestsPerContext": 1,
+    "semanticRetries": 0,
+    "timeoutMs": 900000,
+    "scoresAuthorized": false
+  },
+  "authorization": {
+    "executionManifest": false,
+    "twoSchemaRecoveryContexts": false,
+    "integratedPrimaryPreparation": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  }
+}

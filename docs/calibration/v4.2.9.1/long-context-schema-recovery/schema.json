@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v4291-long-context-chunk-proposal",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "chunkId",
+    "chunkStartEvent",
+    "chunkEndEvent",
+    "reviewerRole",
+    "assessmentModel",
+    "calibrationOnly",
+    "completeChunkReviewed",
+    "candidates"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "4.2.9-long-context-chunk-proposal",
+      "type": "string"
+    },
+    "protocolId": {
+      "const": "v4.2.9-long-context-partition-diagnostic",
+      "type": "string"
+    },
+    "debateNumber": {
+      "const": "99",
+      "type": "string"
+    },
+    "debateId": {
+      "const": "jones-jump-digital-physics-god-2019",
+      "type": "string"
+    },
+    "chunkId": {
+      "type": "string",
+      "enum": [
+        "chunk-1",
+        "chunk-2"
+      ]
+    },
+    "chunkStartEvent": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "chunkEndEvent": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "reviewerRole": {
+      "const": "score-blind-chunk-proposer",
+      "type": "string"
+    },
+    "assessmentModel": {
+      "const": "5.6 Sol",
+      "type": "string"
+    },
+    "calibrationOnly": {
+      "const": true,
+      "type": "boolean"
+    },
+    "completeChunkReviewed": {
+      "const": true,
+      "type": "boolean"
+    },
+    "candidates": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidateId",
+          "side",
+          "speaker",
+          "moveKind",
+          "proposition",
+          "sourceSpan",
+          "attributionConfidence",
+          "attributionBasis",
+          "loadBearingLevel",
+          "loadBearingReason",
+          "responseIntent",
+          "contextSummary",
+          "candidateConfidence"
+        ],
+        "properties": {
+          "candidateId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "speaker": {
+            "type": "string",
+            "minLength": 1
+          },
+          "moveKind": {
+            "type": "string",
+            "enum": [
+              "constructive",
+              "reply"
+            ]
+          },
+          "proposition": {
+            "type": "string",
+            "minLength": 25
+          },
+          "sourceSpan": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "startEvent",
+              "endEvent",
+              "excerpt"
+            ],
+            "properties": {
+              "startEvent": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "endEvent": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "excerpt": {
+                "type": "string",
+                "minLength": 30,
+                "maxLength": 450
+              }
+            }
+          },
+          "attributionConfidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "attributionBasis": {
+            "type": "string",
+            "minLength": 40
+          },
+          "loadBearingLevel": {
+            "type": "string",
+            "enum": [
+              "motion",
+              "central",
+              "subsidiary"
+            ]
+          },
+          "loadBearingReason": {
+            "type": "string",
+            "minLength": 60
+          },
+          "responseIntent": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "localTargetCandidateIds",
+              "earlierTargetDescription"
+            ],
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "constructive",
+                  "local-reply",
+                  "earlier-unselected-or-cross-chunk-reply"
+                ]
+              },
+              "localTargetCandidateIds": {
+                "type": "array",
+                "maxItems": 3,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "earlierTargetDescription": {
+                "type": "string"
+              }
+            }
+          },
+          "contextSummary": {
+            "type": "string",
+            "minLength": 80
+          },
+          "candidateConfidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "title": "Slugfester v4.2.9.1 schema-recovered long-context chunk proposal"
+}
