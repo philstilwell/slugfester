@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "4.1.6-triggered-pass-b-post-audio-analysis",
+  "protocolId": "v4.1.6-triggered-pass-b-consensus",
+  "status": "pass-b-and-audio-passed-ready-for-disagreement-extraction",
+  "inheritedPassBStatus": "pass-b-passed-audio-verification-required",
+  "runtime": {
+    "wallPassBMinutesPerDebate": 7.68,
+    "computePassBMinutesPerDebate": 7.68,
+    "conservativePassBMinutesPerDebate": 9.6,
+    "transportCleanContexts": 3,
+    "recoveredTransportContexts": 0,
+    "recoveredTransportDebates": [],
+    "timingEligible": true,
+    "fixedTransportContingencyHours": 2,
+    "centralProjection": {
+      "inputs": {
+        "debateCount": 195,
+        "primaryMinutesPerDebate": 4.4,
+        "finalizationMinutesPerDebate": 4.25,
+        "escalationRate": 0.15,
+        "passBMinutesPerEscalatedDebate": 7.680461111111111,
+        "adjudicationShareOfEscalations": 0.5,
+        "adjudicationMinutesPerAdjudicatedDebate": 5.6,
+        "fixedAudioQaRenderingHours": 5,
+        "fixedTransportContingencyHours": 2
+      },
+      "hours": {
+        "primary": 14.3,
+        "finalization": 13.81,
+        "passB": 3.74,
+        "adjudication": 1.36,
+        "audioQaRendering": 5,
+        "total": 40.22,
+        "transportContingency": 2
+      },
+      "centralTargetPassed": true,
+      "conservativeCeilingPassed": true
+    },
+    "conservativeProjection": {
+      "inputs": {
+        "debateCount": 195,
+        "primaryMinutesPerDebate": 7,
+        "finalizationMinutesPerDebate": 5,
+        "escalationRate": 0.2,
+        "passBMinutesPerEscalatedDebate": 9.60057638888889,
+        "adjudicationShareOfEscalations": 0.6,
+        "adjudicationMinutesPerAdjudicatedDebate": 6.5,
+        "fixedAudioQaRenderingHours": 5,
+        "fixedTransportContingencyHours": 2
+      },
+      "hours": {
+        "primary": 22.75,
+        "finalization": 16.25,
+        "passB": 6.24,
+        "adjudication": 2.53,
+        "audioQaRendering": 5,
+        "total": 54.78,
+        "transportContingency": 2
+      },
+      "centralTargetPassed": false,
+      "conservativeCeilingPassed": true
+    },
+    "runtimePassed": true
+  },
+  "audioVerification": {
+    "audit": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/audio-verification.json",
+    "status": "passed-all-eight-medium-attribution-moves-audio-verified",
+    "pendingMoves": 8,
+    "verified": 8,
+    "unresolved": 0,
+    "estimatedCostUsd": 0.12389099999999999
+  },
+  "authorization": {
+    "disagreementExtraction": true,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  }
+}

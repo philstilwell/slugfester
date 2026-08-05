@@ -1,0 +1,673 @@
+{
+  "schemaVersion": "4.1.6-pass-b-audio-verification-audit",
+  "protocolId": "v4.1.6-triggered-pass-b-consensus",
+  "status": "passed-all-eight-medium-attribution-moves-audio-verified",
+  "trigger": "speaker attribution confidence was medium or low in the valid v4.1.6 Pass B artifact",
+  "method": "gpt-4o-transcribe-diarize with two prior-audio-verified known-speaker references per debate; deterministic locked-excerpt recall is required in the expected speaker's segments",
+  "manualOverrideUsed": false,
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "debates": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "sourceAudio": {
+        "localPath": "output/transcribe/v388-performance-audio-verification/craig-malpass-kalam-nothing-2026/audio/source.mp3",
+        "sha256": "46486cf86c24b069c128cae8e68360ed0b49425929f3711951414c5b6d924311"
+      },
+      "speakerReferences": [
+        {
+          "speaker": "William Lane Craig",
+          "localPath": "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/references/william-lane-craig.mp3",
+          "sha256": "adb1f1a7de2002e11da560962a5ce24b4f6e8c367a0df8609435774fa780b005",
+          "durationSeconds": 8,
+          "provenance": {
+            "verifiedClip": "output/transcribe/v388-reconstruction-quote-verification/craig-malpass-kalam-nothing-2026/clips/craig-candidate-03.mp3",
+            "verifiedClipSha256": "1a3328a31723087a637e73671d5cbb0bf2e195cfc676aea4e78a729b6fc7f657",
+            "offsetSeconds": 10
+          }
+        },
+        {
+          "speaker": "Alex Malpass",
+          "localPath": "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/references/alex-malpass.mp3",
+          "sha256": "408d747568d5efde2c4017e868e82fad3c1964f2be3325bd6cbe534b3c3819d4",
+          "durationSeconds": 8,
+          "provenance": {
+            "verifiedClip": "output/transcribe/v388-performance-audio-verification/craig-malpass-kalam-nothing-2026/clips/move-12.mp3",
+            "verifiedClipSha256": "b0b1824d1b88068e8382804569952d2ee7f250f44660798f55c26168978b8c37",
+            "offsetSeconds": 10
+          }
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-actual-infinite-absurdity",
+          "expectedSpeaker": "William Lane Craig",
+          "resolvedSpeaker": "William Lane Craig",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 874,
+            "endEvent": 908,
+            "startMs": 1948400,
+            "endMs": 2036680,
+            "excerpt": "If you could have an actual infinite number of things, it would result in all sorts of situations that I think are metaphysically impossible. Granted, there is no strict logical contradiction... the claim is that this is metaphysically impossible... Benardete imagines a book... For there is no last page."
+          },
+          "verificationExcerpt": "If you could have an actual infinite number of things, it would result in all sorts of situations that I think are metaphysically impossible. Granted, there is no strict logical contradiction... the claim is that this is metaphysically impossible... Benardete imagines a book... For there is no last page.",
+          "clip": {
+            "localPath": "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/clips/pro-actual-infinite-absurdity.mp3",
+            "sha256": "79499dba38f2e5f7f9a99c170d75b3e2464b9e53f2a3e43b3e0864e1fdb6386c",
+            "durationSeconds": 94.28
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/transcripts/pro-actual-infinite-absurdity.transcript.json",
+            "sha256": "be245048b499a97eae442e11ce447593202c8a2ba4ec55c1c71ab6a221fa50b8",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 94.28,
+            "segmentCount": 21
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "William Lane Craig",
+            "fullClipExcerptRecall": 0.9795918367346939,
+            "expectedSpeakerExcerptRecall": 0.9795918367346939,
+            "highestOtherSpeaker": "Alex Malpass",
+            "highestOtherSpeakerExcerptRecall": 0.10204081632653061,
+            "expectedSpeakerRecallMargin": 0.8775510204081632,
+            "expectedSpeakerDurationSeconds": 79.6,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "William Lane Craig",
+                "segmentCount": 18,
+                "durationSeconds": 79.6,
+                "wordCount": 194,
+                "excerptRecall": 0.9795918367346939
+              },
+              {
+                "speaker": "Alex Malpass",
+                "segmentCount": 3,
+                "durationSeconds": 7.95,
+                "wordCount": 35,
+                "excerptRecall": 0.10204081632653061
+              }
+            ]
+          }
+        },
+        {
+          "moveId": "con-strange-not-impossible",
+          "expectedSpeaker": "Alex Malpass",
+          "resolvedSpeaker": "Alex Malpass",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 946,
+            "endEvent": 1015,
+            "startMs": 2128640,
+            "endMs": 2275040,
+            "excerpt": "I'm not persuaded by these examples... Hilbert's Hotel is strange... merely by shuffling guests around, the hotel can accommodate any number of new guests... it's not quite clear to me that that's enough to say that it couldn't exist... the strange and the impossible are not the same... if there was an infinite hotel, that's what it would be like."
+          },
+          "verificationExcerpt": "I'm not persuaded by these examples... Hilbert's Hotel is strange... merely by shuffling guests around, the hotel can accommodate any number of new guests... it's not quite clear to me that that's enough to say that it couldn't exist... the strange and the impossible are not the same... if there was an infinite hotel, that's what it would be like.",
+          "clip": {
+            "localPath": "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/clips/con-strange-not-impossible.mp3",
+            "sha256": "ba16b1496c049a723de672fb13fc93d1f35169c2bd710786ba8c42dedf3d0c61",
+            "durationSeconds": 152.4
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/transcripts/con-strange-not-impossible.transcript.json",
+            "sha256": "05d0fe8434966c35d62abe3d04b407c591d4143c1a72d9eb17009f7cd84a350a",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 152.4,
+            "segmentCount": 33
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Alex Malpass",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "William Lane Craig",
+            "highestOtherSpeakerExcerptRecall": 0.5833333333333334,
+            "expectedSpeakerRecallMargin": 0.41666666666666663,
+            "expectedSpeakerDurationSeconds": 87.1,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Alex Malpass",
+                "segmentCount": 11,
+                "durationSeconds": 87.1,
+                "wordCount": 306,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "William Lane Craig",
+                "segmentCount": 18,
+                "durationSeconds": 54.15,
+                "wordCount": 144,
+                "excerptRecall": 0.5833333333333334
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 2,
+                "durationSeconds": 3.7,
+                "wordCount": 14,
+                "excerptRecall": 0.08333333333333333
+              },
+              {
+                "speaker": "C",
+                "segmentCount": 1,
+                "durationSeconds": 0.15,
+                "wordCount": 2,
+                "excerptRecall": 0.016666666666666666
+              },
+              {
+                "speaker": "B",
+                "segmentCount": 1,
+                "durationSeconds": 0.2,
+                "wordCount": 1,
+                "excerptRecall": 0
+              }
+            ]
+          }
+        },
+        {
+          "moveId": "con-impersonal-indeterminism",
+          "expectedSpeaker": "Alex Malpass",
+          "resolvedSpeaker": "Alex Malpass",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 2290,
+            "endEvent": 2344,
+            "startMs": 4952240,
+            "endMs": 5066680,
+            "excerpt": "If it's impersonal, then there's some kind of mechanism... if the necessary and sufficient conditions... were present already for eternity... Why not think that it would have done it... infinite time ago?... But I wonder why can't we just describe it in terms of a kind of indeterministic causation?... It just happened to snap at that point and that's the beginning of time. Why does it have to be personal?"
+          },
+          "verificationExcerpt": "If it's impersonal, then there's some kind of mechanism... if the necessary and sufficient conditions... were present already for eternity... Why not think that it would have done it... infinite time ago?... But I wonder why can't we just describe it in terms of a kind of indeterministic causation?... It just happened to snap at that point and that's the beginning of time. Why does it have to be personal?",
+          "clip": {
+            "localPath": "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/clips/con-impersonal-indeterminism.mp3",
+            "sha256": "f60b563a95ea64c53f578cb50cb101889a794c6e8a512d0d7360f497e3c706f9",
+            "durationSeconds": 120.44
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/transcripts/con-impersonal-indeterminism.transcript.json",
+            "sha256": "9ab9bcbc650763d66f6f6db05bf984c43f6899e12326b53f8c7c083ae36a7def",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 120.44,
+            "segmentCount": 36
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Alex Malpass",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "A",
+            "highestOtherSpeakerExcerptRecall": 0.14285714285714285,
+            "expectedSpeakerRecallMargin": 0.8571428571428572,
+            "expectedSpeakerDurationSeconds": 98.75,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Alex Malpass",
+                "segmentCount": 25,
+                "durationSeconds": 98.75,
+                "wordCount": 332,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 3,
+                "durationSeconds": 7.9,
+                "wordCount": 26,
+                "excerptRecall": 0.14285714285714285
+              },
+              {
+                "speaker": "William Lane Craig",
+                "segmentCount": 6,
+                "durationSeconds": 5.9,
+                "wordCount": 23,
+                "excerptRecall": 0.11428571428571428
+              },
+              {
+                "speaker": "C",
+                "segmentCount": 1,
+                "durationSeconds": 0.5,
+                "wordCount": 1,
+                "excerptRecall": 0
+              },
+              {
+                "speaker": "B",
+                "segmentCount": 1,
+                "durationSeconds": 0.05,
+                "wordCount": 1,
+                "excerptRecall": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "sourceAudio": {
+        "localPath": "output/transcribe/v388-performance-audio-verification/woodford-edwards-rational-belief-god-2023/audio/source.mp3",
+        "sha256": "0a067cd52c4410c80e1fc9f25b18a1dcd95229323b45be38dc80bdd38f01a0c9"
+      },
+      "speakerReferences": [
+        {
+          "speaker": "Stephen Woodford",
+          "localPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/references/stephen-woodford.mp3",
+          "sha256": "49315345ff8f072b1164c1b7e495d8e710670fe947b3793d832dd501f86f8be3",
+          "durationSeconds": 8,
+          "provenance": {
+            "verifiedClip": "output/transcribe/v388-performance-audio-verification/woodford-edwards-rational-belief-god-2023/clips/move-11.mp3",
+            "verifiedClipSha256": "f6d4c85fbf610f4a4fae55c68a0eb1ed07a8beb0e1b93208b60533368c4043a9",
+            "offsetSeconds": 15
+          }
+        },
+        {
+          "speaker": "Simon Edwards",
+          "localPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/references/simon-edwards.mp3",
+          "sha256": "0595858473d8390603e110dd1e813b4ded82234490d6d38d7999c84f1662e76f",
+          "durationSeconds": 8,
+          "provenance": {
+            "verifiedClip": "output/transcribe/v388-performance-audio-verification/woodford-edwards-rational-belief-god-2023/clips/move-13.mp3",
+            "verifiedClipSha256": "dc17734d132b7ba9b1174261b3d2253fe5ae7d3acbe06685b4e79056d82edf31",
+            "offsetSeconds": 15
+          }
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-reason-reply",
+          "expectedSpeaker": "Stephen Woodford",
+          "resolvedSpeaker": "Stephen Woodford",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 503,
+            "endEvent": 568,
+            "startMs": 1139120,
+            "endMs": 1296960,
+            "excerpt": "that's not an argument in favor of theism ... most atheists don't actually affirm naturalism ... evolution ... is going to select the things that are broadly true"
+          },
+          "verificationExcerpt": "that's not an argument in favor of theism ... most atheists don't actually affirm naturalism ... evolution ... is going to select the things that are broadly true",
+          "clip": {
+            "localPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/clips/pro-reason-reply.mp3",
+            "sha256": "3c2d464744ce9e554c7d2840975b1320c011c5c7adfe8ff12628e4527b90dd99",
+            "durationSeconds": 163.84
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/transcripts/pro-reason-reply.transcript.json",
+            "sha256": "5b8931363ef8905e0caf96a39a96f1dab7c6f0f9f863bd58e8e23f012d4f5b3f",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 163.84,
+            "segmentCount": 18
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Stephen Woodford",
+            "fullClipExcerptRecall": 0.96,
+            "expectedSpeakerExcerptRecall": 0.96,
+            "highestOtherSpeaker": "Simon Edwards",
+            "highestOtherSpeakerExcerptRecall": 0.32,
+            "expectedSpeakerRecallMargin": 0.6399999999999999,
+            "expectedSpeakerDurationSeconds": 121.8,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Stephen Woodford",
+                "segmentCount": 11,
+                "durationSeconds": 121.8,
+                "wordCount": 393,
+                "excerptRecall": 0.96
+              },
+              {
+                "speaker": "Simon Edwards",
+                "segmentCount": 7,
+                "durationSeconds": 34.5,
+                "wordCount": 101,
+                "excerptRecall": 0.32
+              }
+            ]
+          }
+        },
+        {
+          "moveId": "pro-moral-evolution",
+          "expectedSpeaker": "Stephen Woodford",
+          "resolvedSpeaker": "Stephen Woodford",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 893,
+            "endEvent": 930,
+            "startMs": 2040840,
+            "endMs": 2124760,
+            "excerpt": "under a theist or an atheistic view evolution provides a very simple explanation for the moral feelings that we have ... explains why there's so much moral disagreement"
+          },
+          "verificationExcerpt": "under a theist or an atheistic view evolution provides a very simple explanation for the moral feelings that we have ... explains why there's so much moral disagreement",
+          "clip": {
+            "localPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/clips/pro-moral-evolution.mp3",
+            "sha256": "923a5ac18c40227672fcc1c58dd6c164942269d77879b6a875e1b744f02413ec",
+            "durationSeconds": 89.92
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/transcripts/pro-moral-evolution.transcript.json",
+            "sha256": "5cd380cbe6cc7de4fe36a804c03eca8ef6b4d11dbe38a9f26bc19ac6d2aedaaf",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 89.92,
+            "segmentCount": 14
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Stephen Woodford",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "Simon Edwards",
+            "highestOtherSpeakerExcerptRecall": 0.1111111111111111,
+            "expectedSpeakerRecallMargin": 0.8888888888888888,
+            "expectedSpeakerDurationSeconds": 79.15,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Stephen Woodford",
+                "segmentCount": 11,
+                "durationSeconds": 79.15,
+                "wordCount": 279,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "Simon Edwards",
+                "segmentCount": 2,
+                "durationSeconds": 6,
+                "wordCount": 27,
+                "excerptRecall": 0.1111111111111111
+              },
+              {
+                "speaker": "@",
+                "segmentCount": 1,
+                "durationSeconds": 0.2,
+                "wordCount": 1,
+                "excerptRecall": 0
+              }
+            ]
+          }
+        },
+        {
+          "moveId": "con-euthyphro-answer",
+          "expectedSpeaker": "Simon Edwards",
+          "resolvedSpeaker": "Simon Edwards",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 1080,
+            "endEvent": 1113,
+            "startMs": 2463200,
+            "endMs": 2540200,
+            "excerpt": "the answer to the Euthyphro dilemma ... God commands what he does not because it is good but because he is the good ... ultimately sourced in the person of God"
+          },
+          "verificationExcerpt": "the answer to the Euthyphro dilemma ... God commands what he does not because it is good but because he is the good ... ultimately sourced in the person of God",
+          "clip": {
+            "localPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/clips/con-euthyphro-answer.mp3",
+            "sha256": "6c6194331a229d364324ba6cb17a3aaafaa1b11a51f91ed624c4f2f284a571d2",
+            "durationSeconds": 83
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/transcripts/con-euthyphro-answer.transcript.json",
+            "sha256": "3226983ac03fc8ca3b9351390386c49dbe0e550685fa74a5c7dbd96b358bbb29",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 83,
+            "segmentCount": 5
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Simon Edwards",
+            "fullClipExcerptRecall": 0.9655172413793104,
+            "expectedSpeakerExcerptRecall": 0.9655172413793104,
+            "highestOtherSpeaker": "Stephen Woodford",
+            "highestOtherSpeakerExcerptRecall": 0.20689655172413793,
+            "expectedSpeakerRecallMargin": 0.7586206896551725,
+            "expectedSpeakerDurationSeconds": 75.45,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Simon Edwards",
+                "segmentCount": 4,
+                "durationSeconds": 75.45,
+                "wordCount": 262,
+                "excerptRecall": 0.9655172413793104
+              },
+              {
+                "speaker": "Stephen Woodford",
+                "segmentCount": 1,
+                "durationSeconds": 5.6,
+                "wordCount": 21,
+                "excerptRecall": 0.20689655172413793
+              }
+            ]
+          }
+        },
+        {
+          "moveId": "pro-euthyphro-rejoinder",
+          "expectedSpeaker": "Stephen Woodford",
+          "resolvedSpeaker": "Stephen Woodford",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 1114,
+            "endEvent": 1130,
+            "startMs": 2537680,
+            "endMs": 2582160,
+            "excerpt": "it's just kicking the can down the road ... is God good because what he aligns with is some goodness ... or is he good because he defines what good is"
+          },
+          "verificationExcerpt": "it's just kicking the can down the road ... is God good because what he aligns with is some goodness ... or is he good because he defines what good is",
+          "clip": {
+            "localPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/clips/pro-euthyphro-rejoinder.mp3",
+            "sha256": "25491eca843e76ccab698b0bc903265179148302cf7f8a6e20fdb10399f30f0f",
+            "durationSeconds": 50.48
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/transcripts/pro-euthyphro-rejoinder.transcript.json",
+            "sha256": "4624e34419683b4f49636c80d3a1df33b325c74c1234c3c6bd0659aa55f5d017",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 50.48,
+            "segmentCount": 11
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Stephen Woodford",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "Simon Edwards",
+            "highestOtherSpeakerExcerptRecall": 0.13793103448275862,
+            "expectedSpeakerRecallMargin": 0.8620689655172413,
+            "expectedSpeakerDurationSeconds": 36.55,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Stephen Woodford",
+                "segmentCount": 8,
+                "durationSeconds": 36.55,
+                "wordCount": 125,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "Simon Edwards",
+                "segmentCount": 3,
+                "durationSeconds": 5.5,
+                "wordCount": 21,
+                "excerptRecall": 0.13793103448275862
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "sourceAudio": {
+        "localPath": "output/transcribe/v388-performance-audio-verification/craig-millican-does-god-exist-2011/audio/source.mp3",
+        "sha256": "d703c6b47b2c427450280c778dc6ba7151c711e9e0a8a71d59afaadabd80b349"
+      },
+      "speakerReferences": [
+        {
+          "speaker": "William Lane Craig",
+          "localPath": "output/transcribe/v416-pass-b-audio-verification/craig-millican-does-god-exist-2011/references/william-lane-craig.mp3",
+          "sha256": "75e82285ea80bf7e246d372851e099bbe3d7110cbf54577bf1c179d7487f84a8",
+          "durationSeconds": 8,
+          "provenance": {
+            "verifiedClip": "output/transcribe/v388-performance-audio-verification/craig-millican-does-god-exist-2011/clips/move-21.mp3",
+            "verifiedClipSha256": "574f545fd02b33fb8bc5d95e3f88de54f3788ab8b85c45cbfaba99918c1a1e22",
+            "offsetSeconds": 15
+          }
+        },
+        {
+          "speaker": "Peter Millican",
+          "localPath": "output/transcribe/v416-pass-b-audio-verification/craig-millican-does-god-exist-2011/references/peter-millican.mp3",
+          "sha256": "8dfafd6e72aac2c81ae22e84bcf809fc7c2e7457ae129411bc41f82be24ba280",
+          "durationSeconds": 8,
+          "provenance": {
+            "verifiedClip": "output/transcribe/v388-performance-audio-verification/craig-millican-does-god-exist-2011/clips/move-17.mp3",
+            "verifiedClipSha256": "da53b827876bc0828c2c68d962733527d0483a20d6279f7b5f7b5899e86e4866",
+            "offsetSeconds": 15
+          }
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "con-finetuning-reply",
+          "expectedSpeaker": "Peter Millican",
+          "resolvedSpeaker": "Peter Millican",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 1359,
+            "endEvent": 1545,
+            "startMs": 3695080,
+            "endMs": 4173630,
+            "excerpt": "a physically inexplicable coincidence would invite a cosmic designer, but I also see good reason for caution and modesty"
+          },
+          "verificationExcerpt": "a physically inexplicable coincidence would invite a cosmic designer, but I also see good reason for caution and modesty",
+          "clip": {
+            "localPath": "output/transcribe/v416-pass-b-audio-verification/craig-millican-does-god-exist-2011/clips/con-finetuning-reply.mp3",
+            "sha256": "73695ba697abbd72110859b8ea4fe43fb9da92087f05d7e5771b1f72ed94baf4",
+            "durationSeconds": 484.55
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v416-pass-b-audio-verification/craig-millican-does-god-exist-2011/transcripts/con-finetuning-reply.transcript.json",
+            "sha256": "b3d4b7ca0703282f611d7a2e5c3490b755b99260e0dfdfac903794e2e8ac4ee3",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 484.55,
+            "segmentCount": 91
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Peter Millican",
+            "fullClipExcerptRecall": 0.9473684210526315,
+            "expectedSpeakerExcerptRecall": 0.9473684210526315,
+            "highestOtherSpeaker": "William Lane Craig",
+            "highestOtherSpeakerExcerptRecall": 0.10526315789473684,
+            "expectedSpeakerRecallMargin": 0.8421052631578947,
+            "expectedSpeakerDurationSeconds": 381.25,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Peter Millican",
+                "segmentCount": 83,
+                "durationSeconds": 381.25,
+                "wordCount": 1113,
+                "excerptRecall": 0.9473684210526315
+              },
+              {
+                "speaker": "William Lane Craig",
+                "segmentCount": 7,
+                "durationSeconds": 16.8,
+                "wordCount": 57,
+                "excerptRecall": 0.10526315789473684
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 1,
+                "durationSeconds": 1.75,
+                "wordCount": 5,
+                "excerptRecall": 0
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "debates": 3,
+    "moves": 8,
+    "verified": 8,
+    "unresolved": 0,
+    "verificationRate": 1
+  },
+  "transcription": {
+    "model": "gpt-4o-transcribe-diarize",
+    "paidCalls": 8,
+    "retries": 0,
+    "estimatedTranscribedMinutes": 20.6485,
+    "estimatedRateUsdPerMinute": 0.006,
+    "estimatedCostUsd": 0.12389099999999999,
+    "maximumAuthorizedCostUsd": 0.15,
+    "exactBilledCostAvailable": false,
+    "stayedWithinAuthorizedCostCap": true
+  },
+  "authorization": {
+    "disagreementExtraction": true,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  }
+}
