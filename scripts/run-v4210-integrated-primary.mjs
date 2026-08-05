@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+import { createHash } from "node:crypto";
+import { spawn } from "node:child_process";
+import { access, copyFile, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import os from "node:os";
+import path from "node:path";
+import { classifyTransportEventCount, extractTransportEvents } from "./lib/v385-transport.mjs";
+import { assertV4 } from "./lib/v41-lean-production.mjs";
+import { compileV426PrimaryOutput } from "./lib/v426-retired-completion.mjs";
+
+const ROOT = "docs/calibration/v4.2.10/integrated-long-context-primary";
+const manifest = JSON.parse(await readFile(`${ROOT}/execution-manifest.json`, "utf8")), codex = "/Applications/ChatGPT.app/Contents/Resources/codex", auth = path.join(os.homedir(), ".codex", "auth.json"), sha256 = (value) => createHash("sha256").update(value).digest("hex");
+assertV4(manifest.status === "frozen-one-integrated-long-context-primary-authorized" && manifest.authorization.integratedPrimaryExecution, "v4.2.10 unauthorized");
+for (const [file, digest] of Object.entries(manifest.sourceHashes)) assertV4(sha256(await readFile(file)) === digest, `source hash mismatch: ${file}`);
+for (const file of manifest.futureOutputPathsExcludedFromSourceHashes) await access(file).then(() => { throw new Error(`${file} already exists`); }, () => true);
+await access(codex); await access(auth);
+function run(command, args, options, timeoutMs) { return new Promise((resolve) => { const child = spawn(command, args, { ...options, stdio: ["ignore", "pipe", "pipe"] }); let stdout = "", stderr = "", timedOut = false, force = null; child.stdout.on("data", (chunk) => { stdout += chunk; }); child.stderr.on("data", (chunk) => { stderr += chunk; }); const timer = setTimeout(() => { timedOut = true; child.kill("SIGTERM"); force = setTimeout(() => child.kill("SIGKILL"), 5000); }, timeoutMs); child.on("close", (code, signal) => { clearTimeout(timer); if (force) clearTimeout(force); resolve({ code, signal, stdout, stderr, timedOut }); }); }); }
+const temporary = await mkdtemp(path.join(os.tmpdir(), "slugfester-v4210-")), home = await mkdtemp(path.join(os.tmpdir(), "slugfester-v4210-home-")), startedAt = new Date().toISOString(), started = Date.now(); let record;
+try {
+  const names = { rubricBase: "rubric-base.md", rubricDerivedScores: "rubric-derived.md", rubricBounded: "rubric-bounded.md", manual: "manual.md", schema: "schema.json", packet: "packet.json", candidateBundle: "candidate-bundle.json", candidateContextLedger: "candidate-context-ledger.jsonl" };
+  for (const [key, source] of Object.entries(manifest.inputs)) await copyFile(source, path.join(temporary, names[key]));
+  await copyFile(auth, path.join(home, "auth.json")); const env = { ...process.env, CODEX_HOME: home }; delete env.OPENAI_API_KEY; delete env.OPENAI_ORG_ID; delete env.CODEX_API_KEY;
+  const prompt = "Read rubric-base.md, rubric-derived.md, rubric-bounded.md, manual.md, packet.json, candidate-bundle.json, candidate-context-ledger.jsonl, and schema.json; read nothing else. Act only as the v4.2.10 integrated primary judge for Debate 99. Select and judge the minimum complete candidate-grounded inventory, deduplicate overlap material, order all moves canonically, and verify every cross-field rule. Do not emit calculated scores, totals, a winner, or publication prose. Return exactly one v4.2.6 schema-conforming JSON object.";
+  process.stdout.write("[v4.2.10-integrated] starting 5.6 Sol/low Debate 99\n");
+  const invocation = await run(codex, ["exec", "--ephemeral", "--skip-git-repo-check", "--ignore-user-config", "--ignore-rules", "--model", manifest.model.slug, "-c", `model_reasoning_effort="${manifest.model.reasoningEffort}"`, "--disable", "plugins", "--disable", "remote_plugin", "--disable", "skill_search", "--disable", "apps", "--disable", "memories", "--disable", "multi_agent", "--disable", "browser_use", "--disable", "computer_use", "--disable", "workspace_dependencies", "--sandbox", "read-only", "--output-schema", "schema.json", "--output-last-message", "result.json", prompt], { cwd: temporary, env }, manifest.executionPolicy.timeoutMs);
+  const events = extractTransportEvents(invocation.stderr), transportClassification = classifyTransportEventCount(events.length, 2, 8), resultExists = await access(path.join(temporary, "result.json")).then(() => true, () => false);
+  const base = { debateNumber: "99", model: manifest.model.label, reasoningEffort: manifest.model.reasoningEffort, startedAt, completedAt: new Date().toISOString(), elapsedMs: Date.now() - started, attemptCount: 1, retryCount: 0, recoverableStreamEvents: events.length, transportClassification, timedOut: invocation.timedOut, commandExitCode: invocation.code, terminationSignal: invocation.signal, authentication: "ChatGPT subscription", apiKeysRemoved: true, meteredApiCostUsd: 0, transcriptionCostUsd: 0, stdoutSha256: sha256(invocation.stdout), stderrSha256: sha256(invocation.stderr) };
+  if (invocation.timedOut || invocation.code !== 0 || invocation.signal !== null || !resultExists) record = { ...base, status: invocation.timedOut ? "timed-out" : !resultExists ? "result-missing" : "transport-failed", accepted: false, rawOutputWritten: false };
+  else {
+    await copyFile(path.join(temporary, "result.json"), manifest.output);
+    const validation = await run(process.execPath, ["scripts/validate-v426-primary-output.mjs", manifest.output, manifest.inputs.packet], { cwd: process.cwd(), env: process.env }, 120000), valid = validation.code === 0 && transportClassification !== "invalid";
+    if (valid) { const [output, packet, eventBytes] = await Promise.all([readFile(manifest.output, "utf8").then(JSON.parse), readFile(manifest.inputs.packet, "utf8").then(JSON.parse), readFile(manifest.source.originalEvents)]); await writeFile(manifest.compiledOutput, `${JSON.stringify(compileV426PrimaryOutput(output, packet, JSON.parse(eventBytes)), null, 2)}\n`); }
+    record = { ...base, status: valid ? "completed-valid" : validation.code === 0 ? "transport-event-limit-exceeded" : "output-validation-failed", accepted: valid, rawOutputWritten: true, rawOutputSha256: sha256(await readFile(manifest.output)), compiledOutputWritten: valid, compiledOutputSha256: valid ? sha256(await readFile(manifest.compiledOutput)) : null, validationSummary: validation.code === 0 ? JSON.parse(validation.stdout) : null, validationMessage: validation.code === 0 ? null : `${validation.stdout}\n${validation.stderr}`.trim().slice(-6000) };
+  }
+} finally { await rm(temporary, { recursive: true, force: true }); await rm(home, { recursive: true, force: true }); }
+const execution = { schemaVersion: "4.2.10-integrated-primary-model-execution", protocolId: manifest.protocolId, status: record.accepted ? "integrated-primary-execution-passed" : "integrated-primary-execution-failed", attempts: 1, retries: 0, result: record, meteredApiCostUsd: 0, transcriptionCostUsd: 0, authorization: { analysis: true, retry: false, scoreDerivation: false } };
+await writeFile(manifest.artifacts.execution, `${JSON.stringify(execution, null, 2)}\n`);
+console.log(JSON.stringify({ status: execution.status, elapsedMinutes: Number((record.elapsedMs / 60000).toFixed(2)), accepted: record.accepted, attempts: 1, retries: 0, meteredApiCostUsd: 0 }, null, 2));

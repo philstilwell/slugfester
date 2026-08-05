@@ -1,0 +1,7 @@
+# Slugfester Integrated Long-Context Primary v4.2.10
+
+This retired diagnostic integrates Debate 99 after complete score-blind source discovery passed across three overlapping partitions. The isolated Sol/low primary receives the original blind packet, all 36 validated candidate proposals with qualified IDs, and a repository-built sparse source ledger containing every candidate span plus twelve surrounding events on each side. It also receives the complete rating rubrics, conservative excerpt contract, and unchanged v4.2.6 output schema.
+
+The integrated judge selects the minimum 8–24 load-bearing moves, removes overlap duplicates, defines four to six routes/sections and locked weights, links only earlier selected responses, and makes the raw rubric judgments. The model does not receive the full original ledger in this stage; complete transcript coverage was supplied collectively by the three score-blind proposers. This distributed coverage limitation must remain visible in the analysis and any later production recommendation.
+
+The output receives one attempt and no retry. Repository code validates every selected span against the complete original events and compact ledger, replays the compiler, and rejects any score, total, winner, legacy material, or publication prose. A pass completes the sixth retired primary and permits a correction-adjusted runtime analysis. It does not itself authorize Pass B, scoring, a fresh gate, production mutation, or the 195-debate run.

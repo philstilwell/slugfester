@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "4.2.10-integrated-primary-preparation",
+  "protocolId": "v4.2.10-integrated-long-context-primary",
+  "status": "prepared-one-integrated-long-context-primary",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "debateNumber": "99",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "source": {
+    "compilerAnalysis": "docs/calibration/v4.2.9.3/partition-compiler-recovery/analysis.json",
+    "compilerOutputs": [
+      "docs/calibration/v4.2.9.3/partition-compiler-recovery/proposals/chunk-1-derived.json",
+      "docs/calibration/v4.2.9.3/partition-compiler-recovery/proposals/chunk-2a-derived.json",
+      "docs/calibration/v4.2.9.3/partition-compiler-recovery/proposals/chunk-2b-derived.json"
+    ],
+    "fullLedger": ".assessment-cache/compact-ledgers/v4.2.4/debate-99.jsonl",
+    "originalEvents": ".assessment-cache/captions/UWCvKiWjV0g/events.json"
+  },
+  "inputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.2.10/integrated-long-context-primary/manual.md",
+    "schema": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/schema.json",
+    "packet": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-99.json",
+    "candidateBundle": "docs/calibration/v4.2.10/integrated-long-context-primary/candidate-bundle.json",
+    "candidateContextLedger": "docs/calibration/v4.2.10/integrated-long-context-primary/candidate-context-ledger.jsonl"
+  },
+  "sparseContext": {
+    "originalEvents": 3397,
+    "deliveredEvents": 1302,
+    "deliveredFraction": 0.3833,
+    "contiguousRanges": [
+      {
+        "startEvent": 294,
+        "endEvent": 331
+      },
+      {
+        "startEvent": 381,
+        "endEvent": 496
+      },
+      {
+        "startEvent": 500,
+        "endEvent": 641
+      },
+      {
+        "startEvent": 697,
+        "endEvent": 740
+      },
+      {
+        "startEvent": 775,
+        "endEvent": 824
+      },
+      {
+        "startEvent": 875,
+        "endEvent": 997
+      },
+      {
+        "startEvent": 1091,
+        "endEvent": 1128
+      },
+      {
+        "startEvent": 1174,
+        "endEvent": 1224
+      },
+      {
+        "startEvent": 1689,
+        "endEvent": 1734
+      },
+      {
+        "startEvent": 1754,
+        "endEvent": 1854
+      },
+      {
+        "startEvent": 1859,
+        "endEvent": 1906
+      },
+      {
+        "startEvent": 2023,
+        "endEvent": 2056
+      },
+      {
+        "startEvent": 2158,
+        "endEvent": 2222
+      },
+      {
+        "startEvent": 2482,
+        "endEvent": 2549
+      },
+      {
+        "startEvent": 2617,
+        "endEvent": 2649
+      },
+      {
+        "startEvent": 2728,
+        "endEvent": 2793
+      },
+      {
+        "startEvent": 2860,
+        "endEvent": 2906
+      },
+      {
+        "startEvent": 3039,
+        "endEvent": 3105
+      },
+      {
+        "startEvent": 3119,
+        "endEvent": 3162
+      },
+      {
+        "startEvent": 3195,
+        "endEvent": 3275
+      }
+    ],
+    "allCandidateSpansIncluded": true,
+    "sparseLedgerSha256": "40a35ac19d6701b4bbef8c6b3f44af1efd0ca22ecb09e0647bad5dc63b20ec62"
+  },
+  "output": "docs/calibration/v4.2.10/integrated-long-context-primary/primary-output.json",
+  "compiledOutput": "docs/calibration/v4.2.10/integrated-long-context-primary/primary-compiled.json",
+  "policy": {
+    "oneAttempt": true,
+    "retries": 0,
+    "timeoutMs": 1200000,
+    "scoreDerivationAuthorized": false,
+    "distributedTranscriptCoverage": true,
+    "fullLedgerDeliveredToIntegratedJudge": false
+  },
+  "totals": {
+    "candidates": 36,
+    "copiedInputBytes": 182628,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "executionManifest": false,
+    "integratedPrimaryExecution": false,
+    "validation": true,
+    "scoring": false,
+    "productionMutation": false
+  }
+}
