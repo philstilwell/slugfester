@@ -1,0 +1,356 @@
+{
+  "schemaVersion": "4.1.6-pass-b-audio-verification",
+  "protocolId": "v4.1.6-triggered-pass-b-consensus",
+  "status": "frozen-eight-move-known-speaker-diarization-plan",
+  "frozenAt": "2026-08-05T07:32:37Z",
+  "checkpointCommit": "374a756f29c00f23340ae86d07917ab8e891dbff",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "trigger": "speaker attribution confidence was medium or low in the valid v4.1.6 Pass B artifact",
+  "model": {
+    "id": "gpt-4o-transcribe-diarize",
+    "responseFormat": "diarized_json",
+    "chunkingStrategy": "auto",
+    "language": "en",
+    "prompt": null
+  },
+  "verificationPolicy": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5,
+    "targetClipBoundaryPaddingSecondsPerSide": 3,
+    "knownSpeakerReferenceDurationSeconds": 8,
+    "completeTargetSpanRequired": true,
+    "fullClipTextMatchAloneInsufficient": true,
+    "expectedSpeakerSegmentMatchRequired": true,
+    "manualOverrideAuthorized": false
+  },
+  "executionPolicy": {
+    "paidCalls": 8,
+    "attemptsPerMove": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "stopOnFirstFailure": true,
+    "helperPath": "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py",
+    "authentication": "OpenAI transcription API",
+    "sourceAudioAlreadyLocal": true
+  },
+  "cost": {
+    "approved": true,
+    "estimatedMinutes": 20.6485,
+    "estimatedRateUsdPerMinute": 0.006,
+    "estimatedCostUsd": 0.12389099999999999,
+    "maximumAuthorizedCostUsd": 0.15,
+    "exactBilledCostAvailable": false
+  },
+  "debates": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "packetPath": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/packets/debate-55.json",
+      "sourceAudio": "output/transcribe/v388-performance-audio-verification/craig-malpass-kalam-nothing-2026/audio/source.mp3",
+      "sourceAudioSha256": "46486cf86c24b069c128cae8e68360ed0b49425929f3711951414c5b6d924311",
+      "references": [
+        {
+          "speaker": "William Lane Craig",
+          "localPath": "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/references/william-lane-craig.mp3",
+          "sha256": "adb1f1a7de2002e11da560962a5ce24b4f6e8c367a0df8609435774fa780b005",
+          "durationSeconds": 8,
+          "provenance": {
+            "verifiedClip": "output/transcribe/v388-reconstruction-quote-verification/craig-malpass-kalam-nothing-2026/clips/craig-candidate-03.mp3",
+            "verifiedClipSha256": "1a3328a31723087a637e73671d5cbb0bf2e195cfc676aea4e78a729b6fc7f657",
+            "offsetSeconds": 10
+          }
+        },
+        {
+          "speaker": "Alex Malpass",
+          "localPath": "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/references/alex-malpass.mp3",
+          "sha256": "408d747568d5efde2c4017e868e82fad3c1964f2be3325bd6cbe534b3c3819d4",
+          "durationSeconds": 8,
+          "provenance": {
+            "verifiedClip": "output/transcribe/v388-performance-audio-verification/craig-malpass-kalam-nothing-2026/clips/move-12.mp3",
+            "verifiedClipSha256": "b0b1824d1b88068e8382804569952d2ee7f250f44660798f55c26168978b8c37",
+            "offsetSeconds": 10
+          }
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-actual-infinite-absurdity",
+          "expectedSpeaker": "William Lane Craig",
+          "sourceSpan": {
+            "startEvent": 874,
+            "endEvent": 908,
+            "startMs": 1948400,
+            "endMs": 2036680,
+            "excerpt": "If you could have an actual infinite number of things, it would result in all sorts of situations that I think are metaphysically impossible. Granted, there is no strict logical contradiction... the claim is that this is metaphysically impossible... Benardete imagines a book... For there is no last page."
+          },
+          "verificationExcerpt": "If you could have an actual infinite number of things, it would result in all sorts of situations that I think are metaphysically impossible. Granted, there is no strict logical contradiction... the claim is that this is metaphysically impossible... Benardete imagines a book... For there is no last page.",
+          "boundaryPaddingSecondsPerSide": 3,
+          "clipStartMs": 1945400,
+          "clipEndMs": 2039680,
+          "plannedDurationSeconds": 94.28,
+          "measuredDurationSeconds": 94.28,
+          "clipPath": "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/clips/pro-actual-infinite-absurdity.mp3",
+          "clipSha256": "79499dba38f2e5f7f9a99c170d75b3e2464b9e53f2a3e43b3e0864e1fdb6386c",
+          "transcriptPath": "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/transcripts/pro-actual-infinite-absurdity.transcript.json"
+        },
+        {
+          "moveId": "con-strange-not-impossible",
+          "expectedSpeaker": "Alex Malpass",
+          "sourceSpan": {
+            "startEvent": 946,
+            "endEvent": 1015,
+            "startMs": 2128640,
+            "endMs": 2275040,
+            "excerpt": "I'm not persuaded by these examples... Hilbert's Hotel is strange... merely by shuffling guests around, the hotel can accommodate any number of new guests... it's not quite clear to me that that's enough to say that it couldn't exist... the strange and the impossible are not the same... if there was an infinite hotel, that's what it would be like."
+          },
+          "verificationExcerpt": "I'm not persuaded by these examples... Hilbert's Hotel is strange... merely by shuffling guests around, the hotel can accommodate any number of new guests... it's not quite clear to me that that's enough to say that it couldn't exist... the strange and the impossible are not the same... if there was an infinite hotel, that's what it would be like.",
+          "boundaryPaddingSecondsPerSide": 3,
+          "clipStartMs": 2125640,
+          "clipEndMs": 2278040,
+          "plannedDurationSeconds": 152.4,
+          "measuredDurationSeconds": 152.4,
+          "clipPath": "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/clips/con-strange-not-impossible.mp3",
+          "clipSha256": "ba16b1496c049a723de672fb13fc93d1f35169c2bd710786ba8c42dedf3d0c61",
+          "transcriptPath": "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/transcripts/con-strange-not-impossible.transcript.json"
+        },
+        {
+          "moveId": "con-impersonal-indeterminism",
+          "expectedSpeaker": "Alex Malpass",
+          "sourceSpan": {
+            "startEvent": 2290,
+            "endEvent": 2344,
+            "startMs": 4952240,
+            "endMs": 5066680,
+            "excerpt": "If it's impersonal, then there's some kind of mechanism... if the necessary and sufficient conditions... were present already for eternity... Why not think that it would have done it... infinite time ago?... But I wonder why can't we just describe it in terms of a kind of indeterministic causation?... It just happened to snap at that point and that's the beginning of time. Why does it have to be personal?"
+          },
+          "verificationExcerpt": "If it's impersonal, then there's some kind of mechanism... if the necessary and sufficient conditions... were present already for eternity... Why not think that it would have done it... infinite time ago?... But I wonder why can't we just describe it in terms of a kind of indeterministic causation?... It just happened to snap at that point and that's the beginning of time. Why does it have to be personal?",
+          "boundaryPaddingSecondsPerSide": 3,
+          "clipStartMs": 4949240,
+          "clipEndMs": 5069680,
+          "plannedDurationSeconds": 120.44,
+          "measuredDurationSeconds": 120.44,
+          "clipPath": "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/clips/con-impersonal-indeterminism.mp3",
+          "clipSha256": "f60b563a95ea64c53f578cb50cb101889a794c6e8a512d0d7360f497e3c706f9",
+          "transcriptPath": "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/transcripts/con-impersonal-indeterminism.transcript.json"
+        }
+      ]
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "packetPath": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/packets/debate-103.json",
+      "sourceAudio": "output/transcribe/v388-performance-audio-verification/woodford-edwards-rational-belief-god-2023/audio/source.mp3",
+      "sourceAudioSha256": "0a067cd52c4410c80e1fc9f25b18a1dcd95229323b45be38dc80bdd38f01a0c9",
+      "references": [
+        {
+          "speaker": "Stephen Woodford",
+          "localPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/references/stephen-woodford.mp3",
+          "sha256": "49315345ff8f072b1164c1b7e495d8e710670fe947b3793d832dd501f86f8be3",
+          "durationSeconds": 8,
+          "provenance": {
+            "verifiedClip": "output/transcribe/v388-performance-audio-verification/woodford-edwards-rational-belief-god-2023/clips/move-11.mp3",
+            "verifiedClipSha256": "f6d4c85fbf610f4a4fae55c68a0eb1ed07a8beb0e1b93208b60533368c4043a9",
+            "offsetSeconds": 15
+          }
+        },
+        {
+          "speaker": "Simon Edwards",
+          "localPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/references/simon-edwards.mp3",
+          "sha256": "0595858473d8390603e110dd1e813b4ded82234490d6d38d7999c84f1662e76f",
+          "durationSeconds": 8,
+          "provenance": {
+            "verifiedClip": "output/transcribe/v388-performance-audio-verification/woodford-edwards-rational-belief-god-2023/clips/move-13.mp3",
+            "verifiedClipSha256": "dc17734d132b7ba9b1174261b3d2253fe5ae7d3acbe06685b4e79056d82edf31",
+            "offsetSeconds": 15
+          }
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-reason-reply",
+          "expectedSpeaker": "Stephen Woodford",
+          "sourceSpan": {
+            "startEvent": 503,
+            "endEvent": 568,
+            "startMs": 1139120,
+            "endMs": 1296960,
+            "excerpt": "that's not an argument in favor of theism ... most atheists don't actually affirm naturalism ... evolution ... is going to select the things that are broadly true"
+          },
+          "verificationExcerpt": "that's not an argument in favor of theism ... most atheists don't actually affirm naturalism ... evolution ... is going to select the things that are broadly true",
+          "boundaryPaddingSecondsPerSide": 3,
+          "clipStartMs": 1136120,
+          "clipEndMs": 1299960,
+          "plannedDurationSeconds": 163.84,
+          "measuredDurationSeconds": 163.84,
+          "clipPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/clips/pro-reason-reply.mp3",
+          "clipSha256": "3c2d464744ce9e554c7d2840975b1320c011c5c7adfe8ff12628e4527b90dd99",
+          "transcriptPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/transcripts/pro-reason-reply.transcript.json"
+        },
+        {
+          "moveId": "pro-moral-evolution",
+          "expectedSpeaker": "Stephen Woodford",
+          "sourceSpan": {
+            "startEvent": 893,
+            "endEvent": 930,
+            "startMs": 2040840,
+            "endMs": 2124760,
+            "excerpt": "under a theist or an atheistic view evolution provides a very simple explanation for the moral feelings that we have ... explains why there's so much moral disagreement"
+          },
+          "verificationExcerpt": "under a theist or an atheistic view evolution provides a very simple explanation for the moral feelings that we have ... explains why there's so much moral disagreement",
+          "boundaryPaddingSecondsPerSide": 3,
+          "clipStartMs": 2037840,
+          "clipEndMs": 2127760,
+          "plannedDurationSeconds": 89.92,
+          "measuredDurationSeconds": 89.92,
+          "clipPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/clips/pro-moral-evolution.mp3",
+          "clipSha256": "923a5ac18c40227672fcc1c58dd6c164942269d77879b6a875e1b744f02413ec",
+          "transcriptPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/transcripts/pro-moral-evolution.transcript.json"
+        },
+        {
+          "moveId": "con-euthyphro-answer",
+          "expectedSpeaker": "Simon Edwards",
+          "sourceSpan": {
+            "startEvent": 1080,
+            "endEvent": 1113,
+            "startMs": 2463200,
+            "endMs": 2540200,
+            "excerpt": "the answer to the Euthyphro dilemma ... God commands what he does not because it is good but because he is the good ... ultimately sourced in the person of God"
+          },
+          "verificationExcerpt": "the answer to the Euthyphro dilemma ... God commands what he does not because it is good but because he is the good ... ultimately sourced in the person of God",
+          "boundaryPaddingSecondsPerSide": 3,
+          "clipStartMs": 2460200,
+          "clipEndMs": 2543200,
+          "plannedDurationSeconds": 83,
+          "measuredDurationSeconds": 83,
+          "clipPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/clips/con-euthyphro-answer.mp3",
+          "clipSha256": "6c6194331a229d364324ba6cb17a3aaafaa1b11a51f91ed624c4f2f284a571d2",
+          "transcriptPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/transcripts/con-euthyphro-answer.transcript.json"
+        },
+        {
+          "moveId": "pro-euthyphro-rejoinder",
+          "expectedSpeaker": "Stephen Woodford",
+          "sourceSpan": {
+            "startEvent": 1114,
+            "endEvent": 1130,
+            "startMs": 2537680,
+            "endMs": 2582160,
+            "excerpt": "it's just kicking the can down the road ... is God good because what he aligns with is some goodness ... or is he good because he defines what good is"
+          },
+          "verificationExcerpt": "it's just kicking the can down the road ... is God good because what he aligns with is some goodness ... or is he good because he defines what good is",
+          "boundaryPaddingSecondsPerSide": 3,
+          "clipStartMs": 2534680,
+          "clipEndMs": 2585160,
+          "plannedDurationSeconds": 50.48,
+          "measuredDurationSeconds": 50.48,
+          "clipPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/clips/pro-euthyphro-rejoinder.mp3",
+          "clipSha256": "25491eca843e76ccab698b0bc903265179148302cf7f8a6e20fdb10399f30f0f",
+          "transcriptPath": "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/transcripts/pro-euthyphro-rejoinder.transcript.json"
+        }
+      ]
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "packetPath": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/packets/debate-161.json",
+      "sourceAudio": "output/transcribe/v388-performance-audio-verification/craig-millican-does-god-exist-2011/audio/source.mp3",
+      "sourceAudioSha256": "d703c6b47b2c427450280c778dc6ba7151c711e9e0a8a71d59afaadabd80b349",
+      "references": [
+        {
+          "speaker": "William Lane Craig",
+          "localPath": "output/transcribe/v416-pass-b-audio-verification/craig-millican-does-god-exist-2011/references/william-lane-craig.mp3",
+          "sha256": "75e82285ea80bf7e246d372851e099bbe3d7110cbf54577bf1c179d7487f84a8",
+          "durationSeconds": 8,
+          "provenance": {
+            "verifiedClip": "output/transcribe/v388-performance-audio-verification/craig-millican-does-god-exist-2011/clips/move-21.mp3",
+            "verifiedClipSha256": "574f545fd02b33fb8bc5d95e3f88de54f3788ab8b85c45cbfaba99918c1a1e22",
+            "offsetSeconds": 15
+          }
+        },
+        {
+          "speaker": "Peter Millican",
+          "localPath": "output/transcribe/v416-pass-b-audio-verification/craig-millican-does-god-exist-2011/references/peter-millican.mp3",
+          "sha256": "8dfafd6e72aac2c81ae22e84bcf809fc7c2e7457ae129411bc41f82be24ba280",
+          "durationSeconds": 8,
+          "provenance": {
+            "verifiedClip": "output/transcribe/v388-performance-audio-verification/craig-millican-does-god-exist-2011/clips/move-17.mp3",
+            "verifiedClipSha256": "da53b827876bc0828c2c68d962733527d0483a20d6279f7b5f7b5899e86e4866",
+            "offsetSeconds": 15
+          }
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "con-finetuning-reply",
+          "expectedSpeaker": "Peter Millican",
+          "sourceSpan": {
+            "startEvent": 1359,
+            "endEvent": 1545,
+            "startMs": 3695080,
+            "endMs": 4173630,
+            "excerpt": "a physically inexplicable coincidence would invite a cosmic designer, but I also see good reason for caution and modesty"
+          },
+          "verificationExcerpt": "a physically inexplicable coincidence would invite a cosmic designer, but I also see good reason for caution and modesty",
+          "boundaryPaddingSecondsPerSide": 3,
+          "clipStartMs": 3692080,
+          "clipEndMs": 4176630,
+          "plannedDurationSeconds": 484.55,
+          "measuredDurationSeconds": 484.55,
+          "clipPath": "output/transcribe/v416-pass-b-audio-verification/craig-millican-does-god-exist-2011/clips/con-finetuning-reply.mp3",
+          "clipSha256": "73695ba697abbd72110859b8ea4fe43fb9da92087f05d7e5771b1f72ed94baf4",
+          "transcriptPath": "output/transcribe/v416-pass-b-audio-verification/craig-millican-does-god-exist-2011/transcripts/con-finetuning-reply.transcript.json"
+        }
+      ]
+    }
+  ],
+  "outputs": {
+    "execution": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/audio-model-execution.json",
+    "audit": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/audio-verification.json",
+    "postAudioAnalysis": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/post-audio-analysis.json"
+  },
+  "sourceHashes": {
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/analysis.json": "95bf00ed750f1c8bb297c473cd67dd8dda4571830a2813d59502e42bebcc1d0c",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/model-execution.json": "289f5dd65ab32d7971b9972b416c1347e80efd3bdfcf6b655fc8add237ab415f",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/audio-verification.json": "4b4027c2593cc40a654bac23b1f5543ea00a587d2869be0356688216676c66aa",
+    "docs/calibration/v3.8.8/reconstruction/quote-verification.json": "3002a61c2abe40c1ee8ab966d47cc591c21396ee8cd959bb13e5a07582e842b7",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "scripts/preregister-v416-audio-verification.mjs": "b969831bf92aebc34bf7ad48cbc83c3e99cc80c3bbf11cd77cc58e4a8cc25cc4",
+    "scripts/run-v416-audio-verification.mjs": "1055c90de1d180ef39a2c8e3934f8d093a0f1cd9238c308c26933f54ac08afec",
+    "scripts/analyze-v416-audio-verification.mjs": "480c15c412e5f20d462f1f5e3a34a6613267415d6d4fe9c76655d0f15351ec73",
+    "scripts/test-v416-audio-verification.mjs": "c820e9e35f649ee85362977932118dbfd6da2b98037a4d866e8c6c38b14e95ff",
+    "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py": "d623b1fed1491b7ca4b7b5b393089165e3581a83d90d5a57868241f1b2a5d951",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/packets/debate-55.json": "9a646e1ccf20676b8b49da206770047eb9b8ebc072d59bda54e49c31e999af1e",
+    "output/transcribe/v388-performance-audio-verification/craig-malpass-kalam-nothing-2026/audio/source.mp3": "46486cf86c24b069c128cae8e68360ed0b49425929f3711951414c5b6d924311",
+    "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/references/william-lane-craig.mp3": "adb1f1a7de2002e11da560962a5ce24b4f6e8c367a0df8609435774fa780b005",
+    "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/references/alex-malpass.mp3": "408d747568d5efde2c4017e868e82fad3c1964f2be3325bd6cbe534b3c3819d4",
+    "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/clips/pro-actual-infinite-absurdity.mp3": "79499dba38f2e5f7f9a99c170d75b3e2464b9e53f2a3e43b3e0864e1fdb6386c",
+    "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/clips/con-strange-not-impossible.mp3": "ba16b1496c049a723de672fb13fc93d1f35169c2bd710786ba8c42dedf3d0c61",
+    "output/transcribe/v416-pass-b-audio-verification/craig-malpass-kalam-nothing-2026/clips/con-impersonal-indeterminism.mp3": "f60b563a95ea64c53f578cb50cb101889a794c6e8a512d0d7360f497e3c706f9",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/packets/debate-103.json": "dab0e2515ef4dc714bc4d66d155239259c98ea74ef8b6f4539cd3558c83be98c",
+    "output/transcribe/v388-performance-audio-verification/woodford-edwards-rational-belief-god-2023/audio/source.mp3": "0a067cd52c4410c80e1fc9f25b18a1dcd95229323b45be38dc80bdd38f01a0c9",
+    "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/references/stephen-woodford.mp3": "49315345ff8f072b1164c1b7e495d8e710670fe947b3793d832dd501f86f8be3",
+    "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/references/simon-edwards.mp3": "0595858473d8390603e110dd1e813b4ded82234490d6d38d7999c84f1662e76f",
+    "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/clips/pro-reason-reply.mp3": "3c2d464744ce9e554c7d2840975b1320c011c5c7adfe8ff12628e4527b90dd99",
+    "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/clips/pro-moral-evolution.mp3": "923a5ac18c40227672fcc1c58dd6c164942269d77879b6a875e1b744f02413ec",
+    "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/clips/con-euthyphro-answer.mp3": "6c6194331a229d364324ba6cb17a3aaafaa1b11a51f91ed624c4f2f284a571d2",
+    "output/transcribe/v416-pass-b-audio-verification/woodford-edwards-rational-belief-god-2023/clips/pro-euthyphro-rejoinder.mp3": "25491eca843e76ccab698b0bc903265179148302cf7f8a6e20fdb10399f30f0f",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/packets/debate-161.json": "4a130b2e55aa1ec9a592fe47e78c255c003615cc6fc1a9f89f1c089e3dd5c566",
+    "output/transcribe/v388-performance-audio-verification/craig-millican-does-god-exist-2011/audio/source.mp3": "d703c6b47b2c427450280c778dc6ba7151c711e9e0a8a71d59afaadabd80b349",
+    "output/transcribe/v416-pass-b-audio-verification/craig-millican-does-god-exist-2011/references/william-lane-craig.mp3": "75e82285ea80bf7e246d372851e099bbe3d7110cbf54577bf1c179d7487f84a8",
+    "output/transcribe/v416-pass-b-audio-verification/craig-millican-does-god-exist-2011/references/peter-millican.mp3": "8dfafd6e72aac2c81ae22e84bcf809fc7c2e7457ae129411bc41f82be24ba280",
+    "output/transcribe/v416-pass-b-audio-verification/craig-millican-does-god-exist-2011/clips/con-finetuning-reply.mp3": "73695ba697abbd72110859b8ea4fe43fb9da92087f05d7e5771b1f72ed94baf4"
+  },
+  "authorization": {
+    "paidDiarization": true,
+    "deterministicAudioAnalysis": true,
+    "disagreementExtraction": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  }
+}
