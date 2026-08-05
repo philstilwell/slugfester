@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "4.1.6-dispute-only-adjudication-execution-manifest",
+  "protocolId": "v4.1.6-triggered-pass-b-consensus",
+  "stage": "three-isolated-candidate-bound-adjudications",
+  "status": "frozen-three-context-adjudication-authorized",
+  "frozenAt": "2026-08-05T08:13:03Z",
+  "checkpointCommit": "bac165821ab16fd8345a99844267a5cf9ac27ff2",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "inputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/manual.md",
+    "schema": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/adjudication.schema.json"
+  },
+  "population": {
+    "contexts": 3,
+    "disputedMoves": 34,
+    "responsePairChoices": 14,
+    "charityPairChoices": 3,
+    "independentScoringFieldChoices": 131,
+    "burdenAdjustmentChoices": 6,
+    "audioVerifiedDisputedMoves": 8
+  },
+  "contexts": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "disputedMoves": 10,
+      "responsePairChoices": 5,
+      "charityPairChoices": 1,
+      "scoringFieldChoices": 21,
+      "burdenAdjustmentChoices": 2,
+      "audioVerifiedDisputedMoves": 3,
+      "packet": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/packets/debate-55.json",
+      "schema": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/adjudication.schema.json",
+      "output": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/outputs/debate-55.json"
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "disputedMoves": 14,
+      "responsePairChoices": 6,
+      "charityPairChoices": 0,
+      "scoringFieldChoices": 73,
+      "burdenAdjustmentChoices": 2,
+      "audioVerifiedDisputedMoves": 4,
+      "packet": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/packets/debate-103.json",
+      "schema": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/adjudication.schema.json",
+      "output": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/outputs/debate-103.json"
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "disputedMoves": 10,
+      "responsePairChoices": 3,
+      "charityPairChoices": 2,
+      "scoringFieldChoices": 37,
+      "burdenAdjustmentChoices": 2,
+      "audioVerifiedDisputedMoves": 1,
+      "packet": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/packets/debate-161.json",
+      "schema": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/adjudication.schema.json",
+      "output": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/outputs/debate-161.json"
+    }
+  ],
+  "isolation": {
+    "freshTemporaryCodexHomePerContext": true,
+    "freshSourceDirectoryPerContext": true,
+    "oneDebatePerContext": true,
+    "candidateOrderingAnonymous": true,
+    "passIdentitiesUnavailable": true,
+    "initialRationalesUnavailable": true,
+    "fullInitialOutputsUnavailable": true,
+    "nondisputedFieldsUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "calculatedScoresUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 3,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "failFastAfterFirstInvalidContext": true,
+    "perInvocationTimeoutMs": 1800000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionApiCalls": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "recoverableStreamEventsNormalMaximum": 2,
+    "recoverableStreamEventsHardMaximum": 8
+  },
+  "acceptanceRule": {
+    "validContextsRequired": 3,
+    "disputedMovesDecidedExactlyOnce": 34,
+    "responsePairsIndivisible": true,
+    "charityPairsIndivisible": true,
+    "relevanceBurdenContactsIndivisible": true,
+    "candidateValuesOnly": true,
+    "missingChoicesMaximum": 0,
+    "thirdValuesMaximum": 0,
+    "nondisputedFieldMutationsMaximum": 0,
+    "modelCalculatedScoresMaximum": 0,
+    "publicationProseFieldsMaximum": 0
+  },
+  "authorization": {
+    "adjudicationModelExecution": true,
+    "furtherAutomaticRetry": false,
+    "adjudicationAnalysisAfterAllValid": true,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocksExecution": true,
+    "preexistingOutputBlocksExecution": true,
+    "invalidContextStopsRemainingContexts": true,
+    "automaticRetryAuthorized": false,
+    "scoresRemainBlockedUntilFinalLedgerValidation": true
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/model-execution.json",
+    "analysis": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/analysis.json",
+    "finalLedger": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/final-ledger.json",
+    "calculatedScores": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/calculated-scores.json",
+    "outputs": [
+      "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/outputs/debate-55.json",
+      "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/outputs/debate-103.json",
+      "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/outputs/debate-161.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/model-execution.json",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/analysis.json",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/final-ledger.json",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/calculated-scores.json",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/outputs/debate-55.json",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/outputs/debate-103.json",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/outputs/debate-161.json"
+  ],
+  "sourceHashes": {
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/manual.md": "d45868c8fcef5d9da2ee03777d5bfe5d0a312e7b51ac9373bb1b149a475697b8",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/adjudication.schema.json": "725e3ca6b4de3f728f2dfa70706cf3bb06361b8529e37b8c46e3983222d351b7",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/preparation-audit.json": "b4af320f923a66fb92dace3293074edca48e83f4c43129642a10335b9e3f9b81",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/schema-preflight/model-execution.json": "051528f8c830f7ef91d6d9d005ef461ade4ccccb15d07c365f73b71ad6f28d60",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/disagreements.json": "87f474f47246b72e1f8d35eec0441098d0111f5ae92499aca08981615d6d2f64",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/audio-verification.json": "bfc842616bb1f719358b02de2c7eeabbf70e1701c9a2a732bb09be80db7d8616",
+    "scripts/lib/v385-transport.mjs": "f20d5cb026e0c2720d32276ddcbb612ec852e3732d7653e47a98ba5ffa880dfe",
+    "scripts/lib/v416-adjudication.mjs": "2babd99f8fd8ad00c4190fbde45afe28b021bbcbbc73547a5757014984fd2b6d",
+    "scripts/validate-v416-adjudication-output.mjs": "4b0bab86e52176563bf18359c42ea819b3d4f65250dc6fd9514003630f9f8a12",
+    "scripts/preregister-v416-adjudication-execution.mjs": "756c84c371a4a180a1a542f766124ca8064fe421732473ecbce82cf67622e088",
+    "scripts/run-v416-adjudication-execution.mjs": "e8427f7468a4cad1f8e3a701369b4b149d8656a23f0dd3aae25dc6d63b658350",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/packets/debate-55.json": "579ece36cdea5727b3e7adac3759f108d8bf595dd02517356ef1d0a8c6a287a3",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/packets/debate-103.json": "9344c35c0b2b439f13c56316142141754dc4744379df277970c10a998c85387a",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/packets/debate-161.json": "cfd7748bc033633a665e6a148a8ffcc20e872c0538b790f59f5d6d3d85e8e59b"
+  }
+}
