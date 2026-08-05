@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "4.2.14-bounded-finalization-correction-execution-manifest",
+  "protocolId": "v4.2.14-bounded-finalization-correction",
+  "status": "frozen-one-bounded-finalization-correction-authorized",
+  "frozenAt": "2026-08-05T16:34:50Z",
+  "checkpointCommit": "045c2b43553444757e6dd45cec450b3bf2d22d38",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "inputs": {
+    "manual": "docs/calibration/v4.2.14/bounded-finalization-correction/manual.md",
+    "schema": "docs/calibration/v4.2.14/bounded-finalization-correction/schema.json",
+    "packet": "docs/calibration/v4.2.14/bounded-finalization-correction/correction-packet.json"
+  },
+  "validationInputs": {
+    "originalOutput": "docs/calibration/v4.2.13/compact-finalization-smoke/output.json",
+    "sourcePacket": "docs/calibration/v3.8.8/reconstruction/packets/debate-103.json",
+    "goldFixture": "docs/calibration/v4.2.14/bounded-finalization-correction/gold-fixture.json",
+    "priorValidOutput": "docs/calibration/v3.8.8/reconstruction/outputs/debate-103.json",
+    "primaryExecution": "docs/calibration/v4.2.13/compact-finalization-smoke/model-execution.json",
+    "violations": "docs/calibration/v4.2.14/bounded-finalization-correction/violations.json"
+  },
+  "outputs": {
+    "proposal": "docs/calibration/v4.2.14/bounded-finalization-correction/proposal.json",
+    "corrected": "docs/calibration/v4.2.14/bounded-finalization-correction/corrected-output.json"
+  },
+  "isolation": {
+    "freshTemporaryCodexHome": true,
+    "freshSourceDirectory": true,
+    "fullOriginalOutputUnavailable": true,
+    "priorValidOutputUnavailable": true,
+    "goldFixtureUnavailable": true,
+    "scoresUnavailableExceptLockedLocalContext": true,
+    "legacyAssessmentUnavailable": true,
+    "otherDebatesUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attempts": 1,
+    "retries": 0,
+    "timeoutMs": 180000,
+    "combinedRuntimeThresholdMinutes": 4.5,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "authorization": {
+    "modelExecution": true,
+    "boundedMerge": true,
+    "deterministicValidation": true,
+    "analysis": true,
+    "scoring": false,
+    "productionMutation": false
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.2.14/bounded-finalization-correction/model-execution.json",
+    "analysis": "docs/calibration/v4.2.14/bounded-finalization-correction/analysis.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.2.14/bounded-finalization-correction/proposal.json",
+    "docs/calibration/v4.2.14/bounded-finalization-correction/corrected-output.json",
+    "docs/calibration/v4.2.14/bounded-finalization-correction/model-execution.json",
+    "docs/calibration/v4.2.14/bounded-finalization-correction/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.14.md": "a810d27e1a60ed4530de1287b7c44d235e21eb86c5b99be62791df46bfd6d883",
+    "docs/calibration/v4.2.14/bounded-finalization-correction/manual.md": "bc275282cbcab40211317acf6908bf8aeea4ee28f2e41edd5d3db0e660b1afe0",
+    "docs/calibration/v4.2.14/bounded-finalization-correction/schema.json": "f731611b6fe3c7b5feef5fb84d7d46e1519d41ad060c12dcbab097f924208faa",
+    "docs/calibration/v4.2.14/bounded-finalization-correction/correction-packet.json": "d704dfb3a7129fabbdba7c08ee822224ef8a6724017c9011b1d9591fecc1b4fc",
+    "docs/calibration/v4.2.13/compact-finalization-smoke/output.json": "cad14f9ea63ccba5d0a769d0d053a036ebe87f22c010f1f77bb98204c79989ad",
+    "docs/calibration/v3.8.8/reconstruction/packets/debate-103.json": "14bfb489ff601641a2d4e42e8a357bfa6787f100eebaf83902f54ab15c8a6719",
+    "docs/calibration/v4.2.14/bounded-finalization-correction/gold-fixture.json": "49987e9ea133d1307c076915991589dc58542d308b7a1c1f3bac1e229b94820d",
+    "docs/calibration/v3.8.8/reconstruction/outputs/debate-103.json": "1938c9566df70c8c09d82a6a3d560b2fffe67a23aa09418394a206ca8ccdbf2c",
+    "docs/calibration/v4.2.13/compact-finalization-smoke/model-execution.json": "33f544e6500483d4f5642e66115784b84d5e55329e3f8a66950261480c564337",
+    "docs/calibration/v4.2.14/bounded-finalization-correction/violations.json": "e7bad48334cf34065e4d6be0d9b7fe985667684fea9f2919323c45676aa6d778",
+    "docs/calibration/v4.2.14/bounded-finalization-correction/preparation-manifest.json": "454332faee67d1cf3a9b7920fe15dd5f688ab5e3282a635c063831cf27a5ab3b",
+    "scripts/lib/v385-transport.mjs": "f20d5cb026e0c2720d32276ddcbb612ec852e3732d7653e47a98ba5ffa880dfe",
+    "scripts/lib/v388-reconstruction.mjs": "b91aecc26cd3a978ef807bec877222b641fff4cd911028538cd035b747f5a342",
+    "scripts/lib/v41-lean-production.mjs": "9d4f4a5a54ff4c73f50733aa148064200862991a69003823d303e7bac363d9ba",
+    "scripts/lib/v4214-bounded-finalization-correction.mjs": "ec8ca7684dfa0388b605cfc76060106439465f1e323e135b02054886b62a785d",
+    "scripts/validate-v388-reconstruction-output.mjs": "060e75adf68b1256fd4920aee06ee97600378057170d28febbb81ca9ec97e741",
+    "scripts/build-v4214-finalization-correction.mjs": "dd52b31189917aea19ecc6a2ad5c100d9e34f95d6135ba1f1c764d4542995d12",
+    "scripts/test-v4214-finalization-correction.mjs": "22c3472927244ddd05357fac8810b8e93fe2cb056fc4dc9beb9f01f61e155be9",
+    "scripts/preregister-v4214-finalization-correction.mjs": "0b4a5c8626b74e621ddea53ecb2e1671adc9eea9bd056cff27a2d03e1817e104",
+    "scripts/run-v4214-finalization-correction.mjs": "35776a8f01f45cf6f913b4665946f590be2cdcaef46ead6f23861b1530356e5d",
+    "scripts/analyze-v4214-finalization-correction.mjs": "294bcfce17f8c48879d97e1fd968d512858aaffe5991e0c27a54d4f4d0215fb5",
+    "src/data/references.js": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b"
+  }
+}
