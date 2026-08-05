@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "4.1.7.2-audio-adjudication-analysis",
+  "protocolId": "v4.1.7.2-endpoint-compatible-audio-attribution",
+  "status": "audio-attribution-adjudication-unresolved",
+  "inheritedEndpointFailurePreserved": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/model-execution.json",
+  "preservedDeterministicGate": {
+    "status": "failed-one-or-more-attributions-unresolved",
+    "verified": 10,
+    "unresolved": 2,
+    "erasedOrReclassified": false
+  },
+  "adjudication": {
+    "validation": {
+      "status": "passed",
+      "debateNumber": "91",
+      "adjudications": [
+        {
+          "moveId": "con-apriori-reply",
+          "status": "unresolved",
+          "citedSegments": 3,
+          "expectedSpeakerSegmentsCited": 3
+        },
+        {
+          "moveId": "con-measure-reply",
+          "status": "verified",
+          "citedSegments": 6,
+          "expectedSpeakerSegmentsCited": 6
+        }
+      ],
+      "verified": 1,
+      "unresolved": 1,
+      "calculatedFields": 0,
+      "schemaVersion": "4.1.7.2-audio-attribution-adjudication-output",
+      "protocolId": "v4.1.7.2-endpoint-compatible-audio-attribution",
+      "endpointSchemaUniqueItemsKeywordPresent": false,
+      "deterministicUniquenessEnforced": true
+    },
+    "decisions": [
+      {
+        "moveId": "con-apriori-reply",
+        "expectedSpeaker": "Graham Oppy",
+        "status": "unresolved",
+        "authoringSpeaker": null,
+        "corePropositionAuthoredByExpectedSpeaker": false,
+        "mixedSpeakerSpan": true,
+        "evidenceSegmentIndexes": [
+          7,
+          9,
+          12
+        ],
+        "confidence": "high",
+        "rationale": "The expected speaker's relevant segments discuss identity theory and an epistemic gap, but they do not express the locked proposition about pain, aversive behavior, or inversion scenarios. Authorship therefore cannot be verified from the supplied diarized evidence."
+      },
+      {
+        "moveId": "con-measure-reply",
+        "expectedSpeaker": "Graham Oppy",
+        "status": "verified",
+        "authoringSpeaker": "Graham Oppy",
+        "corePropositionAuthoredByExpectedSpeaker": true,
+        "mixedSpeakerSpan": true,
+        "evidenceSegmentIndexes": [
+          4,
+          5,
+          7,
+          10,
+          13,
+          25
+        ],
+        "confidence": "high",
+        "rationale": "The expected speaker distinguishes dominance cases from cases requiring a tradeoff, identifies simplicity and data fit as the relevant considerations, and states that rough Bayesian weighting is needed when naturalism is simpler but theism allegedly fits the data better."
+      }
+    ]
+  },
+  "combinedAudioResult": {
+    "requiredMoves": 12,
+    "deterministicallyVerified": 10,
+    "adjudicatedVerified": 1,
+    "unresolved": 1,
+    "verificationRate": 0.9166666666666666
+  },
+  "costs": {
+    "additionalPaidTranscriptionCalls": 0,
+    "additionalTranscriptionCostUsd": 0,
+    "modelComputeAuthentication": "ChatGPT subscription",
+    "meteredModelApiCostUsd": 0
+  },
+  "legacyBoundary": {
+    "legacyAssessmentContentAccessed": false,
+    "legacyScoresAccessed": false,
+    "legacyWinnersAccessed": false,
+    "scoreArtifactCreated": false
+  },
+  "authorization": {
+    "disagreementExtraction": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "schemaVersion": "4.1.7-source-span-integrity-audit",
+  "protocolId": "v4.1.7-fresh-six-validation",
+  "status": "failed-source-span-integrity",
+  "scope": {
+    "debates": 6,
+    "moves": 60,
+    "transcriptEventsLoadedForValidation": true
+  },
+  "thresholds": {
+    "minimumExcerptBagOfWordsRecall": 0.8,
+    "startEventToleranceMs": 0,
+    "endEventToleranceMs": 250
+  },
+  "totals": {
+    "moves": 60,
+    "passed": 51,
+    "failed": 9,
+    "excerptRecallFailures": 2,
+    "startTimeFailures": 0,
+    "endTimeFailures": 7
+  },
+  "failures": [
+    {
+      "debateNumber": "58",
+      "debateId": "dillahunty-slick-secular-humanism-christianity-2016",
+      "moveId": "pro-revisable-method",
+      "sourceSpan": {
+        "startEvent": 532,
+        "endEvent": 568,
+        "startMs": 1158000,
+        "endMs": 1287720,
+        "excerpt": "medical treatments... foster a better understanding and lead to improvements in human flourishing... the secular process is better because we learn more from it... It is revisible. It can change its positions and it can change its goals."
+      },
+      "excerptRecall": 1,
+      "startEventTime": 1158000,
+      "endEventStartTime": 1273280,
+      "endEventDurationMs": 6920,
+      "checks": {
+        "excerptRecallAtLeast80Percent": true,
+        "startTimeMatchesStartEvent": true,
+        "declaredEndInsideEndEvent": false
+      },
+      "passed": false
+    },
+    {
+      "debateNumber": "58",
+      "debateId": "dillahunty-slick-secular-humanism-christianity-2016",
+      "moveId": "pro-scriptural-conflict",
+      "sourceSpan": {
+        "startEvent": 742,
+        "endEvent": 768,
+        "startMs": 2057980,
+        "endMs": 2205420,
+        "excerpt": "two people who both believe they're Christians are pointing to the same book... confirm mutually exclusive contradictory positions... They both think they have a method to reach the truth and they reach mutually exclusive contradictory positions."
+      },
+      "excerptRecall": 1,
+      "startEventTime": 2057980,
+      "endEventStartTime": 2194620,
+      "endEventDurationMs": 7440,
+      "checks": {
+        "excerptRecallAtLeast80Percent": true,
+        "startTimeMatchesStartEvent": true,
+        "declaredEndInsideEndEvent": false
+      },
+      "passed": false
+    },
+    {
+      "debateNumber": "91",
+      "debateId": "cutter-oppy-mind-brain-harmony-god-2025",
+      "moveId": "pro-epistemic-gap-reply",
+      "sourceSpan": {
+        "startEvent": 700,
+        "endEvent": 792,
+        "startMs": 1725840,
+        "endMs": 1971919,
+        "excerpt": "identity theory is true ... doesn't necessarily affect the probabilities at all ... here we're talking about epistemic probabilities"
+      },
+      "excerptRecall": 0.647059,
+      "startEventTime": 1725840,
+      "endEventStartTime": 1967600,
+      "endEventDurationMs": 4319,
+      "checks": {
+        "excerptRecallAtLeast80Percent": false,
+        "startTimeMatchesStartEvent": true,
+        "declaredEndInsideEndEvent": true
+      },
+      "passed": false
+    },
+    {
+      "debateNumber": "91",
+      "debateId": "cutter-oppy-mind-brain-harmony-god-2025",
+      "moveId": "con-apriori-reply",
+      "sourceSpan": {
+        "startEvent": 793,
+        "endEvent": 835,
+        "startMs": 1969440,
+        "endMs": 2092480,
+        "excerpt": "I think that it's just a priori that pain unlike pleasure causes and rationalizes aversive behavior"
+      },
+      "excerptRecall": 0.5,
+      "startEventTime": 1969440,
+      "endEventStartTime": 2085119,
+      "endEventDurationMs": 7361,
+      "checks": {
+        "excerptRecallAtLeast80Percent": false,
+        "startTimeMatchesStartEvent": true,
+        "declaredEndInsideEndEvent": true
+      },
+      "passed": false
+    },
+    {
+      "debateNumber": "59",
+      "debateId": "bollore-halper-god-science-evidence-2026",
+      "moveId": "pro-abiogenesis",
+      "sourceSpan": {
+        "startEvent": 1135,
+        "endEvent": 1166,
+        "startMs": 2741680,
+        "endMs": 2839520,
+        "excerpt": "Today there is no more idea of how life appeared from inert matter because the density of information... in the DNA of a cell is billion times billion time more dense than in a computer... it's completely improbable."
+      },
+      "excerptRecall": 1,
+      "startEventTime": 2741680,
+      "endEventStartTime": 2830880,
+      "endEventDurationMs": 5280,
+      "checks": {
+        "excerptRecallAtLeast80Percent": true,
+        "startTimeMatchesStartEvent": true,
+        "declaredEndInsideEndEvent": false
+      },
+      "passed": false
+    },
+    {
+      "debateNumber": "59",
+      "debateId": "bollore-halper-god-science-evidence-2026",
+      "moveId": "pro-bible-insight",
+      "sourceSpan": {
+        "startEvent": 1278,
+        "endEvent": 1324,
+        "startMs": 3071359,
+        "endMs": 3214079,
+        "excerpt": "Everybody thought that the sun and the moon were divinity... the only tiny people... thought correctly that the sun and the moon were not divinity but they were just lamp in the sky."
+      },
+      "excerptRecall": 1,
+      "startEventTime": 3071359,
+      "endEventStartTime": 3207280,
+      "endEventDurationMs": 4480,
+      "checks": {
+        "excerptRecallAtLeast80Percent": true,
+        "startTimeMatchesStartEvent": true,
+        "declaredEndInsideEndEvent": false
+      },
+      "passed": false
+    },
+    {
+      "debateNumber": "59",
+      "debateId": "bollore-halper-god-science-evidence-2026",
+      "moveId": "con-bible-firmament",
+      "sourceSpan": {
+        "startEvent": 1437,
+        "endEvent": 1475,
+        "startMs": 3456720,
+        "endMs": 3547760,
+        "excerpt": "There's nothing special... the sky is a solid dome known as the firmament... the Jewish encyclopedia [and] Hebrew English lexicon... regarded by the Hebrews as solid."
+      },
+      "excerptRecall": 1,
+      "startEventTime": 3456720,
+      "endEventStartTime": 3541280,
+      "endEventDurationMs": 5120,
+      "checks": {
+        "excerptRecallAtLeast80Percent": true,
+        "startTimeMatchesStartEvent": true,
+        "declaredEndInsideEndEvent": false
+      },
+      "passed": false
+    },
+    {
+      "debateNumber": "144",
+      "debateId": "plantinga-dennett-evolution-naturalism-2018",
+      "moveId": "pro-eaan-reply",
+      "sourceSpan": {
+        "startEvent": 2335,
+        "endEvent": 2398,
+        "startMs": 5271200,
+        "endMs": 5425080,
+        "excerpt": "That isn't the question. The question is rather... the probability that our faculties could be reliable... Calculators... track the truth... because they've been designed to do that by us."
+      },
+      "excerptRecall": 1,
+      "startEventTime": 5271200,
+      "endEventStartTime": 5411520,
+      "endEventDurationMs": 5240,
+      "checks": {
+        "excerptRecallAtLeast80Percent": true,
+        "startTimeMatchesStartEvent": true,
+        "declaredEndInsideEndEvent": false
+      },
+      "passed": false
+    },
+    {
+      "debateNumber": "144",
+      "debateId": "plantinga-dennett-evolution-naturalism-2018",
+      "moveId": "con-causal-tracking-reply",
+      "sourceSpan": {
+        "startEvent": 2650,
+        "endEvent": 2713,
+        "startMs": 5930520,
+        "endMs": 6075600,
+        "excerpt": "Evolution has created these things where there is indeed causal relation between truth and those states... that it persists in tracking truth is a precondition for its continuing in the system."
+      },
+      "excerptRecall": 1,
+      "startEventTime": 5930520,
+      "endEventStartTime": 6066800,
+      "endEventDurationMs": 6440,
+      "checks": {
+        "excerptRecallAtLeast80Percent": true,
+        "startTimeMatchesStartEvent": true,
+        "declaredEndInsideEndEvent": false
+      },
+      "passed": false
+    }
+  ],
+  "confirmedCriticalFailure": {
+    "debateNumber": "91",
+    "moveId": "con-apriori-reply",
+    "lockedExcerptAbsentFromDeclaredSpan": true,
+    "independentAudioAdjudicationStatus": "unresolved",
+    "independentAudioAdjudicationFinding": "Expected-speaker segments in the locked span do not express the locked pain/aversive-behavior proposition."
+  },
+  "validatorGap": {
+    "currentPrimaryValidatorLoadsEventText": false,
+    "currentPrimaryValidatorChecksOnlyIndexAndDurationBounds": true,
+    "invalidOutputPreviouslyAccepted": true
+  },
+  "authorization": {
+    "validatorRemediation": true,
+    "reuseV417Scores": false,
+    "disagreementExtraction": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  }
+}
