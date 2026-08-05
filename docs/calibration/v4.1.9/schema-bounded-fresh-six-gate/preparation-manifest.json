@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "4.1.9-schema-bounded-fresh-six-preparation",
+  "protocolId": "v4.1.9-schema-bounded-source-fresh-six-validation",
+  "status": "prepared-source-only-no-model-execution",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "primaryReasoningEffort": "low",
+    "reviewReasoningEffort": "high",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "sample": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/source-only-sample.json",
+  "debates": [
+    {
+      "debateNumber": "180",
+      "debateId": "ally-licona-did-jesus-rise-dead-2004",
+      "family": "resurrection-history",
+      "durationSeconds": 9359,
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/packets/debate-180.json",
+      "rawOutput": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/primary-outputs/debate-180.json",
+      "compiledOutput": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/primary-compiled/debate-180.json"
+    },
+    {
+      "debateNumber": "155",
+      "debateId": "turek-shermer-morality-god-science-2015",
+      "family": "morality-ethics",
+      "durationSeconds": 7598,
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/packets/debate-155.json",
+      "rawOutput": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/primary-outputs/debate-155.json",
+      "compiledOutput": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/primary-compiled/debate-155.json"
+    },
+    {
+      "debateNumber": "100",
+      "debateId": "jones-dillahunty-emergent-mind-god-2020",
+      "family": "mind-agency",
+      "durationSeconds": 7845,
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/packets/debate-100.json",
+      "rawOutput": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/primary-outputs/debate-100.json",
+      "compiledOutput": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/primary-compiled/debate-100.json"
+    },
+    {
+      "debateNumber": "113",
+      "debateId": "dirckx-woodford-god-suffering-2024",
+      "family": "evil-hiddenness",
+      "durationSeconds": 3990,
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/packets/debate-113.json",
+      "rawOutput": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/primary-outputs/debate-113.json",
+      "compiledOutput": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/primary-compiled/debate-113.json"
+    },
+    {
+      "debateNumber": "67",
+      "debateId": "jones-fodor-digital-physics-god-2021",
+      "family": "science-origins",
+      "durationSeconds": 7602,
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/packets/debate-67.json",
+      "rawOutput": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/primary-outputs/debate-67.json",
+      "compiledOutput": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/primary-compiled/debate-67.json"
+    },
+    {
+      "debateNumber": "141",
+      "debateId": "fischer-dillahunty-axiomatic-evidence-god-2020",
+      "family": "general-theism-religion",
+      "durationSeconds": 9688,
+      "controlSampleSelected": true,
+      "packet": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/packets/debate-141.json",
+      "rawOutput": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/primary-outputs/debate-141.json",
+      "compiledOutput": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/primary-compiled/debate-141.json"
+    }
+  ],
+  "inputs": {
+    "workflowBase": "docs/assessment-workflow-v4.0.md",
+    "workflowDerivedScores": "docs/assessment-workflow-v4.0.1.md",
+    "workflowBounded": "docs/assessment-workflow-v4.1.md",
+    "workflowBurdenIds": "docs/assessment-workflow-v4.1.1.md",
+    "workflowChronology": "docs/assessment-workflow-v4.1.2.md",
+    "workflowConsistency": "docs/assessment-workflow-v4.1.3.md",
+    "workflowBurdenTuple": "docs/assessment-workflow-v4.1.4.md",
+    "workflowTiming": "docs/assessment-workflow-v4.1.5.md",
+    "workflowPassB": "docs/assessment-workflow-v4.1.6.md",
+    "workflowFreshValidation": "docs/assessment-workflow-v4.1.7.md",
+    "workflowSourceIntegrity": "docs/assessment-workflow-v4.1.8.md",
+    "workflowSchemaBounded": "docs/assessment-workflow-v4.1.9.md",
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/manual.md",
+    "schema": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/schemas/primary.schema.json"
+  },
+  "endpointSchemaInheritance": {
+    "from": "v4.1.8-source-integrity-primary",
+    "structuralFieldsChanged": false,
+    "newSchemaKeywords": [
+      "sourceSpan.excerpt.maxLength"
+    ],
+    "maxLengthPreviouslyAcceptedInRepositoryEndpointSchemas": true,
+    "deterministicTranslationFixtureRequired": true,
+    "newEndpointPreflightRequired": false
+  },
+  "sourceIntegrityPolicy": {
+    "completeEventFileHashRequired": true,
+    "repositoryOwnedSourceTimes": true,
+    "excerptTokens": [
+      12,
+      100
+    ],
+    "excerptMaximumCharacters": 600,
+    "minimumLexicalRecall": 0.8,
+    "minimumOrderedCoverage": 0.8,
+    "invalidContextRetryMaximum": 0,
+    "outputNormalizationAuthorized": false
+  },
+  "controlPolicy": {
+    "rate": 0.1,
+    "selectedDebateIds": [
+      "fischer-dillahunty-axiomatic-evidence-god-2020"
+    ],
+    "selectedNumbers": [
+      "141"
+    ],
+    "selectionVisibleToPrimaryJudge": false
+  },
+  "totals": {
+    "debates": 6,
+    "sourceOnlyPackets": 6,
+    "controlDebates": 1,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "deterministicFixtures": true,
+    "primaryExecutionManifest": false,
+    "primaryModelExecution": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  }
+}
