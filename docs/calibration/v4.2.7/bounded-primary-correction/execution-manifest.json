@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "4.2.7-bounded-correction-execution-manifest",
+  "status": "frozen-one-bounded-correction-authorized",
+  "frozenAt": "2026-08-05T13:32:00Z",
+  "checkpointCommit": "ca61cdc9aadcae79e881c81c5664300d7273e161",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "inputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.2.7/bounded-primary-correction/manual.md",
+    "schema": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/schema.json",
+    "packet": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-106.json",
+    "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.4/debate-106.jsonl",
+    "candidate": "docs/calibration/v4.2.7/bounded-primary-correction/candidate.json",
+    "violations": "docs/calibration/v4.2.7/bounded-primary-correction/violations.json"
+  },
+  "source": {
+    "originalRaw": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/primary-outputs/debate-106.json",
+    "originalRawSha256": "cc421ccabdba977d1930a71ca3d910816c236f07200ef445aa785351401dbef2",
+    "originalEvents": ".assessment-cache/captions/syP-OtdCIho/events.json",
+    "sourceLedgerSha256": "01a6c9358fd363b29f992e7e535d59b05c8a236c6653d0426d2e75221c61988a"
+  },
+  "output": "docs/calibration/v4.2.7/bounded-primary-correction/corrected-output.json",
+  "compiledOutput": "docs/calibration/v4.2.7/bounded-primary-correction/corrected-compiled.json",
+  "policy": {
+    "oneCorrectionPassMaximum": true,
+    "exactMoveSetRequired": true,
+    "immutableMoveContentExceptSectionId": true,
+    "sectionMetadataMayChange": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "secondCorrectionAuthorized": false
+  },
+  "isolation": {
+    "freshTemporaryCodexHome": true,
+    "freshSourceDirectory": true,
+    "oneCorrectionOnly": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "otherJudgmentsUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attempts": 1,
+    "retries": 0,
+    "timeoutMs": 1800000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "authorization": {
+    "correctionModelExecution": true,
+    "deterministicValidation": true,
+    "compilation": true,
+    "secondCorrection": false,
+    "scoring": false,
+    "productionMutation": false
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.2.7/bounded-primary-correction/model-execution.json",
+    "analysis": "docs/calibration/v4.2.7/bounded-primary-correction/analysis.json",
+    "output": "docs/calibration/v4.2.7/bounded-primary-correction/corrected-output.json",
+    "compiledOutput": "docs/calibration/v4.2.7/bounded-primary-correction/corrected-compiled.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.2.7/bounded-primary-correction/corrected-output.json",
+    "docs/calibration/v4.2.7/bounded-primary-correction/corrected-compiled.json",
+    "docs/calibration/v4.2.7/bounded-primary-correction/model-execution.json",
+    "docs/calibration/v4.2.7/bounded-primary-correction/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.7.md": "8d330d39a35253bae7e06e24b08801b94c8a0141d7d1c4b5c26066f10c1283d2",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/calibration/v4.2.7/bounded-primary-correction/manual.md": "c4fccc4b9dbcdacf297f507f662766b2cf7cb772481e32b23f0f5fda048f35be",
+    "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/schema.json": "71620b17ec1c5173d6a0bc05fc10f1140884140712b3a1b152667a65126d20eb",
+    "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-106.json": "5c06adc335d5305572e56177f05c2a063b105dfdda551a109e89570671c1458a",
+    ".assessment-cache/compact-ledgers/v4.2.4/debate-106.jsonl": "01a6c9358fd363b29f992e7e535d59b05c8a236c6653d0426d2e75221c61988a",
+    "docs/calibration/v4.2.7/bounded-primary-correction/candidate.json": "63cbb16990ef1a7547fd642c0c9524562523bae0636dced672e4febe7f162ab7",
+    "docs/calibration/v4.2.7/bounded-primary-correction/violations.json": "961a559f0cca19191b79588c9f165aba6f1748fec281aa7e7380da7847c7d8f6",
+    "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/primary-outputs/debate-106.json": "cc421ccabdba977d1930a71ca3d910816c236f07200ef445aa785351401dbef2",
+    ".assessment-cache/captions/syP-OtdCIho/events.json": "8ac35238e98a91431ac176b88955bd922cdc4e3613d95c99938e999ad070f991",
+    "docs/calibration/v4.2.7/bounded-primary-correction/preparation-manifest.json": "9eac451089ae43f64ded708d9daf7095b2f47befc9a489c505cc9e28c3e1fdd3",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v41-lean-production.mjs": "9d4f4a5a54ff4c73f50733aa148064200862991a69003823d303e7bac363d9ba",
+    "scripts/lib/v417-fresh-validation.mjs": "c7226c573fab54ef5466f056488fa039e55da5746bd73d1d87553f61c3ec0f79",
+    "scripts/lib/v418-source-integrity.mjs": "ff0593a316fcd06f1662b0f9c9864bdd4c2a867a718638a79cac8b9f27eac205",
+    "scripts/lib/v419-schema-bounded-source.mjs": "4e40ed49afd5418de00c8830edcb81f9047ab99fe4dc584f978953a7bb15d548",
+    "scripts/lib/v42-compact-transport.mjs": "f09819bc34a1ed3e3d4c4c2a1c2af7eb50846dcf1deee90fa050da3ef7fe37c9",
+    "scripts/lib/v421-compact-fresh.mjs": "c1959ab6e5235fcb1679955fc69d7be4bca2c555e3af9d5cdf0d4199f32e16fe",
+    "scripts/lib/v422-chronology-first.mjs": "aea527699e309cbbe51856e2abb99efc37ace15005029a3d1e83920154e29b16",
+    "scripts/lib/v423-chronology-fresh.mjs": "64f1f47ea9083d18376953078ebedb51608106283099b896be04a729c082037d",
+    "scripts/lib/v424-screened-chronology-fresh.mjs": "a5e746482d22fd308cc9564c819d76cc7676d2fe05b4428af0f4265f29e01c0d",
+    "scripts/lib/v425-conservative-excerpt.mjs": "5f1a9462163e1bba0f4b316b744bb49e9f1d7b69e53fe2d77468dc9ce55cc661",
+    "scripts/lib/v426-retired-completion.mjs": "e59915c230596ea4b68b0fbbb44629cc8e0f4341e4a5755b784cd87531cdf084",
+    "scripts/lib/v427-bounded-correction.mjs": "23242ba50d8f2814218d29e8bad7f3be3629a66f05e3c428608a696389f86a84",
+    "scripts/build-v427-correction-diagnostic.mjs": "75f28814b6e1af5e89ebfaae09b626e37b7bd26fb795e0a371ffa5df589944c1",
+    "scripts/test-v427-bounded-correction.mjs": "8436ee264477fcfd8d46f0ddfc21f6ae36b7083da3e5ef15311f3847cc7ee9ae",
+    "scripts/validate-v427-correction.mjs": "dc28e555762790c69cc521dadf52468d095dd18d4ea8cbf3c69d1cb9e8252132",
+    "scripts/preregister-v427-correction-execution.mjs": "d122c605dfadfbbcb8b22e14071fab846aba1ece0cc82ca7fe9d90b969c8e311",
+    "scripts/run-v427-correction-execution.mjs": "ae6f94b050c20bb76ecb9da94156c55aa05d72cb6c4e771245968c7e1def5727",
+    "scripts/analyze-v427-correction.mjs": "ee85fe1b8d22e9b2ea1725d48d91c950b230d3441a37009d572e02af2a81369a"
+  }
+}
