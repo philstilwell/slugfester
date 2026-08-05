@@ -1,0 +1,353 @@
+{
+  "schemaVersion": "4.2.4-screened-chronology-fresh-six-sample",
+  "protocolId": "v4.2.4-screened-chronology-first-compact-fresh-six-validation",
+  "status": "frozen-pending-source-only-semantic-screening",
+  "frozenAt": "2026-08-05T12:55:19Z",
+  "checkpointCommit": "95e718cabe0dca903e2173804fe54b77a0a3b2c5",
+  "selectionBoundary": {
+    "dyadicOnly": true,
+    "topicFamilies": [
+      "resurrection-history",
+      "evil-hiddenness",
+      "morality-ethics",
+      "mind-agency",
+      "science-origins",
+      "general-theism-religion"
+    ],
+    "durationRequirement": "at least one under 90 minutes, at least one from 90 through 120 minutes, at least one over 120 minutes, and no more than three over 120 minutes",
+    "fixedSalt": "slugfester-v4.2.4-screened-chronology-fresh-six-source-only",
+    "rankingInput": "family and debate ID only",
+    "selectionMethod": "dynamic programming minimizing aggregate within-family hash rank, then family-order debate-ID tie",
+    "correctedClassifier": "evil/hiddenness before mind/agency; no bare soul token",
+    "legacyAssessmentContentAccessed": false,
+    "legacyScoresAccessed": false,
+    "legacyWinnersAccessed": false,
+    "legacyCritiquesAccessed": false,
+    "candidateRanksInspectedBeforeAlgorithmFreeze": false
+  },
+  "exclusions": {
+    "priorCalibrationIdsFromPool": 25,
+    "v416DevelopmentDebates": [
+      "55",
+      "103",
+      "161"
+    ],
+    "v417DiagnosticDebates": [
+      "37",
+      "58",
+      "91",
+      "59",
+      "144",
+      "171"
+    ],
+    "v418DiagnosticDebates": [
+      "52",
+      "101",
+      "79",
+      "11",
+      "175",
+      "26"
+    ],
+    "v419DiagnosticDebates": [
+      "180",
+      "155",
+      "100",
+      "113",
+      "67",
+      "141"
+    ],
+    "v421DiagnosticDebates": [
+      "07",
+      "164",
+      "44",
+      "74",
+      "117",
+      "06"
+    ],
+    "v423RejectedSelectionDebates": [
+      "31",
+      "36",
+      "116",
+      "157",
+      "92",
+      "94"
+    ],
+    "excludedDebateIds": [
+      "ally-licona-did-jesus-rise-dead-2004",
+      "bertuzzi-oconnor-contingency-argument-2018",
+      "bertuzzi-schieber-evil-evidence-2019",
+      "bollore-halper-god-science-evidence-2026",
+      "carroll-halvorson-metaphysics-worldview-2016",
+      "carroll-shermer-hutchinson-dsouza-science-religion-2012",
+      "craig-frazier-goff-folley-god-reality-2026",
+      "craig-malpass-kalam-nothing-2026",
+      "craig-malpass-universe-begin-exist-2020",
+      "craig-millican-does-god-exist-2011",
+      "craig-oconnor-god-debate-2026",
+      "craig-wielenberg-god-morality-2018",
+      "cutter-oppy-mind-brain-harmony-god-2025",
+      "dennett-caruso-free-will-responsibility-2021",
+      "dillahunty-howitt-christianity-true-2023",
+      "dillahunty-slick-secular-humanism-christianity-2016",
+      "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "dirckx-woodford-god-suffering-2024",
+      "dsouza-dillahunty-god-woman-2023",
+      "dsouza-ehrman-god-suffering-evil-2025",
+      "ehrman-bass-resurrection-history-2023",
+      "enoch-sampson-loeb-lutz-moral-realism-2024",
+      "fischer-dillahunty-axiomatic-evidence-god-2020",
+      "goff-carroll-consciousness-fundamental-2023",
+      "harris-prager-religion-morality-public-reason-2014",
+      "hitchens-blair-religion-force-good-2010",
+      "hitchens-dsouza-religion-problem-2010",
+      "hitchens-kushner-gomes-god-religion-morality-2009",
+      "horn-dillahunty-resurrection-reasonable-2021",
+      "huemer-oppy-souls-personal-identity-2022",
+      "jones-dillahunty-emergent-mind-god-2020",
+      "jones-dillahunty-quantum-idealism-demonstrability-2026",
+      "jones-fodor-digital-physics-god-2021",
+      "knechtle-aron-ra-god-existence-2023",
+      "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "krauss-meyer-lamoureux-god-science-universe-2016",
+      "lennox-atkins-science-explain-everything-2019",
+      "licona-carrier-resurrection-history-2010",
+      "licona-dillahunty-resurrection-evidence-2017",
+      "oconnor-baker-hytch-argument-from-reason-2020",
+      "oconnor-biddle-free-will-2025",
+      "oconnor-craig-resurrection-2023",
+      "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+      "oppy-pearce-is-there-a-god-2022",
+      "pageau-folley-logos-meaning-resurrection-2026",
+      "plantinga-dennett-evolution-naturalism-2018",
+      "plantinga-law-eaan-rational-belief-2010",
+      "rasmussen-malpass-suffering-causal-finitism-2021",
+      "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "swinburne-huemer-theism-coherent-2026",
+      "swinburne-oppy-theism-probability-2022",
+      "tour-cronin-origin-of-life-2020",
+      "tour-swamidass-origin-life-chemistry-2020",
+      "turek-hitchens-reality-theism-atheism-2011",
+      "turek-shermer-morality-god-science-2015",
+      "wood-oconnor-jesus-claim-god-2025",
+      "woodford-edwards-rational-belief-god-2023",
+      "woodford-scrivener-religion-poisons-everything-2026"
+    ]
+  },
+  "eligibleAfterExclusions": 128,
+  "tupleOptimization": {
+    "aggregateFamilyRank": 0,
+    "familyOrderTie": "boyce-carrier-historical-jesus-mythicism-2022|peterson-blackmore-god-meaning-life-2018|craig-kagan-god-morality-2009|jones-jump-digital-physics-god-2019|donahue-malpass-fine-tuning-god-2026|hirsi-ali-dawkins-god-debate-2024",
+    "durationBandCounts": {
+      "short-under-90": 4,
+      "medium-90-through-120": 1,
+      "long-over-120": 1
+    }
+  },
+  "debates": [
+    {
+      "debateId": "boyce-carrier-historical-jesus-mythicism-2022",
+      "number": "131",
+      "videoId": "bC-Uj92Cpvg",
+      "motion": "Did Jesus exist as a historical person, or did early Christian belief begin with a celestial or mythic Christ later placed in history?",
+      "sides": {
+        "pro": {
+          "label": "Historicity defense",
+          "speakers": [
+            "Stephen Boyce"
+          ]
+        },
+        "con": {
+          "label": "Mythicist challenge",
+          "speakers": [
+            "Richard Carrier"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "resurrection-history",
+      "durationSeconds": 10464,
+      "durationBand": "long-over-120",
+      "manifestPath": ".assessment-cache/captions/bC-Uj92Cpvg/manifest.json",
+      "selectionRankSha256": "063b05ba6a123437fb944400958a60b9adbe496f263c4aa32c1028853358212f"
+    },
+    {
+      "debateId": "peterson-blackmore-god-meaning-life-2018",
+      "number": "106",
+      "videoId": "syP-OtdCIho",
+      "motion": "Do humans need God, religious stories, or religiously inherited values to make sense of life, meaning, morality, suffering, and action?",
+      "sides": {
+        "pro": {
+          "label": "Religious pragmatism",
+          "speakers": [
+            "Jordan Peterson"
+          ]
+        },
+        "con": {
+          "label": "Memetic atheism",
+          "speakers": [
+            "Susan Blackmore"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "evil-hiddenness",
+      "durationSeconds": 2820,
+      "durationBand": "short-under-90",
+      "manifestPath": ".assessment-cache/captions/syP-OtdCIho/manifest.json",
+      "selectionRankSha256": "00655559ea3d68008afa973ae1674952f771d359b9c822eae771e5370a50ada9"
+    },
+    {
+      "debateId": "craig-kagan-god-morality-2009",
+      "number": "162",
+      "videoId": "Rm2wShHJ2iA",
+      "motion": "Is God necessary for objective moral values, duties, human significance, and accountability, or can a secular moral realism provide an adequate foundation?",
+      "sides": {
+        "pro": {
+          "label": "Theistic moral grounding",
+          "speakers": [
+            "William Lane Craig"
+          ]
+        },
+        "con": {
+          "label": "Secular moral realism",
+          "speakers": [
+            "Shelly Kagan"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "morality-ethics",
+      "durationSeconds": 5385,
+      "durationBand": "short-under-90",
+      "manifestPath": ".assessment-cache/captions/Rm2wShHJ2iA/manifest.json",
+      "selectionRankSha256": "092d38cc007ae0bc80a0609a574302e11e74033559ca6f9ebeb79cf792ce873e"
+    },
+    {
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "number": "99",
+      "videoId": "UWCvKiWjV0g",
+      "motion": "Does God exist, and do emergent spacetime, quantum consciousness, idealism, and the limits of metaphysical knowledge make theism more reasonable than naturalistic alternatives?",
+      "sides": {
+        "pro": {
+          "label": "Theistic idealism",
+          "speakers": [
+            "Michael Jones"
+          ]
+        },
+        "con": {
+          "label": "Naturalistic pantheism",
+          "speakers": [
+            "Tom Jump"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "mind-agency",
+      "durationSeconds": 7121,
+      "durationBand": "medium-90-through-120",
+      "manifestPath": ".assessment-cache/captions/UWCvKiWjV0g/manifest.json",
+      "selectionRankSha256": "2e46ee94c9782d985715adbb1fbfb739609306ef297a8d1809d46e306c14acbf"
+    },
+    {
+      "debateId": "donahue-malpass-fine-tuning-god-2026",
+      "number": "65",
+      "videoId": "2UtMbB_gazg",
+      "motion": "Does cosmic fine-tuning provide strong evidence for God, or can naturalistic alternatives, hypothesis-space ambiguity, and doubts about divine psychology undercut that inference?",
+      "sides": {
+        "pro": {
+          "label": "Fine-tuning theism",
+          "speakers": [
+            "Miles K. Donahue"
+          ]
+        },
+        "con": {
+          "label": "Naturalistic skepticism",
+          "speakers": [
+            "Alex Malpass"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "science-origins",
+      "durationSeconds": 4879,
+      "durationBand": "short-under-90",
+      "manifestPath": ".assessment-cache/captions/2UtMbB_gazg/manifest.json",
+      "selectionRankSha256": "0fcf404a261bc260ce4c218e9efda41005bcb85f7de85acc6c8e52d972086bca"
+    },
+    {
+      "debateId": "hirsi-ali-dawkins-god-debate-2024",
+      "number": "16",
+      "videoId": "DBsHdHMvucs",
+      "motion": "Can Hirsi Ali's Christian turn be justified by personal experience, truth, and civilizational need, or should Dawkins's atheist truth test reject it?",
+      "sides": {
+        "pro": {
+          "label": "Christian renewal",
+          "speakers": [
+            "Ayaan Hirsi Ali"
+          ]
+        },
+        "con": {
+          "label": "Atheist truth test",
+          "speakers": [
+            "Richard Dawkins"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "general-theism-religion",
+      "durationSeconds": 4039,
+      "durationBand": "short-under-90",
+      "manifestPath": ".assessment-cache/captions/DBsHdHMvucs/manifest.json",
+      "selectionRankSha256": "146db706850e05b254559f2bd5eee5ce4d1c785a58ad983fa99f873ece82716c"
+    }
+  ],
+  "audit": {
+    "debates": 6,
+    "distinctTopicFamilies": 6,
+    "distinctDebateIds": 6,
+    "priorFreshGateOverlap": 0,
+    "durationBandCounts": {
+      "short-under-90": 4,
+      "medium-90-through-120": 1,
+      "long-over-120": 1
+    },
+    "minimumDurationSeconds": 2820,
+    "maximumDurationSeconds": 10464,
+    "localTranscriptChainsPresent": 6,
+    "legacyAssessmentFields": 0
+  },
+  "authorization": {
+    "sourceOnlySemanticScreening": true,
+    "compactChronologySourcePacketPreparation": false,
+    "primaryModelExecution": false,
+    "legacyComparison": false,
+    "paidTranscription": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  },
+  "sourceHashes": {
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/metadata-eligible-pool.json": "71256e3b92aa6879b7126c01f7268be39735d239111a0d6d849a2b5aa6cf0cb6",
+    "docs/calibration/v4.2.3/chronology-first-fresh-six-gate/sample-screening.json": "d8006ce2c0b6f1c77d50f5bc7f017edfee22329f9736becdfa0dfb5ec2f8399e",
+    "docs/assessment-workflow-v4.2.4.md": "993b897ccf7bea49eb613b94ab7cb46e8f2ca3d59eca45b5e7ac7ff6dbcdc14c",
+    "scripts/lib/v424-source-classification.mjs": "28361b20b90e33b0e75b8c66dec746f3daa79a312ae561b41b508c98c2ec3abb",
+    "scripts/select-v424-fresh-six.mjs": "009df9a575e46a7487782c1a7c2f0dc7df8d5a640f6b3bc4615b76c9f00e442f",
+    "docs/calibration/v4.1.7/fresh-six-gate/source-only-sample.json": "8b06fa1766488eab48876c3f2d3e44cce1de8cfa522a87defef012905d5e2eff",
+    "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/source-only-sample.json": "de1272c4d5989f00af7a3d972e01462bb9722d1d07370406b3c74376321ead1d",
+    "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/source-only-sample.json": "576e275787d74b5e5b61e97962358ffc8264e260e47db41ef04b2e9955fe1646",
+    "docs/calibration/v4.2.1/compact-fresh-six-gate/source-only-sample.json": "587a22054eb36169394d389516ba3e4499acdf59c5b43392f5c0b427681555c5",
+    "docs/calibration/v4.2.3/chronology-first-fresh-six-gate/source-only-sample.json": "f9c275aef111f13746e3713adbdad4fedc74524cbc8861021b0d4bd49263bdec",
+    ".assessment-cache/captions/bC-Uj92Cpvg/manifest.json": "a75c3640b76c8f3503e397cf57da0e925b38632a0f739d785b457caac002322a",
+    ".assessment-cache/captions/syP-OtdCIho/manifest.json": "434bb8fb0a72aea3e0c7918541ab361923dc0e2460672c804e30292e84e27acc",
+    ".assessment-cache/captions/Rm2wShHJ2iA/manifest.json": "f84a5fde45a778cf9f2e617246044d038837fcf84bf64657d7254cfed84cd9a2",
+    ".assessment-cache/captions/UWCvKiWjV0g/manifest.json": "b108d2bc2f99e32315b6f16b48a222cd2724eb2266a61e6d2f5684b0a086271c",
+    ".assessment-cache/captions/2UtMbB_gazg/manifest.json": "6527d0ea6bd4e66e4ccc649fbd728be87f721bdabd69ed2d0f06a427b376ca39",
+    ".assessment-cache/captions/DBsHdHMvucs/manifest.json": "267271fd297b75c8304d5bfe6ffa53da5dc9076da7590bdb1c39f25a2a677990"
+  }
+}
