@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "4.0-lean-schema-preflight-manifest",
+  "protocolId": "v4.0-lean-risk-triggered-consensus",
+  "status": "frozen-one-synthetic-context-authorized",
+  "frozenAt": "2026-08-05T01:56:27Z",
+  "checkpointCommit": "57ed417a6c3f9ee25d29d278a8f989802ddcf969",
+  "syntheticOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low"
+  },
+  "inputs": {
+    "workflow": "docs/assessment-workflow-v4.0.md",
+    "rubric": "docs/reassessment-rubric-v4.0.md",
+    "manual": "docs/calibration/v4.0/lean-retired-gate/manual.md",
+    "packet": "docs/calibration/v4.0/lean-retired-gate/schema-preflight/packet.json",
+    "schema": "docs/calibration/v4.0/lean-retired-gate/schemas/primary.schema.json",
+    "transcript": "docs/calibration/v4.0/lean-retired-gate/schema-preflight/transcript.txt",
+    "events": "docs/calibration/v4.0/lean-retired-gate/schema-preflight/events.json"
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attempts": 1,
+    "retriesMaximum": 0,
+    "perInvocationTimeoutMs": 1800000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "authorization": {
+    "syntheticSchemaPreflightModelExecution": true,
+    "debatePrimaryModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  },
+  "artifacts": {
+    "output": "docs/calibration/v4.0/lean-retired-gate/schema-preflight/output.json",
+    "execution": "docs/calibration/v4.0/lean-retired-gate/schema-preflight/model-execution.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.0/lean-retired-gate/schema-preflight/output.json",
+    "docs/calibration/v4.0/lean-retired-gate/schema-preflight/model-execution.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.0.md": "f3c37042481d808fc5e0a63430f021b0e4a76f9da4147d9de78a0d87e0f0c154",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/calibration/v4.0/lean-retired-gate/manual.md": "4dbdfd4ddedbbaf79bd62b59cd1ece9ede8180fa46beae86d3c88a6a6d37f767",
+    "docs/calibration/v4.0/lean-retired-gate/schemas/primary.schema.json": "1ca88416ff2b630561d6a86a3927f1d0b6b8338828266b04d8a8e6fc62ab56fe",
+    "docs/calibration/v4.0/lean-retired-gate/schema-preflight/packet.json": "536ca6a7471575d2a1bd53f86492b67709a564f1516c01d75e851df7386a014d",
+    "docs/calibration/v4.0/lean-retired-gate/schema-preflight/transcript.txt": "3fb2cfc08a8766a2ccb7ac1f7d239bf770018f1708a12e3a8ef6ad9266663bef",
+    "docs/calibration/v4.0/lean-retired-gate/schema-preflight/events.json": "697fcc3ff2412572593f8f3cc4922635d9e7f257d2993b9ebc0bb3ddd9800bf5",
+    "docs/calibration/v4.0/lean-retired-gate/preparation-manifest.json": "92bc5949aa911c972605568d9c0a18d52c3939476cc0328bed43cc1a2d50601d",
+    "docs/calibration/v4.0/lean-retired-gate/dry-fixture.json": "01160587d3fc23e1a927fabaaf7f8c9b65372106875b266e35a0525921db171c",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v4-lean-production.mjs": "58cd0393129459b19d8f230053958605657988e9d3b752832ad003746711a8ae",
+    "scripts/validate-v4-lean-primary-output.mjs": "6e96bf1e753a8d483dcfce6b9c5f9b85c056dcc63ca8a9540c54f41cd19267bd",
+    "scripts/preregister-v4-lean-schema-preflight.mjs": "54b31420da82f17a039f05087391667864e87b29559b21b33f66d98583118f43",
+    "scripts/run-v4-lean-schema-preflight.mjs": "028cfea162eced85e17d8d7eede9ddc3b742bf0cccb826bdc47e98b93ce3d8f5"
+  }
+}
