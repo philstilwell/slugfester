@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "4.2.7-bounded-correction-preparation",
+  "status": "prepared-one-retired-bounded-correction",
+  "debateNumber": "106",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "inputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.2.7/bounded-primary-correction/manual.md",
+    "schema": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/schema.json",
+    "packet": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-106.json",
+    "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.4/debate-106.jsonl",
+    "candidate": "docs/calibration/v4.2.7/bounded-primary-correction/candidate.json",
+    "violations": "docs/calibration/v4.2.7/bounded-primary-correction/violations.json"
+  },
+  "source": {
+    "originalRaw": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/primary-outputs/debate-106.json",
+    "originalRawSha256": "cc421ccabdba977d1930a71ca3d910816c236f07200ef445aa785351401dbef2",
+    "originalEvents": ".assessment-cache/captions/syP-OtdCIho/events.json",
+    "sourceLedgerSha256": "01a6c9358fd363b29f992e7e535d59b05c8a236c6653d0426d2e75221c61988a"
+  },
+  "output": "docs/calibration/v4.2.7/bounded-primary-correction/corrected-output.json",
+  "compiledOutput": "docs/calibration/v4.2.7/bounded-primary-correction/corrected-compiled.json",
+  "policy": {
+    "oneCorrectionPassMaximum": true,
+    "exactMoveSetRequired": true,
+    "immutableMoveContentExceptSectionId": true,
+    "sectionMetadataMayChange": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "secondCorrectionAuthorized": false
+  },
+  "totals": {
+    "inputBytes": 192984,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "executionManifest": false,
+    "correctionModelExecution": false,
+    "validation": true,
+    "scoring": false,
+    "productionMutation": false
+  }
+}
