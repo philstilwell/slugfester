@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "4.1-bounded-schema-preflight-execution",
+  "protocolId": "v4.1-bounded-lean-risk-triggered-consensus",
+  "status": "failed",
+  "validSyntheticContexts": 0,
+  "attempts": 1,
+  "retries": 0,
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsd": 0,
+  "result": {
+    "model": "5.6 Sol",
+    "modelSlug": "gpt-5.6-sol",
+    "reasoningEffort": "medium",
+    "attemptCount": 1,
+    "retryCount": 0,
+    "startedAt": "2026-08-05T03:51:54.082Z",
+    "completedAt": "2026-08-05T03:55:02.982Z",
+    "elapsedMs": 188900,
+    "timedOut": false,
+    "terminationSignal": null,
+    "commandExitCode": 0,
+    "subscriptionAuthenticated": true,
+    "apiKeysRemoved": true,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "stdoutSha256": "2df38e88beb872e63b980cc77071326b868dc8f69acbe01477672ed357ea0aba",
+    "stderrSha256": "23a23aa57b7a71ad35f302c467abd7e129272418a81458f71a231c3d650a5638",
+    "status": "output-validation-failed",
+    "outputWritten": true,
+    "outputSha256": "7c6775174f29948d5ece629296a280e2a646a9977913d51391f22ad349c1dc90",
+    "deterministicValidationPassed": false,
+    "validationExitCode": 1,
+    "validationSummary": null,
+    "validationMessage": "file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69\n  if (!condition) throw new Error(message);\n                        ^\n\nError: burdenCompletionAdjustment.pro: unknown burden ID\n    at assertV4 (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69:25)\n    at validateAdjustment (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:391:3)\n    at validateV4PrimaryOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:532:38)\n    at validateV41PrimaryOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v41-lean-production.mjs:143:22)\n    at file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/validate-v41-lean-primary-output.mjs:10:28\n\nNode.js v25.9.0"
+  },
+  "authorization": {
+    "retiredPrimaryPreparation": false,
+    "retiredPrimaryModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  }
+}
