@@ -1,0 +1,620 @@
+{
+  "schemaVersion": "3.8.11-performance-reliability-diagnostics",
+  "protocolId": "v3.8.11-performance-judgment-consensus",
+  "status": "failed-gate-diagnosed",
+  "overall": {
+    "fieldsCompared": 567,
+    "meanAbsoluteRawScalarDelta": 4.114638,
+    "materiallyDisputedScalarFields": 165,
+    "materiallyDisputedScalarFieldRate": 0.291005,
+    "maximumRawScalarDelta": 23,
+    "formalMaximum": 0.25,
+    "heldOutAuthorizationMaximum": 0.23,
+    "formalPassed": false,
+    "heldOutAuthorizationPassed": false
+  },
+  "scoreReliability": {
+    "maximumDiagnosticOverallPassDelta": 4,
+    "maximumAllowedDiagnosticOverallPassDelta": 5,
+    "diagnosticOverallPassDeltaPassed": true,
+    "identicalWinnerClassificationsAcrossAllDebates": true,
+    "spearmanRankCorrelationAcrossSixSideTotals": 0.885714,
+    "minimumRequiredSpearmanRankCorrelation": 0.9,
+    "spearmanRankCorrelationPassed": false,
+    "passed": false
+  },
+  "byDimension": {
+    "logicalCoherence": {
+      "fields": 81,
+      "meanAbsoluteDelta": 3.592593,
+      "materialFields": 22,
+      "materialRate": 0.271605,
+      "maximumDelta": 13
+    },
+    "evidenceWarrant": {
+      "fields": 81,
+      "meanAbsoluteDelta": 3.271605,
+      "materialFields": 16,
+      "materialRate": 0.197531,
+      "maximumDelta": 18
+    },
+    "responsiveness": {
+      "fields": 81,
+      "meanAbsoluteDelta": 5.358025,
+      "materialFields": 32,
+      "materialRate": 0.395062,
+      "maximumDelta": 23
+    },
+    "relevanceBurden": {
+      "fields": 81,
+      "meanAbsoluteDelta": 2,
+      "materialFields": 4,
+      "materialRate": 0.049383,
+      "maximumDelta": 8
+    },
+    "precisionClarity": {
+      "fields": 81,
+      "meanAbsoluteDelta": 5.123457,
+      "materialFields": 35,
+      "materialRate": 0.432099,
+      "maximumDelta": 19
+    },
+    "epistemicCalibration": {
+      "fields": 81,
+      "meanAbsoluteDelta": 5.246914,
+      "materialFields": 34,
+      "materialRate": 0.419753,
+      "maximumDelta": 20
+    },
+    "representationalCharity": {
+      "fields": 81,
+      "meanAbsoluteDelta": 4.209877,
+      "materialFields": 22,
+      "materialRate": 0.271605,
+      "maximumDelta": 18
+    }
+  },
+  "byDebate": {
+    "55": {
+      "fields": 196,
+      "meanAbsoluteDelta": 3.331633,
+      "materialFields": 38,
+      "materialRate": 0.193878,
+      "maximumDelta": 22,
+      "moves": 28,
+      "disputedMoves": 24,
+      "responseTupleDisputes": 11,
+      "charityTestedDisputes": 4,
+      "ratingFieldDisputes": 54
+    },
+    "103": {
+      "fields": 175,
+      "meanAbsoluteDelta": 5.131429,
+      "materialFields": 69,
+      "materialRate": 0.394286,
+      "maximumDelta": 22,
+      "moves": 25,
+      "disputedMoves": 24,
+      "responseTupleDisputes": 11,
+      "charityTestedDisputes": 1,
+      "ratingFieldDisputes": 86
+    },
+    "161": {
+      "fields": 196,
+      "meanAbsoluteDelta": 3.989796,
+      "materialFields": 58,
+      "materialRate": 0.295918,
+      "maximumDelta": 23,
+      "moves": 28,
+      "disputedMoves": 28,
+      "responseTupleDisputes": 9,
+      "charityTestedDisputes": 1,
+      "ratingFieldDisputes": 66
+    }
+  },
+  "sideTotals": [
+    {
+      "debateNumber": "55",
+      "side": "pro",
+      "passA": 73,
+      "passB": 71,
+      "final": 71,
+      "absolutePassDelta": 2
+    },
+    {
+      "debateNumber": "55",
+      "side": "con",
+      "passA": 81,
+      "passB": 80,
+      "final": 81,
+      "absolutePassDelta": 1
+    },
+    {
+      "debateNumber": "103",
+      "side": "pro",
+      "passA": 77,
+      "passB": 75,
+      "final": 76,
+      "absolutePassDelta": 2
+    },
+    {
+      "debateNumber": "103",
+      "side": "con",
+      "passA": 70,
+      "passB": 66,
+      "final": 67,
+      "absolutePassDelta": 4
+    },
+    {
+      "debateNumber": "161",
+      "side": "pro",
+      "passA": 67,
+      "passB": 67,
+      "final": 68,
+      "absolutePassDelta": 0
+    },
+    {
+      "debateNumber": "161",
+      "side": "con",
+      "passA": 76,
+      "passB": 78,
+      "final": 78,
+      "absolutePassDelta": 2
+    }
+  ],
+  "rankOrders": {
+    "passA": [
+      {
+        "rank": 1,
+        "debateNumber": "55",
+        "side": "con",
+        "score": 81
+      },
+      {
+        "rank": 2,
+        "debateNumber": "103",
+        "side": "pro",
+        "score": 77
+      },
+      {
+        "rank": 3,
+        "debateNumber": "161",
+        "side": "con",
+        "score": 76
+      },
+      {
+        "rank": 4,
+        "debateNumber": "55",
+        "side": "pro",
+        "score": 73
+      },
+      {
+        "rank": 5,
+        "debateNumber": "103",
+        "side": "con",
+        "score": 70
+      },
+      {
+        "rank": 6,
+        "debateNumber": "161",
+        "side": "pro",
+        "score": 67
+      }
+    ],
+    "passB": [
+      {
+        "rank": 1,
+        "debateNumber": "55",
+        "side": "con",
+        "score": 80
+      },
+      {
+        "rank": 2,
+        "debateNumber": "161",
+        "side": "con",
+        "score": 78
+      },
+      {
+        "rank": 3,
+        "debateNumber": "103",
+        "side": "pro",
+        "score": 75
+      },
+      {
+        "rank": 4,
+        "debateNumber": "55",
+        "side": "pro",
+        "score": 71
+      },
+      {
+        "rank": 5,
+        "debateNumber": "161",
+        "side": "pro",
+        "score": 67
+      },
+      {
+        "rank": 6,
+        "debateNumber": "103",
+        "side": "con",
+        "score": 66
+      }
+    ],
+    "final": [
+      {
+        "rank": 1,
+        "debateNumber": "55",
+        "side": "con",
+        "score": 81
+      },
+      {
+        "rank": 2,
+        "debateNumber": "161",
+        "side": "con",
+        "score": 78
+      },
+      {
+        "rank": 3,
+        "debateNumber": "103",
+        "side": "pro",
+        "score": 76
+      },
+      {
+        "rank": 4,
+        "debateNumber": "55",
+        "side": "pro",
+        "score": 71
+      },
+      {
+        "rank": 5,
+        "debateNumber": "161",
+        "side": "pro",
+        "score": 68
+      },
+      {
+        "rank": 6,
+        "debateNumber": "103",
+        "side": "con",
+        "score": 67
+      }
+    ]
+  },
+  "topMaterialFields": [
+    {
+      "debateNumber": "161",
+      "moveId": "craig-millican-does-god-exist-2011-coverage-21-v384",
+      "sectionId": "section-02",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "ratingKey": "responsiveness",
+      "passA": 32,
+      "passB": 55,
+      "delta": 23
+    },
+    {
+      "debateNumber": "55",
+      "moveId": "craig-malpass-kalam-nothing-2026-coverage-missing-02-v388",
+      "sectionId": "section-02",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "ratingKey": "responsiveness",
+      "passA": 86,
+      "passB": 64,
+      "delta": 22
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-coverage-11-v384",
+      "sectionId": "section-05",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "ratingKey": "responsiveness",
+      "passA": 62,
+      "passB": 84,
+      "delta": 22
+    },
+    {
+      "debateNumber": "161",
+      "moveId": "craig-millican-does-god-exist-2011-candidate-07-v381",
+      "sectionId": "section-03",
+      "side": "con",
+      "speaker": "Peter Millican",
+      "ratingKey": "responsiveness",
+      "passA": 64,
+      "passB": 84,
+      "delta": 20
+    },
+    {
+      "debateNumber": "161",
+      "moveId": "craig-millican-does-god-exist-2011-candidate-08-v381",
+      "sectionId": "section-03",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "ratingKey": "epistemicCalibration",
+      "passA": 55,
+      "passB": 75,
+      "delta": 20
+    },
+    {
+      "debateNumber": "55",
+      "moveId": "craig-malpass-kalam-nothing-2026-candidate-06-v381",
+      "sectionId": "section-03",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "ratingKey": "responsiveness",
+      "passA": 84,
+      "passB": 65,
+      "delta": 19
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-coverage-03-v384",
+      "sectionId": "section-04",
+      "side": "con",
+      "speaker": "Simon Edwards",
+      "ratingKey": "precisionClarity",
+      "passA": 87,
+      "passB": 68,
+      "delta": 19
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-coverage-05-v384",
+      "sectionId": "section-01",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "ratingKey": "epistemicCalibration",
+      "passA": 76,
+      "passB": 57,
+      "delta": 19
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-coverage-08-v384",
+      "sectionId": "section-02",
+      "side": "con",
+      "speaker": "Simon Edwards",
+      "ratingKey": "evidenceWarrant",
+      "passA": 50,
+      "passB": 68,
+      "delta": 18
+    },
+    {
+      "debateNumber": "161",
+      "moveId": "craig-millican-does-god-exist-2011-coverage-21-v384",
+      "sectionId": "section-02",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "ratingKey": "representationalCharity",
+      "passA": 45,
+      "passB": 63,
+      "delta": 18
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-candidate-07-v381",
+      "sectionId": "section-03",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "ratingKey": "epistemicCalibration",
+      "passA": 72,
+      "passB": 55,
+      "delta": 17
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-coverage-06-v384",
+      "sectionId": "section-01",
+      "side": "con",
+      "speaker": "Simon Edwards",
+      "ratingKey": "responsiveness",
+      "passA": 84,
+      "passB": 67,
+      "delta": 17
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-coverage-12-v384",
+      "sectionId": "section-05",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "ratingKey": "representationalCharity",
+      "passA": 65,
+      "passB": 82,
+      "delta": 17
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-coverage-04-v384",
+      "sectionId": "section-05",
+      "side": "con",
+      "speaker": "Simon Edwards",
+      "ratingKey": "precisionClarity",
+      "passA": 86,
+      "passB": 70,
+      "delta": 16
+    },
+    {
+      "debateNumber": "161",
+      "moveId": "craig-millican-does-god-exist-2011-candidate-07-v381",
+      "sectionId": "section-03",
+      "side": "con",
+      "speaker": "Peter Millican",
+      "ratingKey": "representationalCharity",
+      "passA": 68,
+      "passB": 84,
+      "delta": 16
+    },
+    {
+      "debateNumber": "55",
+      "moveId": "craig-malpass-kalam-nothing-2026-coverage-03-v384",
+      "sectionId": "section-01",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "ratingKey": "responsiveness",
+      "passA": 70,
+      "passB": 84,
+      "delta": 14
+    },
+    {
+      "debateNumber": "55",
+      "moveId": "craig-malpass-kalam-nothing-2026-coverage-04-v384",
+      "sectionId": "section-01",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "ratingKey": "responsiveness",
+      "passA": 86,
+      "passB": 72,
+      "delta": 14
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-candidate-05-v381",
+      "sectionId": "section-01",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "ratingKey": "epistemicCalibration",
+      "passA": 80,
+      "passB": 66,
+      "delta": 14
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-coverage-12-v384",
+      "sectionId": "section-05",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "ratingKey": "responsiveness",
+      "passA": 90,
+      "passB": 76,
+      "delta": 14
+    },
+    {
+      "debateNumber": "55",
+      "moveId": "craig-malpass-kalam-nothing-2026-coverage-09-v384",
+      "sectionId": "section-02",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "ratingKey": "representationalCharity",
+      "passA": 72,
+      "passB": 85,
+      "delta": 13
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-candidate-07-v381",
+      "sectionId": "section-03",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "ratingKey": "precisionClarity",
+      "passA": 86,
+      "passB": 73,
+      "delta": 13
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-coverage-03-v384",
+      "sectionId": "section-04",
+      "side": "con",
+      "speaker": "Simon Edwards",
+      "ratingKey": "logicalCoherence",
+      "passA": 68,
+      "passB": 55,
+      "delta": 13
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-coverage-07-v384",
+      "sectionId": "section-01",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "ratingKey": "responsiveness",
+      "passA": 87,
+      "passB": 74,
+      "delta": 13
+    },
+    {
+      "debateNumber": "55",
+      "moveId": "craig-malpass-kalam-nothing-2026-coverage-22-v384",
+      "sectionId": "section-05",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "ratingKey": "representationalCharity",
+      "passA": 76,
+      "passB": 64,
+      "delta": 12
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-coverage-07-v384",
+      "sectionId": "section-01",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "ratingKey": "epistemicCalibration",
+      "passA": 70,
+      "passB": 58,
+      "delta": 12
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-coverage-14-v384",
+      "sectionId": "section-05",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "ratingKey": "evidenceWarrant",
+      "passA": 60,
+      "passB": 72,
+      "delta": 12
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-coverage-missing-01-v388",
+      "sectionId": "section-03",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "ratingKey": "precisionClarity",
+      "passA": 78,
+      "passB": 66,
+      "delta": 12
+    },
+    {
+      "debateNumber": "103",
+      "moveId": "woodford-edwards-rational-belief-god-2023-coverage-missing-04-v388",
+      "sectionId": "section-05",
+      "side": "con",
+      "speaker": "Simon Edwards",
+      "ratingKey": "precisionClarity",
+      "passA": 80,
+      "passB": 68,
+      "delta": 12
+    },
+    {
+      "debateNumber": "161",
+      "moveId": "craig-millican-does-god-exist-2011-coverage-17-v384",
+      "sectionId": "section-03",
+      "side": "con",
+      "speaker": "Peter Millican",
+      "ratingKey": "epistemicCalibration",
+      "passA": 70,
+      "passB": 82,
+      "delta": 12
+    },
+    {
+      "debateNumber": "55",
+      "moveId": "craig-malpass-kalam-nothing-2026-candidate-03-v381",
+      "sectionId": "section-02",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "ratingKey": "representationalCharity",
+      "passA": 86,
+      "passB": 75,
+      "delta": 11
+    }
+  ],
+  "authorization": {
+    "reviseAnchors": true,
+    "rerunRetiredGate": true,
+    "reconstructionPreparation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  }
+}

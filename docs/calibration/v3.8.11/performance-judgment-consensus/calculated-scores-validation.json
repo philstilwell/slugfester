@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "3.8.11-performance-calculated-scores-validation",
+  "protocolId": "v3.8.11-performance-judgment-consensus",
+  "status": "failed-reliability-gate",
+  "calculatorValidated": true,
+  "scoresPath": "docs/calibration/v3.8.11/performance-judgment-consensus/calculated-scores.json",
+  "scoresSha256": "21b1560c00f55278f848c67e9287710f8c2366fda7887cb69d284bf5224249ec",
+  "debates": 3,
+  "sides": 6,
+  "sectionsChecked": 15,
+  "movesChecked": 81,
+  "scoreReliability": {
+    "maximumDiagnosticOverallPassDelta": 4,
+    "maximumAllowedDiagnosticOverallPassDelta": 5,
+    "diagnosticOverallPassDeltaPassed": true,
+    "identicalWinnerClassificationsAcrossAllDebates": true,
+    "spearmanRankCorrelationAcrossSixSideTotals": 0.885714,
+    "minimumRequiredSpearmanRankCorrelation": 0.9,
+    "spearmanRankCorrelationPassed": false,
+    "passed": false
+  },
+  "scalarReliability": {
+    "fieldsCompared": 567,
+    "meanAbsoluteRawScalarDelta": 4.114638,
+    "materiallyDisputedScalarFields": 165,
+    "materiallyDisputedScalarFieldRate": 0.291005,
+    "maximumRawScalarDelta": 23,
+    "formalMaximum": 0.25,
+    "heldOutAuthorizationMaximum": 0.23,
+    "formalPassed": false,
+    "heldOutAuthorizationPassed": false
+  },
+  "gatePassed": false,
+  "authorization": {
+    "reconstructionPreparation": false,
+    "assessmentProseModelExecution": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  }
+}

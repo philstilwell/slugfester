@@ -1,0 +1,1444 @@
+{
+  "schemaVersion": "3.8.11-performance-calculated-scores",
+  "protocolId": "v3.8.11-performance-judgment-consensus",
+  "status": "derived-pending-independent-calculator-validation",
+  "formulas": {
+    "calibrationCharity": "round((epistemicCalibration + representationalCharity) / 2)",
+    "move": "round(.25 logicalCoherence + .20 evidenceWarrant + .20 responsiveness + .15 relevanceBurden + .10 precisionClarity + .10 calibrationCharity)",
+    "section": "round(sum(move score * importance) / sum(importance))",
+    "overall": "round(section-weighted mean + burden-completion adjustment), bounded 0-100",
+    "confidenceRange": "two below minimum of Pass A, Pass B, and final through two above maximum, bounded 0-100"
+  },
+  "population": {
+    "debates": 3,
+    "sides": 6,
+    "sections": 15,
+    "moves": 81
+  },
+  "reliabilityGate": {
+    "maximumDiagnosticOverallPassDelta": 4,
+    "maximumAllowedDiagnosticOverallPassDelta": 5,
+    "diagnosticOverallPassDeltaPassed": true,
+    "identicalWinnerClassificationsAcrossAllDebates": true,
+    "spearmanRankCorrelationAcrossSixSideTotals": 0.885714,
+    "minimumRequiredSpearmanRankCorrelation": 0.9,
+    "spearmanRankCorrelationPassed": false,
+    "passed": false
+  },
+  "authorization": {
+    "independentCalculatorValidation": true,
+    "assessmentProse": false,
+    "productionMutation": false,
+    "tenDebateGate": false,
+    "all195Debates": false
+  },
+  "debates": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "motion": "Does the Kalam cosmological argument show that the universe began to exist, has a cause, and points to a personal creator?",
+      "sections": [
+        {
+          "sectionId": "section-01",
+          "title": "Causation, Nothingness, and an Eternal Material Alternative",
+          "weightPercent": 16,
+          "sides": {
+            "pro": {
+              "moves": [
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-01-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 3,
+                  "passACalibrationCharity": 45,
+                  "passAScore": 64,
+                  "passBCalibrationCharity": 50,
+                  "passBScore": 67,
+                  "finalCalibrationCharity": 46,
+                  "finalScore": 66
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-03-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 73,
+                  "passAScore": 68,
+                  "passBCalibrationCharity": 82,
+                  "passBScore": 73,
+                  "finalCalibrationCharity": 73,
+                  "finalScore": 68
+                }
+              ],
+              "passAScore": 66,
+              "passBScore": 69,
+              "finalScore": 67
+            },
+            "con": {
+              "moves": [
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-02-v384",
+                  "speaker": "Alex Malpass",
+                  "importance": 2,
+                  "passACalibrationCharity": 86,
+                  "passAScore": 71,
+                  "passBCalibrationCharity": 87,
+                  "passBScore": 71,
+                  "finalCalibrationCharity": 87,
+                  "finalScore": 71
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-04-v384",
+                  "speaker": "Alex Malpass",
+                  "importance": 2,
+                  "passACalibrationCharity": 86,
+                  "passAScore": 78,
+                  "passBCalibrationCharity": 85,
+                  "passBScore": 73,
+                  "finalCalibrationCharity": 86,
+                  "finalScore": 78
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-05-v384",
+                  "speaker": "Alex Malpass",
+                  "importance": 3,
+                  "passACalibrationCharity": 74,
+                  "passAScore": 76,
+                  "passBCalibrationCharity": 79,
+                  "passBScore": 74,
+                  "finalCalibrationCharity": 79,
+                  "finalScore": 74
+                }
+              ],
+              "passAScore": 75,
+              "passBScore": 73,
+              "finalScore": 74
+            }
+          }
+        },
+        {
+          "sectionId": "section-02",
+          "title": "Actual Infinities and Hilbert’s Hotel",
+          "weightPercent": 27,
+          "sides": {
+            "pro": {
+              "moves": [
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-candidate-03-v381",
+                  "speaker": "William Lane Craig",
+                  "importance": 3,
+                  "passACalibrationCharity": 77,
+                  "passAScore": 77,
+                  "passBCalibrationCharity": 76,
+                  "passBScore": 76,
+                  "finalCalibrationCharity": 77,
+                  "finalScore": 78
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-07-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 79,
+                  "passAScore": 72,
+                  "passBCalibrationCharity": 75,
+                  "passBScore": 69,
+                  "finalCalibrationCharity": 79,
+                  "finalScore": 70
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-09-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 75,
+                  "passAScore": 76,
+                  "passBCalibrationCharity": 80,
+                  "passBScore": 74,
+                  "finalCalibrationCharity": 74,
+                  "finalScore": 76
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-11-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 80,
+                  "passAScore": 73,
+                  "passBCalibrationCharity": 84,
+                  "passBScore": 71,
+                  "finalCalibrationCharity": 82,
+                  "finalScore": 71
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-missing-02-v388",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 81,
+                  "passAScore": 74,
+                  "passBCalibrationCharity": 76,
+                  "passBScore": 65,
+                  "finalCalibrationCharity": 76,
+                  "finalScore": 65
+                }
+              ],
+              "passAScore": 75,
+              "passBScore": 71,
+              "finalScore": 73
+            },
+            "con": {
+              "moves": [
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-candidate-04-v381",
+                  "speaker": "Alex Malpass",
+                  "importance": 2,
+                  "passACalibrationCharity": 92,
+                  "passAScore": 82,
+                  "passBCalibrationCharity": 89,
+                  "passBScore": 82,
+                  "finalCalibrationCharity": 91,
+                  "finalScore": 82
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-08-v384",
+                  "speaker": "Alex Malpass",
+                  "importance": 3,
+                  "passACalibrationCharity": 87,
+                  "passAScore": 86,
+                  "passBCalibrationCharity": 87,
+                  "passBScore": 85,
+                  "finalCalibrationCharity": 87,
+                  "finalScore": 86
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-10-v384",
+                  "speaker": "Alex Malpass",
+                  "importance": 2,
+                  "passACalibrationCharity": 86,
+                  "passAScore": 76,
+                  "passBCalibrationCharity": 84,
+                  "passBScore": 75,
+                  "finalCalibrationCharity": 85,
+                  "finalScore": 75
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-12-v384",
+                  "speaker": "Alex Malpass",
+                  "importance": 2,
+                  "passACalibrationCharity": 90,
+                  "passAScore": 88,
+                  "passBCalibrationCharity": 90,
+                  "passBScore": 88,
+                  "finalCalibrationCharity": 90,
+                  "finalScore": 88
+                }
+              ],
+              "passAScore": 83,
+              "passBScore": 83,
+              "finalScore": 83
+            }
+          }
+        },
+        {
+          "sectionId": "section-03",
+          "title": "Successive Addition, Countdown, and Descending-Series Paradoxes",
+          "weightPercent": 27,
+          "sides": {
+            "pro": {
+              "moves": [
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-06-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 3,
+                  "passACalibrationCharity": 75,
+                  "passAScore": 72,
+                  "passBCalibrationCharity": 73,
+                  "passBScore": 69,
+                  "finalCalibrationCharity": 76,
+                  "finalScore": 70
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-candidate-06-v381",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 75,
+                  "passAScore": 68,
+                  "passBCalibrationCharity": 75,
+                  "passBScore": 64,
+                  "finalCalibrationCharity": 76,
+                  "finalScore": 68
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-14-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 80,
+                  "passAScore": 68,
+                  "passBCalibrationCharity": 79,
+                  "passBScore": 69,
+                  "finalCalibrationCharity": 79,
+                  "finalScore": 68
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-missing-03-v388",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 83,
+                  "passAScore": 75,
+                  "passBCalibrationCharity": 77,
+                  "passBScore": 68,
+                  "finalCalibrationCharity": 81,
+                  "finalScore": 69
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-16-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 76,
+                  "passAScore": 77,
+                  "passBCalibrationCharity": 77,
+                  "passBScore": 76,
+                  "finalCalibrationCharity": 79,
+                  "finalScore": 76
+                }
+              ],
+              "passAScore": 72,
+              "passBScore": 69,
+              "finalScore": 70
+            },
+            "con": {
+              "moves": [
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-candidate-05-v381",
+                  "speaker": "Alex Malpass",
+                  "importance": 3,
+                  "passACalibrationCharity": 89,
+                  "passAScore": 83,
+                  "passBCalibrationCharity": 88,
+                  "passBScore": 84,
+                  "finalCalibrationCharity": 89,
+                  "finalScore": 84
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-13-v384",
+                  "speaker": "Alex Malpass",
+                  "importance": 3,
+                  "passACalibrationCharity": 91,
+                  "passAScore": 87,
+                  "passBCalibrationCharity": 92,
+                  "passBScore": 90,
+                  "finalCalibrationCharity": 92,
+                  "finalScore": 90
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-15-v384",
+                  "speaker": "Alex Malpass",
+                  "importance": 2,
+                  "passACalibrationCharity": 88,
+                  "passAScore": 83,
+                  "passBCalibrationCharity": 88,
+                  "passBScore": 84,
+                  "finalCalibrationCharity": 88,
+                  "finalScore": 83
+                }
+              ],
+              "passAScore": 85,
+              "passBScore": 86,
+              "finalScore": 86
+            }
+          }
+        },
+        {
+          "sectionId": "section-04",
+          "title": "Metric Time and the Scope of Temporal Beginning",
+          "weightPercent": 10,
+          "sides": {
+            "pro": {
+              "moves": [
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-20-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 3,
+                  "passACalibrationCharity": 93,
+                  "passAScore": 83,
+                  "passBCalibrationCharity": 93,
+                  "passBScore": 84,
+                  "finalCalibrationCharity": 93,
+                  "finalScore": 83
+                }
+              ],
+              "passAScore": 83,
+              "passBScore": 84,
+              "finalScore": 83
+            },
+            "con": {
+              "moves": [
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-19-v384",
+                  "speaker": "Alex Malpass",
+                  "importance": 3,
+                  "passACalibrationCharity": 92,
+                  "passAScore": 86,
+                  "passBCalibrationCharity": 89,
+                  "passBScore": 83,
+                  "finalCalibrationCharity": 91,
+                  "finalScore": 85
+                }
+              ],
+              "passAScore": 86,
+              "passBScore": 83,
+              "finalScore": 85
+            }
+          }
+        },
+        {
+          "sectionId": "section-05",
+          "title": "Impersonal Indeterminism and Timeless Personal Agency",
+          "weightPercent": 20,
+          "sides": {
+            "pro": {
+              "moves": [
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-candidate-08-v381",
+                  "speaker": "William Lane Craig",
+                  "importance": 3,
+                  "passACalibrationCharity": 75,
+                  "passAScore": 69,
+                  "passBCalibrationCharity": 74,
+                  "passBScore": 66,
+                  "finalCalibrationCharity": 75,
+                  "finalScore": 68
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-22-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 73,
+                  "passAScore": 72,
+                  "passBCalibrationCharity": 69,
+                  "passBScore": 71,
+                  "finalCalibrationCharity": 68,
+                  "finalScore": 71
+                }
+              ],
+              "passAScore": 70,
+              "passBScore": 68,
+              "finalScore": 69
+            },
+            "con": {
+              "moves": [
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-candidate-07-v381",
+                  "speaker": "Alex Malpass",
+                  "importance": 3,
+                  "passACalibrationCharity": 91,
+                  "passAScore": 79,
+                  "passBCalibrationCharity": 90,
+                  "passBScore": 76,
+                  "finalCalibrationCharity": 91,
+                  "finalScore": 78
+                },
+                {
+                  "moveId": "craig-malpass-kalam-nothing-2026-coverage-21-v384",
+                  "speaker": "Alex Malpass",
+                  "importance": 2,
+                  "passACalibrationCharity": 80,
+                  "passAScore": 69,
+                  "passBCalibrationCharity": 79,
+                  "passBScore": 68,
+                  "finalCalibrationCharity": 80,
+                  "finalScore": 69
+                }
+              ],
+              "passAScore": 75,
+              "passBScore": 73,
+              "finalScore": 74
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "label": "Kalam defender",
+          "speakers": [
+            "William Lane Craig"
+          ],
+          "passA": {
+            "weightedSectionMean": 72.55,
+            "burdenCompletionAdjustment": 0,
+            "score": 73
+          },
+          "passB": {
+            "weightedSectionMean": 70.84,
+            "burdenCompletionAdjustment": 0,
+            "score": 71
+          },
+          "final": {
+            "weightedSectionMean": 71.43,
+            "burdenCompletionAdjustment": 0,
+            "score": 71
+          },
+          "confidenceRange": {
+            "low": 69,
+            "high": 75
+          },
+          "diagnosticPassDelta": 2
+        },
+        "con": {
+          "label": "Kalam critic",
+          "speakers": [
+            "Alex Malpass"
+          ],
+          "passA": {
+            "weightedSectionMean": 80.96,
+            "burdenCompletionAdjustment": 0,
+            "score": 81
+          },
+          "passB": {
+            "weightedSectionMean": 80.21,
+            "burdenCompletionAdjustment": 0,
+            "score": 80
+          },
+          "final": {
+            "weightedSectionMean": 80.77,
+            "burdenCompletionAdjustment": 0,
+            "score": 81
+          },
+          "confidenceRange": {
+            "low": 78,
+            "high": 83
+          },
+          "diagnosticPassDelta": 1
+        }
+      },
+      "winnerDiagnostics": {
+        "passA": "con",
+        "passB": "con",
+        "final": "con",
+        "identical": true
+      }
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "motion": "Is belief in an all-powerful, all-loving God rational given alleged gratuitous evil, salvation confusion, rationality, design, and morality?",
+      "sections": [
+        {
+          "sectionId": "section-01",
+          "title": "Rational Belief and the Reliability of Human Reason",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "moves": [
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-candidate-01-v381",
+                  "speaker": "Stephen Woodford",
+                  "importance": 2,
+                  "passACalibrationCharity": 79,
+                  "passAScore": 78,
+                  "passBCalibrationCharity": 80,
+                  "passBScore": 78,
+                  "finalCalibrationCharity": 80,
+                  "finalScore": 78
+                },
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-05-v384",
+                  "speaker": "Stephen Woodford",
+                  "importance": 2,
+                  "passACalibrationCharity": 78,
+                  "passAScore": 74,
+                  "passBCalibrationCharity": 65,
+                  "passBScore": 69,
+                  "finalCalibrationCharity": 65,
+                  "finalScore": 69
+                },
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-candidate-05-v381",
+                  "speaker": "Stephen Woodford",
+                  "importance": 2,
+                  "passACalibrationCharity": 81,
+                  "passAScore": 75,
+                  "passBCalibrationCharity": 74,
+                  "passBScore": 71,
+                  "finalCalibrationCharity": 74,
+                  "finalScore": 72
+                },
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-07-v384",
+                  "speaker": "Stephen Woodford",
+                  "importance": 2,
+                  "passACalibrationCharity": 73,
+                  "passAScore": 71,
+                  "passBCalibrationCharity": 65,
+                  "passBScore": 64,
+                  "finalCalibrationCharity": 65,
+                  "finalScore": 68
+                }
+              ],
+              "passAScore": 75,
+              "passBScore": 71,
+              "finalScore": 72
+            },
+            "con": {
+              "moves": [
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-candidate-03-v381",
+                  "speaker": "Simon Edwards",
+                  "importance": 3,
+                  "passACalibrationCharity": 58,
+                  "passAScore": 69,
+                  "passBCalibrationCharity": 60,
+                  "passBScore": 67,
+                  "finalCalibrationCharity": 57,
+                  "finalScore": 68
+                },
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-missing-02-v388",
+                  "speaker": "Simon Edwards",
+                  "importance": 3,
+                  "passACalibrationCharity": 63,
+                  "passAScore": 73,
+                  "passBCalibrationCharity": 64,
+                  "passBScore": 70,
+                  "finalCalibrationCharity": 66,
+                  "finalScore": 72
+                },
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-06-v384",
+                  "speaker": "Simon Edwards",
+                  "importance": 2,
+                  "passACalibrationCharity": 76,
+                  "passAScore": 72,
+                  "passBCalibrationCharity": 71,
+                  "passBScore": 65,
+                  "finalCalibrationCharity": 71,
+                  "finalScore": 65
+                }
+              ],
+              "passAScore": 71,
+              "passBScore": 68,
+              "finalScore": 69
+            }
+          }
+        },
+        {
+          "sectionId": "section-02",
+          "title": "Gratuitous Evil, Theodicy, and Restoration",
+          "weightPercent": 27,
+          "sides": {
+            "pro": {
+              "moves": [
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-candidate-02-v381",
+                  "speaker": "Stephen Woodford",
+                  "importance": 3,
+                  "passACalibrationCharity": 70,
+                  "passAScore": 77,
+                  "passBCalibrationCharity": 74,
+                  "passBScore": 78,
+                  "finalCalibrationCharity": 71,
+                  "finalScore": 78
+                },
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-01-v384",
+                  "speaker": "Stephen Woodford",
+                  "importance": 3,
+                  "passACalibrationCharity": 85,
+                  "passAScore": 83,
+                  "passBCalibrationCharity": 89,
+                  "passBScore": 87,
+                  "finalCalibrationCharity": 87,
+                  "finalScore": 84
+                }
+              ],
+              "passAScore": 80,
+              "passBScore": 83,
+              "finalScore": 81
+            },
+            "con": {
+              "moves": [
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-08-v384",
+                  "speaker": "Simon Edwards",
+                  "importance": 1,
+                  "passACalibrationCharity": 88,
+                  "passAScore": 71,
+                  "passBCalibrationCharity": 89,
+                  "passBScore": 73,
+                  "finalCalibrationCharity": 89,
+                  "finalScore": 71
+                },
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-09-v384",
+                  "speaker": "Simon Edwards",
+                  "importance": 2,
+                  "passACalibrationCharity": 59,
+                  "passAScore": 64,
+                  "passBCalibrationCharity": 58,
+                  "passBScore": 57,
+                  "finalCalibrationCharity": 55,
+                  "finalScore": 57
+                },
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-candidate-06-v381",
+                  "speaker": "Simon Edwards",
+                  "importance": 2,
+                  "passACalibrationCharity": 75,
+                  "passAScore": 66,
+                  "passBCalibrationCharity": 71,
+                  "passBScore": 64,
+                  "finalCalibrationCharity": 75,
+                  "finalScore": 64
+                },
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-10-v384",
+                  "speaker": "Simon Edwards",
+                  "importance": 2,
+                  "passACalibrationCharity": 66,
+                  "passAScore": 60,
+                  "passBCalibrationCharity": 62,
+                  "passBScore": 56,
+                  "finalCalibrationCharity": 63,
+                  "finalScore": 58
+                }
+              ],
+              "passAScore": 64,
+              "passBScore": 61,
+              "finalScore": 61
+            }
+          }
+        },
+        {
+          "sectionId": "section-03",
+          "title": "Salvation Confusion and the Identity of God",
+          "weightPercent": 21,
+          "sides": {
+            "pro": {
+              "moves": [
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-02-v384",
+                  "speaker": "Stephen Woodford",
+                  "importance": 3,
+                  "passACalibrationCharity": 63,
+                  "passAScore": 74,
+                  "passBCalibrationCharity": 59,
+                  "passBScore": 70,
+                  "finalCalibrationCharity": 59,
+                  "finalScore": 71
+                },
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-missing-01-v388",
+                  "speaker": "Stephen Woodford",
+                  "importance": 3,
+                  "passACalibrationCharity": 56,
+                  "passAScore": 70,
+                  "passBCalibrationCharity": 50,
+                  "passBScore": 65,
+                  "finalCalibrationCharity": 54,
+                  "finalScore": 70
+                },
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-candidate-07-v381",
+                  "speaker": "Stephen Woodford",
+                  "importance": 3,
+                  "passACalibrationCharity": 74,
+                  "passAScore": 80,
+                  "passBCalibrationCharity": 63,
+                  "passBScore": 75,
+                  "finalCalibrationCharity": 71,
+                  "finalScore": 80
+                }
+              ],
+              "passAScore": 75,
+              "passBScore": 70,
+              "finalScore": 74
+            },
+            "con": {
+              "moves": [
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-candidate-04-v381",
+                  "speaker": "Simon Edwards",
+                  "importance": 3,
+                  "passACalibrationCharity": 70,
+                  "passAScore": 80,
+                  "passBCalibrationCharity": 73,
+                  "passBScore": 76,
+                  "finalCalibrationCharity": 70,
+                  "finalScore": 75
+                }
+              ],
+              "passAScore": 80,
+              "passBScore": 76,
+              "finalScore": 75
+            }
+          }
+        },
+        {
+          "sectionId": "section-04",
+          "title": "Fine-Tuning and Evolutionary Accounts of Design",
+          "weightPercent": 13,
+          "sides": {
+            "pro": {
+              "moves": [
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-15-v384",
+                  "speaker": "Stephen Woodford",
+                  "importance": 2,
+                  "passACalibrationCharity": 85,
+                  "passAScore": 78,
+                  "passBCalibrationCharity": 81,
+                  "passBScore": 73,
+                  "finalCalibrationCharity": 80,
+                  "finalScore": 77
+                }
+              ],
+              "passAScore": 78,
+              "passBScore": 73,
+              "finalScore": 77
+            },
+            "con": {
+              "moves": [
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-03-v384",
+                  "speaker": "Simon Edwards",
+                  "importance": 3,
+                  "passACalibrationCharity": 50,
+                  "passAScore": 68,
+                  "passBCalibrationCharity": 49,
+                  "passBScore": 61,
+                  "finalCalibrationCharity": 49,
+                  "finalScore": 67
+                }
+              ],
+              "passAScore": 68,
+              "passBScore": 61,
+              "finalScore": 67
+            }
+          }
+        },
+        {
+          "sectionId": "section-05",
+          "title": "Objective Morality, Evolution, and Divine Goodness",
+          "weightPercent": 17,
+          "sides": {
+            "pro": {
+              "moves": [
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-11-v384",
+                  "speaker": "Stephen Woodford",
+                  "importance": 2,
+                  "passACalibrationCharity": 69,
+                  "passAScore": 68,
+                  "passBCalibrationCharity": 75,
+                  "passBScore": 72,
+                  "finalCalibrationCharity": 70,
+                  "finalScore": 68
+                },
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-12-v384",
+                  "speaker": "Stephen Woodford",
+                  "importance": 3,
+                  "passACalibrationCharity": 67,
+                  "passAScore": 78,
+                  "passBCalibrationCharity": 72,
+                  "passBScore": 75,
+                  "finalCalibrationCharity": 64,
+                  "finalScore": 77
+                },
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-14-v384",
+                  "speaker": "Stephen Woodford",
+                  "importance": 2,
+                  "passACalibrationCharity": 80,
+                  "passAScore": 76,
+                  "passBCalibrationCharity": 79,
+                  "passBScore": 77,
+                  "finalCalibrationCharity": 80,
+                  "finalScore": 76
+                }
+              ],
+              "passAScore": 75,
+              "passBScore": 75,
+              "finalScore": 74
+            },
+            "con": {
+              "moves": [
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-04-v384",
+                  "speaker": "Simon Edwards",
+                  "importance": 3,
+                  "passACalibrationCharity": 54,
+                  "passAScore": 67,
+                  "passBCalibrationCharity": 54,
+                  "passBScore": 63,
+                  "finalCalibrationCharity": 54,
+                  "finalScore": 65
+                },
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-missing-04-v388",
+                  "speaker": "Simon Edwards",
+                  "importance": 2,
+                  "passACalibrationCharity": 52,
+                  "passAScore": 57,
+                  "passBCalibrationCharity": 46,
+                  "passBScore": 53,
+                  "finalCalibrationCharity": 48,
+                  "finalScore": 55
+                },
+                {
+                  "moveId": "woodford-edwards-rational-belief-god-2023-coverage-13-v384",
+                  "speaker": "Simon Edwards",
+                  "importance": 3,
+                  "passACalibrationCharity": 80,
+                  "passAScore": 75,
+                  "passBCalibrationCharity": 80,
+                  "passBScore": 73,
+                  "finalCalibrationCharity": 80,
+                  "finalScore": 74
+                }
+              ],
+              "passAScore": 68,
+              "passBScore": 64,
+              "finalScore": 66
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "label": "Theism irrational",
+          "speakers": [
+            "Stephen Woodford"
+          ],
+          "passA": {
+            "weightedSectionMean": 76.74,
+            "burdenCompletionAdjustment": 0,
+            "score": 77
+          },
+          "passB": {
+            "weightedSectionMean": 74.97,
+            "burdenCompletionAdjustment": 0,
+            "score": 75
+          },
+          "final": {
+            "weightedSectionMean": 75.84,
+            "burdenCompletionAdjustment": 0,
+            "score": 76
+          },
+          "confidenceRange": {
+            "low": 73,
+            "high": 79
+          },
+          "diagnosticPassDelta": 2
+        },
+        "con": {
+          "label": "Rational theism",
+          "speakers": [
+            "Simon Edwards"
+          ],
+          "passA": {
+            "weightedSectionMean": 70.1,
+            "burdenCompletionAdjustment": 0,
+            "score": 70
+          },
+          "passB": {
+            "weightedSectionMean": 66.2,
+            "burdenCompletionAdjustment": 0,
+            "score": 66
+          },
+          "final": {
+            "weightedSectionMean": 67.33,
+            "burdenCompletionAdjustment": 0,
+            "score": 67
+          },
+          "confidenceRange": {
+            "low": 64,
+            "high": 72
+          },
+          "diagnosticPassDelta": 4
+        }
+      },
+      "winnerDiagnostics": {
+        "passA": "pro",
+        "passB": "pro",
+        "final": "pro",
+        "identical": true
+      }
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "motion": "Does the evidence from cosmology, fine-tuning, morality, Jesus' resurrection, and religious experience make Christian theism more reasonable than skeptical atheism?",
+      "sections": [
+        {
+          "sectionId": "section-01",
+          "title": "Cosmic Beginning, Causation, and a Personal Creator",
+          "weightPercent": 24,
+          "sides": {
+            "pro": {
+              "moves": [
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-candidate-01-v381",
+                  "speaker": "William Lane Craig",
+                  "importance": 3,
+                  "passACalibrationCharity": 72,
+                  "passAScore": 74,
+                  "passBCalibrationCharity": 69,
+                  "passBScore": 74,
+                  "finalCalibrationCharity": 69,
+                  "finalScore": 74
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-missing-01-v388",
+                  "speaker": "William Lane Craig",
+                  "importance": 3,
+                  "passACalibrationCharity": 65,
+                  "passAScore": 60,
+                  "passBCalibrationCharity": 56,
+                  "passBScore": 59,
+                  "finalCalibrationCharity": 65,
+                  "finalScore": 61
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-09-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 71,
+                  "passAScore": 78,
+                  "passBCalibrationCharity": 64,
+                  "passBScore": 80,
+                  "finalCalibrationCharity": 65,
+                  "finalScore": 79
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-10-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 69,
+                  "passAScore": 70,
+                  "passBCalibrationCharity": 69,
+                  "passBScore": 72,
+                  "finalCalibrationCharity": 69,
+                  "finalScore": 70
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-15-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 61,
+                  "passAScore": 65,
+                  "passBCalibrationCharity": 56,
+                  "passBScore": 65,
+                  "finalCalibrationCharity": 61,
+                  "finalScore": 66
+                }
+              ],
+              "passAScore": 69,
+              "passBScore": 69,
+              "finalScore": 70
+            },
+            "con": {
+              "moves": [
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-candidate-03-v381",
+                  "speaker": "Peter Millican",
+                  "importance": 3,
+                  "passACalibrationCharity": 84,
+                  "passAScore": 77,
+                  "passBCalibrationCharity": 87,
+                  "passBScore": 77,
+                  "finalCalibrationCharity": 87,
+                  "finalScore": 79
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-07-v384",
+                  "speaker": "Peter Millican",
+                  "importance": 2,
+                  "passACalibrationCharity": 85,
+                  "passAScore": 80,
+                  "passBCalibrationCharity": 87,
+                  "passBScore": 79,
+                  "finalCalibrationCharity": 88,
+                  "finalScore": 81
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-08-v384",
+                  "speaker": "Peter Millican",
+                  "importance": 2,
+                  "passACalibrationCharity": 83,
+                  "passAScore": 76,
+                  "passBCalibrationCharity": 87,
+                  "passBScore": 78,
+                  "finalCalibrationCharity": 87,
+                  "finalScore": 77
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-13-v384",
+                  "speaker": "Peter Millican",
+                  "importance": 2,
+                  "passACalibrationCharity": 90,
+                  "passAScore": 83,
+                  "passBCalibrationCharity": 92,
+                  "passBScore": 82,
+                  "finalCalibrationCharity": 91,
+                  "finalScore": 84
+                }
+              ],
+              "passAScore": 79,
+              "passBScore": 79,
+              "finalScore": 80
+            }
+          }
+        },
+        {
+          "sectionId": "section-02",
+          "title": "Fine-Tuning, Alternative Explanations, and Designer Specificity",
+          "weightPercent": 20,
+          "sides": {
+            "pro": {
+              "moves": [
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-01-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 3,
+                  "passACalibrationCharity": 59,
+                  "passAScore": 68,
+                  "passBCalibrationCharity": 57,
+                  "passBScore": 70,
+                  "finalCalibrationCharity": 58,
+                  "finalScore": 70
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-16-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 66,
+                  "passAScore": 70,
+                  "passBCalibrationCharity": 61,
+                  "passBScore": 70,
+                  "finalCalibrationCharity": 62,
+                  "finalScore": 70
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-21-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 1,
+                  "passACalibrationCharity": 68,
+                  "passAScore": 69,
+                  "passBCalibrationCharity": 78,
+                  "passBScore": 75,
+                  "finalCalibrationCharity": 78,
+                  "finalScore": 75
+                }
+              ],
+              "passAScore": 69,
+              "passBScore": 71,
+              "finalScore": 71
+            },
+            "con": {
+              "moves": [
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-11-v384",
+                  "speaker": "Peter Millican",
+                  "importance": 1,
+                  "passACalibrationCharity": 92,
+                  "passAScore": 76,
+                  "passBCalibrationCharity": 89,
+                  "passBScore": 78,
+                  "finalCalibrationCharity": 91,
+                  "finalScore": 79
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-candidate-05-v381",
+                  "speaker": "Peter Millican",
+                  "importance": 3,
+                  "passACalibrationCharity": 90,
+                  "passAScore": 81,
+                  "passBCalibrationCharity": 88,
+                  "passBScore": 82,
+                  "finalCalibrationCharity": 89,
+                  "finalScore": 81
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-12-v384",
+                  "speaker": "Peter Millican",
+                  "importance": 2,
+                  "passACalibrationCharity": 87,
+                  "passAScore": 75,
+                  "passBCalibrationCharity": 86,
+                  "passBScore": 78,
+                  "finalCalibrationCharity": 87,
+                  "finalScore": 78
+                }
+              ],
+              "passAScore": 78,
+              "passBScore": 80,
+              "finalScore": 80
+            }
+          }
+        },
+        {
+          "sectionId": "section-03",
+          "title": "Objective Morality, Divine Character, and the Evidence of Evil",
+          "weightPercent": 20,
+          "sides": {
+            "pro": {
+              "moves": [
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-02-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 3,
+                  "passACalibrationCharity": 58,
+                  "passAScore": 62,
+                  "passBCalibrationCharity": 55,
+                  "passBScore": 64,
+                  "finalCalibrationCharity": 54,
+                  "finalScore": 64
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-19-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 66,
+                  "passAScore": 65,
+                  "passBCalibrationCharity": 61,
+                  "passBScore": 65,
+                  "finalCalibrationCharity": 62,
+                  "finalScore": 65
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-candidate-08-v381",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 62,
+                  "passAScore": 61,
+                  "passBCalibrationCharity": 70,
+                  "passBScore": 64,
+                  "finalCalibrationCharity": 71,
+                  "finalScore": 64
+                }
+              ],
+              "passAScore": 63,
+              "passBScore": 64,
+              "finalScore": 64
+            },
+            "con": {
+              "moves": [
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-17-v384",
+                  "speaker": "Peter Millican",
+                  "importance": 2,
+                  "passACalibrationCharity": 78,
+                  "passAScore": 69,
+                  "passBCalibrationCharity": 84,
+                  "passBScore": 74,
+                  "finalCalibrationCharity": 78,
+                  "finalScore": 70
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-candidate-07-v381",
+                  "speaker": "Peter Millican",
+                  "importance": 3,
+                  "passACalibrationCharity": 68,
+                  "passAScore": 71,
+                  "passBCalibrationCharity": 78,
+                  "passBScore": 75,
+                  "finalCalibrationCharity": 69,
+                  "finalScore": 75
+                }
+              ],
+              "passAScore": 70,
+              "passBScore": 75,
+              "finalScore": 73
+            }
+          }
+        },
+        {
+          "sectionId": "section-04",
+          "title": "Resurrection Evidence and Historical Sources",
+          "weightPercent": 15,
+          "sides": {
+            "pro": {
+              "moves": [
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-03-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 3,
+                  "passACalibrationCharity": 56,
+                  "passAScore": 69,
+                  "passBCalibrationCharity": 53,
+                  "passBScore": 70,
+                  "finalCalibrationCharity": 55,
+                  "finalScore": 70
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-20-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 66,
+                  "passAScore": 71,
+                  "passBCalibrationCharity": 69,
+                  "passBScore": 72,
+                  "finalCalibrationCharity": 65,
+                  "finalScore": 72
+                }
+              ],
+              "passAScore": 70,
+              "passBScore": 71,
+              "finalScore": 71
+            },
+            "con": {
+              "moves": [
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-18-v384",
+                  "speaker": "Peter Millican",
+                  "importance": 2,
+                  "passACalibrationCharity": 87,
+                  "passAScore": 78,
+                  "passBCalibrationCharity": 85,
+                  "passBScore": 79,
+                  "finalCalibrationCharity": 86,
+                  "finalScore": 79
+                }
+              ],
+              "passAScore": 78,
+              "passBScore": 79,
+              "finalScore": 79
+            }
+          }
+        },
+        {
+          "sectionId": "section-05",
+          "title": "Religious Experience, Rival Hypotheses, and the Cumulative Burden",
+          "weightPercent": 21,
+          "sides": {
+            "pro": {
+              "moves": [
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-04-v384",
+                  "speaker": "William Lane Craig",
+                  "importance": 3,
+                  "passACalibrationCharity": 65,
+                  "passAScore": 60,
+                  "passBCalibrationCharity": 60,
+                  "passBScore": 60,
+                  "finalCalibrationCharity": 60,
+                  "finalScore": 61
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-candidate-04-v381",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 69,
+                  "passAScore": 69,
+                  "passBCalibrationCharity": 60,
+                  "passBScore": 67,
+                  "finalCalibrationCharity": 60,
+                  "finalScore": 68
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-candidate-06-v381",
+                  "speaker": "William Lane Craig",
+                  "importance": 2,
+                  "passACalibrationCharity": 50,
+                  "passAScore": 61,
+                  "passBCalibrationCharity": 55,
+                  "passBScore": 62,
+                  "finalCalibrationCharity": 55,
+                  "finalScore": 62
+                }
+              ],
+              "passAScore": 63,
+              "passBScore": 63,
+              "finalScore": 63
+            },
+            "con": {
+              "moves": [
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-05-v384",
+                  "speaker": "Peter Millican",
+                  "importance": 2,
+                  "passACalibrationCharity": 82,
+                  "passAScore": 73,
+                  "passBCalibrationCharity": 88,
+                  "passBScore": 73,
+                  "finalCalibrationCharity": 88,
+                  "finalScore": 74
+                },
+                {
+                  "moveId": "craig-millican-does-god-exist-2011-coverage-06-v384",
+                  "speaker": "Peter Millican",
+                  "importance": 3,
+                  "passACalibrationCharity": 75,
+                  "passAScore": 78,
+                  "passBCalibrationCharity": 76,
+                  "passBScore": 76,
+                  "finalCalibrationCharity": 76,
+                  "finalScore": 77
+                }
+              ],
+              "passAScore": 76,
+              "passBScore": 75,
+              "finalScore": 76
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "label": "Christian theist",
+          "speakers": [
+            "William Lane Craig"
+          ],
+          "passA": {
+            "weightedSectionMean": 66.69,
+            "burdenCompletionAdjustment": 0,
+            "score": 67
+          },
+          "passB": {
+            "weightedSectionMean": 67.44,
+            "burdenCompletionAdjustment": 0,
+            "score": 67
+          },
+          "final": {
+            "weightedSectionMean": 67.68,
+            "burdenCompletionAdjustment": 0,
+            "score": 68
+          },
+          "confidenceRange": {
+            "low": 65,
+            "high": 70
+          },
+          "diagnosticPassDelta": 0
+        },
+        "con": {
+          "label": "Skeptical atheist",
+          "speakers": [
+            "Peter Millican"
+          ],
+          "passA": {
+            "weightedSectionMean": 76.22,
+            "burdenCompletionAdjustment": 0,
+            "score": 76
+          },
+          "passB": {
+            "weightedSectionMean": 77.56,
+            "burdenCompletionAdjustment": 0,
+            "score": 78
+          },
+          "final": {
+            "weightedSectionMean": 77.61,
+            "burdenCompletionAdjustment": 0,
+            "score": 78
+          },
+          "confidenceRange": {
+            "low": 74,
+            "high": 80
+          },
+          "diagnosticPassDelta": 2
+        }
+      },
+      "winnerDiagnostics": {
+        "passA": "con",
+        "passB": "con",
+        "final": "con",
+        "identical": true
+      }
+    }
+  ]
+}
