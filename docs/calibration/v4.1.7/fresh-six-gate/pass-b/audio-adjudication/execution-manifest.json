@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "4.1.7.1-audio-attribution-adjudication-execution-manifest",
+  "protocolId": "v4.1.7.1-disputed-audio-attribution",
+  "stage": "one-debate-two-field-audio-attribution-adjudication",
+  "status": "frozen-one-isolated-audio-adjudication-context-authorized",
+  "frozenAt": "2026-08-05T10:58:45Z",
+  "checkpointCommit": "6652b42b3c172d9b063bc1e1ed6ea9be862b6edb",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "context": {
+    "debateNumber": "91",
+    "debateId": "cutter-oppy-mind-brain-harmony-god-2025",
+    "packet": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/packet.json",
+    "schema": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/schema.json",
+    "workflow": "docs/assessment-workflow-v4.1.7.1.md",
+    "manual": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/manual.md",
+    "rawDiarizedTranscripts": [
+      "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/con-apriori-reply.transcript.json",
+      "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/con-measure-reply.transcript.json"
+    ],
+    "output": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/output.json",
+    "disputedMoves": [
+      "con-apriori-reply",
+      "con-measure-reply"
+    ]
+  },
+  "isolation": {
+    "freshTemporaryCodexHome": true,
+    "freshSourceDirectory": true,
+    "onlyDisputedAttributionFieldsVisible": true,
+    "ratingsUnavailable": true,
+    "scoresUnavailable": true,
+    "triggerReasonsUnavailable": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attempts": 1,
+    "retriesMaximum": 0,
+    "perInvocationTimeoutMs": 1800000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "paidTranscriptionCalls": 0,
+    "paidTranscriptionCostUsdMaximum": 0
+  },
+  "decisionPolicy": {
+    "expectedSpeakerAndPropositionLocked": true,
+    "rawDiarizedTranscriptHashesLocked": true,
+    "mixedSpeakerSpanMayVerify": true,
+    "verifiedRequiresHighConfidence": true,
+    "verifiedRequiresExpectedSpeakerEvidence": true,
+    "unresolvedBlocksDownstream": true,
+    "manualOverrideAuthorized": false,
+    "deterministicThresholdRelaxationAuthorized": false
+  },
+  "legacyBoundary": {
+    "legacyAssessmentContentAccessed": false,
+    "legacyScoresAccessed": false,
+    "legacyWinnersAccessed": false,
+    "scoreArtifactCreated": false
+  },
+  "authorization": {
+    "modelExecution": true,
+    "deterministicValidation": true,
+    "disagreementExtraction": false,
+    "ratingAdjudication": false,
+    "compressionAuditModelExecution": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "productionMutation": false
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocksExecution": true,
+    "preexistingOutputBlocksExecution": true,
+    "invalidOutputBlocksDownstream": true,
+    "retryAuthorized": false,
+    "normalizationAuthorized": false,
+    "unresolvedDecisionBlocksDownstream": true
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/model-execution.json",
+    "analysis": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/analysis.json",
+    "assessment": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/assessment.md",
+    "output": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/output.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/output.json",
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/model-execution.json",
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/analysis.json",
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/assessment.md"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.1.7.1.md": "b4be62faa62fb1e7eded2b61a5097f98964888e39cb26cd4e6efac9957aa2718",
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/manual.md": "c7aeab52dfd2e208498c37128999ed551a035f416d6af0f0b9d1a9d5ec607f3c",
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/schema.json": "2f27b37719338ba844b921b95301b012de0457735bba9cf25a69e5f054d760b0",
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/packet.json": "87f5d6c9dc8075479619f957da21245e4c888137b47a19650e08b379f8d18887",
+    "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/con-apriori-reply.transcript.json": "0db15b5c154c0e3d968d3f13ddd21f6e237dee3ab55c6baae1707dff089c262c",
+    "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/con-measure-reply.transcript.json": "7db53f858c164222d321a72df4e3b90aea96f26608a0c84d18c41694b80cebc8",
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/preparation-manifest.json": "96bc0967f060fcca3e331cc2024cd7e29f1056fc1a034ce85b6911bf17a3a0be",
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-verification-plan.json": "6441f68cf5eb20d55f6e1e7dc10a82b718a84941cc41e858c60c80d83672f472",
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-model-execution.json": "2a288d5ecd419b2f072e834894a9a0244fc9372b92a1250761948979ed70490b",
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-analysis-failure.json": "ebee9e7c5c744c919591e64289c0d871b89e521c248714112302bcd301762882",
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-analysis-amendment.json": "26d03f458db297b40840c582f480e88cd4ec5095b0ea4b1ac937df5304960ed4",
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-verification.json": "84a5d891a76d3feccd5d24c298e593feea099159a43ed84951600f24e622f000",
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/post-audio-analysis.json": "7dd245f2f3a2e3926cd6f72af07f2e3876c71c617cd168df47256ab9c5b67c85",
+    "scripts/lib/v4171-audio-adjudication.mjs": "5ab17b5aa696c9c7b4f7f39bc4404d0ee08c34e5a200dba1a5777c184c5b6e26",
+    "scripts/build-v4171-audio-adjudication.mjs": "2dea7e10b54145481b637f36e2e895e70bfd9ba009933d76e71c39e056296e3d",
+    "scripts/test-v4171-audio-adjudication.mjs": "2fdf0c1c1bd7e09f82c6e54cca2330bc222fe98868ce5495d5eb63c99e697682",
+    "scripts/validate-v4171-audio-adjudication-output.mjs": "6769f435a2f7ad6fd7b66e8b37a7e333de9d7ea956d6e177961196ac9a5ceaaf",
+    "scripts/preregister-v4171-audio-adjudication-execution.mjs": "cc12e068bfa2732ae7d47f7026b7d4974ea33821e5be5f65be6ad8f7efb4ec4e",
+    "scripts/run-v4171-audio-adjudication-execution.mjs": "ce7037303ec049fe9702967015e05a067ee9fd65715c518f45950c8ae1b924a9",
+    "scripts/analyze-v4171-audio-adjudication.mjs": "508fb3c12531baf0959503a48f3a5e5f743a58158d0a64bb4191ff130cd7b3b8"
+  }
+}
