@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "4.2-compact-transport-execution-manifest",
+  "protocolId": "v4.2-compact-primary-input-transport-smoke",
+  "status": "frozen-one-context-retired-transport-smoke-authorized",
+  "frozenAt": "2026-08-05T12:16:20.303Z",
+  "checkpointCommit": "53be98cb755bc6b839a143d85040b7770fc30545",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low"
+  },
+  "modelInputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.2/compact-transport-smoke/manual.md",
+    "schema": "docs/calibration/v4.2/compact-transport-smoke/schema.json"
+  },
+  "context": {
+    "debateNumber": "180",
+    "debateId": "ally-licona-did-jesus-rise-dead-2004",
+    "durationSeconds": 9359,
+    "packet": "docs/calibration/v4.2/compact-transport-smoke/packet.json",
+    "sourceLedger": ".assessment-cache/compact-ledgers/v4.2/debate-180.jsonl",
+    "originalTranscript": ".assessment-cache/captions/eoiScvG3Emo/transcript.txt",
+    "originalEvents": ".assessment-cache/captions/eoiScvG3Emo/events.json",
+    "originalManifest": ".assessment-cache/captions/eoiScvG3Emo/manifest.json",
+    "rawOutput": "docs/calibration/v4.2/compact-transport-smoke/primary-output.json",
+    "compiledOutput": "docs/calibration/v4.2/compact-transport-smoke/primary-compiled.json"
+  },
+  "transport": {
+    "originalPlainTranscriptStoredLocally": true,
+    "originalEventsStoredLocally": true,
+    "sourceLedgerReplayExact": true,
+    "plainTranscriptDeliveredToModel": false,
+    "originalEventsDeliveredToModel": false,
+    "completeSourceTextDeliveredOnce": true,
+    "modelCopiedFiles": [
+      "docs/reassessment-rubric-v4.0.md",
+      "docs/reassessment-rubric-v4.0.1.md",
+      "docs/reassessment-rubric-v4.1.md",
+      "docs/calibration/v4.2/compact-transport-smoke/manual.md",
+      "docs/calibration/v4.2/compact-transport-smoke/schema.json",
+      "docs/calibration/v4.2/compact-transport-smoke/packet.json",
+      ".assessment-cache/compact-ledgers/v4.2/debate-180.jsonl"
+    ],
+    "copiedBytes": {
+      "docs/reassessment-rubric-v4.0.md": 8242,
+      "docs/reassessment-rubric-v4.0.1.md": 1010,
+      "docs/reassessment-rubric-v4.1.md": 1963,
+      "docs/calibration/v4.2/compact-transport-smoke/manual.md": 3596,
+      "docs/calibration/v4.2/compact-transport-smoke/schema.json": 43447,
+      "docs/calibration/v4.2/compact-transport-smoke/packet.json": 2959,
+      ".assessment-cache/compact-ledgers/v4.2/debate-180.jsonl": 178351
+    },
+    "totalCopiedInputBytes": 239568,
+    "priorV419CopiedInputBytes": 514811,
+    "byteReduction": 275243,
+    "reductionShare": 0.534649
+  },
+  "isolation": {
+    "freshTemporaryCodexHome": true,
+    "freshSourceDirectory": true,
+    "oneDebate": true,
+    "plainTranscriptNotCopiedToModelDirectory": true,
+    "originalEventsNotCopiedToModelDirectory": true,
+    "completeSourceLedgerCopied": true,
+    "historicalWorkflowStackNotCopied": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutMs": 1800000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionApiCalls": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "recoverableStreamEventsNormalMaximum": 2,
+    "recoverableStreamEventsHardMaximum": 8
+  },
+  "authorization": {
+    "primaryModelExecution": true,
+    "deterministicValidation": true,
+    "deterministicTimeCompilation": true,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "freshGateSelection": false,
+    "productionMutation": false
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocksExecution": true,
+    "preexistingOutputBlocksExecution": true,
+    "automaticRetryAuthorized": false,
+    "outputNormalizationAuthorized": false,
+    "timeoutExtensionAuthorized": false
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.2/compact-transport-smoke/model-execution.json",
+    "analysis": "docs/calibration/v4.2/compact-transport-smoke/analysis.json",
+    "rawOutput": "docs/calibration/v4.2/compact-transport-smoke/primary-output.json",
+    "compiledOutput": "docs/calibration/v4.2/compact-transport-smoke/primary-compiled.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.2/compact-transport-smoke/primary-output.json",
+    "docs/calibration/v4.2/compact-transport-smoke/primary-compiled.json",
+    "docs/calibration/v4.2/compact-transport-smoke/model-execution.json",
+    "docs/calibration/v4.2/compact-transport-smoke/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.md": "256635ea18526bc022235a0f72bdb55ceda976792d0b55c97c4140c976a0eee6",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/calibration/v4.2/compact-transport-smoke/manual.md": "2d51e519c1d1b6caec62c4c340a16da8891491ed43229a6517c5292fda68ecae",
+    "docs/calibration/v4.2/compact-transport-smoke/schema.json": "fc48e5b5b8c885767c3fb9b8ac32d1af46ce1668dae125c2ff23b597291b3161",
+    "docs/calibration/v4.2/compact-transport-smoke/preparation-manifest.json": "bd6af527eaad31cacc99a8f12dd5ff22ab3d5ca340c910941923865dea06e550",
+    ".assessment-cache/compact-ledgers/v4.2/debate-180.jsonl": "fe12947cdb507ebce35e534f556eecac8a550502f29e38afff0bd9ef10ece693",
+    ".assessment-cache/captions/eoiScvG3Emo/transcript.txt": "c77cda9d022e7801ee5be774178c006f323a398c0049b9de1b4de84b5fe8e5c2",
+    ".assessment-cache/captions/eoiScvG3Emo/events.json": "374d6541171ca7fb3127b731d895ed03b5158e4520ff8a8db615237917d1febe",
+    ".assessment-cache/captions/eoiScvG3Emo/manifest.json": "11b729c1d5ec9ddc0326cb138e1a4b6f9a7628a3f66734ababfedf75c1c0ea88",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v41-lean-production.mjs": "9d4f4a5a54ff4c73f50733aa148064200862991a69003823d303e7bac363d9ba",
+    "scripts/lib/v417-fresh-validation.mjs": "c7226c573fab54ef5466f056488fa039e55da5746bd73d1d87553f61c3ec0f79",
+    "scripts/lib/v418-source-integrity.mjs": "ff0593a316fcd06f1662b0f9c9864bdd4c2a867a718638a79cac8b9f27eac205",
+    "scripts/lib/v419-schema-bounded-source.mjs": "4e40ed49afd5418de00c8830edcb81f9047ab99fe4dc584f978953a7bb15d548",
+    "scripts/lib/v42-compact-transport.mjs": "f09819bc34a1ed3e3d4c4c2a1c2af7eb50846dcf1deee90fa050da3ef7fe37c9",
+    "scripts/build-v42-compact-transport-smoke.mjs": "bb89d325b604ce691d38869e05462ea923030e381d51fa38f82ce933279de61c",
+    "scripts/test-v42-compact-transport.mjs": "c267c49c1ed89e7d3b3f6941c01a174482ab5af430084887a9784326f7f0b1e8",
+    "scripts/validate-v42-primary-output.mjs": "c17ed3c1a567b47e99cb19a6816d1459b773e90ed948a7082695caf701873e62",
+    "scripts/preregister-v42-compact-transport-execution.mjs": "06adb249df1282d23c870ccacd5de97a22329f803abefd5494a489c6c2994844",
+    "scripts/run-v42-compact-transport-execution.mjs": "02332be9db04b6c39d5a83417b23069b671932514f189216ae8b164d9da17156",
+    "scripts/analyze-v42-compact-transport.mjs": "7fd8b1dd72f759ea12e3b88dd8033eb597370a0715772fc6d8de3974d4d5a2e5"
+  }
+}
