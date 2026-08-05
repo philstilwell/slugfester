@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "4.2.18.3-fresh-primary-failure-diagnosis",
+  "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+  "status": "fresh-direct-primary-recovery-redesign-required",
+  "developmentOnly": true,
+  "codeOnly": true,
+  "gateResultPreserved": {
+    "validContexts": 0,
+    "attemptedContexts": 3,
+    "retries": 0,
+    "corrections": 0,
+    "scoresDerived": 0
+  },
+  "diagnostics": [
+    {
+      "debateNumber": "102",
+      "debateId": "woodford-brierley-christianity-rational-2019",
+      "elapsedMinutes": 15,
+      "status": "timed-out",
+      "sourceLedgerEvents": 2625,
+      "compactCopiedInputBytes": 187972,
+      "rawOutputAvailable": false,
+      "failureDomains": [
+        "direct-route-timeout"
+      ],
+      "counterfactual": null
+    },
+    {
+      "debateNumber": "107",
+      "debateId": "lennox-ruse-science-faith-evidence-god-2018",
+      "elapsedMinutes": 4.79,
+      "status": "output-validation-failed",
+      "sourceLedgerEvents": 1296,
+      "compactCopiedInputBytes": 116803,
+      "rawOutputAvailable": true,
+      "failureDomains": [
+        "source-excerpt-length"
+      ],
+      "overlongExcerpts": [
+        {
+          "moveId": "m02",
+          "characters": 508,
+          "words": 101
+        },
+        {
+          "moveId": "m03",
+          "characters": 531,
+          "words": 94
+        },
+        {
+          "moveId": "m04",
+          "characters": 612,
+          "words": 120
+        },
+        {
+          "moveId": "m05",
+          "characters": 715,
+          "words": 133
+        },
+        {
+          "moveId": "m06",
+          "characters": 694,
+          "words": 130
+        },
+        {
+          "moveId": "m07",
+          "characters": 572,
+          "words": 107
+        },
+        {
+          "moveId": "m08",
+          "characters": 601,
+          "words": 120
+        },
+        {
+          "moveId": "m09",
+          "characters": 593,
+          "words": 113
+        },
+        {
+          "moveId": "m10",
+          "characters": 992,
+          "words": 177
+        },
+        {
+          "moveId": "m11",
+          "characters": 608,
+          "words": 120
+        },
+        {
+          "moveId": "m12",
+          "characters": 750,
+          "words": 148
+        }
+      ],
+      "maximumExcerptCharacters": 992,
+      "chronologyInversions": [],
+      "responseTupleViolations": [],
+      "counterfactual": {
+        "status": "passes-after-in-memory-whole-word-excerpt-shortening-and-chronology-sort",
+        "moves": 12,
+        "acceptedAsGateEvidence": false
+      }
+    },
+    {
+      "debateNumber": "126",
+      "debateId": "craig-clifton-kalam-cosmological-argument-2021",
+      "elapsedMinutes": 7.89,
+      "status": "output-validation-failed",
+      "sourceLedgerEvents": 1559,
+      "compactCopiedInputBytes": 126265,
+      "rawOutputAvailable": true,
+      "failureDomains": [
+        "source-excerpt-length",
+        "move-chronology",
+        "response-class-rating-consistency"
+      ],
+      "overlongExcerpts": [
+        {
+          "moveId": "m07-pro-double-absurdity",
+          "characters": 452,
+          "words": 85
+        },
+        {
+          "moveId": "m11-pro-burden-restriction",
+          "characters": 461,
+          "words": 87
+        },
+        {
+          "moveId": "m12-con-reassertion",
+          "characters": 482,
+          "words": 78
+        },
+        {
+          "moveId": "m19-pro-agent-distinction",
+          "characters": 491,
+          "words": 86
+        }
+      ],
+      "maximumExcerptCharacters": 491,
+      "chronologyInversions": [
+        {
+          "priorMoveId": "m12-con-reassertion",
+          "priorStartEvent": 946,
+          "moveId": "m13-pro-tense-theory",
+          "startEvent": 831
+        }
+      ],
+      "responseTupleViolations": [
+        {
+          "moveId": "m05-pro-mind-counterexample",
+          "responseClass": "full-answer",
+          "contactedComponents": 2,
+          "totalComponents": 3,
+          "responsivenessValue": 88,
+          "permittedRange": [
+            80,
+            100
+          ],
+          "structuralClassValid": false,
+          "ratingInClassRange": true
+        }
+      ],
+      "counterfactual": {
+        "status": "still-fails-after-in-memory-whole-word-excerpt-shortening-and-chronology-sort",
+        "nextFailure": "moves[4]: full answer must contact every component",
+        "acceptedAsGateEvidence": false
+      }
+    }
+  ],
+  "findings": {
+    "durationOnlyDirectRoutingRejected": true,
+    "proposedConservativeDirectRouteCeilingsForNextTest": {
+      "sourceLedgerEventsMaximum": 1800,
+      "compactCopiedInputBytesMaximum": 150000,
+      "evidenceBasis": "both completed contexts were below these limits; the timed-out context exceeded both"
+    },
+    "sourceExcerptSchemaMaximumRemovalRejected": true,
+    "debate107CounterfactualPassesAfterEvidenceOnlyWholeWordShortening": true,
+    "repositoryOwnedChronologySortCandidate": true,
+    "responseClassMustPrecedeWithinClassResponsiveness": true
+  },
+  "requiredRecoveryDesign": [
+    "select or route direct contexts using compact event count and copied input bytes, not duration alone",
+    "compile or normalize source excerpts only at whole-word boundaries while preserving the selected source span and a minimum evidence window",
+    "sort moves deterministically by source chronology and then fail any response edge that no longer targets an earlier move",
+    "derive response class from locked component findings before soliciting or mapping the within-class responsiveness judgment"
+  ],
+  "totals": {
+    "modelContexts": 0,
+    "retries": 0,
+    "corrections": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "recoveryDesign": true,
+    "recoveryModelExecution": false,
+    "scoreDerivation": false,
+    "requiredAudioVerification": false,
+    "passB": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}

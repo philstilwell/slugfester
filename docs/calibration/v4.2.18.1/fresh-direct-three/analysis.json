@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "4.2.18.2-fresh-direct-primary-analysis",
+  "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+  "status": "fresh-direct-primary-gate-failed-validation",
+  "calibrationOnly": true,
+  "directLaneOnly": true,
+  "debates": [
+    {
+      "debateNumber": "102",
+      "debateId": "woodford-brierley-christianity-rational-2019",
+      "family": "resurrection-history",
+      "controlSampleSelected": false,
+      "accepted": false,
+      "elapsedMinutes": 15,
+      "transportClassification": "clean",
+      "validation": null,
+      "deterministicCompilationReplayPassed": false,
+      "failure": {
+        "status": "timed-out",
+        "message": null
+      }
+    },
+    {
+      "debateNumber": "107",
+      "debateId": "lennox-ruse-science-faith-evidence-god-2018",
+      "family": "evil-hiddenness",
+      "controlSampleSelected": true,
+      "accepted": false,
+      "elapsedMinutes": 4.79,
+      "transportClassification": "clean",
+      "validation": null,
+      "deterministicCompilationReplayPassed": false,
+      "failure": {
+        "status": "output-validation-failed",
+        "message": "file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v425-conservative-excerpt.mjs:45\n  for (const move of output.moves ?? []) if (move.sourceSpan?.excerpt?.length > V425_EXCERPT_MAXIMUM_CHARACTERS) throw new Error(`${move.moveId}: excerpt exceeds ${V425_EXCERPT_MAXIMUM_CHARACTERS} characters`);\n                                                                                                                       ^\n\nError: m02: excerpt exceeds 450 characters\n    at validateV425PrimaryOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v425-conservative-excerpt.mjs:45:120)\n    at validateV426PrimaryOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v426-retired-completion.mjs:24:424)\n    at validateV4218PrimaryOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4218-fresh-direct-three.mjs:40:22)\n    at validateV42181PrimaryOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v42181-fresh-direct-three.mjs:41:22)\n    at file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/validate-v42181-primary-output.mjs:9:28\n\nNode.js v25.9.0"
+      }
+    },
+    {
+      "debateNumber": "126",
+      "debateId": "craig-clifton-kalam-cosmological-argument-2021",
+      "family": "science-origins",
+      "controlSampleSelected": false,
+      "accepted": false,
+      "elapsedMinutes": 7.89,
+      "transportClassification": "clean",
+      "validation": null,
+      "deterministicCompilationReplayPassed": false,
+      "failure": {
+        "status": "output-validation-failed",
+        "message": "file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v425-conservative-excerpt.mjs:45\n  for (const move of output.moves ?? []) if (move.sourceSpan?.excerpt?.length > V425_EXCERPT_MAXIMUM_CHARACTERS) throw new Error(`${move.moveId}: excerpt exceeds ${V425_EXCERPT_MAXIMUM_CHARACTERS} characters`);\n                                                                                                                       ^\n\nError: m07-pro-double-absurdity: excerpt exceeds 450 characters\n    at validateV425PrimaryOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v425-conservative-excerpt.mjs:45:120)\n    at validateV426PrimaryOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v426-retired-completion.mjs:24:424)\n    at validateV4218PrimaryOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4218-fresh-direct-three.mjs:40:22)\n    at validateV42181PrimaryOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v42181-fresh-direct-three.mjs:41:22)\n    at file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/validate-v42181-primary-output.mjs:9:28\n\nNode.js v25.9.0"
+      }
+    }
+  ],
+  "sourceIntegrityBoundary": {
+    "completeLocalTranscriptChains": 3,
+    "compactLedgersReplayedExactly": 0,
+    "chronologyFirstValidatedContexts": 0,
+    "deterministicTimeCompilationsReplayed": 0,
+    "rawExcerptMaximumCharactersEnforcedByValidator": 450,
+    "structuredExcerptMaximumCharacterKeyword": false
+  },
+  "runtime": {
+    "passed": false,
+    "observedMeanPrimaryMinutes": 9.23,
+    "observedMaximumPrimaryMinutes": 15,
+    "maximumAllowedMeanMinutes": 7.75,
+    "maximumAllowedContextMinutes": 10
+  },
+  "planningBoundary": {
+    "finalizationGateStatus": "no-truncation-finalization-gate-passed-fresh-judgment-gate-preparation-authorized",
+    "projected195CentralHoursBeforeFreshPrimaryReplication": 43.97,
+    "projected195ConservativeHoursBeforeFreshPrimaryReplication": 59.73,
+    "projectionReplacedFromDirectOnlySample": false,
+    "longContextLaneStillRequiresSeparateValidation": true
+  },
+  "totals": {
+    "debates": 3,
+    "modelContexts": 3,
+    "attempts": 3,
+    "retries": 0,
+    "correctionContexts": 0,
+    "validContexts": 0,
+    "moves": 0,
+    "mediumOrLowAttributionMoves": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "deterministicScoreAndRiskPreparation": false,
+    "deterministicScoreDerivationExecution": false,
+    "riskExtractionExecution": false,
+    "requiredAudioVerificationPreparation": false,
+    "passBPreparation": false,
+    "longContextLaneExecution": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}

@@ -1,0 +1,7 @@
+# Slugfester Fresh Primary Failure Diagnosis v4.2.18.3
+
+This code-only stage diagnoses the failed v4.2.18.2 direct-lane gate without retrying, correcting, normalizing, or accepting any model output. It preserves the timeout and both raw invalid results as gate evidence, evaluates counterfactual transformations only in memory, and writes no reconstructed debate or score.
+
+The diagnosis distinguishes three failure domains. First, direct routing by video duration alone admitted Debate 102 despite a 2,625-event, approximately 188 KB compact input; it timed out at 15 minutes. Second, removing the response-schema character maximum prevented mid-word clipping but allowed nearly every Debate 107 excerpt to exceed the unchanged 450-character validator ceiling. Third, Debate 126 contained both a chronology inversion and an internally inconsistent response tuple whose class, component-contact flags, and responsiveness value cannot all be valid together.
+
+A recovery may be prepared only after separately specifying: a conservative direct-lane route using compact input size and event count; repository-owned whole-word source-excerpt compilation or bounded normalization that cannot alter the selected source span or participant judgment; repository-owned chronological ordering followed by target-edge validation; and a response contract in which structural class is derived before the within-class responsiveness value is chosen. This stage authorizes recovery design only—not another model execution, score derivation, production mutation, or the 195-debate run.
