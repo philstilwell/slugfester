@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "4.1.1-bounded-schema-preflight-manifest",
+  "protocolId": "v4.1.1-bounded-lean-risk-triggered-consensus",
+  "status": "frozen-one-synthetic-context-authorized",
+  "frozenAt": "2026-08-05T03:58:33.946Z",
+  "checkpointCommit": "338a31a8c1e48e2a9f9f3c48e31e928ad25957f8",
+  "syntheticOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "medium"
+  },
+  "inputs": {
+    "workflowBase": "docs/assessment-workflow-v4.0.md",
+    "workflowDerivedScores": "docs/assessment-workflow-v4.0.1.md",
+    "workflow": "docs/assessment-workflow-v4.1.md",
+    "workflowBurdenIds": "docs/assessment-workflow-v4.1.1.md",
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubric": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.1.1/lean-retired-gate/manual.md",
+    "packet": "docs/calibration/v4.1.1/lean-retired-gate/schema-preflight/packet.json",
+    "schema": "docs/calibration/v4.1.1/lean-retired-gate/schemas/primary.schema.json",
+    "transcript": "docs/calibration/v4.0/lean-retired-gate/schema-preflight/transcript.txt",
+    "events": "docs/calibration/v4.0/lean-retired-gate/schema-preflight/events.json"
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attempts": 1,
+    "retriesMaximum": 0,
+    "perInvocationTimeoutMs": 1200000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "authorization": {
+    "syntheticSchemaPreflightModelExecution": true,
+    "debatePrimaryModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  },
+  "artifacts": {
+    "output": "docs/calibration/v4.1.1/lean-retired-gate/schema-preflight/output.json",
+    "execution": "docs/calibration/v4.1.1/lean-retired-gate/schema-preflight/model-execution.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.1.1/lean-retired-gate/schema-preflight/output.json",
+    "docs/calibration/v4.1.1/lean-retired-gate/schema-preflight/model-execution.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.0.md": "f3c37042481d808fc5e0a63430f021b0e4a76f9da4147d9de78a0d87e0f0c154",
+    "docs/assessment-workflow-v4.0.1.md": "41c6e13306ad8fc96a46ef5cdaf55e4d38b2c3db69346035a7e1076e650d81b8",
+    "docs/assessment-workflow-v4.1.md": "cb07c1014aa1f0d758d277497bc5333530b495219dcffb94faa93d8815d97f6d",
+    "docs/assessment-workflow-v4.1.1.md": "49b766209be8f0806393db73c2187134bb034259d87f8a2694e7c336837e645e",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/calibration/v4.1.1/lean-retired-gate/manual.md": "6377827628cc560bc90e0ced885c822bd6194ce38862004a3b1bf226a5ecc438",
+    "docs/calibration/v4.1.1/lean-retired-gate/schema-preflight/packet.json": "4f5d6347c930e4f90746da8626c4337e847bd7d4e4ca26d3cd5d10c4fbfb22c0",
+    "docs/calibration/v4.1.1/lean-retired-gate/schemas/primary.schema.json": "e8a82465c03efd2c1b1edb9bf716fa42feb3bee5f3ff65754872a2d783ca9443",
+    "docs/calibration/v4.0/lean-retired-gate/schema-preflight/transcript.txt": "3fb2cfc08a8766a2ccb7ac1f7d239bf770018f1708a12e3a8ef6ad9266663bef",
+    "docs/calibration/v4.0/lean-retired-gate/schema-preflight/events.json": "697fcc3ff2412572593f8f3cc4922635d9e7f257d2993b9ebc0bb3ddd9800bf5",
+    "docs/calibration/v4.1.1/lean-retired-gate/preparation-manifest.json": "535c48d8297bdce03a55e8942300e4a59ffd83b9067e6afcd3610f3d1fd01c6e",
+    "docs/calibration/v4.1.1/lean-retired-gate/dry-fixture.json": "b0eb7bfa1273abf0c2c18c9cfa8f1bdf50e7e345af7fdeea5f7dd61489af3f26",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v41-lean-production.mjs": "0384ae858678369bbcbb3024c083d5395a687c7e523b37b9801ce5a08b440f4b",
+    "scripts/validate-v41-lean-primary-output.mjs": "38ba08d7354ad32191d7e52996bf09020d61fa454b0ea982f96f17e443c89f28",
+    "scripts/preregister-v41-lean-schema-preflight.mjs": "0f79d19b57724af1b4a4e9ebd6fde4b08a0b82ffd4c28ece7fac08d44a631884",
+    "scripts/run-v41-lean-schema-preflight.mjs": "fbc7bac998a8dc9ea752fee72747fec7093acd25d9abbb5ebca77e9432f96840"
+  }
+}
