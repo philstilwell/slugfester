@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "4.2.1-primary-validation-failure-analysis",
+  "protocolId": "v4.2.1-compact-transport-fresh-six-validation",
+  "status": "failed-chronology-cross-reference-validation",
+  "execution": {
+    "contextsPlanned": 6,
+    "contextsAttempted": 1,
+    "contextsSkipped": 5,
+    "attempts": 1,
+    "retries": 0,
+    "elapsedMs": 254778,
+    "timeoutMs": 1800000,
+    "completedInsideTimeout": true,
+    "recoverableStreamEvents": 0,
+    "transportClassification": "clean",
+    "meteredApiCostUsd": 0,
+    "transcriptionApiCalls": 0,
+    "transcriptionCostUsd": 0
+  },
+  "failedContext": {
+    "debateNumber": "07",
+    "debateId": "wood-oconnor-jesus-claim-god-2025",
+    "durationSeconds": 8549,
+    "compactCopiedInputBytes": 288738,
+    "rawOutputCreated": true,
+    "rawOutputSha256": "c1f131d62864c0549c0af207d660bce20d055f8b4b4ed8904f43610a898acbcc",
+    "compiledOutputCreated": false
+  },
+  "validation": {
+    "endpointSchemaOutputCreated": true,
+    "deterministicValidatorReached": true,
+    "firstSurfacedFailure": "moves[7]: response target must be an earlier move",
+    "invalidTargetEdges": [
+      {
+        "replyMoveId": "pro-trial-reply",
+        "replyStartEvent": 2846,
+        "targetMoveId": "con-trial-presupposition",
+        "targetStartEvent": 2877,
+        "targetSelected": true,
+        "targetChronologicallyEarlier": false
+      }
+    ],
+    "laterValidationResultsAvailable": false
+  },
+  "diagnosis": {
+    "runtimeFailure": false,
+    "transportFailure": false,
+    "sourceHashFailure": false,
+    "compactLedgerPreflightFailure": false,
+    "chronologyCrossReferenceFailure": true,
+    "selectedReplyTargetsLaterRestatement": true,
+    "earlierPromptingMaterialSelectedAsMove": false,
+    "compactTransportImplicated": false,
+    "lowEffortSemanticLinkageReliabilityImplicated": true
+  },
+  "disposition": {
+    "v421GatePassed": false,
+    "retryAuthorized": false,
+    "outputNormalizationAuthorized": false,
+    "remainingFiveContextsExecuted": false,
+    "scoreDerivationAuthorized": false,
+    "legacyComparisonAuthorized": false,
+    "allSixV421DebatesBecomeDiagnosticExclusions": true,
+    "chronologyFirstContractDevelopmentAuthorized": true
+  },
+  "nextDevelopmentTest": {
+    "diagnosticDebateNumber": "07",
+    "compactTransportRetained": true,
+    "judgmentAnchorsChanged": false,
+    "nestedMoveArraysReplacedByOneChronologicalMoveInventory": true,
+    "selectedTargetMustAppearEarlierInEmittedInventory": true,
+    "deterministicCrossReferenceRejectionRetained": true,
+    "oneAttemptNoRetryRetained": true,
+    "scoreDerivationProhibited": true
+  }
+}
