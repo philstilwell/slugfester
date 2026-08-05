@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "4.2.9-long-context-partition-analysis",
+  "protocolId": "v4.2.9-long-context-partition-diagnostic",
+  "status": "partition-source-discovery-failed",
+  "debateNumber": "99",
+  "developmentOnly": true,
+  "completeSourceCoverage": {
+    "originalEvents": 3397,
+    "jointlyCoveredEvents": 3397,
+    "overlapStartEvent": 1638,
+    "overlapEndEvent": 1758,
+    "overlapEvents": 121,
+    "complete": true
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-1",
+      "status": "result-missing",
+      "elapsedMs": 3606,
+      "validationMessage": null
+    },
+    {
+      "chunkId": "chunk-2",
+      "status": "result-missing",
+      "elapsedMs": 1908,
+      "validationMessage": null
+    }
+  ],
+  "candidates": {
+    "total": 0,
+    "pro": 0,
+    "con": 0,
+    "crossChunkSpanOverlaps": []
+  },
+  "runtime": {
+    "proposalElapsedMs": 5514,
+    "proposalElapsedMinutes": 0.09,
+    "wholePrimaryTimeoutMsAvoided": 1800000
+  },
+  "totals": {
+    "modelContexts": 2,
+    "attempts": 2,
+    "retries": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "integratedPrimaryPreparation": false,
+    "integratedPrimaryExecution": false,
+    "scoreDerivation": false,
+    "freshGatePreparation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
