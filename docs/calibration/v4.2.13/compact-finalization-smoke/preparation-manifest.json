@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "4.2.13-compact-finalization-preparation",
+  "protocolId": "v4.2.13-compact-finalization-smoke",
+  "status": "prepared-one-retired-finalization-smoke",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "debateNumber": "103",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "inputs": {
+    "workflow": "docs/assessment-workflow-v4.0.md",
+    "rubric": "docs/reassessment-rubric-v3.8.4.md",
+    "manual": "docs/calibration/v4.2.13/compact-finalization-smoke/manual.md",
+    "packet": "docs/calibration/v3.8.8/reconstruction/packets/debate-103.json",
+    "schema": "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/schemas/debate-103.schema.json"
+  },
+  "validationInputs": {
+    "priorValidOutput": "docs/calibration/v3.8.8/reconstruction/outputs/debate-103.json",
+    "correctionAnalysis": "docs/calibration/v4.2.11/lean-structural-correction/analysis.json",
+    "integratedAnalysis": "docs/calibration/v4.2.12/lean-integrated-long-context-primary/analysis.json"
+  },
+  "sourceBoundary": {
+    "fullSourcePacketDelivered": true,
+    "packetMoves": 25,
+    "rawTranscriptDuplicated": false,
+    "rawEventsDuplicated": false,
+    "participantJudgmentAlreadyClosed": true
+  },
+  "output": "docs/calibration/v4.2.13/compact-finalization-smoke/output.json",
+  "policy": {
+    "oneAttempt": true,
+    "retries": 0,
+    "timeoutMs": 600000,
+    "runtimeThresholdMinutes": 4.5,
+    "scoresLockedFromPacket": true,
+    "scoresDerived": false,
+    "productionMutation": false
+  },
+  "totals": {
+    "inputBytes": 176933,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "executionManifest": false,
+    "modelExecution": false,
+    "threeDebateFinalizationGatePreparation": false,
+    "scoring": false,
+    "productionMutation": false
+  }
+}
