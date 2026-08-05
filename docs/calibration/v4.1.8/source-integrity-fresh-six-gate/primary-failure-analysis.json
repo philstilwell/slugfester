@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "4.1.8-primary-failure-analysis",
+  "protocolId": "v4.1.8-source-integrity-fresh-six-validation",
+  "status": "failed-excerpt-compactness-contract",
+  "execution": {
+    "contextsPlanned": 6,
+    "contextsAttempted": 1,
+    "contextsSkipped": 5,
+    "attempts": 1,
+    "retries": 0,
+    "transportClassification": "clean",
+    "elapsedMs": 232831,
+    "meteredApiCostUsd": 0,
+    "transcriptionApiCalls": 0,
+    "transcriptionCostUsd": 0
+  },
+  "failedContext": {
+    "debateNumber": "52",
+    "debateId": "horn-dillahunty-resurrection-reasonable-2021",
+    "rawOutput": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/primary-outputs/debate-52.json",
+    "rawOutputSha256": "e954ab09e3e1bd9d4e6adabc0f133607c8ddd9b53e1401719126b978aa6b7528",
+    "compiledOutputCreated": false
+  },
+  "diagnosis": {
+    "firstValidatorMessage": "file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69\n  if (!condition) throw new Error(message);\n                        ^\n\nError: con_reality_standard: excerpt token count outside 12..90\n    at assertV4 (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69:25)\n    at validateV418PrimaryOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v418-source-integrity.mjs:152:5)\n    at file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/validate-v418-primary-output.mjs:12:28\n\nNode.js v25.9.0",
+    "moves": 8,
+    "excerptsOverNinetyTokens": 6,
+    "lexicalCoverageFailures": 0,
+    "orderedCoverageFailures": 0,
+    "inheritedJudgmentValidationPassed": true,
+    "sourceProvenanceFailure": false,
+    "endpointSchemaContainedCharacterMaximum": false,
+    "proseOnlyTokenMaximumWasInsufficientlyEnforced": true
+  },
+  "moves": [
+    {
+      "moveId": "pro_standard_opening",
+      "excerptCharacters": 449,
+      "excerptTokens": 77,
+      "lexicalRecall": 1,
+      "orderedCoverage": 1,
+      "exceededFrozenNinetyTokenMaximum": false
+    },
+    {
+      "moveId": "con_reality_standard",
+      "excerptCharacters": 659,
+      "excerptTokens": 119,
+      "lexicalRecall": 1,
+      "orderedCoverage": 1,
+      "exceededFrozenNinetyTokenMaximum": true
+    },
+    {
+      "moveId": "pro_expected_record",
+      "excerptCharacters": 656,
+      "excerptTokens": 107,
+      "lexicalRecall": 1,
+      "orderedCoverage": 1,
+      "exceededFrozenNinetyTokenMaximum": true
+    },
+    {
+      "moveId": "con_unverifiable_record",
+      "excerptCharacters": 505,
+      "excerptTokens": 93,
+      "lexicalRecall": 1,
+      "orderedCoverage": 1,
+      "exceededFrozenNinetyTokenMaximum": true
+    },
+    {
+      "moveId": "pro_early_claims",
+      "excerptCharacters": 863,
+      "excerptTokens": 143,
+      "lexicalRecall": 1,
+      "orderedCoverage": 1,
+      "exceededFrozenNinetyTokenMaximum": true
+    },
+    {
+      "moveId": "con_testimony_not_data",
+      "excerptCharacters": 682,
+      "excerptTokens": 126,
+      "lexicalRecall": 1,
+      "orderedCoverage": 1,
+      "exceededFrozenNinetyTokenMaximum": true
+    },
+    {
+      "moveId": "pro_hallucination_limits",
+      "excerptCharacters": 1010,
+      "excerptTokens": 166,
+      "lexicalRecall": 1,
+      "orderedCoverage": 1,
+      "exceededFrozenNinetyTokenMaximum": true
+    },
+    {
+      "moveId": "con_sincerity_not_truth",
+      "excerptCharacters": 263,
+      "excerptTokens": 49,
+      "lexicalRecall": 1,
+      "orderedCoverage": 1,
+      "exceededFrozenNinetyTokenMaximum": false
+    }
+  ],
+  "disposition": {
+    "v418GatePassed": false,
+    "rawOutputPreservedUnchanged": true,
+    "retryAuthorized": false,
+    "repairAuthorized": false,
+    "scoreDerivationAuthorized": false,
+    "legacyComparisonAuthorized": false,
+    "unusedV418DebatesReusableInNextGate": false,
+    "nextVersionMayAddProspectiveSchemaCompactnessBound": true
+  }
+}

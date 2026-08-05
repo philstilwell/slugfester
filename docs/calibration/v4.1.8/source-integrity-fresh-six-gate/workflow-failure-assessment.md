@@ -1,0 +1,9 @@
+# v4.1.8 fresh-six workflow failure assessment
+
+The v4.1.8 gate failed on its first and only attempted context and stopped the remaining five as preregistered. Debate 52 completed cleanly through the ChatGPT subscription in 3.88 minutes with no retry, API charge, or transcription call. Its raw structured output is preserved unchanged; no compiled artifact, score, or legacy comparison was created.
+
+The failure was the frozen excerpt-compactness contract. Six of eight exact excerpts exceeded the 90-token maximum, including the first rejected move at 119 tokens. This was not another source-provenance failure: every excerpt achieved 1.0 lexical recall and 1.0 ordered coverage against its declared events, and the output passed every inherited structural and judgment rule after diagnostic repository-time compilation. The defect was that v4.1.8 expressed the token ceiling in the prompt and deterministic validator but supplied no endpoint-schema character ceiling to constrain generation.
+
+The gate result remains failed. The output will not be shortened, normalized, retried, scored, or reused. All six v4.1.8 sample debates—including the five never executed—become diagnostic exclusions for the next prospective sample.
+
+The next workflow version should retain event-file hashing, repository-owned times, lexical recall, and ordered coverage. It should add a schema-enforced excerpt `maxLength` of 600 characters, retain the 12-token minimum, and prospectively set the deterministic maximum to 100 tokens. The 600-character endpoint constraint addresses the observed long-output mode directly; the 100-token deterministic ceiling permits compact short-word excerpts without weakening provenance. Oversized-character and oversized-token mutations must fail before a new disjoint source-blind sample is selected.
