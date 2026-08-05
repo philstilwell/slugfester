@@ -1,0 +1,298 @@
+{
+  "schemaVersion": "4.2.9.2-adaptive-partition-execution-manifest",
+  "executionSchemaVersion": "4.2.9.2-adaptive-partition-model-execution",
+  "protocolId": "v4.2.9.2-adaptive-long-context-continuation",
+  "proposalProtocolId": "v4.2.9-long-context-partition-diagnostic",
+  "stageLabel": "v4.2.9.2-adaptive-partition",
+  "status": "frozen-two-adaptive-proposers-authorized",
+  "frozenAt": "2026-08-05T15:07:30Z",
+  "checkpointCommit": "082ccc50c9527e6686a10f133d2633e45352bdc4",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "debateNumber": "99",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "modelInputs": {
+    "selectionRubric": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.2.9/long-context-partition/manual.md",
+    "schema": "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/schema.json",
+    "packet": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-99.json"
+  },
+  "source": {
+    "packet": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-99.json",
+    "fullLedger": ".assessment-cache/compact-ledgers/v4.2.4/debate-99.jsonl",
+    "originalEvents": ".assessment-cache/captions/UWCvKiWjV0g/events.json",
+    "v428Execution": "docs/calibration/v4.2.8/correction-aware-retired-continuation/model-execution.json",
+    "v428Analysis": "docs/calibration/v4.2.8/correction-aware-retired-continuation/primary-analysis.json",
+    "priorPreparation": "docs/calibration/v4.2.9.1/long-context-schema-recovery/preparation-manifest.json",
+    "priorExecution": "docs/calibration/v4.2.9.1/long-context-schema-recovery/model-execution.json",
+    "priorAnalysis": "docs/calibration/v4.2.9.1/long-context-schema-recovery/analysis.json",
+    "priorRejectedSchema": "docs/calibration/v4.2.9/long-context-partition/schema.json",
+    "rawChunk1": "docs/calibration/v4.2.9.1/long-context-schema-recovery/proposals/chunk-1.json"
+  },
+  "inherited": {
+    "chunkId": "chunk-1",
+    "sourceChunk": {
+      "chunkId": "chunk-1",
+      "startEvent": 0,
+      "endEvent": 1758,
+      "chunkPath": "docs/calibration/v4.2.9/long-context-partition/chunks/chunk-1.jsonl",
+      "chunkSha256": "1ab092be9a79e87ed7a6f67bb35c5780494e5ccd7b273c8b0aa1e9013a4165b6",
+      "rows": 1759,
+      "bytes": 102648,
+      "rawOutput": "docs/calibration/v4.2.9.1/long-context-schema-recovery/proposals/chunk-1.json"
+    },
+    "rawOutput": "docs/calibration/v4.2.9.1/long-context-schema-recovery/proposals/chunk-1.json",
+    "derivedOutput": "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/inherited/chunk-1-derived.json",
+    "changedCandidateIds": [
+      "c6-pantheism-simpler"
+    ],
+    "derivationRule": "moveKind = constructive only when responseIntent.kind is constructive; otherwise reply",
+    "allOtherCandidateFieldsImmutable": true,
+    "validation": {
+      "status": "passed",
+      "debateNumber": "99",
+      "chunk": {
+        "chunkId": "chunk-1",
+        "startEvent": 0,
+        "endEvent": 1758,
+        "rows": 1759,
+        "bytes": 102648,
+        "exactSourceSlice": true
+      },
+      "candidates": 12,
+      "sourceIntegrity": [
+        {
+          "candidateId": "c1-digital-physics-mind",
+          "startEvent": 306,
+          "endEvent": 319,
+          "characterCount": 395,
+          "tokenCount": 67,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "candidateId": "c2-cosmic-consciousness",
+          "startEvent": 393,
+          "endEvent": 418,
+          "characterCount": 365,
+          "tokenCount": 55,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "candidateId": "c3-introspective-idealism",
+          "startEvent": 439,
+          "endEvent": 484,
+          "characterCount": 409,
+          "tokenCount": 65,
+          "lexicalRecall": 1,
+          "orderedCoverage": 0.969231
+        },
+        {
+          "candidateId": "c4-underdetermination-pantheism",
+          "startEvent": 512,
+          "endEvent": 557,
+          "characterCount": 381,
+          "tokenCount": 79,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "candidateId": "c5-metaphysical-stopping-points",
+          "startEvent": 577,
+          "endEvent": 629,
+          "characterCount": 335,
+          "tokenCount": 57,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "candidateId": "c6-pantheism-simpler",
+          "startEvent": 709,
+          "endEvent": 728,
+          "characterCount": 410,
+          "tokenCount": 71,
+          "lexicalRecall": 1,
+          "orderedCoverage": 0.985915
+        },
+        {
+          "candidateId": "c7-involuntary-suffering",
+          "startEvent": 787,
+          "endEvent": 812,
+          "characterCount": 398,
+          "tokenCount": 72,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "candidateId": "c8-emergence-does-not-imply-mind",
+          "startEvent": 887,
+          "endEvent": 915,
+          "characterCount": 410,
+          "tokenCount": 75,
+          "lexicalRecall": 0.986667,
+          "orderedCoverage": 0.973333
+        },
+        {
+          "candidateId": "c9-evidence-over-consensus",
+          "startEvent": 934,
+          "endEvent": 985,
+          "characterCount": 446,
+          "tokenCount": 78,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "candidateId": "c10-self-undermining-epistemic-limit",
+          "startEvent": 1103,
+          "endEvent": 1116,
+          "characterCount": 394,
+          "tokenCount": 69,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "candidateId": "c11-epistemic-not-metaphysical",
+          "startEvent": 1186,
+          "endEvent": 1212,
+          "characterCount": 418,
+          "tokenCount": 72,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "candidateId": "c12-methodological-naturalism-assumed",
+          "startEvent": 1701,
+          "endEvent": 1713,
+          "characterCount": 446,
+          "tokenCount": 76,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        }
+      ],
+      "scoresDerived": 0
+    }
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-2a",
+      "startEvent": 1638,
+      "endEvent": 2577,
+      "chunkPath": "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/chunks/chunk-2a.jsonl",
+      "chunkSha256": "1f7067bfa68894d1efc68468a0c222d5b550b16da7027c8f6e754a0de4d5897a",
+      "rows": 940,
+      "bytes": 55653,
+      "rawOutput": "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/proposals/chunk-2a.json"
+    },
+    {
+      "chunkId": "chunk-2b",
+      "startEvent": 2457,
+      "endEvent": 3396,
+      "chunkPath": "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/chunks/chunk-2b.jsonl",
+      "chunkSha256": "d1eb53ca2dff8bb9ef8622c857ff29235500e4cec5710b0b3b1dc8ff009edf57",
+      "rows": 940,
+      "bytes": 55730,
+      "rawOutput": "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/proposals/chunk-2b.json"
+    }
+  ],
+  "coverage": {
+    "originalEvents": 3397,
+    "ranges": [
+      {
+        "chunkId": "chunk-1",
+        "startEvent": 0,
+        "endEvent": 1758
+      },
+      {
+        "chunkId": "chunk-2a",
+        "startEvent": 1638,
+        "endEvent": 2577
+      },
+      {
+        "chunkId": "chunk-2b",
+        "startEvent": 2457,
+        "endEvent": 3396
+      }
+    ],
+    "overlapEventsPerBoundary": 121,
+    "complete": true
+  },
+  "isolation": {
+    "freshTemporaryCodexHomePerChunk": true,
+    "freshSourceDirectoryPerChunk": true,
+    "otherNewChunkUnavailable": true,
+    "inheritedProposalUnavailable": true,
+    "priorFailuresUnavailable": true,
+    "legacyUnavailable": true,
+    "scoresUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 2,
+    "attemptsPerContext": 1,
+    "semanticRetries": 0,
+    "sequentialExecution": true,
+    "continueAfterLocalChunkFailure": true,
+    "timeoutMs": 600000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "authorization": {
+    "twoProposalContexts": true,
+    "deterministicValidation": true,
+    "integratedPrimaryPreparation": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/model-execution.json",
+    "analysis": "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/analysis.json",
+    "proposals": [
+      "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/proposals/chunk-2a.json",
+      "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/proposals/chunk-2b.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/proposals/chunk-2a.json",
+    "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/proposals/chunk-2b.json",
+    "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/model-execution.json",
+    "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.9.2.md": "f9bf5d357ad71e5ff1a9e9d73b60686e67c605e6314ac3c07060cbb716889cdc",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/calibration/v4.2.9/long-context-partition/manual.md": "cc7f53a71d916acbac83840d2507a8291ffdb56344794c63cf3214d346d6d256",
+    "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/schema.json": "fbea73b205adcd538033cb599772b834ce5d19cb5581f7502d00d187def9b405",
+    "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-99.json": "dca4a3de43e8bb2daf2327b911a9aa466da0ec272e4448497fd3e3e1cf32a6d8",
+    ".assessment-cache/compact-ledgers/v4.2.4/debate-99.jsonl": "1fc975ee96ce0fc7b32a5bf68d626a1d2185fccdfcb9e6664e7b948658f31cef",
+    ".assessment-cache/captions/UWCvKiWjV0g/events.json": "f27acc146aab36fe21dfd7ae50d1624240a2a12c28fbee9a349b0b36b22f4879",
+    "docs/calibration/v4.2.9.1/long-context-schema-recovery/preparation-manifest.json": "e9205200a8b89293edd0fc75297d103a33c11043c22da6991867e24342cd34d5",
+    "docs/calibration/v4.2.9.1/long-context-schema-recovery/model-execution.json": "aef757a8210ef62f43fa09bfcec98fdba4917870dc09d9f1855fe2b293bd0937",
+    "docs/calibration/v4.2.9.1/long-context-schema-recovery/analysis.json": "8298bb3c14094ae327f90a14a65b1de5c0ac25ade4939729cf2311521c065595",
+    "docs/calibration/v4.2.9.1/long-context-schema-recovery/proposals/chunk-1.json": "8944d4136ad819cf0e45c32f345758729bbe740fc9ec5c8a6917214aa6883153",
+    "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/inherited/chunk-1-derived.json": "76dd2875f3146778d76626a1db37c3219e59f899d6cd9c38ccfaf3dcf1de8e92",
+    "docs/calibration/v4.2.9/long-context-partition/chunks/chunk-1.jsonl": "1ab092be9a79e87ed7a6f67bb35c5780494e5ccd7b273c8b0aa1e9013a4165b6",
+    "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/preparation-manifest.json": "c5ad4d20412978d4fad6711795f444bc62c3a790994006cda73e080f5d3da4b5",
+    "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/chunks/chunk-2a.jsonl": "1f7067bfa68894d1efc68468a0c222d5b550b16da7027c8f6e754a0de4d5897a",
+    "docs/calibration/v4.2.9.2/adaptive-long-context-continuation/chunks/chunk-2b.jsonl": "d1eb53ca2dff8bb9ef8622c857ff29235500e4cec5710b0b3b1dc8ff009edf57",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v41-lean-production.mjs": "9d4f4a5a54ff4c73f50733aa148064200862991a69003823d303e7bac363d9ba",
+    "scripts/lib/v418-source-integrity.mjs": "ff0593a316fcd06f1662b0f9c9864bdd4c2a867a718638a79cac8b9f27eac205",
+    "scripts/lib/v429-long-context-partition.mjs": "c10268ba065442896e8d4906239c90752e4c731d0a2762e9573db76d8baf726e",
+    "scripts/lib/v4291-schema-recovery.mjs": "a5a22ac92b1d167c1eddfb5f6e1926beee0f115a4fba18706066a46051b92bd4",
+    "scripts/lib/v4292-adaptive-partition.mjs": "ec2e647263b74320bb76ee6bf8a4fc6f3fae7013f6a52b48a41abb5fb87b620b",
+    "scripts/build-v4292-adaptive-partition.mjs": "dd1f9ea04174904ccbac15076247a309aa467c1f7c4bab60de208c60322d3c93",
+    "scripts/test-v4292-adaptive-partition.mjs": "344e32ccbe0b0e299030911ff9d715026672b1218fa871a578daa79a68f0d1ef",
+    "scripts/validate-v429-proposal.mjs": "6dcd9bb16fb2c2069a2edd66e5e12cfc0e57d72474c8c11a6923a5823fe3d9ed",
+    "scripts/preregister-v4292-adaptive-partition.mjs": "5d8df2a0d88449fec571f6221744dce37ac0582211f788a3b0f4cf5087c3c7f8",
+    "scripts/run-v429-long-context-partition.mjs": "1806eb68af4e4e3b6c0a0e06ad8195b7b8153373b7d6a07a6a4f5d7d85247f97",
+    "scripts/analyze-v4292-adaptive-partition.mjs": "01bbcb8cd33fa8831f80ed8330b8dc23a830398d4412270557e189c60d8207eb"
+  }
+}
