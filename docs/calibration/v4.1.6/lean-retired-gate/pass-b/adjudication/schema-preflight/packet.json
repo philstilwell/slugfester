@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "4.1.6-dispute-only-adjudication-packet",
+  "protocolId": "v4.1.6-triggered-pass-b-consensus",
+  "debateNumber": "schema-preflight",
+  "debateId": "synthetic-adjudication-preflight",
+  "motion": "The supplied argument adequately supports its conclusion.",
+  "candidateOrdering": "anonymous-and-stable; candidate numbers do not identify a pass",
+  "evidenceBoundary": {
+    "disputedFieldsOnly": true,
+    "lockedMoveEvidenceOnly": true,
+    "initialPassIdentitiesUnavailable": true,
+    "initialPassRationalesUnavailable": true,
+    "fullInitialOutputsUnavailable": true,
+    "nondisputedFieldsUnavailable": true,
+    "calculatedScoresUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "mediumAttributionAudioResolved": true
+  },
+  "dependencyClosure": {
+    "responseTupleAndResponsivenessCompound": true,
+    "charityStateAndRatingCompound": true,
+    "relevanceBurdenAndContactCompound": true,
+    "responseResponsivenessAdded": 1,
+    "responseResponsivenessAbsorbed": 0,
+    "charityRatingsAdded": 1,
+    "charityRatingsAbsorbed": 0
+  },
+  "disputedMoves": [
+    {
+      "moveId": "synthetic-response",
+      "moveIndex": 0,
+      "sectionId": "synthetic-section",
+      "side": "pro",
+      "speaker": "Speaker Pro",
+      "moveKind": "reply",
+      "proposition": "The reply addresses the decisive premise and states why the original conclusion no longer follows.",
+      "sourceSpan": { "startEvent": 0, "endEvent": 1, "startMs": 0, "endMs": 4000, "excerpt": "The premise does not establish the conclusion because its decisive bridge is unsupported." },
+      "importance": 3,
+      "evidence": {
+        "lockedStartEvent": 0,
+        "lockedEndEvent": 1,
+        "contextStartEvent": 0,
+        "contextEndEvent": 1,
+        "events": [
+          { "eventIndex": 0, "tStartMs": 0, "dDurationMs": 2000, "segs": [{ "utf8": "The premise does not establish the conclusion" }] },
+          { "eventIndex": 1, "tStartMs": 2000, "dDurationMs": 2000, "segs": [{ "utf8": "because its decisive bridge is unsupported" }] }
+        ],
+        "audioVerification": null
+      },
+      "triggers": { "responseTupleMismatch": true, "charityStateMismatch": false, "materialScoringFieldKeys": ["logicalCoherence"], "diagnosticScores": { "candidate1": 74, "candidate2": 82 }, "diagnosticMoveDelta": 8, "diagnosticTrigger": true, "exposedScoringFieldKeys": ["logicalCoherence"] },
+      "candidates": {
+        "responsePair": {
+          "candidate1": { "responseTuple": { "class": "partial-answer", "decisiveTargetIds": ["synthetic-opening"], "contactedComponents": 1, "totalComponents": 2, "decisiveComponents": 1, "issueBearingContraryMaterial": false, "diagnosticConsequenceExplicit": false, "replacementDemandAnswered": false }, "responsiveness": 72 },
+          "candidate2": { "responseTuple": { "class": "diagnostic-defeat", "decisiveTargetIds": ["synthetic-opening"], "contactedComponents": 1, "totalComponents": 2, "decisiveComponents": 1, "issueBearingContraryMaterial": false, "diagnosticConsequenceExplicit": true, "replacementDemandAnswered": false }, "responsiveness": 84 },
+          "selectionRule": "Choose one indivisible response-structure and responsiveness-value pair."
+        },
+        "charityPair": null,
+        "scoringFields": { "logicalCoherence": { "candidate1": { "value": 72 }, "candidate2": { "value": 84 }, "absoluteDelta": 12 } }
+      },
+      "requiredDecision": { "responsePairChoiceRequired": true, "charityPairChoiceRequired": false, "scoringFieldChoiceKeys": ["logicalCoherence"] }
+    },
+    {
+      "moveId": "synthetic-charity",
+      "moveIndex": 1,
+      "sectionId": "synthetic-section",
+      "side": "con",
+      "speaker": "Speaker Con",
+      "moveKind": "constructive",
+      "proposition": "A serious alternative remains available unless the opposing side answers its strongest qualified form.",
+      "sourceSpan": { "startEvent": 2, "endEvent": 3, "startMs": 4000, "endMs": 8000, "excerpt": "The qualified alternative remains available and must be answered in its strongest form." },
+      "importance": 2,
+      "evidence": {
+        "lockedStartEvent": 2,
+        "lockedEndEvent": 3,
+        "contextStartEvent": 2,
+        "contextEndEvent": 3,
+        "events": [
+          { "eventIndex": 2, "tStartMs": 4000, "dDurationMs": 2000, "segs": [{ "utf8": "The qualified alternative remains available" }] },
+          { "eventIndex": 3, "tStartMs": 6000, "dDurationMs": 2000, "segs": [{ "utf8": "and must be answered in its strongest form" }] }
+        ],
+        "audioVerification": null
+      },
+      "triggers": { "responseTupleMismatch": false, "charityStateMismatch": true, "materialScoringFieldKeys": [], "diagnosticScores": { "candidate1": 75, "candidate2": 78 }, "diagnosticMoveDelta": 3, "diagnosticTrigger": false, "exposedScoringFieldKeys": [] },
+      "candidates": {
+        "responsePair": null,
+        "charityPair": {
+          "candidate1": { "charity": { "tested": false, "alternative": "", "decisiveQualification": "" }, "representationalCharity": 75 },
+          "candidate2": { "charity": { "tested": true, "alternative": "The opponent may accept the qualified alternative without accepting the broader claim.", "decisiveQualification": "The reply must address the qualification rather than the unqualified position." }, "representationalCharity": 86 },
+          "selectionRule": "Choose one indivisible charity-state and representational-charity-value pair."
+        },
+        "scoringFields": {}
+      },
+      "requiredDecision": { "responsePairChoiceRequired": false, "charityPairChoiceRequired": true, "scoringFieldChoiceKeys": [] }
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidates": {
+        "candidate1": { "value": 0, "eligibility": { "distinctDebateWideConsequence": false, "affectsBurdenCompletion": false, "notAlreadyScored": false, "affectedBurdenIds": [], "completionCriterion": "No distinct criterion remains.", "relatedMoveIds": [], "distinctConsequence": "None beyond scored moves.", "alreadyCapturedBy": ["move ratings"], "counterfactual": "Removing the adjustment omits nothing." } },
+        "candidate2": { "value": 2, "eligibility": { "distinctDebateWideConsequence": true, "affectsBurdenCompletion": true, "notAlreadyScored": true, "affectedBurdenIds": ["pro-central"], "completionCriterion": "The central route must independently establish its conclusion.", "relatedMoveIds": ["synthetic-response"], "distinctConsequence": "The conclusion follows independently of scored move quality.", "alreadyCapturedBy": [], "counterfactual": "Removing it would omit the independent completion consequence." } }
+      },
+      "lockedRouteEvidence": { "routeId": "pro-route", "side": "pro", "description": "Support the motion through the central route.", "successCriteria": "Establish the central conclusion with an adequate independent bridge.", "motionBridge": { "bridgeId": "pro-motion", "tier": "motion", "description": "The complete case supports the motion." }, "centralBridges": [{ "bridgeId": "pro-central", "tier": "central", "description": "The central inference supports the conclusion." }], "subsidiaryBridges": [{ "bridgeId": "pro-subsidiary", "tier": "subsidiary", "description": "A subsidiary consideration adds support." }] },
+      "selectionRule": "Choose one complete supplied value-and-eligibility record; do not invent or mix records."
+    }
+  ],
+  "audit": { "uniqueMoves": 2, "responsePairChoices": 1, "charityPairChoices": 1, "independentScoringFieldChoices": 1, "burdenAdjustmentChoices": 1, "audioVerifiedDisputedMoves": 0, "calculatedScores": 0 }
+}
