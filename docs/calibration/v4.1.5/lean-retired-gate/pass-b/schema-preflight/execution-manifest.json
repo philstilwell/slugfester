@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "4.1.5-triggered-pass-b-schema-preflight-manifest",
+  "protocolId": "v4.1.5-triggered-pass-b-consensus",
+  "status": "frozen-one-synthetic-pass-b-context-authorized",
+  "frozenAt": "2026-08-05T05:59:28Z",
+  "checkpointCommit": "3c8b5761e001540097f81a415b80aaef3cb10605",
+  "syntheticOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "inputs": {
+    "workflow": "docs/assessment-workflow-v4.0.md",
+    "workflowBounded": "docs/assessment-workflow-v4.1.md",
+    "workflowConsistency": "docs/assessment-workflow-v4.1.3.md",
+    "workflowBurdenTuple": "docs/assessment-workflow-v4.1.4.md",
+    "workflowTiming": "docs/assessment-workflow-v4.1.5.md",
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.1.5/lean-retired-gate/pass-b/manual.md",
+    "packet": "docs/calibration/v4.1.5/lean-retired-gate/pass-b/schema-preflight/packet.json",
+    "schema": "docs/calibration/v4.1.5/lean-retired-gate/pass-b/schemas/pass-b.schema.json",
+    "sourcePacket": "docs/calibration/v4.1.5/lean-retired-gate/schema-preflight/packet.json",
+    "transcript": "docs/calibration/v4.0/lean-retired-gate/schema-preflight/transcript.txt",
+    "events": "docs/calibration/v4.0/lean-retired-gate/schema-preflight/events.json"
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attempts": 1,
+    "retriesMaximum": 0,
+    "perInvocationTimeoutMs": 1200000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "authorization": {
+    "syntheticPassBModelExecution": true,
+    "debatePassBModelExecution": false,
+    "disagreementExtraction": false,
+    "adjudication": false,
+    "productionMutation": false
+  },
+  "artifacts": {
+    "output": "docs/calibration/v4.1.5/lean-retired-gate/pass-b/schema-preflight/output.json",
+    "execution": "docs/calibration/v4.1.5/lean-retired-gate/pass-b/schema-preflight/model-execution.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.1.5/lean-retired-gate/pass-b/schema-preflight/output.json",
+    "docs/calibration/v4.1.5/lean-retired-gate/pass-b/schema-preflight/model-execution.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.0.md": "f3c37042481d808fc5e0a63430f021b0e4a76f9da4147d9de78a0d87e0f0c154",
+    "docs/assessment-workflow-v4.1.md": "d5ff0c7c89f8f0eed577a16c5a87865e36b233403d250b65eb6450244bc838cf",
+    "docs/assessment-workflow-v4.1.3.md": "27cc341d3e085f977a801c7d2cacc9e6fe1e3e410c4aff6d3ca17516fa4c8f4e",
+    "docs/assessment-workflow-v4.1.4.md": "695cda4fe6d5ab37686a49c1003dda3465f53f40601dcb52d8c8a780cb442ae0",
+    "docs/assessment-workflow-v4.1.5.md": "d76f29a8b2b5fa884285a6ca86837911c3657eb511e896242beddbf54a48e948",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/calibration/v4.1.5/lean-retired-gate/pass-b/manual.md": "992e4014db6349c87dbbfb65322307f6fa29c48e3cec77d5b7c944ec71b7e6ae",
+    "docs/calibration/v4.1.5/lean-retired-gate/pass-b/schema-preflight/packet.json": "0efd2346ee4ace9a2d12c063872ab48fc64e01cc4decd4cdf1d1cb9d72be69d2",
+    "docs/calibration/v4.1.5/lean-retired-gate/pass-b/schemas/pass-b.schema.json": "5ad01b7d9aa33d6060615661f612d9d4266e4ba790ca4e1f0fd773a1b95b110f",
+    "docs/calibration/v4.1.5/lean-retired-gate/schema-preflight/packet.json": "cbea883df349f045d10d38bf0a581878b551a86e8397cd8f23bfc4b1cb1f28ab",
+    "docs/calibration/v4.0/lean-retired-gate/schema-preflight/transcript.txt": "3fb2cfc08a8766a2ccb7ac1f7d239bf770018f1708a12e3a8ef6ad9266663bef",
+    "docs/calibration/v4.0/lean-retired-gate/schema-preflight/events.json": "697fcc3ff2412572593f8f3cc4922635d9e7f257d2993b9ebc0bb3ddd9800bf5",
+    "docs/calibration/v4.1.5/lean-retired-gate/pass-b/preparation-manifest.json": "c2d53e34e97b145c5fbe912b762bca7e97436f11f52420fd14f302594ed6a108",
+    "docs/calibration/v4.1.5/lean-retired-gate/pass-b/dry-fixture.json": "7c1af5b69e04c3fcd514076d0b92b819bc109d7300baf6d001b3525e6661c613",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v41-lean-production.mjs": "9d4f4a5a54ff4c73f50733aa148064200862991a69003823d303e7bac363d9ba",
+    "scripts/lib/v415-triggered-consensus.mjs": "fdbff319c66766df2d84cabca4b1a272e0b881d183295b21f3915c3e863c4a35",
+    "scripts/validate-v415-pass-b-output.mjs": "308a7e5022324877722e95c8db004c656bedf172f6aeda514a7b0eb5c771c3ca",
+    "scripts/preregister-v415-pass-b-schema-preflight.mjs": "9e6f657f7685b1c7005e62591bde3c1083fe08b3ed52516fa4f92c7267dd5465",
+    "scripts/run-v415-pass-b-schema-preflight.mjs": "a1b4c4d6bc5558b56a619e02e98e934ac3a899e752a3727f306ba51bc229b543"
+  }
+}
