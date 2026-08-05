@@ -2,7 +2,7 @@
 
 import { strict as assert } from "node:assert";
 import { readJson } from "./lib/v41-lean-production.mjs";
-import { makeV417PrimarySchema, validateV417PrimaryOutput, V417_OUTPUT_VERSION, V417_PACKET_VERSION, V417_PROTOCOL_ID } from "./lib/v417-fresh-validation.mjs";
+import { evaluateV417PrimaryTiming, makeV417PrimarySchema, validateV417PrimaryOutput, V417_OUTPUT_VERSION, V417_PACKET_VERSION, V417_PROTOCOL_ID } from "./lib/v417-fresh-validation.mjs";
 
 const [oldPacket, oldOutput] = await Promise.all([
   readJson("docs/calibration/v4.1.5/lean-retired-gate/schema-preflight/packet.json"),
@@ -15,4 +15,8 @@ assert.equal(validateV417PrimaryOutput(output, packet).status, "passed");
 const mutation = structuredClone(output);
 mutation.sections[0].proMoves[0].ratings.responsiveness.value = 101;
 assert.throws(() => validateV417PrimaryOutput(mutation, packet));
-console.log(JSON.stringify({ status: "passed", inheritedEndpointShape: true, protocolTranslationValidated: true, mutationRejected: true, modelContextsExecuted: 0 }, null, 2));
+const timing = evaluateV417PrimaryTiming(["37", "58", "91", "59", "144", "171"].map((debateNumber, index) => ({ debateNumber, gateAcceptancePassed: true, elapsedMs: (4 + index * 0.1) * 60000, recoverableStreamEvents: 0 })));
+assert.equal(timing.runtimePassed, true);
+assert.equal(timing.transportCleanContexts, 6);
+assert.equal(timing.centralProjection.inputs.adjudicationShareOfEscalations, 1);
+console.log(JSON.stringify({ status: "passed", inheritedEndpointShape: true, protocolTranslationValidated: true, mutationRejected: true, runtimeProjectionValidated: true, modelContextsExecuted: 0 }, null, 2));

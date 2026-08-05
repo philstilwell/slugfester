@@ -1,5 +1,5 @@
 import { makeV4ControlSample } from "./v4-lean-production.mjs";
-import { assertV4, deriveV41PrimaryScores, evaluateV41Escalation, makeV41PrimarySchema, validateV41PrimaryOutput } from "./v41-lean-production.mjs";
+import { assertV4, deriveV41PrimaryScores, evaluateV41Escalation, makeV41PrimarySchema, projectV41ComputeHours, validateV41PrimaryOutput } from "./v41-lean-production.mjs";
 
 export const V417_ROOT = "docs/calibration/v4.1.7/fresh-six-gate";
 export const V417_PROTOCOL_ID = "v4.1.7-fresh-six-validation";
@@ -44,4 +44,22 @@ export function evaluateV417Escalation({ primary, ...rest }) {
 
 export function selectV417ControlDebates(debateIds) {
   return makeV4ControlSample(debateIds, 0.1);
+}
+
+function addTransportContingency(projection, hours) {
+  const total = Number((projection.hours.total + hours).toFixed(2));
+  return { ...projection, inputs: { ...projection.inputs, fixedTransportContingencyHours: hours }, hours: { ...projection.hours, transportContingency: hours, total }, centralTargetPassed: total <= 52, conservativeCeilingPassed: total <= 60 };
+}
+
+export function evaluateV417PrimaryTiming(results, { fixedTransportContingencyHours = 2 } = {}) {
+  assertV4(Array.isArray(results) && results.length === 6 && results.every((item) => item.gateAcceptancePassed && Number.isFinite(item.elapsedMs) && item.elapsedMs > 0 && Number.isInteger(item.recoverableStreamEvents) && item.recoverableStreamEvents >= 0), "six valid primary timing results required");
+  const wallPrimaryMinutesPerDebate = results.reduce((sum, item) => sum + item.elapsedMs, 0) / 60000 / results.length;
+  const clean = results.filter((item) => item.recoverableStreamEvents === 0);
+  const recovered = results.filter((item) => item.recoverableStreamEvents > 0);
+  const timingEligible = clean.length >= 4 && recovered.length <= 2;
+  const computePrimaryMinutesPerDebate = timingEligible && recovered.length ? clean.reduce((sum, item) => sum + item.elapsedMs, 0) / 60000 / clean.length : wallPrimaryMinutesPerDebate;
+  const conservativePrimaryMinutesPerDebate = Math.max(7, computePrimaryMinutesPerDebate * 1.25);
+  const centralProjection = addTransportContingency(projectV41ComputeHours({ primaryMinutesPerDebate: computePrimaryMinutesPerDebate, finalizationMinutesPerDebate: 4.25, escalationRate: 0.15, passBMinutesPerEscalatedDebate: 7.680461111111111, adjudicationShareOfEscalations: 1, adjudicationMinutesPerAdjudicatedDebate: 3.222983333333333 }), fixedTransportContingencyHours);
+  const conservativeProjection = addTransportContingency(projectV41ComputeHours({ primaryMinutesPerDebate: conservativePrimaryMinutesPerDebate, finalizationMinutesPerDebate: 5, escalationRate: 0.2, passBMinutesPerEscalatedDebate: 9.60057638888889, adjudicationShareOfEscalations: 1, adjudicationMinutesPerAdjudicatedDebate: 6.5 }), fixedTransportContingencyHours);
+  return { wallPrimaryMinutesPerDebate: Number(wallPrimaryMinutesPerDebate.toFixed(2)), computePrimaryMinutesPerDebate: Number(computePrimaryMinutesPerDebate.toFixed(2)), conservativePrimaryMinutesPerDebate: Number(conservativePrimaryMinutesPerDebate.toFixed(2)), transportCleanContexts: clean.length, recoveredTransportContexts: recovered.length, recoveredTransportDebates: recovered.map((item) => item.debateNumber), timingEligible, fixedTransportContingencyHours, centralProjection, conservativeProjection, runtimePassed: timingEligible && centralProjection.hours.total <= 52 && conservativeProjection.hours.total <= 60 };
 }
