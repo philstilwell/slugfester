@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "3.8.11-performance-adjudication-execution-manifest",
+  "protocolId": "v3.8.11-performance-judgment-consensus",
+  "stage": "three-isolated-dispute-only-performance-adjudications",
+  "status": "frozen-three-context-adjudication-authorized",
+  "frozenAt": "2026-08-05T00:47:51Z",
+  "checkpointCommit": "d41dfa69ef60ca6bea9a18ddbe3ba7fe3a183a42",
+  "provenance": {
+    "originalCleanTwoPassGatePassed": true,
+    "postHocRepresentationRecoveryUsed": false,
+    "initialPerformanceAttempts": 6,
+    "initialPerformanceRetries": 0,
+    "independentPerformancePasses": 6,
+    "moveJudgmentsAcrossPasses": 162,
+    "disputedMoves": 76,
+    "exactAdjudicationSchemaEndpointAccepted": true,
+    "audioVerifiedMediumConfidenceMoves": 17,
+    "audioVerifiedDisputedMoves": 17,
+    "dependencyAddedCharityRatings": 2
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "modelInputs": {
+    "rubric": "docs/reassessment-rubric-v3.8.11.md",
+    "manual": "docs/calibration/v3.8.11/performance-judgment-consensus/manual.md",
+    "sharedSchema": "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/adjudication-schema.json",
+    "disputeOnlyPackets": true,
+    "anonymousCandidateOrdering": true,
+    "audioDerivedTranscriptsEmbeddedWhereRequired": true
+  },
+  "population": {
+    "contexts": 3,
+    "disputedMoves": 76,
+    "responseTupleChoices": 31,
+    "charityPairChoices": 6,
+    "independentRatingChoices": 202,
+    "burdenAdjustmentChoices": 4
+  },
+  "contexts": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "disputedMoves": 24,
+      "responseTupleChoices": 11,
+      "charityPairChoices": 4,
+      "ratingChoices": 51,
+      "burdenAdjustmentChoices": 0,
+      "audioVerifiedDisputedMoves": 1,
+      "packet": "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/packets/debate-55.json",
+      "schema": "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/adjudication-schema.json",
+      "output": "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/outputs/debate-55.json"
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "disputedMoves": 24,
+      "responseTupleChoices": 11,
+      "charityPairChoices": 1,
+      "ratingChoices": 86,
+      "burdenAdjustmentChoices": 2,
+      "audioVerifiedDisputedMoves": 6,
+      "packet": "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/packets/debate-103.json",
+      "schema": "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/adjudication-schema.json",
+      "output": "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/outputs/debate-103.json"
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "disputedMoves": 28,
+      "responseTupleChoices": 9,
+      "charityPairChoices": 1,
+      "ratingChoices": 65,
+      "burdenAdjustmentChoices": 2,
+      "audioVerifiedDisputedMoves": 10,
+      "packet": "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/packets/debate-161.json",
+      "schema": "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/adjudication-schema.json",
+      "output": "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/outputs/debate-161.json"
+    }
+  ],
+  "isolation": {
+    "freshTemporaryCodexHomePerContext": true,
+    "freshSourceDirectoryPerContext": true,
+    "oneDebatePerContext": true,
+    "initialPassIdentitiesUnavailable": true,
+    "initialPassRationalesUnavailable": true,
+    "fullInitialOutputsUnavailable": true,
+    "nondisputedPerformanceFieldsUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "calculatedScoresUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "assessmentProseUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 3,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "perInvocationTimeoutMs": 3600000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionApiCalls": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "recoverableStreamEventsNormalMaximum": 2,
+    "recoverableStreamEventsHardMaximum": 8
+  },
+  "acceptanceRule": {
+    "validContextsRequired": 3,
+    "disputedMovesDecidedExactlyOnce": 76,
+    "candidateValuesOnly": true,
+    "missingChoicesMaximum": 0,
+    "thirdValuesMaximum": 0,
+    "nondisputedFieldMutationsMaximum": 0,
+    "modelCalculatedScoresMaximum": 0,
+    "publicationProseFieldsMaximum": 0
+  },
+  "authorization": {
+    "adjudicationModelExecution": true,
+    "furtherAutomaticRetry": false,
+    "finalLedgerAssemblyAfterValidation": true,
+    "scoreDerivation": false,
+    "numericalParticipantScoring": false,
+    "assessmentProse": false,
+    "productionMutation": false,
+    "tenDebateGate": false,
+    "all195Debates": false
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocksExecution": true,
+    "preexistingOutputBlocksExecution": true,
+    "invalidContextBlocksFinalLedgerAssembly": true,
+    "automaticRetryAuthorized": false,
+    "scoresRemainBlockedUntilFinalLedgerValidation": true
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/model-execution.json",
+    "outputs": [
+      "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/outputs/debate-55.json",
+      "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/outputs/debate-103.json",
+      "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/outputs/debate-161.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/model-execution.json",
+    "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/outputs/debate-55.json",
+    "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/outputs/debate-103.json",
+    "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/outputs/debate-161.json"
+  ],
+  "sourceHashes": {
+    "docs/reassessment-rubric-v3.8.11.md": "35d9ef375f0a504c064cad7f5157cc2bbdb0ac941cc4499e7c4063841800c451",
+    "docs/calibration/v3.8.11/performance-judgment-consensus/manual.md": "bb589c98b0158be8720b06ac4d130f0bfe981879af82292bc95cd33c9a63e962",
+    "docs/calibration/v3.8.11/performance-judgment-consensus/initial-disagreements.json": "ead6f1943c57fbefee595082476169400e9f902c4e50aba9d31c69b53fb5dd2b",
+    "docs/calibration/v3.8.8/performance-judgment-consensus/audio-verification.json": "4b4027c2593cc40a654bac23b1f5543ea00a587d2869be0356688216676c66aa",
+    "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/preparation-audit.json": "121d3b0b79554612bb768494024f6981fa745b53cdda0b140b11445123d13de3",
+    "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/adjudication-schema.json": "9bac2153082bd0afd62299915386d2167c050d7a71f993640c9e3ba5e2fb86e4",
+    "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/schema-preflight/execution.json": "4ff7576025b483e51653479d87aa56829f8a78ff4899ec80d9b3b036fc92c3a8",
+    "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/packets/debate-55.json": "51c89d4d4d96104d77c257a026b5314acfdc4846ccb67736b1f7749add2a5e32",
+    "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/packets/debate-103.json": "4cb024fc8e69a1500441f1998c39f51b092c8b7a9657e2a174a562886c8ac9a5",
+    "docs/calibration/v3.8.11/performance-judgment-consensus/adjudication/packets/debate-161.json": "40c4e2ec1e1275076b858c416450be6e142b66faa07a84a6c02a81b2f8ed7326",
+    "scripts/lib/v385-transport.mjs": "f20d5cb026e0c2720d32276ddcbb612ec852e3732d7653e47a98ba5ffa880dfe",
+    "scripts/lib/v3811-performance-judgment.mjs": "f3746230f21ab80ca438e8671af51cb5c9ee2947d2e73c62c56da8efe60cad9c",
+    "scripts/lib/v3811-performance-adjudication.mjs": "4f3234e7d37dcd125b38830b99b126c1047d96b6db5111f4d4bc3bbf47c2775e",
+    "scripts/validate-v3811-performance-adjudication-output.mjs": "f94cad16434934e23a9f3c359a71b5cdac9f29b2a9065665b6882fce69da005f",
+    "scripts/preregister-v3811-performance-adjudication-execution.mjs": "90cc79afb6eee07d0f3f0c09a270273b68d40e7cba4244fe9c1f1771f4e42367",
+    "scripts/validate-v3811-performance-adjudication-execution-lock.mjs": "2c950d9da6b0b11a13da29aceda775760636e4f9f680dd1048d0d9048ea2074e",
+    "scripts/run-v3811-performance-adjudication.mjs": "784587488e7a13448ab5f5ed8757f87c4de6aad837eb7cfb5e0a029d228591bd"
+  }
+}
