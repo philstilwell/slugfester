@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "4.1.6-score-derivation-manifest",
+  "protocolId": "v4.1.6-triggered-pass-b-consensus",
+  "status": "frozen-single-deterministic-score-pass",
+  "frozenAt": "2026-08-05T08:42:00.000Z",
+  "checkpointCommit": "62c99363f764af911a9b5273e0578e7e775cc3d1",
+  "inputs": {
+    "finalLedger": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/final-ledger.json",
+    "retiredComparator": "docs/calibration/v3.8.11/performance-judgment-consensus/calculated-scores.json",
+    "debates": 3,
+    "sides": 6
+  },
+  "scoringPolicy": {
+    "passes": 1,
+    "repositoryDerivedOnly": true,
+    "modelScoringAllowed": false,
+    "scoresDerivedAfterAdjudicationOnly": true,
+    "formulaChangesAllowed": false,
+    "postResultTuningAllowed": false
+  },
+  "acceptanceRule": {
+    "preserveWinnerClassificationEveryDebate": true,
+    "absoluteSideDeltaMaximum": 5,
+    "debatesRequired": 3,
+    "sidesWithinThresholdRequired": 6
+  },
+  "stopRule": {
+    "acceptanceFailureStopsPublicationFinalization": true,
+    "automaticReanalysisAllowed": false,
+    "rubricOrFormulaAdjustmentAllowedAfterResult": false
+  },
+  "artifacts": {
+    "calculatedScores": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/calculated-scores.json"
+  },
+  "authorization": {
+    "scoreDerivation": true,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  },
+  "sourceHashes": {
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/final-ledger.json": "3df0751af27dd6ffab4deb1dd4014669438de9f2d365562ddc68c61ed3a149ee",
+    "docs/calibration/v3.8.11/performance-judgment-consensus/calculated-scores.json": "21b1560c00f55278f848c67e9287710f8c2366fda7887cb69d284bf5224249ec",
+    "scripts/lib/v41-lean-production.mjs": "9d4f4a5a54ff4c73f50733aa148064200862991a69003823d303e7bac363d9ba",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v416-score-gate.mjs": "90f84078b12e4865c7507eaff788e008ec503f2f66032275780c87d5ae23fb88",
+    "scripts/preregister-v416-score-derivation.mjs": "c175df502ae26fe6822641e87bdf3d4daf9a2b934d0e604ddb06c2e8e255c5c8",
+    "scripts/derive-v416-scores.mjs": "a3a3fda7be3b248232da723e19882d03c5573fc4190e01d69aa8c5bbe2931150"
+  }
+}
