@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "4.1.7-audio-analysis-empty-segment-amendment",
+  "protocolId": "v4.1.7-fresh-six-triggered-pass-b",
+  "status": "frozen-analysis-only-empty-boundary-elision",
+  "frozenAt": "2026-08-05T10:53:00Z",
+  "checkpointCommit": "18bb402bbfce216b65ce0227f2ba50c736e8b8b6",
+  "reason": "The inherited v4.1.6 evaluator rejects empty diarization segments even when the raw API emitted only a zero-text boundary fragment.",
+  "scope": {
+    "rawTranscriptMutationAuthorized": false,
+    "paidRetryAuthorized": false,
+    "nonemptyTextAlterationAuthorized": false,
+    "speakerLabelAlterationAuthorized": false,
+    "timingAlterationAuthorized": false,
+    "thresholdAlterationAuthorized": false,
+    "ignoreOnlyZeroTextSegmentsWithinPolicy": true
+  },
+  "policy": {
+    "maximumEmptySegmentsPerTranscript": 4,
+    "maximumSingleEmptySegmentDurationSeconds": 0.1,
+    "maximumTotalEmptySegmentDurationSeconds": 0.25
+  },
+  "observedStructure": {
+    "transcripts": 12,
+    "transcriptsWithEmptySegments": 3,
+    "emptySegments": 4,
+    "invalidTimingSegments": 0,
+    "observations": [
+      {
+        "transcriptPath": "output/transcribe/v417-pass-b-audio-verification/dillahunty-slick-secular-humanism-christianity-2016/transcripts/pro-shared-logic-reply.transcript.json",
+        "segments": 37,
+        "emptySegmentCount": 0,
+        "emptySegmentIndexes": [],
+        "emptySegmentDurationsSeconds": []
+      },
+      {
+        "transcriptPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/pro-theistic-fit.transcript.json",
+        "segments": 36,
+        "emptySegmentCount": 0,
+        "emptySegmentIndexes": [],
+        "emptySegmentDurationsSeconds": []
+      },
+      {
+        "transcriptPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/pro-epistemic-gap-reply.transcript.json",
+        "segments": 27,
+        "emptySegmentCount": 0,
+        "emptySegmentIndexes": [],
+        "emptySegmentDurationsSeconds": []
+      },
+      {
+        "transcriptPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/con-apriori-reply.transcript.json",
+        "segments": 16,
+        "emptySegmentCount": 0,
+        "emptySegmentIndexes": [],
+        "emptySegmentDurationsSeconds": []
+      },
+      {
+        "transcriptPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/con-comparative-fit.transcript.json",
+        "segments": 43,
+        "emptySegmentCount": 0,
+        "emptySegmentIndexes": [],
+        "emptySegmentDurationsSeconds": []
+      },
+      {
+        "transcriptPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/pro-qualitative-likelihood.transcript.json",
+        "segments": 50,
+        "emptySegmentCount": 0,
+        "emptySegmentIndexes": [],
+        "emptySegmentDurationsSeconds": []
+      },
+      {
+        "transcriptPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/con-measure-reply.transcript.json",
+        "segments": 26,
+        "emptySegmentCount": 0,
+        "emptySegmentIndexes": [],
+        "emptySegmentDurationsSeconds": []
+      },
+      {
+        "transcriptPath": "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/transcripts/con-finetuning-alternatives.transcript.json",
+        "segments": 28,
+        "emptySegmentCount": 1,
+        "emptySegmentIndexes": [
+          25
+        ],
+        "emptySegmentDurationsSeconds": [
+          0.04999999999999716
+        ]
+      },
+      {
+        "transcriptPath": "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/transcripts/con-abiogenesis-reply.transcript.json",
+        "segments": 52,
+        "emptySegmentCount": 1,
+        "emptySegmentIndexes": [
+          36
+        ],
+        "emptySegmentDurationsSeconds": [
+          0.04999999999999716
+        ]
+      },
+      {
+        "transcriptPath": "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/transcripts/pro-divine-authority.transcript.json",
+        "segments": 114,
+        "emptySegmentCount": 2,
+        "emptySegmentIndexes": [
+          27,
+          86
+        ],
+        "emptySegmentDurationsSeconds": [
+          0.10000000000000853,
+          0.05000000000001137
+        ]
+      },
+      {
+        "transcriptPath": "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/transcripts/con-moral-critique.transcript.json",
+        "segments": 19,
+        "emptySegmentCount": 0,
+        "emptySegmentIndexes": [],
+        "emptySegmentDurationsSeconds": []
+      },
+      {
+        "transcriptPath": "output/transcribe/v417-pass-b-audio-verification/plantinga-dennett-evolution-naturalism-2018/transcripts/con-causal-tracking-reply.transcript.json",
+        "segments": 26,
+        "emptySegmentCount": 0,
+        "emptySegmentIndexes": [],
+        "emptySegmentDurationsSeconds": []
+      }
+    ]
+  },
+  "originalThresholdsUnchanged": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5,
+    "targetClipBoundaryPaddingSecondsPerSide": 3,
+    "knownSpeakerReferenceDurationSeconds": 8,
+    "knownSpeakerReferencesMustComeFromLockedHighConfidencePassBMoves": true,
+    "completeTargetSpanRequired": true,
+    "fullClipTextMatchAloneInsufficient": true,
+    "expectedSpeakerSegmentMatchRequired": true,
+    "manualOverrideAuthorized": false
+  },
+  "sourceHashes": {
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-verification-plan.json": "6441f68cf5eb20d55f6e1e7dc10a82b718a84941cc41e858c60c80d83672f472",
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-model-execution.json": "2a288d5ecd419b2f072e834894a9a0244fc9372b92a1250761948979ed70490b",
+    "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-analysis-failure.json": "ebee9e7c5c744c919591e64289c0d871b89e521c248714112302bcd301762882",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "scripts/lib/v417-audio-verification.mjs": "d65d89a5136f0c4a84f6d2d0586e37933ed43769dbee59394427112058d54c44",
+    "scripts/test-v417-audio-verification.mjs": "98f7516f5268eef5036876a7be4b6231364b879b03a8c22510114c82e7c94b63",
+    "scripts/preregister-v417-audio-analysis-amendment.mjs": "48560465316a9161cf89844fd29f8e2d5a7db5fb3f5756d2d491ba83159cc1c5",
+    "scripts/analyze-v417-audio-verification.mjs": "8cb76ed98411f2e7cee3a12bea313361ed89c23ee0932a732611a885d59849ef",
+    "output/transcribe/v417-pass-b-audio-verification/dillahunty-slick-secular-humanism-christianity-2016/transcripts/pro-shared-logic-reply.transcript.json": "e5326133348132dea4c0e7767eb65cac7646bbd318e9fee68ad32ad009ee2bf4",
+    "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/pro-theistic-fit.transcript.json": "db2dc49ad65ccafa9fa45549e91a274066fe77c1520035631baab7f2a09f78ea",
+    "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/pro-epistemic-gap-reply.transcript.json": "6523b4213a83ec3d11a378da45330d006153fc0bac593dbf4b6b5769b238b4ce",
+    "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/con-apriori-reply.transcript.json": "0db15b5c154c0e3d968d3f13ddd21f6e237dee3ab55c6baae1707dff089c262c",
+    "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/con-comparative-fit.transcript.json": "d63f62a739df1b20a74e32de4b3a7fe999f80020d0d6fb25559af95db8d58b62",
+    "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/pro-qualitative-likelihood.transcript.json": "18689e6aa25c38ed9aa2a6ae73bc9c4fd69518f596acb4a41210eb44923b10ab",
+    "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/con-measure-reply.transcript.json": "7db53f858c164222d321a72df4e3b90aea96f26608a0c84d18c41694b80cebc8",
+    "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/transcripts/con-finetuning-alternatives.transcript.json": "d073e7d9bfe113586f9c44b8355a867afeb653299932fae52666c46f29a3dd03",
+    "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/transcripts/con-abiogenesis-reply.transcript.json": "6a5e778772dda9ad81888784c27898ebf0bf53eb0e0f7010524b491fc6a26f31",
+    "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/transcripts/pro-divine-authority.transcript.json": "2643d739f485b61a33927a96cf433631ad58b35d07ad89dc19727a7d8453f62d",
+    "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/transcripts/con-moral-critique.transcript.json": "afbda66368df62c64f5e07b488c92d860363ebcc496189a321a25ed74a6684e1",
+    "output/transcribe/v417-pass-b-audio-verification/plantinga-dennett-evolution-naturalism-2018/transcripts/con-causal-tracking-reply.transcript.json": "3ef7a313d03c2aae15edf5375a50be706401df5adf8157a0559cf58b546aced1"
+  },
+  "authorization": {
+    "deterministicAudioAnalysis": true,
+    "additionalPaidCalls": false,
+    "disagreementExtraction": false,
+    "adjudicationModelExecution": false,
+    "compressionAuditModelExecution": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "productionMutation": false
+  }
+}
