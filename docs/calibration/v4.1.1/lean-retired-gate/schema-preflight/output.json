@@ -1,0 +1,920 @@
+{
+  "schemaVersion": "4.1.1-bounded-primary-output",
+  "protocolId": "v4.1.1-bounded-lean-risk-triggered-consensus",
+  "debateNumber": "schema-preflight",
+  "debateId": "v41-bounded-schema-preflight",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-adoption",
+      "side": "pro",
+      "description": "Defend adoption by showing that the pilot benefit, staged testing, and protected purchase economics together make the proposed transit plan a justified conditional commitment.",
+      "successCriteria": "Establish that expected mobility and operating benefits justify the staged plan despite external-validity and cancellation risks, with expansion remaining conditional on checkpoint evidence.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-justified-adoption",
+        "tier": "motion",
+        "description": "The synthetic record justifies adopting the proposed staged city transit plan."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-generalization",
+          "tier": "central",
+          "description": "Staged rollout and a six-month checkpoint adequately manage uncertainty about generalizing the pilot."
+        },
+        {
+          "bridgeId": "pro-central-economics",
+          "tier": "central",
+          "description": "Purchase remains economically preferable after accounting for leasing costs and unrecovered cancellation capital."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-service-frequency",
+          "tier": "subsidiary",
+          "description": "The pilot benefit remains relevant only if the plan maintains the tested service frequency."
+        },
+        {
+          "bridgeId": "pro-subsidiary-revision",
+          "tier": "subsidiary",
+          "description": "The adoption judgment must be revised if checkpoint ridership materially underperforms the forecast."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-limited-experiment",
+      "side": "con",
+      "description": "Oppose the proposed commitment by showing that the selected pilot and dependent forecast do not generalize securely and that purchasing creates avoidable irreversible capital exposure.",
+      "successCriteria": "Show that the current evidence warrants only a limited, reversibly financed experiment rather than the proposed purchase-backed citywide commitment.",
+      "motionBridge": {
+        "bridgeId": "con-motion-insufficient-record",
+        "tier": "motion",
+        "description": "The synthetic record does not justify the proposed citywide transit commitment."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-external-validity",
+          "tier": "central",
+          "description": "High-ridership pilot neighborhoods provide an inadequate basis for lower-density forecasts."
+        },
+        {
+          "bridgeId": "con-central-capital-risk",
+          "tier": "central",
+          "description": "Capital committed before generalization testing creates material and potentially biasing sunk-cost exposure."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-leasing",
+          "tier": "subsidiary",
+          "description": "Leasing preserves the evidential experiment while reducing irreversible first-stage capital."
+        },
+        {
+          "bridgeId": "con-subsidiary-resale-exclusions",
+          "tier": "subsidiary",
+          "description": "Limited resale recovery and excluded charging equipment materially weaken the proposed purchase protection."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-pilot-generalization",
+      "title": "Pilot benefit and generalization",
+      "weightPercent": 28,
+      "rationale": "The opening exchange contests whether a measured commute benefit from three selected neighborhoods supports the plan beyond the pilot population.",
+      "proMoves": [
+        {
+          "sequence": 1,
+          "moveId": "move-pro-1",
+          "speaker": "Alex Pro",
+          "moveKind": "constructive",
+          "proposition": "A representative three-neighborhood pilot's twelve-percent commute reduction probabilistically supports adoption if the tested service frequency is maintained.",
+          "sourceSpan": {
+            "startEvent": 0,
+            "endEvent": 0,
+            "startMs": 0,
+            "endMs": 45000,
+            "excerpt": "The city should adopt the transit plan because the pilot reduced average commute time by twelve percent across three representative neighborhoods."
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The transcript explicitly labels Alex Pro, and the timestamped event independently attributes this opening pilot argument to the same speaker.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "pro-motion-justified-adoption"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This is the debate's first selected move and directly advances the affirmative adoption route without any earlier argumentative target."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The pilot population, measured effect, probabilistic scope, and service-frequency condition are all stated in recoverable and stable terms."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The adoption inference is expressly probabilistic rather than guaranteed and is conditioned on maintaining the pilot's service frequency."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The measured benefit, conditional continuity, and adoption conclusion form a stable inference, though representativeness remains an important implicit bridge."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The quantified pilot supplies appropriate support, but the claim that three neighborhoods are representative is asserted rather than independently defended."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "As a constructive opening, it clearly establishes the empirical premise, intended force, and condition supporting the adopted burden."
+            },
+            "relevanceBurden": {
+              "value": 94,
+              "rationale": "The move proportionately supports the complete motion-level conclusion that the evidence justifies adopting the transit plan."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "No live alternative precedes this opening move, so representational charity is not tested under the closed anchor."
+            }
+          },
+          "evidenceBasis": "The opening transcript span and event zero supply the twelve-percent result, asserted representativeness, probabilistic force, and service-frequency condition.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "conMoves": [
+        {
+          "sequence": 2,
+          "moveId": "move-con-1",
+          "speaker": "Casey Con",
+          "moveKind": "reply",
+          "proposition": "Selection of unusually high-ridership neighborhoods prevents the pilot's commute result from securely generalizing to lower-density districts.",
+          "sourceSpan": {
+            "startEvent": 1,
+            "endEvent": 1,
+            "startMs": 60000,
+            "endMs": 105000,
+            "excerpt": "The three neighborhoods were selected for unusually high existing ridership, so the commute result may not generalize to lower-density districts."
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The transcript explicitly labels Casey Con, and timestamped event one attributes the matching sample-selection objection to that speaker.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-generalization"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "move-pro-1"
+            ],
+            "components": [
+              {
+                "componentId": "component-con-1-representativeness",
+                "targetMoveId": "move-pro-1",
+                "text": "The selected neighborhoods are representative enough to support broader adoption.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "component-con-1-measured-result",
+                "targetMoveId": "move-pro-1",
+                "text": "The reported twelve-percent commute reduction is an accurate pilot result.",
+                "contacted": true,
+                "decisive": false
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Casey accepts the reported result for argument's sake, identifies selection bias in the claimed representativeness, and expressly states the defeating consequence for citywide generalization."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The selected sample, high-ridership characteristic, lower-density comparison class, and limited generalization conclusion are all explicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The critic says the result may not generalize and explicitly allows that the reported reduction could nevertheless be accurate."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The pilot result probabilistically supports adoption rather than guaranteeing success.",
+            "decisiveQualification": "The favorable inference depends on maintaining service frequency."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 90,
+              "rationale": "The move clearly links nonrepresentative selection to uncertainty about applying the measured result in materially different districts."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "The specific selection characteristic supports the objection, although no comparative lower-density observations or selection documentation are supplied."
+            },
+            "responsiveness": {
+              "value": 91,
+              "rationale": "The reply directly contacts the decisive representativeness premise and separately states why its defect defeats the citywide inference."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The objection attacks the affirmative route's central generalization bridge rather than merely disputing a peripheral detail."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The reply fairly permits the reported reduction to be accurate, though it does not repeat the affirmative's service-frequency qualification."
+            }
+          },
+          "evidenceBasis": "Transcript and event one identify unusually high existing ridership as the selection feature and lower-density generalization as the resulting uncertainty.",
+          "assessmentConfidence": "high"
+        }
+      ]
+    },
+    {
+      "sectionId": "section-staging-capital",
+      "title": "Staged testing and capital timing",
+      "weightPercent": 24,
+      "rationale": "This exchange tests whether the checkpoint resolves external-validity uncertainty and whether committing capital before that test undermines the safeguard.",
+      "proMoves": [
+        {
+          "sequence": 3,
+          "moveId": "move-pro-2",
+          "speaker": "Alex Pro",
+          "moveKind": "reply",
+          "proposition": "A staged rollout with a six-month checkpoint directly tests representativeness before expansion into lower-density districts.",
+          "sourceSpan": {
+            "startEvent": 2,
+            "endEvent": 2,
+            "startMs": 120000,
+            "endMs": 165000,
+            "excerpt": "The plan includes a staged rollout and a six-month checkpoint before expansion into lower-density districts."
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The transcript labels Alex Pro and timestamped event two independently describes the same staged-rollout answer to representativeness.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-generalization"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "move-con-1"
+            ],
+            "components": [
+              {
+                "componentId": "component-pro-2-selection",
+                "targetMoveId": "move-con-1",
+                "text": "The high-ridership pilot may not represent lower-density districts.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "component-pro-2-consequence",
+                "targetMoveId": "move-con-1",
+                "text": "Uncertain generalization weakens immediate expansion beyond the pilot setting.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Alex expressly accepts the representativeness concern and answers both its factual basis and expansion consequence through staged testing before lower-density rollout."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The six-month timing, staged structure, test purpose, and restriction on lower-density expansion are all clearly specified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move treats generalization as a real concern and claims the design tests it, rather than claiming the present pilot already resolves it."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The selected pilot may not generalize to lower-density districts.",
+            "decisiveQualification": "The objection remains even if the reported twelve-percent reduction is accurate."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 92,
+              "rationale": "The staged checkpoint is a direct procedural answer to the acknowledged gap between the pilot population and later districts."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The plan feature strongly supports the proposed test, though the move does not specify checkpoint thresholds or the first-stage comparison design."
+            },
+            "responsiveness": {
+              "value": 94,
+              "rationale": "The reply explicitly contacts the decisive sample concern and its consequence by delaying lower-density expansion pending a targeted checkpoint."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "The move substantially supports the affirmative route's central bridge for managing uncertainty about generalizing the pilot."
+            },
+            "representationalCharity": {
+              "value": 96,
+              "rationale": "Alex identifies the critic's representativeness concern as real and answers its strongest form without weakening or attributing motives."
+            }
+          },
+          "evidenceBasis": "Transcript and event two supply the concession, staged rollout, six-month checkpoint, and pre-expansion test of lower-density representativeness.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "conMoves": [
+        {
+          "sequence": 4,
+          "moveId": "move-con-2",
+          "speaker": "Casey Con",
+          "moveKind": "reply",
+          "proposition": "Because major capital is committed before the checkpoint, leasing would preserve the test while reducing sunk-cost risk and later decision bias.",
+          "sourceSpan": {
+            "startEvent": 3,
+            "endEvent": 3,
+            "startMs": 180000,
+            "endMs": 225000,
+            "excerpt": "Leasing vehicles for the first stage would preserve the same evidential test while reducing the sunk-cost risk that could bias the later expansion decision."
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The transcript labels Casey Con and timestamped event three attributes the matching capital-timing and leasing argument to that speaker.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-capital-risk"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "move-pro-2"
+            ],
+            "components": [
+              {
+                "componentId": "component-con-2-checkpoint",
+                "targetMoveId": "move-pro-2",
+                "text": "The checkpoint tests generalization before lower-density expansion.",
+                "contacted": true,
+                "decisive": false
+              },
+              {
+                "componentId": "component-con-2-safeguard",
+                "targetMoveId": "move-pro-2",
+                "text": "Staging adequately protects the later expansion decision from premature commitment.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": true,
+            "rationale": "Casey concedes that the checkpoint helps, diagnoses pre-test capital commitment as the remaining defect, states its biasing consequence, and supplies leasing as a preserving alternative."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The timing of commitment, first-stage leasing alternative, retained test, and claimed sunk-cost consequence are explicitly distinguished."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The critic claims capital could bias the decision and that leasing would reduce risk, without asserting that bias or cancellation is certain."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A staged rollout and checkpoint directly test the generalization concern.",
+            "decisiveQualification": "Lower-density expansion occurs only after the six-month checkpoint."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The move coherently distinguishes evidential staging from financial reversibility and explains why the former need not provide the latter."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "The sunk-cost mechanism and concrete leasing comparator are appropriate, but the magnitude of committed capital and likely bias are not quantified."
+            },
+            "responsiveness": {
+              "value": 92,
+              "rationale": "The reply credits the checkpoint, identifies a separate defect in its protection, states the consequence, and proposes a test-preserving alternative."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "The argument materially supports the critic's central capital-risk bridge and bears directly on whether the proposed staging is adequate."
+            },
+            "representationalCharity": {
+              "value": 94,
+              "rationale": "Casey accurately acknowledges that the checkpoint helps and preserves its evidential function in the proposed leasing alternative."
+            }
+          },
+          "evidenceBasis": "Transcript and event three establish that purchase capital precedes the checkpoint and that leasing is offered to preserve testing while reducing sunk-cost exposure.",
+          "assessmentConfidence": "high"
+        }
+      ]
+    },
+    {
+      "sectionId": "section-purchase-protection",
+      "title": "Lease premium and resale protection",
+      "weightPercent": 23,
+      "rationale": "The parties contest whether the lease premium and resale clause make purchasing economical or leave substantial irreversible equipment and depreciation costs.",
+      "proMoves": [
+        {
+          "sequence": 5,
+          "moveId": "move-pro-3",
+          "speaker": "Alex Pro",
+          "moveKind": "reply",
+          "proposition": "A twenty-percent first-year lease premium and contractual resale protection make purchase preferable absent substantially greater cancellation risk.",
+          "sourceSpan": {
+            "startEvent": 4,
+            "endEvent": 4,
+            "startMs": 240000,
+            "endMs": 285000,
+            "excerpt": "The lease alternative costs twenty percent more during the first year, and the purchase contract includes a resale clause."
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The transcript explicitly labels Alex Pro, and timestamped event four attributes both the lease premium and resale-clause answer to Alex.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-economics"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "move-con-2"
+            ],
+            "components": [
+              {
+                "componentId": "component-pro-3-leasing",
+                "targetMoveId": "move-con-2",
+                "text": "Leasing is a financially preferable way to preserve the first-stage test.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "component-pro-3-sunk-cost",
+                "targetMoveId": "move-con-2",
+                "text": "Purchase creates materially greater unrecoverable cancellation exposure.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Alex answers both indispensable parts of the leasing proposal by quantifying its premium and identifying contractual recovery that limits purchase-side cancellation exposure."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The lease premium, first-year period, resale protection, and cancellation-probability condition are stated with stable scope."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Purchase is presented as preferable only unless cancellation is substantially more likely than the current evidence indicates."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Leasing preserves the evidential test while reducing sunk-cost exposure.",
+            "decisiveQualification": "The leasing proposal applies to the first stage rather than necessarily the entire rollout."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 89,
+              "rationale": "Lease cost and recoverable purchase value are relevant comparative premises, with cancellation probability correctly identified as the decision-sensitive condition."
+            },
+            "evidenceWarrant": {
+              "value": 79,
+              "rationale": "The twenty-percent figure and contract clause are specific, but the resale amount and evidence for the cancellation probability remain compressed."
+            },
+            "responsiveness": {
+              "value": 91,
+              "rationale": "The move directly answers the proposed leasing remedy on both added cost and the asserted irreversibility of purchasing."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The comparison substantially advances the affirmative route's central claim that purchase is economically preferable under present evidence."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The leasing alternative is accurately treated as a risk-control proposal, though its test-preserving rationale is not expressly repeated."
+            }
+          },
+          "evidenceBasis": "Transcript and event four provide the twenty-percent lease premium, resale-clause protection, and express dependence on the probability of cancellation.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "conMoves": [
+        {
+          "sequence": 6,
+          "moveId": "move-con-3",
+          "speaker": "Casey Con",
+          "moveKind": "reply",
+          "proposition": "A maximum sixty-percent resale recovery that excludes specialized charging equipment leaves much of the irreversible purchase cost unprotected.",
+          "sourceSpan": {
+            "startEvent": 5,
+            "endEvent": 5,
+            "startMs": 300000,
+            "endMs": 345000,
+            "excerpt": "The resale clause returns at most sixty percent of purchase price and excludes specialized charging equipment."
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The transcript labels Casey Con, and timestamped event five attributes the same recovery limit and charging-equipment exclusion to Casey.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-economics"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "move-pro-3"
+            ],
+            "components": [
+              {
+                "componentId": "component-con-3-resale",
+                "targetMoveId": "move-pro-3",
+                "text": "The resale clause materially protects purchase economics after cancellation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "component-con-3-premium",
+                "targetMoveId": "move-pro-3",
+                "text": "The first-year lease alternative costs twenty percent more.",
+                "contacted": false,
+                "decisive": false
+              },
+              {
+                "componentId": "component-con-3-cancellation",
+                "targetMoveId": "move-pro-3",
+                "text": "Current evidence does not indicate a substantially elevated cancellation probability.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Casey decisively contacts the asserted resale protection and explains its incompleteness, but does not answer the lease premium or the conditional cancellation-probability comparison."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The recovery ceiling, excluded asset category, and conclusion limited to the sunk-cost component are expressly and stably stated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The contract details directly support the bounded conclusion that the clause does not completely answer sunk-cost exposure."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The lease premium and resale clause jointly make purchase more economical under the present cancellation estimate.",
+            "decisiveQualification": "Purchase is preferred unless cancellation is substantially more probable than current evidence indicates."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 92,
+              "rationale": "The recovery ceiling and equipment exclusion directly entail that the resale clause leaves a meaningful category of capital unrecovered."
+            },
+            "evidenceWarrant": {
+              "value": 84,
+              "rationale": "The reply supplies specific contractual limits, though it does not quantify how much of total irreversible cost the excluded equipment represents."
+            },
+            "responsiveness": {
+              "value": 76,
+              "rationale": "The decisive resale component is directly contacted, but two other material parts of the comparative purchase argument remain unanswered."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "The move directly attacks the central economic bridge by narrowing the actual protection supplied by the purchase contract."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "Casey accurately confines the criticism to the incomplete sunk-cost component rather than pretending to refute every part of the purchase comparison."
+            }
+          },
+          "evidenceBasis": "Transcript and event five provide the maximum recovery percentage, charging-equipment exclusion, and bounded conclusion about incomplete sunk-cost protection.",
+          "assessmentConfidence": "high"
+        }
+      ]
+    },
+    {
+      "sectionId": "section-net-benefit-scope",
+      "title": "Net savings and commitment scope",
+      "weightPercent": 25,
+      "rationale": "The closing exchange tests whether projected operating savings overcome unrecovered capital and whether the dependent forecast supports adoption or only a limited experiment.",
+      "proMoves": [
+        {
+          "sequence": 7,
+          "moveId": "move-pro-4",
+          "speaker": "Alex Pro",
+          "moveKind": "reply",
+          "proposition": "Projected two-year operating savings exceed maximum unrecovered cancellation capital, subject to the ridership forecast and revision after an adverse checkpoint.",
+          "sourceSpan": {
+            "startEvent": 6,
+            "endEvent": 6,
+            "startMs": 360000,
+            "endMs": 405000,
+            "excerpt": "The projected two-year operating savings exceed the maximum unrecovered capital under the cancellation scenario."
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The transcript labels Alex Pro, and timestamped event six attributes the same net-savings comparison and checkpoint condition to Alex.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "pro-motion-justified-adoption"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "move-con-3"
+            ],
+            "components": [
+              {
+                "componentId": "component-pro-4-recovery",
+                "targetMoveId": "move-con-3",
+                "text": "The resale clause leaves specialized equipment and other capital unrecovered.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "component-pro-4-materiality",
+                "targetMoveId": "move-con-3",
+                "text": "The remaining unrecovered cost is large enough to defeat purchase economics.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Alex counts the excluded equipment rather than denying it and answers its alleged materiality by comparing maximum unrecovered capital with projected operating savings."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The two-year period, cancellation scenario, maximum unrecovered capital, forecast dependency, and revision condition are all explicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The economic conclusion is expressly dependent on the stated forecast and is made revisable if the staged checkpoint underperforms."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Resale exclusions leave substantial irreversible cost despite the contractual clause.",
+            "decisiveQualification": "Specialized charging equipment is excluded and resale recovery is capped at sixty percent."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 93,
+              "rationale": "The move accepts the excluded costs, compares them against a stated benefit horizon, and makes the conclusion conditional on forecast performance."
+            },
+            "evidenceWarrant": {
+              "value": 79,
+              "rationale": "The comparison is decision-relevant and bounded, but the actual savings, unrecovered-capital figures, and forecast construction are not supplied."
+            },
+            "responsiveness": {
+              "value": 94,
+              "rationale": "The reply contacts both the existence and claimed materiality of excluded capital rather than relying only on the previously challenged resale clause."
+            },
+            "relevanceBurden": {
+              "value": 93,
+              "rationale": "By integrating downside capital and operating benefit with an explicit revision rule, the move supports the complete conditional adoption conclusion."
+            },
+            "representationalCharity": {
+              "value": 95,
+              "rationale": "Alex expressly counts the critic's excluded equipment and maximum downside before offering the competing economic comparison."
+            }
+          },
+          "evidenceBasis": "Transcript and event six supply the two-year savings comparison, inclusion of excluded equipment, forecast reliance, and adverse-checkpoint revision condition.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "conMoves": [
+        {
+          "sequence": 8,
+          "moveId": "move-con-4",
+          "speaker": "Casey Con",
+          "moveKind": "reply",
+          "proposition": "Because the ridership forecast repeats the pilot's high-ridership sample limitation, the record supports a limited experiment rather than the proposed citywide commitment.",
+          "sourceSpan": {
+            "startEvent": 7,
+            "endEvent": 7,
+            "startMs": 420000,
+            "endMs": 465000,
+            "excerpt": "The ridership forecast comes from the same three high-ridership neighborhoods. The plan is reasonable as a limited experiment."
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The transcript explicitly labels Casey Con, and timestamped event seven attributes the forecast-dependence objection and limited-experiment conclusion to Casey.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "con-motion-insufficient-record"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "move-pro-4"
+            ],
+            "components": [
+              {
+                "componentId": "component-con-4-arithmetic",
+                "targetMoveId": "move-pro-4",
+                "text": "Projected savings exceed maximum unrecovered capital under the stated forecast.",
+                "contacted": true,
+                "decisive": false
+              },
+              {
+                "componentId": "component-con-4-forecast",
+                "targetMoveId": "move-pro-4",
+                "text": "The ridership forecast reliably supports the projected operating savings.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "component-con-4-scope",
+                "targetMoveId": "move-pro-4",
+                "text": "Conditional revision makes the present record sufficient for the proposed commitment.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": true,
+            "rationale": "Casey concedes that the calculation improves the case, attacks its decisive forecast input using the same sample problem, and states the narrower commitment the evidence can support."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The forecast source and limited-experiment alternative are clear, but calling the proposed staged plan an unconditional citywide commitment blurs its checkpoint qualification."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The sample-dependence concern supports caution, but the categorical contrast with an unconditional commitment slightly overstates the staged plan's actual scope."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Projected savings exceed unrecovered capital, with revision required if the checkpoint underperforms.",
+            "decisiveQualification": "The affirmative conclusion depends on the forecast and expressly remains subject to checkpoint revision."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "The dependence of projected savings on a questioned forecast coherently limits the inference, though the description of the plan's commitment scope is overstated."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "Identifying the forecast's dependence on the same selected neighborhoods is specific support, but no independent forecast analysis is offered."
+            },
+            "responsiveness": {
+              "value": 91,
+              "rationale": "The reply concedes the improved calculation, contacts its decisive forecast premise, and answers the policy scope with a limited-experiment alternative."
+            },
+            "relevanceBurden": {
+              "value": 94,
+              "rationale": "The move directly supports the complete negative conclusion that the present record warrants less than the proposed commitment."
+            },
+            "representationalCharity": {
+              "value": 64,
+              "rationale": "The reply acknowledges improvement but materially weakens the affirmative by describing a checkpoint-conditioned staged plan as an unconditional citywide commitment."
+            }
+          },
+          "evidenceBasis": "Transcript and event seven supply the concession, the forecast's dependence on the same high-ridership sample, and the limited-experiment conclusion.",
+          "assessmentConfidence": "high"
+        }
+      ]
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide affirmative consequence remains outside the selected moves, response links, importance judgments, section weights, and ratings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional unscored completion criterion is identified for route-pro-adoption.",
+        "relatedMoveIds": [
+          "move-pro-1",
+          "move-pro-2",
+          "move-pro-3",
+          "move-pro-4"
+        ],
+        "distinctConsequence": "No distinct consequence survives the duplicate-exclusion review.",
+        "alreadyCapturedBy": [
+          "selected move ratings",
+          "response links",
+          "importance values",
+          "section weights"
+        ],
+        "counterfactual": "Removing the identified move-level considerations leaves no separate basis for changing affirmative burden completion."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide negative consequence remains outside the selected moves, response links, importance judgments, section weights, and ratings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional unscored completion criterion is identified for route-con-limited-experiment.",
+        "relatedMoveIds": [
+          "move-con-1",
+          "move-con-2",
+          "move-con-3",
+          "move-con-4"
+        ],
+        "distinctConsequence": "No distinct consequence survives the duplicate-exclusion review.",
+        "alreadyCapturedBy": [
+          "selected move ratings",
+          "response links",
+          "importance values",
+          "section weights"
+        ],
+        "counterfactual": "Removing the identified move-level considerations leaves no separate basis for changing negative burden completion."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
