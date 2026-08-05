@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "4.2.5-conservative-excerpt-smoke-analysis",
+  "protocolId": "v4.2.5-conservative-excerpt-compact-diagnostic",
+  "status": "excerpt-smoke-passed-new-fresh-gate-preparation-authorized",
+  "developmentOnly": true,
+  "debateNumber": "131",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "131",
+    "moves": 8,
+    "sections": 4,
+    "mediumOrLowAttributionMoves": [],
+    "calculatedFields": 0,
+    "schemaVersion": "4.2.5-conservative-excerpt-compact-primary-output",
+    "protocolId": "v4.2.5-conservative-excerpt-compact-diagnostic",
+    "boundedMoves": 8,
+    "sourceSpanIntegrity": {
+      "status": "passed",
+      "eventsHashVerified": true,
+      "eventCount": 5034,
+      "repositoryOwnedTimes": true,
+      "maximumCharacters": 600,
+      "maximumTokens": 100,
+      "minimumLexicalRecall": 0.8,
+      "minimumOrderedCoverage": 0.8,
+      "moves": [
+        {
+          "moveId": "m001",
+          "characterCount": 233,
+          "tokenCount": 39,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m004",
+          "characterCount": 274,
+          "tokenCount": 48,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m002",
+          "characterCount": 258,
+          "tokenCount": 40,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m005",
+          "characterCount": 298,
+          "tokenCount": 54,
+          "lexicalRecall": 0.962963,
+          "orderedCoverage": 0.962963
+        },
+        {
+          "moveId": "m003",
+          "characterCount": 233,
+          "tokenCount": 42,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m006",
+          "characterCount": 252,
+          "tokenCount": 44,
+          "lexicalRecall": 0.954545,
+          "orderedCoverage": 0.954545
+        },
+        {
+          "moveId": "m007",
+          "characterCount": 242,
+          "tokenCount": 47,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m008",
+          "characterCount": 249,
+          "tokenCount": 47,
+          "lexicalRecall": 0.978723,
+          "orderedCoverage": 0.978723
+        }
+      ]
+    },
+    "compactTransport": {
+      "status": "passed",
+      "eventCount": 5034,
+      "sourceLedgerSha256": "88ebdce99a0fdd22a481e3dcaaea4c4fef61e01f9f4a41144913fa9e6fe0b3aa",
+      "replayExact": true,
+      "plainTranscriptDeliveredToModel": false,
+      "originalEventsDeliveredToModel": false
+    },
+    "chronologyFirst": {
+      "status": "passed",
+      "emittedMoves": 8,
+      "targetEdgesReferenceEarlierEmittedMoves": true,
+      "oneOrTwoMovesPerSidePerSection": true
+    },
+    "conservativeExcerpt": {
+      "status": "passed",
+      "maximumCharacters": 450,
+      "tokenRange": [
+        12,
+        100
+      ],
+      "automaticTruncationPerformed": false
+    }
+  },
+  "deterministicCompilationReplayPassed": true,
+  "excerptStats": [
+    {
+      "moveId": "m001",
+      "characters": 233,
+      "tokens": 39
+    },
+    {
+      "moveId": "m002",
+      "characters": 258,
+      "tokens": 40
+    },
+    {
+      "moveId": "m003",
+      "characters": 233,
+      "tokens": 42
+    },
+    {
+      "moveId": "m004",
+      "characters": 274,
+      "tokens": 48
+    },
+    {
+      "moveId": "m005",
+      "characters": 298,
+      "tokens": 54
+    },
+    {
+      "moveId": "m006",
+      "characters": 252,
+      "tokens": 44
+    },
+    {
+      "moveId": "m007",
+      "characters": 242,
+      "tokens": 47
+    },
+    {
+      "moveId": "m008",
+      "characters": 249,
+      "tokens": 47
+    }
+  ],
+  "runtime": {
+    "elapsedMs": 301960,
+    "elapsedMinutes": 5.03,
+    "timeoutMs": 1800000,
+    "completedInsideTimeout": true
+  },
+  "comparisonToV424": {
+    "v424MovesOver100Tokens": 6,
+    "v424MaximumTokens": 114,
+    "v424EndpointMaximumCharacters": 600,
+    "v425EndpointMaximumCharacters": 450,
+    "v425MaximumTokens": 54,
+    "v425MaximumCharacters": 298,
+    "automaticTruncationPerformed": false
+  },
+  "totals": {
+    "attempts": 1,
+    "retries": 0,
+    "modelContexts": 1,
+    "meteredApiCostUsd": 0,
+    "transcriptionApiCalls": 0,
+    "transcriptionCostUsd": 0,
+    "scoresDerived": 0,
+    "legacyComparatorsOpened": 0
+  },
+  "authorization": {
+    "newDisjointFreshGatePreparation": true,
+    "newDisjointFreshGateModelExecution": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
