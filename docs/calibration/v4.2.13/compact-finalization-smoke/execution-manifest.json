@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "4.2.13-compact-finalization-execution-manifest",
+  "protocolId": "v4.2.13-compact-finalization-smoke",
+  "status": "frozen-one-retired-finalization-smoke-authorized",
+  "frozenAt": "2026-08-05T16:26:56Z",
+  "checkpointCommit": "fa8aca1374c03859dbc0b2f31622c15676200930",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "inputs": {
+    "workflow": "docs/assessment-workflow-v4.0.md",
+    "rubric": "docs/reassessment-rubric-v3.8.4.md",
+    "manual": "docs/calibration/v4.2.13/compact-finalization-smoke/manual.md",
+    "packet": "docs/calibration/v3.8.8/reconstruction/packets/debate-103.json",
+    "schema": "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/schemas/debate-103.schema.json"
+  },
+  "validationInputs": {
+    "priorValidOutput": "docs/calibration/v3.8.8/reconstruction/outputs/debate-103.json",
+    "correctionAnalysis": "docs/calibration/v4.2.11/lean-structural-correction/analysis.json",
+    "integratedAnalysis": "docs/calibration/v4.2.12/lean-integrated-long-context-primary/analysis.json"
+  },
+  "output": "docs/calibration/v4.2.13/compact-finalization-smoke/output.json",
+  "isolation": {
+    "freshTemporaryCodexHome": true,
+    "freshSourceDirectory": true,
+    "priorReconstructionUnavailable": true,
+    "legacyAssessmentUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "productionObjectsUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attempts": 1,
+    "retries": 0,
+    "timeoutMs": 600000,
+    "runtimeThresholdMinutes": 4.5,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "authorization": {
+    "modelExecution": true,
+    "deterministicValidation": true,
+    "analysis": true,
+    "scoring": false,
+    "productionMutation": false
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.2.13/compact-finalization-smoke/model-execution.json",
+    "analysis": "docs/calibration/v4.2.13/compact-finalization-smoke/analysis.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.2.13/compact-finalization-smoke/output.json",
+    "docs/calibration/v4.2.13/compact-finalization-smoke/model-execution.json",
+    "docs/calibration/v4.2.13/compact-finalization-smoke/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.13.md": "b4f4fd6ffc473e3076cbee614ee299ed394e4489c746182953207680c1f84a5f",
+    "docs/assessment-workflow-v4.0.md": "f3c37042481d808fc5e0a63430f021b0e4a76f9da4147d9de78a0d87e0f0c154",
+    "docs/reassessment-rubric-v3.8.4.md": "fda29887abb26f1f5a6f7b772e26434db0c055ec3efe42be4eeea602f5a84909",
+    "docs/calibration/v4.2.13/compact-finalization-smoke/manual.md": "675b8d25fd0ad9e8902e567cbc13370ed75a3bfddc1390fe7a1b3337876255fa",
+    "docs/calibration/v3.8.8/reconstruction/packets/debate-103.json": "14bfb489ff601641a2d4e42e8a357bfa6787f100eebaf83902f54ab15c8a6719",
+    "docs/calibration/v3.8.8/reconstruction/schema-compatibility-recovery/schemas/debate-103.schema.json": "51bec2dce9a4861a5a481f079a554bb66f4dd33aab5144f3873cb49fd1c5b939",
+    "docs/calibration/v3.8.8/reconstruction/outputs/debate-103.json": "1938c9566df70c8c09d82a6a3d560b2fffe67a23aa09418394a206ca8ccdbf2c",
+    "docs/calibration/v4.2.11/lean-structural-correction/analysis.json": "f1610c67dbd8c996dc04f53b5fd0d0e0424b8041ea8b4ce0ab703a8e11516c97",
+    "docs/calibration/v4.2.12/lean-integrated-long-context-primary/analysis.json": "5df085baad59d988e0d7d78b8076c04598f507fffe5551741ecf4ac59b25ecdf",
+    "docs/calibration/v4.2.13/compact-finalization-smoke/preparation-manifest.json": "55571cdfefd341d89af3ac633fa82dfd4de85acfa44a4ba1c0ef8124deaed6e0",
+    "scripts/lib/v385-transport.mjs": "f20d5cb026e0c2720d32276ddcbb612ec852e3732d7653e47a98ba5ffa880dfe",
+    "scripts/lib/v388-reconstruction.mjs": "b91aecc26cd3a978ef807bec877222b641fff4cd911028538cd035b747f5a342",
+    "scripts/lib/v41-lean-production.mjs": "9d4f4a5a54ff4c73f50733aa148064200862991a69003823d303e7bac363d9ba",
+    "scripts/validate-v388-reconstruction-output.mjs": "060e75adf68b1256fd4920aee06ee97600378057170d28febbb81ca9ec97e741",
+    "scripts/build-v4213-finalization-smoke.mjs": "bc88bebebead837cefa6f8c175364d733c5a2dfaf1fcf6125552e643b32c4e7a",
+    "scripts/test-v4213-finalization-smoke.mjs": "998ee8762f9912e470e02bcc5c4c22997348b6976aa35dc44e8f846a42f357a9",
+    "scripts/preregister-v4213-finalization-smoke.mjs": "e214c2c1e32fb1e6f9798a377a134a1d4a0e09c4f8aeb1fdf1965f9bd7104dca",
+    "scripts/run-v4213-finalization-smoke.mjs": "3d823b9e697cb37f3b626388282e0ee208661228af8798e99164c1b18b1b5018",
+    "scripts/analyze-v4213-finalization-smoke.mjs": "99197493ed45128e50b8a6d609b5564944c16030e8f201881314949cbd5b4660",
+    "src/data/references.js": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b"
+  }
+}
