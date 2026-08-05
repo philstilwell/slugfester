@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "4.2.16-three-debate-finalization-gate-analysis",
+  "protocolId": "v4.2.16-three-debate-finalization-gate",
+  "status": "three-debate-finalization-gate-failed-validation",
+  "developmentOnly": true,
+  "debates": [
+    {
+      "debateNumber": "55",
+      "accepted": false,
+      "elapsedMinutes": 2.5,
+      "transportClassification": "clean",
+      "normalizedCritiques": 0,
+      "validation": null,
+      "failure": {
+        "status": "normalization-failed",
+        "message": "Error: v4.2.15 no safe nonessential sentence can satisfy the word range\n    at normalizeV4215Critique (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4215-deterministic-prose-normalization.mjs:12:35)\n    at normalizeV4216Output (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4216-finalization-gate.mjs:18:558)\n    at file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-v4216-finalization-gate.mjs:19:237"
+      }
+    },
+    {
+      "debateNumber": "103",
+      "accepted": true,
+      "elapsedMinutes": 2.48,
+      "transportClassification": "clean",
+      "normalizedCritiques": 0,
+      "validation": {
+        "status": "passed",
+        "debateNumber": "103",
+        "argumentsChecked": 10,
+        "critiquesChecked": 10,
+        "tagsChecked": 0,
+        "displayedMoveCoverage": 0.4,
+        "scoreIdentityPassed": true,
+        "representativeQuotesVerified": 2,
+        "overallMinimumsPassed": true,
+        "noveltyItems": 17,
+        "introducedItems": 1,
+        "newArguments": 4,
+        "extensionBalancePassed": true,
+        "exactPlacementAccordionBylinePassed": true,
+        "prohibitedLanguageHits": 0
+      },
+      "failure": null
+    },
+    {
+      "debateNumber": "161",
+      "accepted": false,
+      "elapsedMinutes": 3.11,
+      "transportClassification": "clean",
+      "normalizedCritiques": 4,
+      "validation": null,
+      "failure": {
+        "status": "normalized-output-validation-failed",
+        "message": "file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v388-reconstruction.mjs:11\n  if (!condition) throw new Error(message);\n                        ^\n\nError: pro blunder: unknown or mislabeled tag fallacy/false-dilemma\n    at assertV388Recon (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v388-reconstruction.mjs:11:25)\n    at validateTags (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/validate-v388-reconstruction-output.mjs:33:5)\n    at file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/validate-v388-reconstruction-output.mjs:65:85\n\nNode.js v25.9.0"
+      }
+    }
+  ],
+  "runtimePassed": false,
+  "projection": null,
+  "totals": {
+    "debates": 3,
+    "modelContexts": 3,
+    "attempts": 3,
+    "retries": 0,
+    "correctionContexts": 0,
+    "validContexts": 1,
+    "deterministicNormalizedCritiques": 4,
+    "lockedHistoricalScoresCopied": false,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "newDisjointFreshJudgmentGatePreparation": false,
+    "newDisjointFreshJudgmentGateExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}

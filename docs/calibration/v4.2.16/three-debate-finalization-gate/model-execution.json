@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "4.2.16-three-debate-finalization-model-execution",
+  "protocolId": "v4.2.16-three-debate-finalization-gate",
+  "status": "three-debate-finalization-execution-failed",
+  "contexts": 3,
+  "attempts": 3,
+  "retries": 0,
+  "correctionContexts": 0,
+  "validContexts": 1,
+  "totalElapsedMs": 485449,
+  "meanElapsedMs": 161816.33333333334,
+  "results": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "startedAt": "2026-08-05T16:45:04.344Z",
+      "completedAt": "2026-08-05T16:47:34.454Z",
+      "elapsedMs": 150109,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "recoverableStreamEvents": 0,
+      "transportClassification": "clean",
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsd": 0,
+      "stdoutSha256": "a3ee208789ee9ba87e503420a8e548c6f477ab055065d2f8d19f5c8a792550d7",
+      "stderrSha256": "add8faa9ed1aa2fabfdafbf5264dade8f99d5e793d39fcd7ee3e8ee4ebcfae8d",
+      "status": "normalization-failed",
+      "accepted": false,
+      "rawOutputWritten": true,
+      "rawOutputSha256": "3693955ecd03985648f62a8cca060ee90dfa1165467bc1b088127df668b8a898",
+      "normalizedOutputWritten": false,
+      "validationMessage": "Error: v4.2.15 no safe nonessential sentence can satisfy the word range\n    at normalizeV4215Critique (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4215-deterministic-prose-normalization.mjs:12:35)\n    at normalizeV4216Output (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4216-finalization-gate.mjs:18:558)\n    at file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-v4216-finalization-gate.mjs:19:237"
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "startedAt": "2026-08-05T16:47:34.467Z",
+      "completedAt": "2026-08-05T16:50:03.287Z",
+      "elapsedMs": 148820,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "recoverableStreamEvents": 0,
+      "transportClassification": "clean",
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsd": 0,
+      "stdoutSha256": "43e40b320ef22000a41ff5faf3d647172cc9b874b28a7ac056b16b70475a2914",
+      "stderrSha256": "ba285bdeafe83025c0fc868f1676303efef4f287fa34a3d4e77107578e520253",
+      "status": "completed-valid",
+      "accepted": true,
+      "rawOutputWritten": true,
+      "rawOutputSha256": "244c6ac28d5895079966901021a87c7ae7077b1ecb8d62548f3661bd1b0be300",
+      "normalizedOutputWritten": true,
+      "normalizedOutputSha256": "dda6f9aceb3a431c94287ddf4f7e8fe6b4373f95a129033b915df2eabee1a914",
+      "normalizedCritiques": 0,
+      "normalizationReport": [],
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "103",
+        "argumentsChecked": 10,
+        "critiquesChecked": 10,
+        "tagsChecked": 0,
+        "displayedMoveCoverage": 0.4,
+        "scoreIdentityPassed": true,
+        "representativeQuotesVerified": 2,
+        "overallMinimumsPassed": true,
+        "noveltyItems": 17,
+        "introducedItems": 1,
+        "newArguments": 4,
+        "extensionBalancePassed": true,
+        "exactPlacementAccordionBylinePassed": true,
+        "prohibitedLanguageHits": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "startedAt": "2026-08-05T16:50:03.370Z",
+      "completedAt": "2026-08-05T16:53:09.890Z",
+      "elapsedMs": 186520,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "recoverableStreamEvents": 0,
+      "transportClassification": "clean",
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsd": 0,
+      "stdoutSha256": "0b10608eb792bd56d5f0e14d24d3bf4ed6e8303a374c1426ea2a6acfdbe4af4e",
+      "stderrSha256": "636c061d59d39167e35a625e409be512f05e4bd513347c33c01d6fc0bdb2114f",
+      "status": "normalized-output-validation-failed",
+      "accepted": false,
+      "rawOutputWritten": true,
+      "rawOutputSha256": "d828cb21cda957f59ae99794f3e4fad21af9ec7284a48a05f25ef952c3642bc9",
+      "normalizedOutputWritten": true,
+      "normalizedOutputSha256": "242e2348c3207a54d44d6440f78bb62269464cf6fe6816e36d19683dc2082a0f",
+      "normalizedCritiques": 4,
+      "normalizationReport": [
+        {
+          "moveId": "craig-millican-does-god-exist-2011-candidate-01-v381",
+          "beforeWords": 133,
+          "afterWords": 117,
+          "removedSentences": [
+            {
+              "index": 1,
+              "words": 16,
+              "text": "His distinctions among temporal, spatial, material, and causal conditions make the constructive relevant and unusually auditable."
+            }
+          ]
+        },
+        {
+          "moveId": "craig-millican-does-god-exist-2011-candidate-03-v381",
+          "beforeWords": 137,
+          "afterWords": 125,
+          "removedSentences": [
+            {
+              "index": 1,
+              "words": 12,
+              "text": "That distinction directly pressures the evidential basis for universalizing the causal rule."
+            }
+          ]
+        },
+        {
+          "moveId": "craig-millican-does-god-exist-2011-coverage-02-v384",
+          "beforeWords": 132,
+          "afterWords": 120,
+          "removedSentences": [
+            {
+              "index": 3,
+              "words": 12,
+              "text": "The move also advances from God generally toward Christian theism only indirectly."
+            }
+          ]
+        },
+        {
+          "moveId": "craig-millican-does-god-exist-2011-candidate-07-v381",
+          "beforeWords": 134,
+          "afterWords": 120,
+          "removedSentences": [
+            {
+              "index": 1,
+              "words": 14,
+              "text": "This is stronger than merely expressing moral outrage because it identifies a discriminating expectation."
+            }
+          ]
+        }
+      ],
+      "validationSummary": null,
+      "validationMessage": "file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v388-reconstruction.mjs:11\n  if (!condition) throw new Error(message);\n                        ^\n\nError: pro blunder: unknown or mislabeled tag fallacy/false-dilemma\n    at assertV388Recon (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v388-reconstruction.mjs:11:25)\n    at validateTags (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/validate-v388-reconstruction-output.mjs:33:5)\n    at file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/validate-v388-reconstruction-output.mjs:65:85\n\nNode.js v25.9.0"
+    }
+  ],
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsd": 0,
+  "authorization": {
+    "analysis": true,
+    "retry": false,
+    "correctionModelExecution": false,
+    "scoring": false
+  }
+}
