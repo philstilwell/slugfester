@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.1.8-source-integrity-threshold-diagnostic",
+  "status": "diagnostic-only-threshold-separation-confirmed",
+  "sourceBoundary": {
+    "sourceVersion": "v4.1.7",
+    "judgmentsReusableInV418": false,
+    "scoresAccessed": false,
+    "legacyComparatorsAccessed": false
+  },
+  "thresholds": {
+    "minimumLexicalRecall": 0.8,
+    "minimumOrderedCoverage": 0.8
+  },
+  "totals": {
+    "moves": 60,
+    "passed": 57,
+    "failed": 3,
+    "lexicalFailures": 2,
+    "orderedFailures": 3
+  },
+  "separation": {
+    "lowestPassingLexicalRecall": 0.969697,
+    "lowestPassingOrderedCoverage": 0.933333,
+    "highestFailingLexicalRecall": 0.826087,
+    "highestFailingOrderedCoverage": 0.608696
+  },
+  "failures": [
+    {
+      "debateNumber": "91",
+      "moveId": "pro-epistemic-gap-reply",
+      "excerptTokens": 17,
+      "lexicalRecall": 0.647059,
+      "orderedCoverage": 0.352941,
+      "passedLexical": false,
+      "passedOrdered": false
+    },
+    {
+      "debateNumber": "91",
+      "moveId": "con-apriori-reply",
+      "excerptTokens": 16,
+      "lexicalRecall": 0.5,
+      "orderedCoverage": 0.4375,
+      "passedLexical": false,
+      "passedOrdered": false
+    },
+    {
+      "debateNumber": "91",
+      "moveId": "con-measure-reply",
+      "excerptTokens": 23,
+      "lexicalRecall": 0.826087,
+      "orderedCoverage": 0.608696,
+      "passedLexical": true,
+      "passedOrdered": false
+    }
+  ],
+  "interpretation": "The ordered check detects one additional wrong-order/wrong-span case beyond the lexical check. All 57 remaining diagnostic moves clear both thresholds; the lowest ordered coverage among them is above 0.93.",
+  "execution": {
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionApiCalls": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "validatorFixtureUse": true,
+    "v417JudgmentReuse": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "primaryModelExecution": false
+  }
+}
