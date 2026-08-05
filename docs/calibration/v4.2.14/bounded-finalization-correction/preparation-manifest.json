@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "4.2.14-bounded-finalization-correction-preparation",
+  "protocolId": "v4.2.14-bounded-finalization-correction",
+  "status": "prepared-one-bounded-finalization-correction",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "debateNumber": "103",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "inputs": {
+    "manual": "docs/calibration/v4.2.14/bounded-finalization-correction/manual.md",
+    "schema": "docs/calibration/v4.2.14/bounded-finalization-correction/schema.json",
+    "packet": "docs/calibration/v4.2.14/bounded-finalization-correction/correction-packet.json"
+  },
+  "validationInputs": {
+    "originalOutput": "docs/calibration/v4.2.13/compact-finalization-smoke/output.json",
+    "sourcePacket": "docs/calibration/v3.8.8/reconstruction/packets/debate-103.json",
+    "goldFixture": "docs/calibration/v4.2.14/bounded-finalization-correction/gold-fixture.json",
+    "priorValidOutput": "docs/calibration/v3.8.8/reconstruction/outputs/debate-103.json",
+    "primaryExecution": "docs/calibration/v4.2.13/compact-finalization-smoke/model-execution.json",
+    "violations": "docs/calibration/v4.2.14/bounded-finalization-correction/violations.json"
+  },
+  "outputs": {
+    "proposal": "docs/calibration/v4.2.14/bounded-finalization-correction/proposal.json",
+    "corrected": "docs/calibration/v4.2.14/bounded-finalization-correction/corrected-output.json"
+  },
+  "policy": {
+    "oneAttempt": true,
+    "retries": 0,
+    "timeoutMs": 180000,
+    "combinedRuntimeThresholdMinutes": 4.5,
+    "mutableStrings": 15,
+    "scoresLocked": true,
+    "scoresDerived": false
+  },
+  "totals": {
+    "inputBytes": 57431,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "executionManifest": false,
+    "modelExecution": false,
+    "threeDebateFinalizationGatePreparation": false,
+    "scoring": false,
+    "productionMutation": false
+  }
+}

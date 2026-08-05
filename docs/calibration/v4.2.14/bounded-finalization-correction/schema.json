@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v4214-bounded-finalization-correction",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "quoteContexts",
+    "critiques",
+    "newArguments"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "4.2.14-bounded-prose-correction-proposal"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "v4.2.14-bounded-finalization-correction"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "103"
+    },
+    "quoteContexts": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "side",
+          "text"
+        ],
+        "properties": {
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "critiques": {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "text"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "enum": [
+              "woodford-edwards-rational-belief-god-2023-coverage-06-v384",
+              "woodford-edwards-rational-belief-god-2023-coverage-01-v384",
+              "woodford-edwards-rational-belief-god-2023-candidate-06-v381",
+              "woodford-edwards-rational-belief-god-2023-candidate-07-v381",
+              "woodford-edwards-rational-belief-god-2023-candidate-04-v381",
+              "woodford-edwards-rational-belief-god-2023-coverage-15-v384",
+              "woodford-edwards-rational-belief-god-2023-coverage-03-v384",
+              "woodford-edwards-rational-belief-god-2023-coverage-12-v384",
+              "woodford-edwards-rational-belief-god-2023-coverage-13-v384"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "newArguments": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "side",
+          "id",
+          "text"
+        ],
+        "properties": {
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}
