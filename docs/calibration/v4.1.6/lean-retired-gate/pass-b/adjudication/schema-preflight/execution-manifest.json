@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "4.1.6-adjudication-schema-preflight-manifest",
+  "protocolId": "v4.1.6-triggered-pass-b-consensus",
+  "status": "frozen-one-context-exact-schema-preflight",
+  "frozenAt": "2026-08-05T08:09:40Z",
+  "checkpointCommit": "5c03ac4e0ab4ddc600da4c830bafd9ed5fca8fc1",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "inputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/manual.md",
+    "packet": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/schema-preflight/packet.json",
+    "schema": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/adjudication.schema.json"
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attempts": 1,
+    "retriesMaximum": 0,
+    "timeoutMs": 600000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0
+  },
+  "authorization": {
+    "modelExecution": true,
+    "freezeThreeContextAdjudicationAfterPass": true,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  },
+  "outputs": {
+    "output": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/schema-preflight/output.json",
+    "execution": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/schema-preflight/model-execution.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/schema-preflight/output.json",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/schema-preflight/model-execution.json"
+  ],
+  "sourceHashes": {
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/manual.md": "d45868c8fcef5d9da2ee03777d5bfe5d0a312e7b51ac9373bb1b149a475697b8",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/schema-preflight/packet.json": "a14f5028731d8a5773cc75f16e136d51a490287953b3b26941594d1077bc3ebd",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/adjudication.schema.json": "725e3ca6b4de3f728f2dfa70706cf3bb06361b8529e37b8c46e3983222d351b7",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/preparation-audit.json": "b4af320f923a66fb92dace3293074edca48e83f4c43129642a10335b9e3f9b81",
+    "scripts/lib/v416-adjudication.mjs": "2babd99f8fd8ad00c4190fbde45afe28b021bbcbbc73547a5757014984fd2b6d",
+    "scripts/validate-v416-adjudication-output.mjs": "4b0bab86e52176563bf18359c42ea819b3d4f65250dc6fd9514003630f9f8a12",
+    "scripts/preregister-v416-adjudication-preflight.mjs": "927ba195fa9ab0c6733ae4b025b335362f649ebcf64a9fe7a8e194e1522023cb",
+    "scripts/run-v416-adjudication-preflight.mjs": "e7ecfbe4912d48b539789570dcda52dbfd63a9a3a067567d79671e9283eee95e",
+    "scripts/lib/v385-transport.mjs": "f20d5cb026e0c2720d32276ddcbb612ec852e3732d7653e47a98ba5ffa880dfe"
+  }
+}
