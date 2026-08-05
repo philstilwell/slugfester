@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "4.2.5-conservative-excerpt-execution-manifest",
+  "protocolId": "v4.2.5-conservative-excerpt-compact-diagnostic",
+  "status": "frozen-one-context-retired-conservative-excerpt-authorized",
+  "frozenAt": "2026-08-05T13:11:07Z",
+  "checkpointCommit": "f9029408737d32012d515198b3ff06a251f1e2c1",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low"
+  },
+  "modelInputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.2.5/conservative-excerpt-smoke/manual.md",
+    "schema": "docs/calibration/v4.2.5/conservative-excerpt-smoke/schema.json"
+  },
+  "context": {
+    "debateNumber": "131",
+    "debateId": "boyce-carrier-historical-jesus-mythicism-2022",
+    "durationSeconds": 10464,
+    "packet": "docs/calibration/v4.2.5/conservative-excerpt-smoke/packet.json",
+    "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.4/debate-131.jsonl",
+    "originalTranscript": ".assessment-cache/captions/bC-Uj92Cpvg/transcript.txt",
+    "originalEvents": ".assessment-cache/captions/bC-Uj92Cpvg/events.json",
+    "originalManifest": ".assessment-cache/captions/bC-Uj92Cpvg/manifest.json",
+    "rawOutput": "docs/calibration/v4.2.5/conservative-excerpt-smoke/primary-output.json",
+    "compiledOutput": "docs/calibration/v4.2.5/conservative-excerpt-smoke/primary-compiled.json"
+  },
+  "transport": {
+    "sourceLedgerReplayExact": true,
+    "sourceLedgerSha256": "88ebdce99a0fdd22a481e3dcaaea4c4fef61e01f9f4a41144913fa9e6fe0b3aa",
+    "sourceLedgerEvents": 5034,
+    "completeSourceTextDeliveredOnce": true,
+    "duplicatePlainTranscriptDelivered": false,
+    "originalEventsDelivered": false,
+    "totalCopiedInputBytes": 335927,
+    "copiedFiles": [
+      "docs/reassessment-rubric-v4.0.md",
+      "docs/reassessment-rubric-v4.0.1.md",
+      "docs/reassessment-rubric-v4.1.md",
+      "docs/calibration/v4.2.5/conservative-excerpt-smoke/manual.md",
+      "docs/calibration/v4.2.5/conservative-excerpt-smoke/schema.json",
+      "docs/calibration/v4.2.5/conservative-excerpt-smoke/packet.json",
+      ".assessment-cache/compact-ledgers/v4.2.4/debate-131.jsonl"
+    ],
+    "copiedBytes": {
+      "docs/reassessment-rubric-v4.0.md": 8242,
+      "docs/reassessment-rubric-v4.0.1.md": 1010,
+      "docs/reassessment-rubric-v4.1.md": 1963,
+      "docs/calibration/v4.2.5/conservative-excerpt-smoke/manual.md": 1746,
+      "docs/calibration/v4.2.5/conservative-excerpt-smoke/schema.json": 25460,
+      "docs/calibration/v4.2.5/conservative-excerpt-smoke/packet.json": 3183,
+      ".assessment-cache/compact-ledgers/v4.2.4/debate-131.jsonl": 294323
+    }
+  },
+  "excerptChange": {
+    "priorEndpointMaximumCharacters": 600,
+    "endpointMaximumCharacters": 450,
+    "tokenRangeRetained": [
+      12,
+      100
+    ],
+    "lexicalRecallRetained": 0.8,
+    "orderedCoverageRetained": 0.8,
+    "automaticTruncationAuthorized": false,
+    "judgmentAnchorsChanged": false
+  },
+  "isolation": {
+    "freshTemporaryCodexHome": true,
+    "freshSourceDirectory": true,
+    "oneDebate": true,
+    "completeSourceLedgerCopied": true,
+    "plainTranscriptNotCopied": true,
+    "originalEventsNotCopied": true,
+    "failedV424OutputNotCopied": true,
+    "failedV424AnalysisNotCopied": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutMs": 1800000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionApiCalls": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "recoverableStreamEventsNormalMaximum": 2,
+    "recoverableStreamEventsHardMaximum": 8
+  },
+  "authorization": {
+    "primaryModelExecution": true,
+    "deterministicValidation": true,
+    "deterministicTimeCompilation": true,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "freshGateSelection": false,
+    "productionMutation": false
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocksExecution": true,
+    "preexistingOutputBlocksExecution": true,
+    "automaticRetryAuthorized": false,
+    "outputNormalizationAuthorized": false,
+    "automaticTruncationAuthorized": false,
+    "timeoutExtensionAuthorized": false
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.2.5/conservative-excerpt-smoke/model-execution.json",
+    "analysis": "docs/calibration/v4.2.5/conservative-excerpt-smoke/analysis.json",
+    "rawOutput": "docs/calibration/v4.2.5/conservative-excerpt-smoke/primary-output.json",
+    "compiledOutput": "docs/calibration/v4.2.5/conservative-excerpt-smoke/primary-compiled.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.2.5/conservative-excerpt-smoke/primary-output.json",
+    "docs/calibration/v4.2.5/conservative-excerpt-smoke/primary-compiled.json",
+    "docs/calibration/v4.2.5/conservative-excerpt-smoke/model-execution.json",
+    "docs/calibration/v4.2.5/conservative-excerpt-smoke/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.5.md": "95359ea090372e0a2631607377c0cf21bd7b707285e939d9eaecec6e3a3f3196",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/calibration/v4.2.5/conservative-excerpt-smoke/manual.md": "6a7e872c5a77a44dc6567bb7223ff4f1fec92480b588312904e0ea6c4412f1fc",
+    "docs/calibration/v4.2.5/conservative-excerpt-smoke/schema.json": "bafed2df72cd44e3fe692c0021e7fbec83b8c6494293a58f08235f7c9918d050",
+    "docs/calibration/v4.2.5/conservative-excerpt-smoke/preparation-manifest.json": "097d545ebcac0df5e8abdea9b53a9b39152ac3c13562f6d5cce4905dd7707fc1",
+    ".assessment-cache/compact-ledgers/v4.2.4/debate-131.jsonl": "88ebdce99a0fdd22a481e3dcaaea4c4fef61e01f9f4a41144913fa9e6fe0b3aa",
+    ".assessment-cache/captions/bC-Uj92Cpvg/transcript.txt": "639ae30e4c37496786398c44d6bd7ae4b888b323aeac6e89fa3f931665edb169",
+    ".assessment-cache/captions/bC-Uj92Cpvg/events.json": "77a15ae1d157c38a17a55b6592bf8e5c1a8cbc2c0715bc5f4af9bde3586691d5",
+    ".assessment-cache/captions/bC-Uj92Cpvg/manifest.json": "a75c3640b76c8f3503e397cf57da0e925b38632a0f739d785b457caac002322a",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v41-lean-production.mjs": "9d4f4a5a54ff4c73f50733aa148064200862991a69003823d303e7bac363d9ba",
+    "scripts/lib/v417-fresh-validation.mjs": "c7226c573fab54ef5466f056488fa039e55da5746bd73d1d87553f61c3ec0f79",
+    "scripts/lib/v418-source-integrity.mjs": "ff0593a316fcd06f1662b0f9c9864bdd4c2a867a718638a79cac8b9f27eac205",
+    "scripts/lib/v419-schema-bounded-source.mjs": "4e40ed49afd5418de00c8830edcb81f9047ab99fe4dc584f978953a7bb15d548",
+    "scripts/lib/v42-compact-transport.mjs": "f09819bc34a1ed3e3d4c4c2a1c2af7eb50846dcf1deee90fa050da3ef7fe37c9",
+    "scripts/lib/v421-compact-fresh.mjs": "c1959ab6e5235fcb1679955fc69d7be4bca2c555e3af9d5cdf0d4199f32e16fe",
+    "scripts/lib/v422-chronology-first.mjs": "aea527699e309cbbe51856e2abb99efc37ace15005029a3d1e83920154e29b16",
+    "scripts/lib/v423-chronology-fresh.mjs": "64f1f47ea9083d18376953078ebedb51608106283099b896be04a729c082037d",
+    "scripts/lib/v424-screened-chronology-fresh.mjs": "a5e746482d22fd308cc9564c819d76cc7676d2fe05b4428af0f4265f29e01c0d",
+    "scripts/lib/v425-conservative-excerpt.mjs": "5f1a9462163e1bba0f4b316b744bb49e9f1d7b69e53fe2d77468dc9ce55cc661",
+    "scripts/build-v425-conservative-excerpt-smoke.mjs": "0921af178b3889e128098227f927612a9eb7d3995ef069bdc1c59af4406bc4a4",
+    "scripts/test-v425-conservative-excerpt.mjs": "c2261a1703dc4e06dc79aca176856b0fffa5e98259550477159efbaa9ec3345b",
+    "scripts/validate-v425-primary-output.mjs": "69c940b4243c6a9c7b7dd849f0cbf954898f1ffc3a45617b2cbcef3aa016a9f3",
+    "scripts/preregister-v425-excerpt-execution.mjs": "52434ae3dc7dbad97d9850d034edccfedac1e766303d0a114f2e6f4004221caa",
+    "scripts/run-v425-excerpt-execution.mjs": "ffa8aaddd10eb7468b7fe5cd5dbd121ab889e2bdd577b4e491cdeb2fe6f89c19",
+    "scripts/analyze-v425-excerpt.mjs": "68f6385057b9fea32424f9c7e3bb91b1fd23e724b3578f47355eb1263473f47d"
+  }
+}
