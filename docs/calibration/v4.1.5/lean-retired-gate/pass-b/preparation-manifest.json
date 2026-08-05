@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "4.1.5-triggered-pass-b-preparation",
+  "protocolId": "v4.1.5-triggered-pass-b-consensus",
+  "status": "prepared-score-blind-pass-b-packets",
+  "calibrationOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "contexts": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "packet": "docs/calibration/v4.1.5/lean-retired-gate/pass-b/packets/debate-55.json",
+      "sourcePacket": "docs/calibration/v4.1.5/lean-retired-gate/packets/debate-55.json",
+      "transcript": ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt",
+      "events": ".assessment-cache/captions/zQBY5K-Ns2Y/events.json",
+      "localManifest": ".assessment-cache/captions/zQBY5K-Ns2Y/manifest.json",
+      "output": "docs/calibration/v4.1.5/lean-retired-gate/pass-b/outputs/debate-55.json",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "55",
+        "lockedMoves": 10,
+        "lockedSections": 5,
+        "primaryJudgmentFieldsVisible": 0
+      }
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "packet": "docs/calibration/v4.1.5/lean-retired-gate/pass-b/packets/debate-103.json",
+      "sourcePacket": "docs/calibration/v4.1.5/lean-retired-gate/packets/debate-103.json",
+      "transcript": ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt",
+      "events": ".assessment-cache/captions/g1TlLCSn_5o/events.json",
+      "localManifest": ".assessment-cache/captions/g1TlLCSn_5o/manifest.json",
+      "output": "docs/calibration/v4.1.5/lean-retired-gate/pass-b/outputs/debate-103.json",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "103",
+        "lockedMoves": 14,
+        "lockedSections": 5,
+        "primaryJudgmentFieldsVisible": 0
+      }
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "packet": "docs/calibration/v4.1.5/lean-retired-gate/pass-b/packets/debate-161.json",
+      "sourcePacket": "docs/calibration/v4.1.5/lean-retired-gate/packets/debate-161.json",
+      "transcript": ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt",
+      "events": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+      "localManifest": ".assessment-cache/captions/9JVRy7bR7zI/manifest.json",
+      "output": "docs/calibration/v4.1.5/lean-retired-gate/pass-b/outputs/debate-161.json",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "161",
+        "lockedMoves": 10,
+        "lockedSections": 5,
+        "primaryJudgmentFieldsVisible": 0
+      }
+    }
+  ],
+  "inputs": {
+    "workflow": "docs/assessment-workflow-v4.0.md",
+    "workflowBounded": "docs/assessment-workflow-v4.1.md",
+    "workflowConsistency": "docs/assessment-workflow-v4.1.3.md",
+    "workflowBurdenTuple": "docs/assessment-workflow-v4.1.4.md",
+    "workflowTiming": "docs/assessment-workflow-v4.1.5.md",
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.1.5/lean-retired-gate/pass-b/manual.md",
+    "schema": "docs/calibration/v4.1.5/lean-retired-gate/pass-b/schemas/pass-b.schema.json"
+  },
+  "totals": {
+    "triggeredDebates": 3,
+    "lockedMoves": 34,
+    "primaryJudgmentFieldsVisible": 0,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "passBSchemaPreflight": true,
+    "passBModelExecution": false,
+    "disagreementExtraction": false,
+    "adjudication": false,
+    "productionMutation": false
+  }
+}

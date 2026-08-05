@@ -1,0 +1,288 @@
+{
+  "schemaVersion": "4.1.5-triggered-pass-b-packet",
+  "protocolId": "v4.1.5-triggered-pass-b-consensus",
+  "debateNumber": "schema-preflight",
+  "debateId": "v415-bounded-schema-preflight",
+  "motion": "Does the synthetic evidence justify adopting the proposed city transit plan?",
+  "sides": {
+    "pro": {
+      "label": "Transit-plan defender",
+      "speakers": [
+        "Alex Pro"
+      ]
+    },
+    "con": {
+      "label": "Transit-plan critic",
+      "speakers": [
+        "Casey Con"
+      ]
+    }
+  },
+  "durationSeconds": 480,
+  "eventCount": 8,
+  "sourceChain": {
+    "transcriptPath": "transcript.txt",
+    "eventsPath": "events.json"
+  },
+  "lockedRoutes": [
+    {
+      "routeId": "route-pro-adoption",
+      "side": "pro",
+      "description": "Defend adoption through evidence of commute benefits, a staged test of generalizability, and an economically bounded capital commitment.",
+      "successCriteria": "Show that expected transit benefits and staged safeguards make adoption more reasonable than delaying or limiting the plan on the present evidence.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-adopt",
+        "tier": "motion",
+        "description": "The evidence and safeguards jointly justify adopting the proposed city transit plan."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-benefit",
+          "tier": "central",
+          "description": "The pilot provides meaningful evidence that the plan can reduce commute times."
+        },
+        {
+          "bridgeId": "pro-central-staging",
+          "tier": "central",
+          "description": "Staged implementation and a checkpoint adequately manage uncertainty about citywide generalization."
+        },
+        {
+          "bridgeId": "pro-central-economics",
+          "tier": "central",
+          "description": "Expected operating savings and contractual protection make purchase economically preferable to leasing."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-frequency",
+          "tier": "subsidiary",
+          "description": "The pilot benefit remains relevant if its service frequency is maintained."
+        },
+        {
+          "bridgeId": "pro-subsidiary-resale",
+          "tier": "subsidiary",
+          "description": "The resale clause materially limits unrecovered capital if expansion is cancelled."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-limited-experiment",
+      "side": "con",
+      "description": "Oppose unconditional citywide adoption by challenging sample generalizability and the reversibility of capital committed before the proposed checkpoint.",
+      "successCriteria": "Show that the current evidence warrants at most a limited, reversible experiment rather than an unconditional citywide commitment.",
+      "motionBridge": {
+        "bridgeId": "con-motion-reject-unconditional",
+        "tier": "motion",
+        "description": "The current record does not justify unconditional citywide adoption of the transit plan."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-generalization",
+          "tier": "central",
+          "description": "High-ridership pilot neighborhoods do not adequately support forecasts for lower-density districts."
+        },
+        {
+          "bridgeId": "con-central-reversibility",
+          "tier": "central",
+          "description": "Major irreversible spending occurs before the staged test resolves the central evidential uncertainty."
+        },
+        {
+          "bridgeId": "con-central-limited-test",
+          "tier": "central",
+          "description": "A limited and reversible experiment preserves learning while avoiding premature citywide commitment."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-lease",
+          "tier": "subsidiary",
+          "description": "Leasing vehicles could reduce sunk-cost exposure during the evidential test."
+        },
+        {
+          "bridgeId": "con-subsidiary-exclusions",
+          "tier": "subsidiary",
+          "description": "Resale limits and excluded charging equipment leave substantial capital unrecoverable."
+        }
+      ]
+    }
+  ],
+  "lockedSections": [
+    {
+      "sectionId": "section-pilot-inference",
+      "title": "Pilot benefit and representativeness",
+      "weightPercent": 30,
+      "rationale": "The opening dispute establishes both the plan's principal empirical benefit and the central challenge to extending that evidence citywide.",
+      "proMoves": [
+        {
+          "moveId": "pro-pilot-benefit",
+          "speaker": "Alex Pro",
+          "moveKind": "constructive",
+          "proposition": "A representative three-neighborhood pilot's twelve-percent commute reduction probabilistically supports adoption if service frequency is maintained.",
+          "sourceSpan": {
+            "startEvent": 0,
+            "endEvent": 0,
+            "startMs": 0,
+            "endMs": 45000,
+            "excerpt": "The city should adopt the transit plan because the pilot reduced average commute time by twelve percent across three representative neighborhoods."
+          },
+          "importance": 3
+        }
+      ],
+      "conMoves": [
+        {
+          "moveId": "con-sample-challenge",
+          "speaker": "Casey Con",
+          "moveKind": "reply",
+          "proposition": "Selection of unusually high-ridership neighborhoods prevents the pilot result from adequately justifying citywide generalization.",
+          "sourceSpan": {
+            "startEvent": 1,
+            "endEvent": 1,
+            "startMs": 60000,
+            "endMs": 105000,
+            "excerpt": "The three neighborhoods were selected for unusually high existing ridership, so the commute result may not generalize to lower-density districts."
+          },
+          "importance": 3
+        }
+      ]
+    },
+    {
+      "sectionId": "section-staged-test",
+      "title": "Staging and pre-checkpoint commitment",
+      "weightPercent": 25,
+      "rationale": "This exchange tests whether the checkpoint cures the sampling problem or leaves a separate exposure because capital is committed first.",
+      "proMoves": [
+        {
+          "moveId": "pro-staged-checkpoint",
+          "speaker": "Alex Pro",
+          "moveKind": "reply",
+          "proposition": "A staged rollout with a six-month checkpoint tests representativeness before expansion into lower-density districts.",
+          "sourceSpan": {
+            "startEvent": 2,
+            "endEvent": 2,
+            "startMs": 120000,
+            "endMs": 165000,
+            "excerpt": "The plan includes a staged rollout and a six-month checkpoint before expansion into lower-density districts."
+          },
+          "importance": 3
+        }
+      ],
+      "conMoves": [
+        {
+          "moveId": "con-precommitment-lease",
+          "speaker": "Casey Con",
+          "moveKind": "reply",
+          "proposition": "Because major capital is committed before the checkpoint, leasing would preserve the test while reducing sunk-cost risk.",
+          "sourceSpan": {
+            "startEvent": 3,
+            "endEvent": 3,
+            "startMs": 180000,
+            "endMs": 225000,
+            "excerpt": "Leasing vehicles for the first stage would preserve the same evidential test while reducing the sunk-cost risk."
+          },
+          "importance": 3
+        }
+      ]
+    },
+    {
+      "sectionId": "section-resale-protection",
+      "title": "Purchase economics and resale limits",
+      "weightPercent": 25,
+      "rationale": "The parties directly compare leasing costs with the purchase contract's protection and then test whether that protection covers the irreversible costs.",
+      "proMoves": [
+        {
+          "moveId": "pro-lease-cost-resale",
+          "speaker": "Alex Pro",
+          "moveKind": "reply",
+          "proposition": "Because leasing costs twenty percent more and purchase includes resale protection, purchase is preferable absent substantially higher cancellation risk.",
+          "sourceSpan": {
+            "startEvent": 4,
+            "endEvent": 4,
+            "startMs": 240000,
+            "endMs": 285000,
+            "excerpt": "The lease alternative costs twenty percent more during the first year, and the purchase contract includes a resale clause."
+          },
+          "importance": 3
+        }
+      ],
+      "conMoves": [
+        {
+          "moveId": "con-resale-exclusions",
+          "speaker": "Casey Con",
+          "moveKind": "reply",
+          "proposition": "A sixty-percent resale ceiling and exclusion of charging equipment leave much of the irreversible cost unprotected.",
+          "sourceSpan": {
+            "startEvent": 5,
+            "endEvent": 5,
+            "startMs": 300000,
+            "endMs": 345000,
+            "excerpt": "The resale clause returns at most sixty percent of purchase price and excludes specialized charging equipment."
+          },
+          "importance": 3
+        }
+      ]
+    },
+    {
+      "sectionId": "section-net-economics",
+      "title": "Net savings and residual forecast uncertainty",
+      "weightPercent": 20,
+      "rationale": "The closing exchange weighs total savings against unrecovered capital and determines whether the same sample problem still limits the final adoption claim.",
+      "proMoves": [
+        {
+          "moveId": "pro-net-savings",
+          "speaker": "Alex Pro",
+          "moveKind": "reply",
+          "proposition": "Projected two-year operating savings exceed maximum unrecovered capital, subject to the ridership forecast and checkpoint results.",
+          "sourceSpan": {
+            "startEvent": 6,
+            "endEvent": 6,
+            "startMs": 360000,
+            "endMs": 405000,
+            "excerpt": "The projected two-year operating savings exceed the maximum unrecovered capital under the cancellation scenario."
+          },
+          "importance": 3
+        }
+      ],
+      "conMoves": [
+        {
+          "moveId": "con-limited-experiment",
+          "speaker": "Casey Con",
+          "moveKind": "reply",
+          "proposition": "Because the ridership forecast derives from the same high-ridership sample, the record warrants only a limited experiment, not unconditional citywide commitment.",
+          "sourceSpan": {
+            "startEvent": 7,
+            "endEvent": 7,
+            "startMs": 420000,
+            "endMs": 465000,
+            "excerpt": "The plan is reasonable as a limited experiment; the current record still does not warrant an unconditional citywide commitment."
+          },
+          "importance": 3
+        }
+      ]
+    }
+  ],
+  "lockedMoveOrder": [
+    "pro-pilot-benefit",
+    "con-sample-challenge",
+    "pro-staged-checkpoint",
+    "con-precommitment-lease",
+    "pro-lease-cost-resale",
+    "con-resale-exclusions",
+    "pro-net-savings",
+    "con-limited-experiment"
+  ],
+  "modelInputBoundary": {
+    "completeTranscriptRequired": true,
+    "timestampedEventsRequired": true,
+    "lockedInventoryAndWeightsVisible": true,
+    "primaryJudgmentsUnavailable": true,
+    "primaryRatingsUnavailable": true,
+    "primaryTotalsUnavailable": true,
+    "triggerReasonsUnavailable": true,
+    "controlSelectionUnavailable": true,
+    "comparatorUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorWinnersUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  }
+}
