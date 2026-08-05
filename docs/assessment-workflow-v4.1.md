@@ -52,4 +52,4 @@ The preregistered central planning assumptions are 7.0 primary minutes per debat
 
 The conservative assumptions are 8.5 primary minutes, 5.0 finalization minutes, a 20% trigger rate, 8.5 Pass-B minutes, adjudication on 60% of triggered debates at 6.5 minutes, and five fixed hours. This projects to 56.93 aggregate hours.
 
-Actual measured primary time replaces the central 7.0-minute assumption after the gate. Quality triggers always override the budget. No held-out gate or corpus run is authorized until this retired gate passes and its downstream triggered-consensus stages also pass.
+Actual measured primary time replaces the central 7.0-minute assumption after the gate. The conservative primary assumption becomes the greater of 8.5 minutes and 120% of the measured mean. Quality triggers always override the budget. No held-out gate or corpus run is authorized until this retired gate passes and its downstream triggered-consensus stages also pass.
