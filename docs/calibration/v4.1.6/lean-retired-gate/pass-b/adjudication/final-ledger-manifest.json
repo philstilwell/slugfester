@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "4.1.6-final-ledger-assembly-manifest",
+  "protocolId": "v4.1.6-triggered-pass-b-consensus",
+  "status": "frozen-deterministic-final-ledger-assembly",
+  "frozenAt": "2026-08-05T08:35:00.000Z",
+  "checkpointCommit": "d77f61cab7ad152f4f2adfeafdaab75755ec8726",
+  "calibrationOnly": true,
+  "inputs": {
+    "debates": 3,
+    "disputedMoves": 34,
+    "candidateSelections": 154,
+    "nondisputedUnequalRawScalars": 39,
+    "audioVerifiedMoves": 8
+  },
+  "compilerRules": {
+    "baseJudgment": "primary",
+    "responseTupleAndResponsiveness": "indivisible-adjudicated-candidate",
+    "charityStateAndRepresentationalCharity": "indivisible-adjudicated-candidate",
+    "relevanceBurdenAndBurdenContact": "indivisible-adjudicated-candidate",
+    "independentDisputedScoringFields": "complete-record-from-adjudicated-candidate",
+    "burdenAdjustments": "complete-record-from-adjudicated-candidate",
+    "nondisputedUnequalRawScalars": "rounded-mean-after-adjudication",
+    "dependencyPrecedence": "compound-or-independent-adjudicated-selection-suppresses-rounded-mean",
+    "allOtherFields": "primary-locked",
+    "modelScoresAllowed": false,
+    "deterministicScoresAllowedDuringAssembly": false
+  },
+  "acceptanceRule": {
+    "exactDeterministicReplay": true,
+    "finalJudgmentsRequired": 3,
+    "candidateSelectionsRequired": 154,
+    "rawScalarPopulationRequired": 39,
+    "sourceSchemaValidationRequired": true,
+    "missingSelectionsMaximum": 0,
+    "inventedCandidatesMaximum": 0,
+    "calculatedScoresMaximum": 0
+  },
+  "artifacts": {
+    "schema": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/final-ledger.schema.json",
+    "finalLedger": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/final-ledger.json",
+    "calculatedScores": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/calculated-scores.json"
+  },
+  "authorization": {
+    "finalLedgerAssembly": true,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  },
+  "sourceHashes": {
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/analysis.json": "37efb560ebd3487ba7f8c0ba8addbda93053efc3776a51dc281e11c2728f29cb",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/disagreements.json": "87f474f47246b72e1f8d35eec0441098d0111f5ae92499aca08981615d6d2f64",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/audio-verification.json": "bfc842616bb1f719358b02de2c7eeabbf70e1701c9a2a732bb09be80db7d8616",
+    "docs/calibration/v4.1.5/lean-retired-gate/primary-outputs/debate-55.json": "82ae3ea203b5288cf14d44a6a3e77dfa1d943615f5b5b65d93ac95a23c24e5d2",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/outputs/debate-55.json": "20872a5273f8019a284de59678b172816dff818768f3fa9cf2fa409d7f8721e1",
+    "docs/calibration/v4.1.5/lean-retired-gate/packets/debate-55.json": "0ffecc25d7e81f331dfe370731d7869ad2d27707b0839277a9e6494273e11bd2",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/packets/debate-55.json": "579ece36cdea5727b3e7adac3759f108d8bf595dd02517356ef1d0a8c6a287a3",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/outputs/debate-55.json": "92e6d8ef2159b1f88d4a2cb87b4b3e170e59d64071f0f16306e249263576c8ce",
+    "docs/calibration/v4.1.5/lean-retired-gate/primary-outputs/debate-103.json": "5910344a5d819fba137940c81a16434d627f5959f893ef7537289f6deb891869",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/outputs/debate-103.json": "ae9965bb0b08e87a4b809300f595118422f0606a1f817e48c5a57724ff7e542e",
+    "docs/calibration/v4.1.5/lean-retired-gate/packets/debate-103.json": "c602eccd3439d0fec31637b5b385ab6e198b1744be505436b0f2a0e05f0a4362",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/packets/debate-103.json": "9344c35c0b2b439f13c56316142141754dc4744379df277970c10a998c85387a",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/outputs/debate-103.json": "ae253cb2208731dd029465d2551f129b8db4bc7c19d9a69faf42853cb9d33ab6",
+    "docs/calibration/v4.1.5/lean-retired-gate/primary-outputs/debate-161.json": "c9fffb2c5e5c1c37662481f39db468dfd878ff952c72db523ebde9ab56e8b21b",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/outputs/debate-161.json": "d00fcbb1a04397e22fea9bbd6481d1a948944b31c8772494677eefdde369d0fa",
+    "docs/calibration/v4.1.5/lean-retired-gate/packets/debate-161.json": "aba22de6e5f9b3a7ce7d0d7ed12a83fc8010f5f2bee1ee3c44574bc41a921965",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/packets/debate-161.json": "cfd7748bc033633a665e6a148a8ffcc20e872c0538b790f59f5d6d3d85e8e59b",
+    "docs/calibration/v4.1.6/lean-retired-gate/pass-b/adjudication/outputs/debate-161.json": "259cc36444d9d15afbe863467f90445164a285ddc07d5b11735804d12e0e5a72",
+    "scripts/lib/v416-final-ledger.mjs": "5adce8686862ae17e1f50920030808f43feda5bf4448b1496672cea892e80356",
+    "scripts/test-v416-final-ledger.mjs": "57e98b1098e23b07d03ecf89d56788286fc6bca6c29cb9657c5a3b9386ecd061",
+    "scripts/preregister-v416-final-ledger.mjs": "47f30bf82a65e17a5fa6231e501ba55c9cac73efe13abfca579e43b295999ee4",
+    "scripts/assemble-v416-final-ledger.mjs": "d9d018cfcd699358f6d1f3985cfd2c6f122785e736282015f260764448337e59",
+    "scripts/validate-v416-final-ledger.mjs": "ed8a2aa9b54e69bd9f49f7506d8b1fd170a6de23bdd4ef8f13d011928e631f32"
+  }
+}
