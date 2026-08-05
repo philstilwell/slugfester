@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "4.2.9.1-long-context-schema-recovery-analysis",
+  "protocolId": "v4.2.9.1-long-context-schema-recovery",
+  "status": "schema-recovered-partition-failed",
+  "debateNumber": "99",
+  "developmentOnly": true,
+  "diagnosis": {
+    "subscriptionProbePassed": true,
+    "structuredOutputProbeRejectedBeforeInference": true,
+    "exactApiError": "Invalid schema for response_format 'codex_output_schema': In context=('properties', 'schemaVersion'), schema must have a 'type' key.",
+    "originalRequestsRejectedBeforeInference": 2,
+    "originalModelOutputs": 0,
+    "schemaRepair": "Add explicit string or boolean types to every constant-valued property.",
+    "technicalProbeModelContexts": 1,
+    "technicalProbeMeteredApiCostUsd": 0
+  },
+  "completeSourceCoverage": {
+    "originalEvents": 3397,
+    "jointlyCoveredEvents": 3397,
+    "overlapStartEvent": 1638,
+    "overlapEndEvent": 1758,
+    "overlapEvents": 121,
+    "complete": true
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-1",
+      "status": "output-validation-failed",
+      "elapsedMs": 120366,
+      "validationMessage": "file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69\n  if (!condition) throw new Error(message);\n                        ^\n\nError: c6-pantheism-simpler: invalid local reply shape\n    at assertV4 (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69:25)\n    at validateV429Proposal (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v429-long-context-partition.mjs:118:7)\n    at file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/validate-v429-proposal.mjs:17:28\n\nNode.js v25.9.0"
+    },
+    {
+      "chunkId": "chunk-2",
+      "status": "timed-out",
+      "elapsedMs": 900009,
+      "validationMessage": null
+    }
+  ],
+  "candidates": {
+    "total": 0,
+    "pro": 0,
+    "con": 0,
+    "crossChunkSpanOverlaps": []
+  },
+  "runtime": {
+    "schemaRecoveryProposalElapsedMs": 1020375,
+    "schemaRecoveryProposalElapsedMinutes": 17.01,
+    "priorRejectedRequestElapsedMs": 5514,
+    "priorWholePrimaryTimeoutMs": 1800013
+  },
+  "totals": {
+    "schemaRecoveryModelContexts": 2,
+    "semanticRetries": 0,
+    "priorRejectedBeforeInference": 2,
+    "technicalProbeModelContexts": 1,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "integratedPrimaryPreparation": false,
+    "integratedPrimaryExecution": false,
+    "scoreDerivation": false,
+    "freshGatePreparation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
