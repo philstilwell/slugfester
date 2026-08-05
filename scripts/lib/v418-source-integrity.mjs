@@ -2,6 +2,8 @@ import { createHash } from "node:crypto";
 import { assertV4 } from "./v41-lean-production.mjs";
 import {
   V417_MODEL,
+  deriveV417PrimaryScores,
+  evaluateV417Escalation,
   evaluateV417PrimaryTiming,
   makeV417PrimarySchema,
   selectV417ControlDebates,
@@ -177,4 +179,13 @@ export function selectV418ControlDebates(debateIds) {
 
 export function evaluateV418PrimaryTiming(results, options) {
   return evaluateV417PrimaryTiming(results, options);
+}
+
+export function deriveV418PrimaryScores(compiledOutput) {
+  const scores = deriveV417PrimaryScores(toV417CompiledPrimary(compiledOutput));
+  return { ...scores, protocolId: V418_PROTOCOL_ID };
+}
+
+export function evaluateV418Escalation({ primary, ...rest }) {
+  return evaluateV417Escalation({ primary: toV417CompiledPrimary(primary), ...rest });
 }

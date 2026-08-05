@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "4.1.8-source-integrity-fresh-six-preparation",
+  "protocolId": "v4.1.8-source-integrity-fresh-six-validation",
+  "status": "prepared-source-only-no-model-execution",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "primaryReasoningEffort": "low",
+    "reviewReasoningEffort": "high",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "sample": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/source-only-sample.json",
+  "debates": [
+    {
+      "debateNumber": "52",
+      "debateId": "horn-dillahunty-resurrection-reasonable-2021",
+      "family": "resurrection-history",
+      "durationSeconds": 7898,
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/packets/debate-52.json",
+      "rawOutput": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/primary-outputs/debate-52.json",
+      "compiledOutput": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/primary-compiled/debate-52.json"
+    },
+    {
+      "debateNumber": "101",
+      "debateId": "woodford-scrivener-religion-poisons-everything-2026",
+      "family": "morality-ethics",
+      "durationSeconds": 5048,
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/packets/debate-101.json",
+      "rawOutput": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/primary-outputs/debate-101.json",
+      "compiledOutput": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/primary-compiled/debate-101.json"
+    },
+    {
+      "debateNumber": "79",
+      "debateId": "swinburne-oppy-theism-probability-2022",
+      "family": "mind-agency",
+      "durationSeconds": 5539,
+      "controlSampleSelected": true,
+      "packet": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/packets/debate-79.json",
+      "rawOutput": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/primary-outputs/debate-79.json",
+      "compiledOutput": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/primary-compiled/debate-79.json"
+    },
+    {
+      "debateNumber": "11",
+      "debateId": "dsouza-ehrman-god-suffering-evil-2025",
+      "family": "evil-hiddenness",
+      "durationSeconds": 5725,
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/packets/debate-11.json",
+      "rawOutput": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/primary-outputs/debate-11.json",
+      "compiledOutput": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/primary-compiled/debate-11.json"
+    },
+    {
+      "debateNumber": "175",
+      "debateId": "oppy-pearce-is-there-a-god-2022",
+      "family": "science-origins",
+      "durationSeconds": 4859,
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/packets/debate-175.json",
+      "rawOutput": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/primary-outputs/debate-175.json",
+      "compiledOutput": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/primary-compiled/debate-175.json"
+    },
+    {
+      "debateNumber": "26",
+      "debateId": "turek-hitchens-reality-theism-atheism-2011",
+      "family": "general-theism-religion",
+      "durationSeconds": 7579,
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/packets/debate-26.json",
+      "rawOutput": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/primary-outputs/debate-26.json",
+      "compiledOutput": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/primary-compiled/debate-26.json"
+    }
+  ],
+  "inputs": {
+    "workflowBase": "docs/assessment-workflow-v4.0.md",
+    "workflowDerivedScores": "docs/assessment-workflow-v4.0.1.md",
+    "workflowBounded": "docs/assessment-workflow-v4.1.md",
+    "workflowBurdenIds": "docs/assessment-workflow-v4.1.1.md",
+    "workflowChronology": "docs/assessment-workflow-v4.1.2.md",
+    "workflowConsistency": "docs/assessment-workflow-v4.1.3.md",
+    "workflowBurdenTuple": "docs/assessment-workflow-v4.1.4.md",
+    "workflowTiming": "docs/assessment-workflow-v4.1.5.md",
+    "workflowPassB": "docs/assessment-workflow-v4.1.6.md",
+    "workflowFreshValidation": "docs/assessment-workflow-v4.1.7.md",
+    "workflowSourceIntegrity": "docs/assessment-workflow-v4.1.8.md",
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/manual.md",
+    "schema": "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/schemas/primary.schema.json"
+  },
+  "endpointSchemaInheritance": {
+    "from": "v4.1.7-fresh-six-bounded-primary",
+    "structuralFieldsChanged": true,
+    "removedModelFields": [
+      "sourceSpan.startMs",
+      "sourceSpan.endMs"
+    ],
+    "newSchemaKeywordsIntroduced": false,
+    "deterministicTranslationFixtureRequired": true,
+    "newEndpointPreflightRequired": false,
+    "rationale": "The schema only removes two properties and their requirements; it introduces no endpoint keyword. Exact local translation and mutation fixtures pass."
+  },
+  "sourceIntegrityPolicy": {
+    "completeEventFileHashRequired": true,
+    "repositoryOwnedSourceTimes": true,
+    "excerptTokens": [
+      12,
+      90
+    ],
+    "minimumLexicalRecall": 0.8,
+    "minimumOrderedCoverage": 0.8,
+    "invalidContextRetryMaximum": 0,
+    "outputNormalizationAuthorized": false
+  },
+  "controlPolicy": {
+    "rate": 0.1,
+    "selectedDebateIds": [
+      "swinburne-oppy-theism-probability-2022"
+    ],
+    "selectedNumbers": [
+      "79"
+    ],
+    "selectionVisibleToPrimaryJudge": false
+  },
+  "totals": {
+    "debates": 6,
+    "sourceOnlyPackets": 6,
+    "controlDebates": 1,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "deterministicFixtures": true,
+    "primaryExecutionManifest": false,
+    "primaryModelExecution": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  }
+}
