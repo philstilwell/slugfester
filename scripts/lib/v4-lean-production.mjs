@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { combineCalibrationCharity, scoreDimensions } from "./reassessment-scoring.mjs";
 
-export const V4_LEAN_ROOT = "docs/calibration/v4.0/lean-retired-gate";
+export const V4_LEAN_ROOT = "docs/calibration/v4.0.1/lean-retired-gate";
 export const V4_LEAN_DEBATES = Object.freeze(["55", "103", "161"]);
 export const V4_RATING_KEYS = Object.freeze([
   "logicalCoherence",
@@ -12,6 +12,13 @@ export const V4_RATING_KEYS = Object.freeze([
   "relevanceBurden",
   "precisionClarity",
   "epistemicCalibration",
+  "representationalCharity"
+]);
+export const V4_MODEL_RATING_KEYS = Object.freeze([
+  "logicalCoherence",
+  "evidenceWarrant",
+  "responsiveness",
+  "relevanceBurden",
   "representationalCharity"
 ]);
 export const V4_RESPONSE_CLASSES = Object.freeze([
@@ -105,14 +112,14 @@ const adjustmentEligibilitySchema = {
 export function makeV4PrimarySchema() {
   return {
     $schema: "https://json-schema.org/draft/2020-12/schema",
-    $id: "slugfester-v4-lean-primary-judgment",
-    title: "Slugfester v4.0 lean integrated primary judgment",
+    $id: "slugfester-v401-lean-primary-judgment",
+    title: "Slugfester v4.0.1 lean integrated primary judgment",
     type: "object",
     additionalProperties: false,
     required: ["schemaVersion", "protocolId", "debateNumber", "debateId", "reviewerRole", "assessmentModel", "calibrationOnly", "isolation", "routes", "sections", "moves", "burdenCompletionAdjustment", "audit"],
     properties: {
-      schemaVersion: { type: "string", const: "4.0-lean-primary-output" },
-      protocolId: { type: "string", const: "v4.0-lean-risk-triggered-consensus" },
+      schemaVersion: { type: "string", const: "4.0.1-lean-primary-output" },
+      protocolId: { type: "string", const: "v4.0.1-lean-risk-triggered-consensus" },
       debateNumber: { type: "string", minLength: 1 },
       debateId: { type: "string", minLength: 1 },
       reviewerRole: { type: "string", const: "integrated-primary-judge" },
@@ -255,23 +262,25 @@ export function makeV4PrimarySchema() {
             precisionFindings: {
               type: "object",
               additionalProperties: false,
-              required: ["propositionRecoverability", "termStability", "scopeStability", "qualificationExplicitness"],
+              required: ["propositionRecoverability", "termStability", "scopeStability", "qualificationExplicitness", "rationale"],
               properties: {
                 propositionRecoverability: { type: "string", enum: ["complete", "partial", "failed"] },
                 termStability: { type: "string", enum: ["stable", "partly-unstable", "materially-unstable"] },
                 scopeStability: { type: "string", enum: ["stable", "partly-unstable", "materially-unstable"] },
-                qualificationExplicitness: { type: "string", enum: ["explicit", "not-needed", "implicit", "missing", "materially-misleading"] }
+                qualificationExplicitness: { type: "string", enum: ["explicit", "not-needed", "implicit", "missing", "materially-misleading"] },
+                rationale: { type: "string", minLength: 40 }
               }
             },
             calibrationFindings: {
               type: "object",
               additionalProperties: false,
-              required: ["assertedForce", "warrantFit", "qualificationStatus", "uncertaintyAcknowledged"],
+              required: ["assertedForce", "warrantFit", "qualificationStatus", "uncertaintyAcknowledged", "rationale"],
               properties: {
                 assertedForce: { type: "string", enum: ["question", "possibility", "plausibility", "probability", "strong-probability", "necessity", "certainty"] },
                 warrantFit: { type: "string", enum: ["matched", "slightly-overstated", "materially-overstated", "radically-overstated"] },
                 qualificationStatus: { type: "string", enum: ["explicit", "not-needed", "implicit", "missing"] },
-                uncertaintyAcknowledged: { type: "string", enum: ["yes", "no", "not-needed"] }
+                uncertaintyAcknowledged: { type: "string", enum: ["yes", "no", "not-needed"] },
+                rationale: { type: "string", minLength: 40 }
               }
             },
             charity: {
@@ -287,8 +296,8 @@ export function makeV4PrimarySchema() {
             ratings: {
               type: "object",
               additionalProperties: false,
-              required: V4_RATING_KEYS,
-              properties: Object.fromEntries(V4_RATING_KEYS.map((key) => [key, ratingSchema]))
+              required: V4_MODEL_RATING_KEYS,
+              properties: Object.fromEntries(V4_MODEL_RATING_KEYS.map((key) => [key, ratingSchema]))
             },
             evidenceBasis: { type: "string", minLength: 40 },
             assessmentConfidence: { type: "string", enum: ["high", "medium", "low"] }
@@ -351,12 +360,22 @@ export function permittedPrecisionRange(findings) {
   return [90, 100];
 }
 
+export function derivePrecisionClarity(findings) {
+  const [minimum, maximum] = permittedPrecisionRange(findings);
+  return { value: { 0: 35, 50: 60, 70: 75, 80: 85, 90: 95 }[minimum], range: [minimum, maximum] };
+}
+
 export function permittedCalibrationRange(findings) {
   if (findings.warrantFit === "radically-overstated") return [0, 49];
   if (findings.warrantFit === "materially-overstated") return [50, 69];
   if (findings.warrantFit === "slightly-overstated") return [70, 79];
   if (["explicit", "not-needed"].includes(findings.qualificationStatus) && ["yes", "not-needed"].includes(findings.uncertaintyAcknowledged)) return [90, 100];
   return [80, 89];
+}
+
+export function deriveEpistemicCalibration(findings) {
+  const [minimum, maximum] = permittedCalibrationRange(findings);
+  return { value: { 0: 35, 50: 60, 70: 75, 80: 85, 90: 95 }[minimum], range: [minimum, maximum] };
 }
 
 function validateAdjustment(adjustment, side, moveIds, bridgeIds) {
@@ -383,7 +402,7 @@ function validateAdjustment(adjustment, side, moveIds, bridgeIds) {
 export function validateV4PrimaryOutput(output, packet) {
   const schema = makeV4PrimarySchema();
   assertObjectShape(output, schema.required, "output");
-  assertV4(output.schemaVersion === "4.0-lean-primary-output" && output.protocolId === "v4.0-lean-risk-triggered-consensus", "protocol identity mismatch");
+  assertV4(output.schemaVersion === "4.0.1-lean-primary-output" && output.protocolId === "v4.0.1-lean-risk-triggered-consensus", "protocol identity mismatch");
   assertV4(output.debateNumber === packet.debateNumber && output.debateId === packet.debateId, "debate identity mismatch");
   assertV4(output.reviewerRole === "integrated-primary-judge" && output.assessmentModel === "5.6 Sol" && output.calibrationOnly === true, "reviewer boundary mismatch");
   assertV4(!containsProhibitedCalculatedField(output), "primary output contains a prohibited calculated field");
@@ -478,19 +497,25 @@ export function validateV4PrimaryOutput(output, packet) {
       if (response.class === "justified-reframe") assertV4(contacted > 0 && response.replacementDemandAnswered, `${label}: justified reframe lacks contact or replacement answer`);
     }
 
-    assertObjectShape(move.ratings, V4_RATING_KEYS, `${label}.ratings`);
-    for (const key of V4_RATING_KEYS) assertRating(move.ratings[key], `${label}.ratings.${key}`);
+    assertObjectShape(move.ratings, V4_MODEL_RATING_KEYS, `${label}.ratings`);
+    for (const key of V4_MODEL_RATING_KEYS) assertRating(move.ratings[key], `${label}.ratings.${key}`);
     const responseRange = V4_RESPONSE_RANGES[response.class];
     assertV4(move.ratings.responsiveness.value >= responseRange[0] && move.ratings.responsiveness.value <= responseRange[1], `${label}: responsiveness outside derived class range`);
     const burdenRange = V4_BURDEN_RANGES[move.burdenContact?.tier ?? "none"];
     assertV4(move.ratings.relevanceBurden.value >= burdenRange[0] && move.ratings.relevanceBurden.value <= burdenRange[1], `${label}: relevance/burden outside contact range`);
 
-    assertObjectShape(move.precisionFindings, ["propositionRecoverability", "termStability", "scopeStability", "qualificationExplicitness"], `${label}.precisionFindings`);
-    const precisionRange = permittedPrecisionRange(move.precisionFindings);
-    assertV4(move.ratings.precisionClarity.value >= precisionRange[0] && move.ratings.precisionClarity.value <= precisionRange[1], `${label}: precision/clarity outside closed-finding range`);
-    assertObjectShape(move.calibrationFindings, ["assertedForce", "warrantFit", "qualificationStatus", "uncertaintyAcknowledged"], `${label}.calibrationFindings`);
-    const calibrationRange = permittedCalibrationRange(move.calibrationFindings);
-    assertV4(move.ratings.epistemicCalibration.value >= calibrationRange[0] && move.ratings.epistemicCalibration.value <= calibrationRange[1], `${label}: epistemic calibration outside closed-finding range`);
+    assertObjectShape(move.precisionFindings, ["propositionRecoverability", "termStability", "scopeStability", "qualificationExplicitness", "rationale"], `${label}.precisionFindings`);
+    assertV4(["complete", "partial", "failed"].includes(move.precisionFindings.propositionRecoverability), `${label}: invalid proposition recoverability`);
+    assertV4(["stable", "partly-unstable", "materially-unstable"].includes(move.precisionFindings.termStability), `${label}: invalid term stability`);
+    assertV4(["stable", "partly-unstable", "materially-unstable"].includes(move.precisionFindings.scopeStability), `${label}: invalid scope stability`);
+    assertV4(["explicit", "not-needed", "implicit", "missing", "materially-misleading"].includes(move.precisionFindings.qualificationExplicitness), `${label}: invalid qualification explicitness`);
+    assertString(move.precisionFindings.rationale, 40, `${label}.precisionFindings.rationale`);
+    assertObjectShape(move.calibrationFindings, ["assertedForce", "warrantFit", "qualificationStatus", "uncertaintyAcknowledged", "rationale"], `${label}.calibrationFindings`);
+    assertV4(["question", "possibility", "plausibility", "probability", "strong-probability", "necessity", "certainty"].includes(move.calibrationFindings.assertedForce), `${label}: invalid asserted force`);
+    assertV4(["matched", "slightly-overstated", "materially-overstated", "radically-overstated"].includes(move.calibrationFindings.warrantFit), `${label}: invalid warrant fit`);
+    assertV4(["explicit", "not-needed", "implicit", "missing"].includes(move.calibrationFindings.qualificationStatus), `${label}: invalid calibration qualification status`);
+    assertV4(["yes", "no", "not-needed"].includes(move.calibrationFindings.uncertaintyAcknowledged), `${label}: invalid uncertainty acknowledgment`);
+    assertString(move.calibrationFindings.rationale, 40, `${label}.calibrationFindings.rationale`);
     assertObjectShape(move.charity, ["tested", "alternative", "decisiveQualification"], `${label}.charity`);
     if (move.charity.tested) {
       assertString(move.charity.alternative, 10, `${label}.charity.alternative`);
@@ -523,9 +548,9 @@ function moveDimensions(move) {
     evidenceWarrant: move.ratings.evidenceWarrant.value,
     responsiveness: move.ratings.responsiveness.value,
     relevanceBurden: move.ratings.relevanceBurden.value,
-    precisionClarity: move.ratings.precisionClarity.value,
+    precisionClarity: derivePrecisionClarity(move.precisionFindings).value,
     calibrationCharity: combineCalibrationCharity({
-      epistemicCalibration: move.ratings.epistemicCalibration.value,
+      epistemicCalibration: deriveEpistemicCalibration(move.calibrationFindings).value,
       representationalCharity: move.ratings.representationalCharity.value
     })
   };

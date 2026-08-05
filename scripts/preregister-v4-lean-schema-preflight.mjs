@@ -12,6 +12,7 @@ const frozenAtIndex = process.argv.indexOf("--frozen-at");
 const frozenAt = frozenAtIndex >= 0 ? process.argv[frozenAtIndex + 1] : null;
 assertV4(frozenAt && !Number.isNaN(Date.parse(frozenAt)), "--frozen-at requires an ISO timestamp");
 const preflightRoot = `${V4_LEAN_ROOT}/schema-preflight`;
+const syntheticSourceRoot = "docs/calibration/v4.0/lean-retired-gate/schema-preflight";
 const manifestPath = `${preflightRoot}/execution-manifest.json`;
 const outputPath = `${preflightRoot}/output.json`;
 const executionPath = `${preflightRoot}/model-execution.json`;
@@ -30,12 +31,14 @@ assertV4(fixture.status === "passed" && fixture.computeProjection.centralTargetP
 assertV4(packet.debateNumber === "schema-preflight" && packet.eventCount === 8, "synthetic packet invalid");
 const sourceFiles = [
   "docs/assessment-workflow-v4.0.md",
+  "docs/assessment-workflow-v4.0.1.md",
   "docs/reassessment-rubric-v4.0.md",
+  "docs/reassessment-rubric-v4.0.1.md",
   `${V4_LEAN_ROOT}/manual.md`,
   `${V4_LEAN_ROOT}/schemas/primary.schema.json`,
   `${preflightRoot}/packet.json`,
-  `${preflightRoot}/transcript.txt`,
-  `${preflightRoot}/events.json`,
+  `${syntheticSourceRoot}/transcript.txt`,
+  `${syntheticSourceRoot}/events.json`,
   `${V4_LEAN_ROOT}/preparation-manifest.json`,
   `${V4_LEAN_ROOT}/dry-fixture.json`,
   "scripts/lib/reassessment-scoring.mjs",
@@ -48,14 +51,14 @@ const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const sourceHashes = {};
 for (const file of sourceFiles) sourceHashes[file] = sha256(await readFile(path.resolve(root, file)));
 const manifest = {
-  schemaVersion: "4.0-lean-schema-preflight-manifest",
-  protocolId: "v4.0-lean-risk-triggered-consensus",
+  schemaVersion: "4.0.1-lean-schema-preflight-manifest",
+  protocolId: "v4.0.1-lean-risk-triggered-consensus",
   status: "frozen-one-synthetic-context-authorized",
   frozenAt,
   checkpointCommit: execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim(),
   syntheticOnly: true,
   model: { label: "5.6 Sol", slug: "gpt-5.6-sol", reasoningEffort: "low" },
-  inputs: { workflow: "docs/assessment-workflow-v4.0.md", rubric: "docs/reassessment-rubric-v4.0.md", manual: `${V4_LEAN_ROOT}/manual.md`, packet: `${preflightRoot}/packet.json`, schema: `${V4_LEAN_ROOT}/schemas/primary.schema.json`, transcript: `${preflightRoot}/transcript.txt`, events: `${preflightRoot}/events.json` },
+  inputs: { workflowBase: "docs/assessment-workflow-v4.0.md", workflow: "docs/assessment-workflow-v4.0.1.md", rubricBase: "docs/reassessment-rubric-v4.0.md", rubric: "docs/reassessment-rubric-v4.0.1.md", manual: `${V4_LEAN_ROOT}/manual.md`, packet: `${preflightRoot}/packet.json`, schema: `${V4_LEAN_ROOT}/schemas/primary.schema.json`, transcript: `${syntheticSourceRoot}/transcript.txt`, events: `${syntheticSourceRoot}/events.json` },
   executionPolicy: { contexts: 1, attempts: 1, retriesMaximum: 0, perInvocationTimeoutMs: 1800000, authentication: "ChatGPT subscription", APIKeysRemoved: true, meteredApiCostUsdMaximum: 0, transcriptionCostUsdMaximum: 0 },
   authorization: { syntheticSchemaPreflightModelExecution: true, debatePrimaryModelExecution: false, scoreDerivation: false, productionMutation: false, all195Debates: false },
   artifacts: { output: outputPath, execution: executionPath },

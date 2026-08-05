@@ -25,8 +25,8 @@ for (const debateNumber of V4_LEAN_DEBATES) {
   const eventArray = Array.isArray(events) ? events : events.events;
   assertV4(Array.isArray(eventArray) && eventArray.length > 0, `${debateNumber}: events unavailable`);
   const packet = {
-    schemaVersion: "4.0-lean-source-only-packet",
-    protocolId: "v4.0-lean-risk-triggered-consensus",
+    schemaVersion: "4.0.1-lean-source-only-packet",
+    protocolId: "v4.0.1-lean-risk-triggered-consensus",
     debateNumber,
     debateId: source.debateId,
     motion: source.motion,
@@ -70,15 +70,15 @@ for (const item of packets) {
   }
 }
 const preparation = {
-  schemaVersion: "4.0-lean-retired-preparation",
-  protocolId: "v4.0-lean-risk-triggered-consensus",
+  schemaVersion: "4.0.1-lean-retired-preparation",
+  protocolId: "v4.0.1-lean-risk-triggered-consensus",
   status: shouldWrite ? "prepared-source-only-no-model-execution" : "preview",
   calibrationOnly: true,
   AIOnly: true,
   dyadicOnly: true,
   model: { label: "5.6 Sol", slug: "gpt-5.6-sol", authentication: "ChatGPT subscription", meteredApiCostUsdMaximum: 0 },
   debates: packets.map((item) => ({ debateNumber: item.debateNumber, debateId: item.debateId, controlSampleSelected: item.controlSampleSelected, packet: `${V4_LEAN_ROOT}/packets/debate-${item.debateNumber}.json`, output: `${V4_LEAN_ROOT}/primary-outputs/debate-${item.debateNumber}.json` })),
-  inputs: { workflow: "docs/assessment-workflow-v4.0.md", rubric: "docs/reassessment-rubric-v4.0.md", manual: `${V4_LEAN_ROOT}/manual.md`, schema: `${V4_LEAN_ROOT}/schemas/primary.schema.json` },
+  inputs: { workflowBase: "docs/assessment-workflow-v4.0.md", workflow: "docs/assessment-workflow-v4.0.1.md", rubricBase: "docs/reassessment-rubric-v4.0.md", rubric: "docs/reassessment-rubric-v4.0.1.md", manual: `${V4_LEAN_ROOT}/manual.md`, schema: `${V4_LEAN_ROOT}/schemas/primary.schema.json` },
   controlPolicy: { rate: 0.1, selected: packets.filter((item) => item.controlSampleSelected).map((item) => item.debateNumber), selectionVisibleToPrimaryJudge: false },
   sourceHashes,
   totals: { debates: packets.length, sourceOnlyPackets: packets.length, controlDebates: packets.filter((item) => item.controlSampleSelected).length, modelContextsExecuted: 0, meteredApiCostUsd: 0, transcriptionCostUsd: 0 },

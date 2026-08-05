@@ -4,7 +4,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import {
   V4_LEAN_ROOT,
-  V4_RATING_KEYS,
+  V4_MODEL_RATING_KEYS,
   canonicalJson,
   deriveV4PrimaryScores,
   evaluateV4Escalation,
@@ -19,8 +19,8 @@ const shouldWrite = process.argv.includes("--write");
 const rationale = "The selected transcript span supplies the named feature, and the closed rubric finding places this dimension inside the chosen operational band without calculating a participant total.";
 const evidenceBasis = "The exact timestamped excerpt and its surrounding chronological context provide the evidence used for this deterministic contract fixture.";
 const packet = {
-  schemaVersion: "4.0-lean-source-only-packet",
-  protocolId: "v4.0-lean-risk-triggered-consensus",
+  schemaVersion: "4.0.1-lean-source-only-packet",
+  protocolId: "v4.0.1-lean-risk-triggered-consensus",
   debateNumber: "fixture",
   debateId: "v4-lean-contract-fixture",
   motion: "Does the fixture proposition follow from the reasons presented in this synthetic exchange?",
@@ -73,10 +73,10 @@ function primaryFixture() {
       importance: sectionIndex === 0 ? 3 : 2,
       burdenContact: { polarity: "support", tier: sectionIndex === 0 ? "motion" : "central", bridgeId: sectionIndex === 0 ? "pro-motion" : "pro-central" },
       response: { class: "constructive-opening", decisiveTargetIds: [], components: [], issueBearingContraryMaterial: false, diagnosticConsequenceExplicit: false, replacementDemandAnswered: false, rationale: "This is a constructive contribution to the adopted route and therefore has no earlier response target or indispensable target component." },
-      precisionFindings: { propositionRecoverability: "complete", termStability: "stable", scopeStability: "stable", qualificationExplicitness: "explicit" },
-      calibrationFindings: { assertedForce: "probability", warrantFit: "matched", qualificationStatus: "explicit", uncertaintyAcknowledged: "yes" },
+      precisionFindings: { propositionRecoverability: "complete", termStability: "stable", scopeStability: "stable", qualificationExplicitness: "explicit", rationale: "The proposition, terms, scope, and qualification are all explicit and stable in the selected synthetic span." },
+      calibrationFindings: { assertedForce: "probability", warrantFit: "matched", qualificationStatus: "explicit", uncertaintyAcknowledged: "yes", rationale: "The probabilistic force matches the stated synthetic support, and the move expressly acknowledges its limiting condition." },
       charity: { tested: false, alternative: "", decisiveQualification: "" },
-      ratings: Object.fromEntries(V4_RATING_KEYS.map((key) => [key, rating(key === "relevanceBurden" ? (sectionIndex === 0 ? 92 : 82) : key === "representationalCharity" ? 75 : 92)])),
+      ratings: Object.fromEntries(V4_MODEL_RATING_KEYS.map((key) => [key, rating(key === "relevanceBurden" ? (sectionIndex === 0 ? 92 : 82) : key === "representationalCharity" ? 75 : 92)])),
       evidenceBasis,
       assessmentConfidence: "high"
     });
@@ -93,17 +93,17 @@ function primaryFixture() {
       importance: 2,
       burdenContact: { polarity: "attack", tier: "central", bridgeId: "pro-central" },
       response: { class: "full-answer", decisiveTargetIds: [proId], components: [{ componentId: `${conId}-component-1`, targetMoveId: proId, text: "The decisive inferential bridge asserted by the pro premise.", contacted: true, decisive: true }], issueBearingContraryMaterial: true, diagnosticConsequenceExplicit: false, replacementDemandAnswered: false, rationale: "The reply contacts the earlier premise's only indispensable component and explains why that component does not establish the asserted inference." },
-      precisionFindings: { propositionRecoverability: "complete", termStability: "stable", scopeStability: "stable", qualificationExplicitness: "implicit" },
-      calibrationFindings: { assertedForce: "plausibility", warrantFit: "matched", qualificationStatus: "implicit", uncertaintyAcknowledged: "no" },
+      precisionFindings: { propositionRecoverability: "complete", termStability: "stable", scopeStability: "stable", qualificationExplicitness: "implicit", rationale: "The proposition, terms, and scope are stable, while one bounded qualification remains implicit in the reply." },
+      calibrationFindings: { assertedForce: "plausibility", warrantFit: "matched", qualificationStatus: "implicit", uncertaintyAcknowledged: "no", rationale: "The asserted plausibility matches the synthetic warrant, but the relevant uncertainty remains implicit rather than expressly acknowledged." },
       charity: { tested: true, alternative: "The pro premise and its asserted inferential bridge.", decisiveQualification: "The premise claims support rather than deductive certainty." },
-      ratings: Object.fromEntries(V4_RATING_KEYS.map((key) => [key, rating(key === "responsiveness" ? 86 : key === "relevanceBurden" ? 82 : key === "precisionClarity" || key === "epistemicCalibration" ? 85 : 84)])),
+      ratings: Object.fromEntries(V4_MODEL_RATING_KEYS.map((key) => [key, rating(key === "responsiveness" ? 86 : key === "relevanceBurden" ? 82 : 84)])),
       evidenceBasis,
       assessmentConfidence: "high"
     });
   }
   return {
-    schemaVersion: "4.0-lean-primary-output",
-    protocolId: "v4.0-lean-risk-triggered-consensus",
+    schemaVersion: "4.0.1-lean-primary-output",
+    protocolId: "v4.0.1-lean-risk-triggered-consensus",
     debateNumber: packet.debateNumber,
     debateId: packet.debateId,
     reviewerRole: "integrated-primary-judge",
@@ -149,9 +149,9 @@ const audioResult = evaluateV4Escalation({ primary: audio, scores: cleanScores, 
 triggerTests.audioRequired = audioResult.requiresAudioVerification && audioResult.publicationBlocked && audioResult.reasons.includes("load-bearing-attribution-unresolved-after-audio");
 if (!Object.values(triggerTests).every(Boolean)) throw new Error(`one or more escalation triggers failed: ${JSON.stringify(triggerTests)}`);
 
-const invalidPrecision = structuredClone(primary); invalidPrecision.moves[0].ratings.precisionClarity.value = 70;
+const invalidPrecision = structuredClone(primary); invalidPrecision.moves[0].precisionFindings.propositionRecoverability = "unknown";
 let invalidPrecisionRejected = false;
-try { validateV4PrimaryOutput(invalidPrecision, packet); } catch (error) { invalidPrecisionRejected = /precision\/clarity outside/.test(error.message); }
+try { validateV4PrimaryOutput(invalidPrecision, packet); } catch (error) { invalidPrecisionRejected = /invalid proposition recoverability/.test(error.message); }
 if (!invalidPrecisionRejected) throw new Error("precision closed-anchor mutation was not rejected");
 const invalidResponse = structuredClone(primary); invalidResponse.moves[1].response.class = "partial-answer";
 let invalidResponseRejected = false;
@@ -174,8 +174,8 @@ if (shouldWrite) {
   if (canonicalJson(stored) !== canonicalJson(schema)) throw new Error("stored schema differs from generator");
 }
 const fixture = {
-  schemaVersion: "4.0-lean-production-tooling-fixture",
-  protocolId: "v4.0-lean-risk-triggered-consensus",
+  schemaVersion: "4.0.1-lean-production-tooling-fixture",
+  protocolId: "v4.0.1-lean-risk-triggered-consensus",
   status: "passed",
   validation,
   calculatedFixture: { pro: scores.overall.pro.score, con: scores.overall.con.score, winner: scores.winner },

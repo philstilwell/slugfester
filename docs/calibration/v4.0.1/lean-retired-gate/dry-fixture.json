@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "4.0.1-lean-production-tooling-fixture",
+  "protocolId": "v4.0.1-lean-risk-triggered-consensus",
+  "status": "passed",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "fixture",
+    "moves": 8,
+    "sections": 4,
+    "mediumOrLowAttributionMoves": [],
+    "calculatedFields": 0
+  },
+  "calculatedFixture": {
+    "pro": 91,
+    "con": 84,
+    "winner": "pro"
+  },
+  "triggerTests": {
+    "controlSample": true,
+    "closeWinner": true,
+    "bandBoundary": true,
+    "highImportanceConfidence": true,
+    "nonzeroAdjustment": true,
+    "semanticWarning": true,
+    "audioRequired": true
+  },
+  "mutationTests": {
+    "precisionClosedAnchorRejected": true,
+    "responseComponentMismatchRejected": true
+  },
+  "controlSample": {
+    "corpusDebates": 195,
+    "selectedDebates": 20,
+    "exactTenPercentRounded": true
+  },
+  "computeProjection": {
+    "inputs": {
+      "debateCount": 195,
+      "primaryMinutesPerDebate": 7.75,
+      "finalizationMinutesPerDebate": 4.25,
+      "escalationRate": 0.15,
+      "passBMinutesPerEscalatedDebate": 7.75,
+      "adjudicationShareOfEscalations": 0.5,
+      "adjudicationMinutesPerAdjudicatedDebate": 5.6,
+      "fixedAudioQaRenderingHours": 5
+    },
+    "hours": {
+      "primary": 25.19,
+      "finalization": 13.81,
+      "passB": 3.78,
+      "adjudication": 1.36,
+      "audioQaRendering": 5,
+      "total": 49.14
+    },
+    "centralTargetPassed": true,
+    "conservativeCeilingPassed": true
+  },
+  "costs": {
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  }
+}

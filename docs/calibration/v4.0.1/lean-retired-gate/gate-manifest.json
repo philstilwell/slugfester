@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "4.0.1-lean-retired-gate-manifest",
+  "protocolId": "v4.0.1-lean-risk-triggered-consensus",
+  "status": "deterministic-development-authorized",
+  "calibrationOnly": true,
+  "sample": ["55", "103", "161"],
+  "amendment": {
+    "failedProtocol": "v4.0-lean-risk-triggered-consensus",
+    "failedStage": "exact-schema synthetic preflight",
+    "retryOfFailedContext": false,
+    "modelPrecisionScalarRemoved": true,
+    "modelCalibrationScalarRemoved": true,
+    "repositoryDerivedValues": [35, 60, 75, 85, 95]
+  },
+  "thresholds": {
+    "sameWinnerRequired": "3/3",
+    "maximumAbsoluteSideScoreDelta": 5,
+    "centralProjectionHoursMaximum": 52,
+    "conservativeProjectionHoursMaximum": 60
+  },
+  "cost": { "authentication": "ChatGPT subscription", "meteredApiCostUsdMaximum": 0, "newTranscriptionCostUsdMaximumWithoutSeparateApproval": 0 },
+  "authorization": { "deterministicDevelopment": true, "endpointPreflightModelExecution": false, "retiredPrimaryModelExecution": false, "scoreDerivation": false, "productionMutation": false, "all195Debates": false }
+}
