@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "4.2.16-three-debate-finalization-preparation",
+  "protocolId": "v4.2.16-three-debate-finalization-gate",
+  "status": "prepared-three-retired-finalization-contexts",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "debates": [
+    "55",
+    "103",
+    "161"
+  ],
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "sourceBoundary": {
+    "completeSourcePacketsDelivered": 3,
+    "rawTranscriptsDuplicated": false,
+    "rawEventsDuplicated": false,
+    "participantJudgmentAlreadyClosed": true,
+    "scoresLockedFromPackets": true
+  },
+  "contexts": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "inputs": {
+        "workflow": "docs/assessment-workflow-v4.0.md",
+        "rubric": "docs/reassessment-rubric-v3.8.4.md",
+        "manual": "docs/calibration/v4.2.16/three-debate-finalization-gate/manual.md",
+        "packet": "docs/calibration/v3.8.8/reconstruction/packets/debate-55.json",
+        "schema": "docs/calibration/v4.2.16/three-debate-finalization-gate/schemas/debate-55.json"
+      },
+      "validationGold": "docs/calibration/v3.8.8/reconstruction/validated-outputs/debate-55.json",
+      "rawOutput": "docs/calibration/v4.2.16/three-debate-finalization-gate/raw/debate-55.json",
+      "normalizedOutput": "docs/calibration/v4.2.16/three-debate-finalization-gate/normalized/debate-55.json",
+      "inputBytes": 189413
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "inputs": {
+        "workflow": "docs/assessment-workflow-v4.0.md",
+        "rubric": "docs/reassessment-rubric-v3.8.4.md",
+        "manual": "docs/calibration/v4.2.16/three-debate-finalization-gate/manual.md",
+        "packet": "docs/calibration/v3.8.8/reconstruction/packets/debate-103.json",
+        "schema": "docs/calibration/v4.2.16/three-debate-finalization-gate/schemas/debate-103.json"
+      },
+      "validationGold": "docs/calibration/v3.8.8/reconstruction/outputs/debate-103.json",
+      "rawOutput": "docs/calibration/v4.2.16/three-debate-finalization-gate/raw/debate-103.json",
+      "normalizedOutput": "docs/calibration/v4.2.16/three-debate-finalization-gate/normalized/debate-103.json",
+      "inputBytes": 176966
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "inputs": {
+        "workflow": "docs/assessment-workflow-v4.0.md",
+        "rubric": "docs/reassessment-rubric-v3.8.4.md",
+        "manual": "docs/calibration/v4.2.16/three-debate-finalization-gate/manual.md",
+        "packet": "docs/calibration/v3.8.8/reconstruction/packets/debate-161.json",
+        "schema": "docs/calibration/v4.2.16/three-debate-finalization-gate/schemas/debate-161.json"
+      },
+      "validationGold": "docs/calibration/v3.8.8/reconstruction/outputs/debate-161.json",
+      "rawOutput": "docs/calibration/v4.2.16/three-debate-finalization-gate/raw/debate-161.json",
+      "normalizedOutput": "docs/calibration/v4.2.16/three-debate-finalization-gate/normalized/debate-161.json",
+      "inputBytes": 189292
+    }
+  ],
+  "policy": {
+    "attemptsPerDebate": 1,
+    "retries": 0,
+    "correctionContexts": 0,
+    "timeoutMsPerDebate": 600000,
+    "maximumMinutesPerDebate": 4.5,
+    "maximumMeanMinutes": 4,
+    "deterministicCritiqueNormalization": true,
+    "scoresDerived": false
+  },
+  "totals": {
+    "contexts": 3,
+    "inputBytes": 555671,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "executionManifest": false,
+    "modelExecution": false,
+    "newDisjointFreshJudgmentGatePreparation": false,
+    "scoring": false,
+    "productionMutation": false
+  }
+}

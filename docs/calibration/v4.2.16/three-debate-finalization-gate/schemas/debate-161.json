@@ -1,0 +1,1155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Slugfester v3.8.8 recovered reconstruction Debate 161",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "calibrationOnly",
+    "completedAt",
+    "scorecard",
+    "aiExtension",
+    "displayContract"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "3.8.8-assessment-reconstruction"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "v3.8.8-recovered-diagnostic-reconstruction"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "161"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "craig-millican-does-god-exist-2011"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "calibrationOnly": {
+      "type": "boolean",
+      "const": true
+    },
+    "completedAt": {
+      "type": "string"
+    },
+    "scorecard": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "label",
+        "date",
+        "duration",
+        "youtubeUrl",
+        "motion",
+        "summary",
+        "sourceNote",
+        "scoringNote",
+        "quotes",
+        "sides",
+        "score",
+        "sections",
+        "overall"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "date": {
+          "type": "string",
+          "const": "2026-08-04"
+        },
+        "duration": {
+          "type": "string",
+          "minLength": 1
+        },
+        "youtubeUrl": {
+          "type": "string",
+          "minLength": 1
+        },
+        "motion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceNote": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scoringNote": {
+          "type": "string",
+          "minLength": 1
+        },
+        "quotes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "pro",
+            "con"
+          ],
+          "properties": {
+            "pro": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "text",
+                "context",
+                "sourceMoveId",
+                "audioVerified"
+              ],
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "const": "the three facts that I mentioned are agreed upon by the majority of historians today"
+                },
+                "context": {
+                  "type": "string",
+                  "minLength": 130,
+                  "maxLength": 600
+                },
+                "sourceMoveId": {
+                  "type": "string",
+                  "const": "craig-millican-does-god-exist-2011-coverage-20-v384"
+                },
+                "audioVerified": {
+                  "type": "boolean",
+                  "const": true
+                }
+              }
+            },
+            "con": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "text",
+                "context",
+                "sourceMoveId",
+                "audioVerified"
+              ],
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "const": "the world we see just doesn't match up to what you'd expect from a perfect God"
+                },
+                "context": {
+                  "type": "string",
+                  "minLength": 130,
+                  "maxLength": 600
+                },
+                "sourceMoveId": {
+                  "type": "string",
+                  "const": "craig-millican-does-god-exist-2011-candidate-07-v381"
+                },
+                "audioVerified": {
+                  "type": "boolean",
+                  "const": true
+                }
+              }
+            }
+          }
+        },
+        "sides": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "pro",
+            "con"
+          ],
+          "properties": {
+            "pro": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "name",
+                "speaker",
+                "color"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "speaker": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "color": {
+                  "type": "string",
+                  "const": "teal"
+                }
+              }
+            },
+            "con": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "name",
+                "speaker",
+                "color"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "speaker": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "color": {
+                  "type": "string",
+                  "const": "coral"
+                }
+              }
+            }
+          }
+        },
+        "score": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "pro",
+            "con"
+          ],
+          "properties": {
+            "pro": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "con": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            }
+          }
+        },
+        "sections": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "sectionId",
+              "title",
+              "timebox",
+              "score",
+              "exchanges"
+            ],
+            "properties": {
+              "sectionId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "timebox": {
+                "type": "string",
+                "minLength": 1
+              },
+              "score": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "pro",
+                  "con"
+                ],
+                "properties": {
+                  "pro": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 100
+                  },
+                  "con": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 100
+                  }
+                }
+              },
+              "exchanges": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 3,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "pro",
+                    "con"
+                  ],
+                  "properties": {
+                    "pro": {
+                      "anyOf": [
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "moveId",
+                            "time",
+                            "role",
+                            "words",
+                            "score",
+                            "critique",
+                            "tags"
+                          ],
+                          "properties": {
+                            "moveId": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "time": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "role": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "words": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "score": {
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 100
+                            },
+                            "critique": {
+                              "type": "string",
+                              "minLength": 800,
+                              "maxLength": 960
+                            },
+                            "tags": {
+                              "type": "array",
+                              "maxItems": 2,
+                              "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "label",
+                                  "type",
+                                  "slug",
+                                  "context"
+                                ],
+                                "properties": {
+                                  "label": {
+                                    "type": "string",
+                                    "minLength": 1
+                                  },
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "fallacy",
+                                      "bias"
+                                    ]
+                                  },
+                                  "slug": {
+                                    "type": "string",
+                                    "minLength": 1
+                                  },
+                                  "context": {
+                                    "type": "string",
+                                    "minLength": 20
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "con": {
+                      "anyOf": [
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "moveId",
+                            "time",
+                            "role",
+                            "words",
+                            "score",
+                            "critique",
+                            "tags"
+                          ],
+                          "properties": {
+                            "moveId": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "time": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "role": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "words": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "score": {
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 100
+                            },
+                            "critique": {
+                              "type": "string",
+                              "minLength": 800,
+                              "maxLength": 960
+                            },
+                            "tags": {
+                              "type": "array",
+                              "maxItems": 2,
+                              "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "label",
+                                  "type",
+                                  "slug",
+                                  "context"
+                                ],
+                                "properties": {
+                                  "label": {
+                                    "type": "string",
+                                    "minLength": 1
+                                  },
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "fallacy",
+                                      "bias"
+                                    ]
+                                  },
+                                  "slug": {
+                                    "type": "string",
+                                    "minLength": 1
+                                  },
+                                  "context": {
+                                    "type": "string",
+                                    "minLength": 20
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "overall": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "pro",
+            "con"
+          ],
+          "properties": {
+            "pro": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "score",
+                "strengths",
+                "blunders"
+              ],
+              "properties": {
+                "score": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "strengths": {
+                  "type": "array",
+                  "minItems": 3,
+                  "maxItems": 6,
+                  "items": {
+                    "type": "string",
+                    "minLength": 20
+                  }
+                },
+                "blunders": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 4,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "text",
+                      "tags"
+                    ],
+                    "properties": {
+                      "text": {
+                        "type": "string",
+                        "minLength": 20
+                      },
+                      "tags": {
+                        "type": "array",
+                        "maxItems": 2,
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "label",
+                            "type",
+                            "slug",
+                            "context"
+                          ],
+                          "properties": {
+                            "label": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "fallacy",
+                                "bias"
+                              ]
+                            },
+                            "slug": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "context": {
+                              "type": "string",
+                              "minLength": 20
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "con": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "score",
+                "strengths",
+                "blunders"
+              ],
+              "properties": {
+                "score": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "strengths": {
+                  "type": "array",
+                  "minItems": 3,
+                  "maxItems": 6,
+                  "items": {
+                    "type": "string",
+                    "minLength": 20
+                  }
+                },
+                "blunders": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 4,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "text",
+                      "tags"
+                    ],
+                    "properties": {
+                      "text": {
+                        "type": "string",
+                        "minLength": 20
+                      },
+                      "tags": {
+                        "type": "array",
+                        "maxItems": 2,
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "label",
+                            "type",
+                            "slug",
+                            "context"
+                          ],
+                          "properties": {
+                            "label": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "fallacy",
+                                "bias"
+                              ]
+                            },
+                            "slug": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "context": {
+                              "type": "string",
+                              "minLength": 20
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "aiExtension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "aiGenerated",
+        "disclaimer",
+        "pro",
+        "con"
+      ],
+      "properties": {
+        "aiGenerated": {
+          "type": "boolean",
+          "const": true
+        },
+        "disclaimer": {
+          "type": "string",
+          "minLength": 40
+        },
+        "pro": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "thesis",
+            "premises",
+            "conclusion",
+            "newArguments"
+          ],
+          "properties": {
+            "thesis": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 20
+                    }
+                  }
+                }
+              }
+            },
+            "premises": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 6,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 20
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "conclusion": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 20
+                    }
+                  }
+                }
+              }
+            },
+            "newArguments": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "title",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 300,
+                    "maxLength": 850
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 20
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "thesis",
+            "premises",
+            "conclusion",
+            "newArguments"
+          ],
+          "properties": {
+            "thesis": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 20
+                    }
+                  }
+                }
+              }
+            },
+            "premises": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 6,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 20
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "conclusion": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 20
+                    }
+                  }
+                }
+              }
+            },
+            "newArguments": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "title",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 300,
+                    "maxLength": 850
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 20
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "displayContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sectionTitle",
+        "placement",
+        "defaultCollapsed",
+        "visualVariant",
+        "byline",
+        "prohibitedLanguageScanPassed"
+      ],
+      "properties": {
+        "sectionTitle": {
+          "type": "string",
+          "const": "AI Extension"
+        },
+        "placement": {
+          "type": "string",
+          "const": "immediately-after-overall-commentary"
+        },
+        "defaultCollapsed": {
+          "type": "boolean",
+          "const": true
+        },
+        "visualVariant": {
+          "type": "string",
+          "const": "ai-distinct"
+        },
+        "byline": {
+          "type": "string",
+          "const": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2."
+        },
+        "prohibitedLanguageScanPassed": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    }
+  },
+  "$id": "slugfester-v4216-finalization-161"
+}
