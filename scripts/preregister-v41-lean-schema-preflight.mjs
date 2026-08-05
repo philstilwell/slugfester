@@ -27,6 +27,7 @@ const inputs = {
   workflowDerivedScores: "docs/assessment-workflow-v4.0.1.md",
   workflow: "docs/assessment-workflow-v4.1.md",
   workflowBurdenIds: "docs/assessment-workflow-v4.1.1.md",
+  workflowChronology: "docs/assessment-workflow-v4.1.2.md",
   rubricBase: "docs/reassessment-rubric-v4.0.md",
   rubricDerivedScores: "docs/reassessment-rubric-v4.0.1.md",
   rubric: "docs/reassessment-rubric-v4.1.md",
@@ -41,7 +42,7 @@ const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const sourceHashes = {};
 for (const file of sourceFiles) sourceHashes[file] = sha256(await readFile(path.resolve(root, file)));
 const manifest = {
-  schemaVersion: "4.1.1-bounded-schema-preflight-manifest",
+  schemaVersion: "4.1.2-bounded-schema-preflight-manifest",
   protocolId: V41_PROTOCOL_ID,
   status: "frozen-one-synthetic-context-authorized",
   frozenAt,

@@ -25,7 +25,7 @@ for (const item of preparation.debates) {
 }
 const actualPrimaryMinutesPerDebate = execution.totalElapsedMs / 60000 / debates.length;
 const centralProjection = projectV41ComputeHours({ primaryMinutesPerDebate: actualPrimaryMinutesPerDebate });
-const conservativePrimaryMinutes = Math.max(8.5, actualPrimaryMinutesPerDebate * 1.2);
+const conservativePrimaryMinutes = Math.max(7, actualPrimaryMinutesPerDebate * 1.25);
 const conservativeProjection = projectV41ComputeHours({ primaryMinutesPerDebate: conservativePrimaryMinutes, finalizationMinutesPerDebate: 5, escalationRate: 0.2, passBMinutesPerEscalatedDebate: 8.5, adjudicationShareOfEscalations: 0.6, adjudicationMinutesPerAdjudicatedDebate: 6.5 });
 const pendingAudioMoves = debates.reduce((sum, debate) => sum + debate.escalation.audioVerificationMoveIds.length, 0);
 const escalatedDebates = debates.filter((debate) => debate.escalation.requiresSecondPass).length;
@@ -33,8 +33,8 @@ const runtimePassed = centralProjection.hours.total <= 52 && conservativeProject
 const provisionalComparatorPassed = debates.every((debate) => debate.comparator.winnerPreserved && debate.comparator.bothSidesWithinFive);
 const status = !runtimePassed ? "primary-failed-runtime-budget" : pendingAudioMoves > 0 ? "primary-passed-audio-verification-required" : "primary-passed-ready-to-freeze-triggered-pass-b";
 const analysis = {
-  schemaVersion: "4.1.1-bounded-primary-analysis",
-  protocolId: "v4.1.1-bounded-lean-risk-triggered-consensus",
+  schemaVersion: "4.1.2-bounded-primary-analysis",
+  protocolId: "v4.1.2-bounded-lean-risk-triggered-consensus",
   status,
   debates,
   totals: { debates: 3, validPrimaryContexts: 3, sections: debates.reduce((sum, debate) => sum + debate.validation.sections, 0), moves: debates.reduce((sum, debate) => sum + debate.validation.moves, 0), escalatedDebates, escalationRate: escalatedDebates / debates.length, pendingAudioMoves, provisionalComparatorPassed, winnerClassificationsPreserved: debates.filter((debate) => debate.comparator.winnerPreserved).length, sidesWithinFive: debates.reduce((sum, debate) => sum + ["pro", "con"].filter((side) => Math.abs(debate.comparator.deltas[side]) <= 5).length, 0), attempts: 3, retries: 0, meteredApiCostUsd: 0, transcriptionCostUsd: 0 },

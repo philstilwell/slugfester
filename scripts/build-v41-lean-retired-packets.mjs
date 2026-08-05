@@ -38,7 +38,7 @@ if (shouldWrite) {
 }
 
 const preparation = {
-    schemaVersion: "4.1.1-bounded-retired-preparation",
+    schemaVersion: "4.1.2-bounded-retired-preparation",
   protocolId: V41_PROTOCOL_ID,
   status: shouldWrite ? "prepared-source-only-no-model-execution" : "preview",
   calibrationOnly: true,
@@ -51,6 +51,7 @@ const preparation = {
     workflowDerivedScores: "docs/assessment-workflow-v4.0.1.md",
     workflow: "docs/assessment-workflow-v4.1.md",
     workflowBurdenIds: "docs/assessment-workflow-v4.1.1.md",
+    workflowChronology: "docs/assessment-workflow-v4.1.2.md",
     rubricBase: "docs/reassessment-rubric-v4.0.md",
     rubricDerivedScores: "docs/reassessment-rubric-v4.0.1.md",
     rubric: "docs/reassessment-rubric-v4.1.md",

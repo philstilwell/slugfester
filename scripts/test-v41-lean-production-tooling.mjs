@@ -27,23 +27,26 @@ missingSide.sections[0].conMoves = [];
 let missingSideRejected = false;
 try { validateV41PrimaryOutput(missingSide, packet); } catch (error) { missingSideRejected = /requires one or two moves/.test(error.message); }
 
-const badSequence = structuredClone(primary);
-badSequence.sections[0].conMoves[0].sequence = 1;
-let badSequenceRejected = false;
-try { validateV41PrimaryOutput(badSequence, packet); } catch (error) { badSequenceRejected = /unique and consecutive/.test(error.message); }
+const futureTarget = structuredClone(primary);
+const firstReply = futureTarget.sections[0].conMoves[0];
+const futureMoveId = futureTarget.sections.at(-1).conMoves.at(-1).moveId;
+firstReply.response.decisiveTargetIds = [futureMoveId];
+firstReply.response.components = firstReply.response.components.map((component) => ({ ...component, targetMoveId: futureMoveId }));
+let futureTargetRejected = false;
+try { validateV41PrimaryOutput(futureTarget, packet); } catch (error) { futureTargetRejected = /response target must be an earlier move/.test(error.message); }
 
-if (![missingSubsidiaryRejected, missingSideRejected, badSequenceRejected].every(Boolean)) throw new Error("one or more v4.1 structural mutations escaped validation");
+if (![missingSubsidiaryRejected, missingSideRejected, futureTargetRejected].every(Boolean)) throw new Error("one or more v4.1.2 structural mutations escaped validation");
 const central = projectV41ComputeHours();
 const conservative = projectV41ConservativeHours();
 if (!central.centralTargetPassed || !conservative.conservativeCeilingPassed) throw new Error("v4.1 planning projection exceeds a compute ceiling");
 
 const fixture = {
-  schemaVersion: "4.1.1-bounded-tooling-fixture",
+  schemaVersion: "4.1.2-bounded-tooling-fixture",
   protocolId: V41_PROTOCOL_ID,
   status: "passed",
   validation,
   calculatedFixture: { pro: scores.overall.pro.score, con: scores.overall.con.score, winner: scores.winner },
-  mutationTests: { routeBurdenIdAccepted: true, missingSubsidiaryRejected, missingSideRejected, badSequenceRejected },
+  mutationTests: { routeBurdenIdAccepted: true, missingSubsidiaryRejected, missingSideRejected, futureTargetRejected },
   computeProjection: { central, conservative },
   costs: { modelContextsExecuted: 0, meteredApiCostUsd: 0, transcriptionCostUsd: 0 }
 };

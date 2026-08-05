@@ -11,12 +11,12 @@ import {
   validateV4PrimaryOutput
 } from "./v4-lean-production.mjs";
 
-export const V41_LEAN_ROOT = "docs/calibration/v4.1.1/lean-retired-gate";
+export const V41_LEAN_ROOT = "docs/calibration/v4.1.2/lean-retired-gate";
 export const V41_LEAN_DEBATES = Object.freeze(["55", "103", "161"]);
-export const V41_PROTOCOL_ID = "v4.1.1-bounded-lean-risk-triggered-consensus";
-export const V41_OUTPUT_VERSION = "4.1.1-bounded-primary-output";
-export const V41_PACKET_VERSION = "4.1.1-bounded-source-only-packet";
-export const V41_MODEL = Object.freeze({ label: "5.6 Sol", slug: "gpt-5.6-sol", primaryReasoningEffort: "medium", reviewReasoningEffort: "high" });
+export const V41_PROTOCOL_ID = "v4.1.2-bounded-lean-risk-triggered-consensus";
+export const V41_OUTPUT_VERSION = "4.1.2-bounded-primary-output";
+export const V41_PACKET_VERSION = "4.1.2-bounded-source-only-packet";
+export const V41_MODEL = Object.freeze({ label: "5.6 Sol", slug: "gpt-5.6-sol", primaryReasoningEffort: "low", reviewReasoningEffort: "high" });
 export const V41_MOVE_MINIMUM = 8;
 export const V41_MOVE_MAXIMUM = 24;
 
@@ -33,10 +33,9 @@ function bridgeSchema(base, tier) {
 export function makeV41PrimarySchema() {
   const base = makeV4PrimarySchema();
   const move = clone(base.properties.moves.items);
-  move.required = ["sequence", ...move.required.filter((key) => !["sectionId", "side"].includes(key))];
+  move.required = move.required.filter((key) => !["sectionId", "side"].includes(key));
   delete move.properties.sectionId;
   delete move.properties.side;
-  move.properties = { sequence: { type: "integer", minimum: 1, maximum: V41_MOVE_MAXIMUM }, ...move.properties };
 
   const originalBridge = base.properties.routes.items.properties.bridges.items;
   const route = clone(base.properties.routes.items);
@@ -51,8 +50,8 @@ export function makeV41PrimarySchema() {
   section.properties.proMoves = { type: "array", minItems: 1, maxItems: 2, items: move };
   section.properties.conMoves = { type: "array", minItems: 1, maxItems: 2, items: move };
 
-  base.$id = "slugfester-v411-bounded-lean-primary-judgment";
-  base.title = "Slugfester v4.1.1 bounded lean primary judgment";
+  base.$id = "slugfester-v412-bounded-lean-primary-judgment";
+  base.title = "Slugfester v4.1.2 bounded lean primary judgment";
   base.required = base.required.filter((key) => key !== "moves");
   delete base.properties.moves;
   base.properties.schemaVersion.const = V41_OUTPUT_VERSION;
@@ -76,7 +75,7 @@ export function normalizeV41Primary(output) {
   const moves = output.sections.flatMap((section) => [
     ...section.proMoves.map((move) => ({ ...move, sectionId: section.sectionId, side: "pro" })),
     ...section.conMoves.map((move) => ({ ...move, sectionId: section.sectionId, side: "con" }))
-  ]).sort((a, b) => a.sequence - b.sequence).map(({ sequence, ...move }) => move);
+  ]).sort((a, b) => a.sourceSpan.startEvent - b.sourceSpan.startEvent || a.sourceSpan.endEvent - b.sourceSpan.endEvent || a.moveId.localeCompare(b.moveId));
   return {
     ...output,
     schemaVersion: "4.0.1-lean-primary-output",
@@ -88,7 +87,6 @@ export function normalizeV41Primary(output) {
 }
 
 export function convertV4ReferenceToV41(reference) {
-  const sequences = new Map(reference.moves.map((move, index) => [move.moveId, index + 1]));
   const { moves: referenceMoves, ...referenceWithoutMoves } = reference;
   return {
     ...referenceWithoutMoves,
@@ -102,8 +100,8 @@ export function convertV4ReferenceToV41(reference) {
     })),
     sections: reference.sections.map((section) => ({
       ...section,
-      proMoves: referenceMoves.filter((move) => move.sectionId === section.sectionId && move.side === "pro").map(({ sectionId, side, ...move }) => ({ sequence: sequences.get(move.moveId), ...move })),
-      conMoves: referenceMoves.filter((move) => move.sectionId === section.sectionId && move.side === "con").map(({ sectionId, side, ...move }) => ({ sequence: sequences.get(move.moveId), ...move }))
+      proMoves: referenceMoves.filter((move) => move.sectionId === section.sectionId && move.side === "pro").map(({ sectionId, side, ...move }) => move),
+      conMoves: referenceMoves.filter((move) => move.sectionId === section.sectionId && move.side === "con").map(({ sectionId, side, ...move }) => move)
     }))
   };
 }
@@ -131,8 +129,6 @@ function validateV41Shape(output) {
     }
   }
   assertV4(nestedMoves.length >= V41_MOVE_MINIMUM && nestedMoves.length <= V41_MOVE_MAXIMUM, `move count outside ${V41_MOVE_MINIMUM}..${V41_MOVE_MAXIMUM}`);
-  const sequences = nestedMoves.map((move) => move.sequence).sort((a, b) => a - b);
-  assertV4(canonicalJson(sequences) === canonicalJson(Array.from({ length: nestedMoves.length }, (_, index) => index + 1)), "move sequences must be unique and consecutive from 1");
 }
 
 export function validateV41PrimaryOutput(output, packet) {
@@ -155,7 +151,7 @@ export function evaluateV41Escalation({ primary, ...rest }) {
 
 export function projectV41ComputeHours({
   debateCount = 195,
-  primaryMinutesPerDebate = 7,
+  primaryMinutesPerDebate = 5.5,
   finalizationMinutesPerDebate = 4.25,
   escalationRate = 0.15,
   passBMinutesPerEscalatedDebate = 8,
@@ -177,5 +173,5 @@ export function projectV41ComputeHours({
 }
 
 export function projectV41ConservativeHours() {
-  return projectV41ComputeHours({ primaryMinutesPerDebate: 8.5, finalizationMinutesPerDebate: 5, escalationRate: 0.2, passBMinutesPerEscalatedDebate: 8.5, adjudicationShareOfEscalations: 0.6, adjudicationMinutesPerAdjudicatedDebate: 6.5 });
+  return projectV41ComputeHours({ primaryMinutesPerDebate: 7, finalizationMinutesPerDebate: 5, escalationRate: 0.2, passBMinutesPerEscalatedDebate: 8.5, adjudicationShareOfEscalations: 0.6, adjudicationMinutesPerAdjudicatedDebate: 6.5 });
 }
