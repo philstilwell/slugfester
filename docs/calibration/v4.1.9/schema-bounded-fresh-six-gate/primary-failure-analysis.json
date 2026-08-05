@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "4.1.9-primary-timeout-failure-analysis",
+  "protocolId": "v4.1.9-schema-bounded-source-fresh-six-validation",
+  "status": "failed-long-context-timeout",
+  "execution": {
+    "contextsPlanned": 6,
+    "contextsAttempted": 1,
+    "contextsSkipped": 5,
+    "attempts": 1,
+    "retries": 0,
+    "elapsedMs": 1800096,
+    "timeoutMs": 1800000,
+    "recoverableStreamEvents": 0,
+    "transportClassification": "clean",
+    "meteredApiCostUsd": 0,
+    "transcriptionApiCalls": 0,
+    "transcriptionCostUsd": 0
+  },
+  "failedContext": {
+    "debateNumber": "180",
+    "debateId": "ally-licona-did-jesus-rise-dead-2004",
+    "durationSeconds": 9359,
+    "rawOutputCreated": false,
+    "compiledOutputCreated": false
+  },
+  "inputShape": {
+    "plainTranscriptBytes": 160172,
+    "timestampedEventsBytes": 254238,
+    "duplicatedSourceTextBytes": 414410,
+    "instructionAndSchemaBytes": 100401,
+    "totalCopiedInputBytes": 514811,
+    "instructionFiles": 17,
+    "instructionSizes": [
+      {
+        "file": "docs/assessment-workflow-v4.0.md",
+        "bytes": 9167
+      },
+      {
+        "file": "docs/assessment-workflow-v4.0.1.md",
+        "bytes": 1656
+      },
+      {
+        "file": "docs/assessment-workflow-v4.1.md",
+        "bytes": 4878
+      },
+      {
+        "file": "docs/assessment-workflow-v4.1.1.md",
+        "bytes": 981
+      },
+      {
+        "file": "docs/assessment-workflow-v4.1.2.md",
+        "bytes": 1814
+      },
+      {
+        "file": "docs/assessment-workflow-v4.1.3.md",
+        "bytes": 2238
+      },
+      {
+        "file": "docs/assessment-workflow-v4.1.4.md",
+        "bytes": 1528
+      },
+      {
+        "file": "docs/assessment-workflow-v4.1.5.md",
+        "bytes": 1616
+      },
+      {
+        "file": "docs/assessment-workflow-v4.1.6.md",
+        "bytes": 3318
+      },
+      {
+        "file": "docs/assessment-workflow-v4.1.7.md",
+        "bytes": 6818
+      },
+      {
+        "file": "docs/assessment-workflow-v4.1.8.md",
+        "bytes": 5360
+      },
+      {
+        "file": "docs/assessment-workflow-v4.1.9.md",
+        "bytes": 2919
+      },
+      {
+        "file": "docs/reassessment-rubric-v4.0.md",
+        "bytes": 8242
+      },
+      {
+        "file": "docs/reassessment-rubric-v4.0.1.md",
+        "bytes": 1010
+      },
+      {
+        "file": "docs/reassessment-rubric-v4.1.md",
+        "bytes": 1963
+      },
+      {
+        "file": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/manual.md",
+        "bytes": 3419
+      },
+      {
+        "file": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/schemas/primary.schema.json",
+        "bytes": 43474
+      }
+    ]
+  },
+  "diagnosis": {
+    "schemaRejected": false,
+    "deterministicValidatorReached": false,
+    "judgmentOutputCreated": false,
+    "sourceProvenanceResultAvailable": false,
+    "runtimeFailure": true,
+    "sourceTextDeliveredTwice": true,
+    "cumulativeWorkflowStackDelivered": true
+  },
+  "disposition": {
+    "v419GatePassed": false,
+    "retryAuthorized": false,
+    "timeoutExtensionAuthorized": false,
+    "scoreDerivationAuthorized": false,
+    "legacyComparisonAuthorized": false,
+    "allSixV419DebatesBecomeDiagnosticExclusions": true,
+    "compactTransportDevelopmentAuthorized": true
+  },
+  "nextTransportTest": {
+    "diagnosticDebateNumber": "180",
+    "originalTranscriptRemainsStoredAndHashedLocally": true,
+    "modelReceivesOneLosslessTimestampedSourceLedger": true,
+    "sourceLedgerMustReplayExactlyToOriginalEvents": true,
+    "plainTranscriptDuplicateRemovedFromModelContext": true,
+    "cumulativeWorkflowFilesReplacedByPrimaryRelevantInstructionsAndRubrics": true,
+    "judgmentRulesChanged": false,
+    "timeoutMs": 1800000
+  }
+}

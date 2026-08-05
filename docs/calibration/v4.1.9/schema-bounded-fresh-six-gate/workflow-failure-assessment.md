@@ -1,0 +1,9 @@
+# v4.1.9 fresh-six workflow failure assessment
+
+The v4.1.9 gate failed on its first context at the frozen 30-minute timeout and stopped the remaining five debates. Debate 180 produced no raw judgment output, no schema error, and no recoverable stream event. The process authenticated through the ChatGPT subscription, incurred no metered API or transcription charge, and was not retried. No deterministic source validation, score, or legacy comparison was reached.
+
+This is an input-transport and runtime failure. The 156-minute debate was delivered twice: a 160,172-byte plain transcript and a 254,238-byte timestamped event file containing the same complete source text. The context also received the cumulative twelve-file workflow lineage plus three rubric files, the manual, and the 43,474-byte endpoint schema. Total copied input was 514,811 bytes before prompt overhead.
+
+The v4.1.9 result remains failed; neither the timeout nor the sample will be changed after the fact. All six sample debates become diagnostic exclusions for the next external gate.
+
+The next development test should preserve Debate 180 only as a retired transport stress case. It should keep the original transcript and event files stored and hash-locked locally, but give the model one lossless timestamped source ledger that deterministically replays to the original events instead of two copies of the source text. It should also deliver only the primary-relevant rubric files and one consolidated primary instruction manual, not every historical workflow amendment. The output schema, scoring anchors, event-aware validator, 600-character ceiling, 100-token ceiling, one-attempt rule, and 30-minute timeout remain unchanged. Only a passed retired transport smoke may authorize selection of another disjoint fresh sample.
