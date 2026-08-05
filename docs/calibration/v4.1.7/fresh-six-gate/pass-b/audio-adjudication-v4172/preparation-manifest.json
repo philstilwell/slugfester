@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "4.1.7.2-audio-adjudication-preparation",
+  "protocolId": "v4.1.7.2-endpoint-compatible-audio-attribution",
+  "status": "prepared-endpoint-compatible-one-debate-two-fields",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "inputs": {
+    "workflow": "docs/assessment-workflow-v4.1.7.2.md",
+    "manual": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/manual.md",
+    "schema": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication-v4172/schema.json",
+    "packet": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication-v4172/packet.json",
+    "rawDiarizedTranscripts": [
+      "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/con-apriori-reply.transcript.json",
+      "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/con-measure-reply.transcript.json"
+    ]
+  },
+  "output": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication-v4172/output.json",
+  "moves": [
+    {
+      "moveId": "con-apriori-reply",
+      "expectedSpeaker": "Graham Oppy",
+      "transcriptSha256": "0db15b5c154c0e3d968d3f13ddd21f6e237dee3ab55c6baae1707dff089c262c",
+      "segments": 16
+    },
+    {
+      "moveId": "con-measure-reply",
+      "expectedSpeaker": "Graham Oppy",
+      "transcriptSha256": "7db53f858c164222d321a72df4e3b90aea96f26608a0c84d18c41694b80cebc8",
+      "segments": 26
+    }
+  ],
+  "authorization": {
+    "modelExecution": false,
+    "deterministicValidation": true,
+    "paidTranscription": false,
+    "disagreementExtraction": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "productionMutation": false
+  },
+  "inheritedFailure": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-adjudication/model-execution.json",
+  "endpointSchemaCorrection": {
+    "removedKeyword": "uniqueItems",
+    "deterministicUniquenessEnforcementRetained": true,
+    "otherSchemaConstraintsChanged": false
+  }
+}
