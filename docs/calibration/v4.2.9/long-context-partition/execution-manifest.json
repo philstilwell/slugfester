@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "4.2.9-long-context-partition-execution-manifest",
+  "protocolId": "v4.2.9-long-context-partition-diagnostic",
+  "status": "frozen-two-score-blind-chunk-proposers-authorized",
+  "frozenAt": "2026-08-05T14:41:21Z",
+  "checkpointCommit": "b4695cf912967ad7b1e06a47538d268fa6a12b61",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "debateNumber": "99",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "modelInputs": {
+    "selectionRubric": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.2.9/long-context-partition/manual.md",
+    "schema": "docs/calibration/v4.2.9/long-context-partition/schema.json",
+    "packet": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-99.json"
+  },
+  "source": {
+    "packet": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-99.json",
+    "fullLedger": ".assessment-cache/compact-ledgers/v4.2.4/debate-99.jsonl",
+    "originalEvents": ".assessment-cache/captions/UWCvKiWjV0g/events.json",
+    "v428Execution": "docs/calibration/v4.2.8/correction-aware-retired-continuation/model-execution.json",
+    "v428Analysis": "docs/calibration/v4.2.8/correction-aware-retired-continuation/primary-analysis.json"
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-1",
+      "startEvent": 0,
+      "endEvent": 1758,
+      "chunkPath": "docs/calibration/v4.2.9/long-context-partition/chunks/chunk-1.jsonl",
+      "chunkSha256": "1ab092be9a79e87ed7a6f67bb35c5780494e5ccd7b273c8b0aa1e9013a4165b6",
+      "rows": 1759,
+      "bytes": 102648,
+      "rawOutput": "docs/calibration/v4.2.9/long-context-partition/proposals/chunk-1.json"
+    },
+    {
+      "chunkId": "chunk-2",
+      "startEvent": 1638,
+      "endEvent": 3396,
+      "chunkPath": "docs/calibration/v4.2.9/long-context-partition/chunks/chunk-2.jsonl",
+      "chunkSha256": "2a2d938be0f4f42d7d59a4ea76baacff33bc499765dfde2e9de3a2ffb7ee2d3f",
+      "rows": 1759,
+      "bytes": 104266,
+      "rawOutput": "docs/calibration/v4.2.9/long-context-partition/proposals/chunk-2.json"
+    }
+  ],
+  "coverage": {
+    "originalEvents": 3397,
+    "jointlyCoveredEvents": 3397,
+    "overlapStartEvent": 1638,
+    "overlapEndEvent": 1758,
+    "overlapEvents": 121,
+    "complete": true
+  },
+  "isolation": {
+    "freshTemporaryCodexHomePerChunk": true,
+    "freshSourceDirectoryPerChunk": true,
+    "otherChunkUnavailable": true,
+    "otherProposalUnavailable": true,
+    "v428TimeoutDetailsUnavailable": true,
+    "legacyUnavailable": true,
+    "scoresUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 2,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "continueAfterLocalChunkFailure": true,
+    "timeoutMs": 900000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "authorization": {
+    "twoProposalContexts": true,
+    "deterministicValidation": true,
+    "mergePreparation": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.2.9/long-context-partition/model-execution.json",
+    "analysis": "docs/calibration/v4.2.9/long-context-partition/analysis.json",
+    "proposals": [
+      "docs/calibration/v4.2.9/long-context-partition/proposals/chunk-1.json",
+      "docs/calibration/v4.2.9/long-context-partition/proposals/chunk-2.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.2.9/long-context-partition/proposals/chunk-1.json",
+    "docs/calibration/v4.2.9/long-context-partition/proposals/chunk-2.json",
+    "docs/calibration/v4.2.9/long-context-partition/model-execution.json",
+    "docs/calibration/v4.2.9/long-context-partition/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.9.md": "c8efcec7bfbd36c7f8b35ae2e1d58bd6e5b4399d635920d54206ea22ba2bb6e5",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/calibration/v4.2.9/long-context-partition/manual.md": "cc7f53a71d916acbac83840d2507a8291ffdb56344794c63cf3214d346d6d256",
+    "docs/calibration/v4.2.9/long-context-partition/schema.json": "53f43adec4543ce671c93b5c7545d1736a2228cdf04627f417418c4add6cdb3c",
+    "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-99.json": "dca4a3de43e8bb2daf2327b911a9aa466da0ec272e4448497fd3e3e1cf32a6d8",
+    ".assessment-cache/compact-ledgers/v4.2.4/debate-99.jsonl": "1fc975ee96ce0fc7b32a5bf68d626a1d2185fccdfcb9e6664e7b948658f31cef",
+    ".assessment-cache/captions/UWCvKiWjV0g/events.json": "f27acc146aab36fe21dfd7ae50d1624240a2a12c28fbee9a349b0b36b22f4879",
+    "docs/calibration/v4.2.8/correction-aware-retired-continuation/model-execution.json": "851814e37609e312eb3f1db5dc4b30e76482159021690ba17492e22b5237bd2f",
+    "docs/calibration/v4.2.8/correction-aware-retired-continuation/primary-analysis.json": "87ffdc868af51bddf761011b1c3c8ba6a71a23f29fad67b7b07f8680d0953be9",
+    "docs/calibration/v4.2.9/long-context-partition/preparation-manifest.json": "adf7b871402089dbf8acf469e5a39f09e9dcef90f313ca7ccab6f4fe0c718287",
+    "docs/calibration/v4.2.9/long-context-partition/chunks/chunk-1.jsonl": "1ab092be9a79e87ed7a6f67bb35c5780494e5ccd7b273c8b0aa1e9013a4165b6",
+    "docs/calibration/v4.2.9/long-context-partition/chunks/chunk-2.jsonl": "2a2d938be0f4f42d7d59a4ea76baacff33bc499765dfde2e9de3a2ffb7ee2d3f",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v41-lean-production.mjs": "9d4f4a5a54ff4c73f50733aa148064200862991a69003823d303e7bac363d9ba",
+    "scripts/lib/v418-source-integrity.mjs": "ff0593a316fcd06f1662b0f9c9864bdd4c2a867a718638a79cac8b9f27eac205",
+    "scripts/lib/v429-long-context-partition.mjs": "c10268ba065442896e8d4906239c90752e4c731d0a2762e9573db76d8baf726e",
+    "scripts/build-v429-long-context-partition.mjs": "8051c1c523f43db88e1da2e3b8eee5c0d7262a05d61217f0120d73040730142e",
+    "scripts/test-v429-long-context-partition.mjs": "229a581668c01fd90ff88252bf506e043f4902ede6ec42f6975467f901c69618",
+    "scripts/validate-v429-proposal.mjs": "6dcd9bb16fb2c2069a2edd66e5e12cfc0e57d72474c8c11a6923a5823fe3d9ed",
+    "scripts/preregister-v429-long-context-partition.mjs": "c6aa2392d200e825e05562daceefc31e9cb1756daa570380a7eb4d30e6ea6867",
+    "scripts/run-v429-long-context-partition.mjs": "333f2f9e1ccb4da53b896a663177b500d65f671c8d7ec5ee6c0c691adb893be1",
+    "scripts/analyze-v429-long-context-partition.mjs": "193e65c89e9aef6dbd08d023272158938e118b727f81f1c53618689d51553c6d"
+  }
+}
