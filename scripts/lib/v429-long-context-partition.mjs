@@ -114,13 +114,13 @@ export function validateV429Proposal(output, packet, chunk, eventsDocument, even
     const orderedCoverage = orderedTokenCoverage(excerpt, spanText);
     assertV4(lexicalRecall >= 0.8 && orderedCoverage >= 0.8, `${candidate.candidateId}: excerpt source integrity failed`);
     const response = candidate.responseIntent;
+    for (const target of response.localTargetCandidateIds) assertV4(candidateIds.has(target), `${candidate.candidateId}: local target must be earlier`);
     if (response.kind === "local-reply") {
       assertV4(candidate.moveKind === "reply" && response.localTargetCandidateIds.length > 0 && response.earlierTargetDescription === "", `${candidate.candidateId}: invalid local reply shape`);
-      for (const target of response.localTargetCandidateIds) assertV4(candidateIds.has(target), `${candidate.candidateId}: local target must be earlier`);
     } else if (response.kind === "constructive") {
       assertV4(candidate.moveKind === "constructive" && response.localTargetCandidateIds.length === 0 && response.earlierTargetDescription === "", `${candidate.candidateId}: invalid constructive shape`);
     } else {
-      assertV4(candidate.moveKind === "reply" && response.localTargetCandidateIds.length === 0 && response.earlierTargetDescription.length >= 30, `${candidate.candidateId}: invalid cross-chunk reply shape`);
+      assertV4(candidate.moveKind === "reply" && response.earlierTargetDescription.length >= 30, `${candidate.candidateId}: invalid cross-chunk reply shape`);
     }
     candidateIds.add(candidate.candidateId);
     priorKey = key;

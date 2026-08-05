@@ -1,0 +1,7 @@
+# Slugfester Partition Compiler Recovery v4.2.9.3
+
+This deterministic recovery addresses two redundant-contract defects exposed by the preserved Debate 99 proposal raws. First, `moveKind` duplicated information already expressed more precisely by `responseIntent.kind`. Repository code now derives `moveKind`: `constructive` only for a constructive response intent and `reply` otherwise. Second, the validator incorrectly prohibited a cross-chunk reply from also naming an earlier local candidate. A reply can contact both; local target IDs must still identify earlier candidates, while the cross-chunk target description must remain explicit.
+
+No proposition, source span, side, speaker, attribution, load-bearing level or rationale, response-intent kind, response target, context summary, confidence value, candidate order, or other model judgment may change. The three preserved proposal outputs are copied into derived artifacts with only the redundant `moveKind` field changed where required. Repository code then applies the complete source, chronology, attribution, excerpt, and response-topology validator.
+
+This stage makes no model call and creates no participant rating or score. A pass authorizes preparation—but not execution—of one separately frozen integrated primary supplied with all validated candidates and deterministic source-context windows. It does not authorize a fresh gate, production mutation, score derivation, or the 195-debate run.
