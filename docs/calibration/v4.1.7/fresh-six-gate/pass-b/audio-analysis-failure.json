@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "4.1.7-audio-analysis-failure",
+  "protocolId": "v4.1.7-fresh-six-triggered-pass-b",
+  "status": "deterministic-analysis-stopped-before-attribution-acceptance",
+  "failedCommand": "node scripts/analyze-v417-audio-verification.mjs",
+  "failureMessage": "con-finetuning-alternatives: segment 25 text invalid",
+  "cause": "The inherited v4.1.6 evaluator rejects empty diarization segments even when the raw API emitted only a zero-text boundary fragment.",
+  "rawOutputMutationPerformed": false,
+  "paidRetryPerformed": false,
+  "recallThresholdsEvaluatedCompletely": false,
+  "audit": {
+    "transcripts": 12,
+    "transcriptsWithEmptySegments": 3,
+    "emptySegments": 4,
+    "invalidTimingSegments": 0,
+    "maximumEmptySegmentDurationSeconds": 0.1,
+    "emptySegmentDurationsSeconds": [
+      0.05,
+      0.05,
+      0.1,
+      0.05
+    ]
+  },
+  "authorization": {
+    "analysisOnlyAmendmentPreparation": true,
+    "paidRetry": false,
+    "disagreementExtraction": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "productionMutation": false
+  }
+}
