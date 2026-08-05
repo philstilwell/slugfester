@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "4.2-compact-transport-model-execution",
+  "protocolId": "v4.2-compact-primary-input-transport-smoke",
+  "status": "transport-smoke-execution-passed",
+  "contextsPlanned": 1,
+  "contextsAttempted": 1,
+  "validContexts": 1,
+  "attempts": 1,
+  "retries": 0,
+  "totalElapsedMs": 181619,
+  "meteredApiCostUsd": 0,
+  "transcriptionApiCalls": 0,
+  "transcriptionCostUsd": 0,
+  "result": {
+    "debateNumber": "180",
+    "model": "5.6 Sol",
+    "modelSlug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "attemptCount": 1,
+    "retryCount": 0,
+    "startedAt": "2026-08-05T12:16:37.677Z",
+    "completedAt": "2026-08-05T12:19:39.297Z",
+    "elapsedMs": 181619,
+    "timedOut": false,
+    "terminationSignal": null,
+    "commandExitCode": 0,
+    "authentication": "ChatGPT subscription",
+    "apiKeysRemoved": true,
+    "meteredApiCostUsd": 0,
+    "transcriptionApiCalls": 0,
+    "transcriptionCostUsd": 0,
+    "recoverableStreamEvents": 0,
+    "transportClassification": "clean",
+    "stdoutSha256": "7bf2177e21093d76ff5bba4d6fb39d82e0728bf5132bd06fa3b694f21a172901",
+    "stderrSha256": "6d60e87d26a01a51d49ea5033b5e9b99500778466fd362551c9d8ab36886a71d",
+    "status": "completed-valid-clean",
+    "rawOutputWritten": true,
+    "rawOutputSha256": "85f91031697d6bdd92bb76eb4d185a7a2a2ad3526e447a24bbc4c6bca6331c47",
+    "compiledOutputWritten": true,
+    "compiledOutputSha256": "ddaa37cb7554e6935683aedbce6a621e662791cb2e0f484b638ec1bf14733eda",
+    "deterministicValidationPassed": true,
+    "repositoryTimeCompilationPassed": true,
+    "smokePassed": true,
+    "validationExitCode": 0,
+    "validationSummary": {
+      "status": "passed",
+      "debateNumber": "180",
+      "moves": 8,
+      "sections": 4,
+      "mediumOrLowAttributionMoves": [],
+      "calculatedFields": 0,
+      "schemaVersion": "4.2-compact-transport-primary-output",
+      "protocolId": "v4.2-compact-primary-input-transport-smoke",
+      "boundedMoves": 8,
+      "sourceSpanIntegrity": {
+        "status": "passed",
+        "eventsHashVerified": true,
+        "eventCount": 1526,
+        "repositoryOwnedTimes": true,
+        "maximumCharacters": 600,
+        "maximumTokens": 100,
+        "minimumLexicalRecall": 0.8,
+        "minimumOrderedCoverage": 0.8,
+        "moves": [
+          {
+            "moveId": "pro-three-fact-case",
+            "characterCount": 282,
+            "tokenCount": 46,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1
+          },
+          {
+            "moveId": "con-early-belief-not-bodily",
+            "characterCount": 296,
+            "tokenCount": 44,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1
+          },
+          {
+            "moveId": "pro-creedal-bodily-reply",
+            "characterCount": 307,
+            "tokenCount": 56,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1
+          },
+          {
+            "moveId": "con-paul-appearance-ambiguity",
+            "characterCount": 292,
+            "tokenCount": 52,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1
+          },
+          {
+            "moveId": "pro-death-consensus-reply",
+            "characterCount": 321,
+            "tokenCount": 53,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1
+          },
+          {
+            "moveId": "con-short-crucifixion-death-doubt",
+            "characterCount": 298,
+            "tokenCount": 50,
+            "lexicalRecall": 0.98,
+            "orderedCoverage": 0.98
+          },
+          {
+            "moveId": "pro-luke-contraction-reply",
+            "characterCount": 291,
+            "tokenCount": 50,
+            "lexicalRecall": 0.98,
+            "orderedCoverage": 0.98
+          },
+          {
+            "moveId": "con-luke-john-development",
+            "characterCount": 333,
+            "tokenCount": 59,
+            "lexicalRecall": 0.983051,
+            "orderedCoverage": 0.983051
+          }
+        ]
+      },
+      "compactTransport": {
+        "status": "passed",
+        "eventCount": 1526,
+        "sourceLedgerSha256": "fe12947cdb507ebce35e534f556eecac8a550502f29e38afff0bd9ef10ece693",
+        "replayExact": true,
+        "plainTranscriptDeliveredToModel": false,
+        "originalEventsDeliveredToModel": false
+      }
+    },
+    "validationMessage": null
+  },
+  "authorization": {
+    "analysis": true,
+    "retry": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "freshGateSelection": false
+  }
+}

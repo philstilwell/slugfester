@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "4.2-compact-transport-smoke-analysis",
+  "protocolId": "v4.2-compact-primary-input-transport-smoke",
+  "status": "transport-smoke-passed-fresh-gate-preparation-authorized",
+  "developmentOnly": true,
+  "debateNumber": "180",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "180",
+    "moves": 8,
+    "sections": 4,
+    "mediumOrLowAttributionMoves": [],
+    "calculatedFields": 0,
+    "schemaVersion": "4.2-compact-transport-primary-output",
+    "protocolId": "v4.2-compact-primary-input-transport-smoke",
+    "boundedMoves": 8,
+    "sourceSpanIntegrity": {
+      "status": "passed",
+      "eventsHashVerified": true,
+      "eventCount": 1526,
+      "repositoryOwnedTimes": true,
+      "maximumCharacters": 600,
+      "maximumTokens": 100,
+      "minimumLexicalRecall": 0.8,
+      "minimumOrderedCoverage": 0.8,
+      "moves": [
+        {
+          "moveId": "pro-three-fact-case",
+          "characterCount": 282,
+          "tokenCount": 46,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "con-early-belief-not-bodily",
+          "characterCount": 296,
+          "tokenCount": 44,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "pro-creedal-bodily-reply",
+          "characterCount": 307,
+          "tokenCount": 56,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "con-paul-appearance-ambiguity",
+          "characterCount": 292,
+          "tokenCount": 52,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "pro-death-consensus-reply",
+          "characterCount": 321,
+          "tokenCount": 53,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "con-short-crucifixion-death-doubt",
+          "characterCount": 298,
+          "tokenCount": 50,
+          "lexicalRecall": 0.98,
+          "orderedCoverage": 0.98
+        },
+        {
+          "moveId": "pro-luke-contraction-reply",
+          "characterCount": 291,
+          "tokenCount": 50,
+          "lexicalRecall": 0.98,
+          "orderedCoverage": 0.98
+        },
+        {
+          "moveId": "con-luke-john-development",
+          "characterCount": 333,
+          "tokenCount": 59,
+          "lexicalRecall": 0.983051,
+          "orderedCoverage": 0.983051
+        }
+      ]
+    },
+    "compactTransport": {
+      "status": "passed",
+      "eventCount": 1526,
+      "sourceLedgerSha256": "fe12947cdb507ebce35e534f556eecac8a550502f29e38afff0bd9ef10ece693",
+      "replayExact": true,
+      "plainTranscriptDeliveredToModel": false,
+      "originalEventsDeliveredToModel": false
+    }
+  },
+  "deterministicCompilationReplayPassed": true,
+  "runtime": {
+    "elapsedMs": 181619,
+    "elapsedMinutes": 3.03,
+    "timeoutMs": 1800000,
+    "completedInsideTimeout": true
+  },
+  "transport": {
+    "originalPlainTranscriptStoredLocally": true,
+    "originalEventsStoredLocally": true,
+    "sourceLedgerReplayExact": true,
+    "plainTranscriptDeliveredToModel": false,
+    "originalEventsDeliveredToModel": false,
+    "completeSourceTextDeliveredOnce": true,
+    "modelCopiedFiles": [
+      "docs/reassessment-rubric-v4.0.md",
+      "docs/reassessment-rubric-v4.0.1.md",
+      "docs/reassessment-rubric-v4.1.md",
+      "docs/calibration/v4.2/compact-transport-smoke/manual.md",
+      "docs/calibration/v4.2/compact-transport-smoke/schema.json",
+      "docs/calibration/v4.2/compact-transport-smoke/packet.json",
+      ".assessment-cache/compact-ledgers/v4.2/debate-180.jsonl"
+    ],
+    "copiedBytes": {
+      "docs/reassessment-rubric-v4.0.md": 8242,
+      "docs/reassessment-rubric-v4.0.1.md": 1010,
+      "docs/reassessment-rubric-v4.1.md": 1963,
+      "docs/calibration/v4.2/compact-transport-smoke/manual.md": 3596,
+      "docs/calibration/v4.2/compact-transport-smoke/schema.json": 43447,
+      "docs/calibration/v4.2/compact-transport-smoke/packet.json": 2959,
+      ".assessment-cache/compact-ledgers/v4.2/debate-180.jsonl": 178351
+    },
+    "totalCopiedInputBytes": 239568,
+    "priorV419CopiedInputBytes": 514811,
+    "byteReduction": 275243,
+    "reductionShare": 0.534649
+  },
+  "comparisonToV419": {
+    "v419ElapsedMs": 1800096,
+    "v419TimedOut": true,
+    "v42Completed": true,
+    "copiedInputReductionShare": 0.534649
+  },
+  "totals": {
+    "attempts": 1,
+    "retries": 0,
+    "modelContexts": 1,
+    "meteredApiCostUsd": 0,
+    "transcriptionApiCalls": 0,
+    "transcriptionCostUsd": 0,
+    "scoresDerived": 0,
+    "legacyComparatorsOpened": 0
+  },
+  "authorization": {
+    "newDisjointFreshGatePreparation": true,
+    "newDisjointFreshGateModelExecution": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
