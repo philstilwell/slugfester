@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "4.1.6-adjudication-schema-preflight-execution",
+  "protocolId": "v4.1.6-triggered-pass-b-consensus",
+  "status": "endpoint-preflight-passed",
+  "validSyntheticContexts": 1,
+  "attempts": 1,
+  "retries": 0,
+  "result": {
+    "model": {
+      "label": "5.6 Sol",
+      "slug": "gpt-5.6-sol",
+      "reasoningEffort": "high"
+    },
+    "attemptCount": 1,
+    "retryCount": 0,
+    "startedAt": "2026-08-05T08:09:59.936Z",
+    "completedAt": "2026-08-05T08:10:34.034Z",
+    "elapsedMs": 34098,
+    "timedOut": false,
+    "commandExitCode": 0,
+    "terminationSignal": null,
+    "authentication": "ChatGPT subscription",
+    "apiKeysRemoved": true,
+    "meteredApiCostUsd": 0,
+    "recoverableStreamEvents": 0,
+    "transportClassification": "clean",
+    "stdoutSha256": "3d9b5dbd10563c1ba9186b48b0a6d7e676d3127d2dd745c42604463e8c98d4ee",
+    "stderrSha256": "c7806ddf26cb2b61b90e308122253b08377a52bf6d81a2563d2a45686114fa02",
+    "status": "completed-valid",
+    "outputSha256": "3b2aa5ba383d3cdbf8469226648b027f6d14ae10853bebf2a62fe321bb38923c",
+    "deterministicValidationPassed": true,
+    "gateAcceptancePassed": true,
+    "validationSummary": {
+      "status": "passed",
+      "debateNumber": "schema-preflight",
+      "disputedMoves": 2,
+      "responsePairChoices": 1,
+      "charityPairChoices": 1,
+      "scoringFieldChoices": 1,
+      "burdenAdjustmentChoices": 1,
+      "calculatedScores": 0
+    },
+    "validationMessage": null
+  },
+  "authorization": {
+    "freezeThreeContextAdjudicationExecutionManifest": true,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  }
+}
