@@ -1,0 +1,4462 @@
+{
+  "schemaVersion": "4.1.6-triggered-pass-b-disagreements",
+  "protocolId": "v4.1.6-triggered-pass-b-consensus",
+  "status": "passed-deterministic-disagreement-extraction",
+  "evidenceBoundary": {
+    "primaryContexts": 3,
+    "passBContexts": 3,
+    "primaryAttempts": 3,
+    "passBAttempts": 3,
+    "totalRetries": 0,
+    "rawOutputsPreserved": true,
+    "audioVerificationPassed": true
+  },
+  "rules": {
+    "responseTupleMismatch": "dispute",
+    "charityStateTestedMismatch": "dispute",
+    "scoringFieldDeltaGreaterThan": 5,
+    "repositoryDerivedPrecisionAndCalibrationIncluded": true,
+    "diagnosticMoveDeltaGreaterThan": 4,
+    "diagnosticTriggerExposesAllUnequalScoringFields": true,
+    "adjustmentSemanticTupleMismatch": "dispute",
+    "rationaleWordingAlone": "not-a-dispute",
+    "nondisputedUnequalRawScalarResolution": "rounded mean after adjudication"
+  },
+  "summary": {
+    "debates": 3,
+    "uniqueMoves": 34,
+    "moveJudgmentsCompared": 68,
+    "disputedMoves": 34,
+    "responseTupleDisputes": 14,
+    "charityStateDisputes": 3,
+    "scoringFieldDisputes": 145,
+    "diagnosticTriggerMoves": 21,
+    "burdenAdjustmentDisputes": 6,
+    "nondisputedUnequalRawScalars": 39
+  },
+  "authorization": {
+    "prepareDisputeOnlyAdjudicationPackets": true,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  },
+  "debates": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "motion": "Does the Kalam cosmological argument show that the universe began to exist, has a cause, and points to a personal creator?",
+      "sourcePacketPath": "docs/calibration/v4.1.5/lean-retired-gate/packets/debate-55.json",
+      "passBPacketPath": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/packets/debate-55.json",
+      "primaryPath": "docs/calibration/v4.1.5/lean-retired-gate/primary-outputs/debate-55.json",
+      "primarySha256": "82ae3ea203b5288cf14d44a6a3e77dfa1d943615f5b5b65d93ac95a23c24e5d2",
+      "passBPath": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/outputs/debate-55.json",
+      "passBSha256": "20872a5273f8019a284de59678b172816dff818768f3fa9cf2fa409d7f8721e1",
+      "moveCount": 10,
+      "disputedMoveCount": 10,
+      "responseTupleDisputeCount": 5,
+      "charityStateDisputeCount": 1,
+      "scoringFieldDisputeCount": 24,
+      "diagnosticTriggerMoveCount": 3,
+      "burdenAdjustmentDisputeCount": 2,
+      "nondisputedUnequalRawScalarCount": 22,
+      "moveDisputes": [
+        {
+          "moveIndex": 0,
+          "moveId": "pro-causal-principle",
+          "sectionId": "section-causal-premise",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "sourceSpan": {
+            "startEvent": 145,
+            "endEvent": 156,
+            "startMs": 364560,
+            "endMs": 402680,
+            "excerpt": "Now since then I have attempted to articulate three arguments in support of the first premise that unpack it a little bit more but still basically rooted in this metaphysical intuition that out of nothing nothing comes and therefore something comes into being there surely has to be a cause that brings it into being."
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": true,
+            "materialScoringFieldKeys": [
+              "representationalCharity"
+            ],
+            "diagnosticScores": {
+              "candidate1": 75,
+              "candidate2": 73
+            },
+            "diagnosticMoveDelta": 2,
+            "diagnosticTrigger": false,
+            "exposedScoringFieldKeys": [
+              "representationalCharity"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": {
+              "candidate1": {
+                "charity": {
+                  "tested": false,
+                  "alternative": "",
+                  "decisiveQualification": ""
+                },
+                "representationalCharity": 75
+              },
+              "candidate2": {
+                "charity": {
+                  "tested": true,
+                  "alternative": "A sincere critic may question whether the intuition about being and non-being entails a universal causal principle.",
+                  "decisiveQualification": "Denying or suspending judgment on the premise need not reflect indifference to truth or concern merely for intellectual reputation."
+                },
+                "representationalCharity": 52
+              }
+            },
+            "scoringFields": {
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 75
+                },
+                "candidate2": {
+                  "value": 52
+                },
+                "absoluteDelta": 23
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 1,
+          "moveId": "con-pickwickish-beginnings",
+          "sectionId": "section-causal-premise",
+          "side": "con",
+          "speaker": "Alex Malpass",
+          "sourceSpan": {
+            "startEvent": 201,
+            "endEvent": 253,
+            "startMs": 499320,
+            "endMs": 624360,
+            "excerpt": "Sometimes we talk about things beginning to exist, but it's a misleading turn of phrase... this underlying material that made up the cup didn't begin to exist... all of the humdrum examples of things around us, they're not new substances that appear on the stage... Whereas, if we're considering the origin of the universe... That's got to be different to the mere rearrangement of pre-existing material."
+          },
+          "triggers": {
+            "responseTupleMismatch": true,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [],
+            "diagnosticScores": {
+              "candidate1": 85,
+              "candidate2": 84
+            },
+            "diagnosticMoveDelta": 1,
+            "diagnosticTrigger": false,
+            "exposedScoringFieldKeys": []
+          },
+          "disputedFields": {
+            "responseTuple": {
+              "candidate1": {
+                "class": "partial-answer",
+                "decisiveTargetIds": [
+                  "pro-causal-principle"
+                ],
+                "contactedComponents": 1,
+                "totalComponents": 2,
+                "decisiveComponents": 1,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              },
+              "candidate2": {
+                "class": "partial-answer",
+                "decisiveTargetIds": [
+                  "pro-causal-principle"
+                ],
+                "contactedComponents": 1,
+                "totalComponents": 2,
+                "decisiveComponents": 2,
+                "issueBearingContraryMaterial": false,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              }
+            },
+            "charityState": null,
+            "scoringFields": {}
+          }
+        },
+        {
+          "moveIndex": 2,
+          "moveId": "pro-actual-infinite-absurdity",
+          "sectionId": "section-actual-infinite",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "sourceSpan": {
+            "startEvent": 874,
+            "endEvent": 908,
+            "startMs": 1948400,
+            "endMs": 2036680,
+            "excerpt": "If you could have an actual infinite number of things, it would result in all sorts of situations that I think are metaphysically impossible. Granted, there is no strict logical contradiction... the claim is that this is metaphysically impossible... Benardete imagines a book... For there is no last page."
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "evidenceWarrant",
+              "precisionClarity"
+            ],
+            "diagnosticScores": {
+              "candidate1": 78,
+              "candidate2": 73
+            },
+            "diagnosticMoveDelta": 5,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 76
+                },
+                "candidate2": {
+                  "value": 73
+                },
+                "absoluteDelta": 3
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 72
+                },
+                "candidate2": {
+                  "value": 63
+                },
+                "absoluteDelta": 9
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 82
+                },
+                "candidate2": {
+                  "value": 79
+                },
+                "absoluteDelta": 3
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 72
+                },
+                "candidate2": {
+                  "value": 74
+                },
+                "absoluteDelta": 2
+              },
+              "precisionClarity": {
+                "candidate1": {
+                  "value": 95,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "candidate2": {
+                  "value": 75,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "partly-unstable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "absoluteDelta": 20
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 3,
+          "moveId": "con-strange-not-impossible",
+          "sectionId": "section-actual-infinite",
+          "side": "con",
+          "speaker": "Alex Malpass",
+          "sourceSpan": {
+            "startEvent": 946,
+            "endEvent": 1015,
+            "startMs": 2128640,
+            "endMs": 2275040,
+            "excerpt": "I'm not persuaded by these examples... Hilbert's Hotel is strange... merely by shuffling guests around, the hotel can accommodate any number of new guests... it's not quite clear to me that that's enough to say that it couldn't exist... the strange and the impossible are not the same... if there was an infinite hotel, that's what it would be like."
+          },
+          "triggers": {
+            "responseTupleMismatch": true,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "evidenceWarrant",
+              "relevanceBurden",
+              "representationalCharity"
+            ],
+            "diagnosticScores": {
+              "candidate1": 87,
+              "candidate2": 87
+            },
+            "diagnosticMoveDelta": 0,
+            "diagnosticTrigger": false,
+            "exposedScoringFieldKeys": [
+              "evidenceWarrant",
+              "relevanceBurden",
+              "representationalCharity"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": {
+              "candidate1": {
+                "class": "diagnostic-defeat",
+                "decisiveTargetIds": [
+                  "pro-actual-infinite-absurdity"
+                ],
+                "contactedComponents": 1,
+                "totalComponents": 1,
+                "decisiveComponents": 1,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": true,
+                "replacementDemandAnswered": false
+              },
+              "candidate2": {
+                "class": "diagnostic-defeat",
+                "decisiveTargetIds": [
+                  "pro-actual-infinite-absurdity"
+                ],
+                "contactedComponents": 1,
+                "totalComponents": 1,
+                "decisiveComponents": 1,
+                "issueBearingContraryMaterial": false,
+                "diagnosticConsequenceExplicit": true,
+                "replacementDemandAnswered": false
+              }
+            },
+            "charityState": null,
+            "scoringFields": {
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 85
+                },
+                "candidate2": {
+                  "value": 78
+                },
+                "absoluteDelta": 7
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 73
+                },
+                "candidate2": {
+                  "value": 87
+                },
+                "absoluteDelta": 14
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 86
+                },
+                "candidate2": {
+                  "value": 80
+                },
+                "absoluteDelta": 6
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 4,
+          "moveId": "pro-successive-addition",
+          "sectionId": "section-successive-addition",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "sourceSpan": {
+            "startEvent": 1546,
+            "endEvent": 1565,
+            "startMs": 3385640,
+            "endMs": 3443440,
+            "excerpt": "An actually infinite collection of things, if it were created by God, he'd have to create it all at once... even God couldn't create it by simply adding one book at a time because I think it's impossible for an actual infinite to be formed by successive addition... whether one begins at a point and tries to reach infinity... or one never begins but counts down from infinity to ending at the present."
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "precisionClarity"
+            ],
+            "diagnosticScores": {
+              "candidate1": 75,
+              "candidate2": 71
+            },
+            "diagnosticMoveDelta": 4,
+            "diagnosticTrigger": false,
+            "exposedScoringFieldKeys": [
+              "precisionClarity"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "precisionClarity": {
+                "candidate1": {
+                  "value": 95,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "candidate2": {
+                  "value": 75,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "missing"
+                  }
+                },
+                "absoluteDelta": 20
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 5,
+          "moveId": "con-countdown-asymmetry",
+          "sectionId": "section-successive-addition",
+          "side": "con",
+          "speaker": "Alex Malpass",
+          "sourceSpan": {
+            "startEvent": 1600,
+            "endEvent": 1647,
+            "startMs": 3513280,
+            "endMs": 3604960,
+            "excerpt": "He's explicitly appealing to the symmetry between the two things... But I think that all of those arguments... there's a logical gap between the two... I can't get to the end of the endless, but the countdown I can get to the end of the beginningless... the beginningless thing has an end... the symmetry principle there doesn't really work."
+          },
+          "triggers": {
+            "responseTupleMismatch": true,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "relevanceBurden"
+            ],
+            "diagnosticScores": {
+              "candidate1": 89,
+              "candidate2": 89
+            },
+            "diagnosticMoveDelta": 0,
+            "diagnosticTrigger": false,
+            "exposedScoringFieldKeys": [
+              "relevanceBurden"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": {
+              "candidate1": {
+                "class": "diagnostic-defeat",
+                "decisiveTargetIds": [
+                  "pro-successive-addition"
+                ],
+                "contactedComponents": 1,
+                "totalComponents": 1,
+                "decisiveComponents": 1,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": true,
+                "replacementDemandAnswered": false
+              },
+              "candidate2": {
+                "class": "diagnostic-defeat",
+                "decisiveTargetIds": [
+                  "pro-successive-addition"
+                ],
+                "contactedComponents": 1,
+                "totalComponents": 1,
+                "decisiveComponents": 1,
+                "issueBearingContraryMaterial": false,
+                "diagnosticConsequenceExplicit": true,
+                "replacementDemandAnswered": false
+              }
+            },
+            "charityState": null,
+            "scoringFields": {
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 74
+                },
+                "candidate2": {
+                  "value": 89
+                },
+                "absoluteDelta": 15
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 6,
+          "moveId": "con-small-cause",
+          "sectionId": "section-causal-power",
+          "side": "con",
+          "speaker": "Alex Malpass",
+          "sourceSpan": {
+            "startEvent": 2145,
+            "endEvent": 2180,
+            "startMs": 4627160,
+            "endMs": 4701440,
+            "excerpt": "I can imagine the situations where something of not very much power kicks off something that goes on to be quite powerful... an AI that can create... a version of itself that's a bit more clever... until you get to a point of something that's superintelligent... Like a kind of avalanche that's kicked off by something small can result in a big effect."
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "evidenceWarrant",
+              "representationalCharity"
+            ],
+            "diagnosticScores": {
+              "candidate1": 78,
+              "candidate2": 76
+            },
+            "diagnosticMoveDelta": 2,
+            "diagnosticTrigger": false,
+            "exposedScoringFieldKeys": [
+              "evidenceWarrant",
+              "representationalCharity"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 74
+                },
+                "candidate2": {
+                  "value": 65
+                },
+                "absoluteDelta": 9
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 69
+                },
+                "candidate2": {
+                  "value": 62
+                },
+                "absoluteDelta": 7
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 7,
+          "moveId": "pro-enormous-power",
+          "sectionId": "section-causal-power",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "sourceSpan": {
+            "startEvent": 2187,
+            "endEvent": 2212,
+            "startMs": 4710560,
+            "endMs": 4776600,
+            "excerpt": "I don't claim that you can show that the creator of the universe is omnipotent or supremely powerful. The word I use is enormously powerful. And the reason for that is because it brings a universe into being out of nothing... this series of demiurges or intermediate causes cannot be infinite in the past. Has to lead back to a first being that is the absolute creator of everything else that follows."
+          },
+          "triggers": {
+            "responseTupleMismatch": true,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "representationalCharity",
+              "precisionClarity"
+            ],
+            "diagnosticScores": {
+              "candidate1": 84,
+              "candidate2": 76
+            },
+            "diagnosticMoveDelta": 8,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "representationalCharity",
+              "precisionClarity"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": {
+              "candidate1": {
+                "class": "full-answer",
+                "decisiveTargetIds": [
+                  "con-small-cause"
+                ],
+                "contactedComponents": 2,
+                "totalComponents": 2,
+                "decisiveComponents": 1,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              },
+              "candidate2": {
+                "class": "full-answer",
+                "decisiveTargetIds": [
+                  "con-small-cause"
+                ],
+                "contactedComponents": 2,
+                "totalComponents": 2,
+                "decisiveComponents": 2,
+                "issueBearingContraryMaterial": false,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              }
+            },
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 84
+                },
+                "candidate2": {
+                  "value": 74
+                },
+                "absoluteDelta": 10
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 76
+                },
+                "candidate2": {
+                  "value": 60
+                },
+                "absoluteDelta": 16
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 88
+                },
+                "candidate2": {
+                  "value": 86
+                },
+                "absoluteDelta": 2
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 84
+                },
+                "candidate2": {
+                  "value": 86
+                },
+                "absoluteDelta": 2
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 91
+                },
+                "candidate2": {
+                  "value": 72
+                },
+                "absoluteDelta": 19
+              },
+              "precisionClarity": {
+                "candidate1": {
+                  "value": 95,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "candidate2": {
+                  "value": 75,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "partly-unstable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "absoluteDelta": 20
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 8,
+          "moveId": "con-impersonal-indeterminism",
+          "sectionId": "section-personal-cause",
+          "side": "con",
+          "speaker": "Alex Malpass",
+          "sourceSpan": {
+            "startEvent": 2290,
+            "endEvent": 2344,
+            "startMs": 4952240,
+            "endMs": 5066680,
+            "excerpt": "If it's impersonal, then there's some kind of mechanism... if the necessary and sufficient conditions... were present already for eternity... Why not think that it would have done it... infinite time ago?... But I wonder why can't we just describe it in terms of a kind of indeterministic causation?... It just happened to snap at that point and that's the beginning of time. Why does it have to be personal?"
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "evidenceWarrant"
+            ],
+            "diagnosticScores": {
+              "candidate1": 87,
+              "candidate2": 84
+            },
+            "diagnosticMoveDelta": 3,
+            "diagnosticTrigger": false,
+            "exposedScoringFieldKeys": [
+              "evidenceWarrant"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 78
+                },
+                "candidate2": {
+                  "value": 71
+                },
+                "absoluteDelta": 7
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 9,
+          "moveId": "pro-personal-explanation",
+          "sectionId": "section-personal-cause",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "sourceSpan": {
+            "startEvent": 2354,
+            "endEvent": 2372,
+            "startMs": 5086240,
+            "endMs": 5138960,
+            "excerpt": "That sort of impersonal indeterministic causation of the universe... We're talking about a non-physical state of affairs and therefore, I think the appropriate category would be a personal explanation because appeal to things like quantum indeterminacy... isn't going to get you the origin of the universe just 13.8 billion years ago... it will either happen from eternity or not at all."
+          },
+          "triggers": {
+            "responseTupleMismatch": true,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "representationalCharity"
+            ],
+            "diagnosticScores": {
+              "candidate1": 72,
+              "candidate2": 65
+            },
+            "diagnosticMoveDelta": 7,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "representationalCharity"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": {
+              "candidate1": {
+                "class": "partial-answer",
+                "decisiveTargetIds": [
+                  "con-impersonal-indeterminism"
+                ],
+                "contactedComponents": 1,
+                "totalComponents": 2,
+                "decisiveComponents": 1,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              },
+              "candidate2": {
+                "class": "partial-answer",
+                "decisiveTargetIds": [
+                  "con-impersonal-indeterminism"
+                ],
+                "contactedComponents": 2,
+                "totalComponents": 3,
+                "decisiveComponents": 3,
+                "issueBearingContraryMaterial": false,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              }
+            },
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 72
+                },
+                "candidate2": {
+                  "value": 61
+                },
+                "absoluteDelta": 11
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 63
+                },
+                "candidate2": {
+                  "value": 50
+                },
+                "absoluteDelta": 13
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 72
+                },
+                "candidate2": {
+                  "value": 68
+                },
+                "absoluteDelta": 4
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 67
+                },
+                "candidate2": {
+                  "value": 58
+                },
+                "absoluteDelta": 9
+              }
+            }
+          }
+        }
+      ],
+      "burdenAdjustmentDisputes": [
+        {
+          "side": "pro",
+          "candidate1SemanticTuple": {
+            "value": 0,
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [],
+              "relatedMoveIds": [],
+              "alreadyCapturedBy": [
+                "importance values",
+                "move ratings",
+                "response links",
+                "section weights"
+              ]
+            }
+          },
+          "candidate2SemanticTuple": {
+            "value": 0,
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [],
+              "relatedMoveIds": [
+                "pro-actual-infinite-absurdity",
+                "pro-causal-principle",
+                "pro-enormous-power",
+                "pro-personal-explanation",
+                "pro-successive-addition"
+              ],
+              "alreadyCapturedBy": [
+                "burden contacts",
+                "locked section weights",
+                "move ratings",
+                "response links"
+              ]
+            }
+          },
+          "candidate1FullRecord": {
+            "value": 0,
+            "rationale": "No distinct debate-wide consequence remains outside the selected move ratings, response links, importance judgments, and section weights.",
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [],
+              "completionCriterion": "No uncaptured consequence independently changes the pro route's success criterion.",
+              "relatedMoveIds": [],
+              "distinctConsequence": "None beyond consequences already represented in the move ledger.",
+              "alreadyCapturedBy": [
+                "move ratings",
+                "response links",
+                "importance values",
+                "section weights"
+              ],
+              "counterfactual": "Removing the adjustment would not omit any independently established debate-wide consequence."
+            }
+          },
+          "candidate2FullRecord": {
+            "value": 0,
+            "rationale": "No distinct debate-wide pro consequence survives duplicate exclusion beyond the locked move ratings, response links, bridge contacts, and section structure.",
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [],
+              "completionCriterion": "No separate pro completion criterion is altered outside the scored inventory.",
+              "relatedMoveIds": [
+                "pro-causal-principle",
+                "pro-actual-infinite-absurdity",
+                "pro-successive-addition",
+                "pro-enormous-power",
+                "pro-personal-explanation"
+              ],
+              "distinctConsequence": "No eligible distinct consequence remains after duplicate-exclusion review.",
+              "alreadyCapturedBy": [
+                "move ratings",
+                "response links",
+                "burden contacts",
+                "locked section weights"
+              ],
+              "counterfactual": "Removing any alleged residual consequence would not change pro burden completion independently of fields already scored."
+            }
+          }
+        },
+        {
+          "side": "con",
+          "candidate1SemanticTuple": {
+            "value": 0,
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [],
+              "relatedMoveIds": [],
+              "alreadyCapturedBy": [
+                "importance values",
+                "move ratings",
+                "response links",
+                "section weights"
+              ]
+            }
+          },
+          "candidate2SemanticTuple": {
+            "value": 0,
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [],
+              "relatedMoveIds": [
+                "con-countdown-asymmetry",
+                "con-impersonal-indeterminism",
+                "con-pickwickish-beginnings",
+                "con-small-cause",
+                "con-strange-not-impossible"
+              ],
+              "alreadyCapturedBy": [
+                "burden contacts",
+                "locked section weights",
+                "move ratings",
+                "response links"
+              ]
+            }
+          },
+          "candidate1FullRecord": {
+            "value": 0,
+            "rationale": "No distinct debate-wide consequence remains outside the selected move ratings, response links, importance judgments, and section weights.",
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [],
+              "completionCriterion": "No uncaptured consequence independently changes the con route's success criterion.",
+              "relatedMoveIds": [],
+              "distinctConsequence": "None beyond consequences already represented in the move ledger.",
+              "alreadyCapturedBy": [
+                "move ratings",
+                "response links",
+                "importance values",
+                "section weights"
+              ],
+              "counterfactual": "Removing the adjustment would not omit any independently established debate-wide consequence."
+            }
+          },
+          "candidate2FullRecord": {
+            "value": 0,
+            "rationale": "No distinct debate-wide con consequence survives duplicate exclusion beyond the locked move ratings, response links, bridge contacts, and section structure.",
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [],
+              "completionCriterion": "No separate con completion criterion is altered outside the scored inventory.",
+              "relatedMoveIds": [
+                "con-pickwickish-beginnings",
+                "con-strange-not-impossible",
+                "con-countdown-asymmetry",
+                "con-small-cause",
+                "con-impersonal-indeterminism"
+              ],
+              "distinctConsequence": "No eligible distinct consequence remains after duplicate-exclusion review.",
+              "alreadyCapturedBy": [
+                "move ratings",
+                "response links",
+                "burden contacts",
+                "locked section weights"
+              ],
+              "counterfactual": "Removing any alleged residual consequence would not change con burden completion independently of fields already scored."
+            }
+          }
+        }
+      ],
+      "nondisputedScalarMerges": [
+        {
+          "moveId": "pro-causal-principle",
+          "ratingKey": "logicalCoherence",
+          "candidate1": 78,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 78
+        },
+        {
+          "moveId": "pro-causal-principle",
+          "ratingKey": "evidenceWarrant",
+          "candidate1": 61,
+          "candidate2": 56,
+          "roundedMeanAfterAdjudication": 59
+        },
+        {
+          "moveId": "pro-causal-principle",
+          "ratingKey": "responsiveness",
+          "candidate1": 78,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "moveId": "pro-causal-principle",
+          "ratingKey": "relevanceBurden",
+          "candidate1": 86,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "moveId": "con-pickwickish-beginnings",
+          "ratingKey": "evidenceWarrant",
+          "candidate1": 82,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "moveId": "con-pickwickish-beginnings",
+          "ratingKey": "responsiveness",
+          "candidate1": 76,
+          "candidate2": 75,
+          "roundedMeanAfterAdjudication": 76
+        },
+        {
+          "moveId": "con-pickwickish-beginnings",
+          "ratingKey": "representationalCharity",
+          "candidate1": 84,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "moveId": "con-strange-not-impossible",
+          "ratingKey": "logicalCoherence",
+          "candidate1": 90,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 89
+        },
+        {
+          "moveId": "con-strange-not-impossible",
+          "ratingKey": "responsiveness",
+          "candidate1": 91,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 90
+        },
+        {
+          "moveId": "pro-successive-addition",
+          "ratingKey": "logicalCoherence",
+          "candidate1": 74,
+          "candidate2": 71,
+          "roundedMeanAfterAdjudication": 73
+        },
+        {
+          "moveId": "pro-successive-addition",
+          "ratingKey": "evidenceWarrant",
+          "candidate1": 65,
+          "candidate2": 60,
+          "roundedMeanAfterAdjudication": 63
+        },
+        {
+          "moveId": "pro-successive-addition",
+          "ratingKey": "responsiveness",
+          "candidate1": 81,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "moveId": "pro-successive-addition",
+          "ratingKey": "relevanceBurden",
+          "candidate1": 72,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 73
+        },
+        {
+          "moveId": "con-countdown-asymmetry",
+          "ratingKey": "logicalCoherence",
+          "candidate1": 94,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 92
+        },
+        {
+          "moveId": "con-countdown-asymmetry",
+          "ratingKey": "evidenceWarrant",
+          "candidate1": 88,
+          "candidate2": 85,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "moveId": "con-countdown-asymmetry",
+          "ratingKey": "responsiveness",
+          "candidate1": 93,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 92
+        },
+        {
+          "moveId": "con-countdown-asymmetry",
+          "ratingKey": "representationalCharity",
+          "candidate1": 86,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "moveId": "con-small-cause",
+          "ratingKey": "logicalCoherence",
+          "candidate1": 80,
+          "candidate2": 79,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "moveId": "con-small-cause",
+          "ratingKey": "relevanceBurden",
+          "candidate1": 78,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "moveId": "con-impersonal-indeterminism",
+          "ratingKey": "logicalCoherence",
+          "candidate1": 88,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "moveId": "con-impersonal-indeterminism",
+          "ratingKey": "responsiveness",
+          "candidate1": 84,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "moveId": "con-impersonal-indeterminism",
+          "ratingKey": "relevanceBurden",
+          "candidate1": 89,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 89
+        }
+      ]
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "motion": "Is belief in an all-powerful, all-loving God rational given alleged gratuitous evil, salvation confusion, rationality, design, and morality?",
+      "sourcePacketPath": "docs/calibration/v4.1.5/lean-retired-gate/packets/debate-103.json",
+      "passBPacketPath": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/packets/debate-103.json",
+      "primaryPath": "docs/calibration/v4.1.5/lean-retired-gate/primary-outputs/debate-103.json",
+      "primarySha256": "5910344a5d819fba137940c81a16434d627f5959f893ef7537289f6deb891869",
+      "passBPath": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/outputs/debate-103.json",
+      "passBSha256": "ae9965bb0b08e87a4b809300f595118422f0606a1f817e48c5a57724ff7e542e",
+      "moveCount": 14,
+      "disputedMoveCount": 14,
+      "responseTupleDisputeCount": 6,
+      "charityStateDisputeCount": 0,
+      "scoringFieldDisputeCount": 79,
+      "diagnosticTriggerMoveCount": 12,
+      "burdenAdjustmentDisputeCount": 2,
+      "nondisputedUnequalRawScalarCount": 4,
+      "moveDisputes": [
+        {
+          "moveIndex": 0,
+          "moveId": "pro-evil-parity",
+          "sectionId": "section-evil",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "sourceSpan": {
+            "startEvent": 138,
+            "endEvent": 234,
+            "startMs": 290919,
+            "endMs": 518560,
+            "excerpt": "gratuitous evil ... does not serve any greater purpose ... mere possibility doesn't imply high probability ... this is a parity of the irrationality of Abrahamic theism"
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "evidenceWarrant",
+              "representationalCharity",
+              "epistemicCalibration"
+            ],
+            "diagnosticScores": {
+              "candidate1": 87,
+              "candidate2": 83
+            },
+            "diagnosticMoveDelta": 4,
+            "diagnosticTrigger": false,
+            "exposedScoringFieldKeys": [
+              "evidenceWarrant",
+              "representationalCharity",
+              "epistemicCalibration"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 82
+                },
+                "candidate2": {
+                  "value": 72
+                },
+                "absoluteDelta": 10
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 86
+                },
+                "candidate2": {
+                  "value": 72
+                },
+                "absoluteDelta": 14
+              },
+              "epistemicCalibration": {
+                "candidate1": {
+                  "value": 75,
+                  "closedFindings": {
+                    "assertedForce": "strong-probability",
+                    "warrantFit": "slightly-overstated",
+                    "qualificationStatus": "explicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "candidate2": {
+                  "value": 60,
+                  "closedFindings": {
+                    "assertedForce": "strong-probability",
+                    "warrantFit": "materially-overstated",
+                    "qualificationStatus": "missing",
+                    "uncertaintyAcknowledged": "no"
+                  }
+                },
+                "absoluteDelta": 15
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 1,
+          "moveId": "pro-salvation-confusion",
+          "sectionId": "section-revelation",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "sourceSpan": {
+            "startEvent": 235,
+            "endEvent": 283,
+            "startMs": 515680,
+            "endMs": 638560,
+            "excerpt": "most Christians let alone Muslims and Jews can't even agree on what's necessary for salvation ... those of us ... who cannot see the hoop ... be eternally punished"
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "representationalCharity",
+              "precisionClarity",
+              "epistemicCalibration"
+            ],
+            "diagnosticScores": {
+              "candidate1": 83,
+              "candidate2": 74
+            },
+            "diagnosticMoveDelta": 9,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "representationalCharity",
+              "precisionClarity",
+              "epistemicCalibration"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 85
+                },
+                "candidate2": {
+                  "value": 76
+                },
+                "absoluteDelta": 9
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 72
+                },
+                "candidate2": {
+                  "value": 61
+                },
+                "absoluteDelta": 11
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 85
+                },
+                "candidate2": {
+                  "value": 82
+                },
+                "absoluteDelta": 3
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 87
+                },
+                "candidate2": {
+                  "value": 86
+                },
+                "absoluteDelta": 1
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 81
+                },
+                "candidate2": {
+                  "value": 66
+                },
+                "absoluteDelta": 15
+              },
+              "precisionClarity": {
+                "candidate1": {
+                  "value": 95,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "candidate2": {
+                  "value": 75,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "partly-unstable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "absoluteDelta": 20
+              },
+              "epistemicCalibration": {
+                "candidate1": {
+                  "value": 75,
+                  "closedFindings": {
+                    "assertedForce": "strong-probability",
+                    "warrantFit": "slightly-overstated",
+                    "qualificationStatus": "explicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "candidate2": {
+                  "value": 60,
+                  "closedFindings": {
+                    "assertedForce": "certainty",
+                    "warrantFit": "materially-overstated",
+                    "qualificationStatus": "missing",
+                    "uncertaintyAcknowledged": "no"
+                  }
+                },
+                "absoluteDelta": 15
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 2,
+          "moveId": "con-reason-constructive",
+          "sectionId": "section-reason",
+          "side": "con",
+          "speaker": "Simon Edwards",
+          "sourceSpan": {
+            "startEvent": 328,
+            "endEvent": 391,
+            "startMs": 735920,
+            "endMs": 891160,
+            "excerpt": "natural selection does not directly select for True beliefs but rather for advantageous behaviors ... if God exists there is an intelligent Creator ... our minds being rational"
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "responsiveness",
+              "precisionClarity"
+            ],
+            "diagnosticScores": {
+              "candidate1": 74,
+              "candidate2": 67
+            },
+            "diagnosticMoveDelta": 7,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "representationalCharity",
+              "precisionClarity"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 70
+                },
+                "candidate2": {
+                  "value": 61
+                },
+                "absoluteDelta": 9
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 63
+                },
+                "candidate2": {
+                  "value": 60
+                },
+                "absoluteDelta": 3
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 84
+                },
+                "candidate2": {
+                  "value": 75
+                },
+                "absoluteDelta": 9
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 88
+                },
+                "candidate2": {
+                  "value": 86
+                },
+                "absoluteDelta": 2
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 62
+                },
+                "candidate2": {
+                  "value": 58
+                },
+                "absoluteDelta": 4
+              },
+              "precisionClarity": {
+                "candidate1": {
+                  "value": 75,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "partly-unstable",
+                    "scopeStability": "partly-unstable",
+                    "qualificationExplicitness": "implicit"
+                  }
+                },
+                "candidate2": {
+                  "value": 60,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "partly-unstable",
+                    "scopeStability": "materially-unstable",
+                    "qualificationExplicitness": "missing"
+                  }
+                },
+                "absoluteDelta": 15
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 3,
+          "moveId": "con-design-constructive",
+          "sectionId": "section-design",
+          "side": "con",
+          "speaker": "Simon Edwards",
+          "sourceSpan": {
+            "startEvent": 392,
+            "endEvent": 428,
+            "startMs": 888639,
+            "endMs": 971000,
+            "excerpt": "the Discovery by physicists that our universe is finely tuned for life ... for all practical intents and purposes impossible ... a super intellect has monkeyed with the physics"
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "epistemicCalibration"
+            ],
+            "diagnosticScores": {
+              "candidate1": 75,
+              "candidate2": 64
+            },
+            "diagnosticMoveDelta": 11,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "representationalCharity",
+              "epistemicCalibration"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 76
+                },
+                "candidate2": {
+                  "value": 58
+                },
+                "absoluteDelta": 18
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 64
+                },
+                "candidate2": {
+                  "value": 50
+                },
+                "absoluteDelta": 14
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 84
+                },
+                "candidate2": {
+                  "value": 72
+                },
+                "absoluteDelta": 12
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 61
+                },
+                "candidate2": {
+                  "value": 60
+                },
+                "absoluteDelta": 1
+              },
+              "epistemicCalibration": {
+                "candidate1": {
+                  "value": 60,
+                  "closedFindings": {
+                    "assertedForce": "strong-probability",
+                    "warrantFit": "materially-overstated",
+                    "qualificationStatus": "missing",
+                    "uncertaintyAcknowledged": "no"
+                  }
+                },
+                "candidate2": {
+                  "value": 35,
+                  "closedFindings": {
+                    "assertedForce": "certainty",
+                    "warrantFit": "radically-overstated",
+                    "qualificationStatus": "missing",
+                    "uncertaintyAcknowledged": "no"
+                  }
+                },
+                "absoluteDelta": 25
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 4,
+          "moveId": "con-moral-constructive",
+          "sectionId": "section-morality",
+          "side": "con",
+          "speaker": "Simon Edwards",
+          "sourceSpan": {
+            "startEvent": 431,
+            "endEvent": 462,
+            "startMs": 972360,
+            "endMs": 1056880,
+            "excerpt": "some things such as bullying or racism or sexual abuse are objectively wrong ... the existence of this objective moral law points us to the existence of God"
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "precisionClarity",
+              "epistemicCalibration"
+            ],
+            "diagnosticScores": {
+              "candidate1": 80,
+              "candidate2": 67
+            },
+            "diagnosticMoveDelta": 13,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "representationalCharity",
+              "precisionClarity",
+              "epistemicCalibration"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 80
+                },
+                "candidate2": {
+                  "value": 62
+                },
+                "absoluteDelta": 18
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 72
+                },
+                "candidate2": {
+                  "value": 55
+                },
+                "absoluteDelta": 17
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 86
+                },
+                "candidate2": {
+                  "value": 73
+                },
+                "absoluteDelta": 13
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 87
+                },
+                "candidate2": {
+                  "value": 85
+                },
+                "absoluteDelta": 2
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 66
+                },
+                "candidate2": {
+                  "value": 62
+                },
+                "absoluteDelta": 4
+              },
+              "precisionClarity": {
+                "candidate1": {
+                  "value": 85,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "implicit"
+                  }
+                },
+                "candidate2": {
+                  "value": 75,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "partly-unstable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "missing"
+                  }
+                },
+                "absoluteDelta": 10
+              },
+              "epistemicCalibration": {
+                "candidate1": {
+                  "value": 75,
+                  "closedFindings": {
+                    "assertedForce": "strong-probability",
+                    "warrantFit": "slightly-overstated",
+                    "qualificationStatus": "implicit",
+                    "uncertaintyAcknowledged": "no"
+                  }
+                },
+                "candidate2": {
+                  "value": 60,
+                  "closedFindings": {
+                    "assertedForce": "strong-probability",
+                    "warrantFit": "materially-overstated",
+                    "qualificationStatus": "missing",
+                    "uncertaintyAcknowledged": "no"
+                  }
+                },
+                "absoluteDelta": 15
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 5,
+          "moveId": "pro-reason-reply",
+          "sectionId": "section-reason",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "sourceSpan": {
+            "startEvent": 503,
+            "endEvent": 568,
+            "startMs": 1139120,
+            "endMs": 1296960,
+            "excerpt": "that's not an argument in favor of theism ... most atheists don't actually affirm naturalism ... evolution ... is going to select the things that are broadly true"
+          },
+          "triggers": {
+            "responseTupleMismatch": true,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "evidenceWarrant",
+              "precisionClarity"
+            ],
+            "diagnosticScores": {
+              "candidate1": 87,
+              "candidate2": 81
+            },
+            "diagnosticMoveDelta": 6,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "representationalCharity",
+              "precisionClarity"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": {
+              "candidate1": {
+                "class": "full-answer",
+                "decisiveTargetIds": [
+                  "con-reason-constructive"
+                ],
+                "contactedComponents": 2,
+                "totalComponents": 2,
+                "decisiveComponents": 2,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              },
+              "candidate2": {
+                "class": "full-answer",
+                "decisiveTargetIds": [
+                  "con-reason-constructive"
+                ],
+                "contactedComponents": 4,
+                "totalComponents": 4,
+                "decisiveComponents": 2,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              }
+            },
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 87
+                },
+                "candidate2": {
+                  "value": 82
+                },
+                "absoluteDelta": 5
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 78
+                },
+                "candidate2": {
+                  "value": 70
+                },
+                "absoluteDelta": 8
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 90
+                },
+                "candidate2": {
+                  "value": 85
+                },
+                "absoluteDelta": 5
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 88
+                },
+                "candidate2": {
+                  "value": 87
+                },
+                "absoluteDelta": 1
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 86
+                },
+                "candidate2": {
+                  "value": 84
+                },
+                "absoluteDelta": 2
+              },
+              "precisionClarity": {
+                "candidate1": {
+                  "value": 95,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "candidate2": {
+                  "value": 75,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "partly-unstable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "absoluteDelta": 20
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 6,
+          "moveId": "con-evil-response",
+          "sectionId": "section-evil",
+          "side": "con",
+          "speaker": "Simon Edwards",
+          "sourceSpan": {
+            "startEvent": 695,
+            "endEvent": 792,
+            "startMs": 1588720,
+            "endMs": 1812120,
+            "excerpt": "the evidence of suffering and evil ... is probably the strongest counterevidence ... but I don't think it's a defeater ... free will defense Soul making theodicy"
+          },
+          "triggers": {
+            "responseTupleMismatch": true,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "epistemicCalibration"
+            ],
+            "diagnosticScores": {
+              "candidate1": 75,
+              "candidate2": 70
+            },
+            "diagnosticMoveDelta": 5,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "representationalCharity",
+              "epistemicCalibration"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": {
+              "candidate1": {
+                "class": "partial-answer",
+                "decisiveTargetIds": [
+                  "pro-evil-parity"
+                ],
+                "contactedComponents": 1,
+                "totalComponents": 2,
+                "decisiveComponents": 2,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              },
+              "candidate2": {
+                "class": "partial-answer",
+                "decisiveTargetIds": [
+                  "pro-evil-parity"
+                ],
+                "contactedComponents": 1,
+                "totalComponents": 3,
+                "decisiveComponents": 2,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              }
+            },
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 76
+                },
+                "candidate2": {
+                  "value": 66
+                },
+                "absoluteDelta": 10
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 67
+                },
+                "candidate2": {
+                  "value": 60
+                },
+                "absoluteDelta": 7
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 67
+                },
+                "candidate2": {
+                  "value": 63
+                },
+                "absoluteDelta": 4
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 86
+                },
+                "candidate2": {
+                  "value": 87
+                },
+                "absoluteDelta": 1
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 88
+                },
+                "candidate2": {
+                  "value": 86
+                },
+                "absoluteDelta": 2
+              },
+              "epistemicCalibration": {
+                "candidate1": {
+                  "value": 95,
+                  "closedFindings": {
+                    "assertedForce": "plausibility",
+                    "warrantFit": "matched",
+                    "qualificationStatus": "explicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "candidate2": {
+                  "value": 75,
+                  "closedFindings": {
+                    "assertedForce": "plausibility",
+                    "warrantFit": "slightly-overstated",
+                    "qualificationStatus": "explicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "absoluteDelta": 20
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 7,
+          "moveId": "pro-moral-evolution",
+          "sectionId": "section-morality",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "sourceSpan": {
+            "startEvent": 893,
+            "endEvent": 930,
+            "startMs": 2040840,
+            "endMs": 2124760,
+            "excerpt": "under a theist or an atheistic view evolution provides a very simple explanation for the moral feelings that we have ... explains why there's so much moral disagreement"
+          },
+          "triggers": {
+            "responseTupleMismatch": true,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "precisionClarity",
+              "epistemicCalibration"
+            ],
+            "diagnosticScores": {
+              "candidate1": 82,
+              "candidate2": 72
+            },
+            "diagnosticMoveDelta": 10,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "representationalCharity",
+              "precisionClarity",
+              "epistemicCalibration"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": {
+              "candidate1": {
+                "class": "partial-answer",
+                "decisiveTargetIds": [
+                  "con-moral-constructive"
+                ],
+                "contactedComponents": 1,
+                "totalComponents": 2,
+                "decisiveComponents": 2,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              },
+              "candidate2": {
+                "class": "partial-answer",
+                "decisiveTargetIds": [
+                  "con-moral-constructive"
+                ],
+                "contactedComponents": 1,
+                "totalComponents": 3,
+                "decisiveComponents": 2,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              }
+            },
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 86
+                },
+                "candidate2": {
+                  "value": 73
+                },
+                "absoluteDelta": 13
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 77
+                },
+                "candidate2": {
+                  "value": 65
+                },
+                "absoluteDelta": 12
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 71
+                },
+                "candidate2": {
+                  "value": 64
+                },
+                "absoluteDelta": 7
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 84
+                },
+                "candidate2": {
+                  "value": 82
+                },
+                "absoluteDelta": 2
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 85
+                },
+                "candidate2": {
+                  "value": 80
+                },
+                "absoluteDelta": 5
+              },
+              "precisionClarity": {
+                "candidate1": {
+                  "value": 95,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "candidate2": {
+                  "value": 75,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "partly-unstable",
+                    "qualificationExplicitness": "implicit"
+                  }
+                },
+                "absoluteDelta": 20
+              },
+              "epistemicCalibration": {
+                "candidate1": {
+                  "value": 95,
+                  "closedFindings": {
+                    "assertedForce": "probability",
+                    "warrantFit": "matched",
+                    "qualificationStatus": "explicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "candidate2": {
+                  "value": 75,
+                  "closedFindings": {
+                    "assertedForce": "plausibility",
+                    "warrantFit": "slightly-overstated",
+                    "qualificationStatus": "implicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "absoluteDelta": 20
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 8,
+          "moveId": "con-euthyphro-answer",
+          "sectionId": "section-morality",
+          "side": "con",
+          "speaker": "Simon Edwards",
+          "sourceSpan": {
+            "startEvent": 1080,
+            "endEvent": 1113,
+            "startMs": 2463200,
+            "endMs": 2540200,
+            "excerpt": "the answer to the Euthyphro dilemma ... God commands what he does not because it is good but because he is the good ... ultimately sourced in the person of God"
+          },
+          "triggers": {
+            "responseTupleMismatch": true,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "representationalCharity",
+              "precisionClarity",
+              "epistemicCalibration"
+            ],
+            "diagnosticScores": {
+              "candidate1": 80,
+              "candidate2": 67
+            },
+            "diagnosticMoveDelta": 13,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "representationalCharity",
+              "precisionClarity",
+              "epistemicCalibration"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": {
+              "candidate1": {
+                "class": "full-answer",
+                "decisiveTargetIds": [
+                  "pro-moral-evolution"
+                ],
+                "contactedComponents": 1,
+                "totalComponents": 1,
+                "decisiveComponents": 1,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              },
+              "candidate2": {
+                "class": "relevant-nonanswer",
+                "decisiveTargetIds": [
+                  "pro-moral-evolution"
+                ],
+                "contactedComponents": 0,
+                "totalComponents": 2,
+                "decisiveComponents": 1,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              }
+            },
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 82
+                },
+                "candidate2": {
+                  "value": 70
+                },
+                "absoluteDelta": 12
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 69
+                },
+                "candidate2": {
+                  "value": 56
+                },
+                "absoluteDelta": 13
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 83
+                },
+                "candidate2": {
+                  "value": 50
+                },
+                "absoluteDelta": 33
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 84
+                },
+                "candidate2": {
+                  "value": 90
+                },
+                "absoluteDelta": 6
+              },
+              "precisionClarity": {
+                "candidate1": {
+                  "value": 85,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "implicit"
+                  }
+                },
+                "candidate2": {
+                  "value": 75,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "partly-unstable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "implicit"
+                  }
+                },
+                "absoluteDelta": 10
+              },
+              "epistemicCalibration": {
+                "candidate1": {
+                  "value": 75,
+                  "closedFindings": {
+                    "assertedForce": "probability",
+                    "warrantFit": "slightly-overstated",
+                    "qualificationStatus": "implicit",
+                    "uncertaintyAcknowledged": "no"
+                  }
+                },
+                "candidate2": {
+                  "value": 60,
+                  "closedFindings": {
+                    "assertedForce": "strong-probability",
+                    "warrantFit": "materially-overstated",
+                    "qualificationStatus": "implicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "absoluteDelta": 15
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 9,
+          "moveId": "pro-euthyphro-rejoinder",
+          "sectionId": "section-morality",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "sourceSpan": {
+            "startEvent": 1114,
+            "endEvent": 1130,
+            "startMs": 2537680,
+            "endMs": 2582160,
+            "excerpt": "it's just kicking the can down the road ... is God good because what he aligns with is some goodness ... or is he good because he defines what good is"
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "representationalCharity",
+              "epistemicCalibration"
+            ],
+            "diagnosticScores": {
+              "candidate1": 87,
+              "candidate2": 76
+            },
+            "diagnosticMoveDelta": 11,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "representationalCharity",
+              "epistemicCalibration"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 88
+                },
+                "candidate2": {
+                  "value": 69
+                },
+                "absoluteDelta": 19
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 80
+                },
+                "candidate2": {
+                  "value": 60
+                },
+                "absoluteDelta": 20
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 90
+                },
+                "candidate2": {
+                  "value": 84
+                },
+                "absoluteDelta": 6
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 88
+                },
+                "candidate2": {
+                  "value": 77
+                },
+                "absoluteDelta": 11
+              },
+              "epistemicCalibration": {
+                "candidate1": {
+                  "value": 75,
+                  "closedFindings": {
+                    "assertedForce": "necessity",
+                    "warrantFit": "slightly-overstated",
+                    "qualificationStatus": "implicit",
+                    "uncertaintyAcknowledged": "no"
+                  }
+                },
+                "candidate2": {
+                  "value": 60,
+                  "closedFindings": {
+                    "assertedForce": "certainty",
+                    "warrantFit": "materially-overstated",
+                    "qualificationStatus": "missing",
+                    "uncertaintyAcknowledged": "no"
+                  }
+                },
+                "absoluteDelta": 15
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 10,
+          "moveId": "con-scripture-genre",
+          "sectionId": "section-revelation",
+          "side": "con",
+          "speaker": "Simon Edwards",
+          "sourceSpan": {
+            "startEvent": 1190,
+            "endEvent": 1208,
+            "startMs": 2709040,
+            "endMs": 2755200,
+            "excerpt": "it's a collection of different books and some books are clearly historical records ... some books are poetry ... they were stories, parables"
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "evidenceWarrant",
+              "responsiveness"
+            ],
+            "diagnosticScores": {
+              "candidate1": 82,
+              "candidate2": 78
+            },
+            "diagnosticMoveDelta": 4,
+            "diagnosticTrigger": false,
+            "exposedScoringFieldKeys": [
+              "evidenceWarrant",
+              "responsiveness"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 76
+                },
+                "candidate2": {
+                  "value": 68
+                },
+                "absoluteDelta": 8
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 83
+                },
+                "candidate2": {
+                  "value": 75
+                },
+                "absoluteDelta": 8
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 11,
+          "moveId": "pro-revelation-reply",
+          "sectionId": "section-revelation",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "sourceSpan": {
+            "startEvent": 1209,
+            "endEvent": 1233,
+            "startMs": 2752440,
+            "endMs": 2810400,
+            "excerpt": "some of the stories in the Bible are true but plenty of them are not ... it's a mistake to think that because he existed he resurrected ... born and bred to take it seriously"
+          },
+          "triggers": {
+            "responseTupleMismatch": true,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "representationalCharity",
+              "precisionClarity",
+              "epistemicCalibration"
+            ],
+            "diagnosticScores": {
+              "candidate1": 79,
+              "candidate2": 70
+            },
+            "diagnosticMoveDelta": 9,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "representationalCharity",
+              "precisionClarity",
+              "epistemicCalibration"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": {
+              "candidate1": {
+                "class": "partial-answer",
+                "decisiveTargetIds": [
+                  "con-scripture-genre"
+                ],
+                "contactedComponents": 1,
+                "totalComponents": 2,
+                "decisiveComponents": 1,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              },
+              "candidate2": {
+                "class": "relevant-nonanswer",
+                "decisiveTargetIds": [
+                  "con-scripture-genre"
+                ],
+                "contactedComponents": 0,
+                "totalComponents": 2,
+                "decisiveComponents": 1,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              }
+            },
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 86
+                },
+                "candidate2": {
+                  "value": 78
+                },
+                "absoluteDelta": 8
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 70
+                },
+                "candidate2": {
+                  "value": 61
+                },
+                "absoluteDelta": 9
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 74
+                },
+                "candidate2": {
+                  "value": 55
+                },
+                "absoluteDelta": 19
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 72
+                },
+                "candidate2": {
+                  "value": 83
+                },
+                "absoluteDelta": 11
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 88
+                },
+                "candidate2": {
+                  "value": 82
+                },
+                "absoluteDelta": 6
+              },
+              "precisionClarity": {
+                "candidate1": {
+                  "value": 95,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "candidate2": {
+                  "value": 75,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "partly-unstable",
+                    "qualificationExplicitness": "implicit"
+                  }
+                },
+                "absoluteDelta": 20
+              },
+              "epistemicCalibration": {
+                "candidate1": {
+                  "value": 75,
+                  "closedFindings": {
+                    "assertedForce": "probability",
+                    "warrantFit": "slightly-overstated",
+                    "qualificationStatus": "explicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "candidate2": {
+                  "value": 60,
+                  "closedFindings": {
+                    "assertedForce": "strong-probability",
+                    "warrantFit": "materially-overstated",
+                    "qualificationStatus": "missing",
+                    "uncertaintyAcknowledged": "no"
+                  }
+                },
+                "absoluteDelta": 15
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 12,
+          "moveId": "con-purpose-guidance",
+          "sectionId": "section-revelation",
+          "side": "con",
+          "speaker": "Simon Edwards",
+          "sourceSpan": {
+            "startEvent": 1241,
+            "endEvent": 1268,
+            "startMs": 2827760,
+            "endMs": 2895720,
+            "excerpt": "we're here on purpose because somebody God wanted us to be here ... hugely open to the idea that God could have used mechanisms of natural selection ... guided Evolution"
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "representationalCharity",
+              "epistemicCalibration"
+            ],
+            "diagnosticScores": {
+              "candidate1": 74,
+              "candidate2": 63
+            },
+            "diagnosticMoveDelta": 11,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "representationalCharity",
+              "epistemicCalibration"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 80
+                },
+                "candidate2": {
+                  "value": 62
+                },
+                "absoluteDelta": 18
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 60
+                },
+                "candidate2": {
+                  "value": 52
+                },
+                "absoluteDelta": 8
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 78
+                },
+                "candidate2": {
+                  "value": 66
+                },
+                "absoluteDelta": 12
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 82
+                },
+                "candidate2": {
+                  "value": 65
+                },
+                "absoluteDelta": 17
+              },
+              "epistemicCalibration": {
+                "candidate1": {
+                  "value": 75,
+                  "closedFindings": {
+                    "assertedForce": "probability",
+                    "warrantFit": "slightly-overstated",
+                    "qualificationStatus": "explicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "candidate2": {
+                  "value": 60,
+                  "closedFindings": {
+                    "assertedForce": "probability",
+                    "warrantFit": "materially-overstated",
+                    "qualificationStatus": "explicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "absoluteDelta": 15
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 13,
+          "moveId": "pro-design-natural-explanation",
+          "sectionId": "section-design",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "sourceSpan": {
+            "startEvent": 1295,
+            "endEvent": 1314,
+            "startMs": 2945880,
+            "endMs": 2991839,
+            "excerpt": "before Evolution was put on the board ... it was very hard to look around the world ... Evolution has made it very clear that if God exists he chose to use Evolution"
+          },
+          "triggers": {
+            "responseTupleMismatch": true,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "evidenceWarrant",
+              "representationalCharity",
+              "precisionClarity",
+              "epistemicCalibration"
+            ],
+            "diagnosticScores": {
+              "candidate1": 74,
+              "candidate2": 68
+            },
+            "diagnosticMoveDelta": 6,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "representationalCharity",
+              "precisionClarity",
+              "epistemicCalibration"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": {
+              "candidate1": {
+                "class": "relevant-nonanswer",
+                "decisiveTargetIds": [
+                  "con-design-constructive"
+                ],
+                "contactedComponents": 0,
+                "totalComponents": 1,
+                "decisiveComponents": 1,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              },
+              "candidate2": {
+                "class": "relevant-nonanswer",
+                "decisiveTargetIds": [
+                  "con-design-constructive"
+                ],
+                "contactedComponents": 0,
+                "totalComponents": 2,
+                "decisiveComponents": 1,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              }
+            },
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 81
+                },
+                "candidate2": {
+                  "value": 77
+                },
+                "absoluteDelta": 4
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 80
+                },
+                "candidate2": {
+                  "value": 64
+                },
+                "absoluteDelta": 16
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 54
+                },
+                "candidate2": {
+                  "value": 52
+                },
+                "absoluteDelta": 2
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 78
+                },
+                "candidate2": {
+                  "value": 82
+                },
+                "absoluteDelta": 4
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 70
+                },
+                "candidate2": {
+                  "value": 85
+                },
+                "absoluteDelta": 15
+              },
+              "precisionClarity": {
+                "candidate1": {
+                  "value": 75,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "partly-unstable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "candidate2": {
+                  "value": 60,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "materially-unstable",
+                    "qualificationExplicitness": "missing"
+                  }
+                },
+                "absoluteDelta": 15
+              },
+              "epistemicCalibration": {
+                "candidate1": {
+                  "value": 75,
+                  "closedFindings": {
+                    "assertedForce": "strong-probability",
+                    "warrantFit": "slightly-overstated",
+                    "qualificationStatus": "explicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "candidate2": {
+                  "value": 60,
+                  "closedFindings": {
+                    "assertedForce": "strong-probability",
+                    "warrantFit": "materially-overstated",
+                    "qualificationStatus": "missing",
+                    "uncertaintyAcknowledged": "no"
+                  }
+                },
+                "absoluteDelta": 15
+              }
+            }
+          }
+        }
+      ],
+      "burdenAdjustmentDisputes": [
+        {
+          "side": "pro",
+          "candidate1SemanticTuple": {
+            "value": 0,
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [
+                "route-pro"
+              ],
+              "relatedMoveIds": [
+                "pro-euthyphro-rejoinder",
+                "pro-evil-parity",
+                "pro-moral-evolution",
+                "pro-reason-reply",
+                "pro-salvation-confusion"
+              ],
+              "alreadyCapturedBy": [
+                "importance values",
+                "move ratings",
+                "response links",
+                "route coverage",
+                "section weights"
+              ]
+            }
+          },
+          "candidate2SemanticTuple": {
+            "value": 0,
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [
+                "route-pro"
+              ],
+              "relatedMoveIds": [
+                "pro-design-natural-explanation",
+                "pro-euthyphro-rejoinder",
+                "pro-evil-parity",
+                "pro-moral-evolution",
+                "pro-reason-reply",
+                "pro-revelation-reply",
+                "pro-salvation-confusion"
+              ],
+              "alreadyCapturedBy": [
+                "importance values",
+                "locked route coverage",
+                "move ratings",
+                "response links",
+                "section weights"
+              ]
+            }
+          },
+          "candidate1FullRecord": {
+            "value": 0,
+            "rationale": "No distinct debate-wide consequence remains eligible after the selected moves, response links, ratings, importance judgments, and section weights are considered.",
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [
+                "route-pro"
+              ],
+              "completionCriterion": "Show that unresolved evil, natural alternatives, morality, or revelation confusion materially undermines rational belief in the specified God.",
+              "relatedMoveIds": [
+                "pro-evil-parity",
+                "pro-reason-reply",
+                "pro-moral-evolution",
+                "pro-euthyphro-rejoinder",
+                "pro-salvation-confusion"
+              ],
+              "distinctConsequence": "No additional consequence distinct from the scored route and response record was identified.",
+              "alreadyCapturedBy": [
+                "move ratings",
+                "response links",
+                "importance values",
+                "section weights",
+                "route coverage"
+              ],
+              "counterfactual": "Removing the allegedly additional consequence would not change burden completion independently of the existing scored moves."
+            }
+          },
+          "candidate2FullRecord": {
+            "value": 0,
+            "rationale": "No distinct debate-wide pro consequence survives duplicate-exclusion; the evil, revelation, natural-explanation, and morality consequences are already represented in locked moves, ratings, responses, importance, and weights.",
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [
+                "route-pro"
+              ],
+              "completionCriterion": "One or more undefeated considerations must make belief in the specified God materially less rational than withholding belief.",
+              "relatedMoveIds": [
+                "pro-evil-parity",
+                "pro-salvation-confusion",
+                "pro-reason-reply",
+                "pro-moral-evolution",
+                "pro-euthyphro-rejoinder",
+                "pro-revelation-reply",
+                "pro-design-natural-explanation"
+              ],
+              "distinctConsequence": "No additional pro-side consequence remains distinct from the locked move and response ledger.",
+              "alreadyCapturedBy": [
+                "move ratings",
+                "response links",
+                "importance values",
+                "section weights",
+                "locked route coverage"
+              ],
+              "counterfactual": "Without the existing move-level treatment, an otherwise uncaptured route-wide failure could affect completion, but no such uncaptured failure is present."
+            }
+          }
+        },
+        {
+          "side": "con",
+          "candidate1SemanticTuple": {
+            "value": 0,
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [
+                "route-con"
+              ],
+              "relatedMoveIds": [
+                "con-design-constructive",
+                "con-euthyphro-answer",
+                "con-evil-response",
+                "con-moral-constructive",
+                "con-reason-constructive"
+              ],
+              "alreadyCapturedBy": [
+                "importance values",
+                "move ratings",
+                "response links",
+                "route coverage",
+                "section weights"
+              ]
+            }
+          },
+          "candidate2SemanticTuple": {
+            "value": 0,
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [
+                "route-con"
+              ],
+              "relatedMoveIds": [
+                "con-design-constructive",
+                "con-euthyphro-answer",
+                "con-evil-response",
+                "con-moral-constructive",
+                "con-purpose-guidance",
+                "con-reason-constructive",
+                "con-scripture-genre"
+              ],
+              "alreadyCapturedBy": [
+                "importance values",
+                "locked route coverage",
+                "move ratings",
+                "response links",
+                "section weights"
+              ]
+            }
+          },
+          "candidate1FullRecord": {
+            "value": 0,
+            "rationale": "No distinct debate-wide consequence remains eligible after the selected moves, response links, ratings, importance judgments, and section weights are considered.",
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [
+                "route-con"
+              ],
+              "completionCriterion": "Show that the cumulative explanations from reason, design, morality, purpose, and responses to evil make theistic belief rational.",
+              "relatedMoveIds": [
+                "con-reason-constructive",
+                "con-design-constructive",
+                "con-moral-constructive",
+                "con-euthyphro-answer",
+                "con-evil-response"
+              ],
+              "distinctConsequence": "No additional consequence distinct from the scored route and response record was identified.",
+              "alreadyCapturedBy": [
+                "move ratings",
+                "response links",
+                "importance values",
+                "section weights",
+                "route coverage"
+              ],
+              "counterfactual": "Removing the allegedly additional consequence would not change burden completion independently of the existing scored moves."
+            }
+          },
+          "candidate2FullRecord": {
+            "value": 0,
+            "rationale": "No distinct debate-wide con consequence survives duplicate-exclusion; the cumulative reason, design, morality, evil-response, guidance, and revelation consequences are already captured in the locked ledger.",
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [
+                "route-con"
+              ],
+              "completionCriterion": "The cumulative theistic explanation must remain reasonably warranted after objections without resolving every suffering or scriptural question.",
+              "relatedMoveIds": [
+                "con-reason-constructive",
+                "con-design-constructive",
+                "con-moral-constructive",
+                "con-evil-response",
+                "con-euthyphro-answer",
+                "con-scripture-genre",
+                "con-purpose-guidance"
+              ],
+              "distinctConsequence": "No additional con-side consequence remains distinct from the locked move and response ledger.",
+              "alreadyCapturedBy": [
+                "move ratings",
+                "response links",
+                "importance values",
+                "section weights",
+                "locked route coverage"
+              ],
+              "counterfactual": "Without the existing move-level treatment, an otherwise uncaptured cumulative-case consequence could affect completion, but none remains outside the ledger."
+            }
+          }
+        }
+      ],
+      "nondisputedScalarMerges": [
+        {
+          "moveId": "pro-evil-parity",
+          "ratingKey": "logicalCoherence",
+          "candidate1": 88,
+          "candidate2": 85,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "moveId": "pro-evil-parity",
+          "ratingKey": "responsiveness",
+          "candidate1": 91,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 90
+        },
+        {
+          "moveId": "con-scripture-genre",
+          "ratingKey": "logicalCoherence",
+          "candidate1": 86,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        },
+        {
+          "moveId": "con-scripture-genre",
+          "ratingKey": "relevanceBurden",
+          "candidate1": 72,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 71
+        }
+      ]
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "motion": "Does the evidence from cosmology, fine-tuning, morality, Jesus' resurrection, and religious experience make Christian theism more reasonable than skeptical atheism?",
+      "sourcePacketPath": "docs/calibration/v4.1.5/lean-retired-gate/packets/debate-161.json",
+      "passBPacketPath": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/packets/debate-161.json",
+      "primaryPath": "docs/calibration/v4.1.5/lean-retired-gate/primary-outputs/debate-161.json",
+      "primarySha256": "c9fffb2c5e5c1c37662481f39db468dfd878ff952c72db523ebde9ab56e8b21b",
+      "passBPath": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/outputs/debate-161.json",
+      "passBSha256": "d00fcbb1a04397e22fea9bbd6481d1a948944b31c8772494677eefdde369d0fa",
+      "moveCount": 10,
+      "disputedMoveCount": 10,
+      "responseTupleDisputeCount": 3,
+      "charityStateDisputeCount": 2,
+      "scoringFieldDisputeCount": 42,
+      "diagnosticTriggerMoveCount": 6,
+      "burdenAdjustmentDisputeCount": 2,
+      "nondisputedUnequalRawScalarCount": 13,
+      "moveDisputes": [
+        {
+          "moveIndex": 0,
+          "moveId": "pro-cosmology-opening",
+          "sectionId": "section-cosmology",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "sourceSpan": {
+            "startEvent": 155,
+            "endEvent": 251,
+            "startMs": 464110,
+            "endMs": 762339,
+            "excerpt": "past events must be finite in number; therefore the universe began to exist and has a transcendent cause"
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": true,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "representationalCharity",
+              "epistemicCalibration"
+            ],
+            "diagnosticScores": {
+              "candidate1": 80,
+              "candidate2": 74
+            },
+            "diagnosticMoveDelta": 6,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "representationalCharity",
+              "epistemicCalibration"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": {
+              "candidate1": {
+                "charity": {
+                  "tested": false,
+                  "alternative": "",
+                  "decisiveQualification": ""
+                },
+                "representationalCharity": 75
+              },
+              "candidate2": {
+                "charity": {
+                  "tested": true,
+                  "alternative": "A past-eternal or physically prior cosmology may evade an absolute beginning, and a nonphysical cause need not be either an abstract object or a mind.",
+                  "decisiveQualification": "The strongest alternative accepts present cosmological evidence while denying that it establishes a global beginning or exhausts the possible kinds of cause."
+                },
+                "representationalCharity": 61
+              }
+            },
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 79
+                },
+                "candidate2": {
+                  "value": 72
+                },
+                "absoluteDelta": 7
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 76
+                },
+                "candidate2": {
+                  "value": 64
+                },
+                "absoluteDelta": 12
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 82
+                },
+                "candidate2": {
+                  "value": 84
+                },
+                "absoluteDelta": 2
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 88
+                },
+                "candidate2": {
+                  "value": 87
+                },
+                "absoluteDelta": 1
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 75
+                },
+                "candidate2": {
+                  "value": 61
+                },
+                "absoluteDelta": 14
+              },
+              "epistemicCalibration": {
+                "candidate1": {
+                  "value": 75,
+                  "closedFindings": {
+                    "assertedForce": "strong-probability",
+                    "warrantFit": "slightly-overstated",
+                    "qualificationStatus": "implicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "candidate2": {
+                  "value": 60,
+                  "closedFindings": {
+                    "assertedForce": "necessity",
+                    "warrantFit": "materially-overstated",
+                    "qualificationStatus": "missing",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "absoluteDelta": 15
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 1,
+          "moveId": "pro-finetuning-opening",
+          "sectionId": "section-finetuning",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "sourceSpan": {
+            "startEvent": 286,
+            "endEvent": 321,
+            "startMs": 856150,
+            "endMs": 966970,
+            "excerpt": "there are only three possible explanations of this extraordinary fine-tuning: physical necessity, chance, or design"
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": true,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "representationalCharity"
+            ],
+            "diagnosticScores": {
+              "candidate1": 77,
+              "candidate2": 72
+            },
+            "diagnosticMoveDelta": 5,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "representationalCharity"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": {
+              "candidate1": {
+                "charity": {
+                  "tested": false,
+                  "alternative": "",
+                  "decisiveQualification": ""
+                },
+                "representationalCharity": 75
+              },
+              "candidate2": {
+                "charity": {
+                  "tested": true,
+                  "alternative": "Chance may operate through observer selection or multiple universes, while apparent parameter freedom may be reduced by deeper physical laws not yet known.",
+                  "decisiveQualification": "The strongest nondesign alternative does not treat the constants as a single unconditioned random draw from a known uniform probability distribution."
+                },
+                "representationalCharity": 58
+              }
+            },
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 78
+                },
+                "candidate2": {
+                  "value": 69
+                },
+                "absoluteDelta": 9
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 68
+                },
+                "candidate2": {
+                  "value": 61
+                },
+                "absoluteDelta": 7
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 82
+                },
+                "candidate2": {
+                  "value": 83
+                },
+                "absoluteDelta": 1
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 88
+                },
+                "candidate2": {
+                  "value": 86
+                },
+                "absoluteDelta": 2
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 75
+                },
+                "candidate2": {
+                  "value": 58
+                },
+                "absoluteDelta": 17
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 2,
+          "moveId": "pro-morality-opening",
+          "sectionId": "section-morality",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "sourceSpan": {
+            "startEvent": 322,
+            "endEvent": 400,
+            "startMs": 964150,
+            "endMs": 1204350,
+            "excerpt": "if God did not exist objective moral values and duties would not exist; objective moral values and duties do exist"
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "representationalCharity"
+            ],
+            "diagnosticScores": {
+              "candidate1": 76,
+              "candidate2": 71
+            },
+            "diagnosticMoveDelta": 5,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "representationalCharity"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 76
+                },
+                "candidate2": {
+                  "value": 66
+                },
+                "absoluteDelta": 10
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 70
+                },
+                "candidate2": {
+                  "value": 59
+                },
+                "absoluteDelta": 11
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 83
+                },
+                "candidate2": {
+                  "value": 82
+                },
+                "absoluteDelta": 1
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 87
+                },
+                "candidate2": {
+                  "value": 85
+                },
+                "absoluteDelta": 2
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 64
+                },
+                "candidate2": {
+                  "value": 54
+                },
+                "absoluteDelta": 10
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 3,
+          "moveId": "pro-resurrection-opening",
+          "sectionId": "section-resurrection",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "sourceSpan": {
+            "startEvent": 426,
+            "endEvent": 470,
+            "startMs": 1274160,
+            "endMs": 1398710,
+            "excerpt": "there are actually three facts recognized by the majority of historians today which I believe are best explained by the resurrection"
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence"
+            ],
+            "diagnosticScores": {
+              "candidate1": 77,
+              "candidate2": 74
+            },
+            "diagnosticMoveDelta": 3,
+            "diagnosticTrigger": false,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 79
+                },
+                "candidate2": {
+                  "value": 73
+                },
+                "absoluteDelta": 6
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 4,
+          "moveId": "pro-experience-opening",
+          "sectionId": "section-experience-hiddenness",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "sourceSpan": {
+            "startEvent": 471,
+            "endEvent": 505,
+            "startMs": 1395649,
+            "endMs": 1496940,
+            "excerpt": "you can know that God exists wholly apart from arguments simply by immediately experiencing him"
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant"
+            ],
+            "diagnosticScores": {
+              "candidate1": 69,
+              "candidate2": 66
+            },
+            "diagnosticMoveDelta": 3,
+            "diagnosticTrigger": false,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 69
+                },
+                "candidate2": {
+                  "value": 63
+                },
+                "absoluteDelta": 6
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 58
+                },
+                "candidate2": {
+                  "value": 51
+                },
+                "absoluteDelta": 7
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 5,
+          "moveId": "con-experience-hiddenness-reply",
+          "sectionId": "section-experience-hiddenness",
+          "side": "con",
+          "speaker": "Peter Millican",
+          "sourceSpan": {
+            "startEvent": 663,
+            "endEvent": 707,
+            "startMs": 1922310,
+            "endMs": 2036270,
+            "excerpt": "if some method of acquiring beliefs leads to lots of different and conflicting beliefs, then that method cannot be relied on"
+          },
+          "triggers": {
+            "responseTupleMismatch": true,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "representationalCharity",
+              "precisionClarity",
+              "epistemicCalibration"
+            ],
+            "diagnosticScores": {
+              "candidate1": 85,
+              "candidate2": 67
+            },
+            "diagnosticMoveDelta": 18,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "representationalCharity",
+              "precisionClarity",
+              "epistemicCalibration"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": {
+              "candidate1": {
+                "class": "full-answer",
+                "decisiveTargetIds": [
+                  "pro-experience-opening"
+                ],
+                "contactedComponents": 2,
+                "totalComponents": 2,
+                "decisiveComponents": 2,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              },
+              "candidate2": {
+                "class": "partial-answer",
+                "decisiveTargetIds": [
+                  "pro-experience-opening"
+                ],
+                "contactedComponents": 1,
+                "totalComponents": 2,
+                "decisiveComponents": 2,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              }
+            },
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 86
+                },
+                "candidate2": {
+                  "value": 68
+                },
+                "absoluteDelta": 18
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 80
+                },
+                "candidate2": {
+                  "value": 63
+                },
+                "absoluteDelta": 17
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 88
+                },
+                "candidate2": {
+                  "value": 73
+                },
+                "absoluteDelta": 15
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 73
+                },
+                "candidate2": {
+                  "value": 70
+                },
+                "absoluteDelta": 3
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 86
+                },
+                "candidate2": {
+                  "value": 64
+                },
+                "absoluteDelta": 22
+              },
+              "precisionClarity": {
+                "candidate1": {
+                  "value": 95,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "candidate2": {
+                  "value": 60,
+                  "closedFindings": {
+                    "propositionRecoverability": "partial",
+                    "termStability": "materially-unstable",
+                    "scopeStability": "materially-unstable",
+                    "qualificationExplicitness": "materially-misleading"
+                  }
+                },
+                "absoluteDelta": 35
+              },
+              "epistemicCalibration": {
+                "candidate1": {
+                  "value": 95,
+                  "closedFindings": {
+                    "assertedForce": "probability",
+                    "warrantFit": "matched",
+                    "qualificationStatus": "explicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "candidate2": {
+                  "value": 60,
+                  "closedFindings": {
+                    "assertedForce": "certainty",
+                    "warrantFit": "materially-overstated",
+                    "qualificationStatus": "missing",
+                    "uncertaintyAcknowledged": "no"
+                  }
+                },
+                "absoluteDelta": 35
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 6,
+          "moveId": "con-cosmology-reply",
+          "sectionId": "section-cosmology",
+          "side": "con",
+          "speaker": "Peter Millican",
+          "sourceSpan": {
+            "startEvent": 775,
+            "endEvent": 973,
+            "startMs": 2199420,
+            "endMs": 2690690,
+            "excerpt": "I cannot infer from my own experience that creation from nothing is causal in the same way; the theorem proves less than Bill needs"
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "precisionClarity",
+              "epistemicCalibration"
+            ],
+            "diagnosticScores": {
+              "candidate1": 88,
+              "candidate2": 82
+            },
+            "diagnosticMoveDelta": 6,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "representationalCharity",
+              "precisionClarity",
+              "epistemicCalibration"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 86
+                },
+                "candidate2": {
+                  "value": 79
+                },
+                "absoluteDelta": 7
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 81
+                },
+                "candidate2": {
+                  "value": 75
+                },
+                "absoluteDelta": 6
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 91
+                },
+                "candidate2": {
+                  "value": 92
+                },
+                "absoluteDelta": 1
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 87
+                },
+                "candidate2": {
+                  "value": 88
+                },
+                "absoluteDelta": 1
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 88
+                },
+                "candidate2": {
+                  "value": 86
+                },
+                "absoluteDelta": 2
+              },
+              "precisionClarity": {
+                "candidate1": {
+                  "value": 95,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "candidate2": {
+                  "value": 75,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "partly-unstable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "absoluteDelta": 20
+              },
+              "epistemicCalibration": {
+                "candidate1": {
+                  "value": 95,
+                  "closedFindings": {
+                    "assertedForce": "probability",
+                    "warrantFit": "matched",
+                    "qualificationStatus": "explicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "candidate2": {
+                  "value": 75,
+                  "closedFindings": {
+                    "assertedForce": "strong-probability",
+                    "warrantFit": "slightly-overstated",
+                    "qualificationStatus": "explicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "absoluteDelta": 20
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 7,
+          "moveId": "con-finetuning-reply",
+          "sectionId": "section-finetuning",
+          "side": "con",
+          "speaker": "Peter Millican",
+          "sourceSpan": {
+            "startEvent": 1359,
+            "endEvent": 1545,
+            "startMs": 3695080,
+            "endMs": 4173630,
+            "excerpt": "a physically inexplicable coincidence would invite a cosmic designer, but I also see good reason for caution and modesty"
+          },
+          "triggers": {
+            "responseTupleMismatch": false,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "epistemicCalibration"
+            ],
+            "diagnosticScores": {
+              "candidate1": 89,
+              "candidate2": 85
+            },
+            "diagnosticMoveDelta": 4,
+            "diagnosticTrigger": false,
+            "exposedScoringFieldKeys": [
+              "epistemicCalibration"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": null,
+            "charityState": null,
+            "scoringFields": {
+              "epistemicCalibration": {
+                "candidate1": {
+                  "value": 95,
+                  "closedFindings": {
+                    "assertedForce": "probability",
+                    "warrantFit": "matched",
+                    "qualificationStatus": "explicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "candidate2": {
+                  "value": 75,
+                  "closedFindings": {
+                    "assertedForce": "probability",
+                    "warrantFit": "slightly-overstated",
+                    "qualificationStatus": "explicit",
+                    "uncertaintyAcknowledged": "yes"
+                  }
+                },
+                "absoluteDelta": 20
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 8,
+          "moveId": "con-morality-reply",
+          "sectionId": "section-morality",
+          "side": "con",
+          "speaker": "Peter Millican",
+          "sourceSpan": {
+            "startEvent": 1928,
+            "endEvent": 2010,
+            "startMs": 5127920,
+            "endMs": 5357770,
+            "excerpt": "56.3 percent were moral realists but only 14.6 percent were theists, so there are plenty of moral realists who are not theists"
+          },
+          "triggers": {
+            "responseTupleMismatch": true,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "responsiveness"
+            ],
+            "diagnosticScores": {
+              "candidate1": 79,
+              "candidate2": 79
+            },
+            "diagnosticMoveDelta": 0,
+            "diagnosticTrigger": false,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "responsiveness"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": {
+              "candidate1": {
+                "class": "partial-answer",
+                "decisiveTargetIds": [
+                  "pro-morality-opening"
+                ],
+                "contactedComponents": 1,
+                "totalComponents": 2,
+                "decisiveComponents": 1,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              },
+              "candidate2": {
+                "class": "full-answer",
+                "decisiveTargetIds": [
+                  "pro-morality-opening"
+                ],
+                "contactedComponents": 3,
+                "totalComponents": 3,
+                "decisiveComponents": 2,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              }
+            },
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 81
+                },
+                "candidate2": {
+                  "value": 75
+                },
+                "absoluteDelta": 6
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 74
+                },
+                "candidate2": {
+                  "value": 85
+                },
+                "absoluteDelta": 11
+              }
+            }
+          }
+        },
+        {
+          "moveIndex": 9,
+          "moveId": "con-resurrection-reply",
+          "sectionId": "section-resurrection",
+          "side": "con",
+          "speaker": "Peter Millican",
+          "sourceSpan": {
+            "startEvent": 2056,
+            "endEvent": 2110,
+            "startMs": 5467880,
+            "endMs": 5613240,
+            "excerpt": "four accounts all written many years after the alleged events, not by eyewitnesses but by devoted Christians"
+          },
+          "triggers": {
+            "responseTupleMismatch": true,
+            "charityStateMismatch": false,
+            "materialScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "representationalCharity",
+              "precisionClarity"
+            ],
+            "diagnosticScores": {
+              "candidate1": 85,
+              "candidate2": 76
+            },
+            "diagnosticMoveDelta": 9,
+            "diagnosticTrigger": true,
+            "exposedScoringFieldKeys": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "representationalCharity",
+              "precisionClarity"
+            ]
+          },
+          "disputedFields": {
+            "responseTuple": {
+              "candidate1": {
+                "class": "full-answer",
+                "decisiveTargetIds": [
+                  "pro-resurrection-opening"
+                ],
+                "contactedComponents": 2,
+                "totalComponents": 2,
+                "decisiveComponents": 2,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              },
+              "candidate2": {
+                "class": "partial-answer",
+                "decisiveTargetIds": [
+                  "pro-resurrection-opening"
+                ],
+                "contactedComponents": 1,
+                "totalComponents": 2,
+                "decisiveComponents": 2,
+                "issueBearingContraryMaterial": true,
+                "diagnosticConsequenceExplicit": false,
+                "replacementDemandAnswered": false
+              }
+            },
+            "charityState": null,
+            "scoringFields": {
+              "logicalCoherence": {
+                "candidate1": {
+                  "value": 84
+                },
+                "candidate2": {
+                  "value": 76
+                },
+                "absoluteDelta": 8
+              },
+              "evidenceWarrant": {
+                "candidate1": {
+                  "value": 78
+                },
+                "candidate2": {
+                  "value": 72
+                },
+                "absoluteDelta": 6
+              },
+              "responsiveness": {
+                "candidate1": {
+                  "value": 88
+                },
+                "candidate2": {
+                  "value": 77
+                },
+                "absoluteDelta": 11
+              },
+              "relevanceBurden": {
+                "candidate1": {
+                  "value": 87
+                },
+                "candidate2": {
+                  "value": 84
+                },
+                "absoluteDelta": 3
+              },
+              "representationalCharity": {
+                "candidate1": {
+                  "value": 82
+                },
+                "candidate2": {
+                  "value": 60
+                },
+                "absoluteDelta": 22
+              },
+              "precisionClarity": {
+                "candidate1": {
+                  "value": 95,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "stable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "candidate2": {
+                  "value": 75,
+                  "closedFindings": {
+                    "propositionRecoverability": "complete",
+                    "termStability": "stable",
+                    "scopeStability": "partly-unstable",
+                    "qualificationExplicitness": "explicit"
+                  }
+                },
+                "absoluteDelta": 20
+              }
+            }
+          }
+        }
+      ],
+      "burdenAdjustmentDisputes": [
+        {
+          "side": "pro",
+          "candidate1SemanticTuple": {
+            "value": 0,
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [],
+              "relatedMoveIds": [
+                "pro-cosmology-opening",
+                "pro-experience-opening",
+                "pro-finetuning-opening",
+                "pro-morality-opening",
+                "pro-resurrection-opening"
+              ],
+              "alreadyCapturedBy": [
+                "importance values",
+                "move ratings",
+                "response links",
+                "section weights"
+              ]
+            }
+          },
+          "candidate2SemanticTuple": {
+            "value": 0,
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [],
+              "relatedMoveIds": [
+                "pro-cosmology-opening",
+                "pro-experience-opening",
+                "pro-finetuning-opening",
+                "pro-morality-opening",
+                "pro-resurrection-opening"
+              ],
+              "alreadyCapturedBy": [
+                "pro-cosmology-opening",
+                "pro-experience-opening",
+                "pro-finetuning-opening",
+                "pro-morality-opening",
+                "pro-resurrection-opening"
+              ]
+            }
+          },
+          "candidate1FullRecord": {
+            "value": 0,
+            "rationale": "No distinct debate-wide consequence remains outside the selected move ratings, response links, importance assignments, and section weights.",
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [],
+              "completionCriterion": "Establish the cumulative pro route to Christian theism.",
+              "relatedMoveIds": [
+                "pro-cosmology-opening",
+                "pro-finetuning-opening",
+                "pro-morality-opening",
+                "pro-resurrection-opening",
+                "pro-experience-opening"
+              ],
+              "distinctConsequence": "No unscored consequence distinct from the five represented evidential routes was identified.",
+              "alreadyCapturedBy": [
+                "move ratings",
+                "response links",
+                "importance values",
+                "section weights"
+              ],
+              "counterfactual": "Removing the adjustment leaves every identified pro success criterion evaluated by the selected ledger."
+            }
+          },
+          "candidate2FullRecord": {
+            "value": 0,
+            "rationale": "No distinct debate-wide consequence changes a named pro success criterion without duplicating the locked move ratings, response findings, importance values, or section weights.",
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [],
+              "completionCriterion": "No separate pro route-completion criterion remains eligible beyond the five locked evidence families.",
+              "relatedMoveIds": [
+                "pro-cosmology-opening",
+                "pro-finetuning-opening",
+                "pro-morality-opening",
+                "pro-resurrection-opening",
+                "pro-experience-opening"
+              ],
+              "distinctConsequence": "None; cumulative strengths and defects are already represented in the locked moves and their response relations.",
+              "alreadyCapturedBy": [
+                "pro-cosmology-opening",
+                "pro-finetuning-opening",
+                "pro-morality-opening",
+                "pro-resurrection-opening",
+                "pro-experience-opening"
+              ],
+              "counterfactual": "Absent the existing move-level and response capture, a genuinely separate route-wide consequence could qualify, but no such consequence is present."
+            }
+          }
+        },
+        {
+          "side": "con",
+          "candidate1SemanticTuple": {
+            "value": 0,
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [],
+              "relatedMoveIds": [
+                "con-cosmology-reply",
+                "con-experience-hiddenness-reply",
+                "con-finetuning-reply",
+                "con-morality-reply",
+                "con-resurrection-reply"
+              ],
+              "alreadyCapturedBy": [
+                "importance values",
+                "move ratings",
+                "response links",
+                "section weights"
+              ]
+            }
+          },
+          "candidate2SemanticTuple": {
+            "value": 0,
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [],
+              "relatedMoveIds": [
+                "con-cosmology-reply",
+                "con-experience-hiddenness-reply",
+                "con-finetuning-reply",
+                "con-morality-reply",
+                "con-resurrection-reply"
+              ],
+              "alreadyCapturedBy": [
+                "con-cosmology-reply",
+                "con-experience-hiddenness-reply",
+                "con-finetuning-reply",
+                "con-morality-reply",
+                "con-resurrection-reply"
+              ]
+            }
+          },
+          "candidate1FullRecord": {
+            "value": 0,
+            "rationale": "No distinct debate-wide consequence remains outside the selected attacks, surviving constructives, response structures, and weighted issue families.",
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [],
+              "completionCriterion": "Show that the evidence does not justify preferring Christian theism to skeptical atheism.",
+              "relatedMoveIds": [
+                "con-cosmology-reply",
+                "con-finetuning-reply",
+                "con-morality-reply",
+                "con-resurrection-reply",
+                "con-experience-hiddenness-reply"
+              ],
+              "distinctConsequence": "No separate unscored burden consequence survives the existing treatment of underdetermination, morality, history, diversity, and hiddenness.",
+              "alreadyCapturedBy": [
+                "move ratings",
+                "response links",
+                "importance values",
+                "section weights"
+              ],
+              "counterfactual": "Removing the adjustment leaves the con success criterion fully represented by the selected replies and their surviving objections."
+            }
+          },
+          "candidate2FullRecord": {
+            "value": 0,
+            "rationale": "No distinct debate-wide consequence changes a named con success criterion without duplicating the locked reply ratings, response findings, importance values, or section weights.",
+            "eligibility": {
+              "distinctDebateWideConsequence": false,
+              "affectsBurdenCompletion": false,
+              "notAlreadyScored": false,
+              "affectedBurdenIds": [],
+              "completionCriterion": "No separate con route-completion criterion remains eligible beyond the five locked skeptical issue families.",
+              "relatedMoveIds": [
+                "con-experience-hiddenness-reply",
+                "con-cosmology-reply",
+                "con-finetuning-reply",
+                "con-morality-reply",
+                "con-resurrection-reply"
+              ],
+              "distinctConsequence": "None; the underdetermination, design, moral, historical, diversity, and hiddenness consequences are already captured by locked judgments.",
+              "alreadyCapturedBy": [
+                "con-experience-hiddenness-reply",
+                "con-cosmology-reply",
+                "con-finetuning-reply",
+                "con-morality-reply",
+                "con-resurrection-reply"
+              ],
+              "counterfactual": "Absent the existing move-level and response capture, a genuinely separate skeptical route consequence could qualify, but none survives duplicate exclusion."
+            }
+          }
+        }
+      ],
+      "nondisputedScalarMerges": [
+        {
+          "moveId": "pro-resurrection-opening",
+          "ratingKey": "evidenceWarrant",
+          "candidate1": 68,
+          "candidate2": 66,
+          "roundedMeanAfterAdjudication": 67
+        },
+        {
+          "moveId": "pro-resurrection-opening",
+          "ratingKey": "responsiveness",
+          "candidate1": 82,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "moveId": "pro-resurrection-opening",
+          "ratingKey": "relevanceBurden",
+          "candidate1": 89,
+          "candidate2": 85,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "moveId": "pro-resurrection-opening",
+          "ratingKey": "representationalCharity",
+          "candidate1": 61,
+          "candidate2": 57,
+          "roundedMeanAfterAdjudication": 59
+        },
+        {
+          "moveId": "pro-experience-opening",
+          "ratingKey": "responsiveness",
+          "candidate1": 80,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "moveId": "pro-experience-opening",
+          "ratingKey": "relevanceBurden",
+          "candidate1": 68,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 69
+        },
+        {
+          "moveId": "con-finetuning-reply",
+          "ratingKey": "logicalCoherence",
+          "candidate1": 88,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "moveId": "con-finetuning-reply",
+          "ratingKey": "evidenceWarrant",
+          "candidate1": 82,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "moveId": "con-finetuning-reply",
+          "ratingKey": "responsiveness",
+          "candidate1": 92,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 92
+        },
+        {
+          "moveId": "con-finetuning-reply",
+          "ratingKey": "relevanceBurden",
+          "candidate1": 88,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 88
+        },
+        {
+          "moveId": "con-morality-reply",
+          "ratingKey": "evidenceWarrant",
+          "candidate1": 73,
+          "candidate2": 71,
+          "roundedMeanAfterAdjudication": 72
+        },
+        {
+          "moveId": "con-morality-reply",
+          "ratingKey": "relevanceBurden",
+          "candidate1": 86,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        },
+        {
+          "moveId": "con-morality-reply",
+          "ratingKey": "representationalCharity",
+          "candidate1": 88,
+          "candidate2": 90,
+          "roundedMeanAfterAdjudication": 89
+        }
+      ]
+    }
+  ]
+}
