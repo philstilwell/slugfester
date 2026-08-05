@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "4.1.2-bounded-schema-preflight-execution",
+  "protocolId": "v4.1.2-bounded-lean-risk-triggered-consensus",
+  "status": "failed",
+  "validSyntheticContexts": 0,
+  "attempts": 1,
+  "retries": 0,
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsd": 0,
+  "result": {
+    "model": "5.6 Sol",
+    "modelSlug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "attemptCount": 1,
+    "retryCount": 0,
+    "startedAt": "2026-08-05T04:29:45.911Z",
+    "completedAt": "2026-08-05T04:32:22.255Z",
+    "elapsedMs": 156343,
+    "timedOut": false,
+    "terminationSignal": null,
+    "commandExitCode": 0,
+    "subscriptionAuthenticated": true,
+    "apiKeysRemoved": true,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "stdoutSha256": "3689dfc43610ecf1929bf6500a5511bcbe734453e528efbb0cba242e1a9d6f3b",
+    "stderrSha256": "477eb42162ddc0b98984f3313d6d0be99149dd6d4e344be163bbe8b2acdf27c3",
+    "status": "output-validation-failed",
+    "outputWritten": true,
+    "outputSha256": "2abb1afbf9b6fb388dafc175a12473d998506a62e02476fd57ba197830fe58e5",
+    "deterministicValidationPassed": false,
+    "validationExitCode": 1,
+    "validationSummary": null,
+    "validationMessage": "file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69\n  if (!condition) throw new Error(message);\n                        ^\n\nError: moves[3]: partial answer must contact some but not all components\n    at assertV4 (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69:25)\n    at validateV4PrimaryOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:493:48)\n    at validateV41PrimaryOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v41-lean-production.mjs:139:22)\n    at file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/validate-v41-lean-primary-output.mjs:10:28\n\nNode.js v25.9.0"
+  },
+  "authorization": {
+    "retiredPrimaryPreparation": false,
+    "retiredPrimaryModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  }
+}
