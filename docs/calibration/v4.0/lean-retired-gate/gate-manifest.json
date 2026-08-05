@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "4.0-lean-retired-gate-manifest",
+  "protocolId": "v4.0-lean-risk-triggered-consensus",
+  "status": "deterministic-development-authorized",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "sample": [
+    { "debateNumber": "55", "debateId": "craig-malpass-kalam-nothing-2026" },
+    { "debateNumber": "103", "debateId": "woodford-edwards-rational-belief-god-2023" },
+    { "debateNumber": "161", "debateId": "craig-millican-does-god-exist-2011" }
+  ],
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0
+  },
+  "triggerPolicy": {
+    "frozenControlSampleRate": 0.1,
+    "winnerMarginMaximum": 5,
+    "bandBoundaryDistanceMaximum": 2,
+    "bandBoundaries": [25, 50, 65, 75, 85, 95],
+    "importanceThreeConfidenceBelowHigh": true,
+    "nonzeroBurdenAdjustment": true,
+    "semanticIntegrityWarning": true,
+    "unresolvedLoadBearingAttributionAfterAudio": true,
+    "targetEscalationRate": 0.15,
+    "operatingObjectiveFailureRate": 0.25
+  },
+  "scoreComparison": {
+    "sameWinnerRequired": "3/3",
+    "maximumAbsoluteSideScoreDelta": 5,
+    "modelContextAccess": false
+  },
+  "computeGate": {
+    "centralProjectionHoursMaximum": 52,
+    "conservativeProjectionHoursMaximum": 60
+  },
+  "cost": {
+    "meteredApiCostUsdMaximum": 0,
+    "newTranscriptionCostUsdMaximumWithoutSeparateApproval": 0
+  },
+  "authorization": {
+    "deterministicToolingDevelopment": true,
+    "sourceOnlyPacketPreparation": true,
+    "endpointPreflightModelExecution": false,
+    "retiredPrimaryModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "tenDebateGate": false,
+    "all195Debates": false
+  }
+}

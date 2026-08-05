@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "4.0-lean-retired-preparation",
+  "protocolId": "v4.0-lean-risk-triggered-consensus",
+  "status": "prepared-source-only-no-model-execution",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "debates": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.0/lean-retired-gate/packets/debate-55.json",
+      "output": "docs/calibration/v4.0/lean-retired-gate/primary-outputs/debate-55.json"
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.0/lean-retired-gate/packets/debate-103.json",
+      "output": "docs/calibration/v4.0/lean-retired-gate/primary-outputs/debate-103.json"
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "controlSampleSelected": true,
+      "packet": "docs/calibration/v4.0/lean-retired-gate/packets/debate-161.json",
+      "output": "docs/calibration/v4.0/lean-retired-gate/primary-outputs/debate-161.json"
+    }
+  ],
+  "inputs": {
+    "workflow": "docs/assessment-workflow-v4.0.md",
+    "rubric": "docs/reassessment-rubric-v4.0.md",
+    "manual": "docs/calibration/v4.0/lean-retired-gate/manual.md",
+    "schema": "docs/calibration/v4.0/lean-retired-gate/schemas/primary.schema.json"
+  },
+  "controlPolicy": {
+    "rate": 0.1,
+    "selected": [
+      "161"
+    ],
+    "selectionVisibleToPrimaryJudge": false
+  },
+  "sourceHashes": {
+    ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt": "305d9eacbd581a9aac9f5f246f63097deef6e6020af7a8031e14ca9cfbba66c2",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/events.json": "d09e63acc41236158b808b6242c871428a467697fba1f2454cfac143c185aa3f",
+    ".assessment-cache/captions/zQBY5K-Ns2Y/manifest.json": "73f97e374fa98f388528e03ed39e1272f77c9fec6cee46345fdfba9c3177c099",
+    ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt": "f852392592bdbaf149c1816fe93fb76e84b65577b4c6d85c52a50bb2db95be29",
+    ".assessment-cache/captions/g1TlLCSn_5o/events.json": "b9846f8275ade82451cfd86a4b4b5eefa89a9bbf1515067e2e18965bcadf03dc",
+    ".assessment-cache/captions/g1TlLCSn_5o/manifest.json": "0e24d0057065d03651c845abfd66fa90a04ed2dfbd582afe098e60d830fbde2a",
+    ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt": "9de6853aa2dd4eaf8e0d669f895b719b7fbc15ab55a7f8eab271c92974771b78",
+    ".assessment-cache/captions/9JVRy7bR7zI/events.json": "5dd29c053f0e5da4ed79b6f818fb844a6515552671dbc4014916d18ca1d2cbbc",
+    ".assessment-cache/captions/9JVRy7bR7zI/manifest.json": "436f3f2be4fd5e84338f6244eae1398dbcb11c56ac514920a80cad440790dc18"
+  },
+  "totals": {
+    "debates": 3,
+    "sourceOnlyPackets": 3,
+    "controlDebates": 1,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "deterministicFixtures": true,
+    "endpointPreflight": false,
+    "primaryModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
