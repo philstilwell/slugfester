@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "4.2.9.1-long-context-schema-recovery-execution-manifest",
+  "executionSchemaVersion": "4.2.9.1-long-context-schema-recovery-model-execution",
+  "protocolId": "v4.2.9.1-long-context-schema-recovery",
+  "proposalProtocolId": "v4.2.9-long-context-partition-diagnostic",
+  "stageLabel": "v4.2.9.1-schema-recovery",
+  "status": "frozen-two-schema-recovery-proposers-authorized",
+  "frozenAt": "2026-08-05T14:46:45Z",
+  "checkpointCommit": "8f99be7c69fcb62c4e6980e6396da0c9296a4dda",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "debateNumber": "99",
+  "diagnosis": {
+    "subscriptionProbePassed": true,
+    "structuredOutputProbeRejectedBeforeInference": true,
+    "exactApiError": "Invalid schema for response_format 'codex_output_schema': In context=('properties', 'schemaVersion'), schema must have a 'type' key.",
+    "originalRequestsRejectedBeforeInference": 2,
+    "originalModelOutputs": 0,
+    "schemaRepair": "Add explicit string or boolean types to every constant-valued property.",
+    "technicalProbeModelContexts": 1,
+    "technicalProbeMeteredApiCostUsd": 0
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "modelInputs": {
+    "selectionRubric": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.2.9/long-context-partition/manual.md",
+    "schema": "docs/calibration/v4.2.9.1/long-context-schema-recovery/schema.json",
+    "packet": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-99.json"
+  },
+  "source": {
+    "packet": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-99.json",
+    "fullLedger": ".assessment-cache/compact-ledgers/v4.2.4/debate-99.jsonl",
+    "originalEvents": ".assessment-cache/captions/UWCvKiWjV0g/events.json",
+    "v428Execution": "docs/calibration/v4.2.8/correction-aware-retired-continuation/model-execution.json",
+    "v428Analysis": "docs/calibration/v4.2.8/correction-aware-retired-continuation/primary-analysis.json",
+    "priorPreparation": "docs/calibration/v4.2.9/long-context-partition/preparation-manifest.json",
+    "priorExecution": "docs/calibration/v4.2.9/long-context-partition/model-execution.json",
+    "priorAnalysis": "docs/calibration/v4.2.9/long-context-partition/analysis.json",
+    "priorRejectedSchema": "docs/calibration/v4.2.9/long-context-partition/schema.json"
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-1",
+      "startEvent": 0,
+      "endEvent": 1758,
+      "chunkPath": "docs/calibration/v4.2.9/long-context-partition/chunks/chunk-1.jsonl",
+      "chunkSha256": "1ab092be9a79e87ed7a6f67bb35c5780494e5ccd7b273c8b0aa1e9013a4165b6",
+      "rows": 1759,
+      "bytes": 102648,
+      "rawOutput": "docs/calibration/v4.2.9.1/long-context-schema-recovery/proposals/chunk-1.json"
+    },
+    {
+      "chunkId": "chunk-2",
+      "startEvent": 1638,
+      "endEvent": 3396,
+      "chunkPath": "docs/calibration/v4.2.9/long-context-partition/chunks/chunk-2.jsonl",
+      "chunkSha256": "2a2d938be0f4f42d7d59a4ea76baacff33bc499765dfde2e9de3a2ffb7ee2d3f",
+      "rows": 1759,
+      "bytes": 104266,
+      "rawOutput": "docs/calibration/v4.2.9.1/long-context-schema-recovery/proposals/chunk-2.json"
+    }
+  ],
+  "coverage": {
+    "originalEvents": 3397,
+    "jointlyCoveredEvents": 3397,
+    "overlapStartEvent": 1638,
+    "overlapEndEvent": 1758,
+    "overlapEvents": 121,
+    "complete": true
+  },
+  "isolation": {
+    "freshTemporaryCodexHomePerChunk": true,
+    "freshSourceDirectoryPerChunk": true,
+    "otherChunkUnavailable": true,
+    "otherProposalUnavailable": true,
+    "v428TimeoutDetailsUnavailable": true,
+    "rejectedV429OutputsUnavailableBecauseNoneExist": true,
+    "legacyUnavailable": true,
+    "scoresUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 2,
+    "schemaRecoveryRequestsPerContext": 1,
+    "semanticRetries": 0,
+    "sequentialExecution": true,
+    "continueAfterLocalChunkFailure": true,
+    "timeoutMs": 900000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "authorization": {
+    "twoProposalContexts": true,
+    "deterministicValidation": true,
+    "integratedPrimaryPreparation": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.2.9.1/long-context-schema-recovery/model-execution.json",
+    "analysis": "docs/calibration/v4.2.9.1/long-context-schema-recovery/analysis.json",
+    "proposals": [
+      "docs/calibration/v4.2.9.1/long-context-schema-recovery/proposals/chunk-1.json",
+      "docs/calibration/v4.2.9.1/long-context-schema-recovery/proposals/chunk-2.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.2.9.1/long-context-schema-recovery/proposals/chunk-1.json",
+    "docs/calibration/v4.2.9.1/long-context-schema-recovery/proposals/chunk-2.json",
+    "docs/calibration/v4.2.9.1/long-context-schema-recovery/model-execution.json",
+    "docs/calibration/v4.2.9.1/long-context-schema-recovery/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.9.1.md": "ae435d6dbf64a6f91e54f74d0c64bc6bc7e4bebc3ed55c4b6e597c9eb54aea3e",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/calibration/v4.2.9/long-context-partition/manual.md": "cc7f53a71d916acbac83840d2507a8291ffdb56344794c63cf3214d346d6d256",
+    "docs/calibration/v4.2.9.1/long-context-schema-recovery/schema.json": "6276608134a6fdd9da1c73fe92b586ce767202f0afcd5439e1fd2697f5459d7c",
+    "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-99.json": "dca4a3de43e8bb2daf2327b911a9aa466da0ec272e4448497fd3e3e1cf32a6d8",
+    ".assessment-cache/compact-ledgers/v4.2.4/debate-99.jsonl": "1fc975ee96ce0fc7b32a5bf68d626a1d2185fccdfcb9e6664e7b948658f31cef",
+    ".assessment-cache/captions/UWCvKiWjV0g/events.json": "f27acc146aab36fe21dfd7ae50d1624240a2a12c28fbee9a349b0b36b22f4879",
+    "docs/calibration/v4.2.9/long-context-partition/preparation-manifest.json": "adf7b871402089dbf8acf469e5a39f09e9dcef90f313ca7ccab6f4fe0c718287",
+    "docs/calibration/v4.2.9/long-context-partition/model-execution.json": "34b97d0e411335df37734ebbdde6f3bafbe1d21caf38860c149837b6514fedd9",
+    "docs/calibration/v4.2.9/long-context-partition/analysis.json": "2ac5a93feecbf8b04bef0986e0a1966a685f5b6a88662f92c57b943199499e39",
+    "docs/calibration/v4.2.9/long-context-partition/schema.json": "53f43adec4543ce671c93b5c7545d1736a2228cdf04627f417418c4add6cdb3c",
+    "docs/calibration/v4.2.9.1/long-context-schema-recovery/preparation-manifest.json": "e9205200a8b89293edd0fc75297d103a33c11043c22da6991867e24342cd34d5",
+    "docs/calibration/v4.2.9/long-context-partition/chunks/chunk-1.jsonl": "1ab092be9a79e87ed7a6f67bb35c5780494e5ccd7b273c8b0aa1e9013a4165b6",
+    "docs/calibration/v4.2.9/long-context-partition/chunks/chunk-2.jsonl": "2a2d938be0f4f42d7d59a4ea76baacff33bc499765dfde2e9de3a2ffb7ee2d3f",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v41-lean-production.mjs": "9d4f4a5a54ff4c73f50733aa148064200862991a69003823d303e7bac363d9ba",
+    "scripts/lib/v418-source-integrity.mjs": "ff0593a316fcd06f1662b0f9c9864bdd4c2a867a718638a79cac8b9f27eac205",
+    "scripts/lib/v429-long-context-partition.mjs": "c10268ba065442896e8d4906239c90752e4c731d0a2762e9573db76d8baf726e",
+    "scripts/lib/v4291-schema-recovery.mjs": "a5a22ac92b1d167c1eddfb5f6e1926beee0f115a4fba18706066a46051b92bd4",
+    "scripts/build-v4291-schema-recovery.mjs": "31fc5a72aaf7c7995945dcde03c142687ba0a935f6252f409e4ecae011f05e77",
+    "scripts/test-v4291-schema-recovery.mjs": "ab67a81086ff2fab80ff35c0b2489222b58be3e88bfebe0639fbdb1b197c06e4",
+    "scripts/validate-v429-proposal.mjs": "6dcd9bb16fb2c2069a2edd66e5e12cfc0e57d72474c8c11a6923a5823fe3d9ed",
+    "scripts/preregister-v4291-schema-recovery.mjs": "3a00343ce00ff24c607d1dcec99cfc223d68d9b99a2bf4720c3257182e6d3d6b",
+    "scripts/run-v429-long-context-partition.mjs": "1806eb68af4e4e3b6c0a0e06ad8195b7b8153373b7d6a07a6a4f5d7d85247f97",
+    "scripts/analyze-v4291-schema-recovery.mjs": "fffd89a73084de80d1bc56735c864f13e1c68c2f165e14aae5cd92cb1c8bc6b5"
+  }
+}
