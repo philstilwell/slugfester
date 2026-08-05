@@ -1,0 +1,336 @@
+{
+  "schemaVersion": "4.2.3-chronology-first-fresh-six-sample",
+  "protocolId": "v4.2.3-chronology-first-compact-fresh-six-validation",
+  "status": "frozen-before-legacy-score-access",
+  "frozenAt": "2026-08-05T12:51:38Z",
+  "checkpointCommit": "284a3d6acf3c6c5042cae085e76185f216dc3ab1",
+  "selectionBoundary": {
+    "dyadicOnly": true,
+    "topicFamilies": [
+      "resurrection-history",
+      "morality-ethics",
+      "mind-agency",
+      "evil-hiddenness",
+      "science-origins",
+      "general-theism-religion"
+    ],
+    "durationRequirement": "at least one under 90 minutes, at least one from 90 through 120 minutes, at least one over 120 minutes, and no more than three over 120 minutes",
+    "fixedSalt": "slugfester-v4.2.3-chronology-first-fresh-six-source-only",
+    "rankingInput": "family and debate ID only",
+    "selectionMethod": "dynamic programming minimizing aggregate within-family hash rank, then family-order debate-ID tie",
+    "legacyAssessmentContentAccessed": false,
+    "legacyScoresAccessed": false,
+    "legacyWinnersAccessed": false,
+    "legacyCritiquesAccessed": false,
+    "candidateRanksInspectedBeforeAlgorithmFreeze": false
+  },
+  "exclusions": {
+    "priorCalibrationIdsFromPool": 25,
+    "v416DevelopmentDebates": [
+      "55",
+      "103",
+      "161"
+    ],
+    "v417DiagnosticDebates": [
+      "37",
+      "58",
+      "91",
+      "59",
+      "144",
+      "171"
+    ],
+    "v418DiagnosticDebates": [
+      "52",
+      "101",
+      "79",
+      "11",
+      "175",
+      "26"
+    ],
+    "v419DiagnosticDebates": [
+      "180",
+      "155",
+      "100",
+      "113",
+      "67",
+      "141"
+    ],
+    "v421DiagnosticDebates": [
+      "07",
+      "164",
+      "44",
+      "74",
+      "117",
+      "06"
+    ],
+    "v422DiagnosticDebate": "07",
+    "excludedDebateIds": [
+      "ally-licona-did-jesus-rise-dead-2004",
+      "bertuzzi-oconnor-contingency-argument-2018",
+      "bollore-halper-god-science-evidence-2026",
+      "carroll-shermer-hutchinson-dsouza-science-religion-2012",
+      "craig-frazier-goff-folley-god-reality-2026",
+      "craig-malpass-kalam-nothing-2026",
+      "craig-millican-does-god-exist-2011",
+      "craig-oconnor-god-debate-2026",
+      "craig-wielenberg-god-morality-2018",
+      "cutter-oppy-mind-brain-harmony-god-2025",
+      "dennett-caruso-free-will-responsibility-2021",
+      "dillahunty-slick-secular-humanism-christianity-2016",
+      "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "dirckx-woodford-god-suffering-2024",
+      "dsouza-dillahunty-god-woman-2023",
+      "dsouza-ehrman-god-suffering-evil-2025",
+      "ehrman-bass-resurrection-history-2023",
+      "enoch-sampson-loeb-lutz-moral-realism-2024",
+      "fischer-dillahunty-axiomatic-evidence-god-2020",
+      "goff-carroll-consciousness-fundamental-2023",
+      "harris-prager-religion-morality-public-reason-2014",
+      "hitchens-blair-religion-force-good-2010",
+      "hitchens-dsouza-religion-problem-2010",
+      "hitchens-kushner-gomes-god-religion-morality-2009",
+      "horn-dillahunty-resurrection-reasonable-2021",
+      "huemer-oppy-souls-personal-identity-2022",
+      "jones-dillahunty-emergent-mind-god-2020",
+      "jones-dillahunty-quantum-idealism-demonstrability-2026",
+      "jones-fodor-digital-physics-god-2021",
+      "knechtle-aron-ra-god-existence-2023",
+      "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "krauss-meyer-lamoureux-god-science-universe-2016",
+      "lennox-atkins-science-explain-everything-2019",
+      "licona-carrier-resurrection-history-2010",
+      "licona-dillahunty-resurrection-evidence-2017",
+      "oconnor-baker-hytch-argument-from-reason-2020",
+      "oconnor-biddle-free-will-2025",
+      "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+      "oppy-pearce-is-there-a-god-2022",
+      "pageau-folley-logos-meaning-resurrection-2026",
+      "plantinga-dennett-evolution-naturalism-2018",
+      "plantinga-law-eaan-rational-belief-2010",
+      "rasmussen-malpass-suffering-causal-finitism-2021",
+      "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "swinburne-oppy-theism-probability-2022",
+      "tour-cronin-origin-of-life-2020",
+      "tour-swamidass-origin-life-chemistry-2020",
+      "turek-hitchens-reality-theism-atheism-2011",
+      "turek-shermer-morality-god-science-2015",
+      "wood-oconnor-jesus-claim-god-2025",
+      "woodford-edwards-rational-belief-god-2023",
+      "woodford-scrivener-religion-poisons-everything-2026"
+    ]
+  },
+  "eligibleAfterExclusions": 134,
+  "tupleOptimization": {
+    "aggregateFamilyRank": 0,
+    "familyOrderTie": "oconnor-craig-resurrection-2023|carroll-halvorson-metaphysics-worldview-2016|bertuzzi-schieber-evil-evidence-2019|dillahunty-howitt-christianity-true-2023|craig-malpass-universe-begin-exist-2020|swinburne-huemer-theism-coherent-2026",
+    "durationBandCounts": {
+      "short-under-90": 3,
+      "medium-90-through-120": 2,
+      "long-over-120": 1
+    }
+  },
+  "debates": [
+    {
+      "debateId": "oconnor-craig-resurrection-2023",
+      "number": "31",
+      "videoId": "WsUwyC2cwNg",
+      "motion": "Does the historical evidence make Jesus' resurrection the best explanation of the facts, or should skeptical alternatives and evidential caution prevent that conclusion?",
+      "sides": {
+        "pro": {
+          "label": "Resurrection case",
+          "speakers": [
+            "William Lane Craig"
+          ]
+        },
+        "con": {
+          "label": "Historical skepticism",
+          "speakers": [
+            "Alex O'Connor"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "resurrection-history",
+      "durationSeconds": 3953,
+      "durationBand": "short-under-90",
+      "manifestPath": ".assessment-cache/captions/WsUwyC2cwNg/manifest.json",
+      "selectionRankSha256": "006902d0326c4d682ee5e782a25705a500597f0a3471c1e15ef927885025e90f"
+    },
+    {
+      "debateId": "carroll-halvorson-metaphysics-worldview-2016",
+      "number": "36",
+      "videoId": "Ku6tLuEjmTY",
+      "motion": "How should scientific knowledge be integrated into naturalist and theistic worldviews, and do cosmology, fine-tuning, quantum mechanics, consciousness, morality, and meaning favor either metaphysical picture?",
+      "sides": {
+        "pro": {
+          "label": "Naturalist",
+          "speakers": [
+            "Sean Carroll"
+          ]
+        },
+        "con": {
+          "label": "Theist",
+          "speakers": [
+            "Hans Halvorson"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "morality-ethics",
+      "durationSeconds": 5582,
+      "durationBand": "medium-90-through-120",
+      "manifestPath": ".assessment-cache/captions/Ku6tLuEjmTY/manifest.json",
+      "selectionRankSha256": "05262762a739b85de21b66e7d73f21cf1ea964c037ccb115258ce4fe373d95dd"
+    },
+    {
+      "debateId": "bertuzzi-schieber-evil-evidence-2019",
+      "number": "116",
+      "videoId": "huOwbSrl-xw",
+      "motion": "Do facts about pain, pleasure, languishing, and horrendous evil count as evidence for naturalism over theism, or can soul-building and skeptical theism neutralize that evidential force?",
+      "sides": {
+        "pro": {
+          "label": "Theistic no-evidence defense",
+          "speakers": [
+            "Cameron Bertuzzi"
+          ]
+        },
+        "con": {
+          "label": "Draperian evil evidence",
+          "speakers": [
+            "Justin Schieber"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "mind-agency",
+      "durationSeconds": 3902,
+      "durationBand": "short-under-90",
+      "manifestPath": ".assessment-cache/captions/huOwbSrl-xw/manifest.json",
+      "selectionRankSha256": "17013b53d2762e57b9e3176dee45fe9b02cc77fe4a4c496da217f3587cd2e589"
+    },
+    {
+      "debateId": "dillahunty-howitt-christianity-true-2023",
+      "number": "157",
+      "videoId": "13PnL6QyMEw",
+      "motion": "Is Christianity true, and do the grounding of logic, a necessary cause, divine hiddenness, and the relation of reason to revelation support or undermine it?",
+      "sides": {
+        "pro": {
+          "label": "Christian logos",
+          "speakers": [
+            "Lewis Howitt (PerspectivePhilosophy)"
+          ]
+        },
+        "con": {
+          "label": "Skeptical empiricism",
+          "speakers": [
+            "Matt Dillahunty"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "evil-hiddenness",
+      "durationSeconds": 7065,
+      "durationBand": "medium-90-through-120",
+      "manifestPath": ".assessment-cache/captions/13PnL6QyMEw/manifest.json",
+      "selectionRankSha256": "43edd3a77b2aba0c57ee35aaa694bef93403f21df672f0c1b4c4628f5361df1b"
+    },
+    {
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "number": "92",
+      "videoId": "uWo9qU2dhpQ",
+      "motion": "Do actual-infinity and successive-addition arguments give adequate philosophical support for the Kalam claim that the universe began to exist?",
+      "sides": {
+        "pro": {
+          "label": "Kalam beginning case",
+          "speakers": [
+            "William Lane Craig"
+          ]
+        },
+        "con": {
+          "label": "Infinity critique",
+          "speakers": [
+            "Alex Malpass"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "science-origins",
+      "durationSeconds": 7509,
+      "durationBand": "long-over-120",
+      "manifestPath": ".assessment-cache/captions/uWo9qU2dhpQ/manifest.json",
+      "selectionRankSha256": "15afd5d8d4a2c872003835228f5b781c273f33128cfea15c4bc1bf4b776450fa"
+    },
+    {
+      "debateId": "swinburne-huemer-theism-coherent-2026",
+      "number": "94",
+      "videoId": "1IkAU6zAYLU",
+      "motion": "Is theism coherent, especially if God is described as omnipotent, omniscient, perfectly good, and infinite in power or knowledge?",
+      "sides": {
+        "pro": {
+          "label": "Coherent theism",
+          "speakers": [
+            "Richard Swinburne"
+          ]
+        },
+        "con": {
+          "label": "Incoherence critique",
+          "speakers": [
+            "Michael Huemer"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "general-theism-religion",
+      "durationSeconds": 3318,
+      "durationBand": "short-under-90",
+      "manifestPath": ".assessment-cache/captions/1IkAU6zAYLU/manifest.json",
+      "selectionRankSha256": "48b028db2aebfbc5eb6fc93c3f9560efc11ae956beecf2d71b85674b0f0c9e32"
+    }
+  ],
+  "audit": {
+    "debates": 6,
+    "distinctTopicFamilies": 6,
+    "distinctDebateIds": 6,
+    "priorFreshGateOverlap": 0,
+    "durationBandCounts": {
+      "short-under-90": 3,
+      "medium-90-through-120": 2,
+      "long-over-120": 1
+    },
+    "minimumDurationSeconds": 3318,
+    "maximumDurationSeconds": 7509,
+    "localTranscriptChainsPresent": 6,
+    "legacyAssessmentFields": 0
+  },
+  "authorization": {
+    "compactChronologySourcePacketPreparation": true,
+    "primaryModelExecution": false,
+    "legacyComparison": false,
+    "paidTranscription": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  },
+  "sourceHashes": {
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/metadata-eligible-pool.json": "71256e3b92aa6879b7126c01f7268be39735d239111a0d6d849a2b5aa6cf0cb6",
+    "docs/calibration/v4.2.2/chronology-first-smoke/analysis.json": "0444b4aebd44c616b2accc337cdc5012346360254cf9821710c720067ffc3177",
+    "docs/assessment-workflow-v4.2.3.md": "fc8b673cef3e0a2a9115142095fdd5d78a5a7dcb93d53871b41f4fbe5443b3fa",
+    "scripts/select-v423-fresh-six.mjs": "994f5e775cf05de2ac9e594aaec58be1fb73cd77e0b503eaa3ff49d882df2449",
+    "docs/calibration/v4.1.7/fresh-six-gate/source-only-sample.json": "8b06fa1766488eab48876c3f2d3e44cce1de8cfa522a87defef012905d5e2eff",
+    "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/source-only-sample.json": "de1272c4d5989f00af7a3d972e01462bb9722d1d07370406b3c74376321ead1d",
+    "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/source-only-sample.json": "576e275787d74b5e5b61e97962358ffc8264e260e47db41ef04b2e9955fe1646",
+    "docs/calibration/v4.2.1/compact-fresh-six-gate/source-only-sample.json": "587a22054eb36169394d389516ba3e4499acdf59c5b43392f5c0b427681555c5",
+    ".assessment-cache/captions/WsUwyC2cwNg/manifest.json": "e8c5b82435903b51d1612710c8ecf1975ec78e473d6a21f78e0ef04d82ec9443",
+    ".assessment-cache/captions/Ku6tLuEjmTY/manifest.json": "73d2925c7ef56b225a03df7238a6b74771554218864782ec885c9773e25edebb",
+    ".assessment-cache/captions/huOwbSrl-xw/manifest.json": "0bcbcb4f738d5b723f805bd97fdbaa2296e32335f8c08fc7d0bd88be1324fc1d",
+    ".assessment-cache/captions/13PnL6QyMEw/manifest.json": "49876762ed160876207917a57809e4467792d523d53a2879a8fdb18edb5819a4",
+    ".assessment-cache/captions/uWo9qU2dhpQ/manifest.json": "daae736f91861483aa49a56d1f78927bd00c600e5d61c562a90ee08c0ab4fe3f",
+    ".assessment-cache/captions/1IkAU6zAYLU/manifest.json": "e08467c3c6c25426276a624398378e097257f26fc8336944846243b4ad4bcef0"
+  }
+}

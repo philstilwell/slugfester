@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "4.2.3-source-only-sample-screening",
+  "protocolId": "v4.2.3-chronology-first-compact-fresh-six-validation",
+  "status": "sample-rejected-before-packet-preparation",
+  "modelContextsExecuted": 0,
+  "legacyAssessmentContentAccessed": false,
+  "legacyScoresAccessed": false,
+  "defects": [
+    {
+      "debateNumber": "116",
+      "debateId": "bertuzzi-schieber-evil-evidence-2019",
+      "assignedFamily": "mind-agency",
+      "substantiveFamily": "evil-hiddenness",
+      "cause": "the mind-agency regex matched the substring soul in soul-building before the evil-family rule was considered"
+    }
+  ],
+  "gateCoverage": {
+    "nominalFamilies": 6,
+    "substantiveFamilies": 5,
+    "duplicateSubstantiveFamily": "evil-hiddenness",
+    "missingSubstantiveFamily": "mind-agency",
+    "durationStratificationPassed": true
+  },
+  "disposition": {
+    "v423PacketPreparationAuthorized": false,
+    "v423PrimaryExecutionAuthorized": false,
+    "retryWithSameSampleAuthorized": false,
+    "allSixV423IdentitiesBecomeSourceSelectionExclusions": true,
+    "revisedSourceOnlySelectorAuthorized": true,
+    "scoringAuthorized": false,
+    "legacyComparisonAuthorized": false,
+    "productionMutationAuthorized": false
+  },
+  "correctiveRule": {
+    "evilHiddennessEvaluatedBeforeMindAgency": true,
+    "bareSoulTokenRemovedFromMindAgency": true,
+    "explicitMindAgencyTermsRetained": [
+      "conscious",
+      "mind",
+      "free will",
+      "personal identity",
+      "agency",
+      "mental causation"
+    ],
+    "sourceOnlyMotionClassificationRetained": true
+  }
+}
