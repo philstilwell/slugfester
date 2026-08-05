@@ -33,12 +33,12 @@ if (shouldWrite) {
   for (const item of packets) await writeFile(path.resolve(root, `${V41_LEAN_ROOT}/packets/debate-${item.debateNumber}.json`), `${JSON.stringify(item.packet, null, 2)}\n`);
   await writeFile(path.resolve(root, `${V41_LEAN_ROOT}/schemas/primary.schema.json`), `${JSON.stringify(makeV41PrimarySchema(), null, 2)}\n`);
   const oldSynthetic = await readJson("docs/calibration/v4.0.1/lean-retired-gate/schema-preflight/packet.json");
-  const synthetic = { ...oldSynthetic, schemaVersion: V41_PACKET_VERSION, protocolId: V41_PROTOCOL_ID, debateId: "v41-bounded-schema-preflight", modelInputBoundary: { ...oldSynthetic.modelInputBoundary, highEffortReferenceOutputsUnavailable: true, boundedMoveMinimum: 8, boundedMoveMaximum: 24 } };
+  const synthetic = { ...oldSynthetic, schemaVersion: V41_PACKET_VERSION, protocolId: V41_PROTOCOL_ID, debateId: "v413-bounded-schema-preflight", modelInputBoundary: { ...oldSynthetic.modelInputBoundary, highEffortReferenceOutputsUnavailable: true, boundedMoveMinimum: 8, boundedMoveMaximum: 24 } };
   await writeFile(path.resolve(root, `${V41_LEAN_ROOT}/schema-preflight/packet.json`), `${JSON.stringify(synthetic, null, 2)}\n`);
 }
 
 const preparation = {
-    schemaVersion: "4.1.2-bounded-retired-preparation",
+    schemaVersion: "4.1.3-bounded-retired-preparation",
   protocolId: V41_PROTOCOL_ID,
   status: shouldWrite ? "prepared-source-only-no-model-execution" : "preview",
   calibrationOnly: true,
@@ -52,6 +52,7 @@ const preparation = {
     workflow: "docs/assessment-workflow-v4.1.md",
     workflowBurdenIds: "docs/assessment-workflow-v4.1.1.md",
     workflowChronology: "docs/assessment-workflow-v4.1.2.md",
+    workflowConsistency: "docs/assessment-workflow-v4.1.3.md",
     rubricBase: "docs/reassessment-rubric-v4.0.md",
     rubricDerivedScores: "docs/reassessment-rubric-v4.0.1.md",
     rubric: "docs/reassessment-rubric-v4.1.md",
