@@ -38,7 +38,7 @@ const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const sourceHashes = {};
 for (const file of [...new Set(sourceFiles)]) sourceHashes[file] = sha256(await readFile(path.resolve(root, file)));
 const manifest = {
-  schemaVersion: "4.1.4-bounded-primary-execution-manifest",
+  schemaVersion: "4.1.5-bounded-primary-execution-manifest",
   protocolId: V41_PROTOCOL_ID,
   stage: "one-bounded-score-blind-primary-per-debate",
   status: "frozen-three-context-authorized",
@@ -52,7 +52,7 @@ const manifest = {
   comparator: { path: comparator, visibleToModel: false, requiredWinnerPreservation: true, maximumAbsoluteSideDelta: 5 },
   contexts,
   isolation: { freshTemporaryCodexHomePerContext: true, freshSourceDirectoryPerContext: true, otherDebatesUnavailable: true, controlSelectionUnavailable: true, comparatorUnavailable: true, highEffortReferencesUnavailable: true, legacyAssessmentsUnavailable: true, priorScoresAndWinnersUnavailable: true, participantAssessmentProseUnavailable: true },
-  executionPolicy: { contexts: 3, attemptsPerContext: 1, retriesMaximum: 0, sequentialExecution: true, failFastAfterFirstInvalidContext: true, perInvocationTimeoutMs: 1200000, authentication: "ChatGPT subscription", APIKeysRemoved: true, meteredApiCostUsdMaximum: 0, transcriptionCostUsdMaximum: 0, recoveryOrNormalizationMayCountTowardGate: false },
+  executionPolicy: { contexts: 3, attemptsPerContext: 1, retriesMaximum: 0, sequentialExecution: true, failFastAfterFirstInvalidContext: true, perInvocationTimeoutMs: 1200000, authentication: "ChatGPT subscription", APIKeysRemoved: true, meteredApiCostUsdMaximum: 0, transcriptionCostUsdMaximum: 0, recoveryOrNormalizationMayCountTowardGate: false, computeTimingUsesTransportCleanMeanWhenExactlyOneContextRecovers: true, transportCleanContextsMinimum: 2, recoveredContextsMaximumForComputeGate: 1, fixedTransportContingencyHours: 2 },
   judgmentPolicy: { completeTranscriptRequired: true, boundedMovesMinimum: 8, boundedMovesMaximum: 24, sectionsMinimum: 4, sectionsMaximum: 6, movesPerSidePerSectionMinimum: 1, movesPerSidePerSectionMaximum: 2, modelSequenceProhibited: true, chronologyDerivedFromSourceSpans: true, preSubmissionCrossFieldChecklistRequired: true, burdenTierCopiedFromReferencedBridge: true, relevanceBurdenBandUsesReferencedBridgeTier: true, modelPrecisionScalarProhibited: true, modelCalibrationScalarProhibited: true, allCalculatedTotalsProhibited: true, publicationProseProhibited: true, mediumOrLowAttributionRequiresAudioBeforePassB: true },
   authorization: { primaryModelExecution: true, deterministicValidationAfterEachContext: true, provisionalScoreDerivationAfterAllContexts: true, passBModelExecution: false, adjudicationModelExecution: false, reconstruction: false, productionMutation: false, tenDebateGate: false, all195Debates: false },
   stopRules: { hashMismatchBlocksExecution: true, preexistingOutputBlocksExecution: true, invalidContextStopsRemainingContexts: true, retryAuthorized: false, normalizationAuthorized: false, pendingRequiredAudioBlocksPassB: true },

@@ -2,7 +2,7 @@
 
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { convertV4ReferenceToV41, deriveV41PrimaryScores, makeV41PrimarySchema, projectV41ComputeHours, projectV41ConservativeHours, readJson, validateV41PrimaryOutput, V41_LEAN_ROOT, V41_PACKET_VERSION, V41_PROTOCOL_ID } from "./lib/v41-lean-production.mjs";
+import { convertV4ReferenceToV41, deriveV41PrimaryScores, evaluateV415Timing, makeV41PrimarySchema, projectV41ComputeHours, projectV41ConservativeHours, readJson, validateV41PrimaryOutput, V41_LEAN_ROOT, V41_PACKET_VERSION, V41_PROTOCOL_ID } from "./lib/v41-lean-production.mjs";
 
 const shouldWrite = process.argv.includes("--write");
 const [reference, oldPacket] = await Promise.all([
@@ -49,19 +49,38 @@ burdenMove.burdenContact.tier = "subsidiary";
 let burdenTierMismatchRejected = false;
 try { validateV41PrimaryOutput(burdenTierMismatch, packet); } catch (error) { burdenTierMismatchRejected = /burden tier does not match bridge/.test(error.message); }
 
-if (![missingSubsidiaryRejected, missingSideRejected, futureTargetRejected, inconsistentPartialRejected, burdenTierMismatchRejected].every(Boolean)) throw new Error("one or more v4.1.4 structural mutations escaped validation");
+if (![missingSubsidiaryRejected, missingSideRejected, futureTargetRejected, inconsistentPartialRejected, burdenTierMismatchRejected].every(Boolean)) throw new Error("one or more v4.1.5 structural mutations escaped validation");
 const central = projectV41ComputeHours();
 const conservative = projectV41ConservativeHours();
 if (!central.centralTargetPassed || !conservative.conservativeCeilingPassed) throw new Error("v4.1 planning projection exceeds a compute ceiling");
+const cleanTiming = evaluateV415Timing([
+  { debateNumber: "a", elapsedMs: 4 * 60000, recoverableStreamEvents: 0 },
+  { debateNumber: "b", elapsedMs: 5 * 60000, recoverableStreamEvents: 0 },
+  { debateNumber: "c", elapsedMs: 6 * 60000, recoverableStreamEvents: 0 }
+]);
+const recoveredTiming = evaluateV415Timing([
+  { debateNumber: "a", elapsedMs: 4 * 60000, recoverableStreamEvents: 0 },
+  { debateNumber: "b", elapsedMs: 5 * 60000, recoverableStreamEvents: 0 },
+  { debateNumber: "c", elapsedMs: 20 * 60000, recoverableStreamEvents: 1 }
+]);
+const ineligibleTiming = evaluateV415Timing([
+  { debateNumber: "a", elapsedMs: 4 * 60000, recoverableStreamEvents: 0 },
+  { debateNumber: "b", elapsedMs: 5 * 60000, recoverableStreamEvents: 1 },
+  { debateNumber: "c", elapsedMs: 6 * 60000, recoverableStreamEvents: 1 }
+]);
+if (cleanTiming.computePrimaryMinutesPerDebate !== 5 || cleanTiming.fixedTransportContingencyHours !== 2 || !cleanTiming.runtimePassed) throw new Error("clean timing policy fixture failed");
+if (recoveredTiming.computePrimaryMinutesPerDebate !== 4.5 || recoveredTiming.wallPrimaryMinutesPerDebate !== 9.67 || recoveredTiming.transportCleanContexts !== 2 || !recoveredTiming.runtimePassed) throw new Error("recovered timing policy fixture failed");
+if (ineligibleTiming.timingEligible || ineligibleTiming.runtimePassed) throw new Error("ineligible transport timing escaped gate");
 
 const fixture = {
-  schemaVersion: "4.1.4-bounded-tooling-fixture",
+  schemaVersion: "4.1.5-bounded-tooling-fixture",
   protocolId: V41_PROTOCOL_ID,
   status: "passed",
   validation,
   calculatedFixture: { pro: scores.overall.pro.score, con: scores.overall.con.score, winner: scores.winner },
   mutationTests: { routeBurdenIdAccepted: true, missingSubsidiaryRejected, missingSideRejected, futureTargetRejected, inconsistentPartialRejected, burdenTierMismatchRejected },
   computeProjection: { central, conservative },
+  timingPolicyTests: { cleanTiming, recoveredTiming, ineligibleTiming },
   costs: { modelContextsExecuted: 0, meteredApiCostUsd: 0, transcriptionCostUsd: 0 }
 };
 if (shouldWrite) {

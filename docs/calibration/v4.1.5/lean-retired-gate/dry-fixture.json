@@ -1,0 +1,264 @@
+{
+  "schemaVersion": "4.1.5-bounded-tooling-fixture",
+  "protocolId": "v4.1.5-bounded-lean-risk-triggered-consensus",
+  "status": "passed",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "schema-preflight",
+    "moves": 8,
+    "sections": 4,
+    "mediumOrLowAttributionMoves": [],
+    "calculatedFields": 0,
+    "schemaVersion": "4.1.5-bounded-primary-output",
+    "protocolId": "v4.1.5-bounded-lean-risk-triggered-consensus",
+    "boundedMoves": 8
+  },
+  "calculatedFixture": {
+    "pro": 87,
+    "con": 89,
+    "winner": "con"
+  },
+  "mutationTests": {
+    "routeBurdenIdAccepted": true,
+    "missingSubsidiaryRejected": true,
+    "missingSideRejected": true,
+    "futureTargetRejected": true,
+    "inconsistentPartialRejected": true,
+    "burdenTierMismatchRejected": true
+  },
+  "computeProjection": {
+    "central": {
+      "inputs": {
+        "debateCount": 195,
+        "primaryMinutesPerDebate": 5.5,
+        "finalizationMinutesPerDebate": 4.25,
+        "escalationRate": 0.15,
+        "passBMinutesPerEscalatedDebate": 8,
+        "adjudicationShareOfEscalations": 0.5,
+        "adjudicationMinutesPerAdjudicatedDebate": 5.6,
+        "fixedAudioQaRenderingHours": 5
+      },
+      "hours": {
+        "primary": 17.88,
+        "finalization": 13.81,
+        "passB": 3.9,
+        "adjudication": 1.36,
+        "audioQaRendering": 5,
+        "total": 41.95
+      },
+      "centralTargetPassed": true,
+      "conservativeCeilingPassed": true
+    },
+    "conservative": {
+      "inputs": {
+        "debateCount": 195,
+        "primaryMinutesPerDebate": 7,
+        "finalizationMinutesPerDebate": 5,
+        "escalationRate": 0.2,
+        "passBMinutesPerEscalatedDebate": 8.5,
+        "adjudicationShareOfEscalations": 0.6,
+        "adjudicationMinutesPerAdjudicatedDebate": 6.5,
+        "fixedAudioQaRenderingHours": 5
+      },
+      "hours": {
+        "primary": 22.75,
+        "finalization": 16.25,
+        "passB": 5.53,
+        "adjudication": 2.53,
+        "audioQaRendering": 5,
+        "total": 52.06
+      },
+      "centralTargetPassed": false,
+      "conservativeCeilingPassed": true
+    }
+  },
+  "timingPolicyTests": {
+    "cleanTiming": {
+      "wallPrimaryMinutesPerDebate": 5,
+      "computePrimaryMinutesPerDebate": 5,
+      "conservativePrimaryMinutesPerDebate": 7,
+      "transportCleanContexts": 3,
+      "recoveredTransportContexts": 0,
+      "recoveredTransportDebates": [],
+      "timingEligible": true,
+      "fixedTransportContingencyHours": 2,
+      "centralProjection": {
+        "inputs": {
+          "debateCount": 195,
+          "primaryMinutesPerDebate": 5,
+          "finalizationMinutesPerDebate": 4.25,
+          "escalationRate": 0.15,
+          "passBMinutesPerEscalatedDebate": 8,
+          "adjudicationShareOfEscalations": 0.5,
+          "adjudicationMinutesPerAdjudicatedDebate": 5.6,
+          "fixedAudioQaRenderingHours": 5,
+          "fixedTransportContingencyHours": 2
+        },
+        "hours": {
+          "primary": 16.25,
+          "finalization": 13.81,
+          "passB": 3.9,
+          "adjudication": 1.36,
+          "audioQaRendering": 5,
+          "total": 42.33,
+          "transportContingency": 2
+        },
+        "centralTargetPassed": true,
+        "conservativeCeilingPassed": true
+      },
+      "conservativeProjection": {
+        "inputs": {
+          "debateCount": 195,
+          "primaryMinutesPerDebate": 7,
+          "finalizationMinutesPerDebate": 5,
+          "escalationRate": 0.2,
+          "passBMinutesPerEscalatedDebate": 8.5,
+          "adjudicationShareOfEscalations": 0.6,
+          "adjudicationMinutesPerAdjudicatedDebate": 6.5,
+          "fixedAudioQaRenderingHours": 5,
+          "fixedTransportContingencyHours": 2
+        },
+        "hours": {
+          "primary": 22.75,
+          "finalization": 16.25,
+          "passB": 5.53,
+          "adjudication": 2.53,
+          "audioQaRendering": 5,
+          "total": 54.06,
+          "transportContingency": 2
+        },
+        "centralTargetPassed": false,
+        "conservativeCeilingPassed": true
+      },
+      "runtimePassed": true
+    },
+    "recoveredTiming": {
+      "wallPrimaryMinutesPerDebate": 9.67,
+      "computePrimaryMinutesPerDebate": 4.5,
+      "conservativePrimaryMinutesPerDebate": 7,
+      "transportCleanContexts": 2,
+      "recoveredTransportContexts": 1,
+      "recoveredTransportDebates": [
+        "c"
+      ],
+      "timingEligible": true,
+      "fixedTransportContingencyHours": 2,
+      "centralProjection": {
+        "inputs": {
+          "debateCount": 195,
+          "primaryMinutesPerDebate": 4.5,
+          "finalizationMinutesPerDebate": 4.25,
+          "escalationRate": 0.15,
+          "passBMinutesPerEscalatedDebate": 8,
+          "adjudicationShareOfEscalations": 0.5,
+          "adjudicationMinutesPerAdjudicatedDebate": 5.6,
+          "fixedAudioQaRenderingHours": 5,
+          "fixedTransportContingencyHours": 2
+        },
+        "hours": {
+          "primary": 14.63,
+          "finalization": 13.81,
+          "passB": 3.9,
+          "adjudication": 1.36,
+          "audioQaRendering": 5,
+          "total": 40.7,
+          "transportContingency": 2
+        },
+        "centralTargetPassed": true,
+        "conservativeCeilingPassed": true
+      },
+      "conservativeProjection": {
+        "inputs": {
+          "debateCount": 195,
+          "primaryMinutesPerDebate": 7,
+          "finalizationMinutesPerDebate": 5,
+          "escalationRate": 0.2,
+          "passBMinutesPerEscalatedDebate": 8.5,
+          "adjudicationShareOfEscalations": 0.6,
+          "adjudicationMinutesPerAdjudicatedDebate": 6.5,
+          "fixedAudioQaRenderingHours": 5,
+          "fixedTransportContingencyHours": 2
+        },
+        "hours": {
+          "primary": 22.75,
+          "finalization": 16.25,
+          "passB": 5.53,
+          "adjudication": 2.53,
+          "audioQaRendering": 5,
+          "total": 54.06,
+          "transportContingency": 2
+        },
+        "centralTargetPassed": false,
+        "conservativeCeilingPassed": true
+      },
+      "runtimePassed": true
+    },
+    "ineligibleTiming": {
+      "wallPrimaryMinutesPerDebate": 5,
+      "computePrimaryMinutesPerDebate": 5,
+      "conservativePrimaryMinutesPerDebate": 7,
+      "transportCleanContexts": 1,
+      "recoveredTransportContexts": 2,
+      "recoveredTransportDebates": [
+        "b",
+        "c"
+      ],
+      "timingEligible": false,
+      "fixedTransportContingencyHours": 2,
+      "centralProjection": {
+        "inputs": {
+          "debateCount": 195,
+          "primaryMinutesPerDebate": 5,
+          "finalizationMinutesPerDebate": 4.25,
+          "escalationRate": 0.15,
+          "passBMinutesPerEscalatedDebate": 8,
+          "adjudicationShareOfEscalations": 0.5,
+          "adjudicationMinutesPerAdjudicatedDebate": 5.6,
+          "fixedAudioQaRenderingHours": 5,
+          "fixedTransportContingencyHours": 2
+        },
+        "hours": {
+          "primary": 16.25,
+          "finalization": 13.81,
+          "passB": 3.9,
+          "adjudication": 1.36,
+          "audioQaRendering": 5,
+          "total": 42.33,
+          "transportContingency": 2
+        },
+        "centralTargetPassed": true,
+        "conservativeCeilingPassed": true
+      },
+      "conservativeProjection": {
+        "inputs": {
+          "debateCount": 195,
+          "primaryMinutesPerDebate": 7,
+          "finalizationMinutesPerDebate": 5,
+          "escalationRate": 0.2,
+          "passBMinutesPerEscalatedDebate": 8.5,
+          "adjudicationShareOfEscalations": 0.6,
+          "adjudicationMinutesPerAdjudicatedDebate": 6.5,
+          "fixedAudioQaRenderingHours": 5,
+          "fixedTransportContingencyHours": 2
+        },
+        "hours": {
+          "primary": 22.75,
+          "finalization": 16.25,
+          "passB": 5.53,
+          "adjudication": 2.53,
+          "audioQaRendering": 5,
+          "total": 54.06,
+          "transportContingency": 2
+        },
+        "centralTargetPassed": false,
+        "conservativeCeilingPassed": true
+      },
+      "runtimePassed": false
+    }
+  },
+  "costs": {
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  }
+}

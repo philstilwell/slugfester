@@ -11,11 +11,11 @@ import {
   validateV4PrimaryOutput
 } from "./v4-lean-production.mjs";
 
-export const V41_LEAN_ROOT = "docs/calibration/v4.1.4/lean-retired-gate";
+export const V41_LEAN_ROOT = "docs/calibration/v4.1.5/lean-retired-gate";
 export const V41_LEAN_DEBATES = Object.freeze(["55", "103", "161"]);
-export const V41_PROTOCOL_ID = "v4.1.4-bounded-lean-risk-triggered-consensus";
-export const V41_OUTPUT_VERSION = "4.1.4-bounded-primary-output";
-export const V41_PACKET_VERSION = "4.1.4-bounded-source-only-packet";
+export const V41_PROTOCOL_ID = "v4.1.5-bounded-lean-risk-triggered-consensus";
+export const V41_OUTPUT_VERSION = "4.1.5-bounded-primary-output";
+export const V41_PACKET_VERSION = "4.1.5-bounded-source-only-packet";
 export const V41_MODEL = Object.freeze({ label: "5.6 Sol", slug: "gpt-5.6-sol", primaryReasoningEffort: "low", reviewReasoningEffort: "high" });
 export const V41_MOVE_MINIMUM = 8;
 export const V41_MOVE_MAXIMUM = 24;
@@ -50,8 +50,8 @@ export function makeV41PrimarySchema() {
   section.properties.proMoves = { type: "array", minItems: 1, maxItems: 2, items: move };
   section.properties.conMoves = { type: "array", minItems: 1, maxItems: 2, items: move };
 
-  base.$id = "slugfester-v414-bounded-lean-primary-judgment";
-  base.title = "Slugfester v4.1.4 bounded lean primary judgment";
+  base.$id = "slugfester-v415-bounded-lean-primary-judgment";
+  base.title = "Slugfester v4.1.5 bounded lean primary judgment";
   base.required = base.required.filter((key) => key !== "moves");
   delete base.properties.moves;
   base.properties.schemaVersion.const = V41_OUTPUT_VERSION;
@@ -174,4 +174,43 @@ export function projectV41ComputeHours({
 
 export function projectV41ConservativeHours() {
   return projectV41ComputeHours({ primaryMinutesPerDebate: 7, finalizationMinutesPerDebate: 5, escalationRate: 0.2, passBMinutesPerEscalatedDebate: 8.5, adjudicationShareOfEscalations: 0.6, adjudicationMinutesPerAdjudicatedDebate: 6.5 });
+}
+
+function addTransportContingency(projection, contingencyHours) {
+  const total = Number((projection.hours.total + contingencyHours).toFixed(2));
+  return {
+    ...projection,
+    inputs: { ...projection.inputs, fixedTransportContingencyHours: contingencyHours },
+    hours: { ...projection.hours, transportContingency: contingencyHours, total },
+    centralTargetPassed: total <= 52,
+    conservativeCeilingPassed: total <= 60
+  };
+}
+
+export function evaluateV415Timing(results, { fixedTransportContingencyHours = 2 } = {}) {
+  assertV4(Array.isArray(results) && results.length === 3 && results.every((item) => Number.isFinite(item.elapsedMs) && item.elapsedMs > 0 && Number.isInteger(item.recoverableStreamEvents) && item.recoverableStreamEvents >= 0), "three valid timing results required");
+  const wallPrimaryMinutesPerDebate = results.reduce((sum, item) => sum + item.elapsedMs, 0) / 60000 / results.length;
+  const cleanResults = results.filter((item) => item.recoverableStreamEvents === 0);
+  const recoveredResults = results.filter((item) => item.recoverableStreamEvents > 0);
+  const timingEligible = cleanResults.length >= 2 && recoveredResults.length <= 1;
+  const computePrimaryMinutesPerDebate = timingEligible && recoveredResults.length === 1
+    ? cleanResults.reduce((sum, item) => sum + item.elapsedMs, 0) / 60000 / cleanResults.length
+    : wallPrimaryMinutesPerDebate;
+  const conservativePrimaryMinutesPerDebate = Math.max(7, computePrimaryMinutesPerDebate * 1.25);
+  const centralProjection = addTransportContingency(projectV41ComputeHours({ primaryMinutesPerDebate: computePrimaryMinutesPerDebate }), fixedTransportContingencyHours);
+  const conservativeProjection = addTransportContingency(projectV41ComputeHours({ primaryMinutesPerDebate: conservativePrimaryMinutesPerDebate, finalizationMinutesPerDebate: 5, escalationRate: 0.2, passBMinutesPerEscalatedDebate: 8.5, adjudicationShareOfEscalations: 0.6, adjudicationMinutesPerAdjudicatedDebate: 6.5 }), fixedTransportContingencyHours);
+  const runtimePassed = timingEligible && centralProjection.hours.total <= 52 && conservativeProjection.hours.total <= 60;
+  return {
+    wallPrimaryMinutesPerDebate: Number(wallPrimaryMinutesPerDebate.toFixed(2)),
+    computePrimaryMinutesPerDebate: Number(computePrimaryMinutesPerDebate.toFixed(2)),
+    conservativePrimaryMinutesPerDebate: Number(conservativePrimaryMinutesPerDebate.toFixed(2)),
+    transportCleanContexts: cleanResults.length,
+    recoveredTransportContexts: recoveredResults.length,
+    recoveredTransportDebates: recoveredResults.map((item) => item.debateNumber),
+    timingEligible,
+    fixedTransportContingencyHours,
+    centralProjection,
+    conservativeProjection,
+    runtimePassed
+  };
 }
