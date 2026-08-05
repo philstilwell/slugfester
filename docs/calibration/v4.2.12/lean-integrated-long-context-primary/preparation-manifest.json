@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "4.2.12-lean-integrated-primary-preparation",
+  "protocolId": "v4.2.12-lean-integrated-long-context-primary",
+  "status": "prepared-one-lean-integrated-primary",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "debateNumber": "99",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "source": {
+    "priorPreparation": "docs/calibration/v4.2.10/integrated-long-context-primary/preparation-manifest.json",
+    "priorValidOutput": "docs/calibration/v4.2.10/integrated-long-context-primary/primary-output.json",
+    "fullCandidateBundle": "docs/calibration/v4.2.10/integrated-long-context-primary/candidate-bundle.json",
+    "fullLedger": ".assessment-cache/compact-ledgers/v4.2.4/debate-99.jsonl",
+    "originalEvents": ".assessment-cache/captions/UWCvKiWjV0g/events.json"
+  },
+  "inputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.2.12/lean-integrated-long-context-primary/manual.md",
+    "schema": "docs/calibration/v4.2.12/lean-integrated-long-context-primary/schema.json",
+    "packet": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-99.json",
+    "candidateBundle": "docs/calibration/v4.2.12/lean-integrated-long-context-primary/candidate-bundle.json",
+    "candidateContextLedger": "docs/calibration/v4.2.12/lean-integrated-long-context-primary/candidate-context-ledger.jsonl"
+  },
+  "validationInputs": {
+    "goldFixture": "docs/calibration/v4.2.12/lean-integrated-long-context-primary/gold-fixture.json",
+    "priorAnalysis": "docs/calibration/v4.2.10/integrated-long-context-primary/analysis.json",
+    "correctionAnalysis": "docs/calibration/v4.2.11/lean-structural-correction/analysis.json"
+  },
+  "sparseContext": {
+    "radiusEvents": 6,
+    "originalEvents": 3397,
+    "deliveredEvents": 1039,
+    "deliveredFraction": 0.3059,
+    "allCandidateSpansIncluded": true,
+    "sparseLedgerSha256": "fc91e202955ecbd56eb8caba942247a4b9a8a7355d65367d1e740b5bb0ebcca7"
+  },
+  "outputs": {
+    "proposal": "docs/calibration/v4.2.12/lean-integrated-long-context-primary/proposal.json",
+    "primary": "docs/calibration/v4.2.12/lean-integrated-long-context-primary/primary-output.json",
+    "compiled": "docs/calibration/v4.2.12/lean-integrated-long-context-primary/primary-compiled.json"
+  },
+  "policy": {
+    "oneAttempt": true,
+    "retries": 0,
+    "timeoutMs": 600000,
+    "scoreDerivationAuthorized": false,
+    "fullTranscriptDeliveredToIntegratedJudge": false,
+    "modelEmitsEvaluativeFieldsOnly": true
+  },
+  "totals": {
+    "candidates": 36,
+    "copiedInputBytes": 142589,
+    "baselineInputBytes": 182628,
+    "inputReductionFraction": 0.2192,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "executionManifest": false,
+    "modelExecution": false,
+    "validation": true,
+    "scoring": false,
+    "productionMutation": false
+  }
+}
