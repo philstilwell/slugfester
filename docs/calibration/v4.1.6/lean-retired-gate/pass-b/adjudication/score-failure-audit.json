@@ -1,0 +1,191 @@
+{
+  "schemaVersion": "4.1.6-retired-score-failure-audit",
+  "protocolId": "v4.1.6-triggered-pass-b-consensus",
+  "status": "confirmed-narrow-score-gate-failure",
+  "resultIntegrity": {
+    "scoreArtifactUnchanged": true,
+    "deterministicCompilerPassed": true,
+    "exactLedgerReplayPassed": true,
+    "sourceSchemaValidationPassed": true,
+    "postResultTuningPerformed": false,
+    "rerunPerformed": false
+  },
+  "scorePattern": {
+    "signedDeltas": [
+      2,
+      5,
+      3,
+      6,
+      5,
+      5
+    ],
+    "allFinalScoresAtOrAboveComparator": true,
+    "meanSignedDelta": 4.33,
+    "medianSignedDelta": 5,
+    "minimumSignedDelta": 2,
+    "maximumSignedDelta": 6,
+    "winnerClassificationsPreserved": 3,
+    "sidesWithinFive": 5,
+    "maximumAbsoluteDelta": 6,
+    "maximumAbsoluteMarginDelta": 3
+  },
+  "adjudicationEffect": {
+    "sidesMovedStrictlyTowardComparator": 5,
+    "sidesUnchangedInComparatorDistance": 1,
+    "sidesMovedAwayFromComparator": 0
+  },
+  "inventoryCompression": {
+    "retiredMoves": 81,
+    "leanMoves": 34,
+    "retainedFraction": 0.4198
+  },
+  "comparatorLimitation": {
+    "diagnosticNotGold": true,
+    "originalReliabilityGatePassed": false,
+    "originalSpearmanRankCorrelation": 0.885714,
+    "originalMinimumRequiredSpearman": 0.9
+  },
+  "debates": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "sideAudit": {
+        "pro": {
+          "expected": 71,
+          "primaryScore": 76,
+          "finalScore": 73,
+          "primarySignedDelta": 5,
+          "finalSignedDelta": 2,
+          "primaryAbsoluteDelta": 5,
+          "finalAbsoluteDelta": 2,
+          "adjudicationMovement": -3
+        },
+        "con": {
+          "expected": 81,
+          "primaryScore": 86,
+          "finalScore": 86,
+          "primarySignedDelta": 5,
+          "finalSignedDelta": 5,
+          "primaryAbsoluteDelta": 5,
+          "finalAbsoluteDelta": 5,
+          "adjudicationMovement": 0
+        }
+      },
+      "inventory": {
+        "retiredMoves": 28,
+        "leanMoves": 10,
+        "retainedFraction": 0.3571
+      },
+      "outcome": {
+        "expectedWinner": "con",
+        "actualWinner": "con",
+        "winnerPreserved": true,
+        "expectedMargin": 10,
+        "actualMargin": 13,
+        "signedMarginDelta": 3,
+        "absoluteMarginDelta": 3
+      }
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "sideAudit": {
+        "pro": {
+          "expected": 76,
+          "primaryScore": 84,
+          "finalScore": 79,
+          "primarySignedDelta": 8,
+          "finalSignedDelta": 3,
+          "primaryAbsoluteDelta": 8,
+          "finalAbsoluteDelta": 3,
+          "adjudicationMovement": -5
+        },
+        "con": {
+          "expected": 67,
+          "primaryScore": 76,
+          "finalScore": 73,
+          "primarySignedDelta": 9,
+          "finalSignedDelta": 6,
+          "primaryAbsoluteDelta": 9,
+          "finalAbsoluteDelta": 6,
+          "adjudicationMovement": -3
+        }
+      },
+      "inventory": {
+        "retiredMoves": 25,
+        "leanMoves": 14,
+        "retainedFraction": 0.56
+      },
+      "outcome": {
+        "expectedWinner": "pro",
+        "actualWinner": "pro",
+        "winnerPreserved": true,
+        "expectedMargin": 9,
+        "actualMargin": 6,
+        "signedMarginDelta": -3,
+        "absoluteMarginDelta": 3
+      }
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "sideAudit": {
+        "pro": {
+          "expected": 68,
+          "primaryScore": 76,
+          "finalScore": 73,
+          "primarySignedDelta": 8,
+          "finalSignedDelta": 5,
+          "primaryAbsoluteDelta": 8,
+          "finalAbsoluteDelta": 5,
+          "adjudicationMovement": -3
+        },
+        "con": {
+          "expected": 78,
+          "primaryScore": 85,
+          "finalScore": 83,
+          "primarySignedDelta": 7,
+          "finalSignedDelta": 5,
+          "primaryAbsoluteDelta": 7,
+          "finalAbsoluteDelta": 5,
+          "adjudicationMovement": -2
+        }
+      },
+      "inventory": {
+        "retiredMoves": 28,
+        "leanMoves": 10,
+        "retainedFraction": 0.3571
+      },
+      "outcome": {
+        "expectedWinner": "con",
+        "actualWinner": "con",
+        "winnerPreserved": true,
+        "expectedMargin": 10,
+        "actualMargin": 10,
+        "signedMarginDelta": 0,
+        "absoluteMarginDelta": 0
+      }
+    }
+  ],
+  "diagnosis": {
+    "compilerDefectDetected": false,
+    "adjudicationInstabilityDetected": false,
+    "systematicPositiveScaleShiftDetected": true,
+    "boundedInventoryRepresentativenessRisk": true,
+    "interpretation": "The pattern is most consistent with a systematic scale or bounded-inventory difference rather than a compiler failure or a winner-level judgment reversal."
+  },
+  "decision": {
+    "retiredGatePassed": false,
+    "publicationFinalizationAuthorized": false,
+    "productionMutationAuthorized": false,
+    "heldOutGateAuthorized": false,
+    "all195DebatesAuthorized": false
+  },
+  "recommendation": {
+    "preserveFailureUnchanged": true,
+    "doNotApplyPostHocOffset": true,
+    "doNotRelaxThisFrozenGate": true,
+    "nextActionRequiresEditorialChoice": true,
+    "recommendedPath": "Treat the three current debates as development diagnostics, freeze a prospective v4.1.7 validation policy, and test it on a fresh disjoint two-speaker sample before any corpus run."
+  }
+}
