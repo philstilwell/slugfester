@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "4.2.11-lean-correction-analysis",
+  "protocolId": "v4.2.11-lean-structural-correction",
+  "status": "lean-correction-passed-base-runtime-optimization-required",
+  "debateNumber": "106",
+  "developmentOnly": true,
+  "validation": {
+    "status": "passed",
+    "debateNumber": "106",
+    "moves": 16,
+    "sections": 5,
+    "mediumOrLowAttributionMoves": [
+      "m14",
+      "m15"
+    ],
+    "calculatedFields": 0,
+    "schemaVersion": "4.2.6-conservative-excerpt-retired-primary-output",
+    "protocolId": "v4.2.6-conservative-excerpt-retired-completion",
+    "boundedMoves": 16,
+    "sourceSpanIntegrity": {
+      "status": "passed",
+      "eventsHashVerified": true,
+      "eventCount": 1295,
+      "repositoryOwnedTimes": true,
+      "maximumCharacters": 600,
+      "maximumTokens": 100,
+      "minimumLexicalRecall": 0.8,
+      "minimumOrderedCoverage": 0.8,
+      "moves": [
+        {
+          "moveId": "m01",
+          "characterCount": 443,
+          "tokenCount": 85,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m03",
+          "characterCount": 450,
+          "tokenCount": 71,
+          "lexicalRecall": 0.985915,
+          "orderedCoverage": 0.985915
+        },
+        {
+          "moveId": "m02",
+          "characterCount": 450,
+          "tokenCount": 79,
+          "lexicalRecall": 0.987342,
+          "orderedCoverage": 0.987342
+        },
+        {
+          "moveId": "m04",
+          "characterCount": 449,
+          "tokenCount": 78,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m07",
+          "characterCount": 447,
+          "tokenCount": 78,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m06",
+          "characterCount": 450,
+          "tokenCount": 89,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m05",
+          "characterCount": 448,
+          "tokenCount": 83,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m08",
+          "characterCount": 445,
+          "tokenCount": 78,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m11",
+          "characterCount": 447,
+          "tokenCount": 83,
+          "lexicalRecall": 0.987952,
+          "orderedCoverage": 0.975904
+        },
+        {
+          "moveId": "m09",
+          "characterCount": 416,
+          "tokenCount": 74,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m10",
+          "characterCount": 450,
+          "tokenCount": 92,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m12",
+          "characterCount": 391,
+          "tokenCount": 75,
+          "lexicalRecall": 0.853333,
+          "orderedCoverage": 0.853333
+        },
+        {
+          "moveId": "m13",
+          "characterCount": 448,
+          "tokenCount": 89,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m14",
+          "characterCount": 449,
+          "tokenCount": 77,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m16",
+          "characterCount": 447,
+          "tokenCount": 91,
+          "lexicalRecall": 0.989011,
+          "orderedCoverage": 0.989011
+        },
+        {
+          "moveId": "m15",
+          "characterCount": 449,
+          "tokenCount": 81,
+          "lexicalRecall": 0.987654,
+          "orderedCoverage": 0.987654
+        }
+      ]
+    },
+    "compactTransport": {
+      "status": "passed",
+      "eventCount": 1295,
+      "sourceLedgerSha256": "01a6c9358fd363b29f992e7e535d59b05c8a236c6653d0426d2e75221c61988a",
+      "replayExact": true,
+      "plainTranscriptDeliveredToModel": false,
+      "originalEventsDeliveredToModel": false
+    },
+    "chronologyFirst": {
+      "status": "passed",
+      "emittedMoves": 16,
+      "targetEdgesReferenceEarlierEmittedMoves": true,
+      "oneOrTwoMovesPerSidePerSection": true
+    },
+    "conservativeExcerpt": {
+      "status": "passed",
+      "maximumCharacters": 450,
+      "tokenRange": [
+        12,
+        100
+      ],
+      "automaticTruncationPerformed": false
+    },
+    "boundedCorrection": {
+      "status": "passed",
+      "exactMoveSetPreserved": true,
+      "moveContentImmutableExceptSectionId": true,
+      "sectionMetadataOnlyChanged": true
+    },
+    "leanCorrection": {
+      "status": "passed",
+      "emittedMutableFieldsOnly": true,
+      "fullSourceUnavailableToModel": true,
+      "ratingsUnavailableToModel": true
+    }
+  },
+  "compilerReplayPassed": true,
+  "preservation": {
+    "exactMoveSet": true,
+    "substantiveMoveFieldsImmutable": true,
+    "modelEmittedOnlySectionsAndPlacements": true,
+    "changedSectionIds": [
+      "m14",
+      "m15",
+      "m16"
+    ]
+  },
+  "projection": {
+    "correctionMinutes": 0.76,
+    "baselineCorrectionMinutes": 7.34,
+    "runtimeReductionFraction": 0.8969,
+    "central": {
+      "baseHours": 47.62,
+      "correctionHours": 0.41,
+      "totalHours": 48.03
+    },
+    "conservative": {
+      "baseHours": 60.58,
+      "correctionHours": 0.77,
+      "totalHours": 61.35
+    }
+  },
+  "totals": {
+    "modelContexts": 1,
+    "attempts": 1,
+    "retries": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "baseRuntimeOptimization": true,
+    "newDisjointFreshGatePreparation": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
