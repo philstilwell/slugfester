@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "4.1.7-fresh-six-triggered-pass-b-post-audio-analysis",
+  "protocolId": "v4.1.7-fresh-six-triggered-pass-b",
+  "status": "blocked-unresolved-audio-attribution",
+  "inheritedPassBStatus": "pass-b-passed-audio-verification-required",
+  "runtime": {
+    "wallPassBMinutesPerDebate": 7.52,
+    "computePassBMinutesPerDebate": 7.52,
+    "conservativePassBMinutesPerDebate": 9.4,
+    "transportCleanContexts": 5,
+    "recoveredTransportContexts": 0,
+    "recoveredTransportDebates": [],
+    "timingEligible": true,
+    "fixedTransportContingencyHours": 2,
+    "centralProjection": {
+      "inputs": {
+        "debateCount": 195,
+        "primaryMinutesPerDebate": 4.58,
+        "finalizationMinutesPerDebate": 4.25,
+        "escalationRate": 0.15,
+        "passBMinutesPerEscalatedDebate": 7.5223933333333335,
+        "adjudicationShareOfEscalations": 0.5,
+        "adjudicationMinutesPerAdjudicatedDebate": 5.6,
+        "fixedAudioQaRenderingHours": 5,
+        "fixedTransportContingencyHours": 2
+      },
+      "hours": {
+        "primary": 14.88,
+        "finalization": 13.81,
+        "passB": 3.67,
+        "adjudication": 1.36,
+        "audioQaRendering": 5,
+        "total": 40.73,
+        "transportContingency": 2
+      },
+      "centralTargetPassed": true,
+      "conservativeCeilingPassed": true
+    },
+    "conservativeProjection": {
+      "inputs": {
+        "debateCount": 195,
+        "primaryMinutesPerDebate": 7,
+        "finalizationMinutesPerDebate": 5,
+        "escalationRate": 0.2,
+        "passBMinutesPerEscalatedDebate": 9.402991666666667,
+        "adjudicationShareOfEscalations": 0.6,
+        "adjudicationMinutesPerAdjudicatedDebate": 6.5,
+        "fixedAudioQaRenderingHours": 5,
+        "fixedTransportContingencyHours": 2
+      },
+      "hours": {
+        "primary": 22.75,
+        "finalization": 16.25,
+        "passB": 6.11,
+        "adjudication": 2.53,
+        "audioQaRendering": 5,
+        "total": 54.64,
+        "transportContingency": 2
+      },
+      "centralTargetPassed": false,
+      "conservativeCeilingPassed": true
+    },
+    "runtimePassed": true
+  },
+  "legacyBoundary": {
+    "legacyAssessmentContentAccessed": false,
+    "legacyScoresAccessed": false,
+    "legacyWinnersAccessed": false,
+    "scoreArtifactCreated": false
+  },
+  "analysisAmendment": {
+    "path": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-analysis-amendment.json",
+    "status": "frozen-analysis-only-empty-boundary-elision"
+  },
+  "audioVerification": {
+    "audit": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-verification.json",
+    "status": "failed-one-or-more-attributions-unresolved",
+    "pendingMoves": 12,
+    "verified": 10,
+    "unresolved": 2,
+    "estimatedCostUsd": 0.22885210000000003
+  },
+  "authorization": {
+    "disagreementExtraction": false,
+    "adjudicationModelExecution": false,
+    "compressionAuditModelExecution": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  }
+}

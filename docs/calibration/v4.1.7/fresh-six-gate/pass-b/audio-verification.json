@@ -1,0 +1,1119 @@
+{
+  "schemaVersion": "4.1.7-pass-b-audio-verification-audit",
+  "protocolId": "v4.1.7-fresh-six-triggered-pass-b",
+  "status": "failed-one-or-more-attributions-unresolved",
+  "trigger": "speaker attribution confidence was medium or low in a valid v4.1.7 Pass B artifact",
+  "method": "gpt-4o-transcribe-diarize with two locked high-confidence Pass B speaker references per debate; deterministic locked-excerpt recall is required in the expected speaker's segments",
+  "manualOverrideUsed": false,
+  "analysisAmendment": {
+    "path": "docs/calibration/v4.1.7/fresh-six-gate/pass-b/audio-analysis-amendment.json",
+    "status": "frozen-analysis-only-empty-boundary-elision",
+    "rawTranscriptMutationPerformed": false,
+    "ignoredEmptySegments": 4,
+    "thresholdsAltered": false
+  },
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "legacyBoundary": {
+    "legacyAssessmentContentAccessed": false,
+    "legacyScoresAccessed": false,
+    "legacyWinnersAccessed": false,
+    "scoreArtifactCreated": false
+  },
+  "debates": [
+    {
+      "debateNumber": "58",
+      "debateId": "dillahunty-slick-secular-humanism-christianity-2016",
+      "sourceAudio": {
+        "localPath": "output/transcribe/v417-pass-b-audio-verification/dillahunty-slick-secular-humanism-christianity-2016/audio/source.mp3",
+        "sha256": "ce33adafb10fd7daad427110da71361a90da3b29c50cb6875b06d0437a1c1d8c"
+      },
+      "speakerReferences": [
+        {
+          "speaker": "Matt Dillahunty",
+          "localPath": "output/transcribe/v417-pass-b-audio-verification/dillahunty-slick-secular-humanism-christianity-2016/references/matt-dillahunty.mp3",
+          "sha256": "3fb24ab639627499397002537bf30e650bb0fce93273cc661fb2b9c117abe687",
+          "durationSeconds": 8,
+          "provenance": {
+            "lockedMoveId": "pro-relative-comparison",
+            "lockedSpeaker": "Matt Dillahunty",
+            "passBAttributionConfidence": "high",
+            "sourceSpan": {
+              "startEvent": 343,
+              "endEvent": 358,
+              "startMs": 778000,
+              "endMs": 810000,
+              "excerpt": "absolute certainty isn't relevant to this discussion... the facts of reality, which... are non-subjective and universal, can dictate which methods are superior. Relative comparisons are all that is needed."
+            },
+            "offsetSeconds": 10
+          }
+        },
+        {
+          "speaker": "Matt Slick",
+          "localPath": "output/transcribe/v417-pass-b-audio-verification/dillahunty-slick-secular-humanism-christianity-2016/references/matt-slick.mp3",
+          "sha256": "2e023d267724780dcf92c68afc04d8754aee8e35deafdbe7e2a6cf02fbb0754b",
+          "durationSeconds": 8,
+          "provenance": {
+            "lockedMoveId": "con-self-refutation-criterion",
+            "lockedSpeaker": "Matt Slick",
+            "passBAttributionConfidence": "high",
+            "sourceSpan": {
+              "startEvent": 908,
+              "endEvent": 938,
+              "startMs": 2772480,
+              "endMs": 2878640,
+              "excerpt": "one philosophical position cannot be superior to another... if that philosophical position is self-refuting... that which is self-refuting is automatically inferior to that which is not self-refuting."
+            },
+            "offsetSeconds": 10
+          }
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-shared-logic-reply",
+          "expectedSpeaker": "Matt Dillahunty",
+          "resolvedSpeaker": "Matt Dillahunty",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 2468,
+            "endEvent": 2501,
+            "startMs": 6481200,
+            "endMs": 6661680,
+            "excerpt": "secular humanism doesn't claim that it can account for the laws of logic. So it's not self-refuting... presuppositionalists... never demonstrate... my worldview accounts for this because God... we agree on the foundations of logic."
+          },
+          "verificationExcerpt": "secular humanism doesn't claim that it can account for the laws of logic. So it's not self-refuting... presuppositionalists... never demonstrate... my worldview accounts for this because God... we agree on the foundations of logic.",
+          "clip": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/dillahunty-slick-secular-humanism-christianity-2016/clips/pro-shared-logic-reply.mp3",
+            "sha256": "6313576c71751b97392040828407861a97bc9e94e56b9c5a205812a586d33b4a",
+            "durationSeconds": 186.48
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/dillahunty-slick-secular-humanism-christianity-2016/transcripts/pro-shared-logic-reply.transcript.json",
+            "sha256": "e5326133348132dea4c0e7767eb65cac7646bbd318e9fee68ad32ad009ee2bf4",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 186.48,
+            "segmentCount": 37
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Matt Dillahunty",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "A",
+            "highestOtherSpeakerExcerptRecall": 0.02857142857142857,
+            "expectedSpeakerRecallMargin": 0.9714285714285714,
+            "expectedSpeakerDurationSeconds": 164,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Matt Dillahunty",
+                "segmentCount": 35,
+                "durationSeconds": 164,
+                "wordCount": 579,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 2,
+                "durationSeconds": 4.1,
+                "wordCount": 15,
+                "excerptRecall": 0.02857142857142857
+              }
+            ],
+            "rawTranscriptMutationPerformed": false,
+            "ignoredEmptySegmentAudit": {
+              "policy": {
+                "maximumEmptySegmentsPerTranscript": 4,
+                "maximumSingleEmptySegmentDurationSeconds": 0.1,
+                "maximumTotalEmptySegmentDurationSeconds": 0.25
+              },
+              "count": 0,
+              "indexes": [],
+              "durationSeconds": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "91",
+      "debateId": "cutter-oppy-mind-brain-harmony-god-2025",
+      "sourceAudio": {
+        "localPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/audio/source.mp3",
+        "sha256": "370fba721ca2faae94238600ea08a927362fe1fdc4bc531c22b1147888ce1592"
+      },
+      "speakerReferences": [
+        {
+          "speaker": "Brian Cutter",
+          "localPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/references/brian-cutter.mp3",
+          "sha256": "1066a038b0233c3c689a06e142a8593f2afb7342700d85c69e4c6ce9d029ef49",
+          "durationSeconds": 8,
+          "provenance": {
+            "lockedMoveId": "pro-harmony-data",
+            "lockedSpeaker": "Brian Cutter",
+            "passBAttributionConfidence": "high",
+            "sourceSpan": {
+              "startEvent": 248,
+              "endEvent": 367,
+              "startMs": 586080,
+              "endMs": 872240,
+              "excerpt": "normative harmony ... consists in the fact that ... the normative roles of experiences are aligned with their descriptive or functional roles"
+            },
+            "offsetSeconds": 10
+          }
+        },
+        {
+          "speaker": "Graham Oppy",
+          "localPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/references/graham-oppy.mp3",
+          "sha256": "aadf329beb7eca081148eab08cb5b271ea982c63ecaf49bfdf46083ca5bdb24d",
+          "durationSeconds": 8,
+          "provenance": {
+            "lockedMoveId": "con-identity-opening",
+            "lockedSpeaker": "Graham Oppy",
+            "passBAttributionConfidence": "high",
+            "sourceSpan": {
+              "startEvent": 469,
+              "endEvent": 637,
+              "startMs": 1100480,
+              "endMs": 1573760,
+              "excerpt": "phenomenal events, pain events for example, just are neural events ... there isn't a question about correlation that arises"
+            },
+            "offsetSeconds": 10
+          }
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-theistic-fit",
+          "expectedSpeaker": "Brian Cutter",
+          "resolvedSpeaker": "Brian Cutter",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 372,
+            "endEvent": 468,
+            "startMs": 879920,
+            "endMs": 1106960,
+            "excerpt": "given that the being is perfectly good ... we would kind of expect it to act for the sake of the good"
+          },
+          "verificationExcerpt": "given that the being is perfectly good ... we would kind of expect it to act for the sake of the good",
+          "clip": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/clips/pro-theistic-fit.mp3",
+            "sha256": "65e0325c0a0eb0ea1d2a9f7c9fd85687eca335f2dd75327fdc04a9feaee844ca",
+            "durationSeconds": 233.04
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/pro-theistic-fit.transcript.json",
+            "sha256": "db2dc49ad65ccafa9fa45549e91a274066fe77c1520035631baab7f2a09f78ea",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 233.04,
+            "segmentCount": 36
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Brian Cutter",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "Graham Oppy",
+            "highestOtherSpeakerExcerptRecall": 0.14285714285714285,
+            "expectedSpeakerRecallMargin": 0.8571428571428572,
+            "expectedSpeakerDurationSeconds": 207.3,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Brian Cutter",
+                "segmentCount": 34,
+                "durationSeconds": 207.3,
+                "wordCount": 595,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "Graham Oppy",
+                "segmentCount": 2,
+                "durationSeconds": 13.45,
+                "wordCount": 17,
+                "excerptRecall": 0.14285714285714285
+              }
+            ],
+            "rawTranscriptMutationPerformed": false,
+            "ignoredEmptySegmentAudit": {
+              "policy": {
+                "maximumEmptySegmentsPerTranscript": 4,
+                "maximumSingleEmptySegmentDurationSeconds": 0.1,
+                "maximumTotalEmptySegmentDurationSeconds": 0.25
+              },
+              "count": 0,
+              "indexes": [],
+              "durationSeconds": 0
+            }
+          }
+        },
+        {
+          "moveId": "pro-epistemic-gap-reply",
+          "expectedSpeaker": "Brian Cutter",
+          "resolvedSpeaker": "Brian Cutter",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 700,
+            "endEvent": 792,
+            "startMs": 1725840,
+            "endMs": 1971919,
+            "excerpt": "identity theory is true ... doesn't necessarily affect the probabilities at all ... here we're talking about epistemic probabilities"
+          },
+          "verificationExcerpt": "identity theory is true ... doesn't necessarily affect the probabilities at all ... here we're talking about epistemic probabilities",
+          "clip": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/clips/pro-epistemic-gap-reply.mp3",
+            "sha256": "004ef771fd1f77833354fd4af607f0acef329fa5dfa02a60c2332335c170b70c",
+            "durationSeconds": 252.079
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/pro-epistemic-gap-reply.transcript.json",
+            "sha256": "6523b4213a83ec3d11a378da45330d006153fc0bac593dbf4b6b5769b238b4ce",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 252.079,
+            "segmentCount": 27
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Brian Cutter",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "A",
+            "highestOtherSpeakerExcerptRecall": 0.058823529411764705,
+            "expectedSpeakerRecallMargin": 0.9411764705882353,
+            "expectedSpeakerDurationSeconds": 230.5,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Brian Cutter",
+                "segmentCount": 26,
+                "durationSeconds": 230.5,
+                "wordCount": 592,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 1,
+                "durationSeconds": 9.5,
+                "wordCount": 40,
+                "excerptRecall": 0.058823529411764705
+              }
+            ],
+            "rawTranscriptMutationPerformed": false,
+            "ignoredEmptySegmentAudit": {
+              "policy": {
+                "maximumEmptySegmentsPerTranscript": 4,
+                "maximumSingleEmptySegmentDurationSeconds": 0.1,
+                "maximumTotalEmptySegmentDurationSeconds": 0.25
+              },
+              "count": 0,
+              "indexes": [],
+              "durationSeconds": 0
+            }
+          }
+        },
+        {
+          "moveId": "con-apriori-reply",
+          "expectedSpeaker": "Graham Oppy",
+          "resolvedSpeaker": null,
+          "status": "unresolved",
+          "sourceSpan": {
+            "startEvent": 793,
+            "endEvent": 835,
+            "startMs": 1969440,
+            "endMs": 2092480,
+            "excerpt": "I think that it's just a priori that pain unlike pleasure causes and rationalizes aversive behavior"
+          },
+          "verificationExcerpt": "I think that it's just a priori that pain unlike pleasure causes and rationalizes aversive behavior",
+          "clip": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/clips/con-apriori-reply.mp3",
+            "sha256": "ce6d67b899587158d2a8370005fc2f083e21b4cfc7f12f3963327ae882010b27",
+            "durationSeconds": 129.04
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/con-apriori-reply.transcript.json",
+            "sha256": "0db15b5c154c0e3d968d3f13ddd21f6e237dee3ab55c6baae1707dff089c262c",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 129.04,
+            "segmentCount": 16
+          },
+          "deterministicEvidence": {
+            "status": "unresolved",
+            "expectedSpeaker": "Graham Oppy",
+            "fullClipExcerptRecall": 0.5,
+            "expectedSpeakerExcerptRecall": 0.375,
+            "highestOtherSpeaker": "Brian Cutter",
+            "highestOtherSpeakerExcerptRecall": 0.5,
+            "expectedSpeakerRecallMargin": -0.125,
+            "expectedSpeakerDurationSeconds": 75.4,
+            "checks": {
+              "fullClipExcerptRecovered": false,
+              "expectedSpeakerExcerptRecovered": false,
+              "expectedSpeakerRecallDistinct": false,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Brian Cutter",
+                "segmentCount": 9,
+                "durationSeconds": 45.95,
+                "wordCount": 141,
+                "excerptRecall": 0.5
+              },
+              {
+                "speaker": "Graham Oppy",
+                "segmentCount": 7,
+                "durationSeconds": 75.4,
+                "wordCount": 130,
+                "excerptRecall": 0.375
+              }
+            ],
+            "rawTranscriptMutationPerformed": false,
+            "ignoredEmptySegmentAudit": {
+              "policy": {
+                "maximumEmptySegmentsPerTranscript": 4,
+                "maximumSingleEmptySegmentDurationSeconds": 0.1,
+                "maximumTotalEmptySegmentDurationSeconds": 0.25
+              },
+              "count": 0,
+              "indexes": [],
+              "durationSeconds": 0
+            }
+          }
+        },
+        {
+          "moveId": "con-comparative-fit",
+          "expectedSpeaker": "Graham Oppy",
+          "resolvedSpeaker": "Graham Oppy",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 1311,
+            "endEvent": 1410,
+            "startMs": 3312160,
+            "endMs": 3570000,
+            "excerpt": "what was attractive about this to God? Why did God choose to make a world with 500 million years of animal suffering that really doesn't seem to serve any purpose?"
+          },
+          "verificationExcerpt": "what was attractive about this to God? Why did God choose to make a world with 500 million years of animal suffering that really doesn't seem to serve any purpose?",
+          "clip": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/clips/con-comparative-fit.mp3",
+            "sha256": "c220926b03bee6b2885a0fc4a714e377eb917d6ec0ef9796aafb404a889e1274",
+            "durationSeconds": 263.84
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/con-comparative-fit.transcript.json",
+            "sha256": "d63f62a739df1b20a74e32de4b3a7fe999f80020d0d6fb25559af95db8d58b62",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 263.84,
+            "segmentCount": 43
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Graham Oppy",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "Brian Cutter",
+            "highestOtherSpeakerExcerptRecall": 0.3333333333333333,
+            "expectedSpeakerRecallMargin": 0.6666666666666667,
+            "expectedSpeakerDurationSeconds": 137.65,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Graham Oppy",
+                "segmentCount": 30,
+                "durationSeconds": 137.65,
+                "wordCount": 391,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "Brian Cutter",
+                "segmentCount": 13,
+                "durationSeconds": 103.15,
+                "wordCount": 277,
+                "excerptRecall": 0.3333333333333333
+              }
+            ],
+            "rawTranscriptMutationPerformed": false,
+            "ignoredEmptySegmentAudit": {
+              "policy": {
+                "maximumEmptySegmentsPerTranscript": 4,
+                "maximumSingleEmptySegmentDurationSeconds": 0.1,
+                "maximumTotalEmptySegmentDurationSeconds": 0.25
+              },
+              "count": 0,
+              "indexes": [],
+              "durationSeconds": 0
+            }
+          }
+        },
+        {
+          "moveId": "pro-qualitative-likelihood",
+          "expectedSpeaker": "Brian Cutter",
+          "resolvedSpeaker": "Brian Cutter",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 1525,
+            "endEvent": 1668,
+            "startMs": 3871359,
+            "endMs": 4212800,
+            "excerpt": "what matters at the end of the day is that we can be justified in thinking that one probability is significantly higher than another"
+          },
+          "verificationExcerpt": "what matters at the end of the day is that we can be justified in thinking that one probability is significantly higher than another",
+          "clip": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/clips/pro-qualitative-likelihood.mp3",
+            "sha256": "8f59036048b18c4e0dbb803b5d670809375b9c83eca9b166b34b192ab54e38ad",
+            "durationSeconds": 347.441
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/pro-qualitative-likelihood.transcript.json",
+            "sha256": "18689e6aa25c38ed9aa2a6ae73bc9c4fd69518f596acb4a41210eb44923b10ab",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 347.441,
+            "segmentCount": 50
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Brian Cutter",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "A",
+            "highestOtherSpeakerExcerptRecall": 0.4583333333333333,
+            "expectedSpeakerRecallMargin": 0.5416666666666667,
+            "expectedSpeakerDurationSeconds": 228.95,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Brian Cutter",
+                "segmentCount": 29,
+                "durationSeconds": 228.95,
+                "wordCount": 693,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 5,
+                "durationSeconds": 39.15,
+                "wordCount": 113,
+                "excerptRecall": 0.4583333333333333
+              },
+              {
+                "speaker": "Graham Oppy",
+                "segmentCount": 16,
+                "durationSeconds": 61.7,
+                "wordCount": 179,
+                "excerptRecall": 0.375
+              }
+            ],
+            "rawTranscriptMutationPerformed": false,
+            "ignoredEmptySegmentAudit": {
+              "policy": {
+                "maximumEmptySegmentsPerTranscript": 4,
+                "maximumSingleEmptySegmentDurationSeconds": 0.1,
+                "maximumTotalEmptySegmentDurationSeconds": 0.25
+              },
+              "count": 0,
+              "indexes": [],
+              "durationSeconds": 0
+            }
+          }
+        },
+        {
+          "moveId": "con-measure-reply",
+          "expectedSpeaker": "Graham Oppy",
+          "resolvedSpeaker": null,
+          "status": "unresolved",
+          "sourceSpan": {
+            "startEvent": 1669,
+            "endEvent": 1730,
+            "startMs": 4210719,
+            "endMs": 4377760,
+            "excerpt": "maybe you do think naturalism is simpler but theism fits the data much better ... it's hard to know how to weigh that up"
+          },
+          "verificationExcerpt": "maybe you do think naturalism is simpler but theism fits the data much better ... it's hard to know how to weigh that up",
+          "clip": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/clips/con-measure-reply.mp3",
+            "sha256": "f473693c0201dbbdd982f68e105901252ecf6701d9783301060a1be8060ec35c",
+            "durationSeconds": 173.041
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/cutter-oppy-mind-brain-harmony-god-2025/transcripts/con-measure-reply.transcript.json",
+            "sha256": "7db53f858c164222d321a72df4e3b90aea96f26608a0c84d18c41694b80cebc8",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 173.041,
+            "segmentCount": 26
+          },
+          "deterministicEvidence": {
+            "status": "unresolved",
+            "expectedSpeaker": "Graham Oppy",
+            "fullClipExcerptRecall": 0.8260869565217391,
+            "expectedSpeakerExcerptRecall": 0.782608695652174,
+            "highestOtherSpeaker": "Brian Cutter",
+            "highestOtherSpeakerExcerptRecall": 0.6521739130434783,
+            "expectedSpeakerRecallMargin": 0.13043478260869568,
+            "expectedSpeakerDurationSeconds": 110.65,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": false,
+              "expectedSpeakerRecallDistinct": false,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Graham Oppy",
+                "segmentCount": 19,
+                "durationSeconds": 110.65,
+                "wordCount": 293,
+                "excerptRecall": 0.782608695652174
+              },
+              {
+                "speaker": "Brian Cutter",
+                "segmentCount": 7,
+                "durationSeconds": 47.25,
+                "wordCount": 148,
+                "excerptRecall": 0.6521739130434783
+              }
+            ],
+            "rawTranscriptMutationPerformed": false,
+            "ignoredEmptySegmentAudit": {
+              "policy": {
+                "maximumEmptySegmentsPerTranscript": 4,
+                "maximumSingleEmptySegmentDurationSeconds": 0.1,
+                "maximumTotalEmptySegmentDurationSeconds": 0.25
+              },
+              "count": 0,
+              "indexes": [],
+              "durationSeconds": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "59",
+      "debateId": "bollore-halper-god-science-evidence-2026",
+      "sourceAudio": {
+        "localPath": "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/audio/source.mp3",
+        "sha256": "bc7e7468e19adbc3821665666c48b7da3deb66bc747eeb353466974d805e3f79"
+      },
+      "speakerReferences": [
+        {
+          "speaker": "Phil Halper",
+          "localPath": "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/references/phil-halper.mp3",
+          "sha256": "5ce93ea17482b468a818134550fe46accdd7b3a3305e232cdcf6a43eab270f13",
+          "durationSeconds": 8,
+          "provenance": {
+            "lockedMoveId": "con-cosmos-opening",
+            "lockedSpeaker": "Phil Halper",
+            "passBAttributionConfidence": "high",
+            "sourceSpan": {
+              "startEvent": 19,
+              "endEvent": 75,
+              "startMs": 43360,
+              "endMs": 165280,
+              "excerpt": "The big bang should be understood merely as a theory that says the universe evolved from a hot dense state... The theorem proves that inflation must have a beginning. The universe as a whole, it doesn't."
+            },
+            "offsetSeconds": 10
+          }
+        },
+        {
+          "speaker": "Michel-Yves Bollore",
+          "localPath": "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/references/michel-yves-bollore.mp3",
+          "sha256": "6b648d634c6f4b529a0e03a63eefffe2037d4bec3c5eacd63f6d620264a7d451",
+          "durationSeconds": 8,
+          "provenance": {
+            "lockedMoveId": "pro-cosmos-bgv",
+            "lockedSpeaker": "Michel-Yves Bollore",
+            "passBAttributionConfidence": "high",
+            "sourceSpan": {
+              "startEvent": 601,
+              "endEvent": 628,
+              "startMs": 1495360,
+              "endMs": 1577600,
+              "excerpt": "They have demonstrated that even if the big bang that we know is not the real beginning... this series is limited and therefore there has been an absolute beginning someday."
+            },
+            "offsetSeconds": 10
+          }
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "con-finetuning-alternatives",
+          "expectedSpeaker": "Phil Halper",
+          "resolvedSpeaker": "Phil Halper",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 997,
+            "endEvent": 1042,
+            "startMs": 2440720,
+            "endMs": 2538720,
+            "excerpt": "It looks better than God... it's implied by inflationary cosmology... Weinberg predicted the value of the cosmological constant using the multiverse... What prediction has God made for anything observable in cosmology?"
+          },
+          "verificationExcerpt": "It looks better than God... it's implied by inflationary cosmology... Weinberg predicted the value of the cosmological constant using the multiverse... What prediction has God made for anything observable in cosmology?",
+          "clip": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/clips/con-finetuning-alternatives.mp3",
+            "sha256": "c496f60d8e89880a5236a9bbc341704ac21dcb38d62e96e48a46d0ea6cb0cf55",
+            "durationSeconds": 104
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/transcripts/con-finetuning-alternatives.transcript.json",
+            "sha256": "d073e7d9bfe113586f9c44b8355a867afeb653299932fae52666c46f29a3dd03",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 104,
+            "segmentCount": 28
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Phil Halper",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "Michel-Yves Bollore",
+            "highestOtherSpeakerExcerptRecall": 0.0967741935483871,
+            "expectedSpeakerRecallMargin": 0.9032258064516129,
+            "expectedSpeakerDurationSeconds": 83.6,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Phil Halper",
+                "segmentCount": 19,
+                "durationSeconds": 83.6,
+                "wordCount": 274,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "Michel-Yves Bollore",
+                "segmentCount": 8,
+                "durationSeconds": 14.45,
+                "wordCount": 51,
+                "excerptRecall": 0.0967741935483871
+              }
+            ],
+            "rawTranscriptMutationPerformed": false,
+            "ignoredEmptySegmentAudit": {
+              "policy": {
+                "maximumEmptySegmentsPerTranscript": 4,
+                "maximumSingleEmptySegmentDurationSeconds": 0.1,
+                "maximumTotalEmptySegmentDurationSeconds": 0.25
+              },
+              "count": 1,
+              "indexes": [
+                25
+              ],
+              "durationSeconds": 0.05
+            }
+          }
+        },
+        {
+          "moveId": "con-abiogenesis-reply",
+          "expectedSpeaker": "Phil Halper",
+          "resolvedSpeaker": "Phil Halper",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 1167,
+            "endEvent": 1217,
+            "startMs": 2834240,
+            "endMs": 2955760,
+            "excerpt": "Where do you get the probability distribution... George, he didn't work on origins of life research... many labs around the world [are] working on origins of life. The leading hypothesis... is the RNA world hypothesis."
+          },
+          "verificationExcerpt": "Where do you get the probability distribution... George, he didn't work on origins of life research... many labs around the world [are] working on origins of life. The leading hypothesis... is the RNA world hypothesis.",
+          "clip": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/clips/con-abiogenesis-reply.mp3",
+            "sha256": "6fabdbd5a3080323b14e343cd255aa045aa6f871b2fa15ff8a86454878adb62d",
+            "durationSeconds": 127.52
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/transcripts/con-abiogenesis-reply.transcript.json",
+            "sha256": "6a5e778772dda9ad81888784c27898ebf0bf53eb0e0f7010524b491fc6a26f31",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 127.52,
+            "segmentCount": 52
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Phil Halper",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "Michel-Yves Bollore",
+            "highestOtherSpeakerExcerptRecall": 0.37142857142857144,
+            "expectedSpeakerRecallMargin": 0.6285714285714286,
+            "expectedSpeakerDurationSeconds": 47.7,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Phil Halper",
+                "segmentCount": 20,
+                "durationSeconds": 47.7,
+                "wordCount": 164,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "Michel-Yves Bollore",
+                "segmentCount": 31,
+                "durationSeconds": 67.1,
+                "wordCount": 208,
+                "excerptRecall": 0.37142857142857144
+              }
+            ],
+            "rawTranscriptMutationPerformed": false,
+            "ignoredEmptySegmentAudit": {
+              "policy": {
+                "maximumEmptySegmentsPerTranscript": 4,
+                "maximumSingleEmptySegmentDurationSeconds": 0.1,
+                "maximumTotalEmptySegmentDurationSeconds": 0.25
+              },
+              "count": 1,
+              "indexes": [
+                36
+              ],
+              "durationSeconds": 0.05
+            }
+          }
+        },
+        {
+          "moveId": "pro-divine-authority",
+          "expectedSpeaker": "Michel-Yves Bollore",
+          "resolvedSpeaker": "Michel-Yves Bollore",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 1956,
+            "endEvent": 2051,
+            "startMs": 4754320,
+            "endMs": 5005760,
+            "excerpt": "There is only one thing which is bad for God... losing men... for eternity... the only goal of God is to bring as many men back to paradise."
+          },
+          "verificationExcerpt": "There is only one thing which is bad for God... losing men... for eternity... the only goal of God is to bring as many men back to paradise.",
+          "clip": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/clips/pro-divine-authority.mp3",
+            "sha256": "5a17893adc00b65af9536d7571b1b9217d09d0edde01a6cefea56dcba66bdd1c",
+            "durationSeconds": 257.44
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/transcripts/pro-divine-authority.transcript.json",
+            "sha256": "2643d739f485b61a33927a96cf433631ad58b35d07ad89dc19727a7d8453f62d",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 257.44,
+            "segmentCount": 114
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Michel-Yves Bollore",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "Phil Halper",
+            "highestOtherSpeakerExcerptRecall": 0.42857142857142855,
+            "expectedSpeakerRecallMargin": 0.5714285714285714,
+            "expectedSpeakerDurationSeconds": 187.05,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Michel-Yves Bollore",
+                "segmentCount": 70,
+                "durationSeconds": 187.05,
+                "wordCount": 510,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "Phil Halper",
+                "segmentCount": 42,
+                "durationSeconds": 48.9,
+                "wordCount": 182,
+                "excerptRecall": 0.42857142857142855
+              }
+            ],
+            "rawTranscriptMutationPerformed": false,
+            "ignoredEmptySegmentAudit": {
+              "policy": {
+                "maximumEmptySegmentsPerTranscript": 4,
+                "maximumSingleEmptySegmentDurationSeconds": 0.1,
+                "maximumTotalEmptySegmentDurationSeconds": 0.25
+              },
+              "count": 2,
+              "indexes": [
+                27,
+                86
+              ],
+              "durationSeconds": 0.15
+            }
+          }
+        },
+        {
+          "moveId": "con-moral-critique",
+          "expectedSpeaker": "Phil Halper",
+          "resolvedSpeaker": "Phil Halper",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 2052,
+            "endEvent": 2074,
+            "startMs": 5003760,
+            "endMs": 5061280,
+            "excerpt": "If you can't say because of your religion that a genocide is evil, then you can't say anything isn't evil. You've lost your moral compass... If that isn't evil, what the hell is?"
+          },
+          "verificationExcerpt": "If you can't say because of your religion that a genocide is evil, then you can't say anything isn't evil. You've lost your moral compass... If that isn't evil, what the hell is?",
+          "clip": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/clips/con-moral-critique.mp3",
+            "sha256": "20633cf5ecdbf9ff3c090912cf42a1e326e09214486539ee687dbc354b7e2400",
+            "durationSeconds": 63.52
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/bollore-halper-god-science-evidence-2026/transcripts/con-moral-critique.transcript.json",
+            "sha256": "afbda66368df62c64f5e07b488c92d860363ebcc496189a321a25ed74a6684e1",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 63.52,
+            "segmentCount": 19
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Phil Halper",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "A",
+            "highestOtherSpeakerExcerptRecall": 0.09090909090909091,
+            "expectedSpeakerRecallMargin": 0.9090909090909091,
+            "expectedSpeakerDurationSeconds": 52.3,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Phil Halper",
+                "segmentCount": 12,
+                "durationSeconds": 52.3,
+                "wordCount": 153,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 3,
+                "durationSeconds": 4.05,
+                "wordCount": 20,
+                "excerptRecall": 0.09090909090909091
+              },
+              {
+                "speaker": "Michel-Yves Bollore",
+                "segmentCount": 4,
+                "durationSeconds": 1.8,
+                "wordCount": 11,
+                "excerptRecall": 0.06060606060606061
+              }
+            ],
+            "rawTranscriptMutationPerformed": false,
+            "ignoredEmptySegmentAudit": {
+              "policy": {
+                "maximumEmptySegmentsPerTranscript": 4,
+                "maximumSingleEmptySegmentDurationSeconds": 0.1,
+                "maximumTotalEmptySegmentDurationSeconds": 0.25
+              },
+              "count": 0,
+              "indexes": [],
+              "durationSeconds": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "144",
+      "debateId": "plantinga-dennett-evolution-naturalism-2018",
+      "sourceAudio": {
+        "localPath": "output/transcribe/v417-pass-b-audio-verification/plantinga-dennett-evolution-naturalism-2018/audio/source.mp3",
+        "sha256": "cf4456601aada8674c5856e62bf1807d76034d5760811a7b1bb9cb5e97232c06"
+      },
+      "speakerReferences": [
+        {
+          "speaker": "Alvin Plantinga",
+          "localPath": "output/transcribe/v417-pass-b-audio-verification/plantinga-dennett-evolution-naturalism-2018/references/alvin-plantinga.mp3",
+          "sha256": "4a4f703ca73ad8f3f077e655e696ccfbf7711280a8c76a1b2610df175cff5da3",
+          "durationSeconds": 8,
+          "provenance": {
+            "lockedMoveId": "pro-compatibility-constructive",
+            "lockedSpeaker": "Alvin Plantinga",
+            "passBAttributionConfidence": "high",
+            "sourceSpan": {
+              "startEvent": 202,
+              "endEvent": 338,
+              "startMs": 451960,
+              "endMs": 750040,
+              "excerpt": "God could have caused the right mutations to arise at the right time... Darwinism is entirely compatible with God's guiding, orchestrating, and overseeing the whole process."
+            },
+            "offsetSeconds": 10
+          }
+        },
+        {
+          "speaker": "Daniel Dennett",
+          "localPath": "output/transcribe/v417-pass-b-audio-verification/plantinga-dennett-evolution-naturalism-2018/references/daniel-dennett.mp3",
+          "sha256": "8853d3966dc46b999b63bf6b89d1f043bdb7c6254671b27fe008d4cd78cc9ce9",
+          "durationSeconds": 8,
+          "provenance": {
+            "lockedMoveId": "con-compatibility-reply",
+            "lockedSpeaker": "Daniel Dennett",
+            "passBAttributionConfidence": "high",
+            "sourceSpan": {
+              "startEvent": 1437,
+              "endEvent": 1470,
+              "startMs": 3190040,
+              "endMs": 3272800,
+              "excerpt": "I agree with Alvin that contemporary evolutionary theory can't demonstrate the absence of intelligent design... There's not a shred of evidence for any such fantasy."
+            },
+            "offsetSeconds": 10
+          }
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "con-causal-tracking-reply",
+          "expectedSpeaker": "Daniel Dennett",
+          "resolvedSpeaker": "Daniel Dennett",
+          "status": "verified",
+          "sourceSpan": {
+            "startEvent": 2650,
+            "endEvent": 2713,
+            "startMs": 5930520,
+            "endMs": 6075600,
+            "excerpt": "Evolution has created these things where there is indeed causal relation between truth and those states... that it persists in tracking truth is a precondition for its continuing in the system."
+          },
+          "verificationExcerpt": "Evolution has created these things where there is indeed causal relation between truth and those states... that it persists in tracking truth is a precondition for its continuing in the system.",
+          "clip": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/plantinga-dennett-evolution-naturalism-2018/clips/con-causal-tracking-reply.mp3",
+            "sha256": "efac54ed71b328df71e1ed1c47ca83d0480424366c533379ba698377339d0f35",
+            "durationSeconds": 151.08
+          },
+          "transcript": {
+            "localPath": "output/transcribe/v417-pass-b-audio-verification/plantinga-dennett-evolution-naturalism-2018/transcripts/con-causal-tracking-reply.transcript.json",
+            "sha256": "3ef7a313d03c2aae15edf5375a50be706401df5adf8157a0559cf58b546aced1",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "durationSeconds": 151.08,
+            "segmentCount": 26
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Daniel Dennett",
+            "fullClipExcerptRecall": 0.967741935483871,
+            "expectedSpeakerExcerptRecall": 0.967741935483871,
+            "highestOtherSpeaker": "A",
+            "highestOtherSpeakerExcerptRecall": 0.06451612903225806,
+            "expectedSpeakerRecallMargin": 0.903225806451613,
+            "expectedSpeakerDurationSeconds": 126.5,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Daniel Dennett",
+                "segmentCount": 23,
+                "durationSeconds": 126.5,
+                "wordCount": 358,
+                "excerptRecall": 0.967741935483871
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 3,
+                "durationSeconds": 6.05,
+                "wordCount": 18,
+                "excerptRecall": 0.06451612903225806
+              }
+            ],
+            "rawTranscriptMutationPerformed": false,
+            "ignoredEmptySegmentAudit": {
+              "policy": {
+                "maximumEmptySegmentsPerTranscript": 4,
+                "maximumSingleEmptySegmentDurationSeconds": 0.1,
+                "maximumTotalEmptySegmentDurationSeconds": 0.25
+              },
+              "count": 0,
+              "indexes": [],
+              "durationSeconds": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "debates": 4,
+    "moves": 12,
+    "verified": 10,
+    "unresolved": 2,
+    "verificationRate": 0.8333333333333334
+  },
+  "transcription": {
+    "model": "gpt-4o-transcribe-diarize",
+    "paidCalls": 12,
+    "retries": 0,
+    "estimatedTranscribedMinutes": 38.14201666666667,
+    "estimatedRateUsdPerMinute": 0.006,
+    "estimatedCostUsd": 0.22885210000000003,
+    "maximumAuthorizedCostUsd": 0.3,
+    "exactBilledCostAvailable": false,
+    "stayedWithinAuthorizedCostCap": true
+  },
+  "authorization": {
+    "disagreementExtraction": false,
+    "adjudicationModelExecution": false,
+    "compressionAuditModelExecution": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  }
+}
