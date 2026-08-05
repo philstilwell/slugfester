@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "4.1.6-triggered-pass-b-preparation",
+  "protocolId": "v4.1.6-triggered-pass-b-consensus",
+  "status": "prepared-nonredundant-score-blind-pass-b",
+  "calibrationOnly": true,
+  "sourceAccess": {
+    "completeTranscriptVisibleToModel": true,
+    "completeOriginalEventsHashLocked": true,
+    "completeOriginalEventsVisibleToModel": false,
+    "lockedEventsVisibleToModel": true,
+    "contextRowsPerSide": 2
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "inputs": {
+    "workflowBase": "docs/assessment-workflow-v4.0.md",
+    "workflowBounded": "docs/assessment-workflow-v4.1.md",
+    "workflowConsistency": "docs/assessment-workflow-v4.1.3.md",
+    "workflowBurdenTuple": "docs/assessment-workflow-v4.1.4.md",
+    "workflowTiming": "docs/assessment-workflow-v4.1.5.md",
+    "workflowSourceDelivery": "docs/assessment-workflow-v4.1.6.md",
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/manual.md",
+    "schema": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/schemas/pass-b.schema.json"
+  },
+  "inheritedPreflight": {
+    "path": "docs/calibration/v4.1.5/lean-retired-gate/pass-b/schema-preflight/model-execution.json",
+    "statusRequired": "endpoint-preflight-passed",
+    "exactJudgmentShapeUnchanged": true,
+    "modelContextsRepeated": 0
+  },
+  "contexts": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "packet": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/packets/debate-55.json",
+      "lockedEvents": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/locked-events/debate-55.json",
+      "sourcePacket": "docs/calibration/v4.1.5/lean-retired-gate/packets/debate-55.json",
+      "transcript": ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt",
+      "events": ".assessment-cache/captions/zQBY5K-Ns2Y/events.json",
+      "localManifest": ".assessment-cache/captions/zQBY5K-Ns2Y/manifest.json",
+      "primaryOutput": "docs/calibration/v4.1.5/lean-retired-gate/primary-outputs/debate-55.json",
+      "output": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/outputs/debate-55.json",
+      "packetValidation": {
+        "status": "passed",
+        "debateNumber": "55",
+        "lockedMoves": 10,
+        "lockedSections": 5,
+        "primaryJudgmentFieldsVisible": 0,
+        "schemaVersion": "4.1.6-triggered-pass-b-packet",
+        "protocolId": "v4.1.6-triggered-pass-b-consensus"
+      },
+      "eventValidation": {
+        "status": "passed",
+        "debateNumber": "55",
+        "moves": 10,
+        "originalEventCount": 2471,
+        "lockedRows": 374,
+        "deliveredRows": 414,
+        "contextRows": 2,
+        "originalEventsHashLocked": true
+      },
+      "originalEventsFileSha256": "d09e63acc41236158b808b6242c871428a467697fba1f2454cfac143c185aa3f"
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "packet": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/packets/debate-103.json",
+      "lockedEvents": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/locked-events/debate-103.json",
+      "sourcePacket": "docs/calibration/v4.1.5/lean-retired-gate/packets/debate-103.json",
+      "transcript": ".assessment-cache/captions/g1TlLCSn_5o/transcript.txt",
+      "events": ".assessment-cache/captions/g1TlLCSn_5o/events.json",
+      "localManifest": ".assessment-cache/captions/g1TlLCSn_5o/manifest.json",
+      "primaryOutput": "docs/calibration/v4.1.5/lean-retired-gate/primary-outputs/debate-103.json",
+      "output": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/outputs/debate-103.json",
+      "packetValidation": {
+        "status": "passed",
+        "debateNumber": "103",
+        "lockedMoves": 14,
+        "lockedSections": 5,
+        "primaryJudgmentFieldsVisible": 0,
+        "schemaVersion": "4.1.6-triggered-pass-b-packet",
+        "protocolId": "v4.1.6-triggered-pass-b-consensus"
+      },
+      "eventValidation": {
+        "status": "passed",
+        "debateNumber": "103",
+        "moves": 14,
+        "originalEventCount": 1359,
+        "lockedRows": 624,
+        "deliveredRows": 680,
+        "contextRows": 2,
+        "originalEventsHashLocked": true
+      },
+      "originalEventsFileSha256": "b9846f8275ade82451cfd86a4b4b5eefa89a9bbf1515067e2e18965bcadf03dc"
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "packet": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/packets/debate-161.json",
+      "lockedEvents": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/locked-events/debate-161.json",
+      "sourcePacket": "docs/calibration/v4.1.5/lean-retired-gate/packets/debate-161.json",
+      "transcript": ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt",
+      "events": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+      "localManifest": ".assessment-cache/captions/9JVRy7bR7zI/manifest.json",
+      "primaryOutput": "docs/calibration/v4.1.5/lean-retired-gate/primary-outputs/debate-161.json",
+      "output": "docs/calibration/v4.1.6/lean-retired-gate/pass-b/outputs/debate-161.json",
+      "packetValidation": {
+        "status": "passed",
+        "debateNumber": "161",
+        "lockedMoves": 10,
+        "lockedSections": 5,
+        "primaryJudgmentFieldsVisible": 0,
+        "schemaVersion": "4.1.6-triggered-pass-b-packet",
+        "protocolId": "v4.1.6-triggered-pass-b-consensus"
+      },
+      "eventValidation": {
+        "status": "passed",
+        "debateNumber": "161",
+        "moves": 10,
+        "originalEventCount": 3159,
+        "lockedRows": 861,
+        "deliveredRows": 901,
+        "contextRows": 2,
+        "originalEventsHashLocked": true
+      },
+      "originalEventsFileSha256": "5dd29c053f0e5da4ed79b6f818fb844a6515552671dbc4014916d18ca1d2cbbc"
+    }
+  ],
+  "totals": {
+    "debates": 3,
+    "lockedMoves": 34,
+    "originalEvents": 6989,
+    "deliveredLockedAndContextEventRows": 1995,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "deterministicFixture": true,
+    "passBModelExecution": false,
+    "disagreementExtraction": false,
+    "adjudication": false,
+    "productionMutation": false
+  }
+}

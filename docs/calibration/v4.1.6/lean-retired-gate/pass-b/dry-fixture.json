@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "4.1.6-triggered-pass-b-tooling-fixture",
+  "protocolId": "v4.1.6-triggered-pass-b-consensus",
+  "status": "passed",
+  "inheritedExactSchemaPreflight": true,
+  "ledgerValidation": {
+    "status": "passed",
+    "debateNumber": "schema-preflight",
+    "moves": 8,
+    "originalEventCount": 8,
+    "lockedRows": 8,
+    "deliveredRows": 34,
+    "contextRows": 2,
+    "originalEventsHashLocked": true
+  },
+  "outputValidation": {
+    "status": "passed",
+    "debateNumber": "schema-preflight",
+    "moves": 8,
+    "sections": 4,
+    "mediumOrLowAttributionMoves": [],
+    "calculatedFields": 0,
+    "schemaVersion": "4.1.6-triggered-pass-b-output",
+    "protocolId": "v4.1.6-triggered-pass-b-consensus"
+  },
+  "mutationTests": {
+    "alteredOriginalEventRejected": true
+  },
+  "timingPolicyTests": {
+    "clean": {
+      "wallPassBMinutesPerDebate": 10.33,
+      "computePassBMinutesPerDebate": 10.33,
+      "conservativePassBMinutesPerDebate": 12.92,
+      "transportCleanContexts": 3,
+      "recoveredTransportContexts": 0,
+      "recoveredTransportDebates": [],
+      "timingEligible": true,
+      "fixedTransportContingencyHours": 2,
+      "centralProjection": {
+        "inputs": {
+          "debateCount": 195,
+          "primaryMinutesPerDebate": 4.4,
+          "finalizationMinutesPerDebate": 4.25,
+          "escalationRate": 0.15,
+          "passBMinutesPerEscalatedDebate": 10.333333333333334,
+          "adjudicationShareOfEscalations": 0.5,
+          "adjudicationMinutesPerAdjudicatedDebate": 5.6,
+          "fixedAudioQaRenderingHours": 5,
+          "fixedTransportContingencyHours": 2
+        },
+        "hours": {
+          "primary": 14.3,
+          "finalization": 13.81,
+          "passB": 5.04,
+          "adjudication": 1.36,
+          "audioQaRendering": 5,
+          "total": 41.52,
+          "transportContingency": 2
+        },
+        "centralTargetPassed": true,
+        "conservativeCeilingPassed": true
+      },
+      "conservativeProjection": {
+        "inputs": {
+          "debateCount": 195,
+          "primaryMinutesPerDebate": 7,
+          "finalizationMinutesPerDebate": 5,
+          "escalationRate": 0.2,
+          "passBMinutesPerEscalatedDebate": 12.916666666666668,
+          "adjudicationShareOfEscalations": 0.6,
+          "adjudicationMinutesPerAdjudicatedDebate": 6.5,
+          "fixedAudioQaRenderingHours": 5,
+          "fixedTransportContingencyHours": 2
+        },
+        "hours": {
+          "primary": 22.75,
+          "finalization": 16.25,
+          "passB": 8.4,
+          "adjudication": 2.53,
+          "audioQaRendering": 5,
+          "total": 56.93,
+          "transportContingency": 2
+        },
+        "centralTargetPassed": false,
+        "conservativeCeilingPassed": true
+      },
+      "runtimePassed": true
+    },
+    "oneRecovered": {
+      "wallPassBMinutesPerDebate": 13,
+      "computePassBMinutesPerDebate": 9.5,
+      "conservativePassBMinutesPerDebate": 11.88,
+      "transportCleanContexts": 2,
+      "recoveredTransportContexts": 1,
+      "recoveredTransportDebates": [
+        "161"
+      ],
+      "timingEligible": true,
+      "fixedTransportContingencyHours": 2,
+      "centralProjection": {
+        "inputs": {
+          "debateCount": 195,
+          "primaryMinutesPerDebate": 4.4,
+          "finalizationMinutesPerDebate": 4.25,
+          "escalationRate": 0.15,
+          "passBMinutesPerEscalatedDebate": 9.5,
+          "adjudicationShareOfEscalations": 0.5,
+          "adjudicationMinutesPerAdjudicatedDebate": 5.6,
+          "fixedAudioQaRenderingHours": 5,
+          "fixedTransportContingencyHours": 2
+        },
+        "hours": {
+          "primary": 14.3,
+          "finalization": 13.81,
+          "passB": 4.63,
+          "adjudication": 1.36,
+          "audioQaRendering": 5,
+          "total": 41.11,
+          "transportContingency": 2
+        },
+        "centralTargetPassed": true,
+        "conservativeCeilingPassed": true
+      },
+      "conservativeProjection": {
+        "inputs": {
+          "debateCount": 195,
+          "primaryMinutesPerDebate": 7,
+          "finalizationMinutesPerDebate": 5,
+          "escalationRate": 0.2,
+          "passBMinutesPerEscalatedDebate": 11.875,
+          "adjudicationShareOfEscalations": 0.6,
+          "adjudicationMinutesPerAdjudicatedDebate": 6.5,
+          "fixedAudioQaRenderingHours": 5,
+          "fixedTransportContingencyHours": 2
+        },
+        "hours": {
+          "primary": 22.75,
+          "finalization": 16.25,
+          "passB": 7.72,
+          "adjudication": 2.53,
+          "audioQaRendering": 5,
+          "total": 56.25,
+          "transportContingency": 2
+        },
+        "centralTargetPassed": false,
+        "conservativeCeilingPassed": true
+      },
+      "runtimePassed": true
+    }
+  },
+  "costs": {
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  }
+}
