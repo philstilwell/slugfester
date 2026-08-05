@@ -1,0 +1,291 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "assessmentModel",
+    "calibrationOnly",
+    "isolation",
+    "moveDecisions",
+    "burdenAdjustmentDecisions",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "enum": [
+        "3.8.11-performance-adjudication-output"
+      ]
+    },
+    "protocolId": {
+      "type": "string",
+      "enum": [
+        "v3.8.11-performance-judgment-consensus"
+      ]
+    },
+    "debateNumber": {
+      "type": "string",
+      "enum": [
+        "55",
+        "103",
+        "161"
+      ]
+    },
+    "debateId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewerRole": {
+      "type": "string",
+      "enum": [
+        "performance-adjudicator"
+      ]
+    },
+    "assessmentModel": {
+      "type": "string",
+      "enum": [
+        "5.6 Sol"
+      ]
+    },
+    "calibrationOnly": {
+      "type": "boolean",
+      "enum": [
+        true
+      ]
+    },
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "initialPassIdentityUnavailable",
+        "candidateOrderingAnonymous",
+        "nondisputedFieldsUnavailable",
+        "legacyAssessmentsUnavailable",
+        "calculatedScoresUnavailable",
+        "winnerLabelsUnavailable",
+        "assessmentProseUnavailable",
+        "contaminationDetected"
+      ],
+      "properties": {
+        "initialPassIdentityUnavailable": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "candidateOrderingAnonymous": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "nondisputedFieldsUnavailable": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "legacyAssessmentsUnavailable": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "calculatedScoresUnavailable": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "winnerLabelsUnavailable": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "assessmentProseUnavailable": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "contaminationDetected": {
+          "type": "boolean",
+          "enum": [
+            false
+          ]
+        }
+      }
+    },
+    "moveDecisions": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 28,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "responseTupleChoice",
+          "charityPairChoice",
+          "ratingChoices",
+          "rationale"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "responseTupleChoice": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "integer",
+                "enum": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "charityPairChoice": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "integer",
+                "enum": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "ratingChoices": {
+            "type": "array",
+            "minItems": 0,
+            "maxItems": 7,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "ratingKey",
+                "choice"
+              ],
+              "properties": {
+                "ratingKey": {
+                  "type": "string",
+                  "enum": [
+                    "logicalCoherence",
+                    "evidenceWarrant",
+                    "responsiveness",
+                    "relevanceBurden",
+                    "precisionClarity",
+                    "epistemicCalibration",
+                    "representationalCharity"
+                  ]
+                },
+                "choice": {
+                  "type": "integer",
+                  "enum": [
+                    1,
+                    2
+                  ]
+                }
+              }
+            }
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 40
+          }
+        }
+      }
+    },
+    "burdenAdjustmentDecisions": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "side",
+          "choice",
+          "rationale"
+        ],
+        "properties": {
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "choice": {
+            "type": "integer",
+            "enum": [
+              1,
+              2
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 40
+          }
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allDisputedMovesDecidedOnce",
+        "onlyCandidateValuesSelected",
+        "nondisputedFieldsUntouched",
+        "calculatedScoresAbsent",
+        "publicationProseAbsent"
+      ],
+      "properties": {
+        "allDisputedMovesDecidedOnce": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "onlyCandidateValuesSelected": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "nondisputedFieldsUntouched": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "calculatedScoresAbsent": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        },
+        "publicationProseAbsent": {
+          "type": "boolean",
+          "enum": [
+            true
+          ]
+        }
+      }
+    }
+  }
+}
