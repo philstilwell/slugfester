@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "4.1-bounded-tooling-fixture",
+  "protocolId": "v4.1-bounded-lean-risk-triggered-consensus",
+  "status": "passed",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "schema-preflight",
+    "moves": 8,
+    "sections": 4,
+    "mediumOrLowAttributionMoves": [],
+    "calculatedFields": 0,
+    "schemaVersion": "4.1-bounded-primary-output",
+    "protocolId": "v4.1-bounded-lean-risk-triggered-consensus",
+    "boundedMoves": 8
+  },
+  "calculatedFixture": {
+    "pro": 87,
+    "con": 89,
+    "winner": "con"
+  },
+  "mutationTests": {
+    "missingSubsidiaryRejected": true,
+    "missingSideRejected": true,
+    "badSequenceRejected": true
+  },
+  "computeProjection": {
+    "central": {
+      "inputs": {
+        "debateCount": 195,
+        "primaryMinutesPerDebate": 7,
+        "finalizationMinutesPerDebate": 4.25,
+        "escalationRate": 0.15,
+        "passBMinutesPerEscalatedDebate": 8,
+        "adjudicationShareOfEscalations": 0.5,
+        "adjudicationMinutesPerAdjudicatedDebate": 5.6,
+        "fixedAudioQaRenderingHours": 5
+      },
+      "hours": {
+        "primary": 22.75,
+        "finalization": 13.81,
+        "passB": 3.9,
+        "adjudication": 1.36,
+        "audioQaRendering": 5,
+        "total": 46.83
+      },
+      "centralTargetPassed": true,
+      "conservativeCeilingPassed": true
+    },
+    "conservative": {
+      "inputs": {
+        "debateCount": 195,
+        "primaryMinutesPerDebate": 8.5,
+        "finalizationMinutesPerDebate": 5,
+        "escalationRate": 0.2,
+        "passBMinutesPerEscalatedDebate": 8.5,
+        "adjudicationShareOfEscalations": 0.6,
+        "adjudicationMinutesPerAdjudicatedDebate": 6.5,
+        "fixedAudioQaRenderingHours": 5
+      },
+      "hours": {
+        "primary": 27.63,
+        "finalization": 16.25,
+        "passB": 5.53,
+        "adjudication": 2.53,
+        "audioQaRendering": 5,
+        "total": 56.93
+      },
+      "centralTargetPassed": false,
+      "conservativeCeilingPassed": true
+    }
+  },
+  "costs": {
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  }
+}
