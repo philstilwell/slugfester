@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "4.0-lean-schema-preflight-execution",
+  "protocolId": "v4.0-lean-risk-triggered-consensus",
+  "status": "failed",
+  "validSyntheticContexts": 0,
+  "attempts": 1,
+  "retries": 0,
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsd": 0,
+  "result": {
+    "model": "5.6 Sol",
+    "modelSlug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "attemptCount": 1,
+    "retryCount": 0,
+    "startedAt": "2026-08-05T01:56:33.947Z",
+    "completedAt": "2026-08-05T01:59:34.049Z",
+    "elapsedMs": 180102,
+    "timedOut": false,
+    "terminationSignal": null,
+    "commandExitCode": 0,
+    "subscriptionAuthenticated": true,
+    "apiKeysRemoved": true,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "stdoutSha256": "a1898eaf964b31e0d41a2b5e94b17d1f07791b604c1e51a782212cc982081cbc",
+    "stderrSha256": "af1a68d045e0beb3bbc6baf020918ea07e06cd2d2889037505e64f54e35c8055",
+    "status": "output-validation-failed",
+    "outputWritten": true,
+    "outputSha256": "63d9ae0c4b7ede40f6880c3021f75c2019445dd0866acb8073b0979de3f3f044",
+    "deterministicValidationPassed": false,
+    "validationExitCode": 1,
+    "validationSummary": null,
+    "validationMessage": "file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:62\n  if (!condition) throw new Error(message);\n                        ^\n\nError: moves[6]: epistemic calibration outside closed-finding range\n    at assertV4 (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:62:25)\n    at validateV4PrimaryOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:493:5)\n    at file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/validate-v4-lean-primary-output.mjs:8:28\n\nNode.js v25.9.0"
+  },
+  "authorization": {
+    "retiredPrimaryPreparation": false,
+    "retiredPrimaryModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  }
+}
