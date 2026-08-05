@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.11-lean-correction-preparation",
+  "protocolId": "v4.2.11-lean-structural-correction",
+  "status": "prepared-one-lean-structural-correction",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "debateNumber": "106",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "inputs": {
+    "manual": "docs/calibration/v4.2.11/lean-structural-correction/manual.md",
+    "schema": "docs/calibration/v4.2.11/lean-structural-correction/schema.json",
+    "leanCandidate": "docs/calibration/v4.2.11/lean-structural-correction/lean-candidate.json",
+    "violations": "docs/calibration/v4.2.7/bounded-primary-correction/violations.json"
+  },
+  "validationInputs": {
+    "original": "docs/calibration/v4.2.7/bounded-primary-correction/candidate.json",
+    "packet": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-106.json",
+    "originalEvents": ".assessment-cache/captions/syP-OtdCIho/events.json",
+    "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.4/debate-106.jsonl",
+    "goldFixture": "docs/calibration/v4.2.11/lean-structural-correction/gold-fixture.json",
+    "baselineAnalysis": "docs/calibration/v4.2.7/bounded-primary-correction/analysis.json",
+    "runtimeAnalysis": "docs/calibration/v4.2.10/integrated-long-context-primary/analysis.json"
+  },
+  "outputs": {
+    "proposal": "docs/calibration/v4.2.11/lean-structural-correction/proposal.json",
+    "corrected": "docs/calibration/v4.2.11/lean-structural-correction/corrected-output.json",
+    "compiled": "docs/calibration/v4.2.11/lean-structural-correction/corrected-compiled.json"
+  },
+  "policy": {
+    "oneAttempt": true,
+    "retries": 0,
+    "timeoutMs": 600000,
+    "modelReceivesTranscript": false,
+    "modelReceivesRatings": false,
+    "modelEmitsMutableFieldsOnly": true,
+    "scoresAuthorized": false
+  },
+  "totals": {
+    "inputBytes": 16495,
+    "baselineInputBytes": 192984,
+    "inputReductionFraction": 0.9145,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "executionManifest": false,
+    "modelExecution": false,
+    "runtimeProjection": false,
+    "scoring": false,
+    "productionMutation": false
+  }
+}

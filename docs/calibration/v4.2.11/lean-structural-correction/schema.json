@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v4211-lean-correction",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "sections",
+    "placements"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "4.2.11-lean-section-placement-proposal"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "v4.2.11-lean-structural-correction"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "106"
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sectionId",
+          "title",
+          "weightPercent",
+          "rationale"
+        ],
+        "properties": {
+          "sectionId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 3
+          },
+          "weightPercent": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 97
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 40
+          }
+        }
+      }
+    },
+    "placements": {
+      "type": "array",
+      "minItems": 16,
+      "maxItems": 16,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "sectionId"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sectionId": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

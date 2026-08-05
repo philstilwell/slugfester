@@ -1,0 +1,379 @@
+{
+  "schemaVersion": "4.2.11-lean-correction-candidate",
+  "debateNumber": "106",
+  "debateId": "peterson-blackmore-god-meaning-life-2018",
+  "routes": [
+    {
+      "routeId": "route-pro",
+      "side": "pro",
+      "description": "Religiously inherited narratives and value hierarchies embody evolved practical knowledge that makes coherent moral action and durable meaning possible.",
+      "successCriteria": "Show that action necessarily presupposes an ultimate value structure, that religious traditions substantially embody it, and that secular practice cannot simply detach from that inheritance.",
+      "motionBridge": {
+        "bridgeId": "pro-motion",
+        "tier": "motion",
+        "description": "Humans need a God-function or religiously inherited value structure to organize meaning, morality, suffering, and action."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-action",
+          "tier": "central",
+          "description": "Conduct reveals operative belief more reliably than explicit self-description does."
+        },
+        {
+          "bridgeId": "pro-inheritance",
+          "tier": "central",
+          "description": "Stable secular institutions continue to enact inherited Judeo-Christian commitments."
+        },
+        {
+          "bridgeId": "pro-suffering",
+          "tier": "central",
+          "description": "Durable meaning must sustain people through tragedy rather than merely produce happiness."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-archetype",
+          "tier": "subsidiary",
+          "description": "Long-standing religious patterns reflect biological-cultural selection rather than arbitrary cultural copying."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con",
+      "side": "con",
+      "description": "Naturalistic, memetic, and contemplative processes can explain constructed meaning and ethical conduct without God or continuing religious commitment.",
+      "successCriteria": "Show that humans construct workable meanings and moral practices from evolved needs, culture, reflection, and social experience, while religious belief is neither necessary nor reliably beneficial.",
+      "motionBridge": {
+        "bridgeId": "con-motion",
+        "tier": "motion",
+        "description": "Humans can make sense of life and act morally without God or an indispensable religious foundation."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-construction",
+          "tier": "central",
+          "description": "Meaning emerges from biological needs, cultural evolution, and personal or social construction."
+        },
+        {
+          "bridgeId": "con-secular-ethics",
+          "tier": "central",
+          "description": "Compassion, gratitude, and moral conduct can develop through secular reflection and practice."
+        },
+        {
+          "bridgeId": "con-empirical",
+          "tier": "central",
+          "description": "Religiosity does not reliably predict healthier or more functional societies."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-memes",
+          "tier": "subsidiary",
+          "description": "Religion can persist as a culturally copied meme complex containing both beneficial and harmful features."
+        }
+      ]
+    }
+  ],
+  "currentSections": [
+    {
+      "sectionId": "s1",
+      "title": "Belief, action, and secular ethics",
+      "weightPercent": 24,
+      "rationale": "This exchange establishes whether conduct requires religious belief and whether contemplative practice can independently ground ethical behavior."
+    },
+    {
+      "sectionId": "s2",
+      "title": "Religious stories and cultural evolution",
+      "weightPercent": 22,
+      "rationale": "This section tests whether inherited stories embody indispensable archetypal knowledge or remain culturally transmitted and contestable constructions."
+    },
+    {
+      "sectionId": "s3",
+      "title": "Secular societies and inherited morality",
+      "weightPercent": 28,
+      "rationale": "The speakers directly contest empirical social outcomes and whether modern moral institutions remain dependent on religious inheritance."
+    },
+    {
+      "sectionId": "s4",
+      "title": "Meaning, tragedy, and the God-function",
+      "weightPercent": 26,
+      "rationale": "The final exchanges confront constructed meaning, nihilism, action, and the definition of God most directly at motion level."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "m01",
+      "currentSectionId": "s1",
+      "side": "pro",
+      "proposition": "Operative belief is principally disclosed by action, because people lack transparent access to their own thoughts.",
+      "startEvent": 94,
+      "endEvent": 105,
+      "moveKind": "constructive",
+      "responseTargetIds": [],
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-action"
+      },
+      "importance": 3
+    },
+    {
+      "moveId": "m02",
+      "currentSectionId": "s1",
+      "side": "con",
+      "proposition": "Meditative observation can produce compassionate and kind conduct without rational deduction or an underlying divine basis.",
+      "startEvent": 167,
+      "endEvent": 190,
+      "moveKind": "reply",
+      "responseTargetIds": [
+        "m01"
+      ],
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-secular-ethics"
+      },
+      "importance": 3
+    },
+    {
+      "moveId": "m03",
+      "currentSectionId": "s1",
+      "side": "pro",
+      "proposition": "Compassion alone cannot ground a complex society because a short-term caregiving disposition does not supply a complete adult ethic.",
+      "startEvent": 192,
+      "endEvent": 207,
+      "moveKind": "reply",
+      "responseTargetIds": [
+        "m02"
+      ],
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-secular-ethics"
+      },
+      "importance": 2
+    },
+    {
+      "moveId": "m06",
+      "currentSectionId": "s2",
+      "side": "con",
+      "proposition": "Religions are mixed meme complexes whose persistence reflects beneficial features as well as harmful ones, though their net effect may remain negative.",
+      "startEvent": 264,
+      "endEvent": 289,
+      "moveKind": "constructive",
+      "responseTargetIds": [],
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-memes"
+      },
+      "importance": 2
+    },
+    {
+      "moveId": "m04",
+      "currentSectionId": "s2",
+      "side": "pro",
+      "proposition": "Religious archetypes are biologically grounded patterns of behavior and representation rather than merely contagious ideas.",
+      "startEvent": 303,
+      "endEvent": 323,
+      "moveKind": "constructive",
+      "responseTargetIds": [],
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-archetype"
+      },
+      "importance": 2
+    },
+    {
+      "moveId": "m05",
+      "currentSectionId": "s2",
+      "side": "con",
+      "proposition": "Biologically inherited archetypal tendencies and culturally copied memes are distinct, and archetypal material can subsequently become memetic.",
+      "startEvent": 365,
+      "endEvent": 381,
+      "moveKind": "reply",
+      "responseTargetIds": [
+        "m04"
+      ],
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-memes"
+      },
+      "importance": 2
+    },
+    {
+      "moveId": "m07",
+      "currentSectionId": "s2",
+      "side": "pro",
+      "proposition": "Biblical stories were formulated as responses to tragedy and malevolence and function as inherited cultural antidotes to those conditions.",
+      "startEvent": 480,
+      "endEvent": 499,
+      "moveKind": "constructive",
+      "responseTargetIds": [],
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-suffering"
+      },
+      "importance": 2
+    },
+    {
+      "moveId": "m08",
+      "currentSectionId": "s3",
+      "side": "pro",
+      "proposition": "Removing the religious cornerstone risks nihilism and totalitarian replacement because inherited value structures cannot be recreated at will.",
+      "startEvent": 592,
+      "endEvent": 615,
+      "moveKind": "constructive",
+      "responseTargetIds": [],
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-inheritance"
+      },
+      "importance": 3
+    },
+    {
+      "moveId": "m09",
+      "currentSectionId": "s3",
+      "side": "con",
+      "proposition": "Observed correlations between stronger proclaimed religiosity and social dysfunction undermine the claim that losing God predictably worsens societies.",
+      "startEvent": 619,
+      "endEvent": 629,
+      "moveKind": "reply",
+      "responseTargetIds": [
+        "m08"
+      ],
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-empirical"
+      },
+      "importance": 3
+    },
+    {
+      "moveId": "m11",
+      "currentSectionId": "s3",
+      "side": "pro",
+      "proposition": "Secular stability persists because Western societies still enact Judeo-Christian commitments to individual sovereignty and honest speech.",
+      "startEvent": 676,
+      "endEvent": 704,
+      "moveKind": "reply",
+      "responseTargetIds": [
+        "m09"
+      ],
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-inheritance"
+      },
+      "importance": 3
+    },
+    {
+      "moveId": "m10",
+      "currentSectionId": "s3",
+      "side": "con",
+      "proposition": "Contemporary secular Britain and Scandinavian societies provide live examples of functioning welfare-oriented societies without majority religious commitment.",
+      "startEvent": 723,
+      "endEvent": 751,
+      "moveKind": "constructive",
+      "responseTargetIds": [],
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-empirical"
+      },
+      "importance": 3
+    },
+    {
+      "moveId": "m12",
+      "currentSectionId": "s4",
+      "side": "pro",
+      "proposition": "Humans seek meaning deep enough to sustain them through tragedy, which is categorically different from seeking happiness.",
+      "startEvent": 930,
+      "endEvent": 938,
+      "moveKind": "constructive",
+      "responseTargetIds": [],
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-suffering"
+      },
+      "importance": 3
+    },
+    {
+      "moveId": "m13",
+      "currentSectionId": "s4",
+      "side": "con",
+      "proposition": "Accepting ultimate meaninglessness can coexist with ordinary purposive action because evolved creatures naturally continue responding to needs and interests.",
+      "startEvent": 945,
+      "endEvent": 987,
+      "moveKind": "reply",
+      "responseTargetIds": [
+        "m12"
+      ],
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-construction"
+      },
+      "importance": 3
+    },
+    {
+      "moveId": "m14",
+      "currentSectionId": "s4",
+      "side": "pro",
+      "proposition": "Continued purposive action contradicts lived acceptance of meaninglessness because acting on priorities treats them as meaningful.",
+      "startEvent": 988,
+      "endEvent": 1001,
+      "moveKind": "reply",
+      "responseTargetIds": [
+        "m13"
+      ],
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-construction"
+      },
+      "importance": 3
+    },
+    {
+      "moveId": "m15",
+      "currentSectionId": "s4",
+      "side": "con",
+      "proposition": "Higher meanings are constructed through memetic evolution in language and culture layered upon biological needs.",
+      "startEvent": 1023,
+      "endEvent": 1041,
+      "moveKind": "reply",
+      "responseTargetIds": [
+        "m14"
+      ],
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-construction"
+      },
+      "importance": 3
+    },
+    {
+      "moveId": "m16",
+      "currentSectionId": "s4",
+      "side": "pro",
+      "proposition": "Whatever occupies the top of a person's necessary value hierarchy performs the function of God, regardless of professed belief or naming.",
+      "startEvent": 1272,
+      "endEvent": 1286,
+      "moveKind": "reply",
+      "responseTargetIds": [
+        "m15"
+      ],
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion"
+      },
+      "importance": 3
+    }
+  ]
+}
