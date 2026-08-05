@@ -1,0 +1,542 @@
+{
+  "schemaVersion": "4.2.8-retired-continuation-model-execution",
+  "protocolId": "v4.2.8-correction-aware-retired-continuation",
+  "status": "four-first-pass-execution-complete-with-invalid-results",
+  "contextsPlanned": 4,
+  "contextsAttempted": 4,
+  "contextsSkipped": 0,
+  "validContexts": 3,
+  "invalidContexts": 1,
+  "attempts": 4,
+  "retries": 0,
+  "totalElapsedMs": 2754018,
+  "results": [
+    {
+      "debateNumber": "162",
+      "debateId": "craig-kagan-god-morality-2009",
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-05T13:49:35.026Z",
+      "completedAt": "2026-08-05T13:54:10.117Z",
+      "elapsedMs": 275091,
+      "recoverableStreamEvents": 0,
+      "transportClassification": "clean",
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsd": 0,
+      "stdoutSha256": "7a5c383582bfed8adc9359e8e89f1ca168af044c087ee177c14c6499331a4876",
+      "stderrSha256": "93230b15835111288dfeef40c52170004fac561c80a3fbdbfa9d2b15e04b6e18",
+      "status": "completed-valid-clean",
+      "gateAcceptancePassed": true,
+      "rawOutputWritten": true,
+      "rawOutputSha256": "e6031f0daae4f13cfe9fa7f620422edff7e575bfc997d9ffd70bfabc0e67f33d",
+      "compiledOutputWritten": true,
+      "compiledOutputSha256": "3022519da3db68c67395701518d121e00136991c705ecf54e2a76756a9a5c438",
+      "deterministicValidationPassed": true,
+      "repositoryTimeCompilationPassed": true,
+      "validationExitCode": 0,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "162",
+        "moves": 11,
+        "sections": 5,
+        "mediumOrLowAttributionMoves": [],
+        "calculatedFields": 0,
+        "schemaVersion": "4.2.6-conservative-excerpt-retired-primary-output",
+        "protocolId": "v4.2.6-conservative-excerpt-retired-completion",
+        "boundedMoves": 11,
+        "sourceSpanIntegrity": {
+          "status": "passed",
+          "eventsHashVerified": true,
+          "eventCount": 2076,
+          "repositoryOwnedTimes": true,
+          "maximumCharacters": 600,
+          "maximumTokens": 100,
+          "minimumLexicalRecall": 0.8,
+          "minimumOrderedCoverage": 0.8,
+          "moves": [
+            {
+              "moveId": "m004",
+              "characterCount": 392,
+              "tokenCount": 71,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m001",
+              "characterCount": 364,
+              "tokenCount": 68,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m002",
+              "characterCount": 394,
+              "tokenCount": 74,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m006",
+              "characterCount": 424,
+              "tokenCount": 78,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m003",
+              "characterCount": 439,
+              "tokenCount": 74,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m005",
+              "characterCount": 440,
+              "tokenCount": 74,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m008",
+              "characterCount": 390,
+              "tokenCount": 76,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m007",
+              "characterCount": 428,
+              "tokenCount": 74,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m009",
+              "characterCount": 371,
+              "tokenCount": 71,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m010",
+              "characterCount": 449,
+              "tokenCount": 75,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m011",
+              "characterCount": 355,
+              "tokenCount": 65,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            }
+          ]
+        },
+        "compactTransport": {
+          "status": "passed",
+          "eventCount": 2076,
+          "sourceLedgerSha256": "b78abc3ad4a9128c99a6bfb855665f38dbe303fd35378b47118449888bf4dc4b",
+          "replayExact": true,
+          "plainTranscriptDeliveredToModel": false,
+          "originalEventsDeliveredToModel": false
+        },
+        "chronologyFirst": {
+          "status": "passed",
+          "emittedMoves": 11,
+          "targetEdgesReferenceEarlierEmittedMoves": true,
+          "oneOrTwoMovesPerSidePerSection": true
+        },
+        "conservativeExcerpt": {
+          "status": "passed",
+          "maximumCharacters": 450,
+          "tokenRange": [
+            12,
+            100
+          ],
+          "automaticTruncationPerformed": false
+        }
+      },
+      "validationMessage": null
+    },
+    {
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-05T13:54:10.209Z",
+      "completedAt": "2026-08-05T14:24:10.222Z",
+      "elapsedMs": 1800013,
+      "recoverableStreamEvents": 0,
+      "transportClassification": "clean",
+      "timedOut": true,
+      "commandExitCode": null,
+      "terminationSignal": "SIGTERM",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsd": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "be23ff4fc963287052ae33e651504ee3493c51c0f7b5d0e38d52363371cac676",
+      "status": "timed-out",
+      "gateAcceptancePassed": false,
+      "rawOutputWritten": false,
+      "compiledOutputWritten": false,
+      "deterministicValidationPassed": false,
+      "repositoryTimeCompilationPassed": false
+    },
+    {
+      "debateNumber": "65",
+      "debateId": "donahue-malpass-fine-tuning-god-2026",
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-05T14:24:10.230Z",
+      "completedAt": "2026-08-05T14:28:02.330Z",
+      "elapsedMs": 232100,
+      "recoverableStreamEvents": 0,
+      "transportClassification": "clean",
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsd": 0,
+      "stdoutSha256": "b79b0c0a1da3bfc817c9270d89a696b0f57b951e0a5c384ee5115845373c357c",
+      "stderrSha256": "2784680f292b524d480eb33e3bf4fafb61da5c7fc42cc2764b38110df0630f69",
+      "status": "completed-valid-clean",
+      "gateAcceptancePassed": true,
+      "rawOutputWritten": true,
+      "rawOutputSha256": "e506857d6fb7c50c9bfc77771ad2f470b83cc859c14c357abe1c33e6176de13f",
+      "compiledOutputWritten": true,
+      "compiledOutputSha256": "b26480a9300cc3e7ea49d5ed5f80e509f85e9c935a28b7056743e739aec581aa",
+      "deterministicValidationPassed": true,
+      "repositoryTimeCompilationPassed": true,
+      "validationExitCode": 0,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "65",
+        "moves": 10,
+        "sections": 5,
+        "mediumOrLowAttributionMoves": [],
+        "calculatedFields": 0,
+        "schemaVersion": "4.2.6-conservative-excerpt-retired-primary-output",
+        "protocolId": "v4.2.6-conservative-excerpt-retired-completion",
+        "boundedMoves": 10,
+        "sourceSpanIntegrity": {
+          "status": "passed",
+          "eventsHashVerified": true,
+          "eventCount": 2196,
+          "repositoryOwnedTimes": true,
+          "maximumCharacters": 600,
+          "maximumTokens": 100,
+          "minimumLexicalRecall": 0.8,
+          "minimumOrderedCoverage": 0.8,
+          "moves": [
+            {
+              "moveId": "m01-pro-finetuning",
+              "characterCount": 450,
+              "tokenCount": 74,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m02-con-disjunction",
+              "characterCount": 446,
+              "tokenCount": 79,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m03-pro-proves-too-much",
+              "characterCount": 416,
+              "tokenCount": 78,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m04-con-comparison-demand",
+              "characterCount": 450,
+              "tokenCount": 77,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m05-pro-contextual-evidence",
+              "characterCount": 448,
+              "tokenCount": 79,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m06-con-psychology-symmetry",
+              "characterCount": 404,
+              "tokenCount": 80,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m07-pro-prior-ratio",
+              "characterCount": 446,
+              "tokenCount": 75,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m08-con-space-classification",
+              "characterCount": 447,
+              "tokenCount": 75,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m10-pro-coherence-reply",
+              "characterCount": 448,
+              "tokenCount": 72,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m09-con-modesty-objection",
+              "characterCount": 391,
+              "tokenCount": 78,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            }
+          ]
+        },
+        "compactTransport": {
+          "status": "passed",
+          "eventCount": 2196,
+          "sourceLedgerSha256": "45bdd3063f214553ca1867e56eccd7204d9eeef75944dcd99c0dadcbfaa2223f",
+          "replayExact": true,
+          "plainTranscriptDeliveredToModel": false,
+          "originalEventsDeliveredToModel": false
+        },
+        "chronologyFirst": {
+          "status": "passed",
+          "emittedMoves": 10,
+          "targetEdgesReferenceEarlierEmittedMoves": true,
+          "oneOrTwoMovesPerSidePerSection": true
+        },
+        "conservativeExcerpt": {
+          "status": "passed",
+          "maximumCharacters": 450,
+          "tokenRange": [
+            12,
+            100
+          ],
+          "automaticTruncationPerformed": false
+        }
+      },
+      "validationMessage": null
+    },
+    {
+      "debateNumber": "16",
+      "debateId": "hirsi-ali-dawkins-god-debate-2024",
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-05T14:28:02.431Z",
+      "completedAt": "2026-08-05T14:35:29.245Z",
+      "elapsedMs": 446814,
+      "recoverableStreamEvents": 0,
+      "transportClassification": "clean",
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsd": 0,
+      "stdoutSha256": "5ab9c42c8db20847c35ed5d7530f29fcdd2daafc1f0a215bfa4e52c71bb9e692",
+      "stderrSha256": "2cf78dfb9052db4ea9041078c10a42eec44c63310786648fa3b389109fbfe396",
+      "status": "completed-valid-clean",
+      "gateAcceptancePassed": true,
+      "rawOutputWritten": true,
+      "rawOutputSha256": "5fb453ca8f0ef181abcd8d6674cc62a864761c3e0bc5f4d1f9dcd75699317c0e",
+      "compiledOutputWritten": true,
+      "compiledOutputSha256": "3d6a7b6b4a44702c354d58dcc53f64161c67fac855fbb5e98dd12607d812fb44",
+      "deterministicValidationPassed": true,
+      "repositoryTimeCompilationPassed": true,
+      "validationExitCode": 0,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "16",
+        "moves": 15,
+        "sections": 5,
+        "mediumOrLowAttributionMoves": [],
+        "calculatedFields": 0,
+        "schemaVersion": "4.2.6-conservative-excerpt-retired-primary-output",
+        "protocolId": "v4.2.6-conservative-excerpt-retired-completion",
+        "boundedMoves": 15,
+        "sourceSpanIntegrity": {
+          "status": "passed",
+          "eventsHashVerified": true,
+          "eventCount": 1265,
+          "repositoryOwnedTimes": true,
+          "maximumCharacters": 600,
+          "maximumTokens": 100,
+          "minimumLexicalRecall": 0.8,
+          "minimumOrderedCoverage": 0.8,
+          "moves": [
+            {
+              "moveId": "m01-pro-transformative-prayer",
+              "characterCount": 445,
+              "tokenCount": 85,
+              "lexicalRecall": 1,
+              "orderedCoverage": 0.964706
+            },
+            {
+              "moveId": "m02-con-literal-doctrinal-test",
+              "characterCount": 405,
+              "tokenCount": 81,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m03-pro-personal-and-civilizational-planes",
+              "characterCount": 445,
+              "tokenCount": 76,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m05-pro-redemption-answer",
+              "characterCount": 415,
+              "tokenCount": 81,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m04-con-atonement-objection",
+              "characterCount": 448,
+              "tokenCount": 81,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m07-pro-open-questions-and-consciousness",
+              "characterCount": 441,
+              "tokenCount": 79,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m09-pro-coexistence-of-faith-and-reason",
+              "characterCount": 444,
+              "tokenCount": 79,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m06-con-truth-requires-thinking",
+              "characterCount": 217,
+              "tokenCount": 39,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m08-con-no-duty-to-console",
+              "characterCount": 140,
+              "tokenCount": 23,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m10-pro-humanism-from-christian-context",
+              "characterCount": 450,
+              "tokenCount": 74,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m11-con-humanism-as-reaction",
+              "characterCount": 261,
+              "tokenCount": 41,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m12-pro-atheist-damage-and-vacuum",
+              "characterCount": 426,
+              "tokenCount": 79,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m15-pro-textual-and-institutional-rebuttal",
+              "characterCount": 449,
+              "tokenCount": 79,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m13-con-abrahamic-similarity-and-development",
+              "characterCount": 447,
+              "tokenCount": 76,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m14-con-secular-moral-philosophy",
+              "characterCount": 447,
+              "tokenCount": 79,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            }
+          ]
+        },
+        "compactTransport": {
+          "status": "passed",
+          "eventCount": 1265,
+          "sourceLedgerSha256": "d4d012faa5b61e60c11412a404425c8e8192fae3ac1941929765759944150588",
+          "replayExact": true,
+          "plainTranscriptDeliveredToModel": false,
+          "originalEventsDeliveredToModel": false
+        },
+        "chronologyFirst": {
+          "status": "passed",
+          "emittedMoves": 15,
+          "targetEdgesReferenceEarlierEmittedMoves": true,
+          "oneOrTwoMovesPerSidePerSection": true
+        },
+        "conservativeExcerpt": {
+          "status": "passed",
+          "maximumCharacters": 450,
+          "tokenRange": [
+            12,
+            100
+          ],
+          "automaticTruncationPerformed": false
+        }
+      },
+      "validationMessage": null
+    }
+  ],
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsd": 0,
+  "authorization": {
+    "deterministicPrimaryAnalysis": true,
+    "retry": false,
+    "correctionExecution": false,
+    "scoreDerivation": false,
+    "freshGatePreparation": false
+  }
+}
