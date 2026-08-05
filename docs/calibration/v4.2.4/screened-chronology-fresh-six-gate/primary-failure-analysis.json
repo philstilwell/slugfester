@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "4.2.4-primary-excerpt-failure-analysis",
+  "protocolId": "v4.2.4-screened-chronology-first-compact-fresh-six-validation",
+  "status": "failed-token-ceiling-despite-character-schema-compliance",
+  "execution": {
+    "contextsPlanned": 6,
+    "contextsAttempted": 1,
+    "contextsSkipped": 5,
+    "attempts": 1,
+    "retries": 0,
+    "elapsedMs": 226871,
+    "timeoutMs": 1800000,
+    "completedInsideTimeout": true,
+    "recoverableStreamEvents": 0,
+    "transportClassification": "clean",
+    "meteredApiCostUsd": 0,
+    "transcriptionApiCalls": 0,
+    "transcriptionCostUsd": 0
+  },
+  "failedContext": {
+    "debateNumber": "131",
+    "debateId": "boyce-carrier-historical-jesus-mythicism-2022",
+    "durationSeconds": 10464,
+    "compactCopiedInputBytes": 336670,
+    "rawOutputCreated": true,
+    "rawOutputSha256": "0d5f19216c22bb96afc3db23634cc810fd487848bccc67fa21fcb26f76d1f69f",
+    "compiledOutputCreated": false
+  },
+  "validation": {
+    "compactLedgerReplayExact": true,
+    "chronologyAndEarlierTargetPrecheckPassed": true,
+    "endpointCharacterSchemaPassed": true,
+    "firstSurfacedFailure": "m01-pro-paul: excerpt token count outside 12..100",
+    "excerptDiagnostics": [
+      {
+        "moveId": "m01-pro-paul",
+        "characterCount": 598,
+        "tokenCount": 114,
+        "withinSchemaCharacterCeiling": true,
+        "withinTokenCeiling": false
+      },
+      {
+        "moveId": "m02-pro-james",
+        "characterCount": 598,
+        "tokenCount": 110,
+        "withinSchemaCharacterCeiling": true,
+        "withinTokenCeiling": false
+      },
+      {
+        "moveId": "m03-pro-tacitus",
+        "characterCount": 597,
+        "tokenCount": 103,
+        "withinSchemaCharacterCeiling": true,
+        "withinTokenCeiling": false
+      },
+      {
+        "moveId": "m04-pro-dynasty",
+        "characterCount": 439,
+        "tokenCount": 79,
+        "withinSchemaCharacterCeiling": true,
+        "withinTokenCeiling": true
+      },
+      {
+        "moveId": "m05-con-woman",
+        "characterCount": 597,
+        "tokenCount": 107,
+        "withinSchemaCharacterCeiling": true,
+        "withinTokenCeiling": false
+      },
+      {
+        "moveId": "m06-con-james",
+        "characterCount": 409,
+        "tokenCount": 71,
+        "withinSchemaCharacterCeiling": true,
+        "withinTokenCeiling": true
+      },
+      {
+        "moveId": "m07-con-tacitus",
+        "characterCount": 597,
+        "tokenCount": 112,
+        "withinSchemaCharacterCeiling": true,
+        "withinTokenCeiling": false
+      },
+      {
+        "moveId": "m08-con-hegesippus",
+        "characterCount": 598,
+        "tokenCount": 112,
+        "withinSchemaCharacterCeiling": true,
+        "withinTokenCeiling": false
+      }
+    ],
+    "movesOverTokenCeiling": 6,
+    "laterInheritedValidationResultsAvailable": false
+  },
+  "diagnosis": {
+    "runtimeFailure": false,
+    "transportFailure": false,
+    "sourceHashFailure": false,
+    "compactLedgerFailure": false,
+    "chronologyFailure": false,
+    "endpointCharacterCeilingFilledByModel": true,
+    "tokenCeilingFailure": true,
+    "characterCeilingTooLooseForReliableTokenCompliance": true,
+    "argumentRatingsEvaluatedForAcceptance": false
+  },
+  "disposition": {
+    "v424GatePassed": false,
+    "retryAuthorized": false,
+    "outputNormalizationAuthorized": false,
+    "remainingFiveContextsExecuted": false,
+    "scoreDerivationAuthorized": false,
+    "legacyComparisonAuthorized": false,
+    "allSixV424DebatesBecomeDiagnosticExclusions": true,
+    "tighterEndpointCharacterCeilingDevelopmentAuthorized": true
+  },
+  "nextDevelopmentTest": {
+    "diagnosticDebateNumber": "131",
+    "compactTransportRetained": true,
+    "chronologyFirstTopologyRetained": true,
+    "judgmentAnchorsChanged": false,
+    "excerptTokenRangeRetained": [
+      12,
+      100
+    ],
+    "endpointExcerptCharacterMaximum": 450,
+    "deterministicTokenValidationRetained": true,
+    "oneAttemptNoRetryRetained": true,
+    "automaticTruncationAuthorized": false,
+    "scoreDerivationProhibited": true
+  }
+}
