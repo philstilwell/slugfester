@@ -1,0 +1,9 @@
+# v4.1.7 Fresh-Six Primary Assessment
+
+The source-blind primary stage passed. All six 5.6 Sol/low contexts produced valid bounded judgments on their only attempt, with no workflow retry, output normalization, timeout, skipped debate, metered API charge, or transcription call. The outputs contain 27 sections and 60 selected moves across 11.2 hours of locally cached debate transcripts.
+
+Wall time was 32.18 minutes, averaging 5.36 minutes per debate. Five contexts recorded zero recoverable stream events. Debate 144 recorded one allowed same-attempt recovery and remained schema-valid; under the frozen timing rule it is excluded from the eligible planning mean, which is 4.58 minutes. The resulting 195-debate projection is 41.00 central hours and 56.47 conservative hours, including the fixed audio/QA/rendering and transport allowances. Both compute gates pass.
+
+Five of six debates triggered high-effort Pass B: Debate 58 is the frozen control and also lies near a score boundary; Debates 59 and 171 lie near score boundaries; Debates 91, 144, and 171 have provisional margins at most five. Debate 37 did not trigger. The observed 83.3% escalation rate is not substituted into the production projection because this is a six-case topic-stratified validation sample, but it is a material operating-risk signal. Production still pauses if a representative batch exceeds the 25% escalation ceiling; no required trigger may be suppressed to meet the budget.
+
+No selected move has medium or low source-attribution confidence, so no paid audio verification is needed at this stage. Provisional trigger calculations remain withheld from artifacts, no score artifact exists, and no legacy assessment or winner has been opened. This authorizes Pass B packet preparation for the five triggered debates only. Compression auditing remains required for all six after final raw ledgers lock and before score derivation.
