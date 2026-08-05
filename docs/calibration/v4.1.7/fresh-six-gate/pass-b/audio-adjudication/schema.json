@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v4171-disputed-audio-attribution",
+  "title": "Slugfester v4.1.7.1 disputed audio-attribution adjudication",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "assessmentModel",
+    "calibrationOnly",
+    "isolation",
+    "adjudications",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "4.1.7.1-audio-attribution-adjudication-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "v4.1.7.1-disputed-audio-attribution"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "91"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "cutter-oppy-mind-brain-harmony-god-2025"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "isolated-audio-attribution-adjudicator"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "calibrationOnly": {
+      "type": "boolean",
+      "const": true
+    },
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ratingsUnavailable",
+        "scoresUnavailable",
+        "legacyUnavailable",
+        "otherDebatesUnavailable",
+        "contaminationDetected"
+      ],
+      "properties": {
+        "ratingsUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "scoresUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "legacyUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "otherDebatesUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "contaminationDetected": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    },
+    "adjudications": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "expectedSpeaker",
+          "status",
+          "authoringSpeaker",
+          "corePropositionAuthoredByExpectedSpeaker",
+          "mixedSpeakerSpan",
+          "evidenceSegmentIndexes",
+          "confidence",
+          "rationale"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "expectedSpeaker": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "verified",
+              "unresolved"
+            ]
+          },
+          "authoringSpeaker": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "corePropositionAuthoredByExpectedSpeaker": {
+            "type": "boolean"
+          },
+          "mixedSpeakerSpan": {
+            "type": "boolean"
+          },
+          "evidenceSegmentIndexes": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 6,
+            "uniqueItems": true,
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 20,
+            "maxLength": 1200
+          }
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allDisputedMovesReviewed",
+        "rawAudioDerivedSegmentsNotAltered",
+        "calculatedScoreFieldsEmitted",
+        "manualOverrideUsed"
+      ],
+      "properties": {
+        "allDisputedMovesReviewed": {
+          "type": "boolean",
+          "const": true
+        },
+        "rawAudioDerivedSegmentsNotAltered": {
+          "type": "boolean",
+          "const": true
+        },
+        "calculatedScoreFieldsEmitted": {
+          "type": "boolean",
+          "const": false
+        },
+        "manualOverrideUsed": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    }
+  }
+}

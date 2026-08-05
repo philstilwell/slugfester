@@ -1,0 +1,9 @@
+# Assessment Workflow v4.1.7.1 — audio-attribution adjudication amendment
+
+This calibration-only amendment preserves the v4.1.7 deterministic audio gate as a genuine failed check. It adds one narrow recovery branch for a medium/low-confidence move whose paid audio-derived diarization succeeded but whose locked span remains unresolved under the frozen lexical thresholds because the span contains multiple speakers or narrowly misses a recall boundary.
+
+The recovery branch is not a threshold relaxation and does not rewrite the audio, diarized transcript, speaker references, source span, move proposition, inventory, ratings, or scores. It uses one fresh isolated 5.6 Sol/high context for the debate and exposes only the disputed move identities, expected speakers, locked propositions and spans, failed deterministic evidence, exact raw audio-derived diarized transcripts, and governing attribution rules. Primary and Pass B ratings, response tuples, totals, trigger reasons, legacy assessments, winners, comparators, publication prose, and other debates remain unavailable.
+
+The adjudicator decides only whether the expected speaker authored the locked move's core proposition. A mixed-speaker source span may still verify when exact audio-derived segments establish the expected speaker as author of that proposition. Verification requires high adjudicator confidence, at least one cited nonempty segment assigned to the expected speaker, and a schema-valid authoring decision. Any unresolved decision keeps disagreement extraction and all scoring blocked.
+
+The output is preserved separately and cannot erase the original deterministic failure. There is one attempt, no retry, no paid transcription, no API key, and no calculated score field. Success authorizes deterministic disagreement extraction only; it does not authorize score derivation, legacy comparison, publication, production mutation, a held-out gate, or the 195-debate run.
