@@ -13,6 +13,9 @@ const packet = { ...oldPacket, schemaVersion: V41_PACKET_VERSION, protocolId: V4
 const primary = convertV4ReferenceToV41(reference);
 const validation = validateV41PrimaryOutput(primary, packet);
 const scores = deriveV41PrimaryScores(primary);
+const routeBurden = structuredClone(primary);
+routeBurden.burdenCompletionAdjustment.pro.eligibility.affectedBurdenIds = [routeBurden.routes[0].routeId];
+validateV41PrimaryOutput(routeBurden, packet);
 
 const missingSubsidiary = structuredClone(primary);
 missingSubsidiary.routes[0].subsidiaryBridges = [];
@@ -35,12 +38,12 @@ const conservative = projectV41ConservativeHours();
 if (!central.centralTargetPassed || !conservative.conservativeCeilingPassed) throw new Error("v4.1 planning projection exceeds a compute ceiling");
 
 const fixture = {
-  schemaVersion: "4.1-bounded-tooling-fixture",
+  schemaVersion: "4.1.1-bounded-tooling-fixture",
   protocolId: V41_PROTOCOL_ID,
   status: "passed",
   validation,
   calculatedFixture: { pro: scores.overall.pro.score, con: scores.overall.con.score, winner: scores.winner },
-  mutationTests: { missingSubsidiaryRejected, missingSideRejected, badSequenceRejected },
+  mutationTests: { routeBurdenIdAccepted: true, missingSubsidiaryRejected, missingSideRejected, badSequenceRejected },
   computeProjection: { central, conservative },
   costs: { modelContextsExecuted: 0, meteredApiCostUsd: 0, transcriptionCostUsd: 0 }
 };

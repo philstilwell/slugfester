@@ -11,11 +11,11 @@ import {
   validateV4PrimaryOutput
 } from "./v4-lean-production.mjs";
 
-export const V41_LEAN_ROOT = "docs/calibration/v4.1/lean-retired-gate";
+export const V41_LEAN_ROOT = "docs/calibration/v4.1.1/lean-retired-gate";
 export const V41_LEAN_DEBATES = Object.freeze(["55", "103", "161"]);
-export const V41_PROTOCOL_ID = "v4.1-bounded-lean-risk-triggered-consensus";
-export const V41_OUTPUT_VERSION = "4.1-bounded-primary-output";
-export const V41_PACKET_VERSION = "4.1-bounded-source-only-packet";
+export const V41_PROTOCOL_ID = "v4.1.1-bounded-lean-risk-triggered-consensus";
+export const V41_OUTPUT_VERSION = "4.1.1-bounded-primary-output";
+export const V41_PACKET_VERSION = "4.1.1-bounded-source-only-packet";
 export const V41_MODEL = Object.freeze({ label: "5.6 Sol", slug: "gpt-5.6-sol", primaryReasoningEffort: "medium", reviewReasoningEffort: "high" });
 export const V41_MOVE_MINIMUM = 8;
 export const V41_MOVE_MAXIMUM = 24;
@@ -51,8 +51,8 @@ export function makeV41PrimarySchema() {
   section.properties.proMoves = { type: "array", minItems: 1, maxItems: 2, items: move };
   section.properties.conMoves = { type: "array", minItems: 1, maxItems: 2, items: move };
 
-  base.$id = "slugfester-v41-bounded-lean-primary-judgment";
-  base.title = "Slugfester v4.1 bounded lean primary judgment";
+  base.$id = "slugfester-v411-bounded-lean-primary-judgment";
+  base.title = "Slugfester v4.1.1 bounded lean primary judgment";
   base.required = base.required.filter((key) => key !== "moves");
   delete base.properties.moves;
   base.properties.schemaVersion.const = V41_OUTPUT_VERSION;
@@ -140,7 +140,7 @@ export function validateV41PrimaryOutput(output, packet) {
   assertV4(output.debateNumber === packet.debateNumber && output.debateId === packet.debateId, "debate identity mismatch");
   const normalizedPacket = { ...packet, schemaVersion: "4.0.1-lean-source-only-packet", protocolId: "v4.0.1-lean-risk-triggered-consensus" };
   const normalized = normalizeV41Primary(output);
-  const validation = validateV4PrimaryOutput(normalized, normalizedPacket);
+  const validation = validateV4PrimaryOutput(normalized, normalizedPacket, { additionalAdjustmentBurdenIds: output.routes.map((route) => route.routeId) });
   return { ...validation, schemaVersion: V41_OUTPUT_VERSION, protocolId: V41_PROTOCOL_ID, boundedMoves: normalized.moves.length };
 }
 

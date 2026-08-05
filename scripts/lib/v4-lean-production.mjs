@@ -399,7 +399,7 @@ function validateAdjustment(adjustment, side, moveIds, bridgeIds) {
   }
 }
 
-export function validateV4PrimaryOutput(output, packet) {
+export function validateV4PrimaryOutput(output, packet, { additionalAdjustmentBurdenIds = [] } = {}) {
   const schema = makeV4PrimarySchema();
   assertObjectShape(output, schema.required, "output");
   assertV4(output.schemaVersion === "4.0.1-lean-primary-output" && output.protocolId === "v4.0.1-lean-risk-triggered-consensus", "protocol identity mismatch");
@@ -529,7 +529,8 @@ export function validateV4PrimaryOutput(output, packet) {
   }
 
   for (const sectionId of sectionIds) for (const side of ["pro", "con"]) assertV4(output.moves.some((move) => move.sectionId === sectionId && move.side === side), `${sectionId}: ${side} has no selected move`);
-  for (const side of ["pro", "con"]) validateAdjustment(output.burdenCompletionAdjustment[side], side, new Set(moveIds), bridgeIds);
+  const adjustmentBurdenIds = new Set([...bridgeIds, ...additionalAdjustmentBurdenIds]);
+  for (const side of ["pro", "con"]) validateAdjustment(output.burdenCompletionAdjustment[side], side, new Set(moveIds), adjustmentBurdenIds);
   assertObjectShape(output.audit, Object.keys(schema.properties.audit.properties), "audit");
   for (const [key, definition] of Object.entries(schema.properties.audit.properties)) assertV4(output.audit[key] === definition.const, `audit.${key} mismatch`);
   return {
