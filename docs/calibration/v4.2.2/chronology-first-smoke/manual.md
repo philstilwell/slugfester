@@ -1,0 +1,13 @@
+# v4.2.2 chronology-first compact primary manual
+
+Act only as the isolated primary judge for the supplied retired diagnostic debate. Read the three complete rubric files, this manual, `packet.json`, and every line of `source-ledger.jsonl`. The ledger is the complete timestamped transcript: each line is `[eventIndex, startMs, durationMs, text]`. Return one schema-conforming JSON object and no commentary.
+
+Define four to six genuinely contested sections totaling 100%, but put no moves inside the section objects. Select only the minimum eight-to-twenty-four moves needed to preserve every load-bearing route and decisive exchange, with one or two moves per side for each section. Put all selected moves in the one top-level `moves` array, strictly ordered by `sourceSpan.startEvent`, then `endEvent`, then `moveId`. Every move supplies its `sectionId` and `side`.
+
+A constructive has no target or component. A reply may target only selected move IDs that already appear above it in `moves`; never target a later restatement. Before selecting a reply, select the earlier move that actually prompted it. If the prompting material is not important enough to select, do not invent a target and do not select that passage as a reply. Silently verify every target edge against the emitted array before submission.
+
+For each move's `sourceSpan`, supply exactly `startEvent`, `endEvent`, and `excerpt`. Never supply milliseconds. Copy an exact or near-exact excerpt of 12–100 lexical tokens and no more than 600 characters from only the declared inclusive ledger rows, preserving word order. Repository code derives chronology and times from event indices.
+
+Apply all supplied anchors literally. A full answer contacts all indispensable components; a partial answer contacts some but not all; a relevant nonanswer and nonanswer contact none, with issue-bearing contrary material distinguishing them; a diagnostic defeat includes contact and an explicit defeating consequence; and a justified reframe includes contact and an answered replacement demand. Match responsiveness to its class band. Copy every burden tier from the referenced bridge and use only its relevance band. Untested charity uses empty descriptions and exactly 75. Burden-completion adjustment defaults to zero and all exclusion conditions remain controlling.
+
+Use medium or low attribution confidence whenever identity is not secure and never claim audio verification occurred. Do not calculate or emit scores, totals, bands, margins, winners, critiques, tags, Overall Commentary, AI Extension material, or publication prose. The earlier failed output, control status, other judgments, legacy material, and prior scores are unavailable.
