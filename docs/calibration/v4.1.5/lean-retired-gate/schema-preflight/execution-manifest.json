@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "4.1.5-bounded-schema-preflight-manifest",
+  "protocolId": "v4.1.5-bounded-lean-risk-triggered-consensus",
+  "status": "frozen-one-synthetic-context-authorized",
+  "frozenAt": "2026-08-05T05:35:10Z",
+  "checkpointCommit": "075ce4f4516642732a946e3c50ef1c0528b0ab9e",
+  "syntheticOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low"
+  },
+  "inputs": {
+    "workflowBase": "docs/assessment-workflow-v4.0.md",
+    "workflowDerivedScores": "docs/assessment-workflow-v4.0.1.md",
+    "workflow": "docs/assessment-workflow-v4.1.md",
+    "workflowBurdenIds": "docs/assessment-workflow-v4.1.1.md",
+    "workflowChronology": "docs/assessment-workflow-v4.1.2.md",
+    "workflowConsistency": "docs/assessment-workflow-v4.1.3.md",
+    "workflowBurdenTuple": "docs/assessment-workflow-v4.1.4.md",
+    "workflowTiming": "docs/assessment-workflow-v4.1.5.md",
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubric": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.1.5/lean-retired-gate/manual.md",
+    "packet": "docs/calibration/v4.1.5/lean-retired-gate/schema-preflight/packet.json",
+    "schema": "docs/calibration/v4.1.5/lean-retired-gate/schemas/primary.schema.json",
+    "transcript": "docs/calibration/v4.0/lean-retired-gate/schema-preflight/transcript.txt",
+    "events": "docs/calibration/v4.0/lean-retired-gate/schema-preflight/events.json"
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attempts": 1,
+    "retriesMaximum": 0,
+    "perInvocationTimeoutMs": 1200000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "authorization": {
+    "syntheticSchemaPreflightModelExecution": true,
+    "debatePrimaryModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  },
+  "artifacts": {
+    "output": "docs/calibration/v4.1.5/lean-retired-gate/schema-preflight/output.json",
+    "execution": "docs/calibration/v4.1.5/lean-retired-gate/schema-preflight/model-execution.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.1.5/lean-retired-gate/schema-preflight/output.json",
+    "docs/calibration/v4.1.5/lean-retired-gate/schema-preflight/model-execution.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.0.md": "f3c37042481d808fc5e0a63430f021b0e4a76f9da4147d9de78a0d87e0f0c154",
+    "docs/assessment-workflow-v4.0.1.md": "41c6e13306ad8fc96a46ef5cdaf55e4d38b2c3db69346035a7e1076e650d81b8",
+    "docs/assessment-workflow-v4.1.md": "d5ff0c7c89f8f0eed577a16c5a87865e36b233403d250b65eb6450244bc838cf",
+    "docs/assessment-workflow-v4.1.1.md": "49b766209be8f0806393db73c2187134bb034259d87f8a2694e7c336837e645e",
+    "docs/assessment-workflow-v4.1.2.md": "37e1e295bf366a085d4b5641c20dc2ed7310030b4623c5a62aecdb1977a21fd5",
+    "docs/assessment-workflow-v4.1.3.md": "27cc341d3e085f977a801c7d2cacc9e6fe1e3e410c4aff6d3ca17516fa4c8f4e",
+    "docs/assessment-workflow-v4.1.4.md": "695cda4fe6d5ab37686a49c1003dda3465f53f40601dcb52d8c8a780cb442ae0",
+    "docs/assessment-workflow-v4.1.5.md": "d76f29a8b2b5fa884285a6ca86837911c3657eb511e896242beddbf54a48e948",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/calibration/v4.1.5/lean-retired-gate/manual.md": "7abcb4297d287ae24d34cfd6370f22930d322b8ccae38bbac4b9612c3e2de1a1",
+    "docs/calibration/v4.1.5/lean-retired-gate/schema-preflight/packet.json": "cbea883df349f045d10d38bf0a581878b551a86e8397cd8f23bfc4b1cb1f28ab",
+    "docs/calibration/v4.1.5/lean-retired-gate/schemas/primary.schema.json": "8faa253b7eeb5d0d932dfa403f4e2c3ec324070304918054b9e202f35819b9f5",
+    "docs/calibration/v4.0/lean-retired-gate/schema-preflight/transcript.txt": "3fb2cfc08a8766a2ccb7ac1f7d239bf770018f1708a12e3a8ef6ad9266663bef",
+    "docs/calibration/v4.0/lean-retired-gate/schema-preflight/events.json": "697fcc3ff2412572593f8f3cc4922635d9e7f257d2993b9ebc0bb3ddd9800bf5",
+    "docs/calibration/v4.1.5/lean-retired-gate/preparation-manifest.json": "1b8f018c4871a8994fd68da94ba6ffc95622d1aa49f723f98290e399a40dd1df",
+    "docs/calibration/v4.1.5/lean-retired-gate/dry-fixture.json": "b169c51c0fd9f5317b2edc001922ab5f2c3383d2a1e6c1508b091fe4899757a4",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v41-lean-production.mjs": "9d4f4a5a54ff4c73f50733aa148064200862991a69003823d303e7bac363d9ba",
+    "scripts/validate-v41-lean-primary-output.mjs": "38ba08d7354ad32191d7e52996bf09020d61fa454b0ea982f96f17e443c89f28",
+    "scripts/preregister-v41-lean-schema-preflight.mjs": "b5cc02003956411080e5b3eda1385de4e2c1c3a9c6ab364e14693846e30f1582",
+    "scripts/run-v41-lean-schema-preflight.mjs": "6b8362d820c4428d6d48158962d625f1d5caea5a7e0d8273985b0ef6b5a4fbf2"
+  }
+}
