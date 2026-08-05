@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "4.2-compact-transport-smoke-preparation",
+  "protocolId": "v4.2-compact-primary-input-transport-smoke",
+  "status": "prepared-retired-transport-smoke-no-model-execution",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "debate": {
+    "debateNumber": "180",
+    "debateId": "ally-licona-did-jesus-rise-dead-2004",
+    "durationSeconds": 9359,
+    "priorFailure": "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/primary-failure-analysis.json",
+    "packet": "docs/calibration/v4.2/compact-transport-smoke/packet.json",
+    "sourceLedger": ".assessment-cache/compact-ledgers/v4.2/debate-180.jsonl",
+    "rawOutput": "docs/calibration/v4.2/compact-transport-smoke/primary-output.json",
+    "compiledOutput": "docs/calibration/v4.2/compact-transport-smoke/primary-compiled.json"
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "inputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.2/compact-transport-smoke/manual.md",
+    "schema": "docs/calibration/v4.2/compact-transport-smoke/schema.json"
+  },
+  "transport": {
+    "originalPlainTranscriptStoredLocally": true,
+    "originalEventsStoredLocally": true,
+    "sourceLedgerReplayExact": true,
+    "plainTranscriptDeliveredToModel": false,
+    "originalEventsDeliveredToModel": false,
+    "completeSourceTextDeliveredOnce": true,
+    "modelCopiedFiles": [
+      "docs/reassessment-rubric-v4.0.md",
+      "docs/reassessment-rubric-v4.0.1.md",
+      "docs/reassessment-rubric-v4.1.md",
+      "docs/calibration/v4.2/compact-transport-smoke/manual.md",
+      "docs/calibration/v4.2/compact-transport-smoke/schema.json",
+      "docs/calibration/v4.2/compact-transport-smoke/packet.json",
+      ".assessment-cache/compact-ledgers/v4.2/debate-180.jsonl"
+    ],
+    "copiedBytes": {
+      "docs/reassessment-rubric-v4.0.md": 8242,
+      "docs/reassessment-rubric-v4.0.1.md": 1010,
+      "docs/reassessment-rubric-v4.1.md": 1963,
+      "docs/calibration/v4.2/compact-transport-smoke/manual.md": 3596,
+      "docs/calibration/v4.2/compact-transport-smoke/schema.json": 43447,
+      "docs/calibration/v4.2/compact-transport-smoke/packet.json": 2959,
+      ".assessment-cache/compact-ledgers/v4.2/debate-180.jsonl": 178351
+    },
+    "totalCopiedInputBytes": 239568,
+    "priorV419CopiedInputBytes": 514811,
+    "byteReduction": 275243,
+    "reductionShare": 0.534649
+  },
+  "judgmentPolicyChangedFromV419": false,
+  "totals": {
+    "debates": 1,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionApiCalls": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "deterministicFixtures": true,
+    "executionManifest": false,
+    "primaryModelExecution": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "freshGateSelection": false,
+    "productionMutation": false
+  }
+}
