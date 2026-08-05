@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "4.2.6-retired-completion-failure-analysis",
+  "protocolId": "v4.2.6-conservative-excerpt-retired-completion",
+  "status": "failed-relational-primary-constraints",
+  "execution": {
+    "contextsPlanned": 5,
+    "contextsAttempted": 1,
+    "contextsSkipped": 4,
+    "attempts": 1,
+    "retries": 0,
+    "elapsedMs": 315165,
+    "recoverableStreamEvents": 0,
+    "transportClassification": "clean",
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "failedContext": {
+    "debateNumber": "106",
+    "debateId": "peterson-blackmore-god-meaning-life-2018",
+    "rawOutputCreated": true,
+    "compiledOutputCreated": false
+  },
+  "validation": {
+    "firstSurfacedFailure": "m06: moves must be emitted in source chronology",
+    "orderingViolations": [
+      {
+        "priorMoveId": "m05",
+        "priorStartEvent": 365,
+        "moveId": "m06",
+        "startEvent": 264
+      },
+      {
+        "priorMoveId": "m10",
+        "priorStartEvent": 723,
+        "moveId": "m11",
+        "startEvent": 676
+      }
+    ],
+    "diagnosticSortPerformedOnlyInMemory": true,
+    "postSortFailure": "s4.pro: requires one or two moves",
+    "sectionCounts": [
+      {
+        "sectionId": "s1",
+        "pro": 2,
+        "con": 1
+      },
+      {
+        "sectionId": "s2",
+        "pro": 2,
+        "con": 2
+      },
+      {
+        "sectionId": "s3",
+        "pro": 2,
+        "con": 2
+      },
+      {
+        "sectionId": "s4",
+        "pro": 3,
+        "con": 2
+      }
+    ],
+    "excerptDiagnostics": [
+      {
+        "moveId": "m01",
+        "characters": 443,
+        "tokens": 85
+      },
+      {
+        "moveId": "m02",
+        "characters": 450,
+        "tokens": 79
+      },
+      {
+        "moveId": "m03",
+        "characters": 450,
+        "tokens": 71
+      },
+      {
+        "moveId": "m04",
+        "characters": 449,
+        "tokens": 78
+      },
+      {
+        "moveId": "m05",
+        "characters": 448,
+        "tokens": 83
+      },
+      {
+        "moveId": "m06",
+        "characters": 450,
+        "tokens": 89
+      },
+      {
+        "moveId": "m07",
+        "characters": 447,
+        "tokens": 78
+      },
+      {
+        "moveId": "m08",
+        "characters": 445,
+        "tokens": 78
+      },
+      {
+        "moveId": "m09",
+        "characters": 416,
+        "tokens": 74
+      },
+      {
+        "moveId": "m10",
+        "characters": 450,
+        "tokens": 92
+      },
+      {
+        "moveId": "m11",
+        "characters": 447,
+        "tokens": 83
+      },
+      {
+        "moveId": "m12",
+        "characters": 391,
+        "tokens": 75
+      },
+      {
+        "moveId": "m13",
+        "characters": 448,
+        "tokens": 89
+      },
+      {
+        "moveId": "m14",
+        "characters": 449,
+        "tokens": 77
+      },
+      {
+        "moveId": "m15",
+        "characters": 449,
+        "tokens": 81
+      },
+      {
+        "moveId": "m16",
+        "characters": 447,
+        "tokens": 91
+      }
+    ],
+    "excerptsWithin450CharactersAnd100Tokens": true,
+    "laterValidationResultsAvailableBeyondPostSortFailure": false
+  },
+  "diagnosis": {
+    "transportFailure": false,
+    "excerptConstraintFailure": false,
+    "chronologyTopologyInstructionInsufficient": true,
+    "topLevelSchemaCannotEnforcePerSectionSideCardinality": true,
+    "silentDeterministicReorderingInsufficient": true,
+    "relationalCorrectionRequiresAIJudgment": true
+  },
+  "disposition": {
+    "v426ReliabilityTestPassed": false,
+    "remainingFourContextsExecuted": false,
+    "automaticNormalizationAuthorized": false,
+    "retryUnderV426Authorized": false,
+    "scoreDerivationAuthorized": false,
+    "boundedScoreBlindAICorrectionDevelopmentAuthorized": true
+  },
+  "nextDevelopment": {
+    "preserveFirstPassRaw": true,
+    "deterministicViolationExtraction": true,
+    "oneCorrectionPassMaximum": true,
+    "correctionModel": "5.6 Sol",
+    "correctionReasoningEffort": "low",
+    "correctionReceivesScoresOrLegacy": false,
+    "correctionReceivesFullSourceLedger": true,
+    "fullValidationAfterCorrection": true,
+    "secondCorrectionAuthorized": false,
+    "correctionRateAndRuntimeEnter195Projection": true
+  }
+}
