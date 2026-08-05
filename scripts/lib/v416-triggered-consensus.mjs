@@ -149,6 +149,42 @@ export function evaluateV416PassBTiming(results, primaryRuntime, { fixedTranspor
   };
 }
 
+export function evaluateV416AdjudicationTiming(results, primaryRuntime, passBRuntime, { fixedTransportContingencyHours = 2 } = {}) {
+  assertV4(Array.isArray(results) && results.length === 3 && results.every((item) => item.gateAcceptancePassed === true && Number.isFinite(item.elapsedMs) && item.elapsedMs > 0 && Number.isInteger(item.recoverableStreamEvents) && item.recoverableStreamEvents >= 0), "three valid adjudication timing results required");
+  assertV4(primaryRuntime?.runtimePassed === true && passBRuntime?.runtimePassed === true, "valid primary and Pass B runtimes required");
+  const primaryMinutes = primaryRuntime.centralProjection?.inputs?.primaryMinutesPerDebate;
+  const conservativePrimaryMinutes = primaryRuntime.conservativeProjection?.inputs?.primaryMinutesPerDebate;
+  const passBMinutes = passBRuntime.centralProjection?.inputs?.passBMinutesPerEscalatedDebate;
+  const conservativePassBMinutes = passBRuntime.conservativeProjection?.inputs?.passBMinutesPerEscalatedDebate;
+  assertV4([primaryMinutes, conservativePrimaryMinutes, passBMinutes, conservativePassBMinutes].every((value) => Number.isFinite(value) && value > 0), "projection inputs unavailable");
+  const wallAdjudicationMinutesPerDebate = results.reduce((sum, item) => sum + item.elapsedMs, 0) / 60000 / results.length;
+  const clean = results.filter((item) => item.recoverableStreamEvents === 0);
+  const recovered = results.filter((item) => item.recoverableStreamEvents > 0);
+  const timingEligible = clean.length >= 2 && recovered.length <= 1;
+  const computeAdjudicationMinutesPerDebate = timingEligible && recovered.length === 1
+    ? clean.reduce((sum, item) => sum + item.elapsedMs, 0) / 60000 / clean.length
+    : wallAdjudicationMinutesPerDebate;
+  const conservativeAdjudicationMinutesPerDebate = Math.max(6.5, computeAdjudicationMinutesPerDebate * 1.25);
+  const centralProjection = addTransportContingency(projectV41ComputeHours({ primaryMinutesPerDebate: primaryMinutes, finalizationMinutesPerDebate: 4.25, escalationRate: 0.15, passBMinutesPerEscalatedDebate: passBMinutes, adjudicationShareOfEscalations: 1, adjudicationMinutesPerAdjudicatedDebate: computeAdjudicationMinutesPerDebate }), fixedTransportContingencyHours);
+  const conservativeProjection = addTransportContingency(projectV41ComputeHours({ primaryMinutesPerDebate: conservativePrimaryMinutes, finalizationMinutesPerDebate: 5, escalationRate: 0.2, passBMinutesPerEscalatedDebate: conservativePassBMinutes, adjudicationShareOfEscalations: 1, adjudicationMinutesPerAdjudicatedDebate: conservativeAdjudicationMinutesPerDebate }), fixedTransportContingencyHours);
+  const runtimePassed = timingEligible && centralProjection.hours.total <= 52 && conservativeProjection.hours.total <= 60;
+  return {
+    wallAdjudicationMinutesPerDebate: Number(wallAdjudicationMinutesPerDebate.toFixed(2)),
+    computeAdjudicationMinutesPerDebate: Number(computeAdjudicationMinutesPerDebate.toFixed(2)),
+    conservativeAdjudicationMinutesPerDebate: Number(conservativeAdjudicationMinutesPerDebate.toFixed(2)),
+    observedAdjudicationShareOfEscalations: 1,
+    projectedAdjudicationShareOfEscalations: 1,
+    transportCleanContexts: clean.length,
+    recoveredTransportContexts: recovered.length,
+    recoveredTransportDebates: recovered.map((item) => item.debateNumber),
+    timingEligible,
+    fixedTransportContingencyHours,
+    centralProjection,
+    conservativeProjection,
+    runtimePassed
+  };
+}
+
 export function fileSha256(value) {
   return sha256(value);
 }

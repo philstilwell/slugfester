@@ -1,0 +1,7 @@
+# v4.1.6 Post-Adjudication Analysis
+
+The deterministic post-adjudication analysis passed. All 154 preregistered decisions are present and restricted to supplied candidates: 14 response pairs, 3 charity pairs, 131 independent scoring fields, and 6 burden adjustments. Candidate 1 was selected 76 times and candidate 2 was selected 78 times. No choice is missing, no third value was introduced, and no calculated score was present during adjudication.
+
+Adjudication averaged 3.22 minutes per debate across three clean contexts. The conservative runtime remains floored at 6.50 minutes rather than being reduced to 125% of this small-sample mean. More importantly, both compute projections now assume that 100% of escalated debates require adjudication because all three retired debates did. With that stricter incidence assumption, the projected workload for 195 debates is 40.42 central compute-hours and 56.47 conservative compute-hours, including five fixed hours for audio verification, QA, and rendering plus a separate two-hour transport contingency.
+
+The central target of at most 52 hours and the conservative ceiling of at most 60 hours both pass. This authorizes deterministic final-ledger assembly from the two initial judgments and the isolated candidate-bound decisions. Numerical score derivation remains prohibited until every assembled ledger validates against the single scoring-input schema.
