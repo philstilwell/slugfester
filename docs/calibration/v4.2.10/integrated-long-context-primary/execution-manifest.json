@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "4.2.10-integrated-primary-execution-manifest",
+  "protocolId": "v4.2.10-integrated-long-context-primary",
+  "status": "frozen-one-integrated-long-context-primary-authorized",
+  "frozenAt": "2026-08-05T15:17:16Z",
+  "checkpointCommit": "1e09680eb0ea2d9e7c0c15a522c8923612bd2df8",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "inputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.2.10/integrated-long-context-primary/manual.md",
+    "schema": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/schema.json",
+    "packet": "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-99.json",
+    "candidateBundle": "docs/calibration/v4.2.10/integrated-long-context-primary/candidate-bundle.json",
+    "candidateContextLedger": "docs/calibration/v4.2.10/integrated-long-context-primary/candidate-context-ledger.jsonl"
+  },
+  "source": {
+    "compilerAnalysis": "docs/calibration/v4.2.9.3/partition-compiler-recovery/analysis.json",
+    "compilerOutputs": [
+      "docs/calibration/v4.2.9.3/partition-compiler-recovery/proposals/chunk-1-derived.json",
+      "docs/calibration/v4.2.9.3/partition-compiler-recovery/proposals/chunk-2a-derived.json",
+      "docs/calibration/v4.2.9.3/partition-compiler-recovery/proposals/chunk-2b-derived.json"
+    ],
+    "fullLedger": ".assessment-cache/compact-ledgers/v4.2.4/debate-99.jsonl",
+    "originalEvents": ".assessment-cache/captions/UWCvKiWjV0g/events.json"
+  },
+  "sparseContext": {
+    "originalEvents": 3397,
+    "deliveredEvents": 1302,
+    "deliveredFraction": 0.3833,
+    "contiguousRanges": [
+      {
+        "startEvent": 294,
+        "endEvent": 331
+      },
+      {
+        "startEvent": 381,
+        "endEvent": 496
+      },
+      {
+        "startEvent": 500,
+        "endEvent": 641
+      },
+      {
+        "startEvent": 697,
+        "endEvent": 740
+      },
+      {
+        "startEvent": 775,
+        "endEvent": 824
+      },
+      {
+        "startEvent": 875,
+        "endEvent": 997
+      },
+      {
+        "startEvent": 1091,
+        "endEvent": 1128
+      },
+      {
+        "startEvent": 1174,
+        "endEvent": 1224
+      },
+      {
+        "startEvent": 1689,
+        "endEvent": 1734
+      },
+      {
+        "startEvent": 1754,
+        "endEvent": 1854
+      },
+      {
+        "startEvent": 1859,
+        "endEvent": 1906
+      },
+      {
+        "startEvent": 2023,
+        "endEvent": 2056
+      },
+      {
+        "startEvent": 2158,
+        "endEvent": 2222
+      },
+      {
+        "startEvent": 2482,
+        "endEvent": 2549
+      },
+      {
+        "startEvent": 2617,
+        "endEvent": 2649
+      },
+      {
+        "startEvent": 2728,
+        "endEvent": 2793
+      },
+      {
+        "startEvent": 2860,
+        "endEvent": 2906
+      },
+      {
+        "startEvent": 3039,
+        "endEvent": 3105
+      },
+      {
+        "startEvent": 3119,
+        "endEvent": 3162
+      },
+      {
+        "startEvent": 3195,
+        "endEvent": 3275
+      }
+    ],
+    "allCandidateSpansIncluded": true,
+    "sparseLedgerSha256": "40a35ac19d6701b4bbef8c6b3f44af1efd0ca22ecb09e0647bad5dc63b20ec62"
+  },
+  "output": "docs/calibration/v4.2.10/integrated-long-context-primary/primary-output.json",
+  "compiledOutput": "docs/calibration/v4.2.10/integrated-long-context-primary/primary-compiled.json",
+  "isolation": {
+    "freshTemporaryCodexHome": true,
+    "freshSourceDirectory": true,
+    "candidateDiscoveryScoresUnavailableBecauseNoneExist": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "fullLedgerUnavailable": true,
+    "sparseCandidateContextAvailable": true
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attempts": 1,
+    "retries": 0,
+    "timeoutMs": 1200000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "authorization": {
+    "integratedPrimaryExecution": true,
+    "deterministicValidation": true,
+    "compilation": true,
+    "scoreDerivation": false,
+    "productionMutation": false
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.2.10/integrated-long-context-primary/model-execution.json",
+    "analysis": "docs/calibration/v4.2.10/integrated-long-context-primary/analysis.json",
+    "output": "docs/calibration/v4.2.10/integrated-long-context-primary/primary-output.json",
+    "compiledOutput": "docs/calibration/v4.2.10/integrated-long-context-primary/primary-compiled.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.2.10/integrated-long-context-primary/primary-output.json",
+    "docs/calibration/v4.2.10/integrated-long-context-primary/primary-compiled.json",
+    "docs/calibration/v4.2.10/integrated-long-context-primary/model-execution.json",
+    "docs/calibration/v4.2.10/integrated-long-context-primary/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.10.md": "53da120f4c8089ba7987e52c5108e99354c1df842dd08c2f70101c7e3aca6988",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/calibration/v4.2.10/integrated-long-context-primary/manual.md": "39ae4d270a78de6129dcd6d4847d0c545e1549d6172e96c0543e50b911bf9c5f",
+    "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/schema.json": "71620b17ec1c5173d6a0bc05fc10f1140884140712b3a1b152667a65126d20eb",
+    "docs/calibration/v4.2.6/conservative-excerpt-retired-completion/packets/debate-99.json": "dca4a3de43e8bb2daf2327b911a9aa466da0ec272e4448497fd3e3e1cf32a6d8",
+    "docs/calibration/v4.2.10/integrated-long-context-primary/candidate-bundle.json": "ec5bc06c654fff52a747720cd093cb2abc9a81e61eb1c7c7cd3280598edde120",
+    "docs/calibration/v4.2.10/integrated-long-context-primary/candidate-context-ledger.jsonl": "40a35ac19d6701b4bbef8c6b3f44af1efd0ca22ecb09e0647bad5dc63b20ec62",
+    "docs/calibration/v4.2.9.3/partition-compiler-recovery/analysis.json": "41502d24e1bc7039847e7b6408721cb9ef5d0f488c968c9b7817577f63f920b9",
+    "docs/calibration/v4.2.9.3/partition-compiler-recovery/proposals/chunk-1-derived.json": "76dd2875f3146778d76626a1db37c3219e59f899d6cd9c38ccfaf3dcf1de8e92",
+    "docs/calibration/v4.2.9.3/partition-compiler-recovery/proposals/chunk-2a-derived.json": "9e7050b73b33170d6de5c8d0bc51417a5b60e182bc60ea529685207dafbe8c5b",
+    "docs/calibration/v4.2.9.3/partition-compiler-recovery/proposals/chunk-2b-derived.json": "edfd38109e7b7ac7826f6cafecce8989b456bb7f8383bf4cf2326d123b632815",
+    ".assessment-cache/compact-ledgers/v4.2.4/debate-99.jsonl": "1fc975ee96ce0fc7b32a5bf68d626a1d2185fccdfcb9e6664e7b948658f31cef",
+    ".assessment-cache/captions/UWCvKiWjV0g/events.json": "f27acc146aab36fe21dfd7ae50d1624240a2a12c28fbee9a349b0b36b22f4879",
+    "docs/calibration/v4.2.10/integrated-long-context-primary/preparation-manifest.json": "8b2dbb51542f78b3e52a64131e2f5e7500fdd36725a824a7195c0865307ffa97",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v41-lean-production.mjs": "9d4f4a5a54ff4c73f50733aa148064200862991a69003823d303e7bac363d9ba",
+    "scripts/lib/v417-fresh-validation.mjs": "c7226c573fab54ef5466f056488fa039e55da5746bd73d1d87553f61c3ec0f79",
+    "scripts/lib/v418-source-integrity.mjs": "ff0593a316fcd06f1662b0f9c9864bdd4c2a867a718638a79cac8b9f27eac205",
+    "scripts/lib/v419-schema-bounded-source.mjs": "4e40ed49afd5418de00c8830edcb81f9047ab99fe4dc584f978953a7bb15d548",
+    "scripts/lib/v42-compact-transport.mjs": "f09819bc34a1ed3e3d4c4c2a1c2af7eb50846dcf1deee90fa050da3ef7fe37c9",
+    "scripts/lib/v421-compact-fresh.mjs": "c1959ab6e5235fcb1679955fc69d7be4bca2c555e3af9d5cdf0d4199f32e16fe",
+    "scripts/lib/v422-chronology-first.mjs": "aea527699e309cbbe51856e2abb99efc37ace15005029a3d1e83920154e29b16",
+    "scripts/lib/v423-chronology-fresh.mjs": "64f1f47ea9083d18376953078ebedb51608106283099b896be04a729c082037d",
+    "scripts/lib/v424-screened-chronology-fresh.mjs": "a5e746482d22fd308cc9564c819d76cc7676d2fe05b4428af0f4265f29e01c0d",
+    "scripts/lib/v425-conservative-excerpt.mjs": "5f1a9462163e1bba0f4b316b744bb49e9f1d7b69e53fe2d77468dc9ce55cc661",
+    "scripts/lib/v426-retired-completion.mjs": "e59915c230596ea4b68b0fbbb44629cc8e0f4341e4a5755b784cd87531cdf084",
+    "scripts/build-v4210-integrated-primary.mjs": "77b1553e321af154fcee61b0ed693e3c5ae9d0826389ae47238a73a6399e7563",
+    "scripts/test-v4210-integrated-primary.mjs": "419641c246266da66f9ad01b946860b796a38cf33311594b34f54708853878a5",
+    "scripts/preregister-v4210-integrated-primary.mjs": "b067cdbf7ebeaa97c9b3db947644c75650887a5b891fa977815cc9af956a455e",
+    "scripts/run-v4210-integrated-primary.mjs": "e9ea1c17714115aeb7dc7d3f42cdc6871dd29ed2b18665b073ff71c2a1c4529b",
+    "scripts/analyze-v4210-integrated-primary.mjs": "76ec81fc6091aa7dfba154257c6861810dae709936faf34107c041c944c908f9",
+    "scripts/validate-v426-primary-output.mjs": "9c7dce240a7cc0cd0c57f50ff8998c3eedf7924e2ef9ecb03f9ddca799f6f3d3"
+  }
+}
