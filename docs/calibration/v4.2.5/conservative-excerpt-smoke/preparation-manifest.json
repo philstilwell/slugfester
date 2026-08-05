@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "4.2.5-conservative-excerpt-smoke-preparation",
+  "protocolId": "v4.2.5-conservative-excerpt-compact-diagnostic",
+  "status": "prepared-retired-conservative-excerpt-smoke",
+  "developmentOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "debate": {
+    "debateNumber": "131",
+    "debateId": "boyce-carrier-historical-jesus-mythicism-2022",
+    "durationSeconds": 10464,
+    "priorFailure": "docs/calibration/v4.2.4/screened-chronology-fresh-six-gate/primary-failure-analysis.json",
+    "priorRawOutputExcluded": "docs/calibration/v4.2.4/screened-chronology-fresh-six-gate/primary-outputs/debate-131.json",
+    "packet": "docs/calibration/v4.2.5/conservative-excerpt-smoke/packet.json",
+    "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.4/debate-131.jsonl",
+    "originalTranscript": ".assessment-cache/captions/bC-Uj92Cpvg/transcript.txt",
+    "originalEvents": ".assessment-cache/captions/bC-Uj92Cpvg/events.json",
+    "originalManifest": ".assessment-cache/captions/bC-Uj92Cpvg/manifest.json",
+    "rawOutput": "docs/calibration/v4.2.5/conservative-excerpt-smoke/primary-output.json",
+    "compiledOutput": "docs/calibration/v4.2.5/conservative-excerpt-smoke/primary-compiled.json"
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "inputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.2.5/conservative-excerpt-smoke/manual.md",
+    "schema": "docs/calibration/v4.2.5/conservative-excerpt-smoke/schema.json"
+  },
+  "transport": {
+    "sourceLedgerReplayExact": true,
+    "sourceLedgerSha256": "88ebdce99a0fdd22a481e3dcaaea4c4fef61e01f9f4a41144913fa9e6fe0b3aa",
+    "sourceLedgerEvents": 5034,
+    "completeSourceTextDeliveredOnce": true,
+    "duplicatePlainTranscriptDelivered": false,
+    "originalEventsDelivered": false,
+    "totalCopiedInputBytes": 335927,
+    "copiedFiles": [
+      "docs/reassessment-rubric-v4.0.md",
+      "docs/reassessment-rubric-v4.0.1.md",
+      "docs/reassessment-rubric-v4.1.md",
+      "docs/calibration/v4.2.5/conservative-excerpt-smoke/manual.md",
+      "docs/calibration/v4.2.5/conservative-excerpt-smoke/schema.json",
+      "docs/calibration/v4.2.5/conservative-excerpt-smoke/packet.json",
+      ".assessment-cache/compact-ledgers/v4.2.4/debate-131.jsonl"
+    ],
+    "copiedBytes": {
+      "docs/reassessment-rubric-v4.0.md": 8242,
+      "docs/reassessment-rubric-v4.0.1.md": 1010,
+      "docs/reassessment-rubric-v4.1.md": 1963,
+      "docs/calibration/v4.2.5/conservative-excerpt-smoke/manual.md": 1746,
+      "docs/calibration/v4.2.5/conservative-excerpt-smoke/schema.json": 25460,
+      "docs/calibration/v4.2.5/conservative-excerpt-smoke/packet.json": 3183,
+      ".assessment-cache/compact-ledgers/v4.2.4/debate-131.jsonl": 294323
+    }
+  },
+  "excerptChange": {
+    "priorEndpointMaximumCharacters": 600,
+    "endpointMaximumCharacters": 450,
+    "tokenRangeRetained": [
+      12,
+      100
+    ],
+    "lexicalRecallRetained": 0.8,
+    "orderedCoverageRetained": 0.8,
+    "automaticTruncationAuthorized": false,
+    "judgmentAnchorsChanged": false
+  },
+  "totals": {
+    "debates": 1,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionApiCalls": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "deterministicFixtures": true,
+    "executionManifest": false,
+    "primaryModelExecution": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "freshGateSelection": false,
+    "productionMutation": false
+  }
+}
