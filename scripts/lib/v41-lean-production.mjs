@@ -11,11 +11,11 @@ import {
   validateV4PrimaryOutput
 } from "./v4-lean-production.mjs";
 
-export const V41_LEAN_ROOT = "docs/calibration/v4.1.3/lean-retired-gate";
+export const V41_LEAN_ROOT = "docs/calibration/v4.1.4/lean-retired-gate";
 export const V41_LEAN_DEBATES = Object.freeze(["55", "103", "161"]);
-export const V41_PROTOCOL_ID = "v4.1.3-bounded-lean-risk-triggered-consensus";
-export const V41_OUTPUT_VERSION = "4.1.3-bounded-primary-output";
-export const V41_PACKET_VERSION = "4.1.3-bounded-source-only-packet";
+export const V41_PROTOCOL_ID = "v4.1.4-bounded-lean-risk-triggered-consensus";
+export const V41_OUTPUT_VERSION = "4.1.4-bounded-primary-output";
+export const V41_PACKET_VERSION = "4.1.4-bounded-source-only-packet";
 export const V41_MODEL = Object.freeze({ label: "5.6 Sol", slug: "gpt-5.6-sol", primaryReasoningEffort: "low", reviewReasoningEffort: "high" });
 export const V41_MOVE_MINIMUM = 8;
 export const V41_MOVE_MAXIMUM = 24;
@@ -50,8 +50,8 @@ export function makeV41PrimarySchema() {
   section.properties.proMoves = { type: "array", minItems: 1, maxItems: 2, items: move };
   section.properties.conMoves = { type: "array", minItems: 1, maxItems: 2, items: move };
 
-  base.$id = "slugfester-v413-bounded-lean-primary-judgment";
-  base.title = "Slugfester v4.1.3 bounded lean primary judgment";
+  base.$id = "slugfester-v414-bounded-lean-primary-judgment";
+  base.title = "Slugfester v4.1.4 bounded lean primary judgment";
   base.required = base.required.filter((key) => key !== "moves");
   delete base.properties.moves;
   base.properties.schemaVersion.const = V41_OUTPUT_VERSION;

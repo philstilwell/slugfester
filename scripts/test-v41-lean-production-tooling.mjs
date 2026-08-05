@@ -43,18 +43,24 @@ allContactedReply.ratings.responsiveness.value = 70;
 let inconsistentPartialRejected = false;
 try { validateV41PrimaryOutput(inconsistentPartial, packet); } catch (error) { inconsistentPartialRejected = /partial answer must contact some but not all components/.test(error.message); }
 
-if (![missingSubsidiaryRejected, missingSideRejected, futureTargetRejected, inconsistentPartialRejected].every(Boolean)) throw new Error("one or more v4.1.3 structural mutations escaped validation");
+const burdenTierMismatch = structuredClone(primary);
+const burdenMove = burdenTierMismatch.sections.flatMap((section) => [...section.proMoves, ...section.conMoves]).find((move) => move.burdenContact?.tier === "central");
+burdenMove.burdenContact.tier = "subsidiary";
+let burdenTierMismatchRejected = false;
+try { validateV41PrimaryOutput(burdenTierMismatch, packet); } catch (error) { burdenTierMismatchRejected = /burden tier does not match bridge/.test(error.message); }
+
+if (![missingSubsidiaryRejected, missingSideRejected, futureTargetRejected, inconsistentPartialRejected, burdenTierMismatchRejected].every(Boolean)) throw new Error("one or more v4.1.4 structural mutations escaped validation");
 const central = projectV41ComputeHours();
 const conservative = projectV41ConservativeHours();
 if (!central.centralTargetPassed || !conservative.conservativeCeilingPassed) throw new Error("v4.1 planning projection exceeds a compute ceiling");
 
 const fixture = {
-  schemaVersion: "4.1.3-bounded-tooling-fixture",
+  schemaVersion: "4.1.4-bounded-tooling-fixture",
   protocolId: V41_PROTOCOL_ID,
   status: "passed",
   validation,
   calculatedFixture: { pro: scores.overall.pro.score, con: scores.overall.con.score, winner: scores.winner },
-  mutationTests: { routeBurdenIdAccepted: true, missingSubsidiaryRejected, missingSideRejected, futureTargetRejected, inconsistentPartialRejected },
+  mutationTests: { routeBurdenIdAccepted: true, missingSubsidiaryRejected, missingSideRejected, futureTargetRejected, inconsistentPartialRejected, burdenTierMismatchRejected },
   computeProjection: { central, conservative },
   costs: { modelContextsExecuted: 0, meteredApiCostUsd: 0, transcriptionCostUsd: 0 }
 };

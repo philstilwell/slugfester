@@ -33,8 +33,8 @@ const runtimePassed = centralProjection.hours.total <= 52 && conservativeProject
 const provisionalComparatorPassed = debates.every((debate) => debate.comparator.winnerPreserved && debate.comparator.bothSidesWithinFive);
 const status = !runtimePassed ? "primary-failed-runtime-budget" : pendingAudioMoves > 0 ? "primary-passed-audio-verification-required" : "primary-passed-ready-to-freeze-triggered-pass-b";
 const analysis = {
-  schemaVersion: "4.1.3-bounded-primary-analysis",
-  protocolId: "v4.1.3-bounded-lean-risk-triggered-consensus",
+  schemaVersion: "4.1.4-bounded-primary-analysis",
+  protocolId: "v4.1.4-bounded-lean-risk-triggered-consensus",
   status,
   debates,
   totals: { debates: 3, validPrimaryContexts: 3, sections: debates.reduce((sum, debate) => sum + debate.validation.sections, 0), moves: debates.reduce((sum, debate) => sum + debate.validation.moves, 0), escalatedDebates, escalationRate: escalatedDebates / debates.length, pendingAudioMoves, provisionalComparatorPassed, winnerClassificationsPreserved: debates.filter((debate) => debate.comparator.winnerPreserved).length, sidesWithinFive: debates.reduce((sum, debate) => sum + ["pro", "con"].filter((side) => Math.abs(debate.comparator.deltas[side]) <= 5).length, 0), attempts: 3, retries: 0, meteredApiCostUsd: 0, transcriptionCostUsd: 0 },

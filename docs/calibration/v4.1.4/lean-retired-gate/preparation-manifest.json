@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "4.1.4-bounded-retired-preparation",
+  "protocolId": "v4.1.4-bounded-lean-risk-triggered-consensus",
+  "status": "prepared-source-only-no-model-execution",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "primaryReasoningEffort": "low",
+    "reviewReasoningEffort": "high",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "debates": [
+    {
+      "debateNumber": "55",
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.4/lean-retired-gate/packets/debate-55.json",
+      "output": "docs/calibration/v4.1.4/lean-retired-gate/primary-outputs/debate-55.json"
+    },
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.1.4/lean-retired-gate/packets/debate-103.json",
+      "output": "docs/calibration/v4.1.4/lean-retired-gate/primary-outputs/debate-103.json"
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "controlSampleSelected": true,
+      "packet": "docs/calibration/v4.1.4/lean-retired-gate/packets/debate-161.json",
+      "output": "docs/calibration/v4.1.4/lean-retired-gate/primary-outputs/debate-161.json"
+    }
+  ],
+  "inputs": {
+    "workflowBase": "docs/assessment-workflow-v4.0.md",
+    "workflowDerivedScores": "docs/assessment-workflow-v4.0.1.md",
+    "workflow": "docs/assessment-workflow-v4.1.md",
+    "workflowBurdenIds": "docs/assessment-workflow-v4.1.1.md",
+    "workflowChronology": "docs/assessment-workflow-v4.1.2.md",
+    "workflowConsistency": "docs/assessment-workflow-v4.1.3.md",
+    "workflowBurdenTuple": "docs/assessment-workflow-v4.1.4.md",
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubric": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.1.4/lean-retired-gate/manual.md",
+    "schema": "docs/calibration/v4.1.4/lean-retired-gate/schemas/primary.schema.json"
+  },
+  "controlPolicy": {
+    "rate": 0.1,
+    "selected": [
+      "161"
+    ],
+    "selectionVisibleToPrimaryJudge": false
+  },
+  "totals": {
+    "debates": 3,
+    "sourceOnlyPackets": 3,
+    "controlDebates": 1,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "deterministicFixtures": true,
+    "endpointPreflight": false,
+    "primaryModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
