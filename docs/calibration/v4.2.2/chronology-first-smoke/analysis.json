@@ -1,0 +1,194 @@
+{
+  "schemaVersion": "4.2.2-chronology-first-smoke-analysis",
+  "protocolId": "v4.2.2-chronology-first-compact-diagnostic",
+  "status": "chronology-smoke-passed-new-fresh-gate-preparation-authorized",
+  "developmentOnly": true,
+  "debateNumber": "07",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "07",
+    "moves": 12,
+    "sections": 4,
+    "mediumOrLowAttributionMoves": [],
+    "calculatedFields": 0,
+    "schemaVersion": "4.2.2-chronology-first-compact-primary-output",
+    "protocolId": "v4.2.2-chronology-first-compact-diagnostic",
+    "boundedMoves": 12,
+    "sourceSpanIntegrity": {
+      "status": "passed",
+      "eventsHashVerified": true,
+      "eventCount": 3879,
+      "repositoryOwnedTimes": true,
+      "maximumCharacters": 600,
+      "maximumTokens": 100,
+      "minimumLexicalRecall": 0.8,
+      "minimumOrderedCoverage": 0.8,
+      "moves": [
+        {
+          "moveId": "m01",
+          "characterCount": 227,
+          "tokenCount": 42,
+          "lexicalRecall": 0.880952,
+          "orderedCoverage": 0.857143
+        },
+        {
+          "moveId": "m08",
+          "characterCount": 370,
+          "tokenCount": 68,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m02",
+          "characterCount": 374,
+          "tokenCount": 74,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m09",
+          "characterCount": 367,
+          "tokenCount": 70,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m05",
+          "characterCount": 405,
+          "tokenCount": 76,
+          "lexicalRecall": 0.986842,
+          "orderedCoverage": 0.986842
+        },
+        {
+          "moveId": "m07",
+          "characterCount": 482,
+          "tokenCount": 88,
+          "lexicalRecall": 1,
+          "orderedCoverage": 0.988636
+        },
+        {
+          "moveId": "m03",
+          "characterCount": 345,
+          "tokenCount": 70,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m10",
+          "characterCount": 373,
+          "tokenCount": 71,
+          "lexicalRecall": 0.985915,
+          "orderedCoverage": 0.985915
+        },
+        {
+          "moveId": "m06",
+          "characterCount": 338,
+          "tokenCount": 72,
+          "lexicalRecall": 0.986111,
+          "orderedCoverage": 0.958333
+        },
+        {
+          "moveId": "m11",
+          "characterCount": 383,
+          "tokenCount": 74,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m04",
+          "characterCount": 352,
+          "tokenCount": 67,
+          "lexicalRecall": 1,
+          "orderedCoverage": 1
+        },
+        {
+          "moveId": "m12",
+          "characterCount": 431,
+          "tokenCount": 76,
+          "lexicalRecall": 0.947368,
+          "orderedCoverage": 0.907895
+        }
+      ]
+    },
+    "compactTransport": {
+      "status": "passed",
+      "eventCount": 3879,
+      "sourceLedgerSha256": "d5184b71a8d5c69373ce10acf3065b8dcbcce7b4b1ed37b41aa0230a3449d646",
+      "replayExact": true,
+      "plainTranscriptDeliveredToModel": false,
+      "originalEventsDeliveredToModel": false
+    },
+    "chronologyFirst": {
+      "status": "passed",
+      "emittedMoves": 12,
+      "targetEdgesReferenceEarlierEmittedMoves": true,
+      "oneOrTwoMovesPerSidePerSection": true
+    }
+  },
+  "deterministicCompilationReplayPassed": true,
+  "runtime": {
+    "elapsedMs": 289636,
+    "elapsedMinutes": 4.83,
+    "timeoutMs": 1800000,
+    "completedInsideTimeout": true
+  },
+  "transport": {
+    "sourceLedgerReplayExact": true,
+    "sourceLedgerSha256": "d5184b71a8d5c69373ce10acf3065b8dcbcce7b4b1ed37b41aa0230a3449d646",
+    "sourceLedgerEvents": 3879,
+    "completeSourceTextDeliveredOnce": true,
+    "duplicatePlainTranscriptDelivered": false,
+    "originalEventsDelivered": false,
+    "totalCopiedInputBytes": 270015,
+    "copiedFiles": [
+      "docs/reassessment-rubric-v4.0.md",
+      "docs/reassessment-rubric-v4.0.1.md",
+      "docs/reassessment-rubric-v4.1.md",
+      "docs/calibration/v4.2.2/chronology-first-smoke/manual.md",
+      "docs/calibration/v4.2.2/chronology-first-smoke/schema.json",
+      "docs/calibration/v4.2.2/chronology-first-smoke/packet.json",
+      ".assessment-cache/compact-ledgers/v4.2.1/debate-07.jsonl"
+    ],
+    "copiedBytes": {
+      "docs/reassessment-rubric-v4.0.md": 8242,
+      "docs/reassessment-rubric-v4.0.1.md": 1010,
+      "docs/reassessment-rubric-v4.1.md": 1963,
+      "docs/calibration/v4.2.2/chronology-first-smoke/manual.md": 2703,
+      "docs/calibration/v4.2.2/chronology-first-smoke/schema.json": 25444,
+      "docs/calibration/v4.2.2/chronology-first-smoke/packet.json": 3108,
+      ".assessment-cache/compact-ledgers/v4.2.1/debate-07.jsonl": 227545
+    }
+  },
+  "topology": {
+    "nestedMoveArraysRemoved": true,
+    "chronologicalTopLevelMovesPassed": true,
+    "targetEdgesReferenceEarlierEmittedMoves": true,
+    "automaticRetargetingPerformed": false,
+    "failedV421OutputAvailableToJudge": false
+  },
+  "comparisonToV421": {
+    "v421ElapsedMs": 254778,
+    "v421TransportClean": true,
+    "v421DeterministicValidationPassed": false,
+    "v421FailureClass": "future-target-cross-reference",
+    "v422CompletedValid": true
+  },
+  "totals": {
+    "attempts": 1,
+    "retries": 0,
+    "modelContexts": 1,
+    "meteredApiCostUsd": 0,
+    "transcriptionApiCalls": 0,
+    "transcriptionCostUsd": 0,
+    "scoresDerived": 0,
+    "legacyComparatorsOpened": 0
+  },
+  "authorization": {
+    "newDisjointFreshGatePreparation": true,
+    "newDisjointFreshGateModelExecution": false,
+    "scoreDerivation": false,
+    "legacyComparison": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
