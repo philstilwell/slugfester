@@ -36,6 +36,14 @@ The third Sol context receives only disputed fields, locked local evidence, and 
 
 The adjudicator must select one supplied candidate for each disputed pair or field. It cannot invent a third value. Response/within-class, relevance/burden-contact, and charity-tested/representational-charity dependencies remain indivisible. Scores stay prohibited throughout adjudication.
 
+## Deterministic adjudicated raw ledger
+
+After—and only after—all dispute-only adjudication contexts pass, the repository constructs one raw scoring-input judgment per debate. The compiler first revalidates both accepted passes against the complete local source chain, reextracts every disagreement, and reconstructs the independently anonymized adjudication packet and provenance. Any mismatch blocks assembly.
+
+Each adjudicated choice is resolved through the repository-only candidate-provenance map. Attribution confidence travels with its basis; response structure travels with within-class responsiveness; charity-tested state travels with representational charity; relevance travels with burden contact; and closed precision and calibration findings travel as complete records. For semantically equal fields, Pass A's rationale is retained deterministically. Unequal scalar values that never crossed a semantic or magnitude dispute trigger receive the preregistered rounded mean only after adjudication, with a repository-authored audit rationale.
+
+The assembled judgment must again pass the complete v4.2.20 source-chain validator. The ledger contains raw model ratings and findings but no move, section, side, overall, winner, or diagnostic score. Exact deterministic replay is required before a single repository-owned scoring pass can be separately authorized.
+
 ## Authorization boundary
 
-Passing fixtures authorize preparation of a fresh Pass B primary gate against the three accepted v4.2.20 debates. They do not authorize Pass B model execution. Execution requires a frozen manifest, exact source and schema hashes, isolated one-attempt contexts, and a fresh cost estimate. Audio, adjudication, score derivation, publication, production mutation, and the 195-debate run remain separately gated.
+Passing fixtures authorize preparation of a fresh Pass B primary gate against the three accepted v4.2.20 debates. They do not authorize Pass B model execution. Execution requires a frozen manifest, exact source and schema hashes, isolated one-attempt contexts, and a fresh cost estimate. Audio, adjudication, deterministic final-ledger assembly, score derivation, publication, production mutation, and the 195-debate run remain separately gated.
