@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "4.2.21.15-candidate-evidence-transport-design",
+  "protocolId": "v4.2.21.15-candidate-evidence-transport",
+  "status": "candidate-evidence-transport-frozen-bundle-preparation-authorized",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "evidencePolicy": {
+    "candidatesRetained": "all",
+    "excerptsPerCandidate": 1,
+    "tokenRange": [
+      12,
+      90
+    ],
+    "maximumCharacters": 450,
+    "sourceExact": true,
+    "renderingAnchors": [
+      "proposition",
+      "loadBearingReason",
+      "contextSummary"
+    ],
+    "deterministicTieBreak": true,
+    "semanticCandidateDownselection": false,
+    "finalSelectedEvidenceRerendered": true
+  },
+  "transportTarget": {
+    "maximumCopiedInputBytes": 170000,
+    "timeoutExtensionAuthorized": false
+  },
+  "predecessorBoundary": {
+    "validOutputReused": false,
+    "timeoutOutputsAvailable": false,
+    "allThreeMustRerun": true
+  },
+  "inputs": {
+    "timeoutAnalysis": "docs/calibration/v4.2.21.14/narrow-primary-successor/timeout-analysis.json",
+    "workflow": "docs/assessment-workflow-v4.2.21.15.md",
+    "manual": "docs/calibration/v4.2.21.15/candidate-evidence-transport/manual.md"
+  },
+  "sourceHashes": {
+    "docs/calibration/v4.2.21.14/narrow-primary-successor/timeout-analysis.json": "d58274098a03dd3dc6967ca582287ec7101b8ce6771a6afc8e1e25ad555526ff",
+    "docs/assessment-workflow-v4.2.21.15.md": "a4298d442f3329d7d23691ca4edaea2225719f82609b6b6884502ffd05757ce8",
+    "docs/calibration/v4.2.21.15/candidate-evidence-transport/manual.md": "bc6f606c8bfd663cc7c9ef96a5ec2c9cfa682d6b507e63a0c3cd3f847f31f418",
+    "scripts/lib/v422115-candidate-evidence-transport.mjs": "2164e0a970247bb6031c61561c349431dd32c5768f24f6b337ee614105733b91",
+    "scripts/test-v422115-candidate-evidence-transport.mjs": "b05f1cff5fe090d3c43840ebc4eba1847b8838183fa9c4715dd3425fb58ec820",
+    "scripts/preregister-v422115-candidate-evidence-transport.mjs": "bed60730222ebf4f02f898b7d7200b2d333ab4deec1859f27972faa63359867d"
+  },
+  "totals": {
+    "modelContextsExecuted": 0,
+    "audioCalls": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "evidenceBundlePreparation": true,
+    "executionManifest": false,
+    "modelExecution": false,
+    "passBExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}

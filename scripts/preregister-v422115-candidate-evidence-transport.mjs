@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+import { createHash } from "node:crypto";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { assertV4 } from "./lib/v4-lean-production.mjs";
+import { V422115_PROTOCOL_ID, V422115_ROOT } from "./lib/v422115-candidate-evidence-transport.mjs";
+
+const shouldWrite = process.argv.includes("--write"), timeoutPath = "docs/calibration/v4.2.21.14/narrow-primary-successor/timeout-analysis.json", workflowPath = "docs/assessment-workflow-v4.2.21.15.md", manualPath = `${V422115_ROOT}/manual.md`;
+const timeout = JSON.parse(await readFile(timeoutPath, "utf8")); assertV4(timeout.status === "narrow-primary-gate-failed-evidence-transport-successor-authorized" && timeout.authorization.candidateEvidenceTransportDesign && timeout.successorRecommendation.replaceBroadSparseLedgerWithCandidateEvidenceBundle, "candidate evidence transport authorization unavailable");
+const sha256 = (value) => createHash("sha256").update(value).digest("hex"), sourceFiles = [timeoutPath, workflowPath, manualPath, "scripts/lib/v422115-candidate-evidence-transport.mjs", "scripts/test-v422115-candidate-evidence-transport.mjs", "scripts/preregister-v422115-candidate-evidence-transport.mjs"], sourceHashes = {};
+for (const file of sourceFiles) sourceHashes[file] = sha256(await readFile(file));
+const manifest = { schemaVersion: "4.2.21.15-candidate-evidence-transport-design", protocolId: V422115_PROTOCOL_ID, status: shouldWrite ? "candidate-evidence-transport-frozen-bundle-preparation-authorized" : "preview", calibrationOnly: true, AIOnly: true, evidencePolicy: { candidatesRetained: "all", excerptsPerCandidate: 1, tokenRange: [12, 90], maximumCharacters: 450, sourceExact: true, renderingAnchors: ["proposition", "loadBearingReason", "contextSummary"], deterministicTieBreak: true, semanticCandidateDownselection: false, finalSelectedEvidenceRerendered: true }, transportTarget: { maximumCopiedInputBytes: 170000, timeoutExtensionAuthorized: false }, predecessorBoundary: { validOutputReused: false, timeoutOutputsAvailable: false, allThreeMustRerun: true }, inputs: { timeoutAnalysis: timeoutPath, workflow: workflowPath, manual: manualPath }, sourceHashes, totals: { modelContextsExecuted: 0, audioCalls: 0, scoresDerived: 0, meteredApiCostUsd: 0, transcriptionCostUsd: 0 }, authorization: { evidenceBundlePreparation: true, executionManifest: false, modelExecution: false, passBExecution: false, scoreDerivation: false, productionMutation: false, all195Debates: false } };
+if (shouldWrite) { await mkdir(V422115_ROOT, { recursive: true }); await writeFile(`${V422115_ROOT}/design-manifest.json`, `${JSON.stringify(manifest, null, 2)}\n`); }
+console.log(JSON.stringify({ status: manifest.status, evidencePolicy: manifest.evidencePolicy, transportTarget: manifest.transportTarget, bundlePreparationAuthorized: manifest.authorization.evidenceBundlePreparation, modelContextsExecuted: 0, scoresDerived: 0, meteredApiCostUsd: 0 }, null, 2));

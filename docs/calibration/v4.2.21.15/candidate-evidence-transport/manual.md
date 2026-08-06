@@ -1,0 +1,9 @@
+# v4.2.21.15 candidate-evidence Primary A manual
+
+Act only as independent Primary Pass A for the identified debate. Read the three rubrics, this manual, the partition source packet, the complete candidate-evidence bundle, and the locked schema; read no predecessor Primary A output, broad sparse ledger, legacy assessment, score, winner, publication commentary, or other debate. Return exactly one schema-conforming JSON object and no commentary.
+
+The score-blind discovery reviewers collectively covered every source event. Every discovered candidate remains in the bundle. Each candidate contains one repository-rendered, source-exact, bounded excerpt from its locked source span; candidate summaries aid selection but are not quotations. Select the minimum inventory preserving every load-bearing route and decisive exchange. Use four to six sections totaling 100%, with one or two pro and one or two con selections per section; select each candidate at most once.
+
+Copy `qualifiedCandidateId` exactly and assign a unique move ID. Classify `moveKind` globally; discovery's kind is advisory. A constructive move has no earlier selected target. A reply may target only an earlier selected opposing-side move. Use exactly one `specialResponseMode`: `none`, `diagnostic-defeat`, or `justified-reframe`. The repository expands that enum, restores source fields, rerenders final evidence from the original source using your completed judgment, orders moves chronologically, and applies the unchanged validator.
+
+Apply every response, burden, precision, calibration, charity, adjustment-exclusion, rating, and confidence rule literally. Medium or low attribution requires later audio verification if selected. Do not emit scores, totals, winners, audio claims, Overall Commentary, AI Extension, or publication prose.
