@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "4.2.21-pass-b-preparation",
+  "protocolId": "v4.2.21-source-span-consensus",
+  "status": "prepared-three-isolated-source-span-pass-b-contexts",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "sourcePrimaryGate": "docs/calibration/v4.2.20/source-span-rendering/analysis.json",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "inputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "workflow": "docs/assessment-workflow-v4.2.21.md",
+    "manual": "docs/calibration/v4.2.21/pass-b-consensus/manual.md",
+    "schema": "docs/calibration/v4.2.21/pass-b-consensus/pass-b.schema.json"
+  },
+  "contexts": [
+    {
+      "debateNumber": "27",
+      "debateId": "oconnor-turek-evil-moral-argument-2017",
+      "family": "evil-hiddenness",
+      "sourcePrimary": "docs/calibration/v4.2.20/source-span-rendering/primary-outputs/debate-27.json",
+      "sourcePacket": "docs/calibration/v4.2.20/source-span-rendering/packets/debate-27.json",
+      "passBPacket": "docs/calibration/v4.2.21/pass-b-consensus/packets/debate-27.json",
+      "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.20/debate-27.jsonl",
+      "originalTranscript": ".assessment-cache/captions/b5a3MxIqZOs/transcript.txt",
+      "originalEvents": ".assessment-cache/captions/b5a3MxIqZOs/events.json",
+      "originalManifest": ".assessment-cache/captions/b5a3MxIqZOs/manifest.json",
+      "rawOutput": "docs/calibration/v4.2.21/pass-b-consensus/pass-b-outputs/debate-27.json",
+      "reconstructedOutput": "docs/calibration/v4.2.21/pass-b-consensus/pass-b-reconstructed/debate-27.json",
+      "packetValidation": {
+        "status": "passed",
+        "debateNumber": "27",
+        "lockedMoves": 12,
+        "lockedSections": 6,
+        "primaryJudgmentFieldsVisible": 0,
+        "modelAuthoredEvidenceTextVisible": 0
+      }
+    },
+    {
+      "debateNumber": "188",
+      "debateId": "kastrup-blackmore-consciousness-idealism-2023",
+      "family": "mind-agency",
+      "sourcePrimary": "docs/calibration/v4.2.20/source-span-rendering/primary-outputs/debate-188.json",
+      "sourcePacket": "docs/calibration/v4.2.20/source-span-rendering/packets/debate-188.json",
+      "passBPacket": "docs/calibration/v4.2.21/pass-b-consensus/packets/debate-188.json",
+      "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.20/debate-188.jsonl",
+      "originalTranscript": ".assessment-cache/captions/X4YVgM2HPMk/transcript.txt",
+      "originalEvents": ".assessment-cache/captions/X4YVgM2HPMk/events.json",
+      "originalManifest": ".assessment-cache/captions/X4YVgM2HPMk/manifest.json",
+      "rawOutput": "docs/calibration/v4.2.21/pass-b-consensus/pass-b-outputs/debate-188.json",
+      "reconstructedOutput": "docs/calibration/v4.2.21/pass-b-consensus/pass-b-reconstructed/debate-188.json",
+      "packetValidation": {
+        "status": "passed",
+        "debateNumber": "188",
+        "lockedMoves": 12,
+        "lockedSections": 5,
+        "primaryJudgmentFieldsVisible": 0,
+        "modelAuthoredEvidenceTextVisible": 0
+      }
+    },
+    {
+      "debateNumber": "195",
+      "debateId": "russell-copleston-existence-of-god-1948",
+      "family": "morality-ethics",
+      "sourcePrimary": "docs/calibration/v4.2.20/source-span-rendering/primary-outputs/debate-195.json",
+      "sourcePacket": "docs/calibration/v4.2.20/source-span-rendering/packets/debate-195.json",
+      "passBPacket": "docs/calibration/v4.2.21/pass-b-consensus/packets/debate-195.json",
+      "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.20/debate-195.jsonl",
+      "originalTranscript": ".assessment-cache/captions/wMsbD1L5IlQ/transcript.txt",
+      "originalEvents": ".assessment-cache/captions/wMsbD1L5IlQ/events.json",
+      "originalManifest": ".assessment-cache/captions/wMsbD1L5IlQ/manifest.json",
+      "rawOutput": "docs/calibration/v4.2.21/pass-b-consensus/pass-b-outputs/debate-195.json",
+      "reconstructedOutput": "docs/calibration/v4.2.21/pass-b-consensus/pass-b-reconstructed/debate-195.json",
+      "packetValidation": {
+        "status": "passed",
+        "debateNumber": "195",
+        "lockedMoves": 10,
+        "lockedSections": 5,
+        "primaryJudgmentFieldsVisible": 0,
+        "modelAuthoredEvidenceTextVisible": 0
+      }
+    }
+  ],
+  "isolation": {
+    "oneDebatePerFreshContext": true,
+    "completeTimestampedSourceLedgerVisible": true,
+    "lockedInventoryVisible": true,
+    "primaryJudgmentsHidden": true,
+    "primaryRatingsHidden": true,
+    "primaryTotalsHidden": true,
+    "triggerReasonsHidden": true,
+    "controlsHidden": true,
+    "otherDebatesHidden": true,
+    "legacyAssessmentsHidden": true,
+    "winnersHidden": true,
+    "publicationProseHidden": true
+  },
+  "totals": {
+    "contexts": 3,
+    "lockedMoves": 34,
+    "modelContextsExecuted": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "executionManifest": true,
+    "passBModelExecution": false,
+    "audioExecution": false,
+    "disagreementExtraction": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
