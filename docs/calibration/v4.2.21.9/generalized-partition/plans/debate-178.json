@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1286,
+  "ledgerBytes": 148739,
+  "ledgerSha256": "25f61fc81cca5b829997619688d7a7729a4945f334291d4027397497f8a55ad7",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 568,
+      "coreEvents": 569,
+      "contextStartEvent": 0,
+      "contextEndEvent": 608,
+      "contextEvents": 609,
+      "contextBytes": 69951,
+      "contextSha256": "5af0e94a008c6e7626f65ea9e38dcbb85192e981052743b65535e5f6a4ea1751"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 569,
+      "coreEndEvent": 1089,
+      "coreEvents": 521,
+      "contextStartEvent": 529,
+      "contextEndEvent": 1129,
+      "contextEvents": 601,
+      "contextBytes": 69984,
+      "contextSha256": "8731dc5b8837edd54b4fd00393ad198b014ce2905f9be471b2171951e1c220fe"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1090,
+      "coreEndEvent": 1285,
+      "coreEvents": 196,
+      "contextStartEvent": 1050,
+      "contextEndEvent": 1285,
+      "contextEvents": 236,
+      "contextBytes": 27508,
+      "contextSha256": "2fcf1108a3c9c2d687ffd05668838d539c9e37f7c678336f3ad3a722367994ae"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1285,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "178",
+  "debateId": "ehrman-licona-who-wrote-gospels-2025"
+}
