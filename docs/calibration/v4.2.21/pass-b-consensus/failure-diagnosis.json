@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "4.2.21.1-pass-b-failure-diagnosis",
+  "protocolId": "v4.2.21-source-span-consensus",
+  "status": "isolated-charity-conditional-schema-gap",
+  "failedDebate": "195",
+  "failedRawOutput": "docs/calibration/v4.2.21/pass-b-consensus/pass-b-outputs/debate-195.json",
+  "failedRawOutputPreserved": true,
+  "acceptedDebatesUnaffected": [
+    "27",
+    "188"
+  ],
+  "timing": {
+    "allAttemptMeanMinutes": 9.25,
+    "failedContextMinutes": 7.79,
+    "timingWasNotFailureCause": true
+  },
+  "cause": {
+    "layer": "Pass B JSON schema",
+    "semanticValidatorCorrect": true,
+    "schemaAllowedUntestedCharityDescriptions": true,
+    "manualDidNotStateEmptyStringAndFixed75ContractExplicitly": true,
+    "transcriptOrSourceFailure": false,
+    "judgmentTopologyFailure": false
+  },
+  "violations": [
+    {
+      "moveId": "m2",
+      "tested": false,
+      "representationalCharity": 75,
+      "alternativeCharacters": 84,
+      "decisiveQualificationCharacters": 103
+    },
+    {
+      "moveId": "m3",
+      "tested": false,
+      "representationalCharity": 75,
+      "alternativeCharacters": 67,
+      "decisiveQualificationCharacters": 118
+    },
+    {
+      "moveId": "m4",
+      "tested": false,
+      "representationalCharity": 75,
+      "alternativeCharacters": 101,
+      "decisiveQualificationCharacters": 119
+    },
+    {
+      "moveId": "m6",
+      "tested": false,
+      "representationalCharity": 75,
+      "alternativeCharacters": 105,
+      "decisiveQualificationCharacters": 103
+    },
+    {
+      "moveId": "m10",
+      "tested": false,
+      "representationalCharity": 75,
+      "alternativeCharacters": 107,
+      "decisiveQualificationCharacters": 111
+    }
+  ],
+  "untestedCharityRatingViolations": [],
+  "isolationCounterfactual": {
+    "acceptedAsGateOutput": false,
+    "onlyClearedForbiddenUntestedCharityDescriptions": true,
+    "fullValidatorThenPassed": true,
+    "automaticCorrectionAuthorized": false
+  },
+  "gate": {
+    "validContexts": 2,
+    "requiredValidContexts": 3,
+    "retries": 0,
+    "corrections": 0,
+    "scoresDerived": 0,
+    "gatePassed": false
+  },
+  "totals": {
+    "modelContexts": 3,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "authorization": {
+    "charitySchemaClosureDesign": true,
+    "acceptedPassBOutputsRemainLocked": true,
+    "singleFailedContextRecoveryPreparation": false,
+    "recoveryModelExecution": false,
+    "disagreementExtraction": false,
+    "audioExecution": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
