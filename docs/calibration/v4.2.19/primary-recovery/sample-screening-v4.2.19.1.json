@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "4.2.19.1-recovery-motion-route-screening",
+  "protocolId": "v4.2.19-primary-recovery",
+  "status": "sample-screened-packet-preparation-authorized",
+  "AIOnly": true,
+  "correctionScope": {
+    "sampleSelectionChanged": false,
+    "sampleDebatesChanged": false,
+    "classifierChanged": false,
+    "routeMetricsChanged": false,
+    "addedAnchorPattern": "morality|\\bmoral\\b",
+    "reason": "close redundant-anchor undercoverage for the already-assigned morality-ethics family"
+  },
+  "sourceBoundary": {
+    "motionMetadataOnlyForSemanticScreen": true,
+    "routeMetricsMechanicallyReplayed": true,
+    "transcriptContentExposedToScreeningModel": false,
+    "audioAccessed": false,
+    "legacyAssessmentContentAccessed": false,
+    "legacyScoresAccessed": false,
+    "priorJudgmentsAccessed": false,
+    "candidateRanksReoptimized": false
+  },
+  "decisions": [
+    {
+      "debateNumber": "110",
+      "debateId": "tour-garte-evolution-agency-christian-faith-2025",
+      "assignedFamily": "mind-agency",
+      "classifierReplays": true,
+      "substantiveAnchorPresent": true,
+      "directRouteReplays": true,
+      "durationUsedForRouting": false,
+      "dyadic": true
+    },
+    {
+      "debateNumber": "147",
+      "debateId": "dennett-clayton-naturalism-ultimate-reality-2012",
+      "assignedFamily": "morality-ethics",
+      "classifierReplays": true,
+      "substantiveAnchorPresent": true,
+      "directRouteReplays": true,
+      "durationUsedForRouting": false,
+      "dyadic": true
+    },
+    {
+      "debateNumber": "194",
+      "debateId": "swinburne-millican-does-god-exist-2022",
+      "assignedFamily": "science-origins",
+      "classifierReplays": true,
+      "substantiveAnchorPresent": true,
+      "directRouteReplays": true,
+      "durationUsedForRouting": false,
+      "dyadic": true
+    }
+  ],
+  "audit": {
+    "debates": 3,
+    "distinctFamilies": 3,
+    "classifierReplayPassed": 3,
+    "substantiveAnchorPassed": 3,
+    "directRoutePassed": 3,
+    "dyadic": 3
+  },
+  "authorization": {
+    "compactSourcePacketPreparation": true,
+    "primaryModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}

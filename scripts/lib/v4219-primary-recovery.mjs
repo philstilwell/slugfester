@@ -1,8 +1,11 @@
+import { createHash } from "node:crypto";
 import { assertV4, containsProhibitedCalculatedField, V4_RESPONSE_RANGES } from "./v4-lean-production.mjs";
 import { lexicalTokens, normalizeV418Events } from "./v418-source-integrity.mjs";
 import {
   compileV42181PrimaryOutput,
+  buildV42181SourceLedger,
   makeV42181PrimarySchema,
+  V42181_MODEL,
   validateV42181PrimaryOutput,
   validateV42181SourceLedger
 } from "./v42181-fresh-direct-three.mjs";
@@ -12,6 +15,7 @@ export const V4219_PROTOCOL_ID = "v4.2.19-primary-recovery";
 export const V4219_PACKET_VERSION = "4.2.19-recovery-source-packet";
 export const V4219_OUTPUT_VERSION = "4.2.19-recovery-primary-judgment";
 export const V4219_COMPILED_VERSION = "4.2.19-recovery-compiled-primary";
+export const V4219_MODEL = V42181_MODEL;
 export const V4219_DIRECT_ROUTE_LIMITS = Object.freeze({
   sourceLedgerEventsMaximum: 1800,
   compactCopiedInputBytesMaximum: 150000
@@ -26,6 +30,7 @@ export const V4219_EVIDENCE_LIMITS = Object.freeze({
 });
 
 const clone = (value) => structuredClone(value);
+const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 
 function exactKeys(value, keys, label) {
   assertV4(value && typeof value === "object" && !Array.isArray(value), `${label}: expected object`);
@@ -148,6 +153,90 @@ export function classifyV4219PrimaryRoute({ sourceLedgerEvents, compactCopiedInp
     limits: clone(V4219_DIRECT_ROUTE_LIMITS),
     exceeded,
     durationUsedForRouting: false
+  };
+}
+
+export function buildV4219SourcePacket({ debate, transcriptPath, eventsPath, manifestPath, sourceLedgerPath, transcriptBytes, eventsBytes, manifestBytes }) {
+  const manifest = JSON.parse(manifestBytes);
+  const eventsDocument = JSON.parse(eventsBytes);
+  const events = normalizeV418Events(eventsDocument);
+  assertV4(manifest.videoId === debate.videoId && manifest.eventCount === events.length, `${debate.number}: local source identity mismatch`);
+  assertV4(manifest.transcriptSha256 === sha256(transcriptBytes) && manifest.normalizedEventsSha256 === sha256(eventsBytes), `${debate.number}: local source hash mismatch`);
+  const sourceLedgerBytes = Buffer.from(buildV42181SourceLedger(eventsDocument));
+  validateV42181SourceLedger(sourceLedgerBytes, eventsDocument, sha256(sourceLedgerBytes));
+  const packet = {
+    schemaVersion: V4219_PACKET_VERSION,
+    protocolId: V4219_PROTOCOL_ID,
+    debateNumber: debate.number,
+    debateId: debate.debateId,
+    motion: debate.motion,
+    sides: debate.sides,
+    durationSeconds: manifest.durationSeconds,
+    eventCount: events.length,
+    sourceChain: {
+      transcriptPath,
+      transcriptSha256: sha256(transcriptBytes),
+      eventsPath,
+      eventsSha256: sha256(eventsBytes),
+      localManifestPath: manifestPath,
+      localManifestSha256: sha256(manifestBytes)
+    },
+    transportChain: {
+      format: "jsonl rows [eventIndex,startMs,durationMs,text]",
+      sourceLedgerPath,
+      sourceLedgerSha256: sha256(sourceLedgerBytes),
+      sourceLedgerBytes: sourceLedgerBytes.length,
+      sourceLedgerEventCount: events.length,
+      replayExactToOriginalEvents: true
+    },
+    modelInputBoundary: {
+      fullTimestampedTranscriptRequired: true,
+      completeTimestampedSourceLedgerRequired: true,
+      plainTranscriptDeliveredToModel: false,
+      originalEventsFileDeliveredToModel: false,
+      originalTranscriptAndEventsStoredAndHashLockedLocally: true,
+      repositoryOwnedSourceTimes: true,
+      modelSuppliedSourceMillisecondsProhibited: true,
+      exactEvidenceCueRequired: true,
+      evidenceCueTokenRange: [V4219_EVIDENCE_LIMITS.cueMinimumTokens, V4219_EVIDENCE_LIMITS.cueMaximumTokens],
+      evidenceCueMaximumCharacters: V4219_EVIDENCE_LIMITS.cueMaximumCharacters,
+      repositoryOwnedEvidenceExcerpt: true,
+      compiledExcerptTokenRange: [V4219_EVIDENCE_LIMITS.excerptMinimumTokens, V4219_EVIDENCE_LIMITS.excerptMaximumTokens],
+      compiledExcerptMaximumCharacters: V4219_EVIDENCE_LIMITS.excerptMaximumCharacters,
+      repositoryOwnedChronology: true,
+      replyTargetsValidatedAfterChronology: true,
+      repositoryDerivedResponseClass: true,
+      modelAuthoredAbsoluteResponsivenessProhibited: true,
+      legacyAssessmentsUnavailable: true,
+      priorArgumentInventoriesUnavailable: true,
+      priorBurdenMapsUnavailable: true,
+      priorSectionsAndWeightsUnavailable: true,
+      priorRatingsAndTotalsUnavailable: true,
+      winnerLabelsUnavailable: true,
+      assessmentProseUnavailable: true,
+      priorPrimaryOutputsUnavailable: true,
+      controlSelectionUnavailable: true,
+      boundedMoveMinimum: 8,
+      boundedMoveMaximum: 24,
+      sectionMinimum: 4,
+      sectionMaximum: 6,
+      movesPerSidePerSectionMinimum: 1,
+      movesPerSidePerSectionMaximum: 2
+    }
+  };
+  return { packet, packetBytes: Buffer.from(`${JSON.stringify(packet, null, 2)}\n`), sourceLedgerBytes };
+}
+
+export function measureV4219CopiedInput({ packetBytes, sourceLedgerBytes, sharedInputBytes }) {
+  assertV4(Buffer.isBuffer(packetBytes) && Buffer.isBuffer(sourceLedgerBytes), "v4.2.19 context measurement requires packet and ledger buffers");
+  assertV4(Number.isInteger(sharedInputBytes) && sharedInputBytes > 0, "v4.2.19 shared input bytes must be a positive integer");
+  const compactCopiedInputBytes = sharedInputBytes + packetBytes.length + sourceLedgerBytes.length;
+  return {
+    sharedInputBytes,
+    packetBytes: packetBytes.length,
+    sourceLedgerBytes: sourceLedgerBytes.length,
+    compactCopiedInputBytes,
+    route: classifyV4219PrimaryRoute({ sourceLedgerEvents: packetBytes.length ? JSON.parse(packetBytes).eventCount : 0, compactCopiedInputBytes })
   };
 }
 

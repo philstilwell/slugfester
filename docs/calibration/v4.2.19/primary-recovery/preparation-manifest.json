@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "4.2.19.1-recovery-three-preparation",
+  "protocolId": "v4.2.19-primary-recovery",
+  "status": "prepared-three-recovery-direct-contexts",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "sample": "docs/calibration/v4.2.19/primary-recovery/source-only-sample.json",
+  "screening": "docs/calibration/v4.2.19/primary-recovery/sample-screening-v4.2.19.1.json",
+  "contexts": [
+    {
+      "debateNumber": "110",
+      "debateId": "tour-garte-evolution-agency-christian-faith-2025",
+      "family": "mind-agency",
+      "durationSeconds": 4382,
+      "captionKind": "auto",
+      "route": "direct",
+      "routeEvidence": {
+        "route": "direct",
+        "sourceLedgerEvents": 1798,
+        "compactCopiedInputBytes": 144376,
+        "limits": {
+          "sourceLedgerEventsMaximum": 1800,
+          "compactCopiedInputBytesMaximum": 150000
+        },
+        "exceeded": [],
+        "durationUsedForRouting": false
+      },
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.2.19/primary-recovery/packets/debate-110.json",
+      "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.19/debate-110.jsonl",
+      "originalTranscript": ".assessment-cache/captions/cqfPJQg8m5U/transcript.txt",
+      "originalEvents": ".assessment-cache/captions/cqfPJQg8m5U/events.json",
+      "originalManifest": ".assessment-cache/captions/cqfPJQg8m5U/manifest.json",
+      "rawOutput": "docs/calibration/v4.2.19/primary-recovery/primary-outputs/debate-110.json",
+      "compiledOutput": "docs/calibration/v4.2.19/primary-recovery/primary-compiled/debate-110.json",
+      "sourceLedgerSha256": "51b532b0204c62056e98e73f853f473655ec739fb9d27af8223b15e1989a70c7",
+      "sourceLedgerEvents": 1798,
+      "sourceLedgerBytes": 101305,
+      "packetBytes": 3101,
+      "sharedInputBytes": 39970,
+      "compactCopiedInputBytes": 144376
+    },
+    {
+      "debateNumber": "147",
+      "debateId": "dennett-clayton-naturalism-ultimate-reality-2012",
+      "family": "morality-ethics",
+      "durationSeconds": 3967,
+      "captionKind": "auto",
+      "route": "direct",
+      "routeEvidence": {
+        "route": "direct",
+        "sourceLedgerEvents": 1555,
+        "compactCopiedInputBytes": 132102,
+        "limits": {
+          "sourceLedgerEventsMaximum": 1800,
+          "compactCopiedInputBytesMaximum": 150000
+        },
+        "exceeded": [],
+        "durationUsedForRouting": false
+      },
+      "controlSampleSelected": true,
+      "packet": "docs/calibration/v4.2.19/primary-recovery/packets/debate-147.json",
+      "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.19/debate-147.jsonl",
+      "originalTranscript": ".assessment-cache/captions/h-I_9e5qxnc/transcript.txt",
+      "originalEvents": ".assessment-cache/captions/h-I_9e5qxnc/events.json",
+      "originalManifest": ".assessment-cache/captions/h-I_9e5qxnc/manifest.json",
+      "rawOutput": "docs/calibration/v4.2.19/primary-recovery/primary-outputs/debate-147.json",
+      "compiledOutput": "docs/calibration/v4.2.19/primary-recovery/primary-compiled/debate-147.json",
+      "sourceLedgerSha256": "d174ebe651ed60454eda5d87b6243c9e26fef78eba9efdd989b6dc32dffd3503",
+      "sourceLedgerEvents": 1555,
+      "sourceLedgerBytes": 89125,
+      "packetBytes": 3007,
+      "sharedInputBytes": 39970,
+      "compactCopiedInputBytes": 132102
+    },
+    {
+      "debateNumber": "194",
+      "debateId": "swinburne-millican-does-god-exist-2022",
+      "family": "science-origins",
+      "durationSeconds": 4125,
+      "captionKind": "auto",
+      "route": "direct",
+      "routeEvidence": {
+        "route": "direct",
+        "sourceLedgerEvents": 1626,
+        "compactCopiedInputBytes": 129055,
+        "limits": {
+          "sourceLedgerEventsMaximum": 1800,
+          "compactCopiedInputBytesMaximum": 150000
+        },
+        "exceeded": [],
+        "durationUsedForRouting": false
+      },
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.2.19/primary-recovery/packets/debate-194.json",
+      "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.19/debate-194.jsonl",
+      "originalTranscript": ".assessment-cache/captions/FcNR4vJdcE4/transcript.txt",
+      "originalEvents": ".assessment-cache/captions/FcNR4vJdcE4/events.json",
+      "originalManifest": ".assessment-cache/captions/FcNR4vJdcE4/manifest.json",
+      "rawOutput": "docs/calibration/v4.2.19/primary-recovery/primary-outputs/debate-194.json",
+      "compiledOutput": "docs/calibration/v4.2.19/primary-recovery/primary-compiled/debate-194.json",
+      "sourceLedgerSha256": "82fe7e0110dbf4a6af1d7dbdd158a898c40f7965fb6008787a7841e71b5964ae",
+      "sourceLedgerEvents": 1626,
+      "sourceLedgerBytes": 86135,
+      "packetBytes": 2950,
+      "sharedInputBytes": 39970,
+      "compactCopiedInputBytes": 129055
+    }
+  ],
+  "inputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.2.19/primary-recovery/manual.md",
+    "schema": "docs/calibration/v4.2.19/primary-recovery/primary.schema.json"
+  },
+  "sourcePolicy": {
+    "completeLocalTranscriptChains": true,
+    "oneLosslessTimestampedLedgerPerDebate": true,
+    "originalTranscriptAndEventsStoredLocally": true,
+    "duplicatePlainTranscriptDeliveryProhibited": true,
+    "routeUsesDuration": false,
+    "directRouteRequiresBothEventAndByteCeilings": true,
+    "exactEvidenceCueRequired": true,
+    "evidenceCueTokenRange": [
+      6,
+      20
+    ],
+    "evidenceCueMaximumCharacters": 180,
+    "repositoryOwnedExcerptCompilation": true,
+    "compiledExcerptMaximumCharacters": 450,
+    "compiledExcerptTokenRange": [
+      12,
+      90
+    ],
+    "repositoryOwnedChronology": true,
+    "repositoryDerivedResponseClass": true,
+    "modelAuthoredAbsoluteResponsivenessProhibited": true
+  },
+  "controlPolicy": {
+    "selectedDebateId": "dennett-clayton-naturalism-ultimate-reality-2012",
+    "selectedDebateNumber": "147",
+    "visibleToPrimaryJudge": false,
+    "purpose": "force later isolated Pass B and adjudication-path exercise"
+  },
+  "audioPolicy": {
+    "mediumConfidenceMoveRequiresAudioVerification": true,
+    "audioVerificationOccursBeforeAdjudicationAndScoreDerivation": true
+  },
+  "executionPolicy": {
+    "attemptsPerDebate": 1,
+    "retries": 0,
+    "postHocCorrectionAuthorized": false,
+    "semanticNormalizationAuthorized": false,
+    "scoreDerivationAuthorized": false
+  },
+  "totals": {
+    "debates": 3,
+    "sourceLedgerEvents": 4979,
+    "meanCompactCopiedInputBytes": 135178,
+    "maximumCompactCopiedInputBytes": 144376,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "deterministicFixtures": true,
+    "primaryExecutionManifest": true,
+    "primaryModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
