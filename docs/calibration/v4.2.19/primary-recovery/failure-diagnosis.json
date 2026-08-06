@@ -1,0 +1,477 @@
+{
+  "schemaVersion": "4.2.19.3-recovery-primary-failure-diagnosis",
+  "protocolId": "v4.2.19-primary-recovery",
+  "status": "recovery-evidence-and-target-contract-redesign-required",
+  "developmentOnly": true,
+  "codeOnly": true,
+  "gateResultPreserved": {
+    "validContexts": 0,
+    "attemptedContexts": 3,
+    "retries": 0,
+    "corrections": 0,
+    "scoresDerived": 0
+  },
+  "operationalRoutingEvidence": {
+    "contextsCompletedWithoutTimeout": 3,
+    "transportFailures": 0,
+    "elapsedMinutesByDebate": {
+      "110": 4.37,
+      "147": 3.9,
+      "194": 4.37
+    },
+    "observedMeanElapsedMinutes": 4.21,
+    "observedMaximumElapsedMinutes": 4.37,
+    "includesNearCeilingStressContext": true,
+    "semanticAcceptanceRequiredBeforeTimingGate": true
+  },
+  "evidenceCueFindings": {
+    "totalMoves": 30,
+    "categoryTotals": {
+      "character-exact": 19,
+      "punctuation-or-format-only": 7,
+      "caption-disfluency-multiplicity": 3,
+      "selected-span-boundary": 1,
+      "other": 0
+    },
+    "exactCharacterCueResponsibilityRejected": true,
+    "repositoryOwnedSourceSpanRenderingRecommended": true
+  },
+  "diagnostics": [
+    {
+      "debateNumber": "110",
+      "debateId": "tour-garte-evolution-agency-christian-faith-2025",
+      "status": "output-validation-failed",
+      "elapsedMinutes": 4.37,
+      "sourceLedgerEvents": 1798,
+      "compactCopiedInputBytes": 144376,
+      "rawOutputAvailable": true,
+      "cueAudit": {
+        "moves": 10,
+        "characterExact": 6,
+        "mismatches": 4,
+        "details": [
+          {
+            "moveId": "m1-con-agency",
+            "startEvent": 310,
+            "endEvent": 329,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          },
+          {
+            "moveId": "m2-pro-purpose-challenge",
+            "startEvent": 559,
+            "endEvent": 576,
+            "characterExact": false,
+            "lexicalSequenceInSpan": false,
+            "lexicalSequenceInFullTranscript": false,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "caption-disfluency-multiplicity"
+          },
+          {
+            "moveId": "m3-con-human-limit",
+            "startEvent": 718,
+            "endEvent": 735,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          },
+          {
+            "moveId": "m4-pro-show-dna",
+            "startEvent": 770,
+            "endEvent": 799,
+            "characterExact": false,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "punctuation-or-format-only"
+          },
+          {
+            "moveId": "m5-pro-unknown-laws",
+            "startEvent": 1107,
+            "endEvent": 1120,
+            "characterExact": false,
+            "lexicalSequenceInSpan": false,
+            "lexicalSequenceInFullTranscript": false,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "caption-disfluency-multiplicity"
+          },
+          {
+            "moveId": "m6-con-convergence",
+            "startEvent": 1121,
+            "endEvent": 1197,
+            "characterExact": false,
+            "lexicalSequenceInSpan": false,
+            "lexicalSequenceInFullTranscript": false,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "caption-disfluency-multiplicity"
+          },
+          {
+            "moveId": "m7-pro-body-plan",
+            "startEvent": 1228,
+            "endEvent": 1244,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          },
+          {
+            "moveId": "m8-con-duplication-concession",
+            "startEvent": 1391,
+            "endEvent": 1463,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          },
+          {
+            "moveId": "m9-pro-interpretive-flexibility",
+            "startEvent": 1634,
+            "endEvent": 1677,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          },
+          {
+            "moveId": "m10-con-faith-harmony",
+            "startEvent": 1737,
+            "endEvent": 1777,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          }
+        ]
+      },
+      "targetChronologyViolations": [],
+      "counterfactual": {
+        "status": "passes-after-in-memory-source-exact-cue-substitution",
+        "moves": 10,
+        "chronologyReordered": false,
+        "acceptedAsGateEvidence": false
+      }
+    },
+    {
+      "debateNumber": "147",
+      "debateId": "dennett-clayton-naturalism-ultimate-reality-2012",
+      "status": "output-validation-failed",
+      "elapsedMinutes": 3.9,
+      "sourceLedgerEvents": 1555,
+      "compactCopiedInputBytes": 132102,
+      "rawOutputAvailable": true,
+      "cueAudit": {
+        "moves": 10,
+        "characterExact": 9,
+        "mismatches": 1,
+        "details": [
+          {
+            "moveId": "con-mind-1",
+            "startEvent": 503,
+            "endEvent": 518,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          },
+          {
+            "moveId": "pro-mind-1",
+            "startEvent": 481,
+            "endEvent": 497,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          },
+          {
+            "moveId": "con-religion-1",
+            "startEvent": 888,
+            "endEvent": 907,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          },
+          {
+            "moveId": "pro-religion-1",
+            "startEvent": 909,
+            "endEvent": 940,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          },
+          {
+            "moveId": "con-religion-2",
+            "startEvent": 953,
+            "endEvent": 980,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          },
+          {
+            "moveId": "pro-morality-1",
+            "startEvent": 1291,
+            "endEvent": 1336,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          },
+          {
+            "moveId": "con-morality-1",
+            "startEvent": 1373,
+            "endEvent": 1402,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          },
+          {
+            "moveId": "con-ultimacy-1",
+            "startEvent": 1075,
+            "endEvent": 1117,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          },
+          {
+            "moveId": "pro-ultimacy-1",
+            "startEvent": 1503,
+            "endEvent": 1516,
+            "characterExact": false,
+            "lexicalSequenceInSpan": false,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 0.933333,
+            "category": "selected-span-boundary"
+          },
+          {
+            "moveId": "con-ultimacy-2",
+            "startEvent": 1517,
+            "endEvent": 1541,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          }
+        ]
+      },
+      "targetChronologyViolations": [
+        {
+          "moveId": "pro-mind-1",
+          "startEvent": 481,
+          "targetMoveId": "con-mind-1",
+          "targetStartEvent": 503
+        }
+      ],
+      "counterfactual": {
+        "status": "still-fails-after-in-memory-source-exact-cue-substitution",
+        "nextFailure": "pro-mind-1: reply target must already appear in moves",
+        "acceptedAsGateEvidence": false
+      }
+    },
+    {
+      "debateNumber": "194",
+      "debateId": "swinburne-millican-does-god-exist-2022",
+      "status": "output-validation-failed",
+      "elapsedMinutes": 4.37,
+      "sourceLedgerEvents": 1626,
+      "compactCopiedInputBytes": 129055,
+      "rawOutputAvailable": true,
+      "cueAudit": {
+        "moves": 10,
+        "characterExact": 4,
+        "mismatches": 6,
+        "details": [
+          {
+            "moveId": "p1",
+            "startEvent": 59,
+            "endEvent": 149,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          },
+          {
+            "moveId": "p2",
+            "startEvent": 321,
+            "endEvent": 343,
+            "characterExact": false,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "punctuation-or-format-only"
+          },
+          {
+            "moveId": "p3",
+            "startEvent": 458,
+            "endEvent": 562,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          },
+          {
+            "moveId": "c1",
+            "startEvent": 670,
+            "endEvent": 708,
+            "characterExact": false,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "punctuation-or-format-only"
+          },
+          {
+            "moveId": "c2",
+            "startEvent": 709,
+            "endEvent": 899,
+            "characterExact": false,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "punctuation-or-format-only"
+          },
+          {
+            "moveId": "c3",
+            "startEvent": 937,
+            "endEvent": 981,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          },
+          {
+            "moveId": "p4",
+            "startEvent": 1052,
+            "endEvent": 1085,
+            "characterExact": false,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "punctuation-or-format-only"
+          },
+          {
+            "moveId": "c4",
+            "startEvent": 1232,
+            "endEvent": 1260,
+            "characterExact": false,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "punctuation-or-format-only"
+          },
+          {
+            "moveId": "p5",
+            "startEvent": 1412,
+            "endEvent": 1523,
+            "characterExact": false,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "punctuation-or-format-only"
+          },
+          {
+            "moveId": "c5",
+            "startEvent": 1531,
+            "endEvent": 1592,
+            "characterExact": true,
+            "lexicalSequenceInSpan": true,
+            "lexicalSequenceInFullTranscript": true,
+            "lexicalRecall": 1,
+            "orderedCoverage": 1,
+            "category": "character-exact"
+          }
+        ]
+      },
+      "targetChronologyViolations": [],
+      "counterfactual": {
+        "status": "passes-after-in-memory-source-exact-cue-substitution",
+        "moves": 10,
+        "chronologyReordered": false,
+        "acceptedAsGateEvidence": false
+      }
+    }
+  ],
+  "findings": {
+    "debate110CounterfactualPassesAfterEvidenceOnlySubstitution": true,
+    "debate194CounterfactualPassesAfterEvidenceOnlySubstitution": true,
+    "debate147HasLaterTargetViolation": true,
+    "repositoryChronologyGuardConfirmed": true,
+    "automaticTargetRepairRejected": true
+  },
+  "requiredRecoveryDesign": [
+    "derive the bounded verbatim evidence window from the locked source span and model proposition without requiring model-authored quotation mechanics",
+    "freeze deterministic lexical-salience scoring and tie-breaking before another model sample",
+    "retain canonical chronology and fail every target edge that is not earlier after ordering",
+    "strengthen reply-target instructions without automatically deleting, reversing, or reclassifying an invalid edge"
+  ],
+  "totals": {
+    "modelContexts": 0,
+    "retries": 0,
+    "corrections": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "evidenceRecoveryDesign": true,
+    "targetTopologyRecoveryDesign": true,
+    "recoveryModelExecution": false,
+    "passB": false,
+    "audioVerification": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
