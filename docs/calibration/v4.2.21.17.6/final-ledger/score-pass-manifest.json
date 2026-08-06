@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "4.2.21.17.7-single-score-pass-manifest",
+  "protocolId": "v4.2.21.17.6-decomposed-consensus",
+  "status": "frozen-single-deterministic-score-pass",
+  "frozenAt": "2026-08-06T09:26:12Z",
+  "checkpointCommit": "645859de63a47708c8035a5b5622d4a4b5f89338",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "inputs": {
+    "finalLedger": "docs/calibration/v4.2.21.17.6/final-ledger/final-ledger.json",
+    "finalLedgerAnalysis": "docs/calibration/v4.2.21.17.6/final-ledger/analysis.json",
+    "productionReference": "src/data/debates.js",
+    "debates": 3,
+    "finalSides": 6
+  },
+  "scoringPolicy": {
+    "passes": 1,
+    "repositoryDerivedOnly": true,
+    "modelScoringAllowed": false,
+    "scoresDerivedAfterAdjudicationOnly": true,
+    "initialPassScoresDerivedInSamePostAdjudicationPassForStabilityOnly": true,
+    "formulaChangesAllowed": false,
+    "postResultTuningAllowed": false,
+    "automaticRerunAllowed": false
+  },
+  "acceptanceRule": {
+    "prospective": true,
+    "productionScoresDiagnosticOnly": true,
+    "agreedInitialWinnerMustBePreserved": true,
+    "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+    "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+    "maximumOutsideInitialRangeMaximum": 3
+  },
+  "artifacts": {
+    "calculatedScores": "docs/calibration/v4.2.21.17.6/final-ledger/calculated-scores.json",
+    "analysis": "docs/calibration/v4.2.21.17.6/final-ledger/score-analysis.json"
+  },
+  "authorization": {
+    "scoreDerivation": true,
+    "scorePassesMaximum": 1,
+    "workflowQualityAnalysis": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "all195Debates": false
+  },
+  "sourceHashes": {
+    "docs/calibration/v4.2.21.17.6/final-ledger/final-ledger.json": "170c791491fdc24a7889727966614fa388688135a9296bb6354f7aff82698ad8",
+    "docs/calibration/v4.2.21.17.6/final-ledger/analysis.json": "8e5df73b00c594e150dc2dd25959718af8ae7d9ffd215b02a94c53759e06d34e",
+    "src/data/debates.js": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v4221176-final-ledger.mjs": "7f1dde934022c7d60058e7d88074064e65bf56dc4487dc26cba98cbeff4f9455",
+    "scripts/lib/v4221177-score-gate.mjs": "4e069a7c3ee626d6e4836b1b15de76aa20813126c075b3d3349653fa29c18a14",
+    "scripts/test-v4221177-score-gate.mjs": "7a3685ef87598fa6293dd10ed04472f306bf3f395e35f2d1ebc70bb98e56df48",
+    "scripts/preregister-v4221177-score-pass.mjs": "48fc63edb5fd3d74bf1d06d44c94a97f68a40d4a20b56d09d18e0440e9617ce7",
+    "scripts/derive-v4221177-scores.mjs": "e7e90a3a2927c4ce820695f9f42a9ab52c3d7b2011c0f264ed5cae1fa0ea4e9c",
+    "scripts/analyze-v4221177-scores.mjs": "21deb2331ace4ea720995c80cb1b32cad3661992b353c7192148c23bdb318914"
+  }
+}
