@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "4.2.21.17.16-discovery-transport-attribution-failure-analysis",
+  "protocolId": "v4.2.21.17.16-discovery-transport-attribution-hardening",
+  "status": "replacement-held-out-discovery-failed-transport-startup-and-speaker-allowlist",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "inputs": {
+    "execution": "docs/calibration/v4.2.21.17.15/replacement-held-out-discovery/model-execution.json",
+    "manifest": "docs/calibration/v4.2.21.17.15/replacement-held-out-discovery/execution-manifest.json"
+  },
+  "observed": {
+    "contextsAttempted": 18,
+    "validContexts": 13,
+    "invalidContexts": 5,
+    "retries": 0,
+    "openingBatchContexts": 4,
+    "openingBatchTimeouts": 4,
+    "laterContexts": 14,
+    "laterValidContexts": 13,
+    "laterValidationFailures": 1,
+    "wallElapsedMs": 939317,
+    "modelWorkElapsedMs": 3574891,
+    "maximumParallelContextsObserved": 4,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "transportDiagnosis": {
+    "class": "simultaneous-opening-batch-stall",
+    "confidence": "medium",
+    "evidence": {
+      "allFourInitialContextsStartedWithinOneSecond": true,
+      "allFourInitialContextsTimedOut": true,
+      "laterContextsMostlyValid": true,
+      "laterValidRate": 0.9285714285714286,
+      "schemaSpecificFailureInferred": false
+    },
+    "correction": {
+      "retiredStructuredOutputCanaryRequiredBeforeHeldOutLaunch": true,
+      "canaryMustValidateBeforeHeldOutContextStarts": true,
+      "schedulerRamp": [
+        1,
+        2,
+        4
+      ],
+      "fullConcurrencyOnlyAfterSuccessfulRampCompletions": true,
+      "contextTimeoutMs": 300000,
+      "failedStdoutAndStderrTailsStoredSeparately": true,
+      "heldOutRetryMaximum": 0
+    }
+  },
+  "attributionDiagnosis": {
+    "class": "output-schema-speaker-underconstraint",
+    "debateNumber": "193",
+    "chunkId": "chunk-003",
+    "allowedSpeakers": [
+      "John Dominic Crossan",
+      "Michael Licona"
+    ],
+    "invalidCandidates": [
+      {
+        "candidateId": "chunk-003-candidate-01",
+        "speaker": "Unidentified audience questioner",
+        "side": "con"
+      }
+    ],
+    "deterministicValidatorRejected": true,
+    "semanticRepairAttempted": false,
+    "correction": {
+      "structuredOutputSpeakerEnumRequired": true,
+      "onlyFrozenInterlocutorsAllowed": true,
+      "deterministicSpeakerSideValidatorRetained": true,
+      "audienceMaterialMayRemainContextButCannotBecomeCandidate": true
+    }
+  },
+  "evidenceDisposition": {
+    "discoveryQualityEvidence": "informative-but-failed",
+    "throughputEvidence": "opening-stall-distorted-retain-later-context-timing-only",
+    "cleanHeldOutPassEvidence": false,
+    "retiredDebateNumbers": [
+      "38",
+      "43",
+      "77",
+      "160",
+      "193"
+    ],
+    "reuseForCleanHeldOutGate": false
+  },
+  "authorization": {
+    "transportCanaryTooling": true,
+    "rampedSchedulerTooling": true,
+    "deterministicSpeakerAllowlistSchemaTest": true,
+    "freshHeldOutSelection": true,
+    "retryFailedContexts": false,
+    "reuseFailedSampleAsCleanHeldOut": false,
+    "independentJudgmentPacketPreparation": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}

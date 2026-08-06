@@ -28,6 +28,10 @@ assert.equal(schema.properties.candidates.items.properties.sourceSpan.properties
 assert.equal(schema.properties.candidates.items.properties.sourceSpan.properties.startEvent.maximum, context.chunks[0].coreEndEvent);
 assert.equal(schema.properties.candidates.items.properties.sourceSpan.properties.endEvent.minimum, context.chunks[0].contextStartEvent);
 assert.equal(schema.properties.candidates.items.properties.sourceSpan.properties.endEvent.maximum, context.chunks[0].contextEndEvent);
+assert.deepEqual(
+  schema.properties.candidates.items.properties.speaker.enum,
+  [...new Set([...packet.sides.pro.speakers, ...packet.sides.con.speakers])],
+);
 const replyOutputIndex = outputs.findIndex((output) => output.candidates.some((candidate) => candidate.responseIntent.kind === "reply"));
 assert.ok(replyOutputIndex >= 0);
 const shortReply = structuredClone(outputs[replyOutputIndex]);

@@ -23,6 +23,9 @@ function constOrType(value, type) {
 }
 
 export function makeV422112DiscoverySchema({ packet, chunk, candidatesMaximum = 10 } = {}) {
+  const allowedSpeakers = packet
+    ? [...new Set([...(packet.sides?.pro?.speakers ?? []), ...(packet.sides?.con?.speakers ?? [])])]
+    : null;
   const sourceSpan = {
     type: "object",
     additionalProperties: false,
@@ -44,7 +47,9 @@ export function makeV422112DiscoverySchema({ packet, chunk, candidatesMaximum = 
     properties: {
       candidateId: { type: "string", minLength: 1 },
       side: { type: "string", enum: ["pro", "con"] },
-      speaker: { type: "string", minLength: 1 },
+      speaker: allowedSpeakers?.length
+        ? { type: "string", enum: allowedSpeakers }
+        : { type: "string", minLength: 1 },
       proposition: { type: "string", minLength: 25 },
       sourceSpan,
       attributionConfidence: { type: "string", enum: ["high", "medium", "low"] },
