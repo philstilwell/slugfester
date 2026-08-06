@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "4.2.21.16.2-inventory-transport-recovery-execution-manifest",
+  "protocolId": "v4.2.21.16.2-inventory-transport-recovery",
+  "status": "frozen-debate-182-inventory-transport-recovery-authorized",
+  "frozenAt": "2026-08-06T07:37:25Z",
+  "checkpointCommit": "405a1852a8aac7124f0c252531112d96ccc41a77",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low"
+  },
+  "costEstimate": {
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "expectedWallMinutes": [
+      2,
+      6
+    ],
+    "absoluteTimeoutMinutes": 12
+  },
+  "modelInputs": {
+    "manual": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md"
+  },
+  "preparation": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-recovery-preparation.json",
+  "context": {
+    "debateNumber": "182",
+    "debateId": "white-ally-sin-salvation-quran-bible-2013",
+    "packet": "docs/calibration/v4.2.21.12/simplified-partition-discovery/packets/debate-182.json",
+    "packetSha256": "84ac63da56a988ed19be870e385ee4dfab162a2a81f441487982d44fe078dfc8",
+    "modelCandidateTransport": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-candidate-transport/debate-182.json",
+    "modelCandidateTransportSha256": "4a62cb337e73ba050f148724d14acb6e8974fba8137e7e51e058bdb9d16f7b91",
+    "validatorCandidateEvidenceBundle": "docs/calibration/v4.2.21.15/candidate-evidence-transport/candidate-evidence/debate-182.json",
+    "validatorCandidateEvidenceBundleSha256": "10b8fc8388cffdd15dcc8dafe62692d4ad58f15ceca1774d1f6e7e0d41e89024",
+    "originalEvents": ".assessment-cache/captions/ee9c45dSHiY/events.json",
+    "originalEventsSha256": "5731ae17a1d32a316c95d05cf206b30ba91098640deeb2862b10c8732a54400a",
+    "fullLedger": ".assessment-cache/compact-ledgers/v4.2.21.9/debate-182.jsonl",
+    "fullLedgerSha256": "a33208832a3e88c7b32341829b272f97c178f88a2852fd0dc2bdc3cc23455d0d",
+    "schema": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-recovery-schemas/debate-182.schema.json",
+    "schemaSha256": "b1f4dc233933138a1200282ff2f1ae023f536f77ba3b6068800991e7c4d79c28",
+    "candidates": 49,
+    "copiedInputBytes": 96891,
+    "proposalOutput": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-recovery-proposals/debate-182.json",
+    "lockedInventoryOutput": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/locked-inventories/debate-182.json",
+    "validationOutput": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-validation/debate-182.json",
+    "provenanceOutput": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-provenance/debate-182.json"
+  },
+  "acceptedLockedInventoriesReused": [
+    {
+      "debateNumber": "133",
+      "debateId": "hawkins-folley-free-will-idealism-2026",
+      "files": {
+        "proposal": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-proposals/debate-133.json",
+        "lockedInventory": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/locked-inventories/debate-133.json",
+        "validation": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-validation/debate-133.json",
+        "provenance": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-provenance/debate-133.json"
+      },
+      "hashes": {
+        "proposal": "a6d5b469aa7f4fa1a25e1da60b90b09774371416b858d946f290cca5da66be28",
+        "lockedInventory": "251f8e9be057510e13ca12d5e8f715ab15f42de6b4efdab709d0f5a2afa01ea7",
+        "validation": "ebf4f3df2e68cd60bb6d5bd5f82fa3d9f28df8be5f6f62c987c418ad2aeeb244",
+        "provenance": "43b7263c378816db22c09fa39e5f7095c0636bb3a0c280b33c085200e7b1067d"
+      }
+    },
+    {
+      "debateNumber": "178",
+      "debateId": "ehrman-licona-who-wrote-gospels-2025",
+      "files": {
+        "proposal": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-proposals/debate-178.json",
+        "lockedInventory": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/locked-inventories/debate-178.json",
+        "validation": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-validation/debate-178.json",
+        "provenance": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-provenance/debate-178.json"
+      },
+      "hashes": {
+        "proposal": "3533efb141574605ded05cd681702d9d514fb9f10516f7a1268d1b6514b7c69f",
+        "lockedInventory": "c27f82a36498c4ffb0894515c9126e4790cb7c1e0a98f9ffe8d1f876230f0cf8",
+        "validation": "5075567efb9cbfa369471e2341f8a7591ea8c5ca9de698e77766d299bf5e2c5a",
+        "provenance": "5370469270338d64477733f5ee0a5d1259f6b87fa4b2706bcf0367d5a508289a"
+      }
+    }
+  ],
+  "isolation": {
+    "freshTemporaryCodexHome": true,
+    "oneDebateContext": true,
+    "scoringRubricsUnavailable": true,
+    "predecessorDebate182ProposalUnavailable": true,
+    "acceptedOtherDebateInventoriesUnavailableToModel": true,
+    "ratingsAndScoresUnavailable": true,
+    "legacyScoresAndWinnersUnavailable": true
+  },
+  "deterministicCompilation": {
+    "everyCandidateRetained": true,
+    "semanticCandidateDownselection": false,
+    "omittedFieldsRestoredFromFullEvidenceBundle": true,
+    "chronologyRepositoryOwned": true,
+    "finalSelectedEvidenceRepositoryRendered": true,
+    "replyRequiresEarlierSelectedOpponent": true,
+    "responseTopologyAbsent": true,
+    "ratingsAbsent": true,
+    "automaticSemanticRepair": false
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutMs": 600000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "acceptance": {
+    "debate182ValidInventory": true,
+    "accepted133And178HashesUnchanged": true,
+    "combinedValidInventories": 3,
+    "semanticRepairs": 0,
+    "ratings": 0,
+    "responseTopology": 0,
+    "scores": 0
+  },
+  "authorization": {
+    "modelContext": true,
+    "deterministicValidation": true,
+    "deterministicCompilation": true,
+    "combinedAnalysis": true,
+    "retry": false,
+    "semanticCorrection": false,
+    "independentJudgmentPreparation": false,
+    "independentJudgmentExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-recovery-model-execution.json",
+    "analysis": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-recovery-analysis.json",
+    "proposal": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-recovery-proposals/debate-182.json",
+    "lockedInventory": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/locked-inventories/debate-182.json",
+    "validation": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-validation/debate-182.json",
+    "provenance": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-provenance/debate-182.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-recovery-proposals/debate-182.json",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/locked-inventories/debate-182.json",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-validation/debate-182.json",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-provenance/debate-182.json",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-recovery-model-execution.json",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-recovery-analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.21.16.2.md": "3963daf7d480373c14ce747851200e325416875e46333ab556397cf88b5bc8d6",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-recovery-preparation.json": "9953bfcbbf9b3d5c22eb1c58a32eb8bc278b0f6533a5b1dd9ed65fc301ca2d40",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v418-source-integrity.mjs": "ff0593a316fcd06f1662b0f9c9864bdd4c2a867a718638a79cac8b9f27eac205",
+    "scripts/lib/v4219-primary-recovery.mjs": "a426a03ced272b27b55f6c2674a81b0ad4cb46617d4c735efec78d9698c427f8",
+    "scripts/lib/v4220-source-span-rendering.mjs": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+    "scripts/lib/v422116-decomposed-consensus.mjs": "4b8251ac1b434d6dd8d2d094b4d13921ca710fcddbb952ee149b2f48019e7bfc",
+    "scripts/lib/v4221162-inventory-transport.mjs": "a8856378f33e611ffa6354985e0f9b5fadb1df4c4aa00dc711c373221789e14b",
+    "scripts/validate-v4221162-inventory-recovery.mjs": "2993e81e0cd67b0132f4d734651a32550db0019bfd3160eeb682b1eb7817f30a",
+    "scripts/preregister-v4221162-inventory-recovery.mjs": "79acda5bb7e43ec8557e39f5250959d4b94e3a104e91611a2c7d4f9c79266f63",
+    "scripts/run-v4221162-inventory-recovery.mjs": "01e837dac722e6c6b4f4ad21b5fa3cc205a62fe35ee599884dbe35414af0d3da",
+    "scripts/analyze-v4221162-inventory-recovery.mjs": "ef0b65417a3957e8ac1def4e66b7c6d02c37a07dc50ca25cd95c669a7b85c4e2",
+    "docs/calibration/v4.2.21.12/simplified-partition-discovery/packets/debate-182.json": "84ac63da56a988ed19be870e385ee4dfab162a2a81f441487982d44fe078dfc8",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-candidate-transport/debate-182.json": "4a62cb337e73ba050f148724d14acb6e8974fba8137e7e51e058bdb9d16f7b91",
+    "docs/calibration/v4.2.21.15/candidate-evidence-transport/candidate-evidence/debate-182.json": "10b8fc8388cffdd15dcc8dafe62692d4ad58f15ceca1774d1f6e7e0d41e89024",
+    ".assessment-cache/captions/ee9c45dSHiY/events.json": "5731ae17a1d32a316c95d05cf206b30ba91098640deeb2862b10c8732a54400a",
+    ".assessment-cache/compact-ledgers/v4.2.21.9/debate-182.jsonl": "a33208832a3e88c7b32341829b272f97c178f88a2852fd0dc2bdc3cc23455d0d",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-recovery-schemas/debate-182.schema.json": "b1f4dc233933138a1200282ff2f1ae023f536f77ba3b6068800991e7c4d79c28",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-proposals/debate-133.json": "a6d5b469aa7f4fa1a25e1da60b90b09774371416b858d946f290cca5da66be28",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/locked-inventories/debate-133.json": "251f8e9be057510e13ca12d5e8f715ab15f42de6b4efdab709d0f5a2afa01ea7",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-validation/debate-133.json": "ebf4f3df2e68cd60bb6d5bd5f82fa3d9f28df8be5f6f62c987c418ad2aeeb244",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-provenance/debate-133.json": "43b7263c378816db22c09fa39e5f7095c0636bb3a0c280b33c085200e7b1067d",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-proposals/debate-178.json": "3533efb141574605ded05cd681702d9d514fb9f10516f7a1268d1b6514b7c69f",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/locked-inventories/debate-178.json": "c27f82a36498c4ffb0894515c9126e4790cb7c1e0a98f9ffe8d1f876230f0cf8",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-validation/debate-178.json": "5075567efb9cbfa369471e2341f8a7591ea8c5ca9de698e77766d299bf5e2c5a",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-provenance/debate-178.json": "5370469270338d64477733f5ee0a5d1259f6b87fa4b2706bcf0367d5a508289a"
+  }
+}
