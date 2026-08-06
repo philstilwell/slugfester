@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "4.2.21.17.5-dispute-only-adjudication-execution-manifest",
+  "protocolId": "v4.2.21.17.5-decomposed-consensus",
+  "status": "frozen-three-isolated-dispute-only-adjudication-contexts-authorized",
+  "frozenAt": "2026-08-06T09:07:08Z",
+  "checkpointCommit": "77098bef4cd1eca6e9fbead32c1294fd451c44ff",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "costEstimate": {
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "expectedWallMinutes": [
+      12,
+      25
+    ],
+    "absoluteTimeoutMinutes": 45
+  },
+  "modelInputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "workflow": "docs/assessment-workflow-v4.2.21.17.3.md",
+    "audioWorkflow": "docs/assessment-workflow-v4.2.21.17.4.md",
+    "manual": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/manual.md",
+    "schema": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/adjudication.schema.json"
+  },
+  "contexts": [
+    {
+      "debateNumber": "133",
+      "debateId": "hawkins-folley-free-will-idealism-2026",
+      "packet": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/packets/debate-133.json",
+      "provenance": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/provenance/debate-133.json",
+      "output": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/outputs/debate-133.json",
+      "disputeSource": "docs/calibration/v4.2.21.17.3/deterministic-disagreement-audio-prep/disagreements/debate-133.json",
+      "lockedInventory": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/locked-inventories/debate-133.json",
+      "sourcePacket": "docs/calibration/v4.2.21.17/independent-judgment-three/source-packets/debate-133.json",
+      "originalEvents": ".assessment-cache/captions/OSXawgwSZQs/events.json",
+      "disputedMoves": 17,
+      "candidateSelections": 44,
+      "audioVerifiedMoves": 0,
+      "audioTranscriptInputs": [],
+      "packetBytes": 153416
+    },
+    {
+      "debateNumber": "178",
+      "debateId": "ehrman-licona-who-wrote-gospels-2025",
+      "packet": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/packets/debate-178.json",
+      "provenance": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/provenance/debate-178.json",
+      "output": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/outputs/debate-178.json",
+      "disputeSource": "docs/calibration/v4.2.21.17.3/deterministic-disagreement-audio-prep/disagreements/debate-178.json",
+      "lockedInventory": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/locked-inventories/debate-178.json",
+      "sourcePacket": "docs/calibration/v4.2.21.17/independent-judgment-three/source-packets/debate-178.json",
+      "originalEvents": ".assessment-cache/captions/xTCPigOQabY/events.json",
+      "disputedMoves": 16,
+      "candidateSelections": 35,
+      "audioVerifiedMoves": 2,
+      "audioTranscriptInputs": [
+        {
+          "moveId": "con-justin-gospel-of-peter",
+          "sourcePath": "output/transcribe/v4221173-audio-verification/debate-178/transcripts/con-justin-gospel-of-peter.transcript.txt",
+          "modelInputFile": "audio-transcript-con-justin-gospel-of-peter.txt",
+          "sha256": "1a041c4ba4345d83bd4a9486b45e84ff7b07d7f6935d372e0deb19372e2fcbee"
+        },
+        {
+          "moveId": "con-matthew-financial-vocabulary",
+          "sourcePath": "output/transcribe/v4221173-audio-verification/debate-178/transcripts/con-matthew-financial-vocabulary.transcript.txt",
+          "modelInputFile": "audio-transcript-con-matthew-financial-vocabulary.txt",
+          "sha256": "c2d3d0e9387959ce7877567d2e506de776e861f4daa59e78909dd43e1d68f049"
+        }
+      ],
+      "packetBytes": 124773
+    },
+    {
+      "debateNumber": "182",
+      "debateId": "white-ally-sin-salvation-quran-bible-2013",
+      "packet": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/packets/debate-182.json",
+      "provenance": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/provenance/debate-182.json",
+      "output": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/outputs/debate-182.json",
+      "disputeSource": "docs/calibration/v4.2.21.17.3/deterministic-disagreement-audio-prep/disagreements/debate-182.json",
+      "lockedInventory": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/locked-inventories/debate-182.json",
+      "sourcePacket": "docs/calibration/v4.2.21.17/independent-judgment-three/source-packets/debate-182.json",
+      "originalEvents": ".assessment-cache/captions/ee9c45dSHiY/events.json",
+      "disputedMoves": 20,
+      "candidateSelections": 93,
+      "audioVerifiedMoves": 0,
+      "audioTranscriptInputs": [],
+      "packetBytes": 169247
+    }
+  ],
+  "isolation": {
+    "freshTemporaryCodexHomePerContext": true,
+    "freshSourceDirectoryPerContext": true,
+    "oneDebatePerContext": true,
+    "disputedFieldsOnly": true,
+    "lockedLocalEvidenceOnly": true,
+    "verifiedAudioTranscriptAvailableOnlyWhereRequired": true,
+    "provenanceFilesUnavailable": true,
+    "passIdentitiesUnavailable": true,
+    "initialRationalesUnavailable": true,
+    "nondisputedFieldsUnavailable": true,
+    "fullInitialOutputsUnavailable": true,
+    "calculatedScoresUnavailable": true,
+    "winnersUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 3,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "continueIndependentContextsAfterFailure": true,
+    "timeoutMs": 900000,
+    "maximumMinutesPerContext": 12,
+    "maximumMeanMinutes": 9.5,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "deterministicValidation": {
+    "exactCandidateSelectionOnly": true,
+    "dependencyPairsIndivisible": true,
+    "allDisputedFieldsDecidedOnce": true,
+    "importanceTreatedAsJudgmentField": true,
+    "nondisputedFieldsUntouched": true,
+    "candidateProvenanceRepositoryOnly": true,
+    "calculatedScores": 0
+  },
+  "authorization": {
+    "adjudicationModelContexts": true,
+    "deterministicValidation": true,
+    "analysis": true,
+    "retry": false,
+    "correctionModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "preexistingOutputBlocks": true,
+    "invalidOutputPreserved": true,
+    "laterIndependentContextsContinue": true,
+    "retryAuthorized": false,
+    "correctionAuthorized": false,
+    "candidateValueRepairAuthorized": false
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/model-execution.json",
+    "analysis": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/analysis.json",
+    "outputs": [
+      "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/outputs/debate-133.json",
+      "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/outputs/debate-178.json",
+      "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/outputs/debate-182.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/outputs/debate-133.json",
+    "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/outputs/debate-178.json",
+    "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/outputs/debate-182.json",
+    "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/model-execution.json",
+    "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.21.17.3.md": "e26a65b95ded60f542687525397dc6beb04e5d2b4b48e5d261b1f310bcbd35df",
+    "docs/assessment-workflow-v4.2.21.17.4.md": "e7066f0c85a98b9266ebf2515566580577ec26ac9ceb452d0858de302710ec99",
+    "docs/assessment-workflow-v4.2.21.17.5.md": "d0109aa8a978c2178a574514e9b7eff522ec293cc54d1780c22c9abdc9405ca4",
+    "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/preparation-manifest.json": "529be16cb81f46049417261436f8ab7023acb6106c700ab1da656679821e0d71",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/manual.md": "5907042cc083c7fe579c262be7bf78779561ab0a370b70180484888ab29e0c7b",
+    "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/adjudication.schema.json": "72dd5d54431de58015e8461c5a418f4587568626140cee9a16c2b1dce4633071",
+    "docs/calibration/v4.2.21.17.4/medium-confidence-audio-verification/audio-verification.json": "903e717ab7bbf3f6e405c9871748c838c437d0f114e7975d74fcfeb8339c2c4b",
+    "docs/calibration/v4.2.21.17.4/medium-confidence-audio-verification/analysis.json": "469b7766bd3464055e36fb71b6d25c4eefd0da167dccfd385ce6f2dbe1691acf",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v4221175-decomposed-adjudication.mjs": "485cd043a9fe4ab2bdc69f67479672d18f05ce44bde9122663009a0a45ce98e1",
+    "scripts/build-v4221175-adjudication-packets.mjs": "a32a044a80b99a0b222383bdb669122b3ca5575bb00158c1ff3197baba9c9a3b",
+    "scripts/test-v4221175-adjudication-packets.mjs": "0d1e035061c7b3abcf203fb482767a32db82755f3c75b5aa7f6b5dd0b9af61c1",
+    "scripts/validate-v4221175-adjudication-output.mjs": "a7c1848f39d2211ea4528985ca7aeef856f9c6745255ed63dc60f05ea90f0124",
+    "scripts/preregister-v4221175-adjudication.mjs": "1ac3700636f024ec41d58e5d1419eb28ddc35b292b6453854219d2092418056b",
+    "scripts/run-v4221175-adjudication.mjs": "7eaa908af640704247d4a7243be840077d99a55e38b3451266f2d75526c664d0",
+    "scripts/analyze-v4221175-adjudication.mjs": "4b748a2f78c8995a89c41a227633b12ad334a631534456ea585a24ba21f4b1ef",
+    "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/packets/debate-133.json": "c0b4dc93bfdae8795ba61b6089010b5ed5444563cf31c9473a360b910aa1bbce",
+    "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/provenance/debate-133.json": "92413bb3868347326fcdbf70b44aefd6340f21b21c214b973dde3661fa664bd8",
+    "docs/calibration/v4.2.21.17.3/deterministic-disagreement-audio-prep/disagreements/debate-133.json": "df32243e1671ede941f8bdc13d54124e9ebf875e02a7ca7424a691810073b676",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/locked-inventories/debate-133.json": "251f8e9be057510e13ca12d5e8f715ab15f42de6b4efdab709d0f5a2afa01ea7",
+    "docs/calibration/v4.2.21.17/independent-judgment-three/source-packets/debate-133.json": "af77927f5813fb9998254eb8f25ebd5dfd4dfbb45cb94c1e8f5a784c26e15744",
+    ".assessment-cache/captions/OSXawgwSZQs/events.json": "7d0f72e27b04551be2534d73b2d9ed6ed48273d1b931b42b7ba9ed942f79f1ef",
+    "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/packets/debate-178.json": "578bf1b354145574afa06f0783618fc3d26a5b48f528cefdb1529b493134db09",
+    "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/provenance/debate-178.json": "7a9af2d05336f016801118e9ad0b7f86e6e00884cc27e1ed52709589c4d289d2",
+    "docs/calibration/v4.2.21.17.3/deterministic-disagreement-audio-prep/disagreements/debate-178.json": "09039f614edac55da61153dfebe1af7ff4ef951f060993dac077b103acc6facb",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/locked-inventories/debate-178.json": "c27f82a36498c4ffb0894515c9126e4790cb7c1e0a98f9ffe8d1f876230f0cf8",
+    "docs/calibration/v4.2.21.17/independent-judgment-three/source-packets/debate-178.json": "4a42d72fce34fa8b8e3cbf3a798c06230cb0b7aac75b98bd1950d307e5cf6cae",
+    ".assessment-cache/captions/xTCPigOQabY/events.json": "261aa1d1a56ecdb7a56bb5bd16a3ab7d88e3d744b31fa75e5e2334a451925dcd",
+    "output/transcribe/v4221173-audio-verification/debate-178/transcripts/con-justin-gospel-of-peter.transcript.txt": "1a041c4ba4345d83bd4a9486b45e84ff7b07d7f6935d372e0deb19372e2fcbee",
+    "output/transcribe/v4221173-audio-verification/debate-178/transcripts/con-matthew-financial-vocabulary.transcript.txt": "c2d3d0e9387959ce7877567d2e506de776e861f4daa59e78909dd43e1d68f049",
+    "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/packets/debate-182.json": "91a92cf2648e82ac418fa1db8c35c0602d71a8da4a6a1f8d2a116b817612ece3",
+    "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/provenance/debate-182.json": "f498bc70dee81c18b5984c82aa6e9bdb82a8dea82f61a91e1f8c464966153790",
+    "docs/calibration/v4.2.21.17.3/deterministic-disagreement-audio-prep/disagreements/debate-182.json": "7d33f59cac0114029c2027b0379fe6e3c1765600625db90ca073f878e1601b8f",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/locked-inventories/debate-182.json": "e5a07019e45ac133e923a472aec0150d418f2b68b73cc59e72069242495c4501",
+    "docs/calibration/v4.2.21.17/independent-judgment-three/source-packets/debate-182.json": "04b277e2b853ff6b0ae17f1ff1d84a32f06b9f10b33360f9d31f8b0fd10b42fe",
+    ".assessment-cache/captions/ee9c45dSHiY/events.json": "5731ae17a1d32a316c95d05cf206b30ba91098640deeb2862b10c8732a54400a"
+  }
+}
