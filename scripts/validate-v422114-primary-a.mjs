@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+import { createHash } from "node:crypto";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
+import { assertV4 } from "./lib/v4-lean-production.mjs";
+import { compileAndValidateV422114Primary } from "./lib/v422114-narrow-primary-successor.mjs";
+import { compileV4220PrimaryOutput } from "./lib/v4220-source-span-rendering.mjs";
+
+const [proposalPath, preparationPath, debateNumber] = process.argv.slice(2), shouldWrite = process.argv.includes("--write");
+assertV4(proposalPath && preparationPath && debateNumber, "usage: validate-v422114-primary-a.mjs PROPOSAL PREPARATION DEBATE_NUMBER [--write]");
+const preparation = JSON.parse(await readFile(preparationPath, "utf8")), context = preparation.contexts.find((item) => item.debateNumber === debateNumber); assertV4(context, `${debateNumber}: narrow Primary A context missing`);
+const [proposal, packet, candidateBundle, eventsBytes, fullLedgerBytes] = await Promise.all([proposalPath, context.packet, context.candidateBundle, context.originalEvents, context.fullLedger].map((file) => readFile(file)).map(async (promise, index) => index < 3 ? JSON.parse(await promise) : promise));
+const eventsDocument = JSON.parse(eventsBytes), result = compileAndValidateV422114Primary(proposal, { packet, candidateBundle, eventsDocument, eventsBytes, fullLedgerBytes }), validationPacket = { ...structuredClone(packet), schemaVersion: "4.2.20-source-span-source-packet", protocolId: "v4.2.20-source-span-evidence-rendering" }, compiled = compileV4220PrimaryOutput(result.output, validationPacket, eventsDocument);
+const provenance = { schemaVersion: "4.2.21.14.1-narrow-primary-a-provenance", protocolId: preparation.protocolId, debateNumber, proposal: proposalPath, candidateBundle: context.candidateBundle, rawOutput: context.rawOutput, compiledOutput: context.compiledOutput, moves: result.provenance };
+if (shouldWrite) { for (const file of [context.rawOutput, context.compiledOutput, context.provenanceOutput]) await mkdir(path.dirname(file), { recursive: true }); await writeFile(context.rawOutput, `${JSON.stringify(result.output, null, 2)}\n`); await writeFile(context.compiledOutput, `${JSON.stringify(compiled, null, 2)}\n`); await writeFile(context.provenanceOutput, `${JSON.stringify(provenance, null, 2)}\n`); }
+const sha256 = (value) => createHash("sha256").update(value).digest("hex");
+console.log(JSON.stringify({ status: "passed", debateNumber, sections: result.output.sections.length, moves: result.output.moves.length, moveKindsChangedFromDiscovery: result.provenance.filter((item) => item.moveKindChangedFromDiscovery).length, immutableCandidateFieldsPreserved: result.provenance.every((item) => item.immutableCandidateFieldsPreserved), specialResponseEnumExpanded: result.validation.narrowPrimarySuccessor.specialResponseEnumExpandedByRepository, unchangedV4220ValidatorPassed: true, rawOutputSha256: sha256(Buffer.from(`${JSON.stringify(result.output, null, 2)}\n`)), compiledOutputSha256: sha256(Buffer.from(`${JSON.stringify(compiled, null, 2)}\n`)), scoresDerived: 0 }, null, 2));
