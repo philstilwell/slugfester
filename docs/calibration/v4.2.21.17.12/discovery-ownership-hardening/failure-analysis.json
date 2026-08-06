@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "4.2.21.17.12-discovery-ownership-failure-analysis",
+  "protocolId": "v4.2.21.17.12-discovery-ownership-hardening",
+  "status": "held-out-discovery-failed-schema-ownership-bound-missing",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "inputs": {
+    "execution": "docs/calibration/v4.2.21.17.11/held-out-discovery/model-execution.json",
+    "manifest": "docs/calibration/v4.2.21.17.11/held-out-discovery/execution-manifest.json"
+  },
+  "observed": {
+    "contextsAttempted": 17,
+    "validContexts": 16,
+    "invalidContexts": 1,
+    "retries": 0,
+    "wallElapsedMs": 368612,
+    "modelWorkElapsedMs": 1410605,
+    "maximumParallelContextsObserved": 4,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "rootCause": {
+    "class": "output-schema-underconstraint",
+    "promptContainedOwnershipRule": true,
+    "deterministicValidatorEnforcedOwnershipRule": true,
+    "outputSchemaEnforcedOwnershipRule": false,
+    "modelTransportSucceeded": true,
+    "semanticRepairAttempted": false,
+    "retryAttempted": false,
+    "violations": [
+      {
+        "debateNumber": "19",
+        "chunkId": "chunk-001",
+        "candidateId": "c010",
+        "coreStartEvent": 0,
+        "coreEndEvent": 189,
+        "contextEndEvent": 229,
+        "startEvent": 203,
+        "endEvent": 209,
+        "reasons": [
+          "start-event-outside-owned-core"
+        ]
+      }
+    ]
+  },
+  "correction": {
+    "startEventSchemaMinimum": "chunk.coreStartEvent",
+    "startEventSchemaMaximum": "chunk.coreEndEvent",
+    "endEventSchemaMinimum": "chunk.contextStartEvent",
+    "endEventSchemaMaximum": "chunk.contextEndEvent",
+    "deterministicValidatorRetainedAsDefenseInDepth": true,
+    "historicalFailedOutputModified": false
+  },
+  "evidenceDisposition": {
+    "discoveryQualityEvidence": "informative-but-failed",
+    "throughputEvidence": "retained",
+    "cleanHeldOutPassEvidence": false,
+    "retiredDebateNumbers": [
+      "19",
+      "87",
+      "163",
+      "183",
+      "191"
+    ],
+    "reuseForCleanHeldOutGate": false
+  },
+  "authorization": {
+    "deterministicSchemaTest": true,
+    "replacementHeldOutSelection": true,
+    "retryFailedContext": false,
+    "reuseFailedSampleAsCleanHeldOut": false,
+    "judgmentPacketPreparation": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}

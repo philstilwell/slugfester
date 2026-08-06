@@ -24,6 +24,10 @@ assert.equal(bundle.candidates.every((candidate) => !Object.hasOwn(candidate.res
 const schema = makeV422112DiscoverySchema({ packet, chunk: context.chunks[0] });
 assert.deepEqual(schema.properties.candidates.items.properties.responseIntent.required, ["kind", "earlierTargetDescription"]);
 assert.equal(Object.hasOwn(schema.properties.candidates.items.properties.responseIntent.properties, "localTargetCandidateIds"), false);
+assert.equal(schema.properties.candidates.items.properties.sourceSpan.properties.startEvent.minimum, context.chunks[0].coreStartEvent);
+assert.equal(schema.properties.candidates.items.properties.sourceSpan.properties.startEvent.maximum, context.chunks[0].coreEndEvent);
+assert.equal(schema.properties.candidates.items.properties.sourceSpan.properties.endEvent.minimum, context.chunks[0].contextStartEvent);
+assert.equal(schema.properties.candidates.items.properties.sourceSpan.properties.endEvent.maximum, context.chunks[0].contextEndEvent);
 const replyOutputIndex = outputs.findIndex((output) => output.candidates.some((candidate) => candidate.responseIntent.kind === "reply"));
 assert.ok(replyOutputIndex >= 0);
 const shortReply = structuredClone(outputs[replyOutputIndex]);

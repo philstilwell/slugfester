@@ -23,6 +23,19 @@ function constOrType(value, type) {
 }
 
 export function makeV422112DiscoverySchema({ packet, chunk, candidatesMaximum = 10 } = {}) {
+  const sourceSpan = {
+    type: "object",
+    additionalProperties: false,
+    required: ["startEvent", "endEvent"],
+    properties: {
+      startEvent: chunk
+        ? { type: "integer", minimum: chunk.coreStartEvent, maximum: chunk.coreEndEvent }
+        : { type: "integer", minimum: 0 },
+      endEvent: chunk
+        ? { type: "integer", minimum: chunk.contextStartEvent, maximum: chunk.contextEndEvent }
+        : { type: "integer", minimum: 0 }
+    }
+  };
   const responseIntent = { type: "object", additionalProperties: false, required: ["kind", "earlierTargetDescription"], properties: { kind: { type: "string", enum: ["constructive", "reply"] }, earlierTargetDescription: { type: "string" } } };
   const candidate = {
     type: "object",
@@ -33,7 +46,7 @@ export function makeV422112DiscoverySchema({ packet, chunk, candidatesMaximum = 
       side: { type: "string", enum: ["pro", "con"] },
       speaker: { type: "string", minLength: 1 },
       proposition: { type: "string", minLength: 25 },
-      sourceSpan: { type: "object", additionalProperties: false, required: ["startEvent", "endEvent"], properties: { startEvent: { type: "integer", minimum: 0 }, endEvent: { type: "integer", minimum: 0 } } },
+      sourceSpan,
       attributionConfidence: { type: "string", enum: ["high", "medium", "low"] },
       attributionBasis: { type: "string", minLength: 40 },
       loadBearingLevel: { type: "string", enum: ["motion", "central", "subsidiary"] },
