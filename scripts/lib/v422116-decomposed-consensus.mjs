@@ -369,11 +369,11 @@ function burdenAdjustmentSchema(moveIds, bridgeIds) {
       distinctDebateWideConsequence: { type: "boolean" },
       affectsBurdenCompletion: { type: "boolean" },
       notAlreadyScored: { type: "boolean" },
-      affectedBurdenIds: { type: "array", uniqueItems: true, items: { type: "string", enum: bridgeIds } },
+      affectedBurdenIds: { type: "array", items: { type: "string", enum: bridgeIds } },
       completionCriterion: { type: "string", minLength: 1 },
-      relatedMoveIds: { type: "array", uniqueItems: true, items: { type: "string", enum: moveIds } },
+      relatedMoveIds: { type: "array", items: { type: "string", enum: moveIds } },
       distinctConsequence: { type: "string", minLength: 1 },
-      alreadyCapturedBy: { type: "array", uniqueItems: true, items: { type: "string", minLength: 1 } },
+      alreadyCapturedBy: { type: "array", items: { type: "string", minLength: 1 } },
       counterfactual: { type: "string", minLength: 1 }
     }
   };
