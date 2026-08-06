@@ -1,0 +1,234 @@
+{
+  "schemaVersion": "4.2.21.7-workflow-readiness-assessment",
+  "protocolId": "v4.2.21-source-span-consensus",
+  "status": "conditional-five-debate-held-out-gate-required",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "evidencePopulation": {
+    "debates": 3,
+    "moves": 34,
+    "topicFamilies": 3,
+    "twoSpeakerDebatesOnly": true,
+    "heldOutAfterWorkflowRepair": false,
+    "publicationFinalizationsTested": 0
+  },
+  "passedDomains": {
+    "completeLocalTranscriptAndSourceChain": true,
+    "independentPasses": true,
+    "deterministicDisagreementExtraction": true,
+    "mediumConfidenceAudioUnionRule": true,
+    "disputeOnlyAdjudication": true,
+    "anonymizedCandidateProvenance": true,
+    "scoresOnlyAfterAdjudication": true,
+    "singleScoringPass": true,
+    "fullLedgerReplay": true,
+    "prospectiveScoreStability": true
+  },
+  "qualityEvidence": {
+    "primaryContextsPassed": 3,
+    "passBContextsAccepted": 3,
+    "passBRejectedOutputsPreserved": 1,
+    "passBClosureRecoveryContextsPassed": 1,
+    "adjudicationContextsPassed": 3,
+    "adjudicationRetries": 0,
+    "disputedMoveRate": 1,
+    "candidateSelections": 160,
+    "audioMovesVerified": 5,
+    "audioMovesUnresolved": 0,
+    "scoreStability": {
+      "sideRows": [
+        {
+          "debateNumber": "27",
+          "side": "pro",
+          "passA": 75,
+          "passB": 71,
+          "final": 72,
+          "absoluteDistanceFromPassA": 3,
+          "absoluteDistanceFromPassB": 1,
+          "outsideInitialRange": 0
+        },
+        {
+          "debateNumber": "27",
+          "side": "con",
+          "passA": 85,
+          "passB": 82,
+          "final": 83,
+          "absoluteDistanceFromPassA": 2,
+          "absoluteDistanceFromPassB": 1,
+          "outsideInitialRange": 0
+        },
+        {
+          "debateNumber": "188",
+          "side": "pro",
+          "passA": 84,
+          "passB": 76,
+          "final": 79,
+          "absoluteDistanceFromPassA": 5,
+          "absoluteDistanceFromPassB": 3,
+          "outsideInitialRange": 0
+        },
+        {
+          "debateNumber": "188",
+          "side": "con",
+          "passA": 81,
+          "passB": 82,
+          "final": 82,
+          "absoluteDistanceFromPassA": 1,
+          "absoluteDistanceFromPassB": 0,
+          "outsideInitialRange": 0
+        },
+        {
+          "debateNumber": "195",
+          "side": "pro",
+          "passA": 79,
+          "passB": 69,
+          "final": 73,
+          "absoluteDistanceFromPassA": 6,
+          "absoluteDistanceFromPassB": 4,
+          "outsideInitialRange": 0
+        },
+        {
+          "debateNumber": "195",
+          "side": "con",
+          "passA": 86,
+          "passB": 82,
+          "final": 83,
+          "absoluteDistanceFromPassA": 3,
+          "absoluteDistanceFromPassB": 1,
+          "outsideInitialRange": 0
+        }
+      ],
+      "scoreBoundsPassed": true,
+      "agreedWinnerDebates": 2,
+      "agreedWinnersPreserved": 2,
+      "meanAbsoluteDistanceToInitialPasses": 2.5,
+      "maximumAbsoluteDistanceToEitherInitialPass": 6,
+      "maximumOutsideInitialRange": 0,
+      "thresholds": {
+        "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+        "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+        "maximumOutsideInitialRangeMaximum": 3
+      },
+      "acceptancePassed": true
+    },
+    "productionReferenceDiagnostic": {
+      "winnerMatches": 3,
+      "debates": 3,
+      "signedSideDeltas": [
+        -9,
+        -1,
+        -11,
+        -10,
+        -18,
+        -11
+      ],
+      "meanSignedSideDelta": -10,
+      "diagnosticNotGold": true
+    }
+  },
+  "runtimeProjection": {
+    "observedMinutesPerDebate": {
+      "primary": 4.6,
+      "passB": 8.77,
+      "adjudication": 3.1,
+      "consensusAndScoring": 16.47,
+      "publicationFinalizationAssumption": 4.25,
+      "endToEnd": 20.72
+    },
+    "projectedHoursFor195": {
+      "consensusAndScoring": 53.52,
+      "publicationFinalization": 13.81,
+      "endToEnd": 67.34
+    },
+    "fiftyHourTargetCompatibleWithCurrentMandatoryThreeContextPath": false,
+    "modelAuthentication": "ChatGPT subscription",
+    "projectedMeteredModelApiCostUsd": 0,
+    "projectedTranscriptionAtObservedRate": {
+      "minutes": 314.9,
+      "estimatedApiCostUsd": 1.89,
+      "planningRangeUsd": [
+        1,
+        4
+      ],
+      "ChatGPTSubscriptionApplicable": false
+    }
+  },
+  "strengths": [
+    "Every accepted raw judgment and final ledger replays against the complete local transcript/source chain.",
+    "The third pass saw only disputed fields with independently anonymized candidates and verified audio where required.",
+    "The final six side scores stayed inside the ranges formed by the two independent passes.",
+    "The prospective stability gate passed without a rerun, correction, offset, or threshold change.",
+    "The stricter scale changed score levels but preserved the existing winner classification in all three diagnostic comparisons."
+  ],
+  "materialLimitations": [
+    "All 34 sampled moves opened at least one dispute, so adjudication is presently the normal path rather than a sparse exception.",
+    "The three debates became development evidence while schema and audio-reference defects were repaired; they are not a final held-out test.",
+    "Only one fresh Pass B context has exercised the final charity-closure schema after the rejected output exposed the gap.",
+    "The sample covers roughly one-hour two-speaker debates but not the broader duration and source-quality distribution of the corpus.",
+    "Publication prose, Overall Commentary, and the labeled accordion AI Extension have not yet been regenerated from the adjudicated ledger.",
+    "The observed mandatory three-context path projects above 50 compute-hours before publication finalization."
+  ],
+  "qualityAssessment": {
+    "sourceAndAuditIntegrity": "high",
+    "scoreConsistency": "high-with-small-sample-caveat",
+    "interpassSemanticAgreement": "low",
+    "operationalReliability": "moderate-to-high",
+    "computeEfficiency": "below-target",
+    "generalizationEvidence": "insufficient",
+    "publicationReadiness": "not-yet-tested",
+    "overall": "promising-but-not-ready-for-195"
+  },
+  "recommendedNextGate": {
+    "debates": 5,
+    "disjointAndUnseenAfterFreeze": true,
+    "speakersPerDebate": 2,
+    "stratification": [
+      "topic family",
+      "duration",
+      "caption/source quality",
+      "argument density",
+      "expected attribution difficulty"
+    ],
+    "requiredStages": [
+      "two independent Sol passes",
+      "deterministic disagreement extraction",
+      "audio verification for every below-high attribution in either pass",
+      "isolated dispute-only Sol adjudication",
+      "single post-adjudication score pass",
+      "publication assessment reconstruction including Overall Commentary and labeled accordion AI Extension"
+    ],
+    "executionPolicy": {
+      "oneAttemptPerContext": true,
+      "retries": 0,
+      "corrections": 0,
+      "preserveFailures": true,
+      "freezeAllThresholdsBeforeExecution": true,
+      "testLowerReasoningEffortOnlyAsASeparatelyFrozenEfficiencyVariant": true
+    },
+    "successCriteria": {
+      "rawSemanticContextsValidOnFirstAttempt": "all",
+      "requiredAudioMovesVerified": "all",
+      "adjudicationContextsValidOnFirstAttempt": "all",
+      "scoreStabilityGate": "pass frozen v4.2.21.6 thresholds",
+      "publicationArtifactsValid": "all",
+      "AIExtensionClearlyLabeledAsAI": true,
+      "AIExtensionAccordionPresent": true,
+      "AIExtensionDistinctStylingPresent": true,
+      "forbiddenUnassailableWordingOccurrences": 0
+    }
+  },
+  "recommendation": {
+    "beginAll195Now": false,
+    "prepareHeldOutFiveNow": true,
+    "executeHeldOutFiveWithoutFreshCostEstimate": false,
+    "acceptCurrentEndToEndComputeProjection": false,
+    "optimizationDecisionAfterHeldOutEvidence": true
+  },
+  "authorization": {
+    "heldOutFivePreparation": true,
+    "heldOutFiveExecution": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
