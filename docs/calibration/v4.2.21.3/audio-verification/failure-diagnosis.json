@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "4.2.21.3.1-audio-failure-diagnosis",
+  "protocolId": "v4.2.21-source-span-consensus",
+  "status": "isolated-known-speaker-reference-duration-gap",
+  "failedStage": "v4.2.21.3",
+  "callsAttempted": 5,
+  "callsCompleted": 0,
+  "transcriptsWritten": 0,
+  "retries": 0,
+  "corrections": 0,
+  "cause": {
+    "APIParameter": "known_speaker_references",
+    "configuredReferenceDurationSeconds": 12,
+    "acceptedMinimumSeconds": 1.2,
+    "acceptedMaximumSeconds": 10,
+    "commonHttpStatus": 400,
+    "clipOrTranscriptContentFailure": false,
+    "accountCreditFailure": false
+  },
+  "references": [
+    {
+      "localPath": "output/transcribe/v42212-audio-verification/debate-27/references/frank-turek.mp3",
+      "configuredDurationSeconds": 12
+    },
+    {
+      "localPath": "output/transcribe/v42212-audio-verification/debate-27/references/alex-oconnor.mp3",
+      "configuredDurationSeconds": 12
+    }
+  ],
+  "billing": {
+    "successfulAudioProcessingObserved": false,
+    "actualChargeKnownLocally": false,
+    "conservativeEstimatedExposureUsd": 0.0291,
+    "maximumPreviouslyAuthorizedUsd": 0.04
+  },
+  "preservation": {
+    "failedExecutionPreserved": true,
+    "unresolvedAuditPreserved": true,
+    "transcriptsFabricatedOrRepaired": false
+  },
+  "totals": {
+    "scoresDerived": 0,
+    "meteredModelApiCostUsd": 0
+  },
+  "authorization": {
+    "nineSecondReferenceClosureDesign": true,
+    "recoveryManifest": false,
+    "paidRecoveryExecution": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  }
+}
