@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "4.2.21.12-simplified-partition-discovery-design",
+  "protocolId": "v4.2.21.12-simplified-partition-discovery",
+  "status": "simplified-discovery-design-frozen-packet-preparation-authorized",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "responseIntent": {
+    "fields": [
+      "kind",
+      "earlierTargetDescription"
+    ],
+    "kinds": [
+      "constructive",
+      "reply"
+    ],
+    "constructiveDescriptionMustBeEmpty": true,
+    "replyDescriptionMinimumCharacters": 30,
+    "candidateTargetIdsAbsent": true,
+    "moveKindRepositoryDerived": true,
+    "selectedTargetTopologyOwnedByPrimaryA": true
+  },
+  "retainedControls": {
+    "exactPartitionPlans": true,
+    "exactChunkReplay": true,
+    "candidateStartEventOwnership": true,
+    "lockedLookaheadExtension": true,
+    "candidatesPerChunkMaximum": 10,
+    "noRatingsOrScores": true,
+    "noSilentSemanticDeduplication": true
+  },
+  "predecessorBoundary": {
+    "acceptedOutputsReusedForAssessment": false,
+    "failureOutputRepaired": false,
+    "allTwelveMustRerun": true
+  },
+  "inputs": {
+    "predecessorFailureAnalysis": "docs/calibration/v4.2.21.9/generalized-partition/discovery-failure-analysis.json",
+    "workflow": "docs/assessment-workflow-v4.2.21.12.md",
+    "manual": "docs/calibration/v4.2.21.12/simplified-partition-discovery/manual.md",
+    "discoverySchemaTemplate": "docs/calibration/v4.2.21.12/simplified-partition-discovery/discovery-template.schema.json"
+  },
+  "sourceHashes": {
+    "docs/calibration/v4.2.21.9/generalized-partition/discovery-failure-analysis.json": "8d2a56e785b4299e897ee9569f1ddad64d4bc402eb173f14668a38e16f7f7ca7",
+    "docs/assessment-workflow-v4.2.21.12.md": "6d1293609c34e769faffd42955a524a8f33d6bb729861333e59ad4a0cd835371",
+    "docs/calibration/v4.2.21.12/simplified-partition-discovery/manual.md": "b3104e36a127f0421d6f68b8499969879d1d68512d390e16db9f6ab4f6bdbd1c",
+    "scripts/lib/v422112-simplified-discovery.mjs": "89abda431c9253171c0d8f6bbe3d56d024ab8b635cd6be2eecc0c3c7e2a857fe",
+    "scripts/test-v422112-simplified-discovery.mjs": "e7081aac4ab677d6391ef1b8d2031fa028919664e4a91a5229ce82a3c7a6ffd7",
+    "scripts/preregister-v422112-simplified-discovery.mjs": "cadcda64a0af788a34242f6bbde44f90f8133936aeb393106b812b78e09f3f85"
+  },
+  "totals": {
+    "modelContextsExecuted": 0,
+    "audioCalls": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "successorPacketPreparation": true,
+    "successorExecutionManifest": false,
+    "modelExecution": false,
+    "primaryExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
