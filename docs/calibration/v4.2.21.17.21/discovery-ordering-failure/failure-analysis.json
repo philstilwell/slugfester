@@ -1,0 +1,464 @@
+{
+  "schemaVersion": "4.2.21.17.21-discovery-ordering-failure-analysis",
+  "protocolId": "v4.2.21.17.21-discovery-ordering-failure-analysis",
+  "status": "ordering-only-failure-confirmed-order-invariant-validator-development-authorized",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "heldOutGateDisposition": "failed-and-not-retried",
+  "inputs": {
+    "manifest": "docs/calibration/v4.2.21.17.20/hard-route-held-out-discovery/execution-manifest.json",
+    "manifestSha256": "019e0676113ddadcf12c266a98e16b341d5988dc50ad3f9d4c9fdec18889c032",
+    "execution": "docs/calibration/v4.2.21.17.20/hard-route-held-out-discovery/model-execution.json",
+    "executionSha256": "c8c84a943d3a2ff37d76b24167ac0eeda4a265214c6b105de0cb76f10da1e918",
+    "preparation": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/preparation-manifest.json",
+    "preparationSha256": "1cdf9f9c7f2ae8540561f11dabfb30f21e27bb700f4bf2e7f41c901afc36f321"
+  },
+  "failure": {
+    "contextIndex": 5,
+    "debateNumber": "63",
+    "chunkId": "chunk-001",
+    "executionStatus": "output-validation-failed",
+    "classification": "valid-structured-output-with-noncanonical-candidate-array-order",
+    "transportPassed": true,
+    "rawOutputPreserved": true,
+    "semanticCorrectionPerformed": false,
+    "retryPerformed": false
+  },
+  "replay": {
+    "method": "in-memory-order-only-clone",
+    "comparator": [
+      "sourceSpan.startEvent",
+      "sourceSpan.endEvent",
+      "candidateId"
+    ],
+    "contexts": [
+      {
+        "contextIndex": 0,
+        "debateNumber": "51",
+        "chunkId": "chunk-001",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 10,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-51-chunk-001.json",
+        "rawOutputSha256": "d3303889194ae30ab494b1d326e5ab6b7c52c6be16d116fc95667e9d0a11aa7a",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 1,
+        "debateNumber": "51",
+        "chunkId": "chunk-002",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 10,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-51-chunk-002.json",
+        "rawOutputSha256": "2f15500145c7510aee18b2a762f1ccdd1acc21ad3e3e094c439839509aa77f5f",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 2,
+        "debateNumber": "51",
+        "chunkId": "chunk-003",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 10,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-51-chunk-003.json",
+        "rawOutputSha256": "c50b3b0a38705f225f9a6d5bfbdbf8ecca01a5ce356c41fcf7f8dc5fe4cf4690",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 3,
+        "debateNumber": "51",
+        "chunkId": "chunk-004",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 10,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-51-chunk-004.json",
+        "rawOutputSha256": "f4003e807f652cec78d985d3793be4a0727c5295b608d9028b999746ea74dcae",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 4,
+        "debateNumber": "51",
+        "chunkId": "chunk-005",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 9,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-51-chunk-005.json",
+        "rawOutputSha256": "9316fb0e925643a35f8615f84901f32f693c580f9db071891a2654b5ad88eed3",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 5,
+        "debateNumber": "63",
+        "chunkId": "chunk-001",
+        "executionAccepted": false,
+        "executionStatus": "output-validation-failed",
+        "candidates": 10,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-63-chunk-001.json",
+        "rawOutputSha256": "6db0629c67436cb2abf37b12f25d1bdc6cebe8a6777cb0d5e350cff4c49a095a",
+        "rawChronologyCanonical": false,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [
+          {
+            "candidateId": "c006",
+            "rawIndex": 5,
+            "orderedIndex": 6,
+            "sourceSpan": {
+              "startEvent": 591,
+              "endEvent": 654
+            }
+          },
+          {
+            "candidateId": "c007",
+            "rawIndex": 6,
+            "orderedIndex": 7,
+            "sourceSpan": {
+              "startEvent": 654,
+              "endEvent": 764
+            }
+          },
+          {
+            "candidateId": "c008",
+            "rawIndex": 7,
+            "orderedIndex": 8,
+            "sourceSpan": {
+              "startEvent": 764,
+              "endEvent": 803
+            }
+          },
+          {
+            "candidateId": "c009",
+            "rawIndex": 8,
+            "orderedIndex": 9,
+            "sourceSpan": {
+              "startEvent": 804,
+              "endEvent": 880
+            }
+          },
+          {
+            "candidateId": "c010",
+            "rawIndex": 9,
+            "orderedIndex": 5,
+            "sourceSpan": {
+              "startEvent": 581,
+              "endEvent": 899
+            }
+          }
+        ],
+        "adjacentInversions": [
+          {
+            "priorCandidateId": "c009",
+            "priorSourceSpan": {
+              "startEvent": 804,
+              "endEvent": 880
+            },
+            "candidateId": "c010",
+            "candidateSourceSpan": {
+              "startEvent": 581,
+              "endEvent": 899
+            }
+          }
+        ]
+      },
+      {
+        "contextIndex": 6,
+        "debateNumber": "63",
+        "chunkId": "chunk-002",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 10,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-63-chunk-002.json",
+        "rawOutputSha256": "69f083e1136b0e3aa30fe37d72f7786ff7c7a51e96ac911aca19c9a68fc1f896",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 7,
+        "debateNumber": "63",
+        "chunkId": "chunk-003",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 10,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-63-chunk-003.json",
+        "rawOutputSha256": "93b8c3f328cc5ce47b56a6e0a6713c173fddb86144271de5d9ac6700ee64df42",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 8,
+        "debateNumber": "63",
+        "chunkId": "chunk-004",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 10,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-63-chunk-004.json",
+        "rawOutputSha256": "26a7867997c1e28e465336af1149548935c053799f2cae422eaf09b720e9e00a",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 9,
+        "debateNumber": "90",
+        "chunkId": "chunk-001",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 7,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-90-chunk-001.json",
+        "rawOutputSha256": "9be354ea96226ca39579d5fc35747f07087ad8894aa54ec66ae24739140e08b4",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 10,
+        "debateNumber": "90",
+        "chunkId": "chunk-002",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 10,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-90-chunk-002.json",
+        "rawOutputSha256": "9817b7eb9bd50575f87e21ed625cc1bf3eb5cbdf5648ab2e4fad1e34a4db66d6",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 11,
+        "debateNumber": "90",
+        "chunkId": "chunk-003",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 10,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-90-chunk-003.json",
+        "rawOutputSha256": "0a2a063d0f1da55f482e8192f27dafd7158d75dccc05706cf789d8b05fc27317",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 12,
+        "debateNumber": "90",
+        "chunkId": "chunk-004",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 10,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-90-chunk-004.json",
+        "rawOutputSha256": "fdd6ede82bb173c493ebf1596f10acbdf5ba18c180bf0d0e5895ff17333a4dba",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 13,
+        "debateNumber": "90",
+        "chunkId": "chunk-005",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 8,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-90-chunk-005.json",
+        "rawOutputSha256": "6b1b38aa41513ebbc9dd09cfd319790b49e441d12fdd969d001e51ef3257ba33",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 14,
+        "debateNumber": "153",
+        "chunkId": "chunk-001",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 9,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-153-chunk-001.json",
+        "rawOutputSha256": "cd63b344b723a6722cd0ee16aaa15c9db2897502ff4c6b08fe86fdb3218cb003",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 15,
+        "debateNumber": "153",
+        "chunkId": "chunk-002",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 10,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-153-chunk-002.json",
+        "rawOutputSha256": "171c7bd7f3be58dbd2dba41e42ce6b51ebde4d8efa522c568295086e6d18a69b",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 16,
+        "debateNumber": "153",
+        "chunkId": "chunk-003",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 6,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-153-chunk-003.json",
+        "rawOutputSha256": "498d58b56ad5cb86c35cb1d9edba3dbf0c075977983004ec126722bdeb109f0b",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 17,
+        "debateNumber": "165",
+        "chunkId": "chunk-001",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 10,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-165-chunk-001.json",
+        "rawOutputSha256": "13b6963b8c371903372fef1d64bc71d7d5b225b6fc1d5fe22a0231547015322e",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 18,
+        "debateNumber": "165",
+        "chunkId": "chunk-002",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 10,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-165-chunk-002.json",
+        "rawOutputSha256": "0cd11b2885245e9de53436439c21fabecb1790591d3ae54fbad6d23334902ad4",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      },
+      {
+        "contextIndex": 19,
+        "debateNumber": "165",
+        "chunkId": "chunk-003",
+        "executionAccepted": true,
+        "executionStatus": "completed-valid",
+        "candidates": 10,
+        "rawOutput": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/discovery-outputs/debate-165-chunk-003.json",
+        "rawOutputSha256": "529db65698b4329d81333fbf1f133f5a8278b98c430790429e03e6da13146c64",
+        "rawChronologyCanonical": true,
+        "canonicalOrderingValidationStatus": "passed",
+        "candidateFieldsPreservedExactly": true,
+        "movedCandidates": [],
+        "adjacentInversions": []
+      }
+    ],
+    "debateBundles": [
+      {
+        "debateNumber": "51",
+        "candidates": 49,
+        "rawAndOrderedCompilationCanonicallyIdentical": true,
+        "compiledBundleSha256": "75a7a00a08eae78b5c6a97ad6f00888d306e97ad6e51fbb85ebdae1e95d9930e"
+      },
+      {
+        "debateNumber": "63",
+        "candidates": 40,
+        "rawAndOrderedCompilationCanonicallyIdentical": true,
+        "compiledBundleSha256": "629923aeb02afe52edca119740ace0660b8bebfda4ad2f4b67b0afebed7ca12d"
+      },
+      {
+        "debateNumber": "90",
+        "candidates": 45,
+        "rawAndOrderedCompilationCanonicallyIdentical": true,
+        "compiledBundleSha256": "b1d1949140a903f2da46ce5f990e196c1cff6787dffa5afa075260bbfca769ff"
+      },
+      {
+        "debateNumber": "153",
+        "candidates": 25,
+        "rawAndOrderedCompilationCanonicallyIdentical": true,
+        "compiledBundleSha256": "03c188d65c81ae5182c5bacf7f34499375ca6eb6a215de319b1c06cb2aeeefdd"
+      },
+      {
+        "debateNumber": "165",
+        "candidates": 30,
+        "rawAndOrderedCompilationCanonicallyIdentical": true,
+        "compiledBundleSha256": "314a6e355634b319c3a9eb8a2556a89d4cb2eca9b975fefb13d2c68ceebba657"
+      }
+    ],
+    "contextsReordered": 1,
+    "allTwentyValidateUnderCanonicalOrdering": true,
+    "allCandidateFieldsPreservedExactly": true,
+    "rawAndOrderedCompilationCanonicallyIdenticalForAllDebates": true,
+    "derivedOutputsReplacedRawModelOutputs": false
+  },
+  "designFinding": {
+    "simplifiedDiscoveryModelAuthorsLocalTargetIds": false,
+    "selectedTargetTopologyDeferredToIndependentJudgment": true,
+    "compilerAlreadyCanonicalizesCandidateChronology": true,
+    "rawArrayOrderAffectsCompiledCandidateSemantics": false,
+    "inheritedChronologyRejectionRequiredForSimplifiedDiscovery": false
+  },
+  "recommendation": {
+    "nextProtocol": "versioned order-invariant simplified-discovery validation with explicit canonical-order audit",
+    "developmentData": "retired and failed-gate artifacts only",
+    "requireRetiredRegressionBeforeFreshHeldOutEvidence": true,
+    "acceptV42211720AsPassed": false,
+    "retryV42211720": false
+  },
+  "cost": {
+    "modelContextsExecuted": 0,
+    "audioCalls": 0,
+    "transcriptionCalls": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "authorization": {
+    "orderInvariantValidatorDevelopment": true,
+    "retiredRegression": true,
+    "freshHeldOutModelExecution": false,
+    "independentJudgmentPacketPreparation": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
