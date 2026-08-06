@@ -44,6 +44,12 @@ Each adjudicated choice is resolved through the repository-only candidate-proven
 
 The assembled judgment must again pass the complete v4.2.20 source-chain validator. The ledger contains raw model ratings and findings but no move, section, side, overall, winner, or diagnostic score. Exact deterministic replay is required before a single repository-owned scoring pass can be separately authorized.
 
+## Single deterministic scoring pass
+
+After the adjudicated raw ledger is locked, the repository may apply the frozen scoring formula exactly once. The final judgments produce the scores eligible for later publication. In that same post-adjudication execution, Pass A and Pass B are scored only as stability references; those reference scores cannot change adjudication or the final ledger.
+
+The prospective stability gate requires every final score to remain within eight points of either initial pass, the mean absolute distance from both initial passes to remain at most four points, and any excursion outside the interval formed by the two initial scores to remain at most three points. When both initial passes identify the same winner, the adjudicated result must preserve that winner. Existing production scores are reported only as a diagnostic comparison and are never treated as ground truth or an acceptance input. No formula change, offset, rerun, or threshold relaxation is allowed after results appear.
+
 ## Authorization boundary
 
 Passing fixtures authorize preparation of a fresh Pass B primary gate against the three accepted v4.2.20 debates. They do not authorize Pass B model execution. Execution requires a frozen manifest, exact source and schema hashes, isolated one-attempt contexts, and a fresh cost estimate. Audio, adjudication, deterministic final-ledger assembly, score derivation, publication, production mutation, and the 195-debate run remain separately gated.
