@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "4.2.21.4-dispute-only-adjudication-preparation",
+  "protocolId": "v4.2.21-source-span-consensus",
+  "status": "prepared-three-dispute-only-adjudication-contexts",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "inputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "workflow": "docs/assessment-workflow-v4.2.21.md",
+    "manual": "docs/calibration/v4.2.21.4/adjudication/manual.md",
+    "schema": "docs/calibration/v4.2.21.4/adjudication/adjudication.schema.json"
+  },
+  "contexts": [
+    {
+      "debateNumber": "27",
+      "debateId": "oconnor-turek-evil-moral-argument-2017",
+      "packet": "docs/calibration/v4.2.21.4/adjudication/packets/debate-27.json",
+      "provenance": "docs/calibration/v4.2.21.4/adjudication/provenance/debate-27.json",
+      "output": "docs/calibration/v4.2.21.4/adjudication/outputs/debate-27.json",
+      "disputeSource": "docs/calibration/v4.2.21.2/disagreement-audio-prep/disagreements/debate-27.json",
+      "lockedPacket": "docs/calibration/v4.2.21/pass-b-consensus/packets/debate-27.json",
+      "sourcePacket": "docs/calibration/v4.2.20/source-span-rendering/packets/debate-27.json",
+      "originalEvents": ".assessment-cache/captions/b5a3MxIqZOs/events.json",
+      "disputedMoves": 12,
+      "candidateSelections": 65,
+      "audioVerifiedMoves": 5,
+      "packetBytes": 78812
+    },
+    {
+      "debateNumber": "188",
+      "debateId": "kastrup-blackmore-consciousness-idealism-2023",
+      "packet": "docs/calibration/v4.2.21.4/adjudication/packets/debate-188.json",
+      "provenance": "docs/calibration/v4.2.21.4/adjudication/provenance/debate-188.json",
+      "output": "docs/calibration/v4.2.21.4/adjudication/outputs/debate-188.json",
+      "disputeSource": "docs/calibration/v4.2.21.2/disagreement-audio-prep/disagreements/debate-188.json",
+      "lockedPacket": "docs/calibration/v4.2.21/pass-b-consensus/packets/debate-188.json",
+      "sourcePacket": "docs/calibration/v4.2.20/source-span-rendering/packets/debate-188.json",
+      "originalEvents": ".assessment-cache/captions/X4YVgM2HPMk/events.json",
+      "disputedMoves": 12,
+      "candidateSelections": 47,
+      "audioVerifiedMoves": 0,
+      "packetBytes": 95180
+    },
+    {
+      "debateNumber": "195",
+      "debateId": "russell-copleston-existence-of-god-1948",
+      "packet": "docs/calibration/v4.2.21.4/adjudication/packets/debate-195.json",
+      "provenance": "docs/calibration/v4.2.21.4/adjudication/provenance/debate-195.json",
+      "output": "docs/calibration/v4.2.21.4/adjudication/outputs/debate-195.json",
+      "disputeSource": "docs/calibration/v4.2.21.2/disagreement-audio-prep/disagreements/debate-195.json",
+      "lockedPacket": "docs/calibration/v4.2.21/pass-b-consensus/packets/debate-195.json",
+      "sourcePacket": "docs/calibration/v4.2.20/source-span-rendering/packets/debate-195.json",
+      "originalEvents": ".assessment-cache/captions/wMsbD1L5IlQ/events.json",
+      "disputedMoves": 10,
+      "candidateSelections": 48,
+      "audioVerifiedMoves": 0,
+      "packetBytes": 48808
+    }
+  ],
+  "evidenceBoundary": {
+    "disputedFieldsOnly": true,
+    "candidateOrderingAnonymizedPerPair": true,
+    "provenanceFilesNeverModelInputs": true,
+    "initialPassRationalesUnavailable": true,
+    "nondisputedFieldsUnavailable": true,
+    "fullInitialOutputsUnavailable": true,
+    "calculatedScoresUnavailable": true,
+    "winnersUnavailable": true,
+    "publicationProseUnavailable": true,
+    "verifiedAudioEmbeddedWhereRequired": true
+  },
+  "totals": {
+    "contexts": 3,
+    "disputedMoves": 34,
+    "candidateSelections": 160,
+    "audioVerifiedMoves": 5,
+    "modelContextsExecuted": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsdThisStage": 0
+  },
+  "authorization": {
+    "executionManifest": true,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
