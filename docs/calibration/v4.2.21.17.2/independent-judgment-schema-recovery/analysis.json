@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "4.2.21.17.1-independent-judgment-gate-analysis",
+  "protocolId": "v4.2.21.17.2-independent-judgment-schema-recovery",
+  "status": "six-independent-judgments-passed-disagreement-extraction-authorized",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "execution": {
+    "contextsPlanned": 6,
+    "contextsAttempted": 6,
+    "validContexts": 6,
+    "invalidContexts": 0,
+    "retries": 0,
+    "totalElapsedMs": 2441705,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "contexts": [
+    {
+      "debateNumber": "133",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 482910,
+      "moves": 17,
+      "lockedInventorySha256": "29e2f454866b2724343607559c0d973f4383a31de9e62865b89d4b82ba58a589",
+      "mediumConfidenceMoves": [],
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "scoresDerived": 0
+    },
+    {
+      "debateNumber": "133",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 366038,
+      "moves": 17,
+      "lockedInventorySha256": "29e2f454866b2724343607559c0d973f4383a31de9e62865b89d4b82ba58a589",
+      "mediumConfidenceMoves": [],
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "scoresDerived": 0
+    },
+    {
+      "debateNumber": "178",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 410020,
+      "moves": 17,
+      "lockedInventorySha256": "2a6d3f50648fe84395abcce248b19d0161df7cba04db592b12fbe58dfc3da3de",
+      "mediumConfidenceMoves": [
+        "con-justin-gospel-of-peter",
+        "con-matthew-financial-vocabulary"
+      ],
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "scoresDerived": 0
+    },
+    {
+      "debateNumber": "178",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 261956,
+      "moves": 17,
+      "lockedInventorySha256": "2a6d3f50648fe84395abcce248b19d0161df7cba04db592b12fbe58dfc3da3de",
+      "mediumConfidenceMoves": [],
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "scoresDerived": 0
+    },
+    {
+      "debateNumber": "182",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 392594,
+      "moves": 20,
+      "lockedInventorySha256": "a7128a50c38b0ca2c77ba147868958ebad25a8434a819ac05d34073649421fea",
+      "mediumConfidenceMoves": [],
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "scoresDerived": 0
+    },
+    {
+      "debateNumber": "182",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 528187,
+      "moves": 20,
+      "lockedInventorySha256": "a7128a50c38b0ca2c77ba147868958ebad25a8434a819ac05d34073649421fea",
+      "mediumConfidenceMoves": [],
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "scoresDerived": 0
+    }
+  ],
+  "pairs": [
+    {
+      "debateNumber": "133",
+      "contexts": 2,
+      "bothAccepted": true,
+      "sameLockedInventory": true,
+      "mediumConfidenceMoves": []
+    },
+    {
+      "debateNumber": "178",
+      "contexts": 2,
+      "bothAccepted": true,
+      "sameLockedInventory": true,
+      "mediumConfidenceMoves": [
+        "con-justin-gospel-of-peter",
+        "con-matthew-financial-vocabulary"
+      ]
+    },
+    {
+      "debateNumber": "182",
+      "contexts": 2,
+      "bothAccepted": true,
+      "sameLockedInventory": true,
+      "mediumConfidenceMoves": []
+    }
+  ],
+  "acceptance": {
+    "sixValidContexts": true,
+    "sameLockedInventoryEveryPair": true,
+    "unchangedV4220ValidatorPasses": 6,
+    "semanticRepairs": 0,
+    "scores": 0,
+    "passed": true
+  },
+  "authorization": {
+    "disagreementExtraction": true,
+    "audioVerificationPreparation": false,
+    "adjudicationPreparation": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}

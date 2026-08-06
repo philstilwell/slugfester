@@ -1,0 +1,1633 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "178",
+  "debateId": "ehrman-licona-who-wrote-gospels-2025",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-traditional-authorship",
+      "side": "pro",
+      "description": "Establish traditional responsibility for the canonical Gospels by combining early attribution traditions with internal features linking each work to its named author or apostolic source.",
+      "successCriteria": "The route succeeds if the combined external and internal evidence makes Matthew, Mark, Luke, and John, including authorship under their authority, the most reasonable identities behind the canonical works.",
+      "motionBridge": {
+        "bridgeId": "bridge-pro-motion",
+        "tier": "motion",
+        "description": "Connect the four canonical texts to Matthew, Mark, Luke, and John either as writers or as controlling apostolic authorities behind their production."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-pro-external",
+          "tier": "central",
+          "description": "Show that the early attribution tradition is sufficiently early, geographically broad, and continuous to preserve genuine authorial knowledge."
+        },
+        {
+          "bridgeId": "bridge-pro-internal",
+          "tier": "central",
+          "description": "Show that internal narrative, eyewitness, linguistic, and biographical features fit the traditionally identified authors or their sources."
+        },
+        {
+          "bridgeId": "bridge-pro-production",
+          "tier": "central",
+          "description": "Show that literary dependence, Greek composition, and possible assistance are compatible with responsibility by the traditional figures."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-pro-name-choice",
+          "tier": "subsidiary",
+          "description": "Explain why the comparatively less prominent names Mark and Luke are unlikely selections for a purely prestige-driven fabrication."
+        },
+        {
+          "bridgeId": "bridge-pro-comparative-method",
+          "tier": "subsidiary",
+          "description": "Apply standards for anonymous ancient works and delayed attribution consistently when assessing the Gospel traditions."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-anonymous-later-authorship",
+      "side": "con",
+      "description": "Establish anonymous later authorship by showing that secure traditional attributions arise late, that alternative diffusion explains their unanimity, and that the named figures do not fit the texts' production.",
+      "successCriteria": "The route succeeds if the evidence does not adequately identify the traditional figures as writers or controlling authorities and a later naming process better explains the surviving attributions.",
+      "motionBridge": {
+        "bridgeId": "bridge-con-motion",
+        "tier": "motion",
+        "description": "Show that the canonical texts cannot be historically connected with sufficient specificity to authorship by or under the authority of the four traditional figures."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-con-attribution-gap",
+          "tier": "central",
+          "description": "Establish a material chronological gap between Gospel composition and unambiguous attribution of the surviving canonical texts."
+        },
+        {
+          "bridgeId": "bridge-con-literacy",
+          "tier": "central",
+          "description": "Establish that the traditional apostolic figures lacked the education and literary capacity required to compose the sophisticated Greek narratives."
+        },
+        {
+          "bridgeId": "bridge-con-alternative-origin",
+          "tier": "central",
+          "description": "Explain the stable fourfold naming tradition through a later authority-conferring origin and subsequent dissemination rather than independent authorial memory."
+        },
+        {
+          "bridgeId": "bridge-con-textual-distinction",
+          "tier": "central",
+          "description": "Distinguish an underlying witness or source from the final literary author and require evidence identifying the latter with a traditional figure."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-con-witness-quality",
+          "tier": "subsidiary",
+          "description": "Test whether Papias, Justin, and later witnesses identify the canonical works reliably and independently."
+        },
+        {
+          "bridgeId": "bridge-con-assistance-limit",
+          "tier": "subsidiary",
+          "description": "Determine whether ancient secretarial practices support delegation of long-form Greek narrative composition in another person's name."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-external-attribution",
+      "title": "Timing and continuity of external attribution",
+      "weightPercent": 27,
+      "rationale": "The timing, independence, and geographical spread of the naming tradition determine whether it transmits authorial knowledge or reflects a convention established after the texts circulated."
+    },
+    {
+      "sectionId": "section-naming-explanation",
+      "title": "Explanation for the traditional names",
+      "weightPercent": 16,
+      "rationale": "Competing explanations for why these four names became stable bear directly on whether unanimity reflects inherited knowledge or an authority-conferring attribution process."
+    },
+    {
+      "sectionId": "section-literacy-production",
+      "title": "Literacy, Greek composition, and delegated production",
+      "weightPercent": 22,
+      "rationale": "The motion requires determining whether the traditional figures could be responsible for the canonical Greek narratives, including whether assistance can bridge the asserted educational and literary mismatch."
+    },
+    {
+      "sectionId": "section-mark-luke",
+      "title": "Internal identification of Mark and Luke",
+      "weightPercent": 15,
+      "rationale": "The proposed links between Mark and Peter and between Luke-Acts and a companion of Paul are central text-specific steps in extending traditional responsibility beyond the apostolic names."
+    },
+    {
+      "sectionId": "section-matthew-john",
+      "title": "Internal identification of Matthew and John",
+      "weightPercent": 20,
+      "rationale": "Matthew and John supply the principal apostolic identifications at issue, requiring assessment of whether internal features identify those disciples or only sources and conventionally named literary authors."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-external-early-testimony",
+      "sectionId": "section-external-attribution",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "constructive",
+      "proposition": "Early and geographically diverse Christian testimony consistently attributes the canonical Gospels to Matthew, Mark, Luke, and John, with some testimony linked to companions of apostles.",
+      "sourceSpan": {
+        "startEvent": 83,
+        "endEvent": 138
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Licona the floor at event 49, and this uninterrupted opening presentation continues through event 211.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-external"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move establishes the principal external-evidence route through claimed early, continuous, and geographically dispersed testimony.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It directly advances its adopted central bridge, though the independence and exact dating of the witnesses remain compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The testimony claim and its geographic and chronological scope are recoverable, but independence among the sources remains an implicit qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Calling the external case strong rests heavily on agreement and spread without fully qualifying dependence or identification disputes."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Agreement, relative earliness, and geographic spread form a coherent route to preserved attribution, with independence left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "Six sources and locations supply relevant support, but their exact testimony, independence, and canonical identification are underdefended."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "The move directly supplies the central external-attribution bridge and expressly treats it as a major part of the case."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The constructive presentation does not materially represent or attack a developed live alternative within this selected span."
+        }
+      },
+      "evidenceBasis": "The span invokes six sources, a 15-to-100-year interval, unanimous attribution, and distribution across five regions.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-mark-petrine-features",
+      "sectionId": "section-mark-luke",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "constructive",
+      "proposition": "Mark's prominence of Peter, portrayal of Peter's personality, and preservation of Aramaic sayings fit the claim that Mark recorded material derived from Peter.",
+      "sourceSpan": {
+        "startEvent": 144,
+        "endEvent": 157
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This passage remains within Licona's uninterrupted opening statement after he expressly turns from external to internal evidence.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-internal"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move advances the internal-identification route by treating Peter's narrative prominence and associated features as signs of Petrine sourcing.",
+        "responsivenessWithinClass": {
+          "value": 79,
+          "rationale": "It supplies a clear text-specific inference, but the excerpt develops prominence more fully than personality or Aramaic preservation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The claimed fit between Petrine features and a Petrine source is clear, while the nonexclusive character of that fit remains implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Peter's prominence is compatible with Petrine sourcing but does not by itself make Peter's voice the probable explanation."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "The inference from unusual Petrine prominence to a Petrine source is intelligible but requires a substantial exclusivity bridge."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "The numerical prominence evidence is concrete, but rival literary explanations and the other asserted features are not adequately compared."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "The move materially advances the central internal-features bridge through a specific proposed link between Mark and Peter."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No sufficiently developed competing interpretation is represented in this constructive span, so charity is not meaningfully tested."
+        }
+      },
+      "evidenceBasis": "The span reports Peter in nineteen of twenty-one named-disciple interactions and often as the sole disciple present.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-luke-we-narratives",
+      "sectionId": "section-mark-luke",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "constructive",
+      "proposition": "The first-person plural travel narratives in Acts indicate participation by a companion of Paul, and external testimony makes Luke the most reasonable identification of that companion-author.",
+      "sourceSpan": {
+        "startEvent": 158,
+        "endEvent": 175
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage is part of Licona's continuous opening and begins with his explicit transition from the internal evidence for Mark to Luke.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-internal"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move links the Acts first-person plural passages to a Pauline companion and then identifies Luke through external attribution.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It states both the companion inference and the identification step, although alternative explanations of the we-passages are not tested."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The inferential sequence and comparative conclusion are clear, and the claim is expressly framed as the most reasonable conclusion."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The companion inference plus external testimony supports plausibility, but the elimination of numerous possible coworkers is compressed."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The route from participant voice to Pauline coworker to Luke is coherent, though the final identification needs a stronger exclusion step."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The we-passages, coworker lists, and attribution tradition are relevant, but alternative literary devices and candidates remain insufficiently tested."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "The move directly advances the central internal-identification bridge for Luke-Acts with an explicit authorial inference."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The span advances its positive identification without materially reconstructing a competing account of the first-person narratives."
+        }
+      },
+      "evidenceBasis": "The span cites first-person travel narration, Pauline coworker lists, three references to Luke, and unanimous external attribution.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-john-beloved-disciple",
+      "sectionId": "section-matthew-john",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "constructive",
+      "proposition": "The Fourth Gospel presents an eyewitness source identified as the beloved disciple, whose access and place among the named disciples make John son of Zebedee the best candidate.",
+      "sourceSpan": {
+        "startEvent": 176,
+        "endEvent": 186
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Licona explicitly transitions to John within the same uninterrupted opening statement, with no speaker change before the passage concludes.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-internal"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move narrows the beloved disciple from the seven disciples present to John by access, exclusion of Peter, and James's early death.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It supplies a comparatively developed elimination argument for a central Gospel-specific identification, despite unresolved candidate assumptions."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The candidate set, exclusions, access criterion, and best-candidate conclusion are all stated with stable scope and terminology."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The narrowing argument makes John plausible, but assumes the beloved disciple belongs to the inner circle and directly anchors authorship."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The elimination sequence is intelligible and mutually consistent, but the inner-circle premise and witness-to-author bridge remain implicit."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "Named disciples, Peter's distinction, James's death, and claimed access support the route, though the candidate restriction is underdefended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly advances the central internal-evidence bridge for one of the principal apostolic identifications at issue."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move compares candidates but does not represent a developed opposing interpretation of the beloved disciple or final writer."
+        }
+      },
+      "evidenceBasis": "The span lists the seven present disciples, distinguishes Peter, invokes James's early martyrdom, and selects John by access.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-matthew-internal-features",
+      "sectionId": "section-matthew-john",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "constructive",
+      "proposition": "Matthew's fiscal and Jewish features, together with early tradition, support Matthew's substantial involvement in a Greek Gospel produced from earlier Semitic material and Mark.",
+      "sourceSpan": {
+        "startEvent": 187,
+        "endEvent": 207
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is Licona's final Gospel-specific argument in his opening, introduced by an explicit transition to Matthew and followed by his overall conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-internal"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move combines fiscal and Jewish features with a proposed Semitic precursor, Markan use, assistance, and substantial Matthean contribution.",
+        "responsivenessWithinClass": {
+          "value": 75,
+          "rationale": "It provides a unified authorship scenario, but several indispensable historical and production links are asserted more than demonstrated."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The substantial-involvement thesis is recoverable, but the relationship among Semitic material, supervision, assistance, and authorship is partly unstable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The proposed production history is possible, but the supplied fiscal features and Josephus analogy do not establish its probability."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 71,
+          "rationale": "The scenario is internally possible, but the movement from thematic features and lost Semitic material to Matthew's involvement has major bridges."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The 44 percent contribution claim and Josephus analogy provide some support, while the lost precursor and supervision remain speculative."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move expressly advances the central internal-identification bridge for Matthew, though it also touches the production bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The span presents a positive production reconstruction without sufficiently developing a live alternative account for charity testing."
+        }
+      },
+      "evidenceBasis": "The span invokes Markan use, roughly forty-four percent additional material, a lost Semitic collection, and a Josephus analogy.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-late-unambiguous-attribution",
+      "sectionId": "section-external-attribution",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "The canonical Gospels circulated without self-identification, and the first unambiguous attribution of the surviving four texts to their traditional authors appears roughly a century later.",
+      "sourceSpan": {
+        "startEvent": 221,
+        "endEvent": 290
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator transition and Ehrman's opening remarks identify him as the speaker, and the passage is an uninterrupted portion of his opening statement.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-attribution-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-external-early-testimony"
+        ],
+        "components": [
+          {
+            "componentId": "con-late-unambiguous-attribution-component-01",
+            "targetMoveId": "pro-external-early-testimony",
+            "text": "The cited testimony must be early enough and specific enough to identify the surviving canonical four rather than later naming tradition.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-late-unambiguous-attribution-component-02",
+            "targetMoveId": "pro-external-early-testimony",
+            "text": "Geographic agreement must provide independent corroboration rather than merely repeated later attribution.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contests the opening's chronology and specificity by locating unambiguous fourfold attribution near 185 and contrasting that date with conventional Gospel dates.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It contacts the decisive timing and identification premise, though the selected excerpt only partly develops the independence issue."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim concerns unambiguous attribution of these four surviving texts, and its approximate dates and historical scope are clearly bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The dating is presented as conventional and arguable, while the narrower claim about the attribution gap fits the supplied chronology."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Earlier sources and geographically dispersed testimony preserve genuine traditional authorship before Irenaeus.",
+        "decisiveQualification": "Those sources must unambiguously identify the surviving canonical texts and provide more than dependent repetition."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "If composition substantially predates the first unambiguous fourfold attribution, agreement at the later date cannot alone establish original naming."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "The move supplies conventional composition dates and an approximate 185 attribution date, though fuller source-by-source verification remains needed."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "It directly supports the central con attribution-gap bridge through an explicit chronology of composition and secure naming."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply engages the early-testimony case in its stronger chronological form, while giving limited treatment to every claimed early witness."
+        }
+      },
+      "evidenceBasis": "The span contrasts conventional dates around 70 to 95 with earliest unambiguous fourfold attribution around the year 185.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-galilean-literacy-mismatch",
+      "sectionId": "section-literacy-production",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Galilean disciples lacking elite Greek literary education could not plausibly have composed the sophisticated Greek narratives preserved as the canonical Gospels.",
+      "sourceSpan": {
+        "startEvent": 292,
+        "endEvent": 380
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains in Ehrman's uninterrupted opening statement and is introduced as his most important consideration about the authors' identities.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-literacy"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-john-beloved-disciple",
+          "pro-matthew-internal-features"
+        ],
+        "components": [
+          {
+            "componentId": "con-galilean-literacy-mismatch-component-01",
+            "targetMoveId": "pro-john-beloved-disciple",
+            "text": "The inference from an eyewitness beloved disciple to John as the final literary author or controlling authority must be established.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-galilean-literacy-mismatch-component-02",
+            "targetMoveId": "pro-matthew-internal-features",
+            "text": "The proposed assistance and Semitic-material scenario must bridge the education required for sophisticated Greek composition.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move supplies powerful contrary production evidence but does not directly engage the internal identity inferences or the expressly proposed assistance mechanism.",
+        "responsivenessWithinClass": {
+          "value": 85,
+          "rationale": "The contrary literacy evidence is highly issue-bearing, yet it remains a relevant nonanswer to the selected moves' decisive components."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The literacy mismatch is clear, but the claim expands from Peter and John to all followers in Israel without adequately bounded scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Evidence of ordinary background and unlettered status supports improbability, but not the categorical claim that composition was impossible."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Traditional responsibility may involve later education, sources, collaborators, or secretarial and compositional assistance.",
+        "decisiveQualification": "The move requires evidence that such assistance could produce these long sophisticated Greek narratives under the disciples' authority."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The education-to-composition inference is intelligible, but it shifts too quickly from low base-rate capacity to categorical impossibility."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "Galilean social location and Acts 4:13 are concrete evidence, while the universal conclusion and translation of the term need qualification."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "The move directly supports the central con literacy bridge by attacking the traditional figures' capacity for Greek narrative composition."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The categorical presentation underplays plausible assistance qualifications, although those alternatives still require substantial historical support."
+        }
+      },
+      "evidenceBasis": "The span invokes elite urban literary training, Galilean background, and Acts 4:13's description of Peter and John as unlettered.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-authority-conferring-names",
+      "sectionId": "section-naming-explanation",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "The traditional names were plausibly assigned late to give four previously anonymous church Gospels apostolic authority against rival writings bearing authoritative names.",
+      "sourceSpan": {
+        "startEvent": 381,
+        "endEvent": 394
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is the concluding argument of Ehrman's opening statement, ending immediately before the moderator announces the first rebuttal period.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-alternative-origin"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-external-early-testimony"
+        ],
+        "components": [
+          {
+            "componentId": "con-authority-conferring-names-component-01",
+            "targetMoveId": "pro-external-early-testimony",
+            "text": "The consistent later names require an explanation that distinguishes preserved authorial knowledge from a common attribution process.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-authority-conferring-names-component-02",
+            "targetMoveId": "pro-external-early-testimony",
+            "text": "The relative prominence of the four selected names must fit the proposed authority-conferring motive.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply offers a direct rival explanation for unanimity: anonymous church texts received strategically authoritative names in response to rival writings.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "It contacts the explanatory significance of unanimity and offers a motive, but the origin, date, and diffusion mechanism remain compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The rival naming mechanism, institutional setting, purpose, and four selected names are all clearly stated as a plausible explanation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "As a plausibility claim, the authority-conferring explanation fits the motive supplied, although direct evidence of the naming event is absent."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Stable and widespread attribution reflects inherited knowledge of the actual authors rather than strategic naming.",
+        "decisiveQualification": "Later unanimity is not independently probative if a single authority-conferring convention could have spread across churches."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Anonymous valued texts facing named rivals could coherently acquire authoritative names, though motive does not establish that this occurred."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "The ecclesial motive and name pattern are relevant, but the actual naming event and dissemination are reconstructed without direct evidence here."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly advances the central con alternative-origin bridge by supplying a concrete reason and mechanism for later naming."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The reply addresses the strongest general inference from unanimity, though it does not fully engage the claimed early individual witnesses."
+        }
+      },
+      "evidenceBasis": "The span describes unnamed church Gospels, rival writings bearing apostolic names, and assignment of Matthew, Mark, Luke, and John.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-anonymity-lateness-rebuttal",
+      "sectionId": "section-external-attribution",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "reply",
+      "proposition": "Anonymous composition and delayed explicit attribution do not defeat traditional authorship because comparable ancient works rely on similarly late testimony, while Papias and Justin provide earlier support for Mark.",
+      "sourceSpan": {
+        "startEvent": 396,
+        "endEvent": 443
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly awards Licona the first rebuttal at event 395, and Licona identifies the opposing claims he is reviewing throughout this passage.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-attribution-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-late-unambiguous-attribution",
+          "con-authority-conferring-names"
+        ],
+        "components": [
+          {
+            "componentId": "pro-anonymity-lateness-rebuttal-component-01",
+            "targetMoveId": "con-late-unambiguous-attribution",
+            "text": "A chronological gap between composition and explicit attribution must show that traditional authorship is historically unreliable.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-anonymity-lateness-rebuttal-component-02",
+            "targetMoveId": "con-late-unambiguous-attribution",
+            "text": "Papias and Justin must fail to provide earlier support specific enough to reduce the asserted attribution gap.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-anonymity-lateness-rebuttal-component-03",
+            "targetMoveId": "con-authority-conferring-names",
+            "text": "The later authority-conferring naming explanation must outperform continuity from earlier testimony.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly argues that anonymity and delay are not defeating by comparison with ancient works and by invoking Papias and Justin, but it does not answer the rival naming mechanism.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "It contacts the decisive inference from lateness and offers earlier witnesses, while leaving the alternative-origin component unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The limited conclusion that anonymity and delayed attribution do not themselves defeat authorship is clearly scoped and recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Comparability and earlier support weaken a simple lateness objection, but do not by themselves make the traditional attribution probable."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The first unambiguous identification of the surviving canonical four occurs about a century after composition.",
+        "decisiveQualification": "A delay is less damaging if comparable attribution practice and earlier source-specific testimony independently preserve the names."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The comparative-method and earlier-witness routes coherently rebut a simple inference from delay, though their premises require fuller defense."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Papias, Justin, and ancient comparanda are relevant, but their canonical specificity, independence, and true comparability remain disputed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly attacks the central con attribution-gap bridge by denying that anonymity and delayed explicit naming are defeating."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply fairly addresses the chronological-gap argument at its strongest, while its treatment of canonical specificity remains compressed."
+        }
+      },
+      "evidenceBasis": "The selected span reviews the external case and invokes ancient comparanda together with earlier support attributed to Papias and Justin.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-justin-gospel-of-peter",
+      "sectionId": "section-mark-luke",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Justin's language and textual agreements are better explained by his use of the Gospel of Peter than by an attribution of canonical Mark to Peter.",
+      "sourceSpan": {
+        "startEvent": 603,
+        "endEvent": 614
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The cross-examination sequence explicitly identifies Licona as questioner and Ehrman as the respondent giving this sustained answer.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-con-witness-quality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-anonymity-lateness-rebuttal",
+          "pro-mark-petrine-features"
+        ],
+        "components": [
+          {
+            "componentId": "con-justin-gospel-of-peter-component-01",
+            "targetMoveId": "pro-anonymity-lateness-rebuttal",
+            "text": "Justin's reference to Peter's memoirs must specifically support canonical Mark rather than another Petrine Gospel tradition.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-justin-gospel-of-peter-component-02",
+            "targetMoveId": "pro-mark-petrine-features",
+            "text": "Justin's terminology and textual agreements must independently corroborate Mark's derivation from Peter.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly disputes Justin's identification with canonical Mark by appealing to the title memoir of Peter and claimed verbatim agreements with the Gospel of Peter.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It contacts the decisive canonical-identification issue with a specific rival text, though the excerpt truncates the full comparison."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The proposed rival identification and its textual basis are clear, but the extent and uniqueness of the agreements remain implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The terminology and agreements may favor the Gospel of Peter, but the available span does not fully establish comparative superiority."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Justin's memoir of Peter refers to canonical Mark because Mark preserves Peter's testimony.",
+        "decisiveQualification": "That identification weakens if Justin's distinctive wording agrees only with the Gospel of Peter and he never names Mark."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "If Justin's terminology and unique verbal agreements point to the Gospel of Peter, his testimony does not independently identify canonical Mark."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The named textual-comparison rationale is specific and probative, although the actual agreements are not fully displayed in the excerpt."
+        },
+        "relevanceBurden": {
+          "value": 72,
+          "rationale": "The move directly supports the subsidiary witness-quality bridge by testing whether Justin reliably identifies the canonical work."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The reply accurately isolates the canonical-identification issue and supplies a concrete evidential qualification rather than dismissing the tradition."
+        }
+      },
+      "evidenceBasis": "The exchange focuses on Justin's phrase memoir of Peter and alleged verbatim agreements specifically with the Gospel of Peter.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "pro-unlikely-fabricated-names",
+      "sectionId": "section-naming-explanation",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "reply",
+      "proposition": "Christians inventing prestigious Gospel attributions would not plausibly have selected the comparatively less marketable Mark and Luke instead of direct disciples.",
+      "sourceSpan": {
+        "startEvent": 639,
+        "endEvent": 648
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator-designated questioning sequence and the explicit turn-taking make Licona's identity as the speaker unambiguous.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-name-choice"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-authority-conferring-names"
+        ],
+        "components": [
+          {
+            "componentId": "pro-unlikely-fabricated-names-component-01",
+            "targetMoveId": "con-authority-conferring-names",
+            "text": "A prestige-driven naming hypothesis must explain selection of Mark and Luke rather than more prominent direct disciples.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-unlikely-fabricated-names-component-02",
+            "targetMoveId": "con-authority-conferring-names",
+            "text": "The selected names must be compared with the more marketable names used in later apocryphal Gospels.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges the rival naming motive by arguing that fabricators seeking authority would choose prominent eyewitness names rather than Mark and Luke.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It contacts the decisive name-choice implication and supplies concrete comparators, though companion-based prestige remains a live answer."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional fabrication motive, comparative prominence claim, and inference from Mark and Luke are all clearly and narrowly stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Less direct prestige counts against simple fabrication, but Mark's and Luke's apostolic associations make their selection less surprising."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Mark and Luke confer authority indirectly as known companions and interpreters of Peter and Paul.",
+        "decisiveQualification": "That companion rationale makes the names useful, though still less straightforwardly prestigious than naming direct disciples."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "A prestige-only fabrication predicts more prominent names, so selection of lesser figures is coherent counterevidence, not decisive disproof."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The contrast with Peter, James, Thomas, Mary, and apocryphal naming is relevant, but comparative naming base rates are not supplied."
+        },
+        "relevanceBurden": {
+          "value": 73,
+          "rationale": "The move directly supports the subsidiary pro name-choice bridge through a focused comparative explanation of Mark and Luke."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The reply fairly targets a simple marketability motive but underrepresents the strongest companion-of-apostles version of the alternative."
+        }
+      },
+      "evidenceBasis": "The span contrasts Mark and Luke with Peter, James, Thomas, and Mary and notes prominent names in later apocryphal Gospels.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-mark-luke-apostolic-links",
+      "sectionId": "section-naming-explanation",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Mark and Luke were useful attribution choices because they were understood as companions of Peter and Paul, completing a representation of principal apostolic witness.",
+      "sourceSpan": {
+        "startEvent": 649,
+        "endEvent": 656
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator invites an answer immediately after Licona's question, and the content is Ehrman's direct response within his established turn.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-alternative-origin"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-unlikely-fabricated-names"
+        ],
+        "components": [
+          {
+            "componentId": "con-mark-luke-apostolic-links-component-01",
+            "targetMoveId": "pro-unlikely-fabricated-names",
+            "text": "The naming hypothesis must explain why comparatively minor Mark and Luke could still confer substantial apostolic authority.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-mark-luke-apostolic-links-component-02",
+            "targetMoveId": "pro-unlikely-fabricated-names",
+            "text": "The four-name pattern must provide a coherent representation of principal apostolic witness.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly answers the marketability objection by identifying Mark and Luke as companions of Peter and Paul within a balanced fourfold apostolic pattern.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "It expressly contacts the decisive objection and supplies a historically intelligible reason that the supposedly weak names were useful."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The companion links, the two direct disciples, and the proposed representation of apostolic witness are stated clearly and without unstable scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The explanation does not claim necessity; it gives a well-fitted reason why Mark and Luke were useful attribution choices."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Fabricators seeking authority would select only direct disciples or other more conspicuous eyewitness figures.",
+        "decisiveQualification": "Mark and Luke could convey the authority of Peter and Paul precisely through recognized companion relationships."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The companion-of-Peter and companion-of-Paul links directly explain how minor figures can complete a maximally authoritative pattern."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "Tertullian's stated rationale and the familiar companion links provide concrete support, with the original naming intention still inferential."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move materially advances the central alternative-origin explanation by showing why all four selected names could confer authority."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The reply preserves the marketability concern and answers its strongest premise with the specific apostolic associations of both names."
+        }
+      },
+      "evidenceBasis": "The span cites Tertullian's explanation and pairs Matthew and John with Mark-Peter and Luke-Paul companion traditions.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-matthew-financial-vocabulary",
+      "sectionId": "section-matthew-john",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Matthew's references to taxes and money do not identify its author as a tax collector, because thematic vocabulary is not reliable evidence of an author's occupation.",
+      "sourceSpan": {
+        "startEvent": 739,
+        "endEvent": 750
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Ehrman is the moderator-designated questioner and advances the comparison, while Licona's short answers are clearly distinguishable in the exchange.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-pro-internal"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-matthew-internal-features"
+        ],
+        "components": [
+          {
+            "componentId": "con-matthew-financial-vocabulary-component-01",
+            "targetMoveId": "pro-matthew-internal-features",
+            "text": "Matthew's tax and money vocabulary must discriminate a tax-collector author from other possible authors.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-matthew-financial-vocabulary-component-02",
+            "targetMoveId": "pro-matthew-internal-features",
+            "text": "The fiscal feature must do more than remain merely consistent with traditional Matthean authorship.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly tests whether thematic fiscal vocabulary identifies occupation and exposes the gap between consistency and comparative authorial probability.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It contacts the decisive evidential warrant through focused questioning, although the excerpt preserves the challenge more than its complete conclusion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between occupational identification and mere thematic consistency is precise and limited to the fiscal-vocabulary argument."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The limited negative claim fits the weak diagnostic value of thematic vocabulary and does not purport to disprove authorship alone."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "More references to taxes and money are consistent with and modestly favor authorship by a tax collector.",
+        "decisiveQualification": "Consistency is weak identification evidence unless the vocabulary is shown to discriminate occupational background from literary theme."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The move correctly distinguishes a feature's compatibility with a hypothesis from its ability to identify that hypothesis over rivals."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The thematic-vocabulary critique is methodologically strong, though broader comparative evidence about authorial occupation is not developed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central pro internal-evidence bridge by weakening a stated identifying feature for Matthew."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The reply preserves the modest consistency claim while correctly challenging the stronger inference to occupational and authorial identity."
+        }
+      },
+      "evidenceBasis": "The exchange isolates claims about relative frequency of money and tax references and tests whether they identify a tax collector.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "con-john-witness-writer-distinction",
+      "sectionId": "section-matthew-john",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Later authorship witnesses are not independent once a naming tradition begins, and John's closing distinction between the beloved disciple and a collective authorial voice weighs against direct Johannine authorship.",
+      "sourceSpan": {
+        "startEvent": 815,
+        "endEvent": 847
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Licona's rebuttal ends before this response, and the moderator's transition plus the first-person counterargument clearly identify Ehrman as speaker.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-textual-distinction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-john-beloved-disciple",
+          "pro-external-early-testimony"
+        ],
+        "components": [
+          {
+            "componentId": "con-john-witness-writer-distinction-component-01",
+            "targetMoveId": "pro-john-beloved-disciple",
+            "text": "Identifying the beloved disciple as a witness must also identify that witness as the final writer of the Gospel.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-john-witness-writer-distinction-component-02",
+            "targetMoveId": "pro-external-early-testimony",
+            "text": "Multiple later attributions must be shown independent rather than repetitions after a naming tradition begins.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-john-witness-writer-distinction-component-03",
+            "targetMoveId": "pro-john-beloved-disciple",
+            "text": "The Gospel's closing collective voice must be reconciled with direct authorship by the beloved disciple.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts both principal warrants: it disputes independence among later witnesses and distinguishes the beloved disciple's testimony from the collective writerly voice.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It directly reaches the decisive witness-to-writer inference and the external-independence premise with mutually reinforcing objections."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The external-dependence claim and the internal distinction between source witness and final authorial voice are separately and clearly recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The collective closing voice and possible testimonial source appropriately weigh against direct identity without claiming categorical disproof."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The beloved disciple is John and personally authored or controlled the final Gospel attested under his name.",
+        "decisiveQualification": "A source can supply true testimony without being identical to the collective voice that certifies and writes the final text."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The distinction between testimonial source and final writer directly blocks an otherwise invalid identity inference without denying possible witness input."
+        },
+        "evidenceWarrant": {
+          "value": 85,
+          "rationale": "The closing textual distinction and diffusion point provide strong specific support, though the entire passage is not reproduced in the excerpt."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "The move directly supports the central con textual-distinction bridge at the decisive source-versus-final-author inference."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The reply accepts the possibility of underlying eyewitness testimony while accurately isolating the unproven step to final literary authorship."
+        }
+      },
+      "evidenceBasis": "The span argues that later witnesses repeat an established tradition and invokes John's closing distinction between the disciple and a collective voice.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-common-origin-diffusion",
+      "sectionId": "section-external-attribution",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Universal use of the four names after the late second century can derive from a common Roman naming origin and therefore does not establish that the names accompanied the Gospels from composition.",
+      "sourceSpan": {
+        "startEvent": 896,
+        "endEvent": 918
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This passage begins Ehrman's closing statement after Licona finishes, and its sustained first-person response is clearly attributed to him.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-alternative-origin"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-external-early-testimony",
+          "pro-anonymity-lateness-rebuttal"
+        ],
+        "components": [
+          {
+            "componentId": "con-common-origin-diffusion-component-01",
+            "targetMoveId": "pro-external-early-testimony",
+            "text": "Geographically widespread later agreement must demonstrate independent memory rather than diffusion from one common naming origin.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-common-origin-diffusion-component-02",
+            "targetMoveId": "pro-anonymity-lateness-rebuttal",
+            "text": "Justin's failure to name Matthew, Mark, Luke, or John must be reconciled with a claimed continuous early attribution tradition.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly attacks the inference from later universality to original attribution and uses Justin's silence to challenge continuity before diffusion.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "It explicitly contacts the decisive independence and chronology premises, though the asserted Roman origin itself receives limited direct evidence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly distinguishes evidence of universal later usage from evidence about what the texts were called in their first century."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Common-origin diffusion is presented as an explanatory possibility that defeats a simple inference from unanimity, not as certain history."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Geographically universal use of the four names reflects continuous inherited knowledge from the texts' composition.",
+        "decisiveQualification": "Later geographic spread lacks independence if the convention arose once, while Justin's silence weighs against earlier universality."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "A common source can generate widespread agreement, so geographic universality alone does not entail multiple independent authorial memories."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "Justin's nonuse of the names and the post-origin diffusion mechanism are probative, though a specifically Roman origin needs fuller documentation."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "The move directly advances the central con alternative-origin bridge by explaining stable later unanimity through common diffusion."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The reply accurately targets the strongest inference from geographic agreement and supplies both a diffusion qualification and early counterexample."
+        }
+      },
+      "evidenceBasis": "The span contrasts first-century nonnaming by Justin with universal testimony after someone began attaching the four traditional names.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-amanuensis-insufficiency",
+      "sectionId": "section-literacy-production",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Ancient secretarial examples do not establish that an amanuensis composed a long, sophisticated narrative in another person's name, so they do not solve the disciples' literacy problem.",
+      "sourceSpan": {
+        "startEvent": 1100,
+        "endEvent": 1116
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The audience question explicitly addresses Ehrman, and the answer's first-person reference to checking Licona's cited authors identifies Ehrman as the respondent.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-con-assistance-limit"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-matthew-internal-features"
+        ],
+        "components": [
+          {
+            "componentId": "con-amanuensis-insufficiency-component-01",
+            "targetMoveId": "pro-matthew-internal-features",
+            "text": "Ancient assistance evidence must support delegation of sophisticated long-form Greek Gospel composition, not merely routine letter writing.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-amanuensis-insufficiency-component-02",
+            "targetMoveId": "pro-matthew-internal-features",
+            "text": "The proposed assistant must preserve a defensible sense in which Matthew remained author or controlling authority.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges the genre and scale analogy behind assistance, but does not fully address what level of delegated composition would preserve authorship under authority.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It contacts the principal evidentiary component with a sharp category distinction while leaving the authorship-control criterion underdeveloped."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The contrast between short formulaic letters and a twenty-eight-chapter sophisticated narrative is precise, stable, and appropriately limited."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The evidence appropriately establishes insufficiency of the cited analogy rather than asserting that all forms of assistance were impossible."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An amanuensis or collaborator could compose polished Greek while preserving responsibility by the traditional figure.",
+        "decisiveQualification": "Evidence for taking dictated content in short formulaic letters does not establish delegated authorship of an extended narrative."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 93,
+          "rationale": "The distinction between routine epistolary content assistance and long-form narrative composition directly defeats an overbroad analogy."
+        },
+        "evidenceWarrant": {
+          "value": 87,
+          "rationale": "The genre, length, and compositional-role distinctions are specific and well warranted, though the cited ancient examples are only summarized."
+        },
+        "relevanceBurden": {
+          "value": 74,
+          "rationale": "The move directly supports the subsidiary con assistance-limit bridge by testing precisely what ancient secretarial evidence establishes."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The reply states the assistance proposal in a strong form and identifies the exact genre-and-scale qualification limiting its evidence."
+        }
+      },
+      "evidenceBasis": "The span contrasts short formulaic Roman letters and supplied content with the composition of a sophisticated twenty-eight-chapter narrative.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-synoptic-assisted-composition",
+      "sectionId": "section-literacy-production",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "reply",
+      "proposition": "Verbatim Synoptic agreement fits traditional authorship because Matthew and Luke could use Mark and other reliable written sources while Matthew composed in Greek with assistance and added substantial material.",
+      "sourceSpan": {
+        "startEvent": 1198,
+        "endEvent": 1219
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The audience member names Licona and summarizes his earlier position; the answer states Licona's views on Markan priority, Q, Matthew's Aramaic work, and assisted Greek composition.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-production"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-amanuensis-insufficiency",
+          "con-galilean-literacy-mismatch",
+          "con-john-witness-writer-distinction"
+        ],
+        "components": [
+          {
+            "componentId": "pro-synoptic-assisted-composition-component-01",
+            "targetMoveId": "con-amanuensis-insufficiency",
+            "text": "Traditional responsibility must explain sophisticated Greek composition without relying only on short-letter secretarial analogies.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-synoptic-assisted-composition-component-02",
+            "targetMoveId": "con-galilean-literacy-mismatch",
+            "text": "The production account must bridge the asserted educational mismatch for Matthew's Greek composition.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-synoptic-assisted-composition-component-03",
+            "targetMoveId": "con-john-witness-writer-distinction",
+            "text": "Use of an underlying source must still identify the final author or controlling authority with a traditional figure.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies a broader source-based composition model involving Mark, Q or Matthew, an Aramaic work, assistance, and added material, but does not establish controlling authorship.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "It contacts the production and literacy issues with a coherent possibility, while leaving the decisive historical evidence for authority and assistance incomplete."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The source-dependence thesis is clear, but the roles of penning, composing, assistance, translation, and final authorship are not fully distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker expressly qualifies Q and offers the scenario as compatible with the evidence, which matches the possibility-level warrant supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Secretarial evidence for short letters cannot explain a disciple's authorship of a long sophisticated Greek narrative.",
+        "decisiveQualification": "Literary use of Mark and other written sources can explain verbal agreement, but assistance still needs evidence linking Matthew to final composition."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Source use and assistance are compatible with verbal agreement, but compatibility does not establish Matthew's actual controlling role in production."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "Markan priority, possible Q, and substantial added material support a production model, while the Aramaic precursor and assistance lack direct support."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central pro production bridge by explaining how literary dependence and Greek assistance could coexist with responsibility."
+        },
+        "representationalCharity": {
+          "value": 83,
+          "rationale": "The reply fairly recognizes the production objection and offers a more substantial source-based model, while not fully meeting its historical demand."
+        }
+      },
+      "evidenceBasis": "The span accepts Markan priority, cautiously favors Q, posits Matthean Aramaic composition, and invokes assisted Greek production.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide consequence survives the strict exclusion rule beyond matters already captured in move ratings and burden contacts.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion remains outside the locked move-level assessment.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No uncaptured debate-wide consequence was identified for the pro side.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response components",
+          "burden contacts",
+          "importance values",
+          "section weights"
+        ],
+        "counterfactual": "Removing any proposed residual would not change burden completion independently of already scored move-level findings."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide consequence survives the strict exclusion rule beyond matters already captured in move ratings and burden contacts.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion remains outside the locked move-level assessment.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No uncaptured debate-wide consequence was identified for the con side.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response components",
+          "burden contacts",
+          "importance values",
+          "section weights"
+        ],
+        "counterfactual": "Removing any proposed residual would not change burden completion independently of already scored move-level findings."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
