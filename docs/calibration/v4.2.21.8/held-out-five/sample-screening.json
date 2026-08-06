@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "4.2.21.8-route-stratified-held-out-five-screening",
+  "protocolId": "v4.2.21-source-span-consensus",
+  "status": "held-out-five-screened-lane-preparation-authorized",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "sourceBoundary": {
+    "motionAndRouteMetadataOnly": true,
+    "transcriptContentSemanticallyInspected": false,
+    "audioAccessed": false,
+    "legacyAssessmentContentAccessed": false,
+    "legacyScoresAccessed": false,
+    "priorJudgmentsAccessed": false,
+    "candidateRanksReoptimized": false
+  },
+  "decisions": [
+    {
+      "debateNumber": "19",
+      "debateId": "harris-oconnor-objective-morality-2024",
+      "assignedFamily": "morality-ethics",
+      "classifierReplays": true,
+      "route": "direct",
+      "routeReplays": true,
+      "dyadic": true,
+      "transcriptChainPresent": true,
+      "durationBin": "under-60-minutes",
+      "captionKind": "auto",
+      "partitionSeverity": null
+    },
+    {
+      "debateNumber": "133",
+      "debateId": "hawkins-folley-free-will-idealism-2026",
+      "assignedFamily": "mind-agency",
+      "classifierReplays": true,
+      "route": "partition",
+      "routeReplays": true,
+      "dyadic": true,
+      "transcriptChainPresent": true,
+      "durationBin": "90-minutes-or-more",
+      "captionKind": "auto",
+      "partitionSeverity": "moderate-partition"
+    },
+    {
+      "debateNumber": "178",
+      "debateId": "ehrman-licona-who-wrote-gospels-2025",
+      "assignedFamily": "resurrection-history",
+      "classifierReplays": true,
+      "route": "partition",
+      "routeReplays": true,
+      "dyadic": true,
+      "transcriptChainPresent": true,
+      "durationBin": "90-minutes-or-more",
+      "captionKind": "human",
+      "partitionSeverity": "near-direct-ceiling"
+    },
+    {
+      "debateNumber": "182",
+      "debateId": "white-ally-sin-salvation-quran-bible-2013",
+      "assignedFamily": "evil-hiddenness",
+      "classifierReplays": true,
+      "route": "partition",
+      "routeReplays": true,
+      "dyadic": true,
+      "transcriptChainPresent": true,
+      "durationBin": "90-minutes-or-more",
+      "captionKind": "auto",
+      "partitionSeverity": "heavy-partition"
+    },
+    {
+      "debateNumber": "183",
+      "debateId": "enoch-clarke-doane-moral-realism-objectivity-2026",
+      "assignedFamily": "general-theism-religion",
+      "classifierReplays": true,
+      "route": "direct",
+      "routeReplays": true,
+      "dyadic": true,
+      "transcriptChainPresent": true,
+      "durationBin": "60-to-89-minutes",
+      "captionKind": "auto",
+      "partitionSeverity": null
+    }
+  ],
+  "audit": {
+    "debates": 5,
+    "direct": 2,
+    "partition": 3,
+    "distinctFamilies": 5,
+    "distinctDurationBins": 3,
+    "distinctCaptionKinds": 2,
+    "classifierReplayPassed": 5,
+    "routeReplayPassed": 5,
+    "dyadic": 5,
+    "transcriptChainsPresent": 5
+  },
+  "authorization": {
+    "directLanePacketPreparation": true,
+    "partitionLaneDesign": true,
+    "partitionLanePacketPreparation": false,
+    "primaryModelExecution": false,
+    "passBModelExecution": false,
+    "audioExecution": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}

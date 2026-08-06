@@ -1,0 +1,443 @@
+{
+  "schemaVersion": "4.2.21.8-route-stratified-held-out-five-sample",
+  "protocolId": "v4.2.21-source-span-consensus",
+  "status": "frozen-pending-route-metadata-screening",
+  "frozenAt": "2026-08-06T03:39:10Z",
+  "checkpointCommit": "e606ceccfcb7be36c3cf9c17b68fd0a9d5b126cd",
+  "selectionBoundary": {
+    "dyadicOnly": true,
+    "exactRouteMix": {
+      "direct": 2,
+      "partition": 3
+    },
+    "topicFamilies": [
+      "resurrection-history",
+      "evil-hiddenness",
+      "morality-ethics",
+      "mind-agency",
+      "science-origins",
+      "general-theism-religion"
+    ],
+    "distinctFamilyMinimum": 4,
+    "durationBins": [
+      "under-60-minutes",
+      "60-to-89-minutes",
+      "90-minutes-or-more"
+    ],
+    "captionKinds": [
+      "auto",
+      "human"
+    ],
+    "partitionSeverityBins": [
+      "near-direct-ceiling",
+      "moderate-partition",
+      "heavy-partition"
+    ],
+    "optimizationPrecedence": [
+      "distinct-topic-families-descending",
+      "distinct-duration-bins-descending",
+      "distinct-caption-kinds-descending",
+      "distinct-speakers-descending",
+      "distinct-partition-severity-bins-descending",
+      "aggregate-salted-rank-ascending",
+      "debate-id-tie-break"
+    ],
+    "fixedSalt": "slugfester-v4.2.21.8-route-stratified-held-out-five",
+    "rankingInput": "route, corrected motion family, and debate ID only",
+    "sourceFilesMechanicallyHashedAndMeasured": true,
+    "transcriptContentSemanticallyInspected": false,
+    "audioAccessed": false,
+    "legacyAssessmentContentAccessed": false,
+    "candidateRanksInspectedBeforeAlgorithmFreeze": false
+  },
+  "exclusions": {
+    "poolRetiredDebates": 25,
+    "developmentDebates": [
+      "craig-malpass-kalam-nothing-2026",
+      "woodford-edwards-rational-belief-god-2023",
+      "craig-millican-does-god-exist-2011"
+    ],
+    "priorFreshAndRejectedSampleDebates": 48,
+    "excludedDebateIds": [
+      "albrecht-oppy-resurrection-ancient-christianity-2023",
+      "ally-licona-did-jesus-rise-dead-2004",
+      "atkins-fox-god-science-future-humanity-2024",
+      "bertuzzi-oconnor-contingency-argument-2018",
+      "bertuzzi-schieber-evil-evidence-2019",
+      "bollore-halper-god-science-evidence-2026",
+      "boyce-carrier-historical-jesus-mythicism-2022",
+      "carroll-halvorson-metaphysics-worldview-2016",
+      "carroll-shermer-hutchinson-dsouza-science-religion-2012",
+      "craig-clifton-kalam-cosmological-argument-2021",
+      "craig-frazier-goff-folley-god-reality-2026",
+      "craig-kagan-god-morality-2009",
+      "craig-malpass-kalam-nothing-2026",
+      "craig-malpass-universe-begin-exist-2020",
+      "craig-millican-does-god-exist-2011",
+      "craig-oconnor-god-debate-2026",
+      "craig-wielenberg-god-morality-2018",
+      "cutter-oppy-mind-brain-harmony-god-2025",
+      "dennett-caruso-free-will-responsibility-2021",
+      "dennett-clayton-naturalism-ultimate-reality-2012",
+      "dillahunty-howitt-christianity-true-2023",
+      "dillahunty-slick-secular-humanism-christianity-2016",
+      "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "dirckx-woodford-god-suffering-2024",
+      "donahue-malpass-fine-tuning-god-2026",
+      "dsouza-dillahunty-god-woman-2023",
+      "dsouza-ehrman-god-suffering-evil-2025",
+      "ehrman-bass-resurrection-history-2023",
+      "enoch-sampson-loeb-lutz-moral-realism-2024",
+      "fischer-dillahunty-axiomatic-evidence-god-2020",
+      "goff-carroll-consciousness-fundamental-2023",
+      "harris-prager-religion-morality-public-reason-2014",
+      "hirsi-ali-dawkins-god-debate-2024",
+      "hitchens-blair-religion-force-good-2010",
+      "hitchens-dsouza-religion-problem-2010",
+      "hitchens-kushner-gomes-god-religion-morality-2009",
+      "horn-dillahunty-resurrection-reasonable-2021",
+      "huemer-oppy-souls-personal-identity-2022",
+      "huemer-sapolsky-free-will-determinism-2024",
+      "jones-dillahunty-emergent-mind-god-2020",
+      "jones-dillahunty-quantum-idealism-demonstrability-2026",
+      "jones-fodor-digital-physics-god-2021",
+      "jones-jump-digital-physics-god-2019",
+      "kastrup-blackmore-consciousness-idealism-2023",
+      "knechtle-aron-ra-god-existence-2023",
+      "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "krauss-meyer-lamoureux-god-science-universe-2016",
+      "lennox-atkins-science-explain-everything-2019",
+      "lennox-ruse-science-faith-evidence-god-2018",
+      "licona-carrier-resurrection-history-2010",
+      "licona-dillahunty-resurrection-evidence-2017",
+      "oconnor-baker-hytch-argument-from-reason-2020",
+      "oconnor-biddle-free-will-2025",
+      "oconnor-craig-resurrection-2023",
+      "oconnor-turek-evil-moral-argument-2017",
+      "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+      "oppy-pearce-is-there-a-god-2022",
+      "pageau-folley-logos-meaning-resurrection-2026",
+      "peterson-blackmore-god-meaning-life-2018",
+      "plantinga-dennett-evolution-naturalism-2018",
+      "plantinga-law-eaan-rational-belief-2010",
+      "rasmussen-malpass-suffering-causal-finitism-2021",
+      "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "russell-copleston-existence-of-god-1948",
+      "swinburne-huemer-theism-coherent-2026",
+      "swinburne-millican-does-god-exist-2022",
+      "swinburne-oppy-theism-probability-2022",
+      "tour-cronin-origin-of-life-2020",
+      "tour-garte-evolution-agency-christian-faith-2025",
+      "tour-swamidass-origin-life-chemistry-2020",
+      "turek-hitchens-reality-theism-atheism-2011",
+      "turek-shermer-morality-god-science-2015",
+      "wood-oconnor-jesus-claim-god-2025",
+      "woodford-brierley-christianity-rational-2019",
+      "woodford-edwards-rational-belief-god-2023",
+      "woodford-scrivener-religion-poisons-everything-2026"
+    ]
+  },
+  "routingAudit": {
+    "candidatesAfterExclusions": 110,
+    "measuredAfterSourceValidation": 106,
+    "sourceRejected": [
+      {
+        "debateId": "craig-shook-existence-god-2008",
+        "number": "167",
+        "reason": "events[993]: empty text",
+        "transcriptSha256": "2fc2c64b885556902ad6121f46be088f517ffd5ac0928d951dca0669b5846355",
+        "eventsSha256": "c6fc6347fc71f7c1605b9184b995465703bfdf5797ce11d3f67558abd32fb355",
+        "manifestSha256": "83e855781ce6080f16f8aa2bc8d6cc112ca57c1507457fdc9bfba4edcd8e3ddc"
+      },
+      {
+        "debateId": "knechtle-oconnor-christian-morality-2025",
+        "number": "13",
+        "reason": "v4.2 compact source ledger does not replay to original events",
+        "transcriptSha256": "0f5d4d35c8f8ed3ebabdef20b0361ec49989e2d9b96fb7d7a53596d86d029462",
+        "eventsSha256": "baf0d2e1e1b1b8449bb822dc4d6442f1784b54d31e5fdba5e18b04466eabc7ec",
+        "manifestSha256": "43671ba4aa1a49dbd56d09df43f6fa8592381d7fe3f26a2f94b03efe691fca1c"
+      },
+      {
+        "debateId": "sechler-dillahunty-perfect-mind-universe-2022",
+        "number": "88",
+        "reason": "events[807]: invalid durationMs",
+        "transcriptSha256": "2d9dc130c0bf75a7ea23f692804b45c1c7ec32e388b3fb29694c9aad55dd68d7",
+        "eventsSha256": "ff485c97996037ea9d003d987d9745f6e743af6939100d9152ace86945d0238b",
+        "manifestSha256": "72d5db7fe0eefc55b672698c0d718eaa988805ce7418860f0e4f2805671b4f84"
+      },
+      {
+        "debateId": "slick-clifton-objective-morality-god-2014",
+        "number": "127",
+        "reason": "events[2017]: invalid durationMs",
+        "transcriptSha256": "3c6fc4b8df96ec5d56d7521c2896fcfec35b3b3fdcf35fc90cad8a5256b8ab9e",
+        "eventsSha256": "a713e5afaafdb3d0377fa3cf150e764eb26dfd0ecf7df76839d80f1f36b4706d",
+        "manifestSha256": "f2554084f686e34cda105fbb22e5afab91286019a4db68ec8181e26aa9eb5d1e"
+      }
+    ],
+    "directEligible": 4,
+    "partitionEligible": 102,
+    "measurementFingerprintSha256": "39d5a48f84e953ed64b87bdf11da5d5c3f7149c15f5a55f86e95f74a6e03b001",
+    "sharedInputPaths": [
+      "docs/reassessment-rubric-v4.0.md",
+      "docs/reassessment-rubric-v4.0.1.md",
+      "docs/reassessment-rubric-v4.1.md",
+      "docs/calibration/v4.2.20/source-span-rendering/manual.md",
+      "docs/calibration/v4.2.20/source-span-rendering/primary.schema.json"
+    ],
+    "sharedInputBytes": 39022
+  },
+  "tupleOptimization": {
+    "distinctFamilies": 5,
+    "distinctDurationBins": 3,
+    "distinctCaptionKinds": 2,
+    "distinctSpeakers": 10,
+    "distinctPartitionSeverityBins": 3,
+    "aggregateGlobalRank": 174,
+    "tie": "ehrman-licona-who-wrote-gospels-2025|enoch-clarke-doane-moral-realism-objectivity-2026|harris-oconnor-objective-morality-2024|hawkins-folley-free-will-idealism-2026|white-ally-sin-salvation-quran-bible-2013"
+  },
+  "debates": [
+    {
+      "debateId": "harris-oconnor-objective-morality-2024",
+      "number": "19",
+      "videoId": "_pprQXq1eCA",
+      "motion": "Can objective morality be grounded in facts about conscious well-being, or does ethical language reduce to emotive expression plus instrumental science?",
+      "sides": {
+        "pro": {
+          "label": "Moral landscape",
+          "speakers": [
+            "Sam Harris"
+          ]
+        },
+        "con": {
+          "label": "Emotivist skepticism",
+          "speakers": [
+            "Alex O'Connor"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "morality-ethics",
+      "durationSeconds": 816,
+      "durationBin": "under-60-minutes",
+      "captionKind": "auto",
+      "sourceLedgerEvents": 379,
+      "sourceLedgerBytes": 21400,
+      "packetBytes": 3067,
+      "sharedInputBytes": 39022,
+      "compactCopiedInputBytes": 63489,
+      "route": "direct",
+      "routeExceeded": [],
+      "partitionSeverity": null,
+      "selectionRankSha256": "88a8916f7d4b99e9139cc3c589d8948833a6722c1c503772eafb66d3d3e0e0c0"
+    },
+    {
+      "debateId": "hawkins-folley-free-will-idealism-2026",
+      "number": "133",
+      "videoId": "OSXawgwSZQs",
+      "motion": "Can libertarian free will and Bradleyan idealism answer determinist and naturalist pressure better than compatibilist pragmatism?",
+      "sides": {
+        "pro": {
+          "label": "Libertarian idealism",
+          "speakers": [
+            "Nathan Hawkins"
+          ]
+        },
+        "con": {
+          "label": "Compatibilist pragmatism",
+          "speakers": [
+            "Joe Folley"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "mind-agency",
+      "durationSeconds": 7175,
+      "durationBin": "90-minutes-or-more",
+      "captionKind": "auto",
+      "sourceLedgerEvents": 3276,
+      "sourceLedgerBytes": 191353,
+      "packetBytes": 3060,
+      "sharedInputBytes": 39022,
+      "compactCopiedInputBytes": 233435,
+      "route": "partition",
+      "routeExceeded": [
+        "source-ledger-events",
+        "compact-copied-input-bytes"
+      ],
+      "partitionSeverity": "moderate-partition",
+      "selectionRankSha256": "1c085812a09521d017c21af8c49d57323cfbe7e75c2c40fce1b5e35d2d9ff87e"
+    },
+    {
+      "debateId": "ehrman-licona-who-wrote-gospels-2025",
+      "number": "178",
+      "videoId": "xTCPigOQabY",
+      "motion": "Were the canonical Gospels written by, or under the authority of, Matthew, Mark, Luke, and John?",
+      "sides": {
+        "pro": {
+          "label": "Traditional authorship",
+          "speakers": [
+            "Michael Licona"
+          ]
+        },
+        "con": {
+          "label": "Anonymous later authorship",
+          "speakers": [
+            "Bart Ehrman"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "resurrection-history",
+      "durationSeconds": 8426,
+      "durationBin": "90-minutes-or-more",
+      "captionKind": "human",
+      "sourceLedgerEvents": 1286,
+      "sourceLedgerBytes": 148739,
+      "packetBytes": 3030,
+      "sharedInputBytes": 39022,
+      "compactCopiedInputBytes": 190791,
+      "route": "partition",
+      "routeExceeded": [
+        "compact-copied-input-bytes"
+      ],
+      "partitionSeverity": "near-direct-ceiling",
+      "selectionRankSha256": "22b43844b323ab43afd7418de70f65b929a42387b49d570bbe5df14844248470"
+    },
+    {
+      "debateId": "white-ally-sin-salvation-quran-bible-2013",
+      "number": "182",
+      "videoId": "ee9c45dSHiY",
+      "motion": "Which account of sin and salvation—the Qur'an's direct forgiveness and moral accounting or the Bible's grace through Christ's atonement—is more coherent and scripturally grounded?",
+      "sides": {
+        "pro": {
+          "label": "Salvation through Christ's atonement",
+          "speakers": [
+            "James White"
+          ]
+        },
+        "con": {
+          "label": "Direct forgiveness and accountable deeds",
+          "speakers": [
+            "Shabir Ally"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "evil-hiddenness",
+      "durationSeconds": 9064,
+      "durationBin": "90-minutes-or-more",
+      "captionKind": "auto",
+      "sourceLedgerEvents": 3834,
+      "sourceLedgerBytes": 225013,
+      "packetBytes": 3147,
+      "sharedInputBytes": 39022,
+      "compactCopiedInputBytes": 267182,
+      "route": "partition",
+      "routeExceeded": [
+        "source-ledger-events",
+        "compact-copied-input-bytes"
+      ],
+      "partitionSeverity": "heavy-partition",
+      "selectionRankSha256": "1c8b87a1bc1f0bf8e593df8b2eafb33e9234258301b1a015bab20fb432449250"
+    },
+    {
+      "debateId": "enoch-clarke-doane-moral-realism-objectivity-2026",
+      "number": "183",
+      "videoId": "2WrywAaDvvw",
+      "motion": "Can stance-independent moral facts genuinely vindicate normative objectivity by settling what agents should do?",
+      "sides": {
+        "pro": {
+          "label": "Robust moral realism vindicates objectivity",
+          "speakers": [
+            "David Enoch"
+          ]
+        },
+        "con": {
+          "label": "Realism does not uniquely settle action",
+          "speakers": [
+            "Justin Clarke-Doane"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "transcriptChainPresentAtSelection": true,
+      "family": "general-theism-religion",
+      "durationSeconds": 4200,
+      "durationBin": "60-to-89-minutes",
+      "captionKind": "auto",
+      "sourceLedgerEvents": 1783,
+      "sourceLedgerBytes": 103450,
+      "packetBytes": 3097,
+      "sharedInputBytes": 39022,
+      "compactCopiedInputBytes": 145569,
+      "route": "direct",
+      "routeExceeded": [],
+      "partitionSeverity": null,
+      "selectionRankSha256": "e4a032ad50aa444e4dd94247e275e5330bff06c1fd13e8fd560f487b44690c9f"
+    }
+  ],
+  "audit": {
+    "debates": 5,
+    "direct": 2,
+    "partition": 3,
+    "distinctTopicFamilies": 5,
+    "distinctDurationBins": 3,
+    "distinctCaptionKinds": 2,
+    "distinctSpeakers": 10,
+    "priorOrRejectedSampleOverlap": 0,
+    "localTranscriptChainsPresent": 5,
+    "legacyAssessmentFields": 0
+  },
+  "authorization": {
+    "routeMetadataScreening": true,
+    "sourcePacketPreparation": false,
+    "partitionLaneDesign": false,
+    "primaryModelExecution": false,
+    "passBModelExecution": false,
+    "audioExecution": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "all195Debates": false
+  },
+  "sourceHashes": {
+    "docs/calibration/v3.8/held-out-burden-contact-integration-gate/metadata-eligible-pool.json": "71256e3b92aa6879b7126c01f7268be39735d239111a0d6d849a2b5aa6cf0cb6",
+    "docs/assessment-workflow-v4.2.21.8.md": "8b0f0fc0fb53d6e06015d04d2dc246d56aa29f65d50e48e509a458c9db89e4fc",
+    "scripts/lib/v4219-primary-recovery.mjs": "a426a03ced272b27b55f6c2674a81b0ad4cb46617d4c735efec78d9698c427f8",
+    "scripts/lib/v4220-source-classification.mjs": "260befeff9fab66b8770e6434e0584ca8252cc7fbbf4a2654a6e7edd4cfa1b52",
+    "scripts/lib/v4220-source-span-rendering.mjs": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+    "scripts/select-v42218-held-out-five.mjs": "34bc03ac4bec284d5f72ae80f5d5bf2c86c91a0a67f247b983b86137a5f7d7e8",
+    "scripts/screen-v42218-held-out-five.mjs": "c01a23dee13bb66aae5564c61f3ff587110ffed87a3cde157e54c577ba13c1dd",
+    "scripts/test-v42218-held-out-five.mjs": "80c51b34d3b659e62de68bc3b897a7ad5bb474118160a82889a0c75295d8676c",
+    "docs/calibration/v4.1.7/fresh-six-gate/source-only-sample.json": "8b06fa1766488eab48876c3f2d3e44cce1de8cfa522a87defef012905d5e2eff",
+    "docs/calibration/v4.1.8/source-integrity-fresh-six-gate/source-only-sample.json": "de1272c4d5989f00af7a3d972e01462bb9722d1d07370406b3c74376321ead1d",
+    "docs/calibration/v4.1.9/schema-bounded-fresh-six-gate/source-only-sample.json": "576e275787d74b5e5b61e97962358ffc8264e260e47db41ef04b2e9955fe1646",
+    "docs/calibration/v4.2.1/compact-fresh-six-gate/source-only-sample.json": "587a22054eb36169394d389516ba3e4499acdf59c5b43392f5c0b427681555c5",
+    "docs/calibration/v4.2.3/chronology-first-fresh-six-gate/source-only-sample.json": "f9c275aef111f13746e3713adbdad4fedc74524cbc8861021b0d4bd49263bdec",
+    "docs/calibration/v4.2.4/screened-chronology-fresh-six-gate/source-only-sample.json": "3b269230640c4241c7f3544a4d60216c34bc768e6fe5f6ab50a09bd704e8245f",
+    "docs/calibration/v4.2.18/fresh-direct-three/source-only-sample.json": "9c4eb9037585df136eb560ad17e4e4a64e0b015d94a77bdc0c1b747523c02b04",
+    "docs/calibration/v4.2.18.1/fresh-direct-three/source-only-sample.json": "fa7d208fd77cdde98d5166efbc7d739d05a292a3fe908e505001e86f7892a204",
+    "docs/calibration/v4.2.19/primary-recovery/source-only-sample.json": "c10edeb0a634fc6de4cf8844cdcdeb5a570d9e7151391fd74ac08377e3054f1b",
+    "docs/calibration/v4.2.20/source-span-rendering/source-only-sample.json": "b64450716f3532dfe5379ec51b0b16589166fb6212bcac3f292c5d57ec816b57",
+    ".assessment-cache/captions/_pprQXq1eCA/transcript.txt": "c6dfc1d5caa074a08eb70d5280fee6deae5efadbd32f9706728753a2820a4cc7",
+    ".assessment-cache/captions/_pprQXq1eCA/events.json": "a6ce10a2f3bfefa0b8114d64064697dc036f3652797d02aa746c53f3be5d755f",
+    ".assessment-cache/captions/_pprQXq1eCA/manifest.json": "0c258af6cdf77859d07fb1a80b25ffe491f28e707f5db780e11d0473151d2c32",
+    ".assessment-cache/captions/OSXawgwSZQs/transcript.txt": "983dfe6da87ddc08124eec2f136b7822b786e544d8bdb6d961eb477cd770bcfa",
+    ".assessment-cache/captions/OSXawgwSZQs/events.json": "7d0f72e27b04551be2534d73b2d9ed6ed48273d1b931b42b7ba9ed942f79f1ef",
+    ".assessment-cache/captions/OSXawgwSZQs/manifest.json": "aaa76757a46dfb2dcf1ac1e31831265ce6bf97aded8dc43abc49f2692ceaf36d",
+    ".assessment-cache/captions/xTCPigOQabY/transcript.txt": "fa5c936c4dfaeb55945ec642dd411730c7fd20647b0ee432b0b4620c0642c4dc",
+    ".assessment-cache/captions/xTCPigOQabY/events.json": "261aa1d1a56ecdb7a56bb5bd16a3ab7d88e3d744b31fa75e5e2334a451925dcd",
+    ".assessment-cache/captions/xTCPigOQabY/manifest.json": "60db7566cc5831a01a1ea2a25e4ca7b0532d20a97c932746240db2b01c92bb29",
+    ".assessment-cache/captions/ee9c45dSHiY/transcript.txt": "3b24593eeddaa140ff5f18658d71c0774682f1d2b6c7bf21d1e0a25b85fdef44",
+    ".assessment-cache/captions/ee9c45dSHiY/events.json": "5731ae17a1d32a316c95d05cf206b30ba91098640deeb2862b10c8732a54400a",
+    ".assessment-cache/captions/ee9c45dSHiY/manifest.json": "a81cb4f4dbd8b8213705891dc0a4debc61fb4901c34fb919057f34fa8d97fc21",
+    ".assessment-cache/captions/2WrywAaDvvw/transcript.txt": "b5a77384b189d82e591ed73af99e17bb094587f78aae3fb845e7f0be4d44f0cc",
+    ".assessment-cache/captions/2WrywAaDvvw/events.json": "c9009b36b392b9eac1ada38e92d854a57d8049da4b78db8b899228c597a52765",
+    ".assessment-cache/captions/2WrywAaDvvw/manifest.json": "89e4c280748a5120d36b4e70b2ac5fcce6dc6027476462e793c774d175bcdcaf"
+  }
+}
