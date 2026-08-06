@@ -5,7 +5,7 @@ import { execFileSync } from "node:child_process";
 import { access, mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { assertV4 } from "./lib/v4-lean-production.mjs";
-import { V4221176_ROOT, buildV4221176FinalLedger, loadV4221176FinalLedgerInputs, validateV4221176FinalLedger } from "./lib/v4221176-final-ledger.mjs";
+import { V4221176_PROTOCOL_ID, V4221176_ROOT, buildV4221176FinalLedger, loadV4221176FinalLedgerInputs, validateV4221176FinalLedger } from "./lib/v4221176-final-ledger.mjs";
 
 const shouldWrite = process.argv.includes("--write");
 const frozenIndex = process.argv.indexOf("--frozen-at");
