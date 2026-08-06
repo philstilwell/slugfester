@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "4.2.21.11-partition-discovery-failure-analysis",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "status": "partition-discovery-gate-failed-successor-design-authorized",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "execution": {
+    "contextsPlanned": 12,
+    "contextsAttempted": 12,
+    "validContexts": 11,
+    "invalidContexts": 1,
+    "retries": 0,
+    "totalElapsedMs": 970600,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "failure": {
+    "debateNumber": "182",
+    "chunkId": "chunk-004",
+    "status": "output-validation-failed",
+    "transportPassed": true,
+    "rawOutputPreserved": true,
+    "rawOutputSha256": "426093ef17bcea32c64222aea74a3ed89ec946352adf19840d75d1f847435e29",
+    "class": "same-side-local-target",
+    "sameSideTargets": [
+      {
+        "candidateId": "c004-09",
+        "candidateSide": "pro",
+        "targetCandidateId": "c004-06",
+        "targetSide": "pro"
+      }
+    ],
+    "validatorMessage": "local target must be on the opposing side"
+  },
+  "interpretation": {
+    "validatorCorrectlyRejectedOutput": true,
+    "manualAlreadyProhibitedSameSideTarget": true,
+    "schemaCouldNotEnforceCandidateSideDependency": true,
+    "semanticOutputRepairAuthorized": false,
+    "retryAuthorized": false,
+    "acceptedOutputsReusableInSuccessorGate": false,
+    "candidateBundlesCompiled": false,
+    "primaryAssessmentExecuted": false,
+    "scoresDerived": 0
+  },
+  "successorRecommendation": {
+    "removeLocalTargetIdsFromScoreBlindDiscovery": true,
+    "discoveryResponseIntentFields": [
+      "kind",
+      "earlierTargetDescription"
+    ],
+    "discoveryKindValues": [
+      "constructive",
+      "reply"
+    ],
+    "constructiveDescriptionMustBeEmpty": true,
+    "replyDescriptionMinimumCharacters": 30,
+    "repositoryDerivesMoveKindOnly": true,
+    "primaryAOwnsSelectedMoveTargetTopology": true,
+    "rerunAllTwelveAsNewPreregisteredGate": true
+  },
+  "authorization": {
+    "successorSchemaDesign": true,
+    "successorExecutionManifest": false,
+    "modelExecution": false,
+    "retry": false,
+    "candidateCompilation": false,
+    "primaryExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
