@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "4.2.21.17.5-dispute-only-adjudication-preparation",
+  "protocolId": "v4.2.21.17.5-decomposed-consensus",
+  "status": "prepared-three-isolated-dispute-only-adjudication-contexts",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "inputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "workflow": "docs/assessment-workflow-v4.2.21.17.3.md",
+    "audioWorkflow": "docs/assessment-workflow-v4.2.21.17.4.md",
+    "manual": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/manual.md",
+    "schema": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/adjudication.schema.json"
+  },
+  "contexts": [
+    {
+      "debateNumber": "133",
+      "debateId": "hawkins-folley-free-will-idealism-2026",
+      "packet": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/packets/debate-133.json",
+      "provenance": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/provenance/debate-133.json",
+      "output": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/outputs/debate-133.json",
+      "disputeSource": "docs/calibration/v4.2.21.17.3/deterministic-disagreement-audio-prep/disagreements/debate-133.json",
+      "lockedInventory": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/locked-inventories/debate-133.json",
+      "sourcePacket": "docs/calibration/v4.2.21.17/independent-judgment-three/source-packets/debate-133.json",
+      "originalEvents": ".assessment-cache/captions/OSXawgwSZQs/events.json",
+      "disputedMoves": 17,
+      "candidateSelections": 44,
+      "audioVerifiedMoves": 0,
+      "audioTranscriptInputs": [],
+      "packetBytes": 153416
+    },
+    {
+      "debateNumber": "178",
+      "debateId": "ehrman-licona-who-wrote-gospels-2025",
+      "packet": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/packets/debate-178.json",
+      "provenance": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/provenance/debate-178.json",
+      "output": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/outputs/debate-178.json",
+      "disputeSource": "docs/calibration/v4.2.21.17.3/deterministic-disagreement-audio-prep/disagreements/debate-178.json",
+      "lockedInventory": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/locked-inventories/debate-178.json",
+      "sourcePacket": "docs/calibration/v4.2.21.17/independent-judgment-three/source-packets/debate-178.json",
+      "originalEvents": ".assessment-cache/captions/xTCPigOQabY/events.json",
+      "disputedMoves": 16,
+      "candidateSelections": 35,
+      "audioVerifiedMoves": 2,
+      "audioTranscriptInputs": [
+        {
+          "moveId": "con-justin-gospel-of-peter",
+          "sourcePath": "output/transcribe/v4221173-audio-verification/debate-178/transcripts/con-justin-gospel-of-peter.transcript.txt",
+          "modelInputFile": "audio-transcript-con-justin-gospel-of-peter.txt",
+          "sha256": "1a041c4ba4345d83bd4a9486b45e84ff7b07d7f6935d372e0deb19372e2fcbee"
+        },
+        {
+          "moveId": "con-matthew-financial-vocabulary",
+          "sourcePath": "output/transcribe/v4221173-audio-verification/debate-178/transcripts/con-matthew-financial-vocabulary.transcript.txt",
+          "modelInputFile": "audio-transcript-con-matthew-financial-vocabulary.txt",
+          "sha256": "c2d3d0e9387959ce7877567d2e506de776e861f4daa59e78909dd43e1d68f049"
+        }
+      ],
+      "packetBytes": 124773
+    },
+    {
+      "debateNumber": "182",
+      "debateId": "white-ally-sin-salvation-quran-bible-2013",
+      "packet": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/packets/debate-182.json",
+      "provenance": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/provenance/debate-182.json",
+      "output": "docs/calibration/v4.2.21.17.5/dispute-only-adjudication/outputs/debate-182.json",
+      "disputeSource": "docs/calibration/v4.2.21.17.3/deterministic-disagreement-audio-prep/disagreements/debate-182.json",
+      "lockedInventory": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/locked-inventories/debate-182.json",
+      "sourcePacket": "docs/calibration/v4.2.21.17/independent-judgment-three/source-packets/debate-182.json",
+      "originalEvents": ".assessment-cache/captions/ee9c45dSHiY/events.json",
+      "disputedMoves": 20,
+      "candidateSelections": 93,
+      "audioVerifiedMoves": 0,
+      "audioTranscriptInputs": [],
+      "packetBytes": 169247
+    }
+  ],
+  "evidenceBoundary": {
+    "disputedFieldsOnly": true,
+    "candidateOrderingAnonymizedPerPair": true,
+    "provenanceFilesNeverModelInputs": true,
+    "initialPassRationalesUnavailable": true,
+    "nondisputedFieldsUnavailable": true,
+    "fullInitialOutputsUnavailable": true,
+    "calculatedScoresUnavailable": true,
+    "winnersUnavailable": true,
+    "publicationProseUnavailable": true,
+    "verifiedAudioTranscriptsSuppliedOnlyWhereRequired": true
+  },
+  "totals": {
+    "contexts": 3,
+    "disputedMoves": 53,
+    "candidateSelections": 172,
+    "audioVerifiedMoves": 2,
+    "modelContextsExecuted": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsdThisStage": 0
+  },
+  "authorization": {
+    "executionManifest": true,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
