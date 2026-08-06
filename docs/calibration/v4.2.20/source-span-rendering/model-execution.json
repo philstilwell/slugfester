@@ -1,0 +1,1013 @@
+{
+  "schemaVersion": "4.2.20.1-source-span-primary-model-execution",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "status": "three-source-span-primary-contexts-passed",
+  "contextsPlanned": 3,
+  "contextsAttempted": 3,
+  "contextsSkipped": 0,
+  "validContexts": 3,
+  "attempts": 3,
+  "retries": 0,
+  "correctionContexts": 0,
+  "totalElapsedMs": 828141,
+  "meanElapsedMs": 276047,
+  "results": [
+    {
+      "debateNumber": "27",
+      "debateId": "oconnor-turek-evil-moral-argument-2017",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-06T01:34:31.489Z",
+      "completedAt": "2026-08-06T01:40:11.265Z",
+      "elapsedMs": 339775,
+      "recoverableStreamEvents": 0,
+      "transportClassification": "clean",
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsd": 0,
+      "stdoutSha256": "ece6b551b571ecf94a8372a8f1ecca9470d4fc79aab79be4b14a0d1eb0156c52",
+      "stderrSha256": "d4fbbf04a1c7ac4bf090e00e8f05c617e531ebbde6a4d2366548d7e33c828983",
+      "status": "completed-valid-clean",
+      "gateAcceptancePassed": true,
+      "rawOutputWritten": true,
+      "rawOutputSha256": "0f8e3205006bfb8886cf89ed533648b308a362dd072154590fd1a0f2741a3ca8",
+      "compiledOutputWritten": true,
+      "compiledOutputSha256": "a07283297df031af7b9f692d3f18996d61a510af625dc3d7dc2f2e4dbd07de6a",
+      "deterministicValidationPassed": true,
+      "deterministicCompilationPassed": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "27",
+        "moves": 12,
+        "sections": 6,
+        "mediumOrLowAttributionMoves": [],
+        "calculatedFields": 0,
+        "schemaVersion": "4.2.20-source-span-primary-judgment",
+        "protocolId": "v4.2.20-source-span-evidence-rendering",
+        "boundedMoves": 12,
+        "sourceSpanIntegrity": {
+          "status": "passed",
+          "eventsHashVerified": true,
+          "eventCount": 1691,
+          "repositoryOwnedTimes": true,
+          "maximumCharacters": 600,
+          "maximumTokens": 100,
+          "minimumLexicalRecall": 0.8,
+          "minimumOrderedCoverage": 0.8,
+          "moves": [
+            {
+              "moveId": "m1-pro-grounding",
+              "characterCount": 380,
+              "tokenCount": 85,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m2-con-subjectivity",
+              "characterCount": 380,
+              "tokenCount": 76,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m3-pro-moral-effect",
+              "characterCount": 432,
+              "tokenCount": 89,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m4-con-evolution",
+              "characterCount": 397,
+              "tokenCount": 75,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m5-pro-reliability",
+              "characterCount": 380,
+              "tokenCount": 68,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m6-con-basic-reason",
+              "characterCount": 380,
+              "tokenCount": 72,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m7-pro-intuition",
+              "characterCount": 380,
+              "tokenCount": 69,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m8-con-explanation",
+              "characterCount": 380,
+              "tokenCount": 79,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m9-pro-disagreement",
+              "characterCount": 381,
+              "tokenCount": 67,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m10-con-ambiguity",
+              "characterCount": 379,
+              "tokenCount": 72,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m11-pro-theistic-reason",
+              "characterCount": 380,
+              "tokenCount": 73,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m12-con-parity",
+              "characterCount": 380,
+              "tokenCount": 74,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            }
+          ]
+        },
+        "compactTransport": {
+          "status": "passed",
+          "eventCount": 1691,
+          "sourceLedgerSha256": "7b5fdd832a635d9acbce2ca6895b8d6e671a3f867d7ece6401d86a493cfa35fd",
+          "replayExact": true,
+          "plainTranscriptDeliveredToModel": false,
+          "originalEventsDeliveredToModel": false
+        },
+        "chronologyFirst": {
+          "status": "passed",
+          "emittedMoves": 12,
+          "targetEdgesReferenceEarlierEmittedMoves": true,
+          "oneOrTwoMovesPerSidePerSection": true
+        },
+        "conservativeExcerpt": {
+          "status": "passed",
+          "maximumCharacters": 450,
+          "tokenRange": [
+            12,
+            100
+          ],
+          "automaticTruncationPerformed": false
+        },
+        "deterministicRecovery": {
+          "status": "passed",
+          "modelAuthoredEvidenceText": false,
+          "repositoryOwnedSourceSpanRendering": true,
+          "renderedEvidence": [
+            {
+              "moveId": "m1-pro-grounding",
+              "excerpt": "mean by good is the nature of God that's what goodness is so you can't have evil unless good exists because evil is a privation or a lack in good evil is like rust in a car you know if you take all the rust out of the car you got a better car if you take all the car out of the rust you've got nothing in other words evil only exists as as a parasite in good and so I think we all",
+              "characterCount": 380,
+              "tokenCount": 85,
+              "startToken": 31,
+              "endToken": 115,
+              "weightedOverlap": 20,
+              "matchedAnchorTokens": 5,
+              "propositionOverlap": 5,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m2-con-subjectivity",
+              "excerpt": "God I I'm with you on that um what I would say is is to answer your question um objectively no it it is a subjective thing morality to me um is is entirely subjective why do you say that well because um firstly uh I thing to note is that um objective morality well let's let's talk about what objective actually means I suppose um objectivity to me if if if you want my definition",
+              "characterCount": 380,
+              "tokenCount": 76,
+              "startToken": 17,
+              "endToken": 92,
+              "weightedOverlap": 8,
+              "matchedAnchorTokens": 3,
+              "propositionOverlap": 1,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m3-pro-moral-effect",
+              "excerpt": "effect known as this moral law that is press pressing on us and as you admitted in the video and look videos two-minute videos 10-minute videos you can't expound on all the nuances so if if this is wrong correct me but you seem to say that we in fact I think you quoted the the the quote was let me let me just quote you accurately on this because in the video you said this you said uh you said moral truths are so deeply ingrained",
+              "characterCount": 432,
+              "tokenCount": 89,
+              "startToken": 9,
+              "endToken": 97,
+              "weightedOverlap": 20,
+              "matchedAnchorTokens": 5,
+              "propositionOverlap": 5,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m4-con-evolution",
+              "excerpt": "good thing we we'll discuss why uh shortly but let's say we assume that we could then say that is it is objectively true um that we should act in certain ways for instance trying not to murder people and that would then become an objective morality so because Evolution has instilled build within us um through our through genetics a a a a drive to stay alive um then we can derive objective moral",
+              "characterCount": 397,
+              "tokenCount": 75,
+              "startToken": 31,
+              "endToken": 105,
+              "weightedOverlap": 20,
+              "matchedAnchorTokens": 5,
+              "propositionOverlap": 5,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m5-pro-reliability",
+              "excerpt": "you want to use an evolutionary argument the problem is is that undercuts everything you think because if everything we think is the product of evolution the product of the laws of physics or biology whatever it is then why should we believe anything we think forget about morality for a second why should we even believe that atheism is true or that Christianity is true if we're",
+              "characterCount": 380,
+              "tokenCount": 68,
+              "startToken": 43,
+              "endToken": 110,
+              "weightedOverlap": 6,
+              "matchedAnchorTokens": 2,
+              "propositionOverlap": 1,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m6-con-basic-reason",
+              "excerpt": "is one of those things that we need to assume in order to get anywhere in the same sense we need to assume that we exist in order to have a philosophical discussion no that's a very wise point I agree with you the question is how do we explain reason on a naturalistic worldview well reason and Consciousness can be explained as coming about through Evolution our the way in which",
+              "characterCount": 380,
+              "tokenCount": 72,
+              "startToken": 53,
+              "endToken": 124,
+              "weightedOverlap": 16,
+              "matchedAnchorTokens": 4,
+              "propositionOverlap": 4,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m7-pro-intuition",
+              "excerpt": "saying I have this sense of moral obligation that is so strong that any argument you give me for atheism or moral subjectivism will be based on the weaker premises than just the sense that I have that objective moral values and obligations exist so that was my question originally to you Alex is why would you deny the strongest belief that you have intuitively and adopt a weaker",
+              "characterCount": 380,
+              "tokenCount": 69,
+              "startToken": 70,
+              "endToken": 138,
+              "weightedOverlap": 30,
+              "matchedAnchorTokens": 8,
+              "propositionOverlap": 7,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m8-con-explanation",
+              "excerpt": "the the problem with Sam Harris is arent is he's going in there trying to show that certain things are right or wrong uh based on science what I'm trying to do is say why people experience things as right or wrong based on science which can be done so I can say the reason that I feel that this is right and wrong is because of this what I can't say is that this is right or wrong",
+              "characterCount": 380,
+              "tokenCount": 79,
+              "startToken": 127,
+              "endToken": 205,
+              "weightedOverlap": 20,
+              "matchedAnchorTokens": 5,
+              "propositionOverlap": 5,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m9-pro-disagreement",
+              "excerpt": "evolutionary process gives us our moral ideas it also gives us all of our ideas so why should we believe any of them but secondly not every issue needs to be crystal clear on morality for God to exist you know scientists disagree over aspects of the objective world but that doesn't mean there isn't an objective world that's a difference between again epistemology and ontology we",
+              "characterCount": 381,
+              "tokenCount": 67,
+              "startToken": 13,
+              "endToken": 79,
+              "weightedOverlap": 28,
+              "matchedAnchorTokens": 9,
+              "propositionOverlap": 5,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m10-con-ambiguity",
+              "excerpt": "and to me the reason for that is because of the fact that it involves human flourishing human survival if something if the question is will this act cause humans to suffer will this act cause a human to die in the instance of abortion that's why that moral that moral ambiguity exists and so to me the point is basically that this uh this is evidence of an evolutionary basis for",
+              "characterCount": 379,
+              "tokenCount": 72,
+              "startToken": 87,
+              "endToken": 158,
+              "weightedOverlap": 16,
+              "matchedAnchorTokens": 4,
+              "propositionOverlap": 4,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m11-pro-theistic-reason",
+              "excerpt": "has given you your moral beliefs it's given you all of your beliefs including the idea that Evolution has given your moral beliefs so why should you believe it it's either random on Evolution or it's designed so I mean is that if it's designed you can trust it if it's random you can't so again if all your thoughts are the result of the laws of physics why should you believe any",
+              "characterCount": 380,
+              "tokenCount": 73,
+              "startToken": 6,
+              "endToken": 78,
+              "weightedOverlap": 16,
+              "matchedAnchorTokens": 4,
+              "propositionOverlap": 4,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m12-con-parity",
+              "excerpt": "be talking about my here but is is that not similar to saying um well the reason that you you're saying the reason got from Evolution I also got everything else from Evolution so why should I trust it well the reason that you got from God you also got everything else from God so why should you trust God well because God has given us the rational ability to uh to make reasonable",
+              "characterCount": 380,
+              "tokenCount": 74,
+              "startToken": 2,
+              "endToken": 75,
+              "weightedOverlap": 12,
+              "matchedAnchorTokens": 3,
+              "propositionOverlap": 3,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            }
+          ],
+          "repositoryOwnedChronology": true,
+          "chronologyReordered": false,
+          "replyTargetsValidatedAfterOrdering": true,
+          "automaticTargetRepairPerformed": false,
+          "repositoryDerivedResponseClass": true,
+          "modelAuthoredAbsoluteResponsiveness": false,
+          "withinClassMappingApplied": true
+        }
+      },
+      "validationMessage": null
+    },
+    {
+      "debateNumber": "188",
+      "debateId": "kastrup-blackmore-consciousness-idealism-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-06T01:40:11.497Z",
+      "completedAt": "2026-08-06T01:45:14.066Z",
+      "elapsedMs": 302569,
+      "recoverableStreamEvents": 0,
+      "transportClassification": "clean",
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsd": 0,
+      "stdoutSha256": "dbc35a6077fdb9b277cec4ddded5f259879ec4db6b77dba598baebcc1826a25e",
+      "stderrSha256": "c56664bf281a217d45ddd093c5b13d17ec5a9578d0f2bf0cbe1d60a9c31fccda",
+      "status": "completed-valid-clean",
+      "gateAcceptancePassed": true,
+      "rawOutputWritten": true,
+      "rawOutputSha256": "4fad875d24d5fc909f8bcbd9d4ca3f51c663114b0e11d0223f09f18b623fab2e",
+      "compiledOutputWritten": true,
+      "compiledOutputSha256": "5bfc7a9d51b4bd33c5e221637d4b89b4759e194c870953d98273d771f040f706",
+      "deterministicValidationPassed": true,
+      "deterministicCompilationPassed": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "188",
+        "moves": 12,
+        "sections": 5,
+        "mediumOrLowAttributionMoves": [],
+        "calculatedFields": 0,
+        "schemaVersion": "4.2.20-source-span-primary-judgment",
+        "protocolId": "v4.2.20-source-span-evidence-rendering",
+        "boundedMoves": 12,
+        "sourceSpanIntegrity": {
+          "status": "passed",
+          "eventsHashVerified": true,
+          "eventCount": 1453,
+          "repositoryOwnedTimes": true,
+          "maximumCharacters": 600,
+          "maximumTokens": 100,
+          "minimumLexicalRecall": 0.8,
+          "minimumOrderedCoverage": 0.8,
+          "moves": [
+            {
+              "moveId": "m1-pro-given",
+              "characterCount": 381,
+              "tokenCount": 69,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m2-pro-emergence",
+              "characterCount": 380,
+              "tokenCount": 62,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m3-con-neutral",
+              "characterCount": 380,
+              "tokenCount": 71,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m4-con-structure",
+              "characterCount": 382,
+              "tokenCount": 75,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m5-pro-external",
+              "characterCount": 449,
+              "tokenCount": 79,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m6-con-label",
+              "characterCount": 408,
+              "tokenCount": 74,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m7-pro-economy",
+              "characterCount": 380,
+              "tokenCount": 67,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m8-con-boundary",
+              "characterCount": 380,
+              "tokenCount": 73,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m9-pro-regularity",
+              "characterCount": 380,
+              "tokenCount": 72,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m10-con-model",
+              "characterCount": 380,
+              "tokenCount": 79,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m11-pro-modelreply",
+              "characterCount": 381,
+              "tokenCount": 63,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m12-con-distributed",
+              "characterCount": 409,
+              "tokenCount": 81,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            }
+          ]
+        },
+        "compactTransport": {
+          "status": "passed",
+          "eventCount": 1453,
+          "sourceLedgerSha256": "067b6a8b22dafc5897e50154d1019582135b44f2596c413a3ac8371bfd23ee76",
+          "replayExact": true,
+          "plainTranscriptDeliveredToModel": false,
+          "originalEventsDeliveredToModel": false
+        },
+        "chronologyFirst": {
+          "status": "passed",
+          "emittedMoves": 12,
+          "targetEdgesReferenceEarlierEmittedMoves": true,
+          "oneOrTwoMovesPerSidePerSection": true
+        },
+        "conservativeExcerpt": {
+          "status": "passed",
+          "maximumCharacters": 450,
+          "tokenRange": [
+            12,
+            100
+          ],
+          "automaticTruncationPerformed": false
+        },
+        "deterministicRecovery": {
+          "status": "passed",
+          "modelAuthoredEvidenceText": false,
+          "repositoryOwnedSourceSpanRendering": true,
+          "renderedEvidence": [
+            {
+              "moveId": "m1-pro-given",
+              "excerpt": "of reductionism is to reduce everything to the one pre-theoretical given of nature right so I think the the best account of reality is to reduce if we can uh the spectacular richness complexity and variety of nature to one thing and that thing being Consciousness not my Consciousness not your Consciousness but Consciousness as a type a kind of existence um to to mation so to say",
+              "characterCount": 381,
+              "tokenCount": 69,
+              "startToken": 26,
+              "endToken": 94,
+              "weightedOverlap": 20,
+              "matchedAnchorTokens": 5,
+              "propositionOverlap": 5,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m2-pro-emergence",
+              "excerpt": "that word any semantic grounding any meaning it's like saying Consciousness is the involuntary wiggling of my left big toe I can say that but it it doesn't mean anything it's an arbitrary statement so I'm very confident that emergentism is false because there is nothing about physical quantities physical parameters in terms of which we could deduce the qualities of experiencing",
+              "characterCount": 380,
+              "tokenCount": 62,
+              "startToken": 34,
+              "endToken": 95,
+              "weightedOverlap": 16,
+              "matchedAnchorTokens": 4,
+              "propositionOverlap": 4,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m3-con-neutral",
+              "excerpt": "I'll come back to what my own view is here but um there's to my mind there has to be something underlying that and maybe it's some obscure mathematical thing there are interesting physicists working on ideas of that kind that would give rise to this but if you say that everything is mental then there are various ways you can take and and Bernardo I think Bernardo you've taken a",
+              "characterCount": 380,
+              "tokenCount": 71,
+              "startToken": 319,
+              "endToken": 389,
+              "weightedOverlap": 10,
+              "matchedAnchorTokens": 3,
+              "propositionOverlap": 2,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m4-con-structure",
+              "excerpt": "provide answers well at least ideas about gravity and interactions and so of of um uh atomic particles and so on I'm not uh of the view that these sort of these things exist and we're actually seeing them as they are but that there is this structure here that seems to make sense uh of why the physical world behaves the way it does that seems to me you haven't got in your analytic",
+              "characterCount": 382,
+              "tokenCount": 75,
+              "startToken": 59,
+              "endToken": 133,
+              "weightedOverlap": 20,
+              "matchedAnchorTokens": 5,
+              "propositionOverlap": 5,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m5-pro-external",
+              "excerpt": "analytic idealist would say there is an external World it doesn't depend on us it would still be there if we were not here but it is made of mental States mental States we cannot access directly we can only represent those mental States through the screen of perception so the physical world what appears on the screen of perception the things we see touch here feel the textures the flavors The Sounds the colors these are cognitive representations",
+              "characterCount": 449,
+              "tokenCount": 79,
+              "startToken": 319,
+              "endToken": 397,
+              "weightedOverlap": 32,
+              "matchedAnchorTokens": 9,
+              "propositionOverlap": 7,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m6-con-label",
+              "excerpt": "Machinery that makes that I mean I'm particularly interested in predictive processing and our brains as a as prediction machines uh why are brains like that if it's all made of mental I I don't know what how it helps at all so you you're saying we're both representationalists then I want to ask about in in your view where do these representations come from what is the substrate in which th that constructs",
+              "characterCount": 408,
+              "tokenCount": 74,
+              "startToken": 115,
+              "endToken": 188,
+              "weightedOverlap": 22,
+              "matchedAnchorTokens": 6,
+              "propositionOverlap": 5,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m7-pro-economy",
+              "excerpt": "removing unnecessary inferences that lead to problems such as the hard problem of Consciousness if we unnecessarily postulate that there is a new category of existence which is not mental whatever it is it's not mental and then we say and the mental arises from it now we have an explanatory Gap and the whole thing goes to hell because it's an impossible situation so by removing",
+              "characterCount": 380,
+              "tokenCount": 67,
+              "startToken": 2,
+              "endToken": 68,
+              "weightedOverlap": 26,
+              "matchedAnchorTokens": 7,
+              "propositionOverlap": 6,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m8-con-boundary",
+              "excerpt": "a very clear boundary between the internal ones and the external ones yeah um so what is making that boundary we have to I think we have to come to this dissociation problem at least you may not go that way but you talk very clearly about an internal things you can access or are accessing and this external ones which you still call mental what makes that boundary if it isn't to",
+              "characterCount": 380,
+              "tokenCount": 73,
+              "startToken": 3,
+              "endToken": 75,
+              "weightedOverlap": 22,
+              "matchedAnchorTokens": 6,
+              "propositionOverlap": 5,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m9-pro-regularity",
+              "excerpt": "physical representation so the laws of physics still hold the laws of chemistry still hold um they represent what we could call a dissociation in and of itself and at one point it did happen and and here we are it's just as simple as that now I I think we tend or ideal some idealists and people who are dabbling in in in idealism they tend to anthropomorphize the external mental",
+              "characterCount": 380,
+              "tokenCount": 72,
+              "startToken": 188,
+              "endToken": 259,
+              "weightedOverlap": 16,
+              "matchedAnchorTokens": 5,
+              "propositionOverlap": 3,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m10-con-model",
+              "excerpt": "to a physical object in a supposed physical world so you inevitably are stuck with a hard problem so what I am trying to um play with and the same as you I don't want to convince you this is right but I'd love to to be able to discuss with you more where this goes is to say there's nothing it's like to be a bat there is only something it's like to be the bat's representation of",
+              "characterCount": 380,
+              "tokenCount": 79,
+              "startToken": 361,
+              "endToken": 439,
+              "weightedOverlap": 24,
+              "matchedAnchorTokens": 7,
+              "propositionOverlap": 5,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m11-pro-modelreply",
+              "excerpt": "of a self- delusive model um what is important is that idealism maintains the space for the delusion to exist even if everything is an illusion everything's a delusion we still experience the Illusions and the delusions and an idealism makes room available for that which it doesn't for the eliminativist or The Illusionist in the materialist sense because if you say Consciousness",
+              "characterCount": 381,
+              "tokenCount": 63,
+              "startToken": 732,
+              "endToken": 794,
+              "weightedOverlap": 24,
+              "matchedAnchorTokens": 8,
+              "propositionOverlap": 4,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m12-con-distributed",
+              "excerpt": "self which comes and goes and is ephemeral and keeps changing um the only thing that there is something it's like to be I would say that all of the models going on in here or in a rats or bats brain uh there's something it's like to be them so if you take let's say low down in the predictive hierarchy in let's say visual cortex um the models are so simple as to be completely uninteresting and very fleeting",
+              "characterCount": 409,
+              "tokenCount": 81,
+              "startToken": 175,
+              "endToken": 255,
+              "weightedOverlap": 24,
+              "matchedAnchorTokens": 6,
+              "propositionOverlap": 6,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            }
+          ],
+          "repositoryOwnedChronology": true,
+          "chronologyReordered": false,
+          "replyTargetsValidatedAfterOrdering": true,
+          "automaticTargetRepairPerformed": false,
+          "repositoryDerivedResponseClass": true,
+          "modelAuthoredAbsoluteResponsiveness": false,
+          "withinClassMappingApplied": true
+        }
+      },
+      "validationMessage": null
+    },
+    {
+      "debateNumber": "195",
+      "debateId": "russell-copleston-existence-of-god-1948",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-06T01:45:14.442Z",
+      "completedAt": "2026-08-06T01:48:20.239Z",
+      "elapsedMs": 185797,
+      "recoverableStreamEvents": 0,
+      "transportClassification": "clean",
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsd": 0,
+      "stdoutSha256": "c94adab24fb67189c9d79f8ebdfdf15869a550d389ed0b741a038038551c4696",
+      "stderrSha256": "938d9d9aea1d81fca204db729da9b2159026424ed2e262b2dc3577ea05297061",
+      "status": "completed-valid-clean",
+      "gateAcceptancePassed": true,
+      "rawOutputWritten": true,
+      "rawOutputSha256": "ee4f2bf563ceecf20396acc2479c81c2d0b5095e34a987ad9cfd630d9ea8c3b1",
+      "compiledOutputWritten": true,
+      "compiledOutputSha256": "11f05f8c8c215b7ef12ed47a03c27190dac5defb689f3581795ca29ee4151889",
+      "deterministicValidationPassed": true,
+      "deterministicCompilationPassed": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "195",
+        "moves": 10,
+        "sections": 5,
+        "mediumOrLowAttributionMoves": [],
+        "calculatedFields": 0,
+        "schemaVersion": "4.2.20-source-span-primary-judgment",
+        "protocolId": "v4.2.20-source-span-evidence-rendering",
+        "boundedMoves": 10,
+        "sourceSpanIntegrity": {
+          "status": "passed",
+          "eventsHashVerified": true,
+          "eventCount": 1420,
+          "repositoryOwnedTimes": true,
+          "maximumCharacters": 600,
+          "maximumTokens": 100,
+          "minimumLexicalRecall": 0.8,
+          "minimumOrderedCoverage": 0.8,
+          "moves": [
+            {
+              "moveId": "m1",
+              "characterCount": 380,
+              "tokenCount": 69,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m2",
+              "characterCount": 379,
+              "tokenCount": 69,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m3",
+              "characterCount": 381,
+              "tokenCount": 72,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m4",
+              "characterCount": 380,
+              "tokenCount": 68,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m5",
+              "characterCount": 408,
+              "tokenCount": 74,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m6",
+              "characterCount": 399,
+              "tokenCount": 79,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m7",
+              "characterCount": 379,
+              "tokenCount": 67,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m8",
+              "characterCount": 381,
+              "tokenCount": 74,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m9",
+              "characterCount": 380,
+              "tokenCount": 66,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            },
+            {
+              "moveId": "m10",
+              "characterCount": 349,
+              "tokenCount": 61,
+              "lexicalRecall": 1,
+              "orderedCoverage": 1
+            }
+          ]
+        },
+        "compactTransport": {
+          "status": "passed",
+          "eventCount": 1420,
+          "sourceLedgerSha256": "533cb778a2852ba58a3f0c15eb525d7bb44213b703650c02b6ea1e3f225f6976",
+          "replayExact": true,
+          "plainTranscriptDeliveredToModel": false,
+          "originalEventsDeliveredToModel": false
+        },
+        "chronologyFirst": {
+          "status": "passed",
+          "emittedMoves": 10,
+          "targetEdgesReferenceEarlierEmittedMoves": true,
+          "oneOrTwoMovesPerSidePerSection": true
+        },
+        "conservativeExcerpt": {
+          "status": "passed",
+          "maximumCharacters": 450,
+          "tokenRange": [
+            12,
+            100
+          ],
+          "automaticTruncationPerformed": false
+        },
+        "deterministicRecovery": {
+          "status": "passed",
+          "modelAuthoredEvidenceText": false,
+          "repositoryOwnedSourceSpanRendering": true,
+          "renderedEvidence": [
+            {
+              "moveId": "m1",
+              "excerpt": "is something apart from the members therefore I should say since objects or events exist and since no objective experience contains within itself the reason of its existence this reason um the totality of objects must have a reason external to itself and that reason must be an existent being with this being is either itself the reason for its own existence or it is not if it is",
+              "characterCount": 380,
+              "tokenCount": 69,
+              "startToken": 84,
+              "endToken": 152,
+              "weightedOverlap": 28,
+              "matchedAnchorTokens": 8,
+              "propositionOverlap": 6,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m2",
+              "excerpt": "answering your argument the best point with which to begin is the question of a necessary being the word necessary I should maintain can only be applied significantly to propositions and in fact only to such as our analytic that is to say such as it is self-contraductory to deny I could only admit a necessary being if there were a being whose existence it is self-contradictory",
+              "characterCount": 379,
+              "tokenCount": 69,
+              "startToken": 22,
+              "endToken": 90,
+              "weightedOverlap": 28,
+              "matchedAnchorTokens": 7,
+              "propositionOverlap": 7,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m3",
+              "excerpt": "after all a contingent being is a being which has not in itself the complete reason for its existence that's what I mean by a contingent being you know as well as I do that the existence of neither of us can be explained without reference to something or somebody outside us our parents for example the necessary being on the other hand means a being with must and cannot not exist",
+              "characterCount": 381,
+              "tokenCount": 72,
+              "startToken": 0,
+              "endToken": 71,
+              "weightedOverlap": 30,
+              "matchedAnchorTokens": 8,
+              "propositionOverlap": 7,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m4",
+              "excerpt": "ontological argument that there is a being whose Essence involves existence so that his existence is analytic that seems to me to be impossible and it raises of course the question what one means by existence and as to this I think a subject named can never be significantly said to exist but only a subject described and that existence in fact quite definitely is not a predicate",
+              "characterCount": 380,
+              "tokenCount": 68,
+              "startToken": 22,
+              "endToken": 89,
+              "weightedOverlap": 22,
+              "matchedAnchorTokens": 6,
+              "propositionOverlap": 5,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m5",
+              "excerpt": "either caused or it's not caused if it is cause there must obviously be a cause outside the series if it's not caused then it's sufficient to itself and if it's sufficient to itself it is what I call necessary but it can't be necessary since each member is contingent and we've agreed that the total is no reality apart from the members therefore it can't be necessary therefore it can't because the uncaused",
+              "characterCount": 408,
+              "tokenCount": 74,
+              "startToken": 8,
+              "endToken": 81,
+              "weightedOverlap": 36,
+              "matchedAnchorTokens": 9,
+              "propositionOverlap": 9,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m6",
+              "excerpt": "imply that there are causes everywhere a man may look for Gold without assuming that there is gold everywhere if he finds gold well and good if he doesn't he's had bad luck the same is true with the physicists look for causes as for sir I don't profess to know what he means and I shouldn't like to be thought to interpret him but for my part I do think the notion of the world having an explanation",
+              "characterCount": 399,
+              "tokenCount": 79,
+              "startToken": 20,
+              "endToken": 98,
+              "weightedOverlap": 18,
+              "matchedAnchorTokens": 5,
+              "propositionOverlap": 4,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m7",
+              "excerpt": "I don't regard religious experience as a strict proof of the existence of God so the character the discussion changes someone but I think it's true to say that the best explanation of it is the existence of God or by religious experience I don't mean simply feeling good I mean a loving but unclear awareness of some object which irresistibly seems to the experience as something",
+              "characterCount": 379,
+              "tokenCount": 67,
+              "startToken": 1,
+              "endToken": 67,
+              "weightedOverlap": 30,
+              "matchedAnchorTokens": 9,
+              "propositionOverlap": 6,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m8",
+              "excerpt": "a dogmatic way that there is not a god what I'm contending is that we don't know that there is I can only take what is recorded as I should take other records and I do find that very great many things are reported which I am sure you would not accept things about demons devils and whatnot and they're reported in exactly the same kind of voice and with exactly the same conviction",
+              "characterCount": 381,
+              "tokenCount": 74,
+              "startToken": 5,
+              "endToken": 78,
+              "weightedOverlap": 24,
+              "matchedAnchorTokens": 8,
+              "propositionOverlap": 4,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m9",
+              "excerpt": "distinction between right and wrong the vast majority I think have some consciousness of an obligation in the moral sphere it's my opinion that the perception of values and the consciousness of moral law and obligation a best explained through the hypothesis of a Transcendent ground of value and of an author the moral law I don't mean by author the moral law an arbitrary author",
+              "characterCount": 380,
+              "tokenCount": 66,
+              "startToken": 13,
+              "endToken": 78,
+              "weightedOverlap": 44,
+              "matchedAnchorTokens": 11,
+              "propositionOverlap": 11,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            },
+            {
+              "moveId": "m10",
+              "excerpt": "well I think the sense of ought is the effect of somebody's imagined disapproval it may be God's imagined disapproval but it's somebody's Imaging disapproval and I think that is what is meant by odd seems to me to be external customs and taboos and things of that sort which can most easily be explained them simply through environment and education",
+              "characterCount": 349,
+              "tokenCount": 61,
+              "startToken": 0,
+              "endToken": 60,
+              "weightedOverlap": 32,
+              "matchedAnchorTokens": 8,
+              "propositionOverlap": 8,
+              "sourceExact": true,
+              "wholeWordBoundaries": true,
+              "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+            }
+          ],
+          "repositoryOwnedChronology": true,
+          "chronologyReordered": false,
+          "replyTargetsValidatedAfterOrdering": true,
+          "automaticTargetRepairPerformed": false,
+          "repositoryDerivedResponseClass": true,
+          "modelAuthoredAbsoluteResponsiveness": false,
+          "withinClassMappingApplied": true
+        }
+      },
+      "validationMessage": null
+    }
+  ],
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsd": 0,
+  "authorization": {
+    "analysis": true,
+    "retry": false,
+    "correctionModelExecution": false,
+    "scoreDerivation": false,
+    "audioVerification": false,
+    "riskExtraction": false
+  }
+}
