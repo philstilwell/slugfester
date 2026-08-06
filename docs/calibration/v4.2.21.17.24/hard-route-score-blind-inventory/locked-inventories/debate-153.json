@@ -1,0 +1,678 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "153",
+  "debateId": "oconnor-carter-free-will-determinism-2024",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "route-pro-determinist-control",
+      "side": "pro",
+      "description": "Establish that neither determined nor undetermined action gives agents the ultimate authorship required for philosophical free will.",
+      "successCriteria": "Show that actions arise from force or unchosen wants whose causal histories never terminate in self-created control, while explaining practical agency without ultimate desert.",
+      "motionBridge": {
+        "bridgeId": "bridge-pro-motion-no-ultimate-authorship",
+        "tier": "motion",
+        "description": "Connect the absence of control over determining causes and desires to the conclusion that voluntary action lacks ultimate authorship."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-pro-central-determined-or-random",
+          "tier": "central",
+          "description": "Establish that determined events inherit prior causes while undetermined events are uncontrolled, leaving neither branch as agent-authored control."
+        },
+        {
+          "bridgeId": "bridge-pro-central-want-or-force",
+          "tier": "central",
+          "description": "Establish that conduct follows either force or motivating wants and that agents do not independently choose the wants governing action."
+        },
+        {
+          "bridgeId": "bridge-pro-central-source-regress",
+          "tier": "central",
+          "description": "Trace character and choice through upbringing, genetics, circumstances, and dispositions without reaching a self-created source."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-pro-subsidiary-practical-responses",
+          "tier": "subsidiary",
+          "description": "Explain how deterrence, prevention, rehabilitation, and compassion remain available without attributing ultimate moral desert."
+        },
+        {
+          "bridgeId": "bridge-pro-subsidiary-moral-desire",
+          "tier": "subsidiary",
+          "description": "Account for moral motivation and social restraint through causally formed desires rather than an independently chosen will."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-compatibilist-agency",
+      "side": "con",
+      "description": "Establish that determined agents can possess meaningful freedom when conduct belongs to them, is voluntary, and lacks relevant coercive constraints.",
+      "successCriteria": "Show that freedom need not require ultimate self-creation, that voluntary agency admits context-sensitive degrees, and that causal description does not exhaust personal or ethical meaning.",
+      "motionBridge": {
+        "bridgeId": "bridge-con-motion-voluntary-freedom",
+        "tier": "motion",
+        "description": "Connect attributable, voluntary, and substantially unconstrained conduct to a defensible form of freedom despite causal determination."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-con-central-compulsion-distinction",
+          "tier": "central",
+          "description": "Preserve a meaningful distinction between compelled conduct and action attributable to the person as its relevant source."
+        },
+        {
+          "bridgeId": "bridge-con-central-degrees-and-context",
+          "tier": "central",
+          "description": "Explain freedom and its absence through degrees of voluntary control and context-sensitive impediments rather than causation alone."
+        },
+        {
+          "bridgeId": "bridge-con-central-nonreductive-personhood",
+          "tier": "central",
+          "description": "Establish that interpersonal responsibility and first-person agency contain semantic and ethical dimensions not exhausted by third-person causal description."
+        },
+        {
+          "bridgeId": "bridge-con-central-mediopassive-agency",
+          "tier": "central",
+          "description": "Show how action may genuinely belong to a person while also arising through processes that the person did not deliberately manufacture."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-con-subsidiary-dynamic-consciousness",
+          "tier": "subsidiary",
+          "description": "Support the nonreductive account by treating conscious understanding as temporally and socially constituted rather than a static internal object."
+        },
+        {
+          "bridgeId": "bridge-con-subsidiary-normative-meaning",
+          "tier": "subsidiary",
+          "description": "Preserve the richer normative meaning of moral intuition against reduction to psychological or evolutionary causation."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-01-control-dilemma",
+      "title": "Determination, randomness, and ultimate control",
+      "weightPercent": 28,
+      "rationale": "The motion turns first on whether either causal determination or its absence can provide the kind of authorship required for free action."
+    },
+    {
+      "sectionId": "section-02-desires-voluntariness",
+      "title": "Unchosen desires and voluntary action",
+      "weightPercent": 27,
+      "rationale": "This issue determines whether acting from one's own motives is enough for freedom or merely transmits causal factors the agent never selected."
+    },
+    {
+      "sectionId": "section-03-sourcehood-and-perspective",
+      "title": "Causal sourcehood and first-person agency",
+      "weightPercent": 17,
+      "rationale": "The competing routes depend on whether causal histories exhaust agency or leave a first-person and personally attributable dimension of action intact."
+    },
+    {
+      "sectionId": "section-04-responsibility-and-ethical-practice",
+      "title": "Responsibility, desert, and interpersonal ethics",
+      "weightPercent": 16,
+      "rationale": "The consequences of each account depend on whether responsibility requires ultimate desert or can instead operate as a graded interpersonal and ethical practice."
+    },
+    {
+      "sectionId": "section-05-moral-meaning",
+      "title": "Causal explanation and moral meaning",
+      "weightPercent": 12,
+      "rationale": "This issue tests whether a causal account of moral motivation replaces normative agency or can coexist with the richer meanings used in ethical life."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "move-pro-01-control-dilemma",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-01",
+      "sectionId": "section-01-control-dilemma",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "Free will requires genuine authorship and an ability to have acted differently, but neither randomness nor determination supplies the agent with the required control.",
+      "sourceSpan": {
+        "startEvent": 80,
+        "endEvent": 150
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly invites Alex O'Connor to define free will and determinism, and the uninterrupted answer follows that introduction.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "free will is it's it's a difficult thing to Define precisely but it's something like the ability to have AC differently if you were to rewind that clock and the reason that's a Troublesome concept for many people is that anything that happens is going to happen for some kind of reason now some people might object that some things might happen for no reason there might be random events",
+        "characterCount": 387,
+        "tokenCount": 70,
+        "startToken": 196,
+        "endToken": 265,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-pro-03-causal-regress-of-desire",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-02",
+      "sectionId": "section-02-desires-voluntariness",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "Every mental choice or desire is either uncontrolled randomness or part of a causal chain extending beyond the agent, so no such event provides ultimate control.",
+      "sourceSpan": {
+        "startEvent": 151,
+        "endEvent": 201
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This passage continues Alex O'Connor's explicitly introduced opening answer without any intervening speaker transition or redirection.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "mental event you wanting to ask a question that desire to ask a question that itself is either determined or it's random and again if it's random you're not in control of it it just the desire just popped into your head and you had no control whatsoever over it okay well if it was determined by something then once again that thing will either be determined by something inside of your head or eventually you'll go down this chain",
+        "characterCount": 431,
+        "tokenCount": 80,
+        "startToken": 176,
+        "endToken": 255,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-con-01-attributable-causation",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-03",
+      "sectionId": "section-01-control-dilemma",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "reply",
+      "proposition": "Deterministic causation is compatible with free action because compelled conduct differs meaningfully from voluntary conduct whose cause is attributable to the agent.",
+      "sourceSpan": {
+        "startEvent": 212,
+        "endEvent": 279
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator names Alex Carter, asks him to explain compatibilism, and Carter begins a continuous first-person statement of his position.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "free will sure so uh I agree with everything Alex just said this going be not a very good debate so far is it um but I also make the claim that there is a semantic difference between being compelled to act and being freely acting so acting of your own valtion um and what we mean by that is not that that it's uncaused but rather that the cause can be roughly designated as myself now what that means is uh you can look for scientific",
+        "characterCount": 434,
+        "tokenCount": 87,
+        "startToken": 2,
+        "endToken": 88,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-pro-04-unchosen-wants",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-08",
+      "sectionId": "section-02-desires-voluntariness",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Agents may act as they want but cannot simply choose what they want, while action produced by force is plainly uncontrolled.",
+      "sourceSpan": {
+        "startEvent": 666,
+        "endEvent": 716
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is the concluding portion of O'Connor's uninterrupted answer, marked by his restatement of the dichotomy and final summary before the program break.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "just want them to to suffer it's it's not it's not so easy is it it's not something you can just choose to do right so you can choose to do particular things but when you choose to do something particular it will be because you want to or because you're forced to if you're forced to you're not in control if you do because you want to then given that you can't control your wants",
+        "characterCount": 380,
+        "tokenCount": 76,
+        "startToken": 262,
+        "endToken": 337,
+        "weightedOverlap": 12,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 2,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-con-03-degrees-of-voluntariness",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-09",
+      "sectionId": "section-02-desires-voluntariness",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "reply",
+      "proposition": "Ordinary freedom concerns meaningful practices, absent constraints, and degrees of voluntary control rather than an abstract demand that desires themselves be chosen.",
+      "sourceSpan": {
+        "startEvent": 800,
+        "endEvent": 899
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator's question is followed by a response explicitly linking back to O'Connor, and the content and program framing identify the responding compatibilist as Carter.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "we talk about free will we then say but was the desire itself free well the response is yes it was a desire and I had it and I did not want it um Vicken Stein talks about different degrees of freedom so for instance I can stifle a sneeze but I can't stop a tick if I have Tourette right if I have a certain tick I can't stop that but I can stifle a sneeze so one's voluntary one's",
+        "characterCount": 380,
+        "tokenCount": 81,
+        "startToken": 459,
+        "endToken": 539,
+        "weightedOverlap": 14,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-con-04-undeliberated-voluntary-action",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-01",
+      "sectionId": "section-02-desires-voluntariness",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "reply",
+      "proposition": "Freedom admits degrees, and ordinary voluntary actions can belong to an agent without arising from conscious deliberation or an explicitly willed decision.",
+      "sourceSpan": {
+        "startEvent": 860,
+        "endEvent": 944
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted turn follows Carter's distinctive Wittgenstein-based account and ends when the host addresses the opposing speaker.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "we talk about free will we then say but was the desire itself free well the response is yes it was a desire and I had it and I did not want it um Vicken Stein talks about different degrees of freedom so for instance I can stifle a sneeze but I can't stop a tick if I have Tourette right if I have a certain tick I can't stop that but I can stifle a sneeze so one's voluntary one's",
+        "characterCount": 380,
+        "tokenCount": 81,
+        "startToken": 15,
+        "endToken": 95,
+        "weightedOverlap": 14,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-pro-07-consequentialist-responsibility",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-02",
+      "sectionId": "section-04-responsibility-and-ethical-practice",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Rejecting ultimate moral desert still permits preventive, deterrent, and rehabilitative responses to criminal conduct.",
+      "sourceSpan": {
+        "startEvent": 956,
+        "endEvent": 1101
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host directs the responsibility question to O'Connor, whose sustained first-person answer continues until the host changes the subject.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "crime but they also don't want to go to jail which one of those desires is stronger well guess what if the desire to commit the crime is still stronger and so they commit the crime what does society do they make the punishment worse they give them more years in jail for example and they'll do that until the until the deterrent is strong enough that when the criminal says well I",
+        "characterCount": 380,
+        "tokenCount": 73,
+        "startToken": 506,
+        "endToken": 578,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-con-07-interpersonal-responsibility",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-03",
+      "sectionId": "section-04-responsibility-and-ethical-practice",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "reply",
+      "proposition": "Responsibility is an ethically indispensable interpersonal practice, and freedom is better understood through nuanced recognition of persons than as an absolute metaphysical possession.",
+      "sourceSpan": {
+        "startEvent": 1116,
+        "endEvent": 1226
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host explicitly invites Carter to answer, and the turn maintains Carter's recurring semantic, ethical, and Wittgensteinian framework throughout.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "and that's what I mean by a semantic free will it exists precisely outside the black and white thing of does Free Will exist does it not exist it exists in this gray area of semantics where it's our ethical lives it's the the lives of meaning that we live it's treating another person as a person try and imagine treating another person that you know as a chair or just a piece of",
+        "characterCount": 380,
+        "tokenCount": 74,
+        "startToken": 596,
+        "endToken": 669,
+        "weightedOverlap": 12,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 0,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-pro-02-substrate-neutral-dilemma",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-04",
+      "sectionId": "section-01-control-dilemma",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Neither God nor an immaterial soul escapes the determined-or-undetermined dilemma, so changing the substrate does not supply free control.",
+      "sourceSpan": {
+        "startEvent": 1229,
+        "endEvent": 1320
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host explicitly turns to O'Connor, and the answer restates his characteristic determined-or-undetermined dilemma before adding an epistemic qualification.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "that kind of exists more in your soul then in your brain it's we're often told that maybe if there's a God maybe if there are immaterial things free will sort of looks somewhere in there my position isn't just that Free Will doesn't exist it's that it cannot exist because like I say that's why I construct this argument of the form like everything is either determined or it's not",
+        "characterCount": 381,
+        "tokenCount": 71,
+        "startToken": 49,
+        "endToken": 119,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-pro-08-determinist-compassion",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-06",
+      "sectionId": "section-04-responsibility-and-ethical-practice",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "Recognizing that wrongdoers did not control the factors determining their behavior can encourage compassion, forgiveness, and understanding.",
+      "sourceSpan": {
+        "startEvent": 1389,
+        "endEvent": 1406
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host asks O'Connor why the issue matters, and the answer uses his determinist vocabulary before the host thanks him and turns away.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "mind that on a on a on a sort of practical level if if somebody wrongs you or does something bad to you if you can remind yourself that they might not have had control over the determining factors that made them do that it might make you into a more charitable and kind person someone bares pass you on the street or someone is cruel to you then remembering that they're not fully",
+        "characterCount": 380,
+        "tokenCount": 74,
+        "startToken": 4,
+        "endToken": 77,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-con-08-ethical-tension",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-07",
+      "sectionId": "section-04-responsibility-and-ethical-practice",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "constructive",
+      "proposition": "Ethical judgment should preserve tension between responsible choice and helpless determination instead of collapsing human agency into either extreme.",
+      "sourceSpan": {
+        "startEvent": 1407,
+        "endEvent": 1445
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host's transition is followed by Carter's characteristic appeal to Wittgenstein, competing pictures, semantic tension, and resistance to binary answers.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "has a a beautiful image where he says the ethical life is the one where you can hold up as Mo the most number of pictures that make sense so for instance if you want to hold someone responsible you've probably got before your eyes the image of them a Crossroads making a choice a choice itself is a kind of metaphor an image right I can prove that you if you go to a party and you",
+        "characterCount": 380,
+        "tokenCount": 78,
+        "startToken": 7,
+        "endToken": 84,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-pro-09-evolved-moral-desire",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-08",
+      "sectionId": "section-05-moral-meaning",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "Moral motivation can be explained as an evolved emotional desire that competes with other desires and promotes stable cooperative societies.",
+      "sourceSpan": {
+        "startEvent": 1489,
+        "endEvent": 1555
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host identifies the audience question as directed to O'Connor, and his answer consistently develops an evolutionary desire-based explanation of ethics.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "stable if we had a legal system that tried to stop people from doing that that's why it got invented before that happened I think that bi like biologically our our genes sort of did the same thing but they did it with these things that we call moral intuitions so on an evolutionary trajectory those societies those organisms which have some kind of like inexplicable desire to to not murder each other",
+        "characterCount": 402,
+        "tokenCount": 73,
+        "startToken": 136,
+        "endToken": 208,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-con-09-normative-nonreduction",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-09",
+      "sectionId": "section-05-moral-meaning",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "reply",
+      "proposition": "Psychological or evolutionary explanation of moral intuition does not eliminate or fully reduce its richer normative meaning.",
+      "sourceSpan": {
+        "startEvent": 1559,
+        "endEvent": 1620
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host names Carter before the response, and Carter explicitly signals disagreement with O'Connor while using examples from moral philosophy and psychology.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "it's just giving a new name to it so I have I have concerns about calling you know it kind of moral intuition a psychological thing because it's just an ill fit it's like there is a concept there are psychological motivations that we should talk about but I don't think you can reduce moral intuition to that moral intuition is just a bit of a richer or slightly different concept",
+        "characterCount": 380,
+        "tokenCount": 71,
+        "startToken": 363,
+        "endToken": 433,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-pro-05-unchosen-source-regress",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-01",
+      "sectionId": "section-03-sourcehood-and-perspective",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Human choices reflect unchosen upbringing, genetics, circumstances, and dispositions, so tracing responsibility backward never reaches a self-created source of agency.",
+      "sourceSpan": {
+        "startEvent": 1682,
+        "endEvent": 1756
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The sustained first-person examples, argumentative continuity, and later self-identification with the Cosmic Skeptic channel identify O'Connor's contribution.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "in the way that like you can look at the fact that someone's a part of a herd and think well they might only be doing that because everyone else is doing it I think that's what's going on in all human behavior you're only doing that because of your upbringing because like if otherwise you could take somebody with the same upbringing the same parents same genetics the same house",
+        "characterCount": 380,
+        "tokenCount": 71,
+        "startToken": 414,
+        "endToken": 484,
+        "weightedOverlap": 12,
+        "matchedAnchorTokens": 3,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-con-05-reflexive-first-person-perspective",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-02",
+      "sectionId": "section-03-sourcehood-and-perspective",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "reply",
+      "proposition": "A prediction disclosed to a self-aware subject can provoke its own defeat, leaving a first-person perspective not captured by ordinary third-person causal prediction.",
+      "sourceSpan": {
+        "startEvent": 1787,
+        "endEvent": 1824
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage follows Carter's conformity examples and uses his characteristic references to existentialism, Sartre, and the first-person perspective.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "existential P perspective and this is where I think perhaps you might find some hope because existentialism talks about uh existence preceding Essence so before I'm a non-conform before I'm a conformist before I'm a human being before I'm but the problem with that is they we sneak a little bit of metaphysic metaphysics in there so you've got Jean paulart saying that um a hiker who succumbs to fatigue has chosen",
+        "characterCount": 414,
+        "tokenCount": 73,
+        "startToken": 136,
+        "endToken": 208,
+        "weightedOverlap": 8,
+        "matchedAnchorTokens": 3,
+        "propositionOverlap": 1,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-con-02-mediopassive-agency",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-03",
+      "sectionId": "section-01-control-dilemma",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "reply",
+      "proposition": "Actions can genuinely belong to a person while also happening to that person, without requiring the person to have deliberately manufactured the underlying thought or desire.",
+      "sourceSpan": {
+        "startEvent": 1825,
+        "endEvent": 1849
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The Greek grammatical concept, marriage example, and Archimedes illustration continue Carter's academically framed response without an apparent speaker interruption.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "awareness oh and one last thought sorry metop passive so there are things that happen to us and there's things that we do but metop passive is a lovely tense that the Greeks had in their language where they would talk about things that you do and are done to you at the same time getting married is a good example right because you it's something I'm doing but it's being done to",
+        "characterCount": 379,
+        "tokenCount": 73,
+        "startToken": 0,
+        "endToken": 72,
+        "weightedOverlap": 10,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 1,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-pro-06-introspective-mechanism-gap",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-05",
+      "sectionId": "section-03-sourcehood-and-perspective",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "A person can move voluntarily while remaining unable to identify how wanting or deciding produces the bodily movement.",
+      "sourceSpan": {
+        "startEvent": 1875,
+        "endEvent": 1921
+      },
+      "attributionConfidence": "medium",
+      "attributionBasis": "The uninterrupted first-person continuation and illustrative style strongly suggest O'Connor, though the transcript contains no explicit name marker at this boundary.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "example and it's it's really interesting if you try to pay attent like you know when you're like walking along the street you're not paying attention to like all the bodily movements right but if you wanted to you could you could say okay well let me pay attention well my heels touching the floor then rolling and pushing off with my toe you could like be conscious of of How It's all working but think about like moving your finger",
+        "characterCount": 433,
+        "tokenCount": 81,
+        "startToken": 17,
+        "endToken": 97,
+        "weightedOverlap": 12,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 1,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "move-con-06-public-first-consciousness",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-06",
+      "sectionId": "section-03-sourcehood-and-perspective",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "reply",
+      "proposition": "Conscious thought is socially and behaviorally constituted before private representation, so reductive inspection cannot isolate it as a discrete internal object.",
+      "sourceSpan": {
+        "startEvent": 1922,
+        "endEvent": 1962
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "A clear conversational handoff introduces Carter's externalist account, followed by his academic examples concerning pain, public thought, and the hard problem.",
+      "candidateConfidence": "medium",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "a condition that means that she cannot feel what we would call pain um now many people would say that proves that that pain is in your head well how does it because she was reacting like she was in pain so I think so much of this is a kind of feedback loop that what we we're calling are you know we think that thoughts are private first public second I would argue it's the other",
+        "characterCount": 380,
+        "tokenCount": 77,
+        "startToken": 40,
+        "endToken": 116,
+        "weightedOverlap": 14,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 2,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}
