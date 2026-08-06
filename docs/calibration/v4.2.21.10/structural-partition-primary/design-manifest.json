@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "4.2.21.10-structural-partition-primary-design",
+  "protocolId": "v4.2.21.10-structural-partition-primary",
+  "status": "structural-partition-primary-design-frozen-discovery-manifest-authorized",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "structure": {
+    "sectionsMinimum": 4,
+    "sectionsMaximum": 6,
+    "movesPerSidePerSectionMinimum": 1,
+    "movesPerSidePerSectionMaximum": 2,
+    "totalMovesMinimum": 8,
+    "totalMovesMaximum": 24,
+    "sectionWeightsTotal": 100,
+    "sideCandidateEnumsLockedPerDebate": true,
+    "duplicateCandidateSelectionHardFailure": true
+  },
+  "repositoryOwnedFields": [
+    "sectionId",
+    "side",
+    "speaker",
+    "moveKind",
+    "sourceSpan",
+    "attributionConfidence",
+    "evidenceExcerpt",
+    "globalChronology"
+  ],
+  "validation": {
+    "unchangedV4220ValidatorReused": true,
+    "futureTargetHardFailure": true,
+    "sameSideTargetHardFailure": true,
+    "automaticTargetRepair": false,
+    "sourceSpanEvidenceRenderedDeterministically": true,
+    "completeTranscriptReviewIsDistributedProcessClaim": true
+  },
+  "inputs": {
+    "partitionPreparation": "docs/calibration/v4.2.21.9/generalized-partition/preparation-manifest.json",
+    "workflow": "docs/assessment-workflow-v4.2.21.10.md",
+    "manual": "docs/calibration/v4.2.21.10/structural-partition-primary/manual.md",
+    "primarySchemaTemplate": "docs/calibration/v4.2.21.10/structural-partition-primary/primary-template.schema.json"
+  },
+  "sourceHashes": {
+    "docs/calibration/v4.2.21.9/generalized-partition/preparation-manifest.json": "2c02622d13a3ca63c22fd043ec861e33953e51e182b3e7636d25cb0fce35d561",
+    "docs/assessment-workflow-v4.2.21.10.md": "3b48b0f7dd11598c995377faae71862d3c5f80f4e4c9e47d8dfa9b4fbe847590",
+    "docs/calibration/v4.2.21.10/structural-partition-primary/manual.md": "61014b06bc5f313007dca1e17ed6987d195c31b27328c791180ce1743029283e",
+    "scripts/lib/v422110-structural-partition-primary.mjs": "11e92b2e04ba477eebe41725c9e2c5a26e927affb7ddc6e26f6542941516daa6",
+    "scripts/test-v422110-structural-partition-primary.mjs": "db136fd702a4d370fcce215a48fd50b09eaabaecaf54293a2559db35bd4f1b30",
+    "scripts/preregister-v422110-structural-partition-primary.mjs": "d43a26c1c769f57ceaf23ff794fc786c5541b3c9fcc07379768972c9a99b8d04"
+  },
+  "totals": {
+    "modelContextsExecuted": 0,
+    "audioCalls": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "discoveryExecutionManifest": true,
+    "discoveryModelExecution": false,
+    "primaryPacketPreparation": false,
+    "primaryModelExecution": false,
+    "passBModelExecution": false,
+    "audioExecution": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
