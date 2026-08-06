@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "4.2.21.17.3-disagreement-audio-preparation",
+  "protocolId": "v4.2.21.17.3-decomposed-consensus",
+  "status": "deterministic-disagreements-extracted-audio-source-preparation-authorized",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "sourceJudgmentAnalysis": "docs/calibration/v4.2.21.17.2/independent-judgment-schema-recovery/analysis.json",
+  "debates": [
+    {
+      "debateNumber": "133",
+      "debateId": "hawkins-folley-free-will-idealism-2026",
+      "moveCount": 17,
+      "disputedMoves": 17,
+      "nondisputedScalarMerges": 35,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/calibration/v4.2.21.17.3/deterministic-disagreement-audio-prep/disagreements/debate-133.json"
+    },
+    {
+      "debateNumber": "178",
+      "debateId": "ehrman-licona-who-wrote-gospels-2025",
+      "moveCount": 17,
+      "disputedMoves": 16,
+      "nondisputedScalarMerges": 42,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [
+        "con-justin-gospel-of-peter",
+        "con-matthew-financial-vocabulary"
+      ],
+      "disagreementPath": "docs/calibration/v4.2.21.17.3/deterministic-disagreement-audio-prep/disagreements/debate-178.json"
+    },
+    {
+      "debateNumber": "182",
+      "debateId": "white-ally-sin-salvation-quran-bible-2013",
+      "moveCount": 20,
+      "disputedMoves": 20,
+      "nondisputedScalarMerges": 29,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/calibration/v4.2.21.17.3/deterministic-disagreement-audio-prep/disagreements/debate-182.json"
+    }
+  ],
+  "fieldCounts": {
+    "importancePair": 2,
+    "attributionPair": 0,
+    "responsePair": 42,
+    "charityPair": 9,
+    "assessmentConfidencePair": 2,
+    "logicalCoherence": 14,
+    "evidenceWarrant": 17,
+    "relevanceBurden": 11,
+    "representationalCharity": 15,
+    "precisionClarity": 26,
+    "epistemicCalibration": 28
+  },
+  "triggerCounts": {
+    "importanceMismatch": 2,
+    "responseStructureMismatch": 35,
+    "materialWithinClassResponsiveness": 20,
+    "burdenContactMismatch": 11,
+    "precisionFindingsMismatch": 26,
+    "calibrationFindingsMismatch": 28,
+    "attributionConfidenceMismatch": 0,
+    "charityTestedMismatch": 9,
+    "assessmentConfidenceMismatch": 2,
+    "mediumConfidenceAudioRequired": 2,
+    "attributionAudioRequired": 0
+  },
+  "adjudicationWorkload": {
+    "disputedMoves": 53,
+    "totalMoves": 54,
+    "disputedMoveRate": 0.9815,
+    "candidateSelections": 172,
+    "burdenAdjustmentDisputes": 6,
+    "oneAdjudicationContextPerDebateSufficient": true
+  },
+  "audioWorkload": {
+    "moves": 2,
+    "debates": [
+      "178"
+    ],
+    "allEitherPassMediumAssessmentMovesIncluded": true,
+    "modelOrApiCallsMade": 0,
+    "sourceAudioPrepared": false,
+    "verificationCompleted": false
+  },
+  "scoreBlindness": {
+    "diagnosticMoveScoresComputed": 0,
+    "weightedMoveScoresComputed": 0,
+    "sectionScoresComputed": 0,
+    "sideScoresComputed": 0,
+    "debateScoresComputed": 0,
+    "scoreBasedTriggers": 0
+  },
+  "totals": {
+    "modelContexts": 0,
+    "audioCalls": 0,
+    "retries": 0,
+    "semanticRepairs": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "audioSourcePreparation": true,
+    "audioVerificationExecution": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
