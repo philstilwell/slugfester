@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "4.2.21.17.13-replacement-held-out-five-screening",
+  "protocolId": "v4.2.21.17.13-replacement-held-out-five",
+  "status": "replacement-held-out-five-screened-source-preparation-authorized",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "sourceBoundary": {
+    "motionAndRouteMetadataOnly": true,
+    "transcriptContentSemanticallyInspected": false,
+    "audioAccessed": false,
+    "legacyAssessmentContentAccessed": false,
+    "legacyScoresAccessed": false,
+    "priorJudgmentsAccessed": false,
+    "candidateRanksReoptimized": false
+  },
+  "decisions": [
+    {
+      "debateNumber": "38",
+      "debateId": "mcdowell-ehrman-moral-objectivity-2026",
+      "assignedFamily": "morality-ethics",
+      "classifierReplays": true,
+      "route": "direct",
+      "routeReplays": true,
+      "dyadic": true,
+      "transcriptChainPresent": true,
+      "durationBin": "60-to-89-minutes",
+      "captionKind": "auto",
+      "partitionSeverity": null
+    },
+    {
+      "debateNumber": "43",
+      "debateId": "meyer-halper-cosmology-fine-tuning-2026",
+      "assignedFamily": "science-origins",
+      "classifierReplays": true,
+      "route": "partition",
+      "routeReplays": true,
+      "dyadic": true,
+      "transcriptChainPresent": true,
+      "durationBin": "90-minutes-or-more",
+      "captionKind": "auto",
+      "partitionSeverity": "heavy-partition"
+    },
+    {
+      "debateNumber": "77",
+      "debateId": "feser-oppy-arguments-for-god-2020",
+      "assignedFamily": "general-theism-religion",
+      "classifierReplays": true,
+      "route": "partition",
+      "routeReplays": true,
+      "dyadic": true,
+      "transcriptChainPresent": true,
+      "durationBin": "90-minutes-or-more",
+      "captionKind": "auto",
+      "partitionSeverity": "moderate-partition"
+    },
+    {
+      "debateNumber": "160",
+      "debateId": "pinker-douthat-do-we-need-god-2026",
+      "assignedFamily": "morality-ethics",
+      "classifierReplays": true,
+      "route": "direct",
+      "routeReplays": true,
+      "dyadic": true,
+      "transcriptChainPresent": true,
+      "durationBin": "under-60-minutes",
+      "captionKind": "auto",
+      "partitionSeverity": null
+    },
+    {
+      "debateNumber": "193",
+      "debateId": "crossan-licona-historical-jesus-2018",
+      "assignedFamily": "resurrection-history",
+      "classifierReplays": true,
+      "route": "partition",
+      "routeReplays": true,
+      "dyadic": true,
+      "transcriptChainPresent": true,
+      "durationBin": "90-minutes-or-more",
+      "captionKind": "human",
+      "partitionSeverity": "near-direct-ceiling"
+    }
+  ],
+  "audit": {
+    "debates": 5,
+    "direct": 2,
+    "partition": 3,
+    "distinctFamilies": 4,
+    "distinctDurationBins": 3,
+    "distinctCaptionKinds": 2,
+    "distinctPartitionSeverityBins": 3,
+    "classifierReplayPassed": 5,
+    "routeReplayPassed": 5,
+    "dyadic": 5,
+    "transcriptChainsPresent": 5,
+    "failedFiveOverlap": 0
+  },
+  "authorization": {
+    "sourcePacketPreparation": true,
+    "candidateDiscoveryPreparation": false,
+    "modelExecution": false,
+    "audioExecution": false,
+    "adjudicationExecution": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
