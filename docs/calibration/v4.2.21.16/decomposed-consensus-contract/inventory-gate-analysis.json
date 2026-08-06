@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "4.2.21.16.1-score-blind-inventory-gate-analysis",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "status": "retired-partition-three-inventory-gate-failed-analysis-only",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "execution": {
+    "contextsPlanned": 3,
+    "contextsAttempted": 3,
+    "validContexts": 2,
+    "invalidContexts": 1,
+    "retries": 0,
+    "totalElapsedMs": 1059983,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "debates": [
+    {
+      "debateNumber": "133",
+      "status": "completed-valid",
+      "elapsedMs": 90765,
+      "accepted": true,
+      "sections": 5,
+      "moves": 17,
+      "proMoves": 9,
+      "conMoves": 8,
+      "replies": 12,
+      "mediumOrLowAttributionMoves": [],
+      "finalEvidenceSourceExact": true,
+      "ratingsAbsent": true,
+      "responseTopologyAbsent": true
+    },
+    {
+      "debateNumber": "178",
+      "status": "completed-valid",
+      "elapsedMs": 64287,
+      "accepted": true,
+      "sections": 5,
+      "moves": 17,
+      "proMoves": 8,
+      "conMoves": 9,
+      "replies": 12,
+      "mediumOrLowAttributionMoves": [],
+      "finalEvidenceSourceExact": true,
+      "ratingsAbsent": true,
+      "responseTopologyAbsent": true
+    },
+    {
+      "debateNumber": "182",
+      "status": "timed-out",
+      "elapsedMs": 904931,
+      "accepted": false,
+      "failure": "timeout"
+    }
+  ],
+  "acceptance": {
+    "threeValidInventories": false,
+    "threeDeterministicCompilations": false,
+    "semanticRepairs": 0,
+    "ratings": 0,
+    "responseTopology": 0,
+    "scores": 0,
+    "passed": false
+  },
+  "interpretation": {
+    "scoreBlindCurationOperationalForReturnedContexts": true,
+    "validLockedInventoriesReusableInTransportRecovery": [
+      "133",
+      "178"
+    ],
+    "failureLocalizedToLargestContext": true,
+    "timeoutEnforcementDriftDetected": true,
+    "inventorySpecificProjectionRecommended": true,
+    "everyCandidateMustRemainAvailable": true,
+    "semanticCandidateDownselectionRecommended": false,
+    "independentJudgmentPreparationRecommended": false
+  },
+  "recoveryRecommendation": {
+    "protocolSuccessorRequired": true,
+    "executeDebates": [
+      "182"
+    ],
+    "reuseAcceptedLockedInventories": [
+      "133",
+      "178"
+    ],
+    "removeOnlyValidatorOwnedCandidateMetadataFromModelTransport": [
+      "attributionConfidence",
+      "attributionBasis",
+      "candidateConfidence",
+      "candidate evidence rendering diagnostics"
+    ],
+    "retainForEveryCandidate": [
+      "candidate ID",
+      "side",
+      "speaker",
+      "source chronology",
+      "discovery move-kind advisory",
+      "proposed proposition",
+      "load-bearing level and reason",
+      "response intent",
+      "context summary",
+      "source-exact excerpt"
+    ],
+    "semanticCandidateDownselection": false,
+    "retry": false,
+    "sameProtocolRerun": false
+  },
+  "authorization": {
+    "inventoryTransportRecoveryDesign": true,
+    "independentJudgmentPreparation": false,
+    "independentJudgmentExecutionManifest": false,
+    "independentJudgmentModelExecution": false,
+    "disagreementExtraction": false,
+    "audioVerification": false,
+    "adjudication": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
