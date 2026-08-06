@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "4.2.21.17.4-medium-confidence-audio-model-execution",
+  "protocolId": "v4.2.21.17.4-decomposed-consensus",
+  "status": "two-paid-audio-transcriptions-completed",
+  "callsPlanned": 2,
+  "callsAttempted": 2,
+  "callsCompleted": 2,
+  "callsSkipped": 0,
+  "attempts": 2,
+  "retries": 0,
+  "correctionCalls": 0,
+  "commonRequestFailure": false,
+  "results": [
+    {
+      "moveId": "con-justin-gospel-of-peter",
+      "status": "completed",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-06T09:01:19.455Z",
+      "completedAt": "2026-08-06T09:01:23.394Z",
+      "elapsedMs": 3938,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "transcriptWritten": true,
+      "transcriptSha256": "1a041c4ba4345d83bd4a9486b45e84ff7b07d7f6935d372e0deb19372e2fcbee",
+      "stdoutSha256": "338fd9620ef3953d5de32de355930f0ea5e9f5daacdfc97e4ce3ad2699d446e4",
+      "stderrSha256": "f856c6cdf394c41f596db32f1febc0a51614fcdf8af78739201e1f3c20166219",
+      "failureMessage": null,
+      "durationSeconds": 79.8,
+      "estimatedCostUsd": 0.00399
+    },
+    {
+      "moveId": "con-matthew-financial-vocabulary",
+      "status": "completed",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-06T09:01:23.395Z",
+      "completedAt": "2026-08-06T09:01:25.649Z",
+      "elapsedMs": 2254,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "transcriptWritten": true,
+      "transcriptSha256": "c2d3d0e9387959ce7877567d2e506de776e861f4daa59e78909dd43e1d68f049",
+      "stdoutSha256": "e96085e497c5423337afcf477c7bf58022d127d24fda6cccc513ba8d2c055ae2",
+      "stderrSha256": "f856c6cdf394c41f596db32f1febc0a51614fcdf8af78739201e1f3c20166219",
+      "failureMessage": null,
+      "durationSeconds": 74.6,
+      "estimatedCostUsd": 0.00373
+    }
+  ],
+  "estimatedSuccessfulProcessingCostUsd": 0.0077,
+  "maximumAuthorizedCostUsd": 0.01,
+  "meteredJudgmentModelApiCostUsd": 0,
+  "authorization": {
+    "deterministicAudioAnalysis": true,
+    "retry": false,
+    "correctionCall": false,
+    "adjudicationPacketPreparation": false,
+    "scoreDerivation": false
+  }
+}

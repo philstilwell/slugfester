@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "4.2.21.17.4-medium-confidence-audio-verification-audit",
+  "protocolId": "v4.2.21.17.4-decomposed-consensus",
+  "status": "passed-all-two-medium-assessment-moves-audio-verified",
+  "debates": [
+    {
+      "debateNumber": "178",
+      "debateId": "ehrman-licona-who-wrote-gospels-2025",
+      "moves": [
+        {
+          "debateNumber": "178",
+          "debateId": "ehrman-licona-who-wrote-gospels-2025",
+          "moveId": "con-justin-gospel-of-peter",
+          "expectedSpeaker": "Bart Ehrman",
+          "status": "verified",
+          "clip": {
+            "path": "output/transcribe/v4221173-audio-verification/debate-178/clips/con-justin-gospel-of-peter.mp3",
+            "sha256": "26054768899e3e4b9a77c1f96404a1d6a9841abe8a8209b8046652f1ee1ceeac",
+            "durationSeconds": 79.8
+          },
+          "transcript": {
+            "path": "output/transcribe/v4221173-audio-verification/debate-178/transcripts/con-justin-gospel-of-peter.transcript.txt",
+            "sha256": "1a041c4ba4345d83bd4a9486b45e84ff7b07d7f6935d372e0deb19372e2fcbee",
+            "model": "gpt-4o-mini-transcribe"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "excerptRecall": 0.9166666666666666,
+            "minimumRequiredRecall": 0.8,
+            "referenceTokenCount": 72,
+            "audioTranscriptTokenCount": 237,
+            "audioTranscriptNonempty": true,
+            "clipHashMatched": true,
+            "transcriptHashMatched": true
+          }
+        },
+        {
+          "debateNumber": "178",
+          "debateId": "ehrman-licona-who-wrote-gospels-2025",
+          "moveId": "con-matthew-financial-vocabulary",
+          "expectedSpeaker": "Bart Ehrman",
+          "status": "verified",
+          "clip": {
+            "path": "output/transcribe/v4221173-audio-verification/debate-178/clips/con-matthew-financial-vocabulary.mp3",
+            "sha256": "8ef6d751dbe70b8accd4ac1dc0c03dab1d3e6c8784c066ac458fe0624548f150",
+            "durationSeconds": 74.6
+          },
+          "transcript": {
+            "path": "output/transcribe/v4221173-audio-verification/debate-178/transcripts/con-matthew-financial-vocabulary.transcript.txt",
+            "sha256": "c2d3d0e9387959ce7877567d2e506de776e861f4daa59e78909dd43e1d68f049",
+            "model": "gpt-4o-mini-transcribe"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "excerptRecall": 0.9710144927536232,
+            "minimumRequiredRecall": 0.8,
+            "referenceTokenCount": 69,
+            "audioTranscriptTokenCount": 196,
+            "audioTranscriptNonempty": true,
+            "clipHashMatched": true,
+            "transcriptHashMatched": true
+          }
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8
+  },
+  "totals": {
+    "requiredMoves": 2,
+    "verified": 2,
+    "unresolved": 0,
+    "paidTranscriptionCallsAttempted": 2,
+    "paidTranscriptionCallsCompleted": 2,
+    "retries": 0,
+    "corrections": 0,
+    "clipMinutes": 2.5733,
+    "estimatedSuccessfulProcessingCostUsd": 0.0077,
+    "maximumAuthorizedCostUsd": 0.01,
+    "judgmentModelApiCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "authorization": {
+    "adjudicationPacketPreparation": true,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  }
+}
