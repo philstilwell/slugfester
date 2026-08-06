@@ -1,0 +1,7 @@
+# Slugfester Hard-Route Independent Judgment Preparation v4.2.21.17.25
+
+Each of the five score-blind locked inventories is converted into two isolated performance-judgment contexts, Pass A and Pass B. Both passes use 5.6 Sol at low reasoning effort and receive byte-identical locked inventory content, the same source packet and consolidated authoritative rubric manual, separate reviewer identities, and schemas generated from the locked chronology. The consolidation removes duplicate wording from the v4.0, v4.0.1, v4.1, and isolated-judgment instructions without removing an anchor. Neither pass can see the other pass, alter candidate selection, calculate a score, name a winner, write Overall Commentary, or create an AI Extension.
+
+Every reply target enum contains only earlier opposing locked moves. The model supplies response components, within-class responsiveness, burden-contact code, within-tier relevance, direct ratings, precision and calibration findings, charity, evidence rationale, confidence, and the strictly excluded residual-adjustment candidate. Repository code derives response class, absolute responsiveness, burden tier range, precision, calibration, and any eligible residual only during validation; aggregate scores remain prohibited.
+
+Preparation must produce ten contexts below the proven transport ceiling, remove the unsupported `uniqueItems` response-schema keyword while retaining runtime uniqueness checks, and verify identical canonical inventory hashes within every A/B pair. Passing authorizes only a frozen execution manifest.
