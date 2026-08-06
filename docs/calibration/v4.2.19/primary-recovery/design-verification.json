@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "4.2.19-primary-recovery-design-verification",
+  "protocolId": "v4.2.19-primary-recovery",
+  "status": "passed-code-only-recovery-design",
+  "developmentOnly": true,
+  "routes": {
+    "debate102": {
+      "route": "partition",
+      "sourceLedgerEvents": 2625,
+      "compactCopiedInputBytes": 187972,
+      "limits": {
+        "sourceLedgerEventsMaximum": 1800,
+        "compactCopiedInputBytesMaximum": 150000
+      },
+      "exceeded": [
+        "source-ledger-events",
+        "compact-copied-input-bytes"
+      ],
+      "durationUsedForRouting": false
+    },
+    "debate107": {
+      "route": "direct",
+      "sourceLedgerEvents": 1296,
+      "compactCopiedInputBytes": 116803,
+      "limits": {
+        "sourceLedgerEventsMaximum": 1800,
+        "compactCopiedInputBytesMaximum": 150000
+      },
+      "exceeded": [],
+      "durationUsedForRouting": false
+    },
+    "debate126": {
+      "route": "direct",
+      "sourceLedgerEvents": 1559,
+      "compactCopiedInputBytes": 126265,
+      "limits": {
+        "sourceLedgerEventsMaximum": 1800,
+        "compactCopiedInputBytesMaximum": 150000
+      },
+      "exceeded": [],
+      "durationUsedForRouting": false
+    }
+  },
+  "contracts": {
+    "exactEvidenceCueRequired": true,
+    "repositoryOwnedBoundedExcerptCompilation": true,
+    "repositoryOwnedChronology": true,
+    "targetEdgesValidatedAfterChronology": true,
+    "repositoryDerivedResponseClass": true,
+    "modelSuppliesWithinClassPositionOnly": true,
+    "absoluteResponsivenessRejectedFromModelOutput": true
+  },
+  "replayFixtures": {
+    "source": "synthetic re-encoding of preserved rejected v4.2.18.2 raw outputs",
+    "historicalGateOutputsAccepted": false,
+    "debate107": {
+      "status": "passed",
+      "moves": 12,
+      "chronologyReordered": false,
+      "historicalClassChanges": [
+        {
+          "moveId": "m10",
+          "historicalClass": "partial-answer",
+          "derivedClass": "diagnostic-defeat"
+        },
+        {
+          "moveId": "m12",
+          "historicalClass": "full-answer",
+          "derivedClass": "diagnostic-defeat"
+        }
+      ]
+    },
+    "debate126": {
+      "status": "passed",
+      "moves": 20,
+      "chronologyReordered": true,
+      "historicalClassChanges": [
+        {
+          "moveId": "m04-con-feature-clarification",
+          "historicalClass": "full-answer",
+          "derivedClass": "justified-reframe"
+        },
+        {
+          "moveId": "m05-pro-mind-counterexample",
+          "historicalClass": "full-answer",
+          "derivedClass": "partial-answer"
+        },
+        {
+          "moveId": "m09-pro-metaphysical-impossibility",
+          "historicalClass": "full-answer",
+          "derivedClass": "justified-reframe"
+        },
+        {
+          "moveId": "m15-pro-tensed-coming",
+          "historicalClass": "full-answer",
+          "derivedClass": "justified-reframe"
+        }
+      ],
+      "formerlyInconsistentMoveDerivedClass": "partial-answer",
+      "mappedResponsivenessAtFixtureMidpoint": 67
+    }
+  },
+  "mutationTests": {
+    "absentCueRejected": true,
+    "modelAuthoredClassRejected": true,
+    "modelAuthoredAbsoluteResponsivenessRejected": true,
+    "futureTargetRejectedAfterCanonicalOrdering": true,
+    "ambiguousExceptionalClassRejected": true,
+    "unchangedHistoricalOutputRejected": true
+  },
+  "totals": {
+    "modelContexts": 0,
+    "retries": 0,
+    "corrections": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "recoverySamplePreparation": true,
+    "recoveryModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
