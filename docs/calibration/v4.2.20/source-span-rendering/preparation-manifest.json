@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "4.2.20-source-span-three-preparation",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "status": "prepared-three-source-span-direct-contexts",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "dyadicOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "sample": "docs/calibration/v4.2.20/source-span-rendering/source-only-sample.json",
+  "screening": "docs/calibration/v4.2.20/source-span-rendering/sample-screening.json",
+  "contexts": [
+    {
+      "debateNumber": "27",
+      "debateId": "oconnor-turek-evil-moral-argument-2017",
+      "family": "evil-hiddenness",
+      "durationSeconds": 3516,
+      "captionKind": "auto",
+      "route": "direct",
+      "routeEvidence": {
+        "route": "direct",
+        "sourceLedgerEvents": 1691,
+        "compactCopiedInputBytes": 141842,
+        "limits": {
+          "sourceLedgerEventsMaximum": 1800,
+          "compactCopiedInputBytesMaximum": 150000
+        },
+        "exceeded": [],
+        "durationUsedForRouting": false
+      },
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.2.20/source-span-rendering/packets/debate-27.json",
+      "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.20/debate-27.jsonl",
+      "originalTranscript": ".assessment-cache/captions/b5a3MxIqZOs/transcript.txt",
+      "originalEvents": ".assessment-cache/captions/b5a3MxIqZOs/events.json",
+      "originalManifest": ".assessment-cache/captions/b5a3MxIqZOs/manifest.json",
+      "rawOutput": "docs/calibration/v4.2.20/source-span-rendering/primary-outputs/debate-27.json",
+      "compiledOutput": "docs/calibration/v4.2.20/source-span-rendering/primary-compiled/debate-27.json",
+      "sourceLedgerSha256": "7b5fdd832a635d9acbce2ca6895b8d6e671a3f867d7ece6401d86a493cfa35fd",
+      "sourceLedgerEvents": 1691,
+      "sourceLedgerBytes": 99769,
+      "packetBytes": 3051,
+      "sharedInputBytes": 39022,
+      "compactCopiedInputBytes": 141842
+    },
+    {
+      "debateNumber": "188",
+      "debateId": "kastrup-blackmore-consciousness-idealism-2023",
+      "family": "mind-agency",
+      "durationSeconds": 3578,
+      "captionKind": "auto",
+      "route": "direct",
+      "routeEvidence": {
+        "route": "direct",
+        "sourceLedgerEvents": 1453,
+        "compactCopiedInputBytes": 126638,
+        "limits": {
+          "sourceLedgerEventsMaximum": 1800,
+          "compactCopiedInputBytesMaximum": 150000
+        },
+        "exceeded": [],
+        "durationUsedForRouting": false
+      },
+      "controlSampleSelected": false,
+      "packet": "docs/calibration/v4.2.20/source-span-rendering/packets/debate-188.json",
+      "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.20/debate-188.jsonl",
+      "originalTranscript": ".assessment-cache/captions/X4YVgM2HPMk/transcript.txt",
+      "originalEvents": ".assessment-cache/captions/X4YVgM2HPMk/events.json",
+      "originalManifest": ".assessment-cache/captions/X4YVgM2HPMk/manifest.json",
+      "rawOutput": "docs/calibration/v4.2.20/source-span-rendering/primary-outputs/debate-188.json",
+      "compiledOutput": "docs/calibration/v4.2.20/source-span-rendering/primary-compiled/debate-188.json",
+      "sourceLedgerSha256": "067b6a8b22dafc5897e50154d1019582135b44f2596c413a3ac8371bfd23ee76",
+      "sourceLedgerEvents": 1453,
+      "sourceLedgerBytes": 84564,
+      "packetBytes": 3052,
+      "sharedInputBytes": 39022,
+      "compactCopiedInputBytes": 126638
+    },
+    {
+      "debateNumber": "195",
+      "debateId": "russell-copleston-existence-of-god-1948",
+      "family": "morality-ethics",
+      "durationSeconds": 3376,
+      "captionKind": "auto",
+      "route": "direct",
+      "routeEvidence": {
+        "route": "direct",
+        "sourceLedgerEvents": 1420,
+        "compactCopiedInputBytes": 121252,
+        "limits": {
+          "sourceLedgerEventsMaximum": 1800,
+          "compactCopiedInputBytesMaximum": 150000
+        },
+        "exceeded": [],
+        "durationUsedForRouting": false
+      },
+      "controlSampleSelected": true,
+      "packet": "docs/calibration/v4.2.20/source-span-rendering/packets/debate-195.json",
+      "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.20/debate-195.jsonl",
+      "originalTranscript": ".assessment-cache/captions/wMsbD1L5IlQ/transcript.txt",
+      "originalEvents": ".assessment-cache/captions/wMsbD1L5IlQ/events.json",
+      "originalManifest": ".assessment-cache/captions/wMsbD1L5IlQ/manifest.json",
+      "rawOutput": "docs/calibration/v4.2.20/source-span-rendering/primary-outputs/debate-195.json",
+      "compiledOutput": "docs/calibration/v4.2.20/source-span-rendering/primary-compiled/debate-195.json",
+      "sourceLedgerSha256": "533cb778a2852ba58a3f0c15eb525d7bb44213b703650c02b6ea1e3f225f6976",
+      "sourceLedgerEvents": 1420,
+      "sourceLedgerBytes": 79168,
+      "packetBytes": 3062,
+      "sharedInputBytes": 39022,
+      "compactCopiedInputBytes": 121252
+    }
+  ],
+  "inputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "manual": "docs/calibration/v4.2.20/source-span-rendering/manual.md",
+    "schema": "docs/calibration/v4.2.20/source-span-rendering/primary.schema.json"
+  },
+  "sourcePolicy": {
+    "completeLocalTranscriptChains": true,
+    "originalTranscriptAndEventsStoredLocally": true,
+    "oneLosslessTimestampedLedgerPerDebate": true,
+    "duplicatePlainTranscriptDeliveryProhibited": true,
+    "routeUsesDuration": false,
+    "directRouteRequiresBothEventAndByteCeilings": true,
+    "modelSelectsEventSpanOnly": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "repositoryOwnedLexicalSalienceRendering": true,
+    "compiledExcerptMaximumCharacters": 450,
+    "compiledExcerptTokenRange": [
+      12,
+      90
+    ],
+    "repositoryOwnedChronology": true,
+    "futureTargetHardFailure": true,
+    "automaticTargetRepairProhibited": true,
+    "repositoryDerivedResponseClass": true,
+    "modelAuthoredAbsoluteResponsivenessProhibited": true
+  },
+  "controlPolicy": {
+    "selectedDebateId": "russell-copleston-existence-of-god-1948",
+    "selectedDebateNumber": "195",
+    "visibleToPrimaryJudge": false,
+    "purpose": "force later isolated Pass B and adjudication-path exercise"
+  },
+  "audioPolicy": {
+    "mediumConfidenceMoveRequiresAudioVerification": true,
+    "audioVerificationOccursBeforeAdjudicationAndScoreDerivation": true
+  },
+  "executionPolicy": {
+    "attemptsPerDebate": 1,
+    "retries": 0,
+    "postHocCorrectionAuthorized": false,
+    "semanticNormalizationAuthorized": false,
+    "scoreDerivationAuthorized": false
+  },
+  "totals": {
+    "debates": 3,
+    "sourceLedgerEvents": 4564,
+    "meanCompactCopiedInputBytes": 129911,
+    "maximumCompactCopiedInputBytes": 141842,
+    "modelContextsExecuted": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "deterministicFixtures": true,
+    "primaryExecutionManifest": true,
+    "primaryModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}

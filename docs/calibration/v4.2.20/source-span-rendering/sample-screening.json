@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "4.2.20-source-span-motion-route-screening",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "status": "sample-screened-packet-preparation-authorized",
+  "AIOnly": true,
+  "sourceBoundary": {
+    "motionMetadataOnlyForSemanticScreen": true,
+    "routeMetricsMechanicallyReplayed": true,
+    "transcriptContentExposedToScreeningModel": false,
+    "audioAccessed": false,
+    "legacyAssessmentContentAccessed": false,
+    "legacyScoresAccessed": false,
+    "priorJudgmentsAccessed": false,
+    "candidateRanksReoptimized": false
+  },
+  "decisions": [
+    {
+      "debateNumber": "27",
+      "debateId": "oconnor-turek-evil-moral-argument-2017",
+      "assignedFamily": "evil-hiddenness",
+      "classifierReplays": true,
+      "substantiveAnchorPresent": true,
+      "directRouteReplays": true,
+      "durationUsedForRouting": false,
+      "dyadic": true
+    },
+    {
+      "debateNumber": "188",
+      "debateId": "kastrup-blackmore-consciousness-idealism-2023",
+      "assignedFamily": "mind-agency",
+      "classifierReplays": true,
+      "substantiveAnchorPresent": true,
+      "directRouteReplays": true,
+      "durationUsedForRouting": false,
+      "dyadic": true
+    },
+    {
+      "debateNumber": "195",
+      "debateId": "russell-copleston-existence-of-god-1948",
+      "assignedFamily": "morality-ethics",
+      "classifierReplays": true,
+      "substantiveAnchorPresent": true,
+      "directRouteReplays": true,
+      "durationUsedForRouting": false,
+      "dyadic": true
+    }
+  ],
+  "audit": {
+    "debates": 3,
+    "distinctFamilies": 3,
+    "classifierReplayPassed": 3,
+    "substantiveAnchorPassed": 3,
+    "directRoutePassed": 3,
+    "dyadic": 3
+  },
+  "authorization": {
+    "compactSourcePacketPreparation": true,
+    "primaryModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
