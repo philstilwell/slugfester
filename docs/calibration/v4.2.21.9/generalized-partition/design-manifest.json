@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "4.2.21.9-generalized-partition-design",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "status": "generalized-partition-design-frozen-packet-preparation-authorized",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "partitionPolicy": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10,
+    "routingInputs": [
+      "source-ledger-events",
+      "compact-copied-input-bytes"
+    ],
+    "durationUsedForRouting": false,
+    "adaptiveGreedyContextPacking": true,
+    "twoSidedBoundaryContext": true,
+    "everyEventOwnedExactlyOnce": true,
+    "candidateOwnedBySourceSpanStartEvent": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "candidateMayStartInLookbehind": false,
+    "scoreBlindDiscovery": true,
+    "modelAuthoredMoveKind": false,
+    "modelAuthoredEvidenceText": false,
+    "repositoryDerivedMoveKind": true,
+    "silentCandidateDeduplication": false,
+    "futureLocalTargetHardFailure": true,
+    "crossChunkTargetRequiresDescription": true
+  },
+  "consensusCompatibility": {
+    "discoveryPrecedesPrimaryPassA": true,
+    "passASelectsAndJudgesCandidateGroundedInventory": true,
+    "passBReceivesOnlyLockedPassAInventoryAndSourceEvidence": true,
+    "deterministicDisagreementExtraction": true,
+    "isolatedDisputeOnlyAdjudication": true,
+    "mediumConfidenceAudioVerificationBeforeAdjudication": true,
+    "scoresOnlyAfterAdjudication": true,
+    "existingPassedConsensusBackendReused": true
+  },
+  "structuralRiskControl": {
+    "priorHardcodedDebateAndChunkBoundariesRetired": true,
+    "redundantModelAuthoredMoveKindRetired": true,
+    "priorLeanIntegratedSectionShapeNotAuthorized": true,
+    "nextRequiredDesign": "candidate-grounded Pass A schema with structurally enforced one-to-two moves per side per section"
+  },
+  "inputs": {
+    "screening": "docs/calibration/v4.2.21.8/held-out-five/sample-screening.json",
+    "workflow": "docs/assessment-workflow-v4.2.21.9.md",
+    "discoveryManual": "docs/calibration/v4.2.21.9/generalized-partition/discovery-manual.md",
+    "discoverySchemaTemplate": "docs/calibration/v4.2.21.9/generalized-partition/discovery-template.schema.json"
+  },
+  "sourceHashes": {
+    "docs/calibration/v4.2.21.8/held-out-five/sample-screening.json": "936529acd973baeae22511af392a6a8705211666b273a0be3ca554c6e963ecd4",
+    "docs/assessment-workflow-v4.2.21.9.md": "a10eabe6b1d459adaaa1be135e4c519a8d7e33c28e2634f72fefd400a101d9df",
+    "docs/calibration/v4.2.21.9/generalized-partition/discovery-manual.md": "0ebc16a857fb70068e744d8b519b493d706d10807ae3a6c5ae70d66511d22bb2",
+    "scripts/lib/v42219-generalized-partition.mjs": "f1a2e70a8c4e21b7823d9374bb2e6e4b5fd77f2fe63e98d8378362cfb50a4d6b",
+    "scripts/test-v42219-generalized-partition.mjs": "a157e84f21ecf60d030ac63fa1e53e645d3550aff1caacd8ccd8a6936d6f98fd",
+    "scripts/preregister-v42219-generalized-partition.mjs": "075985d70d524d403ab37a501f7d443298cb22bc8344b8b92ae2cf637b6bb6c4"
+  },
+  "totals": {
+    "modelContextsExecuted": 0,
+    "audioCalls": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "syntheticFixtures": true,
+    "partitionLanePacketPreparation": true,
+    "discoveryExecutionManifest": false,
+    "discoveryModelExecution": false,
+    "primaryModelExecution": false,
+    "passBModelExecution": false,
+    "audioExecution": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
