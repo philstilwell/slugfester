@@ -1,0 +1,1297 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v422114-narrow-candidate-grounded-primary-a",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "assessmentModel",
+    "calibrationOnly",
+    "isolation",
+    "routes",
+    "sectionJudgments",
+    "burdenCompletionAdjustment",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "4.2.21.14-candidate-grounded-primary-a"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "v4.2.21.14-narrow-primary-successor"
+    },
+    "debateNumber": {
+      "type": "string",
+      "minLength": 1
+    },
+    "debateId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "integrated-primary-judge"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "calibrationOnly": {
+      "type": "boolean",
+      "const": true
+    },
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "legacyAssessmentsUnavailable",
+        "calculatedTotalsUnavailable",
+        "winnerLabelsUnavailable",
+        "otherJudgmentsUnavailable",
+        "assessmentProseUnavailable",
+        "contaminationDetected"
+      ],
+      "properties": {
+        "legacyAssessmentsUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "calculatedTotalsUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "winnerLabelsUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "otherJudgmentsUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "assessmentProseUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "contaminationDetected": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    },
+    "routes": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "routeId",
+          "side",
+          "description",
+          "successCriteria",
+          "motionBridge",
+          "centralBridges",
+          "subsidiaryBridges"
+        ],
+        "properties": {
+          "routeId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 40
+          },
+          "successCriteria": {
+            "type": "string",
+            "minLength": 40
+          },
+          "motionBridge": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "bridgeId",
+              "tier",
+              "description"
+            ],
+            "properties": {
+              "bridgeId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "tier": {
+                "type": "string",
+                "const": "motion"
+              },
+              "description": {
+                "type": "string",
+                "minLength": 25
+              }
+            }
+          },
+          "centralBridges": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 4,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bridgeId",
+                "tier",
+                "description"
+              ],
+              "properties": {
+                "bridgeId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "tier": {
+                  "type": "string",
+                  "const": "central"
+                },
+                "description": {
+                  "type": "string",
+                  "minLength": 25
+                }
+              }
+            }
+          },
+          "subsidiaryBridges": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bridgeId",
+                "tier",
+                "description"
+              ],
+              "properties": {
+                "bridgeId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "tier": {
+                  "type": "string",
+                  "const": "subsidiary"
+                },
+                "description": {
+                  "type": "string",
+                  "minLength": 25
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "sectionJudgments": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sectionId",
+          "title",
+          "weightPercent",
+          "rationale",
+          "proSelections",
+          "conSelections"
+        ],
+        "properties": {
+          "sectionId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 3
+          },
+          "weightPercent": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 97
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 40
+          },
+          "proSelections": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "qualifiedCandidateId",
+                "moveId",
+                "moveKind",
+                "proposition",
+                "attributionBasis",
+                "importance",
+                "burdenContact",
+                "response",
+                "precisionFindings",
+                "calibrationFindings",
+                "charity",
+                "ratings",
+                "evidenceBasis",
+                "assessmentConfidence"
+              ],
+              "properties": {
+                "qualifiedCandidateId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "moveId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "proposition": {
+                  "type": "string",
+                  "minLength": 25
+                },
+                "attributionBasis": {
+                  "type": "string",
+                  "minLength": 40
+                },
+                "importance": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "burdenContact": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "polarity",
+                        "tier",
+                        "bridgeId"
+                      ],
+                      "properties": {
+                        "polarity": {
+                          "type": "string",
+                          "enum": [
+                            "support",
+                            "attack"
+                          ]
+                        },
+                        "tier": {
+                          "type": "string",
+                          "enum": [
+                            "motion",
+                            "central",
+                            "subsidiary"
+                          ]
+                        },
+                        "bridgeId": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    }
+                  ]
+                },
+                "response": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "decisiveTargetIds",
+                    "components",
+                    "issueBearingContraryMaterial",
+                    "rationale",
+                    "responsivenessWithinClass",
+                    "specialResponseMode"
+                  ],
+                  "properties": {
+                    "decisiveTargetIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "description": "IDs only of selected moves that occur earlier in source chronology; never target a later move."
+                    },
+                    "components": {
+                      "type": "array",
+                      "maxItems": 8,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "componentId",
+                          "targetMoveId",
+                          "text",
+                          "contacted",
+                          "decisive"
+                        ],
+                        "properties": {
+                          "componentId": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "targetMoveId": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "The ID of an earlier selected target move named in decisiveTargetIds."
+                          },
+                          "text": {
+                            "type": "string",
+                            "minLength": 15
+                          },
+                          "contacted": {
+                            "type": "boolean"
+                          },
+                          "decisive": {
+                            "type": "boolean"
+                          }
+                        }
+                      }
+                    },
+                    "issueBearingContraryMaterial": {
+                      "type": "boolean"
+                    },
+                    "rationale": {
+                      "type": "string",
+                      "minLength": 60
+                    },
+                    "responsivenessWithinClass": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "value",
+                        "rationale"
+                      ],
+                      "properties": {
+                        "value": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 100,
+                          "description": "Quality position within the response class that the repository derives."
+                        },
+                        "rationale": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    },
+                    "specialResponseMode": {
+                      "type": "string",
+                      "enum": [
+                        "none",
+                        "diagnostic-defeat",
+                        "justified-reframe"
+                      ]
+                    }
+                  }
+                },
+                "precisionFindings": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "propositionRecoverability",
+                    "termStability",
+                    "scopeStability",
+                    "qualificationExplicitness",
+                    "rationale"
+                  ],
+                  "properties": {
+                    "propositionRecoverability": {
+                      "type": "string",
+                      "enum": [
+                        "complete",
+                        "partial",
+                        "failed"
+                      ]
+                    },
+                    "termStability": {
+                      "type": "string",
+                      "enum": [
+                        "stable",
+                        "partly-unstable",
+                        "materially-unstable"
+                      ]
+                    },
+                    "scopeStability": {
+                      "type": "string",
+                      "enum": [
+                        "stable",
+                        "partly-unstable",
+                        "materially-unstable"
+                      ]
+                    },
+                    "qualificationExplicitness": {
+                      "type": "string",
+                      "enum": [
+                        "explicit",
+                        "not-needed",
+                        "implicit",
+                        "missing",
+                        "materially-misleading"
+                      ]
+                    },
+                    "rationale": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                },
+                "calibrationFindings": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "assertedForce",
+                    "warrantFit",
+                    "qualificationStatus",
+                    "uncertaintyAcknowledged",
+                    "rationale"
+                  ],
+                  "properties": {
+                    "assertedForce": {
+                      "type": "string",
+                      "enum": [
+                        "question",
+                        "possibility",
+                        "plausibility",
+                        "probability",
+                        "strong-probability",
+                        "necessity",
+                        "certainty"
+                      ]
+                    },
+                    "warrantFit": {
+                      "type": "string",
+                      "enum": [
+                        "matched",
+                        "slightly-overstated",
+                        "materially-overstated",
+                        "radically-overstated"
+                      ]
+                    },
+                    "qualificationStatus": {
+                      "type": "string",
+                      "enum": [
+                        "explicit",
+                        "not-needed",
+                        "implicit",
+                        "missing"
+                      ]
+                    },
+                    "uncertaintyAcknowledged": {
+                      "type": "string",
+                      "enum": [
+                        "yes",
+                        "no",
+                        "not-needed"
+                      ]
+                    },
+                    "rationale": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                },
+                "charity": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "tested",
+                    "alternative",
+                    "decisiveQualification"
+                  ],
+                  "properties": {
+                    "tested": {
+                      "type": "boolean"
+                    },
+                    "alternative": {
+                      "type": "string"
+                    },
+                    "decisiveQualification": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "ratings": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "logicalCoherence",
+                    "evidenceWarrant",
+                    "relevanceBurden",
+                    "representationalCharity"
+                  ],
+                  "properties": {
+                    "logicalCoherence": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "value",
+                        "rationale"
+                      ],
+                      "properties": {
+                        "value": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 100
+                        },
+                        "rationale": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    },
+                    "evidenceWarrant": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "value",
+                        "rationale"
+                      ],
+                      "properties": {
+                        "value": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 100
+                        },
+                        "rationale": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    },
+                    "relevanceBurden": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "value",
+                        "rationale"
+                      ],
+                      "properties": {
+                        "value": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 100
+                        },
+                        "rationale": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    },
+                    "representationalCharity": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "value",
+                        "rationale"
+                      ],
+                      "properties": {
+                        "value": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 100
+                        },
+                        "rationale": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    }
+                  }
+                },
+                "evidenceBasis": {
+                  "type": "string",
+                  "minLength": 40
+                },
+                "assessmentConfidence": {
+                  "type": "string",
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ]
+                },
+                "moveKind": {
+                  "type": "string",
+                  "enum": [
+                    "constructive",
+                    "reply"
+                  ],
+                  "description": "Primary A's global classification; the discovery candidate kind is advisory only."
+                }
+              }
+            }
+          },
+          "conSelections": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "qualifiedCandidateId",
+                "moveId",
+                "moveKind",
+                "proposition",
+                "attributionBasis",
+                "importance",
+                "burdenContact",
+                "response",
+                "precisionFindings",
+                "calibrationFindings",
+                "charity",
+                "ratings",
+                "evidenceBasis",
+                "assessmentConfidence"
+              ],
+              "properties": {
+                "qualifiedCandidateId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "moveId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "proposition": {
+                  "type": "string",
+                  "minLength": 25
+                },
+                "attributionBasis": {
+                  "type": "string",
+                  "minLength": 40
+                },
+                "importance": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "burdenContact": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "polarity",
+                        "tier",
+                        "bridgeId"
+                      ],
+                      "properties": {
+                        "polarity": {
+                          "type": "string",
+                          "enum": [
+                            "support",
+                            "attack"
+                          ]
+                        },
+                        "tier": {
+                          "type": "string",
+                          "enum": [
+                            "motion",
+                            "central",
+                            "subsidiary"
+                          ]
+                        },
+                        "bridgeId": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    }
+                  ]
+                },
+                "response": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "decisiveTargetIds",
+                    "components",
+                    "issueBearingContraryMaterial",
+                    "rationale",
+                    "responsivenessWithinClass",
+                    "specialResponseMode"
+                  ],
+                  "properties": {
+                    "decisiveTargetIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "description": "IDs only of selected moves that occur earlier in source chronology; never target a later move."
+                    },
+                    "components": {
+                      "type": "array",
+                      "maxItems": 8,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "componentId",
+                          "targetMoveId",
+                          "text",
+                          "contacted",
+                          "decisive"
+                        ],
+                        "properties": {
+                          "componentId": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "targetMoveId": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "The ID of an earlier selected target move named in decisiveTargetIds."
+                          },
+                          "text": {
+                            "type": "string",
+                            "minLength": 15
+                          },
+                          "contacted": {
+                            "type": "boolean"
+                          },
+                          "decisive": {
+                            "type": "boolean"
+                          }
+                        }
+                      }
+                    },
+                    "issueBearingContraryMaterial": {
+                      "type": "boolean"
+                    },
+                    "rationale": {
+                      "type": "string",
+                      "minLength": 60
+                    },
+                    "responsivenessWithinClass": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "value",
+                        "rationale"
+                      ],
+                      "properties": {
+                        "value": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 100,
+                          "description": "Quality position within the response class that the repository derives."
+                        },
+                        "rationale": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    },
+                    "specialResponseMode": {
+                      "type": "string",
+                      "enum": [
+                        "none",
+                        "diagnostic-defeat",
+                        "justified-reframe"
+                      ]
+                    }
+                  }
+                },
+                "precisionFindings": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "propositionRecoverability",
+                    "termStability",
+                    "scopeStability",
+                    "qualificationExplicitness",
+                    "rationale"
+                  ],
+                  "properties": {
+                    "propositionRecoverability": {
+                      "type": "string",
+                      "enum": [
+                        "complete",
+                        "partial",
+                        "failed"
+                      ]
+                    },
+                    "termStability": {
+                      "type": "string",
+                      "enum": [
+                        "stable",
+                        "partly-unstable",
+                        "materially-unstable"
+                      ]
+                    },
+                    "scopeStability": {
+                      "type": "string",
+                      "enum": [
+                        "stable",
+                        "partly-unstable",
+                        "materially-unstable"
+                      ]
+                    },
+                    "qualificationExplicitness": {
+                      "type": "string",
+                      "enum": [
+                        "explicit",
+                        "not-needed",
+                        "implicit",
+                        "missing",
+                        "materially-misleading"
+                      ]
+                    },
+                    "rationale": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                },
+                "calibrationFindings": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "assertedForce",
+                    "warrantFit",
+                    "qualificationStatus",
+                    "uncertaintyAcknowledged",
+                    "rationale"
+                  ],
+                  "properties": {
+                    "assertedForce": {
+                      "type": "string",
+                      "enum": [
+                        "question",
+                        "possibility",
+                        "plausibility",
+                        "probability",
+                        "strong-probability",
+                        "necessity",
+                        "certainty"
+                      ]
+                    },
+                    "warrantFit": {
+                      "type": "string",
+                      "enum": [
+                        "matched",
+                        "slightly-overstated",
+                        "materially-overstated",
+                        "radically-overstated"
+                      ]
+                    },
+                    "qualificationStatus": {
+                      "type": "string",
+                      "enum": [
+                        "explicit",
+                        "not-needed",
+                        "implicit",
+                        "missing"
+                      ]
+                    },
+                    "uncertaintyAcknowledged": {
+                      "type": "string",
+                      "enum": [
+                        "yes",
+                        "no",
+                        "not-needed"
+                      ]
+                    },
+                    "rationale": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                },
+                "charity": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "tested",
+                    "alternative",
+                    "decisiveQualification"
+                  ],
+                  "properties": {
+                    "tested": {
+                      "type": "boolean"
+                    },
+                    "alternative": {
+                      "type": "string"
+                    },
+                    "decisiveQualification": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "ratings": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "logicalCoherence",
+                    "evidenceWarrant",
+                    "relevanceBurden",
+                    "representationalCharity"
+                  ],
+                  "properties": {
+                    "logicalCoherence": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "value",
+                        "rationale"
+                      ],
+                      "properties": {
+                        "value": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 100
+                        },
+                        "rationale": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    },
+                    "evidenceWarrant": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "value",
+                        "rationale"
+                      ],
+                      "properties": {
+                        "value": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 100
+                        },
+                        "rationale": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    },
+                    "relevanceBurden": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "value",
+                        "rationale"
+                      ],
+                      "properties": {
+                        "value": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 100
+                        },
+                        "rationale": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    },
+                    "representationalCharity": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "value",
+                        "rationale"
+                      ],
+                      "properties": {
+                        "value": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 100
+                        },
+                        "rationale": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    }
+                  }
+                },
+                "evidenceBasis": {
+                  "type": "string",
+                  "minLength": 40
+                },
+                "assessmentConfidence": {
+                  "type": "string",
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ]
+                },
+                "moveKind": {
+                  "type": "string",
+                  "enum": [
+                    "constructive",
+                    "reply"
+                  ],
+                  "description": "Primary A's global classification; the discovery candidate kind is advisory only."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "burdenCompletionAdjustment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro",
+        "con"
+      ],
+      "properties": {
+        "pro": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "rationale",
+            "eligibility"
+          ],
+          "properties": {
+            "value": {
+              "type": "integer",
+              "minimum": -5,
+              "maximum": 5
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 40
+            },
+            "eligibility": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "distinctDebateWideConsequence",
+                "affectsBurdenCompletion",
+                "notAlreadyScored",
+                "affectedBurdenIds",
+                "completionCriterion",
+                "relatedMoveIds",
+                "distinctConsequence",
+                "alreadyCapturedBy",
+                "counterfactual"
+              ],
+              "properties": {
+                "distinctDebateWideConsequence": {
+                  "type": "boolean"
+                },
+                "affectsBurdenCompletion": {
+                  "type": "boolean"
+                },
+                "notAlreadyScored": {
+                  "type": "boolean"
+                },
+                "affectedBurdenIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "completionCriterion": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "relatedMoveIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "distinctConsequence": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "alreadyCapturedBy": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "counterfactual": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        },
+        "con": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "rationale",
+            "eligibility"
+          ],
+          "properties": {
+            "value": {
+              "type": "integer",
+              "minimum": -5,
+              "maximum": 5
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 40
+            },
+            "eligibility": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "distinctDebateWideConsequence",
+                "affectsBurdenCompletion",
+                "notAlreadyScored",
+                "affectedBurdenIds",
+                "completionCriterion",
+                "relatedMoveIds",
+                "distinctConsequence",
+                "alreadyCapturedBy",
+                "counterfactual"
+              ],
+              "properties": {
+                "distinctDebateWideConsequence": {
+                  "type": "boolean"
+                },
+                "affectsBurdenCompletion": {
+                  "type": "boolean"
+                },
+                "notAlreadyScored": {
+                  "type": "boolean"
+                },
+                "affectedBurdenIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "completionCriterion": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "relatedMoveIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "distinctConsequence": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "alreadyCapturedBy": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "counterfactual": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allLoadBearingLinesRepresented",
+        "allMovesJudgedOnce",
+        "sectionWeightsLockedBeforeRatings",
+        "responseComponentsApplied",
+        "closedPrecisionAnchorsApplied",
+        "closedCalibrationAnchorsApplied",
+        "charityAnchorApplied",
+        "burdenExclusionRuleApplied",
+        "calculatedTotalsAbsent",
+        "completeCandidateBundleReviewed",
+        "distributedSourceCoverageReliedUpon"
+      ],
+      "properties": {
+        "allLoadBearingLinesRepresented": {
+          "type": "boolean",
+          "const": true
+        },
+        "allMovesJudgedOnce": {
+          "type": "boolean",
+          "const": true
+        },
+        "sectionWeightsLockedBeforeRatings": {
+          "type": "boolean",
+          "const": true
+        },
+        "responseComponentsApplied": {
+          "type": "boolean",
+          "const": true
+        },
+        "closedPrecisionAnchorsApplied": {
+          "type": "boolean",
+          "const": true
+        },
+        "closedCalibrationAnchorsApplied": {
+          "type": "boolean",
+          "const": true
+        },
+        "charityAnchorApplied": {
+          "type": "boolean",
+          "const": true
+        },
+        "burdenExclusionRuleApplied": {
+          "type": "boolean",
+          "const": true
+        },
+        "calculatedTotalsAbsent": {
+          "type": "boolean",
+          "const": true
+        },
+        "completeCandidateBundleReviewed": {
+          "type": "boolean",
+          "const": true
+        },
+        "distributedSourceCoverageReliedUpon": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    }
+  }
+}
