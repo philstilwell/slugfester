@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "4.2.21.4-dispute-only-adjudication-execution-manifest",
+  "protocolId": "v4.2.21-source-span-consensus",
+  "status": "frozen-three-dispute-only-adjudication-contexts-authorized",
+  "frozenAt": "2026-08-06T03:06:50.000Z",
+  "checkpointCommit": "fb53dd2e7bb87ad4b2a56059aee802b8cd83a08d",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "costEstimate": {
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "expectedWallMinutes": [
+      12,
+      24
+    ],
+    "absoluteTimeoutMinutes": 45
+  },
+  "modelInputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "workflow": "docs/assessment-workflow-v4.2.21.md",
+    "manual": "docs/calibration/v4.2.21.4/adjudication/manual.md",
+    "schema": "docs/calibration/v4.2.21.4/adjudication/adjudication.schema.json"
+  },
+  "contexts": [
+    {
+      "debateNumber": "27",
+      "debateId": "oconnor-turek-evil-moral-argument-2017",
+      "packet": "docs/calibration/v4.2.21.4/adjudication/packets/debate-27.json",
+      "provenance": "docs/calibration/v4.2.21.4/adjudication/provenance/debate-27.json",
+      "output": "docs/calibration/v4.2.21.4/adjudication/outputs/debate-27.json",
+      "disputeSource": "docs/calibration/v4.2.21.2/disagreement-audio-prep/disagreements/debate-27.json",
+      "lockedPacket": "docs/calibration/v4.2.21/pass-b-consensus/packets/debate-27.json",
+      "sourcePacket": "docs/calibration/v4.2.20/source-span-rendering/packets/debate-27.json",
+      "originalEvents": ".assessment-cache/captions/b5a3MxIqZOs/events.json",
+      "disputedMoves": 12,
+      "candidateSelections": 65,
+      "audioVerifiedMoves": 5,
+      "packetBytes": 78812
+    },
+    {
+      "debateNumber": "188",
+      "debateId": "kastrup-blackmore-consciousness-idealism-2023",
+      "packet": "docs/calibration/v4.2.21.4/adjudication/packets/debate-188.json",
+      "provenance": "docs/calibration/v4.2.21.4/adjudication/provenance/debate-188.json",
+      "output": "docs/calibration/v4.2.21.4/adjudication/outputs/debate-188.json",
+      "disputeSource": "docs/calibration/v4.2.21.2/disagreement-audio-prep/disagreements/debate-188.json",
+      "lockedPacket": "docs/calibration/v4.2.21/pass-b-consensus/packets/debate-188.json",
+      "sourcePacket": "docs/calibration/v4.2.20/source-span-rendering/packets/debate-188.json",
+      "originalEvents": ".assessment-cache/captions/X4YVgM2HPMk/events.json",
+      "disputedMoves": 12,
+      "candidateSelections": 47,
+      "audioVerifiedMoves": 0,
+      "packetBytes": 95180
+    },
+    {
+      "debateNumber": "195",
+      "debateId": "russell-copleston-existence-of-god-1948",
+      "packet": "docs/calibration/v4.2.21.4/adjudication/packets/debate-195.json",
+      "provenance": "docs/calibration/v4.2.21.4/adjudication/provenance/debate-195.json",
+      "output": "docs/calibration/v4.2.21.4/adjudication/outputs/debate-195.json",
+      "disputeSource": "docs/calibration/v4.2.21.2/disagreement-audio-prep/disagreements/debate-195.json",
+      "lockedPacket": "docs/calibration/v4.2.21/pass-b-consensus/packets/debate-195.json",
+      "sourcePacket": "docs/calibration/v4.2.20/source-span-rendering/packets/debate-195.json",
+      "originalEvents": ".assessment-cache/captions/wMsbD1L5IlQ/events.json",
+      "disputedMoves": 10,
+      "candidateSelections": 48,
+      "audioVerifiedMoves": 0,
+      "packetBytes": 48808
+    }
+  ],
+  "isolation": {
+    "freshTemporaryCodexHomePerContext": true,
+    "freshSourceDirectoryPerContext": true,
+    "oneDebatePerContext": true,
+    "disputedFieldsOnly": true,
+    "lockedLocalEvidenceOnly": true,
+    "verifiedAudioEvidenceAvailableWhereRequired": true,
+    "provenanceFilesUnavailable": true,
+    "passIdentitiesUnavailable": true,
+    "initialRationalesUnavailable": true,
+    "nondisputedFieldsUnavailable": true,
+    "fullInitialOutputsUnavailable": true,
+    "calculatedScoresUnavailable": true,
+    "winnersUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 3,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "continueIndependentContextsAfterFailure": true,
+    "timeoutMs": 900000,
+    "maximumMinutesPerContext": 12,
+    "maximumMeanMinutes": 9.5,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0
+  },
+  "deterministicValidation": {
+    "exactCandidateSelectionOnly": true,
+    "dependencyPairsIndivisible": true,
+    "allDisputedFieldsDecidedOnce": true,
+    "nondisputedFieldsUntouched": true,
+    "candidateProvenanceRepositoryOnly": true,
+    "calculatedScores": 0
+  },
+  "authorization": {
+    "adjudicationModelContexts": true,
+    "deterministicValidation": true,
+    "analysis": true,
+    "retry": false,
+    "correctionModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "preexistingOutputBlocks": true,
+    "invalidOutputPreserved": true,
+    "laterIndependentContextsContinue": true,
+    "retryAuthorized": false,
+    "correctionAuthorized": false,
+    "candidateValueRepairAuthorized": false
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.2.21.4/adjudication/model-execution.json",
+    "analysis": "docs/calibration/v4.2.21.4/adjudication/analysis.json",
+    "outputs": [
+      "docs/calibration/v4.2.21.4/adjudication/outputs/debate-27.json",
+      "docs/calibration/v4.2.21.4/adjudication/outputs/debate-188.json",
+      "docs/calibration/v4.2.21.4/adjudication/outputs/debate-195.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.2.21.4/adjudication/outputs/debate-27.json",
+    "docs/calibration/v4.2.21.4/adjudication/outputs/debate-188.json",
+    "docs/calibration/v4.2.21.4/adjudication/outputs/debate-195.json",
+    "docs/calibration/v4.2.21.4/adjudication/model-execution.json",
+    "docs/calibration/v4.2.21.4/adjudication/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.21.md": "6f0364033c2054d20e128392868a2d2a3edbfd1e220ea417174761a8670aba09",
+    "docs/calibration/v4.2.21.4/adjudication/preparation-manifest.json": "06ff6e021a91718b26455deae08c80c5595e7606fb48f36a48124c945ea22683",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/calibration/v4.2.21.4/adjudication/manual.md": "67bd7c85874a87156f180c9bd422719407e2b7ce096d6e03334d33aae2ca589e",
+    "docs/calibration/v4.2.21.4/adjudication/adjudication.schema.json": "674331512e568a91bc15b1ebae776caa0e94ba85d737335608a9347f5f1d0e48",
+    "docs/calibration/v4.2.21.3.1/audio-recovery/audio-verification.json": "6dd6d70a289b613c479cc01f7261edd07d73d0d76b31974e0314d36f35d3676a",
+    "docs/calibration/v4.2.21.3.1/audio-recovery/analysis.json": "e561f07a1bec8391ec238ec85bc00fb203a236cbbd4440703d82f4c77dc7584c",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v41-lean-production.mjs": "9d4f4a5a54ff4c73f50733aa148064200862991a69003823d303e7bac363d9ba",
+    "scripts/lib/v4219-primary-recovery.mjs": "a426a03ced272b27b55f6c2674a81b0ad4cb46617d4c735efec78d9698c427f8",
+    "scripts/lib/v4220-source-span-rendering.mjs": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+    "scripts/lib/v4221-pass-b-consensus.mjs": "3f242b4a0728d61c4c9880462a8e2b3d8be67b6ce4c320708d9ddc628ea566f2",
+    "scripts/build-v42214-adjudication-packets.mjs": "3ab4524fa077eed10574834d3a4f1d38ee603ae597f5ffb837e285f7208dd483",
+    "scripts/test-v42214-adjudication-packets.mjs": "a955f021f1bd50b7374bf24d025b11436480ba93598adb556ee912bd46390bf3",
+    "scripts/validate-v42214-adjudication-output.mjs": "517ef7aad96e8d2b2212956a44dbbc85f2b06a11da88e5cfcb0d1bee9cb6ad3f",
+    "scripts/preregister-v42214-adjudication.mjs": "4d6ba1cd7c53879687c28f12efff1e1ef7fa56ccf9a38ac9679ebd96a62132b7",
+    "scripts/run-v42214-adjudication.mjs": "c9095fe3d6fa4b1a217da9567a34ae3c93040ecc79ada851257a5d5f9823dccf",
+    "scripts/analyze-v42214-adjudication.mjs": "6eb54918b0cb330662532471ba79dc231f66ac2f0730c4112373b27c337f22e4",
+    "docs/calibration/v4.2.21.4/adjudication/packets/debate-27.json": "8eafb6c597c7c9f58001d7176a5dd06210151e0c1aa679d832106ddae9c13921",
+    "docs/calibration/v4.2.21.4/adjudication/provenance/debate-27.json": "5d2082ee21ff27324f875ba27de1f2d957c94a0020f10805a76d176a9e4d786b",
+    "docs/calibration/v4.2.21.2/disagreement-audio-prep/disagreements/debate-27.json": "fcd1c99f8f70431e851ad42bb59795e38b77c67feaa5e112b5c81fd271619007",
+    "docs/calibration/v4.2.21/pass-b-consensus/packets/debate-27.json": "e75a19b467740f7593fd13ffe53244803a8713dbbd3a9c90ef4a9cececae4ae0",
+    "docs/calibration/v4.2.20/source-span-rendering/packets/debate-27.json": "9a74e23e85c109a88056e23836fca00b95f0d015ffa4ae6c57d777a48c3c7397",
+    ".assessment-cache/captions/b5a3MxIqZOs/events.json": "827b7f9e8da8a9fbbe1386893bfabd6c5eeb4dd7d2f6a212f1935d763768fa54",
+    "docs/calibration/v4.2.21.4/adjudication/packets/debate-188.json": "a97737d80853f7a76dad7770ca3170ce5cc47cceb2b4e45c1394b0d87bb0703b",
+    "docs/calibration/v4.2.21.4/adjudication/provenance/debate-188.json": "2f18d929c621599700e8366591b0fb247b2cfaeae5181c78e4782037f8209c65",
+    "docs/calibration/v4.2.21.2/disagreement-audio-prep/disagreements/debate-188.json": "cd6a1b3124323c199c53d8954e68f6802565c9fdc7cb2a0c96b1f70db2d30c14",
+    "docs/calibration/v4.2.21/pass-b-consensus/packets/debate-188.json": "0f29665c29e0082b8083473200f683727ea62e364c6a3f2f377383e3751166d6",
+    "docs/calibration/v4.2.20/source-span-rendering/packets/debate-188.json": "bd0b6553b790a4d2eec1afcc5c038c59699db79b4df81361b240a99cb6460ae3",
+    ".assessment-cache/captions/X4YVgM2HPMk/events.json": "e716e5b1b3750faa89c2655224fb0ee00825a3062e301997e60aa3182e3d088e",
+    "docs/calibration/v4.2.21.4/adjudication/packets/debate-195.json": "973bf94952e2fd43b1c911f6528a0e7aea38eff996323941324bc24da59dbf44",
+    "docs/calibration/v4.2.21.4/adjudication/provenance/debate-195.json": "f40919c572a7d54904029506b18bb835c97fbaf661b700274eee9a85052ea991",
+    "docs/calibration/v4.2.21.2/disagreement-audio-prep/disagreements/debate-195.json": "25e39ec7c3f2070858b7423625f47a16d10ba90f1aaad3b1a5178e235a4bca2a",
+    "docs/calibration/v4.2.21/pass-b-consensus/packets/debate-195.json": "ee7663463ebf320b8de4534531ec3e6d914eb42e924f3c0e1493f63025d57fdb",
+    "docs/calibration/v4.2.20/source-span-rendering/packets/debate-195.json": "83354e579b75d14eb6ac5ce91521fb5452cb85b67fdf128e7a72fe3713d2240f",
+    ".assessment-cache/captions/wMsbD1L5IlQ/events.json": "5c386299b0cd868345e05fabd21c5e6271d57517c1f7126900723e4f266cfa28"
+  }
+}
