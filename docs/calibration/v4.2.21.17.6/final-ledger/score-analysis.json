@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "4.2.21.17.7-score-stability-analysis",
+  "protocolId": "v4.2.21.17.6-decomposed-consensus",
+  "status": "partition-post-adjudication-score-stability-passed",
+  "resultIntegrity": {
+    "prospectiveThresholdsApplied": true,
+    "singleDeterministicScoringPass": true,
+    "scoresDerivedAfterLedgerLock": true,
+    "postResultTuningPerformed": false,
+    "automaticRerunPerformed": false,
+    "productionScoresUsedForAcceptance": false
+  },
+  "stability": {
+    "sideRows": [
+      {
+        "debateNumber": "133",
+        "side": "pro",
+        "passA": 77,
+        "passB": 77,
+        "final": 78,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 1
+      },
+      {
+        "debateNumber": "133",
+        "side": "con",
+        "passA": 84,
+        "passB": 84,
+        "final": 84,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "178",
+        "side": "pro",
+        "passA": 80,
+        "passB": 80,
+        "final": 80,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "178",
+        "side": "con",
+        "passA": 86,
+        "passB": 83,
+        "final": 84,
+        "absoluteDistanceFromPassA": 2,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "182",
+        "side": "pro",
+        "passA": 80,
+        "passB": 87,
+        "final": 82,
+        "absoluteDistanceFromPassA": 2,
+        "absoluteDistanceFromPassB": 5,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "182",
+        "side": "con",
+        "passA": 76,
+        "passB": 83,
+        "final": 78,
+        "absoluteDistanceFromPassA": 2,
+        "absoluteDistanceFromPassB": 5,
+        "outsideInitialRange": 0
+      }
+    ],
+    "scoreBoundsPassed": true,
+    "agreedWinnerDebates": 3,
+    "agreedWinnersPreserved": 3,
+    "meanAbsoluteDistanceToInitialPasses": 1.58,
+    "maximumAbsoluteDistanceToEitherInitialPass": 5,
+    "maximumOutsideInitialRange": 1,
+    "thresholds": {
+      "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+      "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+      "maximumOutsideInitialRangeMaximum": 3
+    },
+    "acceptancePassed": true
+  },
+  "productionReferenceDiagnostic": {
+    "winnerMatches": 3,
+    "debates": 3,
+    "signedSideDeltas": [
+      -6,
+      -1,
+      -9,
+      -8,
+      -9,
+      -10
+    ],
+    "meanSignedSideDelta": -7.17,
+    "diagnosticNotGold": true
+  },
+  "workflowFinding": {
+    "semanticConsensusPipelineComplete": true,
+    "scoringConsistencyPassed": true,
+    "publicationContentStillUntested": true,
+    "full195RunStillUnauthorized": true
+  },
+  "authorization": {
+    "nextReadinessAssessment": true,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}

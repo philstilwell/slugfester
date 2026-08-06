@@ -1,0 +1,1955 @@
+{
+  "schemaVersion": "4.2.21.17.7-adjudicated-calculated-scores",
+  "protocolId": "v4.2.21.17.6-decomposed-consensus",
+  "status": "partition-single-score-pass-stability-gate-passed",
+  "sources": {
+    "finalLedgerSha256": "170c791491fdc24a7889727966614fa388688135a9296bb6354f7aff82698ad8",
+    "productionReferenceSha256": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6"
+  },
+  "formulaBoundary": {
+    "scoringPasses": 1,
+    "rawJudgmentsScoredInPass": 9,
+    "finalJudgmentsPublishedFromPass": 3,
+    "initialPassScoresUsedForPostAdjudicationStabilityDiagnosticsOnly": true,
+    "modelCalculatedScores": false,
+    "scoresDerivedOnlyAfterAdjudicatedLedgerLock": true,
+    "moveFormula": "repository v4.1 deterministic seven-dimension formula",
+    "responseFormula": "repository mapping from adjudicated response class and within-class position",
+    "sectionFormula": "importance-weighted move mean",
+    "overallFormula": "section-weighted mean plus eligible burden-completion adjustment, rounded and bounded 0-100"
+  },
+  "acceptanceRule": {
+    "prospective": true,
+    "productionScoresDiagnosticOnly": true,
+    "agreedInitialWinnerMustBePreserved": true,
+    "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+    "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+    "maximumOutsideInitialRangeMaximum": 3,
+    "postResultTuningAllowed": false,
+    "automaticRerunAllowed": false
+  },
+  "debates": [
+    {
+      "debateNumber": "133",
+      "debateId": "hawkins-folley-free-will-idealism-2026",
+      "passA": {
+        "protocolId": "v4.2.21.17.7-decomposed-consensus",
+        "debateNumber": "133",
+        "debateId": "hawkins-folley-free-will-idealism-2026",
+        "sections": [
+          {
+            "sectionId": "section-determinism-agency",
+            "title": "Determinism, causation, and agential sourcehood",
+            "weightPercent": 28,
+            "sides": {
+              "pro": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "move-pro-001",
+                    "importance": 3,
+                    "score": 79
+                  },
+                  {
+                    "moveId": "move-pro-002",
+                    "importance": 3,
+                    "score": 76
+                  }
+                ]
+              },
+              "con": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "move-con-001",
+                    "importance": 3,
+                    "score": 76
+                  },
+                  {
+                    "moveId": "move-con-002",
+                    "importance": 3,
+                    "score": 82
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-modal-alternatives",
+            "title": "Alternative possibilities and the consequence argument",
+            "weightPercent": 24,
+            "sides": {
+              "pro": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "move-pro-003",
+                    "importance": 3,
+                    "score": 76
+                  },
+                  {
+                    "moveId": "move-pro-004",
+                    "importance": 3,
+                    "score": 86
+                  }
+                ]
+              },
+              "con": {
+                "score": 86,
+                "moves": [
+                  {
+                    "moveId": "move-con-003",
+                    "importance": 3,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "move-con-004",
+                    "importance": 2,
+                    "score": 90
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-pragmatic-freedom",
+            "title": "Practical responsibility and metaphysical agency",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "move-pro-005",
+                    "importance": 3,
+                    "score": 71
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "move-con-005",
+                    "importance": 3,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "move-con-006",
+                    "importance": 3,
+                    "score": 86
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-experience-naturalism",
+            "title": "Experience, science, and naturalistic reduction",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "move-pro-006",
+                    "importance": 3,
+                    "score": 87
+                  },
+                  {
+                    "moveId": "move-pro-007",
+                    "importance": 2,
+                    "score": 80
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "move-con-007",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-absolute-inquiry",
+            "title": "The absolute and the completion of inquiry",
+            "weightPercent": 14,
+            "sides": {
+              "pro": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "move-pro-008",
+                    "importance": 3,
+                    "score": 71
+                  },
+                  {
+                    "moveId": "move-pro-009",
+                    "importance": 3,
+                    "score": 71
+                  }
+                ]
+              },
+              "con": {
+                "score": 91,
+                "moves": [
+                  {
+                    "moveId": "move-con-008",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 77.44,
+            "burdenCompletionAdjustment": 0,
+            "score": 77
+          },
+          "con": {
+            "weightedSectionMean": 83.6,
+            "burdenCompletionAdjustment": 0,
+            "score": 84
+          }
+        },
+        "winner": "con",
+        "winningMargin": 7
+      },
+      "passB": {
+        "protocolId": "v4.2.21.17.7-decomposed-consensus",
+        "debateNumber": "133",
+        "debateId": "hawkins-folley-free-will-idealism-2026",
+        "sections": [
+          {
+            "sectionId": "section-determinism-agency",
+            "title": "Determinism, causation, and agential sourcehood",
+            "weightPercent": 28,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "move-pro-001",
+                    "importance": 2,
+                    "score": 76
+                  },
+                  {
+                    "moveId": "move-pro-002",
+                    "importance": 3,
+                    "score": 81
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "move-con-001",
+                    "importance": 3,
+                    "score": 81
+                  },
+                  {
+                    "moveId": "move-con-002",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-modal-alternatives",
+            "title": "Alternative possibilities and the consequence argument",
+            "weightPercent": 24,
+            "sides": {
+              "pro": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "move-pro-003",
+                    "importance": 3,
+                    "score": 78
+                  },
+                  {
+                    "moveId": "move-pro-004",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "move-con-003",
+                    "importance": 3,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "move-con-004",
+                    "importance": 2,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-pragmatic-freedom",
+            "title": "Practical responsibility and metaphysical agency",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "move-pro-005",
+                    "importance": 3,
+                    "score": 71
+                  }
+                ]
+              },
+              "con": {
+                "score": 86,
+                "moves": [
+                  {
+                    "moveId": "move-con-005",
+                    "importance": 3,
+                    "score": 87
+                  },
+                  {
+                    "moveId": "move-con-006",
+                    "importance": 2,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-experience-naturalism",
+            "title": "Experience, science, and naturalistic reduction",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "move-pro-006",
+                    "importance": 3,
+                    "score": 87
+                  },
+                  {
+                    "moveId": "move-pro-007",
+                    "importance": 2,
+                    "score": 78
+                  }
+                ]
+              },
+              "con": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "move-con-007",
+                    "importance": 3,
+                    "score": 79
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-absolute-inquiry",
+            "title": "The absolute and the completion of inquiry",
+            "weightPercent": 14,
+            "sides": {
+              "pro": {
+                "score": 70,
+                "moves": [
+                  {
+                    "moveId": "move-pro-008",
+                    "importance": 3,
+                    "score": 69
+                  },
+                  {
+                    "moveId": "move-pro-009",
+                    "importance": 3,
+                    "score": 71
+                  }
+                ]
+              },
+              "con": {
+                "score": 91,
+                "moves": [
+                  {
+                    "moveId": "move-con-008",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 77.42,
+            "burdenCompletionAdjustment": 0,
+            "score": 77
+          },
+          "con": {
+            "weightedSectionMean": 84.22,
+            "burdenCompletionAdjustment": 0,
+            "score": 84
+          }
+        },
+        "winner": "con",
+        "winningMargin": 7
+      },
+      "final": {
+        "protocolId": "v4.2.21.17.7-decomposed-consensus",
+        "debateNumber": "133",
+        "debateId": "hawkins-folley-free-will-idealism-2026",
+        "sections": [
+          {
+            "sectionId": "section-determinism-agency",
+            "title": "Determinism, causation, and agential sourcehood",
+            "weightPercent": 28,
+            "sides": {
+              "pro": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "move-pro-001",
+                    "importance": 3,
+                    "score": 78
+                  },
+                  {
+                    "moveId": "move-pro-002",
+                    "importance": 3,
+                    "score": 78
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "move-con-001",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "move-con-002",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-modal-alternatives",
+            "title": "Alternative possibilities and the consequence argument",
+            "weightPercent": 24,
+            "sides": {
+              "pro": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "move-pro-003",
+                    "importance": 3,
+                    "score": 77
+                  },
+                  {
+                    "moveId": "move-pro-004",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "move-con-003",
+                    "importance": 3,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "move-con-004",
+                    "importance": 2,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-pragmatic-freedom",
+            "title": "Practical responsibility and metaphysical agency",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "move-pro-005",
+                    "importance": 3,
+                    "score": 71
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "move-con-005",
+                    "importance": 3,
+                    "score": 87
+                  },
+                  {
+                    "moveId": "move-con-006",
+                    "importance": 3,
+                    "score": 86
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-experience-naturalism",
+            "title": "Experience, science, and naturalistic reduction",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "move-pro-006",
+                    "importance": 3,
+                    "score": 87
+                  },
+                  {
+                    "moveId": "move-pro-007",
+                    "importance": 2,
+                    "score": 79
+                  }
+                ]
+              },
+              "con": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "move-con-007",
+                    "importance": 3,
+                    "score": 79
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-absolute-inquiry",
+            "title": "The absolute and the completion of inquiry",
+            "weightPercent": 14,
+            "sides": {
+              "pro": {
+                "score": 72,
+                "moves": [
+                  {
+                    "moveId": "move-pro-008",
+                    "importance": 3,
+                    "score": 72
+                  },
+                  {
+                    "moveId": "move-pro-009",
+                    "importance": 3,
+                    "score": 72
+                  }
+                ]
+              },
+              "con": {
+                "score": 91,
+                "moves": [
+                  {
+                    "moveId": "move-con-008",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 77.58,
+            "burdenCompletionAdjustment": 0,
+            "score": 78
+          },
+          "con": {
+            "weightedSectionMean": 84.4,
+            "burdenCompletionAdjustment": 0,
+            "score": 84
+          }
+        },
+        "winner": "con",
+        "winningMargin": 6
+      },
+      "consensus": {
+        "initialWinnersAgree": true,
+        "initialWinner": "con",
+        "finalPreservesAgreedWinner": true
+      },
+      "productionReferenceDiagnosticOnly": {
+        "scores": {
+          "pro": 84,
+          "con": 85
+        },
+        "winner": "con",
+        "finalDeltas": {
+          "pro": -6,
+          "con": -1
+        },
+        "finalWinnerMatches": true,
+        "acceptanceGateInput": false
+      }
+    },
+    {
+      "debateNumber": "178",
+      "debateId": "ehrman-licona-who-wrote-gospels-2025",
+      "passA": {
+        "protocolId": "v4.2.21.17.7-decomposed-consensus",
+        "debateNumber": "178",
+        "debateId": "ehrman-licona-who-wrote-gospels-2025",
+        "sections": [
+          {
+            "sectionId": "section-external-attribution",
+            "title": "Timing and continuity of external attribution",
+            "weightPercent": 27,
+            "sides": {
+              "pro": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "pro-external-early-testimony",
+                    "importance": 3,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "pro-anonymity-lateness-rebuttal",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              },
+              "con": {
+                "score": 90,
+                "moves": [
+                  {
+                    "moveId": "con-late-unambiguous-attribution",
+                    "importance": 3,
+                    "score": 89
+                  },
+                  {
+                    "moveId": "con-common-origin-diffusion",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-naming-explanation",
+            "title": "Explanation for the traditional names",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "pro-unlikely-fabricated-names",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "con-authority-conferring-names",
+                    "importance": 3,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "con-mark-luke-apostolic-links",
+                    "importance": 2,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-literacy-production",
+            "title": "Literacy, Greek composition, and delegated production",
+            "weightPercent": 22,
+            "sides": {
+              "pro": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "pro-synoptic-assisted-composition",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "con-galilean-literacy-mismatch",
+                    "importance": 3,
+                    "score": 74
+                  },
+                  {
+                    "moveId": "con-amanuensis-insufficiency",
+                    "importance": 3,
+                    "score": 86
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-mark-luke",
+            "title": "Internal identification of Mark and Luke",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "pro-mark-petrine-features",
+                    "importance": 2,
+                    "score": 77
+                  },
+                  {
+                    "moveId": "pro-luke-we-narratives",
+                    "importance": 2,
+                    "score": 81
+                  }
+                ]
+              },
+              "con": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "con-justin-gospel-of-peter",
+                    "importance": 2,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-matthew-john",
+            "title": "Internal identification of Matthew and John",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "pro-john-beloved-disciple",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "pro-matthew-internal-features",
+                    "importance": 3,
+                    "score": 72
+                  }
+                ]
+              },
+              "con": {
+                "score": 91,
+                "moves": [
+                  {
+                    "moveId": "con-matthew-financial-vocabulary",
+                    "importance": 2,
+                    "score": 90
+                  },
+                  {
+                    "moveId": "con-john-witness-writer-distinction",
+                    "importance": 3,
+                    "score": 92
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 79.7,
+            "burdenCompletionAdjustment": 0,
+            "score": 80
+          },
+          "con": {
+            "weightedSectionMean": 86.47,
+            "burdenCompletionAdjustment": 0,
+            "score": 86
+          }
+        },
+        "winner": "con",
+        "winningMargin": 6
+      },
+      "passB": {
+        "protocolId": "v4.2.21.17.7-decomposed-consensus",
+        "debateNumber": "178",
+        "debateId": "ehrman-licona-who-wrote-gospels-2025",
+        "sections": [
+          {
+            "sectionId": "section-external-attribution",
+            "title": "Timing and continuity of external attribution",
+            "weightPercent": 27,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "pro-external-early-testimony",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "pro-anonymity-lateness-rebuttal",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 89,
+                "moves": [
+                  {
+                    "moveId": "con-late-unambiguous-attribution",
+                    "importance": 3,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "con-common-origin-diffusion",
+                    "importance": 3,
+                    "score": 92
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-naming-explanation",
+            "title": "Explanation for the traditional names",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "pro-unlikely-fabricated-names",
+                    "importance": 2,
+                    "score": 76
+                  }
+                ]
+              },
+              "con": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "con-authority-conferring-names",
+                    "importance": 3,
+                    "score": 71
+                  },
+                  {
+                    "moveId": "con-mark-luke-apostolic-links",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-literacy-production",
+            "title": "Literacy, Greek composition, and delegated production",
+            "weightPercent": 22,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "pro-synoptic-assisted-composition",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              },
+              "con": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "con-galilean-literacy-mismatch",
+                    "importance": 3,
+                    "score": 73
+                  },
+                  {
+                    "moveId": "con-amanuensis-insufficiency",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-mark-luke",
+            "title": "Internal identification of Mark and Luke",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "pro-mark-petrine-features",
+                    "importance": 2,
+                    "score": 78
+                  },
+                  {
+                    "moveId": "pro-luke-we-narratives",
+                    "importance": 2,
+                    "score": 80
+                  }
+                ]
+              },
+              "con": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "con-justin-gospel-of-peter",
+                    "importance": 2,
+                    "score": 78
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-matthew-john",
+            "title": "Internal identification of Matthew and John",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "pro-john-beloved-disciple",
+                    "importance": 3,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "pro-matthew-internal-features",
+                    "importance": 3,
+                    "score": 73
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "con-matthew-financial-vocabulary",
+                    "importance": 2,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "con-john-witness-writer-distinction",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 79.89,
+            "burdenCompletionAdjustment": 0,
+            "score": 80
+          },
+          "con": {
+            "weightedSectionMean": 82.87,
+            "burdenCompletionAdjustment": 0,
+            "score": 83
+          }
+        },
+        "winner": "con",
+        "winningMargin": 3
+      },
+      "final": {
+        "protocolId": "v4.2.21.17.7-decomposed-consensus",
+        "debateNumber": "178",
+        "debateId": "ehrman-licona-who-wrote-gospels-2025",
+        "sections": [
+          {
+            "sectionId": "section-external-attribution",
+            "title": "Timing and continuity of external attribution",
+            "weightPercent": 27,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "pro-external-early-testimony",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "pro-anonymity-lateness-rebuttal",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "con-late-unambiguous-attribution",
+                    "importance": 3,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "con-common-origin-diffusion",
+                    "importance": 3,
+                    "score": 92
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-naming-explanation",
+            "title": "Explanation for the traditional names",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "pro-unlikely-fabricated-names",
+                    "importance": 2,
+                    "score": 82
+                  }
+                ]
+              },
+              "con": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "con-authority-conferring-names",
+                    "importance": 3,
+                    "score": 79
+                  },
+                  {
+                    "moveId": "con-mark-luke-apostolic-links",
+                    "importance": 2,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-literacy-production",
+            "title": "Literacy, Greek composition, and delegated production",
+            "weightPercent": 22,
+            "sides": {
+              "pro": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "pro-synoptic-assisted-composition",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "con-galilean-literacy-mismatch",
+                    "importance": 3,
+                    "score": 73
+                  },
+                  {
+                    "moveId": "con-amanuensis-insufficiency",
+                    "importance": 3,
+                    "score": 86
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-mark-luke",
+            "title": "Internal identification of Mark and Luke",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "pro-mark-petrine-features",
+                    "importance": 2,
+                    "score": 78
+                  },
+                  {
+                    "moveId": "pro-luke-we-narratives",
+                    "importance": 2,
+                    "score": 81
+                  }
+                ]
+              },
+              "con": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "con-justin-gospel-of-peter",
+                    "importance": 2,
+                    "score": 78
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-matthew-john",
+            "title": "Internal identification of Matthew and John",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "pro-john-beloved-disciple",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "pro-matthew-internal-features",
+                    "importance": 3,
+                    "score": 73
+                  }
+                ]
+              },
+              "con": {
+                "score": 89,
+                "moves": [
+                  {
+                    "moveId": "con-matthew-financial-vocabulary",
+                    "importance": 2,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "con-john-witness-writer-distinction",
+                    "importance": 3,
+                    "score": 92
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 80.34,
+            "burdenCompletionAdjustment": 0,
+            "score": 80
+          },
+          "con": {
+            "weightedSectionMean": 84.3,
+            "burdenCompletionAdjustment": 0,
+            "score": 84
+          }
+        },
+        "winner": "con",
+        "winningMargin": 4
+      },
+      "consensus": {
+        "initialWinnersAgree": true,
+        "initialWinner": "con",
+        "finalPreservesAgreedWinner": true
+      },
+      "productionReferenceDiagnosticOnly": {
+        "scores": {
+          "pro": 89,
+          "con": 92
+        },
+        "winner": "con",
+        "finalDeltas": {
+          "pro": -9,
+          "con": -8
+        },
+        "finalWinnerMatches": true,
+        "acceptanceGateInput": false
+      }
+    },
+    {
+      "debateNumber": "182",
+      "debateId": "white-ally-sin-salvation-quran-bible-2013",
+      "passA": {
+        "protocolId": "v4.2.21.17.7-decomposed-consensus",
+        "debateNumber": "182",
+        "debateId": "white-ally-sin-salvation-quran-bible-2013",
+        "sections": [
+          {
+            "sectionId": "issue-forgiveness-justice",
+            "title": "Direct forgiveness, holiness, and justice",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "pro-holy-law-ground",
+                    "importance": 3,
+                    "score": 75
+                  },
+                  {
+                    "moveId": "pro-substitution-justice-mercy",
+                    "importance": 3,
+                    "score": 78
+                  }
+                ]
+              },
+              "con": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "con-repentance-accounting",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "con-principled-direct-mercy",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "issue-human-condition",
+            "title": "Human fallenness and personal responsibility",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "pro-adamic-fallenness",
+                    "importance": 3,
+                    "score": 72
+                  },
+                  {
+                    "moveId": "pro-enslavement-drawing",
+                    "importance": 3,
+                    "score": 82
+                  }
+                ]
+              },
+              "con": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "con-no-inherited-guilt",
+                    "importance": 3,
+                    "score": 78
+                  },
+                  {
+                    "moveId": "con-merciful-moral-accounting",
+                    "importance": 3,
+                    "score": 70
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "issue-deeds-salvation",
+            "title": "The place of deeds in salvation",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "pro-works-as-fruit",
+                    "importance": 2,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "pro-work-out-possession",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "con-deed-accounting-witness",
+                    "importance": 2,
+                    "score": 70
+                  },
+                  {
+                    "moveId": "con-enabled-obligation",
+                    "importance": 2,
+                    "score": 79
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "issue-atonement-coherence",
+            "title": "The coherence and operation of atonement",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "pro-priest-and-sacrifice",
+                    "importance": 3,
+                    "score": 89
+                  },
+                  {
+                    "moveId": "pro-sinless-god-man",
+                    "importance": 3,
+                    "score": 76
+                  }
+                ]
+              },
+              "con": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "con-atonement-payment-objection",
+                    "importance": 3,
+                    "score": 71
+                  },
+                  {
+                    "moveId": "con-natural-disposition-return",
+                    "importance": 3,
+                    "score": 75
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "issue-scriptural-grounding",
+            "title": "Scriptural continuity and doctrinal development",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "pro-atonement-fulfillment",
+                    "importance": 3,
+                    "score": 87
+                  },
+                  {
+                    "moveId": "pro-biblical-reconciliation",
+                    "importance": 3,
+                    "score": 76
+                  }
+                ]
+              },
+              "con": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "con-old-testament-forgiveness",
+                    "importance": 2,
+                    "score": 73
+                  },
+                  {
+                    "moveId": "con-pauline-development",
+                    "importance": 3,
+                    "score": 69
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 80.35,
+            "burdenCompletionAdjustment": 0,
+            "score": 80
+          },
+          "con": {
+            "weightedSectionMean": 75.8,
+            "burdenCompletionAdjustment": 0,
+            "score": 76
+          }
+        },
+        "winner": "pro",
+        "winningMargin": 4
+      },
+      "passB": {
+        "protocolId": "v4.2.21.17.7-decomposed-consensus",
+        "debateNumber": "182",
+        "debateId": "white-ally-sin-salvation-quran-bible-2013",
+        "sections": [
+          {
+            "sectionId": "issue-forgiveness-justice",
+            "title": "Direct forgiveness, holiness, and justice",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 86,
+                "moves": [
+                  {
+                    "moveId": "pro-holy-law-ground",
+                    "importance": 3,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "pro-substitution-justice-mercy",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              },
+              "con": {
+                "score": 90,
+                "moves": [
+                  {
+                    "moveId": "con-repentance-accounting",
+                    "importance": 3,
+                    "score": 90
+                  },
+                  {
+                    "moveId": "con-principled-direct-mercy",
+                    "importance": 3,
+                    "score": 90
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "issue-human-condition",
+            "title": "Human fallenness and personal responsibility",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "pro-adamic-fallenness",
+                    "importance": 3,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "pro-enslavement-drawing",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "con-no-inherited-guilt",
+                    "importance": 3,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "con-merciful-moral-accounting",
+                    "importance": 3,
+                    "score": 82
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "issue-deeds-salvation",
+            "title": "The place of deeds in salvation",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 86,
+                "moves": [
+                  {
+                    "moveId": "pro-works-as-fruit",
+                    "importance": 2,
+                    "score": 87
+                  },
+                  {
+                    "moveId": "pro-work-out-possession",
+                    "importance": 2,
+                    "score": 85
+                  }
+                ]
+              },
+              "con": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "con-deed-accounting-witness",
+                    "importance": 2,
+                    "score": 72
+                  },
+                  {
+                    "moveId": "con-enabled-obligation",
+                    "importance": 2,
+                    "score": 78
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "issue-atonement-coherence",
+            "title": "The coherence and operation of atonement",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 91,
+                "moves": [
+                  {
+                    "moveId": "pro-priest-and-sacrifice",
+                    "importance": 3,
+                    "score": 92
+                  },
+                  {
+                    "moveId": "pro-sinless-god-man",
+                    "importance": 3,
+                    "score": 89
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "con-atonement-payment-objection",
+                    "importance": 3,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "con-natural-disposition-return",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "issue-scriptural-grounding",
+            "title": "Scriptural continuity and doctrinal development",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "pro-atonement-fulfillment",
+                    "importance": 3,
+                    "score": 87
+                  },
+                  {
+                    "moveId": "pro-biblical-reconciliation",
+                    "importance": 3,
+                    "score": 89
+                  }
+                ]
+              },
+              "con": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "con-old-testament-forgiveness",
+                    "importance": 2,
+                    "score": 81
+                  },
+                  {
+                    "moveId": "con-pauline-development",
+                    "importance": 3,
+                    "score": 76
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 87.1,
+            "burdenCompletionAdjustment": 0,
+            "score": 87
+          },
+          "con": {
+            "weightedSectionMean": 82.6,
+            "burdenCompletionAdjustment": 0,
+            "score": 83
+          }
+        },
+        "winner": "pro",
+        "winningMargin": 4
+      },
+      "final": {
+        "protocolId": "v4.2.21.17.7-decomposed-consensus",
+        "debateNumber": "182",
+        "debateId": "white-ally-sin-salvation-quran-bible-2013",
+        "sections": [
+          {
+            "sectionId": "issue-forgiveness-justice",
+            "title": "Direct forgiveness, holiness, and justice",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "pro-holy-law-ground",
+                    "importance": 3,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "pro-substitution-justice-mercy",
+                    "importance": 3,
+                    "score": 82
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "con-repentance-accounting",
+                    "importance": 3,
+                    "score": 88
+                  },
+                  {
+                    "moveId": "con-principled-direct-mercy",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "issue-human-condition",
+            "title": "Human fallenness and personal responsibility",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "pro-adamic-fallenness",
+                    "importance": 3,
+                    "score": 74
+                  },
+                  {
+                    "moveId": "pro-enslavement-drawing",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              },
+              "con": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "con-no-inherited-guilt",
+                    "importance": 3,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "con-merciful-moral-accounting",
+                    "importance": 3,
+                    "score": 74
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "issue-deeds-salvation",
+            "title": "The place of deeds in salvation",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "pro-works-as-fruit",
+                    "importance": 2,
+                    "score": 86
+                  },
+                  {
+                    "moveId": "pro-work-out-possession",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "con-deed-accounting-witness",
+                    "importance": 2,
+                    "score": 72
+                  },
+                  {
+                    "moveId": "con-enabled-obligation",
+                    "importance": 2,
+                    "score": 78
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "issue-atonement-coherence",
+            "title": "The coherence and operation of atonement",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "pro-priest-and-sacrifice",
+                    "importance": 3,
+                    "score": 89
+                  },
+                  {
+                    "moveId": "pro-sinless-god-man",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              },
+              "con": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "con-atonement-payment-objection",
+                    "importance": 3,
+                    "score": 74
+                  },
+                  {
+                    "moveId": "con-natural-disposition-return",
+                    "importance": 3,
+                    "score": 75
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "issue-scriptural-grounding",
+            "title": "Scriptural continuity and doctrinal development",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "pro-atonement-fulfillment",
+                    "importance": 3,
+                    "score": 86
+                  },
+                  {
+                    "moveId": "pro-biblical-reconciliation",
+                    "importance": 3,
+                    "score": 76
+                  }
+                ]
+              },
+              "con": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "con-old-testament-forgiveness",
+                    "importance": 2,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "con-pauline-development",
+                    "importance": 3,
+                    "score": 69
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 82.25,
+            "burdenCompletionAdjustment": 0,
+            "score": 82
+          },
+          "con": {
+            "weightedSectionMean": 78.3,
+            "burdenCompletionAdjustment": 0,
+            "score": 78
+          }
+        },
+        "winner": "pro",
+        "winningMargin": 4
+      },
+      "consensus": {
+        "initialWinnersAgree": true,
+        "initialWinner": "pro",
+        "finalPreservesAgreedWinner": true
+      },
+      "productionReferenceDiagnosticOnly": {
+        "scores": {
+          "pro": 91,
+          "con": 88
+        },
+        "winner": "pro",
+        "finalDeltas": {
+          "pro": -9,
+          "con": -10
+        },
+        "finalWinnerMatches": true,
+        "acceptanceGateInput": false
+      }
+    }
+  ],
+  "stability": {
+    "sideRows": [
+      {
+        "debateNumber": "133",
+        "side": "pro",
+        "passA": 77,
+        "passB": 77,
+        "final": 78,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 1
+      },
+      {
+        "debateNumber": "133",
+        "side": "con",
+        "passA": 84,
+        "passB": 84,
+        "final": 84,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "178",
+        "side": "pro",
+        "passA": 80,
+        "passB": 80,
+        "final": 80,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "178",
+        "side": "con",
+        "passA": 86,
+        "passB": 83,
+        "final": 84,
+        "absoluteDistanceFromPassA": 2,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "182",
+        "side": "pro",
+        "passA": 80,
+        "passB": 87,
+        "final": 82,
+        "absoluteDistanceFromPassA": 2,
+        "absoluteDistanceFromPassB": 5,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "182",
+        "side": "con",
+        "passA": 76,
+        "passB": 83,
+        "final": 78,
+        "absoluteDistanceFromPassA": 2,
+        "absoluteDistanceFromPassB": 5,
+        "outsideInitialRange": 0
+      }
+    ],
+    "scoreBoundsPassed": true,
+    "agreedWinnerDebates": 3,
+    "agreedWinnersPreserved": 3,
+    "meanAbsoluteDistanceToInitialPasses": 1.58,
+    "maximumAbsoluteDistanceToEitherInitialPass": 5,
+    "maximumOutsideInitialRange": 1,
+    "thresholds": {
+      "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+      "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+      "maximumOutsideInitialRangeMaximum": 3
+    },
+    "acceptancePassed": true
+  },
+  "totals": {
+    "debates": 3,
+    "finalSides": 6,
+    "scoringPasses": 1,
+    "modelContexts": 0,
+    "retries": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "acceptancePassed": true
+  },
+  "authorization": {
+    "workflowQualityAnalysis": true,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
