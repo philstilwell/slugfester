@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "4.2.21.17.4-medium-confidence-audio-verification-manifest",
+  "protocolId": "v4.2.21.17.4-decomposed-consensus",
+  "status": "frozen-two-paid-audio-transcriptions-authorized",
+  "frozenAt": "2026-08-06T09:01:08Z",
+  "checkpointCommit": "66b27c02b7cbfe7fbf13ea8945694d3821bb2ffd",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "calls": [
+    {
+      "debateNumber": "178",
+      "debateId": "ehrman-licona-who-wrote-gospels-2025",
+      "moveId": "con-justin-gospel-of-peter",
+      "expectedSpeaker": "Bart Ehrman",
+      "proposition": "Justin's language and textual agreements are better explained by his use of the Gospel of Peter than by an attribution of canonical Mark to Peter.",
+      "verificationExcerpt": "on the Gospel of Peter? Because he calls it the memoir of Peter. Yep. And uh I don't know if you've read the scholarship on this. Um the um Thornton wrote a book wrote an article um arguing that in fact he must go talk about Mark because of merits. What he's overlooking there are two things he's overlooking. One is that the only verbatim agreements between Justin and any of the",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/v4221173-audio-verification/debate-178/clips/con-justin-gospel-of-peter.mp3",
+      "clipSha256": "26054768899e3e4b9a77c1f96404a1d6a9841abe8a8209b8046652f1ee1ceeac",
+      "durationSeconds": 79.8,
+      "transcriptPath": "output/transcribe/v4221173-audio-verification/debate-178/transcripts/con-justin-gospel-of-peter.transcript.txt",
+      "model": "gpt-4o-mini-transcribe",
+      "responseFormat": "text",
+      "chunkingStrategy": "auto",
+      "language": "en"
+    },
+    {
+      "debateNumber": "178",
+      "debateId": "ehrman-licona-who-wrote-gospels-2025",
+      "moveId": "con-matthew-financial-vocabulary",
+      "expectedSpeaker": "Bart Ehrman",
+      "proposition": "Matthew's references to taxes and money do not identify its author as a tax collector, because thematic vocabulary is not reliable evidence of an author's occupation.",
+      "verificationExcerpt": "about Matthew a bit more. You suggested that uh he might be a tax collector because he mentions money a lot. Is that right? Yeah. For the for the internal evidence, that's consistent with it being written by a tax collector. Mentions taxes more than any other gospel author. More than the other gospels. Yeah. So more likely he was a tax collector than the others were because tax",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/v4221173-audio-verification/debate-178/clips/con-matthew-financial-vocabulary.mp3",
+      "clipSha256": "8ef6d751dbe70b8accd4ac1dc0c03dab1d3e6c8784c066ac458fe0624548f150",
+      "durationSeconds": 74.6,
+      "transcriptPath": "output/transcribe/v4221173-audio-verification/debate-178/transcripts/con-matthew-financial-vocabulary.transcript.txt",
+      "model": "gpt-4o-mini-transcribe",
+      "responseFormat": "text",
+      "chunkingStrategy": "auto",
+      "language": "en"
+    }
+  ],
+  "deterministicThresholds": {
+    "minimumFullClipExcerptRecall": 0.8
+  },
+  "costEstimate": {
+    "pricingSource": "https://platform.openai.com/docs/pricing",
+    "pricePerMinuteUsd": 0.003,
+    "clipMinutes": 2.5733,
+    "expectedCostUsd": 0.0077,
+    "maximumAuthorizedCostUsd": 0.01,
+    "ChatGPTSubscriptionApplicable": false,
+    "OpenAIApiBillingRequired": true
+  },
+  "executionPolicy": {
+    "callsMaximum": 2,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "stopRemainingAfterRequestLevelFailure": true,
+    "continueAfterCompletedButDeterministicallyUnresolvedTranscript": true,
+    "transcriptsSavedLocally": true,
+    "responseFormat": "text",
+    "chunkingStrategy": "auto"
+  },
+  "authorization": {
+    "paidTranscriptionExecution": true,
+    "deterministicAudioAnalysis": true,
+    "retry": false,
+    "correctionCall": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "preexistingTranscriptBlocks": true,
+    "failedTranscriptPreserved": true,
+    "requestFailureStopsRemaining": true,
+    "retryAuthorized": false,
+    "correctionAuthorized": false
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.2.21.17.4/medium-confidence-audio-verification/model-execution.json",
+    "audit": "docs/calibration/v4.2.21.17.4/medium-confidence-audio-verification/audio-verification.json",
+    "analysis": "docs/calibration/v4.2.21.17.4/medium-confidence-audio-verification/analysis.json",
+    "transcripts": [
+      "output/transcribe/v4221173-audio-verification/debate-178/transcripts/con-justin-gospel-of-peter.transcript.txt",
+      "output/transcribe/v4221173-audio-verification/debate-178/transcripts/con-matthew-financial-vocabulary.transcript.txt"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "output/transcribe/v4221173-audio-verification/debate-178/transcripts/con-justin-gospel-of-peter.transcript.txt",
+    "output/transcribe/v4221173-audio-verification/debate-178/transcripts/con-matthew-financial-vocabulary.transcript.txt",
+    "docs/calibration/v4.2.21.17.4/medium-confidence-audio-verification/model-execution.json",
+    "docs/calibration/v4.2.21.17.4/medium-confidence-audio-verification/audio-verification.json",
+    "docs/calibration/v4.2.21.17.4/medium-confidence-audio-verification/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.21.17.3.md": "e26a65b95ded60f542687525397dc6beb04e5d2b4b48e5d261b1f310bcbd35df",
+    "docs/calibration/v4.2.21.17.3/deterministic-disagreement-audio-prep/analysis.json": "e3b2b5773c77f8075e684e6d44f6075194909e245e4966376e916c3d4579525a",
+    "docs/calibration/v4.2.21.17.3/deterministic-disagreement-audio-prep/audio-work-items.json": "e20d39432db7e2502874def71d3d2369893a6c0a9af12d340cdc38c867ca2d7a",
+    "docs/calibration/v4.2.21.17.3/deterministic-disagreement-audio-prep/audio-source-preparation.json": "e1adeda5988187fa8ffe78922a4a54b92739e1e25412d5153f1038e06b07d5c2",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "scripts/preregister-v4221174-audio-verification.mjs": "8d654e5262ec63a208635812fe6adc5808ea22b8a7e52de175f1679681f48fdc",
+    "scripts/run-v4221174-audio-verification.mjs": "fb15b79f841f6a8cdacd183d95b3dc47995686e92f7aabde81fb1e24f982cb0e",
+    "scripts/analyze-v4221174-audio-verification.mjs": "5b5d4bc4c5a938018a64008f2d35a47c9984da78f093ce4fffb391661ec2ecfd",
+    "scripts/test-v4221174-audio-verification.mjs": "5b3b1866134df3fe0d1dc7f1af63bf5beabe69090ba34834ba457983690bcd9a",
+    "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py": "d623b1fed1491b7ca4b7b5b393089165e3581a83d90d5a57868241f1b2a5d951",
+    "output/transcribe/v4221173-audio-verification/debate-178/clips/con-justin-gospel-of-peter.mp3": "26054768899e3e4b9a77c1f96404a1d6a9841abe8a8209b8046652f1ee1ceeac",
+    "output/transcribe/v4221173-audio-verification/debate-178/clips/con-matthew-financial-vocabulary.mp3": "8ef6d751dbe70b8accd4ac1dc0c03dab1d3e6c8784c066ac458fe0624548f150"
+  }
+}
