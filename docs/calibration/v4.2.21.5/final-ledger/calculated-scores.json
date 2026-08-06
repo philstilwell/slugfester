@@ -1,0 +1,1707 @@
+{
+  "schemaVersion": "4.2.21.6-adjudicated-calculated-scores",
+  "protocolId": "v4.2.21-source-span-consensus",
+  "status": "three-debate-single-score-pass-stability-gate-passed",
+  "sources": {
+    "finalLedgerSha256": "c2bcc23e31cda0ff2fff0fac64b81a151eb9cbdfc01b732227b6f9c6be486847",
+    "productionReferenceSha256": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6"
+  },
+  "formulaBoundary": {
+    "scoringPasses": 1,
+    "rawJudgmentsScoredInPass": 9,
+    "finalJudgmentsPublishedFromPass": 3,
+    "initialPassScoresUsedForPostAdjudicationStabilityDiagnosticsOnly": true,
+    "modelCalculatedScores": false,
+    "scoresDerivedOnlyAfterAdjudicatedLedgerLock": true,
+    "moveFormula": "repository v4.1 deterministic seven-dimension formula",
+    "responseFormula": "repository mapping from adjudicated response class and within-class position",
+    "sectionFormula": "importance-weighted move mean",
+    "overallFormula": "section-weighted mean plus eligible burden-completion adjustment, rounded and bounded 0-100"
+  },
+  "acceptanceRule": {
+    "prospective": true,
+    "productionScoresDiagnosticOnly": true,
+    "agreedInitialWinnerMustBePreserved": true,
+    "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+    "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+    "maximumOutsideInitialRangeMaximum": 3,
+    "postResultTuningAllowed": false,
+    "automaticRerunAllowed": false
+  },
+  "debates": [
+    {
+      "debateNumber": "27",
+      "debateId": "oconnor-turek-evil-moral-argument-2017",
+      "passA": {
+        "protocolId": "v4.2.21-source-span-consensus",
+        "debateNumber": "27",
+        "debateId": "oconnor-turek-evil-moral-argument-2017",
+        "sections": [
+          {
+            "sectionId": "s1",
+            "title": "Moral ontology and divine grounding",
+            "weightPercent": 24,
+            "sides": {
+              "pro": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "m1-pro-grounding",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "m2-con-subjectivity",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s2",
+            "title": "Moral phenomenology and evolution",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "m3-pro-moral-effect",
+                    "importance": 2,
+                    "score": 71
+                  }
+                ]
+              },
+              "con": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "m4-con-evolution",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s3",
+            "title": "Evolution and rational reliability",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "m5-pro-reliability",
+                    "importance": 3,
+                    "score": 75
+                  }
+                ]
+              },
+              "con": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "m6-con-basic-reason",
+                    "importance": 2,
+                    "score": 81
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s4",
+            "title": "Intuition and explanatory burden",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "m7-pro-intuition",
+                    "importance": 2,
+                    "score": 75
+                  }
+                ]
+              },
+              "con": {
+                "score": 89,
+                "moves": [
+                  {
+                    "moveId": "m8-con-explanation",
+                    "importance": 3,
+                    "score": 89
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s5",
+            "title": "Ambiguity and objective morality",
+            "weightPercent": 12,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "m9-pro-disagreement",
+                    "importance": 2,
+                    "score": 79
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "m10-con-ambiguity",
+                    "importance": 2,
+                    "score": 87
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s6",
+            "title": "Competing grounds of reason",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "m11-pro-theistic-reason",
+                    "importance": 3,
+                    "score": 71
+                  }
+                ]
+              },
+              "con": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "m12-con-parity",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 74.72,
+            "burdenCompletionAdjustment": 0,
+            "score": 75
+          },
+          "con": {
+            "weightedSectionMean": 84.66,
+            "burdenCompletionAdjustment": 0,
+            "score": 85
+          }
+        },
+        "winner": "con",
+        "winningMargin": 10
+      },
+      "passB": {
+        "protocolId": "v4.2.21-source-span-consensus",
+        "debateNumber": "27",
+        "debateId": "oconnor-turek-evil-moral-argument-2017",
+        "sections": [
+          {
+            "sectionId": "s1",
+            "title": "Moral ontology and divine grounding",
+            "weightPercent": 24,
+            "sides": {
+              "pro": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "m1-pro-grounding",
+                    "importance": 3,
+                    "score": 73
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "m2-con-subjectivity",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s2",
+            "title": "Moral phenomenology and evolution",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "m3-pro-moral-effect",
+                    "importance": 2,
+                    "score": 74
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "m4-con-evolution",
+                    "importance": 3,
+                    "score": 87
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s3",
+            "title": "Evolution and rational reliability",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "m5-pro-reliability",
+                    "importance": 3,
+                    "score": 71
+                  }
+                ]
+              },
+              "con": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "m6-con-basic-reason",
+                    "importance": 2,
+                    "score": 77
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s4",
+            "title": "Intuition and explanatory burden",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 66,
+                "moves": [
+                  {
+                    "moveId": "m7-pro-intuition",
+                    "importance": 2,
+                    "score": 66
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "m8-con-explanation",
+                    "importance": 3,
+                    "score": 87
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s5",
+            "title": "Ambiguity and objective morality",
+            "weightPercent": 12,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "m9-pro-disagreement",
+                    "importance": 2,
+                    "score": 74
+                  }
+                ]
+              },
+              "con": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "m10-con-ambiguity",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s6",
+            "title": "Competing grounds of reason",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 68,
+                "moves": [
+                  {
+                    "moveId": "m11-pro-theistic-reason",
+                    "importance": 3,
+                    "score": 68
+                  }
+                ]
+              },
+              "con": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "m12-con-parity",
+                    "importance": 3,
+                    "score": 81
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 71.12,
+            "burdenCompletionAdjustment": 0,
+            "score": 71
+          },
+          "con": {
+            "weightedSectionMean": 82.26,
+            "burdenCompletionAdjustment": 0,
+            "score": 82
+          }
+        },
+        "winner": "con",
+        "winningMargin": 11
+      },
+      "final": {
+        "protocolId": "v4.2.21-source-span-consensus",
+        "debateNumber": "27",
+        "debateId": "oconnor-turek-evil-moral-argument-2017",
+        "sections": [
+          {
+            "sectionId": "s1",
+            "title": "Moral ontology and divine grounding",
+            "weightPercent": 24,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "m1-pro-grounding",
+                    "importance": 3,
+                    "score": 74
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "m2-con-subjectivity",
+                    "importance": 3,
+                    "score": 82
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s2",
+            "title": "Moral phenomenology and evolution",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 70,
+                "moves": [
+                  {
+                    "moveId": "m3-pro-moral-effect",
+                    "importance": 2,
+                    "score": 70
+                  }
+                ]
+              },
+              "con": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "m4-con-evolution",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s3",
+            "title": "Evolution and rational reliability",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 72,
+                "moves": [
+                  {
+                    "moveId": "m5-pro-reliability",
+                    "importance": 3,
+                    "score": 72
+                  }
+                ]
+              },
+              "con": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "m6-con-basic-reason",
+                    "importance": 2,
+                    "score": 79
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s4",
+            "title": "Intuition and explanatory burden",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 67,
+                "moves": [
+                  {
+                    "moveId": "m7-pro-intuition",
+                    "importance": 2,
+                    "score": 67
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "m8-con-explanation",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s5",
+            "title": "Ambiguity and objective morality",
+            "weightPercent": 12,
+            "sides": {
+              "pro": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "m9-pro-disagreement",
+                    "importance": 2,
+                    "score": 75
+                  }
+                ]
+              },
+              "con": {
+                "score": 86,
+                "moves": [
+                  {
+                    "moveId": "m10-con-ambiguity",
+                    "importance": 2,
+                    "score": 86
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s6",
+            "title": "Competing grounds of reason",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 72,
+                "moves": [
+                  {
+                    "moveId": "m11-pro-theistic-reason",
+                    "importance": 3,
+                    "score": 72
+                  }
+                ]
+              },
+              "con": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "m12-con-parity",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 71.77,
+            "burdenCompletionAdjustment": 0,
+            "score": 72
+          },
+          "con": {
+            "weightedSectionMean": 83.31,
+            "burdenCompletionAdjustment": 0,
+            "score": 83
+          }
+        },
+        "winner": "con",
+        "winningMargin": 11
+      },
+      "consensus": {
+        "initialWinnersAgree": true,
+        "initialWinner": "con",
+        "finalPreservesAgreedWinner": true
+      },
+      "productionReferenceDiagnosticOnly": {
+        "scores": {
+          "pro": 81,
+          "con": 84
+        },
+        "winner": "con",
+        "finalDeltas": {
+          "pro": -9,
+          "con": -1
+        },
+        "finalWinnerMatches": true,
+        "acceptanceGateInput": false
+      }
+    },
+    {
+      "debateNumber": "188",
+      "debateId": "kastrup-blackmore-consciousness-idealism-2023",
+      "passA": {
+        "protocolId": "v4.2.21-source-span-consensus",
+        "debateNumber": "188",
+        "debateId": "kastrup-blackmore-consciousness-idealism-2023",
+        "sections": [
+          {
+            "sectionId": "s1",
+            "title": "Foundational ontology and explanatory burden",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "m1-pro-given",
+                    "importance": 3,
+                    "score": 81
+                  },
+                  {
+                    "moveId": "m2-pro-emergence",
+                    "importance": 3,
+                    "score": 82
+                  }
+                ]
+              },
+              "con": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "m3-con-neutral",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "m4-con-structure",
+                    "importance": 3,
+                    "score": 86
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s2",
+            "title": "External reality as representation",
+            "weightPercent": 22,
+            "sides": {
+              "pro": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "m5-pro-external",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "m6-con-label",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s3",
+            "title": "Explanatory economy and the hard problem",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "m7-pro-economy",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "m8-con-boundary",
+                    "importance": 2,
+                    "score": 80
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s4",
+            "title": "Boundaries, causation, and physical regularity",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "m9-pro-regularity",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              },
+              "con": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "m10-con-model",
+                    "importance": 3,
+                    "score": 76
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s5",
+            "title": "Representational models and experience",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "m11-pro-modelreply",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              },
+              "con": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "m12-con-distributed",
+                    "importance": 2,
+                    "score": 77
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 84.18,
+            "burdenCompletionAdjustment": 0,
+            "score": 84
+          },
+          "con": {
+            "weightedSectionMean": 81.26,
+            "burdenCompletionAdjustment": 0,
+            "score": 81
+          }
+        },
+        "winner": "pro",
+        "winningMargin": 3
+      },
+      "passB": {
+        "protocolId": "v4.2.21-source-span-consensus",
+        "debateNumber": "188",
+        "debateId": "kastrup-blackmore-consciousness-idealism-2023",
+        "sections": [
+          {
+            "sectionId": "s1",
+            "title": "Foundational ontology and explanatory burden",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "m1-pro-given",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "m2-pro-emergence",
+                    "importance": 3,
+                    "score": 66
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "m3-con-neutral",
+                    "importance": 3,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "m4-con-structure",
+                    "importance": 3,
+                    "score": 81
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s2",
+            "title": "External reality as representation",
+            "weightPercent": 22,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "m5-pro-external",
+                    "importance": 3,
+                    "score": 79
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "m6-con-label",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s3",
+            "title": "Explanatory economy and the hard problem",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "m7-pro-economy",
+                    "importance": 3,
+                    "score": 73
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "m8-con-boundary",
+                    "importance": 2,
+                    "score": 82
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s4",
+            "title": "Boundaries, causation, and physical regularity",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "m9-pro-regularity",
+                    "importance": 3,
+                    "score": 73
+                  }
+                ]
+              },
+              "con": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "m10-con-model",
+                    "importance": 3,
+                    "score": 79
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s5",
+            "title": "Representational models and experience",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "m11-pro-modelreply",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              },
+              "con": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "m12-con-distributed",
+                    "importance": 2,
+                    "score": 75
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 76.12,
+            "burdenCompletionAdjustment": 0,
+            "score": 76
+          },
+          "con": {
+            "weightedSectionMean": 81.67,
+            "burdenCompletionAdjustment": 0,
+            "score": 82
+          }
+        },
+        "winner": "con",
+        "winningMargin": 6
+      },
+      "final": {
+        "protocolId": "v4.2.21-source-span-consensus",
+        "debateNumber": "188",
+        "debateId": "kastrup-blackmore-consciousness-idealism-2023",
+        "sections": [
+          {
+            "sectionId": "s1",
+            "title": "Foundational ontology and explanatory burden",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "m1-pro-given",
+                    "importance": 3,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "m2-pro-emergence",
+                    "importance": 3,
+                    "score": 72
+                  }
+                ]
+              },
+              "con": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "m3-con-neutral",
+                    "importance": 3,
+                    "score": 81
+                  },
+                  {
+                    "moveId": "m4-con-structure",
+                    "importance": 3,
+                    "score": 86
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s2",
+            "title": "External reality as representation",
+            "weightPercent": 22,
+            "sides": {
+              "pro": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "m5-pro-external",
+                    "importance": 3,
+                    "score": 82
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "m6-con-label",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s3",
+            "title": "Explanatory economy and the hard problem",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "m7-pro-economy",
+                    "importance": 3,
+                    "score": 74
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "m8-con-boundary",
+                    "importance": 2,
+                    "score": 80
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s4",
+            "title": "Boundaries, causation, and physical regularity",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "m9-pro-regularity",
+                    "importance": 3,
+                    "score": 74
+                  }
+                ]
+              },
+              "con": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "m10-con-model",
+                    "importance": 3,
+                    "score": 78
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s5",
+            "title": "Representational models and experience",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "m11-pro-modelreply",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              },
+              "con": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "m12-con-distributed",
+                    "importance": 2,
+                    "score": 76
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 78.61,
+            "burdenCompletionAdjustment": 0,
+            "score": 79
+          },
+          "con": {
+            "weightedSectionMean": 81.76,
+            "burdenCompletionAdjustment": 0,
+            "score": 82
+          }
+        },
+        "winner": "con",
+        "winningMargin": 3
+      },
+      "consensus": {
+        "initialWinnersAgree": false,
+        "initialWinner": null,
+        "finalPreservesAgreedWinner": true
+      },
+      "productionReferenceDiagnosticOnly": {
+        "scores": {
+          "pro": 90,
+          "con": 92
+        },
+        "winner": "con",
+        "finalDeltas": {
+          "pro": -11,
+          "con": -10
+        },
+        "finalWinnerMatches": true,
+        "acceptanceGateInput": false
+      }
+    },
+    {
+      "debateNumber": "195",
+      "debateId": "russell-copleston-existence-of-god-1948",
+      "passA": {
+        "protocolId": "v4.2.21-source-span-consensus",
+        "debateNumber": "195",
+        "debateId": "russell-copleston-existence-of-god-1948",
+        "sections": [
+          {
+            "sectionId": "s1",
+            "title": "Contingency and necessary existence",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "m1",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "m2",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s2",
+            "title": "Meaning of metaphysical terms",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "m3",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "m4",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s3",
+            "title": "Explanation of the totality",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "m5",
+                    "importance": 3,
+                    "score": 75
+                  }
+                ]
+              },
+              "con": {
+                "score": 89,
+                "moves": [
+                  {
+                    "moveId": "m6",
+                    "importance": 3,
+                    "score": 89
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s4",
+            "title": "Religious experience",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "m7",
+                    "importance": 2,
+                    "score": 79
+                  }
+                ]
+              },
+              "con": {
+                "score": 89,
+                "moves": [
+                  {
+                    "moveId": "m8",
+                    "importance": 2,
+                    "score": 89
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s5",
+            "title": "Moral obligation",
+            "weightPercent": 22,
+            "sides": {
+              "pro": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "m9",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "m10",
+                    "importance": 3,
+                    "score": 82
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 78.76,
+            "burdenCompletionAdjustment": 0,
+            "score": 79
+          },
+          "con": {
+            "weightedSectionMean": 85.71,
+            "burdenCompletionAdjustment": 0,
+            "score": 86
+          }
+        },
+        "winner": "con",
+        "winningMargin": 7
+      },
+      "passB": {
+        "protocolId": "v4.2.21-source-span-consensus",
+        "debateNumber": "195",
+        "debateId": "russell-copleston-existence-of-god-1948",
+        "sections": [
+          {
+            "sectionId": "s1",
+            "title": "Contingency and necessary existence",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 68,
+                "moves": [
+                  {
+                    "moveId": "m1",
+                    "importance": 3,
+                    "score": 68
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "m2",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s2",
+            "title": "Meaning of metaphysical terms",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "m3",
+                    "importance": 2,
+                    "score": 71
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "m4",
+                    "importance": 2,
+                    "score": 80
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s3",
+            "title": "Explanation of the totality",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 63,
+                "moves": [
+                  {
+                    "moveId": "m5",
+                    "importance": 3,
+                    "score": 63
+                  }
+                ]
+              },
+              "con": {
+                "score": 86,
+                "moves": [
+                  {
+                    "moveId": "m6",
+                    "importance": 3,
+                    "score": 86
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s4",
+            "title": "Religious experience",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "m7",
+                    "importance": 2,
+                    "score": 75
+                  }
+                ]
+              },
+              "con": {
+                "score": 90,
+                "moves": [
+                  {
+                    "moveId": "m8",
+                    "importance": 2,
+                    "score": 90
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s5",
+            "title": "Moral obligation",
+            "weightPercent": 22,
+            "sides": {
+              "pro": {
+                "score": 69,
+                "moves": [
+                  {
+                    "moveId": "m9",
+                    "importance": 3,
+                    "score": 69
+                  }
+                ]
+              },
+              "con": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "m10",
+                    "importance": 3,
+                    "score": 74
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 68.93,
+            "burdenCompletionAdjustment": 0,
+            "score": 69
+          },
+          "con": {
+            "weightedSectionMean": 81.68,
+            "burdenCompletionAdjustment": 0,
+            "score": 82
+          }
+        },
+        "winner": "con",
+        "winningMargin": 13
+      },
+      "final": {
+        "protocolId": "v4.2.21-source-span-consensus",
+        "debateNumber": "195",
+        "debateId": "russell-copleston-existence-of-god-1948",
+        "sections": [
+          {
+            "sectionId": "s1",
+            "title": "Contingency and necessary existence",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "m1",
+                    "importance": 3,
+                    "score": 74
+                  }
+                ]
+              },
+              "con": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "m2",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s2",
+            "title": "Meaning of metaphysical terms",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "m3",
+                    "importance": 2,
+                    "score": 73
+                  }
+                ]
+              },
+              "con": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "m4",
+                    "importance": 2,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s3",
+            "title": "Explanation of the totality",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 67,
+                "moves": [
+                  {
+                    "moveId": "m5",
+                    "importance": 3,
+                    "score": 67
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "m6",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s4",
+            "title": "Religious experience",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "m7",
+                    "importance": 2,
+                    "score": 78
+                  }
+                ]
+              },
+              "con": {
+                "score": 89,
+                "moves": [
+                  {
+                    "moveId": "m8",
+                    "importance": 2,
+                    "score": 89
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "s5",
+            "title": "Moral obligation",
+            "weightPercent": 22,
+            "sides": {
+              "pro": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "m9",
+                    "importance": 3,
+                    "score": 75
+                  }
+                ]
+              },
+              "con": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "m10",
+                    "importance": 3,
+                    "score": 74
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 73.39,
+            "burdenCompletionAdjustment": 0,
+            "score": 73
+          },
+          "con": {
+            "weightedSectionMean": 83.1,
+            "burdenCompletionAdjustment": 0,
+            "score": 83
+          }
+        },
+        "winner": "con",
+        "winningMargin": 10
+      },
+      "consensus": {
+        "initialWinnersAgree": true,
+        "initialWinner": "con",
+        "finalPreservesAgreedWinner": true
+      },
+      "productionReferenceDiagnosticOnly": {
+        "scores": {
+          "pro": 91,
+          "con": 94
+        },
+        "winner": "con",
+        "finalDeltas": {
+          "pro": -18,
+          "con": -11
+        },
+        "finalWinnerMatches": true,
+        "acceptanceGateInput": false
+      }
+    }
+  ],
+  "stability": {
+    "sideRows": [
+      {
+        "debateNumber": "27",
+        "side": "pro",
+        "passA": 75,
+        "passB": 71,
+        "final": 72,
+        "absoluteDistanceFromPassA": 3,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "27",
+        "side": "con",
+        "passA": 85,
+        "passB": 82,
+        "final": 83,
+        "absoluteDistanceFromPassA": 2,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "188",
+        "side": "pro",
+        "passA": 84,
+        "passB": 76,
+        "final": 79,
+        "absoluteDistanceFromPassA": 5,
+        "absoluteDistanceFromPassB": 3,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "188",
+        "side": "con",
+        "passA": 81,
+        "passB": 82,
+        "final": 82,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "195",
+        "side": "pro",
+        "passA": 79,
+        "passB": 69,
+        "final": 73,
+        "absoluteDistanceFromPassA": 6,
+        "absoluteDistanceFromPassB": 4,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "195",
+        "side": "con",
+        "passA": 86,
+        "passB": 82,
+        "final": 83,
+        "absoluteDistanceFromPassA": 3,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      }
+    ],
+    "scoreBoundsPassed": true,
+    "agreedWinnerDebates": 2,
+    "agreedWinnersPreserved": 2,
+    "meanAbsoluteDistanceToInitialPasses": 2.5,
+    "maximumAbsoluteDistanceToEitherInitialPass": 6,
+    "maximumOutsideInitialRange": 0,
+    "thresholds": {
+      "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+      "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+      "maximumOutsideInitialRangeMaximum": 3
+    },
+    "acceptancePassed": true
+  },
+  "totals": {
+    "debates": 3,
+    "finalSides": 6,
+    "scoringPasses": 1,
+    "modelContexts": 0,
+    "retries": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "acceptancePassed": true
+  },
+  "authorization": {
+    "workflowQualityAnalysis": true,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "heldOutGate": false,
+    "all195Debates": false
+  }
+}
