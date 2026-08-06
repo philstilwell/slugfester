@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "4.2.21.14.1-narrow-primary-a-timeout-analysis",
+  "protocolId": "v4.2.21.14-narrow-primary-successor",
+  "status": "narrow-primary-gate-failed-evidence-transport-successor-authorized",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "execution": {
+    "contextsPlanned": 3,
+    "contextsAttempted": 3,
+    "validContexts": 1,
+    "invalidContexts": 2,
+    "retries": 0,
+    "totalElapsedMs": 2252596,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "outcomes": [
+    {
+      "debateNumber": "133",
+      "status": "completed-valid",
+      "accepted": true,
+      "timedOut": false,
+      "elapsedMs": 375987,
+      "copiedInputBytes": 274754,
+      "candidateBundleBytes": 52546,
+      "sparseContextBytes": 162840,
+      "proposalWritten": true
+    },
+    {
+      "debateNumber": "178",
+      "status": "timed-out",
+      "accepted": false,
+      "timedOut": true,
+      "elapsedMs": 928083,
+      "copiedInputBytes": 219763,
+      "candidateBundleBytes": 41672,
+      "sparseContextBytes": 119381,
+      "proposalWritten": false
+    },
+    {
+      "debateNumber": "182",
+      "status": "timed-out",
+      "accepted": false,
+      "timedOut": true,
+      "elapsedMs": 948526,
+      "copiedInputBytes": 284182,
+      "candidateBundleBytes": 66700,
+      "sparseContextBytes": 157671,
+      "proposalWritten": false
+    }
+  ],
+  "interpretation": {
+    "narrowSchemaValidatedOnAcceptedDebate": true,
+    "timeoutContextsProducedNoAcceptedProposal": true,
+    "retryAuthorized": false,
+    "timeoutExtensionRecommended": false,
+    "validOutputReusableInSuccessorGate": false,
+    "broadSparseLedgerIsDominantReducibleInput": true,
+    "allCandidatesMustRemainAvailable": true,
+    "scoresDerived": 0
+  },
+  "successorRecommendation": {
+    "replaceBroadSparseLedgerWithCandidateEvidenceBundle": true,
+    "renderOneBoundedSourceExactExcerptPerCandidate": true,
+    "renderingAnchors": [
+      "proposition",
+      "loadBearingReason",
+      "contextSummary"
+    ],
+    "retainEveryCandidate": true,
+    "noSemanticCandidateDownselection": true,
+    "finalSelectedMoveEvidenceStillRerenderedFromOriginalSource": true,
+    "targetMaximumCopiedInputBytes": 170000,
+    "rerunAllThreeFresh": true
+  },
+  "authorization": {
+    "candidateEvidenceTransportDesign": true,
+    "executionManifest": false,
+    "modelExecution": false,
+    "retry": false,
+    "passBExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
