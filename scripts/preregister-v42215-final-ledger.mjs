@@ -2,7 +2,7 @@
 
 import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
-import { access, readFile, writeFile } from "node:fs/promises";
+import { access, mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { assertV4 } from "./lib/v4-lean-production.mjs";
 import {
@@ -109,6 +109,7 @@ const manifest = {
 };
 
 if (shouldWrite) {
+  await mkdir(path.resolve(V42215_FINAL_LEDGER_ROOT), { recursive: true });
   await writeFile(path.resolve(schemaPath), `${JSON.stringify(makeV42215FinalLedgerSchema(), null, 2)}\n`);
   await writeFile(path.resolve(manifestPath), `${JSON.stringify(manifest, null, 2)}\n`);
 }
