@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "4.2.21.12-simplified-partition-source-packet",
+  "protocolId": "v4.2.21.12-simplified-partition-discovery",
+  "debateNumber": "178",
+  "debateId": "ehrman-licona-who-wrote-gospels-2025",
+  "motion": "Were the canonical Gospels written by, or under the authority of, Matthew, Mark, Luke, and John?",
+  "sides": {
+    "pro": {
+      "label": "Traditional authorship",
+      "speakers": [
+        "Michael Licona"
+      ]
+    },
+    "con": {
+      "label": "Anonymous later authorship",
+      "speakers": [
+        "Bart Ehrman"
+      ]
+    }
+  },
+  "durationSeconds": 8426,
+  "eventCount": 1286,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/xTCPigOQabY/transcript.txt",
+    "transcriptSha256": "fa5c936c4dfaeb55945ec642dd411730c7fd20647b0ee432b0b4620c0642c4dc",
+    "eventsPath": ".assessment-cache/captions/xTCPigOQabY/events.json",
+    "eventsSha256": "261aa1d1a56ecdb7a56bb5bd16a3ab7d88e3d744b31fa75e5e2334a451925dcd",
+    "localManifestPath": ".assessment-cache/captions/xTCPigOQabY/manifest.json",
+    "localManifestSha256": "60db7566cc5831a01a1ea2a25e4ca7b0532d20a97c932746240db2b01c92bb29"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/v4.2.21.9/debate-178.jsonl",
+    "sourceLedgerSha256": "25f61fc81cca5b829997619688d7a7729a4945f334291d4027397497f8a55ad7",
+    "sourceLedgerBytes": 148739,
+    "sourceLedgerEventCount": 1286,
+    "replayExactToOriginalEvents": true,
+    "partitionPlanPath": "docs/calibration/v4.2.21.9/generalized-partition/plans/debate-178.json",
+    "partitionPlanSha256": "09f821f3aab39182ad436666852b042893e7de8d3d39fbd5b0a5a2aaf6edf810",
+    "partitionChunks": 3
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "wholeSourceLedgerDeliveredInOneContext": false,
+    "completeChunkContextRequired": true,
+    "chunkContextIsExactSourceLedgerSlice": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredMoveKindProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsScoresWinnersAndAssessmentProseUnavailable": true,
+    "candidateTargetIdsProhibited": true,
+    "selectedMoveTargetTopologyDeferredToPrimaryA": true
+  }
+}
