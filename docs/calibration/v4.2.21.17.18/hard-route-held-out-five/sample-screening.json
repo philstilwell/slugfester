@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "4.2.21.17.18-hard-route-held-out-five-screening",
+  "protocolId": "v4.2.21.17.18-hard-route-held-out-five",
+  "status": "hard-route-held-out-five-screened-source-preparation-authorized",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "sourceBoundary": {
+    "motionAndRouteMetadataOnly": true,
+    "transcriptContentSemanticallyInspected": false,
+    "audioAccessed": false,
+    "legacyAssessmentContentAccessed": false,
+    "legacyScoresAccessed": false,
+    "priorJudgmentsAccessed": false,
+    "candidateRanksReoptimized": false,
+    "noUnusedDirectControlsRemaining": true,
+    "hardRouteOnlyLimitationRecorded": true
+  },
+  "decisions": [
+    {
+      "debateNumber": "51",
+      "debateId": "lennox-atkins-duelling-professors-2012",
+      "assignedFamily": "morality-ethics",
+      "classifierReplays": true,
+      "route": "partition",
+      "routeReplays": true,
+      "dyadic": true,
+      "transcriptChainPresent": true,
+      "durationBin": "90-minutes-or-more",
+      "captionKind": "auto",
+      "partitionSeverity": "heavy-partition"
+    },
+    {
+      "debateNumber": "63",
+      "debateId": "butt-shermer-god-bible-2023",
+      "assignedFamily": "evil-hiddenness",
+      "classifierReplays": true,
+      "route": "partition",
+      "routeReplays": true,
+      "dyadic": true,
+      "transcriptChainPresent": true,
+      "durationBin": "90-minutes-or-more",
+      "captionKind": "auto",
+      "partitionSeverity": "moderate-partition"
+    },
+    {
+      "debateNumber": "90",
+      "debateId": "akin-ehrman-gospels-historically-reliable-2022",
+      "assignedFamily": "resurrection-history",
+      "classifierReplays": true,
+      "route": "partition",
+      "routeReplays": true,
+      "dyadic": true,
+      "transcriptChainPresent": true,
+      "durationBin": "90-minutes-or-more",
+      "captionKind": "auto",
+      "partitionSeverity": "heavy-partition"
+    },
+    {
+      "debateNumber": "153",
+      "debateId": "oconnor-carter-free-will-determinism-2024",
+      "assignedFamily": "mind-agency",
+      "classifierReplays": true,
+      "route": "partition",
+      "routeReplays": true,
+      "dyadic": true,
+      "transcriptChainPresent": true,
+      "durationBin": "60-to-89-minutes",
+      "captionKind": "auto",
+      "partitionSeverity": "near-direct-ceiling"
+    },
+    {
+      "debateNumber": "165",
+      "debateId": "craig-rosenberg-faith-god-reasonable-2013",
+      "assignedFamily": "general-theism-religion",
+      "classifierReplays": true,
+      "route": "partition",
+      "routeReplays": true,
+      "dyadic": true,
+      "transcriptChainPresent": true,
+      "durationBin": "90-minutes-or-more",
+      "captionKind": "human",
+      "partitionSeverity": "moderate-partition"
+    }
+  ],
+  "audit": {
+    "debates": 5,
+    "direct": 0,
+    "partition": 5,
+    "distinctFamilies": 5,
+    "distinctDurationBins": 2,
+    "distinctCaptionKinds": 2,
+    "distinctPartitionSeverityBins": 3,
+    "classifierReplayPassed": 5,
+    "routeReplayPassed": 5,
+    "dyadic": 5,
+    "transcriptChainsPresent": 5,
+    "failedFiveOverlap": 0
+  },
+  "authorization": {
+    "sourcePacketPreparation": true,
+    "candidateDiscoveryPreparation": false,
+    "modelExecution": false,
+    "audioExecution": false,
+    "adjudicationExecution": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
