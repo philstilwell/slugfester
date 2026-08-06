@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "4.2.21.13.1-partition-primary-a-failure-analysis",
+  "protocolId": "v4.2.21.13-partition-primary-a",
+  "status": "partition-primary-a-gate-failed-narrow-successor-design-authorized",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "execution": {
+    "contextsPlanned": 3,
+    "contextsAttempted": 3,
+    "validContexts": 1,
+    "invalidContexts": 2,
+    "retries": 0,
+    "totalElapsedMs": 819418,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "proposals": [
+    {
+      "debateNumber": "133",
+      "sections": 5,
+      "weightTotal": 100,
+      "moves": 12,
+      "structuralSideCountsPassed": true
+    },
+    {
+      "debateNumber": "178",
+      "sections": 5,
+      "weightTotal": 100,
+      "moves": 12,
+      "structuralSideCountsPassed": true
+    },
+    {
+      "debateNumber": "182",
+      "sections": 5,
+      "weightTotal": 100,
+      "moves": 11,
+      "structuralSideCountsPassed": true
+    }
+  ],
+  "failures": [
+    {
+      "debateNumber": "133",
+      "status": "output-validation-failed",
+      "transportPassed": true,
+      "proposalPreserved": true,
+      "proposalSha256": "32b2d7f5a5140f3d5ca0703cd23889ee5540b57868e0842f584fb68b0ebabe19",
+      "class": "discovery-move-kind-too-rigid",
+      "validatorMessage": "constructive candidate cannot target a selected move"
+    },
+    {
+      "debateNumber": "182",
+      "status": "output-validation-failed",
+      "transportPassed": true,
+      "proposalPreserved": true,
+      "proposalSha256": "b05fc8da266e63e9bf0af1de0afe96d3421154ea1272124fcee20ce2a606e7c8",
+      "class": "mutually-exclusive-response-booleans",
+      "validatorMessage": "diagnostic-defeat and justified-reframe findings are mutually exclusive"
+    }
+  ],
+  "interpretation": {
+    "outerStructuralSectionFixPassedEveryProposal": true,
+    "unchangedV4220ValidatorCorrectlyRejectedBothFailures": true,
+    "semanticRepairAuthorized": false,
+    "retryAuthorized": false,
+    "validPrimaryOutputReusableInSuccessorGate": false,
+    "passBExecuted": false,
+    "scoresDerived": 0
+  },
+  "successorRecommendation": {
+    "primaryAAuthorsMoveKind": true,
+    "discoveryMoveKindBecomesAdvisoryOnly": true,
+    "replaceTwoSpecialResponseBooleansWithEnum": true,
+    "specialResponseModeValues": [
+      "none",
+      "diagnostic-defeat",
+      "justified-reframe"
+    ],
+    "repositoryExpandsEnumToV4220Booleans": true,
+    "retainedOuterStructuralContract": true,
+    "rerunAllThreeAsNewPreregisteredGate": true
+  },
+  "authorization": {
+    "narrowSuccessorDesign": true,
+    "successorExecutionManifest": false,
+    "modelExecution": false,
+    "retry": false,
+    "passBExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
