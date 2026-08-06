@@ -1,0 +1,1661 @@
+{
+  "schemaVersion": "4.2.21-deterministic-disagreements",
+  "protocolId": "v4.2.21-source-span-consensus",
+  "debateNumber": "195",
+  "debateId": "russell-copleston-existence-of-god-1948",
+  "moveDisputes": [
+    {
+      "moveId": "m1",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 16,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "precisionClarity",
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 76
+            },
+            "candidate2": {
+              "value": 61
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 57
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m2",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 6,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m1"
+              ],
+              "components": [
+                {
+                  "componentId": "m2-c1",
+                  "targetMoveId": "m1",
+                  "text": "Contingent beings and their totality require an external sufficient reason.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m2-c2",
+                  "targetMoveId": "m1",
+                  "text": "The explanatory terminus is a being whose nonexistence is impossible.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m1"
+              ],
+              "components": [
+                {
+                  "componentId": "m1-dependent-members",
+                  "targetMoveId": "m1",
+                  "text": "Individual contingent beings lack the complete reason for their existence.",
+                  "contacted": false,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m1-external-total-ground",
+                  "targetMoveId": "m1",
+                  "text": "The totality of those beings therefore requires an external existent reason.",
+                  "contacted": false,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m1-necessary-terminus",
+                  "targetMoveId": "m1",
+                  "text": "A complete explanation must terminate in a being that cannot fail to exist.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 84
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-contingency"
+              }
+            },
+            "candidate2": {
+              "value": 84,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-contingency"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 80
+            },
+            "candidate2": {
+              "value": 66
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 83,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 82
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 74,
+          "candidate2": 69,
+          "roundedMeanAfterAdjudication": 72
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m3",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 21,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "relevanceBurden",
+          "precisionClarity",
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "m2"
+              ],
+              "components": [
+                {
+                  "componentId": "m3-c1",
+                  "targetMoveId": "m2",
+                  "text": "Necessity has significant application only to analytic propositions.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m3-c2",
+                  "targetMoveId": "m2",
+                  "text": "A necessary being requires a self-contradictory denial of existence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 84
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "m2"
+              ],
+              "components": [
+                {
+                  "componentId": "m2-analytic-restriction",
+                  "targetMoveId": "m2",
+                  "text": "Necessity applies significantly only to analytic propositions.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m2-denial-condition",
+                  "targetMoveId": "m2",
+                  "text": "A necessary being is admissible only when denying its existence is self-contradictory.",
+                  "contacted": true,
+                  "decisive": false
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 63
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 82
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 85
+            },
+            "candidate2": {
+              "value": 72
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 62
+            }
+          },
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 72,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "pro-sufficient-reason"
+              }
+            },
+            "candidate2": {
+              "value": 79,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-contingency"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "matched",
+                "qualificationStatus": "not-needed",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m4",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 8,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m3"
+              ],
+              "components": [
+                {
+                  "componentId": "m4-c1",
+                  "targetMoveId": "m3",
+                  "text": "A contingent being lacks the complete reason for its existence.",
+                  "contacted": false,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m4-c2",
+                  "targetMoveId": "m3",
+                  "text": "A necessary being must exist and cannot fail to exist.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m3"
+              ],
+              "components": [
+                {
+                  "componentId": "m3-contingent-dependence",
+                  "targetMoveId": "m3",
+                  "text": "A contingent being lacks its complete reason and depends on something external.",
+                  "contacted": false,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m3-necessary-definition",
+                  "targetMoveId": "m3",
+                  "text": "A necessary being must exist and cannot fail to exist.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 84
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 85,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-contingency"
+              }
+            },
+            "candidate2": {
+              "value": 82,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-contingency"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 60
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 81,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 76,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 74
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m5",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 17,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "precisionClarity"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 82
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 65
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": false,
+            "representationalCharity": 75
+          },
+          "candidate2": {
+            "tested": true,
+            "representationalCharity": 55
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 66
+            },
+            "candidate2": {
+              "value": 54
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 61
+            },
+            "candidate2": {
+              "value": 52
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 88,
+          "candidate2": 85,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m6",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m5"
+              ],
+              "components": [
+                {
+                  "componentId": "m6-c1",
+                  "targetMoveId": "m5",
+                  "text": "The series must be either caused or uncaused.",
+                  "contacted": true,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m6-c2",
+                  "targetMoveId": "m5",
+                  "text": "An uncaused series would be self-sufficient and therefore necessary.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m6-c3",
+                  "targetMoveId": "m5",
+                  "text": "The contingent series consequently must possess an external cause.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m5"
+              ],
+              "components": [
+                {
+                  "componentId": "m5-external-cause-conclusion",
+                  "targetMoveId": "m5",
+                  "text": "The series must consequently possess a cause external to itself.",
+                  "contacted": true,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m5-member-total-inference",
+                  "targetMoveId": "m5",
+                  "text": "A series of wholly contingent members cannot itself be necessary.",
+                  "contacted": false,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m5-total-explanation-demand",
+                  "targetMoveId": "m5",
+                  "text": "The series as a whole must fall under a demand for causal explanation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m5-uncaused-self-sufficiency",
+                  "targetMoveId": "m5",
+                  "text": "An uncaused series would therefore be self-sufficient and necessary.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 88,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-contingency"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-contingency"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 82
+            },
+            "candidate2": {
+              "value": 65
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 86,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 80,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 79
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m7",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 12,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 82
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 78,
+          "candidate2": 73,
+          "roundedMeanAfterAdjudication": 76
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 64,
+          "candidate2": 63,
+          "roundedMeanAfterAdjudication": 64
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 84,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m8",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity",
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m7"
+              ],
+              "components": [
+                {
+                  "componentId": "m8-c1",
+                  "targetMoveId": "m7",
+                  "text": "Mystical experience presents itself as awareness of a transcendent object.",
+                  "contacted": true,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m8-c2",
+                  "targetMoveId": "m7",
+                  "text": "A wholly subjective account leaves explanatory residue.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m8-c3",
+                  "targetMoveId": "m7",
+                  "text": "An objective divine cause is the best explanation of the experience.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 89
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m7"
+              ],
+              "components": [
+                {
+                  "componentId": "m7-objective-cause-preference",
+                  "targetMoveId": "m7",
+                  "text": "An objective cause explains the experience better than a wholly subjective account.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m7-qualified-abduction",
+                  "targetMoveId": "m7",
+                  "text": "The claim is explanatory rather than a strict deductive proof.",
+                  "contacted": true,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m7-transcendent-phenomenology",
+                  "targetMoveId": "m7",
+                  "text": "Mystical experience presents itself as awareness of a transcendent object.",
+                  "contacted": true,
+                  "decisive": false
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-religious"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-religious"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 79
+            },
+            "candidate2": {
+              "value": 90
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 81,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 82
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m9",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 13,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 82
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 69
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 80
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 74,
+          "candidate2": 69,
+          "roundedMeanAfterAdjudication": 72
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 62,
+          "candidate2": 57,
+          "roundedMeanAfterAdjudication": 60
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 85,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m10",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 9,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "relevanceBurden",
+          "representationalCharity",
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "m9"
+              ],
+              "components": [
+                {
+                  "componentId": "m10-c1",
+                  "targetMoveId": "m9",
+                  "text": "Human beings widely experience a distinctive consciousness of moral obligation.",
+                  "contacted": true,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m10-c2",
+                  "targetMoveId": "m9",
+                  "text": "That consciousness is best explained by a transcendent ground of value.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m10-c3",
+                  "targetMoveId": "m9",
+                  "text": "The transcendent ground functions as a non-arbitrary author of moral law.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 85
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "m9"
+              ],
+              "components": [
+                {
+                  "componentId": "m9-moral-author",
+                  "targetMoveId": "m9",
+                  "text": "The authority of moral law points to a non-arbitrary transcendent author.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m9-transcendent-value-ground",
+                  "targetMoveId": "m9",
+                  "text": "Objective moral obligation is best explained by a transcendent ground of value.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m9-widespread-obligation",
+                  "targetMoveId": "m9",
+                  "text": "Widespread human consciousness includes a distinctive sense of moral obligation.",
+                  "contacted": true,
+                  "decisive": false
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 59
+            }
+          },
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 86,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-moral"
+              }
+            },
+            "candidate2": {
+              "value": 84,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-moral"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 65
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 79,
+          "candidate2": 75,
+          "roundedMeanAfterAdjudication": 77
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "m2",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 83,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "m2",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 74,
+      "candidate2": 69,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "m4",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 81,
+      "candidate2": 77,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "m4",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 76,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 74
+    },
+    {
+      "moveId": "m5",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 88,
+      "candidate2": 85,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "m6",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 86,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "m6",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 80,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "m7",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 78,
+      "candidate2": 73,
+      "roundedMeanAfterAdjudication": 76
+    },
+    {
+      "moveId": "m7",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 64,
+      "candidate2": 63,
+      "roundedMeanAfterAdjudication": 64
+    },
+    {
+      "moveId": "m7",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 84,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "m8",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 81,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "m9",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 74,
+      "candidate2": 69,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "m9",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 62,
+      "candidate2": 57,
+      "roundedMeanAfterAdjudication": 60
+    },
+    {
+      "moveId": "m9",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 85,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "m10",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 79,
+      "candidate2": 75,
+      "roundedMeanAfterAdjudication": 77
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden contact",
+            "importance values",
+            "move ratings",
+            "response findings",
+            "section weights"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden contacts",
+            "calibration findings",
+            "charity findings",
+            "move ratings",
+            "precision findings",
+            "response components"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden contact",
+            "importance values",
+            "move ratings",
+            "response findings",
+            "section weights"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden contacts",
+            "calibration findings",
+            "charity findings",
+            "move ratings",
+            "precision findings",
+            "response components"
+          ]
+        }
+      }
+    }
+  ],
+  "audit": {
+    "uniqueMovesCompared": 10,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false
+  },
+  "scoreDerivationAuthorized": false
+}

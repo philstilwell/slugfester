@@ -1,0 +1,2253 @@
+{
+  "schemaVersion": "4.2.21-deterministic-disagreements",
+  "protocolId": "v4.2.21-source-span-consensus",
+  "debateNumber": "27",
+  "debateId": "oconnor-turek-evil-moral-argument-2017",
+  "moveDisputes": [
+    {
+      "moveId": "m1-pro-grounding",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 9,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "precisionClarity",
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 82
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 80
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 76
+            },
+            "candidate2": {
+              "value": 68
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 62
+            },
+            "candidate2": {
+              "value": 54
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 35,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "radically-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 94,
+          "candidate2": 96,
+          "roundedMeanAfterAdjudication": 95
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m2-con-subjectivity",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "relevanceBurden",
+          "precisionClarity",
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m1-pro-grounding"
+              ],
+              "components": [
+                {
+                  "componentId": "m2-c1",
+                  "targetMoveId": "m1-pro-grounding",
+                  "text": "Evil presupposes an objective standard of good.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m2-c2",
+                  "targetMoveId": "m1-pro-grounding",
+                  "text": "Objective goodness requires grounding in God's nature.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m2-c3",
+                  "targetMoveId": "m1-pro-grounding",
+                  "text": "The existence of evil therefore supports God's existence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m1-pro-grounding"
+              ],
+              "components": [
+                {
+                  "componentId": "m2-c1",
+                  "targetMoveId": "m1-pro-grounding",
+                  "text": "Evil is characterized as a privation that depends on an objective good.",
+                  "contacted": false,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m2-c2",
+                  "targetMoveId": "m1-pro-grounding",
+                  "text": "Objective goodness is said to require grounding in God's nature.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m2-c3",
+                  "targetMoveId": "m1-pro-grounding",
+                  "text": "The existence of evil is therefore presented as support for God's existence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 64
+            }
+          },
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 86,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-subjectivity"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "pro-grounding"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 79,
+          "roundedMeanAfterAdjudication": 81
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 84,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 86
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m3-pro-moral-effect",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 9,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "m2-con-subjectivity"
+              ],
+              "components": [
+                {
+                  "componentId": "m3-c1",
+                  "targetMoveId": "m2-con-subjectivity",
+                  "text": "Objective truth is independent of human consciousness.",
+                  "contacted": true,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m3-c2",
+                  "targetMoveId": "m2-con-subjectivity",
+                  "text": "Moral wrongness depends on the psychology of conscious valuers.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m3-c3",
+                  "targetMoveId": "m2-con-subjectivity",
+                  "text": "A transcendent moral valuer cannot establish itself without circularity.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "m2-con-subjectivity"
+              ],
+              "components": [
+                {
+                  "componentId": "m3-c1",
+                  "targetMoveId": "m2-con-subjectivity",
+                  "text": "Moral wrongness is claimed to depend on the presence of conscious valuers.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m3-c2",
+                  "targetMoveId": "m2-con-subjectivity",
+                  "text": "Inferring a transcendent valuer from morality is alleged to presuppose the being being inferred.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 82
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 61
+            },
+            "candidate2": {
+              "value": 55
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 60
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 70,
+          "candidate2": 71,
+          "roundedMeanAfterAdjudication": 71
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 84,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m4-con-evolution",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "precisionClarity",
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m3-pro-moral-effect"
+              ],
+              "components": [
+                {
+                  "componentId": "m4-c1",
+                  "targetMoveId": "m3-pro-moral-effect",
+                  "text": "Moral convictions are deeply ingrained and experienced as objective.",
+                  "contacted": true,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m4-c2",
+                  "targetMoveId": "m3-pro-moral-effect",
+                  "text": "Their experienced force gives reason to regard them as genuinely objective.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m4-c3",
+                  "targetMoveId": "m3-pro-moral-effect",
+                  "text": "The moral effect is best explained by a transcendent cause.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "m3-pro-moral-effect"
+              ],
+              "components": [
+                {
+                  "componentId": "m4-c1",
+                  "targetMoveId": "m3-pro-moral-effect",
+                  "text": "Moral rules are experienced as pervasive and deeply ingrained.",
+                  "contacted": true,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m4-c2",
+                  "targetMoveId": "m3-pro-moral-effect",
+                  "text": "The depth of moral experience is offered as reason to trust its objective appearance.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m4-c3",
+                  "targetMoveId": "m3-pro-moral-effect",
+                  "text": "The experienced moral law is said to require a transcendent explanatory cause.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-experience"
+              }
+            },
+            "candidate2": {
+              "value": 94,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "motion",
+                "bridgeId": "con-motion"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 72,
+          "candidate2": 69,
+          "roundedMeanAfterAdjudication": 71
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 86,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m5-pro-reliability",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 7,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "precisionClarity"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m4-con-evolution"
+              ],
+              "components": [
+                {
+                  "componentId": "m5-c1",
+                  "targetMoveId": "m4-con-evolution",
+                  "text": "Evolutionary pressures instill a drive toward survival and flourishing.",
+                  "contacted": true,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m5-c2",
+                  "targetMoveId": "m4-con-evolution",
+                  "text": "That drive explains why moral rules feel objective.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m5-c3",
+                  "targetMoveId": "m4-con-evolution",
+                  "text": "Experienced objectivity need not amount to objective moral truth.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m4-con-evolution"
+              ],
+              "components": [
+                {
+                  "componentId": "m5-c1",
+                  "targetMoveId": "m4-con-evolution",
+                  "text": "Evolutionary pressures can explain why survival-based moral rules feel objective.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m5-c2",
+                  "targetMoveId": "m4-con-evolution",
+                  "text": "Explaining moral experience is distinct from proving the foundational commitment objectively good.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 83
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 66
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "materially-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 58,
+          "candidate2": 54,
+          "roundedMeanAfterAdjudication": 56
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 85,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 84
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 61,
+          "candidate2": 58,
+          "roundedMeanAfterAdjudication": 60
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m6-con-basic-reason",
+      "triggers": {
+        "attributionConfidenceMismatch": true,
+        "audioVerificationRequired": true,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 11,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": true,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": {
+          "candidate1": {
+            "attributionConfidence": "high"
+          },
+          "candidate2": {
+            "attributionConfidence": "medium"
+          }
+        },
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "m5-pro-reliability"
+              ],
+              "components": [
+                {
+                  "componentId": "m6-c1",
+                  "targetMoveId": "m5-pro-reliability",
+                  "text": "Undirected evolution produces beliefs without a truth-directed intelligence.",
+                  "contacted": true,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m6-c2",
+                  "targetMoveId": "m5-pro-reliability",
+                  "text": "An evolutionary origin therefore defeats confidence in any belief.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m6-c3",
+                  "targetMoveId": "m5-pro-reliability",
+                  "text": "The defeater applies to naturalistic and moral conclusions themselves.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 70
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "m5-pro-reliability"
+              ],
+              "components": [
+                {
+                  "componentId": "m6-c1",
+                  "targetMoveId": "m5-pro-reliability",
+                  "text": "Evolution is alleged to favor survival rather than truth and therefore to produce unreliable cognition.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m6-c2",
+                  "targetMoveId": "m5-pro-reliability",
+                  "text": "The evolutionary account is alleged to undermine confidence in itself and in all other beliefs.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 81
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": {
+          "candidate1": {
+            "assessmentConfidence": "high"
+          },
+          "candidate2": {
+            "assessmentConfidence": "medium"
+          }
+        },
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 64
+            },
+            "candidate2": {
+              "value": 56
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 84
+            },
+            "candidate2": {
+              "value": 70
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 80,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 81
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m7-pro-intuition",
+      "triggers": {
+        "attributionConfidenceMismatch": true,
+        "audioVerificationRequired": true,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": true,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity"
+        ]
+      },
+      "candidates": {
+        "attributionPair": {
+          "candidate1": {
+            "attributionConfidence": "high"
+          },
+          "candidate2": {
+            "attributionConfidence": "medium"
+          }
+        },
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "m6-con-basic-reason"
+              ],
+              "components": [
+                {
+                  "componentId": "m7-c1",
+                  "targetMoveId": "m6-con-basic-reason",
+                  "text": "Reason must be assumed as a precondition of any inquiry.",
+                  "contacted": true,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m7-c2",
+                  "targetMoveId": "m6-con-basic-reason",
+                  "text": "Evolution can explain the emergence of rational consciousness.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m7-c3",
+                  "targetMoveId": "m6-con-basic-reason",
+                  "text": "Ultimate certainty about reason's reliability is unavailable.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 68
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "m4-con-evolution"
+              ],
+              "components": [
+                {
+                  "componentId": "m7-c1",
+                  "targetMoveId": "m4-con-evolution",
+                  "text": "Evolution can explain why survival-based moral commitments feel objectively authoritative.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m7-c2",
+                  "targetMoveId": "m4-con-evolution",
+                  "text": "The foundational commitment to flourishing is assumed rather than shown to be objectively good.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 64
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": {
+          "candidate1": {
+            "assessmentConfidence": "high"
+          },
+          "candidate2": {
+            "assessmentConfidence": "medium"
+          }
+        },
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 79
+            },
+            "candidate2": {
+              "value": 73
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 69
+            },
+            "candidate2": {
+              "value": 60
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 81
+            },
+            "candidate2": {
+              "value": 55
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 72,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 70
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m8-con-explanation",
+      "triggers": {
+        "attributionConfidenceMismatch": true,
+        "audioVerificationRequired": true,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": true,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": {
+          "candidate1": {
+            "attributionConfidence": "high"
+          },
+          "candidate2": {
+            "attributionConfidence": "medium"
+          }
+        },
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m7-pro-intuition"
+              ],
+              "components": [
+                {
+                  "componentId": "m8-c1",
+                  "targetMoveId": "m7-pro-intuition",
+                  "text": "Moral obligation is experienced with exceptional intuitive force.",
+                  "contacted": true,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m8-c2",
+                  "targetMoveId": "m7-pro-intuition",
+                  "text": "That intuitive force supports objective moral truth.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m8-c3",
+                  "targetMoveId": "m7-pro-intuition",
+                  "text": "Skeptical premises are weaker than the basic moral conviction.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "m7-pro-intuition"
+              ],
+              "components": [
+                {
+                  "componentId": "m8-c1",
+                  "targetMoveId": "m7-pro-intuition",
+                  "text": "Immediate moral obligation is presented as a properly basic and powerful conviction.",
+                  "contacted": true,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m8-c2",
+                  "targetMoveId": "m7-pro-intuition",
+                  "text": "That conviction is said to outweigh the skeptical premises supporting subjectivism or agnosticism.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": {
+          "candidate1": {
+            "assessmentConfidence": "high"
+          },
+          "candidate2": {
+            "assessmentConfidence": "medium"
+          }
+        },
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 90
+            },
+            "candidate2": {
+              "value": 76
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 88,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 88
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 76,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 74
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 88,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 88
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m9-pro-disagreement",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 8,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m8-con-explanation"
+              ],
+              "components": [
+                {
+                  "componentId": "m9-c1",
+                  "targetMoveId": "m8-con-explanation",
+                  "text": "Evolution is offered to explain moral experience rather than objective moral truth.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m9-c2",
+                  "targetMoveId": "m8-con-explanation",
+                  "text": "The narrower explanatory claim avoids deriving an ought from science.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m9-c3",
+                  "targetMoveId": "m8-con-explanation",
+                  "text": "Moral experience may vary while retaining a common evolutionary basis.",
+                  "contacted": true,
+                  "decisive": false
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m6-con-basic-reason"
+              ],
+              "components": [
+                {
+                  "componentId": "m9-c1",
+                  "targetMoveId": "m6-con-basic-reason",
+                  "text": "Reason is treated as an unavoidable basic assumption required for inquiry.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m9-c2",
+                  "targetMoveId": "m6-con-basic-reason",
+                  "text": "Evolved consciousness is offered as a possible explanation of rational capacity.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m9-c3",
+                  "targetMoveId": "m6-con-basic-reason",
+                  "text": "Ultimate certainty about cognitive reliability is expressly left unavailable.",
+                  "contacted": false,
+                  "decisive": false
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 81
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 82
+            },
+            "candidate2": {
+              "value": 74
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 61
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 62
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 73,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 72
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m10-con-ambiguity",
+      "triggers": {
+        "attributionConfidenceMismatch": true,
+        "audioVerificationRequired": true,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 8,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": true,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "representationalCharity"
+        ]
+      },
+      "candidates": {
+        "attributionPair": {
+          "candidate1": {
+            "attributionConfidence": "high"
+          },
+          "candidate2": {
+            "attributionConfidence": "medium"
+          }
+        },
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "m9-pro-disagreement"
+              ],
+              "components": [
+                {
+                  "componentId": "m10-c1",
+                  "targetMoveId": "m9-pro-disagreement",
+                  "text": "Moral disagreement alone does not establish moral subjectivity.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m10-c2",
+                  "targetMoveId": "m9-pro-disagreement",
+                  "text": "Uncertainty about objective facts is compatible with an objective domain.",
+                  "contacted": true,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m10-c3",
+                  "targetMoveId": "m9-pro-disagreement",
+                  "text": "Evolutionary origins undermine confidence in all resulting beliefs.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 82
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "m9-pro-disagreement"
+              ],
+              "components": [
+                {
+                  "componentId": "m10-c1",
+                  "targetMoveId": "m9-pro-disagreement",
+                  "text": "Evolutionary origins are alleged to undermine the reliability of all moral and rational beliefs.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m10-c2",
+                  "targetMoveId": "m9-pro-disagreement",
+                  "text": "Disagreement about moral cases does not by itself disprove an objective moral domain.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": {
+          "candidate1": {
+            "assessmentConfidence": "high"
+          },
+          "candidate2": {
+            "assessmentConfidence": "medium"
+          }
+        },
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 74
+            },
+            "candidate2": {
+              "value": 66
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 89
+            },
+            "candidate2": {
+              "value": 66
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 86,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 85,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m11-pro-theistic-reason",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 20,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m10-con-ambiguity"
+              ],
+              "components": [
+                {
+                  "componentId": "m11-c1",
+                  "targetMoveId": "m10-con-ambiguity",
+                  "text": "Moral ambiguity is offered only as evidence for an evolutionary explanation.",
+                  "contacted": true,
+                  "decisive": false
+                },
+                {
+                  "componentId": "m11-c2",
+                  "targetMoveId": "m10-con-ambiguity",
+                  "text": "The pattern centers on harm, survival, and disputed classifications.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m11-c3",
+                  "targetMoveId": "m10-con-ambiguity",
+                  "text": "The argument does not infer subjectivity from disagreement alone.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 62
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m6-con-basic-reason"
+              ],
+              "components": [
+                {
+                  "componentId": "m11-c1",
+                  "targetMoveId": "m6-con-basic-reason",
+                  "text": "Reason is treated as a basic practical assumption necessary for any inquiry.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m11-c2",
+                  "targetMoveId": "m6-con-basic-reason",
+                  "text": "Evolution is offered as a possible source of rational capacity and consciousness.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m11-c3",
+                  "targetMoveId": "m6-con-basic-reason",
+                  "text": "The con account concedes that ultimate certainty about reliability may be unavailable.",
+                  "contacted": false,
+                  "decisive": false
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 82
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "materially-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 35,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "radically-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 65,
+          "candidate2": 62,
+          "roundedMeanAfterAdjudication": 64
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 54,
+          "candidate2": 51,
+          "roundedMeanAfterAdjudication": 53
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 83,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 58,
+          "candidate2": 54,
+          "roundedMeanAfterAdjudication": 56
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "m12-con-parity",
+      "triggers": {
+        "attributionConfidenceMismatch": true,
+        "audioVerificationRequired": true,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": true,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ]
+      },
+      "candidates": {
+        "attributionPair": {
+          "candidate1": {
+            "attributionConfidence": "high"
+          },
+          "candidate2": {
+            "attributionConfidence": "medium"
+          }
+        },
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m11-pro-theistic-reason"
+              ],
+              "components": [
+                {
+                  "componentId": "m12-c1",
+                  "targetMoveId": "m11-pro-theistic-reason",
+                  "text": "Evolutionary origins allegedly undermine trust in every resulting belief.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m12-c2",
+                  "targetMoveId": "m11-pro-theistic-reason",
+                  "text": "Divine design supplies a trustworthy rational capacity.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m12-c3",
+                  "targetMoveId": "m11-pro-theistic-reason",
+                  "text": "A rational divine mind provides a non-circular ground for reason.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "m11-pro-theistic-reason"
+              ],
+              "components": [
+                {
+                  "componentId": "m12-c1",
+                  "targetMoveId": "m11-pro-theistic-reason",
+                  "text": "Beliefs produced through evolution are alleged to lack a trustworthy rational ground.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m12-c2",
+                  "targetMoveId": "m11-pro-theistic-reason",
+                  "text": "Design by a rational divine mind is offered as the uniquely trustworthy alternative.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "m12-c3",
+                  "targetMoveId": "m11-pro-theistic-reason",
+                  "text": "The evolutionary and designed options are treated as an exhaustive contrast.",
+                  "contacted": true,
+                  "decisive": false
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": {
+          "candidate1": {
+            "assessmentConfidence": "high"
+          },
+          "candidate2": {
+            "assessmentConfidence": "medium"
+          }
+        },
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 74
+            },
+            "candidate2": {
+              "value": 68
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 83
+            },
+            "candidate2": {
+              "value": 72
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 71,
+          "candidate2": 73,
+          "roundedMeanAfterAdjudication": 72
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "m1-pro-grounding",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 94,
+      "candidate2": 96,
+      "roundedMeanAfterAdjudication": 95
+    },
+    {
+      "moveId": "m2-con-subjectivity",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 79,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "m2-con-subjectivity",
+      "fieldKey": "representationalCharity",
+      "candidate1": 84,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "m3-pro-moral-effect",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 70,
+      "candidate2": 71,
+      "roundedMeanAfterAdjudication": 71
+    },
+    {
+      "moveId": "m3-pro-moral-effect",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 84,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "m4-con-evolution",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 72,
+      "candidate2": 69,
+      "roundedMeanAfterAdjudication": 71
+    },
+    {
+      "moveId": "m4-con-evolution",
+      "fieldKey": "representationalCharity",
+      "candidate1": 86,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "m5-pro-reliability",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 58,
+      "candidate2": 54,
+      "roundedMeanAfterAdjudication": 56
+    },
+    {
+      "moveId": "m5-pro-reliability",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 85,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "m5-pro-reliability",
+      "fieldKey": "representationalCharity",
+      "candidate1": 61,
+      "candidate2": 58,
+      "roundedMeanAfterAdjudication": 60
+    },
+    {
+      "moveId": "m6-con-basic-reason",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 80,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "m7-pro-intuition",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 72,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "m8-con-explanation",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 88,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 88
+    },
+    {
+      "moveId": "m8-con-explanation",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 76,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 74
+    },
+    {
+      "moveId": "m8-con-explanation",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 88,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 88
+    },
+    {
+      "moveId": "m9-pro-disagreement",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 73,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "m10-con-ambiguity",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 86,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "m10-con-ambiguity",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 85,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "m11-pro-theistic-reason",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 65,
+      "candidate2": 62,
+      "roundedMeanAfterAdjudication": 64
+    },
+    {
+      "moveId": "m11-pro-theistic-reason",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 54,
+      "candidate2": 51,
+      "roundedMeanAfterAdjudication": 53
+    },
+    {
+      "moveId": "m11-pro-theistic-reason",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 83,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "m11-pro-theistic-reason",
+      "fieldKey": "representationalCharity",
+      "candidate1": 58,
+      "candidate2": 54,
+      "roundedMeanAfterAdjudication": 56
+    },
+    {
+      "moveId": "m12-con-parity",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "m12-con-parity",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 71,
+      "candidate2": 73,
+      "roundedMeanAfterAdjudication": 72
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden contacts",
+            "importance values",
+            "move ratings",
+            "response findings",
+            "section weights"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "moveJudgments.burdenContact",
+            "moveJudgments.calibrationFindings",
+            "moveJudgments.charity",
+            "moveJudgments.precisionFindings",
+            "moveJudgments.ratings",
+            "moveJudgments.response"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden contacts",
+            "importance values",
+            "move ratings",
+            "response findings",
+            "section weights"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "moveJudgments.burdenContact",
+            "moveJudgments.calibrationFindings",
+            "moveJudgments.charity",
+            "moveJudgments.precisionFindings",
+            "moveJudgments.ratings",
+            "moveJudgments.response"
+          ]
+        }
+      }
+    }
+  ],
+  "audit": {
+    "uniqueMovesCompared": 12,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false
+  },
+  "scoreDerivationAuthorized": false
+}

@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "4.2.21.2-disagreement-audio-preparation",
+  "protocolId": "v4.2.21-source-span-consensus",
+  "status": "deterministic-disagreements-and-audio-work-prepared",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "sourceCombinedPassBIndex": "docs/calibration/v4.2.21.1/charity-closure/combined-pass-b-index.json",
+  "debates": [
+    {
+      "debateNumber": "27",
+      "debateId": "oconnor-turek-evil-moral-argument-2017",
+      "moveCount": 12,
+      "disputedMoves": 12,
+      "nondisputedScalarMerges": 24,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [
+        "m6-con-basic-reason",
+        "m7-pro-intuition",
+        "m8-con-explanation",
+        "m10-con-ambiguity",
+        "m12-con-parity"
+      ],
+      "disagreementPath": "docs/calibration/v4.2.21.2/disagreement-audio-prep/disagreements/debate-27.json"
+    },
+    {
+      "debateNumber": "188",
+      "debateId": "kastrup-blackmore-consciousness-idealism-2023",
+      "moveCount": 12,
+      "disputedMoves": 12,
+      "nondisputedScalarMerges": 25,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/calibration/v4.2.21.2/disagreement-audio-prep/disagreements/debate-188.json"
+    },
+    {
+      "debateNumber": "195",
+      "debateId": "russell-copleston-existence-of-god-1948",
+      "moveCount": 10,
+      "disputedMoves": 10,
+      "nondisputedScalarMerges": 15,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/calibration/v4.2.21.2/disagreement-audio-prep/disagreements/debate-195.json"
+    }
+  ],
+  "fieldCounts": {
+    "attributionPair": 5,
+    "responsePair": 33,
+    "charityPair": 7,
+    "assessmentConfidencePair": 5,
+    "logicalCoherence": 11,
+    "evidenceWarrant": 17,
+    "relevanceBurden": 11,
+    "representationalCharity": 19,
+    "precisionClarity": 22,
+    "epistemicCalibration": 24
+  },
+  "triggerCounts": {
+    "responseStructureMismatch": 26,
+    "materialWithinClassResponsiveness": 26,
+    "burdenContactMismatch": 11,
+    "precisionFindingsMismatch": 22,
+    "calibrationFindingsMismatch": 24,
+    "attributionConfidenceMismatch": 5,
+    "charityTestedMismatch": 7,
+    "assessmentConfidenceMismatch": 5
+  },
+  "adjudicationWorkload": {
+    "disputedMoves": 34,
+    "totalMoves": 34,
+    "disputedMoveRate": 1,
+    "candidateSelections": 160,
+    "burdenAdjustmentDisputes": 6,
+    "oneAdjudicationContextPerDebateSufficient": true
+  },
+  "audioWorkload": {
+    "moves": 5,
+    "debates": [
+      "27"
+    ],
+    "modelOrApiCallsMade": 0,
+    "sourceAudioPrepared": false,
+    "diarizedVerificationCompleted": false
+  },
+  "scoreBlindness": {
+    "diagnosticMoveScoresComputed": 0,
+    "weightedMoveScoresComputed": 0,
+    "sectionScoresComputed": 0,
+    "sideScoresComputed": 0,
+    "debateScoresComputed": 0,
+    "scoreBasedTriggers": 0
+  },
+  "totals": {
+    "modelContexts": 0,
+    "audioCalls": 0,
+    "retries": 0,
+    "corrections": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "audioSourcePreparation": true,
+    "audioVerificationExecution": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
