@@ -127,6 +127,13 @@
     }
   },
   "runtimeProjection": {
+    "scope": "direct-lane lower-bound extrapolation; not a corpus-wide estimate",
+    "sourceRoutePopulationObservedAtSelection": {
+      "sourceValidCandidates": 109,
+      "directEligible": 7,
+      "partitionRouted": 102,
+      "partitionFraction": 0.9358
+    },
     "observedMinutesPerDebate": {
       "primary": 4.6,
       "passB": 8.77,
@@ -140,7 +147,8 @@
       "publicationFinalization": 13.81,
       "endToEnd": 67.34
     },
-    "fiftyHourTargetCompatibleWithCurrentMandatoryThreeContextPath": false,
+    "fiftyHourTargetCompatibleWithTestedDirectLane": false,
+    "allCorpusComputeHoursEstimableFromCurrentEvidence": false,
     "modelAuthentication": "ChatGPT subscription",
     "projectedMeteredModelApiCostUsd": 0,
     "projectedTranscriptionAtObservedRate": {
@@ -166,14 +174,15 @@
     "Only one fresh Pass B context has exercised the final charity-closure schema after the rejected output exposed the gap.",
     "The sample covers roughly one-hour two-speaker debates but not the broader duration and source-quality distribution of the corpus.",
     "Publication prose, Overall Commentary, and the labeled accordion AI Extension have not yet been regenerated from the adjudicated ledger.",
-    "The observed mandatory three-context path projects above 50 compute-hours before publication finalization."
+    "The observed mandatory three-context direct lane projects above 50 compute-hours before publication finalization.",
+    "At the last source-only selection, 102 of 109 source-valid candidates required partition routing, which the present end-to-end consensus gate has not validated."
   ],
   "qualityAssessment": {
     "sourceAndAuditIntegrity": "high",
     "scoreConsistency": "high-with-small-sample-caveat",
     "interpassSemanticAgreement": "low",
     "operationalReliability": "moderate-to-high",
-    "computeEfficiency": "below-target",
+    "computeEfficiency": "below-target-and-not-corpus-estimable",
     "generalizationEvidence": "insufficient",
     "publicationReadiness": "not-yet-tested",
     "overall": "promising-but-not-ready-for-195"
@@ -182,6 +191,10 @@
     "debates": 5,
     "disjointAndUnseenAfterFreeze": true,
     "speakersPerDebate": 2,
+    "routeMix": {
+      "direct": 2,
+      "partition": 3
+    },
     "stratification": [
       "topic family",
       "duration",
@@ -222,6 +235,7 @@
     "prepareHeldOutFiveNow": true,
     "executeHeldOutFiveWithoutFreshCostEstimate": false,
     "acceptCurrentEndToEndComputeProjection": false,
+    "treatDirectLaneProjectionAsCorpusEstimate": false,
     "optimizationDecisionAfterHeldOutEvidence": true
   },
   "authorization": {

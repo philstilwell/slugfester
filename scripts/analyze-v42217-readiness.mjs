@@ -14,7 +14,8 @@ const files = {
   audio: "docs/calibration/v4.2.21.3.1/audio-recovery/audio-verification.json",
   adjudication: "docs/calibration/v4.2.21.4/adjudication/analysis.json",
   ledger: "docs/calibration/v4.2.21.5/final-ledger/analysis.json",
-  scores: "docs/calibration/v4.2.21.5/final-ledger/score-analysis.json"
+  scores: "docs/calibration/v4.2.21.5/final-ledger/score-analysis.json",
+  routeSample: "docs/calibration/v4.2.20/source-span-rendering/source-only-sample.json"
 };
 const loaded = Object.fromEntries(
   await Promise.all(
@@ -109,6 +110,17 @@ const analysis = {
     productionReferenceDiagnostic: loaded.scores.productionReferenceDiagnostic
   },
   runtimeProjection: {
+    scope: "direct-lane lower-bound extrapolation; not a corpus-wide estimate",
+    sourceRoutePopulationObservedAtSelection: {
+      sourceValidCandidates: loaded.routeSample.routingAudit.measuredAfterSourceValidation,
+      directEligible: loaded.routeSample.routingAudit.directEligible,
+      partitionRouted: loaded.routeSample.routingAudit.partitionRouted,
+      partitionFraction: fixed(
+        loaded.routeSample.routingAudit.partitionRouted /
+          loaded.routeSample.routingAudit.measuredAfterSourceValidation,
+        4
+      )
+    },
     observedMinutesPerDebate: {
       primary: fixed(primaryMinutesPerDebate),
       passB: fixed(passBMinutesPerDebate),
@@ -124,7 +136,8 @@ const analysis = {
       ),
       endToEnd: fixed((endToEndMinutesPerDebate * debateCount) / 60)
     },
-    fiftyHourTargetCompatibleWithCurrentMandatoryThreeContextPath: false,
+    fiftyHourTargetCompatibleWithTestedDirectLane: false,
+    allCorpusComputeHoursEstimableFromCurrentEvidence: false,
     modelAuthentication: "ChatGPT subscription",
     projectedMeteredModelApiCostUsd: 0,
     projectedTranscriptionAtObservedRate: {
@@ -147,14 +160,15 @@ const analysis = {
     "Only one fresh Pass B context has exercised the final charity-closure schema after the rejected output exposed the gap.",
     "The sample covers roughly one-hour two-speaker debates but not the broader duration and source-quality distribution of the corpus.",
     "Publication prose, Overall Commentary, and the labeled accordion AI Extension have not yet been regenerated from the adjudicated ledger.",
-    "The observed mandatory three-context path projects above 50 compute-hours before publication finalization."
+    "The observed mandatory three-context direct lane projects above 50 compute-hours before publication finalization.",
+    "At the last source-only selection, 102 of 109 source-valid candidates required partition routing, which the present end-to-end consensus gate has not validated."
   ],
   qualityAssessment: {
     sourceAndAuditIntegrity: "high",
     scoreConsistency: "high-with-small-sample-caveat",
     interpassSemanticAgreement: "low",
     operationalReliability: "moderate-to-high",
-    computeEfficiency: "below-target",
+    computeEfficiency: "below-target-and-not-corpus-estimable",
     generalizationEvidence: "insufficient",
     publicationReadiness: "not-yet-tested",
     overall: "promising-but-not-ready-for-195"
@@ -163,6 +177,7 @@ const analysis = {
     debates: 5,
     disjointAndUnseenAfterFreeze: true,
     speakersPerDebate: 2,
+    routeMix: { direct: 2, partition: 3 },
     stratification: [
       "topic family",
       "duration",
@@ -203,6 +218,7 @@ const analysis = {
     prepareHeldOutFiveNow: true,
     executeHeldOutFiveWithoutFreshCostEstimate: false,
     acceptCurrentEndToEndComputeProjection: false,
+    treatDirectLaneProjectionAsCorpusEstimate: false,
     optimizationDecisionAfterHeldOutEvidence: true
   },
   authorization: {
@@ -234,12 +250,13 @@ const markdown = `# Slugfester v4.2.21.7 Workflow Readiness Assessment
 - Every sampled move opened at least one dispute (**34/34**), making adjudication the normal path.
 - The three debates were used while repairing the workflow and are no longer clean held-out evidence.
 - Publication prose and the labeled accordion **AI Extension** have not yet been regenerated from the adjudicated ledger.
-- Current observed runtime projects to **${analysis.runtimeProjection.projectedHoursFor195.consensusAndScoring} compute-hours** for consensus/scoring and about **${analysis.runtimeProjection.projectedHoursFor195.endToEnd} hours** including the current publication-finalization assumption. That is above the 50-hour target.
+- Current observed direct-lane runtime extrapolates to **${analysis.runtimeProjection.projectedHoursFor195.consensusAndScoring} compute-hours** for consensus/scoring and about **${analysis.runtimeProjection.projectedHoursFor195.endToEnd} hours** including the current publication-finalization assumption. That is already above the 50-hour target and is only a lower-bound extrapolation.
+- **${analysis.runtimeProjection.sourceRoutePopulationObservedAtSelection.partitionRouted} of ${analysis.runtimeProjection.sourceRoutePopulationObservedAtSelection.sourceValidCandidates}** source-valid candidates in the last selection required partition routing. The current three-debate end-to-end test covered only the direct lane, so corpus-wide compute cannot yet be estimated responsibly.
 - The stricter rubric runs lower than existing production scores by an average of **${Math.abs(analysis.qualityEvidence.productionReferenceDiagnostic.meanSignedSideDelta)} points per side**, although all three winner classifications match. Existing scores remain diagnostic only, not ground truth.
 
 ## Next gate
 
-Freeze five unseen two-speaker debates stratified by topic, duration, source quality, density, and attribution difficulty. Run the complete consensus, audio, adjudication, score, and publication reconstruction path once, with no retries or corrections. The publication artifacts must include Overall Commentary and a clearly AI-labeled, distinctly styled accordion AI Extension, with no use of the forbidden wording.
+Freeze five unseen two-speaker debates—two direct and three partition-routed—stratified by topic, duration, source quality, density, and attribution difficulty. Run the complete consensus, audio, adjudication, score, and publication reconstruction path once, with no retries or corrections. The publication artifacts must include Overall Commentary and a clearly AI-labeled, distinctly styled accordion AI Extension, with no use of the forbidden wording.
 
 The held-out execution needs a fresh cost estimate. At the observed audio rate, five debates would likely use about **${fixed(clipMinutesPerDebate * 5)} transcription minutes**, approximately **$${fixed(clipMinutesPerDebate * 5 * 0.006, 2)}** at current pricing; model work remains under the ChatGPT subscription.
 `;
