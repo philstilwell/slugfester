@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1783,
+  "ledgerBytes": 103450,
+  "ledgerSha256": "4dab6b0fb7b72c9008d2cbf54c4fb495e65b8ce6d4a63f7a0b58acf8bf7329f8",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51758,
+      "contextSha256": "67ce763a60646b00835deaa6f944a921d680f1cd8b74bb0df702e8091d9cc721"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52889,
+      "contextSha256": "d3e9f96de1f6e1e22ded31d0e0a20beb3129a85e1f9d66b872707d96c99cc7d9"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 1782,
+      "coreEvents": 103,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 1782,
+      "contextEvents": 143,
+      "contextBytes": 8219,
+      "contextSha256": "be386069c0b709a026d0718f170652c9cac33516488792c9642fe6c191428f93"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1782,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "183",
+  "debateId": "enoch-clarke-doane-moral-realism-objectivity-2026",
+  "frozenRoute": "direct"
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3805,
+  "ledgerBytes": 219411,
+  "ledgerSha256": "ae5172fff5a07c5e9386ab67af6ec79206794d5a8af041a5cb036d2ef10ae59a",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51639,
+      "contextSha256": "301ee93d8d32ef5d0befb10d436ab1e42d33810ce17e52b0fd4719a65402bb9c"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51635,
+      "contextSha256": "97fcd3531cedf0152c64370514baa40d2a88c1ed868b66f2d407d6c831902812"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 51891,
+      "contextSha256": "36f8341129500129e99786afa85f65d3d7f77569ba4059e075ce8dfa4a721a13"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 52403,
+      "contextSha256": "d2fe043d36a1c3129537d392f43790606ec82912917ff4e6fc448b9947c23ec3"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3804,
+      "coreEvents": 485,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3804,
+      "contextEvents": 525,
+      "contextBytes": 30318,
+      "contextSha256": "ef939a5876f2847266fda25c2f0e84e7f6f0fedbca12d398d88621fd24926fe8"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3804,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "87",
+  "debateId": "christopoulos-dillahunty-resurrection-historical-event-2024",
+  "frozenRoute": "partition"
+}

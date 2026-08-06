@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "4.2.21.17.10-held-out-source-packet",
+  "protocolId": "v4.2.21.17.10-held-out-source-preparation",
+  "debateNumber": "191",
+  "debateId": "ruse-rana-origin-life-evolution-design-2013",
+  "motion": "Are natural processes sufficient to explain the origin of life and the complexity of the cell?",
+  "sides": {
+    "pro": {
+      "label": "Natural processes are sufficient",
+      "speakers": [
+        "Michael Ruse"
+      ]
+    },
+    "con": {
+      "label": "Intelligent agency is required",
+      "speakers": [
+        "Fuz Rana"
+      ]
+    }
+  },
+  "durationSeconds": 8915,
+  "eventCount": 3047,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/2CnZ3n8I5b8/transcript.txt",
+    "transcriptSha256": "11a58bbe8b83604a69d4335c44f7128eb59a8820b3a07d41fd89917d2e0a0b7b",
+    "eventsPath": ".assessment-cache/captions/2CnZ3n8I5b8/events.json",
+    "eventsSha256": "aad7600e2a949850e4b6ae10f4730f3a4381bd97601efc53599922efad654c5f",
+    "localManifestPath": ".assessment-cache/captions/2CnZ3n8I5b8/manifest.json",
+    "localManifestSha256": "930d9b4a0b3bd164359a9d44d1bc051a34f0d4e35244ddee2a9550a8cab2888c"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/v4.2.21.17.10/debate-191.jsonl",
+    "sourceLedgerSha256": "321fc35a5251a552cb1954b4797943a5b19e24258bd2b936ddf9a7e172d15682",
+    "sourceLedgerBytes": 191502,
+    "sourceLedgerEventCount": 3047,
+    "replayExactToOriginalEvents": true,
+    "partitionPlanPath": "docs/calibration/v4.2.21.17.10/held-out-source-preparation/plans/debate-191.json",
+    "partitionPlanSha256": "4658824891b5f4391cdd70260eadd003e68e395ffe03327707a699b05d27243c",
+    "partitionChunks": 4
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersAndPublicationProseUnavailable": true
+  }
+}
