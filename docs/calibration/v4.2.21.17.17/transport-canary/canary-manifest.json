@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "4.2.21.17.17-retired-transport-canary-manifest",
+  "protocolId": "v4.2.21.17.17-retired-transport-canary",
+  "status": "frozen-one-retired-transport-canary-authorized",
+  "frozenAt": "2026-08-06T10:14:51.000Z",
+  "checkpointCommit": "77377fdd86a173a2d83634bb25748f70f84340bd",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "heldOut": false,
+  "retiredEvidenceOnly": true,
+  "source": {
+    "preparation": "docs/calibration/v4.2.21.12/simplified-partition-discovery/preparation-manifest.json",
+    "debateNumber": "133",
+    "debateId": "hawkins-folley-free-will-idealism-2026",
+    "packet": "docs/calibration/v4.2.21.12/simplified-partition-discovery/packets/debate-133.json",
+    "plan": "docs/calibration/v4.2.21.9/generalized-partition/plans/debate-133.json",
+    "fullLedger": ".assessment-cache/compact-ledgers/v4.2.21.9/debate-133.jsonl",
+    "originalEvents": ".assessment-cache/captions/OSXawgwSZQs/events.json",
+    "manual": "docs/calibration/v4.2.21.12/simplified-partition-discovery/manual.md",
+    "chunkId": "chunk-001",
+    "chunkLedgerPath": ".assessment-cache/partition-ledgers/v4.2.21.9/debate-133/chunk-001.jsonl",
+    "coreStartEvent": 0,
+    "coreEndEvent": 859,
+    "contextStartEvent": 0,
+    "contextEndEvent": 899
+  },
+  "schema": {
+    "path": "docs/calibration/v4.2.21.17.17/transport-canary/canary.schema.json",
+    "sha256": "f2845c71d8439a032e36a872c14b50cd021fec6037ee9b3abc54718f4c55f9a8",
+    "candidateStartOwnedCoreBounds": true,
+    "candidateEndAvailableContextBounds": true,
+    "speakerAllowlist": [
+      "Nathan Hawkins",
+      "Joe Folley"
+    ]
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low"
+  },
+  "costEstimate": {
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "expectedWallMinutes": [
+      1,
+      3
+    ]
+  },
+  "executionPolicy": {
+    "attempts": 1,
+    "retriesMaximum": 0,
+    "timeoutMs": 300000,
+    "freshTemporaryCodexHome": true,
+    "freshSourceDirectory": true,
+    "APIKeysRemoved": true,
+    "separateFailedStdoutAndStderrTails": true
+  },
+  "artifacts": {
+    "result": "docs/calibration/v4.2.21.17.17/transport-canary/result.json",
+    "execution": "docs/calibration/v4.2.21.17.17/transport-canary/model-execution.json"
+  },
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.21.17.17.md": "4fd3d09139d9fe48794f864b95605e0a4a37c4a58e0216b764863b20f277eef6",
+    "docs/calibration/v4.2.21.12/simplified-partition-discovery/preparation-manifest.json": "59ed10c3767e210eedf81d35c83a7bc2e67449c87d200a67ef0be38b4ced6838",
+    "docs/calibration/v4.2.21.12/simplified-partition-discovery/manual.md": "b3104e36a127f0421d6f68b8499969879d1d68512d390e16db9f6ab4f6bdbd1c",
+    "docs/calibration/v4.2.21.12/simplified-partition-discovery/packets/debate-133.json": "22f25f9d95a001f2250b95e62245b325aec5e2b19b4540a7950646b28a1907b4",
+    "docs/calibration/v4.2.21.9/generalized-partition/plans/debate-133.json": "3f810051c2be926b21eba2ff0929369be59ea08f516c20def435ed7bf2393df4",
+    ".assessment-cache/compact-ledgers/v4.2.21.9/debate-133.jsonl": "41acaf596a69aae2e36249763bd49e23deabc45d762801bc8ebc871f0384f2be",
+    ".assessment-cache/captions/OSXawgwSZQs/events.json": "7d0f72e27b04551be2534d73b2d9ed6ed48273d1b931b42b7ba9ed942f79f1ef",
+    ".assessment-cache/partition-ledgers/v4.2.21.9/debate-133/chunk-001.jsonl": "67dbc2c8aea63d8279283427965e363993dd9188613d29cb3a251f970116e2c1",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v41-lean-production.mjs": "9d4f4a5a54ff4c73f50733aa148064200862991a69003823d303e7bac363d9ba",
+    "scripts/lib/v418-source-integrity.mjs": "ff0593a316fcd06f1662b0f9c9864bdd4c2a867a718638a79cac8b9f27eac205",
+    "scripts/lib/v42219-generalized-partition.mjs": "f1a2e70a8c4e21b7823d9374bb2e6e4b5fd77f2fe63e98d8378362cfb50a4d6b",
+    "scripts/lib/v422112-simplified-discovery.mjs": "e925e5b5fb5cde23b06f2ef2dc0780e68670bca38053713ec876f94d0b009a74",
+    "scripts/validate-v422112-discovery.mjs": "d070a300bde1a44a2e54b59dde16adcaf1908c721bbbfea07797bcfe2e2608bc",
+    "scripts/prepare-v42211717-transport-canary.mjs": "de529cf2f289a2c6b03cdd78c9a159bbc084a77c1f1e47c10252e006a1e5fc61",
+    "scripts/run-v42211717-transport-canary.mjs": "5946144367903f367ec6b22dcb00c02b8b5e3f77fc8e12e40bfcf148548713a6",
+    "scripts/test-v42211717-transport-canary.mjs": "4aad2b456ef62308096a9194e87439fc73c622e0146b71dc7b4e15b609b94684"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.2.21.17.17/transport-canary/result.json",
+    "docs/calibration/v4.2.21.17.17/transport-canary/model-execution.json"
+  ],
+  "authorization": {
+    "oneRetiredModelContext": true,
+    "deterministicValidation": true,
+    "retry": false,
+    "freshHeldOutExecution": false,
+    "independentJudgmentExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
