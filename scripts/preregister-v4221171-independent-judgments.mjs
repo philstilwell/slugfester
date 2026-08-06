@@ -5,7 +5,7 @@ import { execFileSync } from "node:child_process";
 import { access, readFile, writeFile } from "node:fs/promises";
 import { assertV4 } from "./lib/v4-lean-production.mjs";
 
-const ROOT = "docs/calibration/v4.2.21.17/independent-judgment-three";
+const ROOT = process.env.SLUGFESTER_JUDGMENT_ROOT ?? "docs/calibration/v4.2.21.17/independent-judgment-three";
 const shouldWrite = process.argv.includes("--write");
 const frozenIndex = process.argv.indexOf("--frozen-at");
 const frozenAt = frozenIndex >= 0 ? process.argv[frozenIndex + 1] : null;
@@ -16,12 +16,18 @@ const executionPath = `${ROOT}/model-execution.json`;
 const analysisPath = `${ROOT}/analysis.json`;
 if (shouldWrite) for (const file of [manifestPath, executionPath, analysisPath]) await access(file).then(() => { throw new Error(`${file} already exists`); }, () => true);
 const preparation = JSON.parse(await readFile(preparationPath, "utf8"));
-assertV4(preparation.status === "retired-partition-three-independent-judgments-prepared" && preparation.authorization.executionManifest && preparation.contexts.length === 6, "independent judgment preparation unavailable");
+const correctedSuccessor = preparation.status === "six-corrected-independent-judgment-contexts-prepared-schema-preflight-required";
+assertV4((preparation.status === "retired-partition-three-independent-judgments-prepared" && preparation.authorization.executionManifest || correctedSuccessor) && preparation.contexts.length === 6, "independent judgment preparation unavailable");
+if (correctedSuccessor) {
+  const preflight = JSON.parse(await readFile(`${ROOT}/schema-dialect-preflight.json`, "utf8"));
+  assertV4(preflight.status === "corrected-response-schema-accepted-execution-manifest-authorized" && preflight.authorization.executionManifest, "corrected response schema preflight has not passed");
+}
 assertV4(preparation.totals.maximumCopiedInputBytes <= 115000 && preparation.isolation.twoIndependentPassesPerDebate && preparation.isolation.byteIdenticalLockedInventoryPerPair, "independent judgment boundary changed");
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const sourceFiles = [
-  "docs/assessment-workflow-v4.2.21.17.md",
+  correctedSuccessor ? "docs/assessment-workflow-v4.2.21.17.2.md" : "docs/assessment-workflow-v4.2.21.17.md",
   preparationPath,
+  ...(correctedSuccessor ? [`${ROOT}/schema-dialect-preflight.json`] : []),
   ...Object.values(preparation.inputs),
   "scripts/lib/v4-lean-production.mjs",
   "scripts/lib/v41-lean-production.mjs",
@@ -52,7 +58,7 @@ const futureOutputs = [...preparation.contexts.flatMap((context) => [context.jud
 const manifest = {
   schemaVersion: "4.2.21.17.1-independent-judgment-execution-manifest",
   protocolId: preparation.protocolId,
-  status: "frozen-six-independent-judgment-contexts-authorized",
+  status: correctedSuccessor ? "frozen-six-corrected-independent-judgment-contexts-authorized" : "frozen-six-independent-judgment-contexts-authorized",
   frozenAt,
   checkpointCommit: execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
   calibrationOnly: true,

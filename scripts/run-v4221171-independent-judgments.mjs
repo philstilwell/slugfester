@@ -7,12 +7,12 @@ import os from "node:os";
 import path from "node:path";
 import { assertV4 } from "./lib/v4-lean-production.mjs";
 
-const ROOT = "docs/calibration/v4.2.21.17/independent-judgment-three";
+const ROOT = process.env.SLUGFESTER_JUDGMENT_ROOT ?? "docs/calibration/v4.2.21.17/independent-judgment-three";
 const manifest = JSON.parse(await readFile(`${ROOT}/execution-manifest.json`, "utf8"));
 const codex = "/Applications/ChatGPT.app/Contents/Resources/codex";
 const authSource = path.join(os.homedir(), ".codex", "auth.json");
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
-assertV4(manifest.status === "frozen-six-independent-judgment-contexts-authorized" && manifest.authorization.modelContexts, "independent judgment execution unauthorized");
+assertV4(["frozen-six-independent-judgment-contexts-authorized", "frozen-six-corrected-independent-judgment-contexts-authorized"].includes(manifest.status) && manifest.authorization.modelContexts, "independent judgment execution unauthorized");
 for (const [file, digest] of Object.entries(manifest.sourceHashes)) assertV4(sha256(await readFile(file)) === digest, `source hash mismatch: ${file}`);
 for (const future of manifest.futureOutputPathsExcludedFromSourceHashes) await access(future).then(() => { throw new Error(`future output exists: ${future}`); }, () => true);
 await access(codex);

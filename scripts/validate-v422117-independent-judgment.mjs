@@ -8,7 +8,7 @@ import { compileAndValidateV422116Judgment } from "./lib/v422116-decomposed-cons
 const [judgmentPath, preparationPath, debateNumber, reviewerPass, writeFlag] = process.argv.slice(2);
 assertV4(judgmentPath && preparationPath && debateNumber && reviewerPass, "usage: validate-v422117-independent-judgment.mjs JUDGMENT PREPARATION DEBATE PASS [--write]");
 const preparation = JSON.parse(await readFile(preparationPath, "utf8"));
-assertV4(preparation.status === "retired-partition-three-independent-judgments-prepared", "independent judgment preparation unavailable");
+assertV4(["retired-partition-three-independent-judgments-prepared", "six-corrected-independent-judgment-contexts-prepared-schema-preflight-required"].includes(preparation.status), "independent judgment preparation unavailable");
 const context = preparation.contexts.find((item) => item.debateNumber === debateNumber && item.reviewerPass === reviewerPass);
 assertV4(context, `${debateNumber}/${reviewerPass}: unknown independent judgment context`);
 const [judgment, packet, sourcePacket, eventsDocument, eventsBytes, sourceLedgerBytes] = await Promise.all([

@@ -3,7 +3,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { assertV4 } from "./lib/v4-lean-production.mjs";
 
-const ROOT = "docs/calibration/v4.2.21.17/independent-judgment-three";
+const ROOT = process.env.SLUGFESTER_JUDGMENT_ROOT ?? "docs/calibration/v4.2.21.17/independent-judgment-three";
 const shouldWrite = process.argv.includes("--write");
 const manifest = JSON.parse(await readFile(`${ROOT}/execution-manifest.json`, "utf8"));
 const execution = JSON.parse(await readFile(manifest.artifacts.execution, "utf8"));
