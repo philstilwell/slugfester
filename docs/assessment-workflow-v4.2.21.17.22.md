@@ -1,0 +1,7 @@
+# Slugfester Order-Invariant Simplified Discovery Validation v4.2.21.17.22
+
+Simplified discovery treats the model's candidate array as an unordered inventory. Before applying the unchanged v4.2.21.12 content, identity, speaker-side, evidence, ownership, response-shape, and uniqueness checks, the validator sorts an in-memory clone by source-span start, source-span end, and candidate ID. Raw model output is never rewritten. The validator reports whether canonical ordering was required, and the existing compiler independently applies the same deterministic chronology.
+
+This change is safe only because simplified discovery forbids model-authored local target IDs and defers target topology to independent judgment. Array order therefore carries no target-reference semantics. Candidate fields, IDs, spans, prose, and confidence labels remain untouched.
+
+Regression covers all sixty-three available simplified-discovery raw outputs across the retired v4.2.21.12 gate, both failed held-out discovery gates, and the failed v4.2.21.17.20 hard-route gate. The ordering-only output must newly validate; the known source-ownership and speaker-side failures must remain rejected. Synthetic negative controls also require rejection of speaker-side mismatch, source-bound violation, duplicate ID, short proposition, short reply description, and an unknown field. No model, audio, transcription, adjudication, or scoring call is authorized.
