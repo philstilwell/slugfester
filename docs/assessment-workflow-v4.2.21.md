@@ -1,0 +1,41 @@
+# Slugfester Source-Span Consensus Compatibility v4.2.21
+
+This code-only revision reconnects the successful v4.2.20 source-span primary contract to an isolated second judgment, deterministic disagreement extraction, medium-confidence audio verification, and dispute-only adjudication. It makes no model or audio call, derives no score, and does not authorize production mutation or the 195-debate run.
+
+## Independent Pass B
+
+Pass B receives the complete timestamped source ledger and the locked argument inventory: routes, sections, weights, move IDs, sides, speakers, kinds, propositions, inclusive event spans, and importance values. It does not receive Pass A's attribution confidence, burden contact, response findings, precision or calibration findings, charity test, ratings, rationales, evidence basis, assessment confidence, adjustments, trigger reason, totals, winner, or publication prose.
+
+The locked move span contains only `startEvent` and `endEvent`. Pass B cannot quote, rewrite, move, or replace it. Its output supplies only independent judgments for the locked moves. Reconstruction merges those judgments with the locked inventory and must pass the complete v4.2.20 validator. Consequently, evidence remains repository-rendered, chronology and reply topology remain strict, response class remains repository-derived, and the model supplies only a within-class responsiveness position.
+
+## Score-free disagreement extraction
+
+The repository compares the two accepted raw judgments field by field. It computes no diagnostic move score, weighted move score, section score, side score, debate score, or winner.
+
+A dispute is opened for:
+
+- any material response-structure difference, or a within-class responsiveness difference greater than five points;
+- any attribution-confidence or assessment-confidence difference;
+- a difference in whether the charity alternative was actually tested;
+- a rating difference greater than five points;
+- any burden-contact difference, kept indivisible from `relevanceBurden`;
+- any closed precision or calibration finding difference, even when its derived scalar happens to match; or
+- a debate-wide burden-adjustment semantic difference.
+
+Responsiveness is never exposed as an independent absolute scoring field. When disputed, the complete response structure and within-class position form one candidate pair. Charity-tested state and representational-charity value form another dependency pair. Differences of one through five points that have no associated semantic difference are recorded for a deterministic rounded mean only after adjudication. Rationale wording alone does not open a dispute.
+
+## Audio verification
+
+If either accepted pass assigns medium or low attribution confidence, the move enters audio verification. This union rule applies even when both passes agree. The verification excerpt is rendered by the repository from the locked event span using only the locked proposition as a lexical anchor; it is not selected or quoted by either pass.
+
+An audio-affected move that also enters adjudication is blocked until its result is `verified` for the locked speaker. Audio may resolve attribution evidence, but it cannot change the locked event span, proposition, or argument topology.
+
+## Isolated adjudication
+
+The third Sol context receives only disputed fields, locked local evidence, and any required verified audio result. Candidate ordering is deterministically varied per field so candidate numbers do not identify Pass A or Pass B. Initial pass identities, rationales, nondisputed fields, full outputs, calculated scores, winners, legacy assessments, and publication prose remain unavailable.
+
+The adjudicator must select one supplied candidate for each disputed pair or field. It cannot invent a third value. Response/within-class, relevance/burden-contact, and charity-tested/representational-charity dependencies remain indivisible. Scores stay prohibited throughout adjudication.
+
+## Authorization boundary
+
+Passing fixtures authorize preparation of a fresh Pass B primary gate against the three accepted v4.2.20 debates. They do not authorize Pass B model execution. Execution requires a frozen manifest, exact source and schema hashes, isolated one-attempt contexts, and a fresh cost estimate. Audio, adjudication, score derivation, publication, production mutation, and the 195-debate run remain separately gated.
