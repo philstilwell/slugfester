@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "4.2.21.15.1-candidate-evidence-primary-a-failure-analysis",
+  "protocolId": "v4.2.21.15-candidate-evidence-transport",
+  "status": "monolithic-partition-primary-retired-decomposed-consensus-design-authorized",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "execution": {
+    "contextsPlanned": 3,
+    "contextsAttempted": 3,
+    "validContexts": 0,
+    "invalidContexts": 3,
+    "retries": 0,
+    "totalElapsedMs": 1585570,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "outcomes": [
+    {
+      "debateNumber": "133",
+      "status": "output-validation-failed",
+      "elapsedMs": 366174,
+      "copiedInputBytes": 133175,
+      "proposalWritten": true,
+      "class": "burden-rating-outside-tier-range",
+      "validatorMessage": "relevance/burden outside contact range"
+    },
+    {
+      "debateNumber": "178",
+      "status": "output-validation-failed",
+      "elapsedMs": 319380,
+      "copiedInputBytes": 117294,
+      "proposalWritten": true,
+      "class": "future-target",
+      "validatorMessage": "reply target is not an earlier selected move"
+    },
+    {
+      "debateNumber": "182",
+      "status": "timed-out",
+      "elapsedMs": 900016,
+      "copiedInputBytes": 154829,
+      "proposalWritten": false,
+      "class": "timeout",
+      "validatorMessage": null
+    }
+  ],
+  "returnedProposals": [
+    {
+      "debateNumber": "133",
+      "sections": 5,
+      "weightTotal": 100,
+      "moves": 12,
+      "structuralSideCountsPassed": true
+    },
+    {
+      "debateNumber": "178",
+      "sections": 5,
+      "weightTotal": 100,
+      "moves": 10,
+      "structuralSideCountsPassed": true
+    }
+  ],
+  "interpretation": {
+    "candidateEvidenceTransportMetCopiedInputTarget": true,
+    "returnedProposalsPreservedOuterStructure": true,
+    "remainingFailuresAreCrossFieldOrGenerationBudget": true,
+    "monolithicPrimaryRerunRecommended": false,
+    "retryAuthorized": false,
+    "semanticRepairAuthorized": false,
+    "outputsReusableForAssessment": false,
+    "scoresDerived": 0
+  },
+  "decomposedRecommendation": {
+    "stage1ScoreBlindInventoryLock": {
+      "modelContextsPerDebate": 1,
+      "inputs": "complete candidate-evidence bundle",
+      "outputs": [
+        "routes",
+        "sections",
+        "selected candidate IDs",
+        "global move kind",
+        "proposition"
+      ],
+      "ratingsAbsent": true,
+      "targetTopologyAbsent": true
+    },
+    "stage2IndependentJudgments": {
+      "passesPerDebate": 2,
+      "sameLockedInventory": true,
+      "candidateSelectionUnavailable": true,
+      "perMoveTargetEnumsLimitedToEarlierOpposingMoves": true,
+      "burdenRelevanceAuthoredWithinTier": true,
+      "repositoryMapsBurdenRelevanceToAbsoluteRange": true,
+      "responseAndRatingsOnly": true
+    },
+    "downstream": {
+      "deterministicDisagreementExtraction": true,
+      "mediumConfidenceAudioVerification": true,
+      "disputedFieldsOnlyAdjudication": true,
+      "scoresAfterAdjudicationOnly": true
+    },
+    "noFurtherMonolithicPrimaryGate": true
+  },
+  "authorization": {
+    "decomposedConsensusDesign": true,
+    "decomposedExecutionManifest": false,
+    "modelExecution": false,
+    "retry": false,
+    "passBExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
