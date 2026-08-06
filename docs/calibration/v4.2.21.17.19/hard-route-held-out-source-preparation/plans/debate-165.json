@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1837,
+  "ledgerBytes": 172964,
+  "ledgerSha256": "acf28097fe83c473e48e6ba365a1dd7903253acf597ff1210d19458d00816513",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 717,
+      "coreEvents": 718,
+      "contextStartEvent": 0,
+      "contextEndEvent": 757,
+      "contextEvents": 758,
+      "contextBytes": 69902,
+      "contextSha256": "6d4c3a634f19f23866683bdd04faab31ec4a45846e626f2a46e7a6b9960ef7cd"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 718,
+      "coreEndEvent": 1368,
+      "coreEvents": 651,
+      "contextStartEvent": 678,
+      "contextEndEvent": 1408,
+      "contextEvents": 731,
+      "contextBytes": 69927,
+      "contextSha256": "0da2bda8816fde04443627d2220d38106638482274b55058e182105a005b657c"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1369,
+      "coreEndEvent": 1836,
+      "coreEvents": 468,
+      "contextStartEvent": 1329,
+      "contextEndEvent": 1836,
+      "contextEvents": 508,
+      "contextBytes": 48013,
+      "contextSha256": "a1583e1ccc25223a141797c59a30c4297c64f0322b011af1ae143faa15613023"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1836,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "165",
+  "debateId": "craig-rosenberg-faith-god-reasonable-2013",
+  "frozenRoute": "partition"
+}

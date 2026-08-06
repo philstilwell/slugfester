@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3123,
+  "ledgerBytes": 181025,
+  "ledgerSha256": "a682ee3f23d33e7afacbe0ae2e56083336ca1a6f934ae283226a95554b231938",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50601,
+      "contextSha256": "f929e2d65dadcd59a03307ad96cf7e56eceb59306e9b8536412ab747b2df953e"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52342,
+      "contextSha256": "3f18f81257b5d42d09211b8dba71dbecf02edb9ea280abfa3de94db167b937c7"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53193,
+      "contextSha256": "12e42c77e3fc1cfb577fa3aafb53d64fb7a46328b7e4570d307b35486c72743d"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3122,
+      "coreEvents": 623,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3122,
+      "contextEvents": 663,
+      "contextBytes": 38850,
+      "contextSha256": "7e4cd171ab01811d099f6ccb1e831e5636a8e80ce5ade40fe800f6bab4ec8a8e"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3122,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "63",
+  "debateId": "butt-shermer-god-bible-2023",
+  "frozenRoute": "partition"
+}

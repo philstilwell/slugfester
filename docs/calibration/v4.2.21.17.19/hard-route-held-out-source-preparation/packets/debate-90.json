@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "4.2.21.17.19-hard-route-held-out-source-packet",
+  "protocolId": "v4.2.21.17.19-hard-route-held-out-source-preparation",
+  "debateNumber": "90",
+  "debateId": "akin-ehrman-gospels-historically-reliable-2022",
+  "motion": "Are the canonical Gospels historically reliable despite alleged contradictions in the birth narratives, resurrection accounts, and Jesus' self-presentation?",
+  "sides": {
+    "pro": {
+      "label": "Gospel reliability",
+      "speakers": [
+        "Jimmy Akin"
+      ]
+    },
+    "con": {
+      "label": "Historical unreliability",
+      "speakers": [
+        "Bart Ehrman"
+      ]
+    }
+  },
+  "durationSeconds": 8004,
+  "eventCount": 3619,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/Zn7lmu0pek0/transcript.txt",
+    "transcriptSha256": "126bb7d14da1d52f590a07c4265114bee1ed9fb968aef1212b7338f958b269db",
+    "eventsPath": ".assessment-cache/captions/Zn7lmu0pek0/events.json",
+    "eventsSha256": "270d3b947f18350ae1104232f6f1f765e7a1519dc4fb485515611d2ff73f2a88",
+    "localManifestPath": ".assessment-cache/captions/Zn7lmu0pek0/manifest.json",
+    "localManifestSha256": "fa5064c667e6d3720908f29d0fa24d0e3e74be9f8a1cd87689a6732308a7570c"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/v4.2.21.17.19/debate-90.jsonl",
+    "sourceLedgerSha256": "670f2ee634371d3ce8ba7c9aa042ba540af6ec5e57e4c74dd32a4c7d631f1de8",
+    "sourceLedgerBytes": 195819,
+    "sourceLedgerEventCount": 3619,
+    "replayExactToOriginalEvents": true,
+    "partitionPlanPath": "docs/calibration/v4.2.21.17.19/hard-route-held-out-source-preparation/plans/debate-90.json",
+    "partitionPlanSha256": "2d7778bae89bf77dc4a3aecbd1705c4ab6484bd47dbc791d2581f4287e93786c",
+    "partitionChunks": 5
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "candidateEndContextBoundaryEnforcedByOutputSchema": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersAndPublicationProseUnavailable": true
+  }
+}

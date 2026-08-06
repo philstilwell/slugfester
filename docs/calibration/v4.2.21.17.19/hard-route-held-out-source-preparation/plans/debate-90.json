@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3619,
+  "ledgerBytes": 195819,
+  "ledgerSha256": "670f2ee634371d3ce8ba7c9aa042ba540af6ec5e57e4c74dd32a4c7d631f1de8",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 46545,
+      "contextSha256": "631714703247e75726f187b7c9e5d9b62aff089fd0854b7459beefc0f9ab9c7c"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 47839,
+      "contextSha256": "d39dda3fb07a64cd09df47a50ebc6cbb9086b3a7834be95e235db6d73d85a3a2"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 50435,
+      "contextSha256": "3ea212e5ed10a64e25575c3e2a043421f24c97f0bda44f324965dce24fed09f7"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 50267,
+      "contextSha256": "8696179f41ddbfe36f1706ac894fd69eeee1aad343d21041cfaea9ee3968f4e5"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3618,
+      "coreEvents": 299,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3618,
+      "contextEvents": 339,
+      "contextBytes": 18368,
+      "contextSha256": "420d29b5aae06d71616b75e60e160953e10cd23f39555a9d488228b6a727638f"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3618,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "90",
+  "debateId": "akin-ehrman-gospels-historically-reliable-2022",
+  "frozenRoute": "partition"
+}

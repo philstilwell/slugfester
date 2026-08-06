@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3788,
+  "ledgerBytes": 216385,
+  "ledgerSha256": "42cf4efd6ccc88ce0b49b220cd0b016d415313c32d6d4621354efdfee29ba7f0",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50953,
+      "contextSha256": "5f70329416e48fa004a61ea507a430569bcdbf2ee54dacc10f2d2095c0cfc95c"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51507,
+      "contextSha256": "69e4d37e53afaabbbd65a4bc3dc24d184bd99359c7e9953cb6343bb98f465613"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 51402,
+      "contextSha256": "12da04ce931f429d7dbee7aaf6c1ccf9f7ea59bfde98aeede9dfea8ec1d2ebc9"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 51483,
+      "contextSha256": "82f61b036e081e808e98acc67182538205e5b771be0628950a6756bd601f147f"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3787,
+      "coreEvents": 468,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3787,
+      "contextEvents": 508,
+      "contextBytes": 28968,
+      "contextSha256": "742040da704f23faf4b5955b5bd716cda3900203d13338c731d9393d50b9aa04"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3787,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "51",
+  "debateId": "lennox-atkins-duelling-professors-2012",
+  "frozenRoute": "partition"
+}
