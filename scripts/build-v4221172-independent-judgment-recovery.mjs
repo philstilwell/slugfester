@@ -49,6 +49,8 @@ const preparation = {
   inputs,
   predecessor: { root: predecessorRoot, failureAnalysis: `${predecessorRoot}/schema-failure-analysis.json`, modelGenerationBegan: false, judgmentOutputsProduced: 0 },
   correction: { uniqueItemsRemovedFromModelSchemas: true, runtimeUniquenessValidationRetained: true, semanticContractChanged: false },
+  isolation: structuredClone(predecessor.isolation),
+  deterministicDerivations: structuredClone(predecessor.deterministicDerivations),
   contexts,
   totals: { debates: 3, contexts: 6, maximumCopiedInputBytes: Math.max(...contexts.map((context) => context.copiedInputBytes)), modelContextsExecuted: 0, audioCalls: 0, scoresDerived: 0, meteredApiCostUsd: 0, transcriptionCostUsd: 0 },
   authorization: { deterministicFixtures: true, schemaDialectPreflight: true, executionManifest: false, modelExecution: false, disagreementExtraction: false, audioVerification: false, adjudication: false, scoreDerivation: false, productionMutation: false, all195Debates: false }
