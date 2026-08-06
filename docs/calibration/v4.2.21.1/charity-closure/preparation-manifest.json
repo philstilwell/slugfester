@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "4.2.21.1-single-pass-b-recovery-preparation",
+  "protocolId": "v4.2.21.1-charity-conditional-closure",
+  "status": "prepared-one-fresh-debate-195-pass-b-recovery-context",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "recoveryNotRetryOfFrozenGate": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "high"
+  },
+  "inputs": {
+    "rubricBase": "docs/reassessment-rubric-v4.0.md",
+    "rubricDerivedScores": "docs/reassessment-rubric-v4.0.1.md",
+    "rubricBounded": "docs/reassessment-rubric-v4.1.md",
+    "workflowBase": "docs/assessment-workflow-v4.2.21.md",
+    "workflowRecovery": "docs/assessment-workflow-v4.2.21.1.md",
+    "manualBase": "docs/calibration/v4.2.21/pass-b-consensus/manual.md",
+    "manualRecovery": "docs/calibration/v4.2.21.1/charity-closure/manual.md",
+    "schema": "docs/calibration/v4.2.21.1/charity-closure/pass-b.schema.json"
+  },
+  "context": {
+    "debateNumber": "195",
+    "debateId": "russell-copleston-existence-of-god-1948",
+    "family": "morality-ethics",
+    "sourcePrimary": "docs/calibration/v4.2.20/source-span-rendering/primary-outputs/debate-195.json",
+    "sourcePacket": "docs/calibration/v4.2.20/source-span-rendering/packets/debate-195.json",
+    "passBPacket": "docs/calibration/v4.2.21/pass-b-consensus/packets/debate-195.json",
+    "sourceLedger": ".assessment-cache/compact-ledgers/v4.2.20/debate-195.jsonl",
+    "originalTranscript": ".assessment-cache/captions/wMsbD1L5IlQ/transcript.txt",
+    "originalEvents": ".assessment-cache/captions/wMsbD1L5IlQ/events.json",
+    "originalManifest": ".assessment-cache/captions/wMsbD1L5IlQ/manifest.json",
+    "rawOutput": "docs/calibration/v4.2.21.1/charity-closure/pass-b-output/debate-195.json",
+    "reconstructedOutput": "docs/calibration/v4.2.21.1/charity-closure/pass-b-reconstructed/debate-195.json",
+    "packetValidation": {
+      "status": "passed",
+      "debateNumber": "195",
+      "lockedMoves": 10,
+      "lockedSections": 5,
+      "primaryJudgmentFieldsVisible": 0,
+      "modelAuthoredEvidenceTextVisible": 0
+    },
+    "priorFailedOutput": "docs/calibration/v4.2.21/pass-b-consensus/pass-b-outputs/debate-195.json"
+  },
+  "acceptedOutputs": [
+    {
+      "debateNumber": "27",
+      "rawOutput": "docs/calibration/v4.2.21/pass-b-consensus/pass-b-outputs/debate-27.json",
+      "reconstructedOutput": "docs/calibration/v4.2.21/pass-b-consensus/pass-b-reconstructed/debate-27.json",
+      "rawOutputSha256": "49b6f43ca29b71459c4975a210424ece414066ec81fb3f4bc95b768de30b5f48",
+      "reconstructedOutputSha256": "e29c84797ce40955847d78796d12be5ab00c1c2ef161d6dab97eb6b53e164d55"
+    },
+    {
+      "debateNumber": "188",
+      "rawOutput": "docs/calibration/v4.2.21/pass-b-consensus/pass-b-outputs/debate-188.json",
+      "reconstructedOutput": "docs/calibration/v4.2.21/pass-b-consensus/pass-b-reconstructed/debate-188.json",
+      "rawOutputSha256": "99c3d817debc481f97a1089b040f22259079cab5c7fab7c85abdd5cb48ac26af",
+      "reconstructedOutputSha256": "a460409f52c5ee72b862c6a5544a76e9aacb323263f7c3c528f25e5b86f432fb"
+    }
+  ],
+  "isolation": {
+    "freshTemporaryCodexHome": true,
+    "freshSourceDirectory": true,
+    "oneDebateOnly": true,
+    "completeTimestampedSourceLedgerVisible": true,
+    "lockedInventoryVisible": true,
+    "primaryJudgmentsHidden": true,
+    "failedOutputHidden": true,
+    "acceptedOutputsHidden": true,
+    "triggerReasonHidden": true,
+    "otherDebatesHidden": true,
+    "scoresHidden": true,
+    "winnersHidden": true,
+    "publicationProseHidden": true
+  },
+  "totals": {
+    "contexts": 1,
+    "lockedMoves": 10,
+    "acceptedOutputsReused": 2,
+    "modelContextsExecuted": 0,
+    "retries": 0,
+    "corrections": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "executionManifest": true,
+    "recoveryModelExecution": false,
+    "disagreementExtraction": false,
+    "audioExecution": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
