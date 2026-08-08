@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "4.2.21.17.26-hard-route-disagreement-audio-preparation",
+  "protocolId": "v4.2.21.17.26-hard-route-decomposed-consensus",
+  "status": "hard-route-deterministic-disagreements-extracted-audio-source-preparation-authorized",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "sourceJudgmentAnalysis": "docs/calibration/v4.2.21.17.25/hard-route-independent-judgments/analysis.json",
+  "debates": [
+    {
+      "debateNumber": "51",
+      "debateId": "lennox-atkins-duelling-professors-2012",
+      "moveCount": 20,
+      "disputedMoves": 20,
+      "nondisputedScalarMerges": 59,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/calibration/v4.2.21.17.26/hard-route-disagreement-audio-prep/disagreements/debate-51.json"
+    },
+    {
+      "debateNumber": "63",
+      "debateId": "butt-shermer-god-bible-2023",
+      "moveCount": 22,
+      "disputedMoves": 18,
+      "nondisputedScalarMerges": 56,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/calibration/v4.2.21.17.26/hard-route-disagreement-audio-prep/disagreements/debate-63.json"
+    },
+    {
+      "debateNumber": "90",
+      "debateId": "akin-ehrman-gospels-historically-reliable-2022",
+      "moveCount": 19,
+      "disputedMoves": 18,
+      "nondisputedScalarMerges": 55,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/calibration/v4.2.21.17.26/hard-route-disagreement-audio-prep/disagreements/debate-90.json"
+    },
+    {
+      "debateNumber": "153",
+      "debateId": "oconnor-carter-free-will-determinism-2024",
+      "moveCount": 18,
+      "disputedMoves": 17,
+      "nondisputedScalarMerges": 51,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [
+        "move-con-04-undeliberated-voluntary-action",
+        "move-con-05-reflexive-first-person-perspective",
+        "move-pro-06-introspective-mechanism-gap"
+      ],
+      "disagreementPath": "docs/calibration/v4.2.21.17.26/hard-route-disagreement-audio-prep/disagreements/debate-153.json"
+    },
+    {
+      "debateNumber": "165",
+      "debateId": "craig-rosenberg-faith-god-reasonable-2013",
+      "moveCount": 21,
+      "disputedMoves": 21,
+      "nondisputedScalarMerges": 66,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/calibration/v4.2.21.17.26/hard-route-disagreement-audio-prep/disagreements/debate-165.json"
+    }
+  ],
+  "fieldCounts": {
+    "importancePair": 6,
+    "attributionPair": 0,
+    "responsePair": 74,
+    "charityPair": 8,
+    "assessmentConfidencePair": 2,
+    "logicalCoherence": 11,
+    "evidenceWarrant": 10,
+    "relevanceBurden": 16,
+    "representationalCharity": 19,
+    "precisionClarity": 53,
+    "epistemicCalibration": 62
+  },
+  "triggerCounts": {
+    "importanceMismatch": 6,
+    "responseStructureMismatch": 72,
+    "materialWithinClassResponsiveness": 37,
+    "burdenContactMismatch": 16,
+    "precisionFindingsMismatch": 53,
+    "calibrationFindingsMismatch": 62,
+    "attributionConfidenceMismatch": 0,
+    "charityTestedMismatch": 8,
+    "assessmentConfidenceMismatch": 2,
+    "assessmentBelowHighAudioRequired": 3,
+    "attributionAudioRequired": 1
+  },
+  "adjudicationWorkload": {
+    "disputedMoves": 94,
+    "totalMoves": 100,
+    "disputedMoveRate": 0.94,
+    "candidateSelections": 271,
+    "burdenAdjustmentDisputes": 10,
+    "oneAdjudicationContextPerDebateSufficient": true
+  },
+  "audioWorkload": {
+    "moves": 3,
+    "debates": [
+      "153"
+    ],
+    "independentGateQueueReproducedExactly": true,
+    "allEitherPassBelowHighAssessmentMovesIncluded": true,
+    "allRepositoryBelowHighAttributionMovesIncluded": true,
+    "modelOrApiCallsMade": 0,
+    "sourceAudioPrepared": false,
+    "verificationCompleted": false
+  },
+  "scoreBlindness": {
+    "diagnosticMoveScoresComputed": 0,
+    "weightedMoveScoresComputed": 0,
+    "sectionScoresComputed": 0,
+    "sideScoresComputed": 0,
+    "debateScoresComputed": 0,
+    "scoreBasedTriggers": 0
+  },
+  "totals": {
+    "modelContexts": 0,
+    "audioCalls": 0,
+    "retries": 0,
+    "semanticRepairs": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "audioSourcePreparation": true,
+    "audioVerificationExecution": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
