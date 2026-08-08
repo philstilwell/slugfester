@@ -1,0 +1,389 @@
+{
+  "schemaVersion": "4.2.21.17.31-hard-route-workflow-readiness-analysis",
+  "protocolId": "v4.2.21.17.31-hard-route-workflow-readiness",
+  "status": "hard-route-five-passed-through-scores-publication-gate-required",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "evidenceStatus": {
+    "hardRouteDebates": [
+      "51",
+      "63",
+      "90",
+      "153",
+      "165"
+    ],
+    "cleanDownstreamIndependentJudgmentEvidence": true,
+    "originalDiscoveryGatePassed": false,
+    "discoveryGateRelabeledAsPassed": false,
+    "discoveryRecoveryFieldPreservingAndOrderOnly": true,
+    "retiredRegressionOutputs": 63,
+    "endToEndSemanticPipelineCompleteThroughScores": true,
+    "publicationReconstructionTestedUnderCurrentWorkflow": false
+  },
+  "quality": {
+    "scoreBlindInventoriesAccepted": 5,
+    "independentJudgmentsAccepted": 10,
+    "independentJudgmentsRequired": 10,
+    "totalMoves": 100,
+    "disputedMoves": 94,
+    "disputedMoveRate": 0.94,
+    "candidateSelectionsAdjudicated": 271,
+    "confidenceTriggeredAudioVerified": 3,
+    "confidenceTriggeredAudioUnresolved": 0,
+    "finalLedgersSourceValidated": 5,
+    "scorePasses": 1,
+    "scoreStabilityPassed": true,
+    "scoreStability": {
+      "sideRows": [
+        {
+          "debateNumber": "51",
+          "side": "pro",
+          "passA": 79,
+          "passB": 80,
+          "final": 79,
+          "absoluteDistanceFromPassA": 0,
+          "absoluteDistanceFromPassB": 1,
+          "outsideInitialRange": 0
+        },
+        {
+          "debateNumber": "51",
+          "side": "con",
+          "passA": 70,
+          "passB": 74,
+          "final": 72,
+          "absoluteDistanceFromPassA": 2,
+          "absoluteDistanceFromPassB": 2,
+          "outsideInitialRange": 0
+        },
+        {
+          "debateNumber": "63",
+          "side": "pro",
+          "passA": 72,
+          "passB": 71,
+          "final": 71,
+          "absoluteDistanceFromPassA": 1,
+          "absoluteDistanceFromPassB": 0,
+          "outsideInitialRange": 0
+        },
+        {
+          "debateNumber": "63",
+          "side": "con",
+          "passA": 86,
+          "passB": 85,
+          "final": 86,
+          "absoluteDistanceFromPassA": 0,
+          "absoluteDistanceFromPassB": 1,
+          "outsideInitialRange": 0
+        },
+        {
+          "debateNumber": "90",
+          "side": "pro",
+          "passA": 81,
+          "passB": 82,
+          "final": 81,
+          "absoluteDistanceFromPassA": 0,
+          "absoluteDistanceFromPassB": 1,
+          "outsideInitialRange": 0
+        },
+        {
+          "debateNumber": "90",
+          "side": "con",
+          "passA": 89,
+          "passB": 86,
+          "final": 88,
+          "absoluteDistanceFromPassA": 1,
+          "absoluteDistanceFromPassB": 2,
+          "outsideInitialRange": 0
+        },
+        {
+          "debateNumber": "153",
+          "side": "pro",
+          "passA": 78,
+          "passB": 79,
+          "final": 79,
+          "absoluteDistanceFromPassA": 1,
+          "absoluteDistanceFromPassB": 0,
+          "outsideInitialRange": 0
+        },
+        {
+          "debateNumber": "153",
+          "side": "con",
+          "passA": 82,
+          "passB": 82,
+          "final": 82,
+          "absoluteDistanceFromPassA": 0,
+          "absoluteDistanceFromPassB": 0,
+          "outsideInitialRange": 0
+        },
+        {
+          "debateNumber": "165",
+          "side": "pro",
+          "passA": 80,
+          "passB": 81,
+          "final": 81,
+          "absoluteDistanceFromPassA": 1,
+          "absoluteDistanceFromPassB": 0,
+          "outsideInitialRange": 0
+        },
+        {
+          "debateNumber": "165",
+          "side": "con",
+          "passA": 77,
+          "passB": 77,
+          "final": 76,
+          "absoluteDistanceFromPassA": 1,
+          "absoluteDistanceFromPassB": 1,
+          "outsideInitialRange": 1
+        }
+      ],
+      "scoreBoundsPassed": true,
+      "agreedWinnerDebates": 5,
+      "agreedWinnersPreserved": 5,
+      "meanAbsoluteDistanceToInitialPasses": 0.75,
+      "maximumAbsoluteDistanceToEitherInitialPass": 2,
+      "maximumOutsideInitialRange": 1,
+      "thresholds": {
+        "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+        "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+        "maximumOutsideInitialRangeMaximum": 3
+      },
+      "acceptancePassed": true
+    },
+    "scoreDebates": [
+      {
+        "debateNumber": "51",
+        "passAWinner": "pro",
+        "passBWinner": "pro",
+        "finalWinner": "pro",
+        "finalScores": {
+          "pro": 79,
+          "con": 72
+        },
+        "productionWinnerDiagnostic": "pro",
+        "productionWinnerMatches": true
+      },
+      {
+        "debateNumber": "63",
+        "passAWinner": "con",
+        "passBWinner": "con",
+        "finalWinner": "con",
+        "finalScores": {
+          "pro": 71,
+          "con": 86
+        },
+        "productionWinnerDiagnostic": "con",
+        "productionWinnerMatches": true
+      },
+      {
+        "debateNumber": "90",
+        "passAWinner": "con",
+        "passBWinner": "con",
+        "finalWinner": "con",
+        "finalScores": {
+          "pro": 81,
+          "con": 88
+        },
+        "productionWinnerDiagnostic": "con",
+        "productionWinnerMatches": true
+      },
+      {
+        "debateNumber": "153",
+        "passAWinner": "con",
+        "passBWinner": "con",
+        "finalWinner": "con",
+        "finalScores": {
+          "pro": 79,
+          "con": 82
+        },
+        "productionWinnerDiagnostic": "pro",
+        "productionWinnerMatches": false
+      },
+      {
+        "debateNumber": "165",
+        "passAWinner": "pro",
+        "passBWinner": "pro",
+        "finalWinner": "pro",
+        "finalScores": {
+          "pro": 81,
+          "con": 76
+        },
+        "productionWinnerDiagnostic": "pro",
+        "productionWinnerMatches": true
+      }
+    ],
+    "productionWinnerMatchesDiagnosticOnly": 4,
+    "productionWinnerDifferencesDiagnosticOnly": [
+      "153"
+    ],
+    "semanticRepairsAfterIndependentJudgment": 0,
+    "judgmentRetries": 0,
+    "adjudicationRetries": 0
+  },
+  "compute": {
+    "timings": [
+      {
+        "debateNumber": "51",
+        "discoveryContexts": 5,
+        "lockedMoves": 20,
+        "discoveryParallelMinutes": 2.33,
+        "inventoryMinutes": 1.17,
+        "independentJudgmentsParallelMinutes": 6.59,
+        "audioMinutes": 0,
+        "adjudicationMinutes": 2.52,
+        "criticalPathMinutes": 12.6,
+        "serialWorkMinutes": 23.29
+      },
+      {
+        "debateNumber": "63",
+        "discoveryContexts": 4,
+        "lockedMoves": 22,
+        "discoveryParallelMinutes": 1.67,
+        "inventoryMinutes": 1.11,
+        "independentJudgmentsParallelMinutes": 7.08,
+        "audioMinutes": 0,
+        "adjudicationMinutes": 2.5,
+        "criticalPathMinutes": 12.37,
+        "serialWorkMinutes": 22.6
+      },
+      {
+        "debateNumber": "90",
+        "discoveryContexts": 5,
+        "lockedMoves": 19,
+        "discoveryParallelMinutes": 2.13,
+        "inventoryMinutes": 1.1,
+        "independentJudgmentsParallelMinutes": 10.39,
+        "audioMinutes": 0,
+        "adjudicationMinutes": 3.02,
+        "criticalPathMinutes": 16.64,
+        "serialWorkMinutes": 26.6
+      },
+      {
+        "debateNumber": "153",
+        "discoveryContexts": 3,
+        "lockedMoves": 18,
+        "discoveryParallelMinutes": 1.35,
+        "inventoryMinutes": 1.23,
+        "independentJudgmentsParallelMinutes": 5.31,
+        "audioMinutes": 2.06,
+        "adjudicationMinutes": 3.24,
+        "criticalPathMinutes": 13.18,
+        "serialWorkMinutes": 20.37
+      },
+      {
+        "debateNumber": "165",
+        "discoveryContexts": 3,
+        "lockedMoves": 21,
+        "discoveryParallelMinutes": 1.39,
+        "inventoryMinutes": 1.53,
+        "independentJudgmentsParallelMinutes": 8.41,
+        "audioMinutes": 0,
+        "adjudicationMinutes": 3.01,
+        "criticalPathMinutes": 14.33,
+        "serialWorkMinutes": 22.31
+      }
+    ],
+    "observedSerialWorkMinutesFiveDebates": 115.17,
+    "meanSerialWorkMinutesPerDebate": 23.03,
+    "projected195SerialWorkHours": 74.86,
+    "meanPerDebateDependencyCriticalPathMinutes": 13.82,
+    "projected195PerDebateSerialCriticalPathHours": 44.93,
+    "stageObservedMinutes": {
+      "discovery": 26.86,
+      "inventory": 6.14,
+      "independentJudgments": 65.84,
+      "audio": 2.06,
+      "adjudication": 14.28
+    },
+    "productionStageConcurrency": {
+      "discovery": 4,
+      "inventory": 2,
+      "independentJudgments": 2,
+      "audio": 2,
+      "adjudication": 2
+    },
+    "projected195StageBatchedHours": {
+      "discovery": 4.36,
+      "inventory": 2,
+      "independentJudgments": 21.4,
+      "audio": 0.67,
+      "adjudication": 4.64
+    },
+    "projected195StageBatchedThroughScoresHours": 33.07,
+    "targetHours": 50,
+    "publicationAndOrchestrationBudgetHours": 16.93,
+    "publicationMeanMinutesAtTwoSlotsIfNoOtherOverhead": 10.42,
+    "publicationSynthesisComputeMeasured": false,
+    "mechanicalOrchestrationAndSourcePreparationMeasured": false,
+    "transcriptionExposureObservedUsd": 0.0343,
+    "meteredJudgmentModelApiCostUsd": 0,
+    "projectionFinding": "The production-shaped two/four-slot stage-batched projection is the planning estimate; serial work and debate-by-debate critical-path extrapolations are reported as capacity diagnostics, not expected wall time."
+  },
+  "publicationGateRequirements": {
+    "debates": [
+      "51",
+      "63",
+      "90",
+      "153",
+      "165"
+    ],
+    "oneIsolatedFinalizationContextPerDebate": true,
+    "model": "5.6 Sol",
+    "reasoningEffort": "low",
+    "ChatGPTSubscription": true,
+    "maximumConcurrency": 2,
+    "attemptsPerDebate": 1,
+    "retries": 0,
+    "corrections": 0,
+    "maximumMinutesPerDebate": 8,
+    "maximumMeanMinutes": 6,
+    "lockedScoresAndMoveJudgmentsImmutable": true,
+    "completeAssessmentRequired": true,
+    "overallCommentaryRequired": true,
+    "aiExtensionRequired": true,
+    "aiExtensionClearlyLabeledAsAIContribution": true,
+    "aiExtensionAccordionRequired": true,
+    "aiExtensionDefaultCollapsed": true,
+    "aiExtensionDistinctStylingRequired": true,
+    "forbiddenAIExtensionWordingAbsent": true,
+    "noveltyMapRequired": true,
+    "balancedStrengthenedFinalArgumentsAndNewArgumentsRequired": true,
+    "noScoreEffectFromAIExtension": true,
+    "deterministicSchemaAndSourceValidationRequired": true,
+    "desktopAndMobileRenderingVerificationRequired": true,
+    "projectedTotalMustNotExceedTargetHours": true
+  },
+  "decision": {
+    "qualityAssessment": "The adjudicated-consensus lane is source-complete, score-blind until ledger lock, internally stable, and operationally successful on all five hard-route debates. The 94% move-dispute rate means adjudication is essential rather than exceptional.",
+    "discoveryAssessment": "The original discovery gate remains failed; the current evidence is admissible downstream because the sole defect was ordering, recovery changed no candidate field, and the corrected validator passed a 63-output retired regression.",
+    "scoreAssessment": "All five independent winner agreements survived adjudication, and every prospective stability threshold passed with substantial margin. The Debate 153 winner change from production is a diagnostic difference, not a gate input.",
+    "computeAssessment": "Observed serial work projects to 74.86 hours, while the tested stage-batched concurrency projects to 33.07 wall hours through scores. Publication and mechanical orchestration remain unmeasured.",
+    "readyForPublicationFinalizationPreparation": true,
+    "readyForPublicationFinalizationExecution": false,
+    "readyForAll195": false,
+    "reasonAll195Blocked": "The current adjudicated ledger has not yet regenerated and rendered the five public assessments, including Overall Commentary and the separately disclosed AI Extension, and publication runtime has not been measured."
+  },
+  "authorization": {
+    "publicationFinalizationPreparation": true,
+    "publicationFinalizationExecution": false,
+    "readinessPromotionAfterPublicationGate": false,
+    "productionMutation": false,
+    "all195Debates": false
+  },
+  "sources": {
+    "discoveryExecution": "docs/calibration/v4.2.21.17.20/hard-route-held-out-discovery/model-execution.json",
+    "discoveryRecovery": "docs/calibration/v4.2.21.17.23/mechanical-discovery-recovery/recovery-analysis.json",
+    "inventoryExecution": "docs/calibration/v4.2.21.17.24/hard-route-score-blind-inventory/model-execution.json",
+    "inventoryAnalysis": "docs/calibration/v4.2.21.17.24/hard-route-score-blind-inventory/analysis.json",
+    "judgmentExecution": "docs/calibration/v4.2.21.17.25/hard-route-independent-judgments/model-execution.json",
+    "judgmentAnalysis": "docs/calibration/v4.2.21.17.25/hard-route-independent-judgments/analysis.json",
+    "disagreement": "docs/calibration/v4.2.21.17.26/hard-route-disagreement-audio-prep/analysis.json",
+    "audioExecution": "docs/calibration/v4.2.21.17.27/hard-route-audio-verification/model-execution.json",
+    "audioAudit": "docs/calibration/v4.2.21.17.27/hard-route-audio-verification/audio-verification.json",
+    "audioAnalysis": "docs/calibration/v4.2.21.17.27/hard-route-audio-verification/analysis.json",
+    "adjudicationExecution": "docs/calibration/v4.2.21.17.28/hard-route-dispute-only-adjudication/model-execution.json",
+    "adjudicationAnalysis": "docs/calibration/v4.2.21.17.28/hard-route-dispute-only-adjudication/analysis.json",
+    "finalLedger": "docs/calibration/v4.2.21.17.29/hard-route-final-ledger/analysis.json",
+    "scores": "docs/calibration/v4.2.21.17.30/hard-route-single-score-pass/calculated-scores.json",
+    "scoreAnalysis": "docs/calibration/v4.2.21.17.30/hard-route-single-score-pass/analysis.json"
+  }
+}
