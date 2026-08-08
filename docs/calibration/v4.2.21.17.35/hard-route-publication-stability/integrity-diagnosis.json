@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "4.2.21.17.35-publication-integrity-diagnosis",
+  "protocolId": "v4.2.21.17.35-hard-route-publication-stability",
+  "status": "failed-publication-prose-integrity",
+  "calibrationOnly": true,
+  "visualInspectionTrigger": "Desktop browser snapshot exposed an unexpected CJK token and an incomplete critique ending.",
+  "deterministicReplay": {
+    "debates": 5,
+    "moves": 100,
+    "findings": [
+      {
+        "debateNumber": "51",
+        "moveId": "con-religious-conditioning-01",
+        "characters": 1020,
+        "issues": [
+          "missing-terminal-punctuation",
+          "unexpected-non-latin-script",
+          "exact-structured-maximum-length"
+        ],
+        "terminalFragment": "on, and substantial nonresponsiveness to the resurrection argument’s historical premises, which remain untouched even if conditioning sometimes explains why a信念"
+      },
+      {
+        "debateNumber": "63",
+        "moveId": "move-pro-design-inference",
+        "characters": 1020,
+        "issues": [
+          "missing-terminal-punctuation",
+          "exact-structured-maximum-length"
+        ],
+        "terminalFragment": "ization, and a serious explanatory proposal, but registers missing scope conditions and a universal necessity claim stronger than the analogical and testimonial"
+      },
+      {
+        "debateNumber": "63",
+        "moveId": "move-pro-jesus-identification",
+        "characters": 1020,
+        "issues": [
+          "missing-terminal-punctuation",
+          "exact-structured-maximum-length"
+        ],
+        "terminalFragment": "lative structure, while reflecting limited verification, insufficient alternative testing, and confidence exceeding the historical support developed in the span"
+      }
+    ],
+    "findingCount": 3,
+    "affectedDebates": [
+      "51",
+      "63"
+    ]
+  },
+  "rootCause": "The structured-output maxLength of 1,020 characters permitted or induced exact-bound truncation; the repository sentence counter accepted an unterminated fourth fragment.",
+  "requiredRepair": {
+    "removeCritiqueMaxLength": true,
+    "retainCritiqueMinLength": 880,
+    "requireTerminalPunctuation": true,
+    "rejectUnexpectedNonLatinScripts": true,
+    "retainRepositoryWordInterval": [
+      105,
+      130
+    ],
+    "rerunFreshFiveDebateGate": true
+  },
+  "authorization": {
+    "renderingPromotion": false,
+    "readinessPromotion": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
