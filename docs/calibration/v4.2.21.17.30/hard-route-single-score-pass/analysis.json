@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "4.2.21.17.30-hard-route-score-stability-analysis",
+  "protocolId": "v4.2.21.17.29-hard-route-adjudicated-consensus",
+  "status": "hard-route-post-adjudication-score-stability-passed",
+  "resultIntegrity": {
+    "prospectiveThresholdsApplied": true,
+    "singleDeterministicScoringPass": true,
+    "scoresDerivedAfterLedgerLock": true,
+    "postResultTuningPerformed": false,
+    "automaticRerunPerformed": false,
+    "productionScoresUsedForAcceptance": false
+  },
+  "stability": {
+    "sideRows": [
+      {
+        "debateNumber": "51",
+        "side": "pro",
+        "passA": 79,
+        "passB": 80,
+        "final": 79,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "51",
+        "side": "con",
+        "passA": 70,
+        "passB": 74,
+        "final": 72,
+        "absoluteDistanceFromPassA": 2,
+        "absoluteDistanceFromPassB": 2,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "63",
+        "side": "pro",
+        "passA": 72,
+        "passB": 71,
+        "final": 71,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "63",
+        "side": "con",
+        "passA": 86,
+        "passB": 85,
+        "final": 86,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "90",
+        "side": "pro",
+        "passA": 81,
+        "passB": 82,
+        "final": 81,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "90",
+        "side": "con",
+        "passA": 89,
+        "passB": 86,
+        "final": 88,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 2,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "153",
+        "side": "pro",
+        "passA": 78,
+        "passB": 79,
+        "final": 79,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "153",
+        "side": "con",
+        "passA": 82,
+        "passB": 82,
+        "final": 82,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "165",
+        "side": "pro",
+        "passA": 80,
+        "passB": 81,
+        "final": 81,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "165",
+        "side": "con",
+        "passA": 77,
+        "passB": 77,
+        "final": 76,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 1
+      }
+    ],
+    "scoreBoundsPassed": true,
+    "agreedWinnerDebates": 5,
+    "agreedWinnersPreserved": 5,
+    "meanAbsoluteDistanceToInitialPasses": 0.75,
+    "maximumAbsoluteDistanceToEitherInitialPass": 2,
+    "maximumOutsideInitialRange": 1,
+    "thresholds": {
+      "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+      "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+      "maximumOutsideInitialRangeMaximum": 3
+    },
+    "acceptancePassed": true
+  },
+  "productionReferenceDiagnostic": {
+    "winnerMatches": 4,
+    "debates": 5,
+    "signedSideDeltas": [
+      1,
+      -1,
+      -2,
+      2,
+      1,
+      4,
+      1,
+      6,
+      -1,
+      8
+    ],
+    "meanSignedSideDelta": 1.9,
+    "diagnosticNotGold": true
+  },
+  "workflowFinding": {
+    "hardRouteSemanticConsensusPipelineComplete": true,
+    "scoringConsistencyPassed": true,
+    "publicationContentStillUntested": true,
+    "full195RunStillUnauthorized": true
+  },
+  "authorization": {
+    "nextReadinessAssessment": true,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}

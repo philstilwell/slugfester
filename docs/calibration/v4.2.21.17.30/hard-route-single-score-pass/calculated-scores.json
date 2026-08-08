@@ -1,0 +1,3482 @@
+{
+  "schemaVersion": "4.2.21.17.30-hard-route-adjudicated-calculated-scores",
+  "protocolId": "v4.2.21.17.29-hard-route-adjudicated-consensus",
+  "status": "hard-route-single-score-pass-stability-gate-passed",
+  "sources": {
+    "finalLedgerSha256": "f9d14ab8e11ba898d6f3c28419dec9e36266e8105b6ba059b5a60d0e01e09b6f",
+    "productionReferenceSha256": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6"
+  },
+  "formulaBoundary": {
+    "scoringPasses": 1,
+    "rawJudgmentsScoredInPass": 15,
+    "finalJudgmentsPublishedFromPass": 5,
+    "initialPassScoresUsedForPostAdjudicationStabilityDiagnosticsOnly": true,
+    "modelCalculatedScores": false,
+    "scoresDerivedOnlyAfterAdjudicatedLedgerLock": true,
+    "moveFormula": "repository v4.1 deterministic seven-dimension formula",
+    "responseFormula": "repository mapping from adjudicated response class and within-class position",
+    "sectionFormula": "importance-weighted move mean",
+    "overallFormula": "section-weighted mean plus eligible burden-completion adjustment, rounded and bounded 0-100"
+  },
+  "acceptanceRule": {
+    "prospective": true,
+    "productionScoresDiagnosticOnly": true,
+    "agreedInitialWinnerMustBePreserved": true,
+    "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+    "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+    "maximumOutsideInitialRangeMaximum": 3,
+    "postResultTuningAllowed": false,
+    "automaticRerunAllowed": false
+  },
+  "debates": [
+    {
+      "debateNumber": "51",
+      "debateId": "lennox-atkins-duelling-professors-2012",
+      "passA": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "51",
+        "debateId": "lennox-atkins-duelling-professors-2012",
+        "sections": [
+          {
+            "sectionId": "section-design-explanation",
+            "title": "Design, mechanism, and explanatory method",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "pro-design-agency-01",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "pro-intelligibility-01",
+                    "importance": 3,
+                    "score": 67
+                  }
+                ]
+              },
+              "con": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "con-apparent-design-01",
+                    "importance": 3,
+                    "score": 68
+                  },
+                  {
+                    "moveId": "con-method-economy-01",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-life-information",
+            "title": "Life's origin, evolution, and biological information",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "pro-replicator-semiotics-01",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "pro-information-origin-01",
+                    "importance": 3,
+                    "score": 71
+                  }
+                ]
+              },
+              "con": {
+                "score": 64,
+                "moves": [
+                  {
+                    "moveId": "con-selection-complexity-01",
+                    "importance": 3,
+                    "score": 59
+                  },
+                  {
+                    "moveId": "con-information-structure-01",
+                    "importance": 3,
+                    "score": 69
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-cosmos-laws",
+            "title": "Cosmic origin, laws, and life-permitting conditions",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "pro-null-set-causation-01",
+                    "importance": 3,
+                    "score": 88
+                  },
+                  {
+                    "moveId": "pro-fine-tuning-01",
+                    "importance": 3,
+                    "score": 78
+                  }
+                ]
+              },
+              "con": {
+                "score": 70,
+                "moves": [
+                  {
+                    "moveId": "con-mathematical-emergence-01",
+                    "importance": 3,
+                    "score": 68
+                  },
+                  {
+                    "moveId": "con-emergent-laws-01",
+                    "importance": 2,
+                    "score": 72
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-morality-afterlife",
+            "title": "Morality, responsibility, and ultimate hope",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "pro-objective-morality-01",
+                    "importance": 3,
+                    "score": 77
+                  },
+                  {
+                    "moveId": "pro-moral-foundation-01",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              },
+              "con": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "con-evolved-morality-01",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "con-afterlife-evidence-01",
+                    "importance": 2,
+                    "score": 67
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-christian-evidence",
+            "title": "Historical and experiential grounds for Christian belief",
+            "weightPercent": 13,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "pro-resurrection-history-01",
+                    "importance": 3,
+                    "score": 75
+                  },
+                  {
+                    "moveId": "pro-general-to-christian-01",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 62,
+                "moves": [
+                  {
+                    "moveId": "con-religious-framework-01",
+                    "importance": 2,
+                    "score": 58
+                  },
+                  {
+                    "moveId": "con-religious-conditioning-01",
+                    "importance": 2,
+                    "score": 65
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 78.8,
+            "burdenCompletionAdjustment": 0,
+            "score": 79
+          },
+          "con": {
+            "weightedSectionMean": 69.51,
+            "burdenCompletionAdjustment": 0,
+            "score": 70
+          }
+        },
+        "winner": "pro",
+        "winningMargin": 9,
+        "scoreProtocolId": "v4.2.21.17.30-hard-route-single-deterministic-score-pass"
+      },
+      "passB": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "51",
+        "debateId": "lennox-atkins-duelling-professors-2012",
+        "sections": [
+          {
+            "sectionId": "section-design-explanation",
+            "title": "Design, mechanism, and explanatory method",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "pro-design-agency-01",
+                    "importance": 3,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "pro-intelligibility-01",
+                    "importance": 3,
+                    "score": 75
+                  }
+                ]
+              },
+              "con": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "con-apparent-design-01",
+                    "importance": 3,
+                    "score": 71
+                  },
+                  {
+                    "moveId": "con-method-economy-01",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-life-information",
+            "title": "Life's origin, evolution, and biological information",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "pro-replicator-semiotics-01",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "pro-information-origin-01",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              },
+              "con": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "con-selection-complexity-01",
+                    "importance": 3,
+                    "score": 74
+                  },
+                  {
+                    "moveId": "con-information-structure-01",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-cosmos-laws",
+            "title": "Cosmic origin, laws, and life-permitting conditions",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "pro-null-set-causation-01",
+                    "importance": 3,
+                    "score": 91
+                  },
+                  {
+                    "moveId": "pro-fine-tuning-01",
+                    "importance": 3,
+                    "score": 71
+                  }
+                ]
+              },
+              "con": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "con-mathematical-emergence-01",
+                    "importance": 3,
+                    "score": 72
+                  },
+                  {
+                    "moveId": "con-emergent-laws-01",
+                    "importance": 2,
+                    "score": 75
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-morality-afterlife",
+            "title": "Morality, responsibility, and ultimate hope",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "pro-objective-morality-01",
+                    "importance": 3,
+                    "score": 75
+                  },
+                  {
+                    "moveId": "pro-moral-foundation-01",
+                    "importance": 3,
+                    "score": 82
+                  }
+                ]
+              },
+              "con": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "con-evolved-morality-01",
+                    "importance": 3,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "con-afterlife-evidence-01",
+                    "importance": 2,
+                    "score": 67
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-christian-evidence",
+            "title": "Historical and experiential grounds for Christian belief",
+            "weightPercent": 13,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "pro-resurrection-history-01",
+                    "importance": 3,
+                    "score": 72
+                  },
+                  {
+                    "moveId": "pro-general-to-christian-01",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              },
+              "con": {
+                "score": 63,
+                "moves": [
+                  {
+                    "moveId": "con-religious-framework-01",
+                    "importance": 3,
+                    "score": 60
+                  },
+                  {
+                    "moveId": "con-religious-conditioning-01",
+                    "importance": 2,
+                    "score": 67
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 79.75,
+            "burdenCompletionAdjustment": 0,
+            "score": 80
+          },
+          "con": {
+            "weightedSectionMean": 73.76,
+            "burdenCompletionAdjustment": 0,
+            "score": 74
+          }
+        },
+        "winner": "pro",
+        "winningMargin": 6,
+        "scoreProtocolId": "v4.2.21.17.30-hard-route-single-deterministic-score-pass"
+      },
+      "final": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "51",
+        "debateId": "lennox-atkins-duelling-professors-2012",
+        "sections": [
+          {
+            "sectionId": "section-design-explanation",
+            "title": "Design, mechanism, and explanatory method",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "pro-design-agency-01",
+                    "importance": 3,
+                    "score": 81
+                  },
+                  {
+                    "moveId": "pro-intelligibility-01",
+                    "importance": 3,
+                    "score": 67
+                  }
+                ]
+              },
+              "con": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "con-apparent-design-01",
+                    "importance": 3,
+                    "score": 71
+                  },
+                  {
+                    "moveId": "con-method-economy-01",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-life-information",
+            "title": "Life's origin, evolution, and biological information",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "pro-replicator-semiotics-01",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "pro-information-origin-01",
+                    "importance": 3,
+                    "score": 76
+                  }
+                ]
+              },
+              "con": {
+                "score": 69,
+                "moves": [
+                  {
+                    "moveId": "con-selection-complexity-01",
+                    "importance": 3,
+                    "score": 69
+                  },
+                  {
+                    "moveId": "con-information-structure-01",
+                    "importance": 3,
+                    "score": 69
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-cosmos-laws",
+            "title": "Cosmic origin, laws, and life-permitting conditions",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "pro-null-set-causation-01",
+                    "importance": 3,
+                    "score": 89
+                  },
+                  {
+                    "moveId": "pro-fine-tuning-01",
+                    "importance": 3,
+                    "score": 76
+                  }
+                ]
+              },
+              "con": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "con-mathematical-emergence-01",
+                    "importance": 3,
+                    "score": 71
+                  },
+                  {
+                    "moveId": "con-emergent-laws-01",
+                    "importance": 2,
+                    "score": 72
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-morality-afterlife",
+            "title": "Morality, responsibility, and ultimate hope",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "pro-objective-morality-01",
+                    "importance": 3,
+                    "score": 76
+                  },
+                  {
+                    "moveId": "pro-moral-foundation-01",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              },
+              "con": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "con-evolved-morality-01",
+                    "importance": 3,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "con-afterlife-evidence-01",
+                    "importance": 2,
+                    "score": 68
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-christian-evidence",
+            "title": "Historical and experiential grounds for Christian belief",
+            "weightPercent": 13,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "pro-resurrection-history-01",
+                    "importance": 3,
+                    "score": 74
+                  },
+                  {
+                    "moveId": "pro-general-to-christian-01",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 63,
+                "moves": [
+                  {
+                    "moveId": "con-religious-framework-01",
+                    "importance": 2,
+                    "score": 59
+                  },
+                  {
+                    "moveId": "con-religious-conditioning-01",
+                    "importance": 2,
+                    "score": 66
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 79.42,
+            "burdenCompletionAdjustment": 0,
+            "score": 79
+          },
+          "con": {
+            "weightedSectionMean": 71.71,
+            "burdenCompletionAdjustment": 0,
+            "score": 72
+          }
+        },
+        "winner": "pro",
+        "winningMargin": 7,
+        "scoreProtocolId": "v4.2.21.17.30-hard-route-single-deterministic-score-pass"
+      },
+      "consensus": {
+        "initialWinnersAgree": true,
+        "initialWinner": "pro",
+        "finalPreservesAgreedWinner": true
+      },
+      "productionReferenceDiagnosticOnly": {
+        "scores": {
+          "pro": 78,
+          "con": 73
+        },
+        "winner": "pro",
+        "finalDeltas": {
+          "pro": 1,
+          "con": -1
+        },
+        "finalWinnerMatches": true,
+        "acceptanceGateInput": false
+      }
+    },
+    {
+      "debateNumber": "63",
+      "debateId": "butt-shermer-god-bible-2023",
+      "passA": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "63",
+        "debateId": "butt-shermer-god-bible-2023",
+        "sections": [
+          {
+            "sectionId": "section-evidential-standards",
+            "title": "Knowledge and Evidential Standards",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 68,
+                "moves": [
+                  {
+                    "moveId": "move-pro-method-open-inquiry",
+                    "importance": 1,
+                    "score": 72
+                  },
+                  {
+                    "moveId": "move-pro-knowable-truth",
+                    "importance": 2,
+                    "score": 66
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "move-con-proportioned-confidence",
+                    "importance": 3,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "move-con-testability",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-causation",
+            "title": "Cosmic Causation",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 70,
+                "moves": [
+                  {
+                    "moveId": "move-pro-cosmic-cause",
+                    "importance": 3,
+                    "score": 71
+                  },
+                  {
+                    "moveId": "move-pro-nonphysical-cause",
+                    "importance": 3,
+                    "score": 68
+                  }
+                ]
+              },
+              "con": {
+                "score": 89,
+                "moves": [
+                  {
+                    "moveId": "move-con-regress-objection",
+                    "importance": 3,
+                    "score": 89
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-design",
+            "title": "Fine-Tuning and Biological Design",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 67,
+                "moves": [
+                  {
+                    "moveId": "move-pro-design-inference",
+                    "importance": 3,
+                    "score": 71
+                  },
+                  {
+                    "moveId": "move-pro-information-origin",
+                    "importance": 3,
+                    "score": 62
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "move-con-natural-selection",
+                    "importance": 3,
+                    "score": 91
+                  },
+                  {
+                    "moveId": "move-con-fine-tuning-ignorance",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-morality",
+            "title": "Moral Objectivity and Natural Origins",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "move-pro-moral-ground",
+                    "importance": 3,
+                    "score": 68
+                  },
+                  {
+                    "moveId": "move-pro-naturalism-no-objectivity",
+                    "importance": 3,
+                    "score": 82
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "move-con-wellbeing-morality",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "move-con-evolved-cooperation",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-jesus-diversity",
+            "title": "Jesus, Resurrection, and Religious Diversity",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "move-pro-jesus-identification",
+                    "importance": 3,
+                    "score": 71
+                  },
+                  {
+                    "moveId": "move-pro-diversity-answer",
+                    "importance": 3,
+                    "score": 76
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "move-con-rival-revelations",
+                    "importance": 3,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "move-con-resurrection-evidence",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-suffering",
+            "title": "Suffering and Divine Goodness",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "move-pro-redemptive-suffering",
+                    "importance": 3,
+                    "score": 79
+                  },
+                  {
+                    "moveId": "move-pro-afterlife-rectification",
+                    "importance": 3,
+                    "score": 78
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "move-con-gratuitous-suffering",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 72.03,
+            "burdenCompletionAdjustment": 0,
+            "score": 72
+          },
+          "con": {
+            "weightedSectionMean": 86.01,
+            "burdenCompletionAdjustment": 0,
+            "score": 86
+          }
+        },
+        "winner": "con",
+        "winningMargin": 14,
+        "scoreProtocolId": "v4.2.21.17.30-hard-route-single-deterministic-score-pass"
+      },
+      "passB": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "63",
+        "debateId": "butt-shermer-god-bible-2023",
+        "sections": [
+          {
+            "sectionId": "section-evidential-standards",
+            "title": "Knowledge and Evidential Standards",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 68,
+                "moves": [
+                  {
+                    "moveId": "move-pro-method-open-inquiry",
+                    "importance": 1,
+                    "score": 70
+                  },
+                  {
+                    "moveId": "move-pro-knowable-truth",
+                    "importance": 2,
+                    "score": 67
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "move-con-proportioned-confidence",
+                    "importance": 3,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "move-con-testability",
+                    "importance": 3,
+                    "score": 90
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-causation",
+            "title": "Cosmic Causation",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 72,
+                "moves": [
+                  {
+                    "moveId": "move-pro-cosmic-cause",
+                    "importance": 3,
+                    "score": 71
+                  },
+                  {
+                    "moveId": "move-pro-nonphysical-cause",
+                    "importance": 3,
+                    "score": 72
+                  }
+                ]
+              },
+              "con": {
+                "score": 86,
+                "moves": [
+                  {
+                    "moveId": "move-con-regress-objection",
+                    "importance": 3,
+                    "score": 86
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-design",
+            "title": "Fine-Tuning and Biological Design",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 67,
+                "moves": [
+                  {
+                    "moveId": "move-pro-design-inference",
+                    "importance": 3,
+                    "score": 71
+                  },
+                  {
+                    "moveId": "move-pro-information-origin",
+                    "importance": 3,
+                    "score": 62
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "move-con-natural-selection",
+                    "importance": 3,
+                    "score": 90
+                  },
+                  {
+                    "moveId": "move-con-fine-tuning-ignorance",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-morality",
+            "title": "Moral Objectivity and Natural Origins",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "move-pro-moral-ground",
+                    "importance": 3,
+                    "score": 68
+                  },
+                  {
+                    "moveId": "move-pro-naturalism-no-objectivity",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              },
+              "con": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "move-con-wellbeing-morality",
+                    "importance": 3,
+                    "score": 81
+                  },
+                  {
+                    "moveId": "move-con-evolved-cooperation",
+                    "importance": 3,
+                    "score": 81
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-jesus-diversity",
+            "title": "Jesus, Resurrection, and Religious Diversity",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "move-pro-jesus-identification",
+                    "importance": 3,
+                    "score": 72
+                  },
+                  {
+                    "moveId": "move-pro-diversity-answer",
+                    "importance": 3,
+                    "score": 78
+                  }
+                ]
+              },
+              "con": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "move-con-rival-revelations",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "move-con-resurrection-evidence",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-suffering",
+            "title": "Suffering and Divine Goodness",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 69,
+                "moves": [
+                  {
+                    "moveId": "move-pro-redemptive-suffering",
+                    "importance": 2,
+                    "score": 57
+                  },
+                  {
+                    "moveId": "move-pro-afterlife-rectification",
+                    "importance": 2,
+                    "score": 80
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "move-con-gratuitous-suffering",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 70.73,
+            "burdenCompletionAdjustment": 0,
+            "score": 71
+          },
+          "con": {
+            "weightedSectionMean": 85.48,
+            "burdenCompletionAdjustment": 0,
+            "score": 85
+          }
+        },
+        "winner": "con",
+        "winningMargin": 14,
+        "scoreProtocolId": "v4.2.21.17.30-hard-route-single-deterministic-score-pass"
+      },
+      "final": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "63",
+        "debateId": "butt-shermer-god-bible-2023",
+        "sections": [
+          {
+            "sectionId": "section-evidential-standards",
+            "title": "Knowledge and Evidential Standards",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 68,
+                "moves": [
+                  {
+                    "moveId": "move-pro-method-open-inquiry",
+                    "importance": 1,
+                    "score": 71
+                  },
+                  {
+                    "moveId": "move-pro-knowable-truth",
+                    "importance": 2,
+                    "score": 66
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "move-con-proportioned-confidence",
+                    "importance": 3,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "move-con-testability",
+                    "importance": 3,
+                    "score": 90
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-causation",
+            "title": "Cosmic Causation",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "move-pro-cosmic-cause",
+                    "importance": 3,
+                    "score": 72
+                  },
+                  {
+                    "moveId": "move-pro-nonphysical-cause",
+                    "importance": 3,
+                    "score": 73
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "move-con-regress-objection",
+                    "importance": 3,
+                    "score": 87
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-design",
+            "title": "Fine-Tuning and Biological Design",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 67,
+                "moves": [
+                  {
+                    "moveId": "move-pro-design-inference",
+                    "importance": 3,
+                    "score": 71
+                  },
+                  {
+                    "moveId": "move-pro-information-origin",
+                    "importance": 3,
+                    "score": 62
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "move-con-natural-selection",
+                    "importance": 3,
+                    "score": 90
+                  },
+                  {
+                    "moveId": "move-con-fine-tuning-ignorance",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-morality",
+            "title": "Moral Objectivity and Natural Origins",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "move-pro-moral-ground",
+                    "importance": 3,
+                    "score": 68
+                  },
+                  {
+                    "moveId": "move-pro-naturalism-no-objectivity",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              },
+              "con": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "move-con-wellbeing-morality",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "move-con-evolved-cooperation",
+                    "importance": 3,
+                    "score": 81
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-jesus-diversity",
+            "title": "Jesus, Resurrection, and Religious Diversity",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "move-pro-jesus-identification",
+                    "importance": 3,
+                    "score": 72
+                  },
+                  {
+                    "moveId": "move-pro-diversity-answer",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              },
+              "con": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "move-con-rival-revelations",
+                    "importance": 3,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "move-con-resurrection-evidence",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-suffering",
+            "title": "Suffering and Divine Goodness",
+            "weightPercent": 15,
+            "sides": {
+              "pro": {
+                "score": 69,
+                "moves": [
+                  {
+                    "moveId": "move-pro-redemptive-suffering",
+                    "importance": 3,
+                    "score": 58
+                  },
+                  {
+                    "moveId": "move-pro-afterlife-rectification",
+                    "importance": 3,
+                    "score": 79
+                  }
+                ]
+              },
+              "con": {
+                "score": 89,
+                "moves": [
+                  {
+                    "moveId": "move-con-gratuitous-suffering",
+                    "importance": 3,
+                    "score": 89
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 70.9,
+            "burdenCompletionAdjustment": 0,
+            "score": 71
+          },
+          "con": {
+            "weightedSectionMean": 85.98,
+            "burdenCompletionAdjustment": 0,
+            "score": 86
+          }
+        },
+        "winner": "con",
+        "winningMargin": 15,
+        "scoreProtocolId": "v4.2.21.17.30-hard-route-single-deterministic-score-pass"
+      },
+      "consensus": {
+        "initialWinnersAgree": true,
+        "initialWinner": "con",
+        "finalPreservesAgreedWinner": true
+      },
+      "productionReferenceDiagnosticOnly": {
+        "scores": {
+          "pro": 73,
+          "con": 84
+        },
+        "winner": "con",
+        "finalDeltas": {
+          "pro": -2,
+          "con": 2
+        },
+        "finalWinnerMatches": true,
+        "acceptanceGateInput": false
+      }
+    },
+    {
+      "debateNumber": "90",
+      "debateId": "akin-ehrman-gospels-historically-reliable-2022",
+      "passA": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "90",
+        "debateId": "akin-ehrman-gospels-historically-reliable-2022",
+        "sections": [
+          {
+            "sectionId": "section-reliability-standard",
+            "title": "Standard and cumulative case for reliability",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "move-pro-standard-spectrum",
+                    "importance": 3,
+                    "score": 89
+                  },
+                  {
+                    "moveId": "move-pro-cumulative-balance",
+                    "importance": 3,
+                    "score": 78
+                  }
+                ]
+              },
+              "con": {
+                "score": 90,
+                "moves": [
+                  {
+                    "moveId": "move-con-governing-thesis",
+                    "importance": 3,
+                    "score": 89
+                  },
+                  {
+                    "moveId": "move-con-major-errors-balance",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-birth-narratives",
+            "title": "Historical compatibility of the birth narratives",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "move-pro-dual-residence-reconciliation",
+                    "importance": 2,
+                    "score": 79
+                  },
+                  {
+                    "moveId": "move-pro-marian-infancy-tradition",
+                    "importance": 2,
+                    "score": 77
+                  }
+                ]
+              },
+              "con": {
+                "score": 89,
+                "moves": [
+                  {
+                    "moveId": "move-con-birth-sequence-conflict",
+                    "importance": 3,
+                    "score": 89
+                  },
+                  {
+                    "moveId": "move-con-dual-residence-objection",
+                    "importance": 2,
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-resurrection-narratives",
+            "title": "Compatibility of the resurrection accounts",
+            "weightPercent": 22,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "move-pro-shared-resurrection-claim",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "move-pro-jerusalem-galilee-sequence",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              },
+              "con": {
+                "score": 89,
+                "moves": [
+                  {
+                    "moveId": "move-con-resurrection-incompatibility",
+                    "importance": 3,
+                    "score": 88
+                  },
+                  {
+                    "moveId": "move-con-location-chronology-conflict",
+                    "importance": 3,
+                    "score": 90
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-self-presentation",
+            "title": "Jesus' self-presentation and divine identity",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "move-pro-synoptic-divine-claim",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              },
+              "con": {
+                "score": 90,
+                "moves": [
+                  {
+                    "moveId": "move-con-johannine-discontinuity",
+                    "importance": 3,
+                    "score": 88
+                  },
+                  {
+                    "moveId": "move-con-son-of-man-ambiguity",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-composition-transmission",
+            "title": "Ancient composition and transmission",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "move-pro-gist-approximation",
+                    "importance": 2,
+                    "score": 68
+                  },
+                  {
+                    "moveId": "move-pro-motivated-transmission",
+                    "importance": 3,
+                    "score": 78
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "move-con-biographical-invention",
+                    "importance": 2,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "move-con-theological-reshaping",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 81.4,
+            "burdenCompletionAdjustment": 0,
+            "score": 81
+          },
+          "con": {
+            "weightedSectionMean": 88.75,
+            "burdenCompletionAdjustment": 0,
+            "score": 89
+          }
+        },
+        "winner": "con",
+        "winningMargin": 8,
+        "scoreProtocolId": "v4.2.21.17.30-hard-route-single-deterministic-score-pass"
+      },
+      "passB": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "90",
+        "debateId": "akin-ehrman-gospels-historically-reliable-2022",
+        "sections": [
+          {
+            "sectionId": "section-reliability-standard",
+            "title": "Standard and cumulative case for reliability",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 86,
+                "moves": [
+                  {
+                    "moveId": "move-pro-standard-spectrum",
+                    "importance": 3,
+                    "score": 88
+                  },
+                  {
+                    "moveId": "move-pro-cumulative-balance",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "move-con-governing-thesis",
+                    "importance": 3,
+                    "score": 88
+                  },
+                  {
+                    "moveId": "move-con-major-errors-balance",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-birth-narratives",
+            "title": "Historical compatibility of the birth narratives",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "move-pro-dual-residence-reconciliation",
+                    "importance": 3,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "move-pro-marian-infancy-tradition",
+                    "importance": 2,
+                    "score": 77
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "move-con-birth-sequence-conflict",
+                    "importance": 3,
+                    "score": 87
+                  },
+                  {
+                    "moveId": "move-con-dual-residence-objection",
+                    "importance": 2,
+                    "score": 86
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-resurrection-narratives",
+            "title": "Compatibility of the resurrection accounts",
+            "weightPercent": 22,
+            "sides": {
+              "pro": {
+                "score": 86,
+                "moves": [
+                  {
+                    "moveId": "move-pro-shared-resurrection-claim",
+                    "importance": 3,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "move-pro-jerusalem-galilee-sequence",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "move-con-resurrection-incompatibility",
+                    "importance": 3,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "move-con-location-chronology-conflict",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-self-presentation",
+            "title": "Jesus' self-presentation and divine identity",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "move-pro-synoptic-divine-claim",
+                    "importance": 3,
+                    "score": 79
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "move-con-johannine-discontinuity",
+                    "importance": 3,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "move-con-son-of-man-ambiguity",
+                    "importance": 3,
+                    "score": 89
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-composition-transmission",
+            "title": "Ancient composition and transmission",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "move-pro-gist-approximation",
+                    "importance": 2,
+                    "score": 71
+                  },
+                  {
+                    "moveId": "move-pro-motivated-transmission",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "move-con-biographical-invention",
+                    "importance": 2,
+                    "score": 75
+                  },
+                  {
+                    "moveId": "move-con-theological-reshaping",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 82.47,
+            "burdenCompletionAdjustment": 0,
+            "score": 82
+          },
+          "con": {
+            "weightedSectionMean": 86.28,
+            "burdenCompletionAdjustment": 0,
+            "score": 86
+          }
+        },
+        "winner": "con",
+        "winningMargin": 4,
+        "scoreProtocolId": "v4.2.21.17.30-hard-route-single-deterministic-score-pass"
+      },
+      "final": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "90",
+        "debateId": "akin-ehrman-gospels-historically-reliable-2022",
+        "sections": [
+          {
+            "sectionId": "section-reliability-standard",
+            "title": "Standard and cumulative case for reliability",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "move-pro-standard-spectrum",
+                    "importance": 3,
+                    "score": 89
+                  },
+                  {
+                    "moveId": "move-pro-cumulative-balance",
+                    "importance": 3,
+                    "score": 78
+                  }
+                ]
+              },
+              "con": {
+                "score": 90,
+                "moves": [
+                  {
+                    "moveId": "move-con-governing-thesis",
+                    "importance": 3,
+                    "score": 89
+                  },
+                  {
+                    "moveId": "move-con-major-errors-balance",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-birth-narratives",
+            "title": "Historical compatibility of the birth narratives",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "move-pro-dual-residence-reconciliation",
+                    "importance": 3,
+                    "score": 81
+                  },
+                  {
+                    "moveId": "move-pro-marian-infancy-tradition",
+                    "importance": 2,
+                    "score": 77
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "move-con-birth-sequence-conflict",
+                    "importance": 3,
+                    "score": 89
+                  },
+                  {
+                    "moveId": "move-con-dual-residence-objection",
+                    "importance": 2,
+                    "score": 86
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-resurrection-narratives",
+            "title": "Compatibility of the resurrection accounts",
+            "weightPercent": 22,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "move-pro-shared-resurrection-claim",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "move-pro-jerusalem-galilee-sequence",
+                    "importance": 3,
+                    "score": 87
+                  }
+                ]
+              },
+              "con": {
+                "score": 90,
+                "moves": [
+                  {
+                    "moveId": "move-con-resurrection-incompatibility",
+                    "importance": 3,
+                    "score": 88
+                  },
+                  {
+                    "moveId": "move-con-location-chronology-conflict",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-self-presentation",
+            "title": "Jesus' self-presentation and divine identity",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "move-pro-synoptic-divine-claim",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "move-con-johannine-discontinuity",
+                    "importance": 3,
+                    "score": 86
+                  },
+                  {
+                    "moveId": "move-con-son-of-man-ambiguity",
+                    "importance": 3,
+                    "score": 90
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-composition-transmission",
+            "title": "Ancient composition and transmission",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "move-pro-gist-approximation",
+                    "importance": 2,
+                    "score": 69
+                  },
+                  {
+                    "moveId": "move-pro-motivated-transmission",
+                    "importance": 3,
+                    "score": 78
+                  }
+                ]
+              },
+              "con": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "move-con-biographical-invention",
+                    "importance": 2,
+                    "score": 79
+                  },
+                  {
+                    "moveId": "move-con-theological-reshaping",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 80.68,
+            "burdenCompletionAdjustment": 0,
+            "score": 81
+          },
+          "con": {
+            "weightedSectionMean": 88.09,
+            "burdenCompletionAdjustment": 0,
+            "score": 88
+          }
+        },
+        "winner": "con",
+        "winningMargin": 7,
+        "scoreProtocolId": "v4.2.21.17.30-hard-route-single-deterministic-score-pass"
+      },
+      "consensus": {
+        "initialWinnersAgree": true,
+        "initialWinner": "con",
+        "finalPreservesAgreedWinner": true
+      },
+      "productionReferenceDiagnosticOnly": {
+        "scores": {
+          "pro": 80,
+          "con": 84
+        },
+        "winner": "con",
+        "finalDeltas": {
+          "pro": 1,
+          "con": 4
+        },
+        "finalWinnerMatches": true,
+        "acceptanceGateInput": false
+      }
+    },
+    {
+      "debateNumber": "153",
+      "debateId": "oconnor-carter-free-will-determinism-2024",
+      "passA": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "153",
+        "debateId": "oconnor-carter-free-will-determinism-2024",
+        "sections": [
+          {
+            "sectionId": "section-01-control-dilemma",
+            "title": "Determination, randomness, and ultimate control",
+            "weightPercent": 28,
+            "sides": {
+              "pro": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "move-pro-01-control-dilemma",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "move-pro-02-substrate-neutral-dilemma",
+                    "importance": 2,
+                    "score": 74
+                  }
+                ]
+              },
+              "con": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "move-con-01-attributable-causation",
+                    "importance": 3,
+                    "score": 86
+                  },
+                  {
+                    "moveId": "move-con-02-mediopassive-agency",
+                    "importance": 3,
+                    "score": 82
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-02-desires-voluntariness",
+            "title": "Unchosen desires and voluntary action",
+            "weightPercent": 27,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "move-pro-03-causal-regress-of-desire",
+                    "importance": 3,
+                    "score": 79
+                  },
+                  {
+                    "moveId": "move-pro-04-unchosen-wants",
+                    "importance": 3,
+                    "score": 81
+                  }
+                ]
+              },
+              "con": {
+                "score": 86,
+                "moves": [
+                  {
+                    "moveId": "move-con-03-degrees-of-voluntariness",
+                    "importance": 3,
+                    "score": 87
+                  },
+                  {
+                    "moveId": "move-con-04-undeliberated-voluntary-action",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-03-sourcehood-and-perspective",
+            "title": "Causal sourcehood and first-person agency",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 72,
+                "moves": [
+                  {
+                    "moveId": "move-pro-05-unchosen-source-regress",
+                    "importance": 3,
+                    "score": 73
+                  },
+                  {
+                    "moveId": "move-pro-06-introspective-mechanism-gap",
+                    "importance": 1,
+                    "score": 68
+                  }
+                ]
+              },
+              "con": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "move-con-05-reflexive-first-person-perspective",
+                    "importance": 2,
+                    "score": 73
+                  },
+                  {
+                    "moveId": "move-con-06-public-first-consciousness",
+                    "importance": 1,
+                    "score": 72
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-04-responsibility-and-ethical-practice",
+            "title": "Responsibility, desert, and interpersonal ethics",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "move-pro-07-consequentialist-responsibility",
+                    "importance": 2,
+                    "score": 81
+                  },
+                  {
+                    "moveId": "move-pro-08-determinist-compassion",
+                    "importance": 1,
+                    "score": 81
+                  }
+                ]
+              },
+              "con": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "move-con-07-interpersonal-responsibility",
+                    "importance": 2,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "move-con-08-ethical-tension",
+                    "importance": 2,
+                    "score": 79
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-05-moral-meaning",
+            "title": "Causal explanation and moral meaning",
+            "weightPercent": 12,
+            "sides": {
+              "pro": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "move-pro-09-evolved-moral-desire",
+                    "importance": 2,
+                    "score": 76
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "move-con-09-normative-nonreduction",
+                    "importance": 2,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 77.76,
+            "burdenCompletionAdjustment": 0,
+            "score": 78
+          },
+          "con": {
+            "weightedSectionMean": 82.31,
+            "burdenCompletionAdjustment": 0,
+            "score": 82
+          }
+        },
+        "winner": "con",
+        "winningMargin": 4,
+        "scoreProtocolId": "v4.2.21.17.30-hard-route-single-deterministic-score-pass"
+      },
+      "passB": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "153",
+        "debateId": "oconnor-carter-free-will-determinism-2024",
+        "sections": [
+          {
+            "sectionId": "section-01-control-dilemma",
+            "title": "Determination, randomness, and ultimate control",
+            "weightPercent": 28,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "move-pro-01-control-dilemma",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "move-pro-02-substrate-neutral-dilemma",
+                    "importance": 2,
+                    "score": 81
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "move-con-01-attributable-causation",
+                    "importance": 3,
+                    "score": 87
+                  },
+                  {
+                    "moveId": "move-con-02-mediopassive-agency",
+                    "importance": 2,
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-02-desires-voluntariness",
+            "title": "Unchosen desires and voluntary action",
+            "weightPercent": 27,
+            "sides": {
+              "pro": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "move-pro-03-causal-regress-of-desire",
+                    "importance": 3,
+                    "score": 81
+                  },
+                  {
+                    "moveId": "move-pro-04-unchosen-wants",
+                    "importance": 3,
+                    "score": 81
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "move-con-03-degrees-of-voluntariness",
+                    "importance": 3,
+                    "score": 89
+                  },
+                  {
+                    "moveId": "move-con-04-undeliberated-voluntary-action",
+                    "importance": 2,
+                    "score": 79
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-03-sourcehood-and-perspective",
+            "title": "Causal sourcehood and first-person agency",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 72,
+                "moves": [
+                  {
+                    "moveId": "move-pro-05-unchosen-source-regress",
+                    "importance": 3,
+                    "score": 74
+                  },
+                  {
+                    "moveId": "move-pro-06-introspective-mechanism-gap",
+                    "importance": 1,
+                    "score": 66
+                  }
+                ]
+              },
+              "con": {
+                "score": 67,
+                "moves": [
+                  {
+                    "moveId": "move-con-05-reflexive-first-person-perspective",
+                    "importance": 2,
+                    "score": 67
+                  },
+                  {
+                    "moveId": "move-con-06-public-first-consciousness",
+                    "importance": 1,
+                    "score": 68
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-04-responsibility-and-ethical-practice",
+            "title": "Responsibility, desert, and interpersonal ethics",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "move-pro-07-consequentialist-responsibility",
+                    "importance": 2,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "move-pro-08-determinist-compassion",
+                    "importance": 1,
+                    "score": 81
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "move-con-07-interpersonal-responsibility",
+                    "importance": 2,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "move-con-08-ethical-tension",
+                    "importance": 1,
+                    "score": 79
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-05-moral-meaning",
+            "title": "Causal explanation and moral meaning",
+            "weightPercent": 12,
+            "sides": {
+              "pro": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "move-pro-09-evolved-moral-desire",
+                    "importance": 2,
+                    "score": 75
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "move-con-09-normative-nonreduction",
+                    "importance": 2,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 78.79,
+            "burdenCompletionAdjustment": 0,
+            "score": 79
+          },
+          "con": {
+            "weightedSectionMean": 82.02,
+            "burdenCompletionAdjustment": 0,
+            "score": 82
+          }
+        },
+        "winner": "con",
+        "winningMargin": 3,
+        "scoreProtocolId": "v4.2.21.17.30-hard-route-single-deterministic-score-pass"
+      },
+      "final": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "153",
+        "debateId": "oconnor-carter-free-will-determinism-2024",
+        "sections": [
+          {
+            "sectionId": "section-01-control-dilemma",
+            "title": "Determination, randomness, and ultimate control",
+            "weightPercent": 28,
+            "sides": {
+              "pro": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "move-pro-01-control-dilemma",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "move-pro-02-substrate-neutral-dilemma",
+                    "importance": 2,
+                    "score": 75
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "move-con-01-attributable-causation",
+                    "importance": 3,
+                    "score": 87
+                  },
+                  {
+                    "moveId": "move-con-02-mediopassive-agency",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-02-desires-voluntariness",
+            "title": "Unchosen desires and voluntary action",
+            "weightPercent": 27,
+            "sides": {
+              "pro": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "move-pro-03-causal-regress-of-desire",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "move-pro-04-unchosen-wants",
+                    "importance": 3,
+                    "score": 81
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "move-con-03-degrees-of-voluntariness",
+                    "importance": 3,
+                    "score": 88
+                  },
+                  {
+                    "moveId": "move-con-04-undeliberated-voluntary-action",
+                    "importance": 2,
+                    "score": 80
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-03-sourcehood-and-perspective",
+            "title": "Causal sourcehood and first-person agency",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 72,
+                "moves": [
+                  {
+                    "moveId": "move-pro-05-unchosen-source-regress",
+                    "importance": 3,
+                    "score": 74
+                  },
+                  {
+                    "moveId": "move-pro-06-introspective-mechanism-gap",
+                    "importance": 1,
+                    "score": 67
+                  }
+                ]
+              },
+              "con": {
+                "score": 68,
+                "moves": [
+                  {
+                    "moveId": "move-con-05-reflexive-first-person-perspective",
+                    "importance": 2,
+                    "score": 68
+                  },
+                  {
+                    "moveId": "move-con-06-public-first-consciousness",
+                    "importance": 1,
+                    "score": 69
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-04-responsibility-and-ethical-practice",
+            "title": "Responsibility, desert, and interpersonal ethics",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "move-pro-07-consequentialist-responsibility",
+                    "importance": 2,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "move-pro-08-determinist-compassion",
+                    "importance": 1,
+                    "score": 81
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "move-con-07-interpersonal-responsibility",
+                    "importance": 2,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "move-con-08-ethical-tension",
+                    "importance": 1,
+                    "score": 79
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-05-moral-meaning",
+            "title": "Causal explanation and moral meaning",
+            "weightPercent": 12,
+            "sides": {
+              "pro": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "move-pro-09-evolved-moral-desire",
+                    "importance": 2,
+                    "score": 76
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "move-con-09-normative-nonreduction",
+                    "importance": 2,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 78.51,
+            "burdenCompletionAdjustment": 0,
+            "score": 79
+          },
+          "con": {
+            "weightedSectionMean": 82.47,
+            "burdenCompletionAdjustment": 0,
+            "score": 82
+          }
+        },
+        "winner": "con",
+        "winningMargin": 3,
+        "scoreProtocolId": "v4.2.21.17.30-hard-route-single-deterministic-score-pass"
+      },
+      "consensus": {
+        "initialWinnersAgree": true,
+        "initialWinner": "con",
+        "finalPreservesAgreedWinner": true
+      },
+      "productionReferenceDiagnosticOnly": {
+        "scores": {
+          "pro": 78,
+          "con": 76
+        },
+        "winner": "pro",
+        "finalDeltas": {
+          "pro": 1,
+          "con": 6
+        },
+        "finalWinnerMatches": false,
+        "acceptanceGateInput": false
+      }
+    },
+    {
+      "debateNumber": "165",
+      "debateId": "craig-rosenberg-faith-god-reasonable-2013",
+      "passA": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "165",
+        "debateId": "craig-rosenberg-faith-god-reasonable-2013",
+        "sections": [
+          {
+            "sectionId": "section-cosmological-causation",
+            "title": "Cosmic Origin and Causal Explanation",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "pro-cosmic-cause",
+                    "importance": 3,
+                    "score": 78
+                  },
+                  {
+                    "moveId": "pro-quantum-vacuum-distinction",
+                    "importance": 3,
+                    "score": 90
+                  }
+                ]
+              },
+              "con": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "con-quantum-indeterminacy",
+                    "importance": 3,
+                    "score": 73
+                  },
+                  {
+                    "moveId": "con-quantum-cosmic-extension",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-fine-tuning-standards",
+            "title": "Fine-Tuning and Explanatory Standards",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "pro-fine-tuning-design",
+                    "importance": 3,
+                    "score": 81
+                  },
+                  {
+                    "moveId": "pro-theoretical-virtues",
+                    "importance": 2,
+                    "score": 87
+                  }
+                ]
+              },
+              "con": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "con-predictive-indispensability",
+                    "importance": 3,
+                    "score": 75
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-mind-naturalism",
+            "title": "Intentionality and Scientific Naturalism",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "pro-intentional-minds",
+                    "importance": 3,
+                    "score": 74
+                  },
+                  {
+                    "moveId": "pro-naturalism-reductio",
+                    "importance": 3,
+                    "score": 68
+                  }
+                ]
+              },
+              "con": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "con-parallel-scientific-implications",
+                    "importance": 3,
+                    "score": 89
+                  },
+                  {
+                    "moveId": "con-causal-information-transfer",
+                    "importance": 3,
+                    "score": 76
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-moral-foundation",
+            "title": "Objective Morality and Divine Grounding",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "pro-objective-moral-ground",
+                    "importance": 3,
+                    "score": 74
+                  },
+                  {
+                    "moveId": "pro-divine-nature-ground",
+                    "importance": 2,
+                    "score": 79
+                  }
+                ]
+              },
+              "con": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "con-euthyphro-alternatives",
+                    "importance": 2,
+                    "score": 75
+                  },
+                  {
+                    "moveId": "con-evolved-cooperation",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-resurrection-evidence",
+            "title": "Resurrection and Testimonial Evidence",
+            "weightPercent": 12,
+            "sides": {
+              "pro": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "pro-resurrection-inference",
+                    "importance": 2,
+                    "score": 75
+                  }
+                ]
+              },
+              "con": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "con-miracle-testimony",
+                    "importance": 2,
+                    "score": 73
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-problem-of-evil",
+            "title": "Divine Goodness, Freedom, and Suffering",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "pro-morally-sufficient-reasons",
+                    "importance": 3,
+                    "score": 90
+                  },
+                  {
+                    "moveId": "pro-free-worlds-defense",
+                    "importance": 3,
+                    "score": 86
+                  }
+                ]
+              },
+              "con": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "con-logical-evil",
+                    "importance": 3,
+                    "score": 70
+                  },
+                  {
+                    "moveId": "con-free-right-action",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 79.94,
+            "burdenCompletionAdjustment": 0,
+            "score": 80
+          },
+          "con": {
+            "weightedSectionMean": 76.58,
+            "burdenCompletionAdjustment": 0,
+            "score": 77
+          }
+        },
+        "winner": "pro",
+        "winningMargin": 3,
+        "scoreProtocolId": "v4.2.21.17.30-hard-route-single-deterministic-score-pass"
+      },
+      "passB": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "165",
+        "debateId": "craig-rosenberg-faith-god-reasonable-2013",
+        "sections": [
+          {
+            "sectionId": "section-cosmological-causation",
+            "title": "Cosmic Origin and Causal Explanation",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "pro-cosmic-cause",
+                    "importance": 3,
+                    "score": 78
+                  },
+                  {
+                    "moveId": "pro-quantum-vacuum-distinction",
+                    "importance": 3,
+                    "score": 90
+                  }
+                ]
+              },
+              "con": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "con-quantum-indeterminacy",
+                    "importance": 3,
+                    "score": 77
+                  },
+                  {
+                    "moveId": "con-quantum-cosmic-extension",
+                    "importance": 3,
+                    "score": 73
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-fine-tuning-standards",
+            "title": "Fine-Tuning and Explanatory Standards",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "pro-fine-tuning-design",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "pro-theoretical-virtues",
+                    "importance": 2,
+                    "score": 88
+                  }
+                ]
+              },
+              "con": {
+                "score": 72,
+                "moves": [
+                  {
+                    "moveId": "con-predictive-indispensability",
+                    "importance": 3,
+                    "score": 72
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-mind-naturalism",
+            "title": "Intentionality and Scientific Naturalism",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 72,
+                "moves": [
+                  {
+                    "moveId": "pro-intentional-minds",
+                    "importance": 3,
+                    "score": 77
+                  },
+                  {
+                    "moveId": "pro-naturalism-reductio",
+                    "importance": 3,
+                    "score": 66
+                  }
+                ]
+              },
+              "con": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "con-parallel-scientific-implications",
+                    "importance": 3,
+                    "score": 88
+                  },
+                  {
+                    "moveId": "con-causal-information-transfer",
+                    "importance": 3,
+                    "score": 79
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-moral-foundation",
+            "title": "Objective Morality and Divine Grounding",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "pro-objective-moral-ground",
+                    "importance": 3,
+                    "score": 75
+                  },
+                  {
+                    "moveId": "pro-divine-nature-ground",
+                    "importance": 2,
+                    "score": 86
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "con-euthyphro-alternatives",
+                    "importance": 2,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "con-evolved-cooperation",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-resurrection-evidence",
+            "title": "Resurrection and Testimonial Evidence",
+            "weightPercent": 12,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "pro-resurrection-inference",
+                    "importance": 2,
+                    "score": 74
+                  }
+                ]
+              },
+              "con": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "con-miracle-testimony",
+                    "importance": 2,
+                    "score": 77
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-problem-of-evil",
+            "title": "Divine Goodness, Freedom, and Suffering",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 90,
+                "moves": [
+                  {
+                    "moveId": "pro-morally-sufficient-reasons",
+                    "importance": 3,
+                    "score": 91
+                  },
+                  {
+                    "moveId": "pro-free-worlds-defense",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              },
+              "con": {
+                "score": 72,
+                "moves": [
+                  {
+                    "moveId": "con-logical-evil",
+                    "importance": 3,
+                    "score": 68
+                  },
+                  {
+                    "moveId": "con-free-right-action",
+                    "importance": 3,
+                    "score": 76
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 80.88,
+            "burdenCompletionAdjustment": 0,
+            "score": 81
+          },
+          "con": {
+            "weightedSectionMean": 76.5,
+            "burdenCompletionAdjustment": 0,
+            "score": 77
+          }
+        },
+        "winner": "pro",
+        "winningMargin": 4,
+        "scoreProtocolId": "v4.2.21.17.30-hard-route-single-deterministic-score-pass"
+      },
+      "final": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "165",
+        "debateId": "craig-rosenberg-faith-god-reasonable-2013",
+        "sections": [
+          {
+            "sectionId": "section-cosmological-causation",
+            "title": "Cosmic Origin and Causal Explanation",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "pro-cosmic-cause",
+                    "importance": 3,
+                    "score": 78
+                  },
+                  {
+                    "moveId": "pro-quantum-vacuum-distinction",
+                    "importance": 3,
+                    "score": 90
+                  }
+                ]
+              },
+              "con": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "con-quantum-indeterminacy",
+                    "importance": 3,
+                    "score": 73
+                  },
+                  {
+                    "moveId": "con-quantum-cosmic-extension",
+                    "importance": 3,
+                    "score": 76
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-fine-tuning-standards",
+            "title": "Fine-Tuning and Explanatory Standards",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "pro-fine-tuning-design",
+                    "importance": 3,
+                    "score": 81
+                  },
+                  {
+                    "moveId": "pro-theoretical-virtues",
+                    "importance": 2,
+                    "score": 88
+                  }
+                ]
+              },
+              "con": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "con-predictive-indispensability",
+                    "importance": 3,
+                    "score": 73
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-mind-naturalism",
+            "title": "Intentionality and Scientific Naturalism",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 70,
+                "moves": [
+                  {
+                    "moveId": "pro-intentional-minds",
+                    "importance": 3,
+                    "score": 74
+                  },
+                  {
+                    "moveId": "pro-naturalism-reductio",
+                    "importance": 3,
+                    "score": 66
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "con-parallel-scientific-implications",
+                    "importance": 3,
+                    "score": 89
+                  },
+                  {
+                    "moveId": "con-causal-information-transfer",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-moral-foundation",
+            "title": "Objective Morality and Divine Grounding",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "pro-objective-moral-ground",
+                    "importance": 3,
+                    "score": 74
+                  },
+                  {
+                    "moveId": "pro-divine-nature-ground",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "con-euthyphro-alternatives",
+                    "importance": 2,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "con-evolved-cooperation",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-resurrection-evidence",
+            "title": "Resurrection and Testimonial Evidence",
+            "weightPercent": 12,
+            "sides": {
+              "pro": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "pro-resurrection-inference",
+                    "importance": 2,
+                    "score": 75
+                  }
+                ]
+              },
+              "con": {
+                "score": 72,
+                "moves": [
+                  {
+                    "moveId": "con-miracle-testimony",
+                    "importance": 2,
+                    "score": 72
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-problem-of-evil",
+            "title": "Divine Goodness, Freedom, and Suffering",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 90,
+                "moves": [
+                  {
+                    "moveId": "pro-morally-sufficient-reasons",
+                    "importance": 3,
+                    "score": 91
+                  },
+                  {
+                    "moveId": "pro-free-worlds-defense",
+                    "importance": 3,
+                    "score": 89
+                  }
+                ]
+              },
+              "con": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "con-logical-evil",
+                    "importance": 3,
+                    "score": 69
+                  },
+                  {
+                    "moveId": "con-free-right-action",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 80.68,
+            "burdenCompletionAdjustment": 0,
+            "score": 81
+          },
+          "con": {
+            "weightedSectionMean": 76.24,
+            "burdenCompletionAdjustment": 0,
+            "score": 76
+          }
+        },
+        "winner": "pro",
+        "winningMargin": 5,
+        "scoreProtocolId": "v4.2.21.17.30-hard-route-single-deterministic-score-pass"
+      },
+      "consensus": {
+        "initialWinnersAgree": true,
+        "initialWinner": "pro",
+        "finalPreservesAgreedWinner": true
+      },
+      "productionReferenceDiagnosticOnly": {
+        "scores": {
+          "pro": 82,
+          "con": 68
+        },
+        "winner": "pro",
+        "finalDeltas": {
+          "pro": -1,
+          "con": 8
+        },
+        "finalWinnerMatches": true,
+        "acceptanceGateInput": false
+      }
+    }
+  ],
+  "stability": {
+    "sideRows": [
+      {
+        "debateNumber": "51",
+        "side": "pro",
+        "passA": 79,
+        "passB": 80,
+        "final": 79,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "51",
+        "side": "con",
+        "passA": 70,
+        "passB": 74,
+        "final": 72,
+        "absoluteDistanceFromPassA": 2,
+        "absoluteDistanceFromPassB": 2,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "63",
+        "side": "pro",
+        "passA": 72,
+        "passB": 71,
+        "final": 71,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "63",
+        "side": "con",
+        "passA": 86,
+        "passB": 85,
+        "final": 86,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "90",
+        "side": "pro",
+        "passA": 81,
+        "passB": 82,
+        "final": 81,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "90",
+        "side": "con",
+        "passA": 89,
+        "passB": 86,
+        "final": 88,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 2,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "153",
+        "side": "pro",
+        "passA": 78,
+        "passB": 79,
+        "final": 79,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "153",
+        "side": "con",
+        "passA": 82,
+        "passB": 82,
+        "final": 82,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "165",
+        "side": "pro",
+        "passA": 80,
+        "passB": 81,
+        "final": 81,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "165",
+        "side": "con",
+        "passA": 77,
+        "passB": 77,
+        "final": 76,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 1
+      }
+    ],
+    "scoreBoundsPassed": true,
+    "agreedWinnerDebates": 5,
+    "agreedWinnersPreserved": 5,
+    "meanAbsoluteDistanceToInitialPasses": 0.75,
+    "maximumAbsoluteDistanceToEitherInitialPass": 2,
+    "maximumOutsideInitialRange": 1,
+    "thresholds": {
+      "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+      "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+      "maximumOutsideInitialRangeMaximum": 3
+    },
+    "acceptancePassed": true
+  },
+  "totals": {
+    "debates": 5,
+    "finalSides": 10,
+    "scoringPasses": 1,
+    "modelContexts": 0,
+    "retries": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "acceptancePassed": true
+  },
+  "authorization": {
+    "workflowQualityAnalysis": true,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
