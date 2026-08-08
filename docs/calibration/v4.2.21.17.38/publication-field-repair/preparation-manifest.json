@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "4.2.21.17.38-publication-field-repair-preparation",
+  "protocolId": "v4.2.21.17.38-publication-field-repair",
+  "status": "prepared-two-isolated-publication-field-repairs",
+  "preparedAt": "2026-08-08T16:09:27.327Z",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "inputs": {
+    "workflow": "docs/assessment-workflow-v4.2.21.17.38.md",
+    "v17_37Preparation": "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/preparation-manifest.json",
+    "v17_37Execution": "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/model-execution.json",
+    "v17_37Analysis": "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/analysis.json"
+  },
+  "contexts": [
+    {
+      "debateNumber": "153",
+      "debateId": "oconnor-carter-free-will-determinism-2024",
+      "repairType": "critique-word-boundary",
+      "packet": "docs/calibration/v4.2.21.17.38/publication-field-repair/packets/debate-153.json",
+      "schema": "docs/calibration/v4.2.21.17.38/publication-field-repair/schemas/debate-153.schema.json",
+      "repairOutput": "docs/calibration/v4.2.21.17.38/publication-field-repair/repair-outputs/debate-153.json",
+      "baseOutput": "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/outputs/debate-153.json",
+      "publicationPacket": "docs/calibration/v4.2.21.17.33/hard-route-publication-transport-repair/packets/debate-153.json",
+      "finalOutput": "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-153.json",
+      "correctedFields": 8,
+      "copiedInputBytes": 52558
+    },
+    {
+      "debateNumber": "165",
+      "debateId": "craig-rosenberg-faith-god-reasonable-2013",
+      "repairType": "representative-quote-exactness",
+      "packet": "docs/calibration/v4.2.21.17.38/publication-field-repair/packets/debate-165.json",
+      "schema": "docs/calibration/v4.2.21.17.38/publication-field-repair/schemas/debate-165.schema.json",
+      "repairOutput": "docs/calibration/v4.2.21.17.38/publication-field-repair/repair-outputs/debate-165.json",
+      "baseOutput": "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/raw-outputs/debate-165.json",
+      "publicationPacket": "docs/calibration/v4.2.21.17.33/hard-route-publication-transport-repair/packets/debate-165.json",
+      "finalOutput": "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-165.json",
+      "correctedFields": 1,
+      "copiedInputBytes": 9262
+    }
+  ],
+  "acceptedDebates": [
+    {
+      "debateNumber": "51",
+      "sourceOutput": "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/outputs/debate-51.json",
+      "publicationPacket": "docs/calibration/v4.2.21.17.33/hard-route-publication-transport-repair/packets/debate-51.json",
+      "finalOutput": "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-51.json"
+    },
+    {
+      "debateNumber": "63",
+      "sourceOutput": "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/outputs/debate-63.json",
+      "publicationPacket": "docs/calibration/v4.2.21.17.33/hard-route-publication-transport-repair/packets/debate-63.json",
+      "finalOutput": "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-63.json"
+    },
+    {
+      "debateNumber": "90",
+      "sourceOutput": "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/outputs/debate-90.json",
+      "publicationPacket": "docs/calibration/v4.2.21.17.33/hard-route-publication-transport-repair/packets/debate-90.json",
+      "finalOutput": "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-90.json"
+    }
+  ],
+  "policy": {
+    "contexts": 2,
+    "attemptsPerContext": 1,
+    "retries": 0,
+    "furtherCorrectionContexts": 0,
+    "maximumConcurrency": 2,
+    "timeoutMsPerContext": 480000,
+    "maximumMinutesPerContext": 6,
+    "maximumMeanMinutes": 5,
+    "modelAuthoredScores": 0
+  },
+  "totals": {
+    "modelContexts": 2,
+    "correctedFields": 9,
+    "maximumCopiedInputBytes": 52558,
+    "modelAuthoredScores": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsdThisStage": 0
+  },
+  "authorization": {
+    "executionManifest": true,
+    "modelExecution": false,
+    "merge": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}

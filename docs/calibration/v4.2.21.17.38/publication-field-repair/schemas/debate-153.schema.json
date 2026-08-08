@@ -1,0 +1,82 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "4.2.21.17.38-publication-field-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "v4.2.21.17.38-publication-field-repair"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "153"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "correctedCritiques": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "move-pro-04-unchosen-wants": {
+          "type": "string",
+          "minLength": 880
+        },
+        "move-con-07-interpersonal-responsibility": {
+          "type": "string",
+          "minLength": 880
+        },
+        "move-pro-02-substrate-neutral-dilemma": {
+          "type": "string",
+          "minLength": 880
+        },
+        "move-pro-08-determinist-compassion": {
+          "type": "string",
+          "minLength": 880
+        },
+        "move-con-08-ethical-tension": {
+          "type": "string",
+          "minLength": 880
+        },
+        "move-pro-09-evolved-moral-desire": {
+          "type": "string",
+          "minLength": 880
+        },
+        "move-pro-05-unchosen-source-regress": {
+          "type": "string",
+          "minLength": 880
+        },
+        "move-pro-06-introspective-mechanism-gap": {
+          "type": "string",
+          "minLength": 880
+        }
+      },
+      "required": [
+        "move-pro-04-unchosen-wants",
+        "move-con-07-interpersonal-responsibility",
+        "move-pro-02-substrate-neutral-dilemma",
+        "move-pro-08-determinist-compassion",
+        "move-con-08-ethical-tension",
+        "move-pro-09-evolved-moral-desire",
+        "move-pro-05-unchosen-source-regress",
+        "move-pro-06-introspective-mechanism-gap"
+      ]
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "assessmentModel",
+    "completedAt",
+    "correctedCritiques"
+  ]
+}

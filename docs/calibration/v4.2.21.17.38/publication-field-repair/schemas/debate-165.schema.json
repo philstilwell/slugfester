@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "4.2.21.17.38-publication-field-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "v4.2.21.17.38-publication-field-repair"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "165"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "correctedConQuote": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sourceMoveId": {
+          "type": "string",
+          "enum": [
+            "con-quantum-indeterminacy",
+            "con-euthyphro-alternatives",
+            "con-miracle-testimony",
+            "con-logical-evil",
+            "con-parallel-scientific-implications",
+            "con-quantum-cosmic-extension",
+            "con-free-right-action",
+            "con-predictive-indispensability",
+            "con-evolved-cooperation",
+            "con-causal-information-transfer"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "minLength": 3
+        }
+      },
+      "required": [
+        "sourceMoveId",
+        "text"
+      ]
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "assessmentModel",
+    "completedAt",
+    "correctedConQuote"
+  ]
+}
