@@ -1,0 +1,1820 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "51",
+  "debateId": "lennox-atkins-duelling-professors-2012",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-christian-theism",
+      "side": "pro",
+      "description": "Establish that the universe, life, rationality, morality, and human experience are jointly more intelligible as products of a personal creator than of unguided natural processes alone.",
+      "successCriteria": "The route succeeds if its positive indicators support creative intelligence, naturalistic alternatives do not exhaust their explanatory force, and further evidence connects that intelligence to Christian theism.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-cumulative-theism",
+        "tier": "motion",
+        "description": "Show that the cumulative evidence points beyond atheistic naturalism toward a personal creator and, with additional evidence, toward Christian theism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-intelligibility",
+          "tier": "central",
+          "description": "Explain why rational and mathematical intelligibility is expected if a rational mind grounds the universe."
+        },
+        {
+          "bridgeId": "pro-central-life-information",
+          "tier": "central",
+          "description": "Show why the origin and semiotic character of biological information require explanation beyond evolutionary transmission and selection."
+        },
+        {
+          "bridgeId": "pro-central-moral-personal",
+          "tier": "central",
+          "description": "Ground objective moral significance and personal accountability in a reality deeper than unguided physical processes."
+        },
+        {
+          "bridgeId": "pro-central-christian-connection",
+          "tier": "central",
+          "description": "Connect general creator evidence to specifically Christian claims through historical, biblical, experiential, and personal evidence."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-agency-mechanism",
+          "tier": "subsidiary",
+          "description": "Distinguish explanations by natural mechanism from explanations by personal agency so that the two are not treated as mutually exclusive."
+        },
+        {
+          "bridgeId": "pro-subsidiary-cosmic-conditions",
+          "tier": "subsidiary",
+          "description": "Account for life-permitting cosmic conditions as evidence relevant to whether the universe has an intelligent source."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-atheistic-naturalism",
+      "side": "con",
+      "description": "Establish that scientific mechanisms, emergent order, evolved capacities, and evidence-based inquiry can account for the disputed phenomena without adding a supernatural designer or religious authority.",
+      "successCriteria": "The route succeeds if natural processes provide sufficient explanatory paths, present scientific unknowns do not license supernatural conclusions, and specifically Christian claims lack necessary evidential support.",
+      "motionBridge": {
+        "bridgeId": "con-motion-naturalist-sufficiency",
+        "tier": "motion",
+        "description": "Show that the phenomena named in the motion can be approached through naturalistic explanation without requiring Christian theism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-emergent-order",
+          "tier": "central",
+          "description": "Explain how apparent design, biological complexity, information, and regularities can arise or persist through unguided natural processes."
+        },
+        {
+          "bridgeId": "con-central-method",
+          "tier": "central",
+          "description": "Justify withholding supernatural conclusions while testable scientific explanations remain open or under development."
+        },
+        {
+          "bridgeId": "con-central-moral-naturalism",
+          "tier": "central",
+          "description": "Provide an account of moral conduct and reflection based on evolved social dispositions and consideration of consequences."
+        },
+        {
+          "bridgeId": "con-central-religious-evidence",
+          "tier": "central",
+          "description": "Require objective support for religious claims beyond their historical influence, psychological comfort, or inherited authority."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-explanatory-economy",
+          "tier": "subsidiary",
+          "description": "Apply methodological economy by adding a divine cause only if natural explanation proves insufficient in principle."
+        },
+        {
+          "bridgeId": "con-subsidiary-human-law-description",
+          "tier": "subsidiary",
+          "description": "Treat natural laws as human descriptions of observed regularities rather than commands that necessarily imply a lawgiver."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-design-explanation",
+      "title": "Design, mechanism, and explanatory method",
+      "weightPercent": 20,
+      "rationale": "This issue establishes whether scientific mechanisms displace a designer, remain compatible with divine agency, or should be pursued without adding a supernatural explanation."
+    },
+    {
+      "sectionId": "section-life-information",
+      "title": "Life's origin, evolution, and biological information",
+      "weightPercent": 25,
+      "rationale": "The origin of replication and the status of DNA information determine whether evolutionary and chemical processes suffice or whether biological organization points to intelligence."
+    },
+    {
+      "sectionId": "section-cosmos-laws",
+      "title": "Cosmic origin, laws, and life-permitting conditions",
+      "weightPercent": 25,
+      "rationale": "This issue bears on whether mathematical structure, existence, natural regularities, and life-permitting conditions require creative intelligence or admit a naturalistic ultimate account."
+    },
+    {
+      "sectionId": "section-morality-afterlife",
+      "title": "Morality, responsibility, and ultimate hope",
+      "weightPercent": 17,
+      "rationale": "The competing accounts must explain moral judgment and responsibility, while claims about death and ultimate justice test what each worldview permits beyond present biological life."
+    },
+    {
+      "sectionId": "section-christian-evidence",
+      "title": "Historical and experiential grounds for Christian belief",
+      "weightPercent": 13,
+      "rationale": "General arguments for intelligence do not alone establish Christianity, so the route requires assessment of historical and experiential evidence against naturalistic objections to religious authority and conditioning."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-apparent-design-01",
+      "sectionId": "section-design-explanation",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "constructive",
+      "proposition": "Scientific progress can explain apparent design in organisms, physical laws, and the universe without requiring a designer.",
+      "sourceSpan": {
+        "startEvent": 52,
+        "endEvent": 85
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly directs the opening design question to Professor Atkins, whose uninterrupted answer follows.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-naturalist-sufficiency"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "As an opening constructive, this directly offers scientific progress as the naturalistic route for explaining apparent design across biology, laws, and the cosmos.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "The constructive clearly states its route, but supplies little mechanism or representative evidence within the selected span."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is recoverable and labels cosmic extension speculative, though its sweeping scope across three domains remains underdefined."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The excerpt concedes speculation about the universe, yet concludes broadly that none of the named domains needs a designer."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "Scientific progress can reduce design inferences, but the move does not bridge past success to universal explanatory sufficiency."
+        },
+        "evidenceWarrant": {
+          "value": 55,
+          "rationale": "The span asserts a trajectory of scientific explanation without presenting specific mechanisms or comparative evidence for all domains."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It directly advances the motion-level naturalist-sufficiency condition across several phenomena named in the motion."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No developed opposing alternative is examined in this opening constructive span."
+        }
+      },
+      "evidenceBasis": "The excerpt says science strips away an illusion of design and that the biosphere, physical laws, and universe need no designer, while marking the cosmic claim speculative.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-design-agency-01",
+      "sectionId": "section-design-explanation",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Scientific mechanisms do not exclude a personal creator who originated and designed those mechanisms.",
+      "sourceSpan": {
+        "startEvent": 89,
+        "endEvent": 133
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly turns from Atkins to Professor Lennox, and the answer continues until Atkins begins his response.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-agency-mechanism"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-apparent-design-01"
+        ],
+        "components": [
+          {
+            "componentId": "pro-design-agency-01-component-01",
+            "targetMoveId": "con-apparent-design-01",
+            "text": "Whether scientific mechanisms make a designing agent explanatorily unnecessary.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-design-agency-01-component-02",
+            "targetMoveId": "con-apparent-design-01",
+            "text": "Whether increasing scientific explanation positively weakens evidence for design across the named domains.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies the mechanism-to-no-agent inference as invalid because mechanism and agency explanations are compatible, then claims scientific advance can increase design evidence.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly contacts and diagnoses the central inference, although its positive claim about increased evidence is only briefly warranted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The mechanism-agent distinction is explicit, stable, and qualified as the speaker's considered inference rather than a demonstration."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Compatibility is well stated, but the further assertion that science increases design evidence receives no developed comparative warrant here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Natural mechanisms could make a designer explanatorily redundant even if they do not logically exclude one.",
+        "decisiveQualification": "Logical compatibility alone does not establish that agency adds explanatory value or probability."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The agency-mechanism distinction defeats strict exclusion, with one bounded gap between compatibility and positive design evidence."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The conceptual distinction is clear, but no specific case establishes that the mechanisms were themselves designed."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary agency-mechanism bridge at the upper end of that burden tier."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The reply correctly rejects exclusion but compresses the stronger redundancy interpretation of the naturalistic argument."
+        }
+      },
+      "evidenceBasis": "Lennox describes God as a personal causal agent, distinguishes scientific mechanisms from their possible designer, and denies that finding mechanisms entails absence of agency.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-intelligibility-01",
+      "sectionId": "section-design-explanation",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "The universe's mathematical intelligibility and humanity's ability to do science are better accounted for by theism than atheism.",
+      "sourceSpan": {
+        "startEvent": 173,
+        "endEvent": 215
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage follows Atkins's challenge and uses Lennox's first-person framing before Atkins answers the intelligibility argument.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-intelligibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-apparent-design-01"
+        ],
+        "components": [
+          {
+            "componentId": "pro-intelligibility-01-component-01",
+            "targetMoveId": "con-apparent-design-01",
+            "text": "Whether the rational structure of the universe can count as positive evidence rather than an illusion displaced by science.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the broad no-design conclusion by offering mathematical intelligibility and scientific cognition as contrary evidence, though it does not directly analyze Atkins's progress inference.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "It supplies relevant contrary evidence but only partially answers the earlier move's sweeping mechanism-based claim."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The comparative claim is clear, but 'nothing in atheism' and 'everything in theism' leave the explanatory standards too broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The evidence is identified, but the universal contrast between atheism and theism exceeds the argument supplied in the excerpt."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Naturalism may treat mathematical regularity and evolved cognition as basic facts or products of selection rather than predictions needing a mind.",
+        "decisiveQualification": "A naturalist's absence of an ultimate explanation does not by itself make theism's mind-based explanation probable."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "Theism may make intelligibility expected, but the move leaves the likelihood comparison and anti-naturalist premise substantially implicit."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "It identifies a genuine datum but provides neither detailed support nor comparison with evolutionary and structural alternatives."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly advances the central intelligibility bridge and states its intended comparative inference."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The absolute claim that atheism accounts for nothing materially understates the strongest available naturalistic response."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies humanity's ability to do science and a rationally mathematical universe as major evidence, then contrasts atheistic and theistic explanatory resources.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-method-economy-01",
+      "sectionId": "section-design-explanation",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "reply",
+      "proposition": "Inquiry should pursue complete natural explanations under minimal assumptions and add God only if divine agency proves indispensable.",
+      "sourceSpan": {
+        "startEvent": 216,
+        "endEvent": 280
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Atkins directly labels Lennox's intelligibility inference as lazy, and the moderator closes the turn by redirecting the discussion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-explanatory-economy"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-intelligibility-01",
+          "pro-design-agency-01"
+        ],
+        "components": [
+          {
+            "componentId": "con-method-economy-01-component-01",
+            "targetMoveId": "pro-intelligibility-01",
+            "text": "Whether present intelligibility requires a theistic explanation rather than continued inquiry under minimal assumptions.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-method-economy-01-component-02",
+            "targetMoveId": "pro-design-agency-01",
+            "text": "Whether compatibility between mechanism and agency is enough to warrant adding divine agency.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "The reply replaces immediate worldview comparison with a minimal-assumption demand and justifies adding God only upon demonstrated need, preserving the explanatory issue while changing its threshold.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "The methodological reframe is explicit and reaches both earlier claims, though it does not itself explain mathematical intelligibility."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The minimal-assumption policy and condition for adding divine agency are clearly stated and consistently scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move proposes a defeasible method rather than claiming present scientific completeness, and expressly conditions additions on need."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Theism may be an explanatory hypothesis rather than dispensable ornamental 'flesh' if it predicts intelligibility.",
+        "decisiveQualification": "Economy must compare explanatory power as well as count assumptions; simplicity alone cannot decide the issue."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The defeasible economy rule is coherent, with a bounded gap concerning how necessity and explanatory gain would be tested."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The methodological principle is defended conceptually, but no concrete comparison establishes that natural explanation is adequate here."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary explanatory-economy bridge and also bears on the central methodological dispute."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The reply allows God if needed but its metaphor slightly prejudges the explanatory contribution as an avoidable addition."
+        }
+      },
+      "evidenceBasis": "Atkins proposes a minimal-assumption hypothesis, compares God to added flesh, and says divine agency should be included only if shown necessary to explanation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-selection-complexity-01",
+      "sectionId": "section-life-information",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "reply",
+      "proposition": "Natural selection can accumulate biological complexity from chemical beginnings without requiring an intelligent cause.",
+      "sourceSpan": {
+        "startEvent": 343,
+        "endEvent": 384
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator's question is answered in Atkins's characteristic first-person scientific framing, followed by an explicit invitation for Lennox to respond.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-emergent-order"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-design-agency-01"
+        ],
+        "components": [
+          {
+            "componentId": "con-selection-complexity-01-component-01",
+            "targetMoveId": "pro-design-agency-01",
+            "text": "Whether explaining biological mechanisms addresses the distinct possibility that an agent designed those mechanisms.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The natural-selection account is highly relevant contrary material, but it does not contact the agency-mechanism distinction that is the legal earlier opposing demand available here.",
+        "responsivenessWithinClass": {
+          "value": 66,
+          "rationale": "It is a strong relevant nonanswer within its class because it explains complexity while leaving the selected agency inference untouched."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The selection mechanism is recoverable, but 'chemical beginnings' and the scope of chance are compressed and partly unstable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Selection plausibly accumulates complexity, but saying there is nothing mysterious extends beyond the origin account actually supplied."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Differential survival can accumulate complexity, but the bridge from chemical beginnings to a functioning replicator remains materially compressed."
+        },
+        "evidenceWarrant": {
+          "value": 71,
+          "rationale": "A recognized mechanism is described, yet no representative evidence or origin-of-replication account is supplied in the span."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central emergent-order bridge by explaining how biological complexity can accumulate naturally."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The span presents a positive mechanism without materially characterizing a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes chemical processes, propagation, evolution, natural selection, chance variation, survival, and gradual growth of complexity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-replicator-semiotics-01",
+      "sectionId": "section-life-information",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Evolution presupposes a replicator and therefore does not explain life's origin, while DNA's semiotic character supports an inference to mind.",
+      "sourceSpan": {
+        "startEvent": 385,
+        "endEvent": 457
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator asks for a response, Lennox answers in first person, and Atkins then directly contests the purpose inference.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-life-information"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-selection-complexity-01"
+        ],
+        "components": [
+          {
+            "componentId": "pro-replicator-semiotics-01-component-01",
+            "targetMoveId": "con-selection-complexity-01",
+            "text": "Whether natural selection explains life's origin when selection already presupposes a mutating replicator.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-replicator-semiotics-01-component-02",
+            "targetMoveId": "con-selection-complexity-01",
+            "text": "Whether DNA's information-bearing character is adequately explained by the described selection process.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly separates evolution after replication from the origin of the replicator and adds a semiotic inference to mind, contacting both origin and information demands.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It explicitly reaches the decisive presupposition and the DNA-information issue, though the mind inference is compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The origin/evolution distinction is stable, while the meaning and evidential threshold of DNA's 'semiotic' character remain partly undefined."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The replicator objection is well fitted, but the immediate move from semiotic features to mind lacks an explicit rival comparison."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Evolutionary theory can explain diversification after replication while origin-of-life chemistry separately investigates the first replicators.",
+        "decisiveQualification": "Failure of selection alone to explain first replication does not establish that natural origin pathways cannot do so."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The presupposition argument is coherent; one important bridge from unexplained origin and semiotics to intelligence remains compressed."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "It identifies a real explanatory boundary but supplies little empirical support for the claimed semiotic-intelligence comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central life-information bridge through both origin and symbolic-information arguments."
+        },
+        "representationalCharity": {
+          "value": 77,
+          "rationale": "The reply accurately limits selection but risks treating that limitation as stronger evidence for mind than it alone provides."
+        }
+      },
+      "evidenceBasis": "Lennox states that evolution assumes an existing mutating replicator and therefore does not produce DNA, then treats DNA's semiotic dimension as evidence bearing on intelligence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-information-structure-01",
+      "sectionId": "section-life-information",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "reply",
+      "proposition": "Biological information can exist, be transmitted, modified, and interpreted through evolution without having been caused by intelligence.",
+      "sourceSpan": {
+        "startEvent": 711,
+        "endEvent": 814
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator addresses the information question within Atkins's turn, and the extended answer ends with thanks before Professor Lennox receives the same question.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-life-information"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-replicator-semiotics-01"
+        ],
+        "components": [
+          {
+            "componentId": "con-information-structure-01-component-01",
+            "targetMoveId": "pro-replicator-semiotics-01",
+            "text": "Whether biological information must have been caused by intelligence because it is transmitted and interpreted.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-information-structure-01-component-02",
+            "targetMoveId": "pro-replicator-semiotics-01",
+            "text": "Whether information can exist independently of an intelligent observer who identifies it.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly denies that information's existence, modification, transmission, or interpretation requires intelligent causation, while distinguishing identification from origin.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts the intelligence inference, although it does not fully answer the separate first-replicator challenge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The causal conclusion is clear, but 'information' ranges between broad physical variation and meaning-bearing biological information."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker corrects himself about intelligence being needed to identify information, but the broad examples do not fully establish symbolic origin."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The relevant claim concerns specified or semantic biological information, not information in the broad sense of any physical difference.",
+        "decisiveQualification": "Examples of ubiquitous physical information do not alone explain coding conventions or the first functional system."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "Non-intelligent transmission is coherent, but equivocation between generic information and symbolic meaning weakens the core inference."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "The move offers natural examples and distinctions, yet lacks a demonstrated pathway for the specific semiotic structure contested."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central pro life-information bridge and addresses the alleged inference from information to intelligence."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The reply materially broadens the disputed term and therefore under-engages the strongest semiotic version of the argument."
+        }
+      },
+      "evidenceBasis": "Atkins says information exists throughout vegetation, can be modified and reproduced, and need not have been caused by intelligence, while conceding intelligence may identify it.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-mathematical-emergence-01",
+      "sectionId": "section-cosmos-laws",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "reply",
+      "proposition": "A fundamentally mathematical reality may emerge from nothing without external intelligent intervention, by analogy with mathematical construction from the null set.",
+      "sourceSpan": {
+        "startEvent": 870,
+        "endEvent": 924
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator exchange and continuous first-person turn clearly identify Atkins as the speaker throughout this passage.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-intelligibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-intelligibility-01"
+        ],
+        "components": [
+          {
+            "componentId": "con-mathematical-emergence-01-component-01",
+            "targetMoveId": "pro-intelligibility-01",
+            "text": "Whether mathematical intelligibility requires an external rational mind to account for reality.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The null-set analogy directly offers a non-theistic possibility for mathematical reality, contacting the intelligibility demand but not establishing a physical causal pathway.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "It contacts the decisive explanatory issue explicitly, while remaining a speculative possibility rather than a complete alternative explanation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "materially-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The possibility is recoverable and expressly speculative, but 'nothing,' mathematical construction, and physical emergence are materially conflated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker repeatedly marks the proposal as speculation, a hint, and conceivable rather than established science."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 58,
+          "rationale": "The analogy moves from formal derivation to physical emergence without supplying the necessary ontological or causal bridge."
+        },
+        "evidenceWarrant": {
+          "value": 54,
+          "rationale": "Its epistemic caution is appropriate, but the fact-dependent cosmological suggestion rests almost entirely on speculative analogy."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central intelligibility bridge by sketching a non-intelligent mathematical-origin alternative."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move proposes an analogy without developing or distorting a specific opposing alternative."
+        }
+      },
+      "evidenceBasis": "Atkins analogizes mathematical construction from the null set to reality emerging from a void, explicitly describing the proposal as beyond current science and merely conceivable.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-null-set-causation-01",
+      "sectionId": "section-cosmos-laws",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "The null set is not absolute nothingness, and mathematical descriptions lack causal power, leaving a creative mind as an explanation of cosmic intelligibility.",
+      "sourceSpan": {
+        "startEvent": 931,
+        "endEvent": 968
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Lennox explicitly refers to Peter's preceding answer and sustains the responding turn until the next developed point.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-method"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-mathematical-emergence-01"
+        ],
+        "components": [
+          {
+            "componentId": "pro-null-set-causation-01-component-01",
+            "targetMoveId": "con-mathematical-emergence-01",
+            "text": "Whether construction from the null set models emergence from absolute physical nothingness.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-null-set-causation-01-component-02",
+            "targetMoveId": "con-mathematical-emergence-01",
+            "text": "Whether mathematical structure itself can causally produce physical reality without intervention.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply diagnoses two failures in the analogy: the null set is not absolute nothing and mathematical descriptions have no causal power, then states the consequence for cosmic explanation.",
+        "responsivenessWithinClass": {
+          "value": 97,
+          "rationale": "It explicitly targets both decisive premises and states why the proposed analogy does not supply the claimed explanation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The distinctions between empty set, absolute nothing, description, and causation are stated clearly and maintain stable scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The categorical force fits the limited conceptual points that a set is an abstract object and mathematics alone is not efficient causation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The null-set discussion may be an analogy for structural emergence, not a literal claim that symbols efficiently cause a universe.",
+        "decisiveQualification": "Even as a structural analogy, it does not provide a physical mechanism or derive existence from absolute nothing."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The two objections are explicit, mutually supporting, and resolve the principal validity defect in the preceding analogy."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The conceptual claims are strongly warranted, though the further creative-mind explanation is asserted more than comparatively defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central naturalist-method bridge by showing that the offered speculative model is not yet explanatory."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The reply recognizes the analogy's intended work and identifies the decisive limitation without relying on caricature."
+        }
+      },
+      "evidenceBasis": "Lennox states that the null set is not absolute nothing, notes that a creative mind develops the mathematics, and distinguishes mathematical structure from causal efficacy.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-religious-framework-01",
+      "sectionId": "section-christian-evidence",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "reply",
+      "proposition": "Religion is an inherited primitive explanatory framework, whereas collective inquiry using objective evidence can understand the cosmos without religious authority.",
+      "sourceSpan": {
+        "startEvent": 989,
+        "endEvent": 1046
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn begins with Atkins's historical counterargument and contains characteristic first-person claims about science and religious explanation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-religious-evidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-null-set-causation-01"
+        ],
+        "components": [
+          {
+            "componentId": "con-religious-framework-01-component-01",
+            "targetMoveId": "pro-null-set-causation-01",
+            "text": "Whether the null-set analogy fails because abstract mathematics lacks causal power and presupposes conceptual structure.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The historical and methodological criticism of religion is issue-bearing contrary material, but it does not contact the immediately available mathematical-causation challenge.",
+        "responsivenessWithinClass": {
+          "value": 61,
+          "rationale": "It is relevant to the broader worldview dispute but leaves the selected move's decisive objections unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "materially-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The science-versus-religion contrast is clear, but 'religion,' 'objective evidence,' and subjective hallucination are sweeping unstable categories."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The historical narrative is presented categorically without qualifications for diverse religious claims or limits of collective inquiry."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Religious traditions may contain philosophical and historical arguments rather than serving only as primitive demon or angel explanations.",
+        "decisiveQualification": "Their historical origin does not determine whether particular claims now possess independent evidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 57,
+          "rationale": "Scientific collaboration can improve inquiry, but the developmental history does not logically establish that all religious explanation is false."
+        },
+        "evidenceWarrant": {
+          "value": 52,
+          "rationale": "The move offers a broad historical assertion and contrast without representative evidence or examination of counterexamples."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central burden requiring objective evidence beyond inherited religious authority and subjective experience."
+        },
+        "representationalCharity": {
+          "value": 42,
+          "rationale": "The primitive-framework and hallucination framing grossly compresses the strongest evidential form of the opposing position."
+        }
+      },
+      "evidenceBasis": "Atkins characterizes demons and angels as primitive explanatory stages and contrasts them with collective inquiry built on objective evidence rather than subjective hallucination.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-emergent-laws-01",
+      "sectionId": "section-cosmos-laws",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "constructive",
+      "proposition": "Natural laws are human summaries of regularities that can emerge from entities' uncontrolled physical behavior without a divine lawgiver.",
+      "sourceSpan": {
+        "startEvent": 1558,
+        "endEvent": 1652
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator names Professor Atkins, and the ensuing uninterrupted explanation consistently presents his descriptive account of physical laws.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-human-law-description"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "As a constructive, the move explains perceived laws as human summaries arising from unconstrained physical behavior, using light propagation as its illustrative mechanism.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "It provides a concrete explanatory example, though the inference from one optical description to all natural laws is compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The descriptive-law thesis is recoverable, but 'lawlessness,' 'chaos,' and emergence shift between rhetoric and technical explanation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The light example supports a descriptive point, but the broader generalization that laws emerge from chaos exceeds that illustration."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A theist may treat laws as descriptions while still asking why stable regularities and entities exist.",
+        "decisiveQualification": "Showing that laws are not commands does not eliminate the separate explanatory question about regularity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The distinction between behavior and human description is coherent, with a material scope bridge from optics to natural law generally."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "A specific light example supports the account, but no wider evidence shows that all relevant regularities emerge similarly."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly and strongly supports the subsidiary human-law-description bridge."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The move fairly contests a literal lawgiver inference but only implicitly acknowledges the stronger regularity question."
+        }
+      },
+      "evidenceBasis": "Atkins says light propagates without obeying a command, humans summarize the observed pattern as a law, and perceived law can emerge from uncontrolled behavior.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-resurrection-history-01",
+      "sectionId": "section-christian-evidence",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "constructive",
+      "proposition": "The rise of Christianity and the empty tomb are historical facts requiring explanation and support serious consideration of the resurrection.",
+      "sourceSpan": {
+        "startEvent": 1744,
+        "endEvent": 1763
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The alternating exchange clearly assigns the historical defense to Lennox after Atkins dismisses the resurrection as unsupported.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-christian-connection"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "As a constructive, the move identifies the rise of Christianity and empty tomb as facts needing explanation and invokes skeptical converts as support for serious resurrection inquiry.",
+        "responsivenessWithinClass": {
+          "value": 66,
+          "rationale": "It states historically relevant considerations, but documentation and comparative evaluation of alternative explanations are notably compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The evidential proposal is clear, but 'historical facts' and the evidential significance of skeptical conversion need tighter qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is framed as requiring explanation rather than proof, though conversion after study is treated too readily as evidential support."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The empty-tomb tradition and church growth may admit multiple natural historical explanations.",
+        "decisiveQualification": "The number of possible alternatives does not decide among them; their evidence and comparative likelihood must be assessed."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The facts-if-established can support inquiry, but the bridge from explanatory need to resurrection plausibility remains materially incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "No sources, independence analysis, or comparative historical testing appear; unnamed skeptical conversions function largely as authority evidence."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central Christian-connection bridge with an explicitly historical claim."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "The move acknowledges alternative explanations but answers them mainly through an appeal to unnamed skeptical investigators."
+        }
+      },
+      "evidenceBasis": "Lennox cites the rise of the church and empty tomb, acknowledges alternative explanations, and says some skeptical investigators accepted resurrection after studying the evidence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-evolved-morality-01",
+      "sectionId": "section-morality-afterlife",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "constructive",
+      "proposition": "Morality can rest on evolved social dispositions and reflective assessment of actions and their consequences rather than divine authority.",
+      "sourceSpan": {
+        "startEvent": 2365,
+        "endEvent": 2482
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Atkins answers successive morality questions continuously, explicitly identifying the foundations he accepts for an atheistic moral outlook.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-moral-naturalism"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "As a constructive, the move grounds morality in evolved social dispositions plus reflective consideration of consequences, directly supplying the naturalist route's moral account.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "It clearly supplies both biological and reflective components, while leaving norm selection and conflict resolution underdeveloped."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The two-part account is recoverable and explicitly presented as the speaker's view of how morality should be interpreted."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker presents a plausible naturalistic account with personal qualification rather than claiming a demonstrated exhaustive foundation."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "Evolution and reflection can coherently explain moral conduct, with one important bridge from consequences to normative standards left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The account is plausible and specific but offers no empirical examples or defense of why selected consequences generate obligations."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly fulfills the central moral-naturalism burden by naming evolved dispositions and consequence-sensitive reflection."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "This constructive develops its own moral account without materially characterizing a live opposing alternative."
+        }
+      },
+      "evidenceBasis": "Atkins attributes social morality to evolution and argues that evolved brains permit reflection on consequences, combining inherited dispositions with deliberation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-afterlife-evidence-01",
+      "sectionId": "section-morality-afterlife",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "reply",
+      "proposition": "Mental and spiritual experience depends on physiological brain processes, leaving belief in an afterlife unsupported wishful thinking.",
+      "sourceSpan": {
+        "startEvent": 2500,
+        "endEvent": 2567
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted first-person answer follows a question explicitly directed to the atheist participant and expresses Atkins's characteristic naturalist position.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-christian-connection"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-resurrection-history-01"
+        ],
+        "components": [
+          {
+            "componentId": "con-afterlife-evidence-01-component-01",
+            "targetMoveId": "pro-resurrection-history-01",
+            "text": "Whether the historical rise of Christianity and empty-tomb evidence support serious consideration of resurrection.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The physiology-based denial of an afterlife is relevant contrary material, but it does not examine the earlier historical evidence or its competing explanations.",
+        "responsivenessWithinClass": {
+          "value": 67,
+          "rationale": "It strongly bears on the conclusion yet leaves the selected move's decisive historical premises and inference uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The brain-dependence proposition is clear, but the jump from ordinary mental dependence to every possible afterlife is too broadly scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical 'brain gone' conclusion and wishful-thinking label exceed the physiological observations supplied in the excerpt."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An afterlife claimant may accept present brain dependence while proposing resurrection or postmortem reconstitution rather than an independently functioning current soul.",
+        "decisiveQualification": "Evidence of present dependence does not alone exclude every model of divine restoration after death."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 64,
+          "rationale": "Brain dependence supports a naturalistic inference, but dependence during life does not deductively establish impossibility of postmortem restoration."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "Physiological dependence is relevant evidence, yet no representative studies or engagement with historical resurrection evidence are given."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central Christian-evidence bridge by denying evidential support for survival or resurrection."
+        },
+        "representationalCharity": {
+          "value": 53,
+          "rationale": "The move treats all afterlife claims as disembodied survival and omits the decisive resurrection qualification."
+        }
+      },
+      "evidenceBasis": "Atkins identifies spiritual experience with physiological brain processes, states that its disappearance follows brain death, and labels afterlife belief wishful thinking.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-religious-conditioning-01",
+      "sectionId": "section-christian-evidence",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "reply",
+      "proposition": "Religious belief may provide comfort, but imposing it on children constrains intellectual freedom and opportunities in their present lives.",
+      "sourceSpan": {
+        "startEvent": 2570,
+        "endEvent": 2608
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage continues the same uninterrupted atheist answer, with stable first-person framing and positions consistently attributable to Peter Atkins.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-religious-evidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-resurrection-history-01"
+        ],
+        "components": [
+          {
+            "componentId": "con-religious-conditioning-01-component-01",
+            "targetMoveId": "pro-resurrection-history-01",
+            "text": "Whether historical considerations concerning Christianity and the empty tomb support resurrection.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The conditioning critique bears on religious belief formation and authority but does not contact the historical premises or inference in the available earlier opposing move.",
+        "responsivenessWithinClass": {
+          "value": 62,
+          "rationale": "It is relevant to epistemic reliability generally, while remaining a nonanswer to the selected historical-evidence demand."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The child-conditioning concern is clear, but 'bludgeoned' and institutional religion cover diverse practices without stable limits."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker concedes possible comfort, but the sweeping constraint-on-opportunity claim receives little evidential development."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Parents may transmit religious commitments while permitting later inquiry, as they transmit other substantive cultural and moral beliefs.",
+        "decisiveQualification": "Influence and early instruction do not necessarily amount to coercion or eliminate intellectual freedom."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "Coercive conditioning can constrain freedom, but the move does not establish that institutional religious formation generally has that character."
+        },
+        "evidenceWarrant": {
+          "value": 57,
+          "rationale": "Comfort and conditioning are asserted through analogy to placebo without representative evidence about effects on children's opportunities."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It supports the central demand for evidence independent of inherited authority and psychological comfort."
+        },
+        "representationalCharity": {
+          "value": 57,
+          "rationale": "The 'bludgeoned' framing materially weakens benign and inquiry-permitting forms of religious upbringing."
+        }
+      },
+      "evidenceBasis": "Atkins concedes that belief may comfort the bereaved, compares that comfort to a placebo, and describes childhood religious formation as constraining a life still ahead.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-fine-tuning-01",
+      "sectionId": "section-cosmos-laws",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "constructive",
+      "proposition": "The extreme fine-tuning of cosmic conditions and constants for carbon-based life is evidence relevant to an inference of design.",
+      "sourceSpan": {
+        "startEvent": 2670,
+        "endEvent": 2716
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer is explicitly framed in the first person by the continuing Christian speaker and draws on Lennox's mathematical and cosmological argumentation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-cosmic-conditions"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "As a constructive, the move presents extreme life-permitting parameter sensitivity as evidence relevant to design and identifies carbon-based life's possibility as the explanandum.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "It states a pertinent probabilistic indicator, but the numerical basis and alternative hypotheses are absent from the selected span."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The fine-tuning claim is clear, though 'extreme' and the relevant probability space are not specified within the excerpt."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Calling design evidence overwhelming exceeds the excerpt's undeveloped numerical reference and lack of rival-hypothesis comparison."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "Life-permitting sensitivity can be evidentially relevant, but probability measures and the comparative design inference remain materially implicit."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The move gestures to an enormous number and cites Paul Davies, but does not document the calculation or assess selection effects and rivals."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly and strongly supports the subsidiary cosmic-conditions bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The span advances design evidence without discussing a developed naturalistic alternative."
+        }
+      },
+      "evidenceBasis": "Lennox refers to an extraordinarily large fine-tuning number, invokes Paul Davies's judgment, and connects the special conditions to the existence of carbon-based life.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-information-origin-01",
+      "sectionId": "section-life-information",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Natural processes can transmit biological information, but their production of symbolic information has not been shown, making intelligence relevant to its origin.",
+      "sourceSpan": {
+        "startEvent": 2910,
+        "endEvent": 2985
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The first-person argument continues under Lennox's established turn and explicitly connects information theory, DNA, intelligence, and the Christian doctrine of the Word.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-life-information"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-information-structure-01",
+          "con-selection-complexity-01"
+        ],
+        "components": [
+          {
+            "componentId": "pro-information-origin-01-component-01",
+            "targetMoveId": "con-information-structure-01",
+            "text": "Whether unguided natural processes can originate, rather than merely transmit, symbolic biological information.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-information-origin-01-component-02",
+            "targetMoveId": "con-information-structure-01",
+            "text": "Whether symbols carrying meaning warrant an inference to an intelligent source.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-information-origin-01-component-03",
+            "targetMoveId": "con-selection-complexity-01",
+            "text": "Whether selection after replication explains the production of the original information-bearing system.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly distinguishes transmission from production and narrows information to symbols carrying meaning, thereby contacting the earlier broad-information and selection accounts.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly reaches the decisive origin and semantic components, although its intelligence analogy is not fully defended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The production-transmission distinction and semantic target are stable, but 'natural processes' is scoped too universally for the evidence given."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical claim that natural processes do not produce information is much stronger than the stated intellectual difficulty and page-word analogy warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Natural processes may generate functional sequence information through variation, selection, self-organization, and chemical constraints without foresight.",
+        "decisiveQualification": "Human language reliably signals agency, but the analogy does not establish identical causal origins for biochemical coding."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The distinction is useful, but the move generalizes from human symbols to DNA without fully establishing equivalence or excluding natural production."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "The common word-on-page analogy is intuitive but cannot substitute for empirical comparison of biochemical origin mechanisms."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central life-information burden and answers the naturalistic transmission account."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The move sharpens the disputed information type but underdevelops the strongest evolutionary and chemical alternative."
+        }
+      },
+      "evidenceBasis": "Lennox distinguishes natural transmission from production, defines the relevant semiotic dimension as symbols carrying meaning, and analogizes immediate inference from a written word to intelligent origin.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-objective-morality-01",
+      "sectionId": "section-morality-afterlife",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Atheistic naturalism cannot consistently sustain moral responsibility if reality contains no objective good or evil and behavior is only DNA's working.",
+      "sourceSpan": {
+        "startEvent": 3394,
+        "endEvent": 3442
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "A question is followed by an extended first-person answer whose references to Lennox's debates and characteristic theistic position identify him clearly.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-moral-naturalism"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-evolved-morality-01"
+        ],
+        "components": [
+          {
+            "componentId": "pro-objective-morality-01-component-01",
+            "targetMoveId": "con-evolved-morality-01",
+            "text": "Whether evolved dispositions and consequence reflection can ground moral responsibility and objective criticism.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-objective-morality-01-component-02",
+            "targetMoveId": "con-evolved-morality-01",
+            "text": "Whether describing behavior as evolutionary output supplies a normative basis for good and evil.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges the normative foundation of the evolved account by asking what objective standard supports moral criticism and responsibility under naturalism.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It contacts the decisive grounding issue explicitly, though it does not examine consequence-based norm construction in detail."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The grounding challenge is recoverable, but objective good, responsibility, and DNA's working require sharper distinctions."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The inconsistency claim is stronger than the excerpt's unanswered foundation question, especially without ruling out secular realism or constructivism."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An atheist may accept objective moral reasons, constructivist norms, or responsibility-compatible causal determination without divine authority.",
+        "decisiveQualification": "Naturalism alone does not entail that moral language reduces exhaustively to DNA's behavior."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "The is-to-ought challenge is legitimate, but the move assumes rather than proves that all atheistic accounts collapse into DNA determinism."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "It presents conceptual questions and examples but offers no argument excluding secular objective or responsibility-compatible theories."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central moral-naturalism bridge at its normative and responsibility foundation."
+        },
+        "representationalCharity": {
+          "value": 59,
+          "rationale": "The reply identifies a real grounding demand but materially narrows atheistic options to reductive genetic determinism."
+        }
+      },
+      "evidenceBasis": "Lennox asks what basis permits atheistic moral criticism, argues that calling something evil presupposes good, and challenges responsibility if conduct is only DNA's operation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-moral-foundation-01",
+      "sectionId": "section-morality-afterlife",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Atheists can behave morally, but atheism itself lacks a rational foundation for morality and ultimate justice.",
+      "sourceSpan": {
+        "startEvent": 3445,
+        "endEvent": 3494
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer explicitly states a Christian expectation, refers to the speaker's atheist friends, and recounts his exchanges with Dawkins, securely indicating Lennox.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-moral-personal"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-evolved-morality-01"
+        ],
+        "components": [
+          {
+            "componentId": "pro-moral-foundation-01-component-01",
+            "targetMoveId": "con-evolved-morality-01",
+            "text": "Whether an evolutionary and consequential account provides rational justification for morality rather than merely explaining moral behavior.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-moral-foundation-01-component-02",
+            "targetMoveId": "con-evolved-morality-01",
+            "text": "Whether observed atheist moral conduct answers the deeper question of normative foundation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move explicitly concedes atheist moral behavior and distinguishes it from rational justification, directly contacting the earlier account at its foundational rather than behavioral level.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It accurately isolates and contacts the decisive explanation-versus-justification distinction, though its own theistic foundation is compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between capacity for moral conduct and rational justification is clearly stated with an explicit concession."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move carefully denies a behavioral accusation, but the claim that atheism lacks justification is not fully demonstrated here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Atheists can distinguish evolutionary explanation from philosophical justification and defend secular moral realism or consequence-based norms.",
+        "decisiveQualification": "The fact that evolution influences moral capacities does not show that atheists lack every rational normative foundation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The explanation-justification distinction is strong, with one material gap in moving from a demand for foundation to the absence of secular foundations."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "The concession is well framed, but image-of-God grounding and the asserted failure of atheism are not independently defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central pro moral-personal bridge while challenging the con moral-naturalism account."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The explicit behavioral concession is charitable, but the available secular justificatory alternatives receive no examination."
+        }
+      },
+      "evidenceBasis": "Lennox expressly says atheists can behave morally, attributes universal moral capacity to humans made in God's image, and separates behavior from rational justification within atheism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-general-to-christian-01",
+      "sectionId": "section-christian-evidence",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "constructive",
+      "proposition": "Nature can indicate a creator's existence and power, but full Christian theism requires additional historical, biblical, experiential, and personal evidence.",
+      "sourceSpan": {
+        "startEvent": 3605,
+        "endEvent": 3652
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer cites the New Testament, openly identifies the speaker as Christian, and describes his own evidential commitments in a continuous Lennox turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-cumulative-theism"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "As a constructive, the move carefully limits natural evidence to a creator pointer and identifies historical, biblical, experiential, and personal evidence as necessary for the Christian connection.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It supplies the essential route architecture and an important limitation, though the additional evidence is named rather than developed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The boundary between general creator evidence and specifically Christian evidence is explicit, stable, and central to the proposition."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move presents nature only as a pointer with evidential weight and openly says further sources are required."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The limited general-to-specific structure is coherent and avoids claiming that design evidence alone establishes Christianity."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The needed evidence categories are identified, but their content, independence, and comparative force are not developed in this span."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly states the motion-level cumulative completion condition from creator evidence to specifically Christian theism."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The constructive defines its own cumulative route without characterizing a specific opposing alternative."
+        }
+      },
+      "evidenceBasis": "Lennox says nature points only to existence and power, explicitly limits how far that evidence reaches, and calls for additional nonscientific evidence to support a Christian conclusion.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct pro-side debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden-relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "A residual must uniquely change completion of a named bridge without duplicating any move-level assessment.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No qualifying distinct consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any burden-completion judgment beyond matters already captured."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct con-side debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden-relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "A residual must uniquely change completion of a named bridge without duplicating any move-level assessment.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No qualifying distinct consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any burden-completion judgment beyond matters already captured."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

@@ -1,0 +1,1866 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "153",
+  "debateId": "oconnor-carter-free-will-determinism-2024",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-determinist-control",
+      "side": "pro",
+      "description": "Establish that neither determined nor undetermined action gives agents the ultimate authorship required for philosophical free will.",
+      "successCriteria": "Show that actions arise from force or unchosen wants whose causal histories never terminate in self-created control, while explaining practical agency without ultimate desert.",
+      "motionBridge": {
+        "bridgeId": "bridge-pro-motion-no-ultimate-authorship",
+        "tier": "motion",
+        "description": "Connect the absence of control over determining causes and desires to the conclusion that voluntary action lacks ultimate authorship."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-pro-central-determined-or-random",
+          "tier": "central",
+          "description": "Establish that determined events inherit prior causes while undetermined events are uncontrolled, leaving neither branch as agent-authored control."
+        },
+        {
+          "bridgeId": "bridge-pro-central-want-or-force",
+          "tier": "central",
+          "description": "Establish that conduct follows either force or motivating wants and that agents do not independently choose the wants governing action."
+        },
+        {
+          "bridgeId": "bridge-pro-central-source-regress",
+          "tier": "central",
+          "description": "Trace character and choice through upbringing, genetics, circumstances, and dispositions without reaching a self-created source."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-pro-subsidiary-practical-responses",
+          "tier": "subsidiary",
+          "description": "Explain how deterrence, prevention, rehabilitation, and compassion remain available without attributing ultimate moral desert."
+        },
+        {
+          "bridgeId": "bridge-pro-subsidiary-moral-desire",
+          "tier": "subsidiary",
+          "description": "Account for moral motivation and social restraint through causally formed desires rather than an independently chosen will."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-compatibilist-agency",
+      "side": "con",
+      "description": "Establish that determined agents can possess meaningful freedom when conduct belongs to them, is voluntary, and lacks relevant coercive constraints.",
+      "successCriteria": "Show that freedom need not require ultimate self-creation, that voluntary agency admits context-sensitive degrees, and that causal description does not exhaust personal or ethical meaning.",
+      "motionBridge": {
+        "bridgeId": "bridge-con-motion-voluntary-freedom",
+        "tier": "motion",
+        "description": "Connect attributable, voluntary, and substantially unconstrained conduct to a defensible form of freedom despite causal determination."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-con-central-compulsion-distinction",
+          "tier": "central",
+          "description": "Preserve a meaningful distinction between compelled conduct and action attributable to the person as its relevant source."
+        },
+        {
+          "bridgeId": "bridge-con-central-degrees-and-context",
+          "tier": "central",
+          "description": "Explain freedom and its absence through degrees of voluntary control and context-sensitive impediments rather than causation alone."
+        },
+        {
+          "bridgeId": "bridge-con-central-nonreductive-personhood",
+          "tier": "central",
+          "description": "Establish that interpersonal responsibility and first-person agency contain semantic and ethical dimensions not exhausted by third-person causal description."
+        },
+        {
+          "bridgeId": "bridge-con-central-mediopassive-agency",
+          "tier": "central",
+          "description": "Show how action may genuinely belong to a person while also arising through processes that the person did not deliberately manufacture."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-con-subsidiary-dynamic-consciousness",
+          "tier": "subsidiary",
+          "description": "Support the nonreductive account by treating conscious understanding as temporally and socially constituted rather than a static internal object."
+        },
+        {
+          "bridgeId": "bridge-con-subsidiary-normative-meaning",
+          "tier": "subsidiary",
+          "description": "Preserve the richer normative meaning of moral intuition against reduction to psychological or evolutionary causation."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-01-control-dilemma",
+      "title": "Determination, randomness, and ultimate control",
+      "weightPercent": 28,
+      "rationale": "The motion turns first on whether either causal determination or its absence can provide the kind of authorship required for free action."
+    },
+    {
+      "sectionId": "section-02-desires-voluntariness",
+      "title": "Unchosen desires and voluntary action",
+      "weightPercent": 27,
+      "rationale": "This issue determines whether acting from one's own motives is enough for freedom or merely transmits causal factors the agent never selected."
+    },
+    {
+      "sectionId": "section-03-sourcehood-and-perspective",
+      "title": "Causal sourcehood and first-person agency",
+      "weightPercent": 17,
+      "rationale": "The competing routes depend on whether causal histories exhaust agency or leave a first-person and personally attributable dimension of action intact."
+    },
+    {
+      "sectionId": "section-04-responsibility-and-ethical-practice",
+      "title": "Responsibility, desert, and interpersonal ethics",
+      "weightPercent": 16,
+      "rationale": "The consequences of each account depend on whether responsibility requires ultimate desert or can instead operate as a graded interpersonal and ethical practice."
+    },
+    {
+      "sectionId": "section-05-moral-meaning",
+      "title": "Causal explanation and moral meaning",
+      "weightPercent": 12,
+      "rationale": "This issue tests whether a causal account of moral motivation replaces normative agency or can coexist with the richer meanings used in ethical life."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "move-pro-01-control-dilemma",
+      "sectionId": "section-01-control-dilemma",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "Free will requires genuine authorship and an ability to have acted differently, but neither randomness nor determination supplies the agent with the required control.",
+      "sourceSpan": {
+        "startEvent": 80,
+        "endEvent": 150
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly invites Alex O'Connor to define free will and determinism, and the uninterrupted answer follows that introduction.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-determined-or-random"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "As a constructive opening, it directly establishes the determined-or-random dilemma on which the pro route principally depends.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "The move clearly develops its assigned constructive proposition and central causal dilemma."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The dilemma is recoverable, but genuine authorship and the relevant ability to do otherwise remain only approximately defined."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker acknowledges definitional difficulty, though the sweeping dilemma outruns the excerpt's defense of the required conception of control."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Compatibilist freedom requires attributable voluntary action rather than ultimate self-creation.",
+        "decisiveQualification": "The move must justify why ultimate authorship is necessary for the philosophically relevant freedom."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The dilemma is intelligible, but its conclusion depends on an incompletely defended requirement of ultimate authorship."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Conceptual reasoning supports the two causal branches, while the exclusion of compatibilist control remains compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, this is the foundational statement of the determined-or-random bridge."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The opening anticipates randomness but does not yet engage the strongest compatibilist account of attributable voluntary agency."
+        }
+      },
+      "evidenceBasis": "The excerpt defines free will through doing otherwise and contrasts reason-governed events with allegedly uncontrolled random events.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-03-causal-regress-of-desire",
+      "sectionId": "section-02-desires-voluntariness",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "Every mental choice or desire is either uncontrolled randomness or part of a causal chain extending beyond the agent, so no such event provides ultimate control.",
+      "sourceSpan": {
+        "startEvent": 151,
+        "endEvent": 201
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This passage continues Alex O'Connor's explicitly introduced opening answer without any intervening speaker transition or redirection.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-want-or-force"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "As a constructive move, it applies the causal dilemma specifically to desires and choices, directly advancing the want-or-force route.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "The move closely matches its constructive proposition and supplies the intended regress."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The regress is clear, but the universal claim about every mental event lacks an express scope qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical exhaustiveness claim is stronger than the excerpt's compressed treatment of agent-level causal organization warrants."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A determined desire may still be the agent's desire and support reasons-responsive control.",
+        "decisiveQualification": "Causal dependence alone does not establish the absence of every relevant form of control."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The regress follows if ultimate origination is required, but that requirement remains a material implicit bridge."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The mental-event example illustrates the regress, although no independent support excludes emergent or reasons-responsive control."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "Within the central tier, the move directly supplies the pro route's causal account of governing wants."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The move presents the regress forcefully but does not address the strongest distinction between ultimate sourcehood and attributable control."
+        }
+      },
+      "evidenceBasis": "The excerpt says a desire is either random and uncontrolled or determined by another event in a continuing causal chain.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-01-attributable-causation",
+      "sectionId": "section-01-control-dilemma",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "reply",
+      "proposition": "Deterministic causation is compatible with free action because compelled conduct differs meaningfully from voluntary conduct whose cause is attributable to the agent.",
+      "sourceSpan": {
+        "startEvent": 212,
+        "endEvent": 279
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator names Alex Carter, asks him to explain compatibilism, and Carter begins a continuous first-person statement of his position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "bridge-con-motion-voluntary-freedom"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-01-control-dilemma",
+          "move-pro-03-causal-regress-of-desire"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-01-attributable-causation-component-01",
+            "targetMoveId": "move-pro-01-control-dilemma",
+            "text": "Whether deterministic causation itself excludes free action and agent control.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-01-attributable-causation-component-02",
+            "targetMoveId": "move-pro-03-causal-regress-of-desire",
+            "text": "Whether a causally determined mental source can nevertheless be attributable to the person.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly denies that causation defeats freedom by distinguishing compelled action from action whose relevant cause is the agent, contacting both earlier causal demands.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts the decisive inference from causal determination to absence of freedom."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The attributable-cause distinction is clear, though the criterion for designating a cause as myself remains only roughly specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The semantic compatibility claim is appropriately bounded, and the speaker expressly describes self-attribution only in rough terms."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Ultimate authorship, not mere personal attribution, may be required for the disputed philosophical freedom.",
+        "decisiveQualification": "A semantic compulsion distinction does not by itself establish ultimate control over the causes of action."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The compulsion-attribution distinction coherently establishes compatibility, with one bounded gap in the criterion of self-attribution."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The ordinary semantic distinction is relevant support, but the excerpt does not fully defend why attribution suffices philosophically."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "Within the motion tier, the move directly connects voluntary attributable causation to compatibilist freedom."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The reply fairly accepts the causal premise but only partly answers the stronger ultimate-authorship conception advanced by pro."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly contrasts compelled and freely acting conduct and says the latter may be caused when the cause is roughly designated as oneself.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-04-unchosen-wants",
+      "sectionId": "section-02-desires-voluntariness",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Agents may act as they want but cannot simply choose what they want, while action produced by force is plainly uncontrolled.",
+      "sourceSpan": {
+        "startEvent": 666,
+        "endEvent": 716
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is the concluding portion of O'Connor's uninterrupted answer, marked by his restatement of the dichotomy and final summary before the program break.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-want-or-force"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-01-attributable-causation"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-04-unchosen-wants-component-01",
+            "targetMoveId": "move-con-01-attributable-causation",
+            "text": "Whether action attributable to one's own wants is sufficient for meaningful free agency.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move answers attributable causation by arguing that ownership of action cannot establish control when the motivating wants themselves are not chosen.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It explicitly targets the decisive sufficiency claim behind the compatibilist attribution account."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The want-or-force dichotomy is clear, but its universal scope and meaning of control receive no express qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The inability simply to select wants supports the point, but the categorical conclusion assumes that freedom requires control over wanting."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Freedom may consist in acting from one's own reasons-responsive wants without choosing those wants.",
+        "decisiveQualification": "The reply must show why freedom requires prior choice or control of the motivating desire."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The inference is coherent under an ultimate-control standard, but that standard remains the decisive underdefended bridge."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The suffering example supports limited voluntary control over wants, though it does not establish the universal conclusion alone."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "Within the central tier, the move directly develops the want-or-force bridge against attributable causation."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "It squarely challenges desire ownership but does not fully engage the strongest hierarchical or reasons-responsive compatibilist alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt says choices arise from force or wants, force defeats control, and people cannot simply choose the wants motivating them.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-03-degrees-of-voluntariness",
+      "sectionId": "section-02-desires-voluntariness",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "reply",
+      "proposition": "Ordinary freedom concerns meaningful practices, absent constraints, and degrees of voluntary control rather than an abstract demand that desires themselves be chosen.",
+      "sourceSpan": {
+        "startEvent": 800,
+        "endEvent": 899
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator's question is followed by a response explicitly linking back to O'Connor, and the content and program framing identify the responding compatibilist as Carter.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-degrees-and-context"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-04-unchosen-wants",
+          "move-pro-03-causal-regress-of-desire"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-03-degrees-of-voluntariness-component-01",
+            "targetMoveId": "move-pro-04-unchosen-wants",
+            "text": "Whether unchosen desires eliminate ordinary voluntary control and freedom.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-03-degrees-of-voluntariness-component-02",
+            "targetMoveId": "move-pro-03-causal-regress-of-desire",
+            "text": "Whether causal provenance is the only relevant measure of control.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply replaces the binary focus on chosen desires with graded voluntary capacities and illustrates a meaningful difference between suppressible and irresistible conduct.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It contacts the decisive claim that an unchosen desire cannot support meaningful control."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Degrees of freedom and voluntary control are consistently used, with the ordinary-practice limitation reasonably implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The illustrative conclusion is proportionate: it establishes a meaningful graded distinction rather than disproving all ultimate-authorship concerns."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Graded behavioral control may exist even if ultimate authorship does not.",
+        "decisiveQualification": "The examples establish ordinary voluntariness but do not answer the separate demand for ultimate sourcehood."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The contrast between a suppressible sneeze and an uncontrollable tic gives a coherent basis for graded voluntariness."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "Concrete contrasting examples support the distinction, though their generalization to full freedom remains somewhat compressed."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "Within the central tier, the move directly establishes degrees and context as the relevant compatibilist framework."
+        },
+        "representationalCharity": {
+          "value": 83,
+          "rationale": "The reply fairly reframes the practical conception while leaving the metaphysical conception's independent significance visible."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts stifling a sneeze with inability to stop a Tourette tic to distinguish voluntary from involuntary conduct.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-04-undeliberated-voluntary-action",
+      "sectionId": "section-02-desires-voluntariness",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "reply",
+      "proposition": "Freedom admits degrees, and ordinary voluntary actions can belong to an agent without arising from conscious deliberation or an explicitly willed decision.",
+      "sourceSpan": {
+        "startEvent": 860,
+        "endEvent": 944
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted turn follows Carter's distinctive Wittgenstein-based account and ends when the host addresses the opposing speaker.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-mediopassive-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-04-unchosen-wants",
+          "move-pro-03-causal-regress-of-desire"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-04-undeliberated-voluntary-action-component-01",
+            "targetMoveId": "move-pro-04-unchosen-wants",
+            "text": "Whether action must arise from a deliberately chosen want to belong freely to an agent.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-04-undeliberated-voluntary-action-component-02",
+            "targetMoveId": "move-pro-03-causal-regress-of-desire",
+            "text": "Whether lack of deliberate manufacture deprives an action of agent ownership.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the demand for chosen wants by distinguishing deliberate manufacture from the ordinary voluntary capacities through which action belongs to a person.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It answers the ownership issue, though the selected excerpt overlaps substantially with the graded-voluntariness example."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "partial",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The graded voluntary-action claim is clear, but the excerpt only partially renders the undeliberated-action component of the proposition."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The modest claim that voluntariness need not equal explicit willing fits the illustrative evidence and does not overreach."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Unchosen or undeliberated action can be attributable yet still lack ultimate authorship.",
+        "decisiveQualification": "Attributability answers an ordinary agency question, not necessarily the ultimate-source question."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The distinction between deliberate decision and voluntary capacity is coherent, though the excerpt's bridge is partly implicit."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The bodily-control comparison supplies relevant support, but the undeliberated-action generalization is not extensively developed."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "Within the central tier, it materially supports mediopassive ownership, but less directly than the later explicit formulation."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The move preserves the competing metaphysical concern while defending a distinct and recognizable form of voluntary ownership."
+        }
+      },
+      "evidenceBasis": "The evidence distinguishes voluntary and involuntary capacities without making conscious manufacture of the operative desire a prerequisite.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-07-consequentialist-responsibility",
+      "sectionId": "section-04-responsibility-and-ethical-practice",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Rejecting ultimate moral desert still permits preventive, deterrent, and rehabilitative responses to criminal conduct.",
+      "sourceSpan": {
+        "startEvent": 956,
+        "endEvent": 1101
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host directs the responsibility question to O'Connor, whose sustained first-person answer continues until the host changes the subject.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-subsidiary-practical-responses"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-01-attributable-causation",
+          "move-con-03-degrees-of-voluntariness",
+          "move-con-04-undeliberated-voluntary-action"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-07-consequentialist-responsibility-component-01",
+            "targetMoveId": "move-con-01-attributable-causation",
+            "text": "Whether attributable voluntary causation establishes free agency despite determination.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-07-consequentialist-responsibility-component-02",
+            "targetMoveId": "move-con-03-degrees-of-voluntariness",
+            "text": "Whether practical responses require metaphysically ultimate responsibility.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-07-consequentialist-responsibility-component-03",
+            "targetMoveId": "move-con-04-undeliberated-voluntary-action",
+            "text": "Whether undeliberated voluntary ownership itself establishes freedom.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move supplies important contrary material about responsibility practices but does not answer the primary causal-attribution claim; it partially contacts the practical implications of graded agency.",
+        "responsivenessWithinClass": {
+          "value": 65,
+          "rationale": "Within a relevant-nonanswer posture, it strongly bears on consequences while leaving the primary freedom claim unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Preventive, deterrent, and rehabilitative responses are distinctly identified and separated from ultimate desert."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The practical compatibility claim is appropriately limited and supported by an explicit deterrence mechanism."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Responsibility may include interpersonal answerability in addition to deterrence and prevention.",
+        "decisiveQualification": "Showing that consequential practices survive does not exhaust every ethically relevant conception of responsibility."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The inference from behavior-responsive incentives to continuing deterrent practice is clear and internally consistent."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The punishment-and-desire example concretely illustrates deterrence, with rehabilitation and prevention less fully documented."
+        },
+        "relevanceBurden": {
+          "value": 73,
+          "rationale": "Within the subsidiary tier, it directly and substantially completes the practical-responses bridge."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The move successfully preserves practical responses but compresses the strongest nonconsequential interpersonal account."
+        }
+      },
+      "evidenceBasis": "The excerpt explains punishment as increasing a deterrent desire until it outweighs the desire to offend.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-07-interpersonal-responsibility",
+      "sectionId": "section-04-responsibility-and-ethical-practice",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "reply",
+      "proposition": "Responsibility is an ethically indispensable interpersonal practice, and freedom is better understood through nuanced recognition of persons than as an absolute metaphysical possession.",
+      "sourceSpan": {
+        "startEvent": 1116,
+        "endEvent": 1226
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host explicitly invites Carter to answer, and the turn maintains Carter's recurring semantic, ethical, and Wittgensteinian framework throughout.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-nonreductive-personhood"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-07-consequentialist-responsibility",
+          "move-pro-04-unchosen-wants"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-07-interpersonal-responsibility-component-01",
+            "targetMoveId": "move-pro-07-consequentialist-responsibility",
+            "text": "Whether responsibility can be adequately preserved as deterrence, prevention, and rehabilitation without desert.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-07-interpersonal-responsibility-component-02",
+            "targetMoveId": "move-pro-04-unchosen-wants",
+            "text": "Whether unchosen motives exhaust the ethical meaning of treating someone as an agent.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly expands responsibility beyond consequential management by identifying interpersonal recognition and ethical meaning as indispensable dimensions of agency.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It clearly contacts the practical-reduction issue, though the indispensability claim remains more asserted than demonstrated."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The interpersonal thesis is recoverable, but semantic free will and treating a person as a person remain somewhat elastic terms."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The gray-area qualification is explicit, although ethical indispensability receives less argument than the asserted force suggests."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Consequential practices can respect persons without invoking ultimate desert or metaphysical freedom.",
+        "decisiveQualification": "Interpersonal recognition does not by itself prove the compatibilist label of freedom is necessary."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The nonreductive ethical conclusion is intelligible, but the move leaves a material bridge from person-recognition to freedom."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The chair comparison illustrates reduction's cost, while the necessity of responsibility practice remains chiefly asserted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances nonreductive personhood and interpersonal responsibility."
+        },
+        "representationalCharity": {
+          "value": 74,
+          "rationale": "The move enriches the ethical picture but does not fully confront the strongest determinist account of humane person-directed practice."
+        }
+      },
+      "evidenceBasis": "The excerpt locates freedom in ethical and semantic life and contrasts treating another as a person with treating them as an object.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-02-substrate-neutral-dilemma",
+      "sectionId": "section-01-control-dilemma",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Neither God nor an immaterial soul escapes the determined-or-undetermined dilemma, so changing the substrate does not supply free control.",
+      "sourceSpan": {
+        "startEvent": 1229,
+        "endEvent": 1320
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host explicitly turns to O'Connor, and the answer restates his characteristic determined-or-undetermined dilemma before adding an epistemic qualification.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-determined-or-random"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-01-attributable-causation",
+          "move-con-03-degrees-of-voluntariness",
+          "move-con-04-undeliberated-voluntary-action",
+          "move-con-07-interpersonal-responsibility"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-02-substrate-neutral-dilemma-component-01",
+            "targetMoveId": "move-con-01-attributable-causation",
+            "text": "Whether personally attributable causation suffices for compatibilist freedom.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-02-substrate-neutral-dilemma-component-02",
+            "targetMoveId": "move-con-03-degrees-of-voluntariness",
+            "text": "Whether changing from physical to immaterial causation supplies ultimate control.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-02-substrate-neutral-dilemma-component-03",
+            "targetMoveId": "move-con-04-undeliberated-voluntary-action",
+            "text": "Whether undeliberated personal ownership escapes the causal dilemma.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-02-substrate-neutral-dilemma-component-04",
+            "targetMoveId": "move-con-07-interpersonal-responsibility",
+            "text": "Whether semantic and ethical agency depends on a special metaphysical substrate.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move extends pro's causal dilemma to souls and God, but none of the earlier con moves relied on an immaterial substrate, so their decisive compatibilist demands remain uncontacted.",
+        "responsivenessWithinClass": {
+          "value": 58,
+          "rationale": "Within the relevant-nonanswer class, it usefully closes a nearby escape route that the selected con moves did not adopt."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The substrate-neutral claim and determined-or-undetermined structure are clear, with an express epistemic qualification in the span."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The impossibility claim is very strong, though it is qualified epistemically and coherently applies the same dilemma across substrates."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Compatibilism requires no soul or uncaused substrate and locates freedom in attributable voluntary organization.",
+        "decisiveQualification": "Refuting an immaterial escape does not answer substrate-neutral compatibilist agency."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Substrate neutrality follows coherently from the dilemma, conditional on the earlier ultimate-control premise."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The conceptual extension is plausible, but the impossibility conclusion inherits the original argument's underdefended control standard."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "Within the central tier, it reinforces the determined-or-random bridge but adds less against the live compatibilist route."
+        },
+        "representationalCharity": {
+          "value": 63,
+          "rationale": "The move correctly avoids physicalist dependence but targets a weaker alternative than the compatibilism actually presented."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly says neither God nor immaterial entities escape the exhaustive determined-or-not-determined form of the argument.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-08-determinist-compassion",
+      "sectionId": "section-04-responsibility-and-ethical-practice",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "Recognizing that wrongdoers did not control the factors determining their behavior can encourage compassion, forgiveness, and understanding.",
+      "sourceSpan": {
+        "startEvent": 1389,
+        "endEvent": 1406
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host asks O'Connor why the issue matters, and the answer uses his determinist vocabulary before the host thanks him and turns away.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-subsidiary-practical-responses"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "As a constructive practical consequence, it explains how reduced belief in control may encourage charitable treatment without denying protective responses.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "The move clearly develops its assigned compassion proposition, though the causal effect remains tentative."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The practical and probabilistic scope is explicit through repeated use of might rather than a universal behavioral claim."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker appropriately presents compassion as a possible effect rather than an inevitable consequence of determinism."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "Recognizing diminished control can coherently moderate blame, although compassion does not follow by strict necessity."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The everyday examples make the mechanism plausible, but no broader evidence establishes its frequency or durability."
+        },
+        "relevanceBurden": {
+          "value": 71,
+          "rationale": "Within the subsidiary tier, it directly supports compassionate practical responses but is narrower than the full bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No opposing interpretation is required to assess this modest, explicitly conditional practical claim."
+        }
+      },
+      "evidenceBasis": "The excerpt says remembering that a wrongdoer may not control determining factors might make one more charitable and kind.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-08-ethical-tension",
+      "sectionId": "section-04-responsibility-and-ethical-practice",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "constructive",
+      "proposition": "Ethical judgment should preserve tension between responsible choice and helpless determination instead of collapsing human agency into either extreme.",
+      "sourceSpan": {
+        "startEvent": 1407,
+        "endEvent": 1445
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host's transition is followed by Carter's characteristic appeal to Wittgenstein, competing pictures, semantic tension, and resistance to binary answers.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-nonreductive-personhood"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "As a constructive move, it advances nonreductive personhood by asking ethical judgment to retain both choice and causal-constraint pictures.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "The move develops the assigned plural ethical framework, albeit through compressed metaphor."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The plural-picture thesis is recoverable, though picture, tension, and making sense function somewhat metaphorically."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The proposal is presented as an interpretive ethical framework rather than a conclusive metaphysical demonstration."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A determinist can retain multiple ethical perspectives while denying ultimate authorship.",
+        "decisiveQualification": "Plural ethical description does not itself establish that compatibilist freedom is true or indispensable."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Holding complementary perspectives is coherent, though the inference from useful pictures to freedom remains incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The crossroads image illustrates responsible choice, but the normative superiority of maximal picture-retention is lightly defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it materially supports nonreductive personhood while remaining indirect on the motion bridge."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "The move resists a crude helplessness picture but does not show that pro must collapse all practical agency into that extreme."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes ethical life as sustaining multiple intelligible pictures, including the image of a person choosing at a crossroads.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-09-evolved-moral-desire",
+      "sectionId": "section-05-moral-meaning",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "Moral motivation can be explained as an evolved emotional desire that competes with other desires and promotes stable cooperative societies.",
+      "sourceSpan": {
+        "startEvent": 1489,
+        "endEvent": 1555
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host identifies the audience question as directed to O'Connor, and his answer consistently develops an evolutionary desire-based explanation of ethics.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-subsidiary-moral-desire"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "As a constructive move, it supplies a causal account of moral motivation through evolved desires favoring cooperative and stable social behavior.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "The move squarely develops the subsidiary moral-desire proposition with an evolutionary mechanism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The evolutionary thesis is clear and marked as the speaker's view, though societies, organisms, and genes shift explanatory levels."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The account is presented tentatively, but the selected evidence compresses substantial evolutionary and group-cooperation warrants."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Evolutionary origins of moral motivation can coexist with irreducible normative reasons and meanings.",
+        "decisiveQualification": "A causal genealogy does not by itself reduce or debunk the normative content of moral judgment."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "Cooperative selection can coherently explain moral desires, with a bounded ambiguity across genetic and social selection levels."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "The evolutionary narrative is plausible but relies heavily on assertion and lacks comparison with rival explanations."
+        },
+        "relevanceBurden": {
+          "value": 72,
+          "rationale": "Within the subsidiary tier, it directly supplies the pro route's causal account of moral motivation."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The move explains motivational origins plausibly but does not address the strongest coexistence account of causal and normative explanation."
+        }
+      },
+      "evidenceBasis": "The excerpt proposes that genes favored organisms and societies possessing desires against murder because those dispositions promoted stability.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-09-normative-nonreduction",
+      "sectionId": "section-05-moral-meaning",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "reply",
+      "proposition": "Psychological or evolutionary explanation of moral intuition does not eliminate or fully reduce its richer normative meaning.",
+      "sourceSpan": {
+        "startEvent": 1559,
+        "endEvent": 1620
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host names Carter before the response, and Carter explicitly signals disagreement with O'Connor while using examples from moral philosophy and psychology.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-con-subsidiary-normative-meaning"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-09-evolved-moral-desire"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-09-normative-nonreduction-component-01",
+            "targetMoveId": "move-pro-09-evolved-moral-desire",
+            "text": "Whether an evolutionary psychological account fully explains or reduces moral intuition.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly denies the reduction from causal motivation to moral meaning, distinguishing psychological mechanisms from the richer normative concept of intuition.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It explicitly contacts the decisive reduction inference rather than merely offering adjacent moral vocabulary."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Psychological motivation and richer moral intuition are consistently distinguished, and the conclusion is appropriately limited to nonreduction."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker presents concerns and a conceptual distinction rather than claiming certainty that causal explanation is irrelevant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Pro may be explaining moral motivation without claiming to eliminate normative meaning.",
+        "decisiveQualification": "Nonreduction defeats only an exhaustive or debunking interpretation, not the narrower causal account itself."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The distinction between causal explanation and normative meaning is coherent, with one implicit bridge concerning conceptual irreducibility."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "Conceptual contrast supports coexistence, though the richer meaning of moral intuition is asserted more than analyzed."
+        },
+        "relevanceBurden": {
+          "value": 73,
+          "rationale": "Within the subsidiary tier, the move directly and strongly advances the normative-meaning bridge."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply recognizes psychological motivations as legitimate while carefully resisting only their reduction of the richer concept."
+        }
+      },
+      "evidenceBasis": "The excerpt accepts psychological motivations but argues that moral intuition is a richer, different concept not reducible to them.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-05-unchosen-source-regress",
+      "sectionId": "section-03-sourcehood-and-perspective",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Human choices reflect unchosen upbringing, genetics, circumstances, and dispositions, so tracing responsibility backward never reaches a self-created source of agency.",
+      "sourceSpan": {
+        "startEvent": 1682,
+        "endEvent": 1756
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The sustained first-person examples, argumentative continuity, and later self-identification with the Cosmic Skeptic channel identify O'Connor's contribution.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-source-regress"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-01-attributable-causation",
+          "move-con-03-degrees-of-voluntariness",
+          "move-con-04-undeliberated-voluntary-action",
+          "move-con-07-interpersonal-responsibility",
+          "move-con-08-ethical-tension",
+          "move-con-09-normative-nonreduction"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-05-unchosen-source-regress-component-01",
+            "targetMoveId": "move-con-01-attributable-causation",
+            "text": "Whether designating the person as a cause establishes sufficient sourcehood for freedom.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-05-unchosen-source-regress-component-02",
+            "targetMoveId": "move-con-03-degrees-of-voluntariness",
+            "text": "Whether graded control answers the regress through unchosen background conditions.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-05-unchosen-source-regress-component-03",
+            "targetMoveId": "move-con-04-undeliberated-voluntary-action",
+            "text": "Whether personal ownership without deliberate manufacture supplies ultimate sourcehood.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-05-unchosen-source-regress-component-04",
+            "targetMoveId": "move-con-07-interpersonal-responsibility",
+            "text": "Whether interpersonal attribution reaches beyond causal formation of the person.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-05-unchosen-source-regress-component-05",
+            "targetMoveId": "move-con-08-ethical-tension",
+            "text": "Whether plural ethical pictures interrupt the causal source regress.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-05-unchosen-source-regress-component-06",
+            "targetMoveId": "move-con-09-normative-nonreduction",
+            "text": "Whether normative nonreduction establishes self-created causal sourcehood.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges attributable and graded agency by tracing the agent's dispositions through unchosen conditions, but it does not answer the independent semantic and normative claims.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within the partial-answer class, it contacts the decisive causal source components while leaving noncausal ethical components unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The upbringing-and-genetics regress is clear, but the claim about all human behavior and exact duplication is insufficiently qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The universal behavioral claim exceeds what the conformity analogy and counterfactual same-background example can establish."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A person can be a relevant source without being a self-created ultimate source.",
+        "decisiveQualification": "The regress undermines ultimate origination but must separately show that attributable sourcehood is inadequate."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The regress coherently denies self-creation, but the inference to absence of every relevant source equivocates between ultimate and attributable sourcehood."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "Upbringing and genetics are pertinent examples, while the identical-condition counterfactual and universal conclusion remain asserted."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "Within the central tier, this is the route's most direct statement of the unchosen-source regress."
+        },
+        "representationalCharity": {
+          "value": 66,
+          "rationale": "The move strongly presses causal dependence but treats the compatibilist source criterion as if it required self-creation."
+        }
+      },
+      "evidenceBasis": "The excerpt attributes behavior to upbringing, parents, genetics, and environment and invokes a same-conditions counterfactual.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-05-reflexive-first-person-perspective",
+      "sectionId": "section-03-sourcehood-and-perspective",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "reply",
+      "proposition": "A prediction disclosed to a self-aware subject can provoke its own defeat, leaving a first-person perspective not captured by ordinary third-person causal prediction.",
+      "sourceSpan": {
+        "startEvent": 1787,
+        "endEvent": 1824
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage follows Carter's conformity examples and uses his characteristic references to existentialism, Sartre, and the first-person perspective.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-nonreductive-personhood"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-05-unchosen-source-regress",
+          "move-pro-01-control-dilemma",
+          "move-pro-03-causal-regress-of-desire",
+          "move-pro-04-unchosen-wants",
+          "move-pro-07-consequentialist-responsibility",
+          "move-pro-02-substrate-neutral-dilemma",
+          "move-pro-08-determinist-compassion",
+          "move-pro-09-evolved-moral-desire"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-05-reflexive-first-person-perspective-component-01",
+            "targetMoveId": "move-pro-05-unchosen-source-regress",
+            "text": "Whether tracing upbringing, genetics, and dispositions defeats personally attributable agency.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-05-reflexive-first-person-perspective-component-02",
+            "targetMoveId": "move-pro-01-control-dilemma",
+            "text": "Whether self-aware reaction to prediction escapes the determined-or-random dilemma.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-05-reflexive-first-person-perspective-component-03",
+            "targetMoveId": "move-pro-03-causal-regress-of-desire",
+            "text": "Whether reflexive consciousness terminates the causal regress of desire.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-05-reflexive-first-person-perspective-component-04",
+            "targetMoveId": "move-pro-04-unchosen-wants",
+            "text": "Whether awareness supplies control over the wants governing conduct.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-05-reflexive-first-person-perspective-component-05",
+            "targetMoveId": "move-pro-07-consequentialist-responsibility",
+            "text": "Whether first-person recognition adds an interpersonal dimension to responsibility.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-05-reflexive-first-person-perspective-component-06",
+            "targetMoveId": "move-pro-02-substrate-neutral-dilemma",
+            "text": "Whether first-person agency depends on an immaterial substrate.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-05-reflexive-first-person-perspective-component-07",
+            "targetMoveId": "move-pro-08-determinist-compassion",
+            "text": "Whether compassion exhausts the ethical significance of first-person agency.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-05-reflexive-first-person-perspective-component-08",
+            "targetMoveId": "move-pro-09-evolved-moral-desire",
+            "text": "Whether evolutionary explanation exhausts reflexive normative agency.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The first-person perspective is relevant contrary material and supports interpersonal agency, but the selected evidence does not defeat the causal regress or explain how reflexivity escapes it.",
+        "responsivenessWithinClass": {
+          "value": 63,
+          "rationale": "Within the relevant-nonanswer class, it introduces a substantial perspective gap but leaves the primary causal demand intact."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "partial",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The existential first-person theme is visible, but the prediction-defeat proposition is not fully recoverable from the selected excerpt."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker offers possible hope and expressly warns that existentialist arguments may smuggle in metaphysics."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Reflexive responses to predictions can themselves be determined by disclosed information.",
+        "decisiveQualification": "Self-reference complicates prediction without necessarily defeating causal determination."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 70,
+          "rationale": "The first-person concern is intelligible, but the selected evidence leaves the prediction-defeat inference materially incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "Existentialist references frame the issue, while the evidence shown does not substantiate the specific self-defeating-prediction mechanism."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "Within the central tier, it supports nonreductive personhood but only indirectly contacts the active sourcehood dispute."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The move acknowledges metaphysical risk but does not explicitly resolve the strongest determinist interpretation of reflexive behavior."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes existence preceding essence and a first-person existential perspective while warning against hidden metaphysical assumptions.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-02-mediopassive-agency",
+      "sectionId": "section-01-control-dilemma",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "reply",
+      "proposition": "Actions can genuinely belong to a person while also happening to that person, without requiring the person to have deliberately manufactured the underlying thought or desire.",
+      "sourceSpan": {
+        "startEvent": 1825,
+        "endEvent": 1849
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The Greek grammatical concept, marriage example, and Archimedes illustration continue Carter's academically framed response without an apparent speaker interruption.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-mediopassive-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-05-unchosen-source-regress",
+          "move-pro-01-control-dilemma",
+          "move-pro-03-causal-regress-of-desire",
+          "move-pro-04-unchosen-wants",
+          "move-pro-07-consequentialist-responsibility",
+          "move-pro-02-substrate-neutral-dilemma",
+          "move-pro-08-determinist-compassion",
+          "move-pro-09-evolved-moral-desire"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-02-mediopassive-agency-component-01",
+            "targetMoveId": "move-pro-05-unchosen-source-regress",
+            "text": "Whether an action can belong to a person despite unchosen causal formation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-02-mediopassive-agency-component-02",
+            "targetMoveId": "move-pro-01-control-dilemma",
+            "text": "Whether agency requires wholly active manufacture rather than mixed active-passive involvement.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-02-mediopassive-agency-component-03",
+            "targetMoveId": "move-pro-03-causal-regress-of-desire",
+            "text": "Whether an unmanufactured desire can nevertheless participate in genuine personal action.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-02-mediopassive-agency-component-04",
+            "targetMoveId": "move-pro-04-unchosen-wants",
+            "text": "Whether lack of choice over wants precludes ownership of conduct.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-02-mediopassive-agency-component-05",
+            "targetMoveId": "move-pro-07-consequentialist-responsibility",
+            "text": "Whether mixed active-passive agency grounds responsibility beyond pure consequence.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-02-mediopassive-agency-component-06",
+            "targetMoveId": "move-pro-02-substrate-neutral-dilemma",
+            "text": "Whether the agency account depends on changing causal substrate.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-02-mediopassive-agency-component-07",
+            "targetMoveId": "move-pro-08-determinist-compassion",
+            "text": "Whether diminished ultimate control removes all responsible agency.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-02-mediopassive-agency-component-08",
+            "targetMoveId": "move-pro-09-evolved-moral-desire",
+            "text": "Whether causal formation excludes ownership of moral action.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The mediopassive distinction directly answers the assumption that genuine agency must be wholly self-manufactured, while leaving some responsibility and substrate questions outside its scope.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within the partial-answer class, it contacts the decisive ownership premise across several pro regress moves."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Mediopassive agency is explicitly defined through acts simultaneously done by and happening to a person, with ordinary scope implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The grammatical and practical examples support a plausible conceptual category without claiming to settle causal metaphysics conclusively."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An act can belong to someone in an ordinary sense while still lacking ultimate authorship.",
+        "decisiveQualification": "Mediopassive ownership establishes attribution but does not refute the distinct ultimate-source demand."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The active-passive distinction coherently dissolves the assumption that personal action must be wholly manufactured by the person."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Marriage and grammatical examples concretely support the category, though their extension to all voluntary action is compressed."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "Within the central tier, this is the clearest direct support for the mediopassive-agency bridge."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move fairly isolates the precise compatibilist point and need not pretend that ordinary ownership proves ultimate self-creation."
+        }
+      },
+      "evidenceBasis": "The excerpt defines a Greek mediopassive category and uses marriage as something one both does and has done to oneself.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-06-introspective-mechanism-gap",
+      "sectionId": "section-03-sourcehood-and-perspective",
+      "side": "pro",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "A person can move voluntarily while remaining unable to identify how wanting or deciding produces the bodily movement.",
+      "sourceSpan": {
+        "startEvent": 1875,
+        "endEvent": 1921
+      },
+      "attributionConfidence": "medium",
+      "attributionBasis": "The uninterrupted first-person continuation and illustrative style strongly suggest O'Connor, though the transcript contains no explicit name marker at this boundary.",
+      "importance": 1,
+      "burdenContact": null,
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "As a constructive observation, it identifies limited introspective access to bodily initiation, but it does not expressly supply or attack an eligible route requirement.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "The voluntary-movement observation is clear, though its argumentative consequence for the motion remains underdeveloped."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "partial",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The bodily-awareness example is clear, but the selected excerpt only partly recovers the claimed gap between wanting and movement."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The modest introspective observation fits the walking and finger-movement examples and does not assert a stronger causal conclusion."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The observation is coherent, but no explicit inference connects limited mechanism awareness to presence or absence of freedom."
+        },
+        "evidenceWarrant": {
+          "value": 71,
+          "rationale": "Everyday introspection supports the phenomenon, while the broader mechanism claim lacks independent verification in the excerpt."
+        },
+        "relevanceBurden": {
+          "value": 26,
+          "rationale": "Within no exact contact, it is topically relevant to agency but does not reach a stated burden bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move presents an introspective limitation without directly characterizing or attacking a live opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts awareness of walking mechanics with the puzzling immediacy of intentionally moving a finger.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "move-con-06-public-first-consciousness",
+      "sectionId": "section-03-sourcehood-and-perspective",
+      "side": "con",
+      "speaker": "Alex Carter",
+      "moveKind": "reply",
+      "proposition": "Conscious thought is socially and behaviorally constituted before private representation, so reductive inspection cannot isolate it as a discrete internal object.",
+      "sourceSpan": {
+        "startEvent": 1922,
+        "endEvent": 1962
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "A clear conversational handoff introduces Carter's externalist account, followed by his academic examples concerning pain, public thought, and the hard problem.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-con-subsidiary-dynamic-consciousness"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-06-introspective-mechanism-gap",
+          "move-pro-05-unchosen-source-regress",
+          "move-pro-01-control-dilemma",
+          "move-pro-03-causal-regress-of-desire",
+          "move-pro-04-unchosen-wants",
+          "move-pro-07-consequentialist-responsibility",
+          "move-pro-02-substrate-neutral-dilemma",
+          "move-pro-08-determinist-compassion"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-06-public-first-consciousness-component-01",
+            "targetMoveId": "move-pro-06-introspective-mechanism-gap",
+            "text": "Whether inability to introspect the mechanism connecting intention and movement bears against agency.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-06-public-first-consciousness-component-02",
+            "targetMoveId": "move-pro-05-unchosen-source-regress",
+            "text": "Whether socially constituted consciousness defeats the causal source regress.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-06-public-first-consciousness-component-03",
+            "targetMoveId": "move-pro-01-control-dilemma",
+            "text": "Whether public-first thought escapes determination or randomness.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-06-public-first-consciousness-component-04",
+            "targetMoveId": "move-pro-03-causal-regress-of-desire",
+            "text": "Whether social formation supplies ultimate control over desire.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-06-public-first-consciousness-component-05",
+            "targetMoveId": "move-pro-04-unchosen-wants",
+            "text": "Whether public constitution makes wants chosen or controlled.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-06-public-first-consciousness-component-06",
+            "targetMoveId": "move-pro-07-consequentialist-responsibility",
+            "text": "Whether public recognition supports interpersonal responsibility.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-06-public-first-consciousness-component-07",
+            "targetMoveId": "move-pro-02-substrate-neutral-dilemma",
+            "text": "Whether consciousness is a discrete internal substrate capable of escaping the dilemma.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-06-public-first-consciousness-component-08",
+            "targetMoveId": "move-pro-08-determinist-compassion",
+            "text": "Whether public personhood changes the practical case for compassion.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The externalist account challenges private-object models of consciousness but does not answer the primary introspective mechanism gap or the central causal regress demands.",
+        "responsivenessWithinClass": {
+          "value": 64,
+          "rationale": "Within the relevant-nonanswer class, it supplies substantial contrary framing without resolving the selected primary issue."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The public-first feedback-loop thesis is recoverable, though public and private shift between behavioral and epistemic senses."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker marks the claim as an argument, but the pain example alone provides limited support for broad social constitution of thought."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Behavioral expression may publicly evidence consciousness without constituting the private experience itself.",
+        "decisiveQualification": "The pain case must distinguish evidence of experience from metaphysical or semantic constitution of experience."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "The feedback-loop account is intelligible, though the inference from public behavior to constitutive priority leaves a material bridge."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "The congenital-pain example is suggestive but insufficient by itself to establish the broad externalist conclusion."
+        },
+        "relevanceBurden": {
+          "value": 72,
+          "rationale": "Within the subsidiary tier, it directly advances the route's dynamic and socially constituted consciousness bridge."
+        },
+        "representationalCharity": {
+          "value": 71,
+          "rationale": "The move raises a serious externalist alternative but moves quickly from public reaction to public-first constitution."
+        }
+      },
+      "evidenceBasis": "The excerpt uses pain behavior and feedback loops to argue that thought is public before private rather than a discrete inner object.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide pro consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured criterion changes completion of a named pro burden bridge.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "Any cumulative causal-regress effect is already represented in the individual pro move judgments.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance",
+          "importance"
+        ],
+        "counterfactual": "Removing the alleged residual would not alter burden completion beyond the effects already judged move by move."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide con consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured criterion changes completion of a named con burden bridge.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "Any cumulative nonreductive-agency effect is already represented in the individual con move judgments.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance",
+          "importance"
+        ],
+        "counterfactual": "Removing the alleged residual would not alter burden completion beyond the effects already judged move by move."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

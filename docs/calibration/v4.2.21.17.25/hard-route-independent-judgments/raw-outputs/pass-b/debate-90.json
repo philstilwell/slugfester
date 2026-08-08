@@ -1,0 +1,1797 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "90",
+  "debateId": "akin-ehrman-gospels-historically-reliable-2022",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-reliability",
+      "side": "pro",
+      "description": "Establish historical reliability through a cumulative standard that permits ordinary reporting variation while requiring substantial accuracy across the Gospels' claims.",
+      "successCriteria": "Show that verified or conceded claims at several levels outweigh alleged errors and that prominent discrepancies can arise from historically permissible conventions or reconcilable sequences.",
+      "motionBridge": {
+        "bridgeId": "bridge-pro-motion",
+        "tier": "motion",
+        "description": "The Gospels remain historically reliable if their supported historical content is not counterbalanced by established errors."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-pro-cumulative",
+          "tier": "central",
+          "description": "Identify substantial accurate content among major, intermediate, and lesser Gospel claims."
+        },
+        {
+          "bridgeId": "bridge-pro-discrepancies",
+          "tier": "central",
+          "description": "Show that the principal birth and resurrection differences do not negate the shared central claims or require incompatible histories."
+        },
+        {
+          "bridgeId": "bridge-pro-self-presentation",
+          "tier": "central",
+          "description": "Establish a historically supportable continuity between Synoptic material and claims about Jesus' elevated or divine identity."
+        },
+        {
+          "bridgeId": "bridge-pro-transmission",
+          "tier": "central",
+          "description": "Provide a plausible account of how traditions and sources preserved the essential events and teachings reported by the evangelists."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-pro-conventions",
+          "tier": "subsidiary",
+          "description": "Distinguish selection, paraphrase, topical ordering, and approximation from factual contradiction."
+        },
+        {
+          "bridgeId": "bridge-pro-source-proximity",
+          "tier": "subsidiary",
+          "description": "Connect disputed material to eyewitnesses, remembered traditions, or sources close to eyewitness testimony."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-unreliability",
+      "side": "con",
+      "description": "Establish historical unreliability in important respects by locating conflicts or inventions in major narratives and sayings rather than merely peripheral details.",
+      "successCriteria": "Show that major birth, resurrection, and self-presentation material cannot all be historically accurate and that authorial reshaping or unstable transmission explains the divergences.",
+      "motionBridge": {
+        "bridgeId": "bridge-con-motion",
+        "tier": "motion",
+        "description": "The Gospels are historically unreliable in important respects if major reported events or sayings contain unresolved conflicts or nonhistorical material."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-con-birth",
+          "tier": "central",
+          "description": "Demonstrate materially incompatible historical sequences within the canonical birth narratives."
+        },
+        {
+          "bridgeId": "bridge-con-resurrection",
+          "tier": "central",
+          "description": "Demonstrate materially incompatible locations, instructions, or actions within the resurrection narratives."
+        },
+        {
+          "bridgeId": "bridge-con-self-presentation",
+          "tier": "central",
+          "description": "Show that John's divine self-presentation lacks adequate continuity with earlier Synoptic portrayals of Jesus."
+        },
+        {
+          "bridgeId": "bridge-con-composition",
+          "tier": "central",
+          "description": "Connect Gospel divergences to evangelists altering inherited material for distinct theological messages and audiences."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-con-attestation",
+          "tier": "subsidiary",
+          "description": "Assess whether narrow or nonindependent attestation weakens disputed claims."
+        },
+        {
+          "bridgeId": "bridge-con-transmission",
+          "tier": "subsidiary",
+          "description": "Account for how decades of oral transmission and later composition could change reported events or sayings."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-reliability-standard",
+      "title": "Standard and cumulative case for reliability",
+      "weightPercent": 25,
+      "rationale": "The governing definition of historical reliability determines whether conceded accuracy across much of Jesus' life can be outweighed by conflicts involving several major narratives or sayings."
+    },
+    {
+      "sectionId": "section-birth-narratives",
+      "title": "Historical compatibility of the birth narratives",
+      "weightPercent": 18,
+      "rationale": "Matthew and Luke are the canonical sources that narrate Jesus' birth, so the compatibility and provenance of their family movements bear directly on a principal alleged instance of unreliability."
+    },
+    {
+      "sectionId": "section-resurrection-narratives",
+      "title": "Compatibility of the resurrection accounts",
+      "weightPercent": 22,
+      "rationale": "The resurrection is a central Gospel claim, making the chronology and locations of the women's report, appearances, and disciples' movements material to the reliability question."
+    },
+    {
+      "sectionId": "section-self-presentation",
+      "title": "Jesus' self-presentation and divine identity",
+      "weightPercent": 18,
+      "rationale": "Whether John's divine self-identifications preserve Jesus' historical teaching depends partly on whether earlier Synoptic traditions contain comparable claims, directly or indirectly."
+    },
+    {
+      "sectionId": "section-composition-transmission",
+      "title": "Ancient composition and transmission",
+      "weightPercent": 17,
+      "rationale": "The reliability inference depends on whether variation reflects permissible ancient reporting and stable preservation or instead historical invention, changing oral tradition, and message-driven alteration."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "move-con-governing-thesis",
+      "sectionId": "section-reliability-standard",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "Although the Gospels preserve a reliable basic outline of Jesus' life, numerous inconsistencies and nonhistorical accounts make them historically unreliable in important respects.",
+      "sourceSpan": {
+        "startEvent": 129,
+        "endEvent": 169
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly introduces Bart Ehrman's opening statement, and this passage continues uninterrupted within that announced turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "bridge-con-motion"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive states the governing concession and contrary thesis: broad outline reliability can coexist with important historical unreliability where major conflicts or nonhistorical accounts remain.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "As a constructive thesis, it clearly frames the controlling standard and the principal categories of support to follow."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposition and concession are explicit, though “large numbers” and “unreliable” remain somewhat broad until illustrated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The express concession about the basic outline appropriately limits the force of the broader unreliability claim."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Substantial agreement on the basic outline may justify calling the Gospels historically reliable overall.",
+        "decisiveQualification": "The thesis limits its challenge to important respects grounded in alleged major conflicts and nonhistorical material."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The distinction between a reliable outline and unreliability in important respects is coherent and avoids an all-or-nothing inference."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The opening thesis previews concrete categories but does not itself establish their number, importance, or historical status."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly articulates the con motion bridge and the condition under which important unreliability follows."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "It expressly grants the strongest favorable point while explaining why that concession does not settle important disputed content."
+        }
+      },
+      "evidenceBasis": "The excerpt concedes the basic Gospel story while alleging numerous inconsistencies, contradictions, and nonhistorical accounts.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-birth-sequence-conflict",
+      "sectionId": "section-birth-narratives",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "Matthew's and Luke's birth narratives give incompatible accounts of the family's original home, travel, census, flight to Egypt, and eventual settlement in Nazareth.",
+      "sourceSpan": {
+        "startEvent": 256,
+        "endEvent": 436
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This extended comparison occurs continuously during Bart Ehrman's moderator-announced opening statement and follows his own transition to the birth narratives.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-birth"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive supplies a specific birth-narrative chronology conflict, contrasting Luke’s return to Nazareth after the temple presentation with Matthew’s flight to Egypt.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It gives a concrete, temporally framed example central to the birth-narrative route rather than merely asserting divergence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The challenged sequence is recoverable and specific, although the inference assumes each author presents a sufficiently exhaustive itinerary."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The textual juxtaposition is strong, but incompatibility requires defending the assumption that omitted intervals or residences are excluded."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The accounts may select different episodes and permit an unmentioned Egypt interval or more than one residence.",
+        "decisiveQualification": "A reconciliation must still explain Luke’s apparently direct return and Matthew’s distinct home-and-settlement framing without merely adding possibilities."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The chronological comparison supports tension, with one bounded bridge needed from narrative sequence and omission to strict incompatibility."
+        },
+        "evidenceWarrant": {
+          "value": 85,
+          "rationale": "The move cites concrete events and timing, but representative textual details supporting every asserted conflict are compressed."
+        },
+        "relevanceBurden": {
+          "value": 89,
+          "rationale": "It directly supplies the indispensable conflict required by the con birth bridge."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The argument fairly identifies the harmonizing burden, though it does not fully examine selection or dual-residence alternatives."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts Luke’s temple presentation and return to Nazareth forty days after birth with Matthew’s intervening flight to Egypt.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-resurrection-incompatibility",
+      "sectionId": "section-resurrection-narratives",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "The resurrection narratives cannot all be reconciled regarding whether the women reported the empty tomb and whether the disciples remained in Jerusalem or traveled to Galilee.",
+      "sourceSpan": {
+        "startEvent": 438,
+        "endEvent": 522
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage is part of Bart Ehrman's uninterrupted opening statement and is clearly introduced by his transition from the birth accounts to resurrection accounts.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-resurrection"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive identifies two decisive resurrection demands: whether the women reported the tomb and whether the disciples’ post-resurrection destination was Jerusalem or Galilee.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It presents concrete narrative actions and locations that directly instantiate the claimed resurrection incompatibility."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The disputes are clear, but “cannot all be reconciled” depends on whether each narrative is read as exclusive or selective."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The accounts create substantial prima facie tension, while categorical impossibility requires excluding sequential appearances and selective narration."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Appearances could occur first in Jerusalem and later in Galilee, with each Gospel selecting different episodes.",
+        "decisiveQualification": "The reconciliation must accommodate Luke’s stay-in-Jerusalem instruction and the apparent narrative timing, not merely combine all reported events."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The identified differences support conflict, though the inference to impossibility leaves the exclusivity and chronology bridge partly implicit."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "Specific Gospel actions and destinations are compared, but the selected excerpt only partially documents the full Jerusalem-side sequence."
+        },
+        "relevanceBurden": {
+          "value": 89,
+          "rationale": "The move directly advances the central con resurrection bridge with disputed locations, instructions, and actions."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The move exposes the strongest textual pressure on harmonization but states impossibility before fully excluding a multi-stage sequence."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts reporting by the women and the Galilee expectation in Mark and Matthew with the differing Lukan trajectory.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-johannine-discontinuity",
+      "sectionId": "section-self-presentation",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "John's extensive divine self-identification by Jesus is historically doubtful because multiple earlier Synoptic sources do not portray him making comparable claims.",
+      "sourceSpan": {
+        "startEvent": 523,
+        "endEvent": 687
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is the concluding argument of Bart Ehrman's explicitly announced opening statement, ending immediately before applause and the moderator's speaker change.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-self-presentation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive argues from the absence of comparable explicit divine self-identification across several earlier Synoptic source strata to doubt about John’s historical presentation.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It supplies a clear comparative-attestation argument directed to the central self-presentation issue."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The source comparison is recoverable, although “calling himself God” may exclude indirect or differently expressed elevated claims."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Calling the silence odd is appropriately probabilistic, but the argument compresses dependence among sources and genre or thematic selection."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The Synoptics may express Jesus’ divine status indirectly rather than through John’s explicit first-person formulations.",
+        "decisiveQualification": "Indirect elevated claims would weaken a simple silence argument but would not automatically authenticate John’s extensive distinctive speeches."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The evidential-silence inference is coherent but needs fuller treatment of source independence, expected mention, and indirect equivalents."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "Multiple earlier strata are named, but their independence and the absence of comparable material are asserted more than demonstrated here."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "It directly supports the con bridge requiring inadequate continuity between John and earlier Synoptic portrayals."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The argument fairly focuses on comparable self-identification, though its formulation underplays the strongest indirect-continuity case."
+        }
+      },
+      "evidenceBasis": "The excerpt names Mark, Q, M, and L as earlier sources and argues their failure to report comparable divine self-speech is historically significant.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-standard-spectrum",
+      "sectionId": "section-reliability-standard",
+      "side": "pro",
+      "speaker": "Jimmy Akin",
+      "moveKind": "reply",
+      "proposition": "Historical reliability is distinct from inerrancy and may be established through many verified major, intermediate, and lesser claims unless contrary errors outweigh them.",
+      "sourceSpan": {
+        "startEvent": 741,
+        "endEvent": 899
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage continues within Jimmy Akin's moderator-announced opening statement, with consistent first-person framing and no indication of a speaker change.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "bridge-pro-motion"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-governing-thesis"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-standard-spectrum-component-01",
+            "targetMoveId": "move-con-governing-thesis",
+            "text": "Whether important alleged errors outweigh the conceded accurate outline and other verifiable claims.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "Akin justifies evaluating reliability cumulatively rather than equating it with inerrancy, preserving Ehrman’s legitimate error challenge while replacing an undefined global label with a comparative standard.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "The reframe directly addresses the governing inference and supplies a usable replacement criterion, though its weighting rule remains incomplete."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction from inerrancy and the multi-level test are explicit, but “many” and “enough errors” lack a determinate weighting rule."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move proposes rather than proves the standard and expressly permits contrary errors to overturn an initial reliability judgment."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A few major fabrications can defeat reliability despite numerous accurate minor details.",
+        "decisiveQualification": "The proposed standard includes major claims and counterbalancing errors, so it need not count all facts equally."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "Separating reliability from inerrancy and requiring cumulative verification is coherent, with a bounded missing decision rule for counterbalance."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "This move supplies a methodological standard rather than representative verification, leaving its practical application for the next move."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly supports the pro motion condition by specifying how supported content and established errors should be compared."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The reframe preserves the strongest major-error objection, although it does not yet specify how severity and quantity interact."
+        }
+      },
+      "evidenceBasis": "The excerpt defines reliability through verification of many major, intermediate, and lesser claims unless sufficient errors counterbalance them.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-cumulative-balance",
+      "sectionId": "section-reliability-standard",
+      "side": "pro",
+      "speaker": "Jimmy Akin",
+      "moveKind": "reply",
+      "proposition": "The Gospels preserve many accurate lesser details, and the alleged errors presented do not counterbalance the cumulative accuracy of their major, intermediate, and lesser claims.",
+      "sourceSpan": {
+        "startEvent": 1062,
+        "endEvent": 1177
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Akin continues the structured major-intermediate-lesser inventory and closes with an explicit first-person conclusion about historical reliability.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-cumulative"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-governing-thesis"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-cumulative-balance-component-01",
+            "targetMoveId": "move-con-governing-thesis",
+            "text": "Whether the alleged errors are numerous and important enough to defeat the conceded accurate Gospel core.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the governing balance by conceding the alleged errors arguendo, classifying them below the admitted basic story, and invoking cumulative accurate claims as the counterweight.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It answers the comparative demand directly, but the excerpt compresses the inventory and the justification for classifying disputed matters as lesser."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The balance claim and arguendo concession are explicit, though the boundaries among major, intermediate, and lesser claims remain contestable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The concession is well calibrated, but the conclusion outruns the excerpt’s compressed demonstration of the accurate-detail inventory and weighting."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Birth, resurrection, and self-presentation disputes concern major matters rather than merely surrounding details.",
+        "decisiveQualification": "Agreement on top-line events does not by itself establish that conflicting narrative components are historically minor."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "A cumulative balance follows from the stated standard, but the classification of the disputed claims does substantial unargued work."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The move references an earlier structured inventory, yet the selected evidence provides limited representative verification and no explicit weighting method."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "It expressly supports the central pro cumulative bridge by comparing accurate claims against alleged errors."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The move acknowledges Ehrman’s alleged errors but weakens their strongest classification without fully defending why they are intermediate or lesser."
+        }
+      },
+      "evidenceBasis": "The excerpt grants Ehrman’s examples for argument’s sake, invokes his concession about the major story, and classifies his examples as intermediate or lesser.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-major-errors-balance",
+      "sectionId": "section-reliability-standard",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Agreement on many general facts does not establish Gospel reliability because conflicts concerning the virgin birth, resurrection, and Jesus' self-presentation concern major claims.",
+      "sourceSpan": {
+        "startEvent": 1209,
+        "endEvent": 1275
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Bart Ehrman's rebuttal immediately beforehand, and the speaker directly addresses Jimmy Akin by name and summarizes Akin's argument.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-pro-cumulative"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-cumulative-balance",
+          "move-pro-standard-spectrum"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-major-errors-balance-component-01",
+            "targetMoveId": "move-pro-cumulative-balance",
+            "text": "Whether Ehrman’s examples are merely intermediate or lesser and therefore outweighed by cumulative agreement.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-major-errors-balance-component-02",
+            "targetMoveId": "move-pro-standard-spectrum",
+            "text": "How the proposed spectrum should weight errors concerning central narratives and teachings.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Ehrman directly disputes Akin’s classification, identifying virgin birth, resurrection, and Jesus’ teaching about himself as major claims whose conflict cannot be neutralized by numerous general agreements.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "The answer reaches the decisive weighting premise and names the specific disputed subjects claimed to be major."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The classification dispute is explicit and concrete, though “making stuff up” compresses several possible sources of historical error."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The importance classification is well supported, but disagreement between accounts does not without further argument prove deliberate invention."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The Gospels agree on the top-line virgin birth and resurrection claims, with disputes confined to surrounding details.",
+        "decisiveQualification": "Details about occurrence, sequence, location, and self-presentation can themselves be historically major even when a top-line label is shared."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The rebuttal correctly exposes that cumulative counting depends on defensible importance classifications, with only the invention inference underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "It names three central subjects already illustrated, though the short span does not re-establish the underlying conflicts."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "It directly attacks the indispensable pro cumulative bridge by contesting how its principal alleged errors are weighted."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The move accurately targets Akin’s strongest classification and identifies why shared labels may not settle historical importance."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly rejects Akin’s minor-claim classification and identifies virgin birth, resurrection, and Jesus’ self-teaching as major matters.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-shared-resurrection-claim",
+      "sectionId": "section-resurrection-narratives",
+      "side": "pro",
+      "speaker": "Jimmy Akin",
+      "moveKind": "reply",
+      "proposition": "All four Gospels affirm the resurrection, so disagreements about surrounding narrative details do not by themselves negate that shared major claim.",
+      "sourceSpan": {
+        "startEvent": 1477,
+        "endEvent": 1500
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator identifies Jimmy Akin's rebuttal, after which Akin explicitly recounts Bart Ehrman's objections and answers them directly.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-discrepancies"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-resurrection-incompatibility",
+          "move-con-major-errors-balance"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-shared-resurrection-claim-component-01",
+            "targetMoveId": "move-con-resurrection-incompatibility",
+            "text": "Whether narrative differences negate the shared major claim that Jesus was resurrected.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-shared-resurrection-claim-component-02",
+            "targetMoveId": "move-con-major-errors-balance",
+            "text": "Whether resurrection disagreements concern the major claim itself or surrounding matters.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Akin contacts the top-line incompatibility and weighting demands by distinguishing unanimous resurrection affirmation from disagreements over accompanying sequence, location, or reporting details.",
+        "responsivenessWithinClass": {
+          "value": 75,
+          "rationale": "It answers the consequence and classification arguments but does not resolve the specific Jerusalem-Galilee or women-reporting conflicts."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The limited proposition is clear: shared affirmation survives differences, without claiming that every surrounding report is accurate."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Shared affirmation does preserve one claim, but saying differences therefore must be lesser assumes a debatable hierarchy of historical importance."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Conflicting locations and instructions may be major historical defects even if every Gospel affirms resurrection.",
+        "decisiveQualification": "Agreement on resurrection establishes convergence only on the top-line claim, not accuracy of each narrative account."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The shared-core inference is valid within its scope, but the move does not justify the further claim that all disagreements are minor."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Unanimous Gospel affirmation is specifically stated, while the historical independence and evidential value of that agreement remain unaddressed."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "It directly supports the central pro discrepancy bridge by preserving the shared resurrection claim despite narrative variation."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The response acknowledges differences but materially compresses the strongest objection by treating all surrounding matters as necessarily lesser."
+        }
+      },
+      "evidenceBasis": "The excerpt states that all four Gospels affirm resurrection and classifies their differences as below the top-line major claim.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-gist-approximation",
+      "sectionId": "section-composition-transmission",
+      "side": "pro",
+      "speaker": "Jimmy Akin",
+      "moveKind": "reply",
+      "proposition": "Ancient Gospel accounts ordinarily convey an accurate gist with approximate details, so evaluating them as if they promised modern precision can generate false contradictions.",
+      "sourceSpan": {
+        "startEvent": 1647,
+        "endEvent": 1719
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Jimmy Akin continues his rebuttal with an extended approximation analogy and explicitly applies the resulting gist principle to the evangelists.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-conventions"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-governing-thesis"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-gist-approximation-component-01",
+            "targetMoveId": "move-con-governing-thesis",
+            "text": "Whether the specific alleged inconsistencies and nonhistorical accounts are substantial enough to establish unreliability.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move offers relevant contrary material about ancient precision and gist, but it does not apply that convention to a particular alleged conflict or show that the challenged birth, resurrection, or self-presentation differences are approximations.",
+        "responsivenessWithinClass": {
+          "value": 64,
+          "rationale": "It is a strong relevant nonanswer because it supplies a potentially important convention without contacting the thesis’s decisive examples."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The gist principle is clear, but “accurate gist” and the range of details legitimately treated as approximate are left broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Ancient approximation is plausible, but the move generalizes from cultural expectations without establishing its application to the disputed passages."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Some Gospel differences concern incompatible events or instructions, not merely numerical or verbal precision.",
+        "decisiveQualification": "A convention defense must identify what each evangelist intended to approximate and why the shared gist remains accurate."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The principle coherently distinguishes approximation from error, while its relevance to the selected disputes requires an unstated application bridge."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The cultural contrast and analogy are suggestive but do not provide representative ancient examples or a defended boundary for permissible approximation."
+        },
+        "relevanceBurden": {
+          "value": 72,
+          "rationale": "Within the subsidiary conventions tier, it strongly advances the distinction between approximate reporting and factual contradiction."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The warning against modern precision is fair, but the strongest conflict argument is weakened by grouping unlike discrepancies under approximation."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts modern transcript-level expectations with evangelists’ intended gist accounts and different levels of approximation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-dual-residence-reconciliation",
+      "sectionId": "section-birth-narratives",
+      "side": "pro",
+      "speaker": "Jimmy Akin",
+      "moveKind": "reply",
+      "proposition": "The birth accounts can be reconciled if Joseph had connections or property in Bethlehem while living and working in Nazareth before the family's later return there.",
+      "sourceSpan": {
+        "startEvent": 1806,
+        "endEvent": 1853
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is Akin's direct answer during Ehrman's cross-examination, with the alternating questions and responses clearly identifying the speaker.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-birth"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-birth-sequence-conflict"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-dual-residence-reconciliation-component-01",
+            "targetMoveId": "move-con-birth-sequence-conflict",
+            "text": "Whether Matthew and Luke require incompatible original homes and movements for Joseph’s family.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The proposed Bethlehem family property and Nazareth work residence directly contacts the home-and-movement component by supplying a scenario under which both narrative framings could be true.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "It contacts a decisive component and establishes logical compatibility, but does not answer the census, Egypt, forty-day return, or settlement-sequence demands."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The reconciliation is specific and repeatedly framed as Akin’s historical proposal rather than a fact established by the texts."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speculative dual-residence hypothesis is presented cautiously enough for its limited compatibility purpose."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Joseph’s economic status and the narrative framing make ownership or maintenance of two residences historically unlikely.",
+        "decisiveQualification": "Logical possibility does not establish historical probability without textual or socioeconomic support for the second residence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The scenario is internally coherent and defeats a simple exclusive-home inference, while leaving other chronological conflicts untouched."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "Bethlehem family property and dual residence are speculative additions with little source support in the selected span."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central con birth bridge, but only through one component of the broader claimed incompatibility."
+        },
+        "representationalCharity": {
+          "value": 83,
+          "rationale": "The move offers a concrete reconciliation but does not pretend that the proposed property arrangement is textually demonstrated."
+        }
+      },
+      "evidenceBasis": "The excerpt proposes that Joseph retained a share in Bethlehem family property while moving to Nazareth for work and maintaining connections to both places.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-dual-residence-objection",
+      "sectionId": "section-birth-narratives",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "A lower-class manual laborer in first-century Palestine would be unlikely to maintain residences in both Bethlehem and Nazareth, making that reconciliation historically implausible.",
+      "sourceSpan": {
+        "startEvent": 1855,
+        "endEvent": 1869
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage follows Akin's answer and uses first-person evaluation and a new question in Ehrman's established cross-examination turn.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-birth"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-dual-residence-reconciliation"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-dual-residence-objection-component-01",
+            "targetMoveId": "move-pro-dual-residence-reconciliation",
+            "text": "Whether a low-income manual laborer plausibly maintained property or residences in both Bethlehem and Nazareth.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Ehrman directly challenges the historical probability of Akin’s reconciliation by connecting Joseph’s described occupation to hand-to-mouth economic conditions inconsistent with multiple residences.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "The response targets the hypothesis’s principal unstated socioeconomic premise with directly contrary historical context."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The economic objection is clear, though it moves from a general class pattern to Joseph’s individual circumstances without an explicit exception caveat."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is appropriately one of improbability rather than impossibility, matching the general socioeconomic evidence invoked."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A family estate share need not imply wealth or two independently maintained, high-value houses.",
+        "decisiveQualification": "Even a modest dual-property scenario needs affirmative evidence when it is introduced to reconcile otherwise divergent narratives."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The economic base-rate evidence is directly relevant to the plausibility of the added dual-residence premise."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "A concrete occupational and economic generalization is supplied, but no study or exception rate is developed in the excerpt."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It supports the central con birth bridge by materially weakening the principal reconciliation offered against it."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The objection addresses the strongest modest version, though its phrase “multiple residences” may overstate what a family share requires."
+        }
+      },
+      "evidenceBasis": "The excerpt describes a tekton as a low-level manual worker in a hand-to-mouth economy where people did not maintain multiple residences.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-location-chronology-conflict",
+      "sectionId": "section-resurrection-narratives",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "The resurrection narratives disagree over whether the disciples remained in Jerusalem or went to Galilee and over where Jesus appeared.",
+      "sourceSpan": {
+        "startEvent": 1988,
+        "endEvent": 1994
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is another clearly framed question from Ehrman within his uninterrupted cross-examination period, directly addressed to Akin.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-resurrection"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-shared-resurrection-claim"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-location-chronology-conflict-component-01",
+            "targetMoveId": "move-pro-shared-resurrection-claim",
+            "text": "Whether shared affirmation of resurrection resolves the concrete conflict over the disciples’ post-resurrection movements.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Ehrman restores the unresolved narrative demand by asking how Luke’s command not to leave Jerusalem and the forty-day setting can coexist with the Galilee trajectory.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "The question directly contacts the omitted chronology component and identifies the precise Lukan constraint requiring an answer."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The short question clearly isolates Luke’s Jerusalem instruction and the alleged duration relevant to the conflict."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "As a pointed question, it appropriately requests reconciliation rather than overstating what the short span independently proves."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The disciples could remain initially in Jerusalem, travel later to Galilee, and return before the ascension.",
+        "decisiveQualification": "The sequence must still fit the wording and temporal scope of Luke’s Jerusalem instruction."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The demand is tightly framed and follows directly from the gap in the shared-core response."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The Lukan instruction and forty-day setting are specifically invoked, though the brief excerpt does not quote or contextualize the full passages."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "It directly supplies the locations-and-instructions conflict required by the central con resurrection bridge."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The question fairly identifies the exact textual constraint a sequential harmonization must address."
+        }
+      },
+      "evidenceBasis": "The excerpt asks whether Luke has the disciples obey Jesus’ instruction not to leave Jerusalem and remain there through the forty-day period.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-jerusalem-galilee-sequence",
+      "sectionId": "section-resurrection-narratives",
+      "side": "pro",
+      "speaker": "Jimmy Akin",
+      "moveKind": "reply",
+      "proposition": "The Jerusalem and Galilee traditions are compatible if appearances occurred first in Jerusalem, later in Galilee, and subsequently again in Jerusalem.",
+      "sourceSpan": {
+        "startEvent": 1995,
+        "endEvent": 2010
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage is Akin's immediate answer to Ehrman's resurrection question and explicitly presents his harmonized reading of Matthew, Luke, and John.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-resurrection"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-location-chronology-conflict",
+          "move-con-resurrection-incompatibility"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-jerusalem-galilee-sequence-component-01",
+            "targetMoveId": "move-con-location-chronology-conflict",
+            "text": "Whether Luke’s Jerusalem material and Matthew’s Galilee material can fit one post-resurrection chronology.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-jerusalem-galilee-sequence-component-02",
+            "targetMoveId": "move-con-resurrection-incompatibility",
+            "text": "Whether the Jerusalem and Galilee appearance traditions require mutually exclusive locations.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Akin answers with a concrete chronology: appearances in Jerusalem on resurrection day and a week later, followed by travel to Galilee, using John to connect the locations.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "The sequence directly reconciles both locations, though it only implicitly answers the scope of Luke’s instruction and the later return to Jerusalem."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The proposed order and sources are clear, with only the treatment of Luke’s wording and silence left implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The harmonization is presented as a coherent reading supported by John, without claiming that Luke independently narrates every stage."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Luke’s instruction and compressed narrative may imply continued residence in Jerusalem rather than an unmentioned Galilee trip.",
+        "decisiveQualification": "Selective narration permits omission only if Luke’s language does not exclude the intervening journey."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The multi-stage chronology is internally coherent and directly defeats a simple either-or location inference."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "John 20 and 21 provide concrete chronological support, while the compatibility of Luke’s instruction remains a bounded verification gap."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "It directly attacks the central con resurrection bridge by reconciling the disputed appearance locations and movements."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The answer takes the Lukan concern seriously by supplying a sequence, though it does not explicitly parse the allegedly exclusive wording."
+        }
+      },
+      "evidenceBasis": "The excerpt cites Jerusalem appearances in John 20 followed by the Galilee episode in John 21 and treats Matthew and Luke as selective accounts.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-biographical-invention",
+      "sectionId": "section-composition-transmission",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Ancient biography is frequently historically unreliable, and lengthy speeches attributed to Jesus decades later by non-eyewitnesses cannot be assumed to reproduce what he said.",
+      "sourceSpan": {
+        "startEvent": 2283,
+        "endEvent": 2305
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The transcript marks Ehrman's agreement followed by his explicit counterargument about ancient biographies, ancient historians, Matthew's date, language, and authorship.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-pro-transmission"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-gist-approximation",
+          "move-pro-jerusalem-galilee-sequence"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-biographical-invention-component-01",
+            "targetMoveId": "move-pro-gist-approximation",
+            "text": "Whether approximate ancient reporting can still preserve an accurate gist in the disputed Gospel material.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-biographical-invention-component-02",
+            "targetMoveId": "move-pro-jerusalem-galilee-sequence",
+            "text": "Whether the specific resurrection sequence is supported rather than harmonistically constructed.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move supplies important contrary material about ancient biographical invention and distant speech attribution, but it does not directly test the gist standard or show that a selected disputed passage exceeds legitimate approximation.",
+        "responsivenessWithinClass": {
+          "value": 67,
+          "rationale": "It is highly relevant contrary material, yet the decisive boundary between approximation and invention remains uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The speech-transmission concern is clear, but “ancient biography” and “making this stuff up” risk overgeneralizing heterogeneous practices."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The distance and authorship considerations support caution, though frequent ancient invention does not establish invention in the specific Gospel speech."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Ancient authors could preserve remembered gist through sources even when composing speeches in their own words.",
+        "decisiveQualification": "Genre possibility alone neither authenticates nor discredits a particular speech; source proximity and content require separate assessment."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The analogy and temporal-distance inference support skepticism, with a missing bridge from general ancient practice to the selected Gospel material."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Thucydides and Matthew’s later composition provide concrete considerations, but representativeness and Gospel-specific transmission are compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly attacks the central pro transmission bridge by challenging reliable reproduction of lengthy sayings."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The response appropriately rejects automatic accuracy but only partly accommodates the strongest tradition-preservation alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes ancient historians’ composed speeches and notes Matthew’s later date, different language, and disputed eyewitness status.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-motivated-transmission",
+      "sectionId": "section-composition-transmission",
+      "side": "pro",
+      "speaker": "Jimmy Akin",
+      "moveKind": "reply",
+      "proposition": "The Gospel tradition was preserved by motivated believers who retained its gist, and the canonical accounts stand close to eyewitness sources rather than a long telephone chain.",
+      "sourceSpan": {
+        "startEvent": 2612,
+        "endEvent": 2730
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer follows Ehrman's response under the moderator's stated alternating format, and the speakers directly address each other by name during the exchange.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-transmission"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-biographical-invention",
+          "move-con-johannine-discontinuity",
+          "move-con-governing-thesis"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-motivated-transmission-component-01",
+            "targetMoveId": "move-con-biographical-invention",
+            "text": "Whether decades of transmission and non-eyewitness composition make the Gospel tradition comparable to unreliable invented speech.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-motivated-transmission-component-02",
+            "targetMoveId": "move-con-johannine-discontinuity",
+            "text": "Whether John lacks adequate proximity to eyewitness testimony.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-motivated-transmission-component-03",
+            "targetMoveId": "move-con-governing-thesis",
+            "text": "Whether alleged nonhistorical material defeats the reliability of the transmitted Gospel core.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Akin directly disputes the telephone-chain model, appeals to motivated retention of gist, and names proposed source relationships linking Mark, Luke, and John to eyewitnesses or near-eyewitness material.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It contacts the central transmission challenge and supplies an alternative model, but the key traditional source attributions are asserted rather than defended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The contrast with a telephone game and the source claims are clear, though “motivated” and “gist” lack a defined reliability threshold."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move appropriately presents traditional source relationships as accepted by many scholars rather than as uncontested certainty."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Motivated religious transmitters can reshape traditions, and traditional authorship or source attributions remain disputed.",
+        "decisiveQualification": "Motivation can aid retention or encourage theological adaptation; proximity must therefore be evidenced rather than presumed."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The alternative transmission model is coherent, but motivation alone is bidirectional and does not guarantee accuracy."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Specific source connections are named, yet their historical basis, scholarly dispute, and independence are not demonstrated in the excerpt."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "It directly supports the central pro transmission bridge with an account of preservation and claimed source proximity."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The response rejects an overly simple telephone analogy while leaving the strongest motivated-reshaping objection substantially intact."
+        }
+      },
+      "evidenceBasis": "The excerpt rejects a telephone-game model and attributes Mark to Peter, Luke to multiple sources including Mark and Peter, and John to an eyewitness basis.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-synoptic-divine-claim",
+      "sectionId": "section-self-presentation",
+      "side": "pro",
+      "speaker": "Jimmy Akin",
+      "moveKind": "reply",
+      "proposition": "The Synoptic Gospels indirectly portray Jesus as divine, especially when Mark's trial scene associates him with Daniel's enthroned Son of Man and a blasphemy charge.",
+      "sourceSpan": {
+        "startEvent": 2856,
+        "endEvent": 2940
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response begins with explicit agreement and disagreement with Bart, includes direct address between the debaters, and advances Akin's recognizable Synoptic argument.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-self-presentation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-johannine-discontinuity",
+          "move-con-biographical-invention"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-synoptic-divine-claim-component-01",
+            "targetMoveId": "move-con-johannine-discontinuity",
+            "text": "Whether earlier Synoptic material contains claims comparable enough to John’s divine self-presentation to establish continuity.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-synoptic-divine-claim-component-02",
+            "targetMoveId": "move-con-biographical-invention",
+            "text": "Whether a disputed saying can be historically credited rather than treated as later biographical composition.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Akin directly answers the alleged Synoptic silence by reading Mark 14 through Daniel 7 and two-powers traditions as an indirect divine self-claim explaining the blasphemy response.",
+        "responsivenessWithinClass": {
+          "value": 80,
+          "rationale": "It contacts the decisive continuity demand with a concrete passage, but does not establish historical authenticity or equivalence to John’s extensive claims."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The textual interpretation is clear, though “divine,” “second Yahweh,” and “claiming to be God” are treated as closer equivalents than the argument fully establishes."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The allusion and blasphemy response support an elevated claim, but the categorical identity inference remains interpretively contested."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The Son of Man may be a distinct eschatological figure, and blasphemy need not prove a direct claim to deity.",
+        "decisiveQualification": "The first-person identification and Danielic enthronement reading must be established before the passage supplies Johannine continuity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "If the Danielic identification and two-powers premises hold, the inference follows; both remain material interpretive bridges."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Mark 14, Daniel 7, enthronement, and the blasphemy reaction are specific supports, but the historical and interpretive warrants are compressed."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "It directly attacks the central con self-presentation bridge by supplying alleged Synoptic continuity with divine identity."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move gives a substantial strongest-case interpretation, though it understates live grammatical and conceptual alternatives."
+        }
+      },
+      "evidenceBasis": "The excerpt interprets Mark’s trial saying through Daniel 7 and a two-powers framework, connecting heavenly enthronement to the blasphemy charge.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-son-of-man-ambiguity",
+      "sectionId": "section-self-presentation",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Mark's trial statement does not explicitly identify Jesus himself as the coming Son of Man, so it cannot securely establish that Jesus claimed divinity there.",
+      "sourceSpan": {
+        "startEvent": 2942,
+        "endEvent": 2955
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator turns back to Dr. Ehrman, whose answer quotes the disputed Markan wording and directly answers Akin's preceding interpretation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-self-presentation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-synoptic-divine-claim"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-son-of-man-ambiguity-component-01",
+            "targetMoveId": "move-pro-synoptic-divine-claim",
+            "text": "Whether Mark 14 explicitly identifies Jesus with the coming Son of Man and thereby establishes a divine self-claim.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Ehrman identifies the alleged grammatical failure in Akin’s premise: the quoted wording says “you will see the Son of Man” rather than explicitly “I am the Son of Man,” undermining the claimed identification.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "The reply pinpoints the decisive interpretive premise and states why its failure prevents the passage from securely proving the asserted claim."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The objection is narrowly and clearly limited to the absence of explicit self-identification in the cited wording."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The ambiguity is real, though “no indication” overstates matters because context and first-person predicates may support identification indirectly."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The surrounding first-person answer and Danielic imagery contextually identify Jesus as the Son of Man despite the third-person wording.",
+        "decisiveQualification": "Contextual identification is possible, but it is an interpretive inference rather than the explicit grammatical statement Akin attributes to the passage."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The reply directly weakens Akin’s quoted premise, though ambiguity does not by itself establish that the identification is false."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The actual wording is specifically contrasted with Akin’s paraphrase, providing concrete textual support for the ambiguity objection."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "It directly supports the central con self-presentation bridge by attacking the principal asserted Synoptic continuity text."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The objection fairly distinguishes explicit wording from contextual inference while acknowledging the issue has substantial scholarly complexity."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts Akin’s paraphrase with Mark 14:62’s wording, emphasizing that “you will see the Son of Man” is not an explicit first-person identification.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-theological-reshaping",
+      "sectionId": "section-composition-transmission",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "The evangelists primarily proclaimed theological messages to Christian audiences and changed inherited material rather than pursuing historical accuracy in the modern sense.",
+      "sourceSpan": {
+        "startEvent": 3042,
+        "endEvent": 3083
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the question to Ehrman, and Akin's immediately following statement expressly says he agrees with the answer before adding a qualification.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-composition"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-motivated-transmission",
+          "move-pro-gist-approximation"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-theological-reshaping-component-01",
+            "targetMoveId": "move-pro-motivated-transmission",
+            "text": "Whether motivated Gospel transmission primarily preserved historical gist rather than reshaping inherited material for theological purposes.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-theological-reshaping-component-02",
+            "targetMoveId": "move-pro-gist-approximation",
+            "text": "Whether differences are best explained as permissible approximation rather than message-driven alteration.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Ehrman directly counters stable-gist and approximation accounts by arguing that Matthew changes Mark in incommensurate ways and that evangelists prioritize proclamation to Christian audiences over modern historical accuracy.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It contacts the preservation inference and offers a competing compositional explanation, though the selected span gives only a compressed example."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The message-driven alteration thesis is clear, but “not concerned” and “modern accuracy” risk conflating theological purpose with historical indifference."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The inference from redaction to theological purpose is plausible, while the broader conclusion about historical concern needs representative comparison."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Ancient biographers could shape material theologically while preserving historically accurate events and gist.",
+        "decisiveQualification": "Theological purpose alone does not establish falsification; the alleged changes must be shown historically incompatible or unsupported."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "Message-driven alteration can explain divergence, but the inference from alteration to unreliability needs case-specific incompatibility evidence."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "Matthew’s changes to Mark are invoked as concrete evidence, though the excerpt does not present a representative change in enough detail to test the conclusion."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "It directly supports the central con composition bridge by linking divergence to audience-directed theological reshaping."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The move identifies a real alternative explanation for variation but underplays the strongest compatibility between theology and historical preservation."
+        }
+      },
+      "evidenceBasis": "The excerpt claims Matthew changes Mark in incommensurate ways and contrasts evangelistic proclamation with modern expectations of biographical accuracy.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-marian-infancy-tradition",
+      "sectionId": "section-birth-narratives",
+      "side": "pro",
+      "speaker": "Jimmy Akin",
+      "moveKind": "reply",
+      "proposition": "Luke's infancy narratives plausibly preserve memories ultimately originating with Mary, although Luke need not have interviewed her personally or used her for the whole Gospel.",
+      "sourceSpan": {
+        "startEvent": 3294,
+        "endEvent": 3332
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces the question as one for Jimmy, and the answer uses first-person judgments while explicitly anticipating Bart's likely disagreement.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-source-proximity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-biographical-invention",
+          "move-con-birth-sequence-conflict",
+          "move-con-theological-reshaping"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-marian-infancy-tradition-component-01",
+            "targetMoveId": "move-con-biographical-invention",
+            "text": "Whether Luke’s infancy material lacks a plausible remembered source close to the reported family events.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-marian-infancy-tradition-component-02",
+            "targetMoveId": "move-con-birth-sequence-conflict",
+            "text": "Whether a Marian source resolves the substantive chronological incompatibility between Matthew and Luke.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-marian-infancy-tradition-component-03",
+            "targetMoveId": "move-con-theological-reshaping",
+            "text": "Whether theological composition better explains Luke’s infancy traditions than preserved family memory.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Akin contacts the source-proximity component by proposing that Luke’s first two chapters preserve traditions originating with Mary while expressly avoiding the stronger claim that Luke interviewed her or used her throughout.",
+        "responsivenessWithinClass": {
+          "value": 61,
+          "rationale": "It contacts a secondary provenance component but does not answer the decisive chronology or theological-reshaping components of the broader objections."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is carefully confined to the infancy chapters and distinguishes ultimate origin from direct personal interview."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move repeatedly marks the Marian-source proposal as an inference and expressly says direct interview is unproved."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Luke’s references to Mary pondering events may be literary characterization rather than evidence of a Marian source.",
+        "decisiveQualification": "Internal focalization can suggest provenance but does not independently establish a transmission chain from Mary to Luke."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "A Marian tradition could explain access to private infancy memories, but the inference from narrative indications to source identity remains implicit."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The twice-repeated Marian memory motif is a specific clue, yet no external chain or independent confirmation establishes the proposed provenance."
+        },
+        "relevanceBurden": {
+          "value": 71,
+          "rationale": "It strongly supports the subsidiary pro source-proximity bridge, while leaving the central historical-compatibility dispute unresolved."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The response preserves the strongest literary alternative by making a modest ultimate-origin claim rather than alleging proven direct testimony."
+        }
+      },
+      "evidenceBasis": "The excerpt limits the proposal to Luke’s first two chapters, cites repeated indications associated with Mary, and disclaims proof of a direct interview.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct pro-side debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion beyond the scored pro motion, discrepancy, transmission, self-presentation, convention, and source-proximity moves was established.",
+        "relatedMoveIds": [
+          "move-pro-standard-spectrum",
+          "move-pro-cumulative-balance",
+          "move-pro-shared-resurrection-claim",
+          "move-pro-gist-approximation",
+          "move-pro-dual-residence-reconciliation",
+          "move-pro-jerusalem-galilee-sequence",
+          "move-pro-motivated-transmission",
+          "move-pro-synoptic-divine-claim",
+          "move-pro-marian-infancy-tradition"
+        ],
+        "distinctConsequence": "Any cumulative pro-side consequence is already represented by the individual move judgments and their assigned burden contact.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance findings"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the already judged pro moves."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct con-side debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion beyond the scored con motion, birth, resurrection, self-presentation, composition, and transmission moves was established.",
+        "relatedMoveIds": [
+          "move-con-governing-thesis",
+          "move-con-birth-sequence-conflict",
+          "move-con-resurrection-incompatibility",
+          "move-con-johannine-discontinuity",
+          "move-con-major-errors-balance",
+          "move-con-dual-residence-objection",
+          "move-con-location-chronology-conflict",
+          "move-con-biographical-invention",
+          "move-con-son-of-man-ambiguity",
+          "move-con-theological-reshaping"
+        ],
+        "distinctConsequence": "Any cumulative con-side consequence is already represented by the individual move judgments and their assigned burden contact.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance findings"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the already judged con moves."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

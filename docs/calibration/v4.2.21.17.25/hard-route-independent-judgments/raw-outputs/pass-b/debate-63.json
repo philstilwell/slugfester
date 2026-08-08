@@ -1,0 +1,1937 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "63",
+  "debateId": "butt-shermer-god-bible-2023",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-biblical-theism",
+      "side": "pro",
+      "description": "Infer a supernatural, intelligent, and moral creator from features of reality, then connect that creator specifically to the biblical God through Jesus.",
+      "successCriteria": "The route succeeds if its causal, design, and moral inferences establish the relevant divine attributes and the Jesus evidence supplies the biblical identification.",
+      "motionBridge": {
+        "bridgeId": "bridge-pro-motion-biblical-identification",
+        "tier": "motion",
+        "description": "The inferred creator must be identified with the God of the Bible rather than only an unspecified supernatural cause."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-pro-central-causation",
+          "tier": "central",
+          "description": "The universe's existence and beginning must require a cause beyond physical matter."
+        },
+        {
+          "bridgeId": "bridge-pro-central-design",
+          "tier": "central",
+          "description": "Fine-tuning and complex functional organization must warrant an inference to intelligence."
+        },
+        {
+          "bridgeId": "bridge-pro-central-morality",
+          "tier": "central",
+          "description": "Objective moral obligations must require a personal moral source beyond naturalistic preference."
+        },
+        {
+          "bridgeId": "bridge-pro-central-jesus",
+          "tier": "central",
+          "description": "The historical case concerning Jesus must support resurrection and divine identity."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-pro-subsidiary-knowledge",
+          "tier": "subsidiary",
+          "description": "Human fallibility must remain compatible with knowledge of burden-relevant foundational truths."
+        },
+        {
+          "bridgeId": "bridge-pro-subsidiary-suffering",
+          "tier": "subsidiary",
+          "description": "Suffering must be compatible with divine goodness through a coherent redemptive or ultimate account."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-skeptical-naturalism",
+      "side": "con",
+      "description": "Withhold the biblical-theist conclusion by showing that natural explanations, evidential limits, religious diversity, and suffering undercut its necessary inferences.",
+      "successCriteria": "The route succeeds if the affirmative evidence does not discriminate the biblical God from natural alternatives, uncertainty, rival religions, or unsupported supernatural claims.",
+      "motionBridge": {
+        "bridgeId": "bridge-con-motion-underdetermination",
+        "tier": "motion",
+        "description": "The total evidence must fail to justify the existence and specifically biblical identity asserted in the motion."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-con-central-standards",
+          "tier": "central",
+          "description": "Confidence in supernatural claims must remain proportioned to testable and publicly available support."
+        },
+        {
+          "bridgeId": "bridge-con-central-natural-alternatives",
+          "tier": "central",
+          "description": "Causation, biological complexity, morality, and apparent design must admit nondivine explanations or remain unresolved."
+        },
+        {
+          "bridgeId": "bridge-con-central-religious-diversity",
+          "tier": "central",
+          "description": "Biblical revelation and resurrection claims must withstand comparison with informed disagreement and rival traditions."
+        },
+        {
+          "bridgeId": "bridge-con-central-suffering",
+          "tier": "central",
+          "description": "Apparently gratuitous innocent suffering must be reconciled with the claimed omnipotent and benevolent God."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-con-subsidiary-fallibility",
+          "tier": "subsidiary",
+          "description": "Finite human access to objective truth must warrant intellectual humility and revisability."
+        },
+        {
+          "bridgeId": "bridge-con-subsidiary-method",
+          "tier": "subsidiary",
+          "description": "Methodological naturalism must provide a workable standard for detecting causal interaction and comparing explanations."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-evidential-standards",
+      "title": "Knowledge and Evidential Standards",
+      "weightPercent": 18,
+      "rationale": "The permissible degree of certainty and the testability of supernatural claims govern how every substantive inference in the debate can bear the motion-level burden."
+    },
+    {
+      "sectionId": "section-causation",
+      "title": "Cosmic Causation",
+      "weightPercent": 17,
+      "rationale": "The first-cause inference is an independent path from the universe to a nonphysical creator, while objections contest whether the regress identifies any God."
+    },
+    {
+      "sectionId": "section-design",
+      "title": "Fine-Tuning and Biological Design",
+      "weightPercent": 16,
+      "rationale": "The design dispute determines whether cosmic parameters and functional biological organization supply evidence of intelligence or remain explicable without a supernatural designer."
+    },
+    {
+      "sectionId": "section-morality",
+      "title": "Moral Objectivity and Natural Origins",
+      "weightPercent": 16,
+      "rationale": "The grounding of objective moral standards bears on whether reality requires a personal moral God or whether morality can arise and function within naturalism."
+    },
+    {
+      "sectionId": "section-jesus-diversity",
+      "title": "Jesus, Resurrection, and Religious Diversity",
+      "weightPercent": 18,
+      "rationale": "This issue supplies the required bridge from generic theism to the biblical God and tests that identification against resurrection scrutiny and competing religious claims."
+    },
+    {
+      "sectionId": "section-suffering",
+      "title": "Suffering and Divine Goodness",
+      "weightPercent": 15,
+      "rationale": "The compatibility of innocent suffering with omnipotent benevolence bears directly on the asserted biblical God's attributes and on possible redemptive or afterlife explanations."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "move-pro-method-open-inquiry",
+      "sectionId": "section-evidential-standards",
+      "side": "pro",
+      "speaker": "Kyle Butt",
+      "moveKind": "constructive",
+      "proposition": "Inquiry should follow rational argument wherever it leads without imposing a prior barrier against nonmaterial conclusions.",
+      "sourceSpan": {
+        "startEvent": 136,
+        "endEvent": 176
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Kyle Butt's opening speech, followed by a continuous first-person presentation until the announced speaker transition.",
+      "importance": 1,
+      "burdenContact": null,
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive methodological invitation has no earlier opposing target and is assessed on its own inferential contribution.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "The move clearly states an open-inquiry norm, though it does not itself establish how competing explanations should be compared."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The anti-dogmatism proposition is clear; an implicit qualification limits following arguments to rationally warranted conclusions."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The force is appropriate for a procedural norm, provided that following an argument includes evaluating its warrants and alternatives."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The norm is internally consistent and straightforward, with only the comparison standard left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The cited endorsements support freedom of inquiry rhetorically, but authority quotations do not independently establish the norm."
+        },
+        "relevanceBurden": {
+          "value": 22,
+          "rationale": "The move is methodologically pertinent but does not expressly supply or attack any enumerated burden bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No developed opposing interpretation is presented within this constructive span, so a substantive charity test is not available."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes Socrates and Oppenheimer to endorse unrestricted rational inquiry and opposition to dogmatic barriers.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-cosmic-cause",
+      "sectionId": "section-causation",
+      "side": "pro",
+      "speaker": "Kyle Butt",
+      "moveKind": "constructive",
+      "proposition": "Because every material effect requires a cause and the universe began, the universe requires a supernatural cause.",
+      "sourceSpan": {
+        "startEvent": 189,
+        "endEvent": 260
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains within Kyle Butt's uninterrupted opening presentation and is explicitly framed as his first foundational truth.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-causation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive causal argument has no earlier opposing target and directly advances the affirmative causation bridge.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "The move supplies a recognizable causal syllogism, although the transition from a cause to a supernatural cause remains compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The inference is recoverable, but material effect, universe, cause, and supernatural are not kept sufficiently distinct or qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The cited causal regularity supports seeking an explanation but does not by itself necessitate the asserted supernatural conclusion."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The causal premise concerns material effects within the universe rather than the universe considered as a whole.",
+        "decisiveQualification": "Even granting a beginning, the nature and agency of any cause require an additional argument."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "A substantial bridge is missing between material effects requiring causes and a nonmaterial supernatural cause of the whole universe."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The excerpt asserts a scientific law and alludes to authorities, but does not defend its application beyond observed material effects."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The proposition directly supports the indispensable affirmative causation bridge and occupies the upper part of that central tier."
+        },
+        "representationalCharity": {
+          "value": 66,
+          "rationale": "The presentation states the strongest causal generalization but does not address the composition and cause-character qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt calls causation the basis of experiment and states that every material effect requires a cause bringing it into existence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-design-inference",
+      "sectionId": "section-design",
+      "side": "pro",
+      "speaker": "Kyle Butt",
+      "moveKind": "constructive",
+      "proposition": "The universe's fine-tuning and life's complex functional organization require an intelligent designer.",
+      "sourceSpan": {
+        "startEvent": 261,
+        "endEvent": 419
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The continuous affirmative opening identifies this material as Butt's second foundational truth and develops it without a speaker change.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-design"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive design argument has no earlier opposing target and directly advances the affirmative design bridge.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "The move offers a clear inference from functional information to intelligence, but compresses comparison with evolutionary and physical alternatives."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The proposition is clear, but design, specified information, and all known origins shift between artifact and biological contexts."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The evidence may motivate a design hypothesis, but the categorical demand for intelligence exceeds the presented comparative warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Natural processes can produce functional organization without foresight even when human-coded information ordinarily has intelligent sources.",
+        "decisiveQualification": "Artifact analogies must establish relevant similarity and compare natural mechanisms before supporting necessity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 66,
+          "rationale": "The inference is intelligible but relies on an underdefended analogy and a universal premise close to the desired conclusion."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The excerpt cites a generalization about known specified information but does not establish representative coverage or exclude natural mechanisms."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move expressly supplies the claimed intelligence inference required by the central affirmative design bridge."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The move acknowledges that some cited scientists reject God but does not fairly resolve the strongest natural-process alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt cites Meyer and asserts that all known specified information has intelligent causation before stating a design syllogism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-moral-ground",
+      "sectionId": "section-morality",
+      "side": "pro",
+      "speaker": "Kyle Butt",
+      "moveKind": "constructive",
+      "proposition": "Objective moral values exist and require a personal moral God rather than a purely material reality.",
+      "sourceSpan": {
+        "startEvent": 420,
+        "endEvent": 500
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is the third expressly numbered foundational truth in Kyle Butt's uninterrupted affirmative opening statement.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive moral-grounding argument has no earlier opposing target and directly advances the affirmative morality bridge.",
+        "responsivenessWithinClass": {
+          "value": 75,
+          "rationale": "The argument states its grounding claim clearly, but gives little defense of why every naturalistic account must reduce to preference."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "Objective moral standard is recoverable, but existence, knowledge, authority, and motivation are treated as one grounding question."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The necessity claim exceeds the excerpt because rival realist accounts and the link from objectivity to personality are not examined."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Objective moral truths might be natural, rational, or nonpersonal facts rather than divine commands or preferences.",
+        "decisiveQualification": "The argument must exclude nondivine moral realism and explain why a personal source supplies normativity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 61,
+          "rationale": "The inference presents a false-dilemma risk by moving from no divine person to mere human preference without excluding alternatives."
+        },
+        "evidenceWarrant": {
+          "value": 57,
+          "rationale": "Quoted naturalists illustrate one view but do not establish that all atheistic or naturalistic moral theories deny objective standards."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central claim that objective obligations require a personal moral source."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The move treats materialism as eliminating objectivity without addressing the strongest nondivine realist interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt quotes a denial of ultimate moral principles and infers that a material-only world cannot contain standards beyond humanity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-jesus-identification",
+      "sectionId": "section-jesus-diversity",
+      "side": "pro",
+      "speaker": "Kyle Butt",
+      "moveKind": "constructive",
+      "proposition": "Jesus's exceptional moral character, crucifixion, reported resurrection appearances, and followers' sacrifices identify him with the biblical God.",
+      "sourceSpan": {
+        "startEvent": 501,
+        "endEvent": 549
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage completes Kyle Butt's timed opening and is introduced within that speech as his final foundational truth.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "bridge-pro-motion-biblical-identification"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive historical argument has no earlier opposing target and is the affirmative's principal motion-level identification step.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It supplies several identifying considerations, but the excerpted support emphasizes character testimony more than resurrection verification."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The cumulative claim is recoverable, though moral excellence, resurrection, sacrifice, divine identity, and biblical identity need distinct warrants."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The presented testimony supports historical consideration but does not warrant the asserted identification without source and alternative analysis."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Sincere testimony and exceptional moral reputation can arise without a literal resurrection or divine identity.",
+        "decisiveQualification": "The case requires independent source evaluation and comparison with error, legend, and sincere mistaken belief."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The cumulative structure is intelligible, but several major inferential steps from character and testimony to divinity remain implicit."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The support relies substantially on testimonial and biographical assertions without defending source independence, dating, or alternative explanations."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "The move expressly attempts the required motion-level identification of the inferred deity with Jesus and the biblical God."
+        },
+        "representationalCharity": {
+          "value": 60,
+          "rationale": "The cumulative presentation mentions sacrifice and testimony but does not resolve their independence or the principal nonmiraculous alternatives."
+        }
+      },
+      "evidenceBasis": "The locked proposition combines Jesus's character, crucifixion, reported appearances, and follower sacrifice; the excerpt specifically supports character testimony.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-rival-revelations",
+      "sectionId": "section-jesus-diversity",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Competing religions make similarly confident claims of inspired revelation, so confidence in the Bible alone cannot establish its divine authority.",
+      "sourceSpan": {
+        "startEvent": 581,
+        "endEvent": 899
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The entire span lies within Michael Shermer's uninterrupted opening statement, culminating in his comparison of Christian and Muslim revelation claims.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-religious-diversity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-jesus-identification"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-rival-revelations-component-01",
+            "targetMoveId": "move-pro-jesus-identification",
+            "text": "Whether confidence in Christian testimony discriminates biblical revelation from comparably confident rival religious claims.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The comparison directly contacts the identification argument's demand for discriminating support, though it undercuts exclusivity more than disproving Christianity.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "It contacts the decisive discrimination problem but supplies confidence comparisons rather than a detailed evidential comparison of traditions."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The underdetermination claim is clear, with the implicit qualification that disagreement defeats confidence alone rather than truth itself."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The argument appropriately treats rival certainty as an undercutting consideration, not as a deductive refutation of Christianity."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian claims could possess stronger historical evidence than rival revelation claims despite comparable believer confidence.",
+        "decisiveQualification": "Psychological confidence alone does not equal evidential parity, so traditions must also be compared on their evidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The inference correctly undercuts confidence as a truth indicator, while avoiding the stronger and invalid claim that disagreement proves falsehood."
+        },
+        "evidenceWarrant": {
+          "value": 71,
+          "rationale": "The broad demographic comparison is relevant, but fervor and population figures provide only indirect evidence of epistemic symmetry."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central con bridge requiring comparison of biblical claims with rival traditions."
+        },
+        "representationalCharity": {
+          "value": 74,
+          "rationale": "The move identifies the strongest diversity pressure but does not perform the evidential comparison that its own challenge ultimately requires."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts Christian biblical confidence with Muslim confidence in Quranic inspiration and mutually incompatible salvation judgments.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-proportioned-confidence",
+      "sectionId": "section-evidential-standards",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "constructive",
+      "proposition": "Because human beings are fallible, confidence should be probabilistic and proportioned to a claim's prior plausibility and supporting evidence.",
+      "sourceSpan": {
+        "startEvent": 591,
+        "endEvent": 654
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator-announced transition is followed by Michael Shermer's continuous opening statement, including his characteristic first-person setup.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-standards"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive epistemic standard has no earlier opposing target and directly supplies the con route's central evidential requirement.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "The move clearly states probabilistic caution and evidence-proportioning, though the role of priors receives less defense than the general standard."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The rule, probabilistic range, fallibility premise, and evidence-proportioning conclusion are clearly recoverable and appropriately bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move's own probabilistic examples embody its uncertainty requirement and match the modest epistemic force of the standard."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "Fallibility coherently supports avoiding absolute credences and proportioning confidence, with only the treatment of exceptional certainties implicit."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The examples illustrate the rule effectively, though the general norm is defended more by methodological intuition than systematic evidence."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move expressly advances the central con standard governing confidence in supernatural claims and supporting evidence."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No developed opposing argument is addressed within this constructive span, so a source-grounded charity comparison is unavailable."
+        }
+      },
+      "evidenceBasis": "The excerpt states Cromwell's rule, assigns nonzero probability to alien explanations, and says confidence must track evidence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-testability",
+      "sectionId": "section-evidential-standards",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "A supernatural claim protected from every possible test is empirically indistinguishable from the nonexistence of its alleged object.",
+      "sourceSpan": {
+        "startEvent": 654,
+        "endEvent": 764
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage occurs in Shermer's uninterrupted opening and develops his evidential standard through connected hypothetical examples.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-standards"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-method-open-inquiry"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-testability-component-01",
+            "targetMoveId": "move-pro-method-open-inquiry",
+            "text": "Whether openness to nonmaterial conclusions still requires observable consequences that distinguish a claim from nonexistence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The dragon examples diagnose a limit on unrestricted inquiry: a protected claim with no discriminating consequences cannot gain empirical support from feelings or coincidences.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "The response explicitly identifies the evidential defect and explains the defeating consequence of empirical indistinguishability."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposition is precisely limited to empirically insulated supernatural claims rather than all metaphysical or religious propositions."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Indistinguishability follows within the stated empirical domain when every possible observation is accommodated by the claim."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A supernatural claim might have indirect, probabilistic, experiential, or historical consequences without direct laboratory observation.",
+        "decisiveQualification": "The objection applies only when proposed consequences cannot discriminate the claim from chance or nonexistence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The diagnostic inference from unrestricted accommodation to empirical indistinguishability is coherent and explicitly illustrated."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The hypothetical cases effectively support the methodological point, with a bounded gap concerning nonexperimental historical evidence."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supplies the central con standard of publicly discriminating support for supernatural claims."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The examples fairly allow emotions and answered-prayer reports, then explain why those offered effects remain nondiscriminating."
+        }
+      },
+      "evidenceBasis": "The excerpt tests emotional effects and apparent answered prayer against chance, asking what observation would distinguish the dragon claim.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-regress-objection",
+      "sectionId": "section-causation",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "The first-cause argument does not establish God because exempting God from causation is special pleading and the regress may end in an unknown or uncaused universe.",
+      "sourceSpan": {
+        "startEvent": 970,
+        "endEvent": 1016
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Shermer explicitly identifies Kyle's first argument and introduces the passage as his own response during his timed opening statement.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-natural-alternatives"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-cosmic-cause"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-regress-objection-component-01",
+            "targetMoveId": "move-pro-cosmic-cause",
+            "text": "Whether the causal regress justifies stopping at God and identifies the terminus as supernatural rather than unknown or uncaused.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly identifies special pleading and epistemic underdetermination, then states that reaching a regress boundary is not a proof of God.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It directly attacks the decisive inference from a causal boundary to God and supplies the consequence that the argument remains unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The objection distinguishes an unknown regress terminus, a possibly uncaused universe, and an asserted supernatural terminus."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The underdetermination conclusion fits the argument, though invoking quantum effects as universe-level analogy is only suggestive."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The affirmative may exempt a necessary, nonmaterial cause because only beginning or contingent material effects require causes.",
+        "decisiveQualification": "That restricted premise still needs defense and does not by itself identify the necessary cause as God."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The response validly shows that a regress endpoint does not identify God, despite a compressed quantum analogy."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The conceptual special-pleading point is well supported, while the uncaused-universe possibility and quantum comparison receive limited development."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the con central natural-alternatives bridge by leaving cosmic causation unresolved."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply captures the exemption issue and epistemic limit, although it does not fully develop the strongest contingency-based formulation."
+        }
+      },
+      "evidenceBasis": "The excerpt proposes an uncaused universe possibility, notes that God would otherwise require a cause, and calls the regress an epistemic wall.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-knowable-truth",
+      "sectionId": "section-evidential-standards",
+      "side": "pro",
+      "speaker": "Kyle Butt",
+      "moveKind": "reply",
+      "proposition": "Human fallibility and probabilistic caution do not preclude certainty about some truths or require every claim about God to remain permanently uncertain.",
+      "sourceSpan": {
+        "startEvent": 1022,
+        "endEvent": 1060
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator announces Kyle Butt's rebuttal immediately before this sustained response, and the speaker repeatedly characterizes Shermer's claims.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-con-subsidiary-fallibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-proportioned-confidence"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-knowable-truth-component-01",
+            "targetMoveId": "move-con-proportioned-confidence",
+            "text": "Whether fallibility and probabilistic discipline rule out justified certainty about any burden-relevant foundational proposition.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the universal scope it attributes to probabilistic caution, but it does not answer the narrower demand to proportion supernatural confidence to evidence.",
+        "responsivenessWithinClass": {
+          "value": 69,
+          "rationale": "It contacts a decisive overbroad interpretation but only partially addresses the actual evidential-proportioning standard."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The existence of some knowable truth is clear, but truth, certainty, and the particular debated propositions are insufficiently distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Rejecting universal skepticism does not warrant certainty about the disputed propositions or defeat evidence-proportioned confidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Cromwell's rule concerns credences under fallibility and need not deny ordinary knowledge or every practical certainty.",
+        "decisiveQualification": "The reply must distinguish exceptional logical certainty from confidence in contested historical and supernatural claims."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 59,
+          "rationale": "The reply establishes at most that some truths may be known, which does not entail that disputed divine claims escape probabilistic assessment."
+        },
+        "evidenceWarrant": {
+          "value": 51,
+          "rationale": "The claim rests chiefly on assertion and a scriptural phrase without identifying independently warranted examples relevant to the debate."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "The move expressly attacks the subsidiary con fallibility bridge, but only through a limited scope objection."
+        },
+        "representationalCharity": {
+          "value": 53,
+          "rationale": "The response treats the probabilistic standard as denying knowable truth, materially weakening its more limited evidential meaning."
+        }
+      },
+      "evidenceBasis": "The excerpt rejects placing every belief on a one-to-one-hundred scale and asserts that truth can be known rather than merely probable.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-diversity-answer",
+      "sectionId": "section-jesus-diversity",
+      "side": "pro",
+      "speaker": "Kyle Butt",
+      "moveKind": "reply",
+      "proposition": "Religious disagreement does not defeat Christianity because consensus is not a truth test, some Jews accept Jesus, Christianity arose among Jews, and rival scriptures can be compared evidentially.",
+      "sourceSpan": {
+        "startEvent": 1171,
+        "endEvent": 1265
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The same announced rebuttal speaker explicitly takes up Shermer's Jewish and Muslim examples and argues throughout from the Christian side.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-religious-diversity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-rival-revelations"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-diversity-answer-component-01",
+            "targetMoveId": "move-con-rival-revelations",
+            "text": "Whether religious disagreement and rival inspired scriptures prevent Christianity from being evidentially distinguished as true.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly denies that consensus decides truth and offers historical and comparative considerations, but does not complete the promised evidence comparison.",
+        "responsivenessWithinClass": {
+          "value": 71,
+          "rationale": "It contacts the decisive diversity challenge, yet much of the answer shows only that some Jews converted rather than that Christianity is superior."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The response clearly distinguishes disagreement from falsity, with an implicit concession that rival claims still require evidential comparison."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The anti-consensus conclusion is warranted, but conversion counts and origins provide limited support for comparative religious truth."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The diversity objection need not claim that majority consensus determines truth; it can claim that disagreement reduces confidence absent discrimination.",
+        "decisiveQualification": "Showing that Christianity began among Jews does not supply the comparative evidence needed to overcome underdetermination."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The core rebuttal that disagreement does not entail falsehood is sound, but several historical observations do not establish the conclusion sought."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "Messianic Jews and early conversion figures are relevant historical examples, though they do not compare revelation reliability across traditions."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly attacks the central con religious-diversity bridge and attempts an evidential comparison response."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The answer correctly rejects a crude consensus test but only partly engages the stronger epistemic challenge from informed disagreement."
+        }
+      },
+      "evidenceBasis": "The excerpt cites Messianic Jews, Christianity's Jewish origins, and early Acts conversions while rejecting consensus as a truth test.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-wellbeing-morality",
+      "sectionId": "section-morality",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Objective morality can be grounded in sentient well-being, reduced suffering, flourishing, and bodily autonomy without divine commands.",
+      "sourceSpan": {
+        "startEvent": 1412,
+        "endEvent": 1504
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Shermer announces that he is addressing objective moral values and develops a sustained first-person secular account in the same rebuttal turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-natural-alternatives"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-moral-ground"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-wellbeing-morality-component-01",
+            "targetMoveId": "move-pro-moral-ground",
+            "text": "Whether objective moral judgment requires a personal divine source rather than facts about sentient suffering and flourishing.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply offers a direct secular grounding candidate and applies it to intervention and autonomy, contacting the demand for a nondivine objective basis.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It directly supplies the requested alternative, though the bridge from descriptive well-being to categorical obligation remains compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Well-being, suffering, flourishing, and autonomy are consistently used, with priority rules among them left implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The account is a plausible objective framework, but the excerpt does not fully establish uniqueness or resolve conflicts among its values."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Theism may argue that well-being facts describe consequences but cannot generate intrinsically binding duties without a moral authority.",
+        "decisiveQualification": "A secular account must defend the normative bridge and handle conflicts among flourishing, suffering reduction, and autonomy."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The framework is coherent as a moral criterion, with one material bridge from sentient interests to objective obligation left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Concrete suffering and autonomy examples illustrate the standard, but no systematic defense of its objectivity or conflict resolution is supplied."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the con natural-alternatives bridge by proposing a nondivine account of objective morality."
+        },
+        "representationalCharity": {
+          "value": 73,
+          "rationale": "The response addresses objective outcomes rather than caricaturing divine command, but leaves the central normativity bridge underdeveloped."
+        }
+      },
+      "evidenceBasis": "The excerpt grounds objective judgment in sentient suffering, flourishing, suffering reduction, and bodily autonomy.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-redemptive-suffering",
+      "sectionId": "section-suffering",
+      "side": "pro",
+      "speaker": "Kyle Butt",
+      "moveKind": "reply",
+      "proposition": "Suffering does not logically disprove a loving God because Christ's suffering illustrates how presently unexplained pain can precede salvation and an ultimately redemptive outcome.",
+      "sourceSpan": {
+        "startEvent": 2097,
+        "endEvent": 2129
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The audience question assigns the suffering issue to Butt, and the answer invokes Job, Christ, salvation, and trust in God from an explicitly Christian perspective.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-subsidiary-suffering"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-wellbeing-morality"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-redemptive-suffering-component-01",
+            "targetMoveId": "move-con-wellbeing-morality",
+            "text": "Whether sentient well-being can ground objective morality without a personal divine source.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The selected suffering answer does not contact the earlier morality move's decisive grounding demand; no earlier con suffering move is legally available here.",
+        "responsivenessWithinClass": {
+          "value": 8,
+          "rationale": "Relative to the only plausible legal opposing target, the passage is a nonanswer even though it constructively supports a suffering bridge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Logical compatibility is distinguishable from emotional explanation, but redemptive possibility and actual justification are partly conflated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "As a logical-compatibility claim, the Christ analogy supplies a possible redemptive pattern without establishing that every suffering is redeemed."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The evidential problem asks whether apparently gratuitous suffering is probable under divine goodness, not whether contradiction is formally provable.",
+        "decisiveQualification": "Logical compatibility alone does not answer the probabilistic force or explain particular innocent suffering."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The possibility of redemptive suffering coherently blocks a strict contradiction, while leaving the probabilistic argument unresolved."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The Christ analogy illustrates the proposed pattern but does not independently show that apparently gratuitous suffering has such an outcome."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "The move expressly supports the affirmative subsidiary bridge that suffering can fit a coherent redemptive account."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The move explicitly separates logical and emotional arguments, but its answer remains narrower than the strongest evidential objection."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes logical and emotional evil arguments and invokes Christ's suffering as pain preceding a salvific result.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-gratuitous-suffering",
+      "sectionId": "section-suffering",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Apparently gratuitous natural suffering, including childhood leukemia, conflicts with an omnipotent and benevolent God when moral growth could occur without devastating innocent people.",
+      "sourceSpan": {
+        "startEvent": 2130,
+        "endEvent": 2176
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage immediately rejects Butt's answer in Shermer's first-person skeptical voice and develops his familiar natural-evil objection using childhood illness.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-suffering"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-redemptive-suffering"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-gratuitous-suffering-component-01",
+            "targetMoveId": "move-pro-redemptive-suffering",
+            "text": "Whether a possible redemptive pattern adequately reconciles devastating innocent suffering with omnipotence and benevolence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The childhood-leukemia example directly presses the missing particular justification and contrasts divine ability to intervene with apparently selective miracles.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "It contacts the decisive evidential gap with a concrete innocent-suffering case, though it does not exhaust possible theodicies."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is carefully framed around apparently gratuitous natural suffering and the joint attributes of power and benevolence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The example supports an evidential conflict rather than claiming a deductive contradiction, matching the available warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Suffering might enable goods, freedom, stable natural laws, spiritual formation, or eventual compensation unavailable otherwise.",
+        "decisiveQualification": "An adequate account must explain why extreme innocent suffering is necessary or proportionate when lesser means seem available."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The tension among preventable innocent suffering, omnipotence, and benevolence is clearly and consistently developed."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Childhood leukemia is a representative natural-evil example, though broader comparative probability and theodicy analysis remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly advances the central con suffering bridge through a concrete apparently gratuitous case."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The response recognizes possible divine purposes but presses the strongest qualification that an omnipotent agent appears able to use less devastating means."
+        }
+      },
+      "evidenceBasis": "The excerpt describes childhood leukemia, lasting parental grief, divine capacity to intervene, and reports of selective miraculous cures.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-evolved-cooperation",
+      "sectionId": "section-morality",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Objective-seeming morality arose through social-primate evolution, reciprocal cooperation, detection of exploiters, and internalized virtuous habits rather than divine command.",
+      "sourceSpan": {
+        "startEvent": 2255,
+        "endEvent": 2282
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The audience question asks for the source of morality without God, and the answer uses Shermer's evolutionary, game-theoretic, and Aristotelian framework.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-natural-alternatives"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-moral-ground"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-evolved-cooperation-component-01",
+            "targetMoveId": "move-pro-moral-ground",
+            "text": "Whether moral behavior and objective-seeming standards require divine command rather than evolved social capacities.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The answer directly supplies an evolutionary and strategic origin for cooperation, contacting the demand for a nondivine moral explanation.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It strongly answers moral behavior and internalization, but only partly answers the distinct philosophical grounding of objective obligation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The mechanisms are clear, though explaining moral psychology and establishing objective moral truth are not always separated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Evolutionary cooperation plausibly explains dispositions, but the excerpt overreaches if taken to establish objective normativity itself."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An evolutionary genealogy of moral beliefs may explain behavior while leaving their truth or binding authority ungrounded.",
+        "decisiveQualification": "Causal origins do not alone establish or debunk objective moral propositions."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The social-primate and reciprocal-cooperation account is coherent, with a material bridge remaining from evolved dispositions to objectivity."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The game-theoretic mechanism is specific and plausible, but representative empirical support and the virtue-internalization step are compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central con natural-alternatives bridge with a nondivine account of moral development."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The response offers a serious natural mechanism but does not fully distinguish genealogy from metaethical justification."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes social-primate dependence, reciprocal strategic calculation, exploitation detection, and internalized cooperative habits.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-naturalism-no-objectivity",
+      "sectionId": "section-morality",
+      "side": "pro",
+      "speaker": "Kyle Butt",
+      "moveKind": "reply",
+      "proposition": "Evolutionary cooperation yields self-interest, social preference, and variable behavior rather than objectively binding moral standards.",
+      "sourceSpan": {
+        "startEvent": 2282,
+        "endEvent": 2308
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly refers to Shermer in the third person and answers from Butt's stated position that objective standards require a supernatural being.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-natural-alternatives"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-evolved-cooperation",
+          "move-con-wellbeing-morality"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-naturalism-no-objectivity-component-01",
+            "targetMoveId": "move-con-evolved-cooperation",
+            "text": "Whether evolved cooperation explains objectively binding moral standards or only adaptive self-interest and social behavior.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-naturalism-no-objectivity-component-02",
+            "targetMoveId": "move-con-wellbeing-morality",
+            "text": "Whether well-being and flourishing supply objective authority rather than selected human values.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply distinguishes adaptive behavior from objective authority and challenges both evolutionary genealogy and the asserted secular standard.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "It contacts the decisive normativity gap, though quotations about self-interest do not establish the impossibility of naturalistic realism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The distinction among cooperation, preference, variability, and objective bindingness is clear, with naturalism implicitly treated broadly."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The criticism identifies a genuine gap but does not warrant the universal conclusion that no naturalistic objective account can exist."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Naturalistic moral realism may treat well-being or reasons as objective facts while evolution explains our access and motivation.",
+        "decisiveQualification": "The reply must exclude such realist accounts rather than showing only that evolution also produces self-interest."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 71,
+          "rationale": "The distinction between adaptive conduct and objective obligation is sound, but the impossibility conclusion requires an additional exhaustive premise."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The cited self-interest observation supports skepticism about simple cooperation accounts, not a universal denial of naturalistic objectivity."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly attacks the central con natural-alternatives bridge in its moral applications."
+        },
+        "representationalCharity": {
+          "value": 60,
+          "rationale": "It fairly identifies the genealogy-versus-normativity issue but generalizes from selected evolutionary descriptions to all naturalism."
+        }
+      },
+      "evidenceBasis": "The excerpt asserts that objective standards require a supernatural being and cites an atheist discussion of concealed human self-interest.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-resurrection-evidence",
+      "sectionId": "section-jesus-diversity",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "The resurrection's extraordinary character does not make it credible, and its historical support is too weak when comparable miracle claims are rejected despite testimony.",
+      "sourceSpan": {
+        "startEvent": 2324,
+        "endEvent": 2346
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The audience question addresses Shermer, and his answer restates his numerical skepticism before comparing Christian resurrection testimony with other revival claims.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-jesus"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-jesus-identification"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-resurrection-evidence-component-01",
+            "targetMoveId": "move-pro-jesus-identification",
+            "text": "Whether testimony and extraordinary character provide sufficiently discriminating historical support for resurrection and divine identity.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges the historical warrant and compares resurrection testimony with other revival claims that Christians reject.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It contacts the decisive credibility and comparison demands, but the numerical prior and historical-source critique are only briefly defended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The claim distinguishes event occurrence from justified belief, with the exact numerical prior functioning rhetorically rather than precisely."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Strong skepticism fits the comparative concern, but the stated hundred-billion-to-one figure lacks a presented derivation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Multiple early sources, transformed followers, and contextual facts might make Jesus's resurrection case stronger than generic miracle reports.",
+        "decisiveQualification": "Those facts still require independence, reliability, and comparison with nonmiraculous explanations and rival revival testimony."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "Separating what happened from what evidence justifies belief is coherent, and rival miracle claims create a valid consistency test."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The comparative testimony point is relevant, but the extreme numerical prior and characterization of historical weakness are underdocumented."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly attacks the central affirmative Jesus bridge required for biblical identification."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The response raises the correct comparative test but does not fully examine the strongest cumulative historical case."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes occurrence from knowledge, assigns an extreme prior, and notes numerous other claims of return from death.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-afterlife-rectification",
+      "sectionId": "section-suffering",
+      "side": "pro",
+      "speaker": "Kyle Butt",
+      "moveKind": "reply",
+      "proposition": "Personal suffering does not entail God's nonexistence because suffering may draw people toward God and be rectified in an eternal afterlife.",
+      "sourceSpan": {
+        "startEvent": 2513,
+        "endEvent": 2536
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator exchange and direct transition from Shermer's autobiographical account clearly identify Butt as the responding speaker.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-suffering"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-gratuitous-suffering"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-afterlife-rectification-component-01",
+            "targetMoveId": "move-con-gratuitous-suffering",
+            "text": "Whether severe innocent suffering remains gratuitous if it can transform persons and be fully rectified in an eternal afterlife.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly offers transformative purpose and ultimate compensation, contacting the demand for reconciliation with divine goodness.",
+        "responsivenessWithinClass": {
+          "value": 81,
+          "rationale": "It answers with two relevant mechanisms, but their possibility does not establish that particular suffering is necessary or proportionate."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The response clearly states possible spiritual transformation and afterlife rectification, while leaving necessity and universality implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move is appropriately framed as a possible ultimate account rather than a demonstrated explanation of every instance."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Later compensation may not justify permitting avoidable agony, and suffering can drive people away rather than toward God.",
+        "decisiveQualification": "Rectification must be distinguished from prior justification, especially where less harmful means appear possible."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "Afterlife rectification coherently answers final unfairness, though it does not by itself explain why the suffering was permitted."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "The response relies on reported transformative experiences and theological possibility without independent support for an afterlife or universal rectification."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly attacks the central con suffering bridge by proposing reconciliation and ultimate correction."
+        },
+        "representationalCharity": {
+          "value": 71,
+          "rationale": "The answer recognizes divergent reactions to suffering but does not resolve whether compensation makes the original permission benevolent."
+        }
+      },
+      "evidenceBasis": "The excerpt says suffering can draw people toward God and that an afterlife could make present affliction ultimately right.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-natural-selection",
+      "sectionId": "section-design",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Biological complexity does not establish a supernatural designer because natural selection is an observable bottom-up process that produces functional adaptations.",
+      "sourceSpan": {
+        "startEvent": 2793,
+        "endEvent": 2826
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains within Shermer's uninterrupted closing statement and explicitly develops his naturalistic answer to design.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-natural-alternatives"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-design-inference"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-natural-selection-component-01",
+            "targetMoveId": "move-pro-design-inference",
+            "text": "Whether functional biological organization requires top-down intelligence when an observable bottom-up mechanism produces adaptation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies the artifact analogy's relevant disanalogy and states natural selection as the defeating causal alternative for biological function.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It explicitly contacts the necessity inference, names the alternative mechanism, and explains why direct designer observation differs from artifacts."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The argument is specifically limited to biological functional adaptation and distinguishes it from directly observed human design."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Natural selection is appropriately presented as a scientific explanation defeating the claim that biological function requires intelligence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Design proponents may argue that selection cannot originate all necessary information or integrated systems even if it modifies adaptations.",
+        "decisiveQualification": "The natural explanation must address origin and integration claims, not merely demonstrate adaptive modification."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The inference that a demonstrated bottom-up mechanism defeats design necessity is coherent and directly relevant."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "Natural selection is a specific observable mechanism, though the excerpt does not document detailed examples or boundaries of its explanatory scope."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central con natural-alternatives bridge against biological design."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The response handles the core analogy and mechanism fairly, with a bounded omission concerning origin-of-information formulations."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts observable artifact designers with an unobservable supernatural designer and identifies natural selection as bottom-up functional design.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-fine-tuning-ignorance",
+      "sectionId": "section-design",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Fine-tuning arguments infer design from unresolved physics and therefore do not constitute established evidence for God.",
+      "sourceSpan": {
+        "startEvent": 2827,
+        "endEvent": 2852
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is a clearly signposted final topic within Shermer's continuous closing statement, with no ambiguity about speaker identity.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-natural-alternatives"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-design-inference"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-fine-tuning-ignorance-component-01",
+            "targetMoveId": "move-pro-design-inference",
+            "text": "Whether unresolved values of physical constants constitute positive evidence requiring an intelligent designer.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly argues that unresolved physics does not license a design conclusion, but offers uncertainty more than a developed alternative explanation.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "It contacts the decisive warrant gap in the fine-tuning inference while leaving probability, parameter ranges, and selection effects unexamined."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The objection is clearly limited to inferring established design from current gaps in physical understanding."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The acknowledged lack of a unified theory appropriately supports withholding an established design inference, not asserting a contrary theory."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Fine-tuning may be probabilistic evidence for design even before physics is complete if life-permitting values are independently improbable.",
+        "decisiveQualification": "The objection must examine probability measures and competing hypotheses rather than treating incompleteness alone as defeat."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The caution against inferring design from unresolved physics is sound, though ignorance alone does not show design lacks all evidential support."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The absence of a quantum-gravity unification supports caution but does not directly resolve the distribution or probability of constants."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the con natural-alternatives bridge by keeping cosmic fine-tuning unresolved."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The reply fairly stresses uncertainty but does not fully engage the strongest Bayesian form of the fine-tuning argument."
+        }
+      },
+      "evidenceBasis": "The excerpt emphasizes the absence of a unified account joining quantum physics and general relativity before rejecting confident fine-tuning conclusions.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-nonphysical-cause",
+      "sectionId": "section-causation",
+      "side": "pro",
+      "speaker": "Kyle Butt",
+      "moveKind": "reply",
+      "proposition": "Physical matter cannot cause the universe's own existence, so the cause required by physical effects must be nonphysical.",
+      "sourceSpan": {
+        "startEvent": 2875,
+        "endEvent": 2900
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator has explicitly transferred the closing statement to Butt, who summarizes his own four foundational arguments in the first person.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-causation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-regress-objection"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-nonphysical-cause-component-01",
+            "targetMoveId": "move-con-regress-objection",
+            "text": "Whether an epistemic regress boundary can be identified as nonphysical because physical matter cannot cause its own total existence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly argues for a nonphysical terminus, but it largely restates the causal premise rather than defeating the regress objection.",
+        "responsivenessWithinClass": {
+          "value": 69,
+          "rationale": "It contacts the decisive nature-of-cause issue, yet does not answer special pleading or justify applying the premise to the universe as a whole."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "Physical effect and nonphysical cause are recoverable, but the scope from effects within nature to nature's totality remains unstable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The conclusion is asserted as necessary despite the unresolved composition, beginning, and causal-category questions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The universe may be uncaused, self-contained, emergent from unknown physics, or caused without a personal supernatural agent.",
+        "decisiveQualification": "Excluding physical self-causation does not exhaust nonpersonal or unknown explanatory possibilities."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 63,
+          "rationale": "The argument repeats a recognizable causal inference but still lacks the bridge from physical effects to a nonphysical cause of total reality."
+        },
+        "evidenceWarrant": {
+          "value": 57,
+          "rationale": "The appeal to unnamed scientific authorities supports ordinary causation only weakly and does not establish the extrapolated conclusion."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central affirmative causation bridge by specifying a cause beyond physical matter."
+        },
+        "representationalCharity": {
+          "value": 57,
+          "rationale": "The response addresses physical self-causation but does not engage the strongest underdetermination alternatives raised by the objection."
+        }
+      },
+      "evidenceBasis": "The excerpt summarizes the claim that physical material effects require causes and infers that the universe's cause must be nonphysical.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-information-origin",
+      "sectionId": "section-design",
+      "side": "pro",
+      "speaker": "Kyle Butt",
+      "moveKind": "reply",
+      "proposition": "Complex functional information and integrated biological structures can indicate intelligent origin even when the designer is not directly observed.",
+      "sourceSpan": {
+        "startEvent": 2900,
+        "endEvent": 2948
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is the second enumerated argument in Butt's uninterrupted closing statement and explicitly answers Shermer's watch analogy.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-design"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-natural-selection",
+          "move-con-fine-tuning-ignorance"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-information-origin-component-01",
+            "targetMoveId": "move-con-natural-selection",
+            "text": "Whether natural selection adequately explains the origin of complex functional information and integrated biological systems.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-information-origin-component-02",
+            "targetMoveId": "move-con-fine-tuning-ignorance",
+            "text": "Whether incomplete physics defeats the separate inference from fine-tuned constants to intelligence.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges natural selection on information origin but does not contact the distinct fine-tuning objection concerning unresolved physics.",
+        "responsivenessWithinClass": {
+          "value": 71,
+          "rationale": "It contacts the decisive biological origin demand, while chiefly asserting a universal intelligence generalization and denying evolution."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "Complex functional information is central and recoverable, but information alternates between human products and biological organization without criteria."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "radically-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The claim that intelligence is the cause in every known instance excludes biological evolution by assertion and exceeds the presented evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Mutation, recombination, selection, drift, and cumulative retention can generate functional biological information without foresight.",
+        "decisiveQualification": "The reply must analyze those mechanisms and define information rather than exclude evolutionary cases from the comparison."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 55,
+          "rationale": "The argument risks circularity by defining known functional-information origins to exclude the evolutionary cases under dispute."
+        },
+        "evidenceWarrant": {
+          "value": 44,
+          "rationale": "The categorical denial of evolution and universal intelligence claim are unsupported in the excerpt and omit serious mechanism comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central affirmative design bridge by defending intelligent origin for biological organization."
+        },
+        "representationalCharity": {
+          "value": 45,
+          "rationale": "Calling evolution untrue and nonexplanatory bypasses rather than answers the strongest source-supported natural mechanism."
+        }
+      },
+      "evidenceBasis": "The excerpt asserts that every known origin of complex functional information is intelligent, denies evolution, and invokes integrated biological complexity.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct affirmative debate-wide consequence survives the strict exclusion rule beyond effects already represented in individual move judgments.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was established beyond the locked bridge and move assessments.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No separate debate-wide affirmative consequence remains after excluding duplicate capture.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance findings"
+        ],
+        "counterfactual": "Removing any proposed residual would not change burden completion independently of the recorded move judgments."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct negative debate-wide consequence survives the strict exclusion rule beyond effects already represented in individual move judgments.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was established beyond the locked bridge and move assessments.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No separate debate-wide negative consequence remains after excluding duplicate capture.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance findings"
+        ],
+        "counterfactual": "Removing any proposed residual would not change burden completion independently of the recorded move judgments."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
