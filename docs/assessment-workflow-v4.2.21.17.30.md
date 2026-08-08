@@ -1,0 +1,5 @@
+# Slugfester Hard-Route Single Deterministic Score Pass v4.2.21.17.30
+
+After the v17.29 final raw-judgment ledger is frozen and validated, derive scores exactly once with the repository v4.1 formula. In that one execution, derive Pass A, Pass B, and final scores for the five debates; the initial-pass scores exist only for prospective stability diagnostics. Make no model or API call and permit no retry, correction pass, formula change, post-result threshold tuning, or automatic rerun.
+
+Accept the score gate only if every score is an integer from 0 through 100, every winner on which the independent passes agreed is preserved, mean absolute final-score distance from the two independent passes is at most four points, maximum distance from either pass is at most eight points, and maximum excursion outside the two-pass range is at most three points. Existing production scores are diagnostic references only and never enter acceptance. Passing or failing this gate authorizes workflow-quality analysis, not publication, production mutation, or the 195-debate run.
