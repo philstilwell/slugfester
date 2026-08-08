@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Slugfester v4.2.21.17.40 final publication preview</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="/src/styles.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module">
+      import { renderCalibrationDebate } from "/src/app.js";
+      const allowedHosts = new Set(["127.0.0.1", "localhost"]);
+      const allowedDebates = new Set(["51", "63", "90", "153", "165"]);
+      const params = new URLSearchParams(window.location.search);
+      const debateNumber = params.get("debate") || "51";
+      if (!allowedHosts.has(window.location.hostname)) {
+        document.querySelector("#app").innerHTML = "<main><h1>Calibration preview unavailable</h1><p>This harness is restricted to local review.</p></main>";
+      } else if (!allowedDebates.has(debateNumber)) {
+        document.querySelector("#app").innerHTML = "<main><h1>Unknown calibration debate</h1></main>";
+      } else {
+        const response = await fetch(`../compiled/debate-${debateNumber}.json`);
+        if (!response.ok) throw new Error(`Unable to load Debate ${debateNumber} preview data`);
+        renderCalibrationDebate(await response.json());
+      }
+    </script>
+  </body>
+</html>
