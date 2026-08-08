@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "4.2.21.17.36-hard-route-publication-integrity-model-execution",
+  "protocolId": "v4.2.21.17.36-hard-route-publication-integrity",
+  "status": "hard-route-publication-gate-complete-with-failure",
+  "gateStartedAt": "2026-08-08T15:44:33.732Z",
+  "gateCompletedAt": "2026-08-08T15:49:13.448Z",
+  "contextsPlanned": 5,
+  "contextsAttempted": 1,
+  "unattemptedContextIndexes": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "validContexts": 0,
+  "invalidContexts": 1,
+  "attempts": 1,
+  "retries": 0,
+  "correctionContexts": 0,
+  "maximumObservedConcurrency": 1,
+  "wallElapsedMs": 279716,
+  "aggregateModelElapsedMs": 279699,
+  "meanElapsedMs": 279699,
+  "rampPhases": [
+    {
+      "phase": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": 2,
+      "contextIndexes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": true
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "51",
+      "debateId": "lennox-atkins-duelling-professors-2012",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-08T15:44:33.733Z",
+      "completedAt": "2026-08-08T15:49:13.431Z",
+      "elapsedMs": 279699,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "copiedInputBytes": 201245,
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "099bebb672e57df8ba9faac643b24ffe0bab908415f3bbae20eabc00430e17ef",
+      "stderrSha256": "bcc12bb40c317817febe90e71dd212da046abe83b638de7a1ced65f42d428613",
+      "status": "output-validation-failed",
+      "gateAcceptancePassed": false,
+      "outputWritten": true,
+      "outputSha256": "e3b3a0142c6dd5b845cbb4e7a420ed3515975b21539c00da08874a5deb824516",
+      "validationSummary": null,
+      "validationMessage": "Error: con: quote outside 3–18 words\n    at assertV4 (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69:25)\n    at validateV42211732PublicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v42211732-hard-route-publication.mjs:198:5)\n    at validateV42211736PublicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v42211736-hard-route-publication-integrity.mjs:9:16)\n    at runContext (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-v42211736-hard-route-publication-integrity.mjs:63:26)\n    at async worker (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-v42211736-hard-route-publication-integrity.mjs:80:96)\n    at async Promise.all (index 0)\n    at async runPool (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-v42211736-hard-route-publication-integrity.mjs:81:3)\n    at async file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-v42211736-hard-route-publication-integrity.mjs:90:24"
+    }
+  ],
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsdThisStage": 0,
+  "modelAuthoredScores": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "retry": false,
+    "correctionModelExecution": false,
+    "deterministicCompilation": false,
+    "renderingVerification": false,
+    "readinessPromotion": false
+  }
+}
