@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "4.2.21.17.32-hard-route-publication-model-execution",
+  "protocolId": "v4.2.21.17.32-hard-route-publication-reconstruction",
+  "status": "hard-route-publication-gate-complete-with-failure",
+  "gateStartedAt": "2026-08-08T14:47:31.282Z",
+  "gateCompletedAt": "2026-08-08T14:47:33.184Z",
+  "contextsPlanned": 5,
+  "contextsAttempted": 1,
+  "unattemptedContextIndexes": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "validContexts": 0,
+  "invalidContexts": 1,
+  "attempts": 1,
+  "retries": 0,
+  "correctionContexts": 0,
+  "maximumObservedConcurrency": 1,
+  "wallElapsedMs": 1901,
+  "aggregateModelElapsedMs": 1889,
+  "meanElapsedMs": 1889,
+  "rampPhases": [
+    {
+      "phase": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": 2,
+      "contextIndexes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": true
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "51",
+      "debateId": "lennox-atkins-duelling-professors-2012",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-08T14:47:31.283Z",
+      "completedAt": "2026-08-08T14:47:33.172Z",
+      "elapsedMs": 1889,
+      "timedOut": false,
+      "commandExitCode": 1,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "copiedInputBytes": 200856,
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "d3da9b41b0a74e1aa52662397af11f9e23f176afb49532119d8db0ed221ca367",
+      "status": "result-missing",
+      "gateAcceptancePassed": false,
+      "outputWritten": false,
+      "failureMessage": "Reading additional input from stdin...\nOpenAI Codex v0.147.0-alpha.6.5\n--------\nworkdir: /private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/v42211732-publication-51-L1lNH6\nmodel: gpt-5.6-sol\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: low\nreasoning summaries: none\nsession id: 019fe1d7-ea03-7d63-8c07-65cd5a3c7ca2\n--------\nuser\nRead workflow.md, output-contract.md, manual.md, reference-catalog.json, packet.json, and schema.json completely and no other files. Act only as the isolated publication editor for Debate 51. Participant judgment and every score are closed and repository-owned. Author exactly the schema fields: source-exact representative quotes, prose for every locked move, Overall Commentary, post-scoring references, and a balanced separately disclosed AI Extension with complete novelty mappings. Write every critique in exactly four labeled sentences and 112–122 words. Use only exact local references. Never infer or emit a score, change identity or structure, consult legacy assessment material, or attribute AI material to a participant. Return exactly one schema-conforming JSON object and nothing else.\nERROR: {\n  \"type\": \"error\",\n  \"error\": {\n    \"type\": \"invalid_request_error\",\n    \"code\": \"invalid_json_schema\",\n    \"message\": \"Invalid schema for response_format 'codex_output_schema': In context=('properties', 'aiExtension', 'properties', 'pro', 'properties', 'thesis', 'properties', 'novelty', 'properties', 'sourceMoveIds'), 'uniqueItems' is not permitted.\",\n    \"param\": \"text.format.schema\"\n  },\n  \"status\": 400\n}\nERROR: {\n  \"type\": \"error\",\n  \"error\": {\n    \"type\": \"invalid_request_error\",\n    \"code\": \"invalid_json_schema\",\n    \"message\": \"Invalid schema for response_format 'codex_output_schema': In context=('properties', 'aiExtension', 'properties', 'pro', 'properties', 'thesis', 'properties', 'novelty', 'properties', 'sourceMoveIds'), 'uniqueItems' is not permitted.\",\n    \"param\": \"text.format.schema\"\n  },\n  \"status\": 400\n}"
+    }
+  ],
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsdThisStage": 0,
+  "modelAuthoredScores": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "retry": false,
+    "correctionModelExecution": false,
+    "deterministicCompilation": false,
+    "renderingVerification": false,
+    "readinessPromotion": false
+  }
+}
