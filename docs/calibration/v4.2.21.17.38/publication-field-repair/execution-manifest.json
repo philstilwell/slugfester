@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "4.2.21.17.38-publication-field-repair-execution-manifest",
+  "protocolId": "v4.2.21.17.38-publication-field-repair",
+  "status": "frozen-two-isolated-publication-field-repairs-authorized",
+  "frozenAt": "2026-08-08T16:11:42Z",
+  "checkpointCommit": "6ed7d7b1a78c86ff580374d7815e4ea54af736a8",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "costEstimate": {
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "expectedWallMinutes": [
+      3,
+      8
+    ],
+    "expectedAggregateModelMinutes": [
+      4,
+      10
+    ]
+  },
+  "contexts": [
+    {
+      "debateNumber": "153",
+      "debateId": "oconnor-carter-free-will-determinism-2024",
+      "repairType": "critique-word-boundary",
+      "packet": "docs/calibration/v4.2.21.17.38/publication-field-repair/packets/debate-153.json",
+      "schema": "docs/calibration/v4.2.21.17.38/publication-field-repair/schemas/debate-153.schema.json",
+      "repairOutput": "docs/calibration/v4.2.21.17.38/publication-field-repair/repair-outputs/debate-153.json",
+      "baseOutput": "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/outputs/debate-153.json",
+      "publicationPacket": "docs/calibration/v4.2.21.17.33/hard-route-publication-transport-repair/packets/debate-153.json",
+      "finalOutput": "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-153.json",
+      "correctedFields": 8,
+      "copiedInputBytes": 52558
+    },
+    {
+      "debateNumber": "165",
+      "debateId": "craig-rosenberg-faith-god-reasonable-2013",
+      "repairType": "representative-quote-exactness",
+      "packet": "docs/calibration/v4.2.21.17.38/publication-field-repair/packets/debate-165.json",
+      "schema": "docs/calibration/v4.2.21.17.38/publication-field-repair/schemas/debate-165.schema.json",
+      "repairOutput": "docs/calibration/v4.2.21.17.38/publication-field-repair/repair-outputs/debate-165.json",
+      "baseOutput": "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/raw-outputs/debate-165.json",
+      "publicationPacket": "docs/calibration/v4.2.21.17.33/hard-route-publication-transport-repair/packets/debate-165.json",
+      "finalOutput": "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-165.json",
+      "correctedFields": 1,
+      "copiedInputBytes": 9262
+    }
+  ],
+  "acceptedDebates": [
+    {
+      "debateNumber": "51",
+      "sourceOutput": "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/outputs/debate-51.json",
+      "publicationPacket": "docs/calibration/v4.2.21.17.33/hard-route-publication-transport-repair/packets/debate-51.json",
+      "finalOutput": "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-51.json"
+    },
+    {
+      "debateNumber": "63",
+      "sourceOutput": "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/outputs/debate-63.json",
+      "publicationPacket": "docs/calibration/v4.2.21.17.33/hard-route-publication-transport-repair/packets/debate-63.json",
+      "finalOutput": "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-63.json"
+    },
+    {
+      "debateNumber": "90",
+      "sourceOutput": "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/outputs/debate-90.json",
+      "publicationPacket": "docs/calibration/v4.2.21.17.33/hard-route-publication-transport-repair/packets/debate-90.json",
+      "finalOutput": "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-90.json"
+    }
+  ],
+  "executionPolicy": {
+    "contexts": 2,
+    "attemptsPerContext": 1,
+    "retries": 0,
+    "furtherCorrectionContexts": 0,
+    "maximumConcurrency": 2,
+    "timeoutMsPerContext": 480000,
+    "maximumMinutesPerContext": 6,
+    "maximumMeanMinutes": 5,
+    "modelAuthoredScores": 0
+  },
+  "isolation": {
+    "oneDebatePerContext": true,
+    "onlyExtractedInvalidFieldsWritable": true,
+    "acceptedFieldsUnavailableAsOutputFields": true,
+    "scoresUnavailableAsOutputFields": true,
+    "otherDebatesUnavailable": true,
+    "retries": 0,
+    "furtherCorrectionContexts": 0
+  },
+  "authorization": {
+    "repairModelContexts": true,
+    "deterministicAnalysis": true,
+    "merge": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "all195Debates": false
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.2.21.17.38/publication-field-repair/model-execution.json",
+    "analysis": "docs/calibration/v4.2.21.17.38/publication-field-repair/analysis.json",
+    "mergeAudit": "docs/calibration/v4.2.21.17.38/publication-field-repair/merge-audit.json",
+    "repairOutputs": [
+      "docs/calibration/v4.2.21.17.38/publication-field-repair/repair-outputs/debate-153.json",
+      "docs/calibration/v4.2.21.17.38/publication-field-repair/repair-outputs/debate-165.json"
+    ],
+    "finalOutputs": [
+      "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-51.json",
+      "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-63.json",
+      "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-90.json",
+      "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-153.json",
+      "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-165.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/repair-outputs/debate-153.json",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/repair-outputs/debate-165.json",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-51.json",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-63.json",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-90.json",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-153.json",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/outputs/debate-165.json",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/model-execution.json",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/analysis.json",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/merge-audit.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.21.17.38.md": "8e3ac33f7175f84d75d8c3d1d1511a5e289ecaff4e144a21dc37cc1309bad279",
+    "docs/calibration/v4.2.21.17.33/hard-route-publication-transport-repair/packets/debate-153.json": "768af92e30958d9125eb536ec595ace3badb2286bbbe679cc33efba6d6425250",
+    "docs/calibration/v4.2.21.17.33/hard-route-publication-transport-repair/packets/debate-165.json": "ee923f1a55514ea766df2503f7b08bccafad1315139d0c83d5d56e3242c7719a",
+    "docs/calibration/v4.2.21.17.33/hard-route-publication-transport-repair/packets/debate-51.json": "829cfe04521fd8984a495a37b5710fb55e98545dc32024e392e014d2b3d0f663",
+    "docs/calibration/v4.2.21.17.33/hard-route-publication-transport-repair/packets/debate-63.json": "a5a73d38a5dc3a175912d442a138d606102d85bd03528f42106e25841298dbd6",
+    "docs/calibration/v4.2.21.17.33/hard-route-publication-transport-repair/packets/debate-90.json": "54fe477a0081aa86f3ca80b6df171ac53523f9d16b6bf7a74de3e8c06f1cbd93",
+    "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/analysis.json": "d2fa4c18edb0efeb9d333746e6837d120ff1ffba4d3bcd201068a018b714cfe7",
+    "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/model-execution.json": "6e77eab98a7bad29b930b46ea114869e260858c7d3905ce46d21b053b163978b",
+    "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/outputs/debate-153.json": "3bda2e9f442e2b409ef7953cb0cf29e32cf66d2101412b795816c31012509760",
+    "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/outputs/debate-51.json": "fa649b3321ff023892ee3383c7c1c8520d0fe7207712ebd4f06eb9ee775027d3",
+    "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/outputs/debate-63.json": "c967fbd022adf67106c3c4b94034e4ae175c267099faa28beca875764d2a5128",
+    "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/outputs/debate-90.json": "c723505a3be57d2d361481b4da08c8812d0974be89eff81e8a7e7aad5026c167",
+    "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/preparation-manifest.json": "615694065673df05d498602d036ddcdf3e584c7456c90533d7b60fc6e003fd8c",
+    "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/raw-outputs/debate-165.json": "e4c1498b971bd373c29a161f2931dc036aefd180d602b21abae9b7060dc757e5",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/packets/debate-153.json": "d42f23502bd36584900b7fbe2f79cbff7d71abb65d3f07b47fffe34f87c1e331",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/packets/debate-165.json": "82cd06db188c46b3e2e5a0e59f1fdd1501af3f75a6028789f9ee37d580c3d3e1",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/schemas/debate-153.schema.json": "82ab4a98a27ce56895710815419551662da044ef941c7a0adf15c906cd2d166d",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/schemas/debate-165.schema.json": "508870172f700c09c155cadea19aaa3ed9a4f8fd63b3051cb7e80ac2e790bf66",
+    "scripts/analyze-v42211738-publication-field-repair.mjs": "471f7163d610b363455106e3d5e127f9af9a61964cb3bf81052afe4ddfd2737f",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v42211732-hard-route-publication.mjs": "176281d03fa4f078fe4ec06c21730e8b10820f68e9244a83b0f6a60ff6adc131",
+    "scripts/lib/v42211736-hard-route-publication-integrity.mjs": "4ef64bef74655654fa585f6327206f2827c555f376f1134f0bc24fec91019ea4",
+    "scripts/lib/v42211737-hard-route-publication-normalization.mjs": "8911030cb8964c72db61c39c4b49f148433afaba7938cea00fe8708e739f327e",
+    "scripts/lib/v42211738-publication-field-repair.mjs": "d0bcd017953305250288f685250197d1cfffcd99653762d0e945a196725f6c66",
+    "scripts/prepare-v42211738-publication-field-repair.mjs": "4046e28d4f93dcb3a7d0bb0952db3ae025bfbf0d8b0862cee2f1336420686081",
+    "scripts/preregister-v42211738-publication-field-repair.mjs": "285d59433b8010d294552e4697d8c646dcacec61488b70517ba7f20bbd5264df",
+    "scripts/run-v42211738-publication-field-repair.mjs": "b43ab4e1b59fd4891a7d766e113a6a3b5fa19dab57f22ab73bfa452decf51389",
+    "scripts/test-v42211738-publication-field-repair-gate.mjs": "926d91fe8eb2aa2b2d0c6412274077661cb60654b29e3c1df47f4201f80d4b5c"
+  }
+}
