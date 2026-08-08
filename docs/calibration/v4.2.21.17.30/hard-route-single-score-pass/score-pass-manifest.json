@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "4.2.21.17.30-hard-route-single-score-pass-manifest",
+  "protocolId": "v4.2.21.17.29-hard-route-adjudicated-consensus",
+  "status": "frozen-hard-route-single-deterministic-score-pass",
+  "frozenAt": "2026-08-08T01:06:37Z",
+  "checkpointCommit": "78c3a5a8bd0cafd9eb55495c9fc86b3db5287f6d",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "inputs": {
+    "finalLedger": "docs/calibration/v4.2.21.17.29/hard-route-final-ledger/final-ledger.json",
+    "finalLedgerAnalysis": "docs/calibration/v4.2.21.17.29/hard-route-final-ledger/analysis.json",
+    "productionReference": "src/data/debates.js",
+    "debates": 5,
+    "finalSides": 10
+  },
+  "scoringPolicy": {
+    "passes": 1,
+    "repositoryDerivedOnly": true,
+    "modelScoringAllowed": false,
+    "scoresDerivedAfterAdjudicationOnly": true,
+    "initialPassScoresDerivedInSamePostAdjudicationPassForStabilityOnly": true,
+    "formulaChangesAllowed": false,
+    "postResultTuningAllowed": false,
+    "automaticRerunAllowed": false
+  },
+  "acceptanceRule": {
+    "prospective": true,
+    "productionScoresDiagnosticOnly": true,
+    "agreedInitialWinnerMustBePreserved": true,
+    "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+    "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+    "maximumOutsideInitialRangeMaximum": 3
+  },
+  "artifacts": {
+    "calculatedScores": "docs/calibration/v4.2.21.17.30/hard-route-single-score-pass/calculated-scores.json",
+    "analysis": "docs/calibration/v4.2.21.17.30/hard-route-single-score-pass/analysis.json"
+  },
+  "authorization": {
+    "scoreDerivation": true,
+    "scorePassesMaximum": 1,
+    "workflowQualityAnalysis": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "all195Debates": false
+  },
+  "sourceHashes": {
+    "docs/calibration/v4.2.21.17.29/hard-route-final-ledger/final-ledger.json": "f9d14ab8e11ba898d6f3c28419dec9e36266e8105b6ba059b5a60d0e01e09b6f",
+    "docs/calibration/v4.2.21.17.29/hard-route-final-ledger/analysis.json": "6e595a8ab744c78683392f257e6cabca8505fd890d6e3bb0b4295431ae5309dc",
+    "src/data/debates.js": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/assessment-workflow-v4.2.21.17.30.md": "08ebb63b9812f4c16457afc9147b545fb587bdabf11cc44319d31cd4608530bc",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v4220-source-span-rendering.mjs": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+    "scripts/lib/v42211729-hard-route-final-ledger.mjs": "d11f5f4b3b1db4e4f38a4a070ec1aead71c7481b781b9f9b124bb308c50c3d63",
+    "scripts/lib/v42211730-hard-route-score-gate.mjs": "b6ae8a9c42e7baf148fb887cad6a8c9638b4c45ca1ef5ea108445f1ce22b798e",
+    "scripts/test-v42211730-hard-route-score-gate.mjs": "c3d369358c06db03e619be52dfcb9a1ae3a6a34401afd83afb43e424572f50cc",
+    "scripts/preregister-v42211730-hard-route-score-pass.mjs": "0d1fcc0d3a15b3bc90d3e0aa8ff38af25469da376d7311ca44c0f0fa5484b90e",
+    "scripts/derive-v42211730-hard-route-scores.mjs": "bd1192d9caa30da83e99e45f6ecfb07f1aa2365df3c05f75e7a29eee136566ff",
+    "scripts/analyze-v42211730-hard-route-scores.mjs": "341c6e703381f799143f6740877fd7edb2836f08abfe68c9f6795bce8b01c3d7"
+  }
+}
