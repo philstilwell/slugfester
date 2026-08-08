@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "4.2.21.17.41-hard-route-publication-readiness-analysis",
+  "protocolId": "v4.2.21.17.41-hard-route-publication-readiness",
+  "status": "ready-for-staged-195-debate-production-manifest",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "quality": {
+    "sourceChain": "passed",
+    "twoIndependentJudgmentsPerDebate": 10,
+    "disputedMovesAdjudicated": 94,
+    "audioTriggersResolved": 3,
+    "scorePasses": 1,
+    "scoreStabilityPassed": true,
+    "publicationDebatesValidated": 5,
+    "publicationMovesValidated": 100,
+    "publicationCritiquesValidated": 100,
+    "exactRepresentativeQuotes": 10,
+    "desktopMobilePagesValidated": 5,
+    "modelAuthoredScores": 0,
+    "productionRecordsMutated": 0
+  },
+  "publicationRepairEvidence": {
+    "firstPassDebatesRequiringFieldRepair": 2,
+    "firstPassDebates": 5,
+    "observedAffectedDebateRate": 0.4,
+    "acceptedRepairFields": 9,
+    "finalInvalidFields": 0,
+    "productionControl": "partition invalid fields into isolated packets of at most two fields; one attempt per packet; no recursive automatic retry"
+  },
+  "computeProjection": {
+    "basis": "stage-batched wall-clock planning estimate, not aggregate serial model time",
+    "throughScoresHours": 33.07,
+    "publicationPrimaryMeanMinutesPerDebate": 4.06,
+    "publicationPrimaryHoursAtTwoSlots": 6.6,
+    "conservativePublicationRepairHoursAtTwoSlots": 2.33,
+    "deterministicCompilationAndRenderingHours": 1.5,
+    "sourcePreparationAndOrchestrationReserveHours": 4,
+    "projectedTotalHours": 47.49,
+    "targetHours": 50,
+    "remainingHeadroomHours": 2.51,
+    "confidence": "medium",
+    "uncertainties": [
+      "ChatGPT subscription throughput and rate limits may vary.",
+      "The repair-incidence estimate comes from five deliberately difficult debates.",
+      "Paid transcription fallback frequency across the full corpus is not yet observed in production.",
+      "The estimate assumes the tested stage concurrency and excludes human review time."
+    ]
+  },
+  "decision": {
+    "qualityAssessment": "The workflow is sufficiently rigorous and internally controlled for an AI-only staged production run. Source fidelity, pass isolation, deterministic dispute extraction, audio escalation, adjudication-before-scoring, score stability, publication integrity, and responsive rendering have each passed on the five hard-route debates.",
+    "limitations": "The result remains an AI adjudicated consensus rather than ground truth. The 94% dispute rate makes adjudication a core stage, and the 40% publication-repair incidence requires a bounded field-only repair lane.",
+    "readyForWorkflowConsolidation": true,
+    "readyForFrozenProductionManifest": true,
+    "readyForStagedAll195": true,
+    "readyForUnattendedOneShotAll195": false,
+    "mandatoryFirstCheckpointDebates": 10,
+    "threePlusSpeakerDebatesExcluded": true,
+    "productionMutationRequiresPerDebateFinalValidation": true
+  },
+  "stopConditions": [
+    "missing or hash-invalid local transcript",
+    "speaker-count ambiguity or more than two substantive interlocutors",
+    "model context isolation failure",
+    "unresolved medium-confidence audio verification",
+    "adjudication packet or final-ledger validation failure",
+    "model-authored or hand-adjusted score",
+    "non-exact representative quotation",
+    "failed bounded publication repair",
+    "desktop or mobile rendering regression",
+    "projected run time exceeding the 50-hour planning target without renewed approval"
+  ],
+  "authorization": {
+    "workflowConsolidation": true,
+    "productionManifestPreparation": true,
+    "modelExecution": false,
+    "paidTranscription": false,
+    "productionMutation": false,
+    "all195DebatesExecution": false
+  },
+  "sources": {
+    "throughScoresReadiness": "docs/calibration/v4.2.21.17.31/hard-route-workflow-readiness/analysis.json",
+    "publicationTiming": "docs/calibration/v4.2.21.17.37/hard-route-publication-normalization/model-execution.json",
+    "fieldRepairExecution": "docs/calibration/v4.2.21.17.38/publication-field-repair/model-execution.json",
+    "microRepairExecution": "docs/calibration/v4.2.21.17.39/publication-micro-repair/model-execution.json",
+    "finalization": "docs/calibration/v4.2.21.17.40/hard-route-publication-finalization/merge-audit.json",
+    "rendering": "docs/calibration/v4.2.21.17.41/hard-route-publication-readiness/rendering-audit.json"
+  }
+}

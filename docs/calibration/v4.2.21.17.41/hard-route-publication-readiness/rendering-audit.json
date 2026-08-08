@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "4.2.21.17.41-hard-route-publication-rendering-audit",
+  "protocolId": "v4.2.21.17.41-hard-route-publication-readiness",
+  "status": "passed-five-debate-desktop-mobile-rendering-gate",
+  "calibrationOnly": true,
+  "testedAt": "2026-08-08T16:24:19Z",
+  "browser": "Playwright Chromium",
+  "source": {
+    "finalizationAudit": "docs/calibration/v4.2.21.17.40/hard-route-publication-finalization/merge-audit.json",
+    "finalizationAuditSha256": "9e1c13b1cf901b46d111e7d6d1892ce0ff4f4b0926a4ce61f959e245e769cb81",
+    "stylesheet": "src/styles.css",
+    "stylesheetSha256": "a3e07d76fe4ac22fb2744dae17879175cfb46e1934ed726a52c2ac6c149f7d32"
+  },
+  "viewports": {
+    "desktop": { "width": 1440, "height": 1000 },
+    "mobile": { "width": 390, "height": 844 }
+  },
+  "debates": [
+    { "debateNumber": "51", "desktopPassed": true, "mobilePassed": true },
+    { "debateNumber": "63", "desktopPassed": true, "mobilePassed": true },
+    { "debateNumber": "90", "desktopPassed": true, "mobilePassed": true },
+    { "debateNumber": "153", "desktopPassed": true, "mobilePassed": true },
+    { "debateNumber": "165", "desktopPassed": true, "mobilePassed": true }
+  ],
+  "checks": {
+    "exactByline": { "passed": true, "count": 5 },
+    "immediatelyAfterOverallCommentary": { "passed": true, "count": 5 },
+    "defaultCollapsed": { "passed": true, "count": 5 },
+    "pointerOpen": { "passed": true, "count": 5 },
+    "keyboardToggle": { "passed": true, "count": 5 },
+    "aiDisclosureVisibleWhenOpen": { "passed": true, "count": 5 },
+    "twoStrengthenedFinalArguments": { "passed": true, "count": 5 },
+    "twoNewArgumentPanels": { "passed": true, "count": 5 },
+    "distinctBackground": { "passed": true, "count": 5 },
+    "prohibitedUnassailableAbsent": { "passed": true, "count": 5 },
+    "desktopHorizontalOverflowAbsent": { "passed": true, "count": 5 },
+    "mobileHorizontalOverflowAbsent": { "passed": true, "count": 5 },
+    "consoleErrors": 0,
+    "consoleWarnings": 0
+  },
+  "defectAndRepair": {
+    "detected": "The unbroken transcript SHA-256 in the source note caused mobile horizontal overflow.",
+    "repair": "Applied overflow-wrap: anywhere to .source-note.",
+    "scope": "Presentation only; no debate data, judgment, score, or publication prose changed.",
+    "fullFiveDebateReplayPassed": true
+  },
+  "production": {
+    "debateDataMutated": false,
+    "rankingsMutated": false
+  },
+  "authorization": {
+    "readinessPromotion": true,
+    "productionMutation": false,
+    "modelExecution": false,
+    "all195Debates": false
+  }
+}
+
