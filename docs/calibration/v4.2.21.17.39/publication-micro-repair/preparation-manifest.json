@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "4.2.21.17.39-publication-micro-repair-preparation",
+  "protocolId": "v4.2.21.17.39-publication-micro-repair",
+  "status": "prepared-one-isolated-two-field-publication-micro-repair",
+  "preparedAt": "2026-08-08T16:14:14.511Z",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "context": {
+    "debateNumber": "153",
+    "packet": "docs/calibration/v4.2.21.17.39/publication-micro-repair/packet.json",
+    "schema": "docs/calibration/v4.2.21.17.39/publication-micro-repair/schema.json",
+    "repairOutput": "docs/calibration/v4.2.21.17.39/publication-micro-repair/repair-output.json",
+    "correctedFields": [
+      "move-pro-08-determinist-compassion",
+      "move-pro-09-evolved-moral-desire"
+    ],
+    "copiedInputBytes": 12946
+  },
+  "inputs": {
+    "workflow": "docs/assessment-workflow-v4.2.21.17.39.md",
+    "v17_38Preparation": "docs/calibration/v4.2.21.17.38/publication-field-repair/preparation-manifest.json",
+    "v17_38Execution": "docs/calibration/v4.2.21.17.38/publication-field-repair/model-execution.json",
+    "v17_38Analysis": "docs/calibration/v4.2.21.17.38/publication-field-repair/analysis.json",
+    "v17_38Repair153": "docs/calibration/v4.2.21.17.38/publication-field-repair/repair-outputs/debate-153.json",
+    "v17_38Repair165": "docs/calibration/v4.2.21.17.38/publication-field-repair/repair-outputs/debate-165.json"
+  },
+  "policy": {
+    "contexts": 1,
+    "attempts": 1,
+    "retries": 0,
+    "furtherCorrectionContexts": 0,
+    "timeoutMs": 360000,
+    "maximumMinutes": 4,
+    "modelAuthoredScores": 0
+  },
+  "authorization": {
+    "executionManifest": true,
+    "modelExecution": false,
+    "finalMerge": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}

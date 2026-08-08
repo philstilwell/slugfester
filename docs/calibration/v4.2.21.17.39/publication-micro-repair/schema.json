@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "4.2.21.17.38-publication-field-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "v4.2.21.17.38-publication-field-repair"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "153"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "correctedCritiques": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "move-pro-08-determinist-compassion": {
+          "type": "string",
+          "minLength": 880
+        },
+        "move-pro-09-evolved-moral-desire": {
+          "type": "string",
+          "minLength": 880
+        }
+      },
+      "required": [
+        "move-pro-08-determinist-compassion",
+        "move-pro-09-evolved-moral-desire"
+      ]
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "assessmentModel",
+    "completedAt",
+    "correctedCritiques"
+  ]
+}
