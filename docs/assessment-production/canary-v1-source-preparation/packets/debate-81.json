@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0-production-canary-score-blind-source-packet",
+  "protocolId": "assessment-production-canary-v1-source-preparation",
+  "debateNumber": "81",
+  "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+  "motion": "Is a theistic supreme foundation or a naturalistic initial reality the better account of ultimate reality, mind, and worldview simplicity?",
+  "sides": {
+    "pro": {
+      "label": "Theistic supremacy",
+      "speakers": [
+        "Josh Rasmussen"
+      ]
+    },
+    "con": {
+      "label": "Naturalistic comparison",
+      "speakers": [
+        "Graham Oppy"
+      ]
+    }
+  },
+  "durationSeconds": 7184,
+  "eventCount": 2716,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/YhqFdIb13bk/transcript.txt",
+    "transcriptSha256": "1892348c2caa65082767c0278c9cb5f75093d28ec91d159df46dc690a2e0bbc9",
+    "eventsPath": ".assessment-cache/captions/YhqFdIb13bk/events.json",
+    "eventsSha256": "573271176713a5b0a83b0fd01e5435bb75789185c3808468c021ddce5c2e2df7",
+    "localManifestPath": ".assessment-cache/captions/YhqFdIb13bk/manifest.json",
+    "localManifestSha256": "2a9a560ec016ec9a7d29e6b2dd7b66ef518dc8d83214f32ca6116cca6b0d3be5"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-canary-v1/debate-81.jsonl",
+    "sourceLedgerSha256": "851f25d693fa1ef3fa5c53a5578df97be6966b1a87bc3ce11ef2baa4ef350a75",
+    "sourceLedgerBytes": 160303,
+    "sourceLedgerEventCount": 2716,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/canary-v1-source-preparation/plans/debate-81.json",
+    "partitionPlanSha256": "2afb9bdb4a6a5fb1934f33589b50509d2564caf50c3688b546cf16664a37ec3e",
+    "partitionChunks": 4
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "candidateEndContextBoundaryEnforcedByOutputSchema": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

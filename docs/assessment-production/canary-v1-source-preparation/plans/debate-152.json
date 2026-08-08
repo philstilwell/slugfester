@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 4653,
+  "ledgerBytes": 260066,
+  "ledgerSha256": "6aba46c062d7a7dccb45bba8d8ce83c1b46cfbb0d082494fddb6dda9e4f866eb",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50492,
+      "contextSha256": "d2c19a8897ea603a1b10b68d9f922edf30bf4dd9b723e6472a3063716f4da8f2"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 50619,
+      "contextSha256": "01a79909139af7cde69264ca379723361b1aa04ceb33bc40441b63812e0778ce"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 50754,
+      "contextSha256": "13d9b85594704ea263c0528706ab4f0559f9a2f6ca99171f63a32255ff1a7620"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 50192,
+      "contextSha256": "c40c412cf6f80cb79b35edf55b3de8350ebb4f46b3e1cc6f1d8daabbafe03059"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 4139,
+      "coreEvents": 820,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 4179,
+      "contextEvents": 900,
+      "contextBytes": 50005,
+      "contextSha256": "850364dd41dbd1cd62b4f9b417b1d2ea2f18584eb40295a183b3abb2b5b8d6cc"
+    },
+    {
+      "chunkId": "chunk-006",
+      "coreStartEvent": 4140,
+      "coreEndEvent": 4652,
+      "coreEvents": 513,
+      "contextStartEvent": 4100,
+      "contextEndEvent": 4652,
+      "contextEvents": 553,
+      "contextBytes": 30449,
+      "contextSha256": "1b9ed77c698bd0fd2047e645d3cd9ca15a721966b6630b36a64c4351739bb814"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 4652,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "152",
+  "debateId": "knechtle-aron-ra-god-existence-2023",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-discovery"
+}

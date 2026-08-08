@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0-production-canary-score-blind-source-packet",
+  "protocolId": "assessment-production-canary-v1-source-preparation",
+  "debateNumber": "65",
+  "debateId": "donahue-malpass-fine-tuning-god-2026",
+  "motion": "Does cosmic fine-tuning provide strong evidence for God, or can naturalistic alternatives, hypothesis-space ambiguity, and doubts about divine psychology undercut that inference?",
+  "sides": {
+    "pro": {
+      "label": "Fine-tuning theism",
+      "speakers": [
+        "Miles K. Donahue"
+      ]
+    },
+    "con": {
+      "label": "Naturalistic skepticism",
+      "speakers": [
+        "Alex Malpass"
+      ]
+    }
+  },
+  "durationSeconds": 4879,
+  "eventCount": 2196,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/2UtMbB_gazg/transcript.txt",
+    "transcriptSha256": "4081ce49489ec7a77a96c02695cd6efd9cfe60c9c1e114a306a0c97df4f29b39",
+    "eventsPath": ".assessment-cache/captions/2UtMbB_gazg/events.json",
+    "eventsSha256": "40990b53d588dae87d4219e9792dde6e45c1ccd0cbd18cc7103b6420630389f9",
+    "localManifestPath": ".assessment-cache/captions/2UtMbB_gazg/manifest.json",
+    "localManifestSha256": "6527d0ea6bd4e66e4ccc649fbd728be87f721bdabd69ed2d0f06a427b376ca39"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-canary-v1/debate-65.jsonl",
+    "sourceLedgerSha256": "45bdd3063f214553ca1867e56eccd7204d9eeef75944dcd99c0dadcbfaa2223f",
+    "sourceLedgerBytes": 127784,
+    "sourceLedgerEventCount": 2196,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/canary-v1-source-preparation/plans/debate-65.json",
+    "partitionPlanSha256": "a0a40c0a018d8d700d72a50d3d7a934725cc41d798f47d254a682122a7b4276d",
+    "partitionChunks": 3
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "candidateEndContextBoundaryEnforcedByOutputSchema": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

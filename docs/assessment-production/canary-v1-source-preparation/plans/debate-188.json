@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1453,
+  "ledgerBytes": 84564,
+  "ledgerSha256": "067b6a8b22dafc5897e50154d1019582135b44f2596c413a3ac8371bfd23ee76",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52074,
+      "contextSha256": "039a08699a09f8e4afa615e019c56b2ae61662d006977e7abfd3a0f6ea17218f"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1452,
+      "coreEvents": 593,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1452,
+      "contextEvents": 633,
+      "contextBytes": 37155,
+      "contextSha256": "2897c033c2ad6621fa07d7a6a72111e91cf6fa6bb3408269abe57d889409b91d"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1452,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "188",
+  "debateId": "kastrup-blackmore-consciousness-idealism-2023",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-discovery"
+}

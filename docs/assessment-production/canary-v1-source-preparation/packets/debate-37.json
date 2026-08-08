@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0-production-canary-score-blind-source-packet",
+  "protocolId": "assessment-production-canary-v1-source-preparation",
+  "debateNumber": "37",
+  "debateId": "ehrman-bass-resurrection-history-2023",
+  "motion": "Did Jesus of Nazareth historically rise from the dead, and do the early resurrection appearances, the unexpected messianic claim, Christianity's spread, and later visions make that explanation plausible?",
+  "sides": {
+    "pro": {
+      "label": "Resurrection defender",
+      "speakers": [
+        "Justin Bass"
+      ]
+    },
+    "con": {
+      "label": "Skeptical historian",
+      "speakers": [
+        "Bart Ehrman"
+      ]
+    }
+  },
+  "durationSeconds": 4623,
+  "eventCount": 2513,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/LVUQAVQS1-U/transcript.txt",
+    "transcriptSha256": "48bce8888ac0558f769b49ff020c9b771d3006fab4dc0942b67ea203a7f2330b",
+    "eventsPath": ".assessment-cache/captions/LVUQAVQS1-U/events.json",
+    "eventsSha256": "0fc28d021962776b9a91b0d6d8609d46f5bd97f6580940eb1d0e0732fbfbcfed",
+    "localManifestPath": ".assessment-cache/captions/LVUQAVQS1-U/manifest.json",
+    "localManifestSha256": "b13ec8ab7d96a5063f48a27146188569e97ba2aaaf497f40acb39d93e030bc9e"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-canary-v1/debate-37.jsonl",
+    "sourceLedgerSha256": "99d58da337bbcec949d023834c72255b904d9bd191e19de9210eeba28187c78b",
+    "sourceLedgerBytes": 140561,
+    "sourceLedgerEventCount": 2513,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/canary-v1-source-preparation/plans/debate-37.json",
+    "partitionPlanSha256": "d85ed0927120394ab2e2ee934b6099e08769f40887c27178facc87d0e203595d",
+    "partitionChunks": 3
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "candidateEndContextBoundaryEnforcedByOutputSchema": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}
