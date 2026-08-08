@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.17.38-publication-field-repair-analysis",
+  "protocolId": "v4.2.21.17.38-publication-field-repair",
+  "status": "publication-field-repair-failed-validation",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "contexts": [
+    {
+      "debateNumber": "153",
+      "repairType": "critique-word-boundary",
+      "accepted": false,
+      "elapsedMinutes": 0.89,
+      "correctedFields": null,
+      "modelAuthoredScores": null
+    },
+    {
+      "debateNumber": "165",
+      "repairType": "representative-quote-exactness",
+      "accepted": true,
+      "elapsedMinutes": 0.24,
+      "correctedFields": 1,
+      "modelAuthoredScores": 0
+    }
+  ],
+  "gate": {
+    "semanticPass": false,
+    "timingPass": false,
+    "validContexts": 1,
+    "correctedFields": 1,
+    "maximumElapsedMinutes": 0.24,
+    "maximumAllowedMinutesPerContext": 6,
+    "meanElapsedMinutes": 0.24,
+    "maximumAllowedMeanMinutes": 5,
+    "retries": 0,
+    "furtherCorrectionContexts": 0,
+    "modelAuthoredScores": 0
+  },
+  "evidenceBoundary": {
+    "oneDebatePerContext": true,
+    "onlyExtractedInvalidFieldsWritable": true,
+    "acceptedFieldsUnavailableAsOutputFields": true,
+    "scoresUnavailableAsOutputFields": true,
+    "otherDebatesUnavailable": true,
+    "retries": 0,
+    "furtherCorrectionContexts": 0
+  },
+  "totals": {
+    "modelContexts": 2,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsdThisStage": 0,
+    "modelAuthoredScores": 0
+  },
+  "authorization": {
+    "merge": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "all195Debates": false
+  }
+}
