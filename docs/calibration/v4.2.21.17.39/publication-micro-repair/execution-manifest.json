@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "4.2.21.17.39-publication-micro-repair-execution-manifest",
+  "protocolId": "v4.2.21.17.39-publication-micro-repair",
+  "status": "frozen-one-isolated-two-field-publication-micro-repair-authorized",
+  "frozenAt": "2026-08-08T16:17:18Z",
+  "checkpointCommit": "668d96e4e061d03812b4970ba4381845e1e0a613",
+  "calibrationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "costEstimate": {
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "expectedWallMinutes": [
+      1,
+      4
+    ],
+    "expectedAggregateModelMinutes": [
+      1,
+      4
+    ]
+  },
+  "context": {
+    "debateNumber": "153",
+    "packet": "docs/calibration/v4.2.21.17.39/publication-micro-repair/packet.json",
+    "schema": "docs/calibration/v4.2.21.17.39/publication-micro-repair/schema.json",
+    "repairOutput": "docs/calibration/v4.2.21.17.39/publication-micro-repair/repair-output.json",
+    "correctedFields": [
+      "move-pro-08-determinist-compassion",
+      "move-pro-09-evolved-moral-desire"
+    ],
+    "copiedInputBytes": 12946
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attempts": 1,
+    "retries": 0,
+    "furtherCorrectionContexts": 0,
+    "timeoutMs": 360000,
+    "maximumMinutes": 4,
+    "modelAuthoredScores": 0
+  },
+  "isolation": {
+    "onlyTwoExtractedCritiquesWritable": true,
+    "allOtherFieldsUnavailableAsOutputFields": true,
+    "scoresUnavailableAsOutputFields": true,
+    "retries": 0,
+    "furtherCorrectionContexts": 0
+  },
+  "authorization": {
+    "modelContext": true,
+    "deterministicAnalysis": true,
+    "finalMerge": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "all195Debates": false
+  },
+  "artifacts": {
+    "execution": "docs/calibration/v4.2.21.17.39/publication-micro-repair/model-execution.json",
+    "analysis": "docs/calibration/v4.2.21.17.39/publication-micro-repair/analysis.json",
+    "repairOutput": "docs/calibration/v4.2.21.17.39/publication-micro-repair/repair-output.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/calibration/v4.2.21.17.39/publication-micro-repair/repair-output.json",
+    "docs/calibration/v4.2.21.17.39/publication-micro-repair/model-execution.json",
+    "docs/calibration/v4.2.21.17.39/publication-micro-repair/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-workflow-v4.2.21.17.39.md": "f145a6a5a22c7817dca8ceb56533f7b89ba434f6dd3e7073d8a6cf5da2cb07a7",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/analysis.json": "17141d550e0e6f1d43d069b056f04e586ab14ec44d80dc89df579aee199c88cc",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/model-execution.json": "ffa2ab00d3aaf548633a83857245064ecc33f62e4449b68f7a6792c4893e7eeb",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/preparation-manifest.json": "fd918465dd29f4abfe22d2aa0c1fb20397aec8e5746ba0690658ef5ef7b13a67",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/repair-outputs/debate-153.json": "b077108e29f1a599f199a016284bfa5ad90550fd95e979906f457b2869cad187",
+    "docs/calibration/v4.2.21.17.38/publication-field-repair/repair-outputs/debate-165.json": "808fbb965ed0a5a60fe26b8893b6087235a1f2e7ffdd21dc10aff6acefef6f95",
+    "docs/calibration/v4.2.21.17.39/publication-micro-repair/packet.json": "480381bb60ea2ff10e0acad778a3e5e79df7616620a599e7282005d4399fe6e1",
+    "docs/calibration/v4.2.21.17.39/publication-micro-repair/schema.json": "2e341fa815974d49d403286fbd8eac1faa018f28a3f21ae42ac50d3ba9101ef7",
+    "scripts/analyze-v42211739-publication-micro-repair.mjs": "e24e09524fb32dc700ab83c229ed3877a03f00fb36426da7f3ebffcb17bc72c5",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v42211738-publication-field-repair.mjs": "d0bcd017953305250288f685250197d1cfffcd99653762d0e945a196725f6c66",
+    "scripts/lib/v42211739-publication-micro-repair.mjs": "edfc531c0a046cac435b2c3243536330000574fe762cd8ef8a31b941524253d9",
+    "scripts/prepare-v42211739-publication-micro-repair.mjs": "9a47c0fce91853c63efc042b63b873b2a47ab3f79e7ada3c469b05fe2499ba21",
+    "scripts/preregister-v42211739-publication-micro-repair.mjs": "81bf675fa2e2eb2976821e42ab34161850d8cfe3639985c4a3558f7478877902",
+    "scripts/run-v42211739-publication-micro-repair.mjs": "d9a41f3aa46453786803fee3a8fe4fa7097c5403e7995692cdb3bb9498048870",
+    "scripts/test-v42211739-publication-micro-repair-gate.mjs": "c331e3bb376c0ac272ccb25ef399ef2f9d9a822a93dd09b7bce779f46a154bcc"
+  }
+}
