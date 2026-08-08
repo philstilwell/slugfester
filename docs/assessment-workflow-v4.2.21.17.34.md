@@ -1,0 +1,12 @@
+# Slugfester Hard-Route Publication Prompt Alignment v4.2.21.17.34
+
+Generate one isolated calibration-only public assessment for each of Debates 51, 63, 90, 153, and 165 after the adjudicated raw ledger and single deterministic score pass are locked. The model may author only the debate summary, representative quote selections and context, move summaries and critiques, post-scoring reference tags, Overall Commentary, and the separately disclosed AI Extension. Repository code owns and inserts all identity metadata, sides, chronology, sections, move IDs, timestamps, scores, and display structure.
+
+The top-level debate summary must contain **18–28 words**. This target sits safely inside the repository validator's 8–35-word acceptance interval and is mandatory even though JSON Schema cannot express a word-count bound.
+
+Every selected move appears exactly once in the compiled scorecard. Every move summary contains 8–55 words. Every critique contains exactly four labeled sentences—`Strongest feature:`, `Principal limitation:`, `Live burden:`, and `Locked score:` in that order—and the complete critique contains 112–122 words. Representative quotations contain 3–18 words and must be exact strings from a high-confidence locked source span or from a span whose required audio verification already passed. Quote context contains 12–55 words. Tags are optional on moves; every Overall Commentary weakness must use only a genuinely applicable local reference.
+
+Overall Commentary supplies three to six strengths and one to four weaknesses for each side. The AI Extension follows Overall Commentary, is explicitly identified as AI-generated, is visually distinct, and is default-collapsed in the compiled interface. It provides a strengthened final argument and two to four additional arguments per side, maps every item as extending, repairing, or introducing material, and includes at least one genuinely introduced new argument per side. It must not use “unassailable” or equivalent rational-invulnerability language. AI material is post-scoring and cannot affect participant scores.
+
+This revision changes only prompt/validator alignment after v17.33 returned an otherwise valid Debate 51 object whose 73-word summary exceeded an 8–35-word repository bound absent from the model-facing instructions. The repaired structured-output schemas, evidence, scoring closure, validator, model, reasoning effort, isolation, ramp, timing limits, and no-retry policy remain unchanged.
+
