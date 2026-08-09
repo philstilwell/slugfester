@@ -122,8 +122,16 @@ for (const record of analysis.schemas) {
   ]);
   assert.equal(sha256(censusBytes), record.candidateCensusSha256);
   assert.equal(sha256(planSchemaBytes), record.planSchemaSha256);
-  assert.equal(censusBytes.includes(Buffer.from("candidateEvidence.excerpt")), false);
-  assert.equal(censusBytes.includes(Buffer.from("candidateEvidence.sourceExact")), false);
+  const census = JSON.parse(censusBytes);
+  assert.equal(census.columnOrder.includes("candidateEvidence.excerpt"), false);
+  assert.equal(
+    census.columnOrder.includes("candidateEvidence.sourceExact"),
+    false
+  );
+  assert.deepEqual(census.censusPolicy.omittedColumns, [
+    "candidateEvidence.excerpt",
+    "candidateEvidence.sourceExact",
+  ]);
   assert.equal(planSchemaBytes.includes(Buffer.from("candidateSelections")), false);
   assert.equal(planSchemaBytes.includes(Buffer.from('"uniqueItems"')), false);
   const planAudit = auditDecomposedStrictSchema(JSON.parse(planSchemaBytes));
