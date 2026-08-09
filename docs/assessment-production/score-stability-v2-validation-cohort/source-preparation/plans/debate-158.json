@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 4823,
+  "ledgerBytes": 254359,
+  "ledgerSha256": "9c8fec15944f90d24cf9642abde5a026e1cf34f88ad5a88947af6c1ffbd6f493",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 46226,
+      "contextSha256": "8860000fba729f216d18f84592af01c8fe3134bb1b9e21c2985d3f761f79e16b"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 48407,
+      "contextSha256": "1b5ef1c291d8be7cf0f646d6652db822a4b4828bedb5d719b0b36c360b6212aa"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 47986,
+      "contextSha256": "c9da69bf4831408213d8c43a58e117d1bc521f911cd355d316330b98060a8558"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 48171,
+      "contextSha256": "423b3e511841bba03509cc6d70080a71b8bacc54086cb3b027336785cb332097"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 4139,
+      "coreEvents": 820,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 4179,
+      "contextEvents": 900,
+      "contextBytes": 47437,
+      "contextSha256": "f7d10cfc75e5b85fb1c79960259ac8523d08ceb0cfd79aa74cf5a1656eac683d"
+    },
+    {
+      "chunkId": "chunk-006",
+      "coreStartEvent": 4140,
+      "coreEndEvent": 4822,
+      "coreEvents": 683,
+      "contextStartEvent": 4100,
+      "contextEndEvent": 4822,
+      "contextEvents": 723,
+      "contextBytes": 37308,
+      "contextSha256": "d962baf1a9fa29359561ed8a1316567c95026ed9e33c01ec8d61cea64dbfc0ae"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 4822,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "158",
+  "debateId": "dillahunty-mclatchie-resurrection-evidence-2020",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-discovery"
+}

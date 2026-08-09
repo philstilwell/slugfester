@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3742,
+  "ledgerBytes": 221371,
+  "ledgerSha256": "ae860697eb7d10a1b4338abc1c83182b83c27949d1031218cf73cb39482b29e1",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52033,
+      "contextSha256": "cf0a1c04002c1115f5261ae6cab1adb8fe17dad03f558be77f1205e3c8bf2151"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53513,
+      "contextSha256": "e0c8a3654f8db9a309b4b03a3c96ded981231dae89e96e7c1ac3416580fee1e8"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53704,
+      "contextSha256": "98229430ed7110e79894bd9f662f91f3d5920963c857878374e85942708ee0e3"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 53560,
+      "contextSha256": "a7be268a4fe189dc3c9181ebaa78b647ffb2405f184c648fb91b3d6a0610b5e6"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3741,
+      "coreEvents": 422,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3741,
+      "contextEvents": 462,
+      "contextBytes": 27544,
+      "contextSha256": "5caef0566451cb57f8c17c3efd5f2fba74ad0ad6973722543a7b29bd7e334fef"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3741,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "93",
+  "debateId": "hunter-dillahunty-christian-god-exist-2019",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-discovery"
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2579,
+  "ledgerBytes": 135973,
+  "ledgerSha256": "4cba633297fd5062d5343c532f106104b3d4987f86a17d0eb0a9130882d8ef6d",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 46616,
+      "contextSha256": "5679d827d91fad51137ebe7b6036f8f7134826959b72a94d59749d392a5e74b9"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 48094,
+      "contextSha256": "6033dceb9cbdc1ad5e4649859dcf07ead502d4c2410c627cec878ff6c4d52753"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 47161,
+      "contextSha256": "69d0f2b06e57e611d1b612ba03f3ee679cfed34be0748016a1967bd84341f634"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2578,
+      "coreEvents": 79,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2578,
+      "contextEvents": 119,
+      "contextBytes": 6712,
+      "contextSha256": "f7e3e65f11f340d58a9f9324c00267930e9353be0fcd7d97aea41e586c1ab973"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2578,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "146",
+  "debateId": "harris-dennett-free-will-2018",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-discovery"
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0-score-stability-v2-validation-score-blind-source-packet",
+  "protocolId": "assessment-production-score-stability-v2-fresh-validation-source-preparation",
+  "debateNumber": "146",
+  "debateId": "harris-dennett-free-will-2018",
+  "motion": "Does determinism or indeterminism undermine free will and moral responsibility, or can reasons-responsive agency provide a compatibilist form of freedom worth preserving?",
+  "sides": {
+    "pro": {
+      "label": "No libertarian free will",
+      "speakers": [
+        "Sam Harris"
+      ]
+    },
+    "con": {
+      "label": "Compatibilist free will",
+      "speakers": [
+        "Daniel Dennett"
+      ]
+    }
+  },
+  "durationSeconds": 5685,
+  "eventCount": 2579,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/_J_9DKIAn48/transcript.txt",
+    "transcriptSha256": "e13c75a666e81720dbe2d222ac1b81314745d23de16666d6416a4420fd67c75c",
+    "eventsPath": ".assessment-cache/captions/_J_9DKIAn48/events.json",
+    "eventsSha256": "8f48b661b1d366e7939a2dff8e6ebf71d179b208568c0260a01a85001bed862e",
+    "localManifestPath": ".assessment-cache/captions/_J_9DKIAn48/manifest.json",
+    "localManifestSha256": "9d53edb8ed7fae0f9380febbdb1ee20e94a83520eec2130850fd616b5f087c37"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2-fresh-validation/debate-146.jsonl",
+    "sourceLedgerSha256": "4cba633297fd5062d5343c532f106104b3d4987f86a17d0eb0a9130882d8ef6d",
+    "sourceLedgerBytes": 135973,
+    "sourceLedgerEventCount": 2579,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2-validation-cohort/source-preparation/plans/debate-146.json",
+    "partitionPlanSha256": "20ae69bef9190306fadd09cb29195c5e95fc7e124f8c1e23bf322655f5f204b0",
+    "partitionChunks": 4
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "candidateEndContextBoundaryEnforcedByOutputSchema": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "developmentValidationOnly": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

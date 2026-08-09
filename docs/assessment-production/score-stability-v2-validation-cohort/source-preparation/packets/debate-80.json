@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0-score-stability-v2-validation-score-blind-source-packet",
+  "protocolId": "assessment-production-score-stability-v2-fresh-validation-source-preparation",
+  "debateNumber": "80",
+  "debateId": "rasmussen-schmid-argument-from-limits-2023",
+  "motion": "Does the argument from arbitrary limits successfully move from a fundamental reality or necessary foundation toward God-like perfection?",
+  "sides": {
+    "pro": {
+      "label": "Limits argument",
+      "speakers": [
+        "Josh Rasmussen"
+      ]
+    },
+    "con": {
+      "label": "Agnostic theory comparison",
+      "speakers": [
+        "Joe Schmid"
+      ]
+    }
+  },
+  "durationSeconds": 7071,
+  "eventCount": 3374,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/Lt1wN10yOY4/transcript.txt",
+    "transcriptSha256": "2271ce3f673275dc7588c8beb9cc2b757f336a2c4e68b0fcc4c8a027da3da0d5",
+    "eventsPath": ".assessment-cache/captions/Lt1wN10yOY4/events.json",
+    "eventsSha256": "25ab497679c3650a75fe6c15fd124572f82284e1b7259ef7a09c94b42700f9fb",
+    "localManifestPath": ".assessment-cache/captions/Lt1wN10yOY4/manifest.json",
+    "localManifestSha256": "7576437b988159fd06dc978645aee1aacdd7cdf23a0b8dd1c9b2479f2ce5fa72"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2-fresh-validation/debate-80.jsonl",
+    "sourceLedgerSha256": "1ccf8e92c2ea37225aa6f474a3329605913947c58a444abf380130288bc9abde",
+    "sourceLedgerBytes": 197132,
+    "sourceLedgerEventCount": 3374,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2-validation-cohort/source-preparation/plans/debate-80.json",
+    "partitionPlanSha256": "5cb3531c37b4589642deb6fc380fdee6b9e392b0f1f8a095d3a137c6b2f77500",
+    "partitionChunks": 5
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "candidateEndContextBoundaryEnforcedByOutputSchema": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "developmentValidationOnly": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

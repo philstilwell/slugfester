@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2816,
+  "ledgerBytes": 165189,
+  "ledgerSha256": "7cd2375a8dfacf668707af4c07a5316501f727cebc918a116439a03de35d7709",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52113,
+      "contextSha256": "68e5ec5ad18b0afb6d340bacdf85116155681cbe1a9835cc00f0d8355350cdc7"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53056,
+      "contextSha256": "2d8c68eff7d78efd6f84c4368833274b41d5d3701ee264dd346e9f6faae4f7df"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53344,
+      "contextSha256": "5d382a9aa1c4e0572726fdd54a9a6a9770aba6ba306db95233c92ba613273653"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2815,
+      "coreEvents": 316,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2815,
+      "contextEvents": 356,
+      "contextBytes": 20787,
+      "contextSha256": "14e5d16a9f0d710df20d37989d81bded341a562a3816b88da5413d2df5febd43"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2815,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "60",
+  "debateId": "horn-oconnor-jesus-resurrection-2026",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-discovery"
+}

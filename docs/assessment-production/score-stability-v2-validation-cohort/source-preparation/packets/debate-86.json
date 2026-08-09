@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0-score-stability-v2-validation-score-blind-source-packet",
+  "protocolId": "assessment-production-score-stability-v2-fresh-validation-source-preparation",
+  "debateNumber": "86",
+  "debateId": "egnor-dillahunty-god-existence-2021",
+  "motion": "Does God exist, and do Thomistic proofs, moral law, and natural theology meet the burden of proof against skeptical atheism?",
+  "sides": {
+    "pro": {
+      "label": "Thomistic theism",
+      "speakers": [
+        "Michael Egnor"
+      ]
+    },
+    "con": {
+      "label": "Skeptical atheism",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 8495,
+  "eventCount": 4043,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/yahf0t5mK5g/transcript.txt",
+    "transcriptSha256": "3fb2f66cdf171853b6933a88ed9a20a7bf1124ce7f3802e54eae63c1d98fae84",
+    "eventsPath": ".assessment-cache/captions/yahf0t5mK5g/events.json",
+    "eventsSha256": "f8a63195671a3fff82980842eb915d48531012b30c63c914873c46d1099b052a",
+    "localManifestPath": ".assessment-cache/captions/yahf0t5mK5g/manifest.json",
+    "localManifestSha256": "5d4e4a026e4d383f4348ad9307c236e37c9f4f36a71149b6ce5befb675c05084"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2-fresh-validation/debate-86.jsonl",
+    "sourceLedgerSha256": "38cc0bf9536f92406a13005e6694487f01af6ee3882cc01b9eed3af088fa2ad2",
+    "sourceLedgerBytes": 217881,
+    "sourceLedgerEventCount": 4043,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2-validation-cohort/source-preparation/plans/debate-86.json",
+    "partitionPlanSha256": "0bbfe897917b1b2829c209dc430142ca5ab4c7452bd3a60e223fc00885005eb1",
+    "partitionChunks": 5
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "candidateEndContextBoundaryEnforcedByOutputSchema": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "developmentValidationOnly": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

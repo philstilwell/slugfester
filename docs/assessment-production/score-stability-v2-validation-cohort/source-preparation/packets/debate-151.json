@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0-score-stability-v2-validation-score-blind-source-packet",
+  "protocolId": "assessment-production-score-stability-v2-fresh-validation-source-preparation",
+  "debateNumber": "151",
+  "debateId": "wood-dillahunty-god-secular-humanism-2020",
+  "motion": "Which gives a better foundation for ethics: God or secular humanism?",
+  "sides": {
+    "pro": {
+      "label": "Theistic moral realism",
+      "speakers": [
+        "David Wood"
+      ]
+    },
+    "con": {
+      "label": "Secular humanism",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 8473,
+  "eventCount": 4028,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/u2SjOn8arv8/transcript.txt",
+    "transcriptSha256": "5732abec025b423e6b2bbf339e470a3fefa89d3835a94bd013e2fc290a51e9ce",
+    "eventsPath": ".assessment-cache/captions/u2SjOn8arv8/events.json",
+    "eventsSha256": "5d0751f803d0e8e18368723cbeb5180b2dd5d4959b39ea87409374086c4e589a",
+    "localManifestPath": ".assessment-cache/captions/u2SjOn8arv8/manifest.json",
+    "localManifestSha256": "ceb9ed93f9940c13954417d81321466571c61ff8c93bc5a9ec4c6304ae4a70a2"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2-fresh-validation/debate-151.jsonl",
+    "sourceLedgerSha256": "2f64de5a6015041dd36c4c5d3ad422130d85df3360324a13d8d42843e5579d3a",
+    "sourceLedgerBytes": 234617,
+    "sourceLedgerEventCount": 4028,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2-validation-cohort/source-preparation/plans/debate-151.json",
+    "partitionPlanSha256": "d05571dacca4abe04eaa1a7c13a0877ee0074a33cf9f94ac6c2914cd6ca3c1ef",
+    "partitionChunks": 5
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "candidateEndContextBoundaryEnforcedByOutputSchema": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "developmentValidationOnly": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

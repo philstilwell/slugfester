@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3473,
+  "ledgerBytes": 204690,
+  "ledgerSha256": "68dbd5f60070c5e586b3d5c3953cff349bfc510169af0abfcdcec3a3501ac857",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51769,
+      "contextSha256": "71bb1491264de673a70bb2ed7c135bc88c8455639d10a52daf41e05451dec13b"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53438,
+      "contextSha256": "718afd3b01eafcf64caccdf523c89f8ed395f0b91b9b095fc75125b919f73956"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53388,
+      "contextSha256": "7447c26f4f5e60472d9e44095d03435ed7af47d6b9e91490cc8980e90e6bbb80"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 53654,
+      "contextSha256": "0253ea3d384c0bc81c797f4fec3b2a47bc13d414aa1c120943438f1cb27abae3"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3472,
+      "coreEvents": 153,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3472,
+      "contextEvents": 193,
+      "contextBytes": 11321,
+      "contextSha256": "a05f618fed0c0e17abadf4b3626a5bb7edfdfa0ee0e11098592b6cf9a32c749d"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3472,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "137",
+  "debateId": "price-craig-resurrection-historical-analogy-1999",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-discovery"
+}

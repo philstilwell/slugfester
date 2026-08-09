@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1511,
+  "ledgerBytes": 87069,
+  "ledgerSha256": "b8ef53932bfe7f5b2ab90aa7e8cc08f262daec10d0cfb619b53f9c551e1a5be2",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51373,
+      "contextSha256": "1ce469e1503c335c5aea67913fd7306944aa236a2c0c34c3d94a6634070e741f"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1510,
+      "coreEvents": 651,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1510,
+      "contextEvents": 691,
+      "contextBytes": 40207,
+      "contextSha256": "598aa9de3cda52f808526eff83a0148349e4083a2c4b4ed52b672607c1d89a1f"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1510,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "31",
+  "debateId": "oconnor-craig-resurrection-2023",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-discovery"
+}
