@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.2-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-score-stability-v2.1.2-fresh-validation-candidate-sharded-inventory",
+  "debateNumber": "73",
+  "debateId": "hawkins-folley-free-will-compatibilism-2026",
+  "motion": "Does human freedom require libertarian alternative possibilities and sourcehood, or can compatibilist notions of will, responsibility, and practical agency survive determinism?",
+  "sides": {
+    "pro": {
+      "label": "Libertarian freedom",
+      "speakers": [
+        "Nathan Hawkins"
+      ]
+    },
+    "con": {
+      "label": "Compatibilist agency",
+      "speakers": [
+        "Joe Folley"
+      ]
+    }
+  },
+  "durationSeconds": 5054,
+  "eventCount": 2468,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/I5uYVxLdaO0/transcript.txt",
+    "transcriptSha256": "fcb2053c1f1c12de8941b1e8e6dd300069fdb0260d05a9f372a685980b0f7952",
+    "eventsPath": ".assessment-cache/captions/I5uYVxLdaO0/events.json",
+    "eventsSha256": "1c4e2b722bcabfc568d2dd83db1bc70871a5d0a9ce1cfe712c50c3afe9315bd2",
+    "localManifestPath": ".assessment-cache/captions/I5uYVxLdaO0/manifest.json",
+    "localManifestSha256": "488cdbcefff3d0635f2f96875873b971112d1bdc6a1f6604ce8382234e10fd6c"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2.1.2-fresh-validation/debate-73.jsonl",
+    "sourceLedgerSha256": "0211b6326cb6755c51747373d8b1a38cc3d46e2dcb307125efd70561e80d88aa",
+    "sourceLedgerBytes": 144479,
+    "sourceLedgerEventCount": 2468,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/source-preparation/plans/debate-73.json",
+    "partitionPlanSha256": "f912f6c8ea0fe44e997b21c09f00f58f37c7892d4340bcf67bf0d3f9c0f8fb2a",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "developmentValidationOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

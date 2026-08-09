@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.2-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-score-stability-v2.1.2-fresh-validation-candidate-sharded-inventory",
+  "debateNumber": "124",
+  "debateId": "harris-peterson-god-atheism-bible-2018",
+  "motion": "Can religious stories, God-language, and biblical tradition ground moral truth and meaning, or should moral realism, well-being, and open inquiry replace dogmatic religious frameworks?",
+  "sides": {
+    "pro": {
+      "label": "Religious pragmatism",
+      "speakers": [
+        "Jordan Peterson"
+      ]
+    },
+    "con": {
+      "label": "Secular moral realism",
+      "speakers": [
+        "Sam Harris"
+      ]
+    }
+  },
+  "durationSeconds": 7598,
+  "eventCount": 3101,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/jey_CzIOfYE/transcript.txt",
+    "transcriptSha256": "83d4309183a7ac03f8c1c36e67734745b0674b894f21ee89c191e029db2cc3cc",
+    "eventsPath": ".assessment-cache/captions/jey_CzIOfYE/events.json",
+    "eventsSha256": "92807ab2005591e720f60f0f3e719161ea92e4d18e0fce31a87c4161c86a1f24",
+    "localManifestPath": ".assessment-cache/captions/jey_CzIOfYE/manifest.json",
+    "localManifestSha256": "aa3b298522702708621de2517cc061cd89e5f1e4217c0fce64b6cacdafdf6f0f"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2.1.2-fresh-validation/debate-124.jsonl",
+    "sourceLedgerSha256": "ada14c79bb368758048a94e884d7ea5a078a1803c5b52baed0506b9206f50020",
+    "sourceLedgerBytes": 182832,
+    "sourceLedgerEventCount": 3101,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/source-preparation/plans/debate-124.json",
+    "partitionPlanSha256": "85abd11e8091f7e0edb1e1adb149f9b7d76f61c02f9141281436308388a80379",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "developmentValidationOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
