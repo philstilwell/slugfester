@@ -1,0 +1,1965 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "65",
+  "debateId": "donahue-malpass-fine-tuning-god-2026",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-fine-tuning-confirmation",
+      "side": "pro",
+      "description": "Establish that life-permitting fine-tuning raises the probability of classical theism relative to the specified single-universe naturalistic alternatives.",
+      "successCriteria": "The likelihood and intrinsic-probability comparisons must jointly make fine-tuning substantially less expected under the relevant naturalistic space than under classical theism.",
+      "motionBridge": {
+        "bridgeId": "bridge-pro-motion-confirmation",
+        "tier": "motion",
+        "description": "Show that fine-tuning provides strong comparative confirmation of classical theism over specified single-universe naturalism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-pro-central-likelihood",
+          "tier": "central",
+          "description": "Establish that life-permitting parameters are substantially more expected given a perfectly good creator than given single-universe naturalism."
+        },
+        {
+          "bridgeId": "bridge-pro-central-hypothesis-space",
+          "tier": "central",
+          "description": "Show that naturalistic hypotheses augmented to predict fine-tuning occupy little relevant probability space despite their fit with the observation."
+        },
+        {
+          "bridgeId": "bridge-pro-central-prior",
+          "tier": "central",
+          "description": "Establish that the coherence or simplicity of perfect-being theism preserves enough intrinsic probability to support the comparative inference."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-pro-subsidiary-underdetermination",
+          "tier": "subsidiary",
+          "description": "Explain why unrestricted naturalistic alternatives do not neutralize every possible empirical inference to theism."
+        },
+        {
+          "bridgeId": "bridge-pro-subsidiary-simulation",
+          "tier": "subsidiary",
+          "description": "Account for simulation and other naturalistic designer scenarios without merely relocating fine-tuning to an unexplained base reality."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-naturalistic-undercutting",
+      "side": "con",
+      "description": "Undercut strong confirmation by challenging the likelihoods, hypothesis-space partition, intrinsic probabilities, and status of the fine-tuning datum.",
+      "successCriteria": "At least one indispensable comparative step must remain unjustified or sufficiently ambiguous that fine-tuning does not strongly discriminate in favor of God.",
+      "motionBridge": {
+        "bridgeId": "bridge-con-motion-undercutting",
+        "tier": "motion",
+        "description": "Show that fine-tuning does not securely yield strong comparative evidence for classical theism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-con-central-divine-psychology",
+          "tier": "central",
+          "description": "Challenge whether divine goodness supplies a justified prediction of a life-permitting or specifically fine-tuned universe."
+        },
+        {
+          "bridgeId": "bridge-con-central-naturalistic-space",
+          "tier": "central",
+          "description": "Require comparison with the relevant naturalistic disjunction, including broad alien, simulation, and other naturalistic scenarios."
+        },
+        {
+          "bridgeId": "bridge-con-central-priors",
+          "tier": "central",
+          "description": "Challenge the assignment and aggregation of intrinsic probabilities across unlimited, limited, coherent, modest, and parsimonious hypotheses."
+        },
+        {
+          "bridgeId": "bridge-con-central-ambiguity",
+          "tier": "central",
+          "description": "Show that competing theoretical virtues cannot be weighted precisely enough to support the asserted posterior comparison."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-con-subsidiary-mechanisms",
+          "tier": "subsidiary",
+          "description": "Preserve the possibility that apparently intentional phenomena receive unanticipated natural explanations."
+        },
+        {
+          "bridgeId": "bridge-con-subsidiary-theory-status",
+          "tier": "subsidiary",
+          "description": "Consider whether apparent fine-tuning indicates a defect of physical theory rather than an objective cosmic feature requiring design."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-fine-tuning-likelihood",
+      "title": "Fine-Tuning as Data and the Theistic Likelihood",
+      "weightPercent": 22,
+      "rationale": "The motion depends first on whether fine-tuning is an objective evidential datum and whether classical theism makes life-permitting conditions sufficiently expected."
+    },
+    {
+      "sectionId": "section-comparison-domain",
+      "title": "Scope and Granularity of the Comparison",
+      "weightPercent": 16,
+      "rationale": "A comparative Bayesian inference requires a defined theistic hypothesis and a defined rival space whose members and level of specificity determine the relevant probabilities."
+    },
+    {
+      "sectionId": "section-empirical-underdetermination",
+      "title": "Naturalistic Alternatives and Empirical Discrimination",
+      "weightPercent": 17,
+      "rationale": "The force of fine-tuning evidence turns on whether available naturalistic auxiliaries legitimately diffuse the inference or instead generate unrestricted empirical skepticism."
+    },
+    {
+      "sectionId": "section-agency-and-intentions",
+      "title": "Agency, Motive, and Predictive Fit",
+      "weightPercent": 15,
+      "rationale": "Evidence for intentional agency supports classical theism only if it also supplies justified information about the agent's goodness, purposes, and expected actions."
+    },
+    {
+      "sectionId": "section-intrinsic-probability",
+      "title": "Coherence, Modesty, and Intrinsic Probability",
+      "weightPercent": 16,
+      "rationale": "The inference requires an account of how probability is distributed among perfect-being theism, limited alternatives, and naturalism augmented to predict fine-tuning."
+    },
+    {
+      "sectionId": "section-overall-theoretical-virtues",
+      "title": "Parsimony and the Overall Probability Balance",
+      "weightPercent": 14,
+      "rationale": "The motion-level conclusion requires integrating the claimed fine-tuning likelihood advantage with ontological parsimony and other theoretical virtues across the full comparison."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "move-pro-bayesian-fine-tuning",
+      "sectionId": "section-fine-tuning-likelihood",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "constructive",
+      "proposition": "Fine-tuning confirms classical theism over single-universe naturalism because life-permitting parameters are far less surprising if a perfectly good creator wants conscious moral agents.",
+      "sourceSpan": {
+        "startEvent": 17,
+        "endEvent": 125
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Miles the floor, and the uninterrupted first-person opening is consistent with the named pro speaker.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "bridge-pro-motion-confirmation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive supplies the central comparative likelihood claim connecting fine-tuning, divine goodness, conscious agents, and single-universe naturalism.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "As a constructive, it directly develops its announced Bayesian route, though the divine-preference warrant remains compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The comparative proposition and restricted naturalistic scope are recoverable, with an implicit rather than developed qualification concerning divine preferences."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The stated large likelihood advantage outruns the brief goodness-to-life warrant somewhat, although the claim remains probabilistic rather than certain."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The Bayesian direction is coherent, but the bridge from perfect goodness to a strong expectation of this life-permitting arrangement is materially compressed."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Moral value and relationships provide a reason for life, but no developed comparison establishes the magnitude asserted against the rival space."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "The move expressly advances the motion bridge by claiming strong comparative confirmation from fine-tuning."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move presents its own positive likelihood case and does not materially interpret a live opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly says conscious agents enable moral value and therefore fine-tuning is far more likely on theism than naturalism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-stalking-horse-reductio",
+      "sectionId": "section-empirical-underdetermination",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "constructive",
+      "proposition": "Allowing tailored naturalistic hypotheses to neutralize fine-tuning would likewise block every possible empirical inference to God and therefore proves too much.",
+      "sourceSpan": {
+        "startEvent": 126,
+        "endEvent": 167
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage continues Miles's uninterrupted opening after the moderator's explicit handoff and presents his announced defense of the pro position.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-subsidiary-underdetermination"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive argues that unrestricted tailored naturalistic auxiliaries would defeat every empirical inference to God and thereby prove too much.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "It clearly develops the announced reductio, though its key universalization premise receives little independent defense."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The reductio is recoverable, but the move shifts from the fine-tuning strategy to every possible evidential case without specifying relevant limits."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The universal claim that the strategy works against every possible line of evidence is substantially stronger than the support supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Tailored naturalistic alternatives may matter only where the comparison class genuinely leaves their probability open.",
+        "decisiveQualification": "A local underdetermination argument need not imply that all conceivable empirical evidence is neutral."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "The reductio would follow if the alternative-generating strategy generalized universally, but that indispensable conditional is asserted rather than established."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The move supplies an intuition about possible evidence for God but no representative comparison showing that the challenged strategy necessarily generalizes."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary burden of resisting universal naturalistic underdetermination."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The reductio treats the opponent's strategy as unrestricted without adequately preserving the possibility of case-specific evidential constraints."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly calls the alleged generalization to every possible line of evidence a reductio absurdum.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-agency-motive-distinction",
+      "sectionId": "section-agency-and-intentions",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Structured evidence can strongly indicate agency while providing much weaker evidence about the agent's benevolence, purposes, or identity.",
+      "sourceSpan": {
+        "startEvent": 266,
+        "endEvent": 396
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This remains within Alex's uninterrupted opening and develops the explicitly announced sequence of intuition-building alien scenarios.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-divine-psychology"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-bayesian-fine-tuning"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-agency-motive-distinction-component-01",
+            "targetMoveId": "move-pro-bayesian-fine-tuning",
+            "text": "Whether evidence of intentional structure also warrants benevolent purposes and the divine preference needed for the likelihood claim.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The alien-signal examples directly separate evidence for agency from evidence concerning benevolence, identity, and purpose, contacting the goodness-to-expectation bridge.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "The response directly addresses the decisive divine-motive premise through a sustained counterexample structure."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between agency evidence and motive or identity evidence is clearly recoverable and appropriately comparative."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The examples are offered as intuition-building challenges rather than conclusive demonstrations, matching their evidential role."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Perfect goodness may independently support expectations about morally valuable conscious life even if agency evidence alone does not.",
+        "decisiveQualification": "That independent moral premise still requires defense before agency evidence identifies a benevolent divine agent."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The agency-motive distinction is valid and consistently applied, with only the analogical transfer from signals to cosmic fine-tuning left somewhat implicit."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "Multiple structured scenarios support the conceptual distinction, though analogies do not by themselves quantify the cosmic likelihood effect."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central divine-psychology challenge to the pro likelihood."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The response fairly targets the additional motive inference without denying that a separate account of goodness could potentially supply it."
+        }
+      },
+      "evidenceBasis": "The source develops alien-message cases to show that intentional origin can be well supported while benevolence and identity remain less secure.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-naturalistic-disjunction",
+      "sectionId": "section-empirical-underdetermination",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Apparently theistic evidence can admit alien, time-travel, and simulation explanations whose probabilities should be aggregated as a naturalistic disjunction.",
+      "sourceSpan": {
+        "startEvent": 397,
+        "endEvent": 509
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Alex explicitly connects the examples to Miles's proposed theistic evidence and continues speaking until the moderator closes the opening statements.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-naturalistic-space"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-stalking-horse-reductio",
+          "move-pro-bayesian-fine-tuning"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-naturalistic-disjunction-component-01",
+            "targetMoveId": "move-pro-stalking-horse-reductio",
+            "text": "Whether naturalistic alternatives are merely arbitrary defeaters or members of a relevant aggregate rival hypothesis space.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-naturalistic-disjunction-component-02",
+            "targetMoveId": "move-pro-bayesian-fine-tuning",
+            "text": "Whether classical theism has been compared against the full relevant naturalistic alternative space.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "By identifying alien, time-travel, and simulation scenarios and requiring aggregation, the move directly contests both the reductio characterization and the restricted comparison.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It contacts the decisive comparison-space issue with concrete rival categories, although it does not assign or defend their probabilities."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The disjunctive comparison demand is clear, with an implicit caveat that listed scenarios must receive non-negligible probability."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move establishes live alternatives and an aggregation requirement without claiming that any one alternative is probably true."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A tailored naturalistic hypothesis may fit the evidence only by paying a severe intrinsic-probability cost.",
+        "decisiveQualification": "The costs must be assessed across the aggregated naturalistic space rather than assumed from one specification."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Aggregating mutually relevant naturalistic alternatives is coherent, though the boundaries and independence of the proposed disjuncts are not fully specified."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Concrete examples establish a nonempty rival space, but their collective probability and fit are not defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central requirement to compare theism with the relevant naturalistic disjunction."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The response recognizes the comparison as probabilistic but leaves the opponent's prior-cost answer for later engagement."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly identifies three intentional but non-theistic hypotheses and treats them as naturalistic alternatives to be considered together.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-universal-defeater-reply",
+      "sectionId": "section-empirical-underdetermination",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "proposition": "If the same naturalistic-alternative strategy applies to every conceivable observation, it entails that no empirical evidence could ever raise the probability of theism.",
+      "sourceSpan": {
+        "startEvent": 515,
+        "endEvent": 572
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the open discussion to Miles, who explicitly identifies Alex's preceding counterresponse before restating his first objection.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-subsidiary-underdetermination"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-naturalistic-disjunction"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-universal-defeater-reply-component-01",
+            "targetMoveId": "move-con-naturalistic-disjunction",
+            "text": "Whether generating a naturalistic alternative for any observation makes empirical confirmation of theism impossible.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The response directly states the allegedly defeating consequence of applying the opponent's alternative strategy to every possible observation, but does not show why the application must be unrestricted.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It squarely contacts the universal-defeater implication, while leaving the opponent's aggregation and prior-weighting distinction incompletely answered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The proposition is clear, but its scope expands from the presented alternatives to any observation without a stated limiting argument."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The conclusion that no possible evidence could confirm theism depends on an unestablished universal premise."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Naturalistic alternatives can undercut some evidence without neutralizing every possible observation.",
+        "decisiveQualification": "Their force depends on comparative fit and prior probability in each evidential setting."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The consequence follows conditionally, but the move does not justify transferring the same stalking-horse reply to every conceivable evidential configuration."
+        },
+        "evidenceWarrant": {
+          "value": 57,
+          "rationale": "The move restates the universal-defeater intuition without comparative examples or a defended rule establishing universal applicability."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary underdetermination bridge rather than independently completing the motion-level comparison."
+        },
+        "representationalCharity": {
+          "value": 60,
+          "rationale": "The reply preserves the opponent's use of alternatives but materially weakens it by construing the strategy as automatically universal."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly claims that the proposed strategy implies no observation could ever supply empirical evidence for theism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-family-granularity",
+      "sectionId": "section-comparison-domain",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Theism and naturalism are broad families, so a meaningful comparison must fix their granularity and compare the specified theism with the full relevant naturalistic disjunction.",
+      "sourceSpan": {
+        "startEvent": 573,
+        "endEvent": 699
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Alternating turn markers and direct engagement with Miles's question identify this sustained hypothesis-space response as Alex's contribution.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-naturalistic-space"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-universal-defeater-reply",
+          "move-pro-bayesian-fine-tuning"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-family-granularity-component-01",
+            "targetMoveId": "move-pro-universal-defeater-reply",
+            "text": "Whether the relevant issue is universal skepticism or a properly matched comparison between specified families and their disjunctions.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-family-granularity-component-02",
+            "targetMoveId": "move-pro-bayesian-fine-tuning",
+            "text": "Whether the comparison fixes comparable levels of specificity for theism and naturalism.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly reframes the dispute around matched granularity and the full naturalistic disjunction, answering why alternatives need not function as universal defeaters.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It explicitly contacts the decisive hypothesis-space mismatch and states the comparative demand that replaces the alleged universal skepticism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Both the family-level problem and the required specified-theism versus naturalistic-disjunction comparison are stated clearly."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "A matched comparison class is a genuine requirement of the comparative claim, and the scope is explicitly defined."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The proponent may intentionally restrict naturalism and advance a correspondingly strong universal claim within that restriction.",
+        "decisiveQualification": "Even then, every eligible hypothesis inside the stipulated naturalistic class must be represented or probabilistically aggregated."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The granularity objection identifies a clean comparison-class requirement and avoids conflating compatibility with equal probability."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "The argument is chiefly conceptual and its comparison principle is well supported, with probability allocation remaining unresolved."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central naturalistic-space bridge by specifying the necessary comparison domain."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The response allows a specified pro hypothesis while accurately insisting that the rival family be treated at comparable granularity."
+        }
+      },
+      "evidenceBasis": "The excerpt requires comparison of a specified theism against all relevant versions of naturalism considered as a large disjunction.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-restricted-comparison",
+      "sectionId": "section-comparison-domain",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "proposition": "The relevant comparison places classical perfect-being theism against every hypothesis consistent with a specified single-universe naturalism.",
+      "sourceSpan": {
+        "startEvent": 700,
+        "endEvent": 734
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn begins with explicit agreement and then states Miles's intended thesis using the definitions and commitments of his earlier opening.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-naturalistic-space"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-family-granularity",
+          "move-con-naturalistic-disjunction"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-restricted-comparison-component-01",
+            "targetMoveId": "move-con-family-granularity",
+            "text": "Whether pro has specified both the theistic hypothesis and the naturalistic comparison class at a usable granularity.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-restricted-comparison-component-02",
+            "targetMoveId": "move-con-naturalistic-disjunction",
+            "text": "Whether the pro claim includes every hypothesis consistent with stipulated single-universe naturalism.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts the granularity demand and expressly defines classical perfect-being theism and single-universe naturalism, then makes the strong within-class claim.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It directly answers the definitional component and accepts responsibility for comparison with every hypothesis inside the restricted class."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The single-universe restriction and perfect-being theistic target are stated expressly and remain stable throughout the move."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The scope is well qualified, but superiority to every hypothesis in the broad residual class is stronger than the argument supplied here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The naturalistic disjunction remains extensive even after multiverse views are excluded.",
+        "decisiveQualification": "The restriction clarifies rather than eliminates the obligation to assess aliens, simulations, time travel, and other eligible auxiliaries."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The definitions form a coherent restricted comparison, but definition alone does not establish superiority over every consistent naturalistic hypothesis."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The source firmly supports the stated restriction but supplies limited warrant here for the universal superiority claim within it."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central naturalistic-space objection by fixing the intended comparison domain."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The reply accurately accepts the rival-space demand, although it does not yet discharge the full comparative burden."
+        }
+      },
+      "evidenceBasis": "The excerpt defines naturalism as a single natural universe and expressly claims superiority to any hypothesis consistent with that definition.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-resources-after-restriction",
+      "sectionId": "section-comparison-domain",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Even restricted single-universe naturalism retains extensive resources such as aliens, time travel, and simulation, leaving a broad rival hypothesis space.",
+      "sourceSpan": {
+        "startEvent": 772,
+        "endEvent": 827
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn markers and first-person reference back to Alex's original formulation identify this as Alex's response to Miles's clarified naturalism.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-naturalistic-space"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-restricted-comparison"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-resources-after-restriction-component-01",
+            "targetMoveId": "move-pro-restricted-comparison",
+            "text": "Whether restricting the comparison to one natural universe materially narrows the available rival explanations.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The response directly accepts the stipulated game and identifies aliens, simulation, and time travel as resources still available inside the restriction.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It squarely contacts the restriction's supposed narrowing effect and provides concrete surviving alternatives."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is expressly limited to resources remaining under the stipulated single-universe naturalism."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move modestly claims that many resources remain and supports that claim with examples."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Some simulation scenarios may ultimately require a base reality outside the stipulated universe or merely relocate fine-tuning.",
+        "decisiveQualification": "Aliens, time travel, and at least some simulation models can still be formulated within the allowed natural order."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The surviving-resource inference is clear, but the compatibility of every listed scenario with the exact single-universe stipulation is not fully analyzed."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Concrete examples support breadth, though their probability and detailed consistency with the restriction remain unestablished."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central naturalistic-space bridge after the pro restriction."
+        },
+        "representationalCharity": {
+          "value": 83,
+          "rationale": "The response fairly plays within the restriction, although it does not distinguish every simulation model's compatibility."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly accepts single-universe naturalism for argument and lists simulation, time travel, and aliens as remaining options.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-symmetric-intention-opacity",
+      "sectionId": "section-agency-and-intentions",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "General theism need not predict a particular religious event better than general alienism because both posit powerful agents whose specific intentions remain largely unknown.",
+      "sourceSpan": {
+        "startEvent": 945,
+        "endEvent": 1030
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage is a sustained first-person answer to Donahue's challenge and explicitly compares the general theistic and alien hypotheses from Malpass's skeptical perspective.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-divine-psychology"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-bayesian-fine-tuning",
+          "move-pro-universal-defeater-reply"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-symmetric-intention-opacity-component-01",
+            "targetMoveId": "move-pro-bayesian-fine-tuning",
+            "text": "Whether general theism predicts a particular intentional event once the agent's specific intentions remain unknown.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-symmetric-intention-opacity-component-02",
+            "targetMoveId": "move-pro-universal-defeater-reply",
+            "text": "Whether extraordinary intentional evidence uniquely favors theism rather than several strange agent hypotheses.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The response directly compares general theism with general alienism and argues that unexplained intentions prevent the religious description from supplying the requested asymmetry.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "It contacts the decisive intention-opacity issue, though the analogy to perfect goodness is not fully developed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The symmetry claim is recoverable and stable, with the relevance of perfect goodness treated only implicitly."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker presents a skeptical comparison rather than certainty and acknowledges the strangeness of all candidate scenarios."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Perfect-being theism contains substantive goodness properties absent from general alienism.",
+        "decisiveQualification": "Those properties help only if they yield defended expectations about the particular evidence under discussion."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Unknown intentions support the symmetry concern, but treating theism and alienism alike requires addressing theism's added goodness predicate more explicitly."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The conceptual comparison is relevant, while its transfer to cosmic fine-tuning and the weight of goodness remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central divine-psychology challenge concerning predictive intentions."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move fairly challenges predictive intentions, but it compresses the proponent's claim that goodness supplies independent content."
+        }
+      },
+      "evidenceBasis": "The source compares strange theistic and non-theistic agent scenarios and rejects religious description alone as question-begging.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-goodness-and-tailoring",
+      "sectionId": "section-agency-and-intentions",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "proposition": "Perfect goodness provides some basis for expectations about divine intentions, while tailoring an alien hypothesis to predict the evidence transfers improbability into its prior.",
+      "sourceSpan": {
+        "startEvent": 1031,
+        "endEvent": 1117
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "A clear response turn develops Donahue's perfect-being account, uses his probability framework, and answers Malpass's proposed symmetry with alien intentions.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-divine-psychology"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-symmetric-intention-opacity",
+          "move-con-naturalistic-disjunction"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-goodness-and-tailoring-component-01",
+            "targetMoveId": "move-con-symmetric-intention-opacity",
+            "text": "Whether perfect goodness supplies predictive content absent from a general alien hypothesis with opaque intentions.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-goodness-and-tailoring-component-02",
+            "targetMoveId": "move-con-naturalistic-disjunction",
+            "text": "Whether tailoring a naturalistic agent hypothesis to the observation imposes a corresponding prior-probability cost.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly asserts a goodness-based asymmetry and explains why stipulating alien intentions moves evidential improbability into the tailored hypothesis's prior.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It contacts both decisive symmetry components: substantive divine goodness and the prior cost of tailored alien intentions."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move distinguishes general and specifically tailored alien hypotheses and limits goodness to providing some expectation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The modest claim that goodness gives some basis and tailoring generally shifts probability cost fits the supplied warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A naturalistic agent's intentions might follow from an independently simple psychology rather than ad hoc stipulation.",
+        "decisiveQualification": "Without such an independent account, defining the observed intention into the hypothesis carries a specificity cost."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The likelihood-prior tradeoff is coherent and the goodness asymmetry is explicit, though the exact predictive content of goodness remains boundedly implicit."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "The Bayesian tailoring principle is well motivated, but the magnitude of goodness-based prediction is not independently demonstrated."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central divine-psychology objection by supplying motive content and a rival-prior response."
+        },
+        "representationalCharity": {
+          "value": 89,
+          "rationale": "The reply preserves the strongest non-ad-hoc alien alternative while correctly limiting its criticism to unsupported tailoring."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly says a specifically intention-laden alien hypothesis moves evidential improbability into prior probability unless more is supplied.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-augmented-naturalism-share",
+      "sectionId": "section-intrinsic-probability",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "proposition": "Augmented naturalism occupies a negligible portion of naturalistic probability space, whereas perfect-being theism is a comparatively simple and substantial specification of design.",
+      "sourceSpan": {
+        "startEvent": 1236,
+        "endEvent": 1361
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Donahue explicitly redirects the exchange to fine-tuning and delivers an extended, internally continuous Bayesian argument before inviting Malpass's response.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-hypothesis-space"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-resources-after-restriction",
+          "move-con-family-granularity"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-augmented-naturalism-share-component-01",
+            "targetMoveId": "move-con-resources-after-restriction",
+            "text": "Whether the many naturalistic hypotheses that fit fine-tuning collectively occupy substantial conditional probability space.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-augmented-naturalism-share-component-02",
+            "targetMoveId": "move-con-family-granularity",
+            "text": "How probability should be allocated across the full restricted naturalistic family.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The response directly argues that each fine-tuning-predictive augmentation receives a tiny share of general naturalism while theism is a simple design specification.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It contacts the probability-space demand directly, though the numerical or measure-theoretic allocation remains asserted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The two conditional shares are clearly contrasted, with the probability measure over specifications left implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The negligible-share conclusion is stronger than the supplied simplicity discussion, though it is framed as the speaker's defended judgment."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A disjunction of many naturalistic augmentations may collectively receive substantial probability despite each specific member's small share.",
+        "decisiveQualification": "Aggregation helps only if a justified measure assigns meaningful total mass to the evidence-predictive subset."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The conditional-share comparison is intelligible, but moving from specificity to negligible total mass requires an undeveloped measure over naturalistic hypotheses."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The move supplies a simplicity intuition but no defended distribution establishing the claimed extremely low share."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central pro hypothesis-space bridge by addressing probability mass within naturalism."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The response recognizes the family allocation problem but does not fully resolve the strongest disjunctive aggregation version."
+        }
+      },
+      "evidenceBasis": "The excerpt claims any specific fine-tuning augmentation has extremely low prior probability and contrasts this with the alleged simplicity of theism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-broad-naturalistic-resources",
+      "sectionId": "section-empirical-underdetermination",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Broad simulation and science-fiction possibilities give naturalism resources capable of accommodating extraordinary observations without decisively selecting theism.",
+      "sourceSpan": {
+        "startEvent": 1362,
+        "endEvent": 1486
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Malpass first reconstructs Donahue's probability-space proposal, then tests its category boundaries and develops his own naturalistic hypothesis-space objection.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-naturalistic-space"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-augmented-naturalism-share",
+          "move-pro-universal-defeater-reply"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-broad-naturalistic-resources-component-01",
+            "targetMoveId": "move-pro-augmented-naturalism-share",
+            "text": "Whether the naturalistic evidence-compatible region is negligibly narrow rather than broadly populated by simulation and science-fiction possibilities.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-broad-naturalistic-resources-component-02",
+            "targetMoveId": "move-pro-universal-defeater-reply",
+            "text": "Whether failure of complete decisiveness is being confused with failure of any probabilistic confirmation.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts breadth by describing wide simulation possibilities, but its emphasis on evidence not being completely decisive does not answer the proponent's weaker probabilistic-confirmation claim.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "It partially answers the decisive hypothesis-space component while leaving probability mass and non-decisive confirmation unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The move slides between compatibility, broad possibility, and complete decisiveness, obscuring the weaker Bayesian issue."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The possibility claim is supported, but the implied undercutting consequence lacks the qualification that nondeductive evidence may still discriminate."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Theism may be strongly confirmed without being decisively entailed or without ruling out every naturalistic scenario.",
+        "decisiveQualification": "Mere compatibility of broad naturalistic possibilities does not establish appreciable probability or comparable likelihood."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 63,
+          "rationale": "The compatibility examples are coherent, but the inference from surviving possibilities to evidential ambiguity risks conflating non-entailment with weak confirmation."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "Science-fiction scenarios establish conceivable accommodation, not their collective probability or explanatory competitiveness."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "Despite the gap, the move directly bears on the central naturalistic-space burden."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The response materially weakens the pro claim by shifting from strong probabilistic evidence to complete or one-hundred-percent decisiveness."
+        }
+      },
+      "evidenceBasis": "The excerpt stresses that broad science-fiction naturalism can accommodate almost anything and that neither side may be completely decisive.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-limited-disjunction",
+      "sectionId": "section-intrinsic-probability",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "The disjunction of all finite-limit hypotheses may have greater intrinsic probability than the single unlimited hypothesis despite the latter's relative simplicity.",
+      "sourceSpan": {
+        "startEvent": 1707,
+        "endEvent": 1741
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage follows Donahue's direct question at event 1700, and the subsequent handoff explicitly confirms Malpass's interpretation before Donahue resumes.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-priors"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-augmented-naturalism-share"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-limited-disjunction-component-01",
+            "targetMoveId": "move-pro-augmented-naturalism-share",
+            "text": "Whether a single simple unlimited hypothesis can receive more intrinsic probability than the disjunction of all finite-limit alternatives.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges the pro probability allocation by invoking the summed probability of all finite-limit hypotheses against one unlimited hypothesis.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "It squarely contacts the intrinsic-probability comparison, though it assumes a legitimate exhaustive partition and summable allocation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The unlimited-versus-all-limits contrast is clear, with partition assumptions left implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Disjunctive addition is relevant, but the claim that the disjunction massively swamps the unlimited option requires defended member weights."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The unlimited hypothesis may be much simpler than each arbitrary finite-limit specification.",
+        "decisiveQualification": "Even lower-probability finite members can collectively dominate if their disjunction is well-defined and sufficiently exhaustive."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The disjunctive argument is valid under an appropriate partition, but those partition and probability-distribution conditions are not established."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Probability addition supplies a real warrant, while the asserted swamping magnitude lacks defended priors over the finite limits."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central priors challenge concerning unlimited and limited hypotheses."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "The move preserves the simplicity advantage while accurately identifying the unresolved aggregation question."
+        }
+      },
+      "evidenceBasis": "The source argues that probabilities for all different finite limits should be added and may swamp the single unlimited hypothesis.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-unresolved-prior-weighting",
+      "sectionId": "section-intrinsic-probability",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "The simplicity case for theism depends on an unresolved judgment about whether coherence or modesty dominates intrinsic probability.",
+      "sourceSpan": {
+        "startEvent": 1804,
+        "endEvent": 1830
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker directly addresses Donahue in the second person, summarizes his preceding concession, and is answered by Donahue at event 1831.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-ambiguity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-augmented-naturalism-share"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-unresolved-prior-weighting-component-01",
+            "targetMoveId": "move-pro-augmented-naturalism-share",
+            "text": "Whether coherence and simplicity justify the asserted prior asymmetry between theism and augmented naturalism.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The response directly identifies the proponent's reliance on a contested simplicity judgment and argues that confidence falls once coherence and modesty pull differently.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It explicitly contacts the decisive unresolved weighting premise rather than merely repeating general skepticism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The challenged weighting judgment and resulting reduction in confidence are clearly and cautiously stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move claims unresolved judgment rather than a determinate contrary probability, fitting the dialectical evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Coherence may rationally receive more weight than disjunctive modesty even without a precise metric.",
+        "decisiveQualification": "That comparative weighting still needs enough defense to support a strong posterior conclusion."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The undercutting inference from unresolved theoretical-virtue weighting to reduced confidence is coherent and appropriately limited."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "It is grounded in the proponent's acknowledged uncertainty, though it does not provide an independent theory of prior weighting."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central ambiguity bridge concerning how theoretical virtues are weighted."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The response allows the proponent's intuition but accurately argues that an admitted unresolved weighting cannot bear the asserted confidence unaided."
+        }
+      },
+      "evidenceBasis": "The excerpt points to the proponent's uncertainty after considering competing simplicity arguments and challenges the remaining asymmetry.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-coherence-asymmetry",
+      "sectionId": "section-intrinsic-probability",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "proposition": "Even if limited quasi-theistic alternatives collectively exceed theism in probability, coherent theism can remain more probable than augmented naturalism, which lacks both coherence and modesty.",
+      "sourceSpan": {
+        "startEvent": 1831,
+        "endEvent": 1860
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage announces a better response to Malpass's objection, develops the comparative case for theism, and ends immediately before Malpass accepts the point.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-ambiguity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-unresolved-prior-weighting",
+          "move-con-limited-disjunction"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-coherence-asymmetry-component-01",
+            "targetMoveId": "move-con-unresolved-prior-weighting",
+            "text": "Whether uncertainty about limited alternatives eliminates the comparative coherence advantage over augmented naturalism.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-coherence-asymmetry-component-02",
+            "targetMoveId": "move-con-limited-disjunction",
+            "text": "Whether conceding greater mass to quasi-theistic alternatives defeats the narrower theism-versus-augmented-naturalism comparison.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The response concedes the limited-alternative aggregation point but distinguishes it from the claimed coherence asymmetry between theism and augmented naturalism.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It directly contacts both objections, makes a bounded concession, and preserves a narrower comparative consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The concession and narrowed comparison are both explicit, with coherent scope throughout."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The narrowing is well calibrated, but the claim of much greater coherence and probability share remains only briefly defended."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The disjunction of quasi-theistic alternatives may exceed classical theism in intrinsic probability.",
+        "decisiveQualification": "That concession does not by itself assign augmented naturalism a comparable coherence advantage."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The distinction is logically sound, though converting coherence into a much larger probability share retains one implicit prior principle."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The asymmetry is intelligible but rests substantially on asserted coherence and modesty comparisons rather than developed support."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central ambiguity objection by isolating a claimed stable asymmetry."
+        },
+        "representationalCharity": {
+          "value": 93,
+          "rationale": "The reply expressly grants the strongest limited-alternative point and identifies the narrower consequence that survives it."
+        }
+      },
+      "evidenceBasis": "The excerpt concedes the quasi-theistic disjunction may be likelier yet denies that augmented naturalism has either comparable coherence or modesty.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-ontological-parsimony",
+      "sectionId": "section-overall-theoretical-virtues",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Naturalism gains ontological parsimony by positing natural reality alone, whereas theism adds a supernatural reality to the natural world.",
+      "sourceSpan": {
+        "startEvent": 1867,
+        "endEvent": 1891
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn follows Malpass's express acceptance of Donahue's point and frames a first-person naturalistic rejoinder before Donahue answers at event 1892.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-priors"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-coherence-asymmetry"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-ontological-parsimony-component-01",
+            "targetMoveId": "move-pro-coherence-asymmetry",
+            "text": "Whether coherence exhausts intrinsic probability or must be balanced against naturalism's ontological parsimony.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The response directly introduces ontological parsimony as a countervailing virtue and asks whether it balances the claimed coherence asymmetry.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It contacts the omitted theoretical virtue, though it is framed tentatively and does not quantify its comparative force."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The naturalism-versus-theism ontological contrast is clear and expressly offered as a possible balancing consideration."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The highly tentative question matches the limited warrant and does not overstate parsimony's ultimate weight."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Theism's coherence advantage may outweigh its additional ontological commitment.",
+        "decisiveQualification": "The additional commitment still supplies a genuine countervailing consideration requiring comparative weight."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The parsimony consideration is relevant and consistent, but the move supplies no bridge fixing how it affects the prior comparison."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The ontological contrast is straightforward, although its magnitude and relation to ideology or entity counting remain undeveloped."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central priors challenge through an omitted intrinsic-probability consideration."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The move does not deny coherence and fairly asks how it balances against ontological cost."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly asks whether naturalism's ontological parsimony balances the proponent's coherence and modesty considerations.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-coherence-outweighs-parsimony",
+      "sectionId": "section-overall-theoretical-virtues",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "proposition": "Naturalism's ontological-simplicity advantage is modest enough to be outweighed by the larger coherence-based probability advantage of theism over augmented naturalism.",
+      "sourceSpan": {
+        "startEvent": 1892,
+        "endEvent": 1943
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker accepts naturalism's general simplicity advantage while defending the earlier two-ratio argument, and Malpass responds directly at event 1944.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-ambiguity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-ontological-parsimony"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-coherence-outweighs-parsimony-component-01",
+            "targetMoveId": "move-con-ontological-parsimony",
+            "text": "Whether naturalism's ontological-simplicity advantage defeats the claimed coherence-based probability asymmetry.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts a general simplicity advantage for naturalism but argues that it is modest relative to the allegedly top-heavy coherence ratio.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It directly contacts the parsimony objection and makes the relevant tradeoff, while candidly admitting the absence of concrete proof."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The comparative tradeoff and lack-of-proof qualification are both explicit and stable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker acknowledges that the judgment is intuitive, but still describes the ratio as sufficiently top-heavy without concrete support."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Adding supernatural reality may impose a substantial rather than modest prior penalty on theism.",
+        "decisiveQualification": "The size of that penalty must be compared with, not merely noted against, the claimed conditional-share asymmetry."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The virtues can coherently trade off, but the conclusion that one outweighs the other lacks a developed comparative bridge."
+        },
+        "evidenceWarrant": {
+          "value": 63,
+          "rationale": "The source expressly admits no concrete proof and relies mainly on an intuitive characterization of the ratios' relative sizes."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central ambiguity burden by proposing an overall weighting of coherence and parsimony."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply grants the real parsimony advantage but labels its magnitude modest with limited defense."
+        }
+      },
+      "evidenceBasis": "The excerpt calls the coherence ratio top-heavy, describes naturalism's simplicity advantage as modest, and expressly concedes lacking concrete proof.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-incalculable-virtues",
+      "sectionId": "section-overall-theoretical-virtues",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Because parsimony and competing theoretical virtues cannot be reliably quantified or traded off, the posterior comparison remains reasonably ambiguous.",
+      "sourceSpan": {
+        "startEvent": 1944,
+        "endEvent": 2020
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn begins by qualifying Donahue's treatment of parsimony, continues in Malpass's characteristic first-person skeptical stance, and ends when the moderator proposes closings.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-ambiguity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-coherence-outweighs-parsimony"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-incalculable-virtues-component-01",
+            "targetMoveId": "move-pro-coherence-outweighs-parsimony",
+            "text": "Whether coherence, parsimony, and other theoretical virtues can be weighted reliably enough to establish the claimed overall comparison.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The response directly contests the unsupported tradeoff by explaining that the relevant theoretical increments cannot be calculated or confidently balanced.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It targets the decisive missing comparative metric and states the resulting limitation on firm posterior conclusions."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The inability to reach a firm conclusion from these a posteriori arguments is expressly and cautiously bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The asserted reasonable ambiguity matches the admitted absence of a reliable weighting method."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Large likelihood ratios can sometimes swamp uncertain but bounded prior differences without exact calculation.",
+        "decisiveQualification": "Swamping requires justified bounds or orders of magnitude, not merely an intuition that one ratio is top-heavy."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The undercutting inference is explicit, internally consistent, and directly follows from the unresolved weighting acknowledged in the exchange."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "It is strongly grounded in the opponent's admitted lack of proof, though it does not show that all possible qualitative bounds are unavailable."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central ambiguity bridge concerning overall theoretical-virtue weighting."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The response permits qualitative comparison in principle while accurately identifying the missing warrant needed for this asserted tradeoff."
+        }
+      },
+      "evidenceBasis": "The excerpt says the comparison requires weighing incalculable increments in theoretical virtues and therefore does not support a firm conclusion.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-pro-likelihood-swamping",
+      "sectionId": "section-overall-theoretical-virtues",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "proposition": "Coherence can outweigh disjunctive modesty, and the extremely low conditional probability of augmented naturalism can swamp naturalism's ontological-simplicity benefit.",
+      "sourceSpan": {
+        "startEvent": 2033,
+        "endEvent": 2096
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly assigns the first closing to Miles, and this uninterrupted closing is followed by Alex's second closing at event 2099.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "bridge-pro-motion-confirmation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-con-incalculable-virtues",
+          "move-con-ontological-parsimony"
+        ],
+        "components": [
+          {
+            "componentId": "move-pro-likelihood-swamping-component-01",
+            "targetMoveId": "move-con-incalculable-virtues",
+            "text": "Whether a sufficiently extreme augmented-naturalism likelihood or conditional-share disadvantage can swamp uncertain theoretical-virtue differences.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-pro-likelihood-swamping-component-02",
+            "targetMoveId": "move-con-ontological-parsimony",
+            "text": "Whether naturalism's ontological simplicity can outweigh the proposed many-orders-of-magnitude ratio.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The closing directly supplies a swamping argument and a claimed one-in-10-to-the-100th naturalistic conditional probability to overcome parsimony and weighting ambiguity.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It squarely contacts the incalculability objection with an order-of-magnitude claim, though the crucial conditional-share premise remains contested."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional swamping structure is clear and expressly conditioned on usual fine-tuning claims and a non-negligible numerator."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The conditional form is careful, but the enormous probability assignment lacks enough defense to warrant the resulting confidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Theoretical-virtue uncertainty may be too large or structurally different to be swamped by the proposed ratio.",
+        "decisiveQualification": "A defended many-orders-of-magnitude bound could overcome ordinary prior uncertainty, but the bound itself must be justified."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The swamping inference is valid conditionally, with a material but clearly stated dependence on the numerator and probability-space assumptions."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "The one-in-10-to-the-100th figure is tied to usual fine-tuning claims but not defended as the conditional share of augmented naturalism."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "The move expressly integrates likelihood, priors, and parsimony into the motion-level strong-confirmation claim."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The reply accurately identifies the strongest route around exact calculation while leaving its numerical premise exposed."
+        }
+      },
+      "evidenceBasis": "The excerpt gives an explicit conditional swamping argument using a claimed one-in-10-to-the-100th augmented-naturalism probability.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-theory-deflation",
+      "sectionId": "section-fine-tuning-likelihood",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Apparent fine-tuning may indicate a defect or instability in a physical theory rather than an objective feature of the universe requiring design.",
+      "sourceSpan": {
+        "startEvent": 2112,
+        "endEvent": 2145
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This occurs within Alex's explicitly ordered second closing, uses first-person references to his discussions with Dan Linford, and remains uninterrupted throughout the argument.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-con-subsidiary-theory-status"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-likelihood-swamping",
+          "move-pro-bayesian-fine-tuning"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-theory-deflation-component-01",
+            "targetMoveId": "move-pro-likelihood-swamping",
+            "text": "Whether the enormous likelihood or conditional-share ratio used in the closing is justified.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-theory-deflation-component-02",
+            "targetMoveId": "move-pro-bayesian-fine-tuning",
+            "text": "Whether apparent fine-tuning is an objective cosmic datum rather than a defect of the physical theory.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move offers relevant contrary material about the datum's theoretical status, but it does not answer the closing's decisive probability-space and swamping inference.",
+        "responsivenessWithinClass": {
+          "value": 66,
+          "rationale": "It contacts a secondary premise concerning the datum while leaving the selected primary numerical inference unaddressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The theory-versus-universe distinction is clear, but the move does not specify which fine-tuning phenomena or theories support the generalization."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move appropriately presents theory defect as a possible alternative interpretation rather than a demonstrated fact."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The alternative interpretation is coherent, but its consequence for the specific cosmological datum and Bayesian comparison remains implicit."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "The move reports a physicist-style diagnostic perspective but gives no representative theory, mechanism, or verification within the selected span."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary theory-status bridge, not the closing's motion-level probability inference."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move introduces a distinct interpretation of fine-tuning without developing a substantive reading of the targeted swamping argument."
+        }
+      },
+      "evidenceBasis": "The excerpt says physicists may treat highly fine-tuned behavior as a property or defect of a theory rather than of the universe.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "move-con-divine-psychology-uncertainty",
+      "sectionId": "section-fine-tuning-likelihood",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Theistic likelihoods remain uncertain because divine goodness, its meaning, and the intentions or creative choices it would produce cannot simply be assumed.",
+      "sourceSpan": {
+        "startEvent": 2146,
+        "endEvent": 2178
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage continues Alex's second closing, explicitly revisits his own earlier stalking-horse hypothesis, and develops the divine-psychology objection in the first person.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-divine-psychology"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "move-pro-bayesian-fine-tuning",
+          "move-pro-likelihood-swamping"
+        ],
+        "components": [
+          {
+            "componentId": "move-con-divine-psychology-uncertainty-component-01",
+            "targetMoveId": "move-pro-bayesian-fine-tuning",
+            "text": "Whether perfect goodness provides a justified probability distribution over divine intentions and creative choices.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "move-con-divine-psychology-uncertainty-component-02",
+            "targetMoveId": "move-pro-likelihood-swamping",
+            "text": "Whether the numerator in the closing's swamping ratio is non-negligible given uncertain divine psychology.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The closing directly challenges knowledge of divine goodness and intentions and thereby contests both the original theistic likelihood and the swamping numerator.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It explicitly contacts the indispensable divine-psychology premise, though the selected excerpt develops the objection only briefly."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The uncertainty claim is recoverable and expressly directed at goodness, intentions, and resulting creative expectations."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker advances an undercutting uncertainty rather than claiming that God would probably avoid life, matching the available warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Perfect goodness may provide some defeasible reason to expect conscious moral agents even without detailed divine psychology.",
+        "decisiveQualification": "Some direction of fit does not establish the magnitude needed for a strong likelihood or swamping conclusion."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "Uncertainty about divine intentions coherently undercuts the asserted likelihood magnitude without requiring a contrary prediction."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "The conceptual gap is clearly identified, though the move does not develop a positive model demonstrating the range of divine choices."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central divine-psychology bridge and bears on an indispensable pro likelihood premise."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The move permits a stipulated intention hypothesis while accurately separating that stipulation from an independently warranted theistic likelihood."
+        }
+      },
+      "evidenceBasis": "The excerpt questions knowledge of divine intentions and distinguishes stipulating what God wants from independently justifying that hypothesis.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide pro consequence remains outside the move ratings, response links, importance judgments, and burden-contact findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No independent residual completion criterion is satisfied.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No uncaptured debate-wide consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden contact findings"
+        ],
+        "counterfactual": "Removing any proposed residual would not change burden completion independently of the scored moves."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide con consequence remains outside the move ratings, response links, importance judgments, and burden-contact findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No independent residual completion criterion is satisfied.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No uncaptured debate-wide consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden contact findings"
+        ],
+        "counterfactual": "Removing any proposed residual would not change burden completion independently of the scored moves."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

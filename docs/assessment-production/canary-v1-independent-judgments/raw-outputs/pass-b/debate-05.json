@@ -1,0 +1,1929 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "05",
+  "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-transcendental",
+      "side": "pro",
+      "description": "Establish Christian revelation as the necessary precondition for truth, logic, knowledge, induction, evidence, and reasonable belief in God.",
+      "successCriteria": "Show that the Christian God supplies the required foundation for intelligibility and that denying this foundation leaves the con account unable to justify its own reasoning.",
+      "motionBridge": {
+        "bridgeId": "bridge-pro-motion",
+        "tier": "motion",
+        "description": "Connect God's truth and necessary epistemic role to the conclusion that belief in the Christian God is reasonable."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-pro-truth",
+          "tier": "central",
+          "description": "Establish that objective truth and knowledge require conformity to an absolute divine mind."
+        },
+        {
+          "bridgeId": "bridge-pro-logic",
+          "tier": "central",
+          "description": "Establish that logical absolutes reflect God's thinking and cannot be grounded by autonomous naturalistic cognition."
+        },
+        {
+          "bridgeId": "bridge-pro-revelation",
+          "tier": "central",
+          "description": "Establish divine revelation as a certainty-conferring source available to human knowers."
+        },
+        {
+          "bridgeId": "bridge-pro-induction",
+          "tier": "central",
+          "description": "Establish that nonrevelatory attempts to justify induction depend circularly on induction itself."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-pro-rivals",
+          "tier": "subsidiary",
+          "description": "Distinguish Christian revelation from competing religious authorities through internal consistency tests."
+        },
+        {
+          "bridgeId": "bridge-pro-direction",
+          "tier": "subsidiary",
+          "description": "Clarify that Christianity functions as the argument's starting precondition rather than as an inference from generic absolutes."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-fallibilist",
+      "side": "con",
+      "description": "Defend fallibilist, evidence-responsive inquiry as sufficient for reasonable belief while requiring support for Christianity's claimed epistemic necessity.",
+      "successCriteria": "Show that reasonableness does not require absolute certainty, that logic and experience support provisional knowledge, and that revelation and Christian exclusivity require independent demonstration.",
+      "motionBridge": {
+        "bridgeId": "bridge-con-motion",
+        "tier": "motion",
+        "description": "Connect justified fallibilist inquiry and unmet theistic evidential burdens to withholding belief in God as presently unreasonable."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-con-standard",
+          "tier": "central",
+          "description": "Define reasonable belief by valid inference and supported premises rather than by absolute certainty."
+        },
+        {
+          "bridgeId": "bridge-con-foundation",
+          "tier": "central",
+          "description": "Ground inquiry in logical absolutes, shared experience, and appropriately limited confidence without adding God."
+        },
+        {
+          "bridgeId": "bridge-con-exclusivity",
+          "tier": "central",
+          "description": "Require demonstration that Christianity uniquely accounts for logic, truth, and knowledge rather than merely asserting it."
+        },
+        {
+          "bridgeId": "bridge-con-revelation",
+          "tier": "central",
+          "description": "Require a reliable mechanism connecting purported divine revelation to accurate human knowledge."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-con-induction",
+          "tier": "subsidiary",
+          "description": "Defend induction as probabilistic justification without recasting it as deductive certainty."
+        },
+        {
+          "bridgeId": "bridge-con-rivals",
+          "tier": "subsidiary",
+          "description": "Use disagreement among religious claims to require a truth-tracking method for selecting among revelations."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-reasonableness",
+      "title": "Reasonableness, truth, and the burden of belief",
+      "weightPercent": 24,
+      "rationale": "This issue fixes the motion-level standard and determines whether truth itself establishes reasonable theistic belief or whether supported premises and valid inference remain necessary."
+    },
+    {
+      "sectionId": "section-reality",
+      "title": "Objective reality, certainty, and radical skepticism",
+      "weightPercent": 21,
+      "rationale": "The competing accounts of access to reality determine whether uncertainty about ultimate reality defeats secular knowledge or permits inquiry from minimal fallibilist commitments."
+    },
+    {
+      "sectionId": "section-logic",
+      "title": "The foundation and intelligibility of logic",
+      "weightPercent": 21,
+      "rationale": "Accounting for logical absolutes is a central burden because both routes rely on logic while disputing whether its intelligibility requires the Christian God."
+    },
+    {
+      "sectionId": "section-revelation",
+      "title": "Revelation, reliability, and rival religious claims",
+      "weightPercent": 19,
+      "rationale": "The reliability and distinctiveness of Christian revelation govern whether it can bridge divine omniscience to human certainty and distinguish Christianity from competing authorities."
+    },
+    {
+      "sectionId": "section-induction",
+      "title": "Induction and the direction of the transcendental argument",
+      "weightPercent": 15,
+      "rationale": "This issue tests whether probabilistic prediction can be rational without revelation and clarifies whether Christianity is established from shared premises or installed as the necessary starting point."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-move-01",
+      "sectionId": "section-reasonableness",
+      "side": "pro",
+      "speaker": "Sye Ten Bruggencate",
+      "moveKind": "constructive",
+      "proposition": "Belief in God is reasonable because God exists, and believing a proposition that is true is reasonable.",
+      "sourceSpan": {
+        "startEvent": 13,
+        "endEvent": 36
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces the first opening statement, followed by a sustained first-person presentation identifiable as Sye's position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "bridge-pro-motion"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive supplies the pro motion-level syllogism and therefore has no earlier opposing move to answer.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within constructive moves, it clearly states the intended syllogism but leaves its decisive premise undefended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The premises and conclusion are explicit, and the key uses of truth and reasonableness remain stable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical conclusion depends on the asserted premise that God exists, for which this move supplies no warrant."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "The form is valid, but the bridge from truth alone to reasonable belief omits the believer's epistemic access to truth."
+        },
+        "evidenceWarrant": {
+          "value": 50,
+          "rationale": "The decisive factual premise that God exists is asserted rather than supported in this selected move."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly states the motion conclusion and an express route intended to establish reasonable belief."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move presents its own syllogism and does not materially interpret a live opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly gives two premises and the conclusion that belief in God is reasonable because God exists.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-move-02",
+      "sectionId": "section-reasonableness",
+      "side": "pro",
+      "speaker": "Sye Ten Bruggencate",
+      "moveKind": "constructive",
+      "proposition": "Without divine revelation an atheist cannot know objective reality or truth, while everyone knows God exists and suppresses that knowledge.",
+      "sourceSpan": {
+        "startEvent": 89,
+        "endEvent": 242
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening statement retains Sye's first-person advocacy and repeatedly contrasts his worldview with Matt's stated positions.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-truth"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive develops the pro account of truth and knowledge without an earlier opposing target.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "Within constructives, it clearly advances a central route but compresses several indispensable warrants."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "materially-unstable",
+        "qualificationExplicitness": "materially-misleading",
+        "rationale": "It shifts among ultimate reality, knowing anything true, and universal suppressed knowledge without marking their different scopes."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "radically-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Universal inability and universal knowledge are asserted with certainty despite absent support for the necessity and suppression claims."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A fallibilist can know limited truths without claiming exhaustive access to ultimate reality.",
+        "decisiveQualification": "Limited uncertainty about ultimate reality does not itself eliminate every justified truth claim."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 55,
+          "rationale": "The inference equivocates between not knowing ultimate reality exhaustively and being unable to know any proposition as true."
+        },
+        "evidenceWarrant": {
+          "value": 38,
+          "rationale": "Divine necessity, universal God-knowledge, and suppression are asserted without a mechanism or representative support."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central pro truth bridge, though it does not itself complete the motion bridge."
+        },
+        "representationalCharity": {
+          "value": 50,
+          "rationale": "The move treats lack of ultimate certainty as inability to know anything, materially weakening the fallibilist alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that inability to know ultimate reality removes any basis for truth and says everyone knows God exists.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-move-01",
+      "sectionId": "section-reasonableness",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Reasonable belief requires a valid argument with adequately supported premises, whereas absolute knowledge or certainty is unnecessary for acting on beliefs.",
+      "sourceSpan": {
+        "startEvent": 267,
+        "endEvent": 361
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Matt the opening statement, and the ensuing sustained first-person account defines and defends his position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-standard"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-move-01",
+          "pro-move-02"
+        ],
+        "components": [
+          {
+            "componentId": "con-move-01-component-01",
+            "targetMoveId": "pro-move-01",
+            "text": "Truth of God's existence alone is sufficient to make belief in God reasonable.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-move-01-component-02",
+            "targetMoveId": "pro-move-02",
+            "text": "Lack of absolute certainty prevents an atheist from having any true or reasonable belief.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "It expressly identifies the missing soundness requirement in the first syllogism and explains why replacing reasonableness with absolute certainty changes the disputed standard.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly attacks the decisive inference and supplies the consequence for the motion-level standard."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "It consistently distinguishes belief, reasonableness, knowledge, and absolute certainty while stating the evidential standard."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The necessity claim is limited to valid inference and adequately supported premises, not to absolute certainty."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The pro case may invoke certainty because it regards knowledge as a precondition of reasonable argument.",
+        "decisiveQualification": "That concern still must show why fallible justification cannot satisfy the narrower reasonableness motion."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The distinction between sound argument, reasonable belief, and certainty is explicit and consistently applied."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "The epistemic standard is defended by a clear argument, with only broader methodological support left compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the con central standard bridge and bears strongly on the motion."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply fairly isolates the certainty issue and preserves the need for a supported argument rather than caricaturing it."
+        }
+      },
+      "evidenceBasis": "The excerpt calls certainty-focused argument a red herring and requires valid inference with supported premises for reasonable belief.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-move-07",
+      "sectionId": "section-revelation",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Competing religions, denominations, and revelation claims provide no reliable method for determining which purported god or doctrine, if any, is true.",
+      "sourceSpan": {
+        "startEvent": 402,
+        "endEvent": 452
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This passage continues Matt's enumerated opening case in the same uninterrupted speaking turn and uses his explicit first-person position.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-con-rivals"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-move-02"
+        ],
+        "components": [
+          {
+            "componentId": "con-move-07-component-01",
+            "targetMoveId": "pro-move-02",
+            "text": "Everyone knows the Christian God through revelation and suppresses that knowledge.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Religious disagreement and the absence of a selection method bear on revelation, but the move does not directly test the universal suppression premise or its alleged source.",
+        "responsivenessWithinClass": {
+          "value": 55,
+          "rationale": "It is a relevant nonanswer that raises a material rival-claims problem without contacting the selected decisive premise."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The demand for a reliable pathway is clear, though the number of denominations is used as a broad proxy for doctrinal disagreement."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The argument plausibly establishes a discrimination problem, but disagreement alone does not prove that no reliable method exists."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A revelation claim might include internal or external criteria capable of distinguishing it from rivals.",
+        "decisiveQualification": "Those criteria must be shown to track truth rather than merely identify a preferred tradition."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The inference from extensive disagreement to a need for discrimination is strong, though not a disproof of every possible method."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The existence of many competing claims is representative support, but reliability comparisons and denomination details are compressed."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary con rivals bridge rather than the motion or a central bridge."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move leaves room for a method in principle while fairly demanding that an actual reliable pathway be supplied."
+        }
+      },
+      "evidenceBasis": "The excerpt cites numerous religions and Christian denominations and argues that no reliable pathway among their claims has been supplied.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-move-02",
+      "sectionId": "section-reasonableness",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "constructive",
+      "proposition": "Supernatural causation warrants belief only if a testable, reliable connection between religious claims or practices and observable results is established.",
+      "sourceSpan": {
+        "startEvent": 453,
+        "endEvent": 547
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage is Matt's explicitly numbered third reason within his uninterrupted opening statement and maintains a consistent first-person perspective.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "bridge-con-motion"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive states an evidential condition for reasonable supernatural belief and has no earlier target requirement.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within constructives, it offers a concrete and falsifiable route by which supernatural belief could become reasonable."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional claim identifies observable, consistent, reliable, falsifiable, and repeatable results as its intended scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "It cautiously states that such evidence could make belief reasonable rather than claiming that only one experiment could prove God."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The conditional connection between reliable testable correlation and reasonable belief is explicit and internally consistent."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "The methodological warrant is plausible but the move gives no actual study or detailed causal-discrimination procedure."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It directly connects an unmet evidential condition to the motion-level reasonableness of supernatural belief."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move offers a prospective evidential test rather than interpreting a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt says consistent, reliable, falsifiable, repeatable correlations could make a particular supernatural belief reasonable.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-move-03",
+      "sectionId": "section-reality",
+      "side": "pro",
+      "speaker": "Sye Ten Bruggencate",
+      "moveKind": "reply",
+      "proposition": "A case that presupposes truth cannot be justified by a worldview unable to know reality, because truth cannot be known unless one starts with God.",
+      "sourceSpan": {
+        "startEvent": 552,
+        "endEvent": 580
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator assigns the rebuttal to Sye, and the following direct references to Matt's opening identify Sye as the responding speaker.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-foundation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-move-01",
+          "con-move-02"
+        ],
+        "components": [
+          {
+            "componentId": "pro-move-03-component-01",
+            "targetMoveId": "con-move-01",
+            "text": "Fallible supported reasoning can establish reasonable belief without absolute certainty.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-move-03-component-02",
+            "targetMoveId": "con-move-02",
+            "text": "Testable correlations could provide a reasonable evidential route to supernatural causation.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "It challenges the con standard by claiming that a fallibilist cannot know truth at all, but it repeats the radical-skepticism inference rather than fully answering the distinction between certainty and justification.",
+        "responsivenessWithinClass": {
+          "value": 70,
+          "rationale": "It contacts the decisive standard but supplies only a partial answer because the fallibilist distinction remains unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "materially-unstable",
+        "qualificationExplicitness": "materially-misleading",
+        "rationale": "The move conflates uncertainty about ultimate reality with inability to know anything true and describes all con reasoning as borrowing."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "radically-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The claim that nothing can be known unless one starts with God far exceeds the support supplied in the excerpt."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Fallibilism permits justified beliefs about experienced reality without claiming an ultimate solution to solipsism.",
+        "decisiveQualification": "Its limited confidence must still be assessed independently of absolute certainty."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 52,
+          "rationale": "Its central inference depends on the unsupported step from nonabsolute access to reality to total epistemic defeat."
+        },
+        "evidenceWarrant": {
+          "value": 40,
+          "rationale": "The necessity of God and the borrowing diagnosis are asserted without demonstrating why fallibilist warrants fail."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central con foundation bridge by denying autonomous access to truth."
+        },
+        "representationalCharity": {
+          "value": 48,
+          "rationale": "The reply collapses that qualified position into total inability to know truth and therefore materially weakens it."
+        }
+      },
+      "evidenceBasis": "The excerpt says Matt cannot know reality, borrows truth from the pro worldview, and cannot know truth without starting with God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-move-05",
+      "sectionId": "section-logic",
+      "side": "pro",
+      "speaker": "Sye Ten Bruggencate",
+      "moveKind": "reply",
+      "proposition": "If human reasoning consists only of biochemical reactions in evolved brains, it cannot account for objective logical necessity or truth.",
+      "sourceSpan": {
+        "startEvent": 581,
+        "endEvent": 623
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This remains within Sye's moderator-announced rebuttal and directly addresses Matt by name while defending the pro worldview in first person.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-logic"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-move-01"
+        ],
+        "components": [
+          {
+            "componentId": "pro-move-05-component-01",
+            "targetMoveId": "con-move-01",
+            "text": "Reasonable belief rests on valid inference and supported premises rather than absolute certainty.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The biochemical-reasoning objection is relevant to the reliability of secular inference but does not answer the selected standard's distinction between reasonable justification and certainty.",
+        "responsivenessWithinClass": {
+          "value": 50,
+          "rationale": "It supplies issue-bearing contrary material while leaving the decisive epistemic-standard component uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "materially-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The move shifts from biochemical realization to mere irrational fizzing without distinguishing causal implementation from logical justification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "It categorically denies objective truth to evolved cognition without supporting the claim that physical realization defeats validity."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Biochemical processes may implement reasoning whose propositions and inferences remain assessable for validity.",
+        "decisiveQualification": "A naturalistic account still owes an explanation of reliability and normativity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 50,
+          "rationale": "The inference from physical causation to absence of truth or logical normativity is asserted and risks a genetic fallacy."
+        },
+        "evidenceWarrant": {
+          "value": 38,
+          "rationale": "No evidence or defended warrant shows that evolved biochemical cognition cannot instantiate truth-sensitive reasoning."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central pro logic bridge by attacking autonomous naturalistic cognition."
+        },
+        "representationalCharity": {
+          "value": 45,
+          "rationale": "The reply reduces the alternative to arbitrary fizzing and omits the distinction between implementation and rational content."
+        }
+      },
+      "evidenceBasis": "The excerpt characterizes evolved reasoning as chemical reactions or brain fizzing incapable of yielding objective truth.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-move-03",
+      "sectionId": "section-reality",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Because hard solipsism has no known ultimate solution, inquiry should begin with existence, reliable reason, and generally reliable experience rather than additionally presupposing God.",
+      "sourceSpan": {
+        "startEvent": 700,
+        "endEvent": 755
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator announces Matt's rebuttal, and this structured first-person response expressly addresses Sye's treatment of hard solipsism.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-foundation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-move-03",
+          "pro-move-02"
+        ],
+        "components": [
+          {
+            "componentId": "con-move-03-component-01",
+            "targetMoveId": "pro-move-03",
+            "text": "Failure to solve radical skepticism makes all non-theistic truth claims unjustified.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-move-03-component-02",
+            "targetMoveId": "pro-move-02",
+            "text": "An atheist's inability to know ultimate reality eliminates all knowledge of truth.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "It explicitly diagnoses the illicit demand for absolute certainty and states that inquiry can proceed from minimal, generally reliable presuppositions without adding God.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It answers the decisive skepticism inference directly and explains the fallibilist consequence in explicit terms."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move carefully limits experience to general reliability and acknowledges that ultimate certainty is unavailable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Its claims are expressly fallibilist and match the limited support offered by recurring experience and error detection."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The pro challenge asks for an ultimate justification rather than merely practical reliability.",
+        "decisiveQualification": "Failure to supply an ultimate justification does not establish that adding God solves the same skeptical problem."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The minimal-presupposition reframe is consistent and directly avoids inferring certainty from generally reliable inquiry."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "Ordinary experience and detectable error support the limited conclusion, though the reliability warrant remains partly compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central con foundation bridge and defeats the pro radical-skepticism attack."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The response accurately preserves the strongest foundational demand and explains why it does not entail the proposed divine addition."
+        }
+      },
+      "evidenceBasis": "The excerpt concedes hard solipsism, then identifies existence, reliable reason, and generally reliable experience as limited starting points.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-move-05",
+      "sectionId": "section-logic",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Making God the foundation of logical absolutes is explanatorily insufficient unless both that account and its claimed exclusivity over all other worldviews are demonstrated.",
+      "sourceSpan": {
+        "startEvent": 756,
+        "endEvent": 826
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage continues Matt's announced rebuttal and explicitly identifies Sye's claim about God and logical absolutes as the position under examination.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-exclusivity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-move-05",
+          "pro-move-03"
+        ],
+        "components": [
+          {
+            "componentId": "con-move-05-component-01",
+            "targetMoveId": "pro-move-05",
+            "text": "Naturalistic cognition cannot account for objective logic, whereas the pro worldview can.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-move-05-component-02",
+            "targetMoveId": "pro-move-03",
+            "text": "The con worldview must borrow truth and reasoning from Christianity.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "It identifies the missing demonstration of both the divine account and its exclusivity, making explicit that assertion does not establish explanatory superiority.",
+        "responsivenessWithinClass": {
+          "value": 96,
+          "rationale": "It directly contacts the decisive explanatory and exclusivity gaps and states their defeating consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move distinguishes showing that one worldview accounts for logic from showing that every alternative fails."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The demand for demonstrations of adequacy and exclusivity is proportionate to the pro side's universal necessity claim."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The transcendental case may claim that God is a necessary precondition rather than an ordinary causal explanation.",
+        "decisiveQualification": "That modal necessity and Christian exclusivity still require argument rather than repetition."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The separation of explanatory adequacy from exclusivity is explicit and exposes two independent missing warrants."
+        },
+        "evidenceWarrant": {
+          "value": 87,
+          "rationale": "The criticism is grounded in the actual absence of demonstration in the selected pro material, with only broader rival analysis compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the indispensable con exclusivity bridge at the top of the central tier."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The response preserves the transcendental form while accurately identifying the demonstration it must supply."
+        }
+      },
+      "evidenceBasis": "The excerpt says the pro side must demonstrate both that its worldview accounts for logic and that all alternatives fail.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-move-08",
+      "sectionId": "section-revelation",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Even granting a perfect God, no mechanism has been demonstrated by which a fallible recipient obtains infallible revelation, and invoking God reproduces circular justification.",
+      "sourceSpan": {
+        "startEvent": 923,
+        "endEvent": 954
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage is Matt's sustained rebuttal, referring to Sye in the third person and challenging the claimed revelation mechanism.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-revelation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-move-02",
+          "pro-move-03"
+        ],
+        "components": [
+          {
+            "componentId": "con-move-08-component-01",
+            "targetMoveId": "pro-move-02",
+            "text": "Divine revelation enables human beings to know objective truth with certainty.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-move-08-component-02",
+            "targetMoveId": "pro-move-03",
+            "text": "Starting with God removes the con side's inability to know truth.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "It grants a perfect knower for argument's sake, identifies the absent transmission mechanism to a fallible recipient, and states that invoking God leaves circular justification unresolved.",
+        "responsivenessWithinClass": {
+          "value": 96,
+          "rationale": "It directly attacks the decisive revelation bridge under a strong concessive formulation and explains the consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional grant, recipient fallibility, and disputed certainty-conferring mechanism are all clearly separated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move says no mechanism has been demonstrated rather than claiming that revelation is metaphysically impossible."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A perfect God could intentionally reveal truth in a way that overcomes recipient fallibility.",
+        "decisiveQualification": "The debate still requires a demonstrated truth-preserving connection available to the recipient."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 94,
+          "rationale": "The perfect-source versus fallible-recipient distinction is coherent and directly defeats an unsupported transfer of certainty."
+        },
+        "evidenceWarrant": {
+          "value": 88,
+          "rationale": "The criticism needs no proof of impossibility and accurately rests on the missing mechanism in the pro case."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central con revelation bridge at the upper end of that tier."
+        },
+        "representationalCharity": {
+          "value": 95,
+          "rationale": "The reply expressly grants the strongest divine attributes and isolates the remaining human-access qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt grants a perfect God but asks how a fallible person could receive infallible certainty, using the dirty-filter analogy.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-move-04",
+      "sectionId": "section-reality",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Human uncertainty does not entail God, because reality rather than a person's asserted certainty is the arbiter of truth and God's existence still requires evidence.",
+      "sourceSpan": {
+        "startEvent": 955,
+        "endEvent": 1005
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The continuous rebuttal uses Matt's previously stated reality-based definition of truth and explicitly criticizes presuppositionalism.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "bridge-pro-motion"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-move-03",
+          "pro-move-01",
+          "pro-move-02"
+        ],
+        "components": [
+          {
+            "componentId": "con-move-04-component-01",
+            "targetMoveId": "pro-move-03",
+            "text": "Human uncertainty entails that truth cannot be known unless inquiry begins with God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-move-04-component-02",
+            "targetMoveId": "pro-move-01",
+            "text": "God's asserted existence makes belief in God reasonable.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-move-04-component-03",
+            "targetMoveId": "pro-move-02",
+            "text": "Everyone knows God exists despite contrary professions.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "It identifies the non sequitur from uncertainty to God, distinguishes asserted certainty from truth, and restores the requirement for a supported argument bearing on reasonable belief.",
+        "responsivenessWithinClass": {
+          "value": 97,
+          "rationale": "It explicitly contacts the decisive entailment and connects the failure to the motion-level evidential burden."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Reality, personal certainty, reasonable belief, valid argument, and evidence retain distinct and explicit roles."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The evidential demand is categorical, while the speaker's own access to reality remains appropriately fallibilist."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The pro side may offer God as a necessary precondition rather than as an inference from subjective certainty.",
+        "decisiveQualification": "Necessity must still be demonstrated, and asserting certainty cannot itself supply that demonstration."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 93,
+          "rationale": "The distinction between a map, reality, and confidence in the map is explicit and supports the evidential conclusion."
+        },
+        "evidenceWarrant": {
+          "value": 88,
+          "rationale": "The critique relies on identifiable missing premises and does not overclaim that God is thereby disproved."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly attacks the pro motion bridge by denying that assertion and certainty establish reasonable belief."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The response preserves the stronger transcendental reading while correctly identifying its unmet argumentative burden."
+        }
+      },
+      "evidenceBasis": "The excerpt says reality arbitrates truth, asserted certainty is no solution, and reasonable God-belief requires a sound evidential argument.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-move-04",
+      "sectionId": "section-reality",
+      "side": "pro",
+      "speaker": "Sye Ten Bruggencate",
+      "moveKind": "reply",
+      "proposition": "Truth conforms to the mind of God because differing human perceptions cannot independently establish objective reality or make anything knowably true.",
+      "sourceSpan": {
+        "startEvent": 1020,
+        "endEvent": 1046
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Sye control, after which the speaker challenges Matt by name and presents the divine-mind account.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-truth"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-move-03",
+          "con-move-04"
+        ],
+        "components": [
+          {
+            "componentId": "pro-move-04-component-01",
+            "targetMoveId": "con-move-03",
+            "text": "Generally reliable experience and reason can ground fallible inquiry without adding God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-move-04-component-02",
+            "targetMoveId": "con-move-04",
+            "text": "Reality rather than asserted certainty is the arbiter of truth.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "It contacts the fallibilist foundation by contrasting differing human perceptions with an absolute perceiver, but it asserts rather than demonstrates why objective truth must conform to God's mind.",
+        "responsivenessWithinClass": {
+          "value": 69,
+          "rationale": "It answers the central component only partially because the proposed divine foundation's necessity remains unsupported."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "Truth alternates between what God says and what conforms to God's mind without explaining whether these criteria are identical."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The absolute-perceiver account is presented as the only route to truth without comparison against the fallibilist alternative."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Different human perceptions can be corrected through shared evidence and logic without requiring an absolute perceiver.",
+        "decisiveQualification": "Such methods remain fallible and do not provide exhaustive access to ultimate reality."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 64,
+          "rationale": "An absolute perceiver is compatible with objective truth but the inference that objective truth requires such a perceiver is missing."
+        },
+        "evidenceWarrant": {
+          "value": 48,
+          "rationale": "No evidence or defended warrant establishes that perceptual disagreement makes divine conformity necessary for knowledge."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central pro truth bridge and attacks the con foundation."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The move notices perceptual variation but largely bypasses the alternative's error-correction methods and limited scope."
+        }
+      },
+      "evidenceBasis": "The excerpt appeals to differing perceptions, defines truth by conformity to God's mind, and denies knowledge without that foundation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-move-07",
+      "sectionId": "section-revelation",
+      "side": "pro",
+      "speaker": "Sye Ten Bruggencate",
+      "moveKind": "reply",
+      "proposition": "Evidence is intelligible only when one begins with God, who can reveal himself so certainly that every person knows he exists despite contrary professions.",
+      "sourceSpan": {
+        "startEvent": 1310,
+        "endEvent": 1438
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The dialogue explicitly addresses Sye's current position, and his answers assert the universal revelation and suppression account in first person.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-revelation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-move-08",
+          "con-move-02"
+        ],
+        "components": [
+          {
+            "componentId": "pro-move-07-component-01",
+            "targetMoveId": "con-move-08",
+            "text": "A mechanism must connect a perfect divine source to infallible knowledge in a fallible recipient.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-move-07-component-02",
+            "targetMoveId": "con-move-02",
+            "text": "Evidence can warrant supernatural belief through reliable, testable correlation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "It asserts that God can reveal himself certainly and that evidence presupposes God, but it does not explain the truth-preserving mechanism or answer the fallible-recipient challenge.",
+        "responsivenessWithinClass": {
+          "value": 52,
+          "rationale": "It provides relevant contrary claims and contacts an evidence issue while leaving the decisive mechanism demand unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "materially-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The move moves among awareness, knowledge, certainty, evidence, and universal suppression without stabilizing their relationships."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "radically-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Universal certain revelation is asserted without a mechanism, verification method, or acknowledgment of contrary professions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A person may sincerely lack belief while relying on evidence that does not presuppose the Christian God.",
+        "decisiveQualification": "The pro account could instead explain contrary reports as suppression, but that diagnosis requires independent support."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 50,
+          "rationale": "The claims that evidence presupposes truth, truth presupposes God, and everyone knows God do not supply the missing entailments."
+        },
+        "evidenceWarrant": {
+          "value": 35,
+          "rationale": "The universal revelation and suppression claims lack representative evidence or a defended epistemic mechanism."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central pro revelation bridge despite leaving its decisive mechanism incomplete."
+        },
+        "representationalCharity": {
+          "value": 42,
+          "rationale": "The move treats contrary professions as suppressed knowledge without engaging their strongest sincere fallibilist interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt states that evidence presupposes truth and God and says God makes everyone know he exists.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "con-move-09",
+      "sectionId": "section-induction",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Inductive expectations are rationally justified as probabilistic predictions from recurring experience without claiming that the future must reproduce the past exactly.",
+      "sourceSpan": {
+        "startEvent": 1771,
+        "endEvent": 1824
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Sye asks Matt for the basis of expecting continuity, and Matt gives the extended answer while their alternating challenges remain clearly attributable.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-con-induction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-move-07",
+          "pro-move-03"
+        ],
+        "components": [
+          {
+            "componentId": "con-move-09-component-01",
+            "targetMoveId": "pro-move-07",
+            "text": "Evidence and rational inference are intelligible only if one first presupposes God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-move-09-component-02",
+            "targetMoveId": "pro-move-03",
+            "text": "Non-theistic reasoning cannot justify truth claims from experience.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "By grounding probabilistic expectation in recurring experience without deductive certainty, it supplies a fallibilist counterexample to the claim that secular evidence cannot be rationally justified.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "It contacts the decisive evidential issue but only partially answers the broader claim that all evidence presupposes God."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move explicitly distinguishes probabilistic expectation from the claim that the future must be exactly like the past."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The asserted confidence is limited to rational expectation based on a recurring trend and does not claim deductive proof."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Using past regularity to justify future expectation may itself rely on the inductive principle under dispute.",
+        "decisiveQualification": "That circularity concern differs from requiring deductive certainty and must address probabilistic justification on its own terms."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The probabilistic inference is coherent, but its ultimate justification still relies on a compressed reliability warrant."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "Recurring experience supports the limited expectation, with the base-rate and meta-inductive defense left partly implicit."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary con induction bridge at the top of that tier."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The move acknowledges reliance on past trends and carefully limits the conclusion, though it does not fully resolve meta-inductive circularity."
+        }
+      },
+      "evidenceBasis": "The excerpt grounds expectation in repeated past continuity while expressly denying certainty that the future must duplicate the past.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-move-09",
+      "sectionId": "section-induction",
+      "side": "pro",
+      "speaker": "Sye Ten Bruggencate",
+      "moveKind": "reply",
+      "proposition": "Validating induction by appeal to its past success already employs induction and therefore makes the secular justification viciously circular.",
+      "sourceSpan": {
+        "startEvent": 1832,
+        "endEvent": 1850
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly frames a question to Matt and advances Sye's characteristic challenge before Matt begins the answer at the next event.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-induction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-move-09"
+        ],
+        "components": [
+          {
+            "componentId": "pro-move-09-component-01",
+            "targetMoveId": "con-move-09",
+            "text": "Past recurring success provides probabilistic justification for expecting future regularity.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "It explicitly identifies that using past success to validate future-directed induction already employs induction and states that the proposed validation is viciously circular.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It directly contacts the decisive warrant and states the alleged defeating circularity and its consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The move sometimes describes induction as proving future events, which does not match the con side's expressly probabilistic claim."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "It treats circular dependence as wholly vicious without distinguishing pragmatic or rule-circular defenses of probabilistic induction."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The con claim is probabilistic justification from observed regularity, not deductive proof of future sameness.",
+        "decisiveQualification": "It still relies on some assumption that observed regularity bears on unobserved cases."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The circularity objection is recognizable, but its force is weakened by conflating probabilistic justification with proof."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The objection identifies a real dependence but does not defend why every non-deductive or rule-circular justification is vicious."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central pro induction bridge by attacking the con justification."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The response identifies the residual circularity but repeatedly recasts the position in stronger proof-oriented terms."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that looking backward to validate future-directed induction uses the very method being justified.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-move-06",
+      "sectionId": "section-logic",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Truth and knowledge can rest on logical absolutes and experienced reality, while Christianity's exclusive ability to account for those absolutes requires demonstration rather than assertion.",
+      "sourceSpan": {
+        "startEvent": 2010,
+        "endEvent": 2044
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt explicitly summarizes definitions from his opening and then directly challenges Sye to demonstrate the exclusive explanatory claim Sye has repeatedly made.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-exclusivity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-move-05",
+          "pro-move-04",
+          "pro-move-07"
+        ],
+        "components": [
+          {
+            "componentId": "con-move-06-component-01",
+            "targetMoveId": "pro-move-05",
+            "text": "Only the theistic worldview can account for logical absolutes and objective truth.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-move-06-component-02",
+            "targetMoveId": "pro-move-04",
+            "text": "Truth must conform to an absolute divine mind to be knowable.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-move-06-component-03",
+            "targetMoveId": "pro-move-07",
+            "text": "Evidence and truth presuppose God.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "It states its own limited logical foundation and directly identifies that repeated divine attribution does not demonstrate either an account of logic or Christian exclusivity.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "It contacts the central explanatory claim and clearly states why bare assertion fails to discharge it."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Truth, reality, logical absolutes, and the exclusive-accounting demand are used consistently and with recoverable scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The demand for demonstration is matched to the universal exclusivity claim and does not claim a complete naturalistic ontology."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The pro account proposes that logical absolutes reflect a necessarily rational divine mind.",
+        "decisiveQualification": "Naming that relation does not yet demonstrate its mechanism, necessity, or exclusivity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The move consistently separates using logical absolutes from explaining them and from proving exclusive theistic adequacy."
+        },
+        "evidenceWarrant": {
+          "value": 85,
+          "rationale": "Its criticism is well grounded in the selected pro assertions, though its own positive foundation remains compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central con exclusivity bridge and challenges the pro logic route."
+        },
+        "representationalCharity": {
+          "value": 93,
+          "rationale": "The reply preserves the strongest proposed relation and accurately isolates what remains to be demonstrated."
+        }
+      },
+      "evidenceBasis": "The excerpt grounds truth claims in logical absolutes and experienced reality, then says the pro side merely claims exclusive explanatory success.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-move-06",
+      "sectionId": "section-logic",
+      "side": "pro",
+      "speaker": "Sye Ten Bruggencate",
+      "moveKind": "reply",
+      "proposition": "Logical absolutes are accounted for because they reflect God's thinking and are known through divine revelation.",
+      "sourceSpan": {
+        "startEvent": 2045,
+        "endEvent": 2052
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is Sye's immediate answer to Matt's direct request that he account for logical absolutes, with speaker turns marked by their dispute over response time.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-logic"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-move-06",
+          "con-move-05"
+        ],
+        "components": [
+          {
+            "componentId": "pro-move-06-component-01",
+            "targetMoveId": "con-move-06",
+            "text": "The pro side must demonstrate how God accounts for logic and why that account is exclusive.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-move-06-component-02",
+            "targetMoveId": "con-move-05",
+            "text": "Attributing logical absolutes to God is insufficient without demonstrating adequacy and exclusivity.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "It provides the proposed relation—logical absolutes reflect God's thinking and are known by revelation—but does not demonstrate that relation or exclude rival accounts.",
+        "responsivenessWithinClass": {
+          "value": 67,
+          "rationale": "It contacts both demands at the level of an answer, but only partially because the requested demonstration is absent."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The short answer has a recoverable proposition, though the exact explanatory force of reflect and revelation remains implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The account is presented as complete despite supplying only an attribution and no support for necessity or access."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The con objection requests a demonstrated account, not merely a label attached to logical absolutes.",
+        "decisiveQualification": "A concise answer could still identify a real explanatory relation if its warrant were supplied."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 70,
+          "rationale": "The proposed divine-thought relation is intelligible, but the inference from that relation to an adequate exclusive account is missing."
+        },
+        "evidenceWarrant": {
+          "value": 45,
+          "rationale": "No evidence, mechanism, or rival comparison supports the claims about divine thought or revelatory knowledge."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central pro logic bridge and answers a challenge to that bridge."
+        },
+        "representationalCharity": {
+          "value": 66,
+          "rationale": "The response addresses the request's topic but understates its demand for demonstration and exclusivity."
+        }
+      },
+      "evidenceBasis": "The excerpt answers that logical absolutes reflect God's thinking and adds that they are known through revelation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-move-08",
+      "sectionId": "section-revelation",
+      "side": "pro",
+      "speaker": "Sye Ten Bruggencate",
+      "moveKind": "reply",
+      "proposition": "Islam cannot supply a rival ultimate revelation because the Quran affirms the Bible and the incorruptibility of God's words while conflicting with the Bible.",
+      "sourceSpan": {
+        "startEvent": 2520,
+        "endEvent": 2534
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer follows a question addressed to Sye, and the first-person account continues coherently through the Quran-Bible comparison.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-rivals"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-move-07",
+          "con-move-08"
+        ],
+        "components": [
+          {
+            "componentId": "pro-move-08-component-01",
+            "targetMoveId": "con-move-07",
+            "text": "Competing revelations lack a reliable method for distinguishing which religious authority is true.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-move-08-component-02",
+            "targetMoveId": "con-move-08",
+            "text": "Revelation requires a demonstrated truth-preserving mechanism for fallible recipients.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "It supplies an internal-consistency test for Islam by alleging tension between Quranic affirmation of prior scripture and conflict with the Bible, but it does not establish Christianity's own reliability.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It directly diagnoses one rival's alleged internal defect, while only partially answering the broader selection-method demand."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The specific Quran-Bible test is recoverable, though claims about what Islam and the Quran affirm are broad and compressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "An internal tension could defeat one formulation of Islam, but it would not alone establish Christian revelation as true."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Muslim interpreters may distinguish original revelation from the present biblical text or interpret Quranic affirmation more narrowly.",
+        "decisiveQualification": "That reply must fit the relevant Quranic claims about prior revelation and incorruptible divine words."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The internal-consistency test is coherent, but defeating one rival does not complete the inference to Christian truth."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "The scriptural claims are specific enough to test but are not documented or compared with representative rival interpretations."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary pro rivals bridge at the top of its tier."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The move presents a serious internal challenge but does not address the strongest interpretive qualifications available to the rival."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes Quranic affirmation of the Bible and divine-word incorruptibility as an internal challenge to Islam.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-move-10",
+      "sectionId": "section-induction",
+      "side": "pro",
+      "speaker": "Sye Ten Bruggencate",
+      "moveKind": "reply",
+      "proposition": "The transcendental argument does not infer God from absolutes but begins with the Christian God as the necessary precondition for making any absolutes intelligible.",
+      "sourceSpan": {
+        "startEvent": 2671,
+        "endEvent": 2679
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage is Sye's direct answer to a question about his website and clearly restates his own argument in the first person.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-direction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-move-09",
+          "con-move-06"
+        ],
+        "components": [
+          {
+            "componentId": "pro-move-10-component-01",
+            "targetMoveId": "con-move-09",
+            "text": "Recurring experience probabilistically justifies inductive expectations without deductive certainty.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-move-10-component-02",
+            "targetMoveId": "con-move-06",
+            "text": "Christianity's exclusive explanatory ability requires demonstration rather than assertion.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The clarification that God is the starting precondition bears on argument direction, but it neither addresses probabilistic induction nor demonstrates the asserted Christian necessity.",
+        "responsivenessWithinClass": {
+          "value": 48,
+          "rationale": "It is relevant contrary material concerning foundations but leaves the selected decisive induction component uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The contrast between absolutes-therefore-God and God-therefore-absolutes is explicit and consistently maintained."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The move clearly states direction but gives no warrant that Christianity is the only possible starting precondition."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Critics may understand the case as requiring an argument for why the Christian starting point is necessary.",
+        "decisiveQualification": "Clarifying that it is a starting point does not itself provide that necessity argument."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The directional distinction is coherent, but the exclusive necessity of the Christian starting point remains an unsupported premise."
+        },
+        "evidenceWarrant": {
+          "value": 48,
+          "rationale": "No demonstration or comparison supports the assertion that only the Christian God makes absolutes intelligible."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary pro direction bridge at the top of that tier."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The move corrects one possible misdescription but does not fully engage the stronger demand for justification."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly denies an inference from absolutes to God and instead installs Christianity as the necessary starting point.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-move-10",
+      "sectionId": "section-induction",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Presuppositionalism does not justify reasonable belief in God when it asserts Christian necessity, shifts the burden to alternatives, and treats certainty as establishing truth.",
+      "sourceSpan": {
+        "startEvent": 3130,
+        "endEvent": 3195
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is the uninterrupted concluding portion of Matt's formally introduced closing statement and directly summarizes his opposition to Sye's case.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "bridge-con-motion"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-move-10",
+          "pro-move-06",
+          "pro-move-09",
+          "pro-move-01"
+        ],
+        "components": [
+          {
+            "componentId": "con-move-10-component-01",
+            "targetMoveId": "pro-move-10",
+            "text": "Christianity may be installed as the necessary precondition for all absolutes rather than inferred from them.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-move-10-component-02",
+            "targetMoveId": "pro-move-06",
+            "text": "Logical absolutes are accounted for by God's thinking and revelation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-move-10-component-03",
+            "targetMoveId": "pro-move-09",
+            "text": "Secular induction is viciously circular.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-move-10-component-04",
+            "targetMoveId": "pro-move-01",
+            "text": "Belief in God is reasonable because the proposition is true.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "It identifies that asserting Christian necessity and shifting the burden to alternatives do not demonstrate either exclusivity or the motion-level reasonableness conclusion.",
+        "responsivenessWithinClass": {
+          "value": 96,
+          "rationale": "It explicitly contacts the central necessity claim, diagnoses the burden shift, and states the motion-level consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The criticism consistently distinguishes asserting necessity, excluding alternatives, proving truth, and establishing reasonable belief."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "It concludes that the presented case has not justified belief, rather than claiming Christianity has been conclusively disproved."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Presuppositionalism offers a transcendental necessity claim whose test is the alleged failure of every alternative worldview.",
+        "decisiveQualification": "The claimant must still demonstrate both the necessity relation and the relevant failure of alternatives."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 93,
+          "rationale": "The burden analysis coherently connects unsupported exclusivity and certainty claims to failure to establish reasonable belief."
+        },
+        "evidenceWarrant": {
+          "value": 89,
+          "rationale": "The criticism is specifically grounded in recurring assertions and missing demonstrations across the locked pro moves."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly supports the con motion bridge by connecting unmet pro burdens to withholding belief as presently reasonable."
+        },
+        "representationalCharity": {
+          "value": 94,
+          "rationale": "The closing preserves the strongest transcendental formulation and focuses on its unmet proof obligations."
+        }
+      },
+      "evidenceBasis": "The excerpt says the pro side asserts that no rival can account for intelligibility, shifts the burden, and does not demonstrate reasonable belief.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct pro-side debate-wide burden consequence remains outside the move ratings, response links, importance values, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured route-completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "All identified consequences are already captured at move level.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the adjustment would not change any uncaptured pro burden-completion finding."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct con-side debate-wide burden consequence remains outside the move ratings, response links, importance values, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured route-completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "All identified consequences are already captured at move level.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the adjustment would not change any uncaptured con burden-completion finding."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

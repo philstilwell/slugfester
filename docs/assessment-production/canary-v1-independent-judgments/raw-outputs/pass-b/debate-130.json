@@ -1,0 +1,1873 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "130",
+  "debateId": "licona-carrier-resurrection-history-2010",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-resurrection-inference",
+      "side": "pro",
+      "description": "Establish early individual and group appearance testimony, interpret it as bodily resurrection testimony, and compare resurrection with naturalistic alternatives under historical explanatory criteria.",
+      "successCriteria": "The reported death, appearances, conversions, bodily-resurrection belief, and resulting movement must be sufficiently supported and collectively better expected under resurrection than under the proposed natural explanations.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-comparative-explanation",
+        "tier": "motion",
+        "description": "Show that Jesus rose and that resurrection explains the early Christian testimony more adequately than the available naturalistic alternatives."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-early-testimony",
+          "tier": "central",
+          "description": "Establish that early, apostolically connected sources report appearances to individuals and groups."
+        },
+        {
+          "bridgeId": "pro-central-bodily-content",
+          "tier": "central",
+          "description": "Establish that the relevant testimony concerns Jesus's transformed physical body rather than visions alone."
+        },
+        {
+          "bridgeId": "pro-central-natural-alternatives",
+          "tier": "central",
+          "description": "Show that hallucination, contagion, legendary development, and related natural mechanisms do not adequately explain the reported evidence."
+        },
+        {
+          "bridgeId": "pro-central-historical-comparison",
+          "tier": "central",
+          "description": "Apply explanatory scope, power, plausibility, and avoidance of unsupported assumptions to the competing hypotheses."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-cumulative-context",
+          "tier": "subsidiary",
+          "description": "Integrate Jesus's prior claims, reported deeds, prediction, appearances, conversions, and the resulting movement into the comparison."
+        },
+        {
+          "bridgeId": "pro-subsidiary-source-core",
+          "tier": "subsidiary",
+          "description": "Preserve the historical usefulness of the Gospel core despite literary shaping and peripheral differences."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-natural-explanation",
+      "side": "con",
+      "description": "Require evidence proportionate to resurrection's low background probability and explain the testimony through established psychological, social, and literary processes.",
+      "successCriteria": "The surviving testimony must remain insufficiently exceptional to overcome resurrection's prior burden while visions, social contagion, missing-body scenarios, and tradition development remain adequate natural possibilities.",
+      "motionBridge": {
+        "bridgeId": "con-motion-evidential-insufficiency",
+        "tier": "motion",
+        "description": "Show that the early Christian testimony does not warrant resurrection over established natural classes of explanation."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-prior-burden",
+          "tier": "central",
+          "description": "Establish that an unprecedented divine resurrection requires exceptionally strong confirming evidence."
+        },
+        {
+          "bridgeId": "con-central-vision-mechanism",
+          "tier": "central",
+          "description": "Explain individual and group appearance beliefs through culturally conditioned visions, suggestion, and charismatic contagion."
+        },
+        {
+          "bridgeId": "con-central-sparse-sources",
+          "tier": "central",
+          "description": "Show that the early epistolary evidence lacks the detail needed to establish shared encounters with a physical Jesus or verification of an empty grave."
+        },
+        {
+          "bridgeId": "con-central-literary-development",
+          "tier": "central",
+          "description": "Account for detailed resurrection narratives through legendary growth, redaction, literary imitation, and mythmaking."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-missing-body",
+          "tier": "subsidiary",
+          "description": "Maintain that loss, removal, or nonverification of a body can accompany appearance beliefs without resurrection."
+        },
+        {
+          "bridgeId": "con-subsidiary-selective-appearances",
+          "tier": "subsidiary",
+          "description": "Compare the reported narrow appearance pattern with what a local visionary movement and a universally revealing deity would predict."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "historical-method-and-prior-probability",
+      "title": "Historical Method and Prior Probability",
+      "weightPercent": 22,
+      "rationale": "The governing comparison depends on whether explanatory criteria can bracket resurrection's prior probability or whether its lack of established precedent imposes an exceptional evidential burden."
+    },
+    {
+      "sectionId": "early-testimony-and-bodily-content",
+      "title": "Early Testimony and Bodily Resurrection",
+      "weightPercent": 25,
+      "rationale": "The motion turns centrally on whether the earliest evidence reports apostolically connected encounters with a transformed physical Jesus or sparse and culturally conditioned visionary experiences."
+    },
+    {
+      "sectionId": "psychological-and-group-appearance-mechanisms",
+      "title": "Psychological and Group-Appearance Mechanisms",
+      "weightPercent": 20,
+      "rationale": "A principal clash concerns whether known psychological and social processes can generate the reported individual and group experiences and the ensuing bodily-resurrection belief."
+    },
+    {
+      "sectionId": "cumulative-explanatory-comparison",
+      "title": "Cumulative Explanatory Comparison",
+      "weightPercent": 23,
+      "rationale": "The central inference requires comparing how the resurrection and naturalistic routes account for the combined reports rather than treating each appearance, conversion, or missing-body claim in isolation."
+    },
+    {
+      "sectionId": "gospel-literary-and-historical-value",
+      "title": "Gospel Literary and Historical Value",
+      "weightPercent": 10,
+      "rationale": "The detailed bodily and empty-tomb narratives depend partly on whether Gospel composition and disagreement preserve a usable historical core or instead indicate literary and legendary development."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-method-criteria",
+      "sectionId": "historical-method-and-prior-probability",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "constructive",
+      "proposition": "Historical hypotheses should be compared by explanatory scope, explanatory power, avoidance of unsupported assumptions, and plausibility against accepted facts.",
+      "sourceSpan": {
+        "startEvent": 80,
+        "endEvent": 112
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage occurs continuously within Licona's formally introduced affirmative opening statement.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-historical-comparison"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructive statement of the historical comparison criteria.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Clearly establishes the proposed comparison framework."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The four criteria and their role are readily recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The criteria are sensible, though their governing status is asserted more than defended."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The methodological proposal is internally consistent, with application left for later."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "The criteria are explained but not independently defended in this span."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly supports the central historical-comparison bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No opposing interpretation is materially evaluated."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly introduces hypothesis comparison and explanatory scope.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-early-appearance-tradition",
+      "sectionId": "early-testimony-and-bodily-content",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "constructive",
+      "proposition": "Paul preserves early testimony connected with the Jerusalem apostles that Jesus appeared after his death to individuals and groups.",
+      "sourceSpan": {
+        "startEvent": 125,
+        "endEvent": 174
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted affirmative opening and first-person framing identify Licona as the speaker.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-early-testimony"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructive claim concerning early apostolic appearance tradition.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Directly supplies the central early-testimony premise."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is clear, though 'probably' leaves the precise apostolic provenance appropriately qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Early provenance is qualified, but the excerpt compresses the transmission argument."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The inference from reception, apostolic meetings, and named appearances is coherent but compressed."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "Specific names and groups support the claim, while dating and provenance need fuller verification."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly supports indispensable early apostolic testimony."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No live opposing interpretation is assessed here."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies early received tradition, Jerusalem apostles, named individuals, and groups.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-pauline-bodily-resurrection",
+      "sectionId": "early-testimony-and-bodily-content",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "constructive",
+      "proposition": "Paul's resurrection teaching concerns Jesus's transformed physical corpse, and resurrection is offered as the explanation of the reported individual and group appearances.",
+      "sourceSpan": {
+        "startEvent": 175,
+        "endEvent": 238
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains within Licona's affirmative opening and continues his Pauline evidential argument.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-bodily-content"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructive interpretation of Pauline resurrection content.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Directly advances the bodily-content premise."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The bodily-corpse thesis is clear, but the evidential scope of 'facts' is compressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The excerpt treats contested reports, beliefs, and bodily interpretation as facts without exposing the textual warrant."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Bodily transformation can explain the reports, though the bridge from teaching to event remains implicit."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The decisive Pauline interpretation and report reliability are largely asserted in the excerpt."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly supports the central bodily-content bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No competing visionary reading is addressed in this span."
+        }
+      },
+      "evidenceBasis": "The excerpt states transformed physical corpse, individual and group appearances, and disciple belief.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-extraordinary-evidence-burden",
+      "sectionId": "historical-method-and-prior-probability",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "proposition": "Because resurrection lacks established background precedent, it is an extraordinary claim requiring much stronger evidence than the testimony presented.",
+      "sourceSpan": {
+        "startEvent": 239,
+        "endEvent": 260
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator's transition and the new first-person skeptical opening clearly identify Carrier's speaking turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-prior-burden"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-method-criteria"
+        ],
+        "components": [
+          {
+            "componentId": "con-extraordinary-evidence-burden-component-01",
+            "targetMoveId": "pro-method-criteria",
+            "text": "Whether ordinary explanatory criteria adequately account for the unusually low background precedent of resurrection.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The escalating analogies directly add a prior-evidence constraint to the proposed method.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Explicitly contacts the plausibility component, though it does not assess every criterion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The evidential-burden proposition is clear; the analogy's limits remain implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The demand for stronger evidence tracks declining background precedent."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Resurrection could still prevail through unusually strong case-specific evidence.",
+        "decisiveQualification": "Low prior precedent raises the burden but does not make confirmation impossible."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The comparative analogy clearly links rarity to evidential demand."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The analogy supports the general principle, though no quantified prior or case evidence is supplied here."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly supports the central prior-burden bridge."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The argument raises rather than absolutizes the evidential burden."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts ordinary ownership, nuclear missiles, and unprecedented spacecraft claims.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-legendary-cultural-development",
+      "sectionId": "early-testimony-and-bodily-content",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "proposition": "Rapidly developing miracle traditions and older resurrection and apotheosis narratives make the Christian resurrection story susceptible to legendary construction.",
+      "sourceSpan": {
+        "startEvent": 277,
+        "endEvent": 312
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Carrier remains the sole speaker in his opening and explicitly develops comparative historical examples.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-literary-development"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-early-appearance-tradition",
+          "pro-pauline-bodily-resurrection"
+        ],
+        "components": [
+          {
+            "componentId": "con-legendary-cultural-development-component-01",
+            "targetMoveId": "pro-early-appearance-tradition",
+            "text": "Whether early, apostolically connected appearance testimony itself is reliably established.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-legendary-cultural-development-component-02",
+            "targetMoveId": "pro-pauline-bodily-resurrection",
+            "text": "Whether bodily-resurrection interpretation is better supported than cultural construction.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Cultural parallels challenge interpretation but do not directly rebut the claimed early provenance.",
+        "responsivenessWithinClass": {
+          "value": 63,
+          "rationale": "Relevant contrary material contacts a secondary construction issue, not the decisive dating and connection premise."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Susceptibility to construction is clear, but similarity and dependence are not sharply distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The possibility claim is moderate, though parallels alone weakly support Christian development."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Early testimony may coexist with culturally familiar narrative forms.",
+        "decisiveQualification": "Parallel motifs establish availability, not direct borrowing or fabrication."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "Rapid legend and available motifs make construction possible, but the causal bridge is incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "Specific Romulus comparison is offered without establishing transmission, independence, or representative development rates."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "Directly supports the central literary-development bridge."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The argument does not adequately preserve the distinction between resemblance and dependence."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes rapid miracle tales and a Romulus resurrection/apotheosis parallel.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-epistolary-vision-ambiguity",
+      "sectionId": "early-testimony-and-bodily-content",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "proposition": "Paul's letters depict vision-prone Christian communities and do not establish that the appearances were detailed, shared encounters with a physically risen Jesus.",
+      "sourceSpan": {
+        "startEvent": 316,
+        "endEvent": 362
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The sustained first-person skeptical analysis remains within Carrier's formally allocated opening statement.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-bodily-content"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-pauline-bodily-resurrection",
+          "pro-early-appearance-tradition"
+        ],
+        "components": [
+          {
+            "componentId": "con-epistolary-vision-ambiguity-component-01",
+            "targetMoveId": "pro-pauline-bodily-resurrection",
+            "text": "Whether Paul's language establishes shared encounters with a physically risen Jesus.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-epistolary-vision-ambiguity-component-02",
+            "targetMoveId": "pro-early-appearance-tradition",
+            "text": "Whether named appearance reports supply detailed, independently verified encounters.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly attacks the bodily and shared-encounter interpretation of Paul.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It explicitly addresses the decisive textual ambiguity."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "'As far as we can tell' qualifies the textual inference, though vision and hallucination are partly conflated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The sparse-text conclusion is measured, but the global hallucination generalization is compressed."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Paul may use common appearance language for experiences with different sensory features.",
+        "decisiveQualification": "Common wording alone does not prove identical phenomenology, but it also does not establish physical detail."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The absence of distinctions supports ambiguity, though it cannot by itself prove all experiences were visionary."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "Pauline vision language is specific evidence, but the asserted worldwide hallucination base rate is undocumented here."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly attacks the central bodily-content bridge."
+        },
+        "representationalCharity": {
+          "value": 83,
+          "rationale": "The argument fairly exposes ambiguity while somewhat pressing sameness too strongly."
+        }
+      },
+      "evidenceBasis": "The excerpt says Paul describes others as seeing Jesus as he did and characterizes his experience as revelation and vision.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-schizotypal-profile-mismatch",
+      "sectionId": "psychological-and-group-appearance-mechanisms",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "reply",
+      "proposition": "The apostles' social, marital, and missionary behavior conflicts with the proposed schizotypal profile and weakens that hallucination explanation.",
+      "sourceSpan": {
+        "startEvent": 474,
+        "endEvent": 491
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Licona the first questioning turn, and Licona refers back to his own opening case.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-vision-mechanism"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-epistolary-vision-ambiguity"
+        ],
+        "components": [
+          {
+            "componentId": "pro-schizotypal-profile-mismatch-component-01",
+            "targetMoveId": "con-epistolary-vision-ambiguity",
+            "text": "Whether Paul's sparse appearance language fails to establish physical shared encounters.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Behavioral profile evidence challenges a hallucination subtype but not the epistolary ambiguity itself.",
+        "responsivenessWithinClass": {
+          "value": 48,
+          "rationale": "Relevant to hallucination mechanisms but does not contact the selected move's decisive textual demand."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The profile mismatch is intelligible, but 'schizotypal' is treated broadly and the apostles' coverage is unclear."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Marriage and social activity are presented as stronger exclusions than the excerpt warrants."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A person may exhibit unusual perceptions without matching every stereotyped schizotypal trait.",
+        "decisiveQualification": "Social and marital behavior weakens only a narrow profile inference, not hallucination generally."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The observations count against a strict profile, but do not exclude visionary experiences or establish population-wide mismatch."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The behavioral claims are specific but selective, generalized, and weakly tied to diagnosis."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "Expressly attacks the central vision-mechanism bridge."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The response materially narrows the opposing mechanism into a trait stereotype."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts alleged loner and low-marriage traits with preaching, congregation, and apostolic marriage.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "con-cognitive-dissonance-hypothesis",
+      "sectionId": "psychological-and-group-appearance-mechanisms",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "proposition": "Cognitive dissonance is a testable explanatory hypothesis rather than a clinical diagnosis and is inherently likelier than a divine apparition absent strong contrary evidence.",
+      "sourceSpan": {
+        "startEvent": 574,
+        "endEvent": 582
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker expressly clarifies the challenged hypothesis and defends the naturalistic comparison characteristic of Carrier's stated position.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-vision-mechanism"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-schizotypal-profile-mismatch"
+        ],
+        "components": [
+          {
+            "componentId": "con-cognitive-dissonance-hypothesis-component-01",
+            "targetMoveId": "pro-schizotypal-profile-mismatch",
+            "text": "Whether the natural account must establish a clinical schizotypal profile rather than a comparative psychological mechanism.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "The reply replaces clinical diagnosis with a testable comparative hypothesis and explains why that preserves the mechanism question.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It expressly identifies the misplaced diagnostic demand and states the probabilistic replacement."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The comparative claim is clear, though cognitive dissonance is not operationally specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Impossibility is disclaimed, but inherent likelihood is asserted without a developed base-rate comparison."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Behavioral mismatch may still undermine a specifically proposed psychopathological mechanism.",
+        "decisiveQualification": "The natural hypothesis need not diagnose the apostles, but it must still explain the relevant evidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The reframe is coherent, but comparative likelihood does not itself show cognitive dissonance generated the reports."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The mechanism is named and qualified but not supported with case-specific or representative evidence here."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly supports the central vision-mechanism bridge."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The response fairly distinguishes diagnosis from explanatory hypothesis."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly contrasts cognitive dissonance with an actual divine apparition and disclaims impossibility.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-cumulative-resurrection-context",
+      "sectionId": "cumulative-explanatory-comparison",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "reply",
+      "proposition": "Jesus's religious claims, reputed miracles, resurrection prediction, and reported appearances to friends, foes, individuals, and groups create a cumulative context stronger than a merely missing body.",
+      "sourceSpan": {
+        "startEvent": 704,
+        "endEvent": 724
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The sustained turn advances Licona's cumulative resurrection case and explicitly contrasts Jesus with the preceding David Koresh example.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-cumulative-context"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-cognitive-dissonance-hypothesis",
+          "con-extraordinary-evidence-burden"
+        ],
+        "components": [
+          {
+            "componentId": "pro-cumulative-resurrection-context-component-01",
+            "targetMoveId": "con-cognitive-dissonance-hypothesis",
+            "text": "Whether a generic psychological mechanism remains likelier once the full reported context is considered.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-cumulative-resurrection-context-component-02",
+            "targetMoveId": "con-extraordinary-evidence-burden",
+            "text": "Whether the cumulative evidence is sufficiently distinctive for the extraordinary claim.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly argues that the case-specific conjunction differentiates this case from generic dissonance or a missing body.",
+        "responsivenessWithinClass": {
+          "value": 85,
+          "rationale": "It contacts comparative adequacy, though natural inadequacy is partly assumed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The cumulative claim is recoverable, but several reported elements are grouped without differentiating evidential status."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "'If' and 'I think' qualify the conclusion, although the naturalistic inadequacy premise is not shown here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A conjunction of ordinary mechanisms can sometimes explain a distinctive cluster.",
+        "decisiveQualification": "Distinctiveness favors resurrection only if the cluster is reliable and materially less expected naturally."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "Cumulative context is relevant, yet the conclusion relies on the unestablished conditional that natural accounts are inadequate."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "Multiple reported features are named, but their support, independence, and expectedness are not compared in this span."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Directly supports the subsidiary cumulative-context bridge."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The response recognizes a natural comparison but largely assumes its inadequacy."
+        }
+      },
+      "evidenceBasis": "The excerpt combines claims, miracles, prediction, diverse appearances, and sincere resurrection belief.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-natural-conjunction",
+      "sectionId": "cumulative-explanatory-comparison",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "proposition": "Combining rare missing-body and appearance reports does not favor resurrection because their natural causes remain jointly more probable than supernatural causes.",
+      "sourceSpan": {
+        "startEvent": 725,
+        "endEvent": 735
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn answers Licona's cumulative case with Carrier's characteristic comparative-probability analysis of natural and supernatural conjunctions.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-evidential-insufficiency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-cumulative-resurrection-context"
+        ],
+        "components": [
+          {
+            "componentId": "con-natural-conjunction-component-01",
+            "targetMoveId": "pro-cumulative-resurrection-context",
+            "text": "Whether the conjunction of missing-body and appearance evidence favors resurrection over joined natural causes.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly compares the probability of natural and supernatural conjunctions.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It contacts the decisive cumulative comparative inference."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The conjunction argument is clear, but the reference classes and probability assignments are unspecified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The ranking is confident despite illustrative and unsupported component probabilities."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Correlated evidence may be much more expected under one unified cause than under multiple natural causes.",
+        "decisiveQualification": "Multiplying generic event frequencies is insufficient without conditional likelihoods under each hypothesis."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "Natural conjunction can remain likelier, but the inference lacks conditional probabilities and independence analysis."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The numerical frequencies are illustrative assertions rather than established base rates."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "Directly supports the motion-level evidential-insufficiency bridge."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The response understates the pro side's unified-explanation claim and omits dependence structure."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly compares conjunctions of natural causes and supernatural occurrences.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-charismatic-contagion-sequence",
+      "sectionId": "psychological-and-group-appearance-mechanisms",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "proposition": "The appearance sequence can be explained through a private vision followed by charismatic suggestion and progressively larger ecstatic group experiences.",
+      "sourceSpan": {
+        "startEvent": 952,
+        "endEvent": 1024
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Carrier is asked what happened in group appearances and develops a sustained first-person naturalistic reconstruction using comparative cult behavior.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-vision-mechanism"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-cumulative-resurrection-context",
+          "pro-schizotypal-profile-mismatch"
+        ],
+        "components": [
+          {
+            "componentId": "con-charismatic-contagion-sequence-component-01",
+            "targetMoveId": "pro-cumulative-resurrection-context",
+            "text": "Whether diverse individual and group appearances require resurrection rather than a natural sequence.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-charismatic-contagion-sequence-component-02",
+            "targetMoveId": "pro-schizotypal-profile-mismatch",
+            "text": "Whether the mechanism depends on every participant sharing an enduring pathological profile.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move supplies a staged social mechanism intended to explain the appearance diversity.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It contacts the appearance-sequence demand, though case-specific fit is incomplete."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "'Contagious hallucination' shifts between suggestion, guided experience, and hallucination without sharp boundaries."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "A studied general phenomenon is asserted to fit the historical sequence without explicit evidential qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Group testimony may concern simultaneous encounters not reducible to suggestion.",
+        "decisiveQualification": "Contagion is viable only if the reported sequence and group phenomenology permit progressive suggestion."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The staged mechanism is coherent in outline but leaves key transitions and group phenomenology unexplained."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "Studies are invoked generically without representative findings or case-specific linkage."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly supports the central vision-mechanism bridge."
+        },
+        "representationalCharity": {
+          "value": 63,
+          "rationale": "The strongest simultaneous-group objection is not adequately retained."
+        }
+      },
+      "evidenceBasis": "The excerpt proposes private vision, charismatic leadership, suggestion, and contagious group experience.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-altered-state-inadequacy",
+      "sectionId": "psychological-and-group-appearance-mechanisms",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "reply",
+      "proposition": "Reported ordinary-state features and the resulting belief in bodily resurrection with an empty grave make altered-state hallucinations an inadequate explanation.",
+      "sourceSpan": {
+        "startEvent": 1025,
+        "endEvent": 1045
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker cites research on ordinary versus altered consciousness and then advances Licona's recurring bodily-resurrection objection to hallucination theories.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-vision-mechanism"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-charismatic-contagion-sequence",
+          "con-epistolary-vision-ambiguity"
+        ],
+        "components": [
+          {
+            "componentId": "pro-altered-state-inadequacy-component-01",
+            "targetMoveId": "con-charismatic-contagion-sequence",
+            "text": "Whether altered-state contagion can generate bodily-resurrection belief and an empty-grave implication.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-altered-state-inadequacy-component-02",
+            "targetMoveId": "con-epistolary-vision-ambiguity",
+            "text": "Whether visionary experience adequately accounts for bodily interpretation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly argues that the proposed psychological mechanism does not predict the reported bodily conclusion.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "It contacts the decisive mechanism-to-belief bridge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The objection is clear and qualified, though it merges bodily belief with a historically verified empty grave."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker frames altered states as improbable, but the empty-grave premise is insufficiently separated from belief."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Visions interpreted through Jewish expectations could contribute to bodily-resurrection belief.",
+        "decisiveQualification": "The natural account must explain why that interpretation arose and how any body nonverification was handled."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The mismatch between bereavement visions and bodily resurrection is probative, though not a deductive exclusion."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "A useful comparative example is supplied, but cultural interpretation and empty-grave evidence remain underdeveloped."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly attacks the central vision-mechanism bridge."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The response raises the decisive bridge but compresses culturally mediated interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts altered-state experiences with belief in corpse revival and an empty grave.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-integrated-best-explanation",
+      "sectionId": "cumulative-explanatory-comparison",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "reply",
+      "proposition": "Resurrection explains the reported individual and group appearances, conversions, and Christian movement better than the hallucination hypothesis under the stated historical criteria.",
+      "sourceSpan": {
+        "startEvent": 1117,
+        "endEvent": 1188
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Licona's final statement, which consistently summarizes his earlier positive case and addresses Carrier by name throughout.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-comparative-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-natural-conjunction",
+          "con-charismatic-contagion-sequence",
+          "con-cognitive-dissonance-hypothesis"
+        ],
+        "components": [
+          {
+            "componentId": "pro-integrated-best-explanation-component-01",
+            "targetMoveId": "con-natural-conjunction",
+            "text": "Whether resurrection or joined natural causes better explains the combined facts under explicit criteria.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-integrated-best-explanation-component-02",
+            "targetMoveId": "con-charismatic-contagion-sequence",
+            "text": "Whether the hallucination sequence has adequate scope and power.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-integrated-best-explanation-component-03",
+            "targetMoveId": "con-cognitive-dissonance-hypothesis",
+            "text": "Whether the proposed psychological account outperforms resurrection comparatively.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move expressly applies the announced criteria to the competing integrated explanations.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It directly engages the central comparative task and multiple natural mechanisms."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The comparative proposition is clear, though 'known facts' includes items with differing evidential status."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The criteria fit the claim, but rival likelihoods and disputed facts are compressed."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A layered natural account may explain different components without one mechanism explaining all.",
+        "decisiveQualification": "The comparison must assess the conjunction's assumptions and likelihood, not reject it for lacking a single cause."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The criteria consistently organize the inference, with one material bridge from coverage to superiority compressed."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The span identifies facts and comparison criteria but does not fully substantiate independence, likelihoods, or rival failure."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "Directly supports the pro motion bridge's complete comparative condition."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The integrated comparison is fair in aim but only partly develops the strongest composite alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly compares Carrier's hypothesis and resurrection by explanatory scope and predictive power.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-integrated-natural-account",
+      "sectionId": "cumulative-explanatory-comparison",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "proposition": "Sparse epistolary evidence is not exceptional enough to overcome resurrection's low prior probability, while culturally conditioned visions can explain the early Christian beliefs.",
+      "sourceSpan": {
+        "startEvent": 1189,
+        "endEvent": 1258
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the final statement to Carrier, whose first-person summary answers Licona's preceding closing comparison point by point.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-evidential-insufficiency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-integrated-best-explanation",
+          "pro-pauline-bodily-resurrection",
+          "pro-altered-state-inadequacy"
+        ],
+        "components": [
+          {
+            "componentId": "con-integrated-natural-account-component-01",
+            "targetMoveId": "pro-integrated-best-explanation",
+            "text": "Whether the evidence is exceptional enough and better explained by resurrection than ordinary mechanisms.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-integrated-natural-account-component-02",
+            "targetMoveId": "pro-pauline-bodily-resurrection",
+            "text": "Whether the epistles establish unnatural, physical encounters.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-integrated-natural-account-component-03",
+            "targetMoveId": "pro-altered-state-inadequacy",
+            "text": "Whether visions remain adequate given the reported beliefs.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The closing answer directly disputes both evidential sufficiency and the alleged failure of vision mechanisms.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It expressly contacts the comparative burden and principal evidential premises."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The account is clear, though 'only' and 'no evidence of anything unnatural' compress the epistolary evidence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The burden conclusion is appropriately framed as judgment, but the vision-only characterization is somewhat categorical."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Sparse epistles may preserve early testimony whose cumulative pattern favors bodily resurrection.",
+        "decisiveQualification": "Early testimony can be genuine while remaining insufficiently detailed to distinguish physical encounters from visions."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The prior, source-sparsity, and vision mechanism form a consistent alternative, with some historical transitions compressed."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The epistolary limitation is specific, but the cultural-vision mechanism and source characterization need fuller documentation."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "Directly supports the con motion bridge's evidential-insufficiency condition."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The response fairly grants testimony while challenging its discriminatory power."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes the exceptional-evidence burden, epistolary sparsity, and vision reports.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-bayesian-plausibility",
+      "sectionId": "historical-method-and-prior-probability",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "proposition": "Plausibility corresponds to prior probability, so a hypothesis invoking unestablished causes requires exceptionally strong evidence that the resurrection case lacks.",
+      "sourceSpan": {
+        "startEvent": 1290,
+        "endEvent": 1309
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The audience question is followed by an answer explicitly contrasting Carrier's Bayesian interpretation with the different answer Licona would give.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-prior-burden"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-integrated-best-explanation",
+          "pro-method-criteria"
+        ],
+        "components": [
+          {
+            "componentId": "con-bayesian-plausibility-component-01",
+            "targetMoveId": "pro-integrated-best-explanation",
+            "text": "Whether explanatory criteria can establish resurrection without accounting for its prior probability.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-bayesian-plausibility-component-02",
+            "targetMoveId": "pro-method-criteria",
+            "text": "Whether plausibility within the announced method corresponds to prior probability.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The answer expressly identifies plausibility with the Bayesian prior and states its evidential consequence.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It directly contacts the methodological comparison's disputed prior component."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The prior-evidence relationship and case conclusion are clearly distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Confirmation is expressly allowed, but 'very very low' is not quantified or derived."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Strong likelihood ratios can overcome a very low prior.",
+        "decisiveQualification": "The argument accepts this possibility and disputes that the present evidence supplies it."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The relation between low prior and required evidential strength is explicit and consistent."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The Bayesian structure is sound, but the actual prior and likelihood ratio are not established in this span."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly supports the central prior-burden bridge."
+        },
+        "representationalCharity": {
+          "value": 93,
+          "rationale": "It accurately preserves the strongest Bayesian qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt connects low prior probability to unusually strong confirming evidence and denies that this case supplies it.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-bracket-disputed-priors",
+      "sectionId": "historical-method-and-prior-probability",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "reply",
+      "proposition": "Because resurrection reference classes and prior probabilities are disputed or inscrutable, historians should bracket the prior and compare how likely the evidence is under each hypothesis.",
+      "sourceSpan": {
+        "startEvent": 1310,
+        "endEvent": 1316
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "A brief interjection follows Carrier's Bayesian answer and states Licona's characteristic first-person methodological objection before the moderator moves on.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-prior-burden"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-bayesian-plausibility",
+          "con-extraordinary-evidence-burden"
+        ],
+        "components": [
+          {
+            "componentId": "pro-bracket-disputed-priors-component-01",
+            "targetMoveId": "con-bayesian-plausibility",
+            "text": "Whether an agreed and usable resurrection prior can govern the historical comparison.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-bracket-disputed-priors-component-02",
+            "targetMoveId": "con-extraordinary-evidence-burden",
+            "text": "Whether lack of precedent yields a tractable exceptional-evidence requirement.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges the determinacy and disciplinary usability of the prior.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It contacts the decisive prior question, though it does not answer the Bayesian consequence if a range is usable."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The bracketing proposal is clear, but 'historians typically' and 'most cases' have uncertain scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Disagreement and inscrutability do not by themselves warrant discarding prior information."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Bayesian comparison can use disputed ranges and sensitivity analysis rather than consensus point estimates.",
+        "decisiveQualification": "Disagreement limits precision but need not make priors irrelevant or wholly inscrutable."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The move validly notes underdetermination but makes an unsupported step from disagreement to bracketing."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "Reference-class disagreement is identified, while the disciplinary and inscrutability claims are asserted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly attacks the central prior-burden bridge."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The response omits the strongest range-based Bayesian alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt cites reference-class disagreement, lack of prior consensus, and alleged inscrutability.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-mark-resurrection-continuity",
+      "sectionId": "gospel-literary-and-historical-value",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "constructive",
+      "proposition": "Mark consistently anticipates Jesus's resurrection, and its abrupt ending is plausibly incomplete rather than evidence of a non-resurrection Christian tradition.",
+      "sourceSpan": {
+        "startEvent": 1431,
+        "endEvent": 1444
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Licona answers an audience question with detailed references to Mark and is then explicitly followed by Carrier's response at event 1445.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-source-core"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructive interpretation of Mark's predictions and abrupt ending.",
+        "responsivenessWithinClass": {
+          "value": 79,
+          "rationale": "It supplies a source-continuity argument but relies partly on scholarly possibility."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The alternatives are clear, though 'all the resurrection predictions' is broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The lost or incomplete ending is presented as a plausible scholarly position, not certainty."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Mark's abrupt ending may be intentional while still anticipating resurrection.",
+        "decisiveQualification": "An intentional ending does not establish a non-resurrection tradition, but neither do predictions prove historical resurrection."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "Predictions undermine a non-resurrection reading, while the incomplete-ending inference remains nonexclusive."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Internal predictions and scholarly alternatives are relevant, but the excerpt offers limited textual demonstration."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "Directly supports the subsidiary Gospel-source-core bridge."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move reasonably limits its conclusion to Mark's resurrection outlook."
+        }
+      },
+      "evidenceBasis": "The excerpt cites resurrection predictions and scholarly lost-or-unfinished-ending theories.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-mark-literary-not-historical-proof",
+      "sectionId": "gospel-literary-and-historical-value",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "proposition": "Mark's composition of a resurrection story does not establish its historical truth, and an intentional ending remains compatible with anticipated visions outside the narrative.",
+      "sourceSpan": {
+        "startEvent": 1445,
+        "endEvent": 1459
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Carrier explicitly agrees with part of Licona's answer, then distinguishes literary purpose from historical sourcing in a continuous identified response.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-source-core"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-mark-resurrection-continuity"
+        ],
+        "components": [
+          {
+            "componentId": "con-mark-literary-not-historical-proof-component-01",
+            "targetMoveId": "pro-mark-resurrection-continuity",
+            "text": "Whether Mark's resurrection-oriented composition or ending establishes historical resurrection content.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The response directly distinguishes literary resurrection expectation from reliable historical sourcing.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly contacts the inference and preserves agreement about Mark's literary outlook."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Literary composition, source use, and historical truth are clearly separated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Multiple ending theories are acknowledged without categorical selection."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Mark's predictions support continuity of resurrection belief.",
+        "decisiveQualification": "Continuity of belief does not establish the narrative's historical truth or sourcing."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 93,
+          "rationale": "The distinction between authorial story and historical truth directly defeats an overextended inference."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The inference is principally logical and supported by acknowledged competing ending theories."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "Directly attacks the subsidiary Gospel-source-core bridge."
+        },
+        "representationalCharity": {
+          "value": 94,
+          "rationale": "The reply grants the legitimate literary point and isolates its evidential limit."
+        }
+      },
+      "evidenceBasis": "The excerpt grants Mark's resurrection story while denying that composition proves truth or reliable sources.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-gospel-mythmaking-indicators",
+      "sectionId": "gospel-literary-and-historical-value",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "proposition": "Externally contradicted phenomena, implausible narratives, redactional embellishment, literary imitation, and inter-Gospel contradictions indicate mythmaking rather than historical reliability.",
+      "sourceSpan": {
+        "startEvent": 1517,
+        "endEvent": 1541
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Carrier answers a direct audience request for a reason he distrusts the Gospels and develops several concrete examples before recommending further treatments.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-literary-development"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-mark-resurrection-continuity"
+        ],
+        "components": [
+          {
+            "componentId": "con-gospel-mythmaking-indicators-component-01",
+            "targetMoveId": "pro-mark-resurrection-continuity",
+            "text": "Whether Gospel literary features preserve a historically usable resurrection core.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move supplies specific literary and comparative indicators against Gospel reliability.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It contacts historical usefulness, though not Mark's predictions or ending theory specifically."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "'Mythical' and 'historically implausible' cover several distinct evidential defects without stable thresholds."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Examples of embellishment are pressed toward broad unreliability without an explicit core/periphery qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Redactional additions and contradictions can coexist with a recoverable historical core.",
+        "decisiveQualification": "Embellishment weakens specific details but does not automatically discredit every shared element."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The indicators can lower confidence, but the move compresses the step from particular literary features to general mythmaking."
+        },
+        "evidenceWarrant": {
+          "value": 71,
+          "rationale": "Concrete Mark-Matthew differences and external contradictions are alleged, but the excerpt incompletely documents them."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly supports the central literary-development bridge."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The move omits the strongest limited-core interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt cites external contradiction, implausibility, and Matthew's additions to Mark's empty-tomb story.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "pro-gospel-core-despite-differences",
+      "sectionId": "gospel-literary-and-historical-value",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "reply",
+      "proposition": "Ancient biographical freedom and contradictions in peripheral details do not discredit the core Gospel account.",
+      "sourceSpan": {
+        "startEvent": 1548,
+        "endEvent": 1561
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Licona recommends a genre study and then directly answers Carrier's embellishment and contradiction objections with an extended eyewitness analogy.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-source-core"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-gospel-mythmaking-indicators",
+          "con-mark-literary-not-historical-proof"
+        ],
+        "components": [
+          {
+            "componentId": "pro-gospel-core-despite-differences-component-01",
+            "targetMoveId": "con-gospel-mythmaking-indicators",
+            "text": "Whether embellishment and contradictions in details discredit a recoverable Gospel core.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-gospel-core-despite-differences-component-02",
+            "targetMoveId": "con-mark-literary-not-historical-proof",
+            "text": "Whether literary composition eliminates historical usefulness.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly distinguishes peripheral discrepancies from the claimed core account.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It contacts the decisive reliability inference, though it does not answer each alleged example."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The core/periphery distinction is clear, but the contents and recovery method for the 'core' are unspecified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Unresolved contradictions are conceded, but the preservation of the core is asserted more than demonstrated."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Some contradictions or redactional changes may affect central rather than peripheral claims.",
+        "decisiveQualification": "The defense succeeds only after independently identifying which elements are core and showing that the cited defects do not reach them."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Peripheral disagreement need not defeat a core, but the inference requires a noncircular criterion for identifying that core."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The Titanic analogy illustrates compatibility but does not establish that Gospel differences are peripheral or independent."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Directly supports the subsidiary Gospel-source-core bridge."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The reply fairly concedes differences but assumes their peripheral status."
+        }
+      },
+      "evidenceBasis": "The excerpt concedes difficult differences and possible contradictions while invoking a shared-core eyewitness analogy.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion beyond the rated pro bridges was established.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "None.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any alleged residual would leave burden completion governed by the judged moves."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion beyond the rated con bridges was established.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "None.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any alleged residual would leave burden completion governed by the judged moves."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
