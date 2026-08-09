@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-production-canary-audio-attribution-adjudication-analysis",
+  "protocolId": "assessment-production-canary-v1-audio-attribution-adjudication",
+  "status": "production-canary-audio-attribution-adjudication-passed",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "preservedDeterministicGate": {
+    "status": "production-canary-audio-verification-unresolved",
+    "verified": 3,
+    "unresolved": 1,
+    "erasedOrReclassified": false
+  },
+  "adjudication": {
+    "validation": {
+      "status": "passed",
+      "debateNumber": "05",
+      "adjudications": [
+        {
+          "moveId": "pro-move-07",
+          "status": "verified",
+          "citedSegments": 6,
+          "expectedSpeakerSegmentsCited": 6
+        }
+      ],
+      "verified": 1,
+      "unresolved": 0,
+      "calculatedFields": 0
+    },
+    "decisions": [
+      {
+        "moveId": "pro-move-07",
+        "expectedSpeaker": "Sye Ten Bruggencate",
+        "status": "verified",
+        "authoringSpeaker": "Sye Ten Bruggencate",
+        "corePropositionAuthoredByExpectedSpeaker": true,
+        "mixedSpeakerSpan": true,
+        "evidenceSegmentIndexes": [
+          5,
+          24,
+          56,
+          97,
+          100,
+          111
+        ],
+        "confidence": "high",
+        "rationale": "The cited immutable segments are all attributed to the expected speaker and, taken together, directly express every material component of the locked core proposition. Other-speaker segments provide questions and restatements, but the expected speaker independently asserts and develops the proposition throughout the mixed-speaker span."
+      }
+    ]
+  },
+  "combinedAudioResult": {
+    "requiredMoves": 4,
+    "deterministicallyVerified": 3,
+    "adjudicatedVerified": 1,
+    "unresolved": 0,
+    "verificationRate": 1
+  },
+  "costs": {
+    "originalPaidDiarizationEstimatedExposureUsd": 0.0643,
+    "additionalPaidTranscriptionCalls": 0,
+    "additionalTranscriptionCostUsd": 0,
+    "modelComputeAuthentication": "ChatGPT subscription",
+    "meteredModelApiCostUsd": 0
+  },
+  "scoreBlindness": {
+    "ratingsAccessed": false,
+    "scoresAccessed": false,
+    "legacyAssessmentsAccessed": false,
+    "otherDebatesAccessed": false,
+    "publicationProseAccessed": false,
+    "scoreArtifactCreated": false
+  },
+  "authorization": {
+    "disputeAdjudicationPacketPreparation": true,
+    "disputeAdjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  }
+}
