@@ -1,0 +1,378 @@
+{
+  "schemaVersion": "1.0-production-canary-audio-verification-audit",
+  "protocolId": "assessment-production-canary-v1-audio-verification",
+  "status": "production-canary-audio-verification-unresolved",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "debates": [
+    {
+      "debateNumber": "05",
+      "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "moves": [
+        {
+          "debateNumber": "05",
+          "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+          "moveId": "pro-move-07",
+          "expectedSpeaker": "Sye Ten Bruggencate",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "unresolved",
+          "resolvedSpeaker": null,
+          "clip": {
+            "path": "output/transcribe/assessment-production-canary-v1-audio-verification/debate-05/clips/pro-move-07.mp3",
+            "sha256": "3414cfda681f0052206ca7f70773907d79da461a06615a7873ce76b2bdd69740",
+            "durationSeconds": 255.32
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-canary-v1-audio-verification/debate-05/transcripts/pro-move-07.transcript.json",
+            "sha256": "9b54923073f91353cbd8598556359b13be5953e6a7084815702ff2d73f5e9f32",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "unresolved",
+            "expectedSpeaker": "Sye Ten Bruggencate",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 0.8589743589743589,
+            "highestOtherSpeaker": "Matt Dillahunty",
+            "highestOtherSpeakerExcerptRecall": 0.8717948717948718,
+            "expectedSpeakerRecallMargin": -0.012820512820512886,
+            "expectedSpeakerDurationSeconds": 96.65,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": false,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Matt Dillahunty",
+                "segmentCount": 61,
+                "durationSeconds": 132.85,
+                "wordCount": 537,
+                "excerptRecall": 0.8717948717948718
+              },
+              {
+                "speaker": "Sye Ten Bruggencate",
+                "segmentCount": 58,
+                "durationSeconds": 96.65,
+                "wordCount": 453,
+                "excerptRecall": 0.8589743589743589
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 3,
+                "durationSeconds": 2.95,
+                "wordCount": 11,
+                "excerptRecall": 0.05128205128205128
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "130",
+      "debateId": "licona-carrier-resurrection-history-2010",
+      "moves": [
+        {
+          "debateNumber": "130",
+          "debateId": "licona-carrier-resurrection-history-2010",
+          "moveId": "pro-schizotypal-profile-mismatch",
+          "expectedSpeaker": "Mike Licona",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Mike Licona",
+          "clip": {
+            "path": "output/transcribe/assessment-production-canary-v1-audio-verification/debate-130/clips/pro-schizotypal-profile-mismatch.mp3",
+            "sha256": "0607d169f8526186e1a7bac9aee4fa801961702ccea23a90fade30d79759298d",
+            "durationSeconds": 127.28
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-canary-v1-audio-verification/debate-130/transcripts/pro-schizotypal-profile-mismatch.transcript.json",
+            "sha256": "bda777c1f6531c0001c3297733bbfa5a8f1bcf78dea350f69073b00b824f15f2",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Mike Licona",
+            "fullClipExcerptRecall": 0.9384615384615385,
+            "expectedSpeakerExcerptRecall": 0.9384615384615385,
+            "highestOtherSpeaker": "Richard Carrier",
+            "highestOtherSpeakerExcerptRecall": 0,
+            "expectedSpeakerRecallMargin": 0.9384615384615385,
+            "expectedSpeakerDurationSeconds": 123.7,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Mike Licona",
+                "segmentCount": 8,
+                "durationSeconds": 123.7,
+                "wordCount": 330,
+                "excerptRecall": 0.9384615384615385
+              },
+              {
+                "speaker": "Richard Carrier",
+                "segmentCount": 2,
+                "durationSeconds": 0.35,
+                "wordCount": 2,
+                "excerptRecall": 0
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "130",
+          "debateId": "licona-carrier-resurrection-history-2010",
+          "moveId": "con-gospel-mythmaking-indicators",
+          "expectedSpeaker": "Richard Carrier",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Richard Carrier",
+          "clip": {
+            "path": "output/transcribe/assessment-production-canary-v1-audio-verification/debate-130/clips/con-gospel-mythmaking-indicators.mp3",
+            "sha256": "8ed16317f23f0493b4dc85abfcfd09be11b2a524823e66a5d0c7ffdf831bc176",
+            "durationSeconds": 123.230938
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-canary-v1-audio-verification/debate-130/transcripts/con-gospel-mythmaking-indicators.transcript.json",
+            "sha256": "2fc10796b32e2051061a9181480cdad1bf552d83d36af333bbc0d4d0a70f4d20",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Richard Carrier",
+            "fullClipExcerptRecall": 0.9104477611940298,
+            "expectedSpeakerExcerptRecall": 0.9104477611940298,
+            "highestOtherSpeaker": "Mike Licona",
+            "highestOtherSpeakerExcerptRecall": 0.029850746268656716,
+            "expectedSpeakerRecallMargin": 0.8805970149253731,
+            "expectedSpeakerDurationSeconds": 115.85,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Richard Carrier",
+                "segmentCount": 9,
+                "durationSeconds": 115.85,
+                "wordCount": 441,
+                "excerptRecall": 0.9104477611940298
+              },
+              {
+                "speaker": "Mike Licona",
+                "segmentCount": 3,
+                "durationSeconds": 2.65,
+                "wordCount": 11,
+                "excerptRecall": 0.029850746268656716
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 4,
+                "durationSeconds": 2.55,
+                "wordCount": 13,
+                "excerptRecall": 0.029850746268656716
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "152",
+      "debateId": "knechtle-aron-ra-god-existence-2023",
+      "moves": [
+        {
+          "debateNumber": "152",
+          "debateId": "knechtle-aron-ra-god-existence-2023",
+          "moveId": "move-pro-objective-moral-ground",
+          "expectedSpeaker": "Stuart Knechtle",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "high",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Stuart Knechtle",
+          "clip": {
+            "path": "output/transcribe/assessment-production-canary-v1-audio-verification/debate-152/clips/move-pro-objective-moral-ground.mp3",
+            "sha256": "7c5d339bbce2bf61fb5d66b6830e80db947eec28b98f3eb32104b28494d2035d",
+            "durationSeconds": 137.36
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-canary-v1-audio-verification/debate-152/transcripts/move-pro-objective-moral-ground.transcript.json",
+            "sha256": "445b8d11cea6300c5d96511d85846a0d2afe88eab6032b5e82f40bb4ea76e261",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Stuart Knechtle",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 0.9629629629629629,
+            "highestOtherSpeaker": "B",
+            "highestOtherSpeakerExcerptRecall": 0.08641975308641975,
+            "expectedSpeakerRecallMargin": 0.8765432098765431,
+            "expectedSpeakerDurationSeconds": 119.6,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Stuart Knechtle",
+                "segmentCount": 37,
+                "durationSeconds": 119.6,
+                "wordCount": 390,
+                "excerptRecall": 0.9629629629629629
+              },
+              {
+                "speaker": "B",
+                "segmentCount": 1,
+                "durationSeconds": 4.6,
+                "wordCount": 19,
+                "excerptRecall": 0.08641975308641975
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 1,
+                "durationSeconds": 1,
+                "wordCount": 3,
+                "excerptRecall": 0.037037037037037035
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "acceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "references": [
+      {
+        "debateNumber": "05",
+        "speaker": "Sye Ten Bruggencate",
+        "startSeconds": 439.08,
+        "requestedDurationSeconds": 8,
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-canary-v1-audio-verification/debate-05/references/sye-ten-bruggencate.mp3",
+        "sha256": "206cc382da58426c2c0d034ddeedba991d9229e5f630bf1da045ba0bffcc3c95"
+      },
+      {
+        "debateNumber": "05",
+        "speaker": "Matt Dillahunty",
+        "startSeconds": 1120.679,
+        "requestedDurationSeconds": 8,
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-canary-v1-audio-verification/debate-05/references/matt-dillahunty.mp3",
+        "sha256": "32822204d5edf7246a958c4d2e3a56a4fd6502d94746bce49fa6e30e94e4ea0a"
+      },
+      {
+        "debateNumber": "130",
+        "speaker": "Mike Licona",
+        "startSeconds": 969.95,
+        "requestedDurationSeconds": 8,
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-canary-v1-audio-verification/debate-130/references/mike-licona.mp3",
+        "sha256": "302ee7dbc98bf724fcb93b5c39b1e733b34cf1394a85bcf04819229998a8b9de"
+      },
+      {
+        "debateNumber": "130",
+        "speaker": "Richard Carrier",
+        "startSeconds": 2019.32,
+        "requestedDurationSeconds": 8,
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-canary-v1-audio-verification/debate-130/references/richard-carrier.mp3",
+        "sha256": "566a856ca4e211e12a384979ff850fd400e1e84b2c4bb9b4f9cca8382bc64345"
+      },
+      {
+        "debateNumber": "152",
+        "speaker": "Stuart Knechtle",
+        "startSeconds": 304.139,
+        "requestedDurationSeconds": 8,
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-canary-v1-audio-verification/debate-152/references/stuart-knechtle.mp3",
+        "sha256": "9e7f7234ddf52baa4de5226535f75aa286926b741ac8fb73ccbf9239ff4ac031"
+      },
+      {
+        "debateNumber": "152",
+        "speaker": "Aron Ra",
+        "startSeconds": 927.959,
+        "requestedDurationSeconds": 8,
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-canary-v1-audio-verification/debate-152/references/aron-ra.mp3",
+        "sha256": "7333d843c3d9ed4ad1c1408107f7662601af6fa7cacc1748764e427fe35d3b6c"
+      }
+    ]
+  },
+  "totals": {
+    "requiredMoves": 4,
+    "verified": 3,
+    "unresolved": 1,
+    "paidDiarizationCallsAttempted": 4,
+    "paidDiarizationCallsCompleted": 4,
+    "retries": 0,
+    "corrections": 0,
+    "clipMinutes": 10.7198,
+    "estimatedProcessingExposureUsd": 0.0643,
+    "maximumAuthorizedCostUsd": 0.15,
+    "meteredJudgmentModelApiCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "authorization": {
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  }
+}

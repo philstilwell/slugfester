@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0-production-canary-audio-verification-analysis",
+  "protocolId": "assessment-production-canary-v1-audio-verification",
+  "status": "production-canary-audio-verification-unresolved",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "gate": {
+    "passed": false,
+    "requiredMoves": 4,
+    "verified": 3,
+    "unresolved": 1,
+    "deterministicThresholdsApplied": true,
+    "measuredReferenceDurationContractApplied": true,
+    "knownSpeakerNamesApplied": true,
+    "locallySavedTranscripts": true
+  },
+  "costs": {
+    "paidDiarizationCallsAttempted": 4,
+    "paidDiarizationCallsCompleted": 4,
+    "retries": 0,
+    "estimatedProcessingExposureUsd": 0.0643,
+    "maximumAuthorizedCostUsd": 0.15,
+    "ChatGPTSubscriptionApplicable": false,
+    "meteredJudgmentModelApiCostUsd": 0
+  },
+  "judgmentModelBoundary": {
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "judgmentModelCallsThisStage": 0,
+    "unchanged": true
+  },
+  "authorization": {
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  }
+}
