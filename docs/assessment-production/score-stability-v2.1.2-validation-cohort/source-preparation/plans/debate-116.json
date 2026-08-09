@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1745,
+  "ledgerBytes": 101301,
+  "ledgerSha256": "c3a96a8ba5da489c57ca8f1e1f7ae454483afe64c652bed3ad7256dc367c9d18",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51447,
+      "contextSha256": "d3f0b1fce7ef666e5bb8a5543ab3208f29a2c3a955dafe62d26e662808a83abb"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53005,
+      "contextSha256": "6c456a1facdcf6d48fe23819dbfb51214b33e4df5e1d3bb67a3b478bf1d807bf"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 1744,
+      "coreEvents": 65,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 1744,
+      "contextEvents": 105,
+      "contextBytes": 6162,
+      "contextSha256": "e6dc746a767dc3ed923e70a100315e08bbb8604805f34feb98280612eafac70c"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1744,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "116",
+  "debateId": "bertuzzi-schieber-evil-evidence-2019",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

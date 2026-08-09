@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.2-validation-score-blind-source-packet",
+  "protocolId": "assessment-production-score-stability-v2.1.2-fresh-validation-source-preparation",
+  "debateNumber": "189",
+  "debateId": "tour-cronin-origin-of-life-2020",
+  "motion": "Does current origin-of-life research substantially overstate how close it is to explaining the emergence of life?",
+  "sides": {
+    "pro": {
+      "label": "Claims of progress are overstated",
+      "speakers": [
+        "James Tour"
+      ]
+    },
+    "con": {
+      "label": "A testable pathway is emerging",
+      "speakers": [
+        "Lee Cronin"
+      ]
+    }
+  },
+  "durationSeconds": 4816,
+  "eventCount": 2038,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/3DHvNRK452c/transcript.txt",
+    "transcriptSha256": "57fdb4178e04382fa8699406f9da3b649540d763ee639090325f9576983a189d",
+    "eventsPath": ".assessment-cache/captions/3DHvNRK452c/events.json",
+    "eventsSha256": "5a1e21d8a1e796f403839a938f8d42487b71419a82f5f64109a09ac2c461b762",
+    "localManifestPath": ".assessment-cache/captions/3DHvNRK452c/manifest.json",
+    "localManifestSha256": "316cf97298bce0082694a35851bde16efd0f805f4ef3a68023c8036fe80855fe"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2.1.2-fresh-validation/debate-189.jsonl",
+    "sourceLedgerSha256": "4692bd24611af589cdca9cdf6c72546253ba69f71077d5b25fd28fa24f90aa30",
+    "sourceLedgerBytes": 119528,
+    "sourceLedgerEventCount": 2038,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/source-preparation/plans/debate-189.json",
+    "partitionPlanSha256": "7511238a9835e7c0ec831bd4493bec822e796cddb74cd3b71a8d99055b14a9b2",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "developmentValidationOnly": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

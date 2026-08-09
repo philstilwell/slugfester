@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2995,
+  "ledgerBytes": 175490,
+  "ledgerSha256": "6985023a044232f1b1e185552ee87e7835e48c019c5fa3bc096b13cbfa1997b8",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51494,
+      "contextSha256": "eb5fc2089ad85035acecfa80435a754b594de0bb048b4665cc6937651b76ad10"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53254,
+      "contextSha256": "80a8e3f69a9065c3720ec29d486d5f65bdc0c52c50a7b6f100b4e464fcec1cd8"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53482,
+      "contextSha256": "7a29a43e33b37aee9de10ebfe1d690b75688bf0ad71e952bd15eaa67368c6495"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2994,
+      "coreEvents": 495,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2994,
+      "contextEvents": 535,
+      "contextBytes": 31280,
+      "contextSha256": "92ff76b7fd2eff5f012792673d02c3a5b7c73c86df611a01b27d2c577549495b"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2994,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "42",
+  "debateId": "schmid-tomaszewski-divine-simplicity-2020",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

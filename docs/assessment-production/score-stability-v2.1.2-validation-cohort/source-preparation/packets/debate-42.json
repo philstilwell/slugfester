@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.2-validation-score-blind-source-packet",
+  "protocolId": "assessment-production-score-stability-v2.1.2-fresh-validation-source-preparation",
+  "debateNumber": "42",
+  "debateId": "schmid-tomaszewski-divine-simplicity-2020",
+  "motion": "Is divine simplicity, understood as God's absence of real intrinsic parts or composition, coherent with classical theism, Trinitarian doctrine, divine freedom, and omniscient knowledge of contingent reality?",
+  "sides": {
+    "pro": {
+      "label": "Classical theist",
+      "speakers": [
+        "Chris Tomaszewski"
+      ]
+    },
+    "con": {
+      "label": "Agnostic critic",
+      "speakers": [
+        "Joe Schmid"
+      ]
+    }
+  },
+  "durationSeconds": 6886,
+  "eventCount": 2995,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/rX6di0Au5Kg/transcript.txt",
+    "transcriptSha256": "d4fb52ad45a4db1fd8d6bf176c2604736c7fceb016eb43b143a1a94fdc443930",
+    "eventsPath": ".assessment-cache/captions/rX6di0Au5Kg/events.json",
+    "eventsSha256": "7113749023fd1f63c1f9e575bd17821fc99be2c23b213f25aafc8c80400b73a5",
+    "localManifestPath": ".assessment-cache/captions/rX6di0Au5Kg/manifest.json",
+    "localManifestSha256": "658deb3cdc6df027e48ac9f1367b6c7fab4ebdc92dc6dd1e077ea1aee5b252bd"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2.1.2-fresh-validation/debate-42.jsonl",
+    "sourceLedgerSha256": "6985023a044232f1b1e185552ee87e7835e48c019c5fa3bc096b13cbfa1997b8",
+    "sourceLedgerBytes": 175490,
+    "sourceLedgerEventCount": 2995,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/source-preparation/plans/debate-42.json",
+    "partitionPlanSha256": "f87075d4fe14dca395c898cc84648dfd4269f31359552d51b13f7d9f980c6c33",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "developmentValidationOnly": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

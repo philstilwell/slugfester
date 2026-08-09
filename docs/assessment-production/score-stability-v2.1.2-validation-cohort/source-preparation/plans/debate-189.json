@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2038,
+  "ledgerBytes": 119528,
+  "ledgerSha256": "4692bd24611af589cdca9cdf6c72546253ba69f71077d5b25fd28fa24f90aa30",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51903,
+      "contextSha256": "4dd5d7044da7cbb7ed7661bcdf0c9ae0f1fbe4ce4c3352bc7036b02c6b0258e9"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53490,
+      "contextSha256": "8df9232527d62dacd5bad0355bfe0e2db7568d0e31eda09cc82314a5c3948ad5"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2037,
+      "coreEvents": 358,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2037,
+      "contextEvents": 398,
+      "contextBytes": 23696,
+      "contextSha256": "04efa59fe5b671307025115b1c7ceb119f0372c697ef5bac0211a3e5fff51d59"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2037,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "189",
+  "debateId": "tour-cronin-origin-of-life-2020",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

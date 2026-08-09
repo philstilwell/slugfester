@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1910,
+  "ledgerBytes": 104593,
+  "ledgerSha256": "3c7809c34398233c6ec1067d1ef6f61eab78b15210fcb9748e8a63f4ab2cc4c7",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 48462,
+      "contextSha256": "0e2a655524e1b30e3a9fcd4aad14138544744d511945a0bfcf18f17dae151aeb"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 50192,
+      "contextSha256": "ff285fa2d0b453def3ec60293aee6054124f296f6e8b87f4f3b45d46cae296e9"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 1909,
+      "coreEvents": 230,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 1909,
+      "contextEvents": 270,
+      "contextBytes": 14948,
+      "contextSha256": "315f2ff3a81cb304f3ab7c7698672f35eccd6935bf0110cc360b301541953a39"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1909,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "114",
+  "debateId": "dirckx-goff-consciousness-points-god-2019",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

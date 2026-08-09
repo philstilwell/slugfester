@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2468,
+  "ledgerBytes": 144479,
+  "ledgerSha256": "0211b6326cb6755c51747373d8b1a38cc3d46e2dcb307125efd70561e80d88aa",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51630,
+      "contextSha256": "ac578d4acbe123f742fc836fa8783678984f906d0b87b9d93d2de0105db959f6"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53172,
+      "contextSha256": "eb458b6767e8a0308225180e9b2a0c398e15717df45aa11ed4a3eebe5ed5007b"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2467,
+      "coreEvents": 788,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2467,
+      "contextEvents": 828,
+      "contextBytes": 49058,
+      "contextSha256": "f51cacef3f5600329988af1c5312f7b4973c01055b8176055075df5fcdecb358"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2467,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "73",
+  "debateId": "hawkins-folley-free-will-compatibilism-2026",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

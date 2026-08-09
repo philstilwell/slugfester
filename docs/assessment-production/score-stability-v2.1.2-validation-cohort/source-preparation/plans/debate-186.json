@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2069,
+  "ledgerBytes": 118388,
+  "ledgerSha256": "f06ddbcce117fe54adc73c61ab58b11ce8298f64558fc3ff5076f58cad895e01",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51243,
+      "contextSha256": "4e9999494cc9a1fadf448b4c2215e4bbe3b9956d348d5b49c391f3e916cd0ca0"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51660,
+      "contextSha256": "528090e3981dd11508df0949de1429b830bdeaff95fb5313ba5b56380a30574a"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2068,
+      "coreEvents": 389,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2068,
+      "contextEvents": 429,
+      "contextBytes": 24540,
+      "contextSha256": "35a0faecccda3ff1c709136a592102631f136114c80be4a59abc04b902ecdb59"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2068,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "186",
+  "debateId": "huemer-sapolsky-free-will-determinism-2024",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

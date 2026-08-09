@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.2-validation-score-blind-source-packet",
+  "protocolId": "assessment-production-score-stability-v2.1.2-fresh-validation-source-preparation",
+  "debateNumber": "114",
+  "debateId": "dirckx-goff-consciousness-points-god-2019",
+  "motion": "Does consciousness point beyond materialism to God, or can a non-theistic panpsychist framework explain conscious experience without adding theism?",
+  "sides": {
+    "pro": {
+      "label": "Theistic consciousness",
+      "speakers": [
+        "Sharon Dirckx"
+      ]
+    },
+    "con": {
+      "label": "Non-theistic panpsychism",
+      "speakers": [
+        "Philip Goff"
+      ]
+    }
+  },
+  "durationSeconds": 3865,
+  "eventCount": 1910,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/Ef2vvT5GfoE/transcript.txt",
+    "transcriptSha256": "89d67055d7998165fc3c45fa591c82a5dae645b90927df4a86d9c8f94a96af4e",
+    "eventsPath": ".assessment-cache/captions/Ef2vvT5GfoE/events.json",
+    "eventsSha256": "9992639a600b13bbb0ae95f5567e8eb51b700a51c2f3d6f2f41068051352bbe2",
+    "localManifestPath": ".assessment-cache/captions/Ef2vvT5GfoE/manifest.json",
+    "localManifestSha256": "226d39d51e566b178ea7f3651dc9d811cb3ec59d40d02deb7d3f201965ec0d62"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2.1.2-fresh-validation/debate-114.jsonl",
+    "sourceLedgerSha256": "3c7809c34398233c6ec1067d1ef6f61eab78b15210fcb9748e8a63f4ab2cc4c7",
+    "sourceLedgerBytes": 104593,
+    "sourceLedgerEventCount": 1910,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/source-preparation/plans/debate-114.json",
+    "partitionPlanSha256": "972d6627862c054b6e4c6d5ac73482ed2f67e2f490c681c39ea860d49b128b92",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "developmentValidationOnly": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3101,
+  "ledgerBytes": 182832,
+  "ledgerSha256": "ada14c79bb368758048a94e884d7ea5a078a1803c5b52baed0506b9206f50020",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51799,
+      "contextSha256": "f469011eb1fd1906093a23a581be5f1085b3ac169df80c89992999560cd6efe4"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53424,
+      "contextSha256": "b54153f91150c570d31d3b46365413680b7abfd7058e86d9048cb7667e17e5e8"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53536,
+      "contextSha256": "0f7892fb76edf24226bd099e2a385eebc16cef00f5556fcb8c99daed46cd8c1e"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3100,
+      "coreEvents": 601,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3100,
+      "contextEvents": 641,
+      "contextBytes": 38169,
+      "contextSha256": "5d46d5e591d60e2c2de04e64df493c03e32fa0ade41ca1687deadd3dcdcf966a"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3100,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "124",
+  "debateId": "harris-peterson-god-atheism-bible-2018",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

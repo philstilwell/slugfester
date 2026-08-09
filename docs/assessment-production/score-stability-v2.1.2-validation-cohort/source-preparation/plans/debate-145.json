@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3057,
+  "ledgerBytes": 176115,
+  "ledgerSha256": "733fbc8589278a285e5f29fdf0c97070e4603ffc653a42cea52e8a8c2d4e8ebd",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50525,
+      "contextSha256": "4a34d6001fb7bc034a4597a53b93169994b3fcdcb2f0e880c7490215bcf55fdc"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52064,
+      "contextSha256": "c85e85d0b4469065d0669ae01f660d56144fd156fd2a79362478ea5b2adf7481"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52822,
+      "contextSha256": "0539a0b2e83b6f016de9fe878cab21d24684ee605879a6a0f307cc43ed2ca727"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3056,
+      "coreEvents": 557,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3056,
+      "contextEvents": 597,
+      "contextBytes": 34946,
+      "contextSha256": "098817faef825c4059e168259aaac096c7897e7476e5b75ce941a1a26b3fc270"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3056,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "145",
+  "debateId": "dennett-dsouza-god-human-invention-2007",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
