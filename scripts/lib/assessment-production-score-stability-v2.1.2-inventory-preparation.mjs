@@ -212,8 +212,8 @@ export function decodeV212LosslessColumnarCandidateTransport(columnar) {
     protocolId: columnar.protocolId,
     debateNumber: columnar.debateNumber,
     debateId: columnar.debateId,
-    candidateCount: columnar.candidateCount,
     completeSourceDiscovery: clone(columnar.completeSourceDiscovery),
+    candidateCount: columnar.candidateCount,
     transportPolicy: clone(columnar.transportPolicy),
     candidates: columnar.candidateRows.map((row) => {
       assertV4(
