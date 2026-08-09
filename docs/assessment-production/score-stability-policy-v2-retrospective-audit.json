@@ -1,0 +1,322 @@
+{
+  "schemaVersion": "1.0-score-stability-policy-v2-retrospective-audit",
+  "status": "retrospective-diagnostic-supports-v2-fresh-validation-still-required",
+  "proposal": "docs/assessment-production/score-stability-policy-v2-proposal.md",
+  "sourceHashes": {
+    "docs/calibration/v4.2.21.17.30/hard-route-single-score-pass/calculated-scores.json": "3da342f2ba4d0d4cbf62db2cdbed5288ebba28a4a6b31d6f2a916f560937aaf2",
+    "docs/assessment-production/canary-v1-score-pass/calculated-scores.json": "9b0b18f9a76d4cd88f8478ccb2b019b4577e09b8f03cd545839f604d938e82fd",
+    "docs/assessment-production/canary-v1-score-pass/failure-diagnosis.json": "93e5347e97e1de7ff1873d139699837045419f7bb58a32211f42532bf53870b4",
+    "docs/assessment-production/score-stability-policy-v2-proposal.md": "3b2ea6f915d58e00e9e77a95ea6d56891add53572d8bfb787b90adabc41042bc",
+    "scripts/lib/assessment-production-score-stability-policy-v2.mjs": "3097a05a8f6bbb23819d6ce76141c63f0183bb01fe403f866379604eabe21efc",
+    "scripts/analyze-assessment-production-score-stability-policy-v2.mjs": "094cf71b216e99e9e12d42e83b44768064daeced6d82b15bcdeb5e0c51c66395",
+    "scripts/test-assessment-production-score-stability-policy-v2.mjs": "df4fd0dec0d69ff74b3c486eb492968aeb004f54df0936db4d7a2d89327a27a7",
+    "scripts/test-assessment-production-score-stability-policy-v2-audit.mjs": "520c67f328fa922ddef686b1bd2b6ef6f3c562c7bdb64482f2788e99807c045f"
+  },
+  "resultIntegrity": {
+    "existingScoreArtifactsReadOnly": true,
+    "scoresRecomputed": false,
+    "judgmentsChanged": false,
+    "thresholdsChanged": false,
+    "currentCanaryReclassified": false,
+    "postResultPromotionPerformed": false
+  },
+  "cohorts": [
+    {
+      "id": "five-debate-hard-route",
+      "debates": 5,
+      "diagnosticOnly": true,
+      "numericPassed": true,
+      "v1ExactRoundedWinnerRulePassed": true,
+      "proposedV2NoOppositeReversalRulePassed": true,
+      "winnerStability": {
+        "rows": [
+          {
+            "debateNumber": "51",
+            "initialWinnersAgree": true,
+            "initialWinner": "pro",
+            "finalRoundedWinner": "pro",
+            "finalAdjustedTotals": {
+              "pro": 79.42,
+              "con": 71.71
+            },
+            "finalUnroundedDirection": "pro",
+            "v1ExactRoundedWinnerPreserved": true,
+            "proposedV2WinnerStabilityPassed": true,
+            "allowedRoundedTieCollapse": false,
+            "oppositeSideReversal": false
+          },
+          {
+            "debateNumber": "63",
+            "initialWinnersAgree": true,
+            "initialWinner": "con",
+            "finalRoundedWinner": "con",
+            "finalAdjustedTotals": {
+              "pro": 70.9,
+              "con": 85.98
+            },
+            "finalUnroundedDirection": "con",
+            "v1ExactRoundedWinnerPreserved": true,
+            "proposedV2WinnerStabilityPassed": true,
+            "allowedRoundedTieCollapse": false,
+            "oppositeSideReversal": false
+          },
+          {
+            "debateNumber": "90",
+            "initialWinnersAgree": true,
+            "initialWinner": "con",
+            "finalRoundedWinner": "con",
+            "finalAdjustedTotals": {
+              "pro": 80.68,
+              "con": 88.09
+            },
+            "finalUnroundedDirection": "con",
+            "v1ExactRoundedWinnerPreserved": true,
+            "proposedV2WinnerStabilityPassed": true,
+            "allowedRoundedTieCollapse": false,
+            "oppositeSideReversal": false
+          },
+          {
+            "debateNumber": "153",
+            "initialWinnersAgree": true,
+            "initialWinner": "con",
+            "finalRoundedWinner": "con",
+            "finalAdjustedTotals": {
+              "pro": 78.51,
+              "con": 82.47
+            },
+            "finalUnroundedDirection": "con",
+            "v1ExactRoundedWinnerPreserved": true,
+            "proposedV2WinnerStabilityPassed": true,
+            "allowedRoundedTieCollapse": false,
+            "oppositeSideReversal": false
+          },
+          {
+            "debateNumber": "165",
+            "initialWinnersAgree": true,
+            "initialWinner": "pro",
+            "finalRoundedWinner": "pro",
+            "finalAdjustedTotals": {
+              "pro": 80.68,
+              "con": 76.24
+            },
+            "finalUnroundedDirection": "pro",
+            "v1ExactRoundedWinnerPreserved": true,
+            "proposedV2WinnerStabilityPassed": true,
+            "allowedRoundedTieCollapse": false,
+            "oppositeSideReversal": false
+          }
+        ],
+        "agreedWinnerDebates": 5,
+        "v1ExactRoundedWinnersPreserved": 5,
+        "proposedV2WinnerStabilityPreserved": 5,
+        "allowedRoundedTieCollapses": [],
+        "oppositeSideReversals": [],
+        "passed": true
+      }
+    },
+    {
+      "id": "ten-debate-production-canary-v1",
+      "debates": 10,
+      "diagnosticOnly": true,
+      "numericPassed": true,
+      "v1ExactRoundedWinnerRulePassed": false,
+      "proposedV2NoOppositeReversalRulePassed": true,
+      "winnerStability": {
+        "rows": [
+          {
+            "debateNumber": "05",
+            "initialWinnersAgree": true,
+            "initialWinner": "con",
+            "finalRoundedWinner": "con",
+            "finalAdjustedTotals": {
+              "pro": 62.74,
+              "con": 90.49
+            },
+            "finalUnroundedDirection": "con",
+            "v1ExactRoundedWinnerPreserved": true,
+            "proposedV2WinnerStabilityPassed": true,
+            "allowedRoundedTieCollapse": false,
+            "oppositeSideReversal": false
+          },
+          {
+            "debateNumber": "13",
+            "initialWinnersAgree": true,
+            "initialWinner": "con",
+            "finalRoundedWinner": "con",
+            "finalAdjustedTotals": {
+              "pro": 76.28,
+              "con": 82.54
+            },
+            "finalUnroundedDirection": "con",
+            "v1ExactRoundedWinnerPreserved": true,
+            "proposedV2WinnerStabilityPassed": true,
+            "allowedRoundedTieCollapse": false,
+            "oppositeSideReversal": false
+          },
+          {
+            "debateNumber": "37",
+            "initialWinnersAgree": true,
+            "initialWinner": "con",
+            "finalRoundedWinner": "con",
+            "finalAdjustedTotals": {
+              "pro": 78.3,
+              "con": 90.51
+            },
+            "finalUnroundedDirection": "con",
+            "v1ExactRoundedWinnerPreserved": true,
+            "proposedV2WinnerStabilityPassed": true,
+            "allowedRoundedTieCollapse": false,
+            "oppositeSideReversal": false
+          },
+          {
+            "debateNumber": "64",
+            "initialWinnersAgree": true,
+            "initialWinner": "con",
+            "finalRoundedWinner": "tie",
+            "finalAdjustedTotals": {
+              "pro": 81.54,
+              "con": 81.62
+            },
+            "finalUnroundedDirection": "con",
+            "v1ExactRoundedWinnerPreserved": false,
+            "proposedV2WinnerStabilityPassed": true,
+            "allowedRoundedTieCollapse": true,
+            "oppositeSideReversal": false
+          },
+          {
+            "debateNumber": "65",
+            "initialWinnersAgree": true,
+            "initialWinner": "con",
+            "finalRoundedWinner": "con",
+            "finalAdjustedTotals": {
+              "pro": 82.81,
+              "con": 86.61
+            },
+            "finalUnroundedDirection": "con",
+            "v1ExactRoundedWinnerPreserved": true,
+            "proposedV2WinnerStabilityPassed": true,
+            "allowedRoundedTieCollapse": false,
+            "oppositeSideReversal": false
+          },
+          {
+            "debateNumber": "81",
+            "initialWinnersAgree": true,
+            "initialWinner": "con",
+            "finalRoundedWinner": "con",
+            "finalAdjustedTotals": {
+              "pro": 80.25,
+              "con": 85.75
+            },
+            "finalUnroundedDirection": "con",
+            "v1ExactRoundedWinnerPreserved": true,
+            "proposedV2WinnerStabilityPassed": true,
+            "allowedRoundedTieCollapse": false,
+            "oppositeSideReversal": false
+          },
+          {
+            "debateNumber": "130",
+            "initialWinnersAgree": true,
+            "initialWinner": "con",
+            "finalRoundedWinner": "con",
+            "finalAdjustedTotals": {
+              "pro": 81.2,
+              "con": 84.45
+            },
+            "finalUnroundedDirection": "con",
+            "v1ExactRoundedWinnerPreserved": true,
+            "proposedV2WinnerStabilityPassed": true,
+            "allowedRoundedTieCollapse": false,
+            "oppositeSideReversal": false
+          },
+          {
+            "debateNumber": "138",
+            "initialWinnersAgree": true,
+            "initialWinner": "con",
+            "finalRoundedWinner": "con",
+            "finalAdjustedTotals": {
+              "pro": 80.37,
+              "con": 84.2
+            },
+            "finalUnroundedDirection": "con",
+            "v1ExactRoundedWinnerPreserved": true,
+            "proposedV2WinnerStabilityPassed": true,
+            "allowedRoundedTieCollapse": false,
+            "oppositeSideReversal": false
+          },
+          {
+            "debateNumber": "152",
+            "initialWinnersAgree": true,
+            "initialWinner": "con",
+            "finalRoundedWinner": "con",
+            "finalAdjustedTotals": {
+              "pro": 70.72,
+              "con": 74.23
+            },
+            "finalUnroundedDirection": "con",
+            "v1ExactRoundedWinnerPreserved": true,
+            "proposedV2WinnerStabilityPassed": true,
+            "allowedRoundedTieCollapse": false,
+            "oppositeSideReversal": false
+          },
+          {
+            "debateNumber": "188",
+            "initialWinnersAgree": true,
+            "initialWinner": "con",
+            "finalRoundedWinner": "con",
+            "finalAdjustedTotals": {
+              "pro": 80.77,
+              "con": 86.14
+            },
+            "finalUnroundedDirection": "con",
+            "v1ExactRoundedWinnerPreserved": true,
+            "proposedV2WinnerStabilityPassed": true,
+            "allowedRoundedTieCollapse": false,
+            "oppositeSideReversal": false
+          }
+        ],
+        "agreedWinnerDebates": 10,
+        "v1ExactRoundedWinnersPreserved": 9,
+        "proposedV2WinnerStabilityPreserved": 10,
+        "allowedRoundedTieCollapses": [
+          "64"
+        ],
+        "oppositeSideReversals": [],
+        "passed": true
+      }
+    }
+  ],
+  "aggregate": {
+    "debatesObserved": 15,
+    "cohortsObserved": 2,
+    "v1PassingCohorts": 1,
+    "proposedV2PassingCohorts": 2,
+    "allowedRoundedTieCollapses": [
+      "64"
+    ],
+    "oppositeSideReversals": []
+  },
+  "interpretation": {
+    "currentCanaryDisposition": "failed-under-frozen-v1-rule",
+    "retrospectiveFinding": "The proposed v2 rule preserves every non-reversal accepted by v1 and classifies Debate 64 as a rounded tie collapse because its final unrounded con advantage remains positive.",
+    "evidentialLimit": "Both cohorts were observed before this proposal was frozen, so this result is diagnostic and cannot validate or promote v2."
+  },
+  "authorization": {
+    "freshDisjointCohortSelection": true,
+    "freshValidationManifestPreparation": false,
+    "modelExecution": false,
+    "paidTranscription": false,
+    "scoreRerun": false,
+    "currentCanaryReclassification": false,
+    "publicationPreparation": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "recommendation": {
+    "sampleSize": 10,
+    "dyadicOnly": true,
+    "excludeAllObservedCalibrationAndCanaryDebates": true,
+    "freezeExactCohortAndPolicyBeforeExecution": true,
+    "preserveModelAndStopRules": true,
+    "nextAction": "Select and source-gate a fresh disjoint ten-debate validation cohort; do not execute any model or paid transcription stage until a separately frozen manifest and any required cost approval exist."
+  }
+}
