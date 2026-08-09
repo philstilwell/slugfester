@@ -1,0 +1,1087 @@
+{
+  "schemaVersion": "1.0-score-stability-v2-validation-closure-analysis",
+  "protocolId": "assessment-production-score-stability-v2-validation-closure",
+  "status": "score-stability-v2-fresh-validation-failed-at-inventory-policy-not-promoted",
+  "closedAt": "2026-08-09T19:52:58Z",
+  "checkpointCommit": "7013ffe252a3a96ba48a028c7995dd030002a18e",
+  "developmentValidationOnly": true,
+  "productionCanary": false,
+  "stagingOnly": true,
+  "sourceHashes": {
+    "docs/assessment-production/canary-v1-score-pass/failure-diagnosis.json": "93e5347e97e1de7ff1873d139699837045419f7bb58a32211f42532bf53870b4",
+    "docs/assessment-production/score-stability-policy-v2-proposal.md": "3b2ea6f915d58e00e9e77a95ea6d56891add53572d8bfb787b90adabc41042bc",
+    "docs/assessment-production/score-stability-policy-v2-retrospective-audit.json": "1d6f74c897e45732cfd61993a6449c6dc750047a130a4765c1e52d0a2248aed3",
+    "docs/assessment-production/score-stability-v2-validation-cohort/discovery/model-execution.json": "e4fbe53d367e3892669d8779c2df4387b642e3e105568f1bc1935c9a6a360b32",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/failure-diagnosis.json": "93207597eb1e8322cb313224833c9696b6865ec2c8c84a52a15b79b2225269f3",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/model-execution.json": "ab891f699df38a13164cfb2cf0c04296d31e0aa709785e665f059124dcffd141",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/preparation-manifest.json": "f2708415806d70c43782111eadf8034398c50bddc7e853d7cbb31c5ef59ab6cf",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/timeout-diagnosis.json": "23a355b314f2edcf49764c40c25501116a3855a917ca438e49edd499a225c851",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/failure-diagnosis.json": "7a4b0fa9716bf79b0845415eda1d573096738d652f8fffc83f8c2b6cd4b55361",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/model-execution.json": "3cdbc2dfcd5032d3376b64c1d8c84ee4d51bb29458f86d4683d948505f914a46",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/plan-model-execution.json": "df45ab66eaf5315f97250338cd9119a121a0bb6295dbc7eddfc952bc890f2f36",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/preparation-manifest.json": "64b8509b0b6caa4370209b1d527a23ed3446f07c61beda4743e4c54ce914906d",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-route-section-selection-development/development-analysis.json": "cc797d46121e9d6d5acc130cfae2a3945a322097b9f334e58e0a07acd7146c86",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/failure-diagnosis.json": "9e4e21944a317c6d5f0a42a0104f090df43052deeb6efd7d4310cf9574acd140",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/model-execution.json": "19a22bab76bb2a84ae879c7f7fa81167b7dfa0662b5d318d20d40a09fdcf5a13",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/preparation-manifest.json": "0966f99c486c0ec4205dcbeb0ddd37d6b427e3b28f7c2ef4b3d09a037f6dc829",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/failure-diagnosis.json": "2fc07ffb5b38a536d56baf909f4154fd51021dd6b64d4878126afee05009b291",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/model-execution.json": "5d2b8ede5e7240885bac641118228a228da0e4373c760bc2869160543db4c9b1",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/preparation-manifest.json": "99fe7b9f368806a01db128536c551d6b7adc4a0fa6957c3392ca0c4afcb077c3",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory/model-execution.json": "150ae5bbc4124b6b3f913783ab5f72e8113508805daedfdc052028ab2dc15e1e",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory/preparation-manifest.json": "71cbfb3df0a679f7b48ab1c8ea10a28a470d4ef8bbd535c545800b328ecdf09b",
+    "docs/assessment-production/score-stability-v2-validation-cohort/validation-closure-protocol.md": "245c85acfacd8e4fe3682da2b98e04450da2badbde9848e470d2f6c8b67e62d5",
+    "docs/assessment-production/score-stability-v2-validation-cohort/validation-manifest.json": "7b5d46f51ebb018af30cb2ef013fc4a2c3f855045941b0c34b07d7c4665511e3",
+    "scripts/close-assessment-production-score-stability-v2-validation.mjs": "5652927eeea9a9fb75fe40852eb46ceef108e2d85ac358f9fc0e7b68b0f091dd",
+    "scripts/test-assessment-production-score-stability-v2-validation-closure.mjs": "a3ebf35c8f555c7eee1ebbd3897d2f5e402a7403cc8da968f5bd139f5053c515"
+  },
+  "v1CanaryDisposition": {
+    "status": "confirmed-single-rounding-edge-winner-preservation-failure",
+    "failedDebate": "64",
+    "finalRoundedScores": {
+      "pro": 82,
+      "con": 82
+    },
+    "finalUnroundedDirection": "con",
+    "reclassified": false,
+    "rerunPerformed": false,
+    "automaticRerunAuthorized": false
+  },
+  "proposedV2PolicyDisposition": {
+    "status": "proposal-unvalidated-not-promoted",
+    "retrospectiveSupportDiagnosticOnly": true,
+    "freshDisjointValidationRequired": true,
+    "freshDisjointValidationCompleted": false,
+    "failedBeforeIndependentJudgments": true,
+    "promoted": false,
+    "currentCanaryReclassified": false
+  },
+  "executionBoundary": {
+    "modelLabel": "5.6 Sol",
+    "modelSlug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "apiKeysRemoved": true,
+    "discoveryContextsExecuted": 45,
+    "inventoryContextsExecuted": 36,
+    "totalModelContextsExecuted": 81,
+    "retries": 0,
+    "meteredApiCostUsd": 0,
+    "closureModelContextsExecuted": 0
+  },
+  "inventoryCampaign": {
+    "gatesAttempted": 5,
+    "completeTenDebateGatesPassed": 0,
+    "contextsAttempted": 36,
+    "locallyValidIntermediateContexts": 30,
+    "invalidContexts": 6,
+    "independentJudgmentContextsExecuted": 0,
+    "scoresDerived": 0,
+    "gates": [
+      {
+        "gateId": "original-monolithic-inventory",
+        "execution": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/model-execution.json",
+        "executionStatus": "v2-validation-score-blind-inventory-complete-with-failure",
+        "diagnosis": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/timeout-diagnosis.json",
+        "diagnosisStatus": "failed-inventory-gate-preserved-columnar-full-cohort-successor-preparation-authorized",
+        "contextsPlanned": 10,
+        "contextsAttempted": 10,
+        "contextsUnattempted": 0,
+        "locallyValidIntermediateContexts": 9,
+        "invalidContexts": 1,
+        "failedDebates": [
+          "137"
+        ],
+        "failureModes": [
+          "timed-out"
+        ],
+        "retries": 0,
+        "completeTenDebateGatePassed": false,
+        "validOutputsReusableForAcceptance": false
+      },
+      {
+        "gateId": "columnar-recovery-inventory",
+        "execution": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/model-execution.json",
+        "executionStatus": "v2-validation-score-blind-inventory-columnar-recovery-complete-with-failure",
+        "diagnosis": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/failure-diagnosis.json",
+        "diagnosisStatus": "recovery-inventory-gate-failed-cross-section-duplicate-confirmed-no-further-action-authorized",
+        "contextsPlanned": 10,
+        "contextsAttempted": 3,
+        "contextsUnattempted": 7,
+        "locallyValidIntermediateContexts": 2,
+        "invalidContexts": 1,
+        "failedDebates": [
+          "31"
+        ],
+        "failureModes": [
+          "output-validation-failed"
+        ],
+        "retries": 0,
+        "completeTenDebateGatePassed": false,
+        "validOutputsReusableForAcceptance": false
+      },
+      {
+        "gateId": "unique-selection-map-inventory",
+        "execution": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/model-execution.json",
+        "executionStatus": "v2-validation-score-blind-inventory-unique-selection-map-successor-complete-with-failure",
+        "diagnosis": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/failure-diagnosis.json",
+        "diagnosisStatus": "unique-selection-map-successor-gate-failed-section-side-cardinality-confirmed-no-further-action-authorized",
+        "contextsPlanned": 10,
+        "contextsAttempted": 3,
+        "contextsUnattempted": 7,
+        "locallyValidIntermediateContexts": 2,
+        "invalidContexts": 1,
+        "failedDebates": [
+          "31"
+        ],
+        "failureModes": [
+          "output-validation-failed"
+        ],
+        "retries": 0,
+        "completeTenDebateGatePassed": false,
+        "validOutputsReusableForAcceptance": false
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "execution": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/model-execution.json",
+        "executionStatus": "v2-validation-score-blind-inventory-side-partitioned-selection-map-successor-complete-with-failure",
+        "diagnosis": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/failure-diagnosis.json",
+        "diagnosisStatus": "side-partitioned-selection-map-successor-gate-failed-repeat-debate-137-timeout-confirmed-no-further-action-authorized",
+        "contextsPlanned": 10,
+        "contextsAttempted": 10,
+        "contextsUnattempted": 0,
+        "locallyValidIntermediateContexts": 9,
+        "invalidContexts": 1,
+        "failedDebates": [
+          "137"
+        ],
+        "failureModes": [
+          "timed-out"
+        ],
+        "retries": 0,
+        "completeTenDebateGatePassed": false,
+        "validOutputsReusableForAcceptance": false
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "execution": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/model-execution.json",
+        "executionStatus": "v2-validation-score-blind-inventory-decomposed-plan-selection-successor-complete-with-failure",
+        "diagnosis": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/failure-diagnosis.json",
+        "diagnosisStatus": "decomposed-plan-selection-successor-gate-failed-plan-timeouts-debates-93-137-no-further-action-authorized",
+        "contextsPlanned": 20,
+        "contextsAttempted": 10,
+        "contextsUnattempted": 10,
+        "locallyValidIntermediateContexts": 8,
+        "invalidContexts": 2,
+        "failedDebates": [
+          "93",
+          "137"
+        ],
+        "failureModes": [
+          "timed-out",
+          "timed-out"
+        ],
+        "retries": 0,
+        "selectorContextsExecuted": 0,
+        "completeTenDebateGatePassed": false,
+        "validOutputsReusableForAcceptance": false
+      }
+    ]
+  },
+  "artifactQuarantine": {
+    "logicalQuarantineOnlyFilesNotMoved": true,
+    "records": [
+      {
+        "gateId": "columnar-recovery-inventory",
+        "debateNumber": "31",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/inventory-proposals/debate-31.json",
+        "sha256": "5785d68aa44674ef9b647f461dc18a677a708f7e7d05c4537123301eccb80cc8",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "columnar-recovery-inventory",
+        "debateNumber": "60",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/inventory-proposals/debate-60.json",
+        "sha256": "16523e989f4abaa31e2924cf9d0dba7f4cb2ea6080ec92c06f5636b107e83dc5",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "columnar-recovery-inventory",
+        "debateNumber": "86",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/inventory-proposals/debate-86.json",
+        "sha256": "122b8a8b334813e49fc9bf114cc5a58f765682776a12445b2164a06f7fbb3a0e",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "columnar-recovery-inventory",
+        "debateNumber": "60",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/locked-inventories/debate-60.json",
+        "sha256": "f0e7199589ead0d47956e405ef053909a1d0aaef5d802ab4fd9bce2a415d520c",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "columnar-recovery-inventory",
+        "debateNumber": "86",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/locked-inventories/debate-86.json",
+        "sha256": "75b929ef00cfc1fafe832a5b3a0f08b94235f2ea99f0d8465b6aed4ba634cd0d",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "columnar-recovery-inventory",
+        "debateNumber": "60",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/provenance/debate-60.json",
+        "sha256": "abc74279ea478a7f1c8a30736de349ad6c365dcfcf35222f6088673369272625",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "columnar-recovery-inventory",
+        "debateNumber": "86",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/provenance/debate-86.json",
+        "sha256": "aaa4e31805884cb465b1661473f08175c537c7c3e115b79643d8bb62e608a106",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "columnar-recovery-inventory",
+        "debateNumber": "60",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/validations/debate-60.json",
+        "sha256": "32c564b5a1c835e2b1f601ce5a79b179eb163d79b2896b6c1dbe6d7f4a2ac6ff",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "columnar-recovery-inventory",
+        "debateNumber": "86",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/validations/debate-86.json",
+        "sha256": "bba11ba003143948d5f9e538f0ef69e738f6e7fc9c3fd3d77c25a5368ebf831a",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "debateNumber": "123",
+        "artifactKind": "planOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/plans/debate-123.json",
+        "sha256": "5ab1109c459460f94dd2bb0b91c93b273e30c21109108c4bde7f7ce8e8f2e208",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "debateNumber": "146",
+        "artifactKind": "planOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/plans/debate-146.json",
+        "sha256": "3b8d7eeddd74a351b7c02dbdb7757d04eb809a367dd212baa093d90bb7e2eac2",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "debateNumber": "151",
+        "artifactKind": "planOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/plans/debate-151.json",
+        "sha256": "c71d06f6dcd608c4cc1077b97428167e1ba549acad8ed56cbe58fadad8540bd3",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "debateNumber": "158",
+        "artifactKind": "planOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/plans/debate-158.json",
+        "sha256": "3f98aec15617a9d2da82f1f71d60bb5e141c20e3b5488b6edb7ce915771c29f4",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "debateNumber": "31",
+        "artifactKind": "planOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/plans/debate-31.json",
+        "sha256": "ab5976ed2954d439ad65bdbaef5ee759aabae8219e481e9b4684106f55e33c87",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "debateNumber": "60",
+        "artifactKind": "planOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/plans/debate-60.json",
+        "sha256": "6db075f734bbf86711e342e708ef78c6ccc6c9a03f7aeb976764dd5c770bac07",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "debateNumber": "80",
+        "artifactKind": "planOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/plans/debate-80.json",
+        "sha256": "e74bfea541ddfb7302014a76ffa491c28c789e4bdde9997b55219739a75b88d8",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "debateNumber": "86",
+        "artifactKind": "planOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/plans/debate-86.json",
+        "sha256": "c9b96655b0ca42b7ddb182aae9149599f0268764476674c01cee65d82983ce63",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "debateNumber": "123",
+        "artifactKind": "selectionSchemaOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/selection-schemas/debate-123.schema.json",
+        "sha256": "0c1bcf8f7e829cd278b5f1db6fb5132a07a0dd65d8ef7e1797f852bef9f76fd9",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "debateNumber": "146",
+        "artifactKind": "selectionSchemaOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/selection-schemas/debate-146.schema.json",
+        "sha256": "6943ea374f49223acf0488f75a8da590d0867ee7087f96a8bf510a2b640e0bfb",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "debateNumber": "151",
+        "artifactKind": "selectionSchemaOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/selection-schemas/debate-151.schema.json",
+        "sha256": "3025b0c3458309c18d05f91a2ea91c30b735eeb408e780fc62d5f1688d959f57",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "debateNumber": "158",
+        "artifactKind": "selectionSchemaOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/selection-schemas/debate-158.schema.json",
+        "sha256": "c65390fb3f463181b370942f5fd3bc05cc9f38ffa91f1689db1d82b3e839bf1d",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "debateNumber": "31",
+        "artifactKind": "selectionSchemaOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/selection-schemas/debate-31.schema.json",
+        "sha256": "baaf49664f08db5c6cadc911af74787d88a47ae9ae41afe6d07d3ce62c1cd75e",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "debateNumber": "60",
+        "artifactKind": "selectionSchemaOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/selection-schemas/debate-60.schema.json",
+        "sha256": "83df9a3976baec494d8dbdccb9bd607e323896ba348a06190d88c9c4c3f4e58e",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "debateNumber": "80",
+        "artifactKind": "selectionSchemaOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/selection-schemas/debate-80.schema.json",
+        "sha256": "67673f55727907e52a40659ec747e9b3e93382cdccfb44ed016c6164fd98fdc7",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "decomposed-plan-selection-inventory",
+        "debateNumber": "86",
+        "artifactKind": "selectionSchemaOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-decomposed-plan-selection-successor/selection-schemas/debate-86.schema.json",
+        "sha256": "5e308cb96f3dd7f8ad1b5522fae6473266d3365e98859bda5e2046fee9a90670",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "123",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/inventory-proposals/debate-123.json",
+        "sha256": "85903c48d1d81ab03d0617f4087cfed578451a584df8a9cbc93c7f82a3215691",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "146",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/inventory-proposals/debate-146.json",
+        "sha256": "205976c96491019393e1f93b78194aaa6bfbdf03c5d6c319a25e51c220bbeaca",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "151",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/inventory-proposals/debate-151.json",
+        "sha256": "18a2bd65739718ee580cdc4306d879a6e05439df4402a1d80489871b892f2808",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "158",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/inventory-proposals/debate-158.json",
+        "sha256": "ca17af38abaac73104975c705ee5c9dcfad43d5854f752de6083eb289a0a7503",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "31",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/inventory-proposals/debate-31.json",
+        "sha256": "48fc8450ce0e2f948755be9cb27b8c39a87f5e559a2b06472991f3922271c7fb",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "60",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/inventory-proposals/debate-60.json",
+        "sha256": "b513805d6e657963253cb8c59db92c081032153a5d4a5de6255e133cee3b9be9",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "80",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/inventory-proposals/debate-80.json",
+        "sha256": "b0500c77cefacc8b7523a246fdccf9e7121e0468f5c70f5bf6f42c53d8c299f7",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "86",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/inventory-proposals/debate-86.json",
+        "sha256": "d4ca5e9653ac93da395807cbeb2315bf9671c8e22d50ddb617a1240677a6dea6",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "93",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/inventory-proposals/debate-93.json",
+        "sha256": "520c7fae9cc5e6cb53960e9f1bb3c448dd43f163046d9a79e7633df148a618fe",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "123",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/locked-inventories/debate-123.json",
+        "sha256": "d4a48b37234bff4576a5379495788fba06dcf58ca494d931a3f2d68aa39dc94a",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "146",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/locked-inventories/debate-146.json",
+        "sha256": "7f26e243ec8c7283d56d988cc3ec2cdb4a2afe8366299cc05818b741886afba7",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "151",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/locked-inventories/debate-151.json",
+        "sha256": "3e122631ec2372e07089f87c416ac38c0dfeb4b7113c230df4e0a59c120c1507",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "158",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/locked-inventories/debate-158.json",
+        "sha256": "ba5f70fd57d6b72d25459591ade35130de0ac33909615f5c1deb46e88ef66c92",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "31",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/locked-inventories/debate-31.json",
+        "sha256": "dc1314d537eb6a2def97882c374ff1cc209c39ca4a6fb04cb39e94c4278c9536",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "60",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/locked-inventories/debate-60.json",
+        "sha256": "1cde2fa87ad9e30015e171c14734304538c5495e6a4655a786745f60b1b006cf",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "80",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/locked-inventories/debate-80.json",
+        "sha256": "8faf0c5dd3a2605bcc332cd86be8872be8d55c98a8237d22422b3d3913466e20",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "86",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/locked-inventories/debate-86.json",
+        "sha256": "c0542b72948ecd1f710c8b2b5110bbec21d283e973d2f3a4c8c0531c11c76c3c",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "93",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/locked-inventories/debate-93.json",
+        "sha256": "cb9a3939a177dba23e7cef7ba66119dd1a3301c330bc2354e9512dd6de3e6ec8",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "123",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/provenance/debate-123.json",
+        "sha256": "fbfda08c8db476a0092ba5efd208f59f8c7862089765a84309ad69d8faf4926d",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "146",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/provenance/debate-146.json",
+        "sha256": "f453ae945ddc0a281e64aea902c02a430838c520382f3faa7e0b3b4b88487a16",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "151",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/provenance/debate-151.json",
+        "sha256": "11309a0286ab0b06d0f4a4e70d580cc97f7c82ce606a3930755500acf277e9cf",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "158",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/provenance/debate-158.json",
+        "sha256": "b21d6f80e8669494e14259c7912146f645809b93d89064a70746a5c33114846f",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "31",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/provenance/debate-31.json",
+        "sha256": "bd825c5fb2e1fd73ec3b6b95b3550eb64633f8adf7f68a9a652e605744eb6f5c",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "60",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/provenance/debate-60.json",
+        "sha256": "bf43b36d0f69e56640721fcc3b49cbc4a1d27a0d5e9b6186ddbff23d328bed7e",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "80",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/provenance/debate-80.json",
+        "sha256": "f53c2edcbccc019a53f9873548a44874b56252a5095ccf50bc1bebd7ba213f8c",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "86",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/provenance/debate-86.json",
+        "sha256": "5ac0145a8d3a15bd9083bfddb3625b1f4b947652e024de17d2a56d9709c3c75d",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "93",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/provenance/debate-93.json",
+        "sha256": "61262549bc625f4b7e54b45f8dfba3be8d829f6ac071945a41fcd581343e2551",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "123",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/validations/debate-123.json",
+        "sha256": "4ce43ca3c250a8ed07dbdc75863d1d4715867e325b0cab35fd158de7509ea9a6",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "146",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/validations/debate-146.json",
+        "sha256": "01f7b95d2fc75216b091118e75d233ae61bfc3206e22cc09d3b35d3f9c3108be",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "151",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/validations/debate-151.json",
+        "sha256": "5eb5cc0a09f2adf67f3755537899e3e1a8d19c2e79e985422210bb392c8209ba",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "158",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/validations/debate-158.json",
+        "sha256": "50063bb6c923ea9ddd7ee685d7651ec87b32616717ba35e368f18817105ea8b8",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "31",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/validations/debate-31.json",
+        "sha256": "b0b4a1542ffcb4d4bbae5221b5b02a43394b656e8807dac0770138587a4b2cb4",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "60",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/validations/debate-60.json",
+        "sha256": "10a5bd6afb6cf95f73152e452ff195a627a0551e0691aa71a7a3ae599b54b2c3",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "80",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/validations/debate-80.json",
+        "sha256": "bef9c9e08d7948808caf40ded2ecf3a08d0f63edb0c134069ede706075a7e587",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "86",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/validations/debate-86.json",
+        "sha256": "e65edf493696b9091bee2768c4e2f213db7e8369838780c2770293edc1969d57",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "side-partitioned-selection-map-inventory",
+        "debateNumber": "93",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-side-partitioned-selection-map-successor/validations/debate-93.json",
+        "sha256": "d38e28b8d0a0a102264ae80ebdd70d3aa285986af0defd8ecf0260309369fc02",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "unique-selection-map-inventory",
+        "debateNumber": "31",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/inventory-proposals/debate-31.json",
+        "sha256": "926797b46d5ac1e4e5c8bca0cf32f56c3112115975ec8f5be304ddaa9a8c677d",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "unique-selection-map-inventory",
+        "debateNumber": "60",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/inventory-proposals/debate-60.json",
+        "sha256": "4091a12f7148be3f8e35af5f5bb8196a7cf958c062301c132765dfef18aa93f5",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "unique-selection-map-inventory",
+        "debateNumber": "86",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/inventory-proposals/debate-86.json",
+        "sha256": "e363c427157a9bfbc7fcc7201194283d3193f13ffb2a5125cc6469d4798a278b",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "unique-selection-map-inventory",
+        "debateNumber": "60",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/locked-inventories/debate-60.json",
+        "sha256": "2666585a6dd4ba75ffcaa8f82e8604cc9273c684df7f87c37b3d12815da3ab0f",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "unique-selection-map-inventory",
+        "debateNumber": "86",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/locked-inventories/debate-86.json",
+        "sha256": "efc2c0b97f14f961e3ae5aa54b9b1f45570ecb5c2371a5e0fb8dded2d56fb765",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "unique-selection-map-inventory",
+        "debateNumber": "60",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/provenance/debate-60.json",
+        "sha256": "2d15b97f4124baac1c45643b23442d93ecbae66960b36b5b33f70bd30acf7214",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "unique-selection-map-inventory",
+        "debateNumber": "86",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/provenance/debate-86.json",
+        "sha256": "84e5339fe60c1f9c46269fdf787daa184ed4ecc9f220c431f6ae6109495ea484",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "unique-selection-map-inventory",
+        "debateNumber": "60",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/validations/debate-60.json",
+        "sha256": "eb933829aa6a2e541e61527480d8019d31641a11d5e25e7e555601505ac9d619",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "unique-selection-map-inventory",
+        "debateNumber": "86",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/validations/debate-86.json",
+        "sha256": "80ecc06540dd9c4a2d5ecb9c04a2d304f4481a9466a35aa1ef6d1d482e8851ab",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "123",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/inventory-proposals/debate-123.json",
+        "sha256": "7de7e66b6ac3c81b166d1ccc30456886f1f0cd8cc2499b18e74a782ab0b3ef16",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "146",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/inventory-proposals/debate-146.json",
+        "sha256": "1bc6132d9bfbee293c17ff4d5e3d8b112ba0b513128a1a41a41a3f8261edbba4",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "151",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/inventory-proposals/debate-151.json",
+        "sha256": "59cb4a675c599adf29844c4cd2e26d6756d12b03f30fdfcfcab489245b71f5db",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "158",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/inventory-proposals/debate-158.json",
+        "sha256": "2698abc331ba1e443d1b60000dbd51b3ea167ab4d0e13f560ddc5e81ad357113",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "31",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/inventory-proposals/debate-31.json",
+        "sha256": "5075c9e7de6a9a63d88e451605c01cf4a99f98c08d06a3c3667014dc9198b367",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "60",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/inventory-proposals/debate-60.json",
+        "sha256": "90616a2e6181c5bf2d5b1c9f94589b65bacf540622f84d673890e1056da289b7",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "80",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/inventory-proposals/debate-80.json",
+        "sha256": "26f1e5173de38aad92e44faa7b956397af0869ad13c3651b5adc983239b4fb69",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "86",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/inventory-proposals/debate-86.json",
+        "sha256": "a26ee387765750d288260ee437f7416e933fac453766b519c7bf2104630ac6f5",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "93",
+        "artifactKind": "proposalOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/inventory-proposals/debate-93.json",
+        "sha256": "da8624bcb9b6fcbce02bb3e1435d64d378bfb586eea355d3586a11c047409c68",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "123",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/locked-inventories/debate-123.json",
+        "sha256": "c15d6fbd9203091e3d566a83a304845337959959b34daf928dfd2496d9a8e309",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "146",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/locked-inventories/debate-146.json",
+        "sha256": "964dcb948ebe65f1b1b44a7cfa84042aba76f76a2c26c0a7377aabe9c37bcf02",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "151",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/locked-inventories/debate-151.json",
+        "sha256": "39299b250853cce700bf7f470964d4dd1521d270bbb3ee1da477b6333f589a2d",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "158",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/locked-inventories/debate-158.json",
+        "sha256": "cd376bcb783f4833ef84e8dcd54e5dc8e225f59ac415efac63a5a9dd396f9488",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "31",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/locked-inventories/debate-31.json",
+        "sha256": "1571f4ada23fff227b098294af6a6f71f0c7d9c52ea2f13d9fe08d455670563f",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "60",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/locked-inventories/debate-60.json",
+        "sha256": "9eb8fe4c547bcb4df8a06d513806d1d7d83296ff49aed6a4d5fc7204db0adbbf",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "80",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/locked-inventories/debate-80.json",
+        "sha256": "578a6e9f2fdaeacfd085009ae6964d13457d65c2710e16e21415189c08c51961",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "86",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/locked-inventories/debate-86.json",
+        "sha256": "26890b7b53994bf52c9bcae04804c38bcbd05dc0d16eaecdd3f6299b0aebc8d6",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "93",
+        "artifactKind": "lockedInventoryOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/locked-inventories/debate-93.json",
+        "sha256": "bbe04d67c3557099a259f512f5723a43234551ec79e9c0d5ca90ddd22dc7e9fe",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "123",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/provenance/debate-123.json",
+        "sha256": "23fda357525037ecc81a5717b8dd0678dfd51ac48453ac57a00d2c08aa506829",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "146",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/provenance/debate-146.json",
+        "sha256": "0c58aeaff47d1c8faa9922c94cc38f5ad826b6491a6dadc5a62a25685eda20e5",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "151",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/provenance/debate-151.json",
+        "sha256": "bc01af1e9babfbe205d0027f3cacab64fa9ec656fcaa74394ba108f28cc44799",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "158",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/provenance/debate-158.json",
+        "sha256": "5fbc260b6a91cf9b779520708b53a03debd0e7b4b5179d0c8b688094468f89e8",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "31",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/provenance/debate-31.json",
+        "sha256": "c698dac8b88391b5002b6934cfef28aa247f17d3f83e461c19b22b50b44a43ce",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "60",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/provenance/debate-60.json",
+        "sha256": "010f874c540c841472bd6d153a8ff560aa42f09a1268f5b8a285a690236cf931",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "80",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/provenance/debate-80.json",
+        "sha256": "1909f0db7b14edc072640fa85b42579111186279d2cffa90449c15dc88d5e4e3",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "86",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/provenance/debate-86.json",
+        "sha256": "755f4ff7e0adaa05e4bb8e78d332170bc40d5cc5de747eaae0771027bb0341b9",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "93",
+        "artifactKind": "provenanceOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/provenance/debate-93.json",
+        "sha256": "cdb80df06770814515baca0d4a7c5d0cf1fe602e1994f824a24630ba29540244",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "123",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/validations/debate-123.json",
+        "sha256": "19eccc90171d4ddc0ff7c3784265a701204e7456e893e5f2030e8a3f296439ec",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "146",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/validations/debate-146.json",
+        "sha256": "2afffb688dcaac03e307f24e8ec27af3ed557d775f4b78d4604d86ad96945b90",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "151",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/validations/debate-151.json",
+        "sha256": "e9fa3912b966929b6bf7e6d057b69da8a2dc303cf122695757888c2c594b5999",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "158",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/validations/debate-158.json",
+        "sha256": "b664ffc72cfabf469c6bd2ee639f5206c5207ff8df3c733c4f75c95df40d1756",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "31",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/validations/debate-31.json",
+        "sha256": "bb1cdf1c967e918191b746feca893e158ec9d08eee5f8f1b943e129d1a7992c6",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "60",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/validations/debate-60.json",
+        "sha256": "f722a26777b23aa8a0d4e0868d10651b03e27acc8f1d048cddbe49cb5e849ae6",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "80",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/validations/debate-80.json",
+        "sha256": "4bdcb7b5f19e51b0b2ec1845c21f75517115abf9b9ba802abbc2b16585a67446",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "86",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/validations/debate-86.json",
+        "sha256": "19a4e1996ba46dd4034f990dab82cd01fc09ab56d23e243382fb397de1e2d1fd",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      },
+      {
+        "gateId": "original-monolithic-inventory",
+        "debateNumber": "93",
+        "artifactKind": "validationOutput",
+        "file": "docs/assessment-production/score-stability-v2-validation-cohort/inventory/validations/debate-93.json",
+        "sha256": "c634804ae618d0bbf6c4ec64c8cb58ea7957803fe7ad7a50edb05b58e88f5c00",
+        "disposition": "preserved-evidence-only-not-reusable-for-acceptance"
+      }
+    ],
+    "files": 106,
+    "everyArtifactHashBound": true,
+    "everyArtifactPreservedAsEvidenceOnly": true,
+    "reusableForFutureAcceptance": false,
+    "reusableAsFreshModelInput": false
+  },
+  "developmentDisposition": {
+    "strictRouteSectionSelectionContractFeasible": true,
+    "exactRetiredRecompositionPassed": true,
+    "sufficientEvidenceForFreshSuccessorGate": false,
+    "silentTimeoutCauseEstablished": false,
+    "successorPreparationAuthorized": false
+  },
+  "conclusion": {
+    "validationPassed": false,
+    "failureStage": "score-blind-inventory",
+    "currentCanaryRemainsFailed": true,
+    "proposedPolicyRemainsUnvalidated": true,
+    "proposedPolicyPromoted": false,
+    "publicationAuthorized": false,
+    "productionMutationAuthorized": false,
+    "remainingProductionBatchesAuthorized": false,
+    "reason": "The fresh disjoint cohort passed discovery but no inventory protocol completed all ten debates. Five failed inventory gates and the final model-free development result provide no authorized or causally supported path to independent judgments, scoring, policy promotion, publication, or production mutation."
+  },
+  "authorization": {
+    "successorProtocolDevelopment": false,
+    "successorPreparation": false,
+    "successorExecutionManifest": false,
+    "successorModelExecution": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "semanticCorrection": false,
+    "independentJudgmentPacketPreparation": false,
+    "independentJudgmentModelExecution": false,
+    "paidTranscription": false,
+    "audioVerification": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationPreparation": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "none-without-new-explicit-user-authorization"
+}
