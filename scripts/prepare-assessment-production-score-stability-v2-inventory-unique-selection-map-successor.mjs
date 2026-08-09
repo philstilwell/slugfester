@@ -2,7 +2,7 @@
 
 import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
-import { access, readFile, writeFile } from "node:fs/promises";
+import { access, mkdir, readFile, writeFile } from "node:fs/promises";
 
 import { assertV4 } from "./lib/v4-lean-production.mjs";
 import { auditEndpointCompatibleStrictSchema } from "./lib/assessment-production-score-stability-v2-inventory-unique-selection-map.mjs";
@@ -344,7 +344,10 @@ const preparation = {
   },
 };
 
-if (shouldWrite) await writeFile(PREPARATION, jsonBytes(preparation));
+if (shouldWrite) {
+  await mkdir(ROOT, { recursive: true });
+  await writeFile(PREPARATION, jsonBytes(preparation));
+}
 console.log(
   JSON.stringify(
     {
