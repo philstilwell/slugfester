@@ -1,0 +1,423 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "158",
+  "debateId": "dillahunty-mclatchie-resurrection-evidence-2020",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "pro-cumulative-historical-route",
+      "side": "pro",
+      "description": "Build a cumulative historical inference from early apostolic provenance, source trustworthiness, reported encounter characteristics, and comparative elimination of alternatives.",
+      "successCriteria": "The resurrection route succeeds if the selected evidence grounds the reports near the original apostles and makes resurrection a better explanation than legend, sincere error, or deception.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-best-explanation",
+        "tier": "motion",
+        "description": "The cumulative historical evidence must make resurrection the best explanation of the reported events despite its low prior probability."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-apostolic-provenance",
+          "tier": "central",
+          "description": "The resurrection proclamation must be connected to early apostolic sources rather than explained as a later legend."
+        },
+        {
+          "bridgeId": "pro-source-trustworthiness",
+          "tier": "central",
+          "description": "The documentary sources must possess enough independently supported trustworthiness to carry claims about the resurrection encounters."
+        },
+        {
+          "bridgeId": "pro-alternative-comparison",
+          "tier": "central",
+          "description": "Legend, sincere perceptual error, and deliberate deception must be comparatively weakened by the reported evidence."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-prior-overcome",
+          "tier": "subsidiary",
+          "description": "The cumulative evidence must be capable in principle of overcoming the resurrection hypothesis's acknowledged low prior probability."
+        }
+      ]
+    },
+    {
+      "routeId": "con-insufficient-testability-route",
+      "side": "con",
+      "description": "Show that indirect and untestable Christian reports do not establish the underlying events and cannot discriminate resurrection from ordinary testimonial and literary alternatives.",
+      "successCriteria": "The skeptical route succeeds if source limitations, live natural alternatives, and the extraordinary causal burden leave the resurrection insufficiently established by the surviving reports.",
+      "motionBridge": {
+        "bridgeId": "con-motion-insufficiency",
+        "tier": "motion",
+        "description": "The surviving reports must fail to provide sufficiently testable and causally discriminating support for a historical resurrection."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-source-defects",
+          "tier": "central",
+          "description": "The documentary record must remain too anonymous, indirect, inconsistent, or inaccessible to establish the claimed events strongly."
+        },
+        {
+          "bridgeId": "con-legendary-underdetermination",
+          "tier": "central",
+          "description": "The explanatory framing must not assume the historicity of events that could instead reflect legendary development."
+        },
+        {
+          "bridgeId": "con-parity-and-prior",
+          "tier": "central",
+          "description": "The evidential method must not warrant resurrection when comparable standards would admit rejected extraordinary claims or more probable ordinary errors."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-sincerity-limit",
+          "tier": "subsidiary",
+          "description": "Sincerity, transformation, or willingness to suffer must remain compatible with sincerely held false beliefs."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "apostolic-provenance",
+      "title": "Early Apostolic Provenance and Testability",
+      "weightPercent": 25,
+      "rationale": "Whether the resurrection claim reaches identifiable original apostles determines whether the surviving documents provide direct historical grounding or inaccessible hearsay."
+    },
+    {
+      "sectionId": "legend-and-explanatory-frame",
+      "title": "Legend and the Explanatory Starting Point",
+      "weightPercent": 20,
+      "rationale": "The inference depends on whether legend is adequately included as an alternative or whether the framework prematurely assumes events requiring explanation."
+    },
+    {
+      "sectionId": "source-reliability",
+      "title": "Documentary Trustworthiness and Ordinary Corroboration",
+      "weightPercent": 20,
+      "rationale": "The historical burden turns on whether confirmations of ordinary details warrant trust in extraordinary claims or remain compatible with dependence and error."
+    },
+    {
+      "sectionId": "sincerity-and-error",
+      "title": "Sincerity, Martyrdom, and Honest Error",
+      "weightPercent": 15,
+      "rationale": "The parties dispute whether costly commitment and transformed conduct reduce deception and mistake or merely demonstrate sincere belief."
+    },
+    {
+      "sectionId": "prior-probability",
+      "title": "Prior Probability and Extraordinary Evidence",
+      "weightPercent": 20,
+      "rationale": "The motion requires determining whether cumulative documentary evidence can overcome a low miracle prior or whether ordinary error remains more probable."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-explanatory-categories",
+      "qualifiedCandidateId": "chunk-001:c001",
+      "sectionId": "legend-and-explanatory-frame",
+      "side": "pro",
+      "speaker": "Dr Jonathan McLatchie",
+      "moveKind": "constructive",
+      "proposition": "Four exhaustive explanatory categories frame the case: later myth, sincere mistake, deliberate deception, or an actual resurrection.",
+      "sourceSpan": {
+        "startEvent": 220,
+        "endEvent": 250
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly hands the opening statement to McLatchie, whose uninterrupted first-person presentation continues through this span.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "four hypotheses that you see on the screen i would argue are mutually exhaustive categories of explanation which purport to explain and account for the evidence that is before us the first of those is that jesus immediate followers following his death did not claim that jesus rose again they would have been a surprise to anyone else to hear that jesus had been raised from the dead and the gospels of later myths we can call that the myth",
+        "characterCount": 440,
+        "tokenCount": 80,
+        "startToken": 4,
+        "endToken": 83,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-early-apostolic-tradition",
+      "qualifiedCandidateId": "chunk-001:c002",
+      "sectionId": "apostolic-provenance",
+      "side": "pro",
+      "speaker": "Dr Jonathan McLatchie",
+      "moveKind": "constructive",
+      "proposition": "Paul's early resurrection tradition and agreement with Peter, James, and the Twelve place the resurrection claim with the original apostles.",
+      "sourceSpan": {
+        "startEvent": 251,
+        "endEvent": 317
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This passage remains within McLatchie's uninterrupted timed opening statement following his explicitly introduced four-hypothesis framework.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "so paul here seems to be uh indicating or assuming that the corinthian christians understand his proclamation of the core propositions of the gospel the death of christ the burial of the resurrection to be consistent with what's already being preached to them proclaimed to them by the other uh apostles in particular peter james and the twelve we have independent confirmation of",
+        "characterCount": 380,
+        "tokenCount": 63,
+        "startToken": 233,
+        "endToken": 295,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-martyrdom-transformations",
+      "qualifiedCandidateId": "chunk-001:c006",
+      "sectionId": "sincerity-and-error",
+      "side": "pro",
+      "speaker": "Dr Jonathan McLatchie",
+      "moveKind": "constructive",
+      "proposition": "The apostles' willingness to suffer and die, along with the transformations of James and Peter, counts against deliberate fabrication and favors resurrection as the explanation.",
+      "sourceSpan": {
+        "startEvent": 601,
+        "endEvent": 667
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening continues as McLatchie explicitly turns from sincere mistake to his third alternative, deliberate deception.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "die for something that they know to be false and these apostles were in a position to know whether what they were claiming was true or not in fact the martyrdoms of peter and james the lord's brother are especially well attested in fact um the margin of peter is reported in two first century sources namely uh john 21 where at the end of john's gospel jesus anticipates the death the martyrdom",
+        "characterCount": 394,
+        "tokenCount": 73,
+        "startToken": 98,
+        "endToken": 170,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-untestable-biblical-reports",
+      "qualifiedCandidateId": "chunk-001:c008",
+      "sectionId": "apostolic-provenance",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "The biblical reports lack secure custody, sworn or examinable testimony, known provenance, and physical corroboration, so their resurrection claims cannot be adequately tested.",
+      "sourceSpan": {
+        "startEvent": 800,
+        "endEvent": 849
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty continues uninterrupted from his announced opening statement, applying the evaluative standard he has just established to biblical reports.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "was given had been altered that it didn't line up with stuff we'd lost the original we just had a copy there are reasons that hearsay is not considered strong evidence in the case of the bible we don't have testimonials or depositions no one is under oath no one is being questioned what we have is propaganda from anonymous altered ancient accounts that's it eyewitness testimony",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 37,
+        "endToken": 103,
+        "weightedOverlap": 12,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 1,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-downstream-framework",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-04",
+      "sectionId": "legend-and-explanatory-frame",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "The proposed explanatory alternatives begin too far downstream by assuming the reported death and resurrection events, while overlooking legendary development of the story.",
+      "sourceSpan": {
+        "startEvent": 1117,
+        "endEvent": 1138
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly names Jonathan, closes his allotted opening immediately afterward, and is then thanked by the moderator as Matt.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "by assuming that there's a person a death and an account of a resurrection that we need to make some sort of explanation for now obviously during the rebuttal we'll get into this a little bit better but i think he's already starting a little bit too far down the track because certainly we have a story that accounts for a death and a resurrection but how do we if you're going to",
+        "characterCount": 380,
+        "tokenCount": 73,
+        "startToken": 8,
+        "endToken": 80,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-low-prior-overcome",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-08",
+      "sectionId": "prior-probability",
+      "side": "pro",
+      "speaker": "Dr Jonathan McLatchie",
+      "moveKind": "reply",
+      "proposition": "A miraculous claim properly receives a low prior probability, but sufficiently strong cumulative documentary evidence can overcome even an extremely small prior.",
+      "sourceSpan": {
+        "startEvent": 1358,
+        "endEvent": 1436
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains within Jonathan's rebuttal and explicitly agrees with Matt by name before setting out Jonathan's probability-based response.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "believes he witnessed i'm going to ask a lot more questions than if he told me about a non-miraculous event precisely because of the issues with prior probability or the probability just given the background information that we know the miracles are not everyday occurrences and so matt is completely correct to expect more evidence for an event with a with a low prior but low priors even astronomically small ones can in principle be overcome",
+        "characterCount": 444,
+        "tokenCount": 77,
+        "startToken": 85,
+        "endToken": 161,
+        "weightedOverlap": 38,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-sincerity-does-not-validate",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-09",
+      "sectionId": "sincerity-and-error",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Legend means the reported events themselves may be unwarranted, and sincere belief or martyrdom cannot validate them because equally sincere false beliefs are widespread.",
+      "sourceSpan": {
+        "startEvent": 1482,
+        "endEvent": 1547
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator gives Matt the final rebuttal, after which Matt directly addresses Jonathan's opening categories and clarifies his own earlier legend objection.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "events um are not actually warranted for belief and acceptance based on the evidence available he defended it against a lot of things that weren't part of my response why would they martyr that's irrelevant there are martyrs for countless religions that we both reject um i'm fine with the notion that people sincerely believed and were wrong that we what we see uh we with alien abductions with coronavirus conspiracies",
+        "characterCount": 420,
+        "tokenCount": 71,
+        "startToken": 237,
+        "endToken": 307,
+        "weightedOverlap": 14,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 2,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-cumulative-source-confirmation",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-06",
+      "sectionId": "source-reliability",
+      "side": "pro",
+      "speaker": "Dr Jonathan McLatchie",
+      "moveKind": "reply",
+      "proposition": "Numerous historical confirmations and undesigned interconnections among the Gospels and Acts cumulatively support their substantial trustworthiness and informed proximity to events.",
+      "sourceSpan": {
+        "startEvent": 1978,
+        "endEvent": 2077
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "McLatchie takes the floor after Matt's conclusion, labels his case inductive, and develops a detailed Gospel comparison consistent with his pro position.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "numerous points of historical confirmation in the gospels and x which cumulatively and demonstrates that the authors of the gospels and angst regardless of who they were are close up to the facts and that they are substantially trustworthy they have reliable access to information concerning the events they talk about so for example um are are you acquainted with the argument from undesigned coincidences in the gospels and acts",
+        "characterCount": 430,
+        "tokenCount": 70,
+        "startToken": 14,
+        "endToken": 83,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-mundane-detail-limit",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-07",
+      "sectionId": "source-reliability",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Shared or compatible mundane details may arise through common stories or literary dependence and do not validate extraordinary resurrection assertions.",
+      "sourceSpan": {
+        "startEvent": 2078,
+        "endEvent": 2196
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt immediately questions Gospel dating and independence, then sustains the skeptical Elvis analogy and distinction between mundane accuracy and miracle claims.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "that a coincidence that needs to be explained when there's stories going around the notion that we need to explain which parts of the story were written down is bizarre to me because we have a story that people are telling some versions of it get written down they don't agree they they agree on some details they disagree on others there's a hypothesis about shared documentation",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 157,
+        "endToken": 223,
+        "weightedOverlap": 14,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-natural-prior-and-no-verification",
+      "qualifiedCandidateId": "chunk-004:chunk004-candidate-08",
+      "sectionId": "prior-probability",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "A natural alien-visitation hypothesis is more antecedently plausible than a violation of known natural regularities, while no resurrection has been independently and scientifically verified.",
+      "sourceSpan": {
+        "startEvent": 2961,
+        "endEvent": 3024
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty explicitly rejects McLatchie's probability assessment, develops the natural-versus-resurrection comparison, and states his own answer of zero verified resurrections.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "verified a resurrection uh what do you mean by scientifically have we shown this person was definitely dead dead for several days and then is now alive again how many times does that happen that we can verify i would say uh one that we can verify and that would be jesus and i would say zero because there's absolutely nothing about a handful of first century books claiming that it happened that provides any sort of scientific",
+        "characterCount": 428,
+        "tokenCount": 78,
+        "startToken": 281,
+        "endToken": 358,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}

@@ -1,0 +1,553 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "31",
+  "debateId": "oconnor-craig-resurrection-2023",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "pro-resurrection-best-explanation",
+      "side": "pro",
+      "description": "Establish the core historical facts, defend their evidential basis, and show that resurrection explains them better than the principal skeptical alternatives within a theistic context.",
+      "successCriteria": "The resurrection must remain the strongest overall explanation after accounting for its prior probability, the reliability of the historical premises, and competing naturalistic accounts.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-best-explanation",
+        "tier": "motion",
+        "description": "Connect the established historical facts to resurrection as their best overall explanation under ordinary historical comparison."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-historical-data",
+          "tier": "central",
+          "description": "Establish the crucifixion, burial, empty tomb, postmortem experiences, and transformed disciples as the relevant historical data."
+        },
+        {
+          "bridgeId": "pro-central-comparative-explanation",
+          "tier": "central",
+          "description": "Show that resurrection has greater explanatory power and scope than conspiracy, hallucination, and legendary-development accounts."
+        },
+        {
+          "bridgeId": "pro-central-prior-context",
+          "tier": "central",
+          "description": "Supply an independently supported theistic context in which divine resurrection is not intrinsically implausible."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-proof-standard",
+          "tier": "subsidiary",
+          "description": "Clarify that historical proof is probabilistic and depends on comparative evidential likelihood rather than mathematical demonstration."
+        },
+        {
+          "bridgeId": "pro-subsidiary-early-traditions",
+          "tier": "subsidiary",
+          "description": "Ground the appearance reports in early and independent traditions rather than solely in the dates of the completed Gospels."
+        }
+      ]
+    },
+    {
+      "routeId": "con-evidential-caution",
+      "side": "con",
+      "description": "Prevent the resurrection inference by challenging its evidential standard, prior probability, historical premises, and claimed superiority over naturalistic or developmental alternatives.",
+      "successCriteria": "Reasonable evidential caution must remain warranted if the resurrection has an unfavorable prior, the underlying reports are uncertain, or naturalistic development can explain the record.",
+      "motionBridge": {
+        "bridgeId": "con-motion-block-best-explanation",
+        "tier": "motion",
+        "description": "Show that the surrounding historical claims do not warrant resurrection as the best explanation when priors and evidential uncertainty are included."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-heightened-evidence",
+          "tier": "central",
+          "description": "Require evidence proportionate to the extraordinary character, significance, and asserted divine purpose of the resurrection claim."
+        },
+        {
+          "bridgeId": "con-central-natural-alternatives",
+          "tier": "central",
+          "description": "Preserve sincere mistake, psychological experience, or other naturalistic possibilities as competitors to divine resurrection."
+        },
+        {
+          "bridgeId": "con-central-source-reliability",
+          "tier": "central",
+          "description": "Challenge whether the appearance reports and other asserted facts are sufficiently early, independent, and reliable for the explanatory inference."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-historical-inference",
+          "tier": "subsidiary",
+          "description": "Distinguish establishing surrounding historical facts from inferring a supernatural event as their explanation."
+        },
+        {
+          "bridgeId": "con-subsidiary-legend-development",
+          "tier": "subsidiary",
+          "description": "Account for increasingly elaborate appearance narratives through development across the Gospel sequence."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "historical-proof-standard",
+      "title": "Historical proof and evidential standard",
+      "weightPercent": 25,
+      "rationale": "The motion depends on what probabilistic historical inquiry can establish and whether the resurrection's extraordinary character changes the evidence required for the inference."
+    },
+    {
+      "sectionId": "comparative-prior-probability",
+      "title": "Comparative prior probability",
+      "weightPercent": 20,
+      "rationale": "The relative plausibility of divine intervention and imperfect naturalistic alternatives determines how the historical evidence bears on the competing explanations."
+    },
+    {
+      "sectionId": "historical-data-reliability",
+      "title": "Historical data and report reliability",
+      "weightPercent": 25,
+      "rationale": "The explanatory comparison requires identifying which burial, tomb, appearance, and disciple-transformation claims are sufficiently established to demand explanation."
+    },
+    {
+      "sectionId": "naturalistic-alternatives",
+      "title": "Conspiracy and hallucination alternatives",
+      "weightPercent": 15,
+      "rationale": "The motion requires comparing resurrection with accounts that preserve disciple sincerity while explaining their convictions or the relevant reports without divine intervention."
+    },
+    {
+      "sectionId": "tradition-development",
+      "title": "Early tradition and legendary development",
+      "weightPercent": 15,
+      "rationale": "The chronology and independence of the underlying traditions matter to whether the appearance narratives preserve early testimony or reflect later elaboration."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-facts-versus-inference",
+      "qualifiedCandidateId": "chunk-001:c004",
+      "sectionId": "historical-proof-standard",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "Historical inquiry can establish facts surrounding the alleged resurrection but cannot directly prove resurrection itself, which remains an inference to the best explanation.",
+      "sourceSpan": {
+        "startEvent": 691,
+        "endEvent": 708
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "O'Connor explicitly introduces the question from his own nonbelieving perspective, and Craig begins answering immediately at the next event.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "evidence seems to point towards a resurrection of Jesus and I'm wondering if we can if we can dive into that a little bit one question is do you think it's fair to say that we can't prove historically the resurrection of Jesus that's not the kind of thing that's open to historical proof rather we can only prove historical facts surrounding the resurrection of Jesus and then ask what the best explanation",
+        "characterCount": 406,
+        "tokenCount": 73,
+        "startToken": 40,
+        "endToken": 112,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-historical-probabilistic-proof",
+      "qualifiedCandidateId": "chunk-001:c005",
+      "sectionId": "historical-proof-standard",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Showing that resurrection is the most probable historical explanation constitutes proof in the ordinary historical sense, though not mathematical demonstration.",
+      "sourceSpan": {
+        "startEvent": 709,
+        "endEvent": 724
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer directly follows O'Connor's methodological question and uses Craig's characteristic first-person qualification of what he means by historical proof.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "hypothesis is the best explanation and is more probable than not is a form of proof so it all depends on how much weight you pack into that word prove if you mean a mathematical demonstration then of course you cannot but that's simply inherent in the nature of historical inquiry but if you mean prove in the sense of provide good historical evidence for a conclusion to make it",
+        "characterCount": 379,
+        "tokenCount": 70,
+        "startToken": 22,
+        "endToken": 91,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-extraordinary-evidence-demand",
+      "qualifiedCandidateId": "chunk-001:c006",
+      "sectionId": "historical-proof-standard",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "The extraordinary nature, moral importance, and asserted divine purpose of resurrection justify demanding substantially stronger evidence than ordinary historical claims require.",
+      "sourceSpan": {
+        "startEvent": 725,
+        "endEvent": 755
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "O'Connor presents a sustained skeptical question comparing the available sources and ordinary historical standards before Craig explicitly registers disagreement.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "this wealth of evidence you know if you compare the the attestations to Jesus's Ministry to any other historical figure of the time it dwarfs it do you think that because of the radical nature of the claim being made here not just involving the Miracles of Jesus's Ministry and the resurrection but also the the moral importance of this story and the fact that it's supposed to be",
+        "characterCount": 380,
+        "tokenCount": 69,
+        "startToken": 92,
+        "endToken": 160,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-likelihood-ratio-standard",
+      "qualifiedCandidateId": "chunk-001:c009",
+      "sectionId": "historical-proof-standard",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Ordinary evidence can establish an extraordinary event when that evidence is much more probable if the event occurred than if it did not.",
+      "sourceSpan": {
+        "startEvent": 816,
+        "endEvent": 838
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig answers O'Connor's challenge immediately and presents a continuous first-person probability argument until shifting to pragmatic considerations.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "if the evidence on the hypothesis is much more probable than the evidence would be if the hypothesis were false and so it's just I think demonstrably wrong to M this slogan that extraordinary events require extraordinary evidence you you can have ordinary evidence that will be sufficient to establish an extraordinary event what's key will be the ratio between the probability of",
+        "characterCount": 380,
+        "tokenCount": 63,
+        "startToken": 44,
+        "endToken": 106,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-atheistic-prior-objection",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-01",
+      "sectionId": "comparative-prior-probability",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Even weak naturalistic alternatives may remain more credible than resurrection because divine raising of the dead has an exceptionally unfavorable prior probability for an atheist.",
+      "sourceSpan": {
+        "startEvent": 904,
+        "endEvent": 945
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The conversational handoff, first-person skeptical framing, and subsequent direct answer consistently identify Alex O'Connor as the speaker.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "put to death as the disciples were to die for something they knew to be true there are various reasons why it might be a bad explanation that they were all lying but when compared for an atheist at least against an explanation that says that there was some divine intervention that led to a a man actually Rising again from the dead even though alternative explanations do I grant",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 123,
+        "endToken": 192,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-theistic-prior-context",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-02",
+      "sectionId": "comparative-prior-probability",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Miracles are not intrinsically implausible if God exists, so resurrection evidence should be assessed within the theistic context supplied by independent arguments for a creator.",
+      "sourceSpan": {
+        "startEvent": 946,
+        "endEvent": 968
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The immediate answer to O'Connor's objection, first-person description of apologetic strategy, and ensuing host prompt identify William Lane Craig.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "is anything implausible about miracles if God exists and so in presenting a case for Christianity I don't lead with the evidence for the resurrection I lead with those other argu arguments that give you a theistic context and if there is a God who created and designed the universe uh and brought it into existence then the idea that he might raise someone from the dead is not so",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 5,
+        "endToken": 74,
+        "weightedOverlap": 38,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-five-facts-inference",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-03",
+      "sectionId": "historical-data-reliability",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Crucifixion, burial, the empty tomb, postmortem appearances, and transformed disciples are widely accepted historical facts best explained by resurrection under standard explanatory criteria.",
+      "sourceSpan": {
+        "startEvent": 978,
+        "endEvent": 1013
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "O'Connor explicitly requests Craig's principal evidence, and the organized first-person answer is continuous with William Lane Craig's identified turn.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "those are the facts of the case and the wide majority of Scholars agree with all five of those points then the question is how do you best explain them and I can't think of a better explanation than the one that the or original disciples gave when you assess these explanations in terms of the standard criteria for being a good historical explanation things like explanatory power",
+        "characterCount": 381,
+        "tokenCount": 68,
+        "startToken": 136,
+        "endToken": 203,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-conspiracy-objection",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-04",
+      "sectionId": "naturalistic-alternatives",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "A conspiracy is implausible because the earliest disciples sincerely endured suffering for their proclamation and would not have invented an isolated resurrection contrary to first-century Jewish expectations.",
+      "sourceSpan": {
+        "startEvent": 1015,
+        "endEvent": 1074
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer follows O'Connor's question about fabrication and uses Craig's previously established historical and theological argumentative framework.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "themselves made up uh and so I think that it's very very plausible that these earliest disciples sincerely believed this moreover if they were making it up they would never have invented something like the resurrection of Jesus because as I said it is completely contrary to every predisposition they had in for Century Judaism in Judaism the resurrection was never of an isolated",
+        "characterCount": 380,
+        "tokenCount": 64,
+        "startToken": 98,
+        "endToken": 161,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-sincere-mistake-hallucination",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-05",
+      "sectionId": "naturalistic-alternatives",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "The disciples could have sincerely died for a mistaken belief, with grief-induced hallucination providing a natural explanation for their conviction that Jesus had risen.",
+      "sourceSpan": {
+        "startEvent": 1104,
+        "endEvent": 1111
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage introduces a numbered skeptical alternative immediately before Craig evaluates it, clearly marking Alex O'Connor's questioning turn.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "for things they know to be false but people do die for things that they mistakenly think are true but are in fact false so here's Theory number two what if the disciples were simply mistaken in their belief that Jesus had risen from the dead perhaps a grief induced to lucif ation or something of",
+        "characterCount": 296,
+        "tokenCount": 56,
+        "startToken": 0,
+        "endToken": 55,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-hallucination-scope-objection",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-06",
+      "sectionId": "naturalistic-alternatives",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Hallucination neither explains why Jewish disciples inferred an isolated resurrection rather than a heavenly vision nor accounts for the empty tomb.",
+      "sourceSpan": {
+        "startEvent": 1112,
+        "endEvent": 1167
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The explicit evaluation of the hallucination theory begins as a direct answer to O'Connor and continues in William Lane Craig's characteristic explanatory turn.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "explanatory power to account for the belief in the resurrection moreover the hallucination hypothesis doesn't say anything to explain the historicity of the empty tomb the fact of Jesus empty tomb was a publicly inspectable fact in Jerusalem which anyone could verify including the enemies of the disciples uh and therefore in order to explain the empty tomb you've got to conjoin",
+        "characterCount": 380,
+        "tokenCount": 62,
+        "startToken": 213,
+        "endToken": 274,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-appearance-report-reliability",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-07",
+      "sectionId": "historical-data-reliability",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Group appearances have sparse and uneven attestation, and the earliest Gospel narrates no post-resurrection appearance, weakening confidence in the facts requiring explanation.",
+      "sourceSpan": {
+        "startEvent": 1186,
+        "endEvent": 1216
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage shifts into a sustained skeptical question about source reliability, followed immediately by Craig's answer, identifying Alex O'Connor's turn.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "appear in some of the gospels not others indeed there are no uh post-resurrection appearances at all in the earliest gospel which is thought to be the source for mat Matthew and Luke as well uh it seems a little bit kind of spotty and people might ask okay sure if these group appearances happened you'd be hardpressed to explain them as a hallucination but what if the reports are",
+        "characterCount": 381,
+        "tokenCount": 71,
+        "startToken": 145,
+        "endToken": 215,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-early-multiple-attestation",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-08",
+      "sectionId": "historical-data-reliability",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Postmortem experiences are supported by early Pauline tradition, multiple independent Gospel attestations, and Mark's foreshadowing of appearances, while the core resurrection data are broadly accepted.",
+      "sourceSpan": {
+        "startEvent": 1217,
+        "endEvent": 1301
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer explicitly returns to Craig's two-step method and continues through detailed historical claims until O'Connor begins the next objection.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "even Mark knows of them but simply foreshadows them and doesn't narrate them uh and so Alex uh I'm not kidding I can't think of any historical Jesus scholar who denies that the original disciples had these postmortem appearances of Jesus even the skeptical critic John Dominic Crossen when I debated him on the resurrection of Jesus I thought perhaps he denied the appearances but",
+        "characterCount": 380,
+        "tokenCount": 65,
+        "startToken": 402,
+        "endToken": 466,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-gospel-legend-development",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-09",
+      "sectionId": "tradition-development",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "The sequence from Mark's prediction through Matthew's doubted Galilean appearance to the more numerous episodes in later Gospels gives reason to suspect legendary development.",
+      "sourceSpan": {
+        "startEvent": 1302,
+        "endEvent": 1354
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The skeptical chronological comparison begins after Craig's answer and ends where Craig expressly acknowledges the suspicion, marking Alex O'Connor's complete turn.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "in other words the further away we get on the timeline from the actual event itself the more fanciful and and the more frequent uh these appearances seem to be recounted is this not can you understand the suspicion upon someone reading the gospels in their historical order might have in thinking that we have this development of what they may suspect as a myth over time yeah I I",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 305,
+        "endToken": 374,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-underlying-early-traditions",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-10",
+      "sectionId": "tradition-development",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "The dates of the completed Gospels do not date their sources, and independent early traditions behind the Gospels and Paul make late legendary development unreasonable.",
+      "sourceSpan": {
+        "startEvent": 1355,
+        "endEvent": 1400
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig begins by conceding that he understands the suspicion and then delivers a continuous source-critical response until O'Connor resumes speaking.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "multiple independent traditions of these postmortem appearances of Jesus and it won't do to just write these off as legendary or mythical because they go right back to the earliest sources such as Paul's tradition that he hands on in 1 Corinthians 15 which goes back to within 5 years after Jesus death the premar and passion story of Jesus which foreshadows his appearance in Galilee uh and is an extremely early",
+        "characterCount": 413,
+        "tokenCount": 72,
+        "startToken": 128,
+        "endToken": 199,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}
