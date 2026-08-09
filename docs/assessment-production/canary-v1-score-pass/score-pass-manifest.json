@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0-production-canary-single-score-pass-manifest",
+  "protocolId": "assessment-production-canary-v1-adjudicated-consensus",
+  "status": "frozen-production-canary-single-deterministic-score-pass",
+  "frozenAt": "2026-08-09T01:48:37.000Z",
+  "checkpointCommit": "71429bbfe8838cc9570869604c9445991ed319d6",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "inputs": {
+    "finalLedger": "docs/assessment-production/canary-v1-final-ledger/final-ledger.json",
+    "finalLedgerAnalysis": "docs/assessment-production/canary-v1-final-ledger/analysis.json",
+    "productionReference": "src/data/debates.js",
+    "debates": 10,
+    "finalSides": 20
+  },
+  "scoringPolicy": {
+    "passes": 1,
+    "repositoryDerivedOnly": true,
+    "modelScoringAllowed": false,
+    "scoresDerivedAfterAdjudicationOnly": true,
+    "initialPassScoresDerivedInSamePostAdjudicationPassForStabilityOnly": true,
+    "formulaChangesAllowed": false,
+    "postResultTuningAllowed": false,
+    "automaticRerunAllowed": false
+  },
+  "acceptanceRule": {
+    "prospective": true,
+    "productionScoresDiagnosticOnly": true,
+    "agreedInitialWinnerMustBePreserved": true,
+    "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+    "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+    "maximumOutsideInitialRangeMaximum": 3
+  },
+  "artifacts": {
+    "calculatedScores": "docs/assessment-production/canary-v1-score-pass/calculated-scores.json",
+    "analysis": "docs/assessment-production/canary-v1-score-pass/analysis.json"
+  },
+  "authorization": {
+    "scoreDerivation": true,
+    "scorePassesMaximum": 1,
+    "scoreAnalysis": false,
+    "publicationPacketPreparation": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "sourceHashes": {
+    "docs/assessment-production/canary-v1-final-ledger/final-ledger.json": "3840154541d129b4a103f4a69fb0380a20eb11f3d421f156bfaa16e4c3a7d9b0",
+    "docs/assessment-production/canary-v1-final-ledger/analysis.json": "9835b458069dd2c3bd8b8ca2e8620b9fcabea12460a7a8b8e8bccd297f937008",
+    "src/data/debates.js": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6",
+    "docs/reassessment-rubric-v2.1.md": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/assessment-production-workflow.md": "64a66f21d38aec102256ffc4965a25b47d85341fe7e1610974df9f6e3a864bef",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v4220-source-span-rendering.mjs": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+    "scripts/lib/assessment-production-canary-final-ledger.mjs": "db183e04d36b2a3904724482fe206f2fd42abfe925e4724f67301d4915490984",
+    "scripts/lib/assessment-production-canary-score-gate.mjs": "70ff359ff603da3d17520472885d16b702a7da98496828870b6951f221d74345",
+    "scripts/test-assessment-production-canary-score-gate.mjs": "43b0fb2330c36d4a2659ec6d7ced03f654dda6ebfae26899703c783dd7a9233d",
+    "scripts/preregister-assessment-production-canary-score-pass.mjs": "e029cee2e2e796ed5ce62837e02640e7c990a422f34070defdb679c773318b42",
+    "scripts/derive-assessment-production-canary-scores.mjs": "e22f3802534b47be1e1abcfb9f92226ec04e1d65b3dae44f28616dc1c93bff53",
+    "scripts/analyze-assessment-production-canary-scores.mjs": "a84ef44bc6ce3617827132bde11d2436ed897cf13ae5bc90b889b3675b2e4f2d"
+  }
+}
