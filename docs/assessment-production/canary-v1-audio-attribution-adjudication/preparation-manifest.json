@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0-production-canary-audio-attribution-adjudication-preparation",
+  "protocolId": "assessment-production-canary-v1-audio-attribution-adjudication",
+  "status": "prepared-one-production-canary-disputed-audio-attribution",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "inputs": {
+    "workflow": "docs/assessment-production-canary-audio-attribution-adjudication-workflow.md",
+    "manual": "docs/assessment-production/canary-v1-audio-attribution-adjudication/manual.md",
+    "schema": "docs/assessment-production/canary-v1-audio-attribution-adjudication/schema.json",
+    "packet": "docs/assessment-production/canary-v1-audio-attribution-adjudication/packet.json",
+    "rawDiarizedTranscripts": [
+      "output/transcribe/assessment-production-canary-v1-audio-verification/debate-05/transcripts/pro-move-07.transcript.json"
+    ],
+    "diagnosis": "docs/assessment-production/canary-v1-audio-verification/failure-diagnosis.json"
+  },
+  "sourceHashes": {
+    "docs/assessment-production/canary-v1-audio-verification/failure-diagnosis.json": "c475c202706579920ab8fefa057ae4a8e4d08166e72bd9343ba987083b9b1675",
+    "docs/assessment-production/manifest-v1.json": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec",
+    "output/transcribe/assessment-production-canary-v1-audio-verification/debate-05/transcripts/pro-move-07.transcript.json": "9b54923073f91353cbd8598556359b13be5953e6a7084815702ff2d73f5e9f32"
+  },
+  "output": "docs/assessment-production/canary-v1-audio-attribution-adjudication/output.json",
+  "moves": [
+    {
+      "moveId": "pro-move-07",
+      "expectedSpeaker": "Sye Ten Bruggencate",
+      "transcriptSha256": "9b54923073f91353cbd8598556359b13be5953e6a7084815702ff2d73f5e9f32",
+      "segments": 122
+    }
+  ],
+  "authorization": {
+    "modelExecution": false,
+    "deterministicValidation": true,
+    "paidTranscription": false,
+    "retry": false,
+    "disputeAdjudicationPacketPreparation": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  }
+}

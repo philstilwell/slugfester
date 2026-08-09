@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0-production-canary-audio-attribution-adjudication-packet",
+  "protocolId": "assessment-production-canary-v1-audio-attribution-adjudication",
+  "debateNumber": "05",
+  "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+  "motion": "Is belief in God reasonable, and can truth, logic, knowledge, induction, and evidence be accounted for without Christian revelation?",
+  "sides": {
+    "pro": {
+      "label": "Presuppositional theist",
+      "speakers": [
+        "Sye Ten Bruggencate"
+      ]
+    },
+    "con": {
+      "label": "Skeptical atheist",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "moves": [
+    {
+      "moveId": "pro-move-07",
+      "expectedSpeaker": "Sye Ten Bruggencate",
+      "proposition": "Evidence is intelligible only when one begins with God, who can reveal himself so certainly that every person knows he exists despite contrary professions.",
+      "sourceSpan": {
+        "startEvent": 1310,
+        "endEvent": 1438
+      },
+      "deterministicFailure": {
+        "status": "unresolved",
+        "expectedSpeaker": "Sye Ten Bruggencate",
+        "fullClipExcerptRecall": 1,
+        "expectedSpeakerExcerptRecall": 0.8589743589743589,
+        "highestOtherSpeaker": "Matt Dillahunty",
+        "highestOtherSpeakerExcerptRecall": 0.8717948717948718,
+        "expectedSpeakerRecallMargin": -0.012820512820512886,
+        "expectedSpeakerDurationSeconds": 96.65,
+        "checks": {
+          "fullClipExcerptRecovered": true,
+          "expectedSpeakerExcerptRecovered": true,
+          "expectedSpeakerRecallDistinct": false,
+          "expectedSpeakerDurationSufficient": true
+        },
+        "speakerEvidence": [
+          {
+            "speaker": "Matt Dillahunty",
+            "segmentCount": 61,
+            "durationSeconds": 132.85,
+            "wordCount": 537,
+            "excerptRecall": 0.8717948717948718
+          },
+          {
+            "speaker": "Sye Ten Bruggencate",
+            "segmentCount": 58,
+            "durationSeconds": 96.65,
+            "wordCount": 453,
+            "excerptRecall": 0.8589743589743589
+          },
+          {
+            "speaker": "A",
+            "segmentCount": 3,
+            "durationSeconds": 2.95,
+            "wordCount": 11,
+            "excerptRecall": 0.05128205128205128
+          }
+        ]
+      },
+      "diarizedTranscriptPath": "output/transcribe/assessment-production-canary-v1-audio-verification/debate-05/transcripts/pro-move-07.transcript.json",
+      "diarizedTranscriptSha256": "9b54923073f91353cbd8598556359b13be5953e6a7084815702ff2d73f5e9f32",
+      "diarizedTranscriptDurationSeconds": 255.32,
+      "diarizedSegmentCount": 122
+    }
+  ],
+  "evidenceBoundary": {
+    "rawAudioDerivedDiarizedTranscriptRequired": true,
+    "knownSpeakerReferencesAlreadyApplied": true,
+    "deterministicFailureVisible": true,
+    "lockedPropositionAndSpanVisible": true,
+    "ratingsUnavailable": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "decisionRule": {
+    "decideOnlyExpectedSpeakerAuthorshipOfCoreProposition": true,
+    "mixedSpeakerSpanMayStillVerify": true,
+    "verifiedRequiresHighConfidence": true,
+    "verifiedRequiresExpectedSpeakerSegmentEvidence": true,
+    "unresolvedBlocksDownstream": true,
+    "thresholdRelaxationAuthorized": false,
+    "speakerRelabelingAuthorized": false,
+    "manualOverrideAuthorized": false
+  },
+  "outputIdentity": {
+    "schemaVersion": "1.0-production-canary-audio-attribution-adjudication-output",
+    "protocolId": "assessment-production-canary-v1-audio-attribution-adjudication"
+  }
+}
