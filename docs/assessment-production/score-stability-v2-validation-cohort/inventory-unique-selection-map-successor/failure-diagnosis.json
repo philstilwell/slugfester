@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "1.0-score-stability-v2-unique-selection-map-inventory-successor-failure-diagnosis",
+  "protocolId": "assessment-production-score-stability-v2-fresh-validation-unique-selection-map-inventory-successor",
+  "status": "unique-selection-map-successor-gate-failed-section-side-cardinality-confirmed-no-further-action-authorized",
+  "diagnosedAt": "2026-08-09T15:31:28Z",
+  "checkpointCommit": "6d5506a5df045344735056b47615c38934187040",
+  "developmentValidationOnly": true,
+  "productionCanary": false,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "gateDisposition": {
+    "successorExecution": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/model-execution.json",
+    "successorExecutionSha256": "5d2b8ede5e7240885bac641118228a228da0e4373c760bc2869160543db4c9b1",
+    "status": "v2-validation-score-blind-inventory-unique-selection-map-successor-complete-with-failure",
+    "contextsPlanned": 10,
+    "contextsAttempted": 3,
+    "contextsUnattempted": 7,
+    "validContexts": 2,
+    "invalidContexts": 1,
+    "retries": 0,
+    "acceptedAsPassed": false,
+    "predecessorTimeoutGatePreservedFailed": true,
+    "columnarRecoveryGatePreservedFailed": true,
+    "uniqueSelectionSuccessorGatePreservedFailed": true,
+    "currentCanaryReclassified": false,
+    "proposedPolicyPromoted": false
+  },
+  "failure": {
+    "contextIndex": 2,
+    "debateNumber": "31",
+    "status": "output-validation-failed",
+    "classification": "schema-conforming-candidate-unique-map-with-pro-side-overselection-and-position-collision",
+    "modelTransportSucceeded": true,
+    "timedOut": false,
+    "proposalPreserved": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/inventory-proposals/debate-31.json",
+    "proposalSha256": "926797b46d5ac1e4e5c8bca0cf32f56c3112115975ec8f5be304ddaa9a8c677d",
+    "deterministicValidationPassed": false,
+    "deterministicValidationMessage": "section-naturalistic-alternatives/proSelections: requires unique positions for one or two selections",
+    "semanticCorrectionPerformed": false,
+    "retryPerformed": false
+  },
+  "sectionSideEvidence": {
+    "sectionId": "section-naturalistic-alternatives",
+    "side": "pro",
+    "selectedCount": 3,
+    "allowedSelectedCount": [
+      1,
+      2
+    ],
+    "orderWithinSideValues": [
+      1,
+      2,
+      2
+    ],
+    "uniqueOrderWithinSideValues": 2,
+    "selections": [
+      {
+        "candidateId": "chunk-002:chunk-002-candidate-04",
+        "side": "pro",
+        "sectionId": "section-naturalistic-alternatives",
+        "orderWithinSide": 1,
+        "moveId": "move-pro-conspiracy-objection",
+        "moveKind": "constructive",
+        "proposition": "A conspiracy explanation is implausible because the earliest disciples sincerely endured suffering for their proclamation and would not have invented an individual resurrection alien to first-century Jewish expectations."
+      },
+      {
+        "candidateId": "chunk-002:chunk-002-candidate-06",
+        "side": "pro",
+        "sectionId": "section-naturalistic-alternatives",
+        "orderWithinSide": 2,
+        "moveId": "move-pro-hallucination-scope",
+        "moveKind": "reply",
+        "proposition": "Hallucination lacks explanatory power because Jewish expectations would produce visions of Jesus in heaven rather than belief in an isolated resurrection, and it does not explain the empty tomb."
+      },
+      {
+        "candidateId": "chunk-002:chunk-002-candidate-10",
+        "side": "pro",
+        "sectionId": "section-naturalistic-alternatives",
+        "orderWithinSide": 2,
+        "moveId": "move-con-tradition-dating",
+        "moveKind": "reply",
+        "proposition": "Dating the completed Gospels does not date their underlying traditions; independent early sources behind the Gospels and Paul make late legendary development unreasonable."
+      }
+    ],
+    "repositorySideOfConLabeledCandidate": "pro",
+    "modelMoveIdForConLabeledCandidate": "move-con-tradition-dating",
+    "modelAuditClaimedEverySelectedCandidateUsedOnce": true,
+    "candidateIdentityAuditAccurate": true
+  },
+  "designFinding": {
+    "uniqueSelectionMapPreventedDuplicateCandidateIdentity": true,
+    "everyCandidateKeyPresentExactlyOnce": true,
+    "duplicateCandidateSelectionRepresentable": false,
+    "candidateSideAvailableInLosslessTransport": true,
+    "flatCandidatePropertyTopologyEncodedCandidateSide": false,
+    "schemaRestrictedEachOrderValueToOneOrTwo": true,
+    "schemaEnforcedSectionSideCardinalityAcrossCandidateProperties": false,
+    "schemaEnforcedUniqueOrderAcrossCandidateProperties": false,
+    "deterministicProjectionCorrectlyRestoredCandidateSide": true,
+    "deterministicProjectionCorrectlyRejectedInvalidGroup": true,
+    "changingOnlyTheRepeatedOrderWouldStillLeaveThreeProSelections": true,
+    "removingOrRelocatingASelectionWouldBeSemanticRepair": true,
+    "automaticRepairPermitted": false
+  },
+  "possibleFutureProtocolDirection": {
+    "authorized": false,
+    "description": "A separately authorized development stage would need to expose repository-owned candidate side in the output topology, remove model-authored within-side ordering where repository chronology can derive it, and prove section-side cardinality behavior without weakening the one-or-two-per-side rule.",
+    "requirements": [
+      "new versioned output contract and deterministic projection",
+      "model-free retired-artifact regression before any fresh evidence",
+      "proof that duplicate candidate identity remains unrepresentable",
+      "proof that invalid section-side cardinality cannot pass deterministic acceptance",
+      "new frozen full-ten execution manifest",
+      "no reuse of outputs from any failed gate",
+      "one attempt per context and no retry",
+      "explicit user authorization"
+    ]
+  },
+  "sourceHashes": {
+    "docs/assessment-production-canary-inventory-execution-workflow.md": "654ad54deaafa305bfbbae572d730ff7a0d71b9257e87747bd42ede863ab59ff",
+    "docs/assessment-production-workflow.md": "64a66f21d38aec102256ffc4965a25b47d85341fe7e1610974df9f6e3a864bef",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/candidate-transport/debate-31.json": "5732585598542d37eac7bec3e5150a499b508a08b9660468480feff4316fecf7",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-development/schemas/debate-31.schema.json": "8b37183e6059d61d31088913541f2e416659ec5c1d76adc653c5800168a834f6",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/execution-manifest.json": "e9e89fe7ae27ee0a58213f15d8c727adeafd324e773b8674df6758f34ed0c70e",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/inventory-proposals/debate-31.json": "926797b46d5ac1e4e5c8bca0cf32f56c3112115975ec8f5be304ddaa9a8c677d",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/model-execution.json": "5d2b8ede5e7240885bac641118228a228da0e4373c760bc2869160543db4c9b1",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-unique-selection-map-successor/preparation-manifest.json": "99fe7b9f368806a01db128536c551d6b7adc4a0fa6957c3392ca0c4afcb077c3",
+    "scripts/diagnose-assessment-production-score-stability-v2-inventory-unique-selection-map-successor-failure.mjs": "7f4d308fd4c50aba3758afcb1d1d7ef3ca100b47875083a07ca7a2fa7e210008",
+    "scripts/lib/assessment-production-score-stability-v2-inventory-unique-selection-map-successor-stage.mjs": "9e3fbcc30c91300361240bc4e4aa7e07c65e7e7db7d8f6c84639aa53425c30cb",
+    "scripts/lib/assessment-production-score-stability-v2-inventory-unique-selection-map.mjs": "858cccc3c652678cc20327b48ad6cb88cd629d8458abf330444967d25b82e106",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/test-assessment-production-score-stability-v2-inventory-unique-selection-map-successor-failure-diagnosis.mjs": "ec5da9e33c0366fc0ec2c9dc98072ad6b276298bf0a8db3d95434ca8acd88228"
+  },
+  "totals": {
+    "modelContextsThisDiagnosis": 0,
+    "audioCalls": 0,
+    "transcriptionCalls": 0,
+    "retries": 0,
+    "semanticCorrections": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "retry": false,
+    "semanticCorrection": false,
+    "successorProtocolDevelopment": false,
+    "successorModelExecution": false,
+    "deterministicPassingAnalysis": false,
+    "independentJudgmentPacketPreparation": false,
+    "independentJudgmentModelExecution": false,
+    "paidTranscription": false,
+    "audioVerification": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationPreparation": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "none-without-explicit-user-authorization"
+}
