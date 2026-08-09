@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0-production-canary-final-ledger-analysis",
+  "protocolId": "assessment-production-canary-v1-adjudicated-consensus",
+  "status": "production-canary-deterministic-final-ledger-gate-passed",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "validation": {
+    "status": "passed",
+    "debates": 10,
+    "disputedMoves": 178,
+    "candidateSelections": 504,
+    "roundedMeanMerges": 392,
+    "dependencyMeanMergesSuppressed": 0,
+    "audioVerifiedMoves": 4,
+    "calculatedScores": 0,
+    "scoreDerivationAuthorized": true
+  },
+  "integrity": {
+    "bothPassesRevalidatedAgainstFullLocalTranscriptChain": true,
+    "disagreementsReplayedExactly": true,
+    "candidateAnonymizationAndProvenanceReplayedExactly": true,
+    "adjudicationSelectionsReplayedExactly": true,
+    "finalRawJudgmentsRevalidatedAgainstFullSourceChain": true,
+    "localTranscriptFilesHashLocked": true,
+    "audioVerificationAndRawDiarizedTranscriptHashesLockedWhereRequired": true,
+    "combinedAudioAttributionResolutionReplayed": true,
+    "modelScoresPresent": false,
+    "repositoryScoresPresent": false
+  },
+  "totals": {
+    "debates": 10,
+    "disputedMoves": 178,
+    "candidateSelections": 504,
+    "roundedMeanPopulation": 392,
+    "dependencyMeanMergesSuppressed": 0,
+    "audioVerifiedMoves": 4,
+    "modelContexts": 0,
+    "retries": 0,
+    "calculatedScores": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsdThisStage": 0
+  },
+  "authorization": {
+    "scoreDerivation": true,
+    "scorePassesMaximum": 1,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  }
+}
