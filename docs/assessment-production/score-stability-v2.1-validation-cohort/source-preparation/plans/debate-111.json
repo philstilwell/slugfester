@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2936,
+  "ledgerBytes": 167527,
+  "ledgerSha256": "2b17f296beda0f9daec38a3a5691e3dc0cee33315605fdcc4c22f1ccebfc8214",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50527,
+      "contextSha256": "18b7010fd7bd4cf5241403e225221398b63cf28ee5f66260a3ed427d4e88d8b0"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51860,
+      "contextSha256": "20fb8585c0943c3f29c03969f25b013246c5e56bf1544ef48d11dfd1c4b46bb9"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 51882,
+      "contextSha256": "4d083fd3a0c5dd01aa6fb4a92db6b4667f014bc0ff1e2c5b47cfe4bc52729f99"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2935,
+      "coreEvents": 436,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2935,
+      "contextEvents": 476,
+      "contextBytes": 27113,
+      "contextSha256": "53f44aa5a3295d83ea073b8bafad346e9d107ee65d68be5649bd0b64388c32e5"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2935,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "111",
+  "debateId": "tour-farina-origin-life-cluelessness-2023",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-discovery"
+}

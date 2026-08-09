@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1-validation-score-blind-source-packet",
+  "protocolId": "assessment-production-score-stability-v2.1-fresh-validation-source-preparation",
+  "debateNumber": "69",
+  "debateId": "winger-dillahunty-resurrection-unreasonable-2019",
+  "motion": "Is belief in Jesus' resurrection reasonable given the historical claims, testimonial sources, rival explanations, and evidential burden for supernatural causation?",
+  "sides": {
+    "pro": {
+      "label": "Resurrection defense",
+      "speakers": [
+        "Mike Winger"
+      ]
+    },
+    "con": {
+      "label": "Skeptical burden test",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 7070,
+  "eventCount": 3621,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/Z2FGgkubhZM/transcript.txt",
+    "transcriptSha256": "7d1e6eadea23cdf2ba29a36698557e56cf88f1e250db71b1b94de5a09a71c236",
+    "eventsPath": ".assessment-cache/captions/Z2FGgkubhZM/events.json",
+    "eventsSha256": "941e1ae0222952d24c83d6a8ef26e83c49be5c95c1de28036db7ba89f6ea481a",
+    "localManifestPath": ".assessment-cache/captions/Z2FGgkubhZM/manifest.json",
+    "localManifestSha256": "87510006cb61336620b1dc8cf6668b9fa0f3a127e979a675bef7b35413441d1d"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2.1-fresh-validation/debate-69.jsonl",
+    "sourceLedgerSha256": "4358813ea790052f549c969632c486c6302a6868119cb68c3f5ee2fb93bd331a",
+    "sourceLedgerBytes": 205223,
+    "sourceLedgerEventCount": 3621,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2.1-validation-cohort/source-preparation/plans/debate-69.json",
+    "partitionPlanSha256": "e178022c0967e74cdd61c7bc4908cd8ddb5d69a9c34a7e60307e928e7e24593b",
+    "partitionChunks": 5
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "candidateEndContextBoundaryEnforcedByOutputSchema": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "developmentValidationOnly": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

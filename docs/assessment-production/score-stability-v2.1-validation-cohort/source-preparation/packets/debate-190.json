@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1-validation-score-blind-source-packet",
+  "protocolId": "assessment-production-score-stability-v2.1-fresh-validation-source-preparation",
+  "debateNumber": "190",
+  "debateId": "huemer-oppy-souls-personal-identity-2022",
+  "motion": "Do conscious persons possess nonphysical mental substances that can survive bodily death?",
+  "sides": {
+    "pro": {
+      "label": "Nonphysical souls exist",
+      "speakers": [
+        "Michael Huemer"
+      ]
+    },
+    "con": {
+      "label": "Persons are natural organisms",
+      "speakers": [
+        "Graham Oppy"
+      ]
+    }
+  },
+  "durationSeconds": 7539,
+  "eventCount": 3704,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/gxSi0htNihk/transcript.txt",
+    "transcriptSha256": "8ad124154675eef151672bd438520af0a514ddea61f822ee18534959957cee3d",
+    "eventsPath": ".assessment-cache/captions/gxSi0htNihk/events.json",
+    "eventsSha256": "fc752494e233eff522021e36dcba0a3f2efdab7feab46649cd356d155d974272",
+    "localManifestPath": ".assessment-cache/captions/gxSi0htNihk/manifest.json",
+    "localManifestSha256": "29f9d3bd89a96dd9b8e8654d2f7aa2f8ead528526fefa2cbc4f2b5e6dd7b64de"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2.1-fresh-validation/debate-190.jsonl",
+    "sourceLedgerSha256": "80e76cc215456783381c7d8ff5496cad74e151cad5cbba31d55b837a9a69314b",
+    "sourceLedgerBytes": 190681,
+    "sourceLedgerEventCount": 3704,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2.1-validation-cohort/source-preparation/plans/debate-190.json",
+    "partitionPlanSha256": "a5812a2bd86a58ce456168abcbba3ffef2d2f702854a5bfa7cd5fa44a1d21d47",
+    "partitionChunks": 5
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "candidateEndContextBoundaryEnforcedByOutputSchema": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "developmentValidationOnly": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

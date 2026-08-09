@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3621,
+  "ledgerBytes": 205223,
+  "ledgerSha256": "4358813ea790052f549c969632c486c6302a6868119cb68c3f5ee2fb93bd331a",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50028,
+      "contextSha256": "adeacf4e895cd9aad3a3852b92b9c7559401e4e6cab40116d1602c189144d165"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51271,
+      "contextSha256": "0107d910e76da1d673ffe7edc4c1cd102494966830128c5e1989ae3786ef70a8"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52104,
+      "contextSha256": "be0060e73851c3fff9b41b1d4e570afe7216c8cae9dd42ac76569b69fb570e7f"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 50977,
+      "contextSha256": "b6e4dc68999ed86187308bb00e05895839d4f8ac0683cae87b7de0fb06a4b364"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3620,
+      "coreEvents": 301,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3620,
+      "contextEvents": 341,
+      "contextBytes": 19057,
+      "contextSha256": "eaf9a581b630804a8733a619edba828ad917956568bef53269a43417642a65c9"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3620,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "69",
+  "debateId": "winger-dillahunty-resurrection-unreasonable-2019",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-discovery"
+}

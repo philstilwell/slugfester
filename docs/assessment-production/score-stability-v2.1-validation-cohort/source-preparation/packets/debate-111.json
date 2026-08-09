@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1-validation-score-blind-source-packet",
+  "protocolId": "assessment-production-score-stability-v2.1-fresh-validation-source-preparation",
+  "debateNumber": "111",
+  "debateId": "tour-farina-origin-life-cluelessness-2023",
+  "motion": "Are scientists currently clueless about the origin of life, or do prebiotic chemistry, ribozyme research, and systems chemistry already provide viable pathways toward abiogenesis?",
+  "sides": {
+    "pro": {
+      "label": "Cluelessness thesis",
+      "speakers": [
+        "James Tour"
+      ]
+    },
+    "con": {
+      "label": "Origin-of-life progress",
+      "speakers": [
+        "Dave Farina"
+      ]
+    }
+  },
+  "durationSeconds": 7215,
+  "eventCount": 2936,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/KvGdllx9pJU/transcript.txt",
+    "transcriptSha256": "221865bd15220d07ac1f74ea557a5c6ff1e36c79e412e082901d159c5e375346",
+    "eventsPath": ".assessment-cache/captions/KvGdllx9pJU/events.json",
+    "eventsSha256": "c94600c24530d29d3a8d792ac7c49faf031f2d8192900d3a2b8e53c236a544c4",
+    "localManifestPath": ".assessment-cache/captions/KvGdllx9pJU/manifest.json",
+    "localManifestSha256": "a1e84d6af97c9b327cd658070a8e33358acedd4876d624a934b8a8574dd958e9"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2.1-fresh-validation/debate-111.jsonl",
+    "sourceLedgerSha256": "2b17f296beda0f9daec38a3a5691e3dc0cee33315605fdcc4c22f1ccebfc8214",
+    "sourceLedgerBytes": 167527,
+    "sourceLedgerEventCount": 2936,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2.1-validation-cohort/source-preparation/plans/debate-111.json",
+    "partitionPlanSha256": "4fd0791a5323b9626aedb22ac9e3c7d783f3ffa3d91b34703d192ebb9b80ea74",
+    "partitionChunks": 4
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "candidateEndContextBoundaryEnforcedByOutputSchema": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "developmentValidationOnly": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

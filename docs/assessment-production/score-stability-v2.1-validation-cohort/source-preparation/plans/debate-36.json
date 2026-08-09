@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2536,
+  "ledgerBytes": 147709,
+  "ledgerSha256": "2d3ab7d8184fed3e352081134470d128fa158c1c06460515e52b6656c89cd23c",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51345,
+      "contextSha256": "84b2b65e9d8a53264b0ca65a540511c896b08420f9b263f66e64d1d27b94fbea"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52839,
+      "contextSha256": "a01b91a538d331775f9a17e3d6ef49b95fbdefbf20296b1a3ca609eb1a549873"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2535,
+      "coreEvents": 856,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2535,
+      "contextEvents": 896,
+      "contextBytes": 52964,
+      "contextSha256": "e2ca31536881010d274d2e46506ebb08e7e1bc1c3f1ed1f5ec6df7d5b1e8577c"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2535,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "36",
+  "debateId": "carroll-halvorson-metaphysics-worldview-2016",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-discovery"
+}

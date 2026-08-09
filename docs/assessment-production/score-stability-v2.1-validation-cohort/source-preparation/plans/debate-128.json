@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2765,
+  "ledgerBytes": 160755,
+  "ledgerSha256": "34bb715be3c14ef294e1ef3c6d7468d4528a6c8181a24fcad92de98d98ae130d",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50940,
+      "contextSha256": "280403150c9dea87c28dc19d64f567f19816d2b38c59513ab114a29c362a91b1"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52528,
+      "contextSha256": "24409d6eb845d6e93fe4667c7886d3b67c7417d2c1490eb731ffc4129cb92884"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53318,
+      "contextSha256": "838b28c678bd3dbd64dfa31b6be00db6d31afca8dc99debe9395b631ab5b9548"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2764,
+      "coreEvents": 265,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2764,
+      "contextEvents": 305,
+      "contextBytes": 17932,
+      "contextSha256": "17e9c8baa92fe18632be40698a5575bc4364e23525bfc8a422e710ca67839441"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2764,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "128",
+  "debateId": "craig-law-evil-god-challenge-2011",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-discovery"
+}
