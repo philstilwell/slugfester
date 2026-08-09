@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.1-validation-score-blind-source-packet",
+  "protocolId": "assessment-production-score-stability-v2.1.1-fresh-validation-source-preparation",
+  "debateNumber": "157",
+  "debateId": "dillahunty-howitt-christianity-true-2023",
+  "motion": "Is Christianity true, and do the grounding of logic, a necessary cause, divine hiddenness, and the relation of reason to revelation support or undermine it?",
+  "sides": {
+    "pro": {
+      "label": "Christian logos",
+      "speakers": [
+        "Lewis Howitt (PerspectivePhilosophy)"
+      ]
+    },
+    "con": {
+      "label": "Skeptical empiricism",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 7065,
+  "eventCount": 3124,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/13PnL6QyMEw/transcript.txt",
+    "transcriptSha256": "b764ef00b320fcfb77f79008de9cd0d0b74015a973628e9576f9b253740810d7",
+    "eventsPath": ".assessment-cache/captions/13PnL6QyMEw/events.json",
+    "eventsSha256": "069b4eccfa2bae25b212d9b4ed5337668159d4b261c7839c9bc5438a831992c6",
+    "localManifestPath": ".assessment-cache/captions/13PnL6QyMEw/manifest.json",
+    "localManifestSha256": "49876762ed160876207917a57809e4467792d523d53a2879a8fdb18edb5819a4"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2.1.1-fresh-validation/debate-157.jsonl",
+    "sourceLedgerSha256": "d1e8b8c64236e7babc522ed1cd60421570370298b04efea5d670e1a4a999e05f",
+    "sourceLedgerBytes": 178257,
+    "sourceLedgerEventCount": 3124,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2.1.1-validation-cohort/source-preparation/plans/debate-157.json",
+    "partitionPlanSha256": "c129b0d200b6cb73db594632397a86fe930210c0281b8da9c60cb9984489ed82",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventProhibited": true,
+    "repositoryMaterializesSmallestInclusiveEndEvent": true,
+    "requestedLexicalTokensMinimum": 12,
+    "requestedLexicalTokensMinimumEnforcedByOutputSchema": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "developmentValidationOnly": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

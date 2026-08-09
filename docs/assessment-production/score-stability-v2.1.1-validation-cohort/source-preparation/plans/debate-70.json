@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2593,
+  "ledgerBytes": 141473,
+  "ledgerSha256": "3e5e746b15b44e831689f4a8955177beba5702a970841ef7fc61cc11d40b74cf",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 47457,
+      "contextSha256": "c3996f41ecc85b9a667540ff199ea95ad967f2c8471501cf67c07e1055183b2f"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 50530,
+      "contextSha256": "4a0939b869c93b2c76cb1addf4608112894554269882ad194a4e8b9c67ecfa4a"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 49529,
+      "contextSha256": "ec965c8f818929abc1180d9dda928e99cbb4fc67ed5633628f423d3d4a1841f0"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2592,
+      "coreEvents": 93,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2592,
+      "contextEvents": 133,
+      "contextBytes": 7451,
+      "contextSha256": "103d709c5a40f0a6e2f755b2906fae243b8ae5016c831c5753f639ac56f8eafe"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2592,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "70",
+  "debateId": "malpass-anderson-logic-god-2021",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-repository-materialized-discovery"
+}

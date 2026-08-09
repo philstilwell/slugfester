@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3542,
+  "ledgerBytes": 199960,
+  "ledgerSha256": "7e12e9246f47539220b4f993444261ad73873b3ac733225dca9be4cd7b3c6088",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 49866,
+      "contextSha256": "bf9426a4e00f644dfa260432192a3db8769d9de6a0fad733051723de2a231761"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51283,
+      "contextSha256": "25211dd2fe32b124e5dd8109f41bf227a3bbcc34ac27859385b76211087bde35"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 51485,
+      "contextSha256": "606fef08bf9cb041ce70bc1528e72746dcdee9d74d0a7876da3fdbc5106b24d4"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 50591,
+      "contextSha256": "793112cd669d2f3049e4870d3ca013ace3b5548a973ef0c4fc57cfc3e9970b40"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3541,
+      "coreEvents": 222,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3541,
+      "contextEvents": 262,
+      "contextBytes": 14797,
+      "contextSha256": "dd60c6a691aba64fb71bbd60f57c8b7716592dcf9d9586d6f393d7fcdb602c42"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3541,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "118",
+  "debateId": "hernandez-schieber-god-existence-2023",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-repository-materialized-discovery"
+}

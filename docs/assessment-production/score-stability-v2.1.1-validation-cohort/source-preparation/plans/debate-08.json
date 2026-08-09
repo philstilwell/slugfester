@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3880,
+  "ledgerBytes": 205124,
+  "ledgerSha256": "268f549f8604fa3ab57b3ccce290e32cf3e3cc5d222e4509c2af515f632cdd3e",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 46059,
+      "contextSha256": "3cf743e2cfe98367e63cd0bd13bb8715fa16a3436dc5cd3b9a6b5fa8dcdf1946"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 46918,
+      "contextSha256": "450a289169632615771ea9020d0b12557a1a2dca5a0d040f850e367d0a324d2b"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 47987,
+      "contextSha256": "8c549cc3801cbe924a9d1003f0467383a72935ed21444d3688f9004ffa7fbe8a"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 48572,
+      "contextSha256": "76f76d6ed00ae1e88e78de31db98333cfcb2c740b6cee747f401ca04bb6daa6f"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3879,
+      "coreEvents": 560,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3879,
+      "contextEvents": 600,
+      "contextBytes": 32598,
+      "contextSha256": "b6bad12f5caa4c5644795f2f91db8d101d5c6dcd17c70d9ce2b69673f5c0798f"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3879,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "08",
+  "debateId": "wood-shermer-god-exist-2022",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-repository-materialized-discovery"
+}
