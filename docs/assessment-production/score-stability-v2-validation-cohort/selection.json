@@ -1,0 +1,632 @@
+{
+  "schemaVersion": "1.0-score-stability-v2-fresh-validation-cohort-selection",
+  "status": "fresh-disjoint-ten-debate-cohort-source-gate-passed",
+  "frozenAt": "2026-08-09T01:59:57.000Z",
+  "checkpointCommit": "ed854d67261dbe4a995f2581bb519d2ac264ceab",
+  "policy": {
+    "path": "docs/assessment-production/score-stability-policy-v2-proposal.md",
+    "sha256": "3b2ea6f915d58e00e9e77a95ea6d56891add53572d8bfb787b90adabc41042bc",
+    "promoted": false
+  },
+  "selectionPolicy": {
+    "cohortSize": 10,
+    "dyadicOnly": true,
+    "pendingReassessmentOnly": true,
+    "acceptedCalibrationExcluded": true,
+    "allObservedCalibrationAndCanaryDebatesExcluded": true,
+    "calibrationObservationMethod": "valid corpus debate numbers embedded in docs/calibration artifact filenames",
+    "calibrationArtifactPathInventorySha256": "5fcc97c237b381b0cfc4bbe43b5889d8dfaa70ad5948a9a7c62094d149863113",
+    "calibrationObservedDebateNumbers": [
+      "04",
+      "06",
+      "07",
+      "100",
+      "101",
+      "102",
+      "103",
+      "106",
+      "107",
+      "11",
+      "110",
+      "113",
+      "117",
+      "126",
+      "131",
+      "133",
+      "141",
+      "144",
+      "147",
+      "152",
+      "153",
+      "154",
+      "155",
+      "16",
+      "160",
+      "161",
+      "162",
+      "163",
+      "164",
+      "165",
+      "171",
+      "175",
+      "178",
+      "180",
+      "182",
+      "183",
+      "185",
+      "188",
+      "19",
+      "191",
+      "193",
+      "194",
+      "195",
+      "26",
+      "27",
+      "37",
+      "38",
+      "43",
+      "44",
+      "51",
+      "52",
+      "55",
+      "58",
+      "59",
+      "62",
+      "63",
+      "65",
+      "67",
+      "74",
+      "77",
+      "79",
+      "87",
+      "90",
+      "91",
+      "99"
+    ],
+    "productionCanaryDebateNumbers": [
+      "05",
+      "13",
+      "130",
+      "138",
+      "152",
+      "188",
+      "37",
+      "64",
+      "65",
+      "81"
+    ],
+    "observedDebateNumbers": [
+      "04",
+      "05",
+      "06",
+      "07",
+      "100",
+      "101",
+      "102",
+      "103",
+      "106",
+      "107",
+      "11",
+      "110",
+      "113",
+      "117",
+      "126",
+      "13",
+      "130",
+      "131",
+      "133",
+      "138",
+      "141",
+      "144",
+      "147",
+      "152",
+      "153",
+      "154",
+      "155",
+      "16",
+      "160",
+      "161",
+      "162",
+      "163",
+      "164",
+      "165",
+      "171",
+      "175",
+      "178",
+      "180",
+      "182",
+      "183",
+      "185",
+      "188",
+      "19",
+      "191",
+      "193",
+      "194",
+      "195",
+      "26",
+      "27",
+      "37",
+      "38",
+      "43",
+      "44",
+      "51",
+      "52",
+      "55",
+      "58",
+      "59",
+      "62",
+      "63",
+      "64",
+      "65",
+      "67",
+      "74",
+      "77",
+      "79",
+      "81",
+      "87",
+      "90",
+      "91",
+      "99"
+    ],
+    "eligibleCandidateCount": 109,
+    "deterministicRank": "SHA-256(policy bytes hash | debate number | debate id), ascending",
+    "replacementAfterSourceGateFailureAllowed": false
+  },
+  "modelBoundary": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "modelContextsExecuted": 0
+  },
+  "selected": [
+    {
+      "debateNumber": "86",
+      "debateId": "egnor-dillahunty-god-existence-2021",
+      "videoId": "yahf0t5mK5g",
+      "motion": "Does God exist, and do Thomistic proofs, moral law, and natural theology meet the burden of proof against skeptical atheism?",
+      "sides": {
+        "pro": {
+          "label": "Thomistic theism",
+          "speakers": [
+            "Michael Egnor"
+          ]
+        },
+        "con": {
+          "label": "Skeptical atheism",
+          "speakers": [
+            "Matt Dillahunty"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "00542aeb42ca8c0317633d30a3e4f0c3ffb02ed4966ce7bb4a2f4caa8ec47ddc",
+      "eventCount": 4043,
+      "durationSeconds": 8497.2,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/yahf0t5mK5g/transcript.txt",
+        "transcriptSha256": "3fb2f66cdf171853b6933a88ed9a20a7bf1124ce7f3802e54eae63c1d98fae84",
+        "events": ".assessment-cache/captions/yahf0t5mK5g/events.json",
+        "eventsSha256": "f8a63195671a3fff82980842eb915d48531012b30c63c914873c46d1099b052a",
+        "manifest": ".assessment-cache/captions/yahf0t5mK5g/manifest.json",
+        "manifestSha256": "5d4e4a026e4d383f4348ad9307c236e37c9f4f36a71149b6ce5befb675c05084",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "60",
+      "debateId": "horn-oconnor-jesus-resurrection-2026",
+      "videoId": "Bu-7IHp3oGQ",
+      "motion": "Did Jesus physically rise from the dead, and do early Christian testimony, rival miracle claims, martyrdom, and the empty tomb make that conclusion historically reasonable?",
+      "sides": {
+        "pro": {
+          "label": "Resurrection case",
+          "speakers": [
+            "Trent Horn"
+          ]
+        },
+        "con": {
+          "label": "Historical skepticism",
+          "speakers": [
+            "Alex O'Connor"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "020548b5e5eccaf42b0594fe1f6181d16d3859680f70a2693e9f68e2a016ba40",
+      "eventCount": 2816,
+      "durationSeconds": 5334.436,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/Bu-7IHp3oGQ/transcript.txt",
+        "transcriptSha256": "86d621eddda36c51d2aad36adc336a1d5d7c8860f2c6819b27ebc2cca7a7aa84",
+        "events": ".assessment-cache/captions/Bu-7IHp3oGQ/events.json",
+        "eventsSha256": "78e300d6d7bc1a9a341023122e59a4ea964cf33544d2bba1d9e2b04fa397e95a",
+        "manifest": ".assessment-cache/captions/Bu-7IHp3oGQ/manifest.json",
+        "manifestSha256": "be288aca711f25be8b190477ac87b6ff5d834f705cdb3f25579686baf1c7ccd9",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "31",
+      "debateId": "oconnor-craig-resurrection-2023",
+      "videoId": "WsUwyC2cwNg",
+      "motion": "Does the historical evidence make Jesus' resurrection the best explanation of the facts, or should skeptical alternatives and evidential caution prevent that conclusion?",
+      "sides": {
+        "pro": {
+          "label": "Resurrection case",
+          "speakers": [
+            "William Lane Craig"
+          ]
+        },
+        "con": {
+          "label": "Historical skepticism",
+          "speakers": [
+            "Alex O'Connor"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "06d02b7eb0c5a148114ec46c0f7eff20a53ba8e17980a40c8d9c9e6903c1a934",
+      "eventCount": 1511,
+      "durationSeconds": 3954.96,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/WsUwyC2cwNg/transcript.txt",
+        "transcriptSha256": "d4118b9dd27102a71fb38da95b1f575e2c75f41c3503ad8c2f36298973355e6d",
+        "events": ".assessment-cache/captions/WsUwyC2cwNg/events.json",
+        "eventsSha256": "a39847a2629be33ccd37499f61fb57b19838c1c8e769ea3ead5d6fc7c85cbb96",
+        "manifest": ".assessment-cache/captions/WsUwyC2cwNg/manifest.json",
+        "manifestSha256": "e8c5b82435903b51d1612710c8ecf1975ec78e473d6a21f78e0ef04d82ec9443",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "151",
+      "debateId": "wood-dillahunty-god-secular-humanism-2020",
+      "videoId": "u2SjOn8arv8",
+      "motion": "Which gives a better foundation for ethics: God or secular humanism?",
+      "sides": {
+        "pro": {
+          "label": "Theistic moral realism",
+          "speakers": [
+            "David Wood"
+          ]
+        },
+        "con": {
+          "label": "Secular humanism",
+          "speakers": [
+            "Matt Dillahunty"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "0a66fca3b261d8531163ac5d5fd80238a7fc13fcf155efa43e0ad72788c9ba5c",
+      "eventCount": 4028,
+      "durationSeconds": 8474.08,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/u2SjOn8arv8/transcript.txt",
+        "transcriptSha256": "5732abec025b423e6b2bbf339e470a3fefa89d3835a94bd013e2fc290a51e9ce",
+        "events": ".assessment-cache/captions/u2SjOn8arv8/events.json",
+        "eventsSha256": "5d0751f803d0e8e18368723cbeb5180b2dd5d4959b39ea87409374086c4e589a",
+        "manifest": ".assessment-cache/captions/u2SjOn8arv8/manifest.json",
+        "manifestSha256": "ceb9ed93f9940c13954417d81321466571c61ff8c93bc5a9ec4c6304ae4a70a2",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "93",
+      "debateId": "hunter-dillahunty-christian-god-exist-2019",
+      "videoId": "Y9Uktg9nLx8",
+      "motion": "Does the Christian God exist, and do libertarian freedom, the Kalam argument, resurrection evidence, hiddenness, and inconsistent revelation make Christian theism more reasonable than skepticism?",
+      "sides": {
+        "pro": {
+          "label": "Christian cumulative case",
+          "speakers": [
+            "Braxton Hunter"
+          ]
+        },
+        "con": {
+          "label": "Evidential skepticism",
+          "speakers": [
+            "Matt Dillahunty"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "0e873bd14fa25fea5c376fdc5bf0048ff2f5643177495896dc25468f4b74da7a",
+      "eventCount": 3742,
+      "durationSeconds": 7879.02,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/Y9Uktg9nLx8/transcript.txt",
+        "transcriptSha256": "595b4c3f03eceabd466de097e81a6d68717dfa5efba278faa518cd2656dcf6e2",
+        "events": ".assessment-cache/captions/Y9Uktg9nLx8/events.json",
+        "eventsSha256": "66a0fc38a8651c84aacb596497a25ca6fe0a0f16ca648b355ecff90b14e04b3c",
+        "manifest": ".assessment-cache/captions/Y9Uktg9nLx8/manifest.json",
+        "manifestSha256": "5b2fcf02924aedc4a3a63761a0308e8611e3dd82e1bec339f6f3a8ffebc9a458",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "80",
+      "debateId": "rasmussen-schmid-argument-from-limits-2023",
+      "videoId": "Lt1wN10yOY4",
+      "motion": "Does the argument from arbitrary limits successfully move from a fundamental reality or necessary foundation toward God-like perfection?",
+      "sides": {
+        "pro": {
+          "label": "Limits argument",
+          "speakers": [
+            "Josh Rasmussen"
+          ]
+        },
+        "con": {
+          "label": "Agnostic theory comparison",
+          "speakers": [
+            "Joe Schmid"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "0edef56f1b37284317caffd7457b2cec80e18285c63be20ac1a39ebea389d04c",
+      "eventCount": 3374,
+      "durationSeconds": 7072.88,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/Lt1wN10yOY4/transcript.txt",
+        "transcriptSha256": "2271ce3f673275dc7588c8beb9cc2b757f336a2c4e68b0fcc4c8a027da3da0d5",
+        "events": ".assessment-cache/captions/Lt1wN10yOY4/events.json",
+        "eventsSha256": "25ab497679c3650a75fe6c15fd124572f82284e1b7259ef7a09c94b42700f9fb",
+        "manifest": ".assessment-cache/captions/Lt1wN10yOY4/manifest.json",
+        "manifestSha256": "7576437b988159fd06dc978645aee1aacdd7cdf23a0b8dd1c9b2479f2ce5fa72",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "158",
+      "debateId": "dillahunty-mclatchie-resurrection-evidence-2020",
+      "videoId": "a-wIaCRIdOA",
+      "motion": "Is there strong historical evidence that Jesus rose from the dead, or are the surviving Christian reports too indirect and insufficiently testable to establish a resurrection?",
+      "sides": {
+        "pro": {
+          "label": "Historical resurrection case",
+          "speakers": [
+            "Dr Jonathan McLatchie"
+          ]
+        },
+        "con": {
+          "label": "Skeptical historical standard",
+          "speakers": [
+            "Matt Dillahunty"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "15d34462ed54613df402309aee671767260da72a4c3ffb187bdbcf7d6f4f0e39",
+      "eventCount": 4823,
+      "durationSeconds": 9282.53,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/a-wIaCRIdOA/transcript.txt",
+        "transcriptSha256": "d53322488b4f6c760e32fc0b837b17d2e1b059859866b11f536a20d6cb76dc4f",
+        "events": ".assessment-cache/captions/a-wIaCRIdOA/events.json",
+        "eventsSha256": "95c01ab641bff6aaf17668b8f34f7c096b53f89b55516d9890070694a15b1ee9",
+        "manifest": ".assessment-cache/captions/a-wIaCRIdOA/manifest.json",
+        "manifestSha256": "c7d104bd2d8b63f7c8f04d5eb0c8d35a7180844c7961484083e33ee9ea070760",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "123",
+      "debateId": "oconnor-pine-divine-hiddenness-2024",
+      "videoId": "8k9A7d2Wnjk",
+      "motion": "Does divine hiddenness, uneven religious geography, sincere nonbelief, hell, and original sin count against Catholic theism, or can grace, providence, and creaturely agency explain them?",
+      "sides": {
+        "pro": {
+          "label": "Catholic theism",
+          "speakers": [
+            "Gregory Pine"
+          ]
+        },
+        "con": {
+          "label": "Hiddenness skepticism",
+          "speakers": [
+            "Alex O'Connor"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "1d16e16e2c8e8110208fd42caf409c72caa4bba445cb3c14442296c0e7d3c227",
+      "eventCount": 2706,
+      "durationSeconds": 6072.48,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/8k9A7d2Wnjk/transcript.txt",
+        "transcriptSha256": "101756caa31fa6e6f0b1379ed6a2b7dbc1d3e60bcabfc35c8ae5f6de8e8542b3",
+        "events": ".assessment-cache/captions/8k9A7d2Wnjk/events.json",
+        "eventsSha256": "90bf0fcb19a2107e00e148bbf2685ae08642d1a3bf229544d790b762e2d0ddbe",
+        "manifest": ".assessment-cache/captions/8k9A7d2Wnjk/manifest.json",
+        "manifestSha256": "d719d588b98cc5b7f070b02e97be28a0a21b6511a1578606cff71ae47054a8b8",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "146",
+      "debateId": "harris-dennett-free-will-2018",
+      "videoId": "_J_9DKIAn48",
+      "motion": "Does determinism or indeterminism undermine free will and moral responsibility, or can reasons-responsive agency provide a compatibilist form of freedom worth preserving?",
+      "sides": {
+        "pro": {
+          "label": "No libertarian free will",
+          "speakers": [
+            "Sam Harris"
+          ]
+        },
+        "con": {
+          "label": "Compatibilist free will",
+          "speakers": [
+            "Daniel Dennett"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "1fb5cc4b8ae93a62add4d995e1e42aafb5e154d035b00daa856ae04581574919",
+      "eventCount": 2579,
+      "durationSeconds": 5685.92,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/_J_9DKIAn48/transcript.txt",
+        "transcriptSha256": "e13c75a666e81720dbe2d222ac1b81314745d23de16666d6416a4420fd67c75c",
+        "events": ".assessment-cache/captions/_J_9DKIAn48/events.json",
+        "eventsSha256": "8f48b661b1d366e7939a2dff8e6ebf71d179b208568c0260a01a85001bed862e",
+        "manifest": ".assessment-cache/captions/_J_9DKIAn48/manifest.json",
+        "manifestSha256": "9d53edb8ed7fae0f9380febbdb1ee20e94a83520eec2130850fd616b5f087c37",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "137",
+      "debateId": "price-craig-resurrection-historical-analogy-1999",
+      "videoId": "Pba-YNVWaa0",
+      "motion": "Do the earliest Christian sources establish burial, an empty tomb, appearances, and resurrection belief such that God raising Jesus best explains the evidence?",
+      "sides": {
+        "pro": {
+          "label": "Resurrection case",
+          "speakers": [
+            "William Lane Craig"
+          ]
+        },
+        "con": {
+          "label": "Historical-analogy critique",
+          "speakers": [
+            "Robert Price"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "1fbddf0d53b474a9f741ebd3c194e13a6144f565c3e900a4f5d2907c8e6bd7f1",
+      "eventCount": 3473,
+      "durationSeconds": 8831.949,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/Pba-YNVWaa0/transcript.txt",
+        "transcriptSha256": "5c6b0c10e33d95fe6f6ef67ab716e565349bc0534bbddd62f55ac7c69e5f3079",
+        "events": ".assessment-cache/captions/Pba-YNVWaa0/events.json",
+        "eventsSha256": "663ea716820801c648f453c2ad3248d6873d479b90fef67d836186941570aedd",
+        "manifest": ".assessment-cache/captions/Pba-YNVWaa0/manifest.json",
+        "manifestSha256": "f789edfc1a1ebf777e6ae0846098084a78feadd9f902c69fd14d8dd94cb8f7a8",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    }
+  ],
+  "sourceHashes": {
+    "docs/assessment-production/manifest-v1.json": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec",
+    "docs/assessment-production/score-stability-policy-v2-proposal.md": "3b2ea6f915d58e00e9e77a95ea6d56891add53572d8bfb787b90adabc41042bc",
+    "docs/assessment-production/score-stability-policy-v2-retrospective-audit.json": "1d6f74c897e45732cfd61993a6449c6dc750047a130a4765c1e52d0a2248aed3",
+    "scripts/select-assessment-production-score-stability-v2-cohort.mjs": "333e113d27f87e42fb9d46275a18d7a1c2a0630472b20fbd91573d5c011c464b",
+    "scripts/test-assessment-production-score-stability-v2-cohort.mjs": "09f9aa0a5db2b7557264e150fcf896cc8375a051a5971b8435fbba98f05fcf2f",
+    ".assessment-cache/captions/yahf0t5mK5g/transcript.txt": "3fb2f66cdf171853b6933a88ed9a20a7bf1124ce7f3802e54eae63c1d98fae84",
+    ".assessment-cache/captions/yahf0t5mK5g/events.json": "f8a63195671a3fff82980842eb915d48531012b30c63c914873c46d1099b052a",
+    ".assessment-cache/captions/yahf0t5mK5g/manifest.json": "5d4e4a026e4d383f4348ad9307c236e37c9f4f36a71149b6ce5befb675c05084",
+    ".assessment-cache/captions/Bu-7IHp3oGQ/transcript.txt": "86d621eddda36c51d2aad36adc336a1d5d7c8860f2c6819b27ebc2cca7a7aa84",
+    ".assessment-cache/captions/Bu-7IHp3oGQ/events.json": "78e300d6d7bc1a9a341023122e59a4ea964cf33544d2bba1d9e2b04fa397e95a",
+    ".assessment-cache/captions/Bu-7IHp3oGQ/manifest.json": "be288aca711f25be8b190477ac87b6ff5d834f705cdb3f25579686baf1c7ccd9",
+    ".assessment-cache/captions/WsUwyC2cwNg/transcript.txt": "d4118b9dd27102a71fb38da95b1f575e2c75f41c3503ad8c2f36298973355e6d",
+    ".assessment-cache/captions/WsUwyC2cwNg/events.json": "a39847a2629be33ccd37499f61fb57b19838c1c8e769ea3ead5d6fc7c85cbb96",
+    ".assessment-cache/captions/WsUwyC2cwNg/manifest.json": "e8c5b82435903b51d1612710c8ecf1975ec78e473d6a21f78e0ef04d82ec9443",
+    ".assessment-cache/captions/u2SjOn8arv8/transcript.txt": "5732abec025b423e6b2bbf339e470a3fefa89d3835a94bd013e2fc290a51e9ce",
+    ".assessment-cache/captions/u2SjOn8arv8/events.json": "5d0751f803d0e8e18368723cbeb5180b2dd5d4959b39ea87409374086c4e589a",
+    ".assessment-cache/captions/u2SjOn8arv8/manifest.json": "ceb9ed93f9940c13954417d81321466571c61ff8c93bc5a9ec4c6304ae4a70a2",
+    ".assessment-cache/captions/Y9Uktg9nLx8/transcript.txt": "595b4c3f03eceabd466de097e81a6d68717dfa5efba278faa518cd2656dcf6e2",
+    ".assessment-cache/captions/Y9Uktg9nLx8/events.json": "66a0fc38a8651c84aacb596497a25ca6fe0a0f16ca648b355ecff90b14e04b3c",
+    ".assessment-cache/captions/Y9Uktg9nLx8/manifest.json": "5b2fcf02924aedc4a3a63761a0308e8611e3dd82e1bec339f6f3a8ffebc9a458",
+    ".assessment-cache/captions/Lt1wN10yOY4/transcript.txt": "2271ce3f673275dc7588c8beb9cc2b757f336a2c4e68b0fcc4c8a027da3da0d5",
+    ".assessment-cache/captions/Lt1wN10yOY4/events.json": "25ab497679c3650a75fe6c15fd124572f82284e1b7259ef7a09c94b42700f9fb",
+    ".assessment-cache/captions/Lt1wN10yOY4/manifest.json": "7576437b988159fd06dc978645aee1aacdd7cdf23a0b8dd1c9b2479f2ce5fa72",
+    ".assessment-cache/captions/a-wIaCRIdOA/transcript.txt": "d53322488b4f6c760e32fc0b837b17d2e1b059859866b11f536a20d6cb76dc4f",
+    ".assessment-cache/captions/a-wIaCRIdOA/events.json": "95c01ab641bff6aaf17668b8f34f7c096b53f89b55516d9890070694a15b1ee9",
+    ".assessment-cache/captions/a-wIaCRIdOA/manifest.json": "c7d104bd2d8b63f7c8f04d5eb0c8d35a7180844c7961484083e33ee9ea070760",
+    ".assessment-cache/captions/8k9A7d2Wnjk/transcript.txt": "101756caa31fa6e6f0b1379ed6a2b7dbc1d3e60bcabfc35c8ae5f6de8e8542b3",
+    ".assessment-cache/captions/8k9A7d2Wnjk/events.json": "90bf0fcb19a2107e00e148bbf2685ae08642d1a3bf229544d790b762e2d0ddbe",
+    ".assessment-cache/captions/8k9A7d2Wnjk/manifest.json": "d719d588b98cc5b7f070b02e97be28a0a21b6511a1578606cff71ae47054a8b8",
+    ".assessment-cache/captions/_J_9DKIAn48/transcript.txt": "e13c75a666e81720dbe2d222ac1b81314745d23de16666d6416a4420fd67c75c",
+    ".assessment-cache/captions/_J_9DKIAn48/events.json": "8f48b661b1d366e7939a2dff8e6ebf71d179b208568c0260a01a85001bed862e",
+    ".assessment-cache/captions/_J_9DKIAn48/manifest.json": "9d53edb8ed7fae0f9380febbdb1ee20e94a83520eec2130850fd616b5f087c37",
+    ".assessment-cache/captions/Pba-YNVWaa0/transcript.txt": "5c6b0c10e33d95fe6f6ef67ab716e565349bc0534bbddd62f55ac7c69e5f3079",
+    ".assessment-cache/captions/Pba-YNVWaa0/events.json": "663ea716820801c648f453c2ad3248d6873d479b90fef67d836186941570aedd",
+    ".assessment-cache/captions/Pba-YNVWaa0/manifest.json": "f789edfc1a1ebf777e6ae0846098084a78feadd9f902c69fd14d8dd94cb8f7a8"
+  },
+  "totals": {
+    "debates": 10,
+    "eventCount": 33095,
+    "durationHours": 19.746,
+    "sourceGateFailures": 0,
+    "modelContexts": 0,
+    "paidTranscriptionCalls": 0,
+    "meteredApiCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "authorization": {
+    "freshValidationManifestPreparation": true,
+    "sourcePreparation": false,
+    "inventoryModelExecution": false,
+    "judgmentModelExecution": false,
+    "paidTranscription": false,
+    "scoreDerivation": false,
+    "publicationPreparation": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  }
+}
