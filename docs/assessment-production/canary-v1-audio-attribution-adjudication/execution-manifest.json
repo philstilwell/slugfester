@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0-production-canary-audio-attribution-adjudication-execution-manifest",
+  "protocolId": "assessment-production-canary-v1-audio-attribution-adjudication",
+  "status": "frozen-one-production-canary-audio-attribution-context-authorized",
+  "frozenAt": "2026-08-09T01:10:27Z",
+  "checkpointCommit": "1f70ecfe148ee7550dedddd2caec7b551d32798c",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "context": {
+    "debateNumber": "05",
+    "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+    "disputedMoves": [
+      "pro-move-07"
+    ],
+    "workflow": "docs/assessment-production-canary-audio-attribution-adjudication-workflow.md",
+    "manual": "docs/assessment-production/canary-v1-audio-attribution-adjudication/manual.md",
+    "schema": "docs/assessment-production/canary-v1-audio-attribution-adjudication/schema.json",
+    "packet": "docs/assessment-production/canary-v1-audio-attribution-adjudication/packet.json",
+    "rawDiarizedTranscripts": [
+      "output/transcribe/assessment-production-canary-v1-audio-verification/debate-05/transcripts/pro-move-07.transcript.json"
+    ],
+    "output": "docs/assessment-production/canary-v1-audio-attribution-adjudication/output.json",
+    "copiedInputBytes": 44278
+  },
+  "isolation": {
+    "freshTemporaryCodexHome": true,
+    "freshSourceDirectory": true,
+    "ratingsUnavailable": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "perInvocationTimeoutMs": 900000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ],
+    "meteredApiCostUsdMaximum": 0,
+    "paidTranscriptionCalls": 0,
+    "stderrTailRecordedOnFailure": true
+  },
+  "authorization": {
+    "modelExecution": true,
+    "deterministicValidation": true,
+    "deterministicAnalysis": true,
+    "retry": false,
+    "paidTranscription": false,
+    "disputeAdjudicationPacketPreparation": false,
+    "disputeAdjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "artifacts": {
+    "output": "docs/assessment-production/canary-v1-audio-attribution-adjudication/output.json",
+    "execution": "docs/assessment-production/canary-v1-audio-attribution-adjudication/model-execution.json",
+    "analysis": "docs/assessment-production/canary-v1-audio-attribution-adjudication/analysis.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/canary-v1-audio-attribution-adjudication/output.json",
+    "docs/assessment-production/canary-v1-audio-attribution-adjudication/model-execution.json",
+    "docs/assessment-production/canary-v1-audio-attribution-adjudication/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-production-canary-audio-attribution-adjudication-workflow.md": "0a4e1d4613b33fa23d839ddeaf9aee7ddf6d3631a43f204640d25f8bc7861ac1",
+    "docs/assessment-production/canary-v1-audio-attribution-adjudication/manual.md": "fa3833d514dbad2feca3d61c0b49f0de3761048564d9390abc0b483a407e82fc",
+    "docs/assessment-production/canary-v1-audio-attribution-adjudication/schema.json": "d6948662f66cfa8f45822c3bb7bfb552304ebbc4a52519ff4bd1942bdd227f11",
+    "docs/assessment-production/canary-v1-audio-attribution-adjudication/packet.json": "f2547ab20279834ece46dba9fd58004a7dd364388c92818d78edbfe73163a17a",
+    "output/transcribe/assessment-production-canary-v1-audio-verification/debate-05/transcripts/pro-move-07.transcript.json": "9b54923073f91353cbd8598556359b13be5953e6a7084815702ff2d73f5e9f32",
+    "docs/assessment-production/canary-v1-audio-verification/failure-diagnosis.json": "c475c202706579920ab8fefa057ae4a8e4d08166e72bd9343ba987083b9b1675",
+    "docs/assessment-production/canary-v1-audio-attribution-adjudication/preparation-manifest.json": "604faa5f989258acca2d2723f4dfadcd356baafb07fa68beb171e2ebdd944aa9",
+    "scripts/lib/assessment-production-canary-audio-attribution-adjudication.mjs": "c6647df19ed942283d8333e5b0e793df6d1abb8a3e41059a5a59c2f6ee530ae9",
+    "scripts/build-assessment-production-canary-audio-attribution-adjudication.mjs": "473d6d096ee635b6baaf0abe0f94e9737f554c9f7eca58157c1ab0feef205153",
+    "scripts/test-assessment-production-canary-audio-attribution-adjudication.mjs": "a2add8a981e2597ed6ae382fcca18eb3a2384f06f93d6d4058a13cb3e4c77df0",
+    "scripts/preregister-assessment-production-canary-audio-attribution-adjudication.mjs": "6a18cf1546a22f584f308094705322431c48cd82a7df807710787333b12df5d0",
+    "scripts/run-assessment-production-canary-audio-attribution-adjudication.mjs": "56785fd281154668b49814723c17ae5aa7ba3431709985955474ba29b65d4c67",
+    "scripts/validate-assessment-production-canary-audio-attribution-adjudication.mjs": "0694ee9b3eb08937d60de92e43877461d87b65c2a2aa202a535ef2df2004f05a",
+    "scripts/analyze-assessment-production-canary-audio-attribution-adjudication.mjs": "50eef8927abc41c71528ee9366508c304b865f7949372da11c9b2b91e583b1ec",
+    "scripts/test-assessment-production-canary-audio-attribution-gate.mjs": "98a859be28e657d9300e320904f2ff71cdaf2e7d0724bb534d58e020c0060ab5"
+  }
+}
