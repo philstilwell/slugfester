@@ -1,0 +1,908 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.2-retired-discovery-artifact-regression",
+  "protocolId": "assessment-production-score-stability-v2.1.2-bounded-end-discovery",
+  "status": "passed-dual-retired-gate-regression-both-failures-preserved-and-accepted-spans-exactly-reconstructed",
+  "diagnosticUseOnly": true,
+  "failedV21GateReclassified": false,
+  "failedV211GateReclassified": false,
+  "retiredOutputsReusableForSuccessorAcceptance": false,
+  "v21Contexts": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "36",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "acd085dbeeebc8b6c7b4b31a271bc7eeae81e6a751939c638585f66dc5b985b4"
+    },
+    {
+      "contextIndex": 1,
+      "debateNumber": "36",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "a978e24a8da3df930f9ab85939685b5defaceaaf023d68780532190f62f486bb"
+    },
+    {
+      "contextIndex": 2,
+      "debateNumber": "36",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "f783de0735a765ecfd8cc4c74b96d510be428747db169a26e1985c43174bef17"
+    },
+    {
+      "contextIndex": 3,
+      "debateNumber": "85",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "d683d485579db92a1b3b5261ffb980161ba9019fe040a0ccaecbbeb872c7b2ef"
+    },
+    {
+      "contextIndex": 4,
+      "debateNumber": "85",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "8d173c553048e10296b9c5d7e3cb9707a5d11461af830151a82707b15d92bee9"
+    },
+    {
+      "contextIndex": 5,
+      "debateNumber": "85",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 5,
+      "exactSpanReconstructions": 5,
+      "predecessorOutputSha256": "7942cd5bfafe6d60eba9dd00f830c8adeee9bf9e6e99b713b951c5550e2db59e"
+    },
+    {
+      "contextIndex": 6,
+      "debateNumber": "143",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "cc88f6c1b8eb9a4f792ea9f26941164efe09fcc3d16707fd5987d69c82d63dee"
+    },
+    {
+      "contextIndex": 7,
+      "debateNumber": "143",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "f214dfb522f246f34acacded732b1b5abc92fc0baf10420ce995d35099a3e101"
+    },
+    {
+      "contextIndex": 8,
+      "debateNumber": "143",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": false,
+      "successorRegressionStatus": "passed-retired-short-bounded-window-deterministically-rejected",
+      "candidates": 10,
+      "rejectedCandidate": {
+        "candidateId": "c003-01",
+        "sourceWindow": {
+          "startEvent": 1680,
+          "endEvent": 1681
+        },
+        "repositoryDerivedLexicalTokens": 11,
+        "minimumLexicalTokens": 12,
+        "rejectionMessage": "source window has fewer than 12 lexical tokens",
+        "rejectedByDeterministicMinimum": true
+      },
+      "predecessorOutputSha256": "10c08fe130b99b4e028d9cd5bac65f774931713a97a56ae7a93f0b60deb1e40b"
+    },
+    {
+      "contextIndex": 9,
+      "debateNumber": "143",
+      "chunkId": "chunk-004",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "a1527ee49933e79fa2ec7d6b25fbdb663fc556f3fc660eb6f3d050a708f6db46"
+    },
+    {
+      "contextIndex": 10,
+      "debateNumber": "143",
+      "chunkId": "chunk-005",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "a11e290f7a8d8e5dc0455168a8947a40d907a660708ed22655cef07597cb206d"
+    },
+    {
+      "contextIndex": 11,
+      "debateNumber": "190",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 6,
+      "exactSpanReconstructions": 6,
+      "predecessorOutputSha256": "5913cda4d561fb1cc5ee7676979df57194685cb91454ed1e4000cd2f66375acb"
+    },
+    {
+      "contextIndex": 12,
+      "debateNumber": "190",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "97e374e1af6026a0124a61aa6e5a5ab2af69607171448108d9794ba19b4e827a"
+    },
+    {
+      "contextIndex": 13,
+      "debateNumber": "190",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "7a48d81c6b9b0398c5157e496942d9d6fe551ccf11d79a900016fb0775de9b42"
+    },
+    {
+      "contextIndex": 14,
+      "debateNumber": "190",
+      "chunkId": "chunk-004",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 9,
+      "exactSpanReconstructions": 9,
+      "predecessorOutputSha256": "83cf5d04529857824283e837b2e4c7f2469d95bd54ef5de11171f7f74e2c8cb2"
+    },
+    {
+      "contextIndex": 15,
+      "debateNumber": "190",
+      "chunkId": "chunk-005",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 8,
+      "exactSpanReconstructions": 8,
+      "predecessorOutputSha256": "525e45c58218faa9932d016b06e6f7f2fd55e21bd43b5918ecc81b8204d229f5"
+    },
+    {
+      "contextIndex": 16,
+      "debateNumber": "134",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 9,
+      "exactSpanReconstructions": 9,
+      "predecessorOutputSha256": "89b63e05d96d5318cf589a25b78eeaf4e7c3c8606329246d434d872d57debc8e"
+    },
+    {
+      "contextIndex": 17,
+      "debateNumber": "134",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "d013c19f05834a477c4a8dc0d3753d8b4f5ec921466b4a3aa79c53f13e93f622"
+    },
+    {
+      "contextIndex": 18,
+      "debateNumber": "134",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 9,
+      "exactSpanReconstructions": 9,
+      "predecessorOutputSha256": "750ffe0597411efcf9a4acd863437de0968c7bb3e635b6f479cc3f252f4139a5"
+    },
+    {
+      "contextIndex": 19,
+      "debateNumber": "134",
+      "chunkId": "chunk-004",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 9,
+      "exactSpanReconstructions": 9,
+      "predecessorOutputSha256": "3b5ad054b0686065949bf5002ff3986c4e78c4219f2ddee2eca649984718a58d"
+    },
+    {
+      "contextIndex": 20,
+      "debateNumber": "111",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "0d66a8ea49cad6ce8db22ab2810ed66818135584551aaef046f5f17e811663fa"
+    },
+    {
+      "contextIndex": 21,
+      "debateNumber": "111",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "27ba9ea2e9b992e71be0d467f0259be59e411776e59147a4b66ee43e451154f6"
+    },
+    {
+      "contextIndex": 22,
+      "debateNumber": "111",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "58a528ad09ca7dc79b6e9efd7d13d786bdc431a4a6213b77e0dcbc81c23059b8"
+    },
+    {
+      "contextIndex": 23,
+      "debateNumber": "111",
+      "chunkId": "chunk-004",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "1768c6c6b523ef835a313efaed5b7a93dc68fbc11465a6d0192fc3ecf64d1bfa"
+    },
+    {
+      "contextIndex": 24,
+      "debateNumber": "01",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "247839f7f1b75a9f3d32d8bdaf787e19ec6716bc60b236bbb4b51f22d2709aa6"
+    },
+    {
+      "contextIndex": 25,
+      "debateNumber": "01",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "0f8db79293c98e73e12f32bb1ed61b40c636b3a0cfd3c2cc76ad467ab9411399"
+    },
+    {
+      "contextIndex": 26,
+      "debateNumber": "01",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "20591e5ce1ec71a6a5afd48660d20c36e864098fa21e514e59a176ead765ac4a"
+    },
+    {
+      "contextIndex": 27,
+      "debateNumber": "01",
+      "chunkId": "chunk-004",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "f15b855688e4105f50eca0c1f80a6b099efadd4895cca3f88048cf1854d7f875"
+    },
+    {
+      "contextIndex": 28,
+      "debateNumber": "57",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 9,
+      "exactSpanReconstructions": 9,
+      "predecessorOutputSha256": "e4f1fdd406caa98f47ba42a3b136a7d8fb24871c4f39107c0ef6cac2a2a64276"
+    },
+    {
+      "contextIndex": 29,
+      "debateNumber": "57",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "95abde3b2536224e35d1a84f4a5069ae3762fecf955602b84e48b5f6962c949c"
+    },
+    {
+      "contextIndex": 30,
+      "debateNumber": "57",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "7dfe9c527d9564374666601f2695dbe4c0c4a25a07c8230766fc7a6f279bf4eb"
+    },
+    {
+      "contextIndex": 31,
+      "debateNumber": "128",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 8,
+      "exactSpanReconstructions": 8,
+      "predecessorOutputSha256": "e2e7eb91b90e5f50ec0943e367cfc79366dc0dcaaa9b0cae1621be4b15be5d94"
+    },
+    {
+      "contextIndex": 32,
+      "debateNumber": "128",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "b1ed59640c69d93d743043e1a2e6528f558d4c720e1b4fa72895acf0357f6322"
+    },
+    {
+      "contextIndex": 33,
+      "debateNumber": "128",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "1942933d05126166373b78b3a79c2836a54af5a3d15eed4a2eb8acdc37314fc0"
+    },
+    {
+      "contextIndex": 34,
+      "debateNumber": "128",
+      "chunkId": "chunk-004",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "d44c35b155faf399b62a2d36305d38624429081bbdc556f0bb92a1269426010c"
+    },
+    {
+      "contextIndex": 35,
+      "debateNumber": "69",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "dd49c9ed736d296b14a495c1afd379f84b7780065ab7f69be81ea16b3e137529"
+    },
+    {
+      "contextIndex": 36,
+      "debateNumber": "69",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "d81de9fba48854abd8bc25ee796b5a9a9dab7587b51d249d971167f3e41a9d47"
+    },
+    {
+      "contextIndex": 37,
+      "debateNumber": "69",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "69035378e825c6609a137c3a5c0998f1ed1a69a1f787106a70c37a85d307decc"
+    },
+    {
+      "contextIndex": 38,
+      "debateNumber": "69",
+      "chunkId": "chunk-004",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "893cdf8e687b3151fc21653de348a47973a0c0ffb3438e15b73d5371ed76151d"
+    },
+    {
+      "contextIndex": 39,
+      "debateNumber": "69",
+      "chunkId": "chunk-005",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-bounded-window-reconstruction",
+      "candidates": 8,
+      "exactSpanReconstructions": 8,
+      "predecessorOutputSha256": "1bb0a602d8d36c3f6e8842407f1cb4683d2bce1d5c866c1afcd37551ee9eaeb1"
+    }
+  ],
+  "v211Contexts": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "187",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "7f9cdc8cccc7f3e7663c11ee9010e858b13e8e51dbf90e3b524fa32f5fdcc20c"
+    },
+    {
+      "contextIndex": 1,
+      "debateNumber": "187",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "2f8db4e411f973f1ae8d793a94f743c169cdccf002a42a89b638d77e9de0c21a"
+    },
+    {
+      "contextIndex": 2,
+      "debateNumber": "187",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 7,
+      "exactSpanReconstructions": 7,
+      "predecessorOutputSha256": "5440fe5ef326f49692918710f9d509b3510d01f67f4fb54836d12bf3325f9e0d"
+    },
+    {
+      "contextIndex": 3,
+      "debateNumber": "157",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "b6cfc5614bc8f442f413cfbd171869f31d9b1bc47b9aa9e778d73d0413e4e9c3"
+    },
+    {
+      "contextIndex": 4,
+      "debateNumber": "157",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "b085f0046f2506217027db4bf475f5e517bd62a13057fb4c22e0caaa1771b4bc"
+    },
+    {
+      "contextIndex": 5,
+      "debateNumber": "157",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "da554c275d30f51d3c9b33388b53ca310aacfe2eaccbdd413f958d5972881a07"
+    },
+    {
+      "contextIndex": 6,
+      "debateNumber": "157",
+      "chunkId": "chunk-004",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "47fdec57fd52cf3e5156c0abd0497777a10ef4a8699069a59b5c1492d8ccff90"
+    },
+    {
+      "contextIndex": 7,
+      "debateNumber": "140",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": false,
+      "successorRegressionStatus": "passed-retired-over-capacity-request-unrepresentable-and-rejected",
+      "candidates": 10,
+      "rejectedCandidate": {
+        "candidateId": "c010",
+        "startEvent": 794,
+        "requestedLexicalTokens": 648,
+        "availableLexicalTokens": 589,
+        "excessLexicalTokens": 59,
+        "rejectionMessage": "source window request exceeds the available locked lookahead",
+        "boundedEndSchemaMaximum": 899,
+        "overCapacityRequestRepresentationAbsentFromSuccessor": true
+      },
+      "predecessorOutputSha256": "6dfe6cba31a3d7f10530013b3d259d2ab34d0fb7dc4395740ed889c961bee91a"
+    },
+    {
+      "contextIndex": 8,
+      "debateNumber": "140",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "12fe6a6a685e4d91d87cf2cd8ea7b762aac454b58709a0945bc28d4252fdb172"
+    },
+    {
+      "contextIndex": 9,
+      "debateNumber": "140",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "1aa6aad1c171e60945303e9e00b532de69c564e8cbb971c18c997ceba6d0f988"
+    },
+    {
+      "contextIndex": 10,
+      "debateNumber": "140",
+      "chunkId": "chunk-004",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "dbf6fa34aa1595cf4e71b53aa8c6d47c975f51b21fa37373b2d56bf606780fd9"
+    },
+    {
+      "contextIndex": 11,
+      "debateNumber": "140",
+      "chunkId": "chunk-005",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 4,
+      "exactSpanReconstructions": 4,
+      "predecessorOutputSha256": "1a1528d1d88e8d57b1bddd6eb9f9b3746ab3b9e3a443453516486fdeed4cec16"
+    },
+    {
+      "contextIndex": 12,
+      "debateNumber": "140",
+      "chunkId": "chunk-006",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 0,
+      "exactSpanReconstructions": 0,
+      "predecessorOutputSha256": "b4da4297a84ade8f71e071a0d828666d3159a2b80966b8e0859eaf0f8b4092ca"
+    },
+    {
+      "contextIndex": 13,
+      "debateNumber": "54",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "c0c40abdaaa4fbe35c83273b7d6d0f48f12c261b32db8a5c4cb6b50a98c6b5ba"
+    },
+    {
+      "contextIndex": 14,
+      "debateNumber": "54",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "059fbe4ca1e3185b3c2f93bb3b8ecf4926b69f9705233bb2ff353b276f145702"
+    },
+    {
+      "contextIndex": 15,
+      "debateNumber": "54",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "8b88a9e3927dec6789d244751c1ba5f9675204c349a898954dd192c0fba9f767"
+    },
+    {
+      "contextIndex": 16,
+      "debateNumber": "54",
+      "chunkId": "chunk-004",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 6,
+      "exactSpanReconstructions": 6,
+      "predecessorOutputSha256": "2b909f4c645543131bc3b5d5741e4596015c80f5bd2bed47257c9b8a03022c67"
+    },
+    {
+      "contextIndex": 17,
+      "debateNumber": "82",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "3080349de5aff8f686fc532b89c52bd97b11796e3d206836a656466e489c81a0"
+    },
+    {
+      "contextIndex": 18,
+      "debateNumber": "82",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "bbd6acd592d664d416837603b5f7198deb33cb31bf2ea2f067fd6f9f34a9ff29"
+    },
+    {
+      "contextIndex": 19,
+      "debateNumber": "82",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 9,
+      "exactSpanReconstructions": 9,
+      "predecessorOutputSha256": "4c0255a4145d5f94aa941fd902094149ad0352b1dd3d8558c6a91e0bb352318e"
+    },
+    {
+      "contextIndex": 20,
+      "debateNumber": "70",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 9,
+      "exactSpanReconstructions": 9,
+      "predecessorOutputSha256": "f3bd8580130b7104d0aada4866d857b9963cc58bee098ccedcdc303a04f0b7bc"
+    },
+    {
+      "contextIndex": 21,
+      "debateNumber": "70",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 9,
+      "exactSpanReconstructions": 9,
+      "predecessorOutputSha256": "0437a02962d0c4870efa3d15cd93bb8afcc43e97fee26f3460bb1fcf6daa7197"
+    },
+    {
+      "contextIndex": 22,
+      "debateNumber": "70",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "cb5f9a131b492fc632f118e8d1a45baeb533a4c14f6028c59fc9a3dbdb67a75a"
+    },
+    {
+      "contextIndex": 23,
+      "debateNumber": "70",
+      "chunkId": "chunk-004",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 2,
+      "exactSpanReconstructions": 2,
+      "predecessorOutputSha256": "99a3c00ab4a3d463f31ee1996a81faf374f8f253c878960d1387935e7a93730f"
+    },
+    {
+      "contextIndex": 24,
+      "debateNumber": "118",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 7,
+      "exactSpanReconstructions": 7,
+      "predecessorOutputSha256": "9edf1dc4a46e82d9f8bcf70ca0d4fd642de37178ed5acb1dd344a32f2decf046"
+    },
+    {
+      "contextIndex": 25,
+      "debateNumber": "118",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "4e8bf801e2be15b9afc09ca8dd6727a0290066ebdff4c47e1838ffea018a57fb"
+    },
+    {
+      "contextIndex": 26,
+      "debateNumber": "118",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "ea2fa4435bad8260c6962f764ee1fef25760e629f6599f11478d23ffe31b30ab"
+    },
+    {
+      "contextIndex": 27,
+      "debateNumber": "118",
+      "chunkId": "chunk-004",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "8267dee476e99f163144c45253d0c92c3cf0dec884da3c8588a2eecabeba9d45"
+    },
+    {
+      "contextIndex": 28,
+      "debateNumber": "118",
+      "chunkId": "chunk-005",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 4,
+      "exactSpanReconstructions": 4,
+      "predecessorOutputSha256": "8de48f8e0b5cd40c53109880afbd25af5d4ef2e320879d6356424348b0a54f7a"
+    },
+    {
+      "contextIndex": 29,
+      "debateNumber": "139",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 9,
+      "exactSpanReconstructions": 9,
+      "predecessorOutputSha256": "25d08eff7ddd0e3c5a72a183d7fff8eb229796ee656bb4a93af3b33f81cf61be"
+    },
+    {
+      "contextIndex": 30,
+      "debateNumber": "139",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "420f2fd9a740f8367e89ef5e62ca3e95a2628b6cba6b2c7dbdec50d75428b320"
+    },
+    {
+      "contextIndex": 31,
+      "debateNumber": "139",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "adaca61b6d8813d5f26ab65d6d124c381bb50cf4650c49db90d7372a7dceef02"
+    },
+    {
+      "contextIndex": 32,
+      "debateNumber": "139",
+      "chunkId": "chunk-004",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "390945946f680e014bd823fa9530c1306c897c89764c91d2d3a9a63ec27b8055"
+    },
+    {
+      "contextIndex": 33,
+      "debateNumber": "08",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "b32ba18b9c696feccb8a0e6067d9bc0f9177ca6fd97a8bee2a7848b17c70c724"
+    },
+    {
+      "contextIndex": 34,
+      "debateNumber": "08",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "58b1c3eeac367ac6d5e16a1882c712568f11b63ec02e491809abf872ddfba79c"
+    },
+    {
+      "contextIndex": 35,
+      "debateNumber": "08",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "824a502c45a9385eb5be9d55d241933f1b4ef64b7b14f1de8b35ca19527f163b"
+    },
+    {
+      "contextIndex": 36,
+      "debateNumber": "08",
+      "chunkId": "chunk-004",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "77b848d1cdde0ad8a945fe792459687dffb847caddb6f90e68f899b46ab83de8"
+    },
+    {
+      "contextIndex": 37,
+      "debateNumber": "08",
+      "chunkId": "chunk-005",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 9,
+      "exactSpanReconstructions": 9,
+      "predecessorOutputSha256": "47d3f10e042a53d59c9783a1b79949eb3067bc4b0feed1fabd81dde462357996"
+    },
+    {
+      "contextIndex": 38,
+      "debateNumber": "159",
+      "chunkId": "chunk-001",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 9,
+      "exactSpanReconstructions": 9,
+      "predecessorOutputSha256": "07fef13fd380f5d4bc38619521a0969bca2bbe393a4d3fa59799b621830e0952"
+    },
+    {
+      "contextIndex": 39,
+      "debateNumber": "159",
+      "chunkId": "chunk-002",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "f5befd5212ad2250d168357860ea7d32b174d13f595cd7a1a08de74a25de2a4d"
+    },
+    {
+      "contextIndex": 40,
+      "debateNumber": "159",
+      "chunkId": "chunk-003",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "5e7c0739b69d105d06d228113991ec88dc9922f5fc19d74465d217eb64ba4c84"
+    },
+    {
+      "contextIndex": 41,
+      "debateNumber": "159",
+      "chunkId": "chunk-004",
+      "predecessorAccepted": true,
+      "successorRegressionStatus": "passed-exact-materialized-to-bounded-window-reconstruction",
+      "candidates": 10,
+      "exactSpanReconstructions": 10,
+      "predecessorOutputSha256": "aec65b3d43d0ae346b7b665352b8f33eabe873ebbb8c70454d2f251ed1b21b24"
+    }
+  ],
+  "totals": {
+    "retiredContexts": 82,
+    "retiredAcceptedContexts": 80,
+    "retiredFailedContexts": 2,
+    "successorExactRegressionContexts": 80,
+    "successorRejectedFailureContexts": 2,
+    "acceptedCandidatesReplayed": 734,
+    "exactSourceSpanReconstructions": 734,
+    "v21AcceptedCandidatesReplayed": 370,
+    "v211AcceptedCandidatesReplayed": 364,
+    "v21ExactSourceSpanReconstructions": 370,
+    "v211ExactSourceSpanReconstructions": 364,
+    "modelContexts": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "semanticCorrections": 0,
+    "scoresDerived": 0
+  },
+  "frozenFailures": {
+    "v21ShortWindow": {
+      "debateNumber": "143",
+      "chunkId": "chunk-003",
+      "rejectedCandidate": {
+        "candidateId": "c003-01",
+        "sourceWindow": {
+          "startEvent": 1680,
+          "endEvent": 1681
+        },
+        "repositoryDerivedLexicalTokens": 11,
+        "minimumLexicalTokens": 12,
+        "rejectionMessage": "source window has fewer than 12 lexical tokens",
+        "rejectedByDeterministicMinimum": true
+      }
+    },
+    "v211OverCapacityRequest": {
+      "debateNumber": "140",
+      "chunkId": "chunk-001",
+      "rejectedCandidate": {
+        "candidateId": "c010",
+        "startEvent": 794,
+        "requestedLexicalTokens": 648,
+        "availableLexicalTokens": 589,
+        "excessLexicalTokens": 59,
+        "rejectionMessage": "source window request exceeds the available locked lookahead",
+        "boundedEndSchemaMaximum": 899,
+        "overCapacityRequestRepresentationAbsentFromSuccessor": true
+      }
+    }
+  },
+  "operationalProof": {
+    "contextsChecked": 82,
+    "maximumSchemaBytes": 4714,
+    "maximumCopiedInputBytes": 65580,
+    "copiedInputBytesMaximum": 70000,
+    "passed": true
+  }
+}
