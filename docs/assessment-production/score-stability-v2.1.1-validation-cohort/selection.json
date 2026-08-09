@@ -1,0 +1,715 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.1-validation-cohort-selection",
+  "protocolId": "assessment-production-score-stability-v2.1.1-fresh-validation-selection",
+  "status": "fresh-disjoint-v2.1.1-ten-debate-cohort-source-gate-passed",
+  "frozenAt": "2026-08-09T22:12:01Z",
+  "checkpointCommit": "a9c65c444e941f542c290cb31af770adb699a33a",
+  "developmentValidationOnly": true,
+  "productionCanary": false,
+  "stagingOnly": true,
+  "policy": {
+    "path": "docs/assessment-production/score-stability-policy-v2.1-proposal.md",
+    "sha256": "9c9d27f96c7e30d7183ed63505e6be723d1bc23473900b3a9d3dd17876083bfe",
+    "version": "v2.1-proposal",
+    "everyIntegerRoundedTieAccepted": true,
+    "promoted": false
+  },
+  "successorProtocol": {
+    "analysis": "docs/assessment-production/score-stability-v2.1.1-discovery-successor-development/development-analysis.json",
+    "sha256": "611f802136011c98f46f1810690229731844c8af16a1f51eb4dc7d615ccf7391",
+    "version": "v2.1.1-repository-materialized-discovery",
+    "minimumRequestedLexicalTokens": 12,
+    "modelAuthoredEndEvent": false,
+    "predecessorOwnershipRuleExplicit": true,
+    "retiredArtifactsReusableForAcceptance": false,
+    "retiredArtifactsReusableAsFreshModelInput": false
+  },
+  "selectionPolicy": {
+    "cohortSize": 10,
+    "dyadicOnly": true,
+    "pendingReassessmentOnly": true,
+    "acceptedCalibrationExcluded": true,
+    "productionCanaryExcluded": true,
+    "failedV2ValidationCohortExcluded": true,
+    "failedV21ValidationCohortExcluded": true,
+    "calibrationObservationMethod": "valid corpus debate numbers embedded in docs/calibration artifact filenames",
+    "calibrationArtifactPathInventorySha256": "5fcc97c237b381b0cfc4bbe43b5889d8dfaa70ad5948a9a7c62094d149863113",
+    "calibrationObservedDebateNumbers": [
+      "04",
+      "06",
+      "07",
+      "100",
+      "101",
+      "102",
+      "103",
+      "106",
+      "107",
+      "11",
+      "110",
+      "113",
+      "117",
+      "126",
+      "131",
+      "133",
+      "141",
+      "144",
+      "147",
+      "152",
+      "153",
+      "154",
+      "155",
+      "16",
+      "160",
+      "161",
+      "162",
+      "163",
+      "164",
+      "165",
+      "171",
+      "175",
+      "178",
+      "180",
+      "182",
+      "183",
+      "185",
+      "188",
+      "19",
+      "191",
+      "193",
+      "194",
+      "195",
+      "26",
+      "27",
+      "37",
+      "38",
+      "43",
+      "44",
+      "51",
+      "52",
+      "55",
+      "58",
+      "59",
+      "62",
+      "63",
+      "65",
+      "67",
+      "74",
+      "77",
+      "79",
+      "87",
+      "90",
+      "91",
+      "99"
+    ],
+    "productionCanaryDebateNumbers": [
+      "05",
+      "13",
+      "130",
+      "138",
+      "152",
+      "188",
+      "37",
+      "64",
+      "65",
+      "81"
+    ],
+    "failedV2ValidationDebateNumbers": [
+      "123",
+      "137",
+      "146",
+      "151",
+      "158",
+      "31",
+      "60",
+      "80",
+      "86",
+      "93"
+    ],
+    "failedV21ValidationDebateNumbers": [
+      "01",
+      "111",
+      "128",
+      "134",
+      "143",
+      "190",
+      "36",
+      "57",
+      "69",
+      "85"
+    ],
+    "observedDebateNumbers": [
+      "01",
+      "04",
+      "05",
+      "06",
+      "07",
+      "100",
+      "101",
+      "102",
+      "103",
+      "106",
+      "107",
+      "11",
+      "110",
+      "111",
+      "113",
+      "117",
+      "123",
+      "126",
+      "128",
+      "13",
+      "130",
+      "131",
+      "133",
+      "134",
+      "137",
+      "138",
+      "141",
+      "143",
+      "144",
+      "146",
+      "147",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155",
+      "158",
+      "16",
+      "160",
+      "161",
+      "162",
+      "163",
+      "164",
+      "165",
+      "171",
+      "175",
+      "178",
+      "180",
+      "182",
+      "183",
+      "185",
+      "188",
+      "19",
+      "190",
+      "191",
+      "193",
+      "194",
+      "195",
+      "26",
+      "27",
+      "31",
+      "36",
+      "37",
+      "38",
+      "43",
+      "44",
+      "51",
+      "52",
+      "55",
+      "57",
+      "58",
+      "59",
+      "60",
+      "62",
+      "63",
+      "64",
+      "65",
+      "67",
+      "69",
+      "74",
+      "77",
+      "79",
+      "80",
+      "81",
+      "85",
+      "86",
+      "87",
+      "90",
+      "91",
+      "93",
+      "99"
+    ],
+    "eligibleCandidateCount": 89,
+    "deterministicRank": "SHA-256(v2.1 policy hash | v2.1.1 successor analysis hash | debate number | debate id), ascending",
+    "replacementAfterSourceGateFailureAllowed": false,
+    "transcriptContentSemanticallyInspected": false,
+    "legacyAssessmentAccessed": false,
+    "scoreAccessed": false,
+    "winnerAccessed": false
+  },
+  "modelBoundary": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "apiKeysRemoved": true,
+    "scoreBlind": true,
+    "modelContextsExecuted": 0,
+    "retries": 0,
+    "timeoutExtensions": 0
+  },
+  "selected": [
+    {
+      "debateNumber": "187",
+      "debateId": "ward-dennett-more-than-matter-2019",
+      "videoId": "mongL_2KMGg",
+      "motion": "Are consciousness, personal identity, purpose, value, and free agency irreducible to the physical world?",
+      "sides": {
+        "pro": {
+          "label": "Persons are irreducible to matter",
+          "speakers": [
+            "Keith Ward"
+          ]
+        },
+        "con": {
+          "label": "Naturalism can explain persons",
+          "speakers": [
+            "Daniel Dennett"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "031d9d814f0b389f9f55d4097a435e331f48bf4d32ee87b947f35ba8ba5e1ec5",
+      "eventCount": 1837,
+      "durationSeconds": 4999.85,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/mongL_2KMGg/transcript.txt",
+        "transcriptSha256": "b96548a0ebacc82e318b58ec0851c90668838ccf3b6cdd47fe749740c83a29fb",
+        "events": ".assessment-cache/captions/mongL_2KMGg/events.json",
+        "eventsSha256": "581845df55c0e65b22af2e55fc5643297c582e4c44d6998ea82c1e6523011d91",
+        "manifest": ".assessment-cache/captions/mongL_2KMGg/manifest.json",
+        "manifestSha256": "ae38d275b9c48707a1762b5db21b103d5ff53d4941446330296e67f1e3965d8c",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "157",
+      "debateId": "dillahunty-howitt-christianity-true-2023",
+      "videoId": "13PnL6QyMEw",
+      "motion": "Is Christianity true, and do the grounding of logic, a necessary cause, divine hiddenness, and the relation of reason to revelation support or undermine it?",
+      "sides": {
+        "pro": {
+          "label": "Christian logos",
+          "speakers": [
+            "Lewis Howitt (PerspectivePhilosophy)"
+          ]
+        },
+        "con": {
+          "label": "Skeptical empiricism",
+          "speakers": [
+            "Matt Dillahunty"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "0bf859a24132a58d1ff81fbfb000527868fd0f12fbb87e4529871fb438f3fb90",
+      "eventCount": 3124,
+      "durationSeconds": 7053.02,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/13PnL6QyMEw/transcript.txt",
+        "transcriptSha256": "b764ef00b320fcfb77f79008de9cd0d0b74015a973628e9576f9b253740810d7",
+        "events": ".assessment-cache/captions/13PnL6QyMEw/events.json",
+        "eventsSha256": "069b4eccfa2bae25b212d9b4ed5337668159d4b261c7839c9bc5438a831992c6",
+        "manifest": ".assessment-cache/captions/13PnL6QyMEw/manifest.json",
+        "manifestSha256": "49876762ed160876207917a57809e4467792d523d53a2879a8fdb18edb5819a4",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "140",
+      "debateId": "rhodes-dillahunty-evidence-god-2021",
+      "videoId": "i0Q_KMN64bk",
+      "motion": "Is there good evidence for the existence of the God of classical theism?",
+      "sides": {
+        "pro": {
+          "label": "Classical-theist grounding",
+          "speakers": [
+            "Kenny Rhodes"
+          ]
+        },
+        "con": {
+          "label": "Skeptical evidentialism",
+          "speakers": [
+            "Matt Dillahunty"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "0ccd0c0ce7114fde2af24052e775e6b62112b28b21c0bfd4468bbe58d1c0cc57",
+      "eventCount": 4918,
+      "durationSeconds": 10886.059,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/i0Q_KMN64bk/transcript.txt",
+        "transcriptSha256": "f87cef5fc6a6ce8b83c92b181ad5f6ceee5ef91e869f9dce675d55fb69f4dd21",
+        "events": ".assessment-cache/captions/i0Q_KMN64bk/events.json",
+        "eventsSha256": "c7f7dbde59aa234213bfd01725e83d5133c729077ef25fc8a247f614ca03d6e1",
+        "manifest": ".assessment-cache/captions/i0Q_KMN64bk/manifest.json",
+        "manifestSha256": "b21f1f9af4ecc8de06d0f09823fc4d815f4739233fb579bcea8f594f6dcbe0ea",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "54",
+      "debateId": "jones-law-christianity-humanism-future-2025",
+      "videoId": "_UOwOCGIPzQ",
+      "motion": "Does Christianity or humanism offer a brighter future for humanity, especially for moral formation, social health, human rights, truth, and pluralistic freedom?",
+      "sides": {
+        "pro": {
+          "label": "Christianity offers the brighter future",
+          "speakers": [
+            "Michael Jones"
+          ]
+        },
+        "con": {
+          "label": "Humanism offers the brighter future",
+          "speakers": [
+            "Stephen Law"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "0cffca7722ba7044690cb1ec286f5de63ef1d7d4a416f1a81d341c1bc500780e",
+      "eventCount": 2680,
+      "durationSeconds": 5657.829,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/_UOwOCGIPzQ/transcript.txt",
+        "transcriptSha256": "4733985924c6c2d82979a7aa2e431a48e0f48455c3a0433d21eafae9617dd697",
+        "events": ".assessment-cache/captions/_UOwOCGIPzQ/events.json",
+        "eventsSha256": "e86ba4c4d1fb591c08e97ccd4b15627d2284f0dceef8b1608753e9e4b6078d7a",
+        "manifest": ".assessment-cache/captions/_UOwOCGIPzQ/manifest.json",
+        "manifestSha256": "f7abc76e77103a3d747301558f71f8cf46925752de3b95897094b89a9a984c52",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "82",
+      "debateId": "bush-mcallister-moral-anti-realism-realism-2025",
+      "videoId": "ya02MOhQMV8",
+      "motion": "Does moral realism have a common-sense, historical, or semantic advantage over moral anti-realism?",
+      "sides": {
+        "pro": {
+          "label": "Moral anti-realism",
+          "speakers": [
+            "Lance Bush"
+          ]
+        },
+        "con": {
+          "label": "Moral realism",
+          "speakers": [
+            "Derek McAllister"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "0e97c4200e2975910e4d49f9fff4ae9b4f51df93c13175dca580ebd4739c1b03",
+      "eventCount": 2451,
+      "durationSeconds": 5195.199,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/ya02MOhQMV8/transcript.txt",
+        "transcriptSha256": "59157c64dd34a4413272ae2fa05e2708491b312c258a42470daea82dbb6f1706",
+        "events": ".assessment-cache/captions/ya02MOhQMV8/events.json",
+        "eventsSha256": "38b7235c036bfd356a804c16ffb2d78c94cd5c8f3b3fbfb8b5a40a4a24c141f4",
+        "manifest": ".assessment-cache/captions/ya02MOhQMV8/manifest.json",
+        "manifestSha256": "f2ad60dcd9ba41702b02757f131b98aff88d8b5a1f0268d21d188e45c908ff92",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "70",
+      "debateId": "malpass-anderson-logic-god-2021",
+      "videoId": "4qpwVLLebng",
+      "motion": "Does the existence of necessary truths or laws of logic support a necessarily existing divine mind, or can propositions be explained without God?",
+      "sides": {
+        "pro": {
+          "label": "Divine conceptualism",
+          "speakers": [
+            "James Anderson"
+          ]
+        },
+        "con": {
+          "label": "Platonist critique",
+          "speakers": [
+            "Alex Malpass"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "0fec231bb5b16d348c37c665720d8e69004f6c0f8defe90099ce91a4181a6c62",
+      "eventCount": 2593,
+      "durationSeconds": 5287.44,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/4qpwVLLebng/transcript.txt",
+        "transcriptSha256": "b387842f471264fa56528be51b82a687005b4a12f0d4727f4904bb53fdd84fa1",
+        "events": ".assessment-cache/captions/4qpwVLLebng/events.json",
+        "eventsSha256": "a6dec76effbc6fad2d0f3bbb7a5cbd32868c5c243088aee5ecae09c1ad71eed2",
+        "manifest": ".assessment-cache/captions/4qpwVLLebng/manifest.json",
+        "manifestSha256": "7e879eb119794701d02875f9699f3c217de7d1109d8289f86e77d98a14eeebdf",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "118",
+      "debateId": "hernandez-schieber-god-existence-2023",
+      "videoId": "sy1lUHGIQCQ",
+      "motion": "Does theism or atheistic naturalism better explain evil, objective morality, knowledge, rationality, consciousness, free will, animal suffering, cosmic hostility, and non-resistant nonbelief?",
+      "sides": {
+        "pro": {
+          "label": "Christian theism",
+          "speakers": [
+            "Eric Hernandez"
+          ]
+        },
+        "con": {
+          "label": "Atheistic naturalism",
+          "speakers": [
+            "Justin Schieber"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "13a3616c7cbae4105f394122f5dc43d6014e27d904bfe8a0c1e77aac6586e163",
+      "eventCount": 3542,
+      "durationSeconds": 8242.76,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/sy1lUHGIQCQ/transcript.txt",
+        "transcriptSha256": "c1aae59e4251c4458d4a8a1c1229868e90d84a4981d96156c5b925adee3f247b",
+        "events": ".assessment-cache/captions/sy1lUHGIQCQ/events.json",
+        "eventsSha256": "8b83bb5cda771fc1561c8791a66b1f58267d3a8db8df13c3f2b124f21bfc8813",
+        "manifest": ".assessment-cache/captions/sy1lUHGIQCQ/manifest.json",
+        "manifestSha256": "94097ce6efa07ecd20603a4486515ceebbf9cc779066bb6058bf06a5560e8127",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "139",
+      "debateId": "adelstein-dillahunty-belief-god-2025",
+      "videoId": "vHxAw5-RXIw",
+      "motion": "Should we believe in an all-knowing, all-powerful, morally perfect being?",
+      "sides": {
+        "pro": {
+          "label": "Theistic evidential case",
+          "speakers": [
+            "Matthew Adelstein"
+          ]
+        },
+        "con": {
+          "label": "Evidential skepticism",
+          "speakers": [
+            "Matt Dillahunty"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "14a944ca4815cd9ab39102a93dd0deec3dec32608cbfe527e9938f43fbb61834",
+      "eventCount": 3236,
+      "durationSeconds": 6821.84,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/vHxAw5-RXIw/transcript.txt",
+        "transcriptSha256": "c15db9cb46afed3c4fef0a368baf300e6d2b86d37f13f4a35b918cbce1186a5d",
+        "events": ".assessment-cache/captions/vHxAw5-RXIw/events.json",
+        "eventsSha256": "203618ed0feccb8327441aa0bff92701075312f93a6832a2f46ba39473eca9e1",
+        "manifest": ".assessment-cache/captions/vHxAw5-RXIw/manifest.json",
+        "manifestSha256": "e6b9be34970c87d26c9e6c81bd262eebb0de2fe21f8c51f323082b1d6e6d9c99",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "08",
+      "debateId": "wood-shermer-god-exist-2022",
+      "videoId": "xKd2Ht5Bs-k",
+      "motion": "Does science, morality, evil, and explanatory method support theism more strongly than skeptical naturalism?",
+      "sides": {
+        "pro": {
+          "label": "Theist",
+          "speakers": [
+            "David Wood"
+          ]
+        },
+        "con": {
+          "label": "Skeptic",
+          "speakers": [
+            "Michael Shermer"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "15249210461d6b4bd8536b29af88fbc20d6e315501a0aed47c1b97b65f8732e6",
+      "eventCount": 3880,
+      "durationSeconds": 8241.12,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/xKd2Ht5Bs-k/transcript.txt",
+        "transcriptSha256": "cce3f28a76f92c36937d25e575d9a83e68d3952cd610663451e226ea1bcf08f8",
+        "events": ".assessment-cache/captions/xKd2Ht5Bs-k/events.json",
+        "eventsSha256": "9345f9195778e89ef8d80c38d5e0484433b9e3d2b6034d1f43e52ddf1b847e51",
+        "manifest": ".assessment-cache/captions/xKd2Ht5Bs-k/manifest.json",
+        "manifestSha256": "9b679b5ac84cbf51cba952aa10900c167f30d4af59f6af32dde8d5a724749898",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "159",
+      "debateId": "wood-aron-ra-naturalism-2023",
+      "videoId": "dto5DQ7GBEQ",
+      "motion": "Is naturalism true, or does an evolutionary naturalist account of human cognition undermine the rational confidence required to affirm naturalism?",
+      "sides": {
+        "pro": {
+          "label": "Cognitive-reliability critique",
+          "speakers": [
+            "David Wood"
+          ]
+        },
+        "con": {
+          "label": "Evidence-centered naturalism",
+          "speakers": [
+            "Aron Ra"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankSha256": "160747ee3194cd311c0ebfb29ed4054d97e0aca5ddf4f55b44d85d25976c00db",
+      "eventCount": 2993,
+      "durationSeconds": 6707.04,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/dto5DQ7GBEQ/transcript.txt",
+        "transcriptSha256": "8373539ba45cf996f7c8b9237627a5287df64c6a99afd50f32f296f51622a996",
+        "events": ".assessment-cache/captions/dto5DQ7GBEQ/events.json",
+        "eventsSha256": "78125b95d4721d2176fa6fd2a629f26d2cf34b58b74488438cc4ae30fefd88e2",
+        "manifest": ".assessment-cache/captions/dto5DQ7GBEQ/manifest.json",
+        "manifestSha256": "3e2e2230a271b84b73c12cb96a22186d79e3683fe887f253594d5fbfe308d069",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    }
+  ],
+  "sourceHashes": {
+    "docs/assessment-production/manifest-v1.json": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec",
+    "docs/assessment-production/score-stability-policy-v2.1-proposal.md": "9c9d27f96c7e30d7183ed63505e6be723d1bc23473900b3a9d3dd17876083bfe",
+    "docs/assessment-production/score-stability-v2.1.1-discovery-successor-development/development-analysis.json": "611f802136011c98f46f1810690229731844c8af16a1f51eb4dc7d615ccf7391",
+    "docs/assessment-production/canary-v1-inventory/analysis.json": "f1e969aae9c3cd5e4f6d72b8fd02227663d504219953e8d35ae867b719417e05",
+    "docs/assessment-production/score-stability-v2-validation-cohort/selection.json": "0f83b4a1cc52967605372c978527f3e3210ff194cd9e2ceb7d082520019a3ac2",
+    "docs/assessment-production/score-stability-v2.1-validation-cohort/selection.json": "76d8c7bfd476b19097739435954b8b318ac9d22b42d4dec607330f2d76c8ab39",
+    "scripts/select-assessment-production-score-stability-v2.1.1-cohort.mjs": "5c8906bcd524f7f57bcffa880de7644b1ce1351d2052b884614f5fe962807546",
+    "scripts/test-assessment-production-score-stability-v2.1.1-cohort.mjs": "3de30e3a9cfed003c2737bd3884966e72a0df66faa29a3b370e133c39ebc5792",
+    ".assessment-cache/captions/mongL_2KMGg/transcript.txt": "b96548a0ebacc82e318b58ec0851c90668838ccf3b6cdd47fe749740c83a29fb",
+    ".assessment-cache/captions/mongL_2KMGg/events.json": "581845df55c0e65b22af2e55fc5643297c582e4c44d6998ea82c1e6523011d91",
+    ".assessment-cache/captions/mongL_2KMGg/manifest.json": "ae38d275b9c48707a1762b5db21b103d5ff53d4941446330296e67f1e3965d8c",
+    ".assessment-cache/captions/13PnL6QyMEw/transcript.txt": "b764ef00b320fcfb77f79008de9cd0d0b74015a973628e9576f9b253740810d7",
+    ".assessment-cache/captions/13PnL6QyMEw/events.json": "069b4eccfa2bae25b212d9b4ed5337668159d4b261c7839c9bc5438a831992c6",
+    ".assessment-cache/captions/13PnL6QyMEw/manifest.json": "49876762ed160876207917a57809e4467792d523d53a2879a8fdb18edb5819a4",
+    ".assessment-cache/captions/i0Q_KMN64bk/transcript.txt": "f87cef5fc6a6ce8b83c92b181ad5f6ceee5ef91e869f9dce675d55fb69f4dd21",
+    ".assessment-cache/captions/i0Q_KMN64bk/events.json": "c7f7dbde59aa234213bfd01725e83d5133c729077ef25fc8a247f614ca03d6e1",
+    ".assessment-cache/captions/i0Q_KMN64bk/manifest.json": "b21f1f9af4ecc8de06d0f09823fc4d815f4739233fb579bcea8f594f6dcbe0ea",
+    ".assessment-cache/captions/_UOwOCGIPzQ/transcript.txt": "4733985924c6c2d82979a7aa2e431a48e0f48455c3a0433d21eafae9617dd697",
+    ".assessment-cache/captions/_UOwOCGIPzQ/events.json": "e86ba4c4d1fb591c08e97ccd4b15627d2284f0dceef8b1608753e9e4b6078d7a",
+    ".assessment-cache/captions/_UOwOCGIPzQ/manifest.json": "f7abc76e77103a3d747301558f71f8cf46925752de3b95897094b89a9a984c52",
+    ".assessment-cache/captions/ya02MOhQMV8/transcript.txt": "59157c64dd34a4413272ae2fa05e2708491b312c258a42470daea82dbb6f1706",
+    ".assessment-cache/captions/ya02MOhQMV8/events.json": "38b7235c036bfd356a804c16ffb2d78c94cd5c8f3b3fbfb8b5a40a4a24c141f4",
+    ".assessment-cache/captions/ya02MOhQMV8/manifest.json": "f2ad60dcd9ba41702b02757f131b98aff88d8b5a1f0268d21d188e45c908ff92",
+    ".assessment-cache/captions/4qpwVLLebng/transcript.txt": "b387842f471264fa56528be51b82a687005b4a12f0d4727f4904bb53fdd84fa1",
+    ".assessment-cache/captions/4qpwVLLebng/events.json": "a6dec76effbc6fad2d0f3bbb7a5cbd32868c5c243088aee5ecae09c1ad71eed2",
+    ".assessment-cache/captions/4qpwVLLebng/manifest.json": "7e879eb119794701d02875f9699f3c217de7d1109d8289f86e77d98a14eeebdf",
+    ".assessment-cache/captions/sy1lUHGIQCQ/transcript.txt": "c1aae59e4251c4458d4a8a1c1229868e90d84a4981d96156c5b925adee3f247b",
+    ".assessment-cache/captions/sy1lUHGIQCQ/events.json": "8b83bb5cda771fc1561c8791a66b1f58267d3a8db8df13c3f2b124f21bfc8813",
+    ".assessment-cache/captions/sy1lUHGIQCQ/manifest.json": "94097ce6efa07ecd20603a4486515ceebbf9cc779066bb6058bf06a5560e8127",
+    ".assessment-cache/captions/vHxAw5-RXIw/transcript.txt": "c15db9cb46afed3c4fef0a368baf300e6d2b86d37f13f4a35b918cbce1186a5d",
+    ".assessment-cache/captions/vHxAw5-RXIw/events.json": "203618ed0feccb8327441aa0bff92701075312f93a6832a2f46ba39473eca9e1",
+    ".assessment-cache/captions/vHxAw5-RXIw/manifest.json": "e6b9be34970c87d26c9e6c81bd262eebb0de2fe21f8c51f323082b1d6e6d9c99",
+    ".assessment-cache/captions/xKd2Ht5Bs-k/transcript.txt": "cce3f28a76f92c36937d25e575d9a83e68d3952cd610663451e226ea1bcf08f8",
+    ".assessment-cache/captions/xKd2Ht5Bs-k/events.json": "9345f9195778e89ef8d80c38d5e0484433b9e3d2b6034d1f43e52ddf1b847e51",
+    ".assessment-cache/captions/xKd2Ht5Bs-k/manifest.json": "9b679b5ac84cbf51cba952aa10900c167f30d4af59f6af32dde8d5a724749898",
+    ".assessment-cache/captions/dto5DQ7GBEQ/transcript.txt": "8373539ba45cf996f7c8b9237627a5287df64c6a99afd50f32f296f51622a996",
+    ".assessment-cache/captions/dto5DQ7GBEQ/events.json": "78125b95d4721d2176fa6fd2a629f26d2cf34b58b74488438cc4ae30fefd88e2",
+    ".assessment-cache/captions/dto5DQ7GBEQ/manifest.json": "3e2e2230a271b84b73c12cb96a22186d79e3683fe887f253594d5fbfe308d069"
+  },
+  "totals": {
+    "debates": 10,
+    "eventCount": 31254,
+    "durationHours": 19.192,
+    "sourceGateFailures": 0,
+    "modelContexts": 0,
+    "paidTranscriptionCalls": 0,
+    "meteredApiCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "authorization": {
+    "freshSourcePreparation": true,
+    "discoveryExecutionManifestPreparation": false,
+    "discoveryModelExecution": false,
+    "inventoryPreparation": false,
+    "inventoryModelExecution": false,
+    "independentJudgmentPacketPreparation": false,
+    "independentJudgmentModelExecution": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "semanticCorrection": false,
+    "paidTranscription": false,
+    "audioVerification": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationPreparation": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "prepare-v2.1.1-source-packets-token-ledgers-and-schemas-model-free-only"
+}
