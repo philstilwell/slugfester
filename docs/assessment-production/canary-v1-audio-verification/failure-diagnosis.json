@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0-production-canary-audio-failure-diagnosis",
+  "protocolId": "assessment-production-canary-v1-audio-failure-diagnosis",
+  "status": "mixed-speaker-lexical-collision-confirmed-audio-attribution-packet-preparation-authorized",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "preservedDeterministicGate": {
+    "path": "docs/assessment-production/canary-v1-audio-verification/analysis.json",
+    "status": "production-canary-audio-verification-unresolved",
+    "verified": 3,
+    "unresolved": 1,
+    "erasedOrReclassified": false
+  },
+  "unresolvedMove": {
+    "debateNumber": "05",
+    "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+    "moveId": "pro-move-07",
+    "expectedSpeaker": "Sye Ten Bruggencate",
+    "proposition": "Evidence is intelligible only when one begins with God, who can reveal himself so certainly that every person knows he exists despite contrary professions.",
+    "sourceSpan": {
+      "startEvent": 1310,
+      "endEvent": 1438
+    },
+    "transcriptPath": "output/transcribe/assessment-production-canary-v1-audio-verification/debate-05/transcripts/pro-move-07.transcript.json",
+    "transcriptSha256": "9b54923073f91353cbd8598556359b13be5953e6a7084815702ff2d73f5e9f32",
+    "diarizedSegmentCount": 122,
+    "namedSpeakers": [
+      "Matt Dillahunty",
+      "Sye Ten Bruggencate"
+    ],
+    "deterministicEvidence": {
+      "status": "unresolved",
+      "expectedSpeaker": "Sye Ten Bruggencate",
+      "fullClipExcerptRecall": 1,
+      "expectedSpeakerExcerptRecall": 0.8589743589743589,
+      "highestOtherSpeaker": "Matt Dillahunty",
+      "highestOtherSpeakerExcerptRecall": 0.8717948717948718,
+      "expectedSpeakerRecallMargin": -0.012820512820512886,
+      "expectedSpeakerDurationSeconds": 96.65,
+      "checks": {
+        "fullClipExcerptRecovered": true,
+        "expectedSpeakerExcerptRecovered": true,
+        "expectedSpeakerRecallDistinct": false,
+        "expectedSpeakerDurationSufficient": true
+      },
+      "speakerEvidence": [
+        {
+          "speaker": "Matt Dillahunty",
+          "segmentCount": 61,
+          "durationSeconds": 132.85,
+          "wordCount": 537,
+          "excerptRecall": 0.8717948717948718
+        },
+        {
+          "speaker": "Sye Ten Bruggencate",
+          "segmentCount": 58,
+          "durationSeconds": 96.65,
+          "wordCount": 453,
+          "excerptRecall": 0.8589743589743589
+        },
+        {
+          "speaker": "A",
+          "segmentCount": 3,
+          "durationSeconds": 2.95,
+          "wordCount": 11,
+          "excerptRecall": 0.05128205128205128
+        }
+      ]
+    }
+  },
+  "diagnosis": {
+    "requestCompleted": true,
+    "rawTranscriptAvailable": true,
+    "fullClipExcerptRecovered": true,
+    "expectedSpeakerExcerptRecovered": true,
+    "expectedSpeakerDurationSufficient": true,
+    "expectedSpeakerRecallDistinct": false,
+    "failureClass": "mixed-speaker-lexical-collision",
+    "thresholdRelaxationApplied": false,
+    "speakerRelabelingApplied": false,
+    "manualAttributionOverrideApplied": false,
+    "paidTranscriptionRetryApplied": false
+  },
+  "futureModelBoundary": {
+    "model": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "disputedAudioAttributionFieldsOnly": true,
+    "ratingsUnavailable": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "sourceHashes": {
+    "docs/assessment-production/canary-v1-audio-verification/analysis.json": "202749d54faeb376f66da1cefa2f5291fd009fd7012d33aea4ddf8bf195a240e",
+    "docs/assessment-production/canary-v1-audio-verification/audio-verification.json": "3d7919a9c47dea725f0b6709dddd2f74d38961fceebabb119ae2bba3cdf8d0e2",
+    "docs/assessment-production/canary-v1-disagreement-audio-prep/audio-work-items.json": "5c409df3029610b0c96518c83fc600e69f0e6a704b1d55159d85c29cfb4a5676",
+    "output/transcribe/assessment-production-canary-v1-audio-verification/debate-05/transcripts/pro-move-07.transcript.json": "9b54923073f91353cbd8598556359b13be5953e6a7084815702ff2d73f5e9f32"
+  },
+  "costs": {
+    "additionalPaidTranscriptionCalls": 0,
+    "additionalTranscriptionCostUsd": 0,
+    "modelContexts": 0,
+    "meteredModelApiCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "authorization": {
+    "audioAttributionAdjudicationPacketPreparation": true,
+    "audioAttributionAdjudicationModelExecution": false,
+    "paidTranscription": false,
+    "retry": false,
+    "correctionCall": false,
+    "disputeAdjudicationPacketPreparation": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  }
+}
