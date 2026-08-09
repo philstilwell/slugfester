@@ -1,0 +1,205 @@
+{
+  "schemaVersion": "1.0-production-canary-score-failure-diagnosis",
+  "protocolId": "assessment-production-canary-v1-adjudicated-consensus",
+  "status": "confirmed-single-rounding-edge-winner-preservation-failure",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "sourceHashes": {
+    "docs/assessment-production/canary-v1-score-pass/calculated-scores.json": "9b0b18f9a76d4cd88f8478ccb2b019b4577e09b8f03cd545839f604d938e82fd",
+    "docs/assessment-production/canary-v1-score-pass/analysis.json": "136673cf5a4cdd11461b7c853d040d1f8a89af9d8a313314323c3d9d0b6856be",
+    "docs/assessment-production/canary-v1-final-ledger/final-ledger.json": "3840154541d129b4a103f4a69fb0380a20eb11f3d421f156bfaa16e4c3a7d9b0",
+    "docs/assessment-production/canary-v1-final-ledger/analysis.json": "9835b458069dd2c3bd8b8ca2e8620b9fcabea12460a7a8b8e8bccd297f937008",
+    "docs/assessment-production/canary-v1-score-pass/score-pass-manifest.json": "ff07f0026abc573f8dd893472270b58804261bc05270efd48a661b7dc7b73bc8",
+    "scripts/lib/assessment-production-canary-score-gate.mjs": "70ff359ff603da3d17520472885d16b702a7da98496828870b6951f221d74345",
+    "scripts/diagnose-assessment-production-canary-score-failure.mjs": "565bbba5dcc5a96a96648289c4abab1e5215418ff5c48f36217705875b52f94d",
+    "scripts/test-assessment-production-canary-score-failure-diagnosis.mjs": "b300f6dd8471a3cb8f340379a231df59efb5b79d47c6a4562e8151306cf461bc"
+  },
+  "resultIntegrity": {
+    "scoreArtifactUnchanged": true,
+    "scoringPasses": 1,
+    "deterministicCompilerPassed": true,
+    "exactLedgerReplayPassed": true,
+    "sourceSchemaValidationPassed": true,
+    "modelCalculatedScores": false,
+    "postResultTuningPerformed": false,
+    "rerunPerformed": false
+  },
+  "gateIsolation": {
+    "numericThresholdsPassed": {
+      "scoreBounds": true,
+      "meanAbsoluteDistance": true,
+      "maximumAbsoluteDistance": true,
+      "maximumOutsideInitialRange": true
+    },
+    "agreedWinnerDebates": 10,
+    "agreedWinnersPreserved": 9,
+    "failedDebates": [
+      "64"
+    ],
+    "allOtherDebatesPassedWinnerPreservation": true
+  },
+  "debate64": {
+    "debateId": "pine-watkins-god-existence-2020",
+    "initial": {
+      "passA": {
+        "pro": 80,
+        "con": 81,
+        "conMinusProWeightedMean": 0.61,
+        "winner": "con"
+      },
+      "passB": {
+        "pro": 82,
+        "con": 83,
+        "conMinusProWeightedMean": 0.55,
+        "winner": "con"
+      }
+    },
+    "final": {
+      "proWeightedSectionMean": 81.54,
+      "conWeightedSectionMean": 81.62,
+      "conMinusProWeightedMean": 0.08,
+      "proRoundedScore": 82,
+      "conRoundedScore": 82,
+      "winner": "tie",
+      "interpretation": "The final unrounded weighted mean still favors con by 0.08, but repository rounding maps both sides to 82 and therefore classifies the result as a tie."
+    },
+    "sectionRows": [
+      {
+        "sectionId": "section-cosmological-ground",
+        "weightPercent": 25,
+        "passA": {
+          "pro": 78,
+          "con": 80,
+          "conMinusPro": 2
+        },
+        "passB": {
+          "pro": 77,
+          "con": 81,
+          "conMinusPro": 4
+        },
+        "final": {
+          "pro": 78,
+          "con": 81,
+          "conMinusPro": 3
+        }
+      },
+      {
+        "sectionId": "section-divine-freedom",
+        "weightPercent": 17,
+        "passA": {
+          "pro": 82,
+          "con": 81,
+          "conMinusPro": -1
+        },
+        "passB": {
+          "pro": 87,
+          "con": 80,
+          "conMinusPro": -7
+        },
+        "final": {
+          "pro": 86,
+          "con": 81,
+          "conMinusPro": -5
+        }
+      },
+      {
+        "sectionId": "section-changing-knowledge",
+        "weightPercent": 18,
+        "passA": {
+          "pro": 84,
+          "con": 81,
+          "conMinusPro": -3
+        },
+        "passB": {
+          "pro": 84,
+          "con": 84,
+          "conMinusPro": 0
+        },
+        "final": {
+          "pro": 84,
+          "con": 84,
+          "conMinusPro": 0
+        }
+      },
+      {
+        "sectionId": "section-evil-goodness",
+        "weightPercent": 26,
+        "passA": {
+          "pro": 76,
+          "con": 84,
+          "conMinusPro": 8
+        },
+        "passB": {
+          "pro": 81,
+          "con": 86,
+          "conMinusPro": 5
+        },
+        "final": {
+          "pro": 79,
+          "con": 84,
+          "conMinusPro": 5
+        }
+      },
+      {
+        "sectionId": "section-hiddenness-revelation",
+        "weightPercent": 14,
+        "passA": {
+          "pro": 84,
+          "con": 75,
+          "conMinusPro": -9
+        },
+        "passB": {
+          "pro": 84,
+          "con": 80,
+          "conMinusPro": -4
+        },
+        "final": {
+          "pro": 84,
+          "con": 76,
+          "conMinusPro": -8
+        }
+      }
+    ],
+    "mergeAudit": {
+      "disputedMoves": 16,
+      "candidateSelections": 38,
+      "selectionSources": {
+        "passA": 16,
+        "passB": 22
+      },
+      "roundedMeanMerges": 48,
+      "dependencyMeanMergesSuppressed": 0,
+      "burdenAdjustments": {
+        "pro": 0,
+        "con": 0
+      }
+    }
+  },
+  "diagnosis": {
+    "compilerDefectDetected": false,
+    "sourceHashFailureDetected": false,
+    "unresolvedDisputeDetected": false,
+    "scoreBoundsFailureDetected": false,
+    "distanceThresholdFailureDetected": false,
+    "semanticWinnerInversionDetected": false,
+    "roundedWinnerClassCollapseDetected": true,
+    "interpretation": "The frozen gate failed exactly as specified because deterministic field-level consensus narrowed a one-point con win to a rounded tie. The evidence supports a rounding-edge outcome, not a compiler defect or an unrounded pro-over-con reversal."
+  },
+  "decision": {
+    "canaryPassed": false,
+    "automaticRerunAuthorized": false,
+    "thresholdRelaxationAuthorized": false,
+    "judgmentRepairAuthorized": false,
+    "publicationPacketPreparationAuthorized": false,
+    "publicationModelExecutionAuthorized": false,
+    "productionMutationAuthorized": false,
+    "remainingProductionBatchesAuthorized": false
+  },
+  "recommendation": {
+    "preserveFailureUnchanged": true,
+    "doNotForceDebate64Winner": true,
+    "doNotRelaxFrozenGate": true,
+    "nextActionRequiresNewProspectiveAuthorization": true,
+    "candidatePolicyQuestion": "For a future version only, decide prospectively whether agreed-winner preservation should operate on rounded published scores or on the sign of unrounded weighted means, then validate that policy on a fresh disjoint sample."
+  }
+}
