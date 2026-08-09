@@ -1,0 +1,1870 @@
+{
+  "schemaVersion": "1.0-production-canary-deterministic-disagreements",
+  "protocolId": "assessment-production-canary-v1-decomposed-consensus",
+  "debateNumber": "13",
+  "debateId": "knechtle-oconnor-christian-morality-2025",
+  "moveDisputes": [
+    {
+      "moveId": "move-pro-redemption-account",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 66,
+          "candidate2": 64,
+          "roundedMeanAfterAdjudication": 65
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 88,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "move-con-spiritual-convenience",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 14,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "precisionClarity"
+        ],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 3
+          },
+          "candidate2": {
+            "importance": 2
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "move-pro-redemption-account"
+              ],
+              "components": [
+                {
+                  "componentId": "move-con-spiritual-convenience-component-01",
+                  "targetMoveId": "move-pro-redemption-account",
+                  "text": "Whether the Christian redemption account is better understood as truth or as consolation created to overcome suffering and meaninglessness.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "move-pro-redemption-account"
+              ],
+              "components": [
+                {
+                  "componentId": "move-con-spiritual-convenience-component-01",
+                  "targetMoveId": "move-pro-redemption-account",
+                  "text": "Whether the stated redemption account is true or internally warranted, rather than merely consoling.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 58
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 62,
+          "candidate2": 61,
+          "roundedMeanAfterAdjudication": 62
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 87,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 82,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 81
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "move-pro-suffering-restoration",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 12,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "move-con-spiritual-convenience"
+              ],
+              "components": [
+                {
+                  "componentId": "move-pro-suffering-restoration-component-01",
+                  "targetMoveId": "move-con-spiritual-convenience",
+                  "text": "Whether Christianity merely supplies convenient consolation or offers a coherent explanation of suffering and a promised resolution.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-pro-suffering-restoration-component-02",
+                  "targetMoveId": "move-con-spiritual-convenience",
+                  "text": "Whether the religion's usefulness provides evidence that human beings created its story.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "move-con-spiritual-convenience"
+              ],
+              "components": [
+                {
+                  "componentId": "move-pro-suffering-restoration-component-01",
+                  "targetMoveId": "move-con-spiritual-convenience",
+                  "text": "Whether Christianity's consolation is evidence that people created it to overcome suffering and meaninglessness.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 60
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 68
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 81,
+          "candidate2": 79,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 69,
+          "candidate2": 66,
+          "roundedMeanAfterAdjudication": 68
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "move-con-testament-portrayals",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 23,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "move-pro-redemption-account",
+                "move-pro-suffering-restoration"
+              ],
+              "components": [
+                {
+                  "componentId": "move-con-testament-portrayals-component-01",
+                  "targetMoveId": "move-pro-suffering-restoration",
+                  "text": "Whether the asserted biblical worldview presents one morally and conceptually consistent God across its portrayals.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-con-testament-portrayals-component-02",
+                  "targetMoveId": "move-pro-redemption-account",
+                  "text": "Whether divine love and saving grace cohere with jealous, vindictive, military, mutable, and localized portrayals.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "move-pro-redemption-account",
+                "move-pro-suffering-restoration"
+              ],
+              "components": [
+                {
+                  "componentId": "move-con-testament-portrayals-component-01",
+                  "targetMoveId": "move-pro-suffering-restoration",
+                  "text": "Whether the same good God coherently creates, enters, judges, and ultimately restores a rebellion-damaged world.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-con-testament-portrayals-component-02",
+                  "targetMoveId": "move-pro-redemption-account",
+                  "text": "Whether divine love and saving grace are consistent with the broader biblical portrayal of God.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 68
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 86
+            },
+            "candidate2": {
+              "value": 80
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "question",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 76,
+          "candidate2": 73,
+          "roundedMeanAfterAdjudication": 75
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 91,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 90
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "move-pro-righteous-anger",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 13,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "move-con-testament-portrayals"
+              ],
+              "components": [
+                {
+                  "componentId": "move-pro-righteous-anger-component-01",
+                  "targetMoveId": "move-con-testament-portrayals",
+                  "text": "Whether jealousy, anger, violence, mercy, and grace can consistently characterize the same God across both Testaments.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "move-con-testament-portrayals"
+              ],
+              "components": [
+                {
+                  "componentId": "move-pro-righteous-anger-component-01",
+                  "targetMoveId": "move-con-testament-portrayals",
+                  "text": "Whether jealousy, anger, violence, mercy, and grace can be reconciled across the two Testaments.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 77,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 74,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 73
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 67,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 70
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "move-con-slaves-as-property",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "move-pro-redemption-account",
+                "move-pro-righteous-anger",
+                "move-pro-suffering-restoration"
+              ],
+              "components": [
+                {
+                  "componentId": "move-con-slaves-as-property-component-01",
+                  "targetMoveId": "move-pro-righteous-anger",
+                  "text": "Whether the cited slavery permissions exhibit righteous opposition to evil or instead authorize ownership and unequal treatment.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-con-slaves-as-property-component-02",
+                  "targetMoveId": "move-pro-suffering-restoration",
+                  "text": "Whether attributing injustice to human rebellion explains divine legislation permitting the purchase of people as property.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-con-slaves-as-property-component-03",
+                  "targetMoveId": "move-pro-redemption-account",
+                  "text": "Whether divine love is morally compatible with legal permission to own foreign human beings.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 63
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "move-pro-righteous-anger",
+                "move-pro-suffering-restoration"
+              ],
+              "components": [
+                {
+                  "componentId": "move-con-slaves-as-property-component-01",
+                  "targetMoveId": "move-pro-righteous-anger",
+                  "text": "Whether divine moral opposition to evil renders the cited slavery permissions righteous or consistent.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-con-slaves-as-property-component-02",
+                  "targetMoveId": "move-pro-suffering-restoration",
+                  "text": "Whether human rebellion rather than divine approval explains unjust social institutions.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 67
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 85,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 89,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 90
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "move-pro-regulation-not-approval",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 13,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "representationalCharity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "move-con-slaves-as-property",
+                "move-con-testament-portrayals"
+              ],
+              "components": [
+                {
+                  "componentId": "move-pro-regulation-not-approval-component-01",
+                  "targetMoveId": "move-con-slaves-as-property",
+                  "text": "Whether Mosaic permission and regulation of slavery constitute divine moral endorsement of owning human beings.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-pro-regulation-not-approval-component-02",
+                  "targetMoveId": "move-con-slaves-as-property",
+                  "text": "Why the specific permission to purchase foreigners as property was necessary or humane.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-pro-regulation-not-approval-component-03",
+                  "targetMoveId": "move-con-testament-portrayals",
+                  "text": "Whether morally troubling Old Testament laws can be reconciled with divine goodness through accommodation to hardened hearts.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 71
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "move-con-slaves-as-property"
+              ],
+              "components": [
+                {
+                  "componentId": "move-pro-regulation-not-approval-component-01",
+                  "targetMoveId": "move-con-slaves-as-property",
+                  "text": "Whether permissive slavery legislation amounts to divine endorsement of ownership and unequal treatment.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 84
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 70
+            },
+            "candidate2": {
+              "value": 62
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 69
+            },
+            "candidate2": {
+              "value": 78
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 73,
+          "candidate2": 69,
+          "roundedMeanAfterAdjudication": 71
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 87,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "move-con-family-coercion",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 2
+          },
+          "candidate2": {
+            "importance": 3
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "move-pro-regulation-not-approval"
+              ],
+              "components": [
+                {
+                  "componentId": "move-con-family-coercion-component-01",
+                  "targetMoveId": "move-pro-regulation-not-approval",
+                  "text": "Whether the regulation-as-accommodation defense explains a rule separating a freed man from his wife and children.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-con-family-coercion-component-02",
+                  "targetMoveId": "move-pro-regulation-not-approval",
+                  "text": "Whether a less coercive family-preserving rule was unavailable in the allegedly transitional legal setting.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "move-pro-regulation-not-approval"
+              ],
+              "components": [
+                {
+                  "componentId": "move-con-family-coercion-component-01",
+                  "targetMoveId": "move-pro-regulation-not-approval",
+                  "text": "Whether the slavery rules plausibly function as constrained regulation rather than morally avoidable authorization.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 91,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 90
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 86,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "move-pro-canonical-dignity",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 6,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 2
+          },
+          "candidate2": {
+            "importance": 3
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "move-con-family-coercion",
+                "move-con-slaves-as-property"
+              ],
+              "components": [
+                {
+                  "componentId": "move-pro-canonical-dignity-component-01",
+                  "targetMoveId": "move-con-family-coercion",
+                  "text": "Why the specific family-separation rule was permitted rather than requiring the wife and children to leave with the freed man.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-pro-canonical-dignity-component-02",
+                  "targetMoveId": "move-con-slaves-as-property",
+                  "text": "Whether the wider canon supplies moral principles opposed to human ownership and unequal dignity.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-pro-canonical-dignity-component-03",
+                  "targetMoveId": "move-con-family-coercion",
+                  "text": "Whether broader biblical commitments to dignity and liberation create tension with coercive slavery rules.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 61
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "move-con-family-coercion",
+                "move-con-slaves-as-property"
+              ],
+              "components": [
+                {
+                  "componentId": "move-pro-canonical-dignity-component-01",
+                  "targetMoveId": "move-con-family-coercion",
+                  "text": "Why the wife-and-children separation rule was necessary or compatible with a protective transitional purpose.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-pro-canonical-dignity-component-02",
+                  "targetMoveId": "move-con-slaves-as-property",
+                  "text": "Whether broader biblical themes oppose treating people as slaves or unequal property.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 67
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 66
+            },
+            "candidate2": {
+              "value": 74
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 76,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 75
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 79,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 78
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "move-con-galatians-parallel",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 22,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "move-pro-canonical-dignity"
+              ],
+              "components": [
+                {
+                  "componentId": "move-con-galatians-parallel-component-01",
+                  "targetMoveId": "move-pro-canonical-dignity",
+                  "text": "Whether Galatians' statement that there is neither slave nor free establishes opposition to earthly slavery.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-con-galatians-parallel-component-02",
+                  "targetMoveId": "move-pro-canonical-dignity",
+                  "text": "Whether the cumulative creation, Exodus, inclusion, and unity themes independently establish an anti-slavery canonical trajectory.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "move-pro-canonical-dignity"
+              ],
+              "components": [
+                {
+                  "componentId": "move-con-galatians-parallel-component-01",
+                  "targetMoveId": "move-pro-canonical-dignity",
+                  "text": "Whether Galatians' statement of unity independently entails abolition of earthly slave and free distinctions.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 86,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 89
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 84,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 87,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 89
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "move-pro-priscilla-counterexample",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 3
+          },
+          "candidate2": {
+            "importance": 2
+          }
+        },
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 78,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 76
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 87,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 86,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "move-con-corinthian-silence",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 16,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "move-pro-priscilla-counterexample"
+              ],
+              "components": [
+                {
+                  "componentId": "move-con-corinthian-silence-component-01",
+                  "targetMoveId": "move-pro-priscilla-counterexample",
+                  "text": "Whether one example of Priscilla teaching a man resolves an explicit instruction that women remain silent and subordinate in churches.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-con-corinthian-silence-component-02",
+                  "targetMoveId": "move-pro-priscilla-counterexample",
+                  "text": "Whether the Priscilla episode and First Corinthians address the same institutional setting and kind of speech.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 75
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "move-pro-priscilla-counterexample"
+              ],
+              "components": [
+                {
+                  "componentId": "move-con-corinthian-silence-component-01",
+                  "targetMoveId": "move-pro-priscilla-counterexample",
+                  "text": "Whether one example of Priscilla teaching defeats an explicit Pauline restriction on women speaking in church.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "question",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 88,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 90
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 86,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "move-pro-situational-silence",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 13,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "move-con-corinthian-silence",
+                "move-con-galatians-parallel"
+              ],
+              "components": [
+                {
+                  "componentId": "move-pro-situational-silence-component-01",
+                  "targetMoveId": "move-con-corinthian-silence",
+                  "text": "Whether First Corinthians 14 imposes a universal prohibition on women's speech or addresses disorder in a particular congregation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-pro-situational-silence-component-02",
+                  "targetMoveId": "move-con-corinthian-silence",
+                  "text": "How the commands concerning subordination, husbands at home, and shame fit the proposed disorder-only interpretation.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-pro-situational-silence-component-03",
+                  "targetMoveId": "move-con-galatians-parallel",
+                  "text": "Whether broader equality language abolishes earthly gender distinctions.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "move-con-corinthian-silence",
+                "move-con-galatians-parallel"
+              ],
+              "components": [
+                {
+                  "componentId": "move-pro-situational-silence-component-01",
+                  "targetMoveId": "move-con-corinthian-silence",
+                  "text": "Whether First Corinthians 14 establishes a universal ban and subordination rule for women in church.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "move-pro-situational-silence-component-02",
+                  "targetMoveId": "move-con-galatians-parallel",
+                  "text": "Whether male-female distinctions necessarily preserve parallel earthly restrictions despite spiritual equality.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 77
+            },
+            "candidate2": {
+              "value": 68
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 79,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 78
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "move-pro-redemption-account",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "move-pro-redemption-account",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 66,
+      "candidate2": 64,
+      "roundedMeanAfterAdjudication": 65
+    },
+    {
+      "moveId": "move-pro-redemption-account",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 88,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "move-con-spiritual-convenience",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 62,
+      "candidate2": 61,
+      "roundedMeanAfterAdjudication": 62
+    },
+    {
+      "moveId": "move-con-spiritual-convenience",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 87,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "move-con-spiritual-convenience",
+      "fieldKey": "representationalCharity",
+      "candidate1": 82,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "move-pro-suffering-restoration",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 81,
+      "candidate2": 79,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "move-pro-suffering-restoration",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 69,
+      "candidate2": 66,
+      "roundedMeanAfterAdjudication": 68
+    },
+    {
+      "moveId": "move-con-testament-portrayals",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 76,
+      "candidate2": 73,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "move-con-testament-portrayals",
+      "fieldKey": "representationalCharity",
+      "candidate1": 91,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "move-pro-righteous-anger",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 77,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "move-pro-righteous-anger",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 74,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "move-pro-righteous-anger",
+      "fieldKey": "representationalCharity",
+      "candidate1": 67,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "move-con-slaves-as-property",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 85,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "move-con-slaves-as-property",
+      "fieldKey": "representationalCharity",
+      "candidate1": 89,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "move-pro-regulation-not-approval",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 73,
+      "candidate2": 69,
+      "roundedMeanAfterAdjudication": 71
+    },
+    {
+      "moveId": "move-pro-regulation-not-approval",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 87,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "move-con-family-coercion",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 91,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "move-con-family-coercion",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 86,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "move-pro-canonical-dignity",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 76,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "move-pro-canonical-dignity",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 79,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 78
+    },
+    {
+      "moveId": "move-con-galatians-parallel",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 86,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "move-con-galatians-parallel",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 84,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "move-con-galatians-parallel",
+      "fieldKey": "representationalCharity",
+      "candidate1": 87,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "move-pro-priscilla-counterexample",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "move-pro-priscilla-counterexample",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 78,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 76
+    },
+    {
+      "moveId": "move-pro-priscilla-counterexample",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 87,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "move-pro-priscilla-counterexample",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 86,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "move-con-corinthian-silence",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 88,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "move-con-corinthian-silence",
+      "fieldKey": "representationalCharity",
+      "candidate1": 86,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "move-pro-situational-silence",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 79,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 78
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance findings",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance findings",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    }
+  ],
+  "audioVerificationMoveIds": [],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "13",
+      "moves": 13,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 13,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true
+  },
+  "scoreDerivationAuthorized": false
+}

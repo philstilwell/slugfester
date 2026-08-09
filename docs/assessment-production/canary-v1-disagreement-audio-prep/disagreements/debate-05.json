@@ -1,0 +1,2809 @@
+{
+  "schemaVersion": "1.0-production-canary-deterministic-disagreements",
+  "protocolId": "assessment-production-canary-v1-decomposed-consensus",
+  "debateNumber": "05",
+  "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+  "moveDisputes": [
+    {
+      "moveId": "pro-move-01",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 84
+            },
+            "candidate2": {
+              "value": 75
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 38
+            },
+            "candidate2": {
+              "value": 50
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 35,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "radically-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 78,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 77
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-move-02",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 48
+            },
+            "candidate2": {
+              "value": 55
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 30
+            },
+            "candidate2": {
+              "value": 38
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 48,
+          "candidate2": 50,
+          "roundedMeanAfterAdjudication": 49
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-move-01",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-move-01",
+                "pro-move-02"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-01-component-01",
+                  "targetMoveId": "pro-move-01",
+                  "text": "Truth of the conclusion does not by itself supply supported premises showing that belief is epistemically reasonable.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-01-component-02",
+                  "targetMoveId": "pro-move-02",
+                  "text": "Absolute certainty and knowledge of ultimate reality are not required for reasonable, action-guiding belief.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-move-01",
+                "pro-move-02"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-01-component-01",
+                  "targetMoveId": "pro-move-01",
+                  "text": "Truth of God's existence alone is sufficient to make belief in God reasonable.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-01-component-02",
+                  "targetMoveId": "pro-move-02",
+                  "text": "Lack of absolute certainty prevents an atheist from having any true or reasonable belief.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 100,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "motion",
+                "bridgeId": "bridge-con-motion"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "bridge-con-standard"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 85,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 86,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-move-07",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-move-02"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-07-component-01",
+                  "targetMoveId": "pro-move-02",
+                  "text": "The decisive claim that everyone receives certain divine revelation and suppresses knowledge of God is not directly tested.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 57
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-move-02"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-07-component-01",
+                  "targetMoveId": "pro-move-02",
+                  "text": "Everyone knows the Christian God through revelation and suppresses that knowledge.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 55
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": false,
+            "representationalCharity": 75
+          },
+          "candidate2": {
+            "tested": true,
+            "representationalCharity": 84
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 79,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 81
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-move-02",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "bridge-con-standard"
+              }
+            },
+            "candidate2": {
+              "value": 99,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "motion",
+                "bridgeId": "bridge-con-motion"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 86,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 80,
+          "candidate2": 79,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 83,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 84
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-move-03",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 20,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-move-01",
+                "con-move-07"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-move-03-component-01",
+                  "targetMoveId": "con-move-01",
+                  "text": "The decisive demand for a valid argument with adequately supported premises rather than absolute certainty is not answered.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-move-03-component-02",
+                  "targetMoveId": "con-move-07",
+                  "text": "The demand for a reliable method distinguishing competing revelation claims is not answered by alleging secular epistemic dependence.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 50
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-move-01",
+                "con-move-02"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-move-03-component-01",
+                  "targetMoveId": "con-move-01",
+                  "text": "Fallible supported reasoning can establish reasonable belief without absolute certainty.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-move-03-component-02",
+                  "targetMoveId": "con-move-02",
+                  "text": "Testable correlations could provide a reasonable evidential route to supernatural causation.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 70
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 43
+            },
+            "candidate2": {
+              "value": 52
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 34
+            },
+            "candidate2": {
+              "value": 40
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 42
+            },
+            "candidate2": {
+              "value": 48
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "materially-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "materially-unstable",
+                "qualificationExplicitness": "materially-misleading"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 35,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "radically-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 35,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "radically-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-move-05",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-move-01"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-move-05-component-01",
+                  "targetMoveId": "con-move-01",
+                  "text": "The earlier requirement for supported premises and valid inference is not answered by describing evolved cognition as biochemical activity.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 48
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-move-01"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-move-05-component-01",
+                  "targetMoveId": "con-move-01",
+                  "text": "Reasonable belief rests on valid inference and supported premises rather than absolute certainty.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 50
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 32
+            },
+            "candidate2": {
+              "value": 38
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 38
+            },
+            "candidate2": {
+              "value": 45
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "materially-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "materially-misleading"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "materially-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-move-03",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-move-03",
+                "pro-move-05"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-03-component-01",
+                  "targetMoveId": "pro-move-03",
+                  "text": "Unsolved hard solipsism does not entail that fallible inquiry lacks justified starting commitments or knowledge.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-03-component-02",
+                  "targetMoveId": "pro-move-05",
+                  "text": "The physical realization of reasoning does not itself show that reason and experience are unreliable.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-move-02",
+                "pro-move-03"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-03-component-01",
+                  "targetMoveId": "pro-move-03",
+                  "text": "Failure to solve radical skepticism makes all non-theistic truth claims unjustified.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-03-component-02",
+                  "targetMoveId": "pro-move-02",
+                  "text": "An atheist's inability to know ultimate reality eliminates all knowledge of truth.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 82,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 88,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 90
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-move-05",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-move-03",
+                "pro-move-05"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-05-component-01",
+                  "targetMoveId": "pro-move-05",
+                  "text": "Asserting that God grounds logic does not demonstrate either that grounding relation or the impossibility of rival accounts.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-05-component-02",
+                  "targetMoveId": "pro-move-03",
+                  "text": "Claiming the opponent borrows truth from Christianity does not demonstrate Christianity's exclusive explanatory necessity.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 96
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-move-03",
+                "pro-move-05"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-05-component-01",
+                  "targetMoveId": "pro-move-05",
+                  "text": "Naturalistic cognition cannot account for objective logic, whereas the pro worldview can.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-05-component-02",
+                  "targetMoveId": "pro-move-03",
+                  "text": "The con worldview must borrow truth and reasoning from Christianity.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 96
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "bridge-pro-logic"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "bridge-con-exclusivity"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 93,
+          "candidate2": 92,
+          "roundedMeanAfterAdjudication": 93
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 91,
+          "candidate2": 92,
+          "roundedMeanAfterAdjudication": 92
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-move-08",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-move-02",
+                "pro-move-03"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-08-component-01",
+                  "targetMoveId": "pro-move-02",
+                  "text": "A perfect divine source does not by itself explain how a fallible human recipient acquires infallibly accurate revelation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-08-component-02",
+                  "targetMoveId": "pro-move-03",
+                  "text": "Invoking revelation to certify the worldview that certifies revelation reproduces the challenged justificatory circle.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 96
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-move-02",
+                "pro-move-03"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-08-component-01",
+                  "targetMoveId": "pro-move-02",
+                  "text": "Divine revelation enables human beings to know objective truth with certainty.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-08-component-02",
+                  "targetMoveId": "pro-move-03",
+                  "text": "Starting with God removes the con side's inability to know truth.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 96
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "bridge-pro-revelation"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "bridge-con-revelation"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "question",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 87,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 88
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 94,
+          "candidate2": 95,
+          "roundedMeanAfterAdjudication": 95
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-move-04",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-move-01",
+                "pro-move-03",
+                "pro-move-05"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-04-component-01",
+                  "targetMoveId": "pro-move-03",
+                  "text": "Human uncertainty and asserted certainty do not establish God's existence or supply a valid, evidentially supported argument.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-04-component-02",
+                  "targetMoveId": "pro-move-01",
+                  "text": "The premise that God exists still requires support before the syllogism establishes reasonable belief.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-04-component-03",
+                  "targetMoveId": "pro-move-05",
+                  "text": "A challenge to secular certainty does not itself demonstrate the divine account of truth or logic.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 97
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-move-01",
+                "pro-move-02",
+                "pro-move-03"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-04-component-01",
+                  "targetMoveId": "pro-move-03",
+                  "text": "Human uncertainty entails that truth cannot be known unless inquiry begins with God.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-04-component-02",
+                  "targetMoveId": "pro-move-01",
+                  "text": "God's asserted existence makes belief in God reasonable.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-04-component-03",
+                  "targetMoveId": "pro-move-02",
+                  "text": "Everyone knows God exists despite contrary professions.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 97
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 94,
+          "candidate2": 93,
+          "roundedMeanAfterAdjudication": 94
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 91,
+          "candidate2": 92,
+          "roundedMeanAfterAdjudication": 92
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-move-04",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 8,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-move-03",
+                "con-move-04",
+                "con-move-05"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-move-04-component-01",
+                  "targetMoveId": "con-move-04",
+                  "text": "The demand for evidence that God exists and for a valid bridge from uncertainty to God is not answered.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-move-04-component-02",
+                  "targetMoveId": "con-move-03",
+                  "text": "The fallibilist reliance on generally reliable shared experience is rejected but not shown to be insufficient.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-move-04-component-03",
+                  "targetMoveId": "con-move-05",
+                  "text": "The demand to demonstrate divine grounding and Christian exclusivity remains unanswered.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 61
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-move-03",
+                "con-move-04"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-move-04-component-01",
+                  "targetMoveId": "con-move-03",
+                  "text": "Generally reliable experience and reason can ground fallible inquiry without adding God.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-move-04-component-02",
+                  "targetMoveId": "con-move-04",
+                  "text": "Reality rather than asserted certainty is the arbiter of truth.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 69
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 52
+            },
+            "candidate2": {
+              "value": 64
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 35
+            },
+            "candidate2": {
+              "value": 48
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 46
+            },
+            "candidate2": {
+              "value": 58
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-move-07",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 6,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": true,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": true
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-move-04",
+                "con-move-07",
+                "con-move-08"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-move-07-component-01",
+                  "targetMoveId": "con-move-08",
+                  "text": "The requested mechanism connecting a perfect divine source to certain knowledge in a fallible recipient is not supplied.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-move-07-component-02",
+                  "targetMoveId": "con-move-07",
+                  "text": "The demand for a reliable method distinguishing competing revelation claims is not answered.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-move-07-component-03",
+                  "targetMoveId": "con-move-04",
+                  "text": "The demand for evidence supporting God's existence is answered only by saying evidence already presupposes God.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 46
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-move-02",
+                "con-move-08"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-move-07-component-01",
+                  "targetMoveId": "con-move-08",
+                  "text": "A mechanism must connect a perfect divine source to infallible knowledge in a fallible recipient.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-move-07-component-02",
+                  "targetMoveId": "con-move-02",
+                  "text": "Evidence can warrant supernatural belief through reliable, testable correlation.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 52
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": {
+          "candidate1": {
+            "assessmentConfidence": "high"
+          },
+          "candidate2": {
+            "assessmentConfidence": "medium"
+          }
+        },
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 40
+            },
+            "candidate2": {
+              "value": 50
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 28
+            },
+            "candidate2": {
+              "value": 35
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 35
+            },
+            "candidate2": {
+              "value": 42
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-move-09",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 17,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity"
+        ],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 2
+          },
+          "candidate2": {
+            "importance": 3
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-move-03",
+                "pro-move-07"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-09-component-01",
+                  "targetMoveId": "pro-move-07",
+                  "text": "The demand for certainty through God is rejected because rational prediction can be justified probabilistically rather than infallibly.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-09-component-02",
+                  "targetMoveId": "pro-move-03",
+                  "text": "The broader claim that fallibility eliminates knowledge is answered by distinguishing rational justification from certainty.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-move-03",
+                "pro-move-07"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-09-component-01",
+                  "targetMoveId": "pro-move-07",
+                  "text": "Evidence and rational inference are intelligible only if one first presupposes God.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-09-component-02",
+                  "targetMoveId": "pro-move-03",
+                  "text": "Non-theistic reasoning cannot justify truth claims from experience.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 82
+            },
+            "candidate2": {
+              "value": 88
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 85,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 84
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-move-09",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 18,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-move-09"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-move-09-component-01",
+                  "targetMoveId": "con-move-09",
+                  "text": "Using past regularity to justify future-oriented induction employs the very inductive method whose validity is under challenge.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-move-09"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-move-09-component-01",
+                  "targetMoveId": "con-move-09",
+                  "text": "Past recurring success provides probabilistic justification for expecting future regularity.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 61
+            },
+            "candidate2": {
+              "value": 78
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 58
+            },
+            "candidate2": {
+              "value": 70
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 45
+            },
+            "candidate2": {
+              "value": 62
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "materially-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "materially-misleading"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-move-06",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-move-04",
+                "pro-move-05",
+                "pro-move-07",
+                "pro-move-09"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-06-component-01",
+                  "targetMoveId": "pro-move-05",
+                  "text": "The repeated claim that naturalism cannot account for logical absolutes does not establish that Christianity can do so.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-06-component-02",
+                  "targetMoveId": "pro-move-04",
+                  "text": "Defining truth by God's mind does not demonstrate the divine grounding relation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-06-component-03",
+                  "targetMoveId": "pro-move-07",
+                  "text": "Appealing to revelation does not answer the exclusive-accounting demand.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-06-component-04",
+                  "targetMoveId": "pro-move-09",
+                  "text": "A difficulty for secular induction does not independently establish Christianity's explanatory success.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 95
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-move-04",
+                "pro-move-05",
+                "pro-move-07"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-06-component-01",
+                  "targetMoveId": "pro-move-05",
+                  "text": "Only the theistic worldview can account for logical absolutes and objective truth.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-06-component-02",
+                  "targetMoveId": "pro-move-04",
+                  "text": "Truth must conform to an absolute divine mind to be knowable.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-06-component-03",
+                  "targetMoveId": "pro-move-07",
+                  "text": "Evidence and truth presuppose God.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 95
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 92,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 92
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 92,
+          "candidate2": 93,
+          "roundedMeanAfterAdjudication": 93
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-move-06",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-move-05",
+                "con-move-06",
+                "con-move-08"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-move-06-component-01",
+                  "targetMoveId": "con-move-06",
+                  "text": "The request for a positive account of logical absolutes is answered by saying they reflect God's thinking and are known by revelation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-move-06-component-02",
+                  "targetMoveId": "con-move-05",
+                  "text": "The demand to demonstrate the grounding relation and exclude rival accounts remains unanswered.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-move-06-component-03",
+                  "targetMoveId": "con-move-08",
+                  "text": "The requested mechanism for reliable human revelation remains unanswered.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 68
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-move-05",
+                "con-move-06"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-move-06-component-01",
+                  "targetMoveId": "con-move-06",
+                  "text": "The pro side must demonstrate how God accounts for logic and why that account is exclusive.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-move-06-component-02",
+                  "targetMoveId": "con-move-05",
+                  "text": "Attributing logical absolutes to God is insufficient without demonstrating adequacy and exclusivity.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 67
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": false,
+            "representationalCharity": 75
+          },
+          "candidate2": {
+            "tested": true,
+            "representationalCharity": 66
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 68,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 69
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 40,
+          "candidate2": 45,
+          "roundedMeanAfterAdjudication": 43
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-move-08",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 10,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-move-07",
+                "con-move-08"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-move-08-component-01",
+                  "targetMoveId": "con-move-07",
+                  "text": "The rival-revelation challenge is contacted through an internal-consistency test comparing Quranic claims about the Bible with conflict between the texts.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-move-08-component-02",
+                  "targetMoveId": "con-move-08",
+                  "text": "The human transmission and certainty mechanism for revelation is not answered.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-move-07",
+                "con-move-08"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-move-08-component-01",
+                  "targetMoveId": "con-move-07",
+                  "text": "Competing revelations lack a reliable method for distinguishing which religious authority is true.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-move-08-component-02",
+                  "targetMoveId": "con-move-08",
+                  "text": "Revelation requires a demonstrated truth-preserving mechanism for fallible recipients.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 84
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 77,
+          "candidate2": 81,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 62,
+          "candidate2": 65,
+          "roundedMeanAfterAdjudication": 64
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 64,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 66
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-move-10",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 37,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "con-move-05",
+                "con-move-06",
+                "con-move-09"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-move-10-component-01",
+                  "targetMoveId": "con-move-06",
+                  "text": "The demand for an inference from shared logical absolutes to God is replaced by a precondition claim because the argument is transcendental rather than deductive.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-move-10-component-02",
+                  "targetMoveId": "con-move-05",
+                  "text": "The demand to demonstrate that Christianity uniquely supplies the alleged precondition remains unanswered.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-move-10-component-03",
+                  "targetMoveId": "con-move-09",
+                  "text": "The probabilistic defense of induction is not directly answered by clarifying the argument's direction.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 85
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-move-06",
+                "con-move-09"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-move-10-component-01",
+                  "targetMoveId": "con-move-09",
+                  "text": "Recurring experience probabilistically justifies inductive expectations without deductive certainty.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-move-10-component-02",
+                  "targetMoveId": "con-move-06",
+                  "text": "Christianity's exclusive explanatory ability requires demonstration rather than assertion.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 48
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 44,
+          "candidate2": 48,
+          "roundedMeanAfterAdjudication": 46
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-move-10",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-move-01",
+                "pro-move-04",
+                "pro-move-06",
+                "pro-move-08",
+                "pro-move-09",
+                "pro-move-10"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-10-component-01",
+                  "targetMoveId": "pro-move-10",
+                  "text": "Installing Christianity as a necessary starting point does not demonstrate its truth, necessity, or reasonableness.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-10-component-02",
+                  "targetMoveId": "pro-move-01",
+                  "text": "The factual premise that God exists remains unsupported.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-10-component-03",
+                  "targetMoveId": "pro-move-04",
+                  "text": "Asserted certainty about God's perspective does not establish objective truth or human access to it.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-10-component-04",
+                  "targetMoveId": "pro-move-06",
+                  "text": "Saying logic reflects God's thinking does not demonstrate the grounding relation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-10-component-05",
+                  "targetMoveId": "pro-move-08",
+                  "text": "Criticizing one rival revelation does not establish Christianity's reliability.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-10-component-06",
+                  "targetMoveId": "pro-move-09",
+                  "text": "Challenging secular induction does not shift the positive burden of demonstrating Christian necessity.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 96
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-move-01",
+                "pro-move-06",
+                "pro-move-09",
+                "pro-move-10"
+              ],
+              "components": [
+                {
+                  "componentId": "con-move-10-component-01",
+                  "targetMoveId": "pro-move-10",
+                  "text": "Christianity may be installed as the necessary precondition for all absolutes rather than inferred from them.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-10-component-02",
+                  "targetMoveId": "pro-move-06",
+                  "text": "Logical absolutes are accounted for by God's thinking and revelation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-10-component-03",
+                  "targetMoveId": "pro-move-09",
+                  "text": "Secular induction is viciously circular.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-move-10-component-04",
+                  "targetMoveId": "pro-move-01",
+                  "text": "Belief in God is reasonable because the proposition is true.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 96
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 88,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 89
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 91,
+          "candidate2": 94,
+          "roundedMeanAfterAdjudication": 93
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "pro-move-01",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 78,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "pro-move-02",
+      "fieldKey": "representationalCharity",
+      "candidate1": 48,
+      "candidate2": 50,
+      "roundedMeanAfterAdjudication": 49
+    },
+    {
+      "moveId": "con-move-01",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 85,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "con-move-01",
+      "fieldKey": "representationalCharity",
+      "candidate1": 86,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-move-07",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 79,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "con-move-02",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 86,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-move-02",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 80,
+      "candidate2": 79,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "con-move-02",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 83,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "con-move-03",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 82,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-move-03",
+      "fieldKey": "representationalCharity",
+      "candidate1": 88,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "con-move-05",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 93,
+      "candidate2": 92,
+      "roundedMeanAfterAdjudication": 93
+    },
+    {
+      "moveId": "con-move-05",
+      "fieldKey": "representationalCharity",
+      "candidate1": 91,
+      "candidate2": 92,
+      "roundedMeanAfterAdjudication": 92
+    },
+    {
+      "moveId": "con-move-08",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 87,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 88
+    },
+    {
+      "moveId": "con-move-08",
+      "fieldKey": "representationalCharity",
+      "candidate1": 94,
+      "candidate2": 95,
+      "roundedMeanAfterAdjudication": 95
+    },
+    {
+      "moveId": "con-move-04",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 94,
+      "candidate2": 93,
+      "roundedMeanAfterAdjudication": 94
+    },
+    {
+      "moveId": "con-move-04",
+      "fieldKey": "representationalCharity",
+      "candidate1": 91,
+      "candidate2": 92,
+      "roundedMeanAfterAdjudication": 92
+    },
+    {
+      "moveId": "con-move-09",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 85,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "con-move-06",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 92,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 92
+    },
+    {
+      "moveId": "con-move-06",
+      "fieldKey": "representationalCharity",
+      "candidate1": 92,
+      "candidate2": 93,
+      "roundedMeanAfterAdjudication": 93
+    },
+    {
+      "moveId": "pro-move-06",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 68,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "pro-move-06",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 40,
+      "candidate2": 45,
+      "roundedMeanAfterAdjudication": 43
+    },
+    {
+      "moveId": "pro-move-08",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 77,
+      "candidate2": 81,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "pro-move-08",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 62,
+      "candidate2": 65,
+      "roundedMeanAfterAdjudication": 64
+    },
+    {
+      "moveId": "pro-move-08",
+      "fieldKey": "representationalCharity",
+      "candidate1": 64,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 66
+    },
+    {
+      "moveId": "pro-move-10",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 44,
+      "candidate2": 48,
+      "roundedMeanAfterAdjudication": 46
+    },
+    {
+      "moveId": "con-move-10",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 88,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "con-move-10",
+      "fieldKey": "representationalCharity",
+      "candidate1": 91,
+      "candidate2": 94,
+      "roundedMeanAfterAdjudication": 93
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    }
+  ],
+  "audioVerificationMoveIds": [
+    "pro-move-07"
+  ],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "05",
+      "moves": 20,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 20,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true
+  },
+  "scoreDerivationAuthorized": false
+}
