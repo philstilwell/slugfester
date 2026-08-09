@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0-score-stability-v2-columnar-inventory-recovery-failure-diagnosis",
+  "protocolId": "assessment-production-score-stability-v2-fresh-validation-columnar-inventory-recovery",
+  "status": "recovery-inventory-gate-failed-cross-section-duplicate-confirmed-no-further-action-authorized",
+  "diagnosedAt": "2026-08-09T03:39:47Z",
+  "checkpointCommit": "3f9ca7a57e7e9444b4968f465215b3d4e042094b",
+  "developmentValidationOnly": true,
+  "productionCanary": false,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "gateDisposition": {
+    "recoveryExecution": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/model-execution.json",
+    "recoveryExecutionSha256": "ab891f699df38a13164cfb2cf0c04296d31e0aa709785e665f059124dcffd141",
+    "status": "v2-validation-score-blind-inventory-columnar-recovery-complete-with-failure",
+    "contextsPlanned": 10,
+    "contextsAttempted": 3,
+    "contextsUnattempted": 7,
+    "validContexts": 2,
+    "invalidContexts": 1,
+    "retries": 0,
+    "acceptedAsPassed": false,
+    "priorTimeoutGatePreservedFailed": true,
+    "currentCanaryReclassified": false,
+    "proposedPolicyPromoted": false
+  },
+  "failure": {
+    "contextIndex": 2,
+    "debateNumber": "31",
+    "status": "output-validation-failed",
+    "classification": "schema-shaped-output-with-cross-section-duplicate-candidate-id",
+    "modelTransportSucceeded": true,
+    "timedOut": false,
+    "proposalPreserved": "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/inventory-proposals/debate-31.json",
+    "proposalSha256": "5785d68aa44674ef9b647f461dc18a677a708f7e7d05c4537123301eccb80cc8",
+    "deterministicValidationPassed": false,
+    "deterministicValidationMessage": "selected candidate IDs: duplicate values",
+    "semanticCorrectionPerformed": false,
+    "retryPerformed": false
+  },
+  "duplicateEvidence": {
+    "qualifiedCandidateId": "chunk-002:chunk-002-candidate-09",
+    "modelSelectionOccurrences": 2,
+    "transportOccurrences": 1,
+    "selections": [
+      {
+        "sectionIndex": 4,
+        "sectionId": "section-historical-data",
+        "selectionKey": "conSelections",
+        "selectionIndex": 1,
+        "qualifiedCandidateId": "chunk-002:chunk-002-candidate-09",
+        "moveId": "move-con-legendary-sequence",
+        "moveKind": "reply",
+        "proposition": "The progression from Mark's prediction through Matthew's doubted appearance to increasingly numerous later episodes supports suspicion of legendary development."
+      },
+      {
+        "sectionIndex": 5,
+        "sectionId": "section-naturalistic-alternatives",
+        "selectionKey": "conSelections",
+        "selectionIndex": 1,
+        "qualifiedCandidateId": "chunk-002:chunk-002-candidate-09",
+        "moveId": "move-con-legendary-development-alternative",
+        "moveKind": "reply",
+        "proposition": "Chronologically later Gospel narratives contain increasingly elaborate appearance accounts, providing a natural source-development explanation for the resurrection tradition."
+      }
+    ],
+    "modelAuditClaimedEverySelectedCandidateUsedOnce": true,
+    "auditContradictedByOutput": true
+  },
+  "designFinding": {
+    "columnarTransportIntroducedDuplicate": false,
+    "candidatePresentExactlyOnceInLosslessTransport": true,
+    "promptProhibitedCandidateReuse": true,
+    "closedSchemaEnforcedCandidateIdMembership": true,
+    "closedSchemaEnforcedCrossSectionCandidateUniqueness": false,
+    "deterministicCompilerCorrectlyRejectedDuplicate": true,
+    "removingEitherSelectionWouldBeSemanticRepair": true,
+    "automaticDeduplicationPermitted": false
+  },
+  "possibleFutureProtocolDirection": {
+    "authorized": false,
+    "description": "A separately authorized protocol could make candidate identity the unique object key of a property-keyed selection map, then deterministically project that map into section selections.",
+    "requirements": [
+      "new versioned output schema and compiler",
+      "retired-artifact regression before any fresh evidence",
+      "new frozen execution manifest",
+      "full fresh ten-context gate",
+      "no reuse of outputs from either failed gate",
+      "one attempt per context and no retry",
+      "explicit user authorization"
+    ]
+  },
+  "sourceHashes": {
+    "docs/assessment-production-canary-inventory-execution-workflow.md": "654ad54deaafa305bfbbae572d730ff7a0d71b9257e87747bd42ede863ab59ff",
+    "docs/assessment-production-workflow.md": "64a66f21d38aec102256ffc4965a25b47d85341fe7e1610974df9f6e3a864bef",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/candidate-transport/debate-31.json": "5732585598542d37eac7bec3e5150a499b508a08b9660468480feff4316fecf7",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/execution-manifest.json": "4d85150f0910bb04b53a5816e0a3c7dec7f554e216e8c2d4a921292420b9e3d6",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/inventory-proposals/debate-31.json": "5785d68aa44674ef9b647f461dc18a677a708f7e7d05c4537123301eccb80cc8",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/model-execution.json": "ab891f699df38a13164cfb2cf0c04296d31e0aa709785e665f059124dcffd141",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-columnar-recovery/preparation-manifest.json": "f2708415806d70c43782111eadf8034398c50bddc7e853d7cbb31c5ef59ab6cf",
+    "scripts/diagnose-assessment-production-score-stability-v2-inventory-columnar-recovery-failure.mjs": "30152deb26e472e5e2927dc1fda9c7c1712192a2ea4fe57570dfd32a7326e382",
+    "scripts/lib/assessment-production-score-stability-v2-inventory-columnar-recovery-stage.mjs": "6912d8152b35b42854da17e73802e9f1bd3e7c163e7ae79c1965eb2b2fcbe84c",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v422116-decomposed-consensus.mjs": "6dc78d69dbc7a13c9ffdfed33d5e84067a32af1d69f7cf05480f0205689a6d7c",
+    "scripts/test-assessment-production-score-stability-v2-inventory-columnar-recovery-failure-diagnosis.mjs": "604346a96f7b03625fc57ddf7d2e194683576aef27a2935f7edbb5241634c04b"
+  },
+  "totals": {
+    "modelContextsThisDiagnosis": 0,
+    "audioCalls": 0,
+    "transcriptionCalls": 0,
+    "retries": 0,
+    "semanticCorrections": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "retry": false,
+    "semanticCorrection": false,
+    "successorProtocolDevelopment": false,
+    "successorModelExecution": false,
+    "deterministicPassingAnalysis": false,
+    "independentJudgmentPacketPreparation": false,
+    "independentJudgmentModelExecution": false,
+    "paidTranscription": false,
+    "audioVerification": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationPreparation": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "none-without-explicit-user-authorization"
+}
