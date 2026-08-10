@@ -1,0 +1,401 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.2-candidate-sharded-inventory-compilation-failure-diagnosis",
+  "protocolId": "assessment-production-score-stability-v2.1.2-fresh-validation-candidate-sharded-inventory",
+  "status": "v2.1.2-candidate-sharded-inventory-gate-failed-cross-side-chronology-closure-no-further-model-action-authorized",
+  "diagnosedAt": "2026-08-10T00:44:32.453Z",
+  "developmentValidationOnly": true,
+  "productionCanary": false,
+  "stagingOnly": true,
+  "failedGateDisposition": {
+    "v21Diagnosis": "docs/assessment-production/score-stability-v2.1-validation-cohort/discovery/failure-diagnosis.json",
+    "v21DiagnosisSha256": "f64ff7ea84d0e9242ed88aa5240b96e8dcd492a49492a795ef57034b3f7af791",
+    "v21Status": "v2.1-discovery-gate-failed-cross-boundary-short-source-span-confirmed-no-further-action-authorized",
+    "v211Diagnosis": "docs/assessment-production/score-stability-v2.1.1-validation-cohort/discovery/failure-diagnosis.json",
+    "v211DiagnosisSha256": "21b59dacdb7bc617db5c5e43002afff8eb19b9c0153e2a212351c68570ff2e8e",
+    "v211Status": "v2.1.1-discovery-gate-failed-start-dependent-locked-lookahead-capacity-confirmed-no-further-action-authorized",
+    "v1CanaryPreservedFailed": true,
+    "v2ValidationPreservedFailed": true,
+    "v21DiscoveryPreservedFailed": true,
+    "v211DiscoveryPreservedFailed": true,
+    "retiredOutputsAcceptedForSuccessorEvidence": false,
+    "currentCanaryReclassified": false,
+    "v21PolicyPromoted": false,
+    "currentV212InventoryGatePreservedFailed": true,
+    "acceptedSideSelectorOutputsReusableForCurrentGateAcceptance": false,
+    "acceptedSideSelectorOutputsReusableAsFreshSuccessorModelInput": false
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true
+  },
+  "execution": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-model-execution.json",
+  "executionSha256": "da4df7f6e329479195020d268a152d825712ac55f22c7bcf5346240f250200c3",
+  "observedFailure": {
+    "selectorContextsPassedSchemaAndLocalSemanticValidation": 20,
+    "selectorContextsFailed": 0,
+    "compilationFailedDebates": 5,
+    "compilationPassedStructuralProjectionDebates": 5,
+    "failureClass": "cross-side-chronology-closure",
+    "exactInvariant": "Every selected move labeled reply must have at least one earlier selected opposing move.",
+    "whySideIsolationCouldNotEnforceIt": "Each selector saw only its own side evidence and could not know whether the opposing selector would retain an earlier anchor move after deterministic cardinality reduction.",
+    "firstObservedFailure": "con-dogmatism-blocks-correction: reply has no earlier selected opposing move"
+  },
+  "debates": [
+    {
+      "debateNumber": "124",
+      "debateId": "harris-peterson-god-atheism-bible-2018",
+      "selectedMoves": 20,
+      "nominatedCandidates": 20,
+      "deterministicallyDeferredCandidates": 0,
+      "earliestSelectedMove": {
+        "side": "con",
+        "sectionId": "moral-foundations",
+        "moveId": "con-wellbeing-positive-range",
+        "moveKind": "constructive",
+        "qualifiedCandidateId": "chunk-001:c001",
+        "sourceSpan": {
+          "startEvent": 186,
+          "endEvent": 210
+        }
+      },
+      "orphanReplies": [
+        {
+          "side": "con",
+          "sectionId": "dogmatism-inquiry",
+          "moveId": "con-dogmatism-blocks-correction",
+          "moveKind": "reply",
+          "qualifiedCandidateId": "chunk-001:c006",
+          "sourceSpan": {
+            "startEvent": 344,
+            "endEvent": 395
+          }
+        }
+      ],
+      "compilationStatus": "failed-orphan-reply",
+      "failureMessage": "con-dogmatism-blocks-correction: reply has no earlier selected opposing move"
+    },
+    {
+      "debateNumber": "116",
+      "debateId": "bertuzzi-schieber-evil-evidence-2019",
+      "selectedMoves": 17,
+      "nominatedCandidates": 17,
+      "deterministicallyDeferredCandidates": 0,
+      "earliestSelectedMove": {
+        "side": "con",
+        "sectionId": "biological-pain-pleasure",
+        "moveId": "con-biological-orientation-comparison",
+        "moveKind": "constructive",
+        "qualifiedCandidateId": "chunk-001:c001",
+        "sourceSpan": {
+          "startEvent": 53,
+          "endEvent": 136
+        }
+      },
+      "orphanReplies": [],
+      "compilationStatus": "passed-structural-projection",
+      "failureMessage": null
+    },
+    {
+      "debateNumber": "170",
+      "debateId": "singer-lennox-is-there-god-2011",
+      "selectedMoves": 22,
+      "nominatedCandidates": 23,
+      "deterministicallyDeferredCandidates": 1,
+      "earliestSelectedMove": {
+        "side": "pro",
+        "sectionId": "cosmos-science-and-explanation",
+        "moveId": "pro-cosmic-intelligibility-fine-tuning",
+        "moveKind": "constructive",
+        "qualifiedCandidateId": "chunk-001:c002",
+        "sourceSpan": {
+          "startEvent": 119,
+          "endEvent": 174
+        }
+      },
+      "orphanReplies": [],
+      "compilationStatus": "passed-structural-projection",
+      "failureMessage": null
+    },
+    {
+      "debateNumber": "145",
+      "debateId": "dennett-dsouza-god-human-invention-2007",
+      "selectedMoves": 23,
+      "nominatedCandidates": 23,
+      "deterministicallyDeferredCandidates": 0,
+      "earliestSelectedMove": {
+        "side": "pro",
+        "sectionId": "morality-and-religions-social-role",
+        "moveId": "pro-social-secular-comparison",
+        "moveKind": "constructive",
+        "qualifiedCandidateId": "chunk-001:chunk-001-candidate-02",
+        "sourceSpan": {
+          "startEvent": 53,
+          "endEvent": 82
+        }
+      },
+      "orphanReplies": [
+        {
+          "side": "pro",
+          "sectionId": "epistemic-standards-and-limits",
+          "moveId": "pro-religious-information-test",
+          "moveKind": "reply",
+          "qualifiedCandidateId": "chunk-001:chunk-001-candidate-03",
+          "sourceSpan": {
+            "startEvent": 168,
+            "endEvent": 204
+          }
+        }
+      ],
+      "compilationStatus": "failed-orphan-reply",
+      "failureMessage": "pro-religious-information-test: reply has no earlier selected opposing move"
+    },
+    {
+      "debateNumber": "189",
+      "debateId": "tour-cronin-origin-of-life-2020",
+      "selectedMoves": 20,
+      "nominatedCandidates": 22,
+      "deterministicallyDeferredCandidates": 2,
+      "earliestSelectedMove": {
+        "side": "pro",
+        "sectionId": "claims-and-explanatory-standard",
+        "moveId": "pro-current-claims-exceed-evidence",
+        "moveKind": "constructive",
+        "qualifiedCandidateId": "chunk-001:c001",
+        "sourceSpan": {
+          "startEvent": 77,
+          "endEvent": 106
+        }
+      },
+      "orphanReplies": [],
+      "compilationStatus": "passed-structural-projection",
+      "failureMessage": null
+    },
+    {
+      "debateNumber": "114",
+      "debateId": "dirckx-goff-consciousness-points-god-2019",
+      "selectedMoves": 18,
+      "nominatedCandidates": 18,
+      "deterministicallyDeferredCandidates": 0,
+      "earliestSelectedMove": {
+        "side": "pro",
+        "sectionId": "nonphysical-mind-and-emergence",
+        "moveId": "pro-mind-body-causal-coherence",
+        "moveKind": "constructive",
+        "qualifiedCandidateId": "chunk-001:c004",
+        "sourceSpan": {
+          "startEvent": 461,
+          "endEvent": 510
+        }
+      },
+      "orphanReplies": [
+        {
+          "side": "pro",
+          "sectionId": "limits-of-materialist-explanation",
+          "moveId": "pro-consciousness-illusion-self-undermining",
+          "moveKind": "reply",
+          "qualifiedCandidateId": "chunk-001:c005",
+          "sourceSpan": {
+            "startEvent": 532,
+            "endEvent": 570
+          }
+        }
+      ],
+      "compilationStatus": "failed-orphan-reply",
+      "failureMessage": "pro-consciousness-illusion-self-undermining: reply has no earlier selected opposing move"
+    },
+    {
+      "debateNumber": "48",
+      "debateId": "scrivener-folley-hiddenness-evil-moral-narrative-2025",
+      "selectedMoves": 18,
+      "nominatedCandidates": 18,
+      "deterministicallyDeferredCandidates": 0,
+      "earliestSelectedMove": {
+        "side": "con",
+        "sectionId": "section-hiddenness-love-revelation",
+        "moveId": "con-hiddenness-perfect-love-nonbelief",
+        "moveKind": "constructive",
+        "qualifiedCandidateId": "chunk-001:c001",
+        "sourceSpan": {
+          "startEvent": 55,
+          "endEvent": 169
+        }
+      },
+      "orphanReplies": [],
+      "compilationStatus": "passed-structural-projection",
+      "failureMessage": null
+    },
+    {
+      "debateNumber": "186",
+      "debateId": "huemer-sapolsky-free-will-determinism-2024",
+      "selectedMoves": 19,
+      "nominatedCandidates": 19,
+      "deterministicallyDeferredCandidates": 0,
+      "earliestSelectedMove": {
+        "side": "con",
+        "sectionId": "section-alternatives-control",
+        "moveId": "con-alternatives-prior-causes",
+        "moveKind": "constructive",
+        "qualifiedCandidateId": "chunk-001:c001",
+        "sourceSpan": {
+          "startEvent": 44,
+          "endEvent": 88
+        }
+      },
+      "orphanReplies": [],
+      "compilationStatus": "passed-structural-projection",
+      "failureMessage": null
+    },
+    {
+      "debateNumber": "42",
+      "debateId": "schmid-tomaszewski-divine-simplicity-2020",
+      "selectedMoves": 19,
+      "nominatedCandidates": 20,
+      "deterministicallyDeferredCandidates": 1,
+      "earliestSelectedMove": {
+        "side": "pro",
+        "sectionId": "attributes-and-predication",
+        "moveId": "pro-analogical-attribute-predication",
+        "moveKind": "reply",
+        "qualifiedCandidateId": "chunk-001:c003",
+        "sourceSpan": {
+          "startEvent": 323,
+          "endEvent": 388
+        }
+      },
+      "orphanReplies": [
+        {
+          "side": "pro",
+          "sectionId": "attributes-and-predication",
+          "moveId": "pro-analogical-attribute-predication",
+          "moveKind": "reply",
+          "qualifiedCandidateId": "chunk-001:c003",
+          "sourceSpan": {
+            "startEvent": 323,
+            "endEvent": 388
+          }
+        }
+      ],
+      "compilationStatus": "failed-orphan-reply",
+      "failureMessage": "pro-analogical-attribute-predication: reply has no earlier selected opposing move"
+    },
+    {
+      "debateNumber": "73",
+      "debateId": "hawkins-folley-free-will-compatibilism-2026",
+      "selectedMoves": 20,
+      "nominatedCandidates": 20,
+      "deterministicallyDeferredCandidates": 0,
+      "earliestSelectedMove": {
+        "side": "pro",
+        "sectionId": "section-deliberation-and-alternatives",
+        "moveId": "pro-deliberative-experience-alternatives",
+        "moveKind": "constructive",
+        "qualifiedCandidateId": "chunk-001:d73-c001-02",
+        "sourceSpan": {
+          "startEvent": 146,
+          "endEvent": 198
+        }
+      },
+      "orphanReplies": [
+        {
+          "side": "pro",
+          "sectionId": "section-epistemic-and-first-person-standpoints",
+          "moveId": "pro-scientific-modesty-free-will",
+          "moveKind": "reply",
+          "qualifiedCandidateId": "chunk-001:d73-c001-04",
+          "sourceSpan": {
+            "startEvent": 245,
+            "endEvent": 317
+          }
+        },
+        {
+          "side": "pro",
+          "sectionId": "section-compatibilist-practical-agency",
+          "moveId": "pro-directed-deliberative-agency",
+          "moveKind": "reply",
+          "qualifiedCandidateId": "chunk-001:d73-c001-05",
+          "sourceSpan": {
+            "startEvent": 332,
+            "endEvent": 409
+          }
+        }
+      ],
+      "compilationStatus": "failed-orphan-reply",
+      "failureMessage": "pro-scientific-modesty-free-will: reply has no earlier selected opposing move"
+    }
+  ],
+  "remedy": {
+    "currentOutputsSemanticallyRepaired": false,
+    "retryProposed": false,
+    "timeoutExtensionProposed": false,
+    "freshSuccessorRequired": true,
+    "proposedSuccessor": "Fresh side-selector contexts author both preferredMoveKind and a source-grounded constructive fallback for each nomination. The repository applies the fallback only when deterministic cross-side chronology shows no earlier selected opposing move, then replays the unchanged legacy inventory compiler.",
+    "whyThisPreservesIsolation": "Each side can author its own fallback from its own evidence without seeing the opposing side; the repository alone evaluates the cross-side chronology condition.",
+    "requiredDevelopmentBeforeFreshExecution": [
+      "freeze a successor schema and deterministic fallback compiler",
+      "replay accepted-artifact regression and adversarial orphan-reply probes",
+      "prove copied-input bounds remain below the frozen ceiling",
+      "select a fresh disjoint validation cohort before any successor model execution"
+    ]
+  },
+  "totals": {
+    "debatesDiagnosed": 10,
+    "failedDebates": 5,
+    "orphanReplies": 6,
+    "selectorContextsExecuted": 20,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "semanticCorrections": 0,
+    "audioCalls": 0,
+    "transcriptionCalls": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "sourceHashes": {
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-execution-activation.json": "24ba03e42494de356c8353f83d5e4cdfe2a119a9cdb23bb613de9d33544fb11a",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-execution-preparation-manifest.json": "dc3c7439cd4c49dbc39570317dd851dad424189ead83aa69e3806bab83316bb6",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/preparation-manifest.json": "7088c35230bcf22d77953c869814fe14157bdb4f3a62b210c5c5ba77db4286ac",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-model-execution.json": "da4df7f6e329479195020d268a152d825712ac55f22c7bcf5346240f250200c3",
+    "scripts/diagnose-assessment-production-score-stability-v2.1.2-inventory-candidate-sharded-compilation-failure.mjs": "84c6812d905c343a3e5ecf90d9530a38a8ff46d1fffed3113aafc96ccb932e0d",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-124-pro.json": "ee29c67c30b802c67dbafdf7918802a4c08ca671d77667c9f3873c258cd62c83",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-124-con.json": "819b4d8de4b25c71e87c18125cbf68c58082ec4274f76bbb3d187869391961b8",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-116-pro.json": "cab4402233fc961e48ef6d54fb609a7686107072117d093bb6a64464d4dfd4c4",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-116-con.json": "35561ef93924ec81f08a7476c03f65906ab9ba750684fc246183c33865e8d179",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-170-pro.json": "2fa6e50b2f1c6d6614768af535648375703aa037ae85e8e3ea429d209ee63ba3",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-170-con.json": "372ce8b065b1acf58c13b2d73f38fc8f215300ecb06b2a39eca83964ef4e5501",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-145-pro.json": "235980a18eb88b0a53de92d043b3582414b0300e52f6e7178f207723745a1e32",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-145-con.json": "bdbc38a149bdbc6a2f279a3d8e0d7e45b7617bb888bf543fd2f5ac1ffda0184c",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-189-pro.json": "80fe682253ff092bab3a2367f81a515c9e8c3d8910e3d7857fa58104416feec7",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-189-con.json": "f5ca9baad8c069eec346cec4363bb6fed8b9633d9cf431053d5fa29f8312537a",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-114-pro.json": "6582519a7a99ce92cce86f839a9692ee19c9593e7dc3139842f7520af868fc08",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-114-con.json": "1d9d29bf69de765b5c5e58a78be7e5bd25eb7ff748a330cd1d777bc6eecbd722",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-48-pro.json": "412294ace6e88126e46aa392f8766e5a3edf9f762f91a896f034a35afbef35d0",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-48-con.json": "8216a1b658c7e5dc622abd661ac3fc17b566ab225b0b259c72cea3637e68696b",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-186-pro.json": "6a34320c38d2b8944fee64ce43adfb2e91fde362b73d463a56c3a49f1f95659f",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-186-con.json": "9451e92d6669d20ba7773d0d117150d0659f1551a24da6919e29de3e5c5db6b6",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-42-pro.json": "fc5c2054eb880270a0c203b0cf7d2efd5ed2411b7019f3ed91bce21b16aa7a4d",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-42-con.json": "39b67a9067aec65d535629f0fbbf5e06b2e5e3dd26d178c520ca41d6c24278d8",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-73-pro.json": "0a3a364ac563bc800d5acd7fd919224ff2ba3d4a319acbadbe627f5fbe4c885d",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-73-con.json": "a806533565acb34d17171ba4ffbff34ea56843e3a6bf1ef5e9d45322caf338ef"
+  },
+  "authorization": {
+    "deterministicSuccessorDevelopment": true,
+    "freshDisjointCohortSelection": false,
+    "successorPacketPreparation": false,
+    "successorModelExecution": false,
+    "independentJudgmentPacketPreparation": false,
+    "independentJudgmentModelExecution": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "semanticCorrection": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationPreparation": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "develop-and-adversarially-validate-cross-side-chronology-fallback-successor-model-free-only"
+}
