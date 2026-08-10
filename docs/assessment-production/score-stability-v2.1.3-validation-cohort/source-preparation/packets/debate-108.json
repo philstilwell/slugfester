@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.3-validation-score-blind-source-packet",
+  "protocolId": "assessment-production-score-stability-v2.1.3-fresh-validation-source-preparation",
+  "debateNumber": "108",
+  "debateId": "ward-ruse-mind-consciousness-god-2013",
+  "motion": "Does human consciousness, religious and moral experience, and free agency make best sense within a God-centered mind-first reality, or can agnostic naturalism absorb those mysteries without theism?",
+  "sides": {
+    "pro": {
+      "label": "Mind-first theism",
+      "speakers": [
+        "Keith Ward"
+      ]
+    },
+    "con": {
+      "label": "Agnostic naturalism",
+      "speakers": [
+        "Michael Ruse"
+      ]
+    }
+  },
+  "durationSeconds": 4812,
+  "eventCount": 2129,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/nOy29aP7wDc/transcript.txt",
+    "transcriptSha256": "05db2206d5fa855e9a1ad6671129f2bb0e380e3c7fa7ad4abbf26070636ee78d",
+    "eventsPath": ".assessment-cache/captions/nOy29aP7wDc/events.json",
+    "eventsSha256": "cd38361b4a6dd909a49f1eaa4602e4a8e2b282b11e2755adab363d56a048f10d",
+    "localManifestPath": ".assessment-cache/captions/nOy29aP7wDc/manifest.json",
+    "localManifestSha256": "48f2da014896374d34b0805aa19427eba92af8fa6f5588e87b85ca0cda9fe791"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2.1.3-fresh-validation/debate-108.jsonl",
+    "sourceLedgerSha256": "b32b2f14b8f8a43039784ffbd49b32e89365ddb4fac19d671b30fe9cc3b8fa4f",
+    "sourceLedgerBytes": 125449,
+    "sourceLedgerEventCount": 2129,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/source-preparation/plans/debate-108.json",
+    "partitionPlanSha256": "3736ca8b7a8331f1bf585b20909f9380fdccc884e6d48f64318b5b84d7085ee4",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "developmentValidationOnly": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

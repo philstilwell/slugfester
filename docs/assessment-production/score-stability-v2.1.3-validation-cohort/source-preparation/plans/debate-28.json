@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3109,
+  "ledgerBytes": 183002,
+  "ledgerSha256": "28c739e1109e27dfede660105287a205bc4ea876614de6595e81bd9288a78835",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51945,
+      "contextSha256": "e48024ddf20a89fbd1483b80b3850a816e74c67f0f9832cc1fe63a844afbe561"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53049,
+      "contextSha256": "ad6af041b1be2b7a04e95a64708001a11d7384261ade9d0a804570b4b2d614a7"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53443,
+      "contextSha256": "e7be4201ad6be8ec368a77dcb0220c768c72d09562581600e6c546e5cf0e5b27"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3108,
+      "coreEvents": 609,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3108,
+      "contextEvents": 649,
+      "contextBytes": 38663,
+      "contextSha256": "4d0a769c67242c6b8d2dea05201700e5a50cdd2f6f3bde2a409079aab85c0c92"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3108,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "28",
+  "debateId": "turek-shermer-reality-theism-atheism-2018",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

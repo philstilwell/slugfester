@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.3-validation-score-blind-source-packet",
+  "protocolId": "assessment-production-score-stability-v2.1.3-fresh-validation-source-preparation",
+  "debateNumber": "142",
+  "debateId": "comfort-dillahunty-gospel-atonement-2020",
+  "motion": "Does the Christian gospel's account of sin, atonement, and salvation make moral and explanatory sense?",
+  "sides": {
+    "pro": {
+      "label": "Evangelical atonement",
+      "speakers": [
+        "Ray Comfort"
+      ]
+    },
+    "con": {
+      "label": "Skeptical moral critique",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 7196,
+  "eventCount": 3519,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/cRCbvfyiu0s/transcript.txt",
+    "transcriptSha256": "179212ef351162ce58165a0643a09d9a3d94d8f4105f002cc5fc895788317592",
+    "eventsPath": ".assessment-cache/captions/cRCbvfyiu0s/events.json",
+    "eventsSha256": "679f905f8023491afd939342c3573f05a51a0520330524499a5f31d86444151d",
+    "localManifestPath": ".assessment-cache/captions/cRCbvfyiu0s/manifest.json",
+    "localManifestSha256": "7c85f08b57cea005ccf11adaa32bca3ac333aee4f1bd053158b024121e186f41"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2.1.3-fresh-validation/debate-142.jsonl",
+    "sourceLedgerSha256": "38e04a47ccbd810ddc9065731ed3ed1164a48220c50eca6b5779fa756582bdb2",
+    "sourceLedgerBytes": 198651,
+    "sourceLedgerEventCount": 3519,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/source-preparation/plans/debate-142.json",
+    "partitionPlanSha256": "b516939f950ad82ee99bfcd8f400ea41636f6b54d4e7766e0875d541bf6b51c6",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "developmentValidationOnly": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

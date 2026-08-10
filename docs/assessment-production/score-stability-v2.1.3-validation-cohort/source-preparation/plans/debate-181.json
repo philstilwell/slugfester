@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2220,
+  "ledgerBytes": 130759,
+  "ledgerSha256": "83588e164cb35684f4858c2bc9440ce6c4291dca7e7b44abd61d8a1fea926e6f",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52251,
+      "contextSha256": "56a39a8021c77b7c3353efc7d84d5cfcb7abcfdc341bb0c9ab063e75f44b5e65"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53486,
+      "contextSha256": "1cd3d64c57f8bdad973a60d5505f504fca1edb9285be6f479f9375938ed8f554"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2219,
+      "coreEvents": 540,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2219,
+      "contextEvents": 580,
+      "contextBytes": 34465,
+      "contextSha256": "49302da1b283b59e9b7942690f99a14e8e6730f36334e2f470b7d81c9e62db4f"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2219,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "181",
+  "debateId": "habermas-flew-did-jesus-rise-dead-2000",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2129,
+  "ledgerBytes": 125449,
+  "ledgerSha256": "b32b2f14b8f8a43039784ffbd49b32e89365ddb4fac19d671b30fe9cc3b8fa4f",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52356,
+      "contextSha256": "354e4b7373032a3718fd60cb07c838ef5d088bc2f8e4466c9bc9dd0650c1ba11"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53489,
+      "contextSha256": "5549a6ccf864b39f9941d723454d29014a3e3f0241f092f9ff900fee5877482c"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2128,
+      "coreEvents": 449,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2128,
+      "contextEvents": 489,
+      "contextBytes": 29106,
+      "contextSha256": "3e75206ccd199ad9eb3f80fd4ad8f882a57b64f419a1d1b91a666d76c499d0c6"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2128,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "108",
+  "debateId": "ward-ruse-mind-consciousness-god-2013",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
