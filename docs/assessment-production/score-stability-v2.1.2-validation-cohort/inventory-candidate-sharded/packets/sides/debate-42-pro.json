@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.2-candidate-sharded-side-selector-packet",
+  "protocolId": "assessment-production-score-stability-v2.1.2-fresh-validation-candidate-sharded-inventory",
+  "stage": "pro-candidate-evidence-selection",
+  "debateNumber": "42",
+  "debateId": "schmid-tomaszewski-divine-simplicity-2020",
+  "side": "pro",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "freshContextRequired": true,
+    "oneDebateOnly": true,
+    "oneSideOnly": true,
+    "scoreBlind": true,
+    "routesAndSectionsImmutable": true,
+    "otherSideCandidateEvidenceUnavailable": true,
+    "otherSideSelectorOutputUnavailable": true,
+    "plannerExecutionMetadataUnavailable": true,
+    "priorAndOtherJudgmentsUnavailable": true,
+    "legacyAssessmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  },
+  "immutablePlanCanonicalSha256": "344bf06c3724c096531f7167d5a75d16ac069f0fae812a7d7284c0667b5a94a4",
+  "copiedInputs": [
+    {
+      "role": "inventory-source-packet",
+      "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-42.json",
+      "sha256": "ea0f18d6913dabe9e8c2a31e10bb077e05a41740331f354b498c52606504cdb1",
+      "bytes": 3274
+    },
+    {
+      "role": "immutable-candidate-census-plan",
+      "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-42.json",
+      "sha256": "032b60ad927ae3d12ce8f3445c79cf6c6a363713c7cb3d1d076ea1fa1ae42765",
+      "canonicalSha256": "344bf06c3724c096531f7167d5a75d16ac069f0fae812a7d7284c0667b5a94a4",
+      "bytes": 7097
+    },
+    {
+      "role": "pro-complete-candidate-evidence-transport",
+      "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-42-pro.json",
+      "sha256": "b1aed7b08a730051e1700bc293e7c0ad5e2baf79e431f5671c095d84d4ca147f",
+      "bytes": 21602
+    },
+    {
+      "role": "candidate-sharded-inventory-guide",
+      "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+      "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+      "bytes": 4982
+    },
+    {
+      "role": "inventory-manual",
+      "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+      "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+      "bytes": 3432
+    },
+    {
+      "role": "strict-output-schema",
+      "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-42-pro.schema.json",
+      "sha256": "b3df24e457ddd481ed83e25a9ea7c47ff7346148eb3c27464b44423f8758b8a9",
+      "bytes": 6693
+    }
+  ],
+  "copiedInputBytes": 47080,
+  "maximumCopiedInputBytes": 115000,
+  "writableDomains": [
+    "candidateSelections"
+  ],
+  "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-42-pro.json",
+  "attemptsMaximum": 1,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "modelExecutionAuthorized": false
+}

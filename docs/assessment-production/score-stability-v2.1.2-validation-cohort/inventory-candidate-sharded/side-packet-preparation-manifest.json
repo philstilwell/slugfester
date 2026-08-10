@@ -1,0 +1,1672 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.2-candidate-sharded-side-packet-preparation",
+  "protocolId": "assessment-production-score-stability-v2.1.2-fresh-validation-candidate-sharded-inventory",
+  "status": "twenty-exact-v2.1.2-side-selector-packets-frozen-not-authorized",
+  "frozenAt": "2026-08-10T00:19:53Z",
+  "checkpointCommit": "d2ff109d7e79cbba8a65b3841317ffa8b7fe7ecc",
+  "developmentValidationOnly": true,
+  "productionCanary": false,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "failedGateDisposition": {
+    "v21Diagnosis": "docs/assessment-production/score-stability-v2.1-validation-cohort/discovery/failure-diagnosis.json",
+    "v21DiagnosisSha256": "f64ff7ea84d0e9242ed88aa5240b96e8dcd492a49492a795ef57034b3f7af791",
+    "v21Status": "v2.1-discovery-gate-failed-cross-boundary-short-source-span-confirmed-no-further-action-authorized",
+    "v211Diagnosis": "docs/assessment-production/score-stability-v2.1.1-validation-cohort/discovery/failure-diagnosis.json",
+    "v211DiagnosisSha256": "21b59dacdb7bc617db5c5e43002afff8eb19b9c0153e2a212351c68570ff2e8e",
+    "v211Status": "v2.1.1-discovery-gate-failed-start-dependent-locked-lookahead-capacity-confirmed-no-further-action-authorized",
+    "v1CanaryPreservedFailed": true,
+    "v2ValidationPreservedFailed": true,
+    "v21DiscoveryPreservedFailed": true,
+    "v211DiscoveryPreservedFailed": true,
+    "retiredOutputsAcceptedForSuccessorEvidence": false,
+    "currentCanaryReclassified": false,
+    "v21PolicyPromoted": false
+  },
+  "proposedPolicy": {
+    "version": "v2.1-proposal",
+    "everyIntegerRoundedTieAccepted": true,
+    "promoted": false
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "apiKeysRemovedForAnyLaterExecution": true,
+    "meteredApiCostUsdMaximum": 0
+  },
+  "scheduling": {
+    "sideSelectorConcurrencyMaximum": 2,
+    "oneAttemptPerContext": true,
+    "retries": 0,
+    "timeoutExtensions": 0
+  },
+  "inputs": {
+    "sourcePreparation": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/preparation-manifest.json",
+    "sourcePreparationSha256": "7088c35230bcf22d77953c869814fe14157bdb4f3a62b210c5c5ba77db4286ac",
+    "planActivation": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plan-execution-activation.json",
+    "planActivationSha256": "165afd25c7860e2aa02d36ab13365fb42578a1995c7849837c3c0a633da7a719",
+    "planExecution": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plan-model-execution.json",
+    "planExecutionSha256": "43c77a1c11ee5ffb557d1d35c69abfdf4285c1f17e4555235f160409a3fee833",
+    "planAnalysis": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plan-analysis.json",
+    "planAnalysisSha256": "f8b0bc6c296c0b39e196cadcef1725664003e27c60b4fd48d14bb42106218adb",
+    "candidateShardedGuide": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+    "candidateShardedGuideSha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+    "inventoryManual": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+    "inventoryManualSha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52"
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "stage": "pro-candidate-evidence-selection",
+      "debateNumber": "124",
+      "debateId": "harris-peterson-god-atheism-bible-2018",
+      "family": "morality-ethics",
+      "sourceComplexityBand": "partition-medium",
+      "side": "pro",
+      "candidates": 17,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-124.json",
+      "immutablePlanSha256": "14e2b65219681df9d5275fa6b9dd84f215d43b37171a19fd8548ede82736dbbd",
+      "immutablePlanCanonicalSha256": "26564f964bc831a3c1ab42a9e2e38adf4c557afcb6f8ba7ab44267a3986111a2",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-124-pro.json",
+      "sideTransportSha256": "36f5f5f0cd3081463c15133c947f2c988321cef19235499a6f627fd4d7babbc6",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-124-pro.schema.json",
+      "exactSchemaSha256": "4cbc8097a2937702a06945c76094a5e03070852259ce3a124ecbb0ba33f50098",
+      "exactSchemaBytes": 6479,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-124-pro.json",
+      "packetSha256": "304cf95b65a7685b03039aca49e91ea762191edf255e75eb033a36b32950c5c2",
+      "packetBytes": 3325,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-124.json",
+          "sha256": "9b972dd85c4160cbda33ca43450f7a3a848b7364d8b88d822a08ce0aece4da6d",
+          "bytes": 3259
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-124.json",
+          "sha256": "14e2b65219681df9d5275fa6b9dd84f215d43b37171a19fd8548ede82736dbbd",
+          "canonicalSha256": "26564f964bc831a3c1ab42a9e2e38adf4c557afcb6f8ba7ab44267a3986111a2",
+          "bytes": 7501
+        },
+        {
+          "role": "pro-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-124-pro.json",
+          "sha256": "36f5f5f0cd3081463c15133c947f2c988321cef19235499a6f627fd4d7babbc6",
+          "bytes": 20863
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-124-pro.schema.json",
+          "sha256": "4cbc8097a2937702a06945c76094a5e03070852259ce3a124ecbb0ba33f50098",
+          "bytes": 6479
+        }
+      ],
+      "copiedInputBytes": 46516,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-124-pro.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 1,
+      "stage": "con-candidate-evidence-selection",
+      "debateNumber": "124",
+      "debateId": "harris-peterson-god-atheism-bible-2018",
+      "family": "morality-ethics",
+      "sourceComplexityBand": "partition-medium",
+      "side": "con",
+      "candidates": 23,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-124.json",
+      "immutablePlanSha256": "14e2b65219681df9d5275fa6b9dd84f215d43b37171a19fd8548ede82736dbbd",
+      "immutablePlanCanonicalSha256": "26564f964bc831a3c1ab42a9e2e38adf4c557afcb6f8ba7ab44267a3986111a2",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-124-con.json",
+      "sideTransportSha256": "30ff9c1dc30b775071c32487df0673e81efe9ce8e0769bd1eaba96bb0d7142ad",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-124-con.schema.json",
+      "exactSchemaSha256": "19ef3bb1c8ebd588f8a7603809907b4bab2674c192d1383f2229794d7f5bc979",
+      "exactSchemaBytes": 7151,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-124-con.json",
+      "packetSha256": "b6a30e0738fbcccad85cae1cb797be8306be1f998bbca79dff5d4b6a99c536fc",
+      "packetBytes": 3325,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-124.json",
+          "sha256": "9b972dd85c4160cbda33ca43450f7a3a848b7364d8b88d822a08ce0aece4da6d",
+          "bytes": 3259
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-124.json",
+          "sha256": "14e2b65219681df9d5275fa6b9dd84f215d43b37171a19fd8548ede82736dbbd",
+          "canonicalSha256": "26564f964bc831a3c1ab42a9e2e38adf4c557afcb6f8ba7ab44267a3986111a2",
+          "bytes": 7501
+        },
+        {
+          "role": "con-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-124-con.json",
+          "sha256": "30ff9c1dc30b775071c32487df0673e81efe9ce8e0769bd1eaba96bb0d7142ad",
+          "bytes": 27014
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-124-con.schema.json",
+          "sha256": "19ef3bb1c8ebd588f8a7603809907b4bab2674c192d1383f2229794d7f5bc979",
+          "bytes": 7151
+        }
+      ],
+      "copiedInputBytes": 53339,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-124-con.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 2,
+      "stage": "pro-candidate-evidence-selection",
+      "debateNumber": "116",
+      "debateId": "bertuzzi-schieber-evil-evidence-2019",
+      "family": "evil-hiddenness",
+      "sourceComplexityBand": "direct-sized",
+      "side": "pro",
+      "candidates": 10,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-116.json",
+      "immutablePlanSha256": "751f3b17ca2cd68101a40826b5dcaa7eb15b32ab1333b0ffdba012baa89d28e4",
+      "immutablePlanCanonicalSha256": "dd501039b84ef0b2d2d86a8e15c2315e58b3e33af9f280fa71de08de0c5e4487",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-116-pro.json",
+      "sideTransportSha256": "306925d6a479e3b2d7f2221546b26afd943e02715b23255cb4055a92d9bd55aa",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-116-pro.schema.json",
+      "exactSchemaSha256": "2168ccf435745278fade1cd8c6347ce3d1d8213b2d670f0bbd8a822e8c5e5774",
+      "exactSchemaBytes": 5684,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-116-pro.json",
+      "packetSha256": "ec43ed84fa94012a0474215b5ad6f3642927da3b3e4205be86133ae323998c5b",
+      "packetBytes": 3323,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-116.json",
+          "sha256": "f5ab2ca3081b095c85f82589dac64e8cb5e3a0d7a2ade1c59977902c81dd755a",
+          "bytes": 3274
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-116.json",
+          "sha256": "751f3b17ca2cd68101a40826b5dcaa7eb15b32ab1333b0ffdba012baa89d28e4",
+          "canonicalSha256": "dd501039b84ef0b2d2d86a8e15c2315e58b3e33af9f280fa71de08de0c5e4487",
+          "bytes": 6627
+        },
+        {
+          "role": "pro-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-116-pro.json",
+          "sha256": "306925d6a479e3b2d7f2221546b26afd943e02715b23255cb4055a92d9bd55aa",
+          "bytes": 13753
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-116-pro.schema.json",
+          "sha256": "2168ccf435745278fade1cd8c6347ce3d1d8213b2d670f0bbd8a822e8c5e5774",
+          "bytes": 5684
+        }
+      ],
+      "copiedInputBytes": 37752,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-116-pro.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 3,
+      "stage": "con-candidate-evidence-selection",
+      "debateNumber": "116",
+      "debateId": "bertuzzi-schieber-evil-evidence-2019",
+      "family": "evil-hiddenness",
+      "sourceComplexityBand": "direct-sized",
+      "side": "con",
+      "candidates": 11,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-116.json",
+      "immutablePlanSha256": "751f3b17ca2cd68101a40826b5dcaa7eb15b32ab1333b0ffdba012baa89d28e4",
+      "immutablePlanCanonicalSha256": "dd501039b84ef0b2d2d86a8e15c2315e58b3e33af9f280fa71de08de0c5e4487",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-116-con.json",
+      "sideTransportSha256": "8cbabc40e24d04cac8d15c87c1e5a23741c52710dcc320f3df9ab1625a83e60c",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-116-con.schema.json",
+      "exactSchemaSha256": "b8ec943062c44e94c2a171c345f64a2cbd63b2f54bbddbc2ae3e316ab47cc478",
+      "exactSchemaBytes": 5708,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-116-con.json",
+      "packetSha256": "d004ab98533e3edfd2fd877ac110309495f2b63448c63cade7ca7c2b2443d663",
+      "packetBytes": 3323,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-116.json",
+          "sha256": "f5ab2ca3081b095c85f82589dac64e8cb5e3a0d7a2ade1c59977902c81dd755a",
+          "bytes": 3274
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-116.json",
+          "sha256": "751f3b17ca2cd68101a40826b5dcaa7eb15b32ab1333b0ffdba012baa89d28e4",
+          "canonicalSha256": "dd501039b84ef0b2d2d86a8e15c2315e58b3e33af9f280fa71de08de0c5e4487",
+          "bytes": 6627
+        },
+        {
+          "role": "con-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-116-con.json",
+          "sha256": "8cbabc40e24d04cac8d15c87c1e5a23741c52710dcc320f3df9ab1625a83e60c",
+          "bytes": 14129
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-116-con.schema.json",
+          "sha256": "b8ec943062c44e94c2a171c345f64a2cbd63b2f54bbddbc2ae3e316ab47cc478",
+          "bytes": 5708
+        }
+      ],
+      "copiedInputBytes": 38152,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-116-con.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 4,
+      "stage": "pro-candidate-evidence-selection",
+      "debateNumber": "170",
+      "debateId": "singer-lennox-is-there-god-2011",
+      "family": "resurrection-history",
+      "sourceComplexityBand": "partition-medium",
+      "side": "pro",
+      "candidates": 16,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-170.json",
+      "immutablePlanSha256": "a7a109d9698a59c95b1ddb5f0585b10601911aae781f8033bddd2c9e461e3114",
+      "immutablePlanCanonicalSha256": "5657f508e8f794808c9d8fb60d7e7c63b737e8982d7cf13efeaf76e47ab397e9",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-170-pro.json",
+      "sideTransportSha256": "eed28c4bb02edc88c75c05dfffddb8fb9dfc86a989b06f986ce794e150a03ced",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-170-pro.schema.json",
+      "exactSchemaSha256": "816f764014de7d9af74b259ca3acb9b95a842237e9d6deb365c804a73fbbd365",
+      "exactSchemaBytes": 6364,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-170-pro.json",
+      "packetSha256": "e88a4dcbef5c3303c3f5bb77a9ace408f9a8c5a25f36aadf553211a81e99490f",
+      "packetBytes": 3318,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-170.json",
+          "sha256": "0cfd2760b2e29af717315ac9f2adc93c54cd3999e8ba8b554595b08508ed4c81",
+          "bytes": 3192
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-170.json",
+          "sha256": "a7a109d9698a59c95b1ddb5f0585b10601911aae781f8033bddd2c9e461e3114",
+          "canonicalSha256": "5657f508e8f794808c9d8fb60d7e7c63b737e8982d7cf13efeaf76e47ab397e9",
+          "bytes": 7617
+        },
+        {
+          "role": "pro-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-170-pro.json",
+          "sha256": "eed28c4bb02edc88c75c05dfffddb8fb9dfc86a989b06f986ce794e150a03ced",
+          "bytes": 20034
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-170-pro.schema.json",
+          "sha256": "816f764014de7d9af74b259ca3acb9b95a842237e9d6deb365c804a73fbbd365",
+          "bytes": 6364
+        }
+      ],
+      "copiedInputBytes": 45621,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-170-pro.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 5,
+      "stage": "con-candidate-evidence-selection",
+      "debateNumber": "170",
+      "debateId": "singer-lennox-is-there-god-2011",
+      "family": "resurrection-history",
+      "sourceComplexityBand": "partition-medium",
+      "side": "con",
+      "candidates": 14,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-170.json",
+      "immutablePlanSha256": "a7a109d9698a59c95b1ddb5f0585b10601911aae781f8033bddd2c9e461e3114",
+      "immutablePlanCanonicalSha256": "5657f508e8f794808c9d8fb60d7e7c63b737e8982d7cf13efeaf76e47ab397e9",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-170-con.json",
+      "sideTransportSha256": "adb8e3e4afcdb30937e2c7492fb55f6161682fb69d8a29bd58c3225f9960ac21",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-170-con.schema.json",
+      "exactSchemaSha256": "455578114ca2dc58ae4a0923da95e846722c6c98c11a55ce9edc57c89f665988",
+      "exactSchemaBytes": 6092,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-170-con.json",
+      "packetSha256": "ec44e1ba9840114b35446c4f00e7af00cb3bc0651769e0fbca1f5640609e4b6b",
+      "packetBytes": 3318,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-170.json",
+          "sha256": "0cfd2760b2e29af717315ac9f2adc93c54cd3999e8ba8b554595b08508ed4c81",
+          "bytes": 3192
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-170.json",
+          "sha256": "a7a109d9698a59c95b1ddb5f0585b10601911aae781f8033bddd2c9e461e3114",
+          "canonicalSha256": "5657f508e8f794808c9d8fb60d7e7c63b737e8982d7cf13efeaf76e47ab397e9",
+          "bytes": 7617
+        },
+        {
+          "role": "con-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-170-con.json",
+          "sha256": "adb8e3e4afcdb30937e2c7492fb55f6161682fb69d8a29bd58c3225f9960ac21",
+          "bytes": 17466
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-170-con.schema.json",
+          "sha256": "455578114ca2dc58ae4a0923da95e846722c6c98c11a55ce9edc57c89f665988",
+          "bytes": 6092
+        }
+      ],
+      "copiedInputBytes": 42781,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-170-con.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 6,
+      "stage": "pro-candidate-evidence-selection",
+      "debateNumber": "145",
+      "debateId": "dennett-dsouza-god-human-invention-2007",
+      "family": "morality-ethics",
+      "sourceComplexityBand": "partition-medium",
+      "side": "pro",
+      "candidates": 19,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-145.json",
+      "immutablePlanSha256": "4e7a5dd409268ccb48890e5f0b70d3d42a795f1436613d16b0487cce3ba466de",
+      "immutablePlanCanonicalSha256": "9165c767c473ae7ab443a193494394627bfac5a8a39c373af23a657df0de1118",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-145-pro.json",
+      "sideTransportSha256": "c8df10a6d3610b0ea6e0d45fbe78c087a2d84311bc57f246bcd4acd3cfd5e0b1",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-145-pro.schema.json",
+      "exactSchemaSha256": "086a2b1a40026770ccfaa996a2c356b83c500bf85fe9f42c02988aa857bbc01f",
+      "exactSchemaBytes": 7117,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-145-pro.json",
+      "packetSha256": "5b2be249329b77773fc5c104f7c30344a44e01aeaae5df3c041827c3fcc2ad1c",
+      "packetBytes": 3326,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-145.json",
+          "sha256": "ee6f3d5128ae53bdeab0e5afe4d771d24d6c486a6b18f6f55ca5c16e8069ffcd",
+          "bytes": 3244
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-145.json",
+          "sha256": "4e7a5dd409268ccb48890e5f0b70d3d42a795f1436613d16b0487cce3ba466de",
+          "canonicalSha256": "9165c767c473ae7ab443a193494394627bfac5a8a39c373af23a657df0de1118",
+          "bytes": 7901
+        },
+        {
+          "role": "pro-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-145-pro.json",
+          "sha256": "c8df10a6d3610b0ea6e0d45fbe78c087a2d84311bc57f246bcd4acd3cfd5e0b1",
+          "bytes": 22309
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-145-pro.schema.json",
+          "sha256": "086a2b1a40026770ccfaa996a2c356b83c500bf85fe9f42c02988aa857bbc01f",
+          "bytes": 7117
+        }
+      ],
+      "copiedInputBytes": 48985,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-145-pro.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 7,
+      "stage": "con-candidate-evidence-selection",
+      "debateNumber": "145",
+      "debateId": "dennett-dsouza-god-human-invention-2007",
+      "family": "morality-ethics",
+      "sourceComplexityBand": "partition-medium",
+      "side": "con",
+      "candidates": 21,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-145.json",
+      "immutablePlanSha256": "4e7a5dd409268ccb48890e5f0b70d3d42a795f1436613d16b0487cce3ba466de",
+      "immutablePlanCanonicalSha256": "9165c767c473ae7ab443a193494394627bfac5a8a39c373af23a657df0de1118",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-145-con.json",
+      "sideTransportSha256": "33312ccbd2aad4c3db0a31ac53a218e2909d52954507162932d9e4914bf35a20",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-145-con.schema.json",
+      "exactSchemaSha256": "24bb21bdf06a84b5b0cb63d6be65cd2468824ce45beb0643fa31d86230e8a4f3",
+      "exactSchemaBytes": 7389,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-145-con.json",
+      "packetSha256": "3b03229e6b232abd7b8fbfcfca9cd723929a6203154bbf14bc189e2beac306d1",
+      "packetBytes": 3326,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-145.json",
+          "sha256": "ee6f3d5128ae53bdeab0e5afe4d771d24d6c486a6b18f6f55ca5c16e8069ffcd",
+          "bytes": 3244
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-145.json",
+          "sha256": "4e7a5dd409268ccb48890e5f0b70d3d42a795f1436613d16b0487cce3ba466de",
+          "canonicalSha256": "9165c767c473ae7ab443a193494394627bfac5a8a39c373af23a657df0de1118",
+          "bytes": 7901
+        },
+        {
+          "role": "con-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-145-con.json",
+          "sha256": "33312ccbd2aad4c3db0a31ac53a218e2909d52954507162932d9e4914bf35a20",
+          "bytes": 25330
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-145-con.schema.json",
+          "sha256": "24bb21bdf06a84b5b0cb63d6be65cd2468824ce45beb0643fa31d86230e8a4f3",
+          "bytes": 7389
+        }
+      ],
+      "copiedInputBytes": 52278,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-145-con.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 8,
+      "stage": "pro-candidate-evidence-selection",
+      "debateNumber": "189",
+      "debateId": "tour-cronin-origin-of-life-2020",
+      "family": "general-theism-religion",
+      "sourceComplexityBand": "partition-medium",
+      "side": "pro",
+      "candidates": 15,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-189.json",
+      "immutablePlanSha256": "53002120399aec05c6bedfa96742305368d1165bae9ac57b6516616abbb8f902",
+      "immutablePlanCanonicalSha256": "14e3179f3c169b974c3a9e136b8cbc81f5f1938d27f7baca7c0021307b351b03",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-189-pro.json",
+      "sideTransportSha256": "c3e025fba77dc74dd40f69bd26abdb044dfedccf1e6e0cb3a74cc489a5b1b6d7",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-189-pro.schema.json",
+      "exactSchemaSha256": "0c24533f5bc7c401a1c4ac8910122be772d9e13c0d7700576ca0b764560a81f5",
+      "exactSchemaBytes": 6161,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-189-pro.json",
+      "packetSha256": "1722c0c2fd24292d5ae94079f5b13d8ced78e58a8f045e5fa0e918ecd3629ada",
+      "packetBytes": 3318,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-189.json",
+          "sha256": "a76eec3f385ac831a2f6bcf61bc54991bfaec816e08332969a35b4a8d2211361",
+          "bytes": 3198
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-189.json",
+          "sha256": "53002120399aec05c6bedfa96742305368d1165bae9ac57b6516616abbb8f902",
+          "canonicalSha256": "14e3179f3c169b974c3a9e136b8cbc81f5f1938d27f7baca7c0021307b351b03",
+          "bytes": 6953
+        },
+        {
+          "role": "pro-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-189-pro.json",
+          "sha256": "c3e025fba77dc74dd40f69bd26abdb044dfedccf1e6e0cb3a74cc489a5b1b6d7",
+          "bytes": 18200
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-189-pro.schema.json",
+          "sha256": "0c24533f5bc7c401a1c4ac8910122be772d9e13c0d7700576ca0b764560a81f5",
+          "bytes": 6161
+        }
+      ],
+      "copiedInputBytes": 42926,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-189-pro.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 9,
+      "stage": "con-candidate-evidence-selection",
+      "debateNumber": "189",
+      "debateId": "tour-cronin-origin-of-life-2020",
+      "family": "general-theism-religion",
+      "sourceComplexityBand": "partition-medium",
+      "side": "con",
+      "candidates": 12,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-189.json",
+      "immutablePlanSha256": "53002120399aec05c6bedfa96742305368d1165bae9ac57b6516616abbb8f902",
+      "immutablePlanCanonicalSha256": "14e3179f3c169b974c3a9e136b8cbc81f5f1938d27f7baca7c0021307b351b03",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-189-con.json",
+      "sideTransportSha256": "8790c375fc0c4dd25497162f0e25f0c249739025ac4f41febb36f81ca97ca8a4",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-189-con.schema.json",
+      "exactSchemaSha256": "90b3355f6756b76627d00366142315e8b59e7f3d9e4228b720d2c2766958e1cf",
+      "exactSchemaBytes": 5827,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-189-con.json",
+      "packetSha256": "2e3dd9e990f7ccacfc50ecdf29f33da8ba32c0b38d20be6c93a17325699fda84",
+      "packetBytes": 3318,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-189.json",
+          "sha256": "a76eec3f385ac831a2f6bcf61bc54991bfaec816e08332969a35b4a8d2211361",
+          "bytes": 3198
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-189.json",
+          "sha256": "53002120399aec05c6bedfa96742305368d1165bae9ac57b6516616abbb8f902",
+          "canonicalSha256": "14e3179f3c169b974c3a9e136b8cbc81f5f1938d27f7baca7c0021307b351b03",
+          "bytes": 6953
+        },
+        {
+          "role": "con-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-189-con.json",
+          "sha256": "8790c375fc0c4dd25497162f0e25f0c249739025ac4f41febb36f81ca97ca8a4",
+          "bytes": 15351
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-189-con.schema.json",
+          "sha256": "90b3355f6756b76627d00366142315e8b59e7f3d9e4228b720d2c2766958e1cf",
+          "bytes": 5827
+        }
+      ],
+      "copiedInputBytes": 39743,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-189-con.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 10,
+      "stage": "pro-candidate-evidence-selection",
+      "debateNumber": "114",
+      "debateId": "dirckx-goff-consciousness-points-god-2019",
+      "family": "mind-agency",
+      "sourceComplexityBand": "partition-medium",
+      "side": "pro",
+      "candidates": 13,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-114.json",
+      "immutablePlanSha256": "fc81c7d4b633ad0811d095ef14fdabfa53019bae4dccad66d70c6c2ad61ce8b8",
+      "immutablePlanCanonicalSha256": "e5ba05b094bdc1a11fdfec398d56d38338f04e5ddfe24ea624da26e9fc49acee",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-114-pro.json",
+      "sideTransportSha256": "482c6e987f2698242e8e253b3b689bce6b263e55c336580cc4e38a998e7c3eaa",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-114-pro.schema.json",
+      "exactSchemaSha256": "242ec34ce590b85fa5f40a99efe3811618144dcec4f77090a7234a7b72894170",
+      "exactSchemaBytes": 6018,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-114-pro.json",
+      "packetSha256": "ef933d515a05ce494c201c97212df84e66615e44411b7ca6bf39b3debce0ddb9",
+      "packetBytes": 3328,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-114.json",
+          "sha256": "4974b2d459f4fc96a133a893fd0c929116cc6b204486dafc482ed13ac9e77a4f",
+          "bytes": 3229
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-114.json",
+          "sha256": "fc81c7d4b633ad0811d095ef14fdabfa53019bae4dccad66d70c6c2ad61ce8b8",
+          "canonicalSha256": "e5ba05b094bdc1a11fdfec398d56d38338f04e5ddfe24ea624da26e9fc49acee",
+          "bytes": 6934
+        },
+        {
+          "role": "pro-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-114-pro.json",
+          "sha256": "482c6e987f2698242e8e253b3b689bce6b263e55c336580cc4e38a998e7c3eaa",
+          "bytes": 15319
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-114-pro.schema.json",
+          "sha256": "242ec34ce590b85fa5f40a99efe3811618144dcec4f77090a7234a7b72894170",
+          "bytes": 6018
+        }
+      ],
+      "copiedInputBytes": 39914,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-114-pro.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 11,
+      "stage": "con-candidate-evidence-selection",
+      "debateNumber": "114",
+      "debateId": "dirckx-goff-consciousness-points-god-2019",
+      "family": "mind-agency",
+      "sourceComplexityBand": "partition-medium",
+      "side": "con",
+      "candidates": 16,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-114.json",
+      "immutablePlanSha256": "fc81c7d4b633ad0811d095ef14fdabfa53019bae4dccad66d70c6c2ad61ce8b8",
+      "immutablePlanCanonicalSha256": "e5ba05b094bdc1a11fdfec398d56d38338f04e5ddfe24ea624da26e9fc49acee",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-114-con.json",
+      "sideTransportSha256": "2870e306db9e4a5c73f604e0171ffde4458b820e3f329b2674690ea708fdfda2",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-114-con.schema.json",
+      "exactSchemaSha256": "ddbdc28dcee242515f437c316e0970b01e089734167c2e88ad11bfee92d1b80f",
+      "exactSchemaBytes": 6390,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-114-con.json",
+      "packetSha256": "242d0f242256d8099e545708b04d26b17a07abe5b6087eb0d7efd3bfcb5a4ecb",
+      "packetBytes": 3328,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-114.json",
+          "sha256": "4974b2d459f4fc96a133a893fd0c929116cc6b204486dafc482ed13ac9e77a4f",
+          "bytes": 3229
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-114.json",
+          "sha256": "fc81c7d4b633ad0811d095ef14fdabfa53019bae4dccad66d70c6c2ad61ce8b8",
+          "canonicalSha256": "e5ba05b094bdc1a11fdfec398d56d38338f04e5ddfe24ea624da26e9fc49acee",
+          "bytes": 6934
+        },
+        {
+          "role": "con-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-114-con.json",
+          "sha256": "2870e306db9e4a5c73f604e0171ffde4458b820e3f329b2674690ea708fdfda2",
+          "bytes": 18651
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-114-con.schema.json",
+          "sha256": "ddbdc28dcee242515f437c316e0970b01e089734167c2e88ad11bfee92d1b80f",
+          "bytes": 6390
+        }
+      ],
+      "copiedInputBytes": 43618,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-114-con.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 12,
+      "stage": "pro-candidate-evidence-selection",
+      "debateNumber": "48",
+      "debateId": "scrivener-folley-hiddenness-evil-moral-narrative-2025",
+      "family": "evil-hiddenness",
+      "sourceComplexityBand": "partition-medium",
+      "side": "pro",
+      "candidates": 15,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-48.json",
+      "immutablePlanSha256": "5988aa70846c503d7d81a3d96d7b687a55aad8710f9fc992cb2af1a8a526b4e3",
+      "immutablePlanCanonicalSha256": "fd20913305e6d793383584bdedb770971f047f58d6fc1f758e1342e3c78556f6",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-48-pro.json",
+      "sideTransportSha256": "1a0dddaf535bf8b07cbea010311437ed37ac07207ce0f5ec00f659e3a53de437",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-48-pro.schema.json",
+      "exactSchemaSha256": "ca9831df03945b178bc64056d577fe7d3d1ebc602756faf2ff72f9218f14dcd6",
+      "exactSchemaBytes": 6314,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-48-pro.json",
+      "packetSha256": "b5b70500bb203c8931eaea890288bab1734ab0ea5933ec02868e8d8687338e7c",
+      "packetBytes": 3334,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-48.json",
+          "sha256": "0c14c20aedbaa676fa95ce5fb89fd25792f13186b400d334285a52b529bd17cb",
+          "bytes": 3226
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-48.json",
+          "sha256": "5988aa70846c503d7d81a3d96d7b687a55aad8710f9fc992cb2af1a8a526b4e3",
+          "canonicalSha256": "fd20913305e6d793383584bdedb770971f047f58d6fc1f758e1342e3c78556f6",
+          "bytes": 7797
+        },
+        {
+          "role": "pro-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-48-pro.json",
+          "sha256": "1a0dddaf535bf8b07cbea010311437ed37ac07207ce0f5ec00f659e3a53de437",
+          "bytes": 18839
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-48-pro.schema.json",
+          "sha256": "ca9831df03945b178bc64056d577fe7d3d1ebc602756faf2ff72f9218f14dcd6",
+          "bytes": 6314
+        }
+      ],
+      "copiedInputBytes": 44590,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-48-pro.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 13,
+      "stage": "con-candidate-evidence-selection",
+      "debateNumber": "48",
+      "debateId": "scrivener-folley-hiddenness-evil-moral-narrative-2025",
+      "family": "evil-hiddenness",
+      "sourceComplexityBand": "partition-medium",
+      "side": "con",
+      "candidates": 15,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-48.json",
+      "immutablePlanSha256": "5988aa70846c503d7d81a3d96d7b687a55aad8710f9fc992cb2af1a8a526b4e3",
+      "immutablePlanCanonicalSha256": "fd20913305e6d793383584bdedb770971f047f58d6fc1f758e1342e3c78556f6",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-48-con.json",
+      "sideTransportSha256": "d138c36496fc2e7c7d12f3ad48e095836db04315a2c4e2c78ad149b6296c7246",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-48-con.schema.json",
+      "exactSchemaSha256": "f6e55ab6b1fa1e80654e93057a22cf1b7ee66d44db80d7abe7a0291571113244",
+      "exactSchemaBytes": 6182,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-48-con.json",
+      "packetSha256": "2fb5b5dc3537bbe33092f69275081c368bbdd0f4c39848bc0d9cc2f62f93d3ca",
+      "packetBytes": 3334,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-48.json",
+          "sha256": "0c14c20aedbaa676fa95ce5fb89fd25792f13186b400d334285a52b529bd17cb",
+          "bytes": 3226
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-48.json",
+          "sha256": "5988aa70846c503d7d81a3d96d7b687a55aad8710f9fc992cb2af1a8a526b4e3",
+          "canonicalSha256": "fd20913305e6d793383584bdedb770971f047f58d6fc1f758e1342e3c78556f6",
+          "bytes": 7797
+        },
+        {
+          "role": "con-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-48-con.json",
+          "sha256": "d138c36496fc2e7c7d12f3ad48e095836db04315a2c4e2c78ad149b6296c7246",
+          "bytes": 18834
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-48-con.schema.json",
+          "sha256": "f6e55ab6b1fa1e80654e93057a22cf1b7ee66d44db80d7abe7a0291571113244",
+          "bytes": 6182
+        }
+      ],
+      "copiedInputBytes": 44453,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-48-con.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 14,
+      "stage": "pro-candidate-evidence-selection",
+      "debateNumber": "186",
+      "debateId": "huemer-sapolsky-free-will-determinism-2024",
+      "family": "general-theism-religion",
+      "sourceComplexityBand": "partition-medium",
+      "side": "pro",
+      "candidates": 17,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-186.json",
+      "immutablePlanSha256": "c29e4790405d7ac031899cd7628f01b11ade00c94aefcedb26f0714f371066d8",
+      "immutablePlanCanonicalSha256": "0ba2c4e54e344987e079762f20bff364e43b0559ab2c7fd0be3c8e1949bd32b2",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-186-pro.json",
+      "sideTransportSha256": "6924f40cdbff0fdcfc72f8ca07dedfa6b274bbad4eb2ea7490cf20ca3429bf35",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-186-pro.schema.json",
+      "exactSchemaSha256": "cb1573da91804143da1e5a58a25d03f78637b8d6ca24ad7a502e7ea06a6bb771",
+      "exactSchemaBytes": 6251,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-186-pro.json",
+      "packetSha256": "dddc771636400e73e10342518a79065abea3308353ae26d71f93074d1b29cfcb",
+      "packetBytes": 3329,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-186.json",
+          "sha256": "9f1ef6f7c7eb1b790b11e03568a65ec0baff1c0f4d9748b43b658596905ab25f",
+          "bytes": 3249
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-186.json",
+          "sha256": "c29e4790405d7ac031899cd7628f01b11ade00c94aefcedb26f0714f371066d8",
+          "canonicalSha256": "0ba2c4e54e344987e079762f20bff364e43b0559ab2c7fd0be3c8e1949bd32b2",
+          "bytes": 6957
+        },
+        {
+          "role": "pro-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-186-pro.json",
+          "sha256": "6924f40cdbff0fdcfc72f8ca07dedfa6b274bbad4eb2ea7490cf20ca3429bf35",
+          "bytes": 19852
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-186-pro.schema.json",
+          "sha256": "cb1573da91804143da1e5a58a25d03f78637b8d6ca24ad7a502e7ea06a6bb771",
+          "bytes": 6251
+        }
+      ],
+      "copiedInputBytes": 44723,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-186-pro.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 15,
+      "stage": "con-candidate-evidence-selection",
+      "debateNumber": "186",
+      "debateId": "huemer-sapolsky-free-will-determinism-2024",
+      "family": "general-theism-religion",
+      "sourceComplexityBand": "partition-medium",
+      "side": "con",
+      "candidates": 13,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-186.json",
+      "immutablePlanSha256": "c29e4790405d7ac031899cd7628f01b11ade00c94aefcedb26f0714f371066d8",
+      "immutablePlanCanonicalSha256": "0ba2c4e54e344987e079762f20bff364e43b0559ab2c7fd0be3c8e1949bd32b2",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-186-con.json",
+      "sideTransportSha256": "fc8a9df8a5b4abbd162412abddc1b151b85b1890971aa0a76f437d1d62fde483",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-186-con.schema.json",
+      "exactSchemaSha256": "d996e1112432b8aa947879cd2357459642e76c92b32e7dec33de898f8cf7036e",
+      "exactSchemaBytes": 5827,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-186-con.json",
+      "packetSha256": "14dd70f639223158e492bb13b924ce3005c9154e0a7567289c29aeefa0f7f4b7",
+      "packetBytes": 3329,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-186.json",
+          "sha256": "9f1ef6f7c7eb1b790b11e03568a65ec0baff1c0f4d9748b43b658596905ab25f",
+          "bytes": 3249
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-186.json",
+          "sha256": "c29e4790405d7ac031899cd7628f01b11ade00c94aefcedb26f0714f371066d8",
+          "canonicalSha256": "0ba2c4e54e344987e079762f20bff364e43b0559ab2c7fd0be3c8e1949bd32b2",
+          "bytes": 6957
+        },
+        {
+          "role": "con-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-186-con.json",
+          "sha256": "fc8a9df8a5b4abbd162412abddc1b151b85b1890971aa0a76f437d1d62fde483",
+          "bytes": 15567
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-186-con.schema.json",
+          "sha256": "d996e1112432b8aa947879cd2357459642e76c92b32e7dec33de898f8cf7036e",
+          "bytes": 5827
+        }
+      ],
+      "copiedInputBytes": 40014,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-186-con.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 16,
+      "stage": "pro-candidate-evidence-selection",
+      "debateNumber": "42",
+      "debateId": "schmid-tomaszewski-divine-simplicity-2020",
+      "family": "general-theism-religion",
+      "sourceComplexityBand": "partition-medium",
+      "side": "pro",
+      "candidates": 18,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-42.json",
+      "immutablePlanSha256": "032b60ad927ae3d12ce8f3445c79cf6c6a363713c7cb3d1d076ea1fa1ae42765",
+      "immutablePlanCanonicalSha256": "344bf06c3724c096531f7167d5a75d16ac069f0fae812a7d7284c0667b5a94a4",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-42-pro.json",
+      "sideTransportSha256": "b1aed7b08a730051e1700bc293e7c0ad5e2baf79e431f5671c095d84d4ca147f",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-42-pro.schema.json",
+      "exactSchemaSha256": "b3df24e457ddd481ed83e25a9ea7c47ff7346148eb3c27464b44423f8758b8a9",
+      "exactSchemaBytes": 6693,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-42-pro.json",
+      "packetSha256": "a28bb291726be63b17d3539c92f66c8fd949d2bd68ecc756e91ffacd1ad1d740",
+      "packetBytes": 3322,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-42.json",
+          "sha256": "ea0f18d6913dabe9e8c2a31e10bb077e05a41740331f354b498c52606504cdb1",
+          "bytes": 3274
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-42.json",
+          "sha256": "032b60ad927ae3d12ce8f3445c79cf6c6a363713c7cb3d1d076ea1fa1ae42765",
+          "canonicalSha256": "344bf06c3724c096531f7167d5a75d16ac069f0fae812a7d7284c0667b5a94a4",
+          "bytes": 7097
+        },
+        {
+          "role": "pro-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-42-pro.json",
+          "sha256": "b1aed7b08a730051e1700bc293e7c0ad5e2baf79e431f5671c095d84d4ca147f",
+          "bytes": 21602
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-42-pro.schema.json",
+          "sha256": "b3df24e457ddd481ed83e25a9ea7c47ff7346148eb3c27464b44423f8758b8a9",
+          "bytes": 6693
+        }
+      ],
+      "copiedInputBytes": 47080,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-42-pro.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 17,
+      "stage": "con-candidate-evidence-selection",
+      "debateNumber": "42",
+      "debateId": "schmid-tomaszewski-divine-simplicity-2020",
+      "family": "general-theism-religion",
+      "sourceComplexityBand": "partition-medium",
+      "side": "con",
+      "candidates": 12,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-42.json",
+      "immutablePlanSha256": "032b60ad927ae3d12ce8f3445c79cf6c6a363713c7cb3d1d076ea1fa1ae42765",
+      "immutablePlanCanonicalSha256": "344bf06c3724c096531f7167d5a75d16ac069f0fae812a7d7284c0667b5a94a4",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-42-con.json",
+      "sideTransportSha256": "c5c8225a238781097669f32e6bffbf6b8aadbf4f1e34bbc67f2d504fdc2aa5f0",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-42-con.schema.json",
+      "exactSchemaSha256": "91171609a0f5818fe01a8a84e95ce55194919a828818131f8fab1f51dfa437dc",
+      "exactSchemaBytes": 5985,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-42-con.json",
+      "packetSha256": "e5ebc0212dbcfe01307a69ec0a9c268930af8aed212fb84fdf62e352a0c6e817",
+      "packetBytes": 3322,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-42.json",
+          "sha256": "ea0f18d6913dabe9e8c2a31e10bb077e05a41740331f354b498c52606504cdb1",
+          "bytes": 3274
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-42.json",
+          "sha256": "032b60ad927ae3d12ce8f3445c79cf6c6a363713c7cb3d1d076ea1fa1ae42765",
+          "canonicalSha256": "344bf06c3724c096531f7167d5a75d16ac069f0fae812a7d7284c0667b5a94a4",
+          "bytes": 7097
+        },
+        {
+          "role": "con-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-42-con.json",
+          "sha256": "c5c8225a238781097669f32e6bffbf6b8aadbf4f1e34bbc67f2d504fdc2aa5f0",
+          "bytes": 14561
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-42-con.schema.json",
+          "sha256": "91171609a0f5818fe01a8a84e95ce55194919a828818131f8fab1f51dfa437dc",
+          "bytes": 5985
+        }
+      ],
+      "copiedInputBytes": 39331,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-42-con.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 18,
+      "stage": "pro-candidate-evidence-selection",
+      "debateNumber": "73",
+      "debateId": "hawkins-folley-free-will-compatibilism-2026",
+      "family": "mind-agency",
+      "sourceComplexityBand": "partition-medium",
+      "side": "pro",
+      "candidates": 14,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-73.json",
+      "immutablePlanSha256": "e70cf2d8abbaab086f5c18955c7a6658ad3729b7a651d853ffad7bee2c022675",
+      "immutablePlanCanonicalSha256": "458ed0033cc699b56bcf5c30806c3f4c83c86bb4c6873412cd1eb0ab23c24ad1",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-73-pro.json",
+      "sideTransportSha256": "17db7a61e8f6e3d08bf20258095342baa685c5f76fd86da652f11726573558ed",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-73-pro.schema.json",
+      "exactSchemaSha256": "d5923a70b7bca9dd8389fa2336d0cf45e4931cf199d3ed4692d417fa484f1ab7",
+      "exactSchemaBytes": 6310,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-73-pro.json",
+      "packetSha256": "2b2ab28eed1e1f2140ade9e1792612f74781c8e3379d2681b77d757af7a33fa3",
+      "packetBytes": 3324,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-73.json",
+          "sha256": "8b92e5fcd196aed84faa70077a91c390ff1cc70eb40feb7116df2cd73c680850",
+          "bytes": 3250
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-73.json",
+          "sha256": "e70cf2d8abbaab086f5c18955c7a6658ad3729b7a651d853ffad7bee2c022675",
+          "canonicalSha256": "458ed0033cc699b56bcf5c30806c3f4c83c86bb4c6873412cd1eb0ab23c24ad1",
+          "bytes": 7109
+        },
+        {
+          "role": "pro-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-73-pro.json",
+          "sha256": "17db7a61e8f6e3d08bf20258095342baa685c5f76fd86da652f11726573558ed",
+          "bytes": 17555
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-73-pro.schema.json",
+          "sha256": "d5923a70b7bca9dd8389fa2336d0cf45e4931cf199d3ed4692d417fa484f1ab7",
+          "bytes": 6310
+        }
+      ],
+      "copiedInputBytes": 42638,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-73-pro.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 19,
+      "stage": "con-candidate-evidence-selection",
+      "debateNumber": "73",
+      "debateId": "hawkins-folley-free-will-compatibilism-2026",
+      "family": "mind-agency",
+      "sourceComplexityBand": "partition-medium",
+      "side": "con",
+      "candidates": 16,
+      "immutablePlan": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-73.json",
+      "immutablePlanSha256": "e70cf2d8abbaab086f5c18955c7a6658ad3729b7a651d853ffad7bee2c022675",
+      "immutablePlanCanonicalSha256": "458ed0033cc699b56bcf5c30806c3f4c83c86bb4c6873412cd1eb0ab23c24ad1",
+      "sideTransport": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-73-con.json",
+      "sideTransportSha256": "c63eb873cd2d5acf1f45e471bb2d52740d4fd1649e9305b613286aa39f217bdc",
+      "exactSchema": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-73-con.schema.json",
+      "exactSchemaSha256": "b9272376a465d00e78bb2b8e14579bc33b2fb0ba351bdc3e798a6c5a18fe0785",
+      "exactSchemaBytes": 6582,
+      "packet": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/sides/debate-73-con.json",
+      "packetSha256": "833f2cde0ab409049106c27e6395e5b02aa80b53927ad96133ca65119fd949ec",
+      "packetBytes": 3324,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-73.json",
+          "sha256": "8b92e5fcd196aed84faa70077a91c390ff1cc70eb40feb7116df2cd73c680850",
+          "bytes": 3250
+        },
+        {
+          "role": "immutable-candidate-census-plan",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-73.json",
+          "sha256": "e70cf2d8abbaab086f5c18955c7a6658ad3729b7a651d853ffad7bee2c022675",
+          "canonicalSha256": "458ed0033cc699b56bcf5c30806c3f4c83c86bb4c6873412cd1eb0ab23c24ad1",
+          "bytes": 7109
+        },
+        {
+          "role": "con-complete-candidate-evidence-transport",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-73-con.json",
+          "sha256": "c63eb873cd2d5acf1f45e471bb2d52740d4fd1649e9305b613286aa39f217bdc",
+          "bytes": 19728
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+          "bytes": 4982
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/sides/debate-73-con.schema.json",
+          "sha256": "b9272376a465d00e78bb2b8e14579bc33b2fb0ba351bdc3e798a6c5a18fe0785",
+          "bytes": 6582
+        }
+      ],
+      "copiedInputBytes": 45083,
+      "output": "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-73-con.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    }
+  ],
+  "isolation": {
+    "oneDebatePerContext": true,
+    "oneSidePerContext": true,
+    "freshContextPerSide": true,
+    "scoreBlind": true,
+    "immutablePlanSharedAcrossSides": true,
+    "sideSelectorsMutuallyIsolated": true,
+    "otherSideCandidateEvidenceUnavailable": true,
+    "otherSideSelectorOutputUnavailable": true,
+    "plannerExecutionMetadataUnavailable": true,
+    "priorExecutionMetadataUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "independentJudgmentsUnavailable": true,
+    "ratingsScoresWinnersTagsAndPublicationProseUnavailable": true
+  },
+  "exactBinding": {
+    "everySchemaBindsAcceptedCanonicalPlanHash": true,
+    "everySchemaEnumeratesAcceptedPlanSectionIds": true,
+    "everySchemaBindsCorrespondingSideTransportHash": true,
+    "everyPacketContainsOnlyOneSideTransport": true,
+    "completeSideCandidateCohortRetained": true,
+    "semanticCandidateDownselectionPerformed": false,
+    "exactSchemasExecutable": true,
+    "prototypeSchemasExecutable": false,
+    "maximumCopiedInputBytes": 53339,
+    "provenCeilingBytes": 115000
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "speakerCountAmbiguityBlocks": true,
+    "multiSpeakerFormatBlocks": true,
+    "invalidModelOutputBlocks": true,
+    "isolationFailureBlocks": true,
+    "missingSectionSideCoverageBlocks": true,
+    "belowHighConfidenceRequiresAudioVerification": true,
+    "unresolvedAudioBlocks": true,
+    "unresolvedDisputeBlocks": true,
+    "invalidFinalLedgerBlocks": true,
+    "modelAuthoredScoreBlocks": true,
+    "scorePolicyFailureBlocks": true,
+    "postResultPolicyChangeBlocks": true,
+    "publicationPreparationBeforeReadinessBlocks": true,
+    "productionMutationBlocks": true,
+    "remainingProductionBatchesBlock": true,
+    "preparationHashMismatchBlocks": true,
+    "invalidPlannerOutputBlocksEntireInventoryGate": true,
+    "sidePacketFreezeBeforeAcceptedPlanBlocks": true,
+    "exactSideSchemaHashMismatchBlocks": true,
+    "prototypeSchemaExecutionBlocks": true,
+    "crossSideEvidenceContaminationBlocks": true,
+    "retryBlocks": true,
+    "timeoutExtensionBlocks": true,
+    "sidePacketPreparationHashMismatchBlocks": true,
+    "acceptedPlanHashMismatchBlocks": true,
+    "sideModelExecutionBeforeSeparateActivationBlocks": true
+  },
+  "totals": {
+    "debates": 10,
+    "exactSideSchemasFrozen": 20,
+    "exactSidePacketsFrozen": 20,
+    "proContexts": 10,
+    "conContexts": 10,
+    "candidatesTransported": 307,
+    "modelContextsExecuted": 0,
+    "audioCalls": 0,
+    "transcriptionCalls": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "semanticCorrections": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-execution-preparation-manifest.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-execution-activation.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-model-execution.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/inventory-analysis.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-124-pro.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-124-con.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/inventory-proposals/debate-124.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/locked-inventories/debate-124.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/validations/debate-124.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/provenance/debate-124.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-116-pro.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-116-con.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/inventory-proposals/debate-116.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/locked-inventories/debate-116.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/validations/debate-116.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/provenance/debate-116.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-170-pro.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-170-con.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/inventory-proposals/debate-170.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/locked-inventories/debate-170.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/validations/debate-170.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/provenance/debate-170.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-145-pro.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-145-con.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/inventory-proposals/debate-145.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/locked-inventories/debate-145.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/validations/debate-145.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/provenance/debate-145.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-189-pro.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-189-con.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/inventory-proposals/debate-189.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/locked-inventories/debate-189.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/validations/debate-189.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/provenance/debate-189.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-114-pro.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-114-con.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/inventory-proposals/debate-114.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/locked-inventories/debate-114.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/validations/debate-114.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/provenance/debate-114.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-48-pro.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-48-con.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/inventory-proposals/debate-48.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/locked-inventories/debate-48.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/validations/debate-48.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/provenance/debate-48.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-186-pro.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-186-con.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/inventory-proposals/debate-186.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/locked-inventories/debate-186.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/validations/debate-186.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/provenance/debate-186.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-42-pro.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-42-con.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/inventory-proposals/debate-42.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/locked-inventories/debate-42.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/validations/debate-42.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/provenance/debate-42.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-73-pro.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/side-selections/debate-73-con.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/inventory-proposals/debate-73.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/locked-inventories/debate-73.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/validations/debate-73.json",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/provenance/debate-73.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-production-workflow.md": "64a66f21d38aec102256ffc4965a25b47d85341fe7e1610974df9f6e3a864bef",
+    "docs/assessment-production/manifest-v1.json": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-candidate-sharded-development/candidate-sharded-inventory-guide.md": "dd5e8ef79b647ca87dce1d77baf6448b020f8613595f485bb69f1948e4956042",
+    "docs/assessment-production/score-stability-v2-validation-cohort/inventory-candidate-sharded-development/development-analysis.json": "43da9da3952f0562575f5394371846db5f2bbca554802c4df36d142d0c0fc00a",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/discovery/analysis.json": "72ac1f07bc160453bca25ab0f59fffe1ddebbcc107f1adf4ed6528e9420ff43f",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/candidate-sharded-inventory-guide.md": "2d3c77af8ecf14bd34211a1172c674cd9adb5ec80fc82e4ffb46d19aaa24c7e5",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/plans/debate-114.json": "7af437fd723eebc5dbb28289fc8b3e4cf2cfab98a1eae1d58d77c47e7af54cf7",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/plans/debate-116.json": "dd1d6535d0bdfb30a6a9454cac47d1a233ba69518990aeaba34af810b5f0cc49",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/plans/debate-124.json": "d3ee0b4ba95feb4a74d446a9a4b71420bb7a15b769e28520b373815c82b60d93",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/plans/debate-145.json": "164fe0c5deb31b94787acd515f23c89c129c2b8624037d52d2aed1cb0ce2720f",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/plans/debate-170.json": "401b599909e65a21a3d2bd9ed2289d85b8a7c88459c1e985199803b6cf00be7f",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/plans/debate-186.json": "a5c9bdd4172a9b220b0f5a09ad58eb5ec98b8902fdc0e1a32d86e4f05ce8e85a",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/plans/debate-189.json": "9ef82e7d2486c1e3eb0f2c3c60d3c557b7c8708dd84cfa617f3abd4530d4199f",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/plans/debate-42.json": "f770a40a5351af7c010b9c654623b41bac5817f1d16add0692253a9fea6c5689",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/plans/debate-48.json": "c1686c18c40ea66ff2d0fcf94dcb833094b31bc8cfdabe1479a41fab8c65e1d6",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/packets/plans/debate-73.json": "55edc8e49c5c45db01f8f5c81d3d51c8e0b3636c0c61f1d4434eb201fd150a55",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plan-analysis.json": "f8b0bc6c296c0b39e196cadcef1725664003e27c60b4fd48d14bb42106218adb",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plan-execution-activation.json": "165afd25c7860e2aa02d36ab13365fb42578a1995c7849837c3c0a633da7a719",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plan-execution-preparation-manifest.json": "294669dfa6675d358347b22394bbb665004ec7c1bb363fc195e89faceb228aaa",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plan-model-execution.json": "43c77a1c11ee5ffb557d1d35c69abfdf4285c1f17e4555235f160409a3fee833",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-114.json": "fc81c7d4b633ad0811d095ef14fdabfa53019bae4dccad66d70c6c2ad61ce8b8",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-116.json": "751f3b17ca2cd68101a40826b5dcaa7eb15b32ab1333b0ffdba012baa89d28e4",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-124.json": "14e2b65219681df9d5275fa6b9dd84f215d43b37171a19fd8548ede82736dbbd",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-145.json": "4e7a5dd409268ccb48890e5f0b70d3d42a795f1436613d16b0487cce3ba466de",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-170.json": "a7a109d9698a59c95b1ddb5f0585b10601911aae781f8033bddd2c9e461e3114",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-186.json": "c29e4790405d7ac031899cd7628f01b11ade00c94aefcedb26f0714f371066d8",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-189.json": "53002120399aec05c6bedfa96742305368d1165bae9ac57b6516616abbb8f902",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-42.json": "032b60ad927ae3d12ce8f3445c79cf6c6a363713c7cb3d1d076ea1fa1ae42765",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-48.json": "5988aa70846c503d7d81a3d96d7b687a55aad8710f9fc992cb2af1a8a526b4e3",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/plans/debate-73.json": "e70cf2d8abbaab086f5c18955c7a6658ad3729b7a651d853ffad7bee2c022675",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/preparation-manifest.json": "7088c35230bcf22d77953c869814fe14157bdb4f3a62b210c5c5ba77db4286ac",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/compiler/debate-114.schema.json": "89acc00e34a2dd94dfeeb45a2e96437415ec5fa129c343552ab36dad65262db1",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/compiler/debate-116.schema.json": "75c2fc024343996674034373a723b7c30825e738d0b64e64a58aa05b86403f7e",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/compiler/debate-124.schema.json": "91515242798fb687fe29b44987911c3cf3dea2f90fb821c0b04a10e0292ebd09",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/compiler/debate-145.schema.json": "d576ff3ef4ba46437b840591362fc127db0a7675a696cca57aba117839c6e1ca",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/compiler/debate-170.schema.json": "c13b5e09e10c626abe61fa49571d87b9a6ba56d132ba52bbd065ed04f896c169",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/compiler/debate-186.schema.json": "773965177bea5f7382031266a1fb5d422942c46ea528248a8ad07607f5fd5066",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/compiler/debate-189.schema.json": "a8d2eb268880512a01b35634bd3134881835a8b6577548107d9fb32a1b601d6c",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/compiler/debate-42.schema.json": "66469740d571392c522b405be1424426fdfcfb116b8c47e1371988006dda11a9",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/compiler/debate-48.schema.json": "a9297f52f61bbb0394e00d830b1732a1691f0fdfa2b5cbbb53e8ae3ff21b39a7",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/compiler/debate-73.schema.json": "f4216dfe65e4bf3a492267a84dd6b8a87b16246a6a289938a9f953517fc32aed",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/plans/debate-114.schema.json": "5fcb4a6bb5961aa736d11a0804f4f47c9620f7158f3a558bfc124f0dae9149bb",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/plans/debate-116.schema.json": "a8306aaea55dfd495edf7eef4ad84d34c20bbefc670296cb1a7e3e6b9ac7af12",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/plans/debate-124.schema.json": "17c017ad962537eba01376389da6b74271e3b04c217dde4b35787bdaa1bf80ab",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/plans/debate-145.schema.json": "0f99441e30f66dca1089b5e1a25b94510bc92d43cfc573b2d75d9744d4dd1560",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/plans/debate-170.schema.json": "8abcb6d046a5bd92b5aead2c5ddbb4d3a471d3ad9cce203d1bf14054bb702845",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/plans/debate-186.schema.json": "717312a093ed9691ebe5402072d79e7e8add9e559ac33c8857114d98f2a0281f",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/plans/debate-189.schema.json": "eb5e4a804175bc185cf2020f17112e77905373bfec1af5c428a9bd913f633e62",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/plans/debate-42.schema.json": "5a826f1824e1728327d6d92db359671e81cc172fce49c6405ea51bd8ccc5171c",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/plans/debate-48.schema.json": "e263759e03b8b008e043dce21c33dffcfb1ca11fe4b8e45b78fb8cb932c4ec1e",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/schemas/plans/debate-73.schema.json": "23a5eb98c90166fb72d94293da9dd083a774c002a2069d5a2543eb91a2008e52",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-114.json": "4974b2d459f4fc96a133a893fd0c929116cc6b204486dafc482ed13ac9e77a4f",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-116.json": "f5ab2ca3081b095c85f82589dac64e8cb5e3a0d7a2ade1c59977902c81dd755a",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-124.json": "9b972dd85c4160cbda33ca43450f7a3a848b7364d8b88d822a08ce0aece4da6d",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-145.json": "ee6f3d5128ae53bdeab0e5afe4d771d24d6c486a6b18f6f55ca5c16e8069ffcd",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-170.json": "0cfd2760b2e29af717315ac9f2adc93c54cd3999e8ba8b554595b08508ed4c81",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-186.json": "9f1ef6f7c7eb1b790b11e03568a65ec0baff1c0f4d9748b43b658596905ab25f",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-189.json": "a76eec3f385ac831a2f6bcf61bc54991bfaec816e08332969a35b4a8d2211361",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-42.json": "ea0f18d6913dabe9e8c2a31e10bb077e05a41740331f354b498c52606504cdb1",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-48.json": "0c14c20aedbaa676fa95ce5fb89fd25792f13186b400d334285a52b529bd17cb",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/source-packets/debate-73.json": "8b92e5fcd196aed84faa70077a91c390ff1cc70eb40feb7116df2cd73c680850",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/census/debate-114.json": "c884111ae7499ca4f4fa4bf81eef19dd8798f9bb42fc84930e5a0559b6e64d0c",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/census/debate-116.json": "4edc212b56983c812bc075d97bef899ce9abfe40146b7d6f0127ee8268778267",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/census/debate-124.json": "4993e58461bf6c57cb899c5db3e3ab76d9a5933f4815771dcf0c34a96d340079",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/census/debate-145.json": "a867ca763a0d711c4249dc5191243261d933c522725774012c6ea562e48561bd",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/census/debate-170.json": "a38547c8c828ec8bb7912b1aaf3a7f87d180caa1a76d475cc09cf58deaf92ca4",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/census/debate-186.json": "0cc644001cde6c6ece215e9ccf998bf9dc28744d8da10a9d5768fc0a2add43b4",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/census/debate-189.json": "134d15edec08b2bda7848efdb135e5e7d7469237ac0036d924cb6761aa26c03d",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/census/debate-42.json": "ccfb3739c177162d2b2cd275ba7ecb47205a341f777200b15ddab08089469d3a",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/census/debate-48.json": "28c9bf707bc2e31e5761d4343345e77ad0874c3cb8752a9356413286ad6e648d",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/census/debate-73.json": "6795e657d6ec8f2cb7c23df1856211228924c7e9486892c77c0c53156411c268",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/full/debate-114.json": "276ffa297c6e1271995e3a56000b0118ed6038314a34882150cb1742a1ff127c",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/full/debate-116.json": "1b1c7a80cb17d6d856e7492c4f0a71c69f9d55863d3848eb8baecbf5e59a64fc",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/full/debate-124.json": "56c60d445c7281c06bd025c3bb9fc7f8337e016d5a43228a580cf142ad707498",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/full/debate-145.json": "13587ebbdb08158d30da56f694b6b359339b064a5e13efbfa48b6e1cfbd4e439",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/full/debate-170.json": "4422580ec7e27047b647ed5aec8621d995d9f70f9f0e2922e41c1801c48a6057",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/full/debate-186.json": "b7c768310cdf9e665130a2e05b2f6f5ba95e8ba7646b34465eb5a28bf50bfef4",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/full/debate-189.json": "ccf5426338c0d60260df2115f4186ae02f86aefbe41f17bdac61b19828f59de4",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/full/debate-42.json": "c71c1235d6526710dfedda2fe7859b19cfdc8f60c431b7ecd478d67a01845bbb",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/full/debate-48.json": "c72a6bca106ee63fb1cff505ca014be0556816081128518636818f41944e9bec",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/full/debate-73.json": "fe971123506151e2738fac97909ca833ab5d580f2bc5f8d28fe6b43c6715dc62",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-114-con.json": "2870e306db9e4a5c73f604e0171ffde4458b820e3f329b2674690ea708fdfda2",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-114-pro.json": "482c6e987f2698242e8e253b3b689bce6b263e55c336580cc4e38a998e7c3eaa",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-116-con.json": "8cbabc40e24d04cac8d15c87c1e5a23741c52710dcc320f3df9ab1625a83e60c",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-116-pro.json": "306925d6a479e3b2d7f2221546b26afd943e02715b23255cb4055a92d9bd55aa",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-124-con.json": "30ff9c1dc30b775071c32487df0673e81efe9ce8e0769bd1eaba96bb0d7142ad",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-124-pro.json": "36f5f5f0cd3081463c15133c947f2c988321cef19235499a6f627fd4d7babbc6",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-145-con.json": "33312ccbd2aad4c3db0a31ac53a218e2909d52954507162932d9e4914bf35a20",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-145-pro.json": "c8df10a6d3610b0ea6e0d45fbe78c087a2d84311bc57f246bcd4acd3cfd5e0b1",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-170-con.json": "adb8e3e4afcdb30937e2c7492fb55f6161682fb69d8a29bd58c3225f9960ac21",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-170-pro.json": "eed28c4bb02edc88c75c05dfffddb8fb9dfc86a989b06f986ce794e150a03ced",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-186-con.json": "fc8a9df8a5b4abbd162412abddc1b151b85b1890971aa0a76f437d1d62fde483",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-186-pro.json": "6924f40cdbff0fdcfc72f8ca07dedfa6b274bbad4eb2ea7490cf20ca3429bf35",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-189-con.json": "8790c375fc0c4dd25497162f0e25f0c249739025ac4f41febb36f81ca97ca8a4",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-189-pro.json": "c3e025fba77dc74dd40f69bd26abdb044dfedccf1e6e0cb3a74cc489a5b1b6d7",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-42-con.json": "c5c8225a238781097669f32e6bffbf6b8aadbf4f1e34bbc67f2d504fdc2aa5f0",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-42-pro.json": "b1aed7b08a730051e1700bc293e7c0ad5e2baf79e431f5671c095d84d4ca147f",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-48-con.json": "d138c36496fc2e7c7d12f3ad48e095836db04315a2c4e2c78ad149b6296c7246",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-48-pro.json": "1a0dddaf535bf8b07cbea010311437ed37ac07207ce0f5ec00f659e3a53de437",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-73-con.json": "c63eb873cd2d5acf1f45e471bb2d52740d4fd1649e9305b613286aa39f217bdc",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/inventory-candidate-sharded/transports/sides/debate-73-pro.json": "17db7a61e8f6e3d08bf20258095342baa685c5f76fd86da652f11726573558ed",
+    "docs/assessment-production/score-stability-v2.1.2-validation-cohort/source-preparation/preparation-manifest.json": "268eb692e7837180fc0329c9868d7002d8c8b156a590363bf685379c0cb210f2",
+    "docs/assessment-workflow-v4.2.21.17.41.md": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+    "docs/reassessment-rubric-v2.1.md": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+    "scripts/activate-assessment-production-score-stability-v2.1.2-inventory-candidate-census-plans.mjs": "413f7a0cfa124ccc8a578072b78e57cfb94986bcf7ca8b2db0b3e89e912d6c65",
+    "scripts/analyze-assessment-production-score-stability-v2.1.2-inventory-candidate-census-plans.mjs": "74ac68c3a246667a752fe1dcc586d6f3226820e281d85db6219e55ffc1f6bcf2",
+    "scripts/lib/assessment-production-score-stability-v2-inventory-candidate-sharded.mjs": "184e2662ca8ca4f9a37177cd8a01abfadaff07b20068207e5b3b75a1e8c89515",
+    "scripts/lib/assessment-production-score-stability-v2-inventory-decomposed-plan-selection.mjs": "cc2ed8ab1a27e693ba5546a5ee8761641671f810db458dd7db06cfe1265fb011",
+    "scripts/lib/assessment-production-score-stability-v2-inventory-side-partitioned-selection-map.mjs": "ad8bfc76a154f11e217b75d63e23718e1d7135f638bf13a697e56c4813ff65fa",
+    "scripts/lib/assessment-production-score-stability-v2.1.2-discovery.mjs": "30e6a244bff31432a5a1b03457e2d56e66300737d084177be1b03c9ea9502f70",
+    "scripts/lib/assessment-production-score-stability-v2.1.2-inventory-preparation.mjs": "f9e0e91b6daad7303ffc7b5204cc99fcab91b83bb9654a88838c12b19d897d91",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v418-source-integrity.mjs": "ff0593a316fcd06f1662b0f9c9864bdd4c2a867a718638a79cac8b9f27eac205",
+    "scripts/lib/v4220-source-span-rendering.mjs": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+    "scripts/lib/v422115-candidate-evidence-transport.mjs": "2164e0a970247bb6031c61561c349431dd32c5768f24f6b337ee614105733b91",
+    "scripts/lib/v422116-decomposed-consensus.mjs": "6dc78d69dbc7a13c9ffdfed33d5e84067a32af1d69f7cf05480f0205689a6d7c",
+    "scripts/lib/v4221162-inventory-transport.mjs": "a8856378f33e611ffa6354985e0f9b5fadb1df4c4aa00dc711c373221789e14b",
+    "scripts/prepare-assessment-production-score-stability-v2.1.2-inventory-candidate-sharded-side-packets.mjs": "696373f2948836818905eb63e5e558ce791ff7d1e5ad68b9f5b488e682bfe7d2",
+    "scripts/prepare-assessment-production-score-stability-v2.1.2-inventory-candidate-sharded.mjs": "d33d06f510e1fcfa268b77a19777ac8c00c493dd21bbed885fdd21c1af0c2ab8",
+    "scripts/preregister-assessment-production-score-stability-v2.1.2-inventory-candidate-census-plans.mjs": "1697970544f615a2d654181d20be82413f28dba7956484861013280a8123bc0e",
+    "scripts/run-assessment-production-score-stability-v2.1.2-inventory-candidate-census-plans.mjs": "eb73a70e6d0a612acd1b314108132ca2a0108986798d7ee087a9aa27a6933aa4",
+    "scripts/test-assessment-production-score-stability-v2.1.2-inventory-candidate-census-plan-activation.mjs": "3e6461d798a0ff2571c87214b41ce5f03e1e72a1afa1f8bb231c6d2cc76346af",
+    "scripts/test-assessment-production-score-stability-v2.1.2-inventory-candidate-census-plan-manifest.mjs": "f929894fdb77199b808a3be97aa53cad71b51eedfcb8682cfeaa6db56fcc5c4c",
+    "scripts/test-assessment-production-score-stability-v2.1.2-inventory-candidate-sharded-preparation.mjs": "478ca9730010346492fe8f030823289dfb9127cfbd5c1a117afd9f2ff81c555e",
+    "scripts/test-assessment-production-score-stability-v2.1.2-inventory-candidate-sharded-side-packets.mjs": "678a94bb48d0945f824f9634422fe268d151fa920b6a48eb2e6b5163cbc393ae"
+  },
+  "authorization": {
+    "deterministicValidation": true,
+    "sideSelectorExecutionManifestPreparation": true,
+    "sideSelectorExecutionActivation": false,
+    "sideSelectorModelExecution": false,
+    "inventoryModelExecution": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "semanticCorrection": false,
+    "independentJudgmentPacketPreparation": false,
+    "independentJudgmentModelExecution": false,
+    "paidTranscription": false,
+    "audioVerification": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationPreparation": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "prepare-v2.1.2-side-selector-execution-manifest-model-free-only"
+}
