@@ -1,0 +1,478 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.3-audio-verification-audit",
+  "protocolId": "assessment-production-score-stability-v2.1.3-audio-verification",
+  "status": "v2.1.3-audio-verification-unresolved",
+  "productionCanary": false,
+  "stagingOnly": true,
+  "debates": [
+    {
+      "debateNumber": "181",
+      "debateId": "habermas-flew-did-jesus-rise-dead-2000",
+      "moves": [
+        {
+          "debateNumber": "181",
+          "debateId": "habermas-flew-did-jesus-rise-dead-2000",
+          "moveId": "pro-paul-bodily-transformation",
+          "expectedSpeaker": "Gary Habermas",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Gary Habermas",
+          "clip": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-181/clips/pro-paul-bodily-transformation.mp3",
+            "sha256": "a78db5b7ead7f07a0924b0784ef546c6ae1d4295787df067cec5b44fced2c56d",
+            "durationSeconds": 127.481
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-181/transcripts/pro-paul-bodily-transformation.transcript.json",
+            "sha256": "ea3c58433326bd0d2c7bc59a3585a60bdc13e42c83d84ea5ccfa951319ae0c30",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Gary Habermas",
+            "fullClipExcerptRecall": 0.9873417721518988,
+            "expectedSpeakerExcerptRecall": 0.9873417721518988,
+            "highestOtherSpeaker": "A",
+            "highestOtherSpeakerExcerptRecall": 0.3037974683544304,
+            "expectedSpeakerRecallMargin": 0.6835443037974684,
+            "expectedSpeakerDurationSeconds": 96.35,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Gary Habermas",
+                "segmentCount": 26,
+                "durationSeconds": 96.35,
+                "wordCount": 307,
+                "excerptRecall": 0.9873417721518988
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 2,
+                "durationSeconds": 23.05,
+                "wordCount": 73,
+                "excerptRecall": 0.3037974683544304
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "181",
+          "debateId": "habermas-flew-did-jesus-rise-dead-2000",
+          "moveId": "con-miracle-judgment-depends-on-priors",
+          "expectedSpeaker": "Antony Flew",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Antony Flew",
+          "clip": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-181/clips/con-miracle-judgment-depends-on-priors.mp3",
+            "sha256": "c6cf32f4414add508b6d61562ff670c986acd3604c520d06f272a7cfc34bac14",
+            "durationSeconds": 102.04
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-181/transcripts/con-miracle-judgment-depends-on-priors.transcript.json",
+            "sha256": "a34e0453c48af64fb6c0b1b548d08ec2288b1161ed18144b2e40b4f31faf96eb",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Antony Flew",
+            "fullClipExcerptRecall": 0.8472222222222222,
+            "expectedSpeakerExcerptRecall": 0.8472222222222222,
+            "highestOtherSpeaker": "Gary Habermas",
+            "highestOtherSpeakerExcerptRecall": 0.09722222222222222,
+            "expectedSpeakerRecallMargin": 0.75,
+            "expectedSpeakerDurationSeconds": 86.15,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Antony Flew",
+                "segmentCount": 9,
+                "durationSeconds": 86.15,
+                "wordCount": 191,
+                "excerptRecall": 0.8472222222222222
+              },
+              {
+                "speaker": "Gary Habermas",
+                "segmentCount": 5,
+                "durationSeconds": 8.65,
+                "wordCount": 34,
+                "excerptRecall": 0.09722222222222222
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 1,
+                "durationSeconds": 0.9,
+                "wordCount": 5,
+                "excerptRecall": 0.05555555555555555
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "moves": [
+        {
+          "debateNumber": "92",
+          "debateId": "craig-malpass-universe-begin-exist-2020",
+          "moveId": "con-grim-reaper-temporal-mirror",
+          "expectedSpeaker": "Alex Malpass",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Alex Malpass",
+          "clip": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-92/clips/con-grim-reaper-temporal-mirror.mp3",
+            "sha256": "744ba80883248ba5fde671a0f55ff2f4a6b8f7d8cbbaf497e18cfb55770193be",
+            "durationSeconds": 111.890938
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-92/transcripts/con-grim-reaper-temporal-mirror.transcript.json",
+            "sha256": "7bb5937ac168289901173ef076cff62f2bce6d1ad5864ce4de46b80eac421af0",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Alex Malpass",
+            "fullClipExcerptRecall": 0.9577464788732394,
+            "expectedSpeakerExcerptRecall": 0.9577464788732394,
+            "highestOtherSpeaker": "A",
+            "highestOtherSpeakerExcerptRecall": 0.04225352112676056,
+            "expectedSpeakerRecallMargin": 0.9154929577464788,
+            "expectedSpeakerDurationSeconds": 94.8,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Alex Malpass",
+                "segmentCount": 18,
+                "durationSeconds": 94.8,
+                "wordCount": 280,
+                "excerptRecall": 0.9577464788732394
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 4,
+                "durationSeconds": 4.2,
+                "wordCount": 14,
+                "excerptRecall": 0.04225352112676056
+              },
+              {
+                "speaker": "William Lane Craig",
+                "segmentCount": 1,
+                "durationSeconds": 4.95,
+                "wordCount": 14,
+                "excerptRecall": 0.028169014084507043
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "78",
+      "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+      "moves": [
+        {
+          "debateNumber": "78",
+          "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+          "moveId": "con-uncertain-single-catholic-lineage",
+          "expectedSpeaker": "Graham Oppy",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "medium",
+            "passBAttributionConfidence": "medium",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": true
+          },
+          "status": "unresolved",
+          "resolvedSpeaker": null,
+          "clip": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-78/clips/con-uncertain-single-catholic-lineage.mp3",
+            "sha256": "0ada3cbde1ade05e207764a04a5a9de030089fd46c9bbb599a148d344c39a28d",
+            "durationSeconds": 66.2
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-78/transcripts/con-uncertain-single-catholic-lineage.transcript.json",
+            "sha256": "a8a8da5739196f8ff29c6106e1924eb613cff58093dfa7b580fac21c5a845c80",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "unresolved",
+            "expectedSpeaker": "Graham Oppy",
+            "fullClipExcerptRecall": 0.9146341463414634,
+            "expectedSpeakerExcerptRecall": 0.7073170731707317,
+            "highestOtherSpeaker": "William Albrecht",
+            "highestOtherSpeakerExcerptRecall": 0.3780487804878049,
+            "expectedSpeakerRecallMargin": 0.3292682926829268,
+            "expectedSpeakerDurationSeconds": 47.6,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": false,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Graham Oppy",
+                "segmentCount": 15,
+                "durationSeconds": 47.6,
+                "wordCount": 110,
+                "excerptRecall": 0.7073170731707317
+              },
+              {
+                "speaker": "William Albrecht",
+                "segmentCount": 13,
+                "durationSeconds": 12.65,
+                "wordCount": 46,
+                "excerptRecall": 0.3780487804878049
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "78",
+          "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+          "moveId": "con-reformation-had-reform-precursors",
+          "expectedSpeaker": "Graham Oppy",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "medium",
+            "passBAttributionConfidence": "medium",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": true
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Graham Oppy",
+          "clip": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-78/clips/con-reformation-had-reform-precursors.mp3",
+            "sha256": "0fcfa376d09209c1d390af745fda9277f140d7718768dd68556e7426a6886c88",
+            "durationSeconds": 34.26
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-78/transcripts/con-reformation-had-reform-precursors.transcript.json",
+            "sha256": "d8bccbd5a672861a55a8b32f3cc57d77206465e4d7aed4430da0dbb3dc1d6733",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Graham Oppy",
+            "fullClipExcerptRecall": 0.9661016949152542,
+            "expectedSpeakerExcerptRecall": 0.864406779661017,
+            "highestOtherSpeaker": "William Albrecht",
+            "highestOtherSpeakerExcerptRecall": 0.22033898305084745,
+            "expectedSpeakerRecallMargin": 0.6440677966101696,
+            "expectedSpeakerDurationSeconds": 27.9,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Graham Oppy",
+                "segmentCount": 14,
+                "durationSeconds": 27.9,
+                "wordCount": 60,
+                "excerptRecall": 0.864406779661017
+              },
+              {
+                "speaker": "William Albrecht",
+                "segmentCount": 13,
+                "durationSeconds": 5.9,
+                "wordCount": 29,
+                "excerptRecall": 0.22033898305084745
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "acceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker",
+    "references": [
+      {
+        "debateNumber": "181",
+        "speaker": "Gary Habermas",
+        "selectedMoveId": "pro-death-by-crucifixion",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1157,
+          "endEvent": 1234
+        },
+        "selectedMoveDurationSeconds": 172.12,
+        "startSeconds": 2936.7,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-181/references/gary-habermas.mp3",
+        "sha256": "d666571384194c2b6d90ae163ceaf2f87ba60796fbab402a7cec2901a28360a7"
+      },
+      {
+        "debateNumber": "181",
+        "speaker": "Antony Flew",
+        "selectedMoveId": "con-miracle-requires-justified-theistic-background",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1923,
+          "endEvent": 1953
+        },
+        "selectedMoveDurationSeconds": 103.24,
+        "startSeconds": 4746.7,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-181/references/antony-flew.mp3",
+        "sha256": "b928496969537859d0b328d801c7f6819eaf85e618955c5dfbf80dc21ff20e02"
+      },
+      {
+        "debateNumber": "92",
+        "speaker": "William Lane Craig",
+        "selectedMoveId": "pro-successive-addition-finite-past",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1213,
+          "endEvent": 1304
+        },
+        "selectedMoveDurationSeconds": 284.9,
+        "startSeconds": 3275.58,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-92/references/william-lane-craig.mp3",
+        "sha256": "36ab0151deea9a3dee5b52e48abc24bc5513ed55907f1206eb2441c612762a8c"
+      },
+      {
+        "debateNumber": "92",
+        "speaker": "Alex Malpass",
+        "selectedMoveId": "con-absurdity-not-impossibility",
+        "selectedMoveSourceSpan": {
+          "startEvent": 354,
+          "endEvent": 454
+        },
+        "selectedMoveDurationSeconds": 246.801,
+        "startSeconds": 1012.86,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-92/references/alex-malpass.mp3",
+        "sha256": "b3202d61dbd3139e04491f7b4693977ca966187b362ebb1237bcaa5d7dfc7559"
+      },
+      {
+        "debateNumber": "78",
+        "speaker": "William Albrecht",
+        "selectedMoveId": "pro-hostile-witness-identification",
+        "selectedMoveSourceSpan": {
+          "startEvent": 461,
+          "endEvent": 522
+        },
+        "selectedMoveDurationSeconds": 143.88,
+        "startSeconds": 1466.42,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-78/references/william-albrecht.mp3",
+        "sha256": "ecf5039c839b172f947ed3049e2b73cd828a39c484f3208d2180700328210bf2"
+      },
+      {
+        "debateNumber": "78",
+        "speaker": "Graham Oppy",
+        "selectedMoveId": "con-contextual-christian-branching",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1259,
+          "endEvent": 1312
+        },
+        "selectedMoveDurationSeconds": 145.161,
+        "startSeconds": 3357.18,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-78/references/graham-oppy.mp3",
+        "sha256": "ad9f557c714640be7d4f55cc4b23d97fb5bfb2ef0dc3b474da41c1addc986564"
+      }
+    ]
+  },
+  "totals": {
+    "requiredMoves": 5,
+    "verified": 4,
+    "unresolved": 1,
+    "paidDiarizationCallsAttempted": 5,
+    "paidDiarizationCallsCompleted": 5,
+    "retries": 0,
+    "corrections": 0,
+    "clipMinutes": 7.3645,
+    "estimatedProcessingExposureUsd": 0.0442,
+    "maximumAuthorizedCostUsd": 0.1,
+    "meteredJudgmentModelApiCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "authorization": {
+    "adjudicationPacketPreparation": false,
+    "audioFailureDiagnosis": true,
+    "paidTranscription": false,
+    "retry": false,
+    "correctionCall": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  }
+}
